@@ -3,6 +3,7 @@ import { S, on, emit, changed, saveNow, recompile, readBackup, snapshot, lineTex
 import { P, vid } from './player.js';
 import { T, initTapsync, updateSyncUI, clampCursor, frameTick, goToLine, stopSync } from './tapsync.js';
 import { initTimeline, drawTimeline } from './timeline.js';
+import { initPreview } from './preview.js';
 
 let STATUS = null;
 
@@ -72,7 +73,7 @@ function uploadVideo(file){
       if(xhr.status !== 200) return toast(data.error || 'No se pudo cargar el video');
       S.project.video = data.video;
       try { await P.load(`/media/${S.slug}/${encodeURIComponent(data.video.file)}`); } catch(e){ return toast(e.message); }
-      $('#demoBg').hidden = true;
+      emit('format');
       changed({ delay: 0 });
       toast(`Video cargado: ${file.name}`);
     };
@@ -261,7 +262,6 @@ async function boot(){
   on('times', () => { renderLines(); updateDemoDuration(); });
   on('error', e => toast(e.message || String(e), 4000));
   on('size', () => $('#stage').style.setProperty('--ar', (S.size[0] / S.size[1]).toFixed(4)));
-  on('project', () => { $('#demoBg').hidden = P.hasVideo; });
 
   STATUS = await api.get('/api/status');
   const fs = $('#sFont'); fs.innerHTML = '';
@@ -272,6 +272,7 @@ async function boot(){
       (el archivo <code>ffmpeg-release-essentials.zip</code>), descomprímelo y copia la carpeta <code>bin</code> dentro de
       <code>karaoke-fansub/ffmpeg/</code>, o agrégala al PATH. Luego reinicia el programa.`);
   }
+  initPreview(STATUS, onFrame);
   const list = await refreshProjectList();
   const slug = STATUS.last || list[0]?.slug;
   if(slug) await loadProject(slug, list.find(x => x.slug === slug)?.updated);

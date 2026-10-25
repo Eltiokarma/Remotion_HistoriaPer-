@@ -41,7 +41,8 @@ def _load(label: str):
     hmtx = font["hmtx"].metrics
     widths = {cp: hmtx[g][0] for cp, g in cmap.items() if g in hmtx}
     space = widths.get(ord(" "), height // 4)
-    return {"family": font["name"].getDebugName(1) or label, "height": height, "widths": widths, "fallback": space * 2}
+    return {"family": font["name"].getDebugName(1) or label, "height": height, "upm": font["head"].unitsPerEm,
+            "widths": widths, "fallback": space * 2}
 
 
 def family(label: str) -> str:
@@ -49,6 +50,16 @@ def family(label: str) -> str:
     if data:
         return data["family"]
     return {"M PLUS Rounded 1c": "Rounded Mplus 1c ExtraBold"}.get(label, label)
+
+
+def ass_size(label: str, em_px: float) -> int:
+    """Fontsize del .ass para que la letra mida ``em_px`` de em (como en un canvas/CSS).
+
+    En ASS el tamaño es la altura de línea (ascenso + descenso), no el em.
+    """
+    data = _load(label)
+    ratio = data["height"] / data["upm"] if data else 1.3
+    return round(em_px * ratio)
 
 
 def text_width(label: str, text: str, size: float) -> float | None:

@@ -83,9 +83,10 @@ def windows(lines, style):
 # ---------------------------------------------------------------- geometría
 
 def layout(style, W: int, H: int):
-    px = round(H * style["size"] / 100)
+    px = round(H * style["size"] / 100)  # tamaño del em en píxeles, como en el prototipo
     return {
         "px": px,
+        "fs": fonts.ass_size(style["font"], px),
         "ow": round(px * style["outline"] / 100, 1),
         "margin": round(H * 0.065),
         "gap": round(px * 1.28),
@@ -102,7 +103,7 @@ def row_y(row: int, style, geo, H: int) -> int:
 
 def fit_scale(line, style, geo, W: int) -> int:
     """Escala (en %) para que un verso largo quepa en el 92 % del ancho."""
-    w = fonts.text_width(style["font"], line_text(line), geo["px"])
+    w = fonts.text_width(style["font"], line_text(line), geo["fs"])
     if not w:
         return 100
     w += geo["ow"] * 2
@@ -169,7 +170,7 @@ def build_ass(project: dict, title: str = "Karaoke Fansub") -> str:
     ]
     for key, c in chars.items():
         out.append(
-            f"Style: {style_name(chars, key)},{family},{geo['px']},{ass_color(c['color'])},"
+            f"Style: {style_name(chars, key)},{family},{geo['fs']},{ass_color(c['color'])},"
             f"{ass_color(style['unsung'])},{ass_color(darken(c['color'], .72))},&H80000000,"
             f"0,0,0,0,100,100,0,0,1,{geo['ow']:g},0,{align},20,20,{geo['margin']},1"
         )
