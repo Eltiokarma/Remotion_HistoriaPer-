@@ -19,28 +19,37 @@ async function refreshProjectList(){
   return list;
 }
 
+let loadSeq = 0;
 async function loadProject(slug, updated){
+  // Puede llamarse varias veces seguidas (p. ej. moviéndose con flechas en el selector).
+  // Solo la última manda, y el estado se cambia de una sola vez al final: así nunca se
+  // guarda un proyecto con los versos de otro.
+  const my = ++loadSeq;
   if(T.sync) stopSync();
   if(S.slug) await saveNow();
   const r = await api.get(`/api/projects/${slug}`);
-  let project = r.project;
+  let project = r.project, recovered = false;
   const bk = readBackup(slug);
   const differs = bk && (JSON.stringify(bk.project.times) !== JSON.stringify(project.times) || bk.project.lyrics !== project.lyrics);
   if(differs && updated && bk.at / 1000 > updated + 2){
     project = { ...bk.project, video: project.video };
-    toast('Recuperé cambios que no alcanzaron a guardarse');
+    recovered = true;
   }
-  S.slug = slug; S.project = project;
   const c = await api.post('/api/compile', project);
+  if(my !== loadSeq) return;
+  S.slug = slug; S.project = project;
   S.lines = c.lines; S.project.chars = c.chars; S.ass = c.ass; S.size = c.size;
   T.cursor = { li: 0, si: 0 };
   $('#projSel').value = slug;
-  if(project.video) await openVideo();
-  else P.unload();
-  updateDemoDuration();
   syncControls(); renderAll();
   emit('project'); emit('size'); emit('ass');
   $('#saveState').textContent = 'Guardado';
+  if(recovered){ toast('Recuperé cambios que no alcanzaron a guardarse'); changed({ compile: false }); }
+  if(project.video) await openVideo();
+  else P.unload();
+  if(my !== loadSeq) return;
+  updateDemoDuration();
+  emit('format');
 }
 
 /** Aplica una respuesta de /api/compile hecha fuera del flujo normal (p. ej. Whisper). */
@@ -67,6 +76,7 @@ async function openVideo(){
     await P.load(`/media/${slug}/${encodeURIComponent(v.preview || v.file)}`, (v.width || 0) > 0);
     return true;
   } catch(e){
+    if(S.slug !== slug || e.message === 'Se cargó otro video') return false;
     P.unload();
     emit('format');
     if(!STATUS.ffmpeg.ffmpeg){ toast('Tu navegador no puede reproducir ese video. Conviértelo a MP4 (H.264) e inténtalo otra vez.', 6000); return false; }
@@ -99,6 +109,7 @@ function uploadVideo(file){
   if(!file) return;
   if(!/^(video|audio)\//.test(file.type) && !/\.(mp4|mkv|mov|webm|avi|m4v|mp3|wav|m4a|ogg)$/i.test(file.name)) return toast('Ese archivo no parece un video');
   if(T.sync) stopSync();
+  const slug = S.slug, projectName = $('#projSel').selectedOptions[0]?.textContent || slug;
   const probe = document.createElement('video');
   const local = URL.createObjectURL(file);
   probe.preload = 'metadata'; probe.src = local;
@@ -112,12 +123,14 @@ function uploadVideo(file){
     const box = $('#upload'), prog = $('#uploadProg');
     box.hidden = false; $('#uploadTxt').textContent = `Copiando ${file.name}…`; prog.value = 0;
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', `/api/projects/${S.slug}/video`);
+    xhr.open('POST', `/api/projects/${slug}/video`);
     xhr.upload.onprogress = e => { if(e.lengthComputable) prog.value = e.loaded / e.total; };
     xhr.onload = async () => {
       box.hidden = true;
       let data = {}; try { data = JSON.parse(xhr.responseText); } catch(e){}
       if(xhr.status !== 200) return toast(data.error || 'No se pudo cargar el video');
+      // Si mientras subía se cambió de proyecto, el video ya quedó guardado en el suyo.
+      if(S.slug !== slug) return toast(`Video cargado en «${projectName}»`);
       S.project.video = data.video;
       if(!(await openVideo())) return;
       emit('format');
@@ -300,16 +313,18 @@ async function boot(){
   });
   $('#silabear').addEventListener('click', async () => {
     const ta = $('#lyrics');
-    const r = await api.post('/api/syllabify', { text: ta.value });
-    ta.value = S.project.lyrics = r.text; changed({ delay: 0 });
-    toast('Sílabas separadas. Revisa nombres propios y palabras en quechua o aymara.', 4000);
+    try {
+      const r = await api.post('/api/syllabify', { text: ta.value });
+      ta.value = S.project.lyrics = r.text; changed({ delay: 0 });
+      toast('Sílabas separadas. Revisa nombres propios y palabras en quechua o aymara.', 4000);
+    } catch(e){ toast(e.message); }
   });
   let clearArmed = false;
   $('#clearTimes').addEventListener('click', e => {
     if(!clearArmed){ clearArmed = true; e.target.textContent = '¿Seguro? Clic otra vez'; setTimeout(() => { clearArmed = false; e.target.textContent = 'Borrar tiempos'; }, 2500); return; }
     clearArmed = false; e.target.textContent = 'Borrar tiempos';
     S.lines.forEach(l => l.syls.forEach(s => { s.t0 = s.t1 = null; }));
-    T.cursor = { li: 0, si: 0 }; changed({ delay: 0 }); renderAll(); toast('Tiempos borrados');
+    T.cursor = { li: 0, si: 0 }; changed({ delay: 0 }); renderAll(); updateDemoDuration(); toast('Tiempos borrados');
   });
 
   on('lines', () => { renderAll(); updateDemoDuration(); });
@@ -334,9 +349,14 @@ async function boot(){
   initWhisper(STATUS);
   initTemplates(() => { syncControls(); renderAll(); updateTiktokHint(); });
   const list = await refreshProjectList();
-  const slug = STATUS.last || list[0]?.slug;
-  if(slug) await loadProject(slug, list.find(x => x.slug === slug)?.updated);
-  else { const r = await api.post('/api/projects', { name: 'Mi canción' }); await refreshProjectList(); await loadProject(r.slug); }
+  // Si el último proyecto está dañado, se prueba con los demás en vez de quedarse trabado.
+  const order = [STATUS.last, ...list.map(x => x.slug)].filter((s, i, a) => s && a.indexOf(s) === i);
+  let opened = false;
+  for(const slug of order){
+    try { await loadProject(slug, list.find(x => x.slug === slug)?.updated); opened = true; break; }
+    catch(e){ toast(e.message, 6000); }
+  }
+  if(!opened){ const r = await api.post('/api/projects', { name: 'Mi canción' }); await refreshProjectList(); await loadProject(r.slug); }
   requestAnimationFrame(frame);
 }
 

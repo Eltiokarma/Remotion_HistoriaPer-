@@ -6,6 +6,7 @@ export const vid = $('#vid');
 let hasVideo = false;
 let demoT = 0, demoPlaying = false, demoDur = 20, lastPerf = performance.now();
 let rate = 1;
+let loadToken = 0;
 
 export const P = {
   get hasVideo(){ return hasVideo; },
@@ -33,19 +34,29 @@ export const P = {
   /** Carga un video. ``expectVideo``: si el archivo tiene imagen, exige poder decodificarla
    *  (Chrome lee el contenedor de un HEVC aunque no pueda mostrar ningún cuadro). */
   load(url, expectVideo = true){
+    const token = ++loadToken;
     return new Promise((resolve, reject) => {
-      const fail = () => { cleanup(); hasVideo = false; reject(new Error('Ese archivo no se puede reproducir en el navegador')); };
+      const stale = () => token !== loadToken;  // ya se pidió otro video
+      const fail = () => {
+        cleanup();
+        if(stale()) return reject(new Error('Se cargó otro video'));
+        hasVideo = false; reject(new Error('Ese archivo no se puede reproducir en el navegador'));
+      };
       const ok = () => {
+        if(stale()){ cleanup(); return reject(new Error('Se cargó otro video')); }
         if(expectVideo && !vid.videoWidth) return fail();
         cleanup(); hasVideo = true; vid.playbackRate = rate;
         resolve({ width: vid.videoWidth, height: vid.videoHeight, duration: vid.duration });
       };
       const timer = setTimeout(() => (vid.readyState >= 2 ? ok() : fail()), 8000);
-      const cleanup = () => { clearTimeout(timer); vid.onloadeddata = vid.onerror = null; };
+      const cleanup = () => {
+        clearTimeout(timer);
+        if(!stale()) vid.onloadeddata = vid.onerror = null;  // no borrar los de la carga nueva
+      };
       vid.onloadeddata = ok;
       vid.onerror = fail;
       vid.src = url;
     });
   },
-  unload(){ hasVideo = false; vid.removeAttribute('src'); vid.load(); demoT = 0; },
+  unload(){ loadToken++; hasVideo = false; vid.removeAttribute('src'); vid.load(); demoT = 0; },
 };

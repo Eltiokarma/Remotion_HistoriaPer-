@@ -101,3 +101,16 @@ def test_salto_por_silaba_un_evento_por_silaba_en_orden():
     assert xs == sorted(xs) and xs[0] < 640 < xs[-1]
     assert all("\\t(" in l for l in first)  # el pulso
     assert first[0].endswith("{\\k100}{\\kf36}Zar")
+
+
+def test_nombres_de_estilo_que_chocan_se_diferencian():
+    p = normalize({"lyrics": "A,B: ho|la\nA B: chau", "times": [[[1, 2], [2, 3]], [[4, 5]]]})
+    out = build_ass(p)
+    styles = [l.split(",")[0] for l in out.splitlines() if l.startswith("Style: ")]
+    assert styles == ["Style: A B", "Style: A B 2"]
+    assert ",A B 2,A B 2," in out
+
+
+def test_tiempos_saneados_al_normalizar():
+    p = normalize({"lyrics": "x", "times": [[[1, 2], ["a", 3], [5, 4], [True, 1], [1]], "no", [[float("nan"), 1]]]})
+    assert p["times"] == [[[1.0, 2.0], [None, None], [None, None], [None, None], [None, None]], [], [[None, None]]]

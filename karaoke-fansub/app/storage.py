@@ -5,7 +5,10 @@ import json
 import os
 import re
 import shutil
+import threading
+import time
 import unicodedata
+import uuid
 from pathlib import Path
 
 from .paths import EXAMPLE_DIR, PROJECTS_DIR
@@ -64,14 +67,56 @@ def load(slug: str) -> dict:
     return p
 
 
+_save_lock = threading.Lock()
+
+
+def _replace(src: Path, dst: Path):
+    """os.replace con reintentos: en Windows falla si otro hilo (o el antivirus) tiene
+    abierto el destino en ese instante."""
+    for i in range(10):
+        try:
+            os.replace(src, dst)
+            return
+        except PermissionError:
+            if i == 9:
+                raise
+            time.sleep(0.05 * (i + 1))
+
+
 def save(slug: str, data: dict) -> dict:
     p = normalize(data)
     d = project_dir(slug)
     d.mkdir(parents=True, exist_ok=True)
-    tmp = d / (PROJECT_FILE + ".tmp")
-    tmp.write_text(json.dumps(p, ensure_ascii=False, indent=1), encoding="utf-8")
-    os.replace(tmp, d / PROJECT_FILE)  # escritura atómica: un corte de luz no deja el .json a medias
+    # Un .tmp distinto por escritura y de a una: dos guardados a la vez (autoguardado +
+    # exportar) no se pisan el archivo temporal.
+    with _save_lock:
+        tmp = d / f"{PROJECT_FILE}.{uuid.uuid4().hex[:8]}.tmp"
+        try:
+            tmp.write_text(json.dumps(p, ensure_ascii=False, indent=1), encoding="utf-8")
+            _replace(tmp, d / PROJECT_FILE)  # atómico: un corte de luz no deja el .json a medias
+        finally:
+            tmp.unlink(missing_ok=True)
     return p
+
+
+def unique_name(d: Path, name: str) -> str:
+    """Un nombre que no exista en la carpeta (no se sobrescribe un video que el
+    navegador podría estar leyendo)."""
+    stem, ext = os.path.splitext(name)
+    cand, n = name, 2
+    while (d / cand).exists():
+        cand = f"{stem}-{n}{ext}"
+        n += 1
+    return cand
+
+
+def remove_quietly(path: Path):
+    """Borra sin fallar: en Windows un archivo abierto (el video que se está viendo) no se
+    puede borrar; queda como basura chica en vez de romper la operación."""
+    try:
+        path.unlink(missing_ok=True)
+    except OSError:
+        pass
 
 
 def create(name: str, data: dict | None = None) -> tuple[str, dict]:

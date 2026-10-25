@@ -144,7 +144,10 @@ def export_video(job: Job, src: Path, ass_text: str, fmt: str, size, preset: str
         graph = ff.video_filter(fmt, W, H, info["width"], info["height"], ass_file.relative_to(ROOT).as_posix())
         suffix = "_vertical" if fmt != "original" else ""
         out = _unique(out_dir / f"{base}_karaoke{suffix}.mp4")
-        cmd = ff.export_cmd(str(src), str(out), graph, info["acodec"], preset)
+        audio_only = (W, H) if not info["width"] else None
+        if audio_only and not info["acodec"]:
+            raise RuntimeError("El archivo no tiene ni imagen ni sonido que se pueda leer.")
+        cmd = ff.export_cmd(str(src), str(out), graph, info["acodec"], preset, audio_only)
         job.message = "Quemando la letra…"
         run_ffmpeg(job, cmd, info["duration"], out, "Exportando")
     finally:

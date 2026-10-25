@@ -10,7 +10,7 @@ def client(tmp_path, monkeypatch):
     monkeypatch.setattr(storage, "LAST_FILE", tmp_path / "proyectos" / ".ultimo")
     monkeypatch.setattr(storage, "EXAMPLE_DIR", paths.EXAMPLE_DIR)
     storage.ensure_example()
-    return TestClient(main.app)
+    return TestClient(main.app, base_url="http://127.0.0.1")
 
 
 def test_status_y_ejemplo(client):
@@ -75,3 +75,57 @@ def test_plantillas(client, tmp_path, monkeypatch):
     assert client.delete("/api/templates/mi-canal").json()["ok"]
     assert client.get("/api/templates").json() == []
     assert client.post("/api/templates", json={"name": " "}).status_code == 400
+
+
+# ---------------------------------------------------------------- regresiones
+
+def test_tiempos_basura_no_rompen_el_compilado(client):
+    r = client.post("/api/compile", json={"lyrics": "A: ho|la|que", "times": [[["x", "y"], [1, 2], [3, 2]]]})
+    assert r.status_code == 200
+    assert [[s["t0"], s["t1"]] for s in r.json()["lines"][0]["syls"]] == [[None, None], [1, 2], [None, None]]
+
+
+def test_proyecto_danado_da_un_error_claro(client):
+    d = storage.PROJECTS_DIR / "roto"
+    d.mkdir()
+    (d / "proyecto.json").write_text("{esto no es json", encoding="utf-8")
+    r = client.get("/api/projects/roto")
+    assert r.status_code == 400 and "dañado" in r.json()["error"]
+    assert any(p["slug"] == "roto" for p in client.get("/api/projects").json())  # la lista no se cae
+
+
+def test_solo_acepta_pedidos_de_la_propia_pagina(client):
+    p = client.get("/api/projects/ejemplo").json()["project"]
+    ok = client.put("/api/projects/ejemplo", json=p, headers={"Origin": "http://127.0.0.1:8765"})
+    assert ok.status_code == 200
+    ajeno = client.put("/api/projects/ejemplo", json=p, headers={"Origin": "https://pagina-mala.com"})
+    assert ajeno.status_code == 403
+    rebinding = client.get("/api/projects", headers={"Host": "pagina-mala.com"})
+    assert rebinding.status_code == 403
+
+
+def test_subir_el_mismo_nombre_no_pisa_el_video_en_uso(client):
+    r = client.post("/api/projects", json={"name": "subidas"}).json()
+    files = {"file": ("Mi Clip.mp4", b"\x00" * 100, "video/mp4")}
+    v1 = client.post(f"/api/projects/{r['slug']}/video", files=files).json()["video"]["file"]
+    v2 = client.post(f"/api/projects/{r['slug']}/video", files=files).json()["video"]["file"]
+    assert v1 == "mi-clip.mp4" and v2 == "mi-clip-2.mp4"
+    d = storage.PROJECTS_DIR / r["slug"]
+    assert not (d / v1).exists() and (d / v2).exists()  # el anterior se borra (si se puede)
+
+
+def test_guardados_simultaneos_no_se_pisan(client):
+    import threading
+    p = client.get("/api/projects/ejemplo").json()["project"]
+    errors = []
+
+    def put(i):
+        r = client.put("/api/projects/ejemplo", json=p | {"glossary": str(i)})
+        if r.status_code != 200:
+            errors.append(r.status_code)
+
+    ts = [threading.Thread(target=put, args=(i,)) for i in range(20)]
+    [t.start() for t in ts]
+    [t.join() for t in ts]
+    assert not errors
+    assert not list((storage.PROJECTS_DIR / "ejemplo").glob("*.tmp"))

@@ -1,6 +1,6 @@
 // Marcado de tiempos (tap-sync): mantener Espacio mientras suena cada sílaba.
 // Lógica portada del prototipo.
-import { $, toast, typingIn } from './util.js';
+import { $, toast, typingIn, isControl } from './util.js';
 import { S, emit, changed, lineStatus, timedSpan, off } from './store.js';
 import { P } from './player.js';
 
@@ -114,19 +114,23 @@ export function initTapsync(){
   window.addEventListener('keydown', e => {
     if(typingIn(e.target) || e.ctrlKey || e.metaKey || e.altKey) return;
     if(e.code === 'Space'){
-      // Espacio sobre un botón con foco no debe "hacer clic": aquí manda el karaoke.
-      e.preventDefault(); if(e.repeat) return;
-      T.sync ? tapDown() : P.toggle();
+      // Marcando, Espacio siempre marca (aunque haya un botón con foco). Si no, en un
+      // botón, radio o slider hace lo suyo, y en el resto de la página es Play/Pausa.
+      if(T.sync){ e.preventDefault(); if(!e.repeat) tapDown(); }
+      else if(!isControl(e.target)){ e.preventDefault(); if(!e.repeat) P.toggle(); }
     }
-    else if(e.shiftKey && e.key.startsWith('Arrow')) return; // Shift+flechas: afinar en la línea de tiempo
-    else if(e.key === 'ArrowLeft' && !e.target.closest?.('.tabs')){ e.preventDefault(); P.seek(P.now() - 2); }
-    else if(e.key === 'ArrowRight' && !e.target.closest?.('.tabs')){ e.preventDefault(); P.seek(P.now() + 2); }
+    else if(e.key === 'ArrowLeft' || e.key === 'ArrowRight'){
+      // En sliders, radios, selects y pestañas las flechas son del control;
+      // Shift+flechas afinan en la línea de tiempo.
+      if(e.shiftKey || (isControl(e.target) && !(T.sync && e.target.tagName === 'BUTTON'))) return;
+      e.preventDefault(); P.seek(P.now() + (e.key === 'ArrowRight' ? 2 : -2));
+    }
     else if(T.sync && (e.key === 'r' || e.key === 'R')) replayLine();
     else if(T.sync && e.key === 'Backspace'){ e.preventDefault(); retreat(); updateSyncUI(); }
     else if(T.sync && e.key === 'Escape') stopSync();
   });
   window.addEventListener('keyup', e => {
-    if(e.code === 'Space' && !typingIn(e.target)){ e.preventDefault(); if(T.sync) tapUp(); }
+    if(e.code === 'Space' && (T.sync || T.tapping) && !typingIn(e.target)){ e.preventDefault(); tapUp(); }
   });
   window.addEventListener('blur', () => tapUp());
 }

@@ -15,12 +15,35 @@ from .project import DEFAULT_STYLE, normalize, output_size
 
 app = FastAPI(title="Karaoke Fansub", docs_url=None, redoc_url=None)
 
+LOCAL_HOSTS = {"127.0.0.1", "localhost"}
+
+
+@app.middleware("http")
+async def solo_local(request, call_next):
+    """El servidor solo atiende a la propia página.
+
+    - Host distinto de 127.0.0.1/localhost: bloquea el "DNS rebinding" (un sitio web que
+      se hace pasar por 127.0.0.1 para leer tus proyectos).
+    - Origin de otro sitio en un POST/PUT/DELETE: bloquea que una página cualquiera que
+      abras suba archivos o borre cosas en tu programa.
+    """
+    host = (request.headers.get("host") or "").rsplit(":", 1)[0].strip("[]")
+    origin = request.headers.get("origin")
+    foreign = False
+    if origin and origin != "null":
+        foreign = origin.split("://", 1)[-1].rsplit(":", 1)[0].strip("[]") not in LOCAL_HOSTS
+    if host not in LOCAL_HOSTS or (request.method not in ("GET", "HEAD") and (foreign or origin == "null")):
+        return JSONResponse({"error": "Solo se puede usar desde esta misma computadora."}, status_code=403)
+    return await call_next(request)
+
 
 def _project_or_404(slug: str) -> dict:
     try:
         return storage.load(slug)
     except KeyError:
         raise HTTPException(404, "No existe ese proyecto")
+    except (ValueError, OSError) as e:
+        raise HTTPException(400, f"El proyecto «{slug}» está dañado y no se puede abrir ({e}).")
 
 
 def _bad(e: Exception):
@@ -72,12 +95,14 @@ def beacon(slug: str, body: dict = Body(...)):
 
 
 @app.post("/api/projects/{slug}/video")
-async def upload_video(slug: str, file: UploadFile = File(...), width: int = Form(0), height: int = Form(0),
+# def y no async: copiar un video grande no debe congelar el servidor
+def upload_video(slug: str, file: UploadFile = File(...), width: int = Form(0), height: int = Form(0),
                        duration: float = Form(0)):
     p = _project_or_404(slug)
     d = storage.project_dir(slug)
-    name = storage.safe_media_name(file.filename)
     old = (p.get("video") or {}).get("file")
+    old_preview = (p.get("video") or {}).get("preview")
+    name = storage.unique_name(d, storage.safe_media_name(file.filename))
     dst = d / name
     with dst.open("wb") as fh:
         shutil.copyfileobj(file.file, fh, length=1024 * 1024)
@@ -91,10 +116,9 @@ async def upload_video(slug: str, file: UploadFile = File(...), width: int = For
             pass
     p["video"] = {"file": name, **info}
     storage.save(slug, p)
-    if old and old != name:
-        (d / old).unlink(missing_ok=True)
-    for f in d.glob("vista-previa-*.mp4"):
-        f.unlink(missing_ok=True)
+    for f in (old, old_preview):
+        if f and f != name:
+            storage.remove_quietly(d / f)
     return {"video": p["video"], "project": p}
 
 
@@ -106,7 +130,8 @@ def make_proxy(slug: str):
         raise HTTPException(400, "Primero carga un video")
     d = storage.project_dir(slug)
     src = d / p["video"]["file"]
-    dst = d / ("vista-previa-" + storage.slugify(src.stem) + ".mp4")
+    dst = d / storage.unique_name(d, "vista-previa-" + storage.slugify(src.stem) + ".mp4")
+    old_preview = p["video"].get("preview")
 
     def run(job):
         res = jobs.make_proxy(job, src, dst)
@@ -114,6 +139,8 @@ def make_proxy(slug: str):
         if cur.get("video") and cur["video"]["file"] == p["video"]["file"]:
             cur["video"]["preview"] = res["preview"]
             storage.save(slug, cur)
+            if old_preview and old_preview != res["preview"]:
+                storage.remove_quietly(d / old_preview)
         return res
 
     return jobs.start("proxy", run).to_dict()

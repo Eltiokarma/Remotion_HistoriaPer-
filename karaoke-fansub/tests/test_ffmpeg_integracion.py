@@ -72,7 +72,7 @@ def test_cancelar(clip, tmp_path, monkeypatch):
     p = project("vertical-blur")
     # Un video largo (loop) para que dé tiempo a cancelar.
     real_cmd = ff.export_cmd
-    monkeypatch.setattr(ff, "export_cmd", lambda src, out, graph, ac, preset: real_cmd(src, out, graph, ac, "veryslow"))
+    monkeypatch.setattr(ff, "export_cmd", lambda src, out, graph, ac, preset, *a: real_cmd(src, out, graph, ac, "veryslow", *a))
     job = jobs.start("export", jobs.export_video, clip, build_ass(p), "vertical-blur", (1080, 1920), "veryslow",
                      "cancelar", tmp_path)
     for _ in range(100):
@@ -105,3 +105,22 @@ def test_copia_liviana_para_la_vista_previa(clip, tmp_path):
     res = jobs.make_proxy(jobs.Job("p"), clip, dst)
     info = ff.probe(dst)
     assert res["preview"] == dst.name and info["vcodec"] == "h264" and abs(info["duration"] - 5) < 0.2
+
+
+def test_solo_audio_exporta_con_fondo_negro(tmp_path):
+    mp3 = tmp_path / "tono.mp3"
+    subprocess.run([ff.ffmpeg_path(), "-v", "error", "-f", "lavfi", "-i", "sine=frequency=330:duration=3", str(mp3)],
+                   check=True)
+    p = normalize({"lyrics": LYRICS, "times": TIMES, "video": {"file": "tono.mp3", "width": 0, "height": 0}})
+    size = output_size(p)
+    res = jobs.export_video(jobs.Job("a"), mp3, build_ass(p), "original", size, "ultrafast", "audio", out_dir=tmp_path)
+    info = ff.probe(tmp_path / res["file"])
+    assert (info["width"], info["height"]) == size and info["acodec"] == "mp3" and abs(info["duration"] - 3) < 0.2
+
+
+def test_probe_tolera_duracion_desconocida(monkeypatch):
+    class R:
+        returncode, stderr = 0, ""
+        stdout = '{"format": {"duration": "N/A"}, "streams": [{"codec_type": "video", "width": 10, "height": 20, "duration": "N/A"}]}'
+    monkeypatch.setattr(ff, "run", lambda *a, **k: R())
+    assert ff.probe("x") == {"duration": 0.0, "width": 10, "height": 20, "vcodec": None, "acodec": None}

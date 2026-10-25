@@ -59,6 +59,26 @@ def _color(v, default):
     return default
 
 
+def _t(v):
+    if isinstance(v, bool) or not isinstance(v, (int, float)) or v != v or abs(v) > 86400:
+        return None  # bool, texto, NaN o absurdos: se tratan como "sin marcar"
+    return round(float(v), 3)
+
+
+def _times(raw) -> list:
+    """Tiempos por verso: listas de [t0, t1] numéricos o null. Lo demás se descarta."""
+    out = []
+    for line in raw:
+        syls = []
+        for pair in line if isinstance(line, list) else []:
+            a, b = (_t(pair[0]), _t(pair[1])) if isinstance(pair, (list, tuple)) and len(pair) == 2 else (None, None)
+            if a is None or b is None or b < a:
+                a = b = None
+            syls.append([a, b])
+        out.append(syls)
+    return out
+
+
 def normalize(data: dict) -> dict:
     """Completa y sanea un proyecto venido del navegador o de un archivo."""
     if not isinstance(data, dict) or not isinstance(data.get("lyrics"), str):
@@ -88,7 +108,7 @@ def normalize(data: dict) -> dict:
         st["bounce"] = bool(src.get("bounce", False))
     p["style"] = st
     if isinstance(data.get("times"), list):
-        p["times"] = data["times"]
+        p["times"] = _times(data["times"])
     v = data.get("video")
     if isinstance(v, dict) and v.get("file"):
         p["video"] = {

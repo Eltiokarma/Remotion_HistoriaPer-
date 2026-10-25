@@ -117,8 +117,18 @@ def _clean(text: str) -> str:
     return text.replace("{", "").replace("}", "").replace("\\", "")
 
 
-def style_name(chars, key) -> str:
-    return (chars.get(key, {}).get("name") or key).replace(",", " ")[:30]
+def style_names(chars) -> dict:
+    """Nombre de estilo por personaje, sin comas y sin repetidos ("A,B" y "A B" chocarían)."""
+    out, used = {}, set()
+    for key, c in chars.items():
+        base = (c.get("name") or key).replace(",", " ").strip()[:30] or "Voz"
+        name, n = base, 2
+        while name.lower() in used:
+            name = f"{base} {n}"
+            n += 1
+        used.add(name.lower())
+        out[key] = name
+    return out
 
 
 def _karaoke(line, vs_cs: int, off: float, tag: str) -> str:
@@ -207,6 +217,7 @@ def build_ass(project: dict, title: str = "Karaoke Fansub") -> str:
     geo = layout(style, W, H)
     off = style["offset"] / 1000
     family = fonts.family(style["font"])
+    names = style_names(chars)
     align = 2
 
     out = [
@@ -227,7 +238,7 @@ def build_ass(project: dict, title: str = "Karaoke Fansub") -> str:
     ]
     for key, c in chars.items():
         out.append(
-            f"Style: {style_name(chars, key)},{family},{geo['fs']},{ass_color(c['color'])},"
+            f"Style: {names[key]},{family},{geo['fs']},{ass_color(c['color'])},"
             f"{ass_color(style['unsung'])},{ass_color(darken(c['color'], .72))},&H80000000,"
             f"0,0,0,0,100,100,0,0,1,{geo['ow']:g},0,{align},20,20,{geo['margin']},1"
         )
@@ -241,7 +252,7 @@ def build_ass(project: dict, title: str = "Karaoke Fansub") -> str:
     for i, (line, w) in enumerate(zip(lines, windows(lines, style))):
         if not w:
             continue
-        sname = style_name(chars, line["charKey"])
+        sname = names.get(line["charKey"], "Voz")
         color = chars.get(line["charKey"], {}).get("color", "#ffffff")
         sc = fit_scale(line, style, geo, W)
         y = row_y(w["row"], style, geo, H)

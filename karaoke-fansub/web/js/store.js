@@ -37,10 +37,11 @@ function sameShape(a, b){
 async function runCompile(){
   if(busy){ again = true; return; }
   busy = true;
-  const snap = snapshot();
+  const snap = snapshot(), slug = S.slug;
   try {
     const r = await api.post('/api/compile', snap);
-    if(snap.lyrics === S.project.lyrics){
+    if(slug !== S.slug){ /* se cambió de proyecto mientras tanto: la respuesta ya no sirve */ }
+    else if(snap.lyrics === S.project.lyrics){
       // Si la estructura no cambió, los tiempos locales mandan: pudieron cambiar
       // mientras esperábamos la respuesta (se sigue marcando).
       const shapeChanged = !sameShape(S.lines, r.lines);
@@ -71,19 +72,22 @@ export function changed({ compile = true, delay } = {}){
   saveTimer = setTimeout(saveNow, 1000);
 }
 
-export async function saveNow(){
-  clearTimeout(saveTimer);
-  if(!S.slug) return;
-  try {
-    await api.put(`/api/projects/${S.slug}`, snapshot());
-    setSaveState('Guardado');
-  } catch(e){
-    setSaveState('No se pudo guardar');
-    emit('error', e);
-  }
+// Los guardados van en fila: si dos PUT viajaran a la vez, uno viejo podría llegar
+// último y pisar al nuevo. Cada uno lleva la foto del proyecto del momento en que se pidió.
+let saveChain = Promise.resolve();
+export function saveNow(){
+  clearTimeout(saveTimer); saveTimer = null;
+  if(!S.slug || !S.project) return saveChain;
+  const slug = S.slug, snap = snapshot();
+  saveChain = saveChain.then(() => api.put(`/api/projects/${slug}`, snap).then(
+    () => { if(slug === S.slug && !saveTimer) setSaveState('Guardado'); },
+    e => { setSaveState('No se pudo guardar'); emit('error', e); },
+  ));
+  return saveChain;
 }
 
 function backupLocal(){
+  if(!S.slug) return;
   try { localStorage.setItem('kf-backup-' + S.slug, JSON.stringify({ at: Date.now(), project: snapshot() })); } catch(e){}
 }
 

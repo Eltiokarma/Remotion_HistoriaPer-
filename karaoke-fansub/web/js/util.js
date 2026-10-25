@@ -52,6 +52,11 @@ export function saveBlob(blob, filename){
   setTimeout(() => URL.revokeObjectURL(url), 4000);
 }
 
+/** Controles que ya usan Espacio o flechas por su cuenta (sliders, radios, selects, botones…). */
+export function isControl(target){
+  return !!target.closest?.('input, select, textarea, button, a[href], [role=tab], [contenteditable=true]');
+}
+
 /** Atajos de teclado: no interceptar mientras se escribe en un campo de texto. */
 export function typingIn(target){
   const tag = (target.tagName || '').toLowerCase();

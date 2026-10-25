@@ -1,5 +1,5 @@
 // Línea de tiempo: dos carriles (filas alternas), bordes arrastrables y afinado con teclado.
-import { $, fmt } from './util.js';
+import { $, fmt, isControl } from './util.js';
 import { S, changed, emit, off } from './store.js';
 import { P } from './player.js';
 import { T } from './tapsync.js';
@@ -107,6 +107,7 @@ export function initTimeline(){
   // Teclado: , . eligen sílaba; Shift+←/→ mueven el inicio; Ctrl+←/→ el final (10 ms).
   // (Alt+← no se usa: en el navegador es "Atrás".)
   window.addEventListener('keydown', e => {
+    if(isControl(e.target)) return;  // Shift/Ctrl+flechas en la letra o en un slider son suyas
     const onTl = document.activeElement === tl;
     const fine = (e.shiftKey || e.ctrlKey) && (e.key === 'ArrowLeft' || e.key === 'ArrowRight');
     if(!onTl && !fine) return;

@@ -55,6 +55,13 @@ def status() -> dict:
             "downloadUrl": DOWNLOAD_URL}
 
 
+def _f(v) -> float:
+    try:
+        return float(v)
+    except (TypeError, ValueError):  # ffprobe pone "N/A" cuando no sabe
+        return 0.0
+
+
 def probe(path: Path | str) -> dict:
     """Duración, tamaño (ya rotado) y códecs. Lanza RuntimeError si no se puede."""
     fp = ffprobe_path()
@@ -63,8 +70,11 @@ def probe(path: Path | str) -> dict:
     r = run([fp, "-v", "error", "-print_format", "json", "-show_streams", "-show_format", str(path)], timeout=60)
     if r.returncode != 0:
         raise RuntimeError(r.stderr.strip() or "ffprobe no pudo leer el archivo")
-    data = json.loads(r.stdout or "{}")
-    info = {"duration": float(data.get("format", {}).get("duration") or 0), "width": 0, "height": 0,
+    try:
+        data = json.loads(r.stdout or "{}")
+    except ValueError:
+        raise RuntimeError("ffprobe devolvió algo que no entiendo")
+    info = {"duration": _f(data.get("format", {}).get("duration")), "width": 0, "height": 0,
             "vcodec": None, "acodec": None}
     for s in data.get("streams", []):
         if s.get("codec_type") == "video" and info["vcodec"] is None and s.get("disposition", {}).get("attached_pic") != 1:
@@ -72,15 +82,17 @@ def probe(path: Path | str) -> dict:
             rot = 0
             for sd in s.get("side_data_list", []) or []:
                 if "rotation" in sd:
-                    rot = int(float(sd["rotation"]))
-            rot = rot or int(float((s.get("tags") or {}).get("rotate", 0) or 0))
+                    rot = int(_f(sd["rotation"]))
+            rot = rot or int(_f((s.get("tags") or {}).get("rotate")))
             if abs(rot) % 180 == 90:
                 w, h = h, w
             info.update(width=w, height=h, vcodec=s.get("codec_name"))
             if not info["duration"]:
-                info["duration"] = float(s.get("duration") or 0)
+                info["duration"] = _f(s.get("duration"))
         elif s.get("codec_type") == "audio" and info["acodec"] is None:
             info["acodec"] = s.get("codec_name")
+            if not info["duration"]:
+                info["duration"] = _f(s.get("duration"))
     return info
 
 
@@ -101,14 +113,25 @@ def video_filter(fmt: str, W: int, H: int, src_w: int, src_h: int, ass_rel: str)
             f"[b]scale={W}:{H}:force_original_aspect_ratio=decrease,setsar=1[fg];"
             f"[bg][fg]overlay=(W-w)/2:(H-h)/2,{ass}[v]"
         )
+    if not src_w:  # solo audio: la entrada 0 es un fondo negro del tamaño final (ver export_cmd)
+        return f"[0:v]setsar=1,{ass}[v]"
     scale = f"scale={W}:{H}," if (src_w, src_h) != (W, H) else ""
     return f"[0:v]{scale}setsar=1,{ass}[v]"
 
 
-def export_cmd(src: str, out: str, graph: str, acodec: str | None, preset: str) -> list[str]:
-    cmd = [ffmpeg_path() or "ffmpeg", "-hide_banner", "-nostdin", "-y", "-i", src,
-           "-filter_complex", graph, "-map", "[v]", "-map", "0:a:0?",
-           "-c:v", "libx264", "-preset", preset, "-crf", "18", "-pix_fmt", "yuv420p"]
+def export_cmd(src: str, out: str, graph: str, acodec: str | None, preset: str,
+               audio_only: tuple[int, int] | None = None) -> list[str]:
+    """``audio_only``: (W, H) si el archivo no tiene imagen; se genera un fondo negro."""
+    cmd = [ffmpeg_path() or "ffmpeg", "-hide_banner", "-nostdin", "-y"]
+    if audio_only:
+        W, H = audio_only
+        cmd += ["-f", "lavfi", "-i", f"color=c=black:s={W}x{H}:r=30", "-i", src]
+    else:
+        cmd += ["-i", src]
+    cmd += ["-filter_complex", graph, "-map", "[v]", "-map", "1:a:0" if audio_only else "0:a:0?",
+            "-c:v", "libx264", "-preset", preset, "-crf", "18", "-pix_fmt", "yuv420p"]
+    if audio_only:
+        cmd += ["-shortest"]
     if acodec is None or acodec in MP4_AUDIO:
         cmd += ["-c:a", "copy"]
     else:
