@@ -1,11 +1,12 @@
 import { $, api, fmt, toast, darken, downloadFrom } from './util.js';
-import { S, on, emit, changed, saveNow, recompile, readBackup, snapshot, lineText, lineStatus, timedSpan } from './store.js';
-import { P, vid } from './player.js';
+import { S, on, emit, changed, saveNow, readBackup, snapshot, lineText, lineStatus, timedSpan } from './store.js';
+import { P } from './player.js';
 import { T, initTapsync, updateSyncUI, clampCursor, frameTick, goToLine, stopSync } from './tapsync.js';
 import { initTimeline, drawTimeline } from './timeline.js';
 import { initPreview } from './preview.js';
 import { initExport } from './export.js';
 import { initWhisper } from './whisper.js';
+import { initTemplates } from './templates.js';
 
 let STATUS = null;
 
@@ -295,6 +296,7 @@ async function boot(){
   initPreview(STATUS, onFrame);
   initExport(STATUS);
   initWhisper(STATUS);
+  initTemplates(() => { syncControls(); renderAll(); updateTiktokHint(); });
   const list = await refreshProjectList();
   const slug = STATUS.last || list[0]?.slug;
   if(slug) await loadProject(slug, list.find(x => x.slug === slug)?.updated);

@@ -5,7 +5,6 @@ import json
 import os
 import re
 import shutil
-import time
 import unicodedata
 from pathlib import Path
 
@@ -113,7 +112,3 @@ def safe_media_name(filename: str) -> str:
     stem, ext = os.path.splitext(os.path.basename(filename or "video.mp4"))
     ext = re.sub(r"[^a-zA-Z0-9.]", "", ext)[:6] or ".mp4"
     return slugify(stem) + ext.lower()
-
-
-def now() -> float:
-    return time.time()

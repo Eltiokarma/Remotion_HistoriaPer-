@@ -34,6 +34,7 @@ export const api = {
   get: url => call('GET', url),
   post: (url, body) => call('POST', url, body ?? {}),
   put: (url, body) => call('PUT', url, body),
+  del: url => call('DELETE', url),
 };
 
 /** Descarga un archivo que genera el backend a partir del proyecto. */

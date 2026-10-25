@@ -84,3 +84,20 @@ def test_colores_y_tiempos():
     assert darken("#ffffff", 0.5) == "#808080"
     assert ass_time(3725.456) == "1:02:05.46"
     assert srt_time(3725.456) == "01:02:05,456"
+
+
+def test_salto_por_silaba_un_evento_por_silaba_en_orden():
+    import re
+    p = proyecto()
+    p["style"]["bounce"] = True
+    out = build_ass(p)
+    kar = [l for l in out.splitlines() if ",karaoke," in l]
+    brillo = [l for l in out.splitlines() if ",brillo," in l]
+    from app.lyrics import parse_lyrics
+    n_syls = sum(len(l["syls"]) for l in parse_lyrics(p["lyrics"], p["chars"])[0])
+    assert len(kar) == len(brillo) == n_syls
+    first = kar[:7]  # "Zar|pa|mos con el al|ba"
+    xs = [float(re.search(r"\\pos\(([\d.]+),", l).group(1)) for l in first]
+    assert xs == sorted(xs) and xs[0] < 640 < xs[-1]
+    assert all("\\t(" in l for l in first)  # el pulso
+    assert first[0].endswith("{\\k100}{\\kf36}Zar")

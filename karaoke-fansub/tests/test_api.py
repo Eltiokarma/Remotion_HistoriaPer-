@@ -60,3 +60,18 @@ def test_errores_claros(client):
     assert client.get("/api/projects/no-existe").json()["error"] == "No existe ese proyecto"
     r = client.post("/api/compile", json={"nada": 1})
     assert r.status_code == 400 and "no es un proyecto" in r.json()["error"]
+
+
+def test_plantillas(client, tmp_path, monkeypatch):
+    monkeypatch.setattr(main, "TEMPLATES_DIR", tmp_path / "plantillas")
+    p = client.get("/api/projects/ejemplo").json()["project"]
+    p["style"]["font"] = "Anton"
+    p["style"]["offset"] = -120
+    t = client.post("/api/templates", json={"name": "Mi Canal", "style": p["style"], "chars": p["chars"]}).json()
+    assert t["slug"] == "mi-canal" and t["style"]["font"] == "Anton"
+    assert "offset" not in t["style"]               # el reflejo es de cada canción
+    assert t["colors"]["kaito"] == "#ff5a5f"
+    assert [x["name"] for x in client.get("/api/templates").json()] == ["Mi Canal"]
+    assert client.delete("/api/templates/mi-canal").json()["ok"]
+    assert client.get("/api/templates").json() == []
+    assert client.post("/api/templates", json={"name": " "}).status_code == 400

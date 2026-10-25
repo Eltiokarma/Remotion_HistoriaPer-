@@ -90,6 +90,7 @@ def layout(style, W: int, H: int):
         "ow": round(px * style["outline"] / 100, 1),
         "margin": round(H * style.get("margin", 6.5) / 100),
         "gap": round(px * 1.28),
+        "W": W,
     }
 
 
@@ -138,9 +139,65 @@ def _karaoke(line, vs_cs: int, off: float, tag: str) -> str:
     return out
 
 
-def _bounce(line, vs: float, off: float, sc: int) -> str:
-    """Salto por sílaba: se dibuja cada sílaba encima, ya cantada, con un pulso."""
-    return ""  # se activa en la fase de extras
+def syllable_positions(line, style, geo, sc: int, W: int):
+    """Centro x y texto visible de cada sílaba, para dibujarlas por separado.
+
+    Usa los anchos de la fuente (libass escala con usWinAscent + usWinDescent, igual que
+    ``fonts.text_width``). Devuelve None si no hay métricas (sin fontTools).
+    """
+    k = sc / 100
+    widths = []
+    for s in line["syls"]:
+        full = fonts.text_width(style["font"], _clean(s["text"]), geo["fs"])
+        vis = fonts.text_width(style["font"], _clean(s["text"]).rstrip(), geo["fs"])
+        if full is None or vis is None:
+            return None
+        widths.append((full * k, vis * k))
+    x = W / 2 - sum(f for f, _ in widths) / 2
+    out = []
+    for s, (full, vis) in zip(line["syls"], widths):
+        out.append((_clean(s["text"]).rstrip(), x + vis / 2))
+        x += full
+    return out
+
+
+def _bounce_events(line, w, style, geo, sc, y, sname, color, off):
+    """Salto por sílaba: cada sílaba es un evento propio que crece un instante al cantarse."""
+    pos = syllable_positions(line, style, geo, sc, geo["W"])
+    if pos is None:
+        return None
+    vs_cs = round(w["vs"] * 100)
+    start, end = ass_time(w["vs"]), ass_time(w["ve"])
+    big = round(sc * 1.12)
+    glow = style["glow"]
+    events = []
+    for s, (text, cx) in zip(line["syls"], pos):
+        if not text:
+            continue
+        base = f"\\an2\\pos({cx:.1f},{y})\\fad({FADE_MS},{FADE_MS})\\fscx{sc}\\fscy{sc}"
+        if _timed(s):
+            a = round((s["t0"] + off) * 100) - vs_cs
+            d = max(1, round((s["t1"] + off) * 100) - vs_cs - a)
+            a_ms = a * 10
+            pulse = (f"\\t({a_ms},{a_ms + 90},\\fscx{big}\\fscy{big})"
+                     f"\\t({a_ms + 90},{a_ms + 260},\\fscx{sc}\\fscy{sc})")
+
+            def kar(tag, a=a, d=d, text=text):
+                return (f"{{\\k{a}}}" if a > 0 else "") + f"{{\\{tag}{d}}}{text}"
+        else:
+            pulse = ""
+
+            def kar(tag, text=text):
+                return "{\\k0}" + text
+        if glow > 0:
+            off_ms = round((w["e"] - w["vs"]) * 1000)
+            gb = round(geo["ow"] + geo["px"] * 0.06, 1)
+            g = (f"{{{base}{pulse}\\1a&HFF&\\2a&HFF&\\3c{ass_inline_color(color)}\\3a&H30&"
+                 f"\\bord{gb:g}\\blur{glow:g}\\t({off_ms},{off_ms + 250},\\3a&HFF&)}}")
+            events.append(f"Dialogue: 0,{start},{end},{sname},{sname},0,0,0,brillo,{g}" + kar("ko"))
+        events.append(f"Dialogue: 1,{start},{end},{sname},{sname},0,0,0,karaoke,{{{base}{pulse}}}"
+                      + kar("kf"))
+    return events
 
 
 def build_ass(project: dict, title: str = "Karaoke Fansub") -> str:
@@ -191,6 +248,11 @@ def build_ass(project: dict, title: str = "Karaoke Fansub") -> str:
         base = f"\\an{align}\\pos({W // 2},{y})\\fad({FADE_MS},{FADE_MS})"
         if sc < 100:
             base += f"\\fscx{sc}\\fscy{sc}"
+        if style.get("bounce"):
+            ev = _bounce_events(line, w, style, geo, sc, y, sname, color, off)
+            if ev is not None:
+                out.extend(ev)
+                continue
         vs_cs = round(w["vs"] * 100)
         start, end = ass_time(w["vs"]), ass_time(w["ve"])
         if glow > 0:
@@ -210,8 +272,6 @@ def build_ass(project: dict, title: str = "Karaoke Fansub") -> str:
             f"Dialogue: 1,{start},{end},{sname},{sname},0,0,0,karaoke,"
             + f"{{{base}}}" + _karaoke(line, vs_cs, off, "kf")
         )
-        if style.get("bounce"):
-            out.extend(_bounce(line, w["vs"], off, sc) or [])
     return "\n".join(out) + "\n"
 
 

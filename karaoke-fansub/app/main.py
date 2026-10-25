@@ -10,8 +10,8 @@ from fastapi.staticfiles import StaticFiles
 
 from . import ass_gen, ffmpeg_tools, fonts, jobs, storage, whisper_mod
 from .lyrics import parse_lyrics, syllabify_text
-from .paths import EXPORTS_DIR, FONTS_DIR, WEB_DIR
-from .project import normalize, output_size
+from .paths import EXPORTS_DIR, FONTS_DIR, TEMPLATES_DIR, WEB_DIR
+from .project import DEFAULT_STYLE, normalize, output_size
 
 app = FastAPI(title="Karaoke Fansub", docs_url=None, redoc_url=None)
 
@@ -146,6 +146,53 @@ def download(kind: str, body: dict = Body(...)):
     if kind == "json":
         return _download(json.dumps(p, ensure_ascii=False, indent=1), f"{base}_karaoke.json", "application/json")
     raise HTTPException(404)
+
+
+# ---------------------------------------------------------------- plantillas de estilo
+# Una plantilla guarda el estilo (sin el offset, que depende de cada canción) y los
+# colores por nombre de personaje: así todos los videos de un canal se ven iguales.
+
+TEMPLATE_KEYS = [k for k in DEFAULT_STYLE if k != "offset"]
+
+
+@app.get("/api/templates")
+def templates():
+    TEMPLATES_DIR.mkdir(exist_ok=True)
+    out = []
+    for f in sorted(TEMPLATES_DIR.glob("*.json")):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+            out.append({"slug": f.stem, "name": d.get("name") or f.stem, "style": d.get("style", {}),
+                        "colors": d.get("colors", {})})
+        except (OSError, ValueError):
+            continue
+    return out
+
+
+@app.post("/api/templates")
+def save_template(body: dict = Body(...)):
+    name = str(body.get("name") or "").strip()[:40]
+    if not name:
+        raise HTTPException(400, "Ponle un nombre a la plantilla")
+    try:
+        p = normalize({"lyrics": "", "style": body.get("style") or {}, "chars": body.get("chars") or {}})
+    except ValueError as e:
+        _bad(e)
+    data = {"name": name, "style": {k: p["style"][k] for k in TEMPLATE_KEYS},
+            "colors": {c["name"].lower(): c["color"] for c in p["chars"].values()}}
+    TEMPLATES_DIR.mkdir(exist_ok=True)
+    slug = storage.slugify(name)
+    (TEMPLATES_DIR / f"{slug}.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    return {"slug": slug, **data}
+
+
+@app.delete("/api/templates/{slug}")
+def delete_template(slug: str):
+    f = TEMPLATES_DIR / f"{storage.slugify(slug)}.json"
+    if not f.is_file():
+        raise HTTPException(404, "No existe esa plantilla")
+    f.unlink()
+    return {"ok": True}
 
 
 # ---------------------------------------------------------------- exportar
