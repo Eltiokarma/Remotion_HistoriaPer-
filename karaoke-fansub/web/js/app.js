@@ -5,6 +5,7 @@ import { T, initTapsync, updateSyncUI, clampCursor, frameTick, goToLine, stopSyn
 import { initTimeline, drawTimeline } from './timeline.js';
 import { initPreview } from './preview.js';
 import { initExport } from './export.js';
+import { initWhisper } from './whisper.js';
 
 let STATUS = null;
 
@@ -41,6 +42,15 @@ async function loadProject(slug, updated){
   syncControls(); renderAll();
   emit('project'); emit('size'); emit('ass');
   $('#saveState').textContent = 'Guardado';
+}
+
+/** Aplica una respuesta de /api/compile hecha fuera del flujo normal (p. ej. Whisper). */
+export function applyCompiled(r){
+  S.lines = r.lines; S.project.chars = r.chars; S.ass = r.ass; S.size = r.size;
+  T.cursor = { li: 0, si: 0 };
+  updateDemoDuration(); renderAll();
+  emit('lines'); emit('ass');
+  changed({ compile: false });
 }
 
 function updateDemoDuration(){
@@ -221,9 +231,9 @@ async function boot(){
   wrap.addEventListener('drop', e => uploadVideo(e.dataTransfer.files[0]));
 
   $('#projSel').addEventListener('change', async e => {
+    const slug = e.target.value;  // leerlo antes: refreshProjectList reconstruye las opciones
     const list = await refreshProjectList();
-    const p = list.find(x => x.slug === e.target.value);
-    loadProject(e.target.value, p?.updated).catch(err => toast(err.message));
+    loadProject(slug, list.find(x => x.slug === slug)?.updated).catch(err => toast(err.message));
   });
   $('#newProj').addEventListener('click', async () => {
     const name = prompt('Nombre del proyecto nuevo:', 'Mi canción');
@@ -284,6 +294,7 @@ async function boot(){
   }
   initPreview(STATUS, onFrame);
   initExport(STATUS);
+  initWhisper(STATUS);
   const list = await refreshProjectList();
   const slug = STATUS.last || list[0]?.slug;
   if(slug) await loadProject(slug, list.find(x => x.slug === slug)?.updated);

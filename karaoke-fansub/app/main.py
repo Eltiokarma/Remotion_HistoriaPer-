@@ -8,7 +8,7 @@ from fastapi import Body, FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 
-from . import ass_gen, ffmpeg_tools, fonts, jobs, storage
+from . import ass_gen, ffmpeg_tools, fonts, jobs, storage, whisper_mod
 from .lyrics import parse_lyrics, syllabify_text
 from .paths import EXPORTS_DIR, FONTS_DIR, WEB_DIR
 from .project import normalize, output_size
@@ -31,7 +31,8 @@ def _bad(e: Exception):
 
 @app.get("/api/status")
 def status():
-    return {"ffmpeg": ffmpeg_tools.status(), "fonts": fonts.catalog(), "last": storage.last_slug()}
+    return {"ffmpeg": ffmpeg_tools.status(), "fonts": fonts.catalog(), "last": storage.last_slug(),
+            "whisper": whisper_mod.status()}
 
 
 # ---------------------------------------------------------------- proyectos
@@ -172,6 +173,27 @@ def export(slug: str, body: dict = Body(...)):
     ass = ass_gen.build_ass(p, p.get("name") or "Karaoke")
     job = jobs.start("export", jobs.export_video, src, ass, p["output"]["format"], output_size(p), preset,
                      storage.slugify(p.get("name") or slug))
+    return job.to_dict()
+
+
+@app.post("/api/projects/{slug}/whisper")
+def whisper(slug: str, body: dict = Body(...)):
+    _project_or_404(slug)
+    if not whisper_mod.available():
+        raise HTTPException(400, "El modo automático no está instalado. Mira el README (requirements-whisper.txt).")
+    try:
+        p = storage.save(slug, body.get("project") or {})
+    except ValueError as e:
+        _bad(e)
+    if not p.get("video"):
+        raise HTTPException(400, "Primero carga un video")
+    src = storage.project_dir(slug) / p["video"]["file"]
+    mode = "align" if body.get("mode") == "align" else "transcribe"
+    if mode == "align" and not p["lyrics"].strip():
+        raise HTTPException(400, "Para alinear, primero pega la letra en la pestaña Letra")
+    lang = body.get("language") or None
+    job = jobs.start("whisper", whisper_mod.whisper_job, src, p, mode, str(body.get("model") or "small"),
+                     None if lang == "auto" else lang, str(body.get("speaker") or "").strip()[:24])
     return job.to_dict()
 
 
