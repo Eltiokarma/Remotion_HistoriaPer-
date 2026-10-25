@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karaoke Fansub</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23f2b33d'/><text x='16' y='22' font-size='16' text-anchor='middle' font-family='sans-serif' font-weight='bold' fill='%231d1504'>K</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <h1>Karaoke <span>Fansub</span></h1>
+  <div class="proj">
+    <label class="sr-only" for="projSel">Proyecto</label>
+    <select id="projSel" title="Proyecto abierto"></select>
+    <span id="saveState" class="tag" aria-live="polite"></span>
+  </div>
+  <div class="file-actions">
+    <label class="btn primary" for="fileVideo">Cargar video<input id="fileVideo" type="file" accept="video/*,audio/*"></label>
+    <button class="btn" id="newProj" type="button">Nuevo</button>
+    <label class="btn" for="fileProj">Importar .json<input id="fileProj" type="file" accept=".json,application/json"></label>
+    <button class="btn" id="saveProj" type="button">Descargar .json</button>
+  </div>
+</header>
+
+<div id="banner" class="banner" hidden role="alert"></div>
+
+<main class="grid">
+  <section style="min-width:0">
+    <div class="stage-wrap" id="stageWrap">
+      <div class="stage" id="stage" tabindex="-1">
+        <canvas id="bgBlur" class="layer" hidden aria-hidden="true"></canvas>
+        <div id="demoBg" class="layer demo-bg" aria-hidden="true"></div>
+        <video id="vid" class="layer" playsinline preload="auto"></video>
+        <canvas id="subs" class="layer subs" aria-label="Vista previa de la letra"></canvas>
+        <div id="dropHint" class="drop-hint" hidden>Suelta el video aquí</div>
+        <div id="upload" class="upload" hidden><span id="uploadTxt">Subiendo…</span><progress id="uploadProg" max="1" value="0"></progress></div>
+      </div>
+    </div>
+
+    <div class="transport">
+      <button class="btn" id="playBtn" type="button" aria-label="Reproducir">▶ Play</button>
+      <span class="time" id="timeTxt"><b>0:00.00</b> / 0:00.00</span>
+      <input id="seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Posición">
+      <label class="mini" for="rate">Velocidad
+        <select id="rate"><option value="0.5">0.5×</option><option value="0.75">0.75×</option><option value="1" selected>1×</option></select>
+      </label>
+    </div>
+
+    <canvas id="tl" class="timeline" tabindex="0" aria-label="Línea de tiempo de sílabas"></canvas>
+    <p class="tl-hint">Arrastra el borde de una sílaba para afinarla; arrastra el fondo para moverte. Con teclado: <kbd>,</kbd> <kbd>.</kbd> eligen sílaba, <kbd>Shift</kbd>+<kbd>←</kbd><kbd>→</kbd> mueven su inicio y <kbd>Ctrl</kbd>+<kbd>←</kbd><kbd>→</kbd> su final (10 ms).</p>
+
+    <div class="tapbar">
+      <button class="tap" id="tapBtn" type="button" disabled>MANTÉN<br>ESPACIO</button>
+      <div class="tapinfo">
+        <div class="sync-row">
+          <button class="btn primary" id="syncBtn" type="button">Empezar a marcar</button>
+          <span id="syncState" class="help"></span>
+        </div>
+        <div>
+          <div class="next-label">Sílaba que sigue</div>
+          <div class="next-syl" id="nextSyl">—</div>
+          <div class="next-ctx" id="nextCtx"></div>
+        </div>
+        <div class="keys">
+          <span><kbd>Espacio</kbd> mantener mientras suena la sílaba</span>
+          <span><kbd>R</kbd> repetir verso</span>
+          <span><kbd>⌫</kbd> sílaba anterior</span>
+          <span><kbd>←</kbd><kbd>→</kbd> ±2 s</span>
+          <span><kbd>Esc</kbd> dejar de marcar</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="side">
+    <div class="tabs" role="tablist" aria-label="Paneles">
+      <button role="tab" aria-selected="true" data-tab="letra" id="tab-letra">Letra</button>
+      <button role="tab" aria-selected="false" data-tab="chars" id="tab-chars" tabindex="-1">Personajes</button>
+      <button role="tab" aria-selected="false" data-tab="estilo" id="tab-estilo" tabindex="-1">Estilo</button>
+      <button role="tab" aria-selected="false" data-tab="export" id="tab-export" tabindex="-1">Exportar</button>
+      <button role="tab" aria-selected="false" data-tab="auto" id="tab-auto" tabindex="-1">Automático</button>
+    </div>
+
+    <div class="pane" data-pane="letra" role="tabpanel" aria-labelledby="tab-letra">
+      <p class="help">Una línea por verso. Empieza con <code>Nombre:</code> para elegir el personaje (si no lo pones, sigue el del verso anterior). Separa sílabas con <code>|</code>; una palabra sin <code>|</code> cuenta como una sola sílaba.</p>
+      <textarea id="lyrics" spellcheck="false" aria-label="Letra"></textarea>
+      <div class="row">
+        <button class="btn" id="silabear" type="button">Silabear automático</button>
+        <button class="btn danger" id="clearTimes" type="button">Borrar tiempos</button>
+      </div>
+      <h3>Versos</h3>
+      <ul class="lines" id="lineList"></ul>
+    </div>
+
+    <div class="pane" data-pane="chars" role="tabpanel" aria-labelledby="tab-chars" hidden>
+      <p class="help">Cada nombre que uses en la letra aparece aquí. Su color pinta las sílabas cuando se cantan, como en los fansubs de antes.</p>
+      <div class="chars" id="charList"></div>
+    </div>
+
+    <div class="pane" data-pane="estilo" role="tabpanel" aria-labelledby="tab-estilo" hidden>
+      <div class="field"><label for="sFont">Fuente</label><select id="sFont"></select><span></span></div>
+      <div class="field"><label for="sSize">Tamaño</label><input id="sSize" type="range" min="3" max="14" step="0.5"><output id="oSize" for="sSize"></output></div>
+      <div class="field"><label for="sOutline">Borde</label><input id="sOutline" type="range" min="0" max="20" step="1"><output id="oOutline" for="sOutline"></output></div>
+      <div class="field"><label for="sUnsung">Antes de cantar</label><input id="sUnsung" type="color"><span></span></div>
+      <div class="field"><label for="sPos">Posición</label>
+        <select id="sPos"><option value="bottom">Abajo</option><option value="top">Arriba</option></select><span></span></div>
+      <div class="field"><label for="sLead">Aparece antes</label><input id="sLead" type="range" min="0.2" max="2.5" step="0.1"><output id="oLead" for="sLead"></output></div>
+      <div class="field"><label for="sGlow">Brillo (blur)</label><input id="sGlow" type="range" min="0" max="12" step="1"><output id="oGlow" for="sGlow"></output></div>
+      <div class="field"><label for="sOffset">Compensar reflejo</label><input id="sOffset" type="range" min="-400" max="400" step="10"><output id="oOffset" for="sOffset"></output></div>
+      <div class="field"><label for="sBounce">Salto por sílaba</label>
+        <select id="sBounce"><option value="0">No</option><option value="1">Sí</option></select><span></span></div>
+      <p class="help">Si las sílabas se pintan tarde respecto a la voz, mueve “Compensar reflejo” a negativo. Afecta la vista previa y todo lo que exportas.</p>
+      <div id="templatesBox"></div>
+    </div>
+
+    <div class="pane" data-pane="export" role="tabpanel" aria-labelledby="tab-export" hidden>
+      <div id="exportBox"></div>
+    </div>
+
+    <div class="pane" data-pane="auto" role="tabpanel" aria-labelledby="tab-auto" hidden>
+      <div id="autoBox"></div>
+    </div>
+  </aside>
+</main>
+<div id="toast" hidden role="status"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
