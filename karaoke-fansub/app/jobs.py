@@ -150,3 +150,18 @@ def export_video(job: Job, src: Path, ass_text: str, fmt: str, size, preset: str
     finally:
         ass_file.unlink(missing_ok=True)
     return {"file": out.name, "path": str(out), "url": f"/exportados/{out.name}"}
+
+
+def make_proxy(job: Job, src: Path, dst: Path):
+    """Copia H.264 liviana solo para la vista previa (p. ej. si el video es HEVC del celular)."""
+    if not ff.ffmpeg_path():
+        raise RuntimeError("No encuentro ffmpeg. Descárgalo de " + ff.DOWNLOAD_URL)
+    info = ff.probe(src)
+    tmp = dst.with_name(dst.stem + ".tmp.mp4")
+    cmd = [ff.ffmpeg_path(), "-hide_banner", "-nostdin", "-y", "-i", str(src), "-map", "0:v:0", "-map", "0:a:0?",
+           "-vf", "scale=-2:'min(720,ih)'", "-c:v", "libx264", "-preset", "veryfast", "-crf", "26",
+           "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",
+           "-progress", "pipe:1", "-nostats", str(tmp)]
+    run_ffmpeg(job, cmd, info["duration"], tmp, "Convirtiendo")
+    tmp.replace(dst)
+    return {"preview": dst.name}

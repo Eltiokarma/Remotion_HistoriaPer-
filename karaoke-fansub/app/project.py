@@ -97,6 +97,8 @@ def normalize(data: dict) -> dict:
             "height": int(_num(v.get("height"), 0, 0, 16384)),
             "duration": _num(v.get("duration"), 0, 0, 86400),
         }
+        if isinstance(v.get("preview"), str) and v["preview"]:
+            p["video"]["preview"] = v["preview"]  # copia liviana para el navegador (ver /proxy)
     out = data.get("output") or {}
     fmt = out.get("format") if isinstance(out, dict) else None
     p["output"] = {"format": fmt if fmt in FORMATS else "original"}

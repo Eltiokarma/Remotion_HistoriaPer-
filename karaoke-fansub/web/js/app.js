@@ -35,10 +35,8 @@ async function loadProject(slug, updated){
   S.lines = c.lines; S.project.chars = c.chars; S.ass = c.ass; S.size = c.size;
   T.cursor = { li: 0, si: 0 };
   $('#projSel').value = slug;
-  if(project.video){
-    try { await P.load(`/media/${slug}/${encodeURIComponent(project.video.file)}`); }
-    catch(e){ P.unload(); toast('No pude abrir el video del proyecto; vuelve a cargarlo'); }
-  } else P.unload();
+  if(project.video) await openVideo();
+  else P.unload();
   updateDemoDuration();
   syncControls(); renderAll();
   emit('project'); emit('size'); emit('ass');
@@ -60,6 +58,43 @@ function updateDemoDuration(){
 }
 
 /* ---------- video ---------- */
+/** Abre el video del proyecto en el reproductor. Si el navegador no puede (p. ej. HEVC
+ *  del celular), ofrece convertir una copia liviana solo para la vista previa. */
+async function openVideo(){
+  const v = S.project.video, slug = S.slug;
+  hideBanner('codec');
+  try {
+    await P.load(`/media/${slug}/${encodeURIComponent(v.preview || v.file)}`, (v.width || 0) > 0);
+    return true;
+  } catch(e){
+    P.unload();
+    emit('format');
+    if(!STATUS.ffmpeg.ffmpeg){ toast('Tu navegador no puede reproducir ese video. Conviértelo a MP4 (H.264) e inténtalo otra vez.', 6000); return false; }
+    showBanner(`<strong>Tu navegador no puede reproducir este video</strong> (suele pasar con videos HEVC del celular).
+      Puedo hacer una copia liviana solo para la vista previa; al exportar se usa tu video original.
+      <div class="row" style="margin-top:8px"><button class="btn primary" id="proxyGo" type="button">Convertir para la vista previa</button>
+      <span id="proxyMsg" class="help"></span></div>`, 'codec');
+    $('#proxyGo').addEventListener('click', () => convertProxy(slug));
+    return false;
+  }
+}
+
+async function convertProxy(slug){
+  $('#proxyGo').disabled = true;
+  let job;
+  try { job = await api.post(`/api/projects/${slug}/proxy`); }
+  catch(e){ $('#proxyMsg').textContent = e.message; $('#proxyGo').disabled = false; return; }
+  while(job.status === 'running'){
+    await new Promise(r => setTimeout(r, 700));
+    job = await api.get(`/api/jobs/${job.id}`);
+    if($('#proxyMsg')) $('#proxyMsg').textContent = job.message;
+  }
+  if(job.status !== 'done' || S.slug !== slug){ if($('#proxyMsg')) $('#proxyMsg').textContent = job.error || 'No se pudo convertir'; return; }
+  S.project.video.preview = job.result.preview;
+  changed({ compile: false });
+  if(await openVideo()){ emit('format'); toast('Listo: ya puedes ver y marcar el video'); }
+}
+
 function uploadVideo(file){
   if(!file) return;
   if(!/^(video|audio)\//.test(file.type) && !/\.(mp4|mkv|mov|webm|avi|m4v|mp3|wav|m4a|ogg)$/i.test(file.name)) return toast('Ese archivo no parece un video');
@@ -84,7 +119,7 @@ function uploadVideo(file){
       let data = {}; try { data = JSON.parse(xhr.responseText); } catch(e){}
       if(xhr.status !== 200) return toast(data.error || 'No se pudo cargar el video');
       S.project.video = data.video;
-      try { await P.load(`/media/${S.slug}/${encodeURIComponent(data.video.file)}`); } catch(e){ return toast(e.message); }
+      if(!(await openVideo())) return;
       emit('format');
       changed({ delay: 0 });
       toast(`Video cargado: ${file.name}`);
@@ -213,7 +248,8 @@ function frame(ts){
 }
 
 /* ---------- arranque ---------- */
-function showBanner(html){ const b = $('#banner'); b.innerHTML = html; b.hidden = false; }
+function showBanner(html, kind = ''){ const b = $('#banner'); b.innerHTML = html; b.dataset.kind = kind; b.hidden = false; }
+function hideBanner(kind){ const b = $('#banner'); if(b.dataset.kind === kind) b.hidden = true; }
 
 async function boot(){
   initTabs(); initTapsync(); initTimeline(); bindStyle();

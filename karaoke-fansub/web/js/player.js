@@ -30,10 +30,20 @@ export const P = {
     const dt = Math.min(0.1, (ts - lastPerf) / 1000); lastPerf = ts;
     if(!hasVideo && demoPlaying){ demoT += dt * rate; if(demoT >= demoDur){ demoT = demoDur; demoPlaying = false; } }
   },
-  load(url){
+  /** Carga un video. ``expectVideo``: si el archivo tiene imagen, exige poder decodificarla
+   *  (Chrome lee el contenedor de un HEVC aunque no pueda mostrar ningún cuadro). */
+  load(url, expectVideo = true){
     return new Promise((resolve, reject) => {
-      vid.onloadedmetadata = () => { hasVideo = true; vid.playbackRate = rate; resolve({ width: vid.videoWidth, height: vid.videoHeight, duration: vid.duration }); };
-      vid.onerror = () => { hasVideo = false; reject(new Error('Ese archivo no se puede reproducir en el navegador')); };
+      const fail = () => { cleanup(); hasVideo = false; reject(new Error('Ese archivo no se puede reproducir en el navegador')); };
+      const ok = () => {
+        if(expectVideo && !vid.videoWidth) return fail();
+        cleanup(); hasVideo = true; vid.playbackRate = rate;
+        resolve({ width: vid.videoWidth, height: vid.videoHeight, duration: vid.duration });
+      };
+      const timer = setTimeout(() => (vid.readyState >= 2 ? ok() : fail()), 8000);
+      const cleanup = () => { clearTimeout(timer); vid.onloadeddata = vid.onerror = null; };
+      vid.onloadeddata = ok;
+      vid.onerror = fail;
       vid.src = url;
     });
   },

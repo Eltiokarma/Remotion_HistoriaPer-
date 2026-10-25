@@ -98,3 +98,10 @@ def test_error_de_ffmpeg_se_informa(tmp_path):
             break
         time.sleep(0.05)
     assert job.status == "error" and job.error
+
+
+def test_copia_liviana_para_la_vista_previa(clip, tmp_path):
+    dst = tmp_path / "vista-previa-x.mp4"
+    res = jobs.make_proxy(jobs.Job("p"), clip, dst)
+    info = ff.probe(dst)
+    assert res["preview"] == dst.name and info["vcodec"] == "h264" and abs(info["duration"] - 5) < 0.2

@@ -93,7 +93,30 @@ async def upload_video(slug: str, file: UploadFile = File(...), width: int = For
     storage.save(slug, p)
     if old and old != name:
         (d / old).unlink(missing_ok=True)
+    for f in d.glob("vista-previa-*.mp4"):
+        f.unlink(missing_ok=True)
     return {"video": p["video"], "project": p}
+
+
+@app.post("/api/projects/{slug}/proxy")
+def make_proxy(slug: str):
+    """Convierte el video a una copia que cualquier navegador reproduce (solo para la vista previa)."""
+    p = _project_or_404(slug)
+    if not p.get("video"):
+        raise HTTPException(400, "Primero carga un video")
+    d = storage.project_dir(slug)
+    src = d / p["video"]["file"]
+    dst = d / ("vista-previa-" + storage.slugify(src.stem) + ".mp4")
+
+    def run(job):
+        res = jobs.make_proxy(job, src, dst)
+        cur = storage.load(slug)
+        if cur.get("video") and cur["video"]["file"] == p["video"]["file"]:
+            cur["video"]["preview"] = res["preview"]
+            storage.save(slug, cur)
+        return res
+
+    return jobs.start("proxy", run).to_dict()
 
 
 @app.get("/media/{slug}/{name}")
