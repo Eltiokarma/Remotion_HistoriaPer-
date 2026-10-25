@@ -18,7 +18,9 @@ MP4_AUDIO = {"aac", "mp3", "ac3", "eac3", "opus", "alac", "flac"}
 
 def _find(name: str) -> str | None:
     exe = name + (".exe" if sys.platform == "win32" else "")
-    for cand in (ROOT / "ffmpeg" / "bin" / exe, ROOT / "ffmpeg" / exe):
+    # ffmpeg/bin/, ffmpeg/ o una carpeta doble al descomprimir (ffmpeg/ffmpeg-7.1-essentials_build/bin/)
+    cands = [ROOT / "ffmpeg" / "bin" / exe, ROOT / "ffmpeg" / exe, *sorted((ROOT / "ffmpeg").glob(f"*/bin/{exe}"))]
+    for cand in cands:
         if cand.is_file():
             return str(cand)
     return shutil.which(name)
