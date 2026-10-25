@@ -1,0 +1,30 @@
+[Script Info]
+; Hecho con Karaoke Fansub
+Title: Ejemplo
+ScriptType: v4.00+
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+PlayResX: 1280
+PlayResY: 720
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Kaito,Rounded Mplus 1c ExtraBold,70,&H005F5AFF,&H00FFFFFF,&H001B1947,&H80000000,0,0,0,0,100,100,0,0,1,4.5,0,2,20,20,47,1
+Style: Mirei,Rounded Mplus 1c ExtraBold,70,&H00FFC85E,&H00FFFFFF,&H0047381A,&H80000000,0,0,0,0,100,100,0,0,1,4.5,0,2,20,20,47,1
+Style: Coro,Rounded Mplus 1c ExtraBold,70,&H004AC9FF,&H00FFFFFF,&H00153847,&H80000000,0,0,0,0,100,100,0,0,1,4.5,0,2,20,20,47,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:04.06,Kaito,Kaito,0,0,0,brillo,{\an2\pos(640,609)\fad(150,150)\1a&HFF&\2a&HFF&\3c&H5F5AFF&\3a&H30&\bord7.5\blur4\t(3710,3960,\3a&HFF&)}{\k100}{\ko36}Zar{\k6}{\ko33}pa{\k4}{\ko37}mos {\k5}{\ko37}con {\k4}{\ko34}el {\k4}{\ko33}al{\k5}{\ko33}ba
+Dialogue: 1,0:00:00.00,0:00:04.06,Kaito,Kaito,0,0,0,karaoke,{\an2\pos(640,609)\fad(150,150)}{\k100}{\kf36}Zar{\k6}{\kf33}pa{\k4}{\kf37}mos {\k5}{\kf37}con {\k4}{\kf34}el {\k4}{\kf33}al{\k5}{\kf33}ba
+Dialogue: 0,0:00:03.56,0:00:08.01,Mirei,Mirei,0,0,0,brillo,{\an2\pos(640,673)\fad(150,150)\1a&HFF&\2a&HFF&\3c&HFFC85E&\3a&H30&\bord7.5\blur4\t(4100,4350,\3a&HFF&)}{\k100}{\ko33}el {\k5}{\ko40}vien{\k5}{\ko33}to {\k5}{\ko37}can{\k5}{\ko33}ta {\k5}{\ko29}a {\k5}{\ko33}fa{\k5}{\ko37}vor
+Dialogue: 1,0:00:03.56,0:00:08.01,Mirei,Mirei,0,0,0,karaoke,{\an2\pos(640,673)\fad(150,150)}{\k100}{\kf33}el {\k5}{\kf40}vien{\k5}{\kf33}to {\k5}{\kf37}can{\k5}{\kf33}ta {\k5}{\kf29}a {\k5}{\kf33}fa{\k5}{\kf37}vor
+Dialogue: 0,0:00:07.51,0:00:12.37,Kaito,Kaito,0,0,0,brillo,{\an2\pos(640,609)\fad(150,150)\1a&HFF&\2a&HFF&\3c&H5F5AFF&\3a&H30&\bord7.5\blur4\t(4510,4760,\3a&HFF&)}{\k100}{\ko33}no {\k5}{\ko37}hay {\k4}{\ko33}ma{\k6}{\ko33}pa {\k5}{\ko36}que {\k5}{\ko37}nos {\k4}{\ko33}de{\k6}{\ko36}ten{\k5}{\ko33}ga
+Dialogue: 1,0:00:07.51,0:00:12.37,Kaito,Kaito,0,0,0,karaoke,{\an2\pos(640,609)\fad(150,150)}{\k100}{\kf33}no {\k5}{\kf37}hay {\k4}{\kf33}ma{\k6}{\kf33}pa {\k5}{\kf36}que {\k5}{\kf37}nos {\k4}{\kf33}de{\k6}{\kf36}ten{\k5}{\kf33}ga
+Dialogue: 0,0:00:11.87,0:00:16.39,Coro,Coro,0,0,0,brillo,{\an2\pos(640,673)\fad(150,150)\1a&HFF&\2a&HFF&\3c&H4AC9FF&\3a&H30&\bord7.5\blur4\t(4170,4420,\3a&HFF&)}{\k100}{\ko40}¡más {\k5}{\ko30}a{\k5}{\ko36}llá {\k5}{\ko37}del {\k4}{\ko33}ho{\k6}{\ko33}ri{\k5}{\ko36}zon{\k5}{\ko37}te!
+Dialogue: 1,0:00:11.87,0:00:16.39,Coro,Coro,0,0,0,karaoke,{\an2\pos(640,673)\fad(150,150)}{\k100}{\kf40}¡más {\k5}{\kf30}a{\k5}{\kf36}llá {\k5}{\kf37}del {\k4}{\kf33}ho{\k6}{\kf33}ri{\k5}{\kf36}zon{\k5}{\kf37}te!
+Dialogue: 0,0:00:15.89,0:00:20.33,Mirei,Mirei,0,0,0,brillo,{\an2\pos(640,609)\fad(150,150)\1a&HFF&\2a&HFF&\3c&HFFC85E&\3a&H30&\bord7.5\blur4\t(4090,4340,\3a&HFF&)}{\k100}{\ko40}guar{\k5}{\ko32}da {\k5}{\ko33}la {\k5}{\ko37}luz {\k5}{\ko33}de {\k5}{\ko33}tu {\k5}{\ko33}fa{\k5}{\ko33}ro
+Dialogue: 1,0:00:15.89,0:00:20.33,Mirei,Mirei,0,0,0,karaoke,{\an2\pos(640,609)\fad(150,150)}{\k100}{\kf40}guar{\k5}{\kf32}da {\k5}{\kf33}la {\k5}{\kf37}luz {\k5}{\kf33}de {\k5}{\kf33}tu {\k5}{\kf33}fa{\k5}{\kf33}ro
+Dialogue: 0,0:00:19.83,0:00:24.72,Coro,Coro,0,0,0,brillo,{\an2\pos(640,673)\fad(150,150)\1a&HFF&\2a&HFF&\3c&H4AC9FF&\3a&H30&\bord7.5\blur4\t(4540,4790,\3a&HFF&)}{\k100}{\ko40}¡que {\k5}{\ko33}la {\k5}{\ko36}mar {\k5}{\ko37}nos {\k5}{\ko36}lle{\k5}{\ko33}va {\k5}{\ko30}a {\k5}{\ko33}ca{\k5}{\ko36}sa!
+Dialogue: 1,0:00:19.83,0:00:24.72,Coro,Coro,0,0,0,karaoke,{\an2\pos(640,673)\fad(150,150)}{\k100}{\kf40}¡que {\k5}{\kf33}la {\k5}{\kf36}mar {\k5}{\kf37}nos {\k5}{\kf36}lle{\k5}{\kf33}va {\k5}{\kf30}a {\k5}{\kf33}ca{\k5}{\kf36}sa!

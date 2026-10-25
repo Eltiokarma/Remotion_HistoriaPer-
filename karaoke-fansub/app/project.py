@@ -16,6 +16,7 @@ DEFAULT_STYLE = {
     "outline": 9,       # % del tamaño de la fuente
     "unsung": "#ffffff",
     "pos": "bottom",    # bottom | top
+    "margin": 6.5,      # % de la altura entre el borde y la letra
     "lead": 1.0,        # segundos que el verso aparece antes de cantarse
     "glow": 4,          # blur del brillo al cantar (0 = sin brillo)
     "offset": 0,        # ms, compensa el reflejo al marcar
@@ -80,6 +81,7 @@ def normalize(data: dict) -> dict:
         st["outline"] = _num(src.get("outline"), st["outline"], 0, 30)
         st["unsung"] = _color(src.get("unsung"), st["unsung"])
         st["pos"] = "top" if src.get("pos") == "top" else "bottom"
+        st["margin"] = _num(src.get("margin"), st["margin"], 0, 40)
         st["lead"] = _num(src.get("lead"), st["lead"], 0.15, 5)
         st["glow"] = _num(src.get("glow"), st["glow"], 0, 20)
         st["offset"] = _num(src.get("offset"), st["offset"], -2000, 2000)

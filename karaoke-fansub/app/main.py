@@ -8,9 +8,9 @@ from fastapi import Body, FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 
-from . import ass_gen, ffmpeg_tools, fonts, storage
+from . import ass_gen, ffmpeg_tools, fonts, jobs, storage
 from .lyrics import parse_lyrics, syllabify_text
-from .paths import FONTS_DIR, WEB_DIR
+from .paths import EXPORTS_DIR, FONTS_DIR, WEB_DIR
 from .project import normalize, output_size
 
 app = FastAPI(title="Karaoke Fansub", docs_url=None, redoc_url=None)
@@ -145,6 +145,69 @@ def download(kind: str, body: dict = Body(...)):
     if kind == "json":
         return _download(json.dumps(p, ensure_ascii=False, indent=1), f"{base}_karaoke.json", "application/json")
     raise HTTPException(404)
+
+
+# ---------------------------------------------------------------- exportar
+
+PRESETS = {"rapida": "veryfast", "equilibrada": "medium", "maxima": "slow"}
+
+
+@app.post("/api/projects/{slug}/export")
+def export(slug: str, body: dict = Body(...)):
+    _project_or_404(slug)
+    try:
+        p = storage.save(slug, body.get("project") or {})
+    except ValueError as e:
+        _bad(e)
+    if not ffmpeg_tools.ffmpeg_path():
+        raise HTTPException(400, "No encuentro ffmpeg. Descárgalo de " + ffmpeg_tools.DOWNLOAD_URL)
+    if not p.get("video"):
+        raise HTTPException(400, "Primero carga un video")
+    src = storage.project_dir(slug) / p["video"]["file"]
+    if not src.is_file():
+        raise HTTPException(400, "No encuentro el video del proyecto; vuelve a cargarlo")
+    if not any(t for line in p["times"] for t in line if t and t[0] is not None):
+        raise HTTPException(400, "Todavía no hay sílabas marcadas")
+    preset = PRESETS.get(body.get("preset"), "medium")
+    ass = ass_gen.build_ass(p, p.get("name") or "Karaoke")
+    job = jobs.start("export", jobs.export_video, src, ass, p["output"]["format"], output_size(p), preset,
+                     storage.slugify(p.get("name") or slug))
+    return job.to_dict()
+
+
+@app.get("/api/jobs/{job_id}")
+def job_status(job_id: str):
+    job = jobs.get(job_id)
+    if not job:
+        raise HTTPException(404, "Ese trabajo ya no existe")
+    return job.to_dict()
+
+
+@app.post("/api/jobs/{job_id}/cancel")
+def job_cancel(job_id: str):
+    job = jobs.get(job_id)
+    if not job:
+        raise HTTPException(404, "Ese trabajo ya no existe")
+    job.cancel()
+    return job.to_dict()
+
+
+@app.get("/exportados/{name}")
+def exported(name: str):
+    f = EXPORTS_DIR / name
+    if "/" in name or "\\" in name or name.startswith(".") or not f.is_file():
+        raise HTTPException(404, "No encuentro ese archivo")
+    return FileResponse(f, filename=name)
+
+
+@app.post("/api/open-exports")
+def open_exports():
+    EXPORTS_DIR.mkdir(exist_ok=True)
+    try:
+        ffmpeg_tools.open_folder(EXPORTS_DIR)
+    except OSError as e:
+        raise HTTPException(500, f"No pude abrir la carpeta: {e}")
+    return {"path": str(EXPORTS_DIR)}
 
 
 # ---------------------------------------------------------------- estáticos

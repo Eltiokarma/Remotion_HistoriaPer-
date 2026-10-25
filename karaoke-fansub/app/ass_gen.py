@@ -88,7 +88,7 @@ def layout(style, W: int, H: int):
         "px": px,
         "fs": fonts.ass_size(style["font"], px),
         "ow": round(px * style["outline"] / 100, 1),
-        "margin": round(H * 0.065),
+        "margin": round(H * style.get("margin", 6.5) / 100),
         "gap": round(px * 1.28),
     }
 

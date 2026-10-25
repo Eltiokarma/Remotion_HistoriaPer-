@@ -4,6 +4,7 @@ import { P, vid } from './player.js';
 import { T, initTapsync, updateSyncUI, clampCursor, frameTick, goToLine, stopSync } from './tapsync.js';
 import { initTimeline, drawTimeline } from './timeline.js';
 import { initPreview } from './preview.js';
+import { initExport } from './export.js';
 
 let STATUS = null;
 
@@ -126,11 +127,16 @@ const STYLE_FIELDS = [
   ['#sOutline', 'outline', '#oOutline', v => v + '%'],
   ['#sUnsung', 'unsung', null, null, false],
   ['#sPos', 'pos', null, null, false],
+  ['#sMargin', 'margin', '#oMargin', v => (+v).toFixed(1) + '%'],
   ['#sLead', 'lead', '#oLead', v => (+v).toFixed(1) + ' s'],
   ['#sGlow', 'glow', '#oGlow', v => v ? String(v) : 'no'],
   ['#sOffset', 'offset', '#oOffset', v => (v > 0 ? '+' : '') + v + ' ms'],
   ['#sBounce', 'bounce', null, null, 'bool'],
 ];
+function updateTiktokHint(){
+  const st = S.project.style;
+  $('#tiktokHint').hidden = S.size[1] <= S.size[0] || st.pos === 'top' || st.margin >= 15;
+}
 function bindStyle(){
   STYLE_FIELDS.forEach(([id, key, outId, f, kind = true]) => {
     const el = $(id);
@@ -139,6 +145,7 @@ function bindStyle(){
       if(outId) $(outId).textContent = f(S.project.style[key]);
       changed({ delay: 60 });
       if(key === 'offset') updateDemoDuration();
+      if(key === 'margin' || key === 'pos') updateTiktokHint();
     };
     el.addEventListener('input', handler);
     if(el.tagName === 'SELECT') el.addEventListener('change', handler);
@@ -261,7 +268,10 @@ async function boot(){
   on('lines', () => { renderAll(); updateDemoDuration(); });
   on('times', () => { renderLines(); updateDemoDuration(); });
   on('error', e => toast(e.message || String(e), 4000));
-  on('size', () => $('#stage').style.setProperty('--ar', (S.size[0] / S.size[1]).toFixed(4)));
+  on('size', () => {
+    $('#stage').style.setProperty('--ar', (S.size[0] / S.size[1]).toFixed(4));
+    updateTiktokHint();
+  });
 
   STATUS = await api.get('/api/status');
   const fs = $('#sFont'); fs.innerHTML = '';
@@ -273,6 +283,7 @@ async function boot(){
       <code>karaoke-fansub/ffmpeg/</code>, o agrégala al PATH. Luego reinicia el programa.`);
   }
   initPreview(STATUS, onFrame);
+  initExport(STATUS);
   const list = await refreshProjectList();
   const slug = STATUS.last || list[0]?.slug;
   if(slug) await loadProject(slug, list.find(x => x.slug === slug)?.updated);
