@@ -43,7 +43,7 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
 
   // —— A: la pila sobre la mesa (hasta entrar a la página)
   const entra = tramo(t, 0, 1.4, 'natural');
-  const acerca = tramo(t, 0, tCita, 'natural');
+  // cámara quieta mientras la pluma corrige: se mueve recién para entrar a la página
   const zambulle = tramo(t, tCita - 0.5, 1.1, 'pesado'); // la cámara se mete en la hoja
   // —— C: la página del libro
   const pagina = tramo(t, tCita - 0.1, 0.9, 'natural');
@@ -64,7 +64,7 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
           <AbsoluteFill style={{ opacity: entra * (1 - pagina) }}>
             <Luz color={pal.ocre} x={52} y={44} radio={62} intensidad={0.22} />
             <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center',
-              transform: `scale(${mix(1, 1.06, acerca) * mix(1, 2.6, zambulle)}) rotate(${mix(-1.5, 0, zambulle)}deg)`, transformOrigin: '54% 40%' }}>
+              transform: `scale(${mix(1, 2.6, zambulle)}) rotate(${mix(-1.5, 0, zambulle)}deg)`, transformOrigin: '54% 40%' }}>
               <div style={{ marginTop: 60 }}>
                 <PilaDePaginas paleta={pal} id={`${escena.id}-pila`} width={620} variante="pruebas" semilla={2013}
                   correcciones={tramo(t, tCorr, DUR_CORR, 'natural')} />
@@ -134,9 +134,9 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
 
       {/* sonido: solo papel, lápiz, máquina y sellos */}
       {props.ficha.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tFicha + i / CPS} fps={fps} volumen={0.32} />))}
-      {Array.from({ length: TRAZOS }, (_, i) => <Sfx key={`p${i}`} nombre="lapiz" en={tCorr + (i * DUR_CORR) / TRAZOS} fps={fps} volumen={0.45} />)}
+      {Array.from({ length: TRAZOS }, (_, i) => <Sfx key={`p${i}`} nombre="lapiz" en={tCorr + (i * DUR_CORR) / TRAZOS} fps={fps} volumen={0.22} />)}
       <Sfx nombre="hoja" en={tCita - 0.4} fps={fps} volumen={0.5} />
-      <Sfx nombre="lapiz" en={tSub} fps={fps} volumen={0.5} />
+      <Sfx nombre="lapiz" en={tSub} fps={fps} volumen={0.28} />
       <Sfx nombre="sello" en={tSello1} fps={fps} volumen={0.9} />
       <Sfx nombre="sello" en={tSello2} fps={fps} volumen={0.65} />
     </AbsoluteFill>

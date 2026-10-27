@@ -51,7 +51,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   const caidaSello = t < tSello ? 0 : mix(1.9, 1, rebote);
   const corchete = tramo(t, tPrimeros, 0.9, 'natural');
   // —— B: el muro
-  const acerca = tramo(t, tAfiches, tCapas - tAfiches, 'natural');
+  // el muro quieto: lo que se mueve son los afiches que se pegan
   const pega = (tp: number) => (t < tp ? 0 : spring({ frame: frame - tp * fps, fps, config: { damping: 15, mass: 0.6, stiffness: 260 } }));
   const volante = t < tVolante ? 0 : spring({ frame: frame - tVolante * fps, fps, config: { damping: 18, mass: 1, stiffness: 90 } });
   // —— C: las capas
@@ -64,7 +64,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       {muro < 1 ? (
         <AbsoluteFill style={{ opacity: 1 - muro }}>
           <Papel color={pal.papel} envejecido={0.3}>
-            <AbsoluteFill style={{ transform: `scale(${mix(1.03, 1.0, tramo(t, 0, tAfiches, 'natural'))})` }}>
+            <AbsoluteFill>
               <div style={{ position: 'absolute', left: 300, top: 110, fontFamily: fuente.mono, fontSize: 30, letterSpacing: '0.3em', color: alfa(pal.fondo, 0.75) }}>{props.lista}</div>
               <div style={{ position: 'absolute', left: 300, top: 160, width: 1000, height: 2, background: alfa(pal.fondo, 0.5) }} />
               {Array.from({ length: FILAS }, (_, i) => (
@@ -90,7 +90,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       {/* B: el muro de afiches */}
       {muro > 0 && capas < 1 ? (
         <AbsoluteFill style={{ opacity: muro * (1 - capas) }}>
-          <AbsoluteFill style={{ transform: `scale(${mix(1, 1.07, acerca)}) translateX(${mix(20, -30, acerca)}px)` }}>
+          <AbsoluteFill>
             <Papel color={mezclar(pal.fondo, pal.ocre, 0.16)} envejecido={0.6} escala={700}>
               {/* restos de afiches viejos, arrancados */}
               <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
@@ -156,7 +156,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       ) : null}
 
       <Sfx nombre="sello" en={tSello + 0.12} fps={fps} volumen={0.85} />
-      <Sfx nombre="lapiz" en={tPrimeros} fps={fps} volumen={0.45} />
+      <Sfx nombre="lapiz" en={tPrimeros} fps={fps} volumen={0.28} />
       {props.titulares.map((_, i) => <Sfx key={i} nombre="afiche" en={tAf[i]} fps={fps} volumen={0.7} />)}
       <Sfx nombre="hoja" en={tDespegue} fps={fps} volumen={0.55} />
       <Sfx nombre="hoja" en={tVolante} fps={fps} volumen={0.45} />

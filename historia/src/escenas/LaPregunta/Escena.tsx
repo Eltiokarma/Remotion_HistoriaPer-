@@ -63,7 +63,7 @@ export const LaPregunta: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
       {fase === 1 ? (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <Luz color={pal.ocre} x={50} y={45} radio={60} intensidad={0.2} />
-          <div style={{ width: 1720, height: 820, position: 'relative', boxShadow: `14px 20px 40px ${alfa('#000000', 0.55)}`, transform: `scale(${mix(0.98, 1.03, tramo(t, 0, tTv, 'natural'))})` }}>
+          <div style={{ width: 1720, height: 820, position: 'relative', boxShadow: `14px 20px 40px ${alfa('#000000', 0.55)}` }}>
             <Papel color={pal.papel} envejecido={0.22}>
               <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
                 <TituloAMaquina texto={props.titulo} t={t - tTitulo} tinta={pal.fondo} rojo={pal.rojo} />
@@ -76,7 +76,7 @@ export const LaPregunta: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
       {fase === 2 ? (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <Luz color="#9fb3c8" x={50} y={45} radio={55} intensidad={0.1 + 0.03 * Math.sin(t * 23)} />
-          <div style={{ transform: `scale(${mix(0.92, 1.08, tramo(t, tTv, tGlobo - tTv, 'natural'))})`, marginTop: 40 }}>
+          <div style={{ marginTop: 40 }}>
             <TelevisorCRT paleta={pal} id={`${escena.id}-tv`} frame={frame} fps={fps} rec={props.tv.rec} fecha={props.tv.fecha} encendido={tramo(t, tTv + 0.2, 0.5, 'ligero')} width={1180} />
           </div>
         </AbsoluteFill>
@@ -117,7 +117,7 @@ export const LaPregunta: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
 
       {props.titulo.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`k${i}`} nombre={ch === '¿' || ch === '?' ? 'golpe-tecla' : `tecla-${(i % 3) + 1}`} en={tTitulo + i / CPS} fps={fps} volumen={ch === '¿' || ch === '?' ? 0.6 : 0.35} />))}
       <Sfx nombre="crt" en={tTv + 0.15} fps={fps} volumen={0.6} />
-      <Sfx nombre="estatica" en={tTv + 0.4} fps={fps} volumen={0.3} bucle dura={tGlobo - tTv - 0.4} />
+      <Sfx nombre="estatica" en={tTv + 0.4} fps={fps} volumen={0.12} bucle dura={tGlobo - tTv - 0.4} />
       {props.fichas.map((f, i) => f.texto.split('').map((ch, j) => (ch === ' ' ? null : <Sfx key={`f${i}-${j}`} nombre={`tecla-${(j % 3) + 1}`} en={tFichas[i] + 0.4 + j / 18} fps={fps} volumen={0.25} />)))}
       <Sfx nombre="soplo" en={tGlobo} fps={fps} volumen={0.3} />
     </AbsoluteFill>

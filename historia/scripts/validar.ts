@@ -105,6 +105,7 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
     ].filter((b): b is string => !!b);
 
     for (const b of deAudio) if (!(b in e.beats)) errores.push(`${e.id}: el audio usa el beat "${b}", que no está en beats`);
+    for (const c of e.camara ?? []) if (!(c.beat in e.beats)) errores.push(`${e.id}: el movimiento de cámara «${c.movimiento}» usa el beat "${c.beat}", que no está en beats`);
     if (entrada) {
       const que = (b: string) => String(entrada.beats[b as keyof typeof entrada.beats]);
       // «(condición) …» = beat que solo hace falta en una variante de la escena

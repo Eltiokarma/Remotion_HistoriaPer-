@@ -76,7 +76,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {/* 1: el grabado de las islas; los sacos suben al barco */}
       {fase === 1 ? (
         <Papel color={pal.papel} envejecido={0.3}>
-          <AbsoluteFill style={{ transform: `scale(${mix(1, 1.06, tramo(t, 0, tFlecha, 'natural'))})`, transformOrigin: '70% 55%' }}>
+          <AbsoluteFill>
             <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-g`} carga={t >= tSacos ? t - tSacos : undefined} />
           </AbsoluteFill>
           {props.ficha ? (
@@ -257,13 +257,13 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       <Sfx nombre="monedas" en={tFlecha + 0.4} fps={fps} volumen={0.55} />
       {Array.from({ length: PILA }, (_, i) => <Sfx key={`v${i}`} nombre="hoja" en={tVales + i * 0.75} fps={fps} volumen={0.4} />)}
       <Sfx nombre="sello" en={tConsol + 0.08} fps={fps} volumen={0.85} />
-      <Sfx nombre="lapiz" en={tPromesa} fps={fps} volumen={0.4} />
-      <Sfx nombre="lapiz" en={tLujos} fps={fps} volumen={0.4} />
+      <Sfx nombre="lapiz" en={tPromesa} fps={fps} volumen={0.28} />
+      <Sfx nombre="lapiz" en={tLujos} fps={fps} volumen={0.28} />
       <Sfx nombre="hoja" en={tExped} fps={fps} volumen={0.45} />
       {Array.from({ length: 10 }, (_, i) => <Sfx key={`t${i}`} nombre="tic" en={tInflado + DUR_INFLADO * (1 - (1 - i / 10) ** 2)} fps={fps} volumen={0.35} />)}
-      <Sfx nombre="pluma" en={tInflado + 0.2} fps={fps} volumen={0.4} />
+      <Sfx nombre="pluma" en={tInflado + 0.2} fps={fps} volumen={0.22} />
       <Sfx nombre="monedas" en={tCaudal + 0.4} fps={fps} volumen={0.6} />
-      <Sfx nombre="lapiz" en={tTachar} fps={fps} volumen={0.55} />
+      <Sfx nombre="lapiz" en={tTachar} fps={fps} volumen={0.28} />
       {props.tesis.etiqueta.split('').map((_, i) => <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tTesis + i / 6} fps={fps} volumen={0.4} />)}
       {props.tesis.anio.split('').map((_, i) => <Sfx key={`a${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tTesis + 1.2 + i / 6} fps={fps} volumen={0.4} />)}
       <Sfx nombre="hoja" en={tLibro} fps={fps} volumen={0.45} />

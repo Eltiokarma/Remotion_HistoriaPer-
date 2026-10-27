@@ -29,12 +29,17 @@ export const esquemaAudio = z.object({
    * escena; si trae `desde_beat`, el archivo empieza a sonar en ese beat (la música entra ahí).
    */
   musica: z.object({ archivo: z.string(), nivel, ...ventanaBeats }).nullable().optional(),
-  /** Ambientes de la biblioteca compartida (public/compartido/audio/ambiente/<nombre>.mp3). */
+  /**
+   * Ambientes de la biblioteca compartida (public/compartido/audio/ambiente/<nombre>.mp3). Todos
+   * están normalizados a −30 LUFS: con nivel 1 quedan 14 dB por debajo de la voz.
+   */
   ambientes: z.array(z.object({ nombre: z.string(), nivel, ...ventanaBeats })).optional(),
   /** Silencio deliberado: música y ambiente se callan entre dos beats. */
   silencio: z.object({ desde_beat: z.string(), hasta_beat: z.string() }).optional(),
   /** Cuánto baja la música cuando habla la voz (dB negativos). */
   duck_db: z.number().min(-30).max(0).optional(),
+  /** Cuánto bajan los ambientes cuando habla la voz (por defecto −8 dB). */
+  duck_ambiente_db: z.number().min(-30).max(0).optional(),
 });
 
 export const esquemaEscena = z.object({
@@ -57,6 +62,11 @@ export const esquemaEscena = z.object({
   /** Datos que recibe el componente: textos, cifras, lugares… */
   props: z.record(z.string(), z.unknown()),
   audio: esquemaAudio.optional(),
+  /**
+   * Movimientos de cámara de la escena, cada uno con su motivo (CLAUDE.md §4: sin motivo, no
+   * hay movimiento). Lo que no está aquí es cámara quieta. Es documentación: lo revisa `validar`.
+   */
+  camara: z.array(z.object({ beat: z.string(), movimiento: z.string(), motivo: z.string().min(5, 'todo movimiento de cámara necesita su motivo') })).optional(),
   /** Nota para humanos: en qué estado está la música aquí. */
   estado_musica: z.string().optional(),
 });

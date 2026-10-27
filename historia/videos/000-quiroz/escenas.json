@@ -52,16 +52,33 @@
           "MAYO 2013"
         ]
       },
+      "camara": [
+        {
+          "beat": "cita",
+          "movimiento": "entra a la hoja y se acerca despacio a la frase (1 → 1,08)",
+          "motivo": "la voz dice «agradecimientos»: vamos a leer lo que él escribió"
+        },
+        {
+          "beat": "abajo",
+          "movimiento": "baja unas líneas por la página",
+          "motivo": "«unas líneas más abajo» menciona a su hijo"
+        },
+        {
+          "beat": "final",
+          "movimiento": "se aleja de la página impresa",
+          "motivo": "«este video es sobre ese hombre»: el plano se abre para empezar"
+        }
+      ],
       "audio": {
         "musica": {
           "archivo": "s01-entrada.mp3",
-          "nivel": 0.35,
+          "nivel": 0.3,
           "desde_beat": "final"
         },
         "ambientes": [
           {
             "nombre": "hospital",
-            "nivel": 0.55
+            "nivel": 0.7
           }
         ],
         "duck_db": -16
@@ -93,17 +110,17 @@
       "audio": {
         "musica": {
           "archivo": "s02-nadador.mp3",
-          "nivel": 0.32
+          "nivel": 0.26
         },
         "ambientes": [
           {
             "nombre": "agua",
-            "nivel": 0.5,
+            "nivel": 0.8,
             "hasta_beat": "renglon"
           },
           {
             "nombre": "cuarto",
-            "nivel": 0.25,
+            "nivel": 0.5,
             "desde_beat": "renglon"
           }
         ],
@@ -168,20 +185,27 @@
         ],
         "lista": "ADMISIÓN · 1974"
       },
+      "camara": [
+        {
+          "beat": "bajar",
+          "movimiento": "baja hasta la capa de las estructuras",
+          "motivo": "«hay cosas que no cambian aunque cambien los gobiernos»"
+        }
+      ],
       "audio": {
         "musica": {
           "archivo": "s03-generacion.mp3",
-          "nivel": 0.28
+          "nivel": 0.23
         },
         "ambientes": [
           {
             "nombre": "ciudad",
-            "nivel": 0.35,
+            "nivel": 0.6,
             "hasta_beat": "capas"
           },
           {
             "nombre": "cuarto",
-            "nivel": 0.25,
+            "nivel": 0.5,
             "desde_beat": "capas"
           }
         ],
@@ -241,20 +265,27 @@
           "autor": "Alfonso W. Quiroz"
         }
       },
+      "camara": [
+        {
+          "beat": "expedientes",
+          "movimiento": "se acerca a un vale",
+          "motivo": "«revisó los expedientes»: la cámara mira de cerca, como él"
+        }
+      ],
       "audio": {
         "musica": {
           "archivo": "s04-mecanismo.mp3",
-          "nivel": 0.45
+          "nivel": 0.4
         },
         "ambientes": [
           {
             "nombre": "mar",
-            "nivel": 0.45,
+            "nivel": 0.8,
             "hasta_beat": "flecha"
           },
           {
             "nombre": "cuarto",
-            "nivel": 0.28,
+            "nivel": 0.5,
             "desde_beat": "flecha"
           }
         ],
@@ -328,15 +359,22 @@
           62
         ]
       },
+      "camara": [
+        {
+          "beat": "ficha",
+          "movimiento": "se acerca a Nueva York",
+          "motivo": "llega a Columbia: el viaje termina ahí"
+        }
+      ],
       "audio": {
         "musica": {
           "archivo": "s05-medir.mp3",
-          "nivel": 0.38
+          "nivel": 0.3
         },
         "ambientes": [
           {
             "nombre": "ciudad",
-            "nivel": 0.3
+            "nivel": 0.55
           }
         ],
         "duck_db": -15
@@ -396,12 +434,12 @@
       "audio": {
         "musica": {
           "archivo": "s06-pregunta.mp3",
-          "nivel": 0.4
+          "nivel": 0.32
         },
         "ambientes": [
           {
             "nombre": "cuarto",
-            "nivel": 0.3
+            "nivel": 0.5
           }
         ],
         "duck_db": -15
@@ -483,7 +521,7 @@
         "ambientes": [
           {
             "nombre": "cuarto",
-            "nivel": 0.3
+            "nivel": 0.5
           }
         ],
         "silencio": {
@@ -574,12 +612,12 @@
       "audio": {
         "musica": {
           "archivo": "s08-cuenta.mp3",
-          "nivel": 0.4
+          "nivel": 0.32
         },
         "ambientes": [
           {
             "nombre": "cuarto",
-            "nivel": 0.25
+            "nivel": 0.45
           }
         ],
         "silencio": {
@@ -619,12 +657,12 @@
       "audio": {
         "musica": {
           "archivo": "s09-circulos.mp3",
-          "nivel": 0.3
+          "nivel": 0.25
         },
         "ambientes": [
           {
             "nombre": "ciudad",
-            "nivel": 0.3
+            "nivel": 0.55
           }
         ],
         "duck_db": -15
@@ -657,8 +695,8 @@
         "serie": 43.3
       },
       "props": {
-        "ficha": "HUANCAVELICA · 1758 · ~3.600 M.S.N.M.",
-        "altura": "3 600 m",
+        "ficha": "HUANCAVELICA · 1758 · ~3600 M.S.N.M.",
+        "altura": "3600 m",
         "denunciantes": [
           "Domingo Elías",
           "Manuel González Prada",
@@ -712,12 +750,12 @@
         "ambientes": [
           {
             "nombre": "viento",
-            "nivel": 0.5,
+            "nivel": 0.8,
             "hasta_beat": "perdio"
           },
           {
             "nombre": "cuarto",
-            "nivel": 0.25,
+            "nivel": 0.45,
             "desde_beat": "otros"
           }
         ],
@@ -761,7 +799,7 @@
         "ambientes": [
           {
             "nombre": "cuarto",
-            "nivel": 0.3,
+            "nivel": 0.5,
             "hasta_beat": "negro"
           }
         ],

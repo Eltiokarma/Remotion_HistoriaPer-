@@ -18,6 +18,12 @@ type Props = {
 
 const FADE_MIN = 6; // ningún sonido entra ni sale en seco
 const RAMPA_S = 0.5;
+/** Cuánto se sostiene el ducking después de una palabra: las pausas cortas entre frases no lo sueltan. */
+const SOSTEN_S = 0.9;
+/** Y después, cuánto tarda en volver (constante de tiempo). */
+const SUELTA_S = 1.1;
+/** Los ambientes también bajan cuando habla la voz (menos que la música). */
+const DUCK_AMBIENTE_DB = -8;
 
 /** 0→1 al pasar por `desde`, 1→0 al pasar por `hasta` (con rampas, nunca en seco). */
 const ventana = (t: number, desde: number | undefined, hasta: number | undefined, rampa = RAMPA_S) => {
@@ -28,8 +34,9 @@ const ventana = (t: number, desde: number | undefined, hasta: number | undefined
 };
 
 /**
- * Cuánto habla la voz en cada frame (0–1), suavizado: baja rápido antes de la palabra y
- * vuelve despacio después, como lo haría una persona en la consola de mezcla.
+ * Cuánto habla la voz en cada frame (0–1), suavizado: baja rápido antes de la palabra, se
+ * sostiene entre frase y frase y vuelve despacio solo en las pausas largas, como lo haría una
+ * persona en la consola de mezcla (si no, la música "respira" en cada pausa y distrae).
  */
 const useActividadVoz = (src: string, fps: number, frames: number): number[] => {
   const datos = useAudioData(staticFile(src), { sampleRate: 8000 });
@@ -47,10 +54,12 @@ const useActividadVoz = (src: string, fps: number, frames: number): number[] => 
     }
     const max = Math.max(1e-6, ...rms);
     const crudo = rms.map((r) => Math.max(0, Math.min(1, (r / max - 0.06) / 0.14)));
-    const soltar = Math.exp(-1 / (0.35 * fps));
+    const sosten = Math.round(SOSTEN_S * fps);
+    const sostenido = crudo.map((_, i) => Math.max(...crudo.slice(Math.max(0, i - sosten), i + 1)));
+    const soltar = Math.exp(-1 / (SUELTA_S * fps));
     const suave: number[] = [];
     let y = 0;
-    for (const v of crudo) { y = Math.max(v, y * soltar); suave.push(y); }
+    for (const v of sostenido) { y = Math.max(v, y * soltar); suave.push(y); }
     // mirar 3 frames adelante: la música baja justo antes de que empiece la palabra
     return suave.map((_, i) => Math.max(...suave.slice(i, i + 4)));
   }, [datos, fps, frames]);
@@ -61,15 +70,16 @@ const Mezcla: React.FC<Props & { actividad: number[] | null }> = ({ escena, vide
   const b = escena.beats;
   const total = escena.frames + j + l;
   const duck = Math.pow(10, (cfg.duck_db ?? -14) / 20);
+  const duckAmbiente = Math.pow(10, (cfg.duck_ambiente_db ?? DUCK_AMBIENTE_DB) / 20);
   const sil = cfg.silencio;
 
-  const volumen = (p: Ventana, conDuck: boolean) => (f: number): number => {
+  const volumen = (p: Ventana, conDuck: boolean, cuanto = duck) => (f: number): number => {
     const t = (f - j) / fps; // tiempo de la escena
     const bordes = Math.min(1, f / Math.max(FADE_MIN, j), (total - f) / Math.max(FADE_MIN, l));
     const tramo = ventana(t, p.desde_beat ? b[p.desde_beat] : undefined, p.hasta_beat ? b[p.hasta_beat] : undefined);
     const silencio = sil ? 1 - ventana(t, b[sil.desde_beat], b[sil.hasta_beat], 0.35) : 1;
     const habla = conDuck && actividad ? actividad[Math.max(0, Math.min(actividad.length - 1, f - j))] ?? 0 : 0;
-    return Math.max(0, p.nivel * bordes * tramo * silencio * (1 - (1 - duck) * habla));
+    return Math.max(0, p.nivel * bordes * tramo * silencio * (1 - (1 - cuanto) * habla));
   };
 
   // si la música "entra" en un beat, el archivo empieza a sonar ahí (no hace falta rellenarlo con silencio)
@@ -84,7 +94,7 @@ const Mezcla: React.FC<Props & { actividad: number[] | null }> = ({ escena, vide
         </Sequence>
       ) : null}
       {(cfg.ambientes ?? []).map((a) => (
-        <Audio key={a.nombre} src={ambiente(a.nombre)} loop volume={volumen(a, false)} name={`ambiente ${a.nombre}`} />
+        <Audio key={a.nombre} src={ambiente(a.nombre)} loop volume={volumen(a, true, duckAmbiente)} name={`ambiente ${a.nombre}`} />
       ))}
       {escena.vozSrc ? (
         <Sequence from={j} durationInFrames={escena.frames} layout="none" name={escena.vozProvisional ? 'voz provisional' : 'voz'}>

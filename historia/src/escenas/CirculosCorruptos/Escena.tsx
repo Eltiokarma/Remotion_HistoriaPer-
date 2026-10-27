@@ -4,7 +4,7 @@ import { Luz } from '../../components/atmosfera/Luz';
 import { Sfx } from '../../components/audio/Sfx';
 import { CartelObra } from '../../components/graficos/CartelObra';
 import { CirculosRed } from '../../components/graficos/CirculosRed';
-import { beat, mix, tramo } from '../../direction/anim';
+import { beat, tramo } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
@@ -27,7 +27,7 @@ export const CirculosCorruptos: React.FC<EscenaProps<P>> = ({ escena, props, vid
   return (
     <AbsoluteFill style={{ backgroundColor: noche }}>
       {!cartel || t < tCartel + 0.6 ? (
-        <AbsoluteFill style={{ opacity: 1 - tramo(t, tCartel - 0.4, 0.8, 'natural'), transform: `scale(${mix(1, 1.12, tramo(t, tRed, tCartel - tRed, 'natural'))})` }}>
+        <AbsoluteFill style={{ opacity: 1 - tramo(t, tCartel - 0.4, 0.8, 'natural') }}>
           <Luz color={pal.ocre} x={50} y={50} radio={60} intensidad={0.16} />
           <CirculosRed paleta={pal} id={`${escena.id}-red`} t={t} cierre={tramo(t, tCirculos, 4, 'natural')} red={tramo(t, tRed, 6, 'natural')} />
           <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', gap: 18 }}>
@@ -57,7 +57,7 @@ export const CirculosCorruptos: React.FC<EscenaProps<P>> = ({ escena, props, vid
       <Sfx nombre="soplo" en={tRed} fps={fps} volumen={0.3} />
       <Sfx nombre="cartel" en={tCartel + 0.85} fps={fps} volumen={0.75} />
       {Array.from({ length: Math.min(12, letras) }, (_, i) => <Sfx key={i} nombre="tic" en={tFrase + (i * 1.4) / 12} fps={fps} volumen={0.35} />)}
-      <Sfx nombre="lapiz" en={tTachar} fps={fps} volumen={0.65} />
+      <Sfx nombre="lapiz" en={tTachar} fps={fps} volumen={0.28} />
     </AbsoluteFill>
   );
 };

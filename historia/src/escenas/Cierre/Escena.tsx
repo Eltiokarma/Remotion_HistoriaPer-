@@ -29,7 +29,7 @@ export const Cierre: React.FC<EscenaProps<P>> = ({ escena, props, video }) => {
       {/* La misma pila del inicio, ya corregida entera, se cierra: el libro está terminado. */}
       <AbsoluteFill style={{ opacity: mix(1, 0, negro) }}>
         <Luz color={pal.ocre} x={50} y={40} radio={62} intensidad={0.22} />
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', transform: `scale(${mix(1.04, 1, tramo(t, 0, tNegro, 'natural'))})` }}>
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ marginTop: 60 }}>
             <Carpeta paleta={pal} id={`${escena.id}-carpeta`} cierre={tramo(t, tCerrar, 1.6, 'pesado')} width={props.limpiar ? 620 : 500}
               variante={props.limpiar ? 'pruebas' : undefined} semilla={props.limpiar ? 2013 : undefined}

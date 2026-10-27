@@ -99,10 +99,10 @@ export const LaCuenta: React.FC<EscenaProps<P>> = ({ escena, props, video }) => 
 
       {Array.from({ length: 12 }, (_, i) => <Sfx key={`d${i}`} nombre="tic" en={tDecadas + (i * 4) / 12} fps={fps} volumen={0.25} />)}
       <Sfx nombre="soplo" en={tBarra} fps={fps} volumen={0.25} />
-      <Sfx nombre="lapiz" en={tRojo} fps={fps} volumen={0.45} />
+      <Sfx nombre="lapiz" en={tRojo} fps={fps} volumen={0.28} />
       <Sfx nombre="monedas" en={tCae + 0.2} fps={fps} volumen={0.55} />
       {Array.from({ length: Math.max(0, Math.floor((tNiveles - tPib - 1) / PERIODO_PIB)) }, (_, i) => <Sfx key={`p${i}`} nombre="tic" en={tPib + 1 + i * PERIODO_PIB} fps={fps} volumen={0.3} />)}
-      <Sfx nombre="lapiz" en={tNiveles + 0.6} fps={fps} volumen={0.4} />
+      <Sfx nombre="lapiz" en={tNiveles + 0.6} fps={fps} volumen={0.28} />
       <Sfx nombre="campana" en={tBaja} fps={fps} volumen={0.25} />
       <Sfx nombre="soplo" en={tMitad} fps={fps} volumen={0.3} />
     </AbsoluteFill>

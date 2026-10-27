@@ -8,7 +8,7 @@ import { GotaMercurio } from '../../components/graficos/GotaMercurio';
 import { IndiceSerie } from '../../components/graficos/IndiceSerie';
 import { Ficha } from '../../components/texto/Ficha';
 import { Renglones } from '../../components/texto/Renglones';
-import { beat, mix, tramo } from '../../direction/anim';
+import { beat, tramo } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
@@ -39,7 +39,7 @@ export const Denunciantes: React.FC<EscenaProps<P>> = ({ escena, props, video })
       {fase <= 2 ? (
         <AbsoluteFill>
           {t >= tCordillera - 0.2 ? (
-            <AbsoluteFill style={{ transform: `scale(${mix(1.0, 1.06, tramo(t, tCordillera, tMercurio - tCordillera, 'natural'))})` }}>
+            <AbsoluteFill>
               <Cordillera paleta={pal} id={`${escena.id}-cord`} dibujo={tramo(t, tCordillera, 3, 'natural')} baja={tramo(t, tHuanca, 1.2, 'natural')}
                 altura={tramo(t, tAltura, 1.2, 'natural')} rotuloAltura={props.altura} />
             </AbsoluteFill>
@@ -109,7 +109,7 @@ export const Denunciantes: React.FC<EscenaProps<P>> = ({ escena, props, video })
         </AbsoluteFill>
       ) : null}
 
-      <Sfx nombre="lapiz" en={tTacha} fps={fps} volumen={0.55} />
+      <Sfx nombre="lapiz" en={tTacha} fps={fps} volumen={0.28} />
       <Sfx nombre="hoja" en={tCordillera} fps={fps} volumen={0.5} />
       <Sfx nombre="soplo" en={tHuanca} fps={fps} volumen={0.3} />
       {props.ficha.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tHuanca + 0.3 + i / 18} fps={fps} volumen={0.25} />))}

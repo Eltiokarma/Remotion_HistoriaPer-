@@ -58,7 +58,7 @@ export const PaisajeALibro: React.FC<EscenaProps<P>> = ({ escena, props, video }
       <Sfx nombre="hoja" en={tLibro} fps={fps} volumen={0.75} />
       <Sfx nombre="hoja" en={tLibro + 0.5} fps={fps} volumen={0.4} />
       {tics.map((tc, i) => <Sfx key={i} nombre="tic" en={tc} fps={fps} volumen={0.25} />)}
-      <Sfx nombre="pluma" en={tFlecha} fps={fps} volumen={0.55} />
+      <Sfx nombre="pluma" en={tFlecha} fps={fps} volumen={0.22} />
     </AbsoluteFill>
   );
 };

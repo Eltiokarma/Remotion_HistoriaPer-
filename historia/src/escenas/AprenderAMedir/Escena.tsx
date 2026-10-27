@@ -117,12 +117,12 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
 
       {/* sonido */}
       <Sfx nombre="soplo" en={tParis} fps={fps} volumen={0.3} />
-      <Sfx nombre="borrar" en={tDuda + 0.7} fps={fps} volumen={0.5} />
+      <Sfx nombre="borrar" en={tDuda + 0.7} fps={fps} volumen={0.35} />
       <Sfx nombre="soplo" en={tNY} fps={fps} volumen={0.35} />
       <Sfx nombre="campana" en={tNY + 1.5} fps={fps} volumen={0.3} />
       {props.ficha.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tFicha + 0.6 + i / 18} fps={fps} volumen={0.3} />))}
       {Array.from({ length: 12 }, (_, i) => <Sfx key={`p${i}`} nombre="tic" en={tPuntos + i * 0.25} fps={fps} volumen={0.25} />)}
-      <Sfx nombre="lapiz" en={tRecta} fps={fps} volumen={0.5} />
+      <Sfx nombre="lapiz" en={tRecta} fps={fps} volumen={0.28} />
       <Sfx nombre="metal" en={tProf + 0.6} fps={fps} volumen={0.55} />
       <Sfx nombre="metal" en={tClar + 0.6} fps={fps} volumen={0.45} />
       {props.temas.map((_, i) => <Sfx key={`l${i}`} nombre="carpeta" en={tTemas + i * 0.55 + 0.35} fps={fps} volumen={0.4} />)}

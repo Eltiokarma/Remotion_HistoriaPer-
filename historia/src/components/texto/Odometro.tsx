@@ -39,7 +39,8 @@ export const Odometro: React.FC<Props> = ({ valor, digitos, velocidad = 0, fps, 
               </div>
             </div>
             {/* separador de miles (un espacio de verdad: en flex los espacios de texto se pierden) */}
-            {p > 0 && p % 3 === 0 && visible > 0 && i < cifras.length - 1 ? <div style={{ width: `${separacion}em` }} /> : null}
+            {/* (como pide la RAE, los números de cuatro cifras van sin separar) */}
+            {digitos > 4 && p > 0 && p % 3 === 0 && visible > 0 && i < cifras.length - 1 ? <div style={{ width: `${separacion}em` }} /> : null}
           </div>
         );
       })}

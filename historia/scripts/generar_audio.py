@@ -26,6 +26,9 @@ ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
 rng = np.random.default_rng(1781)
 FORZAR = "--forzar" in sys.argv
+# Todos los ambientes a la misma sonoridad, bien por debajo de la voz (que va a −16 LUFS):
+# así el "nivel" de escenas.json significa lo mismo para todos y el fondo nunca tapa la narración.
+AMBIENTE_LUFS = -30
 
 
 # ---------------------------------------------------------------- utilidades
@@ -889,7 +892,16 @@ def sfx_cartel():
 
 # ---------------------------------------------------------------- escribir
 
-def guardar(st, ruta: Path, kbps=128, normalizar=-1.0):
+def sonoridad(archivo: Path) -> float:
+    """Sonoridad integrada (LUFS) de un archivo, medida con ffmpeg (EBU R128)."""
+    salida = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(archivo), "-af", "ebur128", "-f", "null", "-"],
+                            capture_output=True, text=True).stderr
+    lineas = [l for l in salida.splitlines() if l.strip().startswith("I:")]
+    return float(lineas[-1].split()[1])
+
+
+def guardar(st, ruta: Path, kbps=128, normalizar=-1.0, lufs=None):
+    """Escribe un mp3. Con `lufs`, además lo deja a esa sonoridad (para que los ambientes suenen parejos)."""
     if ruta.exists() and not FORZAR:
         print("ya existe", ruta.relative_to(ROOT))
         return
@@ -908,7 +920,10 @@ def guardar(st, ruta: Path, kbps=128, normalizar=-1.0):
             w.setsampwidth(2)
             w.setframerate(SR)
             w.writeframes(pcm.tobytes())
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-c:a", "libmp3lame", "-b:a", f"{kbps}k",
+        filtros = []
+        if lufs is not None:
+            filtros = ["-af", f"volume={lufs - sonoridad(wav):.2f}dB"]
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), *filtros, "-c:a", "libmp3lame", "-b:a", f"{kbps}k",
                         str(ruta)], check=True)
     print("ok", ruta.relative_to(ROOT))
 
@@ -918,7 +933,7 @@ def compartido():
     a = PUBLIC / "compartido" / "audio" / "ambiente"
     for nombre, fn in [("ciudad", amb_ciudad), ("agua", amb_agua), ("mar", amb_mar),
                        ("cuarto", amb_cuarto), ("viento", amb_viento)]:
-        guardar(fn(), a / f"{nombre}.mp3", kbps=96, normalizar=-3)
+        guardar(fn(), a / f"{nombre}.mp3", kbps=96, normalizar=-3, lufs=AMBIENTE_LUFS)
     s = PUBLIC / "compartido" / "audio" / "sfx"
     for k in range(3):
         guardar(sfx_tecla(), s / f"tecla-{k + 1}.mp3", kbps=96, normalizar=-3)
@@ -932,7 +947,7 @@ def compartido():
     guardar(sfx_golpe(), s / "golpe.mp3", 128, -1)
     guardar(sfx_nota_final(), s / "nota-final.mp3", 128, -1)
     # fase 2 del video 000 (agregados al final para no cambiar los anteriores)
-    guardar(amb_hospital(), a / "hospital.mp3", 96, -3)
+    guardar(amb_hospital(), a / "hospital.mp3", 96, -3, lufs=AMBIENTE_LUFS)
     for nombre, fn, kbps, norm in [("lapiz", sfx_lapiz, 96, -3), ("afiche", sfx_afiche, 96, -2), ("saco", sfx_saco, 96, -3),
                                    ("monedas", sfx_monedas, 96, -3), ("borrar", sfx_borrar, 96, -3), ("metal", sfx_metal, 96, -3),
                                    ("carta", sfx_carta, 96, -3), ("engranaje", sfx_engranaje, 96, -3), ("gota", sfx_gota, 96, -3),

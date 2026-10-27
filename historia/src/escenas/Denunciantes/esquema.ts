@@ -37,8 +37,8 @@ export const ejemplo: Ejemplo<typeof esquema> = {
   cola_s: 4.5,
   beats: { lista: 0.2, tacha: 4.9, cordillera: 5.8, huanca: 14.2, altura: 15.9, mercurio: 20.0, plata: 22.2, limpiar: 24.6, perdio: 27.8, otros: 30.8, paso_nombres: 1.42, capitulos: 37.1, serie: 43.3 },
   props: {
-    ficha: 'HUANCAVELICA · 1758 · ~3.600 M.S.N.M.',
-    altura: '3 600 m',
+    ficha: 'HUANCAVELICA · 1758 · ~3600 M.S.N.M.',
+    altura: '3600 m',
     denunciantes: ['Domingo Elías', 'Manuel González Prada', 'Jorge Basadre', 'Héctor Vargas Haya'],
     capitulos: [
       { desde: 1750, hasta: 1820, titulo: 'El fracaso de las reformas coloniales' },

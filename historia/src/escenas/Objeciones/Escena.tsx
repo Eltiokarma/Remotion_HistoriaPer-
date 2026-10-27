@@ -229,12 +229,12 @@ export const Objeciones: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
       {tFoco.map((tf, i) => <Sfx key={`f${i}`} nombre="soplo" en={tf} fps={fps} volumen={0.2} />)}
       {tResp.slice(0, 3).map((tr, i) => <Sfx key={`r${i}`} nombre="carta" en={tr} fps={fps} volumen={0.6} />)}
       {props.sellos.map((_, j) => <Sfx key={`s${j}`} nombre="sello" en={tSellos + j * 0.7 + 0.08} fps={fps} volumen={0.5} />)}
-      {[0, 0.9, 2.1].map((d, j) => <Sfx key={`e${j}`} nombre="lapiz" en={tEntradas + d} fps={fps} volumen={0.4} />)}
-      <Sfx nombre="lapiz" en={tResp[3]} fps={fps} volumen={0.6} />
-      <Sfx nombre="engranaje" en={tEngranaje} fps={fps} volumen={0.5} bucle dura={tCorte - tEngranaje} />
+      {[0, 0.9, 2.1].map((d, j) => <Sfx key={`e${j}`} nombre="lapiz" en={tEntradas + d} fps={fps} volumen={0.28} />)}
+      <Sfx nombre="lapiz" en={tResp[3]} fps={fps} volumen={0.28} />
+      <Sfx nombre="engranaje" en={tEngranaje} fps={fps} volumen={0.3} bucle dura={tCorte - tEngranaje} />
       <Sfx nombre="gota" en={tAceite + 0.55} fps={fps} volumen={0.6} />
-      <Sfx nombre="engranaje" en={tCorte} fps={fps} volumen={0.45} bucle dura={tTraba - tCorte + 0.05} />
-      <Sfx nombre="grava" en={tGrava} fps={fps} volumen={0.7} />
+      <Sfx nombre="engranaje" en={tCorte} fps={fps} volumen={0.3} bucle dura={tTraba - tCorte + 0.05} />
+      <Sfx nombre="grava" en={tGrava} fps={fps} volumen={0.55} />
       <Sfx nombre="traba" en={tTraba} fps={fps} volumen={1} />
     </AbsoluteFill>
   );

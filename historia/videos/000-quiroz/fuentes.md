@@ -21,7 +21,7 @@ con el libro; lo que todavía no tiene fuente segura dice `[VERIFICAR]` y hace f
 | s03 | Afiches `REFORMA AGRARIA`, `NACIONALIZACIÓN`, `UN PAÍS NUEVO` | — | Tipografía genérica de época, no son afiches reales (así lo pide el guion) |
 | s03 | Nombres de gobernantes que pasan rápido por la capa de arriba (Virreinato, San Martín, Castilla, Piérola, Leguía, Benavides, Odría, Prado, Belaunde, Velasco, Morales Bermúdez, García, Fujimori) | Conocimiento general; los agregó la producción | [VERIFICAR] — revisar lista y grafía |
 | s04 | Félix Denegri Luna; consolidación de la deuda interna (1850); funcionarios cómplices; tesis 1980; *La deuda defraudada*, 1987 | Prólogo, pp. 17–18 | cotejar |
-| s04 | Vale de `1 000` a `3 000` | — | Ilustración del mecanismo, no un dato: en pantalla dice «ejemplo ilustrativo» |
+| s04 | Vale de `1000` a `3000` | — | Ilustración del mecanismo, no un dato: en pantalla dice «ejemplo ilustrativo» |
 | s05 | Columbia, beca de Herbert S. Klein; historia cuantitativa; Kenneth Maxwell; bancos, crédito colonial, casa Grace; Baruch College y CUNY; de trotskista a liberal | Prólogo, pp. 18–23 | cotejar |
 | s06 | Ensayo de 2000 «Historia de la corrupción en el Perú: ¿es factible su estudio?» | Prólogo, p. 23; Prefacio, pp. 31–32 | cotejar título exacto |
 | s06 | Fichas `BANCO MUNDIAL · 1996 · «CÁNCER»` y `ONU · 2000` | Prólogo, p. 25; Prefacio, pp. 31–32 | cotejar |
@@ -31,7 +31,7 @@ con el libro; lo que todavía no tiene fuente segura dice `[VERIFICAR]` y hace f
 | s08 | **Niveles por período en el gráfico** (alta / muy alta por época) | Apéndice, cuadro A.7 | [VERIFICAR] — son un marcador: copiar la clasificación real en `escenas.json → s08.props.periodos` |
 | s08 | Silueta «fantasma» del país, 1,45 veces más grande | — | Ilustración de «la mitad del crecimiento», no una medida |
 | s09 | *Corrupt Circles*, 2008; premios; «roba, pero hace obra» | Prólogo, pp. 23–25 | cotejar |
-| s10 | Antonio de Ulloa, Huancavelica 1758, ~3 600 m; la mina de mercurio | Introducción, pp. 55–56; cap. 1, pp. 59–60 | cotejar |
+| s10 | Antonio de Ulloa, Huancavelica 1758, ~3600 m; la mina de mercurio | Introducción, pp. 55–56; cap. 1, pp. 59–60 | cotejar |
 | s10 | Domingo Elías, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya | Introducción, pp. 55–56 | cotejar |
 | s10 | Los siete capítulos con sus títulos y años | Índice | cotejar títulos exactos |
 | s11 | Cueto cierra el prólogo en Río de Janeiro, febrero de 2013; «siempre había querido ser como él» | Prólogo, p. 29 | cotejar |
