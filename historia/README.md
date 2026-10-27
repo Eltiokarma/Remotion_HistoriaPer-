@@ -244,11 +244,11 @@ npx remotion render v000-quiroz-s04 out/s04.mp4
 
 ## Pendiente
 
-- Cotejado con el libro: pp. 1–82, 121–128, 164–190 y 535–554 (`bibliografia/quiroz-2013.md`).
-  `fuentes.md` lista 28 correcciones para el guion (C1–C28); las de pantalla aprobadas ya están
-  aplicadas, incluido el gráfico de niveles de s08 con los datos del Apéndice. Sigue `[VERIFICAR]`:
-  la lista de gobernantes de s03, si la línea del hospital ya estaba en la edición de 2008, el lugar
-  de nacimiento y la licencia de Chambon.
+- Cotejado con el libro (pp. 1–82, 121–128, 164–190 y 535–554, en `bibliografia/quiroz-2013.md`)
+  y, para lo que el libro no dice, con fuentes externas (`fuentes.md`, «Fuentes fuera del libro»).
+  No queda ningún `[VERIFICAR]`. `fuentes.md` lista 29 observaciones al guion (C1–C29); las de
+  pantalla aprobadas ya están aplicadas. Para usar la caricatura de Chambón hace falta permiso de
+  la PUCP para la copia digital.
 - Grabar la voz real, cuadrar los beats con ella (`"beats_ajustados": true`) y recomponer la
   música (`npm run generar:audio -- 000-quiroz --forzar`).
 - Subtítulos nativos en Remotion (el guion lo propone): `tiempos.json` ya da el punto de partida.

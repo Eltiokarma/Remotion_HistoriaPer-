@@ -133,7 +133,8 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
   const fuentes = path.join(VIDEOS, carpeta, 'fuentes.md');
   if (!existsSync(fuentes)) errores.push('falta fuentes.md');
   else {
-    const pendientes = (readFileSync(fuentes, 'utf8').match(/\[VERIFICAR\]/g) ?? []).length;
+    // lo que va entre comillas invertidas es la explicación de la marca, no un dato pendiente
+    const pendientes = (readFileSync(fuentes, 'utf8').replace(/`[^`\n]*`/g, '').match(/\[VERIFICAR\]/g) ?? []).length;
     if (pendientes) (final ? errores : avisos).push(`fuentes.md tiene ${pendientes} [VERIFICAR] pendiente(s)`);
   }
   if (!existsSync(path.join(VIDEOS, carpeta, 'glosario.txt'))) avisos.push('falta glosario.txt (nombres propios para los subtítulos)');

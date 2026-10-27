@@ -320,7 +320,7 @@ Hoy 8 de 11 escenas están en rojo; 3 en amarillo; ninguna en verde.
 Leídas las pp. 1–82 (prólogo, prefacio, agradecimientos, introducción y capítulo 1 hasta
 «Purgatorio minero»), las pp. 121–128 (ciclos coloniales), las pp. 164–190 (el guano y la
 consolidación) y las pp. 535–554 (el Apéndice entero). Las citas, con página, están en
-`bibliografia/quiroz-2013.md`; los errores del guion, en `fuentes.md` (C1–C28).
+`bibliografia/quiroz-2013.md`; los errores del guion, en `fuentes.md` (C1–C29).
 
 ### Las preguntas de la primera versión de este diagnóstico
 
@@ -525,8 +525,6 @@ una menos):
 |---|---|---|
 | El episodio de Ulloa: su gestión y el resto del cap. 1 | pp. 82–121 | 81–120 |
 | El Epílogo (el tono «contra el fatalismo») | pp. 521–534 | 520–533 |
-| Si la línea del hospital ya estaba en 2008 | *Corrupt Circles*, *Acknowledgments* | — |
-| Lugar de nacimiento | otra fuente | — |
 
 ---
 

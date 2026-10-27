@@ -85,7 +85,7 @@ Hermoza y el exministro Víctor Joy Way, 2006 (515).
 
 | Año | Hecho | Pág. |
 |---|---|---|
-| 1956 | Nace (el título del prólogo: «Alfonso Quiroz Norris (1956-2013)»). **El lugar no está en estas páginas.** | 15 |
+| 1956 | Nace (el título del prólogo: «Alfonso Quiroz Norris (1956-2013)»). El lugar no está en el libro; la reseña de Carlos Contreras (*Economía*, PUCP, 2013) dice «Nació y se educó en Lima». | 15 |
 | infancia | «exitoso competidor de natación, representando al Perú en las categorías infantil y juvenil»; estudia en el colegio Markham de Lima | 15 |
 | adolescencia | Cueto: «fue mi amigo desde poco antes que cumpliéramos 16 años» | 15 |
 | 1974 | Ingresa a Estudios Generales Letras de la PUCP «en uno de los primeros lugares del exigente examen de admisión» (antes, academia Trener) | 15 |
@@ -107,7 +107,7 @@ Hermoza y el exministro Víctor Joy Way, 2006 (515).
 | 2008 | *Corrupt Circles* | 23 |
 | 2009 | Abraham J. Briloff Prize in Ethics y President's Excellence Award for Scholarship del Baruch College | 24–25 |
 | hasta 2013 | «Hasta hace poco estuvo revisando con minuciosidad las pruebas de la versión en español de este estudio» | 25 |
-| enero 2013 | Muere (nota de los editores: la edición «fue revisada, corregida y aumentada por el autor hasta poco antes de su fallecimiento en enero de 2013») | créditos |
+| enero 2013 | Muere (nota de los editores: la edición «fue revisada, corregida y aumentada por el autor hasta poco antes de su fallecimiento en enero de 2013»). Contreras: «en los primeros días del año 2013», enfermo de cáncer; y la edición en castellano fue «deliberadamente póstuma», porque lo acosaban «amenazas judiciales de personajes nombrados en la versión en inglés» | créditos |
 | febrero 2013 | Cueto firma el prólogo: «Río de Janeiro, febrero de 2013» | 29 |
 | mayo 2013 | Primera edición en castellano | créditos |
 
@@ -259,9 +259,11 @@ decirle que lo quería.» — *Río de Janeiro, febrero de 2013.*
   Nacional, Biblioteca del Palacio Real y Real Academia de la Historia (Madrid); Archivo General de
   Indias (Sevilla); Archivo General de la Nación, Archivo General del Congreso, Archivo del
   Ministerio de Relaciones Exteriores, Archivo de la Corte Suprema y Biblioteca Nacional (Lima).
-- **Sin fecha:** el libro no dice si las líneas del hospital y de Alfonsito se escribieron para
-  esta edición o ya estaban en la inglesa de 2008. Cotejar con los *Acknowledgments* de *Corrupt
-  Circles*.
+- **Cuándo se escribieron:** las líneas del hospital y de Alfonsito no están en la edición inglesa
+  de 2008. Sus agradecimientos tienen las del Professional Staff Congress-CUNY, Mónica Ricketts y
+  su padre («My father, Alfonso Quiroz Muñoz, continued to inspire…»), pero la búsqueda en su texto
+  completo no encuentra «Sloan», «Kettering» ni «Alfonsito». Se escribieron para la edición de 2013.
+  (Fuentes y enlaces en `videos/000-quiroz/fuentes.md`, «Fuentes fuera del libro».)
 
 ---
 
@@ -869,5 +871,3 @@ Para el arco de presentación (0·1 a 0·3) ya no falta nada del libro. Pendient
 | El detalle de la gestión de Ulloa y el resto del cap. 1 (para el episodio 1) | pp. 82–121 | 81–120 |
 | El Epílogo (tono, «contra el fatalismo») | pp. 521–534 | 520–533 |
 | En qué capítulo está cada denunciante (Elías ya está: cap. 2) | capítulos 3–7 | — |
-| Si las líneas del hospital y de Alfonsito ya estaban en 2008 | *Corrupt Circles* (2008), *Acknowledgments* | — |
-| Lugar de nacimiento | otra fuente | — |
