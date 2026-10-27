@@ -27,14 +27,14 @@ const TituloAMaquina: React.FC<{ texto: string; t: number; tinta: string; rojo: 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 24 }}>
       {lineas.map(([a, z_], li) => (
-        <div key={li} style={{ display: 'flex', alignItems: 'baseline', fontFamily: fuente.maquina, fontSize: 74, color: tinta, whiteSpace: 'pre', letterSpacing: '0.04em' }}>
+        <div key={li} style={{ display: 'flex', alignItems: 'baseline', fontFamily: fuente.maquina, fontSize: 64, color: tinta, whiteSpace: 'pre', letterSpacing: '0.04em' }}>
           {texto.slice(a, z_).split('').map((ch, j) => {
             const i = a + j;
             if (i >= n) return null;
             const signo = ch === '¿' || ch === '?';
             const golpe = Math.min(1, (t * CPS - i) / 1.5);
             return (
-              <span key={i} style={{ display: 'inline-block', color: signo ? rojo : tinta, fontSize: signo ? 180 : undefined, lineHeight: signo ? 0.8 : undefined,
+              <span key={i} style={{ display: 'inline-block', color: signo ? rojo : tinta, fontSize: signo ? 170 : undefined, lineHeight: signo ? 0.8 : undefined,
                 opacity: (signo ? 1 : tipos[i].tinta) * (0.55 + 0.45 * golpe), transform: `translateY(${tipos[i].dy + (signo ? 18 : 0)}px) rotate(${tipos[i].rot}deg) scale(${1.15 - 0.15 * golpe})` }}>{ch}</span>
             );
           })}
@@ -63,7 +63,7 @@ export const LaPregunta: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
       {fase === 1 ? (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <Luz color={pal.ocre} x={50} y={45} radio={60} intensidad={0.2} />
-          <div style={{ width: 1500, height: 820, position: 'relative', boxShadow: `14px 20px 40px ${alfa('#000000', 0.55)}`, transform: `scale(${mix(0.98, 1.03, tramo(t, 0, tTv, 'natural'))})` }}>
+          <div style={{ width: 1720, height: 820, position: 'relative', boxShadow: `14px 20px 40px ${alfa('#000000', 0.55)}`, transform: `scale(${mix(0.98, 1.03, tramo(t, 0, tTv, 'natural'))})` }}>
             <Papel color={pal.papel} envejecido={0.22}>
               <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
                 <TituloAMaquina texto={props.titulo} t={t - tTitulo} tinta={pal.fondo} rojo={pal.rojo} />

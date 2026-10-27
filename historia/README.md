@@ -221,6 +221,14 @@ Las reglas del canal (CLAUDE.md §3–§6), además de la forma del JSON:
 `remotion.config.ts` usa 4 hilos (laptop i7-11370H; nunca 8). El grano de película se nota en
 el peso del archivo final: es normal.
 
+El video 000 completo (9:20) tardó ~14 min a media resolución en la máquina de pruebas; a
+resolución completa en la laptop calculo entre 45 y 70 min. Mientras se trabaja conviene
+renderizar una escena sola:
+
+```
+npx remotion render v000-quiroz-s04 out/s04.mp4
+```
+
 ## Pendiente
 
 - Cotejar con el libro todo lo de `fuentes.md`. Lo urgente, marcado `[VERIFICAR]`: la frase
