@@ -9,9 +9,11 @@ University Press, 2008.
 Es el libro de toda la serie, así que estas fichas sirven a todos los videos. Cada video copia a su
 `fuentes.md` lo que usa, con la página.
 
-**Leído hasta ahora:** pp. 1–59 (créditos, índice, nota de los editores, dedicatoria, prólogo de
-Marcos Cueto pp. 15–29, prefacio pp. 31–32, agradecimientos pp. 33–35, introducción pp. 37–57 y
-la primera página del capítulo 1). Las páginas son **las del libro impreso**, no las del PDF.
+**Leído hasta ahora:** pp. 1–82 (créditos, índice, nota de los editores, dedicatoria, prólogo de
+Marcos Cueto pp. 15–29, prefacio pp. 31–32, agradecimientos pp. 33–35, introducción pp. 37–57,
+capítulo 1 pp. 59–82), pp. 170–182 (la consolidación, cap. 2) y pp. 536–546 (Apéndice). Las páginas
+son **las del libro impreso**, no las del PDF: en el PDF del libro, la página *n* del archivo es la
+*n + 1* del libro.
 
 Las citas entre comillas latinas «…» son textuales (incluidas las erratas del libro, marcadas
 *[sic]*). Lo que no está entre comillas es resumen.
@@ -298,7 +300,7 @@ pertenece a la familia relativista y cultural.
 | 5 | **Determinismo cultural:** «las regiones católicas meridionales, en comparación con el norte protestante, se distinguirían por tener grados de corrupción más altos». | La solución que proponen, el «cambio cultural», «es ciertamente más difícil y controversial que dedicarse a efectuar reformas institucionales urgentes. Estas nuevas versiones del determinismo cultural no logran explicar los intereses y factores institucionales que yacen en el centro de las causas y consecuencias de la corrupción.» | 44 |
 | 6 | **Realpolitik de la Guerra Fría** (décadas de 1960 a 1980): la corrupción latinoamericana como «un mal menor», «un hecho inevitable de la "política real"». | La aceptaban «condescendientemente», con «nociones confusas acerca de sus posibles beneficios en la distribución del ingreso». | 44 |
 | 7 | **Marxismo:** capitalismo = corrupción, expropiación y dependencia. | «generalizaciones y supuestos no probados, útiles como armas políticas e ideológicas», que no explican la corrupción «bajo regímenes socialistas revolucionarios». | 45 |
-| 8 | **El «aceite»:** «Perspectivas anteriores sobre los efectos supuestamente positivos de la corrupción, a modo de "aceite" que lubrica obstáculos burocráticos en sociedades en vías del desarrollo, han quedado bastante superadas.» (n. 6: Leff, Bayley, Nye). | Marco institucional: la corrupción trae «mayores costos de transacción, la obstaculización del crecimiento y un imperio de la ley vacilante». | 40–41, 45 |
+| 8 | **El «aceite»:** «Perspectivas anteriores sobre los efectos supuestamente positivos de la corrupción, a modo de "aceite" que lubrica obstáculos burocráticos en sociedades en vías del desarrollo, han quedado bastante superadas.» (n. 6: Leff, Bayley, Nye). | Marco institucional: la corrupción trae «mayores costos de transacción, la obstaculización del crecimiento y un imperio de la ley vacilante». Y en el Apéndice, con su imagen: «En lugar de "aceitar" la burocracia, la corrupción actúa, en realidad, como "grava" en la maquinaria de las instituciones del sector público.» | 40–41, 45, 536–537 |
 
 ### 5.3 El marco institucional (pp. 45–46)
 
@@ -403,31 +405,236 @@ pasado».
 
 ---
 
-## 6. Capítulo 1, primera página (p. 59)
+## 6. Capítulo 1: Ulloa y el primer ciclo (pp. 59–82)
 
-«En 1757, el capitán de navío Antonio de Ulloa fue nombrado para un puesto estratégico en el
-poblado minero de Huancavelica, a unos 3.600 metros sobre el nivel del mar. Con cierta renuencia,
-Ulloa se hizo cargo del gobierno local de la provincia y de la supervisión de la legendaria mina de
-mercurio de Santa Bárbara. […] La mina de Huancavelica, bajo monopolio real, era la única fuente
-americana importante del metal líquido, un insumo fundamental en el proceso de amalgamación para
-refinar la plata.» Llegó a la villa «en noviembre de 1758» y encontró «fraudes en la recepción y
-contabilidad de rentas reales, peligrosos descuidos técnicos en la explotación de las minas,
-turbias confabulaciones administrativas y una justicia desvirtuada por el cohecho». Ulloa lo veía
-como un riesgo para «el sistema de la minería de mercurio y plata peruano, columna principal de la
-economía y rentas imperiales». (La página termina en «Los tenaces esfuerzos reformistas de…»: el
-desenlace no está en estas páginas.)
+**Huancavelica (pp. 59–60).** «En 1757, el capitán de navío Antonio de Ulloa fue nombrado para un
+puesto estratégico en el poblado minero de Huancavelica, a unos 3.600 metros sobre el nivel del
+mar. Con cierta renuencia, Ulloa se hizo cargo del gobierno local de la provincia y de la
+supervisión de la legendaria mina de mercurio de Santa Bárbara. […] La mina de Huancavelica, bajo
+monopolio real, era la única fuente americana importante del metal líquido, un insumo fundamental
+en el proceso de amalgamación para refinar la plata.» Llegó a la villa «en noviembre de 1758» y
+encontró «fraudes en la recepción y contabilidad de rentas reales, peligrosos descuidos técnicos en
+la explotación de las minas, turbias confabulaciones administrativas y una justicia desvirtuada por
+el cohecho». Ulloa lo veía como un riesgo para «el sistema de la minería de mercurio y plata
+peruano, columna principal de la economía y rentas imperiales».
+
+**Cómo le fue (pp. 59–60, 63, 72 y n. 1).**
+
+- «Los tenaces esfuerzos reformistas de Ulloa por corregir y castigar estas transgresiones
+  administrativas lo enfrentaron violentamente a poderosos intereses creados, que ofrecían
+  resistencias y dificultades extraordinarias.» (pp. 59–60)
+- Su *Relación de Gobierno* cubre «desde el día 4 de noviembre de 1758 que tomó el mando, hasta 10
+  de febrero de 1763»; una copia va con una carta desde Huancavelica, 20 de junio de 1763, en la que
+  «reiteraba sus pedidos previos de que se le relevara y se le permitiera retornar a España» (n. 1).
+- «La larga historia de gobiernos corruptos en el Perú comienza, entonces, con el calvario que vivió
+  Ulloa al descubrir, revelar e intentar resolver los problemas asociados a la corrupción
+  administrativa en el tardío periodo colonial.» (p. 63)
+- Se vio «enredado en amargas disputas durante su gestión como gobernador provincial y
+  superintendente de minas de Huancavelica en el periodo 1758-1764» (p. 72).
+- El detalle de su gestión está en «Purgatorio minero», pp. 82–92 (no leído todavía).
+
+**Quién era (pp. 60–66).** Ulloa (1716-1795) y Jorge Juan (1713-1773). En 1735, con 19 y 22
+años, Felipe V los manda con la expedición de La Condamine a medir un arco del meridiano cerca de
+Quito, con instrucciones de informar por separado sobre lo que vieran (pp. 63–64). Al volver, en
+1744, los británicos capturan el barco de Ulloa y él tira por la borda los papeles confidenciales;
+la Royal Society lo hace miembro; vuelve a España en julio de 1746 (pp. 65–66).
+
+**El informe secreto (pp. 60–62, 66–72).** «Discurso y reflexiones políticas sobre el estado
+presente […] de los reinos del Perú», 1748-1749, para el marqués de la Ensenada. «Permaneció inédito
+por más de siete décadas, pero se mantuvo intelectual y políticamente influyente» (p. 60). Se
+publicó en Londres en 1826 como *Noticias secretas de América* (p. 61). «puede considerársele como
+un texto fundador de la tradición anticorrupción en las letras hispanas y peruanas» (p. 62).
+
+- **La frase central** (p. 72): «Empieza el abuso del Perú desde aquellos que debieran corregirlo».
+- **Los corregidores** (pp. 67–68): cobraban el tributo (de cuatro a nueve pesos al año por indio
+  varón adulto) también a los exentos, llevaban doble contabilidad y declaraban menos tributarios
+  de los que cobraban; el reparto forzoso de mercancías y mulas «a precios exorbitantes»; Ulloa y
+  Juan lo culpan de la rebelión de Juan Santos Atahualpa (1742).
+- **El juicio de residencia** (pp. 68–69): al terminar su mandato, corregidores y virreyes
+  «simplemente sobornaban al juez encargado de la tradicional averiguación oficial». Eran
+  «mecanismos administrativos tradicionales de prominente ineficacia»; y sin embargo «son
+  importantes fuentes históricas para el estudio de la corrupción virreinal, pues incluyen los
+  cargos, quejas y demandas originales de aquellos que se atrevían a cuestionar al enjuiciado.»
+- **Reglas, no personas** (p. 70): «No bastaba con nombrar unas cuantas autoridades honestas, puesto
+  que las corruptas o coludidas predominarían. El sistema estaba necesitado de un cambio sistémico
+  de reglas, que realmente transformara la jerarquía administrativa.»
+- **La venta de cargos** (pp. 70–72): desde 1633 (corregidor desde 1678, oidor desde 1687). El
+  conde de Cañete «compró el cargo de virrey del Perú en 250.000 pesos, pero falleció antes de
+  llegar a Lima» (n. 25). Desde 1750 la Corona empieza a cambiarlos por puestos asalariados; la venta
+  de oficios «sería abolida solo en 1812».
+- **Las reformas borbónicas** (p. 63): «reforzaron más bien el despotismo ilustrado, un sistema
+  también proclive a excesos de corrupción.»
+
+**Antes de Ulloa (pp. 73–82).**
+
+- Mariano Machado de Chaves, 1747: virreyes y oidores juntos son como «unirse los lobos y los canes
+  a devorar un rebaño porque el principal pastor se halla lejos» (p. 75); los oficiales reales
+  retrasaban cobros con «pérdidas fiscales de alrededor de diez millones de pesos en cinco décadas»
+  (p. 76).
+- **El diccionario de 1729, textual** (n. 39, p. 76): *corruptela*, «Por alusión vale mala
+  costumbre, o abuso, introducido contra la ley que no debe alterarse. Lat. *Abusus, Corruptela*.»
+- Felipe Guamán Poma de Ayala, hacia 1615: su crónica puede considerarse «el primer tratado contra
+  la corrupción que generaba el maltrato a los indios por parte de las autoridades y el clero»
+  (p. 77). Fig. 1 (p. 79): «Corregidor y encomendero tienen pendencias sobre los reales quien ha de
+  llevar más», *Nueva corónica y buen gobierno*, 1615, f. 495, Biblioteca Real de Copenhague.
+- Juan de Aponte, 1622: «todo corre fundado en interés, y los que tienen pueden y los pobres mueren»
+  (p. 78). Sobre Huancavelica: «[es] el peso y lastre de este reino del Perú» (p. 80); derrumbes,
+  mita sobreexplotada: «Muchos de ellos morían debido al agotamiento y a las enfermedades» (p. 80).
+- Una visita de 1649 concluye que la operación de Huancavelica «no merecía llevar la denominación
+  de "mina"» (p. 82).
 
 ---
 
-## 7. Lo que estas páginas no cubren (y dónde está)
+## 7. Capítulo 2: la consolidación de la deuda (pp. 170–182)
 
-| Hace falta | Dónde |
-|---|---|
-| Cómo se infló la deuda en la consolidación (quién tenía los vales, a cuánto se compraban, quién los reconocía) | cap. 2, «Escándalos de la consolidación de la deuda», pp. 169–181; cuadro A.2, p. 542 |
-| Las cifras de s08 (30–40 % del gasto, 3–4 % del PBI, la mitad del crecimiento) | Apéndice, pp. 535–554; cuadro A.7, p. 551 |
-| Los niveles de corrupción por época | cuadros 1.2 (p. 125), A.4 (p. 548), A.6 (p. 550) |
-| Cómo terminó Ulloa en Huancavelica | cap. 1, pp. 59–81 («Desvelando abusos», p. 63) |
-| Si la imagen «grava en el engranaje» es de Quiroz | Apéndice, pp. 536–537 (lo cita el guion) |
-| Si las líneas del hospital y de Alfonsito ya estaban en 2008 | *Corrupt Circles* (2008), *Acknowledgments* |
-| Lugar de nacimiento | otra fuente (no está en pp. 1–59) |
-| En qué capítulo está cada denunciante | capítulos 2–7 |
+(La sección empieza en la p. 169, que falta.)
+
+**La ley y sus huecos (p. 170).** Desde fines de la década de 1840, los créditos no reconocidos «que
+databan de la guerra de independencia» se garantizaron con cédulas y vales de consolidación. La ley
+del **16 de marzo de 1850** «fue una ley defectuosa por dos motivos. En primer lugar, la ley no
+estableció normas claras para el reconocimiento de deudas insuficientemente sustentadas y, en
+segundo lugar, no precisaba los criterios apropiados para su endose o traspaso. Estos vacíos
+legales permitieron que se pervirtieran los vales de deuda de largo plazo y se convirtieran en
+valores de intercambio comercial de corto plazo.»
+
+**El mecanismo (p. 170), textual:** «Reclamos que, antes de 1850 prácticamente carecían de valor, se
+convirtieron en objeto de intereses especulativos dispuestos a beneficiarse del toque de Midas de
+la consolidación. Los capitalistas más importantes, entre ellos Elías y Gonzales Candamo, se
+dedicaron a auspiciar el reconocimiento de los grandes expedientes de consolidación con miras a
+obtener jugosas comisiones. Los especuladores compraron documentos de reclamo o deuda a muy bajo
+precio y negociaron luego su reconocimiento a un valor muchas veces mayor. Los funcionarios del
+gobierno, asimismo, auspiciaban estas pretensiones, prometiendo un reconocimiento privilegiado a
+cambio de participaciones y comisiones ilegales. La deuda interna consolidada se infló, en
+consecuencia, de cinco millones de pesos en 1851 a 24 millones en 1852.» Los expedientes más
+fraudulentos pasaron en los meses antes de los plazos de junio y octubre de 1852, bajo el
+presidente Echenique.
+
+**Un caso con cifras (p. 171): Ignacia Novoa de Arredondo.** Reclamaba el valor de una hacienda
+expropiada «con quinientos esclavos y su lucro cesante durante los siguientes treinta y dos años».
+En 1852, Domingo Elías, su intermediario a cambio de una comisión, intentó que el gobierno le
+aprobara entre 500.000 y 600.000 pesos (él esperaba 200.000 por la gestión). Echenique le dijo que
+el reclamo estaba fuera de plazo. Días después se aprobó «por la extraordinaria suma de 948.500
+pesos en vales, gracias a la participación directa de Torrico», el ministro de Guerra. «Novoa
+probablemente recibió alrededor de 180.000 pesos en vales de consolidación.»
+
+**Adónde fue (p. 172):** «De la deuda total de la consolidación, que ascendía a 24 millones de pesos
+en vales, altamente concentrados entre unas cuantas personas, aproximadamente el 16 por ciento fue
+directamente a funcionarios venales y sus secuaces; más del 30 por ciento se dirigió indirectamente
+a agentes corruptos a través de comisiones ilegales; y alrededor del 50 por ciento se convirtió en
+deuda externa mediante unos turbios tratos y contratos de conversión.»
+
+**La promesa y lo que pasó (p. 173).** Echenique justificó todo «argumentando que los fondos de la
+consolidación habían creado una clase capitalista nacional». Pero «La mayoría de los reclamantes
+originales y deudores legales, así como los pequeños inversionistas que hubiesen podido participar
+adquiriendo valores de deuda pública, quedaron radicalmente excluidos de este mecanismo de deuda
+interna.» Y: «el capitalismo nacional perdió una oportunidad crucial para desarrollar sólidas bases
+financieras, afincadas en una transparente deuda pública».
+
+**Los «consolidados» (p. 174).** La red reunió a «varias docenas de personas conocidas como
+*mazorqueros*»; «se les conoció también como los *consolidados*, un término usado extensamente en
+ese entonces para denotar a personas vinculadas a la corrupción o robo políticos.» Oficialmente:
+Torrico, 23.100 pesos en vales (n. 120); La Fuente, 82.500 (n. 121); Pío Tristán, 124.000 (p. 175);
+el coronel Coz, 731.200 (n. 122); Echenique, 13.800, aunque se sospechaba que recibió
+indirectamente hasta dos millones (n. 126). Ministro de Hacienda: Nicolás Fernández de Piérola,
+padre del futuro presidente (p. 175).
+
+**La denuncia (pp. 171–172).** Elías, peleado con Echenique y Torrico por el caso Novoa, publicó
+dos cartas a Echenique en *El Comercio* (12 y 16 de agosto de 1853): la consolidación era «un
+obstáculo para el curso industrial, mercantil y rentístico del país; era, en efecto, una gangrena
+para la moral pública de los ciudadanos. En última instancia, la consolidación no beneficiaba a los
+demandantes originales sino, más bien, a los agiotistas.» Fue apresado; al salir, encabezó la
+revolución contra Echenique.
+
+**El lavado (pp. 180–181).** En Londres, Mendiburu cambió vales de consolidación (6 % de interés)
+por bonos de deuda externa (4,5 %): «cerca del 46 por ciento de toda la deuda interna consolidada
+fue silenciosamente convertida» con casas que ya habían acumulado vales (Uribarren, en París, hasta
+seis millones; Montané, en Lima, tres millones). Los vales valían en plaza «alrededor del 40 por
+ciento de su valor nominal» y los bonos nuevos, casi la par (n. 143). «En esencia, estas maniobras
+de conversión se diseñaron para "lavar" instrumentos financieros manchados por su origen corrupto
+durante la consolidación.» (p. 181)
+
+**El denunciante no era un santo (pp. 170, 171, 181–182).** Elías auspiciaba expedientes por
+comisión (p. 170) y era el intermediario de Novoa (p. 171). Ya ministro de Hacienda de Castilla,
+organizó la compensación a los dueños de esclavos manumitidos en 1854 (300 pesos por esclavo; 2,8
+millones en efectivo y 5,2 millones en vales): «El tercer expropietario de esclavos más importante,
+el ministro de Hacienda Domingo Elías, fue indemnizado con 111.000 pesos en vales por 370 esclavos»
+(p. 182). Su manifiesto de 1855: «La corrupción como una lava abrazadora [sic] extendiéndose por
+todos los ángulos de nuestro inmenso territorio ha herido a la República en todo lo que ella abriga
+de más grande, más noble y más generoso: en su moral, su religión y sus leyes» (p. 181). «En el
+periodo 1855-1858 se perdió así otra oportunidad histórica de introducir reformas y controles
+eficaces contra la corrupción.» (p. 182)
+
+---
+
+## 8. Apéndice: cómo midió (pp. 536–546)
+
+(Faltan la p. 535 y las pp. 547–554, con los cuadros A.4 a A.7 y las conclusiones.)
+
+- **El método (p. 536):** primero la década de 1850 (consolidación, conversión, manumisión); luego
+  los costos directos e indirectos por década en los siglos XIX y XX, «midiéndolos en relación con
+  el gasto gubernamental y el PBI». Fuentes: «estimados contemporáneos en obras publicadas,
+  contabilidad presupuestal, evidencias judiciales contra empleados públicos, investigaciones
+  parlamentarias, correspondencia diplomática y otras fuentes históricas».
+- **Por qué ahora (p. 536):** «Hasta la publicación de nuevos estudios económicos a mediados de la
+  década de 1990, no hubo ningún marco metodológico y teórico adecuado con el cual estudiar
+  sistemáticamente la corrupción.» «Dicho de modo sucinto, unos niveles más altos de corrupción
+  corresponden a menor inversión y crecimiento.»
+- **La grava (pp. 536–537):** «En lugar de "aceitar" la burocracia, la corrupción actúa, en
+  realidad, como "grava" en la maquinaria de las instituciones del sector público.»
+- **Contra los índices de percepción (p. 537):** «Las percepciones de la corrupción cambian
+  dramáticamente debido a factores externos tales como la cobertura de los medios, los escándalos
+  y la política. Además, dichos índices impiden efectuar comparaciones históricas».
+- **Dos ciclos (p. 538):** el de la percepción y los medios, y el de los fondos desviados: «el
+  primero es más volátil y visible, en tanto que el segundo es de base más estructural».
+- **La escala (p. 539):** «Podemos, así, clasificar décadas y gobiernos como periodos de corrupción
+  alta, media o baja.»
+- **La década de 1990 (pp. 539–541, cuadro A.1):** «¿Fue el gobierno del presidente Alberto Fujimori
+  el más corrupto en la historia del Perú?» Costo medio: «alrededor de 1.409 millones de dólares al
+  año, un monto equivalente al 34 por ciento del gasto gubernamental anual y al 3,1 por ciento del
+  PBI medio anual» (p. 540). Cuadro A.1 (millones de dólares, 1990-1999): Presidencia/Fujimori 404;
+  Montesinos 450; ministerios del Interior y Defensa 146; Fondo Militar de Pensiones 200; fuerzas
+  armadas 216; ministro Joy Way 80; Miyagusuku y socios 50; deuda externa 500; privatizaciones
+  1.400; rescates bancarios 1.145; subtotal directo 4.091; inversión extranjera perdida 10.000;
+  total 14.091.
+- **La década de 1850 (pp. 542–543, cuadro A.2, millones de pesos = de dólares):** consolidación,
+  12 (50 % de la operación); conversión, 3 (30 %); manumisión, 4 (50 %); inversión perdida, 20;
+  total 39; 3,9 por año. Con un gasto de unos ocho millones al año, la corrupción se llevó
+  «aproximadamente el 48 por ciento de los gastos gubernamentales anuales, una proporción
+  ligeramente más alta que la del decenio de 1990», y alrededor del 4 % del PBI, «también
+  ligeramente más alto de lo que fuera calculado para la década de 1990».
+- **Cinco formas de costo (pp. 543–545):** (1) deuda pública; (2) caudillos y militares; (3)
+  sobornos en contratos y obras; (4) contrabando (indirecto); (5) inversión perdida (indirecto).
+- **El soborno lo paga la obra (p. 545):** «En el caso de Meiggs, por ejemplo, los sobornos pagados
+  sumaban aproximadamente el 10 por ciento del costo total de construcción de ferrocarriles. El
+  costo de los sobornos era un componente importante del costo total oficial, puesto que los
+  contratistas sumaban el monto pagado por ellos al costo final de la operación, con lo que
+  desplazaban su costo real al público.»
+- **Cuadro A.3 (p. 546), millones de pesos y soles por década:**
+
+  | Década | Deuda | Caudillos y militares | Sobornos en contratos | Contrabando | Inversión perdida | Total | Por año |
+  |---|---|---|---|---|---|---|---|
+  | 1820-1829 | 4 | 3 | 2 | 8 | 10 | 27 | 2,7 |
+  | 1830-1839 | 2 | 2 | 1 | 5 | 12 | 22 | 2,2 |
+  | 1840-1849 | 3 | 2 | 3 | 4 | 13 | 25 | 2,5 |
+  | 1850-1859 | 19 | 4 | 3 | 4 | 20 | 50 | 5,0 |
+  | 1860-1869 | 20 | 10 | 19 | 4 | 30 | 83 | 8,3 |
+  | 1870-1879 | 25 | 20 | 25 | 3 | 35 | 108 | 10,8 |
+  | 1880-1889 | 3 | 8 | 6 | 2 | 10 | 29 | 2,9 |
+  | 1890-1899 | 3 | 12 | 15 | 2 | 15 | 47 | 4,7 |
+
+  Nota del cuadro: «1 peso = 8 reales = 1 dólar americano. En 1863, Perú adoptó el sol de 10
+  reales; 1 sol = 0,925 de dólar americano.»
+
+---
+
+## 9. Lo que todavía no está leído (y dónde está)
+
+| Hace falta | Dónde (libro) | En el PDF del libro |
+|---|---|---|
+| Las cifras de s08 para 1820–2000 (30–40 % del gasto, 3–4 % del PBI, la mitad del crecimiento) | Apéndice, pp. 547–554; cuadro A.7, p. 551 | 546–553 |
+| Los niveles por época y sus nombres («moderada / alta / muy alta» en el guion; «alta, media o baja» en la p. 539) | cuadros A.4 (p. 548) y A.6 (p. 550); para la colonia, 1.2 (p. 125) | 547, 549, 124 |
+| El comienzo de la consolidación y del Apéndice | pp. 169 y 535 | 168 y 534 |
+| El detalle de la gestión de Ulloa (para el episodio 1) | «Purgatorio minero», pp. 82–92 | 81–91 |
+| Si las líneas del hospital y de Alfonsito ya estaban en 2008 | *Corrupt Circles* (2008), *Acknowledgments* | — |
+| Lugar de nacimiento | otra fuente | — |
+| En qué capítulo está cada denunciante (Elías ya está: cap. 2) | capítulos 3–7 | — |

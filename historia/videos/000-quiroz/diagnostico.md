@@ -315,10 +315,12 @@ Hoy 8 de 11 escenas están en rojo; 3 en amarillo; ninguna en verde.
 
 ---
 
-## 7. Lo que respondió el libro (pp. 1–59)
+## 7. Lo que respondió el libro
 
-Leídas las primeras 59 páginas (prólogo, prefacio, agradecimientos, introducción). Las citas, con
-página, están en `bibliografia/quiroz-2013.md`; los errores del guion, en `fuentes.md` (C1–C26).
+Leídas las pp. 1–82 (prólogo, prefacio, agradecimientos, introducción y capítulo 1 hasta
+«Purgatorio minero»), las pp. 170–182 (la consolidación) y las pp. 536–546 (Apéndice). Las citas,
+con página, están en `bibliografia/quiroz-2013.md`; los errores del guion, en `fuentes.md`
+(C1–C27).
 
 ### Las preguntas de la primera versión de este diagnóstico
 
@@ -330,8 +332,10 @@ página, están en `bibliografia/quiroz-2013.md`; los errores del guion, en `fue
 | Qué es un *ciclo* | Ver abajo, punto 5. | 48 |
 | Los premios de *Corrupt Circles* | Abraham J. Briloff Prize in Ethics y President's Excellence Award for Scholarship del Baruch College, 2009. | 24–25 |
 | A qué capítulo pertenece cada denunciante | No lo dice la introducción: solo da el orden (Ulloa; luego Domingo Elías, Francisco García Calderón Landa, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya, Mario Vargas Llosa). | 55 |
-| Cómo se infló la deuda en la consolidación | No está en estas páginas: cap. 2, pp. 169–181, y cuadro A.2 (p. 542). | — |
-| Los niveles por época del gráfico de s08 | No están en el A.7 (que da porcentajes) sino en los cuadros 1.2, A.4 y A.6 (pp. 125, 548, 550). | — |
+| Cómo se infló la deuda en la consolidación | Ver abajo, punto 13. | 170–172 |
+| Los niveles por época del gráfico de s08 | Todavía no: están en los cuadros 1.2, A.4 y A.6 (pp. 125, 548, 550). Y ojo con los nombres: el Apéndice habla de corrupción «alta, media o baja» (p. 539), no de «moderada, alta o muy alta» (C27). | — |
+| Si «grava» es de Quiroz | Sí: «En lugar de "aceitar" la burocracia, la corrupción actúa, en realidad, como "grava" en la maquinaria de las instituciones del sector público.» | 536–537 |
+| Cómo terminó Ulloa («Y perdió.») | Lo enfrentaron «poderosos intereses creados», vivió un «calvario» y en 1763 pedía que lo relevaran. El detalle está en «Purgatorio minero» (pp. 82–92). | 59–60, 63, 72 |
 
 ### Lo que el libro agrega para enseñar
 
@@ -393,26 +397,80 @@ concepto, un ejemplo o un argumento.
     estudiar sus publicaciones» (p. 29). Y la confesión fue en vida: «tuve el privilegio de
     confesarle que siempre había querido ser como él».
 
+### Lo que agregan el capítulo 1, la consolidación y el Apéndice
+
+13. **El mecanismo, por fin, como tablero** (pp. 170–172). Cinco piezas que se suman, no que se
+    reemplazan:
+    1. **Reclamos viejos** contra el Estado, de la guerra de independencia, que «antes de 1850
+       prácticamente carecían de valor».
+    2. **Una ley con dos huecos** (16 de marzo de 1850): no fijó cómo probar una deuda ni cómo
+       traspasar los vales.
+    3. **El especulador** compra esos papeles «a muy bajo precio».
+    4. **El funcionario** los reconoce «a un valor muchas veces mayor», a cambio de «participaciones
+       y comisiones ilegales».
+    5. **El resultado:** la deuda pasa de 5 a 24 millones de pesos entre 1851 y 1852. De esos 24,
+       cerca del 16 % va a funcionarios, más del 30 % a comisiones y la mitad se convierte en deuda
+       externa para «lavar» los vales (p. 181).
+
+    Y un solo ejemplo, real, en vez del vale ilustrativo de 1000 a 3000: **Ignacia Novoa**
+    reclamaba entre 500.000 y 600.000 pesos; con el ministro Torrico de por medio se le aprobaron
+    948.500; ella recibió unos 180.000 (p. 171). Lo específico vence a lo genérico (§7 del
+    CLAUDE.md), y el espectador puede hacer la cuenta.
+14. **La promesa contra lo que pasó** (p. 173). Echenique decía que la consolidación había creado
+    «una clase capitalista nacional»; los pequeños tenedores quedaron «radicalmente excluidos» y «el
+    capitalismo nacional perdió una oportunidad crucial». Es el cierre de 0·2 y la tesis de la serie
+    en pequeño: no fue solo plata robada, fue una oportunidad perdida.
+15. **El denunciante no era un santo.** Domingo Elías, que denunció la consolidación en agosto de
+    1853 y por eso fue preso (pp. 171–172), también auspiciaba expedientes por comisión: era el
+    intermediario de Novoa (pp. 170–171). Ya ministro, fue indemnizado con 111.000 pesos por 370
+    esclavos (p. 182). La serie se cuenta «desde los que denunciaron», y eso obliga a decirlo: el
+    problema eran las reglas (los huecos de la ley), no un villano. Es la misma idea que el punto 6,
+    probada con un caso.
+16. **La palabra de 0·2:** en la década de 1850 a esa red se la llamó **los consolidados**, «un
+    término usado extensamente en ese entonces para denotar a personas vinculadas a la corrupción o
+    robo políticos» (p. 174). Una palabra clave por episodio (gramática de la serie).
+17. **Otra década perdida** (pp. 540, 543). En la década de 1850 la corrupción se habría llevado
+    cerca del 48 % del gasto del Estado y el 4 % del PBI; en la de 1990, el 34 % y el 3,1 %.
+    Quiroz dice «ligeramente más alta». Es una yuxtaposición que el espectador no espera (el
+    guano peor que Fujimori, en proporción) y une 0·2 con 0·3.
+18. **«Roba, pero hace obra», con un número** (p. 545). En los ferrocarriles de Meiggs los sobornos
+    eran cerca del 10 % del costo, y los contratistas los sumaban al precio: «desplazaban su costo
+    real al público». Es el argumento del punto 8 con un caso; va en s09.
+19. **Para el episodio de Ulloa** (cap. 1). La frase del informe secreto: «Empieza el abuso del
+    Perú desde aquellos que debieran corregirlo» (p. 72). Su diagnóstico de 1749 ya era el de
+    Quiroz: «No bastaba con nombrar unas cuantas autoridades honestas […]. El sistema estaba
+    necesitado de un cambio sistémico de reglas» (p. 70). El juicio de residencia, inútil como
+    castigo e invaluable como fuente (pp. 68–69), sirve también para la objeción 1 de 0·3. Y un
+    detalle que se recuerda: el conde de Cañete compró el cargo de virrey en 250.000 pesos y murió
+    antes de llegar a Lima (n. 25).
+20. **El diccionario, de verdad.** La página de s07 hoy muestra definiciones simuladas. La n. 39
+    (p. 76) copia la entrada de 1729: *corruptela*, «Por alusión vale mala costumbre, o abuso,
+    introducido contra la ley que no debe alterarse.» Puede ir textual.
+
 ### Cómo cambia la propuesta (§4)
 
 - **0·1** gana la rima de Denegri y el camino de la pregunta (punto 2) como puente final, en vez
   de saltar a 2000.
-- **0·2** sigue esperando el cap. 2 (pp. 169–181) para el tablero del mecanismo. Sin eso, el
-  episodio afirma pero no enseña.
+- **0·2** ya tiene lo que le faltaba para enseñar: el tablero del mecanismo (13) con un caso real
+  (Novoa), la promesa contra lo que pasó (14), el giro de Elías (15), su palabra (*consolidados*,
+  16) y el puente a 0·3 (otra década perdida, 17).
 - **0·3** empieza por la definición (1), ordena las objeciones como el libro (4), cierra el método
-  con «no es cultura: son reglas» (6) y «el historiador no es juez» (7), y el bloque de la serie
+  con «no es cultura: son reglas» (6) y «el historiador no es juez» (7), compara dos décadas antes
+  de la cifra promedio (17), le da a «roba, pero hace obra» su número (18), y el bloque de la serie
   explica los ciclos con las capas (5).
 
 ### Lo que todavía falta del libro
 
-| Para | Páginas |
-|---|---|
-| El mecanismo de la consolidación (0·2) | cap. 2, pp. 169–181; cuadro A.2, p. 542 |
-| Las cifras y los niveles por época (s08) | Apéndice, pp. 535–554; cuadros 1.2 (p. 125), A.4 (p. 548), A.6 (p. 550), A.7 (p. 551) |
-| Cómo terminó Ulloa («Y perdió.») | cap. 1, pp. 59–81 |
-| Si «grava en el engranaje» es de Quiroz | Apéndice, pp. 536–537 |
-| Si la línea del hospital ya estaba en 2008 | *Corrupt Circles*, *Acknowledgments* |
-| Lugar de nacimiento | otra fuente |
+Al cortar el PDF del libro, la página *n* del archivo es la *n + 1* impresa: por eso llegaron las
+pp. 170–182 y 536–546 en vez de 169–181 y 535–545.
+
+| Para | Páginas del libro | Páginas del PDF |
+|---|---|---|
+| Las cifras de s08 (promedio 1820–2000, la mitad del crecimiento) y los niveles por época | Apéndice, pp. 547–554 (cuadros A.4 a A.7) y cuadro 1.2 (p. 125) | 546–553 y 124 |
+| El comienzo de la consolidación y del Apéndice | pp. 169 y 535 | 168 y 534 |
+| La gestión de Ulloa en detalle (para el episodio 1, no para este) | pp. 82–92 | 81–91 |
+| Si la línea del hospital ya estaba en 2008 | *Corrupt Circles*, *Acknowledgments* | — |
+| Lugar de nacimiento | otra fuente | — |
 
 ---
 

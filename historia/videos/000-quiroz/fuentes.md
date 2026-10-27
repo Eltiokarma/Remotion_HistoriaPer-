@@ -4,8 +4,9 @@ Libro base: Alfonso W. Quiroz, *Historia de la corrupción en el Perú* (Lima: I
 Las fichas de lectura, con las citas textuales y sus páginas, están en
 [`bibliografia/quiroz-2013.md`](../../bibliografia/quiroz-2013.md).
 
-**Cotejado con el libro, pp. 1–59** (créditos, índice, prólogo, prefacio, agradecimientos,
-introducción y primera página del cap. 1). Lo que todavía no tiene fuente segura, o lo que en
+**Cotejado con el libro: pp. 1–82** (créditos, índice, prólogo, prefacio, agradecimientos,
+introducción y capítulo 1 hasta «Purgatorio minero»), **pp. 170–182** (la consolidación) y
+**pp. 536–546** (Apéndice). Lo que todavía no tiene fuente segura, o lo que en
 pantalla todavía no coincide con el libro, dice `[VERIFICAR]` y hace fallar
 `npm run validar -- 000-quiroz --final`.
 
@@ -27,9 +28,9 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | C3 | s01 | «su último libro, el que más trabajo le costó» | «Su último y exitoso libro» (p. 23). Lo de «el que más trabajo le costó» no está. | Quitarlo, o decir «su último libro». |
 | C4 | s01 | «menciona a su hijo, recién llegado al mundo» | «La reciente llegada a este mundo de nuestro precioso Alfonsito ha colocado todo esto en su debida perspectiva vital.» (p. 35). Dedicatoria: «A don Alfonso Martín y a sus ilustres abuelos». No dice «hijo». | Usar sus palabras: «…celebra "la reciente llegada a este mundo de nuestro precioso Alfonsito"». |
 | C5 | s04 🖥 | «No era derroche. Era un mecanismo.» | Quiroz quería «confirmar si era verdad que **toda** la riqueza […] había sido derrochada en artículos de lujo» y encontró **además** la deuda inflada y funcionarios cómplices (pp. 17–18). No niega el derroche. | «No era solo derroche. Era un mecanismo.» (también en `s04.props.frase`). |
-| C6 | s07 🖥 | «en 1729 la Real Academia ya definía el cohecho, el prevaricato y la corruptela» | Nota 13 (p. 43): Diccionario de autoridades, **1729** (pp. 623 y 401) **y 1737** (p. 373). Por el orden alfabético de los tomos, *cohecho* y *corruptela* serían de 1729 y *prevaricato* de 1737 (deducción nuestra, no lo dice el libro). | «Entre 1729 y 1737, el diccionario de la Real Academia ya definía…». En pantalla, `s07.props.diccionario.anio` → `1729 · 1737`. Se pueden sumar las glosas del libro: *corruptela* (abuso ilegal), *cohecho* (soborno), *prevaricato* (perversión de la justicia). |
+| C6 | s07 🖥 | «en 1729 la Real Academia ya definía el cohecho, el prevaricato y la corruptela» | Nota 13 (p. 43): Diccionario de autoridades, **1729** (pp. 623 y 401) **y 1737** (p. 373). Por el orden alfabético de los tomos, *cohecho* y *corruptela* serían de 1729 y *prevaricato* de 1737 (deducción nuestra). La n. 39 (p. 76) confirma *corruptela* en 1729 y copia la entrada: «Por alusión vale mala costumbre, o abuso, introducido contra la ley que no debe alterarse.» | «Entre 1729 y 1737, el diccionario de la Real Academia ya definía…». En pantalla, `s07.props.diccionario.anio` → `1729 · 1737`. Se pueden sumar las glosas del libro: *corruptela* (abuso ilegal), *cohecho* (soborno), *prevaricato* (perversión de la justicia). |
 | C7 | s07 | «que la corrupción es cultural, que está en la sangre» | El argumento cultural que discute es religioso y de valores: «las regiones católicas meridionales, en comparación con el norte protestante» (p. 44). Nada de sangre. | «que es cultural: que los países católicos del sur son más corruptos que los protestantes del norte». Y su respuesta, que el guion no da: cambiar la cultura «es ciertamente más difícil y controversial que dedicarse a efectuar reformas institucionales urgentes», y esa explicación no da cuenta de «los intereses y factores institucionales» (p. 44). |
-| C8 | s07 | «Él pensaba lo contrario: no es aceite. Es grava en el engranaje.» | «aceite» sí es del libro (p. 40). «Grava» no está en pp. 1–59. Lo que dice Quiroz: la corrupción trae «mayores costos de transacción, la obstaculización del crecimiento y un imperio de la ley vacilante» (p. 45). | Mientras no se coteje el Apéndice (pp. 536–537), la grava es imagen del canal, no frase de Quiroz: «Para Quiroz pasa lo contrario: la corrupción no aceita, traba.» |
+| C8 | s07 | «Él pensaba lo contrario: no es aceite. Es grava en el engranaje.» | **Resuelta: es de Quiroz.** «En lugar de "aceitar" la burocracia, la corrupción actúa, en realidad, como "grava" en la maquinaria de las instituciones del sector público.» (pp. 536–537) | Queda como está. Si se quiere citar, el libro dice «la maquinaria»; el engranaje es la misma imagen. |
 
 ### Precisión: el sentido está, la forma exagera
 
@@ -50,9 +51,10 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | C21 | s08 🖥 | «estimados provisionales» · nota en pantalla `Estimados provisionales — Quiroz, Apéndice` | «Estos cálculos son estimados preliminares, obviamente sujetos a revisión y a errores de subestimación o sobrestimación» (p. 57) | Usar su palabra: «preliminares» (también en `s08.props.nota`). |
 | C22 | s10 | «a más de tres mil quinientos metros de altura» | «a unos 3.600 metros sobre el nivel del mar» (p. 59) | «a unos tres mil seiscientos metros» (la ficha `~3600 M.S.N.M.` ya está bien). |
 | C23 | s10 | «la mina de mercurio de la que dependía la plata de todo el virreinato» | «la única fuente americana importante del metal líquido, un insumo fundamental en el proceso de amalgamación para refinar la plata» (p. 59) | «la única mina importante de mercurio de América. Sin mercurio no se podía refinar la plata.» |
-| C24 | s10 | «Intentó limpiarla. Y perdió.» | p. 59 trae lo que encontró (fraudes, descuidos, cohecho), no el desenlace. | Cotejar cap. 1, pp. 59–81. |
+| C24 | s10 | «Intentó limpiarla. Y perdió.» | **Resuelta.** Sus esfuerzos «lo enfrentaron violentamente a poderosos intereses creados» (pp. 59–60); «el calvario que vivió Ulloa» (p. 63); «amargas disputas» en 1758-1764 (p. 72); en junio de 1763 «reiteraba sus pedidos previos de que se le relevara y se le permitiera retornar a España» (n. 1). | Queda. Si se quiere un detalle concreto en vez de la palabra: «En 1763 pedía que lo relevaran.» |
 | C25 | s11 | «un mes después de la muerte de su amigo» | Murió en enero de 2013 (nota de los editores); el prólogo se firma en febrero (p. 29). No hay día. | «semanas después» o solo «en febrero de 2013». Y algo que el guion no dice: Cueto alcanzó a decírselo en vida («tuve el privilegio de confesarle», p. 29). |
 | C26 | s03 🖥 | Capa de gobiernos: `BELAUNDE` | El libro escribe «Belaúnde» (índice, cap. 6, p. 384); en mayúsculas también va la tilde. | `BELAÚNDE` en `s03.props.gobiernos`. |
+| C27 | s08 | «Clasificó cada época como de corrupción moderada, alta o muy alta.» | El Apéndice dice: «Podemos, así, clasificar décadas y gobiernos como periodos de corrupción alta, media o baja» (p. 539). Los nombres que usa en los cuadros A.4 y A.6 no están leídos. | Cotejar los cuadros A.4 (p. 548) y A.6 (p. 550). Si la escala es alta / media / baja, la frase y las bandas del gráfico cambian de nombre; «ninguna baja» puede seguir valiendo. |
 
 ---
 
@@ -82,7 +84,10 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | s04 | Consolidación: pago en 1850 de la deuda interna que venía de la colonia; la promesa de una clase empresarial; la versión del derroche; deuda exagerada y funcionarios cómplices | Prólogo, pp. 17–18 | ✔ · C5 |
 | s04 | Tesis de bachiller, 1980 («La consolidación de la deuda interna peruana, 1850-1858») | Prólogo, p. 17 | ✔ |
 | s04 | *La deuda defraudada: consolidación de 1850 y dominio económico en el Perú*, 1987, Instituto Nacional de Cultura | Prólogo, p. 17 | ✔ |
-| s04 | Vale de `1000` a `3000` | — | Ilustración del mecanismo, no un dato: en pantalla dice «ejemplo ilustrativo». El mecanismo real: cap. 2, pp. 169–181 |
+| s04 | Vale de `1000` a `3000` | — | Ilustración, no un dato: en pantalla dice «ejemplo ilustrativo». Ahora hay datos reales para reemplazarla (ver la fila siguiente) |
+| s04 | El mecanismo: reclamos casi sin valor comprados «a muy bajo precio» y reconocidos «a un valor muchas veces mayor», con comisiones a funcionarios; la deuda consolidada pasa de 5 a 24 millones de pesos entre 1851 y 1852 | Cap. 2, p. 170 | ✔ |
+| s04 | Caso Novoa: reclamo de 500.000–600.000 pesos, aprobado en 948.500 pesos en vales con Torrico de por medio; ella recibe unos 180.000 | Cap. 2, p. 171 | ✔ (no está en el video; sirve para el tablero del mecanismo) |
+| s04 | Adónde fueron los 24 millones: ~16 % a funcionarios, más del 30 % en comisiones ilegales, ~50 % convertido en deuda externa | Cap. 2, p. 172 | ✔ (no está en el video) |
 | s05 | París como meca; Columbia; beca de Herbert S. Klein; historia cuantitativa y regresiones múltiples | Prólogo, p. 18 | ✔ · C13, C14 |
 | s05 | Kenneth Maxwell: profundidad y claridad | Prólogo, p. 19 | ✔ · C15 |
 | s05 | Bancos, crédito colonial, casa Grace; «la máxima autoridad en la historia financiera peruana» | Prólogo, pp. 19–20 | ✔ |
@@ -98,10 +103,10 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | s07 | Objeción 3, relativismo; el diccionario (`1729 · 1737`) | Introducción, p. 43 y n. 13 | ✔ (C6) |
 | s07 | Objeción 4, cultura | Introducción, p. 44 | ✔ · C7 |
 | s07 | El «aceite» | Introducción, pp. 40–41 y 43 | ✔ · C20 |
-| s07 | «grava en el engranaje» | Apéndice, pp. 536–537 (según el guion) | [VERIFICAR] (C8) |
+| s07 | «grava en el engranaje» | Apéndice, pp. 536–537 | ✔ (C8) |
 | s08 | Estimación década por década desde la colonia | Índice de cuadros: 1.1, 1.2, A.3, A.5 | ✔ (que existe; las cifras, abajo) |
-| s08 | 30–40 % del gasto del Estado; 3–4 % de la producción cada año (1820–2000) | Apéndice, cuadro A.7, p. 551 (ojo: el cuadro va de 1810 a 2000) | [VERIFICAR] |
-| s08 | Ninguna época de corrupción baja; niveles por período en el gráfico | Cuadros 1.2 (p. 125), A.4 (p. 548) y A.6 (p. 550) — no el A.7 | [VERIFICAR] — son un marcador: copiar la clasificación real en `escenas.json → s08.props.periodos` |
+| s08 | 30–40 % del gasto del Estado; 3–4 % de la producción cada año (1820–2000) | Apéndice, cuadro A.7, p. 551 (ojo: el cuadro va de 1810 a 2000) | [VERIFICAR] el promedio 1820–2000 (pp. 547–554). Lo leído va en esa línea: década de 1850, ≈ 48 % del gasto y 4 % del PBI (p. 543); década de 1990, 34 % y 3,1 % (p. 540) |
+| s08 | Ninguna época de corrupción baja; niveles por período en el gráfico | Cuadros 1.2 (p. 125), A.4 (p. 548) y A.6 (p. 550) — no el A.7 | [VERIFICAR] — son un marcador: copiar la clasificación real en `escenas.json → s08.props.periodos` (y sus nombres, C27) |
 | s08 | ≈ la mitad del crecimiento que no tuvo | Prólogo, p. 24 («alrededor de la mitad de la falta de crecimiento»); cálculo en el Apéndice | ✔ por el prólogo |
 | s08 | Estimados sujetos a revisión | Introducción, p. 57 | ✔ · C21 |
 | s08 | Silueta «fantasma» del país, 1,45 veces más grande | — | Ilustración de «la mitad del crecimiento», no una medida |
@@ -109,9 +114,9 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | s09 | Premios: Abraham J. Briloff Prize in Ethics y President's Excellence Award for Scholarship del Baruch College, 2009 | Prólogo, pp. 24–25 | ✔ |
 | s09 | Usado en el mundo; contra el fatalismo; «hace obras» | Prólogo, pp. 24–25 | ✔ |
 | s10 | Contado desde los que denunciaron; siete capítulos, siete ciclos | Introducción, p. 55 | ✔ |
-| s10 | Antonio de Ulloa, nombrado en 1757, llega a Huancavelica en noviembre de 1758; ~3600 m; mina de mercurio de Santa Bárbara | Cap. 1, p. 59 | ✔ · C22, C23 |
-| s10 | «Y perdió.» | Cap. 1, pp. 59–81 | [VERIFICAR] (C24) |
-| s10 | Domingo Elías, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya | Introducción, p. 55 (el libro nombra además a Francisco García Calderón Landa y Mario Vargas Llosa) | ✔ |
+| s10 | Antonio de Ulloa, nombrado en 1757, toma el mando el 4 de noviembre de 1758; gobierna hasta 1764; ~3600 m; mina de mercurio de Santa Bárbara | Cap. 1, p. 59, n. 1 y p. 72 | ✔ · C22, C23 |
+| s10 | «Y perdió.» | Cap. 1, pp. 59–60, 63, 72 y n. 1 | ✔ (C24) |
+| s10 | Domingo Elías, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya | Introducción, p. 55 (el libro nombra además a Francisco García Calderón Landa y Mario Vargas Llosa) | ✔. Elías es el denunciante del cap. 2 (cartas de agosto de 1853, pp. 171–172), pero también cobraba comisiones de la consolidación (pp. 170–171) y fue indemnizado por 370 esclavos (p. 182): no es un héroe limpio, y el episodio de la consolidación tiene que decirlo |
 | s10 | Los siete capítulos, títulos y años | Índice | ✔ — coinciden los siete |
 | s11 | Prólogo firmado en Río de Janeiro, febrero de 2013; «siempre había querido ser como él» | Prólogo, p. 29 | ✔ · C25 |
 

@@ -243,10 +243,11 @@ npx remotion render v000-quiroz-s04 out/s04.mp4
 
 ## Pendiente
 
-- Cotejado con el libro hasta la p. 59 (`bibliografia/quiroz-2013.md`). `fuentes.md` lista 26
-  correcciones para el guion (C1–C26) y lo que sigue `[VERIFICAR]`: la cita de s01 en pantalla,
-  las cifras y **los niveles por período de s08, que son un marcador** (Apéndice, pp. 535–554),
-  el desenlace de Ulloa (cap. 1), la «grava» (pp. 536–537) y el lugar de nacimiento.
+- Cotejado con el libro: pp. 1–82, 170–182 y 536–546 (`bibliografia/quiroz-2013.md`).
+  `fuentes.md` lista 27 correcciones para el guion (C1–C27); las de pantalla ya están aplicadas.
+  Sigue `[VERIFICAR]`: las cifras y **los niveles por período de s08, que son un marcador**
+  (Apéndice, pp. 547–554), la lista de gobernantes de s03, si la línea del hospital ya estaba en la
+  edición de 2008, el lugar de nacimiento y la licencia de Chambon.
 - Grabar la voz real, cuadrar los beats con ella (`"beats_ajustados": true`) y recomponer la
   música (`npm run generar:audio -- 000-quiroz --forzar`).
 - Subtítulos nativos en Remotion (el guion lo propone): `tiempos.json` ya da el punto de partida.
