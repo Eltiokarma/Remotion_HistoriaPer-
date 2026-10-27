@@ -1,5 +1,5 @@
 /**
- * Revisa los videos antes de renderizar (CLAUDE.md §3–§6 y §11).
+ * Revisa los videos antes de renderizar (CLAUDE.md §1.2, §3–§6 y §12).
  *
  *   npm run validar                          → todos los videos
  *   npm run validar -- 000-quiroz            → uno
@@ -10,58 +10,23 @@
  * ! = aviso (mirarlo; puede ser una decisión)
  * Sale con código 1 si hay algún error.
  */
-import { execFileSync } from 'node:child_process';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import {
   curva, desviacion, DESVIACION_MINIMA, DUCKING_DB, ESTADOS_MUSICA, estadosMusica, SILENCIO_S, TOLERANCIA_DURACION, triosParejos,
 } from '../src/direction/ritmo';
-import { candidatosVoz, COLA_S } from '../src/direction/voz';
 import { CATALOGO } from '../src/escenas/esquemas';
-import type { Escena } from '../src/esquema';
+import { COLA_S } from '../src/direction/voz';
+import type { ReglaDeOficio } from '../src/esquema';
 import { validarVideo } from '../src/validacion';
-
-const RAIZ = path.resolve(__dirname, '..');
-const PUBLIC = path.join(RAIZ, 'public');
-const VIDEOS = path.join(RAIZ, 'videos');
+import { medir, mmss, PUBLIC, RAIZ, VIDEOS } from './comun';
 
 const args = process.argv.slice(2);
 const final = args.includes('--final');
 const pedidos = args.filter((a) => !a.startsWith('--'));
 
-/** Duración de un audio en segundos, con el ffprobe del sistema o el que trae Remotion. */
-const duracionAudio = (archivo: string): number | null => {
-  const argsFf = ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', archivo];
-  for (const [cmd, pre] of [['ffprobe', []], ['npx', ['remotion', 'ffprobe']]] as const) {
-    try {
-      const salida = execFileSync(cmd, [...pre, ...argsFf], { cwd: RAIZ, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], shell: process.platform === 'win32' });
-      const d = parseFloat(salida.trim());
-      if (Number.isFinite(d)) return d;
-    } catch {
-      // se prueba el siguiente
-    }
-  }
-  return null;
-};
-
-type Medida = { duracion: number; voz: 'real' | 'provisional' | 'ninguna'; k: number };
-
-/** Lo mismo que hace el Studio (direction/timing.ts): si hay voz, manda la voz. */
-const medir = (videoId: string, e: Escena): Medida => {
-  for (const [ruta, provisional] of candidatosVoz(videoId, e.id)) {
-    const archivo = path.join(PUBLIC, ruta);
-    if (!existsSync(archivo)) continue;
-    const d = duracionAudio(archivo);
-    if (d === null) continue;
-    return { duracion: d + (e.cola_s ?? COLA_S), voz: provisional ? 'provisional' : 'real', k: d / e.duracion_s };
-  }
-  return { duracion: e.duracion_s + (e.cola_s ?? COLA_S), voz: 'ninguna', k: 1 };
-};
-
 const tinta = (codigo: number) => (t: string) => (process.stdout.isTTY ? `\x1b[${codigo}m${t}\x1b[0m` : t);
 const [rojo, amarillo, verde, negrita] = [31, 33, 32, 1].map(tinta);
-
-const mmss = (s: number) => { const r = Math.round(s); return `${Math.floor(r / 60)}:${String(r % 60).padStart(2, '0')}`; };
 
 function revisar(carpeta: string): { errores: number; avisos: number } {
   const errores: string[] = [];
@@ -85,6 +50,13 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
     return { errores: errores.length, avisos: 0 };
   }
   titulo(`${video.id} · ${video.titulo}`);
+  // una regla de oficio rota a propósito (declarada en "excepciones") es una decisión, no un error
+  const decisiones: string[] = [];
+  const oficio = (regla: ReglaDeOficio, escenas: string[], mensaje: string, destino: string[]) => {
+    const ex = (video.excepciones ?? []).find((x) => x.regla === regla && (!x.escenas || escenas.length === 0 || escenas.some((id) => x.escenas!.includes(id))));
+    if (ex) decisiones.push(`${mensaje} — ${ex.motivo}`);
+    else destino.push(mensaje);
+  };
 
   // —— el video en el repo
   if (video.id !== carpeta) errores.push(`el id "${video.id}" no coincide con la carpeta videos/${carpeta}/`);
@@ -128,11 +100,11 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
       }
     }
     if (audio?.duck_db !== undefined && (audio.duck_db < DUCKING_DB[0] || audio.duck_db > DUCKING_DB[1])) {
-      avisos.push(`${e.id}: duck_db ${audio.duck_db} fuera del rango del canal (${DUCKING_DB[0]} a ${DUCKING_DB[1]} dB)`);
+      oficio('ducking', [e.id], `${e.id}: duck_db ${audio.duck_db} fuera del rango del canal (${DUCKING_DB[0]} a ${DUCKING_DB[1]} dB)`, avisos);
     }
     if (audio?.silencio && e.beats[audio.silencio.desde_beat] !== undefined && e.beats[audio.silencio.hasta_beat] !== undefined) {
       const s = (e.beats[audio.silencio.hasta_beat] - e.beats[audio.silencio.desde_beat]) * (e.beats_ajustados ? 1 : m.k);
-      if (s < SILENCIO_S[0] || s > SILENCIO_S[1]) avisos.push(`${e.id}: el silencio dura ${s.toFixed(1)} s (el canal pide ${SILENCIO_S[0]}–${SILENCIO_S[1]} s)`);
+      if (s < SILENCIO_S[0] || s > SILENCIO_S[1]) oficio('largo-silencio', [e.id], `${e.id}: el silencio dura ${s.toFixed(1)} s (el canal pide ${SILENCIO_S[0]}–${SILENCIO_S[1]} s)`, avisos);
     }
     if (final && m.voz !== 'real') errores.push(`${e.id}: ${m.voz === 'provisional' ? 'suena la voz provisional' : 'no hay voz'}; graba public/videos/${video.id}/voz/${e.id}.wav`);
   });
@@ -141,17 +113,17 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
   const duraciones = medidas.map((m) => m.duracion);
   for (const i of triosParejos(duraciones)) {
     const ids = video.escenas.slice(i, i + 3).map((e) => e.id).join(', ');
-    errores.push(`${ids} duran casi lo mismo (±${TOLERANCIA_DURACION * 100}%): tres planos parejos se sienten robóticos`);
+    oficio('duraciones-parejas', video.escenas.slice(i, i + 3).map((e) => e.id), `${ids} duran casi lo mismo (±${TOLERANCIA_DURACION * 100}%): tres planos parejos se sienten robóticos`, errores);
   }
   const intensidades = video.escenas.map((e) => e.intensidad);
   const desv = desviacion(intensidades);
-  if (video.escenas.length > 1 && desv < DESVIACION_MINIMA) errores.push(`la curva de intensidad es plana (desviación ${desv.toFixed(2)}, mínimo ${DESVIACION_MINIMA})`);
+  if (video.escenas.length > 1 && desv < DESVIACION_MINIMA) oficio('intensidad-plana', [], `la curva de intensidad es plana (desviación ${desv.toFixed(2)}, mínimo ${DESVIACION_MINIMA})`, errores);
   const pico = intensidades.indexOf(Math.max(...intensidades));
-  if (video.escenas.length >= 3 && pico < video.escenas.length / 3) avisos.push(`el pico de intensidad está en ${video.escenas[pico].id}, muy al principio: la curva debería subir hacia el clímax`);
+  if (video.escenas.length >= 3 && pico < video.escenas.length / 3) oficio('pico-temprano', [], `el pico de intensidad está en ${video.escenas[pico].id}, muy al principio: la curva debería subir hacia el clímax`, avisos);
   const conSilencio = video.escenas.some((e) => e.audio?.silencio);
-  if (!conSilencio) (final ? errores : avisos).push('no hay ningún silencio deliberado (audio.silencio en alguna escena)');
+  if (!conSilencio) oficio('sin-silencio', [], 'no hay ningún silencio deliberado (audio.silencio en alguna escena)', final ? errores : avisos);
   const estados = estadosMusica(video.escenas.map((e) => e.estado_musica));
-  if (estados.size < 3) (final ? errores : avisos).push(`la música pasa por ${estados.size} estado(s) (${[...estados].join(', ') || 'ninguno anotado'}); el canal pide ${ESTADOS_MUSICA.join(', ')}`);
+  if (estados.size < 3) oficio('estados-musica', [], `la música pasa por ${estados.size} estado(s) (${[...estados].join(', ') || 'ninguno anotado'}); el canal pide ${ESTADOS_MUSICA.join(', ')}`, final ? errores : avisos);
   if (!video.escenas.some((e) => e.intencion)) avisos.push('ninguna escena anota su "intencion" (al menos una yuxtaposición deliberada por video)');
 
   const porCompletar = (readFileSync(archivo, 'utf8').match(/\[POR COMPLETAR/g) ?? []).length;
@@ -174,6 +146,7 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
   console.log(`  música: ${video.escenas.map((e) => e.estado_musica ?? '—').join(' · ')}`);
   for (const e of errores) console.log(`  ${rojo('✗')} ${e}`);
   for (const a of avisos) console.log(`  ${amarillo('!')} ${a}`);
+  for (const d of decisiones) console.log(`  · decisión: ${d}`);
   if (!errores.length) console.log(`  ${verde('✓')} ${final ? 'listo para el render final' : 'sin errores'}`);
   return { errores: errores.length, avisos: avisos.length };
 }

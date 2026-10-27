@@ -17,6 +17,15 @@
     "grano": 0.1,
     "vineta": 0.45
   },
+  "excepciones": [
+    {
+      "regla": "paleta",
+      "escenas": [
+        "s09"
+      ],
+      "motivo": "el guion pide un cartel de obra amarillo y negro; el amarillo sale del ocre de la paleta y solo aparece ahí"
+    }
+  ],
   "escenas": [
     {
       "id": "s01",

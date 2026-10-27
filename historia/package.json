@@ -7,6 +7,7 @@
     "render": "remotion render",
     "validar": "tsx scripts/validar.ts",
     "nuevo-video": "tsx scripts/nuevo-video.ts",
+    "escaleta": "tsx scripts/escaleta.ts",
     "generar:audio": "python3 scripts/generar_audio.py",
     "generar:texturas": "python3 scripts/generar_texturas.py",
     "typecheck": "tsc --noEmit && tsc --noEmit -p scripts"

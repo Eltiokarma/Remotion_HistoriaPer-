@@ -71,6 +71,32 @@ export const esquemaEscena = z.object({
   estado_musica: z.string().optional(),
 });
 
+/**
+ * Reglas de oficio del CLAUDE.md que un video puede romper a propósito (§1.2): la excepción se
+ * declara con su motivo y `validar` la muestra como decisión, no como error.
+ */
+export const REGLAS_DE_OFICIO = {
+  'duraciones-parejas': 'tres escenas seguidas que duran casi lo mismo',
+  'intensidad-plana': 'curva de intensidad plana',
+  'pico-temprano': 'el pico de intensidad muy al principio',
+  'sin-silencio': 'ningún silencio deliberado',
+  'estados-musica': 'la música no pasa por ausente, presente y protagonista',
+  ducking: 'ducking fuera de −12 a −18 dB',
+  'largo-silencio': 'silencio fuera de 1,5–3 s',
+  paleta: 'un color fuera de la paleta',
+  'texto-repite-voz': 'texto en pantalla que dice lo mismo que la voz',
+  'pregunta-tardia': 'la pregunta central no se abre en los primeros 15 s',
+  ensenar: 'una escena fuera del semáforo para enseñar (escaleta)',
+} as const;
+export type ReglaDeOficio = keyof typeof REGLAS_DE_OFICIO;
+
+export const esquemaExcepcion = z.object({
+  regla: z.enum(Object.keys(REGLAS_DE_OFICIO) as [ReglaDeOficio, ...ReglaDeOficio[]]),
+  /** Escenas donde se rompe (si no se dice, en todo el video). */
+  escenas: z.array(z.string()).optional(),
+  motivo: z.string().min(10, 'una excepción sin motivo no es una decisión'),
+});
+
 export const esquemaVideo = z.object({
   id: z.string().regex(/^\d{3}-[a-z0-9-]+$/, 'el id del video es NNN-nombre, p. ej. 001-reformas'),
   titulo: z.string(),
@@ -82,6 +108,8 @@ export const esquemaVideo = z.object({
   pregunta_central: z.string().optional(),
   /** Capa de película sobre todo el video. */
   atmosfera: z.object({ grano: z.number().min(0).max(1), vineta: z.number().min(0).max(1) }).optional(),
+  /** Reglas de oficio que este video rompe a propósito, cada una con su motivo (CLAUDE.md §1.2). */
+  excepciones: z.array(esquemaExcepcion).optional(),
   escenas: z.array(esquemaEscena).min(1),
 });
 

@@ -38,3 +38,20 @@ export const estadosMusica = (notas: (string | undefined)[]): Set<string> => {
   for (const n of notas) for (const e of ESTADOS_MUSICA) if (n?.toLowerCase().includes(e)) vistos.add(e);
   return vistos;
 };
+
+/**
+ * Para enseñar (CLAUDE.md §8): umbrales de la escaleta. No son reglas de render; son el semáforo
+ * para reescribir un guion hasta que el espectador pueda armar párrafos.
+ */
+export const ENSENAR = {
+  /** Segundos de voz seguida, como máximo, antes de una pausa de párrafo. */
+  tramoVozMax: 25,
+  /** Pausa que cuenta como fin de párrafo (segundos). */
+  pausaParrafo: 1.0,
+  /** Palabras por frase, como máximo (se escucha, no se lee). */
+  palabrasFraseMax: 25,
+  /** Nombres y cifras nuevos por minuto de voz, como máximo. */
+  datosPorMinutoMax: 6,
+  /** Porcentaje de la escena con voz, como máximo (el resto: imagen sola, música, silencio). */
+  vozMaxPct: 80,
+} as const;

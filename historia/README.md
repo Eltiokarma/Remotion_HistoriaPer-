@@ -19,6 +19,14 @@ npx remotion render v000-quiroz out/000-quiroz.mp4    # video final (1920×1080,
 Antes del render final: `npm run validar -- 000-quiroz --final` tiene que pasar sin errores
 (exige la voz real, cero `[VERIFICAR]` en `fuentes.md` y ningún «POR COMPLETAR»).
 
+Las reglas del canal (dirección, sonido, cómo enseñar) están en **`CLAUDE.md`**: léelo antes de
+escribir un guion o una escena.
+
+Para revisar un guion sin ver el video: `npm run escaleta -- 000-quiroz` escribe
+`videos/000-quiroz/escaleta.md`, con lo que dice la voz, lo que pasa en pantalla y lo que suena
+segundo a segundo, y un semáforo por escena (voz seguida, largo de frases, datos por minuto). El
+diagnóstico del video 000 está en `videos/000-quiroz/diagnostico.md`.
+
 En el Studio hay una carpeta por video (el video entero y **cada escena sola**, para trabajarla
 sin esperar el resto) y la carpeta **catalogo** (ver «Reciclar» más abajo).
 
@@ -32,6 +40,8 @@ videos/                        ← lo que se escribe para cada video (todo en gi
     fuentes.md                 ← cada dato con su fuente y cada asset con su licencia
     glosario.txt               ← nombres propios (para los subtítulos)
     voz_provisional.txt        ← texto para la voz de prueba (TTS)
+    escaleta.md                ← generada: voz, imagen y sonido segundo a segundo
+    diagnostico.md             ← dónde se separan guion, imagen e intención
   _plantilla/                  ← de aquí sale cada video nuevo
 public/
   compartido/                  ← sirve para cualquier video
@@ -47,7 +57,7 @@ src/
   estilo/                      ← fuentes tipográficas, colores, rutas de archivos
   templates/                   ← formato largo (16:9) y el catálogo del Studio
   registro.ts                  ← lista de videos (npm run nuevo-video la actualiza)
-scripts/                       ← validar, nuevo-video, audio, texturas, voz provisional
+scripts/                       ← validar, escaleta, nuevo-video, audio, texturas, voz provisional
 ```
 
 Regla de oro: **ningún componente tiene contenido de un video escrito adentro.** Nombres,
