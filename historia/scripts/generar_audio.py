@@ -1,10 +1,14 @@
 """Música, ambientes y efectos del prototipo, sintetizados desde cero (sin muestras de terceros).
 
 Todo sale de este script, así que no hay licencias que rastrear: es material propio.
-Uso: python scripts/generar_audio.py      (necesita numpy y ffmpeg)
+Uso (necesita numpy y ffmpeg):
+    python scripts/generar_audio.py              → todo
+    python scripts/generar_audio.py compartido   → efectos y ambientes (public/compartido/audio/)
+    python scripts/generar_audio.py 000-quiroz   → la música de ese video (public/videos/000-quiroz/musica/)
 
-Escribe en public/audio/{musica,ambiente,sfx}/. Las pistas de música son más largas que
-su escena: Remotion las corta y las funde, así que siguen sirviendo si la voz real dura más.
+Las pistas de música son más largas que su escena: Remotion las corta y las funde, así que
+siguen sirviendo si la voz real dura más. Para la música de un video nuevo, agrega una función
+como musica_000_quiroz() y su entrada en MUSICA.
 """
 import subprocess
 import tempfile
@@ -15,7 +19,7 @@ import numpy as np
 
 SR = 44100
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "public" / "audio"
+PUBLIC = ROOT / "public"
 rng = np.random.default_rng(1781)
 
 
@@ -403,19 +407,13 @@ def guardar(st, ruta: Path, kbps=128, normalizar=-1.0):
     print("ok", ruta.relative_to(ROOT))
 
 
-def main():
-    m = OUT / "musica"
-    # Pistas más largas que su escena estimada: si la voz real dura más, igual alcanzan.
-    guardar(musica_presente(40, ["Dm", "Bb", "F", "C"], 2), m / "s02-presente.mp3")
-    guardar(musica_tensa(40, 3), m / "s03-tension.mp3")
-    guardar(musica_mundo(45, 4), m / "s04-mundo.mp3")
-    guardar(musica_protagonista(40), m / "s05-protagonista.mp3")
-    guardar(musica_cierre(16), m / "s06-cierre.mp3")
-    a = OUT / "ambiente"
+def compartido():
+    """Efectos y ambientes: sirven para cualquier video."""
+    a = PUBLIC / "compartido" / "audio" / "ambiente"
     for nombre, fn in [("ciudad", amb_ciudad), ("agua", amb_agua), ("mar", amb_mar),
                        ("cuarto", amb_cuarto), ("viento", amb_viento)]:
         guardar(fn(), a / f"{nombre}.mp3", kbps=96, normalizar=-3)
-    s = OUT / "sfx"
+    s = PUBLIC / "compartido" / "audio" / "sfx"
     for k in range(3):
         guardar(sfx_tecla(), s / f"tecla-{k + 1}.mp3", kbps=96, normalizar=-3)
     guardar(sfx_hoja(), s / "hoja.mp3", 96, -3)
@@ -429,5 +427,29 @@ def main():
     guardar(sfx_nota_final(), s / "nota-final.mp3", 128, -1)
 
 
+def musica_000_quiroz():
+    """Música del video 000, una pista por escena (ausente en s01)."""
+    m = PUBLIC / "videos" / "000-quiroz" / "musica"
+    guardar(musica_presente(40, ["Dm", "Bb", "F", "C"], 2), m / "s02-presente.mp3")
+    guardar(musica_tensa(40, 3), m / "s03-tension.mp3")
+    guardar(musica_mundo(45, 4), m / "s04-mundo.mp3")
+    guardar(musica_protagonista(40), m / "s05-protagonista.mp3")
+    guardar(musica_cierre(16), m / "s06-cierre.mp3")
+
+
+MUSICA = {"000-quiroz": musica_000_quiroz}
+
+
+def main(que: str = "todo"):
+    if que in ("todo", "compartido"):
+        compartido()
+    for video, fn in MUSICA.items():
+        if que in ("todo", video):
+            fn()
+    if que not in ("todo", "compartido", *MUSICA):
+        raise SystemExit(f"No sé generar «{que}». Opciones: todo, compartido, {', '.join(MUSICA)}")
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+    main(sys.argv[1] if len(sys.argv) > 1 else "todo")

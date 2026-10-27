@@ -1,6 +1,6 @@
 """Genera la voz PROVISIONAL (TTS) de un video, para probar ritmo y tiempos.
 
-Se reemplaza por la voz real: si existe public/voz/<video>/sNN.wav, esa manda.
+Se reemplaza por la voz real: si existe public/videos/<video>/voz/sNN.wav (o .mp3), esa manda.
 
 Uso: python scripts/voz_provisional.py 000-quiroz /ruta/a/es_MX-claude-high.onnx
 Necesita: pip install piper-tts, la voz de https://huggingface.co/rhasspy/piper-voices y ffmpeg.
@@ -20,7 +20,7 @@ def main(video: str, modelo: str):
         if linea.strip() and not linea.startswith("#"):
             escena, _, texto = linea.partition(":")
             textos[escena.strip()] = texto.strip()
-    out = ROOT / "public" / "voz-provisional" / video
+    out = ROOT / "public" / "videos" / video / "voz-provisional"
     out.mkdir(parents=True, exist_ok=True)
     for escena, texto in textos.items():
         with tempfile.TemporaryDirectory() as tmp:

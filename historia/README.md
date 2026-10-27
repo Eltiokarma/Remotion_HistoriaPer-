@@ -1,7 +1,8 @@
-# Historia del Altiplano — videos animados (Remotion)
+# Historia del Altiplano: videos animados (Remotion)
 
-Prototipo del video **000 — El hombre que le sacó la cuenta al Perú**: todo animado
-(tipografía, vectores y números), sin fotos ni metraje.
+Cada video es **datos** (un guion y un `escenas.json`) que se dibujan con una biblioteca de
+escenas y piezas compartidas. El prototipo es el video **000: El hombre que le sacó la cuenta
+al Perú**, todo animado (tipografía, grabados y mapas dibujados en código, sin fotos ni metraje).
 
 ## Usar
 
@@ -9,64 +10,183 @@ Necesitas Node 18 o más nuevo.
 
 ```
 npm install
-npm run studio                                   # vista previa en el navegador
-npx remotion render v000-quiroz out/v000.mp4     # video final (1920×1080, 30 fps)
+npm run studio                    # vista previa en el navegador
+npm run validar                   # revisa todos los videos contra las reglas del canal
+npx remotion render v000-quiroz out/000-quiroz.mp4    # video final (1920×1080, 30 fps)
 ```
 
-`remotion.config.ts` usa 4 hilos de render, pensado para la laptop i7-11370H.
+Antes del render final: `npm run validar -- 000-quiroz --final` tiene que pasar sin errores
+(exige la voz real, cero `[VERIFICAR]` en `fuentes.md` y ningún «POR COMPLETAR»).
 
-## Cómo está armado
+En el Studio hay una carpeta por video (el video entero y **cada escena sola**, para trabajarla
+sin esperar el resto) y la carpeta **catalogo** (ver «Reciclar» más abajo).
+
+## Cómo está ordenado
 
 ```
-videos/000-quiroz/
-  escenas.json   ← textos, duraciones, beats, paleta: todo lo que cambia va aquí
-  guion.md       ← la narración
-  fuentes.md     ← cada dato con su fuente; lo que dice [VERIFICAR] falta confirmar
+videos/                        ← lo que se escribe para cada video (todo en git)
+  000-quiroz/
+    escenas.json               ← plan de dirección: escenas, textos, cifras, beats, paleta, audio
+    guion.md                   ← la narración
+    fuentes.md                 ← cada dato con su fuente y cada asset con su licencia
+    glosario.txt               ← nombres propios (para los subtítulos)
+    voz_provisional.txt        ← texto para la voz de prueba (TTS)
+  _plantilla/                  ← de aquí sale cada video nuevo
+public/
+  compartido/                  ← sirve para cualquier video
+    fuentes/  texturas/  audio/sfx/  audio/ambiente/
+  videos/000-quiroz/           ← lo propio de un video
+    musica/  voz-provisional/  voz/ (fuera de git)  imagenes/ (fuera de git)
 src/
-  direction/     ← easings por "peso", helpers de animación y cálculo de tiempos
-  components/    ← piezas reutilizables (máquina de escribir, pila de páginas)
-  videos/v000/   ← las seis escenas de este video
-public/fonts/    ← fuentes incluidas (el render no depende de internet)
+  escenas/                     ← catálogo de escenas: cada una en su carpeta
+    Presentacion/  esquema.ts (qué datos acepta, beats, ejemplo) + Escena.tsx (la coreografía)
+  components/                  ← piezas sueltas que usan las escenas
+    graficos/  texto/  atmosfera/  audio/
+  direction/                   ← gramática: easings por peso, tiempos, reglas de ritmo
+  estilo/                      ← fuentes tipográficas, colores, rutas de archivos
+  templates/                   ← formato largo (16:9) y el catálogo del Studio
+  registro.ts                  ← lista de videos (npm run nuevo-video la actualiza)
+scripts/                       ← validar, nuevo-video, audio, texturas, voz provisional
 ```
+
+Regla de oro: **ningún componente tiene contenido de un video escrito adentro.** Nombres,
+cifras, fechas y lugares viven en `escenas.json`; los componentes solo saben dibujar.
+
+## Quiero cambiar…
+
+| Quiero cambiar…                                    | Dónde                                                                 |
+|----------------------------------------------------|-----------------------------------------------------------------------|
+| un texto, nombre, cifra o lugar en pantalla        | `videos/<id>/escenas.json` → `props` de esa escena                    |
+| cuándo pasa algo (el sello, la flecha, la barra)   | `escenas.json` → `beats` de la escena (segundos)                      |
+| cuánto dura una escena                             | la voz manda; lo que sigue después de la voz es `cola_s`              |
+| los colores del video                              | `escenas.json` → `paleta` (4 colores)                                 |
+| la música de una escena                            | `audio.musica` (archivo en `public/videos/<id>/musica/`)              |
+| el ambiente (viento, mar, ciudad…)                 | `audio.ambientes` (biblioteca en `public/compartido/audio/ambiente/`) |
+| un silencio deliberado                             | `audio.silencio` con dos beats                                        |
+| cuánto baja la música cuando hablo                 | `audio.duck_db`                                                       |
+| el grano de película o la viñeta                   | `escenas.json` → `atmosfera`                                          |
+| cómo se dibuja un gráfico (mapa, libro, repisa…)   | `src/components/graficos/<Pieza>.tsx`                                 |
+| la coreografía de una escena                       | `src/escenas/<Escena>/Escena.tsx`                                     |
+| qué datos acepta una escena                        | `src/escenas/<Escena>/esquema.ts`                                     |
+| las curvas de movimiento (solemne, pesado…)        | `src/direction/easings.ts`                                            |
+| las reglas de ritmo que revisa `validar`           | `src/direction/ritmo.ts`                                              |
+| las tipografías                                    | `src/estilo/fuentes.ts` + archivos en `public/compartido/fuentes/`    |
+| los efectos de sonido y ambientes                  | `scripts/generar_audio.py` → `npm run generar:audio`                  |
+
+Si `escenas.json` tiene un error, el Studio y `npm run validar` dicen exactamente qué campo
+está mal, por ejemplo:
+`s03 · props.cifra.hasta: Entrada inválida: se esperaba número, recibido texto`.
+
+## Reciclar
+
+### El catálogo
+
+En el Studio, la carpeta **catalogo** tiene cada escena con datos de muestra. El panel de
+props de la derecha deja cambiar textos, cifras, lugares y colores y ver el resultado al
+instante. Lo que quede bien se copia tal cual a las `props` de una escena en `escenas.json`.
+
+| Escena            | Qué hace                                                                                     | Datos principales                                  |
+|-------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------|
+| `DiasYManuscrito` | Calendario que suelta hojas cada vez más lento + manuscrito que una pluma corrige en rojo    | `fecha`, `etiqueta_dia`                            |
+| `Presentacion`    | Nombre grande, años y sello. Fondo `papel` o `piscina` (el carril se vuelve renglón)         | `nombre`, `anios`, `sello`, `fondo`                |
+| `PaisajeALibro`   | Grabado de época que se da vuelta como página: libro de cuentas, cifra que se infla, flecha  | `rotulo`, `concepto`, `cifra.desde/hasta`, `estado`|
+| `MapaRutas`       | Carta antigua con rutas desde un origen; se apaga, queda una pregunta y una barra            | `origen`, `destinos`, `pregunta`, `barra`          |
+| `SerieCapitulos`  | Repisa con un libro por época, de grosor proporcional a sus años, y línea de tiempo          | `capitulos[]`, `etiqueta_hoy`                      |
+| `Cierre`          | El expediente se cierra, fundido a negro y tarjeta del próximo episodio                      | `proximo.anio`, `proximo.titulo`                   |
+
+Los beats de cada escena (y qué hace cada uno) están descritos en su `esquema.ts`.
+
+### Las piezas sueltas
+
+Para una escena nueva no hace falta empezar de cero: estas piezas reciben todo por props y se
+pueden combinar.
+
+- **Gráficos** (`components/graficos/`): `Calendario` (hojas que caen en 3D), `PilaDePaginas`
+  (manuscrito con correcciones), `Pluma`, `Sello` (sello de goma gastado), `Piscina`,
+  `GrabadoGuanero` (grabado a buril: mar, islas, aves, fragata), `LibroContable`, `Mapa`
+  (Natural Earth, rutas, sellos de lacre), `RosaDeLosVientos`, `Barra`, `LomosDeLibro`, `Carpeta`.
+- **Texto** (`components/texto/`): `MaquinaDeEscribir`, `Odometro` (cifras que ruedan con
+  acarreo real), `Tarjeta`, `Ornamento`.
+- **Atmósfera** (`components/atmosfera/`): `Papel` (textura y bordes envejecidos), `Luz` (luz de
+  lámpara), `Atmosfera` (grano de película y viñeta, ya puesta en todo video).
+- **SVG** (`components/graficos/svg.tsx`): filtros de tinta y desgaste, bordes de papel,
+  escritura asémica, renglones tipeados.
+- **Dirección** (`direction/`): `tramo()` (0→1 entre dos segundos, con el peso que digas),
+  `peso` (solemne, pesado, natural, ligero, tenso), `azar()` (aleatorio con semilla: el mismo
+  dibujo en cada render).
+
+### Una escena nueva
+
+1. Crea `src/escenas/MiEscena/esquema.ts` con `esquema` (zod), `beats` (descripción de cada
+   uno) y `ejemplo` (datos de muestra). Copia uno existente como modelo.
+2. Crea `src/escenas/MiEscena/Escena.tsx`: recibe `escena`, `props` y `video`.
+3. Regístrala en `src/escenas/esquemas.ts` y `src/escenas/index.ts`. Aparece sola en el catálogo.
+
+### Un video nuevo
+
+```
+npm run nuevo-video -- 001-reformas "El fracaso de las reformas coloniales"
+npm run nuevo-video -- 001-reformas "El fracaso…" --desde 000-quiroz   # parte de las escenas de otro video
+```
+
+Crea `videos/001-reformas/` desde la plantilla, las carpetas de `public/videos/001-reformas/`
+y lo agrega al Studio. Lo que falta llenar dice «POR COMPLETAR».
 
 ## La voz manda
 
-Por ahora suena una **voz provisional** (TTS, en `public/voz-provisional/`), solo para probar
-ritmo y tiempos. Para reemplazarla, graba cada escena por separado y guárdala en
-`public/voz/000-quiroz/s01.wav`, `s02.wav`, … (esa carpeta está fuera de git). No hay que tocar
-nada más: la voz real gana sola. Al abrir el Studio o renderizar:
+Por ahora suena una **voz provisional** (TTS, en `public/videos/000-quiroz/voz-provisional/`),
+solo para probar ritmo y tiempos. Para reemplazarla, graba cada escena por separado y guárdala
+en `public/videos/000-quiroz/voz/s01.wav`, `s02.wav`… (esa carpeta está fuera de git). No hay
+que tocar nada más: la voz real gana sola.
 
-- si existe la voz de una escena (la real o, si falta, la provisional), **la escena dura lo que
-  dura la voz** más su `cola_s`;
-- si no hay ninguna, usa `duracion_s` de `escenas.json`.
+- Cada escena dura **lo que dura su voz + `cola_s`** (si no hay voz: `duracion_s` + `cola_s`).
+- `duracion_s` son los segundos de narración estimados, y los `beats` están medidos sobre ese
+  tiempo. Cuando llega la voz real, los beats se estiran en la misma proporción. La cola no los
+  mueve.
+- Para el corte final, cuadra cada beat con la palabra justa (por ejemplo `s02.beats.sello`
+  cuando dices "1974") y pon `"beats_ajustados": true` en esa escena para que ya no se estiren.
 
-Mientras tanto, los `beats` (momentos clave, en segundos) se escalan en proporción a la nueva
-duración. Para el corte final, cuádralos a mano con la palabra justa —por ejemplo
-`s02.beats.sello` en el momento en que dices "1974"— y pon `"beats_ajustados": true` en esa
-escena para que ya no se escalen.
+La voz provisional sale de `videos/<id>/voz_provisional.txt` con
+`python scripts/voz_provisional.py 000-quiroz <voz.onnx>` (necesita `piper-tts` y ffmpeg).
 
 ## Música, ambiente y efectos
 
-Todo el audio sale de `scripts/generar_audio.py` (síntesis con numpy, sin muestras de terceros):
-`python scripts/generar_audio.py` lo vuelve a generar en `public/audio/`.
+Todo el audio es sintetizado con `scripts/generar_audio.py` (numpy, sin muestras de terceros):
+
+```
+npm run generar:audio                     # todo
+npm run generar:audio -- compartido       # efectos y ambientes
+npm run generar:audio -- 000-quiroz       # la música de ese video
+```
 
 En `escenas.json`, cada escena tiene su bloque `audio`:
 
 - `musica` y `ambientes`: pista, `nivel` (0–1) y opcionalmente `desde_beat` / `hasta_beat`
-  (entran o salen con un fundido en ese momento clave).
-- `silencio`: música y ambiente se callan del todo entre dos beats (el silencio deliberado
-  antes del dato fuerte, en s04).
+  (entran o salen con un fundido en ese beat).
+- `silencio`: música y ambiente se callan del todo entre dos beats.
 - `duck_db`: cuánto baja la música cuando habla la voz (se mide la voz cuadro a cuadro).
 
-Entre escenas, el sonido de la siguiente entra 12 frames antes que su imagen y el de la
-anterior se queda 15 frames (cortes J/L). Los efectos (teclas, hojas, sello, pluma, campanas,
-golpe…) están en cada escena y caen en sus beats, así que se mueven solos si cambian los tiempos.
+Entre escenas, el sonido de la siguiente entra 12 frames antes que su imagen y el de la anterior
+se queda 15 frames (cortes J/L); `"transicion_salida": "duro"` los quita. Los efectos (teclas,
+hojas, sello, pluma, campanas, golpe…) están en cada escena y caen en sus beats, así que se
+mueven solos si cambian los tiempos.
 
-Estados de la música: s01 ausente · s02–s04 presente · silencio · golpe en "la mitad" ·
-s05 protagonista · s06 se apaga.
+## Lo que revisa `npm run validar`
 
-La voz provisional se genera con `scripts/voz_provisional.py` desde
-`videos/000-quiroz/voz_provisional.txt` (necesita `piper-tts` y la voz `es_MX-claude-high`).
+Las reglas del canal (CLAUDE.md §3–§6), además de la forma del JSON:
+
+- **Errores**: campos mal puestos; beats que no existen o que caen después del final; música o
+  ambientes que no están; tres escenas seguidas que duran casi lo mismo (±10 %); curva de
+  intensidad plana (desviación < 1); video que no está en `src/registro.ts`.
+- **Avisos** (errores con `--final`): sin silencio deliberado; la música no pasa por ausente,
+  presente y protagonista; `[VERIFICAR]` en `fuentes.md`; «POR COMPLETAR»; voz provisional.
+- **Avisos**: ducking fuera de −12 a −18 dB; silencio fuera de 1.5–3 s; pico de intensidad
+  muy al principio; beats que la escena no usa; falta `glosario.txt`.
+
+## Render
+
+`remotion.config.ts` usa 4 hilos (laptop i7-11370H; nunca 8). El grano de película se nota en
+el peso del archivo final: es normal.
 
 ## Pendiente
 

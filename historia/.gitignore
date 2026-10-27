@@ -1,4 +1,5 @@
 node_modules/
 out/
-public/assets/
-public/voz/
+# La voz real y las imágenes pesadas de cada video no van a git (ver README).
+public/videos/*/voz/
+public/videos/*/imagenes/

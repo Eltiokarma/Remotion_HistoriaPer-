@@ -1,0 +1,4 @@
+# Texto para la voz PROVISIONAL (TTS). Se reemplaza por la voz de Gerson.
+# Una línea por escena. Números escritos en palabras para que el TTS los lea bien. [PAUSA 2] = 2 s de silencio.
+s01: [narración de la escena uno]
+s02: [narración del cierre]

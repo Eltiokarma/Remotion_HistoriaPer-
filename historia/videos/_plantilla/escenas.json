@@ -1,0 +1,87 @@
+{
+  "id": "{{ID}}",
+  "titulo": "{{TITULO}}",
+  "formato": "largo",
+  "fps": 30,
+  "ancho": 1920,
+  "alto": 1080,
+  "paleta": {
+    "fondo": "#1b1a17",
+    "papel": "#e8e2d4",
+    "ocre": "#c2a878",
+    "rojo": "#8c2f1b"
+  },
+  "pregunta_central": "[POR COMPLETAR: la pregunta que se abre en los primeros 15 s]",
+  "atmosfera": {
+    "grano": 0.1,
+    "vineta": 0.45
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "seccion": "gancho",
+      "componente": "Presentacion",
+      "duracion_s": 8,
+      "cola_s": 1.2,
+      "intensidad": 2,
+      "cambio": "[POR COMPLETAR: de qué a qué pasa el espectador en esta escena]",
+      "intencion": "[POR COMPLETAR: por qué esta imagen y no otra]",
+      "transicion_salida": "corte",
+      "beats": {
+        "nombre": 1,
+        "sello": 5.5
+      },
+      "props": {
+        "fondo": "papel",
+        "nombre": "[POR COMPLETAR: NOMBRE]",
+        "anios": "[POR COMPLETAR: años]",
+        "sello": {
+          "centro": "[POR COMPLETAR]",
+          "fecha": "[POR COMPLETAR]"
+        }
+      },
+      "audio": {
+        "musica": null,
+        "ambientes": [
+          {
+            "nombre": "viento",
+            "nivel": 0.5
+          }
+        ]
+      },
+      "estado_musica": "ausente"
+    },
+    {
+      "id": "s02",
+      "seccion": "cierre",
+      "componente": "Cierre",
+      "duracion_s": 6,
+      "cola_s": 4,
+      "intensidad": 4,
+      "cambio": "[POR COMPLETAR: con qué se queda el espectador]",
+      "transicion_salida": "corte",
+      "beats": {
+        "cerrar": 1.5,
+        "negro": 5.6,
+        "tarjeta": 6.4
+      },
+      "props": {
+        "proximo": {
+          "etiqueta": "Próximo",
+          "anio": "[POR COMPLETAR]",
+          "titulo": "[POR COMPLETAR: título del próximo video]"
+        }
+      },
+      "audio": {
+        "musica": null,
+        "ambientes": [
+          {
+            "nombre": "cuarto",
+            "nivel": 0.4
+          }
+        ]
+      },
+      "estado_musica": "ausente"
+    }
+  ]
+}
