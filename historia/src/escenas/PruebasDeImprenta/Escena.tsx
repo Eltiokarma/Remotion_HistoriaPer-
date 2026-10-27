@@ -16,6 +16,8 @@ import type { esquema } from './esquema';
 
 type P = z.infer<typeof esquema>;
 const DUR_CORR = 9, TRAZOS = 9, CPS = 18;
+/** Cuánto baja la cámara por la página: unas líneas, o hasta la segunda frase si la hay. */
+const BAJA_CORTO = 130, BAJA_SEGUNDA = 560;
 
 /** Un nombre compuesto («Sloan-Kettering») no se corta en el guion al final de la línea. */
 const sinCortar = (s: string) =>
@@ -53,6 +55,8 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
   const pagina = tramo(t, tCita - 0.1, 0.9, 'natural');
   const zoomCita = mix(1, 1.08, tramo(t, tCita, tCorte1 - tCita, 'natural'));
   const baja = tramo(t, tAbajo, 2.6, 'pesado');
+  // con segunda frase, el foco pasa de la primera a ella mientras la cámara baja
+  const foco = props.segunda ? tramo(t, tAbajo + 0.5, 2.2, 'natural') : 0;
   // —— D/E: sellos
   const golpe = (tb: number) => (t < tb ? 0 : spring({ frame: frame - tb * fps, fps, config: { damping: 13, mass: 1.3, stiffness: 210 } }));
   const temblor = (tb: number) => (t > tb + 0.08 && t < tb + 0.26 ? Math.sin(frame * 3.3) * 3 : 0);
@@ -83,7 +87,7 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
           {pagina > 0 ? (
             <AbsoluteFill style={{ opacity: pagina }}>
               <Papel color={pal.papel} envejecido={0.28}>
-                <AbsoluteFill style={{ transform: `scale(${zoomCita * mix(1.12, 1, pagina)}) translateY(${-130 * baja}px)`, transformOrigin: '50% 45%' }}>
+                <AbsoluteFill style={{ transform: `scale(${zoomCita * mix(1.12, 1, pagina)}) translateY(${-(props.segunda ? BAJA_SEGUNDA : BAJA_CORTO) * baja}px)`, transformOrigin: '50% 45%' }}>
                   <div style={{ position: 'absolute', left: 410, top: 96, width: 1100, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <div style={{ fontFamily: fuente.libro, fontSize: 30, letterSpacing: '0.42em', marginRight: '-0.42em', color: alfa(pal.fondo, 0.7), fontVariant: 'small-caps' }}>
                       {props.seccion.toLowerCase()}
@@ -91,14 +95,26 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
                     <div style={{ width: 80, height: 1, background: alfa(pal.fondo, 0.4), margin: '22px 0 46px' }} />
                     <Renglones ancho={1100} lineas={5} interlinea={52} alto={13} color={pal.fondo} opacidad={0.28} semilla={35} style={{ filter: 'blur(1.2px)' }} />
                     <div style={{ fontFamily: fuente.libro, fontSize: 62, lineHeight: 1.42, textAlign: 'center', margin: '34px 0 40px', maxWidth: 1080,
-                      textWrap: 'balance', opacity: tramo(t, tCita + 0.4, 1.2, 'natural') }}>
+                      textWrap: 'balance', opacity: tramo(t, tCita + 0.4, 1.2, 'natural') * (1 - 0.45 * foco), filter: `blur(${2 * foco}px)` }}>
                       <Cita texto={props.cita.texto} subrayado={props.cita.subrayado} k={tramo(t, tSub, 1.1, 'natural')} color={pal.fondo} rojo={pal.rojo} />
                     </div>
-                    <Renglones ancho={1100} lineas={9} interlinea={52} alto={13} color={pal.fondo} opacidad={0.28} semilla={36} style={{ filter: 'blur(1.2px)' }} />
+                    {props.segunda ? (
+                      <>
+                        <Renglones ancho={1100} lineas={2} interlinea={52} alto={13} color={pal.fondo} opacidad={0.28} semilla={36} style={{ filter: 'blur(1.2px)' }} />
+                        {/* impresa desde siempre, pero ilegible hasta que la cámara llega: la imagen no se adelanta a la voz */}
+                        <div style={{ fontFamily: fuente.libro, fontSize: 54, lineHeight: 1.42, textAlign: 'center', margin: '30px 0 34px', maxWidth: 1040,
+                          textWrap: 'balance', color: pal.fondo, opacity: mix(0.2, 1, foco), filter: `blur(${mix(7, 0, foco)}px)` }}>
+                          {sinCortar(props.segunda.texto)}
+                        </div>
+                        <Renglones ancho={1100} lineas={4} interlinea={52} alto={13} color={pal.fondo} opacidad={0.28} semilla={37} style={{ filter: 'blur(1.2px)' }} />
+                      </>
+                    ) : (
+                      <Renglones ancho={1100} lineas={9} interlinea={52} alto={13} color={pal.fondo} opacidad={0.28} semilla={36} style={{ filter: 'blur(1.2px)' }} />
+                    )}
                   </div>
                   {/* «unas líneas más abajo»: una marca del autor al margen */}
                   <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0, overflow: 'visible' }}>
-                    <path d="M1546 905 l 9 13 l 18 -30" fill="none" stroke={pal.rojo} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round"
+                    <path d={props.segunda ? 'M1546 1040 l 9 13 l 18 -30' : 'M1546 905 l 9 13 l 18 -30'} fill="none" stroke={pal.rojo} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round"
                       pathLength={1} strokeDasharray={1} strokeDashoffset={1 - tramo(t, tAbajo + 1.6, 0.5, 'ligero')} opacity={0.85} />
                   </svg>
                 </AbsoluteFill>

@@ -1,50 +1,50 @@
 {
  "s01": {
-  "duracion": 42.81,
+  "duracion": 41.89,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 1.18,
+    "hasta": 1.19,
     "texto": "Nueva York."
    },
    {
-    "desde": 1.63,
-    "hasta": 6.01,
-    "texto": "En un hospital, un historiador peruano corrige pruebas de imprenta."
+    "desde": 1.64,
+    "hasta": 6.94,
+    "texto": "Un historiador peruano revisa, con minuciosidad, las pruebas de imprenta."
    },
    {
-    "desde": 6.46,
-    "hasta": 11.49,
-    "texto": "Es la traducción al español de su último libro, el que más trabajo le costó."
+    "desde": 7.39,
+    "hasta": 10.49,
+    "texto": "Es la traducción al español de su último libro."
    },
    {
-    "desde": 11.94,
-    "hasta": 14.76,
+    "desde": 10.94,
+    "hasta": 13.83,
     "texto": "No le queda mucho tiempo, y lo sabe."
    },
    {
-    "desde": 15.21,
-    "hasta": 25.12,
+    "desde": 14.28,
+    "hasta": 24.15,
     "texto": "En los agradecimientos escribe una línea que casi nadie lee: les da las gracias a sus médicos por alargar estos días, para poder completar la tarea."
    },
    {
-    "desde": 25.57,
-    "hasta": 32.36,
+    "desde": 24.6,
+    "hasta": 31.59,
     "texto": "Unas líneas más abajo celebra la reciente llegada a este mundo de nuestro precioso Alfonsito: su hijo."
    },
    {
-    "desde": 33.41,
-    "hasta": 35.47,
+    "desde": 32.64,
+    "hasta": 34.63,
     "texto": "Murió en enero de dos mil trece."
    },
    {
-    "desde": 36.32,
-    "hasta": 37.99,
+    "desde": 35.48,
+    "hasta": 37.1,
     "texto": "El libro salió en mayo."
    },
    {
-    "desde": 39.24,
-    "hasta": 42.81,
+    "desde": 38.35,
+    "hasta": 41.89,
     "texto": "Este video es sobre ese hombre, y sobre lo que encontró."
    }
   ],
@@ -54,403 +54,379 @@
     "Nueva"
    ],
    [
-    0.74,
+    0.75,
     "York."
    ],
    [
-    1.63,
-    "En"
+    1.64,
+    "Un"
    ],
    [
-    1.83,
-    "un"
-   ],
-   [
-    2.02,
-    "hospital,"
-   ],
-   [
-    2.66,
-    "un"
-   ],
-   [
-    2.86,
+    1.86,
     "historiador"
    ],
    [
-    3.63,
+    2.72,
     "peruano"
    ],
    [
-    4.14,
-    "corrige"
+    3.29,
+    "revisa,"
    ],
    [
-    4.66,
-    "pruebas"
+    3.86,
+    "con"
    ],
    [
-    5.17,
-    "de"
+    4.15,
+    "minuciosidad,"
    ],
    [
-    5.37,
-    "imprenta."
-   ],
-   [
-    6.46,
-    "Es"
-   ],
-   [
-    6.66,
-    "la"
-   ],
-   [
-    6.85,
-    "traducción"
-   ],
-   [
-    7.57,
-    "al"
-   ],
-   [
-    7.77,
-    "español"
-   ],
-   [
-    8.29,
-    "de"
-   ],
-   [
-    8.48,
-    "su"
-   ],
-   [
-    8.68,
-    "último"
-   ],
-   [
-    9.14,
-    "libro,"
-   ],
-   [
-    9.59,
-    "el"
-   ],
-   [
-    9.79,
-    "que"
-   ],
-   [
-    10.05,
-    "más"
-   ],
-   [
-    10.31,
-    "trabajo"
-   ],
-   [
-    10.83,
-    "le"
-   ],
-   [
-    11.03,
-    "costó."
-   ],
-   [
-    11.94,
-    "No"
-   ],
-   [
-    12.17,
-    "le"
-   ],
-   [
-    12.39,
-    "queda"
-   ],
-   [
-    12.85,
-    "mucho"
-   ],
-   [
-    13.31,
-    "tiempo,"
-   ],
-   [
-    13.92,
-    "y"
-   ],
-   [
-    14.07,
-    "lo"
-   ],
-   [
-    14.3,
-    "sabe."
-   ],
-   [
-    15.21,
-    "En"
-   ],
-   [
-    15.41,
-    "los"
-   ],
-   [
-    15.67,
-    "agradecimientos"
-   ],
-   [
-    16.74,
-    "escribe"
-   ],
-   [
-    17.27,
-    "una"
-   ],
-   [
-    17.54,
-    "línea"
-   ],
-   [
-    17.94,
-    "que"
-   ],
-   [
-    18.2,
-    "casi"
-   ],
-   [
-    18.53,
-    "nadie"
-   ],
-   [
-    18.93,
-    "lee:"
-   ],
-   [
-    19.27,
-    "les"
-   ],
-   [
-    19.53,
-    "da"
-   ],
-   [
-    19.73,
+    5.15,
     "las"
    ],
    [
-    20.0,
-    "gracias"
+    5.44,
+    "pruebas"
    ],
    [
-    20.53,
-    "a"
-   ],
-   [
-    20.66,
-    "sus"
-   ],
-   [
-    20.93,
-    "médicos"
-   ],
-   [
-    21.46,
-    "por"
-   ],
-   [
-    21.73,
-    "alargar"
-   ],
-   [
-    22.26,
-    "estos"
-   ],
-   [
-    22.66,
-    "días,"
-   ],
-   [
-    23.06,
-    "para"
-   ],
-   [
-    23.39,
-    "poder"
-   ],
-   [
-    23.79,
-    "completar"
-   ],
-   [
-    24.46,
-    "la"
-   ],
-   [
-    24.66,
-    "tarea."
-   ],
-   [
-    25.57,
-    "Unas"
-   ],
-   [
-    25.9,
-    "líneas"
-   ],
-   [
-    26.36,
-    "más"
-   ],
-   [
-    26.63,
-    "abajo"
-   ],
-   [
-    27.02,
-    "celebra"
-   ],
-   [
-    27.55,
-    "la"
-   ],
-   [
-    27.75,
-    "reciente"
-   ],
-   [
-    28.34,
-    "llegada"
-   ],
-   [
-    28.87,
-    "a"
-   ],
-   [
-    29.0,
-    "este"
-   ],
-   [
-    29.33,
-    "mundo"
-   ],
-   [
-    29.73,
+    6.01,
     "de"
    ],
    [
-    29.92,
-    "nuestro"
+    6.22,
+    "imprenta."
    ],
    [
-    30.45,
-    "precioso"
+    7.39,
+    "Es"
    ],
    [
-    31.05,
-    "Alfonsito:"
+    7.58,
+    "la"
    ],
    [
-    31.77,
+    7.78,
+    "traducción"
+   ],
+   [
+    8.49,
+    "al"
+   ],
+   [
+    8.68,
+    "español"
+   ],
+   [
+    9.2,
+    "de"
+   ],
+   [
+    9.39,
     "su"
    ],
    [
-    31.97,
-    "hijo."
+    9.58,
+    "último"
    ],
    [
-    33.41,
-    "Murió"
+    10.04,
+    "libro."
    ],
    [
-    33.79,
-    "en"
+    10.94,
+    "No"
    ],
    [
-    33.97,
-    "enero"
+    11.17,
+    "le"
    ],
    [
-    34.35,
-    "de"
+    11.41,
+    "queda"
    ],
    [
-    34.54,
-    "dos"
+    11.88,
+    "mucho"
    ],
    [
-    34.78,
-    "mil"
+    12.34,
+    "tiempo,"
    ],
    [
-    35.03,
-    "trece."
-   ],
-   [
-    36.32,
-    "El"
-   ],
-   [
-    36.53,
-    "libro"
-   ],
-   [
-    36.95,
-    "salió"
-   ],
-   [
-    37.36,
-    "en"
-   ],
-   [
-    37.57,
-    "mayo."
-   ],
-   [
-    39.24,
-    "Este"
-   ],
-   [
-    39.55,
-    "video"
-   ],
-   [
-    39.93,
-    "es"
-   ],
-   [
-    40.12,
-    "sobre"
-   ],
-   [
-    40.49,
-    "ese"
-   ],
-   [
-    40.74,
-    "hombre,"
-   ],
-   [
-    41.24,
+    12.97,
     "y"
    ],
    [
-    41.37,
-    "sobre"
-   ],
-   [
-    41.74,
+    13.13,
     "lo"
    ],
    [
-    41.93,
+    13.36,
+    "sabe."
+   ],
+   [
+    14.28,
+    "En"
+   ],
+   [
+    14.48,
+    "los"
+   ],
+   [
+    14.74,
+    "agradecimientos"
+   ],
+   [
+    15.8,
+    "escribe"
+   ],
+   [
+    16.33,
+    "una"
+   ],
+   [
+    16.6,
+    "línea"
+   ],
+   [
+    16.99,
     "que"
    ],
    [
-    42.18,
+    17.26,
+    "casi"
+   ],
+   [
+    17.59,
+    "nadie"
+   ],
+   [
+    17.99,
+    "lee:"
+   ],
+   [
+    18.32,
+    "les"
+   ],
+   [
+    18.58,
+    "da"
+   ],
+   [
+    18.78,
+    "las"
+   ],
+   [
+    19.05,
+    "gracias"
+   ],
+   [
+    19.58,
+    "a"
+   ],
+   [
+    19.71,
+    "sus"
+   ],
+   [
+    19.97,
+    "médicos"
+   ],
+   [
+    20.5,
+    "por"
+   ],
+   [
+    20.77,
+    "alargar"
+   ],
+   [
+    21.3,
+    "estos"
+   ],
+   [
+    21.7,
+    "días,"
+   ],
+   [
+    22.09,
+    "para"
+   ],
+   [
+    22.43,
+    "poder"
+   ],
+   [
+    22.82,
+    "completar"
+   ],
+   [
+    23.49,
+    "la"
+   ],
+   [
+    23.68,
+    "tarea."
+   ],
+   [
+    24.6,
+    "Unas"
+   ],
+   [
+    24.94,
+    "líneas"
+   ],
+   [
+    25.41,
+    "más"
+   ],
+   [
+    25.68,
+    "abajo"
+   ],
+   [
+    26.09,
+    "celebra"
+   ],
+   [
+    26.63,
+    "la"
+   ],
+   [
+    26.84,
+    "reciente"
+   ],
+   [
+    27.45,
+    "llegada"
+   ],
+   [
+    27.99,
+    "a"
+   ],
+   [
+    28.13,
+    "este"
+   ],
+   [
+    28.47,
+    "mundo"
+   ],
+   [
+    28.87,
+    "de"
+   ],
+   [
+    29.08,
+    "nuestro"
+   ],
+   [
+    29.62,
+    "precioso"
+   ],
+   [
+    30.23,
+    "Alfonsito:"
+   ],
+   [
+    30.98,
+    "su"
+   ],
+   [
+    31.18,
+    "hijo."
+   ],
+   [
+    32.64,
+    "Murió"
+   ],
+   [
+    33.0,
+    "en"
+   ],
+   [
+    33.18,
+    "enero"
+   ],
+   [
+    33.54,
+    "de"
+   ],
+   [
+    33.73,
+    "dos"
+   ],
+   [
+    33.97,
+    "mil"
+   ],
+   [
+    34.21,
+    "trece."
+   ],
+   [
+    35.48,
+    "El"
+   ],
+   [
+    35.69,
+    "libro"
+   ],
+   [
+    36.09,
+    "salió"
+   ],
+   [
+    36.49,
+    "en"
+   ],
+   [
+    36.69,
+    "mayo."
+   ],
+   [
+    38.35,
+    "Este"
+   ],
+   [
+    38.66,
+    "video"
+   ],
+   [
+    39.03,
+    "es"
+   ],
+   [
+    39.22,
+    "sobre"
+   ],
+   [
+    39.59,
+    "ese"
+   ],
+   [
+    39.84,
+    "hombre,"
+   ],
+   [
+    40.34,
+    "y"
+   ],
+   [
+    40.46,
+    "sobre"
+   ],
+   [
+    40.83,
+    "lo"
+   ],
+   [
+    41.02,
+    "que"
+   ],
+   [
+    41.27,
     "encontró."
    ]
   ]

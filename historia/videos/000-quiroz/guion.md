@@ -14,12 +14,13 @@
 **Frames:** 0–1173 (39,1 s)
 
 **VO:**
-Nueva York. En un hospital, un historiador peruano corrige pruebas de imprenta. Es la traducción al español de su último libro, el que más trabajo le costó. No le queda mucho tiempo, y lo sabe. En los agradecimientos escribe una línea que casi nadie lee: les da las gracias a sus médicos por alargar estos días, para poder completar la tarea. Unas líneas más abajo celebra «la reciente llegada a este mundo de nuestro precioso Alfonsito»: su hijo. Murió en enero de 2013. El libro salió en mayo. Este video es sobre ese hombre, y sobre lo que encontró.
+Nueva York. Un historiador peruano revisa, con minuciosidad, las pruebas de imprenta. Es la traducción al español de su último libro. No le queda mucho tiempo, y lo sabe. En los agradecimientos escribe una línea que casi nadie lee: les da las gracias a sus médicos por alargar estos días, para poder completar la tarea. Unas líneas más abajo celebra «la reciente llegada a este mundo de nuestro precioso Alfonsito»: su hijo. Murió en enero de 2013. El libro salió en mayo. Este video es sobre ese hombre, y sobre lo que encontró.
 
 **Visual (Remotion):**
-- Fondo negro. Ficha mono arriba a la izquierda, escrita letra por letra: `NUEVA YORK · MEMORIAL SLOAN-KETTERING`.
+- Fondo negro. Ficha mono arriba a la izquierda, escrita letra por letra: `NUEVA YORK · 2012`.
 - Al centro, una pila de pruebas de imprenta en SVG. Sobre la hoja de arriba se dibujan correcciones rojas (`strokeDashoffset` animado): tachones, una flecha, un "ok".
 - La frase de los médicos aparece compuesta como texto de libro, con zoom lento (`scale` de 1 a 1,08). Las palabras "alargar estos días" se subrayan en rojo.
+- Unas líneas más abajo, en la misma página, la línea de Alfonsito: impresa pero desenfocada hasta que la cámara baja y el foco pasa a ella.
 - "Enero 2013" y "Mayo 2013" entran como dos sellos de fecha, separados por un corte seco.
 - **Sonido:** silencio casi total, solo papel y un lápiz. Sin música hasta el final de la escena.
 

@@ -102,7 +102,7 @@ instante. Lo que quede bien se copia tal cual a las `props` de una escena en `es
 |-------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------|
 | Escena              | Qué hace                                                                                                   | En 000 |
 |---------------------|------------------------------------------------------------------------------------------------------------|--------|
-| `PruebasDeImprenta` | Ficha a máquina, pruebas con marcas de corrector, una frase de libro subrayada, dos sellos con corte seco  | s01    |
+| `PruebasDeImprenta` | Ficha a máquina, pruebas con marcas de corrector, una frase de libro subrayada (y otra más abajo que entra en foco), dos sellos con corte seco | s01    |
 | `Presentacion`      | Nombre grande y años; fondo `papel` o `piscina` (el carril se vuelve renglón); sello y/o palabra final sola | s02    |
 | `TiempoLargo`       | Sello sobre una lista, muro de afiches de época (uno se despega), volante y las tres capas de Braudel       | s03    |
 | `MecanismoDeuda`    | Islas con sacos, plata al Estado, vales consolidados, lo prometido en punteado, vale que se infla, caudal a bolsillos, frase tachada, tesis → libro | s04 |

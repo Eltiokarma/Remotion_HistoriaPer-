@@ -31,7 +31,7 @@
       "id": "s01",
       "seccion": "gancho",
       "componente": "PruebasDeImprenta",
-      "duracion_s": 42.81,
+      "duracion_s": 41.89,
       "cola_s": 2.5,
       "intensidad": 3,
       "cambio": "de un desconocido a un hombre que corrige su libro contra el tiempo",
@@ -39,22 +39,25 @@
       "transicion_salida": "corte",
       "beats": {
         "ficha": 0.4,
-        "correcciones": 4.7,
-        "cita": 15.2,
-        "subrayado": 21.7,
-        "abajo": 25.6,
-        "corte1": 33.4,
-        "sello1": 34.0,
-        "corte2": 36.3,
-        "sello2": 37.6,
-        "final": 39.2
+        "correcciones": 3.3,
+        "cita": 14.3,
+        "subrayado": 20.7,
+        "abajo": 24.6,
+        "corte1": 32.6,
+        "sello1": 33.2,
+        "corte2": 35.5,
+        "sello2": 36.7,
+        "final": 38.3
       },
       "props": {
-        "ficha": "NUEVA YORK · MEMORIAL SLOAN-KETTERING",
+        "ficha": "NUEVA YORK · 2012",
         "seccion": "Agradecimientos",
         "cita": {
           "texto": "A mis médicos del hospital Memorial Sloan-Kettering les agradezco inmensamente el alargar estos días para poder completar la tarea.",
           "subrayado": "alargar estos días"
+        },
+        "segunda": {
+          "texto": "La reciente llegada a este mundo de nuestro precioso Alfonsito ha colocado todo esto en su debida perspectiva vital."
         },
         "sellos": [
           "ENERO 2013",
@@ -69,7 +72,7 @@
         },
         {
           "beat": "abajo",
-          "movimiento": "baja unas líneas por la página",
+          "movimiento": "baja por la página hasta la línea de Alfonsito; el foco pasa de una frase a la otra",
           "motivo": "«unas líneas más abajo» celebra la llegada de su hijo"
         },
         {
@@ -86,8 +89,8 @@
         },
         "ambientes": [
           {
-            "nombre": "hospital",
-            "nivel": 0.7
+            "nombre": "cuarto",
+            "nivel": 0.6
           }
         ],
         "duck_db": -16
