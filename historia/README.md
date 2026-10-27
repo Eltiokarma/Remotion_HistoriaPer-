@@ -3,6 +3,10 @@
 Prototipo del video **000 — El hombre que le sacó la cuenta al Perú**: todo animado
 (tipografía, vectores y números), sin fotos ni metraje.
 
+El criterio de dirección (guion, voz, imagen, sonido y el pase final contra lo genérico) está en
+[`.claude/skills/direccion-historia/SKILL.md`](../.claude/skills/direccion-historia/SKILL.md).
+Claude Code lo carga como skill del proyecto (`/direccion-historia`).
+
 ## Usar
 
 Necesitas Node 18 o más nuevo.
