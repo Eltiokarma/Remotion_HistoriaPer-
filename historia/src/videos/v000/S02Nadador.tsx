@@ -1,5 +1,6 @@
 import { AbsoluteFill, interpolateColors, spring, useCurrentFrame } from 'remotion';
 import { beat, mix, tramo } from '../../direction/anim';
+import { Sfx } from '../../components/Sfx';
 import { fuente } from '../../fonts';
 import { texto, type EscenaProps } from './comun';
 
@@ -10,11 +11,14 @@ export const S02Nadador: React.FC<EscenaProps> = ({ escena, paleta, fps }) => {
   const t = frame / fps;
   const b = escena.beats;
 
-  // El carril corre y se va frenando (como quien termina un largo).
-  const avance = tramo(t, 0, 4.2, 'natural');
-  const dx = -2600 * avance;
+  // El carril corre parejo mientras nada, y se frena cuando "de grande" deja el agua.
+  const tFrenar = beat(b, 'frenar', 3.2), tRenglon = beat(b, 'renglon', 3.0);
+  const V = 620, FRENO = 1.6;
+  // Frenado parejo que arranca a la misma velocidad que traía (sin tirón): x = v·F/2·(1-(1-u)²).
+  const u = Math.max(0, Math.min(1, (t - tFrenar) / FRENO));
+  const dx = -(V * Math.min(t, tFrenar) + V * (FRENO / 2) * (1 - (1 - u) ** 2));
   // Al frenar, las boyas se funden en una línea: el carril se vuelve renglón.
-  const renglon = tramo(t, 3.0, 0.9, 'solemne');
+  const renglon = tramo(t, tRenglon, 0.9, 'solemne');
   const fondo = interpolateColors(renglon, [0, 1], [paleta.fondo, paleta.papel]);
   const margen = tramo(t, 4.0, 0.9, 'pesado');
 
@@ -49,14 +53,16 @@ export const S02Nadador: React.FC<EscenaProps> = ({ escena, paleta, fps }) => {
       </svg>
 
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', paddingBottom: 60 }}>
-        <div style={{ fontFamily: fuente.titulo, fontWeight: 700, fontSize: 112, color: paleta.fondo, letterSpacing: '0.02em', display: 'flex' }}>
+        <div style={{ fontFamily: fuente.titulo, fontWeight: 700, fontSize: 112, letterSpacing: '0.02em', display: 'flex',
+          color: interpolateColors(renglon, [0, 1], [paleta.papel, paleta.fondo]),
+          textShadow: renglon < 1 ? `0 0 24px ${paleta.fondo}` : 'none' }}>
           {nombre.split('').map((ch, i) => {
             // cada letra se asienta con 2 frames de desfase: nada se detiene a la vez
             const k = tramo(t, tNombre + (i * 2) / fps, 0.9, 'solemne');
             return <span key={i} style={{ display: 'inline-block', whiteSpace: 'pre', opacity: k, transform: `translateY(${(1 - k) * 46}px)` }}>{ch}</span>;
           })}
         </div>
-        <div style={{ fontFamily: fuente.mono, fontSize: 46, color: paleta.fondo, letterSpacing: '0.2em', marginTop: 18,
+        <div style={{ fontFamily: fuente.mono, fontSize: 46, color: interpolateColors(renglon, [0, 1], [paleta.papel, paleta.fondo]), letterSpacing: '0.2em', marginTop: 18,
           opacity: 0.75 * tramo(t, tNombre + 1.6, 0.8, 'natural') }}>
           {texto(escena, 'anios')}
         </div>
@@ -68,6 +74,8 @@ export const S02Nadador: React.FC<EscenaProps> = ({ escena, paleta, fps }) => {
         fontFamily: fuente.mono, fontWeight: 600, fontSize: 54, letterSpacing: '0.18em', color: paleta.rojo, mixBlendMode: 'multiply' }}>
         {texto(escena, 'sello')}
       </div>
+      {/* el golpe suena cuando el sello toca el papel, no cuando empieza a caer */}
+      <Sfx src="audio/sfx/sello.mp3" en={tSello + 0.12} fps={fps} volumen={0.9} />
     </AbsoluteFill>
   );
 };

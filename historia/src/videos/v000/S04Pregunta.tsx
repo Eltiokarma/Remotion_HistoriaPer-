@@ -1,10 +1,12 @@
 import { geoNaturalEarth1, geoPath } from 'd3-geo';
 import type { FeatureCollection, MultiPolygon } from 'geojson';
+import { Fragment } from 'react';
 import { AbsoluteFill, spring, useCurrentFrame } from 'remotion';
 import { feature } from 'topojson-client';
 import type { GeometryCollection, Topology } from 'topojson-specification';
 import land from 'world-atlas/land-110m.json';
 import { beat, mix, tramo } from '../../direction/anim';
+import { Sfx } from '../../components/Sfx';
 import { fuente } from '../../fonts';
 import { texto, type EscenaProps } from './comun';
 
@@ -33,9 +35,17 @@ export const S04Pregunta: React.FC<EscenaProps> = ({ escena, paleta, fps }) => {
   const b = escena.beats;
   const origen = escena.origen as Lugar;
   const archivos = escena.archivos as Lugar[];
-  const tArcos = beat(b, 'arcos', 1), PASO = 1.9;
-  const apagado = tramo(t, beat(b, 'apagar', 12), 0.8, 'solemne');
+  const tArcos = beat(b, 'arcos', 1), PASO = beat(b, 'paso', 1.9), DUR_ARCO = Math.min(1.3, PASO + 0.2);
+  const tApagar = beat(b, 'apagar', 12);
+  const apagado = tramo(t, tApagar, 0.8, 'solemne');
   const tPregunta = beat(b, 'pregunta', 12.6), tBarra = beat(b, 'barra', 17);
+  const tMitad = beat(b, 'mitad', tBarra + 2);
+  // La pregunta aparece cuando la voz la hace, se va mientras se viaja por los archivos
+  // y vuelve sola, en el silencio, cuando el mapa se apaga.
+  const pregunta = Math.max(
+    tramo(t, tPregunta, 1.0, 'solemne') * (1 - tramo(t, tArcos - 0.2, 0.6, 'natural')),
+    tramo(t, tApagar + 0.3, 1.2, 'solemne'),
+  ) * mix(1, 0.4, tramo(t, tBarra, 0.8, 'natural'));
   const lima = xy(origen);
   const mapaOp = mix(1, 0.1, apagado);
 
@@ -45,9 +55,9 @@ export const S04Pregunta: React.FC<EscenaProps> = ({ escena, paleta, fps }) => {
         <path d={TIERRA_D} fill="none" stroke={paleta.ocre} strokeWidth={1.3} opacity={0.6 * tramo(t, 0, 1, 'natural')} />
         {archivos.map((a, i) => {
           const t0 = tArcos + i * PASO;
-          const k = tramo(t, t0, 1.3, 'natural');
+          const k = tramo(t, t0, DUR_ARCO, 'natural');
           const p = xy(a);
-          const llega = t >= t0 + 1.3 ? spring({ frame: frame - (t0 + 1.3) * fps, fps, config: { damping: 11, mass: 0.5 } }) : 0;
+          const llega = t >= t0 + DUR_ARCO ? spring({ frame: frame - (t0 + DUR_ARCO) * fps, fps, config: { damping: 11, mass: 0.5 } }) : 0;
           return (
             <g key={a.nombre}>
               <path d={arco(lima, p)} pathLength={1} fill="none" stroke={paleta.papel} strokeWidth={2.5}
@@ -66,20 +76,27 @@ export const S04Pregunta: React.FC<EscenaProps> = ({ escena, paleta, fps }) => {
 
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', paddingBottom: 170 }}>
         <div style={{ fontFamily: fuente.titulo, fontStyle: 'italic', fontWeight: 400, fontSize: 104, color: paleta.papel,
-          opacity: tramo(t, tPregunta, 1.4, 'solemne') * mix(1, 0.4, tramo(t, tBarra, 0.8, 'natural')),
-          transform: `translateY(${(1 - tramo(t, tPregunta, 1.4, 'solemne')) * 24}px)` }}>
+          opacity: pregunta, transform: `translateY(${(1 - pregunta) * 14}px)` }}>
           {texto(escena, 'pregunta')}
         </div>
       </AbsoluteFill>
 
+      {archivos.map((_, i) => (
+        <Fragment key={i}>
+          <Sfx src="audio/sfx/soplo.mp3" en={tArcos + i * PASO} fps={fps} volumen={0.3} />
+          <Sfx src="audio/sfx/campana.mp3" en={tArcos + i * PASO + DUR_ARCO} fps={fps} volumen={0.22} />
+        </Fragment>
+      ))}
+      {/* el golpe cae justo cuando la barra se detiene en la mitad */}
+      <Sfx src="audio/sfx/golpe.mp3" en={tMitad} fps={fps} volumen={0.85} />
       {/* La mitad: una barra que se llena y se detiene a medio camino */}
       <div style={{ position: 'absolute', left: 460, top: 640, width: 1000, opacity: tramo(t, tBarra - 0.3, 0.5, 'natural') }}>
         <div style={{ height: 40, border: `2px solid ${paleta.papel}`, position: 'relative' }}>
-          <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: `${50 * tramo(t, tBarra, 1.8, 'pesado')}%`, background: paleta.rojo }} />
+          <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: `${50 * tramo(t, tBarra + 0.4, Math.max(0.8, tMitad - tBarra - 0.4), 'pesado')}%`, background: paleta.rojo }} />
           <div style={{ position: 'absolute', left: '50%', top: -14, bottom: -14, width: 2, background: paleta.papel, opacity: 0.6 }} />
         </div>
         <div style={{ marginTop: 26, textAlign: 'center', fontFamily: fuente.mono, fontSize: 36, color: paleta.ocre,
-          opacity: tramo(t, tBarra + 1.6, 0.8, 'natural') }}>
+          opacity: tramo(t, tMitad + 0.5, 0.8, 'natural') }}>
           {texto(escena, 'barra')}
         </div>
       </div>

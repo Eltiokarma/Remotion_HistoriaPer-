@@ -16,99 +16,297 @@
     {
       "id": "s01",
       "seccion": "gancho",
-      "duracion_s": 15,
+      "duracion_s": 18.2,
+      "cola_s": 0.8,
       "voz": "voz/000-quiroz/s01.wav",
+      "voz_provisional": "voz-provisional/000-quiroz/s01.mp3",
       "intensidad": 3,
       "cambio": "de un desconocido a alguien que pelea contra el tiempo por un libro",
       "intencion": "abrir con la muerte y el libro sin decir todavía quién es",
       "transicion_salida": "corte",
-      "beats": { "fecha": 0.4, "correcciones": 5.5, "ultima_hoja": 11.0 },
-      "textos": { "fecha": "NUEVA YORK · 2012" }
+      "beats": {
+        "fecha": 0.3,
+        "correcciones": 9.8,
+        "ultima_hoja": 16.5
+      },
+      "textos": {
+        "fecha": "NUEVA YORK · 2012"
+      },
+      "audio": {
+        "musica": null,
+        "ambientes": [
+          {
+            "pista": "audio/ambiente/ciudad.mp3",
+            "nivel": 0.7
+          }
+        ]
+      },
+      "estado_musica": "ausente"
     },
     {
       "id": "s02",
       "seccion": "personaje",
-      "duracion_s": 18,
+      "duracion_s": 20.04,
+      "cola_s": 1.0,
       "voz": "voz/000-quiroz/s02.wav",
+      "voz_provisional": "voz-provisional/000-quiroz/s02.mp3",
       "intensidad": 2,
       "cambio": "de un historiador cualquiera a un nadador terco que se metió a los archivos",
       "intencion": "el carril de piscina se vuelve renglón contable: la misma disciplina, otro terreno",
       "transicion_salida": "corte",
-      "beats": { "nombre": 4.6, "sello": 12.8 },
-      "textos": { "nombre": "ALFONSO W. QUIROZ NORRIS", "anios": "1956–2013", "sello": "PUCP · 1974" }
+      "beats": {
+        "nombre": 1.2,
+        "frenar": 5.6,
+        "renglon": 6.6,
+        "sello": 11.3
+      },
+      "textos": {
+        "nombre": "ALFONSO W. QUIROZ NORRIS",
+        "anios": "1956–2013",
+        "sello": "PUCP · 1974"
+      },
+      "audio": {
+        "musica": {
+          "pista": "audio/musica/s02-presente.mp3",
+          "nivel": 0.45
+        },
+        "ambientes": [
+          {
+            "pista": "audio/ambiente/agua.mp3",
+            "nivel": 0.35,
+            "hasta_beat": "renglon"
+          },
+          {
+            "pista": "audio/ambiente/cuarto.mp3",
+            "nivel": 0.25,
+            "desde_beat": "renglon"
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente"
     },
     {
       "id": "s03",
       "seccion": "primer hallazgo",
-      "duracion_s": 18,
+      "duracion_s": 19.44,
+      "cola_s": 1.0,
       "voz": "voz/000-quiroz/s03.wav",
+      "voz_provisional": "voz-provisional/000-quiroz/s03.mp3",
       "intensidad": 3,
       "cambio": "de 'la élite despilfarró el guano' a 'el Estado ayudó a saquearse a sí mismo'",
       "intencion": "yuxtaposición: la riqueza natural (islas) contra el papel que la vació (libro de cuentas)",
       "transicion_salida": "corte",
-      "beats": { "libro": 6.0, "cifra": 8.0, "flecha": 13.8 },
+      "beats": {
+        "libro": 10.7,
+        "cifra": 13.3,
+        "flecha": 16.7
+      },
       "textos": {
         "rotulo": "Consolidación de la deuda · 1850",
         "concepto": "Deuda interna reconocida",
         "estado": "Estado"
       },
-      "cifra": { "desde": 4800000, "hasta": 23200000, "moneda": "pesos", "verificar": true }
+      "audio": {
+        "musica": {
+          "pista": "audio/musica/s03-tension.mp3",
+          "nivel": 0.5
+        },
+        "ambientes": [
+          {
+            "pista": "audio/ambiente/mar.mp3",
+            "nivel": 0.4,
+            "hasta_beat": "libro"
+          },
+          {
+            "pista": "audio/ambiente/cuarto.mp3",
+            "nivel": 0.25,
+            "desde_beat": "libro"
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente (tensión)",
+      "cifra": {
+        "desde": 4800000,
+        "hasta": 23200000,
+        "moneda": "pesos",
+        "verificar": true
+      }
     },
     {
       "id": "s04",
       "seccion": "la pregunta",
-      "duracion_s": 22,
+      "duracion_s": 26.38,
+      "cola_s": 1.2,
       "voz": "voz/000-quiroz/s04.wav",
+      "voz_provisional": "voz-provisional/000-quiroz/s04.mp3",
       "intensidad": 4,
       "cambio": "de un hallazgo aislado a una conclusión sobre todo el país",
       "intencion": "el mundo entero se apaga para dejar sola la pregunta; la barra a medias es el golpe",
       "transicion_salida": "corte",
-      "beats": { "arcos": 1.0, "apagar": 12.0, "pregunta": 12.6, "barra": 17.0 },
+      "beats": {
+        "pregunta": 5.6,
+        "arcos": 8.7,
+        "paso": 0.95,
+        "apagar": 15.9,
+        "barra": 18.0,
+        "mitad": 22.6
+      },
       "textos": {
         "pregunta": "¿Es factible su estudio?",
         "barra": "≈ ½ del crecimiento que no tuvimos"
       },
-      "origen": { "nombre": "Lima", "lon": -77.04, "lat": -12.05 },
+      "audio": {
+        "musica": {
+          "pista": "audio/musica/s04-mundo.mp3",
+          "nivel": 0.42
+        },
+        "ambientes": [
+          {
+            "pista": "audio/ambiente/cuarto.mp3",
+            "nivel": 0.22
+          }
+        ],
+        "silencio": {
+          "desde_beat": "apagar",
+          "hasta_beat": "barra"
+        },
+        "duck_db": -15
+      },
+      "estado_musica": "presente → silencio → golpe",
+      "origen": {
+        "nombre": "Lima",
+        "lon": -77.04,
+        "lat": -12.05
+      },
       "archivos": [
-        { "nombre": "Sevilla", "lon": -5.98, "lat": 37.39 },
-        { "nombre": "Madrid", "lon": -3.70, "lat": 40.42 },
-        { "nombre": "París", "lon": 2.35, "lat": 48.86 },
-        { "nombre": "Londres", "lon": -0.13, "lat": 51.51 },
-        { "nombre": "Washington", "lon": -77.04, "lat": 38.90 }
+        {
+          "nombre": "Sevilla",
+          "lon": -5.98,
+          "lat": 37.39
+        },
+        {
+          "nombre": "Madrid",
+          "lon": -3.7,
+          "lat": 40.42
+        },
+        {
+          "nombre": "París",
+          "lon": 2.35,
+          "lat": 48.86
+        },
+        {
+          "nombre": "Londres",
+          "lon": -0.13,
+          "lat": 51.51
+        },
+        {
+          "nombre": "Washington",
+          "lon": -77.04,
+          "lat": 38.9
+        }
       ]
     },
     {
       "id": "s05",
       "seccion": "la serie",
-      "duracion_s": 22,
+      "duracion_s": 20.34,
+      "cola_s": 2.6,
       "voz": "voz/000-quiroz/s05.wav",
+      "voz_provisional": "voz-provisional/000-quiroz/s05.mp3",
       "intensidad": 5,
       "cambio": "de un libro ajeno a una serie que el espectador va a seguir",
       "intencion": "cada época ocupa el ancho de sus años: el largo de un período también es un dato",
       "transicion_salida": "corte",
-      "beats": { "linea": 1.0, "capitulos": 2.0, "paso": 1.5, "pregunta": 15.5 },
+      "beats": {
+        "linea": 0.0,
+        "capitulos": 2.8,
+        "paso": 0.72,
+        "pregunta": 14.05
+      },
+      "audio": {
+        "musica": {
+          "pista": "audio/musica/s05-protagonista.mp3",
+          "nivel": 0.6
+        },
+        "ambientes": [
+          {
+            "pista": "audio/ambiente/viento.mp3",
+            "nivel": 0.25
+          }
+        ],
+        "duck_db": -12
+      },
+      "estado_musica": "protagonista",
       "fondo_asset": null,
       "capitulos": [
-        { "desde": 1750, "hasta": 1820 },
-        { "desde": 1821, "hasta": 1859 },
-        { "desde": 1860, "hasta": 1883 },
-        { "desde": 1884, "hasta": 1930 },
-        { "desde": 1931, "hasta": 1962 },
-        { "desde": 1963, "hasta": 1989 },
-        { "desde": 1990, "hasta": 2000 }
+        {
+          "desde": 1750,
+          "hasta": 1820
+        },
+        {
+          "desde": 1821,
+          "hasta": 1859
+        },
+        {
+          "desde": 1860,
+          "hasta": 1883
+        },
+        {
+          "desde": 1884,
+          "hasta": 1930
+        },
+        {
+          "desde": 1931,
+          "hasta": 1962
+        },
+        {
+          "desde": 1963,
+          "hasta": 1989
+        },
+        {
+          "desde": 1990,
+          "hasta": 2000
+        }
       ]
     },
     {
       "id": "s06",
       "seccion": "cierre",
-      "duracion_s": 10,
+      "duracion_s": 10.4,
+      "cola_s": 4.0,
       "voz": "voz/000-quiroz/s06.wav",
+      "voz_provisional": "voz-provisional/000-quiroz/s06.mp3",
       "intensidad": 2,
       "cambio": "de la muerte del autor a la invitación a leerlo",
       "intencion": "vuelve la pila del inicio y se cierra: el círculo del libro terminado",
       "transicion_salida": "fundido",
-      "beats": { "cerrar": 1.0, "negro": 4.5, "tarjeta": 5.4 },
-      "textos": { "proximo": "Próximo", "titulo": "1750 — El fracaso de las reformas coloniales" }
+      "beats": {
+        "cerrar": 2.2,
+        "negro": 6.4,
+        "tarjeta": 7.2
+      },
+      "textos": {
+        "proximo": "Próximo",
+        "titulo": "1750 — El fracaso de las reformas coloniales"
+      },
+      "audio": {
+        "musica": {
+          "pista": "audio/musica/s06-cierre.mp3",
+          "nivel": 0.4,
+          "hasta_beat": "tarjeta"
+        },
+        "ambientes": [
+          {
+            "pista": "audio/ambiente/cuarto.mp3",
+            "nivel": 0.2,
+            "hasta_beat": "negro"
+          }
+        ],
+        "duck_db": -14
+      },
+      "estado_musica": "presente → ausente"
     }
   ]
 }

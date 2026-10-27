@@ -1,5 +1,6 @@
 import { AbsoluteFill, Img, staticFile, useCurrentFrame } from 'remotion';
 import { beat, tramo } from '../../direction/anim';
+import { Sfx } from '../../components/Sfx';
 import { fuente } from '../../fonts';
 import type { EscenaProps } from './comun';
 
@@ -55,6 +56,8 @@ export const S05Serie: React.FC<EscenaProps> = ({ escena, paleta, fps }) => {
         })}
         <text x={1900} y={Y - 26} textAnchor="end" fill={paleta.rojo} fontFamily={fuente.mono} fontSize={30} opacity={hoy}>hoy</text>
       </svg>
+      {caps.map((_, i) => <Sfx key={i} src="audio/sfx/tic.mp3" en={tCaps + i * paso} fps={fps} volumen={0.4} />)}
+      <Sfx src="audio/sfx/soplo.mp3" en={tPregunta} fps={fps} volumen={0.3} />
     </AbsoluteFill>
   );
 };

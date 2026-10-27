@@ -2,6 +2,7 @@ import { AbsoluteFill, spring, useCurrentFrame } from 'remotion';
 import { beat, tramo } from '../../direction/anim';
 import { MaquinaDeEscribir } from '../../components/MaquinaDeEscribir';
 import { PilaDePaginas } from '../../components/PilaDePaginas';
+import { Sfx } from '../../components/Sfx';
 import { fuente } from '../../fonts';
 import { texto, type EscenaProps } from './comun';
 
@@ -40,10 +41,26 @@ export const S01DiasExtra: React.FC<EscenaProps> = ({ escena, paleta, fps }) => 
   const rotUltima = t >= ultima ? -9 * Math.sin(Math.min(1, (t - ultima) / 0.25) * Math.PI / 2) * (1 - tiron) : 0;
 
   const aparece = tramo(t, 0, 0.8, 'natural');
+  const tFecha = beat(b, 'fecha', 0.4), CPS = 11;
+  const tCorr = beat(b, 'correcciones', 5.5), DUR_CORR = 5, TRAZOS = 7;
+  const sonidos = (
+    <>
+      {/* una tecla por letra (los espacios también suenan: es la barra) */}
+      {texto(escena, 'fecha').split('').map((_, i) => (
+        <Sfx key={`k${i}`} src={`audio/sfx/tecla-${(i % 3) + 1}.mp3`} en={tFecha + i / CPS} fps={fps} volumen={0.45} />
+      ))}
+      {tiempos.map((tc, i) => <Sfx key={`h${i}`} src="audio/sfx/hoja.mp3" en={tc} fps={fps} volumen={0.5} />)}
+      {/* la última hoja no cae: solo se sacude */}
+      <Sfx src="audio/sfx/hoja.mp3" en={ultima} fps={fps} volumen={0.25} />
+      {Array.from({ length: TRAZOS }, (_, i) => (
+        <Sfx key={`p${i}`} src="audio/sfx/pluma.mp3" en={tCorr + (i * DUR_CORR) / TRAZOS} fps={fps} volumen={0.22} />
+      ))}
+    </>
+  );
   return (
     <AbsoluteFill style={{ backgroundColor: paleta.fondo }}>
       <AbsoluteFill style={{ alignItems: 'center', paddingTop: 130 }}>
-        <MaquinaDeEscribir texto={texto(escena, 'fecha')} t={t - beat(b, 'fecha', 0.4)} color={paleta.papel} size={46} />
+        <MaquinaDeEscribir texto={texto(escena, 'fecha')} t={t - tFecha} cps={CPS} color={paleta.papel} size={46} />
       </AbsoluteFill>
 
       {/* Calendario: la cuenta de los días extra */}
@@ -58,8 +75,9 @@ export const S01DiasExtra: React.FC<EscenaProps> = ({ escena, paleta, fps }) => 
 
       {/* El manuscrito: se corrige mientras el tiempo se acaba */}
       <div style={{ position: 'absolute', left: 1120, top: 300, opacity: aparece }}>
-        <PilaDePaginas paleta={paleta} width={470} correcciones={tramo(t, beat(b, 'correcciones', 5.5), 5, 'natural')} />
+        <PilaDePaginas paleta={paleta} width={470} correcciones={tramo(t, tCorr, DUR_CORR, 'natural')} />
       </div>
+      {sonidos}
     </AbsoluteFill>
   );
 };

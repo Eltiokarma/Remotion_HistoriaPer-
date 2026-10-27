@@ -1,0 +1,8 @@
+# Texto para la voz PROVISIONAL (TTS). Se reemplaza por la voz de Gerson.
+# Números escritos en palabras para que el TTS los lea bien. [PAUSA 2] = 2 s de silencio.
+s01: Nueva York, fines de dos mil doce. Un historiador peruano se está muriendo. No pide más tiempo para vivir: pide más tiempo para terminar un libro. En la última página les agradece a sus médicos por eso. Por los días extra.
+s02: Se llamaba Alfonso Quiroz. De chico, nadó por el Perú. De grande, se metió a los archivos con la misma terquedad. Entró a la Católica en mil novecientos setenta y cuatro, entre los primeros del examen, en pleno gobierno militar. Y en contra de él.
+s03: Su primera investigación fue sobre el guano, la plata fácil del siglo diecinueve. Todos decían que la élite la había despilfarrado en lujos. Quiroz encontró algo peor: una deuda inflada a propósito, con funcionarios del propio Estado ayudando a saquearlo.
+s04: En el año dos mil se hizo una pregunta que nadie había tomado en serio: ¿se puede estudiar la corrupción en el Perú? Revisó cartas de diplomáticos, juicios y archivos secretos de medio mundo. Su respuesta fue un libro. [PAUSA 2] Y una conclusión que incomoda: la corrupción explicaría cerca de la mitad del desarrollo que este país nunca tuvo.
+s05: Esta serie sigue ese libro, capítulo por capítulo: siete épocas, del virreinato hasta el año dos mil. Con sus fuentes, y con sus cifras. Y con una pregunta que él nos dejó: ¿por qué seguimos perdonando al que roba, si hace obra?
+s06: Alfonso Quiroz no llegó a ver este libro impreso. Nosotros sí podemos leerlo.

@@ -1,4 +1,5 @@
-import { AbsoluteFill, Audio, Sequence, staticFile } from 'remotion';
+import { AbsoluteFill, Sequence } from 'remotion';
+import { MezclaEscena } from '../../components/MezclaEscena';
 import type { EscenaResuelta, VideoProps } from '../../types';
 import { S01DiasExtra } from './S01DiasExtra';
 import { S02Nadador } from './S02Nadador';
@@ -7,6 +8,10 @@ import { S04Pregunta } from './S04Pregunta';
 import { S05Serie } from './S05Serie';
 import { S06Cierre } from './S06Cierre';
 import type { EscenaProps } from './comun';
+import { Fragment } from 'react';
+
+const J_FRAMES = 12;
+const L_FRAMES = 15;
 
 const ESCENAS: Record<string, React.FC<EscenaProps>> = {
   s01: S01DiasExtra,
@@ -18,26 +23,30 @@ const ESCENAS: Record<string, React.FC<EscenaProps>> = {
 };
 
 export const Video000: React.FC<VideoProps> = ({ video, resueltas }) => {
-  const escenas: EscenaResuelta[] = resueltas ?? video.escenas.map((e) => ({ ...e, frames: Math.round(e.duracion_s * video.fps), vozOk: false }));
+  const escenas: EscenaResuelta[] = resueltas ?? video.escenas.map((e) => ({ ...e, frames: Math.round(e.duracion_s * video.fps), vozSrc: null, vozProvisional: false }));
   let desde = 0;
   return (
     <AbsoluteFill style={{ backgroundColor: video.paleta.fondo }}>
-      {escenas.map((e) => {
+      {escenas.map((e, i) => {
         const Comp = ESCENAS[e.id];
         const inicio = desde;
         desde += e.frames;
-        if (!Comp) return null;
+        // Cortes J/L por defecto: el sonido de la escena entra antes que su imagen (J) y
+        // el de la anterior se queda un poco (L). Un corte duro se declara en el JSON.
+        const duro = i > 0 && escenas[i - 1].transicion_salida === 'duro';
+        const j = i === 0 || duro ? 0 : J_FRAMES;
+        const l = i === escenas.length - 1 || e.transicion_salida === 'duro' ? 0 : L_FRAMES;
         return (
-          <Sequence key={e.id} from={inicio} durationInFrames={e.frames} name={`${e.id} · ${e.seccion}`}>
-            <Comp escena={e} paleta={video.paleta} fps={video.fps} />
-            {/* Fade de 6 frames en la voz: nada entra ni sale en seco. */}
-            {e.vozOk && e.voz ? (
-              <Audio
-                src={staticFile(e.voz)}
-                volume={(f) => Math.min(1, f / 6, Math.max(0, (e.frames - f) / 6))}
-              />
+          <Fragment key={e.id}>
+            {Comp ? (
+              <Sequence from={inicio} durationInFrames={e.frames} name={`${e.id} · ${e.seccion}`}>
+                <Comp escena={e} paleta={video.paleta} fps={video.fps} />
+              </Sequence>
             ) : null}
-          </Sequence>
+            <Sequence from={inicio - j} durationInFrames={e.frames + j + l} name={`${e.id} · audio`} layout="none">
+              <MezclaEscena escena={e} fps={video.fps} j={j} l={l} />
+            </Sequence>
+          </Fragment>
         );
       })}
     </AbsoluteFill>

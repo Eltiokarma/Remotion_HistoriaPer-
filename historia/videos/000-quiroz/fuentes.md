@@ -33,3 +33,5 @@ Todo dato en pantalla o en la voz necesita fuente. Mientras diga `[VERIFICAR]`, 
 | Playfair Display | Google Fonts | SIL OFL 1.1 |
 | IBM Plex Mono | Google Fonts | SIL OFL 1.1 |
 | (opcional, s05) *Los pulpos de Leguía*, Chambon, 1907 | — | [VERIFICAR] dominio público antes de usarla |
+| Música, ambientes y efectos (`public/audio/`) | Sintetizados con `scripts/generar_audio.py`, sin muestras de terceros | Material propio |
+| Voz **provisional** (`public/voz-provisional/`) | TTS Piper, voz `es_MX-claude-high` | Apache 2.0 — **solo para el prototipo**: se reemplaza por la voz de Gerson antes de publicar |

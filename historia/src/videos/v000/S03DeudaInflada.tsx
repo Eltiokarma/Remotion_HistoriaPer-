@@ -1,6 +1,7 @@
 import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { beat, tramo } from '../../direction/anim';
 import { peso } from '../../direction/easings';
+import { Sfx } from '../../components/Sfx';
 import { fuente } from '../../fonts';
 import { texto, type EscenaProps } from './comun';
 
@@ -30,8 +31,15 @@ export const S03DeudaInflada: React.FC<EscenaProps> = ({ escena, paleta, fps }) 
   const flecha = tramo(t, tFlecha, 1.1, 'tenso');
   const puntaX = interpolate(flecha, [0, 1], [500, 2010]);
 
+  // La cifra hace tic cada vez más seguido: suena a algo que se descontrola.
+  const tics: number[] = [];
+  for (let tc = tCifra, gap = 0.28; tc < tFlecha - 0.6; tc += gap, gap = Math.max(0.05, gap * 0.86)) tics.push(tc);
+
   return (
     <AbsoluteFill style={{ backgroundColor: paleta.fondo }}>
+      {tics.map((tc, i) => <Sfx key={i} src="audio/sfx/tic.mp3" en={tc} fps={fps} volumen={0.25} />)}
+      <Sfx src="audio/sfx/hoja.mp3" en={tLibro} fps={fps} volumen={0.6} />
+      <Sfx src="audio/sfx/pluma.mp3" en={tFlecha} fps={fps} volumen={0.55} />
       {/* Mar e islas guaneras */}
       <svg width={1920} height={1080} style={{ position: 'absolute' }}>
         {Array.from({ length: 7 }, (_, i) => (
