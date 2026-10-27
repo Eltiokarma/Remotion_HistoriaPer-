@@ -14,7 +14,7 @@
 **Frames:** 0–1173 (39,1 s)
 
 **VO:**
-Nueva York. En un hospital, un historiador peruano corrige pruebas de imprenta. Es la traducción al español de su último libro, el que más trabajo le costó. No le queda mucho tiempo, y lo sabe. En los agradecimientos escribe una línea que casi nadie lee: les da las gracias a sus médicos por alargar estos días, para poder completar la tarea. Unas líneas más abajo menciona a su hijo, recién llegado al mundo. Murió en enero de 2013. El libro salió en mayo. Este video es sobre ese hombre, y sobre lo que encontró.
+Nueva York. En un hospital, un historiador peruano corrige pruebas de imprenta. Es la traducción al español de su último libro, el que más trabajo le costó. No le queda mucho tiempo, y lo sabe. En los agradecimientos escribe una línea que casi nadie lee: les da las gracias a sus médicos por alargar estos días, para poder completar la tarea. Unas líneas más abajo celebra «la reciente llegada a este mundo de nuestro precioso Alfonsito»: su hijo. Murió en enero de 2013. El libro salió en mayo. Este video es sobre ese hombre, y sobre lo que encontró.
 
 **Visual (Remotion):**
 - Fondo negro. Ficha mono arriba a la izquierda, escrita letra por letra: `NUEVA YORK · MEMORIAL SLOAN-KETTERING`.

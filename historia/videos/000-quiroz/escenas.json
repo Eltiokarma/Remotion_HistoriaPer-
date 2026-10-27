@@ -31,7 +31,7 @@
       "id": "s01",
       "seccion": "gancho",
       "componente": "PruebasDeImprenta",
-      "duracion_s": 41.06,
+      "duracion_s": 42.81,
       "cola_s": 2.5,
       "intensidad": 3,
       "cambio": "de un desconocido a un hombre que corrige su libro contra el tiempo",
@@ -39,15 +39,15 @@
       "transicion_salida": "corte",
       "beats": {
         "ficha": 0.4,
-        "correcciones": 4.6,
-        "cita": 15.4,
-        "subrayado": 21.9,
-        "abajo": 25.8,
-        "corte1": 31.7,
-        "sello1": 32.3,
-        "corte2": 34.6,
-        "sello2": 35.8,
-        "final": 37.4
+        "correcciones": 4.7,
+        "cita": 15.2,
+        "subrayado": 21.7,
+        "abajo": 25.6,
+        "corte1": 33.4,
+        "sello1": 34.0,
+        "corte2": 36.3,
+        "sello2": 37.6,
+        "final": 39.2
       },
       "props": {
         "ficha": "NUEVA YORK · MEMORIAL SLOAN-KETTERING",
@@ -70,7 +70,7 @@
         {
           "beat": "abajo",
           "movimiento": "baja unas líneas por la página",
-          "motivo": "«unas líneas más abajo» menciona a su hijo"
+          "motivo": "«unas líneas más abajo» celebra la llegada de su hijo"
         },
         {
           "beat": "final",
