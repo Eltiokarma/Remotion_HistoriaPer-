@@ -1279,56 +1279,56 @@
   ]
  },
  "s04": {
-  "duracion": 65.01,
+  "duracion": 65.26,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 6.67,
+    "hasta": 6.82,
     "texto": "Un coleccionista de libros, Félix Denegri Luna, le sugiere mirar con más cuidado el siglo diecinueve."
    },
    {
-    "desde": 7.12,
-    "hasta": 9.19,
+    "desde": 7.27,
+    "hasta": 9.34,
     "texto": "Ahí encuentra su primer caso."
    },
    {
-    "desde": 9.64,
-    "hasta": 22.21,
+    "desde": 9.79,
+    "hasta": 22.24,
     "texto": "En mil ochocientos cincuenta, con la plata del guano entrando a las arcas, el Estado decide pagar su deuda interna: deudas que venían arrastrándose, algunas desde la época colonial."
    },
    {
-    "desde": 22.66,
-    "hasta": 24.92,
+    "desde": 22.69,
+    "hasta": 24.95,
     "texto": "A eso se le llamó la consolidación."
    },
    {
-    "desde": 25.37,
-    "hasta": 31.43,
+    "desde": 25.4,
+    "hasta": 31.48,
     "texto": "La promesa era que esos pagos crearían una clase de empresarios que invertiría en el país."
    },
    {
-    "desde": 31.88,
-    "hasta": 38.42,
+    "desde": 31.93,
+    "hasta": 38.38,
     "texto": "La versión aceptada decía que la élite simplemente había despilfarrado esa riqueza en lujos."
    },
    {
-    "desde": 38.87,
-    "hasta": 50.84,
+    "desde": 38.83,
+    "hasta": 50.88,
     "texto": "Quiroz revisó los expedientes y encontró otra cosa: el valor de la deuda se había inflado para enriquecerse a costa del Estado, y dentro del propio Estado había funcionarios cómplices."
    },
    {
-    "desde": 51.29,
-    "hasta": 52.54,
-    "texto": "No era derroche."
+    "desde": 51.33,
+    "hasta": 52.86,
+    "texto": "No era solo derroche."
    },
    {
-    "desde": 53.39,
-    "hasta": 55.02,
+    "desde": 53.71,
+    "hasta": 55.36,
     "texto": "Era un mecanismo."
    },
    {
-    "desde": 55.47,
-    "hasta": 65.01,
+    "desde": 55.81,
+    "hasta": 65.26,
     "texto": "Lo presentó como tesis en mil novecientos ochenta, y siete años después lo publicó con un título que lo dice todo: La deuda defraudada."
    }
   ],
@@ -1342,319 +1342,319 @@
     "coleccionista"
    ],
    [
-    1.36,
+    1.39,
     "de"
    ],
    [
-    1.55,
+    1.58,
     "libros,"
    ],
    [
-    2.05,
+    2.09,
     "Félix"
    ],
    [
-    2.42,
+    2.47,
     "Denegri"
    ],
    [
-    2.92,
+    2.99,
     "Luna,"
    ],
    [
-    3.3,
+    3.37,
     "le"
    ],
    [
-    3.49,
+    3.56,
     "sugiere"
    ],
    [
-    3.99,
+    4.07,
     "mirar"
    ],
    [
-    4.36,
+    4.46,
     "con"
    ],
    [
-    4.61,
+    4.71,
     "más"
    ],
    [
-    4.86,
+    4.97,
     "cuidado"
    ],
    [
-    5.36,
+    5.48,
     "el"
    ],
    [
-    5.55,
+    5.67,
     "siglo"
    ],
    [
-    5.92,
+    6.06,
     "diecinueve."
    ],
    [
-    7.12,
+    7.27,
     "Ahí"
    ],
    [
-    7.4,
+    7.55,
     "encuentra"
    ],
    [
-    8.09,
+    8.24,
     "su"
    ],
    [
-    8.29,
+    8.45,
     "primer"
    ],
    [
-    8.78,
+    8.93,
     "caso."
    ],
    [
-    9.64,
+    9.79,
     "En"
    ],
    [
-    9.85,
+    10.0,
     "mil"
    ],
    [
-    10.12,
+    10.27,
     "ochocientos"
    ],
    [
-    10.95,
+    11.09,
     "cincuenta,"
    ],
    [
-    11.71,
+    11.84,
     "con"
    ],
    [
-    11.99,
+    12.12,
     "la"
    ],
    [
-    12.2,
+    12.32,
     "plata"
    ],
    [
-    12.61,
+    12.73,
     "del"
    ],
    [
-    12.89,
+    13.01,
     "guano"
    ],
    [
-    13.3,
+    13.42,
     "entrando"
    ],
    [
-    13.92,
+    14.03,
     "a"
    ],
    [
-    14.06,
+    14.17,
     "las"
    ],
    [
-    14.34,
+    14.44,
     "arcas,"
    ],
    [
-    14.82,
+    14.92,
     "el"
    ],
    [
-    15.03,
+    15.13,
     "Estado"
    ],
    [
-    15.51,
+    15.6,
     "decide"
    ],
    [
-    16.0,
+    16.08,
     "pagar"
    ],
    [
-    16.41,
+    16.49,
     "su"
    ],
    [
-    16.62,
+    16.7,
     "deuda"
    ],
    [
-    17.03,
+    17.11,
     "interna:"
    ],
    [
-    17.65,
+    17.72,
     "deudas"
    ],
    [
-    18.14,
+    18.2,
     "que"
    ],
    [
-    18.41,
+    18.48,
     "venían"
    ],
    [
-    18.9,
+    18.95,
     "arrastrándose,"
    ],
    [
-    19.93,
+    19.98,
     "algunas"
    ],
    [
-    20.49,
+    20.53,
     "desde"
    ],
    [
-    20.9,
+    20.94,
     "la"
    ],
    [
-    21.11,
+    21.14,
     "época"
    ],
    [
-    21.52,
+    21.55,
     "colonial."
    ],
    [
-    22.66,
+    22.69,
     "A"
    ],
    [
-    22.79,
+    22.81,
     "eso"
    ],
    [
-    23.04,
+    23.06,
     "se"
    ],
    [
-    23.23,
+    23.25,
     "le"
    ],
    [
-    23.41,
+    23.44,
     "llamó"
    ],
    [
-    23.79,
+    23.82,
     "la"
    ],
    [
-    23.98,
+    24.01,
     "consolidación."
    ],
    [
-    25.37,
+    25.4,
     "La"
    ],
    [
-    25.57,
+    25.6,
     "promesa"
    ],
    [
-    26.1,
+    26.14,
     "era"
    ],
    [
-    26.37,
+    26.4,
     "que"
    ],
    [
-    26.63,
+    26.67,
     "esos"
    ],
    [
-    26.96,
+    27.01,
     "pagos"
    ],
    [
-    27.36,
+    27.41,
     "crearían"
    ],
    [
-    27.96,
+    28.01,
     "una"
    ],
    [
-    28.23,
+    28.28,
     "clase"
    ],
    [
-    28.63,
+    28.68,
     "de"
    ],
    [
-    28.83,
+    28.88,
     "empresarios"
    ],
    [
-    29.63,
+    29.68,
     "que"
    ],
    [
-    29.9,
+    29.95,
     "invertiría"
    ],
    [
-    30.63,
+    30.68,
     "en"
    ],
    [
-    30.83,
+    30.88,
     "el"
    ],
    [
-    31.03,
+    31.08,
     "país."
    ],
    [
-    31.88,
+    31.93,
     "La"
    ],
    [
-    32.09,
+    32.14,
     "versión"
    ],
    [
-    32.65,
+    32.7,
     "aceptada"
    ],
    [
-    33.28,
+    33.32,
     "decía"
    ],
    [
-    33.71,
+    33.74,
     "que"
    ],
    [
-    33.99,
+    34.01,
     "la"
    ],
    [
-    34.2,
+    34.22,
     "élite"
    ],
    [
-    34.62,
+    34.64,
     "simplemente"
    ],
    [
@@ -1662,91 +1662,91 @@
     "había"
    ],
    [
-    35.89,
+    35.88,
     "despilfarrado"
    ],
    [
-    36.88,
+    36.85,
     "esa"
    ],
    [
-    37.16,
+    37.13,
     "riqueza"
    ],
    [
-    37.72,
+    37.69,
     "en"
    ],
    [
-    37.93,
+    37.89,
     "lujos."
    ],
    [
-    38.87,
+    38.83,
     "Quiroz"
    ],
    [
-    39.33,
+    39.28,
     "revisó"
    ],
    [
-    39.78,
+    39.74,
     "los"
    ],
    [
-    40.04,
+    40.0,
     "expedientes"
    ],
    [
-    40.82,
+    40.78,
     "y"
    ],
    [
-    40.95,
+    40.91,
     "encontró"
    ],
    [
-    41.53,
+    41.5,
     "otra"
    ],
    [
-    41.85,
+    41.82,
     "cosa:"
    ],
    [
-    42.24,
+    42.22,
     "el"
    ],
    [
-    42.43,
+    42.41,
     "valor"
    ],
    [
-    42.82,
+    42.8,
     "de"
    ],
    [
-    43.02,
+    43.0,
     "la"
    ],
    [
-    43.21,
+    43.19,
     "deuda"
    ],
    [
-    43.6,
+    43.58,
     "se"
    ],
    [
-    43.79,
+    43.78,
     "había"
    ],
    [
-    44.18,
+    44.17,
     "inflado"
    ],
    [
-    44.7,
+    44.69,
     "para"
    ],
    [
@@ -1766,159 +1766,163 @@
     "del"
    ],
    [
-    46.64,
+    46.65,
     "Estado,"
    ],
    [
-    47.16,
+    47.17,
     "y"
    ],
    [
-    47.29,
+    47.3,
     "dentro"
    ],
    [
-    47.74,
+    47.75,
     "del"
    ],
    [
-    48.0,
+    48.01,
     "propio"
    ],
    [
-    48.45,
+    48.47,
     "Estado"
    ],
    [
-    48.9,
+    48.93,
     "había"
    ],
    [
-    49.29,
+    49.32,
     "funcionarios"
    ],
    [
-    50.13,
+    50.16,
     "cómplices."
    ],
    [
-    51.29,
+    51.33,
     "No"
    ],
    [
-    51.51,
+    51.54,
     "era"
    ],
    [
-    51.81,
+    51.82,
+    "solo"
+   ],
+   [
+    52.17,
     "derroche."
    ],
    [
-    53.39,
+    53.71,
     "Era"
    ],
    [
-    53.75,
+    54.08,
     "un"
    ],
    [
-    54.02,
+    54.35,
     "mecanismo."
    ],
    [
-    55.47,
+    55.81,
     "Lo"
    ],
    [
-    55.68,
+    56.02,
     "presentó"
    ],
    [
-    56.32,
+    56.64,
     "como"
    ],
    [
-    56.67,
+    56.99,
     "tesis"
    ],
    [
-    57.09,
+    57.41,
     "en"
    ],
    [
-    57.3,
+    57.62,
     "mil"
    ],
    [
-    57.58,
+    57.9,
     "novecientos"
    ],
    [
-    58.42,
+    58.73,
     "ochenta,"
    ],
    [
-    59.05,
+    59.35,
     "y"
    ],
    [
-    59.19,
+    59.49,
     "siete"
    ],
    [
-    59.61,
+    59.91,
     "años"
    ],
    [
-    59.96,
+    60.26,
     "después"
    ],
    [
-    60.52,
+    60.81,
     "lo"
    ],
    [
-    60.73,
+    61.02,
     "publicó"
    ],
    [
-    61.29,
+    61.58,
     "con"
    ],
    [
-    61.57,
+    61.86,
     "un"
    ],
    [
-    61.78,
+    62.06,
     "título"
    ],
    [
-    62.27,
+    62.55,
     "que"
    ],
    [
-    62.55,
+    62.83,
     "lo"
    ],
    [
-    62.76,
+    63.04,
     "dice"
    ],
    [
-    63.11,
+    63.38,
     "todo:"
    ],
    [
-    63.53,
+    63.8,
     "La"
    ],
    [
-    63.74,
+    64.01,
     "deuda"
    ],
    [
-    64.16,
+    64.43,
     "defraudada."
    ]
   ]
@@ -3771,61 +3775,61 @@
   ]
  },
  "s08": {
-  "duracion": 61.88,
+  "duracion": 61.54,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 11.29,
+    "hasta": 11.52,
     "texto": "Con todo eso armó algo que nadie había hecho: una estimación del costo de la corrupción, década por década, desde la colonia hasta el año dos mil."
    },
    {
-    "desde": 11.74,
-    "hasta": 13.3,
+    "desde": 11.97,
+    "hasta": 13.59,
     "texto": "Sus números dicen esto."
    },
    {
-    "desde": 13.75,
-    "hasta": 24.5,
+    "desde": 14.04,
+    "hasta": 24.76,
     "texto": "Entre mil ochocientos veinte y dos mil, la corrupción se habría llevado, en promedio, entre el treinta y el cuarenta por ciento del gasto del Estado."
    },
    {
-    "desde": 24.95,
-    "hasta": 29.82,
+    "desde": 25.21,
+    "hasta": 29.94,
     "texto": "Entre tres y cuatro por ciento de todo lo que producía el país, cada año."
    },
    {
-    "desde": 30.27,
-    "hasta": 35.71,
+    "desde": 30.39,
+    "hasta": 35.64,
     "texto": "Clasificó cada época como de corrupción moderada, alta o muy alta."
    },
    {
-    "desde": 36.16,
-    "hasta": 38.77,
+    "desde": 36.09,
+    "hasta": 38.68,
     "texto": "No encontró ninguna de corrupción baja."
    },
    {
-    "desde": 40.22,
-    "hasta": 42.75,
+    "desde": 40.13,
+    "hasta": 42.59,
     "texto": "Ni una, en casi dos siglos."
    },
    {
-    "desde": 43.2,
-    "hasta": 50.31,
+    "desde": 43.04,
+    "hasta": 50.01,
     "texto": "Y su conclusión más fuerte: la corrupción podría explicar cerca de la mitad del crecimiento que el Perú no tuvo."
    },
    {
-    "desde": 50.76,
-    "hasta": 55.69,
-    "texto": "Él mismo advierte que son estimados provisionales, sujetos a revisión."
+    "desde": 50.46,
+    "hasta": 55.35,
+    "texto": "Él mismo advierte que son estimados preliminares, sujetos a revisión."
    },
    {
-    "desde": 56.14,
-    "hasta": 58.92,
+    "desde": 55.8,
+    "hasta": 58.52,
     "texto": "Pero el punto no está en el decimal."
    },
    {
-    "desde": 59.37,
-    "hasta": 61.88,
+    "desde": 58.97,
+    "hasta": 61.54,
     "texto": "Está en que el patrón nunca se rompe."
    }
   ],
@@ -3835,563 +3839,563 @@
     "Con"
    ],
    [
-    0.6,
+    0.61,
     "todo"
    ],
    [
-    0.97,
+    0.99,
     "eso"
    ],
    [
-    1.27,
+    1.29,
     "armó"
    ],
    [
-    1.65,
+    1.67,
     "algo"
    ],
    [
-    2.02,
+    2.05,
     "que"
    ],
    [
-    2.32,
+    2.36,
     "nadie"
    ],
    [
-    2.77,
+    2.82,
     "había"
    ],
    [
-    3.22,
+    3.28,
     "hecho:"
    ],
    [
-    3.74,
+    3.81,
     "una"
    ],
    [
-    4.04,
+    4.11,
     "estimación"
    ],
    [
-    4.86,
+    4.95,
     "del"
    ],
    [
-    5.16,
+    5.26,
     "costo"
    ],
    [
-    5.61,
+    5.72,
     "de"
    ],
    [
-    5.83,
+    5.95,
     "la"
    ],
    [
-    6.06,
+    6.17,
     "corrupción,"
    ],
    [
-    6.96,
+    7.09,
     "década"
    ],
    [
-    7.48,
+    7.62,
     "por"
    ],
    [
-    7.78,
+    7.93,
     "década,"
    ],
    [
-    8.38,
+    8.54,
     "desde"
    ],
    [
-    8.83,
+    9.0,
     "la"
    ],
    [
-    9.05,
+    9.23,
     "colonia"
    ],
    [
-    9.65,
+    9.84,
     "hasta"
    ],
    [
-    10.1,
+    10.29,
     "el"
    ],
    [
-    10.32,
+    10.52,
     "año"
    ],
    [
-    10.62,
+    10.83,
     "dos"
    ],
    [
-    10.92,
+    11.13,
     "mil."
    ],
    [
-    11.74,
+    11.97,
     "Sus"
    ],
    [
-    12.0,
+    12.24,
     "números"
    ],
    [
-    12.52,
+    12.78,
     "dicen"
    ],
    [
-    12.91,
+    13.18,
     "esto."
    ],
    [
-    13.75,
+    14.04,
     "Entre"
-   ],
-   [
-    14.18,
-    "mil"
    ],
    [
     14.47,
+    "mil"
+   ],
+   [
+    14.76,
     "ochocientos"
    ],
    [
-    15.33,
+    15.61,
     "veinte"
    ],
    [
-    15.83,
+    16.11,
     "y"
-   ],
-   [
-    15.97,
-    "dos"
    ],
    [
     16.26,
-    "mil,"
-   ],
-   [
-    16.62,
-    "la"
-   ],
-   [
-    16.83,
-    "corrupción"
-   ],
-   [
-    17.62,
-    "se"
-   ],
-   [
-    17.84,
-    "habría"
-   ],
-   [
-    18.34,
-    "llevado,"
-   ],
-   [
-    18.98,
-    "en"
-   ],
-   [
-    19.2,
-    "promedio,"
-   ],
-   [
-    19.91,
-    "entre"
-   ],
-   [
-    20.34,
-    "el"
-   ],
-   [
-    20.56,
-    "treinta"
-   ],
-   [
-    21.13,
-    "y"
-   ],
-   [
-    21.28,
-    "el"
-   ],
-   [
-    21.49,
-    "cuarenta"
-   ],
-   [
-    22.14,
-    "por"
-   ],
-   [
-    22.42,
-    "ciento"
-   ],
-   [
-    22.92,
-    "del"
-   ],
-   [
-    23.21,
-    "gasto"
-   ],
-   [
-    23.64,
-    "del"
-   ],
-   [
-    23.93,
-    "Estado."
-   ],
-   [
-    24.95,
-    "Entre"
-   ],
-   [
-    25.35,
-    "tres"
-   ],
-   [
-    25.67,
-    "y"
-   ],
-   [
-    25.81,
-    "cuatro"
-   ],
-   [
-    26.27,
-    "por"
-   ],
-   [
-    26.53,
-    "ciento"
-   ],
-   [
-    26.99,
-    "de"
-   ],
-   [
-    27.19,
-    "todo"
-   ],
-   [
-    27.51,
-    "lo"
-   ],
-   [
-    27.71,
-    "que"
-   ],
-   [
-    27.98,
-    "producía"
-   ],
-   [
-    28.57,
-    "el"
-   ],
-   [
-    28.76,
-    "país,"
-   ],
-   [
-    29.16,
-    "cada"
-   ],
-   [
-    29.49,
-    "año."
-   ],
-   [
-    30.27,
-    "Clasificó"
-   ],
-   [
-    31.08,
-    "cada"
-   ],
-   [
-    31.48,
-    "época"
-   ],
-   [
-    31.97,
-    "como"
-   ],
-   [
-    32.38,
-    "de"
-   ],
-   [
-    32.62,
-    "corrupción"
-   ],
-   [
-    33.52,
-    "moderada,"
-   ],
-   [
-    34.33,
-    "alta"
-   ],
-   [
-    34.74,
-    "o"
-   ],
-   [
-    34.9,
-    "muy"
-   ],
-   [
-    35.22,
-    "alta."
-   ],
-   [
-    36.16,
-    "No"
-   ],
-   [
-    36.36,
-    "encontró"
-   ],
-   [
-    36.94,
-    "ninguna"
-   ],
-   [
-    37.47,
-    "de"
-   ],
-   [
-    37.66,
-    "corrupción"
-   ],
-   [
-    38.38,
-    "baja."
-   ],
-   [
-    40.22,
-    "Ni"
-   ],
-   [
-    40.49,
-    "una,"
-   ],
-   [
-    40.95,
-    "en"
-   ],
-   [
-    41.22,
-    "casi"
-   ],
-   [
-    41.67,
     "dos"
    ],
    [
-    42.03,
-    "siglos."
+    16.54,
+    "mil,"
    ],
    [
-    43.2,
-    "Y"
-   ],
-   [
-    43.33,
-    "su"
-   ],
-   [
-    43.52,
-    "conclusión"
-   ],
-   [
-    44.21,
-    "más"
-   ],
-   [
-    44.46,
-    "fuerte:"
-   ],
-   [
-    44.96,
+    16.9,
     "la"
    ],
    [
-    45.15,
+    17.11,
     "corrupción"
    ],
    [
-    45.85,
-    "podría"
-   ],
-   [
-    46.29,
-    "explicar"
-   ],
-   [
-    46.85,
-    "cerca"
-   ],
-   [
-    47.23,
-    "de"
-   ],
-   [
-    47.42,
-    "la"
-   ],
-   [
-    47.61,
-    "mitad"
-   ],
-   [
-    47.98,
-    "del"
-   ],
-   [
-    48.23,
-    "crecimiento"
-   ],
-   [
-    48.99,
-    "que"
-   ],
-   [
-    49.24,
-    "el"
-   ],
-   [
-    49.43,
-    "Perú"
-   ],
-   [
-    49.74,
-    "no"
-   ],
-   [
-    49.93,
-    "tuvo."
-   ],
-   [
-    50.76,
-    "Él"
-   ],
-   [
-    50.97,
-    "mismo"
-   ],
-   [
-    51.38,
-    "advierte"
-   ],
-   [
-    52.01,
-    "que"
-   ],
-   [
-    52.29,
-    "son"
-   ],
-   [
-    52.57,
-    "estimados"
-   ],
-   [
-    53.26,
-    "provisionales,"
-   ],
-   [
-    54.3,
-    "sujetos"
-   ],
-   [
-    54.86,
-    "a"
-   ],
-   [
-    55.0,
-    "revisión."
-   ],
-   [
-    56.14,
-    "Pero"
-   ],
-   [
-    56.52,
-    "el"
-   ],
-   [
-    56.74,
-    "punto"
-   ],
-   [
-    57.19,
-    "no"
-   ],
-   [
-    57.42,
-    "está"
-   ],
-   [
-    57.79,
-    "en"
-   ],
-   [
-    58.02,
-    "el"
-   ],
-   [
-    58.24,
-    "decimal."
-   ],
-   [
-    59.37,
-    "Está"
-   ],
-   [
-    59.7,
-    "en"
-   ],
-   [
-    59.9,
-    "que"
-   ],
-   [
-    60.16,
-    "el"
-   ],
-   [
-    60.36,
-    "patrón"
-   ],
-   [
-    60.82,
-    "nunca"
-   ],
-   [
-    61.22,
+    17.9,
     "se"
    ],
    [
-    61.41,
+    18.11,
+    "habría"
+   ],
+   [
+    18.61,
+    "llevado,"
+   ],
+   [
+    19.26,
+    "en"
+   ],
+   [
+    19.47,
+    "promedio,"
+   ],
+   [
+    20.18,
+    "entre"
+   ],
+   [
+    20.61,
+    "el"
+   ],
+   [
+    20.83,
+    "treinta"
+   ],
+   [
+    21.4,
+    "y"
+   ],
+   [
+    21.54,
+    "el"
+   ],
+   [
+    21.76,
+    "cuarenta"
+   ],
+   [
+    22.4,
+    "por"
+   ],
+   [
+    22.68,
+    "ciento"
+   ],
+   [
+    23.18,
+    "del"
+   ],
+   [
+    23.47,
+    "gasto"
+   ],
+   [
+    23.9,
+    "del"
+   ],
+   [
+    24.19,
+    "Estado."
+   ],
+   [
+    25.21,
+    "Entre"
+   ],
+   [
+    25.59,
+    "tres"
+   ],
+   [
+    25.91,
+    "y"
+   ],
+   [
+    26.04,
+    "cuatro"
+   ],
+   [
+    26.49,
+    "por"
+   ],
+   [
+    26.74,
+    "ciento"
+   ],
+   [
+    27.19,
+    "de"
+   ],
+   [
+    27.38,
+    "todo"
+   ],
+   [
+    27.7,
+    "lo"
+   ],
+   [
+    27.9,
+    "que"
+   ],
+   [
+    28.15,
+    "producía"
+   ],
+   [
+    28.73,
+    "el"
+   ],
+   [
+    28.92,
+    "país,"
+   ],
+   [
+    29.3,
+    "cada"
+   ],
+   [
+    29.62,
+    "año."
+   ],
+   [
+    30.39,
+    "Clasificó"
+   ],
+   [
+    31.18,
+    "cada"
+   ],
+   [
+    31.57,
+    "época"
+   ],
+   [
+    32.04,
+    "como"
+   ],
+   [
+    32.43,
+    "de"
+   ],
+   [
+    32.66,
+    "corrupción"
+   ],
+   [
+    33.53,
+    "moderada,"
+   ],
+   [
+    34.31,
+    "alta"
+   ],
+   [
+    34.7,
+    "o"
+   ],
+   [
+    34.86,
+    "muy"
+   ],
+   [
+    35.17,
+    "alta."
+   ],
+   [
+    36.09,
+    "No"
+   ],
+   [
+    36.29,
+    "encontró"
+   ],
+   [
+    36.87,
+    "ninguna"
+   ],
+   [
+    37.39,
+    "de"
+   ],
+   [
+    37.58,
+    "corrupción"
+   ],
+   [
+    38.29,
+    "baja."
+   ],
+   [
+    40.13,
+    "Ni"
+   ],
+   [
+    40.39,
+    "una,"
+   ],
+   [
+    40.83,
+    "en"
+   ],
+   [
+    41.1,
+    "casi"
+   ],
+   [
+    41.54,
+    "dos"
+   ],
+   [
+    41.89,
+    "siglos."
+   ],
+   [
+    43.04,
+    "Y"
+   ],
+   [
+    43.16,
+    "su"
+   ],
+   [
+    43.35,
+    "conclusión"
+   ],
+   [
+    44.03,
+    "más"
+   ],
+   [
+    44.27,
+    "fuerte:"
+   ],
+   [
+    44.77,
+    "la"
+   ],
+   [
+    44.95,
+    "corrupción"
+   ],
+   [
+    45.63,
+    "podría"
+   ],
+   [
+    46.06,
+    "explicar"
+   ],
+   [
+    46.62,
+    "cerca"
+   ],
+   [
+    46.99,
+    "de"
+   ],
+   [
+    47.17,
+    "la"
+   ],
+   [
+    47.36,
+    "mitad"
+   ],
+   [
+    47.73,
+    "del"
+   ],
+   [
+    47.97,
+    "crecimiento"
+   ],
+   [
+    48.71,
+    "que"
+   ],
+   [
+    48.96,
+    "el"
+   ],
+   [
+    49.14,
+    "Perú"
+   ],
+   [
+    49.45,
+    "no"
+   ],
+   [
+    49.64,
+    "tuvo."
+   ],
+   [
+    50.46,
+    "Él"
+   ],
+   [
+    50.67,
+    "mismo"
+   ],
+   [
+    51.09,
+    "advierte"
+   ],
+   [
+    51.71,
+    "que"
+   ],
+   [
+    51.99,
+    "son"
+   ],
+   [
+    52.27,
+    "estimados"
+   ],
+   [
+    52.97,
+    "preliminares,"
+   ],
+   [
+    53.95,
+    "sujetos"
+   ],
+   [
+    54.51,
+    "a"
+   ],
+   [
+    54.65,
+    "revisión."
+   ],
+   [
+    55.8,
+    "Pero"
+   ],
+   [
+    56.16,
+    "el"
+   ],
+   [
+    56.39,
+    "punto"
+   ],
+   [
+    56.83,
+    "no"
+   ],
+   [
+    57.05,
+    "está"
+   ],
+   [
+    57.42,
+    "en"
+   ],
+   [
+    57.64,
+    "el"
+   ],
+   [
+    57.86,
+    "decimal."
+   ],
+   [
+    58.97,
+    "Está"
+   ],
+   [
+    59.31,
+    "en"
+   ],
+   [
+    59.51,
+    "que"
+   ],
+   [
+    59.78,
+    "el"
+   ],
+   [
+    59.99,
+    "patrón"
+   ],
+   [
+    60.46,
+    "nunca"
+   ],
+   [
+    60.86,
+    "se"
+   ],
+   [
+    61.07,
     "rompe."
    ]
   ]

@@ -17,15 +17,19 @@ import type { esquema } from './esquema';
 type P = z.infer<typeof esquema>;
 const DUR_CORR = 9, TRAZOS = 9, CPS = 18;
 
+/** Un nombre compuesto («Sloan-Kettering») no se corta en el guion al final de la línea. */
+const sinCortar = (s: string) =>
+  s.split(/(\S+-\S+)/).map((p, i) => (i % 2 ? <span key={i} style={{ whiteSpace: 'nowrap' }}>{p}</span> : p));
+
 /** La frase con su parte subrayada. */
 const Cita: React.FC<{ texto: string; subrayado?: string; k: number; color: string; rojo: string }> = ({ texto, subrayado, k, color, rojo }) => {
   const i = subrayado ? texto.indexOf(subrayado) : -1;
-  if (i < 0 || !subrayado) return <span style={{ color }}>{texto}</span>;
+  if (i < 0 || !subrayado) return <span style={{ color }}>{sinCortar(texto)}</span>;
   return (
     <span style={{ color }}>
-      {texto.slice(0, i)}
+      {sinCortar(texto.slice(0, i))}
       <TrazoRojo k={k} color={rojo} grosor={5}>{subrayado}</TrazoRojo>
-      {texto.slice(i + subrayado.length)}
+      {sinCortar(texto.slice(i + subrayado.length))}
     </span>
   );
 };
@@ -87,7 +91,7 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
                     <div style={{ width: 80, height: 1, background: alfa(pal.fondo, 0.4), margin: '22px 0 46px' }} />
                     <Renglones ancho={1100} lineas={5} interlinea={52} alto={13} color={pal.fondo} opacidad={0.28} semilla={35} style={{ filter: 'blur(1.2px)' }} />
                     <div style={{ fontFamily: fuente.libro, fontSize: 62, lineHeight: 1.42, textAlign: 'center', margin: '34px 0 40px', maxWidth: 1080,
-                      opacity: tramo(t, tCita + 0.4, 1.2, 'natural') }}>
+                      textWrap: 'balance', opacity: tramo(t, tCita + 0.4, 1.2, 'natural') }}>
                       <Cita texto={props.cita.texto} subrayado={props.cita.subrayado} k={tramo(t, tSub, 1.1, 'natural')} color={pal.fondo} rojo={pal.rojo} />
                     </div>
                     <Renglones ancho={1100} lineas={9} interlinea={52} alto={13} color={pal.fondo} opacidad={0.28} semilla={36} style={{ filter: 'blur(1.2px)' }} />

@@ -53,7 +53,7 @@
         "ficha": "NUEVA YORK · MEMORIAL SLOAN-KETTERING",
         "seccion": "Agradecimientos",
         "cita": {
-          "texto": "…a mis médicos, por alargar estos días para poder completar la tarea.",
+          "texto": "A mis médicos del hospital Memorial Sloan-Kettering les agradezco inmensamente el alargar estos días para poder completar la tarea.",
           "subrayado": "alargar estos días"
         },
         "sellos": [
@@ -186,7 +186,7 @@
           "BENAVIDES",
           "ODRÍA",
           "PRADO",
-          "BELAUNDE",
+          "BELAÚNDE",
           "VELASCO",
           "MORALES BERMÚDEZ",
           "GARCÍA",
@@ -261,7 +261,7 @@
         },
         "funcionario": "funcionario",
         "frase": [
-          "No era derroche.",
+          "No era solo derroche.",
           "Era un mecanismo."
         ],
         "tesis": {
@@ -510,7 +510,7 @@
           "STATE DEPT."
         ],
         "diccionario": {
-          "anio": "1729",
+          "anio": "1729 · 1737",
           "entradas": [
             "cohecho",
             "prevaricato",
@@ -612,7 +612,7 @@
         ],
         "crecimiento": "≈ ½ del crecimiento que no tuvimos",
         "pais": 604,
-        "nota": "Estimados provisionales — Quiroz, Apéndice",
+        "nota": "Estimados preliminares — Quiroz, Apéndice",
         "regla": [
           1750,
           2000

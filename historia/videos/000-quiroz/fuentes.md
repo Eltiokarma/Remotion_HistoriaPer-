@@ -13,8 +13,10 @@ pantalla todavía no coincide con el libro, dice `[VERIFICAR]` y hace fallar
 
 ## Correcciones para el guion
 
-El guion se está reescribiendo; esto es lo que el libro corrige. **No se tocó `escenas.json` ni el
-video.** Lo que está en pantalla va marcado 🖥 y se corrige cuando se rehaga la escena.
+El guion se está reescribiendo; esto es lo que el libro corrige. Lo que estaba en pantalla va
+marcado 🖥 y **ya está corregido** en `escenas.json` (C1, C5, C6, C21, C26); C5 y C21 también en la
+voz provisional de s04 y s08, para que voz y pantalla digan lo mismo. `guion.md` sigue como lo
+escribió Gerson: el resto se aplica al reescribirlo.
 
 ### Cambian un hecho o le ponen al libro palabras que no dice
 
@@ -62,7 +64,7 @@ video.** Lo que está en pantalla va marcado 🖥 y se corrige cuando se rehaga 
 |---|---|---|---|
 | s01 | Revisa las pruebas de la traducción al español | Prólogo, pp. 24–25; nota de los editores; Agradecimientos, p. 33 («traducción del texto, revisada por el autor») | ✔ · C2 |
 | s01 | Ficha `NUEVA YORK · MEMORIAL SLOAN-KETTERING` | Agradecimientos, p. 35 (el hospital está en Nueva York) | ✔ |
-| s01 | Frase en pantalla de los médicos | Agradecimientos, p. 35 | [VERIFICAR] hasta que `s01.props.cita` tenga el texto exacto (C1) |
+| s01 | Frase en pantalla de los médicos | Agradecimientos, p. 35 | ✔ texto exacto en pantalla (C1) |
 | s01 | Si las líneas del hospital y de Alfonsito se escribieron para esta edición o ya estaban en 2008 | *Corrupt Circles* (2008), *Acknowledgments* | [VERIFICAR] (C2, C4) |
 | s01 | Alfonsito | Agradecimientos, p. 35; dedicatoria | ✔ · C4 |
 | s01 | Murió en enero de 2013; el libro salió en mayo (sellos `ENERO 2013` / `MAYO 2013`) | Nota de los editores; créditos («Primera edición: Lima, mayo de 2013») | ✔ |
@@ -75,7 +77,7 @@ video.** Lo que está en pantalla va marcado 🖥 y se corrige cuando se rehaga 
 | s03 | Militancia trotskista contra el régimen | Prólogo, p. 16 | ✔ |
 | s03 | Franklin Pease, Fernand Braudel | Prólogo, p. 16 | ✔ · C11 |
 | s03 | Afiches `REFORMA AGRARIA`, `NACIONALIZACIÓN`, `UN PAÍS NUEVO` | — | Tipografía genérica de época, no son afiches reales (así lo pide el guion) |
-| s03 | Gobernantes de la capa rápida (Virreinato, San Martín, Castilla, Piérola, Leguía, Benavides, Odría, Prado, Belaúnde, Velasco, Morales Bermúdez, García, Fujimori) | Conocimiento general; no salen del libro | [VERIFICAR] — o reemplazarlos por las autoridades que el propio libro reevalúa (p. 55: Amat, Gamarra, Gutiérrez de la Fuente, Echenique, Piérola, Cáceres, Leguía, Prado, Odría, Velasco, García, Fujimori; la lista trae además a Torrico, que el libro muestra como ministro, y a Haya de la Torre, que no gobernó). Ver C26. |
+| s03 | Gobernantes de la capa rápida (Virreinato, San Martín, Castilla, Piérola, Leguía, Benavides, Odría, Prado, Belaúnde, Velasco, Morales Bermúdez, García, Fujimori) | Conocimiento general; no salen del libro | [VERIFICAR] la lista (la tilde de Belaúnde ya está, C26) — o reemplazarlos por las autoridades que el propio libro reevalúa (p. 55: Amat, Gamarra, Gutiérrez de la Fuente, Echenique, Piérola, Cáceres, Leguía, Prado, Odría, Velasco, García, Fujimori; la lista trae además a Torrico, que el libro muestra como ministro, y a Haya de la Torre, que no gobernó). |
 | s04 | Félix Denegri Luna le sugiere el siglo XIX | Prólogo, p. 17 | ✔ · C12 |
 | s04 | Consolidación: pago en 1850 de la deuda interna que venía de la colonia; la promesa de una clase empresarial; la versión del derroche; deuda exagerada y funcionarios cómplices | Prólogo, pp. 17–18 | ✔ · C5 |
 | s04 | Tesis de bachiller, 1980 («La consolidación de la deuda interna peruana, 1850-1858») | Prólogo, p. 17 | ✔ |
@@ -93,7 +95,7 @@ video.** Lo que está en pantalla va marcado 🖥 y se corrige cuando se rehaga 
 | s07 | Objeción 1, clandestina; las fuentes (juicios, investigaciones parlamentarias, diplomáticos) | Introducción, pp. 41–42 | ✔ · C19 |
 | s07 | Sellos `FOREIGN OFFICE`, `QUAI D'ORSAY`, `STATE DEPT.` | Prólogo, p. 23; Agradecimientos, pp. 33–34 (National Archives del Reino Unido en Kew, Archives du Ministère des Affaires Étrangères, U. S. National Archives) | ✔ como metonimia de esos archivos. Falta Madrid (Ministerio de Asuntos Exteriores), si se quiere |
 | s07 | Objeción 2, percepciones; «estimados bien fundados» | Introducción, p. 42 | ✔ |
-| s07 | Objeción 3, relativismo; el diccionario | Introducción, p. 43 y n. 13 | [VERIFICAR] hasta que la pantalla diga `1729 · 1737` (C6) |
+| s07 | Objeción 3, relativismo; el diccionario (`1729 · 1737`) | Introducción, p. 43 y n. 13 | ✔ (C6) |
 | s07 | Objeción 4, cultura | Introducción, p. 44 | ✔ · C7 |
 | s07 | El «aceite» | Introducción, pp. 40–41 y 43 | ✔ · C20 |
 | s07 | «grava en el engranaje» | Apéndice, pp. 536–537 (según el guion) | [VERIFICAR] (C8) |
