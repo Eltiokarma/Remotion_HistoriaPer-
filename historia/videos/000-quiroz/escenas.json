@@ -1,0 +1,114 @@
+{
+  "id": "000-quiroz",
+  "titulo": "El hombre que le sacó la cuenta al Perú",
+  "formato": "largo",
+  "fps": 30,
+  "ancho": 1920,
+  "alto": 1080,
+  "paleta": {
+    "fondo": "#1b1a17",
+    "papel": "#e8e2d4",
+    "ocre": "#c2a878",
+    "rojo": "#8c2f1b"
+  },
+  "pregunta_central": "¿Se puede estudiar la corrupción en el Perú?",
+  "escenas": [
+    {
+      "id": "s01",
+      "seccion": "gancho",
+      "duracion_s": 15,
+      "voz": "voz/000-quiroz/s01.wav",
+      "intensidad": 3,
+      "cambio": "de un desconocido a alguien que pelea contra el tiempo por un libro",
+      "intencion": "abrir con la muerte y el libro sin decir todavía quién es",
+      "transicion_salida": "corte",
+      "beats": { "fecha": 0.4, "correcciones": 5.5, "ultima_hoja": 11.0 },
+      "textos": { "fecha": "NUEVA YORK · 2012" }
+    },
+    {
+      "id": "s02",
+      "seccion": "personaje",
+      "duracion_s": 18,
+      "voz": "voz/000-quiroz/s02.wav",
+      "intensidad": 2,
+      "cambio": "de un historiador cualquiera a un nadador terco que se metió a los archivos",
+      "intencion": "el carril de piscina se vuelve renglón contable: la misma disciplina, otro terreno",
+      "transicion_salida": "corte",
+      "beats": { "nombre": 4.6, "sello": 12.8 },
+      "textos": { "nombre": "ALFONSO W. QUIROZ NORRIS", "anios": "1956–2013", "sello": "PUCP · 1974" }
+    },
+    {
+      "id": "s03",
+      "seccion": "primer hallazgo",
+      "duracion_s": 18,
+      "voz": "voz/000-quiroz/s03.wav",
+      "intensidad": 3,
+      "cambio": "de 'la élite despilfarró el guano' a 'el Estado ayudó a saquearse a sí mismo'",
+      "intencion": "yuxtaposición: la riqueza natural (islas) contra el papel que la vació (libro de cuentas)",
+      "transicion_salida": "corte",
+      "beats": { "libro": 6.0, "cifra": 8.0, "flecha": 13.8 },
+      "textos": {
+        "rotulo": "Consolidación de la deuda · 1850",
+        "concepto": "Deuda interna reconocida",
+        "estado": "Estado"
+      },
+      "cifra": { "desde": 4800000, "hasta": 23200000, "moneda": "pesos", "verificar": true }
+    },
+    {
+      "id": "s04",
+      "seccion": "la pregunta",
+      "duracion_s": 22,
+      "voz": "voz/000-quiroz/s04.wav",
+      "intensidad": 4,
+      "cambio": "de un hallazgo aislado a una conclusión sobre todo el país",
+      "intencion": "el mundo entero se apaga para dejar sola la pregunta; la barra a medias es el golpe",
+      "transicion_salida": "corte",
+      "beats": { "arcos": 1.0, "apagar": 12.0, "pregunta": 12.6, "barra": 17.0 },
+      "textos": {
+        "pregunta": "¿Es factible su estudio?",
+        "barra": "≈ ½ del crecimiento que no tuvimos"
+      },
+      "origen": { "nombre": "Lima", "lon": -77.04, "lat": -12.05 },
+      "archivos": [
+        { "nombre": "Sevilla", "lon": -5.98, "lat": 37.39 },
+        { "nombre": "Madrid", "lon": -3.70, "lat": 40.42 },
+        { "nombre": "París", "lon": 2.35, "lat": 48.86 },
+        { "nombre": "Londres", "lon": -0.13, "lat": 51.51 },
+        { "nombre": "Washington", "lon": -77.04, "lat": 38.90 }
+      ]
+    },
+    {
+      "id": "s05",
+      "seccion": "la serie",
+      "duracion_s": 22,
+      "voz": "voz/000-quiroz/s05.wav",
+      "intensidad": 5,
+      "cambio": "de un libro ajeno a una serie que el espectador va a seguir",
+      "intencion": "cada época ocupa el ancho de sus años: el largo de un período también es un dato",
+      "transicion_salida": "corte",
+      "beats": { "linea": 1.0, "capitulos": 2.0, "paso": 1.5, "pregunta": 15.5 },
+      "fondo_asset": null,
+      "capitulos": [
+        { "desde": 1750, "hasta": 1820 },
+        { "desde": 1821, "hasta": 1859 },
+        { "desde": 1860, "hasta": 1883 },
+        { "desde": 1884, "hasta": 1930 },
+        { "desde": 1931, "hasta": 1962 },
+        { "desde": 1963, "hasta": 1989 },
+        { "desde": 1990, "hasta": 2000 }
+      ]
+    },
+    {
+      "id": "s06",
+      "seccion": "cierre",
+      "duracion_s": 10,
+      "voz": "voz/000-quiroz/s06.wav",
+      "intensidad": 2,
+      "cambio": "de la muerte del autor a la invitación a leerlo",
+      "intencion": "vuelve la pila del inicio y se cierra: el círculo del libro terminado",
+      "transicion_salida": "fundido",
+      "beats": { "cerrar": 1.0, "negro": 4.5, "tarjeta": 5.4 },
+      "textos": { "proximo": "Próximo", "titulo": "1750 — El fracaso de las reformas coloniales" }
+    }
+  ]
+}
