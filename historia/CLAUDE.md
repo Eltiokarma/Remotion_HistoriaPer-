@@ -43,7 +43,9 @@ No tienen excepción.
    como **voz provisional** de trabajo, que nunca se publica.
 2. **Rigor histórico.** Todo dato (fecha, cifra, nombre) tiene su fuente en `fuentes.md` del video.
    Si no la tiene, se marca `[VERIFICAR]` y no se renderiza el final hasta resolverlo. No se
-   inventan datos: si falta uno, se marca y se sigue.
+   inventan datos: si falta uno, se marca y se sigue. Una frase entre comillas o compuesta como cita
+   es **textual**, copiada de la página (las fichas están en `bibliografia/`); si no, se dice sin
+   comillas. Las cautelas del autor («casi con seguridad», «habría», «preliminares») se conservan.
 3. **Imágenes con licencia clara.** Dominio público, CC compatible con uso comercial o material
    propio. Origen y licencia de cada asset en `fuentes.md`.
 4. **Nada de plantillas clonadas.** Cada video tiene al menos una secuencia visual pensada para su
@@ -88,6 +90,7 @@ episodio para inventar. Para *Historia de la corrupción en el Perú*:
 ```
 historia/
 ├── CLAUDE.md                     ← este archivo
+├── bibliografia/                 ← fichas de lectura de los libros de la serie: citas textuales con página
 ├── src/
 │   ├── Root.tsx                  ← registra los videos, cada escena sola y el catálogo
 │   ├── esquema.ts                ← forma de escenas.json (zod) y las reglas de oficio

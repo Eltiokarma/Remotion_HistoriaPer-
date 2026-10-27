@@ -189,8 +189,8 @@ corrupción traba (no aceita). *Hoy:* el mejor tablero del video, pero 80 s de v
 respuesta es una lista, la refutación de la excusa cultural es una frase sin argumento («eso no
 explicaba nada») y la teoría del aceite llega sin anunciarse. *Haría:* una pausa de 2 s después de
 cada tarjeta volteada (con la respuesta a la vista); un ejemplo concreto por respuesta; la
-excusa cultural con el porqué de Quiroz (del libro); el *aceite* como bloque propio, anunciado,
-antes del engranaje.
+excusa cultural con el porqué de Quiroz (p. 44); el *aceite* dentro de la cuarta tarjeta, como lo
+ordena el libro (§7, punto 4), y el engranaje como remate.
 
 **s08 La cuenta** — *Debería quedar:* tres hallazgos, uno por uno, y que son estimados. *Hoy:*
 cinco afirmaciones numéricas en 50 s; las dos cifras de bases distintas, juntas; «el crecimiento
@@ -238,18 +238,18 @@ estimadas a 130 palabras por minuto con la voz en el 70 % del tiempo (hoy, 86 %)
 1. **El guano** y la plata que entra al Estado.
 2. **Qué es una deuda interna** y qué fue la consolidación (presentar los términos).
 3. **Dos versiones**: lo que se prometía (empresarios) y lo que se creyó (derroche), las dos a la vista.
-4. **El mecanismo**, paso a paso en un solo tablero que se arma: **[DEL LIBRO: cómo se inflaba el
-   valor de los vales, quiénes los tenían, quién los reconocía]**.
-5. **«No era derroche. Era un mecanismo.»** + silencio.
+4. **El mecanismo**, paso a paso en un solo tablero que se arma: **[DEL LIBRO, cap. 2, pp.
+   169–181: cómo se inflaba el valor de los vales, quiénes los tenían, quién los reconocía]**.
+5. **«No era solo derroche. Era un mecanismo.»** + silencio (`fuentes.md`, C5).
 6. **La tesis y el libro** (1980, 1987) · puente a la pregunta del año 2000.
 
 ### 0·3 — «¿Se puede medir la corrupción?» (~10 min)
 
 1. **La pregunta del 2000** (s06) y las pruebas.
-2. **Las objeciones** (s07): una tarjeta por párrafo, con ejemplo y pausa; la excusa cultural con
-   el argumento de Quiroz **[DEL LIBRO]**.
-3. **El aceite y la grava**: la teoría de la corrupción útil, anunciada, y el engranaje.
-4. **La cuenta** (s08): una cifra por párrafo; tablero final con las tres; «estimados provisionales».
+2. **Las objeciones** (s07): una tarjeta por párrafo, con ejemplo y pausa; la cuarta, «es
+   cultural, es útil», con el argumento de Quiroz (p. 44) y el *aceite* adentro (§7, punto 4).
+3. **No es cultura: son reglas** (p. 45) y el engranaje que se traba.
+4. **La cuenta** (s08): una cifra por párrafo; tablero final con las tres; «estimados preliminares».
 5. **Contra el fatalismo** (s09): no es destino · «roba, pero hace obra».
 6. **La serie** (s10–s11): los que denunciaron, en el índice; Ulloa y el mercurio; próximo episodio.
 
@@ -315,19 +315,104 @@ Hoy 8 de 11 escenas están en rojo; 3 en amarillo; ninguna en verde.
 
 ---
 
-## 7. Lo que hace falta del libro (el PDF no llegó)
+## 7. Lo que respondió el libro (pp. 1–59)
 
-Para enseñar, no solo afirmar:
+Leídas las primeras 59 páginas (prólogo, prefacio, agradecimientos, introducción). Las citas, con
+página, están en `bibliografia/quiroz-2013.md`; los errores del guion, en `fuentes.md` (C1–C26).
 
-1. Cómo se inflaba la deuda en la consolidación (quién compraba los vales, a cuánto, quién los
-   reconocía, cómo se cobraban) — para el tablero del mecanismo.
-2. El cuadro A.7 del Apéndice — los niveles por época (hoy son un marcador).
-3. El argumento de Quiroz contra la explicación cultural.
-4. De dónde viene la idea de la corrupción como *aceite* (quién la sostuvo) y su respuesta.
-5. Qué entiende Quiroz por *ciclo* de corrupción.
-6. Qué premios ganó *Corrupt Circles* (o quitar la frase).
-7. A qué época/capítulo pertenece cada denunciante (para ponerlos en el índice).
-8. Lo pendiente de `fuentes.md`: la frase textual de los agradecimientos (p. 35) y el hospital.
+### Las preguntas de la primera versión de este diagnóstico
+
+| Pregunta | Respuesta | Pág. |
+|---|---|---|
+| La frase de los agradecimientos y el hospital | «A mis médicos del hospital Memorial Sloan-Kettering les agradezco inmensamente el alargar estos días para poder completar la tarea.» La cita en pantalla de s01 no es esa (C1). | 35 |
+| El argumento contra la explicación cultural | El culturalismo que discute dice que el sur católico es más corrupto que el norte protestante. Responde que el «cambio cultural» es más difícil que las reformas institucionales urgentes y que esa explicación no da cuenta de los intereses y las instituciones (C7). | 44 |
+| De dónde viene el *aceite* | De la ciencia política de los años sesenta (Leff, Bayley, Nye) y de la Guerra Fría, que veía la corrupción latinoamericana como «un mal menor». Para Quiroz, esas ideas «han quedado bastante superadas». | 40–41, 44 |
+| Qué es un *ciclo* | Ver abajo, punto 5. | 48 |
+| Los premios de *Corrupt Circles* | Abraham J. Briloff Prize in Ethics y President's Excellence Award for Scholarship del Baruch College, 2009. | 24–25 |
+| A qué capítulo pertenece cada denunciante | No lo dice la introducción: solo da el orden (Ulloa; luego Domingo Elías, Francisco García Calderón Landa, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya, Mario Vargas Llosa). | 55 |
+| Cómo se infló la deuda en la consolidación | No está en estas páginas: cap. 2, pp. 169–181, y cuadro A.2 (p. 542). | — |
+| Los niveles por época del gráfico de s08 | No están en el A.7 (que da porcentajes) sino en los cuadros 1.2, A.4 y A.6 (pp. 125, 548, 550). | — |
+
+### Lo que el libro agrega para enseñar
+
+Esto no estaba en el guion y le da a cada episodio de la propuesta (§4) lo que le faltaba: un
+concepto, un ejemplo o un argumento.
+
+1. **Qué es la corrupción.** El video nunca la define. Quiroz sí (p. 38): «el mal uso del poder
+   político-burocrático por parte de camarillas de funcionarios, coludidos con mezquinos intereses
+   privados». Y aclara que no es solo «el tosco saqueo de los fondos públicos»: también sobornos,
+   mala asignación del gasto, fraude electoral, financiamiento ilegal de partidos. Es el concepto
+   que hay que presentar antes de usarlo (F5). Va al comienzo de 0·3.
+2. **De dónde salió la pregunta.** El guion salta de la tesis de 1980 al ensayo de 2000. El
+   prefacio cuenta el camino (p. 31): después del guano siguió encontrando escándalos y notó que la
+   corrupción «no era algo esporádico sino, más bien, un elemento sistémico»; en 1995 leyó a los
+   economistas que medían su impacto en el crecimiento y se le ocurrió unir «el desarrollo frustrado
+   del pasado y los niveles históricos de corrupción». Es el puente entre 0·1 y 0·3.
+3. **Una rima que estructura la serie.** El ensayo de 2000 fue un capítulo del **libro de homenaje
+   a Félix Denegri Luna** (p. 23), el mismo que le había dicho que mirara el siglo XIX (p. 17).
+   Denegri abre su primer caso y le da lugar a la pregunta veinte años después.
+4. **Las objeciones, ordenadas como en el libro.** Son siete (pp. 40–45), y el *aceite* no es una
+   quinta idea: pertenece a la familia cultural («los sistemas políticos premodernos realmente
+   necesitan la corrupción como un lubricante», p. 43). Si la tarjeta 04 es **«ES CULTURAL, ES
+   ÚTIL»**, el aceite entra anunciado y F8 desaparece. Además, cada respuesta trae un ejemplo
+   concreto: *pesquisas* y *juicios de residencia* (01), los estimados (02), las tres palabras del
+   diccionario con su glosa (03), el sur católico frente al norte protestante (04).
+5. **Qué es un ciclo, y cómo encaja con Braudel.** El libro distingue dos ciclos (p. 48): el de la
+   **corrupción sistémica**, «más orgánica», ligada a las instituciones, los auges exportadores y
+   las redes; y el de la **corrupción percibida**, «más volátil», que sube y baja con los
+   escándalos y los medios. Son las capas de s03: los escándalos van arriba, rápidos; la corrupción
+   sistémica, abajo, lenta. **El mismo diagrama de las tres capas puede explicar los ciclos** al
+   final de la serie de presentación, y «Siete capítulos. Siete ciclos.» deja de ser una palabra
+   sin explicar (F6).
+6. **No es cultura: son reglas.** La respuesta de fondo (p. 45): la corrupción se vuelve sistémica
+   cuando las reglas que protegen la propiedad, abaratan los tratos, frenan el *rent seeking* y
+   ponen pesos y contrapesos «son inexistentes, están distorsionadas o se muestran inestables». Y
+   es a la vez causa y consecuencia de instituciones débiles (pp. 45–46): un diagrama de dos
+   flechas.
+7. **El historiador no es juez** (p. 43): «La falta de sentencias condenatorias no implica que no
+   haya habido corrupción». La prueba histórica es de probabilidad, no de certeza. Hace falta
+   decirlo una vez en la serie: explica por qué se puede hablar de casos sin condena, y protege al
+   canal.
+8. **El argumento contra «roba, pero hace obra»** (s09 lo pedía): los contratistas que pagan
+   sobornos trasladan ese costo «a los costos generales de los proyectos públicos» (p. 47). La obra
+   misma sale más cara: **el soborno lo paga la obra**. Es una imagen para el cartel: el precio de
+   la obra con el soborno adentro.
+9. **Contra el fatalismo, con ejemplos.** Francia vendía los cargos públicos hasta 1789; Inglaterra
+   tuvo su «vieja corrupción» y la redujo con reformas entre 1780 y mediados del siglo XIX (pp.
+   49–51). Ningún país nace limpio. Y el tono que Quiroz eligió: no «pesimista o acusador», sino
+   rastrear las reformas olvidadas para «resaltar la posibilidad y la promesa de una reforma» (p.
+   57). Eso es lo que el canal quiere enseñar.
+10. **Por qué le importa a quien mira.** Cueto (p. 29): sus estudios ayudan a pensar «por qué
+    existe un patrón a mirar el corto plazo y embriagarnos por algunos de los escándalos que
+    compiten por nuestra atención en lugar de mirar al desarrollo en el largo plazo». Es la
+    corrupción percibida contra la sistémica, dicha para el público.
+11. **Las cinco preguntas de Quiroz** (p. 32) pueden ser la promesa de la serie: ¿cómo afectó la
+    corrupción al país?, ¿cuánto costó?, ¿frena el desarrollo?, ¿por qué algunos países la
+    controlaron y otros no?, ¿por qué no se había estudiado?
+12. **El cierre ya está en Cueto.** «Vamos a leerlo» es casi su frase: «Únicamente nos queda leer y
+    estudiar sus publicaciones» (p. 29). Y la confesión fue en vida: «tuve el privilegio de
+    confesarle que siempre había querido ser como él».
+
+### Cómo cambia la propuesta (§4)
+
+- **0·1** gana la rima de Denegri y el camino de la pregunta (punto 2) como puente final, en vez
+  de saltar a 2000.
+- **0·2** sigue esperando el cap. 2 (pp. 169–181) para el tablero del mecanismo. Sin eso, el
+  episodio afirma pero no enseña.
+- **0·3** empieza por la definición (1), ordena las objeciones como el libro (4), cierra el método
+  con «no es cultura: son reglas» (6) y «el historiador no es juez» (7), y el bloque de la serie
+  explica los ciclos con las capas (5).
+
+### Lo que todavía falta del libro
+
+| Para | Páginas |
+|---|---|
+| El mecanismo de la consolidación (0·2) | cap. 2, pp. 169–181; cuadro A.2, p. 542 |
+| Las cifras y los niveles por época (s08) | Apéndice, pp. 535–554; cuadros 1.2 (p. 125), A.4 (p. 548), A.6 (p. 550), A.7 (p. 551) |
+| Cómo terminó Ulloa («Y perdió.») | cap. 1, pp. 59–81 |
+| Si «grava en el engranaje» es de Quiroz | Apéndice, pp. 536–537 |
+| Si la línea del hospital ya estaba en 2008 | *Corrupt Circles*, *Acknowledgments* |
+| Lugar de nacimiento | otra fuente |
 
 ---
 

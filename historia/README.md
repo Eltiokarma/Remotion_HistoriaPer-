@@ -48,6 +48,8 @@ public/
     fuentes/  texturas/  audio/sfx/  audio/ambiente/
   videos/000-quiroz/           ← lo propio de un video
     musica/  voz-provisional/  voz/ (fuera de git)  imagenes/ (fuera de git)
+bibliografia/                  ← fichas de lectura (citas textuales con página), una por libro
+  quiroz-2013.md               ← el libro de la serie: índice, cuadros, prólogo, prefacio, introducción
 src/
   escenas/                     ← catálogo de escenas: cada una en su carpeta
     Presentacion/  esquema.ts (qué datos acepta, beats, ejemplo) + Escena.tsx (la coreografía)
@@ -241,9 +243,10 @@ npx remotion render v000-quiroz-s04 out/s04.mp4
 
 ## Pendiente
 
-- Cotejar con el libro todo lo de `fuentes.md`. Lo urgente, marcado `[VERIFICAR]`: la frase
-  textual de los agradecimientos (s01), el nombre del hospital (s01), la lista de gobernantes de
-  la capa rápida (s03) y **los niveles por período del gráfico de s08, que son un marcador**.
+- Cotejado con el libro hasta la p. 59 (`bibliografia/quiroz-2013.md`). `fuentes.md` lista 26
+  correcciones para el guion (C1–C26) y lo que sigue `[VERIFICAR]`: la cita de s01 en pantalla,
+  las cifras y **los niveles por período de s08, que son un marcador** (Apéndice, pp. 535–554),
+  el desenlace de Ulloa (cap. 1), la «grava» (pp. 536–537) y el lugar de nacimiento.
 - Grabar la voz real, cuadrar los beats con ella (`"beats_ajustados": true`) y recomponer la
   música (`npm run generar:audio -- 000-quiroz --forzar`).
 - Subtítulos nativos en Remotion (el guion lo propone): `tiempos.json` ya da el punto de partida.
