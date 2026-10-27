@@ -11,7 +11,8 @@ Es el libro de toda la serie, así que estas fichas sirven a todos los videos. C
 
 **Leído hasta ahora:** pp. 1–82 (créditos, índice, nota de los editores, dedicatoria, prólogo de
 Marcos Cueto pp. 15–29, prefacio pp. 31–32, agradecimientos pp. 33–35, introducción pp. 37–57,
-capítulo 1 pp. 59–82), pp. 170–182 (la consolidación, cap. 2) y pp. 536–546 (Apéndice). Las páginas
+capítulo 1 pp. 59–82), pp. 121–128 (ciclos coloniales, cap. 1), pp. 164–190 (el guano y la
+consolidación, cap. 2) y pp. 535–554 (el Apéndice entero). Las páginas
 son **las del libro impreso**, no las del PDF: en el PDF del libro, la página *n* del archivo es la
 *n + 1* del libro.
 
@@ -483,11 +484,104 @@ un texto fundador de la tradición anticorrupción en las letras hispanas y peru
 - Una visita de 1649 concluye que la operación de Huancavelica «no merecía llevar la denominación
   de "mina"» (p. 82).
 
+**Ciclos de corrupción colonial (pp. 121–127).**
+
+- **La secuencia** (pp. 121–122): «(i) un nivel sumamente alto de corrupción desde al menos la
+  segunda mitad del siglo XVII hasta el temprano XVIII, (ii) una caída temporal aunque ligera desde
+  el decenio de 1720 hasta el de 1740, (iii) un incremento marcado desde el decenio de 1750 al de
+  1770, (iv) una caída breve pero significativa en las décadas de 1780 y 1790, (v) un ligero
+  incremento en la primera década del XIX, y (vi) una aguda alza en la década anterior a la
+  independencia.» Ulloa llega a Huancavelica en la subida (iii).
+- **Cuatro formas de costo** (p. 122): el «premio» del virrey (ganancias ilegales); lo que
+  exprimían los cargos venales (gobernador, corregidor, oidor); la ineficiencia (deudas no cobradas,
+  minas descuidadas); y las rentas perdidas por el contrabando (costo indirecto).
+- **Los virreyes que más amasaron** (p. 123): Castelldosrius, Amat y Junyent, y Pezuela; los menos
+  expuestos al enriquecimiento: Monclova, Castelfuerte y Gil de Taboada.
+- **Cuadro 1.1** (p. 124), costo total por año en millones de pesos: Villar (1584-1589) 2,5 ·
+  Mancera (1639-1648) 2,1 · Monclova (1689-1705) 2,3 · Castelldosrius (1707-1710) 2,3 · Castelfuerte
+  (1724-1736) 1,5 · Amat y Junyent (1761-1776) 2,3 · Gil de Taboada (1790-1796) 1,3 · Pezuela
+  (1816-1821) 2,0.
+- **Cuadro 1.2** (p. 125), nivel de corrupción por década, como % del gasto fiscal y % del PBI
+  (el PBI se estima por la producción de plata):
+
+  | Década | % gasto | % PBI |
+  |---|---|---|
+  | 1680-1689 | 40 | 4 |
+  | 1690-1699 | 50 | 5 |
+  | 1700-1709 | 61 | 9 |
+  | 1710-1719 | 88 | 7 |
+  | 1720-1729 | 58 | 5 |
+  | 1730-1739 | 65 | 5 |
+  | 1740-1749 | 77 | 5 |
+  | 1750-1759 | 59 | 4 |
+  | 1760-1769 | 55 | 4 |
+  | 1770-1779 | 43 | 3 |
+  | 1780-1789 | 38 | 5 |
+  | 1790-1799 | 28 | 2 |
+  | 1800-1809 | 33 | 3 |
+  | 1810-1819 | 41 | 4 |
+
+- **Lo que dicen las cifras** (p. 126): entre 1690 y 1719, «un asombroso 66 por ciento» del gasto
+  y hasta el 7 % del PBI; de 1730 a 1770, cerca del 60 % del gasto «pero solamente el 4,2 por
+  ciento del PBI»; los niveles más bajos, entre 1780 y 1809 (30 % y 3,3 %); al final, 41 % y 4 %.
+- **El veredicto** (p. 126): «A pesar de serios intentos por efectuar reformas, la corrupción
+  profundamente arraigada venció.»
+- **La herencia** (p. 127): sin «una tradición significativa de pesos y contrapesos
+  constitucionales y una división de poderes, las nuevas estructuras de poder surgidas en la
+  década de 1820 se basaron en redes de patronazgo muy bien arraigadas, que fueron dominadas por
+  los caudillos militares».
+
 ---
 
-## 7. Capítulo 2: la consolidación de la deuda (pp. 170–182)
+## 7. Capítulo 2: el guano y la consolidación (pp. 164–190)
 
-(La sección empieza en la p. 169, que falta.)
+**Elías antes de la consolidación (p. 164).** «Aunque movido por sus propios intereses, Elías
+eventualmente denunció la corrupción existente entre los caudillos militares y puso en riesgo su
+fortuna, su libertad y su vida.» Candidato en 1850 por el Club Progresista, «el primer partido
+civil».
+
+**El guano (pp. 164–169).**
+
+- **Cómo se supo** (pp. 164–165): «En 1841, los diplomáticos extranjeros informaron a sus gobiernos
+  del descubrimiento de una nueva fuente de riqueza peruana. Uno de estos informes decía que
+  "generalmente se supone que el *huano* es el excremento de aves marinas [...]. Se le encuentra en
+  gran abundancia en unas pequeñas islas unos cuantos grados al sur de Lima, y se le ha usado en la
+  agricultura como abono desde tiempos inmemoriales [... Se] vende en Inglaterra a diez dólares la
+  tonelada dando una ganancia neta de al menos 50 [por ciento]".» (Carta del diplomático
+  estadounidense Pickett, Lima, 27 de noviembre de 1841, n. 99.)
+- **El primer contrato** (p. 165): en noviembre de 1840, Gamarra y su ministro de Hacienda Castilla
+  dieron el primer monopolio a Francisco Quirós y sus socios franceses, que «solamente pagó 90.000
+  pesos (18.000 libras) en cuotas en efectivo y billetes para la extracción y venta ilimitadas del
+  guano en Europa por nueve años». Se rescindió en 1841. «Fuentes independientes dan fe del pago de
+  sobornos a las más altas autoridades para así conseguir estos contratos.»
+- **Las consignaciones** (pp. 166–167): el Estado era el dueño; las casas consignatarias vendían y
+  cobraban comisión, adelantaban plata al gobierno a intereses de «hasta el uno por ciento mensual»
+  y pagaban sobornos: «los consignatarios tenían pocos incentivos para reducir los costos de
+  intermediación o para ser honestos con las cuentas del guano». La principal, Antony Gibbs & Sons
+  (1842-1861); una comisión de 1856 «dejó a Gibbs sin castigo» (p. 168).
+- **Adónde fue la renta** (pp. 168–169): «las rentas guaneras fueron usadas por los gobiernos
+  peruanos fundamentalmente en gastos improductivos», y «se diseñaron otros mecanismos dañinos y
+  engañosos, como la consolidación de la deuda interna y la compensación dada a los dueños por la
+  manumisión de esclavos, para beneficiar unos mezquinos intereses mediante los recursos públicos
+  del guano.» Un contemporáneo, Santiago Távara (1856): «nada más precario y peligroso que la
+  riqueza repentina» (n. 110).
+
+**Qué era la deuda interna (p. 169).** Lo que el Estado les debía a sus propios ciudadanos. «La
+deuda en que se incurrió por las expropiaciones y los préstamos forzosos, en general, no había sido
+reconocida, o había sido garantizada con billetes gubernamentales extremadamente depreciados. A este
+primer tipo de deuda, que era de lejos el más grande, pertenecían también los créditos genuinos,
+debidos a prestamistas privados de fines de la época colonial.» El segundo tipo: los préstamos de
+emergencia de un grupo de comerciantes en las décadas de 1830 y 1840, con pago privilegiado; en 1850
+sumaban un millón de pesos al 1–2 % mensual.
+
+**La consolidación era una buena idea (p. 169).** «Uno de los escándalos de corrupción mejor
+documentados en la temprana historia republicana está vinculado a la "consolidación" de la deuda
+interna en la década de 1850.» Su meta declarada era «renovar la confianza en el crédito público
+nacional»: «se reconocía clara y públicamente, luego de décadas de descuido y abusos, que una deuda
+interna bien servida era la base sobre la cual se podía sustentar el desarrollo financiero y
+económico del país. […] La consolidación de la deuda interna fue, pues, un fundamento importante
+del crédito público moderno en el Perú.» Lo que la corrompió fue cómo se hizo (los huecos de la ley,
+abajo).
 
 **La ley y sus huecos (p. 170).** Desde fines de la década de 1840, los créditos no reconocidos «que
 databan de la guerra de independencia» se garantizaron con cédulas y vales de consolidación. La ley
@@ -564,11 +658,61 @@ de más grande, más noble y más generoso: en su moral, su religión y sus leye
 periodo 1855-1858 se perdió así otra oportunidad histórica de introducir reformas y controles
 eficaces contra la corrupción.» (p. 182)
 
+**¿Los castigaron? (pp. 182–186).**
+
+- Caído Echenique, la Junta de Examen Fiscal investigó; «La investigación fue exhaustiva e
+  inicialmente contó con el respaldo del poder ejecutivo y el legislativo» (p. 183). Encontró «12,2
+  millones de pesos (más de la mitad de toda la deuda interna consolidada) en 141 expedientes
+  irregulares o ilegales, y cuatro robados» (n. 147).
+- Una ley del 29 de diciembre de 1856 suspendió el pago de los vales fraudulentos y frenó la
+  conversión. «Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país,
+  entre ellas Torrico, Echenique y Mendiburu.» (p. 183)
+- Vino la presión: los tenedores alegaban que los vales eran como billetes endosados y no debían
+  perder; los diplomáticos de Gran Bretaña y Francia los respaldaron; el general Vivanco se alzó y
+  barcos ingleses y franceses rondaban las islas (pp. 183–185).
+- El final: «Bajo presión local y externa, Castilla y el Congreso decretaron la ley del 11 de marzo
+  de 1857 que restauró todos los acuerdos suspendidos en materia de bonos y conversión. Esta ley de
+  "tabla rasa" absolvía, en efecto, a los especuladores y funcionarios que se beneficiaron de los
+  abusos de la consolidación y conversión.» (p. 185)
+- Después: en 1858, un agente francés declaró haber sobornado al canciller Ortiz de Zevallos con
+  50.000 pesos; el ministro reveló que un soborno de 70.000 «había sido repartido entre los miembros
+  del Congreso» (p. 186). Elías, que se opuso a restituir los vales, tuvo que dejar el gabinete; se
+  retiró de la política hasta su muerte en 1867 (pp. 186–187).
+
+**Elías, según Quiroz (p. 187):** «En su madurez política, Elías defendió importantes reformas y
+medidas para contener la corrupción, pero no dejó de beneficiarse de los monopolios y compensaciones
+oficiales que comprometieron flagrantes conflictos de intereses, apadrinados por los caudillos
+militares a quienes apoyó en su momento.»
+
+**La conclusión del capítulo (pp. 187–189).**
+
+- La ley resultante: «un conjunto de normas innecesariamente complejas, poco claras y
+  contradictorias, que inflaban significativamente los costos de transacción» (p. 188).
+- «Dicha forma de corrupción financiera fue una costosa "innovación" hispanoamericana posterior a
+  la independencia, al utilizar los mecanismos de la deuda pública para "esconder" o lavar sobornos
+  y otras ganancias indebidas.» (p. 188)
+- «Excepción hecha de la década de 1820, los niveles más altos como porcentaje del gasto (63 por
+  ciento) y del PBI (4,3 por ciento) se alcanzaron en el decenio de 1850. […] podemos considerar los
+  gobiernos de Echenique-Torrico (1851-1855) y Gamarra-La Fuente (1829-1833) como los más
+  corruptos del temprano periodo republicano» (p. 189).
+- Los reformadores civiles «fueron relevantes para exponer serios defectos administrativos y de
+  corrupción, también fueron demasiado débiles para imponerse y no estuvieron exentos de sus propios
+  intereses particulares.» (p. 189)
+- «Una indomable corrupción había, pues, sentado las condiciones para un mayor abuso a costa de la
+  renta del guano, del crédito público y de los contratos de obras públicas durante el siguiente
+  ciclo de depredación.» (p. 189)
+
 ---
 
-## 8. Apéndice: cómo midió (pp. 536–546)
+## 8. Apéndice: cómo midió (pp. 535–554)
 
-(Faltan la p. 535 y las pp. 547–554, con los cuadros A.4 a A.7 y las conclusiones.)
+- **Qué mide (p. 535):** «Este es un intento de calcular de manera aproximada los costos de la
+  corrupción a lo largo de la historia moderna del Perú. […] el presente es un cálculo provisional
+  sujeto a revisiones.» Dos costos: (1) los fondos desviados, directos e indirectos, que «no
+  llegaron a su objetivo público o de desarrollo»; (2) el daño a las instituciones (costo
+  institucional), sobre todo cualitativo. «La mayoría de los fondos desviados o redirigidos por las
+  prácticas corruptas tienden a salir del país, para así protegerlos o lavarlos.» Se mide «como
+  porcentaje del gasto gubernamental total y el producto bruto interno (PBI)».
 
 - **El método (p. 536):** primero la década de 1850 (consolidación, conversión, manumisión); luego
   los costos directos e indirectos por década en los siglos XIX y XX, «midiéndolos en relación con
@@ -625,16 +769,105 @@ eficaces contra la corrupción.» (p. 182)
   Nota del cuadro: «1 peso = 8 reales = 1 dólar americano. En 1863, Perú adoptó el sol de 10
   reales; 1 sol = 0,925 de dólar americano.»
 
+- **Por qué se mide en porcentajes (p. 547):** «Aunque los costos estimados reales más altos de la
+  corrupción correspondieron a las décadas de 1860 y 1870, el mayor gasto gubernamental y la
+  producción en estas décadas contribuyeron a que se dieran unos niveles relativamente más bajos de
+  corrupción.» Para 1820-1899: «una media anual de casi el 57 por ciento de los gastos y de 4,3 por
+  ciento del PBI»; «Estos niveles no eran muy distintos de los del tardío periodo colonial».
+- **Cuadros A.4 (p. 548) y A.6 (p. 550)**, nivel de corrupción por década, como % del gasto del
+  gobierno y % del PBI:
+
+  | Década | % gasto | % PBI | | Década | % gasto | % PBI |
+  |---|---|---|---|---|---|---|
+  | 1820-1829 | 135 | 6,1 | | 1900-1909 | 25 | 1,0 |
+  | 1830-1839 | 79 | 4,3 | | 1910-1919 | 28 | 1,1 |
+  | 1840-1849 | 42 | 4,2 | | 1920-1929 | 72 | 3,8 |
+  | 1850-1859 | 63 | 4,3 | | 1930-1939 | 31 | 3,1 |
+  | 1860-1869 | 32 | 3,5 | | 1940-1949 | 42 | 3,3 |
+  | 1870-1879 | 20 | 4,6 | | 1950-1959 | 46 | 3,6 |
+  | 1880-1889 | 41 | 5,0 | | 1960-1969 | 31 | 3,7 |
+  | 1890-1899 | 47 | 2,2 | | 1970-1979 | 42 | 4,9 |
+  | | | | | 1980-1989 | 35 | 3,9 |
+  | | | | | 1990-1999 | 50 | 4,5 |
+
+  Más del 100 % del gasto (1820-1829) es posible porque el costo incluye pérdidas indirectas, como
+  la inversión que no llegó.
+- **Cuadro A.5 (p. 549)**, millones de dólares por año, por formas (deuda; corrupción presidencial
+  y militar; sobornos en adquisiciones; contrabando y narcotráfico; inversión perdida). Totales:
+  1900s 2,2 · 1910s 5,0 · 1920s 31,1 · 1930s 16,5 · 1940s 29,0 · 1950s 67,9 · 1960s 178,6 · 1970s
+  618,0 · 1980s 1.010,0 · 1990s 2.038,0 (la última fila dice «1900-1999» *[sic]*: son los valores de
+  1990-1999 del cuadro A.6). Para los años noventa, A.5 y A.6 cuentan más formas que el A.1
+  (p. 541), por eso dan 50 % del gasto y no 34 %.
+- **Cuadro A.7 (pp. 551–553)**, por periodo de gobierno, % del gasto público y % del PBI:
+
+  | # | Gobierno (años) | % gasto | % PBI | Costos y condiciones institucionales (resumen) |
+  |---|---|---|---|---|
+  | 1 | Colonia tardía (1810-1820) | 41 | 4,0 | fracaso de las reformas, contrabando |
+  | 2 | Independencia temprana (1821-1829) | 139 | 6,1 | colapso del crédito público, expolios de caudillos |
+  | 3 | Gamarra/La Fuente (1829-1833, 1839-1841) | 80 | 4,7 | finanzas de emergencia, patronazgo de caudillos |
+  | 4 | Castilla 1.º (1845-1851) | 41 | 4,1 | contratos exclusivos del guano |
+  | 5 | Echenique (1851-1855) | 65 | 5,0 | crédito dañado, dependencia de los adelantos del guano |
+  | 6 | Castilla 2.º, Pezet, M. I. Prado 1.º (1855-1868) | 33 | 3,5 | derrota de medidas anticorrupción |
+  | 7 | Díez Canseco, Balta/Piérola (1868-1872) | 24 | 5,0 | endeudamiento, obras onerosas (Meiggs, Contrato Dreyfus) |
+  | 8 | Manuel Pardo, M. I. Prado 2.º (1872-1879) | 18 | 3,5 | crisis heredada, defensa debilitada |
+  | 9 | Piérola 1.º, Iglesias (1879-1881, 1882-1885) | 70 | 5,5 | expolios en la guerra, ocupación extranjera |
+  | 10 | Cáceres, Morales Bermúdez, Borgoño (1886-1895) | 47 | 4,0 | control militarista, Contrato Grace |
+  | 11 | Piérola 2.º (1895-1899) | 40 | 2,2 | alianza venal con camarillas financieras |
+  | 12 | Civilistas (1899-1908) | 25 | 1,0 | control de cuerpos electorales |
+  | 13 | Leguía 1.º (1909-1912) | 30 | 2,0 | patronazgo, mayor deuda |
+  | 14 | Billinghurst, Benavides 1.º, José Pardo 2.º (1913-1919) | 25 | 1,0 | inestabilidad, militares «profesionales» |
+  | 15 | Oncenio de Leguía (1919-1930) | 72 | 3,8 | endeudamiento, dictadura, censura |
+  | 16 | Sánchez Cerro (1931-1933) | 34 | 3,5 | represión, nepotismo |
+  | 17 | Benavides 2.º (1933-1939) | 30 | 2,6 | dictadura, manipulación electoral |
+  | 18 | Manuel Prado 1.º (1939-1945) | 43 | 3,4 | recompensas militares, primeras bandas de narcotraficantes |
+  | 19 | J. L. Bustamante (1945-1948) | 41 | 3,2 | controles de precios, inflación |
+  | 20 | Ochenio de Odría (1948-1956) | 47 | 3,7 | dictadura, elecciones arregladas |
+  | 21 | Manuel Prado 2.º (1956-1962) | 45 | 3,5 | pactos políticos inescrupulosos |
+  | 22 | Belaúnde 1.º (1963-1968) | 30 | 3,4 | favores a militares, contrabando |
+  | 23 | «Revolución» militar (1968-1980) | 43 | 5,0 | dictadura, empresas estatales ineficientes, narcotráfico |
+  | 24 | Belaúnde 2.º (1980-1985) | 33 | 3,8 | Estado no reformado, rescate de bancos |
+  | 25 | Alan García 1.º (1985-1990) | 37 | 4,0 | hiperinflación, mercados negros |
+  | 26 | Fujimori/Montesinos (1990-2000) | 50 | 4,5 | captura depredadora de las instituciones del Estado |
+
+  La última columna resume la del libro; para citarla, copiar el texto de las pp. 551–553.
+- **La escala (p. 554), textual:** «(1) se pueden clasificar como periodos de muy alta corrupción
+  aquellos en los cuales los niveles de los costos desviados e indirectos de la corrupción fueron
+  equivalentes a más del 30 por ciento del presupuesto anual y a entre 4 y 6 por ciento del PBI; (2)
+  los periodos en los cuales los niveles de corrupción fueron equivalentes a entre 20 y 29 por
+  ciento del presupuesto y a 2,1 y 3,9 por ciento del PBI pueden ser considerados de alta
+  corrupción; y (3) los periodos en los cuales la corrupción equivalió a menos del 20 por ciento del
+  presupuesto y a 1 o 2 por ciento del PBI pueden considerarse de corrupción moderada. En este
+  examen histórico e intento de cálculo no se detectaron evidencias de periodos de corrupción baja
+  o muy baja.» (Los dos criterios, gasto y PBI, no siempre dan la misma categoría: 1870-1879 es 20 %
+  del gasto y 4,6 % del PBI.)
+- **Los ciclos republicanos (p. 554), textual:** «Partiendo del periodo colonial tardío, en el que se
+  asume que los niveles de corrupción eran muy altos, los ciclos subsiguientes de corrupción en la
+  historia republicana posterior a la independencia se pueden describir del siguiente modo: niveles
+  muy altos en las décadas de 1820 y 1830; el retorno a estos mismos niveles en el decenio de 1850 y
+  comienzos de los de 1870 y 1880; niveles moderados desde finales de la década de 1890 y la de
+  1910; un fuerte incremento hasta alcanzar niveles sumamente elevados en el decenio de 1920;
+  niveles nuevamente de moderados a altos en las décadas de 1930 y 1940; y un incremento constante
+  hasta niveles más elevados en las décadas de 1950, 1960 y 1970, alcanzando rangos altos a finales
+  de 1980 y durante la década de 1990.»
+- **La conclusión (p. 554), textual:** «A un nivel promedio anual estimado de alrededor de entre 30
+  y 40 por ciento de los gastos del presupuesto, y de entre 3 y 4 por ciento del PBI en el largo
+  plazo (años de 1820 a 2000), el costo de la corrupción para el desarrollo económico y social
+  peruano en su historia republicana ha sido estructural y consistentemente alto o muy alto, pese a
+  las variaciones cíclicas. Considerando que para alcanzar un crecimiento autosostenido se requiere
+  de una tasa de crecimiento media anual del PBI de entre 5 y 8 por ciento en el largo plazo, debido
+  a la corrupción sistemática y descontrolada, el Perú perdió o distribuyó mal el equivalente de
+  aproximadamente el 40 a 50 por ciento de sus posibilidades de desarrollo.»
+
 ---
 
 ## 9. Lo que todavía no está leído (y dónde está)
 
+Para el arco de presentación (0·1 a 0·3) ya no falta nada del libro. Pendiente:
+
 | Hace falta | Dónde (libro) | En el PDF del libro |
 |---|---|---|
-| Las cifras de s08 para 1820–2000 (30–40 % del gasto, 3–4 % del PBI, la mitad del crecimiento) | Apéndice, pp. 547–554; cuadro A.7, p. 551 | 546–553 |
-| Los niveles por época y sus nombres («moderada / alta / muy alta» en el guion; «alta, media o baja» en la p. 539) | cuadros A.4 (p. 548) y A.6 (p. 550); para la colonia, 1.2 (p. 125) | 547, 549, 124 |
-| El comienzo de la consolidación y del Apéndice | pp. 169 y 535 | 168 y 534 |
-| El detalle de la gestión de Ulloa (para el episodio 1) | «Purgatorio minero», pp. 82–92 | 81–91 |
+| El detalle de la gestión de Ulloa y el resto del cap. 1 (para el episodio 1) | pp. 82–121 | 81–120 |
+| El Epílogo (tono, «contra el fatalismo») | pp. 521–534 | 520–533 |
+| En qué capítulo está cada denunciante (Elías ya está: cap. 2) | capítulos 3–7 | — |
 | Si las líneas del hospital y de Alfonsito ya estaban en 2008 | *Corrupt Circles* (2008), *Acknowledgments* | — |
 | Lugar de nacimiento | otra fuente | — |
-| En qué capítulo está cada denunciante (Elías ya está: cap. 2) | capítulos 3–7 | — |

@@ -318,9 +318,9 @@ Hoy 8 de 11 escenas están en rojo; 3 en amarillo; ninguna en verde.
 ## 7. Lo que respondió el libro
 
 Leídas las pp. 1–82 (prólogo, prefacio, agradecimientos, introducción y capítulo 1 hasta
-«Purgatorio minero»), las pp. 170–182 (la consolidación) y las pp. 536–546 (Apéndice). Las citas,
-con página, están en `bibliografia/quiroz-2013.md`; los errores del guion, en `fuentes.md`
-(C1–C27).
+«Purgatorio minero»), las pp. 121–128 (ciclos coloniales), las pp. 164–190 (el guano y la
+consolidación) y las pp. 535–554 (el Apéndice entero). Las citas, con página, están en
+`bibliografia/quiroz-2013.md`; los errores del guion, en `fuentes.md` (C1–C28).
 
 ### Las preguntas de la primera versión de este diagnóstico
 
@@ -333,7 +333,7 @@ con página, están en `bibliografia/quiroz-2013.md`; los errores del guion, en 
 | Los premios de *Corrupt Circles* | Abraham J. Briloff Prize in Ethics y President's Excellence Award for Scholarship del Baruch College, 2009. | 24–25 |
 | A qué capítulo pertenece cada denunciante | No lo dice la introducción: solo da el orden (Ulloa; luego Domingo Elías, Francisco García Calderón Landa, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya, Mario Vargas Llosa). | 55 |
 | Cómo se infló la deuda en la consolidación | Ver abajo, punto 13. | 170–172 |
-| Los niveles por época del gráfico de s08 | Todavía no: están en los cuadros 1.2, A.4 y A.6 (pp. 125, 548, 550). Y ojo con los nombres: el Apéndice habla de corrupción «alta, media o baja» (p. 539), no de «moderada, alta o muy alta» (C27). | — |
+| Los niveles por época del gráfico de s08 | La escala es la del guion: moderada, alta, muy alta; ninguna baja (C27). Los datos por década y por gobierno están en los cuadros 1.2, A.4, A.6 y A.7, y el marcador de hoy los contradice. Ver punto 27. | 125, 548–554 |
 | Si «grava» es de Quiroz | Sí: «En lugar de "aceitar" la burocracia, la corrupción actúa, en realidad, como "grava" en la maquinaria de las instituciones del sector público.» | 536–537 |
 | Cómo terminó Ulloa («Y perdió.») | Lo enfrentaron «poderosos intereses creados», vivió un «calvario» y en 1763 pedía que lo relevaran. El detalle está en «Purgatorio minero» (pp. 82–92). | 59–60, 63, 72 |
 
@@ -429,10 +429,15 @@ concepto, un ejemplo o un argumento.
 16. **La palabra de 0·2:** en la década de 1850 a esa red se la llamó **los consolidados**, «un
     término usado extensamente en ese entonces para denotar a personas vinculadas a la corrupción o
     robo políticos» (p. 174). Una palabra clave por episodio (gramática de la serie).
-17. **Otra década perdida** (pp. 540, 543). En la década de 1850 la corrupción se habría llevado
-    cerca del 48 % del gasto del Estado y el 4 % del PBI; en la de 1990, el 34 % y el 3,1 %.
-    Quiroz dice «ligeramente más alta». Es una yuxtaposición que el espectador no espera (el
-    guano peor que Fujimori, en proporción) y une 0·2 con 0·3.
+17. **Otra década perdida, con un solo cuadro.** El libro trae dos comparaciones que no coinciden
+    porque cuentan cosas distintas. Con los casos más notorios (cuadros A.1 y A.2), la década de
+    1850 se llevó cerca del 48 % del gasto y la de 1990 el 34 % (pp. 540, 543). Con todas las
+    formas de corrupción (A.4 y A.6), 63 % y 50 % del gasto, pero 4,3 % y 4,5 % del PBI. Para no
+    mezclar, usar el cuadro A.7, que mide a todos los gobiernos igual: **Echenique (1851–1855),
+    65 % del gasto y 5,0 % del PBI; Fujimori y Montesinos (1990–2000), 50 % y 4,5 %**. Y Quiroz
+    llama a Echenique-Torrico y Gamarra-La Fuente «los más corruptos del temprano periodo
+    republicano» (p. 189). La yuxtaposición se sostiene (el guano, peor que Fujimori en proporción)
+    y une 0·2 con 0·3.
 18. **«Roba, pero hace obra», con un número** (p. 545). En los ferrocarriles de Meiggs los sobornos
     eran cerca del 10 % del costo, y los contratistas los sumaban al precio: «desplazaban su costo
     real al público». Es el argumento del punto 8 con un caso; va en s09.
@@ -447,28 +452,76 @@ concepto, un ejemplo o un argumento.
     (p. 76) copia la entrada de 1729: *corruptela*, «Por alusión vale mala costumbre, o abuso,
     introducido contra la ley que no debe alterarse.» Puede ir textual.
 
+### Lo que agregan el guano, el final de la consolidación y las cifras
+
+21. **Qué era la deuda interna** (p. 169). Es el concepto que hay que presentar antes de usarlo
+    (F5): lo que el Estado les debía a sus propios ciudadanos. Expropiaciones y préstamos forzosos
+    de las guerras desde la independencia, nunca reconocidos o pagados con billetes que casi no
+    valían; créditos de fines de la colonia; préstamos de emergencia de comerciantes. Una frase y
+    una imagen (los papeles sin pagar) antes de decir «consolidación».
+22. **La consolidación era una buena idea** (p. 169). Su meta declarada era «renovar la confianza
+    en el crédito público nacional», y fue «un fundamento importante del crédito público moderno en
+    el Perú». Lo que la corrompió fue cómo se hizo: la ley con huecos (punto 13). Esto cambia el
+    marco de 0·2: no es «una estafa», es una reforma necesaria que fue capturada. Es la tesis de
+    Quiroz (reglas, no cultura) y evita el cinismo que él mismo rechaza (p. 57).
+23. **El guano, contado por un diplomático** (pp. 164–165). En 1841, un diplomático
+    estadounidense escribe a su gobierno: «generalmente se supone que el *huano* es el excremento de
+    aves marinas […]. Se le encuentra en gran abundancia en unas pequeñas islas unos cuantos grados
+    al sur de Lima […]. [Se] vende en Inglaterra a diez dólares la tonelada dando una ganancia neta
+    de al menos 50 [por ciento]». Abre 0·2 con una fuente primaria y, de paso, muestra la respuesta
+    a la objeción 1 de 0·3: las cartas de los diplomáticos son fuente. Y un número que se imagina: el
+    primer contrato dio el guano de nueve años, sin límite, por 90.000 pesos (p. 165).
+24. **¿Y los castigaron?** (pp. 182–185). Es la pregunta que el espectador se hace al final de 0·2,
+    y tiene respuesta. La Junta de Examen Fiscal encontró 12,2 millones, más de la mitad de la
+    deuda, en 141 expedientes irregulares (n. 147). Echenique, Torrico y Mendiburu ya habían huido.
+    Y el 11 de marzo de 1857, bajo presión de los acreedores, de los diplomáticos británicos y
+    franceses y de una guerra civil, la ley «de tabla rasa» devolvió todo y absolvió a los
+    beneficiados. El cierre se escribe solo: «Una indomable corrupción había, pues, sentado las
+    condiciones para un mayor abuso […] durante el siguiente ciclo de depredación» (p. 189).
+25. **«La mitad», explicada** (p. 554). F5 marcaba «el crecimiento que no tuvimos» como concepto
+    sin explicar. Quiroz da la cuenta: para crecer de forma sostenida, el PBI tiene que subir entre
+    5 y 8 % al año; la corrupción se llevaba entre 3 y 4 % cada año; el Perú perdió o distribuyó mal
+    «aproximadamente el 40 a 50 por ciento de sus posibilidades de desarrollo». Se puede dibujar con
+    sus números (una barra de 5–8 de la que se cortan 3–4), y es más honesto que la silueta
+    «fantasma» de 1,45 veces, que no mide nada (C28).
+26. **Por qué en porcentajes** (p. 547). En las décadas de 1860 y 1870 se robó más plata que nunca,
+    pero el Estado y la economía eran más grandes, y el nivel fue más bajo. Una frase que enseña por
+    qué se mide como parte del gasto y como parte del PBI, y por qué son dos bases distintas (F5).
+27. **El gráfico de niveles de s08, con datos reales.** El marcador de hoy contradice el libro
+    (`fuentes.md`). Propuesta: en vez de bandas por capítulo, una línea por década del **% del PBI**
+    desde 1680 hasta 1999 (cuadros 1.2, A.4 y A.6: 32 décadas), sobre las tres bandas de Quiroz
+    (moderada, 1–2 %; alta, 2,1–3,9 %; muy alta, 4–6 %) y la banda «baja» vacía debajo. El punto más
+    bajo es 1,0 % (1900–1909): la línea nunca entra a la banda vacía. Es «Ni una, en casi dos
+    siglos» con los datos del libro, y los ciclos de las pp. 121–122 y 554 se ven como subidas y
+    bajadas: «el patrón nunca se rompe» deja de ser una frase. Una salvedad que hay que decir en
+    pantalla: Quiroz clasifica mirando el gasto y el PBI juntos, y no siempre coinciden (la década
+    de 1920 es 72 % del gasto y 3,8 % del PBI). Es un cambio de la escena, que hoy dibuja
+    categorías y no números: pendiente de decisión.
+
 ### Cómo cambia la propuesta (§4)
 
 - **0·1** gana la rima de Denegri y el camino de la pregunta (punto 2) como puente final, en vez
   de saltar a 2000.
-- **0·2** ya tiene lo que le faltaba para enseñar: el tablero del mecanismo (13) con un caso real
-  (Novoa), la promesa contra lo que pasó (14), el giro de Elías (15), su palabra (*consolidados*,
-  16) y el puente a 0·3 (otra década perdida, 17).
+- **0·2** tiene ahora un arco completo, todo con página: el guano contado por un diplomático
+  (23); qué es la deuda interna (21); la consolidación como buena idea y su promesa (22, 14); la
+  ley con huecos y el tablero del mecanismo con el caso Novoa (13); adónde fue la plata (13); el
+  denunciante que también ganaba (15); ¿los castigaron? y la ley de tabla rasa (24); su palabra,
+  *consolidados* (16); y el puente a 0·3, otra década perdida (17).
 - **0·3** empieza por la definición (1), ordena las objeciones como el libro (4), cierra el método
-  con «no es cultura: son reglas» (6) y «el historiador no es juez» (7), compara dos décadas antes
-  de la cifra promedio (17), le da a «roba, pero hace obra» su número (18), y el bloque de la serie
-  explica los ciclos con las capas (5).
+  con «no es cultura: son reglas» (6) y «el historiador no es juez» (7), compara dos gobiernos con
+  el mismo cuadro (17), explica por qué se mide en porcentajes (26), muestra los niveles con datos
+  reales (27) y la mitad con su cuenta (25), le da a «roba, pero hace obra» su número (18), y el
+  bloque de la serie explica los ciclos con las capas (5).
 
 ### Lo que todavía falta del libro
 
-Al cortar el PDF del libro, la página *n* del archivo es la *n + 1* impresa: por eso llegaron las
-pp. 170–182 y 536–546 en vez de 169–181 y 535–545.
+Para los tres episodios de presentación, nada. Para lo que sigue (páginas del libro; en el PDF,
+una menos):
 
 | Para | Páginas del libro | Páginas del PDF |
 |---|---|---|
-| Las cifras de s08 (promedio 1820–2000, la mitad del crecimiento) y los niveles por época | Apéndice, pp. 547–554 (cuadros A.4 a A.7) y cuadro 1.2 (p. 125) | 546–553 y 124 |
-| El comienzo de la consolidación y del Apéndice | pp. 169 y 535 | 168 y 534 |
-| La gestión de Ulloa en detalle (para el episodio 1, no para este) | pp. 82–92 | 81–91 |
+| El episodio de Ulloa: su gestión y el resto del cap. 1 | pp. 82–121 | 81–120 |
+| El Epílogo (el tono «contra el fatalismo») | pp. 521–534 | 520–533 |
 | Si la línea del hospital ya estaba en 2008 | *Corrupt Circles*, *Acknowledgments* | — |
 | Lugar de nacimiento | otra fuente | — |
 

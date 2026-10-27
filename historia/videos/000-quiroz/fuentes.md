@@ -5,8 +5,8 @@ Las fichas de lectura, con las citas textuales y sus páginas, están en
 [`bibliografia/quiroz-2013.md`](../../bibliografia/quiroz-2013.md).
 
 **Cotejado con el libro: pp. 1–82** (créditos, índice, prólogo, prefacio, agradecimientos,
-introducción y capítulo 1 hasta «Purgatorio minero»), **pp. 170–182** (la consolidación) y
-**pp. 536–546** (Apéndice). Lo que todavía no tiene fuente segura, o lo que en
+introducción y capítulo 1 hasta «Purgatorio minero»), **pp. 121–128** (ciclos coloniales),
+**pp. 164–190** (el guano y la consolidación) y **pp. 535–554** (el Apéndice entero). Lo que todavía no tiene fuente segura, o lo que en
 pantalla todavía no coincide con el libro, dice `[VERIFICAR]` y hace fallar
 `npm run validar -- 000-quiroz --final`.
 
@@ -48,13 +48,14 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | C18 | s06 | Tras «hay pruebas como nunca antes»: «En el mundo, el tema también explota: el presidente del Banco Mundial llama a la corrupción un cáncer…» | El «cáncer» es de **1996**; la estrategia del Banco, de 1997; la resolución de la ONU, de 2000 (p. 25). | Que el orden lo diga: «En el mundo, el tema venía creciendo: en 1996, el presidente del Banco Mundial…; en 2000, la ONU…». |
 | C19 | s07 | «y, sobre todo, cartas de diplomáticos extranjeros» | «Las fuentes diplomáticas ayudan a contrastar y verificar la información», pero no todos esos informantes fueron imparciales y sus informes «deben ser cuidadosamente considerados» (pp. 41–42). Cueto sí destaca ese archivo como novedad de su método (p. 23). | «y, para contrastar, las cartas de diplomáticos extranjeros». |
 | C20 | s07 | «Daban tres razones, y una excusa.» | El libro discute siete posturas (pp. 40–45); el «aceite» es parte de la familia cultural y relativista (p. 43: «lubricante»). | La simplificación sirve para enseñar, pero el aceite tiene que entrar **dentro** de la cuarta tarjeta, no después como idea suelta (ver diagnóstico §7). |
-| C21 | s08 🖥 | «estimados provisionales» · nota en pantalla `Estimados provisionales — Quiroz, Apéndice` | «Estos cálculos son estimados preliminares, obviamente sujetos a revisión y a errores de subestimación o sobrestimación» (p. 57) | Usar su palabra: «preliminares» (también en `s08.props.nota`). |
+| C21 | s08 🖥 | «estimados provisionales» · nota en pantalla `Estimados provisionales — Quiroz, Apéndice` | «Estos cálculos son estimados preliminares, obviamente sujetos a revisión y a errores de subestimación o sobrestimación» (p. 57). **No era un error:** el Apéndice también dice «el presente es un cálculo provisional sujeto a revisiones» (p. 535). | Las dos palabras son de Quiroz. Queda «preliminares», que ya está aplicado. |
 | C22 | s10 | «a más de tres mil quinientos metros de altura» | «a unos 3.600 metros sobre el nivel del mar» (p. 59) | «a unos tres mil seiscientos metros» (la ficha `~3600 M.S.N.M.` ya está bien). |
 | C23 | s10 | «la mina de mercurio de la que dependía la plata de todo el virreinato» | «la única fuente americana importante del metal líquido, un insumo fundamental en el proceso de amalgamación para refinar la plata» (p. 59) | «la única mina importante de mercurio de América. Sin mercurio no se podía refinar la plata.» |
 | C24 | s10 | «Intentó limpiarla. Y perdió.» | **Resuelta.** Sus esfuerzos «lo enfrentaron violentamente a poderosos intereses creados» (pp. 59–60); «el calvario que vivió Ulloa» (p. 63); «amargas disputas» en 1758-1764 (p. 72); en junio de 1763 «reiteraba sus pedidos previos de que se le relevara y se le permitiera retornar a España» (n. 1). | Queda. Si se quiere un detalle concreto en vez de la palabra: «En 1763 pedía que lo relevaran.» |
 | C25 | s11 | «un mes después de la muerte de su amigo» | Murió en enero de 2013 (nota de los editores); el prólogo se firma en febrero (p. 29). No hay día. | «semanas después» o solo «en febrero de 2013». Y algo que el guion no dice: Cueto alcanzó a decírselo en vida («tuve el privilegio de confesarle», p. 29). |
 | C26 | s03 🖥 | Capa de gobiernos: `BELAUNDE` | El libro escribe «Belaúnde» (índice, cap. 6, p. 384); en mayúsculas también va la tilde. | `BELAÚNDE` en `s03.props.gobiernos`. |
-| C27 | s08 | «Clasificó cada época como de corrupción moderada, alta o muy alta.» | El Apéndice dice: «Podemos, así, clasificar décadas y gobiernos como periodos de corrupción alta, media o baja» (p. 539). Los nombres que usa en los cuadros A.4 y A.6 no están leídos. | Cotejar los cuadros A.4 (p. 548) y A.6 (p. 550). Si la escala es alta / media / baja, la frase y las bandas del gráfico cambian de nombre; «ninguna baja» puede seguir valiendo. |
+| C27 | s08 | «Clasificó cada época como de corrupción moderada, alta o muy alta.» | **Resuelta: el guion está bien.** La escala del libro es «muy alta», «alta» y «moderada», y «no se detectaron evidencias de periodos de corrupción baja o muy baja» (p. 554). La p. 539 («alta, media o baja») describe el método en general. | Queda como está. |
+| C28 | s08 🖥 | «la corrupción podría explicar cerca de la mitad del crecimiento que el Perú no tuvo» · en pantalla `≈ ½ del crecimiento que no tuvimos` | Es la frase de Cueto (p. 24: «alrededor de la mitad de la falta de crecimiento»). Quiroz lo dice de otra forma y explica la cuenta: para crecer de forma sostenida hacen falta entre 5 y 8 % del PBI al año; la corrupción se llevaba entre 3 y 4 %; así, «el Perú perdió o distribuyó mal el equivalente de aproximadamente el 40 a 50 por ciento de sus posibilidades de desarrollo» (p. 554). | Usar la de Quiroz, con su cuenta: se entiende y se puede dibujar. En pantalla: `40–50 % de sus posibilidades de desarrollo`. **No aplicado**: pendiente de decisión. |
 
 ---
 
@@ -81,13 +82,16 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | s03 | Afiches `REFORMA AGRARIA`, `NACIONALIZACIÓN`, `UN PAÍS NUEVO` | — | Tipografía genérica de época, no son afiches reales (así lo pide el guion) |
 | s03 | Gobernantes de la capa rápida (Virreinato, San Martín, Castilla, Piérola, Leguía, Benavides, Odría, Prado, Belaúnde, Velasco, Morales Bermúdez, García, Fujimori) | Conocimiento general; no salen del libro | [VERIFICAR] la lista (la tilde de Belaúnde ya está, C26) — o reemplazarlos por las autoridades que el propio libro reevalúa (p. 55: Amat, Gamarra, Gutiérrez de la Fuente, Echenique, Piérola, Cáceres, Leguía, Prado, Odría, Velasco, García, Fujimori; la lista trae además a Torrico, que el libro muestra como ministro, y a Haya de la Torre, que no gobernó). |
 | s04 | Félix Denegri Luna le sugiere el siglo XIX | Prólogo, p. 17 | ✔ · C12 |
-| s04 | Consolidación: pago en 1850 de la deuda interna que venía de la colonia; la promesa de una clase empresarial; la versión del derroche; deuda exagerada y funcionarios cómplices | Prólogo, pp. 17–18 | ✔ · C5 |
+| s04 | Consolidación: pago en 1850 de la deuda interna que venía de la colonia; la promesa de una clase empresarial; la versión del derroche; deuda exagerada y funcionarios cómplices | Prólogo, pp. 17–18; cap. 2, p. 169 (la consolidación pagada con los recursos del guano; créditos «de fines de la época colonial») | ✔ · C5 |
+| s04 | Qué era la deuda interna: lo que el Estado debía por expropiaciones y préstamos forzosos desde la independencia, más créditos de fines de la colonia | Cap. 2, p. 169 | ✔ (no está en el video; es el concepto que falta presentar) |
+| s04 | El guano: cómo se supo (carta de un diplomático, 1841); el primer contrato, 90.000 pesos por nueve años; las consignaciones | Cap. 2, pp. 164–168 | ✔ (no está en el video) |
 | s04 | Tesis de bachiller, 1980 («La consolidación de la deuda interna peruana, 1850-1858») | Prólogo, p. 17 | ✔ |
 | s04 | *La deuda defraudada: consolidación de 1850 y dominio económico en el Perú*, 1987, Instituto Nacional de Cultura | Prólogo, p. 17 | ✔ |
 | s04 | Vale de `1000` a `3000` | — | Ilustración, no un dato: en pantalla dice «ejemplo ilustrativo». Ahora hay datos reales para reemplazarla (ver la fila siguiente) |
 | s04 | El mecanismo: reclamos casi sin valor comprados «a muy bajo precio» y reconocidos «a un valor muchas veces mayor», con comisiones a funcionarios; la deuda consolidada pasa de 5 a 24 millones de pesos entre 1851 y 1852 | Cap. 2, p. 170 | ✔ |
 | s04 | Caso Novoa: reclamo de 500.000–600.000 pesos, aprobado en 948.500 pesos en vales con Torrico de por medio; ella recibe unos 180.000 | Cap. 2, p. 171 | ✔ (no está en el video; sirve para el tablero del mecanismo) |
 | s04 | Adónde fueron los 24 millones: ~16 % a funcionarios, más del 30 % en comisiones ilegales, ~50 % convertido en deuda externa | Cap. 2, p. 172 | ✔ (no está en el video) |
+| s04 | El final: la Junta de Examen Fiscal encontró 12,2 millones en 141 expedientes irregulares; Echenique, Torrico y Mendiburu huyeron; la ley del 11 de marzo de 1857, «de tabla rasa», absolvió a los beneficiados | Cap. 2, pp. 182–185 y n. 147 | ✔ (no está en el video) |
 | s05 | París como meca; Columbia; beca de Herbert S. Klein; historia cuantitativa y regresiones múltiples | Prólogo, p. 18 | ✔ · C13, C14 |
 | s05 | Kenneth Maxwell: profundidad y claridad | Prólogo, p. 19 | ✔ · C15 |
 | s05 | Bancos, crédito colonial, casa Grace; «la máxima autoridad en la historia financiera peruana» | Prólogo, pp. 19–20 | ✔ |
@@ -105,17 +109,18 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | s07 | El «aceite» | Introducción, pp. 40–41 y 43 | ✔ · C20 |
 | s07 | «grava en el engranaje» | Apéndice, pp. 536–537 | ✔ (C8) |
 | s08 | Estimación década por década desde la colonia | Índice de cuadros: 1.1, 1.2, A.3, A.5 | ✔ (que existe; las cifras, abajo) |
-| s08 | 30–40 % del gasto del Estado; 3–4 % de la producción cada año (1820–2000) | Apéndice, cuadro A.7, p. 551 (ojo: el cuadro va de 1810 a 2000) | [VERIFICAR] el promedio 1820–2000 (pp. 547–554). Lo leído va en esa línea: década de 1850, ≈ 48 % del gasto y 4 % del PBI (p. 543); década de 1990, 34 % y 3,1 % (p. 540) |
-| s08 | Ninguna época de corrupción baja; niveles por período en el gráfico | Cuadros 1.2 (p. 125), A.4 (p. 548) y A.6 (p. 550) — no el A.7 | [VERIFICAR] — son un marcador: copiar la clasificación real en `escenas.json → s08.props.periodos` (y sus nombres, C27) |
-| s08 | ≈ la mitad del crecimiento que no tuvo | Prólogo, p. 24 («alrededor de la mitad de la falta de crecimiento»); cálculo en el Apéndice | ✔ por el prólogo |
-| s08 | Estimados sujetos a revisión | Introducción, p. 57 | ✔ · C21 |
+| s08 | 30–40 % del gasto del Estado; 3–4 % de la producción cada año (1820–2000) | Apéndice, conclusión, p. 554: «alrededor de entre 30 y 40 por ciento de los gastos del presupuesto, y de entre 3 y 4 por ciento del PBI en el largo plazo (años de 1820 a 2000)» | ✔ |
+| s08 | Moderada, alta o muy alta; ninguna baja | Apéndice, p. 554 | ✔ (C27) |
+| s08 | Niveles por período en el gráfico (`s08.props.periodos`) | Cuadros 1.2 (p. 125), A.4 (p. 548), A.6 (p. 550), A.7 (pp. 551–553) y los ciclos de la p. 554 | [VERIFICAR] — el marcador contradice el libro: pone 1820–1859 como «alta» y Quiroz dice «niveles muy altos en las décadas de 1820 y 1830» y otra vez en la de 1850; pone 1884–1930 como un solo bloque «alto» y ahí están el tramo moderado de 1899–1919 (25 % del gasto, 1 % del PBI) y el pico del Oncenio (72 %). Los datos reales están en `bibliografia/quiroz-2013.md` §6 y §8; cómo usarlos, en el diagnóstico §7 |
+| s08 | ≈ la mitad del crecimiento que no tuvo | Prólogo, p. 24; Apéndice, p. 554 («40 a 50 por ciento de sus posibilidades de desarrollo») | ✔ · C28 |
+| s08 | Estimados sujetos a revisión | Introducción, p. 57; Apéndice, p. 535 | ✔ · C21 |
 | s08 | Silueta «fantasma» del país, 1,45 veces más grande | — | Ilustración de «la mitad del crecimiento», no una medida |
 | s09 | *Corrupt Circles*, 2008 | Prólogo, p. 23 | ✔ |
 | s09 | Premios: Abraham J. Briloff Prize in Ethics y President's Excellence Award for Scholarship del Baruch College, 2009 | Prólogo, pp. 24–25 | ✔ |
 | s09 | Usado en el mundo; contra el fatalismo; «hace obras» | Prólogo, pp. 24–25 | ✔ |
 | s10 | Contado desde los que denunciaron; siete capítulos, siete ciclos | Introducción, p. 55 | ✔ |
 | s10 | Antonio de Ulloa, nombrado en 1757, toma el mando el 4 de noviembre de 1758; gobierna hasta 1764; ~3600 m; mina de mercurio de Santa Bárbara | Cap. 1, p. 59, n. 1 y p. 72 | ✔ · C22, C23 |
-| s10 | «Y perdió.» | Cap. 1, pp. 59–60, 63, 72 y n. 1 | ✔ (C24) |
+| s10 | «Y perdió.» | Cap. 1, pp. 59–60, 63, 72 y n. 1; y del ciclo entero: «A pesar de serios intentos por efectuar reformas, la corrupción profundamente arraigada venció» (p. 126) | ✔ (C24) |
 | s10 | Domingo Elías, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya | Introducción, p. 55 (el libro nombra además a Francisco García Calderón Landa y Mario Vargas Llosa) | ✔. Elías es el denunciante del cap. 2 (cartas de agosto de 1853, pp. 171–172), pero también cobraba comisiones de la consolidación (pp. 170–171) y fue indemnizado por 370 esclavos (p. 182): no es un héroe limpio, y el episodio de la consolidación tiene que decirlo |
 | s10 | Los siete capítulos, títulos y años | Índice | ✔ — coinciden los siete |
 | s11 | Prólogo firmado en Río de Janeiro, febrero de 2013; «siempre había querido ser como él» | Prólogo, p. 29 | ✔ · C25 |
