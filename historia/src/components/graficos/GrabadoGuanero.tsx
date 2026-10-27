@@ -10,6 +10,8 @@ type Props = {
   /** 0–1: cuánto guano se ha acumulado sobre las islas. */
   guano: number;
   id?: string;
+  /** Segundos desde que empiezan a subir sacos al barco (el barco queda anclado junto a la última isla). */
+  carga?: number;
 };
 
 const X0 = 150, X1 = 1770, Y0 = 100, Y1 = 940, HORIZONTE = 585;
@@ -65,7 +67,7 @@ const ola = (y: number, t: number, fila: number): string => {
 };
 
 /** Fragata de tres palos, como las que cargaban guano para Europa. */
-const Barco: React.FC<{ x: number; y: number; tinta: string; papel: string; id: string; escala?: number }> = ({ x, y, tinta, papel, id, escala = 1 }) => (
+export const Barco: React.FC<{ x: number; y: number; tinta: string; papel: string; id: string; escala?: number }> = ({ x, y, tinta, papel, id, escala = 1 }) => (
   <g transform={`translate(${x} ${y}) scale(${escala})`}>
     {/* casco */}
     <path d="M-92 0 L96 0 L80 16 L-78 16 Z" fill={tinta} />
@@ -98,7 +100,7 @@ const Barco: React.FC<{ x: number; y: number; tinta: string; papel: string; id: 
  * Grabado del siglo XIX (tinta sobre papel): cielo y mar en líneas de buril, islas con
  * sombreado cruzado, montículos de guano punteados, aves y una fragata. El mar se mueve.
  */
-export const GrabadoGuanero: React.FC<Props> = ({ paleta, t, guano, id = 'grabado' }) => {
+export const GrabadoGuanero: React.FC<Props> = ({ paleta, t, guano, id = 'grabado', carga }) => {
   const tinta = mezclar(paleta.fondo, paleta.rojo, 0.08);
   const filasMar = useMemo(() => {
     const out: number[] = [];
@@ -114,7 +116,12 @@ export const GrabadoGuanero: React.FC<Props> = ({ paleta, t, guano, id = 'grabad
     const r = azar(77);
     return Array.from({ length: 28 }, () => ({ fx: r.rango(0.05, 0.12), fy: r.rango(0.07, 0.15), ax: r.rango(120, 420), ay: r.rango(30, 110), fase: r.rango(0, 6.28), aleteo: r.rango(7, 10), tam: r.rango(0.7, 1.3) }));
   }, []);
-  const barcoX = 1590 - t * 9; // navega despacio hacia la izquierda
+  // navega despacio hacia la izquierda; si se está cargando, queda anclado junto a la última isla
+  const barcoX = carga === undefined ? 1590 - t * 9 : 1650;
+  // sacos: suben por una plancha desde la orilla de la isla hasta la cubierta, uno tras otro
+  const plancha = { x1: 1500, y1: HORIZONTE - 4, x2: 1600, y2: HORIZONTE - 44 };
+  const sacos = carga === undefined || carga < 0 ? [] : Array.from({ length: 6 }, (_, k) => ((carga / 1.3 + k / 6) % 1))
+    .filter((_, k) => carga > k * 0.22);
 
   return (
     <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
@@ -157,6 +164,22 @@ export const GrabadoGuanero: React.FC<Props> = ({ paleta, t, guano, id = 'grabad
         <line x1={X0} x2={X1} y1={HORIZONTE} y2={HORIZONTE} stroke={tinta} strokeWidth={1.4} />
 
         <Barco x={barcoX} y={HORIZONTE - 14} tinta={tinta} papel={paleta.papel} id={id} escala={0.78} />
+        {carga !== undefined && carga >= 0 ? (
+          <g>
+            <line x1={plancha.x1} y1={plancha.y1} x2={plancha.x2} y2={plancha.y2} stroke={tinta} strokeWidth={2.2} />
+            <line x1={plancha.x1} y1={plancha.y1 + 5} x2={plancha.x2} y2={plancha.y2 + 5} stroke={tinta} strokeWidth={1} />
+            {sacos.map((u, k) => {
+              const x = plancha.x1 + (plancha.x2 - plancha.x1) * u, y = plancha.y1 + (plancha.y2 - plancha.y1) * u - 9;
+              return (
+                <g key={k} transform={`translate(${x} ${y}) rotate(-22)`} opacity={Math.min(1, (1 - u) * 6)}>
+                  <path d="M-9 -7 Q -10 8, -7 9 L 7 9 Q 10 8, 9 -7 Q 0 -10, -9 -7 Z" fill={paleta.papel} stroke={tinta} strokeWidth={1.2} />
+                  <path d="M-3 -9 l 3 -4 l 3 4" fill="none" stroke={tinta} strokeWidth={1} />
+                  <rect x={1} y={-6} width={7} height={14} fill={`url(#${id}-rayado)`} />
+                </g>
+              );
+            })}
+          </g>
+        ) : null}
 
         {/* islas */}
         {islas.map((is, i) => (

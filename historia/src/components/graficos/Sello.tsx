@@ -44,3 +44,31 @@ export const Sello: React.FC<Props> = ({ paleta, id, centro, fecha, arco, size =
     </svg>
   );
 };
+
+type PropsFecha = {
+  id: string;
+  texto: string;
+  color: string;
+  /** Línea chica arriba (opcional). */
+  encabezado?: string;
+  width?: number;
+  /** "multiply" sobre papel; "normal" sobre fondo oscuro (si no, no se ve). */
+  mezcla?: 'multiply' | 'normal';
+  semilla?: number;
+};
+
+/** Sello de fecha rectangular, de oficina: doble filete y la fecha en monoespaciada, con la tinta gastada. */
+export const SelloFecha: React.FC<PropsFecha> = ({ id, texto, color, encabezado, width = 520, mezcla = 'multiply', semilla = 9 }) => {
+  const alto = encabezado ? 190 : 150;
+  return (
+    <svg viewBox={`-260 ${-alto / 2} 520 ${alto}`} width={width} style={{ overflow: 'visible', mixBlendMode: mezcla }}>
+      <defs><FiltroDesgaste id={`${id}-gastado`} semilla={semilla} desgaste={0.34} /></defs>
+      <g filter={`url(#${id}-gastado)`} opacity={0.9}>
+        <rect x={-250} y={-alto / 2 + 8} width={500} height={alto - 16} rx={6} fill="none" stroke={color} strokeWidth={7} />
+        <rect x={-236} y={-alto / 2 + 22} width={472} height={alto - 44} rx={3} fill="none" stroke={color} strokeWidth={2} />
+        {encabezado ? <text y={-alto / 2 + 64} textAnchor="middle" fill={color} fontFamily={fuente.mono} fontSize={26} letterSpacing={8}>{encabezado}</text> : null}
+        <text y={encabezado ? 52 : 22} textAnchor="middle" fill={color} fontFamily={fuente.mono} fontWeight={600} fontSize={64} letterSpacing={10}>{texto}</text>
+      </g>
+    </svg>
+  );
+};

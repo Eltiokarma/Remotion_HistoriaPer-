@@ -15,7 +15,7 @@ export const beats = {
   ultima_hoja: 'la última hoja intenta caer y se queda pegada',
 };
 
-/** Como se usó en 000-quiroz. */
+/** Como se usó en la primera versión de 000-quiroz (6 escenas). */
 export const ejemplo: Ejemplo<typeof esquema> = {
   duracion_s: 18,
   beats: { fecha: 0.3, correcciones: 9.8, ultima_hoja: 16.5 },

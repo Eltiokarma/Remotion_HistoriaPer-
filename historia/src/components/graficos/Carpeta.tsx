@@ -9,10 +9,16 @@ type Props = {
   /** 0 = abierta (la tapa a la izquierda), 1 = cerrada sobre el manuscrito. */
   cierre: number;
   width?: number;
+  /** Las hojas de adentro (ver PilaDePaginas). */
+  variante?: 'manuscrito' | 'pruebas';
+  semilla?: number;
+  limpieza?: number;
+  /** 0–1: aparición de la tapa (si la pila venía sola). */
+  tapaVisible?: number;
 };
 
 /** Carpeta de archivo: el manuscrito terminado y una tapa de tela que se cierra en 3D. */
-export const Carpeta: React.FC<Props> = ({ paleta, id, cierre, width = 480 }) => {
+export const Carpeta: React.FC<Props> = ({ paleta, id, cierre, width = 480, variante, semilla, limpieza, tapaVisible = 1 }) => {
   const k = width / 420; // escala del viewBox de la pila
   const tapa = { left: 22 * k, top: 22 * k, width: 376 * k, height: 516 * k };
   const angulo = -172 + 172 * cierre;
@@ -20,10 +26,10 @@ export const Carpeta: React.FC<Props> = ({ paleta, id, cierre, width = 480 }) =>
   const sombra = Math.sin(Math.PI * cierre) * 0.5;
   return (
     <div style={{ position: 'relative', width, height: width * (560 / 420), perspective: 2200 }}>
-      <PilaDePaginas paleta={paleta} id={`${id}-pila`} width={width} correcciones={1} conPluma={false} />
+      <PilaDePaginas paleta={paleta} id={`${id}-pila`} width={width} correcciones={1} conPluma={false} variante={variante} semilla={semilla} limpieza={limpieza} />
       {/* sombra de la tapa sobre las hojas mientras se cierra */}
       <div style={{ position: 'absolute', ...tapa, background: `linear-gradient(90deg, rgba(0,0,0,${sombra}) 0%, rgba(0,0,0,0) ${40 + 60 * cierre}%)` }} />
-      <div style={{ position: 'absolute', ...tapa, transformOrigin: '0% 50%', transformStyle: 'preserve-3d', transform: `rotateY(${angulo}deg)` }}>
+      <div style={{ position: 'absolute', ...tapa, transformOrigin: '0% 50%', transformStyle: 'preserve-3d', transform: `rotateY(${angulo}deg)`, opacity: tapaVisible }}>
         {/* frente: tela con un rótulo pegado */}
         <div style={{ position: 'absolute', inset: 0, backfaceVisibility: 'hidden', backgroundColor: tela, backgroundImage: `url(${textura.papel})`,
           backgroundSize: '300px 300px', backgroundBlendMode: 'multiply', boxShadow: `inset 0 0 40px ${alfa('#000000', 0.45)}, 4px 6px 14px ${alfa('#000000', 0.5)}`,

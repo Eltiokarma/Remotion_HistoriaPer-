@@ -8,17 +8,26 @@ import { z } from 'zod';
  */
 
 export const esquemaPaleta = z.object({
+  /** tinta / fondo oscuro */
   fondo: zColor(),
+  /** papel envejecido */
   papel: zColor(),
+  /** dorado viejo: textos y filetes sobre fondo oscuro */
   ocre: zColor(),
+  /** rojo de corrector: lo que importa */
   rojo: zColor(),
+  /** verde guano / óxido: acentos de época, siempre en poca cantidad */
+  verde: zColor().default('#5e6b4e'),
 });
 
 const nivel = z.number().min(0).max(1.5);
 const ventanaBeats = { desde_beat: z.string().optional(), hasta_beat: z.string().optional() };
 
 export const esquemaAudio = z.object({
-  /** Música de la escena: un archivo de public/videos/<id>/musica/. */
+  /**
+   * Música de la escena: un archivo de public/videos/<id>/musica/. Suena desde el inicio de la
+   * escena; si trae `desde_beat`, el archivo empieza a sonar en ese beat (la música entra ahí).
+   */
   musica: z.object({ archivo: z.string(), nivel, ...ventanaBeats }).nullable().optional(),
   /** Ambientes de la biblioteca compartida (public/compartido/audio/ambiente/<nombre>.mp3). */
   ambientes: z.array(z.object({ nombre: z.string(), nivel, ...ventanaBeats })).optional(),

@@ -1,4 +1,4 @@
-import { Audio, Sequence } from 'remotion';
+import { Audio, interpolate, Sequence } from 'remotion';
 import { sfx } from '../../estilo/recursos';
 
 type Props = {
@@ -8,14 +8,22 @@ type Props = {
   en: number;
   fps: number;
   volumen?: number;
+  /** Cuántos segundos suena como máximo (se corta con un fundido corto). Sirve para sonidos en bucle. */
+  dura?: number;
+  /** Repite el archivo mientras dure (para un motor, un engranaje, la estática). */
+  bucle?: boolean;
 };
 
+const FADE = 6; // frames: nada se corta en seco
+
 /** Un efecto de sonido que suena en un segundo exacto de la escena. */
-export const Sfx: React.FC<Props> = ({ nombre, en, fps, volumen = 0.7 }) => {
+export const Sfx: React.FC<Props> = ({ nombre, en, fps, volumen = 0.7, dura, bucle = false }) => {
   if (en < 0) return null;
+  const frames = dura === undefined ? undefined : Math.max(FADE * 2, Math.round(dura * fps));
   return (
-    <Sequence from={Math.round(en * fps)} layout="none" name={`sfx ${nombre}`}>
-      <Audio src={sfx(nombre)} volume={volumen} />
+    <Sequence from={Math.round(en * fps)} durationInFrames={frames} layout="none" name={`sfx ${nombre}`}>
+      <Audio src={sfx(nombre)} loop={bucle}
+        volume={frames === undefined ? volumen : (f) => volumen * interpolate(f, [0, FADE, frames - FADE, frames], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })} />
     </Sequence>
   );
 };

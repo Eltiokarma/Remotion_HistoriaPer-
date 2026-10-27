@@ -177,11 +177,28 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
   return { errores: errores.length, avisos: avisos.length };
 }
 
+/** Efectos que piden las escenas y no están en public/compartido/audio/sfx/ (se revisa el código de cada escena). */
+const efectosFaltantes = (): string[] => {
+  const dir = path.join(RAIZ, 'src', 'escenas');
+  const pedidos = new Set<string>();
+  for (const escena of readdirSync(dir, { withFileTypes: true }).filter((d) => d.isDirectory())) {
+    const archivo = path.join(dir, escena.name, 'Escena.tsx');
+    if (!existsSync(archivo)) continue;
+    for (const m of readFileSync(archivo, 'utf8').matchAll(/nombre="([a-z0-9-]+)"/g)) pedidos.add(m[1]);
+  }
+  return [...pedidos].filter((n) => !existsSync(path.join(PUBLIC, 'compartido', 'audio', 'sfx', `${n}.mp3`)));
+};
+
 const carpetas = readdirSync(VIDEOS, { withFileTypes: true })
   .filter((d) => d.isDirectory() && !d.name.startsWith('_') && existsSync(path.join(VIDEOS, d.name, 'escenas.json')))
   .map((d) => d.name);
 const elegidas = pedidos.length ? pedidos : carpetas;
 let errores = 0;
+const sinEfecto = efectosFaltantes();
+if (sinEfecto.length) {
+  console.log(`\n${rojo('✗')} faltan efectos de sonido: ${sinEfecto.join(', ')} (npm run generar:audio -- compartido)`);
+  errores += sinEfecto.length;
+}
 for (const c of elegidas) {
   if (!carpetas.includes(c)) {
     console.log(`\n✗ no existe videos/${c}/escenas.json. Hay: ${carpetas.join(', ')}`);

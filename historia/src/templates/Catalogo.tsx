@@ -13,7 +13,7 @@ import { VideoLargo } from './VideoLargo';
  */
 
 /** Paleta de muestra (la del video 000). */
-export const PALETA_CATALOGO: Paleta = { fondo: '#1b1a17', papel: '#e8e2d4', ocre: '#c2a878', rojo: '#8c2f1b' };
+export const PALETA_CATALOGO: Paleta = { fondo: '#1c1b19', papel: '#ede4d3', ocre: '#c2a878', rojo: '#b3261e', verde: '#5e6b4e' };
 const FPS = 30;
 
 const NOMBRES = Object.keys(CATALOGO) as [NombreEscena, ...NombreEscena[]];

@@ -11,6 +11,15 @@ import * as PaisajeALibro from './PaisajeALibro/esquema';
 import * as SerieCapitulos from './SerieCapitulos/esquema';
 import * as Cierre from './Cierre/esquema';
 import * as MapaRutas from './MapaRutas/esquema';
+import * as PruebasDeImprenta from './PruebasDeImprenta/esquema';
+import * as TiempoLargo from './TiempoLargo/esquema';
+import * as MecanismoDeuda from './MecanismoDeuda/esquema';
+import * as AprenderAMedir from './AprenderAMedir/esquema';
+import * as LaPregunta from './LaPregunta/esquema';
+import * as Objeciones from './Objeciones/esquema';
+import * as LaCuenta from './LaCuenta/esquema';
+import * as CirculosCorruptos from './CirculosCorruptos/esquema';
+import * as Denunciantes from './Denunciantes/esquema';
 
 export const CATALOGO = {
   DiasYManuscrito,
@@ -19,6 +28,15 @@ export const CATALOGO = {
   MapaRutas,
   SerieCapitulos,
   Cierre,
+  PruebasDeImprenta,
+  TiempoLargo,
+  MecanismoDeuda,
+  AprenderAMedir,
+  LaPregunta,
+  Objeciones,
+  LaCuenta,
+  CirculosCorruptos,
+  Denunciantes,
 } as const;
 
 export type NombreEscena = keyof typeof CATALOGO;

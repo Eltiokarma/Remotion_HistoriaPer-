@@ -72,9 +72,17 @@ const Mezcla: React.FC<Props & { actividad: number[] | null }> = ({ escena, vide
     return Math.max(0, p.nivel * bordes * tramo * silencio * (1 - (1 - duck) * habla));
   };
 
+  // si la música "entra" en un beat, el archivo empieza a sonar ahí (no hace falta rellenarlo con silencio)
+  const musica = cfg.musica;
+  const inicioMusica = musica?.desde_beat && b[musica.desde_beat] !== undefined ? Math.max(0, Math.round(j + b[musica.desde_beat] * fps - RAMPA_S * fps)) : 0;
+
   return (
     <>
-      {cfg.musica ? <Audio src={delVideo(videoId, `musica/${cfg.musica.archivo}`)} volume={volumen(cfg.musica, true)} name={`música ${cfg.musica.archivo}`} /> : null}
+      {musica ? (
+        <Sequence from={inicioMusica} layout="none" name={`música ${musica.archivo}`}>
+          <Audio src={delVideo(videoId, `musica/${musica.archivo}`)} volume={(f) => volumen(musica, true)(f + inicioMusica)} />
+        </Sequence>
+      ) : null}
       {(cfg.ambientes ?? []).map((a) => (
         <Audio key={a.nombre} src={ambiente(a.nombre)} loop volume={volumen(a, false)} name={`ambiente ${a.nombre}`} />
       ))}

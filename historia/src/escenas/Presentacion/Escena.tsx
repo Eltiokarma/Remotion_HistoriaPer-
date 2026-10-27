@@ -22,6 +22,9 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
   const b = escena.beats;
   const piscina = props.fondo === 'piscina';
   const tNombre = beat(b, 'nombre', 1), tFrenar = beat(b, 'frenar', 4), tRenglon = beat(b, 'renglon', 5), tSello = beat(b, 'sello', 10);
+  const tPalabra = beat(b, 'palabra', Infinity);
+  // al final puede quedar una sola palabra: todo lo demás se retira
+  const queda = props.palabra ? tramo(t, tPalabra - 0.3, 0.9, 'natural') : 0;
 
   // Frenado parejo que arranca a la velocidad que traía (sin tirón): x = v·F/2·(1-(1-u)²).
   const u = clamp((t - tFrenar) / FRENO);
@@ -46,7 +49,7 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
         <line x1={258} x2={258} y1={0} y2={1080 * margen} stroke={pal.rojo} strokeWidth={1.2} opacity={0.6} />
       </svg>
 
-      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', paddingBottom: 40 }}>
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', paddingBottom: 40, opacity: 1 - queda }}>
         <div style={{ fontFamily: fuente.titulo, fontWeight: 700, fontSize: 118, letterSpacing: '0.02em', display: 'flex' }}>
           {props.nombre.split('').map((ch, i) => {
             // cada letra se asienta con 2 frames de desfase: nada se detiene a la vez
@@ -62,7 +65,7 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
         {props.anios ? (
           <div style={{ marginTop: 22, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
             <Ornamento color={tinta} ancho={560} k={tramo(t, tNombre + 1.2, 1.0, 'natural')} opacidad={0.8} />
-            <div style={{ fontFamily: fuente.imprenta, fontSize: 50, letterSpacing: '0.32em', marginRight: '-0.32em', color: tinta,
+            <div style={{ fontFamily: fuente.mono, fontSize: 40, letterSpacing: '0.3em', marginRight: '-0.3em', color: tinta,
               opacity: 0.85 * tramo(t, tNombre + 1.6, 0.8, 'natural') }}>
               {props.anios}
             </div>
@@ -70,9 +73,19 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
         ) : null}
       </AbsoluteFill>
 
+      {props.palabra && t >= tPalabra - 0.3 ? (
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+          {/* la palabra sola; el espaciado se abre despacio, como si respirara */}
+          <div style={{ fontFamily: fuente.titulo, fontWeight: 600, fontSize: 120, color: tintaEn(960), opacity: tramo(t, tPalabra, 1.2, 'natural'),
+            letterSpacing: `${mix(0.04, 0.42, tramo(t, tPalabra, 7, 'natural'))}em`, marginRight: `-${mix(0.04, 0.42, tramo(t, tPalabra, 7, 'natural'))}em` }}>
+            {props.palabra}
+          </div>
+        </AbsoluteFill>
+      ) : null}
+
       {props.sello ? (
         <>
-          <div style={{ position: 'absolute', left: 1330, top: 640, transform: `rotate(-12deg) scale(${escalaSello})`, opacity: clamp(escalaSello * 3) }}>
+          <div style={{ position: 'absolute', left: 1330, top: 640, transform: `rotate(-12deg) scale(${escalaSello})`, opacity: clamp(escalaSello * 3) * (1 - queda) }}>
             <Sello paleta={pal} id={`${escena.id}-sello`} centro={props.sello.centro} fecha={props.sello.fecha} arco={props.sello.arco} size={340}
               color={mezclar(pal.rojo, pal.fondo, 0.1)} />
           </div>

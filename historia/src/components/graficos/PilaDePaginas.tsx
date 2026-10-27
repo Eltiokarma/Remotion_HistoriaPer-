@@ -18,6 +18,10 @@ type Props = {
   conPluma?: boolean;
   width: number;
   semilla?: number;
+  /** "manuscrito": correcciones de autor. "pruebas": marcas de corrector sobre pruebas de imprenta (tachón, flecha, «ok»…). */
+  variante?: 'manuscrito' | 'pruebas';
+  /** 0–1: las correcciones se desvanecen y la hoja queda limpia, como impresa. */
+  limpieza?: number;
 };
 
 // Página de arriba (coordenadas del viewBox 0 0 420 560).
@@ -43,14 +47,31 @@ const correccionesBase = (semilla: number): string[] => {
   ];
 };
 
+/** Marcas de corrector de pruebas: lo que se ve en unas pruebas de imprenta de verdad. */
+const correccionesPruebas = (semilla: number): string[] => {
+  const l = (n: number) => Y_TEXTO + n * INTERLINEA - 3;
+  const M = PX + PW - 24; // margen derecho
+  return [
+    `M148 ${l(3)} L250 ${l(3) + 1.5}`, // tacha una palabra…
+    `M${M - 6} ${l(3) + 6} c -9 -13, 9 -19, 9 -5 c -1 9, -13 7, -7 -5 l 12 -11`, // …y el deleátur al margen
+    `M212 ${l(8) - 1} C 232 ${l(8) - 15}, 292 ${l(8) - 13}, 298 ${l(8) + 1} C 302 ${l(8) + 15}, 228 ${l(8) + 17}, 210 ${l(8) + 5} C 204 ${l(8) - 1}, 214 ${l(8) - 8}, 228 ${l(8) - 9}`, // encierra una palabra
+    `M300 ${l(8) - 5} C 320 ${l(8) - 26}, 338 ${l(8) - 34}, ${M + 4} ${l(8) - 40} M${M + 4} ${l(8) - 40} l -13 1 M${M + 4} ${l(8) - 40} l -5 11`, // flecha al margen
+    `M96 ${l(13) + 7} l 7 -12 l 7 12 M${M - 4} ${l(13) - 2} l 0 8 M${M - 8} ${l(13) + 2} l 8 0`, // inserción y su llamada
+    `M150 ${l(17) - 7} c 6 -10, 16 -10, 20 0 s 14 10, 20 0 M150 ${l(17) + 7} c 6 10, 16 10, 20 0 s 14 -10, 20 0`, // transposición
+    `M64 ${l(21) + 6} C 130 ${l(21)}, 230 ${l(21) + 9}, ${PX + PW - 44} ${l(21) + 2}`, // subraya
+    `M${M - 46} 70 c -11 -1, -13 15, -2 16 c 11 1, 13 -15, 2 -16 M${M - 24} 56 l -4 31 M${M - 18} 70 l -10 8 l 12 9`, // «ok» arriba, como visto bueno
+    trazoManuscrito(semilla + 23, 70, PY + PH - 40, 180, 11), // nota al pie
+  ];
+};
+
 /** Pila de páginas de un manuscrito: papel de verdad, texto a máquina y correcciones con pluma. */
-export const PilaDePaginas: React.FC<Props> = ({ paleta, id, correcciones, conPluma = true, width, semilla = 2012 }) => {
+export const PilaDePaginas: React.FC<Props> = ({ paleta, id, correcciones, conPluma = true, width, semilla = 2012, variante = 'manuscrito', limpieza = 0 }) => {
   const hojas = useMemo(() => {
     const r = azar(semilla);
     return [5, 4, 3, 2, 1].map((k) => ({ k, rot: r.rango(-1.6, 1.6), dx: k * 4 + r.rango(-2, 2), dy: -k * 4 + r.rango(-1, 1) }));
   }, [semilla]);
   const texto = useMemo(() => renglonesTipeados(semilla, 62, Y_TEXTO, PW - 70, 22, INTERLINEA), [semilla]);
-  const trazos = useMemo(() => correccionesBase(semilla).map((d) => ({ d, largo: getLength(d) })), [semilla]);
+  const trazos = useMemo(() => (variante === 'pruebas' ? correccionesPruebas : correccionesBase)(semilla).map((d) => ({ d, largo: getLength(d) })), [semilla, variante]);
   const borde = useMemo(() => bordePapel(semilla, PX, PY, PW, PH), [semilla]);
 
   // Cada trazo: 75 % del tiempo dibujando, 25 % la pluma viaja (levantada) al siguiente.
@@ -103,7 +124,7 @@ export const PilaDePaginas: React.FC<Props> = ({ paleta, id, correcciones, conPl
         <rect key={k} x={w.x} y={w.y - 6} width={w.w} height={5.2} rx={1.2} fill={paleta.fondo} opacity={0.5 + ((k * 37) % 10) / 60} />
       ))}
       {/* correcciones en tinta roja */}
-      <g filter={`url(#${id}-tinta)`}>
+      <g filter={`url(#${id}-tinta)`} opacity={1 - clamp(limpieza)}>
         {trazos.map((t, k) => {
           const kk = dibujo(k);
           return kk > 0 ? (

@@ -6,10 +6,11 @@
   "ancho": 1920,
   "alto": 1080,
   "paleta": {
-    "fondo": "#1b1a17",
-    "papel": "#e8e2d4",
+    "fondo": "#1c1b19",
+    "papel": "#ede4d3",
     "ocre": "#c2a878",
-    "rojo": "#8c2f1b"
+    "rojo": "#b3261e",
+    "verde": "#5e6b4e"
   },
   "pregunta_central": "¿Se puede estudiar la corrupción en el Perú?",
   "atmosfera": {
@@ -20,68 +21,84 @@
     {
       "id": "s01",
       "seccion": "gancho",
-      "componente": "DiasYManuscrito",
-      "duracion_s": 17.4,
-      "cola_s": 0.8,
+      "componente": "PruebasDeImprenta",
+      "duracion_s": 41.06,
+      "cola_s": 2.5,
       "intensidad": 3,
-      "cambio": "de un desconocido a alguien que pelea contra el tiempo por un libro",
-      "intencion": "abrir con la muerte y el libro sin decir todavía quién es",
+      "cambio": "de un desconocido a un hombre que corrige su libro contra el tiempo",
+      "intencion": "abrir con la muerte y el libro sin decir quién es: el rojo del corrector contra la página ya limpia",
       "transicion_salida": "corte",
       "beats": {
-        "fecha": 0.3,
-        "correcciones": 9.8,
-        "ultima_hoja": 16.5
+        "ficha": 0.4,
+        "correcciones": 4.6,
+        "cita": 15.4,
+        "subrayado": 21.9,
+        "abajo": 25.8,
+        "corte1": 31.7,
+        "sello1": 32.3,
+        "corte2": 34.6,
+        "sello2": 35.8,
+        "final": 37.4
       },
       "props": {
-        "fecha": "NUEVA YORK · 2012",
-        "etiqueta_dia": "DÍA"
-      },
-      "audio": {
-        "musica": null,
-        "ambientes": [
-          {
-            "nombre": "ciudad",
-            "nivel": 0.7
-          }
+        "ficha": "NUEVA YORK · MEMORIAL SLOAN-KETTERING",
+        "seccion": "Agradecimientos",
+        "cita": {
+          "texto": "…a mis médicos, por alargar estos días para poder completar la tarea.",
+          "subrayado": "alargar estos días"
+        },
+        "sellos": [
+          "ENERO 2013",
+          "MAYO 2013"
         ]
       },
-      "estado_musica": "ausente"
+      "audio": {
+        "musica": {
+          "archivo": "s01-entrada.mp3",
+          "nivel": 0.35,
+          "desde_beat": "final"
+        },
+        "ambientes": [
+          {
+            "nombre": "hospital",
+            "nivel": 0.55
+          }
+        ],
+        "duck_db": -16
+      },
+      "estado_musica": "ausente → entra al final"
     },
     {
       "id": "s02",
       "seccion": "personaje",
       "componente": "Presentacion",
-      "duracion_s": 18.94,
-      "cola_s": 2.4,
+      "duracion_s": 26.12,
+      "cola_s": 3.0,
       "intensidad": 2,
       "cambio": "de un historiador cualquiera a un nadador terco que se metió a los archivos",
       "intencion": "el carril de piscina se vuelve renglón contable: la misma disciplina, otro terreno",
       "transicion_salida": "corte",
       "beats": {
-        "nombre": 1.2,
-        "frenar": 5.58,
-        "renglon": 6.58,
-        "sello": 11.26
+        "nombre": 1.0,
+        "frenar": 17.6,
+        "renglon": 20.6,
+        "palabra": 25.0
       },
       "props": {
         "fondo": "piscina",
         "nombre": "ALFONSO W. QUIROZ NORRIS",
-        "anios": "1956–2013",
-        "sello": {
-          "centro": "PUCP",
-          "fecha": "1974",
-          "arco": "INGRESO · INGRESO · INGRESO ·"
-        }
+        "anios": "1956 — 2013",
+        "palabra": "INAGOTABLE"
       },
       "audio": {
         "musica": {
-          "archivo": "s02-presente.mp3",
-          "nivel": 0.45
+          "archivo": "s02-nadador.mp3",
+          "nivel": 0.32
         },
         "ambientes": [
           {
             "nombre": "agua",
-            "nivel": 0.35,
+            "nivel": 0.5,
             "hasta_beat": "renglon"
           },
           {
@@ -96,49 +113,149 @@
     },
     {
       "id": "s03",
-      "seccion": "primer hallazgo",
-      "componente": "PaisajeALibro",
-      "duracion_s": 18.47,
-      "cola_s": 1.0,
-      "intensidad": 3,
-      "cambio": "de 'la élite despilfarró el guano' a 'el Estado ayudó a saquearse a sí mismo'",
-      "intencion": "yuxtaposición: la riqueza natural (islas) contra el papel que la vació (libro de cuentas)",
+      "seccion": "formación",
+      "componente": "TiempoLargo",
+      "duracion_s": 56.42,
+      "cola_s": 1.5,
+      "intensidad": 2,
+      "cambio": "de un estudiante en tiempos de cambio a alguien que sospecha que lo de fondo no cambia",
+      "intencion": "los afiches gritan cambio; debajo, la capa que casi no se mueve",
       "transicion_salida": "corte",
       "beats": {
-        "libro": 10.73,
-        "cifra": 13.34,
-        "flecha": 16.75
+        "sello": 2.0,
+        "primeros": 5.8,
+        "afiches": 10.2,
+        "afiche1": 12.3,
+        "afiche2": 13.6,
+        "afiche3": 16.7,
+        "despegue": 28.8,
+        "volante": 33.6,
+        "capas": 39.2,
+        "braudel": 44.3,
+        "bajar": 51.2
       },
       "props": {
-        "paisaje": "islas-guaneras",
-        "rotulo": "Consolidación de la deuda · 1850",
-        "concepto": "Deuda interna reconocida",
-        "estado": "Estado",
-        "cifra": {
-          "desde": 4800000,
-          "hasta": 23200000,
-          "unidad": "pesos"
+        "sello": {
+          "centro": "PUCP",
+          "fecha": "1974",
+          "arco": "INGRESO · INGRESO · INGRESO ·"
         },
-        "columnas": [
-          "Concepto",
-          "Pesos"
-        ]
+        "titulares": [
+          "REFORMA AGRARIA",
+          "NACIONALIZACIÓN",
+          "UN PAÍS NUEVO"
+        ],
+        "ficha": "F. BRAUDEL · LA LARGA DURACIÓN",
+        "capas": {
+          "rapida": "gobiernos",
+          "media": "economía",
+          "lenta": "estructuras"
+        },
+        "gobiernos": [
+          "VIRREINATO",
+          "SAN MARTÍN",
+          "CASTILLA",
+          "PIÉROLA",
+          "LEGUÍA",
+          "BENAVIDES",
+          "ODRÍA",
+          "PRADO",
+          "BELAUNDE",
+          "VELASCO",
+          "MORALES BERMÚDEZ",
+          "GARCÍA",
+          "FUJIMORI"
+        ],
+        "lista": "ADMISIÓN · 1974"
       },
       "audio": {
         "musica": {
-          "archivo": "s03-tension.mp3",
-          "nivel": 0.5
+          "archivo": "s03-generacion.mp3",
+          "nivel": 0.28
         },
         "ambientes": [
           {
-            "nombre": "mar",
-            "nivel": 0.4,
-            "hasta_beat": "libro"
+            "nombre": "ciudad",
+            "nivel": 0.35,
+            "hasta_beat": "capas"
           },
           {
             "nombre": "cuarto",
             "nivel": 0.25,
-            "desde_beat": "libro"
+            "desde_beat": "capas"
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente"
+    },
+    {
+      "id": "s04",
+      "seccion": "primer hallazgo",
+      "componente": "MecanismoDeuda",
+      "duracion_s": 65.01,
+      "cola_s": 2.0,
+      "intensidad": 4,
+      "cambio": "de 'la élite despilfarró el guano' a 'la deuda se infló desde adentro del Estado'",
+      "intencion": "yuxtaposición: la riqueza de las islas contra el papel que la vació; el mecanismo, paso a paso",
+      "transicion_salida": "corte",
+      "beats": {
+        "islas": 0.2,
+        "sacos": 9.6,
+        "flecha": 14.3,
+        "vales": 17.0,
+        "consolidacion": 24.0,
+        "promesa": 25.4,
+        "lujos": 31.9,
+        "expedientes": 40.0,
+        "inflado": 43.6,
+        "caudal": 46.6,
+        "funcionarios": 49.3,
+        "frase": 51.3,
+        "tachar": 52.0,
+        "mecanismo": 53.4,
+        "tesis": 55.5,
+        "libro": 59.2,
+        "titulo": 63.9
+      },
+      "props": {
+        "ficha": "SIGLO XIX · GUANO",
+        "estado": "ESTADO",
+        "sello": "CONSOLIDACIÓN",
+        "vale": {
+          "desde": 1000,
+          "hasta": 3000
+        },
+        "funcionario": "funcionario",
+        "frase": [
+          "No era derroche.",
+          "Era un mecanismo."
+        ],
+        "tesis": {
+          "etiqueta": "TESIS",
+          "anio": "1980"
+        },
+        "libro": {
+          "titulo": "La deuda defraudada",
+          "anio": "1987",
+          "autor": "Alfonso W. Quiroz"
+        }
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s04-mecanismo.mp3",
+          "nivel": 0.45
+        },
+        "ambientes": [
+          {
+            "nombre": "mar",
+            "nivel": 0.45,
+            "hasta_beat": "flecha"
+          },
+          {
+            "nombre": "cuarto",
+            "nivel": 0.28,
+            "desde_beat": "flecha"
           }
         ],
         "duck_db": -15
@@ -146,22 +263,32 @@
       "estado_musica": "presente (tensión)"
     },
     {
-      "id": "s04",
-      "seccion": "la pregunta",
-      "componente": "MapaRutas",
-      "duracion_s": 25.18,
-      "cola_s": 1.2,
-      "intensidad": 4,
-      "cambio": "de un hallazgo aislado a una conclusión sobre todo el país",
-      "intencion": "el mundo entero se apaga para dejar sola la pregunta; la barra a medias es el golpe",
+      "id": "s05",
+      "seccion": "método",
+      "componente": "AprenderAMedir",
+      "duracion_s": 61.83,
+      "cola_s": 1.5,
+      "intensidad": 2,
+      "cambio": "de un historiador de discursos a uno que mide",
+      "intencion": "la flecha duda en París y se va a Nueva York: el método antes que la moda",
       "transicion_salida": "corte",
       "beats": {
-        "pregunta": 5.6,
-        "arcos": 8.71,
-        "paso": 0.95,
-        "apagar": 15.91,
-        "barra": 18.01,
-        "barra_llena": 22.62
+        "mapa": 0.2,
+        "paris": 7.0,
+        "duda": 8.4,
+        "nuevayork": 9.9,
+        "ficha": 12.1,
+        "puntos": 16.3,
+        "recta": 20.0,
+        "discursos": 25.0,
+        "balanza": 26.3,
+        "profundidad": 29.5,
+        "claridad": 31.7,
+        "estante": 32.8,
+        "temas": 37.4,
+        "aulas": 40.6,
+        "brujula": 48.5,
+        "giro": 51.4
       },
       "props": {
         "origen": {
@@ -169,161 +296,478 @@
           "lon": -77.04,
           "lat": -12.05
         },
-        "destinos": [
-          {
-            "nombre": "Sevilla",
-            "lon": -5.98,
-            "lat": 37.39
-          },
-          {
-            "nombre": "Madrid",
-            "lon": -3.7,
-            "lat": 40.42
-          },
-          {
-            "nombre": "París",
-            "lon": 2.35,
-            "lat": 48.86
-          },
-          {
-            "nombre": "Londres",
-            "lon": -0.13,
-            "lat": 51.51
-          },
-          {
-            "nombre": "Washington",
-            "lon": -77.04,
-            "lat": 38.9
-          }
+        "tentacion": {
+          "nombre": "París",
+          "lon": 2.35,
+          "lat": 48.86
+        },
+        "destino": {
+          "nombre": "Nueva York",
+          "lon": -74.0,
+          "lat": 40.71
+        },
+        "ficha": "COLUMBIA UNIVERSITY · BECA · H. S. KLEIN",
+        "balanza": [
+          "PROFUNDIDAD",
+          "CLARIDAD"
         ],
-        "pregunta": "¿Es factible su estudio?",
-        "barra": {
-          "valor": 0.5,
-          "etiqueta": "≈ ½ del crecimiento que no tuvimos"
-        }
+        "temas": [
+          "Bancos",
+          "Crédito colonial",
+          "Casa Grace"
+        ],
+        "ficha_aulas": "BARUCH COLLEGE · CUNY",
+        "brujula": [
+          "1970s",
+          "1990s"
+        ],
+        "encuadre": [
+          -105,
+          -28,
+          22,
+          62
+        ]
       },
       "audio": {
         "musica": {
-          "archivo": "s04-mundo.mp3",
-          "nivel": 0.42
+          "archivo": "s05-medir.mp3",
+          "nivel": 0.38
+        },
+        "ambientes": [
+          {
+            "nombre": "ciudad",
+            "nivel": 0.3
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente"
+    },
+    {
+      "id": "s06",
+      "seccion": "la pregunta",
+      "componente": "LaPregunta",
+      "duracion_s": 39.98,
+      "cola_s": 2.0,
+      "intensidad": 3,
+      "cambio": "de una duda académica a una pregunta con pruebas",
+      "intencion": "la estática sugiere los videos sin mostrarlos; el mundo entero se pone a mirar",
+      "transicion_salida": "corte",
+      "beats": {
+        "titulo": 2.2,
+        "tv": 9.0,
+        "globo": 22.4,
+        "ficha1": 26.4,
+        "ficha2": 29.6,
+        "pregunta": 36.3,
+        "pruebas": 39.3
+      },
+      "props": {
+        "titulo": "Historia de la corrupción en el Perú: ¿es factible su estudio?",
+        "tv": {
+          "fecha": "2000",
+          "rec": "REC"
+        },
+        "fichas": [
+          {
+            "texto": "BANCO MUNDIAL · 1996 · «CÁNCER»",
+            "lugar": {
+              "lon": -77.04,
+              "lat": 38.9
+            }
+          },
+          {
+            "texto": "ONU · 2000",
+            "lugar": {
+              "lon": -73.97,
+              "lat": 40.75
+            }
+          }
+        ],
+        "cierre": [
+          "pregunta",
+          "pruebas"
+        ],
+        "giro": [
+          -40,
+          -78
+        ]
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s06-pregunta.mp3",
+          "nivel": 0.4
         },
         "ambientes": [
           {
             "nombre": "cuarto",
-            "nivel": 0.22
+            "nivel": 0.3
           }
         ],
-        "silencio": {
-          "desde_beat": "apagar",
-          "hasta_beat": "barra"
-        },
         "duck_db": -15
       },
-      "estado_musica": "presente → silencio → golpe"
+      "estado_musica": "presente (tensión)"
     },
     {
-      "id": "s05",
-      "seccion": "la serie",
-      "componente": "SerieCapitulos",
-      "duracion_s": 17.4,
-      "cola_s": 2.6,
+      "id": "s07",
+      "seccion": "las objeciones",
+      "componente": "Objeciones",
+      "duracion_s": 83.11,
+      "cola_s": 2.8,
       "intensidad": 5,
-      "cambio": "de un libro ajeno a una serie que el espectador va a seguir",
-      "intencion": "cada época ocupa el ancho de sus años: el largo de un período también es un dato",
+      "cambio": "de 'la corrupción no se puede estudiar' a 'se puede, y traba todo'",
+      "intencion": "cada objeción se da vuelta; el remate es físico: el engranaje se traba",
       "transicion_salida": "corte",
       "beats": {
-        "linea": 0.0,
-        "capitulos": 2.75,
-        "paso": 0.71,
-        "pregunta": 13.82
+        "tarjetas": 3.3,
+        "excusa": 10.1,
+        "t1": 11.2,
+        "r1": 16.9,
+        "sellos": 25.0,
+        "t2": 30.5,
+        "r2": 35.8,
+        "t3": 44.3,
+        "r3": 49.6,
+        "entradas": 56.2,
+        "t4": 61.9,
+        "r4": 68.8,
+        "engranaje": 69.9,
+        "aceite": 73.9,
+        "corte": 78.2,
+        "grava": 81.4,
+        "traba": 82.4,
+        "fin": 84.6
       },
       "props": {
-        "capitulos": [
+        "tarjetas": [
           {
-            "desde": 1750,
-            "hasta": 1820
+            "numero": "01",
+            "nombre": "SECRETA"
           },
           {
-            "desde": 1821,
-            "hasta": 1859
+            "numero": "02",
+            "nombre": "PERCEPCIÓN"
           },
           {
-            "desde": 1860,
-            "hasta": 1883
+            "numero": "03",
+            "nombre": "RELATIVISMO"
           },
           {
-            "desde": 1884,
-            "hasta": 1930
-          },
-          {
-            "desde": 1931,
-            "hasta": 1962
-          },
-          {
-            "desde": 1963,
-            "hasta": 1989
-          },
-          {
-            "desde": 1990,
-            "hasta": 2000
+            "numero": "04",
+            "nombre": "CULTURA"
           }
         ],
-        "fondo_asset": null,
-        "etiqueta_hoy": "hoy"
+        "sellos": [
+          "FOREIGN OFFICE",
+          "QUAI D'ORSAY",
+          "STATE DEPT."
+        ],
+        "diccionario": {
+          "anio": "1729",
+          "entradas": [
+            "cohecho",
+            "prevaricato",
+            "corruptela"
+          ]
+        },
+        "engranaje": {
+          "antes": "lo que decían",
+          "despues": "lo que encontró"
+        }
       },
       "audio": {
         "musica": {
-          "archivo": "s05-protagonista.mp3",
-          "nivel": 0.6
+          "archivo": "s07-objeciones.mp3",
+          "nivel": 0.75
+        },
+        "ambientes": [
+          {
+            "nombre": "cuarto",
+            "nivel": 0.3
+          }
+        ],
+        "silencio": {
+          "desde_beat": "traba",
+          "hasta_beat": "fin"
+        },
+        "duck_db": -14
+      },
+      "estado_musica": "protagonista → golpe → silencio"
+    },
+    {
+      "id": "s08",
+      "seccion": "la cuenta",
+      "componente": "LaCuenta",
+      "duracion_s": 61.88,
+      "cola_s": 2.0,
+      "intensidad": 5,
+      "cambio": "de una sospecha a una cifra: entre un tercio y dos quintos del gasto, siempre",
+      "intencion": "la banda de corrupción baja se queda vacía: el dato más fuerte es una ausencia",
+      "transicion_salida": "corte",
+      "beats": {
+        "decadas": 6.9,
+        "barra": 13.7,
+        "rojo": 20.5,
+        "cae": 23.2,
+        "pib": 24.9,
+        "niveles": 30.2,
+        "baja": 38.4,
+        "ni": 40.2,
+        "silueta": 43.2,
+        "mitad": 47.6,
+        "nota": 50.8,
+        "patron": 59.3
+      },
+      "props": {
+        "desde": 1820,
+        "hasta": 2000,
+        "gasto": {
+          "min": 30,
+          "max": 40,
+          "rotulo": "GASTO DEL ESTADO · 100"
+        },
+        "pib": {
+          "min": 3,
+          "max": 4,
+          "rotulo": "PRODUCCIÓN DEL PAÍS"
+        },
+        "periodos": [
+          {
+            "desde": 1820,
+            "hasta": 1859,
+            "nivel": "alta"
+          },
+          {
+            "desde": 1860,
+            "hasta": 1883,
+            "nivel": "muy alta"
+          },
+          {
+            "desde": 1884,
+            "hasta": 1930,
+            "nivel": "alta"
+          },
+          {
+            "desde": 1931,
+            "hasta": 1962,
+            "nivel": "alta"
+          },
+          {
+            "desde": 1963,
+            "hasta": 1989,
+            "nivel": "muy alta"
+          },
+          {
+            "desde": 1990,
+            "hasta": 2000,
+            "nivel": "muy alta"
+          }
+        ],
+        "crecimiento": "≈ ½ del crecimiento que no tuvimos",
+        "pais": 604,
+        "nota": "Estimados provisionales — Quiroz, Apéndice",
+        "regla": [
+          1750,
+          2000
+        ]
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s08-cuenta.mp3",
+          "nivel": 0.4
+        },
+        "ambientes": [
+          {
+            "nombre": "cuarto",
+            "nivel": 0.25
+          }
+        ],
+        "silencio": {
+          "desde_beat": "baja",
+          "hasta_beat": "ni"
+        },
+        "duck_db": -16
+      },
+      "estado_musica": "presente → silencio"
+    },
+    {
+      "id": "s09",
+      "seccion": "el libro",
+      "componente": "CirculosCorruptos",
+      "duracion_s": 24.25,
+      "cola_s": 2.6,
+      "intensidad": 4,
+      "cambio": "de un libro premiado a una frase que todos repetimos: 'roba, pero hace obra'",
+      "intencion": "el cartel de obra pública dice lo que el libro desarma: se tacha el PERO y queda la verdad",
+      "transicion_salida": "corte",
+      "beats": {
+        "circulos": 0.2,
+        "titulo": 1.8,
+        "red": 5.3,
+        "cartel": 17.3,
+        "frase": 22.1,
+        "tachar": 23.6,
+        "roba": 25.0
+      },
+      "props": {
+        "titulo": "Corrupt Circles",
+        "anio": "2008",
+        "frase": "ROBA, PERO HACE OBRA",
+        "tachar": "PERO",
+        "queda": "ROBA"
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s09-circulos.mp3",
+          "nivel": 0.3
+        },
+        "ambientes": [
+          {
+            "nombre": "ciudad",
+            "nivel": 0.3
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente"
+    },
+    {
+      "id": "s10",
+      "seccion": "la serie",
+      "componente": "Denunciantes",
+      "duracion_s": 44.81,
+      "cola_s": 4.5,
+      "intensidad": 3,
+      "cambio": "de una lista de ladrones a una historia contada por los que denunciaron",
+      "intencion": "el que intentó limpiar y perdió abre la serie; el corte a negro es su derrota",
+      "transicion_salida": "corte",
+      "beats": {
+        "lista": 0.2,
+        "tacha": 4.9,
+        "cordillera": 5.8,
+        "huanca": 14.2,
+        "altura": 15.9,
+        "mercurio": 20.0,
+        "plata": 22.2,
+        "limpiar": 24.6,
+        "perdio": 27.8,
+        "otros": 30.8,
+        "paso_nombres": 1.42,
+        "capitulos": 37.1,
+        "serie": 43.3
+      },
+      "props": {
+        "ficha": "HUANCAVELICA · 1758 · ~3.600 M.S.N.M.",
+        "altura": "3 600 m",
+        "denunciantes": [
+          "Domingo Elías",
+          "Manuel González Prada",
+          "Jorge Basadre",
+          "Héctor Vargas Haya"
+        ],
+        "capitulos": [
+          {
+            "desde": 1750,
+            "hasta": 1820,
+            "titulo": "El fracaso de las reformas coloniales"
+          },
+          {
+            "desde": 1821,
+            "hasta": 1859,
+            "titulo": "Cimientos socavados de la temprana república"
+          },
+          {
+            "desde": 1860,
+            "hasta": 1883,
+            "titulo": "El sinuoso camino al desastre"
+          },
+          {
+            "desde": 1884,
+            "hasta": 1930,
+            "titulo": "La modernización y sus secuaces"
+          },
+          {
+            "desde": 1931,
+            "hasta": 1962,
+            "titulo": "Dictadores venales y pactos secretos"
+          },
+          {
+            "desde": 1963,
+            "hasta": 1989,
+            "titulo": "Asaltos a la democracia"
+          },
+          {
+            "desde": 1990,
+            "hasta": 2000,
+            "titulo": "Conspiraciones corruptas"
+          }
+        ],
+        "encabezado": "Índice"
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s10-serie.mp3",
+          "nivel": 0.55
         },
         "ambientes": [
           {
             "nombre": "viento",
-            "nivel": 0.25
+            "nivel": 0.5,
+            "hasta_beat": "perdio"
+          },
+          {
+            "nombre": "cuarto",
+            "nivel": 0.25,
+            "desde_beat": "otros"
           }
         ],
-        "duck_db": -12
+        "duck_db": -15
       },
-      "estado_musica": "protagonista"
+      "estado_musica": "presente → corte → protagonista"
     },
     {
-      "id": "s06",
+      "id": "s11",
       "seccion": "cierre",
       "componente": "Cierre",
-      "duracion_s": 6.27,
-      "cola_s": 4.0,
+      "duracion_s": 24.96,
+      "cola_s": 6.0,
       "intensidad": 2,
-      "cambio": "de la muerte del autor a la invitación a leerlo",
-      "intencion": "vuelve la pila del inicio y se cierra: el círculo del libro terminado",
-      "transicion_salida": "fundido",
+      "cambio": "de la muerte del autor a la promesa de leerlo",
+      "intencion": "vuelve la pila del inicio, ahora limpia: el libro terminado; recién aquí suena el tema del canal",
+      "transicion_salida": "corte",
       "beats": {
-        "cerrar": 2.18,
-        "negro": 6.34,
-        "tarjeta": 7.13
+        "limpiar": 0.6,
+        "ficha": 2.4,
+        "cerrar": 14.4,
+        "negro": 18.9,
+        "tarjeta": 19.9
       },
       "props": {
+        "ficha": "RÍO DE JANEIRO · FEBRERO 2013",
+        "limpiar": true,
+        "emblema": "mercurio",
         "proximo": {
           "etiqueta": "Próximo",
-          "anio": "1750",
-          "titulo": "El fracaso de las reformas coloniales"
+          "anio": "1758",
+          "titulo": "Huancavelica"
         }
       },
       "audio": {
         "musica": {
-          "archivo": "s06-cierre.mp3",
-          "nivel": 0.4,
-          "hasta_beat": "tarjeta"
+          "archivo": "s11-tema.mp3",
+          "nivel": 0.55,
+          "desde_beat": "negro"
         },
         "ambientes": [
           {
             "nombre": "cuarto",
-            "nivel": 0.2,
+            "nivel": 0.3,
             "hasta_beat": "negro"
           }
         ],
-        "duck_db": -14
+        "duck_db": -12
       },
-      "estado_musica": "presente → ausente"
+      "estado_musica": "ausente → tema del canal"
     }
   ]
 }

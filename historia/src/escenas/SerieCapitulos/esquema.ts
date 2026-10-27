@@ -16,7 +16,7 @@ export const beats = {
   pregunta: 'la línea roja sigue hasta "hoy"',
 };
 
-/** Como se usó en 000-quiroz. */
+/** Como se usó en la primera versión de 000-quiroz (6 escenas). */
 export const ejemplo: Ejemplo<typeof esquema> = {
   duracion_s: 20,
   beats: { linea: 0, capitulos: 2.8, paso: 0.72, pregunta: 14 },

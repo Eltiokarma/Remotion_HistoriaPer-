@@ -2,7 +2,8 @@
 
 Cada video es **datos** (un guion y un `escenas.json`) que se dibujan con una biblioteca de
 escenas y piezas compartidas. El prototipo es el video **000: El hombre que le sacó la cuenta
-al Perú**, todo animado (tipografía, grabados y mapas dibujados en código, sin fotos ni metraje).
+al Perú** (fase 2: 11 escenas, ~9 min), todo animado: tipografía, grabados, mapas y objetos
+dibujados en código, sin fotos ni metraje.
 
 ## Usar
 
@@ -87,12 +88,25 @@ instante. Lo que quede bien se copia tal cual a las `props` de una escena en `es
 
 | Escena            | Qué hace                                                                                     | Datos principales                                  |
 |-------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------|
-| `DiasYManuscrito` | Calendario que suelta hojas cada vez más lento + manuscrito que una pluma corrige en rojo    | `fecha`, `etiqueta_dia`                            |
-| `Presentacion`    | Nombre grande, años y sello. Fondo `papel` o `piscina` (el carril se vuelve renglón)         | `nombre`, `anios`, `sello`, `fondo`                |
-| `PaisajeALibro`   | Grabado de época que se da vuelta como página: libro de cuentas, cifra que se infla, flecha  | `rotulo`, `concepto`, `cifra.desde/hasta`, `estado`|
-| `MapaRutas`       | Carta antigua con rutas desde un origen; se apaga, queda una pregunta y una barra            | `origen`, `destinos`, `pregunta`, `barra`          |
-| `SerieCapitulos`  | Repisa con un libro por época, de grosor proporcional a sus años, y línea de tiempo          | `capitulos[]`, `etiqueta_hoy`                      |
-| `Cierre`          | El expediente se cierra, fundido a negro y tarjeta del próximo episodio                      | `proximo.anio`, `proximo.titulo`                   |
+| Escena              | Qué hace                                                                                                   | En 000 |
+|---------------------|------------------------------------------------------------------------------------------------------------|--------|
+| `PruebasDeImprenta` | Ficha a máquina, pruebas con marcas de corrector, una frase de libro subrayada, dos sellos con corte seco  | s01    |
+| `Presentacion`      | Nombre grande y años; fondo `papel` o `piscina` (el carril se vuelve renglón); sello y/o palabra final sola | s02    |
+| `TiempoLargo`       | Sello sobre una lista, muro de afiches de época (uno se despega), volante y las tres capas de Braudel       | s03    |
+| `MecanismoDeuda`    | Islas con sacos, plata al Estado, vales consolidados, lo prometido en punteado, vale que se infla, caudal a bolsillos, frase tachada, tesis → libro | s04 |
+| `AprenderAMedir`    | Ruta que duda y cambia de destino, nube de puntos con recta, balanza, repisa de temas, aula, brújula        | s05    |
+| `LaPregunta`        | Título a máquina con signos rojos, televisor con estática y REC, globo con fichas, dos palabras finales     | s06    |
+| `Objeciones`        | Cuatro tarjetas que pasan al centro y se dan vuelta (legajos, medidor, diccionario, tachado) + engranaje que se traba | s07 |
+| `LaCuenta`          | Regla de décadas, 100 unidades de las que cae el rango rojo, franja anual del PBI, niveles por época, país y su fantasma | s08 |
+| `CirculosCorruptos` | Anillos que se cierran y red que crece alrededor de un título; cartel de obra con una palabra tachada        | s09    |
+| `Denunciantes`      | Lista tachada, cordillera con punto que baja y escala de altura, mercurio → plata, corte a negro, nombres, índice de la serie | s10 |
+| `Cierre`            | La pila del inicio se limpia y se cierra; fundido a negro; tarjeta del próximo episodio con emblema          | s11    |
+| `DiasYManuscrito`   | Calendario que suelta hojas cada vez más lento + manuscrito que una pluma corrige                           | (v1)   |
+| `PaisajeALibro`     | Grabado que se da vuelta como página: libro de cuentas, cifra que se infla, flecha                           | (v1)   |
+| `MapaRutas`         | Carta antigua con rutas; se apaga, queda una pregunta y una barra                                            | (v1)   |
+| `SerieCapitulos`    | Repisa con un libro por época, de grosor proporcional a sus años                                             | (v1)   |
+
+(v1) = se usaron en la primera versión del video 000; siguen en el catálogo para reciclarlas.
 
 Los beats de cada escena (y qué hace cada uno) están descritos en su `esquema.ts`.
 
@@ -101,12 +115,20 @@ Los beats de cada escena (y qué hace cada uno) están descritos en su `esquema.
 Para una escena nueva no hace falta empezar de cero: estas piezas reciben todo por props y se
 pueden combinar.
 
-- **Gráficos** (`components/graficos/`): `Calendario` (hojas que caen en 3D), `PilaDePaginas`
-  (manuscrito con correcciones), `Pluma`, `Sello` (sello de goma gastado), `Piscina`,
-  `GrabadoGuanero` (grabado a buril: mar, islas, aves, fragata), `LibroContable`, `Mapa`
-  (Natural Earth, rutas, sellos de lacre), `RosaDeLosVientos`, `Barra`, `LomosDeLibro`, `Carpeta`.
-- **Texto** (`components/texto/`): `MaquinaDeEscribir`, `Odometro` (cifras que ruedan con
-  acarreo real), `Tarjeta`, `Ornamento`.
+- **Gráficos** (`components/graficos/`):
+  - papel y archivo: `PilaDePaginas` (manuscrito o pruebas de imprenta, con correcciones que se
+    pueden borrar), `Carpeta`, `Pluma`, `Sello` y `SelloFecha`, `Vale` (bono con guilloché),
+    `PortadaLibro`, `Afiche`, `LibroContable`;
+  - grabados: `GrabadoGuanero` (islas, aves, fragata, sacos), `Barco`, `EdificioEstado` (fachada
+    con ventanas que se encienden), `Cordillera` (Andes con escala de altura), `Engranaje`;
+  - mapas y datos: `Mapa`, `Globo`, `SiluetaPais`, `RosaDeLosVientos`, `Barra`, `BarraUnidades`
+    (100 unidades que se desprenden), `GraficoNiveles`, `Dispersion` (nube de puntos y regresión
+    de verdad), `CapasDeTiempo`, `CirculosRed`, `IndiceSerie`, `LomosDeLibro`, `Estante`;
+  - objetos: `Balanza`, `Brujula`, `TelevisorCRT` (estática, nunca imágenes), `GotaMercurio`
+    (mercurio que se vuelve plata), `CartelObra`, `Aula`, `Calendario`, `Piscina`.
+- **Texto** (`components/texto/`): `Ficha` (dato de archivo a máquina), `TrazoRojo` (subrayar o
+  tachar a mano), `Renglones` (texto simulado: llena páginas sin inventar contenido),
+  `MaquinaDeEscribir`, `Odometro` (cifras que ruedan con acarreo real), `Tarjeta`, `Ornamento`.
 - **Atmósfera** (`components/atmosfera/`): `Papel` (textura y bordes envejecidos), `Luz` (luz de
   lámpara), `Atmosfera` (grano de película y viñeta, ya puesta en todo video).
 - **SVG** (`components/graficos/svg.tsx`): filtros de tinta y desgaste, bordes de papel,
@@ -148,21 +170,31 @@ que tocar nada más: la voz real gana sola.
 
 La voz provisional sale de `videos/<id>/voz_provisional.txt` con
 `python scripts/voz_provisional.py 000-quiroz <voz.onnx>` (necesita `piper-tts` y ffmpeg).
+Además escribe `voz-provisional/tiempos.json`: en qué segundo empieza cada frase y, estimado,
+cada palabra. Con eso se cuadraron los beats de la fase 2 (y servirá para los subtítulos).
 
 ## Música, ambiente y efectos
 
 Todo el audio es sintetizado con `scripts/generar_audio.py` (numpy, sin muestras de terceros):
 
 ```
-npm run generar:audio                     # todo
+npm run generar:audio                     # lo que falte (no pisa lo que ya existe)
 npm run generar:audio -- compartido       # efectos y ambientes
 npm run generar:audio -- 000-quiroz       # la música de ese video
+npm run generar:audio -- 000-quiroz --forzar   # volver a componerla (p. ej. con la voz real)
 ```
+
+La música de cada escena se compone **sobre sus beats**: el script lee `escenas.json` y la
+duración de la voz, y pone cada cambio donde pasa algo (el arpegio que frena con el carril, el
+pulso que se acelera con el vale, el corte en seco cuando se traba el engranaje). Cuando llegue la
+voz real y se cuadren los beats, `--forzar` la vuelve a componer en los nuevos tiempos. El tema del
+canal (quena sobre bombo y charango) suena recién en el cierre: es la firma de la serie.
 
 En `escenas.json`, cada escena tiene su bloque `audio`:
 
 - `musica` y `ambientes`: pista, `nivel` (0–1) y opcionalmente `desde_beat` / `hasta_beat`
-  (entran o salen con un fundido en ese beat).
+  (entran o salen con un fundido en ese beat). Si la música trae `desde_beat`, el archivo
+  empieza a sonar en ese beat (la música *entra* ahí, como al final de s01 o el tema en s11).
 - `silencio`: música y ambiente se callan del todo entre dos beats.
 - `duck_db`: cuánto baja la música cuando habla la voz (se mide la voz cuadro a cuadro).
 
@@ -182,6 +214,7 @@ Las reglas del canal (CLAUDE.md §3–§6), además de la forma del JSON:
   presente y protagonista; `[VERIFICAR]` en `fuentes.md`; «POR COMPLETAR»; voz provisional.
 - **Avisos**: ducking fuera de −12 a −18 dB; silencio fuera de 1.5–3 s; pico de intensidad
   muy al principio; beats que la escena no usa; falta `glosario.txt`.
+- **Errores** también si una escena pide un efecto de sonido que no existe.
 
 ## Render
 
@@ -190,5 +223,9 @@ el peso del archivo final: es normal.
 
 ## Pendiente
 
-- Verificar todos los datos de `fuentes.md` (la cifra de s03 es un marcador).
-- Grabar la voz real y cuadrar los beats con ella (`"beats_ajustados": true`).
+- Cotejar con el libro todo lo de `fuentes.md`. Lo urgente, marcado `[VERIFICAR]`: la frase
+  textual de los agradecimientos (s01), el nombre del hospital (s01), la lista de gobernantes de
+  la capa rápida (s03) y **los niveles por período del gráfico de s08, que son un marcador**.
+- Grabar la voz real, cuadrar los beats con ella (`"beats_ajustados": true`) y recomponer la
+  música (`npm run generar:audio -- 000-quiroz --forzar`).
+- Subtítulos nativos en Remotion (el guion lo propone): `tiempos.json` ya da el punto de partida.

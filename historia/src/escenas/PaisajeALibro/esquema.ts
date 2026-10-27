@@ -22,7 +22,7 @@ export const beats = {
   flecha: 'la flecha sale del casillero (la cifra termina de inflarse 0.6 s antes)',
 };
 
-/** Como se usó en 000-quiroz. */
+/** Como se usó en la primera versión de 000-quiroz (6 escenas). */
 export const ejemplo: Ejemplo<typeof esquema> = {
   duracion_s: 19,
   beats: { libro: 10.7, cifra: 13.3, flecha: 16.7 },

@@ -2,15 +2,19 @@
 
 Todo sale de este script, así que no hay licencias que rastrear: es material propio.
 Uso (necesita numpy y ffmpeg):
-    python scripts/generar_audio.py              → todo
+    python scripts/generar_audio.py              → lo que falte (no pisa archivos que ya existen)
     python scripts/generar_audio.py compartido   → efectos y ambientes (public/compartido/audio/)
     python scripts/generar_audio.py 000-quiroz   → la música de ese video (public/videos/000-quiroz/musica/)
+    … --forzar                                   → vuelve a generar aunque ya existan
 
-Las pistas de música son más largas que su escena: Remotion las corta y las funde, así que
-siguen sirviendo si la voz real dura más. Para la música de un video nuevo, agrega una función
-como musica_000_quiroz() y su entrada en MUSICA.
+La música de cada escena se compone sobre sus beats: el script lee videos/<id>/escenas.json y la
+duración de la voz (la real si está, si no la provisional). Cuando llegue la voz real y se
+cuadren los beats, se vuelve a generar con --forzar y la música cae en los nuevos tiempos.
+Para la música de un video nuevo, agrega una función como musica_000_quiroz() y su entrada en MUSICA.
 """
+import json
 import subprocess
+import sys
 import tempfile
 import wave
 from pathlib import Path
@@ -21,6 +25,7 @@ SR = 44100
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
 rng = np.random.default_rng(1781)
+FORZAR = "--forzar" in sys.argv
 
 
 # ---------------------------------------------------------------- utilidades
@@ -252,6 +257,343 @@ def musica_cierre(dur):
     return reverb(buf, 3.5, 0.4)
 
 
+# ---------------------------------------------------------------- música del video 000 (sobre sus beats)
+
+J = 0.4  # el sonido de cada escena (menos la primera) entra 12 frames antes que su imagen
+RAMPA = 0.5  # una música que "entra" en un beat empieza a sonar medio segundo antes
+
+
+def tiempos_video(video):
+    """Beats (en segundos de la escena) y duración de cada escena, como los calcula el Studio."""
+    datos = json.loads((ROOT / "videos" / video / "escenas.json").read_text(encoding="utf-8"))
+    out = {}
+    for e in datos["escenas"]:
+        cola = e.get("cola_s", 0.8)
+        voz = None
+        for ruta in (f"voz/{e['id']}.wav", f"voz/{e['id']}.mp3", f"voz-provisional/{e['id']}.mp3"):
+            p = PUBLIC / "videos" / video / ruta
+            if p.exists():
+                voz = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(p)]))
+                break
+        k = 1.0 if voz is None or e.get("beats_ajustados") else voz / e["duracion_s"]
+        dur = (voz if voz is not None else e["duracion_s"]) + cola
+        out[e["id"]] = ({n: v * k for n, v in e["beats"].items()}, dur)
+    return out
+
+
+class Partitura:
+    """Un buffer estéreo con el reloj de la escena: `en(t)` pasa de segundos de escena a segundos del archivo."""
+
+    def __init__(self, dur, desfase):
+        self.buf = estereo(int((dur + desfase + 4) * SR))
+        self.desfase = desfase
+
+    def poner(self, sig, t, gan=1.0, pan=0.0):
+        poner(self.buf, sig, max(0.0, t + self.desfase), gan, pan)
+
+    def mezcla(self, segundos=2.6, cantidad=0.32):
+        return reverb(self.buf, segundos, cantidad)
+
+
+def acordes(p, desde, hasta, progresion, paso, gan=0.14, corte=1100, octava=0):
+    t, i = desde, 0
+    while t < hasta:
+        d = min(paso, hasta - t)
+        p.poner(colchon([m + octava for m in ACORDES[progresion[i % len(progresion)]]], d + 2.0, ataque=min(1.2, d * 0.4), cierre=1.8, corte=corte), t, gan)
+        t += paso
+        i += 1
+
+
+def m000_s01(b, dur):
+    """Entra al final, cuando se nombra al hombre: un acorde grave y dos notas, nada más."""
+    p = Partitura(10, RAMPA)
+    p.poner(colchon(ACORDES["Dm"], 10, ataque=3.0, cierre=4.0, corte=700), 0, 0.22)
+    p.poner(punteo(62, 4.0, 0.7), 1.2, 0.2, -0.2)
+    p.poner(punteo(69, 4.0, 0.7), 3.4, 0.16, 0.2)
+    return p.mezcla(3.4, 0.4)
+
+
+def m000_s02(b, dur):
+    """El nadador: arpegio continuo (el braceo) que frena con el carril y se abre en la palabra."""
+    p = Partitura(dur, J)
+    frenar, renglon, palabra = b["frenar"], b["renglon"], b["palabra"]
+    prog = ["Dm", "Bb", "F", "C"]
+    acordes(p, 0, palabra, prog, 4.0, 0.12)
+    t, i = 0.3, 0
+    while t < renglon + 2:
+        acorde = ACORDES[prog[int(t // 4.0) % 4]]
+        nota = acorde[1:][i % 3] + 12 + (12 if i % 6 == 5 else 0)
+        p.poner(punteo(nota, 1.8, 1.1), t, 0.16, -0.3 + 0.2 * (i % 4))
+        # al frenar, cada nota llega un poco más tarde (como el agua que se aquieta)
+        frena = min(1.0, max(0.0, (t - frenar) / (renglon - frenar)))
+        t += 0.33 + 0.6 * frena ** 1.5
+        i += 1
+    p.poner(colchon([53, 57, 60, 65, 69], dur - palabra + 2, ataque=1.5, cierre=3, corte=1500), palabra - 0.3, 0.2)
+    p.poner(punteo(77, 4.0, 0.8), palabra + 0.2, 0.18, 0.2)
+    return p.mezcla()
+
+
+def m000_s03(b, dur):
+    """Una generación: calma en la lista, un ostinato de época en los afiches y, al final, solo el bordón."""
+    p = Partitura(dur, J)
+    af, desp, capas, bajar = b["afiches"], b["despegue"], b["capas"], b["bajar"]
+    acordes(p, 0, af, ["Dm", "Gm"], 5.0, 0.12)
+    negra = 60 / 100
+    t, i = af, 0
+    patron = [38, 38, 41, 38, 45, 38, 48, 38]
+    while t < capas:
+        p.poner(punteo(patron[i % 8], 0.9, 0.5), t, 0.2, -0.1)
+        if i % 4 == 0 and t < desp:
+            p.poner(bombo(), t, 0.22)
+        t += negra / 2
+        i += 1
+    acordes(p, af, capas, ["Dm", "Gm", "Bb", "A"], 4 * negra * 2, 0.11)
+    # las tres capas: arriba notas rápidas, al medio acordes lentos, abajo un bordón que no se va
+    t = capas
+    r = np.random.default_rng(1949)
+    while t < dur:
+        if t < bajar:
+            p.poner(punteo(r.choice(RE_MENOR) + 12, 0.7, 1.6), t, 0.07, r.uniform(-0.8, 0.8))
+        t += 0.16
+    acordes(p, capas + 1.5, bajar + 1.5, ["Dm", "Bb", "Gm", "A"], 4.0, 0.1, corte=1400)
+    tb = tt(dur - capas + 3)
+    bordon = (np.sin(2 * np.pi * hz(38) * tb) + 0.5 * np.sin(2 * np.pi * hz(45) * tb)) * np.minimum(1, tb / 3) * 0.16
+    p.poner(bordon, capas + 2.5, 1.0)
+    return p.mezcla(3.0, 0.36)
+
+
+def m000_s04(b, dur):
+    """El mecanismo: mar abierto, la plata que cuenta, tensión que crece con el vale y se corta en la frase."""
+    p = Partitura(dur, J)
+    r = np.random.default_rng(1850)
+    fl, val, prom, exp_, inf, cau, fra, mec, tes, lib, tit = (b[k] for k in ("flecha", "vales", "promesa", "expedientes", "inflado", "caudal", "frase", "mecanismo", "tesis", "libro", "titulo"))
+    acordes(p, 0, fl, ["Dm", "Bb"], 6.0, 0.1, corte=1600, octava=12)
+    t = 0.8
+    while t < fl:
+        p.poner(punteo(r.choice(RE_MENOR) + 12, 2.5, 1.3), t, 0.1, r.uniform(-0.7, 0.7))
+        t += r.uniform(0.9, 1.6)
+    # la plata que entra: un pulso grave que cuenta
+    t = fl
+    while t < fra:
+        acel = min(1.0, max(0.0, (t - exp_) / (cau - exp_)))
+        p.poner(punteo(38 if int((t - fl) * 2) % 2 == 0 else 45, 0.8, 0.5), t, 0.18 + 0.08 * acel)
+        t += 0.6 - 0.3 * acel
+    acordes(p, fl, prom, ["Dm", "Gm"], 4.0, 0.1)
+    acordes(p, prom, exp_, ["F", "C", "Dm", "A"], 3.5, 0.1)
+    # la nota ajena (mi bemol) aparece cuando se infla el vale y crece hasta la frase
+    tb = tt(fra - inf)
+    ajena = filtro(rng.standard_normal(len(tb)), bajo=hz(75) * 0.98, alto=hz(75) * 1.02, orden=8)
+    p.poner(ajena / (np.max(np.abs(ajena)) + 1e-9) * (tb / (fra - inf)) ** 2 * 0.06, inf, 1.0)
+    acordes(p, exp_, fra, ["Dm", "Bb", "Gm", "A"], 2.6, 0.13)
+    # la frase: casi silencio; en "mecanismo" un acorde grave y seco
+    p.poner(colchon([38, 45, 50], 3.0, ataque=0.05, cierre=2.5, corte=500), mec, 0.25)
+    # la tesis se vuelve libro: resolución tranquila
+    acordes(p, tes, dur, ["Dm", "F", "Bb", "Dm"], 3.0, 0.12)
+    for k, m in enumerate([62, 65, 69, 74]):
+        p.poner(punteo(m, 3.0, 0.8), tit + k * 0.12, 0.14, -0.3 + 0.2 * k)
+    return p.mezcla()
+
+
+def m000_s05(b, dur):
+    """Aprender a medir: viaje, datos que caen a tempo, una balanza suspendida y una brújula que cambia de modo."""
+    p = Partitura(dur, J)
+    r = np.random.default_rng(1983)
+    pun, rec, bal, cla, est, bru, giro = (b[k] for k in ("puntos", "recta", "balanza", "claridad", "estante", "brujula", "giro"))
+    acordes(p, 0, pun, ["Dm", "Bb", "C", "A"], 4.0, 0.1, corte=1700, octava=12)
+    t = 0.6
+    while t < pun:
+        p.poner(punteo(r.choice(RE_MENOR) + 12, 2.6, 1.2), t, 0.1, r.uniform(-0.7, 0.7))
+        t += r.uniform(0.7, 1.4)
+    # los datos: punteos en corcheas parejas; en la recta, un arpegio que sube
+    t, i = pun, 0
+    while t < bal:
+        p.poner(punteo([62, 65, 69, 65][i % 4] + 12, 0.6, 1.5), t, 0.11, -0.4 + 0.27 * (i % 4))
+        t += 0.3125
+        i += 1
+    for k, m in enumerate([62, 65, 69, 72, 74, 77, 81]):
+        p.poner(punteo(m + 12, 1.5, 1.2), rec + k * 0.12, 0.13, -0.5 + k * 0.15)
+    acordes(p, pun, bal, ["Dm", "Dm", "Bb", "C"], 2.5, 0.08)
+    # balanza: acorde suspendido que se resuelve con "claridad"
+    p.poner(colchon([50, 55, 57, 62], cla - bal + 1, ataque=1, cierre=1, corte=1300), bal, 0.15)
+    p.poner(colchon([50, 57, 62, 65], est - cla + 1.5, ataque=0.3, cierre=1.2, corte=1300), cla, 0.15)
+    acordes(p, est, bru, ["F", "C", "Dm", "Bb"], 3.75, 0.12)
+    t = est + 0.5
+    while t < bru:
+        p.poner(punteo(r.choice([72, 74, 77, 79, 81]), 2.0, 1.0), t, 0.1, r.uniform(-0.5, 0.5))
+        t += r.choice([0.5, 0.75, 1.0])
+    # la brújula: re menor que, al girar la aguja, se vuelve re mayor (las ideas cambian)
+    p.poner(colchon([50, 57, 62, 65], giro - bru + 2, ataque=1.5, cierre=2, corte=1100), bru, 0.15)
+    p.poner(colchon([50, 57, 62, 66], dur - giro + 2, ataque=3.0, cierre=3, corte=1100), giro, 0.17)
+    p.poner(punteo(78, 4.0, 0.8), giro + 4.6, 0.14, 0.2)
+    return p.mezcla()
+
+
+def m000_s06(b, dur):
+    """La pregunta: un latido y una nota que no resuelve; la tele casi sin música; el mundo crece; respuesta en 'pruebas'."""
+    p = Partitura(dur, J)
+    tv, glo, pre, pru = b["tv"], b["globo"], b["pregunta"], b["pruebas"]
+    for t in np.arange(0.5, tv, 1.0):
+        p.poner(bombo(0.7), t, 0.18)
+    tb = tt(tv)
+    p.poner(np.sin(2 * np.pi * hz(69) * tb) * np.minimum(1, tb / 2) * np.minimum(1, (tv - tb) / 0.8) * 0.05, 0, 1.0)
+    tb = tt(glo - tv)
+    p.poner(np.sin(2 * np.pi * hz(38) * tb) * 0.06 * np.minimum(1, tb / 2) * np.minimum(1, (glo - tv - tb) / 1.5), tv, 1.0)
+    acordes(p, glo, pre, ["Dm", "Bb", "Gm", "A"], (pre - glo) / 4, 0.13, corte=1500)
+    p.poner(colchon(ACORDES["A"], pru - pre + 0.5, ataque=0.5, cierre=0.6, corte=1400), pre, 0.17)
+    p.poner(colchon([38, 50, 57, 62, 65], dur - pru + 2, ataque=0.2, cierre=3, corte=1200), pru, 0.2)
+    p.poner(punteo(62, 3.5, 0.8), pru, 0.18)
+    return p.mezcla()
+
+
+def m000_s07(b, dur):
+    """Las objeciones: un pulso que suma capas tarjeta a tarjeta, el engranaje a toda máquina y un corte en seco al trabarse."""
+    p = Partitura(dur, J)
+    t1, t2, t3, t4, eng, cor, gra, tra = (b[k] for k in ("t1", "t2", "t3", "t4", "engranaje", "corte", "grava", "traba"))
+    negra = 60 / 84
+    acordes(p, 0, t1, ["Dm"], 6, 0.1, corte=800)
+    # pulso de bombo desde la primera tarjeta; cada tarjeta suma una capa
+    t, i = t1, 0
+    while t < tra:
+        capa = 1 + (t >= t2) + (t >= t3) + (t >= t4) + (t >= eng)
+        if i % 2 == 0 or capa >= 4:
+            p.poner(bombo(), t, 0.2 + 0.05 * capa)
+        if capa >= 2 and t < cor:
+            p.poner(punteo([50, 53, 57, 53][i % 4], 0.7, 1.0), t + 0.01, 0.1 + 0.02 * capa, 0.3)
+        if capa >= 3 and i % 2 == 1:
+            p.poner(punteo(62 + 12 * (i % 4 == 1), 0.6, 1.4), t, 0.08, -0.4)
+        t += negra / (2 if capa >= 5 else 1)
+        i += 1
+    acordes(p, t1, eng, ["Dm", "C", "Bb", "A"], 4 * negra, 0.11)
+    acordes(p, eng, cor, ["Dm", "C", "Bb", "A"], 2 * negra, 0.15, corte=1500)
+    t = eng + 4 * negra
+    while t < cor:
+        for m, d in MELODIA[:7]:
+            if t >= cor:
+                break
+            p.poner(quena(m, d * negra * 0.95), t, 0.17, 0.15)
+            t += d * negra
+    # después del corte: solo lo grave, cada vez más apretado, hasta trabarse
+    tb = tt(tra - cor)
+    zumbido = np.sin(2 * np.pi * np.cumsum(hz(38) * (1 + 0.06 * tb / (tra - cor))) / SR) * (0.4 + 0.6 * tb / (tra - cor)) * 0.18
+    p.poner(zumbido, cor, 1.0)
+    # nada después de la traba: lo que sigue es silencio
+    i0 = int((tra + p.desfase) * SR)
+    p.buf[:, i0:] *= np.exp(-np.arange(p.buf.shape[1] - i0) / SR * 60)
+    salida = p.mezcla(2.0, 0.25)
+    salida[:, i0 + int(0.3 * SR):] = 0
+    return salida
+
+
+def m000_s08(b, dur):
+    """La cuenta: notas sueltas que cuentan, una figura que cae, un tic por año y un acorde fantasma."""
+    p = Partitura(dur, J)
+    dec, barra, cae, pib, niv, baja, ni, sil, mit = (b[k] for k in ("decadas", "barra", "cae", "pib", "niveles", "baja", "ni", "silueta", "mitad"))
+    acordes(p, 0, niv, ["Dm", "Gm"], 6, 0.09, corte=800)
+    for k, t in enumerate(np.arange(dec, dec + 4.2, 4.2 / 12)):
+        p.poner(punteo(62 + (k % 3) * 3, 1.0, 0.8), t, 0.1, -0.4 + 0.07 * k)
+    for k, m in enumerate([74, 72, 69, 65, 62, 57, 50]):
+        p.poner(punteo(m, 1.6, 1.0), cae + k * 0.11, 0.13, 0.4 - 0.12 * k)
+    for t in np.arange(pib + 1, niv, 1.15):
+        p.poner(punteo(81, 0.9, 1.5), t, 0.09, 0.4)
+    acordes(p, niv, baja, ["Dm", "Bb", "Gm", "A"], (baja - niv) / 3, 0.12)
+    acordes(p, ni, sil, ["Dm"], sil - ni, 0.1, corte=700)
+    p.poner(colchon([50, 57, 62, 65, 69, 74], dur - mit + 2, ataque=2.5, cierre=4, corte=1600), mit, 0.18)
+    return p.mezcla(3.2, 0.38)
+
+
+def m000_s09(b, dur):
+    """Círculos: un ostinato de cinco notas que da vueltas; en el cartel, notas secas y una grave al final."""
+    p = Partitura(dur, J)
+    red, car, fra, tac, rob = (b[k] for k in ("red", "cartel", "frase", "tachar", "roba"))
+    giro = [62, 65, 67, 69, 65]
+    t, i = 0.3, 0
+    while t < car:
+        p.poner(punteo(giro[i % 5] + 12, 1.2, 1.2), t, 0.13, -0.3 + 0.15 * (i % 5))
+        if t >= red and i % 5 == 0:
+            p.poner(punteo(giro[0] + 24, 1.5, 1.4), t, 0.08, 0.5)
+        t += 0.28
+        i += 1
+    acordes(p, 0, car, ["Dm", "Dm", "Gm", "Dm"], 2.8, 0.1)
+    for k in range(4):
+        p.poner(punteo(50 + 3 * k, 0.4, 0.4), fra + k * 0.35, 0.14)
+    p.poner(colchon([50, 51, 57], 2.0, ataque=0.05, cierre=1.5, corte=900), tac, 0.13)
+    p.poner(punteo(38, 4.0, 0.4), rob, 0.28)
+    p.poner(colchon([38, 50], dur - rob + 1, ataque=0.05, cierre=dur - rob, corte=500), rob, 0.16)
+    return p.mezcla()
+
+
+def m000_s10(b, dur):
+    """La serie: quena sobre la cordillera, brillo de metal, un corte en seco y la serie que arranca."""
+    p = Partitura(dur, J)
+    r = np.random.default_rng(1758)
+    cor, hua, mer, per, otr, cap, ser = (b[k] for k in ("cordillera", "huanca", "mercurio", "perdio", "otros", "capitulos", "serie"))
+    acordes(p, 0, mer, ["Dm", "Bb", "Gm", "Dm"], 4, 0.1, corte=900)
+    negra = 60 / 72
+    t = cor + 0.8
+    frase = [(69, 1), (72, 0.5), (74, 1.5), (72, 0.5), (69, 0.5), (67, 1), (65, 1), (62, 2)]
+    for m, d in frase:
+        if t >= mer:
+            break
+        p.poner(quena(m, d * negra * 0.95), t, 0.17, 0.1)
+        t += d * negra
+    p.poner(bombo(), hua, 0.3)
+    t = mer
+    while t < per:
+        p.poner(punteo(r.choice([86, 88, 91, 93]), 1.4, 1.8), t, 0.07, r.uniform(-0.8, 0.8))
+        t += r.uniform(0.15, 0.4)
+    # el corte: nada entre "perdió" y los nombres
+    for t in np.arange(otr, cap, 1.0):
+        p.poner(punteo(38, 1.2, 0.4), t, 0.14)
+    compas = 4 * (60 / 80)
+    for i, t0 in enumerate(np.arange(cap, dur, compas)):
+        acorde = ACORDES[["Dm", "C", "Bb", "A"][i % 4]]
+        p.poner(colchon(acorde, compas + 1.5, ataque=0.4, cierre=1.2), t0, 0.13)
+        for bt, g in ((0, 0.5), (2, 0.32), (2.5, 0.22)):
+            p.poner(bombo(), t0 + bt * 60 / 80, g)
+        for c in range(8):
+            for j, m in enumerate(acorde[1:]):
+                p.poner(punteo(m + 12, 1.1, 1.3), t0 + c * 60 / 160 + j * 0.012, 0.08 if c % 2 else 0.11, -0.3 + 0.3 * j)
+    p.poner(colchon([50, 57, 62, 65, 69], 5, ataque=0.3, cierre=4), ser, 0.14)
+    salida = p.mezcla()
+    a, z = int((per + J) * SR), int((otr + J - 0.3) * SR)
+    salida[:, a:z] *= 0.0  # el corte a negro también es un corte de música
+    return salida
+
+
+# El tema del canal: la firma de la serie. Quena en re menor sobre bombo y charango.
+TEMA = [(69, 1), (72, 1), (74, 2), (77, 1), (76, 0.5), (74, 0.5), (72, 2),
+        (69, 1), (72, 1), (74, 1), (72, 0.5), (69, 0.5), (67, 1), (65, 1), (62, 2)]
+
+
+def musica_tema(bpm=80):
+    """Tema del canal: dos compases de bombo y rasgueo, la quena con la frase y un acorde que queda."""
+    negra = 60 / bpm
+    compas = 4 * negra
+    total = compas * 5
+    p = Partitura(total + 8, RAMPA)
+    for i, t0 in enumerate(np.arange(0, total, compas)):
+        acorde = ACORDES[["Dm", "Dm", "Bb", "C", "Dm"][i % 5]]
+        p.poner(colchon(acorde, compas + 1.6, ataque=0.5, cierre=1.2), t0, 0.12)
+        for bt, g in ((0, 0.5), (2, 0.3), (2.5, 0.22)):
+            p.poner(bombo(), t0 + bt * negra, g)
+        for c in range(8):
+            for j, m in enumerate(acorde[1:]):
+                p.poner(punteo(m + 12, 1.1, 1.3), t0 + c * negra / 2 + j * 0.012, 0.08 if c % 2 else 0.12, -0.3 + 0.3 * j)
+    t = compas * 0.75
+    for m, d in TEMA:
+        p.poner(quena(m, d * negra * 0.96), t, 0.22, 0.12)
+        t += d * negra
+    p.poner(colchon([50, 57, 62, 65, 69], 7, ataque=0.2, cierre=5), total, 0.18)
+    p.poner(punteo(62, 5, 0.7), total, 0.2)
+    p.poner(bombo(1.2), total, 0.45)
+    return p.mezcla(3.0, 0.32)
+
+
+def m000_s11(b, dur):
+    """Cierre: el tema del canal entra con el negro."""
+    return musica_tema()
+
+
 # ---------------------------------------------------------------- ambientes (bucles de 30 s)
 
 def amb_ciudad(d=32):
@@ -386,9 +728,173 @@ def sfx_nota_final():
     return reverb(buf, 3.5, 0.4)
 
 
+def amb_hospital(d=32):
+    """Habitación de hospital de noche: aire acondicionado, zumbido eléctrico leve, ciudad muy lejos."""
+    n = int(d * SR)
+    t = tt(d)
+    aire = filtro(ruido_rosa(n), bajo=80, alto=1200) * 0.6
+    zumbido = (np.sin(2 * np.pi * 120 * t) + 0.3 * np.sin(2 * np.pi * 240 * t)) * 0.025
+    lejos = filtro(ruido_rosa(n), alto=260) * (0.6 + 0.4 * lfo(d, 0.05))
+    buf = estereo(n)
+    poner(buf, aire / np.max(np.abs(aire)) * 0.35 + zumbido, 0, 1.0)
+    poner(buf, lejos / np.max(np.abs(lejos)) * 0.25, 0, 1.0, 0.3)
+    return bucle(buf)
+
+
+def sfx_lapiz(d=0.7):
+    """Lápiz sobre papel: grano más grueso y más grave que la pluma."""
+    t = tt(d)
+    s = filtro(rng.standard_normal(len(t)), bajo=900, alto=5000)
+    grano = (rng.random(len(t)) < 0.04) * rng.uniform(0.5, 1.5, len(t))
+    grano = filtro(grano, bajo=1500, alto=6000)
+    trazo = 0.55 + 0.45 * np.abs(np.sin(2 * np.pi * rng.uniform(5, 8) * t))
+    env = np.minimum(1, t / 0.04) * np.minimum(1, (d - t) / 0.12)
+    return (s * 0.35 + grano * 2.2) * trazo * env
+
+
+def sfx_afiche():
+    """Afiche que se pega en un muro: palmada sorda y el papel que se asienta."""
+    t = tt(0.6)
+    palmada = filtro(rng.standard_normal(len(t)), bajo=150, alto=2500) * np.exp(-t * 35)
+    cuerpo = np.sin(2 * np.pi * np.cumsum(110 + 40 * np.exp(-t * 40)) / SR) * np.exp(-t * 18) * 0.7
+    papel = np.zeros(len(t))
+    h = sfx_hoja()[: len(t)]
+    papel[: len(h)] = h
+    return palmada + cuerpo + papel * 0.5
+
+
+def sfx_saco():
+    """Saco que cae sobre cubierta: golpe sordo y grano."""
+    t = tt(0.5)
+    golpe = np.sin(2 * np.pi * np.cumsum(60 + 30 * np.exp(-t * 30)) / SR) * np.exp(-t * 14)
+    grano = filtro(rng.standard_normal(len(t)), bajo=400, alto=3000) * np.exp(-t * 22) * 0.35
+    return golpe + grano
+
+
+def _moneda(f0):
+    t = tt(0.9)
+    parciales = [1, 2.76, 5.4, 8.93]
+    s = sum(np.sin(2 * np.pi * f0 * p * t + rng.uniform(0, 6)) * np.exp(-t * (6 + 5 * i)) / (i + 1) for i, p in enumerate(parciales))
+    return s * np.minimum(1, t / 0.001)
+
+
+def sfx_monedas():
+    """Monedas que caen unas sobre otras."""
+    buf = estereo(int(1.4 * SR))
+    for tm in np.sort(rng.uniform(0, 0.7, 9)):
+        poner(buf, _moneda(rng.uniform(2200, 3600)) * rng.uniform(0.2, 0.45), tm, 1.0, rng.uniform(-0.5, 0.5))
+    return reverb(buf, 0.8, 0.2)
+
+
+def sfx_borrar(d=0.8):
+    """Goma de borrar: frotado de ida y vuelta."""
+    t = tt(d)
+    s = filtro(rng.standard_normal(len(t)), bajo=300, alto=2500)
+    vaiven = np.abs(np.sin(2 * np.pi * 4.5 * t)) ** 0.7
+    return s * vaiven * np.minimum(1, t / 0.05) * np.minimum(1, (d - t) / 0.1) * 0.6
+
+
+def sfx_metal():
+    """Choque metálico pequeño (platillo de balanza, barra de plata)."""
+    t = tt(1.6)
+    s = sum(np.sin(2 * np.pi * f * t) * np.exp(-t * k) for f, k in ((1220, 4), (1876, 6), (2934, 9), (4410, 13)))
+    return reverb(np.array([s, s]) * 0.3, 1.2, 0.25)
+
+
+def sfx_carta():
+    """Carta que se da vuelta: soplo corto y el chasquido del cartón."""
+    t = tt(0.35)
+    aire = filtro(rng.standard_normal(len(t)), bajo=800, alto=6000) * np.sin(np.pi * np.clip(t / 0.25, 0, 1)) ** 2 * 0.4
+    chasquido = filtro(rng.standard_normal(len(t)), bajo=2000, alto=8000) * np.exp(-np.maximum(0, t - 0.22) * 90) * (t > 0.22)
+    return aire + chasquido * 0.8
+
+
+def sfx_engranaje(d=4.0):
+    """Engranaje girando (en bucle): un diente cada 1/6 s, zumbido grave y un chirrido."""
+    n = int(d * SR)
+    t = tt(d)
+    buf = estereo(n)
+    for k, tm in enumerate(np.arange(0, d, 1 / 6)):
+        diente = filtro(rng.standard_normal(int(0.05 * SR)), bajo=600 if k % 2 else 900, alto=4500) * np.exp(-tt(0.05) * 90)
+        poner(buf, diente * 0.5, tm, 1.0, -0.2)
+    zumbido = (np.sin(2 * np.pi * 55 * t) + 0.4 * np.sin(2 * np.pi * 110 * t)) * 0.12 * (0.8 + 0.2 * lfo(d, 1.5))
+    chirrido = filtro(rng.standard_normal(n), bajo=2800, alto=3400, orden=8) * (lfo(d, 0.5) ** 6) * 0.25
+    poner(buf, zumbido + chirrido, 0, 1.0)
+    return buf
+
+
+def sfx_gota():
+    """Gota que cae: «plip» que sube de tono y un salpicón chico."""
+    t = tt(0.4)
+    plip = np.sin(2 * np.pi * np.cumsum(700 + 1400 * np.minimum(1, t / 0.06)) / SR) * np.exp(-t * 28)
+    salpica = filtro(rng.standard_normal(len(t)), bajo=3000, alto=9000) * np.exp(-t * 60) * 0.25
+    return reverb(np.array([plip + salpica] * 2) * 0.6, 0.9, 0.25)
+
+
+def sfx_grava(d=1.3):
+    """Grava que cae entre los dientes: cientos de golpecitos."""
+    n = int(d * SR)
+    buf = estereo(n)
+    for tm in np.sort(rng.uniform(0, d - 0.1, 260) ** 1.3):
+        piedra = filtro(rng.standard_normal(int(0.02 * SR)), bajo=rng.uniform(800, 2500), alto=7000) * np.exp(-tt(0.02) * 220)
+        poner(buf, piedra * rng.uniform(0.05, 0.25), tm, 1.0, rng.uniform(-0.6, 0.6))
+    return buf
+
+
+def sfx_traba():
+    """El engranaje se traba: el único golpe fuerte del video. Metal grave, chirrido y cola larga."""
+    t = tt(3.5)
+    golpe = sum(np.sin(2 * np.pi * f * t + rng.uniform(0, 6)) * np.exp(-t * k) for f, k in ((62, 1.8), (97, 2.5), (151, 3.4), (233, 4.6), (419, 7)))
+    sub = np.sin(2 * np.pi * np.cumsum(38 + 30 * np.exp(-t * 12)) / SR) * np.exp(-t * 2.2) * 1.2
+    chirrido = filtro(rng.standard_normal(len(t)), bajo=1800, alto=3200, orden=6) * np.exp(-t * 6) * 0.5
+    crujido = filtro(rng.standard_normal(len(t)), bajo=300, alto=5000) * np.exp(-t * 25) * 0.8
+    s = golpe * 0.5 + sub + chirrido + crujido
+    return reverb(np.array([s, s]), 3.0, 0.3)
+
+
+def sfx_golpe_tecla():
+    """Tecla de máquina golpeada con fuerza (los signos de interrogación)."""
+    t = tt(0.12)
+    golpe = filtro(rng.standard_normal(len(t)), bajo=600, alto=5000) * np.exp(-t * 70)
+    cuerpo = np.sin(2 * np.pi * 120 * t) * np.exp(-t * 40)
+    return golpe + cuerpo
+
+
+def sfx_crt():
+    """Televisor de tubo que se enciende: chasquido, zumbido que sube y un soplo de estática."""
+    t = tt(1.0)
+    chasquido = filtro(rng.standard_normal(len(t)), bajo=100, alto=3000) * np.exp(-t * 50)
+    zumbido = np.sin(2 * np.pi * np.cumsum(80 + 120 * np.minimum(1, t / 0.4)) / SR) * np.exp(-t * 3) * 0.3
+    estatica = filtro(rng.standard_normal(len(t)), bajo=1500, alto=9000) * np.clip((t - 0.2) / 0.3, 0, 1) * np.exp(-np.maximum(0, t - 0.5) * 4) * 0.3
+    return chasquido + zumbido + estatica
+
+
+def sfx_estatica(d=4.0):
+    """Estática de televisor (en bucle)."""
+    n = int(d * SR)
+    s = filtro(rng.standard_normal(n), bajo=400, alto=9000) * (0.85 + 0.15 * lfo(d, 3.7))
+    buf = estereo(n)
+    poner(buf, s / np.max(np.abs(s)) * 0.5, 0, 1.0)
+    return bucle(buf, 0.5)
+
+
+def sfx_cartel():
+    """Cartel que se planta: golpe de poste en la tierra y el tablero que vibra."""
+    t = tt(1.2)
+    golpe = np.sin(2 * np.pi * np.cumsum(70 + 50 * np.exp(-t * 25)) / SR) * np.exp(-t * 8)
+    tablero = sum(np.sin(2 * np.pi * f * t) * np.exp(-t * 9) for f in (310, 523, 788)) * 0.15
+    tierra = filtro(rng.standard_normal(len(t)), bajo=200, alto=2000) * np.exp(-t * 18) * 0.4
+    return golpe + tablero + tierra
+
+
 # ---------------------------------------------------------------- escribir
 
 def guardar(st, ruta: Path, kbps=128, normalizar=-1.0):
+    if ruta.exists() and not FORZAR:
+        print("ya existe", ruta.relative_to(ROOT))
+        return
+    if callable(st):  # se genera recién aquí: lo que ya existe no gasta tiempo
+        st = st()
     ruta.parent.mkdir(parents=True, exist_ok=True)
     st = np.atleast_2d(st)
     pico = np.max(np.abs(st)) + 1e-9
@@ -425,16 +931,27 @@ def compartido():
     guardar(sfx_carpeta(), s / "carpeta.mp3", 96, -2)
     guardar(sfx_golpe(), s / "golpe.mp3", 128, -1)
     guardar(sfx_nota_final(), s / "nota-final.mp3", 128, -1)
+    # fase 2 del video 000 (agregados al final para no cambiar los anteriores)
+    guardar(amb_hospital(), a / "hospital.mp3", 96, -3)
+    for nombre, fn, kbps, norm in [("lapiz", sfx_lapiz, 96, -3), ("afiche", sfx_afiche, 96, -2), ("saco", sfx_saco, 96, -3),
+                                   ("monedas", sfx_monedas, 96, -3), ("borrar", sfx_borrar, 96, -3), ("metal", sfx_metal, 96, -3),
+                                   ("carta", sfx_carta, 96, -3), ("engranaje", sfx_engranaje, 96, -3), ("gota", sfx_gota, 96, -3),
+                                   ("grava", sfx_grava, 96, -2), ("traba", sfx_traba, 128, -0.5), ("golpe-tecla", sfx_golpe_tecla, 96, -2),
+                                   ("crt", sfx_crt, 96, -3), ("estatica", sfx_estatica, 96, -4), ("cartel", sfx_cartel, 96, -2)]:
+        guardar(fn(), s / f"{nombre}.mp3", kbps, norm)
 
 
 def musica_000_quiroz():
-    """Música del video 000, una pista por escena (ausente en s01)."""
+    """Música del video 000: una pista por escena, compuesta sobre sus beats."""
     m = PUBLIC / "videos" / "000-quiroz" / "musica"
-    guardar(musica_presente(40, ["Dm", "Bb", "F", "C"], 2), m / "s02-presente.mp3")
-    guardar(musica_tensa(40, 3), m / "s03-tension.mp3")
-    guardar(musica_mundo(45, 4), m / "s04-mundo.mp3")
-    guardar(musica_protagonista(40), m / "s05-protagonista.mp3")
-    guardar(musica_cierre(16), m / "s06-cierre.mp3")
+    tiempos = tiempos_video("000-quiroz")
+    pistas = [("s01", "s01-entrada", m000_s01), ("s02", "s02-nadador", m000_s02), ("s03", "s03-generacion", m000_s03),
+              ("s04", "s04-mecanismo", m000_s04), ("s05", "s05-medir", m000_s05), ("s06", "s06-pregunta", m000_s06),
+              ("s07", "s07-objeciones", m000_s07), ("s08", "s08-cuenta", m000_s08), ("s09", "s09-circulos", m000_s09),
+              ("s10", "s10-serie", m000_s10), ("s11", "s11-tema", m000_s11)]
+    for escena, nombre, fn in pistas:
+        beats, dur = tiempos[escena]
+        guardar(lambda fn=fn, beats=beats, dur=dur: fn(beats, dur), m / f"{nombre}.mp3")
 
 
 MUSICA = {"000-quiroz": musica_000_quiroz}
@@ -451,5 +968,5 @@ def main(que: str = "todo"):
 
 
 if __name__ == "__main__":
-    import sys
-    main(sys.argv[1] if len(sys.argv) > 1 else "todo")
+    pedidos = [a for a in sys.argv[1:] if not a.startswith("--")]
+    main(pedidos[0] if pedidos else "todo")

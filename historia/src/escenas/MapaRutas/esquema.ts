@@ -24,7 +24,7 @@ export const beats = {
   barra_llena: '(con barra) la barra llega a su valor (golpe de sonido)',
 };
 
-/** Como se usó en 000-quiroz. */
+/** Como se usó en la primera versión de 000-quiroz (6 escenas). */
 export const ejemplo: Ejemplo<typeof esquema> = {
   duracion_s: 26,
   beats: { pregunta: 5.6, arcos: 8.7, paso: 0.95, apagar: 15.9, barra: 18, barra_llena: 22.6 },

@@ -14,6 +14,9 @@ cargar('HA Mono', 'IBMPlexMono-SemiBold.ttf', '600');
 cargar('HA Caligrafia', 'PinyonScript-Regular.ttf');
 cargar('HA Imprenta', 'IMFeENsc28P.ttf');
 cargar('HA Imprenta Italica', 'IMFeENit28P.ttf');
+cargar('HA Libro', 'EBGaramond-VF.ttf', '400 800');
+cargar('HA Libro', 'EBGaramond-Italic-VF.ttf', '400 800', 'italic');
+cargar('HA Afiche', 'Oswald-VF.ttf', '200 700');
 
 /** Familias tipográficas del canal, por función (no por nombre de fuente). */
 export const fuente = {
@@ -29,4 +32,8 @@ export const fuente = {
   imprenta: '"HA Imprenta", Georgia, serif',
   /** imprenta antigua en cursiva: nombres de lugares, notas */
   imprentaItalica: '"HA Imprenta Italica", Georgia, serif',
+  /** texto de libro (EB Garamond): citas, frases compuestas, portadas */
+  libro: '"HA Libro", Georgia, serif',
+  /** palo seco condensado (Oswald): afiches, carteles, titulares de época */
+  afiche: '"HA Afiche", Impact, sans-serif',
 };
