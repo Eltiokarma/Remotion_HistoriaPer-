@@ -15,12 +15,12 @@ Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **I
 | s05 | AprenderAMedir | 3:18.0 | 63 s | 91 % | 62 s | 142 | 16.2 | 35 | 0 | 13 (12.6/min) | 16 (15.5/min) | 🔴 voz seguida 62 s · frase de 35 palabras · 12.6 datos/min · voz 91 % |
 | s06 | LaPregunta | 4:21.4 | 42 s | 88 % | 40 s | 141 | 15.7 | 29 | 0 | 6 (9.0/min) | 7 (10.5/min) | 🔴 voz seguida 40 s · frase de 29 palabras · 9.0 datos/min · voz 88 % |
 | s07 | Objeciones | 5:03.4 | 86 s | 88 % | 80 s | 129 | 11.9 | 30 | 1 | 5 (3.6/min) | 18 (13.0/min) | 🔴 voz seguida 80 s · frase de 30 palabras · voz 88 % |
-| s08 | LaCuenta | 6:29.3 | 64 s | 88 % | 38 s | 137 | 12.8 | 27 | 1 | 9 (8.8/min) | 12 (11.7/min) | 🔴 voz seguida 38 s · frase de 27 palabras · 8.8 datos/min · voz 88 % |
-| s09 | CirculosCorruptos | 7:32.9 | 27 s | 81 % | 24 s | 136 | 11.0 | 17 | 0 | 2 (4.9/min) | 7 (17.3/min) | 🟡 voz 81 % |
-| s10 | Denunciantes | 7:59.8 | 49 s | 79 % | 27 s | 125 | 9.3 | 47 | 1 | 10 (13.4/min) | 12 (16.1/min) | 🔴 voz seguida 27 s · frase de 47 palabras · 13.4 datos/min |
-| s11 | Cierre | 8:49.2 | 31 s | 69 % | 18 s | 130 | 10.8 | 24 | 1 | 5 (12.0/min) | 5 (12.0/min) | 🟡 12.0 datos/min |
+| s08 | LaCuenta | 6:29.3 | 80 s | 85 % | 38 s | 133 | 12.4 | 27 | 3 | 9 (6.9/min) | 13 (10.0/min) | 🔴 voz seguida 38 s · frase de 27 palabras · 6.9 datos/min · voz 85 % |
+| s09 | CirculosCorruptos | 7:49.2 | 27 s | 81 % | 24 s | 136 | 11.0 | 17 | 0 | 2 (4.9/min) | 7 (17.3/min) | 🟡 voz 81 % |
+| s10 | Denunciantes | 8:16.1 | 49 s | 79 % | 27 s | 125 | 9.3 | 47 | 1 | 10 (13.4/min) | 12 (16.1/min) | 🔴 voz seguida 27 s · frase de 47 palabras · 13.4 datos/min |
+| s11 | Cierre | 9:05.5 | 31 s | 69 % | 18 s | 130 | 10.8 | 24 | 1 | 5 (12.0/min) | 5 (12.0/min) | 🟡 12.0 datos/min |
 
-Total: 9:20.2. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
+Total: 9:36.5. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
 
 
 ## s01 · gancho — `PruebasDeImprenta` · 0:00.0–0:43.6 (43.6 s)
@@ -280,13 +280,13 @@ Total: 9:20.2. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 6:28.0 |  | **fin** — termina el silencio que sigue al golpe |  |
 | 6:28.0 |  |  | vuelve el sonido |
 
-## s08 · la cuenta — `LaCuenta` · 6:29.3–7:32.9 (63.6 s)
+## s08 · la cuenta — `LaCuenta` · 6:29.3–7:49.2 (79.9 s)
 
 - **Cambio:** de una sospecha a una cifra: entre un tercio y dos quintos del gasto, siempre
 - **Intención:** la banda de corrupción baja se queda vacía: el dato más fuerte es una ausencia
 - **Intensidad:** 5 · **Música:** presente → silencio
-- **Semáforo para enseñar:** 🔴 voz seguida 38 s · frase de 27 palabras · 8.8 datos/min · voz 88 %
-- **Métricas:** voz el 88 % del tiempo · tramo más largo sin pausa de párrafo: 38.4 s · 141 palabras · 137 por minuto · 11 frases de 12.8 palabras en promedio (la más larga: 27) · 1 pausa(s) de párrafo (≥ 1 s) · 12 cambios de imagen
+- **Semáforo para enseñar:** 🔴 voz seguida 38 s · frase de 27 palabras · 6.9 datos/min · voz 85 %
+- **Métricas:** voz el 85 % del tiempo · tramo más largo sin pausa de párrafo: 38.4 s · 173 palabras · 133 por minuto · 14 frases de 12.4 palabras en promedio (la más larga: 27) · 3 pausa(s) de párrafo (≥ 1 s) · 13 cambios de imagen
 - **Nombres y cifras que se dicen (9):** Estado · Perú · 2000 · 1820 · treinta · cuarenta por ciento · tres y cuatro por ciento · dos · mitad
 
 | t | Voz | Imagen | Sonido |
@@ -294,32 +294,36 @@ Total: 9:20.2. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 6:29.3 |  |  | música s08-cuenta.mp3 (nivel 0.32) |
 | 6:29.3 |  |  | ambiente cuarto (0.45) |
 | 6:29.6 | Con todo eso armó algo que nadie había hecho: una estimación del costo de la corrupción, década por década, desde la colonia hasta el año dos mil. |  |  |
-| 6:36.2 |  | **decadas** — la regla de décadas se va marcando (4 s) |  |
+| 6:36.3 |  | **decadas** — la regla de décadas se va marcando (4 s) |  |
 | 6:41.3 | Sus números dicen esto. |  |  |
 | 6:43.0 |  | **barra** — aparecen las cien unidades |  |
-| 6:43.4 | Entre mil ochocientos veinte y dos mil, la corrupción se habría llevado, en promedio, entre el treinta y el cuarenta por ciento del gasto del Estado. |  |  |
+| 6:43.3 | Entre mil ochocientos veinte y dos mil, la corrupción se habría llevado, en promedio, entre el treinta y el cuarenta por ciento del gasto del Estado. |  |  |
 | 6:49.7 |  | **rojo** — se tiñe el mínimo; un segundo después, el rango |  |
 | 6:52.4 |  | **cae** — las unidades rojas se desprenden |  |
 | 6:54.1 |  | **pib** — aparece la producción y pierde una franja cada año |  |
-| 6:54.6 | Entre tres y cuatro por ciento de todo lo que producía el país, cada año. |  |  |
-| 6:59.4 |  | **niveles** — gráfico de niveles: se traza la línea (5 s) |  |
-| 6:59.7 | Clasificó cada época como de corrupción moderada, alta o muy alta. |  |  |
-| 7:05.4 | No encontró ninguna de corrupción baja. |  |  |
-| 7:07.6 |  | **baja** — la banda vacía parpadea una vez |  |
+| 6:54.5 | Entre tres y cuatro por ciento de todo lo que producía el país, cada año. |  |  |
+| 6:59.3 |  | **niveles** — gráfico de niveles: se traza la línea (5 s) |  |
+| 6:59.6 | Clasificó cada época como de corrupción moderada, alta o muy alta. |  |  |
+| 7:05.5 | No encontró ninguna de corrupción baja. |  |  |
+| 7:07.6 |  | **baja** — la banda vacía parpadea; se marca el punto más bajo |  |
 | 7:07.6 |  |  | **silencio deliberado** |
-| 7:09.3 |  | **ni** — la banda vacía se queda |  |
-| 7:09.3 |  |  | vuelve el sonido |
+| 7:09.4 |  | **ni** — la banda vacía se queda |  |
+| 7:09.4 |  |  | vuelve el sonido |
 | 7:09.5 | Ni una, en casi dos siglos. |  |  |
-| 7:12.3 |  | **silueta** — aparece el país |  |
-| 7:12.4 | Y su conclusión más fuerte: la corrupción podría explicar cerca de la mitad del crecimiento que el Perú no tuvo. |  |  |
-| 7:16.7 |  | **mitad** — aparece el fantasma del país que pudo ser |  |
-| 7:19.8 | Él mismo advierte que son estimados preliminares, sujetos a revisión. |  |  |
-| 7:19.9 |  | **nota** — aparece la nota al pie |  |
-| 7:25.1 | Pero el punto no está en el decimal. |  |  |
-| 7:28.3 | Está en que el patrón nunca se rompe. |  |  |
-| 7:28.4 |  | **patron** — el país y su fantasma se quedan |  |
+| 7:12.5 | Y su conclusión más fuerte. |  |  |
+| 7:14.7 |  | **crecer** — crece la barra de lo que hace falta para crecer |  |
+| 7:14.8 | Para crecer de verdad, un país necesita que su producción suba entre cinco y ocho por ciento al año. |  |  |
+| 7:22.1 |  | **corrupcion** — crece, en la misma escala, la barra roja de la corrupción |  |
+| 7:22.1 | La corrupción se llevaba entre tres y cuatro por ciento. |  |  |
+| 7:27.1 | Según su cuenta, el Perú perdió, o usó mal, cerca de la mitad de sus posibilidades de desarrollo. |  |  |
+| 7:30.4 |  | **mitad** — aparece la conclusión |  |
+| 7:36.2 | Él mismo advierte que son estimados preliminares, sujetos a revisión. |  |  |
+| 7:36.3 |  | **nota** — aparece la nota al pie |  |
+| 7:41.5 | Pero el punto no está en el decimal. |  |  |
+| 7:44.6 | Está en que el patrón nunca se rompe. |  |  |
+| 7:44.6 |  | **patron** — vuelve la línea de niveles entera: el patrón |  |
 
-## s09 · el libro — `CirculosCorruptos` · 7:32.9–7:59.8 (26.9 s)
+## s09 · el libro — `CirculosCorruptos` · 7:49.2–8:16.1 (26.9 s)
 
 - **Cambio:** de un libro premiado a una frase que todos repetimos: 'roba, pero hace obra'
 - **Intención:** el cartel de obra pública dice lo que el libro desarma: se tacha el PERO y queda la verdad
@@ -330,22 +334,22 @@ Total: 9:20.2. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
-| 7:32.9 |  |  | música s09-circulos.mp3 (nivel 0.25) |
-| 7:32.9 |  |  | ambiente ciudad (0.55) |
-| 7:33.1 |  | **circulos** — los anillos empiezan a cerrarse (4 s) |  |
-| 7:33.2 | El resultado fue Córrupt Sérkels, publicado en inglés en dos mil ocho. |  |  |
-| 7:34.7 |  | **titulo** — aparece el título (y el año) |  |
-| 7:38.2 |  | **red** — la red crece hacia afuera (6 s) |  |
-| 7:38.3 | Ganó premios, se empezó a usar en todo el mundo, y dejó una crítica que todavía incomoda. |  |  |
-| 7:45.2 | Contra quienes creen que la corrupción es inevitable en los países pobres. |  |  |
-| 7:50.2 |  | **cartel** — se planta el cartel |  |
-| 7:50.3 | Y contra esa frase que todos hemos escuchado alguna vez: |  |  |
-| 7:55.1 |  | **frase** — se colocan las letras (1.4 s) |  |
-| 7:55.1 | roba, pero hace obra. |  |  |
-| 7:56.6 |  | **tachar** — se tacha una palabra |  |
-| 7:58.0 |  | **roba** — todo se apaga menos la palabra que queda |  |
+| 7:49.2 |  |  | música s09-circulos.mp3 (nivel 0.25) |
+| 7:49.2 |  |  | ambiente ciudad (0.55) |
+| 7:49.4 |  | **circulos** — los anillos empiezan a cerrarse (4 s) |  |
+| 7:49.5 | El resultado fue Córrupt Sérkels, publicado en inglés en dos mil ocho. |  |  |
+| 7:51.0 |  | **titulo** — aparece el título (y el año) |  |
+| 7:54.5 |  | **red** — la red crece hacia afuera (6 s) |  |
+| 7:54.6 | Ganó premios, se empezó a usar en todo el mundo, y dejó una crítica que todavía incomoda. |  |  |
+| 8:01.5 | Contra quienes creen que la corrupción es inevitable en los países pobres. |  |  |
+| 8:06.5 |  | **cartel** — se planta el cartel |  |
+| 8:06.6 | Y contra esa frase que todos hemos escuchado alguna vez: |  |  |
+| 8:11.4 |  | **frase** — se colocan las letras (1.4 s) |  |
+| 8:11.4 | roba, pero hace obra. |  |  |
+| 8:12.9 |  | **tachar** — se tacha una palabra |  |
+| 8:14.3 |  | **roba** — todo se apaga menos la palabra que queda |  |
 
-## s10 · la serie — `Denunciantes` · 7:59.8–8:49.2 (49.4 s)
+## s10 · la serie — `Denunciantes` · 8:16.1–9:05.5 (49.4 s)
 
 - **Cambio:** de una lista de ladrones a una historia contada por los que denunciaron
 - **Intención:** el que intentó limpiar y perdió abre la serie; el corte a negro es su derrota
@@ -356,34 +360,34 @@ Total: 9:20.2. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
-| 7:59.8 |  |  | música s10-serie.mp3 (nivel 0.55) |
-| 7:59.8 |  |  | ambiente viento (0.8) |
-| 8:00.0 |  | **lista** — aparece la lista |  |
-| 8:00.1 | Pero el libro no es una lista de ladrones. |  |  |
-| 8:03.2 | Está contado desde los que denunciaron. |  |  |
-| 8:04.7 |  | **tacha** — la lista se tacha |  |
-| 8:05.6 |  | **cordillera** — la lista se va y se dibuja la cordillera (3 s) |  |
-| 8:06.0 | Empieza con Antonio de Ulloa, un marino y científico español que en mil setecientos cincuenta y ocho llegó a gobernar Huancavelica, a más de tres mil quinientos metros de altura, a cargo de la mina de mercurio de la que dependía la plata de todo el virreinato. |  |  |
-| 8:14.0 |  | **huanca** — el punto rojo baja al lugar; se escribe la ficha |  |
-| 8:15.7 |  | **altura** — línea y escala de altura |  |
-| 8:19.8 |  | **mercurio** — cae la gota de mercurio |  |
-| 8:22.0 |  | **plata** — la gota se vuelve barra de plata |  |
-| 8:24.4 |  | **limpiar** — un brillo barre la barra |  |
-| 8:24.5 | Intentó limpiarla. |  |  |
-| 8:26.8 | Y perdió. |  |  |
-| 8:27.6 |  | **perdio** — corte a negro de 10 cuadros |  |
-| 8:27.6 |  |  | se va el ambiente viento |
-| 8:28.9 | Después vienen otros: Domingo Elías, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya. |  |  |
-| 8:30.6 |  | **otros** — primer nombre |  |
-| 8:30.6 |  |  | ambiente cuarto (0.45) |
-| 8:36.9 | Siete capítulos. |  |  |
-| 8:36.9 |  | **capitulos** — el índice: se enciende un capítulo cada 0.62 s |  |
-| 8:38.9 | Siete ciclos. |  |  |
-| 8:40.5 | Del virreinato al año dos mil. |  |  |
-| 8:43.2 |  | **serie** — todo encendido |  |
-| 8:43.2 | Eso es esta serie. |  |  |
+| 8:16.1 |  |  | música s10-serie.mp3 (nivel 0.55) |
+| 8:16.1 |  |  | ambiente viento (0.8) |
+| 8:16.3 |  | **lista** — aparece la lista |  |
+| 8:16.4 | Pero el libro no es una lista de ladrones. |  |  |
+| 8:19.5 | Está contado desde los que denunciaron. |  |  |
+| 8:21.0 |  | **tacha** — la lista se tacha |  |
+| 8:21.9 |  | **cordillera** — la lista se va y se dibuja la cordillera (3 s) |  |
+| 8:22.3 | Empieza con Antonio de Ulloa, un marino y científico español que en mil setecientos cincuenta y ocho llegó a gobernar Huancavelica, a más de tres mil quinientos metros de altura, a cargo de la mina de mercurio de la que dependía la plata de todo el virreinato. |  |  |
+| 8:30.3 |  | **huanca** — el punto rojo baja al lugar; se escribe la ficha |  |
+| 8:32.0 |  | **altura** — línea y escala de altura |  |
+| 8:36.1 |  | **mercurio** — cae la gota de mercurio |  |
+| 8:38.3 |  | **plata** — la gota se vuelve barra de plata |  |
+| 8:40.7 |  | **limpiar** — un brillo barre la barra |  |
+| 8:40.8 | Intentó limpiarla. |  |  |
+| 8:43.1 | Y perdió. |  |  |
+| 8:43.9 |  | **perdio** — corte a negro de 10 cuadros |  |
+| 8:43.9 |  |  | se va el ambiente viento |
+| 8:45.2 | Después vienen otros: Domingo Elías, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya. |  |  |
+| 8:46.9 |  | **otros** — primer nombre |  |
+| 8:46.9 |  |  | ambiente cuarto (0.45) |
+| 8:53.2 | Siete capítulos. |  |  |
+| 8:53.2 |  | **capitulos** — el índice: se enciende un capítulo cada 0.62 s |  |
+| 8:55.2 | Siete ciclos. |  |  |
+| 8:56.8 | Del virreinato al año dos mil. |  |  |
+| 8:59.5 |  | **serie** — todo encendido |  |
+| 8:59.5 | Eso es esta serie. |  |  |
 
-## s11 · cierre — `Cierre` · 8:49.2–9:20.2 (31.0 s)
+## s11 · cierre — `Cierre` · 9:05.5–9:36.5 (31.0 s)
 
 - **Cambio:** de la muerte del autor a la promesa de leerlo
 - **Intención:** vuelve la pila del inicio, ahora limpia: el libro terminado; recién aquí suena el tema del canal
@@ -394,17 +398,17 @@ Total: 9:20.2. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
-| 8:49.2 |  |  | ambiente cuarto (0.5) |
-| 8:49.5 | Marcos Cueto terminó el prólogo en Río de Janeiro, en febrero de dos mil trece, un mes después de la muerte de su amigo. |  |  |
-| 8:49.8 |  | **limpiar** — (con limpiar) las correcciones rojas se desvanecen (4 s) |  |
-| 8:51.6 |  | **ficha** — (con ficha) empieza a escribirse la ficha |  |
-| 8:58.0 | Lo cerró con una confesión: que siempre había querido ser como él. |  |  |
-| 9:03.4 | Nosotros vamos a hacer algo más modesto. |  |  |
-| 9:03.6 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
-| 9:06.6 | Vamos a leerlo. |  |  |
-| 9:08.1 |  | **negro** — fundido a negro |  |
-| 9:08.1 |  |  | música s11-tema.mp3 (nivel 0.55) |
-| 9:08.1 |  |  | se va el ambiente cuarto |
-| 9:09.1 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
-| 9:09.2 | Próximo episodio: Huancavelica, mil setecientos cincuenta y ocho. |  |  |
+| 9:05.5 |  |  | ambiente cuarto (0.5) |
+| 9:05.8 | Marcos Cueto terminó el prólogo en Río de Janeiro, en febrero de dos mil trece, un mes después de la muerte de su amigo. |  |  |
+| 9:06.1 |  | **limpiar** — (con limpiar) las correcciones rojas se desvanecen (4 s) |  |
+| 9:07.9 |  | **ficha** — (con ficha) empieza a escribirse la ficha |  |
+| 9:14.3 | Lo cerró con una confesión: que siempre había querido ser como él. |  |  |
+| 9:19.7 | Nosotros vamos a hacer algo más modesto. |  |  |
+| 9:19.9 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
+| 9:22.9 | Vamos a leerlo. |  |  |
+| 9:24.4 |  | **negro** — fundido a negro |  |
+| 9:24.4 |  |  | música s11-tema.mp3 (nivel 0.55) |
+| 9:24.4 |  |  | se va el ambiente cuarto |
+| 9:25.4 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
+| 9:25.5 | Próximo episodio: Huancavelica, mil setecientos cincuenta y ocho. |  |  |
 

@@ -134,7 +134,8 @@ pueden combinar.
   - grabados: `GrabadoGuanero` (islas, aves, fragata, sacos), `Barco`, `EdificioEstado` (fachada
     con ventanas que se encienden), `Cordillera` (Andes con escala de altura), `Engranaje`;
   - mapas y datos: `Mapa`, `Globo`, `SiluetaPais`, `RosaDeLosVientos`, `Barra`, `BarraUnidades`
-    (100 unidades que se desprenden), `GraficoNiveles`, `Dispersion` (nube de puntos y regresión
+    (100 unidades que se desprenden), `GraficoNiveles` (un valor por década sobre bandas en escala
+    real; la de abajo, vacía), `Dispersion` (nube de puntos y regresión
     de verdad), `CapasDeTiempo`, `CirculosRed`, `IndiceSerie`, `LomosDeLibro`, `Estante`;
   - objetos: `Balanza`, `Brujula`, `TelevisorCRT` (estática, nunca imágenes), `GotaMercurio`
     (mercurio que se vuelve plata), `CartelObra`, `Aula`, `Calendario`, `Piscina`.
@@ -245,8 +246,7 @@ npx remotion render v000-quiroz-s04 out/s04.mp4
 
 - Cotejado con el libro: pp. 1–82, 121–128, 164–190 y 535–554 (`bibliografia/quiroz-2013.md`).
   `fuentes.md` lista 28 correcciones para el guion (C1–C28); las de pantalla aprobadas ya están
-  aplicadas. Sigue `[VERIFICAR]`: **los niveles por período de s08, que son un marcador y
-  contradicen el libro** (los datos reales y una propuesta están en el diagnóstico §7, punto 27),
+  aplicadas, incluido el gráfico de niveles de s08 con los datos del Apéndice. Sigue `[VERIFICAR]`:
   la lista de gobernantes de s03, si la línea del hospital ya estaba en la edición de 2008, el lugar
   de nacimiento y la licencia de Chambon.
 - Grabar la voz real, cuadrar los beats con ella (`"beats_ajustados": true`) y recomponer la

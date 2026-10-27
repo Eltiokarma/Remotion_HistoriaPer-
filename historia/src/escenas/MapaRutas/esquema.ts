@@ -38,6 +38,6 @@ export const ejemplo: Ejemplo<typeof esquema> = {
       { nombre: 'Washington', lon: -77.04, lat: 38.9 },
     ],
     pregunta: '¿Es factible su estudio?',
-    barra: { valor: 0.5, etiqueta: '≈ ½ del crecimiento que no tuvimos' },
+    barra: { valor: 0.5, etiqueta: 'la mitad' },
   },
 };

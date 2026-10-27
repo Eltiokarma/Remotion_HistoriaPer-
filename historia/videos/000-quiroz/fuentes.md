@@ -15,8 +15,8 @@ pantalla todavía no coincide con el libro, dice `[VERIFICAR]` y hace fallar
 ## Correcciones para el guion
 
 El guion se está reescribiendo; esto es lo que el libro corrige. Lo que estaba en pantalla va
-marcado 🖥 y **ya está corregido** en `escenas.json` (C1, C5, C6, C21, C26); C5 y C21 también en la
-voz provisional de s04 y s08, para que voz y pantalla digan lo mismo. `guion.md` sigue como lo
+marcado 🖥 y **ya está corregido** en `escenas.json` (C1, C5, C6, C21, C26, C28); C5, C21 y C28
+también en la voz provisional de s04 y s08, para que voz y pantalla digan lo mismo. `guion.md` sigue como lo
 escribió Gerson: el resto se aplica al reescribirlo.
 
 ### Cambian un hecho o le ponen al libro palabras que no dice
@@ -55,7 +55,7 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | C25 | s11 | «un mes después de la muerte de su amigo» | Murió en enero de 2013 (nota de los editores); el prólogo se firma en febrero (p. 29). No hay día. | «semanas después» o solo «en febrero de 2013». Y algo que el guion no dice: Cueto alcanzó a decírselo en vida («tuve el privilegio de confesarle», p. 29). |
 | C26 | s03 🖥 | Capa de gobiernos: `BELAUNDE` | El libro escribe «Belaúnde» (índice, cap. 6, p. 384); en mayúsculas también va la tilde. | `BELAÚNDE` en `s03.props.gobiernos`. |
 | C27 | s08 | «Clasificó cada época como de corrupción moderada, alta o muy alta.» | **Resuelta: el guion está bien.** La escala del libro es «muy alta», «alta» y «moderada», y «no se detectaron evidencias de periodos de corrupción baja o muy baja» (p. 554). La p. 539 («alta, media o baja») describe el método en general. | Queda como está. |
-| C28 | s08 🖥 | «la corrupción podría explicar cerca de la mitad del crecimiento que el Perú no tuvo» · en pantalla `≈ ½ del crecimiento que no tuvimos` | Es la frase de Cueto (p. 24: «alrededor de la mitad de la falta de crecimiento»). Quiroz lo dice de otra forma y explica la cuenta: para crecer de forma sostenida hacen falta entre 5 y 8 % del PBI al año; la corrupción se llevaba entre 3 y 4 %; así, «el Perú perdió o distribuyó mal el equivalente de aproximadamente el 40 a 50 por ciento de sus posibilidades de desarrollo» (p. 554). | Usar la de Quiroz, con su cuenta: se entiende y se puede dibujar. En pantalla: `40–50 % de sus posibilidades de desarrollo`. **No aplicado**: pendiente de decisión. |
+| C28 | s08 🖥 | «la corrupción podría explicar cerca de la mitad del crecimiento que el Perú no tuvo» · en pantalla `≈ ½ del crecimiento que no tuvimos` | Es la frase de Cueto (p. 24: «alrededor de la mitad de la falta de crecimiento»). Quiroz lo dice de otra forma y explica la cuenta: para crecer de forma sostenida hacen falta entre 5 y 8 % del PBI al año; la corrupción se llevaba entre 3 y 4 %; así, «el Perú perdió o distribuyó mal el equivalente de aproximadamente el 40 a 50 por ciento de sus posibilidades de desarrollo» (p. 554). | **Aplicada.** La voz provisional dice ahora la cuenta («Para crecer de verdad, un país necesita que su producción suba entre cinco y ocho por ciento al año. La corrupción se llevaba entre tres y cuatro por ciento. Según su cuenta, el Perú perdió, o usó mal, cerca de la mitad de sus posibilidades de desarrollo.») y la pantalla la dibuja: dos barras en la misma escala y `40–50 % de sus posibilidades de desarrollo`. El país «fantasma» salió. |
 
 ---
 
@@ -108,13 +108,13 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | s07 | Objeción 4, cultura | Introducción, p. 44 | ✔ · C7 |
 | s07 | El «aceite» | Introducción, pp. 40–41 y 43 | ✔ · C20 |
 | s07 | «grava en el engranaje» | Apéndice, pp. 536–537 | ✔ (C8) |
-| s08 | Estimación década por década desde la colonia | Índice de cuadros: 1.1, 1.2, A.3, A.5 | ✔ (que existe; las cifras, abajo) |
+| s08 | Estimación década por década desde la colonia (la regla marca 1680–1990: una marca por década con estimado) | Cuadros 1.2 (desde 1680), A.3 y A.5 | ✔ |
 | s08 | 30–40 % del gasto del Estado; 3–4 % de la producción cada año (1820–2000) | Apéndice, conclusión, p. 554: «alrededor de entre 30 y 40 por ciento de los gastos del presupuesto, y de entre 3 y 4 por ciento del PBI en el largo plazo (años de 1820 a 2000)» | ✔ |
 | s08 | Moderada, alta o muy alta; ninguna baja | Apéndice, p. 554 | ✔ (C27) |
-| s08 | Niveles por período en el gráfico (`s08.props.periodos`) | Cuadros 1.2 (p. 125), A.4 (p. 548), A.6 (p. 550), A.7 (pp. 551–553) y los ciclos de la p. 554 | [VERIFICAR] — el marcador contradice el libro: pone 1820–1859 como «alta» y Quiroz dice «niveles muy altos en las décadas de 1820 y 1830» y otra vez en la de 1850; pone 1884–1930 como un solo bloque «alto» y ahí están el tramo moderado de 1899–1919 (25 % del gasto, 1 % del PBI) y el pico del Oncenio (72 %). Los datos reales están en `bibliografia/quiroz-2013.md` §6 y §8; cómo usarlos, en el diagnóstico §7 |
+| s08 | Niveles por década en el gráfico (`s08.props.niveles`): el costo de la corrupción como % del PBI, promedio por década, 1820–1999; bordes de los niveles en 1, 2 y 4 % | Cuadros A.4 (p. 548) y A.6 (p. 550); la escala, p. 554 | ✔. Reemplaza al marcador por épocas, que contradecía el libro. Simplificación declarada en el eje del gráfico: Quiroz clasifica mirando el gasto y el PBI juntos; con el gasto, la década de 1920 (72 %) sería «muy alta», y con el PBI (3,8 %) queda en «alta» |
 | s08 | ≈ la mitad del crecimiento que no tuvo | Prólogo, p. 24; Apéndice, p. 554 («40 a 50 por ciento de sus posibilidades de desarrollo») | ✔ · C28 |
 | s08 | Estimados sujetos a revisión | Introducción, p. 57; Apéndice, p. 535 | ✔ · C21 |
-| s08 | Silueta «fantasma» del país, 1,45 veces más grande | — | Ilustración de «la mitad del crecimiento», no una medida |
+| s08 | La cuenta: para crecer hace falta que el PBI suba 5–8 % al año; la corrupción se llevaba 3–4 %; 40–50 % de las posibilidades de desarrollo | Apéndice, p. 554 | ✔ (C28) |
 | s09 | *Corrupt Circles*, 2008 | Prólogo, p. 23 | ✔ |
 | s09 | Premios: Abraham J. Briloff Prize in Ethics y President's Excellence Award for Scholarship del Baruch College, 2009 | Prólogo, pp. 24–25 | ✔ |
 | s09 | Usado en el mundo; contra el fatalismo; «hace obras» | Prólogo, pp. 24–25 | ✔ |

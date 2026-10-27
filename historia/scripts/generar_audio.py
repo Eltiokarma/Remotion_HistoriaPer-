@@ -488,9 +488,9 @@ def m000_s07(b, dur):
 
 
 def m000_s08(b, dur):
-    """La cuenta: notas sueltas que cuentan, una figura que cae, un tic por año y un acorde fantasma."""
+    """La cuenta: notas sueltas que cuentan, una figura que cae, un tic por año y un colchón desde la conclusión."""
     p = Partitura(dur, J)
-    dec, barra, cae, pib, niv, baja, ni, sil, mit = (b[k] for k in ("decadas", "barra", "cae", "pib", "niveles", "baja", "ni", "silueta", "mitad"))
+    dec, barra, cae, pib, niv, baja, ni, sil, mit = (b[k] for k in ("decadas", "barra", "cae", "pib", "niveles", "baja", "ni", "crecer", "mitad"))
     acordes(p, 0, niv, ["Dm", "Gm"], 6, 0.09, corte=800)
     for k, t in enumerate(np.arange(dec, dec + 4.2, 4.2 / 12)):
         p.poner(punteo(62 + (k % 3) * 3, 1.0, 0.8), t, 0.1, -0.4 + 0.07 * k)
@@ -500,6 +500,8 @@ def m000_s08(b, dur):
         p.poner(punteo(81, 0.9, 1.5), t, 0.09, 0.4)
     acordes(p, niv, baja, ["Dm", "Bb", "Gm", "A"], (baja - niv) / 3, 0.12)
     acordes(p, ni, sil, ["Dm"], sil - ni, 0.1, corte=700)
+    # bajo la cuenta, dos acordes en suspenso (Gm, A) que se resuelven en el colchón de la conclusión
+    acordes(p, sil, mit, ["Gm", "A"], (mit - sil) / 2, 0.08, corte=700)
     p.poner(colchon([50, 57, 62, 65, 69, 74], dur - mit + 2, ataque=2.5, cierre=4, corte=1600), mit, 0.18)
     return p.mezcla(3.2, 0.38)
 

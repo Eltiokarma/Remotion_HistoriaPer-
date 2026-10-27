@@ -483,20 +483,23 @@ concepto, un ejemplo o un argumento.
     5 y 8 % al año; la corrupción se llevaba entre 3 y 4 % cada año; el Perú perdió o distribuyó mal
     «aproximadamente el 40 a 50 por ciento de sus posibilidades de desarrollo». Se puede dibujar con
     sus números (una barra de 5–8 de la que se cortan 3–4), y es más honesto que la silueta
-    «fantasma» de 1,45 veces, que no mide nada (C28).
+    «fantasma» de 1,45 veces, que no mide nada (C28). **Aplicado:** dos barras en la misma escala
+    (5–8 % y 3–4 % del PBI) y la conclusión; la voz provisional dice la cuenta, con un respiro
+    después de las barras y otro después de la conclusión.
 26. **Por qué en porcentajes** (p. 547). En las décadas de 1860 y 1870 se robó más plata que nunca,
     pero el Estado y la economía eran más grandes, y el nivel fue más bajo. Una frase que enseña por
     qué se mide como parte del gasto y como parte del PBI, y por qué son dos bases distintas (F5).
-27. **El gráfico de niveles de s08, con datos reales.** El marcador de hoy contradice el libro
-    (`fuentes.md`). Propuesta: en vez de bandas por capítulo, una línea por década del **% del PBI**
-    desde 1680 hasta 1999 (cuadros 1.2, A.4 y A.6: 32 décadas), sobre las tres bandas de Quiroz
-    (moderada, 1–2 %; alta, 2,1–3,9 %; muy alta, 4–6 %) y la banda «baja» vacía debajo. El punto más
-    bajo es 1,0 % (1900–1909): la línea nunca entra a la banda vacía. Es «Ni una, en casi dos
-    siglos» con los datos del libro, y los ciclos de las pp. 121–122 y 554 se ven como subidas y
-    bajadas: «el patrón nunca se rompe» deja de ser una frase. Una salvedad que hay que decir en
-    pantalla: Quiroz clasifica mirando el gasto y el PBI juntos, y no siempre coinciden (la década
-    de 1920 es 72 % del gasto y 3,8 % del PBI). Es un cambio de la escena, que hoy dibuja
-    categorías y no números: pendiente de decisión.
+27. **El gráfico de niveles de s08, con datos reales. Aplicado.** En vez de bandas por capítulo,
+    una línea escalonada por década del **% del PBI** de 1820 a 1999 (cuadros A.4 y A.6: 18
+    décadas), sobre las bandas de Quiroz en escala real (moderada, 1–2 %; alta, hasta 4 %; muy
+    alta, desde 4 %) y la banda «baja» vacía debajo. El punto más bajo, 1,0 % en 1900–1909, se
+    marca cuando la banda vacía parpadea: toca el piso de «moderada» y no lo cruza. Es «Ni una, en
+    casi dos siglos» con los datos del libro, y los ciclos de la p. 554 se ven como subidas y
+    bajadas. Al final («el patrón nunca se rompe») vuelve la línea entera, en vez del país
+    fantasma. Quedan dos decisiones a la vista: el gráfico empieza en 1820, como dice la voz (la
+    colonia, cuadro 1.2, queda para el episodio 1); y mide solo el PBI, cosa que dice el eje, aunque
+    Quiroz clasifica mirando el gasto y el PBI juntos (la década de 1920 es 72 % del gasto y 3,8 %
+    del PBI; la salvedad completa está en `fuentes.md`).
 
 ### Cómo cambia la propuesta (§4)
 
