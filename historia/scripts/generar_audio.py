@@ -546,9 +546,13 @@ def m000_s10(b, dur):
     while t < per:
         p.poner(punteo(r.choice([86, 88, 91, 93]), 1.4, 1.8), t, 0.07, r.uniform(-0.8, 0.8))
         t += r.uniform(0.15, 0.4)
-    # el corte: nada entre "perdió" y los nombres
+    # el corte: nada entre "perdió" y la línea; después, un pulso grave que marca el paso del tiempo
+    # mientras la cámara la recorre, y una nota más arriba al llegar a cada nombre
     for t in np.arange(otr, cap, 1.0):
-        p.poner(punteo(38, 1.2, 0.4), t, 0.14)
+        p.poner(punteo(38, 1.2, 0.4), t, 0.12)
+    for k in ("nombre_1", "nombre_2", "nombre_3", "nombre_4", "nombre_5", "nombre_6"):
+        if k in b:
+            p.poner(punteo(50, 1.6, 0.6), b[k], 0.1)
     compas = 4 * (60 / 80)
     for i, t0 in enumerate(np.arange(cap, dur, compas)):
         acorde = ACORDES[["Dm", "C", "Bb", "A"][i % 4]]

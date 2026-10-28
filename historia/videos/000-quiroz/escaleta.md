@@ -8,7 +8,7 @@ Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **I
 
 | Escena | Componente | Empieza | Dura | Voz | Voz seguida máx. | Palabras/min | Palabras por frase | Frase más larga | Pausas de párrafo | Nombres y cifras | Cambios de imagen | Semáforo |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| s01 | PruebasDeImprenta | 0:00.0 | 52 s | 69 % | 10 s | 116 | 9.5 | 17 | 6 | 2 (2.4/min) | 11 (13.5/min) | 🟢 |
+| s01 | PruebasDeImprenta | 0:00.0 | 52 s | 69 % | 10 s | 116 | 9.5 | 17 | 6 | 3 (3.7/min) | 11 (13.5/min) | 🟢 |
 | s02 | Presentacion | 0:51.6 | 29 s | 79 % | 26 s | 133 | 9.7 | 21 | 0 | 5 (11.5/min) | 4 (9.2/min) | 🟡 voz seguida 26 s · 11.5 datos/min |
 | s03 | TiempoLargo | 1:20.8 | 58 s | 92 % | 56 s | 141 | 19.0 | 31 | 0 | 6 (6.4/min) | 11 (11.7/min) | 🔴 voz seguida 56 s · frase de 31 palabras · 6.4 datos/min · voz 92 % |
 | s04 | MecanismoDeuda | 2:18.7 | 67 s | 90 % | 65 s | 136 | 14.8 | 30 | 0 | 6 (5.5/min) | 17 (15.6/min) | 🔴 voz seguida 65 s · frase de 30 palabras · voz 90 % |
@@ -17,10 +17,10 @@ Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **I
 | s07 | Objeciones | 5:14.2 | 86 s | 88 % | 80 s | 129 | 11.9 | 30 | 1 | 5 (3.6/min) | 18 (13.0/min) | 🔴 voz seguida 80 s · frase de 30 palabras · voz 88 % |
 | s08 | LaCuenta | 6:40.2 | 80 s | 85 % | 38 s | 133 | 12.4 | 27 | 3 | 9 (6.9/min) | 13 (10.0/min) | 🔴 voz seguida 38 s · frase de 27 palabras · 6.9 datos/min · voz 85 % |
 | s09 | CirculosCorruptos | 8:00.1 | 27 s | 81 % | 24 s | 136 | 11.0 | 17 | 0 | 2 (4.9/min) | 7 (17.3/min) | 🟡 voz 81 % |
-| s10 | Denunciantes | 8:27.0 | 49 s | 79 % | 27 s | 125 | 9.3 | 47 | 1 | 10 (13.4/min) | 12 (16.1/min) | 🔴 voz seguida 27 s · frase de 47 palabras · 13.4 datos/min |
-| s11 | Cierre | 9:16.3 | 31 s | 69 % | 18 s | 130 | 10.8 | 24 | 1 | 5 (12.0/min) | 5 (12.0/min) | 🟡 12.0 datos/min |
+| s10 | Denunciantes | 8:27.0 | 54 s | 71 % | 27 s | 112 | 6.6 | 47 | 3 | 10 (12.1/min) | 19 (23.0/min) | 🔴 voz seguida 27 s · frase de 47 palabras · 12.1 datos/min |
+| s11 | Cierre | 9:21.1 | 31 s | 69 % | 18 s | 130 | 10.8 | 24 | 1 | 5 (12.0/min) | 5 (12.0/min) | 🟡 12.0 datos/min |
 
-Total: 9:47.3. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
+Total: 9:52.1. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
 
 
 ## s01 · gancho — `PruebasDeImprenta` · 0:00.0–0:51.6 (51.6 s)
@@ -30,7 +30,7 @@ Total: 9:47.3. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 - **Intensidad:** 3 · **Música:** ausente → entra al final
 - **Semáforo para enseñar:** 🟢
 - **Métricas:** voz el 69 % del tiempo · tramo más largo sin pausa de párrafo: 10.3 s · 95 palabras · 116 por minuto · 10 frases de 9.5 palabras en promedio (la más larga: 17) · 6 pausa(s) de párrafo (≥ 1 s) · 11 cambios de imagen
-- **Nombres y cifras que se dicen (2):** Nueva York · 1
+- **Nombres y cifras que se dicen (3):** Nueva York · Alfonsito · 2013
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
@@ -355,13 +355,13 @@ Total: 9:47.3. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 8:23.7 |  | **tachar** — se tacha una palabra |  |
 | 8:25.1 |  | **roba** — todo se apaga menos la palabra que queda |  |
 
-## s10 · la serie — `Denunciantes` · 8:27.0–9:16.3 (49.4 s)
+## s10 · la serie — `Denunciantes` · 8:27.0–9:21.1 (54.2 s)
 
 - **Cambio:** de una lista de ladrones a una historia contada por los que denunciaron
 - **Intención:** el que intentó limpiar y perdió abre la serie; el corte a negro es su derrota
 - **Intensidad:** 3 · **Música:** presente → corte → protagonista
-- **Semáforo para enseñar:** 🔴 voz seguida 27 s · frase de 47 palabras · 13.4 datos/min
-- **Métricas:** voz el 79 % del tiempo · tramo más largo sin pausa de párrafo: 27.5 s · 93 palabras · 125 por minuto · 10 frases de 9.3 palabras en promedio (la más larga: 47) · 1 pausa(s) de párrafo (≥ 1 s) · 12 cambios de imagen
+- **Semáforo para enseñar:** 🔴 voz seguida 27 s · frase de 47 palabras · 12.1 datos/min
+- **Métricas:** voz el 71 % del tiempo · tramo más largo sin pausa de párrafo: 27.3 s · 93 palabras · 112 por minuto · 14 frases de 6.6 palabras en promedio (la más larga: 47) · 3 pausa(s) de párrafo (≥ 1 s) · 19 cambios de imagen
 - **Nombres y cifras que se dicen (10):** Antonio de Ulloa · Huancavelica · Domingo Elías · Manuel González Prada · Jorge Basadre · Héctor Vargas Haya · 1758 · 2000 · tres mil · siete
 
 | t | Voz | Imagen | Sonido |
@@ -373,27 +373,41 @@ Total: 9:47.3. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 8:30.3 | Está contado desde los que denunciaron. |  |  |
 | 8:31.9 |  | **tacha** — la lista se tacha |  |
 | 8:32.8 |  | **cordillera** — la lista se va y se dibuja la cordillera (3 s) |  |
-| 8:33.1 | Empieza con Antonio de Ulloa, un marino y científico español que en mil setecientos cincuenta y ocho llegó a gobernar Huancavelica, a más de tres mil quinientos metros de altura, a cargo de la mina de mercurio de la que dependía la plata de todo el virreinato. |  |  |
+| 8:33.2 | Empieza con Antonio de Ulloa, un marino y científico español que en mil setecientos cincuenta y ocho llegó a gobernar Huancavelica, a más de tres mil quinientos metros de altura, a cargo de la mina de mercurio de la que dependía la plata de todo el virreinato. |  |  |
 | 8:41.2 |  | **huanca** — el punto rojo baja al lugar; se escribe la ficha |  |
-| 8:42.9 |  | **altura** — línea y escala de altura |  |
-| 8:47.0 |  | **mercurio** — cae la gota de mercurio |  |
-| 8:49.2 |  | **plata** — la gota se vuelve barra de plata |  |
-| 8:51.6 |  | **limpiar** — un brillo barre la barra |  |
-| 8:51.6 | Intentó limpiarla. |  |  |
-| 8:54.0 | Y perdió. |  |  |
-| 8:54.8 |  | **perdio** — corte a negro de 10 cuadros |  |
-| 8:54.8 |  |  | se va el ambiente viento |
-| 8:56.0 | Después vienen otros: Domingo Elías, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya. |  |  |
-| 8:57.8 |  | **otros** — primer nombre |  |
-| 8:57.8 |  |  | ambiente cuarto (0.45) |
-| 9:04.1 | Siete capítulos. |  |  |
-| 9:04.1 |  | **capitulos** — el índice: se enciende un capítulo cada 0.62 s |  |
-| 9:06.0 | Siete ciclos. |  |  |
-| 9:07.6 | Del virreinato al año dos mil. |  |  |
-| 9:10.3 |  | **serie** — todo encendido |  |
-| 9:10.3 | Eso es esta serie. |  |  |
+| 8:42.8 |  | **altura** — línea y escala de altura |  |
+| 8:46.9 |  | **mercurio** — cae la gota de mercurio |  |
+| 8:49.1 |  | **plata** — la gota se vuelve barra de plata |  |
+| 8:51.5 |  | **limpiar** — un brillo barre la barra |  |
+| 8:51.5 | Intentó limpiarla. |  |  |
+| 8:53.9 | Y perdió. |  |  |
+| 8:54.6 |  | **perdio** — corte a negro de 10 cuadros; después aparece la línea, en quien abre la serie |  |
+| 8:54.6 |  |  | se va el ambiente viento |
+| 8:55.9 | Después vienen otros. |  |  |
+| 8:55.9 |  | **otros** — la cámara arranca hacia la derecha por la línea de tiempo |  |
+| 8:55.9 |  |  | ambiente cuarto (0.45) |
+| 8:55.9 |  | _cámara: recorre la línea de tiempo hacia la derecha, de Ulloa a cada nombre: toma impulso, arranca y frena en cada uno_ («después vienen otros»: los denunciantes se suceden en el tiempo y el espectador atraviesa los siglos con ellos) |  |
+| 8:58.2 | Domingo Elías. |  |  |
+| 8:58.2 |  | **nombre_1** — la cámara llega al primer nombre |  |
+| 9:00.2 | Manuel González Prada. |  |  |
+| 9:00.2 |  | **nombre_2** — (con dos nombres o más) llega al segundo |  |
+| 9:02.7 | Jorge Basadre. |  |  |
+| 9:02.7 |  | **nombre_3** — (con tres nombres o más) llega al tercero |  |
+| 9:04.8 | Héctor Vargas Haya. |  |  |
+| 9:04.8 |  | **nombre_4** — (con cuatro nombres o más) llega al cuarto |  |
+| 9:07.4 | Siete capítulos. |  |  |
+| 9:07.4 |  | **capitulos** — la cámara se abre hasta ver la línea entera; los nombres se apagan |  |
+| 9:07.4 |  | _cámara: toma aire y se abre hasta ver la línea entera, 1750–2000_ («siete capítulos»: de las personas al mapa completo de la serie) |  |
+| 9:09.5 | Siete ciclos. |  |  |
+| 9:09.6 |  | **ciclos** — los capítulos se encienden uno por uno (0,28 s) |  |
+| 9:11.6 | Del virreinato al año dos mil. |  |  |
+| 9:12.0 |  | **virreinato** — el año del comienzo, abajo a la izquierda; un brillo sale de ahí y recorre la línea |  |
+| 9:13.2 |  | **dos_mil** — el año del final, abajo a la derecha; el brillo llega |  |
+| 9:15.2 | Eso es esta serie. |  |  |
+| 9:15.2 |  | **serie** — la línea baja y arriba aparece el índice de la serie |  |
+| 9:15.2 |  | _cámara: la línea baja y arriba aparece el índice_ («eso es esta serie»: la línea que recorrimos es el plan de los episodios) |  |
 
-## s11 · cierre — `Cierre` · 9:16.3–9:47.3 (31.0 s)
+## s11 · cierre — `Cierre` · 9:21.1–9:52.1 (31.0 s)
 
 - **Cambio:** de la muerte del autor a la promesa de leerlo
 - **Intención:** vuelve la pila del inicio, ahora limpia: el libro terminado; recién aquí suena el tema del canal
@@ -404,17 +418,17 @@ Total: 9:47.3. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
-| 9:16.3 |  |  | ambiente cuarto (0.5) |
-| 9:16.6 | Marcos Cueto terminó el prólogo en Río de Janeiro, en febrero de dos mil trece, un mes después de la muerte de su amigo. |  |  |
-| 9:16.9 |  | **limpiar** — (con limpiar) las correcciones rojas se desvanecen (4 s) |  |
-| 9:18.7 |  | **ficha** — (con ficha) empieza a escribirse la ficha |  |
-| 9:25.1 | Lo cerró con una confesión: que siempre había querido ser como él. |  |  |
-| 9:30.5 | Nosotros vamos a hacer algo más modesto. |  |  |
-| 9:30.7 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
-| 9:33.7 | Vamos a leerlo. |  |  |
-| 9:35.2 |  | **negro** — fundido a negro |  |
-| 9:35.2 |  |  | música s11-tema.mp3 (nivel 0.55) |
-| 9:35.2 |  |  | se va el ambiente cuarto |
-| 9:36.2 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
-| 9:36.3 | Próximo episodio: Huancavelica, mil setecientos cincuenta y ocho. |  |  |
+| 9:21.1 |  |  | ambiente cuarto (0.5) |
+| 9:21.4 | Marcos Cueto terminó el prólogo en Río de Janeiro, en febrero de dos mil trece, un mes después de la muerte de su amigo. |  |  |
+| 9:21.7 |  | **limpiar** — (con limpiar) las correcciones rojas se desvanecen (4 s) |  |
+| 9:23.5 |  | **ficha** — (con ficha) empieza a escribirse la ficha |  |
+| 9:29.9 | Lo cerró con una confesión: que siempre había querido ser como él. |  |  |
+| 9:35.3 | Nosotros vamos a hacer algo más modesto. |  |  |
+| 9:35.5 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
+| 9:38.5 | Vamos a leerlo. |  |  |
+| 9:40.0 |  | **negro** — fundido a negro |  |
+| 9:40.0 |  |  | música s11-tema.mp3 (nivel 0.55) |
+| 9:40.0 |  |  | se va el ambiente cuarto |
+| 9:41.0 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
+| 9:41.2 | Próximo episodio: Huancavelica, mil setecientos cincuenta y ocho. |  |  |
 

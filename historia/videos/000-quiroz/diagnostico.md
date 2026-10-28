@@ -553,3 +553,13 @@ encienden, contador de kilómetros, llegada y apertura con asentamiento), con do
 voz (0,8 s después de «París» y 1,8 s después de «Nueva York»). El resto de la escena (método,
 claridad, carrera, ideas) sigue en rojo: 50 s de voz seguida; es tarea de la reescritura (§3).
 
+**s10, los siete capítulos (ya hecho).** Los cuatro nombres ya no son una lista suelta: después
+del negro de «Y perdió» aparece una línea de tiempo con los siete capítulos (cada uno con el largo
+de sus años), que empieza en Ulloa (1758). Con «Después vienen otros», la cámara toma impulso y la
+recorre; frena en cada nombre cuando la voz lo dice, cada uno en el capítulo de su época, y el
+título del capítulo pasa de fondo. Con «Siete capítulos» se abre hasta ver la línea entera; con
+«Siete ciclos» los capítulos se encienden uno por uno; un brillo la recorre con «del virreinato al
+año dos mil», y con «Eso es esta serie» la línea baja y se vuelve el índice. La voz partió los
+nombres en frases, con pausas cortas (la escena pasó de 44,8 a 49,6 s de voz). Falta confirmar en
+qué capítulo está González Prada, Basadre y Vargas Haya (`fuentes.md`). Lo demás de s10 sigue en
+rojo: la frase de Ulloa (47 palabras, 27 s de voz seguida) es tarea de la reescritura (§3).

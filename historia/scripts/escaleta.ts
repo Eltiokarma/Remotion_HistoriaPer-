@@ -26,13 +26,16 @@ const PAUSA_PARRAFO = ENSENAR.pausaParrafo;
 const tiempo = (s: number) => `${Math.floor(s / 60)}:${(s % 60).toFixed(1).padStart(4, '0')}`;
 const palabras = (t: string) => t.split(/\s+/).filter((w) => /[\p{L}\d]/u.test(w));
 
-/** El texto de la voz de cada escena en el guion (secciones "## ESC n" con un párrafo "**VO:**"). */
+/**
+ * El texto de la voz de cada escena en el guion (secciones "## ESC n" con "**VO:**"): todos sus
+ * párrafos, hasta el próximo rótulo en negrita, sin las marcas de pausa ("[PAUSA 0,5s]").
+ */
 const vozDelGuion = (guion: string): Map<string, string> => {
   const out = new Map<string, string>();
   const partes = guion.split(/^## ESC (\d+)/m);
   for (let i = 1; i < partes.length; i += 2) {
-    const m = partes[i + 1].match(/\*\*VO:\*\*\s*\n([\s\S]*?)(\n\s*\n|$)/);
-    if (m) out.set(`s${partes[i].padStart(2, '0')}`, m[1].trim());
+    const m = partes[i + 1].match(/\*\*VO:\*\*\s*\n([\s\S]*?)(\n\s*\n\*\*|\n---|$)/);
+    if (m) out.set(`s${partes[i].padStart(2, '0')}`, m[1].replace(/\[(PAUSA|SILENCIO)[^\]]*\]/g, ' ').replace(/\s+/g, ' ').trim());
   }
   return out;
 };

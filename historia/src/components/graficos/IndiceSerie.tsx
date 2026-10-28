@@ -13,13 +13,15 @@ type Props = {
   aparece?: number;
   /** Encabezado de la página. */
   encabezado?: string;
+  /** false: sin la línea de tiempo de abajo (cuando ya la dibuja una LineaDeTiempo que llegó recorriendo). */
+  linea?: boolean;
 };
 
 /**
  * El mapa de la serie: un índice de libro (número, título, años con puntos guía) y debajo la
  * línea de tiempo, con el largo de cada época proporcional a sus años.
  */
-export const IndiceSerie: React.FC<Props> = ({ paleta, capitulos, encendido, aparece = 1, encabezado = 'Índice' }) => {
+export const IndiceSerie: React.FC<Props> = ({ paleta, capitulos, encendido, aparece = 1, encabezado = 'Índice', linea = true }) => {
   const ini = capitulos[0].desde, fin = capitulos[capitulos.length - 1].hasta + 1;
   const X0 = 300, X1 = 1620;
   const X = (a: number) => X0 + ((a - ini) / (fin - ini)) * (X1 - X0);
@@ -42,7 +44,7 @@ export const IndiceSerie: React.FC<Props> = ({ paleta, capitulos, encendido, apa
           );
         })}
       </div>
-      <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+      {linea ? <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
         <line x1={X0} x2={X1} y1={930} y2={930} stroke={alfa(paleta.ocre, 0.5)} strokeWidth={2} />
         {capitulos.map((c, i) => {
           const k = encendido[i] ?? 0;
@@ -55,7 +57,7 @@ export const IndiceSerie: React.FC<Props> = ({ paleta, capitulos, encendido, apa
           );
         })}
         {[ini, fin - 1].map((a) => <text key={a} x={X(a === ini ? a : a + 1)} y={994} textAnchor="middle" fill={alfa(paleta.ocre, 0.8)} fontFamily={fuente.mono} fontSize={24}>{a}</text>)}
-      </svg>
+      </svg> : null}
     </div>
   );
 };

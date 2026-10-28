@@ -138,7 +138,8 @@ pueden combinar.
     ruta con la cámara, como 000·s05), `Globo`, `SiluetaPais`, `RosaDeLosVientos`, `Barra`, `BarraUnidades`
     (100 unidades que se desprenden), `GraficoNiveles` (un valor por década sobre bandas en escala
     real; la de abajo, vacía), `LineaDeTiempo` (se recorre con la cámara: lo recorrido se enciende,
-    una flecha va delante, el destino brilla al acercarse), `Dispersion` (nube de puntos y regresión
+    una flecha va delante, el destino brilla al acercarse; tramos iguales o con el largo real de
+    sus años, personas, bloques que se encienden, puntas y un brillo que la recorre), `Dispersion` (nube de puntos y regresión
     de verdad), `CapasDeTiempo`, `CirculosRed`, `IndiceSerie`, `LomosDeLibro`, `Estante`;
   - objetos: `Balanza`, `Brujula`, `TelevisorCRT` (estática, nunca imágenes), `GotaMercurio`
     (mercurio que se vuelve plata), `CartelObra`, `Aula`, `Calendario`, `Piscina`.
@@ -252,7 +253,8 @@ npx remotion render v000-quiroz-s04 out/s04.mp4
 
 - Cotejado con el libro (pp. 1–82, 121–128, 164–190 y 535–554, en `bibliografia/quiroz-2013.md`)
   y, para lo que el libro no dice, con fuentes externas (`fuentes.md`, «Fuentes fuera del libro»).
-  No queda ningún `[VERIFICAR]`. `fuentes.md` lista 29 observaciones al guion (C1–C29); las de
+  Queda un `[VERIFICAR]`: en qué capítulo está González Prada, Basadre y Vargas Haya en la línea
+  de tiempo de s10 (hacen falta las primeras páginas de los capítulos 3 a 7). `fuentes.md` lista 29 observaciones al guion (C1–C29); las de
   pantalla aprobadas ya están aplicadas. Para usar la caricatura de Chambón hace falta permiso de
   la PUCP para la copia digital.
 - Grabar la voz real, cuadrar los beats con ella (`"beats_ajustados": true`) y recomponer la

@@ -213,9 +213,11 @@ en la cabeza los meses, los kilómetros o los pasos que hay en medio es lo que l
 - Al llegar, la cámara se abre para que se vea el camino entero: el viaje queda como mapa.
 - Recorrer no es mover por mover: sigue valiendo «toda cámara con motivo» (el motivo es el paso del
   tiempo o del espacio que dice la voz) y el silencio es su mejor momento (el viaje ocupa la pausa).
-- El modelo: `LineaDeTiempo` en 000·s01 (de la muerte de Quiroz a la salida del libro, mes por mes).
-  Se puede aplicar, por ejemplo, a la ruta Lima → Nueva York (000·s05), a los años entre la tesis y
-  el libro (000·s04) o a los siete capítulos de la serie (000·s10).
+- Los modelos: `LineaDeTiempo` en 000·s01 (de la muerte de Quiroz a la salida del libro, mes por
+  mes) y en 000·s10 (los siete capítulos, con el largo real de sus años: la cámara va de un
+  denunciante al siguiente, se abre, los capítulos se encienden y la línea se vuelve el índice); el
+  viaje Lima → Nueva York en 000·s05 (`Mapa`). Se puede aplicar, por ejemplo, a los años entre la
+  tesis y el libro (000·s04).
 
 ## 5. Composición
 
