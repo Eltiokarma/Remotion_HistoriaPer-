@@ -1,0 +1,460 @@
+{
+  "id": "001-el-hombre",
+  "titulo": "El hombre que le sacó la cuenta al Perú",
+  "formato": "largo",
+  "fps": 30,
+  "ancho": 1920,
+  "alto": 1080,
+  "paleta": {
+    "fondo": "#1c1b19",
+    "papel": "#ede4d3",
+    "ocre": "#c2a878",
+    "rojo": "#b3261e",
+    "verde": "#5e6b4e"
+  },
+  "pregunta_central": "¿Qué encontró, para que valiera la pena?",
+  "atmosfera": {
+    "grano": 0.1,
+    "vineta": 0.45
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "seccion": "gancho",
+      "componente": "PruebasDeImprenta",
+      "duracion_s": 49.07,
+      "cola_s": 2.5,
+      "intensidad": 3,
+      "cambio": "de un desconocido a un hombre que corrige su libro contra el tiempo",
+      "intencion": "abrir con la muerte y el libro sin decir quién es: los meses entre una y otro se recorren con la cámara, del punto oscuro a la luz",
+      "transicion_salida": "corte",
+      "beats": {
+        "ficha": 0.4,
+        "correcciones": 3.4,
+        "cita": 17.0,
+        "subrayado": 23.5,
+        "abajo": 28.4,
+        "muerte": 37.2,
+        "recorre": 39.6,
+        "mayo": 43.3,
+        "final": 45.4,
+        "hombre": 47.0,
+        "encontro": 48.4
+      },
+      "props": {
+        "ficha": "NUEVA YORK · 2012",
+        "seccion": "Agradecimientos",
+        "cita": {
+          "texto": "A mis médicos del hospital Memorial Sloan-Kettering les agradezco inmensamente el alargar estos días para poder completar la tarea.",
+          "subrayado": "alargar estos días"
+        },
+        "segunda": {
+          "texto": "La reciente llegada a este mundo de nuestro precioso Alfonsito ha colocado todo esto en su debida perspectiva vital."
+        },
+        "linea": {
+          "tramos": [
+            "ENE",
+            "FEB",
+            "MAR",
+            "ABR",
+            "MAY"
+          ],
+          "fondo": [
+            "enero",
+            "febrero",
+            "marzo",
+            "abril",
+            "mayo"
+          ],
+          "eventos": [
+            {
+              "en": 0.03,
+              "rotulo": "† 2 ENE 2013",
+              "tono": "sombra"
+            },
+            {
+              "en": 1.5,
+              "rotulo": "PRÓLOGO",
+              "detalle": "RÍO DE JANEIRO",
+              "tono": "nota"
+            },
+            {
+              "en": 4.5,
+              "rotulo": "MAYO 2013",
+              "detalle": "PRIMERA EDICIÓN",
+              "tono": "luz"
+            }
+          ]
+        }
+      },
+      "camara": [
+        {
+          "beat": "cita",
+          "movimiento": "entra a la hoja y se acerca despacio a la frase (1 → 1,08)",
+          "motivo": "la voz dice «agradecimientos»: vamos a leer lo que él escribió"
+        },
+        {
+          "beat": "abajo",
+          "movimiento": "baja por la página hasta la línea de Alfonsito; el foco pasa de una frase a la otra",
+          "motivo": "«unas líneas más abajo» celebra la llegada de su hijo"
+        },
+        {
+          "beat": "recorre",
+          "movimiento": "recorre la línea de tiempo hacia la derecha, de enero a mayo (arranca y frena despacio)",
+          "motivo": "entre la muerte y el libro hay meses: el espectador los atraviesa, no los salta"
+        },
+        {
+          "beat": "final",
+          "movimiento": "se abre hasta ver el camino entero",
+          "motivo": "«ese hombre» y «lo que encontró» son las dos puntas de la línea"
+        }
+      ],
+      "audio": {
+        "musica": {
+          "archivo": "s01-entrada.mp3",
+          "nivel": 0.3,
+          "desde_beat": "final"
+        },
+        "ambientes": [
+          {
+            "nombre": "cuarto",
+            "nivel": 0.6
+          }
+        ],
+        "duck_db": -16
+      },
+      "estado_musica": "ausente → entra al final"
+    },
+    {
+      "id": "s02",
+      "seccion": "personaje",
+      "componente": "Presentacion",
+      "duracion_s": 26.12,
+      "cola_s": 3.0,
+      "intensidad": 1,
+      "cambio": "de un historiador cualquiera a un nadador terco que se metió a los archivos",
+      "intencion": "el carril de piscina se vuelve renglón contable: la misma disciplina, otro terreno",
+      "transicion_salida": "corte",
+      "beats": {
+        "nombre": 1.0,
+        "frenar": 17.6,
+        "renglon": 20.6,
+        "palabra": 25.0
+      },
+      "props": {
+        "fondo": "piscina",
+        "nombre": "ALFONSO W. QUIROZ NORRIS",
+        "anios": "1956 — 2013",
+        "palabra": "INAGOTABLE"
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s02-nadador.mp3",
+          "nivel": 0.26
+        },
+        "ambientes": [
+          {
+            "nombre": "agua",
+            "nivel": 0.8,
+            "hasta_beat": "renglon"
+          },
+          {
+            "nombre": "cuarto",
+            "nivel": 0.5,
+            "desde_beat": "renglon"
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente"
+    },
+    {
+      "id": "s03",
+      "seccion": "formación",
+      "componente": "TiempoLargo",
+      "duracion_s": 56.42,
+      "cola_s": 1.5,
+      "intensidad": 3,
+      "cambio": "de un estudiante en tiempos de cambio a alguien que sospecha que lo de fondo no cambia",
+      "intencion": "los afiches gritan cambio; debajo, la capa que casi no se mueve",
+      "transicion_salida": "corte",
+      "beats": {
+        "sello": 2.0,
+        "primeros": 5.8,
+        "afiches": 10.2,
+        "afiche1": 12.3,
+        "afiche2": 13.6,
+        "afiche3": 16.7,
+        "despegue": 28.8,
+        "volante": 33.6,
+        "capas": 39.2,
+        "braudel": 44.3,
+        "bajar": 51.2
+      },
+      "props": {
+        "sello": {
+          "centro": "PUCP",
+          "fecha": "1974",
+          "arco": "INGRESO · INGRESO · INGRESO ·"
+        },
+        "titulares": [
+          "REFORMA AGRARIA",
+          "NACIONALIZACIÓN",
+          "UN PAÍS NUEVO"
+        ],
+        "ficha": "F. BRAUDEL · LA LARGA DURACIÓN",
+        "capas": {
+          "rapida": "gobiernos",
+          "media": "economía",
+          "lenta": "estructuras"
+        },
+        "gobiernos": [
+          "VIRREINATO",
+          "SAN MARTÍN",
+          "CASTILLA",
+          "PIÉROLA",
+          "LEGUÍA",
+          "BENAVIDES",
+          "ODRÍA",
+          "PRADO",
+          "BELAÚNDE",
+          "VELASCO",
+          "MORALES BERMÚDEZ",
+          "GARCÍA",
+          "FUJIMORI"
+        ],
+        "lista": "ADMISIÓN · 1974"
+      },
+      "camara": [
+        {
+          "beat": "bajar",
+          "movimiento": "baja hasta la capa de las estructuras",
+          "motivo": "«hay cosas que no cambian aunque cambien los gobiernos»"
+        }
+      ],
+      "audio": {
+        "musica": {
+          "archivo": "s03-generacion.mp3",
+          "nivel": 0.23
+        },
+        "ambientes": [
+          {
+            "nombre": "ciudad",
+            "nivel": 0.6,
+            "hasta_beat": "capas"
+          },
+          {
+            "nombre": "cuarto",
+            "nivel": 0.5,
+            "desde_beat": "capas"
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente"
+    },
+    {
+      "id": "s04",
+      "seccion": "método",
+      "componente": "AprenderAMedir",
+      "duracion_s": 64.67,
+      "cola_s": 1.5,
+      "intensidad": 2,
+      "cambio": "de un historiador de discursos a uno que mide",
+      "intencion": "la ruta duda en París y se va a Nueva York; la cámara hace el viaje con él: el método antes que la moda",
+      "transicion_salida": "corte",
+      "beats": {
+        "mapa": 0.2,
+        "paris": 6.4,
+        "duda": 7.7,
+        "sale": 8.9,
+        "llega": 12.4,
+        "abre": 13.1,
+        "ficha": 14.9,
+        "puntos": 19.1,
+        "recta": 22.9,
+        "discursos": 28.0,
+        "balanza": 29.3,
+        "profundidad": 32.5,
+        "claridad": 34.6,
+        "estante": 35.7,
+        "temas": 40.3,
+        "aulas": 43.5,
+        "brujula": 51.4,
+        "giro": 54.2
+      },
+      "props": {
+        "origen": {
+          "nombre": "Lima",
+          "lon": -77.04,
+          "lat": -12.05
+        },
+        "tentacion": {
+          "nombre": "París",
+          "lon": 2.35,
+          "lat": 48.86
+        },
+        "destino": {
+          "nombre": "Nueva York",
+          "lon": -74.0,
+          "lat": 40.71
+        },
+        "distancia_km": 5900,
+        "ficha": "COLUMBIA UNIVERSITY · BECA · H. S. KLEIN",
+        "balanza": [
+          "PROFUNDIDAD",
+          "CLARIDAD"
+        ],
+        "temas": [
+          "Bancos",
+          "Crédito colonial",
+          "Casa Grace"
+        ],
+        "ficha_aulas": "BARUCH COLLEGE · CUNY",
+        "brujula": [
+          "1970s",
+          "1990s"
+        ],
+        "encuadre": [
+          -105,
+          -28,
+          22,
+          62
+        ]
+      },
+      "camara": [
+        {
+          "beat": "sale",
+          "movimiento": "retrocede apenas y se lanza a Lima; sigue la ruta hacia el norte, con aire delante, y frena en Nueva York",
+          "motivo": "«Él postula a la Universidad de Columbia, en Nueva York»: el espectador hace el viaje"
+        },
+        {
+          "beat": "abre",
+          "movimiento": "se abre hasta ver la ruta entera (y París, que quedó atrás); se pasa un poco y se asienta",
+          "motivo": "llegó: el viaje queda como mapa antes de la beca"
+        }
+      ],
+      "audio": {
+        "musica": {
+          "archivo": "s04-medir.mp3",
+          "nivel": 0.3
+        },
+        "ambientes": [
+          {
+            "nombre": "ciudad",
+            "nivel": 0.55
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente"
+    },
+    {
+      "id": "s05",
+      "seccion": "puente",
+      "componente": "MecanismoDeuda",
+      "duracion_s": 24.16,
+      "cola_s": 1.5,
+      "intensidad": 4,
+      "cambio": "del hombre que aprendió a medir a su primer caso: una deuda pagada con la plata del guano, y una pregunta abierta",
+      "intencion": "cerrar el retrato volviendo atrás: lo que aprendió en Nueva York lo va a usar en lo que ya había encontrado antes de irse; la pregunta queda en el aire para el próximo episodio",
+      "transicion_salida": "corte",
+      "beats": {
+        "islas": 0.2,
+        "sacos": 13.1,
+        "flecha": 15.95,
+        "vales": 17.4,
+        "consolidacion": 19.85
+      },
+      "props": {
+        "ficha": "SIGLO XIX · GUANO",
+        "estado": "ESTADO",
+        "sello": "1850",
+        "vale": {
+          "desde": 1000,
+          "hasta": 3000
+        },
+        "funcionario": "funcionario",
+        "frase": [
+          "No era solo derroche.",
+          "Era un mecanismo."
+        ],
+        "tesis": {
+          "etiqueta": "TESIS",
+          "anio": "1980"
+        },
+        "libro": {
+          "titulo": "La deuda defraudada",
+          "anio": "1987",
+          "autor": "Alfonso W. Quiroz"
+        },
+        "hasta": "consolidacion"
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s05-puente.mp3",
+          "nivel": 0.38
+        },
+        "ambientes": [
+          {
+            "nombre": "mar",
+            "nivel": 0.7,
+            "hasta_beat": "flecha"
+          },
+          {
+            "nombre": "cuarto",
+            "nivel": 0.5,
+            "desde_beat": "flecha"
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente (tensión) → en suspenso"
+    },
+    {
+      "id": "s06",
+      "seccion": "cierre",
+      "componente": "Cierre",
+      "duracion_s": 6.21,
+      "cola_s": 6.0,
+      "intensidad": 1,
+      "cambio": "del caso abierto a la promesa del próximo episodio",
+      "intencion": "la pregunta queda en un silencio de 2 s mientras las pruebas de imprenta del comienzo se cierran; después, el tema del canal entra solo, con el negro",
+      "transicion_salida": "corte",
+      "beats": {
+        "cerrar": 0.3,
+        "negro": 2.3,
+        "tarjeta": 2.8
+      },
+      "props": {
+        "limpiar": false,
+        "emblema": null,
+        "proximo": {
+          "etiqueta": "Próximo",
+          "anio": "1850",
+          "titulo": "La deuda defraudada"
+        }
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s06-tema.mp3",
+          "nivel": 0.55,
+          "desde_beat": "negro"
+        },
+        "ambientes": [
+          {
+            "nombre": "cuarto",
+            "nivel": 0.5,
+            "hasta_beat": "negro"
+          }
+        ],
+        "duck_db": -12,
+        "silencio": {
+          "desde_beat": "cerrar",
+          "hasta_beat": "negro"
+        }
+      },
+      "estado_musica": "silencio → protagonista (el tema del canal, solo, sobre el negro)"
+    }
+  ]
+}

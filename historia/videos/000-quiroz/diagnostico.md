@@ -217,45 +217,79 @@ leerlo»). Es el único lugar donde el silencio y la música trabajan como el CL
 
 ---
 
-## 4. Propuesta: el contenido de este video en tres episodios
+## 4. Plan: el contenido de este video en cuatro episodios
 
-No se agrega información nueva: se le da a cada idea el tiempo de un párrafo. Duraciones
-estimadas a 130 palabras por minuto con la voz en el 70 % del tiempo (hoy, 86 %).
+**Decidido** (después del cotejo con el libro): cuatro episodios de presentación antes del
+capítulo 1 (1750–1820). La propuesta original era de tres; con lo que el libro agregó (§7), el
+tercero llegaba a ~1100 palabras y 11–12 min y volvía a ser «cuatro videos en uno», así que se
+partió en dos: «¿se puede medir?» termina en el umbral de la cuenta, y «la cuenta» la responde.
 
-### 0·1 — «El hombre que le sacó la cuenta al Perú» (~8 min)
+No se agrega información sin fuente: se le da a cada idea el tiempo de un párrafo. Duraciones
+estimadas con las palabras que ya existen más las que suman los hallazgos del libro, a 130–140
+palabras por minuto, con la voz en el 70 % del tiempo (el ritmo real lo pone la voz de Gerson).
+Total: ~27 min en cuatro videos (hoy, 10 min en uno).
 
-1. **Gancho** (s01): el hombre que corrige contra el tiempo · las dos fechas · *la pregunta*: ¿qué
-   encontró, para que valiera la pena?
-2. **El nadador** (s02): la disciplina, Marcos Cueto con ficha, «inagotable».
-3. **Una generación** (s03a): Velasco, los afiches, ¿cambia o se repite? (queda en el aire).
-4. **Braudel** (s03b): las tres capas, una por una; *larga duración*; «hay cosas que no cambian
-   aunque cambien los gobiernos» + silencio. Esto es lo que la serie va a probar.
-5. **Aprender a medir** (s05 recortada): método (qué es una regresión), claridad, ideas.
-6. **Cierre/puente**: su primer caso estaba en el siglo XIX → próximo: *La deuda defraudada*.
+| Ep. | Video | Pregunta que abre | Viene de | Palabras | Duración |
+|---|---|---|---|---|---|
+| 0·1 | `001-el-hombre` | ¿Qué encontró, para que valiera la pena? | s01, s02, s03, s05 | ~645 | ~7–7½ min |
+| 0·2 | (por crear) | ¿Adónde fue la plata del guano? | s04 + hallazgos 13–16, 21–24 | ~720 | ~7½–8 min |
+| 0·3 | (por crear) | ¿Se puede medir algo que se esconde? | s06, s07 + hallazgos 1–4, 6, 7 | ~520 | ~6 min |
+| 0·4 | (por crear) | ¿Cuánto le costó al Perú? | s08, s09, s10, s11 + hallazgos 9, 17, 18, 25, 26 | ~580 | ~6–6½ min |
 
-### 0·2 — «La deuda defraudada» (~7–8 min)
+### 0·1 — «El hombre que le sacó la cuenta al Perú» (~7–7½ min)
 
-1. **El guano** y la plata que entra al Estado.
-2. **Qué es una deuda interna** y qué fue la consolidación (presentar los términos).
-3. **Dos versiones**: lo que se prometía (empresarios) y lo que se creyó (derroche), las dos a la vista.
-4. **El mecanismo**, paso a paso en un solo tablero que se arma: **[DEL LIBRO, cap. 2, pp.
-   169–181: cómo se inflaba el valor de los vales, quiénes los tenían, quién los reconocía]**.
-5. **«No era solo derroche. Era un mecanismo.»** + silencio (`fuentes.md`, C5).
-6. **La tesis y el libro** (1980, 1987) · puente a la pregunta del año 2000.
+1. **Gancho** (s01): las pruebas de imprenta, Alfonsito, enero y mayo · *la pregunta*.
+2. **El nadador** (s02): la disciplina; Marcos Cueto con su ficha; «inagotable».
+3. **Una generación** (s03a): Velasco, los afiches; ¿el país cambia o se repite? (queda en el aire).
+4. **Braudel** (s03b): las tres capas, una por párrafo, cada una con su ejemplo; *larga duración*
+   + silencio. Es lo que la serie va a probar.
+5. **Aprender a medir** (s05, recortada): el viaje a Nueva York; qué es una regresión, explicada;
+   profundidad y claridad; su carrera y sus ideas.
+6. **Puente**: su primer caso lo encontró antes de irse, en Lima: Denegri le sugirió mirar el
+   siglo XIX; el guano y una deuda que el Estado pagó con esa plata · ¿adónde fue? → 0·2.
 
-### 0·3 — «¿Se puede medir la corrupción?» (~10 min)
+### 0·2 — «La deuda defraudada» (~7½–8 min)
 
-1. **La pregunta del 2000** (s06) y las pruebas.
-2. **Las objeciones** (s07): una tarjeta por párrafo, con ejemplo y pausa; la cuarta, «es
-   cultural, es útil», con el argumento de Quiroz (p. 44) y el *aceite* adentro (§7, punto 4).
-3. **No es cultura: son reglas** (p. 45) y el engranaje que se traba.
-4. **La cuenta** (s08): una cifra por párrafo; tablero final con las tres; «estimados preliminares».
-5. **Contra el fatalismo** (s09): no es destino · «roba, pero hace obra».
-6. **La serie** (s10–s11): los que denunciaron, en el índice; Ulloa y el mercurio; próximo episodio.
+1. **El guano**, contado por un diplomático (1841) (23).
+2. **Qué era la deuda interna** (21): el concepto antes de usarlo.
+3. **La consolidación era una buena idea** y su promesa (22, 14).
+4. **El mecanismo**, en un solo tablero que se arma, con el caso Novoa (13).
+5. **Adónde fueron los 24 millones** (13).
+6. **«No era solo derroche. Era un mecanismo.»** + silencio (C5).
+7. **El denunciante no era un santo**: Elías (15).
+8. **¿Y los castigaron?** La Junta de Examen Fiscal y la ley de tabla rasa de 1857 (24).
+9. **La palabra del episodio:** *consolidados* (16).
+10. **La tesis y el libro** (1980, 1987) · puente: otra década perdida (17) → 0·3.
 
-Esto deja la serie con un **arco de presentación** de tres episodios antes del capítulo 1 (1750–1820).
-Otra opción es un solo video de ~13 min con los mismos párrafos, cortando la textura biográfica;
-la recomiendo menos, porque F7 (cuatro videos en uno) seguiría ahí.
+### 0·3 — «¿Se puede medir la corrupción?» (~6 min)
+
+1. **La pregunta del 2000** (s06) y cómo llegó a ella: en 1995 leyó a los economistas; el ensayo
+   salió en el homenaje a Denegri, que le había abierto su primer caso (2, 3).
+2. **Qué es la corrupción** (1): la definición de la p. 38, antes de usar la palabra.
+3. **Las siete objeciones** (s07, 4): una por párrafo, con su ejemplo y su pausa.
+4. **No es aceite, es grava; no es cultura, son reglas** (6) y el engranaje que se traba.
+5. **El historiador no es juez** (7).
+6. **Umbral:** se puede medir. ¿Cuánto da? → 0·4.
+
+### 0·4 — «La cuenta» (~6–6½ min)
+
+1. **Por qué en porcentajes** (26).
+2. **La cuenta** (s08): el 30–40 % del gasto y el 3–4 % del PBI, de a uno; los niveles por década,
+   ninguna «baja» (27); el 40–50 % de sus posibilidades de desarrollo, con su cuenta (25, C28);
+   «estimados preliminares».
+3. **Dos gobiernos con el mismo cuadro** (17).
+4. **Contra el fatalismo** (s09, 9) y **«roba, pero hace obra»** con el número de los
+   ferrocarriles (18).
+5. **La serie** (s10): los siete denunciantes, uno por capítulo; los ciclos explicados con las
+   capas de Braudel (5).
+6. **Cierre** (s11): Cueto en Río de Janeiro; «vamos a leerlo»; próximo: Huancavelica, 1758.
+
+### Orden de trabajo
+
+- **0·1 primero:** ya está casi entero en escenas. Separado como `videos/001-el-hombre/`.
+- **0·2 después:** es casi todo nuevo (hoy es una escena de un minuto).
+- `000-quiroz` queda como la versión de trabajo de 10 min y la fuente de las escenas, hasta que
+  estén separados los cuatro.
 
 ---
 
@@ -503,6 +537,8 @@ concepto, un ejemplo o un argumento.
 
 ### Cómo cambia la propuesta (§4)
 
+(Ya está aplicado en §4, con cuatro episodios: lo que aquí dice 0·3 quedó repartido entre 0·3 y 0·4.)
+
 - **0·1** gana la rima de Denegri y el camino de la pregunta (punto 2) como puente final, en vez
   de saltar a 2000.
 - **0·2** tiene ahora un arco completo, todo con página: el guano contado por un diplomático
@@ -518,7 +554,7 @@ concepto, un ejemplo o un argumento.
 
 ### Lo que todavía falta del libro
 
-Para los tres episodios de presentación, nada. Para lo que sigue (páginas del libro; en el PDF,
+Para los cuatro episodios de presentación, nada. Para lo que sigue (páginas del libro; en el PDF,
 una menos):
 
 | Para | Páginas del libro | Páginas del PDF |

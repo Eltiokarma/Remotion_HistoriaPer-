@@ -19,7 +19,7 @@ import { peso } from '../../direction/easings';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
-import type { esquema } from './esquema';
+import { PASOS, type esquema } from './esquema';
 
 type P = z.infer<typeof esquema>;
 const PILA = 7; // vales en la pila
@@ -48,7 +48,9 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const t = frame / fps;
   const pal = video.paleta;
   const b = escena.beats;
-  const T = (n: string, d: number) => beat(b, n, d);
+  // con `hasta`, los pasos posteriores no llegan nunca
+  const corte = props.hasta ? PASOS.indexOf(props.hasta) : PASOS.length;
+  const T = (n: (typeof PASOS)[number], d: number) => (PASOS.indexOf(n) > corte ? Infinity : beat(b, n, d));
   const tIslas = T('islas', 0.2), tSacos = T('sacos', 9), tFlecha = T('flecha', 14), tVales = T('vales', 17), tConsol = T('consolidacion', 24);
   const tPromesa = T('promesa', 25.4), tLujos = T('lujos', 32), tExped = T('expedientes', 40), tInflado = T('inflado', 43.6), tCaudal = T('caudal', 46.6);
   const tFunc = T('funcionarios', 49.3), tFrase = T('frase', 51.3), tTachar = T('tachar', 52), tMecan = T('mecanismo', 53.4);

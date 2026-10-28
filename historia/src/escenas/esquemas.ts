@@ -3,7 +3,8 @@
  * Este archivo no importa React, así que también lo usan los scripts (npm run validar).
  * Para agregar una escena nueva: crea su carpeta con esquema.ts (esquema, beats y ejemplo)
  * + Escena.tsx y regístrala aquí y en ./index.ts. En `beats`, una descripción que empieza
- * con «(condición)» es un beat que solo hace falta en esa variante.
+ * con «(condición)» es un beat que solo hace falta en esa variante. Si la escena acepta `hasta` (el
+ * último paso que se muestra), los beats que vienen después en `beats` tampoco hacen falta.
  */
 import * as DiasYManuscrito from './DiasYManuscrito/esquema';
 import * as Presentacion from './Presentacion/esquema';

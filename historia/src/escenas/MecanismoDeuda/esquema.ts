@@ -1,6 +1,10 @@
 import { z } from 'zod';
 import type { Ejemplo } from '../ejemplo';
 
+/** Los pasos de la escena, en orden (son también sus beats). */
+export const PASOS = ['islas', 'sacos', 'flecha', 'vales', 'consolidacion', 'promesa', 'lujos', 'expedientes', 'inflado', 'caudal', 'funcionarios',
+  'frase', 'tachar', 'mecanismo', 'tesis', 'libro', 'titulo'] as const;
+
 /**
  * Cómo funciona un fraude con la deuda, paso a paso: el guano entra (islas, sacos, barco), la
  * plata llega al Estado, los vales viejos se consolidan, lo que se prometía y lo que se decía
@@ -22,6 +26,11 @@ export const esquema = z.object({
   frase: z.tuple([z.string(), z.string()]),
   tesis: z.object({ etiqueta: z.string(), anio: z.string() }),
   libro: z.object({ titulo: z.string(), anio: z.string(), autor: z.string().optional() }),
+  /**
+   * El último paso que se muestra: lo que sigue no ocurre (sirve para usar solo el comienzo, p. ej.
+   * como puente al episodio que cuenta el resto). Los beats posteriores no hacen falta.
+   */
+  hasta: z.enum(PASOS).optional(),
 });
 
 export const beats = {

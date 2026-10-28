@@ -80,8 +80,12 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
     for (const c of e.camara ?? []) if (!(c.beat in e.beats)) errores.push(`${e.id}: el movimiento de cámara «${c.movimiento}» usa el beat "${c.beat}", que no está en beats`);
     if (entrada) {
       const que = (b: string) => String(entrada.beats[b as keyof typeof entrada.beats]);
-      // «(condición) …» = beat que solo hace falta en una variante de la escena
-      for (const b of usados) if (!(b in e.beats) && !que(b).startsWith('(')) avisos.push(`${e.id}: falta el beat "${b}" (${que(b)}); se usa el valor por defecto`);
+      // «(condición) …» = beat que solo hace falta en una variante de la escena; con `hasta` (el
+      // último paso que se muestra), los beats que vienen después tampoco hacen falta
+      const orden = Object.keys(entrada.beats);
+      const hasta = (e.props as { hasta?: unknown } | undefined)?.hasta;
+      const despues = (b: string) => typeof hasta === 'string' && orden.includes(hasta) && orden.indexOf(b) > orden.indexOf(hasta);
+      for (const b of usados) if (!(b in e.beats) && !que(b).startsWith('(') && !despues(b)) avisos.push(`${e.id}: falta el beat "${b}" (${que(b)}); se usa el valor por defecto`);
       for (const b of Object.keys(e.beats)) if (!usados.has(b) && !deAudio.includes(b)) avisos.push(`${e.id}: ${e.componente} no usa el beat "${b}"`);
     }
     // los beats están en el tiempo de duracion_s (se escalan con la voz), salvo que estén ajustados

@@ -975,7 +975,39 @@ def musica_000_quiroz():
         guardar(lambda fn=fn, beats=beats, dur=dur: fn(beats, dur), m / f"{nombre}.mp3")
 
 
-MUSICA = {"000-quiroz": musica_000_quiroz}
+def m001_s05(b, dur):
+    """Puente al 0·2: el comienzo del mecanismo (mar abierto, la plata que entra) y la pregunta en el aire."""
+    p = Partitura(dur, J)
+    r = np.random.default_rng(1850)
+    fl, con = b["flecha"], b["consolidacion"]
+    acordes(p, 0, fl, ["Dm", "Bb"], 6.0, 0.1, corte=1600, octava=12)
+    t = 0.8
+    while t < fl:
+        p.poner(punteo(r.choice(RE_MENOR) + 12, 2.5, 1.3), t, 0.1, r.uniform(-0.7, 0.7))
+        t += r.uniform(0.9, 1.6)
+    # la plata que entra: el mismo pulso grave del mecanismo, hasta el sello
+    t = fl
+    while t < con + 0.6:
+        p.poner(punteo(38 if int((t - fl) * 2) % 2 == 0 else 45, 0.8, 0.5), t, 0.18)
+        t += 0.6
+    acordes(p, fl, con + 1.2, ["Dm", "Gm"], 4.0, 0.1)
+    # la pregunta queda sola: un acorde suspendido que no resuelve (la respuesta es el próximo episodio)
+    p.poner(colchon([50, 55, 57], dur - con - 1.2, ataque=0.6, cierre=1.5), con + 1.2, 0.11)
+    return p.mezcla()
+
+
+def musica_001_el_hombre():
+    """Música del 0·1: las escenas que vienen de 000 conservan su pista (compuesta sobre los mismos beats)."""
+    m = PUBLIC / "videos" / "001-el-hombre" / "musica"
+    tiempos = tiempos_video("001-el-hombre")
+    pistas = [("s01", "s01-entrada", m000_s01), ("s02", "s02-nadador", m000_s02), ("s03", "s03-generacion", m000_s03),
+              ("s04", "s04-medir", m000_s05), ("s05", "s05-puente", m001_s05), ("s06", "s06-tema", m000_s11)]
+    for escena, nombre, fn in pistas:
+        beats, dur = tiempos[escena]
+        guardar(lambda fn=fn, beats=beats, dur=dur: fn(beats, dur), m / f"{nombre}.mp3")
+
+
+MUSICA = {"000-quiroz": musica_000_quiroz, "001-el-hombre": musica_001_el_hombre}
 
 
 def main(que: str = "todo"):

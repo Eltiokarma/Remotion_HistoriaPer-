@@ -1,13 +1,18 @@
 import { interpolate } from 'remotion';
 import { peso, type Peso } from './easings';
 
-/** De 0 a 1 entre dos segundos de la escena, siempre con clamp. `t` = segundos de la escena. */
+/**
+ * De 0 a 1 entre dos segundos de la escena, siempre con clamp. `t` = segundos de la escena. Un tramo
+ * que empieza en `Infinity` (un paso que en esta escena no ocurre) se queda en 0.
+ */
 export const tramo = (t: number, desde: number, dur: number, p: Peso = 'natural'): number =>
-  interpolate(t, [desde, desde + Math.max(dur, 1e-3)], [0, 1], {
-    easing: peso[p],
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
+  !Number.isFinite(desde) || !Number.isFinite(dur)
+    ? (desde === -Infinity ? 1 : 0)
+    : interpolate(t, [desde, desde + Math.max(dur, 1e-3)], [0, 1], {
+      easing: peso[p],
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    });
 
 /** Mezcla lineal entre dos valores. */
 export const mix = (a: number, b: number, k: number): number => a + (b - a) * k;

@@ -18,7 +18,7 @@ const FADE = 6; // frames: nada se corta en seco
 
 /** Un efecto de sonido que suena en un segundo exacto de la escena. */
 export const Sfx: React.FC<Props> = ({ nombre, en, fps, volumen = 0.7, dura, bucle = false }) => {
-  if (en < 0) return null;
+  if (en < 0 || !Number.isFinite(en)) return null; // antes de la escena o en un paso que no ocurre
   const frames = dura === undefined ? undefined : Math.max(FADE * 2, Math.round(dura * fps));
   return (
     <Sequence from={Math.round(en * fps)} durationInFrames={frames} layout="none" name={`sfx ${nombre}`}>
