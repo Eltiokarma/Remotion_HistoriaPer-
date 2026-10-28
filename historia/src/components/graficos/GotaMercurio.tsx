@@ -1,4 +1,4 @@
-import { clamp, mix } from '../../direction/anim';
+import { clamp, impacto, mix } from '../../direction/anim';
 
 type Props = {
   id: string;
@@ -8,8 +8,13 @@ type Props = {
   forma?: number;
   /** Segundos: hace latir la gota y corre el brillo (para una gota que "respira"). */
   latido?: number;
-  /** 0–1: aparición (cae desde arriba y rebota apenas). */
+  /** 0–1: aparición (cae desde arriba). */
   caida?: number;
+  /**
+   * Segundos desde que toca la mesa (negativo mientras cae). Con esto la gota se estira al caer y,
+   * al tocar, se aplasta y tiembla como metal líquido antes de quedarse redonda.
+   */
+  tras?: number;
 };
 
 const PLATA = ['#f4f6f7', '#c9cfd3', '#8d969c', '#4f575d', '#2a2f33'];
@@ -18,14 +23,19 @@ const PLATA = ['#f4f6f7', '#c9cfd3', '#8d969c', '#4f575d', '#2a2f33'];
  * Mercurio y plata: una gota esférica (el mercurio no moja, se queda redondo) con reflejos de
  * ventana y borde, que puede aplastarse y convertirse en una barra de plata con biseles.
  */
-export const GotaMercurio: React.FC<Props> = ({ id, size = 220, forma = 0, latido, caida = 1 }) => {
+export const GotaMercurio: React.FC<Props> = ({ id, size = 220, forma = 0, latido, caida = 1, tras }) => {
   const f = clamp(forma);
   const aplasta = clamp(f / 0.45); // la gota se aplasta…
   const barra = clamp((f - 0.35) / 0.65); // …y de ella sale la barra
   const pulso = latido === undefined ? 0 : Math.sin((latido * 2 * Math.PI) / 1.8);
   const cae = clamp(caida);
-  const y0 = mix(-160, 0, cae ** 2) + (cae < 1 ? 0 : 0);
-  const sx = mix(1, 1.9, aplasta) * (1 + 0.025 * pulso), sy = mix(1, 0.22, aplasta) * (1 - 0.02 * pulso);
+  const y0 = mix(-160, 0, cae ** 2);
+  // comprimir y estirar a la medida del material: el mercurio es líquido, se nota más que en papel,
+  // pero dura menos de medio segundo; el área se conserva (sx · sy = 1)
+  let liq = 1;
+  if (tras !== undefined && tras < 0 && cae > 0) liq = 1 + 0.08 * cae; // cae: se alarga
+  else if (tras !== undefined) liq = impacto(tras, 0, 0.12, 5).sy; // toca: se aplasta y tiembla
+  const sx = mix(1, 1.9, aplasta) * (1 + 0.025 * pulso) / liq, sy = mix(1, 0.22, aplasta) * (1 - 0.02 * pulso) * liq;
   const brillo = latido === undefined ? 0 : (latido / 3.2) % 1;
   return (
     <svg viewBox="-130 -120 260 200" width={size} style={{ overflow: 'visible' }}>

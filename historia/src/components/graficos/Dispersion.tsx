@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { clamp } from '../../direction/anim';
+import { clamp, tramo } from '../../direction/anim';
 import { azar } from '../../direction/azar';
 import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
@@ -82,7 +82,7 @@ export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscur
       ))}
       {/* la nube de puntos, uno a uno */}
       {puntos.map((p, i) => {
-        const k = clamp((t - (i / N) * 3) / 0.25);
+        const k = tramo(t, (i / N) * 3, 0.25, 'ligero'); // un golpe de pluma: rápido y frena
         if (k <= 0) return null;
         return <circle key={i} cx={X(p.u)} cy={Y(p.v)} r={7 * (1 + 0.6 * (1 - k))} fill={tinta} opacity={0.85 * k} />;
       })}

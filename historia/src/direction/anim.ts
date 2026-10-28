@@ -36,3 +36,47 @@ export const anticipa = (t: number, desde: number, dur: number, p: Peso = 'natur
  */
 export const asienta = (t: number, desde: number, amplitud = 1, frecuencia = 7, amortiguacion = 2.2): number =>
   t < desde ? 0 : amplitud * Math.exp(-(t - desde) * amortiguacion) * Math.sin((t - desde) * frecuencia);
+
+/** Escala en x e y. Se aplica con `transform: scale(sx, sy)` y un `transformOrigin` en el punto de contacto. */
+export type Escala = { sx: number; sy: number };
+
+/**
+ * Comprimir y estirar al tocar (Disney, con mesura): en el contacto el objeto se aplasta un poco y
+ * se ensancha lo mismo (el área no cambia), rebota apenas estirado y vuelve en un cuarto de segundo.
+ * Tiene que ser indetectable: se nota que falta, no que está. `fuerza` es la fracción de aplastamiento
+ * según el material: 0,025 una pila de papel, 0,035 lámina y madera, 0,05 cartón y libros, 0,12 un
+ * líquido (con `amortiguacion` baja, tiembla más). Piedra y metal macizo: nada. Solo objetos físicos:
+ * nunca texto que se lee ni datos.
+ */
+export const impacto = (t: number, desde: number, fuerza = 0.05, amortiguacion = 9): Escala => {
+  const d = t - desde;
+  if (d < 0 || d > 1.2) return { sx: 1, sy: 1 };
+  // llega al aplastamiento máximo en dos cuadros y vuelve con un rebote apenas estirado
+  const s = d < 0.06 ? fuerza * (d / 0.06) : fuerza * Math.exp(-(d - 0.06) * amortiguacion) * Math.cos((d - 0.06) * 20);
+  const sy = 1 - s;
+  return { sx: 1 / sy, sy };
+};
+
+/**
+ * Estirar con la velocidad: lo que cae rápido se alarga apenas en la dirección del movimiento
+ * (y se afina lo mismo). `velocidad` en px/s; a 2000 px/s se estira el máximo.
+ */
+export const estiraCon = (velocidad: number, maximo = 0.06): Escala => {
+  const s = clamp(Math.abs(velocidad) / 2000) * maximo;
+  return { sx: 1 / (1 + s), sy: 1 + s };
+};
+
+/** Componer dos escalas. */
+export const por = (a: Escala, b: Escala): Escala => ({ sx: a.sx * b.sx, sy: a.sy * b.sy });
+
+/** `scale(…)` listo para un estilo o un atributo transform de SVG. */
+export const escala = (e: Escala, base = 1): string => `scale(${(base * e.sx).toFixed(4)}, ${(base * e.sy).toFixed(4)})`;
+
+/**
+ * Arcos: lo que viaja de un lugar a otro no va en línea recta. Desvío perpendicular (en px) para
+ * el avance `k` (0–1): cero en los extremos, `alto` en el medio.
+ */
+export const arqueo = (k: number, alto: number): number => alto * 4 * clamp(k) * (1 - clamp(k));
+
+/** Velocidad de una función del tiempo (unidades por segundo), por diferencia centrada. */
+export const velocidad = (f: (t: number) => number, t: number, fps: number): number => (f(t + 1 / fps) - f(t - 1 / fps)) * (fps / 2);

@@ -4,7 +4,7 @@ import { Luz } from '../../components/atmosfera/Luz';
 import { Sfx } from '../../components/audio/Sfx';
 import { CartelObra } from '../../components/graficos/CartelObra';
 import { CirculosRed } from '../../components/graficos/CirculosRed';
-import { beat, tramo } from '../../direction/anim';
+import { asienta, beat, escala, estiraCon, impacto, tramo, velocidad } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
@@ -23,6 +23,14 @@ export const CirculosCorruptos: React.FC<EscenaProps<P>> = ({ escena, props, vid
   const noche = mezclar(pal.fondo, '#000000', 0.3);
   const cartel = t >= tCartel - 0.4;
   const letras = props.frase.replace(/\s/g, '').length;
+  // el cartel cae con peso (acelera hasta el piso, no flota) y al clavarse se aplasta apenas desde los
+  // postes y se cimbra (lámina y fierro: poco); el piso acusa el golpe
+  const CAIDA = 0.85;
+  const planta = (tt: number) => tramo(tt, tCartel, CAIDA, 'tenso');
+  const tClava = tCartel + CAIDA;
+  const deformaCartel = t < tClava ? estiraCon(velocidad((tt) => 900 * planta(tt), t, fps), 0.025) : impacto(t, tClava, 0.035);
+  const cimbra = asienta(t, tClava, 0.9, 13, 4.5);
+  const golpePiso = asienta(t, tClava, 3, 40, 14);
 
   return (
     <AbsoluteFill style={{ backgroundColor: noche }}>
@@ -45,9 +53,11 @@ export const CirculosCorruptos: React.FC<EscenaProps<P>> = ({ escena, props, vid
           <Luz color={pal.ocre} x={50} y={30} radio={70} intensidad={0.18} />
           {/* piso de tierra */}
           <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 170, background: `linear-gradient(180deg, ${mezclar(pal.fondo, pal.ocre, 0.18)}, ${mezclar(pal.fondo, '#000000', 0.4)})` }} />
-          <div style={{ transform: 'scale(0.92)', marginTop: 60 }}>
+          <div style={{ transform: `scale(0.92) translateY(${golpePiso}px)`, marginTop: 60 }}>
+            <div style={{ transformOrigin: '50% 100%', transform: `${escala(deformaCartel)} rotate(${cimbra}deg)` }}>
             <CartelObra paleta={pal} frase={props.frase} tachar={props.tachar} queda={props.queda} color={props.color_cartel}
-              planta={tramo(t, tCartel, 0.9, 'pesado')} letras={tramo(t, tFrase, 1.4, 'natural')} tachado={tramo(t, tTachar, 0.7, 'natural')} soloQueda={tramo(t, tRoba, 1.2, 'natural')} />
+              planta={planta(t)} letras={tramo(t, tFrase, 1.4, 'natural')} tachado={tramo(t, tTachar, 0.7, 'natural')} soloQueda={tramo(t, tRoba, 1.2, 'natural')} />
+            </div>
           </div>
         </AbsoluteFill>
       ) : null}
@@ -55,7 +65,7 @@ export const CirculosCorruptos: React.FC<EscenaProps<P>> = ({ escena, props, vid
       <Sfx nombre="soplo" en={tCirculos} fps={fps} volumen={0.25} />
       <Sfx nombre="campana" en={tTitulo} fps={fps} volumen={0.25} />
       <Sfx nombre="soplo" en={tRed} fps={fps} volumen={0.3} />
-      <Sfx nombre="cartel" en={tCartel + 0.85} fps={fps} volumen={0.75} />
+      <Sfx nombre="cartel" en={tClava} fps={fps} volumen={0.75} />
       {Array.from({ length: Math.min(12, letras) }, (_, i) => <Sfx key={i} nombre="tic" en={tFrase + (i * 1.4) / 12} fps={fps} volumen={0.35} />)}
       <Sfx nombre="lapiz" en={tTachar} fps={fps} volumen={0.28} />
     </AbsoluteFill>

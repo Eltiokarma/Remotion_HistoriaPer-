@@ -54,7 +54,11 @@ export const BarraUnidades: React.FC<Props> = ({ paleta, id, rotulo, rango, apar
         const rojo = solido || rayado;
         const c = caidas[n];
         const dt = rojo ? Math.max(0, cae - c.demora) : 0;
-        const dy = 0.5 * 2400 * dt * dt, dx = c.vx * dt, rot = c.giro * dt;
+        // antes de soltarse, cada unidad se levanta apenas (anticipación: se despega); después cae en
+        // parábola. Son datos: se mueven, no se deforman
+        const antes = rojo ? cae - c.demora : -1;
+        const despega = antes > -0.14 && antes <= 0 ? -5 * Math.sin(((antes + 0.14) / 0.14) * Math.PI * 0.5) : 0;
+        const dy = 0.5 * 2400 * dt * dt + despega, dx = c.vx * dt, rot = c.giro * dt;
         return (
           <g key={i} opacity={visible * (dy > 900 ? 0 : 1)}>
             {rojo && dt > 0 ? <rect x={x} y={yy} width={CW} height={CH} rx={3} fill="none" stroke={alfa(paleta.rojo, 0.5)} strokeDasharray="3 3" /> : null}

@@ -5,7 +5,7 @@ import { Sfx } from '../../components/audio/Sfx';
 import { cubierto, Piscina } from '../../components/graficos/Piscina';
 import { Sello } from '../../components/graficos/Sello';
 import { Ornamento } from '../../components/texto/Ornamento';
-import { beat, clamp, mix, tramo } from '../../direction/anim';
+import { asienta, beat, clamp, mix, tramo } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
@@ -52,12 +52,14 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', paddingBottom: 40, opacity: 1 - queda }}>
         <div style={{ fontFamily: fuente.titulo, fontWeight: 700, fontSize: 118, letterSpacing: '0.02em', display: 'flex' }}>
           {props.nombre.split('').map((ch, i) => {
-            // cada letra se asienta con 2 frames de desfase: nada se detiene a la vez
+            // cada letra se asienta con 2 frames de desfase: nada se detiene a la vez; al llegar se pasa
+            // apenas hacia arriba y vuelve (follow through; sin deformarse: es texto)
             const k = tramo(t, tNombre + (i * 2) / fps, 0.9, 'solemne');
+            const pasa = asienta(t, tNombre + (i * 2) / fps + 0.82, -2.5, 15, 8);
             const x = 960 + (i / Math.max(1, props.nombre.length - 1) - 0.5) * ANCHO_NOMBRE;
             const agua = piscina ? 1 - cubierto(x, renglon) : 0;
             return (
-              <span key={i} style={{ display: 'inline-block', whiteSpace: 'pre', opacity: k, transform: `translateY(${(1 - k) * 46}px)`, color: tintaEn(x),
+              <span key={i} style={{ display: 'inline-block', whiteSpace: 'pre', opacity: k, transform: `translateY(${(1 - k) * 46 + pasa}px)`, color: tintaEn(x),
                 textShadow: agua > 0 ? `0 0 28px ${alfa(pal.fondo, 0.9 * agua)}, 0 2px 4px ${alfa(pal.fondo, 0.6 * agua)}` : 'none' }}>{ch}</span>
             );
           })}

@@ -8,7 +8,7 @@ import { Engranaje } from '../../components/graficos/Engranaje';
 import { FiltroDesgaste } from '../../components/graficos/svg';
 import { Renglones } from '../../components/texto/Renglones';
 import { TrazoRojo } from '../../components/texto/TrazoRojo';
-import { beat, clamp, mix, tramo } from '../../direction/anim';
+import { beat, clamp, escala, estiraCon, mix, tramo } from '../../direction/anim';
 import { azar } from '../../direction/azar';
 import type { EscenaProps, Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
@@ -115,6 +115,8 @@ export const Objeciones: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
   // —— el tablero
   const focos = tFoco.map((tf, i) => tramo(t, tf, 0.8, 'pesado') * (1 - tramo(t, (tFoco[i + 1] ?? tEngranaje + 10) - 0.15, 0.8, 'pesado')));
   const vueltas = tResp.map((tr, i) => (i < 3 ? (t < tr ? 0 : spring({ frame: frame - tr * fps, fps, config: { damping: 16, mass: 1, stiffness: 120 } })) : 0));
+  // la tarjeta se echa un poco atrás antes de darse vuelta (anticipación); el resorte la pasa y la trae (follow through)
+  const giroTarjeta = (i: number) => (i >= 3 ? 0 : t < tResp[i] ? -9 * tramo(t, tResp[i] - 0.3, 0.3, 'natural') : mix(-9, 180, vueltas[i]));
   const orden = [0, 1, 2, 3].sort((a, c) => focos[a] - focos[c]); // la enfocada se dibuja encima
   const separa = tramo(t, tExcusa, 0.8, 'natural');
 
@@ -129,7 +131,10 @@ export const Objeciones: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
   const ang = angulo(t);
   const G1 = { x: 800, y: 560, r: 330, n: 36 }, G2 = { x: 800 + 330 + 196 - 20, y: 560, r: 196, n: 21 };
   const contacto = { x: G1.x + G1.r - 8, y: G1.y - 40 };
-  const gotaY = mix(150, contacto.y - 10, clamp((t - tAceite) / 0.55) ** 2);
+  const caeGota = (tt: number) => mix(150, contacto.y - 10, clamp((tt - tAceite) / 0.55) ** 2);
+  const gotaY = caeGota(t);
+  // el aceite es líquido: se alarga al caer (comprimir y estirar a la medida del material)
+  const estiroGota = estiraCon((caeGota(t + 1 / fps) - caeGota(t - 1 / fps)) * (fps / 2), 0.22);
   const grava = useMemo(() => {
     const r = azar(1729);
     return Array.from({ length: 46 }, (_, i) => ({ t0: r.rango(0, 1.0), dx: r.rango(-70, 70), lado: r.rango(4, 11), rot: r.rango(0, 360), cae: r.n() < 0.35, i }));
@@ -149,13 +154,15 @@ export const Objeciones: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
             const f = focos[i];
             const otro = Math.max(...focos.filter((_, j) => j !== i));
             const x = mix(fila.x, 960, f) + (1 - f) * otro * (fila.x > 960 ? 120 : -120);
+            // suben a su lugar abriéndose en abanico (en arco, no en línea recta)
             const y = mix(fila.y, 540, f) + (1 - k) * 700;
+            const xArco = (1 - k) ** 2 * (i - 1.5) * 90;
             const escala = mix(1, 1.95, f);
             const tachado = i === 3 ? tramo(t, tResp[3], 0.8, 'natural') : 0;
             return (
-              <div key={i} style={{ position: 'absolute', left: x - W / 2, top: y - H / 2, width: W, height: H, perspective: 1800,
+              <div key={i} style={{ position: 'absolute', left: x - W / 2 + xArco, top: y - H / 2, width: W, height: H, perspective: 1800,
                 transform: `scale(${escala}) rotate(${(1 - k) * (i - 1.5) * 8}deg)`, opacity: mix(1, 0.35, otro * (1 - f)) }}>
-                <div style={{ position: 'absolute', inset: 0, transformStyle: 'preserve-3d', transform: `rotateY(${vueltas[i] * 180}deg)` }}>
+                <div style={{ position: 'absolute', inset: 0, transformStyle: 'preserve-3d', transform: `rotateY(${giroTarjeta(i)}deg)` }}>
                   {/* frente */}
                   <div style={{ position: 'absolute', inset: 0, backfaceVisibility: 'hidden', boxShadow: `8px 14px 24px ${alfa('#000000', 0.5)}`, borderRadius: 6, overflow: 'hidden',
                     outline: i === 3 ? `3px solid ${alfa(pal.rojo, 0.7 * separa)}` : undefined, outlineOffset: -10 }}>
@@ -197,7 +204,11 @@ export const Objeciones: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
               <g opacity={tramo(t, tAceite - 1.2, 0.8, 'natural')}>
                 <path d={`M${contacto.x - 150} 40 L${contacto.x - 40} 40 L${contacto.x - 30} 110 L${contacto.x - 160} 110 Z`} fill={mezclar(pal.fondo, pal.ocre, 0.45)} stroke={mezclar(pal.fondo, '#000000', 0.5)} strokeWidth={2} />
                 <path d={`M${contacto.x - 40} 80 L${contacto.x + 4} 136 L${contacto.x - 2} 140 L${contacto.x - 48} 92 Z`} fill={mezclar(pal.fondo, pal.ocre, 0.35)} />
-                {t >= tAceite && t < tAceite + 0.6 ? <path d={`M${contacto.x} ${gotaY - 18} C ${contacto.x + 8} ${gotaY - 4}, ${contacto.x + 9} ${gotaY + 8}, ${contacto.x} ${gotaY + 9} C ${contacto.x - 9} ${gotaY + 8}, ${contacto.x - 8} ${gotaY - 4}, ${contacto.x} ${gotaY - 18} Z`} fill={mezclar(pal.ocre, '#ffd88a', 0.4)} /> : null}
+                {t >= tAceite && t < tAceite + 0.6 ? (
+                  <g transform={`translate(${contacto.x} ${gotaY}) ${escala(estiroGota)}`}>
+                    <path d="M0 -18 C 8 -4, 9 8, 0 9 C -9 8, -8 -4, 0 -18 Z" fill={mezclar(pal.ocre, '#ffd88a', 0.4)} />
+                  </g>
+                ) : null}
                 {t >= tAceite + 0.55 ? <ellipse cx={contacto.x} cy={contacto.y} rx={mix(6, 26, clamp((t - tAceite - 0.55) / 0.4))} ry={6} fill={mezclar(pal.ocre, '#ffd88a', 0.4)} opacity={0.7} /> : null}
               </g>
             ) : null}
@@ -207,7 +218,10 @@ export const Objeciones: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
               if (t < t0) return null;
               const dt = t - t0;
               const tope = g.cae ? 1200 : contacto.y - 6 - (g.i % 5) * 7;
-              const y = Math.min(tope, -20 + 0.5 * 2600 * dt * dt);
+              // piedra: rígida, no se deforma; al chocar con los dientes rebota un poco antes de quedarse
+              const tChoque = Math.sqrt((2 * (tope + 20)) / 2600);
+              const rebota = dt > tChoque && !g.cae ? 16 * Math.exp(-(dt - tChoque) * 8) * Math.abs(Math.sin((dt - tChoque) * 16)) : 0;
+              const y = Math.min(tope, -20 + 0.5 * 2600 * dt * dt) - rebota;
               const x = contacto.x + g.dx * (y > contacto.y - 80 && !g.cae ? 0.35 : 1);
               return <path key={g.i} d={`M${-g.lado} 0 L${-g.lado * 0.3} ${-g.lado * 0.8} L${g.lado * 0.7} ${-g.lado * 0.5} L${g.lado} ${g.lado * 0.3} L${0} ${g.lado * 0.8} Z`}
                 transform={`translate(${x} ${y}) rotate(${g.rot + dt * 200 * (y < tope ? 1 : 0)})`} fill={mezclar(pal.papel, pal.fondo, 0.45 + (g.i % 3) * 0.12)} stroke={mezclar(pal.fondo, '#000000', 0.3)} strokeWidth={1} />;

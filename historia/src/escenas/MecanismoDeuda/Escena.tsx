@@ -14,7 +14,7 @@ import { Ficha } from '../../components/texto/Ficha';
 import { MaquinaDeEscribir } from '../../components/texto/MaquinaDeEscribir';
 import { Odometro } from '../../components/texto/Odometro';
 import { TrazoRojo } from '../../components/texto/TrazoRojo';
-import { beat, clamp, mix, tramo } from '../../direction/anim';
+import { anticipa, arqueo, asienta, beat, clamp, mix, tramo } from '../../direction/anim';
 import { peso } from '../../direction/easings';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
@@ -137,8 +137,10 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             const ti = tVales + i * 0.75;
             const k = t < ti ? 0 : spring({ frame: frame - ti * fps, fps, config: { damping: 18, mass: 0.8, stiffness: 120 } });
             if (k <= 0) return null;
+            // cada vale llega por el aire (arco) y gira un poco de más antes de quedarse (follow through)
+            const giro = ((i * 53) % 9) - 4 + asienta(t, ti + 0.45, i % 2 ? 1.6 : -1.6, 11, 5);
             return (
-              <div key={i} style={{ position: 'absolute', left: 180 + ((i * 37) % 50), top: 300 - i * 9, transform: `translateX(${(1 - k) * -900}px) rotate(${((i * 53) % 9) - 4}deg)`,
+              <div key={i} style={{ position: 'absolute', left: 180 + ((i * 37) % 50), top: 300 - i * 9, transform: `translate(${(1 - k) * -900}px, ${-arqueo(k, 70)}px) rotate(${giro}deg)`,
                 filter: `drop-shadow(4px 6px 6px ${alfa('#000000', 0.35)})` }}>
                 <Vale paleta={pal} id={`${escena.id}-v${i}`} width={720} edad={1 - i / PILA} semilla={i + 2} />
               </div>
@@ -230,7 +232,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
           <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
             {/* la tesis: papel a máquina, que gira y se va */}
             {t < tLibro + 0.8 ? (
-              <div style={{ position: 'absolute', transform: `perspective(1600px) rotateY(${interpolate(t, [tLibro, tLibro + 0.8], [0, 90], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: peso.pesado })}deg)` }}>
+              <div style={{ position: 'absolute', transform: `perspective(1600px) rotateY(${90 * anticipa(t, tLibro, 0.8, 'pesado', 0.07, 0.3)}deg)` }}>
                 <div style={{ width: 520, height: 740, position: 'relative', boxShadow: `14px 20px 36px ${alfa('#000000', 0.5)}` }}>
                   <Papel color={pal.papel} envejecido={0.2}>
                     <AbsoluteFill style={{ alignItems: 'center', paddingTop: 240, gap: 30 }}>
@@ -244,7 +246,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             ) : null}
             {/* el libro: la tapa entra girando desde el otro lado */}
             {t >= tLibro + 0.8 ? (
-              <div style={{ transform: `perspective(1600px) rotateY(${interpolate(t, [tLibro + 0.8, tLibro + 1.6], [-90, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: peso.pesado })}deg)` }}>
+              <div style={{ transform: `perspective(1600px) rotateY(${interpolate(t, [tLibro + 0.8, tLibro + 1.6], [-90, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: peso.pesado }) + asienta(t, tLibro + 1.6, 4, 11, 5)}deg)` }}>
                 <PortadaLibro paleta={pal} titulo={props.libro.titulo} autor={props.libro.autor} anio={props.libro.anio} estampado={tramo(t, tTitulo - 1.2, 2.2, 'natural')} width={500} />
               </div>
             ) : null}

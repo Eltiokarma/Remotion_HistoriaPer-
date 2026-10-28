@@ -151,7 +151,10 @@ pueden combinar.
   escritura asémica, renglones tipeados.
 - **Dirección** (`direction/`): `tramo()` (0→1 entre dos segundos, con el peso que digas),
   `peso` (solemne, pesado, natural, ligero, tenso), `azar()` (aleatorio con semilla: el mismo
-  dibujo en cada render).
+  dibujo en cada render). Los principios de animación (CLAUDE.md §4), en `anim.ts`:
+  `anticipa()` (un poco hacia atrás antes de arrancar), `asienta()` (lo que llega se pasa y
+  vuelve), `impacto()` y `estiraCon()` (comprimir y estirar según el material, sin que se note),
+  `arqueo()` (lo que viaja va en curva) y `velocidad()`.
 
 ### Una escena nueva
 

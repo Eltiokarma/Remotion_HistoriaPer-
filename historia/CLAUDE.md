@@ -151,13 +151,13 @@ se usan con mesura a propósito.
 
 | # | Principio | Cómo se hace aquí | Herramienta |
 |---|---|---|---|
-| 1 | Comprimir y estirar | Solo en lo físico que cae, aterriza o se transforma: un sello que golpea, una gota, un saco. Nunca en texto ni en datos | escala x/y en el impacto |
+| 1 | Comprimir y estirar | Solo en lo físico que cae, aterriza o se transforma; nunca en texto que se lee ni en datos (ver abajo) | `impacto()`, `estiraCon()` |
 | 2 | Anticipación | Lo que arranca con decisión primero va un poco hacia atrás: una cámara que se lanza, una ruta que sale, algo que salta | `anticipa()` |
 | 3 | Puesta en escena | Una idea por cuadro; luz y viñeta donde tiene que ir el ojo (§5) | `Luz`, viñetas |
 | 4 | Directo y pose a pose | Pose a pose: los beats anclados a la voz. Directo: lo procedural (agua, partículas, papel que tiembla) | `beats`, `azar()` |
 | 5 | Acción continuada y superpuesta | Nada se detiene de golpe ni todo a la vez: lo que llega se pasa y vuelve; las piezas se asientan en cascada con 2–6 frames de desfase | `asienta()`, `spring()` |
 | 6 | Acelerar y desacelerar | Todo movimiento declara su peso; ninguno es lineal | `tramo(…, peso)` |
-| 7 | Arcos | Lo que viaja describe una curva: rutas, flechas, objetos que caen. Una línea recta solo si el guion la pide (una regresión, un borde) | `arco()`, curvas Q |
+| 7 | Arcos | Lo que viaja describe una curva: rutas, flechas, objetos que caen o entran. Una línea recta solo si el guion la pide (una regresión, un borde) | `arco()`, `arqueo()` |
 | 8 | Acción secundaria | Algo pequeño que acompaña y no compite: el paralelo que se enciende, el contador que suma, el tic al pasar, el polvo del sello | `Sfx`, detalles |
 | 9 | Tiempo | La duración la manda la voz; lo importante se mueve más lento y con más masa | beats, pesos |
 | 10 | Exageración | Reservada para el dato fuerte de cada video (el engranaje que se traba, la banda vacía). Si todo se exagera, nada pesa | — |
@@ -165,6 +165,23 @@ se usan con mesura a propósito.
 | 12 | Atractivo | La gramática de la serie (§1.3): papel, tinta, rojo de corrector, grabado | — |
 
 Las variaciones de peso cuentan: si casi todo es `natural`, el video vuelve a sonar a plantilla.
+`natural` queda bien para aparecer y desvanecerse; lo que se mueve declara su peso de verdad: lo que
+cae acelera (`tenso`) y golpea, lo que se levanta frena (`pesado`), lo importante va `solemne`, un
+trazo rápido va `ligero`.
+
+**Comprimir y estirar, sin que se note.** Tiene que ser indetectable: se nota cuando falta (lo que
+cae se clava en seco, flota o se hunde en la mesa), no cuando está.
+
+- **Según desde dónde se ve.** De costado (un libro que baja a la repisa, un cartel que se clava,
+  una gota): al caer se estira apenas con la velocidad (`estiraCon`) y al tocar se aplasta desde el
+  punto de contacto (`transformOrigin` en la base). Desde arriba, cayendo hacia la cámara (un sello):
+  no se deforma; se pasa apenas de tamaño y vuelve.
+- **Según el material** (`impacto(t, contacto, fuerza)`; aplastamiento máximo en dos cuadros, un
+  rebote, vuelve en ~0,25 s): pila de papel 0,025 · lámina o madera 0,035 · cartón y libros 0,05 ·
+  líquido 0,12 con más temblor (el mercurio). Piedra y metal macizo: nada, rebotan.
+- **El área no cambia:** lo que se aplasta se ensancha lo mismo (`sx · sy = 1`).
+- **Nunca** en texto que se lee, en barras o puntos de datos ni en la cámara: esos se mueven (se
+  pasan y vuelven, anticipan, van en arco), no se deforman.
 
 **Easings por peso** (`src/direction/easings.ts`): `solemne`, `pesado`, `natural`, `ligero`,
 `tenso`. Nunca un easing global; cada animación declara su peso (con `tramo(t, desde, dura, peso)`).

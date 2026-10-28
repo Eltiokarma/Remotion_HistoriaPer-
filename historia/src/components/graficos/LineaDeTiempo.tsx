@@ -1,4 +1,4 @@
-import { clamp } from '../../direction/anim';
+import { clamp, impacto } from '../../direction/anim';
 import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
@@ -32,6 +32,8 @@ type Props = {
   guia?: number;
   /** Brillo extra de cada evento (0–1), en el orden de `eventos`. */
   realce?: number[];
+  /** Segundos desde que la cámara llegó a cada evento (negativo: todavía no); el libro se posa con un golpecito. */
+  tras?: number[];
   /** 0–1: cuánto se ve el nombre del tramo en el fondo (es una ayuda del viaje; al abrir, se apaga). */
   fondoVisible?: number;
   y?: number;
@@ -45,7 +47,7 @@ const PARALAJE = 0.35;
  * las marcas se iluminan al pasar; los eventos tienen tono (la sombra se apaga, la luz crece al
  * acercarse). La coreografía (cuándo se mueve y cuánto) la pone la escena.
  */
-export const LineaDeTiempo: React.FC<Props> = ({ paleta, id, tramos, fondo, eventos, centro, escala, recorrido, aparece, guia = 0, realce = [], fondoVisible = 1, y = 560 }) => {
+export const LineaDeTiempo: React.FC<Props> = ({ paleta, id, tramos, fondo, eventos, centro, escala, recorrido, aparece, guia = 0, realce = [], tras = [], fondoVisible = 1, y = 560 }) => {
   const X = (u: number) => 960 + (u - centro) * escala;
   const n = tramos.length;
   const tinta = paleta.papel;
@@ -139,11 +141,14 @@ export const LineaDeTiempo: React.FC<Props> = ({ paleta, id, tramos, fondo, even
           const cerca = clamp(1 - Math.abs(centro - e.en) / 1.6);
           const brillo = clamp(0.25 + 0.75 * cerca * cerca + 0.5 * extra);
           const libro = clamp((recorrido - e.en) / 0.06 + 1);
+          // el libro baja acelerando y se posa: se aplasta apenas desde su base (papel y cartón: poco)
+          const posa = impacto(tras[k] ?? -1, 0, 0.05);
+          const bajaLibro = -26 * (1 - libro) ** 2;
           return (
             <g key={k}>
               <circle cx={x} cy={y} r={60 + 120 * brillo} fill={`url(#${id}-halo)`} opacity={0.35 + 0.65 * brillo} />
               <circle cx={x} cy={y} r={11} fill={mezclar(tinta, paleta.ocre, 0.3)} stroke={tinta} strokeWidth={2} />
-              <g opacity={libro} transform={`translate(${x} ${y - 176}) scale(${0.85 + 0.15 * libro})`}>
+              <g opacity={libro} transform={`translate(${x} ${y - 176 + bajaLibro}) translate(0 32) scale(${posa.sx} ${posa.sy}) translate(0 -32)`}>
                 {/* un libro cerrado, de pie: tapa, lomo y páginas */}
                 <rect x={-24} y={-34} width={48} height={66} rx={3} fill={mezclar(tinta, paleta.ocre, 0.15)} stroke={alfa(paleta.fondo, 0.5)} strokeWidth={1.5} />
                 <rect x={-24} y={-34} width={8} height={66} fill={mezclar(paleta.ocre, paleta.fondo, 0.25)} />

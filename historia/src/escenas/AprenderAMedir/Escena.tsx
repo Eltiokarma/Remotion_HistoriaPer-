@@ -13,7 +13,7 @@ import { Estante } from '../../components/graficos/Estante';
 import { Mapa, arco, proyeccionDe } from '../../components/graficos/Mapa';
 import { Ficha } from '../../components/texto/Ficha';
 import { Odometro } from '../../components/texto/Odometro';
-import { anticipa, asienta, beat, clamp, mix, tramo } from '../../direction/anim';
+import { anticipa, asienta, beat, clamp, estiraCon, impacto, mix, tramo, velocidad } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
@@ -96,6 +96,17 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const giro = tramo(t, tGiro, 4.5, 'solemne');
   const anguloAguja = 180 * giro + asienta(t, tGiro + 4.5, 6, 6, 1.8);
 
+  // —— los libros bajan a la repisa: el resorte se pasaría de la repisa; ese sobrepaso se vuelve
+  // aplastamiento contra la madera (comprimir y estirar); al caer, se estiran apenas con la velocidad
+  const caidaLibro = (i: number, tt: number) =>
+    tt < tTemas + i * 0.55 ? 0 : spring({ frame: (tt - (tTemas + i * 0.55)) * fps, fps, config: { damping: 14, mass: 0.9, stiffness: 140 } });
+  const deformaLibro = (i: number) => {
+    const t0 = tTemas + i * 0.55;
+    let contacto = Infinity;
+    for (let tt = t0; tt < t0 + 2; tt += 1 / fps) if (caidaLibro(i, tt) >= 1) { contacto = tt; break; }
+    if (t < contacto) return estiraCon(velocidad((tt) => 520 * Math.min(1, caidaLibro(i, tt)), t, fps), 0.05);
+    return impacto(t, contacto, 0.06);
+  };
   const fase = t < tPuntos ? 1 : t < tBalanza ? 2 : t < tEstante ? 3 : t < tAulas ? 4 : t < tBrujula ? 5 : 6;
   const entra = (t0: number) => tramo(t, t0 - 0.2, 0.8, 'natural');
 
@@ -148,7 +159,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
         <AbsoluteFill style={{ opacity: entra(tEstante) }}>
           <Luz color={pal.ocre} x={50} y={50} radio={60} intensidad={0.2} />
           <Estante paleta={pal} id={`${escena.id}-est`} titulos={props.temas} aparece={entra(tEstante)}
-            entra={props.temas.map((_, i) => (t < tTemas + i * 0.55 ? 0 : spring({ frame: frame - (tTemas + i * 0.55) * fps, fps, config: { damping: 14, mass: 0.9, stiffness: 140 } })))} />
+            entra={props.temas.map((_, i) => caidaLibro(i, t))} escalas={props.temas.map((_, i) => deformaLibro(i))} />
         </AbsoluteFill>
       ) : null}
 

@@ -6,7 +6,7 @@ import { Sfx } from '../../components/audio/Sfx';
 import { Globo, proyectarGlobo } from '../../components/graficos/Globo';
 import { TelevisorCRT } from '../../components/graficos/TelevisorCRT';
 import { Ficha } from '../../components/texto/Ficha';
-import { beat, clamp, mix, tramo } from '../../direction/anim';
+import { asienta, beat, clamp, mix, tramo } from '../../direction/anim';
 import { azar, semillaDe } from '../../direction/azar';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
@@ -32,7 +32,8 @@ const TituloAMaquina: React.FC<{ texto: string; t: number; tinta: string; rojo: 
             const i = a + j;
             if (i >= n) return null;
             const signo = ch === '¿' || ch === '?';
-            const golpe = Math.min(1, (t * CPS - i) / 1.5);
+            // el tipo golpea y frena (no lineal); el texto no se deforma
+            const golpe = tramo(t * CPS, i, 1.5, 'ligero');
             return (
               <span key={i} style={{ display: 'inline-block', color: signo ? rojo : tinta, fontSize: signo ? 170 : undefined, lineHeight: signo ? 0.8 : undefined,
                 opacity: (signo ? 1 : tipos[i].tinta) * (0.55 + 0.45 * golpe), transform: `translateY(${tipos[i].dy + (signo ? 18 : 0)}px) rotate(${tipos[i].rot}deg) scale(${1.15 - 0.15 * golpe})` }}>{ch}</span>
@@ -57,13 +58,16 @@ export const LaPregunta: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
   const fase = t < tTv ? 1 : t < tGlobo ? 2 : t < tPregunta - 0.2 ? 3 : 4;
   const lon = mix(props.giro[0], props.giro[1], tramo(t, tGlobo, tPregunta - tGlobo, 'natural'));
   const GL = { cx: 960, cy: 600, r: 400 };
+  // cada signo de interrogación es un golpe fuerte de la máquina: el papel salta apenas (acción secundaria)
+  const golpesSigno = props.titulo.split('').map((ch, i) => (ch === '¿' || ch === '?' ? tTitulo + i / CPS : -1)).filter((x) => x >= 0);
+  const saltoPapel = golpesSigno.reduce((a, ts) => a + asienta(t, ts, 2.2, 38, 16), 0);
 
   return (
     <AbsoluteFill style={{ backgroundColor: noche }}>
       {fase === 1 ? (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <Luz color={pal.ocre} x={50} y={45} radio={60} intensidad={0.2} />
-          <div style={{ width: 1720, height: 820, position: 'relative', boxShadow: `14px 20px 40px ${alfa('#000000', 0.55)}` }}>
+          <div style={{ width: 1720, height: 820, position: 'relative', boxShadow: `14px 20px 40px ${alfa('#000000', 0.55)}`, transform: `translateY(${saltoPapel}px)` }}>
             <Papel color={pal.papel} envejecido={0.22}>
               <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
                 <TituloAMaquina texto={props.titulo} t={t - tTitulo} tinta={pal.fondo} rojo={pal.rojo} />
@@ -106,7 +110,7 @@ export const LaPregunta: React.FC<EscenaProps<P>> = ({ escena, props, video }) =
       {fase === 4 ? (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', gap: 10 }}>
           {props.cierre.map((w, i) => {
-            const k = tramo(t, i === 0 ? tPregunta : tPruebas, 0.7, 'natural');
+            const k = tramo(t, i === 0 ? tPregunta : tPruebas, 0.9, 'solemne');
             return (
               <div key={i} style={{ fontFamily: fuente.libro, fontStyle: 'italic', fontSize: 190, lineHeight: 1.05, color: i === 0 ? alfa(pal.papel, mix(1, 0.55, clamp((t - tPruebas) / 0.8))) : pal.papel,
                 opacity: k, transform: `translateY(${(1 - k) * 22}px)` }}>{w}</div>

@@ -8,7 +8,7 @@ import { GotaMercurio } from '../../components/graficos/GotaMercurio';
 import { IndiceSerie } from '../../components/graficos/IndiceSerie';
 import { Ficha } from '../../components/texto/Ficha';
 import { Renglones } from '../../components/texto/Renglones';
-import { beat, tramo } from '../../direction/anim';
+import { anticipa, arqueo, beat, tramo } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
@@ -30,7 +30,8 @@ export const Denunciantes: React.FC<EscenaProps<P>> = ({ escena, props, video })
   const noche = mezclar(pal.fondo, '#000000', 0.3);
   const finNegro = tPerdio + NEGRO_FRAMES / fps;
   const fase = t < tCordillera + 0.6 ? 1 : t < tMercurio ? 2 : t < tPerdio ? 3 : t < finNegro ? 4 : t < tCapitulos - 0.3 ? 5 : 6;
-  const sale = tramo(t, tCordillera, 0.9, 'pesado');
+  // la lista se corre un poco hacia la derecha antes de irse (anticipación) y sale en arco, como un papel que se retira de la mesa
+  const sale = anticipa(t, tCordillera, 0.9, 'pesado', 0.03, 0.3);
   const brillo = tramo(t, tLimpiar, 1.4, 'natural');
 
   return (
@@ -50,7 +51,7 @@ export const Denunciantes: React.FC<EscenaProps<P>> = ({ escena, props, video })
             </div>
           ) : null}
           {sale < 1 ? (
-            <AbsoluteFill style={{ transform: `translateX(${-2100 * sale}px) rotate(${-4 * sale}deg)` }}>
+            <AbsoluteFill style={{ transform: `translate(${-2100 * sale}px, ${-arqueo(sale, 60)}px) rotate(${-4 * sale}deg)` }}>
               <Papel color={pal.papel} envejecido={0.3}>
                 {Array.from({ length: 16 }, (_, i) => (
                   <div key={i} style={{ position: 'absolute', left: 360, top: 150 + i * 50, display: 'flex', gap: 30, alignItems: 'center', opacity: tramo(t, tLista + i * 0.05, 0.4, 'natural') }}>
@@ -74,7 +75,7 @@ export const Denunciantes: React.FC<EscenaProps<P>> = ({ escena, props, video })
           <Luz color="#cfd6db" x={50} y={45} radio={50} intensidad={0.14} />
           <div style={{ position: 'relative', marginTop: 120 }}>
             {/* el brillo que barre la tapa: alguien intenta limpiarla */}
-            <GotaMercurio id={`${escena.id}-hg`} size={720} caida={tramo(t, tMercurio, 0.7, 'tenso')} forma={tramo(t, tPlata, 1.3, 'natural')}
+            <GotaMercurio id={`${escena.id}-hg`} size={720} caida={tramo(t, tMercurio, 0.7, 'tenso')} tras={t - (tMercurio + 0.7)} forma={tramo(t, tPlata, 1.3, 'natural')}
               latido={brillo > 0 && brillo < 1 ? brillo * 3.2 : undefined} />
           </div>
         </AbsoluteFill>

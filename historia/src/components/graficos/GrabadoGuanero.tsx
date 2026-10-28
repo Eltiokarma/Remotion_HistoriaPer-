@@ -169,7 +169,8 @@ export const GrabadoGuanero: React.FC<Props> = ({ paleta, t, guano, id = 'grabad
             <line x1={plancha.x1} y1={plancha.y1} x2={plancha.x2} y2={plancha.y2} stroke={tinta} strokeWidth={2.2} />
             <line x1={plancha.x1} y1={plancha.y1 + 5} x2={plancha.x2} y2={plancha.y2 + 5} stroke={tinta} strokeWidth={1} />
             {sacos.map((u, k) => {
-              const x = plancha.x1 + (plancha.x2 - plancha.x1) * u, y = plancha.y1 + (plancha.y2 - plancha.y1) * u - 9;
+              // los suben a pulso: cada paso es un pequeño salto (acción secundaria, casi no se ve)
+              const x = plancha.x1 + (plancha.x2 - plancha.x1) * u, y = plancha.y1 + (plancha.y2 - plancha.y1) * u - 9 - Math.abs(Math.sin(u * Math.PI * 7)) * 1.6;
               return (
                 <g key={k} transform={`translate(${x} ${y}) rotate(-22)`} opacity={Math.min(1, (1 - u) * 6)}>
                   <path d="M-9 -7 Q -10 8, -7 9 L 7 9 Q 10 8, 9 -7 Q 0 -10, -9 -7 Z" fill={paleta.papel} stroke={tinta} strokeWidth={1.2} />

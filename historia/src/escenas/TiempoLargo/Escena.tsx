@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { AbsoluteFill, spring, useCurrentFrame } from 'remotion';
+import { anticipa, asienta, beat, clamp, mix, tramo } from '../../direction/anim';
 import type { z } from 'zod';
 import { Luz } from '../../components/atmosfera/Luz';
 import { Papel } from '../../components/atmosfera/Papel';
@@ -10,7 +11,6 @@ import { Sello } from '../../components/graficos/Sello';
 import { bordePapel } from '../../components/graficos/svg';
 import { Ficha } from '../../components/texto/Ficha';
 import { Renglones } from '../../components/texto/Renglones';
-import { beat, clamp, mix, tramo } from '../../direction/anim';
 import { azar } from '../../direction/azar';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
@@ -54,9 +54,13 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   // el muro quieto: lo que se mueve son los afiches que se pegan
   const pega = (tp: number) => (t < tp ? 0 : spring({ frame: frame - tp * fps, fps, config: { damping: 15, mass: 0.6, stiffness: 260 } }));
   const volante = t < tVolante ? 0 : spring({ frame: frame - tVolante * fps, fps, config: { damping: 18, mass: 1, stiffness: 90 } });
+  // el volante sube en curva (arco), no en línea recta; cuando se queda, la tachuela lo clava
+  const tTachuela = tVolante + 0.7;
+  const tachuela = t < tTachuela - 0.12 ? 0 : mix(1.6, 1, tramo(t, tTachuela - 0.12, 0.12, 'tenso')) + asienta(t, tTachuela, -0.08, 30, 14);
   // —— C: las capas
   const capas = tramo(t, tCapas - 0.4, 1.0, 'natural');
-  const baja = tramo(t, tBajar, 2.4, 'pesado');
+  // la cámara sube apenas antes de bajar a las estructuras (anticipación); el zoom no se anticipa, para no ver el borde
+  const baja = anticipa(t, tBajar, 2.4, 'pesado', 0.04, 0.4);
 
   return (
     <AbsoluteFill style={{ backgroundColor: noche }}>
@@ -121,7 +125,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
               })}
               {/* el volante encima: mimeógrafo, tinta corrida, una tachuela */}
               {volante > 0 ? (
-                <div style={{ position: 'absolute', left: 1040, top: 520, transform: `translateY(${(1 - volante) * 600}px) rotate(${mix(14, 6, volante)}deg)`,
+                <div style={{ position: 'absolute', left: 1040, top: 520, transform: `translate(${(1 - volante) ** 2 * 150}px, ${(1 - volante) * 600}px) rotate(${mix(14, 6, volante)}deg)`,
                   filter: `drop-shadow(5px 8px 8px ${alfa('#000000', 0.5)})` }}>
                   <div style={{ width: 380, height: 500, background: mezclar(pal.papel, '#ffffff', 0.1), position: 'relative', overflow: 'hidden' }}>
                     <Papel color={mezclar(pal.papel, '#ffffff', 0.1)} envejecido={0.15} escala={400}>
@@ -131,7 +135,10 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                       </div>
                     </Papel>
                   </div>
-                  <div style={{ position: 'absolute', left: 182, top: -6, width: 18, height: 18, borderRadius: 9, background: `radial-gradient(circle at 35% 35%, #ddd, #555)` }} />
+                  {tachuela > 0 ? (
+                    <div style={{ position: 'absolute', left: 182, top: -6, width: 18, height: 18, borderRadius: 9, background: `radial-gradient(circle at 35% 35%, #ddd, #555)`,
+                      transform: `scale(${tachuela})`, boxShadow: `0 ${2 * tachuela}px ${3 * tachuela}px ${alfa('#000000', 0.5)}` }} />
+                  ) : null}
                 </div>
               ) : null}
             </Papel>
@@ -143,7 +150,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       {capas > 0 ? (
         <AbsoluteFill style={{ opacity: capas }}>
           <Luz color={pal.ocre} x={55} y={70} radio={70} intensidad={0.12} />
-          <AbsoluteFill style={{ transformOrigin: '6% 78%', transform: `translateY(${-300 * baja}px) scale(${1 + 0.55 * baja})` }}>
+          <AbsoluteFill style={{ transformOrigin: '6% 78%', transform: `translateY(${-300 * baja}px) scale(${1 + 0.55 * clamp(baja)})` }}>
             <CapasDeTiempo paleta={pal} id={`${escena.id}-capas`} t={t} rotulos={props.capas} nombres={props.gobiernos}
               aparece={[tramo(t, tCapas + 0.2, 1, 'natural'), tramo(t, tCapas + 1.6, 1.2, 'natural'), tramo(t, tCapas + 3.0, 1.6, 'natural')]} />
           </AbsoluteFill>
@@ -160,6 +167,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       {props.titulares.map((_, i) => <Sfx key={i} nombre="afiche" en={tAf[i]} fps={fps} volumen={0.7} />)}
       <Sfx nombre="hoja" en={tDespegue} fps={fps} volumen={0.55} />
       <Sfx nombre="hoja" en={tVolante} fps={fps} volumen={0.45} />
+      <Sfx nombre="tic" en={tTachuela} fps={fps} volumen={0.35} />
       <Sfx nombre="soplo" en={tBajar} fps={fps} volumen={0.35} />
     </AbsoluteFill>
   );

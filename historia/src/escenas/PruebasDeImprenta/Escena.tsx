@@ -8,7 +8,7 @@ import { LineaDeTiempo } from '../../components/graficos/LineaDeTiempo';
 import { Ficha } from '../../components/texto/Ficha';
 import { Renglones } from '../../components/texto/Renglones';
 import { TrazoRojo } from '../../components/texto/TrazoRojo';
-import { beat, clamp, mix, tramo } from '../../direction/anim';
+import { anticipa, beat, clamp, mix, tramo } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
@@ -51,7 +51,7 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
   // —— A: la pila sobre la mesa (hasta entrar a la página)
   const entra = tramo(t, 0, 1.4, 'natural');
   // cámara quieta mientras la pluma corrige: se mueve recién para entrar a la página
-  const zambulle = tramo(t, tCita - 0.5, 1.1, 'pesado'); // la cámara se mete en la hoja
+  const zambulle = anticipa(t, tCita - 0.5, 1.1, 'pesado', 0.035, 0.3); // la cámara toma aire y se mete en la hoja
   // —— C: la página del libro
   const pagina = tramo(t, tCita - 0.1, 0.9, 'natural');
   const zoomCita = mix(1, 1.08, tramo(t, tCita, tMuerte - tCita, 'natural'));
@@ -148,7 +148,8 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
       {fase === 'linea' ? (
         <AbsoluteFill style={{ backgroundColor: mezclar(noche, pal.ocre, 0.05 * viaje) }}>
           <LineaDeTiempo paleta={pal} id={`${escena.id}-linea`} tramos={linea.tramos} fondo={linea.fondo} eventos={linea.eventos}
-            centro={centro} escala={escala} recorrido={recorrido} aparece={tramo(t, tMuerte, 0.6, 'natural')} guia={guia} realce={realce} fondoVisible={1 - abre} />
+            centro={centro} escala={escala} recorrido={recorrido} aparece={tramo(t, tMuerte, 0.6, 'natural')} guia={guia} realce={realce} fondoVisible={1 - abre}
+            tras={linea.eventos.map((_, k) => (k === linea.eventos.length - 1 ? t - tMayo : -1))} />
           <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 52%, rgba(0,0,0,0) 50%, ${alfa('#000000', 0.5)} 100%)` }} />
         </AbsoluteFill>
       ) : null}

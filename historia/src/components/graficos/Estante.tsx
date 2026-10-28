@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { clamp, mix } from '../../direction/anim';
+import { clamp, mix, type Escala } from '../../direction/anim';
 import { azar } from '../../direction/azar';
 import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
@@ -12,6 +12,8 @@ type Props = {
   titulos: string[];
   /** 0–1 por libro con título: entra a la repisa desde arriba y se enciende su lomo. */
   entra: number[];
+  /** Comprimir y estirar de cada libro con título (se estira al caer, se aplasta contra la repisa). */
+  escalas?: Escala[];
   /** 0–1: aparición de la repisa y los libros sin rótulo. */
   aparece?: number;
 };
@@ -22,7 +24,11 @@ const REPISA = 820, X0 = 260, X1 = 1660;
  * Una repisa de biblioteca: libros de tela sin rótulo y, entre ellos, los temas del autor que
  * bajan a su lugar con el título dorado en el lomo.
  */
-export const Estante: React.FC<Props> = ({ paleta, id, titulos, entra, aparece = 1 }) => {
+/** Escala desde el punto de contacto con la repisa (el libro se aplasta contra la madera, no en el aire). */
+const deforma = (e: Escala | undefined, cx: number) =>
+  e && (e.sx !== 1 || e.sy !== 1) ? ` translate(${cx} ${REPISA}) scale(${e.sx} ${e.sy}) translate(${-cx} ${-REPISA})` : '';
+
+export const Estante: React.FC<Props> = ({ paleta, id, titulos, entra, escalas = [], aparece = 1 }) => {
   const libros = useMemo(() => {
     const r = azar(2005);
     const out: { x: number; w: number; h: number; tela: number; titulo?: number; incl: number }[] = [];
@@ -64,7 +70,8 @@ export const Estante: React.FC<Props> = ({ paleta, id, titulos, entra, aparece =
         const tela = conTitulo ? telas[(l.titulo! + 1) % telas.length] : telas[l.tela];
         const oro = mezclar(paleta.ocre, '#ffffff', 0.2);
         return (
-          <g key={i} transform={`rotate(${l.incl} ${l.x + l.w / 2} ${REPISA})`} opacity={conTitulo ? Math.min(1, k * 3) : 0.75 * k}>
+          <g key={i} transform={`rotate(${l.incl} ${l.x + l.w / 2} ${REPISA})${deforma(conTitulo ? escalas[l.titulo!] : undefined, l.x + l.w / 2)}`}
+            opacity={conTitulo ? Math.min(1, k * 3) : 0.75 * k}>
             <rect x={l.x} y={y} width={l.w} height={l.h} rx={3} fill={tela} />
             <rect x={l.x} y={y} width={l.w} height={l.h} rx={3} fill={`url(#${id}-lomo)`} />
             {[24, 32, l.h - 32, l.h - 24].map((dy, j) => (
