@@ -178,7 +178,9 @@ El resultado fue *Corrupt Circles*, publicado en inglés en 2008. Ganó premios,
 **Frames:** 12717–13818 (36,7 s)
 
 **VO:**
-Pero el libro no es una lista de ladrones. Está contado desde los que denunciaron. Empieza con Antonio de Ulloa, un marino y científico español que en 1758 llegó a gobernar Huancavelica, a más de tres mil quinientos metros de altura, a cargo de la mina de mercurio de la que dependía la plata de todo el virreinato. Intentó limpiarla. [PAUSA 0,5s] Y perdió. [PAUSA 0,8s]
+Pero el libro no es una lista de ladrones. Está contado desde los que denunciaron. [PAUSA 1s]
+
+Empieza con Antonio de Ulloa, un marino y científico español. En 1758 llegó a gobernar Huancavelica, a más de tres mil quinientos metros de altura. Quedó a cargo de la mina de mercurio de la que dependía la plata de todo el virreinato. Intentó limpiarla. [PAUSA 0,5s] Y perdió. [PAUSA 0,8s]
 
 Después vienen otros. [PAUSA 0,4s] Domingo Elías. [PAUSA 0,3s] Francisco García Calderón Landa. [PAUSA 0,3s] Manuel González Prada, que por su madre descendía de Ulloa. [PAUSA 1,5s: el arco vuelve hasta Ulloa] Jorge Basadre. [PAUSA 0,3s] Héctor Vargas Haya. [PAUSA 0,3s] Mario Vargas Llosa. [PAUSA 0,8s: la cámara recorre la línea de un nombre al otro]
 

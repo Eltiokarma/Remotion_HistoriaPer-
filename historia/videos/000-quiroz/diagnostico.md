@@ -564,5 +564,7 @@ nombres en frases, con pausas cortas. Después se sumaron García Calderón y Va
 nombra a los siete, uno por capítulo) y el parentesco de González Prada con Ulloa, con una mirada
 de la cámara hacia atrás y un arco que los une; la escena pasó de 44,8 a 58,4 s de voz. Con las aperturas
 de los capítulos 3 a 7 quedó confirmado: cada capítulo abre con su denunciante (González Prada el
-4, Basadre el 5, Vargas Haya el 6). Lo demás de s10 sigue en
-rojo: la frase de Ulloa (47 palabras, 27 s de voz seguida) es tarea de la reescritura (§3).
+4, Basadre el 5, Vargas Haya el 6). La frase de Ulloa
+(47 palabras) quedó en tres frases cortas, con una pausa de párrafo antes («Está contado desde
+los que denunciaron.» cierra la idea): s10 pasó de rojo a amarillo (voz seguida 23 s, frase más
+larga 19 palabras); la única alerta que queda es la de nombres por minuto, la lista de los siete.
