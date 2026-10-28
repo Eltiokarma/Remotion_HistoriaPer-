@@ -31,23 +31,24 @@
       "id": "s01",
       "seccion": "gancho",
       "componente": "PruebasDeImprenta",
-      "duracion_s": 41.89,
+      "duracion_s": 49.07,
       "cola_s": 2.5,
       "intensidad": 3,
       "cambio": "de un desconocido a un hombre que corrige su libro contra el tiempo",
-      "intencion": "abrir con la muerte y el libro sin decir quién es: el rojo del corrector contra la página ya limpia",
+      "intencion": "abrir con la muerte y el libro sin decir quién es: los meses entre una y otro se recorren con la cámara, del punto oscuro a la luz",
       "transicion_salida": "corte",
       "beats": {
         "ficha": 0.4,
-        "correcciones": 3.3,
-        "cita": 14.3,
-        "subrayado": 20.7,
-        "abajo": 24.6,
-        "corte1": 32.6,
-        "sello1": 33.2,
-        "corte2": 35.5,
-        "sello2": 36.7,
-        "final": 38.3
+        "correcciones": 3.4,
+        "cita": 17.0,
+        "subrayado": 23.5,
+        "abajo": 28.4,
+        "muerte": 37.2,
+        "recorre": 39.6,
+        "mayo": 43.3,
+        "final": 45.4,
+        "hombre": 47.0,
+        "encontro": 48.4
       },
       "props": {
         "ficha": "NUEVA YORK · 2012",
@@ -59,10 +60,41 @@
         "segunda": {
           "texto": "La reciente llegada a este mundo de nuestro precioso Alfonsito ha colocado todo esto en su debida perspectiva vital."
         },
-        "sellos": [
-          "ENERO 2013",
-          "MAYO 2013"
-        ]
+        "linea": {
+          "tramos": [
+            "ENE",
+            "FEB",
+            "MAR",
+            "ABR",
+            "MAY"
+          ],
+          "fondo": [
+            "enero",
+            "febrero",
+            "marzo",
+            "abril",
+            "mayo"
+          ],
+          "eventos": [
+            {
+              "en": 0.03,
+              "rotulo": "† 2 ENE 2013",
+              "tono": "sombra"
+            },
+            {
+              "en": 1.5,
+              "rotulo": "PRÓLOGO",
+              "detalle": "RÍO DE JANEIRO",
+              "tono": "nota"
+            },
+            {
+              "en": 4.5,
+              "rotulo": "MAYO 2013",
+              "detalle": "PRIMERA EDICIÓN",
+              "tono": "luz"
+            }
+          ]
+        }
       },
       "camara": [
         {
@@ -76,9 +108,14 @@
           "motivo": "«unas líneas más abajo» celebra la llegada de su hijo"
         },
         {
+          "beat": "recorre",
+          "movimiento": "recorre la línea de tiempo hacia la derecha, de enero a mayo (arranca y frena despacio)",
+          "motivo": "entre la muerte y el libro hay meses: el espectador los atraviesa, no los salta"
+        },
+        {
           "beat": "final",
-          "movimiento": "se aleja de la página impresa",
-          "motivo": "«este video es sobre ese hombre»: el plano se abre para empezar"
+          "movimiento": "se abre hasta ver el camino entero",
+          "motivo": "«ese hombre» y «lo que encontró» son las dos puntas de la línea"
         }
       ],
       "audio": {

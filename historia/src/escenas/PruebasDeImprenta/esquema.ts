@@ -4,7 +4,8 @@ import type { Ejemplo } from '../ejemplo';
 /**
  * Pruebas de imprenta sobre la mesa: una ficha a máquina, correcciones en rojo, una frase del
  * libro compuesta en página con una parte subrayada (y, si hay, otra unas líneas más abajo, que
- * entra en foco cuando la cámara baja) y dos sellos de fecha separados por un corte seco.
+ * entra en foco cuando la cámara baja). Después, corte seco a una línea de tiempo que la cámara
+ * recorre del primer evento al último, y al final se abre para verla entera.
  */
 export const esquema = z.object({
   /** Ficha monoespaciada arriba a la izquierda (lugar). */
@@ -18,8 +19,16 @@ export const esquema = z.object({
   }),
   /** Otra frase de la misma página, unas líneas más abajo: queda desenfocada hasta que la cámara baja. */
   segunda: z.object({ texto: z.string() }).optional(),
-  /** Dos sellos: el primero sobre negro, el segundo sobre la página impresa. */
-  sellos: z.tuple([z.string(), z.string()]),
+  /** La línea de tiempo del final: el primer evento es donde arranca la cámara; el último, donde llega. */
+  linea: z.object({
+    /** Un rótulo por tramo (p. ej. meses): el tramo i va de i a i + 1 en la escala. */
+    tramos: z.array(z.string()).min(2),
+    /** Nombre largo de cada tramo, para el fondo. */
+    fondo: z.array(z.string()).optional(),
+    eventos: z
+      .array(z.object({ en: z.number(), rotulo: z.string(), detalle: z.string().optional(), tono: z.enum(['sombra', 'luz', 'nota']) }))
+      .min(2),
+  }),
 });
 
 export const beats = {
@@ -28,18 +37,19 @@ export const beats = {
   cita: 'se entra a la página: aparece la frase compuesta',
   subrayado: 'se subraya en rojo la parte elegida',
   abajo: 'la cámara baja unas líneas por la página (con `segunda`, el foco pasa a esa frase)',
-  corte1: 'corte seco a negro',
-  sello1: 'cae el primer sello',
-  corte2: 'corte seco a la página impresa',
-  sello2: 'cae el segundo sello',
-  final: 'la página se aleja despacio (aquí entra la música)',
+  muerte: 'corte seco a la línea de tiempo: aparece el primer evento',
+  recorre: 'la cámara empieza a recorrer la línea (arranca y frena despacio)',
+  mayo: 'llega al último evento: se enciende',
+  final: 'la cámara se abre y se ve el camino entero (aquí entra la música)',
+  hombre: 'pulso en el primer evento',
+  encontro: 'el último evento brilla más',
 };
 
 /** Como se usa en 000-quiroz. */
 export const ejemplo: Ejemplo<typeof esquema> = {
   duracion_s: 41.89,
   cola_s: 2.5,
-  beats: { ficha: 0.4, correcciones: 3.3, cita: 14.3, subrayado: 20.7, abajo: 24.6, corte1: 32.6, sello1: 33.2, corte2: 35.5, sello2: 36.7, final: 38.3 },
+  beats: { ficha: 0.4, correcciones: 3.3, cita: 14.3, subrayado: 20.7, abajo: 24.6, muerte: 32.6, recorre: 35, mayo: 38.6, final: 41, hombre: 42.4, encontro: 43.6 },
   props: {
     ficha: 'NUEVA YORK · 2012',
     seccion: 'Agradecimientos',
@@ -48,6 +58,14 @@ export const ejemplo: Ejemplo<typeof esquema> = {
       subrayado: 'alargar estos días',
     },
     segunda: { texto: 'La reciente llegada a este mundo de nuestro precioso Alfonsito ha colocado todo esto en su debida perspectiva vital.' },
-    sellos: ['ENERO 2013', 'MAYO 2013'],
+    linea: {
+      tramos: ['ENE', 'FEB', 'MAR', 'ABR', 'MAY'],
+      fondo: ['enero', 'febrero', 'marzo', 'abril', 'mayo'],
+      eventos: [
+        { en: 0.03, rotulo: '† 2 ENE 2013', tono: 'sombra' },
+        { en: 1.5, rotulo: 'PRÓLOGO', detalle: 'RÍO DE JANEIRO', tono: 'nota' },
+        { en: 4.5, rotulo: 'MAYO 2013', detalle: 'PRIMERA EDICIÓN', tono: 'luz' },
+      ],
+    },
   },
 };

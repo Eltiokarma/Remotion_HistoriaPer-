@@ -143,7 +143,7 @@ que recapitule al final de una sección.
 **s01 Los días extra** — *Debería quedar:* un hombre que corrige su libro contra el tiempo; y una
 pregunta: ¿qué encontró? *Hoy:* 30 s de voz seguida con diez datos (traducción, último libro, el
 que más le costó, no le queda tiempo, agradecimientos, médicos, alargar los días, la tarea, el
-hijo, las fechas). Los cortes secos a ENERO / MAYO funcionan. La pregunta del video («…y sobre lo
+hijo, las fechas). Los cortes secos a ENERO / MAYO funcionan (después se cambiaron por una línea de tiempo que se recorre: ver «Después del diagnóstico»). La pregunta del video («…y sobre lo
 que encontró») llega a los 37 s; el CLAUDE.md la pide en los primeros 15. *Haría:* dos párrafos
 (el hombre y su libro / las dos fechas) con un silencio entre ellos, y la pregunta dicha antes.
 
@@ -532,7 +532,18 @@ una menos):
 
 - El tablero de tarjetas de s07 (acumula, no reemplaza).
 - El silencio de «Ni una, en casi dos siglos» (s08).
-- Los cortes secos de s01 (ENERO / MAYO) y el corte a negro de «Y perdió» (s10).
+- El corte a negro de «Y perdió» (s10). (Los cortes secos de s01 a ENERO / MAYO se cambiaron por un recorrido de enero a mayo, que da más: secuencia en vez de salto.)
 - La sincronía vale / caudal / funcionarios de s04.
 - El cartel de s09 y la palabra que queda.
 - La vuelta al objeto del inicio y el tema del canal al final (s11).
+
+---
+
+## Después del diagnóstico
+
+**s01 (ya hecho).** La voz seguida más larga bajó de 32 s a 10 s y la escena pasó a verde en la
+escaleta: cinco párrafos con sus pausas (1–1,6 s), la frase de 26 palabras partida en dos y un
+silencio de 2,5 s entre «Murió en enero de 2013» y «El libro salió en mayo». En ese silencio, la
+cámara recorre una línea de tiempo de enero a mayo (`LineaDeTiempo`): el espectador atraviesa los
+meses en vez de saltarlos. La regla quedó en el CLAUDE.md (§4, «El movimiento guía»).
+

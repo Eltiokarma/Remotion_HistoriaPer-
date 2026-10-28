@@ -162,6 +162,27 @@ Para lo físico (caída, rebote, asentamiento), `spring()` con `config` explíci
 - No mover todo a la vez: si la cámara se mueve, los elementos quietos; si los elementos se mueven
   (una pluma que escribe, un afiche que se pega), la cámara quieta.
 
+**El movimiento guía.** Cuando el guion pasa de un momento a otro (de una fecha a otra, de un
+lugar a otro, de una causa a su efecto), el espectador no salta: **recorre**. Que pueda atravesar
+en la cabeza los meses, los kilómetros o los pasos que hay en medio es lo que le permite ordenarlos
+(secuenciar), y llegar da satisfacción.
+
+- Un recorrido tiene un camino visible (una línea de tiempo, una ruta en el mapa, una cadena de
+  causas), un destino que se anuncia antes de llegar y una cámara que lo sigue con peso: arranca
+  despacio, viaja y frena (`solemne` o `pesado`, nunca lineal).
+- Elementos que guían el ojo, elegidos por lo que pasa y lo que se siente, no por adorno: lo
+  recorrido se enciende y lo que falta queda punteado; una flecha va delante; las marcas se
+  iluminan al pasar; el destino brilla más mientras nos acercamos; lo que queda atrás se
+  desvanece. Colores con sentido: el rojo apagado para una pérdida, el ocre que brilla para lo que
+  se logró.
+- El sonido cuenta el camino: un tic por tramo que pasa, un golpe o una hoja al llegar.
+- Al llegar, la cámara se abre para que se vea el camino entero: el viaje queda como mapa.
+- Recorrer no es mover por mover: sigue valiendo «toda cámara con motivo» (el motivo es el paso del
+  tiempo o del espacio que dice la voz) y el silencio es su mejor momento (el viaje ocupa la pausa).
+- El modelo: `LineaDeTiempo` en 000·s01 (de la muerte de Quiroz a la salida del libro, mes por mes).
+  Se puede aplicar, por ejemplo, a la ruta Lima → Nueva York (000·s05), a los años entre la tesis y
+  el libro (000·s04) o a los siete capítulos de la serie (000·s10).
+
 ## 5. Composición
 
 **Contraste y afinidad (Bruce Block).** Afinidad en la exposición, contraste creciente hacia el

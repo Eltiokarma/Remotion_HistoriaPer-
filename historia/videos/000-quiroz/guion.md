@@ -14,14 +14,25 @@
 **Frames:** 0–1173 (39,1 s)
 
 **VO:**
-Nueva York. Un historiador peruano revisa, con minuciosidad, las pruebas de imprenta. Es la traducción al español de su último libro. No le queda mucho tiempo, y lo sabe. En los agradecimientos escribe una línea que casi nadie lee: les da las gracias a sus médicos por alargar estos días, para poder completar la tarea. Unas líneas más abajo celebra «la reciente llegada a este mundo de nuestro precioso Alfonsito»: su hijo. Murió en enero de 2013. El libro salió en mayo. Este video es sobre ese hombre, y sobre lo que encontró.
+Nueva York. Un historiador peruano revisa, con minuciosidad, las pruebas de imprenta. Es la traducción al español de su último libro. [PAUSA 1s]
+
+No le queda mucho tiempo, y lo sabe. [PAUSA 1,5s]
+
+En los agradecimientos escribe una línea que casi nadie lee. Les da las gracias a sus médicos por alargar estos días, para poder completar la tarea. [PAUSA 1s]
+
+Unas líneas más abajo celebra «la reciente llegada a este mundo de nuestro precioso Alfonsito»: su hijo. [PAUSA 1,5s]
+
+Murió en enero de 2013. [SILENCIO 2,5s: la cámara recorre los meses] El libro salió en mayo. [PAUSA 1s]
+
+Este video es sobre ese hombre, y sobre lo que encontró.
 
 **Visual (Remotion):**
 - Fondo negro. Ficha mono arriba a la izquierda, escrita letra por letra: `NUEVA YORK · 2012`.
 - Al centro, una pila de pruebas de imprenta en SVG. Sobre la hoja de arriba se dibujan correcciones rojas (`strokeDashoffset` animado): tachones, una flecha, un "ok".
 - La frase de los médicos aparece compuesta como texto de libro, con zoom lento (`scale` de 1 a 1,08). Las palabras "alargar estos días" se subrayan en rojo.
 - Unas líneas más abajo, en la misma página, la línea de Alfonsito: impresa pero desenfocada hasta que la cámara baja y el foco pasa a ella.
-- "Enero 2013" y "Mayo 2013" entran como dos sellos de fecha, separados por un corte seco.
+- Con «Murió», corte seco a una línea de tiempo sobre negro: un punto oscuro, `† 2 ENE 2013`. En el silencio, la cámara la recorre hacia la derecha, mes por mes (ENE, FEB, MAR, ABR, MAY): lo recorrido se enciende, una flecha va delante, cada mes se ilumina al pasar y suena un tic; en febrero, una marca pequeña (`PRÓLOGO · RÍO DE JANEIRO`). Al fondo, el nombre del mes aparece y se desvanece. Mayo es una luz que crece mientras nos acercamos: el libro, `MAYO 2013 · PRIMERA EDICIÓN`, llega con «El libro salió en mayo».
+- Con «Este video es sobre ese hombre», la cámara se abre y se ve el camino entero: el punto oscuro late con «ese hombre»; el libro brilla con «lo que encontró».
 - **Sonido:** silencio casi total, solo papel y un lápiz. Sin música hasta el final de la escena.
 
 **Fuente:** Agradecimientos, p. 35; Nota de los editores; créditos (1.ª ed. mayo 2013).

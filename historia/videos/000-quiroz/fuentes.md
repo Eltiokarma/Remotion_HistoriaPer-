@@ -73,7 +73,7 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | s01 | La edición en castellano fue deliberadamente póstuma | Contreras, *Economía*, 2013 | Una sola fuente, y otra (*El Comercio*, 2019) lo cuenta distinto: **no va** (C29) |
 | s01 | Murió el 2 de enero de 2013; un sarcoma diagnosticado en 2009, con metástasis un año después | Reseña de Carla López Medina en *Histórica* (PUCP) XXXVII.1; *El Comercio*, 2019 | ✔ (el guion dice «enero de 2013»: está bien) |
 | s01 | Alfonsito, en la voz («su hijo») y en pantalla, textual: «La reciente llegada a este mundo de nuestro precioso Alfonsito ha colocado todo esto en su debida perspectiva vital.» | Agradecimientos, p. 35; «su hijo»: *El Comercio*, 2019 | ✔ · C4 |
-| s01 | Murió en enero de 2013; el libro salió en mayo (sellos `ENERO 2013` / `MAYO 2013`) | Nota de los editores; créditos («Primera edición: Lima, mayo de 2013») | ✔ |
+| s01 | Murió en enero de 2013; el libro salió en mayo. Línea de tiempo: `† 2 ENE 2013`, `PRÓLOGO · RÍO DE JANEIRO` (febrero), `MAYO 2013 · PRIMERA EDICIÓN` | Nota de los editores; créditos («Primera edición: Lima, mayo de 2013»); el día: *Histórica* (PUCP) XXXVII.1 y *El Comercio* (2019); el prólogo: «Río de Janeiro, febrero de 2013» (p. 29) | ✔ |
 | s02 | Alfonso W. Quiroz Norris, 1956 — 2013 | Prólogo, p. 15 (título) | ✔ |
 | s02 | Nació en Lima | Contreras, *Economía*, 2013, p. 212 | ✔ (C9) |
 | s02 | Nadador de competencia, categorías infantil y juvenil; la disciplina pasó a sus investigaciones | Prólogo, p. 15 | ✔ |
