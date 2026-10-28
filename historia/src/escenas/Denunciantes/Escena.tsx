@@ -11,6 +11,7 @@ import { LineaDeTiempo } from '../../components/graficos/LineaDeTiempo';
 import { Ficha } from '../../components/texto/Ficha';
 import { Renglones } from '../../components/texto/Renglones';
 import { anticipa, arqueo, beat, clamp, tramo } from '../../direction/anim';
+import type { Peso } from '../../direction/easings';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
@@ -47,25 +48,53 @@ export const Denunciantes: React.FC<EscenaProps<P>> = ({ escena, props, video })
   const cortes = [...caps.map((c) => c.desde), fin];
   const zAbierta = 1320 / (fin - ini); // como en el índice: el comienzo en x = 300 y el final en x = 1620
   const cAbierta = ini + 660 / zAbierta;
-  const paradas = [{ t: tOtros, en: props.abre.en }, ...props.denunciantes.map((d, i) => ({ t: tNombres[i], en: d.en }))];
+  const personas = [props.abre, ...props.denunciantes];
+  // el parentesco (si hay): de quién desciende quién, como índices en `personas`
+  const lazo = props.lazo
+    ? { de: personas.findIndex((p) => p.nombre === props.lazo?.de), a: personas.findIndex((p) => p.nombre === props.lazo?.a) }
+    : null;
+  const hayLazo = lazo !== null && lazo.de >= 0 && lazo.a > 0;
+  const tLazo = T('lazo', hayLazo ? tNombres[lazo.a - 1] + 1.5 : 0), tLazoLlega = T('lazo_llega', tLazo + 1.6);
+  /**
+   * Los movimientos de cámara, en orden: de un nombre al siguiente (sale cuando la voz ya lo dijo y
+   * llega cuando dice el próximo) y, si hay parentesco, una mirada hacia atrás que deja ver a los dos.
+   */
+  type Mov = { sale: number; llega: number; c: number; z: number; peso: Peso; impulso?: boolean; aire?: boolean; avanza?: boolean };
+  const movs: Mov[] = [];
+  let tAntes = tOtros + 0.05;
+  props.denunciantes.forEach((d, i) => {
+    movs.push({ sale: tAntes + 0.3, llega: tNombres[i] + 0.15, c: d.en, z: Z_CERCA, peso: 'natural', impulso: i === 0, aire: true, avanza: true });
+    tAntes = tNombres[i];
+    if (hayLazo && lazo.a === i + 1) {
+      // «descendía de Ulloa»: la cámara retrocede y se aleja lo justo para ver a los dos; el arco la guía
+      const de = personas[lazo.de].en;
+      movs.push({ sale: tLazo, llega: tLazoLlega + 0.2, c: (de + d.en) / 2, z: Math.min(Z_CERCA, 1250 / Math.abs(d.en - de)), peso: 'solemne' });
+      // se queda medio segundo con los dos unidos antes de seguir
+      tAntes = tLazoLlega + 0.35;
+    }
+  });
   /** La cámara (qué año está en el centro y cuántos píxeles mide un año) y lo ya recorrido, en el segundo s. */
   const viaje = (s: number) => {
-    // de un nombre al siguiente: sale cuando la voz ya lo dijo y llega cuando dice el próximo; arranca y frena
-    let c = paradas[0].en, z = Z_CERCA;
-    for (let i = 1; i < paradas.length; i++) {
-      const a = paradas[i - 1], d = paradas[i];
-      const sale = a.t + (i === 1 ? 0.35 : 0.3);
-      const dur = Math.max(0.6, d.t + 0.15 - sale);
+    let c = props.abre.en, z = Z_CERCA, r = props.abre.en, cAntes = c, zAntes = z, rAntes = r;
+    for (const m of movs) {
+      const dur = Math.max(0.6, m.llega - m.sale);
       // la primera vez, antes de salir, retrocede apenas: toma impulso
-      const k = i === 1 ? anticipa(s, sale, dur, 'natural', 0.04, 0.35) : tramo(s, sale, dur, 'natural');
-      c += (d.en - a.en) * k;
+      const k = m.impulso ? anticipa(s, m.sale, dur, m.peso, 0.04, 0.35) : tramo(s, m.sale, dur, m.peso);
+      c += (m.c - cAntes) * k;
       // en los tramos largos la cámara se aleja un poco y vuelve: un arco en profundidad, no una recta
-      z *= 1 - arqueo(clamp(k), Math.min(0.14, (d.en - a.en) / 700));
+      z *= Math.pow(m.z / zAntes, clamp(k)) * (m.aire ? 1 - arqueo(clamp(k), Math.min(0.14, Math.abs(m.c - cAntes) / 700)) : 1);
+      // lo recorrido solo avanza (cuando la cámara mira atrás, la línea encendida se queda donde estaba)
+      if (m.avanza) {
+        r += (m.c - rAntes) * clamp(k);
+        rAntes = m.c;
+      }
+      cAntes = m.c;
+      zAntes = m.z;
     }
     // después del último nombre no se clava: sigue a la deriva, apenas
-    c += 2.5 * tramo(s, paradas[paradas.length - 1].t + 0.4, 2.4, 'natural');
+    c += 2.5 * tramo(s, tNombres[tNombres.length - 1] + 0.4, 2.4, 'natural');
     const enciende = ini + (props.abre.en - ini) * tramo(s, finNegro + 0.1, 0.9, 'natural');
-    const rc = Math.max(enciende, Math.min(c, fin));
+    const rc = Math.max(enciende, Math.min(r, fin));
     // «siete capítulos»: toma aire (se acerca un poco) y se abre hasta ver la línea entera, que se enciende hasta el final
     const o = anticipa(s, tCapitulos, 1.5, 'solemne', 0.035, 0.3);
     return {
@@ -149,10 +178,12 @@ export const Denunciantes: React.FC<EscenaProps<P>> = ({ escena, props, video })
             encendido={caps.map((_, i) => tramo(t, tSerie + 0.7 + i * 0.16, 0.45, 'natural'))} />
           <LineaDeTiempo paleta={pal} id={`${escena.id}-serie`} y={yLinea} tramos={caps.map((_, i) => ROMANOS[i])} cortes={cortes}
             subtramos={caps.map((c) => `${c.desde}–${c.hasta}`)} fondo={caps.map((c) => c.titulo)}
-            eventos={[props.abre, ...props.denunciantes].map((d) => ({ en: d.en, rotulo: d.nombre, detalle: d.detalle, tono: 'persona' as const }))}
+            eventos={personas.map((d, i) => ({ en: d.en, rotulo: d.corto ?? d.nombre, detalle: d.detalle, tono: 'persona' as const, nivel: (i % 2) as 0 | 1 }))}
             centro={cam.centro} escala={cam.escala} recorrido={cam.recorrido} aparece={tramo(t, finNegro, 0.6, 'natural')}
             guia={tramo(t, tOtros, 0.5, 'natural') * (1 - tramo(t, tCapitulos + 0.9, 0.5, 'natural'))}
-            realce={[0, ...tNombres.map(pulso)]} fondoVisible={1 - tramo(t, tCapitulos, 0.8, 'natural')}
+            realce={personas.map((_, i) => (i === 0 ? (hayLazo && lazo.de === 0 ? pulso(tLazoLlega) : 0) : pulso(tNombres[i - 1])))}
+            lazos={hayLazo ? [{ desde: lazo.a, hasta: lazo.de, dibujo: tramo(t, tLazo + 0.1, tLazoLlega - tLazo, 'natural') }] : []}
+            fondoVisible={1 - tramo(t, tCapitulos, 0.8, 'natural')}
             nombres={1 - tramo(t, tCapitulos + 0.2, 0.7, 'natural')}
             bandas={caps.map((_, i) => tramo(t, tCiclos + 0.1 + i * 0.28, 0.35, 'ligero'))}
             extremos={[tramo(t, tVirreinato, 0.6, 'natural'), tramo(t, tDosMil, 0.6, 'natural')]} rotulosExtremos={[String(ini), String(fin - 1)]}
@@ -169,6 +200,7 @@ export const Denunciantes: React.FC<EscenaProps<P>> = ({ escena, props, video })
       <Sfx nombre="soplo" en={tLimpiar} fps={fps} volumen={0.35} />
       {cruces.map((c, i) => <Sfx key={`x${i}`} nombre="tic" en={c} fps={fps} volumen={0.16} />)}
       {tNombres.map((n, i) => <Sfx key={`n${i}`} nombre="pluma" en={n - 0.05} fps={fps} volumen={0.2} />)}
+      {hayLazo ? <Sfx nombre="lapiz" en={tLazo + 0.1} fps={fps} volumen={0.16} /> : null}
       {caps.map((_, i) => <Sfx key={`c${i}`} nombre="tic" en={tCiclos + 0.1 + i * 0.28} fps={fps} volumen={0.3} />)}
       <Sfx nombre="hoja" en={tSerie + 0.5} fps={fps} volumen={0.4} />
     </AbsoluteFill>

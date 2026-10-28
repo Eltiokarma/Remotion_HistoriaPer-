@@ -7,6 +7,8 @@ const persona = z.object({
   en: z.number(),
   /** Rótulo chico sobre el nombre (p. ej. el año, si está verificado). */
   detalle: z.string().optional(),
+  /** Cómo se escribe en la línea, si el nombre completo no cabe entre sus vecinos. */
+  corto: z.string().optional(),
 });
 
 /**
@@ -24,6 +26,11 @@ export const esquema = z.object({
   abre: persona,
   /** Los que vienen después, en el orden en que los nombra la voz. */
   denunciantes: z.array(persona).min(1).max(6),
+  /**
+   * Un parentesco entre dos personas de la línea (por nombre): `a` desciende de `de`. Cuando la voz
+   * lo dice, la cámara mira hacia atrás y un arco va de `a` a `de`.
+   */
+  lazo: z.object({ de: z.string(), a: z.string() }).optional(),
   capitulos: z.array(z.object({ desde: z.number().int(), hasta: z.number().int(), titulo: z.string() })).min(1).max(12),
   encabezado: z.string().default('Índice'),
 });
@@ -45,6 +52,8 @@ export const beats = {
   nombre_4: '(con cuatro nombres o más) llega al cuarto',
   nombre_5: '(con cinco nombres o más) llega al quinto',
   nombre_6: '(con seis nombres) llega al sexto',
+  lazo: '(con lazo) la voz dice el parentesco: la cámara mira hacia atrás y el arco sale hacia el antepasado',
+  lazo_llega: '(con lazo) el arco llega al antepasado (cuando la voz lo nombra); después la cámara sigue',
   capitulos: 'la cámara se abre hasta ver la línea entera; los nombres se apagan',
   ciclos: 'los capítulos se encienden uno por uno (0,28 s)',
   virreinato: 'el año del comienzo, abajo a la izquierda; un brillo sale de ahí y recorre la línea',
@@ -54,11 +63,12 @@ export const beats = {
 
 /** Como se usa en 000-quiroz. */
 export const ejemplo: Ejemplo<typeof esquema> = {
-  duracion_s: 49.6,
+  duracion_s: 58.6,
   cola_s: 4.5,
   beats: {
-    lista: 0.2, tacha: 4.9, cordillera: 5.8, huanca: 14.2, altura: 15.9, mercurio: 19.9, plata: 22.1, limpiar: 24.5, perdio: 27.7, otros: 28.9,
-    nombre_1: 31.2, nombre_2: 33.3, nombre_3: 35.7, nombre_4: 37.8, capitulos: 40.4, ciclos: 42.6, virreinato: 45.0, dos_mil: 46.2, serie: 48.2,
+    lista: 0.2, tacha: 5.0, cordillera: 5.9, huanca: 14.4, altura: 16.1, mercurio: 20.3, plata: 22.5, limpiar: 24.9, perdio: 28.1, otros: 29.3,
+    nombre_1: 31.7, nombre_2: 33.7, nombre_3: 36.8, lazo: 38.3, lazo_llega: 40.3, nombre_4: 42.1, nombre_5: 44.1, nombre_6: 46.4,
+    capitulos: 49.2, ciclos: 51.4, virreinato: 53.9, dos_mil: 55.1, serie: 57.1,
   },
   props: {
     ficha: 'HUANCAVELICA · 1758 · ~3600 M.S.N.M.',
@@ -66,10 +76,13 @@ export const ejemplo: Ejemplo<typeof esquema> = {
     abre: { nombre: 'Antonio de Ulloa', en: 1758, detalle: '1758' },
     denunciantes: [
       { nombre: 'Domingo Elías', en: 1853, detalle: '1853' },
+      { nombre: 'Francisco García Calderón Landa', corto: 'García Calderón', en: 1871.5 },
       { nombre: 'Manuel González Prada', en: 1907.5 },
       { nombre: 'Jorge Basadre', en: 1947 },
       { nombre: 'Héctor Vargas Haya', en: 1976.5 },
+      { nombre: 'Mario Vargas Llosa', en: 1995.5 },
     ],
+    lazo: { de: 'Antonio de Ulloa', a: 'Manuel González Prada' },
     capitulos: [
       { desde: 1750, hasta: 1820, titulo: 'El fracaso de las reformas coloniales' },
       { desde: 1821, hasta: 1859, titulo: 'Cimientos socavados de la temprana república' },

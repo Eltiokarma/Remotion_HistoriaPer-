@@ -4797,7 +4797,7 @@
   ]
  },
  "s10": {
-  "duracion": 49.62,
+  "duracion": 58.42,
   "frases": [
    {
     "desde": 0.3,
@@ -4806,67 +4806,77 @@
    },
    {
     "desde": 3.35,
-    "hasta": 5.75,
+    "hasta": 5.71,
     "texto": "Está contado desde los que denunciaron."
    },
    {
-    "desde": 6.2,
-    "hasta": 24.12,
+    "desde": 6.16,
+    "hasta": 24.09,
     "texto": "Empieza con Antonio de Ulloa, un marino y científico español que en mil setecientos cincuenta y ocho llegó a gobernar Huancavelica, a más de tres mil quinientos metros de altura, a cargo de la mina de mercurio de la que dependía la plata de todo el virreinato."
    },
    {
-    "desde": 24.57,
-    "hasta": 25.96,
+    "desde": 24.54,
+    "hasta": 25.9,
     "texto": "Intentó limpiarla."
    },
    {
-    "desde": 26.91,
-    "hasta": 27.65,
+    "desde": 26.85,
+    "hasta": 27.56,
     "texto": "Y perdió."
    },
    {
-    "desde": 28.9,
-    "hasta": 30.36,
+    "desde": 28.81,
+    "hasta": 30.26,
     "texto": "Después vienen otros."
    },
    {
-    "desde": 31.21,
-    "hasta": 32.46,
+    "desde": 31.11,
+    "hasta": 32.35,
     "texto": "Domingo Elías."
    },
    {
-    "desde": 33.26,
-    "hasta": 34.91,
-    "texto": "Manuel González Prada."
+    "desde": 33.1,
+    "hasta": 35.46,
+    "texto": "Francisco García Calderón Landa."
    },
    {
-    "desde": 35.71,
-    "hasta": 37.03,
+    "desde": 36.21,
+    "hasta": 40.19,
+    "texto": "Manuel González Prada, que por su madre descendía de Ulloa."
+   },
+   {
+    "desde": 42.14,
+    "hasta": 43.41,
     "texto": "Jorge Basadre."
    },
    {
-    "desde": 37.83,
-    "hasta": 39.16,
+    "desde": 44.16,
+    "hasta": 45.58,
     "texto": "Héctor Vargas Haya."
    },
    {
-    "desde": 40.41,
-    "hasta": 41.83,
+    "desde": 46.33,
+    "hasta": 47.96,
+    "texto": "Mario Vargas Llosa."
+   },
+   {
+    "desde": 49.21,
+    "hasta": 50.62,
     "texto": "Siete capítulos."
    },
    {
-    "desde": 42.58,
-    "hasta": 43.74,
+    "desde": 51.37,
+    "hasta": 52.56,
     "texto": "Siete ciclos."
    },
    {
-    "desde": 44.69,
-    "hasta": 46.87,
+    "desde": 53.51,
+    "hasta": 55.65,
     "texto": "Del virreinato al año dos mil."
    },
    {
-    "desde": 48.22,
-    "hasta": 49.62,
+    "desde": 57.0,
+    "hasta": 58.42,
     "texto": "Eso es esta serie."
    }
   ],
@@ -4916,331 +4926,387 @@
     "contado"
    ],
    [
-    4.13,
+    4.12,
     "desde"
    ],
    [
-    4.49,
+    4.47,
     "los"
    ],
    [
-    4.73,
+    4.71,
     "que"
    ],
    [
-    4.97,
+    4.94,
     "denunciaron."
    ],
    [
-    6.2,
+    6.16,
     "Empieza"
    ],
    [
-    6.75,
+    6.71,
     "con"
    ],
    [
-    7.03,
+    6.98,
     "Antonio"
    ],
    [
-    7.58,
+    7.53,
     "de"
    ],
    [
-    7.78,
+    7.74,
     "Ulloa,"
    ],
    [
-    8.26,
+    8.22,
     "un"
    ],
    [
-    8.47,
+    8.43,
     "marino"
    ],
    [
-    8.95,
+    8.91,
     "y"
    ],
    [
-    9.09,
+    9.04,
     "científico"
    ],
    [
-    9.84,
+    9.8,
     "español"
    ],
    [
-    10.39,
+    10.35,
     "que"
    ],
    [
-    10.67,
+    10.62,
     "en"
    ],
    [
-    10.87,
+    10.83,
     "mil"
    ],
    [
-    11.15,
+    11.11,
     "setecientos"
    ],
    [
-    11.97,
+    11.93,
     "cincuenta"
    ],
    [
-    12.66,
+    12.62,
     "y"
    ],
    [
-    12.79,
+    12.76,
     "ocho"
    ],
    [
-    13.14,
+    13.1,
     "llegó"
    ],
    [
-    13.55,
+    13.51,
     "a"
    ],
    [
-    13.69,
+    13.65,
     "gobernar"
    ],
    [
-    14.3,
+    14.27,
     "Huancavelica,"
    ],
    [
-    15.26,
+    15.23,
     "a"
    ],
    [
-    15.4,
+    15.37,
     "más"
    ],
    [
-    15.68,
+    15.64,
     "de"
    ],
    [
-    15.88,
+    15.85,
     "tres"
    ],
    [
-    16.22,
+    16.19,
     "mil"
    ],
    [
-    16.5,
+    16.47,
     "quinientos"
    ],
    [
-    17.25,
+    17.22,
     "metros"
    ],
    [
-    17.73,
+    17.7,
     "de"
    ],
    [
-    17.94,
+    17.91,
     "altura,"
    ],
    [
-    18.49,
+    18.46,
     "a"
    ],
    [
-    18.63,
+    18.6,
     "cargo"
    ],
    [
-    19.04,
+    19.01,
     "de"
    ],
    [
-    19.24,
+    19.22,
     "la"
    ],
    [
-    19.45,
+    19.42,
     "mina"
    ],
    [
-    19.79,
+    19.77,
     "de"
    ],
    [
-    20.0,
+    19.97,
     "mercurio"
    ],
    [
-    20.62,
+    20.59,
     "de"
    ],
    [
-    20.82,
+    20.8,
     "la"
    ],
    [
-    21.03,
+    21.0,
     "que"
    ],
    [
-    21.3,
+    21.28,
     "dependía"
    ],
    [
-    21.92,
+    21.9,
     "la"
    ],
    [
-    22.13,
+    22.1,
     "plata"
    ],
    [
-    22.54,
+    22.51,
     "de"
    ],
    [
-    22.75,
+    22.72,
     "todo"
    ],
    [
-    23.09,
+    23.06,
     "el"
    ],
    [
-    23.29,
+    23.27,
     "virreinato."
    ],
    [
-    24.57,
+    24.54,
     "Intentó"
    ],
    [
-    25.15,
+    25.12,
     "limpiarla."
    ],
    [
-    26.91,
+    26.85,
     "Y"
    ],
    [
-    27.06,
+    26.99,
     "perdió."
    ],
    [
-    28.9,
+    28.81,
     "Después"
    ],
    [
-    29.43,
+    29.34,
     "vienen"
    ],
    [
-    29.89,
+    29.8,
     "otros."
    ],
    [
-    31.21,
+    31.11,
     "Domingo"
    ],
    [
-    31.87,
+    31.78,
     "Elías."
    ],
    [
-    33.26,
+    33.1,
+    "Francisco"
+   ],
+   [
+    33.82,
+    "García"
+   ],
+   [
+    34.32,
+    "Calderón"
+   ],
+   [
+    34.96,
+    "Landa."
+   ],
+   [
+    36.21,
     "Manuel"
    ],
    [
-    33.76,
+    36.68,
     "González"
    ],
    [
-    34.41,
-    "Prada."
+    37.27,
+    "Prada,"
    ],
    [
-    35.71,
+    37.74,
+    "que"
+   ],
+   [
+    38.0,
+    "por"
+   ],
+   [
+    38.27,
+    "su"
+   ],
+   [
+    38.47,
+    "madre"
+   ],
+   [
+    38.87,
+    "descendía"
+   ],
+   [
+    39.53,
+    "de"
+   ],
+   [
+    39.73,
+    "Ulloa."
+   ],
+   [
+    42.14,
     "Jorge"
    ],
    [
-    36.24,
+    42.65,
     "Basadre."
    ],
    [
-    37.83,
+    44.16,
     "Héctor"
    ],
    [
-    38.29,
+    44.66,
     "Vargas"
    ],
    [
-    38.76,
+    45.15,
     "Haya."
    ],
    [
-    40.41,
+    46.33,
+    "Mario"
+   ],
+   [
+    46.82,
+    "Vargas"
+   ],
+   [
+    47.39,
+    "Llosa."
+   ],
+   [
+    49.21,
     "Siete"
    ],
    [
-    40.91,
+    49.71,
     "capítulos."
    ],
    [
-    42.58,
+    51.37,
     "Siete"
    ],
    [
-    43.08,
+    51.88,
     "ciclos."
    ],
    [
-    44.69,
+    53.51,
     "Del"
    ],
    [
-    44.97,
+    53.79,
     "virreinato"
    ],
    [
-    45.74,
+    54.55,
     "al"
    ],
    [
-    45.95,
+    54.75,
     "año"
    ],
    [
-    46.23,
+    55.03,
     "dos"
    ],
    [
-    46.52,
+    55.31,
     "mil."
    ],
    [
-    48.22,
+    57.0,
     "Eso"
    ],
    [
-    48.51,
+    57.3,
     "es"
    ],
    [
-    48.73,
+    57.52,
     "esta"
    ],
    [
-    49.1,
+    57.89,
     "serie."
    ]
   ]

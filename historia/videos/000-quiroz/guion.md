@@ -180,7 +180,7 @@ El resultado fue *Corrupt Circles*, publicado en inglés en 2008. Ganó premios,
 **VO:**
 Pero el libro no es una lista de ladrones. Está contado desde los que denunciaron. Empieza con Antonio de Ulloa, un marino y científico español que en 1758 llegó a gobernar Huancavelica, a más de tres mil quinientos metros de altura, a cargo de la mina de mercurio de la que dependía la plata de todo el virreinato. Intentó limpiarla. [PAUSA 0,5s] Y perdió. [PAUSA 0,8s]
 
-Después vienen otros. [PAUSA 0,4s] Domingo Elías. [PAUSA 0,3s] Manuel González Prada. [PAUSA 0,3s] Jorge Basadre. [PAUSA 0,3s] Héctor Vargas Haya. [PAUSA 0,8s: la cámara recorre la línea de un nombre al otro]
+Después vienen otros. [PAUSA 0,4s] Domingo Elías. [PAUSA 0,3s] Francisco García Calderón Landa. [PAUSA 0,3s] Manuel González Prada, que por su madre descendía de Ulloa. [PAUSA 1,5s: el arco vuelve hasta Ulloa] Jorge Basadre. [PAUSA 0,3s] Héctor Vargas Haya. [PAUSA 0,3s] Mario Vargas Llosa. [PAUSA 0,8s: la cámara recorre la línea de un nombre al otro]
 
 Siete capítulos. Siete ciclos. Del virreinato al año 2000. [PAUSA 1s] Eso es esta serie.
 
@@ -188,8 +188,9 @@ Siete capítulos. Siete ciclos. Del virreinato al año 2000. [PAUSA 1s] Eso es e
 - Perfil de cordillera en vector y un punto rojo que baja a Huancavelica. Ficha mono: `HUANCAVELICA · 1758 · ~3.600 m.s.n.m.`
 - Una gota de mercurio (círculo plateado con brillo) que se convierte en una barra de plata.
 - "Y perdió.": corte a negro de 10 frames.
-- **El recorrido:** del negro sale una línea de tiempo con los siete capítulos, cada uno con el largo de sus años. Empieza en Ulloa (1758): su cuadrito rojo de corrector y su nombre. Con «Después vienen otros», la cámara toma impulso y recorre la línea hacia la derecha, con una flecha delante; frena en cada nombre justo cuando la voz lo dice (Elías en 1853; González Prada, Basadre y Vargas Haya en su capítulo). Al cruzar el borde de un capítulo suena un tic, y el título del capítulo pasa de fondo, grande y tenue. Los nombres quedan atrás, encendidos: una genealogía.
-- «Siete capítulos»: la cámara toma aire y se abre hasta ver la línea entera; los nombres se apagan y quedan los cuadritos rojos. «Siete ciclos»: los capítulos se encienden uno por uno como bloques. «Del virreinato al año 2000»: 1750 y 2000 en las puntas. «Eso es esta serie»: la línea baja y arriba aparece el índice.
+- **El recorrido:** del negro sale una línea de tiempo con los siete capítulos, cada uno con el largo de sus años. Empieza en Ulloa (1758): su cuadrito rojo de corrector y su nombre. Con «Después vienen otros», la cámara toma impulso y recorre la línea hacia la derecha, con una flecha delante; frena en cada nombre justo cuando la voz lo dice: uno por capítulo (Elías en 1853; García Calderón, González Prada, Basadre, Vargas Haya y Vargas Llosa en el suyo). Los nombres van a dos alturas, alternados, para que no se pisen. Al cruzar el borde de un capítulo suena un tic, y el título del capítulo pasa de fondo, grande y tenue. Los nombres quedan atrás, encendidos: una genealogía.
+- «…que por su madre descendía de Ulloa»: la cámara retrocede y se aleja lo justo para ver a los dos; un arco fino sale de González Prada y vuelve, por encima de los nombres, hasta Ulloa, que se enciende. Se queda medio segundo con los dos unidos y sigue.
+- «Siete capítulos»: la cámara toma aire y se abre hasta ver la línea entera; los nombres y el arco se apagan y quedan siete cuadritos rojos, uno por capítulo. «Siete ciclos»: los capítulos se encienden uno por uno como bloques. «Del virreinato al año 2000»: 1750 y 2000 en las puntas. «Eso es esta serie»: la línea baja y arriba aparece el índice.
 - **Mapa de la serie:** el índice, con los siete capítulos reales:
   `1750–1820` El fracaso de las reformas coloniales
   `1821–1859` Cimientos socavados de la temprana república

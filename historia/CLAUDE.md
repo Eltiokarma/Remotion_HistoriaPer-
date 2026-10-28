@@ -215,7 +215,8 @@ en la cabeza los meses, los kilómetros o los pasos que hay en medio es lo que l
   tiempo o del espacio que dice la voz) y el silencio es su mejor momento (el viaje ocupa la pausa).
 - Los modelos: `LineaDeTiempo` en 000·s01 (de la muerte de Quiroz a la salida del libro, mes por
   mes) y en 000·s10 (los siete capítulos, con el largo real de sus años: la cámara va de un
-  denunciante al siguiente, se abre, los capítulos se encienden y la línea se vuelve el índice); el
+  denunciante al siguiente, mira hacia atrás cuando la voz une a dos, se abre, los capítulos se
+  encienden y la línea se vuelve el índice); el
   viaje Lima → Nueva York en 000·s05 (`Mapa`). Se puede aplicar, por ejemplo, a los años entre la
   tesis y el libro (000·s04).
 

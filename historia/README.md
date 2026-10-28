@@ -139,7 +139,8 @@ pueden combinar.
     (100 unidades que se desprenden), `GraficoNiveles` (un valor por década sobre bandas en escala
     real; la de abajo, vacía), `LineaDeTiempo` (se recorre con la cámara: lo recorrido se enciende,
     una flecha va delante, el destino brilla al acercarse; tramos iguales o con el largo real de
-    sus años, personas, bloques que se encienden, puntas y un brillo que la recorre), `Dispersion` (nube de puntos y regresión
+    sus años, personas en dos alturas, arcos de parentesco, bloques que se encienden, puntas y un
+    brillo que la recorre), `Dispersion` (nube de puntos y regresión
     de verdad), `CapasDeTiempo`, `CirculosRed`, `IndiceSerie`, `LomosDeLibro`, `Estante`;
   - objetos: `Balanza`, `Brujula`, `TelevisorCRT` (estática, nunca imágenes), `GotaMercurio`
     (mercurio que se vuelve plata), `CartelObra`, `Aula`, `Calendario`, `Piscina`.

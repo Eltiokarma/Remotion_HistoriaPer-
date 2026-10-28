@@ -790,7 +790,7 @@
       "id": "s10",
       "seccion": "la serie",
       "componente": "Denunciantes",
-      "duracion_s": 49.62,
+      "duracion_s": 58.42,
       "cola_s": 4.5,
       "intensidad": 3,
       "cambio": "de una lista de ladrones a una historia contada por los que denunciaron",
@@ -798,24 +798,28 @@
       "transicion_salida": "corte",
       "beats": {
         "lista": 0.2,
-        "tacha": 4.92,
-        "cordillera": 5.85,
-        "huanca": 14.2,
-        "altura": 15.88,
-        "mercurio": 19.94,
-        "plata": 22.13,
-        "limpiar": 24.51,
-        "perdio": 27.66,
-        "otros": 28.9,
-        "nombre_1": 31.21,
-        "nombre_2": 33.26,
-        "nombre_3": 35.71,
-        "nombre_4": 37.83,
-        "capitulos": 40.41,
-        "ciclos": 42.58,
-        "virreinato": 44.97,
-        "dos_mil": 46.23,
-        "serie": 48.22
+        "tacha": 4.9,
+        "cordillera": 5.8,
+        "huanca": 14.16,
+        "altura": 15.85,
+        "mercurio": 19.92,
+        "plata": 22.1,
+        "limpiar": 24.5,
+        "perdio": 27.57,
+        "otros": 28.81,
+        "nombre_1": 31.11,
+        "nombre_2": 33.1,
+        "nombre_3": 36.21,
+        "lazo": 37.74,
+        "lazo_llega": 39.73,
+        "nombre_4": 42.14,
+        "nombre_5": 44.16,
+        "nombre_6": 46.33,
+        "capitulos": 49.21,
+        "ciclos": 51.37,
+        "virreinato": 53.79,
+        "dos_mil": 55.03,
+        "serie": 57.0
       },
       "props": {
         "ficha": "HUANCAVELICA · 1758 · ~3600 M.S.N.M.",
@@ -832,6 +836,11 @@
             "detalle": "1853"
           },
           {
+            "nombre": "Francisco García Calderón Landa",
+            "corto": "García Calderón",
+            "en": 1871.5
+          },
+          {
             "nombre": "Manuel González Prada",
             "en": 1907.5
           },
@@ -842,8 +851,16 @@
           {
             "nombre": "Héctor Vargas Haya",
             "en": 1976.5
+          },
+          {
+            "nombre": "Mario Vargas Llosa",
+            "en": 1995.5
           }
         ],
+        "lazo": {
+          "de": "Antonio de Ulloa",
+          "a": "Manuel González Prada"
+        },
         "capitulos": [
           {
             "desde": 1750,
@@ -888,6 +905,11 @@
           "beat": "otros",
           "movimiento": "recorre la línea de tiempo hacia la derecha, de Ulloa a cada nombre: toma impulso, arranca y frena en cada uno",
           "motivo": "«después vienen otros»: los denunciantes se suceden en el tiempo y el espectador atraviesa los siglos con ellos"
+        },
+        {
+          "beat": "lazo",
+          "movimiento": "retrocede y se aleja lo justo para ver a Ulloa y a González Prada; un arco va de uno al otro y la guía; después sigue hacia la derecha",
+          "motivo": "«que por su madre descendía de Ulloa»: uno de los que vinieron después desciende del primero; la mirada vuelve al comienzo de la línea"
         },
         {
           "beat": "capitulos",

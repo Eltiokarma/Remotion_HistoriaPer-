@@ -13,6 +13,17 @@ export type EventoTiempo = {
    * persona: alguien (un cuadrito de corrector y su nombre).
    */
   tono: 'sombra' | 'luz' | 'nota' | 'persona';
+  /** persona: 1 = el nombre va más arriba, con una línea fina hasta su cuadrito (para que dos vecinos no se pisen). */
+  nivel?: 0 | 1;
+};
+
+/** Un parentesco entre dos personas de la línea: un arco que va de una a la otra, por encima de sus nombres. */
+export type Lazo = {
+  /** Índices en `eventos`: el arco sale de `desde` y se dibuja hacia `hasta`. */
+  desde: number;
+  hasta: number;
+  /** 0–1: cuánto del arco está dibujado. */
+  dibujo: number;
 };
 
 type Props = {
@@ -56,10 +67,13 @@ type Props = {
   nombres?: number;
   /** 0–1: un brillo que corre por la línea de punta a punta (0 y 1: no se ve). */
   barrido?: number;
+  lazos?: Lazo[];
   y?: number;
 };
 
 const PARALAJE = 0.35;
+/** Cuánto más arriba va el nombre de una persona de nivel 1. */
+const ALTO_NIVEL = 84;
 
 /**
  * Una línea de tiempo que se recorre con la cámara, para que el espectador atraviese el tiempo en
@@ -70,7 +84,7 @@ const PARALAJE = 0.35;
  */
 export const LineaDeTiempo: React.FC<Props> = ({
   paleta, id, tramos, cortes: cortesProp, subtramos, fondo, eventos, centro, escala, recorrido, aparece, guia = 0, realce = [], tras = [],
-  fondoVisible = 1, bandas = [], extremos = 0, rotulosExtremos, nombres = 1, barrido = 0, y = 560,
+  fondoVisible = 1, bandas = [], extremos = 0, rotulosExtremos, nombres = 1, barrido = 0, lazos = [], y = 560,
 }) => {
   const X = (u: number) => 960 + (u - centro) * escala;
   const n = tramos.length;
@@ -196,13 +210,15 @@ export const LineaDeTiempo: React.FC<Props> = ({
           if (e.tono === 'persona') {
             // el cuadrito rojo de corrector (el mismo de las fichas) y el nombre; al llegar, el nombre se enciende
             const lado = 14 + 6 * extra;
+            const yNombre = y - 44 - ALTO_NIVEL * (e.nivel ?? 0);
             return (
               <g key={k} opacity={llega}>
                 <rect x={x - lado / 2} y={y - lado / 2} width={lado} height={lado} fill={paleta.rojo} stroke={alfa(tinta, 0.6)} strokeWidth={1} />
                 {/* el nombre sube apenas mientras aparece: llega, no se enciende de golpe */}
                 <g opacity={nombres} transform={`translate(0 ${10 * (1 - llega)})`}>
-                  <text x={x} y={y - 44} textAnchor="middle" fill={alfa(tinta, 0.75 + 0.25 * extra)} fontFamily={fuente.libro} fontStyle="italic" fontSize={38}>{e.rotulo}</text>
-                  {e.detalle ? <text x={x} y={y - 92} textAnchor="middle" fill={alfa(tinta, 0.55)} fontFamily={fuente.mono} fontSize={19} letterSpacing={3}>{e.detalle}</text> : null}
+                  {e.nivel ? <line x1={x} x2={x} y1={y - 14} y2={yNombre + 10} stroke={alfa(tinta, 0.3)} strokeWidth={1.5} /> : null}
+                  <text x={x} y={yNombre} textAnchor="middle" fill={alfa(tinta, 0.75 + 0.25 * extra)} fontFamily={fuente.libro} fontStyle="italic" fontSize={38}>{e.rotulo}</text>
+                  {e.detalle ? <text x={x} y={yNombre - 48} textAnchor="middle" fill={alfa(tinta, 0.55)} fontFamily={fuente.mono} fontSize={19} letterSpacing={3}>{e.detalle}</text> : null}
                 </g>
               </g>
             );
@@ -241,6 +257,29 @@ export const LineaDeTiempo: React.FC<Props> = ({
                 <text x={x} y={y - 46} textAnchor="middle" fill={tinta} fontFamily={fuente.mono} fontSize={30} letterSpacing={3}>{e.rotulo}</text>
                 {e.detalle ? <text x={x} y={y - 84} textAnchor="middle" fill={alfa(tinta, 0.75)} fontFamily={fuente.mono} fontSize={20} letterSpacing={3}>{e.detalle}</text> : null}
               </g>
+            </g>
+          );
+        })}
+
+        {/* los lazos: un arco fino de un nombre a otro, por encima de los nombres; se dibuja con una
+            punta que lo guía y, al llegar, deja un punto */}
+        {lazos.map((l, j) => {
+          const a = eventos[l.desde], b = eventos[l.hasta];
+          if (!a || !b || l.dibujo <= 0) return null;
+          // de la cabeza de un nombre a la del otro (más arriba si tiene detalle)
+          const tope = (e: EventoTiempo) => y - 44 - ALTO_NIVEL * (e.nivel ?? 0) - (e.detalle ? 48 + 26 : 42);
+          const x0 = X(a.en), y0 = tope(a), x1 = X(b.en), y1 = tope(b);
+          const yc = Math.min(y0, y1) - 150;
+          const k = clamp(l.dibujo);
+          // la cabeza del arco: el punto de la curva (x0,y0) → (x0,yc) → (x1,yc) → (x1,y1) en k
+          const curva = (p0: number, c0: number, c1: number, p1: number) =>
+            (1 - k) ** 3 * p0 + 3 * (1 - k) ** 2 * k * c0 + 3 * (1 - k) * k ** 2 * c1 + k ** 3 * p1;
+          return (
+            <g key={`l${j}`} opacity={nombres}>
+              <path d={`M${x0} ${y0} C${x0} ${yc} ${x1} ${yc} ${x1} ${y1}`} fill="none" stroke={alfa(paleta.ocre, 0.8)} strokeWidth={2}
+                strokeLinecap="round" pathLength={1} strokeDasharray={`${k} 1`} />
+              <circle cx={x0} cy={y0} r={3.5} fill={paleta.ocre} />
+              <circle cx={curva(x0, x0, x1, x1)} cy={curva(y0, yc, yc, y1)} r={k < 1 ? 4.5 : 3.5} fill={paleta.ocre} />
             </g>
           );
         })}

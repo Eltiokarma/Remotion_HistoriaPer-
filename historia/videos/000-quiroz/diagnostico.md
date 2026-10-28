@@ -560,7 +560,9 @@ recorre; frena en cada nombre cuando la voz lo dice, cada uno en el capítulo de
 título del capítulo pasa de fondo. Con «Siete capítulos» se abre hasta ver la línea entera; con
 «Siete ciclos» los capítulos se encienden uno por uno; un brillo la recorre con «del virreinato al
 año dos mil», y con «Eso es esta serie» la línea baja y se vuelve el índice. La voz partió los
-nombres en frases, con pausas cortas (la escena pasó de 44,8 a 49,6 s de voz). Con las aperturas
+nombres en frases, con pausas cortas. Después se sumaron García Calderón y Vargas Llosa (la voz
+nombra a los siete, uno por capítulo) y el parentesco de González Prada con Ulloa, con una mirada
+de la cámara hacia atrás y un arco que los une; la escena pasó de 44,8 a 58,4 s de voz. Con las aperturas
 de los capítulos 3 a 7 quedó confirmado: cada capítulo abre con su denunciante (González Prada el
 4, Basadre el 5, Vargas Haya el 6). Lo demás de s10 sigue en
 rojo: la frase de Ulloa (47 palabras, 27 s de voz seguida) es tarea de la reescritura (§3).
