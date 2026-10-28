@@ -95,6 +95,7 @@ escribió Gerson: el resto se aplica al reescribirlo.
 | s04 | Caso Novoa: reclamo de 500.000–600.000 pesos, aprobado en 948.500 pesos en vales con Torrico de por medio; ella recibe unos 180.000 | Cap. 2, p. 171 | ✔ (no está en el video; sirve para el tablero del mecanismo) |
 | s04 | Adónde fueron los 24 millones: ~16 % a funcionarios, más del 30 % en comisiones ilegales, ~50 % convertido en deuda externa | Cap. 2, p. 172 | ✔ (no está en el video) |
 | s04 | El final: la Junta de Examen Fiscal encontró 12,2 millones en 141 expedientes irregulares; Echenique, Torrico y Mendiburu huyeron; la ley del 11 de marzo de 1857, «de tabla rasa», absolvió a los beneficiados | Cap. 2, pp. 182–185 y n. 147 | ✔ (no está en el video) |
+| s05 | Contador del viaje: ≈ 5900 km de Lima a Nueva York en línea recta | Calculado: distancia ortodrómica entre el centro de Lima (12,05° S, 77,04° O) y el de Nueva York (40,71° N, 74,01° O), radio terrestre de 6371 km: 5875 km, redondeada a 5900 | ✔ (dato geográfico, no histórico) |
 | s05 | París como meca; Columbia; beca de Herbert S. Klein; historia cuantitativa y regresiones múltiples | Prólogo, p. 18 | ✔ · C13, C14 |
 | s05 | Kenneth Maxwell: profundidad y claridad | Prólogo, p. 19 | ✔ · C15 |
 | s05 | Bancos, crédito colonial, casa Grace; «la máxima autoridad en la historia financiera peruana» | Prólogo, pp. 19–20 | ✔ |

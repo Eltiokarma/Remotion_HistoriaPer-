@@ -547,3 +547,9 @@ silencio de 2,5 s entre «Murió en enero de 2013» y «El libro salió en mayo�
 cámara recorre una línea de tiempo de enero a mayo (`LineaDeTiempo`): el espectador atraviesa los
 meses en vez de saltarlos. La regla quedó en el CLAUDE.md (§4, «El movimiento guía»).
 
+**s05, el viaje (ya hecho).** La ruta a Nueva York ya no se dibuja en un segundo y medio sobre el
+mapa quieto: la cámara hace el viaje (anticipación, seguimiento con aire delante, paralelos que se
+encienden, contador de kilómetros, llegada y apertura con asentamiento), con dos pausas nuevas en la
+voz (0,8 s después de «París» y 1,8 s después de «Nueva York»). El resto de la escena (método,
+claridad, carrera, ideas) sigue en rojo: 50 s de voz seguida; es tarea de la reescritura (§3).
+

@@ -14,6 +14,8 @@ export const esquema = z.object({
   tentacion: lugar,
   /** A donde fue de verdad. */
   destino: lugar,
+  /** Distancia en línea recta del origen al destino, en km (el contador del viaje; sin ella, no hay contador). */
+  distancia_km: z.number().int().positive().optional(),
   /** Encuadre del mapa en grados: [oeste, sur, este, norte]. */
   encuadre: z.tuple([z.number(), z.number(), z.number(), z.number()]).default([-105, -28, 22, 62]),
   ficha: z.string(),
@@ -28,8 +30,10 @@ export const beats = {
   mapa: 'aparece el mapa',
   paris: 'sale la ruta hacia la tentación',
   duda: 'la ruta se detiene, duda y se borra',
-  nuevayork: 'sale la ruta hacia el destino',
-  ficha: 'la cámara se acerca y se escribe la ficha',
+  sale: 'la cámara retrocede apenas y se lanza: sigue la ruta hacia el destino (se encienden los paralelos al cruzarlos)',
+  llega: 'la ruta llega: sello y campana',
+  abre: 'la cámara se abre hasta ver la ruta entera, y se asienta',
+  ficha: 'se escribe la ficha',
   puntos: 'papel milimetrado: caen los puntos (3 s)',
   recta: 'se traza la recta de regresión',
   discursos: 'los bloques de discurso se apagan',
@@ -45,13 +49,14 @@ export const beats = {
 
 /** Como se usa en 000-quiroz. */
 export const ejemplo: Ejemplo<typeof esquema> = {
-  duracion_s: 61.8,
+  duracion_s: 64.7,
   cola_s: 1.5,
-  beats: { mapa: 0.2, paris: 7.0, duda: 8.4, nuevayork: 9.9, ficha: 12.1, puntos: 16.3, recta: 20.0, discursos: 25.0, balanza: 26.3, profundidad: 29.5, claridad: 31.7, estante: 32.8, temas: 37.4, aulas: 40.6, brujula: 48.5, giro: 51.4 },
+  beats: { mapa: 0.2, paris: 6.4, duda: 7.7, sale: 8.9, llega: 12.4, abre: 13.1, ficha: 14.9, puntos: 19.1, recta: 22.9, discursos: 28, balanza: 29.3, profundidad: 32.5, claridad: 34.6, estante: 35.7, temas: 40.3, aulas: 43.5, brujula: 51.4, giro: 54.2 },
   props: {
     origen: { nombre: 'Lima', lon: -77.04, lat: -12.05 },
     tentacion: { nombre: 'París', lon: 2.35, lat: 48.86 },
     destino: { nombre: 'Nueva York', lon: -74.0, lat: 40.71 },
+    distancia_km: 5900,
     encuadre: [-105, -28, 22, 62],
     ficha: 'COLUMBIA UNIVERSITY · BECA · H. S. KLEIN',
     balanza: ['PROFUNDIDAD', 'CLARIDAD'],

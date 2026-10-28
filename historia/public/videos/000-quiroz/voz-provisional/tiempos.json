@@ -1929,51 +1929,51 @@
   ]
  },
  "s05": {
-  "duracion": 61.83,
+  "duracion": 64.67,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 3.57,
+    "hasta": 3.6,
     "texto": "A comienzos de los ochenta hace algo poco común."
    },
    {
-    "desde": 4.02,
-    "hasta": 7.44,
+    "desde": 4.05,
+    "hasta": 7.58,
     "texto": "Casi todos los historiadores peruanos soñaban con París."
    },
    {
-    "desde": 7.89,
-    "hasta": 11.63,
+    "desde": 8.83,
+    "hasta": 12.68,
     "texto": "Él postula a la Universidad de Columbia, en Nueva York."
    },
    {
-    "desde": 12.08,
-    "hasta": 15.9,
+    "desde": 14.93,
+    "hasta": 18.72,
     "texto": "El historiador Hérbert Kláin lo acepta y le da una beca."
    },
    {
-    "desde": 16.35,
-    "hasta": 25.8,
+    "desde": 19.17,
+    "hasta": 28.79,
     "texto": "Allí aprende historia cuantitativa: usar estadística, regresiones y computadoras para pensar el pasado con números, no solo con discursos."
    },
    {
-    "desde": 26.25,
-    "hasta": 32.36,
+    "desde": 29.24,
+    "hasta": 35.3,
     "texto": "Y de otro profesor, Kénet Máxuel, aprende que la profundidad no sirve de nada sin claridad."
    },
    {
-    "desde": 32.81,
-    "hasta": 40.16,
+    "desde": 35.75,
+    "hasta": 43.07,
     "texto": "Se convierte en la mayor autoridad en historia financiera del Perú: bancos, crédito colonial, la casa Greis."
    },
    {
-    "desde": 40.61,
-    "hasta": 48.03,
+    "desde": 43.52,
+    "hasta": 50.89,
     "texto": "Termina como profesor en el Báruj Cólech y en la Síti Iunivérsiti de Niu Iork, donde forma a cientos de estudiantes."
    },
    {
-    "desde": 48.48,
-    "hasta": 61.83,
+    "desde": 51.34,
+    "hasta": 64.67,
     "texto": "Sus ideas también se mueven: de aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades y un Estado que dejara de ser el botín de unos pocos."
    }
   ],
@@ -1987,579 +1987,579 @@
     "comienzos"
    ],
    [
-    1.1,
+    1.11,
     "de"
    ],
    [
-    1.3,
+    1.31,
     "los"
    ],
    [
-    1.57,
+    1.58,
     "ochenta"
    ],
    [
-    2.1,
+    2.12,
     "hace"
    ],
    [
-    2.44,
+    2.45,
     "algo"
    ],
    [
-    2.77,
+    2.79,
     "poco"
    ],
    [
-    3.11,
+    3.13,
     "común."
    ],
    [
-    4.02,
+    4.05,
     "Casi"
    ],
    [
-    4.32,
+    4.36,
     "todos"
    ],
    [
-    4.68,
+    4.73,
     "los"
    ],
    [
-    4.92,
+    4.98,
     "historiadores"
    ],
    [
-    5.76,
+    5.84,
     "peruanos"
    ],
    [
-    6.3,
+    6.4,
     "soñaban"
    ],
    [
-    6.78,
+    6.9,
     "con"
    ],
    [
-    7.02,
+    7.14,
     "París."
    ],
    [
-    7.89,
+    8.83,
     "Él"
    ],
    [
-    8.09,
+    9.03,
     "postula"
    ],
    [
-    8.62,
+    9.58,
     "a"
    ],
    [
-    8.76,
+    9.72,
     "la"
    ],
    [
-    8.96,
+    9.93,
     "Universidad"
    ],
    [
-    9.76,
+    10.75,
     "de"
    ],
    [
-    9.96,
+    10.96,
     "Columbia,"
    ],
    [
-    10.62,
+    11.65,
     "en"
    ],
    [
-    10.82,
+    11.86,
     "Nueva"
    ],
    [
-    11.23,
+    12.27,
     "York."
    ],
    [
-    12.08,
+    14.93,
     "El"
    ],
    [
-    12.28,
+    15.13,
     "historiador"
    ],
    [
-    13.08,
+    15.93,
     "Hérbert"
    ],
    [
-    13.62,
+    16.46,
     "Kláin"
    ],
    [
-    14.02,
+    16.86,
     "lo"
    ],
    [
-    14.22,
+    17.06,
     "acepta"
    ],
    [
-    14.69,
+    17.52,
     "y"
    ],
    [
-    14.82,
+    17.65,
     "le"
    ],
    [
-    15.02,
+    17.85,
     "da"
    ],
    [
-    15.23,
+    18.05,
     "una"
    ],
    [
-    15.49,
+    18.32,
     "beca."
    ],
    [
-    16.35,
+    19.17,
     "Allí"
    ],
    [
-    16.69,
+    19.51,
     "aprende"
    ],
    [
-    17.23,
+    20.07,
     "historia"
    ],
    [
-    17.84,
+    20.69,
     "cuantitativa:"
    ],
    [
-    18.79,
+    21.66,
     "usar"
    ],
    [
-    19.13,
+    22.0,
     "estadística,"
    ],
    [
-    20.02,
+    22.91,
     "regresiones"
    ],
    [
-    20.83,
+    23.74,
     "y"
    ],
    [
-    20.97,
+    23.87,
     "computadoras"
    ],
    [
-    21.85,
+    24.77,
     "para"
    ],
    [
-    22.19,
+    25.12,
     "pensar"
    ],
    [
-    22.67,
+    25.61,
     "el"
    ],
    [
-    22.87,
+    25.81,
     "pasado"
    ],
    [
-    23.35,
+    26.3,
     "con"
    ],
    [
-    23.62,
+    26.57,
     "números,"
    ],
    [
-    24.23,
+    27.2,
     "no"
    ],
    [
-    24.44,
+    27.41,
     "solo"
    ],
    [
-    24.78,
+    27.75,
     "con"
    ],
    [
-    25.05,
+    28.03,
     "discursos."
    ],
    [
-    26.25,
+    29.24,
     "Y"
    ],
    [
-    26.38,
+    29.37,
     "de"
    ],
    [
-    26.58,
+    29.57,
     "otro"
    ],
    [
-    26.91,
+    29.9,
     "profesor,"
    ],
    [
-    27.58,
+    30.56,
     "Kénet"
    ],
    [
-    27.98,
+    30.95,
     "Máxuel,"
    ],
    [
-    28.51,
+    31.48,
     "aprende"
    ],
    [
-    29.04,
+    32.01,
     "que"
    ],
    [
-    29.31,
+    32.27,
     "la"
    ],
    [
-    29.5,
+    32.47,
     "profundidad"
    ],
    [
-    30.3,
+    33.26,
     "no"
    ],
    [
-    30.5,
+    33.46,
     "sirve"
    ],
    [
-    30.9,
+    33.85,
     "de"
    ],
    [
-    31.1,
+    34.05,
     "nada"
    ],
    [
-    31.43,
+    34.38,
     "sin"
    ],
    [
-    31.7,
+    34.64,
     "claridad."
    ],
    [
-    32.81,
+    35.75,
     "Se"
    ],
    [
-    33.02,
+    35.95,
     "convierte"
    ],
    [
-    33.69,
+    36.62,
     "en"
    ],
    [
-    33.89,
+    36.82,
     "la"
    ],
    [
-    34.1,
+    37.03,
     "mayor"
    ],
    [
-    34.5,
+    37.43,
     "autoridad"
    ],
    [
-    35.17,
+    38.1,
     "en"
    ],
    [
-    35.38,
+    38.3,
     "historia"
    ],
    [
-    35.98,
+    38.9,
     "financiera"
    ],
    [
-    36.72,
+    39.64,
     "del"
    ],
    [
-    36.99,
+    39.91,
     "Perú:"
    ],
    [
-    37.4,
+    40.31,
     "bancos,"
    ],
    [
-    37.94,
+    40.85,
     "crédito"
    ],
    [
-    38.48,
+    41.39,
     "colonial,"
    ],
    [
-    39.15,
+    42.06,
     "la"
    ],
    [
-    39.35,
+    42.26,
     "casa"
    ],
    [
-    39.69,
+    42.6,
     "Greis."
    ],
    [
-    40.61,
+    43.52,
     "Termina"
    ],
    [
-    41.12,
+    44.02,
     "como"
    ],
    [
-    41.44,
+    44.33,
     "profesor"
    ],
    [
-    42.01,
+    44.9,
     "en"
    ],
    [
-    42.2,
+    45.09,
     "el"
    ],
    [
-    42.39,
+    45.28,
     "Báruj"
    ],
    [
-    42.77,
+    45.66,
     "Cólech"
    ],
    [
-    43.21,
+    46.1,
     "y"
    ],
    [
-    43.34,
+    46.22,
     "en"
    ],
    [
-    43.53,
+    46.41,
     "la"
    ],
    [
-    43.72,
+    46.6,
     "Síti"
    ],
    [
-    44.04,
+    46.92,
     "Iunivérsiti"
    ],
    [
-    44.8,
+    47.67,
     "de"
    ],
    [
-    44.99,
+    47.86,
     "Niu"
    ],
    [
-    45.24,
+    48.12,
     "Iork,"
    ],
    [
-    45.62,
+    48.49,
     "donde"
    ],
    [
-    46.0,
+    48.87,
     "forma"
    ],
    [
-    46.38,
+    49.25,
     "a"
    ],
    [
-    46.51,
+    49.38,
     "cientos"
    ],
    [
-    47.02,
+    49.88,
     "de"
    ],
    [
-    47.21,
+    50.07,
     "estudiantes."
    ],
    [
-    48.48,
+    51.34,
     "Sus"
    ],
    [
-    48.75,
+    51.6,
     "ideas"
    ],
    [
-    49.15,
+    52.0,
     "también"
    ],
    [
-    49.68,
+    52.54,
     "se"
    ],
    [
-    49.88,
+    52.74,
     "mueven:"
    ],
    [
-    50.42,
+    53.27,
     "de"
    ],
    [
-    50.62,
+    53.47,
     "aquel"
    ],
    [
-    51.02,
+    53.87,
     "joven"
    ],
    [
-    51.42,
+    54.27,
     "trotskista"
    ],
    [
-    52.15,
+    55.0,
     "pasa"
    ],
    [
-    52.49,
+    55.34,
     "a"
    ],
    [
-    52.62,
+    55.47,
     "una"
    ],
    [
-    52.89,
+    55.74,
     "postura"
    ],
    [
-    53.42,
+    56.27,
     "liberal,"
    ],
    [
-    54.02,
+    56.87,
     "convencido"
    ],
    [
-    54.76,
+    57.6,
     "de"
    ],
    [
-    54.96,
+    57.8,
     "que"
    ],
    [
-    55.22,
+    58.07,
     "el"
    ],
    [
-    55.43,
+    58.27,
     "país"
    ],
    [
-    55.76,
+    58.6,
     "necesitaba"
    ],
    [
-    56.49,
+    59.33,
     "igualdad"
    ],
    [
-    57.09,
+    59.93,
     "de"
    ],
    [
-    57.29,
+    60.13,
     "oportunidades"
    ],
    [
-    58.23,
+    61.07,
     "y"
    ],
    [
-    58.36,
+    61.2,
     "un"
    ],
    [
-    58.56,
+    61.4,
     "Estado"
    ],
    [
-    59.03,
+    61.87,
     "que"
    ],
    [
-    59.3,
+    62.13,
     "dejara"
    ],
    [
-    59.76,
+    62.6,
     "de"
    ],
    [
-    59.96,
+    62.8,
     "ser"
    ],
    [
-    60.23,
+    63.07,
     "el"
    ],
    [
-    60.43,
+    63.27,
     "botín"
    ],
    [
-    60.83,
+    63.67,
     "de"
    ],
    [
-    61.03,
+    63.87,
     "unos"
    ],
    [
-    61.37,
+    64.2,
     "pocos."
    ]
   ]

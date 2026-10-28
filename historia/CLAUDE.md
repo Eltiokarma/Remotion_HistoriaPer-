@@ -145,9 +145,26 @@ transición. Al menos una yuxtaposición deliberada por video, anotada en `"inte
 
 ## 4. Movimiento y animación
 
-**Principios de Disney que aplican:** slow in / slow out; anticipación (un pequeño movimiento
-contrario antes de uno grande); follow through (las capas se asientan en cascada con 2–6 frames
-de desfase); timing = peso (lo importante se mueve más lento y con más masa).
+**Los 12 principios de la animación** (Thomas y Johnston, *The Illusion of Life*). Este canal anima
+papeles, mapas, gráficos y cámara, no personajes: cada principio se traduce a ese mundo, y algunos
+se usan con mesura a propósito.
+
+| # | Principio | Cómo se hace aquí | Herramienta |
+|---|---|---|---|
+| 1 | Comprimir y estirar | Solo en lo físico que cae, aterriza o se transforma: un sello que golpea, una gota, un saco. Nunca en texto ni en datos | escala x/y en el impacto |
+| 2 | Anticipación | Lo que arranca con decisión primero va un poco hacia atrás: una cámara que se lanza, una ruta que sale, algo que salta | `anticipa()` |
+| 3 | Puesta en escena | Una idea por cuadro; luz y viñeta donde tiene que ir el ojo (§5) | `Luz`, viñetas |
+| 4 | Directo y pose a pose | Pose a pose: los beats anclados a la voz. Directo: lo procedural (agua, partículas, papel que tiembla) | `beats`, `azar()` |
+| 5 | Acción continuada y superpuesta | Nada se detiene de golpe ni todo a la vez: lo que llega se pasa y vuelve; las piezas se asientan en cascada con 2–6 frames de desfase | `asienta()`, `spring()` |
+| 6 | Acelerar y desacelerar | Todo movimiento declara su peso; ninguno es lineal | `tramo(…, peso)` |
+| 7 | Arcos | Lo que viaja describe una curva: rutas, flechas, objetos que caen. Una línea recta solo si el guion la pide (una regresión, un borde) | `arco()`, curvas Q |
+| 8 | Acción secundaria | Algo pequeño que acompaña y no compite: el paralelo que se enciende, el contador que suma, el tic al pasar, el polvo del sello | `Sfx`, detalles |
+| 9 | Tiempo | La duración la manda la voz; lo importante se mueve más lento y con más masa | beats, pesos |
+| 10 | Exageración | Reservada para el dato fuerte de cada video (el engranaje que se traba, la banda vacía). Si todo se exagera, nada pesa | — |
+| 11 | Dibujo sólido | Volumen en un mundo plano: sombras, capas, paralaje, papel con relieve | `Papel`, paralaje |
+| 12 | Atractivo | La gramática de la serie (§1.3): papel, tinta, rojo de corrector, grabado | — |
+
+Las variaciones de peso cuentan: si casi todo es `natural`, el video vuelve a sonar a plantilla.
 
 **Easings por peso** (`src/direction/easings.ts`): `solemne`, `pesado`, `natural`, `ligero`,
 `tenso`. Nunca un easing global; cada animación declara su peso (con `tramo(t, desde, dura, peso)`).

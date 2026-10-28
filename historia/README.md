@@ -133,7 +133,9 @@ pueden combinar.
     `PortadaLibro`, `Afiche`, `LibroContable`;
   - grabados: `GrabadoGuanero` (islas, aves, fragata, sacos), `Barco`, `EdificioEstado` (fachada
     con ventanas que se encienden), `Cordillera` (Andes con escala de altura), `Engranaje`;
-  - mapas y datos: `Mapa`, `Globo`, `SiluetaPais`, `RosaDeLosVientos`, `Barra`, `BarraUnidades`
+  - mapas y datos: `Mapa` (rutas en arco; opcionales: camino punteado por delante, faro en el destino,
+    paralelos que se encienden al cruzarlos; `proyeccionDe` y `arco` para que una escena siga la
+    ruta con la cámara, como 000·s05), `Globo`, `SiluetaPais`, `RosaDeLosVientos`, `Barra`, `BarraUnidades`
     (100 unidades que se desprenden), `GraficoNiveles` (un valor por década sobre bandas en escala
     real; la de abajo, vacía), `LineaDeTiempo` (se recorre con la cámara: lo recorrido se enciende,
     una flecha va delante, el destino brilla al acercarse), `Dispersion` (nube de puntos y regresión

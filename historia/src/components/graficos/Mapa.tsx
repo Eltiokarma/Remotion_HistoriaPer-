@@ -1,4 +1,4 @@
-import { getLength, getPointAtLength } from '@remotion/paths';
+import { getLength, getPointAtLength, getTangentAtLength } from '@remotion/paths';
 import { geoGraticule, geoNaturalEarth1, geoPath } from 'd3-geo';
 import type { FeatureCollection, MultiLineString, MultiPolygon } from 'geojson';
 import { useMemo } from 'react';
@@ -28,6 +28,20 @@ type Props = {
   encuadre?: [number, number, number, number];
   /** Aparición del mapa base (0–1). */
   aparece?: number;
+  /** Cuánto se ve, punteado, el tramo que le falta a cada ruta (0–1): el camino se anuncia antes. */
+  adelante?: number[];
+  /** Faro en cada destino (0–1): un brillo que late y crece mientras la ruta se acerca. */
+  faro?: number[];
+  /** Paralelos que se encienden al cruzarlos: latitud, brillo (0–1) y rótulo. */
+  paralelos?: { lat: number; brillo: number; rotulo: string }[];
+  /** Segundos de la escena (para que el faro lata). */
+  t?: number;
+};
+
+/** La proyección de un encuadre, igual a la del mapa: para que una escena siga una ruta con la cámara. */
+export const proyeccionDe = (encuadre: [number, number, number, number]) => {
+  const [o, s, e, n] = encuadre;
+  return geoNaturalEarth1().fitExtent([[40, 60], [1880, 1040]], { type: 'MultiPoint', coordinates: [[o, s], [e, n], [o, n], [e, s]] });
 };
 
 // Mapa base: Natural Earth (dominio público), costas a 1:50 millones y fronteras a 1:110 millones.
@@ -40,7 +54,7 @@ const TIERRA_SIMPLE = feature(topoTierraSimple, topoTierraSimple.objects.land) a
 const FRONTERAS = mesh(topoPaises, topoPaises.objects.countries, (a, b) => a !== b) as unknown as MultiLineString;
 
 /** Arco de A a B levantado hacia el norte (una ruta, no una línea recta). */
-const arco = (a: [number, number], b: [number, number]): string => {
+export const arco = (a: [number, number], b: [number, number]): string => {
   const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2;
   const d = Math.hypot(b[0] - a[0], b[1] - a[1]);
   return `M${a[0].toFixed(1)} ${a[1].toFixed(1)} Q ${(mx - d * 0.12).toFixed(1)} ${(my - d * 0.28).toFixed(1)} ${b[0].toFixed(1)} ${b[1].toFixed(1)}`;
@@ -51,12 +65,9 @@ const arco = (a: [number, number], b: [number, number]): string => {
  * resplandor, fronteras punteadas y rosa de los vientos. Las rutas salen del origen con una
  * cabeza luminosa y al llegar encienden un sello de lacre con el nombre del lugar.
  */
-export const Mapa: React.FC<Props> = ({ paleta, id, origen, destinos, rutas, llegadas, encuadre = [-125, -45, 30, 62], aparece = 1 }) => {
+export const Mapa: React.FC<Props> = ({ paleta, id, origen, destinos, rutas, llegadas, encuadre = [-125, -45, 30, 62], aparece = 1, adelante = [], faro = [], paralelos = [], t = 0 }) => {
   const geo = useMemo(() => {
-    const [o, s, e, n] = encuadre;
-    const proyeccion = geoNaturalEarth1().fitExtent([[40, 60], [1880, 1040]], {
-      type: 'MultiPoint', coordinates: [[o, s], [e, n], [o, n], [e, s]],
-    });
+    const proyeccion = proyeccionDe(encuadre);
     const camino = geoPath(proyeccion);
     const xy = (l: Lugar): [number, number] => proyeccion([l.lon, l.lat]) ?? [0, 0];
     const lima = xy(origen);
@@ -76,6 +87,8 @@ export const Mapa: React.FC<Props> = ({ paleta, id, origen, destinos, rutas, lle
       reticula: camino(geoGraticule().step([15, 15])()) ?? '',
       ecuador: camino({ type: 'LineString', coordinates: Array.from({ length: 73 }, (_, k) => [-180 + k * 5, 0]) }) ?? '',
       lima, puntos, arcos, etiquetas, yEtiqueta, xDerecha,
+      lineaDe: (lat: number) => camino({ type: 'LineString', coordinates: Array.from({ length: 73 }, (_, k) => [-180 + k * 5, lat]) }) ?? '',
+      xyDe: (lon: number, lat: number) => proyeccion([lon, lat]) ?? [0, 0],
     };
   }, [origen, destinos, encuadre]);
   const tierraColor = mezclar(paleta.fondo, paleta.ocre, 0.07);
@@ -110,16 +123,59 @@ export const Mapa: React.FC<Props> = ({ paleta, id, origen, destinos, rutas, lle
         <RosaDeLosVientos x={190} y={880} radio={92} paleta={paleta} />
       </g>
 
-      {/* rutas */}
+      {/* paralelos que se cruzan: se encienden de borde a borde, con su rótulo junto a la ruta */}
+      {paralelos.map((p) => {
+        if (p.brillo <= 0) return null;
+        const [, y] = geo.xyDe(origen.lon, p.lat);
+        return (
+          <g key={p.lat} opacity={p.brillo}>
+            <path d={geo.lineaDe(p.lat)} fill="none" stroke={paleta.ocre} strokeWidth={6} opacity={0.35} filter={`url(#${id}-brillo)`} />
+            <path d={geo.lineaDe(p.lat)} fill="none" stroke={paleta.ocre} strokeWidth={1.4} opacity={0.9} />
+            <text x={geo.lima[0] - 70} y={y - 10} textAnchor="end" fill={paleta.ocre} fontFamily={fuente.mono} fontSize={20} letterSpacing={3}>{p.rotulo}</text>
+          </g>
+        );
+      })}
+
+      {/* faro: el destino se anuncia antes de llegar */}
+      {geo.puntos.map((p, i) => {
+        const f = clamp(faro[i] ?? 0);
+        if (f <= 0) return null;
+        const late = 0.5 + 0.5 * Math.sin(t * 4.2);
+        return (
+          <g key={`faro${i}`}>
+            <circle cx={p[0]} cy={p[1]} r={34 + 26 * f} fill={`url(#${id}-cometa)`} opacity={0.18 + 0.45 * f} />
+            <circle cx={p[0]} cy={p[1]} r={14 + 14 * late} fill="none" stroke={paleta.ocre} strokeWidth={1.5} opacity={(1 - late) * 0.8 * f} />
+            <circle cx={p[0]} cy={p[1]} r={4} fill={paleta.papel} opacity={0.6 + 0.4 * f} />
+          </g>
+        );
+      })}
+
+      {/* rutas: lo recorrido, encendido; lo que falta, punteado; una flecha en la punta */}
       {geo.arcos.map((a, i) => {
         const k = clamp(rutas[i] ?? 0);
-        if (k <= 0) return null;
+        const ad = clamp(adelante[i] ?? 0);
+        if (k <= 0 && ad <= 0) return null;
         const cabeza = getPointAtLength(a.d, a.largo * k) ?? { x: 0, y: 0 };
+        const tg = getTangentAtLength(a.d, a.largo * Math.max(k, 0.001)) ?? { x: 0, y: -1 };
+        const ang = (Math.atan2(tg.y, tg.x) * 180) / Math.PI;
         return (
           <g key={i}>
-            <path d={a.d} pathLength={1} fill="none" stroke={paleta.papel} strokeWidth={7} strokeDasharray={1} strokeDashoffset={1 - k} opacity={0.1} filter={`url(#${id}-brillo)`} />
-            <path d={a.d} pathLength={1} fill="none" stroke={paleta.papel} strokeWidth={2.2} strokeDasharray={1} strokeDashoffset={1 - k} opacity={0.85} />
-            {k < 1 ? <circle cx={cabeza.x} cy={cabeza.y} r={16} fill={`url(#${id}-cometa)`} /> : null}
+            {ad > 0 ? <path d={a.d} fill="none" stroke={paleta.papel} strokeWidth={1.6} strokeDasharray="2 9" strokeLinecap="round" opacity={0.45 * ad} /> : null}
+            {k > 0 ? (
+              <>
+                <path d={a.d} pathLength={1} fill="none" stroke={paleta.papel} strokeWidth={7} strokeDasharray={1} strokeDashoffset={1 - k} opacity={0.1} filter={`url(#${id}-brillo)`} />
+                <path d={a.d} pathLength={1} fill="none" stroke={paleta.papel} strokeWidth={2.2} strokeDasharray={1} strokeDashoffset={1 - k} opacity={0.85} />
+              </>
+            ) : null}
+            {k > 0 && k < 1 ? (
+              <g>
+                <circle cx={cabeza.x} cy={cabeza.y} r={16} fill={`url(#${id}-cometa)`} />
+                {ad > 0 ? (
+                  <path d="M-7 -8 L5 0 L-7 8" transform={`translate(${cabeza.x} ${cabeza.y}) rotate(${ang}) translate(16 0)`} fill="none"
+                    stroke={paleta.papel} strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" opacity={0.9} />
+                ) : null}
+              </g>
+            ) : null}
           </g>
         );
       })}

@@ -346,29 +346,31 @@
       "id": "s05",
       "seccion": "método",
       "componente": "AprenderAMedir",
-      "duracion_s": 61.83,
+      "duracion_s": 64.67,
       "cola_s": 1.5,
       "intensidad": 2,
       "cambio": "de un historiador de discursos a uno que mide",
-      "intencion": "la flecha duda en París y se va a Nueva York: el método antes que la moda",
+      "intencion": "la ruta duda en París y se va a Nueva York; la cámara hace el viaje con él: el método antes que la moda",
       "transicion_salida": "corte",
       "beats": {
         "mapa": 0.2,
-        "paris": 7.0,
-        "duda": 8.4,
-        "nuevayork": 9.9,
-        "ficha": 12.1,
-        "puntos": 16.3,
-        "recta": 20.0,
-        "discursos": 25.0,
-        "balanza": 26.3,
-        "profundidad": 29.5,
-        "claridad": 31.7,
-        "estante": 32.8,
-        "temas": 37.4,
-        "aulas": 40.6,
-        "brujula": 48.5,
-        "giro": 51.4
+        "paris": 6.4,
+        "duda": 7.7,
+        "sale": 8.9,
+        "llega": 12.4,
+        "abre": 13.1,
+        "ficha": 14.9,
+        "puntos": 19.1,
+        "recta": 22.9,
+        "discursos": 28.0,
+        "balanza": 29.3,
+        "profundidad": 32.5,
+        "claridad": 34.6,
+        "estante": 35.7,
+        "temas": 40.3,
+        "aulas": 43.5,
+        "brujula": 51.4,
+        "giro": 54.2
       },
       "props": {
         "origen": {
@@ -386,6 +388,7 @@
           "lon": -74.0,
           "lat": 40.71
         },
+        "distancia_km": 5900,
         "ficha": "COLUMBIA UNIVERSITY · BECA · H. S. KLEIN",
         "balanza": [
           "PROFUNDIDAD",
@@ -410,9 +413,14 @@
       },
       "camara": [
         {
-          "beat": "ficha",
-          "movimiento": "se acerca a Nueva York",
-          "motivo": "llega a Columbia: el viaje termina ahí"
+          "beat": "sale",
+          "movimiento": "retrocede apenas y se lanza a Lima; sigue la ruta hacia el norte, con aire delante, y frena en Nueva York",
+          "motivo": "«Él postula a la Universidad de Columbia, en Nueva York»: el espectador hace el viaje"
+        },
+        {
+          "beat": "abre",
+          "movimiento": "se abre hasta ver la ruta entera (y París, que quedó atrás); se pasa un poco y se asienta",
+          "motivo": "llegó: el viaje queda como mapa antes de la beca"
         }
       ],
       "audio": {
