@@ -36,7 +36,10 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const tAbre = T('abre', tLlega + 0.7), tFicha = T('ficha', tAbre + 1.8);
   const tPuntos = T('puntos', 16), tRecta = T('recta', 20), tDiscursos = T('discursos', 25), tBalanza = T('balanza', 26);
   const tProf = T('profundidad', 29), tClar = T('claridad', 31.5), tEstante = T('estante', 33), tTemas = T('temas', 37);
-  const tAulas = T('aulas', 40.5), tBrujula = T('brujula', 48.5), tGiro = T('giro', 51);
+  const tBrujula = T('brujula', 48.5), tGiro = T('giro', 51);
+  const tAulas = props.aula ? T('aulas', 40.5) : tBrujula; // sin aula, el estante sigue hasta la brújula
+  const explica = props.explicar_regresion;
+  const tCaen = explica ? T('caen', tPuntos + 2) : tPuntos, tPendiente = explica ? T('pendiente', tRecta + 3) : undefined;
   const noche = mezclar(pal.fondo, '#000000', 0.3);
 
   // —— el mapa: la ruta a la tentación llega a medias, duda, se borra
@@ -144,7 +147,8 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {fase === 2 ? (
         <Papel color={pal.papel} envejecido={0.25}>
           <Dispersion paleta={pal} id={`${escena.id}-disp`} t={t - tPuntos} tRecta={tRecta - tPuntos} apagaDiscursos={tramo(t, tDiscursos, 1.2, 'natural')}
-            aparece={entra(tPuntos)} />
+            aparece={entra(tPuntos)} tCaen={tCaen - tPuntos} busca={explica} residuos={!explica}
+            tPendiente={tPendiente === undefined ? undefined : tPendiente - tPuntos} />
         </Papel>
       ) : null}
 
@@ -160,6 +164,11 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
           <Luz color={pal.ocre} x={50} y={50} radio={60} intensidad={0.2} />
           <Estante paleta={pal} id={`${escena.id}-est`} titulos={props.temas} aparece={entra(tEstante)}
             entra={props.temas.map((_, i) => caidaLibro(i, t))} escalas={props.temas.map((_, i) => deformaLibro(i))} />
+          {props.ficha_estante ? (
+            <div style={{ position: 'absolute', left: 120, top: 90 }}>
+              <Ficha texto={props.ficha_estante} t={t - tEstante - 0.4} color={pal.papel} acento={pal.rojo} size={30} />
+            </div>
+          ) : null}
         </AbsoluteFill>
       ) : null}
 
@@ -190,8 +199,10 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {cruces.filter(Number.isFinite).map((tc, i) => <Sfx key={`x${i}`} nombre="tic" en={tc} fps={fps} volumen={0.3} />)}
       <Sfx nombre="campana" en={tLlega} fps={fps} volumen={0.3} />
       {props.ficha.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tFicha + 0.6 + i / 18} fps={fps} volumen={0.3} />))}
-      {Array.from({ length: 12 }, (_, i) => <Sfx key={`p${i}`} nombre="tic" en={tPuntos + i * 0.25} fps={fps} volumen={0.25} />)}
+      {Array.from({ length: 12 }, (_, i) => <Sfx key={`p${i}`} nombre="tic" en={tCaen + i * 0.25} fps={fps} volumen={0.25} />)}
       <Sfx nombre="lapiz" en={tRecta} fps={fps} volumen={0.28} />
+      {tPendiente !== undefined ? <Sfx nombre="lapiz" en={tPendiente} fps={fps} volumen={0.22} /> : null}
+      {props.ficha_estante ? props.ficha_estante.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`e${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tEstante + 0.4 + i / 18} fps={fps} volumen={0.3} />)) : null}
       <Sfx nombre="metal" en={tProf + 0.6} fps={fps} volumen={0.55} />
       <Sfx nombre="metal" en={tClar + 0.6} fps={fps} volumen={0.45} />
       {props.temas.map((_, i) => <Sfx key={`l${i}`} nombre="carpeta" en={tTemas + i * 0.55 + 0.35} fps={fps} volumen={0.4} />)}

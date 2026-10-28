@@ -129,23 +129,27 @@
       "id": "s02",
       "seccion": "personaje",
       "componente": "Presentacion",
-      "duracion_s": 26.12,
-      "cola_s": 3.0,
+      "duracion_s": 32.0,
+      "cola_s": 1.0,
       "intensidad": 1,
-      "cambio": "de un historiador cualquiera a un nadador terco que se metió a los archivos",
-      "intencion": "el carril de piscina se vuelve renglón contable: la misma disciplina, otro terreno",
+      "cambio": "de un nombre en una página a un nadador terco que llevó su disciplina a los archivos",
+      "intencion": "página → piscina → página: el agua llega con «nadador» y se vuelve a secar en renglones con «archivos»; Cueto, que va a cerrar el arco, se presenta con su ficha",
       "transicion_salida": "corte",
       "beats": {
-        "nombre": 1.0,
-        "frenar": 17.6,
-        "renglon": 20.6,
-        "palabra": 25.0
+        "nombre": 0.6,
+        "piscina": 8.6,
+        "ficha": 15.5,
+        "frenar": 20.6,
+        "renglon": 23.6,
+        "palabra": 28.5
       },
       "props": {
         "fondo": "piscina",
         "nombre": "ALFONSO W. QUIROZ NORRIS",
         "anios": "1956 — 2013",
-        "palabra": "INAGOTABLE"
+        "palabra": "INAGOTABLE",
+        "palabra_como": "cita",
+        "ficha": "MARCOS CUETO · PRÓLOGO"
       },
       "audio": {
         "musica": {
@@ -154,8 +158,14 @@
         },
         "ambientes": [
           {
+            "nombre": "cuarto",
+            "nivel": 0.5,
+            "hasta_beat": "piscina"
+          },
+          {
             "nombre": "agua",
             "nivel": 0.8,
+            "desde_beat": "piscina",
             "hasta_beat": "renglon"
           },
           {
@@ -170,26 +180,23 @@
     },
     {
       "id": "s03",
-      "seccion": "formación",
+      "seccion": "su generación",
       "componente": "TiempoLargo",
-      "duracion_s": 56.42,
-      "cola_s": 1.5,
+      "duracion_s": 46.82,
+      "cola_s": 1.0,
       "intensidad": 3,
-      "cambio": "de un estudiante en tiempos de cambio a alguien que sospecha que lo de fondo no cambia",
-      "intencion": "los afiches gritan cambio; debajo, la capa que casi no se mueve",
+      "cambio": "de un estudiante que entra a la universidad a uno que se hace la pregunta de su generación: ¿el país cambia o se repite?",
+      "intencion": "los afiches gritan cambio; con «¿o repetía lo de siempre?», el afiche nuevo se despega y debajo asoma uno viejo, igual de prometedor; la pregunta queda en el aire",
       "transicion_salida": "corte",
       "beats": {
-        "sello": 2.0,
-        "primeros": 5.8,
-        "afiches": 10.2,
-        "afiche1": 12.3,
-        "afiche2": 13.6,
-        "afiche3": 16.7,
-        "despegue": 28.8,
-        "volante": 33.6,
-        "capas": 39.2,
-        "braudel": 44.3,
-        "bajar": 51.2
+        "sello": 4.3,
+        "primeros": 5.7,
+        "afiches": 9.5,
+        "afiche1": 12.77,
+        "afiche2": 14.56,
+        "afiche3": 16.41,
+        "volante": 26.9,
+        "despegue": 42.1
       },
       "props": {
         "sello": {
@@ -223,30 +230,103 @@
           "GARCÍA",
           "FUJIMORI"
         ],
-        "lista": "ADMISIÓN · 1974"
+        "lista": "ADMISIÓN · 1974",
+        "parte": "epoca"
       },
-      "camara": [
-        {
-          "beat": "bajar",
-          "movimiento": "baja hasta la capa de las estructuras",
-          "motivo": "«hay cosas que no cambian aunque cambien los gobiernos»"
-        }
-      ],
       "audio": {
         "musica": {
-          "archivo": "s03-generacion.mp3",
-          "nivel": 0.23
+          "archivo": "s03-epoca.mp3",
+          "nivel": 0.24
         },
         "ambientes": [
           {
             "nombre": "ciudad",
-            "nivel": 0.6,
-            "hasta_beat": "capas"
-          },
+            "nivel": 0.6
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente → en suspenso"
+    },
+    {
+      "id": "s04",
+      "seccion": "larga duración",
+      "componente": "TiempoLargo",
+      "duracion_s": 65.57,
+      "cola_s": 1.0,
+      "intensidad": 3,
+      "cambio": "de la pregunta en el aire a una forma de responderla: la historia tiene capas que se mueven a distinta velocidad",
+      "intencion": "una capa por frase; la cámara baja hasta la que casi no se mueve y ahí aparece la palabra del episodio; al volver, se enciende la capa que Quiroz va a estudiar",
+      "transicion_salida": "corte",
+      "beats": {
+        "braudel": 5.5,
+        "capas": 9.6,
+        "capa1": 14.56,
+        "capa2": 24.76,
+        "capa3": 31.27,
+        "bajar": 38.9,
+        "palabra": 42.9,
+        "subir": 46.47,
+        "realce": 51.0
+      },
+      "props": {
+        "sello": {
+          "centro": "PUCP",
+          "fecha": "1974",
+          "arco": "INGRESO · INGRESO · INGRESO ·"
+        },
+        "titulares": [
+          "REFORMA AGRARIA",
+          "NACIONALIZACIÓN",
+          "UN PAÍS NUEVO"
+        ],
+        "ficha": "F. BRAUDEL · LA LARGA DURACIÓN",
+        "capas": {
+          "rapida": "acontecimientos",
+          "media": "economía y sociedad",
+          "lenta": "la tierra"
+        },
+        "gobiernos": [
+          "VIRREINATO",
+          "SAN MARTÍN",
+          "CASTILLA",
+          "PIÉROLA",
+          "LEGUÍA",
+          "BENAVIDES",
+          "ODRÍA",
+          "PRADO",
+          "BELAÚNDE",
+          "VELASCO",
+          "MORALES BERMÚDEZ",
+          "GARCÍA",
+          "FUJIMORI"
+        ],
+        "lista": "ADMISIÓN · 1974",
+        "parte": "capas",
+        "palabra": "larga duración",
+        "realce": "media"
+      },
+      "camara": [
+        {
+          "beat": "bajar",
+          "movimiento": "baja hasta la capa que casi no se mueve, y se queda",
+          "motivo": "«Y al fondo… casi no se mueve»: el espectador baja a la larga duración"
+        },
+        {
+          "beat": "subir",
+          "movimiento": "vuelve a ver las tres capas",
+          "motivo": "«Quiroz se quedó con eso»: de la idea de Braudel a lo que él va a estudiar, la capa del medio"
+        }
+      ],
+      "audio": {
+        "musica": {
+          "archivo": "s04-capas.mp3",
+          "nivel": 0.24
+        },
+        "ambientes": [
           {
             "nombre": "cuarto",
-            "nivel": 0.5,
-            "desde_beat": "capas"
+            "nivel": 0.5
           }
         ],
         "duck_db": -15
@@ -254,34 +334,35 @@
       "estado_musica": "presente"
     },
     {
-      "id": "s04",
+      "id": "s05",
       "seccion": "método",
       "componente": "AprenderAMedir",
-      "duracion_s": 64.67,
-      "cola_s": 1.5,
+      "duracion_s": 95.94,
+      "cola_s": 1.0,
       "intensidad": 2,
-      "cambio": "de un historiador de discursos a uno que mide",
-      "intencion": "la ruta duda en París y se va a Nueva York; la cámara hace el viaje con él: el método antes que la moda",
+      "cambio": "de un historiador de discursos a uno que mide, y que cambió de ideas",
+      "intencion": "el viaje a Nueva York; la regresión explicada en tres tiempos (ruido, la recta que busca, cuánto pesa); la claridad en una balanza; la carrera se lee en el estante, no se narra",
       "transicion_salida": "corte",
       "beats": {
         "mapa": 0.2,
-        "paris": 6.4,
-        "duda": 7.7,
-        "sale": 8.9,
-        "llega": 12.4,
-        "abre": 13.1,
-        "ficha": 14.9,
-        "puntos": 19.1,
-        "recta": 22.9,
-        "discursos": 28.0,
-        "balanza": 29.3,
-        "profundidad": 32.5,
-        "claridad": 34.6,
-        "estante": 35.7,
-        "temas": 40.3,
-        "aulas": 43.5,
-        "brujula": 51.4,
-        "giro": 54.2
+        "paris": 4.4,
+        "duda": 7.2,
+        "sale": 8.7,
+        "llega": 12.3,
+        "abre": 12.9,
+        "ficha": 14.5,
+        "puntos": 21.0,
+        "discursos": 25.0,
+        "caen": 30.3,
+        "recta": 39.1,
+        "pendiente": 47.9,
+        "balanza": 57.6,
+        "profundidad": 62.4,
+        "claridad": 63.7,
+        "estante": 66.4,
+        "temas": 69.5,
+        "brujula": 74.5,
+        "giro": 77.1
       },
       "props": {
         "origen": {
@@ -306,11 +387,11 @@
           "CLARIDAD"
         ],
         "temas": [
-          "Bancos",
-          "Crédito colonial",
-          "Casa Grace"
+          "La deuda defraudada",
+          "Banqueros en conflicto",
+          "Deudas olvidadas",
+          "Domestic and foreign finance"
         ],
-        "ficha_aulas": "BARUCH COLLEGE · CUNY",
         "brujula": [
           "1970s",
           "1990s"
@@ -320,13 +401,16 @@
           -28,
           22,
           62
-        ]
+        ],
+        "aula": false,
+        "ficha_estante": "BARUCH COLLEGE · CUNY · NUEVA YORK",
+        "explicar_regresion": true
       },
       "camara": [
         {
           "beat": "sale",
           "movimiento": "retrocede apenas y se lanza a Lima; sigue la ruta hacia el norte, con aire delante, y frena en Nueva York",
-          "motivo": "«Él postula a la Universidad de Columbia, en Nueva York»: el espectador hace el viaje"
+          "motivo": "«Él se va a Nueva York, a la Universidad de Columbia»: el espectador hace el viaje"
         },
         {
           "beat": "abre",
@@ -336,7 +420,7 @@
       ],
       "audio": {
         "musica": {
-          "archivo": "s04-medir.mp3",
+          "archivo": "s05-medir.mp3",
           "nivel": 0.3
         },
         "ambientes": [
@@ -350,10 +434,10 @@
       "estado_musica": "presente"
     },
     {
-      "id": "s05",
+      "id": "s06",
       "seccion": "puente",
       "componente": "MecanismoDeuda",
-      "duracion_s": 24.16,
+      "duracion_s": 27.2,
       "cola_s": 1.5,
       "intensidad": 4,
       "cambio": "del hombre que aprendió a medir a su primer caso: una deuda pagada con la plata del guano, y una pregunta abierta",
@@ -361,10 +445,10 @@
       "transicion_salida": "corte",
       "beats": {
         "islas": 0.2,
-        "sacos": 13.1,
-        "flecha": 15.95,
-        "vales": 17.4,
-        "consolidacion": 19.85
+        "sacos": 16.2,
+        "flecha": 19.0,
+        "vales": 20.3,
+        "consolidacion": 22.9
       },
       "props": {
         "ficha": "SIGLO XIX · GUANO",
@@ -392,7 +476,7 @@
       },
       "audio": {
         "musica": {
-          "archivo": "s05-puente.mp3",
+          "archivo": "s06-puente.mp3",
           "nivel": 0.38
         },
         "ambientes": [
@@ -412,7 +496,7 @@
       "estado_musica": "presente (tensión) → en suspenso"
     },
     {
-      "id": "s06",
+      "id": "s07",
       "seccion": "cierre",
       "componente": "Cierre",
       "duracion_s": 6.21,
@@ -437,7 +521,7 @@
       },
       "audio": {
         "musica": {
-          "archivo": "s06-tema.mp3",
+          "archivo": "s07-tema.mp3",
           "nivel": 0.55,
           "desde_beat": "negro"
         },

@@ -604,3 +604,11 @@ de los capítulos 3 a 7 quedó confirmado: cada capítulo abre con su denunciant
 (47 palabras) quedó en tres frases cortas, con una pausa de párrafo antes («Está contado desde
 los que denunciaron.» cierra la idea): s10 pasó de rojo a amarillo (voz seguida 23 s, frase más
 larga 19 palabras); la única alerta que queda es la de nombres por minuto, la lista de los siete.
+
+**0·1, reescrito (ya hecho).** `videos/001-el-hombre/` tiene el guion aprobado por Gerson: el
+nadador con Cueto y su ficha (la página, el agua con «nadador», los renglones con «archivos»); la
+escena 3 partida en dos, la pregunta de su generación (que queda en el aire con un afiche que se
+despega) y Braudel con una capa por frase, *larga duración* como palabra del episodio y la capa del
+medio encendida al final; «Aprender a medir» en tres párrafos, con la regresión explicada en tres
+tiempos (ruido, la recta que busca, cuánto pesa) y la carrera en el estante. Correcciones C10–C17
+aplicadas. Dura 5:37 y ninguna escena queda en rojo en la escaleta.

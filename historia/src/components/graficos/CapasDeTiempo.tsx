@@ -15,6 +15,10 @@ type Props = {
   nombres: string[];
   /** 0–1: aparición de cada capa (de abajo hacia arriba no: de arriba hacia abajo, como se cuenta). */
   aparece: [number, number, number];
+  /** 0–1: el marco (las tres franjas vacías) antes de que se llene cada una. */
+  marco?: number;
+  /** 0–1 por capa: se enciende (la que importa en ese momento). */
+  realce?: [number, number, number];
 };
 
 const BANDAS = { rapida: [150, 380], media: [410, 640], lenta: [670, 1010] } as const;
@@ -25,7 +29,7 @@ const X0 = 430, X1 = 1840;
  * acontecimientos (nerviosos, cambian todo el tiempo), al medio la economía (ondas lentas),
  * abajo las estructuras (estratos que casi no se mueven).
  */
-export const CapasDeTiempo: React.FC<Props> = ({ paleta, id, t, rotulos, nombres, aparece }) => {
+export const CapasDeTiempo: React.FC<Props> = ({ paleta, id, t, rotulos, nombres, aparece, marco = 0, realce = [0, 0, 0] }) => {
   const g = useMemo(() => {
     const r = azar(1949);
     // estratos: capas de roca onduladas, cada una con su tono y su rayado
@@ -55,12 +59,31 @@ export const CapasDeTiempo: React.FC<Props> = ({ paleta, id, t, rotulos, nombres
   for (let x = X0; x <= X1; x += 6) dOnda += `${x === X0 ? 'M' : 'L'}${x} ${onda(x).toFixed(1)} `;
   const dxLenta = t * 2.5; // casi quieta
 
-  const rotulo = (texto: string, y: number, k: number, velocidad: string) => (
-    <g opacity={k}>
-      <text x={120} y={y} fill={paleta.ocre} fontFamily={fuente.imprenta} fontSize={34} letterSpacing={4}>{texto.toUpperCase()}</text>
-      <text x={120} y={y + 36} fill={alfa(paleta.ocre, 0.6)} fontFamily={fuente.mono} fontSize={18} letterSpacing={3}>{velocidad}</text>
-    </g>
-  );
+  // un rótulo largo va en dos líneas, para no meterse en la franja (la columna de rótulos mide ~290 px)
+  const lineas = (texto: string) => {
+    const T = texto.toUpperCase();
+    if (T.length <= 12 || !T.includes(' ')) return [T];
+    const ps = T.split(' ');
+    let mejor = 1, dif = Infinity;
+    for (let i = 1; i < ps.length; i++) {
+      const d = Math.abs(ps.slice(0, i).join(' ').length - ps.slice(i).join(' ').length);
+      if (d < dif) { dif = d; mejor = i; }
+    }
+    return [ps.slice(0, mejor).join(' '), ps.slice(mejor).join(' ')];
+  };
+  const rotulo = (texto: string, y: number, k: number, velocidad: string, luz = 0) => {
+    const ls = lineas(texto);
+    const cuerpo = ls.some((l) => l.length > 12) ? 28 : 34;
+    return (
+      <g opacity={k}>
+        {ls.map((l, i) => (
+          <text key={i} x={120} y={y + i * (cuerpo + 6)} fill={mezclar(paleta.ocre, paleta.papel, 0.6 * luz)} fontFamily={fuente.imprenta} fontSize={cuerpo}
+            letterSpacing={cuerpo > 30 ? 4 : 3}>{l}</text>
+        ))}
+        <text x={120} y={y + 36 + (ls.length - 1) * (cuerpo + 6)} fill={alfa(paleta.ocre, 0.6)} fontFamily={fuente.mono} fontSize={18} letterSpacing={3}>{velocidad}</text>
+      </g>
+    );
+  };
 
   return (
     <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0, overflow: 'visible' }}>
@@ -77,16 +100,20 @@ export const CapasDeTiempo: React.FC<Props> = ({ paleta, id, t, rotulos, nombres
         </linearGradient>
       </defs>
 
+      {/* la capa que importa se enciende: un fondo cálido detrás de su franja */}
+      {[BANDAS.rapida, BANDAS.media, BANDAS.lenta].map(([a, b], i) => (realce[i] > 0 ? (
+        <rect key={`r${i}`} x={X0 - 330} y={a} width={X1 - X0 + 330} height={b - a} fill={paleta.ocre} opacity={0.1 * clamp(realce[i])} />
+      ) : null))}
       {/* separadores entre capas */}
       {[BANDAS.rapida, BANDAS.media, BANDAS.lenta].map(([a, b], i) => (
-        <g key={i} opacity={aparece[i]}>
+        <g key={i} opacity={Math.max(aparece[i], marco)}>
           <line x1={X0} x2={X1} y1={a} y2={a} stroke={alfa(paleta.ocre, 0.45)} strokeWidth={1} />
           <line x1={X0} x2={X1} y1={b} y2={b} stroke={alfa(paleta.ocre, 0.2)} strokeWidth={1} strokeDasharray="3 6" />
         </g>
       ))}
-      {rotulo(rotulos.rapida, BANDAS.rapida[0] + 70, aparece[0], 'DÍAS · AÑOS')}
-      {rotulo(rotulos.media, BANDAS.media[0] + 70, aparece[1], 'DÉCADAS')}
-      {rotulo(rotulos.lenta, BANDAS.lenta[0] + 70, aparece[2], 'SIGLOS')}
+      {rotulo(rotulos.rapida, BANDAS.rapida[0] + 70, aparece[0], 'DÍAS · AÑOS', realce[0])}
+      {rotulo(rotulos.media, BANDAS.media[0] + 70, aparece[1], 'DÉCADAS', realce[1])}
+      {rotulo(rotulos.lenta, BANDAS.lenta[0] + 70, aparece[2], 'SIGLOS', realce[2])}
 
       <g clipPath={`url(#${id}-zona)`}>
         {/* arriba: marcas de tiempo que pasan rápido y nombres que aparecen y se van */}

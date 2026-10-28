@@ -17,6 +17,15 @@ export const esquema = z.object({
   capas: z.object({ rapida: z.string(), media: z.string(), lenta: z.string() }),
   /** Nombres que pasan rápido por la capa de arriba. */
   gobiernos: z.array(z.string()).min(3),
+  /**
+   * Qué parte de la escena se muestra: "todo"; "epoca" (la lista, los afiches y el volante: termina
+   * en la pregunta) o "capas" (Braudel y sus capas: empieza en la ficha). Así se parte en dos escenas.
+   */
+  parte: z.enum(['todo', 'epoca', 'capas']).default('todo'),
+  /** La palabra del episodio, a pantalla completa y quieta sobre las capas (con el beat `palabra`). */
+  palabra: z.string().optional(),
+  /** La capa que se enciende con el beat `realce` (la que el personaje va a estudiar). */
+  realce: z.enum(['rapida', 'media', 'lenta']).optional(),
 });
 
 export const beats = {
@@ -28,9 +37,21 @@ export const beats = {
   afiche3: '(con 3 titulares) se pega el tercero',
   despegue: 'una esquina se despega: debajo hay afiches viejos',
   volante: 'entra el volante',
-  capas: 'el muro se apaga y se dibujan las capas',
+  capas: 'el muro se apaga y se dibujan las capas (con capa1–3: solo el marco, vacío)',
   braudel: '(con ficha) aparece la ficha',
+  capa1: '(capas de a una) se llena la capa de arriba',
+  capa2: '(capas de a una) se llena la del medio',
+  capa3: '(capas de a una) se llena la de abajo',
   bajar: 'la cámara baja hasta la capa que casi no se mueve (2.4 s)',
+  palabra: '(con palabra) la palabra del episodio, a pantalla completa',
+  subir: '(opcional) la cámara vuelve a ver las tres capas; se va la palabra',
+  realce: '(con realce) se enciende una capa',
+};
+
+/** Con `parte`, qué beats usa cada mitad (los de la otra no hacen falta). */
+export const partes = {
+  epoca: ['sello', 'primeros', 'afiches', 'afiche1', 'afiche2', 'afiche3', 'despegue', 'volante'],
+  capas: ['capas', 'braudel', 'capa1', 'capa2', 'capa3', 'bajar', 'palabra', 'subir', 'realce'],
 };
 
 /** Como se usa en 000-quiroz. */

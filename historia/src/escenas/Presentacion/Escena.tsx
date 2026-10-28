@@ -4,6 +4,7 @@ import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { cubierto, Piscina } from '../../components/graficos/Piscina';
 import { Sello } from '../../components/graficos/Sello';
+import { Ficha } from '../../components/texto/Ficha';
 import { Ornamento } from '../../components/texto/Ornamento';
 import { asienta, beat, clamp, mix, tramo } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
@@ -22,14 +23,20 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
   const b = escena.beats;
   const piscina = props.fondo === 'piscina';
   const tNombre = beat(b, 'nombre', 1), tFrenar = beat(b, 'frenar', 4), tRenglon = beat(b, 'renglon', 5), tSello = beat(b, 'sello', 10);
-  const tPalabra = beat(b, 'palabra', Infinity);
-  // al final puede quedar una sola palabra: todo lo demás se retira
-  const queda = props.palabra ? tramo(t, tPalabra - 0.3, 0.9, 'natural') : 0;
+  const tPalabra = beat(b, 'palabra', Infinity), tFicha = beat(b, 'ficha', Infinity);
+  const comoCita = props.palabra_como === 'cita';
+  // al final puede quedar una sola palabra: todo lo demás se retira (como cita, no se retira nada)
+  const queda = props.palabra && !comoCita ? tramo(t, tPalabra - 0.3, 0.9, 'natural') : 0;
 
   // Frenado parejo que arranca a la velocidad que traía (sin tirón): x = v·F/2·(1-(1-u)²).
   const u = clamp((t - tFrenar) / FRENO);
   const dx = -(V * Math.min(t, tFrenar) + V * (FRENO / 2) * (1 - (1 - u) ** 2));
-  const renglon = piscina ? tramo(t, tRenglon, 1.4, 'solemne') : 1;
+  // con beat `piscina`, la escena empieza en la página y el agua la cubre con «nadador»; después se
+  // vuelve a secar en papel (página → piscina → página)
+  const tPiscina = typeof b.piscina === 'number' ? b.piscina : undefined;
+  const renglon = !piscina ? 1
+    : tPiscina === undefined ? tramo(t, tRenglon, 1.4, 'solemne')
+      : Math.max(1 - tramo(t, tPiscina, 1.4, 'natural'), tramo(t, tRenglon, 1.4, 'solemne'));
   // La tinta de cada letra cambia cuando el papel pasa por debajo de ella.
   const tintaEn = (x: number) => interpolateColors(piscina ? cubierto(x, renglon) : 1, [0, 1], [pal.papel, pal.fondo]);
   const tinta = tintaEn(960);
@@ -75,7 +82,7 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
         ) : null}
       </AbsoluteFill>
 
-      {props.palabra && t >= tPalabra - 0.3 ? (
+      {props.palabra && !comoCita && t >= tPalabra - 0.3 ? (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           {/* la palabra sola; el espaciado se abre despacio, como si respirara */}
           <div style={{ fontFamily: fuente.titulo, fontWeight: 600, fontSize: 120, color: tintaEn(960), opacity: tramo(t, tPalabra, 1.2, 'natural'),
@@ -84,6 +91,28 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
           </div>
         </AbsoluteFill>
       ) : null}
+
+      {props.ficha && t >= tFicha ? (
+        // en la piscina va entre dos corcheras (las filas de boyas están en y = 130 + 92·k)
+        <div style={{ position: 'absolute', left: 120, top: piscina ? 158 : 90 }}>
+          {/* sobre el agua, un velo oscuro detrás para que se lea entre las boyas; sobre el papel, nada */}
+          {piscina ? (
+            <div style={{ position: 'absolute', left: -22, top: -16, width: props.ficha.length * 30 * 0.66 + 70, height: 64, borderRadius: 4,
+              background: alfa(pal.fondo, 0.92 * (1 - cubierto(300, renglon))), boxShadow: `0 0 24px 12px ${alfa(pal.fondo, 0.6 * (1 - cubierto(300, renglon)))}` }} />
+          ) : null}
+          {/* la tinta de la ficha cambia con lo que tiene debajo (agua o papel), como el nombre */}
+          <div style={{ position: 'relative' }}>
+            <Ficha texto={props.ficha} t={t - tFicha} color={tintaEn(300)} acento={pal.rojo} size={30} />
+          </div>
+          {props.palabra && comoCita ? (
+            <div style={{ marginTop: 26, marginLeft: 34, fontFamily: fuente.libro, fontStyle: 'italic', fontSize: 64, color: tintaEn(400),
+              opacity: tramo(t, tPalabra, 1.0, 'natural'), transform: `translateY(${8 * (1 - tramo(t, tPalabra, 1.0, 'natural'))}px)` }}>
+              {`«${props.palabra.toLowerCase()}»`}
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+      {props.ficha ? props.ficha.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tFicha + i / 18} fps={fps} volumen={0.28} />)) : null}
 
       {props.sello ? (
         <>

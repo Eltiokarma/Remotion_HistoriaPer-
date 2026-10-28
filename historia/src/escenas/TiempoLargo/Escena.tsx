@@ -15,7 +15,7 @@ import { azar } from '../../direction/azar';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
-import type { esquema } from './esquema';
+import { partes, type esquema } from './esquema';
 
 type P = z.infer<typeof esquema>;
 const FILAS = 20;
@@ -34,10 +34,16 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   const t = frame / fps;
   const pal = video.paleta;
   const b = escena.beats;
-  const tSello = beat(b, 'sello', 1.5), tPrimeros = beat(b, 'primeros', 5), tAfiches = beat(b, 'afiches', 10);
-  const tAf = [beat(b, 'afiche1', tAfiches + 2), beat(b, 'afiche2', tAfiches + 3.4), beat(b, 'afiche3', tAfiches + 6), beat(b, 'afiche4', tAfiches + 8)];
-  const tDespegue = beat(b, 'despegue', 27), tVolante = beat(b, 'volante', 33), tCapas = beat(b, 'capas', 39);
-  const tBraudel = beat(b, 'braudel', 44), tBajar = beat(b, 'bajar', 51);
+  // partida en dos escenas: lo de la otra parte no ocurre nunca
+  const conEpoca = props.parte !== 'capas', conCapas = props.parte !== 'epoca';
+  const T = (n: string, d: number) => (([...partes.epoca, 'afiche4'].includes(n) ? conEpoca : conCapas) ? beat(b, n, d) : Infinity);
+  const tSello = T('sello', 1.5), tPrimeros = T('primeros', 5), tAfiches = T('afiches', 10);
+  const tAf = [T('afiche1', tAfiches + 2), T('afiche2', tAfiches + 3.4), T('afiche3', tAfiches + 6), T('afiche4', tAfiches + 8)];
+  const tDespegue = T('despegue', 27), tVolante = T('volante', 33), tCapas = T('capas', 39);
+  const tBraudel = T('braudel', 44), tBajar = T('bajar', 51);
+  const tCapa = [T('capa1', tCapas + 0.2), T('capa2', tCapas + 1.6), T('capa3', tCapas + 3.0)];
+  const tPalabra = props.palabra ? T('palabra', Infinity) : Infinity, tSubir = T('subir', Infinity);
+  const tRealce = props.realce ? T('realce', Infinity) : Infinity;
   const noche = mezclar(pal.fondo, '#000000', 0.3);
 
   const restos = useMemo(() => {
@@ -59,13 +65,18 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   const tachuela = t < tTachuela - 0.12 ? 0 : mix(1.6, 1, tramo(t, tTachuela - 0.12, 0.12, 'tenso')) + asienta(t, tTachuela, -0.08, 30, 14);
   // —— C: las capas
   const capas = tramo(t, tCapas - 0.4, 1.0, 'natural');
-  // la cámara sube apenas antes de bajar a las estructuras (anticipación); el zoom no se anticipa, para no ver el borde
-  const baja = anticipa(t, tBajar, 2.4, 'pesado', 0.04, 0.4);
+  // la cámara sube apenas antes de bajar a las estructuras (anticipación); el zoom no se anticipa, para no ver el borde;
+  // con `subir`, vuelve a ver las tres capas
+  const baja = anticipa(t, tBajar, 2.4, 'pesado', 0.04, 0.4) * (1 - tramo(t, tSubir, 2.2, 'pesado'));
+  // la palabra del episodio: llega, se queda quieta y se va cuando la cámara sube
+  const palabra = tramo(t, tPalabra, 0.9, 'natural') * (1 - tramo(t, tSubir - 0.3, 0.8, 'natural'));
+  const realces: [number, number, number] = [0, 0, 0];
+  if (props.realce) realces[['rapida', 'media', 'lenta'].indexOf(props.realce)] = tramo(t, tRealce, 1.2, 'natural');
 
   return (
     <AbsoluteFill style={{ backgroundColor: noche }}>
       {/* A: la lista de admisión */}
-      {muro < 1 ? (
+      {conEpoca && muro < 1 ? (
         <AbsoluteFill style={{ opacity: 1 - muro }}>
           <Papel color={pal.papel} envejecido={0.3}>
             <AbsoluteFill>
@@ -92,7 +103,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       ) : null}
 
       {/* B: el muro de afiches */}
-      {muro > 0 && capas < 1 ? (
+      {conEpoca && muro > 0 && capas < 1 ? (
         <AbsoluteFill style={{ opacity: muro * (1 - capas) }}>
           <AbsoluteFill>
             <Papel color={mezclar(pal.fondo, pal.ocre, 0.16)} envejecido={0.6} escala={700}>
@@ -152,13 +163,26 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
           <Luz color={pal.ocre} x={55} y={70} radio={70} intensidad={0.12} />
           <AbsoluteFill style={{ transformOrigin: '6% 78%', transform: `translateY(${-300 * baja}px) scale(${1 + 0.55 * clamp(baja)})` }}>
             <CapasDeTiempo paleta={pal} id={`${escena.id}-capas`} t={t} rotulos={props.capas} nombres={props.gobiernos}
-              aparece={[tramo(t, tCapas + 0.2, 1, 'natural'), tramo(t, tCapas + 1.6, 1.2, 'natural'), tramo(t, tCapas + 3.0, 1.6, 'natural')]} />
+              aparece={[tramo(t, tCapa[0], 1, 'natural'), tramo(t, tCapa[1], 1.2, 'natural'), tramo(t, tCapa[2], 1.6, 'natural')]}
+              marco={tramo(t, tCapas, 1.0, 'natural')} realce={realces} />
           </AbsoluteFill>
-          {props.ficha ? (
-            <div style={{ position: 'absolute', left: 120, top: 70 }}>
-              <Ficha texto={props.ficha} t={t - tBraudel} color={pal.papel} acento={pal.rojo} size={26} salida={tramo(t, tBajar, 1, 'natural')} />
-            </div>
-          ) : null}
+        </AbsoluteFill>
+      ) : null}
+
+      {/* la ficha de quien tuvo la idea: puede llegar antes que las capas */}
+      {props.ficha && t >= tBraudel ? (
+        <div style={{ position: 'absolute', left: 120, top: 70 }}>
+          <Ficha texto={props.ficha} t={t - tBraudel} color={pal.papel} acento={pal.rojo} size={26} salida={tramo(t, tBajar, 1, 'natural')} />
+        </div>
+      ) : null}
+
+      {/* la palabra del episodio: a pantalla completa, quieta; las capas siguen moviéndose detrás, apagadas */}
+      {palabra > 0 && props.palabra ? (
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', background: alfa(noche, 0.72 * palabra) }}>
+          <div style={{ fontFamily: fuente.titulo, fontWeight: 600, fontSize: 128, color: pal.papel, opacity: palabra,
+            letterSpacing: `${mix(0.02, 0.12, tramo(t, tPalabra, 4, 'natural'))}em`, transform: `translateY(${10 * (1 - palabra)}px)` }}>
+            {props.palabra}
+          </div>
         </AbsoluteFill>
       ) : null}
 
@@ -169,6 +193,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       <Sfx nombre="hoja" en={tVolante} fps={fps} volumen={0.45} />
       <Sfx nombre="tic" en={tTachuela} fps={fps} volumen={0.35} />
       <Sfx nombre="soplo" en={tBajar} fps={fps} volumen={0.35} />
+      <Sfx nombre="nota-final" en={tPalabra} fps={fps} volumen={0.25} />
     </AbsoluteFill>
   );
 };

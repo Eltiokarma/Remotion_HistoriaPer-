@@ -975,7 +975,70 @@ def musica_000_quiroz():
         guardar(lambda fn=fn, beats=beats, dur=dur: fn(beats, dur), m / f"{nombre}.mp3")
 
 
-def m001_s05(b, dur):
+def m001_s02(b, dur):
+    """El nadador, versión 0·1: la página en calma; el braceo entra con el agua («nadador»), frena con el carril y se abre en la palabra."""
+    p = Partitura(dur, J)
+    pis, frenar, renglon, palabra = b["piscina"], b["frenar"], b["renglon"], b["palabra"]
+    prog = ["Dm", "Bb", "F", "C"]
+    acordes(p, 0, palabra, prog, 4.0, 0.12)
+    t, i = pis, 0
+    while t < renglon + 2:
+        acorde = ACORDES[prog[int(t // 4.0) % 4]]
+        nota = acorde[1:][i % 3] + 12 + (12 if i % 6 == 5 else 0)
+        p.poner(punteo(nota, 1.8, 1.1), t, 0.16, -0.3 + 0.2 * (i % 4))
+        frena = min(1.0, max(0.0, (t - frenar) / (renglon - frenar)))
+        t += 0.33 + 0.6 * frena ** 1.5
+        i += 1
+    p.poner(colchon([53, 57, 60, 65, 69], dur - palabra + 2, ataque=1.5, cierre=3, corte=1500), palabra - 0.3, 0.2)
+    p.poner(punteo(77, 4.0, 0.8), palabra + 0.2, 0.18, 0.2)
+    return p.mezcla()
+
+
+def m001_s03(b, dur):
+    """Su generación: calma en la lista, el ostinato de época en los afiches y, con la pregunta, un acorde que no resuelve."""
+    p = Partitura(dur, J)
+    af, desp = b["afiches"], b["despegue"]
+    acordes(p, 0, af, ["Dm", "Gm"], 5.0, 0.12)
+    negra = 60 / 100
+    t, i = af, 0
+    patron = [38, 38, 41, 38, 45, 38, 48, 38]
+    while t < desp - 3.5:
+        p.poner(punteo(patron[i % 8], 0.9, 0.5), t, 0.2, -0.1)
+        if i % 4 == 0:
+            p.poner(bombo(), t, 0.22)
+        t += negra / 2
+        i += 1
+    acordes(p, af, desp - 3.0, ["Dm", "Gm", "Bb", "A"], 4 * negra * 2, 0.11)
+    # la pregunta: el pulso se va y queda una cuarta suspendida, sin resolver
+    p.poner(colchon([50, 55, 57, 62], dur - desp + 3.0, ataque=1.2, cierre=2.0), desp - 3.0, 0.12)
+    return p.mezcla()
+
+
+def m001_s04(b, dur):
+    """Larga duración: cada capa entra con su frase (notas rápidas, acordes lentos, un bordón que no se va); la palabra, sola sobre el bordón."""
+    p = Partitura(dur, J)
+    r = np.random.default_rng(1949)
+    c1, c2, c3, baj, pal, sub = (b[k] for k in ("capa1", "capa2", "capa3", "bajar", "palabra", "subir"))
+    acordes(p, 0, c1, ["Dm"], 6.0, 0.08, corte=1400)
+    # arriba: notas nerviosas desde la primera capa; se callan cuando la cámara baja y vuelven, más lejos, al subir
+    t = c1
+    while t < dur:
+        if t < baj or t > sub + 1.0:
+            p.poner(punteo(r.choice(RE_MENOR) + 12, 0.7, 1.6), t, 0.07 if t < baj else 0.04, r.uniform(-0.8, 0.8))
+        t += 0.16
+    # al medio: acordes lentos desde la segunda
+    acordes(p, c2, baj + 1.0, ["Dm", "Bb", "Gm", "A"], 4.0, 0.1, corte=1400)
+    acordes(p, sub, dur, ["Dm", "Bb", "F", "Dm"], 4.0, 0.1, corte=1400)
+    # abajo: el bordón, desde la tercera, que ya no se va
+    tb = tt(dur - c3 + 3)
+    bordon = (np.sin(2 * np.pi * hz(38) * tb) + 0.5 * np.sin(2 * np.pi * hz(45) * tb)) * np.minimum(1, tb / 3) * 0.16
+    p.poner(bordon, c3, 1.0)
+    # la palabra: una quinta alta, quieta
+    p.poner(colchon([62, 69, 74], sub - pal + 1.0, ataque=0.8, cierre=1.5), pal - 0.2, 0.1)
+    return p.mezcla(3.0, 0.36)
+
+
+def m001_s05(b, dur):  # (el puente: hoy es la escena s06 del 0·1)
     """Puente al 0·2: el comienzo del mecanismo (mar abierto, la plata que entra) y la pregunta en el aire."""
     p = Partitura(dur, J)
     r = np.random.default_rng(1850)
@@ -1000,8 +1063,9 @@ def musica_001_el_hombre():
     """Música del 0·1: las escenas que vienen de 000 conservan su pista (compuesta sobre los mismos beats)."""
     m = PUBLIC / "videos" / "001-el-hombre" / "musica"
     tiempos = tiempos_video("001-el-hombre")
-    pistas = [("s01", "s01-entrada", m000_s01), ("s02", "s02-nadador", m000_s02), ("s03", "s03-generacion", m000_s03),
-              ("s04", "s04-medir", m000_s05), ("s05", "s05-puente", m001_s05), ("s06", "s06-tema", m000_s11)]
+    pistas = [("s01", "s01-entrada", m000_s01), ("s02", "s02-nadador", m001_s02), ("s03", "s03-epoca", m001_s03),
+              ("s04", "s04-capas", m001_s04), ("s05", "s05-medir", m000_s05), ("s06", "s06-puente", m001_s05),
+              ("s07", "s07-tema", m000_s11)]
     for escena, nombre, fn in pistas:
         beats, dur = tiempos[escena]
         guardar(lambda fn=fn, beats=beats, dur=dur: fn(beats, dur), m / f"{nombre}.mp3")

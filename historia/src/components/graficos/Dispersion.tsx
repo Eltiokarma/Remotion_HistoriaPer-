@@ -15,6 +15,17 @@ type Props = {
   apagaDiscursos?: number;
   /** 0–1: aparición general. */
   aparece?: number;
+  /** Segundos (desde el mismo origen) en que empiezan a caer los puntos (por defecto, enseguida). */
+  tCaen?: number;
+  /**
+   * Para explicar el método: la recta aparece horizontal, por el centro de la nube, y «busca»
+   * (gira, se pasa y se asienta) hasta la de mínimos cuadrados. Sin esto, se traza ya inclinada.
+   */
+  busca?: boolean;
+  /** Segundos en que se dibuja el triángulo de la pendiente («cuánto pesa»). */
+  tPendiente?: number;
+  /** Los residuos (lo que la recta no explica), en rojo. */
+  residuos?: boolean;
 };
 
 const G = { x0: 800, x1: 1760, y0: 190, y1: 880 };
@@ -25,7 +36,7 @@ const N = 46;
  * la recta de regresión que la atraviesa (con sus residuos) y, al lado, bloques de discurso que
  * se apagan. Sin ejes rotulados: es la idea del método, no un dato.
  */
-export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscursos = 0, aparece = 1 }) => {
+export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscursos = 0, aparece = 1, tCaen = 0, busca = false, tPendiente, residuos = true }) => {
   const tinta = paleta.fondo;
   const puntos = useMemo(() => {
     const r = azar(1983);
@@ -40,9 +51,16 @@ export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscur
   // recta de mínimos cuadrados de verdad, calculada con los puntos
   const mu = puntos.reduce((a, p) => a + p.u, 0) / N, mv = puntos.reduce((a, p) => a + p.v, 0) / N;
   const pend = puntos.reduce((a, p) => a + (p.u - mu) * (p.v - mv), 0) / puntos.reduce((a, p) => a + (p.u - mu) ** 2, 0);
-  const recta = (u: number) => mv + pend * (u - mu);
-  const kRecta = clamp((t - tRecta) / 1.3);
-  const kResiduos = clamp((t - tRecta - 1.2) / 1.2);
+  // buscando: la pendiente va de 0 a la verdadera con un resorte (se pasa y vuelve)
+  const dt = t - tRecta - 0.5;
+  const giro = !busca ? 1 : dt <= 0 ? 0 : 1 - Math.exp(-dt * 2.6) * Math.cos(dt * 5.2);
+  const pendAhora = pend * giro;
+  const recta = (u: number) => mv + pendAhora * (u - mu);
+  const kRecta = clamp((t - tRecta) / (busca ? 0.6 : 1.3));
+  const kResiduos = residuos ? clamp((t - tRecta - 1.2) / 1.2) : 0;
+  // el triángulo de la pendiente: un paso a la derecha y lo que sube
+  const kTri = tPendiente === undefined ? 0 : clamp((t - tPendiente) / 0.9);
+  const uA = 0.42, uB = 0.72;
 
   return (
     <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0, opacity: aparece }}>
@@ -82,13 +100,22 @@ export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscur
       ))}
       {/* la nube de puntos, uno a uno */}
       {puntos.map((p, i) => {
-        const k = tramo(t, (i / N) * 3, 0.25, 'ligero'); // un golpe de pluma: rápido y frena
+        const k = tramo(t, tCaen + (i / N) * 3, 0.25, 'ligero'); // un golpe de pluma: rápido y frena
         if (k <= 0) return null;
         return <circle key={i} cx={X(p.u)} cy={Y(p.v)} r={7 * (1 + 0.6 * (1 - k))} fill={tinta} opacity={0.85 * k} />;
       })}
       {/* la recta de regresión */}
       <line x1={X(0)} y1={Y(recta(0))} x2={X(0) + (X(1) - X(0)) * kRecta} y2={Y(recta(0)) + (Y(recta(1)) - Y(recta(0))) * kRecta}
         stroke={paleta.rojo} strokeWidth={5} strokeLinecap="round" />
+      {/* cuánto pesa: el escalón de la pendiente, debajo de la recta */}
+      {kTri > 0 ? (
+        <g opacity={kTri}>
+          <path d={`M${X(uA)} ${Y(recta(uA))} L${X(uA) + (X(uB) - X(uA)) * clamp(kTri * 2)} ${Y(recta(uA))}`} stroke={tinta} strokeWidth={2.5} strokeDasharray="8 7" />
+          <path d={`M${X(uB)} ${Y(recta(uA))} L${X(uB)} ${Y(recta(uA)) + (Y(recta(uB)) - Y(recta(uA))) * clamp(kTri * 2 - 1)}`} stroke={paleta.rojo} strokeWidth={4} />
+          <path d={`M${X(uB) - 9} ${Y(recta(uB)) + 14} L${X(uB)} ${Y(recta(uB))} L${X(uB) + 9} ${Y(recta(uB)) + 14}`} fill="none" stroke={paleta.rojo} strokeWidth={3}
+            opacity={clamp(kTri * 2 - 1)} />
+        </g>
+      ) : null}
     </svg>
   );
 };

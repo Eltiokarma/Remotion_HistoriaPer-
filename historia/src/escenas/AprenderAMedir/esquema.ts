@@ -22,6 +22,12 @@ export const esquema = z.object({
   balanza: z.tuple([z.string(), z.string()]),
   temas: z.array(z.string()).min(1).max(5),
   ficha_aulas: z.string().optional(),
+  /** false: sin el aula que se llena (la carrera va en la ficha del estante, sin narrarla). */
+  aula: z.boolean().default(true),
+  /** Ficha a máquina sobre el estante (p. ej. dónde enseñó). */
+  ficha_estante: z.string().optional(),
+  /** La recta «busca» su lugar y se marca su pendiente: para explicar qué es una regresión. */
+  explicar_regresion: z.boolean().default(false),
   /** Las dos épocas de la brújula (arriba y abajo: nunca izquierda/derecha). */
   brujula: z.tuple([z.string(), z.string()]),
 });
@@ -35,14 +41,16 @@ export const beats = {
   abre: 'la cámara se abre hasta ver la ruta entera, y se asienta',
   ficha: 'se escribe la ficha',
   puntos: 'papel milimetrado: caen los puntos (3 s)',
+  caen: '(con explicar_regresion) caen los puntos (el papel ya estaba)',
   recta: 'se traza la recta de regresión',
+  pendiente: '(con explicar_regresion) se marca la pendiente: cuánto pesa',
   discursos: 'los bloques de discurso se apagan',
   balanza: 'aparece la balanza',
   profundidad: 'cae la primera palabra (se inclina)',
   claridad: 'cae la segunda (se equilibra)',
   estante: 'aparece la repisa',
   temas: 'bajan los temas, uno cada 0.5 s',
-  aulas: 'el aula se va llenando',
+  aulas: '(con aula) el aula se va llenando',
   brujula: 'aparece la brújula',
   giro: 'la aguja gira despacio de una época a la otra',
 };

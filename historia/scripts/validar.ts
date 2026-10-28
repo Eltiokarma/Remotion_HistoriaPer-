@@ -85,7 +85,11 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
       const orden = Object.keys(entrada.beats);
       const hasta = (e.props as { hasta?: unknown } | undefined)?.hasta;
       const despues = (b: string) => typeof hasta === 'string' && orden.includes(hasta) && orden.indexOf(b) > orden.indexOf(hasta);
-      for (const b of usados) if (!(b in e.beats) && !que(b).startsWith('(') && !despues(b)) avisos.push(`${e.id}: falta el beat "${b}" (${que(b)}); se usa el valor por defecto`);
+      // con `parte` (una escena partida en dos), solo hacen falta los beats de esa parte
+      const parte = (e.props as { parte?: unknown } | undefined)?.parte;
+      const deLaParte = 'partes' in entrada && typeof parte === 'string' ? (entrada.partes as Record<string, string[]>)[parte] : undefined;
+      const fuera = (b: string) => deLaParte !== undefined && !deLaParte.includes(b);
+      for (const b of usados) if (!(b in e.beats) && !que(b).startsWith('(') && !despues(b) && !fuera(b)) avisos.push(`${e.id}: falta el beat "${b}" (${que(b)}); se usa el valor por defecto`);
       for (const b of Object.keys(e.beats)) if (!usados.has(b) && !deAudio.includes(b)) avisos.push(`${e.id}: ${e.componente} no usa el beat "${b}"`);
     }
     // los beats están en el tiempo de duracion_s (se escalan con la voz), salvo que estén ajustados

@@ -15,10 +15,16 @@ export const esquema = z.object({
   }).optional(),
   /** Una palabra que al final queda sola en pantalla (p. ej. cómo lo describió alguien). */
   palabra: z.string().optional(),
+  /** "sola": la palabra a pantalla completa · "cita": entre comillas, bajo la ficha de quien la dijo. */
+  palabra_como: z.enum(['sola', 'cita']).default('sola'),
+  /** Ficha a máquina arriba a la izquierda (p. ej. quien describe al personaje). */
+  ficha: z.string().optional(),
 });
 
 export const beats = {
   nombre: 'entra el nombre, letra por letra',
+  piscina: '(piscina) el agua cubre la página: aparece la piscina (sin este beat, la piscina está desde el comienzo)',
+  ficha: '(con ficha) se escribe la ficha',
   frenar: '(piscina) el carril empieza a frenar',
   renglon: '(piscina) el agua se vuelve papel',
   sello: '(con sello) cae el sello',

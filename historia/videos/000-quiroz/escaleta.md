@@ -115,7 +115,7 @@ Total: 10:03.3. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 
 | 1:54.4 |  | **volante** — entra el volante |  |
 | 1:54.5 | Militó un tiempo en un pequeño partido trotskista que lo criticaba con dureza. |  |  |
 | 1:59.8 | En las aulas lo marcan profesores como Franklin Pease, y por ellos llega a Fernand Brodel, el historiador francés de las estructuras que duran siglos. |  |  |
-| 1:60.0 |  | **capas** — el muro se apaga y se dibujan las capas |  |
+| 1:60.0 |  | **capas** — el muro se apaga y se dibujan las capas (con capa1–3: solo el marco, vacío) |  |
 | 1:60.0 |  |  | se va el ambiente ciudad |
 | 1:60.0 |  |  | ambiente cuarto (0.5) |
 | 2:05.1 |  | **braudel** — (con ficha) aparece la ficha |  |
@@ -205,7 +205,7 @@ Total: 10:03.3. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 
 | 4:01.8 | Se convierte en la mayor autoridad en historia financiera del Perú: bancos, crédito colonial, la casa Greis. |  |  |
 | 4:06.3 |  | **temas** — bajan los temas, uno cada 0.5 s |  |
 | 4:09.5 | Termina como profesor en el Báruj Cólech y en la Síti Iunivérsiti de Niu Iork, donde forma a cientos de estudiantes. |  |  |
-| 4:09.5 |  | **aulas** — el aula se va llenando |  |
+| 4:09.5 |  | **aulas** — (con aula) el aula se va llenando |  |
 | 4:17.4 | Sus ideas también se mueven: de aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades y un Estado que dejara de ser el botín de unos pocos. |  |  |
 | 4:17.4 |  | **brujula** — aparece la brújula |  |
 | 4:20.2 |  | **giro** — la aguja gira despacio de una época a la otra |  |

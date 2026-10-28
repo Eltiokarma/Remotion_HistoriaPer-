@@ -29,8 +29,7 @@ diagnóstico del video 000 está en `videos/000-quiroz/diagnostico.md`.
 
 **Los videos.** `000-quiroz` es la versión de trabajo de 10 min con todo el material del arco de
 presentación. Ese material se reparte en cuatro episodios (el plan está en
-`videos/000-quiroz/diagnostico.md`, §4): **0·1** `001-el-hombre` (ya separado: hoy 4 min, con la
-reescritura ~7), **0·2** *La deuda defraudada*, **0·3** *¿Se puede medir la corrupción?* y **0·4**
+`videos/000-quiroz/diagnostico.md`, §4): **0·1** `001-el-hombre` (separado y reescrito: 5:37), **0·2** *La deuda defraudada*, **0·3** *¿Se puede medir la corrupción?* y **0·4**
 *La cuenta* (por separar). `000-quiroz` sigue siendo la fuente de sus escenas hasta que estén los
 cuatro.
 
@@ -105,15 +104,13 @@ En el Studio, la carpeta **catalogo** tiene cada escena con datos de muestra. El
 props de la derecha deja cambiar textos, cifras, lugares y colores y ver el resultado al
 instante. Lo que quede bien se copia tal cual a las `props` de una escena en `escenas.json`.
 
-| Escena            | Qué hace                                                                                     | Datos principales                                  |
-|-------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------|
 | Escena              | Qué hace                                                                                                   | En 000 |
 |---------------------|------------------------------------------------------------------------------------------------------------|--------|
 | `PruebasDeImprenta` | Ficha a máquina, pruebas con marcas de corrector, una frase de libro subrayada (y otra más abajo que entra en foco), y una línea de tiempo que la cámara recorre; antes: dos sellos con corte seco | s01    |
-| `Presentacion`      | Nombre grande y años; fondo `papel` o `piscina` (el carril se vuelve renglón); sello y/o palabra final sola | s02    |
-| `TiempoLargo`       | Sello sobre una lista, muro de afiches de época (uno se despega), volante y las tres capas de Braudel       | s03    |
-| `MecanismoDeuda`    | Islas con sacos, plata al Estado, vales consolidados, lo prometido en punteado, vale que se infla, caudal a bolsillos, frase tachada, tesis → libro | s04 |
-| `AprenderAMedir`    | Ruta que duda y cambia de destino, nube de puntos con recta, balanza, repisa de temas, aula, brújula        | s05    |
+| `Presentacion`      | Nombre grande y años; fondo `papel` o `piscina` (el carril se vuelve renglón; con el beat `piscina`, página → agua → página); ficha de quien lo describe; sello; palabra final sola o como cita bajo la ficha | s02    |
+| `TiempoLargo`       | Sello sobre una lista, muro de afiches de época (uno se despega), volante y las tres capas de Braudel; con `parte` se parte en dos escenas (`epoca` / `capas`); capas de a una, palabra del episodio, la cámara que vuelve a subir y una capa que se enciende | s03    |
+| `MecanismoDeuda`    | Islas con sacos, plata al Estado, vales consolidados, lo prometido en punteado, vale que se infla, caudal a bolsillos, frase tachada, tesis → libro; con `hasta`, solo el comienzo (el puente del 001) | s04 |
+| `AprenderAMedir`    | Ruta que duda y cambia de destino, nube de puntos con recta (con `explicar_regresion`: la recta busca su lugar y se marca la pendiente), balanza, repisa de temas con ficha, aula opcional, brújula | s05    |
 | `LaPregunta`        | Título a máquina con signos rojos, televisor con estática y REC, globo con fichas, dos palabras finales     | s06    |
 | `Objeciones`        | Cuatro tarjetas que pasan al centro y se dan vuelta (legajos, medidor, diccionario, tachado) + engranaje que se traba | s07 |
 | `LaCuenta`          | Regla de décadas, 100 unidades de las que cae el rango rojo, franja anual del PBI, niveles por época, país y su fantasma | s08 |
@@ -148,7 +145,7 @@ pueden combinar.
     una flecha va delante, el destino brilla al acercarse; tramos iguales o con el largo real de
     sus años, personas en dos alturas, arcos de parentesco, bloques que se encienden, puntas y un
     brillo que la recorre), `Dispersion` (nube de puntos y regresión
-    de verdad), `CapasDeTiempo`, `CirculosRed`, `IndiceSerie`, `LomosDeLibro`, `Estante`;
+    de verdad; la recta puede «buscar» su lugar y marcar su pendiente), `CapasDeTiempo`, `CirculosRed`, `IndiceSerie`, `LomosDeLibro`, `Estante`;
   - objetos: `Balanza`, `Brujula`, `TelevisorCRT` (estática, nunca imágenes), `GotaMercurio`
     (mercurio que se vuelve plata), `CartelObra`, `Aula`, `Calendario`, `Piscina`.
 - **Texto** (`components/texto/`): `Ficha` (dato de archivo a máquina), `TrazoRojo` (subrayar o
@@ -265,8 +262,8 @@ npx remotion render v000-quiroz-s04 out/s04.mp4
   No queda ningún `[VERIFICAR]`. `fuentes.md` lista 29 observaciones al guion (C1–C29); las de
   pantalla aprobadas ya están aplicadas. Para usar la caricatura de Chambón hace falta permiso de
   la PUCP para la copia digital.
-- Separar 0·2, 0·3 y 0·4 como videos propios y escribir lo que pide el plan (`diagnostico.md` §4);
-  en 0·1, la reescritura que lista su `guion.md` («Para la reescritura»).
+- Separar 0·2, 0·3 y 0·4 como videos propios y escribir lo que pide el plan (`diagnostico.md` §4).
+  El 0·1 ya tiene el guion reescrito y aprobado (5:37, sin escenas en rojo en la escaleta).
 - Grabar la voz real, cuadrar los beats con ella (`"beats_ajustados": true`) y recomponer la
   música (`npm run generar:audio -- 000-quiroz --forzar`).
 - Subtítulos nativos en Remotion (el guion lo propone): `tiempos.json` ya da el punto de partida.
