@@ -12,7 +12,8 @@ Es el libro de toda la serie, así que estas fichas sirven a todos los videos. C
 **Leído hasta ahora:** pp. 1–82 (créditos, índice, nota de los editores, dedicatoria, prólogo de
 Marcos Cueto pp. 15–29, prefacio pp. 31–32, agradecimientos pp. 33–35, introducción pp. 37–57,
 capítulo 1 pp. 59–82), pp. 121–128 (ciclos coloniales, cap. 1), pp. 164–190 (el guano y la
-consolidación, cap. 2) y pp. 535–554 (el Apéndice entero). Las páginas
+consolidación, cap. 2), las dos primeras páginas de los capítulos 3 a 7 (pp. 191–192, 241–242,
+315–316, 383–384 y 443–444) y pp. 535–554 (el Apéndice entero). Las páginas
 son **las del libro impreso**, no las del PDF: en el PDF del libro, la página *n* del archivo es la
 *n + 1* del libro.
 
@@ -386,7 +387,8 @@ pasado».
   esfuerzos y las tribulaciones del reformador ilustrado Antonio de Ulloa en el Perú de mediados
   del siglo XVIII. Le siguieron otros aspirantes a reformistas del periodo republicano como Domingo
   Elías, Francisco García Calderón Landa, Manuel González Prada, Jorge Basadre, Héctor Vargas Haya y
-  Mario Vargas Llosa, entre varios otros.» (El libro no dice aquí en qué capítulo está cada uno.)
+  Mario Vargas Llosa, entre varios otros.» (Aquí no dice en qué capítulo está cada uno; lo dicen
+  las aperturas de los capítulos: ver §9. Cada capítulo abre con uno de ellos.)
 - **Autoridades que el libro reevalúa:** «Manuel Amat y Junyent, Agustín Gamarra, Antonio
   Gutiérrez de la Fuente, Juan Crisóstomo Torrico, José Rufino Echenique, Nicolás de Piérola,
   Andrés Avelino Cáceres, Augusto B. Leguía, Manuel Prado, Víctor Raúl Haya de la Torre, Manuel
@@ -862,7 +864,83 @@ militares a quienes apoyó en su momento.»
 
 ---
 
-## 9. Lo que todavía no está leído (y dónde está)
+## 9. Cómo abre cada capítulo: un denunciante por capítulo
+
+Cada capítulo empieza con la persona que denunció la corrupción de su época (lo anuncia la
+introducción, p. 55: «Cada uno de los siete capítulos del libro corresponde a una de las
+principales épocas y ciclos de corrupción de que fueron testigos los principales personajes que
+denunciaron o destaparon prácticas corruptas»).
+
+| Cap. | Años | Abre con | Página |
+|---|---|---|---|
+| 1 | 1750–1820 | Antonio de Ulloa | p. 59 (§6) |
+| 2 | 1821–1859 | Domingo Elías (cartas de 1853) | pp. 171–172 (§7) |
+| 3 | 1860–1883 | Francisco García Calderón Landa (y un epígrafe de Heinrich Witt) | pp. 191–192 |
+| 4 | 1884–1930 | Manuel González Prada | p. 241 |
+| 5 | 1931–1962 | Jorge Basadre | p. 315 |
+| 6 | 1963–1989 | Héctor Vargas Haya | p. 383 |
+| 7 | 1990–2000 | Mario Vargas Llosa | p. 443 |
+
+**Cap. 3 — El sinuoso camino al desastre, 1860–1883 (pp. 191–192).**
+- Epígrafe: «Se creía que bajo el gobierno de Echenique en tiempos de la Consolidación habían
+  alcanzado su punto más alto, pero se engañaban enormemente quienes así lo pensaron; estos delitos
+  nunca acecharon con mayor descaro desvergonzado que en el periodo actual.» (Heinrich Witt, 20 de
+  noviembre de 1871; p. 191, n. 1: su diario, vol. 7, pp. 292–293.)
+- Lima hacia 1860: «una peculiar prosperidad […] en medio de una corrupción sin tapujos. El auge
+  guanero torpemente administrado iba transformando de manera irreversible a la vieja capital
+  virreinal.» Un panfleto de 1861: «¿Qué importaba todo? […] ¿no hay esta noche baile en palacio?»
+  (p. 191, n. 2: Manuel María del Maso, *Aniversario*, 1861).
+- Francisco García Calderón Landa, jurista arequipeño de veinticinco años, llega a Lima en 1859
+  con su *Diccionario de la legislación peruana* (dos volúmenes, 1860–1862). Funcionario de
+  Hacienda y abogado de grandes firmas («lindando en ocasiones con el conflicto de interés»), vio
+  sus normas «violadas de modo consistente durante los cruciales años que precedieron a la quiebra
+  fiscal y la subsiguiente y desastrosa Guerra del Pacífico (1879-1883)» (p. 192).
+
+**Cap. 4 — La modernización y sus secuaces, 1884–1930 (pp. 241–242).**
+- «Manuel González Prada (1844-1918), testigo presencial de la caída y ocupación de Lima por el
+  ejército chileno, elaboró a partir de estas dolorosas memorias una fuerte crítica literaria contra
+  la dirigencia política y social del país» (p. 241). «El escritor se convirtió así en uno de los
+  luchadores y críticos más implacables contra la corrupción en la historia moderna peruana.»
+  (p. 241).
+- **Desciende de Ulloa:** «En notable similitud con la postura que su distinguido ancestro materno
+  Antonio de Ulloa tomara contra la corrupción, González Prada sostuvo que los políticos habían
+  vendido su conciencia y pluma al más alto postor.» (p. 242). La madre de González Prada, Josefa
+  Álvarez de Ulloa y Rodríguez (1820–1887), emparentaba con Antonio de Ulloa (p. 242, n. 2, que cita
+  a Luis Alberto Sánchez, *Mito y realidad de González Prada*, 1976, p. 12, n. 3).
+- Frases suyas que cita: «¿Qué era el Poder Judicial? Almoneda pública, desde la Corte Suprema
+  hasta el Juzgado de Paz.» («En el año 2200»; p. 242, n. 2); el Perú, un organismo enfermo «donde
+  se aplica el dedo brota pus» («Propaganda y ataque», discurso de 1888; p. 242, n. 3). La nota 3
+  cita también el «Discurso en el Politeama» (1888).
+
+**Cap. 5 — Dictadores venales y pactos secretos, 1931–1962 (pp. 315–316).**
+- «En 1930, el historiador Jorge Basadre (1903-1980) presenció el derrumbe del régimen dictatorial
+  de Leguía.» (p. 315). Perseguido en el Oncenio como dirigente estudiantil; «En 1927, fue
+  encarcelado por varios meses en la isla San Lorenzo.» (p. 315).
+- Sánchez Cerro cierra San Marcos; Basadre sale del país y vuelve cuando reabre, en 1935. Fue
+  «testigo de sucesivas dictaduras y procesos electorales plagados de escandalosos fraudes y pactos
+  secretos que beneficiaron a las camarillas dominantes» (p. 316).
+
+**Cap. 6 — Asaltos a la democracia, 1963–1989 (pp. 383–384).**
+- «Desde los años sesenta, Vargas Haya se había dedicado a la investigación de casos notorios de
+  corrupción en la Administración Pública.» Diputado «por casi veinte años», presidente de la Cámara
+  de Diputados en 1988–1989; renunció al APRA en el año 2000 (p. 383).
+- «En una entrevista periodística, Vargas Haya sostuvo que, en "el Perú, ser honesto es como ser un
+  leproso".» (p. 383; la nota 1 aclara que en el texto de la entrevista dice: «El hombre honrado, en
+  el Perú, es un leproso», *Perú 21*, 19 de enero de 2006).
+- «Al igual que Basadre, el historiador y funcionario, Vargas Haya, el político y legislador, fue un
+  testigo de este fenómeno desde el interior mismo del sistema político.» Sus libros documentan los
+  dos gobiernos de Belaúnde, la dictadura militar, el primer gobierno de Alan García y el de Fujimori
+  (p. 384).
+
+**Cap. 7 — Conspiraciones corruptas, 1990–2000 (pp. 443–444).**
+- Mario Vargas Llosa: «Vargas Llosa siguió, así, los pasos de quienes en el pasado combatieron la
+  corrupción» (p. 443). Candidato en 1990, gana la primera vuelta y pierde la segunda con Fujimori;
+  con su hijo Álvaro publica entre 1991 y 1993 información sobre los medios ilegales del ascenso de
+  Fujimori (p. 444).
+
+---
+
+## 10. Lo que todavía no está leído (y dónde está)
 
 Para el arco de presentación (0·1 a 0·3) ya no falta nada del libro. Pendiente:
 
@@ -870,4 +948,3 @@ Para el arco de presentación (0·1 a 0·3) ya no falta nada del libro. Pendient
 |---|---|---|
 | El detalle de la gestión de Ulloa y el resto del cap. 1 (para el episodio 1) | pp. 82–121 | 81–120 |
 | El Epílogo (tono, «contra el fatalismo») | pp. 521–534 | 520–533 |
-| En qué capítulo está cada denunciante (Elías ya está: cap. 2) | capítulos 3–7 | — |

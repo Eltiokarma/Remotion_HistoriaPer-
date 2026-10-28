@@ -251,10 +251,10 @@ npx remotion render v000-quiroz-s04 out/s04.mp4
 
 ## Pendiente
 
-- Cotejado con el libro (pp. 1–82, 121–128, 164–190 y 535–554, en `bibliografia/quiroz-2013.md`)
-  y, para lo que el libro no dice, con fuentes externas (`fuentes.md`, «Fuentes fuera del libro»).
-  Queda un `[VERIFICAR]`: en qué capítulo está González Prada, Basadre y Vargas Haya en la línea
-  de tiempo de s10 (hacen falta las primeras páginas de los capítulos 3 a 7). `fuentes.md` lista 29 observaciones al guion (C1–C29); las de
+- Cotejado con el libro (pp. 1–82, 121–128, 164–190, la apertura de los capítulos 3 a 7 y
+  pp. 535–554, en `bibliografia/quiroz-2013.md`) y, para lo que el libro no dice, con fuentes
+  externas (`fuentes.md`, «Fuentes fuera del libro»).
+  No queda ningún `[VERIFICAR]`. `fuentes.md` lista 29 observaciones al guion (C1–C29); las de
   pantalla aprobadas ya están aplicadas. Para usar la caricatura de Chambón hace falta permiso de
   la PUCP para la copia digital.
 - Grabar la voz real, cuadrar los beats con ella (`"beats_ajustados": true`) y recomponer la
