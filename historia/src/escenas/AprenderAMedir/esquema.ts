@@ -28,8 +28,18 @@ export const esquema = z.object({
   ficha_estante: z.string().optional(),
   /** La recta «busca» su lugar y se marca su pendiente: para explicar qué es una regresión. */
   explicar_regresion: z.boolean().default(false),
-  /** Las dos épocas de la brújula (arriba y abajo: nunca izquierda/derecha). */
+  /** Las dos épocas de la brújula. */
   brujula: z.tuple([z.string(), z.string()]),
+  /** "arriba-abajo" (sin lectura política) o "izquierda-derecha": la aguja va de tope a tope (revisión del director). */
+  brujula_polos: z.enum(['arriba-abajo', 'izquierda-derecha']).default('arriba-abajo'),
+  /** Lo que se escribe junto a cada polo (hechos con fuente, no frases inventadas), un renglón por línea. */
+  brujula_notas: z.tuple([z.array(z.string()), z.array(z.string())]).optional(),
+  /** La frase que se escribe con tiza cuando la brújula pasa a la pizarra. */
+  brujula_frase: z.string().optional(),
+  /** Título en pantalla del método (DIRECCION_DE_VIDEO §2.4). */
+  titulo_metodo: z.string().optional(),
+  /** Rótulo del gráfico (p. ej. "Regresión"), con el beat `regresion`. */
+  rotulo_grafico: z.string().optional(),
 });
 
 export const beats = {
@@ -52,7 +62,11 @@ export const beats = {
   temas: 'bajan los temas, uno cada 0.5 s',
   aulas: '(con aula) el aula se va llenando',
   brujula: 'aparece la brújula',
-  giro: 'la aguja gira despacio de una época a la otra',
+  giro: 'la aguja gira despacio de una época a la otra (izquierda-derecha: va al otro tope)',
+  izquierda: '(izquierda-derecha) la aguja va al primer tope; se escriben sus notas',
+  tiza: '(con brujula_frase) la brújula y su fondo pasan a la pizarra; los rótulos se borran',
+  frase: '(con brujula_frase) se escribe la frase con tiza',
+  regresion: '(con rotulo_grafico) aparece el rótulo del gráfico',
 };
 
 /** Como se usa en 000-quiroz. */

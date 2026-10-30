@@ -136,6 +136,8 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
 
   const porCompletar = (readFileSync(archivo, 'utf8').match(/\[POR COMPLETAR/g) ?? []).length;
   if (porCompletar) (final ? errores : avisos).push(`escenas.json tiene ${porCompletar} «[POR COMPLETAR…]» de la plantilla`);
+  const marcadores = video.escenas.filter((e) => e.componente === 'Marcador').map((e) => e.id);
+  if (marcadores.length) (final ? errores : avisos).push(`hay ${marcadores.length} marcador(es) «por definir» en el video (${marcadores.join(', ')}): falta una decisión del director`);
 
   // —— fuentes y glosario
   const fuentes = path.join(VIDEOS, carpeta, 'fuentes.md');

@@ -12,6 +12,11 @@ type Props = {
   id?: string;
   /** Segundos desde que empiezan a subir sacos al barco (el barco queda anclado junto a la última isla). */
   carga?: number;
+  /**
+   * El barco está anclado desde el comienzo y los sacos suben una sola vez, sin repetirse
+   * (DIRECCION_DE_VIDEO §2.12: nada de bucles visibles ni saltos).
+   */
+  anclado?: boolean;
 };
 
 const X0 = 150, X1 = 1770, Y0 = 100, Y1 = 940, HORIZONTE = 585;
@@ -100,7 +105,7 @@ export const Barco: React.FC<{ x: number; y: number; tinta: string; papel: strin
  * Grabado del siglo XIX (tinta sobre papel): cielo y mar en líneas de buril, islas con
  * sombreado cruzado, montículos de guano punteados, aves y una fragata. El mar se mueve.
  */
-export const GrabadoGuanero: React.FC<Props> = ({ paleta, t, guano, id = 'grabado', carga }) => {
+export const GrabadoGuanero: React.FC<Props> = ({ paleta, t, guano, id = 'grabado', carga, anclado = false }) => {
   const tinta = mezclar(paleta.fondo, paleta.rojo, 0.08);
   const filasMar = useMemo(() => {
     const out: number[] = [];
@@ -117,11 +122,12 @@ export const GrabadoGuanero: React.FC<Props> = ({ paleta, t, guano, id = 'grabad
     return Array.from({ length: 28 }, () => ({ fx: r.rango(0.05, 0.12), fy: r.rango(0.07, 0.15), ax: r.rango(120, 420), ay: r.rango(30, 110), fase: r.rango(0, 6.28), aleteo: r.rango(7, 10), tam: r.rango(0.7, 1.3) }));
   }, []);
   // navega despacio hacia la izquierda; si se está cargando, queda anclado junto a la última isla
-  const barcoX = carga === undefined ? 1590 - t * 9 : 1650;
+  const barcoX = anclado ? 1650 : carga === undefined ? 1590 - t * 9 : 1650;
   // sacos: suben por una plancha desde la orilla de la isla hasta la cubierta, uno tras otro
   const plancha = { x1: 1500, y1: HORIZONTE - 4, x2: 1600, y2: HORIZONTE - 44 };
-  const sacos = carga === undefined || carga < 0 ? [] : Array.from({ length: 6 }, (_, k) => ((carga / 1.3 + k / 6) % 1))
-    .filter((_, k) => carga > k * 0.22);
+  const sacos = carga === undefined || carga < 0 ? []
+    : anclado ? Array.from({ length: 8 }, (_, k) => (carga - k * 0.55) / 1.3).filter((u) => u > 0 && u < 1) // cada saco sube una vez
+      : Array.from({ length: 6 }, (_, k) => ((carga / 1.3 + k / 6) % 1)).filter((_, k) => carga > k * 0.22);
 
   return (
     <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>

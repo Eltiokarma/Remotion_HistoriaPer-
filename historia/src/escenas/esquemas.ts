@@ -22,6 +22,7 @@ import * as Objeciones from './Objeciones/esquema';
 import * as LaCuenta from './LaCuenta/esquema';
 import * as CirculosCorruptos from './CirculosCorruptos/esquema';
 import * as Denunciantes from './Denunciantes/esquema';
+import * as Marcador from './Marcador/esquema';
 
 export const CATALOGO = {
   DiasYManuscrito,
@@ -39,6 +40,7 @@ export const CATALOGO = {
   LaCuenta,
   CirculosCorruptos,
   Denunciantes,
+  Marcador,
 } as const;
 
 export type NombreEscena = keyof typeof CATALOGO;

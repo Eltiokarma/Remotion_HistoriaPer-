@@ -31,9 +31,22 @@ export const esquema = z.object({
    * como puente al episodio que cuenta el resto). Los beats posteriores no hacen falta.
    */
   hasta: z.enum(PASOS).optional(),
+  /**
+   * Se llega al grabado desde un libro que se hojea hasta su página (con los beats hoja_entra,
+   * hojea, hoja_pagina y hoja_zoom): el grabado no se ve repetirse (DIRECCION_DE_VIDEO §2.12).
+   */
+  hojear: z.object({ encabezado: z.string() }).optional(),
+  /** Del Estado a los vales, la cámara hace un paneo (con una flecha que sigue la plata) en vez de cortar (§2.11). */
+  paneo: z.boolean().default(false),
+  /** La pregunta que acusa, escrita fuerte con el beat `pregunta` (§2.14). */
+  pregunta: z.string().optional(),
 });
 
 export const beats = {
+  hoja_entra: '(con hojear) entra el libro, cerrado',
+  hojea: '(con hojear) se abre y se hojea',
+  hoja_pagina: '(con hojear) cae la última hoja: la página con el grabado',
+  hoja_zoom: '(con hojear) la cámara entra al grabado hasta llenar la pantalla',
   islas: 'el grabado de las islas',
   sacos: 'empiezan a subir sacos al barco',
   flecha: 'barco y Estado: sale la flecha de dinero',
@@ -51,6 +64,7 @@ export const beats = {
   tesis: 'portada de la tesis, a máquina',
   libro: 'la tesis se vuelve libro',
   titulo: 'se estampa el título en la tapa',
+  pregunta: '(con pregunta) la pregunta se escribe fuerte',
 };
 
 /** Como se usa en 000-quiroz. */

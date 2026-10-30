@@ -6,7 +6,10 @@ import { Luz } from '../../components/atmosfera/Luz';
 import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { Afiche } from '../../components/graficos/Afiche';
+import { Pizarra } from '../../components/atmosfera/Pizarra';
 import { CapasDeTiempo } from '../../components/graficos/CapasDeTiempo';
+import { CapasTiza } from '../../components/graficos/CapasTiza';
+import { TextoTiza, TIZA } from '../../components/texto/Tiza';
 import { Sello } from '../../components/graficos/Sello';
 import { bordePapel } from '../../components/graficos/svg';
 import { Ficha } from '../../components/texto/Ficha';
@@ -44,6 +47,8 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   const tCapa = [T('capa1', tCapas + 0.2), T('capa2', tCapas + 1.6), T('capa3', tCapas + 3.0)];
   const tPalabra = props.palabra ? T('palabra', Infinity) : Infinity, tSubir = T('subir', Infinity);
   const tRealce = props.realce ? T('realce', Infinity) : Infinity;
+  const tRemate = props.remate ? T('remate', Infinity) : Infinity;
+  const pizarra = props.estilo === 'pizarra';
   const noche = mezclar(pal.fondo, '#000000', 0.3);
 
   const restos = useMemo(() => {
@@ -140,10 +145,28 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                   filter: `drop-shadow(5px 8px 8px ${alfa('#000000', 0.5)})` }}>
                   <div style={{ width: 380, height: 500, background: mezclar(pal.papel, '#ffffff', 0.1), position: 'relative', overflow: 'hidden' }}>
                     <Papel color={mezclar(pal.papel, '#ffffff', 0.1)} envejecido={0.15} escala={400}>
-                      <div style={{ position: 'absolute', left: 28, top: 30, width: 324, height: 54, background: pal.rojo, opacity: 0.88 }} />
-                      <div style={{ position: 'absolute', left: 28, top: 106, filter: 'blur(0.6px)' }}>
-                        <Renglones ancho={324} lineas={14} interlinea={24} alto={8} color={mezclar(pal.fondo, pal.rojo, 0.25)} opacidad={0.6} semilla={1975} />
-                      </div>
+                      {props.volante ? (
+                        // el papel dice algo: se lee (DIRECCION_DE_VIDEO §2.9)
+                        <>
+                          <div style={{ position: 'absolute', left: 28, top: 30, width: 324, padding: '12px 14px', background: pal.rojo, opacity: 0.92,
+                            fontFamily: fuente.afiche, fontWeight: 600, fontSize: 30, lineHeight: 1.05, color: pal.papel, textTransform: 'uppercase' }}>{props.volante.titulo}</div>
+                          {props.volante.texto ? (
+                            <div style={{ position: 'absolute', left: 30, top: 200, width: 320, fontFamily: fuente.maquina, fontSize: 21, lineHeight: 1.35,
+                              color: mezclar(pal.fondo, pal.rojo, 0.2), filter: 'blur(0.3px)' }}>{props.volante.texto}</div>
+                          ) : null}
+                          {props.volante.pie ? (
+                            <div style={{ position: 'absolute', left: 30, bottom: 26, width: 320, fontFamily: fuente.mono, fontSize: 15, letterSpacing: '0.08em',
+                              color: alfa(pal.fondo, 0.7) }}>{props.volante.pie}</div>
+                          ) : null}
+                        </>
+                      ) : (
+                        <>
+                          <div style={{ position: 'absolute', left: 28, top: 30, width: 324, height: 54, background: pal.rojo, opacity: 0.88 }} />
+                          <div style={{ position: 'absolute', left: 28, top: 106, filter: 'blur(0.6px)' }}>
+                            <Renglones ancho={324} lineas={14} interlinea={24} alto={8} color={mezclar(pal.fondo, pal.rojo, 0.25)} opacidad={0.6} semilla={1975} />
+                          </div>
+                        </>
+                      )}
                     </Papel>
                   </div>
                   {tachuela > 0 ? (
@@ -157,8 +180,62 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
         </AbsoluteFill>
       ) : null}
 
+      {/* C en la pizarra: el profe dibuja las capas con tiza; brilla la que nombra; escribe la nota y el remate */}
+      {pizarra && conCapas ? (() => {
+        const fin = (desde: number, hasta: number) => tramo(t, desde, 0.7, 'natural') * (1 - tramo(t, hasta - 0.3, 0.7, 'natural'));
+        const idx = props.realce ? ['rapida', 'media', 'lenta'].indexOf(props.realce) : -1;
+        const brillo: [number, number, number] = [
+          fin(tCapa[0], tCapa[1]),
+          Math.max(fin(tCapa[1], tCapa[2]), idx === 1 ? fin(tRealce, tRemate) : 0),
+          Math.max(fin(tCapa[2], tSubir < Infinity ? tSubir : tRealce), idx === 2 ? fin(tRealce, tRemate) : 0),
+        ];
+        if (idx === 0) brillo[0] = Math.max(brillo[0], fin(tRealce, tRemate));
+        const remate = tramo(t, tRemate, 0.6, 'natural');
+        return (
+          <AbsoluteFill>
+            <Pizarra>
+              <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+                {props.ficha ? (
+                  <TextoTiza id={`${escena.id}-autor`} texto={props.ficha.split('·')[0].trim().replace(/^F\. /, 'Fernand ')} x={110} y={120}
+                    k={tramo(t, tBraudel, 1.4, 'natural')} size={52} fontFamily={fuente.imprentaItalica} opacidad={1 - 0.6 * palabra - 0.6 * remate} />
+                ) : null}
+              </svg>
+              <CapasTiza id={`${escena.id}-tiza`} t={t} rotulos={props.capas} nombres={props.gobiernos} marco={tramo(t, tCapas, 1, 'natural')}
+                dibujo={[tramo(t, tCapa[0], 2.2, 'natural'), tramo(t, tCapa[1], 2.2, 'natural'), tramo(t, tCapa[2], 2.2, 'natural')]}
+                brillo={brillo} apaga={Math.max(palabra, remate)} />
+              <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+                {props.palabra ? (
+                  <TextoTiza id={`${escena.id}-palabra`} texto={props.palabra} x={960} y={560} anchor="middle" k={tramo(t, tPalabra, 1.6, 'natural')}
+                    size={120} ancho={0.42} fontFamily={fuente.imprentaItalica} opacidad={palabra} brillo={0.6} />
+                ) : null}
+                {props.nota ? (
+                  <TextoTiza id={`${escena.id}-nota`} texto={props.nota} x={430} y={890} k={tramo(t, tRealce + 0.3, 2.6, 'natural')} size={46}
+                    fontFamily={fuente.imprentaItalica} opacidad={1 - 0.7 * remate} brillo={fin(tRealce, tRemate)} />
+                ) : null}
+                {props.remate ? (() => {
+                  // el remate, en dos renglones, grande y solo: la frase con la que la gente se va
+                  const ps = props.remate.split(' ');
+                  const corte = Math.ceil(ps.length / 2);
+                  const l1 = ps.slice(0, corte).join(' '), l2 = ps.slice(corte).join(' ');
+                  return (
+                    <g>
+                      <rect x={0} y={0} width={1920} height={1080} fill="#1f3229" opacity={0.55 * remate} />
+                      <TextoTiza id={`${escena.id}-rem1`} texto={l1} x={960} y={500} anchor="middle" k={tramo(t, tRemate + 0.2, 1.6, 'natural')} size={84} ancho={0.43}
+                        fontFamily={fuente.imprentaItalica} brillo={0.5} />
+                      <TextoTiza id={`${escena.id}-rem2`} texto={l2} x={960} y={620} anchor="middle" k={tramo(t, tRemate + 1.6, 1.6, 'natural')} size={84} ancho={0.43}
+                        fontFamily={fuente.imprentaItalica} brillo={0.5} />
+                      <line x1={760} x2={760 + 400 * tramo(t, tRemate + 3.3, 0.6, 'ligero')} y1={668} y2={668} stroke={TIZA} strokeWidth={4} opacity={0.75} />
+                    </g>
+                  );
+                })() : null}
+              </svg>
+            </Pizarra>
+          </AbsoluteFill>
+        );
+      })() : null}
+
       {/* C: las tres capas del tiempo */}
-      {capas > 0 ? (
+      {!pizarra && capas > 0 ? (
         <AbsoluteFill style={{ opacity: capas }}>
           <Luz color={pal.ocre} x={55} y={70} radio={70} intensidad={0.12} />
           <AbsoluteFill style={{ transformOrigin: '6% 78%', transform: `translateY(${-300 * baja}px) scale(${1 + 0.55 * clamp(baja)})` }}>
@@ -170,14 +247,14 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       ) : null}
 
       {/* la ficha de quien tuvo la idea: puede llegar antes que las capas */}
-      {props.ficha && t >= tBraudel ? (
+      {!pizarra && props.ficha && t >= tBraudel ? (
         <div style={{ position: 'absolute', left: 120, top: 70 }}>
           <Ficha texto={props.ficha} t={t - tBraudel} color={pal.papel} acento={pal.rojo} size={26} salida={tramo(t, tBajar, 1, 'natural')} />
         </div>
       ) : null}
 
       {/* la palabra del episodio: a pantalla completa, quieta; las capas siguen moviéndose detrás, apagadas */}
-      {palabra > 0 && props.palabra ? (
+      {!pizarra && palabra > 0 && props.palabra ? (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', background: alfa(noche, 0.72 * palabra) }}>
           <div style={{ fontFamily: fuente.titulo, fontWeight: 600, fontSize: 128, color: pal.papel, opacity: palabra,
             letterSpacing: `${mix(0.02, 0.12, tramo(t, tPalabra, 4, 'natural'))}em`, transform: `translateY(${10 * (1 - palabra)}px)` }}>
@@ -194,6 +271,9 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       <Sfx nombre="tic" en={tTachuela} fps={fps} volumen={0.35} />
       <Sfx nombre="soplo" en={tBajar} fps={fps} volumen={0.35} />
       <Sfx nombre="nota-final" en={tPalabra} fps={fps} volumen={0.25} />
+      {pizarra ? [tBraudel, tCapa[0], tCapa[1], tCapa[2], tPalabra, tRealce + 0.3, tRemate + 0.2, tRemate + 1.6].map((tt, i) => (
+        <Sfx key={`z${i}`} nombre="lapiz" en={tt} fps={fps} volumen={0.2} />
+      )) : null}
     </AbsoluteFill>
   );
 };

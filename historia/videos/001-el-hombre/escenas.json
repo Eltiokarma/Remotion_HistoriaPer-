@@ -19,37 +19,61 @@
   },
   "escenas": [
     {
+      "id": "s00",
+      "seccion": "gancho",
+      "componente": "Marcador",
+      "duracion_s": 4.0,
+      "cola_s": 0,
+      "intensidad": 2,
+      "cambio": "(por definir) del golpe —lo que encontró y lo que le costó al Perú— a la historia del hombre",
+      "intencion": "marcador visible: el director decide el gancho (DIRECCION_DE_VIDEO §2.5); la propuesta está en revision_quiroz_ep01.md",
+      "transicion_salida": "corte",
+      "beats": {},
+      "props": {
+        "titulo": "El gancho",
+        "notas": [
+          "20–60 s · antes de «Nueva York, 2012» (recomendado)",
+          "primero el golpe, después Alfonso · DIRECCION_DE_VIDEO §2.5",
+          "propuesta: revision_quiroz_ep01.md, «Estado de la revisión»"
+        ]
+      },
+      "estado_musica": "ausente"
+    },
+    {
       "id": "s01",
       "seccion": "gancho",
       "componente": "PruebasDeImprenta",
-      "duracion_s": 49.07,
+      "duracion_s": 49.34,
       "cola_s": 2.5,
       "intensidad": 3,
       "cambio": "de un desconocido a un hombre que corrige su libro contra el tiempo",
-      "intencion": "abrir con la muerte y el libro sin decir quién es: los meses entre una y otro se recorren con la cámara, del punto oscuro a la luz",
+      "intencion": "abrir con la muerte y el libro sin decir quién es: los meses entre una y otro se recorren con la cámara, del punto oscuro a la luz; la muerte no es un dato más: cruz sobre negro, la frase entera, la fecha, y recién después el punto rojo",
       "transicion_salida": "corte",
       "beats": {
         "ficha": 0.4,
         "correcciones": 3.4,
         "cita": 17.0,
-        "subrayado": 23.5,
-        "abajo": 28.4,
-        "muerte": 37.2,
-        "recorre": 39.6,
-        "mayo": 43.3,
-        "final": 45.4,
-        "hombre": 47.0,
-        "encontro": 48.4
+        "subrayado": 23.3,
+        "abajo": 28.6,
+        "muerte": 33.9,
+        "fecha": 36.3,
+        "linea": 38.8,
+        "recorre": 39.4,
+        "mayo": 43.0,
+        "final": 44.4,
+        "hombre": 47.3,
+        "encontro": 48.7
       },
       "props": {
         "ficha": "NUEVA YORK · 2012",
+        "ficha_destacada": true,
         "seccion": "Agradecimientos",
         "cita": {
           "texto": "A mis médicos del hospital Memorial Sloan-Kettering les agradezco inmensamente el alargar estos días para poder completar la tarea.",
           "subrayado": "alargar estos días"
         },
-        "segunda": {
-          "texto": "La reciente llegada a este mundo de nuestro precioso Alfonsito ha colocado todo esto en su debida perspectiva vital."
+        "cruz": {
+          "fecha": "2 DE ENERO DE 2013"
         },
         "linea": {
           "tramos": [
@@ -95,13 +119,13 @@
         },
         {
           "beat": "abajo",
-          "movimiento": "baja por la página hasta la línea de Alfonsito; el foco pasa de una frase a la otra",
-          "motivo": "«unas líneas más abajo» celebra la llegada de su hijo"
+          "movimiento": "baja unas líneas por la página",
+          "motivo": "«unas líneas más abajo» celebra el nacimiento de su hijo"
         },
         {
           "beat": "recorre",
           "movimiento": "recorre la línea de tiempo hacia la derecha, de enero a mayo (arranca y frena despacio)",
-          "motivo": "entre la muerte y el libro hay meses: el espectador los atraviesa, no los salta"
+          "motivo": "entre la muerte y el libro hay meses: el espectador los atraviesa; antes, la cruz y la fecha con su tiempo (DIRECCION_DE_VIDEO §2.8)"
         },
         {
           "beat": "final",
@@ -121,7 +145,11 @@
             "nivel": 0.6
           }
         ],
-        "duck_db": -16
+        "duck_db": -16,
+        "silencio": {
+          "desde_beat": "fecha",
+          "hasta_beat": "linea"
+        }
       },
       "estado_musica": "ausente → entra al final"
     },
@@ -141,7 +169,8 @@
         "ficha": 15.5,
         "frenar": 20.6,
         "renglon": 23.6,
-        "palabra": 28.5
+        "palabra": 28.5,
+        "lugar": 3.0
       },
       "props": {
         "fondo": "piscina",
@@ -149,7 +178,15 @@
         "anios": "1956 — 2013",
         "palabra": "INAGOTABLE",
         "palabra_como": "cita",
-        "ficha": "MARCOS CUETO · PRÓLOGO"
+        "ficha": "MARCOS CUETO · PRÓLOGO",
+        "agua": "#2f7fa3",
+        "lugar": {
+          "codigo": 604,
+          "lon": -77.04,
+          "lat": -12.05,
+          "ficha": "LIMA · 1956",
+          "dato": "≈ 1,4 MILLONES DE HABITANTES (ESTIMADO)"
+        }
       },
       "audio": {
         "musica": {
@@ -231,7 +268,12 @@
           "FUJIMORI"
         ],
         "lista": "ADMISIÓN · 1974",
-        "parte": "epoca"
+        "parte": "epoca",
+        "volante": {
+          "titulo": "«Nunca apoyó al gobierno militar»",
+          "texto": "«militó por algún tiempo en un pequeño partido trotskista de izquierda que criticaba duramente al régimen castrense»",
+          "pie": "MARCOS CUETO, PRÓLOGO, P. 16"
+        }
       },
       "audio": {
         "musica": {
@@ -256,7 +298,7 @@
       "cola_s": 1.0,
       "intensidad": 3,
       "cambio": "de la pregunta en el aire a una forma de responderla: la historia tiene capas que se mueven a distinta velocidad",
-      "intencion": "una capa por frase; la cámara baja hasta la que casi no se mueve y ahí aparece la palabra del episodio; al volver, se enciende la capa que Quiroz va a estudiar",
+      "intencion": "la clase: Braudel en la pizarra; las capas se dibujan con tiza y brilla solo la que se nombra; la palabra del episodio; la nota y el remate escritos con peso",
       "transicion_salida": "corte",
       "beats": {
         "braudel": 5.5,
@@ -267,7 +309,8 @@
         "bajar": 38.9,
         "palabra": 42.9,
         "subir": 46.47,
-        "realce": 51.0
+        "realce": 51.0,
+        "remate": 54.29
       },
       "props": {
         "sello": {
@@ -304,20 +347,11 @@
         "lista": "ADMISIÓN · 1974",
         "parte": "capas",
         "palabra": "larga duración",
-        "realce": "media"
+        "realce": "media",
+        "estilo": "pizarra",
+        "nota": "las estructuras de la economía y la larga duración",
+        "remate": "Hay cosas que no cambian aunque cambien los gobiernos."
       },
-      "camara": [
-        {
-          "beat": "bajar",
-          "movimiento": "baja hasta la capa que casi no se mueve, y se queda",
-          "motivo": "«Y al fondo… casi no se mueve»: el espectador baja a la larga duración"
-        },
-        {
-          "beat": "subir",
-          "movimiento": "vuelve a ver las tres capas",
-          "motivo": "«Quiroz se quedó con eso»: de la idea de Braudel a lo que él va a estudiar, la capa del medio"
-        }
-      ],
       "audio": {
         "musica": {
           "archivo": "s04-capas.mp3",
@@ -362,7 +396,11 @@
         "estante": 66.4,
         "temas": 69.5,
         "brujula": 74.5,
-        "giro": 77.1
+        "giro": 78.7,
+        "regresion": 29.2,
+        "izquierda": 76.9,
+        "tiza": 86.4,
+        "frase": 90.4
       },
       "props": {
         "origen": {
@@ -404,7 +442,22 @@
         ],
         "aula": false,
         "ficha_estante": "BARUCH COLLEGE · CUNY · NUEVA YORK",
-        "explicar_regresion": true
+        "explicar_regresion": true,
+        "titulo_metodo": "Pensar la historia con números, no solo con discursos.",
+        "rotulo_grafico": "Regresión",
+        "brujula_polos": "izquierda-derecha",
+        "brujula_notas": [
+          [
+            "MILITANTE TROTSKISTA",
+            "CONTRA EL GOBIERNO MILITAR"
+          ],
+          [
+            "POSTURA LIBERAL",
+            "IGUALDAD DE OPORTUNIDADES",
+            "Domestic and foreign finance (1993)"
+          ]
+        ],
+        "brujula_frase": "La cuenta que sacó no es la de un partido."
       },
       "camara": [
         {
@@ -439,16 +492,21 @@
       "componente": "MecanismoDeuda",
       "duracion_s": 27.2,
       "cola_s": 1.5,
-      "intensidad": 4,
+      "intensidad": 5,
       "cambio": "del hombre que aprendió a medir a su primer caso: una deuda pagada con la plata del guano, y una pregunta abierta",
       "intencion": "cerrar el retrato volviendo atrás: lo que aprendió en Nueva York lo va a usar en lo que ya había encontrado antes de irse; la pregunta queda en el aire para el próximo episodio",
       "transicion_salida": "corte",
       "beats": {
+        "hoja_entra": 0.3,
+        "hojea": 4.9,
+        "hoja_pagina": 13.3,
+        "hoja_zoom": 13.8,
         "islas": 0.2,
         "sacos": 16.2,
-        "flecha": 19.0,
-        "vales": 20.3,
-        "consolidacion": 22.9
+        "flecha": 17.9,
+        "vales": 21.0,
+        "consolidacion": 22.9,
+        "pregunta": 25.29
       },
       "props": {
         "ficha": "SIGLO XIX · GUANO",
@@ -472,7 +530,12 @@
           "anio": "1987",
           "autor": "Alfonso W. Quiroz"
         },
-        "hasta": "consolidacion"
+        "hasta": "consolidacion",
+        "hojear": {
+          "encabezado": "Siglo XIX"
+        },
+        "paneo": true,
+        "pregunta": "¿A dónde fue a parar esa plata?"
       },
       "audio": {
         "musica": {
@@ -493,17 +556,29 @@
         ],
         "duck_db": -15
       },
-      "estado_musica": "presente (tensión) → en suspenso"
+      "estado_musica": "presente (tensión) → en suspenso",
+      "camara": [
+        {
+          "beat": "hoja_zoom",
+          "movimiento": "entra a la ilustración de la página hasta llenar la pantalla",
+          "motivo": "«el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)"
+        },
+        {
+          "beat": "vales",
+          "movimiento": "paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales",
+          "motivo": "«una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)"
+        }
+      ]
     },
     {
       "id": "s07",
       "seccion": "cierre",
       "componente": "Cierre",
       "duracion_s": 6.21,
-      "cola_s": 6.0,
+      "cola_s": 11.0,
       "intensidad": 1,
       "cambio": "del caso abierto a la promesa del próximo episodio",
-      "intencion": "la pregunta queda en un silencio de 2 s mientras las pruebas de imprenta del comienzo se cierran; después, el tema del canal entra solo, con el negro",
+      "intencion": "las pruebas de imprenta del comienzo se cierran; el tema entra unos segundos antes y se queda después, para que la tristeza se asiente (DIRECCION_DE_VIDEO §2.15)",
       "transicion_salida": "corte",
       "beats": {
         "cerrar": 0.3,
@@ -522,8 +597,7 @@
       "audio": {
         "musica": {
           "archivo": "s07-tema.mp3",
-          "nivel": 0.55,
-          "desde_beat": "negro"
+          "nivel": 0.55
         },
         "ambientes": [
           {
@@ -532,13 +606,18 @@
             "hasta_beat": "negro"
           }
         ],
-        "duck_db": -12,
-        "silencio": {
-          "desde_beat": "cerrar",
-          "hasta_beat": "negro"
-        }
+        "duck_db": -12
       },
-      "estado_musica": "silencio → protagonista (el tema del canal, solo, sobre el negro)"
+      "estado_musica": "protagonista (el tema del canal entra antes del negro y se queda ~5 s más sobre la tarjeta)"
+    }
+  ],
+  "excepciones": [
+    {
+      "regla": "paleta",
+      "escenas": [
+        "s02"
+      ],
+      "motivo": "el agua de la piscina es azul (DIRECCION_DE_VIDEO §2.13): con la paleta gris parecía concreto o brea"
     }
   ]
 }

@@ -116,6 +116,7 @@ instante. Lo que quede bien se copia tal cual a las `props` de una escena en `es
 | `LaCuenta`          | Regla de décadas, 100 unidades de las que cae el rango rojo, franja anual del PBI, niveles por época, país y su fantasma | s08 |
 | `CirculosCorruptos` | Anillos que se cierran y red que crece alrededor de un título; cartel de obra con una palabra tachada        | s09    |
 | `Denunciantes`      | Lista tachada, cordillera con punto que baja y escala de altura, mercurio → plata, corte a negro, nombres, índice de la serie | s10 |
+| `Marcador`          | Tarjeta roja «POR DEFINIR» con notas: lo que el director aún no decidió (`validar` avisa; `--final` falla) | (001 s00) |
 | `Cierre`            | La pila del inicio se limpia y se cierra; fundido a negro; tarjeta del próximo episodio con emblema          | s11    |
 | `DiasYManuscrito`   | Calendario que suelta hojas cada vez más lento + manuscrito que una pluma corrige                           | (v1)   |
 | `PaisajeALibro`     | Grabado que se da vuelta como página: libro de cuentas, cifra que se infla, flecha                           | (v1)   |

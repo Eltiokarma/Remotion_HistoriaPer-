@@ -12,6 +12,8 @@ import { Dispersion } from '../../components/graficos/Dispersion';
 import { Estante } from '../../components/graficos/Estante';
 import { Mapa, arco, proyeccionDe } from '../../components/graficos/Mapa';
 import { Ficha } from '../../components/texto/Ficha';
+import { Pizarra } from '../../components/atmosfera/Pizarra';
+import { TextoTiza } from '../../components/texto/Tiza';
 import { Odometro } from '../../components/texto/Odometro';
 import { anticipa, asienta, beat, clamp, estiraCon, impacto, mix, tramo, velocidad } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
@@ -96,8 +98,16 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const angulo = (cae1 >= 1 ? -12 : 0) * (cae2 >= 1 ? 0 : 1) + asienta(t, tProf + 0.6, 5) + asienta(t, tClar + 0.6, 4);
 
   // —— la brújula: gira despacio de una época a la otra y se asienta con un vaivén
+  const ladoALado = props.brujula_polos === 'izquierda-derecha';
+  const tIzq = T('izquierda', tBrujula + 1.5), tTiza = props.brujula_frase ? T('tiza', Infinity) : Infinity, tFrase = props.brujula_frase ? T('frase', tTiza + 2) : Infinity;
   const giro = tramo(t, tGiro, 4.5, 'solemne');
-  const anguloAguja = 180 * giro + asienta(t, tGiro + 4.5, 6, 6, 1.8);
+  // de tope a tope: la aguja va con decisión (acelera), choca con el tope y rebota (lo que llega se pasa y vuelve)
+  const DUR_IZQ = 1.1, DUR_DER = 1.5;
+  const anguloAguja = !ladoALado ? 180 * giro + asienta(t, tGiro + 4.5, 6, 6, 1.8)
+    : -90 * tramo(t, tIzq, DUR_IZQ, 'tenso') + asienta(t, tIzq + DUR_IZQ, 7, 14, 6) * (t < tGiro ? 1 : 0)
+      + 180 * tramo(t, tGiro, DUR_DER, 'tenso') - asienta(t, tGiro + DUR_DER, 7, 14, 6);
+  const tizaK = tramo(t, tTiza, 1.4, 'natural');
+  const tRegresion = props.rotulo_grafico ? T('regresion', Infinity) : Infinity;
 
   // —— los libros bajan a la repisa: el resorte se pasaría de la repisa; ese sobrepaso se vuelve
   // aplastamiento contra la madera (comprimir y estirar); al caer, se estiran apenas con la velocidad
@@ -149,6 +159,17 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
           <Dispersion paleta={pal} id={`${escena.id}-disp`} t={t - tPuntos} tRecta={tRecta - tPuntos} apagaDiscursos={tramo(t, tDiscursos, 1.2, 'natural')}
             aparece={entra(tPuntos)} tCaen={tCaen - tPuntos} busca={explica} residuos={!explica}
             tPendiente={tPendiente === undefined ? undefined : tPendiente - tPuntos} />
+          {/* el título del método: la frase que se anota (DIRECCION_DE_VIDEO §2.4) */}
+          {props.titulo_metodo ? (
+            <div style={{ position: 'absolute', left: 0, right: 0, top: 70, textAlign: 'center', fontFamily: fuente.libro, fontStyle: 'italic', fontSize: 52,
+              color: pal.fondo, opacity: tramo(t, tPuntos + 0.3, 1.0, 'natural'), transform: `translateY(${10 * (1 - tramo(t, tPuntos + 0.3, 1.0, 'natural'))}px)` }}>
+              {props.titulo_metodo}
+            </div>
+          ) : null}
+          {props.rotulo_grafico ? (
+            <div style={{ position: 'absolute', left: 830, top: 196, fontFamily: fuente.mono, fontSize: 30, letterSpacing: '0.3em', color: pal.rojo,
+              opacity: tramo(t, tRegresion, 0.6, 'natural') }}>{props.rotulo_grafico.toUpperCase()}</div>
+          ) : null}
         </Papel>
       ) : null}
 
@@ -186,9 +207,32 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
 
       {fase === 6 ? (
         <AbsoluteFill style={{ opacity: entra(tBrujula) }}>
-          <Luz color={pal.ocre} x={50} y={45} radio={55} intensidad={0.22} />
-          <Brujula paleta={pal} id={`${escena.id}-bru`} angulo={anguloAguja} radio={290}
-            polos={[{ texto: props.brujula[0], angulo: 0 }, { texto: props.brujula[1], angulo: 180 }]} />
+          {tizaK > 0 ? <Pizarra aparece={tizaK} /> : null}
+          <Luz color={pal.ocre} x={50} y={45} radio={55} intensidad={0.22 * (1 - tizaK)} />
+          <Brujula paleta={pal} id={`${escena.id}-bru`} angulo={anguloAguja} radio={ladoALado ? 250 : 290} tiza={tizaK}
+            topes={ladoALado ? [-90, 90] : []}
+            polos={ladoALado ? [{ texto: props.brujula[0], angulo: -90 }, { texto: props.brujula[1], angulo: 90 }]
+              : [{ texto: props.brujula[0], angulo: 0 }, { texto: props.brujula[1], angulo: 180 }]} />
+          {/* junto a cada polo, lo que pensaba en esa etapa: se ve el cambio, no solo se escucha (§2.1) */}
+          {props.brujula_notas ? props.brujula_notas.map((notas, lado) => {
+            const t0 = lado === 0 ? tIzq + DUR_IZQ : tGiro + DUR_DER;
+            return (
+              <div key={lado} style={{ position: 'absolute', top: 690, [lado === 0 ? 'left' : 'right']: 120, width: 500, textAlign: lado === 0 ? 'left' : 'right',
+                opacity: 1 - tizaK }}>
+                {notas.map((n, i) => (
+                  <div key={i} style={{ fontFamily: i === notas.length - 1 && n.includes('(') ? fuente.libro : fuente.mono, fontStyle: n.includes('(') ? 'italic' : 'normal',
+                    fontSize: n.includes('(') ? 34 : 26, letterSpacing: n.includes('(') ? 0 : '0.12em', color: pal.papel, marginTop: 10,
+                    opacity: tramo(t, t0 + 0.2 + i * 0.5, 0.6, 'natural') }}>{n}</div>
+                ))}
+              </div>
+            );
+          }) : null}
+          {props.brujula_frase ? (
+            <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+              <TextoTiza id={`${escena.id}-frase`} texto={props.brujula_frase} x={960} y={970} anchor="middle" k={tramo(t, tFrase, 2.4, 'natural')}
+                size={60} ancho={0.44} fontFamily={fuente.imprentaItalica} brillo={0.4} />
+            </svg>
+          ) : null}
         </AbsoluteFill>
       ) : null}
 
@@ -207,7 +251,13 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       <Sfx nombre="metal" en={tClar + 0.6} fps={fps} volumen={0.45} />
       {props.temas.map((_, i) => <Sfx key={`l${i}`} nombre="carpeta" en={tTemas + i * 0.55 + 0.35} fps={fps} volumen={0.4} />)}
       {props.ficha_aulas ? props.ficha_aulas.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`a${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tAulas + 0.4 + i / 18} fps={fps} volumen={0.3} />)) : null}
-      {Array.from({ length: 9 }, (_, i) => <Sfx key={`g${i}`} nombre="tic" en={tGiro + i * 0.5} fps={fps} volumen={0.2 + clamp(i / 9) * 0.1} />)}
+      {ladoALado ? (
+        <>
+          <Sfx nombre="metal" en={tIzq + DUR_IZQ} fps={fps} volumen={0.35} />
+          <Sfx nombre="metal" en={tGiro + DUR_DER} fps={fps} volumen={0.4} />
+          <Sfx nombre="lapiz" en={tFrase} fps={fps} volumen={0.22} />
+        </>
+      ) : Array.from({ length: 9 }, (_, i) => <Sfx key={`g${i}`} nombre="tic" en={tGiro + i * 0.5} fps={fps} volumen={0.2 + clamp(i / 9) * 0.1} />)}
     </AbsoluteFill>
   );
 };

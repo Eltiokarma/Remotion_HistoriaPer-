@@ -2,6 +2,7 @@ import { AbsoluteFill, interpolateColors, spring, useCurrentFrame } from 'remoti
 import type { z } from 'zod';
 import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
+import { MapaLugar } from '../../components/graficos/MapaLugar';
 import { cubierto, Piscina } from '../../components/graficos/Piscina';
 import { Sello } from '../../components/graficos/Sello';
 import { Ficha } from '../../components/texto/Ficha';
@@ -23,7 +24,7 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
   const b = escena.beats;
   const piscina = props.fondo === 'piscina';
   const tNombre = beat(b, 'nombre', 1), tFrenar = beat(b, 'frenar', 4), tRenglon = beat(b, 'renglon', 5), tSello = beat(b, 'sello', 10);
-  const tPalabra = beat(b, 'palabra', Infinity), tFicha = beat(b, 'ficha', Infinity);
+  const tPalabra = beat(b, 'palabra', Infinity), tFicha = beat(b, 'ficha', Infinity), tLugar = beat(b, 'lugar', Infinity);
   const comoCita = props.palabra_como === 'cita';
   // al final puede quedar una sola palabra: todo lo demás se retira (como cita, no se retira nada)
   const queda = props.palabra && !comoCita ? tramo(t, tPalabra - 0.3, 0.9, 'natural') : 0;
@@ -49,7 +50,21 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
 
   return (
     <AbsoluteFill style={{ transform: `translateY(${temblor}px)` }}>
-      {piscina ? <Piscina paleta={pal} t={t} dx={dx} renglon={renglon} /> : <Papel color={pal.papel} envejecido={0.3} />}
+      {piscina ? <Piscina paleta={pal} t={t} dx={dx} renglon={renglon} colorAgua={props.agua} /> : <Papel color={pal.papel} envejecido={0.3} />}
+      {/* dónde y cuándo: el país en tinta sobre la página y la cámara que se acerca a la ciudad; el agua lo cubre */}
+      {props.lugar && t >= tLugar - 0.1 && renglon > 0.02 ? (
+        <AbsoluteFill style={{ opacity: renglon }}>
+          <MapaLugar id={`${escena.id}-lugar`} codigo={props.lugar.codigo} lon={props.lugar.lon} lat={props.lugar.lat} caja={[1440, 630, 340, 370]} acerca={1.8}
+            zoom={tramo(t, tLugar + 1.2, 2.4, 'solemne')} aparece={tramo(t, tLugar, 0.8, 'natural')} tinta={pal.fondo} acento={pal.rojo} />
+          <div style={{ position: 'absolute', right: 520, top: 860, textAlign: 'right', opacity: tramo(t, tLugar + 1.2, 0.8, 'natural') }}>
+            <Ficha texto={props.lugar.ficha} t={t - tLugar - 1.2} color={pal.fondo} acento={pal.rojo} size={30} />
+            {props.lugar.dato ? (
+              <div style={{ marginTop: 14, marginLeft: 34, fontFamily: fuente.mono, fontSize: 24, letterSpacing: '0.12em', color: alfa(pal.fondo, 0.75),
+                opacity: tramo(t, tLugar + 2.4, 0.8, 'natural') }}>{props.lugar.dato}</div>
+            ) : null}
+          </div>
+        </AbsoluteFill>
+      ) : null}
       {/* margen rojo doble del libro contable */}
       <svg width={1920} height={1080} style={{ position: 'absolute' }}>
         <line x1={250} x2={250} y1={0} y2={1080 * margen} stroke={pal.rojo} strokeWidth={2.5} opacity={0.75} />

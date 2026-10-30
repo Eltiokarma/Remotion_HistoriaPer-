@@ -5,6 +5,7 @@ import { Luz } from '../../components/atmosfera/Luz';
 import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { EdificioEstado } from '../../components/graficos/EdificioEstado';
+import { ILUSTRACION, LibroHojeable } from '../../components/graficos/LibroHojeable';
 import { Barco, GrabadoGuanero } from '../../components/graficos/GrabadoGuanero';
 import { Pluma } from '../../components/graficos/Pluma';
 import { PortadaLibro } from '../../components/graficos/PortadaLibro';
@@ -55,14 +56,29 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const tPromesa = T('promesa', 25.4), tLujos = T('lujos', 32), tExped = T('expedientes', 40), tInflado = T('inflado', 43.6), tCaudal = T('caudal', 46.6);
   const tFunc = T('funcionarios', 49.3), tFrase = T('frase', 51.3), tTachar = T('tachar', 52), tMecan = T('mecanismo', 53.4);
   const tTesis = T('tesis', 55.5), tLibro = T('libro', 59.2), tTitulo = T('titulo', 63.9);
+  // el libro que se hojea hasta el grabado (no es el `libro` de la tesis)
+  const conLibro = !!props.hojear;
+  const tLEntra = conLibro ? beat(b, 'hoja_entra', 0.2) : 0, tHojea = conLibro ? beat(b, 'hojea', 4) : 0;
+  const tPagina = conLibro ? beat(b, 'hoja_pagina', 12) : 0, tZoom = conLibro ? beat(b, 'hoja_zoom', tPagina + 0.6) : -1;
+  const zoomK = conLibro ? tramo(t, tZoom, 2.2, 'solemne') : 1;
+  const S_FIN = 1920 / ILUSTRACION.w;
+  const escalaCam = Math.pow(S_FIN, zoomK);
+  // punto fijo del zoom: el que termina en la esquina de la pantalla junto con la ilustración
+  const qx = (ILUSTRACION.x * S_FIN) / (S_FIN - 1), qy = (ILUSTRACION.y * S_FIN) / (S_FIN - 1);
+  const tPregunta = props.pregunta ? beat(b, 'pregunta', Infinity) : Infinity;
+  // del Estado a los vales: paneo a la izquierda
+  const pan = props.paneo ? tramo(t, tVales - 0.7, 1.6, 'pesado') : 0;
   const tinta = mezclar(pal.fondo, pal.rojo, 0.06);
 
   // fases (cortes secos o fundidos cortos según el cambio de idea)
-  const fase = t < tFlecha ? 1 : t < tVales ? 2 : t < tExped ? 3 : t < tCaudal ? 4 : t < tFrase ? 5 : t < tTesis ? 6 : 7;
+  const fase = t < tFlecha ? 1 : t < tVales - (props.paneo ? 0.7 : 0) ? 2 : t < tExped ? 3 : t < tCaudal ? 4 : t < tFrase ? 5 : t < tTesis ? 6 : 7;
+  const enPaneo = props.paneo && pan > 0 && pan < 1;
   const golpe = (tb: number, damping = 13) => (t < tb ? 0 : spring({ frame: frame - tb * fps, fps, config: { damping, mass: 1.2, stiffness: 200 } }));
 
   // —— flecha barco → Estado
   const FLECHA = 'M520 560 C 720 300, 1060 300, 1240 600';
+  // la misma flecha, del Estado hacia los vales (a la izquierda, fuera de cuadro hasta que la cámara llega)
+  const FLECHA_VALES = 'M1320 300 C 900 -60, -700 -60, -1360 330';
   const largoFlecha = getLength(FLECHA);
   const kFlecha = tramo(t, tFlecha + 0.3, 1.4, 'pesado');
   // —— vale en primer plano: monto que sube y pluma que marca
@@ -76,21 +92,32 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   return (
     <AbsoluteFill style={{ backgroundColor: mezclar(pal.fondo, '#000000', 0.3) }}>
       {/* 1: el grabado de las islas; los sacos suben al barco */}
-      {fase === 1 ? (
+      {fase === 1 && conLibro && zoomK < 1 ? (
+        // el libro sobre la mesa: entra, se abre, se hojea; la cámara entra a la ilustración
+        <AbsoluteFill style={{ transformOrigin: `${qx}px ${qy}px`, transform: `scale(${escalaCam})` }}>
+          <Luz color={pal.ocre} x={55} y={45} radio={60} intensidad={0.18} />
+          <LibroHojeable paleta={pal} t={t} tEntra={tLEntra} tAbre={tHojea} tPagina={tPagina} encabezado={props.hojear?.encabezado ?? ''}>
+            <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-gl`} anclado carga={t >= tSacos ? t - tSacos : undefined} />
+          </LibroHojeable>
+        </AbsoluteFill>
+      ) : null}
+      {fase === 1 && (!conLibro || zoomK >= 1) ? (
         <Papel color={pal.papel} envejecido={0.3}>
           <AbsoluteFill>
-            <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-g`} carga={t >= tSacos ? t - tSacos : undefined} />
+            <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-g`} anclado={conLibro} carga={t >= tSacos ? t - tSacos : undefined} />
           </AbsoluteFill>
           {props.ficha ? (
             <div style={{ position: 'absolute', left: 150, top: 40 }}>
-              <Ficha texto={props.ficha} t={t - tIslas - 0.4} color={pal.fondo} acento={pal.rojo} size={24} />
+              <Ficha texto={props.ficha} t={t - (conLibro ? tZoom + 2.2 : tIslas) - 0.4} color={pal.fondo} acento={pal.rojo} size={24} />
             </div>
           ) : null}
         </Papel>
       ) : null}
 
+      {/* 2 y 3 en una tira: con paneo, la cámara va del Estado a los vales siguiendo la plata */}
+      <AbsoluteFill style={{ transform: props.paneo ? `translateX(${1920 * pan}px)` : undefined }}>
       {/* 2: la plata del guano va del barco al Estado */}
-      {fase === 2 ? (
+      {fase === 2 || (enPaneo && fase === 3) ? (
         <Papel color={pal.papel} envejecido={0.3}>
           <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
             <defs>
@@ -131,8 +158,18 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
         </Papel>
       ) : null}
 
+      {/* con paneo, una flecha sale del Estado y lleva la plata hacia los vales, a la izquierda */}
+      {props.paneo && (enPaneo || (fase === 3 && t < tVales + 3)) ? (
+        <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0, overflow: 'visible' }}>
+          <path d={FLECHA_VALES} fill="none" stroke={mezclar(pal.ocre, pal.fondo, 0.15)} strokeWidth={16} strokeLinecap="round" pathLength={1} strokeDasharray={1}
+            strokeDashoffset={1 - tramo(t, tVales - 0.7, 1.4, 'pesado')} opacity={0.55 * (1 - tramo(t, tVales + 2, 1, 'natural'))} />
+          <path d={FLECHA_VALES} fill="none" stroke={pal.fondo} strokeWidth={2} strokeLinecap="round" pathLength={1} strokeDasharray={1}
+            strokeDashoffset={1 - tramo(t, tVales - 0.7, 1.4, 'pesado')} opacity={1 - tramo(t, tVales + 2, 1, 'natural')} />
+        </svg>
+      ) : null}
       {/* 3: los vales se apilan y se consolidan; lo prometido y lo que se decía, en punteado */}
-      {fase === 3 ? (
+      {fase === 3 || (enPaneo && fase === 2) ? (
+        <AbsoluteFill style={{ transform: props.paneo ? 'translateX(-1920px)' : undefined }}>
         <Papel color={pal.papel} envejecido={0.32}>
           <Luz color={pal.ocre} x={35} y={50} radio={60} intensidad={0.08} />
           {Array.from({ length: PILA }, (_, i) => {
@@ -160,7 +197,33 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             <Punteado id={`${escena.id}-luj`} d={LUJOS} x0={1080} x1={1670} k={tramo(t, tLujos, 4, 'natural')} color={pal.rojo} />
           </svg>
         </Papel>
+        </AbsoluteFill>
       ) : null}
+      </AbsoluteFill>
+
+      {/* la pregunta que acusa: entra fuerte, palabra por palabra, en el lado vacío (§2.14) */}
+      {props.pregunta && t >= tPregunta ? (() => {
+        const palabras = props.pregunta.split(' ');
+        const corte = [Math.ceil(palabras.length / 3), Math.ceil((2 * palabras.length) / 3)];
+        const lineas = [palabras.slice(0, corte[0]), palabras.slice(corte[0], corte[1]), palabras.slice(corte[1])];
+        let n = 0;
+        return (
+          <div style={{ position: 'absolute', left: 1010, top: 250, width: 860 }}>
+            {lineas.map((l, i) => (
+              <div key={i} style={{ display: 'flex', gap: 26, fontFamily: fuente.afiche, fontWeight: 700, fontSize: 128, lineHeight: 1.08, textTransform: 'uppercase' }}>
+                {l.map((w) => {
+                  const k = tramo(t, tPregunta + 0.12 + (n++) * 0.16, 0.22, 'tenso');
+                  const ultima = i === lineas.length - 1;
+                  return (
+                    <span key={w + n} style={{ display: 'inline-block', color: ultima ? pal.rojo : pal.fondo, opacity: clamp(k * 3),
+                      transform: `scale(${mix(1.5, 1, k)}) translateY(${(1 - k) * -18}px)`, transformOrigin: '50% 80%' }}>{w}</span>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        );
+      })() : null}
 
       {/* 4: un vale en primer plano: el monto se infla */}
       {fase === 4 ? (
@@ -261,6 +324,9 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       <Sfx nombre="monedas" en={tFlecha + 0.4} fps={fps} volumen={0.55} />
       {Array.from({ length: PILA }, (_, i) => <Sfx key={`v${i}`} nombre="hoja" en={tVales + i * 0.75} fps={fps} volumen={0.4} />)}
       <Sfx nombre="sello" en={tConsol + 0.08} fps={fps} volumen={0.85} />
+      {props.pregunta ? <Sfx nombre="golpe" en={tPregunta + 0.15} fps={fps} volumen={0.55} /> : null}
+      {props.pregunta ? <Sfx nombre="golpe" en={tPregunta + 0.15 + 0.16 * (props.pregunta.split(' ').length - 1)} fps={fps} volumen={0.6} /> : null}
+      {props.paneo ? <Sfx nombre="soplo" en={tVales - 0.7} fps={fps} volumen={0.3} /> : null}
       <Sfx nombre="lapiz" en={tPromesa} fps={fps} volumen={0.28} />
       <Sfx nombre="lapiz" en={tLujos} fps={fps} volumen={0.28} />
       <Sfx nombre="hoja" en={tExped} fps={fps} volumen={0.45} />

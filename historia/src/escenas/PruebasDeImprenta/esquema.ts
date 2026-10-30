@@ -10,6 +10,8 @@ import type { Ejemplo } from '../ejemplo';
 export const esquema = z.object({
   /** Ficha monoespaciada arriba a la izquierda (lugar). */
   ficha: z.string(),
+  /** La ficha grande y con brillo, para que no se olvide dónde estamos (DIRECCION_DE_VIDEO §2.1). */
+  ficha_destacada: z.boolean().default(false),
   /** Encabezado de la página donde está la frase (p. ej. "Agradecimientos"). */
   seccion: z.string().default('Agradecimientos'),
   cita: z.object({
@@ -19,6 +21,11 @@ export const esquema = z.object({
   }),
   /** Otra frase de la misma página, unas líneas más abajo: queda desenfocada hasta que la cámara baja. */
   segunda: z.object({ texto: z.string() }).optional(),
+  /**
+   * Una muerte no se cuenta como un dato más (DIRECCION_DE_VIDEO §2.8): antes de la línea, una cruz
+   * sobre negro; cuando la voz termina la frase, la fecha; y recién después, la línea con su punto.
+   */
+  cruz: z.object({ fecha: z.string() }).optional(),
   /** La línea de tiempo del final: el primer evento es donde arranca la cámara; el último, donde llega. */
   linea: z.object({
     /** Un rótulo por tramo (p. ej. meses): el tramo i va de i a i + 1 en la escala. */
@@ -37,7 +44,9 @@ export const beats = {
   cita: 'se entra a la página: aparece la frase compuesta',
   subrayado: 'se subraya en rojo la parte elegida',
   abajo: 'la cámara baja unas líneas por la página (con `segunda`, el foco pasa a esa frase)',
-  muerte: 'corte seco a la línea de tiempo: aparece el primer evento',
+  muerte: 'corte seco a la línea de tiempo: aparece el primer evento (con `cruz`: la cruz sobre negro)',
+  fecha: '(con cruz) aparece la fecha, cuando la voz ya terminó la frase',
+  linea: '(con cruz) aparece la línea con su punto rojo (2–3 s después de la fecha)',
   recorre: 'la cámara empieza a recorrer la línea (arranca y frena despacio)',
   mayo: 'llega al último evento: se enciende',
   final: 'la cámara se abre y se ve el camino entero (aquí entra la música)',

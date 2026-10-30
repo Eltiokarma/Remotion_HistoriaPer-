@@ -23,9 +23,9 @@ No le queda mucho tiempo, y lo sabe. [PAUSA 1,5s]
 
 En los agradecimientos escribe una línea que casi nadie lee. Les da las gracias a sus médicos por alargar estos días, para poder completar la tarea. [PAUSA 1s]
 
-Unas líneas más abajo celebra «la reciente llegada a este mundo de nuestro precioso Alfonsito»: su hijo. [PAUSA 1,5s]
+Unas líneas más abajo celebra el nacimiento de su hijo. [PAUSA 1,5s]
 
-Murió en enero de 2013. [SILENCIO 2,5s: la cámara recorre los meses] El libro salió en mayo. [PAUSA 1s]
+Murió en enero de 2013. [PAUSA 6s: una cruz sobre negro; la fecha; 2,5 s de silencio; recién después el punto rojo y la cámara recorre los meses] El libro salió en mayo. [PAUSA 1s]
 
 Este video es sobre ese hombre, y sobre lo que encontró.
 

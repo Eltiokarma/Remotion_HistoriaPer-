@@ -26,6 +26,14 @@ export const esquema = z.object({
   palabra: z.string().optional(),
   /** La capa que se enciende con el beat `realce` (la que el personaje va a estudiar). */
   realce: z.enum(['rapida', 'media', 'lenta']).optional(),
+  /** "pizarra": las capas en una pizarra verde, con tiza (DIRECCION_DE_VIDEO §2.3); la cámara no se mueve: brilla lo que se nombra. */
+  estilo: z.enum(['grabado', 'pizarra']).default('grabado'),
+  /** (pizarra) Lo que se escribe con el beat `realce`, bajo las capas. */
+  nota: z.string().optional(),
+  /** (pizarra) La frase que remata el bloque, escrita grande con el beat `remate`. */
+  remate: z.string().optional(),
+  /** El texto del volante: los papeles dicen algo (DIRECCION_DE_VIDEO §2.9). Sin esto, renglones. */
+  volante: z.object({ titulo: z.string(), texto: z.string().optional(), pie: z.string().optional() }).optional(),
 });
 
 export const beats = {
@@ -45,13 +53,14 @@ export const beats = {
   bajar: 'la cámara baja hasta la capa que casi no se mueve (2.4 s)',
   palabra: '(con palabra) la palabra del episodio, a pantalla completa',
   subir: '(opcional) la cámara vuelve a ver las tres capas; se va la palabra',
-  realce: '(con realce) se enciende una capa',
+  realce: '(con realce) se enciende una capa (en la pizarra, se escribe la nota)',
+  remate: '(con remate) se escribe la frase que cierra el bloque',
 };
 
 /** Con `parte`, qué beats usa cada mitad (los de la otra no hacen falta). */
 export const partes = {
   epoca: ['sello', 'primeros', 'afiches', 'afiche1', 'afiche2', 'afiche3', 'despegue', 'volante'],
-  capas: ['capas', 'braudel', 'capa1', 'capa2', 'capa3', 'bajar', 'palabra', 'subir', 'realce'],
+  capas: ['capas', 'braudel', 'capa1', 'capa2', 'capa3', 'bajar', 'palabra', 'subir', 'realce', 'remate'],
 };
 
 /** Como se usa en 000-quiroz. */

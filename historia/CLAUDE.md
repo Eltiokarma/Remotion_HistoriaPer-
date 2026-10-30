@@ -117,6 +117,16 @@ historia/
 Cada video es datos (guion + escenas), no un proyecto aparte. Los componentes se comparten.
 `README.md` tiene la tabla «quiero cambiar X → archivo Y».
 
+**Dirección de video.** [`DIRECCION_DE_VIDEO.md`](DIRECCION_DE_VIDEO.md) es la guía transversal del
+formato «El profe que explica» (gancho, pizarra, brillo de lo que se nombra, remates, contexto de
+fechas, respeto en lo humano, música final). Si una escena la contradice, gana la guía, salvo que el
+director diga otra cosa en las notas de revisión del video (`videos/NNN-slug/revision_*.md`). Las
+etiquetas de esas notas (§5 de la guía): `VERIFICAR` no sale en pantalla hasta confirmarse;
+`LICENCIA` se aplica y se registra en `fuentes.md`; `EN OBSERVACIÓN` se aplica la opción recomendada
+y se marca; `DEFINIR` no se inventa: queda un marcador visible (`Marcador`); `BLOQUEADO` espera el
+manuscrito; `IDEA` no se ejecuta sin aprobación. Al aplicar una revisión, se agrega al final de ese
+archivo su «Estado de la revisión».
+
 ## 3. Montaje y ritmo
 
 **Prioridades al decidir un corte (Walter Murch, regla de seis):**

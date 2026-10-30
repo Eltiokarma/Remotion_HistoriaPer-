@@ -13,6 +13,8 @@ type Props = {
   dx: number;
   /** 0–1: el agua se vuelve papel y las corcheras, renglones de libro contable. */
   renglon: number;
+  /** Color del agua (por defecto, el de la paleta). */
+  colorAgua?: string;
   carriles?: number;
   /** Separación entre corcheras (px). También es la interlínea del libro que queda. */
   separacion?: number;
@@ -36,16 +38,18 @@ export const cubierto = (x: number, renglon: number) => clamp((x - frenteSecado(
  * volumen y su sombra. Con `renglon` el agua se seca en papel y las corcheras quedan como
  * renglones: la disciplina del nadador pasa al archivo.
  */
-export const Piscina: React.FC<Props> = ({ paleta, t, dx, renglon, carriles = 10, separacion = 92, y0 = 130 }) => {
-  const agua = mezclar(paleta.fondo, paleta.ocre, 0.14);
-  const fondoProfundo = mezclar(paleta.fondo, '#000000', 0.35);
+export const Piscina: React.FC<Props> = ({ paleta, t, dx, renglon, carriles = 10, separacion = 92, y0 = 130, colorAgua }) => {
+  // el agua es azul cuando se pide (DIRECCION_DE_VIDEO §2.13: con la paleta gris parece concreto o brea)
+  const agua = colorAgua ?? mezclar(paleta.fondo, paleta.ocre, 0.14);
+  const medio = colorAgua ? mezclar(colorAgua, '#000000', 0.38) : paleta.fondo;
+  const fondoProfundo = colorAgua ? mezclar(colorAgua, '#000000', 0.62) : mezclar(paleta.fondo, '#000000', 0.35);
   const boyas = useMemo(() => Array.from({ length: Math.ceil(ANCHO / BOYA) + 3 }, (_, k) => k), []);
   const frente = frenteSecado(renglon);
 
   return (
     <div style={{ position: 'absolute', inset: 0, overflow: 'hidden' }}>
       {/* agua: más clara al centro, donde pega la luz */}
-      <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse 80% 70% at 50% 40%, ${agua} 0%, ${paleta.fondo} 75%, ${fondoProfundo} 100%)` }} />
+      <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse 80% 70% at 50% 40%, ${agua} 0%, ${medio} 75%, ${fondoProfundo} 100%)` }} />
       {/* líneas del fondo de la piscina (más hondas: se mueven más lento) */}
       <svg width={ANCHO} height={ALTO} style={{ position: 'absolute', filter: 'blur(2px)' }}>
         {Array.from({ length: carriles - 1 }, (_, i) => {
@@ -61,7 +65,7 @@ export const Piscina: React.FC<Props> = ({ paleta, t, dx, renglon, carriles = 10
       </svg>
       {/* cáusticas: dos capas de luz que se cruzan */}
       <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${textura.caustica})`, backgroundSize: '760px 760px',
-        backgroundPosition: `${dx * 0.85 + t * 18}px ${t * 11}px`, mixBlendMode: 'screen', opacity: 0.11, filter: 'blur(1.5px)' }} />
+        backgroundPosition: `${dx * 0.85 + t * 18}px ${t * 11}px`, mixBlendMode: 'screen', opacity: colorAgua ? 0.2 : 0.11, filter: 'blur(1.5px)' }} />
       <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${textura.caustica})`, backgroundSize: '1100px 1100px',
         backgroundPosition: `${dx * 0.85 - t * 14}px ${-t * 9}px`, mixBlendMode: 'screen', opacity: 0.07, filter: 'blur(3px)' }} />
 

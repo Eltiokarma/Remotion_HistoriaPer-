@@ -43,7 +43,9 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
   const pal = video.paleta;
   const b = escena.beats;
   const tFicha = beat(b, 'ficha', 0.4), tCorr = beat(b, 'correcciones', 4), tCita = beat(b, 'cita', 14), tSub = beat(b, 'subrayado', 20);
-  const tAbajo = beat(b, 'abajo', 24), tMuerte = beat(b, 'muerte', 30), tRecorre = beat(b, 'recorre', tMuerte + 2.4);
+  const tAbajo = beat(b, 'abajo', 24), tMuerte = beat(b, 'muerte', 30);
+  const tFecha = props.cruz ? beat(b, 'fecha', tMuerte + 2.2) : tMuerte, tLinea = props.cruz ? beat(b, 'linea', tFecha + 2.5) : tMuerte;
+  const tRecorre = beat(b, 'recorre', tLinea + 2.4);
   const tMayo = beat(b, 'mayo', tRecorre + 3.6), tFinal = beat(b, 'final', tMayo + 2.4);
   const tHombre = beat(b, 'hombre', tFinal + 1.4), tEncontro = beat(b, 'encontro', tFinal + 2.6);
   const noche = mezclar(pal.fondo, '#000000', 0.35);
@@ -71,7 +73,7 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
   // un pulso: sube rápido y se apaga despacio
   const pulso = (tb: number) => (t < tb ? 0 : Math.exp(-(t - tb) * 1.4) * clamp((t - tb) / 0.25));
   const realce = linea.eventos.map((e, k) =>
-    k === 0 ? Math.max(pulso(tMuerte + 0.2), pulso(tHombre)) : k === linea.eventos.length - 1 ? clamp(pulso(tMayo) + 0.6 * tramo(t, tEncontro, 0.8, 'natural')) : 0,
+    k === 0 ? Math.max(pulso(tLinea + 0.2), pulso(tHombre)) : k === linea.eventos.length - 1 ? clamp(pulso(tMayo) + 0.6 * tramo(t, tEncontro, 0.8, 'natural')) : 0,
   );
   // en qué momento la cámara cruza cada borde de tramo: ahí suena un tic (el tiempo pasa, se cuenta)
   const cruces: number[] = [];
@@ -82,7 +84,8 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
     }
   }
 
-  const fase = t < tMuerte ? 'mesa' : 'linea';
+  const fase = t < tMuerte ? 'mesa' : t < tLinea ? 'cruz' : 'linea';
+  const fichaGrande = props.ficha_destacada;
 
   return (
     <AbsoluteFill style={{ backgroundColor: noche }}>
@@ -98,8 +101,10 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
                   correcciones={tramo(t, tCorr, DUR_CORR, 'natural')} />
               </div>
             </AbsoluteFill>
-            <div style={{ position: 'absolute', left: 120, top: 96 }}>
-              <Ficha texto={props.ficha} t={t - tFicha} color={pal.papel} acento={pal.rojo} size={28} cps={CPS} />
+            <div style={{ position: 'absolute', left: 120, top: fichaGrande ? 80 : 96,
+              // la ficha brilla: es el ancla de lugar y fecha, la que el espectador no tiene que olvidar
+              filter: fichaGrande ? `drop-shadow(0 0 ${mix(0, 18, tramo(t, tFicha + 0.8, 1.2, 'natural'))}px ${alfa(pal.ocre, 0.75)})` : undefined }}>
+              <Ficha texto={props.ficha} t={t - tFicha} color={pal.papel} acento={pal.rojo} size={fichaGrande ? 52 : 28} cps={CPS} />
             </div>
           </AbsoluteFill>
 
@@ -144,11 +149,25 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
         </>
       ) : null}
 
+      {/* la muerte, con su tiempo: una cruz sobre negro, la frase entera, la fecha; recién después la línea */}
+      {fase === 'cruz' && props.cruz ? (
+        <AbsoluteFill style={{ backgroundColor: '#000000', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ opacity: tramo(t, tMuerte + 0.2, 1.4, 'solemne') * (1 - tramo(t, tLinea - 0.5, 0.5, 'natural')), display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 34 }}>
+            <svg width={60} height={84} viewBox="0 0 60 84">
+              <line x1={30} x2={30} y1={4} y2={80} stroke={alfa(pal.papel, 0.85)} strokeWidth={3} strokeLinecap="round" />
+              <line x1={10} x2={50} y1={26} y2={26} stroke={alfa(pal.papel, 0.85)} strokeWidth={3} strokeLinecap="round" />
+            </svg>
+            <div style={{ fontFamily: fuente.mono, fontSize: 34, letterSpacing: '0.3em', marginRight: '-0.3em', color: alfa(pal.papel, 0.8),
+              opacity: tramo(t, tFecha, 1.2, 'natural') }}>{props.cruz.fecha}</div>
+          </div>
+        </AbsoluteFill>
+      ) : null}
+
       {/* D: corte seco a la línea de tiempo; la cámara la recorre de la muerte al libro */}
       {fase === 'linea' ? (
         <AbsoluteFill style={{ backgroundColor: mezclar(noche, pal.ocre, 0.05 * viaje) }}>
           <LineaDeTiempo paleta={pal} id={`${escena.id}-linea`} tramos={linea.tramos} fondo={linea.fondo} eventos={linea.eventos}
-            centro={centro} escala={escala} recorrido={recorrido} aparece={tramo(t, tMuerte, 0.6, 'natural')} guia={guia} realce={realce} fondoVisible={1 - abre}
+            centro={centro} escala={escala} recorrido={recorrido} aparece={tramo(t, tLinea, props.cruz ? 1.0 : 0.6, 'natural')} guia={guia} realce={realce} fondoVisible={1 - abre}
             tras={linea.eventos.map((_, k) => (k === linea.eventos.length - 1 ? t - tMayo : -1))} />
           <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 52%, rgba(0,0,0,0) 50%, ${alfa('#000000', 0.5)} 100%)` }} />
         </AbsoluteFill>
