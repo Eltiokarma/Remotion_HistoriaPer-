@@ -5,7 +5,7 @@ import { Luz } from '../../components/atmosfera/Luz';
 import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { EdificioEstado } from '../../components/graficos/EdificioEstado';
-import { ILUSTRACION, LibroHojeable } from '../../components/graficos/LibroHojeable';
+import { ILUSTRACION, LibroHojeable, tiemposHojas } from '../../components/graficos/LibroHojeable';
 import { Barco, GrabadoGuanero } from '../../components/graficos/GrabadoGuanero';
 import { Pluma } from '../../components/graficos/Pluma';
 import { PortadaLibro } from '../../components/graficos/PortadaLibro';
@@ -322,6 +322,8 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {/* sonido */}
       {Array.from({ length: 4 }, (_, i) => <Sfx key={`s${i}`} nombre="saco" en={tSacos + 0.8 + i * 1.3} fps={fps} volumen={0.35} />)}
       <Sfx nombre="monedas" en={tFlecha + 0.4} fps={fps} volumen={0.55} />
+      {conLibro ? <Sfx nombre="carpeta" en={tHojea + 0.15} fps={fps} volumen={0.45} /> : null}
+      {conLibro ? tiemposHojas(tHojea, tPagina).map((h, i) => <Sfx key={`h${i}`} nombre="hoja" en={h.desde + 0.1} fps={fps} volumen={0.22 + 0.1 * Math.sin(i)} />) : null}
       {Array.from({ length: PILA }, (_, i) => <Sfx key={`v${i}`} nombre="hoja" en={tVales + i * 0.75} fps={fps} volumen={0.4} />)}
       <Sfx nombre="sello" en={tConsol + 0.08} fps={fps} volumen={0.85} />
       {props.pregunta ? <Sfx nombre="golpe" en={tPregunta + 0.15} fps={fps} volumen={0.55} /> : null}

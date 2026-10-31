@@ -618,6 +618,14 @@
         "s02"
       ],
       "motivo": "el agua de la piscina es azul (DIRECCION_DE_VIDEO §2.13): con la paleta gris parecía concreto o brea"
+    },
+    {
+      "regla": "paleta",
+      "escenas": [
+        "s04",
+        "s05"
+      ],
+      "motivo": "la pizarra del aula (DIRECCION_DE_VIDEO §2.3) es verde, y la tierra se dibuja con tizas de color (ocre, arcilla, piedra): son los colores de un aula, no de la paleta del papel"
     }
   ]
 }
