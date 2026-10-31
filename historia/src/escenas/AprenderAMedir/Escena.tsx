@@ -108,6 +108,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       + 180 * tramo(t, tGiro, DUR_DER, 'tenso') - asienta(t, tGiro + DUR_DER, 7, 14, 6);
   const tizaK = tramo(t, tTiza, 1.4, 'natural');
   const tRegresion = props.rotulo_grafico ? T('regresion', Infinity) : Infinity;
+  const tSerie = props.serie ? T('serie', Infinity) : Infinity;
 
   // —— los libros bajan a la repisa: el resorte se pasaría de la repisa; ese sobrepaso se vuelve
   // aplastamiento contra la madera (comprimir y estirar); al caer, se estiran apenas con la velocidad
@@ -158,7 +159,9 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
         <Papel color={pal.papel} envejecido={0.25}>
           <Dispersion paleta={pal} id={`${escena.id}-disp`} t={t - tPuntos} tRecta={tRecta - tPuntos} apagaDiscursos={tramo(t, tDiscursos, 1.2, 'natural')}
             aparece={entra(tPuntos)} tCaen={tCaen - tPuntos} busca={explica} residuos={!explica}
-            tPendiente={tPendiente === undefined ? undefined : tPendiente - tPuntos} />
+            tPendiente={tPendiente === undefined ? undefined : tPendiente - tPuntos}
+            serie={props.serie && Number.isFinite(tSerie) ? { desde: tSerie - tPuntos, etiquetas: props.serie.etiquetas, valores: props.serie.valores, maximo: props.serie.maximo,
+              unidad: props.serie.unidad, banda: props.serie.banda, textoBanda: props.serie.texto_banda, fuente: props.serie.fuente } : undefined} />
           {/* el título del método: la frase que se anota (DIRECCION_DE_VIDEO §2.4) */}
           {props.titulo_metodo ? (
             <div style={{ position: 'absolute', left: 0, right: 0, top: 70, textAlign: 'center', fontFamily: fuente.libro, fontStyle: 'italic', fontSize: 52,
@@ -168,7 +171,11 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
           ) : null}
           {props.rotulo_grafico ? (
             <div style={{ position: 'absolute', left: 830, top: 196, fontFamily: fuente.mono, fontSize: 30, letterSpacing: '0.3em', color: pal.rojo,
-              opacity: tramo(t, tRegresion, 0.6, 'natural') }}>{props.rotulo_grafico.toUpperCase()}</div>
+              opacity: tramo(t, tRegresion, 0.6, 'natural') * (1 - tramo(t, tSerie, 0.5, 'natural')) }}>{props.rotulo_grafico.toUpperCase()}</div>
+          ) : null}
+          {props.serie ? (
+            <div style={{ position: 'absolute', left: 830, top: 196, fontFamily: fuente.mono, fontSize: 26, letterSpacing: '0.22em', color: pal.rojo,
+              opacity: tramo(t, tSerie + 0.4, 0.6, 'natural') }}>{props.serie.rotulo.toUpperCase()}</div>
           ) : null}
         </Papel>
       ) : null}
@@ -220,8 +227,10 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
               <div key={lado} style={{ position: 'absolute', top: 690, [lado === 0 ? 'left' : 'right']: 120, width: 500, textAlign: lado === 0 ? 'left' : 'right',
                 opacity: 1 - tizaK }}>
                 {notas.map((n, i) => (
-                  <div key={i} style={{ fontFamily: i === notas.length - 1 && n.includes('(') ? fuente.libro : fuente.mono, fontStyle: n.includes('(') ? 'italic' : 'normal',
-                    fontSize: n.includes('(') ? 34 : 26, letterSpacing: n.includes('(') ? 0 : '0.12em', color: pal.papel, marginTop: 10,
+                  // un título de libro (con su año) o una frase suya entre comillas van en itálica de libro
+                  <div key={i} style={{ fontFamily: n.includes('(') || n.startsWith('«') ? fuente.libro : fuente.mono, fontStyle: n.includes('(') || n.startsWith('«') ? 'italic' : 'normal',
+                    fontSize: n.startsWith('«') ? 32 : n.includes('(') ? 28 : 26, letterSpacing: n.includes('(') || n.startsWith('«') ? 0 : '0.12em',
+                    color: n.startsWith('«') ? mezclar(pal.papel, pal.ocre, 0.35) : pal.papel, marginTop: n.startsWith('«') ? 18 : 10, lineHeight: 1.25,
                     opacity: tramo(t, t0 + 0.2 + i * 0.5, 0.6, 'natural') }}>{n}</div>
                 ))}
               </div>
@@ -245,6 +254,9 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {props.ficha.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tFicha + 0.6 + i / 18} fps={fps} volumen={0.3} />))}
       {Array.from({ length: 12 }, (_, i) => <Sfx key={`p${i}`} nombre="tic" en={tCaen + i * 0.25} fps={fps} volumen={0.25} />)}
       <Sfx nombre="lapiz" en={tRecta} fps={fps} volumen={0.28} />
+      {props.serie && Number.isFinite(tSerie) ? props.serie.valores.map((_, j) => (
+        <Sfx key={`sv${j}`} nombre="tic" en={tSerie + 1.3 + j * Math.min(0.3, 3.4 / props.serie!.valores.length)} fps={fps} volumen={0.2} />
+      )) : null}
       {tPendiente !== undefined ? <Sfx nombre="lapiz" en={tPendiente} fps={fps} volumen={0.22} /> : null}
       {props.ficha_estante ? props.ficha_estante.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`e${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tEstante + 0.4 + i / 18} fps={fps} volumen={0.3} />)) : null}
       <Sfx nombre="metal" en={tProf + 0.6} fps={fps} volumen={0.55} />

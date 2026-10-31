@@ -13,7 +13,7 @@ Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **I
 | s02 | Presentacion | 0:55.9 | 33 s | 73 % | 9 s | 113 | 10.0 | 23 | 3 | 5 (9.4/min) | 7 (13.1/min) | 🟡 9.4 datos/min |
 | s03 | TiempoLargo | 1:28.9 | 48 s | 75 % | 11 s | 111 | 7.9 | 19 | 4 | 4 (5.1/min) | 8 (10.3/min) | 🟢 |
 | s04 | TiempoLargo | 2:16.8 | 67 s | 71 % | 9 s | 105 | 8.8 | 21 | 8 | 2 (1.8/min) | 10 (9.2/min) | 🟢 |
-| s05 | AprenderAMedir | 3:23.4 | 97 s | 77 % | 11 s | 119 | 10.6 | 18 | 9 | 8 (5.0/min) | 23 (14.4/min) | 🟢 |
+| s05 | AprenderAMedir | 3:23.4 | 97 s | 77 % | 11 s | 119 | 10.6 | 18 | 9 | 8 (5.0/min) | 24 (15.0/min) | 🟢 |
 | s06 | MecanismoDeuda | 5:00.4 | 29 s | 78 % | 10 s | 130 | 11.8 | 24 | 3 | 4 (8.8/min) | 10 (22.1/min) | 🟡 8.8 datos/min |
 | s07 | Cierre | 5:29.1 | 17 s | 20 % | 3 s | 48 | 5.0 | 5 | 0 | 1 (9.7/min) | 3 (29.0/min) | 🟡 9.7 datos/min |
 
@@ -181,7 +181,7 @@ Total: 5:46.4. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 - **Intención:** el viaje a Nueva York; la regresión explicada en tres tiempos (ruido, la recta que busca, cuánto pesa); la claridad en una balanza; la carrera se lee en el estante, no se narra
 - **Intensidad:** 2 · **Música:** presente
 - **Semáforo para enseñar:** 🟢
-- **Métricas:** voz el 77 % del tiempo · tramo más largo sin pausa de párrafo: 11.3 s · 190 palabras · 119 por minuto · 18 frases de 10.6 palabras en promedio (la más larga: 18) · 9 pausa(s) de párrafo (≥ 1 s) · 23 cambios de imagen
+- **Métricas:** voz el 77 % del tiempo · tramo más largo sin pausa de párrafo: 11.3 s · 190 palabras · 119 por minuto · 18 frases de 10.6 palabras en promedio (la más larga: 18) · 9 pausa(s) de párrafo (≥ 1 s) · 24 cambios de imagen
 - **Nombres y cifras que se dicen (8):** París · Nueva York · Universidad de Columbia · Herbert Klein · Perú · Kenneth Maxwell · Cueto · ochenta
 
 | t | Voz | Imagen | Sonido |
@@ -215,6 +215,7 @@ Total: 5:46.4. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 4:10.3 | Y dice cuánto pesa. |  |  |
 | 4:11.3 |  | **pendiente** — (con explicar_regresion) se marca la pendiente: cuánto pesa |  |
 | 4:13.7 | Con lo que aprendió ahí, años después, le va a sacar la cuenta al Perú. |  |  |
+| 4:13.7 |  | **serie** — (con serie) la nube se va, los puntos viajan a la serie real y se encienden de a uno; después, la banda |  |
 | 4:20.9 | De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad. |  |  |
 | 4:21.0 |  | **balanza** — aparece la balanza |  |
 | 4:25.8 |  | **profundidad** — cae la primera palabra (se inclina) |  |

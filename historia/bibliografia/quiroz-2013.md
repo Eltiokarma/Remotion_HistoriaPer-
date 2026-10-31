@@ -13,7 +13,8 @@ Es el libro de toda la serie, así que estas fichas sirven a todos los videos. C
 Marcos Cueto pp. 15–29, prefacio pp. 31–32, agradecimientos pp. 33–35, introducción pp. 37–57,
 capítulo 1 pp. 59–82), pp. 121–128 (ciclos coloniales, cap. 1), pp. 164–190 (el guano y la
 consolidación, cap. 2), las dos primeras páginas de los capítulos 3 a 7 (pp. 191–192, 241–242,
-315–316, 383–384 y 443–444) y pp. 535–554 (el Apéndice entero). Las páginas
+315–316, 383–384 y 443–444), pp. 401–418 (el régimen militar, cap. 6), pp. 439–444 (cierre del
+cap. 6), pp. 521–533 (el Epílogo) y pp. 535–554 (el Apéndice entero). Las páginas
 son **las del libro impreso**, no las del PDF: en el PDF del libro, la página *n* del archivo es la
 *n + 1* del libro.
 
@@ -947,4 +948,85 @@ Para el arco de presentación (0·1 a 0·3) ya no falta nada del libro. Pendient
 | Hace falta | Dónde (libro) | En el PDF del libro |
 |---|---|---|
 | El detalle de la gestión de Ulloa y el resto del cap. 1 (para el episodio 1) | pp. 82–121 | 81–120 |
-| El Epílogo (tono, «contra el fatalismo») | pp. 521–534 | 520–533 |
+| La última página del Epílogo | p. 534 | 533 |
+
+## 11. Lo que el historiador dice de su propio tiempo (pp. 401–418, 439–441, 521–533)
+
+Leído el 31/10/2026 para el 0·1: las frases suyas de la etapa madura (para la brújula) y su juicio
+sobre el gobierno militar contra el que militó de joven (Cueto, p. 16).
+
+**El régimen militar de 1968, cap. 6, «"Revolución" militar» (pp. 401–417).**
+
+- Las causas oficiales del golpe (p. 402): «defender la "dignidad" nacional, herida por la IPC y el
+  escándalo de la "página once"; introducir reformas socioeconómicas estructurales; contener el
+  peligroso deterioro de las condiciones políticas civiles […]; y, finalmente, superar la
+  degradación moral del país.»
+- Su juicio (p. 403): «diversas fuentes independientes indican que la corrupción y el patronazgo sí
+  tuvieron un lugar prominente entre las causas y consecuencias del golpe. En cierto modo,
+  constituyeron las bases políticas del régimen "revolucionario".»
+- El legado (p. 410): «Durante el régimen militar, el patronazgo y la corrupción se beneficiaron del
+  cambio institucional radical que demolió las débiles bases de la democracia política en el Perú.
+  Esta transformación ha tenido un legado duradero.»
+- La justicia (p. 411): «Los observadores extranjeros concluyeron que en la práctica el imperio de
+  la ley había quedado abolido.»
+- La reforma agraria (p. 411): «contribuyó a una caída de la productividad agrícola que redujo las
+  agroexportaciones y generó una mayor dependencia de las importaciones de alimentos, sin llegar a
+  resolver los problemas de la inmensa mayoría de los trabajadores del sector agrícola».
+- La deuda (p. 412): «El monstruoso crecimiento de la deuda externa se debió en gran parte a una
+  administración ineficiente y a la corrupción.»
+- La prensa (pp. 412–413): con la expropiación de los medios en 1974, «la desaparición del papel
+  vigilante de la prensa libre contra las injusticias, los abusos y la corrupción».
+- Pie de la fig. 17 (p. 405): el régimen «contribuyó al mal gasto e ineficiente administración de
+  los recursos públicos que cobijaron una amplia corrupción burocrática».
+- Casos: EPSA, octubre de 1974, «Más de cien empleados fueron implicados y arrestados» (p. 414);
+  Tantaleán y Pescaperú: «Los fondos destinados para la empresa se gastaron en viajes en jet
+  privados, equipos de fútbol y diversos lujos» (p. 414).
+
+**Recapitulación del cap. 6 (pp. 439–441).**
+
+- «En este marco institucional, la corrupción y la ineficiencia quedaron sin control, y a menudo era
+  difícil distinguirlas.» (p. 440)
+- **El más corrupto del periodo (p. 441), textual:** «los niveles más altos de corrupción tuvieron
+  lugar en la década de 1970, con 42 por ciento del gasto gubernamental y 4,9 por ciento del PBI.
+  Compárense estas cifras con el 31 por ciento de gasto y 3,7 por ciento del PBI en la década de
+  1970 *[sic: es la de 1960, según el cuadro A.6]*, y el 35 por ciento del gasto y 3,9 por ciento
+  del PBI en la década de 1980 (cuadro A.6). En consecuencia, podemos considerar al régimen militar
+  "revolucionario" como el más corrupto del periodo, seguido por el primer gobierno de Alan García
+  (cuadro A.7).»
+
+**Epílogo: «Incertidumbres de la anticorrupción» (pp. 521–533).**
+
+- «Solamente una administración eficiente y honrada, especialmente en el suministro de los
+  servicios comunes del sector público a lo largo de un prolongado periodo, podría paliar en la
+  memoria colectiva el legado de muchas décadas de corruptelas.» (p. 522)
+- «Las sanciones contra las personas culpables de corrupción en el pasado no bastaron para contener
+  la corrupción sistémica.» (p. 525)
+- **Para el canal (p. 531), textual:** «Solamente una ciudadanía realmente informada y educada podrá
+  vencer la recalcitrante "cultura" de la corrupción. Los jóvenes peruanos tienen el derecho a que
+  se les enseñe el valor de las instituciones y los daños que la corrupción causa.»
+- **La tesis en una línea (p. 531), textual:** «La fragilidad institucional genera, pues,
+  corrupción. En el caso peruano, esta última ha sido un fenómeno sistémico, no un acontecimiento
+  anecdótico o periódico.»
+- «Puede decirse así que ella es una de las causas principales del subdesarrollo peruano.» (p. 532)
+- «la historia del Perú ha sido en parte la historia de sucesivos ciclos de corrupción, seguidos por
+  periodos sumamente breves de reforma anticorrupción, interrumpidos por intereses creados
+  contrarios a la reforma.» (p. 532)
+- El costo, otra vez (p. 532): «podrían haber implicado la pérdida directa e indirecta, el desvío o
+  la mala asignación de fondos equivalente a un promedio de entre 30 y 40 por ciento de los gastos
+  gubernamentales, y de entre 3 y 4 por ciento del producto bruto interno. Estas inmensas pérdidas
+  debidas a la corrupción representarían entre el 40 y 50 por ciento de las posibilidades de
+  desarrollo del país en el largo plazo».
+- «No ha habido ningún periodo o ciclo histórico de poca o baja corrupción» (p. 532).
+- Los periodos más altos coinciden con los más autoritarios (p. 532): «el virreinato tardío
+  (1800-1820), los primeros caudillos (1822-1839), la década de la consolidación de la deuda (el
+  decenio de 1850), la tardía era del guano (1869-1872), el militarismo de la posguerra
+  (1885-1895), el Oncenio de Leguía (la década de 1920), el Docenio militar (1968-1980) y el
+  fujimorato (la década de 1990).»
+- «En última instancia, la corrupción persistirá a menos que se la contenga sistemáticamente a lo
+  largo del tiempo.» (p. 533)
+- «Los efectos dañinos de una corrupción descontrolada jamás deben ser subestimados.» (p. 533)
+
+**Sobre la regresión.** En lo leído del libro (introducción, apéndice entero, epílogo) no hay
+ninguna regresión: el método del apéndice suma costos por década a partir de fuentes y los divide
+entre el gasto y el PBI (pp. 535–536). Las regresiones que aprendió en Columbia (prólogo, p. 18)
+estarían en sus trabajos de los años ochenta y noventa, no en este libro.

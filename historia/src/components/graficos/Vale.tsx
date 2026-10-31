@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { azar } from '../../direction/azar';
 import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
@@ -56,25 +57,53 @@ export const Vale: React.FC<Props> = ({ paleta, id, titulo = 'VALE', edad = 0.3,
     firma1: trazoManuscrito(semilla + 5, 560, 420, 220, 16, 0.5),
     firma2: trazoManuscrito(semilla + 9, 120, 420, 200, 16, 0.5),
     lineas: [0, 1, 2].map((k) => trazoManuscrito(semilla + 20 + k, 300, 236 + k * 40, 330, 10)),
+    // manchas de humedad (foxing): más cuanto más viejo
+    manchas: (() => {
+      const r = azar(semilla * 31 + 7);
+      return Array.from({ length: 16 }, () => ({ x: r.rango(30, W - 30), y: r.rango(30, H - 30), r: r.rango(6, 30), o: r.rango(0.25, 0.8) }));
+    })(),
+    doblez: (() => { const r = azar(semilla * 13 + 3); return r.rango(0.42, 0.58); })(),
   }), [semilla]);
   const k = width / W;
   return (
     <div style={{ position: 'relative', width, height: H * k }}>
       <svg viewBox={`0 0 ${W} ${H}`} width={width} style={{ position: 'absolute', inset: 0, overflow: 'visible' }}>
-        <defs><PatronPapel id={`${id}-papel`} escala={500} /></defs>
+        <defs>
+          <PatronPapel id={`${id}-papel`} escala={500} />
+          {/* los bordes se tuestan con los años */}
+          <radialGradient id={`${id}-tostado`} cx="0.5" cy="0.5" r="0.72">
+            <stop offset="0.55" stopColor="#6b4a1c" stopOpacity={0} />
+            <stop offset="1" stopColor="#6b4a1c" stopOpacity={0.18 + 0.32 * edad} />
+          </radialGradient>
+          <radialGradient id={`${id}-mancha`}>
+            <stop offset="0" stopColor="#7a5524" stopOpacity={0.5} />
+            <stop offset="0.6" stopColor="#7a5524" stopOpacity={0.18} />
+            <stop offset="1" stopColor="#7a5524" stopOpacity={0} />
+          </radialGradient>
+          {/* microtexto: renglones de rayitas que de lejos se ven como una banda gris */}
+          <pattern id={`${id}-micro`} width={7} height={5} patternUnits="userSpaceOnUse">
+            <rect x={0} y={1.5} width={4.5} height={1.1} fill={tinta} opacity={0.6} />
+          </pattern>
+          <clipPath id={`${id}-recorte`}><path d={g.borde} /></clipPath>
+        </defs>
         <path d={g.borde} fill={papel} />
         <path d={g.borde} fill={`url(#${id}-papel)`} style={{ mixBlendMode: 'multiply' }} />
         {/* guilloché: dos cenefas cruzadas y un marco */}
-        <g fill="none" stroke={tinta} strokeWidth={0.7} opacity={0.55}>
-          {[0, 1, 2, 3].map((i) => <path key={i} d={cenefa(26, 7, 90, i * 0.8)} />)}
+        <g fill="none" stroke={tinta} strokeWidth={0.45} opacity={0.6}>
+          {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => <path key={i} d={cenefa(26, 7, 90, i * 0.4)} />)}
           <rect x={44} y={44} width={W - 88} height={H - 88} strokeWidth={1.4} />
           <rect x={50} y={50} width={W - 100} height={H - 100} strokeWidth={0.6} />
         </g>
+        <rect x={56} y={56} width={W - 112} height={8} fill={`url(#${id}-micro)`} />
+        <rect x={56} y={H - 64} width={W - 112} height={8} fill={`url(#${id}-micro)`} />
         {/* roseta con el sello de la tesorería (sin texto) */}
         <g fill="none" stroke={tinta} strokeWidth={0.7} opacity={0.7}>
-          {[0, 1, 2, 3, 4, 5].map((i) => <path key={i} d={roseta(170, 210, 58 + i * 5, 14, 9, i * 0.5)} />)}
+          {Array.from({ length: 11 }, (_, i) => <path key={i} d={roseta(170, 210, 56 + i * 2.8, 14, 9, i * 0.32)} strokeWidth={0.45} />)}
+          {Array.from({ length: 5 }, (_, i) => <path key={`c${i}`} d={roseta(170, 210, 26 + i * 2.5, 9, 4, i * 0.6)} strokeWidth={0.4} />)}
           <circle cx={170} cy={210} r={40} strokeWidth={1.4} />
         </g>
+        {/* el título, impreso con presión: un borde claro debajo, como tipo hundido */}
+        <text x={W / 2 + 61.5} y={151.5} textAnchor="middle" fill={mezclar(papel, '#ffffff', 0.45)} fontFamily={fuente.imprenta} fontSize={64} letterSpacing={22}>{titulo}</text>
         <text x={W / 2 + 60} y={150} textAnchor="middle" fill={tinta} fontFamily={fuente.imprenta} fontSize={64} letterSpacing={22}>{titulo}</text>
         <line x1={W / 2 - 120} x2={W / 2 + 240} y1={172} y2={172} stroke={tinta} strokeWidth={1} opacity={0.6} />
         {/* texto a mano (ilegible) y firmas */}
@@ -88,6 +117,25 @@ export const Vale: React.FC<Props> = ({ paleta, id, titulo = 'VALE', edad = 0.3,
         {/* casilla del monto */}
         <rect x={650} y={210} width={190} height={110} fill={alfa(papel, 0.6)} stroke={tinta} strokeWidth={1.6} />
         <rect x={656} y={216} width={178} height={98} fill="none" stroke={tinta} strokeWidth={0.6} />
+        {/* el sello seco: un relieve sin tinta (luz arriba a la izquierda, sombra abajo a la derecha) */}
+        <g transform="translate(470 372)" fill="none">
+          <circle r={34} stroke={mezclar(papel, '#ffffff', 0.5)} strokeWidth={2.2} transform="translate(-1.5 -1.5)" />
+          <circle r={34} stroke={mezclar(papel, '#4a3210', 0.35)} strokeWidth={2.2} transform="translate(1.5 1.5)" />
+          <circle r={26} stroke={mezclar(papel, '#4a3210', 0.25)} strokeWidth={1} strokeDasharray="2 3" />
+          {Array.from({ length: 16 }, (_, i) => {
+            const a = (i / 16) * Math.PI * 2;
+            return <line key={i} x1={Math.cos(a) * 8} y1={Math.sin(a) * 8} x2={Math.cos(a) * 18} y2={Math.sin(a) * 18} stroke={mezclar(papel, '#4a3210', 0.3)} strokeWidth={1.2} />;
+          })}
+        </g>
+        {/* los años: manchas, bordes tostados y el doblez del medio */}
+        <g clipPath={`url(#${id}-recorte)`}>
+          {g.manchas.slice(0, Math.round(4 + 12 * edad)).map((m, i) => (
+            <circle key={i} cx={m.x} cy={m.y} r={m.r} fill={`url(#${id}-mancha)`} opacity={m.o * (0.4 + 0.6 * edad)} style={{ mixBlendMode: 'multiply' }} />
+          ))}
+          <rect x={0} y={0} width={W} height={H} fill={`url(#${id}-tostado)`} style={{ mixBlendMode: 'multiply' }} />
+          <line x1={W * g.doblez} x2={W * g.doblez + 6} y1={0} y2={H} stroke="#4a3210" strokeWidth={1.4} opacity={0.18 + 0.2 * edad} />
+          <line x1={W * g.doblez + 2} x2={W * g.doblez + 8} y1={0} y2={H} stroke="#ffffff" strokeWidth={1.6} opacity={0.25} />
+        </g>
       </svg>
       <div style={{ position: 'absolute', left: 650 * k, top: 210 * k, width: 190 * k, height: 110 * k, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {monto}

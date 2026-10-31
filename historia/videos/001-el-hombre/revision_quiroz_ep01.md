@@ -171,3 +171,21 @@ Solo con datos confirmados, en el orden de §2.5 (primero el golpe, después lo 
 Cautelas que tendría que conservar: «calculó» y no «demostró» (él llama preliminares a sus
 cálculos); el 30–40 % es del gasto público, no del PBI, y no se dicen los dos porcentajes juntos sin
 decir cuál es cuál (CLAUDE.md §8). Sin «genes» ni «55 %».
+
+### Segunda vuelta (31-oct-2026)
+
+| Nota | Estado |
+|---|---|
+| Regresión | **Opción B del director.** En el libro no hay regresión (leídos la introducción, el apéndice entero y el epílogo). La regresión se explica como concepto y, en «le va a sacar la cuenta al Perú», la nube se vuelve su serie real: el costo de la corrupción en % del PBI por década, 1820–1990 (cuadros A.4 y A.6), que se enciende punto por punto con su valor, y la banda del promedio de 3 a 4 %. Rótulo: «Lo que midió». Sin recta ajustada sobre sus datos. |
+| Brújula, frases suyas | Polo liberal: «La fragilidad institucional genera, pues, corrupción.» (epílogo, p. 531). El rótulo del polo pasa a `1990s–2000s` porque la frase es del libro de 2008/2013. Polo trotskista: no hay frases suyas en el libro; sigue con lo que cuenta Cueto. |
+| Libro hojeado | Rehecho en 3D: tapa que gira, hojas que se curvan con sombra, ráfaga al hojear, se endereza antes del zoom. |
+| La tierra en la pizarra | Tizas de color con degradado (ocre, arcilla, piedra), piedritas y raíces. |
+| Estado y vales | El edificio con piedra y volumen (columnas cilíndricas, sillares, pórtico en sombra, frontón con relieve, sombra en el piso); los vales con manchas de humedad, bordes tostados, doblez, guilloché más fino, microtexto y sello seco. |
+
+**Para el director (no aplicado, es guion):** en la p. 441 Quiroz escribe que los niveles más altos
+del periodo 1960–1989 fueron los de la década de 1970 (42 % del gasto, 4,9 % del PBI) y que
+«podemos considerar al régimen militar "revolucionario" como el más corrupto del periodo». Es el
+mismo gobierno contra el que militó de joven: el historiador maduro le sacó la cuenta. Encaja en la
+brújula o en el gancho. Y para el cierre del canal, el epílogo (p. 531): «Los jóvenes peruanos
+tienen el derecho a que se les enseñe el valor de las instituciones y los daños que la corrupción
+causa.»

@@ -40,6 +40,20 @@ export const esquema = z.object({
   titulo_metodo: z.string().optional(),
   /** Rótulo del gráfico (p. ej. "Regresión"), con el beat `regresion`. */
   rotulo_grafico: z.string().optional(),
+  /**
+   * Del método al dato (beat `serie`): la nube se vuelve una serie real que el autor midió, un
+   * punto por etiqueta, que se enciende con su valor. Sin recta ajustada: solo sus números.
+   */
+  serie: z.object({
+    rotulo: z.string(),
+    unidad: z.string(),
+    etiquetas: z.array(z.string()).min(2),
+    valores: z.array(z.number()).min(2),
+    maximo: z.number().positive(),
+    banda: z.tuple([z.number(), z.number()]).optional(),
+    texto_banda: z.string().optional(),
+    fuente: z.string().optional(),
+  }).refine((s) => s.etiquetas.length === s.valores.length, { message: 'una etiqueta por valor' }).optional(),
 });
 
 export const beats = {
@@ -67,6 +81,7 @@ export const beats = {
   tiza: '(con brujula_frase) la brújula y su fondo pasan a la pizarra; los rótulos se borran',
   frase: '(con brujula_frase) se escribe la frase con tiza',
   regresion: '(con rotulo_grafico) aparece el rótulo del gráfico',
+  serie: '(con serie) la nube se va, los puntos viajan a la serie real y se encienden de a uno; después, la banda',
 };
 
 /** Como se usa en 000-quiroz. */
