@@ -26,9 +26,9 @@ muestras con muestreo adaptativo y OpenImageDenoise, 4 rebotes de luz.
 |---|---|
 | Construir la escena (todo procedural) | 0,3 s |
 | Frame de prueba a 50 % y 16 muestras (para iterar) | 3–5 s |
-| Frame final 1280×720, 32 muestras | {{RANGO}} |
-| **Clip completo, 240 frames** | **{{TOTAL}}** |
-| ffmpeg → MP4 | {{FFMPEG}} |
+| Frame final 1280×720, 32 muestras | 14–28 s (promedio 20 s; sube al acercarse a la isla) |
+| **Clip completo, 240 frames** | **81 min (4867 s)** |
+| ffmpeg → MP4 | ~8 s (2,6 MB, CRF 16) |
 
 Iteraciones de prueba: 7 rondas (v1–v6 a media resolución, salvo v6, más `final`), cada una de
 unos 15 s.
