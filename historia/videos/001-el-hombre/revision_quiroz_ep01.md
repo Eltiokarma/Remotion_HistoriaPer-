@@ -204,3 +204,9 @@ causa.»
 |---|---|
 | Por qué París (y entonces Nueva York) | Nueva frase en la voz (guion ESC5 y voz provisional): «Era la ciudad de Braudel, el de la larga duración. Ahí se habían formado sus propios profesores.» Retoma a Braudel de la pizarra. Los nombres van en pantalla, junto a París, no en la voz: `HERACLIO BONILLA` y `ALBERTO FLORES GALINDO` (sus profesores en la PUCP, prólogo pp. 15–16; los dos se formaron en París: fuentes en `fuentes.md`). La ruta a París llega entera y se borra cuando él se va a Nueva York. La escena s05 crece unos 8 s (el video, 5:54). **El director revisa la frase en el manuscrito.** |
 | Salto del barco al Estado | Ya no hay corte: la cámara sigue al barco (se acerca y lo lleva a la izquierda) mientras el grabado se funde con el dibujo del Estado, que se levanta a la derecha. El barco es el mismo punto todo el viaje. La flecha de la plata sale cuando la cámara llega. |
+
+### Quinta vuelta (31-oct-2026): el gancho
+
+| Nota | Estado |
+|---|---|
+| El gancho (`DEFINIR`) | **Resuelto: el director aprobó la propuesta.** Escena s00 (`Gancho`, 33,7 s) en lugar del marcador, antes de «Nueva York». Cinco cuadros, uno por frase: la producción que pierde su tajada cada año (1820 → 2000, `3–4 %`), diez soles de los que caen tres y el cuarto queda en duda (`30–40 %`), la regla de la colonia a hoy donde los casos sueltos se vuelven una franja continua (con su frase de la p. 531), la ficha con las cifras y el libro que no llegó a ver. La primera frase se partió en dos («…de todo lo que produce. Cada año.») para no pasar de 25 palabras sin perder el «en promedio». Música propia que se apaga sobre el libro; la escena 1 entra en silencio. Ya no hay marcadores: `validar --final` solo espera la voz real. |

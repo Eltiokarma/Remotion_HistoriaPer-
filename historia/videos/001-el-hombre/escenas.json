@@ -21,23 +21,72 @@
     {
       "id": "s00",
       "seccion": "gancho",
-      "componente": "Marcador",
-      "duracion_s": 4.0,
-      "cola_s": 0,
-      "intensidad": 2,
-      "cambio": "(por definir) del golpe —lo que encontró y lo que le costó al Perú— a la historia del hombre",
-      "intencion": "marcador visible: el director decide el gancho (DIRECCION_DE_VIDEO §2.5); la propuesta está en revision_quiroz_ep01.md",
+      "componente": "Gancho",
+      "duracion_s": 33.67,
+      "cola_s": 1.2,
+      "intensidad": 4,
+      "cambio": "de no saber nada a cargar una cifra que duele (3–4 % de todo lo que produce el país, cada año, desde 1820) y una pregunta: ¿quién lo calculó?",
+      "intencion": "primero el golpe, después el hombre (DIRECCION_DE_VIDEO §2.5): cinco cuadros, uno por frase, que acumulan; termina en el libro que no llegó a ver en español, y la escena siguiente abre con sus pruebas de imprenta. Yuxtaposición: la cifra fría contra el libro solo en la penumbra",
       "transicion_salida": "corte",
-      "beats": {},
-      "props": {
-        "titulo": "El gancho",
-        "notas": [
-          "20–60 s · antes de «Nueva York, 2012» (recomendado)",
-          "primero el golpe, después Alfonso · DIRECCION_DE_VIDEO §2.5",
-          "propuesta: revision_quiroz_ep01.md, «Estado de la revisión»"
-        ]
+      "beats": {
+        "anio": 0.3,
+        "rojo": 5.83,
+        "soles": 12.67,
+        "caen": 17.07,
+        "cuatro": 17.55,
+        "sueltos": 19.75,
+        "sistema": 21.74,
+        "colonia": 22.95,
+        "calculo": 25.88,
+        "libro": 29.38
       },
-      "estado_musica": "ausente"
+      "props": {
+        "anios": [
+          1820,
+          2000
+        ],
+        "pbi": {
+          "min": 3,
+          "max": 4,
+          "rotulo": "LO QUE PRODUCE EL PAÍS (PBI), CADA AÑO"
+        },
+        "monedas": {
+          "total": 10,
+          "min": 3,
+          "max": 4,
+          "rotulo": "PRESUPUESTO DEL ESTADO",
+          "cifra": "30–40 %"
+        },
+        "regla": {
+          "desde": 1680,
+          "hasta": 2000,
+          "corte": 1820,
+          "antes": "COLONIA",
+          "despues": "REPÚBLICA"
+        },
+        "cita": {
+          "texto": "«un fenómeno sistémico, no un acontecimiento anecdótico o periódico»",
+          "pie": "QUIROZ, EPÍLOGO, P. 531"
+        },
+        "ficha": [
+          "3–4 % DEL PBI · CADA AÑO",
+          "30–40 % DEL PRESUPUESTO",
+          "1820–2000 · ESTIMADOS PRELIMINARES"
+        ],
+        "libro": {
+          "titulo": "Historia de la corrupción en el Perú",
+          "autor": "Alfonso W. Quiroz",
+          "anio": "2013"
+        }
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s00-gancho.mp3",
+          "nivel": 0.32
+        },
+        "duck_db": -14
+      },
+      "estado_musica": "presente (pulso) → se apaga sobre el libro"
     },
     {
       "id": "s01",

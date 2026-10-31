@@ -4,13 +4,52 @@
 **Formato:** 100 % Remotion, sin metraje ni fotos · 1920×1080 · 30 fps
 **Pregunta central:** ¿Qué encontró, para que valiera la pena? (este episodio responde quién era y cómo aprendió a buscar; lo que encontró llega en 0·2, 0·3 y 0·4)
 **Palabra del episodio:** *larga duración*
-**Duración estimada:** ~6 min
+**Duración estimada:** ~6 min 25 s (con el gancho)
 **Plan de los cuatro episodios:** `videos/000-quiroz/diagnostico.md`, §4
 
 Reescrito a partir del borrador aprobado por Gerson (en el historial de git, «0·1: borrador de la
 reescritura del guion»): sin la línea de la natación de adulto y con *larga duración* como palabra
 del episodio. Las marcas entre corchetes son de dirección: `[PAUSA 1s]` va a la voz; `[IMAGEN: …]`
 dice qué aparece con esa frase.
+
+---
+
+## ESC 0 — El gancho
+
+Primero el golpe, después el hombre (DIRECCION_DE_VIDEO §2.5; revisión del director, 30/10/2026:
+«usa tu propuesta»). Solo datos confirmados, con la cautela del autor («en promedio», «estimados
+preliminares»). Sin «genes» ni «55 %».
+
+**VO:**
+Desde 1820, la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento de todo lo que produce. [PAUSA 0,4s] Cada año. [PAUSA 1s]
+
+Del presupuesto del Estado, de cada diez soles, se fueron entre tres y cuatro. [PAUSA 1,2s]
+
+No son casos sueltos: es el sistema, y viene desde la colonia. [PAUSA 1,2s]
+
+Lo calculó un historiador limeño. [PAUSA 0,8s] Y no llegó a ver su libro en español. [PAUSA 1,5s]
+
+**Imagen:**
+- «Desde 1820…»: un contador de años corre de 1820 a 2000; la barra de lo que produce el país,
+  en cien partes. En «tres y el cuatro», la tajada se tiñe (3 % rojo lleno, el cuarto rayado) y
+  desde ahí cae una tajada por año y se apila abajo. El contador frena en 2000 antes de «Cada año».
+- «De cada diez soles»: diez monedas (genéricas, no reales). En «tres» caen tres; en «cuatro», la
+  cuarta se inclina y queda a medias, punteada: la duda del rango. `30–40 %`.
+- «No son casos sueltos»: una regla de 1680 a 2000 con puntos rojos sueltos que parpadean; en «el
+  sistema» se unen en una franja continua (la república, lo medido) y en «desde la colonia» la franja
+  se alarga hacia atrás. Debajo, su frase textual: «un fenómeno sistémico, no un acontecimiento
+  anecdótico o periódico» (epílogo, p. 531).
+- «Lo calculó»: una ficha que se escribe a máquina con las cifras y «estimados preliminares».
+- «No llegó a ver su libro en español»: la ficha se va y queda el libro, *Historia de la corrupción
+  en el Perú* (2013); la luz baja. Corte a las pruebas de imprenta de la escena 1.
+
+**Sonido:** un pulso grave por cada tajada que cae; notas que bajan con las monedas; un acorde grave
+que entra con «el sistema» y crece hacia la colonia; una nota sola en «lo calculó»; sobre el libro,
+un acorde que se apaga hasta el silencio (la escena 1 entra sin música).
+
+**Fuente:** Apéndice, p. 554 y epílogo, p. 532 (entre 30 y 40 % del gasto y entre 3 y 4 % del PBI,
+promedio anual 1820–2000; «estimados preliminares», p. 57); la colonia: cap. 1 (1750–1820) y cuadro
+1.2 (desde 1680); la frase, epílogo p. 531; murió el 2 de enero de 2013 y el libro salió en mayo.
 
 ---
 

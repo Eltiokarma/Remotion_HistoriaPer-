@@ -966,7 +966,7 @@ def musica_000_quiroz():
     """Música del video 000: una pista por escena, compuesta sobre sus beats."""
     m = PUBLIC / "videos" / "000-quiroz" / "musica"
     tiempos = tiempos_video("000-quiroz")
-    pistas = [("s01", "s01-entrada", m000_s01), ("s02", "s02-nadador", m000_s02), ("s03", "s03-generacion", m000_s03),
+    pistas = [("s00", "s00-gancho", m001_s00), ("s01", "s01-entrada", m000_s01), ("s02", "s02-nadador", m000_s02), ("s03", "s03-generacion", m000_s03),
               ("s04", "s04-mecanismo", m000_s04), ("s05", "s05-medir", m000_s05), ("s06", "s06-pregunta", m000_s06),
               ("s07", "s07-objeciones", m000_s07), ("s08", "s08-cuenta", m000_s08), ("s09", "s09-circulos", m000_s09),
               ("s10", "s10-serie", m000_s10), ("s11", "s11-tema", m000_s11)]
@@ -1059,11 +1059,39 @@ def m001_s05(b, dur):  # (el puente: hoy es la escena s06 del 0·1)
     return p.mezcla()
 
 
+def m001_s00(b, dur):
+    """El gancho: un pulso grave con cada año que pasa, las monedas que caen en notas, un acorde
+    oscuro en «el sistema» que se alarga hacia la colonia, una nota sola en «lo calculó» y, sobre el
+    libro, todo se va apagando hasta el silencio (la escena siguiente entra sin música)."""
+    p = Partitura(dur, J)
+    an, rojo, sol, cae, cua, sue, sis, col, cal, lib = (b[k] for k in ("anio", "rojo", "soles", "caen", "cuatro", "sueltos", "sistema", "colonia", "calculo", "libro"))
+    # debajo de los años, un colchón tenso que no resuelve
+    acordes(p, an, sol - 0.4, ["Dm", "Bb", "Gm", "A"], (sol - an) / 4, 0.09, corte=900)
+    # desde la tajada roja: el pulso, uno por año que cae
+    t = rojo + 0.5
+    while t < sol - 1.0:
+        p.poner(bombo(0.7), t + 0.5, 0.32)
+        t += 0.42
+    # las monedas: notas que bajan
+    for k, m in enumerate([69, 65, 62]):
+        p.poner(punteo(m, 1.6, 1.1), cae + k * 0.09 + 0.3, 0.14, 0.3 - 0.2 * k)
+    p.poner(punteo(57, 2.4, 0.8), cua + 0.8, 0.11, -0.2)
+    acordes(p, sol, sue - 0.3, ["Dm"], sue - sol, 0.07, corte=800)
+    # el sistema: un acorde grave que entra y se queda, y crece cuando la franja vuelve a la colonia
+    p.poner(colchon([38, 50, 57, 62], cal - sis + 1.5, ataque=0.4, cierre=1.5, corte=700), sis, 0.17)
+    p.poner(colchon([33, 45, 52], cal - col + 1.0, ataque=1.0, cierre=1.2, corte=500), col, 0.13)
+    # lo calculó: una nota sola, arriba
+    p.poner(punteo(74, 3.0, 1.2), cal + 0.1, 0.12, 0.2)
+    # el libro: un acorde menor que se apaga despacio hasta el silencio
+    p.poner(colchon([50, 57, 62, 65], dur - lib, ataque=0.8, cierre=dur - lib - 0.6, corte=1200), lib, 0.13)
+    return p.mezcla()
+
+
 def musica_001_el_hombre():
     """Música del 0·1: las escenas que vienen de 000 conservan su pista (compuesta sobre los mismos beats)."""
     m = PUBLIC / "videos" / "001-el-hombre" / "musica"
     tiempos = tiempos_video("001-el-hombre")
-    pistas = [("s01", "s01-entrada", m000_s01), ("s02", "s02-nadador", m001_s02), ("s03", "s03-epoca", m001_s03),
+    pistas = [("s00", "s00-gancho", m001_s00), ("s01", "s01-entrada", m000_s01), ("s02", "s02-nadador", m001_s02), ("s03", "s03-epoca", m001_s03),
               ("s04", "s04-capas", m001_s04), ("s05", "s05-medir", m000_s05), ("s06", "s06-puente", m001_s05),
               ("s07", "s07-tema", m000_s11)]
     for escena, nombre, fn in pistas:

@@ -66,7 +66,11 @@ Lo que no tenga fuente segura dice `[VERIFICAR]` y hace fallar `npm run validar 
 | s06 | Ficha `SIGLO XIX · GUANO`; grabado de las islas, sacos, barco, Estado y vales | Ilustración dibujada en código; no son datos | — |
 | s06 | «¿A dónde fue a parar esa plata?» en grande, en el momento en que la voz lo dice | Frase del guion | — |
 | s06 | El Estado decidió pagar su deuda interna con la plata del guano, en 1850 (sello `1850` sobre los vales) | Prólogo, pp. 17–18; cap. 2, p. 169 (la consolidación pagada con los recursos del guano) | ✔ |
-| s00 | Marcador `POR DEFINIR`: el gancho | Revisión del director (`DEFINIR`): falta escribirlo. `npm run validar -- 001-el-hombre --final` falla mientras esté | Pendiente |
+| s00 | «Desde 1820, la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento de todo lo que produce. Cada año.» Contador 1820 → 2000; barra con la tajada `3–4 %` (3 % lleno, el cuarto rayado) | Apéndice, p. 554 («entre 3 y 4 por ciento del PBI en el largo plazo (años de 1820 a 2000)»); epílogo, p. 532 | ✔ (gancho propuesto y aprobado por el director, 31/10/2026) |
+| s00 | «Del presupuesto del Estado, de cada diez soles, se fueron entre tres y cuatro.» Diez monedas genéricas; `30–40 %` | Apéndice, p. 554 («entre 30 y 40 por ciento de los gastos del presupuesto»); epílogo, p. 532. Los «soles» son una imagen de hoy para el presupuesto, no una moneda de 1820 (el sol es de 1863) | ✔ |
+| s00 | «No son casos sueltos: es el sistema, y viene desde la colonia.» Regla 1680–2000, `COLONIA` · `REPÚBLICA` (corte en 1820); cita textual «un fenómeno sistémico, no un acontecimiento anecdótico o periódico» | Epílogo, p. 531 (la cita); p. 532 («No ha habido ningún periodo o ciclo histórico de poca o baja corrupción»); la colonia: cap. 1 (1750–1820) y cuadro 1.2 (desde 1680, p. 125) | ✔ |
+| s00 | Ficha `3–4 % DEL PBI · CADA AÑO` · `30–40 % DEL PRESUPUESTO` · `1820–2000 · ESTIMADOS PRELIMINARES` | Las mismas; «estimados preliminares», p. 57 | ✔ |
+| s00 | «Lo calculó un historiador limeño. Y no llegó a ver su libro en español.» Portada `Historia de la corrupción en el Perú · Alfonso W. Quiroz · 2013` (portada tipográfica propia, no la carátula real) | Nació en Lima: Contreras, *Economía*, 2013 (C9); murió el 2 de enero de 2013 y la primera edición es de mayo de 2013 (filas de s01) | ✔ |
 | s07 | Próximo: `1850 · La deuda defraudada`: el título del libro de 1987 que salió de esa tesis | Prólogo, p. 17 | ✔ |
 
 ## Assets

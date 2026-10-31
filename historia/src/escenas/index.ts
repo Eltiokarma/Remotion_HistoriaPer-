@@ -15,6 +15,7 @@ import { LaCuenta } from './LaCuenta/Escena';
 import { CirculosCorruptos } from './CirculosCorruptos/Escena';
 import { Denunciantes } from './Denunciantes/Escena';
 import { Marcador } from './Marcador/Escena';
+import { Gancho } from './Gancho/Escena';
 import type { NombreEscena } from './esquemas';
 
 /** Componente de cada escena del catálogo (ver ./esquemas.ts). */
@@ -36,4 +37,5 @@ export const COMPONENTES: Record<NombreEscena, React.FC<EscenaProps<any>>> = {
   CirculosCorruptos,
   Denunciantes,
   Marcador,
+  Gancho,
 };
