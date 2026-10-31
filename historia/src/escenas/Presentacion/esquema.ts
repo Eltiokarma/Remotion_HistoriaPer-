@@ -31,6 +31,12 @@ export const esquema = z.object({
     lat: z.number(),
     ficha: z.string(),
     dato: z.string().optional(),
+    /** Nombre junto al punto, cuando la cámara llega. */
+    nombre: z.string().optional(),
+    /** Nombre del mar, sobre el agua. */
+    mar: z.string().optional(),
+    /** Línea aproximada de la cordillera [lon, lat] (dibujo de mapa viejo, no un dato). */
+    cordillera: z.array(z.tuple([z.number(), z.number()])).optional(),
   }).optional(),
 });
 

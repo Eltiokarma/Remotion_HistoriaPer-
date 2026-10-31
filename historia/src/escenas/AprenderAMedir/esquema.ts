@@ -28,6 +28,8 @@ export const esquema = z.object({
   ficha_estante: z.string().optional(),
   /** La recta «busca» su lugar y se marca su pendiente: para explicar qué es una regresión. */
   explicar_regresion: z.boolean().default(false),
+  /** A la izquierda del gráfico, un fichero de archivo del que salen los puntos (de dónde vienen los datos). */
+  fichero: z.boolean().default(false),
   /** Las dos épocas de la brújula. */
   brujula: z.tuple([z.string(), z.string()]),
   /** "arriba-abajo" (sin lectura política) o "izquierda-derecha": la aguja va de tope a tope (revisión del director). */
@@ -53,6 +55,8 @@ export const esquema = z.object({
     banda: z.tuple([z.number(), z.number()]).optional(),
     texto_banda: z.string().optional(),
     fuente: z.string().optional(),
+    /** La página del cuadro que se ve a la izquierda, con su título y las dos columnas. */
+    cuadro: z.object({ titulo: z.string(), columnas: z.tuple([z.string(), z.string()]) }).optional(),
   }).refine((s) => s.etiquetas.length === s.valores.length, { message: 'una etiqueta por valor' }).optional(),
 });
 

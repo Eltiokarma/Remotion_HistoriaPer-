@@ -55,7 +55,8 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
       {props.lugar && t >= tLugar - 0.1 && renglon > 0.02 ? (
         <AbsoluteFill style={{ opacity: renglon }}>
           <MapaLugar id={`${escena.id}-lugar`} codigo={props.lugar.codigo} lon={props.lugar.lon} lat={props.lugar.lat} caja={[1440, 630, 340, 370]} acerca={1.8}
-            zoom={tramo(t, tLugar + 1.2, 2.4, 'solemne')} aparece={tramo(t, tLugar, 0.8, 'natural')} tinta={pal.fondo} acento={pal.rojo} />
+            zoom={tramo(t, tLugar + 1.2, 2.4, 'solemne')} aparece={tramo(t, tLugar, 0.8, 'natural')} tinta={pal.fondo} acento={pal.rojo} papel={pal.papel}
+            nombre={props.lugar.nombre} mar={props.lugar.mar} cordillera={props.lugar.cordillera} />
           <div style={{ position: 'absolute', right: 520, top: 860, textAlign: 'right', opacity: tramo(t, tLugar + 1.2, 0.8, 'natural') }}>
             <Ficha texto={props.lugar.ficha} t={t - tLugar - 1.2} color={pal.fondo} acento={pal.rojo} size={30} />
             {props.lugar.dato ? (

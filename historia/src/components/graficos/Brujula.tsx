@@ -25,25 +25,81 @@ export const Brujula: React.FC<Props> = ({ paleta, id, angulo, polos, radio: R =
   const punto = (a: number, r: number) => [cx + Math.sin((a * Math.PI) / 180) * r, cy - Math.cos((a * Math.PI) / 180) * r];
   return (
     <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
-      {/* la brújula de tiza: el mismo dibujo, a mano, sobre la pizarra */}
-      {tiza > 0 ? (
-        <g opacity={tiza}>
-          <defs><FiltroTiza id={`${id}-tiza`} semilla={21} /></defs>
-          <g filter={`url(#${id}-tiza)`} stroke={TIZA} fill="none" strokeLinecap="round">
-            <circle cx={cx} cy={cy} r={R + 20} strokeWidth={4} />
-            <circle cx={cx} cy={cy} r={R - 10} strokeWidth={2} opacity={0.7} />
-            {Array.from({ length: 12 }, (_, i) => {
-              const [x1, y1] = punto(i * 30, R - 10), [x2, y2] = punto(i * 30, R - (i % 3 === 0 ? 46 : 28));
-              return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} strokeWidth={3} />;
-            })}
-            <g transform={`rotate(${angulo} ${cx} ${cy})`}>
-              <path d={`M${cx} ${cy - R * 0.84} L${cx + 20} ${cy} L${cx} ${cy + R * 0.84} L${cx - 20} ${cy} Z`} strokeWidth={4} />
-              <path d={`M${cx} ${cy - R * 0.84} L${cx + 20} ${cy} L${cx - 20} ${cy} Z`} fill={TIZA} fillOpacity={0.35} strokeWidth={0} />
+      {/* la brújula de tiza: el mismo dibujo, a mano, sobre la pizarra (trazos dobles que no cierran
+          justo, la rosa con un lado sombreado con la tiza de costado, la aguja en tiza roja) */}
+      {tiza > 0 ? (() => {
+        // círculo a mano: el radio tiembla un poco y el trazo se pasa del cierre
+        const aMano = (r: number, semilla: number, pasa = 14) => {
+          let d = '';
+          for (let a = -6; a <= 360 + pasa; a += 4) {
+            const rr = r + 2.2 * Math.sin((a * Math.PI) / 180 * 3 + semilla) + 1.4 * Math.sin((a * Math.PI) / 180 * 7 + semilla * 2);
+            const [x, y] = punto(a + semilla * 9, rr);
+            d += `${a === -6 ? 'M' : 'L'}${x.toFixed(1)} ${y.toFixed(1)} `;
+          }
+          return d;
+        };
+        const ROJA = '#e08a7e';
+        const estrella = (r1: number, r2: number, n: number, giro = 0) =>
+          Array.from({ length: n * 2 }, (_, i) => {
+            const [x, y] = punto(giro + (i * 180) / n, i % 2 === 0 ? r1 : r2);
+            return `${i === 0 ? 'M' : 'L'}${x.toFixed(1)} ${y.toFixed(1)}`;
+          }).join(' ') + ' Z';
+        // el lado sombreado de cada punta de la rosa: rayas de tiza de costado
+        const sombra = (a: number, r1: number, r2: number) => {
+          const [x0, y0] = punto(a, r1), [x1, y1] = punto(a + 45 / 2, r2);
+          return `M${cx} ${cy} L${x0.toFixed(1)} ${y0.toFixed(1)} L${x1.toFixed(1)} ${y1.toFixed(1)} Z`;
+        };
+        return (
+          <g opacity={tiza}>
+            <defs>
+              <FiltroTiza id={`${id}-tiza`} semilla={21} />
+              <pattern id={`${id}-costado`} width={7} height={7} patternUnits="userSpaceOnUse" patternTransform="rotate(-28)">
+                <rect x={0} y={0} width={7} height={3.2} fill={TIZA} opacity={0.55} />
+              </pattern>
+              <radialGradient id={`${id}-polvo`}>
+                <stop offset="0.6" stopColor={TIZA} stopOpacity={0} />
+                <stop offset="0.85" stopColor={TIZA} stopOpacity={0.07} />
+                <stop offset="1" stopColor={TIZA} stopOpacity={0} />
+              </radialGradient>
+            </defs>
+            {/* el polvo de lo que se borró alrededor */}
+            <circle cx={cx} cy={cy} r={R + 80} fill={`url(#${id}-polvo)`} />
+            <g filter={`url(#${id}-tiza)`} stroke={TIZA} fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <path d={aMano(R + 22, 1.3)} strokeWidth={4.5} />
+              <path d={aMano(R + 14, 4.1, -10)} strokeWidth={1.8} opacity={0.6} />
+              <path d={aMano(R - 10, 2.7, 6)} strokeWidth={2.2} opacity={0.75} />
+              {/* marcas: cada 10°, más largas cada 30° y en los puntos cardinales */}
+              {Array.from({ length: 36 }, (_, i) => {
+                const largo = i % 9 === 0 ? 46 : i % 3 === 0 ? 30 : 16;
+                const [x1, y1] = punto(i * 10, R - 10), [x2, y2] = punto(i * 10 + (i % 2 ? 0.6 : -0.4), R - 10 - largo);
+                return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} strokeWidth={i % 3 === 0 ? 3 : 1.8} opacity={i % 3 === 0 ? 1 : 0.7} />;
+              })}
+              {/* la rosa: dos estrellas, con el lado de cada punta sombreado */}
+              <path d={estrella(R * 0.62, R * 0.12, 4)} strokeWidth={2.6} />
+              <path d={estrella(R * 0.4, R * 0.1, 4, 45)} strokeWidth={1.8} opacity={0.75} />
+              {[0, 90, 180, 270].map((a) => <path key={a} d={sombra(a, R * 0.62, R * 0.12)} fill={`url(#${id}-costado)`} stroke="none" />)}
             </g>
-            <circle cx={cx} cy={cy} r={10} strokeWidth={3} />
+            {/* los puntos cardinales, escritos a mano */}
+            {[['N', 0], ['E', 90], ['S', 180], ['O', 270]].map(([l, a]) => {
+              const [x, y] = punto(a as number, R + 56);
+              return (
+                <text key={l as string} x={x} y={y + 13} textAnchor="middle" fill={TIZA} fontFamily={fuente.imprentaItalica} fontSize={l === 'N' ? 40 : 32}
+                  filter={`url(#${id}-tiza)`} opacity={l === 'N' ? 1 : 0.8}>{l}</text>
+              );
+            })}
+            {/* la aguja: la mitad que apunta en tiza roja, la otra en blanca; rellenas de costado */}
+            <g transform={`rotate(${angulo} ${cx} ${cy})`} filter={`url(#${id}-tiza)`} strokeLinejoin="round">
+              <path d={`M${cx} ${cy - R * 0.86} L${cx + 22} ${cy} L${cx - 22} ${cy} Z`} fill={ROJA} fillOpacity={0.55} stroke={ROJA} strokeWidth={4} />
+              <path d={`M${cx} ${cy + R * 0.86} L${cx + 22} ${cy} L${cx - 22} ${cy} Z`} fill={`url(#${id}-costado)`} stroke={TIZA} strokeWidth={4} />
+              <line x1={cx} y1={cy - R * 0.8} x2={cx} y2={cy + R * 0.8} stroke={TIZA} strokeWidth={1.4} opacity={0.5} />
+            </g>
+            <g filter={`url(#${id}-tiza)`} fill="none" stroke={TIZA}>
+              <circle cx={cx} cy={cy} r={13} strokeWidth={3.5} />
+              <circle cx={cx} cy={cy} r={4} fill={TIZA} />
+            </g>
           </g>
-        </g>
-      ) : null}
+        );
+      })() : null}
       <g opacity={1 - tiza}>
       <defs>
         <radialGradient id={`${id}-bisel`} cx="40%" cy="35%">

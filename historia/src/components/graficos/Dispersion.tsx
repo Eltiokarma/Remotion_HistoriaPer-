@@ -33,6 +33,11 @@ type Props = {
    * valor. Sin recta: lo que se dibuja es lo que el autor midió, no un ajuste nuestro.
    */
   serie?: { desde: number; etiquetas: string[]; valores: number[]; maximo: number; unidad: string; banda?: [number, number]; textoBanda?: string; fuente?: string };
+  /**
+   * De dónde salen los puntos, a la izquierda: un fichero de archivo (cada punto sale de una
+   * ficha) y, con la serie, la página del cuadro del libro (cada fila se enciende con su punto).
+   */
+  origen?: { fichero: boolean; cuadro?: { titulo: string; columnas: [string, string] } };
 };
 
 const G = { x0: 800, x1: 1760, y0: 190, y1: 880 };
@@ -43,7 +48,7 @@ const N = 46;
  * la recta de regresión que la atraviesa (con sus residuos) y, al lado, bloques de discurso que
  * se apagan. Sin ejes rotulados: es la idea del método, no un dato.
  */
-export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscursos = 0, aparece = 1, tCaen = 0, busca = false, tPendiente, residuos = true, serie }) => {
+export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscursos = 0, aparece = 1, tCaen = 0, busca = false, tPendiente, residuos = true, serie, origen }) => {
   const tinta = paleta.fondo;
   const puntos = useMemo(() => {
     const r = azar(1983);
@@ -80,6 +85,13 @@ export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscur
   const viajeros = new Map<number, number>();
   for (let j = 0; j < nS; j++) viajeros.set(porU[Math.round((j * (N - 1)) / Math.max(1, nS - 1))].orden, j);
   const kBanda = serie?.banda ? tramo(t, tLuz + nS * pasoLuz + 0.2, 0.8, 'natural') : 0;
+  // el fichero entra cuando los discursos ya se apagaron, antes de que caigan los puntos
+  const kFichero = origen?.fichero ? tramo(t, tCaen - 2.2, 1.2, 'pesado') * (1 - (serie ? tramo(t, serie.desde, 0.8, 'natural') : 0)) : 0;
+  const kCuadro = origen?.cuadro && serie ? tramo(t, serie.desde + 0.3, 1.0, 'pesado') : 0;
+  const FICHAS = 14;
+  const FX = 410, FY = 640; // centro de la boca del fichero
+  const fichaX = (m: number) => FX - 190 + (m * 380) / (FICHAS - 1);
+  const VUELO = 0.55;
 
   return (
     <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0, opacity: aparece }}>
@@ -93,7 +105,7 @@ export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscur
       </defs>
       {/* los discursos: bloques de texto gris que pierden peso */}
       {Array.from({ length: 6 }, (_, i) => (
-        <g key={i} opacity={(1 - apagaDiscursos * (0.55 + i * 0.08)) * clamp(t / 0.6 - i * 0.15)}>
+        <g key={i} opacity={(1 - apagaDiscursos * (0.55 + i * 0.08)) * clamp(t / 0.6 - i * 0.15) * (1 - kFichero)}>
           <rect x={150 + (i % 2) * 24} y={200 + i * 112} width={500} height={92} rx={4} fill={mezclar(paleta.papel, tinta, 0.06)} stroke={alfa(tinta, 0.25)} />
           {Array.from({ length: 4 }, (_, k) => (
             <rect key={k} x={172 + (i % 2) * 24} y={220 + i * 112 + k * 17} width={k === 3 ? 260 : 456} height={7} rx={3} fill={alfa(tinta, 0.4)} />
@@ -137,6 +149,83 @@ export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscur
             opacity={clamp(kTri * 2 - 1)} />
         </g>
       ) : null}
+      {/* el fichero del archivo: de cada ficha sale un dato */}
+      {kFichero > 0 ? (
+        <g opacity={kFichero} transform={`translate(0 ${(1 - kFichero) * 80})`}>
+          {/* la sombra y la caja de madera, vista de frente y un poco desde arriba */}
+          <ellipse cx={FX + 10} cy={FY + 236} rx={260} ry={22} fill={alfa(tinta, 0.18)} />
+          <path d={`M${FX - 236} ${FY + 4} L${FX + 236} ${FY + 4} L${FX + 222} ${FY + 230} L${FX - 222} ${FY + 230} Z`} fill={mezclar(paleta.ocre, tinta, 0.42)} stroke={tinta} strokeWidth={1.6} />
+          {Array.from({ length: 7 }, (_, k) => (
+            <path key={k} d={`M${FX - 230 + k * 3} ${FY + 30 + k * 30} C ${FX - 80} ${FY + 22 + k * 30}, ${FX + 80} ${FY + 40 + k * 30}, ${FX + 228 - k * 2} ${FY + 28 + k * 30}`}
+              fill="none" stroke={alfa(tinta, 0.22)} strokeWidth={1} />
+          ))}
+          <rect x={FX - 70} y={FY + 90} width={140} height={46} rx={3} fill={mezclar(paleta.papel, paleta.ocre, 0.25)} stroke={mezclar(paleta.ocre, tinta, 0.2)} strokeWidth={3} />
+          <text x={FX} y={FY + 121} textAnchor="middle" fontFamily={fuente.mono} fontSize={20} letterSpacing="0.2em" fill={tinta}>ARCHIVO</text>
+          <circle cx={FX} cy={FY + 172} r={10} fill={mezclar(paleta.ocre, '#ffffff', 0.2)} stroke={tinta} strokeWidth={1.4} />
+          {/* las fichas de pie, con sus pestañas; la que suelta un dato se levanta */}
+          {Array.from({ length: FICHAS }, (_, m) => {
+            const x = fichaX(m);
+            let alza = 0;
+            for (let i = m; i < N; i += FICHAS) {
+              const tl = tCaen + (i / N) * 3 - VUELO;
+              const d = t - tl;
+              if (d > -0.15 && d < 0.5) alza = Math.max(alza, Math.sin(clamp((d + 0.15) / 0.65) * Math.PI));
+            }
+            return (
+              <g key={m} transform={`translate(0 ${-34 * alza})`}>
+                <rect x={x - 22} y={FY - 150 + (m % 3) * 6} width={44} height={170} fill={mezclar(paleta.papel, '#ffffff', m % 2 ? 0.1 : 0.3)} stroke={alfa(tinta, 0.45)} strokeWidth={1} />
+                <rect x={x - 12 + ((m * 7) % 3) * 6} y={FY - 166 + (m % 3) * 6} width={18} height={18} rx={3} fill={m % 4 === 0 ? mezclar(paleta.rojo, paleta.papel, 0.45) : mezclar(paleta.ocre, paleta.papel, 0.4)} stroke={alfa(tinta, 0.4)} />
+                {[0, 1, 2, 3, 4].map((k) => <rect key={k} x={x - 15} y={FY - 126 + (m % 3) * 6 + k * 13} width={k === 4 ? 16 : 30} height={3} fill={alfa(tinta, 0.3)} />)}
+              </g>
+            );
+          })}
+          {/* el borde de adelante tapa la base de las fichas */}
+          <rect x={FX - 238} y={FY - 2} width={476} height={14} fill={mezclar(paleta.ocre, tinta, 0.3)} stroke={tinta} strokeWidth={1.4} />
+        </g>
+      ) : null}
+      {/* el dato en vuelo: de la ficha al papel milimetrado, en arco */}
+      {origen?.fichero && kFichero > 0 ? puntos.map((p, i) => {
+        const tl = tCaen + (i / N) * 3 - VUELO;
+        const kv = (t - tl) / VUELO;
+        if (kv <= 0 || kv >= 1) return null;
+        const e = 1 - Math.pow(1 - kv, 2);
+        const x0 = fichaX(i % FICHAS), y0 = FY - 170;
+        const x = mix(x0, X(p.u), e), y = mix(y0, Y(p.v), e) - arqueo(e, 160);
+        return <circle key={`v${i}`} cx={x} cy={y} r={6} fill={tinta} opacity={0.85} />;
+      }) : null}
+      {/* la página del cuadro: cada fila se enciende con su punto */}
+      {kCuadro > 0 && serie && origen?.cuadro ? (() => {
+        const X0 = 140, Y0 = 210, AN = 520, FILA = (G.y1 - Y0 - 120) / nS;
+        return (
+          <g opacity={kCuadro} transform={`translate(${(1 - kCuadro) * -120} 0) rotate(${-1.2 * kCuadro} ${X0} ${Y0})`}>
+            <rect x={X0 + 8} y={Y0 + 10} width={AN} height={G.y1 - Y0 + 20} fill={alfa(tinta, 0.15)} style={{ filter: 'blur(8px)' }} />
+            <rect x={X0} y={Y0} width={AN} height={G.y1 - Y0 + 20} fill={mezclar(paleta.papel, '#ffffff', 0.25)} stroke={alfa(tinta, 0.35)} />
+            <text x={X0 + AN / 2} y={Y0 + 46} textAnchor="middle" fontFamily={fuente.mono} fontSize={20} letterSpacing="0.16em" fill={tinta}>{origen.cuadro.titulo}</text>
+            <line x1={X0 + 40} x2={X0 + AN - 40} y1={Y0 + 66} y2={Y0 + 66} stroke={tinta} strokeWidth={1.4} />
+            <text x={X0 + 90} y={Y0 + 96} fontFamily={fuente.mono} fontSize={16} letterSpacing="0.14em" fill={alfa(tinta, 0.7)}>{origen.cuadro.columnas[0]}</text>
+            <text x={X0 + AN - 90} y={Y0 + 96} textAnchor="end" fontFamily={fuente.mono} fontSize={16} letterSpacing="0.14em" fill={alfa(tinta, 0.7)}>{origen.cuadro.columnas[1]}</text>
+            <line x1={X0 + 40} x2={X0 + AN - 40} y1={Y0 + 108} y2={Y0 + 108} stroke={tinta} strokeWidth={0.8} />
+            {serie.valores.map((v, j) => {
+              const y = Y0 + 136 + j * FILA;
+              const luz = tramo(t, tLuz + j * pasoLuz, 0.25, 'ligero');
+              const brillo = luz > 0 ? Math.max(0, 1 - (t - tLuz - j * pasoLuz) / 0.7) : 0;
+              return (
+                <g key={j}>
+                  {brillo > 0 ? <rect x={X0 + 60} y={y - FILA * 0.72} width={AN - 120} height={FILA * 0.95} fill={alfa(paleta.rojo, 0.14 * brillo)} /> : null}
+                  <text x={X0 + 90} y={y} fontFamily={fuente.mono} fontSize={19} fill={alfa(tinta, 0.45 + 0.5 * luz)}>{serie.etiquetas[j]}–{String(Number(serie.etiquetas[j]) + 9).slice(-2)}</text>
+                  <text x={X0 + AN - 90} y={y} textAnchor="end" fontFamily={fuente.mono} fontSize={19} fill={luz > 0 ? mezclar(tinta, paleta.rojo, 0.8 * brillo) : alfa(tinta, 0.45)}>{v.toFixed(1).replace('.', ',')}</text>
+                  <line x1={X0 + AN - 150} x2={X0 + AN - 150 + 64 * luz} y1={y + 6} y2={y + 6} stroke={paleta.rojo} strokeWidth={2} opacity={0.75 * luz} />
+                  {/* el hilo de la fila a su punto, que se apaga enseguida */}
+                  {brillo > 0 ? (
+                    <path d={`M${X0 + AN - 70} ${y - 6} C ${X0 + AN + 60} ${y - 6}, ${xS(j) - 80} ${yS(v)}, ${xS(j) - 12} ${yS(v)}`} fill="none" stroke={paleta.rojo}
+                      strokeWidth={1.4} strokeDasharray="5 6" opacity={0.6 * brillo} />
+                  ) : null}
+                </g>
+              );
+            })}
+          </g>
+        );
+      })() : null}
       {/* la serie: lo que midió, década por década */}
       {serie && viaje > 0 ? (
         <g>

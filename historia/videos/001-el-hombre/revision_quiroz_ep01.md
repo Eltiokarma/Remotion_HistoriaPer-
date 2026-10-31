@@ -189,3 +189,11 @@ mismo gobierno contra el que militó de joven: el historiador maduro le sacó la
 brújula o en el gancho. Y para el cierre del canal, el epílogo (p. 531): «Los jóvenes peruanos
 tienen el derecho a que se les enseñe el valor de las instituciones y los daños que la corrupción
 causa.»
+
+### Tercera vuelta (31-oct-2026)
+
+| Nota | Estado |
+|---|---|
+| Regresión: la mitad izquierda quieta | Ahora muestra de dónde salen los datos: un fichero de archivo del que salta cada punto (una ficha se levanta y el dato vuela en arco al papel milimetrado) y, con la serie real, la página de los cuadros A.4 y A.6, cuya fila se enciende con su punto (un hilo rojo la une un instante). Mientras la recta busca su lugar, el fichero queda quieto a propósito: el ojo va a la recta. |
+| Mapa de Lima | Lámina de atlas con marco doble y flecha del norte; el mar en líneas que siguen la costa; la cordillera en montañitas; `PERÚ` que se va al acercarse; `LIMA` junto a su punto; `Océano Pacífico`. |
+| Brújula de tiza | Dibujada a mano: círculos dobles que no cierran justo, marcas cada 10°, rosa de dos estrellas con un lado sombreado de costado, N/E/S/O escritos a mano, aguja con la mitad en tiza roja y polvo de lo borrado. |

@@ -161,7 +161,8 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
             aparece={entra(tPuntos)} tCaen={tCaen - tPuntos} busca={explica} residuos={!explica}
             tPendiente={tPendiente === undefined ? undefined : tPendiente - tPuntos}
             serie={props.serie && Number.isFinite(tSerie) ? { desde: tSerie - tPuntos, etiquetas: props.serie.etiquetas, valores: props.serie.valores, maximo: props.serie.maximo,
-              unidad: props.serie.unidad, banda: props.serie.banda, textoBanda: props.serie.texto_banda, fuente: props.serie.fuente } : undefined} />
+              unidad: props.serie.unidad, banda: props.serie.banda, textoBanda: props.serie.texto_banda, fuente: props.serie.fuente } : undefined}
+            origen={props.fichero || props.serie?.cuadro ? { fichero: props.fichero, cuadro: props.serie?.cuadro } : undefined} />
           {/* el título del método: la frase que se anota (DIRECCION_DE_VIDEO §2.4) */}
           {props.titulo_metodo ? (
             <div style={{ position: 'absolute', left: 0, right: 0, top: 70, textAlign: 'center', fontFamily: fuente.libro, fontStyle: 'italic', fontSize: 52,

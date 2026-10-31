@@ -185,7 +185,39 @@
           "lon": -77.04,
           "lat": -12.05,
           "ficha": "LIMA · 1956",
-          "dato": "≈ 1,4 MILLONES DE HABITANTES (ESTIMADO)"
+          "dato": "≈ 1,4 MILLONES DE HABITANTES (ESTIMADO)",
+          "nombre": "LIMA",
+          "mar": "Océano Pacífico",
+          "cordillera": [
+            [
+              -79.6,
+              -5.2
+            ],
+            [
+              -78.4,
+              -7.6
+            ],
+            [
+              -77.4,
+              -9.8
+            ],
+            [
+              -76.2,
+              -11.9
+            ],
+            [
+              -74.8,
+              -13.6
+            ],
+            [
+              -72.6,
+              -15.0
+            ],
+            [
+              -70.4,
+              -16.4
+            ]
+          ]
         }
       },
       "audio": {
@@ -509,8 +541,16 @@
             4
           ],
           "texto_banda": "PROMEDIO 1820–2000: ENTRE 3 Y 4 %",
-          "fuente": "QUIROZ, APÉNDICE, CUADROS A.4 Y A.6 · ESTIMADOS PRELIMINARES"
-        }
+          "fuente": "QUIROZ, APÉNDICE, CUADROS A.4 Y A.6 · ESTIMADOS PRELIMINARES",
+          "cuadro": {
+            "titulo": "CUADROS A.4 Y A.6",
+            "columnas": [
+              "DÉCADA",
+              "% DEL PBI"
+            ]
+          }
+        },
+        "fichero": true
       },
       "camara": [
         {
