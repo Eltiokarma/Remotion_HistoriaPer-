@@ -197,3 +197,10 @@ causa.»
 | Regresión: la mitad izquierda quieta | Ahora muestra de dónde salen los datos: un fichero de archivo del que salta cada punto (una ficha se levanta y el dato vuela en arco al papel milimetrado) y, con la serie real, la página de los cuadros A.4 y A.6, cuya fila se enciende con su punto (un hilo rojo la une un instante). Mientras la recta busca su lugar, el fichero queda quieto a propósito: el ojo va a la recta. |
 | Mapa de Lima | Lámina de atlas con marco doble y flecha del norte; el mar en líneas que siguen la costa; la cordillera en montañitas; `PERÚ` que se va al acercarse; `LIMA` junto a su punto; `Océano Pacífico`. |
 | Brújula de tiza | Dibujada a mano: círculos dobles que no cierran justo, marcas cada 10°, rosa de dos estrellas con un lado sombreado de costado, N/E/S/O escritos a mano, aguja con la mitad en tiza roja y polvo de lo borrado. |
+
+### Cuarta vuelta (31-oct-2026)
+
+| Nota | Estado |
+|---|---|
+| Por qué París (y entonces Nueva York) | Nueva frase en la voz (guion ESC5 y voz provisional): «Era la ciudad de Braudel, el de la larga duración. Ahí se habían formado sus propios profesores.» Retoma a Braudel de la pizarra. Los nombres van en pantalla, junto a París, no en la voz: `HERACLIO BONILLA` y `ALBERTO FLORES GALINDO` (sus profesores en la PUCP, prólogo pp. 15–16; los dos se formaron en París: fuentes en `fuentes.md`). La ruta a París llega entera y se borra cuando él se va a Nueva York. La escena s05 crece unos 8 s (el video, 5:54). **El director revisa la frase en el manuscrito.** |
+| Salto del barco al Estado | Ya no hay corte: la cámara sigue al barco (se acerca y lo lleva a la izquierda) mientras el grabado se funde con el dibujo del Estado, que se levanta a la derecha. El barco es el mismo punto todo el viaje. La flecha de la plata sale cuando la cámara llega. |

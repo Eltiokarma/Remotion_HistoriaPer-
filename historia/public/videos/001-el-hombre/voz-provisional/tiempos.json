@@ -1628,96 +1628,106 @@
   ]
  },
  "s05": {
-  "duracion": 95.94,
+  "duracion": 103.72,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 3.57,
+    "hasta": 3.56,
     "texto": "A comienzos de los ochenta hace algo poco común."
    },
    {
-    "desde": 4.02,
-    "hasta": 7.45,
+    "desde": 4.01,
+    "hasta": 7.3,
     "texto": "Buena parte de los historiadores peruanos miraba a París."
    },
    {
-    "desde": 8.7,
-    "hasta": 12.26,
+    "desde": 8.25,
+    "hasta": 12.16,
+    "texto": "Era la ciudad de Braudel, el de la larga duración."
+   },
+   {
+    "desde": 12.61,
+    "hasta": 15.56,
+    "texto": "Ahí se habían formado sus propios profesores."
+   },
+   {
+    "desde": 16.91,
+    "hasta": 20.4,
     "texto": "Él se va a Nueva York, a la Universidad de Columbia."
    },
    {
-    "desde": 14.51,
-    "hasta": 19.39,
+    "desde": 22.65,
+    "hasta": 27.5,
     "texto": "Allí, el historiador Herbert Klein se fija en él y le ofrece una beca."
    },
    {
-    "desde": 19.84,
-    "hasta": 25.76,
+    "desde": 27.95,
+    "hasta": 33.89,
     "texto": "Y aprende historia cuantitativa: pensar el pasado con números, no solo con discursos."
    },
    {
-    "desde": 27.21,
-    "hasta": 29.86,
+    "desde": 35.34,
+    "hasta": 37.93,
     "texto": "Una de sus herramientas se llama regresión."
    },
    {
-    "desde": 30.31,
-    "hasta": 35.08,
+    "desde": 38.38,
+    "hasta": 43.15,
     "texto": "Imagina muchos puntos desordenados: cada uno, un dato."
    },
    {
-    "desde": 35.53,
-    "hasta": 37.82,
+    "desde": 43.6,
+    "hasta": 45.88,
     "texto": "A simple vista, solo ruido."
    },
    {
-    "desde": 38.87,
-    "hasta": 42.99,
+    "desde": 46.93,
+    "hasta": 51.07,
     "texto": "La regresión busca la línea que mejor pasa entre todos."
    },
    {
-    "desde": 43.44,
-    "hasta": 46.43,
+    "desde": 51.52,
+    "hasta": 54.52,
     "texto": "Si hay una tendencia escondida, la muestra."
    },
    {
-    "desde": 46.88,
-    "hasta": 48.36,
+    "desde": 54.97,
+    "hasta": 56.48,
     "texto": "Y dice cuánto pesa."
    },
    {
-    "desde": 50.31,
-    "hasta": 55.09,
+    "desde": 58.43,
+    "hasta": 63.16,
     "texto": "Con lo que aprendió ahí, años después, le va a sacar la cuenta al Perú."
    },
    {
-    "desde": 57.54,
-    "hasta": 64.47,
+    "desde": 65.61,
+    "hasta": 72.42,
     "texto": "De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad."
    },
    {
-    "desde": 66.42,
-    "hasta": 73.06,
+    "desde": 74.37,
+    "hasta": 81.08,
     "texto": "Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la historia financiera del Perú."
    },
    {
-    "desde": 74.51,
-    "hasta": 76.49,
+    "desde": 82.53,
+    "hasta": 84.48,
     "texto": "Y sus ideas también se mueven."
    },
    {
-    "desde": 76.94,
-    "hasta": 84.94,
+    "desde": 84.93,
+    "hasta": 92.79,
     "texto": "De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades."
    },
    {
-    "desde": 86.39,
-    "hasta": 87.62,
+    "desde": 94.24,
+    "hasta": 95.44,
     "texto": "Cambió de ideas."
    },
    {
-    "desde": 88.07,
-    "hasta": 93.49,
+    "desde": 95.89,
+    "hasta": 101.27,
     "texto": "Y eso importa para lo que viene: la cuenta que sacó no es la de un partido."
    }
   ],
@@ -1747,739 +1757,807 @@
     "hace"
    ],
    [
-    2.44,
+    2.43,
     "algo"
    ],
    [
-    2.77,
+    2.76,
     "poco"
    ],
    [
-    3.11,
+    3.1,
     "común."
    ],
    [
-    4.02,
+    4.01,
     "Buena"
    ],
    [
-    4.38,
+    4.35,
     "parte"
    ],
    [
-    4.73,
+    4.69,
     "de"
    ],
    [
-    4.91,
+    4.86,
     "los"
    ],
    [
-    5.15,
+    5.09,
     "historiadores"
    ],
    [
-    5.97,
+    5.88,
     "peruanos"
    ],
    [
-    6.5,
+    6.39,
     "miraba"
    ],
    [
-    6.92,
+    6.79,
     "a"
    ],
    [
-    7.04,
+    6.9,
     "París."
    ],
    [
-    8.7,
-    "Él"
+    8.25,
+    "Era"
    ],
    [
-    8.9,
-    "se"
-   ],
-   [
-    9.1,
-    "va"
-   ],
-   [
-    9.3,
-    "a"
-   ],
-   [
-    9.44,
-    "Nueva"
-   ],
-   [
-    9.84,
-    "York,"
-   ],
-   [
-    10.25,
-    "a"
-   ],
-   [
-    10.38,
+    8.55,
     "la"
    ],
    [
-    10.58,
-    "Universidad"
+    8.79,
+    "ciudad"
+   ],
+   [
+    9.32,
+    "de"
+   ],
+   [
+    9.55,
+    "Braudel,"
+   ],
+   [
+    10.24,
+    "el"
+   ],
+   [
+    10.47,
+    "de"
+   ],
+   [
+    10.7,
+    "la"
+   ],
+   [
+    10.93,
+    "larga"
    ],
    [
     11.39,
-    "de"
+    "duración."
    ],
    [
-    11.59,
-    "Columbia."
+    12.61,
+    "Ahí"
    ],
    [
-    14.51,
-    "Allí,"
-   ],
-   [
-    14.93,
-    "el"
-   ],
-   [
-    15.13,
-    "historiador"
-   ],
-   [
-    15.96,
-    "Herbert"
-   ],
-   [
-    16.5,
-    "Klein"
-   ],
-   [
-    16.92,
+    12.87,
     "se"
    ],
    [
-    17.12,
-    "fija"
+    13.06,
+    "habían"
    ],
    [
-    17.47,
-    "en"
+    13.51,
+    "formado"
    ],
    [
-    17.67,
-    "él"
-   ],
-   [
-    17.88,
-    "y"
-   ],
-   [
-    18.02,
-    "le"
-   ],
-   [
-    18.22,
-    "ofrece"
-   ],
-   [
-    18.7,
-    "una"
-   ],
-   [
-    18.98,
-    "beca."
-   ],
-   [
-    19.84,
-    "Y"
-   ],
-   [
-    19.98,
-    "aprende"
-   ],
-   [
-    20.53,
-    "historia"
-   ],
-   [
-    21.15,
-    "cuantitativa:"
-   ],
-   [
-    22.11,
-    "pensar"
-   ],
-   [
-    22.59,
-    "el"
-   ],
-   [
-    22.8,
-    "pasado"
-   ],
-   [
-    23.28,
-    "con"
-   ],
-   [
-    23.56,
-    "números,"
-   ],
-   [
-    24.18,
-    "no"
-   ],
-   [
-    24.38,
-    "solo"
-   ],
-   [
-    24.73,
-    "con"
-   ],
-   [
-    25.0,
-    "discursos."
-   ],
-   [
-    27.21,
-    "Una"
-   ],
-   [
-    27.45,
-    "de"
-   ],
-   [
-    27.63,
+    14.02,
     "sus"
    ],
    [
-    27.87,
-    "herramientas"
+    14.28,
+    "propios"
    ],
    [
-    28.65,
+    14.79,
+    "profesores."
+   ],
+   [
+    16.91,
+    "Él"
+   ],
+   [
+    17.11,
     "se"
    ],
    [
-    28.83,
-    "llama"
-   ],
-   [
-    29.2,
-    "regresión."
-   ],
-   [
-    30.31,
-    "Imagina"
-   ],
-   [
-    31.0,
-    "muchos"
-   ],
-   [
-    31.61,
-    "puntos"
-   ],
-   [
-    32.22,
-    "desordenados:"
-   ],
-   [
-    33.43,
-    "cada"
-   ],
-   [
-    33.86,
-    "uno,"
-   ],
-   [
-    34.3,
-    "un"
-   ],
-   [
-    34.56,
-    "dato."
-   ],
-   [
-    35.53,
-    "A"
-   ],
-   [
-    35.69,
-    "simple"
-   ],
-   [
-    36.26,
-    "vista,"
-   ],
-   [
-    36.84,
-    "solo"
-   ],
-   [
-    37.24,
-    "ruido."
-   ],
-   [
-    38.87,
-    "La"
-   ],
-   [
-    39.09,
-    "regresión"
-   ],
-   [
-    39.82,
-    "busca"
-   ],
-   [
-    40.26,
-    "la"
-   ],
-   [
-    40.49,
-    "línea"
-   ],
-   [
-    40.93,
-    "que"
-   ],
-   [
-    41.22,
-    "mejor"
-   ],
-   [
-    41.66,
-    "pasa"
-   ],
-   [
-    42.03,
-    "entre"
-   ],
-   [
-    42.47,
-    "todos."
-   ],
-   [
-    43.44,
-    "Si"
-   ],
-   [
-    43.64,
-    "hay"
-   ],
-   [
-    43.91,
-    "una"
-   ],
-   [
-    44.19,
-    "tendencia"
-   ],
-   [
-    44.87,
-    "escondida,"
-   ],
-   [
-    45.62,
-    "la"
-   ],
-   [
-    45.82,
-    "muestra."
-   ],
-   [
-    46.88,
-    "Y"
-   ],
-   [
-    47.03,
-    "dice"
-   ],
-   [
-    47.4,
-    "cuánto"
-   ],
-   [
-    47.92,
-    "pesa."
-   ],
-   [
-    50.31,
-    "Con"
-   ],
-   [
-    50.57,
-    "lo"
-   ],
-   [
-    50.77,
-    "que"
-   ],
-   [
-    51.04,
-    "aprendió"
-   ],
-   [
-    51.64,
-    "ahí,"
-   ],
-   [
-    51.97,
-    "años"
-   ],
-   [
-    52.3,
-    "después,"
-   ],
-   [
-    52.9,
-    "le"
-   ],
-   [
-    53.1,
+    17.31,
     "va"
    ],
    [
-    53.3,
+    17.5,
     "a"
    ],
    [
-    53.43,
-    "sacar"
+    17.63,
+    "Nueva"
    ],
    [
-    53.83,
-    "la"
+    18.03,
+    "York,"
    ],
    [
-    54.03,
-    "cuenta"
-   ],
-   [
-    54.49,
-    "al"
-   ],
-   [
-    54.69,
-    "Perú."
-   ],
-   [
-    57.54,
-    "De"
-   ],
-   [
-    57.74,
-    "otro"
-   ],
-   [
-    58.06,
-    "profesor,"
-   ],
-   [
-    58.71,
-    "Kenneth"
-   ],
-   [
-    59.23,
-    "Maxwell,"
-   ],
-   [
-    59.81,
-    "aprende"
-   ],
-   [
-    60.33,
-    "que"
-   ],
-   [
-    60.59,
-    "un"
-   ],
-   [
-    60.78,
-    "buen"
-   ],
-   [
-    61.1,
-    "historiador"
-   ],
-   [
-    61.88,
-    "combina"
-   ],
-   [
-    62.4,
-    "la"
-   ],
-   [
-    62.59,
-    "profundidad"
-   ],
-   [
-    63.37,
-    "con"
-   ],
-   [
-    63.63,
-    "la"
-   ],
-   [
-    63.82,
-    "claridad."
-   ],
-   [
-    66.42,
-    "Con"
-   ],
-   [
-    66.68,
-    "los"
-   ],
-   [
-    66.94,
-    "años"
-   ],
-   [
-    67.27,
-    "se"
-   ],
-   [
-    67.46,
-    "vuelve,"
-   ],
-   [
-    67.98,
-    "en"
-   ],
-   [
-    68.18,
-    "palabras"
-   ],
-   [
-    68.77,
-    "de"
-   ],
-   [
-    68.96,
-    "Cueto,"
-   ],
-   [
-    69.42,
-    "la"
-   ],
-   [
-    69.61,
-    "máxima"
-   ],
-   [
-    70.07,
-    "autoridad"
-   ],
-   [
-    70.72,
-    "en"
-   ],
-   [
-    70.91,
-    "la"
-   ],
-   [
-    71.11,
-    "historia"
-   ],
-   [
-    71.7,
-    "financiera"
-   ],
-   [
-    72.41,
-    "del"
-   ],
-   [
-    72.67,
-    "Perú."
-   ],
-   [
-    74.51,
-    "Y"
-   ],
-   [
-    74.64,
-    "sus"
-   ],
-   [
-    74.9,
-    "ideas"
-   ],
-   [
-    75.28,
-    "también"
-   ],
-   [
-    75.79,
-    "se"
-   ],
-   [
-    75.98,
-    "mueven."
-   ],
-   [
-    76.94,
-    "De"
-   ],
-   [
-    77.14,
-    "aquel"
-   ],
-   [
-    77.55,
-    "joven"
-   ],
-   [
-    77.95,
-    "trotskista"
-   ],
-   [
-    78.7,
-    "pasa"
-   ],
-   [
-    79.04,
+    18.43,
     "a"
    ],
    [
-    79.17,
-    "una"
+    18.56,
+    "la"
    ],
    [
-    79.45,
-    "postura"
+    18.76,
+    "Universidad"
    ],
    [
-    79.99,
-    "liberal,"
-   ],
-   [
-    80.6,
-    "convencido"
-   ],
-   [
-    81.34,
+    19.55,
     "de"
    ],
    [
-    81.55,
-    "que"
+    19.74,
+    "Columbia."
    ],
    [
-    81.82,
+    22.65,
+    "Allí,"
+   ],
+   [
+    23.06,
     "el"
    ],
    [
-    82.02,
-    "país"
+    23.27,
+    "historiador"
    ],
    [
-    82.36,
-    "necesitaba"
+    24.09,
+    "Herbert"
    ],
    [
-    83.11,
-    "igualdad"
+    24.63,
+    "Klein"
    ],
    [
-    83.72,
-    "de"
+    25.04,
+    "se"
    ],
    [
-    83.92,
-    "oportunidades."
+    25.25,
+    "fija"
    ],
    [
-    86.39,
-    "Cambió"
+    25.59,
+    "en"
    ],
    [
-    86.89,
-    "de"
+    25.79,
+    "él"
    ],
    [
-    87.11,
-    "ideas."
+    26.0,
+    "y"
    ],
    [
-    88.07,
+    26.13,
+    "le"
+   ],
+   [
+    26.34,
+    "ofrece"
+   ],
+   [
+    26.81,
+    "una"
+   ],
+   [
+    27.09,
+    "beca."
+   ],
+   [
+    27.95,
     "Y"
    ],
    [
-    88.21,
-    "eso"
+    28.08,
+    "aprende"
    ],
    [
-    88.49,
-    "importa"
+    28.64,
+    "historia"
    ],
    [
-    89.07,
-    "para"
+    29.26,
+    "cuantitativa:"
    ],
    [
-    89.42,
-    "lo"
+    30.23,
+    "pensar"
    ],
    [
-    89.64,
-    "que"
+    30.71,
+    "el"
    ],
    [
-    89.92,
-    "viene:"
+    30.92,
+    "pasado"
    ],
    [
-    90.42,
-    "la"
+    31.4,
+    "con"
    ],
    [
-    90.64,
-    "cuenta"
+    31.68,
+    "números,"
    ],
    [
-    91.13,
-    "que"
-   ],
-   [
-    91.42,
-    "sacó"
-   ],
-   [
-    91.78,
+    32.3,
     "no"
    ],
    [
-    91.99,
-    "es"
+    32.51,
+    "solo"
    ],
    [
-    92.2,
-    "la"
+    32.85,
+    "con"
    ],
    [
-    92.42,
+    33.13,
+    "discursos."
+   ],
+   [
+    35.34,
+    "Una"
+   ],
+   [
+    35.58,
     "de"
    ],
    [
-    92.63,
+    35.75,
+    "sus"
+   ],
+   [
+    35.99,
+    "herramientas"
+   ],
+   [
+    36.75,
+    "se"
+   ],
+   [
+    36.93,
+    "llama"
+   ],
+   [
+    37.28,
+    "regresión."
+   ],
+   [
+    38.38,
+    "Imagina"
+   ],
+   [
+    39.07,
+    "muchos"
+   ],
+   [
+    39.68,
+    "puntos"
+   ],
+   [
+    40.29,
+    "desordenados:"
+   ],
+   [
+    41.5,
+    "cada"
+   ],
+   [
+    41.94,
+    "uno,"
+   ],
+   [
+    42.37,
     "un"
    ],
    [
-    92.85,
+    42.63,
+    "dato."
+   ],
+   [
+    43.6,
+    "A"
+   ],
+   [
+    43.76,
+    "simple"
+   ],
+   [
+    44.33,
+    "vista,"
+   ],
+   [
+    44.9,
+    "solo"
+   ],
+   [
+    45.31,
+    "ruido."
+   ],
+   [
+    46.93,
+    "La"
+   ],
+   [
+    47.15,
+    "regresión"
+   ],
+   [
+    47.89,
+    "busca"
+   ],
+   [
+    48.33,
+    "la"
+   ],
+   [
+    48.55,
+    "línea"
+   ],
+   [
+    49.0,
+    "que"
+   ],
+   [
+    49.29,
+    "mejor"
+   ],
+   [
+    49.74,
+    "pasa"
+   ],
+   [
+    50.11,
+    "entre"
+   ],
+   [
+    50.55,
+    "todos."
+   ],
+   [
+    51.52,
+    "Si"
+   ],
+   [
+    51.73,
+    "hay"
+   ],
+   [
+    52.0,
+    "una"
+   ],
+   [
+    52.27,
+    "tendencia"
+   ],
+   [
+    52.95,
+    "escondida,"
+   ],
+   [
+    53.7,
+    "la"
+   ],
+   [
+    53.9,
+    "muestra."
+   ],
+   [
+    54.97,
+    "Y"
+   ],
+   [
+    55.12,
+    "dice"
+   ],
+   [
+    55.49,
+    "cuánto"
+   ],
+   [
+    56.02,
+    "pesa."
+   ],
+   [
+    58.43,
+    "Con"
+   ],
+   [
+    58.69,
+    "lo"
+   ],
+   [
+    58.89,
+    "que"
+   ],
+   [
+    59.15,
+    "aprendió"
+   ],
+   [
+    59.74,
+    "ahí,"
+   ],
+   [
+    60.07,
+    "años"
+   ],
+   [
+    60.4,
+    "después,"
+   ],
+   [
+    60.99,
+    "le"
+   ],
+   [
+    61.19,
+    "va"
+   ],
+   [
+    61.39,
+    "a"
+   ],
+   [
+    61.52,
+    "sacar"
+   ],
+   [
+    61.91,
+    "la"
+   ],
+   [
+    62.11,
+    "cuenta"
+   ],
+   [
+    62.57,
+    "al"
+   ],
+   [
+    62.77,
+    "Perú."
+   ],
+   [
+    65.61,
+    "De"
+   ],
+   [
+    65.8,
+    "otro"
+   ],
+   [
+    66.12,
+    "profesor,"
+   ],
+   [
+    66.76,
+    "Kenneth"
+   ],
+   [
+    67.27,
+    "Maxwell,"
+   ],
+   [
+    67.84,
+    "aprende"
+   ],
+   [
+    68.35,
+    "que"
+   ],
+   [
+    68.6,
+    "un"
+   ],
+   [
+    68.79,
+    "buen"
+   ],
+   [
+    69.11,
+    "historiador"
+   ],
+   [
+    69.87,
+    "combina"
+   ],
+   [
+    70.38,
+    "la"
+   ],
+   [
+    70.57,
+    "profundidad"
+   ],
+   [
+    71.33,
+    "con"
+   ],
+   [
+    71.59,
+    "la"
+   ],
+   [
+    71.78,
+    "claridad."
+   ],
+   [
+    74.37,
+    "Con"
+   ],
+   [
+    74.63,
+    "los"
+   ],
+   [
+    74.89,
+    "años"
+   ],
+   [
+    75.22,
+    "se"
+   ],
+   [
+    75.42,
+    "vuelve,"
+   ],
+   [
+    75.94,
+    "en"
+   ],
+   [
+    76.14,
+    "palabras"
+   ],
+   [
+    76.73,
+    "de"
+   ],
+   [
+    76.93,
+    "Cueto,"
+   ],
+   [
+    77.39,
+    "la"
+   ],
+   [
+    77.59,
+    "máxima"
+   ],
+   [
+    78.05,
+    "autoridad"
+   ],
+   [
+    78.71,
+    "en"
+   ],
+   [
+    78.91,
+    "la"
+   ],
+   [
+    79.1,
+    "historia"
+   ],
+   [
+    79.69,
+    "financiera"
+   ],
+   [
+    80.42,
+    "del"
+   ],
+   [
+    80.68,
+    "Perú."
+   ],
+   [
+    82.53,
+    "Y"
+   ],
+   [
+    82.65,
+    "sus"
+   ],
+   [
+    82.9,
+    "ideas"
+   ],
+   [
+    83.28,
+    "también"
+   ],
+   [
+    83.78,
+    "se"
+   ],
+   [
+    83.97,
+    "mueven."
+   ],
+   [
+    84.93,
+    "De"
+   ],
+   [
+    85.13,
+    "aquel"
+   ],
+   [
+    85.53,
+    "joven"
+   ],
+   [
+    85.93,
+    "trotskista"
+   ],
+   [
+    86.66,
+    "pasa"
+   ],
+   [
+    86.99,
+    "a"
+   ],
+   [
+    87.12,
+    "una"
+   ],
+   [
+    87.39,
+    "postura"
+   ],
+   [
+    87.92,
+    "liberal,"
+   ],
+   [
+    88.52,
+    "convencido"
+   ],
+   [
+    89.26,
+    "de"
+   ],
+   [
+    89.46,
+    "que"
+   ],
+   [
+    89.72,
+    "el"
+   ],
+   [
+    89.92,
+    "país"
+   ],
+   [
+    90.26,
+    "necesitaba"
+   ],
+   [
+    90.99,
+    "igualdad"
+   ],
+   [
+    91.59,
+    "de"
+   ],
+   [
+    91.79,
+    "oportunidades."
+   ],
+   [
+    94.24,
+    "Cambió"
+   ],
+   [
+    94.73,
+    "de"
+   ],
+   [
+    94.95,
+    "ideas."
+   ],
+   [
+    95.89,
+    "Y"
+   ],
+   [
+    96.04,
+    "eso"
+   ],
+   [
+    96.32,
+    "importa"
+   ],
+   [
+    96.88,
+    "para"
+   ],
+   [
+    97.24,
+    "lo"
+   ],
+   [
+    97.45,
+    "que"
+   ],
+   [
+    97.73,
+    "viene:"
+   ],
+   [
+    98.23,
+    "la"
+   ],
+   [
+    98.44,
+    "cuenta"
+   ],
+   [
+    98.94,
+    "que"
+   ],
+   [
+    99.22,
+    "sacó"
+   ],
+   [
+    99.57,
+    "no"
+   ],
+   [
+    99.78,
+    "es"
+   ],
+   [
+    100.0,
+    "la"
+   ],
+   [
+    100.21,
+    "de"
+   ],
+   [
+    100.42,
+    "un"
+   ],
+   [
+    100.63,
     "partido."
    ]
   ]

@@ -107,7 +107,7 @@ Quiroz se quedó con eso. Aprendió a apreciar lo que persiste: las estructuras 
 ## ESC 5 — Aprender a medir
 
 **VO:**
-A comienzos de los ochenta hace algo poco común. Buena parte de los historiadores peruanos miraba a París. [PAUSA 0,8s] Él se va a Nueva York, a la Universidad de Columbia. [PAUSA 1,8s: el viaje]
+A comienzos de los ochenta hace algo poco común. Buena parte de los historiadores peruanos miraba a París. [PAUSA 0,5s] Era la ciudad de Braudel, el de la larga duración. Ahí se habían formado sus propios profesores. [PAUSA 0,9s] Él se va a Nueva York, a la Universidad de Columbia. [PAUSA 1,8s: el viaje]
 
 Allí, el historiador Herbert Klein se fija en él y le ofrece una beca. Y aprende historia cuantitativa: pensar el pasado con números, no solo con discursos. [PAUSA 1s]
 

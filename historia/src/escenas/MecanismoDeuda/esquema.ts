@@ -38,6 +38,11 @@ export const esquema = z.object({
   hojear: z.object({ encabezado: z.string() }).optional(),
   /** Del Estado a los vales, la cámara hace un paneo (con una flecha que sigue la plata) en vez de cortar (§2.11). */
   paneo: z.boolean().default(false),
+  /**
+   * De las islas al Estado sin corte: la cámara sigue al barco (se acerca y lo lleva a la izquierda)
+   * mientras el grabado se funde con el dibujo del Estado (DIRECCION_DE_VIDEO §2.11).
+   */
+  sigue_barco: z.boolean().default(false),
   /** La pregunta que acusa, escrita fuerte con el beat `pregunta` (§2.14). */
   pregunta: z.string().optional(),
 });

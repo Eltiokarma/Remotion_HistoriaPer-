@@ -403,7 +403,7 @@
       "id": "s05",
       "seccion": "método",
       "componente": "AprenderAMedir",
-      "duracion_s": 95.94,
+      "duracion_s": 103.72,
       "cola_s": 1.0,
       "intensidad": 2,
       "cambio": "de un historiador de discursos a uno que mide, y que cambió de ideas",
@@ -412,28 +412,29 @@
       "beats": {
         "mapa": 0.2,
         "paris": 4.4,
-        "duda": 7.2,
-        "sale": 8.7,
-        "llega": 12.3,
-        "abre": 12.9,
-        "ficha": 14.5,
-        "puntos": 21.0,
-        "discursos": 25.0,
-        "caen": 30.3,
-        "recta": 39.1,
-        "pendiente": 47.9,
-        "balanza": 57.6,
-        "profundidad": 62.4,
-        "claridad": 63.7,
-        "estante": 66.4,
-        "temas": 69.5,
-        "brujula": 74.5,
-        "giro": 78.7,
-        "regresion": 29.2,
-        "izquierda": 76.9,
-        "tiza": 86.4,
-        "frase": 90.4,
-        "serie": 50.3
+        "duda": 15.71,
+        "sale": 16.91,
+        "llega": 20.51,
+        "abre": 21.11,
+        "ficha": 22.64,
+        "puntos": 29.11,
+        "discursos": 33.11,
+        "caen": 38.37,
+        "recta": 47.16,
+        "pendiente": 55.99,
+        "balanza": 65.67,
+        "profundidad": 70.47,
+        "claridad": 71.77,
+        "estante": 74.35,
+        "temas": 77.45,
+        "brujula": 82.52,
+        "giro": 86.69,
+        "regresion": 37.27,
+        "izquierda": 84.89,
+        "tiza": 94.25,
+        "frase": 98.22,
+        "serie": 58.42,
+        "paris_notas": 12.6
       },
       "props": {
         "origen": {
@@ -550,7 +551,12 @@
             ]
           }
         },
-        "fichero": true
+        "fichero": true,
+        "tentacion_notas": [
+          "SUS PROFESORES EN LA PUCP",
+          "HERACLIO BONILLA",
+          "ALBERTO FLORES GALINDO"
+        ]
       },
       "camara": [
         {
@@ -628,7 +634,8 @@
           "encabezado": "Siglo XIX"
         },
         "paneo": true,
-        "pregunta": "¿A dónde fue a parar esa plata?"
+        "pregunta": "¿A dónde fue a parar esa plata?",
+        "sigue_barco": true
       },
       "audio": {
         "musica": {
@@ -655,6 +662,11 @@
           "beat": "hoja_zoom",
           "movimiento": "entra a la ilustración de la página hasta llenar la pantalla",
           "motivo": "«el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)"
+        },
+        {
+          "beat": "flecha",
+          "movimiento": "sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha",
+          "motivo": "«Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)"
         },
         {
           "beat": "vales",

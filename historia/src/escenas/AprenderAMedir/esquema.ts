@@ -12,6 +12,11 @@ export const esquema = z.object({
   origen: lugar,
   /** El destino que todos soñaban: la ruta llega a medias, duda y se borra. */
   tentacion: lugar,
+  /**
+   * Por qué todos miraban ahí: renglones que se escriben junto a la tentación (con el beat
+   * `paris_notas`); con esto, la ruta llega entera antes de borrarse.
+   */
+  tentacion_notas: z.array(z.string()).optional(),
   /** A donde fue de verdad. */
   destino: lugar,
   /** Distancia en línea recta del origen al destino, en km (el contador del viaje; sin ella, no hay contador). */
@@ -64,6 +69,7 @@ export const beats = {
   mapa: 'aparece el mapa',
   paris: 'sale la ruta hacia la tentación',
   duda: 'la ruta se detiene, duda y se borra',
+  paris_notas: '(con tentacion_notas) se escriben los renglones junto a la tentación',
   sale: 'la cámara retrocede apenas y se lanza: sigue la ruta hacia el destino (se encienden los paralelos al cruzarlos)',
   llega: 'la ruta llega: sello y campana',
   abre: 'la cámara se abre hasta ver la ruta entera, y se asienta',

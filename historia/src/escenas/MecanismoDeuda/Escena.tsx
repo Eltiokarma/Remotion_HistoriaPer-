@@ -6,7 +6,7 @@ import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { EdificioEstado } from '../../components/graficos/EdificioEstado';
 import { ILUSTRACION, LibroHojeable, tiemposHojas } from '../../components/graficos/LibroHojeable';
-import { Barco, GrabadoGuanero } from '../../components/graficos/GrabadoGuanero';
+import { BARCO_ANCLADO, Barco, GrabadoGuanero } from '../../components/graficos/GrabadoGuanero';
 import { Pluma } from '../../components/graficos/Pluma';
 import { PortadaLibro } from '../../components/graficos/PortadaLibro';
 import { SelloFecha } from '../../components/graficos/Sello';
@@ -68,6 +68,20 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const tPregunta = props.pregunta ? beat(b, 'pregunta', Infinity) : Infinity;
   // del Estado a los vales: paneo a la izquierda
   const pan = props.paneo ? tramo(t, tVales - 0.7, 1.6, 'pesado') : 0;
+  // de las islas al Estado: la cámara sigue al barco. El barco del grabado y el del dibujo del Estado
+  // son el mismo punto todo el viaje (se acerca y se corre a la izquierda); lo demás se funde.
+  // arranca un poco antes del beat (en «el guano») y llega antes de que la plata salga hacia los vales
+  const DUR_SIGUE = 2.5, tSigue = tFlecha - 0.6;
+  const sigue = props.sigue_barco ? tramo(t, tSigue, DUR_SIGUE, 'solemne') : 1;
+  const enViaje = props.sigue_barco && t >= tSigue && sigue < 1;
+  const BARCO2 = { x: 430, y: 742, escala: 1.25 };
+  const S_VIAJE = BARCO2.escala / BARCO_ANCLADO.escala;
+  const vx = mix(BARCO_ANCLADO.x, BARCO2.x, sigue), vy = mix(BARCO_ANCLADO.y, BARCO2.y, sigue), vs = Math.pow(S_VIAJE, sigue);
+  const vistaGrabado = `translate(${vx}px, ${vy}px) scale(${vs}) translate(${-BARCO_ANCLADO.x}px, ${-BARCO_ANCLADO.y}px)`;
+  const vistaEstado = `translate(${vx}px, ${vy}px) scale(${vs / S_VIAJE}) translate(${-BARCO2.x}px, ${-BARCO2.y}px)`;
+  const funde = props.sigue_barco ? tramo(t, tFlecha, 1.3, 'natural') : 1;
+  // la flecha de la plata sale cuando la cámara está llegando
+  const tFlechaSale = props.sigue_barco ? tSigue + DUR_SIGUE - 0.4 : tFlecha + 0.3;
   const tinta = mezclar(pal.fondo, pal.rojo, 0.06);
 
   // fases (cortes secos o fundidos cortos según el cambio de idea)
@@ -80,7 +94,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   // la misma flecha, del Estado hacia los vales (a la izquierda, fuera de cuadro hasta que la cámara llega)
   const FLECHA_VALES = 'M1320 300 C 900 -60, -700 -60, -1360 330';
   const largoFlecha = getLength(FLECHA);
-  const kFlecha = tramo(t, tFlecha + 0.3, 1.4, 'pesado');
+  const kFlecha = tramo(t, tFlechaSale, props.sigue_barco ? 1.0 : 1.4, 'pesado');
   // —— vale en primer plano: monto que sube y pluma que marca
   const kInfl = tramo(t, tInflado, DUR_INFLADO, 'tenso');
   const monto = mix(props.vale.desde, props.vale.hasta, kInfl);
@@ -101,13 +115,13 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
           </LibroHojeable>
         </AbsoluteFill>
       ) : null}
-      {fase === 1 && (!conLibro || zoomK >= 1) ? (
+      {(fase === 1 || enViaje) && (!conLibro || zoomK >= 1) ? (
         <Papel color={pal.papel} envejecido={0.3}>
-          <AbsoluteFill>
+          <AbsoluteFill style={enViaje ? { transformOrigin: '0 0', transform: vistaGrabado } : undefined}>
             <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-g`} anclado={conLibro} carga={t >= tSacos ? t - tSacos : undefined} />
           </AbsoluteFill>
           {props.ficha ? (
-            <div style={{ position: 'absolute', left: 150, top: 40 }}>
+            <div style={{ position: 'absolute', left: 150, top: 40, opacity: enViaje ? 1 - funde : 1 }}>
               <Ficha texto={props.ficha} t={t - (conLibro ? tZoom + 2.2 : tIslas) - 0.4} color={pal.fondo} acento={pal.rojo} size={24} />
             </div>
           ) : null}
@@ -118,7 +132,9 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       <AbsoluteFill style={{ transform: props.paneo ? `translateX(${1920 * pan}px)` : undefined }}>
       {/* 2: la plata del guano va del barco al Estado */}
       {fase === 2 || (enPaneo && fase === 3) ? (
+        <AbsoluteFill style={{ opacity: enViaje ? funde : 1 }}>
         <Papel color={pal.papel} envejecido={0.3}>
+          <AbsoluteFill style={enViaje ? { transformOrigin: '0 0', transform: vistaEstado } : undefined}>
           <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
             <defs>
               <pattern id={`${escena.id}-b-rayado`} width={5} height={5} patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
@@ -153,9 +169,11 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             {kFlecha > 0.98 ? <path d="M1240 600 l -26 -10 M1240 600 l 2 -28" stroke={pal.fondo} strokeWidth={3} strokeLinecap="round" /> : null}
           </svg>
           <div style={{ position: 'absolute', left: 1040, top: 270 }}>
-            <EdificioEstado paleta={pal} id={`${escena.id}-e1`} rotulo={props.estado} width={760} dibujo={tramo(t, tFlecha - 0.2, 1.2, 'pesado')} />
+            <EdificioEstado paleta={pal} id={`${escena.id}-e1`} rotulo={props.estado} width={760} dibujo={tramo(t, props.sigue_barco ? tFlecha + 0.2 : tFlecha - 0.2, props.sigue_barco ? 1.6 : 1.2, 'pesado')} />
           </div>
+          </AbsoluteFill>
         </Papel>
+        </AbsoluteFill>
       ) : null}
 
       {/* con paneo, una flecha sale del Estado y lleva la plata hacia los vales, a la izquierda */}

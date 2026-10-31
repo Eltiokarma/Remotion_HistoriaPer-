@@ -45,7 +45,10 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const noche = mezclar(pal.fondo, '#000000', 0.3);
 
   // —— el mapa: la ruta a la tentación llega a medias, duda, se borra
-  const hacia = tramo(t, tParis, tDuda - tParis, 'natural') * 0.62;
+  // con notas, la ruta llega entera (era el camino de los demás) y se borra cuando él decide
+  const conNotas = !!props.tentacion_notas?.length;
+  const tNotas = conNotas ? T('paris_notas', tParis + 2) : Infinity;
+  const hacia = conNotas ? tramo(t, tParis, 1.8, 'natural') : tramo(t, tParis, tDuda - tParis, 'natural') * 0.62;
   const duda = 0.015 * asienta(t, tDuda, 1, 18, 4) * (t < tDuda + 0.6 ? 1 : 0);
   const borra = tramo(t, tDuda + 0.6, 0.6, 'natural');
   const kTentacion = Math.max(0, (hacia + duda) * (1 - borra));
@@ -131,8 +134,24 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
           <Luz color={pal.ocre} x={40} y={40} radio={70} intensidad={0.08} />
           <AbsoluteFill style={{ transformOrigin: '0 0', transform: camara }}>
             <Mapa paleta={pal} id={`${escena.id}-mapa`} origen={props.origen} destinos={[props.tentacion, props.destino]} encuadre={props.encuadre}
-              rutas={[kTentacion, k]} llegadas={[t > tParis ? mix(0.5, 0.18, borra) : 0, llegaDestino]}
-              adelante={[0, anuncia]} faro={[0, anuncia * mix(0.35, 1, k)]} paralelos={paralelos} t={t} />
+              rutas={[kTentacion, k]} llegadas={[t > tParis ? mix(conNotas ? mix(0.5, 1, hacia) : 0.5, 0.18, borra) : 0, llegaDestino]}
+              adelante={[0, anuncia]} faro={[conNotas ? 0.6 * hacia * (1 - borra) : 0, anuncia * mix(0.35, 1, k)]} paralelos={paralelos} t={t} />
+            {/* por qué todos miraban a París: se escribe junto a la ciudad y se va cuando él decide */}
+            {conNotas ? (() => {
+              const q = ruta.pr([props.tentacion.lon, props.tentacion.lat]) ?? [0, 0];
+              return (
+                <div style={{ position: 'absolute', left: q[0] - 560, top: q[1] + 46, width: 540, textAlign: 'right', opacity: 1 - borra }}>
+                  {props.tentacion_notas!.map((n, i) => {
+                    // el primer renglón dice quiénes; los demás, los nombres (lo que la voz no dice)
+                    const ki = tramo(t, tNotas + i * 0.7, 0.7, 'natural');
+                    return (
+                      <div key={i} style={{ fontFamily: fuente.mono, fontSize: i === 0 ? 20 : 26, letterSpacing: '0.16em', marginTop: i === 0 ? 0 : 10,
+                        color: i === 0 ? alfa(pal.papel, 0.65) : pal.papel, opacity: ki, transform: `translateY(${8 * (1 - ki)}px)` }}>{n}</div>
+                    );
+                  })}
+                </div>
+              );
+            })() : null}
           </AbsoluteFill>
           {/* viñeta: los bordes se oscurecen y el ojo va al centro, donde está la punta del viaje */}
           <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 55%, ${alfa('#000000', 0.45)} 100%)` }} />

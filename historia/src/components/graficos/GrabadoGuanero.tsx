@@ -20,6 +20,8 @@ type Props = {
 };
 
 const X0 = 150, X1 = 1770, Y0 = 100, Y1 = 940, HORIZONTE = 585;
+/** Dónde queda el barco anclado (para que otra escena lo tome desde ahí) y a qué escala se dibuja. */
+export const BARCO_ANCLADO = { x: 1650, y: HORIZONTE - 14, escala: 0.78 } as const;
 
 type Isla = { x: number; w: number; h: number; monte: number; semilla: number };
 const ISLAS: Isla[] = [
