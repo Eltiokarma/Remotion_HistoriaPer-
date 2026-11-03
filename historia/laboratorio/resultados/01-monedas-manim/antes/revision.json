@@ -1,0 +1,20 @@
+{
+  "video": "out/01-monedas-manim/final.mp4",
+  "cuadros": 150,
+  "cambio_medio": 0.236,
+  "cambio_maximo": {
+    "cuadro": 60,
+    "valor": 4.27
+  },
+  "parpadeos": [],
+  "cuadros_vacios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "cambio_medio_ultimo_segundo": 0.003,
+  "metodo": "gris 320×180; parpadeo = salto > 4 y > 4× la diferencia entre sus vecinos; vacío = desviación < 2"
+}

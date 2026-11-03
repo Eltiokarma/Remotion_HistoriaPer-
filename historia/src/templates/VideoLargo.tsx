@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { AbsoluteFill, Sequence } from 'remotion';
 import { Atmosfera } from '../components/atmosfera/Atmosfera';
+import { PrecargaTexturas } from '../components/atmosfera/PrecargaTexturas';
 import { MezclaEscena } from '../components/audio/MezclaEscena';
 import { framesSinVoz } from '../direction/voz';
 import { COMPONENTES } from '../escenas';
@@ -51,6 +52,7 @@ export const VideoLargo: React.FC<PropsVideo> = ({ video, resueltas, soloEscena 
         );
       })}
       <Atmosfera grano={video.atmosfera?.grano ?? 0.1} vineta={video.atmosfera?.vineta ?? 0.45} />
+      <PrecargaTexturas />
     </AbsoluteFill>
   );
 };

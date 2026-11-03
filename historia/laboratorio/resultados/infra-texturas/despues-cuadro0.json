@@ -1,0 +1,23 @@
+{
+  "entrada": "src/index.ts",
+  "filas": [
+    {
+      "composicion": "v001-el-hombre-s00",
+      "cuadro": 0,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    },
+    {
+      "composicion": "v001-el-hombre-s02",
+      "cuadro": 0,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    },
+    {
+      "composicion": "v001-el-hombre-s05",
+      "cuadro": 0,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    }
+  ]
+}

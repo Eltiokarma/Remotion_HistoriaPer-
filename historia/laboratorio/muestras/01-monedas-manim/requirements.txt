@@ -1,0 +1,5 @@
+av==19.0.2
+manim==0.22.1
+ManimPango==0.7.1
+numpy==2.5.4
+pycairo==1.29.2

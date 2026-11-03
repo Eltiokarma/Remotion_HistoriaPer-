@@ -111,7 +111,8 @@ historia/
 ├── public/
 │   ├── compartido/               ← fuentes, texturas, efectos y ambientes de todos los videos
 │   └── videos/NNN-slug/          ← música, voz (fuera de git), voz-provisional, imagenes (fuera de git)
-└── scripts/                      ← validar, escaleta, nuevo-video, generar_audio, generar_texturas, voz_provisional
+├── scripts/                      ← validar, escaleta, nuevo-video, generar_audio, generar_texturas, voz_provisional
+└── laboratorio/                  ← muestras de 5 s para probar herramientas (entrada propia de Remotion; ver su README)
 ```
 
 Cada video es datos (guion + escenas), no un proyecto aparte. Los componentes se comparten.

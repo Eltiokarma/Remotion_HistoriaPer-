@@ -1,0 +1,98 @@
+{
+  "muestra": "04-libro-3d",
+  "etapa": "final-caliente-3",
+  "inicio_utc": "2026-11-03T02:23:20+00:00",
+  "comando": "npx remotion render laboratorio/remotion/index.ts lab-04-libro-3d laboratorio/out/04-libro-3d/final.mp4",
+  "codigo_salida": 0,
+  "segundos_pared": 68.9,
+  "segundos_cpu": 19.3,
+  "condicion": "caliente-3",
+  "pico_pss_mb": 2275,
+  "pico_rss_mb": 3039,
+  "pico_pss_por_tipo": {
+    "otros": {
+      "pss_mb": 47,
+      "rss_mb": 75,
+      "procesos": 2
+    },
+    "node": {
+      "pss_mb": 189,
+      "rss_mb": 215,
+      "procesos": 2
+    },
+    "ffmpeg": {
+      "pss_mb": 541,
+      "rss_mb": 560,
+      "procesos": 1
+    },
+    "chrome": {
+      "pss_mb": 1498,
+      "rss_mb": 2190,
+      "procesos": 8
+    }
+  },
+  "pico_rss_por_tipo": {
+    "otros": {
+      "pss_mb": 47,
+      "rss_mb": 75,
+      "procesos": 2
+    },
+    "node": {
+      "pss_mb": 189,
+      "rss_mb": 215,
+      "procesos": 2
+    },
+    "ffmpeg": {
+      "pss_mb": 541,
+      "rss_mb": 560,
+      "procesos": 1
+    },
+    "chrome": {
+      "pss_mb": 1498,
+      "rss_mb": 2190,
+      "procesos": 8
+    }
+  },
+  "memoria_metodo": "árbol de procesos del comando (node/npx, webpack, Chrome headless y sus procesos, ffmpeg; o Python en Manim), muestreo cada 0,25 s de /proc/<pid>/smaps_rollup. PSS reparte la memoria compartida; RSS la cuenta en cada proceso y sobreestima. Un pico más corto que el muestreo se puede perder.",
+  "registro_destacado": [
+    "[Tab 0, node_modules/three/build/three.core.js:2014] THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "[Tab 2, node_modules/three/build/three.core.js:2014] THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "[Tab 1, node_modules/three/build/three.core.js:2014] THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "[Tab 3, node_modules/three/build/three.core.js:2014] THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "[Tab 2, laboratorio/muestras/04-libro-3d/Muestra.tsx:204] [lab04] WebGL: Google Inc. (Google) | ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "[Tab 0, laboratorio/muestras/04-libro-3d/Muestra.tsx:204] [lab04] WebGL: Google Inc. (Google) | ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "[Tab 1, laboratorio/muestras/04-libro-3d/Muestra.tsx:204] [lab04] WebGL: Google Inc. (Google) | ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "[Tab 3, laboratorio/muestras/04-libro-3d/Muestra.tsx:204] [lab04] WebGL: Google Inc. (Google) | ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+  ],
+  "maquina": {
+    "nombre": "contenedor en la nube (sesión de Claude Code)",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "hilos_visibles": 4,
+    "ram_gb": 15.7,
+    "gpu": "ninguna detectada",
+    "so": "Linux 6.18.44-fc-v230"
+  },
+  "versiones": {
+    "node": "v22.23.4",
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+    "python_medidor": "3.13.18",
+    "remotion": "4.0.539",
+    "three": "0.187.0",
+    "@remotion/three": "4.0.539",
+    "@react-three/fiber": "9.8.2",
+    "@react-three/drei": "10.7.9",
+    "roughjs": "4.6.6",
+    "p5": "2.3.4"
+  },
+  "salida": {
+    "archivo": "out/04-libro-3d/final.mp4",
+    "duracion_s": 5.0,
+    "cuadros": 150,
+    "ancho": 1920,
+    "alto": 1080,
+    "fps": "30/1",
+    "codec": "h264",
+    "audio": null,
+    "mb": 1.82
+  }
+}

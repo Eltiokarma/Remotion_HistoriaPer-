@@ -1,0 +1,96 @@
+{
+  "muestra": "04-libro-3d",
+  "etapa": "final-caliente",
+  "inicio_utc": "2026-11-03T02:15:18+00:00",
+  "comando": "npx remotion render laboratorio/remotion/index.ts lab-04-libro-3d laboratorio/out/04-libro-3d/final.mp4",
+  "codigo_salida": 0,
+  "segundos_pared": 69.8,
+  "segundos_cpu": 19.7,
+  "condicion": "caliente",
+  "pico_pss_mb": 2387,
+  "pico_rss_mb": 3154,
+  "pico_pss_por_tipo": {
+    "otros": {
+      "pss_mb": 48,
+      "rss_mb": 75,
+      "procesos": 2
+    },
+    "node": {
+      "pss_mb": 380,
+      "rss_mb": 406,
+      "procesos": 2
+    },
+    "ffmpeg": {
+      "pss_mb": 480,
+      "rss_mb": 499,
+      "procesos": 1
+    },
+    "chrome": {
+      "pss_mb": 1480,
+      "rss_mb": 2173,
+      "procesos": 8
+    }
+  },
+  "pico_rss_por_tipo": {
+    "otros": {
+      "pss_mb": 48,
+      "rss_mb": 75,
+      "procesos": 2
+    },
+    "node": {
+      "pss_mb": 380,
+      "rss_mb": 406,
+      "procesos": 2
+    },
+    "ffmpeg": {
+      "pss_mb": 480,
+      "rss_mb": 499,
+      "procesos": 1
+    },
+    "chrome": {
+      "pss_mb": 1480,
+      "rss_mb": 2173,
+      "procesos": 8
+    }
+  },
+  "memoria_metodo": "árbol de procesos del comando (node/npx, webpack, Chrome headless y sus procesos, ffmpeg; o Python en Manim), muestreo cada 0,25 s de /proc/<pid>/smaps_rollup. PSS reparte la memoria compartida; RSS la cuenta en cada proceso y sobreestima. Un pico más corto que el muestreo se puede perder.",
+  "registro_destacado": [
+    "[Tab 3, node_modules/three/build/three.core.js:2014] THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "[Tab 0, node_modules/three/build/three.core.js:2014] THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "[Tab 2, node_modules/three/build/three.core.js:2014] THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "[Tab 1, node_modules/three/build/three.core.js:2014] THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+  ],
+  "maquina": {
+    "nombre": "contenedor en la nube (sesión de Claude Code)",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "hilos_visibles": 4,
+    "ram_gb": 15.7,
+    "gpu": "ninguna detectada",
+    "so": "Linux 6.18.44-fc-v230"
+  },
+  "versiones": {
+    "node": "v22.23.4",
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+    "python_medidor": "3.13.18",
+    "python_manim": "3.12.3",
+    "manim": "0.22.1",
+    "remotion": "4.0.539",
+    "three": "0.187.0",
+    "@remotion/three": "4.0.539",
+    "@react-three/fiber": "9.8.2",
+    "@react-three/drei": "10.7.9",
+    "roughjs": "4.6.6",
+    "p5": "2.3.4"
+  },
+  "salida": {
+    "archivo": "out/04-libro-3d/final.mp4",
+    "duracion_s": 5.0,
+    "cuadros": 150,
+    "ancho": 1920,
+    "alto": 1080,
+    "fps": "30/1",
+    "codec": "h264",
+    "audio": null,
+    "mb": 1.82
+  }
+}
