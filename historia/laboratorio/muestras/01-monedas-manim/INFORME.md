@@ -62,5 +62,5 @@ MANIM_PY=~/.venvs/manim/bin/python ./scripts/manim.sh final
 ```
 
 Versiones exactas en [`requirements.txt`](requirements.txt) y en
-[`resultados/01-monedas-manim/final.json`](../../resultados/01-monedas-manim/final.json).
+[`resultados/01-monedas-manim/final-caliente.json`](../../resultados/01-monedas-manim/final-caliente.json).
 Recursos externos: ninguno (fuentes y sonidos de `public/compartido/`, con sus licencias allí).
