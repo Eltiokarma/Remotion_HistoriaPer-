@@ -12,5 +12,5 @@
     "noEmit": true,
     "lib": ["DOM", "ES2022"]
   },
-  "include": ["src", "videos", "remotion.config.ts"]
+  "include": ["src", "videos", "laboratorio/remotion", "laboratorio/muestras", "remotion.config.ts"]
 }
