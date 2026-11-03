@@ -12,10 +12,11 @@ Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **11** · ⏳ pendiente: **5** · 💡 propuesto: **7** · ⛔ bloqueado: **3**
+✅ hecho: **12** · ⏳ pendiente: **6** · 💡 propuesto: **8** · ⛔ bloqueado: **3**
 
 **Bloqueos y condiciones abiertas**
 
+- `f0-skill-canal` Skill propio del canal, encima del oficial: Espera la revisión de Gerson de la tanda 1: sus criterios son el contenido principal.
 - `t2-blender` 08 Blender: un objeto de época con material de grabado, montado en Remotion: Sin GPU en el contenedor: Cycles por CPU será lento; Eevee necesita GPU. Medir en la laptop o esperar la PC objetivo.
 - `t4-houdini-prueba` Houdini: prueba de pyro o agua al tamaño de un plano: Necesita GPU (PC objetivo) y decidir licencia (Apprentice no es comercial).
 - `t4-unreal-prueba` Unreal Engine: render de un recorrido de 5 s: Necesita la PC con GPU; revisar la EULA para contenido lineal.
@@ -37,6 +38,7 @@ gantt
   Roadmap con fuente única y vista Gantt :done, f0roadmap, 2026-11-03, 1d
   Laboratorio entrada propia, medición y revisión :done, f0laboratorio, 2026-11-03, 1d
   CI que renderiza las muestras y publica los MP4 :done, t1ci, 2026-11-03, 1d
+  Skills oficiales de Remotion instalados y revisados :done, f0skillremotion, 2026-11-03, 1d
   Texturas que Remotion no espera (Papel y otras) prevención común :done, infrapapel, 2026-11-03, 1d
   section Fase 1 · Tanda 1 de muestras (5 s)
   01 Diez monedas → 30 % (Manim) :done, t1manim, 2026-11-03, 1d
@@ -59,7 +61,7 @@ gantt
   Repetir la tanda 1 en la laptop de render (propuesta) :f5laptop, 2026-11-05, 2d
 ```
 
-Sin fecha (6): `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado).
+Sin fecha (8): `f0-skill-canal` (⏳ pendiente), `f0-skill-medir` (💡 propuesto), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado).
 
 ## Tareas
 
@@ -88,6 +90,23 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A turno 2 · R 128 s en ci-github · tokens ¿?
   - Nota: render_s = paso «Render de las cinco muestras» completo (cinco renders, revisión y carrete).
   - Evidencia: [workflows/laboratorio.yml](.github/workflows/laboratorio.yml) · [runs/41566067394](https://github.com/Eltiokarma/Remotion_HistoriaPer-/actions/runs/41566067394)
+- [x] **Skills oficiales de Remotion instalados y revisados** `f0-skill-remotion` — ✅ hecho
+  - Entregable: historia/.agents/skills (13 skills de remotion-dev/skills, versión fijada en skills-lock.json) y la tabla de choques con las reglas del canal en historia/CLAUDE.md §15
+  - Prevista: — · Real: 2026-11-03
+  - Tiempo: H ¿? · A ≈ 11:30–11:50 UTC (incluye fusionar el PR #1) · R ¿? · tokens ¿?
+  - Nota: Revisado antes de activar: 291 archivos (markdown, ejemplos .tsx y 2 scripts .mjs de mapas que solo corren si se ejecutan). Mismos hashes que la copia revisada.
+  - Evidencia: [historia/skills-lock.json](historia/skills-lock.json) · [historia/CLAUDE.md](historia/CLAUDE.md)
+- [ ] **Skill propio del canal, encima del oficial** `f0-skill-canal` — ⏳ pendiente
+  - Entregable: Reglas de historia/CLAUDE.md, trampas encontradas en el laboratorio, cuándo usar medir/revisar/geometría y los criterios de aprobación de Gerson
+  - Depende de: `t1-revision`, `f0-skill-remotion`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Bloqueo: Espera la revisión de Gerson de la tanda 1: sus criterios son el contenido principal.
+- [ ] **Medir si el skill reemplaza esfuerzo** `f0-skill-medir` — 💡 propuesto
+  - Entregable: Una muestra nueva hecha dos veces: esfuerzo medio con skill contra alto sin skill; comparar revisor, defectos, vueltas, tokens y la opinión de Gerson
+  - Depende de: `f0-skill-canal`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
 - [x] **Texturas que Remotion no espera (Papel y otras): prevención común** `infra-papel` — ✅ hecho
   - Entregable: PrecargaTexturas en VideoLargo y en el laboratorio; comprobación frío/caliente y de imagen idéntica
   - Prevista: 2026-11-04 (propuesta) · Real: 2026-11-03

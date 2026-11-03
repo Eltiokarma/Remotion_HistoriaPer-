@@ -27,7 +27,7 @@ para preparar material, no para dirigir.
 
 | Herramienta | Función en el canal | Estado | Evidencia o prueba prevista |
 |---|---|---|---|
-| **Remotion** | Composición, montaje, sincronización con la voz y los beats, exportación. El motor de todos los episodios. | verificada (episodios 000 y 001; muestras 02–05) | [`historia/`](../historia/), [muestra 05](../historia/laboratorio/muestras/05-mapa-documento/) |
+| **Remotion** | Composición, montaje, sincronización con la voz y los beats, exportación. El motor de todos los episodios. Con los skills oficiales `remotion-dev/skills` instalados (`historia/CLAUDE.md` §15: las reglas del canal mandan). | verificada (episodios 000 y 001; muestras 02–05) | [`historia/`](../historia/), [muestra 05](../historia/laboratorio/muestras/05-mapa-documento/) |
 | **Manim** | Explicaciones matemáticas, estadísticas y conceptuales: proporciones, regresiones, series. | verificada (contenedor) | [muestra 01](../historia/laboratorio/muestras/01-monedas-manim/) |
 | **JavaScript/TypeScript + SVG/Canvas** | Ilustración procedural y animación 2D: mapas, grabados, trazos que se dibujan. | verificada (episodios; muestras 02, 05) | [muestra 02](../historia/laboratorio/muestras/02-cordillera-tinta/) |
 | **Rough.js** | Trazos y rellenos con aspecto dibujado (rayado a pluma), con semilla. | verificada (contenedor) | [muestra 02](../historia/laboratorio/muestras/02-cordillera-tinta/) |

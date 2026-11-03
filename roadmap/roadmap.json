@@ -303,6 +303,72 @@
       "nota": "render_s = paso «Render de las cinco muestras» completo (cinco renders, revisión y carrete)."
     },
     {
+      "id": "f0-skill-remotion",
+      "fase": "f0",
+      "titulo": "Skills oficiales de Remotion instalados y revisados",
+      "entregable": "historia/.agents/skills (13 skills de remotion-dev/skills, versión fijada en skills-lock.json) y la tabla de choques con las reglas del canal en historia/CLAUDE.md §15",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-03",
+        "fin": "2026-11-03"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/skills-lock.json",
+        "historia/CLAUDE.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "≈ 11:30–11:50 UTC (incluye fusionar el PR #1)",
+        "render_s": null,
+        "maquina": null
+      },
+      "nota": "Revisado antes de activar: 291 archivos (markdown, ejemplos .tsx y 2 scripts .mjs de mapas que solo corren si se ejecutan). Mismos hashes que la copia revisada."
+    },
+    {
+      "id": "f0-skill-canal",
+      "fase": "f0",
+      "titulo": "Skill propio del canal, encima del oficial",
+      "entregable": "Reglas de historia/CLAUDE.md, trampas encontradas en el laboratorio, cuándo usar medir/revisar/geometría y los criterios de aprobación de Gerson",
+      "estado": "pendiente",
+      "depende_de": [
+        "t1-revision",
+        "f0-skill-remotion"
+      ],
+      "prevista": null,
+      "real": null,
+      "bloqueo": "Espera la revisión de Gerson de la tanda 1: sus criterios son el contenido principal.",
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "f0-skill-medir",
+      "fase": "f0",
+      "titulo": "Medir si el skill reemplaza esfuerzo",
+      "entregable": "Una muestra nueva hecha dos veces: esfuerzo medio con skill contra alto sin skill; comparar revisor, defectos, vueltas, tokens y la opinión de Gerson",
+      "estado": "propuesto",
+      "depende_de": [
+        "f0-skill-canal"
+      ],
+      "prevista": null,
+      "real": null,
+      "bloqueo": null,
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
       "id": "t1-revision",
       "fase": "f1",
       "titulo": "Revisión de la tanda 1 por Gerson",
