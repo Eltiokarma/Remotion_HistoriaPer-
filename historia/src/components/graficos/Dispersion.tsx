@@ -154,7 +154,21 @@ export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscur
         <g opacity={kFichero} transform={`translate(0 ${(1 - kFichero) * 80})`}>
           {/* la sombra y la caja de madera, vista de frente y un poco desde arriba */}
           <ellipse cx={FX + 10} cy={FY + 236} rx={260} ry={22} fill={alfa(tinta, 0.18)} />
-          <path d={`M${FX - 236} ${FY + 4} L${FX + 236} ${FY + 4} L${FX + 222} ${FY + 230} L${FX - 222} ${FY + 230} Z`} fill={mezclar(paleta.ocre, tinta, 0.42)} stroke={tinta} strokeWidth={1.6} />
+          <defs>
+            <linearGradient id={`${id}-madera`} x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stopColor={mezclar(paleta.ocre, tinta, 0.3)} />
+              <stop offset="0.55" stopColor={mezclar(paleta.ocre, tinta, 0.42)} />
+              <stop offset="1" stopColor={mezclar(paleta.ocre, tinta, 0.6)} />
+            </linearGradient>
+            <linearGradient id={`${id}-madera-lado`} x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stopColor="#000" stopOpacity={0.18} />
+              <stop offset="0.12" stopColor="#000" stopOpacity={0} />
+              <stop offset="0.88" stopColor="#000" stopOpacity={0} />
+              <stop offset="1" stopColor="#000" stopOpacity={0.22} />
+            </linearGradient>
+          </defs>
+          <path d={`M${FX - 236} ${FY + 4} L${FX + 236} ${FY + 4} L${FX + 222} ${FY + 230} L${FX - 222} ${FY + 230} Z`} fill={`url(#${id}-madera)`} stroke={tinta} strokeWidth={1.6} />
+          <path d={`M${FX - 236} ${FY + 4} L${FX + 236} ${FY + 4} L${FX + 222} ${FY + 230} L${FX - 222} ${FY + 230} Z`} fill={`url(#${id}-madera-lado)`} />
           {Array.from({ length: 7 }, (_, k) => (
             <path key={k} d={`M${FX - 230 + k * 3} ${FY + 30 + k * 30} C ${FX - 80} ${FY + 22 + k * 30}, ${FX + 80} ${FY + 40 + k * 30}, ${FX + 228 - k * 2} ${FY + 28 + k * 30}`}
               fill="none" stroke={alfa(tinta, 0.22)} strokeWidth={1} />
@@ -181,6 +195,8 @@ export const Dispersion: React.FC<Props> = ({ paleta, id, t, tRecta, apagaDiscur
           })}
           {/* el borde de adelante tapa la base de las fichas */}
           <rect x={FX - 238} y={FY - 2} width={476} height={14} fill={mezclar(paleta.ocre, tinta, 0.3)} stroke={tinta} strokeWidth={1.4} />
+          <line x1={FX - 236} x2={FX + 236} y1={FY - 0.5} y2={FY - 0.5} stroke={mezclar(paleta.ocre, '#ffffff', 0.35)} strokeWidth={1.4} opacity={0.7} />
+          <rect x={FX - 236} y={FY + 12} width={472} height={10} fill={alfa('#000000', 0.18)} />
         </g>
       ) : null}
       {/* el dato en vuelo: de la ficha al papel milimetrado, en arco */}

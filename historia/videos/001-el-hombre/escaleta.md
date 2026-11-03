@@ -8,11 +8,11 @@ Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **I
 
 | Escena | Componente | Empieza | Dura | Voz | Voz seguida máx. | Palabras/min | Palabras por frase | Frase más larga | Pausas de párrafo | Nombres y cifras | Cambios de imagen | Semáforo |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| s00 | Gancho | 0:00.0 | 35 s | 70 % | 11 s | 119 | 11.2 | 25 | 4 | 0 (0.0/min) | 10 (17.8/min) | 🟢 |
+| s00 | Gancho | 0:00.0 | 35 s | 70 % | 11 s | 119 | 11.2 | 25 | 4 | 7 (12.5/min) | 10 (17.8/min) | 🟡 12.5 datos/min |
 | s01 | PruebasDeImprenta | 0:34.9 | 52 s | 62 % | 10 s | 107 | 8.8 | 16 | 6 | 2 (2.4/min) | 13 (15.8/min) | 🟢 |
 | s02 | Presentacion | 1:26.8 | 33 s | 73 % | 9 s | 113 | 10.0 | 23 | 3 | 5 (9.4/min) | 7 (13.1/min) | 🟡 9.4 datos/min |
-| s03 | TiempoLargo | 1:59.8 | 48 s | 75 % | 11 s | 111 | 7.9 | 19 | 4 | 4 (5.1/min) | 8 (10.3/min) | 🟢 |
-| s04 | TiempoLargo | 2:47.7 | 67 s | 71 % | 9 s | 105 | 8.8 | 21 | 8 | 2 (1.8/min) | 10 (9.2/min) | 🟢 |
+| s03 | TiempoLargo | 1:59.8 | 48 s | 75 % | 11 s | 111 | 7.9 | 19 | 4 | 4 (5.1/min) | 10 (12.8/min) | 🟢 |
+| s04 | TiempoLargo | 2:47.7 | 67 s | 71 % | 9 s | 105 | 8.8 | 21 | 8 | 2 (1.8/min) | 11 (10.1/min) | 🟢 |
 | s05 | AprenderAMedir | 3:54.3 | 105 s | 77 % | 15 s | 120 | 10.3 | 18 | 9 | 9 (5.2/min) | 25 (14.5/min) | 🟢 |
 | s06 | MecanismoDeuda | 5:39.1 | 29 s | 78 % | 10 s | 130 | 11.8 | 24 | 3 | 4 (8.8/min) | 10 (22.1/min) | 🟡 8.8 datos/min |
 | s07 | Cierre | 6:07.8 | 17 s | 20 % | 3 s | 48 | 5.0 | 5 | 0 | 1 (9.7/min) | 3 (29.0/min) | 🟡 9.7 datos/min |
@@ -25,8 +25,9 @@ Total: 6:25.1. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 - **Cambio:** de no saber nada a cargar una cifra que duele (3–4 % de todo lo que produce el país, cada año, desde 1820) y una pregunta: ¿quién lo calculó?
 - **Intención:** primero el golpe, después el hombre (DIRECCION_DE_VIDEO §2.5): cinco cuadros, uno por frase, que acumulan; termina en el libro que no llegó a ver en español, y la escena siguiente abre con sus pruebas de imprenta. Yuxtaposición: la cifra fría contra el libro solo en la penumbra
 - **Intensidad:** 4 · **Música:** presente (pulso) → se apaga sobre el libro
-- **Semáforo para enseñar:** 🟢
+- **Semáforo para enseñar:** 🟡 12.5 datos/min
 - **Métricas:** voz el 70 % del tiempo · tramo más largo sin pausa de párrafo: 10.9 s · 67 palabras · 119 por minuto · 6 frases de 11.2 palabras en promedio (la más larga: 25) · 4 pausa(s) de párrafo (≥ 1 s) · 10 cambios de imagen
+- **Nombres y cifras que se dicen (7):** Perú · Estado · 1820 · tres · cuatro por ciento · diez · tres y cuatro
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
@@ -128,7 +129,7 @@ Total: 6:25.1. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 - **Intención:** los afiches gritan cambio; con «¿o repetía lo de siempre?», el afiche nuevo se despega y debajo asoma uno viejo, igual de prometedor; la pregunta queda en el aire
 - **Intensidad:** 3 · **Música:** presente → en suspenso
 - **Semáforo para enseñar:** 🟢
-- **Métricas:** voz el 75 % del tiempo · tramo más largo sin pausa de párrafo: 10.8 s · 87 palabras · 111 por minuto · 11 frases de 7.9 palabras en promedio (la más larga: 19) · 4 pausa(s) de párrafo (≥ 1 s) · 8 cambios de imagen
+- **Métricas:** voz el 75 % del tiempo · tramo más largo sin pausa de párrafo: 10.8 s · 87 palabras · 111 por minuto · 11 frases de 7.9 palabras en promedio (la más larga: 19) · 4 pausa(s) de párrafo (≥ 1 s) · 10 cambios de imagen
 - **Nombres y cifras que se dicen (4):** Universidad Católica · Perú · Velasco · 1974
 
 | t | Voz | Imagen | Sonido |
@@ -147,9 +148,13 @@ Total: 6:25.1. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 2:16.2 | Un discurso que promete enterrar el pasado oligárquico. |  |  |
 | 2:16.2 |  | **afiche3** — (con 3 titulares) se pega el tercero |  |
 | 2:21.6 | Quiroz no apoyó al régimen. |  |  |
+| 2:21.8 |  | **volante** — entra el volante |  |
+| 2:24.4 |  | **leer** — (opcional) la cámara se acerca al volante para leerlo |  |
+| 2:24.4 |  | _cámara: se acerca al volante hasta poder leerlo_ («Militó un tiempo en un pequeño partido trotskista que lo criticaba con dureza»: el volante dice eso, con la cita de Cueto; se lee) |  |
 | 2:24.5 | Militó un tiempo en un pequeño partido trotskista que lo criticaba con dureza. |  |  |
-| 2:26.7 |  | **volante** — entra el volante |  |
 | 2:30.6 | Para un estudiante de esa época, la historia no era un curso más. |  |  |
+| 2:30.7 |  | **vuelve** — (con leer) la cámara vuelve a ver el muro entero |  |
+| 2:30.7 |  | _cámara: vuelve a ver el muro entero_ («Para un estudiante de esa época…»: de él a su generación) |  |
 | 2:35.5 | Era la manera de responder una pregunta. |  |  |
 | 2:39.2 | ¿El país estaba cambiando de verdad? |  |  |
 | 2:42.0 |  | **despegue** — una esquina se despega: debajo hay afiches viejos |  |
@@ -161,7 +166,7 @@ Total: 6:25.1. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 - **Intención:** la clase: Braudel en la pizarra; las capas se dibujan con tiza y brilla solo la que se nombra; la palabra del episodio; la nota y el remate escritos con peso
 - **Intensidad:** 3 · **Música:** presente
 - **Semáforo para enseñar:** 🟢
-- **Métricas:** voz el 71 % del tiempo · tramo más largo sin pausa de párrafo: 8.7 s · 115 palabras · 105 por minuto · 13 frases de 8.8 palabras en promedio (la más larga: 21) · 8 pausa(s) de párrafo (≥ 1 s) · 10 cambios de imagen
+- **Métricas:** voz el 71 % del tiempo · tramo más largo sin pausa de párrafo: 8.7 s · 115 palabras · 105 por minuto · 13 frases de 8.8 palabras en promedio (la más larga: 21) · 8 pausa(s) de párrafo (≥ 1 s) · 11 cambios de imagen
 - **Nombres y cifras que se dicen (2):** Franklin Pease · Fernand Braudel
 
 | t | Voz | Imagen | Sonido |
@@ -169,6 +174,7 @@ Total: 6:25.1. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 2:47.7 |  |  | música s04-capas.mp3 (nivel 0.24) |
 | 2:47.7 |  |  | ambiente cuarto (0.5) |
 | 2:48.0 | Casi con seguridad fue en un curso de Franklin Pease donde leyó por primera vez a Fernand Braudel, un historiador francés. |  |  |
+| 2:49.9 |  | **clase** — (pizarra, con encabezado) se escribe el encabezado de la clase |  |
 | 2:53.2 |  | **braudel** — (con ficha) aparece la ficha |  |
 | 2:57.3 |  | **capas** — el muro se apaga y se dibujan las capas (con capa1–3: solo el marco, vacío) |  |
 | 2:57.3 | Braudel decía que la historia no corre a una sola velocidad. |  |  |
@@ -305,4 +311,5 @@ Total: 6:25.1. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 6:10.1 |  |  | se va el ambiente cuarto |
 | 6:10.6 | Próximo episodio: La deuda defraudada. |  |  |
 | 6:10.6 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
+| 6:10.6 |  | _cámara: se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)_ (la música se queda sobre el final (revisión del director): el plano respira mientras se asienta la tristeza, sin congelarse) |  |
 

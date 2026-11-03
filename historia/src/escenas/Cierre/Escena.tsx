@@ -50,7 +50,8 @@ export const Cierre: React.FC<EscenaProps<P>> = ({ escena, props, video }) => {
           </div>
         ) : null}
       </AbsoluteFill>
-      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+      {/* la tarjeta queda mientras suena el tema: la cámara se acerca muy despacio (el plano respira, no se congela) */}
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', transform: `scale(${1 + 0.05 * tramo(t, tTarjeta + 1, 13, 'solemne')})` }}>
         {props.emblema === 'mercurio' ? (
           <div style={{ marginBottom: 30, opacity: tramo(t, tTarjeta + 0.5, 1.2, 'natural') }}>
             <GotaMercurio id={`${escena.id}-gota`} size={150} latido={t - tTarjeta} caida={tramo(t, tTarjeta + 0.5, 0.7, 'tenso')} tras={t - (tTarjeta + 1.2)} />

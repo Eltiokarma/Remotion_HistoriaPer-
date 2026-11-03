@@ -24,6 +24,8 @@ export const esquema = z.object({
   parte: z.enum(['todo', 'epoca', 'capas']).default('todo'),
   /** La palabra del episodio, a pantalla completa y quieta sobre las capas (con el beat `palabra`). */
   palabra: z.string().optional(),
+  /** (pizarra) El encabezado de la clase, escrito arriba con tiza (beat `clase`). */
+  encabezado: z.string().optional(),
   /** La capa que se enciende con el beat `realce` (la que el personaje va a estudiar). */
   realce: z.enum(['rapida', 'media', 'lenta']).optional(),
   /** "pizarra": las capas en una pizarra verde, con tiza (DIRECCION_DE_VIDEO §2.3); la cámara no se mueve: brilla lo que se nombra. */
@@ -45,6 +47,8 @@ export const beats = {
   afiche3: '(con 3 titulares) se pega el tercero',
   despegue: 'una esquina se despega: debajo hay afiches viejos',
   volante: 'entra el volante',
+  leer: '(opcional) la cámara se acerca al volante para leerlo',
+  vuelve: '(con leer) la cámara vuelve a ver el muro entero',
   capas: 'el muro se apaga y se dibujan las capas (con capa1–3: solo el marco, vacío)',
   braudel: '(con ficha) aparece la ficha',
   capa1: '(capas de a una) se llena la capa de arriba',
@@ -52,6 +56,7 @@ export const beats = {
   capa3: '(capas de a una) se llena la de abajo',
   bajar: 'la cámara baja hasta la capa que casi no se mueve (2.4 s)',
   palabra: '(con palabra) la palabra del episodio, a pantalla completa',
+  clase: '(pizarra, con encabezado) se escribe el encabezado de la clase',
   subir: '(opcional) la cámara vuelve a ver las tres capas; se va la palabra',
   realce: '(con realce) se enciende una capa (en la pizarra, se escribe la nota)',
   remate: '(con remate) se escribe la frase que cierra el bloque',
@@ -59,7 +64,7 @@ export const beats = {
 
 /** Con `parte`, qué beats usa cada mitad (los de la otra no hacen falta). */
 export const partes = {
-  epoca: ['sello', 'primeros', 'afiches', 'afiche1', 'afiche2', 'afiche3', 'despegue', 'volante'],
+  epoca: ['sello', 'primeros', 'afiches', 'afiche1', 'afiche2', 'afiche3', 'despegue', 'volante', 'leer', 'vuelve'],
   capas: ['capas', 'braudel', 'capa1', 'capa2', 'capa3', 'bajar', 'palabra', 'subir', 'realce', 'remate'],
 };
 

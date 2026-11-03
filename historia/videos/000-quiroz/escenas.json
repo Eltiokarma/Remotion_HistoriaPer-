@@ -985,7 +985,14 @@
         ],
         "duck_db": -12
       },
-      "estado_musica": "ausente → tema del canal"
+      "estado_musica": "ausente → tema del canal",
+      "camara": [
+        {
+          "beat": "tarjeta",
+          "movimiento": "se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)",
+          "motivo": "el tema del canal suena sobre la tarjeta: el plano respira, sin congelarse"
+        }
+      ]
     }
   ]
 }

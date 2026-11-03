@@ -313,8 +313,10 @@
         "afiche1": 12.77,
         "afiche2": 14.56,
         "afiche3": 16.41,
-        "volante": 26.9,
-        "despegue": 42.1
+        "volante": 22.0,
+        "despegue": 42.1,
+        "leer": 24.6,
+        "vuelve": 30.8
       },
       "props": {
         "sello": {
@@ -369,7 +371,19 @@
         ],
         "duck_db": -15
       },
-      "estado_musica": "presente → en suspenso"
+      "estado_musica": "presente → en suspenso",
+      "camara": [
+        {
+          "beat": "leer",
+          "movimiento": "se acerca al volante hasta poder leerlo",
+          "motivo": "«Militó un tiempo en un pequeño partido trotskista que lo criticaba con dureza»: el volante dice eso, con la cita de Cueto; se lee"
+        },
+        {
+          "beat": "vuelve",
+          "movimiento": "vuelve a ver el muro entero",
+          "motivo": "«Para un estudiante de esa época…»: de él a su generación"
+        }
+      ]
     },
     {
       "id": "s04",
@@ -391,7 +405,8 @@
         "palabra": 42.9,
         "subir": 46.47,
         "realce": 51.0,
-        "remate": 54.29
+        "remate": 54.29,
+        "clase": 2.2
       },
       "props": {
         "sello": {
@@ -431,7 +446,8 @@
         "realce": "media",
         "estilo": "pizarra",
         "nota": "las estructuras de la economía y la larga duración",
-        "remate": "Hay cosas que no cambian aunque cambien los gobiernos."
+        "remate": "Hay cosas que no cambian aunque cambien los gobiernos.",
+        "encabezado": "Etnohistoria Andina · F. Pease"
       },
       "audio": {
         "musica": {
@@ -762,7 +778,14 @@
         ],
         "duck_db": -12
       },
-      "estado_musica": "protagonista (el tema del canal entra antes del negro y se queda ~5 s más sobre la tarjeta)"
+      "estado_musica": "protagonista (el tema del canal entra antes del negro y se queda ~5 s más sobre la tarjeta)",
+      "camara": [
+        {
+          "beat": "tarjeta",
+          "movimiento": "se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)",
+          "motivo": "la música se queda sobre el final (revisión del director): el plano respira mientras se asienta la tristeza, sin congelarse"
+        }
+      ]
     }
   ],
   "excepciones": [
