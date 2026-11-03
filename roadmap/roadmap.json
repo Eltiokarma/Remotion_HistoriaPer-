@@ -336,25 +336,56 @@
       "nota": "Revisado antes de activar: 291 archivos (markdown, ejemplos .tsx y 2 scripts .mjs de mapas que solo corren si se ejecutan). Mismos hashes que la copia revisada."
     },
     {
+      "id": "f0-reglas-codigo",
+      "fase": "f0",
+      "titulo": "Reglas del canal comprobadas en el código",
+      "entregable": "historia/scripts/reglas.ts (npm run reglas, con prueba propia --probar) y workflow «codigo» (typecheck, reglas, validar) en cada push y PR",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-03",
+        "fin": "2026-11-03"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/scripts/reglas.ts",
+        ".github/workflows/codigo.yml"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "≈ 12:00–12:20 UTC (junto con el skill v0)",
+        "render_s": null,
+        "maquina": null
+      },
+      "nota": "Siete reglas: easing-suelto, azar-sin-semilla, reloj, temporizador, css-animado, fuente-remota, fondo-sin-espera. Hoy: 113 archivos, 0 violaciones, 1 excepción declarada (muestra 04)."
+    },
+    {
       "id": "f0-skill-canal",
       "fase": "f0",
       "titulo": "Skill propio del canal, encima del oficial",
       "entregable": "Reglas de historia/CLAUDE.md, trampas encontradas en el laboratorio, cuándo usar medir/revisar/geometría y los criterios de aprobación de Gerson",
-      "estado": "pendiente",
+      "estado": "en_curso",
       "depende_de": [
         "t1-revision",
         "f0-skill-remotion"
       ],
       "prevista": null,
-      "real": null,
-      "bloqueo": "Espera la revisión de Gerson de la tanda 1: sus criterios son el contenido principal.",
-      "evidencia": [],
+      "real": {
+        "inicio": "2026-11-03",
+        "fin": null
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/.claude/skills/canal-historia/SKILL.md"
+      ],
       "tiempo": {
         "humano_min": null,
-        "agente": null,
+        "agente": "≈ 12:00–12:20 UTC (v0)",
         "render_s": null,
         "maquina": null
-      }
+      },
+      "nota": "Versión 0 hecha (orden de autoridad, trampas, procedimiento, verificación, cómo informar). Falta criterios.md: espera la revisión de Gerson (t1-revision)."
     },
     {
       "id": "f0-skill-medir",

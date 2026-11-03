@@ -448,5 +448,8 @@ manda este archivo.** Choques conocidos:
 con datos con licencia, §1.1), `remotion-captions` (subtítulos, §10), `remotion-docs` (consultar la
 documentación vigente).
 
+El skill propio del canal está en `historia/.claude/skills/canal-historia/` (no lo instala ni lo
+actualiza la CLI de Remotion; comprobar que siga después de un `update`).
+
 Actualizarlos: `npx remotion skills update`, revisar el diff (son instrucciones que el agente
 obedece) y actualizar esta tabla si aparece un choque nuevo.
