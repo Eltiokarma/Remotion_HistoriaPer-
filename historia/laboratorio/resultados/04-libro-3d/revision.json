@@ -1,0 +1,13 @@
+{
+  "video": "out/04-libro-3d/final.mp4",
+  "cuadros": 150,
+  "cambio_medio": 1.866,
+  "cambio_maximo": {
+    "cuadro": 115,
+    "valor": 25.95
+  },
+  "parpadeos": [],
+  "cuadros_vacios": [],
+  "cambio_medio_ultimo_segundo": 1.454,
+  "metodo": "gris 320×180; parpadeo = salto > 4 y > 4× la diferencia entre sus vecinos; vacío = desviación < 2"
+}
