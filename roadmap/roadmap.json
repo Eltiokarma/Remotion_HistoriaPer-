@@ -38,6 +38,10 @@
     {
       "id": "f5",
       "titulo": "Fase 5 · Medir en las máquinas reales"
+    },
+    {
+      "id": "e1",
+      "titulo": "Episodio 0·1 · El hombre que le sacó la cuenta al Perú"
     }
   ],
   "tareas": [
@@ -664,6 +668,123 @@
         "agente": null,
         "render_s": null,
         "maquina": "pc-objetivo"
+      }
+    },
+    {
+      "id": "e1-revision",
+      "fase": "e1",
+      "titulo": "Revisión del director aplicada (notas del 30-oct)",
+      "entregable": "Cruz y fecha, Lima 1956, agua azul, volante, pizarra, brújula, libro, paneo, pregunta, música",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-10-30",
+        "fin": "2026-10-31"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/revision_quiroz_ep01.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-gancho",
+      "fase": "e1",
+      "titulo": "Gancho del 0·1",
+      "entregable": "Escena Gancho (s00): la cifra, el sistema y el libro",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-10-31",
+        "fin": "2026-10-31"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/src/escenas/Gancho/",
+        "historia/videos/001-el-hombre/guion.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-pulido",
+      "fase": "e1",
+      "titulo": "Pasada de pulido de animación",
+      "entregable": "Saltos, vacíos y planos congelados (detección de cambios de imagen con ffmpeg)",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-03",
+        "fin": "2026-11-03"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/revision_quiroz_ep01.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-guion-externo",
+      "fase": "e1",
+      "titulo": "Guion tras la revisión externa",
+      "entregable": "Método, regresión, promesa de la serie, hallazgo del primer caso; «la larga duración» con la cita en francés",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-03",
+        "fin": "2026-11-03"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/guion.md",
+        "historia/videos/001-el-hombre/fuentes.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-voz",
+      "fase": "e1",
+      "titulo": "Narración con la voz de Gerson",
+      "entregable": "public/videos/001-el-hombre/voz/sNN.wav de s00 a s07; `npm run validar -- 001-el-hombre --final` sin errores",
+      "estado": "pendiente",
+      "depende_de": [
+        "e1-guion-externo"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": null,
+        "fin": null
+      },
+      "bloqueo": null,
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
       }
     }
   ]
