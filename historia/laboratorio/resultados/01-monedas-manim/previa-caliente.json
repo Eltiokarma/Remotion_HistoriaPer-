@@ -1,0 +1,61 @@
+{
+  "muestra": "01-monedas-manim",
+  "etapa": "previa-caliente",
+  "inicio_utc": "2026-11-03T02:10:51+00:00",
+  "comando": "/tmp/claude-0/sp/venv-manim/bin/python -m manim render -ql --disable_caching --media_dir out/manim -o previa muestras/01-monedas-manim/monedas.py DiezMonedas",
+  "codigo_salida": 0,
+  "segundos_pared": 2.8,
+  "segundos_cpu": 3.7,
+  "condicion": "caliente",
+  "pico_pss_mb": 169,
+  "pico_rss_mb": 171,
+  "pico_pss_por_tipo": {
+    "python": {
+      "pss_mb": 169,
+      "rss_mb": 171,
+      "procesos": 1
+    }
+  },
+  "pico_rss_por_tipo": {
+    "python": {
+      "pss_mb": 169,
+      "rss_mb": 171,
+      "procesos": 1
+    }
+  },
+  "memoria_metodo": "árbol de procesos del comando (node/npx, webpack, Chrome headless y sus procesos, ffmpeg; o Python en Manim), muestreo cada 0,25 s de /proc/<pid>/smaps_rollup. PSS reparte la memoria compartida; RSS la cuenta en cada proceso y sobreestima. Un pico más corto que el muestreo se puede perder.",
+  "registro_destacado": [],
+  "maquina": {
+    "nombre": "contenedor en la nube (sesión de Claude Code)",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "hilos_visibles": 4,
+    "ram_gb": 15.7,
+    "gpu": "ninguna detectada",
+    "so": "Linux 6.18.44-fc-v230"
+  },
+  "versiones": {
+    "node": "v22.23.4",
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+    "python_medidor": "3.13.18",
+    "python_manim": "3.12.3",
+    "manim": "0.22.1",
+    "remotion": "4.0.539",
+    "three": "0.187.0",
+    "@remotion/three": "4.0.539",
+    "@react-three/fiber": "9.8.2",
+    "@react-three/drei": "10.7.9",
+    "roughjs": "4.6.6",
+    "p5": "2.3.4"
+  },
+  "salida": {
+    "archivo": "out/manim/videos/monedas/480p15/previa.mp4",
+    "duracion_s": 5.0,
+    "cuadros": 75,
+    "ancho": 854,
+    "alto": 480,
+    "fps": "15/1",
+    "codec": "h264",
+    "audio": "aac",
+    "mb": 0.14
+  }
+}

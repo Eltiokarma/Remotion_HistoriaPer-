@@ -13,5 +13,5 @@ case "$etapa" in
 esac
 salida="laboratorio/out/$muestra/$etapa.mp4"
 mkdir -p "$(dirname "$salida")"
-python3 laboratorio/scripts/medir.py "$muestra" "$etapa" "$salida" -- \
+python3 laboratorio/scripts/medir.py "$muestra" "$etapa${LAB_CONDICION:+-$LAB_CONDICION}" "$salida" -- \
   npx remotion render laboratorio/remotion/index.ts "lab-$muestra" "$salida" "${extra[@]}" "$@"

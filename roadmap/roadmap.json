@@ -69,7 +69,7 @@
       "prevista": null,
       "real": { "inicio": "2026-11-03", "fin": "2026-11-03" },
       "bloqueo": null,
-      "evidencia": ["historia/laboratorio/muestras/01-monedas-manim/INFORME.md", "historia/laboratorio/resultados/01-monedas-manim/final.json", "historia/laboratorio/resultados/01-monedas-manim/hoja.jpg"],
+      "evidencia": ["historia/laboratorio/muestras/01-monedas-manim/INFORME.md", "historia/laboratorio/resultados/01-monedas-manim/final-caliente.json", "historia/laboratorio/resultados/01-monedas-manim/hoja.jpg"],
       "tiempo": { "humano_min": null, "agente": "≈ 01:13–01:26 UTC", "render_s": 5.6, "maquina": "contenedor" }
     },
     {
@@ -82,7 +82,7 @@
       "prevista": null,
       "real": { "inicio": "2026-11-03", "fin": "2026-11-03" },
       "bloqueo": null,
-      "evidencia": ["historia/laboratorio/muestras/02-cordillera-tinta/INFORME.md", "historia/laboratorio/resultados/02-cordillera-tinta/final.json", "historia/laboratorio/resultados/02-cordillera-tinta/hoja.jpg"],
+      "evidencia": ["historia/laboratorio/muestras/02-cordillera-tinta/INFORME.md", "historia/laboratorio/resultados/02-cordillera-tinta/final-caliente.json", "historia/laboratorio/resultados/02-cordillera-tinta/hoja.jpg"],
       "tiempo": { "humano_min": null, "agente": "≈ 01:26–01:31 UTC", "render_s": 19.2, "maquina": "contenedor" }
     },
     {
@@ -95,7 +95,7 @@
       "prevista": null,
       "real": { "inicio": "2026-11-03", "fin": "2026-11-03" },
       "bloqueo": null,
-      "evidencia": ["historia/laboratorio/muestras/03-viento-p5/INFORME.md", "historia/laboratorio/resultados/03-viento-p5/final.json", "historia/laboratorio/resultados/03-viento-p5/hoja.jpg"],
+      "evidencia": ["historia/laboratorio/muestras/03-viento-p5/INFORME.md", "historia/laboratorio/resultados/03-viento-p5/final-caliente.json", "historia/laboratorio/resultados/03-viento-p5/hoja.jpg"],
       "tiempo": { "humano_min": null, "agente": "≈ 01:31–01:35 UTC", "render_s": 22.8, "maquina": "contenedor" }
     },
     {
@@ -108,7 +108,7 @@
       "prevista": null,
       "real": { "inicio": "2026-11-03", "fin": "2026-11-03" },
       "bloqueo": null,
-      "evidencia": ["historia/laboratorio/muestras/04-libro-3d/INFORME.md", "historia/laboratorio/resultados/04-libro-3d/final.json", "historia/laboratorio/resultados/04-libro-3d/hoja.jpg"],
+      "evidencia": ["historia/laboratorio/muestras/04-libro-3d/INFORME.md", "historia/laboratorio/resultados/04-libro-3d/final-caliente-3.json", "historia/laboratorio/resultados/04-libro-3d/hoja.jpg"],
       "tiempo": { "humano_min": null, "agente": "≈ 01:35–01:42 UTC", "render_s": 69.8, "maquina": "contenedor" }
     },
     {
@@ -121,7 +121,7 @@
       "prevista": null,
       "real": { "inicio": "2026-11-03", "fin": "2026-11-03" },
       "bloqueo": null,
-      "evidencia": ["historia/laboratorio/muestras/05-mapa-documento/INFORME.md", "historia/laboratorio/resultados/05-mapa-documento/final.json", "historia/laboratorio/resultados/05-mapa-documento/hoja.jpg"],
+      "evidencia": ["historia/laboratorio/muestras/05-mapa-documento/INFORME.md", "historia/laboratorio/resultados/05-mapa-documento/final-caliente.json", "historia/laboratorio/resultados/05-mapa-documento/hoja.jpg"],
       "tiempo": { "humano_min": null, "agente": "≈ 01:42–01:46 UTC", "render_s": 24.8, "maquina": "contenedor" }
     },
     {

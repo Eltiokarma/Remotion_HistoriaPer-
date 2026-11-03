@@ -131,11 +131,14 @@ class DiezMonedas(Scene):
         self.add(huecos)
         self.add_sound(str(SFX / "monedas.mp3"), gain=-8)
         movs = []
-        # sale primero la de más a la derecha (va arriba): así ninguna pasa por encima de otra
+        # sale primero la de más a la derecha (va arriba): así las que vuelan no se cruzan entre sí.
+        # El arco va por debajo y a la derecha (path_arc positivo): con -0.6 subían por encima de la
+        # fila de arriba y tapaban hasta 0,29 unidades de dos monedas quietas
+        # (scripts/geometria_monedas.py: distancia mínima 0,71 y 0,76; con 0.7, 1,10 > 1,0).
         for i, m in enumerate(reversed(tres)):
             fin = m.copy().move_to(destino[i])
             fin[2].set_stroke(ROJO, width=4)
-            movs.append(Transform(m, fin, path_arc=-0.6))
+            movs.append(Transform(m, fin, path_arc=0.7))
         self.play(LaggedStart(*movs, lag_ratio=0.18), run_time=hasta("llave"), rate_func=PESO["pesado"])
 
         # 3. la llave junta a las tres; aparece la fracción

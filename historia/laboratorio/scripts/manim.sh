@@ -14,7 +14,7 @@ case "$etapa" in
   *) echo "etapa: previa | final"; exit 2 ;;
 esac
 crudo="out/manim/videos/monedas/$carpeta/$etapa.mp4"
-python3 scripts/medir.py 01-monedas-manim "$etapa" "$crudo" -- \
+python3 scripts/medir.py 01-monedas-manim "$etapa${LAB_CONDICION:+-$LAB_CONDICION}" "$crudo" -- \
   "$py" -m manim render "${calidad[@]}" --disable_caching --media_dir out/manim \
   -o "$etapa" muestras/01-monedas-manim/monedas.py DiezMonedas
 mkdir -p out/01-monedas-manim && cp "$crudo" "out/01-monedas-manim/$etapa.mp4"

@@ -83,10 +83,23 @@ def versiones() -> dict:
     return v
 
 
-def rss_arbol(pid: int) -> int:
-    """RSS total (kB) del proceso y todos sus descendientes."""
+def categoria(comm: str) -> str:
+    c = comm.lower()
+    if "chrome" in c or "headless" in c: return "chrome"
+    if c.startswith("node") or c == "npm exec" or "esbuild" in c: return "node"
+    if "ffmpeg" in c or "ffprobe" in c: return "ffmpeg"
+    if "python" in c or "manim" in c: return "python"
+    return "otros"
+
+
+def muestra_arbol(pid: int) -> dict:
+    """RSS y PSS (kB) de todo el árbol de procesos, total y por tipo de proceso.
+
+    RSS cuenta entera la memoria compartida en cada proceso (Chrome comparte mucho entre los suyos):
+    sumarlo sobreestima. PSS reparte cada página compartida entre los procesos que la usan: la suma
+    de PSS es la mejor medida de cuánta RAM ocupa el árbol.
+    """
     hijos: dict[int, list[int]] = {}
-    rss: dict[int, int] = {}
     for d in os.listdir("/proc"):
         if not d.isdigit():
             continue
@@ -94,16 +107,26 @@ def rss_arbol(pid: int) -> int:
             st = open(f"/proc/{d}/stat").read()
             ppid = int(st.rsplit(")", 1)[1].split()[1])
             hijos.setdefault(ppid, []).append(int(d))
-            for linea in open(f"/proc/{d}/status"):
-                if linea.startswith("VmRSS"):
-                    rss[int(d)] = int(linea.split()[1])
         except (OSError, ValueError, IndexError):
             continue
-    total, pila = 0, [pid]
+    total = {"rss": 0, "pss": 0, "procesos": 0, "por_tipo": {}}
+    pila = [pid]
     while pila:
         p = pila.pop()
-        total += rss.get(p, 0)
         pila.extend(hijos.get(p, []))
+        try:
+            comm = open(f"/proc/{p}/comm").read().strip()
+            rss = pss = 0
+            for linea in open(f"/proc/{p}/smaps_rollup"):
+                if linea.startswith("Rss:"): rss = int(linea.split()[1])
+                elif linea.startswith("Pss:"): pss = int(linea.split()[1])
+        except (OSError, ValueError):
+            continue
+        cat = categoria(comm)
+        t = total["por_tipo"].setdefault(cat, {"rss": 0, "pss": 0, "procesos": 0})
+        for k, v in (("rss", rss), ("pss", pss), ("procesos", 1)):
+            t[k] += v
+            total[k] += v
     return total
 
 
@@ -141,23 +164,42 @@ def main() -> int:
 
     inicio = dt.datetime.now(dt.timezone.utc)
     t0 = time.monotonic()
-    proc = subprocess.Popen(cmd)
-    pico = 0
+    # la salida del render se muestra y además se guarda (out/, fuera de git) para buscar en ella
+    log_path = LAB / "out" / muestra / f"{etapa}.log"
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    log = open(log_path, "w")
+    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1)
+    pico = {"rss": 0, "pss": 0}
+    pico_rss_detalle: dict = {}
+    pico_pss_detalle: dict = {}
     corriendo = True
 
     def muestrear():
-        nonlocal pico
+        nonlocal pico_rss_detalle, pico_pss_detalle
         while corriendo:
-            pico = max(pico, rss_arbol(proc.pid))
+            m = muestra_arbol(proc.pid)
+            if m["rss"] > pico["rss"]:
+                pico["rss"], pico_rss_detalle = m["rss"], m
+            if m["pss"] > pico["pss"]:
+                pico["pss"], pico_pss_detalle = m["pss"], m
             time.sleep(0.25)
 
     hilo = threading.Thread(target=muestrear, daemon=True)
     hilo.start()
+    destacadas = []
+    for linea in proc.stdout:
+        sys.stdout.write(linea)
+        log.write(linea)
+        if "[lab04]" in linea or "WebGL" in linea or "--gl" in linea.lower():
+            destacadas.append(linea.strip()[:300])
     codigo = proc.wait()
     corriendo = False
     hilo.join()
+    log.close()
     pared = time.monotonic() - t0
     uso = resource.getrusage(resource.RUSAGE_CHILDREN)
+    mb = lambda kb: round(kb / 1024)
+    detalle = lambda m: {k: {"pss_mb": mb(v["pss"]), "rss_mb": mb(v["rss"]), "procesos": v["procesos"]} for k, v in m.get("por_tipo", {}).items()}
 
     registro = {
         "muestra": muestra,
@@ -167,8 +209,13 @@ def main() -> int:
         "codigo_salida": codigo,
         "segundos_pared": round(pared, 1),
         "segundos_cpu": round(uso.ru_utime + uso.ru_stime, 1),
-        "pico_rss_mb": round(pico / 1024),
-        "pico_rss_metodo": "suma del RSS del árbol de procesos, muestreo cada 0,25 s",
+        "condicion": os.environ.get("LAB_CONDICION", "sin indicar"),
+        "pico_pss_mb": mb(pico["pss"]),
+        "pico_rss_mb": mb(pico["rss"]),
+        "pico_pss_por_tipo": detalle(pico_pss_detalle),
+        "pico_rss_por_tipo": detalle(pico_rss_detalle),
+        "memoria_metodo": "árbol de procesos del comando (node/npx, webpack, Chrome headless y sus procesos, ffmpeg; o Python en Manim), muestreo cada 0,25 s de /proc/<pid>/smaps_rollup. PSS reparte la memoria compartida; RSS la cuenta en cada proceso y sobreestima. Un pico más corto que el muestreo se puede perder.",
+        "registro_destacado": destacadas[:10],
         "maquina": maquina(),
         "versiones": versiones(),
         "salida": probar(salida),
@@ -176,7 +223,7 @@ def main() -> int:
     destino = LAB / "resultados" / muestra / f"{etapa}.json"
     destino.parent.mkdir(parents=True, exist_ok=True)
     destino.write_text(json.dumps(registro, ensure_ascii=False, indent=2) + "\n")
-    print(f"\n[medir] {muestra}/{etapa}: {registro['segundos_pared']} s, pico {registro['pico_rss_mb']} MB → {destino.relative_to(LAB)}")
+    print(f"\n[medir] {muestra}/{etapa} ({registro['condicion']}): {registro['segundos_pared']} s, pico PSS {registro['pico_pss_mb']} MB (RSS {registro['pico_rss_mb']} MB) → {destino.relative_to(LAB)}")
     return codigo
 
 

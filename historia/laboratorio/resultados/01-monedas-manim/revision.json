@@ -1,0 +1,32 @@
+{
+  "video": "out/01-monedas-manim/final.mp4",
+  "cuadros": 150,
+  "cambio_medio": 0.243,
+  "cambio_maximo": {
+    "cuadro": 60,
+    "valor": 4.78
+  },
+  "parpadeos": [],
+  "parpadeos_locales": [
+    {
+      "cuadro": 59,
+      "zonas": 1,
+      "salto_max": 26.2
+    },
+    {
+      "cuadro": 61,
+      "zonas": 1,
+      "salto_max": 57.2
+    }
+  ],
+  "cuadros_vacios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "cambio_medio_ultimo_segundo": 0.003,
+  "metodo": "gris 320×180, todos los cuadros; parpadeo global = salto medio > 4 y > 4× la diferencia entre sus vecinos; parpadeo local = lo mismo por zona de una rejilla 8×8 con umbral 10; vacío = desviación < 2. No ve: el primer y el último cuadro como parpadeo (no tienen dos vecinos), defectos que duran 2 cuadros o más, defectos que no cambian el brillo (color, forma), errores de contenido."
+}

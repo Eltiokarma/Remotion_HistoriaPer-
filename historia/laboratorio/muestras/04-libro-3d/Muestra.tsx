@@ -1,7 +1,7 @@
 import { ContactShadows } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
 import { ThreeCanvas } from '@remotion/three';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { AbsoluteFill, cancelRender, continueRender, delayRender, useCurrentFrame, useVideoConfig } from 'remotion';
 import * as THREE from 'three';
 import { trazoManuscrito } from '../../../src/components/graficos/svg';
@@ -76,7 +76,7 @@ const pagina = (papel: HTMLImageElement, semilla: number, conTitulo: boolean) =>
 
 type Texturas = { tapa: THREE.CanvasTexture; guarda: THREE.CanvasTexture; portadilla: THREE.CanvasTexture; hoja: THREE.CanvasTexture; dorso: THREE.CanvasTexture; cantos: THREE.CanvasTexture };
 
-const useTexturas = (): Texturas | null => {
+const useTexturas = (): { tx: Texturas | null; listo: () => void } => {
   const [tx, setTx] = useState<Texturas | null>(null);
   const [h] = useState(() => delayRender('libro: texturas y fuentes'));
   useEffect(() => {
@@ -129,13 +129,10 @@ const useTexturas = (): Texturas | null => {
       });
     }).catch((e) => cancelRender(e));
   }, []);
-  // soltar el render recién cuando las texturas ya están en la escena: dos cuadros de pantalla
-  // después de montarlas (antes, los 4 primeros cuadros salían vacíos)
-  useEffect(() => {
-    if (!tx) return;
-    requestAnimationFrame(() => requestAnimationFrame(() => continueRender(h)));
-  }, [tx, h]);
-  return tx;
+  // El render se suelta desde dentro del lienzo (<AlEstarListo>), después de dibujar con las
+  // texturas. Antes se soltaba con dos requestAnimationFrame: ThreeCanvas solo redibuja cuando cambia
+  // el cuadro, así que a veces se capturaba la escena sin el libro (cuadros 0 y 3 en un render).
+  return { tx, listo: () => continueRender(h) };
 };
 
 /** Hoja que pasa: una tira de 40 segmentos que se curva; la punta va detrás del lomo. */
@@ -188,7 +185,7 @@ export const LibroTres: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
   const t = frame / fps;
-  const tx = useTexturas();
+  const { tx, listo } = useTexturas();
 
   const acerca = tramo(t, 0, 2.4, 'solemne');
   const abre = tramo(t, 2.4, 1.1, 'pesado');
@@ -200,8 +197,16 @@ export const LibroTres: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: PALETA.fondo }}>
-      <ThreeCanvas width={width} height={height} shadows camera={{ fov: 32, position: cam, near: 0.1, far: 50 }}>
+      <ThreeCanvas width={width} height={height} shadows camera={{ fov: 32, position: cam, near: 0.1, far: 50 }}
+        onCreated={({ gl }) => {
+          // deja en el registro del render qué backend gráfico dibujó de verdad (GPU o software)
+          const c = gl.getContext();
+          const info = c.getExtension('WEBGL_debug_renderer_info');
+          // console.warn y no console.log: Remotion muestra los warn sin --log=verbose
+          console.warn(`[lab04] WebGL: ${info ? c.getParameter(info.UNMASKED_VENDOR_WEBGL) : '?'} | ${info ? c.getParameter(info.UNMASKED_RENDERER_WEBGL) : c.getParameter(c.RENDERER)} | ${c.getParameter(c.VERSION)}`);
+        }}>
         <Camara posicion={cam} mira={mira} />
+        <AlEstarListo listo={tx !== null} alDibujar={listo} />
         <color attach="background" args={[PALETA.fondo]} />
         {/* luz de lámpara desde arriba a la izquierda, cálida; un relleno frío y bajo */}
         <ambientLight intensity={0.35} color={mezclar(PALETA.papel, '#ffffff', 0.3)} />
@@ -259,6 +264,19 @@ const Tapa: React.FC<{ tx: Texturas; position: [number, number, number] }> = ({ 
       <meshStandardMaterial attach="material-5" color={cuero} roughness={0.8} />
     </mesh>
   );
+};
+
+/** Cuando las texturas entran a la escena, dibuja una vez y recién entonces suelta el render. */
+const AlEstarListo: React.FC<{ listo: boolean; alDibujar: () => void }> = ({ listo, alDibujar }) => {
+  const advance = useThree((s) => s.advance);
+  const hecho = useRef(false);
+  useEffect(() => {
+    if (!listo || hecho.current) return;
+    hecho.current = true;
+    advance(performance.now());
+    requestAnimationFrame(alDibujar);
+  }, [listo, advance, alDibujar]);
+  return null;
 };
 
 /** La cámara se pone donde dice el cuadro (sin animaciones propias de three.js). */

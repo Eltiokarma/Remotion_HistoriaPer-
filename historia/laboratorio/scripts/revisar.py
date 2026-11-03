@@ -55,6 +55,20 @@ def main() -> int:
         salto = min(dif[i - 1], dif[i])
         if salto > 4 and salto > 4 * (vecinos + 0.5):
             parpadeos.append({"cuadro": i, "salto": round(float(salto), 2), "vecinos": round(float(vecinos), 2)})
+    # parpadeo local: lo mismo, pero por zonas (rejilla 8×8 de 40×22 px). Un objeto chico que
+    # desaparece un cuadro no mueve el promedio de toda la imagen y se le escapaba al detector global
+    # (pasó con el libro de la muestra 04).
+    def zonas(x: np.ndarray) -> np.ndarray:
+        return x[: H // 8 * 8, : W // 8 * 8].reshape(8, H // 8, 8, W // 8).mean(axis=(1, 3))
+    parpadeos_locales = []
+    for i in range(1, n - 1):
+        antes_z = zonas(np.abs(f[i] - f[i - 1]))
+        despues_z = zonas(np.abs(f[i + 1] - f[i]))
+        vecinos_z = zonas(np.abs(f[i + 1] - f[i - 1]))
+        salto_z = np.minimum(antes_z, despues_z)
+        marca = (salto_z > 10) & (salto_z > 4 * (vecinos_z + 0.5))
+        if marca.any():
+            parpadeos_locales.append({"cuadro": i, "zonas": int(marca.sum()), "salto_max": round(float(salto_z[marca].max()), 1)})
     vacios = [i for i in range(n) if f[i].std() < 2.0]
     fps = 30 if n >= 150 else 15
     ultimo = dif[-(fps - 1):] if n > fps else dif
@@ -64,12 +78,13 @@ def main() -> int:
         "cambio_medio": round(float(dif.mean()), 3),
         "cambio_maximo": {"cuadro": int(dif.argmax()) + 1, "valor": round(float(dif.max()), 2)},
         "parpadeos": parpadeos,
+        "parpadeos_locales": parpadeos_locales,
         "cuadros_vacios": vacios,
         "cambio_medio_ultimo_segundo": round(float(ultimo.mean()), 3),
-        "metodo": f"gris {W}×{H}; parpadeo = salto > 4 y > 4× la diferencia entre sus vecinos; vacío = desviación < 2",
+        "metodo": f"gris {W}×{H}, todos los cuadros; parpadeo global = salto medio > 4 y > 4× la diferencia entre sus vecinos; parpadeo local = lo mismo por zona de una rejilla 8×8 con umbral 10; vacío = desviación < 2. No ve: el primer y el último cuadro como parpadeo (no tienen dos vecinos), defectos que duran 2 cuadros o más, defectos que no cambian el brillo (color, forma), errores de contenido.",
     }
     (destino / "revision.json").write_text(json.dumps(rev, ensure_ascii=False, indent=2) + "\n")
-    print(json.dumps({k: rev[k] for k in ("cuadros", "cambio_medio", "parpadeos", "cuadros_vacios", "cambio_medio_ultimo_segundo")}, ensure_ascii=False))
+    print(json.dumps({k: rev[k] for k in ("cuadros", "cambio_medio", "parpadeos", "parpadeos_locales", "cuadros_vacios", "cambio_medio_ultimo_segundo")}, ensure_ascii=False))
     return 0
 
 

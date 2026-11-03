@@ -1,0 +1,16 @@
+{
+  "video": "out/05-mapa-documento/final.mp4",
+  "cuadros": 150,
+  "cambio_medio": 1.106,
+  "cambio_maximo": {
+    "cuadro": 3,
+    "valor": 12.96
+  },
+  "parpadeos": [],
+  "parpadeos_locales": [],
+  "cuadros_vacios": [
+    0
+  ],
+  "cambio_medio_ultimo_segundo": 0.035,
+  "metodo": "gris 320×180, todos los cuadros; parpadeo global = salto medio > 4 y > 4× la diferencia entre sus vecinos; parpadeo local = lo mismo por zona de una rejilla 8×8 con umbral 10; vacío = desviación < 2. No ve: el primer y el último cuadro como parpadeo (no tienen dos vecinos), defectos que duran 2 cuadros o más, defectos que no cambian el brillo (color, forma), errores de contenido."
+}
