@@ -4,7 +4,6 @@ import { Luz } from '../../components/atmosfera/Luz';
 import { Sfx } from '../../components/audio/Sfx';
 import { PortadaLibro } from '../../components/graficos/PortadaLibro';
 import { Ficha } from '../../components/texto/Ficha';
-import { Odometro } from '../../components/texto/Odometro';
 import { asienta, beat, clamp, escala, impacto, mix, tramo } from '../../direction/anim';
 import { azar } from '../../direction/azar';
 import type { EscenaProps } from '../../esquema';
@@ -86,7 +85,6 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
   const tFinAnios = Math.min(tSoles - 1.2, tRojo + 3.8);
   const kAnio = tramo(t, tAnio + 0.4, tFinAnios - tAnio - 0.4, 'pesado');
   const anio = Math.round(mix(a0, a1, kAnio));
-  const velAnio = (tramo(t + 1 / fps, tAnio + 0.4, tFinAnios - tAnio - 0.4, 'pesado') - kAnio) * (a1 - a0) * fps;
   const kRojo = tramo(t, tRojo, 0.5, 'natural');
   const wMin = (BW * props.pbi.min) / 100, wMax = (BW * props.pbi.max) / 100;
   const caidas = t < tRojo + 0.5 ? 0 : Math.min(Math.floor((tFinAnios - tRojo - 0.5) / PASO), Math.floor((t - tRojo - 0.5) / PASO) + 1);
@@ -111,10 +109,11 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
       <Luz color={pal.ocre} x={50} y={42} radio={70} intensidad={0.12 * luzFinal} />
 
       {/* 1 · la producción del país, año tras año */}
-      {t < tSoles ? (
-        <AbsoluteFill style={{ opacity: ventana(tAnio, tSoles - 0.3) }}>
+      {t < tSoles + 0.6 ? (
+        <AbsoluteFill style={{ opacity: ventana(tAnio, tSoles + 0.5) }}>
           <div style={{ position: 'absolute', left: 0, right: 0, top: 150, display: 'flex', justifyContent: 'center' }}>
-            <Odometro valor={anio} digitos={4} velocidad={velAnio} fps={fps} fontFamily={fuente.mono} fontSize={110} color={papel} separacion={0} />
+            {/* el año, entero, sin rodillo: un contador de dígitos sueltos mostraba años que no existen al correr rápido */}
+            <div style={{ fontFamily: fuente.mono, fontSize: 110, color: papel, fontVariantNumeric: 'tabular-nums', letterSpacing: '0.04em' }}>{anio}</div>
           </div>
           <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
             <defs>
@@ -132,6 +131,9 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
             <rect x={BX + BW - wMin} y={BY} width={wMin * kRojo} height={BH} fill={pal.rojo} />
             <rect x={BX} y={BY} width={BW} height={BH} fill="none" stroke={papel} strokeWidth={2} />
             <text x={BX} y={BY + BH + 46} fontFamily={fuente.mono} fontSize={22} letterSpacing="0.16em" fill={alfa(papel, 0.7)}>{props.pbi.rotulo}</text>
+            {props.pbi.nota ? (
+              <text x={BX} y={BY + BH + 82} fontFamily={fuente.mono} fontSize={20} letterSpacing="0.16em" fill={alfa(papel, 0.5)} opacity={kRojo}>{props.pbi.nota}</text>
+            ) : null}
             <text x={BX + BW - wMax / 2} y={BY - 26} textAnchor="middle" fontFamily={fuente.afiche} fontSize={64} fill={pal.rojo} opacity={kRojo}>
               {`${props.pbi.min}–${props.pbi.max} %`}
             </text>
@@ -181,6 +183,10 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
           })}
           <div style={{ position: 'absolute', left: x0M, top: 650, fontFamily: fuente.mono, fontSize: 22, letterSpacing: '0.16em', color: alfa(papel, 0.7),
             opacity: tramo(t, tSoles + 0.6, 0.6, 'natural') }}>{props.monedas.rotulo}</div>
+          {props.monedas.nota ? (
+            <div style={{ position: 'absolute', left: x0M, top: 690, fontFamily: fuente.mono, fontSize: 20, letterSpacing: '0.16em', color: alfa(papel, 0.5),
+              opacity: tramo(t, tCaen + 0.6, 0.6, 'natural') }}>{props.monedas.nota}</div>
+          ) : null}
           <div style={{ position: 'absolute', right: x0M, top: 330, fontFamily: fuente.afiche, fontSize: 64, color: pal.rojo,
             opacity: tramo(t, tCaen + 0.2, 0.5, 'natural') }}>{props.monedas.cifra}</div>
         </AbsoluteFill>
@@ -223,10 +229,10 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
       {/* 4 · lo calculó: la ficha con sus cifras */}
       {t >= tCalculo - 0.5 && t < tLibro + 1.2 ? (
         <AbsoluteFill style={{ opacity: tramo(t, tCalculo - 0.4, 0.5, 'natural') }}>
-          <div style={{ position: 'absolute', left: 560, top: 300 + 260 * tramo(t, tLibro, 1.1, 'pesado'), width: 800, padding: '44px 56px',
+          <div style={{ position: 'absolute', left: 560, top: 300 + 420 * tramo(t, tLibro - 0.3, 0.9, 'tenso'), width: 800, padding: '44px 56px',
             background: mezclar(papel, '#ffffff', 0.15), boxShadow: `0 18px 40px ${alfa('#000000', 0.45)}`,
-            transform: `rotate(${-1.5 + 4 * tramo(t, tLibro, 1.1, 'pesado')}deg) scale(${1 - 0.35 * tramo(t, tLibro, 1.1, 'pesado')})`,
-            opacity: 1 - tramo(t, tLibro + 0.5, 0.6, 'natural') }}>
+            transform: `rotate(${-1.5 + 5 * tramo(t, tLibro - 0.3, 0.9, 'tenso')}deg)`,
+            opacity: 1 - tramo(t, tLibro - 0.1, 0.6, 'natural') }}>
             {props.ficha.map((linea, i) => (
               <div key={i} style={{ height: 52 }}>
                 <Ficha texto={linea} t={t - tCalculo - i * 1.0} color={pal.fondo} acento={pal.rojo} size={30} cps={26} />
@@ -237,8 +243,8 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
       ) : null}
 
       {/* 5 · el libro que no llegó a ver */}
-      {t >= tLibro - 0.2 ? (
-        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: tramo(t, tLibro - 0.1, 0.7, 'natural') }}>
+      {t >= tLibro + 0.3 ? (
+        <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: tramo(t, tLibro + 0.3, 0.8, 'natural') }}>
           <div style={{ transform: `translateY(${18 * (1 - tramo(t, tLibro, 1.2, 'pesado'))}px)`, filter: `brightness(${mix(1, 0.62, 1 - luzFinal)})`,
             boxShadow: `0 30px 70px ${alfa('#000000', 0.6)}` }}>
             <PortadaLibro paleta={pal} titulo={props.libro.titulo} autor={props.libro.autor} anio={props.libro.anio} estampado={tramo(t, tLibro + 0.5, 1.8, 'natural')} width={460} />

@@ -210,3 +210,16 @@ causa.»
 | Nota | Estado |
 |---|---|
 | El gancho (`DEFINIR`) | **Resuelto: el director aprobó la propuesta.** Escena s00 (`Gancho`, 33,7 s) en lugar del marcador, antes de «Nueva York». Cinco cuadros, uno por frase: la producción que pierde su tajada cada año (1820 → 2000, `3–4 %`), diez soles de los que caen tres y el cuarto queda en duda (`30–40 %`), la regla de la colonia a hoy donde los casos sueltos se vuelven una franja continua (con su frase de la p. 531), la ficha con las cifras y el libro que no llegó a ver. La primera frase se partió en dos («…de todo lo que produce. Cada año.») para no pasar de 25 palabras sin perder el «en promedio». Música propia que se apaga sobre el libro; la escena 1 entra en silencio. Ya no hay marcadores: `validar --final` solo espera la voz real. |
+
+### Pasada de pulido (3-nov-2026)
+
+Sin cambiar guion, datos ni estructura. Los saltos se buscaron con la detección de cambios de
+imagen de ffmpeg sobre el video completo y se revisaron cuadro a cuadro.
+
+| Dónde | Qué se arregló |
+|---|---|
+| s00 · gancho | El contador de años mostraba años imposibles al correr (2980, 2992): cada dígito rodaba por su cuenta. Ahora el año avanza entero. La barra se funde sobre las monedas (antes quedaba ~1 s de pantalla vacía). La ficha se va antes de que entre el libro (antes se enciman). |
+| s03 · época | El volante entra con «Quiroz no apoyó al régimen» (antes, 5 s después). La cámara se acerca a leerlo en «Militó un tiempo…» y vuelve al muro en «Para un estudiante de esa época…» (antes, 25 s de muro quieto). La lista se funde más despacio en el muro. |
+| s04 · pizarra | Los primeros 9 s ya no son una pizarra vacía: se escribe el encabezado de la clase, `Etnohistoria Andina · F. Pease` (prólogo, p. 16). «Fernand Braudel» en vez de «Fernand BRAUDEL». |
+| s05 · método | Del mapa al gráfico y del gráfico a la balanza, el estante y la brújula: fundido cruzado (antes la imagen nueva entraba desde el negro, y se veía como un salto). La caja del fichero tiene volumen de madera. |
+| s07 · cierre | La tarjeta del próximo episodio respira: la cámara se acerca muy despacio mientras suena el tema (antes, 14 s congelada). |

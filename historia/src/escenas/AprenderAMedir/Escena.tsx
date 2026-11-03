@@ -125,11 +125,18 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
     return impacto(t, contacto, 0.06);
   };
   const fase = t < tPuntos ? 1 : t < tBalanza ? 2 : t < tEstante ? 3 : t < tAulas ? 4 : t < tBrujula ? 5 : 6;
-  const entra = (t0: number) => tramo(t, t0 - 0.2, 0.8, 'natural');
+  // fundido cruzado entre cuadros: el que se va queda debajo hasta que el que llega terminó de entrar
+  // (antes el nuevo entraba desde el negro y el cambio se veía como un salto)
+  const FUNDE = 0.7;
+  const entra = (t0: number) => tramo(t, t0, FUNDE, 'natural');
+  const inicios = [0, tPuntos, tBalanza, tEstante, tAulas, tBrujula]; // dónde empieza cada cuadro (1–6)
+  let previa = 0;
+  for (let k = fase - 1; k >= 1; k--) if (inicios[k - 1] < inicios[k]) { previa = k; break; }
+  const muestra = (k: number) => fase === k || (k === previa && t < inicios[fase - 1] + FUNDE);
 
   return (
     <AbsoluteFill style={{ backgroundColor: noche }}>
-      {fase === 1 ? (
+      {muestra(1) ? (
         <AbsoluteFill style={{ opacity: tramo(t, tMapa, 1, 'natural') }}>
           <Luz color={pal.ocre} x={40} y={40} radio={70} intensidad={0.08} />
           <AbsoluteFill style={{ transformOrigin: '0 0', transform: camara }}>
@@ -174,7 +181,8 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
         </AbsoluteFill>
       ) : null}
 
-      {fase === 2 ? (
+      {muestra(2) ? (
+        <AbsoluteFill style={{ opacity: entra(tPuntos) }}>
         <Papel color={pal.papel} envejecido={0.25}>
           <Dispersion paleta={pal} id={`${escena.id}-disp`} t={t - tPuntos} tRecta={tRecta - tPuntos} apagaDiscursos={tramo(t, tDiscursos, 1.2, 'natural')}
             aparece={entra(tPuntos)} tCaen={tCaen - tPuntos} busca={explica} residuos={!explica}
@@ -198,17 +206,18 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
               opacity: tramo(t, tSerie + 0.4, 0.6, 'natural') }}>{props.serie.rotulo.toUpperCase()}</div>
           ) : null}
         </Papel>
+        </AbsoluteFill>
       ) : null}
 
-      {fase === 3 ? (
-        <AbsoluteFill style={{ opacity: entra(tBalanza) }}>
+      {muestra(3) ? (
+        <AbsoluteFill style={{ opacity: entra(tBalanza), backgroundColor: noche }}>
           <Luz color={pal.ocre} x={50} y={35} radio={60} intensidad={0.2} />
           <Balanza paleta={pal} id={`${escena.id}-bal`} angulo={angulo} izquierda={props.balanza[0]} derecha={props.balanza[1]} cae={[cae1, cae2]} />
         </AbsoluteFill>
       ) : null}
 
-      {fase === 4 ? (
-        <AbsoluteFill style={{ opacity: entra(tEstante) }}>
+      {muestra(4) ? (
+        <AbsoluteFill style={{ opacity: entra(tEstante), backgroundColor: noche }}>
           <Luz color={pal.ocre} x={50} y={50} radio={60} intensidad={0.2} />
           <Estante paleta={pal} id={`${escena.id}-est`} titulos={props.temas} aparece={entra(tEstante)}
             entra={props.temas.map((_, i) => caidaLibro(i, t))} escalas={props.temas.map((_, i) => deformaLibro(i))} />
@@ -220,8 +229,8 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
         </AbsoluteFill>
       ) : null}
 
-      {fase === 5 ? (
-        <AbsoluteFill style={{ opacity: entra(tAulas) }}>
+      {muestra(5) ? (
+        <AbsoluteFill style={{ opacity: entra(tAulas), backgroundColor: noche }}>
           <Luz color={pal.ocre} x={50} y={90} radio={70} intensidad={0.18} />
           <Aula paleta={pal} id={`${escena.id}-aula`} llenado={tramo(t, tAulas + 1, tBrujula - tAulas - 2, 'natural')} />
           {props.ficha_aulas ? (
@@ -232,8 +241,8 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
         </AbsoluteFill>
       ) : null}
 
-      {fase === 6 ? (
-        <AbsoluteFill style={{ opacity: entra(tBrujula) }}>
+      {muestra(6) ? (
+        <AbsoluteFill style={{ opacity: entra(tBrujula), backgroundColor: noche }}>
           {tizaK > 0 ? <Pizarra aparece={tizaK} /> : null}
           <Luz color={pal.ocre} x={50} y={45} radio={55} intensidad={0.22 * (1 - tizaK)} />
           <Brujula paleta={pal} id={`${escena.id}-bru`} angulo={anguloAguja} radio={ladoALado ? 250 : 290} tiza={tizaK}

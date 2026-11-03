@@ -57,7 +57,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   }, []);
 
   // —— A: lista de admisión con el sello
-  const muro = tramo(t, tAfiches - 0.3, 0.6, 'natural');
+  const muro = tramo(t, tAfiches - 0.5, 1.0, 'natural'); // la lista se funde despacio en el muro
   const rebote = t < tSello ? 0 : spring({ frame: frame - tSello * fps, fps, config: { damping: 8, mass: 1.1, stiffness: 170 } });
   const caidaSello = t < tSello ? 0 : mix(1.9, 1, rebote);
   const corchete = tramo(t, tPrimeros, 0.9, 'natural');
@@ -67,6 +67,12 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   const volante = t < tVolante ? 0 : spring({ frame: frame - tVolante * fps, fps, config: { damping: 18, mass: 1, stiffness: 90 } });
   // el volante sube en curva (arco), no en línea recta; cuando se queda, la tachuela lo clava
   const tTachuela = tVolante + 0.7;
+  // la cámara se acerca a leer el volante y vuelve a ver el muro (con los beats leer y vuelve)
+  const tLeer = beat(b, 'leer', Infinity), tVuelve = beat(b, 'vuelve', Infinity);
+  const kLeer = tramo(t, tLeer, 2.4, 'pesado') * (1 - tramo(t, tVuelve, 2.2, 'solemne'));
+  const VOLANTE_C = { x: 1230, y: 770 }, S_LEER = 1.7;
+  const sLeer = mix(1, S_LEER, kLeer), cxL = mix(960, VOLANTE_C.x, kLeer), cyL = mix(540, VOLANTE_C.y, kLeer);
+  const camaraMuro = kLeer > 0 ? `translate(${960 - sLeer * cxL}px, ${540 - sLeer * cyL}px) scale(${sLeer})` : undefined;
   const tachuela = t < tTachuela - 0.12 ? 0 : mix(1.6, 1, tramo(t, tTachuela - 0.12, 0.12, 'tenso')) + asienta(t, tTachuela, -0.08, 30, 14);
   // —— C: las capas
   const capas = tramo(t, tCapas - 0.4, 1.0, 'natural');
@@ -110,7 +116,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       {/* B: el muro de afiches */}
       {conEpoca && muro > 0 && capas < 1 ? (
         <AbsoluteFill style={{ opacity: muro * (1 - capas) }}>
-          <AbsoluteFill>
+          <AbsoluteFill style={camaraMuro ? { transformOrigin: '0 0', transform: camaraMuro } : undefined}>
             <Papel color={mezclar(pal.fondo, pal.ocre, 0.16)} envejecido={0.6} escala={700}>
               {/* restos de afiches viejos, arrancados */}
               <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
@@ -195,8 +201,13 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
           <AbsoluteFill>
             <Pizarra>
               <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+                {/* el encabezado de la clase, como lo escribe el profe al llegar */}
+                {props.encabezado ? (
+                  <TextoTiza id={`${escena.id}-clase`} texto={props.encabezado} x={1360} y={110} anchor="middle"
+                    k={tramo(t, beat(b, 'clase', 1), 1.8, 'natural')} size={40} fontFamily={fuente.imprentaItalica} opacidad={(1 - 0.6 * palabra - 0.6 * remate) * 0.85} />
+                ) : null}
                 {props.ficha ? (
-                  <TextoTiza id={`${escena.id}-autor`} texto={props.ficha.split('·')[0].trim().replace(/^F\. /, 'Fernand ')} x={110} y={120}
+                  <TextoTiza id={`${escena.id}-autor`} texto={props.ficha.split('·')[0].trim().replace(/^F\. /, 'Fernand ').replace(/\b([A-ZÁÉÍÓÚÑ])([A-ZÁÉÍÓÚÑ]+)\b/g, (_, a: string, r: string) => a + r.toLowerCase())} x={110} y={120}
                     k={tramo(t, tBraudel, 1.4, 'natural')} size={52} fontFamily={fuente.imprentaItalica} opacidad={1 - 0.6 * palabra - 0.6 * remate} />
                 ) : null}
               </svg>
@@ -207,6 +218,15 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                 {props.palabra ? (
                   <TextoTiza id={`${escena.id}-palabra`} texto={props.palabra} x={960} y={560} anchor="middle" k={tramo(t, tPalabra, 1.6, 'natural')}
                     size={120} ancho={0.42} fontFamily={fuente.imprentaItalica} opacidad={palabra} brillo={0.6} />
+                ) : null}
+                {/* el término como lo escribió el autor, y dónde */}
+                {props.palabra && props.palabra_cita ? (
+                  <>
+                    <TextoTiza id={`${escena.id}-original`} texto={props.palabra_cita.original} x={960} y={660} anchor="middle"
+                      k={tramo(t, tPalabra + 1.0, 1.2, 'natural')} size={54} ancho={0.42} fontFamily={fuente.imprentaItalica} opacidad={palabra * 0.9} />
+                    <TextoTiza id={`${escena.id}-referencia`} texto={props.palabra_cita.referencia} x={960} y={722} anchor="middle"
+                      k={tramo(t, tPalabra + 1.6, 1.4, 'natural')} size={26} ancho={0.42} fontFamily={fuente.imprentaItalica} opacidad={palabra * 0.7} />
+                  </>
                 ) : null}
                 {props.nota ? (
                   <TextoTiza id={`${escena.id}-nota`} texto={props.nota} x={430} y={890} k={tramo(t, tRealce + 0.3, 2.6, 'natural')} size={46}
