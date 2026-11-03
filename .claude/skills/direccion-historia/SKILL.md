@@ -6,8 +6,10 @@ description: Dirección de los videos de Historia del Altiplano (historia/): có
 # Dirección — Historia del Altiplano
 
 > **Estado (2026-11-03).** Escrito el 2026-10-27, antes de la guía `historia/DIRECCION_DE_VIDEO.md`
-> (2026-10-30, en palabras del director). Donde choquen, gana la guía (`historia/CLAUDE.md` §2) hasta
-> que Gerson decida; los choques están en `historia/.claude/skills/canal-historia/criterios.md`.
+> (2026-10-30, en palabras del director). Los tres choques con la guía los decidió Gerson el
+> 2026-11-03 y están aplicados aquí, marcados **Decidido**: el rojo (para la culpa y para el
+> corrector), el gancho (el de la guía) y el silencio (al menos uno). Si aparece otro choque, gana la
+> guía (`historia/CLAUDE.md` §2) hasta que Gerson decida.
 > La §8 calibró el video 000 cuando tenía 6 escenas: sirve como ejemplo del criterio, no como estado
 > actual del video.
 
@@ -103,7 +105,11 @@ s06 Nosotros sí podemos leerlo.
 
 Si un conector solo puede ser "y además", esa escena se fusiona con otra o se va.
 
-### 2.3 El gancho (los primeros 10–15 segundos)
+### 2.3 El gancho
+
+> **Decidido (Gerson, 2026-11-03):** el gancho es el de la guía (`DIRECCION_DE_VIDEO.md` §2.5): de
+> 20 a 60 s, dice de frente qué va a encontrar la gente, con hechos duros. Lo que sigue vale dentro
+> de ese gancho, en lo que no lo contradiga.
 
 - **Abre con una persona en un momento concreto**, no con contexto. "Nueva York, fines de 2012. Un
   historiador peruano se está muriendo." Fecha, lugar, persona, problema. Nada de "La corrupción
@@ -235,9 +241,11 @@ Ejemplos del 000 que funcionan porque **la imagen dice algo que la voz no dice**
 - **Algo cambia cada 6–20 segundos**: información, emoción, estado visual o lo que está en juego.
   Pero el cambio tiene motivo; no se mueve la cámara para "mantener la atención".
 - **El ojo sabe dónde mirar:** un solo elemento entra a la vez; lo demás espera o se atenúa.
-- **Paleta con significado:** `papel` y `ocre` son el archivo y el tiempo; **`rojo` es solo para
-  la culpa** (la deuda inflada, la flecha hacia el Estado, la mitad que no tuvimos). Si el rojo
-  aparece en todo, ya no significa nada.
+- **Paleta con significado:** `papel` y `ocre` son el archivo y el tiempo; **`rojo` es para la culpa**
+  (la deuda inflada, la flecha hacia el Estado, la mitad que no tuvimos) **y para el rojo de
+  corrector**: subrayar, tachar, señalar el dato (**Decidido**, Gerson, 2026-11-03). Apagado, para una pérdida
+  (`historia/CLAUDE.md` §4). Fuera de eso, no.
+  Si el rojo aparece en todo, ya no significa nada.
 - **Todo animado, sin fotos de stock ni metraje genérico.** Si se usa un documento o grabado de
   época, tiene que ser de dominio público y estar en la tabla de assets de `fuentes.md`.
 
@@ -264,7 +272,8 @@ Cada animación declara su peso (`src/direction/easings.ts`); nunca un easing gl
 El silencio también es sonido. Después de un paisaje sonoro denso, el silencio repentino pone al
 espectador en alerta y puede provocar una respuesta emocional; pero quitar el ambiente sin motivo
 aplana el espacio y hace que los cortes se sientan bruscos. Por eso el silencio es **una
-herramienta escasa**: una vez por video, antes del dato más fuerte (en el 000, entre `apagar` y
+herramienta escasa**: **al menos** una vez por video, de 1,5 a 3 s, justo antes o después del dato
+más fuerte (**Decidido**, Gerson, 2026-11-03, como `historia/CLAUDE.md` §6), y sin abusar (en el 000, entre `apagar` y
 `barra` de s04).
 
 - **Estados de la música** (campo `estado_musica`): ausente → presente → tensión → silencio →
@@ -303,7 +312,7 @@ Antes de grabar la voz y antes de renderizar, recorrer esta lista. **Si fallan t
 reescribe**, no se maquilla.
 
 **Guion**
-- [ ] Los primeros 10 s tienen persona + lugar + fecha + problema, y dejan una pregunta concreta.
+- [ ] El gancho es el de la guía (§2.3): de frente, con hechos duros, y deja una pregunta concreta.
 - [ ] Cada escena tiene `cambio` "de X a Y" con cargas distintas.
 - [ ] Entre cada par de escenas cabe "pero" o "por eso".
 - [ ] Cada frase tiene al menos un nombre, número, objeto, lugar o fecha.
@@ -321,10 +330,10 @@ reescribe**, no se maquilla.
 **Imagen y sonido**
 - [ ] Cada escena tiene `intencion` y la imagen dice algo que la voz no dice.
 - [ ] Ningún rótulo pasa de 17 caracteres por segundo.
-- [ ] El rojo solo aparece donde hay culpa.
+- [ ] El rojo solo aparece donde hay culpa o donde el corrector señala el dato.
 - [ ] Hay un momento quieto antes de cada revelación.
 - [ ] La curva de `intensidad` sube, baja y vuelve a subir; el cierre baja.
-- [ ] Un solo silencio total en el video, antes del dato más fuerte.
+- [ ] Al menos un silencio deliberado (1,5–3 s), justo antes o después del dato más fuerte.
 - [ ] La voz es la de Gerson, con sus respiraciones.
 
 **La prueba de fuego:** si cambias "Perú" por otro país y "Quiroz" por otro nombre, ¿el guion

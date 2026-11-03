@@ -82,7 +82,9 @@ episodio para inventar. Para *Historia de la corrupción en el Perú*:
   donde estamos.
 - **Una palabra clave por episodio** a pantalla completa, como conclusión de un párrafo, quieta
   (no más de una: si hay más, se declara `texto-repite-voz`).
-- **El rojo de corrector** es para lo que importa: subrayar, tachar, señalar el dato.
+- **El rojo** es para el corrector (subrayar, tachar, señalar el dato) y para la culpa (la deuda
+  inflada, la flecha hacia el Estado); apagado, para una pérdida (§4). Las dos primeras, decididas
+  por Gerson el 2026-11-03. Fuera de eso, no: si el rojo aparece en todo, ya no significa nada.
 - **El tema del canal** (quena sobre bombo y charango) suena solo al final.
 
 ## 2. Estructura del repo

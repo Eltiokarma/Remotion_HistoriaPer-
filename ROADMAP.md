@@ -112,7 +112,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `t1-revision`, `f0-skill-remotion`
   - Prevista: — · Real: 2026-11-03 → …
   - Tiempo: H ¿? · A ≈ 12:00–12:20 UTC (v0) · R ¿? · tokens ¿?
-  - Nota: Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Tres choques entre ellos esperan decisión de Gerson (canal-historia/criterios.md). Falta su veredicto sobre las muestras (t1-revision).
+  - Nota: Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision).
   - Evidencia: [canal-historia/SKILL.md](historia/.claude/skills/canal-historia/SKILL.md)
 - [ ] **Medir si el skill reemplaza esfuerzo** `f0-skill-medir` — 💡 propuesto
   - Entregable: Una muestra nueva hecha dos veces: esfuerzo medio con skill contra alto sin skill; comparar revisor, defectos, vueltas, tokens y la opinión de Gerson

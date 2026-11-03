@@ -12,20 +12,19 @@ lugar, antes de trabajar.
 | `historia/CLAUDE.md` | vigente | Reglas del canal: innegociables, oficio, gramática de la serie, código | Base de todo |
 | `.claude/skills/direccion-historia/` | 2026-10-27 | Criterio de dirección: la voz de la serie («una persona peruana que leyó el libro… con calma y con bronca contenida»), cada escena gira, «pero / por eso», lo concreto, escribir para el oído, **lista negra de lo que suena a IA**, 17 caracteres por segundo, quietud antes del golpe, curva de intensidad, pase final | Vale salvo donde choca con lo de arriba |
 
-## Choques para que Gerson decida
+## Choques decididos por Gerson (2026-11-03)
 
-Encontrados al traer `direccion-historia` a `main` (2026-11-03). Mientras no decida, se aplica la
-columna «Hoy manda».
+Aparecieron al traer `direccion-historia` a `main`. Ya están aplicados en ese skill (marcados
+**Decidido**) y en `historia/CLAUDE.md`.
 
-| Tema | `direccion-historia` (27 oct) | Lo vigente | Hoy manda |
-|---|---|---|---|
-| El rojo | «solo para la culpa» (la deuda inflada, la flecha al Estado) | «el rojo de corrector es para lo que importa: subrayar, tachar, señalar el dato»; «rojo apagado para una pérdida» (`CLAUDE.md` §1.3, §4) | `CLAUDE.md` |
-| El gancho | 10–15 s; abre con una persona en un momento concreto, no con contexto | 20–60 s; dice de frente qué va a encontrar la gente, con hechos duros (`DIRECCION_DE_VIDEO.md` §2.5) | La guía |
-| El silencio | «un solo silencio total en el video», antes del dato más fuerte | «al menos un momento de 1,5–3 s sin música por video» (`CLAUDE.md` §6) | `CLAUDE.md` (al menos uno) |
-| Ejemplos | §8 calibra el 000 de 6 escenas | El 000 tiene hoy 11 escenas y el 0·1 se separó | Usar §8 como ejemplo, no como estado |
+| Tema | Había | Decisión |
+|---|---|---|
+| El rojo | `direccion-historia`: «solo para la culpa». `CLAUDE.md`: «rojo de corrector para lo que importa» | **Para ambos**: la culpa y el corrector (subrayar, tachar, señalar el dato). Sigue el rojo apagado para una pérdida (§4). El «30 %» de la muestra 01 y el subrayado de «Puno» de la 05 quedan bien |
+| El gancho | 10–15 s, una persona en un momento concreto / 20–60 s, de frente y con hechos (guía) | **El de la guía** (`DIRECCION_DE_VIDEO.md` §2.5) |
+| El silencio | «uno solo por video» / «al menos uno» | **Al menos uno**, de 1,5–3 s, junto al dato más fuerte (`CLAUDE.md` §6) |
 
-Consecuencia ya visible: en el laboratorio el rojo marca el «30 %» (muestra 01) y el subrayado de
-«Puno» (muestra 05). Con la regla «solo para la culpa» no irían en rojo.
+Si aparece otro choque entre los documentos del director, gana la guía hasta que Gerson decida, y
+se anota aquí.
 
 ## Lo que falta: el veredicto sobre el laboratorio
 
