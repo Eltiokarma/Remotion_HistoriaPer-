@@ -43,7 +43,7 @@ laboratorio/
 │   ├── ci.sh                 ← lo que corre la CI (una pasada)
 │   ├── comprobar_texturas.py ← mismo cuadro en frío y en caliente (texturas)
 │   └── geometria_monedas.py  ← distancia entre monedas en vuelo y quietas (muestra 01)
-├── resultados/NN-nombre/     ← EN GIT: previa.json, final.json, revision.json, hoja.jpg
+├── resultados/NN-nombre/     ← EN GIT: final-frio/final-caliente/previa-caliente.json, revision.json, hoja.jpg, antes/, pendientes/
 └── out/                      ← FUERA DE GIT: los MP4
 ```
 
