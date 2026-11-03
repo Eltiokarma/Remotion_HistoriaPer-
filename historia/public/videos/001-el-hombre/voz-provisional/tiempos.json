@@ -305,57 +305,57 @@
   ]
  },
  "s01": {
-  "duracion": 50.27,
+  "duracion": 49.72,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 1.19,
+    "hasta": 1.22,
     "texto": "Nueva York."
    },
    {
-    "desde": 1.64,
-    "hasta": 6.95,
+    "desde": 1.67,
+    "hasta": 6.93,
     "texto": "Un historiador peruano revisa, con minuciosidad, las pruebas de imprenta."
    },
    {
-    "desde": 7.4,
-    "hasta": 10.53,
+    "desde": 7.38,
+    "hasta": 10.44,
     "texto": "Es la traducción al español de su último libro."
    },
    {
-    "desde": 11.98,
-    "hasta": 14.85,
+    "desde": 11.89,
+    "hasta": 14.78,
     "texto": "No le queda mucho tiempo, y lo sabe."
    },
    {
-    "desde": 16.8,
-    "hasta": 20.47,
+    "desde": 16.73,
+    "hasta": 20.41,
     "texto": "En los agradecimientos escribe una línea que casi nadie lee."
    },
    {
-    "desde": 20.92,
-    "hasta": 26.55,
+    "desde": 20.86,
+    "hasta": 26.66,
     "texto": "Les da las gracias a sus médicos por alargar estos días, para poder completar la tarea."
    },
    {
-    "desde": 28.2,
-    "hasta": 32.0,
+    "desde": 28.31,
+    "hasta": 32.02,
     "texto": "Unas líneas más abajo celebra el nacimiento de su hijo."
    },
    {
-    "desde": 34.05,
-    "hasta": 36.11,
+    "desde": 34.07,
+    "hasta": 36.16,
     "texto": "Murió en enero de dos mil trece."
    },
    {
-    "desde": 42.76,
-    "hasta": 44.34,
+    "desde": 42.81,
+    "hasta": 44.41,
     "texto": "El libro salió en mayo."
    },
    {
-    "desde": 45.99,
-    "hasta": 50.27,
-    "texto": "Este video es sobre ese hombre, y sobre cómo aprendió a buscar."
+    "desde": 46.06,
+    "hasta": 49.72,
+    "texto": "Estos videos son sobre ese hombre, y sobre lo que encontró."
    }
   ],
   "palabras": [
@@ -364,23 +364,23 @@
     "Nueva"
    ],
    [
-    0.75,
+    0.76,
     "York."
    ],
    [
-    1.64,
+    1.67,
     "Un"
    ],
    [
-    1.86,
+    1.88,
     "historiador"
    ],
    [
-    2.72,
+    2.73,
     "peruano"
    ],
    [
-    3.29,
+    3.3,
     "revisa,"
    ],
    [
@@ -392,328 +392,324 @@
     "minuciosidad,"
    ],
    [
-    5.16,
+    5.15,
     "las"
    ],
    [
-    5.44,
+    5.43,
     "pruebas"
    ],
    [
-    6.02,
+    6.0,
     "de"
    ],
    [
-    6.23,
+    6.22,
     "imprenta."
    ],
    [
-    7.4,
+    7.38,
     "Es"
    ],
    [
-    7.6,
+    7.57,
     "la"
    ],
    [
-    7.79,
+    7.76,
     "traducción"
    ],
    [
-    8.51,
+    8.46,
     "al"
    ],
    [
-    8.71,
+    8.65,
     "español"
    ],
    [
-    9.23,
+    9.16,
     "de"
    ],
    [
-    9.42,
+    9.36,
     "su"
    ],
    [
-    9.62,
+    9.55,
     "último"
    ],
    [
-    10.08,
+    9.99,
     "libro."
    ],
    [
-    11.98,
+    11.89,
     "No"
    ],
    [
-    12.22,
+    12.13,
     "le"
    ],
    [
-    12.45,
+    12.36,
     "queda"
    ],
    [
-    12.91,
+    12.83,
     "mucho"
    ],
    [
-    13.38,
+    13.3,
     "tiempo,"
    ],
    [
-    14.0,
+    13.92,
     "y"
    ],
    [
-    14.15,
+    14.08,
     "lo"
    ],
    [
-    14.39,
+    14.31,
     "sabe."
    ],
    [
-    16.8,
+    16.73,
     "En"
    ],
    [
-    16.98,
+    16.91,
     "los"
    ],
    [
-    17.22,
+    17.15,
     "agradecimientos"
    ],
    [
-    18.19,
+    18.12,
     "escribe"
    ],
    [
-    18.67,
+    18.6,
     "una"
    ],
    [
-    18.91,
+    18.84,
     "línea"
    ],
    [
-    19.27,
+    19.21,
     "que"
    ],
    [
-    19.51,
+    19.45,
     "casi"
    ],
    [
-    19.81,
+    19.75,
     "nadie"
    ],
    [
-    20.17,
+    20.11,
     "lee."
    ],
    [
-    20.92,
+    20.86,
     "Les"
    ],
    [
-    21.18,
+    21.13,
     "da"
    ],
    [
-    21.37,
+    21.32,
     "las"
    ],
    [
-    21.62,
+    21.59,
     "gracias"
    ],
    [
-    22.14,
+    22.11,
     "a"
    ],
    [
-    22.26,
+    22.25,
     "sus"
    ],
    [
-    22.52,
+    22.51,
     "médicos"
    ],
    [
-    23.03,
+    23.04,
     "por"
    ],
    [
-    23.29,
+    23.3,
     "alargar"
    ],
    [
-    23.8,
+    23.83,
     "estos"
    ],
    [
-    24.18,
+    24.22,
     "días,"
    ],
    [
-    24.57,
+    24.62,
     "para"
    ],
    [
-    24.89,
+    24.94,
     "poder"
    ],
    [
-    25.27,
+    25.34,
     "completar"
    ],
    [
-    25.91,
+    26.0,
     "la"
    ],
    [
-    26.1,
+    26.2,
     "tarea."
    ],
    [
-    28.2,
+    28.31,
     "Unas"
    ],
    [
-    28.54,
+    28.64,
     "líneas"
    ],
    [
-    29.02,
+    29.1,
     "más"
    ],
    [
-    29.29,
+    29.37,
     "abajo"
    ],
    [
-    29.69,
+    29.77,
     "celebra"
    ],
    [
-    30.24,
+    30.3,
     "el"
    ],
    [
-    30.44,
+    30.5,
     "nacimiento"
    ],
    [
-    31.18,
+    31.23,
     "de"
    ],
    [
-    31.39,
+    31.42,
     "su"
    ],
    [
-    31.59,
+    31.62,
     "hijo."
    ],
    [
-    34.05,
+    34.07,
     "Murió"
    ],
    [
-    34.42,
+    34.45,
     "en"
    ],
    [
-    34.61,
+    34.64,
     "enero"
    ],
    [
-    34.99,
+    35.02,
     "de"
    ],
    [
-    35.18,
+    35.21,
     "dos"
    ],
    [
-    35.43,
+    35.46,
     "mil"
    ],
    [
-    35.68,
+    35.72,
     "trece."
    ],
    [
-    42.76,
+    42.81,
     "El"
    ],
    [
-    42.96,
+    43.01,
     "libro"
    ],
    [
-    43.36,
+    43.41,
     "salió"
    ],
    [
-    43.75,
+    43.81,
     "en"
    ],
    [
-    43.95,
+    44.01,
     "mayo."
    ],
    [
-    45.99,
-    "Este"
+    46.06,
+    "Estos"
    ],
    [
-    46.33,
-    "video"
+    46.43,
+    "videos"
    ],
    [
-    46.73,
-    "es"
+    46.86,
+    "son"
    ],
    [
-    46.93,
+    47.1,
     "sobre"
    ],
    [
-    47.33,
+    47.47,
     "ese"
    ],
    [
-    47.6,
+    47.71,
     "hombre,"
    ],
    [
-    48.13,
+    48.2,
     "y"
    ],
    [
-    48.26,
+    48.32,
     "sobre"
    ],
    [
-    48.66,
-    "cómo"
+    48.68,
+    "lo"
    ],
    [
-    49.0,
-    "aprendió"
+    48.87,
+    "que"
    ],
    [
-    49.6,
-    "a"
-   ],
-   [
-    49.73,
-    "buscar."
+    49.11,
+    "encontró."
    ]
   ]
  },

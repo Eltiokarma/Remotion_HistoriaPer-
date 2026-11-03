@@ -66,7 +66,7 @@ Unas líneas más abajo celebra el nacimiento de su hijo. [PAUSA 1,5s]
 
 Murió en enero de 2013. [PAUSA 6s: una cruz sobre negro; la fecha; 2,5 s de silencio; recién después el punto rojo y la cámara recorre los meses] El libro salió en mayo. [PAUSA 1s]
 
-Este video es sobre ese hombre, y sobre cómo aprendió a buscar.
+Estos videos son sobre ese hombre, y sobre lo que encontró.
 
 ---
 
