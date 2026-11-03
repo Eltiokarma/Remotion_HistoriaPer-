@@ -48,14 +48,16 @@
         "pbi": {
           "min": 3,
           "max": 4,
-          "rotulo": "LO QUE PRODUCE EL PAÍS (PBI), CADA AÑO"
+          "rotulo": "LO QUE PRODUCE EL PAÍS (PBI), CADA AÑO",
+          "nota": "PROMEDIO 1820–2000 · ESTIMADOS PRELIMINARES"
         },
         "monedas": {
           "total": 10,
           "min": 3,
           "max": 4,
           "rotulo": "PRESUPUESTO DEL ESTADO",
-          "cifra": "30–40 %"
+          "cifra": "30–40 %",
+          "nota": "COSTO ESTIMADO: LO QUE NO LLEGÓ A SU FIN PÚBLICO (DESVÍOS E INVERSIÓN PERDIDA)"
         },
         "regla": {
           "desde": 1680,

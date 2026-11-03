@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import type { Ejemplo } from '../ejemplo';
 
-const rango = z.object({ min: z.number(), max: z.number(), rotulo: z.string() });
+const rango = z.object({ min: z.number(), max: z.number(), rotulo: z.string(), /** Segunda línea: la cautela o qué incluye la cifra. */ nota: z.string().optional() });
 
 /**
  * El golpe antes de la historia (DIRECCION_DE_VIDEO §2.5): cinco cuadros que van con su frase.
@@ -16,7 +16,7 @@ export const esquema = z.object({
   /** La tajada de la producción (en %), con su rótulo. */
   pbi: rango,
   /** Las monedas: cuántas hay y cuántas caen (min seguras, max la que queda en duda). */
-  monedas: z.object({ total: z.number().int().min(2).max(12), min: z.number().int(), max: z.number().int(), rotulo: z.string(), cifra: z.string() }),
+  monedas: z.object({ total: z.number().int().min(2).max(12), min: z.number().int(), max: z.number().int(), rotulo: z.string(), cifra: z.string(), nota: z.string().optional() }),
   /** La regla del final: de dónde a dónde, y dónde termina la colonia. */
   regla: z.object({ desde: z.number().int(), hasta: z.number().int(), corte: z.number().int(), antes: z.string(), despues: z.string() }),
   /** La frase del autor, textual, con su pie. */

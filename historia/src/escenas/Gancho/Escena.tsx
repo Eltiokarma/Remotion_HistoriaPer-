@@ -131,6 +131,9 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
             <rect x={BX + BW - wMin} y={BY} width={wMin * kRojo} height={BH} fill={pal.rojo} />
             <rect x={BX} y={BY} width={BW} height={BH} fill="none" stroke={papel} strokeWidth={2} />
             <text x={BX} y={BY + BH + 46} fontFamily={fuente.mono} fontSize={22} letterSpacing="0.16em" fill={alfa(papel, 0.7)}>{props.pbi.rotulo}</text>
+            {props.pbi.nota ? (
+              <text x={BX} y={BY + BH + 82} fontFamily={fuente.mono} fontSize={20} letterSpacing="0.16em" fill={alfa(papel, 0.5)} opacity={kRojo}>{props.pbi.nota}</text>
+            ) : null}
             <text x={BX + BW - wMax / 2} y={BY - 26} textAnchor="middle" fontFamily={fuente.afiche} fontSize={64} fill={pal.rojo} opacity={kRojo}>
               {`${props.pbi.min}–${props.pbi.max} %`}
             </text>
@@ -180,6 +183,10 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
           })}
           <div style={{ position: 'absolute', left: x0M, top: 650, fontFamily: fuente.mono, fontSize: 22, letterSpacing: '0.16em', color: alfa(papel, 0.7),
             opacity: tramo(t, tSoles + 0.6, 0.6, 'natural') }}>{props.monedas.rotulo}</div>
+          {props.monedas.nota ? (
+            <div style={{ position: 'absolute', left: x0M, top: 690, fontFamily: fuente.mono, fontSize: 20, letterSpacing: '0.16em', color: alfa(papel, 0.5),
+              opacity: tramo(t, tCaen + 0.6, 0.6, 'natural') }}>{props.monedas.nota}</div>
+          ) : null}
           <div style={{ position: 'absolute', right: x0M, top: 330, fontFamily: fuente.afiche, fontSize: 64, color: pal.rojo,
             opacity: tramo(t, tCaen + 0.2, 0.5, 'natural') }}>{props.monedas.cifra}</div>
         </AbsoluteFill>
