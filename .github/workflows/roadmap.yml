@@ -1,0 +1,18 @@
+# El roadmap tiene una sola fuente (roadmap/roadmap.json). Esta comprobación falla si alguien
+# editó ROADMAP.md a mano o cambió el JSON sin regenerar, o si el JSON es incoherente
+# (dependencias que no existen, tareas hechas sin evidencia, bloqueos sin motivo…).
+name: roadmap
+on:
+  push:
+    paths: ['roadmap/**', 'ROADMAP.md', '.github/workflows/roadmap.yml']
+  pull_request:
+    paths: ['roadmap/**', 'ROADMAP.md', '.github/workflows/roadmap.yml']
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node roadmap/generar.mjs --comprobar

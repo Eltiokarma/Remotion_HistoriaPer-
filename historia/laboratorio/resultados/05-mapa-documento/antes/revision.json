@@ -1,0 +1,15 @@
+{
+  "video": "out/05-mapa-documento/final.mp4",
+  "cuadros": 150,
+  "cambio_medio": 1.106,
+  "cambio_maximo": {
+    "cuadro": 3,
+    "valor": 12.96
+  },
+  "parpadeos": [],
+  "cuadros_vacios": [
+    0
+  ],
+  "cambio_medio_ultimo_segundo": 0.035,
+  "metodo": "gris 320×180; parpadeo = salto > 4 y > 4× la diferencia entre sus vecinos; vacío = desviación < 2"
+}

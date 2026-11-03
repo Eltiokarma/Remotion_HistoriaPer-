@@ -1,0 +1,13 @@
+{
+  "video": "out/02-cordillera-tinta/final.mp4",
+  "cuadros": 150,
+  "cambio_medio": 0.056,
+  "cambio_maximo": {
+    "cuadro": 75,
+    "valor": 0.22
+  },
+  "parpadeos": [],
+  "cuadros_vacios": [],
+  "cambio_medio_ultimo_segundo": 0.022,
+  "metodo": "gris 320×180; parpadeo = salto > 4 y > 4× la diferencia entre sus vecinos; vacío = desviación < 2"
+}

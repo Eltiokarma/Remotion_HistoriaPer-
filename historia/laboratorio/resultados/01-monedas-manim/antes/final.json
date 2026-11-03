@@ -1,0 +1,44 @@
+{
+  "muestra": "01-monedas-manim",
+  "etapa": "final",
+  "inicio_utc": "2026-11-03T01:47:29+00:00",
+  "comando": "/tmp/claude-0/sp/venv-manim/bin/python -m manim render --resolution 1920,1080 --frame_rate 30 --disable_caching --media_dir out/manim -o final muestras/01-monedas-manim/monedas.py DiezMonedas",
+  "codigo_salida": 0,
+  "segundos_pared": 5.6,
+  "segundos_cpu": 8.9,
+  "pico_rss_mb": 529,
+  "pico_rss_metodo": "suma del RSS del árbol de procesos, muestreo cada 0,25 s",
+  "maquina": {
+    "nombre": "contenedor en la nube (sesión de Claude Code)",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "hilos_visibles": 4,
+    "ram_gb": 15.7,
+    "gpu": "ninguna detectada",
+    "so": "Linux 6.18.44-fc-v230"
+  },
+  "versiones": {
+    "node": "v22.23.4",
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+    "python_medidor": "3.13.18",
+    "python_manim": "3.12.3",
+    "manim": "0.22.1",
+    "remotion": "4.0.539",
+    "three": "0.187.0",
+    "@remotion/three": "4.0.539",
+    "@react-three/fiber": "9.8.2",
+    "@react-three/drei": "10.7.9",
+    "roughjs": "4.6.6",
+    "p5": "2.3.4"
+  },
+  "salida": {
+    "archivo": "out/manim/videos/monedas/1080p30/final.mp4",
+    "duracion_s": 4.999674,
+    "cuadros": 150,
+    "ancho": 1920,
+    "alto": 1080,
+    "fps": "30/1",
+    "codec": "h264",
+    "audio": "aac",
+    "mb": 0.33
+  }
+}

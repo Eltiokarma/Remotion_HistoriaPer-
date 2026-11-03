@@ -1,0 +1,47 @@
+{
+  "entrada": "src/index.ts",
+  "filas": [
+    {
+      "composicion": "v001-el-hombre-s00",
+      "cuadro": 45,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    },
+    {
+      "composicion": "v001-el-hombre-s01",
+      "cuadro": 45,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    },
+    {
+      "composicion": "v001-el-hombre-s02",
+      "cuadro": 45,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    },
+    {
+      "composicion": "v001-el-hombre-s03",
+      "cuadro": 45,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    },
+    {
+      "composicion": "v001-el-hombre-s05",
+      "cuadro": 45,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    },
+    {
+      "composicion": "v001-el-hombre-s06",
+      "cuadro": 45,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    },
+    {
+      "composicion": "v001-el-hombre-s07",
+      "cuadro": 45,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    }
+  ]
+}

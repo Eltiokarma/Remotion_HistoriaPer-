@@ -1,0 +1,11 @@
+{
+  "entrada": "laboratorio/remotion/index.ts",
+  "filas": [
+    {
+      "composicion": "lab-02-cordillera-tinta",
+      "cuadro": 0,
+      "diferencia_media": 0.0,
+      "pixeles_que_cambian_pct": 0.0
+    }
+  ]
+}
