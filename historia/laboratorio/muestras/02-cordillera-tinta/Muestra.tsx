@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { AbsoluteFill, Img, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, useCurrentFrame, useVideoConfig } from 'remotion';
 import rough from 'roughjs';
 import { Papel } from '../../../src/components/atmosfera/Papel';
 import { FiltroTinta } from '../../../src/components/graficos/svg';
@@ -26,7 +26,7 @@ import { PALETA } from '../../remotion/comun';
 const TINTA = PALETA.fondo;
 const HORIZONTE = 640;
 
-type Trazo = { d: string; ancho: number; color: string; desde: number; dura: number; peso: 'solemne' | 'pesado' | 'natural' | 'ligero' };
+type Trazo = { d: string; ancho: number; color: string; desde: number; dura: number; peso: 'solemne' | 'pesado' | 'natural' | 'ligero'; recorte?: boolean };
 
 /** Separa un path de Rough.js en sus subtrazos: cada uno se dibuja con su propio largo. */
 const subtrazos = (d: string): string[] => d.split(/(?=M)/).map((s) => s.trim()).filter((s) => s.length > 2);
@@ -56,18 +56,24 @@ export const perfil = (semilla: number, base: number, alto: number, picos: numbe
   return pts.map(([x, y]) => [x, Math.min(base, y)]);
 };
 
-/** Laderas en sombra: desde cada cima, el lado derecho hasta el pie. */
+/**
+ * Laderas en sombra: la cara derecha de cada cima, entre la cresta (de la cima a la abra) y una
+ * línea interior que baja de la cima hasta la altura de la abra. Así la sombra no pasa de la abra
+ * ni baja en vertical hasta el horizonte (primera versión: un bloque rayado por debajo de la abra).
+ */
 const laderas = (pts: [number, number][], base: number): [number, number][][] => {
   const polis: [number, number][][] = [];
   for (let i = 2; i < pts.length - 2; i++) {
     const [x, y] = pts[i];
     if (y < pts[i - 1][1] && y <= pts[i + 1][1] && base - y > 150) {
-      // bajar por la derecha hasta que el perfil vuelva a subir
+      // bajar por la derecha hasta que el perfil vuelva a subir: la abra
       let j = i + 1;
       while (j < pts.length - 1 && pts[j + 1][1] >= pts[j][1]) j++;
       const lado = pts.slice(i, j + 1);
-      const pie = lado[lado.length - 1];
-      polis.push([...lado, [pie[0] - (pie[0] - x) * 0.55, base], [x + 4, base - (base - y) * 0.25]]);
+      const abra = lado[lado.length - 1];
+      // la línea interior: de la abra hacia la cima, por dentro de la montaña
+      const pie: [number, number] = [x + (abra[0] - x) * 0.22, abra[1] + (base - abra[1]) * 0.12];
+      polis.push([...lado, pie]);
     }
   }
   return polis;
@@ -98,7 +104,7 @@ export const CordilleraTinta: React.FC = () => {
         seed: 40 + i, stroke: 'none', fill: TINTA, fillStyle: 'hachure', hachureAngle: -52, hachureGap: 7, fillWeight: 1.1, roughness: 1.4,
       });
       gen.toPaths(relleno).flatMap((p) => subtrazos(p.d)).forEach((d, k) =>
-        lista.push({ d, ancho: 1.1, color: alfa(TINTA, 0.7), desde: 1.5 + i * 0.16 + k * 0.012, dura: 0.22, peso: 'ligero' }));
+        lista.push({ d, ancho: 1.1, color: alfa(TINTA, 0.7), desde: 1.5 + i * 0.16 + k * 0.012, dura: 0.22, peso: 'ligero', recorte: true }));
     });
     // 4. el agua: renglones horizontales, más separados y más largos hacia el frente (2,3–3,5 s)
     const r = azar(77);
@@ -149,21 +155,21 @@ export const CordilleraTinta: React.FC = () => {
   const trazo = (s: (typeof trazos)[number], i: number) => {
     const k = tramo(t, s.desde, s.dura, s.peso);
     if (k <= 0) return null;
-    return <path key={i} d={s.d} stroke={s.color} strokeWidth={s.ancho} pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - k} />;
+    // el rayado no sale de la silueta de la sierra (Rough.js tiembla y a veces asomaba por la cresta)
+    return <path key={i} d={s.d} stroke={s.color} strokeWidth={s.ancho} pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - k}
+      clipPath={s.recorte ? 'url(#lab02-silueta)' : undefined} />;
   };
 
   const lavado = tramo(t, 4.1, 0.6, 'natural');
 
   return (
     <AbsoluteFill>
-      {/* Papel pinta la textura como fondo CSS y Remotion no la espera: en el primer cuadro salía
-          el papel liso (un parpadeo). Un <Img> invisible obliga a esperar a que cargue. */}
-      <Img src={textura.papel} style={{ display: 'none' }} />
       <Papel color={PALETA.papel} envejecido={0.4} />
       <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
         <defs>
           <FiltroTinta id="lab02-tinta" fuerza={1.4} />
           {/* la tapa avanza con la pluma (que dibuja la sierra del frente de izquierda a derecha) */}
+          <clipPath id="lab02-silueta"><path d={tapa} /></clipPath>
           <clipPath id="lab02-avance"><rect x={0} y={0} width={x0 + (x1 - x0) * tramo(t, 0.5, 1.5, 'solemne')} height={1080} /></clipPath>
           <pattern id="lab02-papel" patternUnits="userSpaceOnUse" width={1024} height={1024}>
             <rect width={1024} height={1024} fill={PALETA.papel} />

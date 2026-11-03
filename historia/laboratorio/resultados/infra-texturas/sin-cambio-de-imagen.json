@@ -1,0 +1,8 @@
+{
+  "que": "El mismo cuadro con y sin <PrecargaTexturas /> en VideoLargo (remotion still, cuadro 45, PNG)",
+  "resultado": [
+    { "composicion": "v001-el-hombre-s02", "diferencia_maxima_0_255": 0 },
+    { "composicion": "v001-el-hombre-s05", "diferencia_maxima_0_255": 0 }
+  ],
+  "fecha": "2026-11-03"
+}

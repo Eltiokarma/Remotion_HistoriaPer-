@@ -1,10 +1,9 @@
 import p5 from 'p5';
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { AbsoluteFill, cancelRender, continueRender, delayRender, Img, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, cancelRender, continueRender, delayRender, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Papel } from '../../../src/components/atmosfera/Papel';
 import { clamp, tramo } from '../../../src/direction/anim';
 import { azar } from '../../../src/direction/azar';
-import { textura } from '../../../src/estilo/recursos';
 import { DURACION, PALETA } from '../../remotion/comun';
 import { perfil } from '../02-cordillera-tinta/Muestra';
 
@@ -151,7 +150,6 @@ export const VientoP5: React.FC = () => {
 
   return (
     <AbsoluteFill>
-      <Img src={textura.papel} style={{ display: 'none' }} />
       <Papel color={PALETA.papel} envejecido={0.4} />
       <div ref={contenedor} style={{ position: 'absolute', inset: 0 }} />
     </AbsoluteFill>

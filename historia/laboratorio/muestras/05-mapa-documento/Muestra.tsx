@@ -1,5 +1,5 @@
 import { evolvePath } from '@remotion/paths';
-import { AbsoluteFill, Img, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Papel } from '../../../src/components/atmosfera/Papel';
 import { MapaLugar } from '../../../src/components/graficos/MapaLugar';
 import { FiltroTinta, trazoManuscrito } from '../../../src/components/graficos/svg';
@@ -7,7 +7,6 @@ import { Ficha } from '../../../src/components/texto/Ficha';
 import { asienta, mix, tramo } from '../../../src/direction/anim';
 import { alfa } from '../../../src/estilo/color';
 import { fuente } from '../../../src/estilo/fuentes';
-import { textura } from '../../../src/estilo/recursos';
 import { PALETA } from '../../remotion/comun';
 
 /**
@@ -58,7 +57,6 @@ export const MapaDocumento: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: PALETA.fondo }}>
-      <Img src={textura.papel} style={{ display: 'none' }} />
       {/* el mapa: pieza del catálogo, sin tocar */}
       <MapaLugar id="lab05" codigo={604} lon={-70.02} lat={-15.84} caja={CAJA} zoom={zoom} acerca={2.4} aparece={mapaAparece}
         tinta={PALETA.fondo} acento={PALETA.rojo} papel={PALETA.papel} nombre="PUNO" mar="Océano Pacífico"
