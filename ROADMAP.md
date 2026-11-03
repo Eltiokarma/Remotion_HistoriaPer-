@@ -7,16 +7,18 @@ Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.
 - Tiempo humano y tokens: null = desconocido (no medido). No se estiman.
 - Render: segundos de pared medidos por laboratorio/scripts/medir.py, con la máquina donde corrió.
+- Ninguna fecha prevista está aprobada todavía: todas tienen origen «propuesta».
+- Consumo del agente (tokens, llamadas, costo API equivalente): solo existe por sesión; ver historia/laboratorio/INFORME_TECNICO.md §5 y §8.2.
 
 ## Resumen
 
-✅ hecho: **8** · ⏳ pendiente: **4** · 💡 propuesto: **7** · ⛔ bloqueado: **3**
+✅ hecho: **11** · ⏳ pendiente: **5** · 💡 propuesto: **7** · ⛔ bloqueado: **3**
 
 **Bloqueos y condiciones abiertas**
 
 - `t2-blender` 08 Blender: un objeto de época con material de grabado, montado en Remotion: Sin GPU en el contenedor: Cycles por CPU será lento; Eevee necesita GPU. Medir en la laptop o esperar la PC objetivo.
-- `t4-houdini` Houdini: humo o agua procedural: Necesita GPU (PC objetivo) y decidir licencia (Apprentice no es comercial).
-- `t4-unreal` Unreal Engine: un recorrido cinematográfico: Necesita la PC con GPU; revisar la EULA para contenido lineal.
+- `t4-houdini-prueba` Houdini: prueba de pyro o agua al tamaño de un plano: Necesita GPU (PC objetivo) y decidir licencia (Apprentice no es comercial).
+- `t4-unreal-prueba` Unreal Engine: render de un recorrido de 5 s: Necesita la PC con GPU; revisar la EULA para contenido lineal.
 - `t4-comfyui` ComfyUI: texturas o fondos con licencia clara: Definir qué modelos tienen licencia compatible con la regla 1.1·3 del canal.
 - `f5-laptop` Repetir la tanda 1 en la laptop de render: Lo corre Gerson en su máquina (el agente no tiene acceso a ella).
 - `f5-pc` Repetir la tanda 1 en la PC objetivo: La PC objetivo no está disponible.
@@ -34,13 +36,15 @@ gantt
   Documentar herramientas y su estado :done, f0herramientas, 2026-11-03, 1d
   Roadmap con fuente única y vista Gantt :done, f0roadmap, 2026-11-03, 1d
   Laboratorio entrada propia, medición y revisión :done, f0laboratorio, 2026-11-03, 1d
-  Revisar el primer cuadro sin textura de Papel en los episodios (propuesta) :infrapapel, 2026-11-04, 1d
+  CI que renderiza las muestras y publica los MP4 :done, t1ci, 2026-11-03, 1d
+  Texturas que Remotion no espera (Papel y otras) prevención común :done, infrapapel, 2026-11-03, 1d
   section Fase 1 · Tanda 1 de muestras (5 s)
   01 Diez monedas → 30 % (Manim) :done, t1manim, 2026-11-03, 1d
   02 Cordillera, lago y barco en tinta (SVG + Rough.js) :done, t1tinta, 2026-11-03, 1d
   03 Viento sobre el lago (p5.js) :done, t1viento, 2026-11-03, 1d
   04 Libro 3D que se abre (Three.js + R3F + drei) :done, t1libro3d, 2026-11-03, 1d
   05 Mapa y documento → explicación (Remotion, referencia) :done, t1mapa, 2026-11-03, 1d
+  Correcciones de la revisión técnica monedas, rayado, libro vacío :done, t1correcciones, 2026-11-03, 1d
   Revisión de la tanda 1 por Gerson (propuesta) :t1revision, 2026-11-04, 3d
   section Fase 2 · Tanda 2 de muestras
   06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) (propuesta) :t2pixi, 2026-11-09, 3d
@@ -55,7 +59,7 @@ gantt
   Repetir la tanda 1 en la laptop de render (propuesta) :f5laptop, 2026-11-05, 2d
 ```
 
-Sin fecha (4): `t4-houdini` (⛔ bloqueado), `t4-unreal` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado).
+Sin fecha (6): `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado).
 
 ## Tareas
 
@@ -78,11 +82,18 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-03
   - Tiempo: H ¿? · A 01:09–01:22 UTC (lectura del repo e instalación, incluye ~10 min compilando Manim) · R ¿? · tokens ¿?
   - Evidencia: [laboratorio/README.md](historia/laboratorio/README.md)
-- [ ] **Revisar el primer cuadro sin textura de Papel en los episodios** `infra-papel` — ⏳ pendiente
-  - Entregable: Comprobar con revisar.py una escena que abra con Papel; si falla, esperar la textura en el componente
-  - Prevista: 2026-11-04 (propuesta) · Real: —
-  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Evidencia: [02-cordillera-tinta/INFORME.md](historia/laboratorio/muestras/02-cordillera-tinta/INFORME.md)
+- [x] **CI que renderiza las muestras y publica los MP4** `t1-ci` — ✅ hecho
+  - Entregable: .github/workflows/laboratorio.yml + scripts/ci.sh; artefacto de 14 días
+  - Prevista: — · Real: 2026-11-03
+  - Tiempo: H ¿? · A turno 2 · R 128 s en ci-github · tokens ¿?
+  - Nota: render_s = paso «Render de las cinco muestras» completo (cinco renders, revisión y carrete).
+  - Evidencia: [workflows/laboratorio.yml](.github/workflows/laboratorio.yml) · [runs/41566067394](https://github.com/Eltiokarma/Remotion_HistoriaPer-/actions/runs/41566067394)
+- [x] **Texturas que Remotion no espera (Papel y otras): prevención común** `infra-papel` — ✅ hecho
+  - Entregable: PrecargaTexturas en VideoLargo y en el laboratorio; comprobación frío/caliente y de imagen idéntica
+  - Prevista: 2026-11-04 (propuesta) · Real: 2026-11-03
+  - Tiempo: H ¿? · A turno 2 (ver INFORME_TECNICO §8.2) · R ¿? · tokens ¿?
+  - Nota: El defecto original no se pudo reproducir (6 intentos): la prevención no está validada contra él.
+  - Evidencia: [atmosfera/PrecargaTexturas.tsx](historia/src/components/atmosfera/PrecargaTexturas.tsx) · [infra-texturas/sin-cambio-de-imagen.json](historia/laboratorio/resultados/infra-texturas/sin-cambio-de-imagen.json) · [laboratorio/INFORME_TECNICO.md](historia/laboratorio/INFORME_TECNICO.md)
 
 ### Fase 1 · Tanda 1 de muestras (5 s)
 
@@ -116,9 +127,15 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-03
   - Tiempo: H ¿? · A ≈ 01:42–01:46 UTC · R 24.8 s en contenedor · tokens ¿?
   - Evidencia: [05-mapa-documento/INFORME.md](historia/laboratorio/muestras/05-mapa-documento/INFORME.md) · [05-mapa-documento/final-caliente.json](historia/laboratorio/resultados/05-mapa-documento/final-caliente.json) · [05-mapa-documento/hoja.jpg](historia/laboratorio/resultados/05-mapa-documento/hoja.jpg)
+- [x] **Correcciones de la revisión técnica: monedas, rayado, libro vacío** `t1-correcciones` — ✅ hecho
+  - Entregable: 01 sin solape (distancia 1,10), 02 sombra dentro de la ladera, 04 sin cuadros vacíos; evidencia antes/después
+  - Depende de: `t1-manim`, `t1-tinta`, `t1-libro3d`
+  - Prevista: — · Real: 2026-11-03
+  - Tiempo: H ¿? · A turno 2 (ver INFORME_TECNICO §8.2) · R ¿? · tokens ¿?
+  - Evidencia: [laboratorio/INFORME_TECNICO.md](historia/laboratorio/INFORME_TECNICO.md) · [01-monedas-manim/despues-cuadros-56-63.jpg](historia/laboratorio/resultados/01-monedas-manim/despues-cuadros-56-63.jpg) · [02-cordillera-tinta/despues-rayado-ladera.jpg](historia/laboratorio/resultados/02-cordillera-tinta/despues-rayado-ladera.jpg) · [04-libro-3d/despues-cuadros-0-5.jpg](historia/laboratorio/resultados/04-libro-3d/despues-cuadros-0-5.jpg)
 - [ ] **Revisión de la tanda 1 por Gerson** `t1-revision` — ⏳ pendiente
-  - Entregable: Notas por muestra (sirve / no sirve / para qué escena) en historia/laboratorio/revision_tanda1.md
-  - Depende de: `t1-manim`, `t1-tinta`, `t1-viento`, `t1-libro3d`, `t1-mapa`
+  - Entregable: Por muestra: aprobada / no aprobada / para qué escena, en historia/laboratorio/revision_tanda1.md (preguntas en INFORME_TECNICO §8.3). Hoy: ninguna aprobada.
+  - Depende de: `t1-correcciones`
   - Prevista: 2026-11-04 → 2026-11-06 (propuesta) · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
 
@@ -166,15 +183,23 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
 
 ### Fase 4 · Herramientas especializadas
 
-- [ ] **Houdini: humo o agua procedural** `t4-houdini` — ⛔ bloqueado
+- [ ] **Houdini: licencia, receta de humo y prueba chica por CPU** `t4-houdini-preparar` — ⏳ pendiente
+  - Entregable: Decisión de licencia; parámetros del humo de cañón; si Gerson lo instala, una prueba de pyro chica en la laptop
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Houdini: prueba de pyro o agua al tamaño de un plano** `t4-houdini-prueba` — ⛔ bloqueado
   - Entregable: Prueba de 5 s si n3 muestra que las partículas no alcanzan
-  - Depende de: `n3-fogonazo`, `f5-pc`
+  - Depende de: `t4-houdini-preparar`, `n3-fogonazo`, `f5-pc`
   - Prevista: — · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Necesita GPU (PC objetivo) y decidir licencia (Apprentice no es comercial).
-- [ ] **Unreal Engine: un recorrido cinematográfico** `t4-unreal` — ⛔ bloqueado
+- [ ] **Unreal: EULA para contenido lineal, guion del plano y assets con licencia** `t4-unreal-preparar` — ⏳ pendiente
+  - Entregable: Nota de licencia y lista de assets (Fab/Quixel) con origen
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Unreal Engine: render de un recorrido de 5 s** `t4-unreal-prueba` — ⛔ bloqueado
   - Entregable: Prueba de 5 s de un escenario con cámara con motivo
-  - Depende de: `f5-pc`
+  - Depende de: `t4-unreal-preparar`, `f5-pc`
   - Prevista: — · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Necesita la PC con GPU; revisar la EULA para contenido lineal.
@@ -204,3 +229,4 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
 - `contenedor`: Contenedor en la nube (sesión de Claude Code): Intel Xeon 2,1 GHz, 4 hilos, 15,7 GB RAM, sin GPU
 - `laptop`: Laptop Huawei: i7-11370H (4 núcleos / 8 hilos), Iris Xe, 16 GB RAM — la máquina de render actual
 - `pc-objetivo`: PC en evaluación: Ryzen 7 9700X, RTX 5070 12 GB, 32 GB RAM, SSD 1 TB — no disponible todavía
+- `ci-github`: Runner de GitHub Actions ubuntu-24.04: AMD EPYC 9V45, 4 hilos, 15,6 GB RAM, sin GPU

@@ -203,7 +203,7 @@ export const LibroTres: React.FC = () => {
           const c = gl.getContext();
           const info = c.getExtension('WEBGL_debug_renderer_info');
           // console.warn y no console.log: Remotion muestra los warn sin --log=verbose
-          console.warn(`[lab04] WebGL: ${info ? c.getParameter(info.UNMASKED_VENDOR_WEBGL) : '?'} | ${info ? c.getParameter(info.UNMASKED_RENDERER_WEBGL) : c.getParameter(c.RENDERER)} | ${c.getParameter(c.VERSION)}`);
+          console.warn(`[lab04] WebGL: ${info ? c.getParameter(info.UNMASKED_VENDOR_WEBGL) : '?'} | ${info ? c.getParameter(info.UNMASKED_RENDERER_WEBGL) : c.getParameter(c.RENDERER)} | ${c.getParameter(c.VERSION)} | búfer ${c.drawingBufferWidth}×${c.drawingBufferHeight} | dpr ${gl.getPixelRatio()}`);
         }}>
         <Camara posicion={cam} mira={mira} />
         <AlEstarListo listo={tx !== null} alDibujar={listo} />

@@ -22,17 +22,18 @@
 |---|---|
 | `RoundedBox` de drei: sus UV no cubren la cara de 0 a 1 y el título quedaba chico en una esquina. | resuelto con una caja y un material por cara (sin cantos redondos) |
 | **La hoja desaparecía al terminar de pasar.** La geometría se doblaba leyendo las X ya dobladas del cuadro anterior: el error se acumulaba de cuadro en cuadro (en el Studio no se nota igual que en el render). | resuelto: el tramo de cada vértice se lee una sola vez |
-| Los 4 primeros cuadros salían vacíos (el render se soltaba antes de que las texturas entraran a la escena). | resuelto: `continueRender` dos cuadros de pantalla después de montarlas |
-| La hoja pasada quedaba debajo de la guarda (atravesaba la tapa). | resuelto: se levanta 0,08 al girar; se nota un escalón mínimo |
+| Los 4 primeros cuadros salían vacíos (el render se soltaba antes de que las texturas entraran a la escena). | primer arreglo (dos `requestAnimationFrame`) **insuficiente**: en un render posterior faltó el libro en los cuadros 0 y 3 ([`antes/parpadeo-cuadros-0-5.jpg`](../../resultados/04-libro-3d/antes/parpadeo-cuadros-0-5.jpg)). Causa: `ThreeCanvas` solo redibuja al cambiar el cuadro. Arreglo: dibujar con `advance()` dentro del lienzo y recién soltar el render. 3 de 3 renders limpios después; al ser intermitente, eso no lo descarta del todo |
+| La hoja pasada quedaba debajo de la guarda (atravesaba la tapa). | resuelto: se levanta 0,08 al girar. Queda a la vista una **franja negra en el lomo** entre las páginas ([`pendientes/franja-negra-lomo-y-estetica.jpg`](../../resultados/04-libro-3d/pendientes/franja-negra-lomo-y-estetica.jpg)) |
 | **La estética todavía es de «render 3D»**: luz y materiales correctos pero genéricos; no hay tinta, grabado ni línea. Para eso hace falta sombreado *toon* o contornos (post-proceso), por probar. | queda: es la pregunta abierta de esta muestra |
 | El dorso de la hoja se ve espejado (no se nota porque la escritura es asémica). | queda |
 | `ContactShadows` de drei casi no se ve sobre la mesa oscura. | queda |
 
 ## Qué costó
 
-- **Render:** final **69,8 s** (≈ 0,47 s por cuadro; pico 3,3 GB); previa 64,8 s. Sin GPU, WebGL
-  corre por software en Chrome: es la muestra que más debería cambiar con una RTX 5070, y hay que
-  medirlo allí antes de decidir.
+- **Render:** final 86,8 s en frío y 68,9–72,4 s en caliente (tres corridas); previa 67,5 s.
+  Backend medido: ANGLE sobre SwiftShader (WebGL por software). La previa casi no ahorra porque el
+  búfer WebGL sigue en 1920×1080 (medido). Que una GPU lo acelere es **hipótesis**: ver el informe
+  técnico.
 - **Agente:** ventana 01:35–01:42 UTC aprox. (tres renders hasta encontrar el error de geometría).
 - **Humano:** desconocido.
 

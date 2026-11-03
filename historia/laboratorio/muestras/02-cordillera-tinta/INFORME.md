@@ -21,18 +21,19 @@
 
 | Problema | Estado |
 |---|---|
-| **Primer cuadro sin textura de papel** (papel liso un cuadro, después la fibra): `Papel` pinta la textura como fondo CSS y Remotion no espera a que cargue. **Puede pasar también en los episodios**, que usan `Papel`. | resuelto en el laboratorio con un `<Img>` invisible que Remotion sí espera; **a revisar en los episodios** (tarea `infra-papel` del roadmap) |
+| **Primer cuadro sin textura de papel**, visto **una vez** (primer render de la sesión). No se pudo reproducir en 6 intentos posteriores. Causa probable, no demostrada: `Papel` pinta la textura como fondo CSS y Remotion no espera esas imágenes. | prevenido para todos con `PrecargaTexturas` (episodios y laboratorio); ver `infra-texturas` en el informe técnico |
 | Primera versión: montañas de triángulos de cuaderno, todas iguales. | resuelto (desplazamiento de punto medio, cuatro pasadas) |
 | La sierra del fondo se veía a través de la del frente. | resuelto: un relleno de papel con la forma del frente, que avanza con la pluma |
 | Los renglones del agua y el horizonte atravesaban la vela y el casco. | resuelto: casco y vela rellenos de papel |
-| El rayado de algunas laderas baja más allá del pie y toca la abra vecina. | queda |
-| La «tapa» avanza en línea recta por x y la pluma no: en algunos cuadros va un poco adelante. | queda; casi no se nota |
+| El rayado bajaba en vertical desde la cima hasta el horizonte, por debajo de la abra. | resuelto el 2026-11-03: la sombra termina a la altura de la abra y se recorta a la silueta. Antes: [`antes/rayado-ladera.jpg`](../../resultados/02-cordillera-tinta/antes/rayado-ladera.jpg); después: [`despues-rayado-ladera.jpg`](../../resultados/02-cordillera-tinta/despues-rayado-ladera.jpg) |
+| La «tapa» avanza en línea recta por x y la pluma no: podría ir adelante en algún cuadro. | inferido del código; **no observado** en los recortes revisados |
 | El barco es esquemático (una balsa de totora genérica, sin pretensión de época). | queda; para una escena real, dibujo con referencia y fuente |
 
 ## Qué costó
 
-- **Render:** final **19,2 s** (pico 2,8 GB); previa 14,6 s. El **primer render en frío tardó
-  90,5 s** por el empaquetado de webpack.
+- **Render:** final 41,7 s en frío (caché de webpack vacía) y 25,3 s en caliente; previa 15,2 s.
+  Pico PSS 2,5–2,9 GB. Los 90,5 s del primer render de la sesión incluían **descargar Chrome
+  Headless Shell** (el navegador de Remotion), no solo empaquetar.
 - **Agente:** ventana 01:26–01:31 UTC aprox. (cuatro iteraciones vistas en hoja de contactos).
 - **Humano:** desconocido.
 

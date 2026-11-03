@@ -28,7 +28,9 @@
 
 ## Qué costó
 
-- **Render:** final **24,8 s** (pico 3,8 GB); previa 19,0 s.
+- **Render:** final 38,0 s en frío y 22,1 s en caliente; previa 19,9 s. Pico PSS 2,7 GB en caliente.
+- **Lo que no prueba:** composición y transiciones sí; que el «párrafo» se **entienda** en 5 s, no.
+  Sin voz ni espectadores no hay medida de comprensión.
 - **Agente:** ventana 01:42–01:46 UTC aprox.
 - **Humano:** desconocido.
 

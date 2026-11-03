@@ -25,16 +25,17 @@
 |---|---|
 | `pip install manim` falló: `manimpango` compila contra Pango y faltaba `libpango1.0-dev`. Con eso y un entorno Python 3.12 instaló (~10 min de espera, casi todo compilando). | resuelto; anotado en el README |
 | Duración: con beats «redondos» (0,1 s) salió **5,13 s**. Manim redondea los cuadros de cada animación hacia arriba (`np.arange`) y los de una espera hacia abajo (`int`). | resuelto: cada tramo se mide contra el reloj real del renderer, ±0,0001 s |
-| Las monedas que se apartaban pasaban por encima de las otras. | resuelto: sale primero la de más a la derecha |
+| Las monedas en vuelo se cruzaban entre sí. | resuelto: sale primero la de más a la derecha |
 | `Transform` de «3/10» a «30 %» deshacía los glifos en una sopa de trazos durante 3–4 cuadros. | resuelto con fundido cruzado (`FadeTransform`) |
-| Una moneda en vuelo roza a una de la fila de arriba hacia el cuadro 60. | queda; se ve 2–3 cuadros |
+| **Corregido el 2026-11-03 (revisión técnica).** Las monedas en vuelo pasaban *por encima* de las que se quedan (cuadros ~56–62). Antes lo informé como «un roce de 2–3 cuadros»: era más. Medido con `scripts/geometria_monedas.py`: distancia mínima entre centros 0,71 y 0,76 (se tocan por debajo de 1,0), unos 39 px de solape a 1080p. | resuelto: arco por debajo (`path_arc=0.7`), distancia mínima 1,10. Antes: [`antes/roce-cuadros-56-63.jpg`](../../resultados/01-monedas-manim/antes/roce-cuadros-56-63.jpg); después: [`despues-cuadros-56-63.jpg`](../../resultados/01-monedas-manim/despues-cuadros-56-63.jpg) |
 | Arranca con 6 cuadros oscuros (0,2 s): las monedas entran desde nada. | decisión; en montaje se cubre con un corte J |
 | El texto «DIEZ MONEDAS» repetiría a la voz si la voz dice lo mismo (§5). | a decidir con el guion; aquí está porque la muestra no tiene voz |
 
 ## Qué costó
 
-- **Render:** previa 2,8 s (854×480, 15 fps), final **5,6 s** (1920×1080, 30 fps), pico 0,5 GB,
-  en el contenedor sin GPU. Es la muestra más barata de la tanda, por lejos.
+- **Render:** final 5,9 s en frío y 5,6 s en caliente; previa 2,8 s (854×480, 15 fps). Pico de
+  memoria (PSS) 0,5 GB. En el contenedor sin GPU. Ver [`INFORME_TECNICO.md`](../../INFORME_TECNICO.md):
+  los tiempos de muestras distintas no son un ranking de herramientas.
 - **Instalación:** la parte cara (dependencias de sistema). Una vez instalada, iterar es casi
   instantáneo.
 - **Agente:** ventana 01:13–01:26 UTC aprox., sin contar la instalación (ver README del laboratorio).

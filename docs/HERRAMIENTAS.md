@@ -33,7 +33,7 @@ para preparar material, no para dirigir.
 | **Rough.js** | Trazos y rellenos con aspecto dibujado (rayado a pluma), con semilla. | verificada (contenedor) | [muestra 02](../historia/laboratorio/muestras/02-cordillera-tinta/) |
 | **p5.js** | Dibujo generativo: campos de flujo, patrones, partículas (viento, agua, polvo). | verificada (contenedor) | [muestra 03](../historia/laboratorio/muestras/03-viento-p5/) |
 | **PixiJS** | Escenas 2D con miles de elementos y filtros por GPU (multitudes, granos, lluvia). | propuesta | Tanda 2 en el roadmap (`t2-pixi`) |
-| **Three.js + React Three Fiber + drei** (con `@remotion/three`) | Escenas 3D programables dentro de Remotion: objetos con volumen (libros, maquetas), cámara con motivo. | verificada (contenedor, render por software) | [muestra 04](../historia/laboratorio/muestras/04-libro-3d/) |
+| **Three.js + React Three Fiber + drei** (con `@remotion/three`) | Escenas 3D programables dentro de Remotion: objetos con volumen (libros, maquetas), cámara con motivo. | verificada (contenedor y CI; WebGL por software, ANGLE + SwiftShader; con GPU sin probar) | [muestra 04](../historia/laboratorio/muestras/04-libro-3d/) |
 | **Blender** | Modelos, materiales y planos 3D detallados (barcos, edificios, objetos de época) que Three.js no alcanza. Sale como secuencia de imágenes o video que Remotion monta. | propuesta | Tanda 2 (`t2-blender`); serie naval |
 | **Houdini** | Construcción procedural y simulaciones especializadas (humo, agua, destrucción). | pendiente de prueba | Necesita GPU y decidir licencia; ver roadmap (`t4-houdini`) |
 | **Unreal Engine** | Escenarios y recorridos cinematográficos en tiempo real. | pendiente de prueba | Necesita la PC con GPU; ver roadmap (`t4-unreal`) |

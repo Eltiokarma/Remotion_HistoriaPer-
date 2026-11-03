@@ -29,8 +29,10 @@
 
 ## Qué costó
 
-- **Render:** final **22,8 s** (pico **4,0 GB**, el más alto: cada uno de los 4 hilos de render
-  calcula la simulación); previa 18,4 s.
+- **Render:** final 40,9 s en frío y 22,3 s en caliente; previa 18,2 s. Pico PSS 3,7 GB en caliente
+  (4,3 GB en frío), de los que Chrome son ~2,2 GB, el doble que en las muestras SVG. Que se deba a que
+  cada pestaña calcula la simulación y tiene su lienzo de 1920×1080 es **hipótesis**. Los «4 GB»
+  del primer informe eran la suma de RSS, que cuenta dos veces la memoria compartida.
 - **Agente:** ventana 01:31–01:35 UTC aprox.
 - **Humano:** desconocido.
 

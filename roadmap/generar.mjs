@@ -152,6 +152,7 @@ for (const f of datos.fases) {
     const maquina = tm.maquina ? ` en ${tm.maquina}` : '';
     L(`  - Tiempo: H ${nulo(tm.humano_min)} · A ${nulo(tm.agente)} · R ${nulo(tm.render_s, ' s')}${tm.render_s != null ? maquina : ''} · tokens ¿?`);
     if (t.bloqueo) L(`  - Bloqueo: ${t.bloqueo}`);
+    if (t.nota) L(`  - Nota: ${t.nota}`);
     if (t.evidencia.length) L(`  - Evidencia: ${t.evidencia.map(enlace).join(' · ')}`);
   }
   L();
