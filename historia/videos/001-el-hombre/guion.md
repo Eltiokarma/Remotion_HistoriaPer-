@@ -66,7 +66,7 @@ Unas líneas más abajo celebra el nacimiento de su hijo. [PAUSA 1,5s]
 
 Murió en enero de 2013. [PAUSA 6s: una cruz sobre negro; la fecha; 2,5 s de silencio; recién después el punto rojo y la cámara recorre los meses] El libro salió en mayo. [PAUSA 1s]
 
-Este video es sobre ese hombre, y sobre lo que encontró.
+Este video es sobre ese hombre, y sobre cómo aprendió a buscar.
 
 ---
 
@@ -150,15 +150,15 @@ A comienzos de los ochenta hace algo poco común. Buena parte de los historiador
 
 Allí, el historiador Herbert Klein se fija en él y le ofrece una beca. Y aprende historia cuantitativa: pensar el pasado con números, no solo con discursos. [PAUSA 1s]
 
-Una de sus herramientas se llama regresión. Imagina muchos puntos desordenados: cada uno, un dato. A simple vista, solo ruido. [PAUSA 0,6s] La regresión busca la línea que mejor pasa entre todos. Si hay una tendencia escondida, la muestra. Y dice cuánto pesa. [PAUSA 1,5s]
+Una de sus herramientas se llama regresión. Imagina muchos puntos desordenados: cada uno, un dato. A simple vista, solo ruido. [PAUSA 0,6s] La regresión busca la línea que mejor pasa entre todos. Si hay una tendencia, ayuda a verla. Y dice cuánto pesa. [PAUSA 1,5s]
 
-Con lo que aprendió ahí, años después, le va a sacar la cuenta al Perú. [PAUSA 2s]
+Aprendió a trabajar con cifras y a contrastarlas con documentos. Años después, llevaría esa disciplina al estudio de la corrupción en el Perú. [PAUSA 2s]
 
 De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad. [PAUSA 1,5s]
 
 Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la historia financiera del Perú. [PAUSA 1s]
 
-Y sus ideas también se mueven. De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades. [PAUSA 1s] Cambió de ideas. Y eso importa para lo que viene: la cuenta que sacó no es la de un partido. [PAUSA 2s]
+Y sus ideas también se mueven. De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades. [PAUSA 1s] Cambió de ideas. Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión. [PAUSA 2s]
 
 **Visual (Remotion):** la escena actual (`AprenderAMedir`), con otro reparto del tiempo.
 - El viaje Lima → Nueva York, como está (París que se apaga, la cámara que viaja, los paralelos, el contador).
@@ -177,7 +177,7 @@ Y sus ideas también se mueven. De aquel joven trotskista pasa a una postura lib
 **VO:**
 Pero su primer caso lo había encontrado antes de irse. [PAUSA 0,6s] Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. [PAUSA 1s]
 
-Ahí estaba el guano. Y una deuda que el Estado decidió pagar con esa plata, en 1850. [PAUSA 1,2s] ¿Adónde fue a parar esa plata?
+Ahí estaba el guano. Y una deuda que el Estado decidió pagar con esa plata, en 1850. [PAUSA 0,8s] Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. [PAUSA 1s: el monto del vale de arriba sube; «ejemplo ilustrativo»] ¿Adónde fue a parar esa plata?
 
 **Visual (Remotion):** el comienzo de la escena del mecanismo de 000 (`MecanismoDeuda` con `hasta: consolidacion`): el grabado de las islas con su ficha `SIGLO XIX · GUANO`; con «Ahí estaba el guano», los sacos suben al barco; con «el Estado», la flecha de dinero; con «una deuda», los vales se apilan y con «1850» cae un sello rojo `1850`. La pregunta queda sobre la pila sellada, con un acorde que no resuelve.
 

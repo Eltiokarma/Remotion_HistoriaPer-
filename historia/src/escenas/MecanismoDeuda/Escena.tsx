@@ -66,6 +66,11 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   // punto fijo del zoom: el que termina en la esquina de la pantalla junto con la ilustración
   const qx = (ILUSTRACION.x * S_FIN) / (S_FIN - 1), qy = (ILUSTRACION.y * S_FIN) / (S_FIN - 1);
   const tPregunta = props.pregunta ? beat(b, 'pregunta', Infinity) : Infinity;
+  // el hallazgo, sobre la pila: el monto del vale de arriba se infla (ejemplo ilustrativo)
+  const tHallazgo = beat(b, 'hallazgo', Infinity);
+  const kHallazgo = tramo(t, tHallazgo + 0.3, DUR_INFLADO, 'tenso');
+  const montoHallazgo = mix(props.vale.desde, props.vale.hasta, kHallazgo);
+  const velHallazgo = t > tHallazgo + 0.3 && t < tHallazgo + 0.3 + DUR_INFLADO ? ((props.vale.hasta - props.vale.desde) / DUR_INFLADO) * 1.6 : 0;
   // del Estado a los vales: paneo a la izquierda
   const pan = props.paneo ? tramo(t, tVales - 0.7, 1.6, 'pesado') : 0;
   // de las islas al Estado: la cámara sigue al barco. El barco del grabado y el del dibujo del Estado
@@ -199,12 +204,20 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             return (
               <div key={i} style={{ position: 'absolute', left: 180 + ((i * 37) % 50), top: 300 - i * 9, transform: `translate(${(1 - k) * -900}px, ${-arqueo(k, 70)}px) rotate(${giro}deg)`,
                 filter: `drop-shadow(4px 6px 6px ${alfa('#000000', 0.35)})` }}>
-                <Vale paleta={pal} id={`${escena.id}-v${i}`} width={720} edad={1 - i / PILA} semilla={i + 2} />
+                <Vale paleta={pal} id={`${escena.id}-v${i}`} width={720} edad={1 - i / PILA} semilla={i + 2}
+                  monto={i === PILA - 1 && t >= tHallazgo ? (
+                    <Odometro valor={montoHallazgo} digitos={4} velocidad={velHallazgo} fps={fps} fontFamily={fuente.titulo} fontSize={44}
+                      color={mezclar(pal.fondo, pal.rojo, kHallazgo)} separacion={0.22} />
+                  ) : undefined} />
               </div>
             );
           })}
+          {t >= tHallazgo ? (
+            <div style={{ position: 'absolute', left: 200, top: 700, fontFamily: fuente.mono, fontSize: 24, letterSpacing: '0.2em', color: alfa(pal.fondo, 0.6),
+              opacity: tramo(t, tHallazgo, 0.6, 'natural') }}>{props.vale.rotulo.toUpperCase()}</div>
+          ) : null}
           {t >= tConsol ? (
-            <div style={{ position: 'absolute', left: 300, top: 360, transform: `rotate(-8deg) scale(${mix(1.6, 1, golpe(tConsol))})` }}>
+            <div style={{ position: 'absolute', left: 230, top: 372, transform: `rotate(-8deg) scale(${mix(1.6, 1, golpe(tConsol))})` }}>
               <SelloFecha id={`${escena.id}-sello`} texto={props.sello} color={pal.rojo} width={480} semilla={6} />
             </div>
           ) : null}
@@ -352,6 +365,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       <Sfx nombre="hoja" en={tExped} fps={fps} volumen={0.45} />
       {Array.from({ length: 10 }, (_, i) => <Sfx key={`t${i}`} nombre="tic" en={tInflado + DUR_INFLADO * (1 - (1 - i / 10) ** 2)} fps={fps} volumen={0.35} />)}
       <Sfx nombre="pluma" en={tInflado + 0.2} fps={fps} volumen={0.22} />
+      {Array.from({ length: 8 }, (_, i) => <Sfx key={`hz${i}`} nombre="tic" en={tHallazgo + 0.3 + DUR_INFLADO * (1 - (1 - i / 8) ** 2)} fps={fps} volumen={0.3} />)}
       <Sfx nombre="monedas" en={tCaudal + 0.4} fps={fps} volumen={0.6} />
       <Sfx nombre="lapiz" en={tTachar} fps={fps} volumen={0.28} />
       {props.tesis.etiqueta.split('').map((_, i) => <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tTesis + i / 6} fps={fps} volumen={0.4} />)}

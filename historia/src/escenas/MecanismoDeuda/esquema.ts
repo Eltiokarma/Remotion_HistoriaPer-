@@ -51,6 +51,7 @@ export const beats = {
   hoja_entra: '(con hojear) entra el libro, cerrado',
   hojea: '(con hojear) se abre y se hojea',
   hoja_pagina: '(con hojear) cae la última hoja: la página con el grabado',
+  hallazgo: '(opcional) sobre la pila de vales, el monto del vale de arriba se infla (ejemplo ilustrativo)',
   hoja_zoom: '(con hojear) la cámara entra al grabado hasta llenar la pantalla',
   islas: 'el grabado de las islas',
   sacos: 'empiezan a subir sacos al barco',

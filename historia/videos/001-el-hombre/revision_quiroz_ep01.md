@@ -223,3 +223,16 @@ imagen de ffmpeg sobre el video completo y se revisaron cuadro a cuadro.
 | s04 · pizarra | Los primeros 9 s ya no son una pizarra vacía: se escribe el encabezado de la clase, `Etnohistoria Andina · F. Pease` (prólogo, p. 16). «Fernand Braudel» en vez de «Fernand BRAUDEL». |
 | s05 · método | Del mapa al gráfico y del gráfico a la balanza, el estante y la brújula: fundido cruzado (antes la imagen nueva entraba desde el negro, y se veía como un salto). La caja del fichero tiene volumen de madera. |
 | s07 · cierre | La tarjeta del próximo episodio respira: la cámara se acerca muy despacio mientras suena el tema (antes, 14 s congelada). |
+
+### Revisión externa del guion (3-nov-2026)
+
+Una lectura crítica del argumento (ChatGPT, con una segunda vuelta sobre las propuestas de Claude). Decisión del director: el gancho conserva su voz; lo demás, aplicado.
+
+| Punto | Cambio |
+|---|---|
+| Gancho: el promedio se leía como pérdida constante y el costo como robo directo | Sin tocar la voz: notas en pantalla, más grandes y legibles, `PROMEDIO 1820–2000 · ESTIMADOS PRELIMINARES` y `COSTO ESTIMADO: LO QUE NO LLEGÓ A SU FIN PÚBLICO (DESVÍOS E INVERSIÓN PERDIDA)` (apéndice, p. 535). |
+| «La cuenta que sacó no es la de un partido» certificaba imparcialidad por el cambio de ideas | «Cambió de ideas. Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión.» (pp. 57 y 535). En la pizarra: «Sus cálculos: provisionales, abiertos a revisión.» |
+| La regresión parecía el origen de las cifras | «Si hay una tendencia, ayuda a verla.» y «Aprendió a trabajar con cifras y a contrastarlas con documentos. Años después, llevaría esa disciplina al estudio de la corrupción en el Perú.» La serie de décadas entra con «Años después». |
+| La promesa «y sobre lo que encontró» no se cumplía | «…y sobre cómo aprendió a buscar.» Y un hallazgo propio al final del primer caso: «Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado.» (Cueto, pp. 17–18), con el monto del vale que sube (ejemplo ilustrativo). La pregunta queda abierta para el 0·2. |
+
+La escaleta marca s06 en amarillo (7,1 datos por minuto, la meta es 6): es la frase del hallazgo; queda así a propósito.
