@@ -1,0 +1,27 @@
+# Comprobaciones rápidas del código de historia/ en cada push y PR: tipos, reglas del canal sobre
+# el código (scripts/reglas.ts, incluida su prueba) y validación de los videos. Sin render: el
+# render de las muestras lo hace el workflow «laboratorio».
+name: codigo
+on:
+  push:
+    paths: ['historia/**', '.github/workflows/codigo.yml']
+  pull_request:
+    paths: ['historia/**', '.github/workflows/codigo.yml']
+jobs:
+  comprobar:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: historia
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: historia/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - name: Reglas del canal (prueba del chequeo y código)
+        run: npm run reglas -- --probar && npm run reglas
+      - run: npm run validar

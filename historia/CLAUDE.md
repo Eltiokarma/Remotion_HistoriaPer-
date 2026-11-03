@@ -359,6 +359,9 @@ exactamente qué campo está mal.
   escrito en un componente. Una escena nueva: `src/escenas/<Escena>/esquema.ts` (esquema, beats,
   ejemplo) + `Escena.tsx`, registrada en `esquemas.ts` e `index.ts`; aparece sola en el catálogo.
 - Aleatorio siempre con semilla (`azar()`): el mismo dibujo en cada render.
+- `npm run reglas` comprueba lo que se puede comprobar de esta lista (curvas sueltas, azar sin
+  semilla, reloj, temporizadores, CSS animado, fuentes remotas, fondos que Remotion no espera); corre
+  en la CI. Una excepción se declara con `// reglas-permitir: <regla> — <motivo>`.
 
 ## 12. Render
 

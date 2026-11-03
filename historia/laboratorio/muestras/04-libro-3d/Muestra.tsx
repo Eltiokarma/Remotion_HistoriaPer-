@@ -273,6 +273,7 @@ const AlEstarListo: React.FC<{ listo: boolean; alDibujar: () => void }> = ({ lis
   useEffect(() => {
     if (!listo || hecho.current) return;
     hecho.current = true;
+    // reglas-permitir: reloj — advance() de R3F pide una marca de tiempo; la escena no la usa, todo sale del cuadro
     advance(performance.now());
     requestAnimationFrame(alDibujar);
   }, [listo, advance, alDibujar]);
