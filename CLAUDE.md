@@ -12,6 +12,8 @@ Dos proyectos independientes:
 nunca se edita `ROADMAP.md` a mano. Al terminar o bloquear una tarea, se actualiza el JSON: estado,
 fecha real, evidencia y tiempo medido (humano, agente, render). Lo que no se midió queda en `null`:
 no se inventan tiempos, porcentajes ni tokens.
+Si una fusión choca en `ROADMAP.md`, no se resuelve a mano: se resuelve `roadmap.json` (conservando
+las tareas de las dos ramas), se corre `node roadmap/generar.mjs` y se comprueba con `--comprobar`.
 
 **Herramientas y laboratorio.** `docs/HERRAMIENTAS.md` dice qué herramienta está verificada,
 propuesta o pendiente. Las pruebas de herramientas nuevas van en `historia/laboratorio/` (ver su

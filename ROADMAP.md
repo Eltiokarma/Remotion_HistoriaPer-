@@ -12,10 +12,11 @@ Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **15** · ⏳ pendiente: **6** · 💡 propuesto: **7** · ⛔ bloqueado: **3**
+✅ hecho: **16** · ⏳ pendiente: **7** · 💡 propuesto: **13** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
+- `f0-skill-canal` Skill propio del canal, encima del oficial: Espera la revisión de Gerson de la tanda 1: sus criterios son el contenido principal.
 - `t2-blender` 08 Blender: un objeto de época con material de grabado, montado en Remotion: Sin GPU en el contenedor: Cycles por CPU será lento; Eevee necesita GPU. Medir en la laptop o esperar la PC objetivo.
 - `t4-houdini-prueba` Houdini: prueba de pyro o agua al tamaño de un plano: Necesita GPU (PC objetivo) y decidir licencia (Apprentice no es comercial).
 - `t4-unreal-prueba` Unreal Engine: render de un recorrido de 5 s: Necesita la PC con GPU; revisar la EULA para contenido lineal.
@@ -37,6 +38,7 @@ gantt
   Roadmap con fuente única y vista Gantt :done, f0roadmap, 2026-11-03, 1d
   Laboratorio entrada propia, medición y revisión :done, f0laboratorio, 2026-11-03, 1d
   CI que renderiza las muestras y publica los MP4 :done, t1ci, 2026-11-03, 1d
+  Skills oficiales de Remotion instalados y revisados :done, f0skillremotion, 2026-11-03, 1d
   Texturas que Remotion no espera (Papel y otras) prevención común :done, infrapapel, 2026-11-03, 1d
   section Fase 1 · Tanda 1 de muestras (5 s)
   01 Diez monedas → 30 % (Manim) :done, t1manim, 2026-11-03, 1d
@@ -64,7 +66,7 @@ gantt
   Guion tras la revisión externa :done, e1guionexterno, 2026-11-03, 1d
 ```
 
-Sin fecha (7): `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado), `e1-voz` (⏳ pendiente).
+Sin fecha (15): `f0-skill-canal` (⏳ pendiente), `f0-skill-medir` (💡 propuesto), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado), `e1-voz` (⏳ pendiente).
 
 ## Tareas
 
@@ -93,6 +95,23 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A turno 2 · R 128 s en ci-github · tokens ¿?
   - Nota: render_s = paso «Render de las cinco muestras» completo (cinco renders, revisión y carrete).
   - Evidencia: [workflows/laboratorio.yml](.github/workflows/laboratorio.yml) · [runs/41566067394](https://github.com/Eltiokarma/Remotion_HistoriaPer-/actions/runs/41566067394)
+- [x] **Skills oficiales de Remotion instalados y revisados** `f0-skill-remotion` — ✅ hecho
+  - Entregable: historia/.agents/skills (13 skills de remotion-dev/skills, versión fijada en skills-lock.json) y la tabla de choques con las reglas del canal en historia/CLAUDE.md §15
+  - Prevista: — · Real: 2026-11-03
+  - Tiempo: H ¿? · A ≈ 11:30–11:50 UTC (incluye fusionar el PR #1) · R ¿? · tokens ¿?
+  - Nota: Revisado antes de activar: 291 archivos (markdown, ejemplos .tsx y 2 scripts .mjs de mapas que solo corren si se ejecutan). Mismos hashes que la copia revisada.
+  - Evidencia: [historia/skills-lock.json](historia/skills-lock.json) · [historia/CLAUDE.md](historia/CLAUDE.md)
+- [ ] **Skill propio del canal, encima del oficial** `f0-skill-canal` — ⏳ pendiente
+  - Entregable: Reglas de historia/CLAUDE.md, trampas encontradas en el laboratorio, cuándo usar medir/revisar/geometría y los criterios de aprobación de Gerson
+  - Depende de: `t1-revision`, `f0-skill-remotion`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Bloqueo: Espera la revisión de Gerson de la tanda 1: sus criterios son el contenido principal.
+- [ ] **Medir si el skill reemplaza esfuerzo** `f0-skill-medir` — 💡 propuesto
+  - Entregable: Una muestra nueva hecha dos veces: esfuerzo medio con skill contra alto sin skill; comparar revisor, defectos, vueltas, tokens y la opinión de Gerson
+  - Depende de: `f0-skill-canal`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
 - [x] **Texturas que Remotion no espera (Papel y otras): prevención común** `infra-papel` — ✅ hecho
   - Entregable: PrecargaTexturas en VideoLargo y en el laboratorio; comprobación frío/caliente y de imagen idéntica
   - Prevista: 2026-11-04 (propuesta) · Real: 2026-11-03
@@ -166,6 +185,38 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Entregable: Variante de la muestra 04 que se vea grabado y no render de producto
   - Depende de: `t1-revision`
   - Prevista: 2026-11-09 → 2026-11-10 (propuesta) · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+
+### Fase 2b · Tanda de estilos (adaptados al canal)
+
+- [ ] **Blueprint: plano técnico de una obra histórica** `es-blueprint` — 💡 propuesto
+  - Entregable: 5 s en cianotipo con la tinta del canal: el plano de un barco, un puente o una mina que se traza y se acota. Tema y fuente a definir con Gerson
+  - Depende de: `t1-revision`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Paper Cutout: collage con grabados de dominio público** `es-recorte` — 💡 propuesto
+  - Entregable: 5 s: personaje o ciudad que se arma en capas de papel recortado, con grabados de licencia clara registrada
+  - Depende de: `t1-revision`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Receipt Printer: cifras que se imprimen renglón a renglón** `es-ticket` — 💡 propuesto
+  - Entregable: 5 s: un registro contable o de aduana que sale de la máquina; tipografía de máquina del canal; cifras con fuente o marcadas [VERIFICAR]
+  - Depende de: `t1-revision`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Isometric World: un sistema explicado en isométrico** `es-isometrico` — 💡 propuesto
+  - Entregable: 5 s: una hacienda, la mita o un puerto en isométrico dibujado a pluma con la paleta del canal, no en colores de juguete
+  - Depende de: `t1-revision`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Ink Brush: trazo de pincel con manchas** `es-pincel` — 💡 propuesto
+  - Entregable: 5 s: título o mapa a pincel grueso; comparar con la pluma de la muestra 02
+  - Depende de: `t1-revision`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Estilos no adoptados para el formato largo** `es-descartados` — ✖️ descartado
+  - Entregable: Pixel Arcade y Neon Sign: no encajan con el tema ni el tono. Kinetic Type: solo shorts o la palabra clave (choca con «el texto no repite la voz»). Flat 2D: solo con cuidado, es el estilo más genérico. Whiteboard: el canal ya tiene pizarra; se toma la técnica de la mano que dibuja
+  - Prevista: — · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
 
 ### Fase 3 · Referencia naval en pruebas chicas

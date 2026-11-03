@@ -422,3 +422,28 @@ con sus palabras la idea central? Si no, el video expuso pero no enseñó.
   Visual Story*), Chion (*La audiovisión*), McKee (*El guion*), Thomas & Johnston (*The Illusion of
   Life*), Williams (*The Animator's Survival Kit*), Nichols (*Introducción al documental*), Mayer
   (*Multimedia Learning*).
+
+## 15. Skills oficiales de Remotion
+
+Instalados en `historia/.agents/skills/` (con enlaces en `historia/.claude/skills/` para Claude
+Code), versión fijada en `skills-lock.json`. Son los de `remotion-dev/skills` (13: el enrutador
+`remotion-best-practices`, `remotion-markup`, `remotion-render`, `remotion-maps`,
+`remotion-captions`, etc.). Sirven para la técnica de Remotion. **Cuando choquen con este archivo,
+manda este archivo.** Choques conocidos:
+
+| El skill dice | Aquí se hace | Por qué |
+|---|---|---|
+| `Easing.bezier()` o `Easing.spring()` directo en cada `interpolate()` | Pesos de `direction/easings.ts` con `tramo(t, desde, dura, peso)`; `spring()` con `config` explícito solo para lo físico (§4, §11) | Cada movimiento declara su peso; si cada componente inventa su curva, el video vuelve a sonar a plantilla |
+| `interpolate()` en línea y `<Interactive.*>` para editar en el Studio | Los datos vienen de `escenas.json` por props (§11) | El contenido de un video no vive en un componente |
+| Imágenes con `<CanvasImage>` | Rutas de `estilo/recursos.ts` y `<Img>`; texturas por `PrecargaTexturas` | `<Img>` es lo que Remotion espera antes de capturar; la precarga del canal depende de eso |
+| Google Fonts | Fuentes locales de `public/compartido/fuentes` (`estilo/fuentes.ts`) | El render no depende de internet y sale igual en cualquier máquina |
+| `remotion-create`: crear un proyecto o una composición nueva | `npm run nuevo-video` para un video; escenas nuevas en `src/escenas/` (§11); pruebas en `laboratorio/` | El repo ya tiene su estructura |
+| «No renderizar salvo pedido explícito; abrir el Studio» | En episodios, igual. En el laboratorio, medir y renderizar **es** la tarea | Las muestras se juzgan por el clip y su registro |
+| Versión 4.0.540 de las instrucciones | El proyecto usa Remotion 4.0.539 | No se actualiza Remotion solo porque lo diga un skill; se decide aparte (`remotion-upgrade` solo cuando se pida) |
+
+Útiles sin choque: `remotion-render` (opciones de render), `remotion-maps` (técnicas de mapas;
+con datos con licencia, §1.1), `remotion-captions` (subtítulos, §10), `remotion-docs` (consultar la
+documentación vigente).
+
+Actualizarlos: `npx remotion skills update`, revisar el diff (son instrucciones que el agente
+obedece) y actualizar esta tabla si aparece un choque nuevo.
