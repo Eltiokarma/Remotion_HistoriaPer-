@@ -364,7 +364,7 @@
       "id": "f0-skill-canal",
       "fase": "f0",
       "titulo": "Skill propio del canal, encima del oficial",
-      "entregable": "Reglas de historia/CLAUDE.md, trampas encontradas en el laboratorio, cuándo usar medir/revisar/geometría y los criterios de aprobación de Gerson",
+      "entregable": "canal-historia (oficio, trampas, procedimiento) enlazado a los criterios del director; choques del criterio para decidir; veredictos de Gerson sobre las muestras",
       "estado": "en_curso",
       "depende_de": [
         "t1-revision",
@@ -385,7 +385,7 @@
         "render_s": null,
         "maquina": null
       },
-      "nota": "Versión 0 hecha (orden de autoridad, trampas, procedimiento, verificación, cómo informar). Falta criterios.md: espera la revisión de Gerson (t1-revision)."
+      "nota": "Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Tres choques entre ellos esperan decisión de Gerson (canal-historia/criterios.md). Falta su veredicto sobre las muestras (t1-revision)."
     },
     {
       "id": "f0-skill-medir",
@@ -531,7 +531,8 @@
         "agente": null,
         "render_s": null,
         "maquina": null
-      }
+      },
+      "nota": "Ya existe una prueba sin fusionar en la rama experimento-3d-guano: islas de Chincha hacia 1850, Blender 5.2.3 procedural, Cycles CPU, 10 s a 1280×720 en 81 min (contenedor sin GPU). Antes de repetirla: revisarla y decidir si entra (trae PNG de prueba de ~800 KB)."
     },
     {
       "id": "t2-toon",

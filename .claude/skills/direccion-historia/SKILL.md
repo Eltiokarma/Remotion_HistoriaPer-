@@ -5,6 +5,12 @@ description: Dirección de los videos de Historia del Altiplano (historia/): có
 
 # Dirección — Historia del Altiplano
 
+> **Estado (2026-11-03).** Escrito el 2026-10-27, antes de la guía `historia/DIRECCION_DE_VIDEO.md`
+> (2026-10-30, en palabras del director). Donde choquen, gana la guía (`historia/CLAUDE.md` §2) hasta
+> que Gerson decida; los choques están en `historia/.claude/skills/canal-historia/criterios.md`.
+> La §8 calibró el video 000 cuando tenía 6 escenas: sirve como ejemplo del criterio, no como estado
+> actual del video.
+
 Este archivo es el criterio del artista. No describe el código (eso está en `historia/README.md`):
 dice **qué buscamos y cómo se decide** cuando hay dudas. Cada regla tiene un porqué y una prueba
 que se puede hacer sin opinar.

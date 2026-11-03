@@ -5,25 +5,30 @@ description: Cómo trabajar en el canal de historia del altiplano (historia/) �
 
 # Canal de historia del altiplano: cómo trabajar
 
-Versión 0 (2026-11-03). Hecha con lo aprendido en el laboratorio (tanda 1). Falta lo más importante:
-los criterios con los que Gerson aprueba o rechaza ([`criterios.md`](criterios.md), vacío hasta su
-revisión). Cuando estén, este skill se actualiza.
+Versión 0 (2026-11-03). Hecha con lo aprendido en el laboratorio (tanda 1). El estilo del canal **no
+está aquí**: está en los documentos del director que lista [`criterios.md`](criterios.md). Este
+skill es el oficio técnico; aquellos dicen qué buscamos.
 
 ## 1. Quién manda
 
 1. Lo que pide el usuario en la conversación. Si rompe una regla del canal, se avisa cuál.
-2. `historia/CLAUDE.md` (reglas del canal) y `DIRECCION_DE_VIDEO.md`; las notas de revisión del
-   video (`videos/NNN-slug/revision_*.md`) para ese video.
-3. Este skill.
-4. Los skills oficiales de Remotion (`remotion-*`): técnica de Remotion. Sus choques conocidos con el
-   canal están en `historia/CLAUDE.md` §15. Si aparece uno nuevo, se agrega a esa tabla.
+2. Lo que dijo el director: las notas de revisión del video (`videos/NNN-slug/revision_*.md`) para
+   ese video; `historia/DIRECCION_DE_VIDEO.md` (la guía, «en palabras del director»);
+   `historia/CLAUDE.md` (las reglas del canal).
+3. El criterio de dirección: skill `direccion-historia` (`.claude/skills/direccion-historia/`). Es
+   anterior a la guía: donde choquen, gana la guía hasta que Gerson decida (lista en
+   [`criterios.md`](criterios.md)).
+4. Este skill (el oficio técnico).
+5. Los skills oficiales de Remotion (`remotion-*`). Sus choques con el canal: `historia/CLAUDE.md` §15.
 
-No se copian reglas de `CLAUDE.md` aquí: se leen allá. Este skill dice **cómo** trabajar con ellas.
+No se copian aquí las reglas de esos documentos: se leen allá, antes de trabajar.
 
 ## 2. Antes de escribir código
 
-- Leer en `historia/CLAUDE.md` las secciones que toca la tarea: §4 movimiento, §5 composición,
-  §8 enseñar, §11 código. Para un dato histórico, §1.1·2: fuente o `[VERIFICAR]`, nunca inventar.
+- Leer lo que toca la tarea en `historia/CLAUDE.md` (§4 movimiento, §5 composición, §8 enseñar, §11
+  código), en `DIRECCION_DE_VIDEO.md` y en `direccion-historia`; para un video, sus notas de revisión.
+  Para un dato histórico, §1.1·2: fuente o `[VERIFICAR]`, nunca inventar.
+- Si hay guion o texto en pantalla: el pase de la lista negra de `direccion-historia` §2.7 y §7.
 - Buscar si una pieza del catálogo ya lo resuelve (`src/components/`, `src/escenas/`, carpeta
   «catalogo» del Studio).
 - Una prueba de herramienta va en `laboratorio/`, nunca dentro de un episodio.

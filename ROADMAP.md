@@ -108,11 +108,11 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Nota: Siete reglas: easing-suelto, azar-sin-semilla, reloj, temporizador, css-animado, fuente-remota, fondo-sin-espera. Hoy: 113 archivos, 0 violaciones, 1 excepción declarada (muestra 04).
   - Evidencia: [scripts/reglas.ts](historia/scripts/reglas.ts) · [workflows/codigo.yml](.github/workflows/codigo.yml)
 - [ ] **Skill propio del canal, encima del oficial** `f0-skill-canal` — 🔄 en curso
-  - Entregable: Reglas de historia/CLAUDE.md, trampas encontradas en el laboratorio, cuándo usar medir/revisar/geometría y los criterios de aprobación de Gerson
+  - Entregable: canal-historia (oficio, trampas, procedimiento) enlazado a los criterios del director; choques del criterio para decidir; veredictos de Gerson sobre las muestras
   - Depende de: `t1-revision`, `f0-skill-remotion`
   - Prevista: — · Real: 2026-11-03 → …
   - Tiempo: H ¿? · A ≈ 12:00–12:20 UTC (v0) · R ¿? · tokens ¿?
-  - Nota: Versión 0 hecha (orden de autoridad, trampas, procedimiento, verificación, cómo informar). Falta criterios.md: espera la revisión de Gerson (t1-revision).
+  - Nota: Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Tres choques entre ellos esperan decisión de Gerson (canal-historia/criterios.md). Falta su veredicto sobre las muestras (t1-revision).
   - Evidencia: [canal-historia/SKILL.md](historia/.claude/skills/canal-historia/SKILL.md)
 - [ ] **Medir si el skill reemplaza esfuerzo** `f0-skill-medir` — 💡 propuesto
   - Entregable: Una muestra nueva hecha dos veces: esfuerzo medio con skill contra alto sin skill; comparar revisor, defectos, vueltas, tokens y la opinión de Gerson
@@ -188,6 +188,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: 2026-11-16 → 2026-11-20 (propuesta) · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Sin GPU en el contenedor: Cycles por CPU será lento; Eevee necesita GPU. Medir en la laptop o esperar la PC objetivo.
+  - Nota: Ya existe una prueba sin fusionar en la rama experimento-3d-guano: islas de Chincha hacia 1850, Blender 5.2.3 procedural, Cycles CPU, 10 s a 1280×720 en 81 min (contenedor sin GPU). Antes de repetirla: revisarla y decidir si entra (trae PNG de prueba de ~800 KB).
 - [ ] **04b Libro 3D con tinta: sombreado toon y contornos** `t2-toon` — 💡 propuesto
   - Entregable: Variante de la muestra 04 que se vea grabado y no render de producto
   - Depende de: `t1-revision`
