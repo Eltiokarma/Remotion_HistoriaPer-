@@ -442,12 +442,16 @@
         ],
         "lista": "ADMISIÓN · 1974",
         "parte": "capas",
-        "palabra": "larga duración",
+        "palabra": "la larga duración",
         "realce": "media",
         "estilo": "pizarra",
         "nota": "las estructuras de la economía y la larga duración",
         "remate": "Hay cosas que no cambian aunque cambien los gobiernos.",
-        "encabezado": "Etnohistoria Andina · F. Pease"
+        "encabezado": "Etnohistoria Andina · F. Pease",
+        "palabra_cita": {
+          "original": "«la longue durée»",
+          "referencia": "F. Braudel, «Histoire et sciences sociales: la longue durée», Annales, 1958"
+        }
       },
       "audio": {
         "musica": {

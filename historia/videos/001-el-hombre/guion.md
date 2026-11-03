@@ -3,7 +3,7 @@
 **Serie:** Historia de la corrupción en el Perú (basada en Alfonso W. Quiroz, IEP/IDL, 2013) · episodio 1 de 4 del arco de presentación
 **Formato:** 100 % Remotion, sin metraje ni fotos · 1920×1080 · 30 fps
 **Pregunta central:** ¿Qué encontró, para que valiera la pena? (este episodio responde quién era y cómo aprendió a buscar; lo que encontró llega en 0·2, 0·3 y 0·4)
-**Palabra del episodio:** *larga duración*
+**Palabra del episodio:** *la larga duración* (en francés, *la longue durée*: Braudel, 1958)
 **Duración estimada:** ~6 min 25 s (con el gancho)
 **Plan de los cuatro episodios:** `videos/000-quiroz/diagnostico.md`, §4
 
@@ -135,7 +135,7 @@ Quiroz se quedó con eso. Aprendió a apreciar lo que persiste: las estructuras 
   - «Más abajo»: la capa lenta, `economía y sociedad`.
   - «Al fondo»: la capa casi inmóvil, `la tierra` (hoy dice `estructuras`; para Braudel el fondo es la geografía).
 - «la cámara baja» hasta el fondo y se queda.
-- **La palabra del episodio:** `larga duración`, a pantalla completa, quieta, en la pausa de 2 s.
+- **La palabra del episodio:** `la larga duración`, a pantalla completa, quieta, en la pausa de 2 s. Debajo, más chico, el término como lo escribió Braudel: «la longue durée», y la referencia: F. Braudel, «Histoire et sciences sociales: la longue durée», *Annales*, 1958. Es el nombre de una escala de tiempo (lo que dura siglos), no de un tipo de historia.
 - Con «las estructuras de la economía»: la capa del medio se enciende (es la que Quiroz va a estudiar).
 - La pausa final con las tres capas a la vista, la de arriba todavía nerviosa.
 

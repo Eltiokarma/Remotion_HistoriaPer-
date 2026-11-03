@@ -219,6 +219,15 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                   <TextoTiza id={`${escena.id}-palabra`} texto={props.palabra} x={960} y={560} anchor="middle" k={tramo(t, tPalabra, 1.6, 'natural')}
                     size={120} ancho={0.42} fontFamily={fuente.imprentaItalica} opacidad={palabra} brillo={0.6} />
                 ) : null}
+                {/* el término como lo escribió el autor, y dónde */}
+                {props.palabra && props.palabra_cita ? (
+                  <>
+                    <TextoTiza id={`${escena.id}-original`} texto={props.palabra_cita.original} x={960} y={660} anchor="middle"
+                      k={tramo(t, tPalabra + 1.0, 1.2, 'natural')} size={54} ancho={0.42} fontFamily={fuente.imprentaItalica} opacidad={palabra * 0.9} />
+                    <TextoTiza id={`${escena.id}-referencia`} texto={props.palabra_cita.referencia} x={960} y={722} anchor="middle"
+                      k={tramo(t, tPalabra + 1.6, 1.4, 'natural')} size={26} ancho={0.42} fontFamily={fuente.imprentaItalica} opacidad={palabra * 0.7} />
+                  </>
+                ) : null}
                 {props.nota ? (
                   <TextoTiza id={`${escena.id}-nota`} texto={props.nota} x={430} y={890} k={tramo(t, tRealce + 0.3, 2.6, 'natural')} size={46}
                     fontFamily={fuente.imprentaItalica} opacidad={1 - 0.7 * remate} brillo={fin(tRealce, tRemate)} />

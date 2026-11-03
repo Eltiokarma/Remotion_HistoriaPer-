@@ -24,6 +24,8 @@ export const esquema = z.object({
   parte: z.enum(['todo', 'epoca', 'capas']).default('todo'),
   /** La palabra del episodio, a pantalla completa y quieta sobre las capas (con el beat `palabra`). */
   palabra: z.string().optional(),
+  /** (pizarra) Debajo de la palabra: el término original, como cita, y la obra donde se publicó. */
+  palabra_cita: z.object({ original: z.string(), referencia: z.string() }).optional(),
   /** (pizarra) El encabezado de la clase, escrito arriba con tiza (beat `clase`). */
   encabezado: z.string().optional(),
   /** La capa que se enciende con el beat `realce` (la que el personaje va a estudiar). */
