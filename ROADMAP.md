@@ -12,7 +12,7 @@ Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **12** · ⏳ pendiente: **6** · 💡 propuesto: **8** · ⛔ bloqueado: **3**
+✅ hecho: **16** · ⏳ pendiente: **7** · 💡 propuesto: **13** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -59,9 +59,14 @@ gantt
   Naval 3 · Fogonazo y humo de cañón (propuesta) :n3fogonazo, 2026-12-02, 3d
   section Fase 5 · Medir en las máquinas reales
   Repetir la tanda 1 en la laptop de render (propuesta) :f5laptop, 2026-11-05, 2d
+  section Episodio 0·1 · El hombre que le sacó la cuenta al Perú
+  Revisión del director aplicada (notas del 30-oct) :done, e1revision, 2026-10-30, 2d
+  Gancho del 0·1 :done, e1gancho, 2026-10-31, 1d
+  Pasada de pulido de animación :done, e1pulido, 2026-11-03, 1d
+  Guion tras la revisión externa :done, e1guionexterno, 2026-11-03, 1d
 ```
 
-Sin fecha (8): `f0-skill-canal` (⏳ pendiente), `f0-skill-medir` (💡 propuesto), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado).
+Sin fecha (15): `f0-skill-canal` (⏳ pendiente), `f0-skill-medir` (💡 propuesto), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado), `e1-voz` (⏳ pendiente).
 
 ## Tareas
 
@@ -182,6 +187,38 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: 2026-11-09 → 2026-11-10 (propuesta) · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
 
+### Fase 2b · Tanda de estilos (adaptados al canal)
+
+- [ ] **Blueprint: plano técnico de una obra histórica** `es-blueprint` — 💡 propuesto
+  - Entregable: 5 s en cianotipo con la tinta del canal: el plano de un barco, un puente o una mina que se traza y se acota. Tema y fuente a definir con Gerson
+  - Depende de: `t1-revision`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Paper Cutout: collage con grabados de dominio público** `es-recorte` — 💡 propuesto
+  - Entregable: 5 s: personaje o ciudad que se arma en capas de papel recortado, con grabados de licencia clara registrada
+  - Depende de: `t1-revision`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Receipt Printer: cifras que se imprimen renglón a renglón** `es-ticket` — 💡 propuesto
+  - Entregable: 5 s: un registro contable o de aduana que sale de la máquina; tipografía de máquina del canal; cifras con fuente o marcadas [VERIFICAR]
+  - Depende de: `t1-revision`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Isometric World: un sistema explicado en isométrico** `es-isometrico` — 💡 propuesto
+  - Entregable: 5 s: una hacienda, la mita o un puerto en isométrico dibujado a pluma con la paleta del canal, no en colores de juguete
+  - Depende de: `t1-revision`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Ink Brush: trazo de pincel con manchas** `es-pincel` — 💡 propuesto
+  - Entregable: 5 s: título o mapa a pincel grueso; comparar con la pluma de la muestra 02
+  - Depende de: `t1-revision`
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Estilos no adoptados para el formato largo** `es-descartados` — ✖️ descartado
+  - Entregable: Pixel Arcade y Neon Sign: no encajan con el tema ni el tono. Kinetic Type: solo shorts o la palabra clave (choca con «el texto no repite la voz»). Flat 2D: solo con cuidado, es el estilo más genérico. Whiteboard: el canal ya tiene pizarra; se toma la técnica de la mano que dibuja
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+
 ### Fase 3 · Referencia naval en pruebas chicas
 
 - [ ] **Naval 1 · Mar y balanceo** `n1-mar` — 💡 propuesto
@@ -242,6 +279,34 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: La PC objetivo no está disponible.
+
+### Episodio 0·1 · El hombre que le sacó la cuenta al Perú
+
+- [x] **Revisión del director aplicada (notas del 30-oct)** `e1-revision` — ✅ hecho
+  - Entregable: Cruz y fecha, Lima 1956, agua azul, volante, pizarra, brújula, libro, paneo, pregunta, música
+  - Prevista: — · Real: 2026-10-30 → 2026-10-31
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [001-el-hombre/revision_quiroz_ep01.md](historia/videos/001-el-hombre/revision_quiroz_ep01.md)
+- [x] **Gancho del 0·1** `e1-gancho` — ✅ hecho
+  - Entregable: Escena Gancho (s00): la cifra, el sistema y el libro
+  - Prevista: — · Real: 2026-10-31
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [Gancho/](historia/src/escenas/Gancho/) · [001-el-hombre/guion.md](historia/videos/001-el-hombre/guion.md)
+- [x] **Pasada de pulido de animación** `e1-pulido` — ✅ hecho
+  - Entregable: Saltos, vacíos y planos congelados (detección de cambios de imagen con ffmpeg)
+  - Prevista: — · Real: 2026-11-03
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [001-el-hombre/revision_quiroz_ep01.md](historia/videos/001-el-hombre/revision_quiroz_ep01.md)
+- [x] **Guion tras la revisión externa** `e1-guion-externo` — ✅ hecho
+  - Entregable: Método, regresión, promesa de la serie, hallazgo del primer caso; «la larga duración» con la cita en francés
+  - Prevista: — · Real: 2026-11-03
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [001-el-hombre/guion.md](historia/videos/001-el-hombre/guion.md) · [001-el-hombre/fuentes.md](historia/videos/001-el-hombre/fuentes.md)
+- [ ] **Narración con la voz de Gerson** `e1-voz` — ⏳ pendiente
+  - Entregable: public/videos/001-el-hombre/voz/sNN.wav de s00 a s07; `npm run validar -- 001-el-hombre --final` sin errores
+  - Depende de: `e1-guion-externo`
+  - Prevista: — · Real: null
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
 
 ## Máquinas
 

@@ -28,6 +28,10 @@
       "titulo": "Fase 2 · Tanda 2 de muestras"
     },
     {
+      "id": "f2e",
+      "titulo": "Fase 2b · Tanda de estilos (adaptados al canal)"
+    },
+    {
       "id": "f3",
       "titulo": "Fase 3 · Referencia naval en pruebas chicas"
     },
@@ -38,6 +42,10 @@
     {
       "id": "f5",
       "titulo": "Fase 5 · Medir en las máquinas reales"
+    },
+    {
+      "id": "e1",
+      "titulo": "Episodio 0·1 · El hombre que le sacó la cuenta al Perú"
     }
   ],
   "tareas": [
@@ -519,6 +527,124 @@
       }
     },
     {
+      "estado": "propuesto",
+      "depende_de": [
+        "t1-revision"
+      ],
+      "prevista": null,
+      "real": null,
+      "bloqueo": null,
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      },
+      "id": "es-blueprint",
+      "fase": "f2e",
+      "titulo": "Blueprint: plano técnico de una obra histórica",
+      "entregable": "5 s en cianotipo con la tinta del canal: el plano de un barco, un puente o una mina que se traza y se acota. Tema y fuente a definir con Gerson"
+    },
+    {
+      "estado": "propuesto",
+      "depende_de": [
+        "t1-revision"
+      ],
+      "prevista": null,
+      "real": null,
+      "bloqueo": null,
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      },
+      "id": "es-recorte",
+      "fase": "f2e",
+      "titulo": "Paper Cutout: collage con grabados de dominio público",
+      "entregable": "5 s: personaje o ciudad que se arma en capas de papel recortado, con grabados de licencia clara registrada"
+    },
+    {
+      "estado": "propuesto",
+      "depende_de": [
+        "t1-revision"
+      ],
+      "prevista": null,
+      "real": null,
+      "bloqueo": null,
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      },
+      "id": "es-ticket",
+      "fase": "f2e",
+      "titulo": "Receipt Printer: cifras que se imprimen renglón a renglón",
+      "entregable": "5 s: un registro contable o de aduana que sale de la máquina; tipografía de máquina del canal; cifras con fuente o marcadas [VERIFICAR]"
+    },
+    {
+      "estado": "propuesto",
+      "depende_de": [
+        "t1-revision"
+      ],
+      "prevista": null,
+      "real": null,
+      "bloqueo": null,
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      },
+      "id": "es-isometrico",
+      "fase": "f2e",
+      "titulo": "Isometric World: un sistema explicado en isométrico",
+      "entregable": "5 s: una hacienda, la mita o un puerto en isométrico dibujado a pluma con la paleta del canal, no en colores de juguete"
+    },
+    {
+      "estado": "propuesto",
+      "depende_de": [
+        "t1-revision"
+      ],
+      "prevista": null,
+      "real": null,
+      "bloqueo": null,
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      },
+      "id": "es-pincel",
+      "fase": "f2e",
+      "titulo": "Ink Brush: trazo de pincel con manchas",
+      "entregable": "5 s: título o mapa a pincel grueso; comparar con la pluma de la muestra 02"
+    },
+    {
+      "estado": "descartado",
+      "depende_de": [],
+      "prevista": null,
+      "real": null,
+      "bloqueo": null,
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      },
+      "id": "es-descartados",
+      "fase": "f2e",
+      "titulo": "Estilos no adoptados para el formato largo",
+      "entregable": "Pixel Arcade y Neon Sign: no encajan con el tema ni el tono. Kinetic Type: solo shorts o la palabra clave (choca con «el texto no repite la voz»). Flat 2D: solo con cuidado, es el estilo más genérico. Whiteboard: el canal ya tiene pizarra; se toma la técnica de la mano que dibuja"
+    },
+    {
       "id": "n1-mar",
       "fase": "f3",
       "titulo": "Naval 1 · Mar y balanceo",
@@ -730,6 +856,123 @@
         "agente": null,
         "render_s": null,
         "maquina": "pc-objetivo"
+      }
+    },
+    {
+      "id": "e1-revision",
+      "fase": "e1",
+      "titulo": "Revisión del director aplicada (notas del 30-oct)",
+      "entregable": "Cruz y fecha, Lima 1956, agua azul, volante, pizarra, brújula, libro, paneo, pregunta, música",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-10-30",
+        "fin": "2026-10-31"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/revision_quiroz_ep01.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-gancho",
+      "fase": "e1",
+      "titulo": "Gancho del 0·1",
+      "entregable": "Escena Gancho (s00): la cifra, el sistema y el libro",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-10-31",
+        "fin": "2026-10-31"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/src/escenas/Gancho/",
+        "historia/videos/001-el-hombre/guion.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-pulido",
+      "fase": "e1",
+      "titulo": "Pasada de pulido de animación",
+      "entregable": "Saltos, vacíos y planos congelados (detección de cambios de imagen con ffmpeg)",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-03",
+        "fin": "2026-11-03"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/revision_quiroz_ep01.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-guion-externo",
+      "fase": "e1",
+      "titulo": "Guion tras la revisión externa",
+      "entregable": "Método, regresión, promesa de la serie, hallazgo del primer caso; «la larga duración» con la cita en francés",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-03",
+        "fin": "2026-11-03"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/guion.md",
+        "historia/videos/001-el-hombre/fuentes.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-voz",
+      "fase": "e1",
+      "titulo": "Narración con la voz de Gerson",
+      "entregable": "public/videos/001-el-hombre/voz/sNN.wav de s00 a s07; `npm run validar -- 001-el-hombre --final` sin errores",
+      "estado": "pendiente",
+      "depende_de": [
+        "e1-guion-externo"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": null,
+        "fin": null
+      },
+      "bloqueo": null,
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
       }
     }
   ]

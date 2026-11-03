@@ -94,7 +94,7 @@
       "id": "s01",
       "seccion": "gancho",
       "componente": "PruebasDeImprenta",
-      "duracion_s": 50.27,
+      "duracion_s": 49.72,
       "cola_s": 2.5,
       "intensidad": 3,
       "cambio": "de un desconocido a un hombre que corrige su libro contra el tiempo",
@@ -112,8 +112,8 @@
         "recorre": 39.55,
         "mayo": 43.11,
         "final": 44.5,
-        "hombre": 47.4,
-        "encontro": 48.66
+        "hombre": 47.51,
+        "encontro": 49.11
       },
       "props": {
         "ficha": "NUEVA YORK · 2012",
