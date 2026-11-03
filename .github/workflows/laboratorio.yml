@@ -1,0 +1,61 @@
+# Renderiza las cinco muestras del laboratorio en una máquina limpia de GitHub y deja los MP4,
+# las hojas de contactos y los registros como artefacto del run (14 días). Sirve para:
+#  - comprobar que se reproducen desde el repositorio, sin nada del contenedor donde se hicieron;
+#  - tener enlaces a los MP4 sin subirlos a git (regla del canal: out/ fuera de git).
+# Los tiempos de esta máquina se registran con su nombre; no se mezclan con los de otras.
+name: laboratorio
+on:
+  workflow_dispatch:
+  pull_request:
+    paths: ['historia/laboratorio/**', 'historia/src/**', 'historia/package*.json', '.github/workflows/laboratorio.yml']
+concurrency:
+  group: laboratorio-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  muestras:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    defaults:
+      run:
+        working-directory: historia
+    env:
+      LAB_MAQUINA: "GitHub Actions ubuntu-24.04 (runner estándar)"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: historia/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencias del sistema (Pango/Cairo para Manim, ffmpeg)
+        run: sudo apt-get update && sudo apt-get install -y libpango1.0-dev libcairo2-dev pkg-config ffmpeg
+      - name: Manim
+        run: |
+          python -m venv ~/venv-manim
+          ~/venv-manim/bin/pip install -r laboratorio/muestras/01-monedas-manim/requirements.txt
+          python -m pip install numpy pillow
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run validar
+      - name: Máquina
+        run: |
+          nproc; free -g; lscpu | grep 'Model name'; (nvidia-smi || echo 'sin GPU')
+      - name: Render de las cinco muestras
+        env:
+          MANIM_PY: /home/runner/venv-manim/bin/python
+        run: ./laboratorio/scripts/ci.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: laboratorio-tanda-1
+          retention-days: 14
+          path: |
+            historia/laboratorio/out/*/final.mp4
+            historia/laboratorio/out/*/final-ci.log
+            historia/laboratorio/out/tanda-1.mp4
+            historia/laboratorio/resultados/*/final-ci.json
+            historia/laboratorio/resultados/*/revision.json
+            historia/laboratorio/resultados/*/hoja.jpg
