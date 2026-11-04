@@ -41,6 +41,31 @@ se anota aquí.
 - **Dónde aplica:** todo el laboratorio y, mientras no diga otra cosa, las escenas del canal.
 - **Pendiente:** el veredicto muestra por muestra, cuando Gerson lo dé.
 
+### Muestra 06, tormenta sobre el lago (2026-11-04)
+
+- **Qué miró:** la primera versión de la 06 (PixiJS), entera.
+- **Veredicto:** no aprobado.
+- **Por qué, en sus palabras:** «se parecen a mis dibujos, planos y sin corazón». Mandó tres paisajes
+  vectoriales de la comunidad (lago con sol al atardecer, lago con luna y penínsulas, cordillera
+  nevada con nubes): «son trabajo vectorial, pero dan sensación de profundidad… tenemos que apuntar
+  a eso».
+- **Regla que se deriva (lectura del agente de esas referencias, para que Gerson la corrija):** la
+  profundidad no sale del desenfoque sino de:
+  1. **Una escala de valor y color de lejos a cerca**, en 5–7 capas: lo lejano toma el color del
+     cielo (bruma), lo cercano es oscuro y saturado. No tres grises.
+  2. **Bruma al pie de cada capa**: cada capa se aclara hacia su base, y eso la separa de la de atrás.
+  3. **Una fuente de luz con halo** (sol, luna) que da dirección; las caras de las montañas tienen
+     lado de luz y lado de sombra, y nieve en las cumbres.
+  4. **Primer plano que enmarca**, cortado por el borde del cuadro (árboles, totora), y objetos que
+     dan escala (grandes adelante, chicos atrás).
+  5. **Un suelo que se aleja**: orillas y penínsulas en diagonal que entran al agua, no franjas
+     horizontales de borde a borde.
+  6. **Agua que refleja** el cielo y las capas, con líneas de oleaje que cortan el reflejo y la
+     columna de luz del sol.
+  7. **Composición asimétrica**, con el horizonte fuera del centro.
+- **Dónde aplica:** todo paisaje del canal. La paleta del canal ya trae ocre y verde: la escala de
+  profundidad se arma mezclando sus colores, sin salir de ella.
+
 ## Formato para los próximos veredictos
 
 No se completan con suposiciones del agente. Formato para cada entrada:

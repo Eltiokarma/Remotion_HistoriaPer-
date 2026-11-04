@@ -495,15 +495,17 @@
         "historia/laboratorio/muestras/06-lluvia-pixi/INFORME.md",
         "historia/laboratorio/resultados/06-lluvia-pixi/final-caliente.json",
         "historia/laboratorio/resultados/06-lluvia-pixi/referencia-03-final-caliente.json",
-        "historia/laboratorio/resultados/06-lluvia-pixi/hoja.jpg"
+        "historia/laboratorio/resultados/06-lluvia-pixi/hoja.jpg",
+        "historia/laboratorio/resultados/06-lluvia-pixi/v1/hoja.jpg",
+        "historia/.claude/skills/canal-historia/criterios.md"
       ],
       "tiempo": {
         "humano_min": null,
-        "agente": "2026-11-04, renders medidos entre 12:40 y 12:50 UTC (inicio de la sesión no registrado)",
-        "render_s": 180.5,
+        "agente": "2026-11-04: renders de la versión 1 entre 12:40 y 12:50 UTC, de la versión 2 entre 20:30 y 20:38 UTC (tiempo de sesión no registrado)",
+        "render_s": 200.6,
         "maquina": "contenedor"
       },
-      "nota": "Adelantada a pedido de Gerson (2026-11-04) antes del veredicto muestra por muestra de la tanda 1. Final caliente 180,5 s (frío 211,0) contra 28,6 s de la 03 en la misma sesión: el costo son los desenfoques y un solo proceso GPU por software (SwiftShader), no las 3830 gotas. Con GPU sin probar. Sin aprobar por Gerson."
+      "nota": "Adelantada a pedido de Gerson (2026-11-04). Versión 1 no aprobada («planos y sin corazón»); la versión 2 aplica sus referencias de paisaje vectorial con profundidad y espera su veredicto. Final caliente 200,6 s (frío 222,1) contra 28,6 s de la 03 en la misma sesión: el costo es pintar a pantalla completa en un solo proceso GPU por software (SwiftShader), no la cantidad de elementos. Con GPU sin probar."
     },
     {
       "id": "t2-qgis",

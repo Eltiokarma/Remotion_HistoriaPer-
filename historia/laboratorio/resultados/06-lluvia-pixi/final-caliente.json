@@ -1,14 +1,14 @@
 {
   "muestra": "06-lluvia-pixi",
   "etapa": "final-caliente",
-  "inicio_utc": "2026-11-04T12:43:49+00:00",
+  "inicio_utc": "2026-11-04T20:34:12+00:00",
   "comando": "npx remotion render laboratorio/remotion/index.ts lab-06-lluvia-pixi laboratorio/out/06-lluvia-pixi/final.mp4",
   "codigo_salida": 0,
-  "segundos_pared": 180.5,
-  "segundos_cpu": 41.7,
+  "segundos_pared": 200.6,
+  "segundos_cpu": 35.2,
   "condicion": "caliente",
-  "pico_pss_mb": 2434,
-  "pico_rss_mb": 3235,
+  "pico_pss_mb": 2673,
+  "pico_rss_mb": 3422,
   "pico_pss_por_tipo": {
     "otros": {
       "pss_mb": 48,
@@ -17,17 +17,17 @@
     },
     "node": {
       "pss_mb": 194,
-      "rss_mb": 221,
+      "rss_mb": 220,
       "procesos": 2
     },
     "ffmpeg": {
-      "pss_mb": 547,
-      "rss_mb": 566,
+      "pss_mb": 554,
+      "rss_mb": 572,
       "procesos": 1
     },
     "chrome": {
-      "pss_mb": 1644,
-      "rss_mb": 2372,
+      "pss_mb": 1877,
+      "rss_mb": 2553,
       "procesos": 8
     }
   },
@@ -39,26 +39,26 @@
     },
     "node": {
       "pss_mb": 194,
-      "rss_mb": 221,
+      "rss_mb": 220,
       "procesos": 2
     },
     "ffmpeg": {
-      "pss_mb": 547,
-      "rss_mb": 566,
+      "pss_mb": 554,
+      "rss_mb": 572,
       "procesos": 1
     },
     "chrome": {
-      "pss_mb": 1644,
-      "rss_mb": 2372,
+      "pss_mb": 1877,
+      "rss_mb": 2553,
       "procesos": 8
     }
   },
   "memoria_metodo": "árbol de procesos del comando (node/npx, webpack, Chrome headless y sus procesos, ffmpeg; o Python en Manim), muestreo cada 0,25 s de /proc/<pid>/smaps_rollup. PSS reparte la memoria compartida; RSS la cuenta en cada proceso y sobreestima. Un pico más corto que el muestreo se puede perder.",
   "registro_destacado": [
-    "[Tab 1, laboratorio/muestras/06-lluvia-pixi/Muestra.tsx:150] [lab06] Pixi webgl: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium) | búfer 1920×1080",
-    "[Tab 0, laboratorio/muestras/06-lluvia-pixi/Muestra.tsx:150] [lab06] Pixi webgl: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium) | búfer 1920×1080",
-    "[Tab 3, laboratorio/muestras/06-lluvia-pixi/Muestra.tsx:150] [lab06] Pixi webgl: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium) | búfer 1920×1080",
-    "[Tab 2, laboratorio/muestras/06-lluvia-pixi/Muestra.tsx:150] [lab06] Pixi webgl: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium) | búfer 1920×1080"
+    "[Tab 1, laboratorio/muestras/06-lluvia-pixi/Muestra.tsx:258] [lab06] Pixi webgl: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium) | búfer 1920×1080",
+    "[Tab 0, laboratorio/muestras/06-lluvia-pixi/Muestra.tsx:258] [lab06] Pixi webgl: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium) | búfer 1920×1080",
+    "[Tab 2, laboratorio/muestras/06-lluvia-pixi/Muestra.tsx:258] [lab06] Pixi webgl: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium) | búfer 1920×1080",
+    "[Tab 3, laboratorio/muestras/06-lluvia-pixi/Muestra.tsx:258] [lab06] Pixi webgl: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver) | WebGL 2.0 (OpenGL ES 3.0 Chromium) | búfer 1920×1080"
   ],
   "maquina": {
     "nombre": "contenedor en la nube (sesión de Claude Code)",
@@ -89,6 +89,6 @@
     "fps": "30/1",
     "codec": "h264",
     "audio": null,
-    "mb": 7.99
+    "mb": 6.68
   }
 }

@@ -99,10 +99,12 @@ lo de la primera tanda; `pendientes/` los recortes de lo que falta.
 
 ## Tanda 2
 
-- **06 · Tormenta sobre el lago (PixiJS)** — [informe](muestras/06-lluvia-pixi/INFORME.md). 3830 gotas
-  en tres planos, cordillera en capas con reflejo, relámpago como golpe. Funciona gobernada por el
-  cuadro; en el contenedor (sin GPU) tarda ~6× lo que la 03 (p5): el costo son los desenfoques y un
-  solo proceso GPU por software que atiende a todas las pestañas, no la cantidad de elementos.
+- **06 · Tormenta sobre el lago (PixiJS)**, [informe](muestras/06-lluvia-pixi/INFORME.md). La versión 1
+  (tinta, tres grises) la rechazó Gerson por plana; la versión 2 toma de sus referencias la escala de
+  color de lejos a cerca, la bruma al pie de cada capa, la luz con dirección, el suelo que se aleja,
+  el primer plano que enmarca y el agua que refleja. En el contenedor (sin GPU) tarda ~7× lo que la
+  03 (p5): cuesta pintar píxeles a pantalla completa en un solo proceso GPU por software, no la
+  cantidad de elementos.
 
 ## Qué sigue
 
