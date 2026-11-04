@@ -5,6 +5,10 @@ escenas y piezas compartidas. El prototipo es el video **000: El hombre que le s
 al Perú** (fase 2: 11 escenas, ~9 min), todo animado: tipografía, grabados, mapas y objetos
 dibujados en código, sin fotos ni metraje.
 
+El criterio de dirección (guion, voz, imagen, sonido y el pase final contra lo genérico) está en
+[`.claude/skills/direccion-historia/SKILL.md`](../.claude/skills/direccion-historia/SKILL.md).
+Claude Code lo carga como skill del proyecto (`/direccion-historia`).
+
 ## Usar
 
 Necesitas Node 18 o más nuevo.

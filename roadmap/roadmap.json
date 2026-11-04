@@ -336,45 +336,81 @@
       "nota": "Revisado antes de activar: 291 archivos (markdown, ejemplos .tsx y 2 scripts .mjs de mapas que solo corren si se ejecutan). Mismos hashes que la copia revisada."
     },
     {
+      "id": "f0-reglas-codigo",
+      "fase": "f0",
+      "titulo": "Reglas del canal comprobadas en el código",
+      "entregable": "historia/scripts/reglas.ts (npm run reglas, con prueba propia --probar) y workflow «codigo» (typecheck, reglas, validar) en cada push y PR",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-03",
+        "fin": "2026-11-03"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/scripts/reglas.ts",
+        ".github/workflows/codigo.yml"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "≈ 12:00–12:20 UTC (junto con el skill v0)",
+        "render_s": null,
+        "maquina": null
+      },
+      "nota": "Siete reglas: easing-suelto, azar-sin-semilla, reloj, temporizador, css-animado, fuente-remota, fondo-sin-espera. Hoy: 113 archivos, 0 violaciones, 1 excepción declarada (muestra 04)."
+    },
+    {
       "id": "f0-skill-canal",
       "fase": "f0",
       "titulo": "Skill propio del canal, encima del oficial",
-      "entregable": "Reglas de historia/CLAUDE.md, trampas encontradas en el laboratorio, cuándo usar medir/revisar/geometría y los criterios de aprobación de Gerson",
-      "estado": "pendiente",
+      "entregable": "canal-historia (oficio, trampas, procedimiento) enlazado a los criterios del director; choques del criterio para decidir; veredictos de Gerson sobre las muestras",
+      "estado": "en_curso",
       "depende_de": [
         "t1-revision",
         "f0-skill-remotion"
       ],
       "prevista": null,
-      "real": null,
-      "bloqueo": "Espera la revisión de Gerson de la tanda 1: sus criterios son el contenido principal.",
-      "evidencia": [],
+      "real": {
+        "inicio": "2026-11-03",
+        "fin": null
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/.claude/skills/canal-historia/SKILL.md"
+      ],
       "tiempo": {
         "humano_min": null,
-        "agente": null,
+        "agente": "≈ 12:00–12:20 UTC (v0)",
         "render_s": null,
         "maquina": null
-      }
+      },
+      "nota": "Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision)."
     },
     {
       "id": "f0-skill-medir",
       "fase": "f0",
       "titulo": "Medir si el skill reemplaza esfuerzo",
-      "entregable": "Una muestra nueva hecha dos veces: esfuerzo medio con skill contra alto sin skill; comparar revisor, defectos, vueltas, tokens y la opinión de Gerson",
-      "estado": "propuesto",
+      "entregable": "Protocolo en historia/laboratorio/MEDIR_SKILL.md: brazos A (medio con skills), B (alto sin skills) y C opcional (medio sin skills); misma muestra nueva (sugerida es-ticket), sesiones nuevas, mismo pedido, juicio a ciegas de Gerson; consumo con scripts/consumo_sesion.py",
+      "estado": "pendiente",
       "depende_de": [
-        "f0-skill-canal"
+        "f0-skill-canal",
+        "t1-revision"
       ],
       "prevista": null,
       "real": null,
       "bloqueo": null,
-      "evidencia": [],
+      "evidencia": [
+        "historia/laboratorio/MEDIR_SKILL.md",
+        "historia/laboratorio/scripts/consumo_sesion.py"
+      ],
       "tiempo": {
         "humano_min": null,
         "agente": null,
         "render_s": null,
         "maquina": null
-      }
+      },
+      "nota": "Protocolo listo el 2026-11-04, sin ejecutar. Espera la revisión de la tanda 1 (para elegir la muestra) y la aprobación de Gerson para gastar dos o tres sesiones."
     },
     {
       "id": "t1-revision",
@@ -500,7 +536,8 @@
         "agente": null,
         "render_s": null,
         "maquina": null
-      }
+      },
+      "nota": "Ya existe una prueba sin fusionar en la rama experimento-3d-guano: islas de Chincha hacia 1850, Blender 5.2.3 procedural, Cycles CPU, 10 s a 1280×720 en 81 min (contenedor sin GPU). Antes de repetirla: revisarla y decidir si entra (trae PNG de prueba de ~800 KB)."
     },
     {
       "id": "t2-toon",

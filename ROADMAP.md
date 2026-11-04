@@ -12,11 +12,10 @@ Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **16** · ⏳ pendiente: **7** · 💡 propuesto: **13** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **17** · 🔄 en curso: **1** · ⏳ pendiente: **7** · 💡 propuesto: **12** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
-- `f0-skill-canal` Skill propio del canal, encima del oficial: Espera la revisión de Gerson de la tanda 1: sus criterios son el contenido principal.
 - `t2-blender` 08 Blender: un objeto de época con material de grabado, montado en Remotion: Sin GPU en el contenedor: Cycles por CPU será lento; Eevee necesita GPU. Medir en la laptop o esperar la PC objetivo.
 - `t4-houdini-prueba` Houdini: prueba de pyro o agua al tamaño de un plano: Necesita GPU (PC objetivo) y decidir licencia (Apprentice no es comercial).
 - `t4-unreal-prueba` Unreal Engine: render de un recorrido de 5 s: Necesita la PC con GPU; revisar la EULA para contenido lineal.
@@ -39,6 +38,7 @@ gantt
   Laboratorio entrada propia, medición y revisión :done, f0laboratorio, 2026-11-03, 1d
   CI que renderiza las muestras y publica los MP4 :done, t1ci, 2026-11-03, 1d
   Skills oficiales de Remotion instalados y revisados :done, f0skillremotion, 2026-11-03, 1d
+  Reglas del canal comprobadas en el código :done, f0reglascodigo, 2026-11-03, 1d
   Texturas que Remotion no espera (Papel y otras) prevención común :done, infrapapel, 2026-11-03, 1d
   section Fase 1 · Tanda 1 de muestras (5 s)
   01 Diez monedas → 30 % (Manim) :done, t1manim, 2026-11-03, 1d
@@ -66,7 +66,7 @@ gantt
   Guion tras la revisión externa :done, e1guionexterno, 2026-11-03, 1d
 ```
 
-Sin fecha (15): `f0-skill-canal` (⏳ pendiente), `f0-skill-medir` (💡 propuesto), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado), `e1-voz` (⏳ pendiente).
+Sin fecha (15): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado), `e1-voz` (⏳ pendiente).
 
 ## Tareas
 
@@ -101,17 +101,26 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ≈ 11:30–11:50 UTC (incluye fusionar el PR #1) · R ¿? · tokens ¿?
   - Nota: Revisado antes de activar: 291 archivos (markdown, ejemplos .tsx y 2 scripts .mjs de mapas que solo corren si se ejecutan). Mismos hashes que la copia revisada.
   - Evidencia: [historia/skills-lock.json](historia/skills-lock.json) · [historia/CLAUDE.md](historia/CLAUDE.md)
-- [ ] **Skill propio del canal, encima del oficial** `f0-skill-canal` — ⏳ pendiente
-  - Entregable: Reglas de historia/CLAUDE.md, trampas encontradas en el laboratorio, cuándo usar medir/revisar/geometría y los criterios de aprobación de Gerson
+- [x] **Reglas del canal comprobadas en el código** `f0-reglas-codigo` — ✅ hecho
+  - Entregable: historia/scripts/reglas.ts (npm run reglas, con prueba propia --probar) y workflow «codigo» (typecheck, reglas, validar) en cada push y PR
+  - Prevista: — · Real: 2026-11-03
+  - Tiempo: H ¿? · A ≈ 12:00–12:20 UTC (junto con el skill v0) · R ¿? · tokens ¿?
+  - Nota: Siete reglas: easing-suelto, azar-sin-semilla, reloj, temporizador, css-animado, fuente-remota, fondo-sin-espera. Hoy: 113 archivos, 0 violaciones, 1 excepción declarada (muestra 04).
+  - Evidencia: [scripts/reglas.ts](historia/scripts/reglas.ts) · [workflows/codigo.yml](.github/workflows/codigo.yml)
+- [ ] **Skill propio del canal, encima del oficial** `f0-skill-canal` — 🔄 en curso
+  - Entregable: canal-historia (oficio, trampas, procedimiento) enlazado a los criterios del director; choques del criterio para decidir; veredictos de Gerson sobre las muestras
   - Depende de: `t1-revision`, `f0-skill-remotion`
+  - Prevista: — · Real: 2026-11-03 → …
+  - Tiempo: H ¿? · A ≈ 12:00–12:20 UTC (v0) · R ¿? · tokens ¿?
+  - Nota: Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision).
+  - Evidencia: [canal-historia/SKILL.md](historia/.claude/skills/canal-historia/SKILL.md)
+- [ ] **Medir si el skill reemplaza esfuerzo** `f0-skill-medir` — ⏳ pendiente
+  - Entregable: Protocolo en historia/laboratorio/MEDIR_SKILL.md: brazos A (medio con skills), B (alto sin skills) y C opcional (medio sin skills); misma muestra nueva (sugerida es-ticket), sesiones nuevas, mismo pedido, juicio a ciegas de Gerson; consumo con scripts/consumo_sesion.py
+  - Depende de: `f0-skill-canal`, `t1-revision`
   - Prevista: — · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Bloqueo: Espera la revisión de Gerson de la tanda 1: sus criterios son el contenido principal.
-- [ ] **Medir si el skill reemplaza esfuerzo** `f0-skill-medir` — 💡 propuesto
-  - Entregable: Una muestra nueva hecha dos veces: esfuerzo medio con skill contra alto sin skill; comparar revisor, defectos, vueltas, tokens y la opinión de Gerson
-  - Depende de: `f0-skill-canal`
-  - Prevista: — · Real: —
-  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Nota: Protocolo listo el 2026-11-04, sin ejecutar. Espera la revisión de la tanda 1 (para elegir la muestra) y la aprobación de Gerson para gastar dos o tres sesiones.
+  - Evidencia: [laboratorio/MEDIR_SKILL.md](historia/laboratorio/MEDIR_SKILL.md) · [scripts/consumo_sesion.py](historia/laboratorio/scripts/consumo_sesion.py)
 - [x] **Texturas que Remotion no espera (Papel y otras): prevención común** `infra-papel` — ✅ hecho
   - Entregable: PrecargaTexturas en VideoLargo y en el laboratorio; comprobación frío/caliente y de imagen idéntica
   - Prevista: 2026-11-04 (propuesta) · Real: 2026-11-03
@@ -181,6 +190,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: 2026-11-16 → 2026-11-20 (propuesta) · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Sin GPU en el contenedor: Cycles por CPU será lento; Eevee necesita GPU. Medir en la laptop o esperar la PC objetivo.
+  - Nota: Ya existe una prueba sin fusionar en la rama experimento-3d-guano: islas de Chincha hacia 1850, Blender 5.2.3 procedural, Cycles CPU, 10 s a 1280×720 en 81 min (contenedor sin GPU). Antes de repetirla: revisarla y decidir si entra (trae PNG de prueba de ~800 KB).
 - [ ] **04b Libro 3D con tinta: sombreado toon y contornos** `t2-toon` — 💡 propuesto
   - Entregable: Variante de la muestra 04 que se vea grabado y no render de producto
   - Depende de: `t1-revision`

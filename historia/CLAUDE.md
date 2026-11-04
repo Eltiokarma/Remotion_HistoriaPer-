@@ -82,7 +82,9 @@ episodio para inventar. Para *Historia de la corrupción en el Perú*:
   donde estamos.
 - **Una palabra clave por episodio** a pantalla completa, como conclusión de un párrafo, quieta
   (no más de una: si hay más, se declara `texto-repite-voz`).
-- **El rojo de corrector** es para lo que importa: subrayar, tachar, señalar el dato.
+- **El rojo** es para el corrector (subrayar, tachar, señalar el dato) y para la culpa (la deuda
+  inflada, la flecha hacia el Estado); apagado, para una pérdida (§4). Las dos primeras, decididas
+  por Gerson el 2026-11-03. Fuera de eso, no: si el rojo aparece en todo, ya no significa nada.
 - **El tema del canal** (quena sobre bombo y charango) suena solo al final.
 
 ## 2. Estructura del repo
@@ -359,6 +361,9 @@ exactamente qué campo está mal.
   escrito en un componente. Una escena nueva: `src/escenas/<Escena>/esquema.ts` (esquema, beats,
   ejemplo) + `Escena.tsx`, registrada en `esquemas.ts` e `index.ts`; aparece sola en el catálogo.
 - Aleatorio siempre con semilla (`azar()`): el mismo dibujo en cada render.
+- `npm run reglas` comprueba lo que se puede comprobar de esta lista (curvas sueltas, azar sin
+  semilla, reloj, temporizadores, CSS animado, fuentes remotas, fondos que Remotion no espera); corre
+  en la CI. Una excepción se declara con `// reglas-permitir: <regla> — <motivo>`.
 
 ## 12. Render
 
@@ -444,6 +449,9 @@ manda este archivo.** Choques conocidos:
 Útiles sin choque: `remotion-render` (opciones de render), `remotion-maps` (técnicas de mapas;
 con datos con licencia, §1.1), `remotion-captions` (subtítulos, §10), `remotion-docs` (consultar la
 documentación vigente).
+
+El skill propio del canal está en `historia/.claude/skills/canal-historia/` (no lo instala ni lo
+actualiza la CLI de Remotion; comprobar que siga después de un `update`).
 
 Actualizarlos: `npx remotion skills update`, revisar el diff (son instrucciones que el agente
 obedece) y actualizar esta tabla si aparece un choque nuevo.
