@@ -391,21 +391,26 @@
       "id": "f0-skill-medir",
       "fase": "f0",
       "titulo": "Medir si el skill reemplaza esfuerzo",
-      "entregable": "Una muestra nueva hecha dos veces: esfuerzo medio con skill contra alto sin skill; comparar revisor, defectos, vueltas, tokens y la opinión de Gerson",
-      "estado": "propuesto",
+      "entregable": "Protocolo en historia/laboratorio/MEDIR_SKILL.md: brazos A (medio con skills), B (alto sin skills) y C opcional (medio sin skills); misma muestra nueva (sugerida es-ticket), sesiones nuevas, mismo pedido, juicio a ciegas de Gerson; consumo con scripts/consumo_sesion.py",
+      "estado": "pendiente",
       "depende_de": [
-        "f0-skill-canal"
+        "f0-skill-canal",
+        "t1-revision"
       ],
       "prevista": null,
       "real": null,
       "bloqueo": null,
-      "evidencia": [],
+      "evidencia": [
+        "historia/laboratorio/MEDIR_SKILL.md",
+        "historia/laboratorio/scripts/consumo_sesion.py"
+      ],
       "tiempo": {
         "humano_min": null,
         "agente": null,
         "render_s": null,
         "maquina": null
-      }
+      },
+      "nota": "Protocolo listo el 2026-11-04, sin ejecutar. Espera la revisión de la tanda 1 (para elegir la muestra) y la aprobación de Gerson para gastar dos o tres sesiones."
     },
     {
       "id": "t1-revision",
