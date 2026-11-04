@@ -16,6 +16,14 @@ la web, la API y el CDN; 2026-11-04). No se intentó saltar el bloqueo. Dos cami
 2. **Bajarlos a mano** desde freesound.org (filtro de licencia «Creative Commons 0») y subirlos a
    `public/compartido/audio/sfx/cc0/` con el enlace de cada uno.
 
+## Prueba con la clave (2026-11-04, 12:1x UTC)
+
+Gerson puso `FREESOUND_API_KEY` en el entorno. Una búsqueda autenticada
+(`GET /apiv2/search/text/` con `Authorization: Token …`) también devolvió **403, sin cuerpo**: el
+bloqueo no es por falta de clave, sino a las conexiones desde este entorno de nube (probablemente por
+la IP). Queda el camino 2 (bajarlos a mano). Si en otra sesión se quiere reintentar, es una sola
+llamada; si vuelve 403, no insistir.
+
 ## La lista
 
 | # | Sonido | Momento (s) | Para qué | Buscar en Freesound |

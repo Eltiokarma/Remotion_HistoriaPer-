@@ -1,0 +1,32 @@
+{
+  "registro": "30cd288f-78eb-5719-a7c9-2fc14bd87f1d.jsonl",
+  "ventana": {
+    "desde": null,
+    "hasta": null,
+    "primera_llamada": "2026-11-04T02:46:17.082Z",
+    "ultima_llamada": "2026-11-04T12:11:45.365Z"
+  },
+  "llamadas": 99,
+  "entrada": 206,
+  "salida": 208186,
+  "lectura_cache": 24252658,
+  "escritura_cache": 484638,
+  "errores_herramienta": 4,
+  "herramientas": {
+    "Bash": 68,
+    "Read": 22,
+    "Write": 9,
+    "SendUserFile": 3,
+    "Skill": 1,
+    "AskUserQuestion": 1,
+    "mcp__claude-code-remote__read_documentation": 1
+  },
+  "costo_api_equivalente_usd": 12.89,
+  "tarifas_usd_por_millon": {
+    "entrada": 4.0,
+    "salida": 20.0,
+    "lectura_cache": 0.2,
+    "escritura_cache": 8.0
+  },
+  "desconocido": "razonamiento separado de la salida, reintentos de la API, cupo de la suscripción"
+}

@@ -463,7 +463,7 @@
         "inicio": "2026-11-04",
         "fin": null
       },
-      "bloqueo": "Sonidos CC0: Freesound rechaza las conexiones desde el contenedor (403). Falta una clave de su API en el entorno (FREESOUND_API_KEY) o los archivos bajados a mano (historia/laboratorio/muestras/06-mesa-con-volumen/SONIDOS.md).",
+      "bloqueo": "Sonidos CC0: Freesound responde 403 desde el entorno de nube, también con la clave de la API (probado 2026-11-04). Falta que Gerson baje a mano los 5 sonidos de SONIDOS.md. Para retomar: historia/laboratorio/muestras/06-mesa-con-volumen/SIGUIENTE.md.",
       "evidencia": [
         "historia/laboratorio/muestras/06-mesa-con-volumen/INFORME.md",
         "historia/laboratorio/resultados/06-mesa-con-volumen/hoja.jpg",
@@ -471,7 +471,8 @@
         "historia/laboratorio/resultados/06-mesa-con-volumen/fluidez.json",
         "historia/.claude/skills/canal-historia/esfuerzo.md",
         "historia/.claude/skills/canal-historia/criterios.md",
-        "historia/laboratorio/muestras/06-mesa-con-volumen/SONIDOS.md"
+        "historia/laboratorio/muestras/06-mesa-con-volumen/SONIDOS.md",
+        "historia/laboratorio/muestras/06-mesa-con-volumen/SIGUIENTE.md"
       ],
       "tiempo": {
         "humano_min": null,
