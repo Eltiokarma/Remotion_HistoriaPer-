@@ -41,6 +41,19 @@ se anota aquí.
 - **Dónde aplica:** todo el laboratorio y, mientras no diga otra cosa, las escenas del canal.
 - **Pendiente:** el veredicto muestra por muestra, cuando Gerson lo dé.
 
+### Muestra 06, v2 (2026-11-04)
+
+- **Qué miró:** `laboratorio/muestras/06-mesa-con-volumen` (v2, 10 s, commit `4fe7eea`).
+- **Veredicto:** aprobado con cambios.
+- **Por qué (paráfrasis de Gerson, en la conversación):** ya no se ve tan plano como antes. Falta
+  darle más contexto a todo el video: una mesa, una lámpara, la luz. Los efectos de sonido son muy
+  malos. La pluma se ve algo plana, pero está bien por ahora; con otros ángulos de cámara se verá bien.
+- **Regla que se deriva:** el volumen (luz, sombras, capas, física) va por buen camino. Además, el
+  espectador tiene que saber dónde está: que se vean los objetos que explican la escena (de dónde
+  viene la luz, sobre qué mueble estamos), no solo sus efectos. Los efectos de sonido sintetizados no
+  alcanzan: se reemplazan por grabaciones (§6 del canal: «preferir grabaciones propias»).
+- **Dónde aplica:** el laboratorio y las escenas de mesa del canal.
+
 ## Formato para los próximos veredictos
 
 No se completan con suposiciones del agente. Formato para cada entrada:

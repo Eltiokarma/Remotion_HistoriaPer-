@@ -95,6 +95,14 @@ Cada una con su síntoma (cómo se reconoce), la causa y el arreglo que funcion�
   por diseño, no se vio fallar). Por eso la opacidad de la estela va en cada cara del libro, no en la caja.
 - **Las copias de la estela en 3D se dibujan por profundidad, no por el orden del DOM.** Para que todas
   pesen igual (peso 1/(k+1)), se ordenan por altura.
+- **Un piso plano con hijos tapa lo que se para sobre él.** Síntoma: al acercarse la cámara, la
+  lámpara (un plano vertical sobre el escritorio) se «hunde» de abajo hacia arriba. Prueba: el cuadro
+  sin piso la muestra entera; sin pared, no. Partir el piso por la línea de la lámpara no bastó (ni
+  con `clip-path` ni con contenedores de su tamaño). Arreglo: escenas 3D separadas con la misma cámara,
+  apiladas en orden fijo (pared, mesa, lámpara), cuando la coreografía asegura que nada pasa delante.
+- **Planear el encuadre sin renderizar.** `proyectar` (muestra 06) repite la transformación CSS de la
+  cámara: dice dónde cae en pantalla cada punto. Sirve para elegir la cámara con números y para dibujar
+  en 2D lo que sale de un objeto 3D (el haz desde la pantalla de la lámpara).
 - **Entradas y salidas de cuadro.** La pluma aparecía ya dentro del cuadro (200) y desaparecía dentro
   (245). Mirar el primer y el último cuadro visible de cada cosa; el origen y el destino, fuera de cuadro.
 
