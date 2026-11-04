@@ -1,11 +1,12 @@
-"""Texturas procedurales compartidas (papel, grano de película, cáusticas de agua).
+"""Texturas procedurales compartidas (papel, grano de película, cáusticas de agua, madera).
 
 Se generan con ruido filtrado por FFT, así que todas se repiten sin costuras (tileables).
 Material propio: no hay licencias que rastrear.
 
-Uso: python scripts/generar_texturas.py      (necesita numpy y Pillow)
+Uso: python scripts/generar_texturas.py [madera ...]   (necesita numpy y Pillow; sin nombres, todas)
 Escribe en public/compartido/texturas/.
 """
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -16,11 +17,11 @@ OUT = ROOT / "public" / "compartido" / "texturas"
 rng = np.random.default_rng(1956)
 
 
-def ruido(n, filtro):
+def ruido(n, filtro, gen=None):
     """Ruido blanco filtrado en frecuencia: periódico por construcción (se repite sin costura)."""
     f = np.fft.fftfreq(n)
     fx, fy = np.meshgrid(f, f)
-    X = np.fft.fft2(rng.standard_normal((n, n))) * filtro(fx, fy)
+    X = np.fft.fft2((gen or rng).standard_normal((n, n))) * filtro(fx, fy)
     r = np.real(np.fft.ifft2(X))
     return (r - r.mean()) / (r.std() + 1e-9)
 
@@ -81,11 +82,29 @@ def caustica(n=512):
     return np.clip(cresta / np.percentile(cresta, 99.7), 0, 1)
 
 
+def madera(n=1024):
+    """Madera de mesa: vetas a lo largo de x, deformadas, con fibra fina. Gris claro (para multiply).
+    Usa su propio generador: agregarla no cambia las demás texturas."""
+    g = np.random.default_rng(1979)
+    y = np.arange(n)[:, None] / n
+    # deformación lenta de las vetas (larga en x, más corta en y): periódica, así que no hay costura
+    onda = ruido(n, lambda fx, fy: np.exp(-(fx ** 2) / (2 * 0.002 ** 2) - (fy ** 2) / (2 * 0.006 ** 2)), g)
+    anillos = 0.5 + 0.5 * np.sin(2 * np.pi * 11 * y + 2.4 * onda)
+    tardia = anillos ** 6  # la madera tardía: líneas finas y oscuras
+    fibra = ruido(n, fibras(0, largo=0.003, grosor=0.25), g)
+    nubes = ruido(n, lambda fx, fy: np.exp(-(fx ** 2) / (2 * 0.004 ** 2) - (fy ** 2) / (2 * 0.02 ** 2)), g)
+    return 0.86 - 0.16 * tardia + 0.035 * fibra + 0.03 * nubes - 0.04 * anillos
+
+
 def main():
-    guardar(papel(), "papel.jpg", 88)
-    for i in range(6):
-        guardar(grano(), f"grano-{i}.png")
-    guardar(caustica(), "caustica.png")
+    todas = {
+        "papel": lambda: guardar(papel(), "papel.jpg", 88),
+        "grano": lambda: [guardar(grano(), f"grano-{i}.png") for i in range(6)],
+        "caustica": lambda: guardar(caustica(), "caustica.png"),
+        "madera": lambda: guardar(madera(), "madera.jpg", 86),
+    }
+    for nombre in sys.argv[1:] or list(todas):
+        todas[nombre]()
 
 
 if __name__ == "__main__":

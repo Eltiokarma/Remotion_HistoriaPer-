@@ -16,5 +16,7 @@ export const ambiente = (nombre: string) => compartido(`audio/ambiente/${nombre}
 export const textura = {
   papel: compartido('texturas/papel.jpg'),
   caustica: compartido('texturas/caustica.png'),
+  /** veta de madera de mesa (laboratorio 06) */
+  madera: compartido('texturas/madera.jpg'),
   grano: (i: number) => compartido(`texturas/grano-${((i % 6) + 6) % 6}.png`),
 };

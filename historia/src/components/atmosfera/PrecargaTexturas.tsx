@@ -1,7 +1,7 @@
 import { Img } from 'remotion';
 import { textura } from '../../estilo/recursos';
 
-const TODAS = [textura.papel, textura.caustica, ...[0, 1, 2, 3, 4, 5].map((i) => textura.grano(i))];
+const TODAS = [textura.papel, textura.caustica, textura.madera, ...[0, 1, 2, 3, 4, 5].map((i) => textura.grano(i))];
 
 /**
  * Las texturas del canal se pintan como fondo CSS (`Papel`, el grano de `Atmosfera`, `Pizarra`,
