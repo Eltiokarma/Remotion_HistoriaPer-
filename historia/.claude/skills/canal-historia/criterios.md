@@ -26,10 +26,24 @@ Aparecieron al traer `direccion-historia` a `main`. Ya están aplicados en ese s
 Si aparece otro choque entre los documentos del director, gana la guía hasta que Gerson decida, y
 se anota aquí.
 
-## Lo que falta: el veredicto sobre el laboratorio
+## Veredictos sobre el laboratorio
 
-Lo único vacío es cómo juzga Gerson las **muestras** (tarea `t1-revision`). No se completa con
-suposiciones del agente. Formato para cada entrada:
+### Tanda 1, en conjunto (2026-11-04)
+
+- **Qué miró:** las cinco muestras de la tanda 1, en conjunto (no muestra por muestra).
+- **Veredicto:** aprobado con cambios.
+- **Por qué (paráfrasis de Gerson, en la conversación):** «está bien, pero se ve muy plano»; mejorará
+  con el tiempo, y el skill también.
+- **Regla que se deriva:** técnicamente correcto no alcanza. Antes de mostrar una muestra, buscar qué
+  le da volumen y vida: profundidad (capas, paralaje, sombra), textura y luz con intención, contraste
+  de ritmo (quietud y golpe), algo que el espectador sienta. Lo plano es lo que el canal existe para
+  evitar (`historia/CLAUDE.md` §0).
+- **Dónde aplica:** todo el laboratorio y, mientras no diga otra cosa, las escenas del canal.
+- **Pendiente:** el veredicto muestra por muestra, cuando Gerson lo dé.
+
+## Formato para los próximos veredictos
+
+No se completan con suposiciones del agente. Formato para cada entrada:
 
 - **Qué miró:** muestra o escena, y el cuadro o tramo si aplica.
 - **Veredicto:** aprobado / no aprobado / aprobado con cambios.

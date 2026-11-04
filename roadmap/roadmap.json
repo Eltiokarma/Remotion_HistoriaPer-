@@ -417,7 +417,7 @@
       "fase": "f1",
       "titulo": "Revisión de la tanda 1 por Gerson",
       "entregable": "Por muestra: aprobada / no aprobada / para qué escena, en historia/laboratorio/revision_tanda1.md (preguntas en INFORME_TECNICO §8.3). Hoy: ninguna aprobada.",
-      "estado": "pendiente",
+      "estado": "en_curso",
       "depende_de": [
         "t1-correcciones"
       ],
@@ -426,15 +426,21 @@
         "fin": "2026-11-06",
         "origen": "propuesta"
       },
-      "real": null,
+      "real": {
+        "inicio": "2026-11-04",
+        "fin": null
+      },
       "bloqueo": null,
-      "evidencia": [],
+      "evidencia": [
+        "historia/.claude/skills/canal-historia/criterios.md"
+      ],
       "tiempo": {
         "humano_min": null,
         "agente": null,
         "render_s": null,
         "maquina": null
-      }
+      },
+      "nota": "Veredicto general de Gerson (2026-11-04): «está bien, pero se ve muy plano». Falta el veredicto muestra por muestra."
     },
     {
       "id": "infra-papel",
