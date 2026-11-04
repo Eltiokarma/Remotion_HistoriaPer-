@@ -2,7 +2,7 @@
 
 <!-- GENERADO por roadmap/generar.mjs a partir de roadmap/roadmap.json. No editar a mano: editar el JSON y regenerar. -->
 
-Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
+Actualizado: **2026-11-04**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
 
 - Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.
 - Tiempo humano y tokens: null = desconocido (no medido). No se estiman.
@@ -12,7 +12,7 @@ Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **17** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **12** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **17** · 🔄 en curso: **3** · ⏳ pendiente: **6** · 💡 propuesto: **12** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -48,6 +48,7 @@ gantt
   05 Mapa y documento → explicación (Remotion, referencia) :done, t1mapa, 2026-11-03, 1d
   Correcciones de la revisión técnica monedas, rayado, libro vacío :done, t1correcciones, 2026-11-03, 1d
   Revisión de la tanda 1 por Gerson (propuesta) :active, t1revision, 2026-11-04, 3d
+  06 La mesa con volumen (10 s) respuesta a «se ve muy plano» (propuesta) :active, t1volumen, 2026-11-04, 1d
   section Fase 2 · Tanda 2 de muestras
   06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) (propuesta) :t2pixi, 2026-11-09, 3d
   07 QGIS el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar (propuesta) :t2qgis, 2026-11-11, 4d
@@ -173,6 +174,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Nota: Veredicto general de Gerson (2026-11-04): «está bien, pero se ve muy plano». Falta el veredicto muestra por muestra.
   - Evidencia: [canal-historia/criterios.md](historia/.claude/skills/canal-historia/criterios.md)
+- [ ] **06 La mesa con volumen (10 s): respuesta a «se ve muy plano»** `t1-volumen` — 🔄 en curso
+  - Entregable: Muestra 06 en historia/laboratorio/muestras/06-mesa-con-volumen: la escena de la 05 con espacio, luz, sombra que dice la altura, paralaje y contraste de ritmo. Gerson la juzga: ¿sigue plana?
+  - Depende de: `t1-revision`
+  - Prevista: 2026-11-04 (propuesta) · Real: 2026-11-04 → …
+  - Tiempo: H ¿? · A ¿? · R 63.2 s en contenedor de la sesión (nube), Xeon 2,1 GHz, 4 hilos · tokens ¿?
+  - Nota: Hecha y renderizada (300 cuadros, 1920×1080, 30 fps). Falta el veredicto de Gerson.
+  - Evidencia: [06-mesa-con-volumen/INFORME.md](historia/laboratorio/muestras/06-mesa-con-volumen/INFORME.md) · [06-mesa-con-volumen/hoja.jpg](historia/laboratorio/resultados/06-mesa-con-volumen/hoja.jpg) · [06-mesa-con-volumen/final.json](historia/laboratorio/resultados/06-mesa-con-volumen/final.json)
 
 ### Fase 2 · Tanda 2 de muestras
 

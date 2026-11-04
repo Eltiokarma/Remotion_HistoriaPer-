@@ -1,6 +1,6 @@
 {
   "titulo": "Roadmap del laboratorio y la base de producción",
-  "actualizado": "2026-11-03",
+  "actualizado": "2026-11-04",
   "notas": [
     "Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.",
     "Tiempo humano y tokens: null = desconocido (no medido). No se estiman.",
@@ -441,6 +441,38 @@
         "maquina": null
       },
       "nota": "Veredicto general de Gerson (2026-11-04): «está bien, pero se ve muy plano». Falta el veredicto muestra por muestra."
+    },
+    {
+      "id": "t1-volumen",
+      "fase": "f1",
+      "titulo": "06 La mesa con volumen (10 s): respuesta a «se ve muy plano»",
+      "entregable": "Muestra 06 en historia/laboratorio/muestras/06-mesa-con-volumen: la escena de la 05 con espacio, luz, sombra que dice la altura, paralaje y contraste de ritmo. Gerson la juzga: ¿sigue plana?",
+      "estado": "en_curso",
+      "depende_de": [
+        "t1-revision"
+      ],
+      "prevista": {
+        "inicio": "2026-11-04",
+        "fin": "2026-11-04",
+        "origen": "propuesta"
+      },
+      "real": {
+        "inicio": "2026-11-04",
+        "fin": null
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/laboratorio/muestras/06-mesa-con-volumen/INFORME.md",
+        "historia/laboratorio/resultados/06-mesa-con-volumen/hoja.jpg",
+        "historia/laboratorio/resultados/06-mesa-con-volumen/final.json"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": 63.2,
+        "maquina": "contenedor de la sesión (nube), Xeon 2,1 GHz, 4 hilos"
+      },
+      "nota": "Hecha y renderizada (300 cuadros, 1920×1080, 30 fps). Falta el veredicto de Gerson."
     },
     {
       "id": "infra-papel",

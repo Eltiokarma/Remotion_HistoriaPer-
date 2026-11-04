@@ -1,0 +1,25 @@
+{
+  "video": "out/06-mesa-con-volumen/final.mp4",
+  "cuadros": 300,
+  "cambio_medio": 0.575,
+  "cambio_maximo": {
+    "cuadro": 129,
+    "valor": 15.17
+  },
+  "parpadeos": [],
+  "parpadeos_locales": [
+    {
+      "cuadro": 128,
+      "zonas": 1,
+      "salto_max": 15.3
+    },
+    {
+      "cuadro": 189,
+      "zonas": 4,
+      "salto_max": 16.3
+    }
+  ],
+  "cuadros_vacios": [],
+  "cambio_medio_ultimo_segundo": 0.136,
+  "metodo": "gris 320×180, todos los cuadros; parpadeo global = salto medio > 4 y > 4× la diferencia entre sus vecinos; parpadeo local = lo mismo por zona de una rejilla 8×8 con umbral 10; vacío = desviación < 2. No ve: el primer y el último cuadro como parpadeo (no tienen dos vecinos), defectos que duran 2 cuadros o más, defectos que no cambian el brillo (color, forma), errores de contenido."
+}
