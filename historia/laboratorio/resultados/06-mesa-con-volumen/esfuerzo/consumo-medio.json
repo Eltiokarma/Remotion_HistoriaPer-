@@ -1,0 +1,30 @@
+{
+  "registro": "30cd288f-78eb-5719-a7c9-2fc14bd87f1d.jsonl",
+  "ventana": {
+    "desde": "2026-11-04T02:46:14",
+    "hasta": "2026-11-04T10:37:00",
+    "primera_llamada": "2026-11-04T02:46:17.082Z",
+    "ultima_llamada": "2026-11-04T02:57:38.783Z"
+  },
+  "llamadas": 37,
+  "entrada": 80,
+  "salida": 32502,
+  "lectura_cache": 5056737,
+  "escritura_cache": 126039,
+  "errores_herramienta": 1,
+  "herramientas": {
+    "Bash": 27,
+    "Read": 6,
+    "Write": 2,
+    "Skill": 1,
+    "SendUserFile": 1
+  },
+  "costo_api_equivalente_usd": 2.67,
+  "tarifas_usd_por_millon": {
+    "entrada": 4.0,
+    "salida": 20.0,
+    "lectura_cache": 0.2,
+    "escritura_cache": 8.0
+  },
+  "desconocido": "razonamiento separado de la salida, reintentos de la API, cupo de la suscripción"
+}

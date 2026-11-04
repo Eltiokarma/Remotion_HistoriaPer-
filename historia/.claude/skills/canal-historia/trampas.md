@@ -77,3 +77,32 @@ Cada una con su síntoma (cómo se reconoce), la causa y el arreglo que funcion�
   un material por cara.
 - Sin GPU, WebGL corre por SwiftShader; queda registrado con el `console.warn` de la muestra 04.
   Con GPU hay que pasar `--gl` y comprobar en el registro que cambió.
+
+## Movimiento y CSS 3D (muestra 06)
+
+- **Un papel que cae con `tenso` se cuelga y se clava.** `tenso` empieza casi sin velocidad y termina
+  con seis veces la media: la hoja queda quieta en el aire y frena en un cuadro (`fluidez.ts`: 5 cuadros
+  colgada, frenazo de 195 px/c²). El papel cae con aire: `natural` para bajar (colchón de aire),
+  `ligero` para avanzar (entra rápido y frena por roce), un vaivén que se apaga. `tenso`, para lo pesado.
+- **Lo que gira cerca de la mesa la atraviesa.** Síntoma: el papel se pone negro o desaparece en un
+  cuadro. Causa: girar en `rotateX` hunde una mitad bajo z = 0, y la sombra queda encima. Arreglo: el
+  giro, siempre hacia arriba, y la inclinación limitada por la altura (`clamp(alto / 120)`).
+- **Algo que cae desde muy alto pasa delante de la cámara.** Síntoma: un rectángulo oscuro tapa la
+  escena un cuadro. Arreglo: menos altura, y que entre desde el fondo o desde un borde.
+- **Sombras sobre los objetos.** Chrome a veces ordena una sombra a z = 0 sobre un papel a z = 1. Mesa,
+  luz y sombras van en una capa plana (sin `preserve-3d`); los objetos, en 3D encima.
+- **`opacity` < 1, `filter` y `clip-path` aplanan `preserve-3d`** (especificación CSS; aquí se evitó
+  por diseño, no se vio fallar). Por eso la opacidad de la estela va en cada cara del libro, no en la caja.
+- **Las copias de la estela en 3D se dibujan por profundidad, no por el orden del DOM.** Para que todas
+  pesen igual (peso 1/(k+1)), se ordenan por altura.
+- **Entradas y salidas de cuadro.** La pluma aparecía ya dentro del cuadro (200) y desaparecía dentro
+  (245). Mirar el primer y el último cuadro visible de cada cosa; el origen y el destino, fuera de cuadro.
+
+## Herramientas
+
+- **`npx remotion still` arma el bundle en cada llamada:** 6,6 s por cuadro en caliente (38,7 s el
+  primero tras arrancar el contenedor). `laboratorio/scripts/cuadros.mjs`: un bundle y un navegador
+  para todos, 1,6–2 s por cuadro.
+- **`tsx` compila los scripts como CommonJS:** sin `await` en el nivel superior (`fluidez.ts` usa `.then`).
+- **`getPointAtLength` (@remotion/paths) puede devolver `null`** según sus tipos: envolverlo con un valor
+  por defecto.

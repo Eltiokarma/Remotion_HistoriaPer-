@@ -5,7 +5,7 @@ description: Cómo trabajar en el canal de historia del altiplano (historia/) �
 
 # Canal de historia del altiplano: cómo trabajar
 
-Versión 0 (2026-11-03). Hecha con lo aprendido en el laboratorio (tanda 1). El estilo del canal **no
+Versión 0 (2026-11-03), con lo aprendido en la muestra 06 (2026-11-04). Hecha con lo aprendido en el laboratorio (tanda 1). El estilo del canal **no
 está aquí**: está en los documentos del director que lista [`criterios.md`](criterios.md). Este
 skill es el oficio técnico; aquellos dicen qué buscamos.
 
@@ -46,18 +46,27 @@ Cada una costó una vuelta en el laboratorio. Detalle, síntoma y arreglo en [`t
 - `--scale` no achica WebGL (R3F) ni p5: la previa barata es un tramo (`--frames`) o el Studio.
 - El primer render en una máquina baja Chrome Headless Shell: no medir ese tiempo como «frío».
 - `world-atlas` no tiene lagos: no nombrar en pantalla lo que el mapa no muestra.
+- Un papel que cae con `tenso` se cuelga y se clava; lo que gira cerca de la mesa la atraviesa; nada
+  aparece ni desaparece dentro del cuadro (CSS 3D y movimiento, muestra 06).
+- `npx remotion still` arma el bundle en cada llamada: para varios cuadros, `laboratorio/scripts/cuadros.mjs`.
 
 ## 4. Procedimiento de una muestra o escena nueva
 
 Pasos y comandos en [`procedimiento.md`](procedimiento.md). En corto:
 
-1. Código con beats en cuadros, pesos del canal y azar con semilla.
+1. Código con beats en cuadros, pesos del canal y azar con semilla; el movimiento aparte, en funciones puras.
 2. `npm run typecheck` y `npm run reglas`.
-3. Previa barata; mirar la hoja de contactos **y** cuadros a tamaño real en los tramos de movimiento.
-4. Corregir y repetir. Guardar «antes» de cada defecto corregido (recorte o cuadros), en `resultados/`.
-5. Final medida (`scripts/medir.py` vía `remotion.sh` o `manim.sh`), `scripts/revisar.py`.
-6. Informe: qué demuestra, qué salió mal, qué costó, para qué escenas sirve.
-7. Roadmap: actualizar `roadmap/roadmap.json` y correr `node roadmap/generar.mjs`.
+3. Fluidez medida (`fluidez.ts`): curva por material, velocidad sin cortes, entradas y salidas fuera de
+   cuadro, desenfoque donde va rápido.
+4. Cuadros sueltos (`cuadros.mjs`) con una pregunta por vuelta; previa barata; hoja de contactos **y**
+   cuadros a tamaño real en los tramos de movimiento.
+5. Corregir y repetir. Guardar «antes» de cada defecto corregido (recorte o cuadros), en `resultados/`.
+6. Final medida (`scripts/medir.py` vía `remotion.sh` o `manim.sh`), `scripts/revisar.py`.
+7. Informe: qué demuestra, qué salió mal, qué costó, para qué escenas sirve.
+8. Roadmap: actualizar `roadmap/roadmap.json` y correr `node roadmap/generar.mjs`.
+
+Qué hizo el esfuerzo extra que no hizo el medio, con números y lo que pasó a estos pasos:
+[`esfuerzo.md`](esfuerzo.md).
 
 ## 5. Verificar antes de decir «listo»
 
