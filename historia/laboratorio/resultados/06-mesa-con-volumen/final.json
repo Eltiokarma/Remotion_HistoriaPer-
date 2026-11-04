@@ -1,55 +1,55 @@
 {
   "muestra": "06-mesa-con-volumen",
   "etapa": "final",
-  "inicio_utc": "2026-11-04T02:55:20+00:00",
+  "inicio_utc": "2026-11-04T10:54:37+00:00",
   "comando": "npx remotion render laboratorio/remotion/index.ts lab-06-mesa-con-volumen laboratorio/out/06-mesa-con-volumen/final.mp4",
   "codigo_salida": 0,
-  "segundos_pared": 63.2,
-  "segundos_cpu": 34.8,
+  "segundos_pared": 110.6,
+  "segundos_cpu": 71.4,
   "condicion": "sin indicar",
-  "pico_pss_mb": 2714,
-  "pico_rss_mb": 3670,
+  "pico_pss_mb": 3229,
+  "pico_rss_mb": 4685,
   "pico_pss_por_tipo": {
     "otros": {
       "pss_mb": 48,
-      "rss_mb": 76,
+      "rss_mb": 75,
       "procesos": 2
     },
     "node": {
-      "pss_mb": 846,
-      "rss_mb": 873,
+      "pss_mb": 294,
+      "rss_mb": 320,
       "procesos": 2
     },
     "ffmpeg": {
-      "pss_mb": 484,
-      "rss_mb": 503,
+      "pss_mb": 556,
+      "rss_mb": 574,
       "procesos": 1
     },
     "chrome": {
-      "pss_mb": 1335,
-      "rss_mb": 2219,
+      "pss_mb": 2332,
+      "rss_mb": 3715,
       "procesos": 8
     }
   },
   "pico_rss_por_tipo": {
     "otros": {
       "pss_mb": 48,
-      "rss_mb": 76,
+      "rss_mb": 75,
       "procesos": 2
     },
     "node": {
-      "pss_mb": 846,
-      "rss_mb": 873,
+      "pss_mb": 294,
+      "rss_mb": 320,
       "procesos": 2
     },
     "ffmpeg": {
-      "pss_mb": 484,
-      "rss_mb": 503,
+      "pss_mb": 556,
+      "rss_mb": 574,
       "procesos": 1
     },
     "chrome": {
-      "pss_mb": 1335,
-      "rss_mb": 2219,
+      "pss_mb": 2332,
+      "rss_mb": 3715,
       "procesos": 8
     }
   },
@@ -84,6 +84,6 @@
     "fps": "30/1",
     "codec": "h264",
     "audio": "aac",
-    "mb": 2.78
+    "mb": 13.65
   }
 }

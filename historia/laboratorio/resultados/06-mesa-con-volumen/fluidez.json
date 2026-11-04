@@ -1,0 +1,85 @@
+{
+  "modulo": "laboratorio/muestras/06-mesa-con-volumen/movimiento.ts",
+  "fps": 30,
+  "ahora": [
+    {
+      "trayectoria": "hoja",
+      "paso_max": 70,
+      "en_cuadro": 105,
+      "frenazo_max": 10.8,
+      "frenazo_en": 107,
+      "sacudida_max": 4.6,
+      "sacudida_en": 110,
+      "en_contacto": 0,
+      "colgado": 0
+    },
+    {
+      "trayectoria": "libro",
+      "paso_max": 132.2,
+      "en_cuadro": 184,
+      "frenazo_max": 27.5,
+      "frenazo_en": 182,
+      "sacudida_max": 14.4,
+      "sacudida_en": 173,
+      "en_contacto": 88.5,
+      "colgado": 0
+    },
+    {
+      "trayectoria": "pluma",
+      "paso_max": 869.6,
+      "en_cuadro": 246,
+      "frenazo_max": 427.3,
+      "frenazo_en": 245,
+      "sacudida_max": 237.4,
+      "sacudida_en": 245,
+      "en_contacto": 0,
+      "colgado": 3
+    },
+    {
+      "trayectoria": "cámara",
+      "paso_max": 32.3,
+      "en_cuadro": 67,
+      "frenazo_max": 3.7,
+      "frenazo_en": 63,
+      "sacudida_max": 2.3,
+      "sacudida_en": 67,
+      "en_contacto": 0,
+      "colgado": null
+    }
+  ],
+  "antes": [
+    {
+      "trayectoria": "hoja",
+      "paso_max": 195.3,
+      "en_cuadro": 129,
+      "frenazo_max": 195.3,
+      "frenazo_en": 129,
+      "sacudida_max": 251.8,
+      "sacudida_en": 129,
+      "en_contacto": 0,
+      "colgado": 5
+    },
+    {
+      "trayectoria": "libro",
+      "paso_max": 132.2,
+      "en_cuadro": 184,
+      "frenazo_max": 27.5,
+      "frenazo_en": 182,
+      "sacudida_max": 14.4,
+      "sacudida_en": 173,
+      "en_contacto": 89.3,
+      "colgado": 0
+    },
+    {
+      "trayectoria": "cámara",
+      "paso_max": 32.3,
+      "en_cuadro": 67,
+      "frenazo_max": 3.7,
+      "frenazo_en": 63,
+      "sacudida_max": 2.3,
+      "sacudida_en": 67,
+      "en_contacto": 0,
+      "colgado": null
+    }
+  ]
+}

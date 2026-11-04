@@ -1,61 +1,47 @@
 import { AbsoluteFill, Audio, interpolate, Sequence, useCurrentFrame, useVideoConfig } from 'remotion';
+import { Atmosfera } from '../../../src/components/atmosfera/Atmosfera';
 import { Papel } from '../../../src/components/atmosfera/Papel';
 import { Sfx } from '../../../src/components/audio/Sfx';
-import { FiltroTinta, trazoManuscrito } from '../../../src/components/graficos/svg';
-import { asienta, clamp, impacto, mix, tramo } from '../../../src/direction/anim';
+import { Pluma } from '../../../src/components/graficos/Pluma';
+import { bordePapel, FiltroTinta, trazoManuscrito } from '../../../src/components/graficos/svg';
+import { clamp, mix } from '../../../src/direction/anim';
 import { azar } from '../../../src/direction/azar';
 import { alfa, mezclar } from '../../../src/estilo/color';
 import { fuente } from '../../../src/estilo/fuentes';
 import { ambiente, textura } from '../../../src/estilo/recursos';
 import { PALETA } from '../../remotion/comun';
+import {
+  B, DOC, LAMPARA, LIBRO, MESA, PALABRA, RENGLON, SUBRAYADO,
+  camara, estadoDoc, estadoLibro, estadoPluma, estela, luz as luzDe, posDoc, posLibro, posPluma, temblor,
+  type EstadoHoja, type EstadoLibro,
+} from './movimiento';
 
 /**
  * Muestra 06 · La mesa con volumen (10 s). Responde al veredicto de Gerson sobre la tanda 1: «está
- * bien, pero se ve muy plano». Es la misma escena que la 05 (un documento llega a la mesa y el
- * corrector señala «Puno»), pero buscando lo que le da volumen y vida:
+ * bien, pero se ve muy plano». La escena de la 05 (un documento llega a la mesa y el corrector señala
+ * «Puno») con volumen, fluidez y detalle:
  *
- *   - espacio: la mesa en perspectiva (CSS 3D), la cámara que se acerca y se abre;
- *   - luz con intención: una lámpara que se enciende, su charco en la mesa, el haz con polvo;
- *   - sombra que dice la altura: mientras el papel cae, su sombra se achica y se afila;
- *   - capas: un primer plano desenfocado que se mueve más que la mesa (paralaje);
- *   - objetos con cuerpo: un libro con lomo y cantos, que golpea y levanta el polvo;
- *   - contraste de ritmo: quietud, golpe, quietud, trazo.
+ *   - espacio: mesa de madera en perspectiva (CSS 3D); la cámara se acerca y, al final, se abre;
+ *   - luz: una lámpara que se enciende y tiembla con el golpe; su charco cálido y un relleno frío;
+ *     el haz con polvo, y polvo cerca de la cámara, desenfocado;
+ *   - sombras: blandas que dicen la altura, y de contacto, que apoyan las cosas en la mesa;
+ *   - movimiento con física (movimiento.ts): la hoja planea, el libro golpea, la pluma escribe;
+ *   - desenfoque de movimiento solo en lo que va rápido (obturador de 180°): lo quieto no cuesta;
+ *   - detalle: hoja doblada en tres con borde irregular; libro con tapas que sobresalen, lomo con
+ *     nervios y cinta; la pluma del catálogo; el grano del canal (Atmosfera).
  *
- * Beats (s):
- *   0,0–1,2  la lámpara se enciende (titila una vez). Cámara quieta.
- *   1,2–3,4  la cámara se acerca a la mesa (pesado). Motivo: la luz nos invita a mirar.
- *   3,6–4,3  el documento cae planeando; aterriza en 4,3 (hoja).
- *   4,3–5,6  quietud.
- *   5,6–6,15 el libro cae (tenso); golpe en 6,15: se aplasta apenas, el papel se levanta, el polvo salta.
- *   6,15–7,2 quietud.
- *   7,2–7,8  el rojo de corrector subraya «Puno» (lápiz).
- *   8,2–9,4  la cámara se abre (solemne): el tablero entero. Los objetos, quietos.
- *   9,4–10   quieto.
- *
- * Contenido: escritura asémica salvo «Puno», como en la 05. Sin citas, fechas ni cifras.
+ * Beats: ver `B` en movimiento.ts. Contenido: escritura asémica salvo «Puno», como en la 05.
  */
 
-// la mesa, en sus coordenadas (px antes de la perspectiva)
-const MESA = { w: 3600, h: 2600 };
-const LAMPARA = { x: 1450, y: 600 }; // dónde cae la luz en la mesa (atrás a la izquierda)
-const DOC = { x: 1330, y: 640, w: 620, h: 800 };
-const LIBRO = { x: 2080, y: 470, w: 440, h: 600, grosor: 64 };
-const RENGLON = 46;
-const PALABRA = { renglon: 6, x: 70 };
+const capa3d: React.CSSProperties = { position: 'absolute', transformStyle: 'preserve-3d' };
+const lleno: React.CSSProperties = { position: 'absolute', inset: 0 };
+const BORDE = bordePapel(61, 0, 0, DOC.w, DOC.h, 1.6);
+const MADERA = mezclar(PALETA.ocre, PALETA.fondo, 0.66);
+const CUERO = mezclar(PALETA.verde, PALETA.fondo, 0.45);
 
-// beats
-const ENCIENDE = 0.15;
-const ACERCA = 1.2;
-const CAE_DOC = 3.6;
-const TOCA_DOC = 4.3;
-const CAE_LIBRO = 5.6;
-const TOCA_LIBRO = 6.15;
-const SUBRAYA = 7.2;
-const ABRE = 8.2;
-
-/** Sombra en la mesa de algo que está a `alto` px: se corre lejos de la luz, se agranda, se ablanda y se aclara. */
-const sombra = (cx: number, cy: number, alto: number) => {
-  const dx = cx - LAMPARA.x;
+/** Sombra blanda en la mesa de algo que está a `alto` px: se corre lejos de la luz, se agranda, se ablanda y se aclara. */
+const sombra = (cx: number, cy: number, alto: number, tiembla: number) => {
+  const dx = cx - (LAMPARA.x + tiembla);
   const dy = cy - LAMPARA.y;
   const d = Math.hypot(dx, dy) || 1;
   const corre = alto * 0.55;
@@ -68,181 +54,219 @@ const sombra = (cx: number, cy: number, alto: number) => {
   };
 };
 
-const capa3d: React.CSSProperties = { position: 'absolute', transformStyle: 'preserve-3d' };
-
 export const MesaConVolumen: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
 
-  // la lámpara: sube, titila una vez y se asienta
-  const titila = t > 0.32 && t < 0.4 ? 0.45 : 1;
-  const luz = tramo(t, ENCIENDE, 1.0, 'natural') * titila;
+  const cam = camara(t);
+  const luz = luzDe(t);
+  const tiembla = temblor(t);
 
-  // la cámara: se acerca y, al final, se abre un poco para ver el tablero entero
-  const acerca = tramo(t, ACERCA, 2.2, 'pesado');
-  const abre = tramo(t, ABRE, 1.2, 'solemne');
-  const camZ = mix(-520, 0, acerca) - 260 * abre;
-  const camY = mix(120, 0, acerca) - 40 * abre;
-  const inclina = mix(62, 56, acerca) + 2 * abre;
+  // la hoja, el libro y la pluma, con su estela (una copia si están quietos)
+  const docVisible = t >= B.caeDoc;
+  const copiasDoc = docVisible ? estela(posDoc, t, fps, 8).map(estadoDoc).sort((a, b) => a.alto - b.alto) : [];
+  const doc = estadoDoc(t);
+  const libroVisible = t >= B.caeLibro - 0.05;
+  const copiasLibro = libroVisible ? estela(posLibro, t, fps, 12).map(estadoLibro).sort((a, b) => a.alto - b.alto) : [];
+  const libro = estadoLibro(t);
+  const pluma = estadoPluma(t);
+  const copiasPluma = pluma.visible ? estela(posPluma, t, fps, 16).map(estadoPluma) : [];
 
-  // el documento cae planeando: baja, se desliza en arco y gira; al tocar se asienta con un roce
-  const kDoc = tramo(t, CAE_DOC, TOCA_DOC - CAE_DOC, 'tenso');
-  const docVisible = t >= CAE_DOC - 0.05;
-  const docAlto = mix(760, 0, kDoc);
-  const docDx = mix(-260, 0, tramo(t, CAE_DOC, TOCA_DOC - CAE_DOC, 'natural')) + asienta(t, TOCA_DOC, 10, 6, 4);
-  const docGiro = mix(-14, -2.2, kDoc) + asienta(t, TOCA_DOC, 0.9, 7, 3.5);
-  const docInclina = Math.sin(kDoc * Math.PI * 2) * 9 * (1 - kDoc); // el planeo
-  // el golpe del libro levanta apenas el borde del papel (acción secundaria). El giro va siempre hacia
-  // arriba (negativo): positivo, el papel atraviesa la mesa y desaparece bajo su propia sombra
-  const soplo = t > TOCA_LIBRO ? 6 * Math.exp(-(t - TOCA_LIBRO) * 5) * Math.sin((t - TOCA_LIBRO) * 22) : 0;
-
-  // el libro cae recto y pesado; al tocar se aplasta como cartón y el área no cambia
-  const kLibro = tramo(t, CAE_LIBRO, TOCA_LIBRO - CAE_LIBRO, 'tenso');
-  const libroVisible = t >= CAE_LIBRO - 0.05;
-  const libroAlto = mix(520, 0, kLibro);
-  // entra desde el fondo oscuro, en arco (no pasa por delante de la cámara)
-  const libroDy = mix(-420, 0, tramo(t, CAE_LIBRO, TOCA_LIBRO - CAE_LIBRO, 'natural'));
-  const golpe = impacto(t, TOCA_LIBRO, 0.05);
-
-  const subraya = tramo(t, SUBRAYA, 0.6, 'ligero');
-
-  const sDoc = sombra(DOC.x + DOC.w / 2, DOC.y + DOC.h / 2, docAlto);
-  const sLibro = sombra(LIBRO.x + LIBRO.w / 2, LIBRO.y + LIBRO.h / 2, libroAlto);
-
-  // luz sobre los objetos: más oscuro lo que está lejos de la lámpara
-  const oscuridad = (base: number) => mix(0.82, base, luz);
-
-  const tinta = PALETA.fondo;
-  const cuero = mezclar(PALETA.verde, PALETA.fondo, 0.45);
+  const sDoc = sombra(doc.x + DOC.w / 2, doc.y + DOC.h / 2, doc.alto, tiembla);
+  const sLibro = sombra(LIBRO.x + LIBRO.w / 2, LIBRO.y + LIBRO.h / 2 + libro.dy, libro.alto, tiembla);
 
   return (
     <AbsoluteFill style={{ backgroundColor: '#0b0a09', overflow: 'hidden' }}>
-      {/* sonido: el cuarto, la lámpara, la hoja, el golpe, el lápiz */}
+      {/* sonido: el cuarto, la lámpara, la hoja, el golpe, la pluma */}
       <Sequence layout="none" name="ambiente cuarto">
         <Audio src={ambiente('cuarto')} volume={(f) => 0.32 * interpolate(f, [0, 20, 280, 300], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })} />
       </Sequence>
-      <Sfx nombre="tic" en={ENCIENDE} fps={fps} volumen={0.45} />
-      <Sfx nombre="hoja" en={TOCA_DOC - 0.12} fps={fps} volumen={0.55} />
-      <Sfx nombre="golpe" en={TOCA_LIBRO} fps={fps} volumen={0.85} />
-      <Sfx nombre="lapiz" en={SUBRAYA} fps={fps} volumen={0.5} dura={0.75} />
+      <Sfx nombre="tic" en={B.enciende} fps={fps} volumen={0.45} />
+      <Sfx nombre="hoja" en={B.tocaDoc - 0.1} fps={fps} volumen={0.5} />
+      <Sfx nombre="golpe" en={B.tocaLibro} fps={fps} volumen={0.85} />
+      <Sfx nombre="pluma" en={B.escribe} fps={fps} volumen={0.5} dura={0.7} />
 
       {/* el espacio: perspectiva de la cámara */}
       <AbsoluteFill style={{ perspective: 1500, perspectiveOrigin: '50% 30%' }}>
         <div style={{ ...capa3d, left: 960 - MESA.w / 2, top: 540 - MESA.h / 2, width: MESA.w, height: MESA.h,
-          transform: `translateY(${camY + 180}px) translateZ(${camZ}px) rotateX(${inclina}deg)` }}>
-          {/* el piso de la escena, plano (sin preserve-3d): mesa, luz y sombras se dibujan juntas a z = 0 y
-              los objetos en 3D siempre quedan encima (si no, Chrome a veces ordena la sombra sobre el papel) */}
-          <div style={{ position: 'absolute', inset: 0 }}>
-          {/* la mesa: oscura, con el charco de luz de la lámpara */}
-          <div style={{ position: 'absolute', inset: 0,
-            backgroundColor: '#14110e',
-            backgroundImage: `url(${textura.papel})`, backgroundSize: '900px 900px', backgroundBlendMode: 'multiply' }} />
-          <div style={{ position: 'absolute', inset: 0,
-            background: `radial-gradient(ellipse 1500px 1250px at ${LAMPARA.x}px ${LAMPARA.y}px, ${alfa(PALETA.ocre, 0.42 * luz)} 0%, ${alfa(PALETA.ocre, 0.16 * luz)} 38%, rgba(0,0,0,0) 72%)` }} />
+          transform: `translateY(${cam.y + 180}px) translateZ(${cam.z}px) rotateX(${cam.inclina}deg)` }}>
+          {/* el piso, plano (sin preserve-3d): mesa, luz y sombras van juntas a z = 0 y los objetos en 3D
+              siempre quedan encima (si no, Chrome a veces ordena una sombra sobre el papel) */}
+          <div style={lleno}>
+            <div style={{ ...lleno, backgroundColor: MADERA, backgroundImage: `url(${textura.madera})`, backgroundSize: '1300px 1300px', backgroundBlendMode: 'multiply' }} />
+            {/* lo que la lámpara no alcanza queda a oscuras; antes de encenderse, todo */}
+            <div style={{ ...lleno, background: `radial-gradient(ellipse 1500px 1250px at ${LAMPARA.x + tiembla}px ${LAMPARA.y + tiembla * 0.6}px, rgba(0,0,0,${mix(0.9, 0.08, luz)}) 0%, rgba(0,0,0,${mix(0.93, 0.5, luz)}) 45%, rgba(0,0,0,${mix(0.95, 0.86, luz)}) 75%)` }} />
+            <div style={{ ...lleno, background: `radial-gradient(ellipse 1100px 900px at ${LAMPARA.x + tiembla}px ${LAMPARA.y + tiembla * 0.6}px, ${alfa(PALETA.ocre, 0.22 * luz)} 0%, rgba(0,0,0,0) 70%)` }} />
+            {/* relleno frío desde la derecha: separa las sombras del negro */}
+            <div style={{ ...lleno, background: `radial-gradient(ellipse 1300px 1100px at 3100px 500px, ${alfa(PALETA.verde, 0.1 * luz)} 0%, rgba(0,0,0,0) 70%)` }} />
 
-          {/* sombras en la mesa */}
-          {docVisible ? (
-            <div style={{ position: 'absolute', left: DOC.x, top: DOC.y, width: DOC.w, height: DOC.h,
-              transform: `translate(${sDoc.x + docDx}px, ${sDoc.y}px) rotate(${docGiro}deg) scale(${sDoc.escala})`,
-              background: alfa('#000000', sDoc.opacidad * mix(0.4, 1, luz)), filter: `blur(${sDoc.blur}px)`, borderRadius: 6 }} />
-          ) : null}
-          {libroVisible ? (
-            <div style={{ position: 'absolute', left: LIBRO.x, top: LIBRO.y, width: LIBRO.w, height: LIBRO.h,
-              transform: `translate(${sLibro.x + 26}px, ${sLibro.y + 30 + libroDy}px) rotate(4deg) scale(${sLibro.escala})`,
-              background: alfa('#000000', (sLibro.opacidad + 0.12) * mix(0.4, 1, luz)), filter: `blur(${sLibro.blur * 0.8}px)`, borderRadius: 8 }} />
-          ) : null}
-          {/* lo lejano de la mesa se pierde en lo oscuro: no se ve el borde */}
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, #0b0a09 0px, rgba(11,10,9,0) 900px)' }} />
+            {/* sombras blandas (dicen la altura) */}
+            {docVisible ? (
+              <div style={{ position: 'absolute', left: DOC.x, top: DOC.y, width: DOC.w, height: DOC.h,
+                transform: `translate(${doc.x - DOC.x + sDoc.x}px, ${doc.y - DOC.y + sDoc.y}px) rotate(${doc.giro}deg) scale(${sDoc.escala})`,
+                background: alfa('#000000', sDoc.opacidad * mix(0.4, 1, luz)), filter: `blur(${sDoc.blur}px)`, borderRadius: 6 }} />
+            ) : null}
+            {libroVisible ? (
+              <div style={{ position: 'absolute', left: LIBRO.x, top: LIBRO.y, width: LIBRO.w, height: LIBRO.h,
+                transform: `translate(${sLibro.x + 26}px, ${sLibro.y + 30 + libro.dy}px) rotate(4deg) scale(${sLibro.escala})`,
+                background: alfa('#000000', (sLibro.opacidad + 0.12) * mix(0.4, 1, luz)), filter: `blur(${sLibro.blur * 0.8}px)`, borderRadius: 8 }} />
+            ) : null}
+            {/* sombras de contacto: lo que toca la mesa, se apoya en ella */}
+            {docVisible ? (
+              <div style={{ position: 'absolute', left: DOC.x - 3, top: DOC.y - 3, width: DOC.w + 6, height: DOC.h + 6,
+                transform: `translate(${doc.x - DOC.x + 3}px, ${doc.y - DOC.y + 4}px) rotate(${doc.giro}deg)`,
+                background: alfa('#000000', 0.45 * (1 - clamp(doc.alto / 14))), filter: 'blur(3px)', borderRadius: 4 }} />
+            ) : null}
+            {libroVisible ? (
+              <div style={{ position: 'absolute', left: LIBRO.x - 4, top: LIBRO.y - 4, width: LIBRO.w + 8, height: LIBRO.h + 8,
+                transform: `translate(4px, ${libro.dy + 6}px) rotate(4deg)`,
+                background: alfa('#000000', 0.8 * (1 - clamp(libro.alto / 24))), filter: 'blur(4px)', borderRadius: 6 }} />
+            ) : null}
+            {/* lo lejano de la mesa se pierde en lo oscuro: no se ve el borde */}
+            <div style={{ ...lleno, background: 'linear-gradient(180deg, #0b0a09 0px, rgba(11,10,9,0) 900px)' }} />
           </div>
 
-          {/* el documento */}
-          {docVisible ? (
-            <div style={{ ...capa3d, left: DOC.x, top: DOC.y, width: DOC.w, height: DOC.h, transformOrigin: '50% 100%',
-              transform: `translateX(${docDx}px) translateZ(${docAlto + 2}px) rotateZ(${docGiro}deg) rotateX(${-Math.abs(docInclina) - Math.abs(soplo)}deg)` }}>
-              <div style={{ position: 'absolute', inset: 0 }}>
-                <Papel color={PALETA.papel} envejecido={0.45} />
-                <svg width={DOC.w} height={DOC.h} style={{ position: 'absolute', inset: 0 }}>
-                  <defs><FiltroTinta id="lab06-tinta" /></defs>
-                  <g filter="url(#lab06-tinta)" fill="none" stroke={alfa(tinta, 0.78)} strokeWidth={1.7} strokeLinecap="round">
-                    {Array.from({ length: 14 }, (_, i) => {
-                      const y = 110 + i * RENGLON;
-                      if (i === PALABRA.renglon) return <path key={i} d={trazoManuscrito(600 + i, 205, y, 330, 15)} />;
-                      return <path key={i} d={trazoManuscrito(600 + i, 70, y, i === 13 ? 240 : 480, 15)} />;
-                    })}
-                  </g>
-                  <text x={PALABRA.x} y={110 + PALABRA.renglon * RENGLON} fontFamily={fuente.caligrafia} fontSize={46} fill={alfa(tinta, 0.92)}>Puno</text>
-                  <path d={`M${PALABRA.x - 8} ${120 + PALABRA.renglon * RENGLON} q 52 5 118 -3`} stroke={PALETA.rojo} strokeWidth={4.5} fill="none"
-                    strokeLinecap="round" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - subraya} opacity={0.92} />
-                </svg>
-                {/* la luz sobre el papel: viene de atrás a la izquierda */}
-                <div style={{ position: 'absolute', inset: 0,
-                  background: `linear-gradient(150deg, rgba(0,0,0,0) 0%, ${alfa('#000000', 0.38)} 100%)`, opacity: mix(1, 0.75, luz) }} />
-                <div style={{ position: 'absolute', inset: 0, background: '#000', opacity: oscuridad(0.04) }} />
-              </div>
-            </div>
-          ) : null}
+          {/* la hoja y su estela (ordenada de abajo arriba: así cada copia pesa lo mismo) */}
+          {copiasDoc.map((e, i) => (
+            <Hoja key={i} e={e} indice={i} alfaCopia={1 / (i + 1)} luz={luz} subraya={pluma.traza}
+              pluma={copiasDoc.length === 1 && copiasPluma.length > 0 ? (
+                <>
+                  {copiasPluma.map((p, k) => (
+                    <Pluma key={k} id={`lab06-pluma-${k}`} x={p.x} y={p.y} alzada={p.alzada} paleta={PALETA} escala={1.45} angulo={32} opacidad={1 / (k + 1)} />
+                  ))}
+                </>
+              ) : null} />
+          ))}
 
-          {/* el libro: una caja con tapa, cantos de papel y lomo */}
-          {libroVisible ? (
-            <div style={{ ...capa3d, left: LIBRO.x, top: LIBRO.y, width: LIBRO.w, height: LIBRO.h, transformOrigin: '50% 50% 0',
-              transform: `translateY(${libroDy}px) translateZ(${libroAlto + 2}px) rotateZ(4deg) scale3d(${Math.sqrt(golpe.sx)}, ${Math.sqrt(golpe.sx)}, ${golpe.sy})` }}>
-              {/* tapa */}
-              <div style={{ position: 'absolute', inset: 0, transform: `translateZ(${LIBRO.grosor}px)`, borderRadius: 4, overflow: 'hidden',
-                backgroundColor: cuero, backgroundImage: `url(${textura.papel})`, backgroundSize: '700px 700px', backgroundBlendMode: 'multiply' }}>
-                <div style={{ position: 'absolute', inset: 26, border: `2px solid ${alfa(PALETA.ocre, 0.45)}`, borderRadius: 2 }} />
-                <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(150deg, ${alfa(PALETA.ocre, 0.22)} 0%, rgba(0,0,0,0) 45%, ${alfa('#000000', 0.45)} 100%)` }} />
-                <div style={{ position: 'absolute', inset: 0, background: '#000', opacity: oscuridad(0) }} />
-              </div>
-              {/* canto de abajo (hacia la cámara): las hojas */}
-              <div style={{ position: 'absolute', left: 0, top: LIBRO.h, width: LIBRO.w, height: LIBRO.grosor, transformOrigin: '50% 0', transform: 'rotateX(90deg)',
-                background: `repeating-linear-gradient(0deg, ${mezclar(PALETA.papel, PALETA.ocre, 0.35)} 0px, ${mezclar(PALETA.papel, PALETA.ocre, 0.35)} 3px, ${mezclar(PALETA.papel, '#000000', 0.35)} 4px)` }}>
-                <div style={{ position: 'absolute', inset: 0, background: '#000', opacity: mix(0.85, 0.32, luz) }} />
-              </div>
-              {/* canto izquierdo (hacia la lámpara) */}
-              <div style={{ position: 'absolute', left: -LIBRO.grosor, top: 0, width: LIBRO.grosor, height: LIBRO.h, transformOrigin: '100% 50%', transform: 'rotateY(90deg)',
-                background: `repeating-linear-gradient(90deg, ${mezclar(PALETA.papel, PALETA.ocre, 0.25)} 0px, ${mezclar(PALETA.papel, PALETA.ocre, 0.25)} 3px, ${mezclar(PALETA.papel, '#000000', 0.3)} 4px)` }}>
-                <div style={{ position: 'absolute', inset: 0, background: '#000', opacity: mix(0.85, 0.12, luz) }} />
-              </div>
-              {/* lomo (derecha, a la sombra) */}
-              <div style={{ position: 'absolute', left: LIBRO.w, top: 0, width: LIBRO.grosor, height: LIBRO.h, transformOrigin: '0 50%', transform: 'rotateY(-90deg)',
-                backgroundColor: mezclar(cuero, '#000000', 0.35), borderRadius: 6 }}>
-                <div style={{ position: 'absolute', inset: 0, background: '#000', opacity: mix(0.85, 0.45, luz) }} />
-              </div>
-              {/* canto de atrás */}
-              <div style={{ position: 'absolute', left: 0, top: -LIBRO.grosor, width: LIBRO.w, height: LIBRO.grosor, transformOrigin: '50% 100%', transform: 'rotateX(-90deg)',
-                backgroundColor: mezclar(PALETA.papel, '#000000', 0.5) }} />
-            </div>
-          ) : null}
+          {/* el libro y su estela */}
+          {copiasLibro.map((e, i) => <Libro key={i} e={e} alfaCopia={1 / (i + 1)} luz={luz} />)}
         </div>
       </AbsoluteFill>
 
       {/* el haz de la lámpara y el polvo que flota en él */}
-      <Haz t={t} luz={luz} golpe={TOCA_LIBRO} camara={acerca - abre * 0.4} />
-
-      {/* primer plano: lomos de libros desenfocados, cerca de la cámara (se mueven más: paralaje) */}
-      <PrimerPlano acerca={acerca} abre={abre} luz={luz} />
-
-      {/* viñeta: el ojo va al charco de luz */}
-      <AbsoluteFill style={{ background: 'radial-gradient(ellipse 75% 70% at 48% 52%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.6) 100%)', pointerEvents: 'none' }} />
+      <Haz t={t} luz={luz} golpe={B.tocaLibro} camara={cam.acerca - cam.abre * 0.4} tiembla={tiembla} />
+      {/* polvo cerca de la cámara, fuera de foco (se mueve más que la mesa) */}
+      <PolvoCercano t={t} luz={luz} camara={cam.acerca - cam.abre * 0.5} />
+      {/* primer plano: lomos de libros desenfocados, cerca de la cámara */}
+      <PrimerPlano acerca={cam.acerca} abre={cam.abre} luz={luz} />
+      {/* el grano y la viñeta del canal */}
+      <Atmosfera grano={0.07} vineta={0.6} />
     </AbsoluteFill>
+  );
+};
+
+/** La hoja: doblada en tres, con borde irregular, la luz que cambia cuando se inclina y, si la hay, la pluma encima. */
+const Hoja: React.FC<{ e: EstadoHoja; indice: number; alfaCopia: number; luz: number; subraya: number; pluma: React.ReactNode }> = ({ e, indice, alfaCopia, luz, subraya, pluma }) => {
+  // inclinada hacia la lámpara (atrás a la izquierda) se aclara; hacia la cámara o a la derecha, se oscurece
+  const sombreado = clamp(0.05 + 0.01 * e.inclinaY - 0.006 * e.inclinaX, 0, 0.35);
+  return (
+    <div style={{ ...capa3d, left: DOC.x, top: DOC.y, width: DOC.w, height: DOC.h,
+      transform: `translate3d(${e.x - DOC.x}px, ${e.y - DOC.y}px, ${e.alto + 2}px) rotateZ(${e.giro}deg)` }}>
+      <div style={{ ...capa3d, inset: 0, transformOrigin: '50% 100%', transform: `rotateX(${e.soplo}deg)` }}>
+        <div style={{ ...capa3d, inset: 0, transform: `rotateX(${e.inclinaX}deg) rotateY(${e.inclinaY}deg)` }}>
+          <div style={{ ...lleno, opacity: alfaCopia, clipPath: `path('${BORDE}')` }}>
+            <Papel color={PALETA.papel} envejecido={0.45} />
+            <svg width={DOC.w} height={DOC.h} style={{ position: 'absolute', inset: 0 }}>
+              <defs><FiltroTinta id={`lab06-tinta-${indice}`} /></defs>
+              <g filter={`url(#lab06-tinta-${indice})`} fill="none" stroke={alfa(PALETA.fondo, 0.78)} strokeWidth={1.7} strokeLinecap="round">
+                {Array.from({ length: 14 }, (_, i) => {
+                  const y = 110 + i * RENGLON;
+                  if (i === PALABRA.renglon) return <path key={i} d={trazoManuscrito(600 + i, 205, y, 330, 15)} />;
+                  return <path key={i} d={trazoManuscrito(600 + i, 70, y, i === 13 ? 240 : 480, 15)} />;
+                })}
+              </g>
+              <text x={PALABRA.x} y={110 + PALABRA.renglon * RENGLON} fontFamily={fuente.caligrafia} fontSize={46} fill={alfa(PALETA.fondo, 0.92)}>Puno</text>
+              {/* el rojo de corrector: va justo detrás de la punta de la pluma */}
+              <path d={SUBRAYADO} stroke={PALETA.rojo} strokeWidth={4.5} fill="none" strokeLinecap="round" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - subraya} opacity={0.92} />
+            </svg>
+            {/* doblada en tres: el tercio de arriba mira a la lámpara, el de abajo no; cada pliegue con su filo de luz */}
+            <div style={{ ...lleno, background: `linear-gradient(180deg,
+              rgba(255,244,220,0.06) 0%, rgba(255,244,220,0.02) 33%, rgba(0,0,0,0.13) 33.4%, rgba(0,0,0,0.02) 36%,
+              rgba(0,0,0,0) 66%, rgba(255,246,226,0.12) 66.4%, rgba(0,0,0,0.03) 67.5%, rgba(0,0,0,0.08) 100%)` }} />
+            {/* la luz viene de atrás a la izquierda */}
+            <div style={{ ...lleno, background: `linear-gradient(150deg, rgba(0,0,0,0) 0%, ${alfa('#000000', 0.36)} 100%)`, opacity: mix(1, 0.75, luz) }} />
+            <div style={{ ...lleno, background: '#000', opacity: mix(0.82, sombreado, luz) }} />
+          </div>
+          {pluma ? (
+            <svg width={DOC.w} height={DOC.h} style={{ position: 'absolute', inset: 0, overflow: 'visible', transform: 'translateZ(1px)' }}>{pluma}</svg>
+          ) : null}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/** Una cara del libro: su color, lo que lleva encima y cuánto la oscurece la luz. */
+const Cara: React.FC<{ estilo: React.CSSProperties; oscuro: number; alfaCopia: number; children?: React.ReactNode }> = ({ estilo, oscuro, alfaCopia, children }) => (
+  <div style={{ position: 'absolute', opacity: alfaCopia, ...estilo }}>
+    {children}
+    <div style={{ ...lleno, background: '#000', opacity: oscuro, borderRadius: estilo.borderRadius }} />
+  </div>
+);
+
+const TAPA = 6; // grosor de cada tapa
+const CEJA = 8; // cuánto sobresalen las tapas del bloque de hojas
+const HOJAS = (dir: string) => `repeating-linear-gradient(${dir}, ${mezclar(PALETA.papel, PALETA.ocre, 0.3)} 0px, ${mezclar(PALETA.papel, PALETA.ocre, 0.3)} 2.4px, ${mezclar(PALETA.papel, '#000000', 0.32)} 3.2px)`;
+
+/** El libro: dos tapas que sobresalen del bloque de hojas, lomo redondeado con nervios y una cinta. */
+const Libro: React.FC<{ e: EstadoLibro; alfaCopia: number; luz: number }> = ({ e, alfaCopia, luz }) => {
+  const { w: W, h: H, grosor: G } = LIBRO;
+  const s = Math.sqrt(e.golpe.sx);
+  const o = (enLuz: number) => mix(0.85, enLuz, luz);
+  const bordeTapa = (z: number) => [
+    // canto de la tapa hacia la cámara y hacia la lámpara
+    <Cara key={`f${z}`} alfaCopia={alfaCopia} oscuro={o(0.4)} estilo={{ left: 0, top: H, width: W, height: TAPA, transformOrigin: '50% 0', transform: `translateZ(${z}px) rotateX(90deg)`, backgroundColor: mezclar(CUERO, PALETA.ocre, 0.12) }} />,
+    <Cara key={`i${z}`} alfaCopia={alfaCopia} oscuro={o(0.18)} estilo={{ left: -TAPA, top: 0, width: TAPA, height: H, transformOrigin: '100% 50%', transform: `translateZ(${z}px) rotateY(90deg)`, backgroundColor: mezclar(CUERO, PALETA.ocre, 0.12) }} />,
+  ];
+  return (
+    <div style={{ ...capa3d, left: LIBRO.x, top: LIBRO.y, width: W, height: H, transformOrigin: '50% 50% 0',
+      transform: `translate3d(0px, ${e.dy}px, ${e.alto + 2}px) rotateZ(4deg) scale3d(${s}, ${s}, ${e.golpe.sy})` }}>
+      {/* tapa de arriba */}
+      <Cara alfaCopia={alfaCopia} oscuro={o(0)} estilo={{ left: 0, top: 0, width: W, height: H, transform: `translateZ(${G}px)`, borderRadius: 3, overflow: 'hidden',
+        backgroundColor: CUERO, backgroundImage: `url(${textura.papel})`, backgroundSize: '700px 700px', backgroundBlendMode: 'multiply' }}>
+        <div style={{ position: 'absolute', inset: 24, border: `2px solid ${alfa(PALETA.ocre, 0.42)}`, borderRadius: 2 }} />
+        <div style={{ position: 'absolute', inset: 32, border: `1px solid ${alfa(PALETA.ocre, 0.25)}`, borderRadius: 2 }} />
+        {/* esquinas gastadas por el uso */}
+        <div style={{ ...lleno, background: `radial-gradient(circle at 0% 0%, ${alfa(PALETA.ocre, 0.35)} 0px, rgba(0,0,0,0) 40px),
+          radial-gradient(circle at 100% 0%, ${alfa(PALETA.ocre, 0.25)} 0px, rgba(0,0,0,0) 34px),
+          radial-gradient(circle at 0% 100%, ${alfa(PALETA.ocre, 0.3)} 0px, rgba(0,0,0,0) 38px),
+          radial-gradient(circle at 100% 100%, ${alfa(PALETA.ocre, 0.22)} 0px, rgba(0,0,0,0) 30px)` }} />
+        <div style={{ ...lleno, background: `linear-gradient(150deg, ${alfa(PALETA.ocre, 0.24)} 0%, rgba(0,0,0,0) 45%, ${alfa('#000000', 0.45)} 100%)` }} />
+      </Cara>
+      {bordeTapa(G - TAPA)}
+      {bordeTapa(0)}
+      {/* el bloque de hojas, metido CEJA px bajo las tapas */}
+      <Cara alfaCopia={alfaCopia} oscuro={o(0.3)} estilo={{ left: CEJA, top: H - CEJA, width: W - CEJA, height: G - 2 * TAPA, transformOrigin: '50% 0', transform: `translateZ(${TAPA}px) rotateX(90deg)`, background: HOJAS('0deg') }} />
+      <Cara alfaCopia={alfaCopia} oscuro={o(0.12)} estilo={{ left: CEJA - (G - 2 * TAPA), top: CEJA, width: G - 2 * TAPA, height: H - 2 * CEJA, transformOrigin: '100% 50%', transform: `translateZ(${TAPA}px) rotateY(90deg)`, background: HOJAS('90deg') }} />
+      {/* la cinta: sale de entre las hojas y cuelga */}
+      <Cara alfaCopia={alfaCopia} oscuro={o(0.25)} estilo={{ left: W * 0.62, top: H - CEJA, width: 13, height: 46, transformOrigin: '50% 0', transform: `translateZ(${G / 2}px) rotateX(-38deg)`,
+        background: `linear-gradient(90deg, ${mezclar(PALETA.ocre, PALETA.fondo, 0.5)}, ${mezclar(PALETA.ocre, PALETA.fondo, 0.3)} 50%, ${mezclar(PALETA.ocre, PALETA.fondo, 0.55)})`,
+        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%)' }} />
+      {/* lomo (a la derecha, a la sombra): redondeado, con nervios y el borde frío de la luz de relleno */}
+      <Cara alfaCopia={alfaCopia} oscuro={o(0.38)} estilo={{ left: W, top: 0, width: G, height: H, transformOrigin: '0 50%', transform: 'rotateY(-90deg)', borderRadius: 8,
+        background: `linear-gradient(180deg, rgba(0,0,0,0) 17%, ${alfa(PALETA.ocre, 0.2)} 18%, rgba(0,0,0,0.35) 20%, rgba(0,0,0,0) 21%,
+          rgba(0,0,0,0) 37%, ${alfa(PALETA.ocre, 0.2)} 38%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0) 41%,
+          rgba(0,0,0,0) 57%, ${alfa(PALETA.ocre, 0.2)} 58%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0) 61%,
+          rgba(0,0,0,0) 77%, ${alfa(PALETA.ocre, 0.2)} 78%, rgba(0,0,0,0.35) 80%, rgba(0,0,0,0) 81%),
+          linear-gradient(90deg, ${mezclar(CUERO, '#000000', 0.55)} 0%, ${mezclar(CUERO, PALETA.verde, 0.35)} 55%, ${mezclar(CUERO, '#000000', 0.4)} 100%)` }} />
+    </div>
   );
 };
 
 const POLVO = (() => {
   const a = azar(606);
-  return Array.from({ length: 90 }, () => ({
-    x: a.rango(0, 1), y: a.rango(0, 1), r: a.rango(1.2, 3.4), fase: a.rango(0, Math.PI * 2),
+  return Array.from({ length: 110 }, () => ({
+    x: a.rango(0, 1), y: a.rango(0, 1), r: a.rango(1.0, 3.2), fase: a.rango(0, Math.PI * 2),
     vel: a.rango(0.15, 0.5), brillo: a.rango(0.35, 1),
   }));
 })();
 
-/** El haz: un cono de luz desde arriba a la izquierda, con polvo que flota y salta con el golpe. */
-const Haz: React.FC<{ t: number; luz: number; golpe: number; camara: number }> = ({ t, luz, golpe, camara }) => {
-  // el cono, en pantalla: de la lámpara (fuera de cuadro) al charco
+/** El haz: un cono de luz desde arriba a la izquierda, con su foco, y polvo que flota y salta con el golpe. */
+const Haz: React.FC<{ t: number; luz: number; golpe: number; camara: number; tiembla: number }> = ({ t, luz, golpe, camara, tiembla }) => {
   const corre = camara * 60;
-  const arriba = { x1: 420 + corre, x2: 720 + corre, y: -60 };
-  const abajo = { x1: 420 + corre * 1.4, x2: 1640 + corre * 1.4, y: 860 };
+  const arriba = { x1: 420 + corre + tiembla, x2: 720 + corre + tiembla, y: -60 };
+  const abajo = { x1: 420 + corre * 1.4 + tiembla * 1.6, x2: 1640 + corre * 1.4 + tiembla * 1.6, y: 860 };
   const empuje = t > golpe ? (1 - Math.exp(-(t - golpe) * 4)) * Math.exp(-(t - golpe) * 0.7) : 0;
   return (
     <AbsoluteFill style={{ mixBlendMode: 'screen', pointerEvents: 'none', opacity: luz }}>
@@ -253,11 +277,17 @@ const Haz: React.FC<{ t: number; luz: number; golpe: number; camara: number }> =
             <stop offset="0.6" stopColor={PALETA.ocre} stopOpacity={0.14} />
             <stop offset="1" stopColor={PALETA.ocre} stopOpacity={0} />
           </linearGradient>
+          <radialGradient id="lab06-foco">
+            <stop offset="0" stopColor={PALETA.papel} stopOpacity={0.55} />
+            <stop offset="0.35" stopColor={PALETA.ocre} stopOpacity={0.22} />
+            <stop offset="1" stopColor={PALETA.ocre} stopOpacity={0} />
+          </radialGradient>
           <filter id="lab06-suave"><feGaussianBlur stdDeviation={40} /></filter>
         </defs>
         <polygon points={`${arriba.x1},${arriba.y} ${arriba.x2},${arriba.y} ${abajo.x2},${abajo.y} ${abajo.x1},${abajo.y}`} fill="url(#lab06-haz)" filter="url(#lab06-suave)" />
+        {/* el foco de la lámpara asoma por arriba, fuera de cuadro */}
+        <ellipse cx={(arriba.x1 + arriba.x2) / 2} cy={-40} rx={360} ry={150} fill="url(#lab06-foco)" />
         {POLVO.map((p, i) => {
-          // posición dentro del cono (v: de arriba abajo; u: de un borde al otro)
           const v = (p.y + t * 0.012 * p.vel) % 1;
           const xa = mix(arriba.x1, abajo.x1, v);
           const xb = mix(arriba.x2, abajo.x2, v);
@@ -267,7 +297,7 @@ const Haz: React.FC<{ t: number; luz: number; golpe: number; camara: number }> =
           const cerca = clamp((v - 0.45) / 0.55);
           y -= empuje * cerca * 90 * p.brillo;
           x += empuje * cerca * (p.x - 0.5) * 120;
-          const borde = Math.sin(Math.PI * clamp(p.x)); // más brillo en el centro del haz
+          const borde = Math.sin(Math.PI * clamp(p.x));
           return <circle key={i} cx={x} cy={y} r={p.r} fill={PALETA.papel} opacity={0.55 * p.brillo * borde * (1 - v * 0.5)} />;
         })}
       </svg>
@@ -275,7 +305,32 @@ const Haz: React.FC<{ t: number; luz: number; golpe: number; camara: number }> =
   );
 };
 
-/** Primer plano: unos lomos fuera de foco a la derecha, cerca de la cámara. */
+const CERCANO = (() => {
+  const a = azar(707);
+  return Array.from({ length: 9 }, () => ({ x: a.rango(0.05, 0.75), y: a.rango(0.05, 0.7), r: a.rango(14, 42), fase: a.rango(0, Math.PI * 2), vel: a.rango(0.1, 0.3) }));
+})();
+
+/** Polvo muy cerca de la cámara: grande, blando y lento. Da profundidad delante de todo. */
+const PolvoCercano: React.FC<{ t: number; luz: number; camara: number }> = ({ t, luz, camara }) => (
+  <AbsoluteFill style={{ mixBlendMode: 'screen', pointerEvents: 'none', opacity: luz }}>
+    <svg width={1920} height={1080}>
+      <defs>
+        <radialGradient id="lab06-cercano">
+          <stop offset="0" stopColor={PALETA.papel} stopOpacity={0.16} />
+          <stop offset="0.6" stopColor={PALETA.ocre} stopOpacity={0.08} />
+          <stop offset="1" stopColor={PALETA.ocre} stopOpacity={0} />
+        </radialGradient>
+      </defs>
+      {CERCANO.map((p, i) => (
+        <circle key={i} r={p.r} fill="url(#lab06-cercano)"
+          cx={p.x * 1920 - camara * 140 + Math.sin(t * p.vel + p.fase) * 30}
+          cy={p.y * 1080 + Math.cos(t * p.vel * 0.8 + p.fase) * 22 - t * 6} />
+      ))}
+    </svg>
+  </AbsoluteFill>
+);
+
+/** Primer plano: unos lomos fuera de foco a la derecha, cerca de la cámara (paralaje). */
 const PrimerPlano: React.FC<{ acerca: number; abre: number; luz: number }> = ({ acerca, abre, luz }) => {
   const k = acerca - abre * 0.5;
   const x = mix(80, -60, k);
@@ -283,7 +338,7 @@ const PrimerPlano: React.FC<{ acerca: number; abre: number; luz: number }> = ({ 
   const lomos = [
     { w: 120, h: 520, c: mezclar(PALETA.verde, '#000000', 0.72) },
     { w: 96, h: 470, c: mezclar(PALETA.ocre, '#000000', 0.75) },
-    { w: 140, h: 560, c: mezclar(PALETA.rojo, '#000000', 0.8) },
+    { w: 140, h: 560, c: mezclar(mezclar(PALETA.verde, PALETA.ocre, 0.4), '#000000', 0.78) }, // sin rojo: es del corrector y de la culpa
   ];
   let izq = 0;
   return (

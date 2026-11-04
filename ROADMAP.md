@@ -114,7 +114,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-03 → …
   - Tiempo: H ¿? · A ≈ 12:00–12:20 UTC (v0) · R ¿? · tokens ¿?
   - Nota: Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision).
-  - Evidencia: [canal-historia/SKILL.md](historia/.claude/skills/canal-historia/SKILL.md)
+  - Evidencia: [canal-historia/SKILL.md](historia/.claude/skills/canal-historia/SKILL.md) · [canal-historia/esfuerzo.md](historia/.claude/skills/canal-historia/esfuerzo.md) · [scripts/cuadros.mjs](historia/laboratorio/scripts/cuadros.mjs) · [scripts/fluidez.ts](historia/laboratorio/scripts/fluidez.ts)
 - [ ] **Medir si el skill reemplaza esfuerzo** `f0-skill-medir` — ⏳ pendiente
   - Entregable: Protocolo en historia/laboratorio/MEDIR_SKILL.md: brazos A (medio con skills), B (alto sin skills) y C opcional (medio sin skills); misma muestra nueva (sugerida es-ticket), sesiones nuevas, mismo pedido, juicio a ciegas de Gerson; consumo con scripts/consumo_sesion.py
   - Depende de: `f0-skill-canal`, `t1-revision`
@@ -175,12 +175,12 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Nota: Veredicto general de Gerson (2026-11-04): «está bien, pero se ve muy plano». Falta el veredicto muestra por muestra.
   - Evidencia: [canal-historia/criterios.md](historia/.claude/skills/canal-historia/criterios.md)
 - [ ] **06 La mesa con volumen (10 s): respuesta a «se ve muy plano»** `t1-volumen` — 🔄 en curso
-  - Entregable: Muestra 06 en historia/laboratorio/muestras/06-mesa-con-volumen: la escena de la 05 con espacio, luz, sombra que dice la altura, paralaje y contraste de ritmo. Gerson la juzga: ¿sigue plana?
+  - Entregable: Muestra 06 en historia/laboratorio/muestras/06-mesa-con-volumen: la escena de la 05 con espacio, luz, sombras por altura y de contacto, movimiento con física, desenfoque de movimiento, pluma y detalle. Gerson la juzga: ¿sigue plana?, ¿es fluida?
   - Depende de: `t1-revision`
   - Prevista: 2026-11-04 (propuesta) · Real: 2026-11-04 → …
-  - Tiempo: H ¿? · A ¿? · R 63.2 s en contenedor de la sesión (nube), Xeon 2,1 GHz, 4 hilos · tokens ¿?
-  - Nota: Hecha y renderizada (300 cuadros, 1920×1080, 30 fps). Falta el veredicto de Gerson.
-  - Evidencia: [06-mesa-con-volumen/INFORME.md](historia/laboratorio/muestras/06-mesa-con-volumen/INFORME.md) · [06-mesa-con-volumen/hoja.jpg](historia/laboratorio/resultados/06-mesa-con-volumen/hoja.jpg) · [06-mesa-con-volumen/final.json](historia/laboratorio/resultados/06-mesa-con-volumen/final.json)
+  - Tiempo: H ¿? · A medio: 37 llamadas, 11,4 min, $2,67 eq. API; extra: 27 llamadas, 20,2 min, $5,07 hasta 10:58 (consumo_sesion.py) · R 110.6 s en contenedor de la sesión (nube), Xeon 2,1 GHz, 4 hilos · tokens ¿?
+  - Nota: v1 (esfuerzo medio, bafd27c): espacio, luz y sombras. v2 (esfuerzo extra): hoja con física de papel (frenazo 195 → 10,8 px/c², colgada 5 → 0 cuadros), desenfoque de movimiento, pluma que escribe el rojo, madera, sombras de contacto y detalle; render 63,2 → 110,6 s. Falta el veredicto de Gerson.
+  - Evidencia: [06-mesa-con-volumen/INFORME.md](historia/laboratorio/muestras/06-mesa-con-volumen/INFORME.md) · [06-mesa-con-volumen/hoja.jpg](historia/laboratorio/resultados/06-mesa-con-volumen/hoja.jpg) · [06-mesa-con-volumen/final.json](historia/laboratorio/resultados/06-mesa-con-volumen/final.json) · [06-mesa-con-volumen/fluidez.json](historia/laboratorio/resultados/06-mesa-con-volumen/fluidez.json) · [canal-historia/esfuerzo.md](historia/.claude/skills/canal-historia/esfuerzo.md)
 
 ### Fase 2 · Tanda 2 de muestras
 

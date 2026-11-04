@@ -1,79 +1,126 @@
 # 06 · La mesa con volumen (10 s)
 
 **Herramienta:** Remotion 4.0.539, CSS 3D (`perspective`, `preserve-3d`) y piezas del canal (`Papel`,
-`trazoManuscrito`, `FiltroTinta`, `tramo`, `asienta`, `impacto`, `azar`, `Sfx`). Ninguna dependencia
-nueva. **Código:** [`Muestra.tsx`](Muestra.tsx).
+`Pluma`, `Atmosfera`, `trazoManuscrito`, `bordePapel`, `FiltroTinta`, `tramo`, `asienta`, `impacto`,
+`azar`, `Sfx`). Ninguna dependencia nueva. Una textura nueva, procedural: `madera.jpg`
+(`scripts/generar_texturas.py madera`). **Código:** [`Muestra.tsx`](Muestra.tsx) (el dibujo) y
+[`movimiento.ts`](movimiento.ts) (el movimiento, en funciones puras del tiempo).
 
 **Pregunta:** el veredicto de Gerson sobre la tanda 1 fue «está bien, pero se ve muy plano»
-(`canal-historia/criterios.md`). ¿Deja de verse plana la misma escena de la 05 (un documento llega
-a la mesa y el corrector señala «Puno») si se le da volumen, sin cambiar de herramienta?
+(`canal-historia/criterios.md`). ¿Deja de verse plana la escena de la 05 (un documento llega a la mesa
+y el corrector señala «Puno») si se le da volumen, fluidez y detalle, sin cambiar de herramienta?
 
-**Dura 10 s, no 5:** lo pidió Gerson (2026-11-04). Es una excepción a la regla 1 del laboratorio,
-declarada en `remotion/Root.tsx`.
+**Dura 10 s, no 5:** lo pidió Gerson (2026-11-04). Excepción a la regla 1 del laboratorio, declarada
+en `remotion/Root.tsx`.
+
+**Versiones:** v1 (commit `bafd27c`, esfuerzo medio): espacio, luz y sombras. v2 (esta, esfuerzo
+extra, a pedido de Gerson: «más fluido y con más detalle»): movimiento con física, desenfoque de
+movimiento, pluma y detalle. Qué cambió entre una vuelta y la otra:
+`historia/.claude/skills/canal-historia/esfuerzo.md`.
 
 ![hoja de contactos](../../resultados/06-mesa-con-volumen/hoja.jpg)
 
-## Qué cambia respecto de la 05
-
-| Plano en la 05 | Con volumen en la 06 |
-|---|---|
-| La mesa es el fondo de la pantalla, de frente | Mesa en perspectiva; lo lejano se pierde en lo oscuro |
-| Luz pareja | Una lámpara que se enciende (titila una vez), su charco ocre en la mesa y un haz con polvo que flota |
-| Sombra fija bajo el papel | La sombra dice la altura: mientras el papel cae, se achica, se afila y se oscurece |
-| Una sola capa | Primer plano desenfocado (lomos de libros) que se mueve más que la mesa: paralaje |
-| Papel plano | Un libro con tapa, cantos de hojas y lomo, iluminado por un solo lado |
-| Todo entra con el mismo pulso | Quietud → caída → quietud → golpe → quietud → trazo |
-
 ## Beats (s)
 
-| Tramo | Qué pasa | Peso | Sonido |
+| Tramo | Qué pasa | Curva | Sonido |
 |---|---|---|---|
-| 0,0–1,2 | La lámpara se enciende. Cámara quieta | natural | tic |
+| 0,0–1,2 | La lámpara se enciende y titila una vez. Cámara quieta | natural | tic |
 | 1,2–3,4 | La cámara se acerca. Motivo: la luz invita a mirar. Nada más se mueve | pesado | — |
-| 3,6–4,3 | El papel cae planeando, en arco, y se asienta con un roce | tenso | hoja |
-| 4,3–5,6 | Quietud | — | — |
-| 5,6–6,15 | El libro entra desde lo oscuro y cae; se aplasta como cartón (0,05). El borde del papel se levanta y el polvo del haz salta | tenso | golpe |
-| 6,15–7,2 | Quietud | — | — |
-| 7,2–7,8 | El rojo de corrector subraya «Puno» | ligero | lápiz |
-| 8,2–9,4 | La cámara se abre para ver el tablero entero. Los objetos, quietos | solemne | — |
+| 3,45–4,9 | La hoja entra desde la cámara, se mece, el aire la frena antes de tocar (4,4) y se desliza hasta que el roce la para | ligero (avance), natural (bajada) | hoja |
+| 4,9–5,6 | Quietud | — | — |
+| 5,6–6,15 | El libro entra desde lo oscuro y cae; golpea, se aplasta como cartón y da un saltito. La lámpara tiembla (la luz y las sombras con ella), el borde de la hoja se levanta, el polvo salta | tenso | golpe |
+| 6,15–6,65 | Quietud | — | — |
+| 6,65–7,15 | La pluma entra en arco y frena; la punta baja y su sombra se junta con ella | natural | — |
+| 7,15–7,75 | La punta traza el rojo de corrector bajo «Puno» | natural | pluma |
+| 7,8–8,2 | La pluma se levanta y se va, acelerando, fuera de cuadro | tenso | — |
+| 8,2–9,4 | La cámara se abre: el tablero entero. Los objetos, quietos | solemne | — |
 | 9,4–10 | Quieto | — | — |
 
-Cámara quieta el 66 % del tiempo (se mueve 2,2 s + 1,2 s de 10). Cuando la cámara se mueve, los objetos están quietos. El ambiente
-`cuarto` entra y sale con un fundido.
+Cámara quieta el 66 % del tiempo (se mueve 2,2 s + 1,2 s de 10). Cuando se mueve la cámara, los
+objetos están quietos. Entre tramos, la velocidad no se corta: solo el golpe del libro frena en seco.
+
+## Qué tiene, y para qué
+
+| Elemento | Para qué |
+|---|---|
+| Mesa de madera en perspectiva; lo lejano, a oscuras | Espacio; que no se vea el borde |
+| Charco de luz cálida + relleno frío desde la derecha | Volumen por dos luces; la sombra no es negro plano |
+| Haz con polvo; el foco asoma arriba; polvo cercano, grande y desenfocado | Profundidad delante y detrás del tablero |
+| Sombra blanda que se corre, crece y se aclara con la altura | El ojo lee la altura del papel mientras cae |
+| Sombra de contacto | Lo que toca la mesa se apoya en ella (no flota) |
+| Hoja doblada en tres, borde irregular; se aclara u oscurece al inclinarse | Papel de verdad; el giro se ve también en la luz |
+| Libro: tapas que sobresalen del bloque de hojas, cantos, lomo con nervios, cinta, esquinas gastadas | Un objeto con cuerpo y uso |
+| La lámpara tiembla con el golpe | Une el golpe con la luz (acción secundaria) |
+| La pluma del catálogo traza el rojo | El rojo de corrector tiene quien lo haga |
+| Desenfoque de movimiento solo en lo que va rápido | Fluidez a 30 fps sin pagar en los cuadros quietos |
+| Primer plano desenfocado (lomos) que se mueve más que la mesa | Paralaje |
+| Grano y viñeta del canal (`Atmosfera`) | El mismo aspecto que los episodios |
+
+## Fluidez (medida, sin renderizar)
+
+```bash
+npx tsx laboratorio/scripts/fluidez.ts laboratorio/muestras/06-mesa-con-volumen/movimiento.ts --json laboratorio/resultados/06-mesa-con-volumen/fluidez.json
+```
+
+Unidades de la escena (px de la mesa o del papel, antes de la perspectiva), por cuadro a 30 fps.
+
+| Trayectoria | Frenazo máx. (px/c²) v1 → v2 | Sacudida máx. (px/c³) v1 → v2 | Cuadros colgada v1 → v2 |
+|---|---|---|---|
+| Hoja | **195,3 → 10,8** | **251,8 → 4,6** | **5 → 0** |
+| Libro (fuera del golpe) | 27,5 → 27,5 | 14,4 → 14,4 | 0 → 0 |
+| Cámara | 3,7 → 3,7 | 2,3 → 2,3 | — (quieta por decisión) |
+| Pluma (nueva) | — → 427,3 en el cuadro 245 | — → 237,4 | — → 3 |
+
+- **Hoja:** en v1 caía con `tenso`: colgada 5 cuadros y frenada en uno (se clavaba). En v2 cae con aire.
+- **Libro:** igual que en v1 a propósito: su frenazo de 88,5 es el golpe declarado, y fuera del golpe lo
+  que sube el número es la aceleración pareja de la caída (sacudida baja).
+- **Pluma:** sus máximos (paso de 870 px/c en el cuadro 246) son el final de la salida, **fuera de
+  cuadro**: en el MP4, cuadro 244 una estela, 245 ya no se ve (observado). Los 3 cuadros «colgada» son la
+  pausa entre terminar el trazo y levantarse (decisión).
 
 ## Qué salió mal (corregido)
 
-| Problema | Arreglo |
-|---|---|
-| Se veía el borde de la mesa arriba y el papel quedaba cortado abajo, fuera del charco de luz | Objetos y luz movidos al centro; degradado hacia lo oscuro en el fondo de la mesa |
-| El libro caía desde tan alto que pasaba delante de la cámara y tapaba el papel (un cuadro negro) | Cae desde menos altura y entra desde el fondo oscuro, en arco |
-| En el golpe, el papel desaparecía: el giro del «soplo» iba hacia abajo y lo hundía bajo la mesa | El giro va siempre hacia arriba (comentado en el código) |
-| Los lomos del primer plano tapaban el libro | Más bajos, más oscuros y más desenfocados |
-| Riesgo de que Chrome ordene una sombra encima del papel | Mesa, luz y sombras van en una capa plana; solo los objetos van en 3D |
+| Problema | Arreglo | Evidencia |
+|---|---|---|
+| v1: la hoja quedaba colgada en el aire (cuadros 107–110 casi iguales) y se clavaba | Física de papel: vaivén, colchón de aire, roce | `resultados/06-mesa-con-volumen/antes/hoja-colgada-104-110.jpg`, tabla de fluidez |
+| La pluma aparecía ya dentro del cuadro (200) | Sale de más lejos | `antes/pluma-aparece-200.jpg` |
+| La pluma desaparecía dentro del cuadro al salir (245) | Se va más lejos: termina fuera | MP4, cuadros 240–247 |
+| La pluma, a escala 0,95, se veía como un palito | Escala 1,45 (una pluma mide ~2/3 del ancho de la hoja) | — |
+| El lomo granate del primer plano usaba el rojo | Verde ocre oscuro: el rojo es del corrector y de la culpa | — |
+| v1: borde de la mesa a la vista, papel cortado, papel hundido bajo la mesa, libro delante de la cámara | Corregido en v1 (ver commit `bafd27c`) | — |
 
 ## Revisión automática (`scripts/revisar.py`)
 
 - **Medido:** 300 cuadros, 1920×1080, 30 fps, con audio. Ningún parpadeo global ni cuadro vacío.
-- Dos saltos locales: el cuadro 128 (el papel aterriza, 4,3 s) y el 189 (el borde del papel se
-  levanta tras el golpe). **Observado** a tamaño real: son los movimientos buscados, no defectos.
+- Un salto local: el cuadro 189 (tras el golpe del libro: el borde de la hoja, el polvo y la luz que
+  tiembla). Es lo buscado (observado en v1 a tamaño real; en v2 es el mismo tramo).
+- El cambio medio entre cuadros subió de 0,58 a 0,96 (grano del canal y más movimiento).
 
 ## Qué costó
 
-- **Render final:** 63,2 s de reloj (34,8 s de CPU), pico de memoria (PSS) de 2,7 GB. **Medido** en
-  el contenedor de la sesión en la nube (Xeon de 2,1 GHz, 4 hilos), no en la laptop: no se traslada.
-- **Agente y humano:** desconocido (no medido).
+- **Render final:** 110,6 s de reloj, pico PSS 3,2 GB (v1: 63,2 s, 2,7 GB). **Medido** en el
+  contenedor de la sesión (Xeon 2,1 GHz, 4 hilos), no en la laptop: no se traslada.
+- **Por cuadro** (`cuadros.mjs`, `ms_por_cuadro`, incluye la captura): 1,6–1,8 s los cuadros sin
+  desenfoque, 2,2 s los de la hoja con desenfoque. El desenfoque solo encarece donde actúa; lo que
+  más subió es el costo base (madera, grano, capas de luz, detalle del papel). No se optimizó: sin una
+  prueba por capa, sería a ciegas. Candidatas, por medir: el `feGaussianBlur` de 40 del haz, el
+  `FiltroTinta` en las copias de la estela, el grano a pantalla completa.
+- **Agente:** `canal-historia/esfuerzo.md` (medio $2,67, extra $5,07 hasta 10:58; registros en
+  `resultados/06-mesa-con-volumen/esfuerzo/`). **Humano:** desconocido.
 
 ## Lo que no prueba
 
-- Si Gerson la ve con volumen o la sigue viendo plana: eso lo dice él.
-- El haz y el polvo son una simulación 2D por encima de la mesa 3D: con un movimiento de cámara
-  grande se notaría. Aquí la cámara se mueve poco.
+- Si Gerson la ve con volumen y fluida: eso lo dice él.
+- El haz y el polvo son 2D sobre la mesa 3D: con un movimiento de cámara grande se notaría.
+- La pluma está dibujada en el plano del papel (su sombra se separa al levantarse): de cerca, o desde
+  más de costado, se vería plana.
 - Sin voz: el ritmo no está anclado a una narración.
 
 ## Para qué escenas del canal
 
-Cualquier escena de «documento en la mesa» (las pruebas de imprenta, cartas, expedientes) y, si se
-aprueba, una pieza del catálogo: `Mesa` con lámpara, sombras por altura y objetos con cuerpo.
+Cualquier «documento en la mesa» (las pruebas de imprenta, cartas, expedientes). Si se aprueba, de
+aquí salen piezas del catálogo: `Mesa` (madera, lámpara, sombras por altura y de contacto), `Libro`
+con cuerpo, la `estela` (desenfoque de movimiento) y la física de la hoja.
 
 ## Reproducir
 
@@ -89,5 +136,11 @@ cd historia
 python3 laboratorio/scripts/revisar.py 06-mesa-con-volumen laboratorio/out/06-mesa-con-volumen/final.mp4
 ```
 
+Cuadros sueltos, sin renderizar el clip:
+
+```bash
+node laboratorio/scripts/cuadros.mjs lab-06-mesa-con-volumen 104,186,215 --escala 0.5
+```
+
 Contenido: escritura asémica salvo «Puno»; sin citas, fechas ni cifras. Recursos externos: ninguno
-(texturas, fuentes y sonidos de `public/compartido/`).
+(texturas propias, fuentes y sonidos de `public/compartido/`).

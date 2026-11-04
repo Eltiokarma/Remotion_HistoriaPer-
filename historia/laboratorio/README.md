@@ -35,6 +35,8 @@ laboratorio/
 ├── scripts/
 │   ├── medir.py              ← corre un render y registra tiempo, CPU, memoria, máquina, versiones, salida
 │   ├── revisar.py            ← hoja de contactos y cuentas por cuadro
+│   ├── cuadros.mjs           ← cuadros sueltos sin renderizar el clip (un bundle, un navegador)
+│   ├── fluidez.ts            ← frenazos, sacudidas y cuadros colgados de un movimiento.ts
 │   ├── manim.sh              ← render de la muestra 01 (previa | final)
 │   ├── remotion.sh           ← render de una muestra de Remotion (previa | final)
 │   ├── carrete.sh            ← une las cinco finales en out/tanda-1.mp4 (25 s)
@@ -99,6 +101,7 @@ lo de la primera tanda; `pendientes/` los recortes de lo que falta.
 
 ## Qué sigue
 
-Ver el roadmap. En corto: Gerson revisa la tanda 1 (fase `t1-revision`); después la tanda 2
+Ver el roadmap. En corto: Gerson revisa la tanda 1 (fase `t1-revision`) y la muestra 06, de 10 s,
+hecha a partir de su veredicto «se ve muy plano» (`t1-volumen`, [informe](muestras/06-mesa-con-volumen/INFORME.md)); después la tanda 2
 (PixiJS, Blender, QGIS) y las pruebas navales en piezas chicas (mar y balanceo; barco e
 iluminación; fogonazo y humo), sin prometer calidad final antes de probar.

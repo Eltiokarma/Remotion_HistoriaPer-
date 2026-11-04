@@ -377,7 +377,10 @@
       },
       "bloqueo": null,
       "evidencia": [
-        "historia/.claude/skills/canal-historia/SKILL.md"
+        "historia/.claude/skills/canal-historia/SKILL.md",
+        "historia/.claude/skills/canal-historia/esfuerzo.md",
+        "historia/laboratorio/scripts/cuadros.mjs",
+        "historia/laboratorio/scripts/fluidez.ts"
       ],
       "tiempo": {
         "humano_min": null,
@@ -446,7 +449,7 @@
       "id": "t1-volumen",
       "fase": "f1",
       "titulo": "06 La mesa con volumen (10 s): respuesta a «se ve muy plano»",
-      "entregable": "Muestra 06 en historia/laboratorio/muestras/06-mesa-con-volumen: la escena de la 05 con espacio, luz, sombra que dice la altura, paralaje y contraste de ritmo. Gerson la juzga: ¿sigue plana?",
+      "entregable": "Muestra 06 en historia/laboratorio/muestras/06-mesa-con-volumen: la escena de la 05 con espacio, luz, sombras por altura y de contacto, movimiento con física, desenfoque de movimiento, pluma y detalle. Gerson la juzga: ¿sigue plana?, ¿es fluida?",
       "estado": "en_curso",
       "depende_de": [
         "t1-revision"
@@ -464,15 +467,17 @@
       "evidencia": [
         "historia/laboratorio/muestras/06-mesa-con-volumen/INFORME.md",
         "historia/laboratorio/resultados/06-mesa-con-volumen/hoja.jpg",
-        "historia/laboratorio/resultados/06-mesa-con-volumen/final.json"
+        "historia/laboratorio/resultados/06-mesa-con-volumen/final.json",
+        "historia/laboratorio/resultados/06-mesa-con-volumen/fluidez.json",
+        "historia/.claude/skills/canal-historia/esfuerzo.md"
       ],
       "tiempo": {
         "humano_min": null,
-        "agente": null,
-        "render_s": 63.2,
+        "agente": "medio: 37 llamadas, 11,4 min, $2,67 eq. API; extra: 27 llamadas, 20,2 min, $5,07 hasta 10:58 (consumo_sesion.py)",
+        "render_s": 110.6,
         "maquina": "contenedor de la sesión (nube), Xeon 2,1 GHz, 4 hilos"
       },
-      "nota": "Hecha y renderizada (300 cuadros, 1920×1080, 30 fps). Falta el veredicto de Gerson."
+      "nota": "v1 (esfuerzo medio, bafd27c): espacio, luz y sombras. v2 (esfuerzo extra): hoja con física de papel (frenazo 195 → 10,8 px/c², colgada 5 → 0 cuadros), desenfoque de movimiento, pluma que escribe el rojo, madera, sombras de contacto y detalle; render 63,2 → 110,6 s. Falta el veredicto de Gerson."
     },
     {
       "id": "infra-papel",
