@@ -12,7 +12,7 @@ Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **17** · 🔄 en curso: **1** · ⏳ pendiente: **7** · 💡 propuesto: **12** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **17** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **12** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -47,7 +47,7 @@ gantt
   04 Libro 3D que se abre (Three.js + R3F + drei) :done, t1libro3d, 2026-11-03, 1d
   05 Mapa y documento → explicación (Remotion, referencia) :done, t1mapa, 2026-11-03, 1d
   Correcciones de la revisión técnica monedas, rayado, libro vacío :done, t1correcciones, 2026-11-03, 1d
-  Revisión de la tanda 1 por Gerson (propuesta) :t1revision, 2026-11-04, 3d
+  Revisión de la tanda 1 por Gerson (propuesta) :active, t1revision, 2026-11-04, 3d
   section Fase 2 · Tanda 2 de muestras
   06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) (propuesta) :t2pixi, 2026-11-09, 3d
   07 QGIS el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar (propuesta) :t2qgis, 2026-11-11, 4d
@@ -166,11 +166,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-03
   - Tiempo: H ¿? · A turno 2 (ver INFORME_TECNICO §8.2) · R ¿? · tokens ¿?
   - Evidencia: [laboratorio/INFORME_TECNICO.md](historia/laboratorio/INFORME_TECNICO.md) · [01-monedas-manim/despues-cuadros-56-63.jpg](historia/laboratorio/resultados/01-monedas-manim/despues-cuadros-56-63.jpg) · [02-cordillera-tinta/despues-rayado-ladera.jpg](historia/laboratorio/resultados/02-cordillera-tinta/despues-rayado-ladera.jpg) · [04-libro-3d/despues-cuadros-0-5.jpg](historia/laboratorio/resultados/04-libro-3d/despues-cuadros-0-5.jpg)
-- [ ] **Revisión de la tanda 1 por Gerson** `t1-revision` — ⏳ pendiente
+- [ ] **Revisión de la tanda 1 por Gerson** `t1-revision` — 🔄 en curso
   - Entregable: Por muestra: aprobada / no aprobada / para qué escena, en historia/laboratorio/revision_tanda1.md (preguntas en INFORME_TECNICO §8.3). Hoy: ninguna aprobada.
   - Depende de: `t1-correcciones`
-  - Prevista: 2026-11-04 → 2026-11-06 (propuesta) · Real: —
+  - Prevista: 2026-11-04 → 2026-11-06 (propuesta) · Real: 2026-11-04 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Nota: Veredicto general de Gerson (2026-11-04): «está bien, pero se ve muy plano». Falta el veredicto muestra por muestra.
+  - Evidencia: [canal-historia/criterios.md](historia/.claude/skills/canal-historia/criterios.md)
 
 ### Fase 2 · Tanda 2 de muestras
 
