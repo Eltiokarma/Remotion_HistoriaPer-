@@ -97,6 +97,13 @@ Archivos por muestra en `resultados/<muestra>/`: `final-frio.json`, `final-calie
 `previa-caliente.json` (con `scripts/medir_tanda.sh`), `revision.json`, `hoja.jpg`; `antes/` guarda
 lo de la primera tanda; `pendientes/` los recortes de lo que falta.
 
+## Tanda 2
+
+- **06 · Tormenta sobre el lago (PixiJS)** — [informe](muestras/06-lluvia-pixi/INFORME.md). 3830 gotas
+  en tres planos, cordillera en capas con reflejo, relámpago como golpe. Funciona gobernada por el
+  cuadro; en el contenedor (sin GPU) tarda ~6× lo que la 03 (p5): el costo son los desenfoques y un
+  solo proceso GPU por software que atiende a todas las pestañas, no la cantidad de elementos.
+
 ## Qué sigue
 
 Ver el roadmap. En corto: Gerson revisa la tanda 1 (fase `t1-revision`); después la tanda 2

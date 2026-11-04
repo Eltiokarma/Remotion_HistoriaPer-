@@ -1,6 +1,6 @@
 {
   "titulo": "Roadmap del laboratorio y la base de producción",
-  "actualizado": "2026-11-03",
+  "actualizado": "2026-11-04",
   "notas": [
     "Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.",
     "Tiempo humano y tokens: null = desconocido (no medido). No se estiman.",
@@ -477,7 +477,7 @@
       "fase": "f2",
       "titulo": "06 PixiJS: muchos elementos con filtros (lluvia o multitud de puntos)",
       "entregable": "Clip de 5 s comparado con la muestra 03 (p5): costo y aspecto",
-      "estado": "propuesto",
+      "estado": "hecho",
       "depende_de": [
         "t1-revision"
       ],
@@ -486,15 +486,24 @@
         "fin": "2026-11-11",
         "origen": "propuesta"
       },
-      "real": null,
+      "real": {
+        "inicio": "2026-11-04",
+        "fin": "2026-11-04"
+      },
       "bloqueo": null,
-      "evidencia": [],
+      "evidencia": [
+        "historia/laboratorio/muestras/06-lluvia-pixi/INFORME.md",
+        "historia/laboratorio/resultados/06-lluvia-pixi/final-caliente.json",
+        "historia/laboratorio/resultados/06-lluvia-pixi/referencia-03-final-caliente.json",
+        "historia/laboratorio/resultados/06-lluvia-pixi/hoja.jpg"
+      ],
       "tiempo": {
         "humano_min": null,
-        "agente": null,
-        "render_s": null,
-        "maquina": null
-      }
+        "agente": "2026-11-04, renders medidos entre 12:40 y 12:50 UTC (inicio de la sesión no registrado)",
+        "render_s": 180.5,
+        "maquina": "contenedor"
+      },
+      "nota": "Adelantada a pedido de Gerson (2026-11-04) antes del veredicto muestra por muestra de la tanda 1. Final caliente 180,5 s (frío 211,0) contra 28,6 s de la 03 en la misma sesión: el costo son los desenfoques y un solo proceso GPU por software (SwiftShader), no las 3830 gotas. Con GPU sin probar. Sin aprobar por Gerson."
     },
     {
       "id": "t2-qgis",

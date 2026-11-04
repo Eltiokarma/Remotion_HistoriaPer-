@@ -2,7 +2,7 @@
 
 <!-- GENERADO por roadmap/generar.mjs a partir de roadmap/roadmap.json. No editar a mano: editar el JSON y regenerar. -->
 
-Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
+Actualizado: **2026-11-04**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
 
 - Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.
 - Tiempo humano y tokens: null = desconocido (no medido). No se estiman.
@@ -12,7 +12,7 @@ Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **17** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **12** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **18** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -49,7 +49,7 @@ gantt
   Correcciones de la revisión técnica monedas, rayado, libro vacío :done, t1correcciones, 2026-11-03, 1d
   Revisión de la tanda 1 por Gerson (propuesta) :active, t1revision, 2026-11-04, 3d
   section Fase 2 · Tanda 2 de muestras
-  06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) (propuesta) :t2pixi, 2026-11-09, 3d
+  06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) :done, t2pixi, 2026-11-04, 1d
   07 QGIS el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar (propuesta) :t2qgis, 2026-11-11, 4d
   08 Blender un objeto de época con material de grabado, montado en Remotion (propuesta) :t2blender, 2026-11-16, 5d
   04b Libro 3D con tinta sombreado toon y contornos (propuesta) :t2toon, 2026-11-09, 2d
@@ -176,11 +176,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
 
 ### Fase 2 · Tanda 2 de muestras
 
-- [ ] **06 PixiJS: muchos elementos con filtros (lluvia o multitud de puntos)** `t2-pixi` — 💡 propuesto
+- [x] **06 PixiJS: muchos elementos con filtros (lluvia o multitud de puntos)** `t2-pixi` — ✅ hecho
   - Entregable: Clip de 5 s comparado con la muestra 03 (p5): costo y aspecto
   - Depende de: `t1-revision`
-  - Prevista: 2026-11-09 → 2026-11-11 (propuesta) · Real: —
-  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Prevista: 2026-11-09 → 2026-11-11 (propuesta) · Real: 2026-11-04
+  - Tiempo: H ¿? · A 2026-11-04, renders medidos entre 12:40 y 12:50 UTC (inicio de la sesión no registrado) · R 180.5 s en contenedor · tokens ¿?
+  - Nota: Adelantada a pedido de Gerson (2026-11-04) antes del veredicto muestra por muestra de la tanda 1. Final caliente 180,5 s (frío 211,0) contra 28,6 s de la 03 en la misma sesión: el costo son los desenfoques y un solo proceso GPU por software (SwiftShader), no las 3830 gotas. Con GPU sin probar. Sin aprobar por Gerson.
+  - Evidencia: [06-lluvia-pixi/INFORME.md](historia/laboratorio/muestras/06-lluvia-pixi/INFORME.md) · [06-lluvia-pixi/final-caliente.json](historia/laboratorio/resultados/06-lluvia-pixi/final-caliente.json) · [06-lluvia-pixi/referencia-03-final-caliente.json](historia/laboratorio/resultados/06-lluvia-pixi/referencia-03-final-caliente.json) · [06-lluvia-pixi/hoja.jpg](historia/laboratorio/resultados/06-lluvia-pixi/hoja.jpg)
 - [ ] **07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar** `t2-qgis` — 💡 propuesto
   - Entregable: Datos con licencia (p. ej. Natural Earth, dominio público) + clip de 5 s con el Titicaca
   - Depende de: `t1-revision`
