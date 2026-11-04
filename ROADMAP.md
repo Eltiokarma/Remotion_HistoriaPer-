@@ -12,10 +12,11 @@ Actualizado: **2026-11-04**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **17** · 🔄 en curso: **3** · ⏳ pendiente: **6** · 💡 propuesto: **12** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **17** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **12** · ⛔ bloqueado: **4** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
+- `t1-volumen` 06 La mesa con volumen (10 s): respuesta a «se ve muy plano»: Sonidos CC0: Freesound rechaza las conexiones desde el contenedor (403). Falta una clave de su API en el entorno (FREESOUND_API_KEY) o los archivos bajados a mano (historia/laboratorio/muestras/06-mesa-con-volumen/SONIDOS.md).
 - `t2-blender` 08 Blender: un objeto de época con material de grabado, montado en Remotion: Sin GPU en el contenedor: Cycles por CPU será lento; Eevee necesita GPU. Medir en la laptop o esperar la PC objetivo.
 - `t4-houdini-prueba` Houdini: prueba de pyro o agua al tamaño de un plano: Necesita GPU (PC objetivo) y decidir licencia (Apprentice no es comercial).
 - `t4-unreal-prueba` Unreal Engine: render de un recorrido de 5 s: Necesita la PC con GPU; revisar la EULA para contenido lineal.
@@ -48,7 +49,7 @@ gantt
   05 Mapa y documento → explicación (Remotion, referencia) :done, t1mapa, 2026-11-03, 1d
   Correcciones de la revisión técnica monedas, rayado, libro vacío :done, t1correcciones, 2026-11-03, 1d
   Revisión de la tanda 1 por Gerson (propuesta) :active, t1revision, 2026-11-04, 3d
-  06 La mesa con volumen (10 s) respuesta a «se ve muy plano» (propuesta) :active, t1volumen, 2026-11-04, 1d
+  06 La mesa con volumen (10 s) respuesta a «se ve muy plano» (propuesta) :crit, t1volumen, 2026-11-04, 1d
   section Fase 2 · Tanda 2 de muestras
   06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) (propuesta) :t2pixi, 2026-11-09, 3d
   07 QGIS el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar (propuesta) :t2qgis, 2026-11-11, 4d
@@ -174,13 +175,14 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Nota: Veredicto general de Gerson (2026-11-04): «está bien, pero se ve muy plano». Falta el veredicto muestra por muestra.
   - Evidencia: [canal-historia/criterios.md](historia/.claude/skills/canal-historia/criterios.md)
-- [ ] **06 La mesa con volumen (10 s): respuesta a «se ve muy plano»** `t1-volumen` — 🔄 en curso
+- [ ] **06 La mesa con volumen (10 s): respuesta a «se ve muy plano»** `t1-volumen` — ⛔ bloqueado
   - Entregable: Muestra 06 en historia/laboratorio/muestras/06-mesa-con-volumen: la escena de la 05 con espacio, luz, sombras por altura y de contacto, movimiento con física, desenfoque de movimiento, pluma y detalle. Gerson la juzga: ¿sigue plana?, ¿es fluida?
   - Depende de: `t1-revision`
   - Prevista: 2026-11-04 (propuesta) · Real: 2026-11-04 → …
-  - Tiempo: H ¿? · A medio: 37 llamadas, 11,4 min, $2,67 eq. API; extra: 27 llamadas, 20,2 min, $5,07 hasta 10:58 (consumo_sesion.py) · R 110.6 s en contenedor de la sesión (nube), Xeon 2,1 GHz, 4 hilos · tokens ¿?
-  - Nota: v1 (esfuerzo medio, bafd27c): espacio, luz y sombras. v2 (esfuerzo extra): hoja con física de papel (frenazo 195 → 10,8 px/c², colgada 5 → 0 cuadros), desenfoque de movimiento, pluma que escribe el rojo, madera, sombras de contacto y detalle; render 63,2 → 110,6 s. Falta el veredicto de Gerson.
-  - Evidencia: [06-mesa-con-volumen/INFORME.md](historia/laboratorio/muestras/06-mesa-con-volumen/INFORME.md) · [06-mesa-con-volumen/hoja.jpg](historia/laboratorio/resultados/06-mesa-con-volumen/hoja.jpg) · [06-mesa-con-volumen/final.json](historia/laboratorio/resultados/06-mesa-con-volumen/final.json) · [06-mesa-con-volumen/fluidez.json](historia/laboratorio/resultados/06-mesa-con-volumen/fluidez.json) · [canal-historia/esfuerzo.md](historia/.claude/skills/canal-historia/esfuerzo.md)
+  - Tiempo: H ¿? · A medio: 37 llamadas, 11,4 min, $2,67 eq. API; extra: 27 llamadas, 20,2 min, $5,07 hasta 10:58 (consumo_sesion.py) · R 138.9 s en contenedor de la sesión (nube), Xeon 2,1 GHz, 4 hilos · tokens ¿?
+  - Bloqueo: Sonidos CC0: Freesound rechaza las conexiones desde el contenedor (403). Falta una clave de su API en el entorno (FREESOUND_API_KEY) o los archivos bajados a mano (historia/laboratorio/muestras/06-mesa-con-volumen/SONIDOS.md).
+  - Nota: v1 (esfuerzo medio, bafd27c): espacio, luz y sombras. v2 (esfuerzo extra): hoja con física de papel (frenazo 195 → 10,8 px/c², colgada 5 → 0 cuadros), desenfoque de movimiento, pluma que escribe el rojo, madera, sombras de contacto y detalle; render 63,2 → 110,6 s. Veredicto de Gerson (2026-11-04): aprobado con cambios: ya no se ve tan plano; falta contexto (mesa, lámpara, luz) y los efectos de sonido son muy malos (reemplazar por grabaciones). La pluma plana queda por ahora. v3 (2026-11-04): plano de apertura amplio con el escritorio entero, lámpara de banquero con cadenita, pared con estante y pila de libros; render 138,9 s. Sonido: Gerson eligió CC0 de Freesound; bloqueado (ver bloqueo).
+  - Evidencia: [06-mesa-con-volumen/INFORME.md](historia/laboratorio/muestras/06-mesa-con-volumen/INFORME.md) · [06-mesa-con-volumen/hoja.jpg](historia/laboratorio/resultados/06-mesa-con-volumen/hoja.jpg) · [06-mesa-con-volumen/final.json](historia/laboratorio/resultados/06-mesa-con-volumen/final.json) · [06-mesa-con-volumen/fluidez.json](historia/laboratorio/resultados/06-mesa-con-volumen/fluidez.json) · [canal-historia/esfuerzo.md](historia/.claude/skills/canal-historia/esfuerzo.md) · [canal-historia/criterios.md](historia/.claude/skills/canal-historia/criterios.md) · [06-mesa-con-volumen/SONIDOS.md](historia/laboratorio/muestras/06-mesa-con-volumen/SONIDOS.md)
 
 ### Fase 2 · Tanda 2 de muestras
 

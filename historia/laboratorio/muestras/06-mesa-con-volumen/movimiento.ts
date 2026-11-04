@@ -28,7 +28,17 @@ export const B = {
 } as const;
 
 export const MESA = { w: 3600, h: 2600 };
+/** El escritorio: la tapa (px de la mesa), su grosor y el faldón con el cajón. Detrás, la pared (y = 0). */
+export const ESCRITORIO = { x0: 500, x1: 3100, y0: 0, y1: 1900, grosor: 90, faldon: 330 };
+/** Dónde cae la luz de la lámpara en la mesa (centro del charco). */
 export const LAMPARA = { x: 1450, y: 600 };
+/** La lámpara de banquero: base en la mesa; la pantalla, de `largo` px, con su borde de abajo a `altoPantalla`. */
+export const LAMPARA_3D = { x: 1450, y: 400, altoPantalla: 760, largo: 700, alto: 1000 };
+/** La pila de libros de la esquina (quieta). */
+export const PILA = [
+  { x: 2560, y: 1260, w: 480, h: 640, grosor: 72, giro: -7, tono: 0.55 },
+  { x: 2600, y: 1300, w: 420, h: 560, grosor: 56, giro: 4, tono: 0.3, sobre: 72 },
+];
 export const DOC = { x: 1330, y: 640, w: 620, h: 800 };
 export const LIBRO = { x: 2080, y: 470, w: 440, h: 600, grosor: 64 };
 export const RENGLON = 46;
@@ -44,18 +54,44 @@ const campana = (t: number, centro: number, ancho: number) => Math.exp(-(((t - c
 
 // ── cámara ──────────────────────────────────────────────────────────────────────────────────────
 export const camara = (t: number) => {
+  // abre en plano amplio (el escritorio entero, la lámpara, la pared) y entra hasta los papeles
   const acerca = tramo(t, B.acerca, 2.2, 'pesado'); // la luz invita a mirar
   const abre = tramo(t, B.abre, 1.2, 'solemne'); // el tablero entero
   return {
     acerca,
     abre,
-    z: mix(-520, 0, acerca) - 260 * abre,
-    y: mix(120, 0, acerca) - 40 * abre,
-    inclina: mix(62, 56, acerca) + 2 * abre,
+    z: mix(-2400, 0, acerca) - 260 * abre,
+    y: mix(250, 0, acerca) - 40 * abre,
+    inclina: mix(50, 56, acerca) + 2 * abre,
   };
 };
 
+/** Perspectiva de la escena (px) y su origen en pantalla: los mismos que usa Muestra.tsx. */
+export const PERSPECTIVA = 1500;
+export const ORIGEN = { x: 960, y: 324 };
+
+/**
+ * Dónde cae en pantalla un punto de la mesa (x, y en px de la mesa; z hacia arriba), con la misma
+ * transformación CSS de la escena: translateY(y + 180) translateZ(z) rotateX(inclina) y la perspectiva.
+ * Sirve para que lo que se dibuja en 2D (el haz) salga del lugar exacto de la lámpara.
+ */
+export const proyectar = (x: number, y: number, z: number, cam: { y: number; z: number; inclina: number }) => {
+  const th = (cam.inclina * Math.PI) / 180;
+  const cx = x - MESA.w / 2;
+  const cy = y - MESA.h / 2;
+  const y1 = cy * Math.cos(th) - z * Math.sin(th);
+  const z1 = cy * Math.sin(th) + z * Math.cos(th);
+  const s = PERSPECTIVA / (PERSPECTIVA - (z1 + cam.z));
+  return { x: ORIGEN.x + (960 + cx - ORIGEN.x) * s, y: ORIGEN.y + (540 + y1 + cam.y + 180 - ORIGEN.y) * s, escala: s };
+};
+
 // ── la lámpara ──────────────────────────────────────────────────────────────────────────────────
+/** La cadenita del interruptor: se jala (px hacia abajo) y queda meciéndose (grados). */
+export const cadena = (t: number) => ({
+  jala: 26 * Math.max(0, Math.sin(clamp((t - (B.enciende - 0.12)) / 0.24) * Math.PI)),
+  mece: asienta(t, B.enciende + 0.05, 9, 9, 2.2) + asienta(t, B.tocaLibro, 4, 11, 3),
+});
+
 /** La lámpara está sobre la mesa: el golpe del libro la hace temblar (px de la mesa). */
 export const temblor = (t: number) => asienta(t, B.tocaLibro, 5, 42, 7);
 
@@ -203,5 +239,5 @@ const antesLibro = (t: number) => [LIBRO.x, LIBRO.y + mix(-420, 0, tramo(t, 5.6,
 export const ANTES = [
   { nombre: 'hoja', pos: antesDoc, contactos: [] as number[], desde: 3.6, hasta: 6.8 },
   { nombre: 'libro', pos: antesLibro, contactos: [6.15], desde: 5.6, hasta: 6.8 },
-  { nombre: 'cámara', pos: TRAYECTORIAS[3].pos, contactos: [] as number[], desde: 0, hasta: DURACION_S, quietaPorDecision: true },
+  { nombre: 'cámara', pos: (t: number) => { const a = tramo(t, 1.2, 2.2, 'pesado'); const b = tramo(t, 8.2, 1.2, 'solemne'); return [0, mix(120, 0, a) - 40 * b, mix(-520, 0, a) - 260 * b]; }, contactos: [] as number[], desde: 0, hasta: DURACION_S, quietaPorDecision: true },
 ];

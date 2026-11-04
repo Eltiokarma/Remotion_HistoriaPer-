@@ -450,7 +450,7 @@
       "fase": "f1",
       "titulo": "06 La mesa con volumen (10 s): respuesta a «se ve muy plano»",
       "entregable": "Muestra 06 en historia/laboratorio/muestras/06-mesa-con-volumen: la escena de la 05 con espacio, luz, sombras por altura y de contacto, movimiento con física, desenfoque de movimiento, pluma y detalle. Gerson la juzga: ¿sigue plana?, ¿es fluida?",
-      "estado": "en_curso",
+      "estado": "bloqueado",
       "depende_de": [
         "t1-revision"
       ],
@@ -463,21 +463,23 @@
         "inicio": "2026-11-04",
         "fin": null
       },
-      "bloqueo": null,
+      "bloqueo": "Sonidos CC0: Freesound rechaza las conexiones desde el contenedor (403). Falta una clave de su API en el entorno (FREESOUND_API_KEY) o los archivos bajados a mano (historia/laboratorio/muestras/06-mesa-con-volumen/SONIDOS.md).",
       "evidencia": [
         "historia/laboratorio/muestras/06-mesa-con-volumen/INFORME.md",
         "historia/laboratorio/resultados/06-mesa-con-volumen/hoja.jpg",
         "historia/laboratorio/resultados/06-mesa-con-volumen/final.json",
         "historia/laboratorio/resultados/06-mesa-con-volumen/fluidez.json",
-        "historia/.claude/skills/canal-historia/esfuerzo.md"
+        "historia/.claude/skills/canal-historia/esfuerzo.md",
+        "historia/.claude/skills/canal-historia/criterios.md",
+        "historia/laboratorio/muestras/06-mesa-con-volumen/SONIDOS.md"
       ],
       "tiempo": {
         "humano_min": null,
         "agente": "medio: 37 llamadas, 11,4 min, $2,67 eq. API; extra: 27 llamadas, 20,2 min, $5,07 hasta 10:58 (consumo_sesion.py)",
-        "render_s": 110.6,
+        "render_s": 138.9,
         "maquina": "contenedor de la sesión (nube), Xeon 2,1 GHz, 4 hilos"
       },
-      "nota": "v1 (esfuerzo medio, bafd27c): espacio, luz y sombras. v2 (esfuerzo extra): hoja con física de papel (frenazo 195 → 10,8 px/c², colgada 5 → 0 cuadros), desenfoque de movimiento, pluma que escribe el rojo, madera, sombras de contacto y detalle; render 63,2 → 110,6 s. Falta el veredicto de Gerson."
+      "nota": "v1 (esfuerzo medio, bafd27c): espacio, luz y sombras. v2 (esfuerzo extra): hoja con física de papel (frenazo 195 → 10,8 px/c², colgada 5 → 0 cuadros), desenfoque de movimiento, pluma que escribe el rojo, madera, sombras de contacto y detalle; render 63,2 → 110,6 s. Veredicto de Gerson (2026-11-04): aprobado con cambios: ya no se ve tan plano; falta contexto (mesa, lámpara, luz) y los efectos de sonido son muy malos (reemplazar por grabaciones). La pluma plana queda por ahora. v3 (2026-11-04): plano de apertura amplio con el escritorio entero, lámpara de banquero con cadenita, pared con estante y pila de libros; render 138,9 s. Sonido: Gerson eligió CC0 de Freesound; bloqueado (ver bloqueo)."
     },
     {
       "id": "infra-papel",

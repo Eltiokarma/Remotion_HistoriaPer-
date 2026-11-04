@@ -37,11 +37,11 @@
     },
     {
       "trayectoria": "cámara",
-      "paso_max": 32.3,
+      "paso_max": 145.9,
       "en_cuadro": 67,
-      "frenazo_max": 3.7,
+      "frenazo_max": 16.6,
       "frenazo_en": 63,
-      "sacudida_max": 2.3,
+      "sacudida_max": 10.3,
       "sacudida_en": 67,
       "en_contacto": 0,
       "colgado": null
