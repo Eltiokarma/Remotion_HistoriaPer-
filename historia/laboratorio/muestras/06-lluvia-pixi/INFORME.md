@@ -95,9 +95,10 @@ Dónde se va el tiempo (versión 1, 30 cuadros, 90–119, una corrida cada uno; 
   las máscaras y las capas a pantalla completa (inferencia, sin medir por partes).
 - **Con GPU real debería cambiar**, pero es hipótesis: no se probó en la laptop (Iris Xe) ni en la PC
   objetivo. Hay que pasar `--gl` y confirmar en el registro que el renderizador cambió.
-- **Límite de la medición:** `segundos_cpu` de `medir.py` sale de `getrusage(RUSAGE_CHILDREN)` y no
-  cuenta a Chrome (41,7 s de CPU para 180 s de pared con el proceso GPU al 235 %). Vale también para
-  la tanda 1. La pared y la memoria (árbol de procesos) sí son confiables.
+- **Límite de la medición (corregido después):** el `segundos_cpu` de estos registros sale de
+  `getrusage(RUSAGE_CHILDREN)` y no cuenta a Chrome. Desde el 2026-11-05, `medir.py` suma la CPU de todo
+  el árbol: en 30 cuadros de esta muestra dio 158 s de CPU, de los que Chrome fueron 143 s; el método
+  viejo marcaba 15 s. Tiempo de pared y memoria no cambian.
 - **Agente:** 2026-11-04. La versión 1 se renderizó entre 12:40 y 12:50 UTC y la versión 2 entre
   20:30 y 20:38 UTC. El tiempo de trabajo de la sesión no quedó registrado.
 - **Humano:** desconocido.

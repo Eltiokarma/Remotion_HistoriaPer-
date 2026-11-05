@@ -86,7 +86,9 @@ Cada una con su síntoma (cómo se reconoce), la causa y el arreglo que funcion�
   cantidad de sprites casi no importa (10× menos gotas, mismo tiempo).
 - **Arreglo:** pocos filtros, y solo donde se ven. `cacheAsTexture` para lo quieto no ahorró y
   recortó el contenido en el borde: no usarlo sin mirar el cuadro.
-- `segundos_cpu` de `medir.py` no cuenta a Chrome (`RUSAGE_CHILDREN`): para el costo, la pared.
+- `segundos_cpu` de `medir.py` no contaba a Chrome (`RUSAGE_CHILDREN`). **Arreglado el 2026-11-05**:
+  ahora suma la CPU de todo el árbol de procesos. En 30 cuadros de la 06: 158 s con el método nuevo,
+  15 s con el viejo (Chrome eran 143 s). Los registros anteriores solo tienen el viejo.
 
 ## Degradados hechos con bandas
 
@@ -94,3 +96,11 @@ Cada una con su síntoma (cómo se reconoce), la causa y el arreglo que funcion�
   hoja de contactos).
 - **Causa:** bandas semitransparentes con 1 px de solape: el solape se pinta dos veces.
 - **Arreglo:** bandas con bordes enteros y sin solape (muestra 06).
+
+## Medir una muestra de referencia pisaba su registro
+
+- **Síntoma:** al renderizar la 03 para compararla con la 06, su `final-caliente.json` de la tanda 1
+  quedó reemplazado por el nuevo (se restauró desde git).
+- **Causa:** `medir.py` escribía siempre en `resultados/<muestra>/<etapa>.json`.
+- **Arreglo (2026-11-05):** si el registro existe, el nuevo va a `<etapa>-<fecha>.json` y se avisa.
+  `medir_tanda.sh` y `ci.sh` reemplazan a propósito con `LAB_SOBRESCRIBIR=1`.

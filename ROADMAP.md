@@ -2,7 +2,7 @@
 
 <!-- GENERADO por roadmap/generar.mjs a partir de roadmap/roadmap.json. No editar a mano: editar el JSON y regenerar. -->
 
-Actualizado: **2026-11-04**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
+Actualizado: **2026-11-05**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
 
 - Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.
 - Tiempo humano y tokens: null = desconocido (no medido). No se estiman.
@@ -112,8 +112,8 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `t1-revision`, `f0-skill-remotion`
   - Prevista: — · Real: 2026-11-03 → …
   - Tiempo: H ¿? · A ≈ 12:00–12:20 UTC (v0) · R ¿? · tokens ¿?
-  - Nota: Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision).
-  - Evidencia: [canal-historia/SKILL.md](historia/.claude/skills/canal-historia/SKILL.md)
+  - Nota: Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision). Versión 1 (2026-11-05), tras la muestra 06: referencias antes de diseñar, pase de imagen antes de mostrar, sonido en el beat principal, coreografía adaptada de Emil Kowalski (movimiento.md) y dos trampas nuevas; medir.py ahora cuenta la CPU de Chrome y no pisa registros. Sin medir todavía si el skill reemplaza esfuerzo (f0-skill-medir).
+  - Evidencia: [canal-historia/SKILL.md](historia/.claude/skills/canal-historia/SKILL.md) · [canal-historia/procedimiento.md](historia/.claude/skills/canal-historia/procedimiento.md) · [canal-historia/movimiento.md](historia/.claude/skills/canal-historia/movimiento.md)
 - [ ] **Medir si el skill reemplaza esfuerzo** `f0-skill-medir` — ⏳ pendiente
   - Entregable: Protocolo en historia/laboratorio/MEDIR_SKILL.md: brazos A (medio con skills), B (alto sin skills) y C opcional (medio sin skills); misma muestra nueva (sugerida es-ticket), sesiones nuevas, mismo pedido, juicio a ciegas de Gerson; consumo con scripts/consumo_sesion.py
   - Depende de: `f0-skill-canal`, `t1-revision`

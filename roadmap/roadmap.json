@@ -1,6 +1,6 @@
 {
   "titulo": "Roadmap del laboratorio y la base de producción",
-  "actualizado": "2026-11-04",
+  "actualizado": "2026-11-05",
   "notas": [
     "Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.",
     "Tiempo humano y tokens: null = desconocido (no medido). No se estiman.",
@@ -377,7 +377,9 @@
       },
       "bloqueo": null,
       "evidencia": [
-        "historia/.claude/skills/canal-historia/SKILL.md"
+        "historia/.claude/skills/canal-historia/SKILL.md",
+        "historia/.claude/skills/canal-historia/procedimiento.md",
+        "historia/.claude/skills/canal-historia/movimiento.md"
       ],
       "tiempo": {
         "humano_min": null,
@@ -385,7 +387,7 @@
         "render_s": null,
         "maquina": null
       },
-      "nota": "Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision)."
+      "nota": "Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision). Versión 1 (2026-11-05), tras la muestra 06: referencias antes de diseñar, pase de imagen antes de mostrar, sonido en el beat principal, coreografía adaptada de Emil Kowalski (movimiento.md) y dos trampas nuevas; medir.py ahora cuenta la CPU de Chrome y no pisa registros. Sin medir todavía si el skill reemplaza esfuerzo (f0-skill-medir)."
     },
     {
       "id": "f0-skill-medir",

@@ -5,7 +5,9 @@ description: Cómo trabajar en el canal de historia del altiplano (historia/) �
 
 # Canal de historia del altiplano: cómo trabajar
 
-Versión 0 (2026-11-03). Hecha con lo aprendido en el laboratorio (tanda 1). El estilo del canal **no
+Versión 1 (2026-11-05). La versión 0 (2026-11-03) salió de la tanda 1; la 1 suma lo aprendido en la
+muestra 06: referencias antes de diseñar, pase de imagen, sonido en el beat principal y la
+coreografía de [`movimiento.md`](movimiento.md). El estilo del canal **no
 está aquí**: está en los documentos del director que lista [`criterios.md`](criterios.md). Este
 skill es el oficio técnico; aquellos dicen qué buscamos.
 
@@ -49,14 +51,21 @@ Cada una costó una vuelta en el laboratorio. Detalle, síntoma y arreglo en [`t
 - `--scale` no achica WebGL (R3F) ni p5: la previa barata es un tramo (`--frames`) o el Studio.
 - El primer render en una máquina baja Chrome Headless Shell: no medir ese tiempo como «frío».
 - `world-atlas` no tiene lagos: no nombrar en pantalla lo que el mapa no muestra.
+- Pixi o WebGL sin GPU: un solo proceso GPU atiende a todas las pestañas; más hilos no ayudan.
+- Medir una muestra como referencia ya no pisa su registro (`medir.py` guarda aparte).
+- Registros anteriores al 2026-11-05: su `segundos_cpu` no contaba a Chrome.
 
 ## 4. Procedimiento de una muestra o escena nueva
 
 Pasos y comandos en [`procedimiento.md`](procedimiento.md). En corto:
 
-1. Código con beats en cuadros, pesos del canal y azar con semilla.
+0. Referencias antes de diseñar: pedírselas a Gerson o proponerle dos o tres; anotar qué se toma.
+1. Código con beats en cuadros, pesos del canal y azar con semilla. Sonido al menos en el beat
+   principal (`Sfx`).
 2. `npm run typecheck` y `npm run reglas`.
 3. Previa barata; mirar la hoja de contactos **y** cuadros a tamaño real en los tramos de movimiento.
+   Antes de mostrar: el **pase de imagen** (profundidad, luz, encuadre, ritmo, algo que se sienta).
+   Técnicamente correcto no alcanza: así salió plana la primera 06.
 4. Corregir y repetir. Guardar «antes» de cada defecto corregido (recorte o cuadros), en `resultados/`.
 5. Final medida (`scripts/medir.py` vía `remotion.sh` o `manim.sh`), `scripts/revisar.py`.
 6. Informe: qué demuestra, qué salió mal, qué costó, para qué escenas sirve.
