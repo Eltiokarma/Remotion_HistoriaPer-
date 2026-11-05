@@ -106,6 +106,11 @@ lo de la primera tanda; `pendientes/` los recortes de lo que falta.
   03 (p5): cuesta pintar píxeles a pantalla completa en un solo proceso GPU por software, no la
   cantidad de elementos.
 
+- **09 · Puno de noche (PixiJS, con sonido)**, [informe](muestras/09-puno-noche/INFORME.md). Primera
+  muestra hecha con el skill versión 1: pase de imagen, coreografía por papeles (la plaza con la
+  campana, la ola de luces, el remate en la isla). Borrador: no es el Puno real. 59,9 s en caliente:
+  sin filtros a pantalla completa, 3500 luces cuestan poco.
+
 ## Qué sigue
 
 Ver el roadmap. En corto: Gerson revisa la tanda 1 (fase `t1-revision`); después la tanda 2

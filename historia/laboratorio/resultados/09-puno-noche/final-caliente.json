@@ -1,0 +1,98 @@
+{
+  "muestra": "09-puno-noche",
+  "etapa": "final-caliente",
+  "inicio_utc": "2026-11-05T23:48:46+00:00",
+  "comando": "npx remotion render laboratorio/remotion/index.ts lab-09-puno-noche laboratorio/out/09-puno-noche/final.mp4",
+  "codigo_salida": 0,
+  "segundos_pared": 59.9,
+  "segundos_cpu": 198.7,
+  "segundos_cpu_por_tipo": {
+    "chrome": 177.4,
+    "ffmpeg": 11.6,
+    "node": 9.3,
+    "otros": 0.4
+  },
+  "segundos_cpu_rusage": 22.3,
+  "cpu_metodo": "segundos_cpu: suma de utime+stime de cada proceso del árbol (Chrome incluido), última lectura de /proc/<pid>/stat cada 0,25 s; lo que hace un proceso en su último cuarto de segundo se pierde. segundos_cpu_rusage: getrusage(RUSAGE_CHILDREN), solo hijos esperados; no cuenta a Chrome (registros anteriores al 2026-11-05 solo tienen esta).",
+  "condicion": "caliente",
+  "pico_pss_mb": 2388,
+  "pico_rss_mb": 3135,
+  "pico_pss_por_tipo": {
+    "otros": {
+      "pss_mb": 48,
+      "rss_mb": 76,
+      "procesos": 2
+    },
+    "node": {
+      "pss_mb": 453,
+      "rss_mb": 479,
+      "procesos": 2
+    },
+    "ffmpeg": {
+      "pss_mb": 380,
+      "rss_mb": 399,
+      "procesos": 1
+    },
+    "chrome": {
+      "pss_mb": 1507,
+      "rss_mb": 2181,
+      "procesos": 8
+    }
+  },
+  "pico_rss_por_tipo": {
+    "otros": {
+      "pss_mb": 48,
+      "rss_mb": 76,
+      "procesos": 2
+    },
+    "node": {
+      "pss_mb": 453,
+      "rss_mb": 479,
+      "procesos": 2
+    },
+    "ffmpeg": {
+      "pss_mb": 380,
+      "rss_mb": 399,
+      "procesos": 1
+    },
+    "chrome": {
+      "pss_mb": 1507,
+      "rss_mb": 2181,
+      "procesos": 8
+    }
+  },
+  "memoria_metodo": "árbol de procesos del comando (node/npx, webpack, Chrome headless y sus procesos, ffmpeg; o Python en Manim), muestreo cada 0,25 s de /proc/<pid>/smaps_rollup. PSS reparte la memoria compartida; RSS la cuenta en cada proceso y sobreestima. Un pico más corto que el muestreo se puede perder.",
+  "registro_destacado": [],
+  "maquina": {
+    "nombre": "contenedor en la nube (sesión de Claude Code)",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "hilos_visibles": 4,
+    "ram_gb": 15.7,
+    "gpu": "ninguna detectada",
+    "so": "Linux 6.18.44-fc-v242"
+  },
+  "versiones": {
+    "node": "v22.23.4",
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+    "python_medidor": "3.13.18",
+    "remotion": "4.0.539",
+    "three": "0.187.0",
+    "@remotion/three": "4.0.539",
+    "@react-three/fiber": "9.8.2",
+    "@react-three/drei": "10.7.9",
+    "roughjs": "4.6.6",
+    "p5": "2.3.4",
+    "pixi.js": "8.22.0"
+  },
+  "salida": {
+    "archivo": "out/09-puno-noche/final.mp4",
+    "duracion_s": 5.013,
+    "cuadros": 150,
+    "ancho": 1920,
+    "alto": 1080,
+    "fps": "30/1",
+    "codec": "h264",
+    "audio": "aac",
+    "mb": 1.54
+  }
+}

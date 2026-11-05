@@ -1,4 +1,4 @@
-# Renderiza las muestras del laboratorio (tanda 1 y la 06) en una máquina limpia de GitHub y deja los MP4,
+# Renderiza las muestras del laboratorio (tanda 1, la 06 y la 09) en una máquina limpia de GitHub y deja los MP4,
 # las hojas de contactos y los registros como artefacto del run (14 días). Sirve para:
 #  - comprobar que se reproducen desde el repositorio, sin nada del contenedor donde se hicieron;
 #  - tener enlaces a los MP4 sin subirlos a git (regla del canal: out/ fuera de git).

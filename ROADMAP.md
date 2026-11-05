@@ -12,7 +12,7 @@ Actualizado: **2026-11-05**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **18** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **19** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -50,6 +50,7 @@ gantt
   Revisión de la tanda 1 por Gerson (propuesta) :active, t1revision, 2026-11-04, 3d
   section Fase 2 · Tanda 2 de muestras
   06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) :done, t2pixi, 2026-11-04, 1d
+  09 Puno de noche la ciudad se enciende (primera muestra con el skill v1) :done, t2puno, 2026-11-05, 1d
   07 QGIS el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar (propuesta) :t2qgis, 2026-11-11, 4d
   08 Blender un objeto de época con material de grabado, montado en Remotion (propuesta) :t2blender, 2026-11-16, 5d
   04b Libro 3D con tinta sombreado toon y contornos (propuesta) :t2toon, 2026-11-09, 2d
@@ -183,6 +184,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A 2026-11-04: renders de la versión 1 entre 12:40 y 12:50 UTC, de la versión 2 entre 20:30 y 20:38 UTC (tiempo de sesión no registrado) · R 200.6 s en contenedor · tokens ¿?
   - Nota: Adelantada a pedido de Gerson (2026-11-04). Versión 1 no aprobada («planos y sin corazón»); la versión 2 aplica sus referencias de paisaje vectorial con profundidad y espera su veredicto. Final caliente 200,6 s (frío 222,1) contra 28,6 s de la 03 en la misma sesión: el costo es pintar a pantalla completa en un solo proceso GPU por software (SwiftShader), no la cantidad de elementos. Con GPU sin probar.
   - Evidencia: [06-lluvia-pixi/INFORME.md](historia/laboratorio/muestras/06-lluvia-pixi/INFORME.md) · [06-lluvia-pixi/final-caliente.json](historia/laboratorio/resultados/06-lluvia-pixi/final-caliente.json) · [06-lluvia-pixi/referencia-03-final-caliente.json](historia/laboratorio/resultados/06-lluvia-pixi/referencia-03-final-caliente.json) · [06-lluvia-pixi/hoja.jpg](historia/laboratorio/resultados/06-lluvia-pixi/hoja.jpg) · [v1/hoja.jpg](historia/laboratorio/resultados/06-lluvia-pixi/v1/hoja.jpg) · [canal-historia/criterios.md](historia/.claude/skills/canal-historia/criterios.md)
+- [x] **09 Puno de noche: la ciudad se enciende (primera muestra con el skill v1)** `t2-puno` — ✅ hecho
+  - Entregable: Clip de 5 s con sonido: pase de imagen y coreografía por papeles; informe
+  - Depende de: `f0-skill-canal`
+  - Prevista: — · Real: 2026-11-05
+  - Tiempo: H ¿? · A 2026-11-05 (tiempo de sesión no registrado) · R 59.9 s en contenedor · tokens ¿?
+  - Nota: Pedida por Gerson («probemos otra cosa con los estilos nuevos»); eligió el tema y que el agente propusiera. Borrador sin aprobar: composición, no el Puno real.
+  - Evidencia: [09-puno-noche/INFORME.md](historia/laboratorio/muestras/09-puno-noche/INFORME.md) · [09-puno-noche/final-caliente.json](historia/laboratorio/resultados/09-puno-noche/final-caliente.json) · [09-puno-noche/hoja.jpg](historia/laboratorio/resultados/09-puno-noche/hoja.jpg)
 - [ ] **07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar** `t2-qgis` — 💡 propuesto
   - Entregable: Datos con licencia (p. ej. Natural Earth, dominio público) + clip de 5 s con el Titicaca
   - Depende de: `t1-revision`
