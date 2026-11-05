@@ -34,6 +34,9 @@ No se copian aquí las reglas de esos documentos: se leen allá, antes de trabaj
 - Una prueba de herramienta va en `laboratorio/`, nunca dentro de un episodio.
 - Decidir los beats y el peso de cada movimiento **antes** de animar: qué entra, cuándo, con qué peso
   (`solemne`, `pesado`, `natural`, `ligero`, `tenso`) y por qué.
+- Si en un beat se mueven varias cosas: papeles (protagonista, apoyo, decoración, quieto), relación
+  entre cada par y línea de tiempo antes del código. Ver [`movimiento.md`](movimiento.md) (adaptado de
+  los skills de Emil Kowalski, con lo que choca con el canal).
 
 ## 3. Trampas conocidas
 
