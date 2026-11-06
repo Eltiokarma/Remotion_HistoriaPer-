@@ -5,6 +5,11 @@ description: Cómo trabajar en el canal de historia del altiplano (historia/) �
 
 # Canal de historia del altiplano: cómo trabajar
 
+> **Fuera del repositorio** (instalado en la Personalización de claude.ai): los archivos que se citan
+> (`historia/CLAUDE.md`, `DIRECCION_DE_VIDEO.md`, los scripts del laboratorio) no están a mano. Vale lo
+> que dicen este archivo, `criterios.md`, `procedimiento.md`, `movimiento.md` y `trampas.md`; para lo
+> demás, pedirle a Gerson el archivo o decir qué falta en vez de suponerlo.
+
 Versión 1 (2026-11-05). La versión 0 (2026-11-03) salió de la tanda 1; la 1 suma lo aprendido en la
 muestra 06: referencias antes de diseñar, pase de imagen, sonido en el beat principal y la
 coreografía de [`movimiento.md`](movimiento.md). El estilo del canal **no
