@@ -111,6 +111,10 @@ lo de la primera tanda; `pendientes/` los recortes de lo que falta.
   campana, la ola de luces, el remate en la isla). Borrador: no es el Puno real. 59,9 s en caliente:
   sin filtros a pantalla completa, 3500 luces cuestan poco.
 
+- **10 · Balsa de totora (Inkscape por MCP + Remotion)**, [informe](muestras/10-balsa-inkscape/INFORME.md).
+  El dibujo lo hace Inkscape por MCP (21 llamadas, 3,7 s: capas, nieve por intersección, casco por
+  unión, recortes); Remotion anima el SVG por id, con reflejo, anillos y sonido. 10,1 s en caliente.
+
 ## Qué sigue
 
 Ver el roadmap. En corto: Gerson revisa la tanda 1 (fase `t1-revision`); después la tanda 2

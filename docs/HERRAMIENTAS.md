@@ -41,14 +41,14 @@ para preparar material, no para dirigir.
 | **ComfyUI** | Generación de recursos (texturas, fondos, referencias) con flujos locales o externos. | pendiente de prueba | Antes de usarlo: licencia de cada modelo y regla 1.1·3 del canal (imágenes con licencia clara) |
 | **DaVinci Resolve / Fusion** y **After Effects** | Alternativas de composición y acabado (etalonaje, limpieza de audio, ajustes finales). | pendiente de prueba | Solo si el acabado en Remotion no alcanza |
 
-## Control por MCP (investigado el 2026-11-07, nada probado todavía)
+## Control por MCP (investigado el 2026-11-07; probado: Inkscape)
 
 MCP deja que Claude maneje un programa (crear capas, mover claves, exportar) en vez de escribir solo
 código. Lo que hay, según sus repositorios y documentación (no según pruebas propias):
 
 | Programa | MCP | Qué hace | Costo | Para el canal |
 |---|---|---|---|---|
-| **Inkscape** (vectorial libre, como Illustrator) | Comunitarios: `inksmcp`, `inkscape-mcp` (PyPI) | Crear, editar y exportar SVG con Inkscape 1.x | Gratis (GPL) | **El que más calza:** ilustraciones vectoriales (grabado, mapas, objetos) que Remotion anima como SVG. Podría probarse en el contenedor (Inkscape sin pantalla) |
+| **Inkscape** (vectorial libre, como Illustrator) | Comunitarios: `inksmcp`, `inkscape-mcp` (PyPI) | Crear, editar y exportar SVG con Inkscape 1.x | Gratis (GPL; `inksmcp` MIT) | **Verificado en el contenedor** con `inksmcp` 0.3.0 e Inkscape 1.2.2 ([muestra 10](../historia/laboratorio/muestras/10-balsa-inkscape/)): dibujo por MCP en 3,7 s, animado en Remotion. Sin pantalla hace falta `scripts/inkscape-sin-pantalla.sh`. En la laptop, sin probar |
 | **Blender** | `ahujasid/blender-mcp` (MIT, el más usado) | Escena, objetos, materiales, capturas del visor | Gratis | Tarea `t2-blender`. Corre en la máquina de Gerson (complemento dentro de Blender); sin GPU, el render es lento |
 | **Illustrator** | Oficial dentro de Illustrator (Beta), 40 herramientas, según la ayuda de Adobe; y comunitarios (`ie3jp/illustrator-mcp-server`, 63 herramientas) | Leer, crear y exportar el documento abierto | Suscripción de Adobe | Igual que Inkscape, si Gerson ya tiene Creative Cloud |
 | **After Effects** | Solo comunitarios (ocho o más: `kumoproductions/mcp-aftereffects`, `ishu86/after-effects-mcp`…); ninguno de Adobe | Composiciones, capas, claves, expresiones, render | Suscripción de Adobe | Se superpone con Remotion. Saldría como video que Remotion monta; los beats se fijan en segundos |

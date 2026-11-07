@@ -12,7 +12,7 @@ Actualizado: **2026-11-05**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **19** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **20** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -51,6 +51,7 @@ gantt
   section Fase 2 · Tanda 2 de muestras
   06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) :done, t2pixi, 2026-11-04, 1d
   09 Puno de noche la ciudad se enciende (primera muestra con el skill v1) :done, t2puno, 2026-11-05, 1d
+  10 Inkscape por MCP balsa de totora dibujada por MCP y animada en Remotion :done, t2inkscape, 2026-11-07, 1d
   07 QGIS el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar (propuesta) :t2qgis, 2026-11-11, 4d
   08 Blender un objeto de época con material de grabado, montado en Remotion (propuesta) :t2blender, 2026-11-16, 5d
   04b Libro 3D con tinta sombreado toon y contornos (propuesta) :t2toon, 2026-11-09, 2d
@@ -191,6 +192,12 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A 2026-11-05 (tiempo de sesión no registrado) · R 59.9 s en contenedor · tokens ¿?
   - Nota: Pedida por Gerson («probemos otra cosa con los estilos nuevos»); eligió el tema y que el agente propusiera. Borrador sin aprobar: composición, no el Puno real.
   - Evidencia: [09-puno-noche/INFORME.md](historia/laboratorio/muestras/09-puno-noche/INFORME.md) · [09-puno-noche/final-caliente.json](historia/laboratorio/resultados/09-puno-noche/final-caliente.json) · [09-puno-noche/hoja.jpg](historia/laboratorio/resultados/09-puno-noche/hoja.jpg)
+- [x] **10 Inkscape por MCP: balsa de totora dibujada por MCP y animada en Remotion** `t2-inkscape` — ✅ hecho
+  - Entregable: MCP de Inkscape probado de punta a punta; clip de 5 s con sonido; informe con límites del MCP
+  - Prevista: — · Real: 2026-11-07
+  - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 10.1 s en contenedor · tokens ¿?
+  - Nota: Pedida por Gerson tras la investigación de MCP. Dibujo por MCP 3,7 s (21 llamadas). Borrador sin aprobar: balsa y boga genéricas, sin fuente. En la laptop de Gerson, sin probar.
+  - Evidencia: [10-balsa-inkscape/INFORME.md](historia/laboratorio/muestras/10-balsa-inkscape/INFORME.md) · [10-balsa-inkscape/final-caliente.json](historia/laboratorio/resultados/10-balsa-inkscape/final-caliente.json) · [10-balsa-inkscape/vista-mcp.jpg](historia/laboratorio/resultados/10-balsa-inkscape/vista-mcp.jpg) · [docs/HERRAMIENTAS.md](docs/HERRAMIENTAS.md)
 - [ ] **07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar** `t2-qgis` — 💡 propuesto
   - Entregable: Datos con licencia (p. ej. Natural Earth, dominio público) + clip de 5 s con el Titicaca
   - Depende de: `t1-revision`

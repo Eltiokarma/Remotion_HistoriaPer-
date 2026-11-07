@@ -538,6 +538,33 @@
       "nota": "Pedida por Gerson («probemos otra cosa con los estilos nuevos»); eligió el tema y que el agente propusiera. Borrador sin aprobar: composición, no el Puno real."
     },
     {
+      "id": "t2-inkscape",
+      "fase": "f2",
+      "titulo": "10 Inkscape por MCP: balsa de totora dibujada por MCP y animada en Remotion",
+      "entregable": "MCP de Inkscape probado de punta a punta; clip de 5 s con sonido; informe con límites del MCP",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-07",
+        "fin": "2026-11-07"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/laboratorio/muestras/10-balsa-inkscape/INFORME.md",
+        "historia/laboratorio/resultados/10-balsa-inkscape/final-caliente.json",
+        "historia/laboratorio/resultados/10-balsa-inkscape/vista-mcp.jpg",
+        "docs/HERRAMIENTAS.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "2026-11-07 (tiempo de sesión no registrado)",
+        "render_s": 10.1,
+        "maquina": "contenedor"
+      },
+      "nota": "Pedida por Gerson tras la investigación de MCP. Dibujo por MCP 3,7 s (21 llamadas). Borrador sin aprobar: balsa y boga genéricas, sin fuente. En la laptop de Gerson, sin probar."
+    },
+    {
       "id": "t2-qgis",
       "fase": "f2",
       "titulo": "07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar",
