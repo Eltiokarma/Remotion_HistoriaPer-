@@ -12,7 +12,7 @@ Actualizado: **2026-11-05**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **22** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **23** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -54,6 +54,7 @@ gantt
   10 Inkscape por MCP balsa de totora dibujada por MCP y animada en Remotion :done, t2inkscape, 2026-11-07, 1d
   11 Título animado sin After Effects (Inkscape por MCP + Remotion) :done, t2titulo, 2026-11-07, 1d
   12 Edición visual del Studio ajustar tiempos y posiciones sin tocar código :done, t2studio, 2026-11-07, 1d
+  13 Efectos tipo After Effects con @remotion/effects :done, t2efectos, 2026-11-07, 1d
   07 QGIS el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar (propuesta) :t2qgis, 2026-11-11, 4d
   08 Blender un objeto de época con material de grabado, montado en Remotion (propuesta) :t2blender, 2026-11-16, 5d
   04b Libro 3D con tinta sombreado toon y contornos (propuesta) :t2toon, 2026-11-09, 2d
@@ -214,6 +215,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 11.7 s en contenedor · tokens ¿?
   - Nota: Gerson pidió investigar un «After Effects propio». Falta su decisión: en episodios, ¿editar en el Studio solo tiempos y posiciones? (CLAUDE.md §15).
   - Evidencia: [12-titulo-editable/INFORME.md](historia/laboratorio/muestras/12-titulo-editable/INFORME.md) · [12-titulo-editable/edicion-1-clave.diff](historia/laboratorio/resultados/12-titulo-editable/edicion-1-clave.diff) · [12-titulo-editable/edicion-2-lienzo.diff](historia/laboratorio/resultados/12-titulo-editable/edicion-2-lienzo.diff) · [scripts/reglas.ts](historia/scripts/reglas.ts)
+- [x] **13 Efectos tipo After Effects con @remotion/effects** `t2-efectos` — ✅ hecho
+  - Entregable: Clip con desenfoque de foco, LUT, resplandor, desenfoque de zoom y pasar página; costo por efecto; informe
+  - Depende de: `t2-inkscape`
+  - Prevista: — · Real: 2026-11-07
+  - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 55.2 s en contenedor · tokens ¿?
+  - Nota: Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor: probar en la laptop con --props='{"webgpu":true}'.
+  - Evidencia: [13-efectos/INFORME.md](historia/laboratorio/muestras/13-efectos/INFORME.md) · [13-efectos/final-caliente.json](historia/laboratorio/resultados/13-efectos/final-caliente.json) · [13-efectos/hoja.jpg](historia/laboratorio/resultados/13-efectos/hoja.jpg)
 - [ ] **07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar** `t2-qgis` — 💡 propuesto
   - Entregable: Datos con licencia (p. ej. Natural Earth, dominio público) + clip de 5 s con el Titicaca
   - Depende de: `t1-revision`

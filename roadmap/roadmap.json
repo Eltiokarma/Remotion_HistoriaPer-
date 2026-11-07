@@ -622,6 +622,34 @@
       "nota": "Gerson pidió investigar un «After Effects propio». Falta su decisión: en episodios, ¿editar en el Studio solo tiempos y posiciones? (CLAUDE.md §15)."
     },
     {
+      "id": "t2-efectos",
+      "fase": "f2",
+      "titulo": "13 Efectos tipo After Effects con @remotion/effects",
+      "entregable": "Clip con desenfoque de foco, LUT, resplandor, desenfoque de zoom y pasar página; costo por efecto; informe",
+      "estado": "hecho",
+      "depende_de": [
+        "t2-inkscape"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-07",
+        "fin": "2026-11-07"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/laboratorio/muestras/13-efectos/INFORME.md",
+        "historia/laboratorio/resultados/13-efectos/final-caliente.json",
+        "historia/laboratorio/resultados/13-efectos/hoja.jpg"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "2026-11-07 (tiempo de sesión no registrado)",
+        "render_s": 55.2,
+        "maquina": "contenedor"
+      },
+      "nota": "Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor: probar en la laptop con --props='{\"webgpu\":true}'."
+    },
+    {
       "id": "t2-qgis",
       "fase": "f2",
       "titulo": "07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar",

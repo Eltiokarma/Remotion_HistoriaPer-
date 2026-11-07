@@ -17,6 +17,7 @@
     "@react-three/drei": "10.7.9",
     "@react-three/fiber": "9.8.2",
     "@remotion/cli": "4.0.539",
+    "@remotion/effects": "4.0.539",
     "@remotion/fonts": "4.0.539",
     "@remotion/media-utils": "4.0.539",
     "@remotion/paths": "4.0.539",

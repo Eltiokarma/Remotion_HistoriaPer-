@@ -123,6 +123,10 @@ lo de la primera tanda; `pendientes/` los recortes de lo que falta.
   de tiempo que faltaba frente a After Effects ya está en Remotion: arrastrar una clave o mover una
   pieza en el lienzo escribe el cambio en el código (probado con Playwright). Curvas: los pesos del canal.
 
+- **13 · Efectos (@remotion/effects)**, [informe](muestras/13-efectos/INFORME.md). Desenfoque de
+  foco, LUT a dos tonos del canal, resplandor y desenfoque de zoom funcionan sin GPU (WebGL2); pasar
+  página necesita WebGPU (sin probar en la laptop). El resplandor es el más caro.
+
 ## Qué sigue
 
 Ver el roadmap. En corto: Gerson revisa la tanda 1 (fase `t1-revision`); después la tanda 2
