@@ -12,7 +12,7 @@ Actualizado: **2026-11-05**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **20** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **21** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -52,6 +52,7 @@ gantt
   06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) :done, t2pixi, 2026-11-04, 1d
   09 Puno de noche la ciudad se enciende (primera muestra con el skill v1) :done, t2puno, 2026-11-05, 1d
   10 Inkscape por MCP balsa de totora dibujada por MCP y animada en Remotion :done, t2inkscape, 2026-11-07, 1d
+  11 Título animado sin After Effects (Inkscape por MCP + Remotion) :done, t2titulo, 2026-11-07, 1d
   07 QGIS el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar (propuesta) :t2qgis, 2026-11-11, 4d
   08 Blender un objeto de época con material de grabado, montado en Remotion (propuesta) :t2blender, 2026-11-16, 5d
   04b Libro 3D con tinta sombreado toon y contornos (propuesta) :t2toon, 2026-11-09, 2d
@@ -198,6 +199,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 10.1 s en contenedor · tokens ¿?
   - Nota: Pedida por Gerson tras la investigación de MCP. Dibujo por MCP 3,7 s (21 llamadas). Borrador sin aprobar: balsa y boga genéricas, sin fuente. En la laptop de Gerson, sin probar.
   - Evidencia: [10-balsa-inkscape/INFORME.md](historia/laboratorio/muestras/10-balsa-inkscape/INFORME.md) · [10-balsa-inkscape/final-caliente.json](historia/laboratorio/resultados/10-balsa-inkscape/final-caliente.json) · [10-balsa-inkscape/vista-mcp.jpg](historia/laboratorio/resultados/10-balsa-inkscape/vista-mcp.jpg) · [docs/HERRAMIENTAS.md](docs/HERRAMIENTAS.md)
+- [x] **11 Título animado sin After Effects (Inkscape por MCP + Remotion)** `t2-titulo` — ✅ hecho
+  - Entregable: Título del 0·1 dibujado letra por letra (trim paths), tinta, ficha y subrayado del corrector, con sonido; informe
+  - Depende de: `t2-inkscape`
+  - Prevista: — · Real: 2026-11-07
+  - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 10.5 s en contenedor · tokens ¿?
+  - Nota: Pedida por Gerson como prueba frente a comprar After Effects. Borrador sin aprobar. Falta lo que AE sí tiene: una línea de tiempo para ajustar a mano.
+  - Evidencia: [11-titulo-inkscape/INFORME.md](historia/laboratorio/muestras/11-titulo-inkscape/INFORME.md) · [11-titulo-inkscape/final-caliente.json](historia/laboratorio/resultados/11-titulo-inkscape/final-caliente.json) · [11-titulo-inkscape/hoja.jpg](historia/laboratorio/resultados/11-titulo-inkscape/hoja.jpg)
 - [ ] **07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar** `t2-qgis` — 💡 propuesto
   - Entregable: Datos con licencia (p. ej. Natural Earth, dominio público) + clip de 5 s con el Titicaca
   - Depende de: `t1-revision`

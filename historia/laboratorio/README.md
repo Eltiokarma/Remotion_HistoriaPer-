@@ -115,6 +115,10 @@ lo de la primera tanda; `pendientes/` los recortes de lo que falta.
   El dibujo lo hace Inkscape por MCP (21 llamadas, 3,7 s: capas, nieve por intersección, casco por
   unión, recortes); Remotion anima el SVG por id, con reflejo, anillos y sonido. 10,1 s en caliente.
 
+- **11 · Título animado (Inkscape por MCP + Remotion)**, [informe](muestras/11-titulo-inkscape/INFORME.md).
+  El «trim paths» de After Effects sin After Effects: Inkscape compone con las fuentes del canal y pasa
+  el texto a trazos; Remotion dibuja cada letra, la llena de tinta y el corrector subraya. 10,5 s.
+
 ## Qué sigue
 
 Ver el roadmap. En corto: Gerson revisa la tanda 1 (fase `t1-revision`); después la tanda 2

@@ -565,6 +565,34 @@
       "nota": "Pedida por Gerson tras la investigación de MCP. Dibujo por MCP 3,7 s (21 llamadas). Borrador sin aprobar: balsa y boga genéricas, sin fuente. En la laptop de Gerson, sin probar."
     },
     {
+      "id": "t2-titulo",
+      "fase": "f2",
+      "titulo": "11 Título animado sin After Effects (Inkscape por MCP + Remotion)",
+      "entregable": "Título del 0·1 dibujado letra por letra (trim paths), tinta, ficha y subrayado del corrector, con sonido; informe",
+      "estado": "hecho",
+      "depende_de": [
+        "t2-inkscape"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-07",
+        "fin": "2026-11-07"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/laboratorio/muestras/11-titulo-inkscape/INFORME.md",
+        "historia/laboratorio/resultados/11-titulo-inkscape/final-caliente.json",
+        "historia/laboratorio/resultados/11-titulo-inkscape/hoja.jpg"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "2026-11-07 (tiempo de sesión no registrado)",
+        "render_s": 10.5,
+        "maquina": "contenedor"
+      },
+      "nota": "Pedida por Gerson como prueba frente a comprar After Effects. Borrador sin aprobar. Falta lo que AE sí tiene: una línea de tiempo para ajustar a mano."
+    },
+    {
       "id": "t2-qgis",
       "fase": "f2",
       "titulo": "07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar",
