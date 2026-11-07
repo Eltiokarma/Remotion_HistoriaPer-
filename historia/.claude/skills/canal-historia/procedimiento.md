@@ -100,3 +100,10 @@ Actualizar la tarea en `roadmap/roadmap.json` (estado, fecha real, evidencia, ti
 ```bash
 node roadmap/generar.mjs && node roadmap/generar.mjs --comprobar
 ```
+
+## Ajustar a mano (la línea de tiempo)
+
+Si Gerson quiere mover tiempos o posiciones sin tocar código: escribir la pieza en el formato editable
+del Studio (`Interactive.*` con nombre, claves `interpolate(frame, …)` en línea, curvas = pesos del
+canal en números). Modelo: `laboratorio/muestras/12-titulo-editable/`. El Studio escribe el cambio en
+el archivo; después, `npm run reglas` y `npm run typecheck`.

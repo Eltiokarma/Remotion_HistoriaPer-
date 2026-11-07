@@ -593,6 +593,35 @@
       "nota": "Pedida por Gerson como prueba frente a comprar After Effects. Borrador sin aprobar. Falta lo que AE sí tiene: una línea de tiempo para ajustar a mano."
     },
     {
+      "id": "t2-studio",
+      "fase": "f2",
+      "titulo": "12 Edición visual del Studio: ajustar tiempos y posiciones sin tocar código",
+      "entregable": "Pieza editable en Remotion Studio; ediciones probadas que se escriben en el código; regla de curvas = pesos; informe con alternativas",
+      "estado": "hecho",
+      "depende_de": [
+        "t2-titulo"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-07",
+        "fin": "2026-11-07"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/laboratorio/muestras/12-titulo-editable/INFORME.md",
+        "historia/laboratorio/resultados/12-titulo-editable/edicion-1-clave.diff",
+        "historia/laboratorio/resultados/12-titulo-editable/edicion-2-lienzo.diff",
+        "historia/scripts/reglas.ts"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "2026-11-07 (tiempo de sesión no registrado)",
+        "render_s": 11.7,
+        "maquina": "contenedor"
+      },
+      "nota": "Gerson pidió investigar un «After Effects propio». Falta su decisión: en episodios, ¿editar en el Studio solo tiempos y posiciones? (CLAUDE.md §15)."
+    },
+    {
       "id": "t2-qgis",
       "fase": "f2",
       "titulo": "07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar",

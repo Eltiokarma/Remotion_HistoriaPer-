@@ -439,11 +439,12 @@ manda este archivo.** Choques conocidos:
 | El skill dice | Aquí se hace | Por qué |
 |---|---|---|
 | `Easing.bezier()` o `Easing.spring()` directo en cada `interpolate()` | Pesos de `direction/easings.ts` con `tramo(t, desde, dura, peso)`; `spring()` con `config` explícito solo para lo físico (§4, §11) | Cada movimiento declara su peso; si cada componente inventa su curva, el video vuelve a sonar a plantilla |
-| `interpolate()` en línea y `<Interactive.*>` para editar en el Studio | Los datos vienen de `escenas.json` por props (§11) | El contenido de un video no vive en un componente |
+| `interpolate()` en línea y `<Interactive.*>` para editar en el Studio | Los datos vienen de `escenas.json` por props (§11); para piezas editables en el Studio, ver la fila de `<Interactive.*>` más abajo | El contenido de un video no vive en un componente |
 | Imágenes con `<CanvasImage>` | Rutas de `estilo/recursos.ts` y `<Img>`; texturas por `PrecargaTexturas` | `<Img>` es lo que Remotion espera antes de capturar; la precarga del canal depende de eso |
 | Google Fonts | Fuentes locales de `public/compartido/fuentes` (`estilo/fuentes.ts`) | El render no depende de internet y sale igual en cualquier máquina |
 | `remotion-create`: crear un proyecto o una composición nueva | `npm run nuevo-video` para un video; escenas nuevas en `src/escenas/` (§11); pruebas en `laboratorio/` | El repo ya tiene su estructura |
 | «No renderizar salvo pedido explícito; abrir el Studio» | En episodios, igual. En el laboratorio, medir y renderizar **es** la tarea | Las muestras se juzgan por el clip y su registro |
+| `<Interactive.*>` con claves en línea (`Easing.bezier` numérico) para editar en el Studio | Se permite en piezas editables, solo con curvas que sean exactamente un peso (`npm run reglas` lo comprueba). Los datos de un episodio siguen en `escenas.json`: **a decidir por Gerson** si en los episodios se editan en el Studio solo tiempos y posiciones (muestra 12) | El Studio escribe las ediciones en el código; los pesos siguen mandando |
 | Versión 4.0.540 de las instrucciones | El proyecto usa Remotion 4.0.539 | No se actualiza Remotion solo porque lo diga un skill; se decide aparte (`remotion-upgrade` solo cuando se pida) |
 
 Útiles sin choque: `remotion-render` (opciones de render), `remotion-maps` (técnicas de mapas;

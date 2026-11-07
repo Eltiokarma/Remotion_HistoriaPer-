@@ -58,6 +58,7 @@ código. Lo que hay, según sus repositorios y documentación (no según pruebas
 | **GIMP / Krita** | Comunitarios | Pintura y retoque | Gratis | Texturas y fondos pintados |
 | **Rive** | Oficial dentro del editor (Early Access) y comunitarios | Animación interactiva `.riv` | Plan de Rive | Poco: es animación interactiva, no video lineal |
 | **Remotion** | El MCP oficial de documentación cerró el 2026-10-26; lo reemplazan los skills (ya instalados) | — | — | Ya cubierto |
+| **Remotion Studio (edición visual)** | No es MCP: el Studio escribe en el código lo que se arrastra en la línea de tiempo o el lienzo | Ya instalado | Gratis | **Verificado** ([muestra 12](../historia/laboratorio/muestras/12-titulo-editable/)): la línea de tiempo a mano que ofrecía After Effects |
 
 **Dónde corren.** Los MCP de programas de escritorio (Blender, Illustrator, After Effects, Inkscape con
 interfaz) corren en la computadora donde está el programa: hace falta Claude Code o Claude Desktop en

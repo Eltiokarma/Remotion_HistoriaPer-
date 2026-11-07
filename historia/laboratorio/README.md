@@ -119,6 +119,10 @@ lo de la primera tanda; `pendientes/` los recortes de lo que falta.
   El «trim paths» de After Effects sin After Effects: Inkscape compone con las fuentes del canal y pasa
   el texto a trazos; Remotion dibuja cada letra, la llena de tinta y el corrector subraya. 10,5 s.
 
+- **12 · Título editable en el Studio**, [informe](muestras/12-titulo-editable/INFORME.md). La línea
+  de tiempo que faltaba frente a After Effects ya está en Remotion: arrastrar una clave o mover una
+  pieza en el lienzo escribe el cambio en el código (probado con Playwright). Curvas: los pesos del canal.
+
 ## Qué sigue
 
 Ver el roadmap. En corto: Gerson revisa la tanda 1 (fase `t1-revision`); después la tanda 2
