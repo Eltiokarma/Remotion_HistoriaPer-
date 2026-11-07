@@ -97,6 +97,28 @@ Archivos por muestra en `resultados/<muestra>/`: `final-frio.json`, `final-calie
 `previa-caliente.json` (con `scripts/medir_tanda.sh`), `revision.json`, `hoja.jpg`; `antes/` guarda
 lo de la primera tanda; `pendientes/` los recortes de lo que falta.
 
+## Tanda 2
+
+- **06 · Tormenta sobre el lago (PixiJS)**, [informe](muestras/06-lluvia-pixi/INFORME.md). La versión 1
+  (tinta, tres grises) la rechazó Gerson por plana; la versión 2 toma de sus referencias la escala de
+  color de lejos a cerca, la bruma al pie de cada capa, la luz con dirección, el suelo que se aleja,
+  el primer plano que enmarca y el agua que refleja. En el contenedor (sin GPU) tarda ~7× lo que la
+  03 (p5): cuesta pintar píxeles a pantalla completa en un solo proceso GPU por software, no la
+  cantidad de elementos.
+
+- **09 · Puno de noche (PixiJS, con sonido)**, [informe](muestras/09-puno-noche/INFORME.md). Primera
+  muestra hecha con el skill versión 1: pase de imagen, coreografía por papeles (la plaza con la
+  campana, la ola de luces, el remate en la isla). Borrador: no es el Puno real. 59,9 s en caliente:
+  sin filtros a pantalla completa, 3500 luces cuestan poco.
+
+- **10 · Balsa de totora (Inkscape por MCP + Remotion)**, [informe](muestras/10-balsa-inkscape/INFORME.md).
+  El dibujo lo hace Inkscape por MCP (21 llamadas, 3,7 s: capas, nieve por intersección, casco por
+  unión, recortes); Remotion anima el SVG por id, con reflejo, anillos y sonido. 10,1 s en caliente.
+
+- **11 · Título animado (Inkscape por MCP + Remotion)**, [informe](muestras/11-titulo-inkscape/INFORME.md).
+  El «trim paths» de After Effects sin After Effects: Inkscape compone con las fuentes del canal y pasa
+  el texto a trazos; Remotion dibuja cada letra, la llena de tinta y el corrector subraya. 10,5 s.
+
 ## Qué sigue
 
 Ver el roadmap. En corto: Gerson revisa la tanda 1 (fase `t1-revision`); después la tanda 2

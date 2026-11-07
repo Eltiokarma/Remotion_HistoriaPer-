@@ -6,11 +6,15 @@ Mide un render y deja el registro en laboratorio/resultados/<muestra>/<etapa>.js
 
 Qué mide (solo lo que se puede medir; lo demás queda en null):
 - segundos de pared del comando completo (incluye el empaquetado de Remotion o el arranque de Manim);
-- CPU de usuario + sistema de los procesos hijos terminados (getrusage);
+- CPU de usuario + sistema de todo el árbol de procesos (Chrome incluido), leída de /proc/<pid>/stat
+  en cada muestreo; además, la de getrusage (solo hijos esperados: no cuenta a Chrome);
 - pico de memoria: suma del RSS de todo el árbol de procesos, muestreada cada 0,25 s
   (aproximada: un pico más corto que el muestreo se puede perder);
 - la máquina donde corrió de verdad (CPU, núcleos, RAM, GPU detectada) y las versiones;
 - el archivo que salió (ffprobe: duración, cuadros contados, tamaño, fps, códec).
+
+Si el registro ya existe, no lo pisa: escribe <etapa>-<fecha>.json y lo avisa. Para reemplazarlo
+a propósito (medir_tanda.sh, ci.sh): LAB_SOBRESCRIBIR=1.
 
 No mide tiempo humano ni tokens: eso se anota a mano en el informe de la muestra, o queda como
 «desconocido».
@@ -76,7 +80,7 @@ def versiones() -> dict:
         v["python_manim"] = leer([manim_py, "-c", "import sys; print(sys.version.split()[0])"])
         v["manim"] = leer([manim_py, "-c", "import manim; print(manim.__version__)"])
     pkg = LAB.parent / "node_modules"
-    for nombre in ("remotion", "three", "@remotion/three", "@react-three/fiber", "@react-three/drei", "roughjs", "p5"):
+    for nombre in ("remotion", "three", "@remotion/three", "@react-three/fiber", "@react-three/drei", "roughjs", "p5", "pixi.js"):
         f = pkg / nombre / "package.json"
         if f.exists():
             v[nombre] = json.loads(f.read_text())["version"]
@@ -92,7 +96,10 @@ def categoria(comm: str) -> str:
     return "otros"
 
 
-def muestra_arbol(pid: int) -> dict:
+TICKS = os.sysconf("SC_CLK_TCK")
+
+
+def muestra_arbol(pid: int, cpu: dict | None = None) -> dict:
     """RSS y PSS (kB) de todo el árbol de procesos, total y por tipo de proceso.
 
     RSS cuenta entera la memoria compartida en cada proceso (Chrome comparte mucho entre los suyos):
@@ -123,6 +130,15 @@ def muestra_arbol(pid: int) -> dict:
         except (OSError, ValueError):
             continue
         cat = categoria(comm)
+        if cpu is not None:
+            # CPU acumulada de este proceso (utime + stime, campos 14 y 15 de /proc/<pid>/stat). Se guarda
+            # la última lectura de cada proceso, identificado por pid y momento de arranque (campo 22) para
+            # no confundir un pid reusado. Lo que hace un proceso después de la última lectura se pierde.
+            try:
+                campos = open(f"/proc/{p}/stat").read().rsplit(")", 1)[1].split()
+                cpu[(p, campos[19])] = (cat, (int(campos[11]) + int(campos[12])) / TICKS)
+            except (OSError, ValueError, IndexError):
+                pass
         t = total["por_tipo"].setdefault(cat, {"rss": 0, "pss": 0, "procesos": 0})
         for k, v in (("rss", rss), ("pss", pss), ("procesos", 1)):
             t[k] += v
@@ -173,11 +189,12 @@ def main() -> int:
     pico_rss_detalle: dict = {}
     pico_pss_detalle: dict = {}
     corriendo = True
+    cpu: dict = {}
 
     def muestrear():
         nonlocal pico_rss_detalle, pico_pss_detalle
         while corriendo:
-            m = muestra_arbol(proc.pid)
+            m = muestra_arbol(proc.pid, cpu)
             if m["rss"] > pico["rss"]:
                 pico["rss"], pico_rss_detalle = m["rss"], m
             if m["pss"] > pico["pss"]:
@@ -208,7 +225,10 @@ def main() -> int:
         "comando": " ".join(cmd),
         "codigo_salida": codigo,
         "segundos_pared": round(pared, 1),
-        "segundos_cpu": round(uso.ru_utime + uso.ru_stime, 1),
+        "segundos_cpu": round(sum(s for _, s in cpu.values()), 1),
+        "segundos_cpu_por_tipo": {c: round(sum(s for cc, s in cpu.values() if cc == c), 1) for c in sorted({c for c, _ in cpu.values()})},
+        "segundos_cpu_rusage": round(uso.ru_utime + uso.ru_stime, 1),
+        "cpu_metodo": "segundos_cpu: suma de utime+stime de cada proceso del árbol (Chrome incluido), última lectura de /proc/<pid>/stat cada 0,25 s; lo que hace un proceso en su último cuarto de segundo se pierde. segundos_cpu_rusage: getrusage(RUSAGE_CHILDREN), solo hijos esperados; no cuenta a Chrome (registros anteriores al 2026-11-05 solo tienen esta)." ,
         "condicion": os.environ.get("LAB_CONDICION", "sin indicar"),
         "pico_pss_mb": mb(pico["pss"]),
         "pico_rss_mb": mb(pico["rss"]),
@@ -222,6 +242,10 @@ def main() -> int:
     }
     destino = LAB / "resultados" / muestra / f"{etapa}.json"
     destino.parent.mkdir(parents=True, exist_ok=True)
+    if destino.exists() and os.environ.get("LAB_SOBRESCRIBIR") != "1":
+        # no pisar un registro anterior (pasó al medir la 03 como referencia de la 06)
+        destino = destino.with_name(f"{etapa}-{inicio.strftime('%Y%m%dT%H%M%SZ')}.json")
+        print(f"[medir] ya había un registro de {muestra}/{etapa}: este va aparte (LAB_SOBRESCRIBIR=1 para reemplazarlo)")
     destino.write_text(json.dumps(registro, ensure_ascii=False, indent=2) + "\n")
     print(f"\n[medir] {muestra}/{etapa} ({registro['condicion']}): {registro['segundos_pared']} s, pico PSS {registro['pico_pss_mb']} MB (RSS {registro['pico_rss_mb']} MB) → {destino.relative_to(LAB)}")
     return codigo

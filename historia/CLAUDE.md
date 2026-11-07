@@ -450,6 +450,13 @@ manda este archivo.** Choques conocidos:
 con datos con licencia, §1.1), `remotion-captions` (subtítulos, §10), `remotion-docs` (consultar la
 documentación vigente).
 
+**Skills de terceros evaluados** (2026-11-05, a pedido de Gerson): los de Emil Kowalski
+(`emilkowalski/skills`, MIT) y Impeccable (`pbakaus/impeccable`, Apache 2.0) son para interfaces web.
+No se instalan tal cual porque empujarían a lo que aquí está prohibido (transiciones CSS, curvas
+sueltas, «nunca ease-in», menos de 300 ms). Lo que vale para video (decidir si algo se mueve, papeles
+y coreografía, lo secundario atado al golpe) está adaptado en
+`historia/.claude/skills/canal-historia/movimiento.md`, con la tabla de choques.
+
 El skill propio del canal está en `historia/.claude/skills/canal-historia/` (no lo instala ni lo
 actualiza la CLI de Remotion; comprobar que siga después de un `update`).
 
