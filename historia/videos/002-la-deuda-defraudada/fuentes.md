@@ -42,6 +42,10 @@ La apertura del PDF devolvió un visor sin texto; se consultó el pasaje indexad
 
 [Extracto editorial de La deuda defraudada](https://fondoeditorial.up.edu.pe/wp-content/uploads/2020/08/La_deuda_defraudada_extracto.pdf). El extracto indexado identifica el libro de 1987 y su origen en la tesis de 1980; la apertura completa respondió con acceso denegado. No se atribuye a este enlace una lectura completa del libro ni se usa como respaldo del detalle de Novoa.
 
+## Contexto complementario para el storyboard
+
+Decreto de Huancayo, 3 de diciembre de 1854, firmado por Ramón Castilla y Manuel Toribio Ureta. [Reproducción en el archivo legislativo del Congreso](https://www.leyes.congreso.gob.pe/Documentos/LeyesXIX/1854009.pdf). Fuente primaria externa al pasaje de Novoa: permite situar la abolición y distinguir los billetes previstos para compensar a propietarios de los vales de consolidación, que la norma separa expresamente. Se consultó la transcripción indexada; el PDF abierto es una reproducción de una página sin texto extraíble. No prueba ninguna negociación ni pago del caso Novoa. Su uso en pantalla es opcional y requiere revisar el contenido mostrado con la reproducción.
+
 ## Cotejos y límites que afectan al guion
 
 1. **Fechas de cinco a veinticuatro millones.** La ficha de Q, p. 170, dice 1851–1852. C menciona casi veinticuatro millones reconocidos para 1854. B reproduce cifras de 4.879.607,7 y 23.211.400 y el texto extraído contiene un año 1858 asociado a Echenique, incompatible con su gobierno: no se adopta ni se corrige por conjetura. El borrador atribuye la primera serie expresamente a Q. Antes de cerrar fechas en pantalla, cotejar la p. 170 y sus referencias en el ejemplar del proyecto. No sumar los diecinueve millones reconocidos en una administración a otro total sin establecer bases.

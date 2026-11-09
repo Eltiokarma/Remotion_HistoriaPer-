@@ -6,6 +6,8 @@ Pregunta que organiza el episodio: cómo se aprovechó el pago de deudas del Est
 
 La secuencia parte del contexto, presenta un procedimiento que tenía una finalidad pública, sigue su manipulación y vuelve a los documentos para enlazar con el episodio 003, «¿Se puede medir la corrupción?». Las fuentes y cautelas están en [fuentes.md](fuentes.md).
 
+Las ideas de este documento se desarrollan mediante voz, imagen, texto y sonido. No todo su contenido se convierte en locución. El [storyboard](storyboard.md) distribuye esa información en cinco escenas largas con acciones y cambios de encuadre internos. Las escenas dan tiempo para leer, comparar y relacionar lo que aparece; cada cambio visual responde al avance de la explicación.
+
 ## 0. El país en el que ocurre
 
 Estamos en el Perú, hacia 1850. Han pasado casi treinta años desde la proclamación de la independencia. Gobierna Ramón Castilla, y el Estado todavía arrastra obligaciones de las guerras y de los gobiernos anteriores.
@@ -76,6 +78,10 @@ Dejamos las cantidades separadas y visibles. Una cosa es el valor reconocido y o
 
 Fuente: Q, p. 171.
 
+Alcance del caso: seguir el episodio tal como lo describe Quiroz. La hacienda, las personas incluidas en el reclamo y los treinta y dos años reclamados pueden introducirse con una breve frase y una ficha legible, sin abrir una historia paralela. Nombres completos, cargos y cifras secundarias pueden quedar en pantalla. Las cantidades centrales requieren tiempo para compararse y mantener visible «en vales» y «probablemente».
+
+Frase opcional de transición, propuesta de narración y no cita: «Este expediente da para un video entero. Aquí vamos a seguir cómo consiguió su aprobación». Cualquier contexto complementario llevará su propia fuente; no se atribuirá automáticamente al libro. La decisión de ampliarlo se toma por lo que ayuda a comprender el caso.
+
 ## 6. Del expediente al conjunto de la deuda
 
 El caso nos permite volver a la escala general. Quiroz señala que la deuda consolidada pasó de unos cinco millones de pesos en 1851 a unos veinticuatro millones en 1852.
@@ -140,6 +146,9 @@ Los regresos deben recuperar solo la información necesaria para el paso nuevo. 
 ## Decisiones para la siguiente revisión
 
 - Desarrollar la locución por párrafos después de revisar estas ideas; duración todavía abierta.
+- Trabajar guion y storyboard juntos: decidir qué entiende el espectador por la imagen antes de añadir una explicación a la voz. La locución no debe leer cada fecha, cargo ni cifra secundaria.
+- Un dato en pantalla necesita una entrada clara, tamaño legible y tiempo suficiente. Las relaciones decisivas y los cambios de sentido no se resuelven con una nota pequeña.
+- Sostener escenas largas mediante acciones internas, acercamientos, pausas y regresos. Evitar que cada idea o dato nuevo obligue a cambiar de escena.
 - Mantener el contexto al comienzo, como indicó Gerson. Introducir la expectativa del recorrido mientras se sitúa la época.
 - No convertir cada bloque en una pregunta. Usar ejemplos concretos al presentar conceptos y reservar las preguntas para puntos donde ayuden.
 - Presentar nombre, cargo y función antes de exigir que el espectador recuerde a alguien.
