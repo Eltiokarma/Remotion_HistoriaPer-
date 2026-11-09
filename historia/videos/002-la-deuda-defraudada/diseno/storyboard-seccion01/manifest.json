@@ -8,18 +8,19 @@
   "archivos": [
     {
       "archivo": "storyboard-02-seccion01.vectorcraft",
-      "bytes": 225568,
-      "sha256": "de4ee63f4b5f15211c484d085ba420705a55947693744e747452048c435b6332"
+      "bytes": 212075,
+      "sha256": "142548da26123bcb33323d3a70fa37795966128b747f109be7d36af689e8d312"
     },
     {
       "archivo": "storyboard-02-seccion01.svg",
-      "bytes": 2609680,
-      "sha256": "6c34e0c575c4b4504242b9b412f5fa1220fc1eb0664bd68addf759e399949a78"
+      "bytes": 2654050,
+      "sha256": "52f0864289e7d9c9e361a247931429991f749860d41529264b0904c93784ad81"
     },
     {
       "archivo": "storyboard-02-seccion01.png",
-      "bytes": 678812,
-      "sha256": "d20c9484103f5e4a4a094eba0c2b077242ee9a21a75f4444487aac7f6a5e9f8c"
+      "bytes": 677828,
+      "sha256": "168d7f1fb8b8b7a2b0d189a66be0e556526d248da2a04349a654164c38fe095e"
     }
-  ]
+  ],
+  "revision": "Viñeta 07: origen, producto y destino comercial; sustituye el barco por un esquema"
 }

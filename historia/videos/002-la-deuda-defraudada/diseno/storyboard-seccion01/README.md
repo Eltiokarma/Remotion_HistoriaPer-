@@ -17,3 +17,6 @@ La costa del mapa deriva de los datos geográficos Natural Earth 110m disponible
 Contenido histórico: [fuentes del episodio](../../fuentes.md). La frase sobre presos y personas esclavizadas conserva la base documentada para las islas; las figuras no identifican a individuos ni asignan una condición jurídica a una persona concreta. Las fuentes no se sustituyen por los dibujos.
 
 Antes de animar, revisar continuidad de mar, carga, barco, documento y foco. No pegar la lámina entera encima de una escena: separar sus piezas y aplicar los movimientos originales que correspondan. El paso final abre la explicación del reconocimiento de la deuda en la sección 2, no el video siguiente. El episodio completo conserva su puente al episodio 003.
+
+Revisión de la viñeta 07: origen (islas de Chincha), producto (guano) y destino (mercado británico) mediante iconos y una flecha. La silueta de Gran Bretaña procede de Natural Earth 110m. Es un esquema comercial, sin representar un itinerario de navegación. Se conserva la continuidad con la casa comercial de la viñeta 08.
+
