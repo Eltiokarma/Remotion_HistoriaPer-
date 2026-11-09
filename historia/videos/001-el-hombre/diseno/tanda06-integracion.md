@@ -1,5 +1,7 @@
 # Tanda 6 · Integración VectorCraft
 
+> Revisión posterior: esta integración fue parcial y no preservó todos los efectos del montaje original. Antes de continuar, aplicar los [aprendizajes de producción](../../../APRENDIZAJES_PRODUCCION.md): inventario de versiones aprobadas, conservación de animaciones, comparación audiovisual y vistas previas con presupuesto de tamaño. Las comprobaciones técnicas descritas abajo no equivalen a aprobación visual del episodio completo.
+
 9 de noviembre de 2026. Alcance: mapa de Lima, viaje a Nueva York con París como alternativa, explicación de regresión y serie del costo de la corrupción. Los SVG aprobados se conservan en `public/videos/001-el-hombre/vectorcraft/`. Las tandas anteriores, excepto la adaptación previa de la pizarra, siguen pendientes de integración.
 
 Las capas se extraen con `scripts/vectorcraft-capas.ps1`. El componente VectorCraft las carga antes de capturar el cuadro y anima con los beats resueltos de Remotion, sin relojes ni transiciones CSS. Los textos exportados están convertidos a contornos. Cambiar el orden de objetos en un SVG exige revisar la correspondencia de la animación. Si cambian las cifras del guion, hay que actualizar y reexportar la lámina de costo.
