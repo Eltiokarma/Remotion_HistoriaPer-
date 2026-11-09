@@ -20,3 +20,10 @@ Antes de animar, revisar continuidad de mar, carga, barco, documento y foco. No 
 
 Revisión de la viñeta 07: origen (islas de Chincha), producto (guano) y destino (mercado británico) mediante iconos y una flecha. La silueta de Gran Bretaña procede de Natural Earth 110m. Es un esquema comercial, sin representar un itinerario de navegación. Se conserva la continuidad con la casa comercial de la viñeta 08.
 
+## Revisión del director pendiente
+
+9 de noviembre de 2026. El storyboard necesita más detalle, especialmente la viñeta 07 de Chincha al mercado británico. La versión de iconos y flecha no convence: tiene muy poco detalle para funcionar como storyboard. No está aprobada.
+
+En la próxima revisión hay que desarrollar con más detalle lo que ocurre en escena, los encuadres, las acciones y las transiciones. La intención de hacerlo esquemático no debe reducirlo a un diagrama mínimo. Este criterio también debe tenerse presente al revisar el resto de la sección.
+
+El director indicó dejar la mejora para la siguiente sesión. Se conservan los dibujos actuales como borrador y referencia; esta anotación no supone un nuevo rediseño.
