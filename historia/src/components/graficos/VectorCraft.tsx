@@ -37,6 +37,13 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
   const cx = mix(960, Math.max(800, Math.min(1120, punta.x)), clamp(zoom / 0.3));
   const cy = mix(540, Math.max(480, Math.min(600, punta.y)), clamp(zoom / 0.3));
   const namespaced = (html: string) => html.replace(/\bid="([^"]+)"/g, `id="${uid}-$1"`).replace(/url\(#([^)]+)\)/g, `url(#${uid}-$1)`);
+  // Una década tiene marca, punto, valor y, a veces, año. El número de piezas
+  // varía: agrupar por la marca evita adelantar una cifra al punto anterior.
+  let decada = -1;
+  const decadas = data.layers.find(l => l.name === 'Datos_originales')?.parts.map((part, i) => {
+    if (i > 0 && /^<line\b/.test(part)) decada++;
+    return decada;
+  }) ?? [];
   const opacity = (name: string, i: number) => {
     if (name === 'Pizarra_verde') return 1;
     if (modo === 'lima') {
@@ -64,7 +71,7 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
       }
     }
     if (modo === 'costo') {
-      if (name === 'Datos_originales' && i > 0) return tramo(t, T('serie') + 1.3 + Math.floor((i - 1) / 3.6) * (3.4 / 18), 0.22, 'natural');
+      if (name === 'Datos_originales' && i > 0) return tramo(t, T('serie') + 1.3 + decadas[i] * (3.4 / 18), 0.22, 'natural');
       if (name === 'Ejes_y_banda' && i < 2) return k('serie', 0.7, 4.7);
       if (name === 'Lectura' && (i === 3 || i === 4)) return k('serie', 0.7, 4.7);
       return k('serie', 0.6);
@@ -95,3 +102,4 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
     </g> : null}
   </svg>;
 };
+
