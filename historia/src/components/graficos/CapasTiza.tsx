@@ -17,6 +17,8 @@ type Props = {
   brillo: [number, number, number];
   /** 0–1: todo se apaga (para escribir encima). */
   apaga?: number;
+  acentoMedia?: string;
+  rotuloMediaLineas?: string[];
 };
 
 const BANDAS = [[190, 370], [400, 590], [620, 790]] as const;
@@ -29,7 +31,7 @@ const TIERRA = ['#dcb574', '#c4835e', '#9e8a73'] as const;
  * (nerviosa arriba, larga al medio, casi plana abajo) y su rótulo escrito a mano. Brilla la que se
  * está nombrando (DIRECCION_DE_VIDEO §2.2).
  */
-export const CapasTiza: React.FC<Props> = ({ id, t, rotulos, nombres, marco, dibujo, brillo, apaga = 0 }) => {
+export const CapasTiza: React.FC<Props> = ({ id, t, rotulos, nombres, marco, dibujo, brillo, apaga = 0, acentoMedia = TIZA, rotuloMediaLineas }) => {
   const ola = (i: number) => {
     let d = '';
     for (let x = X0; x <= X1; x += 4) {
@@ -84,6 +86,7 @@ export const CapasTiza: React.FC<Props> = ({ id, t, rotulos, nombres, marco, dib
     return { n, nombre: nombres[(n * 7) % nombres.length], x: r.rango(X0 + 40, X1 - 300), y: r.rango(BANDAS[0][0] + 40, BANDAS[0][0] + 70), edad: t - n * PASO };
   }).filter((v) => v.edad >= 0 && v.edad < VIDA);
   const rotulo = [rotulos.rapida, rotulos.media, rotulos.lenta];
+  const tinta = (i: number) => i === 1 ? acentoMedia : TIZA;
   const tempo = ['días · años', 'décadas', 'siglos'];
   const capa = (i: number) => (0.32 + 0.68 * clamp(brillo[i])) * (1 - 0.75 * apaga);
   return (
@@ -119,10 +122,10 @@ export const CapasTiza: React.FC<Props> = ({ id, t, rotulos, nombres, marco, dib
         <g key={i} opacity={dibujo[i] > 0 ? capa(i) : 0}>
           {/* el foco: un halo de tiza detrás de la ola que se está nombrando */}
           {brillo[i] > 0.05 ? (
-            <path d={i === 2 ? curva(0) : ola(i)} fill="none" stroke={TIZA} strokeWidth={14} opacity={0.18 * brillo[i]} style={{ filter: 'blur(10px)' }} clipPath={`url(#${id}-dib${i})`} />
+            <path d={i === 2 ? curva(0) : ola(i)} fill="none" stroke={tinta(i)} strokeWidth={14} opacity={0.18 * brillo[i]} style={{ filter: 'blur(10px)' }} clipPath={`url(#${id}-dib${i})`} />
           ) : null}
           <g clipPath={`url(#${id}-dib${i})`} filter={`url(#${id}-tiza)`}>
-            {i < 2 ? <path d={ola(i)} fill="none" stroke={TIZA} strokeWidth={i === 0 ? 3 : 4} strokeLinejoin="round" /> : null}
+            {i < 2 ? <path d={ola(i)} fill="none" stroke={tinta(i)} strokeWidth={i === 0 ? 3 : 4} strokeLinejoin="round" /> : null}
           </g>
           {i === 2 ? (
             <g clipPath={`url(#${id}-dib2)`}>
@@ -144,10 +147,14 @@ export const CapasTiza: React.FC<Props> = ({ id, t, rotulos, nombres, marco, dib
               </g>
             </g>
           ) : null}
-          <TextoTiza id={`${id}-rot${i}`} texto={rotulo[i]} x={110} y={BANDAS[i][0] + 62} k={clamp(dibujo[i] * 1.6)} size={rotulo[i].length > 14 ? 34 : 42}
-            fontFamily={fuente.imprentaItalica} brillo={brillo[i]} />
-          <TextoTiza id={`${id}-tem${i}`} texto={tempo[i]} x={112} y={BANDAS[i][0] + 106} k={clamp(dibujo[i] * 1.6 - 0.4)} size={24}
-            fontFamily={fuente.imprentaItalica} opacidad={0.7} />
+          {(i === 1 && rotuloMediaLineas?.length ? rotuloMediaLineas : [rotulo[i]]).map((linea, n) => (
+            <TextoTiza key={n} id={id + '-rot' + i + '-' + n} texto={linea} x={110} y={BANDAS[i][0] + 62 + n * 44}
+              k={clamp(dibujo[i] * 1.6 - n * 0.2)} size={linea.length > 14 ? 34 : 42}
+              color={tinta(i)} fontFamily={fuente.imprentaItalica} brillo={brillo[i]} />
+          ))}
+          <TextoTiza id={id + '-tem' + i} texto={tempo[i]} x={112}
+            y={BANDAS[i][0] + 106 + (i === 1 ? Math.max(0, (rotuloMediaLineas?.length ?? 1) - 1) * 44 : 0)}
+            k={clamp(dibujo[i] * 1.6 - 0.4)} size={24} fontFamily={fuente.imprentaItalica} opacidad={0.7} />
         </g>
       ))}
       {/* arriba, los nombres: se escriben y se borran (cambian todo el tiempo) */}

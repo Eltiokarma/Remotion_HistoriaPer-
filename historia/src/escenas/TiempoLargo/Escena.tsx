@@ -213,7 +213,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
               </svg>
               <CapasTiza id={`${escena.id}-tiza`} t={t} rotulos={props.capas} nombres={props.gobiernos} marco={tramo(t, tCapas, 1, 'natural')}
                 dibujo={[tramo(t, tCapa[0], 2.2, 'natural'), tramo(t, tCapa[1], 2.2, 'natural'), tramo(t, tCapa[2], 2.2, 'natural')]}
-                brillo={brillo} apaga={Math.max(palabra, remate)} />
+                acentoMedia={props.acento_media} rotuloMediaLineas={props.rotulo_media_lineas} brillo={brillo} apaga={Math.max(palabra, remate)} />
               <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
                 {props.palabra ? (
                   <TextoTiza id={`${escena.id}-palabra`} texto={props.palabra} x={960} y={560} anchor="middle" k={tramo(t, tPalabra, 1.6, 'natural')}
@@ -229,7 +229,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                   </>
                 ) : null}
                 {props.nota ? (
-                  <TextoTiza id={`${escena.id}-nota`} texto={props.nota} x={430} y={890} k={tramo(t, tRealce + 0.3, 2.6, 'natural')} size={46}
+                  <TextoTiza id={`${escena.id}-nota`} texto={props.nota} color={props.realce === "media" ? props.acento_media : undefined} x={430} y={890} k={tramo(t, tRealce + 0.3, 2.6, 'natural')} size={46}
                     fontFamily={fuente.imprentaItalica} opacidad={1 - 0.7 * remate} brillo={fin(tRealce, tRemate)} />
                 ) : null}
                 {props.remate ? (() => {

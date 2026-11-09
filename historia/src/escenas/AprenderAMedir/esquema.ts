@@ -9,6 +9,7 @@ const lugar = z.object({ nombre: z.string(), lon: z.number().min(-180).max(180),
  * temas como libros en una repisa, un aula que se llena y una brújula que gira entre dos épocas.
  */
 export const esquema = z.object({
+  vectorcraft: z.object({viaje: z.string(), regresion: z.string(), costo: z.string()}).optional(),
   origen: lugar,
   /** El destino que todos soñaban: la ruta llega a medias, duda y se borra. */
   tentacion: lugar,

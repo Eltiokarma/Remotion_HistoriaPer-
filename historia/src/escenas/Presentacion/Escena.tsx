@@ -1,3 +1,4 @@
+import { VectorCraft } from '../../components/graficos/VectorCraft';
 import { AbsoluteFill, interpolateColors, spring, useCurrentFrame } from 'remotion';
 import type { z } from 'zod';
 import { Papel } from '../../components/atmosfera/Papel';
@@ -52,7 +53,7 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
     <AbsoluteFill style={{ transform: `translateY(${temblor}px)` }}>
       {piscina ? <Piscina paleta={pal} t={t} dx={dx} renglon={renglon} colorAgua={props.agua} /> : <Papel color={pal.papel} envejecido={0.3} />}
       {/* dónde y cuándo: el país en tinta sobre la página y la cámara que se acerca a la ciudad; el agua lo cubre */}
-      {props.lugar && t >= tLugar - 0.1 && renglon > 0.02 ? (
+      {!props.vectorcraft && props.lugar && t >= tLugar - 0.1 && renglon > 0.02 ? (
         <AbsoluteFill style={{ opacity: renglon }}>
           <MapaLugar id={`${escena.id}-lugar`} codigo={props.lugar.codigo} lon={props.lugar.lon} lat={props.lugar.lat} caja={[1440, 630, 340, 370]} acerca={1.8}
             zoom={tramo(t, tLugar + 1.2, 2.4, 'solemne')} aparece={tramo(t, tLugar, 0.8, 'natural')} tinta={pal.fondo} acento={pal.rojo} papel={pal.papel}
@@ -130,6 +131,9 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
       ) : null}
       {props.ficha ? props.ficha.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tFicha + i / 18} fps={fps} volumen={0.28} />)) : null}
 
+      {props.vectorcraft && t >= tLugar && t < (tPiscina ?? tLugar + 6) ? <AbsoluteFill style={{opacity: tramo(t, tLugar, 0.65, 'natural') * (1 - tramo(t, (tPiscina ?? tLugar + 6) - 0.65, 0.65, 'natural'))}}>
+        <VectorCraft videoId={video.id} archivo={props.vectorcraft} modo="lima" t={t} beats={b} notas={props.lugar?.dato ? [props.lugar.dato] : undefined} />
+      </AbsoluteFill> : null}
       {props.sello ? (
         <>
           <div style={{ position: 'absolute', left: 1330, top: 640, transform: `rotate(-12deg) scale(${escalaSello})`, opacity: clamp(escalaSello * 3) * (1 - queda) }}>

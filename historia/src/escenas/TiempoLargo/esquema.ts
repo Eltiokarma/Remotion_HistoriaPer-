@@ -34,6 +34,8 @@ export const esquema = z.object({
   estilo: z.enum(['grabado', 'pizarra']).default('grabado'),
   /** (pizarra) Lo que se escribe con el beat `realce`, bajo las capas. */
   nota: z.string().optional(),
+  acento_media: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
+  rotulo_media_lineas: z.array(z.string().min(1)).min(1).max(2).optional(),
   /** (pizarra) La frase que remata el bloque, escrita grande con el beat `remate`. */
   remate: z.string().optional(),
   /** El texto del volante: los papeles dicen algo (DIRECCION_DE_VIDEO §2.9). Sin esto, renglones. */
