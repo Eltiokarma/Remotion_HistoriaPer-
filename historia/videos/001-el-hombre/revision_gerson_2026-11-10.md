@@ -87,5 +87,8 @@ los enlaces de Suno (`fuentes.md`).
   sola. Ahora todas las frases van a un **nivel común del episodio** (`NIVEL_COMUN` en
   `narracion.py`): escenas entre −15,8 y −16,2 LUFS; de una escena a la siguiente, 0,1–2 dB.
 - **G** estaba en s06 (el guano), pero su parte fuerte va bajo la voz y su acorde final caía encima de
-  la pregunta. Ahora el acorde suena **después** de «¿Adónde fue a parar esa plata?» y queda solo en
-  la cola de s06, alargada de 1,5 a 3,5 s.
+  la pregunta. Ahora el acorde suena ~0,5 s **después** de «¿Adónde fue a parar esa plata?», cuando
+  la voz ya soltó la música, con +8 dB, y queda solo en la cola de s06, alargada de 1,5 a 3,5 s
+  (medido: de −35 a −24 dB).
+- Un control de s06 mostró un pico de +1,5 dBFS: las monedas (con la flecha) sobre la voz y la
+  música. Monedas −2 dB y **limitador final** (−1 dBFS) en `render.yml` y en las muestras.

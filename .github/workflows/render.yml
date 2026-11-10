@@ -62,7 +62,10 @@ jobs:
           mkdir -p out
           inicio=$(date +%s)
           if [ "$CALIDAD" = final ]; then
-            npx remotion render src/index.ts "$comp" "out/$nombre.mp4" --crf=18 --audio-bitrate=320k
+            npx remotion render src/index.ts "$comp" out/sin-limitar.mp4 --crf=18 --audio-bitrate=320k
+            # limitador final de la mezcla: nada pasa de −1 dBFS (la imagen se copia tal cual)
+            ffmpeg -y -v error -i out/sin-limitar.mp4 -c:v copy -af "alimiter=limit=0.891:attack=5:release=50:level=disabled" -c:a aac -b:a 320k -movflags +faststart "out/$nombre.mp4"
+            rm out/sin-limitar.mp4
           else
             npx remotion render src/index.ts "$comp" out/intermedio.mp4 --crf=16 --audio-bitrate=192k
             # ~50 MB en total (bytes·8 / segundos, menos el audio de 96k y un margen), con tope de 2500 kb/s:
@@ -70,7 +73,7 @@ jobs:
             dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/intermedio.mp4)
             kbps=$(python3 -c "print(min(2500, max(300, int(50e6*8/float('$dur')/1000*0.97) - 96)))")
             ffmpeg -y -v error -i out/intermedio.mp4 -vf scale=1280:720:flags=lanczos -c:v libx264 -preset slow -b:v ${kbps}k -pass 1 -passlogfile out/p2 -an -f mp4 /dev/null
-            ffmpeg -y -v error -i out/intermedio.mp4 -vf scale=1280:720:flags=lanczos -c:v libx264 -preset slow -b:v ${kbps}k -pass 2 -passlogfile out/p2 -c:a aac -b:a 96k -movflags +faststart "out/$nombre.mp4"
+            ffmpeg -y -v error -i out/intermedio.mp4 -vf scale=1280:720:flags=lanczos -c:v libx264 -preset slow -b:v ${kbps}k -pass 2 -passlogfile out/p2 -af "alimiter=limit=0.891:attack=5:release=50:level=disabled" -c:a aac -b:a 96k -movflags +faststart "out/$nombre.mp4"
             rm out/intermedio.mp4
           fi
           echo "Render: $(( $(date +%s) - inicio )) s de pared · $(du -h "out/$nombre.mp4" | cut -f1)" | tee -a "$GITHUB_STEP_SUMMARY"
