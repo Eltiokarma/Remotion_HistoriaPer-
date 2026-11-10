@@ -1060,6 +1060,26 @@
       }
     },
     {
+      "id": "t4-elevenlabs",
+      "fase": "f4",
+      "titulo": "ElevenLabs: MCP en la laptop y alineación forzada de la voz real",
+      "entregable": "MCP conectado en Claude Desktop; prueba de alineación forzada de una escena que reescriba sus beats",
+      "estado": "propuesto",
+      "depende_de": [],
+      "prevista": null,
+      "real": null,
+      "bloqueo": null,
+      "evidencia": [
+        "docs/RUTINA_ELEVENLABS.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
       "id": "f5-laptop",
       "fase": "f5",
       "titulo": "Repetir la tanda 1 en la laptop de render",
@@ -1261,6 +1281,52 @@
       },
       "bloqueo": null,
       "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-musica",
+      "fase": "e1",
+      "titulo": "Musicalización con Suno (motivo de Quiroz, ocho pistas)",
+      "entregable": "Pistas de Suno recortadas a los beats en public/videos/001-el-hombre/musica/, escenas.json y fuentes.md actualizados, audio de prueba del episodio",
+      "estado": "en_curso",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-10",
+        "fin": null
+      },
+      "bloqueo": "Espera las pistas de Suno de Gerson (prompts en videos/001-el-hombre/musicalizacion.md §3) y confirmar plan de pago.",
+      "evidencia": [
+        "historia/videos/001-el-hombre/musicalizacion.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-ambientes",
+      "fase": "e1",
+      "titulo": "Ambientes y efectos reales de Freesound (CC0 / CC BY)",
+      "entregable": "Ambientes de cuarto, ciudad, piscina y mar, y efectos de la tabla §5 de musicalizacion.md, a −30 LUFS, con créditos en fuentes.md",
+      "estado": "bloqueado",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-10",
+        "fin": null
+      },
+      "bloqueo": "Freesound responde 403 desde el contenedor de la nube (también su portada); correr scripts/freesound.py en la laptop.",
+      "evidencia": [
+        "historia/scripts/freesound.py"
+      ],
       "tiempo": {
         "humano_min": null,
         "agente": null,

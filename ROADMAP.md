@@ -12,7 +12,7 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **26** · 🔄 en curso: **2** · ⏳ pendiente: **7** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **26** · 🔄 en curso: **3** · ⏳ pendiente: **7** · 💡 propuesto: **12** · ⛔ bloqueado: **4** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -22,6 +22,8 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `t4-comfyui` ComfyUI: texturas o fondos con licencia clara: Definir qué modelos tienen licencia compatible con la regla 1.1·3 del canal.
 - `f5-laptop` Repetir la tanda 1 en la laptop de render: Lo corre Gerson en su máquina (el agente no tiene acceso a ella).
 - `f5-pc` Repetir la tanda 1 en la PC objetivo: La PC objetivo no está disponible.
+- `e1-musica` Musicalización con Suno (motivo de Quiroz, ocho pistas): Espera las pistas de Suno de Gerson (prompts en videos/001-el-hombre/musicalizacion.md §3) y confirmar plan de pago.
+- `e1-ambientes` Ambientes y efectos reales de Freesound (CC0 / CC BY): Freesound responde 403 desde el contenedor de la nube (también su portada); correr scripts/freesound.py en la laptop.
 
 ## Vista temporal
 
@@ -74,7 +76,7 @@ gantt
   Integrar los 16 diseños aprobados de VectorCraft conservando la animación :done, e1laminas, 2026-11-10, 1d
 ```
 
-Sin fecha (16): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-voz` (⏳ pendiente).
+Sin fecha (19): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (💡 propuesto), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-voz` (⏳ pendiente), `e1-musica` (🔄 en curso), `e1-ambientes` (⛔ bloqueado).
 
 ## Tareas
 
@@ -330,6 +332,11 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Definir qué modelos tienen licencia compatible con la regla 1.1·3 del canal.
+- [ ] **ElevenLabs: MCP en la laptop y alineación forzada de la voz real** `t4-elevenlabs` — 💡 propuesto
+  - Entregable: MCP conectado en Claude Desktop; prueba de alineación forzada de una escena que reescriba sus beats
+  - Prevista: — · Real: —
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [docs/RUTINA_ELEVENLABS.md](docs/RUTINA_ELEVENLABS.md)
 
 ### Fase 5 · Medir en las máquinas reales
 
@@ -383,6 +390,18 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `e1-guion-externo`
   - Prevista: — · Real: null
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [ ] **Musicalización con Suno (motivo de Quiroz, ocho pistas)** `e1-musica` — 🔄 en curso
+  - Entregable: Pistas de Suno recortadas a los beats en public/videos/001-el-hombre/musica/, escenas.json y fuentes.md actualizados, audio de prueba del episodio
+  - Prevista: — · Real: 2026-11-10 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Bloqueo: Espera las pistas de Suno de Gerson (prompts en videos/001-el-hombre/musicalizacion.md §3) y confirmar plan de pago.
+  - Evidencia: [001-el-hombre/musicalizacion.md](historia/videos/001-el-hombre/musicalizacion.md)
+- [ ] **Ambientes y efectos reales de Freesound (CC0 / CC BY)** `e1-ambientes` — ⛔ bloqueado
+  - Entregable: Ambientes de cuarto, ciudad, piscina y mar, y efectos de la tabla §5 de musicalizacion.md, a −30 LUFS, con créditos en fuentes.md
+  - Prevista: — · Real: 2026-11-10 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Bloqueo: Freesound responde 403 desde el contenedor de la nube (también su portada); correr scripts/freesound.py en la laptop.
+  - Evidencia: [scripts/freesound.py](historia/scripts/freesound.py)
 
 ## Máquinas
 
