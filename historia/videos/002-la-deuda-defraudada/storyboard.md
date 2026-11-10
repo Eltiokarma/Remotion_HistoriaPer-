@@ -15,7 +15,7 @@ Ideas 0 y 1. Espacio: geografía y trabajo, con recorrido hacia las cuentas púb
 
 | Momento | Voz propuesta o función de la voz | Imagen y texto | Movimiento y pausa |
 |---|---|---|---|
-| 1A. Regreso a las islas | Sitúa el Perú de mediados del siglo XIX y retoma el destino del guano planteado al final del episodio anterior. | Grabado de islas v3. Ficha «PERÚ · HACIA 1850». Localización de las islas y de Lima en mapa revisado para la época. | Empezar con el lugar reconocible. Abrir el encuadre para orientarnos; evitar una sucesión de mapas completos. |
+| 1A. Regreso a las islas | Sitúa el Perú de mediados del siglo XIX y retoma el destino del guano planteado al final del episodio anterior. | Grabado de islas v3. Ficha «PERÚ · HACIA 1850». Mar, roca y aves antes del esquema fiscal. Localización de las islas y de Lima en mapa revisado para la época. | Empezar con el lugar reconocible. Abrir el encuadre para orientarnos; evitar una sucesión de mapas completos. |
 | 1B. El trabajo | Explica el abono y su demanda. Una frase introduce a quienes lo extraen. | Separar extracción, carga y embarque sobre la misma ilustración. Vestimenta, herramientas e instalaciones requieren referencia antes de dibujarse. | Seguir un cargamento hasta el barco. Dar un momento de ambiente y movimiento sin voz. |
 | 1C. Venta e ingreso | Explica la venta por encargo del Estado y la comisión. | Barco y diagrama de venta, con rótulos breves «VENTA», «COMISIÓN», «INGRESO DEL ESTADO». | Añadir el recorrido por etapas. No convertir automáticamente cada saco en un monto histórico. |
 | 1D. Hay obligaciones pendientes | Conduce de los ingresos a las deudas que ya existían. | El Estado queda a un lado y se abre una carpeta de reclamos al otro. La ficha política muestra Castilla; no hace falta leer todos sus datos. | La cámara sigue el ingreso hasta las cuentas y descubre los papeles. Mantener relación espacial entre ambas cosas. |
@@ -85,3 +85,7 @@ Idea 9. Espacio: el circuito terminado y la mesa de investigación.
 Revisar cada momento con cuatro preguntas de producción: qué entiende el espectador, qué aporta la voz, qué se descubre mirando y cuánto necesita para leerlo. Estas preguntas guían el trabajo; no son una lista de preguntas para recitar en el video.
 
 Una escena larga puede contener planos, acercamientos y pausas distintos. No significa mantener una lámina inmóvil ni mover continuamente la cámara. Las duraciones se fijarán después de revisar el texto y sus espacios de lectura.
+
+## Revisión visual de la primera escena
+
+Revisión 2 solicitada por Gerson tras revisar las siete láminas. Se modifican apertura, extracción y llenado, posturas y agarre, recepción a bordo, construcción de cuentas, ejemplos de deuda y acercamiento al folio. El contexto fiscal se traslada de 1A a 1D. Se mantienen siete láminas y 21 estados; la voz es una referencia revisada, pendiente de locución final.

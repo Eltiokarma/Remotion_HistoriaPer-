@@ -2,7 +2,7 @@
 
 10 de noviembre de 2026. Continuidad dibujada en VectorCraft mediante MCP para los 24 momentos del [storyboard textual](../../storyboard.md). Se reutilizan los gráficos de las cinco secciones y se añaden estados intermedios, preparación, traspasos, apoyos, revelaciones y enlaces. Borrador pendiente de revisión de Gerson.
 
-**Cinco escenas largas, 32 láminas y 97 estados dibujados.** Son etapas internas de la acción, no 97 cortes ni cuadros de igual duración. Hay 90 encuadres SVG distintos; algunos se repiten para mantener el objeto y enlazar pasos.
+**Cinco escenas largas, 32 láminas y 97 estados dibujados.** Son etapas internas de la acción, no 97 cortes ni cuadros de igual duración. Hay 91 encuadres SVG distintos; algunos se repiten para mantener el objeto y enlazar pasos.
 
 ![Vista de las cinco escenas](resumen.png)
 
@@ -16,7 +16,7 @@
 
 ## Qué se completa
 
-- El regreso a Chincha, la localización y el contexto fiscal sitúan la época antes del recorrido comercial. La carga tiene apoyo visible, agarre y un paso articulado.
+- El regreso a Chincha y la localización sitúan la época. Extracción y llenado preceden a la carga; el contexto fiscal llega después de la venta. La carga tiene apoyo visible, agarre lateral y un paso articulado.
 - El reclamo se revisa antes de reconocerse y el vale entra como otro documento. El acercamiento de compraventa dibuja preparación, agarre compartido y liberación.
 - Novoa se presenta en un expediente distinto. La aprobación buscada, la respuesta sobre el plazo, la intervención y los montos aparecen por separado, con unidades y cautelas.
 - Un vale genérico conserva su identidad al cambiar de tenedor. La conversión precede a la investigación; hallazgos, suspensión y restauración mantienen sus distinciones.
@@ -24,7 +24,7 @@
 
 ## Para integrar
 
-Leer [ANIMACION.md](ANIMACION.md), la [secuencia de cinco escenas](secuencia.json), el [inventario de 90 encuadres](inventario.json) y los [datos de las poses nuevas](../personajes-1850/poses-continuidad/poses.json). Cada escena tiene sus acciones, pausas, voz de referencia, archivos y capas. El [resumen en PDF](resumen.pdf) y su [editable](resumen.vectorcraft) sirven como índice.
+Leer [ANIMACION.md](ANIMACION.md), la [secuencia de cinco escenas](secuencia.json), el [inventario de 91 encuadres](inventario.json) y los [datos de las poses nuevas](../personajes-1850/poses-continuidad/poses.json). Cada escena tiene sus acciones, pausas, voz de referencia, archivos y capas. El [resumen en PDF](resumen.pdf) y su [editable](resumen.vectorcraft) sirven como índice.
 
 Las fuentes son las fichas y cotejos ya registrados en [fuentes.md](../../fuentes.md); esta entrega no se atribuye una nueva lectura independiente de los libros o de las leyes. Q es Quiroz; B, Bonilla; C, Carlos Contreras Carranza. Las reconstrucciones gráficas son editoriales y los personajes representan funciones, sin pretender retratos auténticos. La geografía conserva la procedencia Natural Earth de la revisión anterior.
 

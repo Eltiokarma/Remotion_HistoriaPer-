@@ -19,12 +19,13 @@
       "secuencia": "escena-01/secuencia.json",
       "pdf": "escena-01/escena-01.pdf",
       "nativo": "escena-01/escena-01.vectorcraft",
-      "entrada": "s01-v01",
+      "entrada": "s01-r2-panorama",
       "salida": "s01-v16",
       "puente_siguiente": {
         "escena": 2,
         "criterio": "La pestaña roja y el reclamo genérico mantienen la identidad al cambiar el encuadre."
-      }
+      },
+      "revision": 2
     },
     {
       "id": "escena-02",
@@ -126,7 +127,7 @@
   "total_momentos": 24,
   "total_laminas": 32,
   "total_estados": 97,
-  "recursos_svg_distintos": 90,
+  "recursos_svg_distintos": 91,
   "duraciones": "Sin fijar, pendientes de la locución. Dos segundos de silencio en 3D son una propuesta.",
   "animacion_remotion_verificada": false,
   "video_generado": false
