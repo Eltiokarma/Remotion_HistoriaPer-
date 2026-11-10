@@ -28,3 +28,7 @@ No se generó video ni se validó movimiento en Remotion. [Las cinco escenas](..
 Revisión 2 solicitada por Gerson. Las seis láminas conservan 19 estados: folio de enlace y ejemplos actualizados, cotejo con soportes, definición positiva del vale, pago contrario al reclamo, funciones estables, ejemplo de revisión eludida y entrada a Novoa con su comisión legítima diferenciada. Voz de referencia y duraciones pendientes de la locución final.
 
 [Editables y datos de los dibujos nuevos](../recursos/revision-02-reclamo/README.md). [PDF anterior para comparar](https://github.com/Eltiokarma/Remotion_HistoriaPer-/blob/cc665fa2ddab9873c927c2d859d3567e2ec0d2f7/historia/videos/002-la-deuda-defraudada/diseno/escenas-largas/escena-02/escena-02.pdf).
+
+## Dirección de movimiento y efectos
+
+La [dirección de las cinco escenas](../MOVIMIENTO-Y-EFECTOS.md) fija cámara, foco, acción, capas, sonido y comprobación para todos los momentos de esta escena. [Datos por estado](../direccion-movimiento.json). Es una propuesta para integración; no una animación comprobada.

@@ -114,7 +114,12 @@
           "accion": "Desplegar los 32 años de ganancias que decía haber perdido.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "3A",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "3B",
@@ -197,7 +202,12 @@
           "accion": "Mostrar 500.000–600.000 como aprobación que buscaba.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "3B",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "3C",
@@ -280,7 +290,12 @@
           "accion": "El papel permanece detenido y los gestos descansan.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "3C",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "3D",
@@ -364,7 +379,12 @@
           "duracion_segundos": null,
           "silencio_propuesto_segundos": 2
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "3D",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "3E",
@@ -447,7 +467,12 @@
           "accion": "Abrir ambas cantidades y conservar el grado de certeza.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "3E",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "3F",
@@ -530,7 +555,13 @@
           "accion": "Salir del caso de Novoa y situar primero la deuda reconocida en 1851.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "3F",
+        "estado": "propuesta; integración pendiente"
+      }
     }
-  ]
+  ],
+  "direccion_movimiento": "../direccion-movimiento.json"
 }

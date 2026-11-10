@@ -15,8 +15,13 @@
     },
     {
       "archivo": "ANIMACION.md",
-      "bytes": 10147,
-      "sha256": "b3e61bbd323d104b3f3bd40a9ff990b26338313dd257740bc325ce50c2a5cfd6"
+      "bytes": 10500,
+      "sha256": "8c4df583d0837670615a92ea283e0f94193714163b89e8bffba7eef597dd1928"
+    },
+    {
+      "archivo": "direccion-movimiento.json",
+      "bytes": 199236,
+      "sha256": "c5214fbd13750383b94bab4e30027d46ce33dc7b47bb9765da02f2b30b4c23d3"
     },
     {
       "archivo": "escena-01/escena-01.pdf",
@@ -66,7 +71,7 @@
     {
       "archivo": "escena-01/manifest.json",
       "bytes": 2032,
-      "sha256": "121b93cd380f9deed679c499898e957e53d3a9f0cdb6fbb069ff6973773be819"
+      "sha256": "43a271cd4cec521384a44d9a73cb9641c3b6b51465cd0602ec1b86632354fe06"
     },
     {
       "archivo": "escena-01/muestra.png",
@@ -75,13 +80,13 @@
     },
     {
       "archivo": "escena-01/README.md",
-      "bytes": 2472,
-      "sha256": "a48ea82b29d6426c823eed2f2c7bbbc1dabfcd1cb139b7062e94942cbdfe2e84"
+      "bytes": 2792,
+      "sha256": "3dc3b1000c8e555a2ecbd8534c7f951cd9321a5d2fbf915cdf9da8c9b77f140e"
     },
     {
       "archivo": "escena-01/secuencia.json",
-      "bytes": 18131,
-      "sha256": "3d83f5c21003489e2025afcb92712d19ba90870c408ef1005fddade1066eedc7"
+      "bytes": 19363,
+      "sha256": "e5963bffea998216af7659eb7b5d0a097799f93b0e1d9cf381681723685c9e8c"
     },
     {
       "archivo": "escena-02/escena-02.pdf",
@@ -126,7 +131,7 @@
     {
       "archivo": "escena-02/manifest.json",
       "bytes": 1879,
-      "sha256": "05980ff26e83485ed52a106d69c43b7d984b3045992ac9619ca7b4380fde8228"
+      "sha256": "f58c7332af1b55ce9bf09cf526bf1b5ffb3f781dd7f9492507bd1692b87eb96b"
     },
     {
       "archivo": "escena-02/muestra.png",
@@ -135,13 +140,13 @@
     },
     {
       "archivo": "escena-02/README.md",
-      "bytes": 2476,
-      "sha256": "31a6f8382fa8d593ae5f358bcc94b43d01b84969d262ca70ad0d5c872c696743"
+      "bytes": 2796,
+      "sha256": "ea3269d47a0f21728195c28761437c03fd41f6b980dcda7ab9979b44cb9a57fd"
     },
     {
       "archivo": "escena-02/secuencia.json",
-      "bytes": 16746,
-      "sha256": "f65e0e819f1db2cd808b3fa89d5945bccd88baa463859ef22995baf9992521f6"
+      "bytes": 17800,
+      "sha256": "deb3c860319f1e126c601c86303f5f5b2ba47c8a7d1fccfff6bde2221d9ab1fb"
     },
     {
       "archivo": "escena-03/escena-03.pdf",
@@ -185,8 +190,8 @@
     },
     {
       "archivo": "escena-03/manifest.json",
-      "bytes": 1879,
-      "sha256": "fac6efd061986cb30af37d639fece9ee774ab6c6b46b69c55de56763938ff52e"
+      "bytes": 2028,
+      "sha256": "8552aeed0ddc93917d1da136704e0a8424cf524592d5deacd62c767d393a0d14"
     },
     {
       "archivo": "escena-03/muestra.png",
@@ -195,13 +200,18 @@
     },
     {
       "archivo": "escena-03/README.md",
-      "bytes": 1712,
-      "sha256": "61334a1ea84b6db3aa744dde0fc92d9a8b1f2cd5a11bda3efb8d91016f641f09"
+      "bytes": 2096,
+      "sha256": "8fe8fbb38608f4a6d5eef1067aeba8929e51a5defc7f3f2057476eff0f37966f"
+    },
+    {
+      "archivo": "escena-03/REVISION.md",
+      "bytes": 2090,
+      "sha256": "379bae03051f47a92f52f1487a89cf80ec8b87a3ac51f045a08ac0de4c7ca59b"
     },
     {
       "archivo": "escena-03/secuencia.json",
-      "bytes": 15317,
-      "sha256": "a74ddd50e58e373994b596529ab24dd81bf56b80b0eb2e51376730184bd4e5b5"
+      "bytes": 16371,
+      "sha256": "e7f0a5f7b8802412403199b3edb36ef2b762fa9fb8bd6ee64a53d3518d506488"
     },
     {
       "archivo": "escena-04/escena-04.pdf",
@@ -256,7 +266,7 @@
     {
       "archivo": "escena-04/manifest.json",
       "bytes": 2185,
-      "sha256": "f8ed1de8a452d4223ea5a1c2bd96aff24397438f03893cae4f9a77bae3bfc6bf"
+      "sha256": "3040a629dbd4bc52c7bcf98d6b924053d6568ff61caaa84e965410c1ea250914"
     },
     {
       "archivo": "escena-04/muestra.png",
@@ -265,13 +275,13 @@
     },
     {
       "archivo": "escena-04/README.md",
-      "bytes": 1945,
-      "sha256": "30b9e08aec3d51183cca47a38ddf7a44f3e0eb342963a01d96d049378feab5df"
+      "bytes": 2265,
+      "sha256": "85d54673ac5a174d29702b32bdd3397bd22ac252e484da3fae89e95a21c79f5d"
     },
     {
       "archivo": "escena-04/secuencia.json",
-      "bytes": 20125,
-      "sha256": "e6ed8b35b1f0308961a05ee0c947f1cc457391437488bf60c125d67978d5bea5"
+      "bytes": 21521,
+      "sha256": "fe05799bd38c1f823219773b703f4d99b8fdb3731958d59a29bc484d3f5530e0"
     },
     {
       "archivo": "escena-05/escena-05.pdf",
@@ -311,7 +321,7 @@
     {
       "archivo": "escena-05/manifest.json",
       "bytes": 1726,
-      "sha256": "8f21b369fda10c5d8047b6dccbbc46718e1171a12b8aafd8a63385c329642986"
+      "sha256": "9483e3a50bd473c798a37000945066e8950fd85d9c0642ecf1dc9c5a1107d0d4"
     },
     {
       "archivo": "escena-05/muestra.png",
@@ -320,13 +330,13 @@
     },
     {
       "archivo": "escena-05/README.md",
-      "bytes": 1678,
-      "sha256": "c7e4ec96193e070b42abb869f81116b5762e5ead2ba0c5657fdaa1560d52aba1"
+      "bytes": 1998,
+      "sha256": "00faced63133e38cfe82bf680951caaed5225cb9b94e4261be21591a5ed62deb"
     },
     {
       "archivo": "escena-05/secuencia.json",
-      "bytes": 12826,
-      "sha256": "61cd62a2014932113d1653ca3de40908e7dad4d2a334b1d410e97d6f489cbced"
+      "bytes": 13722,
+      "sha256": "7e39a1a53a89af602d7393316f5aadfc8dee4c603d1bd0f13b4c1d9fdd5ba2eb"
     },
     {
       "archivo": "inventario.json",
@@ -334,9 +344,14 @@
       "sha256": "6c17db0cadeb219e42f82e6e2d8da51db3b3481c449d89199674a8690e9b381b"
     },
     {
+      "archivo": "MOVIMIENTO-Y-EFECTOS.md",
+      "bytes": 26476,
+      "sha256": "0dc5d60e19960af3ba515fc613152796fdaea9aa285b7dfca124817b59594f69"
+    },
+    {
       "archivo": "README.md",
-      "bytes": 3768,
-      "sha256": "b046376ec2105e69e2e2cec65e21561b7e8e87d28d0871f5e52a4dc22f203499"
+      "bytes": 4043,
+      "sha256": "ae3057568503e526567dc9de8f9cb77ec5753a4c0f2c257ee0c1c48eb9d22b7c"
     },
     {
       "archivo": "recursos/componentes/estado.svg",
@@ -1005,13 +1020,13 @@
     },
     {
       "archivo": "secuencia.json",
-      "bytes": 3604,
-      "sha256": "e34006e2ed1b9321e8e7c39658ef714c2b8eba3ed57a199420d4ad08489c1965"
+      "bytes": 3777,
+      "sha256": "9bf1d04c8788258904babd495adb3abd245e74fedc8df8399efa4580ab5c8679"
     },
     {
       "archivo": "validacion.json",
-      "bytes": 1069,
-      "sha256": "fbb5006b9d9d1854f315dac795fc3eb128c90c5bc1ecf585162c5632f12869ca"
+      "bytes": 1932,
+      "sha256": "8c087e48581fdc2c80c6a404f001c32aa4744cad22d3359ce10980bd4d3a80a1"
     }
   ],
   "revision_escena_01": 2,

@@ -15,7 +15,7 @@
     "asignaciones_nativas_correctas": true
   },
   "svg_sin_raster_ni_texto_vivo": 152,
-  "enlaces_locales_correctos": 108,
+  "enlaces_locales_correctos": 129,
   "piezas_canonicas_sin_cambios": 135,
   "revision_visual": "Se inspeccionan las seis láminas de la escena 2, incluidos textos, cotejo, pago, roles y transición a Novoa. Se conserva la revisión estática anterior de la escena 1.",
   "aprobacion_gerson": "pendiente",
@@ -32,5 +32,24 @@
     "cotejo_por_etapas": true,
     "pago_en_sentido_contrario": true,
     "comision_legitima_de_novoa_diferenciada": true
+  },
+  "revision_movimiento": {
+    "fecha": "2026-11-10",
+    "tipo": "Cobertura y referencias de una propuesta de movimiento; no verificación audiovisual",
+    "escenas": 5,
+    "laminas": 32,
+    "estados": 97,
+    "asignaciones_nativas_correctas": 97,
+    "referencias_codigo_verificadas": 17,
+    "sonidos_candidatos_existentes": 7,
+    "sonidos_escuchados_para_este_montaje": false,
+    "capas_funcionales_pendientes_de_vincular": 177,
+    "enlaces_locales_correctos": 129,
+    "archivos_graficos_previos_sin_cambios": 176,
+    "ajustes_novoa_documentados": 6,
+    "revision_visual_escena_03": "Se inspeccionan sus seis láminas actuales. Ajustes gráficos propuestos, todavía sin aplicar.",
+    "arquitectura": "Gerson manifiesta conformidad con la arquitectura de cinco escenas.",
+    "animacion_remotion_verificada": false,
+    "video_generado": false
   }
 }

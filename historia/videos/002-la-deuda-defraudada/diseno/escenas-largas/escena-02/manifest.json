@@ -53,13 +53,13 @@
     },
     {
       "archivo": "README.md",
-      "bytes": 2476,
-      "sha256": "31a6f8382fa8d593ae5f358bcc94b43d01b84969d262ca70ad0d5c872c696743"
+      "bytes": 2796,
+      "sha256": "ea3269d47a0f21728195c28761437c03fd41f6b980dcda7ab9979b44cb9a57fd"
     },
     {
       "archivo": "secuencia.json",
-      "bytes": 16746,
-      "sha256": "f65e0e819f1db2cd808b3fa89d5945bccd88baa463859ef22995baf9992521f6"
+      "bytes": 17800,
+      "sha256": "deb3c860319f1e126c601c86303f5f5b2ba47c8a7d1fccfff6bde2221d9ab1fb"
     }
   ]
 }

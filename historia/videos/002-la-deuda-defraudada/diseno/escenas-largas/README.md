@@ -29,3 +29,7 @@ Leer [ANIMACION.md](ANIMACION.md), la [secuencia de cinco escenas](secuencia.jso
 Las fuentes son las fichas y cotejos ya registrados en [fuentes.md](../../fuentes.md); esta entrega no se atribuye una nueva lectura independiente de los libros o de las leyes. Q es Quiroz; B, Bonilla; C, Carlos Contreras Carranza. Las reconstrucciones gráficas son editoriales y los personajes representan funciones, sin pretender retratos auténticos. La geografía conserva la procedencia Natural Earth de la revisión anterior.
 
 Las láminas se revisaron estáticamente en VectorCraft. [validacion.json](validacion.json) registra las comprobaciones de archivos. Pendientes: aprobación de Gerson, locución final, duración, interpolación de movimientos, contactos y efectos en Remotion. No se generó video. Los editables y vectores son el respaldo; se incluyen solo cinco PNG de muestra y el índice, sin un render completo ni paquetes de plantillas de terceros.
+
+## Movimiento y efectos
+
+[Dirección por las 32 láminas](MOVIMIENTO-Y-EFECTOS.md) y [datos para integrar](direccion-movimiento.json). Incluye código existente a reutilizar, capas, foco, acciones, sonido y límites históricos. [Revisión de Novoa](escena-03/REVISION.md).

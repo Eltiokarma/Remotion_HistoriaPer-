@@ -112,7 +112,12 @@
           "accion": "Situar Chincha frente a Pisco y recordar Lima.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "1A",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "1B.1",
@@ -195,7 +200,12 @@
           "accion": "Mostrar para qué se compraba: abonar los cultivos.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "1B.1",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "1B.2",
@@ -278,7 +288,12 @@
           "accion": "Avanzar con el saco; separar los apoyos de los pies.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "1B.2",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "1C.1",
@@ -361,7 +376,12 @@
           "accion": "Abrir al esquema Chincha–Gran Bretaña, con el producto reconocido.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "1C.1",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "1C.2",
@@ -444,7 +464,12 @@
           "accion": "Revelar el ingreso del Estado y enlazar con su edificio.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "1C.2",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "1D.1",
@@ -527,7 +552,12 @@
           "accion": "Abrir la carpeta y conservar el reclamo por revisar.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "1D.1",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "1D.2",
@@ -610,9 +640,15 @@
           "accion": "Sostener la pestaña roja y dar paso a la escena 2.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "1D.2",
+        "estado": "propuesta; integración pendiente"
+      }
     }
   ],
   "revision": 2,
-  "fecha_revision": "2026-11-10"
+  "fecha_revision": "2026-11-10",
+  "direccion_movimiento": "../direccion-movimiento.json"
 }

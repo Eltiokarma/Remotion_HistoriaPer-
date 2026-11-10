@@ -29,3 +29,7 @@ No se generó video ni se validó movimiento en Remotion. [Las cinco escenas](..
 Revisión 2 solicitada por Gerson tras revisar las siete láminas. Se modifican apertura, extracción y llenado, posturas y agarre, recepción a bordo, construcción de cuentas, ejemplos de deuda y acercamiento al folio. El contexto fiscal se traslada de 1A a 1D. Se mantienen siete láminas y 21 estados; la voz es una referencia revisada, pendiente de locución final.
 
 [Fuentes de los dibujos y posturas](../recursos/revision-02/README.md). [Original de la revisión anterior](https://github.com/Eltiokarma/Remotion_HistoriaPer-/blob/1c450f31cfe0bac564b5862bf2e42082801834a4/historia/videos/002-la-deuda-defraudada/diseno/escenas-largas/escena-01/escena-01.pdf).
+
+## Dirección de movimiento y efectos
+
+La [dirección de las cinco escenas](../MOVIMIENTO-Y-EFECTOS.md) fija cámara, foco, acción, capas, sonido y comprobación para todos los momentos de esta escena. [Datos por estado](../direccion-movimiento.json). Es una propuesta para integración; no una animación comprobada.

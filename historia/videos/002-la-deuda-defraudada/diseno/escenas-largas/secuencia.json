@@ -131,5 +131,7 @@
   "recursos_svg_distintos": 89,
   "duraciones": "Sin fijar, pendientes de la locución. Dos segundos de silencio en 3D son una propuesta.",
   "animacion_remotion_verificada": false,
-  "video_generado": false
+  "video_generado": false,
+  "direccion_movimiento": "direccion-movimiento.json",
+  "revision_efectos": "Dirección propuesta por 32 láminas; implementación y comprobación audiovisual pendientes"
 }

@@ -21,3 +21,7 @@ Cada lámina presenta los estados de lectura en orden y las indicaciones de cám
 Usar los encuadres para revisar. Para animar, recuperar las piezas del original y los rigs, conservar gradientes, sombras y textura, y comprobar el contacto entre manos y objeto. Las notas de producción incrustadas en algunos encuadres se trasladan a la escaleta.
 
 No se generó video ni se validó movimiento en Remotion. [Las cinco escenas](../README.md).
+
+## Dirección de movimiento y efectos
+
+La [dirección de las cinco escenas](../MOVIMIENTO-Y-EFECTOS.md) fija cámara, foco, acción, capas, sonido y comprobación para todos los momentos de esta escena. [Datos por estado](../direccion-movimiento.json). Es una propuesta para integración; no una animación comprobada.

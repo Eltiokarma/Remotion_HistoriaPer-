@@ -111,7 +111,12 @@
           "accion": "Contraponer grupos excluidos y beneficios concentrados.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "5A.1",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "5A.2",
@@ -194,7 +199,12 @@
           "accion": "Llegar al examen de los expedientes y sostener el circuito completo.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "5A.2",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "5B.1",
@@ -277,7 +287,12 @@
           "accion": "Desplegar contabilidad, evidencia judicial y correspondencia.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "5B.1",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "5B.2",
@@ -360,7 +375,12 @@
           "accion": "Sostener aproximado, provisional y sujeto a revisión.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "5B.2",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "5C",
@@ -443,7 +463,13 @@
           "accion": "Dar el foco a 003 en el índice y reservar los resultados generales a 004.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "5C",
+        "estado": "propuesta; integración pendiente"
+      }
     }
-  ]
+  ],
+  "direccion_movimiento": "../direccion-movimiento.json"
 }

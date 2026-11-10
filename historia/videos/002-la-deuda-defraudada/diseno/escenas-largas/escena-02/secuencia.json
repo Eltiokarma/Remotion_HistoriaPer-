@@ -114,7 +114,12 @@
           "accion": "Situar la ley de consolidación y volver al mismo reclamo.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "2A",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "2B",
@@ -197,7 +202,12 @@
           "accion": "Contrastar el monto; mostrar el reconocimiento al terminar.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "2B",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "2C",
@@ -280,7 +290,12 @@
           "accion": "Seguir el título hacia el acreedor; el Estado conserva su obligación.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "2C",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "2D",
@@ -385,7 +400,12 @@
           "accion": "El comprador conserva el papel y el pago llega al reclamante.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "2D",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "2E",
@@ -468,7 +488,12 @@
           "accion": "Distinguir precio pagado y deuda reconocida sin introducir cantidades.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "2E",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "2F",
@@ -551,9 +576,15 @@
           "accion": "Retirar el ejemplo e introducir Novoa, con la comisión legítima diferenciada.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "2F",
+        "estado": "propuesta; integración pendiente"
+      }
     }
   ],
   "revision": 2,
-  "fecha_revision": "2026-11-10"
+  "fecha_revision": "2026-11-10",
+  "direccion_movimiento": "../direccion-movimiento.json"
 }

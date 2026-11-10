@@ -113,7 +113,12 @@
           "accion": "Cambiar a un vale genérico, sin titular ni monto de Novoa.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "4A.1",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "4A.2",
@@ -196,7 +201,12 @@
           "accion": "El nuevo tenedor lo sostiene; la primera mano se retira.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "4A.2",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "4B",
@@ -279,7 +289,12 @@
           "accion": "Conservar ambos instrumentos: parte de los vales fue convertida.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "4B",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "4C",
@@ -362,7 +377,12 @@
           "accion": "Reunir su gestión anterior y la denuncia, conservando sus intereses.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "4C",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "4D",
@@ -445,7 +465,12 @@
           "accion": "Revisar antecedentes, aprobación y emisión por turnos.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "4D",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "4E.1",
@@ -528,7 +553,12 @@
           "accion": "Contar aparte los cuatro expedientes robados, sin monto adicional.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "4E.1",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "4E.2",
@@ -611,7 +641,12 @@
           "accion": "Seguir las presiones locales y externas hacia las autoridades.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "4E.2",
+        "estado": "propuesta; integración pendiente"
+      }
     },
     {
       "id": "4E.3",
@@ -694,7 +729,13 @@
           "accion": "Volver a los informes como huellas del negocio.",
           "duracion_segundos": null
         }
-      ]
+      ],
+      "direccion_movimiento": {
+        "archivo": "../direccion-movimiento.json",
+        "id": "4E.3",
+        "estado": "propuesta; integración pendiente"
+      }
     }
-  ]
+  ],
+  "direccion_movimiento": "../direccion-movimiento.json"
 }
