@@ -22,5 +22,8 @@
       "sha256": "168d7f1fb8b8b7a2b0d189a66be0e556526d248da2a04349a654164c38fe095e"
     }
   ],
-  "revision": "El director considera insuficiente el detalle del storyboard, especialmente la viñeta 07. Mejorar en la próxima sesión; conservar la versión actual como borrador."
+  "revision": "El director considera insuficiente el detalle del storyboard, especialmente la viñeta 07. Mejorar en la próxima sesión; conservar la versión actual como borrador.",
+  "version_actual": "revision-detallada/manifest.json",
+  "estado_version_actual": "Borrador detallado pendiente de revisión de Gerson",
+  "revision_actual": "2026-11-10"
 }

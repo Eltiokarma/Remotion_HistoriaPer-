@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <radialGradient id="radial-gradient-1" cx="960" cy="540" r="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b5545"/>
+      <stop offset="1" stop-color="#162e27"/>
+    </radialGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_00_fondo" data-name="00_fondo">
+    <rect x="0" y="0" width="1920" height="1080" fill="url(#radial-gradient-1)"/>
+    <path d="M55 182 L731 182 C734.87 182 738 185.13 738 189 L738 872 C738 875.87 734.87 879 731 879 L55 879 C51.13 879 48 875.87 48 872 L48 189 C48 185.13 51.13 182 55 182 Z" fill="#233d33" stroke="#89987a" stroke-width="1.5" stroke-miterlimit="10"/>
+    <path d="M1139 182 L1865 182 C1868.87 182 1872 185.13 1872 189 L1872 872 C1872 875.87 1868.87 879 1865 879 L1139 879 C1135.13 879 1132 875.87 1132 872 L1132 189 C1132 185.13 1135.13 182 1139 182 Z" fill="#294338" stroke="#89987a" stroke-width="1.5" stroke-miterlimit="10"/>
+  </g>
+</svg>

@@ -1,0 +1,547 @@
+{
+  "titulo": "Esquema comercial de Chincha al mercado británico",
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "fecha": "2026-11-10",
+  "canvas": {
+    "ancho": 1920,
+    "alto": 1080,
+    "origen": [
+      0,
+      0
+    ],
+    "unidades": "px",
+    "eje_y": "hacia abajo"
+  },
+  "orden": "capas en orden_fondo_a_frente ascendente",
+  "capas": [
+    {
+      "id": "00_fondo",
+      "archivo": "capas/00_fondo.svg",
+      "orden_fondo_a_frente": 0,
+      "id_capa_vectorcraft": 2,
+      "grupo_svg": "_00_fondo",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "pivote_sugerido": [
+        960,
+        540
+      ],
+      "uso": "Fondo fijo"
+    },
+    {
+      "id": "01_titulos",
+      "archivo": "capas/01_titulos.svg",
+      "orden_fondo_a_frente": 1,
+      "id_capa_vectorcraft": 6,
+      "grupo_svg": "_01_titulos",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 980.4306640625,
+        "width": 1824,
+        "x": 47.99999999999999,
+        "y": 37.5693359375
+      },
+      "pivote_sugerido": [
+        960,
+        540
+      ],
+      "uso": "Títulos y marcos fijos"
+    },
+    {
+      "id": "02_mar_chincha",
+      "archivo": "capas/02_mar_chincha.svg",
+      "orden_fondo_a_frente": 2,
+      "id_capa_vectorcraft": 12,
+      "grupo_svg": "_02_mar_chincha",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 270,
+        "width": 632,
+        "x": 77,
+        "y": 486
+      },
+      "pivote_sugerido": [
+        393,
+        756
+      ],
+      "uso": "Mar; encendido suave, sin bucle visible"
+    },
+    {
+      "id": "03_roca_chincha",
+      "archivo": "capas/03_roca_chincha.svg",
+      "orden_fondo_a_frente": 3,
+      "id_capa_vectorcraft": 26,
+      "grupo_svg": "_03_roca_chincha",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 307,
+        "width": 639.5833333333333,
+        "x": 70.20833333333337,
+        "y": 245
+      },
+      "pivote_sugerido": [
+        390,
+        552
+      ],
+      "uso": "Roca y depósito; acercamiento de cámara"
+    },
+    {
+      "id": "04_aves_chincha",
+      "archivo": "capas/04_aves_chincha.svg",
+      "orden_fondo_a_frente": 4,
+      "id_capa_vectorcraft": 443,
+      "grupo_svg": "_04_aves_chincha",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 307,
+        "width": 639.5833333333333,
+        "x": 70.20833333333337,
+        "y": 245
+      },
+      "pivote_sugerido": [
+        390,
+        399
+      ],
+      "uso": "Aves; figuras quietas, foco u opacidad"
+    },
+    {
+      "id": "05_muelle",
+      "archivo": "capas/05_muelle.svg",
+      "orden_fondo_a_frente": 5,
+      "id_capa_vectorcraft": 502,
+      "grupo_svg": "_05_muelle",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 148,
+        "width": 203,
+        "x": 329,
+        "y": 548
+      },
+      "pivote_sugerido": [
+        430,
+        636
+      ],
+      "uso": "Muelle; estructura fija"
+    },
+    {
+      "id": "06_sacos_origen",
+      "archivo": "capas/06_sacos_origen.svg",
+      "orden_fondo_a_frente": 6,
+      "id_capa_vectorcraft": 523,
+      "grupo_svg": "_06_sacos_origen",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 120.01374999999996,
+        "width": 159.4533293372674,
+        "x": 289.6810456627326,
+        "y": 523.25
+      },
+      "pivote_sugerido": [
+        369,
+        643
+      ],
+      "uso": "Sacos en origen; revelación escalonada"
+    },
+    {
+      "id": "07_barco",
+      "archivo": "capas/07_barco.svg",
+      "orden_fondo_a_frente": 7,
+      "id_capa_vectorcraft": 563,
+      "grupo_svg": "_07_barco",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 233,
+        "width": 285.7547169811321,
+        "x": 425.12264150943395,
+        "y": 447
+      },
+      "pivote_sugerido": [
+        568,
+        680
+      ],
+      "uso": "Barco en Chincha; no atraviesa el mapa"
+    },
+    {
+      "id": "08_mapa_gran_bretana",
+      "archivo": "capas/08_mapa_gran_bretana.svg",
+      "orden_fondo_a_frente": 8,
+      "id_capa_vectorcraft": 698,
+      "grupo_svg": "_08_mapa_gran_bretana",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 454,
+        "width": 252.00000000000023,
+        "x": 1164.9999999999998,
+        "y": 244
+      },
+      "pivote_sugerido": [
+        1291,
+        471
+      ],
+      "uso": "Localización del mercado, no puerto de llegada"
+    },
+    {
+      "id": "09_campos_suelo",
+      "archivo": "capas/09_campos_suelo.svg",
+      "orden_fondo_a_frente": 9,
+      "id_capa_vectorcraft": 703,
+      "grupo_svg": "_09_campos_suelo",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 223.43385964912295,
+        "width": 425.94000000000005,
+        "x": 1420,
+        "y": 529.7561403508771
+      },
+      "pivote_sugerido": [
+        1633,
+        753
+      ],
+      "uso": "Campos y surcos; contexto del uso agrícola"
+    },
+    {
+      "id": "10_almacen",
+      "archivo": "capas/10_almacen.svg",
+      "orden_fondo_a_frente": 10,
+      "id_capa_vectorcraft": 716,
+      "grupo_svg": "_10_almacen",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 254.8,
+        "width": 353.99,
+        "x": 1441,
+        "y": 355.92
+      },
+      "pivote_sugerido": [
+        1618,
+        611
+      ],
+      "uso": "Almacén conceptual; arquitectura genérica"
+    },
+    {
+      "id": "11_cultivos",
+      "archivo": "capas/11_cultivos.svg",
+      "orden_fondo_a_frente": 11,
+      "id_capa_vectorcraft": 764,
+      "grupo_svg": "_11_cultivos",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 78.20000000000005,
+        "width": 360.23500000000035,
+        "x": 1431.4999999999998,
+        "y": 651.8
+      },
+      "pivote_sugerido": [
+        1612,
+        730
+      ],
+      "uso": "Cultivos; sin medir cosecha ni rendimiento"
+    },
+    {
+      "id": "12_sacos_destino",
+      "archivo": "capas/12_sacos_destino.svg",
+      "orden_fondo_a_frente": 12,
+      "id_capa_vectorcraft": 834,
+      "grupo_svg": "_12_sacos_destino",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 86.21175000000017,
+        "width": 104.96920870639246,
+        "x": 1547.0001662936077,
+        "y": 590.05
+      },
+      "pivote_sugerido": [
+        1600,
+        676
+      ],
+      "uso": "Sacos al destino; continuidad del producto"
+    },
+    {
+      "id": "13_flujo_comercial",
+      "archivo": "capas/13_flujo_comercial.svg",
+      "orden_fondo_a_frente": 13,
+      "id_capa_vectorcraft": 861,
+      "grupo_svg": "_13_flujo_comercial",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 27,
+        "width": 366,
+        "x": 753,
+        "y": 579
+      },
+      "pivote_sugerido": [
+        753,
+        591
+      ],
+      "uso": "Flecha comercial; no ruta de navegación"
+    },
+    {
+      "id": "14_carga_testigo",
+      "archivo": "capas/14_carga_testigo.svg",
+      "orden_fondo_a_frente": 14,
+      "id_capa_vectorcraft": 864,
+      "grupo_svg": "_14_carga_testigo",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 195.23050000000006,
+        "width": 114.13283962084768,
+        "x": 903.3834103791522,
+        "y": 382.3
+      },
+      "pivote_sugerido": [
+        960,
+        578
+      ],
+      "uso": "Carga como objeto de continuidad, no unidad contable"
+    },
+    {
+      "id": "15_rotulo_origen",
+      "archivo": "capas/15_rotulo_origen.svg",
+      "orden_fondo_a_frente": 15,
+      "id_capa_vectorcraft": 878,
+      "grupo_svg": "_15_rotulo_origen",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 656.83984375,
+        "width": 359.65625,
+        "x": 213.63671875,
+        "y": 194.822265625
+      },
+      "pivote_sugerido": [
+        393,
+        520
+      ],
+      "uso": "Rótulos de Chincha"
+    },
+    {
+      "id": "16_rotulo_destino",
+      "archivo": "capas/16_rotulo_destino.svg",
+      "orden_fondo_a_frente": 16,
+      "id_capa_vectorcraft": 882,
+      "grupo_svg": "_16_rotulo_destino",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 654.0888671875,
+        "width": 429.26220703125,
+        "x": 1287.368896484375,
+        "y": 197.5732421875
+      },
+      "pivote_sugerido": [
+        1502,
+        525
+      ],
+      "uso": "Rótulos del mercado británico"
+    },
+    {
+      "id": "17_rotulo_producto",
+      "archivo": "capas/17_rotulo_producto.svg",
+      "orden_fondo_a_frente": 17,
+      "id_capa_vectorcraft": 886,
+      "grupo_svg": "_17_rotulo_producto",
+      "viewBox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "bounds": {
+        "height": 397.3310546875,
+        "width": 166.55908203125,
+        "x": 876.720458984375,
+        "y": 284.1787109375
+      },
+      "pivote_sugerido": [
+        960,
+        483
+      ],
+      "uso": "Rótulos del producto y la venta"
+    }
+  ],
+  "flujo": {
+    "d": "M753,591 C857,602 1013,602 1119,591",
+    "significado": "Relación de venta; no itinerario marítimo",
+    "punta": "Incluida en 13_flujo_comercial.svg"
+  },
+  "anclas": [
+    {
+      "id": "contexto",
+      "referencia": "Al recuperar las islas",
+      "capas": [
+        "00_fondo",
+        "01_titulos",
+        "02_mar_chincha",
+        "03_roca_chincha",
+        "04_aves_chincha",
+        "15_rotulo_origen"
+      ],
+      "accion": "Establecer origen; mantener el paisaje completo al llegar",
+      "peso": "solemne",
+      "segundo": null
+    },
+    {
+      "id": "embarque",
+      "referencia": "Al recordar extracción y embarque",
+      "capas": [
+        "05_muelle",
+        "06_sacos_origen",
+        "07_barco"
+      ],
+      "accion": "Revelar los sacos después del muelle; barco fijo en el origen",
+      "peso": "pesado",
+      "segundo": null
+    },
+    {
+      "id": "producto",
+      "referencia": "Al retomar el guano",
+      "capas": [
+        "14_carga_testigo",
+        "17_rotulo_producto",
+        "13_flujo_comercial"
+      ],
+      "accion": "Señalar el producto; revelar la flecha hacia el mercado",
+      "peso": "ligero",
+      "segundo": null
+    },
+    {
+      "id": "mercado",
+      "referencia": "Gran Bretaña",
+      "capas": [
+        "08_mapa_gran_bretana",
+        "16_rotulo_destino"
+      ],
+      "accion": "Revelar nombre y mapa juntos; sostener para ubicarlo",
+      "peso": "natural",
+      "segundo": null
+    },
+    {
+      "id": "uso",
+      "referencia": "Para usarlo como abono",
+      "capas": [
+        "09_campos_suelo",
+        "10_almacen",
+        "12_sacos_destino",
+        "11_cultivos"
+      ],
+      "accion": "Mostrar almacén y campos; señalar cultivos al explicar el abono",
+      "peso": "pesado",
+      "segundo": null
+    },
+    {
+      "id": "sintesis",
+      "referencia": "Pausa al cerrar la relación comercial",
+      "capas": [],
+      "accion": "Abrir a la composición terminada y mantenerla quieta",
+      "peso": "solemne",
+      "segundo": null
+    }
+  ],
+  "validacion": {
+    "capas": 18,
+    "viewBox_comun": true,
+    "imagenes_raster_en_svg": 0,
+    "recomposicion_estatica": {
+      "canvas": [
+        1920,
+        1080
+      ],
+      "parts": 18,
+      "pixels": 2073600,
+      "different": 3195,
+      "significant": 2007,
+      "maxDifference": 52,
+      "pixelIdentical": false
+    },
+    "animacion_probada": false,
+    "video_generado": false
+  }
+}
