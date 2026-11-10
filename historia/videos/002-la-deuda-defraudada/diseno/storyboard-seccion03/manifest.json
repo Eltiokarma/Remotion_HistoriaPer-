@@ -4,7 +4,7 @@
   "seccion": 3,
   "fecha": "2026-11-09",
   "herramienta": "VectorCraft mediante MCP",
-  "estado": "Borrador pendiente de revisión de Gerson",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
   "laminas": 3,
   "vinyetas": 12,
   "artboard": {
@@ -19,49 +19,74 @@
       "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
     },
     {
+      "archivo": "ANIMACION.md",
+      "bytes": 3908,
+      "sha256": "7578e6bdbc4172b81953beb7095a0eec65f39bd02f52eb6743df7f267225ddde"
+    },
+    {
       "archivo": "README.md",
-      "bytes": 9130,
-      "sha256": "c290df9be68346e56dca0dc6c42a931acc0a5bcd17b704c1ee1277fd309aba55"
+      "bytes": 10261,
+      "sha256": "3c2c0f57cac3056c1aab12bbd24653a4f4bba6b6aa953e99df58c59327de4f9a"
+    },
+    {
+      "archivo": "secuencia.json",
+      "bytes": 18240,
+      "sha256": "695411f4f488dd43cfda6234d21a3bc44c8d5f1704b3e3c4c1e6cad5899c1c06"
     },
     {
       "archivo": "storyboard-02-seccion03-lamina1.png",
-      "bytes": 305147,
-      "sha256": "2f5eb39bf7cbe66614ccc1885650615545bf930441d817efa8f3e2b0e55ce756"
+      "bytes": 326201,
+      "sha256": "cffc3295f75fd9b6220fb08832263b76ba0db1d54f24bf73b6564760aa27a2cc"
     },
     {
       "archivo": "storyboard-02-seccion03-lamina1.svg",
-      "bytes": 1657776,
-      "sha256": "663ca8479f75be6b6d98b8fdb34efc8cf2182f93a898a550eaefe19e8e9ab10a"
+      "bytes": 1899757,
+      "sha256": "1de2768373e7d7a09fa8c1d375590ca6f754872a761d10d705905e480285b9c9"
     },
     {
       "archivo": "storyboard-02-seccion03-lamina2.png",
-      "bytes": 313825,
-      "sha256": "2a80d122039a6acffc97c304ce12f3787a7f0a35dcc748991a08dee59fc06700"
+      "bytes": 350915,
+      "sha256": "9ae7b24587e31c338cefbe568368f74cbc0b64f92c8faea9e07e0d366349e90d"
     },
     {
       "archivo": "storyboard-02-seccion03-lamina2.svg",
-      "bytes": 1712383,
-      "sha256": "10b4eac534caff5ad354bfd572e3ae4633e0d430bb6d1f1218b7573a3575b55c"
+      "bytes": 1984928,
+      "sha256": "40bdf33dd9ad79546a74e15b5d10399e57af1ce1d91f59c990186e39d98c5e4b"
     },
     {
       "archivo": "storyboard-02-seccion03-lamina3.png",
-      "bytes": 330308,
-      "sha256": "bfbdf2b944fc055bc42113015fb971282570105e2ef44f3acaa89018cf989cea"
+      "bytes": 347012,
+      "sha256": "b9cda353788c7664833efa3a9ea6b4f4255649e5d6fe84dfafa3b8234939c53f"
     },
     {
       "archivo": "storyboard-02-seccion03-lamina3.svg",
-      "bytes": 1745094,
-      "sha256": "3c4e80fc2a52da3d227d43d8cca11f2cfeeebdb3d2d8f4ca91760ce9a316295b"
+      "bytes": 2026583,
+      "sha256": "b58e5dd3c4c45cb346c003f5655f499c55cbeece6eab7b1cac44d9798238869a"
     },
     {
       "archivo": "storyboard-02-seccion03.pdf",
-      "bytes": 2436149,
-      "sha256": "676d4361c7ddbcca6ba4ba8f32299c6d887d114b9b83e8dbdc8892dc6fa091b7"
+      "bytes": 2607480,
+      "sha256": "c2741fdc9b0ace7afb60fa01a4782f35283a29a7a9b989d359b72725d81eea41"
     },
     {
       "archivo": "storyboard-02-seccion03.vectorcraft",
-      "bytes": 95709,
-      "sha256": "1b1360669c68ea74aaf446255bb876030cbdf7d5c93842d0b19e5f96fa443ad0"
+      "bytes": 146630,
+      "sha256": "b7013b3efd2674e73c6f4c01128a61bed194456c33cb16bfaba1a85fb87c0395"
+    },
+    {
+      "archivo": "validacion.json",
+      "bytes": 794,
+      "sha256": "122019bfaac65bae0b699b611287363499471655f87a945395be4d6b47f8c3c6"
     }
-  ]
+  ],
+  "fecha_revision": "2026-11-10",
+  "revision": "Continuidad, personajes de época y rostros corregidos",
+  "conteo_revision": {
+    "figuras": 11,
+    "manos": 1,
+    "retirados": 0,
+    "laminas": 3,
+    "vinyetas": 12
+  },
+  "video_generado": false
 }

@@ -1,0 +1,608 @@
+{
+  "titulo": "La investigación y los vales que siguen circulando",
+  "seccion": 4,
+  "fecha_revision": "2026-11-10",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "herramienta": "VectorCraft mediante MCP",
+  "medidas": {
+    "lamina": [
+      2520,
+      2140
+    ],
+    "encuadre": [
+      1120,
+      630
+    ],
+    "destinoRemotion": [
+      1920,
+      1080
+    ],
+    "factorEncuadreARemotion": 1.7142857142857142
+  },
+  "proxima_seccion": 5,
+  "escenas_largas": [
+    {
+      "v": [
+        1,
+        3
+      ],
+      "nombre": "Escala general y circulación",
+      "pasos": [
+        "Salir expresamente del caso Novoa y mostrar la deuda reconocida.",
+        "Mostrar un vale genérico y su traspaso; los dos estados conservan el mismo papel.",
+        "Conservar vale y bono externo juntos durante el canje, anterior a la investigación de 1855."
+      ]
+    },
+    {
+      "v": [
+        4,
+        8
+      ],
+      "nombre": "De las cartas a la junta",
+      "pasos": [
+        "Recuperar a Elías y presentar por separado las fechas de sus dos cartas.",
+        "Volver a su gestión anterior y mantener presentes sus intereses.",
+        "El Estado permanece mientras avanza la cronología hasta 1855.",
+        "La junta abre otro conjunto de expedientes; revisar antecedentes, aprobación y emisión."
+      ]
+    },
+    {
+      "v": [
+        9,
+        12
+      ],
+      "nombre": "Hallazgos y suspensión",
+      "pasos": [
+        "Presentar 141 expedientes con la calificación irregulares o ilegales antes de 12,2 millones de pesos.",
+        "Contar aparte los cuatro expedientes robados, sin asignarles otro monto.",
+        "Distinguir servicio y conversión en la suspensión del 29 de diciembre de 1856.",
+        "Leer las posiciones de tenedores e investigadores como argumentos resumidos."
+      ]
+    },
+    {
+      "v": [
+        13,
+        16
+      ],
+      "nombre": "Restauración y fuentes",
+      "pasos": [
+        "Seguir las peticiones hacia las autoridades sin inventar pagos o culpables individuales.",
+        "Revelar la fecha del 11 de marzo de 1857 antes de reanudar el título.",
+        "Conservar a la vista el examen de origen al explicar la rehabilitación financiera.",
+        "Cambiar expresamente de época para pasar de los informes al historiador."
+      ]
+    }
+  ],
+  "vinyetas": [
+    {
+      "id": "s04-v01",
+      "numero": 1,
+      "titulo": "DEL CASO A LA ESCALA GENERAL",
+      "voz": "El de Novoa era uno entre muchos reclamos. Quiroz sitúa el aumento de la deuda reconocida entre 1851 y 1852.",
+      "camara_accion": "Abrir desde la carpeta de Novoa hacia las cuentas. Cifras de una en una; sostener la comparación.",
+      "base": "Q, p. 170 · deuda reconocida, no efectivo ni monto robado",
+      "lamina": 1,
+      "encuadre_documento": [
+        90,
+        260,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 106,
+          "nombre": "01 · DEL CASO A LA ESCALA GENERAL"
+        }
+      ]
+    },
+    {
+      "id": "s04-v02",
+      "numero": 2,
+      "titulo": "EL VALE CAMBIA DE MANOS",
+      "voz": "Los vales podían pasar de una persona a otra. Quien los tenía después podía ser distinto del reclamante original.",
+      "camara_accion": "Detalle de manos y vale. Seguir el mismo papel; retirar las cifras del caso Novoa.",
+      "base": "Q, pp. 170 y 183 · esquema de circulación, sin un caso individual",
+      "lamina": 1,
+      "encuadre_documento": [
+        1310,
+        260,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "mano_s04_v02_comerciante_agarre_izquierda",
+          "tipo": "mano",
+          "funcion": "comerciante",
+          "estado": "agarre",
+          "referencia": "../personajes-1850/detalles-manos/detalle-comerciante-agarre.svg",
+          "omitido": null,
+          "id_nativo": 4435,
+          "capa_nativa": 171,
+          "rectangulo": {
+            "height": 130.3700957869387,
+            "width": 293.4238887669162,
+            "x": 2089.111374396025,
+            "y": 587.7253457142656
+          },
+          "recorte_original": null,
+          "reflejado": true,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "mano_s04_v02_reclamante_agarre_derecha",
+          "tipo": "mano",
+          "funcion": "reclamante",
+          "estado": "agarre",
+          "referencia": "../personajes-1850/detalles-manos/detalle-reclamante-agarre.svg",
+          "omitido": null,
+          "id_nativo": 4446,
+          "capa_nativa": 171,
+          "rectangulo": {
+            "height": 130.37009578693858,
+            "width": 293.423888766916,
+            "x": 1354.4647368370588,
+            "y": 607.7253457142657
+          },
+          "recorte_original": null,
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 171,
+          "nombre": "02 · EL VALE CAMBIA DE MANOS"
+        }
+      ]
+    },
+    {
+      "id": "s04-v03",
+      "numero": 3,
+      "titulo": "DE VALE INTERNO A BONO EXTERNO",
+      "voz": "Parte de esos vales se cambió por bonos de deuda externa. El Estado seguía obligado, ahora mediante otro título.",
+      "camara_accion": "Revelar el bono al final del recorrido. Mantener juntos origen y nuevo instrumento; pausa para distinguirlos.",
+      "base": "Q, pp. 179–181 · conversión anterior a la investigación de 1855",
+      "lamina": 1,
+      "encuadre_documento": [
+        90,
+        1210,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 222,
+          "nombre": "03 · DE VALE INTERNO A BONO EXTERNO"
+        }
+      ]
+    },
+    {
+      "id": "s04-v04",
+      "numero": 4,
+      "titulo": "ELÍAS PUBLICA SUS CARTAS",
+      "voz": "Elías, el intermediario de Novoa, denunció los abusos en cartas a Echenique publicadas en El Comercio en 1853.",
+      "camara_accion": "Recuperar su ficha conocida y avanzar a las dos cartas. Entran primero nombre, luego fechas.",
+      "base": "Q, pp. 171–172, notas 112 y 114 · resúmenes de las cartas",
+      "lamina": 1,
+      "encuadre_documento": [
+        1310,
+        1210,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s04_v04_intermediario_senala",
+          "tipo": "actor",
+          "funcion": "intermediario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-intermediario-senala.svg",
+          "omitido": null,
+          "id_nativo": 4233,
+          "capa_nativa": 4027,
+          "rectangulo": {
+            "height": 303.1527777777778,
+            "width": 337.72283138401576,
+            "x": 1414.4837183235866,
+            "y": 1395.8472222222222
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 4027,
+          "nombre": "04 · ELÍAS PUBLICA SUS CARTAS"
+        }
+      ]
+    },
+    {
+      "id": "s04-v05",
+      "numero": 5,
+      "titulo": "UN DENUNCIANTE CON INTERESES",
+      "voz": "Elías había participado en las gestiones que criticaba. Hay que leer su denuncia teniendo presentes sus propios intereses.",
+      "camara_accion": "Volver un momento a su función de intermediario; reunir gestión y denuncia sin convertirlo en héroe ajeno al negocio.",
+      "base": "Q, pp. 170–172 y 187 · encarcelado tras la publicación de las cartas",
+      "lamina": 2,
+      "encuadre_documento": [
+        90,
+        2480,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s04_v05_intermediario_atencion",
+          "tipo": "actor",
+          "funcion": "intermediario",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-intermediario-atencion.svg",
+          "omitido": null,
+          "id_nativo": 4404,
+          "capa_nativa": 364,
+          "rectangulo": {
+            "height": 315.1527777777774,
+            "width": 204.57285575048707,
+            "x": 530.22056042885,
+            "y": 2665.8472222222226
+          },
+          "recorte_original": [
+            285,
+            95,
+            370,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 364,
+          "nombre": "05 · UN DENUNCIANTE CON INTERESES"
+        }
+      ]
+    },
+    {
+      "id": "s04-v06",
+      "numero": 6,
+      "titulo": "CAMBIA EL GOBIERNO",
+      "voz": "Después de una guerra civil, Echenique cayó y Castilla volvió al poder. El nuevo gobierno abrió una investigación.",
+      "camara_accion": "Recorrer la cronología hasta 1855. Los títulos permanecen mientras cambian las fichas de gobierno.",
+      "base": "Q, pp. 181–183 · cambio político y posterior examen fiscal",
+      "lamina": 2,
+      "encuadre_documento": [
+        1310,
+        2480,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 1633,
+          "nombre": "06 · Estado aprobado sin presentación"
+        },
+        {
+          "id": 460,
+          "nombre": "06 · CAMBIA EL GOBIERNO"
+        }
+      ]
+    },
+    {
+      "id": "s04-v07",
+      "numero": 7,
+      "titulo": "LA JUNTA ABRE LOS EXPEDIENTES",
+      "voz": "La Junta de Examen Fiscal revisó los expedientes y las decisiones que habían permitido emitir los vales.",
+      "camara_accion": "Abrir el archivo y llevar una carpeta a la mesa. Los documentos de revisión son distintos del resumen de Novoa.",
+      "base": "Q, pp. 182–183 y nota 147 · Junta creada en febrero de 1855",
+      "lamina": 2,
+      "encuadre_documento": [
+        90,
+        3430,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 2392,
+          "nombre": "07 · Fichero aprobado sin presentación"
+        },
+        {
+          "id": 1240,
+          "nombre": "07 · LA JUNTA ABRE LOS EXPEDIENTES"
+        }
+      ]
+    },
+    {
+      "id": "s04-v08",
+      "numero": 8,
+      "titulo": "REVISAR EL ORIGEN DE LOS TÍTULOS",
+      "voz": "Había que volver al origen de cada reconocimiento: los documentos, las aprobaciones y la emisión de los títulos.",
+      "camara_accion": "Acercar a tres documentos vinculados. El foco pasa de antecedente a aprobación y emisión; no falsificar un hallazgo particular.",
+      "base": "Q, p. 183, nota 147 · reconstrucción esquemática del examen",
+      "lamina": 2,
+      "encuadre_documento": [
+        1310,
+        3430,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "mano_s04_v08_funcionario_apoyo_derecha",
+          "tipo": "mano",
+          "funcion": "funcionario",
+          "estado": "apoyo",
+          "referencia": "../personajes-1850/detalles-manos/detalle-funcionario-apoyo.svg",
+          "omitido": null,
+          "id_nativo": 4422,
+          "capa_nativa": 1561,
+          "rectangulo": {
+            "height": 82.1310635199352,
+            "width": 161.82771496446753,
+            "x": 1315.0000027534913,
+            "y": 3912.0588064020667
+          },
+          "recorte_original": null,
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 1561,
+          "nombre": "08 · REVISAR EL ORIGEN DE LOS TÍTULOS"
+        }
+      ]
+    },
+    {
+      "id": "s04-v09",
+      "numero": 9,
+      "titulo": "LO QUE ENCONTRÓ LA JUNTA",
+      "voz": "Según Quiroz, la junta detectó 12,2 millones de pesos en 141 expedientes irregulares o ilegales.",
+      "camara_accion": "Primero el número de expedientes y su calificación; después el monto. Cámara quieta y pausa de lectura.",
+      "base": "Q, p. 183, nota 147 · monto vinculado a esos expedientes",
+      "lamina": 3,
+      "encuadre_documento": [
+        90,
+        4700,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 2569,
+          "nombre": "09 · LO QUE ENCONTRÓ LA JUNTA"
+        }
+      ]
+    },
+    {
+      "id": "s04-v10",
+      "numero": 10,
+      "titulo": "CUATRO EXPEDIENTES ROBADOS",
+      "voz": "También registró cuatro expedientes robados. Ese dato se cuenta aparte de los montos revisados.",
+      "camara_accion": "Desplazar el foco a cuatro espacios vacíos. Volver al rótulo que identifica qué se está contando.",
+      "base": "Q, p. 183, nota 147 · cuatro expedientes, sin monto adicional conocido",
+      "lamina": 3,
+      "encuadre_documento": [
+        1310,
+        4700,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 2632,
+          "nombre": "10 · CUATRO EXPEDIENTES ROBADOS"
+        }
+      ]
+    },
+    {
+      "id": "s04-v11",
+      "numero": 11,
+      "titulo": "SE SUSPENDE EL SERVICIO",
+      "voz": "En diciembre de 1856 se suspendió el servicio de los vales cuestionados por su origen. También se frenó temporalmente la conversión.",
+      "camara_accion": "Detener el servicio del título y la conversión por separado. Los papeles permanecen; no representar su destrucción.",
+      "base": "Q, p. 183 · ley del 29 de diciembre de 1856",
+      "lamina": 3,
+      "encuadre_documento": [
+        90,
+        5650,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 2702,
+          "nombre": "11 · SE SUSPENDE EL SERVICIO"
+        }
+      ]
+    },
+    {
+      "id": "s04-v12",
+      "numero": 12,
+      "titulo": "DOS ARGUMENTOS EN DISPUTA",
+      "voz": "Los tenedores querían proteger su inversión. La junta sostenía que el traspaso no impedía anular los títulos por fraude.",
+      "camara_accion": "Leer primero la posición de los tenedores; luego la de los investigadores. Pausa con ambas a la vista.",
+      "base": "Q, p. 183 · posiciones enfrentadas, no un fallo judicial inventado",
+      "lamina": 3,
+      "encuadre_documento": [
+        1310,
+        5650,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "mano_s04_v12_comerciante_apoyo_derecha",
+          "tipo": "mano",
+          "funcion": "comerciante",
+          "estado": "apoyo",
+          "referencia": "../personajes-1850/detalles-manos/detalle-comerciante-apoyo.svg",
+          "omitido": null,
+          "id_nativo": 4413,
+          "capa_nativa": 2755,
+          "rectangulo": {
+            "height": 81.22852436037556,
+            "width": 160.04938842639672,
+            "x": 1318.0000027232331,
+            "y": 6134.069149188857
+          },
+          "recorte_original": null,
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 2755,
+          "nombre": "12 · DOS ARGUMENTOS EN DISPUTA"
+        }
+      ]
+    },
+    {
+      "id": "s04-v13",
+      "numero": 13,
+      "titulo": "PRESIONES LOCALES Y EXTERNAS",
+      "voz": "Hubo presiones de comerciantes, financistas y representantes diplomáticos de Gran Bretaña y Francia para revertir las medidas.",
+      "camara_accion": "Seguir las peticiones hasta la mesa del gobierno. Identificar a cada grupo al entrar; evitar introducir nombres innecesarios.",
+      "base": "Q, pp. 184–185 · presión sobre las autoridades peruanas",
+      "lamina": 4,
+      "encuadre_documento": [
+        90,
+        6920,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s04_v13_funcionario_atencion",
+          "tipo": "actor",
+          "funcion": "funcionario",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-funcionario-atencion.svg",
+          "omitido": null,
+          "id_nativo": 4319,
+          "capa_nativa": 2812,
+          "rectangulo": {
+            "height": 186.52145689309236,
+            "width": 121.07533166744588,
+            "x": 569.559252950124,
+            "y": 7259.278543106909
+          },
+          "recorte_original": [
+            285,
+            95,
+            370,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 2812,
+          "nombre": "13 · PRESIONES LOCALES Y EXTERNAS"
+        }
+      ]
+    },
+    {
+      "id": "s04-v14",
+      "numero": 14,
+      "titulo": "SE RESTAURAN LOS ACUERDOS",
+      "voz": "En marzo de 1857 se restauraron los acuerdos suspendidos sobre bonos y conversión. La decisión respondió a presiones locales y externas.",
+      "camara_accion": "Recuperar el título detenido en la viñeta 11. Cambiar su estado después de mostrar la fecha; dejarlo avanzar.",
+      "base": "Q, p. 185 · ley del 11 de marzo de 1857",
+      "lamina": 4,
+      "encuadre_documento": [
+        1310,
+        6920,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 3671,
+          "nombre": "14 · SE RESTAURAN LOS ACUERDOS"
+        }
+      ]
+    },
+    {
+      "id": "s04-v15",
+      "numero": 15,
+      "titulo": "REHABILITAR NO BORRA EL ORIGEN",
+      "voz": "Quiroz interpreta ese desenlace como una derrota de las medidas contra los abusos. Rehabilitar los títulos no demostraba un origen regular.",
+      "camara_accion": "Separar la restauración financiera del examen de origen. No convertirla en una absolución penal general.",
+      "base": "Q, pp. 183–185 · interpretación del desenlace y distinción editorial",
+      "lamina": 4,
+      "encuadre_documento": [
+        90,
+        7870,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 3724,
+          "nombre": "15 · REHABILITAR NO BORRA EL ORIGEN"
+        }
+      ]
+    },
+    {
+      "id": "s04-v16",
+      "numero": 16,
+      "titulo": "QUEDAN LOS INFORMES",
+      "voz": "La junta dejó informes sobre personas y redes. Volvamos a esos documentos para entender cómo Quiroz reconstruyó el negocio.",
+      "camara_accion": "Pasar del archivo al trabajo del historiador con un cambio de época explícito. Abrir la sección 5, dedicada al método.",
+      "base": "Q, p. 183 · puente editorial hacia la mesa del historiador",
+      "lamina": 4,
+      "encuadre_documento": [
+        1310,
+        7870,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 3760,
+          "nombre": "16 · QUEDAN LOS INFORMES"
+        }
+      ]
+    }
+  ]
+}

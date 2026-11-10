@@ -24,7 +24,7 @@ El cierre deja visibles el carácter aproximado y revisable del cálculo y el pr
 
 | N.º | Encuadre | Voz propuesta | Cámara, acción y pausa | Base |
 |---|---|---|---|---|
-| 01 | VOLVEMOS A LAS ISLAS | Empezamos con el guano y los ingresos del Estado. Volvamos a esos recursos para reunir lo que hemos visto. | Regresar a las islas aprobadas; recorrer hacia el Estado. El recuerdo prepara el cierre, sin repetir toda la extracción. | Q, pp. 164–170 · retorno al origen de los recursos públicos |
+| 01 | VOLVEMOS A LAS ISLAS | Empezamos con el guano y los ingresos del Estado. Volvamos a esos recursos para reunir lo que hemos visto. | Regresar a Chincha detallada; recorrer hacia el Estado. El recuerdo prepara el cierre, sin repetir la extracción. | Q, pp. 164–170 · retorno al origen de los recursos públicos |
 | 02 | LA PROMESA DEL CRÉDITO PÚBLICO | Reconocer las deudas debía ayudar a recuperar la confianza en el crédito público. | Recuperar el reclamo y el vale. Señalar primero la finalidad del reconocimiento; sostener el propósito escrito. | Q, p. 169 · finalidad declarada de la consolidación |
 | 03 | QUIÉNES QUEDARON FUERA | Pero muchos reclamantes originales y pequeños inversionistas quedaron fuera. Los beneficios se concentraron. | Separar posiciones con fichas de función. Mantener el Estado y los títulos; evitar porcentajes o identidades inventados. | Q, pp. 172–173 · exclusión y concentración de beneficios |
 | 04 | EL RECORRIDO COMPLETO | Ahora podemos unir los ingresos, los reclamos, los títulos y la investigación que siguió sus irregularidades. | Recorrer los objetos con acercamientos. Abrir al final y dejar el circuito completo quieto; pausa sin voz. | Q, pp. 169–185 · recapitulación editorial de relaciones ya explicadas |
@@ -70,11 +70,11 @@ El cotejo detectó una imprecisión en la ficha sobre el orden del apéndice. En
 - La pregunta del episodio 003 y el índice final son decisiones editoriales del plan de la serie. El episodio 003 tratará fuentes, decisiones y límites; los resultados generales corresponden al 004.
 - El cierre no muestra una fórmula, regresión, cifra de costo total o porcentaje nuevo. Las distinciones del caso se conservan al preparar la pregunta por la medición.
 
-## Recursos aprobados recuperados
+## Recursos recuperados
 
-Se reutilizan dibujos propios del episodio 001, ya respaldados en [recursos aprobados](../../../001-el-hombre/diseno/recursos-aprobados/README.md):
+Se recupera Chincha de la revisión detallada de la sección 1 y se mantienen dibujos propios aprobados del episodio 001. La procedencia se indica para cada recurso:
 
-- [Islas guaneras v3](../../../001-el-hombre/diseno/recursos-aprobados/islas-guaneras-v3.svg), en viñetas 1 y 4.
+- [Chincha detallada](recursos/chincha-retorno.svg), en viñetas 1 y 4. Derivada por MCP de las capas 02–07 del esquema de la sección 1, con mar azul; borrador pendiente de aprobación.
 - [Edificio del Estado](../../../001-el-hombre/diseno/recursos-aprobados/edificio-estado-video01.svg), en viñetas 1 y 4.
 - [Fichero](../../../001-el-hombre/diseno/recursos-aprobados/tanda04-fichero.svg), en viñetas 4 y 5.
 - [Libro](../../../001-el-hombre/diseno/recursos-aprobados/tanda03-libro.svg), en viñetas 5 y 9.
@@ -82,11 +82,18 @@ Se reutilizan dibujos propios del episodio 001, ya respaldados en [recursos apro
 
 Se separaron fondos y rótulos de presentación para encuadrar las piezas, sin modificar los originales. Se importaron mediante el MCP de VectorCraft como vectores incrustados. La cubierta es tipografía editorial propia, no un facsímil de la edición publicada. Las pruebas mantienen su identificación de maqueta ilustrativa y texto de muestra.
 
-Los demás documentos, manos, saco, figuras, libro abierto, pizarra, fichas e índice se dibujaron con herramientas nativas de VectorCraft. Continúan la paleta de verde, papel, ocre y rojo apagado. Las figuras son funciones genéricas, no retratos históricos. El mobiliario, la vestimenta y la mesa no se presentan como reconstrucciones documentadas de una escena real.
+Los demás documentos, manos, saco, libro abierto, pizarra, fichas e índice se dibujaron con herramientas nativas de VectorCraft. Continúan la paleta de verde, papel, ocre y rojo apagado. Las dos fichas de grupos excluidos no identifican a Novoa ni a otro participante y no representan un recuento. El mobiliario, la vestimenta y la mesa no se presentan como reconstrucciones documentadas de una escena real.
 
 ## Estado y verificación
 
 Se revisaron las tres láminas y se ajustaron la escala de las islas y las separaciones entre recursos y rótulos. VectorCraft no informó desbordamientos de texto; cada viñeta conserva una propuesta de voz y una nota de cámara y acción. El original contiene tres mesas y los recursos están incrustados. Las exportaciones se registran en el manifiesto con sus tamaños y SHA-256.
 
-Borrador pendiente de revisión visual, voz y tiempos por Gerson. No está integrado en Remotion ni constituye una animación aprobada. No se generó video. La revisión de detalle pendiente en la sección 1 sigue abierta.
+Borrador pendiente de revisión visual, voz y tiempos por Gerson. No está integrado en Remotion ni constituye una animación aprobada. No se generó video. La sección 1 dispone de [revisión detallada](../storyboard-seccion01/revision-detallada/README.md), pendiente de aprobación visual.
 
+## Revisión de continuidad y personajes
+
+Revisión del 10 de noviembre de 2026 en VectorCraft mediante MCP. Se actualizaron las figuras y los detalles de mano presentes en esta sección con el [canon de época](../personajes-1850/README.md), manteniendo los rostros corregidos. Las categorías de excluidos se muestran con fichas, sin repetir el rostro de Novoa. Chincha recupera las capas detalladas y el mar azul de la sección 1; el cambio de época del historiador se conserva.
+
+[ANIMACION.md](ANIMACION.md) y [secuencia.json](secuencia.json) reúnen escenas largas, encuadres, recursos y propuestas de movimiento. La voz y los datos históricos mantienen el alcance del cotejo anterior. Los participantes con nombre son representaciones del relato, sin retratos, diálogos o emociones atribuidos como hechos.
+
+Se revisaron estáticamente las láminas en VectorCraft. Pendientes de aprobación visual de Gerson, locución, tiempos, integración y comprobación del movimiento en Remotion. No se generó video.

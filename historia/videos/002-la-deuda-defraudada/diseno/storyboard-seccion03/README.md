@@ -60,11 +60,18 @@ Las notas del propio libro remiten a la segunda carta de Elías a Echenique de a
 
 ## Reconstrucción visual y uso
 
-Dibujo propio con herramientas nativas de VectorCraft mediante MCP. Continúa la paleta de verde, papel, ocre y rojo apagado del proyecto. Las composiciones de documentos son resúmenes editoriales; no son facsímiles ni transcripciones de documentos originales. Las figuras son esquemáticas, no retratos documentados. El mobiliario, la vestimenta y la hacienda no se presentan como reproducciones históricas exactas. Si se convierten en ilustraciones definitivas, requieren referencias de época antes de atribuirles esa precisión.
+Dibujo propio con herramientas nativas de VectorCraft mediante MCP. Continúa la paleta de verde, papel, ocre y rojo apagado del proyecto. Las composiciones de documentos son resúmenes editoriales; no son facsímiles ni transcripciones de documentos originales. Las figuras son esquemáticas, no retratos documentados. El mobiliario, la vestimenta y la hacienda no se presentan como reproducciones históricas exactas. El vestuario actualizado usa las [referencias del canon](../personajes-1850/REFERENCIAS.md), sin atribuir a cada participante una apariencia histórica documentada.
 
-Las indicaciones de cámara, silencio, entrada y continuidad son decisiones de storyboard. No son afirmaciones del libro. Este material no está integrado en Remotion y no constituye una animación aprobada. No se ha generado video. La revisión pendiente por detalle insuficiente de la sección 1 sigue abierta.
+Las indicaciones de cámara, silencio, entrada y continuidad son decisiones de storyboard. No son afirmaciones del libro. Este material no está integrado en Remotion y no constituye una animación aprobada. No se ha generado video. La sección 1 dispone de [revisión detallada](../storyboard-seccion01/revision-detallada/README.md), pendiente de aprobación visual.
 
 ## Verificación del borrador
 
 Se revisaron visualmente las tres láminas y se corrigieron títulos largos y trazos que salían del encuadre. No hay cuadros de texto con desbordamiento informado por VectorCraft. Las exportaciones PNG, SVG, PDF y el archivo nativo se incluyen en el manifiesto con tamaño y SHA-256. La aprobación visual y la revisión de la voz corresponden a Gerson.
 
+## Revisión de continuidad y personajes
+
+Revisión del 10 de noviembre de 2026 en VectorCraft mediante MCP. Se actualizaron las figuras y los detalles de mano presentes en esta sección con el [canon de época](../personajes-1850/README.md), manteniendo los rostros corregidos. Novoa usa la reclamante; Elías, la variante marrón; Echenique y Torrico, un modelo civil de función identificado por su rótulo. Se retiran los adornos militares anteriores, cuya precisión no estaba documentada.
+
+[ANIMACION.md](ANIMACION.md) y [secuencia.json](secuencia.json) reúnen escenas largas, encuadres, recursos y propuestas de movimiento. La voz y los datos históricos mantienen el alcance del cotejo anterior. Los participantes con nombre son representaciones del relato, sin retratos, diálogos o emociones atribuidos como hechos.
+
+Se revisaron estáticamente las láminas en VectorCraft. Pendientes de aprobación visual de Gerson, locución, tiempos, integración y comprobación del movimiento en Remotion. No se generó video.

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="277.968" y1="617.729" x2="602.032" y2="530.896" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#514d3d"/>
+      <stop offset="0.48" stop-color="#7b7051"/>
+      <stop offset="1" stop-color="#958262"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="394" y1="501.5" x2="501" y2="501.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b4a079"/>
+      <stop offset="1" stop-color="#897d5d"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_11_torso" data-name="11_torso">
+    <path d="M368 344 C414.667 328.667 462.667 329.333 512 346 L532 438 L515 629 L549 803 C516.333 821.667 485 819.667 455 797 L444 661 L426 799 C389.333 813 357.667 810.667 331 792 L362 619 L346 443 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="407,346 482,343 501,619 450,660 394,618" fill="url(#linear-gradient-2)" stroke="#2d4238" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="418,350 448,403 477,347 469,449 428,450" fill="#e6dabc" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="389,344 425,360 442,421 408,457 376,387 389,376 373,367" fill="#968768" stroke="#aeb69a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="493,343 467,363 451,420 487,458 521,385 507,374 520,365" fill="#968768" stroke="#aeb69a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M404 474 L398 616 L444 646 M494 473 L500 612 L458 647 M358 665 C378.667 683 401 686.667 425 676 M475 680 C499 691.333 518.667 690 534 676" fill="none" stroke="#91a18a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="451.5" cy="465.5" r="3.5" fill="#cab98a" stroke="#2d4238" stroke-width="0.9" stroke-miterlimit="10"/>
+    <line x1="462" y1="466" x2="469" y2="465" fill="none" stroke="#6c7157" stroke-miterlimit="10"/>
+    <circle cx="451.5" cy="497.5" r="3.5" fill="#cab98a" stroke="#2d4238" stroke-width="0.9" stroke-miterlimit="10"/>
+    <line x1="462" y1="498" x2="469" y2="497" fill="none" stroke="#6c7157" stroke-miterlimit="10"/>
+    <circle cx="451.5" cy="529.5" r="3.5" fill="#cab98a" stroke="#2d4238" stroke-width="0.9" stroke-miterlimit="10"/>
+    <line x1="462" y1="530" x2="469" y2="529" fill="none" stroke="#6c7157" stroke-miterlimit="10"/>
+    <circle cx="451.5" cy="561.5" r="3.5" fill="#cab98a" stroke="#2d4238" stroke-width="0.9" stroke-miterlimit="10"/>
+    <line x1="462" y1="562" x2="469" y2="561" fill="none" stroke="#6c7157" stroke-miterlimit="10"/>
+    <circle cx="451.5" cy="593.5" r="3.5" fill="#cab98a" stroke="#2d4238" stroke-width="0.9" stroke-miterlimit="10"/>
+    <line x1="462" y1="594" x2="469" y2="593" fill="none" stroke="#6c7157" stroke-miterlimit="10"/>
+    <path d="M381 600 L418 600 M480 600 L514 600" fill="none" stroke="#d0c297" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M385 605 C418.333 627.667 449.333 628 478 606" fill="none" stroke="#c2b181" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="479" cy="605" r="4" fill="#bcad7f" stroke="#2d4238" stroke-width="0.8" stroke-miterlimit="10"/>
+  </g>
+</svg>

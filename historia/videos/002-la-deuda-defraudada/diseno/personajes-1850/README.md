@@ -35,3 +35,15 @@ Se corrigieron los cuatro modelos, cuatro poses y ocho expresiones exportadas. S
 - [Lámina anterior para comparar](https://github.com/Eltiokarma/Remotion_HistoriaPer-/blob/a1210a30b6d733f7005f6e03bc12bda5038de5f9/historia/videos/002-la-deuda-defraudada/diseno/personajes-1850/personajes-1850-lamina2.png)
 
 La revisión se hizo sobre los vectores de origen y sus copias incrustadas. La ropa, los pivotes y las combinaciones de expresión se mantienen. Sigue pendiente la aprobación visual de Gerson.
+
+## Poses de las secciones 2 a 5
+
+Revisión del 10 de noviembre de 2026 en VectorCraft mediante MCP. Se añaden ocho bustos de referencia, ocho detalles de antebrazo y mano y una variante de ropa para el intermediario. Las 135 piezas canónicas permanecen sin cambios.
+
+- [Poses y recortes](bustos/poses.json): atención y señalamiento; ojos abiertos, cejas de atención y boca en reposo.
+- [Variante del intermediario](variantes/intermediario/README.md): cinco sustituciones sobre el rig del comerciante.
+- Los bustos son referencias de encuadre. Para mover hombro, codo o cabeza, usar las piezas y la jerarquía de los rigs. Las capas ocultas de los nativos conservan otras expresiones; las SVG muestran solo el estado elegido.
+- Los detalles de mano son acercamientos. Las láminas no resuelven por sí solas el contacto durante una entrega.
+- Las figuras con nombre representan funciones del relato, con rótulos que identifican a cada participante. No son retratos documentados.
+
+Las SVG recortadas de un busto no sustituyen las piezas alineadas del rig. Mantener los campos de 900 × 1200 al montar los personajes en Remotion. El cierre utiliza fichas de grupos para evitar identificar a Novoa con los reclamantes excluidos.

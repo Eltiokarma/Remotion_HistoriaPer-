@@ -25,7 +25,7 @@ La escena larga alterna carpeta, mesa, planos medios y acercamientos a documento
 | 03 | LA LEY DE CONSOLIDACIÓN | En 1850 se buscó organizar el reconocimiento de esas obligaciones. | La fecha queda escrita. Del texto de la ley volvemos al reclamo. |
 | 04 | REVISAR QUÉ SE DEBÍA | Había que comprobar a quién se debía, por qué y cuánto correspondía reconocer. | Acercar al expediente. Iluminar origen, acreedor y monto por turnos. |
 | 05 | DEL RECLAMO AL VALE | Si la deuda era reconocida, el acreedor podía recibir un vale del Estado. | Mantener el reclamo a la izquierda; el vale aparece como un documento distinto. |
-| 06 | RECIBIR UN TÍTULO DE DEUDA | Tener ese vale no era lo mismo que cobrar inmediatamente su valor en efectivo. | Seguir el vale hasta la mano del acreedor. Pausa para leer qué representa. |
+| 06 | RECIBIR UN TÍTULO DE DEUDA | Tener ese vale no era lo mismo que cobrar inmediatamente su valor en efectivo. | Desplazar el vale del Estado hacia el acreedor. Pausa para distinguir título y efectivo. |
 | 07 | VOLVAMOS AL RECLAMO | Ahora volvamos al momento anterior al reconocimiento. | Retroceso explicativo visible. Recuperar la marca roja y la carpeta inicial. |
 | 08 | COMPRAR EL PAPEL A BAJO PRECIO | Los especuladores compraban documentos de reclamo o deuda a bajo precio. | Primer plano de las manos. Separar precio de compra y valor del reclamo. |
 | 09 | EL INTERMEDIARIO GESTIONA | Había intermediarios que buscaban el reconocimiento de esos expedientes. | Plano medio. El mismo documento pasa del comprador a quien hace la gestión. |
@@ -41,8 +41,16 @@ Los documentos, sus campos, las personas, la ropa y la oficina son reconstruccio
 
 La ley dibujada resume el tema y su finalidad; su disposición tipográfica y las frases del papel no son una transcripción literal de artículos. Los textos entre comillas del guion, si se incorporan después, deberán cotejarse como citas.
 
-Las piezas se dibujaron con herramientas nativas del MCP de VectorCraft. Adaptan la paleta y la gramática de papel, carpeta y pizarra del proyecto. Aún no son recursos integrados ni una animación validada. El storyboard de la sección 1 conserva su revisión pendiente por detalle insuficiente.
+Las piezas se dibujaron con herramientas nativas del MCP de VectorCraft. Adaptan la paleta y la gramática de papel, carpeta y pizarra del proyecto. Aún no son recursos integrados ni una animación validada. La sección 1 tiene una [revisión detallada](../storyboard-seccion01/revision-detallada/README.md), todavía pendiente de aprobación visual.
 
 ## Para revisar
 
-Comprobar que se entiendan la distinción reclamo/vale, el retroceso de la viñeta 07 y la diferencia entre una compraventa de deuda y el reconocimiento indebido. Revisar la voz y el tiempo de lectura antes de fijar duraciones o animar. Las futuras ilustraciones definitivas requieren referencias de época para vestimenta, instrumentos y espacios.
+Comprobar que se entiendan la distinción reclamo/vale, el retroceso de la viñeta 07 y la diferencia entre una compraventa de deuda y el reconocimiento indebido. Revisar la voz y el tiempo de lectura antes de fijar duraciones o animar. La ropa actualizada se guía por las [referencias del canon](../personajes-1850/REFERENCIAS.md). Los documentos y espacios siguen siendo reconstrucciones editoriales.
+
+## Revisión de continuidad y personajes
+
+Revisión del 10 de noviembre de 2026 en VectorCraft mediante MCP. Se actualizaron las figuras y los detalles de mano presentes en esta sección con el [canon de época](../personajes-1850/README.md), manteniendo los rostros corregidos. Se retiran cinco detalles de mano redundantes en planos que ya muestran los dos brazos del personaje. Los acercamientos 05 y 08 conservan manos y contacto de referencia con los bordes del papel.
+
+[ANIMACION.md](ANIMACION.md) y [secuencia.json](secuencia.json) reúnen escenas largas, encuadres, recursos y propuestas de movimiento. La voz y los datos históricos mantienen el alcance del cotejo anterior. Los participantes con nombre son representaciones del relato, sin retratos, diálogos o emociones atribuidos como hechos.
+
+Se revisaron estáticamente las láminas en VectorCraft. Pendientes de aprobación visual de Gerson, locución, tiempos, integración y comprobación del movimiento en Remotion. No se generó video.

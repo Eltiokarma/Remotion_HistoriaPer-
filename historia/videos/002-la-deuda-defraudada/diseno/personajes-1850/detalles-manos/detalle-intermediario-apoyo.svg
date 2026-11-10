@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="245.493" height="124.593" viewBox="0 0 245.493 124.593">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="104.129" y1="142.548" x2="72.214" y2="23.438" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#514d3d"/>
+      <stop offset="0.48" stop-color="#7b7051"/>
+      <stop offset="1" stop-color="#958262"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="203.943" y1="87.493" x2="203.943" y2="0.85" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0af87"/>
+      <stop offset="1" stop-color="#c39d79"/>
+    </linearGradient>
+  </defs>
+  <title>Untitled-23</title>
+  <g id="Selection">
+    <path d="M6.243 123.493 C-1.757 107.493 -0.424 91.16 10.243 74.493 L159.243 42.493 L175.243 81.493 L112.243 106.493 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="149.243,86.493 137.243,45.493 163.243,38.493 176.243,79.493" fill="#ded3b3" stroke="#2d4238" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M35.243 101.493 C74.576 91.493 107.576 82.16 134.243 73.493" fill="none" stroke="#b7b794" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="124.243" cy="55.493" r="2" fill="#a6b098" stroke="#2d4238" stroke-width="0.8" stroke-miterlimit="10"/>
+    <circle cx="133.243" cy="50.493" r="2" fill="#a6b098" stroke="#2d4238" stroke-width="0.8" stroke-miterlimit="10"/>
+    <path d="M166.243 78.493 C162.243 67.826 162.243 56.16 166.243 43.493 L185.243 32.493 L191.243 9.493 C193.91 2.16 197.243 -0.507 201.243 1.493 C205.243 2.826 206.243 8.16 204.243 17.493 L201.243 37.493 L213.243 8.493 C217.243 3.826 220.576 4.16 223.243 9.493 L213.243 37.493 L227.243 18.493 C231.91 15.826 235.243 16.826 237.243 21.493 L220.243 44.493 L238.243 31.493 C243.576 31.493 245.576 33.826 244.243 38.493 L225.243 60.493 L212.243 77.493 L196.243 87.493 Z" fill="url(#linear-gradient-2)" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M187.243 76.493 C194.576 69.826 199.576 59.16 202.243 44.493" fill="none" stroke="#98775a" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

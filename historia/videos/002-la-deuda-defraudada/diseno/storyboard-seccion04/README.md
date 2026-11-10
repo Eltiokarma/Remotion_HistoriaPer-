@@ -91,7 +91,7 @@ Para colocarlos se separaron sus capas de dibujo de los fondos y rótulos de pre
 
 Los demás papeles, títulos, manos, mobiliario, figuras, armario y libro se dibujaron con herramientas nativas de VectorCraft mediante MCP. La figura de Elías continúa la representación esquemática de la sección 3; no pretende ser un retrato documentado. La figura ante el Estado en la viñeta 13 es una función genérica, sin identidad atribuida. El libro tiene una cubierta editorial simplificada, no un facsímil de su diseño publicado. Toda la escena usa la paleta y la gramática de papel, ocre, rojo apagado y verde del proyecto.
 
-La vestimenta, el mobiliario y la disposición de los documentos no se presentan como reproducciones históricas exactas. Antes de convertirlos en una escena histórica definitiva deben revisarse sus referencias de época.
+La vestimenta, el mobiliario y la disposición de los documentos no se presentan como reproducciones históricas exactas. El vestuario revisado usa las [referencias del canon](../personajes-1850/REFERENCIAS.md); la escena no documenta la apariencia de los participantes.
 
 ## Verificación y estado
 
@@ -99,3 +99,10 @@ Se revisaron las cuatro láminas en VectorCraft y la lectura a resolución de ex
 
 Estado: creación del borrador terminada; aprobación visual, revisión de la voz y tiempos pendientes de Gerson. La revisión pendiente de detalle de la sección 1 sigue abierta.
 
+## Revisión de continuidad y personajes
+
+Revisión del 10 de noviembre de 2026 en VectorCraft mediante MCP. Se actualizaron las figuras y los detalles de mano presentes en esta sección con el [canon de época](../personajes-1850/README.md), manteniendo los rostros corregidos. Elías mantiene la misma variante que en Novoa. El tenedor posterior no se identifica con un participante del caso. Los acercamientos conservan mangas y manos del kit.
+
+[ANIMACION.md](ANIMACION.md) y [secuencia.json](secuencia.json) reúnen escenas largas, encuadres, recursos y propuestas de movimiento. La voz y los datos históricos mantienen el alcance del cotejo anterior. Los participantes con nombre son representaciones del relato, sin retratos, diálogos o emociones atribuidos como hechos.
+
+Se revisaron estáticamente las láminas en VectorCraft. Pendientes de aprobación visual de Gerson, locución, tiempos, integración y comprobación del movimiento en Remotion. No se generó video.

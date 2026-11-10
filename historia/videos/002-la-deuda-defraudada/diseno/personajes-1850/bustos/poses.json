@@ -1,0 +1,273 @@
+{
+  "fecha": "2026-11-10",
+  "estado": "Referencias estáticas; no animación validada",
+  "canvasDelRig": [
+    900,
+    1200
+  ],
+  "origen": "La geometría se conserva en el lienzo original. El recorte se utiliza para las referencias del storyboard, sin modificar las piezas del rig.",
+  "poses": [
+    {
+      "nombre": "busto-intermediario-senala",
+      "base": "../variantes/intermediario/variante.json",
+      "svg": "busto-intermediario-senala.svg",
+      "nativo": "busto-intermediario-senala.vectorcraft",
+      "recorte_original": [
+        285,
+        95,
+        635,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "36_mano_senala",
+        "rotacionesCSS": {
+          "12_brazo_cercano": -35,
+          "13_antebrazo_cercano": -50
+        }
+      }
+    },
+    {
+      "nombre": "busto-intermediario-atencion",
+      "base": "../variantes/intermediario/variante.json",
+      "svg": "busto-intermediario-atencion.svg",
+      "nativo": "busto-intermediario-atencion.vectorcraft",
+      "recorte_original": [
+        285,
+        95,
+        370,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "14_mano_cercana",
+        "rotacionesCSS": {}
+      }
+    },
+    {
+      "nombre": "busto-funcionario-atencion",
+      "base": "../funcionario/rig.json",
+      "svg": "busto-funcionario-atencion.svg",
+      "nativo": "busto-funcionario-atencion.vectorcraft",
+      "recorte_original": [
+        285,
+        95,
+        370,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "14_mano_cercana",
+        "rotacionesCSS": {}
+      }
+    },
+    {
+      "nombre": "busto-reclamante-atencion",
+      "base": "../reclamante/rig.json",
+      "svg": "busto-reclamante-atencion.svg",
+      "nativo": "busto-reclamante-atencion.vectorcraft",
+      "recorte_original": [
+        260,
+        95,
+        410,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "14_mano_cercana",
+        "rotacionesCSS": {}
+      }
+    },
+    {
+      "nombre": "busto-reclamante-senala",
+      "base": "../reclamante/rig.json",
+      "svg": "busto-reclamante-senala.svg",
+      "nativo": "busto-reclamante-senala.vectorcraft",
+      "recorte_original": [
+        260,
+        95,
+        635,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "36_mano_senala",
+        "rotacionesCSS": {
+          "12_brazo_cercano": -35,
+          "13_antebrazo_cercano": -50
+        }
+      }
+    },
+    {
+      "nombre": "busto-comerciante-atencion",
+      "base": "../comerciante/rig.json",
+      "svg": "busto-comerciante-atencion.svg",
+      "nativo": "busto-comerciante-atencion.vectorcraft",
+      "recorte_original": [
+        285,
+        95,
+        370,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "14_mano_cercana",
+        "rotacionesCSS": {}
+      }
+    },
+    {
+      "nombre": "busto-comerciante-senala",
+      "base": "../comerciante/rig.json",
+      "svg": "busto-comerciante-senala.svg",
+      "nativo": "busto-comerciante-senala.vectorcraft",
+      "recorte_original": [
+        285,
+        95,
+        635,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "36_mano_senala",
+        "rotacionesCSS": {
+          "12_brazo_cercano": -35,
+          "13_antebrazo_cercano": -50
+        }
+      }
+    },
+    {
+      "nombre": "busto-funcionario-senala",
+      "base": "../funcionario/rig.json",
+      "svg": "busto-funcionario-senala.svg",
+      "nativo": "busto-funcionario-senala.vectorcraft",
+      "recorte_original": [
+        285,
+        95,
+        635,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "36_mano_senala",
+        "rotacionesCSS": {
+          "12_brazo_cercano": -35,
+          "13_antebrazo_cercano": -50
+        }
+      }
+    }
+  ],
+  "detalles": [
+    {
+      "name": "detalle-comerciante-apoyo",
+      "role": "comerciante",
+      "gesture": "apoyo",
+      "parts": [
+        "13_antebrazo_cercano",
+        "37_mano_apoyo"
+      ],
+      "cssRotation": -90,
+      "svg": "../detalles-manos/detalle-comerciante-apoyo.svg",
+      "nota": "Giro de -90 grados CSS aplicado una sola vez al contenedor de antebrazo y mano. No es un giro adicional de cada pieza."
+    },
+    {
+      "name": "detalle-comerciante-agarre",
+      "role": "comerciante",
+      "gesture": "agarre",
+      "parts": [
+        "13_antebrazo_cercano",
+        "35_mano_pinza"
+      ],
+      "cssRotation": -90,
+      "svg": "../detalles-manos/detalle-comerciante-agarre.svg",
+      "nota": "Giro de -90 grados CSS aplicado una sola vez al contenedor de antebrazo y mano. No es un giro adicional de cada pieza."
+    },
+    {
+      "name": "detalle-funcionario-apoyo",
+      "role": "funcionario",
+      "gesture": "apoyo",
+      "parts": [
+        "13_antebrazo_cercano",
+        "37_mano_apoyo"
+      ],
+      "cssRotation": -90,
+      "svg": "../detalles-manos/detalle-funcionario-apoyo.svg",
+      "nota": "Giro de -90 grados CSS aplicado una sola vez al contenedor de antebrazo y mano. No es un giro adicional de cada pieza."
+    },
+    {
+      "name": "detalle-funcionario-agarre",
+      "role": "funcionario",
+      "gesture": "agarre",
+      "parts": [
+        "13_antebrazo_cercano",
+        "35_mano_pinza"
+      ],
+      "cssRotation": -90,
+      "svg": "../detalles-manos/detalle-funcionario-agarre.svg",
+      "nota": "Giro de -90 grados CSS aplicado una sola vez al contenedor de antebrazo y mano. No es un giro adicional de cada pieza."
+    },
+    {
+      "name": "detalle-reclamante-apoyo",
+      "role": "reclamante",
+      "gesture": "apoyo",
+      "parts": [
+        "13_antebrazo_cercano",
+        "37_mano_apoyo"
+      ],
+      "cssRotation": -90,
+      "svg": "../detalles-manos/detalle-reclamante-apoyo.svg",
+      "nota": "Giro de -90 grados CSS aplicado una sola vez al contenedor de antebrazo y mano. No es un giro adicional de cada pieza."
+    },
+    {
+      "name": "detalle-reclamante-agarre",
+      "role": "reclamante",
+      "gesture": "agarre",
+      "parts": [
+        "13_antebrazo_cercano",
+        "35_mano_pinza"
+      ],
+      "cssRotation": -90,
+      "svg": "../detalles-manos/detalle-reclamante-agarre.svg",
+      "nota": "Giro de -90 grados CSS aplicado una sola vez al contenedor de antebrazo y mano. No es un giro adicional de cada pieza."
+    },
+    {
+      "name": "detalle-intermediario-apoyo",
+      "role": "intermediario",
+      "gesture": "apoyo",
+      "parts": [
+        "13_antebrazo_cercano",
+        "37_mano_apoyo"
+      ],
+      "cssRotation": -90,
+      "svg": "../detalles-manos/detalle-intermediario-apoyo.svg",
+      "nota": "Giro de -90 grados CSS aplicado una sola vez al contenedor de antebrazo y mano. No es un giro adicional de cada pieza."
+    },
+    {
+      "name": "detalle-intermediario-agarre",
+      "role": "intermediario",
+      "gesture": "agarre",
+      "parts": [
+        "13_antebrazo_cercano",
+        "35_mano_pinza"
+      ],
+      "cssRotation": -90,
+      "svg": "../detalles-manos/detalle-intermediario-agarre.svg",
+      "nota": "Giro de -90 grados CSS aplicado una sola vez al contenedor de antebrazo y mano. No es un giro adicional de cada pieza."
+    }
+  ]
+}
