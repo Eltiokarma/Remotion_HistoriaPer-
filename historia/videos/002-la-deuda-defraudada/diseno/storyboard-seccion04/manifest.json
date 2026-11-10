@@ -1,0 +1,89 @@
+{
+  "titulo": "La investigación y los vales que siguen circulando",
+  "episodio": "002-la-deuda-defraudada",
+  "seccion": 4,
+  "fecha": "2026-11-09",
+  "herramienta": "VectorCraft mediante MCP",
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "laminas": 4,
+  "vinyetas": 16,
+  "artboard": {
+    "ancho": 2520,
+    "alto": 2140
+  },
+  "fuente": "Quiroz, Historia de la corrupción en el Perú, 2013, pp. 170–172, 179–185 y 187",
+  "recursos_reutilizados": [
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/edificio-estado-video01.svg",
+      "sha256": "d310fe95427b4693203bac046018c44c5fd742c90aa3d3f654f2cea9692e42a7",
+      "uso": "Separación de capas de presentación; importación vectorial mediante MCP; original intacto"
+    },
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/tanda04-fichero.svg",
+      "sha256": "21477428be25f8e55cc93fac36a16b975cc43fe1988e9611fa56c9f519efcb62",
+      "uso": "Separación de capas de presentación; importación vectorial mediante MCP; original intacto"
+    }
+  ],
+  "archivos": [
+    {
+      "archivo": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 15435,
+      "sha256": "219413b7e103d6152cff8366083323e7111d4c5e6c5aed97631f59c2e1a7c00f"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina1.png",
+      "bytes": 311710,
+      "sha256": "8491f30f205d7dbaab62c2d9e80cfeffa1b7adc6d49044f8c35358a5ec4a0a2f"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina1.svg",
+      "bytes": 1852239,
+      "sha256": "f3e686dc2b375a5c1aaac43298842b1008f64db0539a69bcbad8353425f7fde1"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina2.png",
+      "bytes": 365110,
+      "sha256": "33eb8b20ada2a4b4fe34f3d6ca52d7b424a39ee1c8a661042520b9d59fd996d4"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina2.svg",
+      "bytes": 2146873,
+      "sha256": "6b3b076847e1870b2b1e35671a9e3c87a43577fe1d90d893c72056fa013c6420"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina3.png",
+      "bytes": 274746,
+      "sha256": "b792b26e3c1e8a7dc1ea9b15fdb64105b68a0eaf9919cc7df1ca42ac4096fedb"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina3.svg",
+      "bytes": 1856814,
+      "sha256": "aed52e5778523c6e181ae8be7ee85faaeb3c75a9e8be7b08ebdd7ab69d057471"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina4.png",
+      "bytes": 353391,
+      "sha256": "9fc53fca72365f0c9ddd1b418512406d61566e20e7c47c16619c7c6797fa30b5"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina4.svg",
+      "bytes": 2384802,
+      "sha256": "d52e06e8ea5ce499922470fa0df0a3b67fb77e037742525b5fc1484ef8d7ad92"
+    },
+    {
+      "archivo": "storyboard-02-seccion04.pdf",
+      "bytes": 4249980,
+      "sha256": "84bc2073a3c694a8d2ea8090691484b6465279322125cc6a678650823498d55d"
+    },
+    {
+      "archivo": "storyboard-02-seccion04.vectorcraft",
+      "bytes": 329313,
+      "sha256": "dcdac880c2d78ea11702d2c28ace713b06dfb23565ab4194c16818e517e543e7"
+    }
+  ]
+}
