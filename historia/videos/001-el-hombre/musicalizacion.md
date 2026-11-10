@@ -281,6 +281,106 @@ fondo, una quinta pedal re–la, sin tercera ni modo: la tierra, que casi no se 
 entran en el orden de la escena. En el *break* solo queda el fondo, mientras la palabra está en
 pantalla. `G13` en el coro es el brillo de la capa del medio cuando Quiroz la elige.
 
+### E por capas — regeneración (2026-11-10)
+
+La primera E (`V01_mus-F_ver01_1`, rotulada F por error) no trae las tres velocidades: sus stems
+dicen que las cuerdas suenan sostenidas de principio a fin (la parte golpeada queda ~20 dB por
+debajo: casi no hay pizzicato), y teclado y sintetizador entran juntos en el segundo 28. Para que
+la música enseñe la larga duración, se genera **una pista por capa**, cada una sola, y aquí se
+montan en sus beats (`capa1` 14,6 s, `capa2` 24,8 s, `capa3` 31,3 s; en la palabra queda solo el
+fondo; al final vuelven todas). No chocan: el fondo es una quinta re–la quieta, la de arriba gira
+sobre re–sol–do por cuartas y el cello canta en re dórico encima. Cada una: ~66 s, 67 BPM,
+18 compases. Si una sale con otro instrumento colado, sus stems lo limpian.
+
+#### E1 · Arriba (los acontecimientos)
+
+**STYLE**
+```
+Solo pizzicato string ensemble playing a fast, nervous ostinato in D, about 66 seconds long, 67 BPM with restless sixteenth notes, eighteen bars, one pass with no repeats. Quartal voicings on D, G and C, stacked fourths with no third, so the harmony never lands: it flickers like news and governments passing. Bright, close, dry, slightly wide in the stereo field, light and quick, never loud. The figure keeps changing small details but the speed never settles. Only this one layer: plucked strings and nothing else. Emotional arc: constant restless motion from start to end. no vocals, no singing, no humming, no voice, no choir, no autotune, no piano, no cello melody, no organ, no bass, no drums, no percussion, no synth pads
+```
+
+**LYRICS**
+```
+[Instrumental]
+[Intro - Instrumental]
+[BPM 67]
+[2 bars]
+[Pizzicato strings alone, sixteenth notes, quartal D G C]
+[Verse 1 - Instrumental]
+[8 bars]
+[Same restless ostinato, small variations]
+[Dsus4] [Csus2] [Dsus4] [Gsus2]
+[Verse 2 - Instrumental]
+[6 bars]
+[Ostinato a little brighter, higher register]
+[Dsus4] [Csus2] [Gsus2]
+[Outro - Instrumental]
+[2 bars]
+[Ostinato continues and stops on the last beat]
+[End]
+```
+
+#### E2 · Al medio (la economía y la sociedad)
+
+**STYLE**
+```
+Solo cello melody in D Dorian, about 66 seconds long, 67 BPM, eighteen bars, one pass with no repeats. A slow, singing line with long notes, each phrase lasting two bars, the implied harmony changing only every two bars. Warm, centered, close microphone, natural room, expressive but calm, like a thoughtful teacher explaining something that changes slowly. The raised sixth of Dorian gives it a quiet light. Only this one instrument: one cello and nothing else. Emotional arc: patient, steady, a gentle rise in the middle, then settling. no vocals, no singing, no humming, no voice, no choir, no autotune, no piano, no pizzicato, no organ, no drums, no percussion, no synth pads
+```
+
+**LYRICS**
+```
+[Instrumental]
+[Intro - Instrumental]
+[BPM 67]
+[2 bars]
+[Solo cello, long low note on D]
+[Verse 1 - Instrumental]
+[8 bars]
+[Slow singing melody, two bars per phrase]
+[Dm9] [Bbmaj7] [Gm11] [Dm9]
+[Verse 2 - Instrumental]
+[6 bars]
+[Melody rises gently, brighter]
+[G13] [Fmaj7] [Asus4]
+[Outro - Instrumental]
+[2 bars]
+[Long final note on D, let ring]
+[End]
+```
+
+#### E3 · Al fondo (la tierra)
+
+**STYLE**
+```
+Deep, almost motionless drone in D, about 66 seconds long, 67 BPM, eighteen bars, one pass with no repeats. A soft pipe organ and a bowed double bass hold an open fifth, D and A, very low, with only slow swells in volume and no melody at all. Dark, wide and felt more than heard, like the ground and the climate under everything. Only this one layer: low organ and double bass, nothing else. Emotional arc: still from start to end, breathing slowly. no vocals, no singing, no humming, no voice, no choir, no autotune, no piano, no melody, no strings melody, no drums, no percussion, no synth pads
+```
+
+**LYRICS**
+```
+[Instrumental]
+[Intro - Instrumental]
+[BPM 67]
+[2 bars]
+[Low organ and double bass enter softly, open fifth D A]
+[Verse 1 - Instrumental]
+[8 bars]
+[Held drone, slow swell]
+[D5]
+[Verse 2 - Instrumental]
+[6 bars]
+[Held drone, slow swell, slightly darker]
+[D5]
+[Outro - Instrumental]
+[2 bars]
+[Drone fades slowly]
+[End]
+```
+
+**Teoría.** Es lo mismo de antes (tres ritmos armónicos a la vez), pero repartido para que cada capa
+entre en su frase. Arriba, acordes suspendidos por cuartas, sin tercera: no aterrizan. Al medio, el
+cello dórico cambia cada dos compases; su `G13` es la luz de la capa que Quiroz elige
+(«las estructuras de la economía»). Al fondo, la quinta re–la, sin tercera ni modo: la tierra.
+
 ### F · Aprender a medir — s05, 109 s (73 → 99 → 76 BPM, 41 compases) — **bajar los stems**
 
 | Sección | Compases | Cae en | En pantalla |

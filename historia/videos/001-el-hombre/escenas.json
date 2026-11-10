@@ -709,8 +709,8 @@
       ],
       "audio": {
         "musica": {
-          "archivo": "s05-medir.mp3",
-          "nivel": 0.3
+          "archivo": "s05-aprender-a-medir.mp3",
+          "nivel": 0.31
         },
         "ambientes": [
           {
@@ -720,7 +720,7 @@
         ],
         "duck_db": -15
       },
-      "estado_musica": "presente"
+      "estado_musica": "presente (Suno F: piano; el clarinete entra con «cuánto pesa»)"
     },
     {
       "id": "s06",

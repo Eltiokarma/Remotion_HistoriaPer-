@@ -52,8 +52,8 @@ No tienen excepción.
    tema. La plantilla es gramática, no molde.
 5. **Archivos pesados fuera de git.** La voz real, las imágenes pesadas y `out/` están en
    `.gitignore` (excepción: SVG, JSON, fuentes tipográficas y el audio chico: el sintetizado y la
-   música ya recortada a la escena en MP3, de ~1 MB por escena. Los WAV originales de Suno y sus stems
-   quedan fuera, en `musica/suno/`. Decidido por Gerson el 2026-11-10).
+   música ya recortada a la escena en MP3, a 128–192 kb/s y 2 MB o menos por escena. Los WAV
+   originales de Suno y sus stems quedan fuera, en `musica/suno/`. Decidido por Gerson el 2026-11-10).
 
 ### 1.2 Reglas de oficio
 
