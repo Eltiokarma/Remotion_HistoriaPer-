@@ -63,3 +63,17 @@ Gerson eligió **«Joder Jolines»**. Aplicado:
 
 «Joder Jolines» es el clon de la voz de Gerson (confirmado por él). Pendiente antes de publicar:
 los enlaces de Suno (`fuentes.md`).
+
+## Segunda escucha (2026-11-10)
+
+> «"El primer caso antes de irse": hay que precisar cuántos años antes de irse y a qué destino.»
+> «Se siguen sintiendo saltos de volumen en el guion, con mínimos, pero se siente.»
+
+- **s06:** «Pero su primer caso lo había encontrado en Lima, en 1980, poco antes de irse a Nueva
+  York.» El libro no da el año de la partida: la tesis es de 1980 (p. 17) y en 1981 ya tenía la beca
+  de Columbia (p. 19), así que «poco antes» es una deducción segura (`fuentes.md`).
+- **Volumen:** `narracion.py` nivela frase por frase (cada frase se acerca un 65 % al nivel medio de
+  su escena; el cambio de ganancia ocurre en la pausa, con rampa). Diferencia entre frases de una
+  escena: de 6–8 dB a 1–3 dB.
+- La música se ancla ahora a beats (`montaje_musica/*.json`): si la voz cambia, `montar_musica.py`
+  la vuelve a calzar sola.

@@ -13,11 +13,11 @@ Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **I
 | s02 | Presentacion | 1:21.0 | 25 s | 76 % | 11 s | 148 | 10.0 | 23 | 1 | 5 (12.3/min) | 7 (17.3/min) | 🟡 12.3 datos/min |
 | s03 | TiempoLargo | 1:46.3 | 38 s | 73 % | 9 s | 141 | 7.9 | 19 | 4 | 4 (6.5/min) | 10 (16.2/min) | 🟡 6.5 datos/min |
 | s04 | TiempoLargo | 2:24.5 | 53 s | 67 % | 10 s | 134 | 8.8 | 21 | 8 | 2 (2.3/min) | 11 (12.8/min) | 🟢 |
-| s05 | AprenderAMedir | 3:17.1 | 90 s | 72 % | 16 s | 141 | 10.0 | 18 | 9 | 9 (6.1/min) | 29 (19.5/min) | 🟡 6.1 datos/min |
-| s06 | MecanismoDeuda | 4:47.2 | 32 s | 71 % | 7 s | 149 | 12.7 | 24 | 4 | 4 (7.8/min) | 11 (21.5/min) | 🟡 7.8 datos/min |
-| s07 | Cierre | 5:19.4 | 17 s | 16 % | 3 s | 53 | 5.0 | 5 | 0 | 1 (10.6/min) | 3 (31.9/min) | 🟡 10.6 datos/min |
+| s05 | AprenderAMedir | 3:17.1 | 90 s | 72 % | 16 s | 141 | 10.0 | 18 | 9 | 9 (6.1/min) | 29 (19.6/min) | 🟡 6.1 datos/min |
+| s06 | MecanismoDeuda | 4:47.1 | 32 s | 76 % | 7 s | 170 | 14.3 | 24 | 4 | 6 (11.9/min) | 11 (21.7/min) | 🟡 11.9 datos/min |
+| s07 | Cierre | 5:19.0 | 17 s | 16 % | 3 s | 53 | 5.0 | 5 | 0 | 1 (10.6/min) | 3 (31.9/min) | 🟡 10.6 datos/min |
 
-Total: 5:36.0. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
+Total: 5:35.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
 
 
 ## s00 · gancho — `Gancho` · 0:00.0–0:33.0 (33.0 s)
@@ -32,15 +32,15 @@ Total: 5:36.0. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
 | 0:00.0 |  |  | música s00-tajadas.mp3 (nivel 0.39) |
-| 0:00.3 | Desde mil ochocientos veinte, la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento de todo lo que produce. |  |  |
+| 0:00.3 | Desde mil ochocientos veinte... la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento... de todo lo que produce. |  |  |
 | 0:00.3 |  | **anio** — aparece la barra de la producción y empieza a correr el año |  |
 | 0:06.8 |  | **rojo** — se tiñe la tajada (min seguro, hasta max rayado); desde aquí cae una tajada por año y se apila |  |
 | 0:12.3 | Cada año. |  |  |
-| 0:14.4 | Del presupuesto del Estado, de cada diez soles, se fueron entre tres y cuatro. |  |  |
+| 0:14.4 | Del presupuesto del Estado, de cada diez soles... se fueron entre tres y cuatro. |  |  |
 | 0:14.4 |  | **soles** — aparecen las monedas, una tras otra |  |
 | 0:18.6 |  | **caen** — caen las monedas seguras |  |
 | 0:19.0 |  | **cuatro** — la moneda de la duda se inclina y queda a medias, punteada |  |
-| 0:21.2 | No son casos sueltos: es el sistema, y viene desde la colonia. |  |  |
+| 0:21.2 | No son casos sueltos: es el sistema. Y viene desde la colonia. |  |  |
 | 0:21.2 |  | **sueltos** — la regla de siglos; puntos rojos sueltos que parpadean |  |
 | 0:23.3 |  | **sistema** — los puntos se unen en una franja continua (de lo medido); entra la cita |  |
 | 0:24.5 |  | **colonia** — la franja se alarga hacia atrás, hasta el comienzo de la regla |  |
@@ -66,7 +66,7 @@ Total: 5:36.0. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 0:35.0 | Nuestro historiador revisa, con minuciosidad, las pruebas de imprenta. |  |  |
 | 0:36.1 |  | **correcciones** — el corrector empieza a marcar las pruebas (9 s) |  |
 | 0:39.1 | Es la traducción al español de su último libro. |  |  |
-| 0:42.7 | No le queda mucho tiempo, y lo sabe. |  |  |
+| 0:42.7 | No le queda mucho tiempo... y lo sabe. |  |  |
 | 0:46.9 | En los agradecimientos escribe una línea que casi nadie lee. |  |  |
 | 0:47.2 |  | **cita** — se entra a la página: aparece la frase compuesta |  |
 | 0:47.2 |  | _cámara: entra a la hoja y se acerca despacio a la frase (1 → 1,08)_ (la voz dice «agradecimientos»: vamos a leer lo que él escribió) |  |
@@ -77,8 +77,8 @@ Total: 5:36.0. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 0:57.2 |  | _cámara: baja unas líneas por la página_ («unas líneas más abajo» celebra el nacimiento de su hijo) |  |
 | 1:01.6 | Murió en enero de dos mil trece. |  |  |
 | 1:01.6 |  | **muerte** — corte seco a la línea de tiempo: aparece el primer evento (con `cruz`: la cruz sobre negro) |  |
-| 1:03.5 |  | **fecha** — (con cruz) aparece la fecha, cuando la voz ya terminó la frase |  |
-| 1:03.5 |  |  | **silencio deliberado** |
+| 1:03.6 |  | **fecha** — (con cruz) aparece la fecha, cuando la voz ya terminó la frase |  |
+| 1:03.6 |  |  | **silencio deliberado** |
 | 1:06.4 |  | **linea** — (con cruz) aparece la línea con su punto rojo (2–3 s después de la fecha) |  |
 | 1:06.4 |  |  | vuelve el sonido |
 | 1:07.1 |  | **recorre** — la cámara empieza a recorrer la línea (arranca y frena despacio) |  |
@@ -88,9 +88,9 @@ Total: 5:36.0. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 1:12.0 |  | **final** — la cámara se abre y se ve el camino entero (aquí entra la música) |  |
 | 1:12.0 |  |  | música s01-el-hombre.mp3 (nivel 0.39) |
 | 1:12.0 |  | _cámara: se abre hasta ver el camino entero_ («ese hombre» y «lo que encontró» son las dos puntas de la línea) |  |
-| 1:13.9 | Estos videos son sobre ese hombre, y sobre lo que encontró. |  |  |
-| 1:15.6 |  | **hombre** — pulso en el primer evento |  |
-| 1:17.4 |  | **encontro** — el último evento brilla más |  |
+| 1:13.9 | Estos videos son sobre ese hombre... y sobre lo que encontró. |  |  |
+| 1:15.7 |  | **hombre** — pulso en el primer evento |  |
+| 1:17.5 |  | **encontro** — el último evento brilla más |  |
 
 ## s02 · personaje — `Presentacion` · 1:21.0–1:46.3 (25.4 s)
 
@@ -178,8 +178,8 @@ Total: 5:36.0. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 2:29.1 |  | **braudel** — (con ficha) aparece la ficha |  |
 | 2:32.8 |  | **capas** — el muro se apaga y se dibujan las capas (con capa1–3: solo el marco, vacío) |  |
 | 2:32.8 | Braudel decía que la historia no corre a una sola velocidad. |  |  |
-| 2:36.2 | Arriba están los acontecimientos: los gobiernos, las guerras, las noticias. |  |  |
 | 2:36.2 |  | **capa1** — (capas de a una) se llena la capa de arriba |  |
+| 2:36.2 | Arriba están los acontecimientos: los gobiernos, las guerras, las noticias. |  |  |
 | 2:41.1 | Cambian rápido, como las olas. |  |  |
 | 2:44.2 |  | **capa2** — (capas de a una) se llena la del medio |  |
 | 2:44.2 | Más abajo, la economía y la sociedad. |  |  |
@@ -198,7 +198,7 @@ Total: 5:36.0. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 3:09.8 | Hay cosas que no cambian aunque cambien los gobiernos. |  |  |
 | 3:14.2 | Esa mirada larga es la de esta serie. |  |  |
 
-## s05 · método — `AprenderAMedir` · 3:17.1–4:47.2 (90.1 s)
+## s05 · método — `AprenderAMedir` · 3:17.1–4:47.1 (90.0 s)
 
 - **Cambio:** de un historiador de discursos a uno que mide, y que cambió de ideas
 - **Intención:** el viaje a Nueva York; la regresión explicada en tres tiempos (ruido, la recta que busca, cuánto pesa); la claridad en una balanza; la carrera se lee en el estante, no se narra
@@ -235,18 +235,18 @@ Total: 5:36.0. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 3:49.2 |  | **caen** — (con explicar_regresion) caen los puntos (el papel ya estaba) |  |
 | 3:49.2 | Imagina muchos puntos desordenados: cada uno, un dato. |  |  |
 | 3:51.5 |  | **observacion** — (beat propio) |  |
-| 3:53.4 | A simple vista, solo ruido. |  |  |
+| 3:53.3 | A simple vista, solo ruido. |  |  |
 | 3:56.1 | La regresión busca la línea que mejor pasa entre todos. |  |  |
 | 3:56.2 |  | **recta** — se traza la recta de regresión |  |
 | 3:57.6 |  | **residuos** — (beat propio) |  |
-| 3:59.8 | Si hay una tendencia, ayuda a verla. |  |  |
+| 3:59.7 | Si hay una tendencia, ayuda a verla. |  |  |
 | 4:00.3 |  | **tendencia** — (beat propio) |  |
 | 4:02.5 | Y dice cuánto pesa. |  |  |
 | 4:03.4 |  | **pendiente** — (con explicar_regresion) se marca la pendiente: cuánto pesa |  |
-| 4:05.8 |  | **causalidad** — (beat propio) |  |
 | 4:05.8 | Aprendió a trabajar con cifras y a contrastarlas con documentos. |  |  |
+| 4:05.8 |  | **causalidad** — (beat propio) |  |
 | 4:09.6 |  | **serie** — (con serie) la nube se va, los puntos viajan a la serie real y se encienden de a uno; después, la banda |  |
-| 4:09.7 | Años después, llevaría esa disciplina al estudio de la corrupción en el Perú. |  |  |
+| 4:09.6 | Años después, llevaría esa disciplina al estudio de la corrupción en el Perú. |  |  |
 | 4:15.6 | De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad. |  |  |
 | 4:15.6 |  | **balanza** — aparece la balanza |  |
 | 4:19.7 |  | **profundidad** — cae la primera palabra (se inclina) |  |
@@ -255,52 +255,52 @@ Total: 5:36.0. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 4:23.4 | Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la historia financiera del Perú. |  |  |
 | 4:25.9 |  | **temas** — bajan los temas, uno cada 0.5 s |  |
 | 4:30.3 |  | **brujula** — aparece la brújula |  |
-| 4:30.4 | Y sus ideas también se mueven. |  |  |
-| 4:32.6 |  | **izquierda** — (izquierda-derecha) la aguja va al primer tope; se escriben sus notas |  |
-| 4:32.7 | De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades. |  |  |
-| 4:34.1 |  | **giro** — la aguja gira despacio de una época a la otra (izquierda-derecha: va al otro tope) |  |
-| 4:40.6 |  | **tiza** — (con brujula_frase) la brújula y su fondo pasan a la pizarra; los rótulos se borran |  |
-| 4:40.6 | Cambió de ideas. |  |  |
-| 4:42.4 | Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión. |  |  |
+| 4:30.3 | Y sus ideas también se mueven. |  |  |
+| 4:32.5 |  | **izquierda** — (izquierda-derecha) la aguja va al primer tope; se escriben sus notas |  |
+| 4:32.6 | De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades. |  |  |
+| 4:34.0 |  | **giro** — la aguja gira despacio de una época a la otra (izquierda-derecha: va al otro tope) |  |
+| 4:40.5 | Cambió de ideas. |  |  |
+| 4:40.5 |  | **tiza** — (con brujula_frase) la brújula y su fondo pasan a la pizarra; los rótulos se borran |  |
+| 4:42.3 | Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión. |  |  |
 | 4:44.0 |  | **frase** — (con brujula_frase) se escribe la frase con tiza |  |
 
-## s06 · puente — `MecanismoDeuda` · 4:47.2–5:19.4 (32.2 s)
+## s06 · puente — `MecanismoDeuda` · 4:47.1–5:19.0 (31.9 s)
 
 - **Cambio:** del hombre que aprendió a medir a su primer caso: una deuda pagada con la plata del guano, y una pregunta abierta
 - **Intención:** cerrar el retrato volviendo atrás: lo que aprendió en Nueva York lo va a usar en lo que ya había encontrado antes de irse; la pregunta queda en el aire para el próximo episodio
 - **Intensidad:** 5 · **Música:** presente (tensión) → se corta con «…a costa del Estado» → acorde sin resolver en la pregunta
-- **Semáforo para enseñar:** 🟡 7.8 datos/min
-- **Métricas:** voz el 71 % del tiempo · tramo más largo sin pausa de párrafo: 7.3 s · 76 palabras · 149 por minuto · 6 frases de 12.7 palabras en promedio (la más larga: 24) · 4 pausa(s) de párrafo (≥ 1 s) · 11 cambios de imagen
-- **Nombres y cifras que se dicen (4):** Félix Denegri Luna · Lima · Estado · 1850
+- **Semáforo para enseñar:** 🟡 11.9 datos/min
+- **Métricas:** voz el 76 % del tiempo · tramo más largo sin pausa de párrafo: 7.4 s · 86 palabras · 170 por minuto · 6 frases de 14.3 palabras en promedio (la más larga: 24) · 4 pausa(s) de párrafo (≥ 1 s) · 11 cambios de imagen
+- **Nombres y cifras que se dicen (6):** Lima · Nueva York · Félix Denegri Luna · Estado · 1980 · 1850
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
-| 4:47.2 |  |  | música s06-la-deuda.mp3 (nivel 0.4) |
-| 4:47.2 |  |  | ambiente mar (0.7) |
-| 4:47.4 |  | **islas** — el grabado de las islas |  |
-| 4:47.5 | Pero su primer caso lo había encontrado antes de irse. |  |  |
-| 4:47.5 |  | **hoja_entra** — (con hojear) entra el libro, cerrado |  |
-| 4:51.7 | Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. |  |  |
-| 4:51.7 |  | **hojea** — (con hojear) se abre y se hojea |  |
-| 4:58.0 |  | **hoja_pagina** — (con hojear) cae la última hoja: la página con el grabado |  |
-| 4:58.4 |  | **hoja_zoom** — (con hojear) la cámara entra al grabado hasta llenar la pantalla |  |
-| 4:58.4 |  | _cámara: entra a la ilustración de la página hasta llenar la pantalla_ («el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)) |  |
-| 5:00.8 |  | **sacos** — empiezan a subir sacos al barco |  |
-| 5:00.8 | Ahí estaba el guano. |  |  |
-| 5:02.2 |  | **flecha** — barco y Estado: sale la flecha de dinero |  |
-| 5:02.2 |  |  | se va el ambiente mar |
-| 5:02.2 |  |  | ambiente cuarto (0.5) |
-| 5:02.2 |  | _cámara: sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha_ («Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)) |  |
-| 5:02.6 | Y una deuda que el Estado decidió pagar con esa plata, en mil ochocientos cincuenta. |  |  |
-| 5:05.2 |  | **vales** — se apilan los vales de la deuda |  |
-| 5:05.2 |  | _cámara: paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales_ («una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)) |  |
-| 5:06.8 |  | **consolidacion** — cae el sello sobre la pila |  |
-| 5:08.7 | Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. |  |  |
-| 5:08.7 |  | **hallazgo** — (opcional) sobre la pila de vales, el monto del vale de arriba se infla (ejemplo ilustrativo) |  |
-| 5:15.1 | ¿Adónde fue a parar esa plata? |  |  |
-| 5:15.1 |  | **pregunta** — (con pregunta) la pregunta se escribe fuerte |  |
+| 4:47.1 |  |  | música s06-la-deuda.mp3 (nivel 0.4) |
+| 4:47.1 |  |  | ambiente mar (0.7) |
+| 4:47.3 |  | **islas** — el grabado de las islas |  |
+| 4:47.4 | Pero su primer caso lo había encontrado en Lima, en mil novecientos ochenta, poco antes de irse a Nueva York. |  |  |
+| 4:47.4 |  | **hoja_entra** — (con hojear) entra el libro, cerrado |  |
+| 4:54.3 | Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. |  |  |
+| 4:54.3 |  | **hojea** — (con hojear) se abre y se hojea |  |
+| 5:00.6 |  | **hoja_pagina** — (con hojear) cae la última hoja: la página con el grabado |  |
+| 5:01.0 |  | **hoja_zoom** — (con hojear) la cámara entra al grabado hasta llenar la pantalla |  |
+| 5:01.0 |  | _cámara: entra a la ilustración de la página hasta llenar la pantalla_ («el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)) |  |
+| 5:03.1 |  | **sacos** — empiezan a subir sacos al barco |  |
+| 5:03.1 | Ahí estaba el guano. |  |  |
+| 5:04.5 |  | **flecha** — barco y Estado: sale la flecha de dinero |  |
+| 5:04.5 |  |  | se va el ambiente mar |
+| 5:04.5 |  |  | ambiente cuarto (0.5) |
+| 5:04.5 |  | _cámara: sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha_ («Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)) |  |
+| 5:04.9 | Y una deuda que el Estado decidió pagar con esa plata, en mil ochocientos cincuenta. |  |  |
+| 5:07.3 |  | **vales** — se apilan los vales de la deuda |  |
+| 5:07.3 |  | _cámara: paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales_ («una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)) |  |
+| 5:08.9 |  | **consolidacion** — cae el sello sobre la pila |  |
+| 5:10.5 | Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. |  |  |
+| 5:10.5 |  | **hallazgo** — (opcional) sobre la pila de vales, el monto del vale de arriba se infla (ejemplo ilustrativo) |  |
+| 5:15.6 | ¿Adónde fue a parar esa plata? |  |  |
+| 5:15.6 |  | **pregunta** — (con pregunta) la pregunta se escribe fuerte |  |
 
-## s07 · cierre — `Cierre` · 5:19.4–5:36.0 (16.7 s)
+## s07 · cierre — `Cierre` · 5:19.0–5:35.7 (16.7 s)
 
 - **Cambio:** del caso abierto a la promesa del próximo episodio
 - **Intención:** las pruebas de imprenta del comienzo se cierran; el tema entra unos segundos antes y se queda después, para que la tristeza se asiente (DIRECCION_DE_VIDEO §2.15)
@@ -311,12 +311,12 @@ Total: 5:36.0. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
-| 5:19.4 |  |  | música s07-tema.mp3 (nivel 0.55) |
-| 5:19.4 |  |  | ambiente cuarto (0.5) |
-| 5:19.7 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
-| 5:21.7 |  | **negro** — fundido a negro |  |
-| 5:21.7 |  |  | se va el ambiente cuarto |
-| 5:22.2 | Próximo episodio: La deuda defraudada. |  |  |
-| 5:22.2 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
-| 5:22.2 |  | _cámara: se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)_ (la música se queda sobre el final (revisión del director): el plano respira mientras se asienta la tristeza, sin congelarse) |  |
+| 5:19.0 |  |  | música s07-tema.mp3 (nivel 0.55) |
+| 5:19.0 |  |  | ambiente cuarto (0.5) |
+| 5:19.3 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
+| 5:21.3 |  | **negro** — fundido a negro |  |
+| 5:21.3 |  |  | se va el ambiente cuarto |
+| 5:21.8 | Próximo episodio: La deuda defraudada. |  |  |
+| 5:21.8 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
+| 5:21.8 |  | _cámara: se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)_ (la música se queda sobre el final (revisión del director): el plano respira mientras se asienta la tristeza, sin congelarse) |  |
 

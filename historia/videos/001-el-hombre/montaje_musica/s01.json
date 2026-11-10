@@ -1,26 +1,10 @@
 {
   "salida": "s01-el-hombre.mp3",
-  "t0": 38.4333,
-  "dur": 47.9333,
+  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. B entra en «final» y sigue en s02 sin corte",
+  "empalme": "siguiente",
   "capas": [
     {
-      "archivo": "suno/V01_mus02_ver02.wav",
-      "inicio": 38.94,
-      "env": [
-        [
-          38.94,
-          1
-        ],
-        [
-          47.53333333333333,
-          1
-        ],
-        [
-          47.93333333333333,
-          0
-        ]
-      ]
+      "archivo": "suno/V01_mus02_ver02.wav"
     }
-  ],
-  "nota": "tiempos en segundos de la escena, ya con la narración de Joder Jolines; env = [[t, ganancia]] con rampas lineales"
+  ]
 }

@@ -31,7 +31,7 @@ SR = 44100
 RESPIRO = 1.4          # una pausa del guion desde este largo es un respiro: se garantiza
 API = "https://api.elevenlabs.io/v1"
 CLAVE = os.environ.get("ELEVENLABS_API_KEY", "proxy-injected")
-NUM = {"1820": "mil ochocientos veinte", "1850": "mil ochocientos cincuenta", "1956": "mil novecientos cincuenta y seis",
+NUM = {"1820": "mil ochocientos veinte", "1980": "mil novecientos ochenta", "1850": "mil ochocientos cincuenta", "1956": "mil novecientos cincuenta y seis",
        "1974": "mil novecientos setenta y cuatro", "2013": "dos mil trece", "80": "ochenta", "19": "diecinueve",
        "15": "quince", "10": "diez", "3": "tres", "4": "cuatro", "%": "por ciento"}
 
@@ -82,6 +82,35 @@ def aire(muestra, segundos):
     while len(out) < segundos * SR + k:
         out = np.concatenate([out[:-k], out[-k:] * (1 - f) + p[:k] * f, p[k:]])
     return out[: int(segundos * SR)]
+
+
+NIVELAR = 0.65   # cuánto se acerca cada frase al nivel medio de la escena (1 = todas iguales, 0 = como vino)
+
+
+def nivelar(x, pos):
+    """Gerson (2026-11-10): «se siguen sintiendo saltos de volumen». Cada frase se acerca al nivel
+    medio de la escena un 65 % (los susurros quedan algo más bajos, sin saltar), y el cambio de
+    ganancia ocurre en la pausa entre frases, con una rampa de coseno: nunca dentro de una palabra."""
+    def nivel(a, b):
+        seg = x[int(a * SR):int(b * SR)]
+        w = int(0.4 * SR)
+        r = sorted(np.sqrt((seg[i:i + w] ** 2).mean()) for i in range(0, max(1, len(seg) - w), w // 2))
+        r = r[len(r) // 2:] if len(r) > 1 else r
+        return 20 * np.log10(np.mean(r) + 1e-9)
+    niveles = [nivel(f["desde"], f["hasta"]) for f in pos]
+    medio = float(np.median(niveles))
+    ganancias = [float(np.clip((medio - n) * NIVELAR, -6, 6)) for n in niveles]
+    env = np.ones(len(x), np.float32) * 10 ** (ganancias[0] / 20)
+    for i in range(1, len(pos)):
+        a, b = pos[i - 1]["hasta"], pos[i]["desde"]
+        largo = min(0.15, max(0.02, (b - a) * 0.8))
+        centro = (a + b) / 2
+        i0, i1 = int((centro - largo / 2) * SR), int((centro + largo / 2) * SR)
+        g0, g1 = 10 ** (ganancias[i - 1] / 20), 10 ** (ganancias[i] / 20)
+        rampa = g0 + (g1 - g0) * (1 - np.cos(np.linspace(0, np.pi, max(1, i1 - i0)))) / 2
+        env[i0:i1] = rampa
+        env[i1:] = g1
+    return x * env
 
 
 def toma(cfg, texto, destino):
@@ -179,7 +208,9 @@ def escena(video, s, cfg, prov):
             partes.append(aire(x, pausa))
     x = np.concatenate(partes)
     tmp = Path("/tmp") / f"narracion-{s}.mp3"
-    pos, ratio = frases_en_la_toma(x, fr_prov, tmp)
+    fr_guion = [{"texto": re.sub(r"\[[^\]]*\]\s*", "", tx).strip()} for tx in textos]
+    pos, ratio = frases_en_la_toma(x, fr_guion, tmp)
+    x = nivelar(x, pos)
     x, eventos_pisados = limpiar_eventos(x)
     limpiados = len(EVENTOS) - len(eventos_pisados)
     # respiros: si el guion pide 1,4 s o más y la toma respiró menos, se agrega aire en medio de la pausa
@@ -212,12 +243,12 @@ def escena(video, s, cfg, prov):
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-af", f"volume={-16 - lufs(wav):.2f}dB",
                     "-c:a", "libmp3lame", "-b:a", "128k", str(dst)], check=True)
     dur = len(x) / SR
-    faltan = [fr_prov[i]["texto"] for i, f in enumerate(pos) if f["cubre"] < 0.9]
+    faltan = [fr_guion[i]["texto"] for i, f in enumerate(pos) if f["cubre"] < 0.9]
     print(f"{s}: {dur:6.2f} s (provisional {prov[s]['duracion']:6.2f}) · guion {ratio * 100:.0f} % · "
           f"{len(insertos)} respiro(s) alargado(s)" + (f" · REVISAR: {faltan}" if faltan else "")
           + (f" · {limpiados} ruido(s) limpiado(s)" if limpiados else "")
           + (f" · REGENERAR, ruido sobre una palabra: {eventos_pisados}" if eventos_pisados else ""))
-    return {"duracion": round(dur, 3), "frases": [{"texto": fr_prov[i]["texto"], **f} for i, f in enumerate(pos)]}
+    return {"duracion": round(dur, 3), "frases": [{"texto": fr_guion[i]["texto"], **f} for i, f in enumerate(pos)]}
 
 
 def main(video, escenas):

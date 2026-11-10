@@ -1,7 +1,7 @@
 {
   "salida": "s04-tres-velocidades.mp3",
-  "nota": "tiempos en segundos de la escena (voz provisional); env = [[t, ganancia]] con rampas lineales",
-  "dur": 53.09,
+  "nota": "tiempos de la escena (ya con la voz de Joder Jolines); env = [[t, ganancia]]",
+  "dur": "escena",
   "lufs_ref": -18,
   "capas": [
     {

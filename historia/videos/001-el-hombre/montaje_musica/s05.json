@@ -1,52 +1,36 @@
 {
   "salida": "s05-aprender-a-medir.mp3",
-  "dur": 90.6,
+  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. F desde sus stems; el clarinete entra con «cuánto pesa»",
+  "dur": "escena",
   "lufs_ref": null,
   "capas": [
     {
       "archivo": "suno/stems-F/0 Keyboard.wav",
-      "inicio": 0,
-      "env": [
-        [
-          0,
-          1
-        ]
-      ]
+      "inicio": 0
     },
     {
       "archivo": "suno/stems-F/1 Strings.wav",
-      "inicio": 0,
-      "env": [
-        [
-          0,
-          1
-        ]
-      ]
+      "inicio": 0
     },
     {
       "archivo": "suno/stems-F/2 Synth.wav",
-      "inicio": 0,
-      "env": [
-        [
-          0,
-          1
-        ]
-      ]
+      "inicio": 0
     },
     {
       "archivo": "suno/stems-F/3 Woodwinds.wav",
       "inicio": 0,
       "env": [
         [
-          45.86,
+          "pendiente",
+          -0.5,
           0
         ],
         [
-          47.36,
+          "pendiente",
+          1.0,
           1
         ]
       ]
     }
-  ],
-  "nota": "tiempos en segundos de la escena, ya con la narración de Joder Jolines; env = [[t, ganancia]] con rampas lineales"
+  ]
 }

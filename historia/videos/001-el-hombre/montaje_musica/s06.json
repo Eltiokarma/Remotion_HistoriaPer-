@@ -1,21 +1,26 @@
 {
   "salida": "s06-la-deuda.mp3",
-  "dur": 32.69,
+  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. El acorde final de G (29,5 s del archivo) un instante antes de la pregunta",
+  "dur": "escena",
   "capas": [
     {
       "archivo": "suno/V01_mus-G_ver01_3.wav",
-      "inicio": -1.65,
+      "ancla": [
+        "pregunta",
+        29.6
+      ],
       "env": [
         [
-          -1.65,
+          "pregunta",
+          -29.6,
           0
         ],
         [
-          -0.6499999999999999,
+          "pregunta",
+          -28.6,
           1
         ]
       ]
     }
-  ],
-  "nota": "tiempos en segundos de la escena, ya con la narración de Joder Jolines; env = [[t, ganancia]] con rampas lineales"
+  ]
 }
