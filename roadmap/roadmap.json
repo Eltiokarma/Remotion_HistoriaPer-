@@ -648,7 +648,7 @@
         "render_s": 55.2,
         "maquina": "contenedor"
       },
-      "nota": "Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor: probar en la laptop con --props='{\"webgpu\":true}'."
+      "nota": "Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor. Gerson (2026-11-10): no hace falta probarlos en la laptop."
     },
     {
       "id": "t2-qgis",

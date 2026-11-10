@@ -220,7 +220,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `t2-inkscape`
   - Prevista: — · Real: 2026-11-07
   - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 55.2 s en contenedor · tokens ¿?
-  - Nota: Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor: probar en la laptop con --props='{"webgpu":true}'.
+  - Nota: Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor. Gerson (2026-11-10): no hace falta probarlos en la laptop.
   - Evidencia: [13-efectos/INFORME.md](historia/laboratorio/muestras/13-efectos/INFORME.md) · [13-efectos/final-caliente.json](historia/laboratorio/resultados/13-efectos/final-caliente.json) · [13-efectos/hoja.jpg](historia/laboratorio/resultados/13-efectos/hoja.jpg)
 - [ ] **07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar** `t2-qgis` — 💡 propuesto
   - Entregable: Datos con licencia (p. ej. Natural Earth, dominio público) + clip de 5 s con el Titicaca
