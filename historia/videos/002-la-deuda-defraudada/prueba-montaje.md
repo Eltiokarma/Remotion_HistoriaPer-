@@ -5,3 +5,5 @@ Gerson autorizó el 10 de noviembre de 2026 un video corto de prueba, económico
 [Montaje y recursos](../../laboratorio/muestras/15-islas-y-el-pais/README.md). [Resultado y límites](../../laboratorio/muestras/15-islas-y-el-pais/INFORME.md). [Inventario integrado](../../laboratorio/muestras/15-islas-y-el-pais/inventario.json).
 
 Es un extracto de «Las islas y el país». No registra todavía el episodio 002 como video completo ni sustituye la secuencia de cinco escenas largas. El MP4 queda fuera de GitHub. Los ajustes de Novoa y la integración del resto conservan su estado pendiente.
+
+La [apertura revisada Perú–Pisco–Chincha](../../laboratorio/muestras/15-islas-y-el-pais/recorrido/README.md) incorpora el zoom y el paso a una ciudad lateral en 2D. Su muestra dura 21 segundos y reutiliza la voz provisional. La fuente del montaje completo incluye el enlace nuevo; esta revisión no vuelve a exportar todo el extracto.

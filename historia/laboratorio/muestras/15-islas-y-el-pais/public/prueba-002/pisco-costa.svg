@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1921" height="1081" viewBox="0 0 1921 1081">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="1505" y1="1080" x2="1505" y2="650" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ac9e79"/>
+      <stop offset="1" stop-color="#d1bc8d"/>
+    </linearGradient>
+  </defs>
+  <title>pisco-mapa-base.svg</title>
+  <g id="Selection">
+    <rect id="ancla_lienzo" x="0" y="0" width="1920" height="1080" fill="none"/>
+    <path id="playa" d="M1090 675 C1163.333 657 1253.333 649.667 1360 653 L1920 650 L1920 1080 L1530 1080 C1476.667 933.333 1391.667 835 1275 785 C1208.333 757 1146.667 720.333 1090 675 Z" fill="url(#linear-gradient-1)" stroke="#d5c69e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="espuma-orilla" d="M1090 675 C1203.333 701.667 1290 745 1350 805 C1410 865 1455 943.333 1485 1040" fill="none" stroke="#e4d7b1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

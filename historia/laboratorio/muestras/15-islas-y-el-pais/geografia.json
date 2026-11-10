@@ -1,0 +1,59 @@
+{
+  "fuente": "Natural Earth 1:10m, world-atlas 2.0.2",
+  "licencia": "Dominio público",
+  "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "limite": "Localización física de referencia; no un mapa de las fronteras de 1850. Las posiciones de Pisco y Chincha son orientativas.",
+  "pisco": {
+    "lon": -76.203,
+    "lat": -13.71,
+    "punto": [
+      909.544669330297,
+      746.4494853772406
+    ]
+  },
+  "chincha": {
+    "lon": -76.4,
+    "lat": -13.64,
+    "punto": [
+      902.0364306022193,
+      743.7037479504361
+    ]
+  },
+  "camara": {
+    "inicio_zoom": 3.3,
+    "duracion_zoom": 4.4,
+    "escala_final": 32,
+    "ancla_pisco": [
+      1430,
+      650
+    ],
+    "inicio_plano": 8,
+    "duracion_plano": 1.8,
+    "inicio_travelling": 12.2,
+    "duracion_travelling": 5.3,
+    "desplazamiento": 1600,
+    "enlace_islas": 17.8,
+    "duracion_enlace": 0.5,
+    "duracion_muestra": 21
+  },
+  "rotulos": {
+    "peru": "PERÚ",
+    "pisco": "PISCO",
+    "chincha": "ISLAS DE CHINCHA",
+    "oceano": "OCÉANO PACÍFICO",
+    "general": "Perú → Pisco → islas de Chincha",
+    "ciudad": "Pisco · costa peruana",
+    "islas": "Islas de Chincha · frente a Pisco",
+    "nota": "Pisco: reconstrucción esquemática de época",
+    "breadcrumb": [
+      "Perú",
+      "Pisco",
+      "Chincha"
+    ]
+  },
+  "ciudad": "Reconstrucción editorial: casas genéricas de época, no una restitución urbana ni edificios identificados.",
+  "solo_voz": [
+    "epoca",
+    "islas"
+  ]
+}

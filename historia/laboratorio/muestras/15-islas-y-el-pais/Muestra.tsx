@@ -10,8 +10,11 @@ import {fuente} from '../../../src/estilo/fuentes';
 import {tramo, mix, asienta} from '../../../src/direction/anim';
 import type datos from './datos.json';
 import type tiempos from './tiempos.json';
+import type geografia from './geografia.json';
+import type mapa from './mapa-inline.json';
+import {GeografiaIntro} from './GeografiaIntro';
 
-type Props={datos:typeof datos;tiempos:typeof tiempos};
+type Props={datos:typeof datos;tiempos:typeof tiempos;geografia:typeof geografia;mapa:typeof mapa;soloIntroduccion?:boolean};
 const OCRE='#d2b77a',TIZA='#ede5cb',SECUNDARIO='#b6c1a7';
 const archivo=(name:string)=>staticFile('prueba-002/'+name+'.svg');
 const fijo:CSSProperties={position:'absolute',margin:0};
@@ -104,25 +107,27 @@ const Reclamo=({t,datos:d,tiempos:q}:{t:number;datos:Props['datos'];tiempos:Prop
   </div>;
 };
 
-export const Muestra:React.FC<Props>=({datos:d,tiempos:q})=>{
-  const frame=useCurrentFrame(),{fps}=useVideoConfig(),t=frame/fps;
+export const Muestra:React.FC<Props>=({datos:d,tiempos:q,geografia:geo,mapa,soloIntroduccion=false})=>{
+  const frame=useCurrentFrame(),{fps,durationInFrames}=useVideoConfig(),t=frame/fps;
   const p=(id:string)=>q.parrafos.find(p=>p.id===id)!;
   const panLibro=tramo(t,p('venta').desde-.25,2.1,'pesado');
   const panReclamo=tramo(t,p('obligaciones').desde-.2,2.1,'pesado');
   const cameraX=1920*panLibro+1080*panReclamo;
   const titulo=t<p('venta').desde?d.epoca:t<p('obligaciones').desde?d.cuentas:t<p('reclamo').desde?d.obligaciones:d.reclamo;
-  const subtitulo=t<p('mercado').desde?d.islas:t<p('venta').desde?d.mercado:'';
+  const subtitulo=t<geo.camara.inicio_plano?geo.rotulos.general:t<geo.camara.inicio_travelling?geo.rotulos.ciudad:t<p('mercado').desde?d.islas:t<p('venta').desde?d.mercado:'';
   const mezcla=tramo(t,p('venta').desde,1.8,'natural');
-  const fade=tramo(t,0,.65,'natural')*(1-tramo(t,q.duracion-.7,.7,'natural'));
+  const fade=tramo(t,0,.65,'natural')*(1-tramo(t,durationInFrames/fps-.7,.7,'natural'));
+  const enlace=tramo(t,geo.camara.enlace_islas,geo.camara.duracion_enlace,'natural');
   return <AbsoluteFill style={{background:'#20392e'}}>
     <div style={{...fijo,inset:0,opacity:fade}}>
       <Pizarra/>
       <div style={{...fijo,inset:0,clipPath:'inset(44px 40px 102px 40px)'}}>
       <div style={{...fijo,left:0,top:0,width:4920,height:1080,transform:`translateX(${-cameraX}px)`}}>
-        {t<p('venta').desde+2.2?<Comercio t={t} datos={d} tiempos={q}/>:null}
+        {t<p('venta').desde+2.2?<div style={{...fijo,inset:0,opacity:enlace}}><Comercio t={t} datos={d} tiempos={q}/></div>:null}
         {t>p('venta').desde-.8?<Cuentas t={t} datos={d} tiempos={q}/>:null}
         {t>p('obligaciones').desde-.8?<Reclamo t={t} datos={d} tiempos={q}/>:null}
       </div>
+      {enlace<1?<div style={{...fijo,inset:0,opacity:1-enlace}}><GeografiaIntro t={t} geografia={geo} mapa={mapa} datos={d} tiempos={q}/></div>:null}
       </div>
       <Luz color={OCRE} x={t<p('venta').desde?43:t<p('obligaciones').desde?53:74} y={52} radio={47} intensidad={.07}/>
       <Atmosfera grano={0} vineta={.25}/>
@@ -132,8 +137,8 @@ export const Muestra:React.FC<Props>=({datos:d,tiempos:q})=>{
       <Rotulo x={114} y={1010} width={1692} size={21} color={SECUNDARIO}>{d.fuente}</Rotulo>
       <Rotulo x={1060} y={38} width={744} size={23} align="right" color={SECUNDARIO}>{d.aviso}</Rotulo>
     </div>
-    {q.parrafos.map(p=><Sequence key={p.id} name={'voz '+p.id} from={Math.round(p.desde*fps)} durationInFrames={Math.ceil(p.duracion_voz*fps)} layout="none"><Audio src={staticFile(p.archivo)}/></Sequence>)}
-    <Audio src={ambiente('mar')} volume={()=>.18*tramo(t,0,1.2,'natural')*(1-mezcla)} loop/>
+    {q.parrafos.filter(p=>!soloIntroduccion||geo.solo_voz.includes(p.id)).map(p=><Sequence key={p.id} name={'voz '+p.id} from={Math.round(p.desde*fps)} durationInFrames={Math.ceil(p.duracion_voz*fps)} layout="none"><Audio src={staticFile(p.archivo)}/></Sequence>)}
+    <Audio src={ambiente('mar')} volume={()=>.18*tramo(t,0,1.2,'natural')*(1-mezcla)*fade} loop/>
     <Audio src={ambiente('cuarto')} volume={()=>.12*mezcla*(1-tramo(t,q.duracion-1,1,'natural'))} loop/>
     <Sfx nombre="hoja" en={p('venta').desde+1.8} fps={fps} dura={1.1} volumen={.22}/>
     <Sfx nombre="pluma" en={p('cuentas').desde+2.7} fps={fps} dura={1} volumen={.14}/>

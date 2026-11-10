@@ -2,6 +2,14 @@
 
 Extracto del episodio 002 autorizado por Gerson el 10 de noviembre de 2026 como prueba económica con locución provisional. No es el episodio completo ni sustituye la revisión de sus cinco escenas largas.
 
+## Recorrido Perú–Pisco–Chincha
+
+La revisión 2 incorpora mapa del Perú, acercamiento a Pisco, paso a una ciudad lateral en 2D y travelling hacia las islas. [Dirección, piezas e informe del recorrido](recorrido/README.md). Se exporta una muestra de apertura de 21 segundos. La prueba completa de 76 segundos y su informe corresponden a la [versión 1](https://github.com/Eltiokarma/Remotion_HistoriaPer-/tree/25493fd187a18d192783f3c32f35824f43598f4e/historia/laboratorio/muestras/15-islas-y-el-pais); el montaje completo revisado, ahora de unos 80 segundos, aún no se vuelve a exportar.
+
+```sh
+node laboratorio/muestras/15-islas-y-el-pais/renderizar.mjs --intro --solo-video
+```
+
 ## Qué integra
 
 - Roca de Chincha, aves posadas, mar azul, barco, producto, mapa de Gran Bretaña, almacén y cultivos del kit vectorial detallado.
@@ -31,7 +39,9 @@ npx remotion studio laboratorio/muestras/15-islas-y-el-pais/index.tsx --public-d
 node laboratorio/muestras/15-islas-y-el-pais/renderizar.mjs --solo-video
 ```
 
-La salida por defecto es `historia/out/prueba-002/002-prueba-islas.mp4`. Los temporales quedan en `historia/laboratorio/out/15-islas-y-el-pais/`. Se pueden cambiar con `PRUEBA_OUTPUT_DIR` y `PRUEBA_TEMP_DIR`. `--solo-cuadros` revisa imágenes y `--reuse` reutiliza un paquete ya creado.
+En Windows, si existe `D:/Codex-Render-Temp`, el navegador de Remotion, sus perfiles, el paquete y la codificación van a `D:/Codex-Render-Temp/002-prueba-islas`. Las previsualizaciones van a `D:/canal/previsualizaciones/002-la-deuda-defraudada`. Esto afecta solo al proceso de render; no cambia la configuración ni el historial de la aplicación Codex.
+
+En otros entornos, la salida por defecto es `historia/out/prueba-002/002-prueba-islas.mp4` y los temporales quedan en `historia/laboratorio/out/15-islas-y-el-pais/`. Se pueden cambiar con `PRUEBA_OUTPUT_DIR` y `PRUEBA_TEMP_DIR`. `--intro` selecciona la apertura; `--solo-cuadros` revisa imágenes y `--reuse` reutiliza un paquete ya creado.
 
 Los MP3 incluidos permiten reproducir sin solicitar otra locución. Para regenerarla se necesita Python con [edge-tts](https://github.com/rany2/edge-tts), acceso a su servicio y ffmpeg; ejecutar `crear_voz.py`. Si cambia el texto o la voz, borrar primero el MP3 y su archivo de palabras correspondiente; las pausas se pueden recalcular reutilizando el audio. `narracion.json` contiene el texto, la voz y las pausas; `tiempos.json` se calcula midiendo cada archivo. Los marcadores de palabras proceden del servicio y guían las revelaciones, sin afirmar alineación fonética manual.
 

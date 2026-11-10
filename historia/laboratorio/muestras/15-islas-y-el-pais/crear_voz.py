@@ -41,7 +41,7 @@ async def main():
         data.append({**p, 'desde': round(clock, 3), 'voz_hasta': round(clock+duration, 3), 'duracion_voz': duration, 'archivo': 'prueba-002/'+target.name, 'palabras': boundaries})
         clock += duration+p['pausa']
         print(p['id'], round(duration, 2), 's', flush=True)
-    result = {'fps': 15, 'duracion': round(clock, 3), 'voz': config['voz'], 'parrafos': data}
+    result = {'fps': 15, 'duracion': round(clock, 3), 'voz': config['voz'], 'revision_entrada': 2, 'parrafos': data}
     (HERE/'tiempos.json').write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     print('TOTAL:', round(clock, 2), 's', flush=True)
 

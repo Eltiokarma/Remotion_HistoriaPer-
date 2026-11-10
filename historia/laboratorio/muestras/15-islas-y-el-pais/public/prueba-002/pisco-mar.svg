@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="960" y1="1080" x2="960" y2="680" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3f6d76"/>
+      <stop offset="1" stop-color="#779b99"/>
+    </linearGradient>
+  </defs>
+  <title>pisco-mapa-base.svg</title>
+  <g id="Selection">
+    <rect id="ancla_lienzo" x="0" y="0" width="1920" height="1080" fill="none"/>
+    <rect id="mar" x="0" y="680" width="1920" height="400" fill="url(#linear-gradient-1)"/>
+    <path id="onda-0-0" d="M15 698 C55 695.333 115.667 695.333 197 698" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-0-1" d="M430 698 C470 695.333 530.667 695.333 612 698" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-0-2" d="M845 698 C885 695.333 945.667 695.333 1027 698" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-0-3" d="M1260 698 C1300 695.333 1360.667 695.333 1442 698" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-0-4" d="M1675 698 C1715 695.333 1775.667 695.333 1857 698" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-1-0" d="M46 721 C86 718.333 146.667 718.333 228 721" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-1-1" d="M461 721 C501 718.333 561.667 718.333 643 721" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-1-2" d="M876 721 C916 718.333 976.667 718.333 1058 721" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-1-3" d="M1291 721 C1331 718.333 1391.667 718.333 1473 721" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-1-4" d="M1706 721 C1746 718.333 1806.667 718.333 1888 721" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-2-0" d="M15 744 C55 741.333 115.667 741.333 197 744" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-2-1" d="M430 744 C470 741.333 530.667 741.333 612 744" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-2-2" d="M845 744 C885 741.333 945.667 741.333 1027 744" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-2-3" d="M1260 744 C1300 741.333 1360.667 741.333 1442 744" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-2-4" d="M1675 744 C1715 741.333 1775.667 741.333 1857 744" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-3-0" d="M46 767 C86 764.333 146.667 764.333 228 767" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-3-1" d="M461 767 C501 764.333 561.667 764.333 643 767" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-3-2" d="M876 767 C916 764.333 976.667 764.333 1058 767" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-3-3" d="M1291 767 C1331 764.333 1391.667 764.333 1473 767" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-3-4" d="M1706 767 C1746 764.333 1806.667 764.333 1888 767" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-4-0" d="M15 790 C55 787.333 115.667 787.333 197 790" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-4-1" d="M430 790 C470 787.333 530.667 787.333 612 790" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-4-2" d="M845 790 C885 787.333 945.667 787.333 1027 790" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-4-3" d="M1260 790 C1300 787.333 1360.667 787.333 1442 790" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-4-4" d="M1675 790 C1715 787.333 1775.667 787.333 1857 790" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-5-0" d="M46 813 C86 810.333 146.667 810.333 228 813" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-5-1" d="M461 813 C501 810.333 561.667 810.333 643 813" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-5-2" d="M876 813 C916 810.333 976.667 810.333 1058 813" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-5-3" d="M1291 813 C1331 810.333 1391.667 810.333 1473 813" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-5-4" d="M1706 813 C1746 810.333 1806.667 810.333 1888 813" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-6-0" d="M15 836 C55 833.333 115.667 833.333 197 836" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-6-1" d="M430 836 C470 833.333 530.667 833.333 612 836" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-6-2" d="M845 836 C885 833.333 945.667 833.333 1027 836" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-6-3" d="M1260 836 C1300 833.333 1360.667 833.333 1442 836" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-6-4" d="M1675 836 C1715 833.333 1775.667 833.333 1857 836" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-7-0" d="M46 859 C86 856.333 146.667 856.333 228 859" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-7-1" d="M461 859 C501 856.333 561.667 856.333 643 859" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-7-2" d="M876 859 C916 856.333 976.667 856.333 1058 859" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-7-3" d="M1291 859 C1331 856.333 1391.667 856.333 1473 859" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-7-4" d="M1706 859 C1746 856.333 1806.667 856.333 1888 859" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-8-0" d="M15 882 C55 879.333 115.667 879.333 197 882" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-8-1" d="M430 882 C470 879.333 530.667 879.333 612 882" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-8-2" d="M845 882 C885 879.333 945.667 879.333 1027 882" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-8-3" d="M1260 882 C1300 879.333 1360.667 879.333 1442 882" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-8-4" d="M1675 882 C1715 879.333 1775.667 879.333 1857 882" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-9-0" d="M46 905 C86 902.333 146.667 902.333 228 905" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-9-1" d="M461 905 C501 902.333 561.667 902.333 643 905" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-9-2" d="M876 905 C916 902.333 976.667 902.333 1058 905" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-9-3" d="M1291 905 C1331 902.333 1391.667 902.333 1473 905" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-9-4" d="M1706 905 C1746 902.333 1806.667 902.333 1888 905" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-10-0" d="M15 928 C55 925.333 115.667 925.333 197 928" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-10-1" d="M430 928 C470 925.333 530.667 925.333 612 928" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-10-2" d="M845 928 C885 925.333 945.667 925.333 1027 928" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-10-3" d="M1260 928 C1300 925.333 1360.667 925.333 1442 928" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-10-4" d="M1675 928 C1715 925.333 1775.667 925.333 1857 928" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-11-0" d="M46 951 C86 948.333 146.667 948.333 228 951" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-11-1" d="M461 951 C501 948.333 561.667 948.333 643 951" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-11-2" d="M876 951 C916 948.333 976.667 948.333 1058 951" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-11-3" d="M1291 951 C1331 948.333 1391.667 948.333 1473 951" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-11-4" d="M1706 951 C1746 948.333 1806.667 948.333 1888 951" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-12-0" d="M15 974 C55 971.333 115.667 971.333 197 974" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-12-1" d="M430 974 C470 971.333 530.667 971.333 612 974" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-12-2" d="M845 974 C885 971.333 945.667 971.333 1027 974" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-12-3" d="M1260 974 C1300 971.333 1360.667 971.333 1442 974" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-12-4" d="M1675 974 C1715 971.333 1775.667 971.333 1857 974" fill="none" stroke="#b5c7b7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-13-0" d="M46 997 C86 994.333 146.667 994.333 228 997" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-13-1" d="M461 997 C501 994.333 561.667 994.333 643 997" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-13-2" d="M876 997 C916 994.333 976.667 994.333 1058 997" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-13-3" d="M1291 997 C1331 994.333 1391.667 994.333 1473 997" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-13-4" d="M1706 997 C1746 994.333 1806.667 994.333 1888 997" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-14-0" d="M15 1020 C55 1017.333 115.667 1017.333 197 1020" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-14-1" d="M430 1020 C470 1017.333 530.667 1017.333 612 1020" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-14-2" d="M845 1020 C885 1017.333 945.667 1017.333 1027 1020" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-14-3" d="M1260 1020 C1300 1017.333 1360.667 1017.333 1442 1020" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="onda-14-4" d="M1675 1020 C1715 1017.333 1775.667 1017.333 1857 1020" fill="none" stroke="#8eaaa8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

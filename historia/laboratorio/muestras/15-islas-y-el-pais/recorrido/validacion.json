@@ -1,0 +1,61 @@
+{
+  "fecha": "2026-11-10",
+  "alcance": "Solo la nueva apertura Perú–Pisco–Chincha",
+  "herramientas": [
+    "VectorCraft mediante MCP",
+    "Remotion"
+  ],
+  "video": {
+    "duracion_segundos": 21.013,
+    "bytes": 1827946,
+    "resolucion": [
+      960,
+      540
+    ],
+    "fps": 15,
+    "cuadros": 315,
+    "codec": "h264",
+    "audio": "aac",
+    "decodificacion_completa": true
+  },
+  "sonido": {
+    "voz": "Sintética provisional reutilizada, sin nuevas solicitudes",
+    "fragmentos": 2,
+    "LUFS": -16.82,
+    "pico_verdadero_dBTP": -4.6,
+    "escucha_critica_humana": "Pendiente"
+  },
+  "comprobaciones": {
+    "mapa_y_ciudad_revisados": true,
+    "secuencia_de_fotogramas_del_mp4_inspeccionada": true,
+    "direccion_oeste_noroeste_correcta": true,
+    "ancla_pisco_conservada": true,
+    "transformacion_final_isla": [
+      375,
+      -160,
+      1.5
+    ],
+    "voz_conservada": 8,
+    "desplazamiento_posterior_segundos": 4,
+    "raster_en_native": 0,
+    "tipos_y_reglas": "Correctos",
+    "recursos_nuevos": 5
+  },
+  "almacenamiento": {
+    "navegador": "D",
+    "perfiles_y_codificacion": "D",
+    "paquete_y_capturas": "D",
+    "mp4": "D",
+    "mp4_en_github": false
+  },
+  "rendimiento": {
+    "equipo": "Laptop local Windows, i7-11370H",
+    "concurrencia": 2,
+    "render_segundos": 113.8,
+    "api_mapas_de_pago": false
+  },
+  "pendiente": [
+    "Aprobación de Gerson",
+    "Comprobación audiovisual del montaje completo actualizado"
+  ]
+}

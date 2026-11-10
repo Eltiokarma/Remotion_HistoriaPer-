@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>pisco-mapa-base.svg</title>
+  <g id="Selection">
+    <rect id="ancla_lienzo" x="0" y="0" width="1920" height="1080" fill="none"/>
+    <path id="dunas" d="M1040 652 C1146.667 585.333 1251.667 564 1355 588 C1435 512.667 1510 501.667 1580 555 C1706.667 511 1820 516 1920 570 L1920 688 Z" fill="#8c8e73"/>
+    <path id="lomada" d="M1270 641 C1370 583.667 1453.333 572 1520 606 C1640 568.667 1773.333 564.667 1920 594 L1920 688 Z" fill="#b4a983"/>
+  </g>
+</svg>

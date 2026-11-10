@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="1258" y1="660" x2="1258" y2="548" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c9b58a"/>
+      <stop offset="1" stop-color="#ebd9b1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1427.5" y1="660" x2="1427.5" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c9b58a"/>
+      <stop offset="1" stop-color="#ebd9b1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="1607" y1="660" x2="1607" y2="525" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c9b58a"/>
+      <stop offset="1" stop-color="#ebd9b1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="1779.5" y1="662" x2="1779.5" y2="496" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c9b58a"/>
+      <stop offset="1" stop-color="#ebd9b1"/>
+    </linearGradient>
+  </defs>
+  <title>pisco-mapa-base.svg</title>
+  <g id="Selection">
+    <rect id="ancla_lienzo" x="0" y="0" width="1920" height="1080" fill="none"/>
+    <rect id="sombra-apoyo" x="1186" y="658" width="177" height="9" fill="#58664f"/>
+    <rect id="fachada" x="1178" y="548" width="160" height="112" fill="url(#linear-gradient-1)" stroke="#4d6554" stroke-width="2" stroke-miterlimit="10"/>
+    <polygon id="costado" points="1338,548 1363,560 1363,660 1338,660" fill="#a1916e" stroke="#4d6554" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="techo" points="1166,555 1254.8,513 1362,557" fill="#a0785b" stroke="#5d6750" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1176" y1="551" x2="1254.8" y2="522" fill="none" stroke="#c3a37a" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="marco-puerta" x="1240.2" y="593.92" width="43.6" height="66.08" fill="#e6d2a5" stroke="#7d8060" stroke-width="1.4" stroke-miterlimit="10"/>
+    <rect id="puerta" x="1245.2" y="597.28" width="33.6" height="62.72" fill="#4e6251" stroke="#74816a" stroke-width="1.2" stroke-miterlimit="10"/>
+    <line x1="1262" y1="598.4" x2="1262" y2="660" fill="none" stroke="#a99a71" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1191" y="573" width="33.2" height="41.84" fill="#d9c89d" stroke="#8b8d6b" stroke-miterlimit="10"/>
+    <rect x="1194" y="576" width="27.2" height="35.84" fill="#586d58" stroke="#3d5948" stroke-width="1.1" stroke-miterlimit="10"/>
+    <line x1="1207.6" y1="576" x2="1207.6" y2="611.84" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1194" y1="593.92" x2="1221.2" y2="593.92" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1291.8" y="573" width="33.2" height="41.84" fill="#d9c89d" stroke="#8b8d6b" stroke-miterlimit="10"/>
+    <rect x="1294.8" y="576" width="27.2" height="35.84" fill="#586d58" stroke="#3d5948" stroke-width="1.1" stroke-miterlimit="10"/>
+    <line x1="1308.4" y1="576" x2="1308.4" y2="611.84" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1294.8" y1="593.92" x2="1322" y2="593.92" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1183" y1="652" x2="1334" y2="652" fill="none" stroke="#a99773" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="sombra-apoyo-2" data-name="sombra-apoyo" x="1343" y="658" width="202" height="9" fill="#58664f"/>
+    <rect id="fachada-2" data-name="fachada" x="1335" y="480" width="185" height="180" fill="url(#linear-gradient-2)" stroke="#4d6554" stroke-width="2" stroke-miterlimit="10"/>
+    <polygon id="costado-2" data-name="costado" points="1520,480 1545,492 1545,660 1520,660" fill="#a1916e" stroke="#4d6554" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="cornisa" x="1329" y="472" width="198" height="12" fill="#d2bc91" stroke="#5d6b51" stroke-width="1.2" stroke-miterlimit="10"/>
+    <line x1="1332" y1="478" x2="1525" y2="478" fill="none" stroke="#efe0b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="marco-puerta-2" data-name="marco-puerta" x="1407.7" y="553.8" width="48.85" height="106.2" fill="#e6d2a5" stroke="#7d8060" stroke-width="1.4" stroke-miterlimit="10"/>
+    <rect id="puerta-2" data-name="puerta" x="1412.7" y="559.2" width="38.85" height="100.8" fill="#4e6251" stroke="#74816a" stroke-width="1.2" stroke-miterlimit="10"/>
+    <line x1="1432.125" y1="561" x2="1432.125" y2="660" fill="none" stroke="#a99a71" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1350.5" y="565.2" width="37.45" height="49.2" fill="#d9c89d" stroke="#8b8d6b" stroke-miterlimit="10"/>
+    <rect x="1353.5" y="568.2" width="31.45" height="43.2" fill="#586d58" stroke="#3d5948" stroke-width="1.1" stroke-miterlimit="10"/>
+    <line x1="1369.225" y1="568.2" x2="1369.225" y2="611.4" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1353.5" y1="589.8" x2="1384.95" y2="589.8" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1467.05" y="565.2" width="37.45" height="49.2" fill="#d9c89d" stroke="#8b8d6b" stroke-miterlimit="10"/>
+    <rect x="1470.05" y="568.2" width="31.45" height="43.2" fill="#586d58" stroke="#3d5948" stroke-width="1.1" stroke-miterlimit="10"/>
+    <line x1="1485.775" y1="568.2" x2="1485.775" y2="611.4" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1470.05" y1="589.8" x2="1501.5" y2="589.8" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="ventana-alta" x="1364.6" y="500" width="42.55" height="43.2" fill="#4b6050" stroke="#e4d3a7" stroke-width="3" stroke-miterlimit="10"/>
+    <rect id="ventana-alta-2" data-name="ventana-alta" x="1436.75" y="500" width="42.55" height="43.2" fill="#4b6050" stroke="#e4d3a7" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="1343" y1="557.4" x2="1514" y2="557.4" fill="none" stroke="#a18f69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="base-balcon" x="1353.5" y="546.6" width="144.3" height="9" fill="#8b7857" stroke="#485c4b" stroke-miterlimit="10"/>
+    <line x1="1357.2" y1="521.6" x2="1357.2" y2="546.6" fill="none" stroke="#6b6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1375.7" y1="521.6" x2="1375.7" y2="546.6" fill="none" stroke="#6b6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1394.2" y1="521.6" x2="1394.2" y2="546.6" fill="none" stroke="#6b6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1412.7" y1="521.6" x2="1412.7" y2="546.6" fill="none" stroke="#6b6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1431.2" y1="521.6" x2="1431.2" y2="546.6" fill="none" stroke="#6b6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1449.7" y1="521.6" x2="1449.7" y2="546.6" fill="none" stroke="#6b6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1468.2" y1="521.6" x2="1468.2" y2="546.6" fill="none" stroke="#6b6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1486.7" y1="521.6" x2="1486.7" y2="546.6" fill="none" stroke="#6b6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1353.5" y1="521.6" x2="1497.8" y2="521.6" fill="none" stroke="#6b6a4f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1340" y1="652" x2="1516" y2="652" fill="none" stroke="#a99773" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="sombra-apoyo-3" data-name="sombra-apoyo" x="1538" y="658" width="171" height="9" fill="#58664f"/>
+    <rect id="fachada-3" data-name="fachada" x="1530" y="525" width="154" height="135" fill="url(#linear-gradient-3)" stroke="#4d6554" stroke-width="2" stroke-miterlimit="10"/>
+    <polygon id="costado-3" data-name="costado" points="1684,525 1709,537 1709,660 1684,660" fill="#a1916e" stroke="#4d6554" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="cornisa-2" data-name="cornisa" x="1524" y="517" width="167" height="12" fill="#d2bc91" stroke="#5d6b51" stroke-width="1.2" stroke-miterlimit="10"/>
+    <line x1="1527" y1="523" x2="1689" y2="523" fill="none" stroke="#efe0b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="marco-puerta-3" data-name="marco-puerta" x="1589.68" y="580.35" width="42.34" height="79.65" fill="#e6d2a5" stroke="#7d8060" stroke-width="1.4" stroke-miterlimit="10"/>
+    <rect id="puerta-3" data-name="puerta" x="1594.68" y="584.4" width="32.34" height="75.6" fill="#4e6251" stroke="#74816a" stroke-width="1.2" stroke-miterlimit="10"/>
+    <line x1="1610.85" y1="585.75" x2="1610.85" y2="660" fill="none" stroke="#a99a71" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1542.4" y="555.75" width="32.18" height="49.2" fill="#d9c89d" stroke="#8b8d6b" stroke-miterlimit="10"/>
+    <rect x="1545.4" y="558.75" width="26.18" height="43.2" fill="#586d58" stroke="#3d5948" stroke-width="1.1" stroke-miterlimit="10"/>
+    <line x1="1558.49" y1="558.75" x2="1558.49" y2="601.95" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1545.4" y1="580.35" x2="1571.58" y2="580.35" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1639.42" y="555.75" width="32.18" height="49.2" fill="#d9c89d" stroke="#8b8d6b" stroke-miterlimit="10"/>
+    <rect x="1642.42" y="558.75" width="26.18" height="43.2" fill="#586d58" stroke="#3d5948" stroke-width="1.1" stroke-miterlimit="10"/>
+    <line x1="1655.51" y1="558.75" x2="1655.51" y2="601.95" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1642.42" y1="580.35" x2="1668.6" y2="580.35" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1535" y1="652" x2="1680" y2="652" fill="none" stroke="#a99773" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="sombra-apoyo-4" data-name="sombra-apoyo" x="1700" y="660" width="192" height="9" fill="#58664f"/>
+    <rect id="fachada-4" data-name="fachada" x="1692" y="496" width="175" height="166" fill="url(#linear-gradient-4)" stroke="#4d6554" stroke-width="2" stroke-miterlimit="10"/>
+    <polygon id="costado-4" data-name="costado" points="1867,496 1892,508 1892,662 1867,662" fill="#a1916e" stroke="#4d6554" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="cornisa-3" data-name="cornisa" x="1686" y="488" width="188" height="12" fill="#d2bc91" stroke="#5d6b51" stroke-width="1.2" stroke-miterlimit="10"/>
+    <line x1="1689" y1="494" x2="1872" y2="494" fill="none" stroke="#efe0b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="marco-puerta-4" data-name="marco-puerta" x="1760.5" y="564.06" width="46.75" height="97.94" fill="#e6d2a5" stroke="#7d8060" stroke-width="1.4" stroke-miterlimit="10"/>
+    <rect id="puerta-4" data-name="puerta" x="1765.5" y="569.04" width="36.75" height="92.96" fill="#4e6251" stroke="#74816a" stroke-width="1.2" stroke-miterlimit="10"/>
+    <line x1="1783.875" y1="570.7" x2="1783.875" y2="662" fill="none" stroke="#a99a71" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1706.5" y="574.34" width="35.75" height="45.84" fill="#d9c89d" stroke="#8b8d6b" stroke-miterlimit="10"/>
+    <rect x="1709.5" y="577.34" width="29.75" height="39.84" fill="#586d58" stroke="#3d5948" stroke-width="1.1" stroke-miterlimit="10"/>
+    <line x1="1724.375" y1="577.34" x2="1724.375" y2="617.18" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1709.5" y1="597.26" x2="1739.25" y2="597.26" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1816.75" y="574.34" width="35.75" height="45.84" fill="#d9c89d" stroke="#8b8d6b" stroke-miterlimit="10"/>
+    <rect x="1819.75" y="577.34" width="29.75" height="39.84" fill="#586d58" stroke="#3d5948" stroke-width="1.1" stroke-miterlimit="10"/>
+    <line x1="1834.625" y1="577.34" x2="1834.625" y2="617.18" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1819.75" y1="597.26" x2="1849.5" y2="597.26" fill="none" stroke="#b6b28b" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="ventana-alta-3" data-name="ventana-alta" x="1720" y="516" width="40.25" height="39.84" fill="#4b6050" stroke="#e4d3a7" stroke-width="3" stroke-miterlimit="10"/>
+    <rect id="ventana-alta-4" data-name="ventana-alta" x="1788.25" y="516" width="40.25" height="39.84" fill="#4b6050" stroke="#e4d3a7" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="1700" y1="567.38" x2="1861" y2="567.38" fill="none" stroke="#a18f69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1697" y1="654" x2="1863" y2="654" fill="none" stroke="#a99773" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="pasaje" points="1255,672 1310,635 1400,635 1365,675" fill="#d3bf94" stroke="#849072" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="cajon-mercancia" x="1575" y="644" width="53" height="29" fill="#a78b60" stroke="#5e6f55" stroke-width="1.2" stroke-miterlimit="10"/>
+    <line x1="1580" y1="651" x2="1623" y2="651" fill="none" stroke="#d4bf90" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="1601" y1="645" x2="1601" y2="672" fill="none" stroke="#65775c" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

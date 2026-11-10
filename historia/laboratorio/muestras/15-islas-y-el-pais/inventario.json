@@ -163,5 +163,7 @@
       "sha256": "709c3f803c8e54c0e7112827bf2af9c61408bc25d1f553a229b7cedec49e9306",
       "estado": "Integrado como pieza independiente"
     }
-  ]
+  ],
+  "nota_version": "Inventario de la primera prueba; la nueva apertura se añade en recorrido/piezas.json",
+  "recorrido_entrada": "recorrido/piezas.json"
 }

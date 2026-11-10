@@ -1,5 +1,7 @@
 # Resultado de la prueba
 
+Informe de la primera muestra, conservada en la [versión 25493fd](https://github.com/Eltiokarma/Remotion_HistoriaPer-/tree/25493fd187a18d192783f3c32f35824f43598f4e/historia/laboratorio/muestras/15-islas-y-el-pais). La apertura revisada se documenta aparte en [recorrido/README.md](recorrido/README.md).
+
 Extracto de «Las islas y el país» preparado a pedido de Gerson. El episodio completo sigue pendiente de integración.
 
 ## Medido
@@ -14,8 +16,8 @@ Extracto de «Las islas y el país» preparado a pedido de Gerson. El episodio c
 
 | Problema | Corrección | Evidencia |
 |---|---|---|
-| El mar invadía el pie del cuadro durante el acercamiento | Reencuadre inicial y máscara dentro de la pizarra | [Antes](resultados/antes-mar.jpg); comprobación del MP4 corregido |
-| Rótulos duplicados durante la apertura comercial | Separar salida de la definición y entrada de las etiquetas | [Antes](resultados/antes-rotulos.jpg); [mercado corregido](resultados/final-1.jpg) |
+| El mar invadía el pie del cuadro durante el acercamiento | Reencuadre inicial y máscara dentro de la pizarra | Registro textual; la captura previa no quedó respaldada |
+| Rótulos duplicados durante la apertura comercial | Separar salida de la definición y entrada de las etiquetas | [Mercado corregido](resultados/final-1.jpg); la captura previa no quedó respaldada |
 | El libro quedaba vacío al llegar | Recuperar la venta como concepto conocido y destacar las partidas con sus palabras | [Cuentas](resultados/final-2.jpg) |
 | La flecha de ingreso quedaba suelta tras el paneo | Retirarla antes del cambio de escala y conservar el mismo edificio | [Secuencia del paneo](resultados/paneo.jpg) |
 | El recorrido final podía sugerir emisión del reclamo por el Estado | Dibujar la relación desde el reclamo hacia el Estado | [Reclamo](resultados/final-4.jpg) |
