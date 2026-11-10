@@ -2,6 +2,7 @@ import { clamp } from '../../direction/anim';
 import { azar } from '../../direction/azar';
 import { fuente } from '../../estilo/fuentes';
 import { FiltroTiza, TIZA, TextoTiza } from '../texto/Tiza';
+import { CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
   id: string;
@@ -19,6 +20,9 @@ type Props = {
   apaga?: number;
   acentoMedia?: string;
   rotuloMediaLineas?: string[];
+  /** Lámina aprobada (larga-duracion-pizarra): las tres ondas y los estratos de la tierra, sobre las mismas franjas.
+   * Los rótulos, los tempos y los nombres siguen escribiéndose desde los datos. */
+  lamina?: Lamina | null;
 };
 
 const BANDAS = [[190, 370], [400, 590], [620, 790]] as const;
@@ -31,7 +35,8 @@ const TIERRA = ['#dcb574', '#c4835e', '#9e8a73'] as const;
  * (nerviosa arriba, larga al medio, casi plana abajo) y su rótulo escrito a mano. Brilla la que se
  * está nombrando (DIRECCION_DE_VIDEO §2.2).
  */
-export const CapasTiza: React.FC<Props> = ({ id, t, rotulos, nombres, marco, dibujo, brillo, apaga = 0, acentoMedia = TIZA, rotuloMediaLineas }) => {
+export const CapasTiza: React.FC<Props> = ({ id, t, rotulos, nombres, marco, dibujo, brillo, apaga = 0, acentoMedia = TIZA, rotuloMediaLineas, lamina }) => {
+  const uid = usePrefijo();
   const ola = (i: number) => {
     let d = '';
     for (let x = X0; x <= X1; x += 4) {
@@ -91,6 +96,7 @@ export const CapasTiza: React.FC<Props> = ({ id, t, rotulos, nombres, marco, dib
   const capa = (i: number) => (0.32 + 0.68 * clamp(brillo[i])) * (1 - 0.75 * apaga);
   return (
     <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+      {lamina ? <DefsLamina lamina={lamina} uid={uid} /> : null}
       <defs>
         <FiltroTiza id={`${id}-tiza`} semilla={11} />
         {TIERRA.map((c, k) => (
@@ -121,13 +127,26 @@ export const CapasTiza: React.FC<Props> = ({ id, t, rotulos, nombres, marco, dib
       {[0, 1, 2].map((i) => (
         <g key={i} opacity={dibujo[i] > 0 ? capa(i) : 0}>
           {/* el foco: un halo de tiza detrás de la ola que se está nombrando */}
-          {brillo[i] > 0.05 ? (
+          {brillo[i] > 0.05 && lamina && i < 2 ? (
+            <g opacity={0.6 * brillo[i]} style={{ filter: 'blur(8px)' }} clipPath={`url(#${id}-dib${i})`}>
+              <CapaVC lamina={lamina} uid={uid} nombre={i === 0 ? 'Acontecimientos' : 'Economía_y_sociedad'} solo={(k) => k === (i === 0 ? 4 : 5)} />
+            </g>
+          ) : null}
+          {brillo[i] > 0.05 && !(lamina && i < 2) ? (
             <path d={i === 2 ? curva(0) : ola(i)} fill="none" stroke={tinta(i)} strokeWidth={14} opacity={0.18 * brillo[i]} style={{ filter: 'blur(10px)' }} clipPath={`url(#${id}-dib${i})`} />
           ) : null}
+          {lamina ? (
+            // las ondas y los estratos de la lámina, escritos de izquierda a derecha con el mismo recorte
+            <g clipPath={`url(#${id}-dib${i})`}>
+              {i === 0 ? <CapaVC lamina={lamina} uid={uid} nombre="Acontecimientos" solo={(k) => k === 4} /> : null}
+              {i === 1 ? <CapaVC lamina={lamina} uid={uid} nombre="Economía_y_sociedad" solo={(k) => k === 5 || k === 6} /> : null}
+              {i === 2 ? <CapaVC lamina={lamina} uid={uid} nombre="Tierra" solo={(k) => k >= 2} /> : null}
+            </g>
+          ) : null}
           <g clipPath={`url(#${id}-dib${i})`} filter={`url(#${id}-tiza)`}>
-            {i < 2 ? <path d={ola(i)} fill="none" stroke={tinta(i)} strokeWidth={i === 0 ? 3 : 4} strokeLinejoin="round" /> : null}
+            {i < 2 && !lamina ? <path d={ola(i)} fill="none" stroke={tinta(i)} strokeWidth={i === 0 ? 3 : 4} strokeLinejoin="round" /> : null}
           </g>
-          {i === 2 ? (
+          {i === 2 && !lamina ? (
             <g clipPath={`url(#${id}-dib2)`}>
               {/* el relleno de color, con la tiza de costado: degradado y polvo */}
               <g filter={`url(#${id}-polvo)`}>

@@ -475,6 +475,9 @@
         "palabra_cita": {
           "original": "«la longue durée»",
           "referencia": "F. Braudel, «Histoire et sciences sociales: la longue durée», Annales, 1958"
+        },
+        "laminas": {
+          "pizarra": "vectorcraft/larga-duracion-pizarra.json"
         }
       },
       "audio": {

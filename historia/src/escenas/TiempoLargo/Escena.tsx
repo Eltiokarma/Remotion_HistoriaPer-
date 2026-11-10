@@ -52,7 +52,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   const pizarra = props.estilo === 'pizarra';
   const noche = mezclar(pal.fondo, '#000000', 0.3);
   const ref = (archivo?: string) => (archivo ? { videoId: video.id, archivo } : undefined);
-  const lEmblema = useLamina(ref(props.laminas?.emblema)), lPanfletos = useLamina(ref(props.laminas?.panfletos));
+  const lEmblema = useLamina(ref(props.laminas?.emblema)), lPanfletos = useLamina(ref(props.laminas?.panfletos)), lPizarra = useLamina(ref(props.laminas?.pizarra));
 
   const restos = useMemo(() => {
     const r = azar(74);
@@ -229,7 +229,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                     k={tramo(t, tBraudel, 1.4, 'natural')} size={52} fontFamily={fuente.imprentaItalica} opacidad={1 - 0.6 * palabra - 0.6 * remate} />
                 ) : null}
               </svg>
-              <CapasTiza id={`${escena.id}-tiza`} t={t} rotulos={props.capas} nombres={props.gobiernos} marco={tramo(t, tCapas, 1, 'natural')}
+              <CapasTiza lamina={lPizarra} id={`${escena.id}-tiza`} t={t} rotulos={props.capas} nombres={props.gobiernos} marco={tramo(t, tCapas, 1, 'natural')}
                 dibujo={[tramo(t, tCapa[0], 2.2, 'natural'), tramo(t, tCapa[1], 2.2, 'natural'), tramo(t, tCapa[2], 2.2, 'natural')]}
                 acentoMedia={props.acento_media} rotuloMediaLineas={props.rotulo_media_lineas} brillo={brillo} apaga={Math.max(palabra, remate)} />
               <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
