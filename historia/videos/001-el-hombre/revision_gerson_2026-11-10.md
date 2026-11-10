@@ -61,4 +61,5 @@ Gerson eligió **«Joder Jolines»**. Aplicado:
   (sumado a la voz en s06 dejaba el pico en −0,6 dBFS).
 - El episodio dura **5:36** (antes 6:37): la voz habla más rápido aun con los respiros.
 
-Pendiente antes de publicar: el permiso de la voz clonada y los enlaces de Suno (`fuentes.md`).
+«Joder Jolines» es el clon de la voz de Gerson (confirmado por él). Pendiente antes de publicar:
+los enlaces de Suno (`fuentes.md`).
