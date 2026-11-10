@@ -68,3 +68,9 @@ Plan existente: [diagnóstico del episodio 000, sección del reparto en cuatro e
 - 004: resultados generales de la cuenta.
 
 El puente propuesto del caso al método es una decisión de guion basada en ese plan; no una cita de Quiroz.
+
+## Cotejo y recursos del storyboard de Novoa
+
+El 9 de noviembre de 2026 se cotejó la página impresa 171, incluidas las notas 112 y 113, con [la reproducción de la primera edición de 2013](https://www.aelatina.org/wp-content/uploads/2020/12/Historia-de-la-corrupcion-en-el-Peru-A.-Quiroz.pdf#page=170). Corresponde a la página 170 del PDF (índice 169). El pasaje confirma los nombres y funciones, el contenido del reclamo, la gestión de Elías, la respuesta sobre el plazo, la intervención de Torrico, el monto aprobado en vales y la cautela sobre lo recibido por Novoa. No se afirma haber consultado por separado las fuentes originales citadas en las notas del libro.
+
+El [storyboard de la sección 3](diseno/storyboard-seccion03/README.md) contiene doce viñetas creadas con herramientas nativas de VectorCraft mediante MCP: dibujo propio, tres láminas, original editable, SVG, PNG y PDF. Los documentos son resúmenes editoriales; las figuras y la hacienda son esquemáticas, no retratos o reproducciones de edificios documentados. El README separa los datos históricos de las decisiones de cámara, continuidad y sonido y registra las distinciones que deben conservarse. Estado: borrador pendiente de revisión de Gerson, sin integración ni video nuevo.

@@ -1,0 +1,67 @@
+{
+  "titulo": "El expediente de Novoa",
+  "episodio": "002-la-deuda-defraudada",
+  "seccion": 3,
+  "fecha": "2026-11-09",
+  "herramienta": "VectorCraft mediante MCP",
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "laminas": 3,
+  "vinyetas": 12,
+  "artboard": {
+    "ancho": 2520,
+    "alto": 2140
+  },
+  "fuente": "Quiroz, Historia de la corrupción en el Perú, 2013, p. 171; retorno conceptual al vale, pp. 169–170",
+  "archivos": [
+    {
+      "archivo": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 9130,
+      "sha256": "c290df9be68346e56dca0dc6c42a931acc0a5bcd17b704c1ee1277fd309aba55"
+    },
+    {
+      "archivo": "storyboard-02-seccion03-lamina1.png",
+      "bytes": 305147,
+      "sha256": "2f5eb39bf7cbe66614ccc1885650615545bf930441d817efa8f3e2b0e55ce756"
+    },
+    {
+      "archivo": "storyboard-02-seccion03-lamina1.svg",
+      "bytes": 1657776,
+      "sha256": "663ca8479f75be6b6d98b8fdb34efc8cf2182f93a898a550eaefe19e8e9ab10a"
+    },
+    {
+      "archivo": "storyboard-02-seccion03-lamina2.png",
+      "bytes": 313825,
+      "sha256": "2a80d122039a6acffc97c304ce12f3787a7f0a35dcc748991a08dee59fc06700"
+    },
+    {
+      "archivo": "storyboard-02-seccion03-lamina2.svg",
+      "bytes": 1712383,
+      "sha256": "10b4eac534caff5ad354bfd572e3ae4633e0d430bb6d1f1218b7573a3575b55c"
+    },
+    {
+      "archivo": "storyboard-02-seccion03-lamina3.png",
+      "bytes": 330308,
+      "sha256": "bfbdf2b944fc055bc42113015fb971282570105e2ef44f3acaa89018cf989cea"
+    },
+    {
+      "archivo": "storyboard-02-seccion03-lamina3.svg",
+      "bytes": 1745094,
+      "sha256": "3c4e80fc2a52da3d227d43d8cca11f2cfeeebdb3d2d8f4ca91760ce9a316295b"
+    },
+    {
+      "archivo": "storyboard-02-seccion03.pdf",
+      "bytes": 2436149,
+      "sha256": "676d4361c7ddbcca6ba4ba8f32299c6d887d114b9b83e8dbdc8892dc6fa091b7"
+    },
+    {
+      "archivo": "storyboard-02-seccion03.vectorcraft",
+      "bytes": 95709,
+      "sha256": "1b1360669c68ea74aaf446255bb876030cbdf7d5c93842d0b19e5f96fa443ad0"
+    }
+  ]
+}
