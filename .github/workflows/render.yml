@@ -6,9 +6,9 @@
 #   final        → 1080p, H.264 CRF 18, audio AAC 320k; antes corre `npm run validar -- <video> --final`,
 #                  que exige la voz definitiva en public/videos/<video>/voz/
 #
-# Ojo con la voz: public/videos/*/voz/ está en .gitignore. Hoy el render final sale con la voz
-# provisional (y la validación final lo frena). Cuando haya voz definitiva hay que decidir dónde vive
-# para que la CI la vea (en git o como archivo descargable).
+# La voz: la narración de ElevenLabs está en git (public/videos/*/voz/*.mp3; decidido por Gerson el
+# 2026-11-10), así que el final la encuentra. Se lanza desde la rama que tiene el trabajo
+# («Use workflow from»), no hace falta fusionar antes con main.
 name: render
 on:
   workflow_dispatch:
