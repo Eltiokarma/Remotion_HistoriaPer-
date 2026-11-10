@@ -163,7 +163,8 @@ const main = (): number => {
   const faltas: Falta[] = [];
   const excepciones: Falta[] = [];
   for (const a of todas) {
-    const r = revisarTexto(relative(RAIZ, a), readFileSync(a, 'utf8'));
+    // en Windows relative() devuelve '\\': se normaliza para que permitidoEn y las excepciones coincidan
+    const r = revisarTexto(relative(RAIZ, a).split(String.fromCharCode(92)).join('/'), readFileSync(a, 'utf8'));
     faltas.push(...r.faltas);
     excepciones.push(...r.excepciones);
   }

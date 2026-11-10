@@ -1,0 +1,50 @@
+{
+  "estado": "borrador pendiente de revisión",
+  "fecha": "2026-11-09",
+  "seccion": "El recorrido de un reclamo",
+  "herramienta": "VectorCraft MCP",
+  "laminas": 3,
+  "vinyetas": 12,
+  "archivos": [
+    {
+      "archivo": "storyboard-02-seccion02.vectorcraft",
+      "bytes": 99978,
+      "sha256": "8e32d80091a2255efc703fd23fee99fd93619b1e54570071f19bd3637c1d994a"
+    },
+    {
+      "archivo": "storyboard-02-seccion02.pdf",
+      "bytes": 2362301,
+      "sha256": "3672549d3d67d68889ab0fdd98283151f5ff919b2681c6c9a610d98d60d0829a"
+    },
+    {
+      "archivo": "storyboard-02-seccion02-lamina1.png",
+      "bytes": 326009,
+      "sha256": "441243e2c698832160dd5250830a01e59fd4dadea00829b4b2c598901d850374"
+    },
+    {
+      "archivo": "storyboard-02-seccion02-lamina1.svg",
+      "bytes": 1639788,
+      "sha256": "ecfc87b4e434c0af0a6e697e69590e51b52fa2f404275b07e81ead8dd94929aa"
+    },
+    {
+      "archivo": "storyboard-02-seccion02-lamina2.png",
+      "bytes": 317423,
+      "sha256": "22d52870771bf3234ce5fe971240c4c55ad84233b42f59deac7342714f93f7a7"
+    },
+    {
+      "archivo": "storyboard-02-seccion02-lamina2.svg",
+      "bytes": 1512061,
+      "sha256": "fcd2ec83753e90c4512d27fd88fc699a2e9ec70cc37ebc800b94b74d20599ccd"
+    },
+    {
+      "archivo": "storyboard-02-seccion02-lamina3.png",
+      "bytes": 363033,
+      "sha256": "376eff401eae42b601fed536eff8524afef7df6ea1421cd1db0364b58d94bd4a"
+    },
+    {
+      "archivo": "storyboard-02-seccion02-lamina3.svg",
+      "bytes": 1756936,
+      "sha256": "0c8f30bb589fcbee72810becd465d6942380c5cc55261d68665db003bf98cd10"
+    }
+  ]
+}

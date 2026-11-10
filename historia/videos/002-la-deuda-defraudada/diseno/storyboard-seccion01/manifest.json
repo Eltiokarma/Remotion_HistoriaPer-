@@ -1,0 +1,26 @@
+{
+  "estado": "no aprobado: pendiente de mayor detalle",
+  "seccion": "Las islas y el país",
+  "fecha": "2026-11-09",
+  "herramienta": "VectorCraft MCP",
+  "vinyetas": 12,
+  "partes": 4,
+  "archivos": [
+    {
+      "archivo": "storyboard-02-seccion01.vectorcraft",
+      "bytes": 212075,
+      "sha256": "142548da26123bcb33323d3a70fa37795966128b747f109be7d36af689e8d312"
+    },
+    {
+      "archivo": "storyboard-02-seccion01.svg",
+      "bytes": 2654050,
+      "sha256": "52f0864289e7d9c9e361a247931429991f749860d41529264b0904c93784ad81"
+    },
+    {
+      "archivo": "storyboard-02-seccion01.png",
+      "bytes": 677828,
+      "sha256": "168d7f1fb8b8b7a2b0d189a66be0e556526d248da2a04349a654164c38fe095e"
+    }
+  ],
+  "revision": "El director considera insuficiente el detalle del storyboard, especialmente la viñeta 07. Mejorar en la próxima sesión; conservar la versión actual como borrador."
+}

@@ -3,6 +3,7 @@ import type { Ejemplo } from '../ejemplo';
 
 /** Presentación de un personaje: nombre grande, años y un sello opcional. */
 export const esquema = z.object({
+  vectorcraft: z.string().optional(),
   /** "piscina": el carril se vuelve renglón (Quiroz nadador). "papel": directo sobre papel. */
   fondo: z.enum(['piscina', 'papel']).default('papel'),
   nombre: z.string(),

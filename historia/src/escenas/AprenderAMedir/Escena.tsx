@@ -1,3 +1,4 @@
+import { VectorCraft } from '../../components/graficos/VectorCraft';
 import { getLength, getPointAtLength } from '@remotion/paths';
 import { useMemo } from 'react';
 import { AbsoluteFill, spring, useCurrentFrame } from 'remotion';
@@ -136,7 +137,8 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
 
   return (
     <AbsoluteFill style={{ backgroundColor: noche }}>
-      {muestra(1) ? (
+      {muestra(1) && props.vectorcraft ? <AbsoluteFill style={{opacity: entra(tMapa)}}><VectorCraft videoId={video.id} archivo={props.vectorcraft.viaje} modo="viaje" t={t} beats={b} notas={props.tentacion_notas} /></AbsoluteFill> : null}
+      {muestra(1) && !props.vectorcraft ? (
         <AbsoluteFill style={{ opacity: tramo(t, tMapa, 1, 'natural') }}>
           <Luz color={pal.ocre} x={40} y={40} radio={70} intensidad={0.08} />
           <AbsoluteFill style={{ transformOrigin: '0 0', transform: camara }}>
@@ -181,7 +183,11 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
         </AbsoluteFill>
       ) : null}
 
-      {muestra(2) ? (
+      {muestra(2) && props.vectorcraft ? <AbsoluteFill style={{opacity: entra(tPuntos)}}>
+        <VectorCraft videoId={video.id} archivo={props.vectorcraft.regresion} modo="regresion" t={t} beats={b} />
+        {t >= tSerie ? <AbsoluteFill style={{opacity: tramo(t, tSerie, 0.6, 'natural')}}><VectorCraft videoId={video.id} archivo={props.vectorcraft.costo} modo="costo" t={t} beats={b} /></AbsoluteFill> : null}
+      </AbsoluteFill> : null}
+      {muestra(2) && !props.vectorcraft ? (
         <AbsoluteFill style={{ opacity: entra(tPuntos) }}>
         <Papel color={pal.papel} envejecido={0.25}>
           <Dispersion paleta={pal} id={`${escena.id}-disp`} t={t - tPuntos} tRecta={tRecta - tPuntos} apagaDiscursos={tramo(t, tDiscursos, 1.2, 'natural')}

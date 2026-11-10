@@ -1,0 +1,307 @@
+{
+  "fecha": "2026-11-09",
+  "disenos": 20,
+  "archivos": [
+    {
+      "archivo": "tanda03-libro.svg",
+      "bytes": 157888,
+      "sha256": "056c57fadb0fdae32897d35dd62d97b403c2eee3b1eb18ff21a8aff643c72ffe"
+    },
+    {
+      "archivo": "tanda03-libro.vectorcraft",
+      "bytes": 158569,
+      "sha256": "1371ef6046e0d0a0b64318ba3a6480b5835e5f52fc65dbb33bf50a0341fc207a"
+    },
+    {
+      "archivo": "tanda03-libro.png",
+      "bytes": 205444,
+      "sha256": "dd137fff840cb6d3fe9ed1d95139cab4b9abe72dfa8f0c67029ea1300fd8b3af"
+    },
+    {
+      "archivo": "tanda03-monedas.svg",
+      "bytes": 343787,
+      "sha256": "28e1c03a32f57e38ee33413d5bb3e81a8123a5148d205aa2982ffcafbb7cf8be"
+    },
+    {
+      "archivo": "tanda03-monedas.vectorcraft",
+      "bytes": 553048,
+      "sha256": "1e2bdec7b141701b1d1361aff9a17daa889e40c9dc0527b8950bbcc377ce8d6f"
+    },
+    {
+      "archivo": "tanda03-monedas.png",
+      "bytes": 287777,
+      "sha256": "d05af37772b99fbdf90e9383c9a8f87e26be7cc0765f669c62001f7c2ded0e94"
+    },
+    {
+      "archivo": "tanda03-pruebas.svg",
+      "bytes": 645041,
+      "sha256": "af48201bcdc65069b4e472be8f68ee3fc29ee3a3d1b2adbc25baae530f4cca6b"
+    },
+    {
+      "archivo": "tanda03-pruebas.vectorcraft",
+      "bytes": 88786,
+      "sha256": "dcced6dfcae4550382a4b62b4d6ce60cdd5c1f9ba669e89ba9dcb16e6c7861cd"
+    },
+    {
+      "archivo": "tanda03-pruebas.png",
+      "bytes": 233104,
+      "sha256": "2022a6b727e359d0ff7bfea8a966bbf54cea0d361fe1dc955a80d0a7cbea291c"
+    },
+    {
+      "archivo": "tanda05-tiempo-v2.svg",
+      "bytes": 257871,
+      "sha256": "ac602f7673b6fc3a84ec8bfd17573e7d98adbbc9dcd046692fbd81a35c8077fc"
+    },
+    {
+      "archivo": "tanda05-tiempo-v2.vectorcraft",
+      "bytes": 117978,
+      "sha256": "7b51df00f13decbce2117279c1d5164e85e16c68f13ee6b34fd6aa182c75614d"
+    },
+    {
+      "archivo": "tanda05-tiempo-v2.png",
+      "bytes": 184187,
+      "sha256": "e0df35e578517810923521e4a121954a30dde13bc4d68d0bf8f3101711479de2"
+    },
+    {
+      "archivo": "tanda04-piscina.svg",
+      "bytes": 207675,
+      "sha256": "10e80cb1619b9facca1509c2cc40ae1215b43c95e40d9e0ef1d660ddb516b8d6"
+    },
+    {
+      "archivo": "tanda04-piscina.vectorcraft",
+      "bytes": 778290,
+      "sha256": "8fd1072231079cc5296131daaddb8ba0732be93040bbad116200c7445cada1ea"
+    },
+    {
+      "archivo": "tanda04-piscina.png",
+      "bytes": 336864,
+      "sha256": "afb1f881b0c5ffa52702d6209b2699e52fe577f4614fe3c5677f0e114d3e9938"
+    },
+    {
+      "archivo": "tanda05-ingreso-v2.svg",
+      "bytes": 295408,
+      "sha256": "fda0886ef452f0e6d27dfeb1240619c6f8fc244ced30fb6568a94e05791b88d3"
+    },
+    {
+      "archivo": "tanda05-ingreso-v2.vectorcraft",
+      "bytes": 99178,
+      "sha256": "3ee1dab76573932e90fb3ffce038b3a2f37cac6d9ea07ab574ddbd8eebeb0dba"
+    },
+    {
+      "archivo": "tanda05-ingreso-v2.png",
+      "bytes": 248163,
+      "sha256": "bd58382974f5dd3edfbeaa2688d9ebfe4f105f944164b0e926ae6c5654d1d236"
+    },
+    {
+      "archivo": "panfletos-contenido-v2.svg",
+      "bytes": 699944,
+      "sha256": "46fc072deeffc12910d10ff6989d3105c79bf26c0d3090fc717267521ea2bbf5"
+    },
+    {
+      "archivo": "panfletos-contenido-v2.vectorcraft",
+      "bytes": 265681,
+      "sha256": "84d325d575e641a45ec15fb123358066fe31be2d9d071b267be300739c3a1637"
+    },
+    {
+      "archivo": "panfletos-contenido-v2.png",
+      "bytes": 159690,
+      "sha256": "e1dc3638d63d2f46473698e0c71cf2409ce63bbfeee377cd5e86e00f90a636fe"
+    },
+    {
+      "archivo": "tanda04-fichero.svg",
+      "bytes": 249527,
+      "sha256": "21477428be25f8e55cc93fac36a16b975cc43fe1988e9611fa56c9f519efcb62"
+    },
+    {
+      "archivo": "tanda04-fichero.vectorcraft",
+      "bytes": 122227,
+      "sha256": "418227fb300d73834bb5ea59ba9496cdd927ae3ae2d19064ba261a4cd377be2e"
+    },
+    {
+      "archivo": "tanda04-fichero.png",
+      "bytes": 180297,
+      "sha256": "a2f5d776defba9dfe436cd4ac3b3d07c5983dab732ab92cd2127efd6bcbd5b14"
+    },
+    {
+      "archivo": "balanza-video01.svg",
+      "bytes": 90771,
+      "sha256": "c538b6280949fdb7eddea51de544e58cf29cbe6ade493e36b5851fa15eeb4a91"
+    },
+    {
+      "archivo": "balanza-video01.vectorcraft",
+      "bytes": 475851,
+      "sha256": "977efb2b1fcd0f1b63eaf70bdc06a290184b1da4568cc5732eb019742d611969"
+    },
+    {
+      "archivo": "balanza-video01.png",
+      "bytes": 160867,
+      "sha256": "27b9042b37fe2dfbeff0af9efa738dba0de592f1ef5e63f8fa47536f2f38ede1"
+    },
+    {
+      "archivo": "biblioteca-video01.svg",
+      "bytes": 289225,
+      "sha256": "84d55e621485628a1ff78752a9f92fd23d73af1a9dd2edb22647038e8386201a"
+    },
+    {
+      "archivo": "biblioteca-video01.vectorcraft",
+      "bytes": 160835,
+      "sha256": "e88b70ea3821e8ac6a42f10e91cb4b31bff8fe6b4e2583e97086e9a1a1702607"
+    },
+    {
+      "archivo": "biblioteca-video01.png",
+      "bytes": 163137,
+      "sha256": "48b8f9fa04c49bf22ab59844cc1f6d726dcd94914b991628f4068c7d61ac68a3"
+    },
+    {
+      "archivo": "brujula-video01.svg",
+      "bytes": 104165,
+      "sha256": "a8b46225f4330e0e042ec1c13eaa662627cee4c5d4f784b0c05f5fb7849d2631"
+    },
+    {
+      "archivo": "brujula-video01.vectorcraft",
+      "bytes": 307913,
+      "sha256": "0c7fd8ed6a300cb09707daae995e47ad57457f17cd449a03d4eb3ce640fe5d89"
+    },
+    {
+      "archivo": "brujula-video01.png",
+      "bytes": 316903,
+      "sha256": "618a6f1a5bfa5e8d76cec13646f26267a66662881e73bcec13eb18a317ce0006"
+    },
+    {
+      "archivo": "islas-guaneras-v3.svg",
+      "bytes": 166701,
+      "sha256": "56fded3008c1b0a8e178de6b9f400993fd64497d995917a1bb234c67e497032f"
+    },
+    {
+      "archivo": "islas-guaneras-v3.vectorcraft",
+      "bytes": 346968,
+      "sha256": "99027b5f8003bc12978cb82501fa8b5baa46b130907daaa19f3d0c4cc2ef0452"
+    },
+    {
+      "archivo": "islas-guaneras-v3.png",
+      "bytes": 267258,
+      "sha256": "e0a76565aeac0a8507f38dfa0d0af848d04aeb61700c81648264b849602bf866"
+    },
+    {
+      "archivo": "edificio-estado-video01.svg",
+      "bytes": 189549,
+      "sha256": "d310fe95427b4693203bac046018c44c5fd742c90aa3d3f654f2cea9692e42a7"
+    },
+    {
+      "archivo": "edificio-estado-video01.vectorcraft",
+      "bytes": 1015236,
+      "sha256": "4450959e0f0af328af9a417daf4b9d9bc66ad3976944f86a486daf14637c34ad"
+    },
+    {
+      "archivo": "edificio-estado-video01.png",
+      "bytes": 147932,
+      "sha256": "0cae9ec204dd40f69d47abb3eb0d898e34c53212a4827fb38dd025b6c3ce5875"
+    },
+    {
+      "archivo": "vale-video01.svg",
+      "bytes": 284441,
+      "sha256": "3b49a25f6d776ba3c450652234b55e959bbc1317e81a50075b7108627c9813b5"
+    },
+    {
+      "archivo": "vale-video01.vectorcraft",
+      "bytes": 733675,
+      "sha256": "78a2122716b5e38103021cf90db5c2245ba2706896c6491f5cd13b685f2570be"
+    },
+    {
+      "archivo": "vale-video01.png",
+      "bytes": 224955,
+      "sha256": "aa0dcfa4cbd915933d4e7c24a152713b34ea2d34178e690c1f77732a24d8237e"
+    },
+    {
+      "archivo": "tanda05-carpeta-v2.svg",
+      "bytes": 369513,
+      "sha256": "d94d0d9417193a93ea94c8a8f4f377229cace631524822ab61417c097439bd92"
+    },
+    {
+      "archivo": "tanda05-carpeta-v2.vectorcraft",
+      "bytes": 177415,
+      "sha256": "73e9c53fe9f739c39cc7d0ccabf2d9955152046b5bbf2d973525f50d2560660e"
+    },
+    {
+      "archivo": "tanda05-carpeta-v2.png",
+      "bytes": 223975,
+      "sha256": "79c620697c353028f469f9d21e5824f281d33aefe7476964e9c6ffe7ebe887fa"
+    },
+    {
+      "archivo": "larga-duracion-pizarra.svg",
+      "bytes": 404271,
+      "sha256": "7b09801672306c1f474fdcddc46ab28b8f43c6641879c4103c9456620680b458"
+    },
+    {
+      "archivo": "larga-duracion-pizarra.vectorcraft",
+      "bytes": 210957,
+      "sha256": "a87c8ffd067002f711dd49e44816ce601cc47cc51ba2275b3b0d52d579fc0362"
+    },
+    {
+      "archivo": "larga-duracion-pizarra.png",
+      "bytes": 350188,
+      "sha256": "aa1f21ba2f1705636fa1b05ace722d424b2b72f1b90c088b0f2ba0c19a434106"
+    },
+    {
+      "archivo": "tanda06-lima.svg",
+      "bytes": 238890,
+      "sha256": "381083be3030f3032716a565925acbb1c6c6a6c998ebb255b5efe1ace871701b"
+    },
+    {
+      "archivo": "tanda06-lima.vectorcraft",
+      "bytes": 211198,
+      "sha256": "77b7d27ca6682b58831b08a02675e28903ad49064dd6126f8bf2a045bc47cd4d"
+    },
+    {
+      "archivo": "tanda06-lima.png",
+      "bytes": 235245,
+      "sha256": "89d009575e6c30fc7735cb065080e639853dce9e0ec4d89cc453f254cc591f3e"
+    },
+    {
+      "archivo": "tanda06-viaje.svg",
+      "bytes": 365554,
+      "sha256": "79529ecf81186c8716ab22e6e47c6cb721fac6ab3a4218112e96ef9eb30ecce6"
+    },
+    {
+      "archivo": "tanda06-viaje.vectorcraft",
+      "bytes": 191923,
+      "sha256": "b2dd1e66817e58f7a3814ba621cccb31bf3374b1d4da0399fab473a13e64c44e"
+    },
+    {
+      "archivo": "tanda06-viaje.png",
+      "bytes": 273641,
+      "sha256": "830448026a3a2b8aaa1956a84932bb109dc8a87bf595959ec708dd53473cf711"
+    },
+    {
+      "archivo": "tanda06-regresion.svg",
+      "bytes": 345758,
+      "sha256": "d0b2eb10e1ea5048aa1b64e55aa949adb846b191516e32aaef2acb25ff110d55"
+    },
+    {
+      "archivo": "tanda06-regresion.vectorcraft",
+      "bytes": 163306,
+      "sha256": "93bee8f94ec493bdb8a5f6d727380362e0481323fc761539577aec6ab6f87a80"
+    },
+    {
+      "archivo": "tanda06-regresion.png",
+      "bytes": 216396,
+      "sha256": "79b67c5c9131ab4e3021ab1399c5359944d7654e1bf15a57c154c27a45a5631f"
+    },
+    {
+      "archivo": "tanda06-costo.svg",
+      "bytes": 317378,
+      "sha256": "b1a38dea2fc5f38ca2a814436e8efb0e628ef79a464824a7a72439f8b73ca724"
+    },
+    {
+      "archivo": "tanda06-costo.vectorcraft",
+      "bytes": 231151,
+      "sha256": "8f04d7012f5a9194e92d7f3370bd2e382858744a00f737d46c7b3ee4e3979711"
+    },
+    {
+      "archivo": "tanda06-costo.png",
+      "bytes": 237651,
+      "sha256": "96a2b0f8602e129f31aa995fa2d58ef507f6e6d500d6388f48a89fe8ab4c57b0"
+    }
+  ],
+  "nota": "Versiones vigentes del inventario. Respaldo no equivale a integración. Sin videos ni versiones descartadas."
+}

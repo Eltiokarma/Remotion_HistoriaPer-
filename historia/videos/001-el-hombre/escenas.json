@@ -208,8 +208,8 @@
       "id": "s02",
       "seccion": "personaje",
       "componente": "Presentacion",
-      "duracion_s": 32.0,
-      "cola_s": 1.0,
+      "duracion_s": 32,
+      "cola_s": 1,
       "intensidad": 1,
       "cambio": "de un nombre en una página a un nadador terco que llevó su disciplina a los archivos",
       "intencion": "página → piscina → página: el agua llega con «nadador» y se vuelve a secar en renglones con «archivos»; Cueto, que va a cerrar el arco, se presenta con su ficha",
@@ -221,7 +221,7 @@
         "frenar": 20.6,
         "renglon": 23.6,
         "palabra": 28.5,
-        "lugar": 3.0
+        "lugar": 3
       },
       "props": {
         "fondo": "piscina",
@@ -262,14 +262,15 @@
             ],
             [
               -72.6,
-              -15.0
+              -15
             ],
             [
               -70.4,
               -16.4
             ]
           ]
-        }
+        },
+        "vectorcraft": "vectorcraft/tanda06-lima.json"
       },
       "audio": {
         "musica": {
@@ -303,7 +304,7 @@
       "seccion": "su generación",
       "componente": "TiempoLargo",
       "duracion_s": 46.82,
-      "cola_s": 1.0,
+      "cola_s": 1,
       "intensidad": 3,
       "cambio": "de un estudiante que entra a la universidad a uno que se hace la pregunta de su generación: ¿el país cambia o se repite?",
       "intencion": "los afiches gritan cambio; con «¿o repetía lo de siempre?», el afiche nuevo se despega y debajo asoma uno viejo, igual de prometedor; la pregunta queda en el aire",
@@ -315,7 +316,7 @@
         "afiche1": 12.77,
         "afiche2": 14.56,
         "afiche3": 16.41,
-        "volante": 22.0,
+        "volante": 22,
         "despegue": 42.1,
         "leer": 24.6,
         "vuelve": 30.8
@@ -392,7 +393,7 @@
       "seccion": "larga duración",
       "componente": "TiempoLargo",
       "duracion_s": 65.57,
-      "cola_s": 1.0,
+      "cola_s": 1,
       "intensidad": 3,
       "cambio": "de la pregunta en el aire a una forma de responderla: la historia tiene capas que se mueven a distinta velocidad",
       "intencion": "la clase: Braudel en la pizarra; las capas se dibujan con tiza y brilla solo la que se nombra; la palabra del episodio; la nota y el remate escritos con peso",
@@ -406,11 +407,16 @@
         "bajar": 38.9,
         "palabra": 42.9,
         "subir": 46.47,
-        "realce": 51.0,
+        "realce": 51,
         "remate": 54.29,
         "clase": 2.2
       },
       "props": {
+        "acento_media": "#e8d9a8",
+        "rotulo_media_lineas": [
+          "economía",
+          "y sociedad"
+        ],
         "sello": {
           "centro": "PUCP",
           "fecha": "1974",
@@ -475,7 +481,7 @@
       "seccion": "método",
       "componente": "AprenderAMedir",
       "duracion_s": 108.67,
-      "cola_s": 1.0,
+      "cola_s": 1,
       "intensidad": 2,
       "cambio": "de un historiador de discursos a uno que mide, y que cambió de ideas",
       "intencion": "el viaje a Nueva York; la regresión explicada en tres tiempos (ruido, la recta que busca, cuánto pesa); la claridad en una balanza; la carrera se lee en el estante, no se narra",
@@ -499,7 +505,7 @@
         "estante": 79.64,
         "temas": 82.74,
         "brujula": 87.82,
-        "giro": 92.0,
+        "giro": 92,
         "regresion": 37.44,
         "izquierda": 90.2,
         "tiza": 99.63,
@@ -520,7 +526,7 @@
         },
         "destino": {
           "nombre": "Nueva York",
-          "lon": -74.0,
+          "lon": -74,
           "lat": 40.71
         },
         "distancia_km": 5900,
@@ -594,9 +600,9 @@
             4.3,
             3.5,
             4.6,
-            5.0,
+            5,
             2.2,
-            1.0,
+            1,
             1.1,
             3.8,
             3.1,
@@ -627,18 +633,23 @@
           "SUS PROFESORES EN LA PUCP",
           "HERACLIO BONILLA",
           "ALBERTO FLORES GALINDO"
-        ]
+        ],
+        "vectorcraft": {
+          "viaje": "vectorcraft/tanda06-viaje.json",
+          "regresion": "vectorcraft/tanda06-regresion.json",
+          "costo": "vectorcraft/tanda06-costo.json"
+        }
       },
       "camara": [
         {
           "beat": "sale",
-          "movimiento": "retrocede apenas y se lanza a Lima; sigue la ruta hacia el norte, con aire delante, y frena en Nueva York",
-          "motivo": "«Él se va a Nueva York, a la Universidad de Columbia»: el espectador hace el viaje"
+          "movimiento": "La cámara sigue la ruta vectorial de Lima a Nueva York con un acercamiento del 30 %.",
+          "motivo": "El viaje ocurre con la narración; la ruta se dibuja hasta llegar."
         },
         {
           "beat": "abre",
-          "movimiento": "se abre hasta ver la ruta entera (y París, que quedó atrás); se pasa un poco y se asienta",
-          "motivo": "llegó: el viaje queda como mapa antes de la beca"
+          "movimiento": "Se abre hasta ver las dos rutas completas.",
+          "motivo": "Comparar el destino elegido con la alternativa de París."
         }
       ],
       "audio": {
@@ -752,7 +763,7 @@
       "seccion": "cierre",
       "componente": "Cierre",
       "duracion_s": 6.21,
-      "cola_s": 11.0,
+      "cola_s": 11,
       "intensidad": 1,
       "cambio": "del caso abierto a la promesa del próximo episodio",
       "intencion": "las pruebas de imprenta del comienzo se cierran; el tema entra unos segundos antes y se queda después, para que la tristeza se asiente (DIRECCION_DE_VIDEO §2.15)",
@@ -810,6 +821,14 @@
         "s05"
       ],
       "motivo": "la pizarra del aula (DIRECCION_DE_VIDEO §2.3) es verde, y la tierra se dibuja con tizas de color (ocre, arcilla, piedra): son los colores de un aula, no de la paleta del papel"
+    },
+    {
+      "regla": "paleta",
+      "escenas": [
+        "s02",
+        "s05"
+      ],
+      "motivo": "Gráficas VectorCraft aprobadas: mapa de nacimiento y método en pizarra verde, ocre para el viaje y los datos."
     }
   ]
 }
