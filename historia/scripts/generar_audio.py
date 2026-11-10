@@ -910,7 +910,10 @@ def sonoridad(archivo: Path) -> float:
 # public/compartido/audio/candidatos-elevenlabs/, fuera de git). --forzar no los pisa.
 DE_ELEVENLABS = {"sello", "lapiz", "hoja", "carpeta", "monedas", "saco", "afiche", "borrar", "pluma",
                  "metal", "golpe", "soplo", "campana"}
-AMBIENTES_DE_ELEVENLABS = {"cuarto", "ciudad", "agua", "mar"}
+# Los ambientes duran 115 s (más que cualquier escena): así no se repiten dentro de una escena, porque
+# cada vuelta de un MP3 en bucle deja un hueco de 10–25 ms (el relleno del códec). Cuarto, ciudad, agua y
+# mar son de ElevenLabs; viento y hospital, los sintetizados alargados. --forzar no los pisa.
+AMBIENTES_DE_ELEVENLABS = {"cuarto", "ciudad", "agua", "mar", "viento", "hospital"}
 
 
 def guardar(st, ruta: Path, kbps=128, normalizar=-1.0, lufs=None):
@@ -928,6 +931,9 @@ def guardar(st, ruta: Path, kbps=128, normalizar=-1.0, lufs=None):
     st = np.atleast_2d(st)
     pico = np.max(np.abs(st)) + 1e-9
     st = st / pico * 10 ** (normalizar / 20)
+    if ruta.parent.name == "sfx":  # ningún efecto termina en seco: 15 ms de fundido final
+        n = min(st.shape[-1] // 4, int(0.015 * SR))
+        st[..., -n:] *= np.linspace(1, 0, n)
     canales = st.shape[0]
     pcm = (np.clip(st.T, -1, 1) * 32767).astype(np.int16)
     with tempfile.TemporaryDirectory() as tmp:
