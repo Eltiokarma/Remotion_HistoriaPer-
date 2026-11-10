@@ -2,7 +2,7 @@
 
 10 de noviembre de 2026. Continuidad dibujada en VectorCraft mediante MCP para los 24 momentos del [storyboard textual](../../storyboard.md). Se reutilizan los gráficos de las cinco secciones y se añaden estados intermedios, preparación, traspasos, apoyos, revelaciones y enlaces. Borrador pendiente de revisión de Gerson.
 
-**Cinco escenas largas, 32 láminas y 97 estados dibujados.** Son etapas internas de la acción, no 97 cortes ni cuadros de igual duración. Hay 91 encuadres SVG distintos; algunos se repiten para mantener el objeto y enlazar pasos.
+**Cinco escenas largas, 32 láminas y 97 estados dibujados.** Son etapas internas de la acción, no 97 cortes ni cuadros de igual duración. Hay 89 encuadres SVG distintos; algunos se repiten para mantener el objeto y enlazar pasos.
 
 ![Vista de las cinco escenas](resumen.png)
 
@@ -24,7 +24,7 @@
 
 ## Para integrar
 
-Leer [ANIMACION.md](ANIMACION.md), la [secuencia de cinco escenas](secuencia.json), el [inventario de 91 encuadres](inventario.json) y los [datos de las poses nuevas](../personajes-1850/poses-continuidad/poses.json). Cada escena tiene sus acciones, pausas, voz de referencia, archivos y capas. El [resumen en PDF](resumen.pdf) y su [editable](resumen.vectorcraft) sirven como índice.
+Leer [ANIMACION.md](ANIMACION.md), la [secuencia de cinco escenas](secuencia.json), el [inventario de 89 encuadres](inventario.json) y los [datos de las poses nuevas](../personajes-1850/poses-continuidad/poses.json). Cada escena tiene sus acciones, pausas, voz de referencia, archivos y capas. El [resumen en PDF](resumen.pdf) y su [editable](resumen.vectorcraft) sirven como índice.
 
 Las fuentes son las fichas y cotejos ya registrados en [fuentes.md](../../fuentes.md); esta entrega no se atribuye una nueva lectura independiente de los libros o de las leyes. Q es Quiroz; B, Bonilla; C, Carlos Contreras Carranza. Las reconstrucciones gráficas son editoriales y los personajes representan funciones, sin pretender retratos auténticos. La geografía conserva la procedencia Natural Earth de la revisión anterior.
 

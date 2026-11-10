@@ -36,22 +36,22 @@
     {
       "id": "2A",
       "momento": "2A",
-      "titulo": "De dónde viene la deuda",
+      "titulo": "Retomar el reclamo y situar la ley",
       "lamina": 1,
       "artboard": 0,
       "svg": "lamina01.svg",
       "capa_nativa": 2,
-      "voz_referencia": "Por ejemplo, un préstamo al gobierno o bienes usados para mantener a las tropas.",
-      "accion_y_camara": "Cada ejemplo entra al nombrarse y queda a la vista. Mantener pestaña y papel; no introducir un caso real aquí.",
-      "pausa_y_lectura": "Sostener ambos orígenes antes de darles el nombre deuda interna.",
-      "siguiente": "2B · Revisar y reconocer",
+      "voz_referencia": "Retomemos este reclamo. La consolidación de la deuda interna buscaba organizar y reconocer obligaciones pendientes del Estado.",
+      "accion_y_camara": "El folio continúa con su pestaña roja. El recuerdo utiliza los ejemplos ya vistos; la ley explica el propósito antes del procedimiento.",
+      "pausa_y_lectura": "Recordatorio breve y pausa de lectura en la fecha de la ley.",
+      "siguiente": "2B · Cotejar datos y documentos",
       "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "s02-v01",
-          "svg": "../recursos/encuadres/s02-v01.svg",
+          "recurso": "s01-v16",
+          "svg": "../recursos/encuadres/s01-v16.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -65,15 +65,15 @@
             630
           ],
           "ids_nativos": [
-            385
+            432
           ],
-          "accion": "Recoger el papel del cierre anterior y mostrar sus antecedentes.",
+          "accion": "Recoger exactamente el folio de salida de la escena 1.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s02-v02-prestamo",
-          "svg": "../recursos/encuadres/s02-v02-prestamo.svg",
+          "recurso": "s01-r2-ejemplos",
+          "svg": "../recursos/revision-02/ejemplos.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -87,15 +87,15 @@
             630
           ],
           "ids_nativos": [
-            657
+            1086
           ],
-          "accion": "Presentar primero el préstamo del comerciante.",
+          "accion": "Recordar brevemente préstamo y bienes con los dibujos revisados.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "s02-v02",
-          "svg": "../recursos/encuadres/s02-v02.svg",
+          "recurso": "s02-v03",
+          "svg": "../recursos/encuadres/s02-v03.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -109,9 +109,9 @@
             630
           ],
           "ids_nativos": [
-            1056
+            1583
           ],
-          "accion": "Añadir el ejemplo de los bienes usados para sostener tropas.",
+          "accion": "Situar la ley de consolidación y volver al mismo reclamo.",
           "duracion_segundos": null
         }
       ]
@@ -119,22 +119,22 @@
     {
       "id": "2B",
       "momento": "2B",
-      "titulo": "Revisar antes de reconocer",
+      "titulo": "Cotejar el reclamo con sus documentos",
       "lamina": 2,
       "artboard": 1,
       "svg": "lamina02.svg",
-      "capa_nativa": 1072,
-      "voz_referencia": "Había que comprobar a quién se debía, por qué y cuánto correspondía reconocer.",
-      "accion_y_camara": "La señal recorre los campos. El reconocimiento es una reconstrucción didáctica, sin firma o sello auténtico inventados.",
-      "pausa_y_lectura": "Dejar claro el resultado del examen antes del nuevo título.",
+      "capa_nativa": 1599,
+      "voz_referencia": "Había que contrastar el origen del reclamo, quién era el acreedor y cuánto correspondía reconocer. Este esquema muestra el procedimiento previsto.",
+      "accion_y_camara": "El foco une campo y documento por turnos. Es un modelo del procedimiento previsto, no un formulario auténtico ni la afirmación de que siempre se revisó así.",
+      "pausa_y_lectura": "Cámara quieta al comparar. El reconocimiento aparece después del tercer cotejo.",
       "siguiente": "2C · Qué representa el vale",
       "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "s02-v03",
-          "svg": "../recursos/encuadres/s02-v03.svg",
+          "recurso": "s02-r2-cotejo-0",
+          "svg": "../recursos/revision-02-reclamo/cotejo-0.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -148,15 +148,15 @@
             630
           ],
           "ids_nativos": [
-            1573
+            2187
           ],
-          "accion": "Situar la ley de 1850 y su finalidad pública.",
+          "accion": "Contrastar el origen del reclamo con su sustento.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s02-v04",
-          "svg": "../recursos/encuadres/s02-v04.svg",
+          "recurso": "s02-r2-cotejo-1",
+          "svg": "../recursos/revision-02-reclamo/cotejo-1.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -170,15 +170,15 @@
             630
           ],
           "ids_nativos": [
-            2021
+            2778
           ],
-          "accion": "Comprobar origen, acreedor y monto por turnos.",
+          "accion": "Contrastar quién reclama con el soporte de identidad.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "s02-v05-sinvale",
-          "svg": "../recursos/encuadres/s02-v05-sinvale.svg",
+          "recurso": "s02-r2-cotejo-2",
+          "svg": "../recursos/revision-02-reclamo/cotejo-2.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -192,9 +192,9 @@
             630
           ],
           "ids_nativos": [
-            2281
+            3397
           ],
-          "accion": "Mostrar reconocido después de la revisión; el vale aún no entra.",
+          "accion": "Contrastar el monto; mostrar el reconocimiento al terminar.",
           "duracion_segundos": null
         }
       ]
@@ -202,22 +202,22 @@
     {
       "id": "2C",
       "momento": "2C",
-      "titulo": "El vale es otro documento",
+      "titulo": "Del reconocimiento al título de deuda",
       "lamina": 3,
       "artboard": 2,
       "svg": "lamina03.svg",
-      "capa_nativa": 2297,
-      "voz_referencia": "Tener ese vale no era lo mismo que cobrar inmediatamente su valor en efectivo.",
-      "accion_y_camara": "El vale entra como título de deuda. El desplazamiento hacia el acreedor explica recepción, sin salida de efectivo.",
-      "pausa_y_lectura": "Cámara quieta para leer qué representa el título.",
-      "siguiente": "2D · Regresar al momento de la compra",
+      "capa_nativa": 3413,
+      "voz_referencia": "El vale representaba una deuda reconocida del Estado y daba derecho a cobrar. Recibirlo no equivalía a un pago inmediato en efectivo.",
+      "accion_y_camara": "Primero definir el vale y el derecho de cobro. Después distinguir recepción del título y efectivo. Mantener la pestaña del reclamo y el marco doble del vale.",
+      "pausa_y_lectura": "Dejar leer deuda reconocida del Estado y derecho de cobro.",
+      "siguiente": "2D · Volver al momento de la compra",
       "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "s02-v05-sinvale",
-          "svg": "../recursos/encuadres/s02-v05-sinvale.svg",
+          "recurso": "s02-r2-cotejo-2",
+          "svg": "../recursos/revision-02-reclamo/cotejo-2.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -231,15 +231,15 @@
             630
           ],
           "ids_nativos": [
-            2561
+            4036
           ],
-          "accion": "Conservar el reclamo reconocido a la izquierda.",
+          "accion": "Sostener el resultado del cotejo antes de añadir otro documento.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s02-v05",
-          "svg": "../recursos/encuadres/s02-v05.svg",
+          "recurso": "s02-r2-reclamo-y-vale",
+          "svg": "../recursos/revision-02-reclamo/reclamo-y-vale.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -253,15 +253,15 @@
             630
           ],
           "ids_nativos": [
-            2959
+            4544
           ],
-          "accion": "Añadir el vale con su marco propio, separado del reclamo.",
+          "accion": "El vale entra separado del reclamo y representa deuda reconocida.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "s02-v06",
-          "svg": "../recursos/encuadres/s02-v06.svg",
+          "recurso": "s02-r2-derecho-de-cobro",
+          "svg": "../recursos/revision-02-reclamo/derecho-de-cobro.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -275,9 +275,9 @@
             630
           ],
           "ids_nativos": [
-            3432
+            5711
           ],
-          "accion": "Relacionarlo con el acreedor y sostener obligación del Estado.",
+          "accion": "Seguir el título hacia el acreedor; el Estado conserva su obligación.",
           "duracion_segundos": null
         }
       ]
@@ -285,15 +285,15 @@
     {
       "id": "2D",
       "momento": "2D",
-      "titulo": "El papel cambia de dueño",
+      "titulo": "El reclamo y el pago cambian de manos",
       "lamina": 4,
       "artboard": 3,
       "svg": "lamina04.svg",
-      "capa_nativa": 3448,
-      "voz_referencia": "Los especuladores compraban documentos de reclamo o deuda a bajo precio.",
-      "accion_y_camara": "Seguir una sola pieza. El papel no viaja antes del contacto. La primera mano suelta después de que la segunda cierre el agarre.",
-      "pausa_y_lectura": "Precio de compra es lo pagado por adquirir el papel; no su valor reconocido.",
-      "siguiente": "2E · La gestión y el favorecimiento",
+      "capa_nativa": 5727,
+      "voz_referencia": "Volvamos al momento anterior al reconocimiento. Un comprador podía adquirir el reclamo a bajo precio: el papel iba hacia él y el pago, al reclamante.",
+      "accion_y_camara": "El reclamo va a la derecha y el pago a la izquierda. La mano que entrega suelta después del agarre receptor; el sobre representa pago sin importe.",
+      "pausa_y_lectura": "Rotular el retroceso. Sostener el intercambio completo antes de pasar a la gestión.",
+      "siguiente": "2E · Gestión y reconocimiento favorecido",
       "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
       "duracion_segundos": null,
       "estados": [
@@ -314,15 +314,15 @@
             630
           ],
           "ids_nativos": [
-            3792
+            6071
           ],
-          "accion": "Rotular el regreso al momento anterior al reconocimiento.",
+          "accion": "Rotular antes del reconocimiento y hacer explícito el retroceso.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "reclamo-entrega-a",
-          "svg": "../recursos/encuadres/reclamo-entrega-a.svg",
+          "recurso": "s02-r2-compra-0",
+          "svg": "../recursos/revision-02-reclamo/compra-0.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -336,15 +336,15 @@
             630
           ],
           "ids_nativos": [
-            4131
+            13025
           ],
-          "accion": "El reclamante conserva el papel; la otra mano prepara la recepción.",
+          "accion": "El reclamo sigue en manos del reclamante; el pago parte del comprador.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "reclamo-entrega-b",
-          "svg": "../recursos/encuadres/reclamo-entrega-b.svg",
+          "recurso": "s02-r2-compra-1",
+          "svg": "../recursos/revision-02-reclamo/compra-1.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -358,15 +358,15 @@
             630
           ],
           "ids_nativos": [
-            4557
+            13744
           ],
-          "accion": "Ambas manos coinciden en el mismo papel durante el traspaso.",
+          "accion": "El comprador recibe el papel mientras el pago recorre el sentido contrario.",
           "duracion_segundos": null
         },
         {
           "numero": 4,
-          "recurso": "reclamo-entrega-c",
-          "svg": "../recursos/encuadres/reclamo-entrega-c.svg",
+          "recurso": "s02-r2-compra-2",
+          "svg": "../recursos/revision-02-reclamo/compra-2.svg",
           "rectangulo_en_lamina": [
             1310,
             1210,
@@ -380,9 +380,9 @@
             630
           ],
           "ids_nativos": [
-            4967
+            14447
           ],
-          "accion": "El comprador lo sostiene; la primera mano se abre y se retira.",
+          "accion": "El comprador conserva el papel y el pago llega al reclamante.",
           "duracion_segundos": null
         }
       ]
@@ -390,22 +390,22 @@
     {
       "id": "2E",
       "momento": "2E",
-      "titulo": "De la gestión al favorecimiento",
+      "titulo": "Distinguir gestión y trato favorecido",
       "lamina": 5,
       "artboard": 4,
       "svg": "lamina05.svg",
-      "capa_nativa": 4974,
-      "voz_referencia": "Algunos funcionarios favorecían esas gestiones a cambio de beneficios ilegales.",
-      "accion_y_camara": "Los gestos conducen al expediente. La compraventa por sí sola no prueba fraude; el ejemplo señala reconocimiento indebido y acuerdo ilegal.",
-      "pausa_y_lectura": "Sostener los dos conceptos. Las monedas simbolizan precio, no una suma documentada.",
-      "siguiente": "2F · Reunir el circuito",
+      "capa_nativa": 8141,
+      "voz_referencia": "Un intermediario podía gestionar el reconocimiento por comisión. El problema era favorecer indebidamente el trámite a cambio de beneficios ilegales.",
+      "accion_y_camara": "Los tres participantes conservan ropa, posición y rótulo. La ilustración del abuso destaca el paso de sustento por comprobar a reconocimiento favorecido.",
+      "pausa_y_lectura": "No tratar toda comisión como soborno ni convertir la diferencia de valor en prueba automática.",
+      "siguiente": "2F · Reunir el circuito y abrir Novoa",
       "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "s02-v09-prepara",
-          "svg": "../recursos/encuadres/s02-v09-prepara.svg",
+          "recurso": "s02-r2-gestion",
+          "svg": "../recursos/revision-02-reclamo/gestion.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -419,15 +419,15 @@
             630
           ],
           "ids_nativos": [
-            5438
+            8860
           ],
-          "accion": "El comprador y el intermediario se orientan al mismo reclamo.",
+          "accion": "Mantener comprador, intermediario y funcionario en sus posiciones.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s02-v10",
-          "svg": "../recursos/encuadres/s02-v10.svg",
+          "recurso": "s02-r2-favorecimiento",
+          "svg": "../recursos/revision-02-reclamo/favorecimiento.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -441,15 +441,15 @@
             630
           ],
           "ids_nativos": [
-            5960
+            9586
           ],
-          "accion": "Señalar el acuerdo ilegal y el trato favorecido.",
+          "accion": "Mostrar la revisión eludida dentro de un ejemplo de trato indebido.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "s02-v11",
-          "svg": "../recursos/encuadres/s02-v11.svg",
+          "recurso": "s02-r2-precio-y-valor",
+          "svg": "../recursos/revision-02-reclamo/precio-y-valor.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -463,9 +463,9 @@
             630
           ],
           "ids_nativos": [
-            6477
+            10275
           ],
-          "accion": "Comparar precio pagado y valor reconocido, sin cantidades inventadas.",
+          "accion": "Distinguir precio pagado y deuda reconocida sin introducir cantidades.",
           "duracion_segundos": null
         }
       ]
@@ -473,22 +473,22 @@
     {
       "id": "2F",
       "momento": "2F",
-      "titulo": "Cerrar el ejemplo y abrir otro expediente",
+      "titulo": "Recapitular y abrir otro expediente",
       "lamina": 6,
       "artboard": 5,
       "svg": "lamina06.svg",
-      "capa_nativa": 6493,
-      "voz_referencia": "Comprar una deuda no prueba por sí solo fraude: importan el reconocimiento indebido y el acuerdo ilegal.",
-      "accion_y_camara": "El ejemplo genérico sale. La carpeta de Novoa es otra: no transformar una deuda de ejemplo en su caso.",
-      "pausa_y_lectura": "Pausa sobre el circuito; presentar después el nombre de la reclamante.",
-      "siguiente": "3A · Qué reclamaba Novoa",
-      "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+      "capa_nativa": 10291,
+      "voz_referencia": "Comprar un reclamo o gestionar su reconocimiento no demuestra fraude por sí solo. Ahora abramos otro expediente: el de Ignacia Novoa.",
+      "accion_y_camara": "El ejemplo genérico se cierra antes de entrar a Novoa. La nota de su gestión por comisión se identifica como acuerdo legítimo según Quiroz.",
+      "pausa_y_lectura": "Pausa en el circuito. El último folio enlaza con 3A, manteniendo la distinción entre los casos.",
+      "siguiente": "3A · El expediente de Novoa",
+      "base": "Q, pp. 170–171; la comisión de Novoa y Elías se describe como legítima.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "s02-v12-parcial",
-          "svg": "../recursos/encuadres/s02-v12-parcial.svg",
+          "recurso": "s02-r2-favorecimiento",
+          "svg": "../recursos/revision-02-reclamo/favorecimiento.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -502,15 +502,15 @@
             630
           ],
           "ids_nativos": [
-            6836
+            11021
           ],
-          "accion": "Recuperar comprador e intermediario, conservando el mismo papel.",
+          "accion": "Recuperar el punto de la revisión donde se ilustró el trato indebido.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s02-v12",
-          "svg": "../recursos/encuadres/s02-v12.svg",
+          "recurso": "s02-r2-circuito",
+          "svg": "../recursos/revision-02-reclamo/circuito.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -524,15 +524,15 @@
             630
           ],
           "ids_nativos": [
-            7587
+            11748
           ],
-          "accion": "Abrir al circuito completo y dejar clara la relación ilegal señalada.",
+          "accion": "Reunir compra, gestión y vale con las funciones identificadas.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "s03-v01",
-          "svg": "../recursos/encuadres/s03-v01.svg",
+          "recurso": "s02-r2-novoa",
+          "svg": "../recursos/revision-02-reclamo/novoa.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -546,12 +546,14 @@
             630
           ],
           "ids_nativos": [
-            7997
+            15176
           ],
-          "accion": "Retirar el ejemplo y entrar al expediente identificado de Novoa.",
+          "accion": "Retirar el ejemplo e introducir Novoa, con la comisión legítima diferenciada.",
           "duracion_segundos": null
         }
       ]
     }
-  ]
+  ],
+  "revision": 2,
+  "fecha_revision": "2026-11-10"
 }

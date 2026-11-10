@@ -89,3 +89,7 @@ Una escena larga puede contener planos, acercamientos y pausas distintos. No sig
 ## Revisión visual de la primera escena
 
 Revisión 2 solicitada por Gerson tras revisar las siete láminas. Se modifican apertura, extracción y llenado, posturas y agarre, recepción a bordo, construcción de cuentas, ejemplos de deuda y acercamiento al folio. El contexto fiscal se traslada de 1A a 1D. Se mantienen siete láminas y 21 estados; la voz es una referencia revisada, pendiente de locución final.
+
+## Revisión visual de la segunda escena
+
+Revisión 2 solicitada por Gerson. Las seis láminas conservan 19 estados: folio de enlace y ejemplos actualizados, cotejo con soportes, definición positiva del vale, pago contrario al reclamo, funciones estables, ejemplo de revisión eludida y entrada a Novoa con su comisión legítima diferenciada. Voz de referencia y duraciones pendientes de la locución final.

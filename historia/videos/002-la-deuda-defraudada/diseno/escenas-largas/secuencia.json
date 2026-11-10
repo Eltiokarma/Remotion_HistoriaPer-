@@ -45,12 +45,13 @@
       "secuencia": "escena-02/secuencia.json",
       "pdf": "escena-02/escena-02.pdf",
       "nativo": "escena-02/escena-02.vectorcraft",
-      "entrada": "s02-v01",
-      "salida": "s03-v01",
+      "entrada": "s01-v16",
+      "salida": "s02-r2-novoa",
       "puente_siguiente": {
         "escena": 3,
         "criterio": "Se retira el ejemplo y se abre otra carpeta: Novoa."
-      }
+      },
+      "revision": 2
     },
     {
       "id": "escena-03",
@@ -127,7 +128,7 @@
   "total_momentos": 24,
   "total_laminas": 32,
   "total_estados": 97,
-  "recursos_svg_distintos": 91,
+  "recursos_svg_distintos": 89,
   "duraciones": "Sin fijar, pendientes de la locución. Dos segundos de silencio en 3D son una propuesta.",
   "animacion_remotion_verificada": false,
   "video_generado": false

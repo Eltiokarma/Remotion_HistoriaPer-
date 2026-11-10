@@ -183,6 +183,12 @@
           "lamina": 7,
           "momento": "1D.2",
           "estado": 3
+        },
+        {
+          "escena": 2,
+          "lamina": 1,
+          "momento": "2A",
+          "estado": 1
         }
       ],
       "procedencia": {
@@ -205,98 +211,8 @@
       }
     },
     {
-      "id": "s02-v01",
-      "svg": "recursos/encuadres/s02-v01.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 1,
-          "momento": "2A",
-          "estado": 1
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 2,
-        "vinyeta": 1,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          90,
-          260,
-          1120,
-          630
-        ],
-        "lamina_fuente": 1,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s02-v02-prestamo",
-      "svg": "recursos/encuadres/s02-v02-prestamo.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 1,
-          "momento": "2A",
-          "estado": 2
-        }
-      ],
-      "procedencia": {
-        "tipo": "estado_derivado",
-        "seccion": 2,
-        "vinyeta": 2,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          260,
-          1120,
-          630
-        ],
-        "lamina_fuente": 1,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "ocultar_ids": [
-            224,
-            225,
-            226,
-            227,
-            228,
-            229,
-            230,
-            243,
-            244,
-            245,
-            246,
-            247,
-            248,
-            249,
-            250,
-            251,
-            252,
-            253
-          ],
-          "poses_actores": {},
-          "zonas_foco": [],
-          "textos": []
-        }
-      }
-    },
-    {
-      "id": "s02-v02",
-      "svg": "recursos/encuadres/s02-v02.svg",
+      "id": "s02-v03",
+      "svg": "recursos/encuadres/s02-v03.svg",
       "lienzo_destino": [
         1120,
         630
@@ -307,40 +223,6 @@
           "lamina": 1,
           "momento": "2A",
           "estado": 3
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 2,
-        "vinyeta": 2,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          260,
-          1120,
-          630
-        ],
-        "lamina_fuente": 1,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s02-v03",
-      "svg": "recursos/encuadres/s02-v03.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 2,
-          "momento": "2B",
-          "estado": 1
         }
       ],
       "procedencia": {
@@ -356,175 +238,6 @@
           630
         ],
         "lamina_fuente": 1,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s02-v04",
-      "svg": "recursos/encuadres/s02-v04.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 2,
-          "momento": "2B",
-          "estado": 2
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 2,
-        "vinyeta": 4,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          1210,
-          1120,
-          630
-        ],
-        "lamina_fuente": 1,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s02-v05-sinvale",
-      "svg": "recursos/encuadres/s02-v05-sinvale.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 2,
-          "momento": "2B",
-          "estado": 3
-        },
-        {
-          "escena": 2,
-          "lamina": 3,
-          "momento": "2C",
-          "estado": 1
-        }
-      ],
-      "procedencia": {
-        "tipo": "estado_derivado",
-        "seccion": 2,
-        "vinyeta": 5,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          90,
-          2480,
-          1120,
-          630
-        ],
-        "lamina_fuente": 2,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "ocultar_ids": [
-            489,
-            2192,
-            476,
-            474,
-            473,
-            472,
-            471,
-            461,
-            460,
-            459,
-            458,
-            457,
-            456,
-            455,
-            454,
-            453,
-            452,
-            451
-          ],
-          "poses_actores": {},
-          "zonas_foco": [],
-          "textos": [
-            [
-              435,
-              "PRIMERO SE RECONOCE EL RECLAMO"
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "s02-v05",
-      "svg": "recursos/encuadres/s02-v05.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 3,
-          "momento": "2C",
-          "estado": 2
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 2,
-        "vinyeta": 5,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          90,
-          2480,
-          1120,
-          630
-        ],
-        "lamina_fuente": 2,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s02-v06",
-      "svg": "recursos/encuadres/s02-v06.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 3,
-          "momento": "2C",
-          "estado": 3
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 2,
-        "vinyeta": 6,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          2480,
-          1120,
-          630
-        ],
-        "lamina_fuente": 2,
         "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
         "variacion": {
           "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
@@ -566,415 +279,6 @@
       }
     },
     {
-      "id": "reclamo-entrega-a",
-      "svg": "recursos/encuadres/reclamo-entrega-a.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 4,
-          "momento": "2D",
-          "estado": 2
-        }
-      ],
-      "procedencia": {
-        "tipo": "dibujo_nuevo",
-        "archivo_nativo": "recursos/gestos/traspasos.vectorcraft",
-        "lamina_fuente": 1,
-        "entidad": "reclamo_generico_01",
-        "rectangulo_papel": [
-          200,
-          130,
-          340,
-          380
-        ],
-        "grupo_papel": 23,
-        "manos": [
-          {
-            "lado": "izquierda",
-            "gesto": "agarre",
-            "rectangulo": [
-              -33.51598504917081,
-              335.5156584533875,
-              260,
-              115.51965017962769
-            ],
-            "contacto": [
-              200,
-              365
-            ],
-            "ids": [
-              34
-            ]
-          },
-          {
-            "lado": "derecha",
-            "gesto": "apoyo",
-            "rectangulo": [
-              989.5,
-              331.63136708582323,
-              270,
-              137.03083183634564
-            ],
-            "contacto": [
-              1030,
-              370
-            ],
-            "ids": [
-              43
-            ]
-          }
-        ],
-        "nota": "El mismo documento cambia de tenedor; no es una transacción individual documentada."
-      }
-    },
-    {
-      "id": "reclamo-entrega-b",
-      "svg": "recursos/encuadres/reclamo-entrega-b.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 4,
-          "momento": "2D",
-          "estado": 3
-        }
-      ],
-      "procedencia": {
-        "tipo": "dibujo_nuevo",
-        "archivo_nativo": "recursos/gestos/traspasos.vectorcraft",
-        "lamina_fuente": 2,
-        "entidad": "reclamo_generico_01",
-        "rectangulo_papel": [
-          390,
-          105,
-          340,
-          380
-        ],
-        "grupo_papel": 68,
-        "manos": [
-          {
-            "lado": "izquierda",
-            "gesto": "agarre",
-            "rectangulo": [
-              156.4840149508292,
-              310.5156584533876,
-              260,
-              115.51965017962769
-            ],
-            "contacto": [
-              390,
-              340
-            ],
-            "ids": [
-              291,
-              295
-            ]
-          },
-          {
-            "lado": "derecha",
-            "gesto": "agarre",
-            "rectangulo": [
-              703.5159850491708,
-              310.5156584533876,
-              260,
-              115.51965017962769
-            ],
-            "contacto": [
-              730,
-              340
-            ],
-            "ids": [
-              297,
-              301
-            ]
-          }
-        ],
-        "nota": "El mismo documento cambia de tenedor; no es una transacción individual documentada."
-      }
-    },
-    {
-      "id": "reclamo-entrega-c",
-      "svg": "recursos/encuadres/reclamo-entrega-c.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 4,
-          "momento": "2D",
-          "estado": 4
-        }
-      ],
-      "procedencia": {
-        "tipo": "dibujo_nuevo",
-        "archivo_nativo": "recursos/gestos/traspasos.vectorcraft",
-        "lamina_fuente": 3,
-        "entidad": "reclamo_generico_01",
-        "rectangulo_papel": [
-          570,
-          130,
-          340,
-          380
-        ],
-        "grupo_papel": 122,
-        "manos": [
-          {
-            "lado": "izquierda",
-            "gesto": "apoyo",
-            "rectangulo": [
-              -19.5,
-              391.6313670858233,
-              270,
-              137.03083183634564
-            ],
-            "contacto": [
-              210,
-              430
-            ],
-            "ids": [
-              129
-            ]
-          },
-          {
-            "lado": "derecha",
-            "gesto": "agarre",
-            "rectangulo": [
-              883.5159850491708,
-              335.51565845338746,
-              260,
-              115.51965017962769
-            ],
-            "contacto": [
-              910,
-              365
-            ],
-            "ids": [
-              142
-            ]
-          }
-        ],
-        "nota": "El mismo documento cambia de tenedor; no es una transacción individual documentada."
-      }
-    },
-    {
-      "id": "s02-v09-prepara",
-      "svg": "recursos/encuadres/s02-v09-prepara.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 5,
-          "momento": "2E",
-          "estado": 1
-        }
-      ],
-      "procedencia": {
-        "tipo": "estado_derivado",
-        "seccion": 2,
-        "vinyeta": 9,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          90,
-          4700,
-          1120,
-          630
-        ],
-        "lamina_fuente": 3,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "ocultar_ids": [],
-          "poses_actores": {
-            "comerciante": "prepara",
-            "intermediario": "prepara"
-          },
-          "zonas_foco": [],
-          "textos": []
-        }
-      }
-    },
-    {
-      "id": "s02-v10",
-      "svg": "recursos/encuadres/s02-v10.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 5,
-          "momento": "2E",
-          "estado": 2
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 2,
-        "vinyeta": 10,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          4700,
-          1120,
-          630
-        ],
-        "lamina_fuente": 3,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s02-v11",
-      "svg": "recursos/encuadres/s02-v11.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 5,
-          "momento": "2E",
-          "estado": 3
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 2,
-        "vinyeta": 11,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          90,
-          5650,
-          1120,
-          630
-        ],
-        "lamina_fuente": 3,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s02-v12-parcial",
-      "svg": "recursos/encuadres/s02-v12-parcial.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 6,
-          "momento": "2F",
-          "estado": 1
-        }
-      ],
-      "procedencia": {
-        "tipo": "estado_derivado",
-        "seccion": 2,
-        "vinyeta": 12,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          5650,
-          1120,
-          630
-        ],
-        "lamina_fuente": 3,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "ocultar_ids": [
-            1127,
-            1126,
-            1125,
-            1124,
-            1122,
-            1121,
-            1120,
-            1119,
-            1109,
-            1108,
-            1107,
-            1106,
-            1105,
-            1104,
-            1103,
-            1102,
-            1101,
-            1100,
-            1099,
-            1098,
-            1097,
-            1096,
-            1222,
-            1029,
-            1028,
-            1027,
-            1026,
-            1025,
-            1024
-          ],
-          "poses_actores": {},
-          "zonas_foco": [],
-          "textos": []
-        }
-      }
-    },
-    {
-      "id": "s02-v12",
-      "svg": "recursos/encuadres/s02-v12.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 6,
-          "momento": "2F",
-          "estado": 2
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 2,
-        "vinyeta": 12,
-        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
-        "secuencia": "../storyboard-seccion02/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          5650,
-          1120,
-          630
-        ],
-        "lamina_fuente": 3,
-        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
       "id": "s03-v01",
       "svg": "recursos/encuadres/s03-v01.svg",
       "lienzo_destino": [
@@ -982,12 +286,6 @@
         630
       ],
       "usado_en": [
-        {
-          "escena": 2,
-          "lamina": 6,
-          "momento": "2F",
-          "estado": 3
-        },
         {
           "escena": 3,
           "lamina": 1,
@@ -3396,6 +2694,12 @@
           "lamina": 6,
           "momento": "1D.1",
           "estado": 2
+        },
+        {
+          "escena": 2,
+          "lamina": 1,
+          "momento": "2A",
+          "estado": 2
         }
       ],
       "procedencia": {
@@ -3430,7 +2734,332 @@
         "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
         "datos": "recursos/revision-02/revision.json"
       }
+    },
+    {
+      "id": "s02-r2-cotejo-0",
+      "svg": "recursos/revision-02-reclamo/cotejo-0.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 2,
+          "momento": "2B",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 1,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-cotejo-1",
+      "svg": "recursos/revision-02-reclamo/cotejo-1.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 2,
+          "momento": "2B",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 2,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-cotejo-2",
+      "svg": "recursos/revision-02-reclamo/cotejo-2.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 2,
+          "momento": "2B",
+          "estado": 3
+        },
+        {
+          "escena": 2,
+          "lamina": 3,
+          "momento": "2C",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 3,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-reclamo-y-vale",
+      "svg": "recursos/revision-02-reclamo/reclamo-y-vale.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 3,
+          "momento": "2C",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 4,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-derecho-de-cobro",
+      "svg": "recursos/revision-02-reclamo/derecho-de-cobro.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 3,
+          "momento": "2C",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 5,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-compra-0",
+      "svg": "recursos/revision-02-reclamo/compra-0.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 4,
+          "momento": "2D",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 6,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-compra-1",
+      "svg": "recursos/revision-02-reclamo/compra-1.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 4,
+          "momento": "2D",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 7,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-compra-2",
+      "svg": "recursos/revision-02-reclamo/compra-2.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 4,
+          "momento": "2D",
+          "estado": 4
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 8,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-gestion",
+      "svg": "recursos/revision-02-reclamo/gestion.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 5,
+          "momento": "2E",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 9,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-favorecimiento",
+      "svg": "recursos/revision-02-reclamo/favorecimiento.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 5,
+          "momento": "2E",
+          "estado": 2
+        },
+        {
+          "escena": 2,
+          "lamina": 6,
+          "momento": "2F",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 10,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-precio-y-valor",
+      "svg": "recursos/revision-02-reclamo/precio-y-valor.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 5,
+          "momento": "2E",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 11,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-circuito",
+      "svg": "recursos/revision-02-reclamo/circuito.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 6,
+          "momento": "2F",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 12,
+        "base": "Q, pp. 169–170. Esquemas didácticos; cotejos ya registrados en fuentes.md.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
+    },
+    {
+      "id": "s02-r2-novoa",
+      "svg": "recursos/revision-02-reclamo/novoa.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 6,
+          "momento": "2F",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02-reclamo/dibujos.vectorcraft",
+        "lamina_fuente": 13,
+        "base": "Q, p. 171. Acuerdo legítimo de comisión entre Novoa y Elías.",
+        "datos": "recursos/revision-02-reclamo/revision.json",
+        "nota": "Papeles y relaciones editoriales, sin cantidades individuales ni atribuir el ejemplo de trato ilegal a Novoa."
+      }
     }
   ],
-  "revision_escena_01": 2
+  "revision_escena_01": 2,
+  "revision_escena_02": 2
 }

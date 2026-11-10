@@ -8,58 +8,58 @@
   "archivos": [
     {
       "archivo": "escena-02.pdf",
-      "bytes": 5991251,
-      "sha256": "a2e1bc5af4cbe12ebb29947560d3a1be4526e3cfd6aa41256914f3d6faa90c11"
+      "bytes": 7433199,
+      "sha256": "9b1b0fa39e93d3780faff3e9e7a07f9dda817e57e092dcbd3cb3aa6f8273a274"
     },
     {
       "archivo": "escena-02.vectorcraft",
-      "bytes": 1575883,
-      "sha256": "0ac04f50936dcc867999e68c61b967237b62eb9a59da40893634103080b7dbe4"
+      "bytes": 2478467,
+      "sha256": "513dc9e45c9262856c3595c854b940c313106b5962fb46cc2d6b93fd14e99a99"
     },
     {
       "archivo": "lamina01.svg",
-      "bytes": 1130670,
-      "sha256": "87ab895864900dbadb76f79bef595c8bd3316e8576b89484d63ef1ca5a366d62"
+      "bytes": 1546327,
+      "sha256": "4a6f3dd30f0aededc4c88c6b4e37ad63e29cb695902bd28c09034db7ee25fc9b"
     },
     {
       "archivo": "lamina02.svg",
-      "bytes": 1211681,
-      "sha256": "9bba3f355c971cccaf56772c2ce6327afdad7891148e9313b0197e9ba5ce3b53"
+      "bytes": 1858028,
+      "sha256": "b9638fccba4b150bbe88edc0461f127aef96fbe6206c067ec71d4ee666bc1e01"
     },
     {
       "archivo": "lamina03.svg",
-      "bytes": 1094643,
-      "sha256": "ff5519555e5beba2d154f0a9ef6cdb9548899d7c1561c00bc1a085e2a5b2eadc"
+      "bytes": 1823295,
+      "sha256": "60f98d69c4de2455e33196d012e3479148fb23d4f03124e2a42103c84218d23e"
     },
     {
       "archivo": "lamina04.svg",
-      "bytes": 1338407,
-      "sha256": "e3c68e296b1c6179ce93c39e40986cdc318e20585dd6fceaa26c87cfceeefe39"
+      "bytes": 1803996,
+      "sha256": "e928f19a727b21edc1fb77261be4dcaba502f795b3e1d8f96961c023cbb0e561"
     },
     {
       "archivo": "lamina05.svg",
-      "bytes": 1374336,
-      "sha256": "387726e21b35d0f3a1a320622d415e412c66ec56dd026428a20dd3f838fb9815"
+      "bytes": 1558083,
+      "sha256": "9ac32b5f24fb1672fffe5aef5623aa031be4434d5e8ad8443b0c1a49ed400559"
     },
     {
       "archivo": "lamina06.svg",
-      "bytes": 1328599,
-      "sha256": "3429be757f80e9b9b267689d54015cd380a7d64fd996c582d6258592ff8ff81e"
+      "bytes": 1655715,
+      "sha256": "ff233e303d568355b34f33c7aabd6d7745c3750cbcd76b91e684d3977be2ee62"
     },
     {
       "archivo": "muestra.png",
-      "bytes": 264709,
-      "sha256": "c6909cc552f35cca115df6f721babc46ba6334d46c74b47910602413b655f50f"
+      "bytes": 278187,
+      "sha256": "38e9bc1e908dd5a7fa2c69f5d0cdb65d1616624dde6c5e8d386d33360766513b"
     },
     {
       "archivo": "README.md",
-      "bytes": 1717,
-      "sha256": "f382bfd92e0efb096f156dba1260713bd13138425f63a4f379696148a7d1e6bd"
+      "bytes": 2476,
+      "sha256": "31a6f8382fa8d593ae5f358bcc94b43d01b84969d262ca70ad0d5c872c696743"
     },
     {
       "archivo": "secuencia.json",
-      "bytes": 15701,
-      "sha256": "b13b73706a13d21c18f25e7a65423ebfd13f8848131a6a55f598ce7db68f2583"
+      "bytes": 16746,
+      "sha256": "f65e0e819f1db2cd808b3fa89d5945bccd88baa463859ef22995baf9992521f6"
     }
   ]
 }

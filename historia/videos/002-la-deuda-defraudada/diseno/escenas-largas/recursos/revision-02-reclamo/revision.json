@@ -1,0 +1,218 @@
+{
+  "fecha": "2026-11-10",
+  "revision": 2,
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "herramienta": "VectorCraft mediante MCP",
+  "documento": "dibujos.vectorcraft",
+  "dimension_encuadre": [
+    1120,
+    630
+  ],
+  "distancia_mesas": 710,
+  "componentes": [
+    {
+      "name": "cotejo-0",
+      "artboard": 0,
+      "svg": "cotejo-0.svg",
+      "mesa": 1
+    },
+    {
+      "name": "cotejo-1",
+      "artboard": 1,
+      "svg": "cotejo-1.svg",
+      "mesa": 2
+    },
+    {
+      "name": "cotejo-2",
+      "artboard": 2,
+      "svg": "cotejo-2.svg",
+      "mesa": 3
+    },
+    {
+      "name": "reclamo-y-vale",
+      "artboard": 3,
+      "svg": "reclamo-y-vale.svg",
+      "mesa": 4
+    },
+    {
+      "name": "derecho-de-cobro",
+      "artboard": 4,
+      "svg": "derecho-de-cobro.svg",
+      "mesa": 5
+    },
+    {
+      "name": "compra-0",
+      "artboard": 5,
+      "svg": "compra-0.svg",
+      "mesa": 6
+    },
+    {
+      "name": "compra-1",
+      "artboard": 6,
+      "svg": "compra-1.svg",
+      "mesa": 7
+    },
+    {
+      "name": "compra-2",
+      "artboard": 7,
+      "svg": "compra-2.svg",
+      "mesa": 8
+    },
+    {
+      "name": "gestion",
+      "artboard": 8,
+      "svg": "gestion.svg",
+      "mesa": 9
+    },
+    {
+      "name": "favorecimiento",
+      "artboard": 9,
+      "svg": "favorecimiento.svg",
+      "mesa": 10
+    },
+    {
+      "name": "precio-y-valor",
+      "artboard": 10,
+      "svg": "precio-y-valor.svg",
+      "mesa": 11
+    },
+    {
+      "name": "circuito",
+      "artboard": 11,
+      "svg": "circuito.svg",
+      "mesa": 12
+    },
+    {
+      "name": "novoa",
+      "artboard": 12,
+      "svg": "novoa.svg",
+      "mesa": 13
+    }
+  ],
+  "roles": [
+    {
+      "funcion": "Comprador",
+      "rectangulo_busto": [
+        67,
+        153,
+        216,
+        196
+      ],
+      "base": "../../../personajes-1850/comerciante/rig.json"
+    },
+    {
+      "funcion": "Intermediario",
+      "rectangulo_busto": [
+        452,
+        153,
+        216,
+        196
+      ],
+      "base": "../../../personajes-1850/variantes/intermediario/variante.json"
+    },
+    {
+      "funcion": "Funcionario",
+      "rectangulo_busto": [
+        837,
+        153,
+        216,
+        196
+      ],
+      "base": "../../../personajes-1850/funcionario/rig.json"
+    }
+  ],
+  "grupos_actores": [
+    {
+      "id": 2285,
+      "funcion": "Comprador",
+      "archivo": "busto-comerciante-atencion.svg"
+    },
+    {
+      "id": 2371,
+      "funcion": "Intermediario",
+      "archivo": "busto-intermediario-quieto.svg"
+    },
+    {
+      "id": 2458,
+      "funcion": "Funcionario",
+      "archivo": "busto-funcionario-quieto.svg"
+    },
+    {
+      "id": 2597,
+      "funcion": "Comprador",
+      "archivo": "busto-comerciante-atencion.svg"
+    },
+    {
+      "id": 2683,
+      "funcion": "Intermediario",
+      "archivo": "busto-intermediario-quieto.svg"
+    },
+    {
+      "id": 2770,
+      "funcion": "Funcionario",
+      "archivo": "busto-funcionario-quieto.svg"
+    },
+    {
+      "id": 2910,
+      "funcion": "Comprador",
+      "archivo": "busto-comerciante-atencion.svg"
+    },
+    {
+      "id": 2996,
+      "funcion": "Intermediario",
+      "archivo": "busto-intermediario-quieto.svg"
+    },
+    {
+      "id": 3083,
+      "funcion": "Funcionario",
+      "archivo": "busto-funcionario-quieto.svg"
+    },
+    {
+      "id": 3209,
+      "funcion": "Comprador",
+      "archivo": "busto-comerciante-atencion.svg"
+    },
+    {
+      "id": 3295,
+      "funcion": "Intermediario",
+      "archivo": "busto-intermediario-quieto.svg"
+    },
+    {
+      "id": 3382,
+      "funcion": "Funcionario",
+      "archivo": "busto-funcionario-quieto.svg"
+    }
+  ],
+  "intercambio": {
+    "reclamo": "Conservar entidad y pestaña roja de los tres estados de traspaso.",
+    "pago": {
+      "entidad": "pago_compra_generico",
+      "simbolo": "Sobre editorial, sin importe.",
+      "rectangulos": [
+        [
+          830,
+          490,
+          166,
+          52
+        ],
+        [
+          505,
+          490,
+          166,
+          52
+        ],
+        [
+          180,
+          490,
+          166,
+          52
+        ]
+      ],
+      "sentido": "Del comprador al reclamante; contrario al reclamo."
+    }
+  },
+  "alcance": "Cotejo y revisión eludida son modelos didácticos, sin formularios o expedientes reproducidos. La ley es un resumen editorial. No se inventan importes o diálogos. El ejemplo de abuso no se atribuye a Novoa o Elías.",
+  "comision_novoa_elias": "Acuerdo legítimo según Quiroz, p. 171; no confundirlo con el ejemplo genérico de trato ilegal.",
+  "animacion_verificada": false,
+  "video_generado": false
+}

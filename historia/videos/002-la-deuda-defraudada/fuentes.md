@@ -110,3 +110,7 @@ Los personajes son ejemplos. No son retratos de Novoa, funcionarios identificado
 ## Revisión 2 del desarrollo de la escena 1
 
 Se reorganiza la exposición visual con los mismos cotejos: Q, pp. 164–170; B, pp. 10–11 y 20–21; C, capítulo 1. La pala, el material suelto, el saco y su llenado son representaciones editoriales del trabajo. Apoyos, pasarela, barco y posturas no reconstruyen una instalación exacta ni documentan la condición de una figura. El esquema comercial mantiene su carácter conceptual. No se realizó aquí una nueva lectura independiente de las leyes o de los libros.
+
+## Revisión 2 del recorrido de un reclamo
+
+Se mantienen los cotejos existentes de Q, pp. 169–170 y B, pp. 19–23. El cotejo de campos y soportes y la comprobación eludida son esquemas didácticos, sin atribuir ese trámite a un expediente particular. La compra se muestra con un sobre como símbolo de pago, sin importe ni instrumento histórico específico. Q, p. 171, conserva el carácter legítimo del acuerdo de comisión entre Novoa y Elías. No se añadió una consulta independiente de expedientes, leyes o libros.

@@ -5,7 +5,7 @@
   "momentos": 24,
   "laminas": 32,
   "estados": 97,
-  "encuadres_distintos": 91,
+  "encuadres_distintos": 89,
   "escena_01": {
     "laminas": 7,
     "estados": 21,
@@ -14,11 +14,23 @@
     "muestras_png": 7,
     "asignaciones_nativas_correctas": true
   },
-  "svg_sin_raster_ni_texto_vivo": 139,
-  "enlaces_locales_correctos": 105,
+  "svg_sin_raster_ni_texto_vivo": 152,
+  "enlaces_locales_correctos": 108,
   "piezas_canonicas_sin_cambios": 135,
-  "revision_visual": "Se inspeccionan las siete láminas y los detalles de agarre, pies, cubierta, cuentas y folio.",
+  "revision_visual": "Se inspeccionan las seis láminas de la escena 2, incluidos textos, cotejo, pago, roles y transición a Novoa. Se conserva la revisión estática anterior de la escena 1.",
   "aprobacion_gerson": "pendiente",
   "animacion_remotion_verificada": false,
-  "video_generado": false
+  "video_generado": false,
+  "revision_escena_02": 2,
+  "escena_02": {
+    "laminas": 6,
+    "estados": 19,
+    "dibujos_nuevos": 13,
+    "pdf_paginas": 6,
+    "muestras_png": 6,
+    "asignaciones_nativas_correctas": true,
+    "cotejo_por_etapas": true,
+    "pago_en_sentido_contrario": true,
+    "comision_legitima_de_novoa_diferenciada": true
+  }
 }
