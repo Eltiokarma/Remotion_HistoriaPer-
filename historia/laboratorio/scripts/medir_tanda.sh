@@ -5,6 +5,7 @@
 #   caliente = el mismo comando repetido enseguida.
 # Deja resultados/<muestra>/{final-frio,final-caliente,previa-caliente}.json y revisa las finales.
 set -euo pipefail
+export LAB_SOBRESCRIBIR=1 # estas corridas reemplazan los registros a propósito
 cd "$(dirname "$0")/.."
 export LAB_MAQUINA="${LAB_MAQUINA:-sin nombre}"
 rm -rf out/manim muestras/01-monedas-manim/__pycache__

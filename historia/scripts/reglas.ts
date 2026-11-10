@@ -22,6 +22,23 @@ type Regla = {
   patron: RegExp;
   /** Archivos (ruta relativa a historia/) donde la regla no aplica. */
   permitidoEn?: string[];
+  /** La línea coincide con el patrón pero está permitida (p. ej. un peso del canal escrito en línea). */
+  excepto?: (linea: string) => boolean;
+};
+
+/**
+ * Los cinco pesos del canal, leídos de src/direction/easings.ts (fuente única). Remotion Studio escribe
+ * las curvas en línea como Easing.bezier(a, b, c, d): si los números son exactamente un peso, se permite
+ * (laboratorio/muestras/12-titulo-editable). Cualquier otra curva sigue siendo una falta.
+ */
+const PESOS: string[] = (() => {
+  const texto = readFileSync(join(__dirname, '..', 'src', 'direction', 'easings.ts'), 'utf8');
+  return [...texto.matchAll(/Easing\.bezier\(([^)]*)\)/g)].map((m) => m[1].split(',').map((n) => Number(n)).join(','));
+})();
+const esPeso = (args: string) => PESOS.includes(args.split(',').map((n) => Number(n)).join(','));
+const soloPesos = (linea: string): boolean => {
+  const usos = [...linea.matchAll(/\bEasing\.(\w+)(\(([^)]*)\))?/g)];
+  return usos.length > 0 && usos.every((u) => u[1] === 'bezier' && u[3] !== undefined && esPeso(u[3]));
 };
 
 export const REGLAS: Regla[] = [
@@ -30,6 +47,7 @@ export const REGLAS: Regla[] = [
     explicacion: 'Curva de animación suelta. Los pesos viven en src/direction/easings.ts y se usan con tramo(t, desde, dura, peso) (§4, §11, §15).',
     patron: /\bEasing\.\w+/,
     permitidoEn: ['src/direction/easings.ts'],
+    excepto: soloPesos,
   },
   {
     id: 'azar-sin-semilla',
@@ -82,7 +100,7 @@ export const revisarTexto = (archivo: string, codigo: string): { faltas: Falta[]
   const excepciones: Falta[] = [];
   limpio.forEach((linea, i) => {
     for (const r of REGLAS) {
-      if (r.permitidoEn?.includes(archivo) || !r.patron.test(linea)) continue;
+      if (r.permitidoEn?.includes(archivo) || !r.patron.test(linea) || r.excepto?.(linea)) continue;
       const f = { archivo, linea: i + 1, regla: r.id, texto: original[i].trim() };
       const permiso = [original[i], original[i - 1] ?? ''].map((l) => l.match(PERMISO)).find((m) => m && m[1] === r.id);
       (permiso ? excepciones : faltas).push(permiso ? { ...f, texto: `motivo: ${permiso[2].trim()}` } : f);
@@ -103,6 +121,10 @@ const probar = (): number => {
   const casos: [string | null, string][] = [
     ['easing-suelto', "const e = Easing.bezier(0.2, 0, 0.3, 1);"],
     ['easing-suelto', "interpolate(f, [0, 9], [0, 1], { easing: Easing.inOut(Easing.ease) })"],
+    [null, "opacity: interpolate(frame, [0, 9], [0, 1], { easing: Easing.bezier(0.65, 0, 0.35, 1) }),"],
+    [null, "interpolate(frame, [0, 9], [0, 1], { easing: Easing.bezier(0.20, 0.6, 0.3, 1.0) })"],
+    ['easing-suelto', "interpolate(frame, [0, 9], [0, 1], { easing: Easing.bezier(0.65, 0, 0.35, 0.9) })"],
+    ['easing-suelto', "a: Easing.bezier(0.65, 0, 0.35, 1), b: Easing.linear"],
     ['azar-sin-semilla', 'const x = Math.random() * 10;'],
     ['reloj', 'const t = Date.now();'],
     ['reloj', 'advance(performance.now());'],
@@ -141,7 +163,8 @@ const main = (): number => {
   const faltas: Falta[] = [];
   const excepciones: Falta[] = [];
   for (const a of todas) {
-    const r = revisarTexto(relative(RAIZ, a).split(String.fromCharCode(92)).join("/"), readFileSync(a, 'utf8'));
+    // en Windows relative() devuelve '\\': se normaliza para que permitidoEn y las excepciones coincidan
+    const r = revisarTexto(relative(RAIZ, a).split(String.fromCharCode(92)).join('/'), readFileSync(a, 'utf8'));
     faltas.push(...r.faltas);
     excepciones.push(...r.excepciones);
   }

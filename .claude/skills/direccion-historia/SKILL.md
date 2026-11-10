@@ -5,6 +5,11 @@ description: Dirección de los videos de Historia del Altiplano (historia/): có
 
 # Dirección — Historia del Altiplano
 
+> **Fuera del repositorio** (instalado en la Personalización de claude.ai): los archivos que se citan
+> (`historia/CLAUDE.md`, `escenas.json`, `fuentes.md`, `DIRECCION_DE_VIDEO.md`) no están a mano. El
+> criterio de este archivo vale igual; para un dato, una fuente o una regla de esos archivos, pedírsela
+> a Gerson en vez de suponerla.
+
 > **Estado (2026-11-03).** Escrito el 2026-10-27, antes de la guía `historia/DIRECCION_DE_VIDEO.md`
 > (2026-10-30, en palabras del director). Los tres choques con la guía los decidió Gerson el
 > 2026-11-03 y están aplicados aquí, marcados **Decidido**: el rojo (para la culpa y para el

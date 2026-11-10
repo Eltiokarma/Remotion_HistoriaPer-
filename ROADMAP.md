@@ -2,7 +2,7 @@
 
 <!-- GENERADO por roadmap/generar.mjs a partir de roadmap/roadmap.json. No editar a mano: editar el JSON y regenerar. -->
 
-Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
+Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
 
 - Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.
 - Tiempo humano y tokens: null = desconocido (no medido). No se estiman.
@@ -12,7 +12,7 @@ Actualizado: **2026-11-03**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **17** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **12** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **23** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -49,7 +49,12 @@ gantt
   Correcciones de la revisión técnica monedas, rayado, libro vacío :done, t1correcciones, 2026-11-03, 1d
   Revisión de la tanda 1 por Gerson (propuesta) :active, t1revision, 2026-11-04, 3d
   section Fase 2 · Tanda 2 de muestras
-  06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) (propuesta) :t2pixi, 2026-11-09, 3d
+  06 PixiJS muchos elementos con filtros (lluvia o multitud de puntos) :done, t2pixi, 2026-11-04, 1d
+  09 Puno de noche la ciudad se enciende (primera muestra con el skill v1) :done, t2puno, 2026-11-05, 1d
+  10 Inkscape por MCP balsa de totora dibujada por MCP y animada en Remotion :done, t2inkscape, 2026-11-07, 1d
+  11 Título animado sin After Effects (Inkscape por MCP + Remotion) :done, t2titulo, 2026-11-07, 1d
+  12 Edición visual del Studio ajustar tiempos y posiciones sin tocar código :done, t2studio, 2026-11-07, 1d
+  13 Efectos tipo After Effects con @remotion/effects :done, t2efectos, 2026-11-07, 1d
   07 QGIS el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar (propuesta) :t2qgis, 2026-11-11, 4d
   08 Blender un objeto de época con material de grabado, montado en Remotion (propuesta) :t2blender, 2026-11-16, 5d
   04b Libro 3D con tinta sombreado toon y contornos (propuesta) :t2toon, 2026-11-09, 2d
@@ -112,8 +117,8 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `t1-revision`, `f0-skill-remotion`
   - Prevista: — · Real: 2026-11-03 → …
   - Tiempo: H ¿? · A ≈ 12:00–12:20 UTC (v0) · R ¿? · tokens ¿?
-  - Nota: Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision).
-  - Evidencia: [canal-historia/SKILL.md](historia/.claude/skills/canal-historia/SKILL.md)
+  - Nota: Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision). Versión 1 (2026-11-05), tras la muestra 06: referencias antes de diseñar, pase de imagen antes de mostrar, sonido en el beat principal, coreografía adaptada de Emil Kowalski (movimiento.md) y dos trampas nuevas; medir.py ahora cuenta la CPU de Chrome y no pisa registros. Sin medir todavía si el skill reemplaza esfuerzo (f0-skill-medir).
+  - Evidencia: [canal-historia/SKILL.md](historia/.claude/skills/canal-historia/SKILL.md) · [canal-historia/procedimiento.md](historia/.claude/skills/canal-historia/procedimiento.md) · [canal-historia/movimiento.md](historia/.claude/skills/canal-historia/movimiento.md) · [docs/TRASPASO_2026-11-10.md](docs/TRASPASO_2026-11-10.md)
 - [ ] **Medir si el skill reemplaza esfuerzo** `f0-skill-medir` — ⏳ pendiente
   - Entregable: Protocolo en historia/laboratorio/MEDIR_SKILL.md: brazos A (medio con skills), B (alto sin skills) y C opcional (medio sin skills); misma muestra nueva (sugerida es-ticket), sesiones nuevas, mismo pedido, juicio a ciegas de Gerson; consumo con scripts/consumo_sesion.py
   - Depende de: `f0-skill-canal`, `t1-revision`
@@ -176,11 +181,47 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
 
 ### Fase 2 · Tanda 2 de muestras
 
-- [ ] **06 PixiJS: muchos elementos con filtros (lluvia o multitud de puntos)** `t2-pixi` — 💡 propuesto
+- [x] **06 PixiJS: muchos elementos con filtros (lluvia o multitud de puntos)** `t2-pixi` — ✅ hecho
   - Entregable: Clip de 5 s comparado con la muestra 03 (p5): costo y aspecto
   - Depende de: `t1-revision`
-  - Prevista: 2026-11-09 → 2026-11-11 (propuesta) · Real: —
-  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Prevista: 2026-11-09 → 2026-11-11 (propuesta) · Real: 2026-11-04
+  - Tiempo: H ¿? · A 2026-11-04: renders de la versión 1 entre 12:40 y 12:50 UTC, de la versión 2 entre 20:30 y 20:38 UTC (tiempo de sesión no registrado) · R 200.6 s en contenedor · tokens ¿?
+  - Nota: Adelantada a pedido de Gerson (2026-11-04). Versión 1 no aprobada («planos y sin corazón»); la versión 2 aplica sus referencias de paisaje vectorial con profundidad y espera su veredicto. Final caliente 200,6 s (frío 222,1) contra 28,6 s de la 03 en la misma sesión: el costo es pintar a pantalla completa en un solo proceso GPU por software (SwiftShader), no la cantidad de elementos. Con GPU sin probar.
+  - Evidencia: [06-lluvia-pixi/INFORME.md](historia/laboratorio/muestras/06-lluvia-pixi/INFORME.md) · [06-lluvia-pixi/final-caliente.json](historia/laboratorio/resultados/06-lluvia-pixi/final-caliente.json) · [06-lluvia-pixi/referencia-03-final-caliente.json](historia/laboratorio/resultados/06-lluvia-pixi/referencia-03-final-caliente.json) · [06-lluvia-pixi/hoja.jpg](historia/laboratorio/resultados/06-lluvia-pixi/hoja.jpg) · [v1/hoja.jpg](historia/laboratorio/resultados/06-lluvia-pixi/v1/hoja.jpg) · [canal-historia/criterios.md](historia/.claude/skills/canal-historia/criterios.md)
+- [x] **09 Puno de noche: la ciudad se enciende (primera muestra con el skill v1)** `t2-puno` — ✅ hecho
+  - Entregable: Clip de 5 s con sonido: pase de imagen y coreografía por papeles; informe
+  - Depende de: `f0-skill-canal`
+  - Prevista: — · Real: 2026-11-05
+  - Tiempo: H ¿? · A 2026-11-05 (tiempo de sesión no registrado) · R 59.9 s en contenedor · tokens ¿?
+  - Nota: Pedida por Gerson («probemos otra cosa con los estilos nuevos»); eligió el tema y que el agente propusiera. Borrador sin aprobar: composición, no el Puno real.
+  - Evidencia: [09-puno-noche/INFORME.md](historia/laboratorio/muestras/09-puno-noche/INFORME.md) · [09-puno-noche/final-caliente.json](historia/laboratorio/resultados/09-puno-noche/final-caliente.json) · [09-puno-noche/hoja.jpg](historia/laboratorio/resultados/09-puno-noche/hoja.jpg)
+- [x] **10 Inkscape por MCP: balsa de totora dibujada por MCP y animada en Remotion** `t2-inkscape` — ✅ hecho
+  - Entregable: MCP de Inkscape probado de punta a punta; clip de 5 s con sonido; informe con límites del MCP
+  - Prevista: — · Real: 2026-11-07
+  - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 10.1 s en contenedor · tokens ¿?
+  - Nota: Pedida por Gerson tras la investigación de MCP. Dibujo por MCP 3,7 s (21 llamadas). Borrador sin aprobar: balsa y boga genéricas, sin fuente. En la laptop de Gerson, sin probar. Gerson (2026-11-10): Inkscape se reemplaza por VectorCraft.
+  - Evidencia: [10-balsa-inkscape/INFORME.md](historia/laboratorio/muestras/10-balsa-inkscape/INFORME.md) · [10-balsa-inkscape/final-caliente.json](historia/laboratorio/resultados/10-balsa-inkscape/final-caliente.json) · [10-balsa-inkscape/vista-mcp.jpg](historia/laboratorio/resultados/10-balsa-inkscape/vista-mcp.jpg) · [docs/HERRAMIENTAS.md](docs/HERRAMIENTAS.md)
+- [x] **11 Título animado sin After Effects (Inkscape por MCP + Remotion)** `t2-titulo` — ✅ hecho
+  - Entregable: Título del 0·1 dibujado letra por letra (trim paths), tinta, ficha y subrayado del corrector, con sonido; informe
+  - Depende de: `t2-inkscape`
+  - Prevista: — · Real: 2026-11-07
+  - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 10.5 s en contenedor · tokens ¿?
+  - Nota: Pedida por Gerson como prueba frente a comprar After Effects. Borrador sin aprobar. Falta lo que AE sí tiene: una línea de tiempo para ajustar a mano. Gerson (2026-11-10): Inkscape se reemplaza por VectorCraft.
+  - Evidencia: [11-titulo-inkscape/INFORME.md](historia/laboratorio/muestras/11-titulo-inkscape/INFORME.md) · [11-titulo-inkscape/final-caliente.json](historia/laboratorio/resultados/11-titulo-inkscape/final-caliente.json) · [11-titulo-inkscape/hoja.jpg](historia/laboratorio/resultados/11-titulo-inkscape/hoja.jpg)
+- [x] **12 Edición visual del Studio: ajustar tiempos y posiciones sin tocar código** `t2-studio` — ✅ hecho
+  - Entregable: Pieza editable en Remotion Studio; ediciones probadas que se escriben en el código; regla de curvas = pesos; informe con alternativas
+  - Depende de: `t2-titulo`
+  - Prevista: — · Real: 2026-11-07
+  - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 11.7 s en contenedor · tokens ¿?
+  - Nota: Gerson pidió investigar un «After Effects propio». Decidido el 2026-11-10: el Studio editable se usa para el catálogo; los episodios son datos en escenas.json (CLAUDE.md §15). Aprobada para usar por Gerson (2026-11-10).
+  - Evidencia: [12-titulo-editable/INFORME.md](historia/laboratorio/muestras/12-titulo-editable/INFORME.md) · [12-titulo-editable/edicion-1-clave.diff](historia/laboratorio/resultados/12-titulo-editable/edicion-1-clave.diff) · [12-titulo-editable/edicion-2-lienzo.diff](historia/laboratorio/resultados/12-titulo-editable/edicion-2-lienzo.diff) · [scripts/reglas.ts](historia/scripts/reglas.ts)
+- [x] **13 Efectos tipo After Effects con @remotion/effects** `t2-efectos` — ✅ hecho
+  - Entregable: Clip con desenfoque de foco, LUT, resplandor, desenfoque de zoom y pasar página; costo por efecto; informe
+  - Depende de: `t2-inkscape`
+  - Prevista: — · Real: 2026-11-07
+  - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 55.2 s en contenedor · tokens ¿?
+  - Nota: Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor. Gerson (2026-11-10): no hace falta probarlos en la laptop. Aprobada para usar por Gerson (2026-11-10).
+  - Evidencia: [13-efectos/INFORME.md](historia/laboratorio/muestras/13-efectos/INFORME.md) · [13-efectos/final-caliente.json](historia/laboratorio/resultados/13-efectos/final-caliente.json) · [13-efectos/hoja.jpg](historia/laboratorio/resultados/13-efectos/hoja.jpg)
 - [ ] **07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar** `t2-qgis` — 💡 propuesto
   - Entregable: Datos con licencia (p. ej. Natural Earth, dominio público) + clip de 5 s con el Titicaca
   - Depende de: `t1-revision`

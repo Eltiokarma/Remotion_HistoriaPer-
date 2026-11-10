@@ -77,3 +77,30 @@ Cada una con su síntoma (cómo se reconoce), la causa y el arreglo que funcion�
   un material por cara.
 - Sin GPU, WebGL corre por SwiftShader; queda registrado con el `console.warn` de la muestra 04.
   Con GPU hay que pasar `--gl` y comprobar en el registro que cambió.
+
+## PixiJS sin GPU: los hilos de render no ayudan
+
+- **Medido (muestra 06):** 30 cuadros tardan lo mismo con 1 hilo que con 4 (44,8 / 41,8 s). Todas las
+  pestañas comparten un solo proceso GPU de Chrome con SwiftShader (235 % de CPU; cada pestaña ~9 %).
+- **Lo que cuesta son los filtros a pantalla completa** (`BlurFilter`): la mitad del tiempo. La
+  cantidad de sprites casi no importa (10× menos gotas, mismo tiempo).
+- **Arreglo:** pocos filtros, y solo donde se ven. `cacheAsTexture` para lo quieto no ahorró y
+  recortó el contenido en el borde: no usarlo sin mirar el cuadro.
+- `segundos_cpu` de `medir.py` no contaba a Chrome (`RUSAGE_CHILDREN`). **Arreglado el 2026-11-05**:
+  ahora suma la CPU de todo el árbol de procesos. En 30 cuadros de la 06: 158 s con el método nuevo,
+  15 s con el viejo (Chrome eran 143 s). Los registros anteriores solo tienen el viejo.
+
+## Degradados hechos con bandas
+
+- **Síntoma:** rayas horizontales finas en un cielo que se oscurece (se ven a tamaño real, no en la
+  hoja de contactos).
+- **Causa:** bandas semitransparentes con 1 px de solape: el solape se pinta dos veces.
+- **Arreglo:** bandas con bordes enteros y sin solape (muestra 06).
+
+## Medir una muestra de referencia pisaba su registro
+
+- **Síntoma:** al renderizar la 03 para compararla con la 06, su `final-caliente.json` de la tanda 1
+  quedó reemplazado por el nuevo (se restauró desde git).
+- **Causa:** `medir.py` escribía siempre en `resultados/<muestra>/<etapa>.json`.
+- **Arreglo (2026-11-05):** si el registro existe, el nuevo va a `<etapa>-<fecha>.json` y se avisa.
+  `medir_tanda.sh` y `ci.sh` reemplazan a propósito con `LAB_SOBRESCRIBIR=1`.

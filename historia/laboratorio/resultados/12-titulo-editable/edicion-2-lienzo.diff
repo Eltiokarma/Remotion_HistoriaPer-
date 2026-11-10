@@ -1,0 +1,18 @@
+--- Muestra.tsx (antes)	2026-11-07 20:47:53.764726402 +0000
++++ Muestra.tsx (después de arrastrar el subrayado en el lienzo)	2026-11-07 20:48:24.749828414 +0000
+@@ -90,7 +90,14 @@
+           borderRadius: 5,
+           backgroundColor: '#b3261e',
+           transformOrigin: '0% 50%',
+-          scale: interpolate(frame, [99, 110], ['0 1', '1 1'], { easing: Easing.bezier(0.2, 0.6, 0.3, 1), extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }),
++
++          scale: interpolate(frame, [99, 110], ['0 1', '1 1'], {
++            easing: Easing.bezier(0.2, 0.6, 0.3, 1),
++            extrapolateLeft: 'clamp',
++            extrapolateRight: 'clamp'
++          }),
++
++          translate: '0px 31.7px'
+         }}
+       />
+     </AbsoluteFill>

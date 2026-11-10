@@ -1,0 +1,21 @@
+--- Muestra.tsx (antes)	2026-11-07 20:47:08.469846883 +0000
++++ Muestra.tsx (después de arrastrar la clave en el Studio)	2026-11-07 20:47:53.764726402 +0000
+@@ -48,8 +48,16 @@
+           fontSize: 172,
+           lineHeight: 1,
+           color: '#1c1b19',
+-          opacity: interpolate(frame, [42, 70], [0, 1], { easing: Easing.bezier(0.65, 0, 0.35, 1), extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }),
+-          translate: interpolate(frame, [42, 70], ['0px 34px', '0px 0px'], { easing: Easing.bezier(0.65, 0, 0.35, 1), extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }),
++          opacity: interpolate(frame, [42, 70], [0, 1], {
++            easing: Easing.bezier(0.65, 0, 0.35, 1),
++            extrapolateLeft: 'clamp',
++            extrapolateRight: 'clamp'
++          }),
++          translate: interpolate(frame, [51, 70], ['0px 34px', '0px 0px'], {
++            easing: [Easing.bezier(0.65, 0, 0.35, 1)],
++            extrapolateLeft: 'clamp',
++            extrapolateRight: 'clamp'
++          })
+         }}
+       >
+         le sacó la cuenta

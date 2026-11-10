@@ -1,6 +1,6 @@
 {
   "titulo": "Roadmap del laboratorio y la base de producción",
-  "actualizado": "2026-11-03",
+  "actualizado": "2026-11-10",
   "notas": [
     "Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.",
     "Tiempo humano y tokens: null = desconocido (no medido). No se estiman.",
@@ -377,7 +377,10 @@
       },
       "bloqueo": null,
       "evidencia": [
-        "historia/.claude/skills/canal-historia/SKILL.md"
+        "historia/.claude/skills/canal-historia/SKILL.md",
+        "historia/.claude/skills/canal-historia/procedimiento.md",
+        "historia/.claude/skills/canal-historia/movimiento.md",
+        "docs/TRASPASO_2026-11-10.md"
       ],
       "tiempo": {
         "humano_min": null,
@@ -385,7 +388,7 @@
         "render_s": null,
         "maquina": null
       },
-      "nota": "Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision)."
+      "nota": "Versión 0 hecha (oficio técnico). El estilo vive en los documentos del director: direccion-historia (traído a main desde la rama claude/dazzling-cerf-2tctae), DIRECCION_DE_VIDEO.md y las notas de revisión. Los tres choques entre ellos (rojo, gancho, silencio) los decidió Gerson el 2026-11-03 y están aplicados. Falta su veredicto sobre las muestras (t1-revision). Versión 1 (2026-11-05), tras la muestra 06: referencias antes de diseñar, pase de imagen antes de mostrar, sonido en el beat principal, coreografía adaptada de Emil Kowalski (movimiento.md) y dos trampas nuevas; medir.py ahora cuenta la CPU de Chrome y no pisa registros. Sin medir todavía si el skill reemplaza esfuerzo (f0-skill-medir)."
     },
     {
       "id": "f0-skill-medir",
@@ -477,7 +480,7 @@
       "fase": "f2",
       "titulo": "06 PixiJS: muchos elementos con filtros (lluvia o multitud de puntos)",
       "entregable": "Clip de 5 s comparado con la muestra 03 (p5): costo y aspecto",
-      "estado": "propuesto",
+      "estado": "hecho",
       "depende_de": [
         "t1-revision"
       ],
@@ -486,15 +489,166 @@
         "fin": "2026-11-11",
         "origen": "propuesta"
       },
-      "real": null,
+      "real": {
+        "inicio": "2026-11-04",
+        "fin": "2026-11-04"
+      },
       "bloqueo": null,
-      "evidencia": [],
+      "evidencia": [
+        "historia/laboratorio/muestras/06-lluvia-pixi/INFORME.md",
+        "historia/laboratorio/resultados/06-lluvia-pixi/final-caliente.json",
+        "historia/laboratorio/resultados/06-lluvia-pixi/referencia-03-final-caliente.json",
+        "historia/laboratorio/resultados/06-lluvia-pixi/hoja.jpg",
+        "historia/laboratorio/resultados/06-lluvia-pixi/v1/hoja.jpg",
+        "historia/.claude/skills/canal-historia/criterios.md"
+      ],
       "tiempo": {
         "humano_min": null,
-        "agente": null,
-        "render_s": null,
-        "maquina": null
-      }
+        "agente": "2026-11-04: renders de la versión 1 entre 12:40 y 12:50 UTC, de la versión 2 entre 20:30 y 20:38 UTC (tiempo de sesión no registrado)",
+        "render_s": 200.6,
+        "maquina": "contenedor"
+      },
+      "nota": "Adelantada a pedido de Gerson (2026-11-04). Versión 1 no aprobada («planos y sin corazón»); la versión 2 aplica sus referencias de paisaje vectorial con profundidad y espera su veredicto. Final caliente 200,6 s (frío 222,1) contra 28,6 s de la 03 en la misma sesión: el costo es pintar a pantalla completa en un solo proceso GPU por software (SwiftShader), no la cantidad de elementos. Con GPU sin probar."
+    },
+    {
+      "id": "t2-puno",
+      "fase": "f2",
+      "titulo": "09 Puno de noche: la ciudad se enciende (primera muestra con el skill v1)",
+      "entregable": "Clip de 5 s con sonido: pase de imagen y coreografía por papeles; informe",
+      "estado": "hecho",
+      "depende_de": [
+        "f0-skill-canal"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-05",
+        "fin": "2026-11-05"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/laboratorio/muestras/09-puno-noche/INFORME.md",
+        "historia/laboratorio/resultados/09-puno-noche/final-caliente.json",
+        "historia/laboratorio/resultados/09-puno-noche/hoja.jpg"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "2026-11-05 (tiempo de sesión no registrado)",
+        "render_s": 59.9,
+        "maquina": "contenedor"
+      },
+      "nota": "Pedida por Gerson («probemos otra cosa con los estilos nuevos»); eligió el tema y que el agente propusiera. Borrador sin aprobar: composición, no el Puno real."
+    },
+    {
+      "id": "t2-inkscape",
+      "fase": "f2",
+      "titulo": "10 Inkscape por MCP: balsa de totora dibujada por MCP y animada en Remotion",
+      "entregable": "MCP de Inkscape probado de punta a punta; clip de 5 s con sonido; informe con límites del MCP",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-07",
+        "fin": "2026-11-07"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/laboratorio/muestras/10-balsa-inkscape/INFORME.md",
+        "historia/laboratorio/resultados/10-balsa-inkscape/final-caliente.json",
+        "historia/laboratorio/resultados/10-balsa-inkscape/vista-mcp.jpg",
+        "docs/HERRAMIENTAS.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "2026-11-07 (tiempo de sesión no registrado)",
+        "render_s": 10.1,
+        "maquina": "contenedor"
+      },
+      "nota": "Pedida por Gerson tras la investigación de MCP. Dibujo por MCP 3,7 s (21 llamadas). Borrador sin aprobar: balsa y boga genéricas, sin fuente. En la laptop de Gerson, sin probar. Gerson (2026-11-10): Inkscape se reemplaza por VectorCraft."
+    },
+    {
+      "id": "t2-titulo",
+      "fase": "f2",
+      "titulo": "11 Título animado sin After Effects (Inkscape por MCP + Remotion)",
+      "entregable": "Título del 0·1 dibujado letra por letra (trim paths), tinta, ficha y subrayado del corrector, con sonido; informe",
+      "estado": "hecho",
+      "depende_de": [
+        "t2-inkscape"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-07",
+        "fin": "2026-11-07"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/laboratorio/muestras/11-titulo-inkscape/INFORME.md",
+        "historia/laboratorio/resultados/11-titulo-inkscape/final-caliente.json",
+        "historia/laboratorio/resultados/11-titulo-inkscape/hoja.jpg"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "2026-11-07 (tiempo de sesión no registrado)",
+        "render_s": 10.5,
+        "maquina": "contenedor"
+      },
+      "nota": "Pedida por Gerson como prueba frente a comprar After Effects. Borrador sin aprobar. Falta lo que AE sí tiene: una línea de tiempo para ajustar a mano. Gerson (2026-11-10): Inkscape se reemplaza por VectorCraft."
+    },
+    {
+      "id": "t2-studio",
+      "fase": "f2",
+      "titulo": "12 Edición visual del Studio: ajustar tiempos y posiciones sin tocar código",
+      "entregable": "Pieza editable en Remotion Studio; ediciones probadas que se escriben en el código; regla de curvas = pesos; informe con alternativas",
+      "estado": "hecho",
+      "depende_de": [
+        "t2-titulo"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-07",
+        "fin": "2026-11-07"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/laboratorio/muestras/12-titulo-editable/INFORME.md",
+        "historia/laboratorio/resultados/12-titulo-editable/edicion-1-clave.diff",
+        "historia/laboratorio/resultados/12-titulo-editable/edicion-2-lienzo.diff",
+        "historia/scripts/reglas.ts"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "2026-11-07 (tiempo de sesión no registrado)",
+        "render_s": 11.7,
+        "maquina": "contenedor"
+      },
+      "nota": "Gerson pidió investigar un «After Effects propio». Decidido el 2026-11-10: el Studio editable se usa para el catálogo; los episodios son datos en escenas.json (CLAUDE.md §15). Aprobada para usar por Gerson (2026-11-10)."
+    },
+    {
+      "id": "t2-efectos",
+      "fase": "f2",
+      "titulo": "13 Efectos tipo After Effects con @remotion/effects",
+      "entregable": "Clip con desenfoque de foco, LUT, resplandor, desenfoque de zoom y pasar página; costo por efecto; informe",
+      "estado": "hecho",
+      "depende_de": [
+        "t2-inkscape"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-07",
+        "fin": "2026-11-07"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/laboratorio/muestras/13-efectos/INFORME.md",
+        "historia/laboratorio/resultados/13-efectos/final-caliente.json",
+        "historia/laboratorio/resultados/13-efectos/hoja.jpg"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": "2026-11-07 (tiempo de sesión no registrado)",
+        "render_s": 55.2,
+        "maquina": "contenedor"
+      },
+      "nota": "Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor. Gerson (2026-11-10): no hace falta probarlos en la laptop. Aprobada para usar por Gerson (2026-11-10)."
     },
     {
       "id": "t2-qgis",
