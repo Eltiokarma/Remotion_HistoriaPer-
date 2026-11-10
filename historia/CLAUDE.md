@@ -371,6 +371,10 @@ exactamente qué campo está mal.
 - Una escena: `npx remotion render v000-quiroz-s04 out/s04.mp4`.
 - Final: `npx remotion render v000-quiroz out/000-quiroz.mp4`.
 - Antes de cada render final: `npm run validar -- NNN-slug --final` sin errores.
+- En GitHub, sin ocupar la laptop: Actions → **render** → «Run workflow» (video, escena opcional,
+  `vista-previa` de ~50 MB a 720p o `final` a 1080p). El MP4 queda como artefacto 14 días
+  (`.github/workflows/render.yml`). La voz definitiva no está en git (`voz/` en `.gitignore`):
+  el `final` la exige y hoy se frena hasta decidir dónde vive.
 
 ## 13. Checklist antes de dar un video por terminado
 

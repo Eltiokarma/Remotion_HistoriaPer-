@@ -1,0 +1,81 @@
+# Render de un episodio (o de una escena) a pedido, en GitHub y no en la laptop ni en la sesión.
+# Se lanza desde la pestaña Actions → «render» → «Run workflow», eligiendo video, escena y calidad.
+# El MP4 queda como artefacto para descargar (14 días).
+#
+#   vista-previa → 720p de ~50 MB (presupuesto de APRENDIZAJES_PRODUCCION.md §5), para revisar
+#   final        → 1080p, H.264 CRF 18, audio AAC 320k; antes corre `npm run validar -- <video> --final`,
+#                  que exige la voz definitiva en public/videos/<video>/voz/
+#
+# Ojo con la voz: public/videos/*/voz/ está en .gitignore. Hoy el render final sale con la voz
+# provisional (y la validación final lo frena). Cuando haya voz definitiva hay que decidir dónde vive
+# para que la CI la vea (en git o como archivo descargable).
+name: render
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: 'Video (carpeta de historia/videos), p. ej. 001-el-hombre'
+        required: true
+        default: '001-el-hombre'
+      escena:
+        description: 'Una sola escena (p. ej. s05); vacío = el episodio completo'
+        required: false
+        default: ''
+      calidad:
+        description: 'vista-previa (720p, ~50 MB) o final (1080p)'
+        required: true
+        type: choice
+        options: [vista-previa, final]
+        default: vista-previa
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    defaults:
+      run:
+        working-directory: historia
+    env:
+      VIDEO: ${{ inputs.video }}
+      ESCENA: ${{ inputs.escena }}
+      CALIDAD: ${{ inputs.calidad }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: historia/package-lock.json
+      - name: ffmpeg (para la vista previa a 720p)
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: npm ci
+      - run: npm run typecheck
+      - name: Validación
+        run: |
+          if [ "$CALIDAD" = final ]; then npm run validar -- "$VIDEO" --final; else npm run validar -- "$VIDEO"; fi
+      - name: Máquina
+        run: nproc; free -g; lscpu | grep 'Model name'
+      - name: Render
+        run: |
+          set -euo pipefail
+          comp="v$VIDEO${ESCENA:+-$ESCENA}"
+          nombre="$VIDEO${ESCENA:+-$ESCENA}-$CALIDAD"
+          mkdir -p out
+          inicio=$(date +%s)
+          if [ "$CALIDAD" = final ]; then
+            npx remotion render src/index.ts "$comp" "out/$nombre.mp4" --crf=18 --audio-bitrate=320k
+          else
+            npx remotion render src/index.ts "$comp" out/intermedio.mp4 --crf=16 --audio-bitrate=192k
+            # ~50 MB en total (bytes·8 / segundos, menos el audio de 96k y un margen), con tope de 2500 kb/s:
+            # una escena corta no necesita llenar los 50 MB
+            dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/intermedio.mp4)
+            kbps=$(python3 -c "print(min(2500, max(300, int(50e6*8/float('$dur')/1000*0.97) - 96)))")
+            ffmpeg -y -v error -i out/intermedio.mp4 -vf scale=1280:720:flags=lanczos -c:v libx264 -preset slow -b:v ${kbps}k -pass 1 -passlogfile out/p2 -an -f mp4 /dev/null
+            ffmpeg -y -v error -i out/intermedio.mp4 -vf scale=1280:720:flags=lanczos -c:v libx264 -preset slow -b:v ${kbps}k -pass 2 -passlogfile out/p2 -c:a aac -b:a 96k -movflags +faststart "out/$nombre.mp4"
+            rm out/intermedio.mp4
+          fi
+          echo "Render: $(( $(date +%s) - inicio )) s de pared · $(du -h "out/$nombre.mp4" | cut -f1)" | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: render-${{ inputs.video }}${{ inputs.escena && format('-{0}', inputs.escena) || '' }}-${{ inputs.calidad }}
+          retention-days: 14
+          path: historia/out/*.mp4
