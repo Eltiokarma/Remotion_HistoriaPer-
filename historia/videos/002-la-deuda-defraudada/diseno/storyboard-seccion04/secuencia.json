@@ -20,59 +20,6 @@
     "factorEncuadreARemotion": 1.7142857142857142
   },
   "proxima_seccion": 5,
-  "escenas_largas": [
-    {
-      "v": [
-        1,
-        3
-      ],
-      "nombre": "Escala general y circulación",
-      "pasos": [
-        "Salir expresamente del caso Novoa y mostrar la deuda reconocida.",
-        "Mostrar un vale genérico y su traspaso; los dos estados conservan el mismo papel.",
-        "Conservar vale y bono externo juntos durante el canje, anterior a la investigación de 1855."
-      ]
-    },
-    {
-      "v": [
-        4,
-        8
-      ],
-      "nombre": "De las cartas a la junta",
-      "pasos": [
-        "Recuperar a Elías y presentar por separado las fechas de sus dos cartas.",
-        "Volver a su gestión anterior y mantener presentes sus intereses.",
-        "El Estado permanece mientras avanza la cronología hasta 1855.",
-        "La junta abre otro conjunto de expedientes; revisar antecedentes, aprobación y emisión."
-      ]
-    },
-    {
-      "v": [
-        9,
-        12
-      ],
-      "nombre": "Hallazgos y suspensión",
-      "pasos": [
-        "Presentar 141 expedientes con la calificación irregulares o ilegales antes de 12,2 millones de pesos.",
-        "Contar aparte los cuatro expedientes robados, sin asignarles otro monto.",
-        "Distinguir servicio y conversión en la suspensión del 29 de diciembre de 1856.",
-        "Leer las posiciones de tenedores e investigadores como argumentos resumidos."
-      ]
-    },
-    {
-      "v": [
-        13,
-        16
-      ],
-      "nombre": "Restauración y fuentes",
-      "pasos": [
-        "Seguir las peticiones hacia las autoridades sin inventar pagos o culpables individuales.",
-        "Revelar la fecha del 11 de marzo de 1857 antes de reanudar el título.",
-        "Conservar a la vista el examen de origen al explicar la rehabilitación financiera.",
-        "Cambiar expresamente de época para pasar de los informes al historiador."
-      ]
-    }
-  ],
   "vinyetas": [
     {
       "id": "s04-v01",
@@ -604,5 +551,71 @@
         }
       ]
     }
-  ]
+  ],
+  "recorridos_internos": [
+    {
+      "v": [
+        1,
+        3
+      ],
+      "nombre": "Escala general y circulación",
+      "pasos": [
+        "Salir expresamente del caso Novoa y mostrar la deuda reconocida.",
+        "Mostrar un vale genérico y su traspaso; los dos estados conservan el mismo papel.",
+        "Conservar vale y bono externo juntos durante el canje, anterior a la investigación de 1855."
+      ]
+    },
+    {
+      "v": [
+        4,
+        8
+      ],
+      "nombre": "De las cartas a la junta",
+      "pasos": [
+        "Recuperar a Elías y presentar por separado las fechas de sus dos cartas.",
+        "Volver a su gestión anterior y mantener presentes sus intereses.",
+        "El Estado permanece mientras avanza la cronología hasta 1855.",
+        "La junta abre otro conjunto de expedientes; revisar antecedentes, aprobación y emisión."
+      ]
+    },
+    {
+      "v": [
+        9,
+        12
+      ],
+      "nombre": "Hallazgos y suspensión",
+      "pasos": [
+        "Presentar 141 expedientes con la calificación irregulares o ilegales antes de 12,2 millones de pesos.",
+        "Contar aparte los cuatro expedientes robados, sin asignarles otro monto.",
+        "Distinguir servicio y conversión en la suspensión del 29 de diciembre de 1856.",
+        "Leer las posiciones de tenedores e investigadores como argumentos resumidos."
+      ]
+    },
+    {
+      "v": [
+        13,
+        16
+      ],
+      "nombre": "Restauración y fuentes",
+      "pasos": [
+        "Seguir las peticiones hacia las autoridades sin inventar pagos o culpables individuales.",
+        "Revelar la fecha del 11 de marzo de 1857 antes de reanudar el título.",
+        "Conservar a la vista el examen de origen al explicar la rehabilitación financiera.",
+        "Cambiar expresamente de época para pasar de los informes al historiador."
+      ]
+    }
+  ],
+  "escena_larga": {
+    "numero": 4,
+    "titulo": "La investigación y los vales que siguen circulando",
+    "desarrollo_continuidad": "../escenas-largas/escena-04/secuencia.json",
+    "momentos": [
+      "4A",
+      "4B",
+      "4C",
+      "4D",
+      "4E"
+    ],
+    "nota": "Esta sección corresponde a una escena larga. Sus bloques anteriores son recorridos internos; no escenas largas adicionales."
+  }
 }

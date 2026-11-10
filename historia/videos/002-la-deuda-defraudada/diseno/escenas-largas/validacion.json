@@ -1,0 +1,56 @@
+{
+  "fecha": "2026-11-10",
+  "herramienta": "VectorCraft mediante MCP",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "escenas": [
+    {
+      "escena": 1,
+      "momentos": 4,
+      "laminas": 7,
+      "estados": 21
+    },
+    {
+      "escena": 2,
+      "momentos": 6,
+      "laminas": 6,
+      "estados": 19
+    },
+    {
+      "escena": 3,
+      "momentos": 6,
+      "laminas": 6,
+      "estados": 18
+    },
+    {
+      "escena": 4,
+      "momentos": 5,
+      "laminas": 8,
+      "estados": 24
+    },
+    {
+      "escena": 5,
+      "momentos": 3,
+      "laminas": 5,
+      "estados": 15
+    }
+  ],
+  "momentos_textuales_cubiertos": 24,
+  "laminas_revisadas": 32,
+  "estados_dibujados": 97,
+  "encuadres_distintos": 90,
+  "svg_sin_raster_ni_texto_vivo": 131,
+  "nativos_sin_imagenes_incrustadas": 17,
+  "paginas_pdf_de_escenas": 32,
+  "muestras_png": 5,
+  "resumen_png": true,
+  "asignaciones_a_capas_comprobadas": 97,
+  "piezas_canonicas_sin_cambios": 135,
+  "graficos_fuente_conservados": 74,
+  "enlaces": "Correctos",
+  "archivos_con_hash_comprobado": 654,
+  "revision_visual": "Las 32 láminas y el resumen se inspeccionaron en VectorCraft; se revisaron de cerca carga, traspasos, superposiciones, cifras y el enlace 3F a 4A.",
+  "limite": "La revisión estática no comprueba interpolación, velocidad, apoyos ni contactos entre fotogramas.",
+  "aprobacion_gerson": "pendiente",
+  "animacion_remotion_verificada": false,
+  "video_generado": false
+}

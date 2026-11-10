@@ -20,47 +20,6 @@
     "factorEncuadreARemotion": 1.7142857142857142
   },
   "proxima_seccion": "Episodio 003: fuentes, decisiones y límites; resultados generales en 004",
-  "escenas_largas": [
-    {
-      "v": [
-        1,
-        4
-      ],
-      "nombre": "Regreso al conjunto",
-      "pasos": [
-        "Recuperar Chincha detallada y el Estado, sin repetir la extracción.",
-        "Mantener visible la finalidad declarada del crédito público.",
-        "Contraponer fichas de grupos excluidos y títulos acumulados; la ilustración no cuenta personas ni porcentajes.",
-        "Recorrer una vez guano, Estado, reclamo, vale e investigación y sostener el conjunto."
-      ]
-    },
-    {
-      "v": [
-        5,
-        8
-      ],
-      "nombre": "Cambio de época y contraste",
-      "pasos": [
-        "Rotular muchos años después y recuperar libro, fichero y pruebas.",
-        "Desplegar tres familias de fuentes y dirigir el foco por turnos.",
-        "Volver solo a las dos cantidades de Novoa y su grado de certeza.",
-        "Abrir hacia el apéndice sin convertir montos de vales en costos de corrupción."
-      ]
-    },
-    {
-      "v": [
-        9,
-        12
-      ],
-      "nombre": "Cautelas y siguiente episodio",
-      "pasos": [
-        "Sostener aproximado, provisional y sujeto a revisión.",
-        "Contrastar huellas sin inventar una fuente estadística completa.",
-        "Abrir la pregunta del episodio 003 sin resolverla en este cierre.",
-        "Iluminar 003 en el índice; mantener los resultados generales para 004."
-      ]
-    }
-  ],
   "vinyetas": [
     {
       "id": "s05-v01",
@@ -409,5 +368,57 @@
         }
       ]
     }
-  ]
+  ],
+  "recorridos_internos": [
+    {
+      "v": [
+        1,
+        4
+      ],
+      "nombre": "Regreso al conjunto",
+      "pasos": [
+        "Recuperar Chincha detallada y el Estado, sin repetir la extracción.",
+        "Mantener visible la finalidad declarada del crédito público.",
+        "Contraponer fichas de grupos excluidos y títulos acumulados; la ilustración no cuenta personas ni porcentajes.",
+        "Recorrer una vez guano, Estado, reclamo, vale e investigación y sostener el conjunto."
+      ]
+    },
+    {
+      "v": [
+        5,
+        8
+      ],
+      "nombre": "Cambio de época y contraste",
+      "pasos": [
+        "Rotular muchos años después y recuperar libro, fichero y pruebas.",
+        "Desplegar tres familias de fuentes y dirigir el foco por turnos.",
+        "Volver solo a las dos cantidades de Novoa y su grado de certeza.",
+        "Abrir hacia el apéndice sin convertir montos de vales en costos de corrupción."
+      ]
+    },
+    {
+      "v": [
+        9,
+        12
+      ],
+      "nombre": "Cautelas y siguiente episodio",
+      "pasos": [
+        "Sostener aproximado, provisional y sujeto a revisión.",
+        "Contrastar huellas sin inventar una fuente estadística completa.",
+        "Abrir la pregunta del episodio 003 sin resolverla en este cierre.",
+        "Iluminar 003 en el índice; mantener los resultados generales para 004."
+      ]
+    }
+  ],
+  "escena_larga": {
+    "numero": 5,
+    "titulo": "Del expediente al método de Quiroz",
+    "desarrollo_continuidad": "../escenas-largas/escena-05/secuencia.json",
+    "momentos": [
+      "5A",
+      "5B",
+      "5C"
+    ],
+    "nota": "Esta sección corresponde a una escena larga. Sus bloques anteriores son recorridos internos; no escenas largas adicionales."
+  }
 }

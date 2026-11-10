@@ -548,5 +548,17 @@
     }
   ],
   "revision_personajes": "../../personajes-1850/README.md",
-  "direccion_personajes": "../../../revision_personajes.md"
+  "direccion_personajes": "../../../revision_personajes.md",
+  "escena_larga": {
+    "numero": 1,
+    "titulo": "Las islas y el país",
+    "desarrollo_continuidad": "../../escenas-largas/escena-01/secuencia.json",
+    "momentos": [
+      "1A",
+      "1B",
+      "1C",
+      "1D"
+    ],
+    "nota": "Esta sección corresponde a una escena larga. Sus bloques anteriores son recorridos internos; no escenas largas adicionales."
+  }
 }

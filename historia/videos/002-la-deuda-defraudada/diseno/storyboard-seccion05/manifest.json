@@ -47,13 +47,13 @@
     },
     {
       "archivo": "ANIMACION.md",
-      "bytes": 3909,
-      "sha256": "30bc63035841de9f9c6b56301eb4ce4ed11724c31bb618d3875d3926d5672e86"
+      "bytes": 4301,
+      "sha256": "fc4990a1f5640b1d4c8b7912d5f40ba4f913c485b6ff6ecb599d6c886bb03b78"
     },
     {
       "archivo": "README.md",
-      "bytes": 13982,
-      "sha256": "c8d827d8347c92949305bb2bbcfebc85d94caa7dc9a6131608dcaa5198fda412"
+      "bytes": 14456,
+      "sha256": "c3442f5ea1674c705480481d3d04124194f5a9152ca0bfb8510ad7dd3bc21455"
     },
     {
       "archivo": "recursos/chincha-retorno.png",
@@ -72,8 +72,8 @@
     },
     {
       "archivo": "secuencia.json",
-      "bytes": 13471,
-      "sha256": "cb0e480894c7457148b83631afc003eb41a967d7e5443ac49ddb4d1f59e9249b"
+      "bytes": 13846,
+      "sha256": "a666425a654c427d391ec8d7307e5cb73747c22a76e103174e6ca7d5e689eb2b"
     },
     {
       "archivo": "storyboard-02-seccion05-lamina1.png",
@@ -130,5 +130,7 @@
     "laminas": 3,
     "vinyetas": 12
   },
-  "video_generado": false
+  "video_generado": false,
+  "fecha_revision_continuidad": "2026-11-10",
+  "desarrollo_continuidad": "../escenas-largas/escena-05/secuencia.json"
 }

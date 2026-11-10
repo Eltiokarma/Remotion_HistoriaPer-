@@ -45,3 +45,7 @@ Los cinco bloques de secuencia.json son unidades de explicación; las viñetas n
 Las dieciocho capas se exportaron con el MCP de VectorCraft. Tienen el mismo lienzo y ningún elemento image rasterizado. Se recompusieron en otro documento de VectorCraft: la comparación estática coincide visualmente y difiere en 3195 de 2073600 píxeles (0.1541 %); 2007 difieren más de 3/255. No es igualdad de píxeles ni una prueba de movimiento.
 
 Antes de cualquier render autorizado, comprobar en Studio la entrada, el foco, el acercamiento al destino y la salida al libro. Comparar la composición completa con chincha-gran-bretana.png y conservar las dieciocho capas. Comprobar también el mismo papel al entrar en la sección 2 y que el futuro vale no se haya anticipado. No se hizo una integración ni se generó un video en esta revisión.
+
+## Versión de continuidad completa
+
+Usar el [desarrollo de la escena 1](../../escenas-largas/escena-01/secuencia.json) y la [dirección común](../../escenas-largas/ANIMACION.md). Esta sección es una de las cinco escenas largas; los grupos anteriores son recorridos internos. La continuidad nueva aporta los estados dibujados y sus enlaces. Las fuentes y recursos de este original se conservan.

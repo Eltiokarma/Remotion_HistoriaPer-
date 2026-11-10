@@ -75,3 +75,9 @@ Revisión del 10 de noviembre de 2026 en VectorCraft mediante MCP. Se actualizar
 [ANIMACION.md](ANIMACION.md) y [secuencia.json](secuencia.json) reúnen escenas largas, encuadres, recursos y propuestas de movimiento. La voz y los datos históricos mantienen el alcance del cotejo anterior. Los participantes con nombre son representaciones del relato, sin retratos, diálogos o emociones atribuidos como hechos.
 
 Se revisaron estáticamente las láminas en VectorCraft. Pendientes de aprobación visual de Gerson, locución, tiempos, integración y comprobación del movimiento en Remotion. No se generó video.
+
+## Desarrollo de la escena larga
+
+La continuidad de esta sección se desarrolla en [El expediente de Novoa](../escenas-largas/escena-03/README.md), con estados intermedios, acciones y pausas de todos sus momentos. Este original se conserva como fuente; las hojas nuevas son el desarrollo de revisión. Los bloques previos se registran como recorridos internos de una sola escena larga.
+
+Borrador pendiente de Gerson; no hay animación validada ni video nuevo.

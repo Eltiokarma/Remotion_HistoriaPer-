@@ -44,3 +44,7 @@ En acercamientos, el antebrazo y la mano giran juntos -90 grados CSS una sola ve
 Mantener quieta la cámara durante el gesto y sostener el personaje cuando el foco recorre los campos. Dar lectura a rótulos, cifras, unidades y cautelas. Conservar degradados, textura de papel, sombras, luz y señales del video al integrar los recursos. La pestaña roja sigue al reclamo; el vale conserva su marco propio. Cada transición conserva un objeto conocido y deja entender el resultado del paso anterior.
 
 En Remotion, los cambios dependen de useCurrentFrame. tramo recibe segundos; convertir frame/fps antes de llamarlo y mantener la jerarquía de pivotes del kit. Revisar el montaje y las poses con fotogramas estáticos antes de decidir un render de video. Esta entrega no integra código ni valida una animación.
+
+## Versión de continuidad completa
+
+Usar el [desarrollo de la escena 3](../escenas-largas/escena-03/secuencia.json) y la [dirección común](../escenas-largas/ANIMACION.md). Esta sección es una de las cinco escenas largas; los grupos anteriores son recorridos internos. La continuidad nueva aporta los estados dibujados y sus enlaces. Las fuentes y recursos de este original se conservan.

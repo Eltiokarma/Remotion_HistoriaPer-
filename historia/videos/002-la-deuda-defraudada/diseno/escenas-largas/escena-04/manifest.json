@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-11-10",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "escena": 4,
+  "laminas": 8,
+  "estados": 24,
+  "video_generado": false,
+  "archivos": [
+    {
+      "archivo": "escena-04.pdf",
+      "bytes": 8561853,
+      "sha256": "f5cbec62433081047eaad4dbdab75a0492daa340b44111b3e5137bba14eec8a1"
+    },
+    {
+      "archivo": "escena-04.vectorcraft",
+      "bytes": 2239208,
+      "sha256": "6438cf0e06cf9a5ec3594f67272c2d0094ab5b9e42e883bbf206e6da8812d37e"
+    },
+    {
+      "archivo": "lamina01.svg",
+      "bytes": 1042191,
+      "sha256": "8664f5b816541d29e738f8e5dbfab16d1742abc56be07e4336058684d13368bc"
+    },
+    {
+      "archivo": "lamina02.svg",
+      "bytes": 1100295,
+      "sha256": "0cd4edffcb39939de5cc2372dbe7f5c95d683b90444dad817dcad7d812c95bd1"
+    },
+    {
+      "archivo": "lamina03.svg",
+      "bytes": 1389380,
+      "sha256": "6d76ee7e863656c333a51580f632e2676dce434783354d203e91c2998ae96225"
+    },
+    {
+      "archivo": "lamina04.svg",
+      "bytes": 1301799,
+      "sha256": "cecf2d96221e414b64083040ac34202f9bd5b36d0da14b60baabdffa8d2a6b3c"
+    },
+    {
+      "archivo": "lamina05.svg",
+      "bytes": 1557999,
+      "sha256": "9e8278415ff8d9e890e0c9eb16d157f1a4b460a7ebf7d8c2c6574eb49fdd1ced"
+    },
+    {
+      "archivo": "lamina06.svg",
+      "bytes": 1063612,
+      "sha256": "3623a6ab6321d968c35de9d9f9004576d460f82abb39529c50efe5a99834347e"
+    },
+    {
+      "archivo": "lamina07.svg",
+      "bytes": 1657856,
+      "sha256": "cde086ebb74078bfc22bfe26a710270e3eaa5807b8dac0bfcff754ba15bb24b9"
+    },
+    {
+      "archivo": "lamina08.svg",
+      "bytes": 1437633,
+      "sha256": "c06debf602e1be3f242e7535abf307a9146723df4e881d73afb21acd31c5c359"
+    },
+    {
+      "archivo": "muestra.png",
+      "bytes": 174876,
+      "sha256": "5ded3562131f3089e67fc2a6c1174455dc36a694271a1c5b9069b3687af4a711"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 1945,
+      "sha256": "30b9e08aec3d51183cca47a38ddf7a44f3e0eb342963a01d96d049378feab5df"
+    },
+    {
+      "archivo": "secuencia.json",
+      "bytes": 20125,
+      "sha256": "e6ed8b35b1f0308961a05ee0c947f1cc457391437488bf60c125d67978d5bea5"
+    }
+  ]
+}

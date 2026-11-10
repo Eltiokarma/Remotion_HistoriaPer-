@@ -7,9 +7,229 @@
   "partes": 4,
   "archivos": [
     {
-      "archivo": "storyboard-02-seccion01.vectorcraft",
-      "bytes": 212075,
-      "sha256": "142548da26123bcb33323d3a70fa37795966128b747f109be7d36af689e8d312"
+      "archivo": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 1556,
+      "sha256": "6b00dc64281943e5e4c5d19fccdf76a6a341439ca177fb2c25aee236b3995885"
+    },
+    {
+      "archivo": "revision-detallada/.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "archivo": "revision-detallada/ANIMACION.md",
+      "bytes": 6010,
+      "sha256": "6748b20747bcee251d567072d9b5664ed6cb8882d2ebc1451cc7b9dd1ba00136"
+    },
+    {
+      "archivo": "revision-detallada/manifest.json",
+      "bytes": 8945,
+      "sha256": "a9d10cdbfaf6112991dcf82f5ff22cebc71de2063e0422cc8e1fa7ae130ed96e"
+    },
+    {
+      "archivo": "revision-detallada/README.md",
+      "bytes": 11363,
+      "sha256": "7f00faaa03032a3ad6b45b60368c93b42ddc37864cb24ac0744711ef8d4d8a09"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/animacion.json",
+      "bytes": 12171,
+      "sha256": "1ef56864d90e26b8a9c5933fd611299ae3312cf457df54d09be61665fbe64681"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/00_fondo.svg",
+      "bytes": 1104,
+      "sha256": "2cad340d4599ebd1b3a7425c93f8dfe016dca433160d49a83456dbe844ba69fa"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/01_titulos.svg",
+      "bytes": 113623,
+      "sha256": "6693fe1e2a2ef9723df6935c17084c497e4de463e4a77f2013026888d547e20c"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/02_mar_chincha.svg",
+      "bytes": 2456,
+      "sha256": "b440d35cf32351b9df9ecfd1b0d50ec98ba1e54ec9873388ef3e21fe954fee0b"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/03_roca_chincha.svg",
+      "bytes": 31244,
+      "sha256": "d19759af71740681225beb81a71a0af7727e08bc903a2599dc2f572542b3fd1d"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/04_aves_chincha.svg",
+      "bytes": 6101,
+      "sha256": "ea50f4462e93efdeb5863b4e8c28042221e3dc473cd0d5c772a0e9b84daa281d"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/05_muelle.svg",
+      "bytes": 2547,
+      "sha256": "432156c1ee17c42bd904dfd8e1d62b0b9a2a8d6dc0f0925cafbdca02d39e321c"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/06_sacos_origen.svg",
+      "bytes": 14949,
+      "sha256": "4b727066d130ca7fd74dcc88ce922215cfb4bd97d96eb992a2b899ad49f81121"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/07_barco.svg",
+      "bytes": 15695,
+      "sha256": "3d22f58d338c4d0e4d48be5d538d62e6b4ff80883078af8b52c152b59908ee60"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/08_mapa_gran_bretana.svg",
+      "bytes": 28638,
+      "sha256": "f8ece30f566d6fbf8c8dcfecc8b836771c36fd8b130a465bedff531b08fd1db3"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/09_campos_suelo.svg",
+      "bytes": 2449,
+      "sha256": "ee38f1d9ad1b49a39b3650d4c104f12d5a0268cec84e66d47e3e540aea2c1b25"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/10_almacen.svg",
+      "bytes": 6822,
+      "sha256": "49dd94703488206e5ab9af40bcf9718f4158c18d82e41727c8c7e739cd143b2b"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/11_cultivos.svg",
+      "bytes": 14183,
+      "sha256": "48ec2511ce0b5ccf0396a401715e18222052cdcc2271f9f3b0c8ff5b4a9c63f7"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/12_sacos_destino.svg",
+      "bytes": 10655,
+      "sha256": "b33b35f04fd551fb2ff7e1e14e4a0ec327263bb89684a8dbd5496ab2449f510a"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/13_flujo_comercial.svg",
+      "bytes": 585,
+      "sha256": "7edf23a13f5184a6aca5b45a7c71df7c1ac10ab83ab6a7d615614b09a78d7856"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/14_carga_testigo.svg",
+      "bytes": 5255,
+      "sha256": "27d9fc95a587f54a80b0df63dfbfaece0e3ec6b66b0a20e8740d066281a57a06"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/15_rotulo_origen.svg",
+      "bytes": 50885,
+      "sha256": "591125d1ddf92409f9cc8ecc82b7e601b6986181e69708a1085add440ff1e6a8"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/16_rotulo_destino.svg",
+      "bytes": 58470,
+      "sha256": "32da16f2dcc5ed775d06771eaf15ce9469fef1c9b33a2b2a01fd59624d70e850"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/capas/17_rotulo_producto.svg",
+      "bytes": 12995,
+      "sha256": "94d6d742ca895efd085431be733f6a6ef2424e98cfca0e3af6ec17609e9b49eb"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/chincha-gran-bretana.png",
+      "bytes": 289130,
+      "sha256": "c625bb28599c0e55ccde79ce53025a3a97b45fb66dd1054e10d86dd3457c6532"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/chincha-gran-bretana.svg",
+      "bytes": 375024,
+      "sha256": "8cccc18e776149cc1a7e58e24ffed772034ce6d3ef3d83a1c5ff8c7044d6559f"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/chincha-gran-bretana.vectorcraft",
+      "bytes": 77100,
+      "sha256": "c3316b1394939da80b4fa0976b77a51f3fd8cb5684ccd9965e8cd88f1c0fd6a0"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/destino-detalle.svg",
+      "bytes": 112078,
+      "sha256": "1ca8809421391ca551bc19c393b490847ba0af5af85b376d1ac9cbc2ff5c907b"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/geografia-referencia.json",
+      "bytes": 7319,
+      "sha256": "8385d5c3380235278f75034ab8ff0b8e3564e33131b1360cf6f7e9a2c1243db5"
+    },
+    {
+      "archivo": "revision-detallada/recursos/chincha-gran-bretana/origen-detalle.svg",
+      "bytes": 121464,
+      "sha256": "3eba8add659d5d5d18b2b60d75ebb82acb51d5f08e79cfabf347e0f5f13ab675"
+    },
+    {
+      "archivo": "revision-detallada/recursos/reclamo-editorial.svg",
+      "bytes": 92355,
+      "sha256": "b61ab463ff3e8913731972fe465e9c154d27133dcea09a88304f40097202ad77"
+    },
+    {
+      "archivo": "revision-detallada/secuencia.json",
+      "bytes": 18951,
+      "sha256": "947c09395f04fc13c92c26a8533727ffa3eacaf030eb7881847ce5954e7d2c24"
+    },
+    {
+      "archivo": "revision-detallada/storyboard-02-seccion01-detallado-lamina1.png",
+      "bytes": 406577,
+      "sha256": "a0cb7f58b02b42a7a564781093df49354a0a294e26b0946e790c470d5c52cfd5"
+    },
+    {
+      "archivo": "revision-detallada/storyboard-02-seccion01-detallado-lamina1.svg",
+      "bytes": 1925687,
+      "sha256": "322eb296fb5155a3125db4caa73d6cbe44d7cd342cde98f90e81eaf9f2402777"
+    },
+    {
+      "archivo": "revision-detallada/storyboard-02-seccion01-detallado-lamina2.png",
+      "bytes": 453117,
+      "sha256": "408eec6dbca4d96cbf33eb2c9af9f5bda3c6c0b8fc4a9a222e5751619ba09ff0"
+    },
+    {
+      "archivo": "revision-detallada/storyboard-02-seccion01-detallado-lamina2.svg",
+      "bytes": 1765217,
+      "sha256": "5527a9a41d19aaf403646f9b0ca53a69955bc504a14e0f4e95c7a424140b6bff"
+    },
+    {
+      "archivo": "revision-detallada/storyboard-02-seccion01-detallado-lamina3.png",
+      "bytes": 488811,
+      "sha256": "7e74b32666dbdd1fb5621a835f752f7b553ee12452007813cf941ee14ff84cda"
+    },
+    {
+      "archivo": "revision-detallada/storyboard-02-seccion01-detallado-lamina3.svg",
+      "bytes": 2129475,
+      "sha256": "1242c10544c2e8a937ff39b847f882ab6ce9dd27f50a2ecc610d8d7c833c1f13"
+    },
+    {
+      "archivo": "revision-detallada/storyboard-02-seccion01-detallado-lamina4.png",
+      "bytes": 375836,
+      "sha256": "00d7aff3b22caf25d0eaf27df2f4d7401fc1aa8019286a9c72cb0235ca540cb3"
+    },
+    {
+      "archivo": "revision-detallada/storyboard-02-seccion01-detallado-lamina4.svg",
+      "bytes": 2140801,
+      "sha256": "23da8ca63eba033a6952011a152be0ef91657a384cbeb4573cfa73d6076ad35a"
+    },
+    {
+      "archivo": "revision-detallada/storyboard-02-seccion01-detallado.pdf",
+      "bytes": 4492627,
+      "sha256": "0b7ff6cecea9dc9b49af4fc723ba9483cbd4b750b1accdda5e9665af44bbcb7f"
+    },
+    {
+      "archivo": "revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+      "bytes": 563505,
+      "sha256": "f61cb830e1e31a2b9a4cf4e1017fdc25ea1b9e2514d75cc82dc3a9edcca03477"
+    },
+    {
+      "archivo": "revision-detallada/validacion.json",
+      "bytes": 746,
+      "sha256": "ca6381c86d8873e03911a6507df38545b4106d42039101f1bcd566ac71f0176b"
+    },
+    {
+      "archivo": "storyboard-02-seccion01.png",
+      "bytes": 677828,
+      "sha256": "168d7f1fb8b8b7a2b0d189a66be0e556526d248da2a04349a654164c38fe095e"
     },
     {
       "archivo": "storyboard-02-seccion01.svg",
@@ -17,13 +237,14 @@
       "sha256": "52f0864289e7d9c9e361a247931429991f749860d41529264b0904c93784ad81"
     },
     {
-      "archivo": "storyboard-02-seccion01.png",
-      "bytes": 677828,
-      "sha256": "168d7f1fb8b8b7a2b0d189a66be0e556526d248da2a04349a654164c38fe095e"
+      "archivo": "storyboard-02-seccion01.vectorcraft",
+      "bytes": 212075,
+      "sha256": "142548da26123bcb33323d3a70fa37795966128b747f109be7d36af689e8d312"
     }
   ],
   "revision": "El director considera insuficiente el detalle del storyboard, especialmente la viñeta 07. Mejorar en la próxima sesión; conservar la versión actual como borrador.",
   "version_actual": "revision-detallada/manifest.json",
   "estado_version_actual": "Borrador detallado pendiente de revisión de Gerson",
-  "revision_actual": "2026-11-10"
+  "revision_actual": "2026-11-10",
+  "fecha_revision_continuidad": "2026-11-10"
 }

@@ -38,13 +38,13 @@
     },
     {
       "archivo": "ANIMACION.md",
-      "bytes": 5612,
-      "sha256": "4a5e5452ad133cdd6bf4b443b49a10967e8a773112ed88e95bb215895ccf6c91"
+      "bytes": 6010,
+      "sha256": "6748b20747bcee251d567072d9b5664ed6cb8882d2ebc1451cc7b9dd1ba00136"
     },
     {
       "archivo": "README.md",
-      "bytes": 10901,
-      "sha256": "e611f6425d7bade3d71d82c6055cdf890b838ae81fa901177052204d64af4a2d"
+      "bytes": 11363,
+      "sha256": "7f00faaa03032a3ad6b45b60368c93b42ddc37864cb24ac0744711ef8d4d8a09"
     },
     {
       "archivo": "recursos/chincha-gran-bretana/animacion.json",
@@ -178,8 +178,8 @@
     },
     {
       "archivo": "secuencia.json",
-      "bytes": 18581,
-      "sha256": "511836c5adb4bae37b0dbd594029c6c3466f8baef5f12014c2aa74481af8070f"
+      "bytes": 18951,
+      "sha256": "947c09395f04fc13c92c26a8533727ffa3eacaf030eb7881847ce5954e7d2c24"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina1.png",
@@ -239,5 +239,7 @@
   ],
   "revision_personajes": "2026-11-10",
   "personajes_kit": "../../personajes-1850/manifest.json",
-  "correccion_anatomia": "2026-11-10"
+  "correccion_anatomia": "2026-11-10",
+  "fecha_revision_continuidad": "2026-11-10",
+  "desarrollo_continuidad": "../../escenas-largas/escena-01/secuencia.json"
 }

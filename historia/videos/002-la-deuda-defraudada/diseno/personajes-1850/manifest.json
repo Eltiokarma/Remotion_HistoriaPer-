@@ -856,6 +856,121 @@
       "sha256": "2001dce614526b092fe5b514725255925dcbcf51d88272af55632da9021a0034"
     },
     {
+      "archivo": "poses-continuidad/busto-comerciante-prepara.png",
+      "bytes": 80044,
+      "sha256": "491d1f825645c362030a2557aa3b61f4abc2734024b04cfbbc6e67b4f53b83ac"
+    },
+    {
+      "archivo": "poses-continuidad/busto-comerciante-prepara.svg",
+      "bytes": 13729,
+      "sha256": "205aded795d424384b4b834b95d4a70480f09a7af1980427eedac8dc28b50abc"
+    },
+    {
+      "archivo": "poses-continuidad/busto-comerciante-prepara.vectorcraft",
+      "bytes": 34897,
+      "sha256": "fb5a2e7c1bbf07a795d3220622a675ba58be2eca41fcaf57f67585224ff62fcb"
+    },
+    {
+      "archivo": "poses-continuidad/busto-funcionario-prepara.png",
+      "bytes": 76986,
+      "sha256": "b3ea7691bd2b5512a37dbf4ee943d2a54ca6394522d4feffcdd63434514a7e6f"
+    },
+    {
+      "archivo": "poses-continuidad/busto-funcionario-prepara.svg",
+      "bytes": 13739,
+      "sha256": "1e01c6d6ca626710ae3929bd8cb93f7ca06bd0bb3b86d268b48219a23dfe3c7b"
+    },
+    {
+      "archivo": "poses-continuidad/busto-funcionario-prepara.vectorcraft",
+      "bytes": 34425,
+      "sha256": "e9f4ba98b87f4a6fabff9599aad85cd33501f31922cf091b9b6b7fedf8a962f3"
+    },
+    {
+      "archivo": "poses-continuidad/busto-funcionario-quieto.png",
+      "bytes": 62304,
+      "sha256": "8b522569f0f037aaf4fa6773b15d5bddd2f0638af8a9b88d8b3d9e66949ca611"
+    },
+    {
+      "archivo": "poses-continuidad/busto-funcionario-quieto.svg",
+      "bytes": 12236,
+      "sha256": "65df36379d6ec6a235e1e0637cc661b2ee06ef24435b209d1c355eb0b825373e"
+    },
+    {
+      "archivo": "poses-continuidad/busto-funcionario-quieto.vectorcraft",
+      "bytes": 29342,
+      "sha256": "8f7df5b543ef928b92b51180e6f57e06c9c1ffd83744ba9b6f637aca18119645"
+    },
+    {
+      "archivo": "poses-continuidad/busto-intermediario-prepara.png",
+      "bytes": 96509,
+      "sha256": "dc35a968aeebc92130e70c6c762cf0b1148b2a168d21c68bdb0e16d224fd191f"
+    },
+    {
+      "archivo": "poses-continuidad/busto-intermediario-prepara.svg",
+      "bytes": 14001,
+      "sha256": "a997359736d64f5ac168960c828811bfd2ba4d2adb8f4db4f2c32bb338203c84"
+    },
+    {
+      "archivo": "poses-continuidad/busto-intermediario-prepara.vectorcraft",
+      "bytes": 38183,
+      "sha256": "ed0be75baf5c492020223b59a6de16c95e7bcbc7e4fc75ed0bd938cf4b55c87a"
+    },
+    {
+      "archivo": "poses-continuidad/busto-intermediario-quieto.png",
+      "bytes": 84086,
+      "sha256": "81d197b146a11a5195d05978f37c27183a422748741481499a8b8d4f94599157"
+    },
+    {
+      "archivo": "poses-continuidad/busto-intermediario-quieto.svg",
+      "bytes": 12512,
+      "sha256": "4a21cbf92c3168b4cd4cbafc3e61df9ac9edf16b427f9f1b31e42ab155dd6e0e"
+    },
+    {
+      "archivo": "poses-continuidad/busto-intermediario-quieto.vectorcraft",
+      "bytes": 33978,
+      "sha256": "d7f9a9a41876289a8bf5662dc7dc84cc126d5ee3a14da447fad34fc229fda500"
+    },
+    {
+      "archivo": "poses-continuidad/busto-reclamante-quieto.png",
+      "bytes": 66530,
+      "sha256": "143f9a669b608742488e86cb5894a98321e144f6fa7e4cabe2a2053f827b4222"
+    },
+    {
+      "archivo": "poses-continuidad/busto-reclamante-quieto.svg",
+      "bytes": 12080,
+      "sha256": "41970dc0525d5848870b3dc2e58ae39d2cc9c5fee0dcde29024e939847b94445"
+    },
+    {
+      "archivo": "poses-continuidad/busto-reclamante-quieto.vectorcraft",
+      "bytes": 31531,
+      "sha256": "dc2a3e96fa98f21dcc4a33cef96e3ebd66de1f35936797a741722bbde292cf2b"
+    },
+    {
+      "archivo": "poses-continuidad/poses.json",
+      "bytes": 4601,
+      "sha256": "d9a4c9d9082d11affd13375587434b9293d2cf304c065f820f855def80566693"
+    },
+    {
+      "archivo": "poses-continuidad/README.md",
+      "bytes": 963,
+      "sha256": "6cb54f6046cc3fc405571a76badea664027a65a6093645460bccec86bddc46fd"
+    },
+    {
+      "archivo": "poses-continuidad/trabajador-carga-paso.png",
+      "bytes": 95057,
+      "sha256": "e361888835c8b0fd07ab7bd631deb6f75a261d1266a6909386a737ceb6b975d6"
+    },
+    {
+      "archivo": "poses-continuidad/trabajador-carga-paso.svg",
+      "bytes": 26363,
+      "sha256": "d23265e095b58192ce870a107a8b1ea6cca4a316600aaaf88a117d869b719d22"
+    },
+    {
+      "archivo": "poses-continuidad/trabajador-carga-paso.vectorcraft",
+      "bytes": 30365,
+      "sha256": "0f25aca6411b31e2d06509106f07473a2d126897890b55c624c3e24284c13314"
+    },
+    {
       "archivo": "qa/rostro-atencion-corregido.png",
       "bytes": 28623,
       "sha256": "7ee563653fa69a6e63af4cc8ef4d7ce06670172b47703879e379b86852351c29"
@@ -872,8 +987,8 @@
     },
     {
       "archivo": "README.md",
-      "bytes": 5494,
-      "sha256": "75d923aacfc13321d848ba1df94bbbda3fa45f16b2b6529e3f525ac84c696c2e"
+      "bytes": 6141,
+      "sha256": "ea01aeb5ddd405b3b8f014857d252a991c3929889252a8671092aa08fe9cf633"
     },
     {
       "archivo": "reclamante/capas/00_sombra.svg",
@@ -1371,5 +1486,7 @@
     },
     "animacionValidada": false,
     "videoGenerado": false
-  }
+  },
+  "fecha_revision_continuidad": "2026-11-10",
+  "poses_nuevas_continuidad": 7
 }

@@ -20,47 +20,6 @@
     "factorEncuadreARemotion": 1.7142857142857142
   },
   "proxima_seccion": 4,
-  "escenas_largas": [
-    {
-      "v": [
-        1,
-        4
-      ],
-      "nombre": "Objeto del reclamo y gestión",
-      "pasos": [
-        "Retirar el ejemplo genérico y presentar el expediente identificado de Novoa.",
-        "Leer hacienda y después quinientas personas esclavizadas; sostener el dato sin música.",
-        "Desplegar el folio de 32 años y volver al resumen del reclamo.",
-        "Introducir a Elías por su función; señalar el expediente sin inventar una conversación."
-      ]
-    },
-    {
-      "v": [
-        5,
-        8
-      ],
-      "nombre": "Intento, plazo e intervención",
-      "pasos": [
-        "Mostrar 500.000–600.000 como aprobación buscada.",
-        "Detener el recorrido en la respuesta sobre el plazo.",
-        "Conservar ese antecedente mientras entra la intervención atribuida a Torrico.",
-        "Revelar 948.500 pesos en vales después de la intervención y dar tiempo de lectura."
-      ]
-    },
-    {
-      "v": [
-        9,
-        12
-      ],
-      "nombre": "Alcance del resultado",
-      "pasos": [
-        "Recuperar la distinción entre título y efectivo.",
-        "Revelar probablemente junto a alrededor de 180.000 pesos en vales.",
-        "Abrir ambas cifras, sin restar ni asignar destinatarios a la diferencia.",
-        "Reunir los participantes y recuperar a Elías al pasar a la denuncia."
-      ]
-    }
-  ],
   "vinyetas": [
     {
       "id": "s03-v01",
@@ -628,5 +587,60 @@
         }
       ]
     }
-  ]
+  ],
+  "recorridos_internos": [
+    {
+      "v": [
+        1,
+        4
+      ],
+      "nombre": "Objeto del reclamo y gestión",
+      "pasos": [
+        "Retirar el ejemplo genérico y presentar el expediente identificado de Novoa.",
+        "Leer hacienda y después quinientas personas esclavizadas; sostener el dato sin música.",
+        "Desplegar el folio de 32 años y volver al resumen del reclamo.",
+        "Introducir a Elías por su función; señalar el expediente sin inventar una conversación."
+      ]
+    },
+    {
+      "v": [
+        5,
+        8
+      ],
+      "nombre": "Intento, plazo e intervención",
+      "pasos": [
+        "Mostrar 500.000–600.000 como aprobación buscada.",
+        "Detener el recorrido en la respuesta sobre el plazo.",
+        "Conservar ese antecedente mientras entra la intervención atribuida a Torrico.",
+        "Revelar 948.500 pesos en vales después de la intervención y dar tiempo de lectura."
+      ]
+    },
+    {
+      "v": [
+        9,
+        12
+      ],
+      "nombre": "Alcance del resultado",
+      "pasos": [
+        "Recuperar la distinción entre título y efectivo.",
+        "Revelar probablemente junto a alrededor de 180.000 pesos en vales.",
+        "Abrir ambas cifras, sin restar ni asignar destinatarios a la diferencia.",
+        "Reunir los participantes y recuperar a Elías al pasar a la denuncia."
+      ]
+    }
+  ],
+  "escena_larga": {
+    "numero": 3,
+    "titulo": "El expediente de Novoa",
+    "desarrollo_continuidad": "../escenas-largas/escena-03/secuencia.json",
+    "momentos": [
+      "3A",
+      "3B",
+      "3C",
+      "3D",
+      "3E",
+      "3F"
+    ],
+    "nota": "Esta sección corresponde a una escena larga. Sus bloques anteriores son recorridos internos; no escenas largas adicionales."
+  }
 }

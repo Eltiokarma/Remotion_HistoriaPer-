@@ -1,0 +1,536 @@
+{
+  "id": "escena-03",
+  "numero": 3,
+  "titulo": "El expediente de Novoa",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "duracion_segundos": null,
+  "momentos": [
+    "3A",
+    "3B",
+    "3C",
+    "3D",
+    "3E",
+    "3F"
+  ],
+  "laminas": 6,
+  "estados": 18,
+  "nativo": "escena-03.vectorcraft",
+  "pdf": "escena-03.pdf",
+  "muestra": "muestra.png",
+  "lamina_muestra": 4,
+  "dimension_lamina": [
+    2520,
+    2140
+  ],
+  "dimension_encuadre": [
+    1120,
+    630
+  ],
+  "destino_remotion": [
+    1920,
+    1080
+  ],
+  "factor_encuadre_a_remotion": 1.7142857142857142,
+  "espaciado_mesas": 80,
+  "desarrollo": [
+    {
+      "id": "3A",
+      "momento": "3A",
+      "titulo": "Lo que pedía compensar",
+      "lamina": 1,
+      "artboard": 0,
+      "svg": "lamina01.svg",
+      "capa_nativa": 2,
+      "voz_referencia": "Reclamaba por una hacienda expropiada. Su solicitud incluía a quinientas personas esclavizadas.",
+      "accion_y_camara": "El resumen distingue cada parte del reclamo. Se describe su solicitud; la ilustración no valida ese criterio de compensación.",
+      "pausa_y_lectura": "Sostener el dato sobre las personas esclavizadas sin música. No inventar fechas para los 32 años.",
+      "siguiente": "3B · La función de Elías",
+      "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s03-v01",
+          "svg": "../recursos/encuadres/s03-v01.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            416
+          ],
+          "accion": "Presentar a Ignacia Novoa de Arredondo y su expediente.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s03-v02",
+          "svg": "../recursos/encuadres/s03-v02.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            768
+          ],
+          "accion": "Leer primero hacienda; después, quinientas personas esclavizadas.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s03-v03",
+          "svg": "../recursos/encuadres/s03-v03.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            1113
+          ],
+          "accion": "Desplegar los 32 años de ganancias que decía haber perdido.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "3B",
+      "momento": "3B",
+      "titulo": "Elías hace la gestión",
+      "lamina": 2,
+      "artboard": 1,
+      "svg": "lamina02.svg",
+      "capa_nativa": 1129,
+      "voz_referencia": "En 1852, Elías intentó conseguir que el gobierno reconociera entre quinientos mil y seiscientos mil pesos.",
+      "accion_y_camara": "La ropa y los rótulos mantienen la identidad entre estados. La comisión de esta gestión no se ilustra como soborno demostrado.",
+      "pausa_y_lectura": "No presentar el intervalo como una cantidad ya aprobada.",
+      "siguiente": "3C · La respuesta sobre el plazo",
+      "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s03-v04-reposo",
+          "svg": "../recursos/encuadres/s03-v04-reposo.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            2480,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            1673
+          ],
+          "accion": "Introducir reclamante e intermediario, ambos en atención.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s03-v04-prepara",
+          "svg": "../recursos/encuadres/s03-v04-prepara.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            2480,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            2216
+          ],
+          "accion": "Elías prepara el señalamiento hacia el expediente.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s03-v05",
+          "svg": "../recursos/encuadres/s03-v05.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            3430,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            2590
+          ],
+          "accion": "Mostrar 500.000–600.000 como aprobación que buscaba.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "3C",
+      "momento": "3C",
+      "titulo": "El trámite se detiene",
+      "lamina": 3,
+      "artboard": 2,
+      "svg": "lamina03.svg",
+      "capa_nativa": 2606,
+      "voz_referencia": "El presidente Echenique le comunicó a Elías que el reclamo no había cumplido el plazo oficial.",
+      "accion_y_camara": "Echenique comunica que el reclamo no cumplía el plazo. La nota es un resumen editorial, sin diálogo o resolución reproducidos.",
+      "pausa_y_lectura": "La negativa queda como antecedente visible para la intervención siguiente.",
+      "siguiente": "3D · Torrico y la aprobación",
+      "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s03-v06-pendiente",
+          "svg": "../recursos/encuadres/s03-v06-pendiente.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            4700,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            3078
+          ],
+          "accion": "Llega la respuesta; el campo de resultado aún no se revela.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s03-v06",
+          "svg": "../recursos/encuadres/s03-v06.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            4700,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            3623
+          ],
+          "accion": "Aparece fuera de plazo junto a su explicación.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s03-v06-reposo",
+          "svg": "../recursos/encuadres/s03-v06-reposo.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            5650,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            4160
+          ],
+          "accion": "El papel permanece detenido y los gestos descansan.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "3D",
+      "momento": "3D",
+      "titulo": "Intervención y resultado",
+      "lamina": 4,
+      "artboard": 3,
+      "svg": "lamina04.svg",
+      "capa_nativa": 4176,
+      "voz_referencia": "Unos días más tarde se aprobó el expediente por 948.500 pesos en vales.",
+      "accion_y_camara": "El resultado aparece después de la intervención atribuida a Torrico. No representar una orden o firma que no tenemos.",
+      "pausa_y_lectura": "Silencio de 2 s sin voz ni música tras el monto. La unidad permanece unida a la cifra.",
+      "siguiente": "3E · Distinguir aprobado y recibido",
+      "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s03-v07",
+          "svg": "../recursos/encuadres/s03-v07.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            6920,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            4725
+          ],
+          "accion": "Introducir a Torrico y conservar el antecedente de plazo.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s03-v08-antesmonto",
+          "svg": "../recursos/encuadres/s03-v08-antesmonto.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            6920,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            5020
+          ],
+          "accion": "Pasar a unos días después; preparar el campo de aprobación.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s03-v08",
+          "svg": "../recursos/encuadres/s03-v08.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            7870,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            5387
+          ],
+          "accion": "Revelar juntos 948.500 y pesos en vales.",
+          "duracion_segundos": null,
+          "silencio_propuesto_segundos": 2
+        }
+      ]
+    },
+    {
+      "id": "3E",
+      "momento": "3E",
+      "titulo": "Lo aprobado y lo probablemente recibido",
+      "lamina": 5,
+      "artboard": 4,
+      "svg": "lamina05.svg",
+      "capa_nativa": 5403,
+      "voz_referencia": "Según Quiroz, Novoa probablemente recibió alrededor de 180.000 pesos, también en vales.",
+      "accion_y_camara": "Las cifras entran por separado. Probablemente acompaña el monto desde su primera aparición.",
+      "pausa_y_lectura": "No restar para fabricar un monto robado ni repartir la diferencia.",
+      "siguiente": "3F · Del caso al conjunto",
+      "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s03-v09",
+          "svg": "../recursos/encuadres/s03-v09.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            9140,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            5749
+          ],
+          "accion": "Recuperar que eran títulos del Estado, no efectivo inmediato.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s03-v10",
+          "svg": "../recursos/encuadres/s03-v10.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            9140,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            6193
+          ],
+          "accion": "Revelar probablemente y alrededor de 180.000 pesos en vales.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s03-v11",
+          "svg": "../recursos/encuadres/s03-v11.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            10090,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            6643
+          ],
+          "accion": "Abrir ambas cantidades y conservar el grado de certeza.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "3F",
+      "momento": "3F",
+      "titulo": "Del expediente a la escala general",
+      "lamina": 6,
+      "artboard": 5,
+      "svg": "lamina06.svg",
+      "capa_nativa": 6659,
+      "voz_referencia": "El conflicto llevó a Elías a denunciar la consolidación. Volveremos a él al seguir lo que ocurrió después.",
+      "accion_y_camara": "La flecha cambia de escala, no sigue un pago individual. Elías conserva su función anterior al aparecer como denunciante.",
+      "pausa_y_lectura": "Retirar las cantidades de Novoa antes de la circulación genérica.",
+      "siguiente": "4A · El conjunto y los tenedores",
+      "base": "Q, p. 171 y notas 112–113; regreso al conjunto: Q, p. 170. Las cifras generales no siguen un pago individual.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s03-v12",
+          "svg": "../recursos/encuadres/s03-v12.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            11360,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            7507
+          ],
+          "accion": "Reunir participantes y resultado sin añadir destinatarios de la diferencia.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s03-v12-elias",
+          "svg": "../recursos/encuadres/s03-v12-elias.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            11360,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            8352
+          ],
+          "accion": "Recuperar la posición de Elías para la denuncia que viene.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s04-v01-1851",
+          "svg": "../recursos/encuadres/s04-v01-1851.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            12310,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            8924
+          ],
+          "accion": "Salir del caso de Novoa y situar primero la deuda reconocida en 1851.",
+          "duracion_segundos": null
+        }
+      ]
+    }
+  ]
+}

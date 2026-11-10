@@ -1,0 +1,449 @@
+{
+  "id": "escena-05",
+  "numero": 5,
+  "titulo": "Del expediente al método de Quiroz",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "duracion_segundos": null,
+  "momentos": [
+    "5A",
+    "5B",
+    "5C"
+  ],
+  "laminas": 5,
+  "estados": 15,
+  "nativo": "escena-05.vectorcraft",
+  "pdf": "escena-05.pdf",
+  "muestra": "muestra.png",
+  "lamina_muestra": 4,
+  "dimension_lamina": [
+    2520,
+    2140
+  ],
+  "dimension_encuadre": [
+    1120,
+    630
+  ],
+  "destino_remotion": [
+    1920,
+    1080
+  ],
+  "factor_encuadre_a_remotion": 1.7142857142857142,
+  "espaciado_mesas": 80,
+  "desarrollo": [
+    {
+      "id": "5A.1",
+      "momento": "5A",
+      "titulo": "La finalidad y sus beneficiarios",
+      "lamina": 1,
+      "artboard": 0,
+      "svg": "lamina01.svg",
+      "capa_nativa": 2,
+      "voz_referencia": "Pero muchos reclamantes originales y pequeños inversionistas quedaron fuera. Los beneficios se concentraron.",
+      "accion_y_camara": "Las fichas representan grupos, sin recuentos, porcentajes ni identificación de Novoa con los excluidos.",
+      "pausa_y_lectura": "Mantener el propósito visible al mostrar el resultado.",
+      "siguiente": "5A.2 · Reunir el recorrido",
+      "base": "Q, pp. 169–173, 183 y 535–538. El método corresponde al episodio 003.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s05-v01",
+          "svg": "../recursos/encuadres/s05-v01.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            1739
+          ],
+          "accion": "Recuperar Chincha detallada y los recursos del Estado.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s05-v02",
+          "svg": "../recursos/encuadres/s05-v02.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            2153
+          ],
+          "accion": "Volver a la finalidad declarada del reconocimiento de deudas.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s05-v03",
+          "svg": "../recursos/encuadres/s05-v03.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            2671
+          ],
+          "accion": "Contraponer grupos excluidos y beneficios concentrados.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "5A.2",
+      "momento": "5A",
+      "titulo": "El circuito se reúne una sola vez",
+      "lamina": 2,
+      "artboard": 1,
+      "svg": "lamina02.svg",
+      "capa_nativa": 2687,
+      "voz_referencia": "Ahora podemos unir los ingresos, los reclamos, los títulos y la investigación que siguió sus irregularidades.",
+      "accion_y_camara": "El tablero se acumula y la cámara recorre relaciones ya explicadas. No es una cadena de pagos de un vale de Novoa.",
+      "pausa_y_lectura": "Pausa sin voz con el circuito completo. Conservar textura, sombras y luz.",
+      "siguiente": "5B.1 · De las huellas al historiador",
+      "base": "Q, pp. 169–173, 183 y 535–538. El método corresponde al episodio 003.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s05-v04-origen",
+          "svg": "../recursos/encuadres/s05-v04-origen.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            2480,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            4352
+          ],
+          "accion": "Recorrer guano, Estado y reclamos, que ya conocemos.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s05-v04-vales",
+          "svg": "../recursos/encuadres/s05-v04-vales.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            2480,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            6136
+          ],
+          "accion": "Incorporar los títulos y su relación con el Estado.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s05-v04",
+          "svg": "../recursos/encuadres/s05-v04.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            3430,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            8114
+          ],
+          "accion": "Llegar al examen de los expedientes y sostener el circuito completo.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "5B.1",
+      "momento": "5B",
+      "titulo": "Muchos años después",
+      "lamina": 3,
+      "artboard": 2,
+      "svg": "lamina03.svg",
+      "capa_nativa": 8130,
+      "voz_referencia": "Por ejemplo, contabilidad del Estado, documentos judiciales y correspondencia diplomática. Quiroz trabajó con fuentes de distintos tipos.",
+      "accion_y_camara": "La continuidad de los papeles es editorial: no afirma que ese folio específico llegara a Quiroz. La mesa tampoco reproduce un lugar documentado.",
+      "pausa_y_lectura": "Fecha, procedencia y contexto acompañan las fuentes.",
+      "siguiente": "5B.2 · Del caso a una cuenta más amplia",
+      "base": "Q, pp. 169–173, 183 y 535–538. El método corresponde al episodio 003.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s04-v16-informes",
+          "svg": "../recursos/encuadres/s04-v16-informes.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            4700,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            8663
+          ],
+          "accion": "Los informes quedan como huellas del negocio.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s05-v05",
+          "svg": "../recursos/encuadres/s05-v05.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            4700,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            9886
+          ],
+          "accion": "Rotular el cambio de época y recuperar libro, fichero y pruebas.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s05-v06",
+          "svg": "../recursos/encuadres/s05-v06.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            5650,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            10482
+          ],
+          "accion": "Desplegar contabilidad, evidencia judicial y correspondencia.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "5B.2",
+      "momento": "5B",
+      "titulo": "Alcance y cautelas del método",
+      "lamina": 4,
+      "artboard": 3,
+      "svg": "lamina04.svg",
+      "capa_nativa": 10498,
+      "voz_referencia": "Quiroz presenta su cálculo como aproximado y provisional, sujeto a revisión.",
+      "accion_y_camara": "Las cautelas son parte de la explicación. No convertir las cantidades de Novoa en el costo total de la corrupción.",
+      "pausa_y_lectura": "Dejar quietas las palabras de cautela; no tratarlas como nota pequeña.",
+      "siguiente": "5C · La pregunta del episodio 003",
+      "base": "Q, pp. 169–173, 183 y 535–538. El método corresponde al episodio 003.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s05-v07",
+          "svg": "../recursos/encuadres/s05-v07.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            6920,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            10848
+          ],
+          "accion": "Recordar aprobado y probablemente recibido: ambas cifras en vales.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s05-v08",
+          "svg": "../recursos/encuadres/s05-v08.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            6920,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            11237
+          ],
+          "accion": "Abrir hacia el apéndice y cambiar el alcance de la investigación.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s05-v09",
+          "svg": "../recursos/encuadres/s05-v09.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            7870,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            11684
+          ],
+          "accion": "Sostener aproximado, provisional y sujeto a revisión.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "5C",
+      "momento": "5C",
+      "titulo": "Dar paso al siguiente video",
+      "lamina": 5,
+      "artboard": 4,
+      "svg": "lamina05.svg",
+      "capa_nativa": 11700,
+      "voz_referencia": "Siguiente episodio: ¿Se puede medir la corrupción? Veremos sus fuentes, sus decisiones y los límites de la cuenta.",
+      "accion_y_camara": "El problema de las prácticas ocultas conduce a la pregunta. El tema del canal entra en el cierre, ajustado a la voz real.",
+      "pausa_y_lectura": "Sostener la pregunta y el índice. No añadir una cifra de costo total.",
+      "siguiente": "Episodio 003 · Fuentes, decisiones y límites",
+      "base": "Q, pp. 169–173, 183 y 535–538. El método corresponde al episodio 003.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s05-v10",
+          "svg": "../recursos/encuadres/s05-v10.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            9140,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            12201
+          ],
+          "accion": "Relacionar huellas separadas: no hay una fuente estadística única.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s05-v11",
+          "svg": "../recursos/encuadres/s05-v11.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            9140,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            12442
+          ],
+          "accion": "Plantear cómo medir la corrupción sin resolver el método aquí.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s05-v12",
+          "svg": "../recursos/encuadres/s05-v12.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            10090,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            12857
+          ],
+          "accion": "Dar el foco a 003 en el índice y reservar los resultados generales a 004.",
+          "duracion_segundos": null
+        }
+      ]
+    }
+  ]
+}

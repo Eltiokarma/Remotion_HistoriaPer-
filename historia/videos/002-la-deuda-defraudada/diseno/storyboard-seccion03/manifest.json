@@ -20,18 +20,18 @@
     },
     {
       "archivo": "ANIMACION.md",
-      "bytes": 3908,
-      "sha256": "7578e6bdbc4172b81953beb7095a0eec65f39bd02f52eb6743df7f267225ddde"
+      "bytes": 4300,
+      "sha256": "94fc24cb936cb0b70d8c3973f43550cd7a6044691fdf821c9e7d62a32301f5bb"
     },
     {
       "archivo": "README.md",
-      "bytes": 10261,
-      "sha256": "3c2c0f57cac3056c1aab12bbd24653a4f4bba6b6aa953e99df58c59327de4f9a"
+      "bytes": 10722,
+      "sha256": "996450efe8e240adb0355a12155160e0fbbfd458d24babdc02394777eef8b114"
     },
     {
       "archivo": "secuencia.json",
-      "bytes": 18240,
-      "sha256": "695411f4f488dd43cfda6234d21a3bc44c8d5f1704b3e3c4c1e6cad5899c1c06"
+      "bytes": 18638,
+      "sha256": "196cd859b4d4c71bfe9f48dc67edb91418ef25e485329adb0ff5b69e41135f02"
     },
     {
       "archivo": "storyboard-02-seccion03-lamina1.png",
@@ -88,5 +88,7 @@
     "laminas": 3,
     "vinyetas": 12
   },
-  "video_generado": false
+  "video_generado": false,
+  "fecha_revision_continuidad": "2026-11-10",
+  "desarrollo_continuidad": "../escenas-largas/escena-03/secuencia.json"
 }

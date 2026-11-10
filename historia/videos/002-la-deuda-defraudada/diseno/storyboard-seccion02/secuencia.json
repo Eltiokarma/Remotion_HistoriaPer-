@@ -20,36 +20,6 @@
     "factorEncuadreARemotion": 1.7142857142857142
   },
   "proxima_seccion": 3,
-  "escenas_largas": [
-    {
-      "v": [
-        1,
-        6
-      ],
-      "nombre": "Del reclamo al vale",
-      "pasos": [
-        "Retomar la carpeta y aislar el reclamo con pestaña roja.",
-        "Desplegar los dos orígenes y la ley de 1850; volver al mismo papel.",
-        "Revisar origen, acreedor y monto por turnos; el personaje señala con la cámara quieta.",
-        "Incorporar el reconocimiento y después el vale como otro documento.",
-        "Desplazar el vale hacia el acreedor y sostener su condición de deuda, sin entrega de efectivo."
-      ]
-    },
-    {
-      "v": [
-        7,
-        12
-      ],
-      "nombre": "Retroceso e intermediación",
-      "pasos": [
-        "Rotular el regreso al momento anterior al reconocimiento.",
-        "En el acercamiento, preparar manos y papel; establecer el contacto antes del traspaso.",
-        "Recuperar comprador e intermediario en la misma mesa.",
-        "Marcar el favorecimiento ilegal después de explicar la compraventa.",
-        "Comparar precio y valor reconocido, abrir el circuito y retirar el ejemplo al entrar Novoa."
-      ]
-    }
-  ],
   "vinyetas": [
     {
       "id": "s02-v01",
@@ -757,5 +727,49 @@
         }
       ]
     }
-  ]
+  ],
+  "recorridos_internos": [
+    {
+      "v": [
+        1,
+        6
+      ],
+      "nombre": "Del reclamo al vale",
+      "pasos": [
+        "Retomar la carpeta y aislar el reclamo con pestaña roja.",
+        "Desplegar los dos orígenes y la ley de 1850; volver al mismo papel.",
+        "Revisar origen, acreedor y monto por turnos; el personaje señala con la cámara quieta.",
+        "Incorporar el reconocimiento y después el vale como otro documento.",
+        "Desplazar el vale hacia el acreedor y sostener su condición de deuda, sin entrega de efectivo."
+      ]
+    },
+    {
+      "v": [
+        7,
+        12
+      ],
+      "nombre": "Retroceso e intermediación",
+      "pasos": [
+        "Rotular el regreso al momento anterior al reconocimiento.",
+        "En el acercamiento, preparar manos y papel; establecer el contacto antes del traspaso.",
+        "Recuperar comprador e intermediario en la misma mesa.",
+        "Marcar el favorecimiento ilegal después de explicar la compraventa.",
+        "Comparar precio y valor reconocido, abrir el circuito y retirar el ejemplo al entrar Novoa."
+      ]
+    }
+  ],
+  "escena_larga": {
+    "numero": 2,
+    "titulo": "El recorrido de un reclamo",
+    "desarrollo_continuidad": "../escenas-largas/escena-02/secuencia.json",
+    "momentos": [
+      "2A",
+      "2B",
+      "2C",
+      "2D",
+      "2E",
+      "2F"
+    ],
+    "nota": "Esta sección corresponde a una escena larga. Sus bloques anteriores son recorridos internos; no escenas largas adicionales."
+  }
 }

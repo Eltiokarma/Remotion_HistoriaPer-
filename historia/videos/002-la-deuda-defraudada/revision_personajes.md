@@ -34,3 +34,9 @@ Revisión del 10 de noviembre de 2026. Trece láminas y 52 viñetas conservan su
 Cada sección incluye secuencia.json y ANIMACION.md para Claude. Ocho bustos, ocho detalles de mano y la variante marrón quedan junto al canon. Los 135 SVG de piezas base conservan su geometría y sus rostros corregidos. Novoa, Elías, Echenique y Torrico se identifican mediante rótulos; el dibujo no documenta su apariencia, un encuentro concreto ni emociones personales.
 
 La revisión visual fue estática en VectorCraft mediante MCP. Continúan pendientes la aprobación de Gerson y la comprobación de tiempos, contactos y efectos durante la integración en Remotion. No se generó video.
+
+## Desarrollo de las cinco escenas largas
+
+El [desarrollo visual completo](diseno/escenas-largas/README.md) corresponde a las cinco escenas y los 24 momentos del storyboard textual. Sus 32 láminas contienen 97 estados de continuidad y 90 encuadres SVG distintos, con preparación, contactos, pausas, revelaciones y cuatro enlaces de sección. Se añaden seis bustos de preparación o pausa y un paso del trabajador con carga, conservando las 135 piezas base.
+
+Los nativos se editaron y revisaron estáticamente en VectorCraft mediante MCP. Las nuevas poses y los traspasos son referencias de movimiento; los contactos entre fotogramas, tiempos y efectos todavía requieren integración y comprobación en Remotion. Pendiente de revisión y aprobación de Gerson. No se generó video.

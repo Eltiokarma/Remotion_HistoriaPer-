@@ -65,3 +65,9 @@ El paso final abre la sección 2, *El recorrido de un reclamo*. El puente al epi
 Revisión del 10 de noviembre de 2026: las viñetas 04, 07, 08, 11 y 14 usan los [personajes de época](../../personajes-1850/README.md). Las figuras pueden articular brazos, manos y rostro para tomar una carga o entregar un folio. La [indicación del director](../../../revision_personajes.md) reemplaza el criterio previo de poses siempre estáticas. Los estados fueron revisados en VectorCraft; la animación en Remotion continúa pendiente.
 
 Corrección de anatomía del 10 de noviembre de 2026: se actualizaron las seis figuras de esas cinco viñetas para usar una única nariz central y un contorno facial continuo. Los dibujos de origen, las poses y las láminas de referencia también están corregidos.
+
+## Desarrollo de la escena larga
+
+La continuidad de esta sección se desarrolla en [Las islas y el país](../../escenas-largas/escena-01/README.md), con estados intermedios, acciones y pausas de todos sus momentos. Este original se conserva como fuente; las hojas nuevas son el desarrollo de revisión. Los bloques previos se registran como recorridos internos de una sola escena larga.
+
+Borrador pendiente de Gerson; no hay animación validada ni video nuevo.

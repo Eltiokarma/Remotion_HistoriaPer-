@@ -47,3 +47,9 @@ Revisión del 10 de noviembre de 2026 en VectorCraft mediante MCP. Se añaden oc
 - Las figuras con nombre representan funciones del relato, con rótulos que identifican a cada participante. No son retratos documentados.
 
 Las SVG recortadas de un busto no sustituyen las piezas alineadas del rig. Mantener los campos de 900 × 1200 al montar los personajes en Remotion. El cierre utiliza fichas de grupos para evitar identificar a Novoa con los reclamantes excluidos.
+
+## Estados para las cinco escenas largas
+
+El [desarrollo de continuidad](../escenas-largas/README.md) reúne las cinco escenas del episodio, con sus 24 momentos. Se añaden [seis bustos de preparación o pausa y un paso con carga](poses-continuidad/README.md), con [datos de pose](poses-continuidad/poses.json). Las 135 piezas canónicas mantienen sus bytes.
+
+Los traspasos dibujan preparación, agarre compartido y liberación en un [editable de seis mesas](../escenas-largas/recursos/gestos/traspasos.vectorcraft). Son referencias estáticas: la trayectoria, la velocidad y el contacto entre fotogramas se comprobarán al integrar en Remotion.

@@ -1,6 +1,6 @@
 # Storyboard del episodio 002
 
-Estado: propuesta textual para revisar junto al [guion por ideas](guion.md). No contiene imágenes ni duración cerrada. Las diez ideas se agrupan en cinco escenas largas; cada una tiene un recorrido interno. El montaje definitivo se ajustará con la locución.
+Estado: borrador para revisar junto al [guion por ideas](guion.md). Las diez ideas se agrupan en cinco escenas largas y 24 momentos. El [desarrollo visual en VectorCraft](diseno/escenas-largas/README.md) reúne 32 láminas y 97 estados de continuidad, con acciones, pausas y enlaces. Los tiempos se ajustarán con la locución; la aprobación visual y la integración siguen pendientes.
 
 ## Cómo se reparte la información
 
@@ -45,7 +45,7 @@ Idea 5. Espacio: una mesa de documentos que permite comparar sin cambiar de esce
 |---|---|---|---|
 | 3A. Presentar el reclamo | Introduce a una propietaria y lo que solicitaba compensar, siguiendo Q, p. 171. | Ficha «IGNACIA NOVOA DE ARREDONDO · RECLAMANTE». Un resumen editorial del expediente distingue hacienda, personas esclavizadas y ganancias reclamadas. | Dar tiempo de lectura. No imitar un facsímil que no tenemos ni convertir ese contenido en una valoración propia del reclamo. |
 | 3B. La gestión de Elías | Explica su función de intermediario. | Ficha «DOMINGO ELÍAS · INTERMEDIARIO». La gestión de 500.000–600.000 pesos puede quedar escrita como dato secundario; no es necesariamente la cuantía inicial del reclamo. | La ficha se une al mismo expediente. No es obligatorio leer el nombre completo y la cifra simultáneamente. |
-| 3C. Fuera de plazo | Explica que el presidente rechazó el trámite por ese motivo. | Ficha «JOSÉ RUFINO ECHENIQUE · PRESIDENTE». Estado del trámite «FUERA DE PLAZO», identificado como resumen del relato. | Detener el documento antes de seguir; la negativa necesita sentirse como una etapa de la gestión. |
+| 3C. Fuera de plazo | Explica que Echenique comunicó a Elías que el reclamo no había cumplido el plazo oficial. | Ficha «JOSÉ RUFINO ECHENIQUE · PRESIDENTE». Estado del trámite «FUERA DE PLAZO», identificado como resumen del relato. | Detener el documento antes de seguir; la negativa necesita sentirse como una etapa de la gestión. |
 | 3D. Intervención de Torrico | Explica que intervino el ministro y luego se aprobó una suma mayor. | Ficha «JUAN CRISÓSTOMO TORRICO · MINISTRO DE GUERRA». Entra «948.500 PESOS EN VALES». | Conservar la negativa como antecedente. La nueva aprobación aparece después de la intervención, sin dibujar una orden o firma cuya forma no conocemos. |
 | 3E. Lo que habría recibido | Explica la estimación de Quiroz. | Segundo campo: «NOVOA HABRÍA RECIBIDO ≈180.000 PESOS EN VALES». Mantener la cautela visible al mismo tamaño legible que la unidad. | Desplazar el foco al segundo campo y abrir para comparar ambos. Pausa de lectura sin un tercer número nuevo. |
 | 3F. Cierre del caso | Señala que esas cantidades no identifican por sí solas el destino de toda la diferencia. | Quedan juntos reclamante, intermediario, presidente, ministro y cantidades. | Recuperar el circuito aprendido en la escena 2. Retirar solo detalles que ya no necesitemos para pasar a la escala general. |
@@ -77,7 +77,7 @@ Idea 9. Espacio: el circuito terminado y la mesa de investigación.
 | Momento | Voz propuesta o función de la voz | Imagen y texto | Movimiento y pausa |
 |---|---|---|---|
 | 5A. Volver al propósito | Recupera qué se quería conseguir al reconocer las deudas y qué ocurrió con los beneficiarios. | Circuito completo: ingresos del guano, reclamos, reconocimientos, traspasos e investigación. | Recorrerlo una vez, señalando relaciones conocidas. Pausa con la imagen completa. |
-| 5B. Volver al historiador | Explica que reconstruir el caso exige documentos y distinguir grados de certeza. | La misma carpeta permanece ahora sobre la mesa de trabajo de Quiroz. Recuperar pruebas de imprenta y libro del episodio 001. | El cambio de época se rotula; la continuidad del papel no debe fingir una escena histórica con Quiroz en 1850. |
+| 5B. Volver al historiador | Explica que reconstruir el caso exige documentos y distinguir grados de certeza. | La carpeta y los informes enlazan editorialmente con una mesa del historiador. Recuperar pruebas de imprenta y libro del episodio 001; no afirmar que un folio concreto de Novoa llegó a Quiroz. | El cambio de época se rotula; la continuidad del papel no debe fingir una escena histórica con Quiroz en 1850. |
 | 5C. Abrir el episodio siguiente | Plantea cómo investigar y medir prácticas ocultas. | Título del episodio 003. Mantener visible una cautela que ya aprendimos: reconocido, recibido y estimado son cosas diferentes. | El cierre deja un problema concreto para el tercero. No adelantar aquí los resultados generales del cuarto. |
 
 ## Comprobación antes de dibujar
