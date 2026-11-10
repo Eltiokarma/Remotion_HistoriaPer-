@@ -3,6 +3,7 @@ import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
 import { FiltroTiza, TIZA } from '../texto/Tiza';
 import { RosaDeLosVientos } from './RosaDeLosVientos';
+import { CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
   paleta: Paleta;
@@ -16,10 +17,13 @@ type Props = {
   topes?: number[];
   /** 0–1: la brújula se vuelve dibujo de tiza (DIRECCION_DE_VIDEO §2.3); los rótulos se borran. */
   tiza?: number;
+  /** Lámina aprobada (brujula-video01): caja, rosa, vidrio y aguja con pivote en (960, 540). */
+  lamina?: Lamina | null;
 };
 
 /** Brújula de bronce: rosa grabada, vidrio con reflejo y una aguja que gira despacio entre dos rótulos. */
-export const Brujula: React.FC<Props> = ({ paleta, id, angulo, polos, radio: R = 300, topes = [], tiza = 0 }) => {
+export const Brujula: React.FC<Props> = ({ paleta, id, angulo, polos, radio: R = 300, topes = [], tiza = 0, lamina }) => {
+  const uid = usePrefijo();
   const bronce = mezclar(paleta.ocre, paleta.fondo, 0.1);
   const cx = 960, cy = 560;
   const punto = (a: number, r: number) => [cx + Math.sin((a * Math.PI) / 180) * r, cy - Math.cos((a * Math.PI) / 180) * r];
@@ -100,6 +104,37 @@ export const Brujula: React.FC<Props> = ({ paleta, id, angulo, polos, radio: R =
           </g>
         );
       })() : null}
+      {lamina ? (
+        // La lámina mide 344 de radio exterior con centro en (960, 540): se lleva al tamaño y centro de esta brújula
+        // (el bisel exterior del dibujo es R + 34). Los polos y topes siguen siendo datos de la escena.
+        <g opacity={1 - tiza}>
+          <DefsLamina lamina={lamina} uid={uid} />
+          <g transform={`translate(${cx} ${cy}) scale(${(R + 34) / 344}) translate(-960 -540)`}>
+            {['Caja_de_bronce', 'Graduaciones', 'Rosa_grabada', 'Anilla_y_corona'].map((n) => <CapaVC key={n} lamina={lamina} uid={uid} nombre={n} />)}
+          </g>
+          {topes.map((a, i) => {
+            const [x, y] = punto(a, R - 34);
+            return <circle key={`t${i}`} cx={x} cy={y} r={9} fill={mezclar(bronce, '#000000', 0.25)} stroke={mezclar(bronce, '#ffffff', 0.3)} strokeWidth={2} />;
+          })}
+          <g transform={`translate(${cx} ${cy}) scale(${(R + 34) / 344}) translate(-960 -540)`}>
+            <CapaVC lamina={lamina} uid={uid} nombre="Aguja_móvil" transform={`rotate(${angulo} 960 540)`} />
+            <CapaVC lamina={lamina} uid={uid} nombre="Vidrio" />
+          </g>
+          {polos.map((p, i) => {
+            const a = (p.angulo * Math.PI) / 180;
+            const near = 1 - Math.min(1, Math.abs(((angulo - p.angulo + 540) % 360) - 180) / 60);
+            return (
+              <g key={i}>
+                <line x1={cx + Math.sin(a) * (R + 40)} y1={cy - Math.cos(a) * (R + 40)} x2={cx + Math.sin(a) * (R + 90)} y2={cy - Math.cos(a) * (R + 90)} stroke={paleta.ocre} strokeWidth={2} />
+                {/* a los costados, el rótulo arranca después de la raya y crece hacia afuera: no pisa el bisel */}
+                <text x={cx + Math.sin(a) * (R + 110)} y={cy - Math.cos(a) * (R + 110) + 14}
+                  textAnchor={Math.abs(Math.sin(a)) < 0.5 ? 'middle' : Math.sin(a) > 0 ? 'start' : 'end'} fill={near > 0.3 ? paleta.papel : alfa(paleta.ocre, 0.7)}
+                  fontFamily={fuente.mono} fontSize={44} letterSpacing={4}>{p.texto}</text>
+              </g>
+            );
+          })}
+        </g>
+      ) : (
       <g opacity={1 - tiza}>
       <defs>
         <radialGradient id={`${id}-bisel`} cx="40%" cy="35%">
@@ -153,6 +188,7 @@ export const Brujula: React.FC<Props> = ({ paleta, id, angulo, polos, radio: R =
       <circle cx={cx} cy={cy} r={R} fill={`url(#${id}-vidrio)`} />
       <path d={`M${cx - R * 0.7} ${cy - R * 0.45} A ${R * 0.9} ${R * 0.9} 0 0 1 ${cx - R * 0.1} ${cy - R * 0.88}`} fill="none" stroke="#fff" strokeOpacity={0.4} strokeWidth={6} strokeLinecap="round" />
       </g>
+      )}
     </svg>
   );
 };

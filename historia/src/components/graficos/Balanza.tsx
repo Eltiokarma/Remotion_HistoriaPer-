@@ -1,6 +1,7 @@
 import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
+import { CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
   paleta: Paleta;
@@ -11,12 +12,49 @@ type Props = {
   derecha: string;
   /** 0–1: caída de cada palabra sobre su platillo. */
   cae: [number, number];
+  /** Lámina aprobada (balanza-video01): mismo pivote y mismos brazos; las palabras vienen trazadas en ella. */
+  lamina?: Lamina | null;
 };
 
 const CX = 960, CY = 330, BRAZO = 430;
 
 /** Balanza de dos platillos, de bronce, con una palabra en cada uno. */
-export const Balanza: React.FC<Props> = ({ paleta, id, angulo, izquierda, derecha, cae }) => {
+export const Balanza: React.FC<Props> = ({ lamina, ...props }) => {
+  const uid = usePrefijo();
+  if (lamina) return <BalanzaLamina {...props} lamina={lamina} uid={uid} />;
+  return <BalanzaDibujada {...props} />;
+};
+
+/** La lámina aprobada, pieza por pieza: la cruz gira sobre (960, 330), los platillos cuelgan
+ * verticales de cada extremo y cada palabra cae con su tarjeta sobre el platillo. */
+const BalanzaLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: string }> = ({ angulo, cae, lamina, uid }) => {
+  const a = (angulo * Math.PI) / 180;
+  const extremo = (lado: -1 | 1) => ({ x: CX + lado * BRAZO * Math.cos(a), y: CY + lado * BRAZO * Math.sin(a) });
+  // En la lámina los extremos están en (530, 330) y (1390, 330): el platillo se traslada lo que se movió su gancho.
+  const desplaza = (lado: -1 | 1) => { const e = extremo(lado); return { dx: e.x - (CX + lado * BRAZO), dy: e.y - CY }; };
+  const iz = desplaza(-1), de = desplaza(1);
+  const tarjeta = (lado: -1 | 1, k: number) => {
+    const d = lado < 0 ? iz : de;
+    // La tarjeta con su palabra cae desde arriba sobre el platillo (la misma caída de 420 px que el texto dibujado).
+    return { transform: `translate(${d.dx} ${d.dy - (1 - k) * 420})`, opacity: Math.min(1, k * 3) };
+  };
+  return (
+    <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ position: 'absolute', inset: 0 }}>
+      <DefsLamina lamina={lamina} uid={uid} />
+      <CapaVC lamina={lamina} uid={uid} nombre="Base_fija" />
+      <CapaVC lamina={lamina} uid={uid} nombre="Columna_fija" />
+      <CapaVC lamina={lamina} uid={uid} nombre="Platillo_izquierdo" transform={`translate(${iz.dx} ${iz.dy})`} />
+      <CapaVC lamina={lamina} uid={uid} nombre="Platillo_derecho" transform={`translate(${de.dx} ${de.dy})`} />
+      <CapaVC lamina={lamina} uid={uid} nombre="Brazo_móvil" transform={`rotate(${angulo} ${CX} ${CY})`} />
+      {/* el fiel: la aguja (pieza 0) gira con la cruz; la escala y el eje quedan quietos */}
+      <CapaVC lamina={lamina} uid={uid} nombre="Fiel" pieza={(i) => (i === 0 ? { transform: `rotate(${angulo} ${CX} ${CY})` } : undefined)} />
+      {cae[0] > 0 ? <CapaVC lamina={lamina} uid={uid} nombre="Rótulos_legibles" solo={(i) => i < 2} {...tarjeta(-1, cae[0])} /> : null}
+      {cae[1] > 0 ? <CapaVC lamina={lamina} uid={uid} nombre="Rótulos_legibles" solo={(i) => i >= 2} {...tarjeta(1, cae[1])} /> : null}
+    </svg>
+  );
+};
+
+const BalanzaDibujada: React.FC<Omit<Props, 'lamina'>> = ({ paleta, id, angulo, izquierda, derecha, cae }) => {
   const bronce = mezclar(paleta.ocre, paleta.fondo, 0.15);
   const a = (angulo * Math.PI) / 180;
   const extremo = (lado: -1 | 1) => ({ x: CX + lado * BRAZO * Math.cos(a), y: CY + lado * BRAZO * Math.sin(a) });

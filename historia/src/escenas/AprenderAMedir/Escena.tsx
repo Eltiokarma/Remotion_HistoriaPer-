@@ -8,6 +8,7 @@ import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { Aula } from '../../components/graficos/Aula';
 import { Balanza } from '../../components/graficos/Balanza';
+import { useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Brujula } from '../../components/graficos/Brujula';
 import { Dispersion } from '../../components/graficos/Dispersion';
 import { Estante } from '../../components/graficos/Estante';
@@ -44,6 +45,9 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const explica = props.explicar_regresion;
   const tCaen = explica ? T('caen', tPuntos + 2) : tPuntos, tPendiente = explica ? T('pendiente', tRecta + 3) : undefined;
   const noche = mezclar(pal.fondo, '#000000', 0.3);
+  const ref = (archivo?: string) => (archivo ? { videoId: video.id, archivo } : undefined);
+  const lBalanza = useLamina(ref(props.laminas?.balanza)), lEstante = useLamina(ref(props.laminas?.estante));
+  const lBrujula = useLamina(ref(props.laminas?.brujula));
 
   // —— el mapa: la ruta a la tentación llega a medias, duda, se borra
   // con notas, la ruta llega entera (era el camino de los demás) y se borra cuando él decide
@@ -218,7 +222,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {muestra(3) ? (
         <AbsoluteFill style={{ opacity: entra(tBalanza), backgroundColor: noche }}>
           <Luz color={pal.ocre} x={50} y={35} radio={60} intensidad={0.2} />
-          <Balanza paleta={pal} id={`${escena.id}-bal`} angulo={angulo} izquierda={props.balanza[0]} derecha={props.balanza[1]} cae={[cae1, cae2]} />
+          <Balanza paleta={pal} id={`${escena.id}-bal`} angulo={angulo} izquierda={props.balanza[0]} derecha={props.balanza[1]} cae={[cae1, cae2]} lamina={lBalanza} />
         </AbsoluteFill>
       ) : null}
 
@@ -226,7 +230,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
         <AbsoluteFill style={{ opacity: entra(tEstante), backgroundColor: noche }}>
           <Luz color={pal.ocre} x={50} y={50} radio={60} intensidad={0.2} />
           <Estante paleta={pal} id={`${escena.id}-est`} titulos={props.temas} aparece={entra(tEstante)}
-            entra={props.temas.map((_, i) => caidaLibro(i, t))} escalas={props.temas.map((_, i) => deformaLibro(i))} />
+            entra={props.temas.map((_, i) => caidaLibro(i, t))} escalas={props.temas.map((_, i) => deformaLibro(i))} lamina={lEstante} />
           {props.ficha_estante ? (
             <div style={{ position: 'absolute', left: 120, top: 90 }}>
               <Ficha texto={props.ficha_estante} t={t - tEstante - 0.4} color={pal.papel} acento={pal.rojo} size={30} />
@@ -251,7 +255,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
         <AbsoluteFill style={{ opacity: entra(tBrujula), backgroundColor: noche }}>
           {tizaK > 0 ? <Pizarra aparece={tizaK} /> : null}
           <Luz color={pal.ocre} x={50} y={45} radio={55} intensidad={0.22 * (1 - tizaK)} />
-          <Brujula paleta={pal} id={`${escena.id}-bru`} angulo={anguloAguja} radio={ladoALado ? 250 : 290} tiza={tizaK}
+          <Brujula paleta={pal} id={`${escena.id}-bru`} angulo={anguloAguja} radio={ladoALado ? 250 : 290} tiza={tizaK} lamina={lBrujula}
             topes={ladoALado ? [-90, 90] : []}
             polos={ladoALado ? [{ texto: props.brujula[0], angulo: -90 }, { texto: props.brujula[1], angulo: 90 }]
               : [{ texto: props.brujula[0], angulo: 0 }, { texto: props.brujula[1], angulo: 180 }]} />

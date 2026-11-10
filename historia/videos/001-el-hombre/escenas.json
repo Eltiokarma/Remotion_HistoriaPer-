@@ -638,6 +638,11 @@
           "viaje": "vectorcraft/tanda06-viaje.json",
           "regresion": "vectorcraft/tanda06-regresion.json",
           "costo": "vectorcraft/tanda06-costo.json"
+        },
+        "laminas": {
+          "balanza": "vectorcraft/balanza-video01.json",
+          "estante": "vectorcraft/biblioteca-video01.json",
+          "brujula": "vectorcraft/brujula-video01.json"
         }
       },
       "camara": [
