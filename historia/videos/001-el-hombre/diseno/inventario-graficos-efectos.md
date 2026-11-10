@@ -129,7 +129,22 @@ y volver a correr el script.
 fachada («no representa una sede histórica concreta») y el del fichero son texto claro pensado para fondo
 oscuro; sobre papel no se leen. Si hacen falta, hay que decidir dónde ponerlos.
 
-**Efectos de la sección C que siguen pendientes:** E01–E06 y E08–E12 (cámara del mapa de Lima, recorrido del
-viaje, recta que busca su pendiente, tabla A.4/A.6). Esta integración solo recuperó E07 (el origen documental
-de los puntos). La guía de dirección (`DIRECCION_DE_VIDEO.md`) todavía dice «pequeña cruz»: es texto del
-director y no se tocó.
+**Efectos de la sección C.** E07 se recuperó con el fichero. Los demás, en la tanda siguiente (abajo).
+
+## G. Efectos recuperados (10 de noviembre de 2026)
+
+| ID | Cómo quedó | Componente |
+|---|---|---|
+| E01 | La cámara se acerca a Lima (×1,5, 2,4 s, `solemne`) sin moverla: el mapa crece a su alrededor | `LugarLamina` |
+| E02 | La pizarra se retira y el mapa queda como recuadro de la página; el agua lo cubre con su frente y vuelve con el papel | `LugarLamina` + `frenteSecado` |
+| E03 | Cámara de la muestra original: se echa atrás, se lanza, mira 7 % por delante, frena y se abre con resorte; hasta ×1,9 y acotada al área útil del mapa | `ViajeLamina` |
+| E04 | La ruta a París se escribe tramo a tramo, duda y se borra desde la punta; las notas entran renglón por renglón junto a la ciudad | `ViajeLamina` |
+| E05 | Paralelos 0°, 15° y 30° que se encienden al cruzarlos (latitud con la Mercator calibrada de la lámina: ecuador en y = 820,2), faro del destino, llegada con resorte y contador de km | `ViajeLamina`; tics recalculados sobre la ruta de la lámina (D1) |
+| E06 | «Columbia University / Beca · H. S. Klein» se escribe de izquierda a derecha al ritmo de las teclas | `ViajeLamina` |
+| E08 | La recta entra torcida, gira hasta la que mejor pasa y se asienta; después los residuos se estiran desde cada punto, con su explicación | `VectorCraft` (regresión) |
+| E09 | «Y dice cuánto pesa»: el escalón de la pendiente sobre la recta, «un paso» y «cuánto sube» | `VectorCraft` (regresión) |
+| E10 | Los puntos simulados se retiran primero; solo los ejes del ejemplo viajan hasta los de la serie real. No se sugiere que el ejemplo sea una medición | `VectorCraft` (`haciaSerie`) |
+| E11 | Columna con los cuadros A.4 y A.6: cada fila se enciende, se subraya y un hilo la une a su punto (el gráfico se achica a 86 % para dejarle lugar) | `VectorCraft` (`tabla`) |
+| E12 | La línea llega a cada punto cuando ese punto se enciende; cada punto late; la banda 3–4 % se extiende de izquierda a derecha | `VectorCraft` (costo) |
+
+La guía de dirección (`DIRECCION_DE_VIDEO.md`) todavía dice «pequeña cruz»: es texto del director y no se tocó.

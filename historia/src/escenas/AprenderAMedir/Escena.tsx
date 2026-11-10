@@ -239,7 +239,8 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       ) : null}
 
       {muestra(2) && props.vectorcraft ? <AbsoluteFill style={{opacity: entra(tPuntos)}}>
-        <VectorCraft videoId={video.id} archivo={props.vectorcraft.regresion} modo="regresion" t={t} beats={b} origen={lFichero ? BOCA_FICHERO : undefined} />
+        <VectorCraft videoId={video.id} archivo={props.vectorcraft.regresion} modo="regresion" t={t} beats={b} origen={lFichero ? BOCA_FICHERO : undefined}
+          haciaSerie={props.serie?.cuadro ? tramo(t, tSerie, 0.9, 'pesado') : 0} />
         {lFichero ? (() => {
           // (va encima de la lámina de la regresión, que trae su pizarra de fondo)
           // el fichero del archivo entra antes de que caigan los puntos, sus fichas se levantan una tras
@@ -257,7 +258,13 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
             </div>
           );
         })() : null}
-        {t >= tSerie ? <AbsoluteFill style={{opacity: tramo(t, tSerie, 0.6, 'natural')}}><VectorCraft videoId={video.id} archivo={props.vectorcraft.costo} modo="costo" t={t} beats={b} /></AbsoluteFill> : null}
+        {t >= tSerie ? (
+          // E10: con la tabla, los ejes del ejemplo llegan primero hasta los de la serie y recién ahí entra el gráfico real
+          <AbsoluteFill style={{ opacity: tramo(t, props.serie?.cuadro ? tSerie + 0.6 : tSerie, props.serie?.cuadro ? 0.5 : 0.6, 'natural') }}>
+            <VectorCraft videoId={video.id} archivo={props.vectorcraft.costo} modo="costo" t={t} beats={b}
+              tabla={props.serie?.cuadro ? { titulo: props.serie.cuadro.titulo, columnas: props.serie.cuadro.columnas, etiquetas: props.serie.etiquetas, valores: props.serie.valores } : undefined} />
+          </AbsoluteFill>
+        ) : null}
       </AbsoluteFill> : null}
       {muestra(2) && !props.vectorcraft ? (
         <AbsoluteFill style={{ opacity: entra(tPuntos) }}>
