@@ -5,7 +5,8 @@
  *
  *   npm run escaleta -- 000-quiroz      → escribe videos/000-quiroz/escaleta.md
  *
- * La voz sale de public/videos/<id>/voz-provisional/tiempos.json (lo escribe voz_provisional.py).
+ * La voz sale de videos/<id>/narracion_tiempos.json (la narración real, de narracion.py) o, si no
+ * existe, de public/videos/<id>/voz-provisional/tiempos.json (lo escribe voz_provisional.py).
  * Las imágenes, de los beats de escenas.json y su descripción en src/escenas/<Escena>/esquema.ts.
  */
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
@@ -76,7 +77,9 @@ const video = process.argv[2];
 if (!video) throw new Error('uso: npm run escaleta -- 000-quiroz');
 const { video: v, errores } = validarVideo(JSON.parse(readFileSync(path.join(VIDEOS, video, 'escenas.json'), 'utf8')));
 if (!v) throw new Error(errores.join('\n'));
-const archivoTiempos = path.join(PUBLIC, 'videos', video, 'voz-provisional', 'tiempos.json');
+// La narración real manda (videos/<id>/narracion_tiempos.json, de scripts/narracion.py); si no hay, la provisional.
+const tiemposNarracion = path.join(VIDEOS, video, 'narracion_tiempos.json');
+const archivoTiempos = existsSync(tiemposNarracion) ? tiemposNarracion : path.join(PUBLIC, 'videos', video, 'voz-provisional', 'tiempos.json');
 const tiempos: Record<string, { duracion: number; frases: Frase[] }> = existsSync(archivoTiempos) ? JSON.parse(readFileSync(archivoTiempos, 'utf8')) : {};
 const archivoGuion = path.join(VIDEOS, video, 'guion.md');
 const guion = existsSync(archivoGuion) ? vozDelGuion(readFileSync(archivoGuion, 'utf8')) : new Map<string, string>();
@@ -85,7 +88,7 @@ const md: string[] = [];
 const resumen: string[] = [];
 let inicio = 0;
 md.push(`# Escaleta — ${v.id} · ${v.titulo}`, '');
-md.push('Generada con `npm run escaleta` a partir de `escenas.json`, la voz provisional (`tiempos.json`) y el guion. No se edita a mano: se vuelve a generar cada vez que cambia algo.', '');
+md.push('Generada con `npm run escaleta` a partir de `escenas.json`, los tiempos de la voz (`narracion_tiempos.json` o, si no hay, los de la provisional) y el guion. No se edita a mano: se vuelve a generar cada vez que cambia algo.', '');
 md.push('Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **Imagen** = cada beat (lo que cambia en pantalla) · **Sonido** = música, ambientes y silencios. Las palabras de la voz están escritas como las lee el TTS (números en letras, nombres extranjeros como suenan).', '');
 
 for (const e of v.escenas as Escena[]) {

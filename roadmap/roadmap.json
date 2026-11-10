@@ -1271,8 +1271,8 @@
     {
       "id": "e1-voz",
       "fase": "e1",
-      "titulo": "Narración con la voz de ElevenLabs «Narrador Historia Puno»",
-      "entregable": "public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 (ElevenLabs v3, emoción por frase, verificada contra el guion); `npm run validar -- 001-el-hombre --final` sin errores",
+      "titulo": "Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena)",
+      "entregable": "public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 con scripts/narracion.py, beats llevados a la voz y música rearmada; `npm run validar -- 001-el-hombre --final` sin errores",
       "estado": "hecho",
       "depende_de": [
         "e1-guion-externo"
@@ -1284,8 +1284,9 @@
       },
       "bloqueo": null,
       "evidencia": [
-        "historia/videos/001-el-hombre/fuentes.md",
-        "historia/CLAUDE.md"
+        "historia/videos/001-el-hombre/revision_gerson_2026-11-10.md",
+        "historia/scripts/narracion.py",
+        "historia/videos/001-el-hombre/escaleta.md"
       ],
       "tiempo": {
         "humano_min": null,

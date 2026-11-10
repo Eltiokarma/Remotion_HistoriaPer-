@@ -1,0 +1,26 @@
+{
+  "salida": "s01-el-hombre.mp3",
+  "t0": 38.4333,
+  "dur": 47.9333,
+  "capas": [
+    {
+      "archivo": "suno/V01_mus02_ver02.wav",
+      "inicio": 38.94,
+      "env": [
+        [
+          38.94,
+          1
+        ],
+        [
+          47.53333333333333,
+          1
+        ],
+        [
+          47.93333333333333,
+          0
+        ]
+      ]
+    }
+  ],
+  "nota": "tiempos en segundos de la escena, ya con la narración de Joder Jolines; env = [[t, ganancia]] con rampas lineales"
+}

@@ -37,10 +37,12 @@ Una serie se hace en el tiempo y necesita libertad para decidir. Por eso las reg
 
 No tienen excepción.
 
-1. **Narración: la voz «Narrador Historia Puno» de ElevenLabs** (voz diseñada, `BcI5qnQ6UpDt3HmW9BG7`,
-   modelo v3). **Decidido por Gerson el 2026-11-10**, en lugar de su voz real. Se genera **una toma
-   por escena** (no frase por frase: suena cortada y a distancias distintas del micrófono; ver
-   `videos/001-el-hombre/revision_gerson_2026-11-10.md`) y los beats se ajustan a la voz.
+1. **Narración: la voz «Joder Jolines» de ElevenLabs** (voz clonada en la cuenta de Gerson,
+   `sku3dGbfu1taqEDqvHsQ`, modelo v3). **Decidido por Gerson el 2026-11-10**, en lugar de su voz real.
+   Se genera con `scripts/narracion.py`: **una toma por escena** (no frase por frase: suena cortada y a
+   distancias distintas del micrófono; ver `videos/001-el-hombre/revision_gerson_2026-11-10.md`), los
+   respiros del guion garantizados con el aire de la propia toma, carraspeos limpiados, y después
+   `scripts/beats_a_la_voz.py` mueve los beats a la voz y `scripts/montar_musica.py` la música.
    Riesgo a la vista: la política de YouTube de julio de 2025 sobre «contenido inauténtico» puede
    desmonetizar voz sintética sobre material producido en serie; se declara en YouTube que el
    contenido usa voz generada y cada episodio tiene que sostenerse por su guion y su dirección

@@ -22,7 +22,7 @@
       "id": "s00",
       "seccion": "gancho",
       "componente": "Gancho",
-      "duracion_s": 33.67,
+      "duracion_s": 31.84,
       "cola_s": 1.2,
       "intensidad": 4,
       "cambio": "de no saber nada a cargar una cifra que duele (3–4 % de todo lo que produce el país, cada año, desde 1820) y una pregunta: ¿quién lo calculó?",
@@ -30,15 +30,15 @@
       "transicion_salida": "corte",
       "beats": {
         "anio": 0.3,
-        "rojo": 5.83,
-        "soles": 12.67,
-        "caen": 17.07,
-        "cuatro": 17.55,
-        "sueltos": 19.75,
-        "sistema": 21.74,
-        "colonia": 22.95,
-        "calculo": 25.88,
-        "libro": 29.38
+        "rojo": 6.79,
+        "soles": 14.43,
+        "caen": 18.58,
+        "cuatro": 19.03,
+        "sueltos": 21.2,
+        "sistema": 23.27,
+        "colonia": 24.53,
+        "calculo": 27.51,
+        "libro": 29.83
       },
       "props": {
         "anios": [
@@ -88,36 +88,37 @@
       "audio": {
         "musica": {
           "archivo": "s00-tajadas.mp3",
-          "nivel": 0.34
+          "nivel": 0.39
         },
         "duck_db": -14
       },
-      "estado_musica": "presente (pulso) → se apaga sobre el libro"
+      "estado_musica": "presente (pulso) → se apaga sobre el libro",
+      "beats_ajustados": true
     },
     {
       "id": "s01",
       "seccion": "gancho",
       "componente": "PruebasDeImprenta",
-      "duracion_s": 49.72,
+      "duracion_s": 45.43,
       "cola_s": 2.5,
       "intensidad": 3,
       "cambio": "de un desconocido a un hombre que corrige su libro contra el tiempo",
       "intencion": "abrir con la muerte y el libro sin decir quién es: los meses entre una y otro se recorren con la cámara, del punto oscuro a la luz; la muerte no es un dato más: cruz sobre negro, la frase entera, la fecha, y recién después el punto rojo",
       "transicion_salida": "corte",
       "beats": {
-        "ficha": 0.37,
-        "correcciones": 3.37,
-        "cita": 17.03,
-        "subrayado": 23.28,
-        "abajo": 28.67,
-        "muerte": 34.05,
-        "fecha": 36.45,
-        "linea": 38.95,
-        "recorre": 39.55,
-        "mayo": 43.11,
-        "final": 44.5,
-        "hombre": 47.51,
-        "encontro": 49.11
+        "ficha": 0.34,
+        "correcciones": 3.08,
+        "cita": 14.14,
+        "subrayado": 19.35,
+        "abajo": 24.11,
+        "muerte": 28.57,
+        "fecha": 30.49,
+        "linea": 33.34,
+        "recorre": 34.02,
+        "mayo": 37.88,
+        "final": 38.94,
+        "hombre": 42.58,
+        "encontro": 44.4
       },
       "props": {
         "ficha": "NUEVA YORK · 2012",
@@ -195,7 +196,7 @@
       "audio": {
         "musica": {
           "archivo": "s01-el-hombre.mp3",
-          "nivel": 0.35,
+          "nivel": 0.39,
           "desde_beat": "final"
         },
         "ambientes": [
@@ -210,26 +211,27 @@
           "hasta_beat": "linea"
         }
       },
-      "estado_musica": "ausente → entra al final y sigue sin corte en s02 (pista B de Suno)"
+      "estado_musica": "ausente → entra al final y sigue sin corte en s02 (pista B de Suno)",
+      "beats_ajustados": true
     },
     {
       "id": "s02",
       "seccion": "personaje",
       "componente": "Presentacion",
-      "duracion_s": 32,
+      "duracion_s": 24.37,
       "cola_s": 1,
       "intensidad": 1,
       "cambio": "de un nombre en una página a un nadador terco que llevó su disciplina a los archivos",
       "intencion": "página → piscina → página: el agua llega con «nadador» y se vuelve a secar en renglones con «archivos»; Cueto, que va a cerrar el arco, se presenta con su ficha",
       "transicion_salida": "corte",
       "beats": {
-        "nombre": 0.6,
-        "piscina": 8.6,
-        "ficha": 15.5,
-        "frenar": 20.6,
-        "renglon": 23.6,
-        "palabra": 28.5,
-        "lugar": 3
+        "nombre": 0.79,
+        "piscina": 7.66,
+        "ficha": 13.25,
+        "frenar": 17.48,
+        "renglon": 19.97,
+        "palabra": 23.34,
+        "lugar": 3.62
       },
       "props": {
         "fondo": "piscina",
@@ -305,7 +307,7 @@
       "audio": {
         "musica": {
           "archivo": "s02-el-hombre.mp3",
-          "nivel": 0.35
+          "nivel": 0.39
         },
         "ambientes": [
           {
@@ -327,29 +329,30 @@
         ],
         "duck_db": -15
       },
-      "estado_musica": "presente"
+      "estado_musica": "presente",
+      "beats_ajustados": true
     },
     {
       "id": "s03",
       "seccion": "su generación",
       "componente": "TiempoLargo",
-      "duracion_s": 46.82,
+      "duracion_s": 37.12,
       "cola_s": 1,
       "intensidad": 3,
       "cambio": "de un estudiante que entra a la universidad a uno que se hace la pregunta de su generación: ¿el país cambia o se repite?",
       "intencion": "los afiches gritan cambio; con «¿o repetía lo de siempre?», el afiche nuevo se despega y debajo asoma uno viejo, igual de prometedor; la pregunta queda en el aire",
       "transicion_salida": "corte",
       "beats": {
-        "sello": 4.3,
-        "primeros": 5.7,
-        "afiches": 9.5,
-        "afiche1": 12.77,
-        "afiche2": 14.56,
-        "afiche3": 16.41,
-        "volante": 22,
-        "despegue": 42.1,
-        "leer": 24.6,
-        "vuelve": 30.8
+        "sello": 3.34,
+        "primeros": 4.4,
+        "afiches": 7.53,
+        "afiche1": 10.92,
+        "afiche2": 12.3,
+        "afiche3": 14.26,
+        "volante": 18.6,
+        "despegue": 35.55,
+        "leer": 20.62,
+        "vuelve": 26.01
       },
       "props": {
         "sello": {
@@ -399,7 +402,7 @@
       "audio": {
         "musica": {
           "archivo": "s03-pais-nuevo.mp3",
-          "nivel": 0.35
+          "nivel": 0.42
         },
         "ambientes": [
           {
@@ -421,30 +424,31 @@
           "movimiento": "vuelve a ver el muro entero",
           "motivo": "«Para un estudiante de esa época…»: de él a su generación"
         }
-      ]
+      ],
+      "beats_ajustados": true
     },
     {
       "id": "s04",
       "seccion": "larga duración",
       "componente": "TiempoLargo",
-      "duracion_s": 65.57,
+      "duracion_s": 51.59,
       "cola_s": 1,
       "intensidad": 3,
       "cambio": "de la pregunta en el aire a una forma de responderla: la historia tiene capas que se mueven a distinta velocidad",
       "intencion": "la clase: Braudel en la pizarra; las capas se dibujan con tiza y brilla solo la que se nombra; la palabra del episodio; la nota y el remate escritos con peso",
       "transicion_salida": "corte",
       "beats": {
-        "braudel": 5.5,
-        "capas": 9.6,
-        "capa1": 14.56,
-        "capa2": 24.76,
-        "capa3": 31.27,
-        "bajar": 38.9,
-        "palabra": 42.9,
-        "subir": 46.47,
-        "realce": 51,
-        "remate": 54.29,
-        "clase": 2.2
+        "braudel": 4.66,
+        "capas": 8.33,
+        "capa1": 11.77,
+        "capa2": 19.72,
+        "capa3": 24.75,
+        "bajar": 31.48,
+        "palabra": 35.1,
+        "subir": 38.47,
+        "realce": 42.34,
+        "remate": 45.34,
+        "clase": 1.89
       },
       "props": {
         "acento_media": "#e8d9a8",
@@ -502,7 +506,7 @@
       "audio": {
         "musica": {
           "archivo": "s04-tres-velocidades.mp3",
-          "nivel": 0.35
+          "nivel": 0.31
         },
         "ambientes": [
           {
@@ -512,13 +516,14 @@
         ],
         "duck_db": -15
       },
-      "estado_musica": "ausente → las capas entran con su frase (arriba, al medio, al fondo) → solo el fondo en la palabra → vuelven todas"
+      "estado_musica": "ausente → las capas entran con su frase (arriba, al medio, al fondo) → solo el fondo en la palabra → vuelven todas",
+      "beats_ajustados": true
     },
     {
       "id": "s05",
       "seccion": "método",
       "componente": "AprenderAMedir",
-      "duracion_s": 108.67,
+      "duracion_s": 89.1,
       "cola_s": 1,
       "intensidad": 2,
       "cambio": "de un historiador de discursos a uno que mide, y que cambió de ideas",
@@ -526,34 +531,34 @@
       "transicion_salida": "corte",
       "beats": {
         "mapa": 0.2,
-        "paris": 4.37,
-        "duda": 15.84,
-        "sale": 17.04,
-        "llega": 20.64,
-        "abre": 21.28,
-        "ficha": 22.81,
-        "puntos": 29.22,
-        "discursos": 33.22,
-        "caen": 38.54,
-        "recta": 47.21,
-        "pendiente": 56.09,
-        "balanza": 70.84,
-        "profundidad": 75.64,
-        "claridad": 76.94,
-        "estante": 79.64,
-        "temas": 82.74,
-        "brujula": 87.82,
-        "giro": 92,
-        "regresion": 37.44,
-        "izquierda": 90.2,
-        "tiza": 99.63,
-        "frase": 103.62,
-        "serie": 63.28,
-        "paris_notas": 12.76,
-        "observacion": 41.62,
-        "residuos": 49.04,
-        "tendencia": 52.47,
-        "causalidad": 58.53
+        "paris": 3.83,
+        "duda": 12.88,
+        "sale": 13.7,
+        "llega": 16.31,
+        "abre": 16.95,
+        "ficha": 18.48,
+        "puntos": 24.0,
+        "discursos": 27.09,
+        "caen": 32.1,
+        "recta": 39.19,
+        "pendiente": 46.36,
+        "balanza": 58.59,
+        "profundidad": 62.66,
+        "claridad": 63.77,
+        "estante": 66.35,
+        "temas": 68.88,
+        "brujula": 73.29,
+        "giro": 77.04,
+        "regresion": 30.67,
+        "izquierda": 75.54,
+        "tiza": 83.54,
+        "frase": 86.99,
+        "serie": 52.57,
+        "paris_notas": 10.5,
+        "observacion": 34.4,
+        "residuos": 40.53,
+        "tendencia": 43.24,
+        "causalidad": 48.75
       },
       "props": {
         "origen": {
@@ -710,7 +715,7 @@
       "audio": {
         "musica": {
           "archivo": "s05-aprender-a-medir.mp3",
-          "nivel": 0.31
+          "nivel": 0.29
         },
         "ambientes": [
           {
@@ -720,13 +725,14 @@
         ],
         "duck_db": -15
       },
-      "estado_musica": "presente (Suno F: piano; el clarinete entra con «cuánto pesa»)"
+      "estado_musica": "presente (Suno F: piano; el clarinete entra con «cuánto pesa»)",
+      "beats_ajustados": true
     },
     {
       "id": "s06",
       "seccion": "puente",
       "componente": "MecanismoDeuda",
-      "duracion_s": 34.01,
+      "duracion_s": 30.69,
       "cola_s": 1.5,
       "intensidad": 5,
       "cambio": "del hombre que aprendió a medir a su primer caso: una deuda pagada con la plata del guano, y una pregunta abierta",
@@ -734,16 +740,16 @@
       "transicion_salida": "corte",
       "beats": {
         "hoja_entra": 0.3,
-        "hojea": 5.05,
-        "hoja_pagina": 13.45,
-        "hoja_zoom": 13.95,
+        "hojea": 4.56,
+        "hoja_pagina": 10.86,
+        "hoja_zoom": 11.23,
         "islas": 0.2,
-        "sacos": 16.21,
-        "flecha": 17.96,
-        "vales": 21.06,
-        "consolidacion": 22.96,
-        "pregunta": 32.05,
-        "hallazgo": 24.92
+        "sacos": 13.6,
+        "flecha": 15.06,
+        "vales": 18.02,
+        "consolidacion": 19.69,
+        "pregunta": 27.95,
+        "hallazgo": 21.56
       },
       "props": {
         "ficha": "SIGLO XIX · GUANO",
@@ -783,7 +789,7 @@
       "audio": {
         "musica": {
           "archivo": "s06-la-deuda.mp3",
-          "nivel": 0.48
+          "nivel": 0.4
         },
         "ambientes": [
           {
@@ -816,13 +822,14 @@
           "movimiento": "paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales",
           "motivo": "«una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)"
         }
-      ]
+      ],
+      "beats_ajustados": true
     },
     {
       "id": "s07",
       "seccion": "cierre",
       "componente": "Cierre",
-      "duracion_s": 6.21,
+      "duracion_s": 5.69,
       "cola_s": 11,
       "intensidad": 1,
       "cambio": "del caso abierto a la promesa del próximo episodio",
@@ -866,7 +873,8 @@
           "movimiento": "se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)",
           "motivo": "la música se queda sobre el final (revisión del director): el plano respira mientras se asienta la tristeza, sin congelarse"
         }
-      ]
+      ],
+      "beats_ajustados": true
     }
   ],
   "excepciones": [

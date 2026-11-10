@@ -1,0 +1,52 @@
+{
+  "salida": "s05-aprender-a-medir.mp3",
+  "dur": 90.6,
+  "lufs_ref": null,
+  "capas": [
+    {
+      "archivo": "suno/stems-F/0 Keyboard.wav",
+      "inicio": 0,
+      "env": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "archivo": "suno/stems-F/1 Strings.wav",
+      "inicio": 0,
+      "env": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "archivo": "suno/stems-F/2 Synth.wav",
+      "inicio": 0,
+      "env": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "archivo": "suno/stems-F/3 Woodwinds.wav",
+      "inicio": 0,
+      "env": [
+        [
+          45.86,
+          0
+        ],
+        [
+          47.36,
+          1
+        ]
+      ]
+    }
+  ],
+  "nota": "tiempos en segundos de la escena, ya con la narración de Joder Jolines; env = [[t, ganancia]] con rampas lineales"
+}

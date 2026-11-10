@@ -73,7 +73,7 @@ gantt
   Pasada de pulido de animación :done, e1pulido, 2026-11-03, 1d
   Guion tras la revisión externa :done, e1guionexterno, 2026-11-03, 1d
   Integrar los 16 diseños aprobados de VectorCraft conservando la animación :done, e1laminas, 2026-11-10, 1d
-  Narración con la voz de ElevenLabs «Narrador Historia Puno» :done, e1voz, 2026-11-10, 1d
+  Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena) :done, e1voz, 2026-11-10, 1d
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
@@ -386,12 +386,12 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `e1-laminas`
   - Prevista: — · Real: null
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-- [x] **Narración con la voz de ElevenLabs «Narrador Historia Puno»** `e1-voz` — ✅ hecho
-  - Entregable: public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 (ElevenLabs v3, emoción por frase, verificada contra el guion); `npm run validar -- 001-el-hombre --final` sin errores
+- [x] **Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena)** `e1-voz` — ✅ hecho
+  - Entregable: public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 con scripts/narracion.py, beats llevados a la voz y música rearmada; `npm run validar -- 001-el-hombre --final` sin errores
   - Depende de: `e1-guion-externo`
   - Prevista: — · Real: 2026-11-10
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Evidencia: [001-el-hombre/fuentes.md](historia/videos/001-el-hombre/fuentes.md) · [historia/CLAUDE.md](historia/CLAUDE.md)
+  - Evidencia: [001-el-hombre/revision_gerson_2026-11-10.md](historia/videos/001-el-hombre/revision_gerson_2026-11-10.md) · [scripts/narracion.py](historia/scripts/narracion.py) · [001-el-hombre/escaleta.md](historia/videos/001-el-hombre/escaleta.md)
 - [ ] **Musicalización con Suno (motivo de Quiroz, ocho pistas)** `e1-musica` — 🔄 en curso
   - Entregable: Pistas de Suno recortadas a los beats en public/videos/001-el-hombre/musica/, escenas.json y fuentes.md actualizados, audio de prueba del episodio
   - Prevista: — · Real: 2026-11-10 → …

@@ -1,0 +1,21 @@
+{
+  "salida": "s03-pais-nuevo.mp3",
+  "dur": 38.62,
+  "capas": [
+    {
+      "archivo": "suno/V01_mus03_ver01_5.wav",
+      "inicio": -6.45,
+      "env": [
+        [
+          -6.45,
+          0
+        ],
+        [
+          -6.05,
+          1
+        ]
+      ]
+    }
+  ],
+  "nota": "tiempos en segundos de la escena, ya con la narración de Joder Jolines; env = [[t, ganancia]] con rampas lineales"
+}

@@ -1,34 +1,35 @@
 {
- "voz": "BcI5qnQ6UpDt3HmW9BG7",
- "nombre": "Narrador Historia Puno",
+ "voz": "sku3dGbfu1taqEDqvHsQ",
+ "nombre": "Joder Jolines",
+ "tipo": "clonada (cuenta de ElevenLabs de Gerson)",
  "modelo": "eleven_v3",
  "voice_settings": {
   "stability": 0.5,
   "similarity_boost": 0.8
  },
- "nota": "Una entrada por frase, en el orden de voz-provisional/tiempos.json. Texto con etiquetas de emoción de v3; [texto, {ajustes}] cambia voice_settings solo en esa frase. Cada frase se coloca en el tiempo de la provisional (no antes) y la escena se completa hasta su duración, para no mover los beats.",
+ "nota": "Una toma por escena (scripts/narracion.py): las frases de cada escena se dicen seguidas en una sola generación, con sus etiquetas de emoción. «cortes» parte la toma solo donde el guion pide una pausa larga (s01: la cruz sobre negro) y la rellena con el aire de la propia toma. Decidido por Gerson el 2026-11-10.",
+ "cortes": {
+  "s01": {
+   "7": 6.65
+  }
+ },
  "frases": {
   "s00": [
-   [
-    "[serious] [slowly] [measured] Desde mil ochocientos veinte... la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento... de todo lo que produce.",
-    {
-     "speed": 0.85
-    }
-   ],
-   "[quietly] [heavy] Cada año.",
-   "[calm] [deliberate] Del presupuesto del Estado, de cada diez soles... se fueron entre tres y cuatro.",
-   "[firm] [low voice] No son casos sueltos: es el sistema. Y viene desde la colonia.",
-   "[warmer] [softly] Lo calculó un historiador limeño.",
+   "[serious] [slowly] Desde mil ochocientos veinte... la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento... de todo lo que produce.",
+   "[whispers] Cada año.",
+   "[calm] Del presupuesto del Estado, de cada diez soles... se fueron entre tres y cuatro.",
+   "[firm] No son casos sueltos: es el sistema. Y viene desde la colonia.",
+   "[softly] Lo calculó un historiador limeño.",
    "[sad] [quietly] Y no llegó a ver su libro en español."
   ],
   "s01": [
    "[calm] [quietly] Nueva York.",
    "[calm] [observant] Nuestro historiador revisa, con minuciosidad, las pruebas de imprenta.",
-   "[calm] Es la traducción al español de su último libro.",
+   "Es la traducción al español de su último libro.",
    "[softly] [serious] No le queda mucho tiempo... y lo sabe.",
    "[gentle] En los agradecimientos escribe una línea que casi nadie lee.",
-   "[tender] [softly] Les da las gracias a sus médicos por alargar estos días, para poder completar la tarea.",
-   "[warm] [slight smile] Unas líneas más abajo celebra el nacimiento de su hijo.",
+   "[tender] Les da las gracias a sus médicos por alargar estos días, para poder completar la tarea.",
+   "[warm] Unas líneas más abajo celebra el nacimiento de su hijo.",
    "[sad] [quietly] [slowly] Murió en enero de dos mil trece.",
    "[quietly] El libro salió en mayo.",
    "[warm] [resolute] Estos videos son sobre ese hombre... y sobre lo que encontró."

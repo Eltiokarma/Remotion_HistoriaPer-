@@ -1,23 +1,21 @@
 {
   "salida": "s06-la-deuda.mp3",
-  "nota": "tiempos en segundos de la escena (voz provisional); env = [[t, ganancia]] con rampas lineales",
-  "dur": 36.0,
-  "lufs_ref": -18,
+  "dur": 32.69,
   "capas": [
     {
       "archivo": "suno/V01_mus-G_ver01_3.wav",
-      "inicio": 2.5,
-      "db": 0,
+      "inicio": -1.65,
       "env": [
         [
-          2.5,
+          -1.65,
           0
         ],
         [
-          3.5,
+          -0.6499999999999999,
           1
         ]
       ]
     }
-  ]
+  ],
+  "nota": "tiempos en segundos de la escena, ya con la narración de Joder Jolines; env = [[t, ganancia]] con rampas lineales"
 }

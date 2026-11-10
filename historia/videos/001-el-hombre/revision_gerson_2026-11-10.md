@@ -44,3 +44,21 @@ narración actual (`voz/`, «Narrador Historia Puno») y a las pruebas con otras
 Anotado, sin renderizar (pedido de Gerson: «solo estoy dejando anotaciones»). Pendiente: decidir
 la voz (Narrador Historia Puno, Jolines Narrador o Joder Jolines) y regenerarla por escena con el
 arreglo de arriba.
+
+## Estado de la revisión (2026-11-10, después)
+
+Gerson eligió **«Joder Jolines»**. Aplicado:
+
+- `scripts/narracion.py`: una toma por escena; s01 partida solo en la cruz sobre negro, con el aire de
+  la toma; 25 respiros del guion alargados con ese aire; fundidos de entrada y salida en cada toma (la
+  toma terminaba con un resto de sonido y se oía un corte); carraspeos en pausas limpiados (s02, s04,
+  s05). Tomas regeneradas: s05 (decía «hacía» por «hace»), s04 (decía «Quiroga»), s02 y s06.
+- `scripts/beats_a_la_voz.py`: todos los beats llevados a la voz (`beats_ajustados: true`).
+- `scripts/montar_musica.py`: la música de s00 a s06 rearmada sobre los beats nuevos; el empalme
+  s01→s02 recalculado al cuadro.
+- La escaleta mide ahora con la narración real: la voz ocupa del 54 al 76 % de cada escena.
+- Control del audio completo: 0 cortes en seco, empalme parejo, −16,7 LUFS. El efecto `saco`, −2 dB
+  (sumado a la voz en s06 dejaba el pico en −0,6 dBFS).
+- El episodio dura **5:36** (antes 6:37): la voz habla más rápido aun con los respiros.
+
+Pendiente antes de publicar: el permiso de la voz clonada y los enlaces de Suno (`fuentes.md`).

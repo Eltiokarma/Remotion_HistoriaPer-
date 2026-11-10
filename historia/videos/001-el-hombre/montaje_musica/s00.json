@@ -1,0 +1,22 @@
+{
+  "salida": "s00-tajadas.mp3",
+  "t0": 0.0,
+  "dur": 33.54,
+  "capas": [
+    {
+      "archivo": "suno/V01_mus01_ver03.wav",
+      "inicio": 0.29,
+      "env": [
+        [
+          0.29,
+          0
+        ],
+        [
+          0.59,
+          1
+        ]
+      ]
+    }
+  ],
+  "nota": "tiempos en segundos de la escena, ya con la narración de Joder Jolines; env = [[t, ganancia]] con rampas lineales"
+}
