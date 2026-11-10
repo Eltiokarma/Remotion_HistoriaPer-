@@ -1150,6 +1150,54 @@
       }
     },
     {
+      "id": "e1-laminas",
+      "fase": "e1",
+      "titulo": "Integrar los 16 diseños aprobados de VectorCraft conservando la animación",
+      "entregable": "Láminas separadas en piezas (scripts/vectorcraft-piezas.mjs) y dibujadas dentro de las animaciones de cada escena; vista previa completa de 720p y 48 MB para revisión",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-10",
+        "fin": "2026-11-10"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/diseno/inventario-graficos-efectos.md",
+        "historia/scripts/vectorcraft-piezas.mjs",
+        "historia/src/components/graficos/vectorcraft/Lamina.tsx"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": 1264,
+        "maquina": "contenedor"
+      }
+    },
+    {
+      "id": "e1-revision-laminas",
+      "fase": "e1",
+      "titulo": "Revisión de Gerson de la integración y de los efectos pendientes (E01–E06, E08–E12)",
+      "entregable": "Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO",
+      "estado": "pendiente",
+      "depende_de": [
+        "e1-laminas"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": null,
+        "fin": null
+      },
+      "bloqueo": null,
+      "evidencia": [],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
       "id": "e1-voz",
       "fase": "e1",
       "titulo": "Narración con la voz de Gerson",

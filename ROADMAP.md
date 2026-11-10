@@ -12,7 +12,7 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **23** · 🔄 en curso: **2** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **24** · 🔄 en curso: **2** · ⏳ pendiente: **7** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -69,9 +69,10 @@ gantt
   Gancho del 0·1 :done, e1gancho, 2026-10-31, 1d
   Pasada de pulido de animación :done, e1pulido, 2026-11-03, 1d
   Guion tras la revisión externa :done, e1guionexterno, 2026-11-03, 1d
+  Integrar los 16 diseños aprobados de VectorCraft conservando la animación :done, e1laminas, 2026-11-10, 1d
 ```
 
-Sin fecha (15): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado), `e1-voz` (⏳ pendiente).
+Sin fecha (16): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-voz` (⏳ pendiente).
 
 ## Tareas
 
@@ -355,6 +356,16 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-03
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [001-el-hombre/guion.md](historia/videos/001-el-hombre/guion.md) · [001-el-hombre/fuentes.md](historia/videos/001-el-hombre/fuentes.md)
+- [x] **Integrar los 16 diseños aprobados de VectorCraft conservando la animación** `e1-laminas` — ✅ hecho
+  - Entregable: Láminas separadas en piezas (scripts/vectorcraft-piezas.mjs) y dibujadas dentro de las animaciones de cada escena; vista previa completa de 720p y 48 MB para revisión
+  - Prevista: — · Real: 2026-11-10
+  - Tiempo: H ¿? · A ¿? · R 1264 s en contenedor · tokens ¿?
+  - Evidencia: [diseno/inventario-graficos-efectos.md](historia/videos/001-el-hombre/diseno/inventario-graficos-efectos.md) · [scripts/vectorcraft-piezas.mjs](historia/scripts/vectorcraft-piezas.mjs) · [vectorcraft/Lamina.tsx](historia/src/components/graficos/vectorcraft/Lamina.tsx)
+- [ ] **Revisión de Gerson de la integración y de los efectos pendientes (E01–E06, E08–E12)** `e1-revision-laminas` — ⏳ pendiente
+  - Entregable: Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO
+  - Depende de: `e1-laminas`
+  - Prevista: — · Real: null
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
 - [ ] **Narración con la voz de Gerson** `e1-voz` — ⏳ pendiente
   - Entregable: public/videos/001-el-hombre/voz/sNN.wav de s00 a s07; `npm run validar -- 001-el-hombre --final` sin errores
   - Depende de: `e1-guion-externo`
