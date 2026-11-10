@@ -199,28 +199,28 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Entregable: MCP de Inkscape probado de punta a punta; clip de 5 s con sonido; informe con límites del MCP
   - Prevista: — · Real: 2026-11-07
   - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 10.1 s en contenedor · tokens ¿?
-  - Nota: Pedida por Gerson tras la investigación de MCP. Dibujo por MCP 3,7 s (21 llamadas). Borrador sin aprobar: balsa y boga genéricas, sin fuente. En la laptop de Gerson, sin probar.
+  - Nota: Pedida por Gerson tras la investigación de MCP. Dibujo por MCP 3,7 s (21 llamadas). Borrador sin aprobar: balsa y boga genéricas, sin fuente. En la laptop de Gerson, sin probar. Gerson (2026-11-10): Inkscape se reemplaza por VectorCraft.
   - Evidencia: [10-balsa-inkscape/INFORME.md](historia/laboratorio/muestras/10-balsa-inkscape/INFORME.md) · [10-balsa-inkscape/final-caliente.json](historia/laboratorio/resultados/10-balsa-inkscape/final-caliente.json) · [10-balsa-inkscape/vista-mcp.jpg](historia/laboratorio/resultados/10-balsa-inkscape/vista-mcp.jpg) · [docs/HERRAMIENTAS.md](docs/HERRAMIENTAS.md)
 - [x] **11 Título animado sin After Effects (Inkscape por MCP + Remotion)** `t2-titulo` — ✅ hecho
   - Entregable: Título del 0·1 dibujado letra por letra (trim paths), tinta, ficha y subrayado del corrector, con sonido; informe
   - Depende de: `t2-inkscape`
   - Prevista: — · Real: 2026-11-07
   - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 10.5 s en contenedor · tokens ¿?
-  - Nota: Pedida por Gerson como prueba frente a comprar After Effects. Borrador sin aprobar. Falta lo que AE sí tiene: una línea de tiempo para ajustar a mano.
+  - Nota: Pedida por Gerson como prueba frente a comprar After Effects. Borrador sin aprobar. Falta lo que AE sí tiene: una línea de tiempo para ajustar a mano. Gerson (2026-11-10): Inkscape se reemplaza por VectorCraft.
   - Evidencia: [11-titulo-inkscape/INFORME.md](historia/laboratorio/muestras/11-titulo-inkscape/INFORME.md) · [11-titulo-inkscape/final-caliente.json](historia/laboratorio/resultados/11-titulo-inkscape/final-caliente.json) · [11-titulo-inkscape/hoja.jpg](historia/laboratorio/resultados/11-titulo-inkscape/hoja.jpg)
 - [x] **12 Edición visual del Studio: ajustar tiempos y posiciones sin tocar código** `t2-studio` — ✅ hecho
   - Entregable: Pieza editable en Remotion Studio; ediciones probadas que se escriben en el código; regla de curvas = pesos; informe con alternativas
   - Depende de: `t2-titulo`
   - Prevista: — · Real: 2026-11-07
   - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 11.7 s en contenedor · tokens ¿?
-  - Nota: Gerson pidió investigar un «After Effects propio». Decidido el 2026-11-10: el Studio editable se usa para el catálogo; los episodios son datos en escenas.json (CLAUDE.md §15).
+  - Nota: Gerson pidió investigar un «After Effects propio». Decidido el 2026-11-10: el Studio editable se usa para el catálogo; los episodios son datos en escenas.json (CLAUDE.md §15). Aprobada para usar por Gerson (2026-11-10).
   - Evidencia: [12-titulo-editable/INFORME.md](historia/laboratorio/muestras/12-titulo-editable/INFORME.md) · [12-titulo-editable/edicion-1-clave.diff](historia/laboratorio/resultados/12-titulo-editable/edicion-1-clave.diff) · [12-titulo-editable/edicion-2-lienzo.diff](historia/laboratorio/resultados/12-titulo-editable/edicion-2-lienzo.diff) · [scripts/reglas.ts](historia/scripts/reglas.ts)
 - [x] **13 Efectos tipo After Effects con @remotion/effects** `t2-efectos` — ✅ hecho
   - Entregable: Clip con desenfoque de foco, LUT, resplandor, desenfoque de zoom y pasar página; costo por efecto; informe
   - Depende de: `t2-inkscape`
   - Prevista: — · Real: 2026-11-07
   - Tiempo: H ¿? · A 2026-11-07 (tiempo de sesión no registrado) · R 55.2 s en contenedor · tokens ¿?
-  - Nota: Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor. Gerson (2026-11-10): no hace falta probarlos en la laptop.
+  - Nota: Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor. Gerson (2026-11-10): no hace falta probarlos en la laptop. Aprobada para usar por Gerson (2026-11-10).
   - Evidencia: [13-efectos/INFORME.md](historia/laboratorio/muestras/13-efectos/INFORME.md) · [13-efectos/final-caliente.json](historia/laboratorio/resultados/13-efectos/final-caliente.json) · [13-efectos/hoja.jpg](historia/laboratorio/resultados/13-efectos/hoja.jpg)
 - [ ] **07 QGIS: el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar** `t2-qgis` — 💡 propuesto
   - Entregable: Datos con licencia (p. ej. Natural Earth, dominio público) + clip de 5 s con el Titicaca

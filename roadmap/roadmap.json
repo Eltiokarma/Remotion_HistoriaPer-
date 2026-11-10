@@ -563,7 +563,7 @@
         "render_s": 10.1,
         "maquina": "contenedor"
       },
-      "nota": "Pedida por Gerson tras la investigación de MCP. Dibujo por MCP 3,7 s (21 llamadas). Borrador sin aprobar: balsa y boga genéricas, sin fuente. En la laptop de Gerson, sin probar."
+      "nota": "Pedida por Gerson tras la investigación de MCP. Dibujo por MCP 3,7 s (21 llamadas). Borrador sin aprobar: balsa y boga genéricas, sin fuente. En la laptop de Gerson, sin probar. Gerson (2026-11-10): Inkscape se reemplaza por VectorCraft."
     },
     {
       "id": "t2-titulo",
@@ -591,7 +591,7 @@
         "render_s": 10.5,
         "maquina": "contenedor"
       },
-      "nota": "Pedida por Gerson como prueba frente a comprar After Effects. Borrador sin aprobar. Falta lo que AE sí tiene: una línea de tiempo para ajustar a mano."
+      "nota": "Pedida por Gerson como prueba frente a comprar After Effects. Borrador sin aprobar. Falta lo que AE sí tiene: una línea de tiempo para ajustar a mano. Gerson (2026-11-10): Inkscape se reemplaza por VectorCraft."
     },
     {
       "id": "t2-studio",
@@ -620,7 +620,7 @@
         "render_s": 11.7,
         "maquina": "contenedor"
       },
-      "nota": "Gerson pidió investigar un «After Effects propio». Decidido el 2026-11-10: el Studio editable se usa para el catálogo; los episodios son datos en escenas.json (CLAUDE.md §15)."
+      "nota": "Gerson pidió investigar un «After Effects propio». Decidido el 2026-11-10: el Studio editable se usa para el catálogo; los episodios son datos en escenas.json (CLAUDE.md §15). Aprobada para usar por Gerson (2026-11-10)."
     },
     {
       "id": "t2-efectos",
@@ -648,7 +648,7 @@
         "render_s": 55.2,
         "maquina": "contenedor"
       },
-      "nota": "Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor. Gerson (2026-11-10): no hace falta probarlos en la laptop."
+      "nota": "Pedida por Gerson. Los efectos WebGL2 funcionan sin GPU; los WebGPU (pasar página) no en el contenedor. Gerson (2026-11-10): no hace falta probarlos en la laptop. Aprobada para usar por Gerson (2026-11-10)."
     },
     {
       "id": "t2-qgis",

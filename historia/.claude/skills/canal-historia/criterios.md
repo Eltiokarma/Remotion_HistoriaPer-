@@ -81,6 +81,23 @@ se anota aquí.
 - **Decisión:** catálogo de piezas afinado en el Studio editable; episodios como datos en
   `escenas.json`; revisión automática. Detalle en `historia/CLAUDE.md` §15.
 
+### Muestras 09 a 13 y el oficio del skill (2026-11-10)
+
+- **Qué miró:** las muestras 09 (Puno de noche), 10 (balsa, Inkscape por MCP), 11 (título con
+  Inkscape), 12 (Studio editable) y 13 (efectos), y el oficio del skill v1.
+- **Veredicto:**
+  - 12 y 13: aprobadas para usar («estoy tranquilo con que te encargues de 12, 13»);
+  - el oficio del skill: aprobado («está bien»);
+  - Inkscape (10, 11): se reemplaza por **VectorCraft**;
+  - 09: sin veredicto propio.
+- **Regla que se deriva:**
+  - las láminas se dibujan en VectorCraft (por MCP, desde ChatGPT o Claude), no en Inkscape;
+  - para afinar piezas del catálogo, el Studio editable (12);
+  - para foco, luz o llevar una imagen a la paleta, `@remotion/effects` (13), solo los que usan WebGL2;
+  - el oficio (referencias, pase de imagen, coreografía, sonido en el golpe) vale para animar las
+    láminas de VectorCraft.
+- **Dónde aplica:** todo el canal.
+
 ## Formato para los próximos veredictos
 
 No se completan con suposiciones del agente. Formato para cada entrada:
