@@ -12,6 +12,8 @@ export const PASOS = ['islas', 'sacos', 'flecha', 'vales', 'consolidacion', 'pro
  * frase que corrige la versión aceptada y el libro donde quedó escrito.
  */
 export const esquema = z.object({
+  /** Láminas aprobadas que reemplazan el dibujo (grabado de las islas, edificio, vales) conservando la animación. */
+  laminas: z.object({ islas: z.string().optional(), estado: z.string().optional(), vale: z.string().optional() }).optional(),
   /** Ficha del grabado inicial. */
   ficha: z.string().optional(),
   /** Rótulo del edificio. */

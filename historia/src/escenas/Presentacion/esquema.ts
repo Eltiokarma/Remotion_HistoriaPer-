@@ -4,6 +4,14 @@ import type { Ejemplo } from '../ejemplo';
 /** Presentación de un personaje: nombre grande, años y un sello opcional. */
 export const esquema = z.object({
   vectorcraft: z.string().optional(),
+  /** Láminas aprobadas que reemplazan un dibujo conservando su animación. */
+  laminas: z.object({
+    piscina: z.string().optional(),
+    /** La lámina del lugar con su cámara: `foco` es el punto del lugar en la lámina, `marco` el recuadro del mapa
+     * y `recuadro` dónde queda en la página (x, y, ancho) cuando la pizarra se retira. */
+    lugar: z.object({ archivo: z.string(), foco: z.tuple([z.number(), z.number()]), marco: z.tuple([z.number(), z.number(), z.number(), z.number()]),
+      recuadro: z.tuple([z.number(), z.number(), z.number()]), escala: z.number().default(1.5) }).optional(),
+  }).optional(),
   /** "piscina": el carril se vuelve renglón (Quiroz nadador). "papel": directo sobre papel. */
   fondo: z.enum(['piscina', 'papel']).default('papel'),
   nombre: z.string(),

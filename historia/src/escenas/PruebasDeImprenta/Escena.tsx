@@ -5,6 +5,7 @@ import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { PilaDePaginas } from '../../components/graficos/PilaDePaginas';
 import { LineaDeTiempo } from '../../components/graficos/LineaDeTiempo';
+import { RecorteLamina, useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Ficha } from '../../components/texto/Ficha';
 import { Renglones } from '../../components/texto/Renglones';
 import { TrazoRojo } from '../../components/texto/TrazoRojo';
@@ -38,6 +39,8 @@ const Cita: React.FC<{ texto: string; subrayado?: string; k: number; color: stri
 
 export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, video }) => {
   const frame = useCurrentFrame();
+  const ref = (archivo?: string) => (archivo ? { videoId: video.id, archivo } : undefined);
+  const lPruebas = useLamina(ref(props.laminas?.pruebas)), lTiempo = useLamina(ref(props.laminas?.tiempo));
   const fps = video.fps;
   const t = frame / fps;
   const pal = video.paleta;
@@ -97,7 +100,7 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
             <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center',
               transform: `scale(${mix(1, 2.6, zambulle)}) rotate(${mix(-1.5, 0, zambulle)}deg)`, transformOrigin: '54% 40%' }}>
               <div style={{ marginTop: 60 }}>
-                <PilaDePaginas paleta={pal} id={`${escena.id}-pila`} width={620} variante="pruebas" semilla={2013}
+                <PilaDePaginas lamina={lPruebas} paleta={pal} id={`${escena.id}-pila`} width={620} variante="pruebas" semilla={2013}
                   correcciones={tramo(t, tCorr, DUR_CORR, 'natural')} />
               </div>
             </AbsoluteFill>
@@ -153,10 +156,31 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
       {fase === 'cruz' && props.cruz ? (
         <AbsoluteFill style={{ backgroundColor: '#000000', alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ opacity: tramo(t, tMuerte + 0.2, 1.4, 'solemne') * (1 - tramo(t, tLinea - 0.5, 0.5, 'natural')), display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 34 }}>
-            <svg width={60} height={84} viewBox="0 0 60 84">
-              <line x1={30} x2={30} y1={4} y2={80} stroke={alfa(pal.papel, 0.85)} strokeWidth={3} strokeLinecap="round" />
-              <line x1={10} x2={50} y1={26} y2={26} stroke={alfa(pal.papel, 0.85)} strokeWidth={3} strokeLinecap="round" />
-            </svg>
+            {lTiempo ? (() => {
+              // la flor de recuerdo de la lámina: el tallo crece desde el suelo, se abren las hojas y después
+              // los pétalos, despacio; nada rebota (es una despedida)
+              const tallo = tramo(t, tMuerte + 0.2, 1.4, 'solemne'), hojas = tramo(t, tMuerte + 0.9, 1.2, 'solemne'), petalos = tramo(t, tMuerte + 1.4, 1.6, 'solemne');
+              const desde = (x: number, y: number, k: number) => `translate(${x} ${y}) scale(${k}) translate(${-x} ${-y})`;
+              return (
+                <>
+                  <RecorteLamina lamina={lTiempo} caja={[150, 290, 175, 205]} ancho={210} capas={[
+                    { nombre: 'Flor_de_recuerdo', solo: (i) => i === 7, opacity: tallo },
+                    { nombre: 'Flor_de_recuerdo', solo: (i) => i === 0, transform: `translate(205 474) scale(1 ${tallo.toFixed(3)}) translate(-205 -474)` },
+                    { nombre: 'Flor_de_recuerdo', solo: (i) => i === 1, transform: desde(231, 442, hojas), opacity: hojas },
+                    { nombre: 'Flor_de_recuerdo', solo: (i) => i === 2, transform: desde(246, 415, hojas), opacity: hojas },
+                    { nombre: 'Flor_de_recuerdo', solo: (i) => i >= 3 && i <= 6, transform: desde(251, 376, mix(0.35, 1, petalos)), opacity: petalos },
+                  ]} />
+                  <div style={{ opacity: tramo(t, tMuerte + 2.2, 1.2, 'natural') }}>
+                    <RecorteLamina lamina={lTiempo} caja={[340, 404, 286, 38]} ancho={430} capas={[{ nombre: 'Enero', solo: (i) => i === 3 }]} />
+                  </div>
+                </>
+              );
+            })() : (
+              <svg width={60} height={84} viewBox="0 0 60 84">
+                <line x1={30} x2={30} y1={4} y2={80} stroke={alfa(pal.papel, 0.85)} strokeWidth={3} strokeLinecap="round" />
+                <line x1={10} x2={50} y1={26} y2={26} stroke={alfa(pal.papel, 0.85)} strokeWidth={3} strokeLinecap="round" />
+              </svg>
+            )}
             <div style={{ fontFamily: fuente.mono, fontSize: 34, letterSpacing: '0.3em', marginRight: '-0.3em', color: alfa(pal.papel, 0.8),
               opacity: tramo(t, tFecha, 1.2, 'natural') }}>{props.cruz.fecha}</div>
           </div>

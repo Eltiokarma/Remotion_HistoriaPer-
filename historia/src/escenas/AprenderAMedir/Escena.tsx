@@ -8,6 +8,8 @@ import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { Aula } from '../../components/graficos/Aula';
 import { Balanza } from '../../components/graficos/Balanza';
+import { RecorteLamina, useLamina } from '../../components/graficos/vectorcraft/Lamina';
+import { latitudDeY, rutaDeLamina, ViajeLamina, yDeLatitud } from '../../components/graficos/ViajeLamina';
 import { Brujula } from '../../components/graficos/Brujula';
 import { Dispersion } from '../../components/graficos/Dispersion';
 import { Estante } from '../../components/graficos/Estante';
@@ -25,6 +27,11 @@ import type { esquema } from './esquema';
 type P = z.infer<typeof esquema>;
 /** Zoom de la cámara mientras sigue la ruta, y cuánto mira por delante de la punta (aire en la dirección del viaje). */
 const ZOOM_VIAJE = 2.1, MIRA_ADELANTE = 0.07;
+/** En la lámina el mapa es más chico que el dibujado: la cámara se acerca un poco menos para no salirse del área útil. */
+const ZOOM_VIAJE_LAMINA = 1.9;
+/** El fichero de la lámina, abajo a la izquierda (arriba queda el lugar de las frases); y su boca en pantalla. */
+const FICHERO = { x: 150, y: 640, ancho: 420, caja: [360, 210, 1220, 750] as [number, number, number, number] };
+const BOCA_FICHERO = { x: FICHERO.x + (960 - 360) * (420 / 1220), y: FICHERO.y + (470 - 210) * (420 / 1220) };
 /** Paralelos que se encienden al cruzarlos (el viaje pasa del sur al norte). */
 const PARALELOS = [{ lat: 0, rotulo: 'ECUADOR · 0°' }, { lat: 15, rotulo: '15° N' }, { lat: 30, rotulo: '30° N' }];
 
@@ -44,6 +51,11 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const explica = props.explicar_regresion;
   const tCaen = explica ? T('caen', tPuntos + 2) : tPuntos, tPendiente = explica ? T('pendiente', tRecta + 3) : undefined;
   const noche = mezclar(pal.fondo, '#000000', 0.3);
+  const ref = (archivo?: string) => (archivo ? { videoId: video.id, archivo } : undefined);
+  const lBalanza = useLamina(ref(props.laminas?.balanza)), lEstante = useLamina(ref(props.laminas?.estante));
+  const lBrujula = useLamina(ref(props.laminas?.brujula)), lFichero = useLamina(ref(props.laminas?.fichero));
+  const refViaje = props.laminas?.viaje;
+  const lViaje = useLamina(ref(refViaje?.archivo));
 
   // —— el mapa: la ruta a la tentación llega a medias, duda, se borra
   // con notas, la ruta llega entera (era el camino de los demás) y se borra cuando él decide
@@ -78,15 +90,23 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const llegaDestino = t < tLlega ? 0 : spring({ frame: frame - tLlega * fps, fps, config: { damping: 9, mass: 0.6, stiffness: 150 } });
   const anuncia = tramo(t, tSale - 0.6, 0.8, 'natural') * (1 - tramo(t, tLlega, 0.5, 'natural'));
   // cuándo cruza cada paralelo (para encenderlo y que suene)
+  // con la lámina, la ruta y la latitud son las de la lámina (si no, los tics no caen donde se ve el cruce)
+  const rutaL = useMemo(() => (lViaje ? rutaDeLamina(lViaje) : null), [lViaje]);
   const cruces = useMemo(() => PARALELOS.map((p) => {
     for (let tt = tSale; tt <= tLlega; tt += 1 / fps) {
-      const q = getPointAtLength(ruta.d, ruta.largo * avance(tt));
-      const lat = q ? ruta.pr.invert?.([q.x, q.y])?.[1] ?? -90 : -90;
+      let lat = -90;
+      if (rutaL && refViaje) {
+        const q = getPointAtLength(rutaL.d, rutaL.largo * avance(tt));
+        lat = q ? latitudDeY(refViaje.mercator, q.y) : -90;
+      } else {
+        const q = getPointAtLength(ruta.d, ruta.largo * avance(tt));
+        lat = q ? ruta.pr.invert?.([q.x, q.y])?.[1] ?? -90 : -90;
+      }
       if (lat >= p.lat) return tt;
     }
     return Infinity;
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }), [ruta, tSale, tLlega, fps]);
+  }), [ruta, rutaL, tSale, tLlega, fps]);
   const paralelos = PARALELOS.map((p, i) => {
     const tc = cruces[i];
     const pulso = t < tc ? 0 : clamp((t - tc) / 0.15) * (0.15 + 0.85 * Math.exp(-(t - tc) * 1.6));
@@ -137,7 +157,42 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
 
   return (
     <AbsoluteFill style={{ backgroundColor: noche }}>
-      {muestra(1) && props.vectorcraft ? <AbsoluteFill style={{opacity: entra(tMapa)}}><VectorCraft videoId={video.id} archivo={props.vectorcraft.viaje} modo="viaje" t={t} beats={b} notas={props.tentacion_notas} /></AbsoluteFill> : null}
+      {muestra(1) && lViaje && refViaje ? (
+        <AbsoluteFill style={{ opacity: entra(tMapa) }}>
+          <ViajeLamina lamina={lViaje} t={t} aparece={1} avance={k} camara={z0} zoom={ZOOM_VIAJE_LAMINA} miraAdelante={MIRA_ADELANTE}
+            alternativa={kTentacion} paris={t > tParis ? mix(conNotas ? mix(0.5, 1, hacia) : 0.5, 0.18, borra) : 0}
+            faro={anuncia * mix(0.35, 1, k)} llegada={llegaDestino} ficha={clamp((t - tFicha - 0.6) / (props.ficha.length / 18))}
+            paralelos={paralelos.map((q) => ({ y: yDeLatitud(refViaje.mercator, q.lat), rotulo: q.rotulo, brillo: q.brillo }))}
+            leyenda={tramo(t, tFicha, 0.8, 'natural')} />
+          {/* por qué todos miraban a París: renglón por renglón, junto a la ciudad; se va cuando él decide */}
+          {conNotas ? (
+            <div style={{ position: 'absolute', left: 1214, top: 344, padding: '14px 22px', background: alfa('#16241c', 0.82 * (1 - borra) * tramo(t, tNotas, 0.5, 'natural')),
+              opacity: 1 - borra * (1 - z0) }}>
+              {props.tentacion_notas!.map((n, i) => {
+                const ki = tramo(t, tNotas + i * 0.7, 0.7, 'natural');
+                return (
+                  <div key={i} style={{ fontFamily: fuente.mono, fontSize: i === 0 ? 19 : 25, letterSpacing: '0.16em', marginTop: i === 0 ? 0 : 10,
+                    color: i === 0 ? alfa(pal.papel, 0.65) : pal.papel, opacity: ki * (1 - borra), transform: `translateY(${8 * (1 - ki)}px)` }}>{n}</div>
+                );
+              })}
+            </div>
+          ) : null}
+          {/* el contador del viaje: kilómetros en línea recta que se van sumando */}
+          {KM > 0 && contador > 0 ? (
+            <div style={{ position: 'absolute', right: 110, bottom: 130, opacity: contador, textAlign: 'right', padding: '12px 20px', background: alfa('#16241c', 0.8) }}>
+              <div style={{ fontFamily: fuente.mono, fontSize: 20, letterSpacing: '0.3em', color: alfa(pal.papel, 0.6), marginBottom: 8 }}>
+                {`${props.origen.nombre.toUpperCase()} → ${props.destino.nombre.toUpperCase()}`}
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'baseline', gap: 12, color: pal.papel }}>
+                <span style={{ fontFamily: fuente.mono, fontSize: 34, opacity: 0.6 }}>≈</span>
+                <Odometro valor={km} digitos={String(KM).length} velocidad={velocidadKm} fps={fps} fontFamily={fuente.mono} fontSize={46} color={pal.papel} />
+                <span style={{ fontFamily: fuente.mono, fontSize: 28, opacity: 0.75 }}>km</span>
+              </div>
+            </div>
+          ) : null}
+        </AbsoluteFill>
+      ) : null}
+      {muestra(1) && !lViaje && props.vectorcraft ? <AbsoluteFill style={{opacity: entra(tMapa)}}><VectorCraft videoId={video.id} archivo={props.vectorcraft.viaje} modo="viaje" t={t} beats={b} notas={props.tentacion_notas} /></AbsoluteFill> : null}
       {muestra(1) && !props.vectorcraft ? (
         <AbsoluteFill style={{ opacity: tramo(t, tMapa, 1, 'natural') }}>
           <Luz color={pal.ocre} x={40} y={40} radio={70} intensidad={0.08} />
@@ -184,8 +239,32 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       ) : null}
 
       {muestra(2) && props.vectorcraft ? <AbsoluteFill style={{opacity: entra(tPuntos)}}>
-        <VectorCraft videoId={video.id} archivo={props.vectorcraft.regresion} modo="regresion" t={t} beats={b} />
-        {t >= tSerie ? <AbsoluteFill style={{opacity: tramo(t, tSerie, 0.6, 'natural')}}><VectorCraft videoId={video.id} archivo={props.vectorcraft.costo} modo="costo" t={t} beats={b} /></AbsoluteFill> : null}
+        <VectorCraft videoId={video.id} archivo={props.vectorcraft.regresion} modo="regresion" t={t} beats={b} origen={lFichero ? BOCA_FICHERO : undefined}
+          haciaSerie={props.serie?.cuadro ? tramo(t, tSerie, 0.9, 'pesado') : 0} />
+        {lFichero ? (() => {
+          // (va encima de la lámina de la regresión, que trae su pizarra de fondo)
+          // el fichero del archivo entra antes de que caigan los puntos, sus fichas se levantan una tras
+          // otra y de su boca sale cada observación; se va antes de que se escriba la recta
+          const kF = tramo(t, tCaen - 2.2, 1.2, 'pesado') * (1 - tramo(t, tRecta - 1, 0.8, 'natural'));
+          if (kF <= 0) return null;
+          const fichas = ['Ficha_FUENTES', 'Ficha_FECHAS', 'Ficha_CIFRAS', 'Ficha_CONTRASTE'];
+          return (
+            <div style={{ position: 'absolute', left: FICHERO.x, top: FICHERO.y, opacity: kF, transform: `translateY(${(1 - kF) * 30}px)` }}>
+              <RecorteLamina lamina={lFichero} caja={FICHERO.caja} ancho={FICHERO.ancho} capas={[
+                { nombre: 'Caja_de_madera' },
+                ...fichas.map((n, j) => ({ nombre: n, transform: `translate(0 ${-60 * tramo(t, tCaen - 0.9 + j * 0.35, 0.5, 'pesado') * (1 - tramo(t, tCaen + 0.6 + j * 0.35, 0.6, 'natural'))})` })),
+                { nombre: 'Cajón_frontal' }, { nombre: 'Porte-étiquette' }, { nombre: 'Poignée' },
+              ]} />
+            </div>
+          );
+        })() : null}
+        {t >= tSerie ? (
+          // E10: con la tabla, los ejes del ejemplo llegan primero hasta los de la serie y recién ahí entra el gráfico real
+          <AbsoluteFill style={{ opacity: tramo(t, props.serie?.cuadro ? tSerie + 0.6 : tSerie, props.serie?.cuadro ? 0.5 : 0.6, 'natural') }}>
+            <VectorCraft videoId={video.id} archivo={props.vectorcraft.costo} modo="costo" t={t} beats={b}
+              tabla={props.serie?.cuadro ? { titulo: props.serie.cuadro.titulo, columnas: props.serie.cuadro.columnas, etiquetas: props.serie.etiquetas, valores: props.serie.valores } : undefined} />
+          </AbsoluteFill>
+        ) : null}
       </AbsoluteFill> : null}
       {muestra(2) && !props.vectorcraft ? (
         <AbsoluteFill style={{ opacity: entra(tPuntos) }}>
@@ -218,7 +297,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {muestra(3) ? (
         <AbsoluteFill style={{ opacity: entra(tBalanza), backgroundColor: noche }}>
           <Luz color={pal.ocre} x={50} y={35} radio={60} intensidad={0.2} />
-          <Balanza paleta={pal} id={`${escena.id}-bal`} angulo={angulo} izquierda={props.balanza[0]} derecha={props.balanza[1]} cae={[cae1, cae2]} />
+          <Balanza paleta={pal} id={`${escena.id}-bal`} angulo={angulo} izquierda={props.balanza[0]} derecha={props.balanza[1]} cae={[cae1, cae2]} lamina={lBalanza} />
         </AbsoluteFill>
       ) : null}
 
@@ -226,7 +305,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
         <AbsoluteFill style={{ opacity: entra(tEstante), backgroundColor: noche }}>
           <Luz color={pal.ocre} x={50} y={50} radio={60} intensidad={0.2} />
           <Estante paleta={pal} id={`${escena.id}-est`} titulos={props.temas} aparece={entra(tEstante)}
-            entra={props.temas.map((_, i) => caidaLibro(i, t))} escalas={props.temas.map((_, i) => deformaLibro(i))} />
+            entra={props.temas.map((_, i) => caidaLibro(i, t))} escalas={props.temas.map((_, i) => deformaLibro(i))} lamina={lEstante} />
           {props.ficha_estante ? (
             <div style={{ position: 'absolute', left: 120, top: 90 }}>
               <Ficha texto={props.ficha_estante} t={t - tEstante - 0.4} color={pal.papel} acento={pal.rojo} size={30} />
@@ -251,7 +330,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
         <AbsoluteFill style={{ opacity: entra(tBrujula), backgroundColor: noche }}>
           {tizaK > 0 ? <Pizarra aparece={tizaK} /> : null}
           <Luz color={pal.ocre} x={50} y={45} radio={55} intensidad={0.22 * (1 - tizaK)} />
-          <Brujula paleta={pal} id={`${escena.id}-bru`} angulo={anguloAguja} radio={ladoALado ? 250 : 290} tiza={tizaK}
+          <Brujula paleta={pal} id={`${escena.id}-bru`} angulo={anguloAguja} radio={ladoALado ? 250 : 290} tiza={tizaK} lamina={lBrujula}
             topes={ladoALado ? [-90, 90] : []}
             polos={ladoALado ? [{ texto: props.brujula[0], angulo: -90 }, { texto: props.brujula[1], angulo: 90 }]
               : [{ texto: props.brujula[0], angulo: 0 }, { texto: props.brujula[1], angulo: 180 }]} />

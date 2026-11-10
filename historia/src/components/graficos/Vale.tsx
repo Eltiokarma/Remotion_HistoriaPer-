@@ -5,6 +5,7 @@ import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
 import { PatronPapel } from '../atmosfera/Papel';
 import { bordePapel, trazoManuscrito } from './svg';
+import { CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
   paleta: Paleta;
@@ -17,6 +18,8 @@ type Props = {
   monto?: React.ReactNode;
   width?: number;
   semilla?: number;
+  /** Lámina aprobada (vale-video01): encabezado y campos editoriales, sin cifras; el monto lo pone la escena. */
+  lamina?: Lamina | null;
 };
 
 const W = 900, H = 480;
@@ -49,7 +52,41 @@ const cenefa = (m: number, amp: number, n: number, fase: number): string => {
  * Vale de deuda del siglo XIX, genérico: papel de seguridad con guilloché, roseta, casilla del
  * monto y firmas ilegibles. No reproduce ningún documento real.
  */
-export const Vale: React.FC<Props> = ({ paleta, id, titulo = 'VALE', edad = 0.3, monto, width = 900, semilla = 1 }) => {
+export const Vale: React.FC<Props> = ({ lamina, ...props }) => {
+  const uid = usePrefijo();
+  if (lamina) return <ValeLamina {...props} lamina={lamina} uid={uid} />;
+  return <ValeDibujado {...props} />;
+};
+
+/** La hoja de arriba de la lámina (290, 180, 1240 × 620) y su casilla del monto. */
+const HOJA = { x: 290, y: 180, w: 1240, h: 620 };
+const CASILLA = { x: 1060, y: 552, w: 310, h: 115 };
+
+/**
+ * Un vale de la lámina. No lleva el sello rojo de la lámina (la escena lo estampa con su golpe) y,
+ * cuando la escena trae un monto, «por examinar» deja su lugar al contador.
+ */
+const ValeLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: string }> = ({ paleta, edad = 0.3, monto, width = 900, lamina, uid }) => {
+  const k = width / HOJA.w;
+  return (
+    <div style={{ position: 'relative', width, height: HOJA.h * k }}>
+      <svg viewBox={`${HOJA.x} ${HOJA.y} ${HOJA.w} ${HOJA.h}`} width={width} height={HOJA.h * k} style={{ position: 'absolute', inset: 0, overflow: 'visible' }}>
+        <DefsLamina lamina={lamina} uid={uid} />
+        <CapaVC lamina={lamina} uid={uid} nombre="Papel___hojas" solo={(i) => i === 3} />
+        <CapaVC lamina={lamina} uid={uid} nombre="Cenefas" />
+        <CapaVC lamina={lamina} uid={uid} nombre="Contenido_editorial" solo={(i) => !(monto && i === 7)} />
+        {/* los años: el vale más viejo, más tostado */}
+        <rect x={HOJA.x} y={HOJA.y} width={HOJA.w} height={HOJA.h} fill={mezclar(paleta.ocre, '#6b4a1c', 0.5)} opacity={0.05 + 0.2 * edad} style={{ mixBlendMode: 'multiply' }} />
+      </svg>
+      {monto ? (
+        <div style={{ position: 'absolute', left: (CASILLA.x - HOJA.x) * k, top: (CASILLA.y - HOJA.y + 46) * k, width: CASILLA.w * k, height: (CASILLA.h - 46) * k,
+          display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{monto}</div>
+      ) : null}
+    </div>
+  );
+};
+
+const ValeDibujado: React.FC<Omit<Props, 'lamina'>> = ({ paleta, id, titulo = 'VALE', edad = 0.3, monto, width = 900, semilla = 1 }) => {
   const papel = mezclar(paleta.papel, mezclar(paleta.ocre, '#7a5a20', 0.4), 0.15 + 0.35 * edad);
   const tinta = mezclar(paleta.verde, paleta.fondo, 0.35);
   const g = useMemo(() => ({

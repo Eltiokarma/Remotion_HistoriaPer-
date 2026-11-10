@@ -93,3 +93,58 @@ El código original de muchas animaciones sigue en el repositorio: está desacti
 5. Cuando se autorice renderizar, comparar tramos antes/después y después preparar una previa completa de unos 50 MB. Hasta entonces, la revisión audiovisual permanece pendiente.
 
 Este inventario no marca las correcciones como hechas. Se han identificado los pendientes y su evidencia, sin alterar gráficos, audio, animaciones ni producir otro video.
+
+## F. Integración del 10 de noviembre de 2026
+
+Los 16 diseños pendientes o parciales (G01–G16) ya están integrados. **La revisión visual del director sigue
+pendiente**: lo que sigue es lo comprobado en cuadros sueltos y en la vista previa completa, no una aprobación.
+
+**Cómo se hizo.** `scripts/vectorcraft-piezas.mjs` separa cada SVG aprobado en capas y piezas, con la caja de
+cada pieza medida en Chromium (`public/videos/001-el-hombre/vectorcraft/<diseño>.json`). Cada componente
+recibe la lámina por `escenas.json` (`props.laminas`) y dibuja sus piezas **dentro de las mismas
+transformaciones animadas** que ya tenía. Sin lámina, el componente dibuja como antes (el 000 no cambia).
+Los componentes buscan las capas por nombre: si se reexporta un diseño, hay que conservar los nombres de capa
+y volver a correr el script.
+
+| ID | Escena | Qué se conserva del movimiento | Decisiones y diferencias con la lámina |
+|---|---|---|---|
+| G01 | s00 | El libro baja, se estampa por partes (autor y filetes → título y ornamentos → año) y la luz baja al final | Solo en s00. El libro de s06 (*La deuda defraudada*) sigue siendo la portada dibujada: no se reutiliza esta tapa para otro título |
+| G02 | s00 | Entran las diez, caen tres, la cuarta queda en duda con su contorno punteado, sonido | Entran doradas; **las que caen pasan a cobre al caer** y la dudosa, a la rayada. El color llega con el gesto |
+| G03 | s01 | Las correcciones se hacen una tras otra (llave, tachón, círculo, visto bueno, flecha, «precisar») y la cámara entra a la página | El lápiz rojo de la lámina reemplaza a la pluma y hace los trazos |
+| G04 | s01 | Pausa sobre negro, fecha, recorrido de meses y llegada al libro | **La cruz se reemplaza por la flor de recuerdo** (crece despacio) y «Fallece Alfonso Quiroz.»; en la línea, `FALLECE · 2 ENE 2013`. La línea de tiempo animada se conserva; la lámina no la reemplaza |
+| G05 | s02 | Página → piscina → página; el agua corre con la cámara y se calma al frenar; los renglones quedan | Pileta enmarcada (el marco no viaja): lo que corre es el agua (reflejos y cáusticas). Las corcheras se mecen |
+| G06 | s03 | El emblema cae y se asienta donde caía el sello; corchete de los primeros puestos | Lleva el aviso «Interpretación vectorial del escudo tradicional». Casi sin giro (es un escudo, no un timbrazo) |
+| G07 | s03 | Cada panfleto se pega con su resorte; cámara al volante y regreso; el último se despega | Mismo alto que los afiches dibujados, centrados en su lugar (son más angostos). Su pie dice «no es un afiche histórico» |
+| G08 | s05 | Antes de `caen`: el fichero entra, las fichas se levantan una tras otra y **cada punto sale de su boca en arco** | Recupera la procedencia documental (E07). Se va antes de que se escriba la recta |
+| G09 | s05 | La cruz se inclina con su peso, la aguja del fiel la sigue, las tarjetas caen sobre los platillos | Las palabras son las de la lámina (PROFUNDIDAD, CLARIDAD); si cambian en el guion, hay que reexportar |
+| G10 | s05 | Libros que caen por turnos, se estiran y se aplastan contra la repisa | Cuatro libros sueltos (sin los lomos sin título). Sin el encabezado de la lámina: chocaría con la ficha BARUCH COLLEGE |
+| G11 | s05 | Aguja de tope a tope con rebote, notas por época, paso a tiza | La lámina se escala al radio de la escena. Los rótulos de los polos crecen hacia afuera (antes pisaban el bisel) |
+| G12 | s06 | Libro, cámara al grabado, sacos que suben uno por uno, la cámara sigue a la fragata hasta el Estado | Mar, aves en vuelo y fragata animados. La fragata del Estado es la misma de la lámina |
+| G13 | s06 | Se dibuja de abajo hacia arriba; las ventanas se encienden con siluetas | Cuatro ventanas (antes, seis vanos) |
+| G14 | s06 | Apilado en arco, sello 1850 con golpe, monto que se infla | Sin el sello rojo de la lámina (lo estampa la escena). El contador entra en la casilla en lugar de «por examinar» |
+| G15 | s07 | Golpe, negro y tarjeta | **Cerrar es guardar**: los papeles bajan dentro de la carpeta detrás de la tapa y se ata el cordón (la lámina es de frente; ya no hay tapa en 3D) |
+| G16 | s04 | Franjas, escritura de izquierda a derecha, foco por capa, bajar, palabra, realce y remate | Las tres ondas y los estratos son los de la lámina. Rótulos, tempos y nombres siguen escritos desde los datos |
+
+**Avisos de la lámina que no salen en pantalla:** el del vale («no reproduce un vale histórico»), el de la
+fachada («no representa una sede histórica concreta») y el del fichero son texto claro pensado para fondo
+oscuro; sobre papel no se leen. Si hacen falta, hay que decidir dónde ponerlos.
+
+**Efectos de la sección C.** E07 se recuperó con el fichero. Los demás, en la tanda siguiente (abajo).
+
+## G. Efectos recuperados (10 de noviembre de 2026)
+
+| ID | Cómo quedó | Componente |
+|---|---|---|
+| E01 | La cámara se acerca a Lima (×1,5, 2,4 s, `solemne`) sin moverla: el mapa crece a su alrededor | `LugarLamina` |
+| E02 | La pizarra se retira y el mapa queda como recuadro de la página; el agua lo cubre con su frente y vuelve con el papel | `LugarLamina` + `frenteSecado` |
+| E03 | Cámara de la muestra original: se echa atrás, se lanza, mira 7 % por delante, frena y se abre con resorte; hasta ×1,9 y acotada al área útil del mapa | `ViajeLamina` |
+| E04 | La ruta a París se escribe tramo a tramo, duda y se borra desde la punta; las notas entran renglón por renglón junto a la ciudad | `ViajeLamina` |
+| E05 | Paralelos 0°, 15° y 30° que se encienden al cruzarlos (latitud con la Mercator calibrada de la lámina: ecuador en y = 820,2), faro del destino, llegada con resorte y contador de km | `ViajeLamina`; tics recalculados sobre la ruta de la lámina (D1) |
+| E06 | «Columbia University / Beca · H. S. Klein» se escribe de izquierda a derecha al ritmo de las teclas | `ViajeLamina` |
+| E08 | La recta entra torcida, gira hasta la que mejor pasa y se asienta; después los residuos se estiran desde cada punto, con su explicación | `VectorCraft` (regresión) |
+| E09 | «Y dice cuánto pesa»: el escalón de la pendiente sobre la recta, «un paso» y «cuánto sube» | `VectorCraft` (regresión) |
+| E10 | Los puntos simulados se retiran primero; solo los ejes del ejemplo viajan hasta los de la serie real. No se sugiere que el ejemplo sea una medición | `VectorCraft` (`haciaSerie`) |
+| E11 | Columna con los cuadros A.4 y A.6: cada fila se enciende, se subraya y un hilo la une a su punto (el gráfico se achica a 86 % para dejarle lugar) | `VectorCraft` (`tabla`) |
+| E12 | La línea llega a cada punto cuando ese punto se enciende; cada punto late; la banda 3–4 % se extiende de izquierda a derecha | `VectorCraft` (costo) |
+
+La guía de dirección (`DIRECCION_DE_VIDEO.md`) todavía dice «pequeña cruz»: es texto del director y no se tocó.

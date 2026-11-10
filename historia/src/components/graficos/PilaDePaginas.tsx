@@ -7,6 +7,7 @@ import { mezclar } from '../../estilo/color';
 import { PatronPapel } from '../atmosfera/Papel';
 import { Pluma } from './Pluma';
 import { bordePapel, FiltroSombra, FiltroTinta, renglonesTipeados, trazoManuscrito } from './svg';
+import { capa, CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
   paleta: Paleta;
@@ -22,6 +23,8 @@ type Props = {
   variante?: 'manuscrito' | 'pruebas';
   /** 0–1: las correcciones se desvanecen y la hoja queda limpia, como impresa. */
   limpieza?: number;
+  /** Lámina aprobada (tanda03-pruebas): la pila con su texto de muestra, las seis correcciones y el lápiz. */
+  lamina?: Lamina | null;
 };
 
 // Página de arriba (coordenadas del viewBox 0 0 420 560).
@@ -65,7 +68,87 @@ const correccionesPruebas = (semilla: number): string[] => {
 };
 
 /** Pila de páginas de un manuscrito: papel de verdad, texto a máquina y correcciones con pluma. */
-export const PilaDePaginas: React.FC<Props> = ({ paleta, id, correcciones, conPluma = true, width, semilla = 2012, variante = 'manuscrito', limpieza = 0 }) => {
+export const PilaDePaginas: React.FC<Props> = ({ lamina, ...props }) => {
+  const uid = usePrefijo();
+  if (lamina) return <PilaLamina {...props} lamina={lamina} uid={uid} />;
+  return <PilaDibujada {...props} />;
+};
+
+/** Recuadro de la lámina con la proporción de la pila dibujada (420 × 560). */
+const CAJA_PILA = { x: 490, y: 70, w: 800, h: (800 * 560) / 420 };
+/** Orden en que el corrector hace las marcas: llave, tachón, círculo, visto bueno e inserción, flecha y la nota «precisar». */
+const ORDEN_MARCAS = [0, 1, 2, 3, 5, 4];
+const NOTA = 4;
+/** Punta del lápiz de la lámina. */
+const PUNTA_LAPIZ = { x: 1301, y: 849 };
+
+/**
+ * Las pruebas de la lámina. Las correcciones rojas se dibujan una tras otra con el lápiz rojo de la
+ * lámina en la mano (lo mismo que hacía la pluma) y después se desvanecen con `limpieza`.
+ */
+const PilaLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: string }> = ({ correcciones, conPluma = true, width, limpieza = 0, lamina, uid }) => {
+  const marcas = capa(lamina, 'Correcciones_rojas');
+  const trazos = useMemo(() => marcas.parts.map((html, k) => {
+    const d = k === NOTA ? null : html.match(/\bd="([^"]+)"/)?.[1] ?? null;
+    return { d, largo: d ? getLength(d) : 0 };
+  }), [marcas]);
+  const n = ORDEN_MARCAS.length;
+  const p = clamp(correcciones) * n;
+  const i = Math.min(n - 1, Math.floor(p));
+  const u = p - i;
+  const dibujo = (orden: number) => (orden < i ? 1 : orden > i ? 0 : clamp(u / 0.75));
+  // dónde está la punta: sobre el trazo que se dibuja o viajando, levantada, al siguiente
+  const puntaDe = (k: number, f: number) => {
+    const tz = trazos[k];
+    if (tz.d) return punto(tz.d, tz.largo * f);
+    const b = marcas.boxes[k];
+    return { x: b[0] + b[2] * f, y: b[1] + b[3] * 0.8 };
+  };
+  let punta = { x: 0, y: 0 }, alzada = 1;
+  if (correcciones > 0 && correcciones < 1) {
+    const k = ORDEN_MARCAS[i];
+    if (u <= 0.75) { punta = puntaDe(k, clamp(u / 0.75)); alzada = 0; }
+    else {
+      const viaje = clamp((u - 0.75) / 0.25);
+      const a = puntaDe(k, 1), b = i + 1 < n ? puntaDe(ORDEN_MARCAS[i + 1], 0) : { x: a.x + 80, y: a.y + 60 };
+      punta = { x: a.x + (b.x - a.x) * viaje, y: a.y + (b.y - a.y) * viaje };
+      alzada = Math.sin(Math.PI * viaje);
+    }
+  }
+  const verLapiz = conPluma && correcciones > 0 && correcciones < 1;
+  return (
+    <svg viewBox={`${CAJA_PILA.x} ${CAJA_PILA.y} ${CAJA_PILA.w} ${CAJA_PILA.h}`} width={width} height={(width * 560) / 420} style={{ overflow: 'visible' }}>
+      <DefsLamina lamina={lamina} uid={uid} />
+      <CapaVC lamina={lamina} uid={uid} nombre="Hojas___separadas" />
+      <CapaVC lamina={lamina} uid={uid} nombre="Texto_editorial" />
+      <g opacity={1 - clamp(limpieza)}>
+        {marcas.parts.map((html, k) => {
+          const kk = dibujo(ORDEN_MARCAS.indexOf(k));
+          if (kk <= 0) return null;
+          if (k === NOTA) {
+            // la nota escrita: se descubre de izquierda a derecha, al paso del lápiz
+            const b = marcas.boxes[k];
+            return (
+              <g key={k}>
+                <clipPath id={`${uid}-nota`}><rect x={b[0] - 4} y={b[1] - 10} width={(b[2] + 8) * kk} height={b[3] + 20} /></clipPath>
+                <g clipPath={`url(#${uid}-nota)`} dangerouslySetInnerHTML={{ __html: html }} />
+              </g>
+            );
+          }
+          const trazo = html.replace('<path ', `<path pathLength="1" stroke-dasharray="1" stroke-dashoffset="${(1 - kk).toFixed(4)}" `);
+          return <g key={k} dangerouslySetInnerHTML={{ __html: trazo }} />;
+        })}
+      </g>
+      {verLapiz ? (
+        <g transform={`translate(${punta.x - PUNTA_LAPIZ.x + alzada * 6} ${punta.y - PUNTA_LAPIZ.y - alzada * 22})`}>
+          <CapaVC lamina={lamina} uid={uid} nombre="Lápiz_de_corrector" />
+        </g>
+      ) : null}
+    </svg>
+  );
+};
+
+const PilaDibujada: React.FC<Omit<Props, 'lamina'>> = ({ paleta, id, correcciones, conPluma = true, width, semilla = 2012, variante = 'manuscrito', limpieza = 0 }) => {
   const hojas = useMemo(() => {
     const r = azar(semilla);
     return [5, 4, 3, 2, 1].map((k) => ({ k, rot: r.rango(-1.6, 1.6), dx: k * 4 + r.rango(-2, 2), dy: -k * 4 + r.rango(-1, 1) }));

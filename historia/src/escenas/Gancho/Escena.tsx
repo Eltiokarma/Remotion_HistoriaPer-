@@ -3,6 +3,7 @@ import type { z } from 'zod';
 import { Luz } from '../../components/atmosfera/Luz';
 import { Sfx } from '../../components/audio/Sfx';
 import { PortadaLibro } from '../../components/graficos/PortadaLibro';
+import { RecorteLamina, useLamina, type Lamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Ficha } from '../../components/texto/Ficha';
 import { asienta, beat, clamp, escala, impacto, mix, tramo } from '../../direction/anim';
 import { azar } from '../../direction/azar';
@@ -62,12 +63,45 @@ const Moneda: React.FC<{ papel: string; tinta: string; d: number; punteada?: boo
   );
 };
 
+/** El libro de la lámina; el estampado enciende primero autor y filetes, después título y ornamentos, al final el año. */
+export const LibroLamina: React.FC<{ lamina: Lamina; estampado: number; ancho: number }> = ({ lamina, estampado, ancho }) => {
+  const paso = (i: number) => Math.max(0, Math.min(1, (estampado - i * 0.2) / 0.5));
+  const letra = (i: number) => (i === 0 ? 0 : i === 8 ? 2 : 1);
+  return (
+    <RecorteLamina lamina={lamina} caja={[630, 116, 646, 836]} ancho={ancho} capas={[
+      { nombre: 'Bloque_de_páginas' }, { nombre: 'Encuadernación' },
+      { nombre: 'Cubierta', solo: (i) => i < 2 || i > 3 }, { nombre: 'Cubierta', solo: (i) => i === 2 || i === 3, opacity: paso(0) },
+      ...[0, 1, 2].map((p) => ({ nombre: 'Autor__título', solo: (i: number) => letra(i) === p, opacity: paso(p) })),
+    ]} />
+  );
+};
+
+/** Centro de cada moneda modelo en la lámina: dorada (entra), cobriza (se pierde), rayada (el rango dudoso). */
+const MONEDA_LAMINA = { dorada: { capa: 'Moneda_10', cx: 1620, cy: 712 }, cobre: { capa: 'Moneda_1', cx: 300, cy: 422 }, rayada: { capa: 'Moneda_4', cx: 1290, cy: 422 } } as const;
+
+/** Una moneda de la lámina, del mismo tamaño que la dibujada; `cobre` y `raya` (0–1) la van cambiando. */
+const MonedaLamina: React.FC<{ lamina: Lamina; d: number; cobre: number; raya: number }> = ({ lamina, d, cobre, raya }) => (
+  <div style={{ position: 'relative', width: d, height: d }}>
+    {(['dorada', 'cobre', 'rayada'] as const).map((v) => {
+      const o = v === 'dorada' ? 1 : v === 'cobre' ? cobre : raya;
+      if (o <= 0.001) return null;
+      const m = MONEDA_LAMINA[v];
+      return (
+        <RecorteLamina key={v} lamina={lamina} caja={[m.cx - 105, m.cy - 105, 210, 210]} ancho={d} style={{ position: 'absolute', inset: 0, opacity: o }}
+          capas={[{ nombre: m.capa, solo: (i) => i > 0 && i < 9 }]} />
+      );
+    })}
+  </div>
+);
+
 /**
  * El gancho: cinco cuadros, cada uno con su frase. Va antes de la historia del hombre: primero lo
  * que encontró, después quién era (DIRECCION_DE_VIDEO §2.5).
  */
 export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
   const frame = useCurrentFrame();
+  const ref = (archivo?: string) => (archivo ? { videoId: video.id, archivo } : undefined);
+  const lMonedas = useLamina(ref(props.laminas?.monedas)), lLibro = useLamina(ref(props.laminas?.libro));
   const fps = video.fps;
   const t = frame / fps;
   const pal = video.paleta;
@@ -172,7 +206,8 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
             return (
               <div key={i} style={{ position: 'absolute', left: x, top: y, opacity: kEntra * (segura ? 1 - 0.3 * kCae : duda ? 1 - 0.55 * kDuda : 1),
                 transform: `rotate(${giro}deg)` }}>
-                <Moneda papel={papel} tinta={pal.fondo} d={MD} />
+                {/* con la lámina: entran doradas; las que caen se vuelven cobre (lo que se pierde) y la dudosa, rayada */}
+                {lMonedas ? <MonedaLamina lamina={lMonedas} d={MD} cobre={segura ? tramo(t, tc, 0.35, 'natural') : 0} raya={kDuda} /> : <Moneda papel={papel} tinta={pal.fondo} d={MD} />}
                 {duda && kDuda > 0 ? (
                   <div style={{ position: 'absolute', left: 0, top: -90 - 4, opacity: kDuda }}>
                     <Moneda papel={papel} tinta={pal.fondo} d={MD} punteada />
@@ -245,10 +280,18 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
       {/* 5 · el libro que no llegó a ver */}
       {t >= tLibro + 0.3 ? (
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: tramo(t, tLibro + 0.3, 0.8, 'natural') }}>
-          <div style={{ transform: `translateY(${18 * (1 - tramo(t, tLibro, 1.2, 'pesado'))}px)`, filter: `brightness(${mix(1, 0.62, 1 - luzFinal)})`,
-            boxShadow: `0 30px 70px ${alfa('#000000', 0.6)}` }}>
-            <PortadaLibro paleta={pal} titulo={props.libro.titulo} autor={props.libro.autor} anio={props.libro.anio} estampado={tramo(t, tLibro + 0.5, 1.8, 'natural')} width={460} />
-          </div>
+          {lLibro ? (
+            // el libro de la lámina (lomo, tapa y cantos): las letras doradas se estampan en el mismo orden
+            <div style={{ transform: `translateY(${18 * (1 - tramo(t, tLibro, 1.2, 'pesado'))}px)`,
+              filter: `brightness(${mix(1, 0.62, 1 - luzFinal)}) drop-shadow(0 30px 40px ${alfa('#000000', 0.6)})` }}>
+              <LibroLamina lamina={lLibro} estampado={tramo(t, tLibro + 0.5, 1.8, 'natural')} ancho={540} />
+            </div>
+          ) : (
+            <div style={{ transform: `translateY(${18 * (1 - tramo(t, tLibro, 1.2, 'pesado'))}px)`, filter: `brightness(${mix(1, 0.62, 1 - luzFinal)})`,
+              boxShadow: `0 30px 70px ${alfa('#000000', 0.6)}` }}>
+              <PortadaLibro paleta={pal} titulo={props.libro.titulo} autor={props.libro.autor} anio={props.libro.anio} estampado={tramo(t, tLibro + 0.5, 1.8, 'natural')} width={460} />
+            </div>
+          )}
         </AbsoluteFill>
       ) : null}
 

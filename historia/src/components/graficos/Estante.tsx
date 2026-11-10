@@ -4,6 +4,7 @@ import { azar } from '../../direction/azar';
 import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
+import { CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
   paleta: Paleta;
@@ -16,6 +17,8 @@ type Props = {
   escalas?: Escala[];
   /** 0–1: aparición de la repisa y los libros sin rótulo. */
   aparece?: number;
+  /** Lámina aprobada (biblioteca-video01): cuatro libros sueltos con su título en el lomo, en el orden de `titulos`. */
+  lamina?: Lamina | null;
 };
 
 const REPISA = 820, X0 = 260, X1 = 1660;
@@ -28,7 +31,32 @@ const REPISA = 820, X0 = 260, X1 = 1660;
 const deforma = (e: Escala | undefined, cx: number) =>
   e && (e.sx !== 1 || e.sy !== 1) ? ` translate(${cx} ${REPISA}) scale(${e.sx} ${e.sy}) translate(${-cx} ${-REPISA})` : '';
 
-export const Estante: React.FC<Props> = ({ paleta, id, titulos, entra, escalas = [], aparece = 1 }) => {
+export const Estante: React.FC<Props> = ({ lamina, ...props }) => {
+  const uid = usePrefijo();
+  if (lamina) return <EstanteLamina {...props} lamina={lamina} uid={uid} />;
+  return <EstanteDibujado {...props} />;
+};
+
+/** En la lámina la repisa está en y = 850. El encabezado de presentación no se usa: la ficha de la escena da el lugar. */
+const REPISA_LAMINA = 850;
+const EstanteLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: string }> = ({ titulos, entra, escalas = [], aparece = 1, lamina, uid }) => (
+  <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ position: 'absolute', inset: 0 }}>
+    <DefsLamina lamina={lamina} uid={uid} />
+    <CapaVC lamina={lamina} uid={uid} nombre="Repisa_de_madera" opacity={aparece} />
+    {titulos.slice(0, 4).map((_, i) => {
+      const k = clamp(entra[i] ?? 0);
+      if (k <= 0) return null;
+      const c = lamina.layers.find((l) => l.name.startsWith(`Libro_${i + 1}`));
+      const cx = c ? c.box[0] + c.box[2] / 2 : 960;
+      const e = escalas[i];
+      // Cae desde arriba (lo mismo que el dibujado) y se aplasta contra la madera desde su base.
+      const aplasta = e && (e.sx !== 1 || e.sy !== 1) ? ` translate(${cx} ${REPISA_LAMINA}) scale(${e.sx} ${e.sy}) translate(${-cx} ${-REPISA_LAMINA})` : '';
+      return <CapaVC key={i} lamina={lamina} uid={uid} nombre={`Libro_${i + 1}`} transform={`translate(0 ${(1 - k) * -560})${aplasta}`} opacity={Math.min(1, k * 3)} />;
+    })}
+  </svg>
+);
+
+const EstanteDibujado: React.FC<Omit<Props, 'lamina'>> = ({ paleta, id, titulos, entra, escalas = [], aparece = 1 }) => {
   const libros = useMemo(() => {
     const r = azar(2005);
     const out: { x: number; w: number; h: number; tela: number; titulo?: number; incl: number }[] = [];

@@ -1,0 +1,292 @@
+{
+  "voz": "public/videos/001-el-hombre/voz-provisional/s05.mp3",
+  "duracion_s": 108.674,
+  "parametros": {
+    "umbral_db": 35,
+    "pausa_min_s": 0.3,
+    "ventana_s": 0.8,
+    "librosa": "1.0.0"
+  },
+  "pausas": [
+    {
+      "inicio": 3.437,
+      "fin": 4.04,
+      "dura": 0.604
+    },
+    {
+      "inicio": 7.314,
+      "fin": 8.475,
+      "dura": 1.161
+    },
+    {
+      "inicio": 9.961,
+      "fin": 10.356,
+      "dura": 0.395
+    },
+    {
+      "inicio": 12.33,
+      "fin": 12.817,
+      "dura": 0.488
+    },
+    {
+      "inicio": 15.673,
+      "fin": 17.113,
+      "dura": 1.44
+    },
+    {
+      "inicio": 20.503,
+      "fin": 22.918,
+      "dura": 2.415
+    },
+    {
+      "inicio": 23.406,
+      "fin": 23.824,
+      "dura": 0.418
+    },
+    {
+      "inicio": 27.516,
+      "fin": 28.119,
+      "dura": 0.604
+    },
+    {
+      "inicio": 30.07,
+      "fin": 30.441,
+      "dura": 0.372
+    },
+    {
+      "inicio": 33.971,
+      "fin": 35.596,
+      "dura": 1.625
+    },
+    {
+      "inicio": 38.058,
+      "fin": 38.592,
+      "dura": 0.534
+    },
+    {
+      "inicio": 43.212,
+      "fin": 43.793,
+      "dura": 0.58
+    },
+    {
+      "inicio": 45.836,
+      "fin": 47.067,
+      "dura": 1.231
+    },
+    {
+      "inicio": 51.014,
+      "fin": 51.618,
+      "dura": 0.604
+    },
+    {
+      "inicio": 53.197,
+      "fin": 53.545,
+      "dura": 0.348
+    },
+    {
+      "inicio": 54.52,
+      "fin": 55.147,
+      "dura": 0.627
+    },
+    {
+      "inicio": 56.471,
+      "fin": 58.584,
+      "dura": 2.113
+    },
+    {
+      "inicio": 62.74,
+      "fin": 63.344,
+      "dura": 0.604
+    },
+    {
+      "inicio": 64.296,
+      "fin": 64.621,
+      "dura": 0.325
+    },
+    {
+      "inicio": 68.336,
+      "fin": 70.867,
+      "dura": 2.531
+    },
+    {
+      "inicio": 77.601,
+      "fin": 79.714,
+      "dura": 2.113
+    },
+    {
+      "inicio": 81.107,
+      "fin": 81.432,
+      "dura": 0.325
+    },
+    {
+      "inicio": 86.309,
+      "fin": 87.841,
+      "dura": 1.533
+    },
+    {
+      "inicio": 89.722,
+      "fin": 90.302,
+      "dura": 0.58
+    },
+    {
+      "inicio": 93.901,
+      "fin": 94.459,
+      "dura": 0.557
+    },
+    {
+      "inicio": 98.151,
+      "fin": 99.683,
+      "dura": 1.533
+    },
+    {
+      "inicio": 100.775,
+      "fin": 101.355,
+      "dura": 0.58
+    }
+  ],
+  "frases": [
+    0.348,
+    4.063,
+    8.499,
+    10.379,
+    12.841,
+    17.136,
+    22.941,
+    23.847,
+    28.166,
+    30.465,
+    35.619,
+    38.592,
+    43.816,
+    47.09,
+    51.641,
+    53.568,
+    55.171,
+    58.584,
+    63.367,
+    64.598,
+    70.891,
+    79.737,
+    81.456,
+    87.864,
+    90.372,
+    94.482,
+    99.73,
+    101.378
+  ],
+  "propuesta": {
+    "mapa": {
+      "actual": 0.2,
+      "frase": 0.348,
+      "diferencia": 0.148
+    },
+    "paris": {
+      "actual": 4.37,
+      "frase": 4.063,
+      "diferencia": -0.307
+    },
+    "paris_notas": {
+      "actual": 12.76,
+      "frase": 12.841,
+      "diferencia": 0.081
+    },
+    "duda": {
+      "actual": 15.84,
+      "frase": null
+    },
+    "sale": {
+      "actual": 17.04,
+      "frase": 17.136,
+      "diferencia": 0.096
+    },
+    "llega": {
+      "actual": 20.64,
+      "frase": null
+    },
+    "abre": {
+      "actual": 21.28,
+      "frase": null
+    },
+    "ficha": {
+      "actual": 22.81,
+      "frase": 22.941,
+      "diferencia": 0.131
+    },
+    "puntos": {
+      "actual": 29.22,
+      "frase": null
+    },
+    "discursos": {
+      "actual": 33.22,
+      "frase": null
+    },
+    "regresion": {
+      "actual": 37.44,
+      "frase": null
+    },
+    "caen": {
+      "actual": 38.54,
+      "frase": 38.592,
+      "diferencia": 0.052
+    },
+    "recta": {
+      "actual": 47.21,
+      "frase": 47.09,
+      "diferencia": -0.12
+    },
+    "pendiente": {
+      "actual": 56.09,
+      "frase": null
+    },
+    "serie": {
+      "actual": 63.28,
+      "frase": 63.367,
+      "diferencia": 0.087
+    },
+    "balanza": {
+      "actual": 70.84,
+      "frase": 70.891,
+      "diferencia": 0.051
+    },
+    "profundidad": {
+      "actual": 75.64,
+      "frase": null
+    },
+    "claridad": {
+      "actual": 76.94,
+      "frase": null
+    },
+    "estante": {
+      "actual": 79.64,
+      "frase": 79.737,
+      "diferencia": 0.097
+    },
+    "temas": {
+      "actual": 82.74,
+      "frase": null
+    },
+    "brujula": {
+      "actual": 87.82,
+      "frase": 87.864,
+      "diferencia": 0.044
+    },
+    "izquierda": {
+      "actual": 90.2,
+      "frase": 90.372,
+      "diferencia": 0.172
+    },
+    "giro": {
+      "actual": 92,
+      "frase": null
+    },
+    "tiza": {
+      "actual": 99.63,
+      "frase": 99.73,
+      "diferencia": 0.1
+    },
+    "frase": {
+      "actual": 103.62,
+      "frase": null
+    }
+  }
+}

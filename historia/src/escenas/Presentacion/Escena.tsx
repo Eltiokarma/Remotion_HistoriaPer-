@@ -4,7 +4,9 @@ import type { z } from 'zod';
 import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { MapaLugar } from '../../components/graficos/MapaLugar';
-import { cubierto, Piscina } from '../../components/graficos/Piscina';
+import { cubierto, frenteSecado, Piscina } from '../../components/graficos/Piscina';
+import { LugarLamina } from '../../components/graficos/LugarLamina';
+import { useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Sello } from '../../components/graficos/Sello';
 import { Ficha } from '../../components/texto/Ficha';
 import { Ornamento } from '../../components/texto/Ornamento';
@@ -24,6 +26,9 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
   const pal = video.paleta;
   const b = escena.beats;
   const piscina = props.fondo === 'piscina';
+  const lPiscina = useLamina(props.laminas?.piscina ? { videoId: video.id, archivo: props.laminas.piscina } : undefined);
+  const refLugar = props.laminas?.lugar;
+  const lLugar = useLamina(refLugar ? { videoId: video.id, archivo: refLugar.archivo } : undefined);
   const tNombre = beat(b, 'nombre', 1), tFrenar = beat(b, 'frenar', 4), tRenglon = beat(b, 'renglon', 5), tSello = beat(b, 'sello', 10);
   const tPalabra = beat(b, 'palabra', Infinity), tFicha = beat(b, 'ficha', Infinity), tLugar = beat(b, 'lugar', Infinity);
   const comoCita = props.palabra_como === 'cita';
@@ -51,7 +56,7 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
 
   return (
     <AbsoluteFill style={{ transform: `translateY(${temblor}px)` }}>
-      {piscina ? <Piscina paleta={pal} t={t} dx={dx} renglon={renglon} colorAgua={props.agua} /> : <Papel color={pal.papel} envejecido={0.3} />}
+      {piscina ? <Piscina paleta={pal} t={t} dx={dx} renglon={renglon} colorAgua={props.agua} lamina={lPiscina} /> : <Papel color={pal.papel} envejecido={0.3} />}
       {/* dónde y cuándo: el país en tinta sobre la página y la cámara que se acerca a la ciudad; el agua lo cubre */}
       {!props.vectorcraft && props.lugar && t >= tLugar - 0.1 && renglon > 0.02 ? (
         <AbsoluteFill style={{ opacity: renglon }}>
@@ -110,8 +115,9 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
       ) : null}
 
       {props.ficha && t >= tFicha ? (
-        // en la piscina va entre dos corcheras (las filas de boyas están en y = 130 + 92·k)
-        <div style={{ position: 'absolute', left: 120, top: piscina ? 158 : 90 }}>
+        // en la piscina va entre dos corcheras (las filas de boyas están en y = 130 + 92·k); en la pileta
+        // de la lámina, dentro del carril 1 (entre el borde, y = 207, y la primera corchera, y = 370)
+        <div style={{ position: 'absolute', left: lPiscina ? 180 : 120, top: piscina ? (lPiscina ? 228 : 158) : 90 }}>
           {/* sobre el agua, un velo oscuro detrás para que se lea entre las boyas; sobre el papel, nada */}
           {piscina ? (
             <div style={{ position: 'absolute', left: -22, top: -16, width: props.ficha.length * 30 * 0.66 + 70, height: 64, borderRadius: 4,
@@ -131,7 +137,16 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
       ) : null}
       {props.ficha ? props.ficha.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tFicha + i / 18} fps={fps} volumen={0.28} />)) : null}
 
-      {props.vectorcraft && t >= tLugar && t < (tPiscina ?? tLugar + 6) ? <AbsoluteFill style={{opacity: tramo(t, tLugar, 0.65, 'natural') * (1 - tramo(t, (tPiscina ?? tLugar + 6) - 0.65, 0.65, 'natural'))}}>
+      {lLugar && refLugar && t >= tLugar ? (
+        // E01–E02: la cámara se acerca a Lima (la ciudad queda quieta, el mapa crece), la pizarra se retira
+        // y el mapa queda como recuadro de la página; el agua lo cubre y vuelve con el papel
+        <LugarLamina lamina={lLugar} foco={refLugar.foco} marco={refLugar.marco} recuadro={refLugar.recuadro} escala={refLugar.escala}
+          aparece={tramo(t, tLugar, 0.65, 'natural')} acerca={tramo(t, tLugar + 1.2, 2.4, 'solemne')}
+          aRecuadro={tramo(t, (tPiscina ?? tLugar + 6) - 1.7, 1.1, 'pesado')} frente={piscina && renglon < 1 ? frenteSecado(renglon) : null}
+          dato={props.lugar?.dato} datoK={tramo(t, tLugar + 2.6, 0.8, 'natural')}
+          nombreK={tramo(t, tLugar + 0.55, 0.6, 'natural')} anioK={tramo(t, tLugar + 1.25, 0.7, 'natural')} andesK={tramo(t, tLugar + 2.0, 1.0, 'natural')} />
+      ) : null}
+      {!lLugar && props.vectorcraft && t >= tLugar && t < (tPiscina ?? tLugar + 6) ? <AbsoluteFill style={{opacity: tramo(t, tLugar, 0.65, 'natural') * (1 - tramo(t, (tPiscina ?? tLugar + 6) - 0.65, 0.65, 'natural'))}}>
         <VectorCraft videoId={video.id} archivo={props.vectorcraft} modo="lima" t={t} beats={b} notas={props.lugar?.dato ? [props.lugar.dato] : undefined} />
       </AbsoluteFill> : null}
       {props.sello ? (

@@ -11,6 +11,9 @@ const rango = z.object({ min: z.number(), max: z.number(), rotulo: z.string(), /
  * ficha con las cifras; y el libro, que queda solo cuando la luz baja.
  */
 export const esquema = z.object({
+  /** Láminas aprobadas: `monedas` (diez soles: dorados, cobrizos y uno rayado) y `libro` (la portada de este libro;
+   * no sirve para otro título). Se conserva la animación. */
+  laminas: z.object({ monedas: z.string().optional(), libro: z.string().optional() }).optional(),
   /** Años que corre el contador mientras la barra pierde su tajada. */
   anios: z.tuple([z.number().int(), z.number().int()]),
   /** La tajada de la producción (en %), con su rótulo. */

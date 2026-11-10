@@ -10,6 +10,14 @@ const lugar = z.object({ nombre: z.string(), lon: z.number().min(-180).max(180),
  */
 export const esquema = z.object({
   vectorcraft: z.object({viaje: z.string(), regresion: z.string(), costo: z.string()}).optional(),
+  /** Láminas aprobadas que reemplazan el dibujo de cada objeto, conservando su animación
+   * (separadas con `node scripts/vectorcraft-piezas.mjs`). */
+  laminas: z.object({
+    balanza: z.string().optional(), estante: z.string().optional(),
+    brujula: z.string().optional(), fichero: z.string().optional(),
+    /** El viaje con su cámara (ViajeLamina). `mercator` calibra la lámina: dónde cae el ecuador y la escala en y. */
+    viaje: z.object({ archivo: z.string(), mercator: z.object({ ecuador_y: z.number(), escala: z.number() }) }).optional(),
+  }).optional(),
   origen: lugar,
   /** El destino que todos soñaban: la ruta llega a medias, duda y se borra. */
   tentacion: lugar,

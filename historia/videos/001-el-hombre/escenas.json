@@ -79,6 +79,10 @@
           "titulo": "Historia de la corrupción en el Perú",
           "autor": "Alfonso W. Quiroz",
           "anio": "2013"
+        },
+        "laminas": {
+          "monedas": "vectorcraft/tanda03-monedas.json",
+          "libro": "vectorcraft/tanda03-libro.json"
         }
       },
       "audio": {
@@ -144,7 +148,7 @@
           "eventos": [
             {
               "en": 0.03,
-              "rotulo": "† 2 ENE 2013",
+              "rotulo": "FALLECE · 2 ENE 2013",
               "tono": "sombra"
             },
             {
@@ -160,6 +164,10 @@
               "tono": "luz"
             }
           ]
+        },
+        "laminas": {
+          "pruebas": "vectorcraft/tanda03-pruebas.json",
+          "tiempo": "vectorcraft/tanda05-tiempo-v2.json"
         }
       },
       "camara": [
@@ -270,7 +278,29 @@
             ]
           ]
         },
-        "vectorcraft": "vectorcraft/tanda06-lima.json"
+        "vectorcraft": "vectorcraft/tanda06-lima.json",
+        "laminas": {
+          "piscina": "vectorcraft/tanda04-piscina.json",
+          "lugar": {
+            "archivo": "vectorcraft/tanda06-lima.json",
+            "foco": [
+              1119,
+              688.4
+            ],
+            "marco": [
+              964,
+              240,
+              786,
+              700
+            ],
+            "recuadro": [
+              1490,
+              660,
+              340
+            ],
+            "escala": 1.5
+          }
+        }
       },
       "audio": {
         "musica": {
@@ -359,6 +389,11 @@
           "titulo": "«Nunca apoyó al gobierno militar»",
           "texto": "«militó por algún tiempo en un pequeño partido trotskista de izquierda que criticaba duramente al régimen castrense»",
           "pie": "MARCOS CUETO, PRÓLOGO, P. 16"
+        },
+        "laminas": {
+          "emblema": "vectorcraft/tanda05-ingreso-v2.json",
+          "aviso_emblema": "Interpretación vectorial del escudo tradicional",
+          "panfletos": "vectorcraft/panfletos-contenido-v2.json"
         }
       },
       "audio": {
@@ -459,6 +494,9 @@
         "palabra_cita": {
           "original": "«la longue durée»",
           "referencia": "F. Braudel, «Histoire et sciences sociales: la longue durée», Annales, 1958"
+        },
+        "laminas": {
+          "pizarra": "vectorcraft/larga-duracion-pizarra.json"
         }
       },
       "audio": {
@@ -511,7 +549,11 @@
         "tiza": 99.63,
         "frase": 103.62,
         "serie": 63.28,
-        "paris_notas": 12.76
+        "paris_notas": 12.76,
+        "observacion": 41.62,
+        "residuos": 49.04,
+        "tendencia": 52.47,
+        "causalidad": 58.53
       },
       "props": {
         "origen": {
@@ -638,6 +680,19 @@
           "viaje": "vectorcraft/tanda06-viaje.json",
           "regresion": "vectorcraft/tanda06-regresion.json",
           "costo": "vectorcraft/tanda06-costo.json"
+        },
+        "laminas": {
+          "balanza": "vectorcraft/balanza-video01.json",
+          "estante": "vectorcraft/biblioteca-video01.json",
+          "brujula": "vectorcraft/brujula-video01.json",
+          "fichero": "vectorcraft/tanda04-fichero.json",
+          "viaje": {
+            "archivo": "vectorcraft/tanda06-viaje.json",
+            "mercator": {
+              "ecuador_y": 820.2,
+              "escala": 551.2
+            }
+          }
         }
       },
       "camara": [
@@ -718,7 +773,12 @@
         },
         "paneo": true,
         "pregunta": "¿A dónde fue a parar esa plata?",
-        "sigue_barco": true
+        "sigue_barco": true,
+        "laminas": {
+          "islas": "vectorcraft/islas-guaneras-v3.json",
+          "estado": "vectorcraft/edificio-estado-video01.json",
+          "vale": "vectorcraft/vale-video01.json"
+        }
       },
       "audio": {
         "musica": {
@@ -780,6 +840,9 @@
           "etiqueta": "Próximo",
           "anio": "1850",
           "titulo": "La deuda defraudada"
+        },
+        "laminas": {
+          "carpeta": "vectorcraft/tanda05-carpeta-v2.json"
         }
       },
       "audio": {
