@@ -3,4 +3,6 @@ out/
 # La voz real y las imágenes pesadas de cada video no van a git (ver README).
 public/videos/*/voz/
 public/videos/*/imagenes/
+# La música de Suno (WAV originales y stems): pesada, se guarda en Drive. En git queda su registro en fuentes.md.
+public/videos/*/musica/suno/
 __pycache__/

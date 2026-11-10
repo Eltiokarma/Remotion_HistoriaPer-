@@ -87,8 +87,8 @@
       },
       "audio": {
         "musica": {
-          "archivo": "s00-gancho.mp3",
-          "nivel": 0.32
+          "archivo": "s00-tajadas.mp3",
+          "nivel": 0.34
         },
         "duck_db": -14
       },
@@ -194,8 +194,8 @@
       ],
       "audio": {
         "musica": {
-          "archivo": "s01-entrada.mp3",
-          "nivel": 0.3,
+          "archivo": "s01-el-hombre.mp3",
+          "nivel": 0.35,
           "desde_beat": "final"
         },
         "ambientes": [
@@ -210,7 +210,7 @@
           "hasta_beat": "linea"
         }
       },
-      "estado_musica": "ausente → entra al final"
+      "estado_musica": "ausente → entra al final y sigue sin corte en s02 (pista B de Suno)"
     },
     {
       "id": "s02",
@@ -304,8 +304,8 @@
       },
       "audio": {
         "musica": {
-          "archivo": "s02-nadador.mp3",
-          "nivel": 0.26
+          "archivo": "s02-el-hombre.mp3",
+          "nivel": 0.35
         },
         "ambientes": [
           {
@@ -398,8 +398,8 @@
       },
       "audio": {
         "musica": {
-          "archivo": "s03-epoca.mp3",
-          "nivel": 0.24
+          "archivo": "s03-pais-nuevo.mp3",
+          "nivel": 0.35
         },
         "ambientes": [
           {

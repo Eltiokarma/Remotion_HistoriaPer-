@@ -1303,9 +1303,11 @@
         "inicio": "2026-11-10",
         "fin": null
       },
-      "bloqueo": "Espera las pistas de Suno de Gerson (prompts en videos/001-el-hombre/musicalizacion.md §3) y confirmar plan de pago.",
+      "bloqueo": "A, B y D integradas en s00–s03 (2026-11-10). Faltan E, F y G de Suno (s04–s06) y la escucha de Gerson.",
       "evidencia": [
-        "historia/videos/001-el-hombre/musicalizacion.md"
+        "historia/videos/001-el-hombre/musicalizacion.md",
+        "historia/videos/001-el-hombre/escenas.json",
+        "historia/videos/001-el-hombre/fuentes.md"
       ],
       "tiempo": {
         "humano_min": null,

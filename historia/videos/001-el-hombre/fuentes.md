@@ -90,7 +90,8 @@ Lo que no tenga fuente segura dice `[VERIFICAR]` y hace fallar `npm run validar 
 | Playfair Display, IBM Plex Mono, IM Fell English, Pinyon Script | Google Fonts | SIL OFL 1.1 |
 | Texturas de papel, grano y cáusticas | `scripts/generar_texturas.py` | Material propio |
 | Grabados, libro contable, vales, edificio, engranajes, televisor, carteles, portadas… | Dibujados en código (SVG), diseño propio | Material propio |
-| Música, tema del canal, ambientes y efectos | Sintetizados con `scripts/generar_audio.py`, sin muestras de terceros | Material propio |
+| Música de s00 a s03 (`musica/s00-tajadas.mp3`, `s01-el-hombre.mp3`, `s02-el-hombre.mp3`, `s03-pais-nuevo.mp3`) | Generada por Gerson en Suno, plan **Pro**, el 2026-11-10, con los prompts de `musicalizacion.md` §3: `V01_mus01_ver03` (A), `V01_mus02_ver02` (B), `V01_mus03_ver01_5` (D). Originales WAV en el Drive de Gerson y en `musica/suno/` (fuera de git); recortadas a los beats | Uso comercial según el plan Pro de Suno (`[VERIFICAR]` los términos vigentes y anotar el enlace de cada canción) |
+| Música de s04 a s07, tema del canal, ambientes y efectos | Sintetizados con `scripts/generar_audio.py`, sin muestras de terceros (la música de s04–s06 se reemplaza por Suno) | Material propio |
 | Voz **provisional** (`public/videos/001-el-hombre/voz-provisional/`) | TTS Piper, voz `es_MX-claude-high` | Apache 2.0 — **solo para el prototipo**: se reemplaza por la voz de Gerson antes de publicar |
 
 ## Fuentes fuera del libro
