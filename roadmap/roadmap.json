@@ -1319,18 +1319,19 @@
     {
       "id": "e1-ambientes",
       "fase": "e1",
-      "titulo": "Ambientes y efectos reales de Freesound (CC0 / CC BY)",
+      "titulo": "Ambientes y efectos reales (Freesound o ElevenLabs)",
       "entregable": "Ambientes de cuarto, ciudad, piscina y mar, y efectos de la tabla §5 de musicalizacion.md, a −30 LUFS, con créditos en fuentes.md",
-      "estado": "bloqueado",
+      "estado": "en_curso",
       "depende_de": [],
       "prevista": null,
       "real": {
         "inicio": "2026-11-10",
         "fin": null
       },
-      "bloqueo": "Freesound responde 403 desde el contenedor de la nube (también su portada); correr scripts/freesound.py en la laptop.",
+      "bloqueo": "13 efectos reemplazados por tomas de ElevenLabs elegidas por Gerson (2026-11-10). Faltan los ambientes: hay tomas nuevas de cuarto, ciudad, agua y mar sin elegir. Freesound sigue respondiendo 403 desde la nube.",
       "evidencia": [
-        "historia/scripts/freesound.py"
+        "historia/videos/001-el-hombre/fuentes.md",
+        "historia/scripts/generar_audio.py"
       ],
       "tiempo": {
         "humano_min": null,

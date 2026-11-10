@@ -12,7 +12,7 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **26** · 🔄 en curso: **4** · ⏳ pendiente: **7** · 💡 propuesto: **11** · ⛔ bloqueado: **4** · ✖️ descartado: **1**
+✅ hecho: **26** · 🔄 en curso: **5** · ⏳ pendiente: **7** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -23,7 +23,7 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `f5-laptop` Repetir la tanda 1 en la laptop de render: Lo corre Gerson en su máquina (el agente no tiene acceso a ella).
 - `f5-pc` Repetir la tanda 1 en la PC objetivo: La PC objetivo no está disponible.
 - `e1-musica` Musicalización con Suno (motivo de Quiroz, ocho pistas): Música de Suno integrada de s00 a s06 (2026-11-10); s07 conserva el tema sintetizado. Falta la escucha de Gerson y los enlaces de Suno en fuentes.md.
-- `e1-ambientes` Ambientes y efectos reales de Freesound (CC0 / CC BY): Freesound responde 403 desde el contenedor de la nube (también su portada); correr scripts/freesound.py en la laptop.
+- `e1-ambientes` Ambientes y efectos reales (Freesound o ElevenLabs): 13 efectos reemplazados por tomas de ElevenLabs elegidas por Gerson (2026-11-10). Faltan los ambientes: hay tomas nuevas de cuarto, ciudad, agua y mar sin elegir. Freesound sigue respondiendo 403 desde la nube.
 
 ## Vista temporal
 
@@ -76,7 +76,7 @@ gantt
   Integrar los 16 diseños aprobados de VectorCraft conservando la animación :done, e1laminas, 2026-11-10, 1d
 ```
 
-Sin fecha (19): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-voz` (⏳ pendiente), `e1-musica` (🔄 en curso), `e1-ambientes` (⛔ bloqueado).
+Sin fecha (19): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-voz` (⏳ pendiente), `e1-musica` (🔄 en curso), `e1-ambientes` (🔄 en curso).
 
 ## Tareas
 
@@ -396,12 +396,12 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Música de Suno integrada de s00 a s06 (2026-11-10); s07 conserva el tema sintetizado. Falta la escucha de Gerson y los enlaces de Suno en fuentes.md.
   - Evidencia: [001-el-hombre/musicalizacion.md](historia/videos/001-el-hombre/musicalizacion.md) · [001-el-hombre/escenas.json](historia/videos/001-el-hombre/escenas.json) · [001-el-hombre/fuentes.md](historia/videos/001-el-hombre/fuentes.md)
-- [ ] **Ambientes y efectos reales de Freesound (CC0 / CC BY)** `e1-ambientes` — ⛔ bloqueado
+- [ ] **Ambientes y efectos reales (Freesound o ElevenLabs)** `e1-ambientes` — 🔄 en curso
   - Entregable: Ambientes de cuarto, ciudad, piscina y mar, y efectos de la tabla §5 de musicalizacion.md, a −30 LUFS, con créditos en fuentes.md
   - Prevista: — · Real: 2026-11-10 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Bloqueo: Freesound responde 403 desde el contenedor de la nube (también su portada); correr scripts/freesound.py en la laptop.
-  - Evidencia: [scripts/freesound.py](historia/scripts/freesound.py)
+  - Bloqueo: 13 efectos reemplazados por tomas de ElevenLabs elegidas por Gerson (2026-11-10). Faltan los ambientes: hay tomas nuevas de cuarto, ciudad, agua y mar sin elegir. Freesound sigue respondiendo 403 desde la nube.
+  - Evidencia: [001-el-hombre/fuentes.md](historia/videos/001-el-hombre/fuentes.md) · [scripts/generar_audio.py](historia/scripts/generar_audio.py)
 
 ## Máquinas
 

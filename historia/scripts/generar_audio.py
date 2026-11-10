@@ -906,8 +906,17 @@ def sonoridad(archivo: Path) -> float:
     return float(lineas[-1].split()[1])
 
 
+# Efectos que ya no salen de este script: los eligió Gerson de ElevenLabs (2026-11-10; tomas y prompts en
+# public/compartido/audio/candidatos-elevenlabs/, fuera de git). --forzar no los pisa.
+DE_ELEVENLABS = {"sello", "lapiz", "hoja", "carpeta", "monedas", "saco", "afiche", "borrar", "pluma",
+                 "metal", "golpe", "soplo", "campana"}
+
+
 def guardar(st, ruta: Path, kbps=128, normalizar=-1.0, lufs=None):
     """Escribe un mp3. Con `lufs`, además lo deja a esa sonoridad (para que los ambientes suenen parejos)."""
+    if ruta.parent.name == "sfx" and ruta.stem in DE_ELEVENLABS and ruta.exists():
+        print("de ElevenLabs, no se toca", ruta.relative_to(ROOT))
+        return
     if ruta.exists() and not FORZAR:
         print("ya existe", ruta.relative_to(ROOT))
         return
