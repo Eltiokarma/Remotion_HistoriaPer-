@@ -77,3 +77,15 @@ los enlaces de Suno (`fuentes.md`).
   escena: de 6–8 dB a 1–3 dB.
 - La música se ancla ahora a beats (`montaje_musica/*.json`): si la voz cambia, `montar_musica.py`
   la vuelve a calzar sola.
+
+## Tercera escucha (2026-11-10)
+
+> «2:25–2:26 hay un salto de volumen en el guion; 3:16–3:18, un ligero salto; también en el 5:23.
+> ¿No has puesto la canción G de Suno? No la sentí.»
+
+- Los tres saltos eran **cambios de escena** (s03→s04, s04→s05, s06→s07): cada escena se normalizaba
+  sola. Ahora todas las frases van a un **nivel común del episodio** (`NIVEL_COMUN` en
+  `narracion.py`): escenas entre −15,8 y −16,2 LUFS; de una escena a la siguiente, 0,1–2 dB.
+- **G** estaba en s06 (el guano), pero su parte fuerte va bajo la voz y su acorde final caía encima de
+  la pregunta. Ahora el acorde suena **después** de «¿Adónde fue a parar esa plata?» y queda solo en
+  la cola de s06, alargada de 1,5 a 3,5 s.

@@ -301,7 +301,7 @@
   ]
  },
  "s05": {
-  "duracion": 88.98,
+  "duracion": 89.0,
   "frases": [
    {
     "texto": "A comienzos de los ochenta hace algo poco común.",
@@ -384,49 +384,49 @@
    {
     "texto": "Aprendió a trabajar con cifras y a contrastarlas con documentos.",
     "desde": 48.73,
-    "hasta": 51.85,
+    "hasta": 51.87,
     "cubre": 1.0
    },
    {
     "texto": "Años después, llevaría esa disciplina al estudio de la corrupción en el Perú.",
-    "desde": 52.57,
-    "hasta": 56.05,
+    "desde": 52.59,
+    "hasta": 56.07,
     "cubre": 1.0
    },
    {
     "texto": "De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad.",
-    "desde": 58.5,
-    "hasta": 64.38,
+    "desde": 58.52,
+    "hasta": 64.4,
     "cubre": 1.0
    },
    {
     "texto": "Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la historia financiera del Perú.",
-    "desde": 66.33,
-    "hasta": 71.79,
+    "desde": 66.35,
+    "hasta": 71.81,
     "cubre": 1.0
    },
    {
     "texto": "Y sus ideas también se mueven.",
-    "desde": 73.24,
-    "hasta": 74.92,
+    "desde": 73.26,
+    "hasta": 74.94,
     "cubre": 1.0
    },
    {
     "texto": "De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades.",
-    "desde": 75.54,
-    "hasta": 82.02,
+    "desde": 75.56,
+    "hasta": 82.04,
     "cubre": 1.0
    },
    {
     "texto": "Cambió de ideas.",
-    "desde": 83.47,
-    "hasta": 84.39,
+    "desde": 83.49,
+    "hasta": 84.41,
     "cubre": 1.0
    },
    {
     "texto": "Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión.",
-    "desde": 85.27,
-    "hasta": 88.79,
+    "desde": 85.29,
+    "hasta": 88.81,
     "cubre": 1.0
    }
   ]
@@ -438,7 +438,7 @@
     "texto": "Pero su primer caso lo había encontrado en Lima, en mil novecientos ochenta, poco antes de irse a Nueva York.",
     "desde": 0.3,
     "hasta": 6.02,
-    "cubre": 0.9
+    "cubre": 1.0
    },
    {
     "texto": "Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve.",

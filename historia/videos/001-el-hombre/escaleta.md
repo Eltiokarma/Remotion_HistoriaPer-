@@ -14,10 +14,10 @@ Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **I
 | s03 | TiempoLargo | 1:46.3 | 38 s | 73 % | 9 s | 141 | 7.9 | 19 | 4 | 4 (6.5/min) | 10 (16.2/min) | 🟡 6.5 datos/min |
 | s04 | TiempoLargo | 2:24.5 | 53 s | 67 % | 10 s | 134 | 8.8 | 21 | 8 | 2 (2.3/min) | 11 (12.8/min) | 🟢 |
 | s05 | AprenderAMedir | 3:17.1 | 90 s | 72 % | 16 s | 141 | 10.0 | 18 | 9 | 9 (6.1/min) | 29 (19.6/min) | 🟡 6.1 datos/min |
-| s06 | MecanismoDeuda | 4:47.1 | 32 s | 76 % | 7 s | 170 | 14.3 | 24 | 4 | 6 (11.9/min) | 11 (21.7/min) | 🟡 11.9 datos/min |
-| s07 | Cierre | 5:19.0 | 17 s | 16 % | 3 s | 53 | 5.0 | 5 | 0 | 1 (10.6/min) | 3 (31.9/min) | 🟡 10.6 datos/min |
+| s06 | MecanismoDeuda | 4:47.1 | 34 s | 72 % | 7 s | 170 | 14.3 | 24 | 4 | 6 (11.9/min) | 11 (21.7/min) | 🟡 11.9 datos/min |
+| s07 | Cierre | 5:21.0 | 17 s | 16 % | 3 s | 53 | 5.0 | 5 | 0 | 1 (10.6/min) | 3 (31.9/min) | 🟡 10.6 datos/min |
 
-Total: 5:35.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
+Total: 5:37.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
 
 
 ## s00 · gancho — `Gancho` · 0:00.0–0:33.0 (33.0 s)
@@ -198,7 +198,7 @@ Total: 5:35.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 3:09.8 | Hay cosas que no cambian aunque cambien los gobiernos. |  |  |
 | 3:14.2 | Esa mirada larga es la de esta serie. |  |  |
 
-## s05 · método — `AprenderAMedir` · 3:17.1–4:47.1 (90.0 s)
+## s05 · método — `AprenderAMedir` · 3:17.1–4:47.1 (90.1 s)
 
 - **Cambio:** de un historiador de discursos a uno que mide, y que cambió de ideas
 - **Intención:** el viaje a Nueva York; la regresión explicada en tres tiempos (ruido, la recta que busca, cuánto pesa); la claridad en una balanza; la carrera se lee en el estante, no se narra
@@ -256,21 +256,21 @@ Total: 5:35.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 4:25.9 |  | **temas** — bajan los temas, uno cada 0.5 s |  |
 | 4:30.3 |  | **brujula** — aparece la brújula |  |
 | 4:30.3 | Y sus ideas también se mueven. |  |  |
-| 4:32.5 |  | **izquierda** — (izquierda-derecha) la aguja va al primer tope; se escriben sus notas |  |
+| 4:32.6 |  | **izquierda** — (izquierda-derecha) la aguja va al primer tope; se escriben sus notas |  |
 | 4:32.6 | De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades. |  |  |
-| 4:34.0 |  | **giro** — la aguja gira despacio de una época a la otra (izquierda-derecha: va al otro tope) |  |
+| 4:34.1 |  | **giro** — la aguja gira despacio de una época a la otra (izquierda-derecha: va al otro tope) |  |
 | 4:40.5 | Cambió de ideas. |  |  |
-| 4:40.5 |  | **tiza** — (con brujula_frase) la brújula y su fondo pasan a la pizarra; los rótulos se borran |  |
+| 4:40.6 |  | **tiza** — (con brujula_frase) la brújula y su fondo pasan a la pizarra; los rótulos se borran |  |
 | 4:42.3 | Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión. |  |  |
 | 4:44.0 |  | **frase** — (con brujula_frase) se escribe la frase con tiza |  |
 
-## s06 · puente — `MecanismoDeuda` · 4:47.1–5:19.0 (31.9 s)
+## s06 · puente — `MecanismoDeuda` · 4:47.1–5:21.0 (33.9 s)
 
 - **Cambio:** del hombre que aprendió a medir a su primer caso: una deuda pagada con la plata del guano, y una pregunta abierta
 - **Intención:** cerrar el retrato volviendo atrás: lo que aprendió en Nueva York lo va a usar en lo que ya había encontrado antes de irse; la pregunta queda en el aire para el próximo episodio
-- **Intensidad:** 5 · **Música:** presente (tensión) → se corta con «…a costa del Estado» → acorde sin resolver en la pregunta
+- **Intensidad:** 5 · **Música:** presente (tensión) → el acorde sin resolver queda solo después de la pregunta
 - **Semáforo para enseñar:** 🟡 11.9 datos/min
-- **Métricas:** voz el 76 % del tiempo · tramo más largo sin pausa de párrafo: 7.4 s · 86 palabras · 170 por minuto · 6 frases de 14.3 palabras en promedio (la más larga: 24) · 4 pausa(s) de párrafo (≥ 1 s) · 11 cambios de imagen
+- **Métricas:** voz el 72 % del tiempo · tramo más largo sin pausa de párrafo: 7.4 s · 86 palabras · 170 por minuto · 6 frases de 14.3 palabras en promedio (la más larga: 24) · 4 pausa(s) de párrafo (≥ 1 s) · 11 cambios de imagen
 - **Nombres y cifras que se dicen (6):** Lima · Nueva York · Félix Denegri Luna · Estado · 1980 · 1850
 
 | t | Voz | Imagen | Sonido |
@@ -282,25 +282,25 @@ Total: 5:35.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 4:47.4 |  | **hoja_entra** — (con hojear) entra el libro, cerrado |  |
 | 4:54.3 | Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. |  |  |
 | 4:54.3 |  | **hojea** — (con hojear) se abre y se hojea |  |
-| 5:00.6 |  | **hoja_pagina** — (con hojear) cae la última hoja: la página con el grabado |  |
+| 5:00.7 |  | **hoja_pagina** — (con hojear) cae la última hoja: la página con el grabado |  |
 | 5:01.0 |  | **hoja_zoom** — (con hojear) la cámara entra al grabado hasta llenar la pantalla |  |
 | 5:01.0 |  | _cámara: entra a la ilustración de la página hasta llenar la pantalla_ («el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)) |  |
 | 5:03.1 |  | **sacos** — empiezan a subir sacos al barco |  |
 | 5:03.1 | Ahí estaba el guano. |  |  |
-| 5:04.5 |  | **flecha** — barco y Estado: sale la flecha de dinero |  |
-| 5:04.5 |  |  | se va el ambiente mar |
-| 5:04.5 |  |  | ambiente cuarto (0.5) |
-| 5:04.5 |  | _cámara: sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha_ («Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)) |  |
+| 5:04.6 |  | **flecha** — barco y Estado: sale la flecha de dinero |  |
+| 5:04.6 |  |  | se va el ambiente mar |
+| 5:04.6 |  |  | ambiente cuarto (0.5) |
+| 5:04.6 |  | _cámara: sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha_ («Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)) |  |
 | 5:04.9 | Y una deuda que el Estado decidió pagar con esa plata, en mil ochocientos cincuenta. |  |  |
 | 5:07.3 |  | **vales** — se apilan los vales de la deuda |  |
 | 5:07.3 |  | _cámara: paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales_ («una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)) |  |
 | 5:08.9 |  | **consolidacion** — cae el sello sobre la pila |  |
 | 5:10.5 | Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. |  |  |
 | 5:10.5 |  | **hallazgo** — (opcional) sobre la pila de vales, el monto del vale de arriba se infla (ejemplo ilustrativo) |  |
-| 5:15.6 | ¿Adónde fue a parar esa plata? |  |  |
-| 5:15.6 |  | **pregunta** — (con pregunta) la pregunta se escribe fuerte |  |
+| 5:15.7 | ¿Adónde fue a parar esa plata? |  |  |
+| 5:15.7 |  | **pregunta** — (con pregunta) la pregunta se escribe fuerte |  |
 
-## s07 · cierre — `Cierre` · 5:19.0–5:35.7 (16.7 s)
+## s07 · cierre — `Cierre` · 5:21.0–5:37.7 (16.7 s)
 
 - **Cambio:** del caso abierto a la promesa del próximo episodio
 - **Intención:** las pruebas de imprenta del comienzo se cierran; el tema entra unos segundos antes y se queda después, para que la tristeza se asiente (DIRECCION_DE_VIDEO §2.15)
@@ -311,12 +311,12 @@ Total: 5:35.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
-| 5:19.0 |  |  | música s07-tema.mp3 (nivel 0.55) |
-| 5:19.0 |  |  | ambiente cuarto (0.5) |
-| 5:19.3 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
-| 5:21.3 |  | **negro** — fundido a negro |  |
-| 5:21.3 |  |  | se va el ambiente cuarto |
-| 5:21.8 | Próximo episodio: La deuda defraudada. |  |  |
-| 5:21.8 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
-| 5:21.8 |  | _cámara: se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)_ (la música se queda sobre el final (revisión del director): el plano respira mientras se asienta la tristeza, sin congelarse) |  |
+| 5:21.0 |  |  | música s07-tema.mp3 (nivel 0.55) |
+| 5:21.0 |  |  | ambiente cuarto (0.5) |
+| 5:21.3 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
+| 5:23.3 |  | **negro** — fundido a negro |  |
+| 5:23.3 |  |  | se va el ambiente cuarto |
+| 5:23.8 | Próximo episodio: La deuda defraudada. |  |  |
+| 5:23.8 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
+| 5:23.8 |  | _cámara: se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)_ (la música se queda sobre el final (revisión del director): el plano respira mientras se asienta la tristeza, sin congelarse) |  |
 

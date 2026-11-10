@@ -85,6 +85,7 @@ def aire(muestra, segundos):
 
 
 NIVELAR = 0.65   # cuánto se acerca cada frase al nivel medio de la escena (1 = todas iguales, 0 = como vino)
+NIVEL_COMUN = -13.3   # nivel de frase (RMS de su mitad más fuerte) común a todo el episodio: da ~−16 LUFS
 
 
 def nivelar(x, pos):
@@ -99,7 +100,9 @@ def nivelar(x, pos):
         return 20 * np.log10(np.mean(r) + 1e-9)
     niveles = [nivel(f["desde"], f["hasta"]) for f in pos]
     medio = float(np.median(niveles))
-    ganancias = [float(np.clip((medio - n) * NIVELAR, -6, 6)) for n in niveles]
+    # Gerson (2:25, 3:16, 5:23): los saltos estaban en los cambios de escena, porque cada escena se
+    # normalizaba sola. Ahora: la escena entera al nivel común del episodio, y cada frase un 65 % hacia él.
+    ganancias = [float(np.clip((NIVEL_COMUN - medio) + (medio - n) * NIVELAR, -12, 12)) for n in niveles]
     env = np.ones(len(x), np.float32) * 10 ** (ganancias[0] / 20)
     for i in range(1, len(pos)):
         a, b = pos[i - 1]["hasta"], pos[i]["desde"]
@@ -240,11 +243,11 @@ def escena(video, s, cfg, prov):
     escribir(x, wav)
     dst = H / "voz" / f"{s}.mp3"
     dst.parent.mkdir(exist_ok=True)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-af", f"volume={-16 - lufs(wav):.2f}dB",
-                    "-c:a", "libmp3lame", "-b:a", "128k", str(dst)], check=True)
+    # sin normalizar por escena: el nivel ya es el común del episodio (nivelar)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-c:a", "libmp3lame", "-b:a", "128k", str(dst)], check=True)
     dur = len(x) / SR
     faltan = [fr_guion[i]["texto"] for i, f in enumerate(pos) if f["cubre"] < 0.9]
-    print(f"{s}: {dur:6.2f} s (provisional {prov[s]['duracion']:6.2f}) · guion {ratio * 100:.0f} % · "
+    print(f"{s}: {dur:6.2f} s (provisional {prov[s]['duracion']:6.2f}) · {lufs(dst):.1f} LUFS · guion {ratio * 100:.0f} % · "
           f"{len(insertos)} respiro(s) alargado(s)" + (f" · REVISAR: {faltan}" if faltan else "")
           + (f" · {limpiados} ruido(s) limpiado(s)" if limpiados else "")
           + (f" · REGENERAR, ruido sobre una palabra: {eventos_pisados}" if eventos_pisados else ""))

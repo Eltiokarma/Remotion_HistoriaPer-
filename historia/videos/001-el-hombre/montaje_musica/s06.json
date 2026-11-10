@@ -1,23 +1,23 @@
 {
   "salida": "s06-la-deuda.mp3",
-  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. El acorde final de G (29,5 s del archivo) un instante antes de la pregunta",
+  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. El acorde final de G (29,5 s del archivo) suena justo después de la pregunta y queda solo en la cola de s06 (Gerson: «no la sentí»)",
   "dur": "escena",
   "capas": [
     {
       "archivo": "suno/V01_mus-G_ver01_3.wav",
       "ancla": [
         "pregunta",
-        29.6
+        27.6
       ],
       "env": [
         [
           "pregunta",
-          -29.6,
+          -27.6,
           0
         ],
         [
           "pregunta",
-          -28.6,
+          -26.6,
           1
         ]
       ]
