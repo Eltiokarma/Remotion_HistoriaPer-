@@ -1,0 +1,94 @@
+{
+  "titulo": "Del expediente al método de Quiroz",
+  "episodio": "002-la-deuda-defraudada",
+  "seccion": 5,
+  "fecha": "2026-11-09",
+  "herramienta": "VectorCraft mediante MCP",
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "laminas": 3,
+  "vinyetas": 12,
+  "artboard": {
+    "ancho": 2520,
+    "alto": 2140
+  },
+  "fuente": "Quiroz, Historia de la corrupción en el Perú, 2013, pp. 169–185 y 535–538",
+  "recursos_reutilizados": [
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/islas-guaneras-v3.svg",
+      "sha256": "56fded3008c1b0a8e178de6b9f400993fd64497d995917a1bb234c67e497032f",
+      "uso": "Recuperado como vector incrustado mediante MCP; originales intactos"
+    },
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/edificio-estado-video01.svg",
+      "sha256": "d310fe95427b4693203bac046018c44c5fd742c90aa3d3f654f2cea9692e42a7",
+      "uso": "Recuperado como vector incrustado mediante MCP; originales intactos"
+    },
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/tanda04-fichero.svg",
+      "sha256": "21477428be25f8e55cc93fac36a16b975cc43fe1988e9611fa56c9f519efcb62",
+      "uso": "Recuperado como vector incrustado mediante MCP; originales intactos"
+    },
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/tanda03-libro.svg",
+      "sha256": "056c57fadb0fdae32897d35dd62d97b403c2eee3b1eb18ff21a8aff643c72ffe",
+      "uso": "Recuperado como vector incrustado mediante MCP; originales intactos"
+    },
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/tanda03-pruebas.svg",
+      "sha256": "af48201bcdc65069b4e472be8f68ee3fc29ee3a3d1b2adbc25baae530f4cca6b",
+      "uso": "Recuperado como vector incrustado mediante MCP; originales intactos"
+    }
+  ],
+  "archivos": [
+    {
+      "archivo": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 12783,
+      "sha256": "8b2547a14ce44b966efbe0b92ca47ad35c4fb14aff1f2f2c7b58410a8951cb2b"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina1.png",
+      "bytes": 459904,
+      "sha256": "ed6c420140a8505b773224e82e5fd0d0ddc3ecda508135266923d21e16557301"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina1.svg",
+      "bytes": 2427254,
+      "sha256": "200b557840077dd1030abc8a41bcf014d8065653ef510d70c4f0fee76d6b478e"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina2.png",
+      "bytes": 383441,
+      "sha256": "43a0a37bc57295eb156b9018d0aaea039cf485906f268924b0469583ec393e41"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina2.svg",
+      "bytes": 2722363,
+      "sha256": "a1acf4a9c8b3bcac3ca049935befb96c6a9be9098cf96a0c5055eff8ec263f36"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina3.png",
+      "bytes": 332377,
+      "sha256": "5a14d0537bd324d04515d747b83602a51da546d9bd87c80af41050c8ca2ee9c5"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina3.svg",
+      "bytes": 1938222,
+      "sha256": "8460cabdc062d425a72bfe31806733273792f380288e1fd62dae033eec6dedff"
+    },
+    {
+      "archivo": "storyboard-02-seccion05.pdf",
+      "bytes": 4389700,
+      "sha256": "1cb59cc4283bbc0613c3085d63d5cb105b504cf609f8a75367084fdf07d24604"
+    },
+    {
+      "archivo": "storyboard-02-seccion05.vectorcraft",
+      "bytes": 703339,
+      "sha256": "b003173e4298ebe0c4d0bca92c4c12c3396d2152060b72c467def8e506b77b38"
+    }
+  ]
+}

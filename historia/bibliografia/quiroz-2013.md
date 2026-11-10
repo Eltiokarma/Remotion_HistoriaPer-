@@ -719,8 +719,10 @@ militares a quienes apoyó en su momento.»
   prácticas corruptas tienden a salir del país, para así protegerlos o lavarlos.» Se mide «como
   porcentaje del gasto gubernamental total y el producto bruto interno (PBI)».
 
-- **El método (p. 536):** primero la década de 1850 (consolidación, conversión, manumisión); luego
-  los costos directos e indirectos por década en los siglos XIX y XX, «midiéndolos en relación con
+- **El método (pp. 535–536):** en el orden expositivo del apéndice, el modelo se aplica primero al
+  régimen de Fujimori-Montesinos (1990–2000) y después al decenio de 1850 (consolidación, conversión,
+  manumisión); tras ambos cálculos se presentan los costos directos e indirectos por década en los
+  siglos XIX y XX, «midiéndolos en relación con
   el gasto gubernamental y el PBI». Fuentes: «estimados contemporáneos en obras publicadas,
   contabilidad presupuestal, evidencias judiciales contra empleados públicos, investigaciones
   parlamentarias, correspondencia diplomática y otras fuentes históricas».
