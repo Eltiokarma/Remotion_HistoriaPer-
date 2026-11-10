@@ -724,6 +724,54 @@
       }
     },
     {
+      "depende_de": [],
+      "prevista": null,
+      "bloqueo": null,
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": 25.2,
+        "maquina": "contenedor"
+      },
+      "id": "t2-grabado",
+      "fase": "f2",
+      "titulo": "14 Grabado a buril: motor de lemo-opuscar sobre una lámina de VectorCraft",
+      "entregable": "Muestra 14 con informe, medición y revisión; motor copiado con atribución MIT",
+      "estado": "hecho",
+      "real": {
+        "inicio": "2026-11-10",
+        "fin": "2026-11-10"
+      },
+      "evidencia": [
+        "historia/laboratorio/muestras/14-grabado-buril/INFORME.md",
+        "historia/laboratorio/resultados/14-grabado-buril/final.json"
+      ]
+    },
+    {
+      "depende_de": [],
+      "prevista": null,
+      "bloqueo": null,
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      },
+      "id": "t2-beats-voz",
+      "fase": "f2",
+      "titulo": "Beats propuestos desde la voz (librosa)",
+      "entregable": "laboratorio/scripts/beats_voz.py: pausas y comienzos de frase → propuesta de beats, sin tocar escenas.json",
+      "estado": "hecho",
+      "real": {
+        "inicio": "2026-11-10",
+        "fin": "2026-11-10"
+      },
+      "evidencia": [
+        "historia/laboratorio/scripts/beats_voz.py",
+        "historia/laboratorio/resultados/beats-voz/001-el-hombre-s05.json"
+      ]
+    },
+    {
       "estado": "propuesto",
       "depende_de": [
         "t1-revision"
@@ -1177,7 +1225,7 @@
     {
       "id": "e1-revision-laminas",
       "fase": "e1",
-      "titulo": "Revisión de Gerson de la integración y de los efectos pendientes (E01–E06, E08–E12)",
+      "titulo": "Revisión de Gerson de la integración de las láminas y de los efectos recuperados (E01–E12)",
       "entregable": "Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO",
       "estado": "pendiente",
       "depende_de": [

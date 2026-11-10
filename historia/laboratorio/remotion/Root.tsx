@@ -11,6 +11,7 @@ import { BalsaInkscape } from '../muestras/10-balsa-inkscape/Muestra';
 import { TituloInkscape } from '../muestras/11-titulo-inkscape/Muestra';
 import { TituloEditable } from '../muestras/12-titulo-editable/Muestra';
 import { Efectos } from '../muestras/13-efectos/Muestra';
+import { GrabadoBuril } from '../muestras/14-grabado-buril/Muestra';
 import { ALTO, ANCHO, DURACION, FPS } from './comun';
 
 /** Las muestras del laboratorio. Todas: 5 s exactos, 1920 × 1080, 30 fps. */
@@ -25,6 +26,7 @@ const MUESTRAS = [
   { id: 'lab-11-titulo-inkscape', componente: TituloInkscape },
   { id: 'lab-12-titulo-editable', componente: TituloEditable },
   { id: 'lab-13-efectos', componente: Efectos },
+  { id: 'lab-14-grabado-buril', componente: GrabadoBuril },
 ] as const;
 
 /** Cada muestra lleva la misma precarga de texturas que los episodios (VideoLargo). */

@@ -107,3 +107,25 @@ Si Gerson quiere mover tiempos o posiciones sin tocar código: escribir la pieza
 del Studio (`Interactive.*` con nombre, claves `interpolate(frame, …)` en línea, curvas = pesos del
 canal en números). Modelo: `laboratorio/muestras/12-titulo-editable/`. El Studio escribe el cambio en
 el archivo; después, `npm run reglas` y `npm run typecheck`.
+
+## Ideas tomadas de otros repositorios (2026-11-10)
+
+Adaptadas, no instaladas (como los skills de Emil Kowalski, ver `movimiento.md`). Fuentes: `ClaudeAnimationBase`
+(John Heibel, MIT), `lemo-opuscar` (`DIRECTOR.md`, LemoLab, MIT) y `video-shotcraft` (Apache-2.0).
+
+- **Hoja de lecturas por beat.** Antes de animar, escribir por cada beat qué tiene que *entender* el espectador
+  (no qué se mueve), con inicio y fin. Dos lecturas no se pisan: si se pisan, una espera.
+- **Referencias con dos columnas.** Para cada referencia: qué se aprende de ella y qué **no** se toma.
+- **Tres estructuras antes de elegir.** Para la secuencia propia del tema (§1.1·4), esbozar tres y elegir una.
+  Si se parece a la de otro episodio en más de dos rasgos (encuadre, recorrido, ritmo, paleta, sonido,
+  remate), no es propia.
+- **Revisar en tres escalas.** La hoja de contactos; una tira cada 0,2 s en los tramos de movimiento; y un
+  recorte que sigue el objeto que se mueve (ahí se ven los saltos que la hoja esconde).
+- **Después de un silencio**, el primer sonido es de los que más pesan: elegirlo, no dejar el que toque.
+- **Pendiente de medir en el laboratorio:** el desfase entre audio y video del render (se dice que el AAC
+  adelanta o atrasa ~1 cuadro) y alinear los efectos por su pico, no por el comienzo del archivo.
+
+**Choques (manda el canal):** «nada quieto nunca» (aquí, ≥ 20 % de cámara quieta y la imagen terminada se
+sostiene); «sin texto en pantalla» (aquí, el texto aporta lo que la voz no dice, §5); «transición en cada
+corte» (aquí, cortes J y L, y el corte duro se declara, §6); curvas sueltas `Easing.bezier` (aquí, pesos, §11);
+voz TTS por defecto (aquí, la voz de Gerson, §1.1·1).

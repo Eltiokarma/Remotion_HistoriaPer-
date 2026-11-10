@@ -12,7 +12,7 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **24** · 🔄 en curso: **2** · ⏳ pendiente: **7** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **26** · 🔄 en curso: **2** · ⏳ pendiente: **7** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -58,6 +58,8 @@ gantt
   07 QGIS el altiplano con lagos y ríos, exportado a GeoJSON para MapaLugar (propuesta) :t2qgis, 2026-11-11, 4d
   08 Blender un objeto de época con material de grabado, montado en Remotion (propuesta) :t2blender, 2026-11-16, 5d
   04b Libro 3D con tinta sombreado toon y contornos (propuesta) :t2toon, 2026-11-09, 2d
+  14 Grabado a buril motor de lemo-opuscar sobre una lámina de VectorCraft :done, t2grabado, 2026-11-10, 1d
+  Beats propuestos desde la voz (librosa) :done, t2beatsvoz, 2026-11-10, 1d
   section Fase 3 · Referencia naval en pruebas chicas
   Naval 1 · Mar y balanceo (propuesta) :n1mar, 2026-11-23, 3d
   Naval 2 · Barco e iluminación entre niebla (propuesta) :n2barco, 2026-11-26, 6d
@@ -240,6 +242,16 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `t1-revision`
   - Prevista: 2026-11-09 → 2026-11-10 (propuesta) · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+- [x] **14 Grabado a buril: motor de lemo-opuscar sobre una lámina de VectorCraft** `t2-grabado` — ✅ hecho
+  - Entregable: Muestra 14 con informe, medición y revisión; motor copiado con atribución MIT
+  - Prevista: — · Real: 2026-11-10
+  - Tiempo: H ¿? · A ¿? · R 25.2 s en contenedor · tokens ¿?
+  - Evidencia: [14-grabado-buril/INFORME.md](historia/laboratorio/muestras/14-grabado-buril/INFORME.md) · [14-grabado-buril/final.json](historia/laboratorio/resultados/14-grabado-buril/final.json)
+- [x] **Beats propuestos desde la voz (librosa)** `t2-beats-voz` — ✅ hecho
+  - Entregable: laboratorio/scripts/beats_voz.py: pausas y comienzos de frase → propuesta de beats, sin tocar escenas.json
+  - Prevista: — · Real: 2026-11-10
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [scripts/beats_voz.py](historia/laboratorio/scripts/beats_voz.py) · [beats-voz/001-el-hombre-s05.json](historia/laboratorio/resultados/beats-voz/001-el-hombre-s05.json)
 
 ### Fase 2b · Tanda de estilos (adaptados al canal)
 
@@ -361,7 +373,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-10
   - Tiempo: H ¿? · A ¿? · R 1264 s en contenedor · tokens ¿?
   - Evidencia: [diseno/inventario-graficos-efectos.md](historia/videos/001-el-hombre/diseno/inventario-graficos-efectos.md) · [scripts/vectorcraft-piezas.mjs](historia/scripts/vectorcraft-piezas.mjs) · [vectorcraft/Lamina.tsx](historia/src/components/graficos/vectorcraft/Lamina.tsx)
-- [ ] **Revisión de Gerson de la integración y de los efectos pendientes (E01–E06, E08–E12)** `e1-revision-laminas` — ⏳ pendiente
+- [ ] **Revisión de Gerson de la integración de las láminas y de los efectos recuperados (E01–E12)** `e1-revision-laminas` — ⏳ pendiente
   - Entregable: Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO
   - Depende de: `e1-laminas`
   - Prevista: — · Real: null

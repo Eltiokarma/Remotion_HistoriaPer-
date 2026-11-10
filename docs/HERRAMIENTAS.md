@@ -49,8 +49,8 @@ código. Lo que hay, según sus repositorios y documentación (no según pruebas
 | Programa | MCP | Qué hace | Costo | Para el canal |
 |---|---|---|---|---|
 | **Inkscape** (vectorial libre, como Illustrator) | Comunitarios: `inksmcp`, `inkscape-mcp` (PyPI) | Crear, editar y exportar SVG con Inkscape 1.x | Gratis (GPL; `inksmcp` MIT) | **Verificado en el contenedor** con `inksmcp` 0.3.0 e Inkscape 1.2.2 ([muestra 10](../historia/laboratorio/muestras/10-balsa-inkscape/)): dibujo por MCP en 3,7 s, animado en Remotion. Sin pantalla hace falta `scripts/inkscape-sin-pantalla.sh`. En la laptop, sin probar. **Reemplazado por VectorCraft** (Gerson, 2026-11-10) |
-| **VectorCraft** | Por MCP, desde ChatGPT y Claude | Diseño de láminas vectoriales; SVG que `scripts/vectorcraft-capas.ps1` pasa a JSON por capas y `src/components/graficos/VectorCraft.tsx` anima con los beats | — | **El camino del contenido** (Gerson, 2026-11-10): se usó en el episodio 001 (ver `historia/APRENDIZAJES_PRODUCCION.md`) |
-| **Blender** | `ahujasid/blender-mcp` (MIT, el más usado) | Escena, objetos, materiales, capturas del visor | Gratis | Tarea `t2-blender`. Corre en la máquina de Gerson (complemento dentro de Blender); sin GPU, el render es lento |
+| **VectorCraft** | Por MCP, desde ChatGPT y Claude | Diseño de láminas vectoriales; SVG que `scripts/vectorcraft-piezas.mjs` separa en capas y piezas (con la caja de cada una) y los componentes del canal animan dentro de sus movimientos (`src/components/graficos/vectorcraft/Lamina.tsx`) | — | **El camino del contenido** (Gerson, 2026-11-10): se usó en el episodio 001 (ver `historia/APRENDIZAJES_PRODUCCION.md`) |
+| **Blender** | `ahujasid/blender-mcp` (MIT, el más usado) | Escena, objetos, materiales, capturas del visor | Gratis | Tarea `t2-blender`. Corre en la máquina de Gerson (complemento dentro de Blender); sin GPU, el render es lento. **Al instalarlo:** trae telemetría activada por defecto (`DISABLE_TELEMETRY=true` la apaga); `execute_blender_code` corre Python arbitrario; no usar sus generadores de modelos por IA (Tripo, Hyper3D, Hunyuan, Meshy) por la regla 1.1·3; Poly Haven sí trae licencia por recurso |
 | **Illustrator** | Oficial dentro de Illustrator (Beta), 40 herramientas, según la ayuda de Adobe; y comunitarios (`ie3jp/illustrator-mcp-server`, 63 herramientas) | Leer, crear y exportar el documento abierto | Suscripción de Adobe | Igual que Inkscape, si Gerson ya tiene Creative Cloud |
 | **After Effects** | Solo comunitarios (ocho o más: `kumoproductions/mcp-aftereffects`, `ishu86/after-effects-mcp`…); ninguno de Adobe | Composiciones, capas, claves, expresiones, render | Suscripción de Adobe | Se superpone con Remotion. Saldría como video que Remotion monta; los beats se fijan en segundos |
 | **Adobe for creativity** | Conector oficial de Adobe para Claude (abril 2026), 50+ herramientas | Según una prueba de terceros, opera al nivel de Adobe Express (reencuadre, ajustes básicos), no el control fino de Photoshop o Premiere | Cuenta de Adobe para más uso | Poco: no es el control de capas que necesita una escena |
@@ -73,6 +73,20 @@ skills (`historia/CLAUDE.md` §15).
 **Uno propio.** Se puede escribir un servidor MCP del canal (renderizar un tramo, sacar un cuadro,
 medir, revisar, validar `escenas.json`). Dentro de Claude Code ya se hace con los scripts; serviría
 para trabajar desde Claude Desktop o claude.ai sin el repositorio.
+
+## Repositorios revisados el 2026-11-10 (a pedido de Gerson)
+
+| Repositorio | Licencia | Estado | Qué se tomó o por qué no |
+|---|---|---|---|
+| `lemomo-ai/lemo-opuscar` — motor de grabado a buril (Canvas 2D) | MIT | **verificada (contenedor)** | El motor de líneas (`burin.js`, `engraveShape`) en la [muestra 14](../historia/laboratorio/muestras/14-grabado-buril/), con atribución. Sus instrucciones para agentes (`AGENTS.md`, plugin) **no**: chocan con el canal (TTS por defecto, entre otras) |
+| `librosa/librosa` — análisis de audio | ISC | **verificada (contenedor)** | Como dependencia (`pip install librosa`), sin copiar código: [`laboratorio/scripts/beats_voz.py`](../historia/laboratorio/scripts/beats_voz.py) propone beats en pausas y comienzos de frase de la voz. Paso previo del editor de beats (`historia/CLAUDE.md` §15) |
+| `JohnHeibel/ClaudeAnimationBase` — guía de animación | MIT | ideas adaptadas | La hoja de «lecturas» y el bucle de revisión, en el skill del canal (`procedimiento.md`). No se instala: pide «nada quieto», «sin texto» y «transición en cada corte», que chocan con §4–§6 |
+| `Vincentwei1021/video-shotcraft` — reglas para videos promocionales | Apache-2.0 | ideas adaptadas | El sonido por su pico medido y el desfase de audio del render, como pendientes del laboratorio. Su plantilla usa curvas sueltas (§11) |
+| `mrdoob/three.js` | MIT | ya en uso | Misma versión (0.187.0). `SVGLoader` (en el paquete) por si un día hay que extruir una lámina |
+| `pmndrs/react-postprocessing` | MIT | pendiente de prueba | Solo dentro de escenas 3D (R3F) y con WebGL. El grano y la viñeta 2D ya están en `Atmosfera.tsx` |
+| `pmndrs/react-three-rapier` — física | MIT | descartada | La física avanza cuadro a cuadro; Remotion renderiza en desorden y en paralelo: habría que precalcular la simulación |
+| `patch-gg/pixelfx` | MIT | descartada | Estética de píxeles de videojuego; guarda estado entre cuadros (§11) |
+| `yihui-dev/awesome-opus5-5-videos`, `joeseesun/opus-video-prompts` — colecciones de prompts | compilación MIT / sin licencia; cada prompt es de su autor | solo lectura | No se copian: son instrucciones de terceros para un agente, casi todas de publicidad, y una no tiene licencia |
 
 ## Cómo entra cada una al video
 

@@ -127,6 +127,15 @@ lo de la primera tanda; `pendientes/` los recortes de lo que falta.
   foco, LUT a dos tonos del canal, resplandor y desenfoque de zoom funcionan sin GPU (WebGL2); pasar
   página necesita WebGPU (sin probar en la laptop). El resplandor es el más caro.
 
+- **14 · Grabado a buril**, [informe](muestras/14-grabado-buril/INFORME.md). El motor de grabado de
+  lemo-opuscar (MIT) convierte la isla de una lámina de VectorCraft en un grabado que se corta línea por
+  línea: contorno, rayado, cruzado y losange. Canvas 2D, sin GPU, con nuestros pesos. 25,2 s (con otro
+  render en paralelo).
+
+- **Beats desde la voz** (`scripts/beats_voz.py`, librosa). Propone dónde caen los beats: pausas y
+  comienzos de frase. En la voz provisional de 001·s05, 13 de 25 beats coinciden con un comienzo de frase
+  a ≤ 0,2 s; los otros caen a mitad de frase y necesitan las marcas por palabra de whisper (§10).
+
 ## Qué sigue
 
 Ver el roadmap. En corto: Gerson revisa la tanda 1 (fase `t1-revision`); después la tanda 2
