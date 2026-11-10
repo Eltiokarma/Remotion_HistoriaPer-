@@ -731,7 +731,12 @@
         },
         "paneo": true,
         "pregunta": "¿A dónde fue a parar esa plata?",
-        "sigue_barco": true
+        "sigue_barco": true,
+        "laminas": {
+          "islas": "vectorcraft/islas-guaneras-v3.json",
+          "estado": "vectorcraft/edificio-estado-video01.json",
+          "vale": "vectorcraft/vale-video01.json"
+        }
       },
       "audio": {
         "musica": {

@@ -2,6 +2,8 @@ import { useMemo } from 'react';
 import { azar } from '../../direction/azar';
 import type { Paleta } from '../../esquema';
 import { mezclar } from '../../estilo/color';
+import { clamp } from '../../direction/anim';
+import { capa, CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
   paleta: Paleta;
@@ -17,6 +19,77 @@ type Props = {
    * (DIRECCION_DE_VIDEO §2.12: nada de bucles visibles ni saltos).
    */
   anclado?: boolean;
+  /** Lámina aprobada (islas-guaneras-v3): isla, colonia de aves, embarcadero con sacos y fragata. */
+  lamina?: Lamina | null;
+};
+
+/** Dónde está la fragata en la lámina (centro del casco en la línea de flotación). */
+export const BARCO_LAMINA = { x: 1445, y: 740, escala: 1 } as const;
+const BARCO_CAPAS = ['Mâts_et_gréement', 'Voiles___plis_et_coutures', 'Navire___coque_et_pont'];
+
+/** La fragata de la lámina, sola, para seguirla fuera del grabado (va del grabado al Estado). */
+export const BarcoLamina: React.FC<{ lamina: Lamina; x: number; y: number; escala: number; t: number }> = ({ lamina, x, y, escala, t }) => {
+  const uid = usePrefijo();
+  const balanceo = `rotate(${Math.sin(t * 0.8) * 0.6} ${BARCO_LAMINA.x} ${BARCO_LAMINA.y}) translate(0 ${Math.sin(t * 1.1) * 2})`;
+  return (
+    <g transform={`translate(${x} ${y}) scale(${escala}) translate(${-BARCO_LAMINA.x} ${-BARCO_LAMINA.y})`}>
+      <DefsLamina lamina={lamina} uid={uid} />
+      <g transform={balanceo}>{BARCO_CAPAS.map((n) => <CapaVC key={n} lamina={lamina} uid={uid} nombre={n} />)}</g>
+    </g>
+  );
+};
+
+/**
+ * El grabado de la lámina. Se mueve lo que se movía en el dibujado: el mar (las rayas de las olas
+ * corren despacio), las aves en vuelo (planean y aletean; las posadas quedan), la fragata se mece y
+ * los sacos bajan por la plancha hasta la cubierta, uno tras otro y una sola vez.
+ */
+const GrabadoLamina: React.FC<{ t: number; carga?: number; anclado: boolean; lamina: Lamina }> = ({ t, carga, anclado, lamina }) => {
+  const uid = usePrefijo();
+  const c = (n: string, extra: Omit<React.ComponentProps<typeof CapaVC>, 'lamina' | 'uid' | 'nombre'> = {}) => <CapaVC lamina={lamina} uid={uid} nombre={n} {...extra} />;
+  // sin anclar, la fragata navega despacio hacia la izquierda (como el dibujado)
+  const navega = !anclado && carga === undefined ? -t * 9 : 0;
+  const balanceo = `translate(${navega} ${Math.sin(t * 1.1) * 2}) rotate(${Math.sin(t * 0.8) * 0.6} ${BARCO_LAMINA.x} ${BARCO_LAMINA.y})`;
+  // los sacos: el más cercano al barco baja primero; cada uno recorre la plancha y entra a la bodega
+  const sacos = capa(lamina, 'Embarcadère');
+  const PLANCHA = { dx: 223, dy: 45 }, FIN = 1185;
+  const saco = (i: number) => {
+    if (i < 6) return undefined;
+    const k = Math.floor((i - 6) / 2); // cada saco son dos piezas (bolsa y amarre)
+    const orden = 4 - k;
+    const u = carga === undefined || carga < 0 ? 0 : clamp((carga - orden * 0.55) / 1.3);
+    if (u <= 0) return undefined;
+    const x0 = sacos.boxes[6 + k * 2][0] + 9;
+    const d = (FIN - x0) * u;
+    const salto = Math.abs(Math.sin(u * Math.PI * 7)) * 1.6; // los llevan a pulso
+    return { transform: `translate(${d} ${(d * PLANCHA.dy) / PLANCHA.dx - salto})`, opacity: 1 - clamp((u - 0.85) / 0.15) };
+  };
+  return (
+    <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ position: 'absolute', inset: 0 }}>
+      <DefsLamina lamina={lamina} uid={uid} />
+      {/* el papel de la lámina, sin su fondo oscuro ni su título (la escena pone la ficha) */}
+      {c('Papel_y_atmósfera', { solo: (i) => i === 1 })}
+      {c('Horizonte_y_mar', { pieza: (i) => (i === 0 ? undefined : { transform: `translate(${Math.sin(t * 0.5 + i) * 7} 0)` }) })}
+      {c('Isla_distante')}
+      {c('Isla_principal')}
+      {c('Acantilado_natural')}
+      {c('Guano___acumulación')}
+      {c('Aves___colonia', {
+        pieza: (i, b) => {
+          if (i < 24) return undefined; // la colonia posada
+          const j = i - 24, cx = b[0] + b[2] / 2, cy = b[1] + b[3] / 2;
+          const x = Math.sin(t * (0.07 + j * 0.011) + j * 1.3) * (40 + j * 9), y = Math.sin(t * (0.11 + j * 0.013) + j) * (10 + j * 2);
+          const ala = 0.55 + 0.45 * Math.abs(Math.sin(t * (7 + j * 0.4) + j));
+          return { transform: `translate(${x} ${y}) translate(${cx} ${cy}) scale(1 ${ala.toFixed(3)}) translate(${-cx} ${-cy})` };
+        },
+      })}
+      {c('Rochers_du_rivage')}
+      {c('Embarcadère', { pieza: saco })}
+      <g transform={balanceo}>{BARCO_CAPAS.map((n) => <CapaVC key={n} lamina={lamina} uid={uid} nombre={n} />)}</g>
+      {/* reflejo de la fragata (titila con el agua), espuma en la orilla y el marco que tapa el mar */}
+      {c('Ressac', { solo: (i) => i !== 11, pieza: (i) => (i < 7 ? { opacity: 0.6 + 0.4 * Math.sin(t * 1.6 + i * 0.9), transform: `translate(${navega} 0)` } : undefined) })}
+    </svg>
+  );
 };
 
 const X0 = 150, X1 = 1770, Y0 = 100, Y1 = 940, HORIZONTE = 585;
@@ -107,7 +180,10 @@ export const Barco: React.FC<{ x: number; y: number; tinta: string; papel: strin
  * Grabado del siglo XIX (tinta sobre papel): cielo y mar en líneas de buril, islas con
  * sombreado cruzado, montículos de guano punteados, aves y una fragata. El mar se mueve.
  */
-export const GrabadoGuanero: React.FC<Props> = ({ paleta, t, guano, id = 'grabado', carga, anclado = false }) => {
+export const GrabadoGuanero: React.FC<Props> = ({ lamina, ...props }) =>
+  lamina ? <GrabadoLamina t={props.t} carga={props.carga} anclado={props.anclado ?? false} lamina={lamina} /> : <GrabadoDibujado {...props} />;
+
+const GrabadoDibujado: React.FC<Omit<Props, 'lamina'>> = ({ paleta, t, guano, id = 'grabado', carga, anclado = false }) => {
   const tinta = mezclar(paleta.fondo, paleta.rojo, 0.08);
   const filasMar = useMemo(() => {
     const out: number[] = [];

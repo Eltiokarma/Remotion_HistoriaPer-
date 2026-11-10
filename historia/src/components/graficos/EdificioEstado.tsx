@@ -4,6 +4,7 @@ import { azar } from '../../direction/azar';
 import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
+import { capa, CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
   paleta: Paleta;
@@ -18,6 +19,8 @@ type Props = {
   siluetas?: number;
   /** Ancho del dibujo en px (alto proporcional). */
   width?: number;
+  /** Lámina aprobada (edificio-estado-video01): el rótulo «ESTADO» viene trazado en su placa. */
+  lamina?: Lamina | null;
 };
 
 const W = 760, H = 560;
@@ -39,7 +42,61 @@ const Silueta: React.FC<{ x: number; y: number; color: string }> = ({ x, y, colo
  * dentículos y un relieve de laureles, la sombra honda del pórtico y la que el edificio echa al
  * piso. Las ventanas se encienden con siluetas.
  */
-export const EdificioEstado: React.FC<Props> = ({ paleta, id, rotulo, etiqueta, dibujo = 1, siluetas = 0, width = 760 }) => {
+export const EdificioEstado: React.FC<Props> = ({ lamina, ...props }) => {
+  const uid = usePrefijo();
+  if (lamina) return <EdificioLamina {...props} lamina={lamina} uid={uid} />;
+  return <EdificioDibujado {...props} />;
+};
+
+/** Recuadro de la lámina con la misma proporción que el dibujado (760 × 560) y la base en el mismo lugar. */
+const CAJA = { x: 280, y: -66, w: 1420, h: (1420 * H) / W };
+const BASE_LAMINA = 980, TECHO_LAMINA = 150;
+const ORDEN_VENTANAS = [2, 0, 3, 1];
+
+/**
+ * La fachada de la lámina. Se dibuja de abajo hacia arriba como la dibujada y sus cuatro ventanas
+ * se encienden con siluetas de funcionarios, en desorden, con la etiqueta debajo.
+ */
+const EdificioLamina: React.FC<Omit<Props, 'lamina' | 'rotulo'> & { rotulo: string; lamina: Lamina; uid: string }> = ({ paleta, etiqueta, dibujo = 1, siluetas = 0, width = 760, lamina, uid }) => {
+  const tinta = mezclar(paleta.fondo, paleta.rojo, 0.06);
+  const ventanas = capa(lamina, 'Ventanas');
+  const capas = ['Escalinata', 'Fachada', 'Ventanas', 'Puerta_central', 'Columnas', 'Entablamento', 'Frontón', 'Medallón', 'Placa_del_Estado'];
+  return (
+    <svg viewBox={`${CAJA.x} ${CAJA.y} ${CAJA.w} ${CAJA.h}`} width={width} height={(width * H) / W} style={{ overflow: 'visible' }}>
+      <DefsLamina lamina={lamina} uid={uid} />
+      <defs>
+        <clipPath id={`${uid}-dibujo`}><rect x={CAJA.x - 60} y={BASE_LAMINA - (BASE_LAMINA - TECHO_LAMINA + 40) * clamp(dibujo)} width={CAJA.w + 120} height={BASE_LAMINA + 40} /></clipPath>
+        <radialGradient id={`${uid}-luz`} cx="50%" cy="60%" r="65%">
+          <stop offset="0" stopColor={mezclar(paleta.ocre, '#ffffff', 0.45)} />
+          <stop offset="1" stopColor={paleta.ocre} />
+        </radialGradient>
+      </defs>
+      <g clipPath={`url(#${uid}-dibujo)`}>
+        {/* la sombra que el edificio echa al piso (sin el fondo oscuro de la lámina) */}
+        <CapaVC lamina={lamina} uid={uid} nombre="Presentación" solo={(i) => i === 1} opacity={0.35} />
+        {capas.map((n) => <CapaVC key={n} lamina={lamina} uid={uid} nombre={n} />)}
+        <CapaVC lamina={lamina} uid={uid} nombre="Grabado___desgaste_fino" solo={(i) => i === 0} />
+        {[0, 1, 2, 3].map((v) => {
+          const on = clamp(siluetas * 4 - ORDEN_VENTANAS.indexOf(v));
+          if (on <= 0) return null;
+          const [x, y, w, h] = ventanas.boxes[v * 5 + 1];
+          const cx = x + w / 2;
+          return (
+            <g key={v}>
+              <path d={ventanas.parts[v * 5 + 1].match(/\bd="([^"]+)"/)?.[1]} fill={`url(#${uid}-luz)`} opacity={0.35 + 0.65 * on} />
+              <g opacity={on} transform={`translate(${cx} ${y + h - 6}) scale(1.6)`}><Silueta x={0} y={0} color={tinta} /></g>
+              {on > 0.5 && etiqueta ? (
+                <text x={cx} y={y + h + 64} textAnchor="middle" fill={paleta.rojo} fontFamily={fuente.mono} fontSize={22} letterSpacing={2} opacity={(on - 0.5) * 2}>{etiqueta}</text>
+              ) : null}
+            </g>
+          );
+        })}
+      </g>
+    </svg>
+  );
+};
+
+const EdificioDibujado: React.FC<Omit<Props, 'lamina'>> = ({ paleta, id, rotulo, etiqueta, dibujo = 1, siluetas = 0, width = 760 }) => {
   const tinta = mezclar(paleta.fondo, paleta.rojo, 0.06);
   const papel = paleta.papel;
   const piedra = mezclar(papel, paleta.ocre, 0.22);

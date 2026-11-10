@@ -6,7 +6,8 @@ import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { EdificioEstado } from '../../components/graficos/EdificioEstado';
 import { ILUSTRACION, LibroHojeable, tiemposHojas } from '../../components/graficos/LibroHojeable';
-import { BARCO_ANCLADO, Barco, GrabadoGuanero } from '../../components/graficos/GrabadoGuanero';
+import { BARCO_ANCLADO, BARCO_LAMINA, Barco, BarcoLamina, GrabadoGuanero } from '../../components/graficos/GrabadoGuanero';
+import { useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Pluma } from '../../components/graficos/Pluma';
 import { PortadaLibro } from '../../components/graficos/PortadaLibro';
 import { SelloFecha } from '../../components/graficos/Sello';
@@ -45,6 +46,8 @@ const BOLSILLOS = [
 
 export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video }) => {
   const frame = useCurrentFrame();
+  const ref = (archivo?: string) => (archivo ? { videoId: video.id, archivo } : undefined);
+  const lIslas = useLamina(ref(props.laminas?.islas)), lEstado = useLamina(ref(props.laminas?.estado)), lVale = useLamina(ref(props.laminas?.vale));
   const fps = video.fps;
   const t = frame / fps;
   const pal = video.paleta;
@@ -79,10 +82,12 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const DUR_SIGUE = 2.5, tSigue = tFlecha - 0.6;
   const sigue = props.sigue_barco ? tramo(t, tSigue, DUR_SIGUE, 'solemne') : 1;
   const enViaje = props.sigue_barco && t >= tSigue && sigue < 1;
-  const BARCO2 = { x: 430, y: 742, escala: 1.25 };
-  const S_VIAJE = BARCO2.escala / BARCO_ANCLADO.escala;
-  const vx = mix(BARCO_ANCLADO.x, BARCO2.x, sigue), vy = mix(BARCO_ANCLADO.y, BARCO2.y, sigue), vs = Math.pow(S_VIAJE, sigue);
-  const vistaGrabado = `translate(${vx}px, ${vy}px) scale(${vs}) translate(${-BARCO_ANCLADO.x}px, ${-BARCO_ANCLADO.y}px)`;
+  // con la lámina, la fragata está en otro lugar del grabado y en el Estado se dibuja la misma fragata
+  const ANCLA = lIslas ? BARCO_LAMINA : BARCO_ANCLADO;
+  const BARCO2 = lIslas ? { x: 430, y: 742, escala: 0.95 } : { x: 430, y: 742, escala: 1.25 };
+  const S_VIAJE = BARCO2.escala / ANCLA.escala;
+  const vx = mix(ANCLA.x, BARCO2.x, sigue), vy = mix(ANCLA.y, BARCO2.y, sigue), vs = Math.pow(S_VIAJE, sigue);
+  const vistaGrabado = `translate(${vx}px, ${vy}px) scale(${vs}) translate(${-ANCLA.x}px, ${-ANCLA.y}px)`;
   const vistaEstado = `translate(${vx}px, ${vy}px) scale(${vs / S_VIAJE}) translate(${-BARCO2.x}px, ${-BARCO2.y}px)`;
   const funde = props.sigue_barco ? tramo(t, tFlecha, 1.3, 'natural') : 1;
   // la flecha de la plata sale cuando la cámara está llegando
@@ -116,14 +121,14 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
         <AbsoluteFill style={{ transformOrigin: `${qx}px ${qy}px`, transform: `scale(${escalaCam})` }}>
           <Luz color={pal.ocre} x={55} y={45} radio={60} intensidad={0.18} />
           <LibroHojeable paleta={pal} t={t} tEntra={tLEntra} tAbre={tHojea} tPagina={tPagina} encabezado={props.hojear?.encabezado ?? ''}>
-            <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-gl`} anclado carga={t >= tSacos ? t - tSacos : undefined} />
+            <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-gl`} anclado carga={t >= tSacos ? t - tSacos : undefined} lamina={lIslas} />
           </LibroHojeable>
         </AbsoluteFill>
       ) : null}
       {(fase === 1 || enViaje) && (!conLibro || zoomK >= 1) ? (
         <Papel color={pal.papel} envejecido={0.3}>
           <AbsoluteFill style={enViaje ? { transformOrigin: '0 0', transform: vistaGrabado } : undefined}>
-            <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-g`} anclado={conLibro} carga={t >= tSacos ? t - tSacos : undefined} />
+            <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-g`} anclado={conLibro} carga={t >= tSacos ? t - tSacos : undefined} lamina={lIslas} />
           </AbsoluteFill>
           {props.ficha ? (
             <div style={{ position: 'absolute', left: 150, top: 40, opacity: enViaje ? 1 - funde : 1 }}>
@@ -162,7 +167,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             })}
             <line x1={80} x2={900} y1={756} y2={756} stroke={tinta} strokeWidth={1.4} />
             </g>
-            <Barco x={430} y={742} tinta={tinta} papel={pal.papel} id={`${escena.id}-b`} escala={1.25} />
+            {lIslas ? <BarcoLamina lamina={lIslas} x={BARCO2.x} y={BARCO2.y} escala={BARCO2.escala} t={t} /> : <Barco x={430} y={742} tinta={tinta} papel={pal.papel} id={`${escena.id}-b`} escala={1.25} />}
             {/* la flecha de dinero, con monedas que viajan por ella */}
             <path d={FLECHA} fill="none" stroke={mezclar(pal.ocre, pal.fondo, 0.15)} strokeWidth={16} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - kFlecha} opacity={0.55} />
             <path d={FLECHA} fill="none" stroke={pal.fondo} strokeWidth={2} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - kFlecha} />
@@ -174,7 +179,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             {kFlecha > 0.98 ? <path d="M1240 600 l -26 -10 M1240 600 l 2 -28" stroke={pal.fondo} strokeWidth={3} strokeLinecap="round" /> : null}
           </svg>
           <div style={{ position: 'absolute', left: 1040, top: 270 }}>
-            <EdificioEstado paleta={pal} id={`${escena.id}-e1`} rotulo={props.estado} width={760} dibujo={tramo(t, props.sigue_barco ? tFlecha + 0.2 : tFlecha - 0.2, props.sigue_barco ? 1.6 : 1.2, 'pesado')} />
+            <EdificioEstado lamina={lEstado} paleta={pal} id={`${escena.id}-e1`} rotulo={props.estado} width={760} dibujo={tramo(t, props.sigue_barco ? tFlecha + 0.2 : tFlecha - 0.2, props.sigue_barco ? 1.6 : 1.2, 'pesado')} />
           </div>
           </AbsoluteFill>
         </Papel>
@@ -204,7 +209,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             return (
               <div key={i} style={{ position: 'absolute', left: 180 + ((i * 37) % 50), top: 300 - i * 9, transform: `translate(${(1 - k) * -900}px, ${-arqueo(k, 70)}px) rotate(${giro}deg)`,
                 filter: `drop-shadow(4px 6px 6px ${alfa('#000000', 0.35)})` }}>
-                <Vale paleta={pal} id={`${escena.id}-v${i}`} width={720} edad={1 - i / PILA} semilla={i + 2}
+                <Vale lamina={lVale} paleta={pal} id={`${escena.id}-v${i}`} width={720} edad={1 - i / PILA} semilla={i + 2}
                   monto={i === PILA - 1 && t >= tHallazgo ? (
                     <Odometro valor={montoHallazgo} digitos={4} velocidad={velHallazgo} fps={fps} fontFamily={fuente.titulo} fontSize={44}
                       color={mezclar(pal.fondo, pal.rojo, kHallazgo)} separacion={0.22} />
@@ -261,7 +266,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
         <Papel color={mezclar(pal.papel, pal.fondo, 0.08)} envejecido={0.45}>
           <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', transform: `scale(${mix(0.92, 1.0, tramo(t, tExped, 1.2, 'pesado'))})` }}>
             <div style={{ position: 'relative', filter: `drop-shadow(10px 14px 14px ${alfa('#000000', 0.35)})` }}>
-              <Vale paleta={pal} id={`${escena.id}-vale`} width={1300} edad={0.5} semilla={9}
+              <Vale lamina={lVale} paleta={pal} id={`${escena.id}-vale`} width={1300} edad={0.5} semilla={9}
                 monto={<Odometro valor={monto} digitos={4} velocidad={velocidad} fps={fps} fontFamily={fuente.titulo} fontSize={76}
                   color={kInfl > 0 ? mezclar(pal.fondo, pal.rojo, kInfl) : pal.fondo} separacion={0.22} />} />
               <svg viewBox="0 0 900 480" width={1300} style={{ position: 'absolute', inset: 0, overflow: 'visible' }}>
@@ -280,7 +285,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {fase === 5 ? (
         <Papel color={pal.papel} envejecido={0.3}>
           <div style={{ position: 'absolute', left: 110, top: 300 }}>
-            <EdificioEstado paleta={pal} id={`${escena.id}-e2`} rotulo={props.estado} etiqueta={props.funcionario} width={820}
+            <EdificioEstado lamina={lEstado} paleta={pal} id={`${escena.id}-e2`} rotulo={props.estado} etiqueta={props.funcionario} width={820}
               siluetas={tramo(t, tFunc, 2.2, 'natural')} />
           </div>
           <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
