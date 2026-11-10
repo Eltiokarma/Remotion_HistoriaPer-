@@ -15,6 +15,8 @@ export const esquema = z.object({
   laminas: z.object({
     balanza: z.string().optional(), estante: z.string().optional(),
     brujula: z.string().optional(), fichero: z.string().optional(),
+    /** El viaje con su cámara (ViajeLamina). `mercator` calibra la lámina: dónde cae el ecuador y la escala en y. */
+    viaje: z.object({ archivo: z.string(), mercator: z.object({ ecuador_y: z.number(), escala: z.number() }) }).optional(),
   }).optional(),
   origen: lugar,
   /** El destino que todos soñaban: la ruta llega a medias, duda y se borra. */

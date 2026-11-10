@@ -28,6 +28,7 @@ const LAMINAS = {
     'tanda05-ingreso-v2', 'panfletos-contenido-v2', 'tanda04-fichero', 'balanza-video01',
     'biblioteca-video01', 'brujula-video01', 'islas-guaneras-v3', 'edificio-estado-video01',
     'vale-video01', 'tanda05-carpeta-v2', 'larga-duracion-pizarra',
+    'tanda06-lima', 'tanda06-viaje', 'tanda06-regresion', 'tanda06-costo',
   ],
 }[video];
 if (!LAMINAS) throw new Error(`Sin lista de láminas para ${video}`);

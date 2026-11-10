@@ -280,7 +280,26 @@
         },
         "vectorcraft": "vectorcraft/tanda06-lima.json",
         "laminas": {
-          "piscina": "vectorcraft/tanda04-piscina.json"
+          "piscina": "vectorcraft/tanda04-piscina.json",
+          "lugar": {
+            "archivo": "vectorcraft/tanda06-lima.json",
+            "foco": [
+              1119,
+              688.4
+            ],
+            "marco": [
+              964,
+              240,
+              786,
+              700
+            ],
+            "recuadro": [
+              1490,
+              660,
+              340
+            ],
+            "escala": 1.5
+          }
         }
       },
       "audio": {
@@ -662,7 +681,14 @@
           "balanza": "vectorcraft/balanza-video01.json",
           "estante": "vectorcraft/biblioteca-video01.json",
           "brujula": "vectorcraft/brujula-video01.json",
-          "fichero": "vectorcraft/tanda04-fichero.json"
+          "fichero": "vectorcraft/tanda04-fichero.json",
+          "viaje": {
+            "archivo": "vectorcraft/tanda06-viaje.json",
+            "mercator": {
+              "ecuador_y": 820.2,
+              "escala": 551.2
+            }
+          }
         }
       },
       "camara": [
