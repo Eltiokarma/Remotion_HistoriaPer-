@@ -1,8 +1,13 @@
 # Rutina: conectar ElevenLabs por MCP y usarlo a favor del guion
 
-Escrita el 2026-11-10. Todavía **sin probar en este repositorio**: el estado vive en el roadmap
-(`t4-elevenlabs`). Lo que dice sobre el servidor MCP sale de su repositorio oficial
-(`elevenlabs/elevenlabs-mcp`, MIT); verificar los nombres de las herramientas al instalarlo.
+Escrita el 2026-11-10; el estado vive en el roadmap (`t4-elevenlabs`).
+
+**Estado (2026-11-10):** la clave está guardada como secreto de red del entorno en la nube y
+funciona: `/v1/user/subscription`, `/v1/models` y `/v2/voices` responden 200 desde el contenedor
+(plan Creator). Falta conectar el MCP en la laptop y probar la alineación forzada.
+
+Lo que dice sobre el servidor MCP sale de su repositorio oficial (`elevenlabs/elevenlabs-mcp`, MIT);
+verificar los nombres de las herramientas al instalarlo.
 
 > **La regla que no se mueve** (`historia/CLAUDE.md` §1.1·1): la narración publicada es la voz de
 > Gerson. ElevenLabs entra para **medir, alinear, limpiar y ambientar**, nunca para narrar. Nada de

@@ -43,68 +43,332 @@ sintetizada que reemplaza (−13,6 a −17,6 LUFS) para que los `nivel` de `esce
 
 ## 3. Los prompts para Suno
 
-Cómo generarlos: modo **Custom**, **Instrumental activado**, el estilo en *Style of Music*, lo
-prohibido en *Exclude Styles* (si tu versión lo tiene; si no, pégalo al final del estilo como
-«no …»). Modelo: el más nuevo de tu plan. **Dos variantes por pista** y me pasas las dos (yo elijo
-contra la imagen y te digo cuál y por qué).
+Escritos con las reglas de Gerson ([`docs/REGLAS_SUNO.md`](../../../docs/REGLAS_SUNO.md)): STYLE en
+prosa (≤ 1000 caracteres, negativos al final) y LYRICS con `[Instrumental]`, secciones
+`- Instrumental`, acordes, BPM e instrumentos entre corchetes. Modo **Custom**, modelo v5 o v5.5.
+Dos variantes por pista. Suno no recibe una duración: si sale corta, *Extend*; si sale larga, la
+recorto yo.
 
-**Exclusiones comunes (pegar en todas):**
+**Hilo armónico del episodio.** Todo gira en torno a **re** (el centro del motivo de Quiroz:
+re–fa–mi–la; la tercera menor es el duelo, el paso que cae es el cansancio, la cuarta que sube es la
+tarea que sigue). Lo que cambia es el **modo**, y cada modo es una decisión de la escena: frigio
+para la culpa (s00, s06), eólico para el duelo (s01), dórico para la decisión (s02, s05), mixolidio
+de sol para la promesa (s03). La quena y la pentatónica andina se guardan para el tema (H).
 
+### A · Tajadas (s00 · se usan ~35 s)
+
+**STYLE**
 ```
-epic, trailer, cinematic drums, braams, choir, vocals, EDM, drop, hybrid percussion, synth pads, quena, pan flute, inspirational corporate
-```
-
-### A · Tajadas (s00) — pedir 1:00 a 1:30
-
-```
-Dark minimal documentary underscore, D minor, 70 BPM. A low muted piano pulse, one soft thud every bar like coins being counted. Sparse felt piano notes falling downward. A deep cello and double bass drone that slowly grows. Cold, restrained, investigative. No melody climax. Ends on a single low sustained chord that decays into silence.
-```
-
-### B · Días extra (s01 final) — pedir 1:30
-
-Esta define **el motivo**. Si una variante tiene una frase de cuatro notas que se recuerda, es esa.
-
-```
-Intimate solo felt piano, D minor, 62 BPM, very slow and tender. A simple four-note motif repeated with small variations, lots of space and silence between phrases. A soft solo cello joins in the second half. Grief without melodrama, like someone working late at night knowing time is short. Room reverb, close microphone, soft pedal noise.
+Dark minimalist documentary underscore in D Phrygian, 70 BPM, cold and investigative. A muted felt piano pulse taps one low note per bar like coins being counted, while sparse felt piano notes fall downward through the Phrygian scale, the flat second adding quiet menace. A deep cello and double bass drone on D and A grows slowly underneath, swelling as the harmony darkens over a pedal. Close, dry mix with a long dark reverb tail and a wide low end, no percussion beyond the piano thud. Emotional arc: restrained, then heavier, then everything drains away and a single low chord decays into total silence. no vocals, no singing, no humming, no voice, no choir, no autotune, no quena, no pan flute, no epic trailer drums, no braams, no synth pads, no EDM drops
 ```
 
-### C · Inagotable (s02) — **Cover** de la B elegida (para que el motivo sea el mismo)
-
-En Suno: sobre la variante elegida de B → *Create → Cover* (o *Remix → Cover*) con este estilo:
-
+**LYRICS**
 ```
-Flowing arpeggiated felt piano and soft marimba ripples, D minor turning to F major, 84 BPM. Steady, tireless forward motion like a swimmer's strokes. Light and determined, not happy. Same melody, now moving. Gentle, no drums.
+[Instrumental]
+[Intro - Instrumental]
+[BPM 70]
+[Muted felt piano pulse on low D, one hit per bar]
+[Dm]
+[Verse 1 - Instrumental]
+[Felt piano enters, single notes falling D C Bb A G F Eb D]
+[Dmadd9] [Bbmaj7] [Gm9] [A7b9]
+[Pre-Chorus - Instrumental]
+[Cello and double bass drone enters on D and A]
+[Gm9] [A7b9]
+[Chorus - Instrumental]
+[Drone swells, piano pulse heavier]
+[Ebmaj7#11/D] [Bbmaj7] [Gm9] [A7b9]
+[Break - Instrumental]
+[Piano pulse stops]
+[Drone alone]
+[Outro - Instrumental]
+[BPM 70 → 60]
+[Single low Dmadd9 chord, let ring]
+[Long decay into silence]
+[End]
 ```
 
-### D · Un país nuevo (s03) — pedir 1:00 a 1:30
+**Teoría.** Frigio por su segunda menor (mi bemol): amenaza fría sin dramatismo. La escala que baja
+nota a nota es la tajada que cae cada año. `A7b9` es una dominante alterada: tensión que pide
+resolver y no lo hace del todo (los «tres o cuatro» soles). `Ebmaj7#11/D` es el acorde napolitano
+sobre el pedal de re: crece sin moverse, como «viene desde la colonia». El final en `Dmadd9`, sin
+cadencia, deja el libro en silencio (s01 entra sin música).
 
-```
-1970s Latin American instrumental, warm strummed nylon guitar and charango, light bombo legüero, hopeful rising chord progression in G major, 96 BPM, like a promise of change on a city wall. Slightly hollow underneath, a hint of doubt. Builds gently, then stops abruptly on an unresolved suspended chord.
-```
+### B · Días extra (s01, desde el beat `final` · se usan ~10 s; define el motivo)
 
-### E · Tres velocidades (s04) — pedir 1:30 a 2:00 · **bajar los stems**
-
+**STYLE**
 ```
-Three simultaneous layers at three different speeds. Top: fast nervous pizzicato strings and tremolo, restless. Middle: a slow cello melody that changes chords only every few bars. Bottom: a deep, almost motionless organ and double bass drone. D minor, 66 BPM. Classroom calm, thoughtful, minimalist, layered, documentary.
-```
-
-### F · Aprender a medir (s05) — pedir 2:00 a 2:30 · **bajar los stems**
-
-```
-Minimalist process music, D minor, 92 BPM. Begins with scattered, random-sounding felt piano notes, like noise. Gradually the notes lock into a steady repeating ostinato pattern with soft marimba and clarinet, as if order emerges from data. Calm, curious, precise, a sense of a journey north. Gentle pulse, no drums, no big climax.
+Intimate solo felt piano elegy in D Aeolian, 62 BPM, very slow and tender, recorded close with soft pedal noise and the quiet mechanics of the instrument. A simple four-note motif, D F E A, repeats with small variations and long silences between phrases. Warm extended chords with ninths and elevenths, voiced low and open. A solo cello enters in the second half with a long singing line under the piano, and the music briefly lifts into the relative major before returning to minor. Small room reverb, natural dynamics, nothing quantized. Emotional arc: grief without melodrama, someone working late at night knowing time is short, a moment of warmth, then the motif alone again, unresolved. no vocals, no singing, no humming, no voice, no choir, no autotune, no quena, no pan flute, no drums, no synth pads, no string orchestra
 ```
 
-### G · La deuda (s06) — pedir 1:00
+**LYRICS**
+```
+[Instrumental]
+[Intro - Instrumental]
+[BPM 62]
+[Solo felt piano, motif D F E A]
+[Dm9]
+[Verse 1 - Instrumental]
+[Motif repeats, softer, small variation]
+[Dm9] [Bbmaj9] [Fmaj7/A] [Gm11]
+[Verse 2 - Instrumental]
+[Solo cello enters, long low line]
+[Dm9] [Bbmaj9] [Gm11] [Asus4]
+[Pre-Chorus - Instrumental]
+[Gm11] [Asus4] [A7]
+[Chorus - Instrumental]
+[Lift to the relative major, cello carries the melody, piano answers]
+[Fmaj9] [Cadd9/E] [Bbmaj7#11] [Fmaj7/A]
+[Break - Instrumental]
+[Two bars of near silence, one piano note]
+[Outro - Instrumental]
+[BPM 62 → 56]
+[Cello drops out]
+[Solo felt piano, motif D F E A]
+[Gm11] [Asus4]
+[End on Asus4, unresolved]
+[End]
+```
 
+**Teoría.** Eólico: el menor natural, sin la sensible, suena a duelo sin tragedia. `Bbmaj9` (VI) da
+calidez; `Gm11` (iv) da peso. El puente al relativo mayor (fa) es el hijo que nace unas líneas más
+abajo. Termina en `Asus4`, la dominante sin tercera: no resuelve, como el libro que no llegó a ver.
+
+### C · Inagotable (s02 · se usan ~33 s) — hacerla como **Cover** de la B elegida
+
+En Suno: sobre la variante elegida de B → *Cover*, con este STYLE y LYRICS (así el motivo es el mismo).
+
+**STYLE**
 ```
-Dark tense documentary underscore, D minor, 76 BPM. Low string ostinato like a ship's slow rocking on the sea, a heavy muted piano note repeating. Tension rises slowly, something wrong is being uncovered. Ends on an unresolved dissonant chord, no resolution.
+Flowing arpeggiated felt piano with soft wooden marimba ripples in D Dorian, 84 BPM, steady tireless forward motion like a swimmer's strokes, each bar a breath and a pull. The same four-note motif, D F E A, now moving inside rolling sixteenth-note arpeggios. The raised sixth of Dorian keeps it determined and bright without being happy. Light, airy mix with gentle room reverb and a soft shimmer from the marimba; no drums, the pulse lives in the arpeggio. Emotional arc: the water carries the motif forward and gains momentum, then it brakes, the arpeggios slow down and stop, and the motif settles into single plain piano notes, evenly spaced and orderly like lines in a ledger. no vocals, no singing, no humming, no voice, no choir, no autotune, no quena, no pan flute, no drums, no synth pads
 ```
+
+**LYRICS**
+```
+[Instrumental]
+[Intro - Instrumental]
+[BPM 84]
+[Felt piano sixteenth-note arpeggios]
+[Dm9] [G13]
+[Verse 1 - Instrumental]
+[Motif D F E A inside the arpeggios]
+[Dm9] [G13] [Fmaj7] [C/E]
+[Pre-Chorus - Instrumental]
+[Marimba ripples enter]
+[Bbmaj7] [C6] [Dm9]
+[Chorus - Instrumental]
+[Piano and marimba interlock, full forward motion]
+[Dm9] [G13] [Fmaj9] [Cadd9/E]
+[Break - Instrumental]
+[BPM 84 → 72]
+[Arpeggios slow down and stop]
+[Marimba drops out]
+[Outro - Instrumental]
+[BPM 72]
+[Single plain piano notes, motif D F E A, evenly spaced]
+[Dm9]
+[End]
+```
+
+**Teoría.** Dórico: menor con la sexta mayor (si natural). `G13`, el IV mayor con séptima, es su
+acorde característico: decisión, no alegría. Las semicorcheas son las brazadas. El freno
+(`BPM 84 → 72`) cae en el beat `frenar` (20,6 s), y las notas sueltas y parejas son los renglones
+del libro de contabilidad.
+
+### D · Un país nuevo (s03 · se usan ~48 s)
+
+**STYLE**
+```
+Warm 1970s Latin American folk instrumental in G Mixolydian, 96 BPM, hopeful and communal like a promise of change painted on a city wall. Strummed nylon-string guitar and bright charango drive the rhythm, a soft bombo leguero marks the downbeats, and a melodic acoustic guitar line rises with each section. The flat seventh of Mixolydian gives an earthy, open, marching optimism. Slightly hollow underneath: a low bowed bass sustains a note that never quite fits, a hint of doubt. Natural, roomy analog mix with a little tape warmth. Emotional arc: builds gently as each new voice joins, reaches a full strum, then stops abruptly and leaves a suspended chord hanging, followed by a darker borrowed chord that answers nothing. no vocals, no singing, no humming, no voice, no choir, no autotune, no quena, no pan flute, no electric guitar, no drum kit, no synth pads
+```
+
+**LYRICS**
+```
+[Instrumental]
+[Intro - Instrumental]
+[BPM 96]
+[Nylon guitar alone]
+[G] [F/G] [C/G] [G]
+[Verse 1 - Instrumental]
+[Charango strum enters]
+[G] [F] [C] [G]
+[Verse 2 - Instrumental]
+[Bombo leguero enters on the downbeats]
+[G] [F] [Em7] [Dsus4]
+[Pre-Chorus - Instrumental]
+[Low bowed bass enters, holding C# under the strum]
+[Am7] [C] [Dsus4] [D7]
+[Chorus - Instrumental]
+[Full strum, melodic guitar line rises]
+[G] [F] [C] [G] [F] [C] [Dsus4]
+[Break - Instrumental]
+[Everything stops abruptly]
+[Dsus4 left ringing]
+[Outro - Instrumental]
+[BPM 96 → 80]
+[Ebmaj7#11, bowed bass alone, fading]
+[End]
+```
+
+**Teoría.** Mixolidio de sol: mayor con la séptima menor (el `F`, bVII). Es la armonía de la canción
+popular de los setenta: optimismo colectivo, de plaza. El do sostenido del bajo está a un tritono
+de sol: la duda que nadie dice. El corte en `Dsus4` (dominante sin tercera) cae en el `despegue`
+(42,1 s): «¿o repetía lo de siempre?». `Ebmaj7#11` (bVI prestado del menor) es el afiche viejo
+que asoma debajo.
+
+### E · Tres velocidades (s04 · se usan ~67 s) — **bajar los stems**
+
+**STYLE**
+```
+Layered minimalist chamber piece in D minor built on three simultaneous speeds, 66 BPM, thoughtful classroom calm. Top layer: fast, nervous pizzicato strings and tremolo in quartal voicings, restless sixteenth notes that never settle. Middle layer: a slow solo cello melody in D Dorian that changes chord only every four bars. Bottom layer: a deep, almost motionless organ and double bass pedal on an open fifth, D and A. Each layer is clearly separated in the mix: top bright and wide, middle warm and centered, bottom dark and felt more than heard. Emotional arc: the layers enter one at a time from top to bottom, then the top and middle fall away leaving only the deep pedal, and finally the nervous top layer returns over the still ground. no vocals, no singing, no humming, no voice, no choir, no autotune, no quena, no pan flute, no drums, no percussion, no synth pads
+```
+
+**LYRICS**
+```
+[Instrumental]
+[Intro - Instrumental]
+[BPM 66]
+[Pizzicato strings alone, fast sixteenth notes, quartal voicings D G C]
+[Verse 1 - Instrumental]
+[Solo cello enters, slow melody]
+[Dm9] [Bbmaj7]
+[Verse 2 - Instrumental]
+[Organ and double bass pedal enters, open fifth D A]
+[Gm11] [Dm9]
+[Pre-Chorus - Instrumental]
+[All three layers together]
+[Dm9] [Bbmaj7] [Gm11] [Asus4]
+[Chorus - Instrumental]
+[Cello melody at its fullest, pizzicato restless above]
+[Dm9] [Bbmaj7] [Gm11] [Dm9]
+[Break - Instrumental]
+[Pizzicato and cello stop]
+[Deep pedal D A alone]
+[Outro - Instrumental]
+[Pizzicato returns, nervous, over the still pedal]
+[Dm9]
+[End]
+```
+
+**Teoría.** Es la idea de Braudel hecha armonía: tres **ritmos armónicos** distintos sonando a la
+vez. Arriba, voicings por cuartas (re–sol–do), sin tercera: no «aterrizan», son los gobiernos que
+pasan. Al medio, el cello dórico cambia de acorde cada cuatro compases: la economía y la sociedad.
+Al fondo, una quinta pedal re–la, sin tercera ni modo: la tierra, que casi no se mueve. El orden de
+entrada es el de la escena (`capa1`, `capa2`, `capa3`); el *break* es la palabra en pantalla. Con
+los stems, cada capa entra en su beat exacto.
+
+### F · Aprender a medir (s05 · se usan ~110 s) — **bajar los stems**
+
+**STYLE**
+```
+Minimalist process music in D Dorian, 92 BPM, calm, curious and precise, with a sense of a journey north. It opens with a quiet felt piano playing the four-note motif D F E A over a Lydian-tinted chord that feels like open air and distance. Then pointillistic, random-sounding piano and marimba notes scatter like data with no pattern. Gradually they lock into a steady interlocking ostinato, piano and marimba in hocket, while a soft clarinet holds long tones above, as if order emerges from noise and a line is found through the points. Later the harmony lifts a whole step, a quiet change of mind. Clean, transparent chamber mix, close marimba, warm clarinet, gentle room. Emotional arc: departure, scatter, discovery of the pattern, balance, a calm modulation, then a soft sustained ending. no vocals, no singing, no humming, no voice, no choir, no autotune, no quena, no pan flute, no drums, no synth pads
+```
+
+**LYRICS**
+```
+[Instrumental]
+[Intro - Instrumental]
+[BPM 72]
+[Felt piano alone, motif D F E A]
+[Dm9] [Bbmaj7#11]
+[Verse 1 - Instrumental]
+[BPM 72 → 92]
+[Scattered random piano and marimba notes, no pattern]
+[Dmadd9]
+[Pre-Chorus - Instrumental]
+[Notes slowly align into a repeating ostinato]
+[Dm9] [Fmaj7#11]
+[Chorus - Instrumental]
+[Piano and marimba ostinato in hocket, steady]
+[Clarinet enters, long tones]
+[Dm9] [Fmaj7#11] [Cadd9] [Gm11]
+[Bridge - Instrumental]
+[Ostinato thins, clarinet and piano in balance]
+[Bbmaj9] [Fmaj7/A] [Gm11] [Asus4]
+[Chorus - Instrumental]
+[Key change up a whole step to E Dorian]
+[Em9] [Gmaj7#11] [Dadd9] [Am11]
+[Outro - Instrumental]
+[BPM 92 → 84]
+[Marimba drops out, clarinet holds]
+[Em9, let ring]
+[End]
+```
+
+**Teoría.** El viaje sobre `Bbmaj7#11`: la cuarta aumentada del lidio suena a aire y distancia
+(Lima → Nueva York). Las notas al azar son los puntos de la regresión («solo ruido»). El hoqueto
+(piano y marimba completándose nota a nota) que se ordena es la recta que encuentra la tendencia;
+el clarinete largo es «cuánto pesa». El puente equilibrado es la balanza profundidad/claridad. La
+modulación un tono arriba, a mi dórico, es la brújula: mismo modo, otro lugar; cambió de ideas sin
+dejar de ser él.
+
+### G · La deuda (s06 · se usan ~36 s)
+
+**STYLE**
+```
+Dark, tense documentary underscore in D Phrygian, 76 BPM in a rocking 6/8 feel like a cargo ship heaving on a cold sea. Low strings play a swaying ostinato, a heavy muted piano repeats a low D like a weight being dropped, and soft low horns swell beneath. The flat second of Phrygian keeps a constant sense of something wrong. Tension rises slowly as layers stack and the harmony darkens toward an altered dominant. Deep but restrained mix, dark reverb, rumbling low end. Emotional arc: uneasy, then accumulating, then the motion stops and leaves a single dissonant minor chord with a major seventh hanging, a question with no answer. no vocals, no singing, no humming, no voice, no choir, no autotune, no quena, no pan flute, no epic trailer drums, no braams, no synth pads
+```
+
+**LYRICS**
+```
+[Instrumental]
+[Intro - Instrumental]
+[BPM 76]
+[6/8 feel]
+[Low strings swaying ostinato]
+[Dm] [Eb/D]
+[Verse 1 - Instrumental]
+[Muted piano repeating low D]
+[Dm] [Eb/D] [Dm] [Eb/D]
+[Pre-Chorus - Instrumental]
+[Low horns swell]
+[Bbmaj7#11] [Gm9] [A7b9b13]
+[Chorus - Instrumental]
+[All layers, ostinato heavier]
+[Dm] [Eb/D] [Bbmaj7#11] [A7b9b13]
+[Break - Instrumental]
+[Motion stops]
+[Outro - Instrumental]
+[Single sustained DmMaj9 chord, unresolved]
+[End]
+```
+
+**Teoría.** Frigio otra vez, como en el gancho: la culpa suena igual en los dos extremos del
+episodio. El mi bemol sobre el pedal de re es la deuda que pesa encima de lo que hay. El 6/8 es el
+vaivén del barco con los sacos. `A7b9b13`, dominante con dos alteraciones, es la deuda inflada.
+Termina en `DmMaj9` (menor con séptima mayor), el acorde del cine negro: queda la pregunta
+—«¿adónde fue a parar esa plata?»— sin respuesta, hasta el próximo episodio.
 
 ### H · Tema del canal (s07) — **solo si decides cambiar el tema** (ver §4)
 
+**STYLE**
 ```
-Andean instrumental theme, solo quena melody over bombo legüero and strummed charango, A minor, 80 BPM. Melancholic and dignified, high plateau wind, a short memorable phrase. Two bars of drum and strum, the quena phrase, and a final held chord that rings out.
+Andean yaravi-inspired instrumental theme in A Aeolian with a minor pentatonic melody, 80 BPM, melancholic and dignified, with the thin cold air of the high plateau. A solo quena carries a short memorable phrase over a slow bombo leguero and strummed charango, with a nylon guitar playing the bass line. The melody leans on the relative major and returns home to minor, as Andean songs do. Wide, open, natural mix with a hint of wind and a long hall reverb on the quena. Emotional arc: two bars of drum and strum, the quena phrase stated once, repeated with a small ornament, then a final held chord that rings out. no vocals, no singing, no humming, no voice, no choir, no autotune, no pan flute, no synth, no electric instruments, no drum kit
 ```
+
+**LYRICS**
+```
+[Instrumental]
+[Intro - Instrumental]
+[BPM 80]
+[Bombo leguero and charango strum, two bars]
+[Am] [Am]
+[Verse 1 - Instrumental]
+[Solo quena enters, pentatonic phrase]
+[Am] [C] [G] [Am]
+[Chorus - Instrumental]
+[Quena repeats the phrase with an ornament, nylon guitar bass line]
+[C] [G] [Am] [Em7] [Am]
+[Outro - Instrumental]
+[BPM 80 → 72]
+[Final Am9 chord held, let ring]
+[End]
+```
+
+**Teoría.** Pentatónica menor, la base de la melodía andina, con la ida al relativo mayor (do) y la
+vuelta a la menor: la cadencia andina más reconocible. El yaraví es el canto lento y triste de los
+Andes; se describe, no se cita a nadie. `Am9` al final, abierto, para que la tristeza se asiente
+sobre la tarjeta (`DIRECCION_DE_VIDEO.md` §2.15).
 
 ## 4. Lo que necesito de vuelta (y decisiones tuyas)
 

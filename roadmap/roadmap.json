@@ -1071,7 +1071,7 @@
         "inicio": "2026-11-10",
         "fin": null
       },
-      "bloqueo": "Clave guardada como secreto de red en la nube (2026-11-10) y autentica, pero le faltan permisos de lectura (user_read, voices_read, models_read).",
+      "bloqueo": null,
       "evidencia": [
         "docs/RUTINA_ELEVENLABS.md"
       ],

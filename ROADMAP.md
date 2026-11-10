@@ -20,7 +20,6 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `t4-houdini-prueba` Houdini: prueba de pyro o agua al tamaño de un plano: Necesita GPU (PC objetivo) y decidir licencia (Apprentice no es comercial).
 - `t4-unreal-prueba` Unreal Engine: render de un recorrido de 5 s: Necesita la PC con GPU; revisar la EULA para contenido lineal.
 - `t4-comfyui` ComfyUI: texturas o fondos con licencia clara: Definir qué modelos tienen licencia compatible con la regla 1.1·3 del canal.
-- `t4-elevenlabs` ElevenLabs: MCP en la laptop y alineación forzada de la voz real: Clave guardada como secreto de red en la nube (2026-11-10) y autentica, pero le faltan permisos de lectura (user_read, voices_read, models_read).
 - `f5-laptop` Repetir la tanda 1 en la laptop de render: Lo corre Gerson en su máquina (el agente no tiene acceso a ella).
 - `f5-pc` Repetir la tanda 1 en la PC objetivo: La PC objetivo no está disponible.
 - `e1-musica` Musicalización con Suno (motivo de Quiroz, ocho pistas): Espera las pistas de Suno de Gerson (prompts en videos/001-el-hombre/musicalizacion.md §3) y confirmar plan de pago.
@@ -337,7 +336,6 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Entregable: MCP conectado en Claude Desktop; prueba de alineación forzada de una escena que reescriba sus beats
   - Prevista: — · Real: 2026-11-10 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Bloqueo: Clave guardada como secreto de red en la nube (2026-11-10) y autentica, pero le faltan permisos de lectura (user_read, voices_read, models_read).
   - Evidencia: [docs/RUTINA_ELEVENLABS.md](docs/RUTINA_ELEVENLABS.md)
 
 ### Fase 5 · Medir en las máquinas reales
