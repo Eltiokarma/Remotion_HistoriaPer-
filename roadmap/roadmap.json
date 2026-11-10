@@ -1,6 +1,6 @@
 {
   "titulo": "Roadmap del laboratorio y la base de producción",
-  "actualizado": "2026-11-05",
+  "actualizado": "2026-11-10",
   "notas": [
     "Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.",
     "Tiempo humano y tokens: null = desconocido (no medido). No se estiman.",
@@ -379,7 +379,8 @@
       "evidencia": [
         "historia/.claude/skills/canal-historia/SKILL.md",
         "historia/.claude/skills/canal-historia/procedimiento.md",
-        "historia/.claude/skills/canal-historia/movimiento.md"
+        "historia/.claude/skills/canal-historia/movimiento.md",
+        "docs/TRASPASO_2026-11-10.md"
       ],
       "tiempo": {
         "humano_min": null,
@@ -619,7 +620,7 @@
         "render_s": 11.7,
         "maquina": "contenedor"
       },
-      "nota": "Gerson pidió investigar un «After Effects propio». Falta su decisión: en episodios, ¿editar en el Studio solo tiempos y posiciones? (CLAUDE.md §15)."
+      "nota": "Gerson pidió investigar un «After Effects propio». Decidido el 2026-11-10: el Studio editable se usa para el catálogo; los episodios son datos en escenas.json (CLAUDE.md §15)."
     },
     {
       "id": "t2-efectos",

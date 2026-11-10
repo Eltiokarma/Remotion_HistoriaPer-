@@ -444,8 +444,21 @@ manda este archivo.** Choques conocidos:
 | Google Fonts | Fuentes locales de `public/compartido/fuentes` (`estilo/fuentes.ts`) | El render no depende de internet y sale igual en cualquier máquina |
 | `remotion-create`: crear un proyecto o una composición nueva | `npm run nuevo-video` para un video; escenas nuevas en `src/escenas/` (§11); pruebas en `laboratorio/` | El repo ya tiene su estructura |
 | «No renderizar salvo pedido explícito; abrir el Studio» | En episodios, igual. En el laboratorio, medir y renderizar **es** la tarea | Las muestras se juzgan por el clip y su registro |
-| `<Interactive.*>` con claves en línea (`Easing.bezier` numérico) para editar en el Studio | Se permite en piezas editables, solo con curvas que sean exactamente un peso (`npm run reglas` lo comprueba). Los datos de un episodio siguen en `escenas.json`: **a decidir por Gerson** si en los episodios se editan en el Studio solo tiempos y posiciones (muestra 12) | El Studio escribe las ediciones en el código; los pesos siguen mandando |
+| `<Interactive.*>` con claves en línea (`Easing.bezier` numérico) para editar en el Studio | Se permite en las **piezas del catálogo** (diseñarlas y afinarlas en el Studio), solo con curvas que sean exactamente un peso (`npm run reglas` lo comprueba). Los **episodios** no se editan en el Studio: son datos en `escenas.json` (ver «Para escalar» abajo). **Decidido por Gerson el 2026-11-10** | El Studio escribe las ediciones en el código; los pesos siguen mandando |
 | Versión 4.0.540 de las instrucciones | El proyecto usa Remotion 4.0.539 | No se actualiza Remotion solo porque lo diga un skill; se decide aparte (`remotion-upgrade` solo cuando se pida) |
+
+**Para escalar a ~200 videos (decidido por Gerson el 2026-11-10).** Tres capas:
+
+1. **Catálogo de piezas**, diseñado una vez (`src/escenas/`, `src/components/`): se afinan en el Studio
+   editable (laboratorio, muestra 12) y quedan para todos los videos. Mejorar una pieza mejora todos.
+2. **Cada episodio es datos**: guion, `escenas.json` (qué pieza, qué textos, qué beats) y la voz. No se
+   copia código por episodio, salvo la secuencia propia de su tema (§1.1·4), que entra al catálogo.
+3. **Revisión y render automáticos**: `npm run reglas`, `npm run validar`, la escaleta y la CI.
+
+El tiempo de cada episodio lo manda la voz, en los beats de `escenas.json`. Pendiente (idea, sin
+aprobar): un editor de beats sobre la onda de la voz que escriba en `escenas.json`. Efectos tipo
+After Effects: `@remotion/effects` (laboratorio, muestra 13); los que usan WebGPU (pasar página,
+esfera, cilindro) necesitan GPU: probarlos en la laptop antes de usarlos en un episodio.
 
 Útiles sin choque: `remotion-render` (opciones de render), `remotion-maps` (técnicas de mapas;
 con datos con licencia, §1.1), `remotion-captions` (subtítulos, §10), `remotion-docs` (consultar la

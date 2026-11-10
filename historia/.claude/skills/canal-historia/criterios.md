@@ -66,6 +66,21 @@ se anota aquí.
 - **Dónde aplica:** todo paisaje del canal. La paleta del canal ya trae ocre y verde: la escala de
   profundidad se arma mezclando sus colores, sin salir de ella.
 
+### Muestra 06, versión 2 (2026-11-05)
+
+- **Qué miró:** la versión 2 de la 06 (seis planos, bruma, sol, totora, reflejo, paralaje).
+- **Veredicto:** aprobado con cambios.
+- **Por qué, en sus palabras:** «Sí, mejor; sé que ahora es más tema de la paleta, la cámara, efectos de
+  sonido y demás».
+- **Regla que se deriva:** las siete lecturas de profundidad funcionan; lo siguiente a cuidar es la
+  paleta, la cámara con motivo y el sonido (el trueno faltó).
+- **Dónde aplica:** todo paisaje del canal.
+
+### Escalar a ~200 videos (2026-11-10)
+
+- **Decisión:** catálogo de piezas afinado en el Studio editable; episodios como datos en
+  `escenas.json`; revisión automática. Detalle en `historia/CLAUDE.md` §15.
+
 ## Formato para los próximos veredictos
 
 No se completan con suposiciones del agente. Formato para cada entrada:
