@@ -1,0 +1,45 @@
+{
+  "fecha": "2026-11-10",
+  "alcance": "Extracto de prueba de la escena 1; no episodio completo",
+  "video": {
+    "duracion_segundos": 76.139,
+    "ancho": 960,
+    "alto": 540,
+    "fps": "15/1",
+    "cuadros": 1142,
+    "codec": "h264",
+    "audio": "aac",
+    "bytes": 5367858,
+    "objetivo_maximo_bytes": 10000000,
+    "decodificacion_completa": true
+  },
+  "audio": {
+    "voz": "es-PE-AlexNeural",
+    "tipo": "Sintética provisional",
+    "parrafos": 8,
+    "LUFS": -17.05,
+    "true_peak_dBTP": -4.2,
+    "porcentaje_archivos_voz_en_timeline": 78.8,
+    "escucha_critica_humana": "Pendiente"
+  },
+  "recursos_vectoriales": 16,
+  "verificacion": {
+    "tipos_y_reglas": "Comprobados con salida correcta",
+    "visual": "Se inspeccionan cuadros a tamaño de entrega y la secuencia de paneo extraída del MP4. Se comparan los defectos estáticos antes de corregir.",
+    "aprobacion_gerson": "Pendiente"
+  },
+  "rendimiento": {
+    "maquina": "Laptop local Windows; Intel i7-11370H",
+    "concurrencia": 2,
+    "render_segundos": 293.1,
+    "total_proceso_segundos": 293.8,
+    "api_tts_pago_utilizada": false,
+    "costo_modelo_y_tiempo_humano": null
+  },
+  "limitaciones": [
+    "Grano dinámico desactivado en la previa; textura estática conservada",
+    "Sin extracción, carga, traspasos ni actuación de personajes",
+    "Sin montaje de las escenas 2 a 5",
+    "Sin música final ni voz definitiva"
+  ]
+}

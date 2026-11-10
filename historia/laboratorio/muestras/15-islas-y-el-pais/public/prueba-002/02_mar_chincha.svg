@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="393" y1="756" x2="393" y2="486" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6f9995"/>
+      <stop offset="1" stop-color="#3c6a67"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_02_mar_chincha" data-name="02_mar_chincha">
+    <rect x="77" y="486" width="632" height="270" fill="url(#linear-gradient-1)" stroke="#70958e" stroke-width="1.5" stroke-miterlimit="10"/>
+    <path d="M90 506 C243.33 500 445 500.33 695 507" fill="none" stroke="#b8c4ad" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 526 C243.33 520 445 520.33 695 527" fill="none" stroke="#92b0a0" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 546 C243.33 540 445 540.33 695 547" fill="none" stroke="#92b0a0" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 566 C243.33 560 445 560.33 695 567" fill="none" stroke="#b8c4ad" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 586 C243.33 580 445 580.33 695 587" fill="none" stroke="#92b0a0" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 606 C243.33 600 445 600.33 695 607" fill="none" stroke="#92b0a0" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 626 C243.33 620 445 620.33 695 627" fill="none" stroke="#b8c4ad" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 646 C243.33 640 445 640.33 695 647" fill="none" stroke="#92b0a0" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 666 C243.33 660 445 660.33 695 667" fill="none" stroke="#92b0a0" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 686 C243.33 680 445 680.33 695 687" fill="none" stroke="#b8c4ad" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 706 C243.33 700 445 700.33 695 707" fill="none" stroke="#92b0a0" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 726 C243.33 720 445 720.33 695 727" fill="none" stroke="#92b0a0" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

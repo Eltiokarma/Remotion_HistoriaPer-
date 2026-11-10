@@ -1,0 +1,167 @@
+{
+  "fecha": "2026-11-10",
+  "alcance": "Extracto de prueba de la escena 1; no episodio completo",
+  "recursos": [
+    {
+      "id": "02_mar_chincha",
+      "archivo": "public/prueba-002/02_mar_chincha.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/recursos/chincha-gran-bretana/capas/02_mar_chincha.svg",
+      "sha256": "b440d35cf32351b9df9ecfd1b0d50ec98ba1e54ec9873388ef3e21fe954fee0b",
+      "estado": "Integrado en este extracto"
+    },
+    {
+      "id": "03_roca_chincha",
+      "archivo": "public/prueba-002/03_roca_chincha.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/recursos/chincha-gran-bretana/capas/03_roca_chincha.svg",
+      "sha256": "d19759af71740681225beb81a71a0af7727e08bc903a2599dc2f572542b3fd1d",
+      "estado": "Integrado en este extracto"
+    },
+    {
+      "id": "04_aves_chincha",
+      "archivo": "public/prueba-002/04_aves_chincha.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/recursos/chincha-gran-bretana/capas/04_aves_chincha.svg",
+      "sha256": "ea50f4462e93efdeb5863b4e8c28042221e3dc473cd0d5c772a0e9b84daa281d",
+      "estado": "Integrado en este extracto"
+    },
+    {
+      "id": "07_barco",
+      "archivo": "public/prueba-002/07_barco.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/recursos/chincha-gran-bretana/capas/07_barco.svg",
+      "sha256": "3d22f58d338c4d0e4d48be5d538d62e6b4ff80883078af8b52c152b59908ee60",
+      "estado": "Integrado en este extracto"
+    },
+    {
+      "id": "08_mapa_gran_bretana",
+      "archivo": "public/prueba-002/08_mapa_gran_bretana.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/recursos/chincha-gran-bretana/capas/08_mapa_gran_bretana.svg",
+      "sha256": "f8ece30f566d6fbf8c8dcfecc8b836771c36fd8b130a465bedff531b08fd1db3",
+      "estado": "Integrado en este extracto"
+    },
+    {
+      "id": "09_campos_suelo",
+      "archivo": "public/prueba-002/09_campos_suelo.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/recursos/chincha-gran-bretana/capas/09_campos_suelo.svg",
+      "sha256": "ee38f1d9ad1b49a39b3650d4c104f12d5a0268cec84e66d47e3e540aea2c1b25",
+      "estado": "Integrado en este extracto"
+    },
+    {
+      "id": "10_almacen",
+      "archivo": "public/prueba-002/10_almacen.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/recursos/chincha-gran-bretana/capas/10_almacen.svg",
+      "sha256": "49dd94703488206e5ab9af40bcf9718f4158c18d82e41727c8c7e739cd143b2b",
+      "estado": "Integrado en este extracto"
+    },
+    {
+      "id": "11_cultivos",
+      "archivo": "public/prueba-002/11_cultivos.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/recursos/chincha-gran-bretana/capas/11_cultivos.svg",
+      "sha256": "48ec2511ce0b5ccf0396a401715e18222052cdcc2271f9f3b0c8ff5b4a9c63f7",
+      "estado": "Integrado en este extracto"
+    },
+    {
+      "id": "13_flujo_comercial",
+      "archivo": "public/prueba-002/13_flujo_comercial.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/recursos/chincha-gran-bretana/capas/13_flujo_comercial.svg",
+      "sha256": "7edf23a13f5184a6aca5b45a7c71df7c1ac10ab83ab6a7d615614b09a78d7856",
+      "estado": "Integrado en este extracto"
+    },
+    {
+      "id": "14_carga_testigo",
+      "archivo": "public/prueba-002/14_carga_testigo.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/recursos/chincha-gran-bretana/capas/14_carga_testigo.svg",
+      "sha256": "27d9fc95a587f54a80b0df63dfbfaece0e3ec6b66b0a20e8740d066281a57a06",
+      "estado": "Integrado en este extracto"
+    },
+    {
+      "id": "libro",
+      "archivo": "public/prueba-002/libro.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/escenas-largas/recursos/revision-02/dibujos.vectorcraft",
+      "ids_seleccion_exportada": [
+        2156,
+        2157,
+        2158,
+        2159,
+        2161,
+        2162,
+        2163,
+        2164,
+        2165,
+        2166,
+        2167,
+        2168,
+        2169
+      ],
+      "exportacion": "VectorCraft mediante MCP; selección convertida a contornos, sin editar el dibujo aprobado",
+      "sha256": "775c17fa31a6f310a66188165efd0a8207dea04d195c6213af3df970bbeeb5bf",
+      "estado": "Integrado como pieza independiente"
+    },
+    {
+      "id": "venta",
+      "archivo": "public/prueba-002/venta.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/escenas-largas/recursos/revision-02/dibujos.vectorcraft",
+      "ids_seleccion_exportada": [
+        2160
+      ],
+      "exportacion": "VectorCraft mediante MCP; selección convertida a contornos, sin editar el dibujo aprobado",
+      "sha256": "74cc3c4f9b8c717507dc8ea3cc23f23349232bc1bad2eb7be987f4410594c77b",
+      "estado": "Integrado como pieza independiente"
+    },
+    {
+      "id": "descuentos",
+      "archivo": "public/prueba-002/descuentos.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/escenas-largas/recursos/revision-02/dibujos.vectorcraft",
+      "ids_seleccion_exportada": [
+        2170,
+        2171,
+        2172
+      ],
+      "exportacion": "VectorCraft mediante MCP; selección convertida a contornos, sin editar el dibujo aprobado",
+      "sha256": "fcca647596b71b21307a89d26a8b4b4a741137e251b4790464964bd4519ae0c4",
+      "estado": "Integrado como pieza independiente"
+    },
+    {
+      "id": "ingreso",
+      "archivo": "public/prueba-002/ingreso.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/escenas-largas/recursos/revision-02/dibujos.vectorcraft",
+      "ids_seleccion_exportada": [
+        2178
+      ],
+      "exportacion": "VectorCraft mediante MCP; selección convertida a contornos, sin editar el dibujo aprobado",
+      "sha256": "1d8f6e71afabf57fc730ad550fc630377fedc41d1cc799c4d8d3a8e59c3ef621",
+      "estado": "Integrado como pieza independiente"
+    },
+    {
+      "id": "estado",
+      "archivo": "public/prueba-002/estado.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/escenas-largas/recursos/revision-02/dibujos.vectorcraft",
+      "ids_seleccion_exportada": [
+        2938
+      ],
+      "exportacion": "VectorCraft mediante MCP; selección convertida a contornos, sin editar el dibujo aprobado",
+      "sha256": "9a2d4f10f59f3729d6970a67e9f7bd19e8479d02d6e3e8415565daa02fd5b161",
+      "estado": "Integrado como pieza independiente"
+    },
+    {
+      "id": "reclamo",
+      "archivo": "public/prueba-002/reclamo.svg",
+      "fuente": "videos/002-la-deuda-defraudada/diseno/escenas-largas/recursos/revision-02/dibujos.vectorcraft",
+      "ids_seleccion_exportada": [
+        3550,
+        3551,
+        3552,
+        3553,
+        3554,
+        3555,
+        3556,
+        3557,
+        3558,
+        3559,
+        3560,
+        3561
+      ],
+      "exportacion": "VectorCraft mediante MCP; selección convertida a contornos, sin editar el dibujo aprobado",
+      "sha256": "709c3f803c8e54c0e7112827bf2af9c61408bc25d1f553a229b7cedec49e9306",
+      "estado": "Integrado como pieza independiente"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "voz": "es-PE-AlexNeural",
+  "ritmo": "-7%",
+  "estado": "Locución sintética provisional escrita para una prueba, no narración definitiva del episodio.",
+  "parrafos": [
+    {"id": "epoca", "texto": "Estamos en el Perú, hacia mil ochocientos cincuenta.", "pausa": 1.3},
+    {"id": "islas", "texto": "Frente a Pisco están las islas de Chincha. De aquí salía el guano.", "pausa": 1.2},
+    {"id": "abono", "texto": "Es excremento de aves marinas acumulado sobre las islas. Se vende como abono para los cultivos.", "pausa": 1.8},
+    {"id": "mercado", "texto": "Uno de sus mercados es Gran Bretaña, donde se utiliza para fertilizar la tierra.", "pausa": 2.0},
+    {"id": "venta", "texto": "El recurso pertenece al Estado. Las casas mercantiles organizan su venta y cobran una comisión.", "pausa": 1.3},
+    {"id": "cuentas", "texto": "En las cuentas separamos tres cosas: la venta, los gastos y la comisión, y el ingreso del Estado.", "pausa": 3.0},
+    {"id": "obligaciones", "texto": "El Estado tiene obligaciones pendientes: por ejemplo, un préstamo o bienes tomados para sostener tropas.", "pausa": 1.5},
+    {"id": "reclamo", "texto": "Vamos a seguir uno de esos reclamos. Presentarlo es apenas el comienzo: todavía falta revisarlo.", "pausa": 3.0}
+  ]
+}
