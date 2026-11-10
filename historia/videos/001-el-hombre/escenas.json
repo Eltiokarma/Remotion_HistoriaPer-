@@ -270,7 +270,10 @@
             ]
           ]
         },
-        "vectorcraft": "vectorcraft/tanda06-lima.json"
+        "vectorcraft": "vectorcraft/tanda06-lima.json",
+        "laminas": {
+          "piscina": "vectorcraft/tanda04-piscina.json"
+        }
       },
       "audio": {
         "musica": {
@@ -359,6 +362,11 @@
           "titulo": "«Nunca apoyó al gobierno militar»",
           "texto": "«militó por algún tiempo en un pequeño partido trotskista de izquierda que criticaba duramente al régimen castrense»",
           "pie": "MARCOS CUETO, PRÓLOGO, P. 16"
+        },
+        "laminas": {
+          "emblema": "vectorcraft/tanda05-ingreso-v2.json",
+          "aviso_emblema": "Interpretación vectorial del escudo tradicional",
+          "panfletos": "vectorcraft/panfletos-contenido-v2.json"
         }
       },
       "audio": {

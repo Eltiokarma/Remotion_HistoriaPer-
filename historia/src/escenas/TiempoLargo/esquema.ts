@@ -8,6 +8,9 @@ import type { Ejemplo } from '../ejemplo';
  */
 export const esquema = z.object({
   sello: z.object({ centro: z.string(), fecha: z.string().optional(), arco: z.string().optional() }),
+  /** Láminas aprobadas: `emblema` reemplaza al sello (con su aviso de interpretación); `panfletos`, a los afiches
+   * dibujados (uno por titular, en orden). Se conserva la animación. */
+  laminas: z.object({ emblema: z.string().optional(), aviso_emblema: z.string().optional(), panfletos: z.string().optional() }).optional(),
   /** Rótulo de la lista donde cae el sello (p. ej. "ADMISIÓN · 1974"). */
   lista: z.string().default(''),
   /** Titulares de los afiches: tipografía genérica, nunca afiches reales. */

@@ -4,6 +4,7 @@ import { mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
 import { PatronPapel } from '../atmosfera/Papel';
 import { bordePapel, FiltroDesgaste } from './svg';
+import { capa, DefsLamina, CapaVC, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
   id: string;
@@ -18,6 +19,45 @@ type Props = {
   semilla?: number;
   /** 0–1: la esquina de arriba a la derecha se despega y se dobla. */
   despegue?: number;
+  /** Lámina aprobada (panfletos-contenido-v2) y cuál de sus panfletos (1–3): reemplaza el dibujo tipográfico. */
+  lamina?: Lamina | null;
+  panfleto?: number;
+};
+
+/** Proporción de un panfleto de la lámina (540 × 920): la escena calcula el ancho a partir del alto. */
+export const PROPORCION_PANFLETO = 540 / 920;
+
+/**
+ * Un panfleto de la lámina: papel, texto e ilustración propios, con la misma esquina que se
+ * despega y se dobla. El contenido es explicativo (lo dice su pie: no es un afiche histórico).
+ */
+const AficheLamina: React.FC<{ lamina: Lamina; panfleto: number; ancho: number; despegue: number }> = ({ lamina, panfleto, ancho, despegue }) => {
+  const uid = usePrefijo();
+  const papel = capa(lamina, `Panfleto_${panfleto}___papel`);
+  const [x0, y0, W, H] = papel.boxes[1];
+  const alto = (ancho * H) / W;
+  const c = despegue * W * 0.42;
+  const solapa = `M${x0 + W - c} ${y0} L${x0 + W} ${y0 + c} L${x0 + W - c * 0.95} ${y0 + c * 0.95} Z`;
+  return (
+    <svg width={ancho} height={alto} viewBox={`${x0} ${y0} ${W} ${H}`} style={{ overflow: 'visible', display: 'block' }}>
+      <DefsLamina lamina={lamina} uid={uid} />
+      <defs>
+        <clipPath id={`${uid}-recorte`}><path d={`M${x0 - 20} ${y0 - 20} L${x0 + W - c} ${y0 - 20} L${x0 + W - c} ${y0} L${x0 + W} ${y0 + c} L${x0 + W + 30} ${y0 + c} L${x0 + W + 30} ${y0 + H + 40} L${x0 - 20} ${y0 + H + 40} Z`} /></clipPath>
+      </defs>
+      <g clipPath={`url(#${uid}-recorte)`}>
+        {/* sin la sombra dura de la lámina: la escena le pone su propia sombra al pegarlo en el muro */}
+        <CapaVC lamina={lamina} uid={uid} nombre={`Panfleto_${panfleto}___papel`} solo={(i) => i > 0} />
+        <CapaVC lamina={lamina} uid={uid} nombre={`Panfleto_${panfleto}___ilustración`} />
+        <CapaVC lamina={lamina} uid={uid} nombre={`Panfleto_${panfleto}___texto`} />
+      </g>
+      {c > 1 ? (
+        <>
+          <path d={solapa} fill="#000" opacity={0.25} transform="translate(-4 6)" />
+          <path d={solapa} fill="#efe6cf" />
+        </>
+      ) : null}
+    </svg>
+  );
 };
 
 const VOCAL = /[AEIOUÁÉÍÓÚ]/;
@@ -38,7 +78,10 @@ const partir = (p: string): string[] => {
  * letras condensadas estiradas a todo el ancho, trama de puntos, tinta gastada, papel pegado
  * con arrugas de engrudo y una esquina que se puede despegar.
  */
-export const Afiche: React.FC<Props> = ({ id, texto, papel, tinta, acento, ancho = 520, alto = 700, semilla = 1, despegue = 0 }) => {
+export const Afiche: React.FC<Props> = ({ lamina, panfleto, ...props }) =>
+  lamina && panfleto ? <AficheLamina lamina={lamina} panfleto={panfleto} ancho={props.ancho ?? 520} despegue={props.despegue ?? 0} /> : <AficheDibujado {...props} />;
+
+const AficheDibujado: React.FC<Omit<Props, 'lamina' | 'panfleto'>> = ({ id, texto, papel, tinta, acento, ancho = 520, alto = 700, semilla = 1, despegue = 0 }) => {
   const g = useMemo(() => {
     const r = azar(semilla);
     const palabras = texto.split(/\s+/).flatMap(partir);

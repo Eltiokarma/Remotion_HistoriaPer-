@@ -5,6 +5,7 @@ import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { MapaLugar } from '../../components/graficos/MapaLugar';
 import { cubierto, Piscina } from '../../components/graficos/Piscina';
+import { useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Sello } from '../../components/graficos/Sello';
 import { Ficha } from '../../components/texto/Ficha';
 import { Ornamento } from '../../components/texto/Ornamento';
@@ -24,6 +25,7 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
   const pal = video.paleta;
   const b = escena.beats;
   const piscina = props.fondo === 'piscina';
+  const lPiscina = useLamina(props.laminas?.piscina ? { videoId: video.id, archivo: props.laminas.piscina } : undefined);
   const tNombre = beat(b, 'nombre', 1), tFrenar = beat(b, 'frenar', 4), tRenglon = beat(b, 'renglon', 5), tSello = beat(b, 'sello', 10);
   const tPalabra = beat(b, 'palabra', Infinity), tFicha = beat(b, 'ficha', Infinity), tLugar = beat(b, 'lugar', Infinity);
   const comoCita = props.palabra_como === 'cita';
@@ -51,7 +53,7 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
 
   return (
     <AbsoluteFill style={{ transform: `translateY(${temblor}px)` }}>
-      {piscina ? <Piscina paleta={pal} t={t} dx={dx} renglon={renglon} colorAgua={props.agua} /> : <Papel color={pal.papel} envejecido={0.3} />}
+      {piscina ? <Piscina paleta={pal} t={t} dx={dx} renglon={renglon} colorAgua={props.agua} lamina={lPiscina} /> : <Papel color={pal.papel} envejecido={0.3} />}
       {/* dónde y cuándo: el país en tinta sobre la página y la cámara que se acerca a la ciudad; el agua lo cubre */}
       {!props.vectorcraft && props.lugar && t >= tLugar - 0.1 && renglon > 0.02 ? (
         <AbsoluteFill style={{ opacity: renglon }}>
@@ -110,8 +112,9 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
       ) : null}
 
       {props.ficha && t >= tFicha ? (
-        // en la piscina va entre dos corcheras (las filas de boyas están en y = 130 + 92·k)
-        <div style={{ position: 'absolute', left: 120, top: piscina ? 158 : 90 }}>
+        // en la piscina va entre dos corcheras (las filas de boyas están en y = 130 + 92·k); en la pileta
+        // de la lámina, dentro del carril 1 (entre el borde, y = 207, y la primera corchera, y = 370)
+        <div style={{ position: 'absolute', left: lPiscina ? 180 : 120, top: piscina ? (lPiscina ? 228 : 158) : 90 }}>
           {/* sobre el agua, un velo oscuro detrás para que se lea entre las boyas; sobre el papel, nada */}
           {piscina ? (
             <div style={{ position: 'absolute', left: -22, top: -16, width: props.ficha.length * 30 * 0.66 + 70, height: 64, borderRadius: 4,

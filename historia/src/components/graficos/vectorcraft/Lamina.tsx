@@ -102,3 +102,21 @@ export const CapasVC: React.FC<{ lamina: Lamina; uid: string; nombres: string[];
     </g>
   );
 };
+
+/**
+ * Un recorte de la lámina como objeto suelto (un emblema, un vale, un libro) para ponerlo dentro de
+ * la escena con su propio tamaño: `caja` es el recuadro de la lámina que se muestra.
+ */
+export const RecorteLamina: React.FC<{
+  lamina: Lamina; caja: Caja; ancho: number;
+  capas: { nombre: string; solo?: (i: number) => boolean; transform?: string; opacity?: number }[];
+  style?: React.CSSProperties;
+}> = ({ lamina, caja, ancho, capas, style }) => {
+  const uid = usePrefijo();
+  return (
+    <svg width={ancho} height={(ancho * caja[3]) / caja[2]} viewBox={caja.join(' ')} style={{ display: 'block', overflow: 'visible', ...style }}>
+      <DefsLamina lamina={lamina} uid={uid} />
+      {capas.map((c, i) => <CapaVC key={i} lamina={lamina} uid={uid} {...c} />)}
+    </svg>
+  );
+};

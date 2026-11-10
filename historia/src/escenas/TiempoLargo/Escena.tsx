@@ -5,7 +5,8 @@ import type { z } from 'zod';
 import { Luz } from '../../components/atmosfera/Luz';
 import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
-import { Afiche } from '../../components/graficos/Afiche';
+import { Afiche, PROPORCION_PANFLETO } from '../../components/graficos/Afiche';
+import { RecorteLamina, useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Pizarra } from '../../components/atmosfera/Pizarra';
 import { CapasDeTiempo } from '../../components/graficos/CapasDeTiempo';
 import { CapasTiza } from '../../components/graficos/CapasTiza';
@@ -50,6 +51,8 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   const tRemate = props.remate ? T('remate', Infinity) : Infinity;
   const pizarra = props.estilo === 'pizarra';
   const noche = mezclar(pal.fondo, '#000000', 0.3);
+  const ref = (archivo?: string) => (archivo ? { videoId: video.id, archivo } : undefined);
+  const lEmblema = useLamina(ref(props.laminas?.emblema)), lPanfletos = useLamina(ref(props.laminas?.panfletos));
 
   const restos = useMemo(() => {
     const r = azar(74);
@@ -106,9 +109,21 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                   strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - corchete} opacity={0.9} />
               </svg>
             </AbsoluteFill>
-            <div style={{ position: 'absolute', left: 1300, top: 170, transform: `rotate(-11deg) scale(${caidaSello})`, opacity: clamp(caidaSello * 3) }}>
-              <Sello paleta={pal} id={`${escena.id}-sello`} centro={props.sello.centro} fecha={props.sello.fecha} arco={props.sello.arco} size={360} color={pal.rojo} />
-            </div>
+            {lEmblema ? (
+              // el emblema ilustrado cae como caía el sello, pero apenas girado: es un escudo, no un timbrazo
+              <div style={{ position: 'absolute', left: 1290, top: 150, width: 380, transform: `rotate(-4deg) scale(${caidaSello})`, opacity: clamp(caidaSello * 3),
+                filter: `drop-shadow(4px 8px 8px ${alfa('#000000', 0.35)})` }}>
+                <RecorteLamina lamina={lEmblema} caja={[195, 300, 590, 590]} ancho={380} capas={[{ nombre: 'Escudo', solo: (i) => i < 20 }]} />
+                {props.laminas?.aviso_emblema ? (
+                  <div style={{ marginTop: 14, textAlign: 'center', fontFamily: fuente.libro, fontStyle: 'italic', fontSize: 21, color: alfa(pal.fondo, 0.7),
+                    opacity: tramo(t, tSello + 0.8, 0.8, 'natural') }}>{props.laminas.aviso_emblema}</div>
+                ) : null}
+              </div>
+            ) : (
+              <div style={{ position: 'absolute', left: 1300, top: 170, transform: `rotate(-11deg) scale(${caidaSello})`, opacity: clamp(caidaSello * 3) }}>
+                <Sello paleta={pal} id={`${escena.id}-sello`} centro={props.sello.centro} fecha={props.sello.fecha} arco={props.sello.arco} size={360} color={pal.rojo} />
+              </div>
+            )}
           </Papel>
         </AbsoluteFill>
       ) : null}
@@ -137,11 +152,14 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                   { papel: mezclar(pal.rojo, pal.papel, 0.12), tinta: pal.papel, acento: mezclar(pal.fondo, pal.rojo, 0.3) },
                   { papel: pal.papel, tinta: pal.rojo, acento: pal.fondo },
                 ][i % 4];
+                // el panfleto de la lámina es más alto que el afiche dibujado: mismo alto, centrado en su lugar
+                const panfleto = lPanfletos && i < 3 ? i + 1 : undefined;
+                const ancho = panfleto ? Math.round(L.h * PROPORCION_PANFLETO) : L.w;
                 return (
-                  <div key={i} style={{ position: 'absolute', left: L.x, top: L.y, transform: `rotate(${L.rot}deg) scale(${mix(1.1, 1, k)})`, opacity: clamp(k * 4),
+                  <div key={i} style={{ position: 'absolute', left: L.x + (L.w - ancho) / 2, top: L.y, transform: `rotate(${L.rot}deg) scale(${mix(1.1, 1, k)})`, opacity: clamp(k * 4),
                     filter: `drop-shadow(6px 10px 10px ${alfa('#000000', 0.45)})` }}>
-                    <Afiche id={`${escena.id}-af${i}`} texto={tx} {...colores} ancho={L.w} alto={L.h} semilla={i * 17 + 3}
-                      despegue={i === props.titulares.length - 1 ? tramo(t, tDespegue, 1.8, 'natural') * 0.85 : 0} />
+                    <Afiche id={`${escena.id}-af${i}`} texto={tx} {...colores} ancho={ancho} alto={L.h} semilla={i * 17 + 3}
+                      despegue={i === props.titulares.length - 1 ? tramo(t, tDespegue, 1.8, 'natural') * 0.85 : 0} lamina={lPanfletos} panfleto={panfleto} />
                   </div>
                 );
               })}

@@ -4,6 +4,7 @@ import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { textura } from '../../estilo/recursos';
 import { Papel } from '../atmosfera/Papel';
+import { capa, CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
   paleta: Paleta;
@@ -20,6 +21,8 @@ type Props = {
   separacion?: number;
   /** Primera corchera (px desde arriba). */
   y0?: number;
+  /** Lámina aprobada (tanda04-piscina): pileta enmarcada con tres corcheras y cuatro carriles. */
+  lamina?: Lamina | null;
 };
 
 const ANCHO = 1920, ALTO = 1080, BOYA = 34, SUAVE = 180;
@@ -38,7 +41,67 @@ export const cubierto = (x: number, renglon: number) => clamp((x - frenteSecado(
  * volumen y su sombra. Con `renglon` el agua se seca en papel y las corcheras quedan como
  * renglones: la disciplina del nadador pasa al archivo.
  */
-export const Piscina: React.FC<Props> = ({ paleta, t, dx, renglon, carriles = 10, separacion = 92, y0 = 130, colorAgua }) => {
+export const Piscina: React.FC<Props> = ({ lamina, ...props }) => {
+  const uid = usePrefijo();
+  if (lamina) return <PiscinaLamina {...props} lamina={lamina} uid={uid} />;
+  return <PiscinaDibujada {...props} />;
+};
+
+/** Agua de la lámina: x, y, ancho y alto de la pileta por dentro del borde. */
+const AGUA = { x: 126, y: 207, w: 1668, h: 646 };
+const mod = (a: number, n: number) => ((a % n) + n) % n;
+
+/**
+ * La pileta de la lámina. El borde, el fondo y las corcheras quedan en su lugar (la pileta se ve
+ * entera); lo que viaja con la cámara es el agua: los reflejos y las cáusticas corren con `dx` y se
+ * calman cuando la cámara frena. Las corcheras se mecen. Al secarse, todo se va en papel de derecha a
+ * izquierda y quedan los renglones del libro contable, como en el dibujo de siempre.
+ */
+const PiscinaLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: string }> = ({ paleta, t, dx, renglon, carriles = 10, separacion = 92, y0 = 130, lamina, uid }) => {
+  const frente = frenteSecado(renglon);
+  const ancho = capa(lamina, 'Reflejos').box[2];
+  const agua = `inset(${AGUA.y}px ${ANCHO - AGUA.x - AGUA.w}px ${ALTO - AGUA.y - AGUA.h}px ${AGUA.x}px)`;
+  const corre = mod(dx * 0.85, ancho);
+  return (
+    <div style={{ position: 'absolute', inset: 0, overflow: 'hidden' }}>
+      <Papel color={paleta.papel} envejecido={0.3} />
+      {/* los renglones del libro: están debajo de la pileta y aparecen al secarse */}
+      <svg width={ANCHO} height={ALTO} style={{ position: 'absolute' }}>
+        {Array.from({ length: carriles }, (_, i) => (
+          <line key={i} x1={0} x2={ANCHO} y1={y0 + i * separacion} y2={y0 + i * separacion} stroke={paleta.fondo} strokeOpacity={0.42} strokeWidth={2} />
+        ))}
+      </svg>
+      {renglon < 1 ? (
+        <div style={{ position: 'absolute', inset: 0,
+          WebkitMaskImage: `linear-gradient(90deg, #000 ${frente - SUAVE / 2}px, transparent ${frente + SUAVE / 2}px)`,
+          maskImage: `linear-gradient(90deg, #000 ${frente - SUAVE / 2}px, transparent ${frente + SUAVE / 2}px)` }}>
+          <svg width={ANCHO} height={ALTO} viewBox={`0 0 ${ANCHO} ${ALTO}`} style={{ position: 'absolute', inset: 0 }}>
+            <DefsLamina lamina={lamina} uid={uid} />
+            <CapaVC lamina={lamina} uid={uid} nombre="Fondo" />
+            <CapaVC lamina={lamina} uid={uid} nombre="Borde_de_piscina" />
+            <CapaVC lamina={lamina} uid={uid} nombre="Azulejos_y_líneas_del_fondo" />
+          </svg>
+          {/* cáusticas sobre el agua: la luz que se mueve con la cámara */}
+          <div style={{ position: 'absolute', inset: 0, clipPath: agua, backgroundImage: `url(${textura.caustica})`, backgroundSize: '760px 760px',
+            backgroundPosition: `${dx * 0.85 + t * 18}px ${t * 11}px`, mixBlendMode: 'screen', opacity: 0.16, filter: 'blur(1.5px)' }} />
+          <svg width={ANCHO} height={ALTO} viewBox={`0 0 ${ANCHO} ${ALTO}`} style={{ position: 'absolute', inset: 0, clipPath: agua }}>
+            {[0, -ancho].map((o) => (
+              <CapaVC key={o} lamina={lamina} uid={uid} nombre="Reflejos" transform={`translate(${corre + o} ${Math.sin(t * 0.9) * 3})`} />
+            ))}
+            {['Corchera_370', 'Corchera_530', 'Corchera_690'].map((n, i) => (
+              <CapaVC key={n} lamina={lamina} uid={uid} nombre={n} transform={`translate(0 ${Math.sin(t * 2.2 + i * 1.7) * 1.3})`} />
+            ))}
+          </svg>
+          <svg width={ANCHO} height={ALTO} viewBox={`0 0 ${ANCHO} ${ALTO}`} style={{ position: 'absolute', inset: 0 }}>
+            <CapaVC lamina={lamina} uid={uid} nombre="Fichas_de_carril" />
+          </svg>
+        </div>
+      ) : null}
+    </div>
+  );
+};
+
+const PiscinaDibujada: React.FC<Omit<Props, 'lamina'>> = ({ paleta, t, dx, renglon, carriles = 10, separacion = 92, y0 = 130, colorAgua }) => {
   // el agua es azul cuando se pide (DIRECCION_DE_VIDEO §2.13: con la paleta gris parece concreto o brea)
   const agua = colorAgua ?? mezclar(paleta.fondo, paleta.ocre, 0.14);
   const medio = colorAgua ? mezclar(colorAgua, '#000000', 0.38) : paleta.fondo;
