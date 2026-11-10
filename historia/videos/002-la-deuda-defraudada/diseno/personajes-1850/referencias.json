@@ -1,0 +1,81 @@
+{
+  "fecha": "2026-11-10",
+  "plantillas": [
+    {
+      "archivo": "young-woman-character-animated-creation-people-with-emotions-face-animation-mouth.zip",
+      "sha256": "7d4f4803349f78daa2aadfdb50e34becc58acfa73fa8a68b40c3afcbcaa44512",
+      "contenido": [
+        "drawing290.eps",
+        "drawing290.jpg"
+      ],
+      "uso": "Referencia proporcionada por Gerson para despiece, manos y expresiones; originales conservados localmente, no incluidos en GitHub."
+    },
+    {
+      "archivo": "cartoon-character-motion-design.zip",
+      "sha256": "5e8fd89d100affd5d3197eee2992d79c5aec81363fa8784a2f4b4ea6ccc4975c",
+      "contenido": [
+        "2203048.jpg",
+        "2234581.ai",
+        "2234582.eps"
+      ],
+      "uso": "Referencia proporcionada por Gerson para despiece, manos y expresiones; originales conservados localmente, no incluidos en GitHub."
+    }
+  ],
+  "vestuario": [
+    {
+      "id": "PF-478",
+      "url": "https://www.metmuseum.org/art/collection/search/819256",
+      "titulo": "A man and a woman dancing",
+      "fecha": "1848",
+      "objeto": "38.145.478",
+      "uso": "Camisa holgada, pantalón y sombrero del hombre; volumen de falda y prenda sobre los hombros de la mujer.",
+      "institucion": "The Metropolitan Museum of Art",
+      "licencia_ficha": "Public Domain",
+      "consulta": "Ficha e imagen examinadas; archivos de consulta fuera del paquete de producción"
+    },
+    {
+      "id": "PF-469",
+      "url": "https://www.metmuseum.org/art/collection/search/819246",
+      "titulo": "A Peruvian man",
+      "fecha": "ca. 1848",
+      "objeto": "38.145.469",
+      "uso": "Contraste de la diversidad de ropa y calzado; no trasladar una sola figura a todos los trabajadores.",
+      "institucion": "The Metropolitan Museum of Art",
+      "licencia_ficha": "Public Domain",
+      "consulta": "Ficha e imagen examinadas; archivos de consulta fuera del paquete de producción"
+    },
+    {
+      "id": "PF-486",
+      "url": "https://www.metmuseum.org/art/collection/search/819277",
+      "titulo": "An elegantly dressed woman",
+      "fecha": "ca. 1848",
+      "objeto": "38.145.486",
+      "uso": "Falda larga y chal. La figura es una tapada; el rostro descubierto y el recogido del modelo son decisiones de ilustración para una escena de interior, no una reproducción de esa acuarela.",
+      "institucion": "The Metropolitan Museum of Art",
+      "licencia_ficha": "Public Domain",
+      "consulta": "Ficha e imagen examinadas; archivos de consulta fuera del paquete de producción"
+    },
+    {
+      "id": "MET-LEVITA",
+      "url": "https://www.metmuseum.org/art/collection/search/91913",
+      "titulo": "Frock coat",
+      "fecha": "1840–50",
+      "objeto": "1970.281.8",
+      "uso": "Construcción y longitud de levita, solapas y mangas. Pieza estadounidense de lino; no prueba un uniforme peruano ni el atuendo de una persona concreta.",
+      "institucion": "The Metropolitan Museum of Art",
+      "licencia_ficha": "Public Domain",
+      "consulta": "Ficha e imagen examinadas; archivos de consulta fuera del paquete de producción"
+    },
+    {
+      "id": "MET-CHALECO",
+      "url": "https://www.metmuseum.org/art/collection/search/90939",
+      "titulo": "Waistcoat",
+      "fecha": "ca. 1840",
+      "objeto": "1979.346.46",
+      "uso": "Estructura abotonada y terminación del chaleco. Pieza estadounidense; la paleta y el acabado se adaptan al video.",
+      "institucion": "The Metropolitan Museum of Art",
+      "licencia_ficha": "Public Domain",
+      "consulta": "Ficha e imagen examinadas; archivos de consulta fuera del paquete de producción"
+    }
+  ]
+}

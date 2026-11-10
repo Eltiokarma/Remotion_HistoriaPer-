@@ -1,0 +1,44 @@
+{
+  "fecha": "2026-11-10",
+  "secciones": [
+    {
+      "seccion": 2,
+      "paginas": 3,
+      "instancias": 15,
+      "textosHistoricosConservados": true,
+      "tiposCambioTexto": 8
+    },
+    {
+      "seccion": 3,
+      "paginas": 3,
+      "instancias": 12,
+      "textosHistoricosConservados": true,
+      "tiposCambioTexto": 0
+    },
+    {
+      "seccion": 4,
+      "paginas": 4,
+      "instancias": 7,
+      "textosHistoricosConservados": true,
+      "tiposCambioTexto": 0
+    },
+    {
+      "seccion": 5,
+      "paginas": 3,
+      "instancias": 1,
+      "textosHistoricosConservados": true,
+      "tiposCambioTexto": 8
+    }
+  ],
+  "archivosConHash": 57,
+  "svgSinRasterNiTextoVivo": 36,
+  "laminasPNG": 13,
+  "paginasPDF": 13,
+  "instanciasVigentes": 35,
+  "piezasAntiguasRetiradas": 508,
+  "piezasCanonicasSinCambios": 135,
+  "verificacionVisual": "Las trece láminas se inspeccionaron en VectorCraft; se comprobaron también los contactos estáticos y encuadres modificados.",
+  "aprobacionGerson": "pendiente",
+  "animacionRemotionVerificada": false,
+  "videoGenerado": false
+}

@@ -1,0 +1,60 @@
+{
+  "fecha": "2026-11-10",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "escena": 5,
+  "laminas": 5,
+  "estados": 15,
+  "video_generado": false,
+  "archivos": [
+    {
+      "archivo": "escena-05.pdf",
+      "bytes": 7640374,
+      "sha256": "83a16dea2008e9ba7ffd14267db0c8e538e74f4a37bd5934390ad5d3c0cb9d00"
+    },
+    {
+      "archivo": "escena-05.vectorcraft",
+      "bytes": 2058201,
+      "sha256": "c439d9c35c545ca9effcdcb982bbbf28b7b9c4eafc0b68621c406885247173a3"
+    },
+    {
+      "archivo": "lamina01.svg",
+      "bytes": 1524431,
+      "sha256": "ec6bf6f137d0b90a371cc7020c3a38c6cf962ba1c2eec2f70e6c79751facbd7b"
+    },
+    {
+      "archivo": "lamina02.svg",
+      "bytes": 2056361,
+      "sha256": "3cca0d9beabebc6dac1dd09f6b3d5a4cd804dbe1f6c11db0377a86f788497df6"
+    },
+    {
+      "archivo": "lamina03.svg",
+      "bytes": 2325648,
+      "sha256": "cc9dd3879fb7aafd08b87789ac4171811d0fdaa255c764081812f2d599aa5403"
+    },
+    {
+      "archivo": "lamina04.svg",
+      "bytes": 1295571,
+      "sha256": "43cc0e152b4a250836ea3d9b7e5a427cd77f0d6f3b000f1c391b931186d888e8"
+    },
+    {
+      "archivo": "lamina05.svg",
+      "bytes": 1392289,
+      "sha256": "55592f9a53b9beff1eecb0e3320f352f1e1abd3c4c7c59630d9715f324710989"
+    },
+    {
+      "archivo": "muestra.png",
+      "bytes": 233244,
+      "sha256": "998419680740696bebf722a1e49012ca344a4b894ac87c06c5ec6a6af52700b3"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 1678,
+      "sha256": "c7e4ec96193e070b42abb869f81116b5762e5ead2ba0c5657fdaa1560d52aba1"
+    },
+    {
+      "archivo": "secuencia.json",
+      "bytes": 12826,
+      "sha256": "61cd62a2014932113d1653ca3de40908e7dad4d2a334b1d410e97d6f489cbced"
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "titulo": "El expediente de Novoa",
+  "seccion": 3,
+  "fecha_revision": "2026-11-10",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "herramienta": "VectorCraft mediante MCP",
+  "medidas": {
+    "lamina": [
+      2520,
+      2140
+    ],
+    "encuadre": [
+      1120,
+      630
+    ],
+    "destinoRemotion": [
+      1920,
+      1080
+    ],
+    "factorEncuadreARemotion": 1.7142857142857142
+  },
+  "proxima_seccion": 4,
+  "vinyetas": [
+    {
+      "id": "s03-v01",
+      "numero": 1,
+      "titulo": "UN EXPEDIENTE CON NOMBRE",
+      "voz": "Dejemos el ejemplo. Veamos el reclamo de Ignacia Novoa de Arredondo, una propietaria.",
+      "camara_accion": "Retirar el ejemplo anterior. Entrar a otra carpeta; acercar a nombre y año.",
+      "base": null,
+      "lamina": 1,
+      "encuadre_documento": [
+        90,
+        260,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 83,
+          "nombre": "01 · UN EXPEDIENTE CON NOMBRE"
+        }
+      ]
+    },
+    {
+      "id": "s03-v02",
+      "numero": 2,
+      "titulo": "LO QUE PEDÍA COMPENSAR",
+      "voz": "Reclamaba por una hacienda expropiada. Su solicitud incluía a quinientas personas esclavizadas.",
+      "camara_accion": "Desplegar el resumen. Leer primero hacienda; después, personas. Sostener sin música.",
+      "base": null,
+      "lamina": 1,
+      "encuadre_documento": [
+        1310,
+        260,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 143,
+          "nombre": "02 · LO QUE PEDÍA COMPENSAR"
+        }
+      ]
+    },
+    {
+      "id": "s03-v03",
+      "numero": 3,
+      "titulo": "TREINTA Y DOS AÑOS",
+      "voz": "También reclamaba las ganancias que decía haber dejado de obtener durante treinta y dos años.",
+      "camara_accion": "Recorrer los folios del cálculo; volver al resumen completo. No inventar fechas de inicio.",
+      "base": null,
+      "lamina": 1,
+      "encuadre_documento": [
+        90,
+        1210,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "mano_s03_v03_reclamante_apoyo_derecha",
+          "tipo": "mano",
+          "funcion": "reclamante",
+          "estado": "apoyo",
+          "referencia": "../personajes-1850/detalles-manos/detalle-reclamante-apoyo.svg",
+          "omitido": null,
+          "id_nativo": 2034,
+          "capa_nativa": 203,
+          "rectangulo": {
+            "height": 81.22852436037533,
+            "width": 160.0493884263963,
+            "x": 96.00000272323345,
+            "y": 1653.0691491888574
+          },
+          "recorte_original": null,
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 203,
+          "nombre": "03 · TREINTA Y DOS AÑOS"
+        }
+      ]
+    },
+    {
+      "id": "s03-v04",
+      "numero": 4,
+      "titulo": "ELÍAS HACE LA GESTIÓN",
+      "voz": "Domingo Elías manejaba asuntos financieros de Novoa a cambio de una comisión.",
+      "camara_accion": "Unir su ficha al expediente. Mantener a Novoa como reclamante y a Elías como intermediario.",
+      "base": null,
+      "lamina": 1,
+      "encuadre_documento": [
+        1310,
+        1210,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s03_v04_intermediario_senala",
+          "tipo": "actor",
+          "funcion": "intermediario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-intermediario-senala.svg",
+          "omitido": null,
+          "id_nativo": 1942,
+          "capa_nativa": 249,
+          "rectangulo": {
+            "height": 310.21701388888914,
+            "width": 345.59263827972654,
+            "x": 1929.464619883041,
+            "y": 1371.7829861111109
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": true,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s03_v04_reclamante_senala",
+          "tipo": "actor",
+          "funcion": "reclamante",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-reclamante-senala.svg",
+          "omitido": null,
+          "id_nativo": 2027,
+          "capa_nativa": 249,
+          "rectangulo": {
+            "height": 305.6468192886002,
+            "width": 340.5012811373001,
+            "x": 1441.0299518036002,
+            "y": 1376.3531807114
+          },
+          "recorte_original": [
+            260,
+            95,
+            635,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 249,
+          "nombre": "04 · ELÍAS HACE LA GESTIÓN"
+        }
+      ]
+    },
+    {
+      "id": "s03-v05",
+      "numero": 5,
+      "titulo": "LA APROBACIÓN QUE BUSCABA",
+      "voz": "En 1852, Elías intentó conseguir que el gobierno reconociera entre quinientos mil y seiscientos mil pesos.",
+      "camara_accion": "Acercar al objetivo de la gestión. El monto no se presenta como una suma ya aprobada.",
+      "base": null,
+      "lamina": 2,
+      "encuadre_documento": [
+        90,
+        2480,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s03_v05_intermediario_senala",
+          "tipo": "actor",
+          "funcion": "intermediario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-intermediario-senala.svg",
+          "omitido": null,
+          "id_nativo": 1853,
+          "capa_nativa": 358,
+          "rectangulo": {
+            "height": 286.06770833333303,
+            "width": 318.68946454678326,
+            "x": 754.0008771929827,
+            "y": 2671.932291666667
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": true,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 358,
+          "nombre": "05 · LA APROBACIÓN QUE BUSCABA"
+        }
+      ]
+    },
+    {
+      "id": "s03-v06",
+      "numero": 6,
+      "titulo": "LA RESPUESTA DEL PRESIDENTE",
+      "voz": "El presidente Echenique le comunicó a Elías que el reclamo no había cumplido el plazo oficial.",
+      "camara_accion": "El recorrido se detiene ante la nota de plazo. Queda visible al entrar la etapa siguiente.",
+      "base": null,
+      "lamina": 2,
+      "encuadre_documento": [
+        1310,
+        2480,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s03_v06_funcionario_senala",
+          "tipo": "actor",
+          "funcion": "funcionario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-funcionario-senala.svg",
+          "omitido": null,
+          "id_nativo": 1675,
+          "capa_nativa": 443,
+          "rectangulo": {
+            "height": 313.76045796909193,
+            "width": 349.54015931644426,
+            "x": 1969.7306669733962,
+            "y": 2651.239542030908
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": true,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s03_v06_intermediario_senala",
+          "tipo": "actor",
+          "funcion": "intermediario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-intermediario-senala.svg",
+          "omitido": null,
+          "id_nativo": 1764,
+          "capa_nativa": 443,
+          "rectangulo": {
+            "height": 311.0677083333335,
+            "width": 346.5403417397663,
+            "x": 1425.3114126461985,
+            "y": 2653.9322916666665
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 443,
+          "nombre": "06 · LA RESPUESTA DEL PRESIDENTE"
+        }
+      ]
+    },
+    {
+      "id": "s03-v07",
+      "numero": 7,
+      "titulo": "INTERVIENE TORRICO",
+      "voz": "Entonces intervino Juan Crisóstomo Torrico, ministro de Guerra. Aseguró a Novoa que solo con su intervención podría aprobarse el reclamo.",
+      "camara_accion": "Abrir hacia una ficha nueva. Seguir el expediente; conservar la respuesta anterior al fondo.",
+      "base": null,
+      "lamina": 2,
+      "encuadre_documento": [
+        90,
+        3430,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s03_v07_funcionario_senala",
+          "tipo": "actor",
+          "funcion": "funcionario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-funcionario-senala.svg",
+          "omitido": null,
+          "id_nativo": 1585,
+          "capa_nativa": 555,
+          "rectangulo": {
+            "height": 326.463336920001,
+            "width": 363.69161218280874,
+            "x": 725.9835057515777,
+            "y": 3606.536663079998
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": true,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 555,
+          "nombre": "07 · INTERVIENE TORRICO"
+        }
+      ]
+    },
+    {
+      "id": "s03-v08",
+      "numero": 8,
+      "titulo": "UNOS DÍAS DESPUÉS",
+      "voz": "Unos días más tarde se aprobó el expediente por 948.500 pesos en vales.",
+      "camara_accion": "Revelar el monto tras la intervención. Silencio de dos segundos; cámara quieta para leer.",
+      "base": null,
+      "lamina": 2,
+      "encuadre_documento": [
+        1310,
+        3430,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 660,
+          "nombre": "08 · UNOS DÍAS DESPUÉS"
+        }
+      ]
+    },
+    {
+      "id": "s03-v09",
+      "numero": 9,
+      "titulo": "APROBADO EN VALES",
+      "voz": "Recordemos: eran títulos de deuda del Estado. Esa aprobación no era una entrega inmediata de efectivo.",
+      "camara_accion": "Volver al vale aprendido en la sección 2. Conservar monto y unidad; no dibujar dinero saliendo.",
+      "base": null,
+      "lamina": 3,
+      "encuadre_documento": [
+        90,
+        4700,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 710,
+          "nombre": "09 · APROBADO EN VALES"
+        }
+      ]
+    },
+    {
+      "id": "s03-v10",
+      "numero": 10,
+      "titulo": "LO QUE PROBABLEMENTE RECIBIÓ",
+      "voz": "Según Quiroz, Novoa probablemente recibió alrededor de 180.000 pesos, también en vales.",
+      "camara_accion": "Mover el foco al segundo campo. Probablemente debe leerse junto a la cifra.",
+      "base": null,
+      "lamina": 3,
+      "encuadre_documento": [
+        1310,
+        4700,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s03_v10_reclamante_atencion",
+          "tipo": "actor",
+          "funcion": "reclamante",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-reclamante-atencion.svg",
+          "omitido": null,
+          "id_nativo": 1495,
+          "capa_nativa": 763,
+          "rectangulo": {
+            "height": 275.32581918273445,
+            "width": 198.04137871038802,
+            "x": 2131.9350044686103,
+            "y": 4889.554180817266
+          },
+          "recorte_original": [
+            260,
+            95,
+            410,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 763,
+          "nombre": "10 · LO QUE PROBABLEMENTE RECIBIÓ"
+        }
+      ]
+    },
+    {
+      "id": "s03-v11",
+      "numero": 11,
+      "titulo": "DOS CANTIDADES DIFERENTES",
+      "voz": "Una cifra es lo aprobado. La otra es lo que, según la estimación de Quiroz, habría recibido Novoa.",
+      "camara_accion": "Abrir para comparar. No restar para fabricar un monto robado ni repartir la diferencia.",
+      "base": null,
+      "lamina": 3,
+      "encuadre_documento": [
+        90,
+        5650,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 849,
+          "nombre": "11 · DOS CANTIDADES DIFERENTES"
+        }
+      ]
+    },
+    {
+      "id": "s03-v12",
+      "numero": 12,
+      "titulo": "DEL CASO A LA DENUNCIA",
+      "voz": "El conflicto llevó a Elías a denunciar la consolidación. Volveremos a él al seguir lo que ocurrió después.",
+      "camara_accion": "Reunir a los participantes. Retomar la ficha de Elías y abrir paso al conjunto de la deuda.",
+      "base": null,
+      "lamina": 3,
+      "encuadre_documento": [
+        1310,
+        5650,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s03_v12_funcionario_atencion",
+          "tipo": "actor",
+          "funcion": "funcionario",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-funcionario-atencion.svg",
+          "omitido": null,
+          "id_nativo": 1162,
+          "capa_nativa": 897,
+          "rectangulo": {
+            "height": 170.97800215200095,
+            "width": 110.9857206951583,
+            "x": 2215.845981870947,
+            "y": 5799.921997847999
+          },
+          "recorte_original": [
+            285,
+            95,
+            370,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s03_v12_funcionario_atencion",
+          "tipo": "actor",
+          "funcion": "funcionario",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-funcionario-atencion.svg",
+          "omitido": null,
+          "id_nativo": 1162,
+          "capa_nativa": 897,
+          "rectangulo": {
+            "height": 170.97800215200095,
+            "width": 110.9857206951583,
+            "x": 2215.845981870947,
+            "y": 5799.921997847999
+          },
+          "recorte_original": [
+            285,
+            95,
+            370,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s03_v12_intermediario_atencion",
+          "tipo": "actor",
+          "funcion": "intermediario",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-intermediario-atencion.svg",
+          "omitido": null,
+          "id_nativo": 1333,
+          "capa_nativa": 897,
+          "rectangulo": {
+            "height": 170.60541666666813,
+            "width": 110.74386695906537,
+            "x": 1678.2872989766076,
+            "y": 5801.614583333332
+          },
+          "recorte_original": [
+            285,
+            95,
+            370,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s03_v12_reclamante_atencion",
+          "tipo": "actor",
+          "funcion": "reclamante",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-reclamante-atencion.svg",
+          "omitido": null,
+          "id_nativo": 1414,
+          "capa_nativa": 897,
+          "rectangulo": {
+            "height": 174.72600063519712,
+            "width": 125.68010572005414,
+            "x": 1408.843368220464,
+            "y": 5800.793999364803
+          },
+          "recorte_original": [
+            260,
+            95,
+            410,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 897,
+          "nombre": "12 · DEL CASO A LA DENUNCIA"
+        }
+      ]
+    }
+  ],
+  "recorridos_internos": [
+    {
+      "v": [
+        1,
+        4
+      ],
+      "nombre": "Objeto del reclamo y gestión",
+      "pasos": [
+        "Retirar el ejemplo genérico y presentar el expediente identificado de Novoa.",
+        "Leer hacienda y después quinientas personas esclavizadas; sostener el dato sin música.",
+        "Desplegar el folio de 32 años y volver al resumen del reclamo.",
+        "Introducir a Elías por su función; señalar el expediente sin inventar una conversación."
+      ]
+    },
+    {
+      "v": [
+        5,
+        8
+      ],
+      "nombre": "Intento, plazo e intervención",
+      "pasos": [
+        "Mostrar 500.000–600.000 como aprobación buscada.",
+        "Detener el recorrido en la respuesta sobre el plazo.",
+        "Conservar ese antecedente mientras entra la intervención atribuida a Torrico.",
+        "Revelar 948.500 pesos en vales después de la intervención y dar tiempo de lectura."
+      ]
+    },
+    {
+      "v": [
+        9,
+        12
+      ],
+      "nombre": "Alcance del resultado",
+      "pasos": [
+        "Recuperar la distinción entre título y efectivo.",
+        "Revelar probablemente junto a alrededor de 180.000 pesos en vales.",
+        "Abrir ambas cifras, sin restar ni asignar destinatarios a la diferencia.",
+        "Reunir los participantes y recuperar a Elías al pasar a la denuncia."
+      ]
+    }
+  ],
+  "escena_larga": {
+    "numero": 3,
+    "titulo": "El expediente de Novoa",
+    "desarrollo_continuidad": "../escenas-largas/escena-03/secuencia.json",
+    "momentos": [
+      "3A",
+      "3B",
+      "3C",
+      "3D",
+      "3E",
+      "3F"
+    ],
+    "nota": "Esta sección corresponde a una escena larga. Sus bloques anteriores son recorridos internos; no escenas largas adicionales."
+  }
+}

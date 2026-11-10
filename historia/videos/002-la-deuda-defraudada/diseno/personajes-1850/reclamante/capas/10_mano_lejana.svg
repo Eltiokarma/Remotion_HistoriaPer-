@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <title>Artboard 1</title>
+  <g id="_10_mano_lejana" data-name="10_mano_lejana">
+    <path d="M322 668 C332 662 346 662 354 669 L360 692 L365 713 C365 717.667 363.333 720 360 720 C357.333 720.667 354.667 716.333 352 707 L357 734 C357 738 355.333 740 352 740 C348.667 740.667 346 733 344 717 L347 740 C346.333 744.667 344 746.333 340 745 L333 719 L335 741 C333.667 745 331.333 745.667 328 743 L322 716 L316 699 C312 704.333 308.333 705.333 305 702 C303 699.333 304.333 692.667 309 682 Z" fill="#c1a07b" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="326" y1="685" x2="341" y2="698" fill="none" stroke="#9c8465" stroke-miterlimit="10"/>
+    <line x1="327" y1="705" x2="347" y2="711" fill="none" stroke="#9c8465" stroke-miterlimit="10"/>
+  </g>
+</svg>

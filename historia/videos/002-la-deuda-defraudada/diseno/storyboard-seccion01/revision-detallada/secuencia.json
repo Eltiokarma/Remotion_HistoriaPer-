@@ -1,0 +1,564 @@
+{
+  "titulo": "Las islas y el país",
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "inicio": "2026-11-09",
+  "revision": "2026-11-10",
+  "duracion": null,
+  "criterio": "Los encuadres son estados de escenas largas; no dieciséis cortes de igual duración.",
+  "bloques": [
+    {
+      "id": "contexto",
+      "vinyetas": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "proposito": "Situar el país y presentar deudas anteriores."
+    },
+    {
+      "id": "producto_trabajo",
+      "vinyetas": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "proposito": "Entender el abono y el trabajo necesario para embarcarlo."
+    },
+    {
+      "id": "mercado",
+      "vinyetas": [
+        9,
+        10
+      ],
+      "proposito": "Entender una relación comercial con acercamientos, no una travesía inventada."
+    },
+    {
+      "id": "cuentas",
+      "vinyetas": [
+        11,
+        12,
+        13
+      ],
+      "proposito": "Distinguir venta, costos e ingreso público."
+    },
+    {
+      "id": "reclamo",
+      "vinyetas": [
+        14,
+        15,
+        16
+      ],
+      "proposito": "Recuperar ejemplos y seguir un documento a la sección 2."
+    }
+  ],
+  "laminas": [
+    "Las islas, la costa y las deudas del país",
+    "Guano, uso agrícola y trabajo de carga",
+    "El esquema comercial y las cuentas de la venta",
+    "Del ingreso público al reclamo que seguiremos"
+  ],
+  "vinyetas": [
+    {
+      "numero": 1,
+      "lamina": 1,
+      "titulo": "VOLVEMOS A LAS ISLAS",
+      "voz_propuesta": "Estamos en el Perú, hacia 1850. Volvemos a las islas de donde salía el guano.",
+      "encuadre_en_mesa": {
+        "x": 90,
+        "y": 260,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 0
+      },
+      "movimiento": "Abrir con mar y aves. Acercamiento al acantilado; la carga y el barco quedan disponibles como capas independientes.",
+      "beats": [
+        "Mar y aves abren el paisaje.",
+        "Acercar al acantilado, manteniendo algo de mar para situar su escala.",
+        "Descubrir muelle y barco antes de pasar al mapa."
+      ],
+      "sonido": "Mar y viento discretos; puente hacia el mapa.",
+      "base": "Q, pp. 164–169 · islas v3; ilustración conceptual",
+      "duracion_s": null
+    },
+    {
+      "numero": 2,
+      "lamina": 1,
+      "titulo": "DÓNDE ESTAMOS",
+      "voz_propuesta": "Las islas de Chincha están frente a la costa peruana. El mapa nos sitúa respecto de Lima y Pisco.",
+      "encuadre_en_mesa": {
+        "x": 1310,
+        "y": 260,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 0
+      },
+      "movimiento": "Abrir de la isla al mapa. Entrar Lima, Pisco y Chincha por turnos; detener el foco antes de seguir.",
+      "beats": [
+        "Abrir de la isla a la costa.",
+        "Lima, Pisco y Chincha entran por turno con sus llamadas.",
+        "Sostener la ubicación; el dibujo no presenta fronteras de 1850."
+      ],
+      "sonido": "El ambiente de mar baja mientras se sitúa la costa.",
+      "base": "Natural Earth 50m · costa física; ubicaciones orientativas",
+      "duracion_s": null
+    },
+    {
+      "numero": 3,
+      "lamina": 1,
+      "titulo": "EL PERÚ HACIA 1850",
+      "voz_propuesta": "Han pasado casi treinta años desde la proclamación de la independencia. Gobierna Ramón Castilla.",
+      "encuadre_en_mesa": {
+        "x": 90,
+        "y": 1210,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 0
+      },
+      "movimiento": "Recorrer de 1821 a 1850. Mantener el Estado y revelar las obligaciones pendientes sobre la mesa.",
+      "beats": [
+        "El Estado ya está en el espacio del país.",
+        "Recorrer 1821 a 1850 y situar el primer gobierno de Castilla, 1845–1851.",
+        "Bajar la atención hasta las carpetas que siguen pendientes."
+      ],
+      "sonido": "Papel y espacio de mesa; sin fanfarria institucional.",
+      "base": "Q, pp. 169–170 y contexto del guion · primer gobierno de Castilla",
+      "duracion_s": null
+    },
+    {
+      "numero": 4,
+      "lamina": 1,
+      "titulo": "YA EXISTÍAN DEUDAS",
+      "voz_propuesta": "Había comerciantes que prestaron al gobierno y propietarios que reclamaban por bienes usados para mantener tropas.",
+      "encuadre_en_mesa": {
+        "x": 1310,
+        "y": 1210,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 0
+      },
+      "movimiento": "Dar un ejemplo por vez. Mantener las dos situaciones con sus papeles y participantes identificados por función.",
+      "beats": [
+        "El comerciante y el préstamo muestran el primer ejemplo.",
+        "Aparecen ganado y cosechas para las tropas en el segundo.",
+        "Mantener ambos ejemplos: la deuda es anterior al nuevo ingreso."
+      ],
+      "sonido": "Un papel por ejemplo; no acumular efectos sobre la voz.",
+      "base": "Q, p. 169; B, pp. 20–21 · ejemplos, sin expediente inventado",
+      "duracion_s": null
+    },
+    {
+      "numero": 5,
+      "lamina": 2,
+      "titulo": "EL DEPÓSITO DE GUANO",
+      "voz_propuesta": "El guano es el excremento de las aves marinas acumulado en las islas.",
+      "encuadre_en_mesa": {
+        "x": 90,
+        "y": 2480,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 2220
+      },
+      "movimiento": "Acercar al depósito manteniendo visible el acantilado. Señalar aves y superficie por turnos, sin medir un espesor inventado.",
+      "beats": [
+        "Recuperar la roca que acabamos de ubicar.",
+        "Señalar aves y superficie del depósito, sin convertir el perfil en una medición.",
+        "La palabra guano nombra el recurso que seguirá en los sacos."
+      ],
+      "sonido": "Mar y aves a distancia, sin repetir un canto reconocible.",
+      "base": "Q, pp. 164–169; C, capítulo 1 · guano y extracción",
+      "duracion_s": null
+    },
+    {
+      "numero": 6,
+      "lamina": 2,
+      "titulo": "POR QUÉ TENÍA COMPRADORES",
+      "voz_propuesta": "Se utilizaba como abono para fertilizar los cultivos. Por eso había compradores dispuestos a pagar por él.",
+      "encuadre_en_mesa": {
+        "x": 1310,
+        "y": 2480,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 2220
+      },
+      "movimiento": "El saco sirve de continuidad hacia suelo y cultivos. Mostrar su uso; no dibujar una cantidad de cosecha supuesta.",
+      "beats": [
+        "El saco conserva el producto de la vista anterior.",
+        "El foco pasa al suelo y los cultivos para explicar su uso como abono.",
+        "Pausa con la relación visible; no animar un aumento ficticio de cosecha."
+      ],
+      "sonido": "Ambiente discreto y pausa para entender la relación.",
+      "base": "Q, pp. 164–169; C, capítulo 1 · uso agrícola",
+      "duracion_s": null
+    },
+    {
+      "numero": 7,
+      "lamina": 2,
+      "titulo": "EXTRAER Y TRANSPORTAR",
+      "voz_propuesta": "Ese recurso requería trabajo: extraerlo y trasladarlo hasta la carga. También hubo trabajo forzado.",
+      "encuadre_en_mesa": {
+        "x": 90,
+        "y": 3430,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 2220
+      },
+      "movimiento": "Preparar el agarre y acercar las manos al saco; sostener la carga. Brazos, manos y expresión cambian por beats, con el peso del objeto visible.",
+      "beats": [
+        "Las herramientas y el depósito sitúan la extracción.",
+        "El trabajador prepara el agarre; manos y saco establecen contacto antes de levantar.",
+        "Sostener la carga y la referencia al trabajo forzado sin atribuir condición jurídica por el aspecto de una figura."
+      ],
+      "sonido": "Herramienta o saco una sola vez si aporta al gesto; sin espectáculo del sufrimiento.",
+      "base": "B, prólogo de 1984, pp. 10–11; C, capítulo 1",
+      "duracion_s": null
+    },
+    {
+      "numero": 8,
+      "lamina": 2,
+      "titulo": "PREPARAR EL EMBARQUE",
+      "voz_propuesta": "Había que cargar el guano en los barcos que abastecían los mercados del extranjero.",
+      "encuadre_en_mesa": {
+        "x": 1310,
+        "y": 3430,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 2220
+      },
+      "movimiento": "Seguir el saco desde las manos hasta cubierta. Mantener el agarre hasta el apoyo; después soltar. Barco fijo mientras se carga.",
+      "beats": [
+        "La carga sigue en las manos sobre el muelle.",
+        "Seguir el saco hasta cubierta y mantener el contacto hasta apoyarlo.",
+        "Soltar después del apoyo; el barco permanece en Chincha durante el embarque."
+      ],
+      "sonido": "Un roce de saco o madera al cambiar el foco.",
+      "base": "C, capítulo 1 · embarque; reconstrucción esquemática de instalaciones",
+      "duracion_s": null
+    },
+    {
+      "numero": 9,
+      "lamina": 3,
+      "titulo": "CHINCHA Y GRAN BRETAÑA",
+      "voz_propuesta": "Uno de esos mercados era Gran Bretaña. El mismo producto conectaba las islas con sus compradores.",
+      "encuadre_en_mesa": {
+        "x": 90,
+        "y": 4700,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 4440
+      },
+      "movimiento": "Construir el esquema de izquierda a derecha: origen, guano y mercado. La flecha expresa la relación comercial.",
+      "beats": [
+        "Construir el origen con mar, acantilado, muelle y barco.",
+        "El saco testigo y la flecha presentan la relación comercial.",
+        "Revelar el mercado británico y mantener la composición completa."
+      ],
+      "sonido": "Mantener el ambiente previo; la flecha no necesita sonido de viaje.",
+      "base": "Q, pp. 164–168 · esquema comercial, sin itinerario marítimo",
+      "duracion_s": null
+    },
+    {
+      "numero": 10,
+      "lamina": 3,
+      "titulo": "EL MERCADO Y EL USO",
+      "voz_propuesta": "En el mercado británico se compraba guano para usarlo como abono.",
+      "encuadre_en_mesa": {
+        "x": 1310,
+        "y": 4700,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 4440
+      },
+      "movimiento": "Acercar al destino: mapa, almacén, sacos y cultivos. Mantener la carga como vínculo con la vista anterior.",
+      "beats": [
+        "Acercar al lado británico conservando el producto.",
+        "Distinguir mapa de localización, almacén y campos.",
+        "Señalar el uso agrícola; el mapa no fija una ciudad ni un puerto."
+      ],
+      "sonido": "La pausa deja leer mapa y uso agrícola.",
+      "base": "Q, pp. 164–168 · mercado británico; arquitectura conceptual",
+      "duracion_s": null
+    },
+    {
+      "numero": 11,
+      "lamina": 3,
+      "titulo": "UNA CASA ORGANIZA LA VENTA",
+      "voz_propuesta": "El Estado contrataba casas comerciales para vender el guano. Una de ellas fue Antony Gibbs & Sons.",
+      "encuadre_en_mesa": {
+        "x": 90,
+        "y": 5650,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 4440
+      },
+      "movimiento": "Del producto pasar al libro de cuentas y la ficha de la casa. El nombre entra antes de explicar su función.",
+      "beats": [
+        "Volver del cargamento a quien organiza la venta.",
+        "Nombrar Antony Gibbs & Sons en una ficha de función.",
+        "Abrir el libro para preparar la relación entre venta, gastos y recursos públicos."
+      ],
+      "sonido": "Hoja y pluma puntuales; no inventar una conversación.",
+      "base": "Q, pp. 167–168 · Gibbs como consignatario; oficina conceptual",
+      "duracion_s": null
+    },
+    {
+      "numero": 12,
+      "lamina": 3,
+      "titulo": "DEL PRECIO AL INGRESO PÚBLICO",
+      "voz_propuesta": "De la venta se descontaban gastos y comisiones. Una parte importante se convertía en ingresos del Estado.",
+      "encuadre_en_mesa": {
+        "x": 1310,
+        "y": 5650,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 4440
+      },
+      "movimiento": "Abrir el libro por conceptos: venta, gastos, comisión e ingreso público. Iluminar una relación a la vez, sin porcentajes supuestos.",
+      "beats": [
+        "El libro conserva el origen de los ingresos: la venta.",
+        "Señalar gastos y comisión como descuentos, sin porcentajes.",
+        "Dar foco al ingreso del Estado y sostener el esquema básico terminado."
+      ],
+      "sonido": "Paso de hoja al abrir conceptos; voz despejada.",
+      "base": "Q, pp. 164–168; C, capítulo 1 · esquema básico de cuentas",
+      "duracion_s": null
+    },
+    {
+      "numero": 13,
+      "lamina": 4,
+      "titulo": "RECURSOS Y OBLIGACIONES",
+      "voz_propuesta": "Con esos ingresos era más viable atender las obligaciones pendientes del Estado.",
+      "encuadre_en_mesa": {
+        "x": 90,
+        "y": 6920,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 6660
+      },
+      "movimiento": "Seguir la referencia al ingreso hasta el edificio y descubrir las carpetas. El recurso visual no representa un pago concreto.",
+      "beats": [
+        "Mantener el ingreso y seguir la relación hasta el Estado.",
+        "Descubrir las carpetas de obligaciones pendientes.",
+        "El recurso muestra capacidad de atenderlas; no representa un pago particular."
+      ],
+      "sonido": "Continuidad con la mesa y el Estado.",
+      "base": "Q, pp. 169–170 · recursos públicos y deuda interna",
+      "duracion_s": null
+    },
+    {
+      "numero": 14,
+      "lamina": 4,
+      "titulo": "QUIÉNES ESPERABAN COBRAR",
+      "voz_propuesta": "Por ejemplo, quien había prestado dinero o quien reclamaba por ganado y cosechas utilizados por tropas.",
+      "encuadre_en_mesa": {
+        "x": 1310,
+        "y": 6920,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 6660
+      },
+      "movimiento": "Recuperar los dos ejemplos. El comerciante toma el folio y lo entrega con un gesto breve; el reclamo sigue por sustentar.",
+      "beats": [
+        "Recuperar al comerciante y su obligación anterior.",
+        "Tomar el folio, sujetarlo por el borde y entregarlo con un gesto breve.",
+        "Mantener por sustentar y recuperar el segundo ejemplo de bienes utilizados para las tropas."
+      ],
+      "sonido": "Retomar el motivo de papel del primer ejemplo.",
+      "base": "Q, p. 169; B, pp. 20–21 · ejemplos didácticos",
+      "duracion_s": null
+    },
+    {
+      "numero": 15,
+      "lamina": 4,
+      "titulo": "ABRIR LA CARPETA",
+      "voz_propuesta": "Para cobrar, había que presentar un reclamo y los documentos que intentaban sustentarlo.",
+      "encuadre_en_mesa": {
+        "x": 90,
+        "y": 7870,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 6660
+      },
+      "movimiento": "Abrir la carpeta por partes: tapa, folios y papel con pestaña roja. Acercar a origen, reclamante y monto por sustentar.",
+      "beats": [
+        "Abrir la carpeta con tapa y folios, sin hacerla saltar como una sola pieza.",
+        "Extraer el papel con pestaña roja y acercar a origen, reclamante y monto.",
+        "Por sustentar y por revisar permanecen: no es todavía una deuda reconocida."
+      ],
+      "sonido": "Roce de carpeta y extracción del folio.",
+      "base": "Q, pp. 169–170 · reconstrucción editorial del reclamo",
+      "duracion_s": null
+    },
+    {
+      "numero": 16,
+      "lamina": 4,
+      "titulo": "EL PAPEL CONTINÚA",
+      "voz_propuesta": "Ahora vamos a seguir cómo ese reclamo podía convertirse en una deuda reconocida.",
+      "encuadre_en_mesa": {
+        "x": 1310,
+        "y": 7870,
+        "ancho": 1120,
+        "alto": 630
+      },
+      "mesa": {
+        "ancho": 2520,
+        "alto": 2140,
+        "y": 6660
+      },
+      "movimiento": "El mismo papel ocupa el encuadre. Mantener pestaña, escala y dirección para enlazar con la sección 2, El recorrido de un reclamo.",
+      "beats": [
+        "El mismo papel gana escala y el resto de la carpeta pierde foco.",
+        "Mantener pestaña, orientación y forma para que se reconozca el objeto.",
+        "Continuar a la sección 2 sin simular aquí una aprobación ni un pago."
+      ],
+      "sonido": "El sonido del papel continúa hacia la sección 2.",
+      "base": "Guion y Q, pp. 169–170 · continuidad con la sección 2",
+      "duracion_s": null
+    }
+  ],
+  "capas_nativo": [
+    {
+      "nombre": "02 · DÓNDE ESTAMOS",
+      "id": 6576
+    },
+    {
+      "nombre": "16 · EL PAPEL CONTINÚA",
+      "id": 6534
+    },
+    {
+      "nombre": "14 · QUIÉNES ESPERABAN COBRAR",
+      "id": 7628
+    },
+    {
+      "nombre": "11 · UNA CASA ORGANIZA LA VENTA",
+      "id": 7406
+    },
+    {
+      "nombre": "08 · PREPARAR EL EMBARQUE",
+      "id": 7079
+    },
+    {
+      "nombre": "07 · EXTRAER Y TRANSPORTAR",
+      "id": 6783
+    },
+    {
+      "nombre": "04 · YA EXISTÍAN DEUDAS",
+      "id": 6603
+    },
+    {
+      "nombre": "15 · ABRIR LA CARPETA",
+      "id": 6466
+    },
+    {
+      "nombre": "13 · RECURSOS Y OBLIGACIONES",
+      "id": 5587
+    },
+    {
+      "nombre": "12 · DEL PRECIO AL INGRESO PÚBLICO",
+      "id": 5535
+    },
+    {
+      "nombre": "10 · EL MERCADO Y EL USO",
+      "id": 5021
+    },
+    {
+      "nombre": "09 · CHINCHA Y GRAN BRETAÑA",
+      "id": 3593
+    },
+    {
+      "nombre": "06 · POR QUÉ TENÍA COMPRADORES",
+      "id": 3145
+    },
+    {
+      "nombre": "05 · EL DEPÓSITO DE GUANO",
+      "id": 2654
+    },
+    {
+      "nombre": "03 · EL PERÚ HACIA 1850",
+      "id": 1726
+    },
+    {
+      "nombre": "01 · VOLVEMOS A LAS ISLAS",
+      "id": 106
+    },
+    {
+      "nombre": "Layer 1",
+      "id": 1
+    }
+  ],
+  "revision_personajes": "../../personajes-1850/README.md",
+  "direccion_personajes": "../../../revision_personajes.md",
+  "escena_larga": {
+    "numero": 1,
+    "titulo": "Las islas y el país",
+    "desarrollo_continuidad": "../../escenas-largas/escena-01/secuencia.json",
+    "momentos": [
+      "1A",
+      "1B",
+      "1C",
+      "1D"
+    ],
+    "nota": "Esta sección corresponde a una escena larga. Sus bloques anteriores son recorridos internos; no escenas largas adicionales."
+  }
+}

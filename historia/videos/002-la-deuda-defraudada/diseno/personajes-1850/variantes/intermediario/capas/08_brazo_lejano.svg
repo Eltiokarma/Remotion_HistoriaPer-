@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="281.218" y1="458.287" x2="398.782" y2="426.785" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#514d3d"/>
+      <stop offset="0.48" stop-color="#7b7051"/>
+      <stop offset="1" stop-color="#958262"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_08_brazo_lejano" data-name="08_brazo_lejano">
+    <path d="M357 357 C339.667 355 327 362.667 319 380 L300 510 C313.333 526.667 330 532 350 526 L380 401 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M331 387 L315 492 M355 410 L338 510" fill="none" stroke="#b7b794" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

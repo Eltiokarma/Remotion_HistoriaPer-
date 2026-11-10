@@ -1,0 +1,18 @@
+{
+  "nombre": "Intermediario genérico",
+  "base": "../../comerciante/rig.json",
+  "canvas": {
+    "ancho": 900,
+    "alto": 1200
+  },
+  "sustituciones": {
+    "08_brazo_lejano": "capas/08_brazo_lejano.svg",
+    "09_antebrazo_lejano": "capas/09_antebrazo_lejano.svg",
+    "11_torso": "capas/11_torso.svg",
+    "12_brazo_cercano": "capas/12_brazo_cercano.svg",
+    "13_antebrazo_cercano": "capas/13_antebrazo_cercano.svg"
+  },
+  "estado": "Borrador pendiente de aprobación de Gerson",
+  "procedencia": "Cambio de color de cinco piezas del comerciante, realizado en VectorCraft mediante MCP. Se mantienen geometría, cuello, camisa, chaleco y cabeza corregida.",
+  "alcance": "Modelo de función; su uso con rótulo Domingo Elías es una representación del relato, no un retrato ni prueba de su vestuario."
+}

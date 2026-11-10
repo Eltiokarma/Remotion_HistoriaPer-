@@ -1,0 +1,41 @@
+{
+  "fecha": "2026-11-10",
+  "laminas_revisadas": 4,
+  "encuadres": 16,
+  "capas_kit": 18,
+  "svg_del_kit_sin_raster": true,
+  "svg_del_kit_viewBox_comun": [
+    0,
+    0,
+    1920,
+    1080
+  ],
+  "recomposicion_estatica": {
+    "canvas": [
+      1920,
+      1080
+    ],
+    "parts": 18,
+    "pixels": 2073600,
+    "different": 3195,
+    "significant": 2007,
+    "maxDifference": 52,
+    "pixelIdentical": false
+  },
+  "animacion_verificada": false,
+  "render_video": false,
+  "personajes": {
+    "revision": "2026-11-10",
+    "vinyetas": [
+      4,
+      7,
+      8,
+      11,
+      14
+    ],
+    "kit": "../../personajes-1850/manifest.json",
+    "animacion_probada": false,
+    "anatomia_corregida": true,
+    "instancias_corregidas": 6
+  }
+}

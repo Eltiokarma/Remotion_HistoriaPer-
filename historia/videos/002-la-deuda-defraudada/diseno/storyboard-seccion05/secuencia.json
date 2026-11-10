@@ -1,0 +1,424 @@
+{
+  "titulo": "Del expediente al método de Quiroz",
+  "seccion": 5,
+  "fecha_revision": "2026-11-10",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "herramienta": "VectorCraft mediante MCP",
+  "medidas": {
+    "lamina": [
+      2520,
+      2140
+    ],
+    "encuadre": [
+      1120,
+      630
+    ],
+    "destinoRemotion": [
+      1920,
+      1080
+    ],
+    "factorEncuadreARemotion": 1.7142857142857142
+  },
+  "proxima_seccion": "Episodio 003: fuentes, decisiones y límites; resultados generales en 004",
+  "vinyetas": [
+    {
+      "id": "s05-v01",
+      "numero": 1,
+      "titulo": "VOLVEMOS A LAS ISLAS",
+      "voz": "Empezamos con el guano y los ingresos del Estado. Volvamos a esos recursos para reunir lo que hemos visto.",
+      "camara_accion": "Regresar a Chincha detallada; recorrer hacia el Estado. El recuerdo prepara el cierre, sin repetir la extracción.",
+      "base": "Q, pp. 164–170 · retorno al origen de los recursos públicos",
+      "lamina": 1,
+      "encuadre_documento": [
+        90,
+        260,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 6709,
+          "nombre": "01 · Chincha detallada · retorno"
+        },
+        {
+          "id": 9885,
+          "nombre": "01 · Rótulos de entrada y cámara"
+        },
+        {
+          "id": 80,
+          "nombre": "01 · VOLVEMOS A LAS ISLAS"
+        }
+      ]
+    },
+    {
+      "id": "s05-v02",
+      "numero": 2,
+      "titulo": "LA PROMESA DEL CRÉDITO PÚBLICO",
+      "voz": "Reconocer las deudas debía ayudar a recuperar la confianza en el crédito público.",
+      "camara_accion": "Recuperar el reclamo y el vale. Señalar primero la finalidad del reconocimiento; sostener el propósito escrito.",
+      "base": "Q, p. 169 · finalidad declarada de la consolidación",
+      "lamina": 1,
+      "encuadre_documento": [
+        1310,
+        260,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 2437,
+          "nombre": "02 · LA PROMESA DEL CRÉDITO PÚBLICO"
+        }
+      ]
+    },
+    {
+      "id": "s05-v03",
+      "numero": 3,
+      "titulo": "QUIÉNES QUEDARON FUERA",
+      "voz": "Pero muchos reclamantes originales y pequeños inversionistas quedaron fuera. Los beneficios se concentraron.",
+      "camara_accion": "Separar posiciones con fichas de función. Mantener el Estado y los títulos; evitar porcentajes o identidades inventados.",
+      "base": "Q, pp. 172–173 · exclusión y concentración de beneficios",
+      "lamina": 1,
+      "encuadre_documento": [
+        90,
+        1210,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s05_v03_comerciante_atencion",
+          "tipo": "actor",
+          "funcion": "comerciante",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-comerciante-atencion.svg",
+          "omitido": "Sustituido por fichas de grupos, para no identificar a Novoa ni a otro participante con los excluidos.",
+          "id_nativo": null,
+          "capa_nativa": 2489,
+          "rectangulo": null,
+          "recorte_original": [
+            285,
+            95,
+            370,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s05_v03_reclamante_atencion",
+          "tipo": "actor",
+          "funcion": "reclamante",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-reclamante-atencion.svg",
+          "omitido": "Sustituido por fichas de grupos, para no identificar a Novoa ni a otro participante con los excluidos.",
+          "id_nativo": null,
+          "capa_nativa": 2489,
+          "rectangulo": null,
+          "recorte_original": [
+            260,
+            95,
+            410,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 2489,
+          "nombre": "03 · QUIÉNES QUEDARON FUERA"
+        }
+      ]
+    },
+    {
+      "id": "s05-v04",
+      "numero": 4,
+      "titulo": "EL RECORRIDO COMPLETO",
+      "voz": "Ahora podemos unir los ingresos, los reclamos, los títulos y la investigación que siguió sus irregularidades.",
+      "camara_accion": "Recorrer los objetos con acercamientos. Abrir al final y dejar el circuito completo quieto; pausa sin voz.",
+      "base": "Q, pp. 169–185 · recapitulación editorial de relaciones ya explicadas",
+      "lamina": 1,
+      "encuadre_documento": [
+        1310,
+        1210,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 8297,
+          "nombre": "04 · Chincha detallada · recapitulación"
+        },
+        {
+          "id": 2553,
+          "nombre": "04 · EL RECORRIDO COMPLETO"
+        }
+      ]
+    },
+    {
+      "id": "s05-v05",
+      "numero": 5,
+      "titulo": "CAMBIAMOS A LA MESA DEL HISTORIADOR",
+      "voz": "Muchos años después, Quiroz reconstruyó ese negocio con documentos. Volvamos al libro con el que empezamos esta serie.",
+      "camara_accion": "Rotular el cambio de época. Recuperar libro, fichero y pruebas aprobados; la mesa es una reconstrucción editorial.",
+      "base": "Q, p. 183 y pp. 535–536 · cambio de época y composición editorial",
+      "lamina": 2,
+      "encuadre_documento": [
+        90,
+        2480,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 5118,
+          "nombre": "05 · CAMBIAMOS A LA MESA DEL HISTORIADOR"
+        }
+      ]
+    },
+    {
+      "id": "s05-v06",
+      "numero": 6,
+      "titulo": "PAPELES QUE PERMITEN CONTRASTAR",
+      "voz": "Por ejemplo, contabilidad del Estado, documentos judiciales y correspondencia diplomática. Quiroz trabajó con fuentes de distintos tipos.",
+      "camara_accion": "Desplegar tres familias de fuentes y señalar cada una por turno. Los papeles contienen categorías, sin fingir originales.",
+      "base": "Q, p. 536 · ejemplos de fuentes; no es una lista completa",
+      "lamina": 2,
+      "encuadre_documento": [
+        1310,
+        2480,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "mano_s05_v06_funcionario_apoyo_derecha",
+          "tipo": "mano",
+          "funcion": "funcionario",
+          "estado": "apoyo",
+          "referencia": "../personajes-1850/detalles-manos/detalle-funcionario-apoyo.svg",
+          "omitido": null,
+          "id_nativo": 10062,
+          "capa_nativa": 6178,
+          "rectangulo": {
+            "height": 76.71582856257692,
+            "width": 151.15775573604128,
+            "x": 1318.0000025719423,
+            "y": 2971.120863122809
+          },
+          "recorte_original": null,
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 6178,
+          "nombre": "06 · PAPELES QUE PERMITEN CONTRASTAR"
+        }
+      ]
+    },
+    {
+      "id": "s05-v07",
+      "numero": 7,
+      "titulo": "CONSERVAR LO PROBABLE",
+      "voz": "En Novoa distinguimos lo aprobado de lo que probablemente recibió. Esa cautela debe mantenerse al reconstruir el caso.",
+      "camara_accion": "Recuperar solo las dos cifras necesarias. Encender probablemente junto al monto; no volver a narrar todo el expediente.",
+      "base": "Q, p. 171 · 948.500 aprobados y alrededor de 180.000 probablemente recibidos, en vales",
+      "lamina": 2,
+      "encuadre_documento": [
+        90,
+        3430,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 6247,
+          "nombre": "07 · CONSERVAR LO PROBABLE"
+        }
+      ]
+    },
+    {
+      "id": "s05-v08",
+      "numero": 8,
+      "titulo": "DEL EXPEDIENTE A UNA CUENTA MÁS AMPLIA",
+      "voz": "Seguir un expediente era un paso. Quiroz quiso estimar costos a lo largo de distintos periodos de la historia.",
+      "camara_accion": "Conservar el expediente y abrir hacia el apéndice. La escala se amplía; no convertir los montos del caso en costos totales.",
+      "base": "Q, pp. 535–536 · alcance de la estimación histórica",
+      "lamina": 2,
+      "encuadre_documento": [
+        1310,
+        3430,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 6295,
+          "nombre": "08 · DEL EXPEDIENTE A UNA CUENTA MÁS AMPLIA"
+        }
+      ]
+    },
+    {
+      "id": "s05-v09",
+      "numero": 9,
+      "titulo": "UNA ESTIMACIÓN REVISABLE",
+      "voz": "Quiroz presenta su cálculo como aproximado y provisional, sujeto a revisión.",
+      "camara_accion": "Acercar a las cautelas del apéndice, resumidas sin comillas. Cámara quieta para leer; no tratarlas como letra pequeña.",
+      "base": "Q, p. 535 · resumen de las cautelas del autor",
+      "lamina": 3,
+      "encuadre_documento": [
+        90,
+        4700,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 6332,
+          "nombre": "09 · UNA ESTIMACIÓN REVISABLE"
+        }
+      ]
+    },
+    {
+      "id": "s05-v10",
+      "numero": 10,
+      "titulo": "UN PROBLEMA DE HUELLAS",
+      "voz": "Muchas de esas operaciones se hacían para no dejar huellas. Por eso, seguir documentos exige cuidado.",
+      "camara_accion": "Mantener fichas de fuentes separadas y relacionarlas sin inventar un registro completo. La voz deja espacio al contraste visual.",
+      "base": "Q, p. 538 · operaciones encubiertas y cuidado en el uso de fuentes",
+      "lamina": 3,
+      "encuadre_documento": [
+        1310,
+        4700,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 6610,
+          "nombre": "10 · UN PROBLEMA DE HUELLAS"
+        }
+      ]
+    },
+    {
+      "id": "s05-v11",
+      "numero": 11,
+      "titulo": "LA PREGUNTA QUE SIGUE",
+      "voz": "Para hacer esa cuenta hay que decidir qué documentos sirven, qué puede compararse y hasta dónde llega la evidencia.",
+      "camara_accion": "La mesa pasa a la pizarra verde. El título del próximo episodio entra completo; sostener la pregunta sin resolverla aquí.",
+      "base": "Puente editorial basado en Q, pp. 535–538 · episodio 003 del plan de la serie",
+      "lamina": 3,
+      "encuadre_documento": [
+        90,
+        5650,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 6673,
+          "nombre": "11 · LA PREGUNTA QUE SIGUE"
+        }
+      ]
+    },
+    {
+      "id": "s05-v12",
+      "numero": 12,
+      "titulo": "EL ÍNDICE ABRE EL EPISODIO TRES",
+      "voz": "Siguiente episodio: ¿Se puede medir la corrupción? Veremos sus fuentes, sus decisiones y los límites de la cuenta.",
+      "camara_accion": "Abrir el índice de la serie: 002 queda como recorrido terminado y 003 recibe el foco. El tema del canal acompaña el cierre.",
+      "base": "Plan de la serie · el método va en 003; los resultados generales, en 004",
+      "lamina": 3,
+      "encuadre_documento": [
+        1310,
+        5650,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 6683,
+          "nombre": "12 · EL ÍNDICE ABRE EL EPISODIO TRES"
+        }
+      ]
+    }
+  ],
+  "recorridos_internos": [
+    {
+      "v": [
+        1,
+        4
+      ],
+      "nombre": "Regreso al conjunto",
+      "pasos": [
+        "Recuperar Chincha detallada y el Estado, sin repetir la extracción.",
+        "Mantener visible la finalidad declarada del crédito público.",
+        "Contraponer fichas de grupos excluidos y títulos acumulados; la ilustración no cuenta personas ni porcentajes.",
+        "Recorrer una vez guano, Estado, reclamo, vale e investigación y sostener el conjunto."
+      ]
+    },
+    {
+      "v": [
+        5,
+        8
+      ],
+      "nombre": "Cambio de época y contraste",
+      "pasos": [
+        "Rotular muchos años después y recuperar libro, fichero y pruebas.",
+        "Desplegar tres familias de fuentes y dirigir el foco por turnos.",
+        "Volver solo a las dos cantidades de Novoa y su grado de certeza.",
+        "Abrir hacia el apéndice sin convertir montos de vales en costos de corrupción."
+      ]
+    },
+    {
+      "v": [
+        9,
+        12
+      ],
+      "nombre": "Cautelas y siguiente episodio",
+      "pasos": [
+        "Sostener aproximado, provisional y sujeto a revisión.",
+        "Contrastar huellas sin inventar una fuente estadística completa.",
+        "Abrir la pregunta del episodio 003 sin resolverla en este cierre.",
+        "Iluminar 003 en el índice; mantener los resultados generales para 004."
+      ]
+    }
+  ],
+  "escena_larga": {
+    "numero": 5,
+    "titulo": "Del expediente al método de Quiroz",
+    "desarrollo_continuidad": "../escenas-largas/escena-05/secuencia.json",
+    "momentos": [
+      "5A",
+      "5B",
+      "5C"
+    ],
+    "nota": "Esta sección corresponde a una escena larga. Sus bloques anteriores son recorridos internos; no escenas largas adicionales."
+  }
+}

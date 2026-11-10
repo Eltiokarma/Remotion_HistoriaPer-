@@ -1,0 +1,136 @@
+{
+  "titulo": "Del expediente al método de Quiroz",
+  "episodio": "002-la-deuda-defraudada",
+  "seccion": 5,
+  "fecha": "2026-11-09",
+  "herramienta": "VectorCraft mediante MCP",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "laminas": 3,
+  "vinyetas": 12,
+  "artboard": {
+    "ancho": 2520,
+    "alto": 2140
+  },
+  "fuente": "Quiroz, Historia de la corrupción en el Perú, 2013, pp. 169–185 y 535–538",
+  "recursos_reutilizados": [
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/islas-guaneras-v3.svg",
+      "sha256": "56fded3008c1b0a8e178de6b9f400993fd64497d995917a1bb234c67e497032f",
+      "uso": "Recuperado como vector incrustado mediante MCP; originales intactos"
+    },
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/edificio-estado-video01.svg",
+      "sha256": "d310fe95427b4693203bac046018c44c5fd742c90aa3d3f654f2cea9692e42a7",
+      "uso": "Recuperado como vector incrustado mediante MCP; originales intactos"
+    },
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/tanda04-fichero.svg",
+      "sha256": "21477428be25f8e55cc93fac36a16b975cc43fe1988e9611fa56c9f519efcb62",
+      "uso": "Recuperado como vector incrustado mediante MCP; originales intactos"
+    },
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/tanda03-libro.svg",
+      "sha256": "056c57fadb0fdae32897d35dd62d97b403c2eee3b1eb18ff21a8aff643c72ffe",
+      "uso": "Recuperado como vector incrustado mediante MCP; originales intactos"
+    },
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/tanda03-pruebas.svg",
+      "sha256": "af48201bcdc65069b4e472be8f68ee3fc29ee3a3d1b2adbc25baae530f4cca6b",
+      "uso": "Recuperado como vector incrustado mediante MCP; originales intactos"
+    }
+  ],
+  "archivos": [
+    {
+      "archivo": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "archivo": "ANIMACION.md",
+      "bytes": 4301,
+      "sha256": "fc4990a1f5640b1d4c8b7912d5f40ba4f913c485b6ff6ecb599d6c886bb03b78"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 14456,
+      "sha256": "c3442f5ea1674c705480481d3d04124194f5a9152ca0bfb8510ad7dd3bc21455"
+    },
+    {
+      "archivo": "recursos/chincha-retorno.png",
+      "bytes": 151455,
+      "sha256": "afd0f5efb13d8e5278c27fbf2f945fc06b382b82773d0c7607807046bdd23b42"
+    },
+    {
+      "archivo": "recursos/chincha-retorno.svg",
+      "bytes": 77390,
+      "sha256": "bb2f785fca7e4276381b937030690fdb0f4dab39e3c83e10765aab5416374c92"
+    },
+    {
+      "archivo": "recursos/chincha-retorno.vectorcraft",
+      "bytes": 51306,
+      "sha256": "b79da73486ce2997907f9bf6c6699de3d708dc6b647028dbc743a8ea7d8921c0"
+    },
+    {
+      "archivo": "secuencia.json",
+      "bytes": 13846,
+      "sha256": "a666425a654c427d391ec8d7307e5cb73747c22a76e103174e6ca7d5e689eb2b"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina1.png",
+      "bytes": 442306,
+      "sha256": "ab2e57f8a9091d874e2b3492b7a17b11cf0b00f66974a7f385dfbfe85c829af0"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina1.svg",
+      "bytes": 2718568,
+      "sha256": "05223ed79ce0a091aded7bdfb15925e962e5d6115e9c3eced454a732498d61d4"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina2.png",
+      "bytes": 385315,
+      "sha256": "6baa01000606b09b5c9aa580855fec657970463620c1fb8aca4165656007876c"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina2.svg",
+      "bytes": 3081788,
+      "sha256": "b60e4d65a02d39442138ae5de73df63dde90bc3de96236737acb1fa0f877351a"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina3.png",
+      "bytes": 332377,
+      "sha256": "5a14d0537bd324d04515d747b83602a51da546d9bd87c80af41050c8ca2ee9c5"
+    },
+    {
+      "archivo": "storyboard-02-seccion05-lamina3.svg",
+      "bytes": 2190542,
+      "sha256": "b90fb2a869a31358278fbb4ea95b80051d7914ee6027b083937e7c5b7eb1228f"
+    },
+    {
+      "archivo": "storyboard-02-seccion05.pdf",
+      "bytes": 4371280,
+      "sha256": "6fee34df117183f967cffd67da88111ff2c60662975f4958c9e8e245fd7fadf6"
+    },
+    {
+      "archivo": "storyboard-02-seccion05.vectorcraft",
+      "bytes": 665626,
+      "sha256": "704f33373f0203c5c521ed797a9885a40596bf91c6604e7ca0b69a9dd34e40b0"
+    },
+    {
+      "archivo": "validacion.json",
+      "bytes": 793,
+      "sha256": "fa8ad3c0bad0754532fc4d449ddcfdbf05bc15fd0abb73d0671be82124bfb082"
+    }
+  ],
+  "fecha_revision": "2026-11-10",
+  "revision": "Continuidad, personajes de época y rostros corregidos",
+  "conteo_revision": {
+    "figuras": 0,
+    "manos": 1,
+    "retirados": 2,
+    "laminas": 3,
+    "vinyetas": 12
+  },
+  "video_generado": false,
+  "fecha_revision_continuidad": "2026-11-10",
+  "desarrollo_continuidad": "../escenas-largas/escena-05/secuencia.json"
+}

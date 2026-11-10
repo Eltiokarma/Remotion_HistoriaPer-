@@ -1,0 +1,757 @@
+{
+  "personaje": "Reclamante",
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "canvas": {
+    "ancho": 900,
+    "alto": 1200,
+    "viewBox": [
+      0,
+      0,
+      900,
+      1200
+    ],
+    "y": "hacia abajo",
+    "unidades": "px"
+  },
+  "contenedores": {
+    "escena": "Colocación del actor y su sombra",
+    "raiz": {
+      "parent": "escena",
+      "pivote": [
+        450,
+        650
+      ],
+      "uso": "Traslación y pose general; mantener los pies apoyados"
+    }
+  },
+  "capas": [
+    {
+      "id": "00_sombra",
+      "archivo": "capas/00_sombra.svg",
+      "grupo_svg": "_00_sombra",
+      "id_capa_vectorcraft": 2,
+      "orden_fondo_a_frente": 0,
+      "parent": "escena",
+      "pivote": [
+        450,
+        1095
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 31,
+        "width": 348,
+        "x": 286,
+        "y": 1081
+      }
+    },
+    {
+      "id": "01_muslo_lejano",
+      "archivo": "capas/01_muslo_lejano.svg",
+      "grupo_svg": "_01_muslo_lejano",
+      "id_capa_vectorcraft": 4,
+      "orden_fondo_a_frente": 1,
+      "parent": "raiz",
+      "pivote": [
+        406,
+        653
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 230.59523809523807,
+        "width": 85,
+        "x": 357,
+        "y": 635
+      }
+    },
+    {
+      "id": "02_pantorrilla_lejana",
+      "archivo": "capas/02_pantorrilla_lejana.svg",
+      "grupo_svg": "_02_pantorrilla_lejana",
+      "id_capa_vectorcraft": 7,
+      "orden_fondo_a_frente": 2,
+      "parent": "01_muslo_lejano",
+      "pivote": [
+        400,
+        844
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 218.57142857142856,
+        "width": 76,
+        "x": 358,
+        "y": 822.4285714285714
+      }
+    },
+    {
+      "id": "03_zapato_lejano",
+      "archivo": "capas/03_zapato_lejano.svg",
+      "grupo_svg": "_03_zapato_lejano",
+      "id_capa_vectorcraft": 11,
+      "orden_fondo_a_frente": 3,
+      "parent": "02_pantorrilla_lejana",
+      "pivote": [
+        395,
+        1033
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 50,
+        "width": 105,
+        "x": 326,
+        "y": 1026
+      }
+    },
+    {
+      "id": "04_muslo_cercano",
+      "archivo": "capas/04_muslo_cercano.svg",
+      "grupo_svg": "_04_muslo_cercano",
+      "id_capa_vectorcraft": 15,
+      "orden_fondo_a_frente": 4,
+      "parent": "raiz",
+      "pivote": [
+        484,
+        653
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 235.28125,
+        "width": 103,
+        "x": 439,
+        "y": 634
+      }
+    },
+    {
+      "id": "05_pantorrilla_cercana",
+      "archivo": "capas/05_pantorrilla_cercana.svg",
+      "grupo_svg": "_05_pantorrilla_cercana",
+      "id_capa_vectorcraft": 18,
+      "orden_fondo_a_frente": 5,
+      "parent": "04_muslo_cercano",
+      "pivote": [
+        506,
+        849
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 220.81081081081095,
+        "width": 87,
+        "x": 465,
+        "y": 825.189189189189
+      }
+    },
+    {
+      "id": "06_zapato_cercano",
+      "archivo": "capas/06_zapato_cercano.svg",
+      "grupo_svg": "_06_zapato_cercano",
+      "id_capa_vectorcraft": 22,
+      "orden_fondo_a_frente": 6,
+      "parent": "05_pantorrilla_cercana",
+      "pivote": [
+        519,
+        1036
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 64,
+        "width": 124.54545454545462,
+        "x": 480,
+        "y": 1026
+      }
+    },
+    {
+      "id": "07_falda",
+      "archivo": "capas/07_falda.svg",
+      "grupo_svg": "_07_falda",
+      "id_capa_vectorcraft": 26,
+      "orden_fondo_a_frente": 7,
+      "parent": "raiz",
+      "pivote": [
+        450,
+        643
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 482.08333333333326,
+        "width": 376,
+        "x": 273,
+        "y": 609
+      }
+    },
+    {
+      "id": "08_brazo_lejano",
+      "archivo": "capas/08_brazo_lejano.svg",
+      "grupo_svg": "_08_brazo_lejano",
+      "id_capa_vectorcraft": 38,
+      "orden_fondo_a_frente": 8,
+      "parent": "11_torso",
+      "pivote": [
+        353,
+        389
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 171.6926977687628,
+        "width": 80,
+        "x": 300,
+        "y": 356.6896551724138
+      }
+    },
+    {
+      "id": "09_antebrazo_lejano",
+      "archivo": "capas/09_antebrazo_lejano.svg",
+      "grupo_svg": "_09_antebrazo_lejano",
+      "id_capa_vectorcraft": 41,
+      "orden_fondo_a_frente": 9,
+      "parent": "08_brazo_lejano",
+      "pivote": [
+        328,
+        516
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 182.17241379310337,
+        "width": 55,
+        "x": 301,
+        "y": 496.8275862068966
+      }
+    },
+    {
+      "id": "10_mano_lejana",
+      "archivo": "capas/10_mano_lejana.svg",
+      "grupo_svg": "_10_mano_lejana",
+      "id_capa_vectorcraft": 45,
+      "orden_fondo_a_frente": 10,
+      "parent": "09_antebrazo_lejano",
+      "pivote": [
+        337,
+        667
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 81.82666311070443,
+        "width": 60.89999999999998,
+        "x": 304.1,
+        "y": 663.6177813337399
+      }
+    },
+    {
+      "id": "11_torso",
+      "archivo": "capas/11_torso.svg",
+      "grupo_svg": "_11_torso",
+      "id_capa_vectorcraft": 49,
+      "orden_fondo_a_frente": 11,
+      "parent": "raiz",
+      "pivote": [
+        451,
+        646
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 314.3738417676408,
+        "width": 186,
+        "x": 350,
+        "y": 337.21311475409834
+      }
+    },
+    {
+      "id": "12_brazo_cercano",
+      "archivo": "capas/12_brazo_cercano.svg",
+      "grupo_svg": "_12_brazo_cercano",
+      "id_capa_vectorcraft": 59,
+      "orden_fondo_a_frente": 12,
+      "parent": "11_torso",
+      "pivote": [
+        526,
+        391
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 180.9032258064516,
+        "width": 82,
+        "x": 512,
+        "y": 353
+      }
+    },
+    {
+      "id": "13_antebrazo_cercano",
+      "archivo": "capas/13_antebrazo_cercano.svg",
+      "grupo_svg": "_13_antebrazo_cercano",
+      "id_capa_vectorcraft": 62,
+      "orden_fondo_a_frente": 13,
+      "parent": "12_brazo_cercano",
+      "pivote": [
+        572,
+        519
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 175.1428571428571,
+        "width": 85,
+        "x": 545,
+        "y": 504.8571428571429
+      }
+    },
+    {
+      "id": "14_mano_cercana",
+      "archivo": "capas/14_mano_cercana.svg",
+      "grupo_svg": "_14_mano_cercana",
+      "id_capa_vectorcraft": 66,
+      "orden_fondo_a_frente": 14,
+      "parent": "13_antebrazo_cercano",
+      "pivote": [
+        608,
+        669
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 81.82666311070454,
+        "width": 60.899999999999864,
+        "x": 573.1000000000001,
+        "y": 666.6177813337399
+      }
+    },
+    {
+      "id": "15_chal",
+      "archivo": "capas/15_chal.svg",
+      "grupo_svg": "_15_chal",
+      "id_capa_vectorcraft": 70,
+      "orden_fondo_a_frente": 15,
+      "parent": "11_torso",
+      "pivote": [
+        420,
+        374
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 302,
+        "width": 107,
+        "x": 328,
+        "y": 341
+      }
+    },
+    {
+      "id": "18_cuello",
+      "archivo": "capas/18_cuello.svg",
+      "grupo_svg": "_18_cuello",
+      "id_capa_vectorcraft": 80,
+      "orden_fondo_a_frente": 16,
+      "parent": "11_torso",
+      "pivote": [
+        442,
+        349
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 65.2941176470589,
+        "width": 77,
+        "x": 400,
+        "y": 299
+      }
+    },
+    {
+      "id": "20_cabeza",
+      "archivo": "capas/20_cabeza.svg",
+      "grupo_svg": "_20_cabeza",
+      "id_capa_vectorcraft": 83,
+      "orden_fondo_a_frente": 17,
+      "parent": "11_torso",
+      "pivote": [
+        441,
+        334
+      ],
+      "visible_por_defecto": true,
+      "familia": "pieza",
+      "bounds": {
+        "height": 220.1228070175439,
+        "width": 161.85046046061188,
+        "x": 329,
+        "y": 109.87719298245612
+      },
+      "grupos_internos": [
+        "oreja_visible",
+        "rostro_base",
+        "nariz_central",
+        "cabello",
+        "cabello_recogido_trasero"
+      ]
+    },
+    {
+      "id": "21_ojos_abiertos",
+      "archivo": "capas/21_ojos_abiertos.svg",
+      "grupo_svg": "_21_ojos_abiertos",
+      "id_capa_vectorcraft": 94,
+      "orden_fondo_a_frente": 18,
+      "parent": "20_cabeza",
+      "pivote": [
+        436,
+        235
+      ],
+      "visible_por_defecto": true,
+      "familia": "ojos",
+      "bounds": {
+        "height": 16.777777777777715,
+        "width": 85,
+        "x": 387,
+        "y": 219
+      }
+    },
+    {
+      "id": "22_ojos_entornados",
+      "archivo": "capas/22_ojos_entornados.svg",
+      "grupo_svg": "_22_ojos_entornados",
+      "id_capa_vectorcraft": 100,
+      "orden_fondo_a_frente": 19,
+      "parent": "20_cabeza",
+      "pivote": [
+        436,
+        235
+      ],
+      "visible_por_defecto": false,
+      "familia": "ojos",
+      "bounds": {
+        "height": 10.277777777777743,
+        "width": 84,
+        "x": 388,
+        "y": 222.5
+      }
+    },
+    {
+      "id": "23_ojos_cerrados",
+      "archivo": "capas/23_ojos_cerrados.svg",
+      "grupo_svg": "_23_ojos_cerrados",
+      "id_capa_vectorcraft": 103,
+      "orden_fondo_a_frente": 20,
+      "parent": "20_cabeza",
+      "pivote": [
+        436,
+        235
+      ],
+      "visible_por_defecto": false,
+      "familia": "ojos",
+      "bounds": {
+        "height": 5,
+        "width": 84,
+        "x": 388,
+        "y": 225
+      }
+    },
+    {
+      "id": "24_cejas_neutras",
+      "archivo": "capas/24_cejas_neutras.svg",
+      "grupo_svg": "_24_cejas_neutras",
+      "id_capa_vectorcraft": 105,
+      "orden_fondo_a_frente": 21,
+      "parent": "20_cabeza",
+      "pivote": [
+        436,
+        209
+      ],
+      "visible_por_defecto": true,
+      "familia": "cejas",
+      "bounds": {
+        "height": 4.083333333333343,
+        "width": 87,
+        "x": 386,
+        "y": 206.91666666666666
+      }
+    },
+    {
+      "id": "25_cejas_atencion",
+      "archivo": "capas/25_cejas_atencion.svg",
+      "grupo_svg": "_25_cejas_atencion",
+      "id_capa_vectorcraft": 107,
+      "orden_fondo_a_frente": 22,
+      "parent": "20_cabeza",
+      "pivote": [
+        436,
+        209
+      ],
+      "visible_por_defecto": false,
+      "familia": "cejas",
+      "bounds": {
+        "height": 6,
+        "width": 87,
+        "x": 386,
+        "y": 208
+      }
+    },
+    {
+      "id": "26_cejas_duda",
+      "archivo": "capas/26_cejas_duda.svg",
+      "grupo_svg": "_26_cejas_duda",
+      "id_capa_vectorcraft": 109,
+      "orden_fondo_a_frente": 23,
+      "parent": "20_cabeza",
+      "pivote": [
+        436,
+        209
+      ],
+      "visible_por_defecto": false,
+      "familia": "cejas",
+      "bounds": {
+        "height": 11,
+        "width": 87,
+        "x": 386,
+        "y": 201
+      }
+    },
+    {
+      "id": "27_cejas_sorpresa",
+      "archivo": "capas/27_cejas_sorpresa.svg",
+      "grupo_svg": "_27_cejas_sorpresa",
+      "id_capa_vectorcraft": 111,
+      "orden_fondo_a_frente": 24,
+      "parent": "20_cabeza",
+      "pivote": [
+        436,
+        209
+      ],
+      "visible_por_defecto": false,
+      "familia": "cejas",
+      "bounds": {
+        "height": 4.764705882352956,
+        "width": 86,
+        "x": 387,
+        "y": 194.23529411764704
+      }
+    },
+    {
+      "id": "28_boca_reposo",
+      "archivo": "capas/28_boca_reposo.svg",
+      "grupo_svg": "_28_boca_reposo",
+      "id_capa_vectorcraft": 113,
+      "orden_fondo_a_frente": 25,
+      "parent": "20_cabeza",
+      "pivote": [
+        439,
+        290
+      ],
+      "visible_por_defecto": true,
+      "familia": "boca",
+      "bounds": {
+        "height": 14.777777777777828,
+        "width": 37,
+        "x": 421,
+        "y": 286
+      }
+    },
+    {
+      "id": "29_boca_inquieta",
+      "archivo": "capas/29_boca_inquieta.svg",
+      "grupo_svg": "_29_boca_inquieta",
+      "id_capa_vectorcraft": 116,
+      "orden_fondo_a_frente": 26,
+      "parent": "20_cabeza",
+      "pivote": [
+        439,
+        290
+      ],
+      "visible_por_defecto": false,
+      "familia": "boca",
+      "bounds": {
+        "height": 13.545454545454561,
+        "width": 37,
+        "x": 421,
+        "y": 286.45454545454544
+      }
+    },
+    {
+      "id": "30_boca_esfuerzo",
+      "archivo": "capas/30_boca_esfuerzo.svg",
+      "grupo_svg": "_30_boca_esfuerzo",
+      "id_capa_vectorcraft": 119,
+      "orden_fondo_a_frente": 27,
+      "parent": "20_cabeza",
+      "pivote": [
+        439,
+        290
+      ],
+      "visible_por_defecto": false,
+      "familia": "boca",
+      "bounds": {
+        "height": 12.902777777777715,
+        "width": 34,
+        "x": 423,
+        "y": 284.22222222222223
+      }
+    },
+    {
+      "id": "31_boca_A",
+      "archivo": "capas/31_boca_A.svg",
+      "grupo_svg": "_31_boca_A",
+      "id_capa_vectorcraft": 122,
+      "orden_fondo_a_frente": 28,
+      "parent": "20_cabeza",
+      "pivote": [
+        439,
+        290
+      ],
+      "visible_por_defecto": false,
+      "familia": "boca",
+      "bounds": {
+        "height": 25.77777777777777,
+        "width": 27.842105263157805,
+        "x": 428,
+        "y": 280.22222222222223
+      }
+    },
+    {
+      "id": "32_boca_O",
+      "archivo": "capas/32_boca_O.svg",
+      "grupo_svg": "_32_boca_O",
+      "id_capa_vectorcraft": 125,
+      "orden_fondo_a_frente": 29,
+      "parent": "20_cabeza",
+      "pivote": [
+        439,
+        290
+      ],
+      "visible_por_defecto": false,
+      "familia": "boca",
+      "bounds": {
+        "height": 24.77777777777783,
+        "width": 15,
+        "x": 435,
+        "y": 280
+      }
+    },
+    {
+      "id": "33_boca_MBP",
+      "archivo": "capas/33_boca_MBP.svg",
+      "grupo_svg": "_33_boca_MBP",
+      "id_capa_vectorcraft": 128,
+      "orden_fondo_a_frente": 30,
+      "parent": "20_cabeza",
+      "pivote": [
+        439,
+        290
+      ],
+      "visible_por_defecto": false,
+      "familia": "boca",
+      "bounds": {
+        "height": 8.4444444444444,
+        "width": 37,
+        "x": 421,
+        "y": 286.33333333333337
+      }
+    },
+    {
+      "id": "35_mano_pinza",
+      "archivo": "capas/35_mano_pinza.svg",
+      "grupo_svg": "_35_mano_pinza",
+      "id_capa_vectorcraft": 134,
+      "orden_fondo_a_frente": 31,
+      "parent": "13_antebrazo_cercano",
+      "pivote": [
+        608,
+        669
+      ],
+      "visible_por_defecto": false,
+      "familia": "mano",
+      "bounds": {
+        "height": 56.13286713286709,
+        "width": 57,
+        "x": 584,
+        "y": 667.2307692307693
+      }
+    },
+    {
+      "id": "36_mano_senala",
+      "archivo": "capas/36_mano_senala.svg",
+      "grupo_svg": "_36_mano_senala",
+      "id_capa_vectorcraft": 137,
+      "orden_fondo_a_frente": 32,
+      "parent": "13_antebrazo_cercano",
+      "pivote": [
+        608,
+        669
+      ],
+      "visible_por_defecto": false,
+      "familia": "mano",
+      "bounds": {
+        "height": 100.36842105263156,
+        "width": 62.76923076923072,
+        "x": 568.2307692307693,
+        "y": 666
+      }
+    },
+    {
+      "id": "37_mano_apoyo",
+      "archivo": "capas/37_mano_apoyo.svg",
+      "grupo_svg": "_37_mano_apoyo",
+      "id_capa_vectorcraft": 140,
+      "orden_fondo_a_frente": 33,
+      "parent": "13_antebrazo_cercano",
+      "pivote": [
+        608,
+        669
+      ],
+      "visible_por_defecto": false,
+      "familia": "mano",
+      "bounds": {
+        "height": 81.39999999999986,
+        "width": 86.64285714285734,
+        "x": 581,
+        "y": 667
+      }
+    }
+  ],
+  "expresiones": {
+    "reposo": [
+      "21_ojos_abiertos",
+      "24_cejas_neutras",
+      "28_boca_reposo"
+    ],
+    "atencion": [
+      "21_ojos_abiertos",
+      "25_cejas_atencion",
+      "28_boca_reposo"
+    ],
+    "inquietud": [
+      "21_ojos_abiertos",
+      "26_cejas_duda",
+      "29_boca_inquieta"
+    ],
+    "esfuerzo": [
+      "22_ojos_entornados",
+      "25_cejas_atencion",
+      "30_boca_esfuerzo"
+    ],
+    "sorpresa": [
+      "21_ojos_abiertos",
+      "27_cejas_sorpresa",
+      "32_boca_O"
+    ]
+  },
+  "manos": {
+    "relajada": "14_mano_cercana",
+    "agarre": "35_mano_pinza",
+    "senalamiento": "36_mano_senala",
+    "apoyo": "37_mano_apoyo"
+  },
+  "bocas_opcionales": [
+    "31_boca_A",
+    "32_boca_O",
+    "33_boca_MBP"
+  ],
+  "convencion_rotacion": "Ángulos CSS en grados, positivos en sentido horario; los ensayos de VectorCraft usaron el signo opuesto.",
+  "vista": "Casi frontal con giro leve; nariz central dentro del contorno. No hay perfil, espalda ni ciclo de caminar.",
+  "regla_variantes": "Una variante de ojos, una de cejas, una de boca y una de mano cercana por vez."
+}

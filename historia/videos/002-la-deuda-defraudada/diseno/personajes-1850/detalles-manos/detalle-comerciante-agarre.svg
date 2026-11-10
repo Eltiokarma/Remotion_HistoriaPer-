@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220.456" height="97.95" viewBox="0 0 220.456 97.95">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="88.171" y1="96.85" x2="88.171" y2="15.85" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f6658"/>
+      <stop offset="1" stop-color="#354e41"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="191.54" y1="57.85" x2="191.54" y2="0.85" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0af87"/>
+      <stop offset="1" stop-color="#c39d79"/>
+    </linearGradient>
+  </defs>
+  <title>Untitled-18</title>
+  <g id="Selection">
+    <path d="M6.243 96.85 C-1.757 80.85 -0.424 64.517 10.243 47.85 L159.243 15.85 L175.243 54.85 L112.243 79.85 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="149.243,59.85 137.243,18.85 163.243,11.85 176.243,52.85" fill="#ded3b3" stroke="#2d4238" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M35.243 74.85 C74.576 64.85 107.576 55.517 134.243 46.85" fill="none" stroke="#b7b794" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="124.243" cy="28.85" r="2" fill="#a6b098" stroke="#2d4238" stroke-width="0.8" stroke-miterlimit="10"/>
+    <circle cx="133.243" cy="23.85" r="2" fill="#a6b098" stroke="#2d4238" stroke-width="0.8" stroke-miterlimit="10"/>
+    <path d="M167.243 52.85 C162.576 40.85 162.243 28.85 166.243 16.85 L186.243 11.85 C188.91 4.517 193.91 0.85 201.243 0.85 L212.243 5.85 C218.243 9.85 220.576 14.85 219.243 20.85 L214.243 43.85 C212.243 49.85 207.576 53.183 200.243 53.85 L191.243 57.85 Z" fill="url(#linear-gradient-2)" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M185.243 48.85 C179.91 40.183 178.91 31.517 182.243 22.85 L193.243 10.85 C197.243 8.183 200.576 8.85 203.243 12.85 L194.243 26.85 L198.243 36.85" fill="#c39d79" stroke="#8f7056" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M205.243 21.85 C205.91 13.85 203.91 8.85 199.243 6.85 M212.243 28.85 L215.243 14.85 M208.243 39.85 L211.243 28.85" fill="none" stroke="#8f7056" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

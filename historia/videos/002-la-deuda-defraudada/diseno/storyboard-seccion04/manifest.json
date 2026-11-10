@@ -4,7 +4,7 @@
   "seccion": 4,
   "fecha": "2026-11-09",
   "herramienta": "VectorCraft mediante MCP",
-  "estado": "Borrador pendiente de revisión de Gerson",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
   "laminas": 4,
   "vinyetas": 16,
   "artboard": {
@@ -31,59 +31,86 @@
       "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
     },
     {
+      "archivo": "ANIMACION.md",
+      "bytes": 4640,
+      "sha256": "5d1e769d9a5cb6ec6d21210d4b518ad59fdbd71c40375e0a42941e6d29a64758"
+    },
+    {
       "archivo": "README.md",
-      "bytes": 15435,
-      "sha256": "219413b7e103d6152cff8366083323e7111d4c5e6c5aed97631f59c2e1a7c00f"
+      "bytes": 16952,
+      "sha256": "ac6b555c3f814c85be6c97bcda7add804e4ba0916933b3c879e41c4c3715c9e6"
+    },
+    {
+      "archivo": "secuencia.json",
+      "bytes": 19978,
+      "sha256": "c911d460180edb5fc8bd9de34484b831e0ab61a2551bb6ad314399e63465060d"
     },
     {
       "archivo": "storyboard-02-seccion04-lamina1.png",
-      "bytes": 311710,
-      "sha256": "8491f30f205d7dbaab62c2d9e80cfeffa1b7adc6d49044f8c35358a5ec4a0a2f"
+      "bytes": 332248,
+      "sha256": "de654b13f65af170c415da9ffb4ad3b06a74917cb381ad6a43865f6b9ef2bdff"
     },
     {
       "archivo": "storyboard-02-seccion04-lamina1.svg",
-      "bytes": 1852239,
-      "sha256": "f3e686dc2b375a5c1aaac43298842b1008f64db0539a69bcbad8353425f7fde1"
+      "bytes": 2107281,
+      "sha256": "7f00f7561689370971b6068dcdca3734527340d1c1160ba522f75903beae03ed"
     },
     {
       "archivo": "storyboard-02-seccion04-lamina2.png",
-      "bytes": 365110,
-      "sha256": "33eb8b20ada2a4b4fe34f3d6ca52d7b424a39ee1c8a661042520b9d59fd996d4"
+      "bytes": 381621,
+      "sha256": "401facd9d0c115b31b6390c6ca940da2cc5b7ec5ffbe91a50462eae932f99349"
     },
     {
       "archivo": "storyboard-02-seccion04-lamina2.svg",
-      "bytes": 2146873,
-      "sha256": "6b3b076847e1870b2b1e35671a9e3c87a43577fe1d90d893c72056fa013c6420"
+      "bytes": 2430859,
+      "sha256": "22df9b6f6eee2316bf19c8850b7d20563c799450ff92bd09899767bf719d74f8"
     },
     {
       "archivo": "storyboard-02-seccion04-lamina3.png",
-      "bytes": 274746,
-      "sha256": "b792b26e3c1e8a7dc1ea9b15fdb64105b68a0eaf9919cc7df1ca42ac4096fedb"
+      "bytes": 276543,
+      "sha256": "88146489cba25ddbf5eaaa1a9ccb1905c3e32c2cff1811b3575d2cbe51e78ef2"
     },
     {
       "archivo": "storyboard-02-seccion04-lamina3.svg",
-      "bytes": 1856814,
-      "sha256": "aed52e5778523c6e181ae8be7ee85faaeb3c75a9e8be7b08ebdd7ab69d057471"
+      "bytes": 2096737,
+      "sha256": "5f6b7f12bbd3042567ed2e06c70036c3ba81521c941342684abea75d7a9bbc6a"
     },
     {
       "archivo": "storyboard-02-seccion04-lamina4.png",
-      "bytes": 353391,
-      "sha256": "9fc53fca72365f0c9ddd1b418512406d61566e20e7c47c16619c7c6797fa30b5"
+      "bytes": 355951,
+      "sha256": "0e6f6fc49333a056746c73dd5397f62c2e651d588aa4af99a269e648f368ae95"
     },
     {
       "archivo": "storyboard-02-seccion04-lamina4.svg",
-      "bytes": 2384802,
-      "sha256": "d52e06e8ea5ce499922470fa0df0a3b67fb77e037742525b5fc1484ef8d7ad92"
+      "bytes": 2697258,
+      "sha256": "d9d7e7cd365c394b5dbc2f09d8bd727631fe17cb55e80768b6097c7ef14aeae3"
     },
     {
       "archivo": "storyboard-02-seccion04.pdf",
-      "bytes": 4249980,
-      "sha256": "84bc2073a3c694a8d2ea8090691484b6465279322125cc6a678650823498d55d"
+      "bytes": 4308480,
+      "sha256": "962cf90e58cb6d4041cb720e66adf653e0574b94b68fa952e072115e9a452d3d"
     },
     {
       "archivo": "storyboard-02-seccion04.vectorcraft",
-      "bytes": 329313,
-      "sha256": "dcdac880c2d78ea11702d2c28ace713b06dfb23565ab4194c16818e517e543e7"
+      "bytes": 347342,
+      "sha256": "325a124756c2e4a0e94bed4b092f79817456277842e44276421d338dbe7fff0d"
+    },
+    {
+      "archivo": "validacion.json",
+      "bytes": 793,
+      "sha256": "e1c42aa1c95f6f2e6feda459cf482b4ad99a6b00e3e62736528e97be5d39ae7a"
     }
-  ]
+  ],
+  "fecha_revision": "2026-11-10",
+  "revision": "Continuidad, personajes de época y rostros corregidos",
+  "conteo_revision": {
+    "figuras": 3,
+    "manos": 4,
+    "retirados": 0,
+    "laminas": 4,
+    "vinyetas": 16
+  },
+  "video_generado": false,
+  "fecha_revision_continuidad": "2026-11-10",
+  "desarrollo_continuidad": "../escenas-largas/escena-04/secuencia.json"
 }

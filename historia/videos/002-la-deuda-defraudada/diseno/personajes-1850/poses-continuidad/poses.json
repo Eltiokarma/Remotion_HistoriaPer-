@@ -1,0 +1,161 @@
+{
+  "fecha": "2026-11-10",
+  "estado": "Borrador; poses estáticas de referencia",
+  "canvas_rig": [
+    900,
+    1200
+  ],
+  "convencion": "Rotaciones CSS locales a cada padre del rig; positivas en sentido horario con y hacia abajo. No sumar de nuevo el giro heredado.",
+  "poses": [
+    {
+      "nombre": "busto-intermediario-quieto",
+      "base": "../variantes/intermediario/variante.json",
+      "svg": "busto-intermediario-quieto.svg",
+      "png": "busto-intermediario-quieto.png",
+      "nativo": "busto-intermediario-quieto.vectorcraft",
+      "recorte_en_canvas_original": [
+        285,
+        95,
+        635,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "14_mano_cercana",
+        "rotacionesCSS": {}
+      }
+    },
+    {
+      "nombre": "busto-intermediario-prepara",
+      "base": "../variantes/intermediario/variante.json",
+      "svg": "busto-intermediario-prepara.svg",
+      "png": "busto-intermediario-prepara.png",
+      "nativo": "busto-intermediario-prepara.vectorcraft",
+      "recorte_en_canvas_original": [
+        285,
+        95,
+        635,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "14_mano_cercana",
+        "rotacionesCSS": {
+          "12_brazo_cercano": -17.5,
+          "13_antebrazo_cercano": -25
+        }
+      }
+    },
+    {
+      "nombre": "busto-funcionario-quieto",
+      "base": "../funcionario/rig.json",
+      "svg": "busto-funcionario-quieto.svg",
+      "png": "busto-funcionario-quieto.png",
+      "nativo": "busto-funcionario-quieto.vectorcraft",
+      "recorte_en_canvas_original": [
+        285,
+        95,
+        635,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "14_mano_cercana",
+        "rotacionesCSS": {}
+      }
+    },
+    {
+      "nombre": "busto-funcionario-prepara",
+      "base": "../funcionario/rig.json",
+      "svg": "busto-funcionario-prepara.svg",
+      "png": "busto-funcionario-prepara.png",
+      "nativo": "busto-funcionario-prepara.vectorcraft",
+      "recorte_en_canvas_original": [
+        285,
+        95,
+        635,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "14_mano_cercana",
+        "rotacionesCSS": {
+          "12_brazo_cercano": -17.5,
+          "13_antebrazo_cercano": -25
+        }
+      }
+    },
+    {
+      "nombre": "busto-reclamante-quieto",
+      "base": "../reclamante/rig.json",
+      "svg": "busto-reclamante-quieto.svg",
+      "png": "busto-reclamante-quieto.png",
+      "nativo": "busto-reclamante-quieto.vectorcraft",
+      "recorte_en_canvas_original": [
+        260,
+        95,
+        635,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "14_mano_cercana",
+        "rotacionesCSS": {}
+      }
+    },
+    {
+      "nombre": "busto-comerciante-prepara",
+      "base": "../comerciante/rig.json",
+      "svg": "busto-comerciante-prepara.svg",
+      "png": "busto-comerciante-prepara.png",
+      "nativo": "busto-comerciante-prepara.vectorcraft",
+      "recorte_en_canvas_original": [
+        285,
+        95,
+        635,
+        570
+      ],
+      "estado": {
+        "cejas": "25_cejas_atencion",
+        "ojos": "21_ojos_abiertos",
+        "boca": "28_boca_reposo",
+        "mano": "14_mano_cercana",
+        "rotacionesCSS": {
+          "12_brazo_cercano": -17.5,
+          "13_antebrazo_cercano": -25
+        }
+      }
+    }
+  ],
+  "paso_carga": {
+    "nombre": "trabajador-carga-paso",
+    "base": "../trabajador/rig.json",
+    "pose_brazos_base": "../gestos.json#sostener_carga",
+    "svg": "trabajador-carga-paso.svg",
+    "png": "trabajador-carga-paso.png",
+    "nativo": "trabajador-carga-paso.vectorcraft",
+    "canvas": [
+      900,
+      1200
+    ],
+    "rotacionesCSS": {
+      "01_muslo_lejano": 16,
+      "02_pantorrilla_lejana": -25,
+      "04_muslo_cercano": -12
+    },
+    "traslacionRaizY": 11.004880315051196,
+    "sueloY": 1090,
+    "nota": "Aplicar las piernas y la traslación sobre el estado final de sostener_carga, conservando brazos, mano de pinza, rostro y saco. Es una pose de paso; falta interpolar y comprobar el apoyo durante la marcha."
+  },
+  "animacion_verificada": false
+}

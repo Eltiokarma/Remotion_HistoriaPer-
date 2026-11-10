@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142.669" height="217.788" viewBox="0 0 142.669 217.788">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="12.941" y1="116.916" x2="141.569" y2="116.916" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0af87"/>
+      <stop offset="1" stop-color="#c39d79"/>
+    </linearGradient>
+  </defs>
+  <title>Personajes del Perú hacia 1850 · comerciante articulado</title>
+  <g id="Selection">
+    <g id="oreja_visible">
+      <ellipse cx="14.75" cy="124.188" rx="14" ry="21.5" fill="#c39d79" stroke="#2d4238" stroke-width="1.5" stroke-miterlimit="10"/>
+      <path d="M16.75 111.688 C4.75 104.688 4.75 126.688 15.75 134.688 M14.75 115.688 C11.417 119.021 11.75 122.354 15.75 125.688" fill="none" stroke="#98775a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="rostro_base">
+      <path d="M24.75 36.688 C43.75 13.688 95.75 9.688 121.75 31.688 C138.75 49.688 143.75 76.688 140.75 105.688 L136.75 153.688 C133.75 189.688 115.75 212.688 88.75 216.688 C59.75 216.688 35.75 198.688 24.75 171.688 L16.75 137.688 C10.75 105.688 10.75 65.688 24.75 36.688 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M127.75 60.688 C134.75 89.688 134.75 126.688 128.75 155.688 C124.75 179.688 108.75 200.688 85.75 208.688 L88.75 216.688 C116.75 211.688 133.75 189.688 136.75 153.688 L140.75 105.688 C143.75 76.688 138.75 50.688 126.75 38.688 Z" fill="#c39d79"/>
+      <path d="M36.75 156.688 C44.083 160.021 51.75 160.688 59.75 158.688 M127.75 157.688 C125.75 163.688 123.083 168.021 119.75 170.688 M76.75 202.688 C84.75 206.021 92.75 206.021 100.75 202.688" fill="none" stroke="#98775a" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="nariz_central">
+      <path d="M87.75 116.688 C84.75 126.688 85.75 135.688 89.75 141.688 C93.75 145.021 97.75 144.688 101.75 140.688 C97.75 138.688 95.417 135.021 94.75 129.688 L93.75 115.688 Z" fill="#c39d79"/>
+      <path d="M85.75 113.688 C82.75 124.688 82.75 134.688 86.75 141.688 C90.75 145.021 94.75 145.021 98.75 141.688" fill="none" stroke="#8d7055" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M83.75 145.688 C85.75 144.354 87.417 144.688 88.75 146.688 M97.75 145.688 C99.75 143.688 101.417 143.354 102.75 144.688" fill="none" stroke="#98775a" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="cabello">
+      <path d="M8.75 102.688 C-7.25 54.688 10.75 11.688 50.75 5.688 C82.75 -4.312 108.75 1.688 128.75 23.688 C137.417 35.021 140.75 52.688 138.75 76.688 L125.75 76.688 L115.75 44.688 C87.75 36.688 61.083 41.688 35.75 59.688 L24.75 100.688 L22.75 137.688 L10.75 132.688 Z" fill="#464b3b" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22.75 60.688 C44.083 37.354 69.75 25.021 99.75 23.688 M28.75 71.688 C47.417 51.688 68.417 40.354 91.75 37.688 M23.75 78.688 L18.75 120.688" fill="none" stroke="#8b9171" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M28.75 142.688 C36.083 161.354 44.083 173.021 52.75 177.688 L53.75 197.688 C40.417 193.688 31.083 185.354 25.75 172.688 Z" fill="#646348"/>
+    </g>
+    <path d="M38.75 112.688 C47.417 108.021 56.417 108.021 65.75 112.688 M97.75 112.688 C105.75 108.688 114.083 108.688 122.75 112.688" fill="none" stroke="#2d4238" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M40.75 117.688 C48.083 120.354 55.417 120.021 62.75 116.688 M99.75 117.688 C106.417 119.688 112.75 119.354 118.75 116.688" fill="none" stroke="#98775a" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36.75 95.688 L65.75 100.688 M97.75 100.688 L123.75 94.688" fill="none" stroke="#464b3b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M73.75 173.688 C83.75 170.354 95.083 170.021 107.75 172.688 L106.75 182.688 C96.083 184.688 85.083 184.021 73.75 180.688 Z" fill="#5e5140" stroke="#2d4238" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="77.75" y1="176.688" x2="102.75" y2="176.688" fill="none" stroke="#e9dfc8" stroke-width="2" stroke-miterlimit="10"/>
+  </g>
+</svg>

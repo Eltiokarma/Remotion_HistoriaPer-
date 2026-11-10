@@ -1,0 +1,68 @@
+{
+  "fecha": "2026-11-10",
+  "herramienta": "VectorCraft mediante MCP",
+  "personajes": 4,
+  "piezas_svg": 135,
+  "canvas_comun": [
+    900,
+    1200
+  ],
+  "imagenes_raster_en_piezas": 0,
+  "laminas_revisadas": 3,
+  "expresiones_mostradas": 8,
+  "manos_mostradas": 4,
+  "gestos_de_referencia": 2,
+  "estados_por_gesto": 3,
+  "poses_intermedias_revisadas": 2,
+  "storyboard_vinyetas_actualizadas": [
+    4,
+    7,
+    8,
+    11,
+    14
+  ],
+  "animacion_remotion_probada": false,
+  "video_generado": false,
+  "aprobacion_gerson": false,
+  "correccion_rostros": {
+    "fecha": "2026-11-10",
+    "modelos": [
+      {
+        "personaje": "trabajador",
+        "narices": 1,
+        "orejas_visibles": 1,
+        "nariz_dentro_del_rostro": true,
+        "contorno_sin_protuberancia_lateral": true
+      },
+      {
+        "personaje": "comerciante",
+        "narices": 1,
+        "orejas_visibles": 1,
+        "nariz_dentro_del_rostro": true,
+        "contorno_sin_protuberancia_lateral": true
+      },
+      {
+        "personaje": "funcionario",
+        "narices": 1,
+        "orejas_visibles": 1,
+        "nariz_dentro_del_rostro": true,
+        "contorno_sin_protuberancia_lateral": true
+      },
+      {
+        "personaje": "reclamante",
+        "narices": 1,
+        "orejas_visibles": 1,
+        "nariz_dentro_del_rostro": true,
+        "contorno_sin_protuberancia_lateral": true
+      }
+    ],
+    "poses_actualizadas": 4,
+    "expresiones_actualizadas": 8,
+    "instancias_laminas": 18,
+    "instancias_storyboard": 6,
+    "piezas_ajenas_al_rostro_identicas": 131,
+    "gestos_sin_cambios": true,
+    "revision_visual_agente": true,
+    "aprobacion_gerson": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "fecha": "2026-11-10",
+  "herramienta": "VectorCraft mediante MCP",
+  "estado": "Borrador pendiente de Gerson",
+  "secciones": {
+    "3": {
+      "figuras": 11,
+      "manos": 1,
+      "retirados": 0,
+      "laminas": 3,
+      "vinyetas": 12
+    }
+  },
+  "revisionVisual": {
+    "laminas": 13,
+    "vinyetas": 52,
+    "contactos": "Revisados en los encuadres estáticos de transferencia; los estados intermedios permanecen pendientes en Remotion.",
+    "rostros": "Nariz interior al óvalo y oreja diferenciada; no se reutiliza el contorno de perfil anterior.",
+    "cronologia_y_cautelas": "Se conservan los textos cotejados y las unidades. Novoa mantiene probablemente y alrededor de; no se resta ni se asigna la diferencia."
+  },
+  "animacionValidada": false,
+  "videoGenerado": false
+}

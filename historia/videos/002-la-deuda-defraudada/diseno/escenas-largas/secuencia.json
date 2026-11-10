@@ -1,0 +1,133 @@
+{
+  "fecha": "2026-11-10",
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "herramienta": "VectorCraft mediante MCP",
+  "escenas_largas": [
+    {
+      "id": "escena-01",
+      "numero": 1,
+      "titulo": "Las islas y el país",
+      "duracion_segundos": null,
+      "momentos": [
+        "1A",
+        "1B",
+        "1C",
+        "1D"
+      ],
+      "laminas": 7,
+      "estados": 21,
+      "secuencia": "escena-01/secuencia.json",
+      "pdf": "escena-01/escena-01.pdf",
+      "nativo": "escena-01/escena-01.vectorcraft",
+      "entrada": "s01-v01",
+      "salida": "s01-v16",
+      "puente_siguiente": {
+        "escena": 2,
+        "criterio": "La pestaña roja y el reclamo genérico mantienen la identidad al cambiar el encuadre."
+      }
+    },
+    {
+      "id": "escena-02",
+      "numero": 2,
+      "titulo": "El recorrido de un reclamo",
+      "duracion_segundos": null,
+      "momentos": [
+        "2A",
+        "2B",
+        "2C",
+        "2D",
+        "2E",
+        "2F"
+      ],
+      "laminas": 6,
+      "estados": 19,
+      "secuencia": "escena-02/secuencia.json",
+      "pdf": "escena-02/escena-02.pdf",
+      "nativo": "escena-02/escena-02.vectorcraft",
+      "entrada": "s02-v01",
+      "salida": "s03-v01",
+      "puente_siguiente": {
+        "escena": 3,
+        "criterio": "Se retira el ejemplo y se abre otra carpeta: Novoa."
+      }
+    },
+    {
+      "id": "escena-03",
+      "numero": 3,
+      "titulo": "El expediente de Novoa",
+      "duracion_segundos": null,
+      "momentos": [
+        "3A",
+        "3B",
+        "3C",
+        "3D",
+        "3E",
+        "3F"
+      ],
+      "laminas": 6,
+      "estados": 18,
+      "secuencia": "escena-03/secuencia.json",
+      "pdf": "escena-03/escena-03.pdf",
+      "nativo": "escena-03/escena-03.vectorcraft",
+      "entrada": "s03-v01",
+      "salida": "s04-v01-1851",
+      "puente_siguiente": {
+        "escena": 4,
+        "criterio": "El primer total de 1851 queda idéntico antes de incorporar 1852."
+      }
+    },
+    {
+      "id": "escena-04",
+      "numero": 4,
+      "titulo": "La investigación y los vales que siguen circulando",
+      "duracion_segundos": null,
+      "momentos": [
+        "4A",
+        "4B",
+        "4C",
+        "4D",
+        "4E"
+      ],
+      "laminas": 8,
+      "estados": 24,
+      "secuencia": "escena-04/secuencia.json",
+      "pdf": "escena-04/escena-04.pdf",
+      "nativo": "escena-04/escena-04.vectorcraft",
+      "entrada": "s04-v01-1851",
+      "salida": "s04-v16-informes",
+      "puente_siguiente": {
+        "escena": 5,
+        "criterio": "Los informes dan paso a una recapitulación explícita antes del cambio de época."
+      }
+    },
+    {
+      "id": "escena-05",
+      "numero": 5,
+      "titulo": "Del expediente al método de Quiroz",
+      "duracion_segundos": null,
+      "momentos": [
+        "5A",
+        "5B",
+        "5C"
+      ],
+      "laminas": 5,
+      "estados": 15,
+      "secuencia": "escena-05/secuencia.json",
+      "pdf": "escena-05/escena-05.pdf",
+      "nativo": "escena-05/escena-05.vectorcraft",
+      "entrada": "s05-v01",
+      "salida": "s05-v12",
+      "puente_siguiente": {
+        "episodio": "003",
+        "tema": "Fuentes, decisiones y límites; resultados generales en 004"
+      }
+    }
+  ],
+  "total_momentos": 24,
+  "total_laminas": 32,
+  "total_estados": 97,
+  "recursos_svg_distintos": 90,
+  "duraciones": "Sin fijar, pendientes de la locución. Dos segundos de silencio en 3D son una propuesta.",
+  "animacion_remotion_verificada": false,
+  "video_generado": false
+}

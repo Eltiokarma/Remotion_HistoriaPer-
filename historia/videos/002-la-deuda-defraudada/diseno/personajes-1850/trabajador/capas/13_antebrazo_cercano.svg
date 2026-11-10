@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="556" y1="605.5" x2="626" y2="605.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7a27d"/>
+      <stop offset="1" stop-color="#b98e6a"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_13_antebrazo_cercano" data-name="13_antebrazo_cercano">
+    <path d="M545 507 C561.667 499.667 578.333 501.333 595 512 L602 541 L557 553 Z" fill="#b6ad8d" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="556,544 596,532 626,666 589,679 569,614" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M569 552 C578.333 587.333 587.333 620 596 650" fill="none" stroke="#987357" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

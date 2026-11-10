@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="273" y1="850.042" x2="649" y2="850.042" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#768b7d"/>
+      <stop offset="1" stop-color="#465f54"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_07_falda" data-name="07_falda">
+    <path d="M361 620 C420.333 605.333 477.333 605.333 532 620 C539.333 724.667 563 836 603 954 L649 1061 C526.333 1099 401 1101 273 1067 L306 952 C336.667 843.333 355 732.667 361 620 Z" fill="url(#linear-gradient-1)" stroke="#a8b297" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M372 651 C351 781 330.333 920 310 1068" fill="none" stroke="#364e42" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M392 651 C377 781 363.667 920 352 1068" fill="none" stroke="#97a38a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M412 651 C403 781 397 920 394 1068" fill="none" stroke="#364e42" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M432 651 C429 781 430.333 920 436 1068" fill="none" stroke="#97a38a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M452 651 C455 781 463.667 920 478 1068" fill="none" stroke="#364e42" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M472 651 C481 781 497 920 520 1068" fill="none" stroke="#97a38a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M492 651 C507 781 530.333 920 562 1068" fill="none" stroke="#364e42" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M512 651 C533 781 563.667 920 604 1068" fill="none" stroke="#97a38a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M282 1046 C397.333 1077.333 516 1076 638 1042 M279 1057 C396.333 1088.333 517.667 1087 643 1053" fill="none" stroke="#c0b893" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M370 624 C420.667 636 473.667 635.667 529 623" fill="none" stroke="#d4c49d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

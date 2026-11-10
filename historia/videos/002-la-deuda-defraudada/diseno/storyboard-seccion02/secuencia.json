@@ -1,0 +1,775 @@
+{
+  "titulo": "El recorrido de un reclamo",
+  "seccion": 2,
+  "fecha_revision": "2026-11-10",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "herramienta": "VectorCraft mediante MCP",
+  "medidas": {
+    "lamina": [
+      2520,
+      2140
+    ],
+    "encuadre": [
+      1120,
+      630
+    ],
+    "destinoRemotion": [
+      1920,
+      1080
+    ],
+    "factorEncuadreARemotion": 1.7142857142857142
+  },
+  "proxima_seccion": 3,
+  "vinyetas": [
+    {
+      "id": "s02-v01",
+      "numero": 1,
+      "titulo": "LA CARPETA SE ABRE",
+      "voz": "Para cobrar había que presentar un reclamo y sustentar de dónde venía la deuda.",
+      "camara_accion": "Continuidad con el cierre anterior. Acercar al papel marcado en rojo.",
+      "base": null,
+      "lamina": 1,
+      "encuadre_documento": [
+        90,
+        260,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 101,
+          "nombre": "01 · De la carpeta al reclamo"
+        }
+      ]
+    },
+    {
+      "id": "s02-v02",
+      "numero": 2,
+      "titulo": "DOS ORÍGENES DE LA DEUDA",
+      "voz": "Por ejemplo, un préstamo al gobierno o bienes usados para mantener a las tropas.",
+      "camara_accion": "La voz presenta cada ejemplo; los documentos quedan sobre la misma mesa.",
+      "base": null,
+      "lamina": 1,
+      "encuadre_documento": [
+        1310,
+        260,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s02_v02_comerciante_atencion",
+          "tipo": "actor",
+          "funcion": "comerciante",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-comerciante-atencion.svg",
+          "omitido": null,
+          "id_nativo": 2103,
+          "capa_nativa": 156,
+          "rectangulo": {
+            "height": 310.8690948218193,
+            "width": 201.79221944574238,
+            "x": 1430.2654215835405,
+            "y": 400.1309051781807
+          },
+          "recorte_original": [
+            285,
+            95,
+            370,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 156,
+          "nombre": "02 · Ejemplos de préstamo y bienes usados"
+        }
+      ]
+    },
+    {
+      "id": "s02-v03",
+      "numero": 3,
+      "titulo": "LA LEY DE CONSOLIDACIÓN",
+      "voz": "En 1850 se buscó organizar el reconocimiento de esas obligaciones.",
+      "camara_accion": "La fecha queda escrita. Del texto de la ley volvemos al reclamo.",
+      "base": null,
+      "lamina": 1,
+      "encuadre_documento": [
+        90,
+        1210,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 261,
+          "nombre": "03 · La ley de 1850 y el reconocimiento"
+        }
+      ]
+    },
+    {
+      "id": "s02-v04",
+      "numero": 4,
+      "titulo": "REVISAR QUÉ SE DEBÍA",
+      "voz": "Había que comprobar a quién se debía, por qué y cuánto correspondía reconocer.",
+      "camara_accion": "Acercar al expediente. Iluminar origen, acreedor y monto por turnos.",
+      "base": null,
+      "lamina": 1,
+      "encuadre_documento": [
+        1310,
+        1210,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s02_v04_funcionario_senala",
+          "tipo": "actor",
+          "funcion": "funcionario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-funcionario-senala.svg",
+          "omitido": null,
+          "id_nativo": 2018,
+          "capa_nativa": 315,
+          "rectangulo": {
+            "height": 349.7277316745467,
+            "width": 389.6089642339248,
+            "x": 1892.142436484592,
+            "y": 1365.0222683254533
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": true,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "mano_s02_v04_funcionario_apoyo_derecha",
+          "tipo": "mano",
+          "funcion": "funcionario",
+          "estado": "apoyo",
+          "referencia": "../personajes-1850/detalles-manos/detalle-funcionario-apoyo.svg",
+          "omitido": "Se elimina el detalle redundante: el funcionario señala el papel con su brazo visible.",
+          "id_nativo": null,
+          "capa_nativa": 315,
+          "rectangulo": null,
+          "recorte_original": null,
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 315,
+          "nombre": "04 · Revisar origen, acreedor y monto"
+        }
+      ]
+    },
+    {
+      "id": "s02-v05",
+      "numero": 5,
+      "titulo": "DEL RECLAMO AL VALE",
+      "voz": "Si la deuda era reconocida, el acreedor podía recibir un vale del Estado.",
+      "camara_accion": "Mantener el reclamo a la izquierda; el vale aparece como un documento distinto.",
+      "base": null,
+      "lamina": 2,
+      "encuadre_documento": [
+        90,
+        2480,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "mano_s02_v05_funcionario_agarre_izquierda",
+          "tipo": "mano",
+          "funcion": "funcionario",
+          "estado": "agarre",
+          "referencia": "../personajes-1850/detalles-manos/detalle-funcionario-agarre.svg",
+          "omitido": null,
+          "id_nativo": 2192,
+          "capa_nativa": 417,
+          "rectangulo": {
+            "height": 79.0121792648115,
+            "width": 177.83265985873743,
+            "x": 1001.8856814521363,
+            "y": 2947.8335428571304
+          },
+          "recorte_original": null,
+          "reflejado": true,
+          "contacto_referencia": [
+            1020,
+            2968
+          ]
+        },
+        {
+          "nombre": "mano_s02_v05_comerciante_agarre_derecha",
+          "tipo": "mano",
+          "funcion": "comerciante",
+          "estado": "agarre",
+          "referencia": "../personajes-1850/detalles-manos/detalle-comerciante-agarre.svg",
+          "omitido": null,
+          "id_nativo": 2205,
+          "capa_nativa": 417,
+          "rectangulo": {
+            "height": 86.91339719129246,
+            "width": 195.6159258446107,
+            "x": 104.3098245580392,
+            "y": 2943.816897142844
+          },
+          "recorte_original": null,
+          "reflejado": false,
+          "contacto_referencia": [
+            280,
+            2966
+          ]
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 417,
+          "nombre": "05 · Reconocimiento y emisión del vale"
+        }
+      ]
+    },
+    {
+      "id": "s02-v06",
+      "numero": 6,
+      "titulo": "RECIBIR UN TÍTULO DE DEUDA",
+      "voz": "Tener ese vale no era lo mismo que cobrar inmediatamente su valor en efectivo.",
+      "camara_accion": "Desplazar el vale del Estado hacia el acreedor. Pausa para distinguir título y efectivo.",
+      "base": null,
+      "lamina": 2,
+      "encuadre_documento": [
+        1310,
+        2480,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s02_v06_funcionario_senala",
+          "tipo": "actor",
+          "funcion": "funcionario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-funcionario-senala.svg",
+          "omitido": null,
+          "id_nativo": 1839,
+          "capa_nativa": 490,
+          "rectangulo": {
+            "height": 310.86909482181863,
+            "width": 346.3190793190438,
+            "x": 1919.0154990974165,
+            "y": 2627.130905178181
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": true,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s02_v06_comerciante_senala",
+          "tipo": "actor",
+          "funcion": "comerciante",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-comerciante-senala.svg",
+          "omitido": null,
+          "id_nativo": 1928,
+          "capa_nativa": 490,
+          "rectangulo": {
+            "height": 310.8690948218191,
+            "width": 346.319079319044,
+            "x": 1453.2654215835405,
+            "y": 2627.130905178181
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "mano_s02_v06_funcionario_agarre_izquierda",
+          "tipo": "mano",
+          "funcion": "funcionario",
+          "estado": "agarre",
+          "referencia": "../personajes-1850/detalles-manos/detalle-funcionario-agarre.svg",
+          "omitido": "El personaje ya tiene dos brazos; se retira el detalle aislado redundante.",
+          "id_nativo": null,
+          "capa_nativa": 490,
+          "rectangulo": null,
+          "recorte_original": null,
+          "reflejado": true,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "mano_s02_v06_comerciante_agarre_derecha",
+          "tipo": "mano",
+          "funcion": "comerciante",
+          "estado": "agarre",
+          "referencia": "../personajes-1850/detalles-manos/detalle-comerciante-agarre.svg",
+          "omitido": "El personaje ya tiene dos brazos; se retira el detalle aislado redundante.",
+          "id_nativo": null,
+          "capa_nativa": 490,
+          "rectangulo": null,
+          "recorte_original": null,
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 490,
+          "nombre": "06 · Entrega del vale y cobro no inmediato"
+        }
+      ]
+    },
+    {
+      "id": "s02-v07",
+      "numero": 7,
+      "titulo": "VOLVAMOS AL RECLAMO",
+      "voz": "Ahora volvamos al momento anterior al reconocimiento.",
+      "camara_accion": "Retroceso explicativo visible. Recuperar la marca roja y la carpeta inicial.",
+      "base": null,
+      "lamina": 2,
+      "encuadre_documento": [
+        90,
+        3430,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 613,
+          "nombre": "07 · Retroceso explicativo al reclamo inicial"
+        }
+      ]
+    },
+    {
+      "id": "s02-v08",
+      "numero": 8,
+      "titulo": "COMPRAR EL PAPEL A BAJO PRECIO",
+      "voz": "Los especuladores compraban documentos de reclamo o deuda a bajo precio.",
+      "camara_accion": "Primer plano de las manos. Separar precio de compra y valor del reclamo.",
+      "base": null,
+      "lamina": 2,
+      "encuadre_documento": [
+        1310,
+        3430,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "mano_s02_v08_comerciante_agarre_izquierda",
+          "tipo": "mano",
+          "funcion": "comerciante",
+          "estado": "agarre",
+          "referencia": "../personajes-1850/detalles-manos/detalle-comerciante-agarre.svg",
+          "omitido": null,
+          "id_nativo": 2142,
+          "capa_nativa": 663,
+          "rectangulo": {
+            "height": 122.46887786045727,
+            "width": 275.6406227810421,
+            "x": 2099.9228062508114,
+            "y": 3728.7419914285524
+          },
+          "recorte_original": null,
+          "reflejado": true,
+          "contacto_referencia": [
+            2128,
+            3760
+          ]
+        },
+        {
+          "nombre": "mano_s02_v08_reclamante_agarre_derecha",
+          "tipo": "mano",
+          "funcion": "reclamante",
+          "estado": "agarre",
+          "referencia": "../personajes-1850/detalles-manos/detalle-reclamante-agarre.svg",
+          "omitido": null,
+          "id_nativo": 2153,
+          "capa_nativa": 663,
+          "rectangulo": {
+            "height": 134.32070475017917,
+            "width": 302.3155217598528,
+            "x": 1342.4788197715152,
+            "y": 3705.717022857122
+          },
+          "recorte_original": null,
+          "reflejado": false,
+          "contacto_referencia": [
+            1614,
+            3740
+          ]
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 663,
+          "nombre": "08 · Traspaso del papel antes de reconocerlo"
+        }
+      ]
+    },
+    {
+      "id": "s02-v09",
+      "numero": 9,
+      "titulo": "EL INTERMEDIARIO GESTIONA",
+      "voz": "Había intermediarios que buscaban el reconocimiento de esos expedientes.",
+      "camara_accion": "Plano medio. El mismo documento pasa del comprador a quien hace la gestión.",
+      "base": null,
+      "lamina": 3,
+      "encuadre_documento": [
+        90,
+        4700,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s02_v09_intermediario_senala",
+          "tipo": "actor",
+          "funcion": "intermediario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-intermediario-senala.svg",
+          "omitido": null,
+          "id_nativo": 1660,
+          "capa_nativa": 717,
+          "rectangulo": {
+            "height": 310.1916666666666,
+            "width": 345.5644005847953,
+            "x": 697.3859649122808,
+            "y": 4864.208333333334
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": true,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s02_v09_comerciante_senala",
+          "tipo": "actor",
+          "funcion": "comerciante",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-comerciante-senala.svg",
+          "omitido": null,
+          "id_nativo": 1749,
+          "capa_nativa": 717,
+          "rectangulo": {
+            "height": 305.6879432414562,
+            "width": 340.54709466372753,
+            "x": 180.69433122381454,
+            "y": 4874.012056758544
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "mano_s02_v09_intermediario_agarre_izquierda",
+          "tipo": "mano",
+          "funcion": "intermediario",
+          "estado": "agarre",
+          "referencia": "../personajes-1850/detalles-manos/detalle-intermediario-agarre.svg",
+          "omitido": "El personaje ya tiene dos brazos; se retira el detalle aislado redundante.",
+          "id_nativo": null,
+          "capa_nativa": 717,
+          "rectangulo": null,
+          "recorte_original": null,
+          "reflejado": true,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "mano_s02_v09_comerciante_agarre_derecha",
+          "tipo": "mano",
+          "funcion": "comerciante",
+          "estado": "agarre",
+          "referencia": "../personajes-1850/detalles-manos/detalle-comerciante-agarre.svg",
+          "omitido": "El personaje ya tiene dos brazos; se retira el detalle aislado redundante.",
+          "id_nativo": null,
+          "capa_nativa": 717,
+          "rectangulo": null,
+          "recorte_original": null,
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 717,
+          "nombre": "09 · El comprador y quien gestiona"
+        }
+      ]
+    },
+    {
+      "id": "s02-v10",
+      "numero": 10,
+      "titulo": "UN TRÁMITE FAVORECIDO",
+      "voz": "Algunos funcionarios favorecían esas gestiones a cambio de beneficios ilegales.",
+      "camara_accion": "La carpeta marcada se adelanta. El acuerdo ilegal queda señalado en rojo.",
+      "base": null,
+      "lamina": 3,
+      "encuadre_documento": [
+        1310,
+        4700,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s02_v10_funcionario_senala",
+          "tipo": "actor",
+          "funcion": "funcionario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-funcionario-senala.svg",
+          "omitido": null,
+          "id_nativo": 1482,
+          "capa_nativa": 832,
+          "rectangulo": {
+            "height": 300.5067916610915,
+            "width": 334.7751100084088,
+            "x": 1953.781649127502,
+            "y": 4859.893208338908
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": true,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s02_v10_intermediario_senala",
+          "tipo": "actor",
+          "funcion": "intermediario",
+          "estado": "senala",
+          "referencia": "../personajes-1850/bustos/busto-intermediario-senala.svg",
+          "omitido": null,
+          "id_nativo": 1571,
+          "capa_nativa": 832,
+          "rectangulo": {
+            "height": 279.1724999999997,
+            "width": 311.0079605263154,
+            "x": 1412.9246710526318,
+            "y": 4873.1875
+          },
+          "recorte_original": [
+            285,
+            95,
+            635,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 832,
+          "nombre": "10 · Preferencia y comisión ilegal"
+        }
+      ]
+    },
+    {
+      "id": "s02-v11",
+      "numero": 11,
+      "titulo": "UN RECONOCIMIENTO INDEBIDO",
+      "voz": "Se negociaba el reconocimiento por una cantidad mucho mayor.",
+      "camara_accion": "Comparar dos conceptos: lo pagado por el papel y lo reconocido por el Estado.",
+      "base": null,
+      "lamina": 3,
+      "encuadre_documento": [
+        90,
+        5650,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [],
+      "capas_principales": [
+        {
+          "id": 948,
+          "nombre": "11 · Distinguir precio pagado y valor reconocido"
+        }
+      ]
+    },
+    {
+      "id": "s02-v12",
+      "numero": 12,
+      "titulo": "EL CIRCUITO QUEDA COMPLETO",
+      "voz": "Comprar una deuda no prueba por sí solo fraude: importan el reconocimiento indebido y el acuerdo ilegal.",
+      "camara_accion": "Abrir el encuadre y recapitular. Después se retira el ejemplo y entra Novoa.",
+      "base": null,
+      "lamina": 3,
+      "encuadre_documento": [
+        1310,
+        5650,
+        1120,
+        630
+      ],
+      "duracion_segundos": null,
+      "personajes_y_manos": [
+        {
+          "nombre": "actor_s02_v12_funcionario_atencion",
+          "tipo": "actor",
+          "funcion": "funcionario",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-funcionario-atencion.svg",
+          "omitido": null,
+          "id_nativo": 1222,
+          "capa_nativa": 1014,
+          "rectangulo": {
+            "height": 173.56857794218195,
+            "width": 112.6673225238726,
+            "x": 2014.13152705081,
+            "y": 5811.981422057818
+          },
+          "recorte_original": [
+            285,
+            95,
+            370,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s02_v12_intermediario_atencion",
+          "tipo": "actor",
+          "funcion": "intermediario",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-intermediario-atencion.svg",
+          "omitido": null,
+          "id_nativo": 1307,
+          "capa_nativa": 1014,
+          "rectangulo": {
+            "height": 173.19034722222295,
+            "width": 112.42180433723252,
+            "x": 1795.5643792641322,
+            "y": 5813.699652777777
+          },
+          "recorte_original": [
+            285,
+            95,
+            370,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        },
+        {
+          "nombre": "actor_s02_v12_comerciante_atencion",
+          "tipo": "actor",
+          "funcion": "comerciante",
+          "estado": "atencion",
+          "referencia": "../personajes-1850/bustos/busto-comerciante-atencion.svg",
+          "omitido": null,
+          "id_nativo": 1392,
+          "capa_nativa": 1014,
+          "rectangulo": {
+            "height": 173.56857794218195,
+            "width": 112.6673225238726,
+            "x": 1588.13152705081,
+            "y": 5811.981422057818
+          },
+          "recorte_original": [
+            285,
+            95,
+            370,
+            570
+          ],
+          "reflejado": false,
+          "contacto_referencia": null
+        }
+      ],
+      "capas_principales": [
+        {
+          "id": 1014,
+          "nombre": "12 · Recapitulación del circuito completo"
+        }
+      ]
+    }
+  ],
+  "recorridos_internos": [
+    {
+      "v": [
+        1,
+        6
+      ],
+      "nombre": "Del reclamo al vale",
+      "pasos": [
+        "Retomar la carpeta y aislar el reclamo con pestaña roja.",
+        "Desplegar los dos orígenes y la ley de 1850; volver al mismo papel.",
+        "Revisar origen, acreedor y monto por turnos; el personaje señala con la cámara quieta.",
+        "Incorporar el reconocimiento y después el vale como otro documento.",
+        "Desplazar el vale hacia el acreedor y sostener su condición de deuda, sin entrega de efectivo."
+      ]
+    },
+    {
+      "v": [
+        7,
+        12
+      ],
+      "nombre": "Retroceso e intermediación",
+      "pasos": [
+        "Rotular el regreso al momento anterior al reconocimiento.",
+        "En el acercamiento, preparar manos y papel; establecer el contacto antes del traspaso.",
+        "Recuperar comprador e intermediario en la misma mesa.",
+        "Marcar el favorecimiento ilegal después de explicar la compraventa.",
+        "Comparar precio y valor reconocido, abrir el circuito y retirar el ejemplo al entrar Novoa."
+      ]
+    }
+  ],
+  "escena_larga": {
+    "numero": 2,
+    "titulo": "El recorrido de un reclamo",
+    "desarrollo_continuidad": "../escenas-largas/escena-02/secuencia.json",
+    "momentos": [
+      "2A",
+      "2B",
+      "2C",
+      "2D",
+      "2E",
+      "2F"
+    ],
+    "nota": "Esta sección corresponde a una escena larga. Sus bloques anteriores son recorridos internos; no escenas largas adicionales."
+  }
+}

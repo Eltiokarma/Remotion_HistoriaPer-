@@ -1,0 +1,700 @@
+{
+  "id": "escena-04",
+  "numero": 4,
+  "titulo": "La investigación y los vales que siguen circulando",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "duracion_segundos": null,
+  "momentos": [
+    "4A",
+    "4B",
+    "4C",
+    "4D",
+    "4E"
+  ],
+  "laminas": 8,
+  "estados": 24,
+  "nativo": "escena-04.vectorcraft",
+  "pdf": "escena-04.pdf",
+  "muestra": "muestra.png",
+  "lamina_muestra": 6,
+  "dimension_lamina": [
+    2520,
+    2140
+  ],
+  "dimension_encuadre": [
+    1120,
+    630
+  ],
+  "destino_remotion": [
+    1920,
+    1080
+  ],
+  "factor_encuadre_a_remotion": 1.7142857142857142,
+  "espaciado_mesas": 80,
+  "desarrollo": [
+    {
+      "id": "4A.1",
+      "momento": "4A",
+      "titulo": "Salir del caso particular",
+      "lamina": 1,
+      "artboard": 0,
+      "svg": "lamina01.svg",
+      "capa_nativa": 2,
+      "voz_referencia": "El de Novoa era uno entre muchos reclamos. Quiroz sitúa el aumento de la deuda reconocida entre 1851 y 1852.",
+      "accion_y_camara": "Distinguir deuda reconocida, efectivo y monto robado. La nueva pieza no representa un vale individual del expediente de Novoa.",
+      "pausa_y_lectura": "Sostener la comparación antes de cambiar de escala a la circulación.",
+      "siguiente": "4A.2 · Seguir el mismo título",
+      "base": "Q, pp. 170–172, 179–185 y 187. Hallazgos: p. 183, nota 147.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s04-v01-1851",
+          "svg": "../recursos/encuadres/s04-v01-1851.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            264
+          ],
+          "accion": "Mostrar primero 1851: cinco millones de deuda reconocida.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s04-v01",
+          "svg": "../recursos/encuadres/s04-v01.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            566
+          ],
+          "accion": "Añadir 1852: veinticuatro millones, atribuidos a Quiroz.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "vale-entrega-a",
+          "svg": "../recursos/encuadres/vale-entrega-a.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            892
+          ],
+          "accion": "Cambiar a un vale genérico, sin titular ni monto de Novoa.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "4A.2",
+      "momento": "4A",
+      "titulo": "El nuevo tenedor",
+      "lamina": 2,
+      "artboard": 1,
+      "svg": "lamina02.svg",
+      "capa_nativa": 908,
+      "voz_referencia": "Los vales podían pasar de una persona a otra. Quien los tenía después podía ser distinto del reclamante original.",
+      "accion_y_camara": "Es el mismo vale genérico en los tres estados. Su nuevo tenedor no se identifica como culpable o inocente por adquirirlo.",
+      "pausa_y_lectura": "Cámara quieta durante el contacto. Conservar el marco doble y la obligación estatal.",
+      "siguiente": "4B · Canje y bono externo",
+      "base": "Q, pp. 170–172, 179–185 y 187. Hallazgos: p. 183, nota 147.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "vale-entrega-a",
+          "svg": "../recursos/encuadres/vale-entrega-a.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            2480,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            1238
+          ],
+          "accion": "El tenedor anterior mantiene el título y prepara el traspaso.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "vale-entrega-b",
+          "svg": "../recursos/encuadres/vale-entrega-b.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            2480,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            1580
+          ],
+          "accion": "Las manos comparten el borde durante la recepción.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "vale-entrega-c",
+          "svg": "../recursos/encuadres/vale-entrega-c.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            3430,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            1906
+          ],
+          "accion": "El nuevo tenedor lo sostiene; la primera mano se retira.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "4B",
+      "momento": "4B",
+      "titulo": "Cambia el instrumento",
+      "lamina": 3,
+      "artboard": 2,
+      "svg": "lamina03.svg",
+      "capa_nativa": 1922,
+      "voz_referencia": "Parte de esos vales se cambió por bonos de deuda externa. El Estado seguía obligado, ahora mediante otro título.",
+      "accion_y_camara": "La conversión sucede antes de la investigación de 1855. No convertir toda la deuda ni todos los contratos en una sola fecha.",
+      "pausa_y_lectura": "Dejar tiempo para distinguir deuda interna y externa.",
+      "siguiente": "4C · Volver a Elías",
+      "base": "Q, pp. 170–172, 179–185 y 187. Hallazgos: p. 183, nota 147.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s04-v03-interno",
+          "svg": "../recursos/encuadres/s04-v03-interno.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            4700,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            2298
+          ],
+          "accion": "Mantener el vale interno como punto de partida.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s04-v03-canje",
+          "svg": "../recursos/encuadres/s04-v03-canje.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            4700,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            2731
+          ],
+          "accion": "El recorrido anuncia el nuevo bono y su función.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s04-v03",
+          "svg": "../recursos/encuadres/s04-v03.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            5650,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            3234
+          ],
+          "accion": "Conservar ambos instrumentos: parte de los vales fue convertida.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "4C",
+      "momento": "4C",
+      "titulo": "Gestión, denuncia e intereses",
+      "lamina": 4,
+      "artboard": 3,
+      "svg": "lamina04.svg",
+      "capa_nativa": 3250,
+      "voz_referencia": "Elías, el intermediario de Novoa, denunció los abusos en cartas a Echenique publicadas en El Comercio en 1853.",
+      "accion_y_camara": "El regreso es explícito. Las cartas dibujadas son resúmenes; no un manuscrito ni una cita auténtica.",
+      "pausa_y_lectura": "Presentar nombre antes de fechas. No convertir al denunciante en alguien ajeno al negocio.",
+      "siguiente": "4D · Cambio político e investigación",
+      "base": "Q, pp. 170–172, 179–185 y 187. Hallazgos: p. 183, nota 147.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s03-v04",
+          "svg": "../recursos/encuadres/s03-v04.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            6920,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            3802
+          ],
+          "accion": "Recordar la función de intermediario de Elías en el caso Novoa.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s04-v04",
+          "svg": "../recursos/encuadres/s04-v04.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            6920,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            4297
+          ],
+          "accion": "Presentar las cartas de agosto de 1853, con las dos fechas separadas.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s04-v05",
+          "svg": "../recursos/encuadres/s04-v05.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            7870,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            4792
+          ],
+          "accion": "Reunir su gestión anterior y la denuncia, conservando sus intereses.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "4D",
+      "momento": "4D",
+      "titulo": "Abrir la investigación",
+      "lamina": 5,
+      "artboard": 4,
+      "svg": "lamina05.svg",
+      "capa_nativa": 4808,
+      "voz_referencia": "Había que volver al origen de cada reconocimiento: los documentos, las aprobaciones y la emisión de los títulos.",
+      "accion_y_camara": "El Estado permanece como ancla. La investigación no se atribuye por defecto al expediente de Novoa.",
+      "pausa_y_lectura": "Cada documento recibe foco con la cámara quieta. No inventar un hallazgo particular.",
+      "siguiente": "4E.1 · Qué encontró la junta",
+      "base": "Q, pp. 170–172, 179–185 y 187. Hallazgos: p. 183, nota 147.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s04-v06",
+          "svg": "../recursos/encuadres/s04-v06.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            9140,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            5812
+          ],
+          "accion": "Cambiar el gobierno en la cronología, manteniendo los títulos.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s04-v07",
+          "svg": "../recursos/encuadres/s04-v07.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            9140,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            6374
+          ],
+          "accion": "La Junta de Examen Fiscal abre otro conjunto de expedientes.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s04-v08",
+          "svg": "../recursos/encuadres/s04-v08.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            10090,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            6828
+          ],
+          "accion": "Revisar antecedentes, aprobación y emisión por turnos.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "4E.1",
+      "momento": "4E",
+      "titulo": "Los hallazgos, por separado",
+      "lamina": 6,
+      "artboard": 5,
+      "svg": "lamina06.svg",
+      "capa_nativa": 6844,
+      "voz_referencia": "Según Quiroz, la junta detectó 12,2 millones de pesos en 141 expedientes irregulares o ilegales.",
+      "accion_y_camara": "La calificación permanece con el recuento. Los cuatro robados son expedientes; no otra suma de dinero.",
+      "pausa_y_lectura": "Cámara quieta para leer. Fuente: Quiroz, p. 183, nota 147.",
+      "siguiente": "4E.2 · Medidas, argumentos y presiones",
+      "base": "Q, pp. 170–172, 179–185 y 187. Hallazgos: p. 183, nota 147.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s04-v09-expedientes",
+          "svg": "../recursos/encuadres/s04-v09-expedientes.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            11360,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            7137
+          ],
+          "accion": "Mostrar 141 expedientes junto a irregulares o ilegales.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s04-v09",
+          "svg": "../recursos/encuadres/s04-v09.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            11360,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            7452
+          ],
+          "accion": "Añadir 12,2 millones de pesos vinculados a esos expedientes.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s04-v10",
+          "svg": "../recursos/encuadres/s04-v10.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            12310,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            7741
+          ],
+          "accion": "Contar aparte los cuatro expedientes robados, sin monto adicional.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "4E.2",
+      "momento": "4E",
+      "titulo": "La disputa por los títulos",
+      "lamina": 7,
+      "artboard": 6,
+      "svg": "lamina07.svg",
+      "capa_nativa": 7757,
+      "voz_referencia": "En diciembre de 1856 se suspendió el servicio de los vales cuestionados por su origen. También se frenó temporalmente la conversión.",
+      "accion_y_camara": "Los papeles permanecen; no se destruyen. No inventar un juicio, pagos individuales o una reunión entre estos grupos.",
+      "pausa_y_lectura": "Sostener ambas posiciones antes del desenlace.",
+      "siguiente": "4E.3 · Restauración y documentos que quedan",
+      "base": "Q, pp. 170–172, 179–185 y 187. Hallazgos: p. 183, nota 147.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s04-v11",
+          "svg": "../recursos/encuadres/s04-v11.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            13580,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            8231
+          ],
+          "accion": "Distinguir suspensión del servicio y pausa de la conversión.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s04-v12",
+          "svg": "../recursos/encuadres/s04-v12.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            13580,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            8747
+          ],
+          "accion": "Leer las posiciones de tenedores e investigadores como argumentos.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s04-v13",
+          "svg": "../recursos/encuadres/s04-v13.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            14530,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            10037
+          ],
+          "accion": "Seguir las presiones locales y externas hacia las autoridades.",
+          "duracion_segundos": null
+        }
+      ]
+    },
+    {
+      "id": "4E.3",
+      "momento": "4E",
+      "titulo": "Restaurar no borra el origen",
+      "lamina": 8,
+      "artboard": 7,
+      "svg": "lamina08.svg",
+      "capa_nativa": 10053,
+      "voz_referencia": "Quiroz interpreta ese desenlace como una derrota de las medidas contra los abusos. Rehabilitar los títulos no demostraba un origen regular.",
+      "accion_y_camara": "La restauración no demuestra regularidad de origen ni una absolución penal general. El cierre recupera los documentos.",
+      "pausa_y_lectura": "Mantener el origen a la vista cuando el título vuelva a avanzar.",
+      "siguiente": "5A.1 · Volver al propósito y reunir el recorrido",
+      "base": "Q, pp. 170–172, 179–185 y 187. Hallazgos: p. 183, nota 147.",
+      "duracion_segundos": null,
+      "estados": [
+        {
+          "numero": 1,
+          "recurso": "s04-v14",
+          "svg": "../recursos/encuadres/s04-v14.svg",
+          "rectangulo_en_lamina": [
+            90,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            15800,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            10444
+          ],
+          "accion": "Mostrar la fecha del 11 de marzo de 1857 antes de reanudar los acuerdos.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 2,
+          "recurso": "s04-v15",
+          "svg": "../recursos/encuadres/s04-v15.svg",
+          "rectangulo_en_lamina": [
+            1310,
+            260,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            1310,
+            15800,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            10874
+          ],
+          "accion": "Separar rehabilitación financiera y examen de origen.",
+          "duracion_segundos": null
+        },
+        {
+          "numero": 3,
+          "recurso": "s04-v16-informes",
+          "svg": "../recursos/encuadres/s04-v16-informes.svg",
+          "rectangulo_en_lamina": [
+            90,
+            1210,
+            1120,
+            630
+          ],
+          "rectangulo_en_documento": [
+            90,
+            16750,
+            1120,
+            630
+          ],
+          "ids_nativos": [
+            11403
+          ],
+          "accion": "Volver a los informes como huellas del negocio.",
+          "duracion_segundos": null
+        }
+      ]
+    }
+  ]
+}

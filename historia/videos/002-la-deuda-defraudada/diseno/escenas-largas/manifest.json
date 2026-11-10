@@ -1,0 +1,847 @@
+{
+  "fecha": "2026-11-10",
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "escenas_largas": 5,
+  "momentos": 24,
+  "laminas": 32,
+  "estados": 97,
+  "recursos_svg_distintos": 90,
+  "video_generado": false,
+  "archivos": [
+    {
+      "archivo": ".gitattributes",
+      "bytes": 55,
+      "sha256": "17ada413eeff771cfc96fac8ae97a2d6eb78d9d5923d035c777bcfde181ee3f2"
+    },
+    {
+      "archivo": "ANIMACION.md",
+      "bytes": 7737,
+      "sha256": "d5752208d8df27db3b2bb2803fa4edc0087955eebbcc7434567e9684bb9a433a"
+    },
+    {
+      "archivo": "escena-01/escena-01.pdf",
+      "bytes": 8107703,
+      "sha256": "fcf2e8c6aa3666c9c88ad9f94df489c79ce514203f470021c57b9d951bd44673"
+    },
+    {
+      "archivo": "escena-01/escena-01.vectorcraft",
+      "bytes": 2309171,
+      "sha256": "ba7cc039873050b0f770bde69c54026adf86e33720dba478b77edd63b7cf4864"
+    },
+    {
+      "archivo": "escena-01/lamina01.svg",
+      "bytes": 1449654,
+      "sha256": "f72f418a818c54b7b117af8f341a86327c638e4fd7198b007c0bf48e26295b14"
+    },
+    {
+      "archivo": "escena-01/lamina02.svg",
+      "bytes": 1223798,
+      "sha256": "43b3082b3b22b6eaf0aad1059f2c804f7b35f8169aaff4e3b3cc6b756b3ae4b3"
+    },
+    {
+      "archivo": "escena-01/lamina03.svg",
+      "bytes": 1471632,
+      "sha256": "0347ceb23ee32b19a0e274eda4b7eef87dd6092e65f290ffcb063a578959c953"
+    },
+    {
+      "archivo": "escena-01/lamina04.svg",
+      "bytes": 1553073,
+      "sha256": "3c9ebf280e06efe968cdbc3eef0ad26623dba3f67b1303044804463a8b0630bc"
+    },
+    {
+      "archivo": "escena-01/lamina05.svg",
+      "bytes": 1483205,
+      "sha256": "c9b15c8e2c6ece35e55b309524af2a3f3e40bfbf6f6a2872b417c2385781d9ee"
+    },
+    {
+      "archivo": "escena-01/lamina06.svg",
+      "bytes": 1570403,
+      "sha256": "428cbb57fe90356f4fb38027e36685ba12d41cafc12ce97a8200ce9348ae65c1"
+    },
+    {
+      "archivo": "escena-01/lamina07.svg",
+      "bytes": 1502986,
+      "sha256": "3add7ca0c7b2d066dacc9162f5ab6a0b19877f7f7ca03b9ecb849d63397c4873"
+    },
+    {
+      "archivo": "escena-01/manifest.json",
+      "bytes": 2032,
+      "sha256": "0a7208878c7a10ce4a6e0efd724c584dbaa22bbc3ec9b03e2bbae55f1bb2604c"
+    },
+    {
+      "archivo": "escena-01/muestra.png",
+      "bytes": 252447,
+      "sha256": "b09a39bd2ce531efc2e25fc2cb285b4f85d6615cf055d6fa7feca35d45e24345"
+    },
+    {
+      "archivo": "escena-01/README.md",
+      "bytes": 1795,
+      "sha256": "8c4ae4b330ba7291dc87d3259c72708b4ea345dc62bbc845a44d364308067c25"
+    },
+    {
+      "archivo": "escena-01/secuencia.json",
+      "bytes": 17569,
+      "sha256": "38ed077b8fe57863982bfa061f57b765d8d372ff6c8b4a8b0fe6440e09352f44"
+    },
+    {
+      "archivo": "escena-02/escena-02.pdf",
+      "bytes": 5991251,
+      "sha256": "a2e1bc5af4cbe12ebb29947560d3a1be4526e3cfd6aa41256914f3d6faa90c11"
+    },
+    {
+      "archivo": "escena-02/escena-02.vectorcraft",
+      "bytes": 1575883,
+      "sha256": "0ac04f50936dcc867999e68c61b967237b62eb9a59da40893634103080b7dbe4"
+    },
+    {
+      "archivo": "escena-02/lamina01.svg",
+      "bytes": 1130670,
+      "sha256": "87ab895864900dbadb76f79bef595c8bd3316e8576b89484d63ef1ca5a366d62"
+    },
+    {
+      "archivo": "escena-02/lamina02.svg",
+      "bytes": 1211681,
+      "sha256": "9bba3f355c971cccaf56772c2ce6327afdad7891148e9313b0197e9ba5ce3b53"
+    },
+    {
+      "archivo": "escena-02/lamina03.svg",
+      "bytes": 1094643,
+      "sha256": "ff5519555e5beba2d154f0a9ef6cdb9548899d7c1561c00bc1a085e2a5b2eadc"
+    },
+    {
+      "archivo": "escena-02/lamina04.svg",
+      "bytes": 1338407,
+      "sha256": "e3c68e296b1c6179ce93c39e40986cdc318e20585dd6fceaa26c87cfceeefe39"
+    },
+    {
+      "archivo": "escena-02/lamina05.svg",
+      "bytes": 1374336,
+      "sha256": "387726e21b35d0f3a1a320622d415e412c66ec56dd026428a20dd3f838fb9815"
+    },
+    {
+      "archivo": "escena-02/lamina06.svg",
+      "bytes": 1328599,
+      "sha256": "3429be757f80e9b9b267689d54015cd380a7d64fd996c582d6258592ff8ff81e"
+    },
+    {
+      "archivo": "escena-02/manifest.json",
+      "bytes": 1879,
+      "sha256": "55613dd8d432095af2cfbd8e020eca20aaca9c15e1dcf071a3f21d6b075d38c6"
+    },
+    {
+      "archivo": "escena-02/muestra.png",
+      "bytes": 264709,
+      "sha256": "c6909cc552f35cca115df6f721babc46ba6334d46c74b47910602413b655f50f"
+    },
+    {
+      "archivo": "escena-02/README.md",
+      "bytes": 1717,
+      "sha256": "f382bfd92e0efb096f156dba1260713bd13138425f63a4f379696148a7d1e6bd"
+    },
+    {
+      "archivo": "escena-02/secuencia.json",
+      "bytes": 15701,
+      "sha256": "b13b73706a13d21c18f25e7a65423ebfd13f8848131a6a55f598ce7db68f2583"
+    },
+    {
+      "archivo": "escena-03/escena-03.pdf",
+      "bytes": 6196950,
+      "sha256": "8e0a7c109683197286e6d35c83566b81899d41220d8759150ef229e0d378158d"
+    },
+    {
+      "archivo": "escena-03/escena-03.vectorcraft",
+      "bytes": 1561724,
+      "sha256": "201d118b4bc96e0909bf6b30237bfe8563a11d98ba1fb49a2659d36109ca5e85"
+    },
+    {
+      "archivo": "escena-03/lamina01.svg",
+      "bytes": 1364897,
+      "sha256": "72c8f7b2ef176d7d5c4e87eddc900102e634d6052dd1485208db179b237e9bcd"
+    },
+    {
+      "archivo": "escena-03/lamina02.svg",
+      "bytes": 1180781,
+      "sha256": "22ebbb289b6966ff3fa27e402d31975c4c850ea2261a3dfe4daa720b0cda319b"
+    },
+    {
+      "archivo": "escena-03/lamina03.svg",
+      "bytes": 1234282,
+      "sha256": "9e75b95b2da3b5bc7c9105cb487c5150c25ef34e5700aa6c86fa267e7086c227"
+    },
+    {
+      "archivo": "escena-03/lamina04.svg",
+      "bytes": 1307226,
+      "sha256": "9f5e9ad2e65523251c076fe9af25b60683be81b7447ffd42e5a8bf2c6a5f92f3"
+    },
+    {
+      "archivo": "escena-03/lamina05.svg",
+      "bytes": 1333530,
+      "sha256": "ab8714de20e16794e87860e247e7771eac79262310662ca443ef0300c26d564b"
+    },
+    {
+      "archivo": "escena-03/lamina06.svg",
+      "bytes": 1345107,
+      "sha256": "ad45a57cb491747a46a9807c91e8be941b931eb2dce2cdbb117376c4c6e6fd8e"
+    },
+    {
+      "archivo": "escena-03/manifest.json",
+      "bytes": 1879,
+      "sha256": "fac6efd061986cb30af37d639fece9ee774ab6c6b46b69c55de56763938ff52e"
+    },
+    {
+      "archivo": "escena-03/muestra.png",
+      "bytes": 231352,
+      "sha256": "dbd4979ea5d7751c145d3d48d97d3c69e258f186886f0c0bf60ac3e91759ac6f"
+    },
+    {
+      "archivo": "escena-03/README.md",
+      "bytes": 1712,
+      "sha256": "61334a1ea84b6db3aa744dde0fc92d9a8b1f2cd5a11bda3efb8d91016f641f09"
+    },
+    {
+      "archivo": "escena-03/secuencia.json",
+      "bytes": 15317,
+      "sha256": "a74ddd50e58e373994b596529ab24dd81bf56b80b0eb2e51376730184bd4e5b5"
+    },
+    {
+      "archivo": "escena-04/escena-04.pdf",
+      "bytes": 8561853,
+      "sha256": "f5cbec62433081047eaad4dbdab75a0492daa340b44111b3e5137bba14eec8a1"
+    },
+    {
+      "archivo": "escena-04/escena-04.vectorcraft",
+      "bytes": 2239208,
+      "sha256": "6438cf0e06cf9a5ec3594f67272c2d0094ab5b9e42e883bbf206e6da8812d37e"
+    },
+    {
+      "archivo": "escena-04/lamina01.svg",
+      "bytes": 1042191,
+      "sha256": "8664f5b816541d29e738f8e5dbfab16d1742abc56be07e4336058684d13368bc"
+    },
+    {
+      "archivo": "escena-04/lamina02.svg",
+      "bytes": 1100295,
+      "sha256": "0cd4edffcb39939de5cc2372dbe7f5c95d683b90444dad817dcad7d812c95bd1"
+    },
+    {
+      "archivo": "escena-04/lamina03.svg",
+      "bytes": 1389380,
+      "sha256": "6d76ee7e863656c333a51580f632e2676dce434783354d203e91c2998ae96225"
+    },
+    {
+      "archivo": "escena-04/lamina04.svg",
+      "bytes": 1301799,
+      "sha256": "cecf2d96221e414b64083040ac34202f9bd5b36d0da14b60baabdffa8d2a6b3c"
+    },
+    {
+      "archivo": "escena-04/lamina05.svg",
+      "bytes": 1557999,
+      "sha256": "9e8278415ff8d9e890e0c9eb16d157f1a4b460a7ebf7d8c2c6574eb49fdd1ced"
+    },
+    {
+      "archivo": "escena-04/lamina06.svg",
+      "bytes": 1063612,
+      "sha256": "3623a6ab6321d968c35de9d9f9004576d460f82abb39529c50efe5a99834347e"
+    },
+    {
+      "archivo": "escena-04/lamina07.svg",
+      "bytes": 1657856,
+      "sha256": "cde086ebb74078bfc22bfe26a710270e3eaa5807b8dac0bfcff754ba15bb24b9"
+    },
+    {
+      "archivo": "escena-04/lamina08.svg",
+      "bytes": 1437633,
+      "sha256": "c06debf602e1be3f242e7535abf307a9146723df4e881d73afb21acd31c5c359"
+    },
+    {
+      "archivo": "escena-04/manifest.json",
+      "bytes": 2185,
+      "sha256": "f8ed1de8a452d4223ea5a1c2bd96aff24397438f03893cae4f9a77bae3bfc6bf"
+    },
+    {
+      "archivo": "escena-04/muestra.png",
+      "bytes": 174876,
+      "sha256": "5ded3562131f3089e67fc2a6c1174455dc36a694271a1c5b9069b3687af4a711"
+    },
+    {
+      "archivo": "escena-04/README.md",
+      "bytes": 1945,
+      "sha256": "30b9e08aec3d51183cca47a38ddf7a44f3e0eb342963a01d96d049378feab5df"
+    },
+    {
+      "archivo": "escena-04/secuencia.json",
+      "bytes": 20125,
+      "sha256": "e6ed8b35b1f0308961a05ee0c947f1cc457391437488bf60c125d67978d5bea5"
+    },
+    {
+      "archivo": "escena-05/escena-05.pdf",
+      "bytes": 7640374,
+      "sha256": "83a16dea2008e9ba7ffd14267db0c8e538e74f4a37bd5934390ad5d3c0cb9d00"
+    },
+    {
+      "archivo": "escena-05/escena-05.vectorcraft",
+      "bytes": 2058201,
+      "sha256": "c439d9c35c545ca9effcdcb982bbbf28b7b9c4eafc0b68621c406885247173a3"
+    },
+    {
+      "archivo": "escena-05/lamina01.svg",
+      "bytes": 1524431,
+      "sha256": "ec6bf6f137d0b90a371cc7020c3a38c6cf962ba1c2eec2f70e6c79751facbd7b"
+    },
+    {
+      "archivo": "escena-05/lamina02.svg",
+      "bytes": 2056361,
+      "sha256": "3cca0d9beabebc6dac1dd09f6b3d5a4cd804dbe1f6c11db0377a86f788497df6"
+    },
+    {
+      "archivo": "escena-05/lamina03.svg",
+      "bytes": 2325648,
+      "sha256": "cc9dd3879fb7aafd08b87789ac4171811d0fdaa255c764081812f2d599aa5403"
+    },
+    {
+      "archivo": "escena-05/lamina04.svg",
+      "bytes": 1295571,
+      "sha256": "43cc0e152b4a250836ea3d9b7e5a427cd77f0d6f3b000f1c391b931186d888e8"
+    },
+    {
+      "archivo": "escena-05/lamina05.svg",
+      "bytes": 1392289,
+      "sha256": "55592f9a53b9beff1eecb0e3320f352f1e1abd3c4c7c59630d9715f324710989"
+    },
+    {
+      "archivo": "escena-05/manifest.json",
+      "bytes": 1726,
+      "sha256": "8f21b369fda10c5d8047b6dccbbc46718e1171a12b8aafd8a63385c329642986"
+    },
+    {
+      "archivo": "escena-05/muestra.png",
+      "bytes": 233244,
+      "sha256": "998419680740696bebf722a1e49012ca344a4b894ac87c06c5ec6a6af52700b3"
+    },
+    {
+      "archivo": "escena-05/README.md",
+      "bytes": 1678,
+      "sha256": "c7e4ec96193e070b42abb869f81116b5762e5ead2ba0c5657fdaa1560d52aba1"
+    },
+    {
+      "archivo": "escena-05/secuencia.json",
+      "bytes": 12826,
+      "sha256": "61cd62a2014932113d1653ca3de40908e7dad4d2a334b1d410e97d6f489cbced"
+    },
+    {
+      "archivo": "inventario.json",
+      "bytes": 91205,
+      "sha256": "780cb5545dbad77099988e175ce75303f2c367f3130f7628bc7d19aedd315c5f"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 3720,
+      "sha256": "551e0e2bb0341c6ead59d7ab54b4e1a240a3c89797bcaf1ebf70133d7d440598"
+    },
+    {
+      "archivo": "recursos/componentes/estado.svg",
+      "bytes": 197753,
+      "sha256": "ddcc9ca25a3585d8f3560d4698b735d7b35ffbf7385e08b2139e17852fc372e2"
+    },
+    {
+      "archivo": "recursos/encuadres/carga-llevar.svg",
+      "bytes": 252413,
+      "sha256": "65674a79af89a4da90f688feedd491e264ff1fde6ccb0dbbc86c52c783790ced"
+    },
+    {
+      "archivo": "recursos/encuadres/carga-preparar.svg",
+      "bytes": 252703,
+      "sha256": "48ec9435131481a3d167078172eb416af7fa715f5defce5e674fd22c0009427c"
+    },
+    {
+      "archivo": "recursos/encuadres/carga-sujetar.svg",
+      "bytes": 252510,
+      "sha256": "9ca454367de5eefff367759296c4869de83d366f68626bb883afb296495002df"
+    },
+    {
+      "archivo": "recursos/encuadres/contexto-1850.svg",
+      "bytes": 493968,
+      "sha256": "4112866abaac21ec30f6501c7d9a281dea9c925ceb454becaa91438ab343ba03"
+    },
+    {
+      "archivo": "recursos/encuadres/reclamo-entrega-a.svg",
+      "bytes": 143332,
+      "sha256": "f536a523decb1560ea3dae832ab37327c75c499bacbeca9da578e9f66e3f3e2c"
+    },
+    {
+      "archivo": "recursos/encuadres/reclamo-entrega-b.svg",
+      "bytes": 197470,
+      "sha256": "6d559c070d1699a1e1b9c6123997a69e44e5b6e01436b7bb88a51df6f5aba047"
+    },
+    {
+      "archivo": "recursos/encuadres/reclamo-entrega-c.svg",
+      "bytes": 195515,
+      "sha256": "0ddd48c60c63a7ab3ee26f89e8b707083ced2064c7ce2b77c0697e05f7fac3cd"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v01.svg",
+      "bytes": 162753,
+      "sha256": "347ba273076dcf721805eef30f34fd5ee50b299d8361aafe8122c6b72e19f194"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v02.svg",
+      "bytes": 126404,
+      "sha256": "66996152b2a02386af73b61c46e67a746d30af0c1c5918c75b3091ea691505d8"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v05.svg",
+      "bytes": 157900,
+      "sha256": "8d6ba92306fa0459d88268244e00ab6d36b91d1afa58388129f9048d036cdea2"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v06.svg",
+      "bytes": 139884,
+      "sha256": "749291cd9cf57e97895c73022751f005076d0445f9716b87c747cb222acfe764"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v08.svg",
+      "bytes": 203996,
+      "sha256": "69bc39aa73767d64a350513c8a3f947a3e47eea447ace457df94467fd7bccb72"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v09.svg",
+      "bytes": 414736,
+      "sha256": "50be1f85c56b37d7e1f8b1b5b47c6e5d127398a6f2e518fabbeb6c1f8452b263"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v10.svg",
+      "bytes": 240441,
+      "sha256": "79f7c7c5b25619ce264bbce3f675345ab6efbb060a49b82c9c616b2dfea6e890"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v11.svg",
+      "bytes": 196560,
+      "sha256": "e2e839e08098048843762e7a7a374007c9a19b0887e8855a3170dac917673002"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v12-costos.svg",
+      "bytes": 289007,
+      "sha256": "4357188ce69432026516acdd3012fd2ad693851704839c96f68e6d61e1fc2107"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v12.svg",
+      "bytes": 288213,
+      "sha256": "c4040384f3d4cb55fa92b5ee507fcc5bc04476c6542c43d393414215341cc05f"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v13.svg",
+      "bytes": 345745,
+      "sha256": "2ae3c813c0eb108bd833ba374ca3a391cb3831edf6fc67773a927d5ce81e1f9f"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v14.svg",
+      "bytes": 241426,
+      "sha256": "caf2947809181fb6f866a24392a620ef56c8ca63235c9a0d4d2bd049051053ba"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v15-cerca.svg",
+      "bytes": 278307,
+      "sha256": "8c9bc8f459273e5a4a7856160b1b64f88f922b2ee67f7562ef15c64e5b9abe70"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v15.svg",
+      "bytes": 276169,
+      "sha256": "ac4c99f468d8677c1f32a0ffd7d66ad0844cba8010533d645d251c77e95cc36b"
+    },
+    {
+      "archivo": "recursos/encuadres/s01-v16.svg",
+      "bytes": 268837,
+      "sha256": "d9da5600298a1ce98cd7b5aa9e0ea67820a3d0de1a7b585620864c77ea266ba6"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v01.svg",
+      "bytes": 237034,
+      "sha256": "5f8ad29143cc4b7b85b9dc5054414a5480335fd92d884df0e24b7eed9cff6abc"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v02-prestamo.svg",
+      "bytes": 84476,
+      "sha256": "8ed50d7a0e61fb90835b2666c94bbbaac7aba3b9eed69e83e5778d27bf9874e0"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v02.svg",
+      "bytes": 164115,
+      "sha256": "754fe2554417ca7f4d112f0c8b6eebe29ab434fff7b2b07994b3a532f0f34970"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v03.svg",
+      "bytes": 282570,
+      "sha256": "834d0e87cc8ebc0423b58fbb488e53d73ebf61259e95d2f7f4069e582bfb614c"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v04.svg",
+      "bytes": 197175,
+      "sha256": "1d7e14cbba90c220e983b1bc7507463bec8eaae31dc0903f20b0b224cea2430b"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v05-sinvale.svg",
+      "bytes": 107673,
+      "sha256": "4be9ee91c85ff1ca728c89a030bc050b965622cb093ba1b7ebbf11956cb0fd33"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v05.svg",
+      "bytes": 181646,
+      "sha256": "108ae9a2b9049cb244aab6a680fdbb9b62e419ea58423680485bb69c1137b741"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v06.svg",
+      "bytes": 180103,
+      "sha256": "6326dc5eab12f795f793d2e25d2af2e78e6fa220a69bcd4252e7d81aa5e1ce41"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v07.svg",
+      "bytes": 207286,
+      "sha256": "306b04c00621f2f73dcbb2fcaa8eb3b2bbd344762bf6f9a7e70abd3cc7b068ae"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v09-prepara.svg",
+      "bytes": 142894,
+      "sha256": "bd20bb3bae3ebd408fda5ea855fc48f57a05556c777ce6646d071e2b090bd891"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v10.svg",
+      "bytes": 193880,
+      "sha256": "8d6df124d56af00ee7dcaab8299b94416eb68a824f253988dc42c4cfc4cd0dea"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v11.svg",
+      "bytes": 329725,
+      "sha256": "f7771424151f283da8c264ecb25f9d74b7b658fd83ae721b237de8a96d7455f6"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v12-parcial.svg",
+      "bytes": 88830,
+      "sha256": "ddc8ca89a73bb042540c61a8e63fda80175b3911beaccc9d2226e92f5173a669"
+    },
+    {
+      "archivo": "recursos/encuadres/s02-v12.svg",
+      "bytes": 311847,
+      "sha256": "9668c23df5e707be67ed2a3ec3c4e43be7a22393bf243aa77f22f0bf5812b827"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v01.svg",
+      "bytes": 223413,
+      "sha256": "b781bcda9a5cd62c657fa7c4285c970e968bffcab2d02f9f740bf7ddd49d003c"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v02.svg",
+      "bytes": 169436,
+      "sha256": "04db44df3a0ea7388b9bf0f43c39bc087a5ab2a8b7979b04f878714a4f2c72ea"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v03.svg",
+      "bytes": 225616,
+      "sha256": "24716386497f548ce05c075f24f3532c22b261dc7af459f807f1c6c5600d119e"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v04-prepara.svg",
+      "bytes": 168083,
+      "sha256": "3db50b8c13e73dafd7b61be5f4a317d3d39da56816288fe8cd51c499bd923e88"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v04-reposo.svg",
+      "bytes": 166745,
+      "sha256": "3d1010317a577fafc9b9dfd5dd1721282a48f36ffe1b5bffbdb802240d31fe2f"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v04.svg",
+      "bytes": 168937,
+      "sha256": "5f839e43f44f095ef4eb7125e24786cf32009df37f5be985b6e684e06632681c"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v05.svg",
+      "bytes": 157377,
+      "sha256": "0b9389675e3ffd6c450ecce1994d3b3b55a3774e20d13d73364823146abaf025"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v06-pendiente.svg",
+      "bytes": 153215,
+      "sha256": "7ffbabfa9f5980da56893830fa1fd1889e7b629df9b4c7664cf55770ca01832f"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v06-reposo.svg",
+      "bytes": 206138,
+      "sha256": "94411e8ed80c778b1f4128313034cc0b759b4a16486de2ad8b72c472e7a59cfb"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v06.svg",
+      "bytes": 208909,
+      "sha256": "48fabc300c04002ca2869f76a920f8519d9a45a1e63d97475cf64155c0650ab1"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v07.svg",
+      "bytes": 217290,
+      "sha256": "476738629063bfcab1ce76b0eeffdc85cc65db5d98c3bef54b7230dcbb4c9462"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v08-antesmonto.svg",
+      "bytes": 177084,
+      "sha256": "b8e39a214cc4b9c7af78a0520524aedb5533822e13f4cc41836379fbf4337ef9"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v08.svg",
+      "bytes": 230410,
+      "sha256": "216aa8dc69e78e23b7f239749c3c60d7f5ce1aac55804b468360268f28215c6a"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v09.svg",
+      "bytes": 155621,
+      "sha256": "90274da2b8fb011c5edb415cd70535db9bf6f1c4dff6037b28d34dc51f9e7f61"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v10.svg",
+      "bytes": 198589,
+      "sha256": "0d07f6f13c3e89d73820578be122b9eddd62ec57aeb5c13f4ff2bbe90c9e73be"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v11.svg",
+      "bytes": 286925,
+      "sha256": "fcfa44f497e52ade44712efbbbbcd25bf5185e81477f71b077c8309112e44233"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v12-elias.svg",
+      "bytes": 248028,
+      "sha256": "1cd0b00dee128ef32e89b188684f23052f32ddb2f697747c2491fb82215335f3"
+    },
+    {
+      "archivo": "recursos/encuadres/s03-v12.svg",
+      "bytes": 247726,
+      "sha256": "c7483d64e6bdd2d634bb2e6133889646b03b1689ae862fdb04ee644b81cfecc2"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v01-1851.svg",
+      "bytes": 115696,
+      "sha256": "4b649896dba4967804cfd85f0b9a8b08a780e3c296e2d2ce133db7a9eb71d6ab"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v01.svg",
+      "bytes": 133574,
+      "sha256": "c6fad41075cdfceba2f7c68dfbddc1a6f48df09de5a6499341964b44c524c444"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v03-canje.svg",
+      "bytes": 243160,
+      "sha256": "bbc050095529240305964583f9ab19c51d1568036ee20bb036910cf6ce47fd0d"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v03-interno.svg",
+      "bytes": 203969,
+      "sha256": "6c04b72d39a10d0c09a9120d0fd26cd3e97d8663ea00f02a6a6f137d78f6f149"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v03.svg",
+      "bytes": 281311,
+      "sha256": "63c6255e7ad8f9e22d9ecf28881e56e1220592cf14d6109dc7bab237a8f29c17"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v04.svg",
+      "bytes": 223119,
+      "sha256": "5d026a50c001da05dd4174db8cd655bc654abbda693245821c7fd217e3b51867"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v05.svg",
+      "bytes": 200632,
+      "sha256": "f8f463943c56becca2ebbaa1af62854c0c835bbd8044d0a4ebac76fffe5bb43e"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v06.svg",
+      "bytes": 312076,
+      "sha256": "be51b54516cf67c6f910bb061adffa81c9f32cc87644daf4f3853f5249fa955a"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v07.svg",
+      "bytes": 357096,
+      "sha256": "533e3357edc09f34a6949f20b0dc2b7de7f6259888f570e09313b16240b2c096"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v08.svg",
+      "bytes": 215934,
+      "sha256": "a5d89b660eb4ebf26a1da427ca7a64d381dbd77ff05b4f55bc50a316fa728c3d"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v09-expedientes.svg",
+      "bytes": 137088,
+      "sha256": "8a4e05e27ab390447b1a3ad5d5a8b3b941c002200bc21ae56e4770943dd73969"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v09.svg",
+      "bytes": 150279,
+      "sha256": "07830a212a753c9cb0d2799c342a1c54c435e46c82f164468e04676b54b001dc"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v10.svg",
+      "bytes": 133040,
+      "sha256": "ac08d3635611a0552306ddadec57c684b5291136d5ca0770f39ebc0c3aa38f9d"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v11.svg",
+      "bytes": 255307,
+      "sha256": "8e6d7b45237579de50f161f288cffb6bad8da314f0899360e5b87d57afc85c02"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v12.svg",
+      "bytes": 251896,
+      "sha256": "e8023bc16bf7e7dc3b0f185aa14f07c91a53d700e285bd6d682a76f0823f5f90"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v13.svg",
+      "bytes": 425685,
+      "sha256": "bfc685afca9a2c50fa8da4e4cefe437bbb8fa3d22f14469466dd9a4fc346db40"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v14.svg",
+      "bytes": 211027,
+      "sha256": "3913ec10bdd928e6d06fad98a5bb2ec9071da21e446c3861a947514a4c610f5a"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v15.svg",
+      "bytes": 222647,
+      "sha256": "a75535f52f3064fed730c60941c484a0c47afa73bc4ce3738851bc637db0e23b"
+    },
+    {
+      "archivo": "recursos/encuadres/s04-v16-informes.svg",
+      "bytes": 295479,
+      "sha256": "1d4ae0a6cac6fb6ca517c76d97f3607061c6ac2efb5a1895ab9a08c1d88fdbe5"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v01.svg",
+      "bytes": 417003,
+      "sha256": "58b0dc9d668ac86814403da25fdad6cf0de0aa090630398cae4f24f5d1869ecc"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v02.svg",
+      "bytes": 200564,
+      "sha256": "9e1349de9220b79a3c4cfe1d132e085655ad37253e879ed78dc88f4b7d350160"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v03.svg",
+      "bytes": 229207,
+      "sha256": "de99c4c52422d6fe82ea7cf92109bcc4e8eac700e5599feae7055cff25d81387"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v04-origen.svg",
+      "bytes": 350835,
+      "sha256": "f9dad82c85cbbc072fa9f32b6f2ea7ad859a3a5f7ef9a90e75218801d32f4a3f"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v04-vales.svg",
+      "bytes": 420407,
+      "sha256": "b9bf631900ea136016b010d48c2b8d3f864fbf7a093d1b82e1c354ef14361660"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v04.svg",
+      "bytes": 561240,
+      "sha256": "7fd42ddf095b43a1d9b57989c99926b79dea476bd81d9660d33a2cf88d5d5d23"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v05.svg",
+      "bytes": 882585,
+      "sha256": "55d28b4178f1cae59182dcacb517394509d005f8707a013e03e7b7d427996dff"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v06.svg",
+      "bytes": 356814,
+      "sha256": "946992794942e8b83f16b3b162e77c7ab7d1d41584257285ea77454ca1e1d9f1"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v07.svg",
+      "bytes": 170371,
+      "sha256": "c53f332f6dd7bb0b2ef7b6892e4f55608d715cc993b17894079c64e2ca3096c4"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v08.svg",
+      "bytes": 237108,
+      "sha256": "86a5dc31f703d1d00cf85963262054956e1877b8cf73bce577268f24e341575f"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v09.svg",
+      "bytes": 195920,
+      "sha256": "8e5a27700e4c3001ccc5614efd2e5b96d65b77e6ed22b55def925d11b31763f9"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v10.svg",
+      "bytes": 286901,
+      "sha256": "a53dc2ba1d7c465b18c2c5db3d4337fa442b4e164e2a0bbf833b3b9358396fe7"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v11.svg",
+      "bytes": 126789,
+      "sha256": "c41c3e91253f73a5f568cf83eac0200b464e78c2cc887d00e51a8718d3a7a664"
+    },
+    {
+      "archivo": "recursos/encuadres/s05-v12.svg",
+      "bytes": 250458,
+      "sha256": "a1d46f2865d2e00a9cac05c7ff46a467fedfce2603fd8621c13ccbafed08db57"
+    },
+    {
+      "archivo": "recursos/encuadres/vale-entrega-a.svg",
+      "bytes": 150407,
+      "sha256": "2bb5763a7a67b473c6ba2207bf35a454909eae95908d2afcb9282a951c9cea03"
+    },
+    {
+      "archivo": "recursos/encuadres/vale-entrega-b.svg",
+      "bytes": 152329,
+      "sha256": "f274eedabd592463e0279591efb88263e5ab6541252bc78d052b5c6db9167a56"
+    },
+    {
+      "archivo": "recursos/encuadres/vale-entrega-c.svg",
+      "bytes": 150374,
+      "sha256": "066c53d40fa50d6b5d45d1a300feffb7f1504ebd949f81f57194bd0e6b471df7"
+    },
+    {
+      "archivo": "recursos/gestos/carga.vectorcraft",
+      "bytes": 151049,
+      "sha256": "f1c39a2ab50ee620ace47428742c97c6b6d76472f7c48f0789741a931651a094"
+    },
+    {
+      "archivo": "recursos/gestos/carpeta-acercamiento.vectorcraft",
+      "bytes": 144232,
+      "sha256": "651489e1e5c9541a2ded66026f8dee27fd0840c7c10247e0bc91bfe71e7414f8"
+    },
+    {
+      "archivo": "recursos/gestos/contexto-1850.vectorcraft",
+      "bytes": 93054,
+      "sha256": "a1f7f191a858a912988fca76b9717e01601030fec704f80bcb4d87a376767e90"
+    },
+    {
+      "archivo": "recursos/gestos/traspasos.vectorcraft",
+      "bytes": 42441,
+      "sha256": "6cb93dc3348ca7df0db84b60d198d710a310f5d12ed3c45500fde4d0622f4ddd"
+    },
+    {
+      "archivo": "resumen.pdf",
+      "bytes": 1751337,
+      "sha256": "bb482bf7fd320ec255d5081d224f6e7034584e90f6ddd206dbe2b6114ad83aca"
+    },
+    {
+      "archivo": "resumen.png",
+      "bytes": 181550,
+      "sha256": "1ce19792600f924ca2bff7a7214fa2eb9a8ffa8cff5720b3750be8f5bf0b0d5e"
+    },
+    {
+      "archivo": "resumen.svg",
+      "bytes": 1993124,
+      "sha256": "a7ea1c2b58d316d6cfa2e45d5736e6aaaf398bdaf2f1e2fac9e07e9039752c32"
+    },
+    {
+      "archivo": "resumen.vectorcraft",
+      "bytes": 495150,
+      "sha256": "48662fcce64cd50a59f83f061a0fe12775dd604115f8b23d28a23f3029c24b64"
+    },
+    {
+      "archivo": "secuencia.json",
+      "bytes": 3549,
+      "sha256": "5a16fcfba2d1a1e82cda48128b23cc4b24d03bc881529bdbd600a05a637baaa8"
+    },
+    {
+      "archivo": "validacion.json",
+      "bytes": 1482,
+      "sha256": "03e93d7cc7a66fbda8618473cba24fce45c4c92549003d1043e98bf0d990d3c9"
+    }
+  ]
+}

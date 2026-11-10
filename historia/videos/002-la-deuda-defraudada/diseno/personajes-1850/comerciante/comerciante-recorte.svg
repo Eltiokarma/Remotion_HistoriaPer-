@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="348.85" height="998.688" viewBox="0 0 348.85 998.688">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="71" y1="636.985" x2="156" y2="636.985" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#747a64"/>
+      <stop offset="1" stop-color="#415b51"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="72" y1="816.902" x2="148" y2="816.902" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#747a64"/>
+      <stop offset="1" stop-color="#40594f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="153" y1="638.328" x2="256" y2="638.328" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#747a64"/>
+      <stop offset="1" stop-color="#4e665a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="179" y1="821.282" x2="262" y2="821.282" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#747a64"/>
+      <stop offset="1" stop-color="#40594f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="14" y1="329.224" x2="94" y2="329.224" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f6658"/>
+      <stop offset="1" stop-color="#354e41"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="15" y1="473.601" x2="69" y2="473.601" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f6658"/>
+      <stop offset="1" stop-color="#354e41"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="45" y1="461" x2="263" y2="461" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f6658"/>
+      <stop offset="1" stop-color="#354e41"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="108" y1="388.188" x2="215" y2="388.188" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b4a079"/>
+      <stop offset="1" stop-color="#897d5d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-9" x1="226" y1="330.139" x2="308" y2="330.139" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f6658"/>
+      <stop offset="1" stop-color="#354e41"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="259" y1="478.616" x2="340" y2="478.616" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f6658"/>
+      <stop offset="1" stop-color="#354e41"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-11" x1="114" y1="218.335" x2="191" y2="218.335" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0af87"/>
+      <stop offset="1" stop-color="#98775a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-12" x1="76.191" y1="116.916" x2="204.819" y2="116.916" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0af87"/>
+      <stop offset="1" stop-color="#c39d79"/>
+    </linearGradient>
+  </defs>
+  <title>Personajes del Perú hacia 1850 · comerciante articulado</title>
+  <g id="Selection">
+    <ellipse cx="174" cy="983.188" rx="174" ry="15.5" fill="#1c342b"/>
+    <path d="M80 521.688 L156 529.688 L147 739.688 C130.333 755.021 108.333 756.354 81 743.688 L71 632.688 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M97 564.688 C91 618.688 92 671.688 100 723.688 M138 571.688 L125 726.688" fill="none" stroke="#9ba38a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M83 712.688 C105.667 706.021 127.333 708.688 148 720.688 L140 924.688 L81 924.688 L72 829.688 Z" fill="url(#linear-gradient-2)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M97 740.688 C89 802.021 88.333 857.021 95 905.688 M134 763.688 L120 907.688" fill="none" stroke="#9aa28a" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="79,909.688 141,909.688 139,927.688 79,927.688" fill="#8b9680" stroke="#2d4238" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="83,912.688 139,912.688 145,939.688 136,955.688 68,962.688 40,957.688 41,945.688 79,935.688" fill="#35483e" stroke="#8c9a7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="45" y1="960.688" x2="135" y2="956.688" fill="none" stroke="#202f27" stroke-width="4" stroke-miterlimit="10"/>
+    <path d="M86 921.688 C100 927.021 116.667 928.021 136 924.688" fill="none" stroke="#9ca88a" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M153 527.688 L237 520.688 L256 638.688 L249 750.688 C225 759.354 201.667 757.354 179 744.688 L165 651.688 Z" fill="url(#linear-gradient-3)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M180 565.688 C192.667 616.354 198.333 672.021 197 732.688 M227 575.688 L233 726.688" fill="none" stroke="#a4ad90" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M179 719.688 C201 708.354 224.333 709.354 249 722.688 L262 924.688 L203 930.688 L184 829.688 Z" fill="url(#linear-gradient-4)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M199 741.688 C201.667 802.354 208.667 859.021 220 911.688 M237 745.688 L248 903.688" fill="none" stroke="#9aa28a" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="201,911.688 262,906.688 266,926.688 203,932.688" fill="#8b9680" stroke="#2d4238" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M202 916.688 L259 912.688 L267 940.688 L314 960.688 C320.667 968.688 320 974.021 312 976.688 L207 976.688 L194 965.688 Z" fill="#35483e" stroke="#8c9a7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="205" y1="976.688" x2="314" y2="976.688" fill="none" stroke="#202f27" stroke-width="4" stroke-miterlimit="10"/>
+    <path d="M218 925.688 C233.333 929.688 247.333 929.021 260 923.688 M266 942.688 C280.667 944.688 290 951.688 294 963.688" fill="none" stroke="#9ca88a" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M71 243.688 C53.667 241.688 41 249.354 33 266.688 L14 396.688 C27.333 413.354 44 418.688 64 412.688 L94 287.688 Z" fill="url(#linear-gradient-5)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M45 273.688 L29 378.688 M69 296.688 L52 396.688" fill="none" stroke="#b7b794" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 387.688 C31.667 380.354 48.333 382.688 65 394.688 L69 553.688 L31 563.688 L17 497.688 Z" fill="url(#linear-gradient-6)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="26,538.688 68,534.688 70,557.688 31,565.688" fill="#ddd2b2" stroke="#2d4238" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="38" y1="416.688" x2="43" y2="523.688" fill="none" stroke="#b7b794" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36 554.688 C46 548.688 60 548.688 68 555.688 L74 578.688 L79 599.688 C79 604.354 77.333 606.688 74 606.688 C71.333 607.354 68.667 603.021 66 593.688 L71 620.688 C71 624.688 69.333 626.688 66 626.688 C62.667 627.354 60 619.688 58 603.688 L61 626.688 C60.333 631.354 58 633.021 54 631.688 L47 605.688 L49 627.688 C47.667 631.688 45.333 632.354 42 629.688 L36 602.688 L30 585.688 C26 591.021 22.333 592.021 19 588.688 C17 586.021 18.333 579.354 23 568.688 Z" fill="#c39d79" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="40" y1="571.688" x2="55" y2="584.688" fill="none" stroke="#98775a" stroke-miterlimit="10"/>
+    <line x1="41" y1="591.688" x2="61" y2="597.688" fill="none" stroke="#98775a" stroke-miterlimit="10"/>
+    <path d="M82 230.688 C128.667 215.354 176.667 216.021 226 232.688 L246 324.688 L229 515.688 L263 689.688 C230.333 708.354 199 706.354 169 683.688 L158 547.688 L140 685.688 C103.333 699.688 71.667 697.354 45 678.688 L76 505.688 L60 329.688 Z" fill="url(#linear-gradient-7)" stroke="#2d4238" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="121,232.688 196,229.688 215,505.688 164,546.688 108,504.688" fill="url(#linear-gradient-8)" stroke="#2d4238" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="132,236.688 162,289.688 191,233.688 183,335.688 142,336.688" fill="#e6dabc" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="103,230.688 139,246.688 156,307.688 122,343.688 90,273.688 103,262.688 87,253.688" fill="#708274" stroke="#aeb69a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="207,229.688 181,249.688 165,306.688 201,344.688 235,271.688 221,260.688 234,251.688" fill="#6b7c6a" stroke="#aeb69a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M118 360.688 L112 502.688 L158 532.688 M208 359.688 L214 498.688 L172 533.688 M72 551.688 C92.667 569.688 115 573.354 139 562.688 M189 566.688 C213 578.021 232.667 576.688 248 562.688" fill="none" stroke="#91a18a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="165.5" cy="352.188" r="3.5" fill="#cab98a" stroke="#2d4238" stroke-width="0.9" stroke-miterlimit="10"/>
+    <line x1="176" y1="352.688" x2="183" y2="351.688" fill="none" stroke="#6c7157" stroke-miterlimit="10"/>
+    <circle cx="165.5" cy="384.188" r="3.5" fill="#cab98a" stroke="#2d4238" stroke-width="0.9" stroke-miterlimit="10"/>
+    <line x1="176" y1="384.688" x2="183" y2="383.688" fill="none" stroke="#6c7157" stroke-miterlimit="10"/>
+    <circle cx="165.5" cy="416.188" r="3.5" fill="#cab98a" stroke="#2d4238" stroke-width="0.9" stroke-miterlimit="10"/>
+    <line x1="176" y1="416.688" x2="183" y2="415.688" fill="none" stroke="#6c7157" stroke-miterlimit="10"/>
+    <circle cx="165.5" cy="448.188" r="3.5" fill="#cab98a" stroke="#2d4238" stroke-width="0.9" stroke-miterlimit="10"/>
+    <line x1="176" y1="448.688" x2="183" y2="447.688" fill="none" stroke="#6c7157" stroke-miterlimit="10"/>
+    <circle cx="165.5" cy="480.188" r="3.5" fill="#cab98a" stroke="#2d4238" stroke-width="0.9" stroke-miterlimit="10"/>
+    <line x1="176" y1="480.688" x2="183" y2="479.688" fill="none" stroke="#6c7157" stroke-miterlimit="10"/>
+    <path d="M95 486.688 L132 486.688 M194 486.688 L228 486.688" fill="none" stroke="#d0c297" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M99 491.688 C132.333 514.354 163.333 514.688 192 492.688" fill="none" stroke="#c2b181" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="193" cy="491.688" r="4" fill="#bcad7f" stroke="#2d4238" stroke-width="0.8" stroke-miterlimit="10"/>
+    <path d="M226 239.688 C248 239.688 264 250.021 274 270.688 L308 407.688 C292.667 421.021 276.667 424.021 260 416.688 L227 325.688 Z" fill="url(#linear-gradient-9)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M256 271.688 L290 394.688 M245 307.688 L270 395.688" fill="none" stroke="#b7b794" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M259 396.688 C275 388.688 291.333 390.021 308 400.688 L340 549.688 L301 565.688 L276 502.688 Z" fill="url(#linear-gradient-10)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="296,539.688 337,527.688 344,553.688 303,566.688" fill="#ded3b3" stroke="#2d4238" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M281 425.688 C291 465.021 300.333 498.021 309 524.688" fill="none" stroke="#b7b794" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="327" cy="514.688" r="2" fill="#a6b098" stroke="#2d4238" stroke-width="0.8" stroke-miterlimit="10"/>
+    <circle cx="332" cy="523.688" r="2" fill="#a6b098" stroke="#2d4238" stroke-width="0.8" stroke-miterlimit="10"/>
+    <path d="M305 557.688 C315 551.688 329 551.688 337 558.688 L343 581.688 L348 602.688 C348 607.354 346.333 609.688 343 609.688 C340.333 610.354 337.667 606.021 335 596.688 L340 623.688 C340 627.688 338.333 629.688 335 629.688 C331.667 630.354 329 622.688 327 606.688 L330 629.688 C329.333 634.354 327 636.021 323 634.688 L316 608.688 L318 630.688 C316.667 634.688 314.333 635.354 311 632.688 L305 605.688 L299 588.688 C295 594.021 291.333 595.021 288 591.688 C286 589.021 287.333 582.354 292 571.688 Z" fill="#c39d79" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="309" y1="574.688" x2="324" y2="587.688" fill="none" stroke="#98775a" stroke-miterlimit="10"/>
+    <line x1="310" y1="594.688" x2="330" y2="600.688" fill="none" stroke="#98775a" stroke-miterlimit="10"/>
+    <path d="M117 185.688 L185 187.688 L191 239.688 C167.667 255.688 142 254.688 114 236.688 Z" fill="url(#linear-gradient-11)" stroke="#2d4238" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M121 197.688 C139.667 212.354 160 212.688 182 198.688" fill="none" stroke="#98775a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="115,225.688 147,241.688 192,224.688 188,252.688 155,257.688 119,253.688" fill="#4d5440" stroke="#a7ac8d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="151,239.688 130,234.688 123,256.688 150,250.688 159,259.688 165,249.688 188,254.688 183,235.688 162,240.688" fill="#77795b" stroke="#b4b18d" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="oreja_visible">
+      <ellipse cx="78" cy="124.188" rx="14" ry="21.5" fill="#c39d79" stroke="#2d4238" stroke-width="1.5" stroke-miterlimit="10"/>
+      <path d="M80 111.688 C68 104.688 68 126.688 79 134.688 M78 115.688 C74.667 119.021 75 122.354 79 125.688" fill="none" stroke="#98775a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="rostro_base">
+      <path d="M88 36.688 C107 13.688 159 9.688 185 31.688 C202 49.688 207 76.688 204 105.688 L200 153.688 C197 189.688 179 212.688 152 216.688 C123 216.688 99 198.688 88 171.688 L80 137.688 C74 105.688 74 65.688 88 36.688 Z" fill="url(#linear-gradient-12)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M191 60.688 C198 89.688 198 126.688 192 155.688 C188 179.688 172 200.688 149 208.688 L152 216.688 C180 211.688 197 189.688 200 153.688 L204 105.688 C207 76.688 202 50.688 190 38.688 Z" fill="#c39d79"/>
+      <path d="M100 156.688 C107.333 160.021 115 160.688 123 158.688 M191 157.688 C189 163.688 186.333 168.021 183 170.688 M140 202.688 C148 206.021 156 206.021 164 202.688" fill="none" stroke="#98775a" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="nariz_central">
+      <path d="M151 116.688 C148 126.688 149 135.688 153 141.688 C157 145.021 161 144.688 165 140.688 C161 138.688 158.667 135.021 158 129.688 L157 115.688 Z" fill="#c39d79"/>
+      <path d="M149 113.688 C146 124.688 146 134.688 150 141.688 C154 145.021 158 145.021 162 141.688" fill="none" stroke="#8d7055" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M147 145.688 C149 144.354 150.667 144.688 152 146.688 M161 145.688 C163 143.688 164.667 143.354 166 144.688" fill="none" stroke="#98775a" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="cabello">
+      <path d="M72 102.688 C56 54.688 74 11.688 114 5.688 C146 -4.312 172 1.688 192 23.688 C200.667 35.021 204 52.688 202 76.688 L189 76.688 L179 44.688 C151 36.688 124.333 41.688 99 59.688 L88 100.688 L86 137.688 L74 132.688 Z" fill="#464b3b" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M86 60.688 C107.333 37.354 133 25.021 163 23.688 M92 71.688 C110.667 51.688 131.667 40.354 155 37.688 M87 78.688 L82 120.688" fill="none" stroke="#8b9171" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M92 142.688 C99.333 161.354 107.333 173.021 116 177.688 L117 197.688 C103.667 193.688 94.333 185.354 89 172.688 Z" fill="#646348"/>
+    </g>
+    <path d="M101 111.688 C110.333 104.354 120 104.354 130 111.688 C120.667 117.021 111 117.021 101 111.688 Z" fill="#e9dfc8" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="117.5" cy="111.188" rx="3.5" ry="5.5" fill="#2d4238"/>
+    <path d="M160 111.688 C168 105.021 176.667 105.021 186 111.688 C177.333 116.354 168.667 116.354 160 111.688 Z" fill="#e9dfc8" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="174.5" cy="111.688" rx="3.5" ry="5" fill="#2d4238"/>
+    <path d="M102 120.688 C111.333 123.354 120.333 123.021 129 119.688 M161 120.688 C170.333 122.688 178.667 122.021 186 118.688" fill="none" stroke="#98775a" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M100 97.688 C109.333 93.021 119 92.688 129 96.688 M161 95.688 C169.667 92.354 178.333 93.021 187 97.688" fill="none" stroke="#464b3b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M135 174.688 C148.333 178.688 160.667 178.021 172 172.688" fill="none" stroke="#644f40" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M143 185.688 C151.667 188.354 159.333 188.021 166 184.688" fill="none" stroke="#98775a" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

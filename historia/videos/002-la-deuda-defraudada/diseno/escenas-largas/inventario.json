@@ -1,0 +1,3584 @@
+{
+  "fecha": "2026-11-10",
+  "estado": "Borrador para revisión",
+  "herramienta": "VectorCraft mediante MCP",
+  "recurso_estatico_no_composicion_animada": true,
+  "recursos": [
+    {
+      "id": "s01-v01",
+      "svg": "recursos/encuadres/s01-v01.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 1,
+          "momento": "1A",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 1,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 164–169 · islas v3; ilustración conceptual",
+        "variacion": {
+          "nota": "Se sustituye solo el paisaje de retorno por Chincha detallada con mar azul. El original se conserva."
+        }
+      }
+    },
+    {
+      "id": "s01-v02",
+      "svg": "recursos/encuadres/s01-v02.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 1,
+          "momento": "1A",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 2,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Natural Earth 50m · costa física; ubicaciones orientativas",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "contexto-1850",
+      "svg": "recursos/encuadres/contexto-1850.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 1,
+          "momento": "1A",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "dibujo_nuevo",
+        "archivo_nativo": "recursos/gestos/contexto-1850.vectorcraft",
+        "lamina_fuente": 1,
+        "base": "Guion, idea 0; Q, pp. 169–170; C, cap. 1",
+        "componente": "recursos/componentes/estado.svg",
+        "nota": "No representa porcentajes ni un balance fiscal."
+      }
+    },
+    {
+      "id": "s01-v05",
+      "svg": "recursos/encuadres/s01-v05.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 2,
+          "momento": "1B.1",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 5,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, pp. 164–169; C, capítulo 1 · guano y extracción",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s01-v06",
+      "svg": "recursos/encuadres/s01-v06.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 2,
+          "momento": "1B.1",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 6,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, pp. 164–169; C, capítulo 1 · uso agrícola",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "carga-preparar",
+      "svg": "recursos/encuadres/carga-preparar.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 2,
+          "momento": "1B.1",
+          "estado": 3
+        },
+        {
+          "escena": 1,
+          "lamina": 3,
+          "momento": "1B.2",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "dibujo_nuevo",
+        "archivo_nativo": "recursos/gestos/carga.vectorcraft",
+        "lamina_fuente": 1,
+        "entidad": "carga_guano_testigo",
+        "actor_canvas": [
+          90,
+          40,
+          405,
+          540
+        ],
+        "apoyo": {
+          "x": 230.83540093495427,
+          "y": 358.9583125,
+          "width": 112,
+          "height": 171.54168750000002
+        },
+        "suelo": 530.5,
+        "rig": "../personajes-1850/trabajador/rig.json",
+        "gesto": "../personajes-1850/gestos.json#sostener_carga",
+        "paso": null,
+        "nota": "Trabajador genérico y apoyo de madera editorial; no reconstrucción exacta de instalaciones ni prueba de condición jurídica."
+      }
+    },
+    {
+      "id": "carga-sujetar",
+      "svg": "recursos/encuadres/carga-sujetar.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 3,
+          "momento": "1B.2",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "dibujo_nuevo",
+        "archivo_nativo": "recursos/gestos/carga.vectorcraft",
+        "lamina_fuente": 2,
+        "entidad": "carga_guano_testigo",
+        "actor_canvas": [
+          90,
+          40,
+          405,
+          540
+        ],
+        "apoyo": {
+          "x": 230.83540093495427,
+          "y": 358.9583125,
+          "width": 112,
+          "height": 171.54168750000002
+        },
+        "suelo": 530.5,
+        "rig": "../personajes-1850/trabajador/rig.json",
+        "gesto": "../personajes-1850/gestos.json#sostener_carga",
+        "paso": null,
+        "nota": "Trabajador genérico y apoyo de madera editorial; no reconstrucción exacta de instalaciones ni prueba de condición jurídica."
+      }
+    },
+    {
+      "id": "carga-llevar",
+      "svg": "recursos/encuadres/carga-llevar.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 3,
+          "momento": "1B.2",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "dibujo_nuevo",
+        "archivo_nativo": "recursos/gestos/carga.vectorcraft",
+        "lamina_fuente": 3,
+        "entidad": "carga_guano_testigo",
+        "actor_canvas": [
+          270,
+          40,
+          405,
+          540
+        ],
+        "apoyo": {
+          "x": 230.83540093495427,
+          "y": 358.9583125,
+          "width": 112,
+          "height": 171.54168750000002
+        },
+        "suelo": 530.5,
+        "rig": "../personajes-1850/trabajador/rig.json",
+        "gesto": "../personajes-1850/gestos.json#sostener_carga",
+        "paso": "../personajes-1850/poses-continuidad/poses.json",
+        "nota": "Trabajador genérico y apoyo de madera editorial; no reconstrucción exacta de instalaciones ni prueba de condición jurídica."
+      }
+    },
+    {
+      "id": "s01-v08",
+      "svg": "recursos/encuadres/s01-v08.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 4,
+          "momento": "1C.1",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 8,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          3430,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "C, capítulo 1 · embarque; reconstrucción esquemática de instalaciones",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s01-v09",
+      "svg": "recursos/encuadres/s01-v09.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 4,
+          "momento": "1C.1",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 9,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, pp. 164–168 · esquema comercial, sin itinerario marítimo",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s01-v10",
+      "svg": "recursos/encuadres/s01-v10.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 4,
+          "momento": "1C.1",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 10,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, pp. 164–168 · mercado británico; arquitectura conceptual",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s01-v11",
+      "svg": "recursos/encuadres/s01-v11.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 5,
+          "momento": "1C.2",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 11,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, pp. 167–168 · Gibbs como consignatario; oficina conceptual",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s01-v12-costos",
+      "svg": "recursos/encuadres/s01-v12-costos.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 5,
+          "momento": "1C.2",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 1,
+        "vinyeta": 12,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, pp. 164–168; C, capítulo 1 · esquema básico de cuentas",
+        "variacion": {
+          "ocultar_ids": [],
+          "poses_actores": {},
+          "zonas_foco": [
+            [
+              2006,
+              5829.9091796875,
+              203.40478515625,
+              42.13330078125
+            ],
+            [
+              1640,
+              5961.9091796875,
+              116.8291015625,
+              42.13330078125
+            ]
+          ],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s01-v12",
+      "svg": "recursos/encuadres/s01-v12.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 5,
+          "momento": "1C.2",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 12,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, pp. 164–168; C, capítulo 1 · esquema básico de cuentas",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s01-v13",
+      "svg": "recursos/encuadres/s01-v13.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 6,
+          "momento": "1D.1",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 13,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          6920,
+          1120,
+          630
+        ],
+        "lamina_fuente": 4,
+        "base": "Q, pp. 169–170 · recursos públicos y deuda interna",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s01-v14",
+      "svg": "recursos/encuadres/s01-v14.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 6,
+          "momento": "1D.1",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 14,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          6920,
+          1120,
+          630
+        ],
+        "lamina_fuente": 4,
+        "base": "Q, p. 169; B, pp. 20–21 · ejemplos didácticos",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s01-v15",
+      "svg": "recursos/encuadres/s01-v15.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 6,
+          "momento": "1D.1",
+          "estado": 3
+        },
+        {
+          "escena": 1,
+          "lamina": 7,
+          "momento": "1D.2",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 15,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          7870,
+          1120,
+          630
+        ],
+        "lamina_fuente": 4,
+        "base": "Q, pp. 169–170 · reconstrucción editorial del reclamo",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s01-v15-cerca",
+      "svg": "recursos/encuadres/s01-v15-cerca.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 7,
+          "momento": "1D.2",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "acercamiento",
+        "seccion": 1,
+        "vinyeta": 15,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          7870,
+          1120,
+          630
+        ],
+        "lamina_fuente": 4,
+        "base": "Q, pp. 169–170 · reconstrucción editorial del reclamo",
+        "variacion": {
+          "camara": {
+            "scale": 1.35,
+            "focus": [
+              450,
+              320
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "s01-v16",
+      "svg": "recursos/encuadres/s01-v16.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 7,
+          "momento": "1D.2",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 1,
+        "vinyeta": 16,
+        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
+        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          7870,
+          1120,
+          630
+        ],
+        "lamina_fuente": 4,
+        "base": "Guion y Q, pp. 169–170 · continuidad con la sección 2",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s02-v01",
+      "svg": "recursos/encuadres/s02-v01.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 1,
+          "momento": "2A",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 2,
+        "vinyeta": 1,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s02-v02-prestamo",
+      "svg": "recursos/encuadres/s02-v02-prestamo.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 1,
+          "momento": "2A",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 2,
+        "vinyeta": 2,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "ocultar_ids": [
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s02-v02",
+      "svg": "recursos/encuadres/s02-v02.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 1,
+          "momento": "2A",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 2,
+        "vinyeta": 2,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s02-v03",
+      "svg": "recursos/encuadres/s02-v03.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 2,
+          "momento": "2B",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 2,
+        "vinyeta": 3,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s02-v04",
+      "svg": "recursos/encuadres/s02-v04.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 2,
+          "momento": "2B",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 2,
+        "vinyeta": 4,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s02-v05-sinvale",
+      "svg": "recursos/encuadres/s02-v05-sinvale.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 2,
+          "momento": "2B",
+          "estado": 3
+        },
+        {
+          "escena": 2,
+          "lamina": 3,
+          "momento": "2C",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 2,
+        "vinyeta": 5,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "ocultar_ids": [
+            489,
+            2192,
+            476,
+            474,
+            473,
+            472,
+            471,
+            461,
+            460,
+            459,
+            458,
+            457,
+            456,
+            455,
+            454,
+            453,
+            452,
+            451
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": [
+            [
+              435,
+              "PRIMERO SE RECONOCE EL RECLAMO"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "s02-v05",
+      "svg": "recursos/encuadres/s02-v05.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 3,
+          "momento": "2C",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 2,
+        "vinyeta": 5,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s02-v06",
+      "svg": "recursos/encuadres/s02-v06.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 3,
+          "momento": "2C",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 2,
+        "vinyeta": 6,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s02-v07",
+      "svg": "recursos/encuadres/s02-v07.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 4,
+          "momento": "2D",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 2,
+        "vinyeta": 7,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          3430,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "reclamo-entrega-a",
+      "svg": "recursos/encuadres/reclamo-entrega-a.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 4,
+          "momento": "2D",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "dibujo_nuevo",
+        "archivo_nativo": "recursos/gestos/traspasos.vectorcraft",
+        "lamina_fuente": 1,
+        "entidad": "reclamo_generico_01",
+        "rectangulo_papel": [
+          200,
+          130,
+          340,
+          380
+        ],
+        "grupo_papel": 23,
+        "manos": [
+          {
+            "lado": "izquierda",
+            "gesto": "agarre",
+            "rectangulo": [
+              -33.51598504917081,
+              335.5156584533875,
+              260,
+              115.51965017962769
+            ],
+            "contacto": [
+              200,
+              365
+            ],
+            "ids": [
+              34
+            ]
+          },
+          {
+            "lado": "derecha",
+            "gesto": "apoyo",
+            "rectangulo": [
+              989.5,
+              331.63136708582323,
+              270,
+              137.03083183634564
+            ],
+            "contacto": [
+              1030,
+              370
+            ],
+            "ids": [
+              43
+            ]
+          }
+        ],
+        "nota": "El mismo documento cambia de tenedor; no es una transacción individual documentada."
+      }
+    },
+    {
+      "id": "reclamo-entrega-b",
+      "svg": "recursos/encuadres/reclamo-entrega-b.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 4,
+          "momento": "2D",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "dibujo_nuevo",
+        "archivo_nativo": "recursos/gestos/traspasos.vectorcraft",
+        "lamina_fuente": 2,
+        "entidad": "reclamo_generico_01",
+        "rectangulo_papel": [
+          390,
+          105,
+          340,
+          380
+        ],
+        "grupo_papel": 68,
+        "manos": [
+          {
+            "lado": "izquierda",
+            "gesto": "agarre",
+            "rectangulo": [
+              156.4840149508292,
+              310.5156584533876,
+              260,
+              115.51965017962769
+            ],
+            "contacto": [
+              390,
+              340
+            ],
+            "ids": [
+              291,
+              295
+            ]
+          },
+          {
+            "lado": "derecha",
+            "gesto": "agarre",
+            "rectangulo": [
+              703.5159850491708,
+              310.5156584533876,
+              260,
+              115.51965017962769
+            ],
+            "contacto": [
+              730,
+              340
+            ],
+            "ids": [
+              297,
+              301
+            ]
+          }
+        ],
+        "nota": "El mismo documento cambia de tenedor; no es una transacción individual documentada."
+      }
+    },
+    {
+      "id": "reclamo-entrega-c",
+      "svg": "recursos/encuadres/reclamo-entrega-c.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 4,
+          "momento": "2D",
+          "estado": 4
+        }
+      ],
+      "procedencia": {
+        "tipo": "dibujo_nuevo",
+        "archivo_nativo": "recursos/gestos/traspasos.vectorcraft",
+        "lamina_fuente": 3,
+        "entidad": "reclamo_generico_01",
+        "rectangulo_papel": [
+          570,
+          130,
+          340,
+          380
+        ],
+        "grupo_papel": 122,
+        "manos": [
+          {
+            "lado": "izquierda",
+            "gesto": "apoyo",
+            "rectangulo": [
+              -19.5,
+              391.6313670858233,
+              270,
+              137.03083183634564
+            ],
+            "contacto": [
+              210,
+              430
+            ],
+            "ids": [
+              129
+            ]
+          },
+          {
+            "lado": "derecha",
+            "gesto": "agarre",
+            "rectangulo": [
+              883.5159850491708,
+              335.51565845338746,
+              260,
+              115.51965017962769
+            ],
+            "contacto": [
+              910,
+              365
+            ],
+            "ids": [
+              142
+            ]
+          }
+        ],
+        "nota": "El mismo documento cambia de tenedor; no es una transacción individual documentada."
+      }
+    },
+    {
+      "id": "s02-v09-prepara",
+      "svg": "recursos/encuadres/s02-v09-prepara.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 5,
+          "momento": "2E",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 2,
+        "vinyeta": 9,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "ocultar_ids": [],
+          "poses_actores": {
+            "comerciante": "prepara",
+            "intermediario": "prepara"
+          },
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s02-v10",
+      "svg": "recursos/encuadres/s02-v10.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 5,
+          "momento": "2E",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 2,
+        "vinyeta": 10,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s02-v11",
+      "svg": "recursos/encuadres/s02-v11.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 5,
+          "momento": "2E",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 2,
+        "vinyeta": 11,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s02-v12-parcial",
+      "svg": "recursos/encuadres/s02-v12-parcial.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 6,
+          "momento": "2F",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 2,
+        "vinyeta": 12,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "ocultar_ids": [
+            1127,
+            1126,
+            1125,
+            1124,
+            1122,
+            1121,
+            1120,
+            1119,
+            1109,
+            1108,
+            1107,
+            1106,
+            1105,
+            1104,
+            1103,
+            1102,
+            1101,
+            1100,
+            1099,
+            1098,
+            1097,
+            1096,
+            1222,
+            1029,
+            1028,
+            1027,
+            1026,
+            1025,
+            1024
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s02-v12",
+      "svg": "recursos/encuadres/s02-v12.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 6,
+          "momento": "2F",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 2,
+        "vinyeta": 12,
+        "archivo_nativo": "../storyboard-seccion02/storyboard-02-seccion02.vectorcraft",
+        "secuencia": "../storyboard-seccion02/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v01",
+      "svg": "recursos/encuadres/s03-v01.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 2,
+          "lamina": 6,
+          "momento": "2F",
+          "estado": 3
+        },
+        {
+          "escena": 3,
+          "lamina": 1,
+          "momento": "3A",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 1,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 169–170; B, pp. 19–23. Ejemplo genérico, no expediente de Novoa.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v02",
+      "svg": "recursos/encuadres/s03-v02.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 1,
+          "momento": "3A",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 2,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v03",
+      "svg": "recursos/encuadres/s03-v03.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 1,
+          "momento": "3A",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 3,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v04-reposo",
+      "svg": "recursos/encuadres/s03-v04-reposo.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 2,
+          "momento": "3B",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 3,
+        "vinyeta": 4,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "ocultar_ids": [],
+          "poses_actores": {
+            "reclamante": "quieto",
+            "intermediario": "quieto"
+          },
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s03-v04-prepara",
+      "svg": "recursos/encuadres/s03-v04-prepara.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 2,
+          "momento": "3B",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 3,
+        "vinyeta": 4,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "ocultar_ids": [],
+          "poses_actores": {
+            "reclamante": "quieto",
+            "intermediario": "prepara"
+          },
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s03-v05",
+      "svg": "recursos/encuadres/s03-v05.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 2,
+          "momento": "3B",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 5,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v06-pendiente",
+      "svg": "recursos/encuadres/s03-v06-pendiente.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 3,
+          "momento": "3C",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 3,
+        "vinyeta": 6,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "ocultar_ids": [
+            547,
+            548,
+            549,
+            550
+          ],
+          "poses_actores": {
+            "intermediario": "quieto",
+            "funcionario": "quieto"
+          },
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s03-v06",
+      "svg": "recursos/encuadres/s03-v06.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 3,
+          "momento": "3C",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 6,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v06-reposo",
+      "svg": "recursos/encuadres/s03-v06-reposo.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 3,
+          "momento": "3C",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 3,
+        "vinyeta": 6,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "ocultar_ids": [],
+          "poses_actores": {
+            "intermediario": "quieto",
+            "funcionario": "quieto"
+          },
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s03-v07",
+      "svg": "recursos/encuadres/s03-v07.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 4,
+          "momento": "3D",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 7,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          3430,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v08-antesmonto",
+      "svg": "recursos/encuadres/s03-v08-antesmonto.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 4,
+          "momento": "3D",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 3,
+        "vinyeta": 8,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          3430,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "ocultar_ids": [
+            704,
+            705,
+            706,
+            707
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s03-v08",
+      "svg": "recursos/encuadres/s03-v08.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 4,
+          "momento": "3D",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 8,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          3430,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v09",
+      "svg": "recursos/encuadres/s03-v09.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 5,
+          "momento": "3E",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 9,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v10",
+      "svg": "recursos/encuadres/s03-v10.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 5,
+          "momento": "3E",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 10,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v11",
+      "svg": "recursos/encuadres/s03-v11.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 5,
+          "momento": "3E",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 11,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 171 y notas 112–113. Todas las cantidades centrales se expresan en vales.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v12",
+      "svg": "recursos/encuadres/s03-v12.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 6,
+          "momento": "3F",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 12,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 171 y notas 112–113; regreso al conjunto: Q, p. 170. Las cifras generales no siguen un pago individual.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v12-elias",
+      "svg": "recursos/encuadres/s03-v12-elias.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 6,
+          "momento": "3F",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 3,
+        "vinyeta": 12,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 171 y notas 112–113; regreso al conjunto: Q, p. 170. Las cifras generales no siguen un pago individual.",
+        "variacion": {
+          "ocultar_ids": [],
+          "poses_actores": {},
+          "zonas_foco": [
+            [
+              1627,
+              5741,
+              211,
+              277
+            ]
+          ],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s04-v01-1851",
+      "svg": "recursos/encuadres/s04-v01-1851.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 3,
+          "lamina": 6,
+          "momento": "3F",
+          "estado": 3
+        },
+        {
+          "escena": 4,
+          "lamina": 1,
+          "momento": "4A.1",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 4,
+        "vinyeta": 1,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, p. 170 · deuda reconocida, no efectivo ni monto robado",
+        "variacion": {
+          "ocultar_ids": [
+            168,
+            167,
+            166,
+            165,
+            164,
+            163,
+            162,
+            161,
+            160,
+            159,
+            158,
+            157,
+            156,
+            155,
+            154,
+            144
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s04-v01",
+      "svg": "recursos/encuadres/s04-v01.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 1,
+          "momento": "4A.1",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 1,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, p. 170 · deuda reconocida, no efectivo ni monto robado",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "vale-entrega-a",
+      "svg": "recursos/encuadres/vale-entrega-a.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 1,
+          "momento": "4A.1",
+          "estado": 3
+        },
+        {
+          "escena": 4,
+          "lamina": 2,
+          "momento": "4A.2",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "dibujo_nuevo",
+        "archivo_nativo": "recursos/gestos/traspasos.vectorcraft",
+        "lamina_fuente": 4,
+        "entidad": "vale_generico_01",
+        "rectangulo_papel": [
+          200,
+          130,
+          340,
+          380
+        ],
+        "grupo_papel": 170,
+        "manos": [
+          {
+            "lado": "izquierda",
+            "gesto": "agarre",
+            "rectangulo": [
+              -33.51598504917081,
+              335.51565845338746,
+              260,
+              115.51965017962769
+            ],
+            "contacto": [
+              200,
+              365
+            ],
+            "ids": [
+              181
+            ]
+          },
+          {
+            "lado": "derecha",
+            "gesto": "apoyo",
+            "rectangulo": [
+              989.5,
+              331.63136708582306,
+              270,
+              137.03083183634564
+            ],
+            "contacto": [
+              1030,
+              370
+            ],
+            "ids": [
+              190
+            ]
+          }
+        ],
+        "nota": "El mismo documento cambia de tenedor; no es una transacción individual documentada."
+      }
+    },
+    {
+      "id": "vale-entrega-b",
+      "svg": "recursos/encuadres/vale-entrega-b.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 2,
+          "momento": "4A.2",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "dibujo_nuevo",
+        "archivo_nativo": "recursos/gestos/traspasos.vectorcraft",
+        "lamina_fuente": 5,
+        "entidad": "vale_generico_01",
+        "rectangulo_papel": [
+          390,
+          105,
+          340,
+          380
+        ],
+        "grupo_papel": 215,
+        "manos": [
+          {
+            "lado": "izquierda",
+            "gesto": "agarre",
+            "rectangulo": [
+              156.4840149508292,
+              310.51565845338746,
+              260,
+              115.51965017962769
+            ],
+            "contacto": [
+              390,
+              340
+            ],
+            "ids": [
+              303,
+              307
+            ]
+          },
+          {
+            "lado": "derecha",
+            "gesto": "agarre",
+            "rectangulo": [
+              703.5159850491708,
+              310.51565845338746,
+              260,
+              115.51965017962769
+            ],
+            "contacto": [
+              730,
+              340
+            ],
+            "ids": [
+              309,
+              313
+            ]
+          }
+        ],
+        "nota": "El mismo documento cambia de tenedor; no es una transacción individual documentada."
+      }
+    },
+    {
+      "id": "vale-entrega-c",
+      "svg": "recursos/encuadres/vale-entrega-c.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 2,
+          "momento": "4A.2",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "dibujo_nuevo",
+        "archivo_nativo": "recursos/gestos/traspasos.vectorcraft",
+        "lamina_fuente": 6,
+        "entidad": "vale_generico_01",
+        "rectangulo_papel": [
+          570,
+          130,
+          340,
+          380
+        ],
+        "grupo_papel": 266,
+        "manos": [
+          {
+            "lado": "izquierda",
+            "gesto": "apoyo",
+            "rectangulo": [
+              -19.5,
+              391.63136708582306,
+              270,
+              137.03083183634564
+            ],
+            "contacto": [
+              210,
+              430
+            ],
+            "ids": [
+              273
+            ]
+          },
+          {
+            "lado": "derecha",
+            "gesto": "agarre",
+            "rectangulo": [
+              883.5159850491708,
+              335.51565845338746,
+              260,
+              115.51965017962769
+            ],
+            "contacto": [
+              910,
+              365
+            ],
+            "ids": [
+              286
+            ]
+          }
+        ],
+        "nota": "El mismo documento cambia de tenedor; no es una transacción individual documentada."
+      }
+    },
+    {
+      "id": "s04-v03-interno",
+      "svg": "recursos/encuadres/s04-v03-interno.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 3,
+          "momento": "4B",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 4,
+        "vinyeta": 3,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 179–181 · conversión anterior a la investigación de 1855",
+        "variacion": {
+          "ocultar_ids": [
+            275,
+            273,
+            271,
+            270,
+            269,
+            268,
+            267,
+            266,
+            265,
+            264,
+            263,
+            262,
+            261,
+            260,
+            259,
+            258,
+            257
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s04-v03-canje",
+      "svg": "recursos/encuadres/s04-v03-canje.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 3,
+          "momento": "4B",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 4,
+        "vinyeta": 3,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 179–181 · conversión anterior a la investigación de 1855",
+        "variacion": {
+          "ocultar_ids": [
+            271,
+            269,
+            268
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s04-v03",
+      "svg": "recursos/encuadres/s04-v03.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 3,
+          "momento": "4B",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 3,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 179–181 · conversión anterior a la investigación de 1855",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s03-v04",
+      "svg": "recursos/encuadres/s03-v04.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 4,
+          "momento": "4C",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 3,
+        "vinyeta": 4,
+        "archivo_nativo": "../storyboard-seccion03/storyboard-02-seccion03.vectorcraft",
+        "secuencia": "../storyboard-seccion03/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 170–172, 179–185 y 187. Hallazgos: p. 183, nota 147.",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v04",
+      "svg": "recursos/encuadres/s04-v04.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 4,
+          "momento": "4C",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 4,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 171–172, notas 112 y 114 · resúmenes de las cartas",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v05",
+      "svg": "recursos/encuadres/s04-v05.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 4,
+          "momento": "4C",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 5,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, pp. 170–172 y 187 · encarcelado tras la publicación de las cartas",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v06",
+      "svg": "recursos/encuadres/s04-v06.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 5,
+          "momento": "4D",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 6,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, pp. 181–183 · cambio político y posterior examen fiscal",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v07",
+      "svg": "recursos/encuadres/s04-v07.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 5,
+          "momento": "4D",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 7,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          3430,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, pp. 182–183 y nota 147 · Junta creada en febrero de 1855",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v08",
+      "svg": "recursos/encuadres/s04-v08.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 5,
+          "momento": "4D",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 8,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          3430,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 183, nota 147 · reconstrucción esquemática del examen",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v09-expedientes",
+      "svg": "recursos/encuadres/s04-v09-expedientes.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 6,
+          "momento": "4E.1",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 4,
+        "vinyeta": 9,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 183, nota 147 · monto vinculado a esos expedientes",
+        "variacion": {
+          "ocultar_ids": [
+            2629,
+            2628,
+            2627
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s04-v09",
+      "svg": "recursos/encuadres/s04-v09.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 6,
+          "momento": "4E.1",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 9,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 183, nota 147 · monto vinculado a esos expedientes",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v10",
+      "svg": "recursos/encuadres/s04-v10.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 6,
+          "momento": "4E.1",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 10,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 183, nota 147 · cuatro expedientes, sin monto adicional conocido",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v11",
+      "svg": "recursos/encuadres/s04-v11.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 7,
+          "momento": "4E.2",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 11,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 183 · ley del 29 de diciembre de 1856",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v12",
+      "svg": "recursos/encuadres/s04-v12.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 7,
+          "momento": "4E.2",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 12,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 183 · posiciones enfrentadas, no un fallo judicial inventado",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v13",
+      "svg": "recursos/encuadres/s04-v13.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 7,
+          "momento": "4E.2",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 13,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          6920,
+          1120,
+          630
+        ],
+        "lamina_fuente": 4,
+        "base": "Q, pp. 184–185 · presión sobre las autoridades peruanas",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v14",
+      "svg": "recursos/encuadres/s04-v14.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 8,
+          "momento": "4E.3",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 14,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          6920,
+          1120,
+          630
+        ],
+        "lamina_fuente": 4,
+        "base": "Q, p. 185 · ley del 11 de marzo de 1857",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v15",
+      "svg": "recursos/encuadres/s04-v15.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 8,
+          "momento": "4E.3",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 4,
+        "vinyeta": 15,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          7870,
+          1120,
+          630
+        ],
+        "lamina_fuente": 4,
+        "base": "Q, pp. 183–185 · interpretación del desenlace y distinción editorial",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s04-v16-informes",
+      "svg": "recursos/encuadres/s04-v16-informes.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 4,
+          "lamina": 8,
+          "momento": "4E.3",
+          "estado": 3
+        },
+        {
+          "escena": 5,
+          "lamina": 3,
+          "momento": "5B.1",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 4,
+        "vinyeta": 16,
+        "archivo_nativo": "../storyboard-seccion04/storyboard-02-seccion04.vectorcraft",
+        "secuencia": "../storyboard-seccion04/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          7870,
+          1120,
+          630
+        ],
+        "lamina_fuente": 4,
+        "base": "Q, p. 183 · puente editorial hacia la mesa del historiador",
+        "variacion": {
+          "ocultar_ids": [
+            4016,
+            4015,
+            4014,
+            4013,
+            4012,
+            4011,
+            4010,
+            4009,
+            4008,
+            4007,
+            4006,
+            4005,
+            4004,
+            4003,
+            4002,
+            3767,
+            3766,
+            3765,
+            3764
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": [
+            [
+              3801,
+              "QUEDAN LOS INFORMES"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "s05-v01",
+      "svg": "recursos/encuadres/s05-v01.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 1,
+          "momento": "5A.1",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 1,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 164–170 · retorno al origen de los recursos públicos",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v02",
+      "svg": "recursos/encuadres/s05-v02.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 1,
+          "momento": "5A.1",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 2,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          260,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, p. 169 · finalidad declarada de la consolidación",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v03",
+      "svg": "recursos/encuadres/s05-v03.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 1,
+          "momento": "5A.1",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 3,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 172–173 · exclusión y concentración de beneficios",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v04-origen",
+      "svg": "recursos/encuadres/s05-v04-origen.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 2,
+          "momento": "5A.2",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 5,
+        "vinyeta": 4,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 169–185 · recapitulación editorial de relaciones ya explicadas",
+        "variacion": {
+          "ocultar_ids": [
+            5115,
+            5114,
+            5113,
+            5112,
+            5111,
+            5110,
+            5109,
+            4933,
+            4932,
+            4931,
+            4930,
+            4929,
+            4928,
+            4927,
+            4926,
+            4925,
+            4924,
+            4923,
+            4922,
+            4921,
+            4920,
+            4919
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s05-v04-vales",
+      "svg": "recursos/encuadres/s05-v04-vales.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 2,
+          "momento": "5A.2",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "estado_derivado",
+        "seccion": 5,
+        "vinyeta": 4,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 169–185 · recapitulación editorial de relaciones ya explicadas",
+        "variacion": {
+          "ocultar_ids": [
+            5115,
+            5113,
+            5109
+          ],
+          "poses_actores": {},
+          "zonas_foco": [],
+          "textos": []
+        }
+      }
+    },
+    {
+      "id": "s05-v04",
+      "svg": "recursos/encuadres/s05-v04.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 2,
+          "momento": "5A.2",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 4,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          1210,
+          1120,
+          630
+        ],
+        "lamina_fuente": 1,
+        "base": "Q, pp. 169–185 · recapitulación editorial de relaciones ya explicadas",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v05",
+      "svg": "recursos/encuadres/s05-v05.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 3,
+          "momento": "5B.1",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 5,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 183 y pp. 535–536 · cambio de época y composición editorial",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v06",
+      "svg": "recursos/encuadres/s05-v06.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 3,
+          "momento": "5B.1",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 6,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          2480,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 536 · ejemplos de fuentes; no es una lista completa",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v07",
+      "svg": "recursos/encuadres/s05-v07.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 4,
+          "momento": "5B.2",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 7,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          3430,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, p. 171 · 948.500 aprobados y alrededor de 180.000 probablemente recibidos, en vales",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v08",
+      "svg": "recursos/encuadres/s05-v08.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 4,
+          "momento": "5B.2",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 8,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          3430,
+          1120,
+          630
+        ],
+        "lamina_fuente": 2,
+        "base": "Q, pp. 535–536 · alcance de la estimación histórica",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v09",
+      "svg": "recursos/encuadres/s05-v09.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 4,
+          "momento": "5B.2",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 9,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 535 · resumen de las cautelas del autor",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v10",
+      "svg": "recursos/encuadres/s05-v10.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 5,
+          "momento": "5C",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 10,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          4700,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Q, p. 538 · operaciones encubiertas y cuidado en el uso de fuentes",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v11",
+      "svg": "recursos/encuadres/s05-v11.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 5,
+          "momento": "5C",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 11,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          90,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Puente editorial basado en Q, pp. 535–538 · episodio 003 del plan de la serie",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    },
+    {
+      "id": "s05-v12",
+      "svg": "recursos/encuadres/s05-v12.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 5,
+          "lamina": 5,
+          "momento": "5C",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "encuadre_derivado",
+        "seccion": 5,
+        "vinyeta": 12,
+        "archivo_nativo": "../storyboard-seccion05/storyboard-02-seccion05.vectorcraft",
+        "secuencia": "../storyboard-seccion05/secuencia.json",
+        "rectangulo_en_fuente": [
+          1310,
+          5650,
+          1120,
+          630
+        ],
+        "lamina_fuente": 3,
+        "base": "Plan de la serie · el método va en 003; los resultados generales, en 004",
+        "variacion": {
+          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
+        }
+      }
+    }
+  ]
+}

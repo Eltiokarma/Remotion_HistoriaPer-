@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <title>Artboard 1</title>
+  <g id="_14_mano_cercana" data-name="14_mano_cercana">
+    <path d="M591 671 C601 665 615 665 623 672 L629 695 L634 716 C634 720.667 632.333 723 629 723 C626.333 723.667 623.667 719.333 621 710 L626 737 C626 741 624.333 743 621 743 C617.667 743.667 615 736 613 720 L616 743 C615.333 747.667 613 749.333 609 748 L602 722 L604 744 C602.667 748 600.333 748.667 597 746 L591 719 L585 702 C581 707.333 577.333 708.333 574 705 C572 702.333 573.333 695.667 578 685 Z" fill="#b98e6a" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="595" y1="688" x2="610" y2="701" fill="none" stroke="#987357" stroke-miterlimit="10"/>
+    <line x1="596" y1="708" x2="616" y2="714" fill="none" stroke="#987357" stroke-miterlimit="10"/>
+  </g>
+</svg>

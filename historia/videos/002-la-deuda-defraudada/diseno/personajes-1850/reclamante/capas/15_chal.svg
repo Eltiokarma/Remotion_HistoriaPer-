@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="328" y1="492" x2="435" y2="492" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b8a782"/>
+      <stop offset="1" stop-color="#8f8e69"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_15_chal" data-name="15_chal">
+    <path d="M401 341 C382.333 348.333 363.667 360.333 345 377 L363 454 L399 505 L435 582 L414 643 L384 588 L345 509 L328 455 L336 377 L383 341 Z" fill="url(#linear-gradient-1)" stroke="#d6c49c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M354 380 C356.667 416.667 367 448.333 385 475 C407 516.333 421 553 427 585 M344 392 C345.333 430.667 355 464 373 492 L408 580" fill="none" stroke="#ded0a7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="387" y1="600" x2="377" y2="625" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="391" y1="603" x2="381" y2="628" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="395" y1="606" x2="385" y2="631" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="399" y1="609" x2="389" y2="634" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="403" y1="612" x2="393" y2="637" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="407" y1="615" x2="397" y2="640" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="411" y1="618" x2="401" y2="643" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

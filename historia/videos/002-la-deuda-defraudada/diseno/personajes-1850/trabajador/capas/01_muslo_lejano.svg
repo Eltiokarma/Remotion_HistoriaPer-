@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="357" y1="750.298" x2="442" y2="750.298" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#506c66"/>
+      <stop offset="1" stop-color="#415b51"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_01_muslo_lejano" data-name="01_muslo_lejano">
+    <path d="M366 635 L442 643 L433 853 C416.333 868.333 394.333 869.667 367 857 L357 746 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M383 678 C377 732 378 785 386 837 M424 685 L411 840" fill="none" stroke="#9ba38a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

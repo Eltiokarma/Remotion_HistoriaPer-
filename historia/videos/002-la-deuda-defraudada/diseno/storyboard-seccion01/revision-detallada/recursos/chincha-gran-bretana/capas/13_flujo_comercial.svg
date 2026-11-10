@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>Artboard 1</title>
+  <g id="_13_flujo_comercial" data-name="13_flujo_comercial">
+    <path id="flujo-guano" d="M753 591 C857 602 1013 602 1119 591" fill="none" stroke="#c1a569" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="1098,579 1119,591 1099,606" fill="none" stroke="#c1a569" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
