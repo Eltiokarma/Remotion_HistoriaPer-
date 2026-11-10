@@ -38,7 +38,9 @@ Una serie se hace en el tiempo y necesita libertad para decidir. Por eso las reg
 No tienen excepción.
 
 1. **Narración: la voz «Narrador Historia Puno» de ElevenLabs** (voz diseñada, `BcI5qnQ6UpDt3HmW9BG7`,
-   modelo v3, emoción por frase). **Decidido por Gerson el 2026-11-10**, en lugar de su voz real.
+   modelo v3). **Decidido por Gerson el 2026-11-10**, en lugar de su voz real. Se genera **una toma
+   por escena** (no frase por frase: suena cortada y a distancias distintas del micrófono; ver
+   `videos/001-el-hombre/revision_gerson_2026-11-10.md`) y los beats se ajustan a la voz.
    Riesgo a la vista: la política de YouTube de julio de 2025 sobre «contenido inauténtico» puede
    desmonetizar voz sintética sobre material producido en serie; se declara en YouTube que el
    contenido usa voz generada y cada episodio tiene que sostenerse por su guion y su dirección
@@ -378,8 +380,8 @@ exactamente qué campo está mal.
 - Antes de cada render final: `npm run validar -- NNN-slug --final` sin errores.
 - En GitHub, sin ocupar la laptop: Actions → **render** → «Run workflow» (video, escena opcional,
   `vista-previa` de ~50 MB a 720p o `final` a 1080p). El MP4 queda como artefacto 14 días
-  (`.github/workflows/render.yml`). La voz definitiva no está en git (`voz/` en `.gitignore`):
-  el `final` la exige y hoy se frena hasta decidir dónde vive.
+  (`.github/workflows/render.yml`). La narración de ElevenLabs está en git (`voz/*.mp3`), así que
+  el `final` ya la encuentra.
 
 ## 13. Checklist antes de dar un video por terminado
 
@@ -414,7 +416,7 @@ exactamente qué campo está mal.
 
 **Autenticidad**
 
-- [ ] Narración con la voz de Gerson.
+- [ ] Narración de ElevenLabs en una toma por escena, sin cortes ni cambios de distancia.
 - [ ] Hay una secuencia visual propia de este tema (no solo plantilla).
 - [ ] Grabación de campo o aparición de Gerson, si el tema lo permite.
 

@@ -10,3 +10,5 @@ public/videos/*/musica/suno/
 __pycache__/
 # Tomas de efectos de ElevenLabs en prueba (las elegidas pasan a sfx/ y ambiente/).
 public/compartido/audio/candidatos-elevenlabs/
+# Tomas de voces en prueba (no son la narración del video).
+public/videos/*/voz-pruebas/
