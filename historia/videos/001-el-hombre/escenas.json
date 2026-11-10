@@ -501,8 +501,8 @@
       },
       "audio": {
         "musica": {
-          "archivo": "s04-capas.mp3",
-          "nivel": 0.24
+          "archivo": "s04-tres-velocidades.mp3",
+          "nivel": 0.35
         },
         "ambientes": [
           {
@@ -512,7 +512,7 @@
         ],
         "duck_db": -15
       },
-      "estado_musica": "presente"
+      "estado_musica": "ausente → las capas entran con su frase (arriba, al medio, al fondo) → solo el fondo en la palabra → vuelven todas"
     },
     {
       "id": "s05",
@@ -782,8 +782,8 @@
       },
       "audio": {
         "musica": {
-          "archivo": "s06-puente.mp3",
-          "nivel": 0.38
+          "archivo": "s06-la-deuda.mp3",
+          "nivel": 0.48
         },
         "ambientes": [
           {
@@ -799,7 +799,7 @@
         ],
         "duck_db": -15
       },
-      "estado_musica": "presente (tensión) → en suspenso",
+      "estado_musica": "presente (tensión) → se corta con «…a costa del Estado» → acorde sin resolver en la pregunta",
       "camara": [
         {
           "beat": "hoja_zoom",

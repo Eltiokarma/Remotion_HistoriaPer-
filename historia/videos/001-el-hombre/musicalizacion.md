@@ -577,3 +577,20 @@ solo con licencia **CC0** o **CC BY** (atribución en `fuentes.md`; nada de *Non
 Freesound responde **403** a todas las peticiones desde el contenedor (también a su portada): bloquea
 esas IP, no es la clave. `scripts/freesound.py` hace la búsqueda con el filtro de licencias y deja
 los créditos listos para `fuentes.md`; córrelo en tu laptop (ver el encabezado del script).
+
+## 6. Estado del montaje (2026-11-10)
+
+| Escena | Pista | Cómo se montó |
+|---|---|---|
+| s00 | A · `V01_mus01_ver03` | entera; entra fuerte con la tajada (≈6,5 s) y se apaga sobre el libro |
+| s01 → s02 | B · `V01_mus02_ver02` | partida en dos archivos; empalme al cuadro en 7,328 s de la pista (simulado: 0 muestras de desfase) |
+| s03 | D · `V01_mus03_ver01_5` | entera; se detiene en 42 s, con el despegue del afiche |
+| s04 | E1, E2, E3 (una por capa) | arriba entra en `capa1`, al medio en `capa2`, el fondo en `capa3`; en `bajar` quedan solo el fondo hasta `subir` (vuelve el cello) y `remate` (vuelve la de arriba). Los 14 s del aula, sin música |
+| s05 | F · `V01_mus-E_ver01_1` (stems) | piano, cuerdas y sintetizador enteros; el clarinete entra en `pendiente` («cuánto pesa») |
+| s06 | G · `V01_mus-G_ver01_3` | corrida 2,5 s: el golpe se apaga con «…a costa del Estado» y el acorde final cae en la pregunta |
+| s07 | tema sintetizado | sin cambio (H es decisión de la serie) |
+
+Los `nivel` de `escenas.json` igualan la sonoridad efectiva de cada pista a la de la sintetizada
+que reemplaza. El montaje de s04 y s06 se rehace con `python scripts/montar_musica.py 001-el-hombre s04`
+(y `s06`), que lee `videos/001-el-hombre/montaje_musica/<escena>.json`. Con la voz real se corren
+los tiempos de cada capa a los beats nuevos y se vuelve a correr.

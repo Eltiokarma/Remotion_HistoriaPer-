@@ -1303,7 +1303,7 @@
         "inicio": "2026-11-10",
         "fin": null
       },
-      "bloqueo": "A, B, D (s00–s03) y F (s05) integradas el 2026-11-10. E se regenera por capas (prompts E1–E3 en musicalizacion.md); falta G (s06) y la escucha de Gerson.",
+      "bloqueo": "Música de Suno integrada de s00 a s06 (2026-11-10); s07 conserva el tema sintetizado. Falta la escucha de Gerson y los enlaces de Suno en fuentes.md.",
       "evidencia": [
         "historia/videos/001-el-hombre/musicalizacion.md",
         "historia/videos/001-el-hombre/escenas.json",

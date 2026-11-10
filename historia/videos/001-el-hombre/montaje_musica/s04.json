@@ -1,0 +1,85 @@
+{
+  "salida": "s04-tres-velocidades.mp3",
+  "nota": "tiempos en segundos de la escena (voz provisional); env = [[t, ganancia]] con rampas lineales",
+  "dur": 67.1,
+  "lufs_ref": -18,
+  "capas": [
+    {
+      "archivo": "suno/V01_mus-E01_ver01_2.wav",
+      "inicio": 12.0,
+      "db": 1,
+      "env": [
+        [
+          14.07,
+          0
+        ],
+        [
+          14.57,
+          1
+        ],
+        [
+          38.93,
+          1
+        ],
+        [
+          40.43,
+          0
+        ],
+        [
+          53.83,
+          0
+        ],
+        [
+          54.83,
+          1
+        ]
+      ]
+    },
+    {
+      "archivo": "suno/V01_mus-E02_ver01_2.wav",
+      "inicio": 22.0,
+      "db": 0,
+      "env": [
+        [
+          24.28,
+          0
+        ],
+        [
+          25.28,
+          1
+        ],
+        [
+          38.93,
+          1
+        ],
+        [
+          40.43,
+          0
+        ],
+        [
+          46.01,
+          0
+        ],
+        [
+          47.51,
+          1
+        ]
+      ]
+    },
+    {
+      "archivo": "suno/V01_mus-E03_ver01_5.wav",
+      "inicio": 30.29,
+      "db": -1,
+      "env": [
+        [
+          30.29,
+          0
+        ],
+        [
+          31.79,
+          1
+        ]
+      ]
+    }
+  ]
+}
