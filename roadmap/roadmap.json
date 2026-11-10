@@ -1320,15 +1320,15 @@
       "id": "e1-ambientes",
       "fase": "e1",
       "titulo": "Ambientes y efectos reales (Freesound o ElevenLabs)",
-      "entregable": "Ambientes de cuarto, ciudad, piscina y mar, y efectos de la tabla §5 de musicalizacion.md, a −30 LUFS, con créditos en fuentes.md",
-      "estado": "en_curso",
+      "entregable": "13 efectos y 4 ambientes (cuarto, ciudad, agua, mar) de ElevenLabs elegidos por Gerson en public/compartido/audio/, con créditos en fuentes.md. Grabaciones propias o de Freesound siguen siendo preferibles cuando existan (CLAUDE.md §6).",
+      "estado": "hecho",
       "depende_de": [],
       "prevista": null,
       "real": {
         "inicio": "2026-11-10",
-        "fin": null
+        "fin": "2026-11-10"
       },
-      "bloqueo": "13 efectos reemplazados por tomas de ElevenLabs elegidas por Gerson (2026-11-10). Faltan los ambientes: hay tomas nuevas de cuarto, ciudad, agua y mar sin elegir. Freesound sigue respondiendo 403 desde la nube.",
+      "bloqueo": null,
       "evidencia": [
         "historia/videos/001-el-hombre/fuentes.md",
         "historia/scripts/generar_audio.py"
