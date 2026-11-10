@@ -63,3 +63,5 @@ El paso final abre la sección 2, *El recorrido de un reclamo*. El puente al epi
 ## Vestuario y actuación
 
 Revisión del 10 de noviembre de 2026: las viñetas 04, 07, 08, 11 y 14 usan los [personajes de época](../../personajes-1850/README.md). Las figuras pueden articular brazos, manos y rostro para tomar una carga o entregar un folio. La [indicación del director](../../../revision_personajes.md) reemplaza el criterio previo de poses siempre estáticas. Los estados fueron revisados en VectorCraft; la animación en Remotion continúa pendiente.
+
+Corrección de anatomía del 10 de noviembre de 2026: se actualizaron las seis figuras de esas cinco viñetas para usar una única nariz central y un contorno facial continuo. Los dibujos de origen, las poses y las láminas de referencia también están corregidos.

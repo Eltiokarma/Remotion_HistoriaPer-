@@ -31,3 +31,9 @@ A, O y MBP son variantes disponibles para una intervención que tenga texto y vo
 La animación depende de useCurrentFrame. Pasar frame/fps a tramo, que en este repo trabaja en segundos. Usar los pesos del canal: una carga se levanta con peso; un folio entra ligero y se asienta. Los beats finales se ajustan a la voz. Mientras actúan los brazos, mantener quieta la cámara; cuando la cámara recorre la escena, sostener la pose.
 
 Conservar degradados, sombra, grano y luz del video. La ropa acompaña la articulación con discreción. No deformar cabeza, manos ni la palabra GUANO para simular peso. El gesto termina y deja entender el resultado antes del siguiente. Las tres posiciones de una lámina no obligan a tres planos ni a duraciones iguales.
+
+## Anatomía de la cabeza
+
+La pieza 20_cabeza corregida contiene grupos nombrados rostro_base, nariz_central, oreja_visible y cabello; la reclamante conserva además el recogido. La nariz queda dentro del óvalo facial. La oreja visible se sitúa junto al cabello, al costado de la cabeza. Ambas heredan el movimiento de la cabeza y no se intercambian al reconstruir al personaje.
+
+Al reutilizar o redibujar, no añadir una nariz de perfil al borde de una cara casi frontal con ambos ojos visibles. Si se prepara una vista de perfil, dibujar toda la perspectiva de esa cabeza de forma coherente. Revisar los estados de ojos, cejas y boca sobre la misma base antes de exportarlos. No reconstruir las caras desde las versiones anteriores a esta corrección.

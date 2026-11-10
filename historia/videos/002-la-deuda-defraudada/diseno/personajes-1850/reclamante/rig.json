@@ -380,10 +380,17 @@
       "familia": "pieza",
       "bounds": {
         "height": 220.1228070175439,
-        "width": 176.08695652173913,
+        "width": 161.85046046061188,
         "x": 329,
         "y": 109.87719298245612
-      }
+      },
+      "grupos_internos": [
+        "oreja_visible",
+        "rostro_base",
+        "nariz_central",
+        "cabello",
+        "cabello_recogido_trasero"
+      ]
     },
     {
       "id": "21_ojos_abiertos",
@@ -745,6 +752,6 @@
     "33_boca_MBP"
   ],
   "convencion_rotacion": "Ángulos CSS en grados, positivos en sentido horario; los ensayos de VectorCraft usaron el signo opuesto.",
-  "vista": "Tres cuartos fija; no se han dibujado perfil, espalda o ciclo de caminar.",
+  "vista": "Casi frontal con giro leve; nariz central dentro del contorno. No hay perfil, espalda ni ciclo de caminar.",
   "regla_variantes": "Una variante de ojos, una de cejas, una de boca y una de mano cercana por vez."
 }

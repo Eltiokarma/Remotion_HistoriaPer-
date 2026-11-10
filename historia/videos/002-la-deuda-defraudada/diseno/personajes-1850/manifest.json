@@ -22,13 +22,13 @@
     },
     {
       "archivo": "ANIMACION.md",
-      "bytes": 4462,
-      "sha256": "c802f920c0edcb6d21689ef00ea36bca38dff39080e4eae6e86dc8dca9a32572"
+      "bytes": 5219,
+      "sha256": "c47c058100d88349d0a91f5ea5fa270c8ff735bcce12ca6406ffb94325b38895"
     },
     {
       "archivo": "README.md",
-      "bytes": 3080,
-      "sha256": "0c7ed243c3e205a22be9947b522a15cc5443612a270575b349ddf876ab2ba789"
+      "bytes": 4262,
+      "sha256": "47391740dae7a60ab07d5866de450fb110b58944afaaceb546b4813873530941"
     },
     {
       "archivo": "REFERENCIAS.md",
@@ -117,8 +117,8 @@
     },
     {
       "archivo": "comerciante/capas/20_cabeza.svg",
-      "bytes": 2427,
-      "sha256": "e5466008788f832416b710874e8e765a713f6dd8138173d3aaf103d01aa0c2fa"
+      "bytes": 2819,
+      "sha256": "6b02038982522d22c1fdfbe0d7ae012f0041c4119e27a18eed36edf161e1eb31"
     },
     {
       "archivo": "comerciante/capas/21_ojos_abiertos.svg",
@@ -207,68 +207,68 @@
     },
     {
       "archivo": "comerciante/comerciante-recorte.svg",
-      "bytes": 17294,
-      "sha256": "f4741d50f01388aa015b399b9fe891abb4c6ce68053db316f68bd94fcbdbfe52"
+      "bytes": 17771,
+      "sha256": "9d595729c81d593b0d86fed232d14bb21ec3fe0c63db7db14c29d7e19b742e5d"
     },
     {
       "archivo": "comerciante/comerciante.png",
-      "bytes": 80302,
-      "sha256": "9bc1e7da8cff42c704e239ff5dcf5484a53ec920b3763a1cca6dbab246fdbe56"
+      "bytes": 79373,
+      "sha256": "e2914630647488c486a7e2d757f46e906ceecd520535b7ac4a50e7bac5b87e3a"
     },
     {
       "archivo": "comerciante/comerciante.svg",
-      "bytes": 17257,
-      "sha256": "2712b1aa9f739a5a52b726a8ddb6a94dd5391ba48a06eed1c2c578b856b6b601"
+      "bytes": 17649,
+      "sha256": "fbc08d5963305bdca5ffef5664a6b5b40feb72c589af17057a0339e019ceccb6"
     },
     {
       "archivo": "comerciante/comerciante.vectorcraft",
-      "bytes": 25595,
-      "sha256": "7c2c56dfb521f2bd32d26940114ca52ba987782d6ad54719cef0cad8144b9e26"
+      "bytes": 25609,
+      "sha256": "de7cd142127d641e4265f82928ccc65d7f2e5faafa5e5c1f7964ba3ee5240c5e"
     },
     {
       "archivo": "comerciante/rig.json",
-      "bytes": 17440,
-      "sha256": "48a8d13694ea977195bf64d00ffd97a7033890f4fcf88c8569d538ad7f1f56e2"
+      "bytes": 17600,
+      "sha256": "b8e8c7aae5995645353d7a3bf17b229cdb94dda9c7e1d98d2730bfa87cbf1039"
     },
     {
       "archivo": "expresiones/comerciante-atencion.svg",
-      "bytes": 4140,
-      "sha256": "a621ff854512639e0e798f984f674cfc14cf0f5cc7a073d5ff97ff80aacc5062"
+      "bytes": 4738,
+      "sha256": "6e75d98889b47e610fa87d31076930250c813cd46ac38825848e804ad876e472"
     },
     {
       "archivo": "expresiones/comerciante-esfuerzo.svg",
-      "bytes": 3792,
-      "sha256": "d7344081bc96dc4f811ed71aa3e118a49990b537b438b137bb19b007115e3a37"
+      "bytes": 4387,
+      "sha256": "70f53e95793601cb671734276e143fb837c3745e1a4dc131bc52caaa7172af00"
     },
     {
       "archivo": "expresiones/comerciante-inquietud.svg",
-      "bytes": 4178,
-      "sha256": "4e9840c99a5db95e999189732354795833d5ed88b24518fb1b8cf34246c8f4d3"
+      "bytes": 4776,
+      "sha256": "175282500dbaa1ae1b99b6ea6a762b519b722e5cb371f182d4015dc9a7313a0c"
     },
     {
       "archivo": "expresiones/comerciante-reposo.svg",
-      "bytes": 4193,
-      "sha256": "8801397c67606ddfb8a24e05a5f65317784e58337bbb2e2623ca871038754ed8"
+      "bytes": 4793,
+      "sha256": "a1a3521ac416abcbef9d5191df2477e8240a9aaabcc691f1902187556a1267ea"
     },
     {
       "archivo": "expresiones/reclamante-atencion.svg",
-      "bytes": 3962,
-      "sha256": "b0a5c3671e01c5e251de5a6d6492579f5c44c190169c31ca011a859d614c0bae"
+      "bytes": 4675,
+      "sha256": "91ed93f3fc9658a407393543b239adb5c98530b249cebea7e3ecf2e78c7a2782"
     },
     {
       "archivo": "expresiones/reclamante-esfuerzo.svg",
-      "bytes": 3614,
-      "sha256": "84e6f6774dee24cfc9d6ea1805d8acf12c94223e0d58eb1afc6643599aeb3d11"
+      "bytes": 4324,
+      "sha256": "bff1a32f0243b789ac06b20d3f5f8bc496e646262caffc42c0fbd151359642c6"
     },
     {
       "archivo": "expresiones/reclamante-inquietud.svg",
-      "bytes": 3996,
-      "sha256": "5a5d3588fc161bbc25f99fce15295dc1f368fcdd007e2d0ff6cc4e1b1e092b4c"
+      "bytes": 4710,
+      "sha256": "8aa275fcccbb314b3bd65a5ba97d77d339b2dc17aa6a1768c3f2fb2d4bdd45a0"
     },
     {
       "archivo": "expresiones/reclamante-reposo.svg",
-      "bytes": 4016,
-      "sha256": "087e2ceb5ee94efc7066bb81a7ab3373076ea2bafc62a328d4e092bfa441cf55"
+      "bytes": 4730,
+      "sha256": "704c99daf2b73a2a15f2565c9145bfa4db82bd8e531810c643a179ef7fb9a376"
     },
     {
       "archivo": "funcionario/capas/00_sombra.svg",
@@ -352,8 +352,8 @@
     },
     {
       "archivo": "funcionario/capas/20_cabeza.svg",
-      "bytes": 2568,
-      "sha256": "a84960ebc92d6e8c99d377dd317e63fdb3609a985f9b06627625fccb6ea51bcb"
+      "bytes": 2834,
+      "sha256": "7cf8980a4dfda78806d0a00df1b6333c59bbf813903b2a1da8a296ad454f8be3"
     },
     {
       "archivo": "funcionario/capas/21_ojos_abiertos.svg",
@@ -442,28 +442,28 @@
     },
     {
       "archivo": "funcionario/funcionario-recorte.svg",
-      "bytes": 17463,
-      "sha256": "c654c3c7b393450c0233ed686111421ba41fcc2cb86a3b59c32f6e28ebea1f0e"
+      "bytes": 17798,
+      "sha256": "fe8fe3715b90459fd4949813d872940af2f8c63868504a3f93d25577d95e4cd8"
     },
     {
       "archivo": "funcionario/funcionario.png",
-      "bytes": 77359,
-      "sha256": "774cb8cbefabe80c6e84c633b77c023e56ea0b5f2e02965d840479d1029da1de"
+      "bytes": 76460,
+      "sha256": "49745c5a9d855aae7979beef93fbce8745d9c502d52e3dc0ffd2eacee2d89e56"
     },
     {
       "archivo": "funcionario/funcionario.svg",
-      "bytes": 17398,
-      "sha256": "52448ca1b36685dc228c54cc03efc049c507a16110dc7992938df4df96ae152e"
+      "bytes": 17664,
+      "sha256": "c7d167c8401a9e5e2c87dd98d824a188774185fea950650b9f4d57c1f5c17cc5"
     },
     {
       "archivo": "funcionario/funcionario.vectorcraft",
-      "bytes": 25395,
-      "sha256": "3c44d0879f4ec5f12b373206f2f3efa0b616f06220ba5fadb21e9f52b29567ca"
+      "bytes": 25234,
+      "sha256": "324cd34f0569c2e7009a3f2275b491ae8b1c75b7375fc9d2d587130f4356ce53"
     },
     {
       "archivo": "funcionario/rig.json",
-      "bytes": 17441,
-      "sha256": "b905b7813cf42a3c33bda92400571890247ffac94605f19990cd72a341625fc9"
+      "bytes": 17601,
+      "sha256": "254190334f256ca48ab971edcd3bae29dee7b564f7b7cc590bc144cfb1d06d07"
     },
     {
       "archivo": "gestos.json",
@@ -502,123 +502,128 @@
     },
     {
       "archivo": "personajes-1850-lamina1.png",
-      "bytes": 375505,
-      "sha256": "23899e2c615e6ad1f207262daed36b7c04e2a724d0265a495d815e9974e8fd10"
+      "bytes": 374023,
+      "sha256": "b9013a4d7f060824e394ea4e24deba4b1e0686eaa80879aaa8528b53fefd77b1"
     },
     {
       "archivo": "personajes-1850-lamina1.svg",
-      "bytes": 724323,
-      "sha256": "c4fb78ec90465adfb4f45de67a85dfaef6487a8d846ae9c39c049754884159f3"
+      "bytes": 727080,
+      "sha256": "dbf2777e47e5e5430122c8f5b24a28d35d5b3db7105c56487a9435126e3a6693"
     },
     {
       "archivo": "personajes-1850-lamina2.png",
-      "bytes": 141975,
-      "sha256": "8372711b4b374739299c228684271d410f883010c42fc704962c58e02e7da8a2"
+      "bytes": 140556,
+      "sha256": "0797afce537f9f757c9d8dbbed7dac7539a74dcbffd853cc737390c0e4e3e70f"
     },
     {
       "archivo": "personajes-1850-lamina2.svg",
-      "bytes": 314408,
-      "sha256": "7e72425b31f22e198fd99aef262a01cf0f168086ea93544e274fb0c360fff9ae"
+      "bytes": 320911,
+      "sha256": "662201cfbf840c192066e09956d15997e06334458bd4cdbc56708c31714dc7c9"
     },
     {
       "archivo": "personajes-1850-lamina3.png",
-      "bytes": 357810,
-      "sha256": "e25f14f91f5b1379307eecaef52c965e63db39f376734c68c33c14635a00aeb0"
+      "bytes": 356254,
+      "sha256": "262187b89347b67de493605e245717b755f1c1100c3acdc897683c4912838612"
     },
     {
       "archivo": "personajes-1850-lamina3.svg",
-      "bytes": 440371,
-      "sha256": "2e00f759a203608c150445a6e3496a0491967015685d1e8842f9cd19e52e5ff5"
+      "bytes": 444713,
+      "sha256": "9a9c310800cc5518a7593592aae18cee3a14340ee242e508c963cfae00c8f332"
     },
     {
       "archivo": "personajes-1850.pdf",
-      "bytes": 822521,
-      "sha256": "e20e3f861f7d01d81a48d83218fde8a691aae001069431bad951d0e201c7b766"
+      "bytes": 827998,
+      "sha256": "78abe662fe9daa3887012fd71bfc49a8ee0bfac51c8085cf414d5621e44278d1"
     },
     {
       "archivo": "personajes-1850.vectorcraft",
-      "bytes": 142838,
-      "sha256": "69f732e60b61fbd40f3ea418ec5649e3b1209a68be2d5cb44f40ca391ce3d65d"
+      "bytes": 147261,
+      "sha256": "2fdfeaff1fb4a5d5984fc4a55acb451ff3196c975583d0f79be986ae3c0e1dab"
     },
     {
       "archivo": "poses/comerciante-preparacion-recorte.svg",
-      "bytes": 17811,
-      "sha256": "6f49b22630136b54f5fc20c825f34fb41924d9c25ba3ac6b5cb6ffebde4099f3"
+      "bytes": 18291,
+      "sha256": "35a78dd59ef33ea00156e5bbdf54e57875b085466ef65aa5351b5197098e8fb4"
     },
     {
       "archivo": "poses/comerciante-preparacion.png",
-      "bytes": 89093,
-      "sha256": "96e5de99f5bd770f480c301ba9aa91822ee7c1d549398c7cb330754213d142bf"
+      "bytes": 88215,
+      "sha256": "2111dae1f13477aeab597b650ad398c972d3622c7204b58dc3c91200766d098a"
     },
     {
       "archivo": "poses/comerciante-preparacion.svg",
-      "bytes": 18054,
-      "sha256": "527d1f195c8a373c14e5bf2b827f9bd34d93739ebf3babfb6c7c5ec3a0a4f5c7"
+      "bytes": 18446,
+      "sha256": "68a09ae5c80ba5f4cdc4f05186c384eec825aa6ff9e58fc08a1d54ddd165ec19"
     },
     {
       "archivo": "poses/comerciante-preparacion.vectorcraft",
-      "bytes": 27574,
-      "sha256": "1d3dd6123bcc80da80c1c157cd1e64a0cf529cfd7a8afe347d7b78cc398e79b2"
+      "bytes": 27559,
+      "sha256": "db373aaac704a11a7a47462d7ce17ed1b07ccc9ca8628f927e7be81751d0640e"
     },
     {
       "archivo": "poses/comerciante-reclamo-recorte.svg",
-      "bytes": 37367,
-      "sha256": "ec6ab42d39ccbcc1f6ca512d5a701764b861cc0b78bc6e148c1d03d7d2125be5"
+      "bytes": 37847,
+      "sha256": "4615d4ead47949ef646afbb8cd2bf7b13e60b47e058510dce200dbb141b7d6b8"
     },
     {
       "archivo": "poses/comerciante-reclamo.png",
-      "bytes": 89429,
-      "sha256": "cf30159d51b74735c0e8dc12b8ef874f8a62387e1b1bf84719394b344b07de77"
+      "bytes": 88635,
+      "sha256": "2a26f1075bb24363f14346db8747c926dcc266d7387eda96c518e4c6327a4fc6"
     },
     {
       "archivo": "poses/comerciante-reclamo.svg",
-      "bytes": 37518,
-      "sha256": "b764577ffd8f0b91896b2437147e7346c8596cc36c99d6db27f1211946fb28de"
+      "bytes": 37910,
+      "sha256": "fb040ce941e65703181a07f7b382d4d3a86ee20207e7be2675a7206259a54bd8"
     },
     {
       "archivo": "poses/comerciante-reclamo.vectorcraft",
-      "bytes": 29010,
-      "sha256": "55c9a4ec6960f446f1779fe4fe6c3b73ba791e8d44449c5bbd19611ab44e7fe8"
+      "bytes": 28850,
+      "sha256": "d8e0fd16dfff76a5f6cb5ee89400073034dc810f4c06d192a5c6e6d065f8db62"
     },
     {
       "archivo": "poses/trabajador-carga-recorte.svg",
-      "bytes": 23926,
-      "sha256": "4a2cfb47e755ab9d0f7956ab8d4106e85b2b9f03c8db6a566a8c7855dad988c9"
+      "bytes": 24397,
+      "sha256": "812a04ef7342579cf8d1da24a465028f4397a3c5a35d3e1a59fc66c12e5d0525"
     },
     {
       "archivo": "poses/trabajador-carga.png",
-      "bytes": 83590,
-      "sha256": "06de86ed9999bbf383103798657544e7382cfe1871b861c3238d1df915b5ab5d"
+      "bytes": 82722,
+      "sha256": "fcb8d6278bcbe97d905e3788a58cb5bdb87e9d4054a2c120a98513d535c85687"
     },
     {
       "archivo": "poses/trabajador-carga.svg",
-      "bytes": 24431,
-      "sha256": "41feb5a99af44bb6ba1cf2e1e6fcb3f8387d3e7f73fef2eb3f3a98c1ef68a478"
+      "bytes": 24821,
+      "sha256": "dc40e307f2843aa2937d713f34f58d1fb6de44486c304c58b883f3a2b075a220"
     },
     {
       "archivo": "poses/trabajador-carga.vectorcraft",
-      "bytes": 26946,
-      "sha256": "d0926b1d06a52b3e73ae7e9cf1cafc7bc883886d965c7a24a27650c6548d49fa"
+      "bytes": 26996,
+      "sha256": "d950461b1a3882272c258aded37f1951222fe343648a5e5d8506180db578ed85"
     },
     {
       "archivo": "poses/trabajador-preparacion-recorte.svg",
-      "bytes": 18417,
-      "sha256": "11d6f7d7d684b022d2c034419977742ef767873fc46c2903391b262782d5e94f"
+      "bytes": 18888,
+      "sha256": "e0dcfc7cecbef973f51d37ddd4671a32ff60edfa81bbd66d55b29c173b891c26"
     },
     {
       "archivo": "poses/trabajador-preparacion.png",
-      "bytes": 78177,
-      "sha256": "59274234f96051286ae2bec1792b18708a5aa0196c812b386f659f463ccde0b3"
+      "bytes": 77309,
+      "sha256": "5092009c588f327622119553b5d2ef34e5555a154daea2ece1deb5f506bc1eaa"
     },
     {
       "archivo": "poses/trabajador-preparacion.svg",
-      "bytes": 18903,
-      "sha256": "236e3e8fb5f68aa412962b798049845d50f853d1379ae49cbda3fdcf91b802e2"
+      "bytes": 19293,
+      "sha256": "823fa8180692abe4217c408e553f3faeddc1b536b69391eb8cff1a979db60b16"
     },
     {
       "archivo": "poses/trabajador-preparacion.vectorcraft",
-      "bytes": 25037,
-      "sha256": "88956f08ff58fc8fde8ebfa32b091bbd922a2bbd3d70690d4e4fe054ed27c52f"
+      "bytes": 24953,
+      "sha256": "2001dce614526b092fe5b514725255925dcbcf51d88272af55632da9021a0034"
+    },
+    {
+      "archivo": "qa/rostro-atencion-corregido.png",
+      "bytes": 28623,
+      "sha256": "7ee563653fa69a6e63af4cc8ef4d7ce06670172b47703879e379b86852351c29"
     },
     {
       "archivo": "reclamante/capas/00_sombra.svg",
@@ -707,8 +712,8 @@
     },
     {
       "archivo": "reclamante/capas/20_cabeza.svg",
-      "bytes": 2551,
-      "sha256": "6b85aae70156b2603380f1648bfef54e092bc2a6fcd9062c5298e6f8cfe0ee58"
+      "bytes": 3105,
+      "sha256": "dde2d4adeceec35d37bc2e31142cf94910eb7d082106ae5dfb6e8df6b5214c20"
     },
     {
       "archivo": "reclamante/capas/21_ojos_abiertos.svg",
@@ -792,28 +797,28 @@
     },
     {
       "archivo": "reclamante/reclamante-recorte.svg",
-      "bytes": 20339,
-      "sha256": "03798fc0217d0f3d245a5822974b9ecb2e46e77bcd0c6f93ddb29eb18f7125f3"
+      "bytes": 21062,
+      "sha256": "968fbebe17585ee495f8f086dabef55310e8c061b357957d661d702b0dc4947b"
     },
     {
       "archivo": "reclamante/reclamante.png",
-      "bytes": 87785,
-      "sha256": "e34e778e9372ae673df66c257ed43dde08fc949f43413d323fc8f3cb42480184"
+      "bytes": 87140,
+      "sha256": "3faf374a5d32ef945b3cb85437971c6f06905337858886081bb116beb053045f"
     },
     {
       "archivo": "reclamante/reclamante.svg",
-      "bytes": 19061,
-      "sha256": "4dd3fda3e3c839deeabab4c7c06c849bbe8de6e784c3b436fc19d3659a190ce0"
+      "bytes": 19615,
+      "sha256": "dfd6a4e6dd8c55f37a7ddb07059639a943bcfbf394facbc93eb96e6238913cab"
     },
     {
       "archivo": "reclamante/reclamante.vectorcraft",
-      "bytes": 27335,
-      "sha256": "989cd9d9a310173f99f9fd0e639d6c6dac8d52655d742498ab72e7c450478fc7"
+      "bytes": 27275,
+      "sha256": "0cfc4da7fe8d7cfd9d8c80530ba899bd200bc75a0cffa594716aace6ab72f340"
     },
     {
       "archivo": "reclamante/rig.json",
-      "bytes": 17412,
-      "sha256": "3afba60dc3b4b95f7ddbf23214f25468ae6de75bd9ca53d1841660bbdf55f120"
+      "bytes": 17608,
+      "sha256": "d360fa721a2fb8fedfe4baa96a070834703a55412465b30afb92dc8ab0094429"
     },
     {
       "archivo": "referencias.json",
@@ -897,8 +902,8 @@
     },
     {
       "archivo": "trabajador/capas/20_cabeza.svg",
-      "bytes": 2298,
-      "sha256": "52cd22da15ef1c6ab398610f074788e62f5aa7ecc3630e803ac904fd11c2bacf"
+      "bytes": 2688,
+      "sha256": "dda7336f39b84d5bb1b5cb46f1bac3df6f9b61e073ad6f78580bc5cc794437e6"
     },
     {
       "archivo": "trabajador/capas/21_ojos_abiertos.svg",
@@ -987,33 +992,34 @@
     },
     {
       "archivo": "trabajador/rig.json",
-      "bytes": 17010,
-      "sha256": "693bab2a89b5c32545e611277def33676281fdaf977ddf5c2d766582bf4dca53"
+      "bytes": 17170,
+      "sha256": "1baf2d9a0ac7074d96cc03b4fe26d9e3d7c3a0ea7b75a975335f933183b92ece"
     },
     {
       "archivo": "trabajador/trabajador-recorte.svg",
-      "bytes": 17982,
-      "sha256": "5284b1afa27325b03da2ca051259bb9a1d8c27a1ddf85d5940e5f9c92b95e609"
+      "bytes": 18453,
+      "sha256": "4ef08152ea7d02aa647f889e925b57ddd26513343a4779c8770cb26e1c78b4bb"
     },
     {
       "archivo": "trabajador/trabajador.png",
-      "bytes": 75849,
-      "sha256": "ea20fc8e2350a6bc71e2e93971c1e36c50d4a350fe92a5d7f4a455598ddfbfd5"
+      "bytes": 74978,
+      "sha256": "8f0bce1fc2ba1a1861cd6d981d49ba4ad5ebdba72143b35008349a4c3cfeb4f8"
     },
     {
       "archivo": "trabajador/trabajador.svg",
-      "bytes": 18051,
-      "sha256": "72507d48157b17637bdd4fafbe88e51d9bb3d56a1dda7b71478342574c544372"
+      "bytes": 18441,
+      "sha256": "4c1fda51a695a4d4870250c1b587e897f1e5e8afbcf1063a8a97115263d6483c"
     },
     {
       "archivo": "trabajador/trabajador.vectorcraft",
-      "bytes": 25307,
-      "sha256": "86590b5837bee1d536076908f5b82c1625cf90585b2607e65fbf2c0225f35a5e"
+      "bytes": 25245,
+      "sha256": "f0b9537d10a0e2b971ce4d28be9e7e4bbd81e2541b1e80dc041df30560a1ccc5"
     },
     {
       "archivo": "validacion.json",
-      "bytes": 538,
-      "sha256": "51db0e62d3ec8813a217a3f37891819f1f423e1072830929f3ecdcfc0ca7ffef"
+      "bytes": 1676,
+      "sha256": "9b3644f97f5bf7b198dea45d1c25dbdca755fb6624a8629426896d776826b710"
     }
-  ]
+  ],
+  "correccion_anatomia": "2026-11-10"
 }

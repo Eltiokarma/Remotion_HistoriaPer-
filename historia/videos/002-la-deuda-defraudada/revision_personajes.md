@@ -20,3 +20,9 @@ Las viñetas 04, 07, 08, 11 y 14 del storyboard 1 ya usan las figuras nuevas. El
 ## Estado
 
 Dibujos y poses revisados estáticamente por el agente en VectorCraft; pendientes de aprobación visual de Gerson. Animación e integración en Remotion pendientes de Claude. No se generó video.
+
+## Corrección del contorno facial
+
+10 de noviembre de 2026. Gerson señaló que la nariz lateral deformaba todas las caras. El origen era una mezcla de contorno con nariz de perfil y rasgos interiores casi frontales. Se corrigió la pieza base de los cuatro modelos y se actualizaron las cuatro poses, ocho expresiones, dieciocho instancias de las láminas y seis del storyboard 1. Nariz y oreja quedan identificadas como grupos distintos.
+
+Reutilizar la pieza corregida en adelante y revisar de cerca todas las expresiones. La ropa, las otras 131 piezas y los datos de los gestos se conservaron. La corrección está pendiente de revisión visual de Gerson; no se generó video.

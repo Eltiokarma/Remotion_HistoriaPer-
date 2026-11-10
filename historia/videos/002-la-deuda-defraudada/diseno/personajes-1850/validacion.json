@@ -23,5 +23,46 @@
   ],
   "animacion_remotion_probada": false,
   "video_generado": false,
-  "aprobacion_gerson": false
+  "aprobacion_gerson": false,
+  "correccion_rostros": {
+    "fecha": "2026-11-10",
+    "modelos": [
+      {
+        "personaje": "trabajador",
+        "narices": 1,
+        "orejas_visibles": 1,
+        "nariz_dentro_del_rostro": true,
+        "contorno_sin_protuberancia_lateral": true
+      },
+      {
+        "personaje": "comerciante",
+        "narices": 1,
+        "orejas_visibles": 1,
+        "nariz_dentro_del_rostro": true,
+        "contorno_sin_protuberancia_lateral": true
+      },
+      {
+        "personaje": "funcionario",
+        "narices": 1,
+        "orejas_visibles": 1,
+        "nariz_dentro_del_rostro": true,
+        "contorno_sin_protuberancia_lateral": true
+      },
+      {
+        "personaje": "reclamante",
+        "narices": 1,
+        "orejas_visibles": 1,
+        "nariz_dentro_del_rostro": true,
+        "contorno_sin_protuberancia_lateral": true
+      }
+    ],
+    "poses_actualizadas": 4,
+    "expresiones_actualizadas": 8,
+    "instancias_laminas": 18,
+    "instancias_storyboard": 6,
+    "piezas_ajenas_al_rostro_identicas": 131,
+    "gestos_sin_cambios": true,
+    "revision_visual_agente": true,
+    "aprobacion_gerson": false
+  }
 }

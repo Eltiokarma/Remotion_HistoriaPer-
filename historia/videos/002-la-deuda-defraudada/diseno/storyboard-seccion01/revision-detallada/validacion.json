@@ -34,6 +34,8 @@
       14
     ],
     "kit": "../../personajes-1850/manifest.json",
-    "animacion_probada": false
+    "animacion_probada": false,
+    "anatomia_corregida": true,
+    "instancias_corregidas": 6
   }
 }

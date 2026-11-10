@@ -43,8 +43,8 @@
     },
     {
       "archivo": "README.md",
-      "bytes": 10634,
-      "sha256": "3cf5629311b08b82f4ce322e510ffa9b3d408bdb0d02bb82e3286f41d12fb04b"
+      "bytes": 10901,
+      "sha256": "e611f6425d7bade3d71d82c6055cdf890b838ae81fa901177052204d64af4a2d"
     },
     {
       "archivo": "recursos/chincha-gran-bretana/animacion.json",
@@ -183,60 +183,61 @@
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina1.png",
-      "bytes": 406730,
-      "sha256": "29c74d4a3486dda495cd607d183bd91627ec493d68f80d0a9a6ff01a40b6d78b"
+      "bytes": 406577,
+      "sha256": "a0cb7f58b02b42a7a564781093df49354a0a294e26b0946e790c470d5c52cfd5"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina1.svg",
-      "bytes": 1925087,
-      "sha256": "9d273cea94d787b18059148a9dea01d11d475eba0405f5c2afc35669e4bb8fa2"
+      "bytes": 1925687,
+      "sha256": "322eb296fb5155a3125db4caa73d6cbe44d7cd342cde98f90e81eaf9f2402777"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina2.png",
-      "bytes": 453758,
-      "sha256": "bf573b9f54820ed524a10645091bcbf2c0cb4bed4940cfdfc22859b32c0c5af7"
+      "bytes": 453117,
+      "sha256": "408eec6dbca4d96cbf33eb2c9af9f5bda3c6c0b8fc4a9a222e5751619ba09ff0"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina2.svg",
-      "bytes": 1763224,
-      "sha256": "bfaa67e69be59f322a5b78d1b3053b04959197dd7e2a20f330d53e7089ffc2dc"
+      "bytes": 1765217,
+      "sha256": "5527a9a41d19aaf403646f9b0ca53a69955bc504a14e0f4e95c7a424140b6bff"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina3.png",
-      "bytes": 488996,
-      "sha256": "171d477ff441e7292f76a24798a9c972da28a2581e1efd5a9e966f3fc67aac24"
+      "bytes": 488811,
+      "sha256": "7e74b32666dbdd1fb5621a835f752f7b553ee12452007813cf941ee14ff84cda"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina3.svg",
-      "bytes": 2128888,
-      "sha256": "1385dce35d940c0dea1755629a135bef1e62cdc0ba2f53baf41befc71aab3d1d"
+      "bytes": 2129475,
+      "sha256": "1242c10544c2e8a937ff39b847f882ab6ce9dd27f50a2ecc610d8d7c833c1f13"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina4.png",
-      "bytes": 375960,
-      "sha256": "4367df6d3ac494f5c2ac31e616620857588534c23eba3a47463ae9aef76e2030"
+      "bytes": 375836,
+      "sha256": "00d7aff3b22caf25d0eaf27df2f4d7401fc1aa8019286a9c72cb0235ca540cb3"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina4.svg",
-      "bytes": 2140232,
-      "sha256": "71d08421b28b32243c73aabfc5a59e3509a714d434c4cc790848dc181d43222c"
+      "bytes": 2140801,
+      "sha256": "23da8ca63eba033a6952011a152be0ef91657a384cbeb4573cfa73d6076ad35a"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado.pdf",
-      "bytes": 4490536,
-      "sha256": "e06beb42d6d0178b886f82e0108b5bc9390e9dcda942151b7ce3cdfaac649ec7"
+      "bytes": 4492627,
+      "sha256": "0b7ff6cecea9dc9b49af4fc723ba9483cbd4b750b1accdda5e9665af44bbcb7f"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado.vectorcraft",
-      "bytes": 561694,
-      "sha256": "19e0c458acba0030cc0652e41ae18fd1d99fd54f654f6f2127b8ea3931b258df"
+      "bytes": 563505,
+      "sha256": "f61cb830e1e31a2b9a4cf4e1017fdc25ea1b9e2514d75cc82dc3a9edcca03477"
     },
     {
       "archivo": "validacion.json",
-      "bytes": 682,
-      "sha256": "cf9a367b8d9feb1625bca789c78078eea18aecd0680aca3646ad93c590184b61"
+      "bytes": 746,
+      "sha256": "ca6381c86d8873e03911a6507df38545b4106d42039101f1bcd566ac71f0176b"
     }
   ],
   "revision_personajes": "2026-11-10",
-  "personajes_kit": "../../personajes-1850/manifest.json"
+  "personajes_kit": "../../personajes-1850/manifest.json",
+  "correccion_anatomia": "2026-11-10"
 }
