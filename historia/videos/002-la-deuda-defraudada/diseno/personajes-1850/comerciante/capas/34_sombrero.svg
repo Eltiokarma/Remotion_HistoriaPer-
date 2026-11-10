@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="376" y1="113.281" x2="486" y2="113.281" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#51614d"/>
+      <stop offset="1" stop-color="#293f33"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_34_sombrero" data-name="34_sombrero">
+    <path d="M345 167 C397.667 148.333 455.333 148.667 518 168 L519 182 C461.667 196.667 404 196.667 346 182 Z" fill="#445443" stroke="#a0ac8d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M379 159 L376 61 C412 53 446.667 53.667 480 63 L486 163 C452.667 175 417 173.667 379 159 Z" fill="url(#linear-gradient-1)" stroke="#a0ac8d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M379 146 C415 154.667 450.333 154.667 485 146 L487 165 C450.333 176.333 414.333 174.667 379 160 Z" fill="#758069" stroke="#2d4238" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

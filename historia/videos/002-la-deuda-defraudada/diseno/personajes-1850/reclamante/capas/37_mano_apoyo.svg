@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="581" y1="707.7" x2="667.643" y2="707.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0b18b"/>
+      <stop offset="1" stop-color="#c1a07b"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_37_mano_apoyo" data-name="37_mano_apoyo">
+    <path d="M590 670 C600.667 666 612.333 666 625 670 L636 689 L659 695 C666.333 697.667 669 701 667 705 C665.667 709 660.333 710 651 708 L631 705 L660 717 C664.667 721 664.333 724.333 659 727 L631 717 L650 731 C652.667 735.667 651.667 739 647 741 L624 724 L637 742 C637 747.333 634.667 749.333 630 748 L608 729 L591 716 L581 700 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M592 691 C598.667 698.333 609.333 703.333 624 706" fill="none" stroke="#9c8465" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

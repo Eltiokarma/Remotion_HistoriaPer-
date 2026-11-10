@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="400" y1="331.647" x2="477" y2="331.647" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0b18b"/>
+      <stop offset="1" stop-color="#9c8465"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_18_cuello" data-name="18_cuello">
+    <path d="M403 299 L471 301 L477 353 C453.667 369 428 368 400 350 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M407 311 C425.667 325.667 446 326 468 312" fill="none" stroke="#9c8465" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

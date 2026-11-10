@@ -1,0 +1,100 @@
+{
+  "estado": "Poses de referencia; animación en Remotion pendiente",
+  "canvas": [
+    900,
+    1200
+  ],
+  "unidad_tiempo": "Progreso del gesto; segundos y beats finales pendientes de la voz",
+  "gestos": [
+    {
+      "id": "sostener_carga",
+      "personaje": "trabajador",
+      "objeto": {
+        "archivo": "objetos/carga.svg",
+        "canvas": [
+          900,
+          1200
+        ],
+        "insertar_debajo_de": "12_brazo_cercano",
+        "parent_en_pose_final": "11_torso",
+        "nota": "Composición final de referencia. Antes del agarre, el saco debe estar apoyado en una superficie visible."
+      },
+      "estados": [
+        {
+          "progreso": 0,
+          "pose": "trabajador/trabajador.svg",
+          "expresion": "reposo",
+          "rotaciones_css": {}
+        },
+        {
+          "progreso": 0.5,
+          "pose": "poses/trabajador-preparacion.svg",
+          "expresion": "reposo",
+          "rotaciones_css": {
+            "08_brazo_lejano": -10,
+            "09_antebrazo_lejano": -40,
+            "12_brazo_cercano": 10,
+            "13_antebrazo_cercano": 40
+          }
+        },
+        {
+          "progreso": 1,
+          "pose": "poses/trabajador-carga.svg",
+          "expresion": "atencion",
+          "boca": "30_boca_esfuerzo",
+          "mano": "35_mano_pinza",
+          "rotaciones_css": {
+            "08_brazo_lejano": -20,
+            "09_antebrazo_lejano": -80,
+            "12_brazo_cercano": 20,
+            "13_antebrazo_cercano": 80
+          }
+        }
+      ],
+      "direccion": "Preparar las manos, establecer contacto, levantar con peso y sostener. La mano sigue el contacto con el saco; no moverlo antes del agarre."
+    },
+    {
+      "id": "entregar_reclamo",
+      "personaje": "comerciante",
+      "objeto": {
+        "archivo": "objetos/reclamo.svg",
+        "canvas": [
+          900,
+          1200
+        ],
+        "insertar_debajo_de": "13_antebrazo_cercano",
+        "parent_en_pose_final": "escena",
+        "nota": "Colocación del papel para la pose final; la trayectoria y el contacto deben resolverse en Remotion."
+      },
+      "estados": [
+        {
+          "progreso": 0,
+          "pose": "comerciante/comerciante.svg",
+          "expresion": "reposo",
+          "rotaciones_css": {}
+        },
+        {
+          "progreso": 0.5,
+          "pose": "poses/comerciante-preparacion.svg",
+          "expresion": "reposo",
+          "rotaciones_css": {
+            "12_brazo_cercano": -17.5,
+            "13_antebrazo_cercano": -25
+          }
+        },
+        {
+          "progreso": 1,
+          "pose": "poses/comerciante-reclamo.svg",
+          "expresion": "atencion",
+          "mano": "35_mano_pinza",
+          "rotaciones_css": {
+            "12_brazo_cercano": -35,
+            "13_antebrazo_cercano": -50
+          }
+        }
+      ],
+      "direccion": "El folio se toma de una mesa o de la otra mano, se sujeta por el borde y se entrega. No aparecer de la nada; no soltar antes de apoyarlo o recibirlo."
+    }
+  ],
+  "interpolacion": "Aplicar rotaciones locales al árbol de parent y pivote de rig.json; no volver a aplicar ángulos absolutos al hijo. Las poses SVG son estados finales de referencia, no fotogramas para un fundido."
+}

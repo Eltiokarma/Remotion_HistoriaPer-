@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156.937" height="217.788" viewBox="0 0 156.937 217.788">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="10.75" y1="116.934" x2="155.837" y2="116.934" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0af87"/>
+      <stop offset="1" stop-color="#c39d79"/>
+    </linearGradient>
+  </defs>
+  <title>Untitled-3</title>
+  <g id="Selection">
+    <ellipse cx="15.25" cy="123.188" rx="14.5" ry="22.5" fill="#c39d79" stroke="#2d4238" stroke-width="1.5" stroke-miterlimit="10"/>
+    <path d="M21.75 34.688 C43.75 10.688 93.75 11.688 121.75 35.688 C138.75 56.688 135.75 83.688 139.75 106.688 L154.75 129.688 C158.083 136.355 153.75 141.355 141.75 144.688 L135.75 170.688 C131.75 192.021 116.75 207.354 90.75 216.688 C62.083 213.354 40.75 200.354 26.75 177.688 L14.75 140.688 L10.75 88.688 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M126.75 63.688 C122.083 88.355 123.417 110.02 130.75 128.688 L140.75 133.688 L129.75 138.688 L126.75 172.688 C120.75 188.021 108.417 197.688 89.75 201.688 L93.75 215.688 C116.417 208.354 130.417 193.354 135.75 170.688 L141.75 144.688 C153.75 141.355 158.083 136.355 154.75 129.688 L139.75 106.688 Z" fill="#98775a"/>
+    <path d="M14.75 112.688 C8.083 108.688 5.417 112.355 6.75 123.688 L14.75 133.688 M71.75 130.688 L66.75 146.688 L76.75 150.688 M132.75 153.688 L125.75 163.688 M36.75 155.688 C43.417 159.688 51.417 161.021 60.75 159.688" fill="none" stroke="#98775a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M86.75 104.688 C86.083 119.355 87.083 131.355 89.75 140.688 L101.75 143.688" fill="none" stroke="#8d7055" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="85.75" y1="156.688" x2="93.75" y2="158.688" fill="none" stroke="#98775a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8.75 102.688 C-7.25 54.688 10.75 11.688 50.75 5.688 C82.75 -4.312 108.75 1.688 128.75 23.688 C137.417 35.02 140.75 52.688 138.75 76.688 L125.75 76.688 L115.75 44.688 C87.75 36.688 61.083 41.688 35.75 59.688 L24.75 100.688 L22.75 137.688 L10.75 132.688 Z" fill="#464b3b" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M22.75 60.688 C44.083 37.355 69.75 25.02 99.75 23.688 M28.75 71.688 C47.417 51.688 68.417 40.355 91.75 37.688 M23.75 78.688 L18.75 120.688" fill="none" stroke="#8b9171" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28.75 142.688 C36.083 161.354 44.083 173.021 52.75 177.688 L53.75 197.688 C40.417 193.688 31.083 185.354 25.75 172.688 Z" fill="#646348"/>
+    <path d="M38.75 112.688 C47.417 108.02 56.417 108.02 65.75 112.688 M97.75 112.688 C105.75 108.688 114.083 108.688 122.75 112.688" fill="none" stroke="#2d4238" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M40.75 117.688 C48.083 120.355 55.417 120.02 62.75 116.688 M99.75 117.688 C106.417 119.688 112.75 119.355 118.75 116.688" fill="none" stroke="#98775a" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36.75 95.688 L65.75 100.688 M97.75 100.688 L123.75 94.688" fill="none" stroke="#464b3b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M73.75 173.688 C83.75 170.354 95.083 170.021 107.75 172.688 L106.75 182.688 C96.083 184.688 85.083 184.021 73.75 180.688 Z" fill="#5e5140" stroke="#2d4238" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="77.75" y1="176.688" x2="102.75" y2="176.688" fill="none" stroke="#e9dfc8" stroke-width="2" stroke-miterlimit="10"/>
+  </g>
+</svg>

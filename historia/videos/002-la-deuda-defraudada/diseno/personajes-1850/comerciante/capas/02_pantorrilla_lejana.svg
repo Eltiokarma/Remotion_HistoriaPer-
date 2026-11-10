@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="358" y1="930.214" x2="434" y2="930.214" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#747a64"/>
+      <stop offset="1" stop-color="#40594f"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_02_pantorrilla_lejana" data-name="02_pantorrilla_lejana">
+    <path d="M369 826 C391.667 819.333 413.333 822 434 834 L426 1038 L367 1038 L358 943 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M383 854 C375 915.333 374.333 970.333 381 1019 M420 877 L406 1021" fill="none" stroke="#9aa28a" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="365,1023 427,1023 425,1041 365,1041" fill="#8b9680" stroke="#2d4238" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

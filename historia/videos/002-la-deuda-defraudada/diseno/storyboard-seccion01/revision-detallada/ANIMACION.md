@@ -36,7 +36,7 @@ El frame determina toda la animación. Convertir useCurrentFrame() a segundos co
 
 La cámara se mueve para situar, seguir la carga, abrir una relación o acercar al papel. Si se mueve la cámara, mantener quietas las piezas; si una pieza entra, fijar la cámara. Señalar con brillo un elemento por vez. Conservar degradado, sombra, grano y los efectos pertinentes del video: no reemplazar una escena por una PNG plana.
 
-Los textos, mapas y datos no se estiran. El edificio no rebota ni se deforma. Los sacos pueden asentarse con mesura desde la base, sin que GUANO se comprima. No animar personajes ni usar bucles visibles de olas, velas o aves. Mar, cuerda, papel y herramienta son sonidos puntuales subordinados a la voz, con entrada y salida suaves.
+Los textos, mapas y datos no se estiran. El edificio no rebota ni se deforma. Los sacos pueden asentarse con mesura desde la base, sin que GUANO se comprima. Los personajes pueden actuar por piezas y cambiar de expresión según la [revisión de Gerson](../../../revision_personajes.md) y el [kit de época](../../personajes-1850/ANIMACION.md). No usar bucles visibles de olas, velas, aves o gestos de personajes. Mar, cuerda, papel y herramienta son sonidos puntuales subordinados a la voz, con entrada y salida suaves.
 
 Los cinco bloques de secuencia.json son unidades de explicación; las viñetas no fijan cortes ni duraciones idénticas. El contexto se recupera al volver a acreedores, y el mismo folio con pestaña roja enlaza las secciones 1 y 2. El foco debe sostener por sustentar y por revisar antes de explicar el reconocimiento.
 

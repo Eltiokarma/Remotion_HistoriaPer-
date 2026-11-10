@@ -23,5 +23,17 @@
     "pixelIdentical": false
   },
   "animacion_verificada": false,
-  "render_video": false
+  "render_video": false,
+  "personajes": {
+    "revision": "2026-11-10",
+    "vinyetas": [
+      4,
+      7,
+      8,
+      11,
+      14
+    ],
+    "kit": "../../personajes-1850/manifest.json",
+    "animacion_probada": false
+  }
 }

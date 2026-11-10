@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="350" y1="494.4" x2="536" y2="494.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#698177"/>
+      <stop offset="1" stop-color="#465e54"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_11_torso" data-name="11_torso">
+    <path d="M368 351 C421.333 331.667 470.333 332.667 515 354 L536 438 L520 588 L534 638 C480.667 654.667 422 656 358 642 L369 571 L350 428 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M394 355 C432 379 466.333 378 497 352 L490 373 C461.333 395 431.667 395.667 401 375 Z" fill="#ded4b4" stroke="#2d4238" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M449 391 L450 628 M390 430 C412 501.333 420.667 564.333 416 619 M507 426 C484.333 494.667 475.333 560.333 480 623" fill="none" stroke="#b2b89c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="449.5" cy="425.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10"/>
+    <circle cx="449.5" cy="456.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10"/>
+    <circle cx="449.5" cy="487.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10"/>
+    <circle cx="449.5" cy="518.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10"/>
+    <circle cx="449.5" cy="549.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10"/>
+    <circle cx="449.5" cy="580.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10"/>
+  </g>
+</svg>

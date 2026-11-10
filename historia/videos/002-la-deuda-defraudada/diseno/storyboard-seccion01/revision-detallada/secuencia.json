@@ -232,11 +232,11 @@
         "alto": 2140,
         "y": 2220
       },
-      "movimiento": "Seguir una carga desde las herramientas hasta los sacos. Las figuras son poses estáticas; se animan foco, carga y polvo con mesura.",
+      "movimiento": "Preparar el agarre y acercar las manos al saco; sostener la carga. Brazos, manos y expresión cambian por beats, con el peso del objeto visible.",
       "beats": [
-        "Herramientas y depósito explican la extracción.",
-        "Seguir la carga hasta los sacos y el punto de traslado.",
-        "Sostener la referencia al trabajo forzado sin asignar condición jurídica a las figuras."
+        "Las herramientas y el depósito sitúan la extracción.",
+        "El trabajador prepara el agarre; manos y saco establecen contacto antes de levantar.",
+        "Sostener la carga y la referencia al trabajo forzado sin atribuir condición jurídica por el aspecto de una figura."
       ],
       "sonido": "Herramienta o saco una sola vez si aporta al gesto; sin espectáculo del sufrimiento.",
       "base": "B, prólogo de 1984, pp. 10–11; C, capítulo 1",
@@ -258,11 +258,11 @@
         "alto": 2140,
         "y": 2220
       },
-      "movimiento": "Acercar a cubierta, cordaje y sacos. El barco permanece en Chincha mientras la carga pasa a bordo; luego abrir el encuadre.",
+      "movimiento": "Seguir el saco desde las manos hasta cubierta. Mantener el agarre hasta el apoyo; después soltar. Barco fijo mientras se carga.",
       "beats": [
-        "Acercar al muelle conservando la orientación de la carga.",
-        "El foco recorre sacos, cordaje, cubierta y casco.",
-        "Abrir: el barco sigue en Chincha y queda listo para el esquema de venta."
+        "La carga sigue en las manos sobre el muelle.",
+        "Seguir el saco hasta cubierta y mantener el contacto hasta apoyarlo.",
+        "Soltar después del apoyo; el barco permanece en Chincha durante el embarque."
       ],
       "sonido": "Un roce de saco o madera al cambiar el foco.",
       "base": "C, capítulo 1 · embarque; reconstrucción esquemática de instalaciones",
@@ -414,11 +414,11 @@
         "alto": 2140,
         "y": 6660
       },
-      "movimiento": "Recuperar los dos ejemplos del contexto. La novedad es el reclamo que presentan; no repetir toda la explicación anterior.",
+      "movimiento": "Recuperar los dos ejemplos. El comerciante toma el folio y lo entrega con un gesto breve; el reclamo sigue por sustentar.",
       "beats": [
-        "Recuperar al comerciante conocido con su reclamo.",
-        "Recuperar el caso de bienes utilizados para las tropas.",
-        "Pasar de los ejemplos a sus documentos por revisar."
+        "Recuperar al comerciante y su obligación anterior.",
+        "Tomar el folio, sujetarlo por el borde y entregarlo con un gesto breve.",
+        "Mantener por sustentar y recuperar el segundo ejemplo de bienes utilizados para las tropas."
       ],
       "sonido": "Retomar el motivo de papel del primer ejemplo.",
       "base": "Q, p. 169; B, pp. 20–21 · ejemplos didácticos",
@@ -487,12 +487,28 @@
       "id": 6534
     },
     {
-      "nombre": "15 · ABRIR LA CARPETA",
-      "id": 6466
+      "nombre": "14 · QUIÉNES ESPERABAN COBRAR",
+      "id": 7628
     },
     {
-      "nombre": "14 · QUIÉNES ESPERABAN COBRAR",
-      "id": 6378
+      "nombre": "11 · UNA CASA ORGANIZA LA VENTA",
+      "id": 7406
+    },
+    {
+      "nombre": "08 · PREPARAR EL EMBARQUE",
+      "id": 7079
+    },
+    {
+      "nombre": "07 · EXTRAER Y TRANSPORTAR",
+      "id": 6783
+    },
+    {
+      "nombre": "04 · YA EXISTÍAN DEUDAS",
+      "id": 6603
+    },
+    {
+      "nombre": "15 · ABRIR LA CARPETA",
+      "id": 6466
     },
     {
       "nombre": "13 · RECURSOS Y OBLIGACIONES",
@@ -503,10 +519,6 @@
       "id": 5535
     },
     {
-      "nombre": "11 · UNA CASA ORGANIZA LA VENTA",
-      "id": 5415
-    },
-    {
       "nombre": "10 · EL MERCADO Y EL USO",
       "id": 5021
     },
@@ -515,24 +527,12 @@
       "id": 3593
     },
     {
-      "nombre": "08 · PREPARAR EL EMBARQUE",
-      "id": 3372
-    },
-    {
-      "nombre": "07 · EXTRAER Y TRANSPORTAR",
-      "id": 3273
-    },
-    {
       "nombre": "06 · POR QUÉ TENÍA COMPRADORES",
       "id": 3145
     },
     {
       "nombre": "05 · EL DEPÓSITO DE GUANO",
       "id": 2654
-    },
-    {
-      "nombre": "04 · YA EXISTÍAN DEUDAS",
-      "id": 2571
     },
     {
       "nombre": "03 · EL PERÚ HACIA 1850",
@@ -546,5 +546,7 @@
       "nombre": "Layer 1",
       "id": 1
     }
-  ]
+  ],
+  "revision_personajes": "../../personajes-1850/README.md",
+  "direccion_personajes": "../../../revision_personajes.md"
 }

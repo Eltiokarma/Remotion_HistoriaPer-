@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="360" y1="230.246" x2="505.087" y2="230.246" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0b18b"/>
+      <stop offset="1" stop-color="#c1a07b"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_20_cabeza" data-name="20_cabeza">
+    <ellipse cx="364.5" cy="236.5" rx="14.5" ry="22.5" fill="#c1a07b" stroke="#2d4238" stroke-width="1.5" stroke-miterlimit="10"/>
+    <path d="M371 148 C393 124 443 125 471 149 C488 170 485 197 489 220 L504 243 C507.333 249.667 503 254.667 491 258 L485 284 C481 305.333 466 320.667 440 330 C411.333 326.667 390 313.667 376 291 L364 254 L360 202 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M476 177 C471.333 201.667 472.667 223.333 480 242 L490 247 L479 252 L476 286 C470 301.333 457.667 311 439 315 L443 329 C465.667 321.667 479.667 306.667 485 284 L491 258 C503 254.667 507.333 249.667 504 243 L489 220 Z" fill="#9c8465"/>
+    <path d="M364 226 C357.333 222 354.667 225.667 356 237 L364 247 M421 244 L416 260 L426 264 M482 267 L475 277 M386 269 C392.667 273 400.667 274.333 410 273" fill="none" stroke="#9c8465" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M436 218 C435.333 232.667 436.333 244.667 439 254 L451 257" fill="none" stroke="#8d7055" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="435" y1="270" x2="443" y2="272" fill="none" stroke="#9c8465" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M358 216 C336 155 363 111 406 112 C444 104.667 470.667 116.333 486 147 L491 205 L473 194 C462.333 164 450 146.333 436 141 C418 165.667 397.333 181 374 187 L373 232 Z" fill="#454638" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="351.5" cy="264" rx="22.5" ry="28" fill="#4a4b3c" stroke="#2d4238" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M438 128 C413.333 137.333 391.667 153.667 373 177 M443 126 C463 140 475.333 160.333 480 187 M339 250 C351 246.667 359 254.667 363 274" fill="none" stroke="#8a8c6e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="365" cy="267.5" rx="3" ry="4.5" fill="#bea978" stroke="#2d4238" stroke-miterlimit="10"/>
+  </g>
+</svg>

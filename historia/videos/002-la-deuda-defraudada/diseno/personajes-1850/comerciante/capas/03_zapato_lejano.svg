@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <title>Artboard 1</title>
+  <g id="_03_zapato_lejano" data-name="03_zapato_lejano">
+    <polygon points="369,1026 425,1026 431,1053 422,1069 354,1076 326,1071 327,1059 365,1049" fill="#35483e" stroke="#8c9a7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="331" y1="1074" x2="421" y2="1070" fill="none" stroke="#202f27" stroke-width="4" stroke-miterlimit="10"/>
+    <path d="M372 1035 C386 1040.333 402.667 1041.333 422 1038" fill="none" stroke="#9ca88a" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

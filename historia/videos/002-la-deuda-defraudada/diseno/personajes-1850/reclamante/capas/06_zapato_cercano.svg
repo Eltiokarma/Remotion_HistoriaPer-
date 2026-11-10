@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <title>Artboard 1</title>
+  <g id="_06_zapato_cercano" data-name="06_zapato_cercano">
+    <path d="M488 1030 L545 1026 L553 1054 L600 1074 C606.667 1082 606 1087.333 598 1090 L493 1090 L480 1079 Z" fill="#35483e" stroke="#8c9a7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="491" y1="1090" x2="600" y2="1090" fill="none" stroke="#202f27" stroke-width="4" stroke-miterlimit="10"/>
+    <path d="M504 1039 C519.333 1043 533.333 1042.333 546 1037 M552 1056 C566.667 1058 576 1065 580 1077" fill="none" stroke="#9ca88a" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

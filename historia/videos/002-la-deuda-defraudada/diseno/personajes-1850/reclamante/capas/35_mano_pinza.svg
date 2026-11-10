@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="584" y1="695.297" x2="641" y2="695.297" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0b18b"/>
+      <stop offset="1" stop-color="#c1a07b"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_35_mano_pinza" data-name="35_mano_pinza">
+    <path d="M589 671 C601 666.333 613 666 625 670 L630 690 C637.333 692.667 641 697.667 641 705 L636 716 C632 722 627 724.333 621 723 L598 718 C592 716 588.667 711.333 588 704 L584 695 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M593 689 C601.667 683.667 610.333 682.667 619 686 L631 697 C633.667 701 633 704.333 629 707 L615 698 L605 702" fill="#c1a07b" stroke="#8f7056" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M620 709 C628 709.667 633 707.667 635 703 M613 716 L627 719 M602 712 L613 715" fill="none" stroke="#8f7056" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

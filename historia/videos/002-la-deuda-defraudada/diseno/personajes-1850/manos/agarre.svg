@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.7" height="57.833" viewBox="0 0 58.7 57.833">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="0.85" y1="28.916" x2="57.85" y2="28.916" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0af87"/>
+      <stop offset="1" stop-color="#c39d79"/>
+    </linearGradient>
+  </defs>
+  <title>Personajes del Perú hacia 1850 · comerciante articulado</title>
+  <g id="Selection">
+    <path d="M5.85 4.619 C17.85 -0.047 29.85 -0.381 41.85 3.619 L46.85 23.619 C54.183 26.286 57.85 31.286 57.85 38.619 L52.85 49.619 C48.85 55.619 43.85 57.953 37.85 56.619 L14.85 51.619 C8.85 49.619 5.517 44.953 4.85 37.619 L0.85 28.619 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9.85 22.619 C18.517 17.286 27.183 16.286 35.85 19.619 L47.85 30.619 C50.517 34.619 49.85 37.953 45.85 40.619 L31.85 31.619 L21.85 35.619" fill="#c39d79" stroke="#8f7056" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36.85 42.619 C44.85 43.286 49.85 41.286 51.85 36.619 M29.85 49.619 L43.85 52.619 M18.85 45.619 L29.85 48.619" fill="none" stroke="#8f7056" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

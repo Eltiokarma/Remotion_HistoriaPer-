@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="568.231" y1="716.184" x2="631" y2="716.184" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0af87"/>
+      <stop offset="1" stop-color="#c39d79"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_36_mano_senala" data-name="36_mano_senala">
+    <path d="M589 670 C601.667 664.667 613.667 664.667 625 670 L631 700 L631 760 C629 767.333 625.667 768.333 621 763 L616 718 L612 742 C610.667 748 607.667 749.333 603 746 L600 725 L594 744 C589.333 747.333 586 746.333 584 741 L580 712 L571 705 C567 701 567.333 697 572 693 L583 697 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M586 706 L607 710 M608 721 L614 717" fill="none" stroke="#98775a" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

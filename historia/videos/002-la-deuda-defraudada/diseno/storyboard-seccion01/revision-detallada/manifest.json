@@ -38,13 +38,13 @@
     },
     {
       "archivo": "ANIMACION.md",
-      "bytes": 5424,
-      "sha256": "e4688795bed7ef0abb819fdc62e57bb76f4a2139949bc41abf1889b1880fe156"
+      "bytes": 5612,
+      "sha256": "4a5e5452ad133cdd6bf4b443b49a10967e8a773112ed88e95bb215895ccf6c91"
     },
     {
       "archivo": "README.md",
-      "bytes": 10130,
-      "sha256": "054809b698c99c90602cecba48637ff080b68b048fea448531dced2c67c0dc27"
+      "bytes": 10634,
+      "sha256": "3cf5629311b08b82f4ce322e510ffa9b3d408bdb0d02bb82e3286f41d12fb04b"
     },
     {
       "archivo": "recursos/chincha-gran-bretana/animacion.json",
@@ -178,63 +178,65 @@
     },
     {
       "archivo": "secuencia.json",
-      "bytes": 18314,
-      "sha256": "781475455a537401863553807e8bf63ece6bff9ffbed38bedcb9d65f92292048"
+      "bytes": 18581,
+      "sha256": "511836c5adb4bae37b0dbd594029c6c3466f8baef5f12014c2aa74481af8070f"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina1.png",
-      "bytes": 402744,
-      "sha256": "48860f498cf7c83cbcdef48f01874227a363f240c7f65ac4f41e505b6d79fcbb"
+      "bytes": 406730,
+      "sha256": "29c74d4a3486dda495cd607d183bd91627ec493d68f80d0a9a6ff01a40b6d78b"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina1.svg",
-      "bytes": 1904992,
-      "sha256": "838c4a015258f1eb7ddb823bc510bd7ee3d7ed74cf812a2f71ef00f88d4fc6ba"
+      "bytes": 1925087,
+      "sha256": "9d273cea94d787b18059148a9dea01d11d475eba0405f5c2afc35669e4bb8fa2"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina2.png",
-      "bytes": 438101,
-      "sha256": "031d1c4fd379e14c6602ab9f24f9a080d26d71c3bf6445312125442967397c63"
+      "bytes": 453758,
+      "sha256": "bf573b9f54820ed524a10645091bcbf2c0cb4bed4940cfdfc22859b32c0c5af7"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina2.svg",
-      "bytes": 1664563,
-      "sha256": "ca8b07055e409de5f9e360c61e1ddabd6db69c22b3bb2b46ca4f417a29c2aa19"
+      "bytes": 1763224,
+      "sha256": "bfaa67e69be59f322a5b78d1b3053b04959197dd7e2a20f330d53e7089ffc2dc"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina3.png",
-      "bytes": 480015,
-      "sha256": "4485f829b9bce3a781af8b5b87d15359476b53522de621e4d3d6a5adb056798e"
+      "bytes": 488996,
+      "sha256": "171d477ff441e7292f76a24798a9c972da28a2581e1efd5a9e966f3fc67aac24"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina3.svg",
-      "bytes": 2137117,
-      "sha256": "1c448a251919e0e3483c15b3d2c52b388c868e944837125cff1e362bbb5ba6de"
+      "bytes": 2128888,
+      "sha256": "1385dce35d940c0dea1755629a135bef1e62cdc0ba2f53baf41befc71aab3d1d"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina4.png",
-      "bytes": 368938,
-      "sha256": "e7b0b354c362bdd473b56807082a68d4901bc6b7cfff827f1a1a85bd1407e20d"
+      "bytes": 375960,
+      "sha256": "4367df6d3ac494f5c2ac31e616620857588534c23eba3a47463ae9aef76e2030"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado-lamina4.svg",
-      "bytes": 2100695,
-      "sha256": "9d5358162c4e228e4d40e12b31bc9e498aeaf76551e74495a2b12f634781a3fc"
+      "bytes": 2140232,
+      "sha256": "71d08421b28b32243c73aabfc5a59e3509a714d434c4cc790848dc181d43222c"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado.pdf",
-      "bytes": 4319825,
-      "sha256": "7055cdc5b95f23d042b46f0ac174612a94518ef7944acbfad3706835d0a36f33"
+      "bytes": 4490536,
+      "sha256": "e06beb42d6d0178b886f82e0108b5bc9390e9dcda942151b7ce3cdfaac649ec7"
     },
     {
       "archivo": "storyboard-02-seccion01-detallado.vectorcraft",
-      "bytes": 513754,
-      "sha256": "c7787128d84713246b11ff4ac791b5eb293218049ef4cdebdd3b711e6f69b28c"
+      "bytes": 561694,
+      "sha256": "19e0c458acba0030cc0652e41ae18fd1d99fd54f654f6f2127b8ea3931b258df"
     },
     {
       "archivo": "validacion.json",
-      "bytes": 477,
-      "sha256": "2d3f3205359bee1bd5d9ff09689d8144ec067da69ca81637571a1f2665ff3374"
+      "bytes": 682,
+      "sha256": "cf9a367b8d9feb1625bca789c78078eea18aecd0680aca3646ad93c590184b61"
     }
-  ]
+  ],
+  "revision_personajes": "2026-11-10",
+  "personajes_kit": "../../personajes-1850/manifest.json"
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="465" y1="934.595" x2="548" y2="934.595" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#667268"/>
+      <stop offset="1" stop-color="#40594f"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_05_pantorrilla_cercana" data-name="05_pantorrilla_cercana">
+    <path d="M465 833 C487 821.667 510.333 822.667 535 836 L548 1038 L489 1044 L470 943 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M485 855 C487.667 915.667 494.667 972.333 506 1025 M523 859 L534 1017" fill="none" stroke="#9aa28a" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="487,1025 548,1020 552,1040 489,1046" fill="#8b9680" stroke="#2d4238" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

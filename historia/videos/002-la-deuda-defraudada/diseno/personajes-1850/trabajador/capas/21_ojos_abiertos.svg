@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <title>Artboard 1</title>
+  <g id="_21_ojos_abiertos" data-name="21_ojos_abiertos">
+    <path d="M387 225 C396.333 217.667 406 217.667 416 225 C406.667 230.333 397 230.333 387 225 Z" fill="#e9dfc8" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="403.5" cy="224.5" rx="3.5" ry="5.5" fill="#2d4238"/>
+    <path d="M446 225 C454 218.333 462.667 218.333 472 225 C463.333 229.667 454.667 229.667 446 225 Z" fill="#e9dfc8" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="460.5" cy="225" rx="3.5" ry="5" fill="#2d4238"/>
+    <path d="M388 234 C397.333 236.667 406.333 236.333 415 233 M447 234 C456.333 236 464.667 235.333 472 232" fill="none" stroke="#987357" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

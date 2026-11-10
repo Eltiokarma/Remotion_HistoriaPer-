@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="178.187" height="222.223" viewBox="0 0 178.187 222.223">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="32" y1="121.369" x2="177.087" y2="121.369" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0b18b"/>
+      <stop offset="1" stop-color="#c1a07b"/>
+    </linearGradient>
+  </defs>
+  <title>Untitled-4</title>
+  <g id="Selection">
+    <ellipse cx="36.5" cy="127.623" rx="14.5" ry="22.5" fill="#c1a07b" stroke="#2d4238" stroke-width="1.5" stroke-miterlimit="10"/>
+    <path d="M43 39.123 C65 15.123 115 16.123 143 40.123 C160 61.123 157 88.123 161 111.123 L176 134.123 C179.333 140.79 175 145.79 163 149.123 L157 175.123 C153 196.456 138 211.79 112 221.123 C83.333 217.79 62 204.79 48 182.123 L36 145.123 L32 93.123 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M148 68.123 C143.333 92.79 144.667 114.456 152 133.123 L162 138.123 L151 143.123 L148 177.123 C142 192.456 129.667 202.123 111 206.123 L115 220.123 C137.667 212.79 151.667 197.79 157 175.123 L163 149.123 C175 145.79 179.333 140.79 176 134.123 L161 111.123 Z" fill="#9c8465"/>
+    <path d="M36 117.123 C29.333 113.123 26.667 116.79 28 128.123 L36 138.123 M93 135.123 L88 151.123 L98 155.123 M154 158.123 L147 168.123 M58 160.123 C64.667 164.123 72.667 165.456 82 164.123" fill="none" stroke="#9c8465" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M108 109.123 C107.333 123.79 108.333 135.79 111 145.123 L123 148.123" fill="none" stroke="#8d7055" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="107" y1="161.123" x2="115" y2="163.123" fill="none" stroke="#9c8465" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30 107.123 C8 46.123 35 2.123 78 3.123 C116 -4.21 142.667 7.456 158 38.123 L163 96.123 L145 85.123 C134.333 55.123 122 37.456 108 32.123 C90 56.79 69.333 72.123 46 78.123 L45 123.123 Z" fill="#454638" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="23.5" cy="155.123" rx="22.5" ry="28" fill="#4a4b3c" stroke="#2d4238" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M110 19.123 C85.333 28.456 63.667 44.79 45 68.123 M115 17.123 C135 31.123 147.333 51.456 152 78.123 M11 141.123 C23 137.79 31 145.79 35 165.123" fill="none" stroke="#8a8c6e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="37" cy="158.623" rx="3" ry="4.5" fill="#bea978" stroke="#2d4238" stroke-miterlimit="10"/>
+    <path d="M60 117.123 C68.667 112.456 77.667 112.456 87 117.123 M119 117.123 C127 113.123 135.333 113.123 144 117.123" fill="none" stroke="#2d4238" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 122.123 C69.333 124.79 76.667 124.456 84 121.123 M121 122.123 C127.667 124.123 134 123.79 140 121.123" fill="none" stroke="#9c8465" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M58 100.123 L87 105.123 M119 105.123 L145 99.123" fill="none" stroke="#454638" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M95 178.123 C105 174.79 116.333 174.456 129 177.123 L128 187.123 C117.333 189.123 106.333 188.456 95 185.123 Z" fill="#5e5140" stroke="#2d4238" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="99" y1="181.123" x2="124" y2="181.123" fill="none" stroke="#e9dfc8" stroke-width="2" stroke-miterlimit="10"/>
+  </g>
+</svg>

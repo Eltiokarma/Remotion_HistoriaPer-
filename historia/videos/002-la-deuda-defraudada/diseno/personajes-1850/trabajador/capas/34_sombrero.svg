@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="335" y1="175.934" x2="535" y2="175.934" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c6b58a"/>
+      <stop offset="1" stop-color="#9e996f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="375" y1="127.617" x2="489" y2="127.617" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cbb98d"/>
+      <stop offset="1" stop-color="#9a966c"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_34_sombrero" data-name="34_sombrero">
+    <path d="M335 169 C351.667 158.333 370.333 153.333 391 154 L481 154 C505 160 523 168.667 535 180 C499.667 194.667 462 200.333 422 197 C384 194.333 355 189 335 181 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M375 158 L382 99 C415.333 79.667 446 80.333 474 101 L489 164 C451.667 174 413.667 172 375 158 Z" fill="url(#linear-gradient-2)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M378 145 C414 155.667 449.667 156.667 485 148 L488 166 C450.667 176.667 413 174.667 375 160 Z" fill="#8f8d65" stroke="#2d4238" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M387 108 C417 96.667 445.333 96.667 472 108" fill="none" stroke="#e1cca0" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M389 116 C417.667 106 446 106.333 474 117" fill="none" stroke="#e1cca0" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M391 124 C418.333 115.333 446.667 116 476 126" fill="none" stroke="#e1cca0" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M393 132 C419 124.667 447.333 125.667 478 135" fill="none" stroke="#e1cca0" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M395 140 C419.667 134 448 135.333 480 144" fill="none" stroke="#e1cca0" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="386" y1="112" x2="384" y2="140" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="398" y1="112" x2="396" y2="140" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="410" y1="112" x2="408" y2="140" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="422" y1="112" x2="420" y2="140" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="434" y1="112" x2="432" y2="140" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="446" y1="112" x2="444" y2="140" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="458" y1="112" x2="456" y2="140" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="470" y1="112" x2="468" y2="140" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

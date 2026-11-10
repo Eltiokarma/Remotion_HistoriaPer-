@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="360" y1="230.246" x2="505.087" y2="230.246" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7a27d"/>
+      <stop offset="1" stop-color="#b98e6a"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="_20_cabeza" data-name="20_cabeza">
+    <ellipse cx="364.5" cy="236.5" rx="14.5" ry="22.5" fill="#b98e6a" stroke="#2d4238" stroke-width="1.5" stroke-miterlimit="10"/>
+    <path d="M371 148 C393 124 443 125 471 149 C488 170 485 197 489 220 L504 243 C507.333 249.667 503 254.667 491 258 L485 284 C481 305.333 466 320.667 440 330 C411.333 326.667 390 313.667 376 291 L364 254 L360 202 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M476 177 C471.333 201.667 472.667 223.333 480 242 L490 247 L479 252 L476 286 C470 301.333 457.667 311 439 315 L443 329 C465.667 321.667 479.667 306.667 485 284 L491 258 C503 254.667 507.333 249.667 504 243 L489 220 Z" fill="#987357"/>
+    <path d="M364 226 C357.333 222 354.667 225.667 356 237 L364 247 M421 244 L416 260 L426 264 M482 267 L475 277 M386 269 C392.667 273 400.667 274.333 410 273" fill="none" stroke="#987357" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M436 218 C435.333 232.667 436.333 244.667 439 254 L451 257" fill="none" stroke="#8d7055" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="435" y1="270" x2="443" y2="272" fill="none" stroke="#987357" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M358 216 C342 168 360 125 400 119 C432 109 458 115 478 137 C486.667 148.333 490 166 488 190 L475 190 L465 158 C437 150 410.333 155 385 173 L374 214 L372 251 L360 246 Z" fill="#3b4538" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M372 174 C393.333 150.667 419 138.333 449 137 M378 185 C396.667 165 417.667 153.667 441 151 M373 192 L368 234" fill="none" stroke="#8b9171" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

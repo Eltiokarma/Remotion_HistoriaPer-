@@ -1,0 +1,1019 @@
+{
+  "titulo": "Personajes de época para el episodio 002",
+  "fecha": "2026-11-10",
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "herramienta": "VectorCraft mediante MCP",
+  "personajes": 4,
+  "piezas_svg": 135,
+  "canvas": [
+    900,
+    1200
+  ],
+  "laminas": 3,
+  "artboard": [
+    2520,
+    1720
+  ],
+  "archivos": [
+    {
+      "archivo": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "archivo": "ANIMACION.md",
+      "bytes": 4462,
+      "sha256": "c802f920c0edcb6d21689ef00ea36bca38dff39080e4eae6e86dc8dca9a32572"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 3080,
+      "sha256": "0c7ed243c3e205a22be9947b522a15cc5443612a270575b349ddf876ab2ba789"
+    },
+    {
+      "archivo": "REFERENCIAS.md",
+      "bytes": 2675,
+      "sha256": "b82992b0da3ea8e515be6307b828b0b7e615087a4738a4ff556820f0a4bdfd6e"
+    },
+    {
+      "archivo": "comerciante/capas/00_sombra.svg",
+      "bytes": 328,
+      "sha256": "4c6b48d6b71ce93235025e52c3004cdf9cbc1d187a1edd085ecd69c9bd6ca732"
+    },
+    {
+      "archivo": "comerciante/capas/01_muslo_lejano.svg",
+      "bytes": 892,
+      "sha256": "10457eef819e6ad58ac7a34564bb7dbe9f66b8e5e7ad8afdc8bba428fc751345"
+    },
+    {
+      "archivo": "comerciante/capas/02_pantorrilla_lejana.svg",
+      "bytes": 1074,
+      "sha256": "629a93ce2567c7a11cab1fbaa2c4589fef4dc4e5791b268b4259c06445f8fc30"
+    },
+    {
+      "archivo": "comerciante/capas/03_zapato_lejano.svg",
+      "bytes": 744,
+      "sha256": "18e7505629a232af99f998130ccc08dd45f005f2ea8de5172697a4ea43f6a0be"
+    },
+    {
+      "archivo": "comerciante/capas/04_muslo_cercano.svg",
+      "bytes": 915,
+      "sha256": "ca7d8c20cfcdac6edf372047ed521e8495dcbe0c592a92667a99b61649120276"
+    },
+    {
+      "archivo": "comerciante/capas/05_pantorrilla_cercana.svg",
+      "bytes": 1080,
+      "sha256": "a7fcd1bb2503cb6134f555278a886cca6056955ce32b857f339351d630e8a55e"
+    },
+    {
+      "archivo": "comerciante/capas/06_zapato_cercano.svg",
+      "bytes": 806,
+      "sha256": "d519c2beb46f9366a5d517c4d976a240ad86c2b5c707cb4fac797441245aadab"
+    },
+    {
+      "archivo": "comerciante/capas/08_brazo_lejano.svg",
+      "bytes": 892,
+      "sha256": "a3f2977f6f39811d6896e5f3fa3761e191518cd1bdcd315927dc3900ff09368e"
+    },
+    {
+      "archivo": "comerciante/capas/09_antebrazo_lejano.svg",
+      "bytes": 1030,
+      "sha256": "b1d254ef322d3aa048ccbdb88ac383f559d75a862ebe3ff7ec58b129de25446a"
+    },
+    {
+      "archivo": "comerciante/capas/10_mano_lejana.svg",
+      "bytes": 974,
+      "sha256": "bd14241df4159932a50eb57f47e8dc9a1bfc23ed4f20fcf8215bba941f5442ec"
+    },
+    {
+      "archivo": "comerciante/capas/11_torso.svg",
+      "bytes": 3486,
+      "sha256": "5775046de162facb416cb1321ddef3813779cc8d010726b0fb11d53ad88a9c18"
+    },
+    {
+      "archivo": "comerciante/capas/12_brazo_cercano.svg",
+      "bytes": 900,
+      "sha256": "2465c9e7f3fbd278fa68afd638eb28b8579e5f14b420daed46f4ee3b91b0c5af"
+    },
+    {
+      "archivo": "comerciante/capas/13_antebrazo_cercano.svg",
+      "bytes": 1268,
+      "sha256": "3ec7516ab326e1f1a3034ecdbc05061f9ec98eb9440e9853a1a162976f3c0883"
+    },
+    {
+      "archivo": "comerciante/capas/14_mano_cercana.svg",
+      "bytes": 976,
+      "sha256": "5b6016184e81bba995f06561942f7fb06ec5f1065b06decc5bf27aec1e06e09a"
+    },
+    {
+      "archivo": "comerciante/capas/18_cuello.svg",
+      "bytes": 851,
+      "sha256": "7235e1ba1284c4fdea49a9218f577b2404548ffe625884d405566e22243244c2"
+    },
+    {
+      "archivo": "comerciante/capas/19_corbatin.svg",
+      "bytes": 626,
+      "sha256": "fcd27c85d5ac055c4de25e5834b5bd7d2c6e236a5d37ab5b9587e6c0bf230ff7"
+    },
+    {
+      "archivo": "comerciante/capas/20_cabeza.svg",
+      "bytes": 2427,
+      "sha256": "e5466008788f832416b710874e8e765a713f6dd8138173d3aaf103d01aa0c2fa"
+    },
+    {
+      "archivo": "comerciante/capas/21_ojos_abiertos.svg",
+      "bytes": 998,
+      "sha256": "2f2da1793aa11923b02878e96cdcfe99064dc72cc9a55c60b41af93cb2ce89cc"
+    },
+    {
+      "archivo": "comerciante/capas/22_ojos_entornados.svg",
+      "bytes": 659,
+      "sha256": "188b73d58d4c88d267881adbe48204ae81979a483ab8b65f15cd3841e9810c03"
+    },
+    {
+      "archivo": "comerciante/capas/23_ojos_cerrados.svg",
+      "bytes": 479,
+      "sha256": "e9791767016dbb0d90d51e1bdd5e9df66939fb34706022e3b2280fe53e38ad48"
+    },
+    {
+      "archivo": "comerciante/capas/24_cejas_neutras.svg",
+      "bytes": 475,
+      "sha256": "f36b2039f7434a4fb9132480cfe514735e752ce980954f6184839ccc199ee9b6"
+    },
+    {
+      "archivo": "comerciante/capas/25_cejas_atencion.svg",
+      "bytes": 421,
+      "sha256": "0df528b33b84fde56d6700740d2a40679ac0f8c02d06d7e0d59f2e2fc5c4ec8b"
+    },
+    {
+      "archivo": "comerciante/capas/26_cejas_duda.svg",
+      "bytes": 469,
+      "sha256": "26239565dbb05a66ee9d55a3f762f50b6069616e7bf77b1ebd34d3bd1d2ea2fa"
+    },
+    {
+      "archivo": "comerciante/capas/27_cejas_sorpresa.svg",
+      "bytes": 473,
+      "sha256": "6f9154e24df7da48e615d61ed0f6bd26d7be4ccc0ba6c7293c6688e316c4b809"
+    },
+    {
+      "archivo": "comerciante/capas/28_boca_reposo.svg",
+      "bytes": 586,
+      "sha256": "18f9fa5a4c943bfbef8d4d720933a0c8fa4cad9913a22f37a8c3830eb16d3369"
+    },
+    {
+      "archivo": "comerciante/capas/29_boca_inquieta.svg",
+      "bytes": 568,
+      "sha256": "0c7e1b8eff386ac039f8874f0ec06bb441e5727e86864e46b596008b4be0394f"
+    },
+    {
+      "archivo": "comerciante/capas/30_boca_esfuerzo.svg",
+      "bytes": 578,
+      "sha256": "6e8451e4ec6f1a335d4a6e79b9c2a43099c7face67a91d3b2def8b476403cb40"
+    },
+    {
+      "archivo": "comerciante/capas/31_boca_A.svg",
+      "bytes": 546,
+      "sha256": "496a33d4468e8791123ed5e8d138d6475e8ae23baf7a8e26690f41d258f294b9"
+    },
+    {
+      "archivo": "comerciante/capas/32_boca_O.svg",
+      "bytes": 526,
+      "sha256": "333552e971d16480f496b6d15fc6790cdf1047aaa76bb07bb1ad2da2cb10eed2"
+    },
+    {
+      "archivo": "comerciante/capas/33_boca_MBP.svg",
+      "bytes": 506,
+      "sha256": "6cb280e177d15d263f571e548762a869e3498efda05d08d1c88dd11f899683d5"
+    },
+    {
+      "archivo": "comerciante/capas/34_sombrero.svg",
+      "bytes": 1136,
+      "sha256": "34e51d63ffd26d549b4192a266ab9b6ad80c637abbf2ca85d00c62e700ba1ddb"
+    },
+    {
+      "archivo": "comerciante/capas/35_mano_pinza.svg",
+      "bytes": 1236,
+      "sha256": "acaae40bff5e50eb927b0f390c568e6e6d182b99b4a3aa26a8752166111b4535"
+    },
+    {
+      "archivo": "comerciante/capas/36_mano_senala.svg",
+      "bytes": 1074,
+      "sha256": "7a47b6a228b80d5c03401c39cd2f75e27fa12e8f4fac8307e9ad70dfbcb5bc21"
+    },
+    {
+      "archivo": "comerciante/capas/37_mano_apoyo.svg",
+      "bytes": 1129,
+      "sha256": "ca4306d73d525a0aa82aef9bd9bf2a3c2377e21e51a29179baeaf50cabf775d2"
+    },
+    {
+      "archivo": "comerciante/comerciante-recorte.svg",
+      "bytes": 17294,
+      "sha256": "f4741d50f01388aa015b399b9fe891abb4c6ce68053db316f68bd94fcbdbfe52"
+    },
+    {
+      "archivo": "comerciante/comerciante.png",
+      "bytes": 80302,
+      "sha256": "9bc1e7da8cff42c704e239ff5dcf5484a53ec920b3763a1cca6dbab246fdbe56"
+    },
+    {
+      "archivo": "comerciante/comerciante.svg",
+      "bytes": 17257,
+      "sha256": "2712b1aa9f739a5a52b726a8ddb6a94dd5391ba48a06eed1c2c578b856b6b601"
+    },
+    {
+      "archivo": "comerciante/comerciante.vectorcraft",
+      "bytes": 25595,
+      "sha256": "7c2c56dfb521f2bd32d26940114ca52ba987782d6ad54719cef0cad8144b9e26"
+    },
+    {
+      "archivo": "comerciante/rig.json",
+      "bytes": 17440,
+      "sha256": "48a8d13694ea977195bf64d00ffd97a7033890f4fcf88c8569d538ad7f1f56e2"
+    },
+    {
+      "archivo": "expresiones/comerciante-atencion.svg",
+      "bytes": 4140,
+      "sha256": "a621ff854512639e0e798f984f674cfc14cf0f5cc7a073d5ff97ff80aacc5062"
+    },
+    {
+      "archivo": "expresiones/comerciante-esfuerzo.svg",
+      "bytes": 3792,
+      "sha256": "d7344081bc96dc4f811ed71aa3e118a49990b537b438b137bb19b007115e3a37"
+    },
+    {
+      "archivo": "expresiones/comerciante-inquietud.svg",
+      "bytes": 4178,
+      "sha256": "4e9840c99a5db95e999189732354795833d5ed88b24518fb1b8cf34246c8f4d3"
+    },
+    {
+      "archivo": "expresiones/comerciante-reposo.svg",
+      "bytes": 4193,
+      "sha256": "8801397c67606ddfb8a24e05a5f65317784e58337bbb2e2623ca871038754ed8"
+    },
+    {
+      "archivo": "expresiones/reclamante-atencion.svg",
+      "bytes": 3962,
+      "sha256": "b0a5c3671e01c5e251de5a6d6492579f5c44c190169c31ca011a859d614c0bae"
+    },
+    {
+      "archivo": "expresiones/reclamante-esfuerzo.svg",
+      "bytes": 3614,
+      "sha256": "84e6f6774dee24cfc9d6ea1805d8acf12c94223e0d58eb1afc6643599aeb3d11"
+    },
+    {
+      "archivo": "expresiones/reclamante-inquietud.svg",
+      "bytes": 3996,
+      "sha256": "5a5d3588fc161bbc25f99fce15295dc1f368fcdd007e2d0ff6cc4e1b1e092b4c"
+    },
+    {
+      "archivo": "expresiones/reclamante-reposo.svg",
+      "bytes": 4016,
+      "sha256": "087e2ceb5ee94efc7066bb81a7ab3373076ea2bafc62a328d4e092bfa441cf55"
+    },
+    {
+      "archivo": "funcionario/capas/00_sombra.svg",
+      "bytes": 328,
+      "sha256": "4c6b48d6b71ce93235025e52c3004cdf9cbc1d187a1edd085ecd69c9bd6ca732"
+    },
+    {
+      "archivo": "funcionario/capas/01_muslo_lejano.svg",
+      "bytes": 892,
+      "sha256": "c4882ae1da65f2c7e438555b483d56a633d00c6893f9b7263b6bec5ab9199e8e"
+    },
+    {
+      "archivo": "funcionario/capas/02_pantorrilla_lejana.svg",
+      "bytes": 1074,
+      "sha256": "e5a487d7dfacae8c6cc6357da3a098b5bff5a5d9bf986e590ab396413f85b50d"
+    },
+    {
+      "archivo": "funcionario/capas/03_zapato_lejano.svg",
+      "bytes": 744,
+      "sha256": "18e7505629a232af99f998130ccc08dd45f005f2ea8de5172697a4ea43f6a0be"
+    },
+    {
+      "archivo": "funcionario/capas/04_muslo_cercano.svg",
+      "bytes": 915,
+      "sha256": "e36315fbb50a584624f4470cdc5ff4f7ba52af6f15775d2c7fd1c28b616c43c3"
+    },
+    {
+      "archivo": "funcionario/capas/05_pantorrilla_cercana.svg",
+      "bytes": 1080,
+      "sha256": "c7db0e245c5dc52fb2b23a6b2ccd756c174e6899e76626ba874fc5fe0499a969"
+    },
+    {
+      "archivo": "funcionario/capas/06_zapato_cercano.svg",
+      "bytes": 806,
+      "sha256": "d519c2beb46f9366a5d517c4d976a240ad86c2b5c707cb4fac797441245aadab"
+    },
+    {
+      "archivo": "funcionario/capas/08_brazo_lejano.svg",
+      "bytes": 892,
+      "sha256": "907c684ba7d1f49a75a4559de5641a14e4d32a1a117e9a81b7282f1a7156cf21"
+    },
+    {
+      "archivo": "funcionario/capas/09_antebrazo_lejano.svg",
+      "bytes": 1030,
+      "sha256": "529b0f5640ccfac42f97b7dab82c697c1f862179c085a4c6a6dd404d409af59d"
+    },
+    {
+      "archivo": "funcionario/capas/10_mano_lejana.svg",
+      "bytes": 974,
+      "sha256": "ddaf49a5536f9a91f452ebb61378375cfd068bcc179de012e437a2361b2afd68"
+    },
+    {
+      "archivo": "funcionario/capas/11_torso.svg",
+      "bytes": 3486,
+      "sha256": "1f36f6db912a435fa26d2c48414810dce7922b55ec06d3b8efa146ee33b549a4"
+    },
+    {
+      "archivo": "funcionario/capas/12_brazo_cercano.svg",
+      "bytes": 900,
+      "sha256": "87a8ce3dc1a58f04b0eca9e44215dde3b2e7583eb20e60b008fda4e2dcdce7eb"
+    },
+    {
+      "archivo": "funcionario/capas/13_antebrazo_cercano.svg",
+      "bytes": 1268,
+      "sha256": "1f897bcefdf0e03fec4b6afdea6e38e17aa096324791efd6e8b5024bdb7b31e1"
+    },
+    {
+      "archivo": "funcionario/capas/14_mano_cercana.svg",
+      "bytes": 976,
+      "sha256": "501807f6098325238837745ef028b20685902b282fb2df88f151d867e1562fee"
+    },
+    {
+      "archivo": "funcionario/capas/18_cuello.svg",
+      "bytes": 851,
+      "sha256": "307c001292517042c04458536d50c17ad8c5780b837baedddeeb416b9e1326fc"
+    },
+    {
+      "archivo": "funcionario/capas/19_corbatin.svg",
+      "bytes": 626,
+      "sha256": "fcd27c85d5ac055c4de25e5834b5bd7d2c6e236a5d37ab5b9587e6c0bf230ff7"
+    },
+    {
+      "archivo": "funcionario/capas/20_cabeza.svg",
+      "bytes": 2568,
+      "sha256": "a84960ebc92d6e8c99d377dd317e63fdb3609a985f9b06627625fccb6ea51bcb"
+    },
+    {
+      "archivo": "funcionario/capas/21_ojos_abiertos.svg",
+      "bytes": 998,
+      "sha256": "2f2da1793aa11923b02878e96cdcfe99064dc72cc9a55c60b41af93cb2ce89cc"
+    },
+    {
+      "archivo": "funcionario/capas/22_ojos_entornados.svg",
+      "bytes": 659,
+      "sha256": "188b73d58d4c88d267881adbe48204ae81979a483ab8b65f15cd3841e9810c03"
+    },
+    {
+      "archivo": "funcionario/capas/23_ojos_cerrados.svg",
+      "bytes": 479,
+      "sha256": "e9791767016dbb0d90d51e1bdd5e9df66939fb34706022e3b2280fe53e38ad48"
+    },
+    {
+      "archivo": "funcionario/capas/24_cejas_neutras.svg",
+      "bytes": 475,
+      "sha256": "eafcba95a3e2b368506128b7ae1d6e6b82b68cd0e4413958087cc802dc1db544"
+    },
+    {
+      "archivo": "funcionario/capas/25_cejas_atencion.svg",
+      "bytes": 421,
+      "sha256": "912cbaa5daa9e6254867f35d5c97eb80023dc4d57dbe0498e84efd5a90a62d96"
+    },
+    {
+      "archivo": "funcionario/capas/26_cejas_duda.svg",
+      "bytes": 469,
+      "sha256": "11ab779d6c6b2521c394754c22eeb4e5ecadaa4008294fe75cb795bc6ceb39d3"
+    },
+    {
+      "archivo": "funcionario/capas/27_cejas_sorpresa.svg",
+      "bytes": 473,
+      "sha256": "f7ab22b6a028acd4c141e8524abe6e166e3b900c5c29c3b1d3e0d9de050cd031"
+    },
+    {
+      "archivo": "funcionario/capas/28_boca_reposo.svg",
+      "bytes": 586,
+      "sha256": "18f9fa5a4c943bfbef8d4d720933a0c8fa4cad9913a22f37a8c3830eb16d3369"
+    },
+    {
+      "archivo": "funcionario/capas/29_boca_inquieta.svg",
+      "bytes": 568,
+      "sha256": "0c7e1b8eff386ac039f8874f0ec06bb441e5727e86864e46b596008b4be0394f"
+    },
+    {
+      "archivo": "funcionario/capas/30_boca_esfuerzo.svg",
+      "bytes": 578,
+      "sha256": "6e8451e4ec6f1a335d4a6e79b9c2a43099c7face67a91d3b2def8b476403cb40"
+    },
+    {
+      "archivo": "funcionario/capas/31_boca_A.svg",
+      "bytes": 546,
+      "sha256": "496a33d4468e8791123ed5e8d138d6475e8ae23baf7a8e26690f41d258f294b9"
+    },
+    {
+      "archivo": "funcionario/capas/32_boca_O.svg",
+      "bytes": 526,
+      "sha256": "333552e971d16480f496b6d15fc6790cdf1047aaa76bb07bb1ad2da2cb10eed2"
+    },
+    {
+      "archivo": "funcionario/capas/33_boca_MBP.svg",
+      "bytes": 506,
+      "sha256": "6cb280e177d15d263f571e548762a869e3498efda05d08d1c88dd11f899683d5"
+    },
+    {
+      "archivo": "funcionario/capas/34_sombrero.svg",
+      "bytes": 1136,
+      "sha256": "34e51d63ffd26d549b4192a266ab9b6ad80c637abbf2ca85d00c62e700ba1ddb"
+    },
+    {
+      "archivo": "funcionario/capas/35_mano_pinza.svg",
+      "bytes": 1236,
+      "sha256": "8a110b61936f584059c838ef26e9181e45a4bb0912ad605c8239d3b6b6662a4b"
+    },
+    {
+      "archivo": "funcionario/capas/36_mano_senala.svg",
+      "bytes": 1074,
+      "sha256": "4f1a03b68b4c64a35ca632ebfd9332b3f6167a4a58fbd6b80b2bb31bcd081772"
+    },
+    {
+      "archivo": "funcionario/capas/37_mano_apoyo.svg",
+      "bytes": 1129,
+      "sha256": "9d36af55172ad573a5e646ced6bc4ef03527c300c0b377550d0f91f6535512b5"
+    },
+    {
+      "archivo": "funcionario/funcionario-recorte.svg",
+      "bytes": 17463,
+      "sha256": "c654c3c7b393450c0233ed686111421ba41fcc2cb86a3b59c32f6e28ebea1f0e"
+    },
+    {
+      "archivo": "funcionario/funcionario.png",
+      "bytes": 77359,
+      "sha256": "774cb8cbefabe80c6e84c633b77c023e56ea0b5f2e02965d840479d1029da1de"
+    },
+    {
+      "archivo": "funcionario/funcionario.svg",
+      "bytes": 17398,
+      "sha256": "52448ca1b36685dc228c54cc03efc049c507a16110dc7992938df4df96ae152e"
+    },
+    {
+      "archivo": "funcionario/funcionario.vectorcraft",
+      "bytes": 25395,
+      "sha256": "3c44d0879f4ec5f12b373206f2f3efa0b616f06220ba5fadb21e9f52b29567ca"
+    },
+    {
+      "archivo": "funcionario/rig.json",
+      "bytes": 17441,
+      "sha256": "b905b7813cf42a3c33bda92400571890247ffac94605f19990cd72a341625fc9"
+    },
+    {
+      "archivo": "gestos.json",
+      "bytes": 3247,
+      "sha256": "889101e29e164b067dc25fc822238b7a9234ea4f653a8987b4851f71acf79e34"
+    },
+    {
+      "archivo": "manos/agarre.svg",
+      "bytes": 1371,
+      "sha256": "98ce074e19d359883eceb3cd12a9466d5b23f0e1529b8de5a42fb4afc74b1112"
+    },
+    {
+      "archivo": "manos/apoyo.svg",
+      "bytes": 1226,
+      "sha256": "3297921fbff04422a24e6ac940529194d6d479aec0c04d08e1e55a6995e1f644"
+    },
+    {
+      "archivo": "manos/relajada.svg",
+      "bytes": 1113,
+      "sha256": "cce51a3df1e686092086a1a6bd1aa00f0f532eb1245a4815e8140c8a7351aa43"
+    },
+    {
+      "archivo": "manos/senala.svg",
+      "bytes": 1192,
+      "sha256": "a798e25a2d5e5a08e7b9b008a641692dc8721ddaa278490f7da3ae44c1552350"
+    },
+    {
+      "archivo": "objetos/carga.svg",
+      "bytes": 5584,
+      "sha256": "059a607cb72fc7c248916d72e515a12acba63cc12424a93f1b0f60c2d8b4267d"
+    },
+    {
+      "archivo": "objetos/reclamo.svg",
+      "bytes": 19500,
+      "sha256": "a2d66bf2a22179406af195ae3ef71f45a8cf971a6850fef31d23aa1d84344eed"
+    },
+    {
+      "archivo": "personajes-1850-lamina1.png",
+      "bytes": 375505,
+      "sha256": "23899e2c615e6ad1f207262daed36b7c04e2a724d0265a495d815e9974e8fd10"
+    },
+    {
+      "archivo": "personajes-1850-lamina1.svg",
+      "bytes": 724323,
+      "sha256": "c4fb78ec90465adfb4f45de67a85dfaef6487a8d846ae9c39c049754884159f3"
+    },
+    {
+      "archivo": "personajes-1850-lamina2.png",
+      "bytes": 141975,
+      "sha256": "8372711b4b374739299c228684271d410f883010c42fc704962c58e02e7da8a2"
+    },
+    {
+      "archivo": "personajes-1850-lamina2.svg",
+      "bytes": 314408,
+      "sha256": "7e72425b31f22e198fd99aef262a01cf0f168086ea93544e274fb0c360fff9ae"
+    },
+    {
+      "archivo": "personajes-1850-lamina3.png",
+      "bytes": 357810,
+      "sha256": "e25f14f91f5b1379307eecaef52c965e63db39f376734c68c33c14635a00aeb0"
+    },
+    {
+      "archivo": "personajes-1850-lamina3.svg",
+      "bytes": 440371,
+      "sha256": "2e00f759a203608c150445a6e3496a0491967015685d1e8842f9cd19e52e5ff5"
+    },
+    {
+      "archivo": "personajes-1850.pdf",
+      "bytes": 822521,
+      "sha256": "e20e3f861f7d01d81a48d83218fde8a691aae001069431bad951d0e201c7b766"
+    },
+    {
+      "archivo": "personajes-1850.vectorcraft",
+      "bytes": 142838,
+      "sha256": "69f732e60b61fbd40f3ea418ec5649e3b1209a68be2d5cb44f40ca391ce3d65d"
+    },
+    {
+      "archivo": "poses/comerciante-preparacion-recorte.svg",
+      "bytes": 17811,
+      "sha256": "6f49b22630136b54f5fc20c825f34fb41924d9c25ba3ac6b5cb6ffebde4099f3"
+    },
+    {
+      "archivo": "poses/comerciante-preparacion.png",
+      "bytes": 89093,
+      "sha256": "96e5de99f5bd770f480c301ba9aa91822ee7c1d549398c7cb330754213d142bf"
+    },
+    {
+      "archivo": "poses/comerciante-preparacion.svg",
+      "bytes": 18054,
+      "sha256": "527d1f195c8a373c14e5bf2b827f9bd34d93739ebf3babfb6c7c5ec3a0a4f5c7"
+    },
+    {
+      "archivo": "poses/comerciante-preparacion.vectorcraft",
+      "bytes": 27574,
+      "sha256": "1d3dd6123bcc80da80c1c157cd1e64a0cf529cfd7a8afe347d7b78cc398e79b2"
+    },
+    {
+      "archivo": "poses/comerciante-reclamo-recorte.svg",
+      "bytes": 37367,
+      "sha256": "ec6ab42d39ccbcc1f6ca512d5a701764b861cc0b78bc6e148c1d03d7d2125be5"
+    },
+    {
+      "archivo": "poses/comerciante-reclamo.png",
+      "bytes": 89429,
+      "sha256": "cf30159d51b74735c0e8dc12b8ef874f8a62387e1b1bf84719394b344b07de77"
+    },
+    {
+      "archivo": "poses/comerciante-reclamo.svg",
+      "bytes": 37518,
+      "sha256": "b764577ffd8f0b91896b2437147e7346c8596cc36c99d6db27f1211946fb28de"
+    },
+    {
+      "archivo": "poses/comerciante-reclamo.vectorcraft",
+      "bytes": 29010,
+      "sha256": "55c9a4ec6960f446f1779fe4fe6c3b73ba791e8d44449c5bbd19611ab44e7fe8"
+    },
+    {
+      "archivo": "poses/trabajador-carga-recorte.svg",
+      "bytes": 23926,
+      "sha256": "4a2cfb47e755ab9d0f7956ab8d4106e85b2b9f03c8db6a566a8c7855dad988c9"
+    },
+    {
+      "archivo": "poses/trabajador-carga.png",
+      "bytes": 83590,
+      "sha256": "06de86ed9999bbf383103798657544e7382cfe1871b861c3238d1df915b5ab5d"
+    },
+    {
+      "archivo": "poses/trabajador-carga.svg",
+      "bytes": 24431,
+      "sha256": "41feb5a99af44bb6ba1cf2e1e6fcb3f8387d3e7f73fef2eb3f3a98c1ef68a478"
+    },
+    {
+      "archivo": "poses/trabajador-carga.vectorcraft",
+      "bytes": 26946,
+      "sha256": "d0926b1d06a52b3e73ae7e9cf1cafc7bc883886d965c7a24a27650c6548d49fa"
+    },
+    {
+      "archivo": "poses/trabajador-preparacion-recorte.svg",
+      "bytes": 18417,
+      "sha256": "11d6f7d7d684b022d2c034419977742ef767873fc46c2903391b262782d5e94f"
+    },
+    {
+      "archivo": "poses/trabajador-preparacion.png",
+      "bytes": 78177,
+      "sha256": "59274234f96051286ae2bec1792b18708a5aa0196c812b386f659f463ccde0b3"
+    },
+    {
+      "archivo": "poses/trabajador-preparacion.svg",
+      "bytes": 18903,
+      "sha256": "236e3e8fb5f68aa412962b798049845d50f853d1379ae49cbda3fdcf91b802e2"
+    },
+    {
+      "archivo": "poses/trabajador-preparacion.vectorcraft",
+      "bytes": 25037,
+      "sha256": "88956f08ff58fc8fde8ebfa32b091bbd922a2bbd3d70690d4e4fe054ed27c52f"
+    },
+    {
+      "archivo": "reclamante/capas/00_sombra.svg",
+      "bytes": 328,
+      "sha256": "4c6b48d6b71ce93235025e52c3004cdf9cbc1d187a1edd085ecd69c9bd6ca732"
+    },
+    {
+      "archivo": "reclamante/capas/01_muslo_lejano.svg",
+      "bytes": 892,
+      "sha256": "aec6fc99426b1520829dc922604f21ee3f0de5c695d1664e2cbcf64c8bc5adfa"
+    },
+    {
+      "archivo": "reclamante/capas/02_pantorrilla_lejana.svg",
+      "bytes": 1074,
+      "sha256": "641c99a060271d120663948351ced86748408819021fb751cadf161b6757b26d"
+    },
+    {
+      "archivo": "reclamante/capas/03_zapato_lejano.svg",
+      "bytes": 744,
+      "sha256": "18e7505629a232af99f998130ccc08dd45f005f2ea8de5172697a4ea43f6a0be"
+    },
+    {
+      "archivo": "reclamante/capas/04_muslo_cercano.svg",
+      "bytes": 915,
+      "sha256": "26454f6b53f384a3bc200142df31b3afa1ebd548b0820ee66f3d9d8d2d44c04e"
+    },
+    {
+      "archivo": "reclamante/capas/05_pantorrilla_cercana.svg",
+      "bytes": 1080,
+      "sha256": "427c584fad18ab83c3b2c3b0321b0e8c4ef6495cde6f65d1051594741d627675"
+    },
+    {
+      "archivo": "reclamante/capas/06_zapato_cercano.svg",
+      "bytes": 806,
+      "sha256": "d519c2beb46f9366a5d517c4d976a240ad86c2b5c707cb4fac797441245aadab"
+    },
+    {
+      "archivo": "reclamante/capas/07_falda.svg",
+      "bytes": 2363,
+      "sha256": "7bd48d365de9f0fc74be1d1c42df05d91780bb66e18b0b9a553cf65497f9215d"
+    },
+    {
+      "archivo": "reclamante/capas/08_brazo_lejano.svg",
+      "bytes": 892,
+      "sha256": "e8a0189afe60489ee49d9c943649b9ccc698832b052f3c5e3b3f6220d80bf980"
+    },
+    {
+      "archivo": "reclamante/capas/09_antebrazo_lejano.svg",
+      "bytes": 1030,
+      "sha256": "d2fe1007bd705ed99dd6591e311ee9d86338a8372e448b3156f022c3ab6d58a5"
+    },
+    {
+      "archivo": "reclamante/capas/10_mano_lejana.svg",
+      "bytes": 974,
+      "sha256": "660b9fbbe4712fc2de38182e6fed2f4d959ca1c9689266015f48545cb8bb116a"
+    },
+    {
+      "archivo": "reclamante/capas/11_torso.svg",
+      "bytes": 1897,
+      "sha256": "00d8482fc4e6afd2e67b1267ce1ccc9454eda37ef9b242932df6874cd6aa27f3"
+    },
+    {
+      "archivo": "reclamante/capas/12_brazo_cercano.svg",
+      "bytes": 900,
+      "sha256": "2e126a99a68f9308c98cb7798103851220a67b7f711329bd8e5a546367b7ff92"
+    },
+    {
+      "archivo": "reclamante/capas/13_antebrazo_cercano.svg",
+      "bytes": 1044,
+      "sha256": "0c4b40dc4f5a9a6691ca04aa7e21fdd6236c07100a93c0c1096069dbe6e12d4d"
+    },
+    {
+      "archivo": "reclamante/capas/14_mano_cercana.svg",
+      "bytes": 976,
+      "sha256": "e70cf6200fda99cd6e7cbd0f3108164683f8040641dc3b8f7c7baa629c41eca6"
+    },
+    {
+      "archivo": "reclamante/capas/15_chal.svg",
+      "bytes": 1999,
+      "sha256": "14185acbfe622eb44c0d7536ac659dfc859f965b29a8da16bd211f49a2bc7638"
+    },
+    {
+      "archivo": "reclamante/capas/18_cuello.svg",
+      "bytes": 851,
+      "sha256": "3a0db13a8d30e4e2125e9257ef420e993eacf14b1ce4684482b52ccff1187241"
+    },
+    {
+      "archivo": "reclamante/capas/20_cabeza.svg",
+      "bytes": 2551,
+      "sha256": "6b85aae70156b2603380f1648bfef54e092bc2a6fcd9062c5298e6f8cfe0ee58"
+    },
+    {
+      "archivo": "reclamante/capas/21_ojos_abiertos.svg",
+      "bytes": 998,
+      "sha256": "1710484d14e1d1ec92addc71586110ee898bf3b32572bf093834deab34b4d2a2"
+    },
+    {
+      "archivo": "reclamante/capas/22_ojos_entornados.svg",
+      "bytes": 659,
+      "sha256": "0da022b3b3bd127d6e11217fc6248a7be04ddf32485d9a83cc30a405ae305f2a"
+    },
+    {
+      "archivo": "reclamante/capas/23_ojos_cerrados.svg",
+      "bytes": 479,
+      "sha256": "e9791767016dbb0d90d51e1bdd5e9df66939fb34706022e3b2280fe53e38ad48"
+    },
+    {
+      "archivo": "reclamante/capas/24_cejas_neutras.svg",
+      "bytes": 475,
+      "sha256": "ef32de872c22f6ed0bd8744e7a04f8758b1b486f156032078a24b0e6e6962885"
+    },
+    {
+      "archivo": "reclamante/capas/25_cejas_atencion.svg",
+      "bytes": 421,
+      "sha256": "6b4dc07218220531fbf6671dc4805529d71295811619efbbb85ed6c5d564da8c"
+    },
+    {
+      "archivo": "reclamante/capas/26_cejas_duda.svg",
+      "bytes": 469,
+      "sha256": "2e86ebad87fcb075984ee8ae5a89945e799056e7102d271fd4f8b3bb93467ae9"
+    },
+    {
+      "archivo": "reclamante/capas/27_cejas_sorpresa.svg",
+      "bytes": 473,
+      "sha256": "c61be498dc75042ce6a64e639366b666d5dfb9a40a23410ba61c21b3fb543e63"
+    },
+    {
+      "archivo": "reclamante/capas/28_boca_reposo.svg",
+      "bytes": 586,
+      "sha256": "22feb92a67673374dc90b13a670ca65fc172badee25e756b66931d6f44216c6a"
+    },
+    {
+      "archivo": "reclamante/capas/29_boca_inquieta.svg",
+      "bytes": 568,
+      "sha256": "b94dfa0e284566df4ffc1f1f1cc6b1ad7d06a0a2dc627162d2a7845cbc478c41"
+    },
+    {
+      "archivo": "reclamante/capas/30_boca_esfuerzo.svg",
+      "bytes": 578,
+      "sha256": "6e8451e4ec6f1a335d4a6e79b9c2a43099c7face67a91d3b2def8b476403cb40"
+    },
+    {
+      "archivo": "reclamante/capas/31_boca_A.svg",
+      "bytes": 546,
+      "sha256": "496a33d4468e8791123ed5e8d138d6475e8ae23baf7a8e26690f41d258f294b9"
+    },
+    {
+      "archivo": "reclamante/capas/32_boca_O.svg",
+      "bytes": 526,
+      "sha256": "d814661346e1e881494216c403c228cf0ce06c2fb02ecb55cc5ddbf7c68ad96c"
+    },
+    {
+      "archivo": "reclamante/capas/33_boca_MBP.svg",
+      "bytes": 506,
+      "sha256": "6cb280e177d15d263f571e548762a869e3498efda05d08d1c88dd11f899683d5"
+    },
+    {
+      "archivo": "reclamante/capas/35_mano_pinza.svg",
+      "bytes": 1236,
+      "sha256": "831bc9333db1f9691092492ffd3582796ee6073305135cbd345d85c5c667b5f6"
+    },
+    {
+      "archivo": "reclamante/capas/36_mano_senala.svg",
+      "bytes": 1074,
+      "sha256": "065dc10a09370fd3c90a322b8c451fd4c236036709acddb4e6d2c369dbd72185"
+    },
+    {
+      "archivo": "reclamante/capas/37_mano_apoyo.svg",
+      "bytes": 1129,
+      "sha256": "df565724e677f6c17eeb4341aa040d91e7a1dd404aaf486cd6c5af46766fc093"
+    },
+    {
+      "archivo": "reclamante/reclamante-recorte.svg",
+      "bytes": 20339,
+      "sha256": "03798fc0217d0f3d245a5822974b9ecb2e46e77bcd0c6f93ddb29eb18f7125f3"
+    },
+    {
+      "archivo": "reclamante/reclamante.png",
+      "bytes": 87785,
+      "sha256": "e34e778e9372ae673df66c257ed43dde08fc949f43413d323fc8f3cb42480184"
+    },
+    {
+      "archivo": "reclamante/reclamante.svg",
+      "bytes": 19061,
+      "sha256": "4dd3fda3e3c839deeabab4c7c06c849bbe8de6e784c3b436fc19d3659a190ce0"
+    },
+    {
+      "archivo": "reclamante/reclamante.vectorcraft",
+      "bytes": 27335,
+      "sha256": "989cd9d9a310173f99f9fd0e639d6c6dac8d52655d742498ab72e7c450478fc7"
+    },
+    {
+      "archivo": "reclamante/rig.json",
+      "bytes": 17412,
+      "sha256": "3afba60dc3b4b95f7ddbf23214f25468ae6de75bd9ca53d1841660bbdf55f120"
+    },
+    {
+      "archivo": "referencias.json",
+      "bytes": 3631,
+      "sha256": "86c6544046686cad8376318800f3f9b7b36445895d9ef77bb68e188ce80499c9"
+    },
+    {
+      "archivo": "trabajador/capas/00_sombra.svg",
+      "bytes": 328,
+      "sha256": "4c6b48d6b71ce93235025e52c3004cdf9cbc1d187a1edd085ecd69c9bd6ca732"
+    },
+    {
+      "archivo": "trabajador/capas/01_muslo_lejano.svg",
+      "bytes": 892,
+      "sha256": "48cbb28d0b52324cc2dc8587877cf2e5950825a4e937a38c36f5c8379d2c5686"
+    },
+    {
+      "archivo": "trabajador/capas/02_pantorrilla_lejana.svg",
+      "bytes": 1074,
+      "sha256": "20a2976a381bf8395543dc3745f095aafcfebd147338270c4a8cb9b63a64b09d"
+    },
+    {
+      "archivo": "trabajador/capas/03_zapato_lejano.svg",
+      "bytes": 744,
+      "sha256": "18e7505629a232af99f998130ccc08dd45f005f2ea8de5172697a4ea43f6a0be"
+    },
+    {
+      "archivo": "trabajador/capas/04_muslo_cercano.svg",
+      "bytes": 915,
+      "sha256": "07316e091b458d3f314c057535c369670852b864f57b7ef636dd1de6083cc54d"
+    },
+    {
+      "archivo": "trabajador/capas/05_pantorrilla_cercana.svg",
+      "bytes": 1080,
+      "sha256": "35dea07b37edb19228715bc6d1d3f95f90a7bf08d14850a129c684729da18fb4"
+    },
+    {
+      "archivo": "trabajador/capas/06_zapato_cercano.svg",
+      "bytes": 806,
+      "sha256": "d519c2beb46f9366a5d517c4d976a240ad86c2b5c707cb4fac797441245aadab"
+    },
+    {
+      "archivo": "trabajador/capas/08_brazo_lejano.svg",
+      "bytes": 892,
+      "sha256": "d3d3f5761da01373df74b61ce2ab0d635bad7ba16f81398f9592f4edf505f22c"
+    },
+    {
+      "archivo": "trabajador/capas/09_antebrazo_lejano.svg",
+      "bytes": 1018,
+      "sha256": "01ef5c6cfd940d5159196eaca0a39fb1836ad9f0109ea74059a3e54836ad7c13"
+    },
+    {
+      "archivo": "trabajador/capas/10_mano_lejana.svg",
+      "bytes": 974,
+      "sha256": "09e80fee370687a576a6012217a9adab68adcbb5637ccfe100ba8fc0fc054410"
+    },
+    {
+      "archivo": "trabajador/capas/11_torso.svg",
+      "bytes": 2036,
+      "sha256": "303c7403aef6a6a77a79bf676d301b878a1daf86963886aeb775ddf05520428c"
+    },
+    {
+      "archivo": "trabajador/capas/12_brazo_cercano.svg",
+      "bytes": 900,
+      "sha256": "427d09a865cb034bac18dd6fdb5679e22828f355f63c656afcc7d369fb4f5d76"
+    },
+    {
+      "archivo": "trabajador/capas/13_antebrazo_cercano.svg",
+      "bytes": 1028,
+      "sha256": "6b4767e1f7ec8cef006cd77e8df788b8cd3237178436c3a4ccde1eb75166b5e7"
+    },
+    {
+      "archivo": "trabajador/capas/14_mano_cercana.svg",
+      "bytes": 976,
+      "sha256": "066a9fe3219d97cf67fcfdf8486beb587eb27e5d14a476ff39ee260ca7906c52"
+    },
+    {
+      "archivo": "trabajador/capas/18_cuello.svg",
+      "bytes": 851,
+      "sha256": "e915c06c2c8efaafa2ef17c62012628aee36c56af54eccfa4cb9fec2f7f4b3b8"
+    },
+    {
+      "archivo": "trabajador/capas/20_cabeza.svg",
+      "bytes": 2298,
+      "sha256": "52cd22da15ef1c6ab398610f074788e62f5aa7ecc3630e803ac904fd11c2bacf"
+    },
+    {
+      "archivo": "trabajador/capas/21_ojos_abiertos.svg",
+      "bytes": 998,
+      "sha256": "d95bcc6cc36576f34eac7709d6ffb96891265986b58bb8cd2c328c0b48d375a7"
+    },
+    {
+      "archivo": "trabajador/capas/22_ojos_entornados.svg",
+      "bytes": 659,
+      "sha256": "0c9cdce663ff5e4c061af3a25d3dead7d4531c5f1f45c833c8eabe891d34ec76"
+    },
+    {
+      "archivo": "trabajador/capas/23_ojos_cerrados.svg",
+      "bytes": 479,
+      "sha256": "e9791767016dbb0d90d51e1bdd5e9df66939fb34706022e3b2280fe53e38ad48"
+    },
+    {
+      "archivo": "trabajador/capas/24_cejas_neutras.svg",
+      "bytes": 475,
+      "sha256": "a810c868f2e3e96de9d689f75bd4d809ca9963090fb88d80e1ea002a63d659a6"
+    },
+    {
+      "archivo": "trabajador/capas/25_cejas_atencion.svg",
+      "bytes": 421,
+      "sha256": "49b3d4382b350082e0e9198f53d17fb91809e14a47297e636623d0ac46a2e668"
+    },
+    {
+      "archivo": "trabajador/capas/26_cejas_duda.svg",
+      "bytes": 469,
+      "sha256": "0078596d26380c2a6473a40f59b5279bbdcfd736049693bec03a59aaa5a738d5"
+    },
+    {
+      "archivo": "trabajador/capas/27_cejas_sorpresa.svg",
+      "bytes": 473,
+      "sha256": "424231aad87551943d6e0b35ef6f39ea09041617c1d2cf29165fe065cb7e98c4"
+    },
+    {
+      "archivo": "trabajador/capas/28_boca_reposo.svg",
+      "bytes": 586,
+      "sha256": "a31069e0c4172ab2fcc6d373cad1ff36ed214fd253d819569bfb12c4ddb85ea0"
+    },
+    {
+      "archivo": "trabajador/capas/29_boca_inquieta.svg",
+      "bytes": 568,
+      "sha256": "e017e3234aaf59bbe3669d88adf383464ec0595d9cec09ff4ca653fe1d3a4d33"
+    },
+    {
+      "archivo": "trabajador/capas/30_boca_esfuerzo.svg",
+      "bytes": 578,
+      "sha256": "6e8451e4ec6f1a335d4a6e79b9c2a43099c7face67a91d3b2def8b476403cb40"
+    },
+    {
+      "archivo": "trabajador/capas/31_boca_A.svg",
+      "bytes": 546,
+      "sha256": "496a33d4468e8791123ed5e8d138d6475e8ae23baf7a8e26690f41d258f294b9"
+    },
+    {
+      "archivo": "trabajador/capas/32_boca_O.svg",
+      "bytes": 526,
+      "sha256": "b39555c5bfaa4421f6ad31c499d60db29d1321f809eb8061328d8e8de85aef68"
+    },
+    {
+      "archivo": "trabajador/capas/33_boca_MBP.svg",
+      "bytes": 506,
+      "sha256": "6cb280e177d15d263f571e548762a869e3498efda05d08d1c88dd11f899683d5"
+    },
+    {
+      "archivo": "trabajador/capas/34_sombrero.svg",
+      "bytes": 3268,
+      "sha256": "04d751eea8271cb46cacc86df4a3bfedb1b648f9c5584e34528a54351331487e"
+    },
+    {
+      "archivo": "trabajador/capas/35_mano_pinza.svg",
+      "bytes": 1236,
+      "sha256": "fb3f1349088ed946fb57d832699ede17178682855929bf56e49e7f31a58e33f0"
+    },
+    {
+      "archivo": "trabajador/capas/36_mano_senala.svg",
+      "bytes": 1074,
+      "sha256": "906eedcf8528769345b0f56ffbce81f00075421b98f75e4ec3a667286c21acbf"
+    },
+    {
+      "archivo": "trabajador/capas/37_mano_apoyo.svg",
+      "bytes": 1129,
+      "sha256": "325a46adebd6f4ecd59503d3379984380bea06fac5d8c3c5f0978573acf77227"
+    },
+    {
+      "archivo": "trabajador/rig.json",
+      "bytes": 17010,
+      "sha256": "693bab2a89b5c32545e611277def33676281fdaf977ddf5c2d766582bf4dca53"
+    },
+    {
+      "archivo": "trabajador/trabajador-recorte.svg",
+      "bytes": 17982,
+      "sha256": "5284b1afa27325b03da2ca051259bb9a1d8c27a1ddf85d5940e5f9c92b95e609"
+    },
+    {
+      "archivo": "trabajador/trabajador.png",
+      "bytes": 75849,
+      "sha256": "ea20fc8e2350a6bc71e2e93971c1e36c50d4a350fe92a5d7f4a455598ddfbfd5"
+    },
+    {
+      "archivo": "trabajador/trabajador.svg",
+      "bytes": 18051,
+      "sha256": "72507d48157b17637bdd4fafbe88e51d9bb3d56a1dda7b71478342574c544372"
+    },
+    {
+      "archivo": "trabajador/trabajador.vectorcraft",
+      "bytes": 25307,
+      "sha256": "86590b5837bee1d536076908f5b82c1625cf90585b2607e65fbf2c0225f35a5e"
+    },
+    {
+      "archivo": "validacion.json",
+      "bytes": 538,
+      "sha256": "51db0e62d3ec8813a217a3f37891819f1f423e1072830929f3ecdcfc0ca7ffef"
+    }
+  ]
+}
