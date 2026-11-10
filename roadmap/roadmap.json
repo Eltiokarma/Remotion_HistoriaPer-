@@ -1064,11 +1064,14 @@
       "fase": "f4",
       "titulo": "ElevenLabs: MCP en la laptop y alineación forzada de la voz real",
       "entregable": "MCP conectado en Claude Desktop; prueba de alineación forzada de una escena que reescriba sus beats",
-      "estado": "propuesto",
+      "estado": "en_curso",
       "depende_de": [],
       "prevista": null,
-      "real": null,
-      "bloqueo": null,
+      "real": {
+        "inicio": "2026-11-10",
+        "fin": null
+      },
+      "bloqueo": "Clave guardada como secreto de red en la nube (2026-11-10) y autentica, pero le faltan permisos de lectura (user_read, voices_read, models_read).",
       "evidencia": [
         "docs/RUTINA_ELEVENLABS.md"
       ],
