@@ -106,3 +106,7 @@ Se examinaron fichas e imágenes de acuarelas atribuidas a Pancho Fierro en el M
 Para la construcción de prendas se consultaron la [levita estadounidense de lino de 1840–50, 1970.281.8](https://www.metmuseum.org/art/collection/search/91913), y el [chaleco estadounidense de ca. 1840, 1979.346.46](https://www.metmuseum.org/art/collection/search/90939). Las cinco fichas indican dominio público. Los objetos estadounidenses no prueban un uniforme peruano ni el vestido de una persona concreta; guían forma y estructura. Los rostros, colores, poses y gestos son ilustración propia. El [registro de referencias](diseno/personajes-1850/REFERENCIAS.md) separa esas decisiones de los datos históricos.
 
 Los personajes son ejemplos. No son retratos de Novoa, funcionarios identificados o miembros de Gibbs & Sons; su aspecto no acredita etnia, situación jurídica, sentimientos o responsabilidad en los hechos. Las viñetas 04, 07, 08, 11 y 14 de la sección 1 se actualizaron. Las otras secciones conservan sus figuras anteriores hasta una revisión específica.
+
+## Revisión 2 del desarrollo de la escena 1
+
+Se reorganiza la exposición visual con los mismos cotejos: Q, pp. 164–170; B, pp. 10–11 y 20–21; C, capítulo 1. La pala, el material suelto, el saco y su llenado son representaciones editoriales del trabajo. Apoyos, pasarela, barco y posturas no reconstruyen una instalación exacta ni documentan la condición de una figura. El esquema comercial mantiene su carácter conceptual. No se realizó aquí una nueva lectura independiente de las leyes o de los libros.

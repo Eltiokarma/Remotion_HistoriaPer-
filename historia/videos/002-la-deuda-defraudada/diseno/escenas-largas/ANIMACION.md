@@ -47,3 +47,9 @@ Durante un gesto, mantener la cámara quieta; durante el recorrido del foco, sos
 Conservar degradados de pizarra y papel, mar azul, textura, sombras, luz, foco y pausas. Animar sus intensidades y posiciones sobre las capas; no sustituirlos por PNG enteras ni borrar efectos al cambiar de dibujo. El brillo que guía la lectura no representa cantidades, porcentajes o pruebas históricas. Coordinar mar, viento y roce de objetos con las acciones; dejar sin música las lecturas sensibles señaladas.
 
 En Remotion, movimiento dependiente de useCurrentFrame; convertir frame/fps antes de funciones que reciban segundos. Antes de solicitar otro video, inspeccionar fotogramas de inicio, preparación, contacto, agarre compartido, liberación y pausa, a tamaño final, y cotejar inventario y efectos. Esta entrega valida dibujos estáticos y archivos; la integración y la animación no están implementadas ni comprobadas. No generar un video por el solo hecho de recibir estos recursos.
+
+## Revisión 2 de la escena 1
+
+Revisión 2 solicitada por Gerson tras revisar las siete láminas. Se modifican apertura, extracción y llenado, posturas y agarre, recepción a bordo, construcción de cuentas, ejemplos de deuda y acercamiento al folio. El contexto fiscal se traslada de 1A a 1D. Se mantienen siete láminas y 21 estados; la voz es una referencia revisada, pendiente de locución final.
+
+Las nuevas posturas tienen cuerpo y brazos dibujados para el gesto, con cabeza canónica. Usar sus grupos y resolver los pivotes y trayectorias al integrar; no aplicarles automáticamente las rotaciones de las poses anteriores. El saco conserva su identidad, se sostiene por ambos lados y se apoya antes de retirar las manos. El barco mantiene sus velas, cuerdas y casco detallados. Conservar textura, gradientes, sombras, pausas y foco. Los campos del reclamo y Por revisar quedan dentro del cuadro. La revisión sigue siendo estática; no se generó video.

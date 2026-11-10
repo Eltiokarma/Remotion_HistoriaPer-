@@ -8,63 +8,63 @@
   "archivos": [
     {
       "archivo": "escena-01.pdf",
-      "bytes": 8107703,
-      "sha256": "fcf2e8c6aa3666c9c88ad9f94df489c79ce514203f470021c57b9d951bd44673"
+      "bytes": 6893734,
+      "sha256": "9baab8195d0bd4998626d136cc1427834a097c6cfe4256fdb47885e85856203d"
     },
     {
       "archivo": "escena-01.vectorcraft",
-      "bytes": 2309171,
-      "sha256": "ba7cc039873050b0f770bde69c54026adf86e33720dba478b77edd63b7cf4864"
+      "bytes": 2044408,
+      "sha256": "a6aab902070090756afccafc314c36a02a5d573e89fb754ecbcd48c94f71441a"
     },
     {
       "archivo": "lamina01.svg",
-      "bytes": 1449654,
-      "sha256": "f72f418a818c54b7b117af8f341a86327c638e4fd7198b007c0bf48e26295b14"
+      "bytes": 1055123,
+      "sha256": "5ed2915277e799190320d1846fd697f54ed0b7ff666609a368e5d200dab06105"
     },
     {
       "archivo": "lamina02.svg",
-      "bytes": 1223798,
-      "sha256": "43b3082b3b22b6eaf0aad1059f2c804f7b35f8169aaff4e3b3cc6b756b3ae4b3"
+      "bytes": 1036660,
+      "sha256": "e1624bcf6c5db8eadcb2972df9c19d7f42df6fefad7c0ed48132494c7c4fc9db"
     },
     {
       "archivo": "lamina03.svg",
-      "bytes": 1471632,
-      "sha256": "0347ceb23ee32b19a0e274eda4b7eef87dd6092e65f290ffcb063a578959c953"
+      "bytes": 1419228,
+      "sha256": "ca6e2cbad71eb5332f3f2edc8f49da2fb16f3d38e8d4f44ebdd5d5caa46a4040"
     },
     {
       "archivo": "lamina04.svg",
-      "bytes": 1553073,
-      "sha256": "3c9ebf280e06efe968cdbc3eef0ad26623dba3f67b1303044804463a8b0630bc"
+      "bytes": 1539226,
+      "sha256": "61aa17e0e5fcf44eba0d3669df08ff607078bfc70291cad807a65458ccfe826f"
     },
     {
       "archivo": "lamina05.svg",
-      "bytes": 1483205,
-      "sha256": "c9b15c8e2c6ece35e55b309524af2a3f3e40bfbf6f6a2872b417c2385781d9ee"
+      "bytes": 1514665,
+      "sha256": "16d110ed2c4b7dcc74c09ae9207785b6179ffc3b847f1f6651d20d348f5d419a"
     },
     {
       "archivo": "lamina06.svg",
-      "bytes": 1570403,
-      "sha256": "428cbb57fe90356f4fb38027e36685ba12d41cafc12ce97a8200ce9348ae65c1"
+      "bytes": 1832606,
+      "sha256": "f8804c082272f4f335bcc7cfc79756813eaaf637328a0f75ce3882d4a2b3aef9"
     },
     {
       "archivo": "lamina07.svg",
-      "bytes": 1502986,
-      "sha256": "3add7ca0c7b2d066dacc9162f5ab6a0b19877f7f7ca03b9ecb849d63397c4873"
+      "bytes": 1541566,
+      "sha256": "72344abfe2cc192d8176ef14ffb0368bb6a1e8599d7a86d4e98fc5198f4936a0"
     },
     {
       "archivo": "muestra.png",
-      "bytes": 252447,
-      "sha256": "b09a39bd2ce531efc2e25fc2cb285b4f85d6615cf055d6fa7feca35d45e24345"
+      "bytes": 243834,
+      "sha256": "c4b2a7b44eeda3aa6e19458b1da7d57ae8e6cebfb59cd90e7246986b0fe64404"
     },
     {
       "archivo": "README.md",
-      "bytes": 1795,
-      "sha256": "8c4ae4b330ba7291dc87d3259c72708b4ea345dc62bbc845a44d364308067c25"
+      "bytes": 2472,
+      "sha256": "a48ea82b29d6426c823eed2f2c7bbbc1dabfcd1cb139b7062e94942cbdfe2e84"
     },
     {
       "archivo": "secuencia.json",
-      "bytes": 17569,
-      "sha256": "38ed077b8fe57863982bfa061f57b765d8d372ff6c8b4a8b0fe6440e09352f44"
+      "bytes": 18131,
+      "sha256": "3d83f5c21003489e2025afcb92712d19ba90870c408ef1005fddade1066eedc7"
     }
   ]
 }

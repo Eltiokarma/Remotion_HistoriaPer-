@@ -34,22 +34,22 @@
     {
       "id": "1A",
       "momento": "1A",
-      "titulo": "El país y sus ingresos",
+      "titulo": "Chincha, hacia 1850",
       "lamina": 1,
       "artboard": 0,
       "svg": "lamina01.svg",
       "capa_nativa": 2,
-      "voz_referencia": "Han pasado casi treinta años desde la proclamación de la independencia. Gobierna Ramón Castilla.",
-      "accion_y_camara": "El recorrido va del lugar al país. El contexto fiscal entra por grupos, con el Estado como referencia fija.",
-      "pausa_y_lectura": "Dejar leer los nombres y mantener quieto el esquema completo.",
-      "siguiente": "1B · Del recurso a su extracción",
+      "voz_referencia": "Estamos en las islas de Chincha, frente a Pisco, hacia 1850. De aquí salía el guano que se vendía en el extranjero.",
+      "accion_y_camara": "Abrir sobre el paisaje y acercarse a las aves. El mapa llega después de reconocer el lugar. El esquema fiscal se reserva para 1D.",
+      "pausa_y_lectura": "Mar y aves antes de la voz; sostener el mapa para orientarse.",
+      "siguiente": "1B.1 · Extraer y recoger",
       "base": "Q, pp. 164–170; B, pp. 10–11; C, cap. 1. Costa física: Natural Earth 50m.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "s01-v01",
-          "svg": "../recursos/encuadres/s01-v01.svg",
+          "recurso": "s01-r2-panorama",
+          "svg": "../recursos/revision-02/panorama.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -63,15 +63,15 @@
             630
           ],
           "ids_nativos": [
-            872
+            754
           ],
-          "accion": "Regresar al paisaje conocido: mar, aves y Chincha.",
+          "accion": "Entrar con mar, roca y aves, sin sacos superpuestos.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s01-v02",
-          "svg": "../recursos/encuadres/s01-v02.svg",
+          "recurso": "s01-r2-guano-cerca",
+          "svg": "../recursos/revision-02/guano-cerca.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -85,15 +85,15 @@
             630
           ],
           "ids_nativos": [
-            1097
+            1454
           ],
-          "accion": "Abrir hacia la costa y situar Chincha, Pisco y Lima.",
+          "accion": "Acercarse al depósito y presentar el guano.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "contexto-1850",
-          "svg": "../recursos/encuadres/contexto-1850.svg",
+          "recurso": "s01-v02",
+          "svg": "../recursos/encuadres/s01-v02.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -107,9 +107,9 @@
             630
           ],
           "ids_nativos": [
-            2378
+            1679
           ],
-          "accion": "Ubicar a Castilla, las fuentes de ingreso y las obligaciones pendientes.",
+          "accion": "Situar Chincha frente a Pisco y recordar Lima.",
           "duracion_segundos": null
         }
       ]
@@ -117,22 +117,22 @@
     {
       "id": "1B.1",
       "momento": "1B",
-      "titulo": "Del depósito al trabajo",
+      "titulo": "Extraer, recoger y abonar",
       "lamina": 2,
       "artboard": 1,
       "svg": "lamina02.svg",
-      "capa_nativa": 2394,
-      "voz_referencia": "Ese recurso requería trabajo: extraerlo y trasladarlo hasta la carga. También hubo trabajo forzado.",
-      "accion_y_camara": "El mismo saco enlaza isla, abono y trabajo. La lista de situaciones laborales se presenta antes del gesto y queda quieta.",
-      "pausa_y_lectura": "Nombrar las formas de trabajo sin humor ni gestos que minimicen la coerción.",
-      "siguiente": "1B.2 · Tomar la carga",
+      "capa_nativa": 1695,
+      "voz_referencia": "El guano se extraía, se recogía y se cargaba. Se vendía como abono para los cultivos. Ese trabajo también se hizo bajo coerción.",
+      "accion_y_camara": "El recorrido une depósito, herramienta y saco. La pala y los granos guían el ojo. El uso agrícola explica la demanda sin representar cantidades.",
+      "pausa_y_lectura": "Sostener el llenado; roce de material y herramienta, sin añadir explicación de cada gesto.",
+      "siguiente": "1B.2 · Preparar el agarre",
       "base": "Q, pp. 164–170; B, pp. 10–11; C, cap. 1. Costa física: Natural Earth 50m.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "s01-v05",
-          "svg": "../recursos/encuadres/s01-v05.svg",
+          "recurso": "s01-r2-extraccion",
+          "svg": "../recursos/revision-02/extraccion.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -146,15 +146,15 @@
             630
           ],
           "ids_nativos": [
-            3083
+            12834
           ],
-          "accion": "Aves y depósito de guano: mostrar de dónde procede.",
+          "accion": "La herramienta desprende el material del depósito.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s01-v06",
-          "svg": "../recursos/encuadres/s01-v06.svg",
+          "recurso": "s01-r2-llenado",
+          "svg": "../recursos/revision-02/llenado.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -168,15 +168,15 @@
             630
           ],
           "ids_nativos": [
-            3412
+            2300
           ],
-          "accion": "Llevar el producto al suelo y los cultivos; explicar su demanda.",
+          "accion": "Recoger el guano y llenar el saco abierto.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "carga-preparar",
-          "svg": "../recursos/encuadres/carga-preparar.svg",
+          "recurso": "s01-v06",
+          "svg": "../recursos/encuadres/s01-v06.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -190,9 +190,9 @@
             630
           ],
           "ids_nativos": [
-            4589
+            2629
           ],
-          "accion": "Volver a quienes lo extraían y transportaban.",
+          "accion": "Mostrar para qué se compraba: abonar los cultivos.",
           "duracion_segundos": null
         }
       ]
@@ -204,18 +204,18 @@
       "lamina": 3,
       "artboard": 2,
       "svg": "lamina03.svg",
-      "capa_nativa": 4605,
-      "voz_referencia": "Había que cargar el guano en los barcos que abastecían los mercados del extranjero.",
-      "accion_y_camara": "La plataforma es un apoyo editorial visible. El saco sale solo después del agarre. Al mover al trabajador, articular las piernas.",
-      "pausa_y_lectura": "Parar la cámara durante el agarre. Viento y roce de la carga, sin música protagonista.",
-      "siguiente": "1C.1 · Embarque y mercado",
+      "capa_nativa": 2645,
+      "voz_referencia": "Había que llevar el guano hasta los barcos. En las islas trabajaban jornaleros libres, presos, personas esclavizadas y trabajadores chinos sometidos a coerción.",
+      "accion_y_camara": "La carga conserva el mismo dibujo e identidad. Las manos rodean sus lados; no cruzan el torso. El soporte solo es una reconstrucción editorial.",
+      "pausa_y_lectura": "Cámara quieta durante el agarre y el levantamiento. Pausa para leer las situaciones de trabajo.",
+      "siguiente": "1C.1 · Llegar a cubierta",
       "base": "Q, pp. 164–170; B, pp. 10–11; C, cap. 1. Costa física: Natural Earth 50m.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "carga-preparar",
-          "svg": "../recursos/encuadres/carga-preparar.svg",
+          "recurso": "s01-r2-carga-0",
+          "svg": "../recursos/revision-02/carga-0.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -229,15 +229,15 @@
             630
           ],
           "ids_nativos": [
-            5786
+            3149
           ],
-          "accion": "El saco está apoyado. Acercar las manos; todavía no se desplaza.",
+          "accion": "Manos abiertas a ambos lados; el saco permanece apoyado.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "carga-sujetar",
-          "svg": "../recursos/encuadres/carga-sujetar.svg",
+          "recurso": "s01-r2-carga-1",
+          "svg": "../recursos/revision-02/carga-1.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -251,15 +251,15 @@
             630
           ],
           "ids_nativos": [
-            6967
+            3665
           ],
-          "accion": "Cerrar el agarre manteniendo el saco sobre el apoyo.",
+          "accion": "Dos agarres laterales visibles antes de levantar.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "carga-llevar",
-          "svg": "../recursos/encuadres/carga-llevar.svg",
+          "recurso": "s01-r2-carga-2",
+          "svg": "../recursos/revision-02/carga-2.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -273,9 +273,9 @@
             630
           ],
           "ids_nativos": [
-            8145
+            4177
           ],
-          "accion": "Apartarse con el saco sujeto. Los pies y la carga conservan su peso.",
+          "accion": "Avanzar con el saco; separar los apoyos de los pies.",
           "duracion_segundos": null
         }
       ]
@@ -283,22 +283,22 @@
     {
       "id": "1C.1",
       "momento": "1C",
-      "titulo": "De la carga al mercado",
+      "titulo": "Del embarque al mercado",
       "lamina": 4,
       "artboard": 3,
       "svg": "lamina04.svg",
-      "capa_nativa": 8161,
-      "voz_referencia": "Uno de esos mercados era Gran Bretaña. El mismo producto conectaba las islas con sus compradores.",
-      "accion_y_camara": "La flecha del esquema relaciona origen y mercado. No es una ruta naval exacta ni un tránsito obligatorio por el Callao.",
-      "pausa_y_lectura": "Sostener el destino antes de abrir el libro de cuentas.",
-      "siguiente": "1C.2 · Venta, comisión e ingreso",
+      "capa_nativa": 4193,
+      "voz_referencia": "Los barcos llevaban el guano a mercados del extranjero. Uno de esos mercados era Gran Bretaña.",
+      "accion_y_camara": "Mantener el saco testigo al embarcar. La pasarela y el apoyo son esquemas editoriales, no una instalación histórica exacta. Después abrir la relación comercial.",
+      "pausa_y_lectura": "Cámara quieta al apoyar. Mantener Gran Bretaña a la vista antes de pasar a las cuentas.",
+      "siguiente": "1C.2 · Venta, descuentos e ingreso",
       "base": "Q, pp. 164–170; B, pp. 10–11; C, cap. 1. Costa física: Natural Earth 50m.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "s01-v08",
-          "svg": "../recursos/encuadres/s01-v08.svg",
+          "recurso": "s01-r2-embarque-0",
+          "svg": "../recursos/revision-02/embarque-0.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -312,15 +312,15 @@
             630
           ],
           "ids_nativos": [
-            8756
+            4794
           ],
-          "accion": "La carga llega al barco: apoyar en cubierta y soltar después.",
+          "accion": "Conectar el apoyo de tierra con la cubierta.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s01-v09",
-          "svg": "../recursos/encuadres/s01-v09.svg",
+          "recurso": "s01-r2-embarque-1",
+          "svg": "../recursos/revision-02/embarque-1.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -334,15 +334,15 @@
             630
           ],
           "ids_nativos": [
-            10188
+            5446
           ],
-          "accion": "Construir la relación Chincha–Gran Bretaña por etapas.",
+          "accion": "Apoyar el saco a bordo y retirar las manos después.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "s01-v10",
-          "svg": "../recursos/encuadres/s01-v10.svg",
+          "recurso": "s01-v09",
+          "svg": "../recursos/encuadres/s01-v09.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -356,9 +356,9 @@
             630
           ],
           "ids_nativos": [
-            10769
+            6878
           ],
-          "accion": "Llegar al almacén y los cultivos; conservar el mismo producto.",
+          "accion": "Abrir al esquema Chincha–Gran Bretaña, con el producto reconocido.",
           "duracion_segundos": null
         }
       ]
@@ -366,22 +366,22 @@
     {
       "id": "1C.2",
       "momento": "1C",
-      "titulo": "Del precio al ingreso público",
+      "titulo": "Venta, descuentos e ingreso",
       "lamina": 5,
       "artboard": 4,
       "svg": "lamina05.svg",
-      "capa_nativa": 10785,
-      "voz_referencia": "De la venta se descontaban gastos y comisiones. Una parte importante se convertía en ingresos del Estado.",
-      "accion_y_camara": "El foco pasa de la casa mercantil al libro. Las señales recorren conceptos; no representan porcentajes históricos.",
-      "pausa_y_lectura": "Mantener el cuadro completo para entender cómo se relacionan las partidas.",
-      "siguiente": "1D.1 · El Estado y sus obligaciones",
+      "capa_nativa": 6894,
+      "voz_referencia": "La casa consignataria organizaba la venta. Se descontaban gastos y comisión. El resto se convertía en ingreso del Estado.",
+      "accion_y_camara": "Conservar libro, encuadre y posición de las partidas. Añadir un concepto por vez. El foco pasa de la venta a los descuentos y al ingreso.",
+      "pausa_y_lectura": "Dejar el resultado completo para leer; no representar proporciones ni cantidades supuestas.",
+      "siguiente": "1D.1 · Estado y obligaciones pendientes",
       "base": "Q, pp. 164–170; B, pp. 10–11; C, cap. 1. Costa física: Natural Earth 50m.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "s01-v11",
-          "svg": "../recursos/encuadres/s01-v11.svg",
+          "recurso": "s01-r2-cuentas-0",
+          "svg": "../recursos/revision-02/cuentas-0.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -395,15 +395,15 @@
             630
           ],
           "ids_nativos": [
-            11297
+            7169
           ],
-          "accion": "Presentar la casa comercial y su función antes del gesto.",
+          "accion": "Presentar la venta en el libro de la casa consignataria.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s01-v12-costos",
-          "svg": "../recursos/encuadres/s01-v12-costos.svg",
+          "recurso": "s01-r2-cuentas-1",
+          "svg": "../recursos/revision-02/cuentas-1.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -417,15 +417,15 @@
             630
           ],
           "ids_nativos": [
-            11740
+            7539
           ],
-          "accion": "Abrir venta, gastos y comisión por conceptos.",
+          "accion": "Añadir gastos y comisión; los ingresos aún no aparecen.",
           "duracion_segundos": null
         },
         {
           "numero": 3,
-          "recurso": "s01-v12",
-          "svg": "../recursos/encuadres/s01-v12.svg",
+          "recurso": "s01-r2-cuentas-2",
+          "svg": "../recursos/revision-02/cuentas-2.svg",
           "rectangulo_en_lamina": [
             90,
             1210,
@@ -439,9 +439,9 @@
             630
           ],
           "ids_nativos": [
-            12181
+            8688
           ],
-          "accion": "Dejar visible el ingreso del Estado junto a los descuentos.",
+          "accion": "Revelar el ingreso del Estado y enlazar con su edificio.",
           "duracion_segundos": null
         }
       ]
@@ -449,22 +449,22 @@
     {
       "id": "1D.1",
       "momento": "1D",
-      "titulo": "Recursos y deudas pendientes",
+      "titulo": "El Estado y las deudas pendientes",
       "lamina": 6,
       "artboard": 5,
       "svg": "lamina06.svg",
-      "capa_nativa": 12197,
-      "voz_referencia": "Por ejemplo, quien había prestado dinero o quien reclamaba por ganado y cosechas utilizados por tropas.",
-      "accion_y_camara": "La cámara une ingresos y papeles. No dibujar un pago concreto. El folio continúa por sustentar.",
-      "pausa_y_lectura": "Dejar reconocibles los dos ejemplos y la carpeta que continuará.",
-      "siguiente": "1D.2 · El papel pasa a la escena 2",
+      "capa_nativa": 8704,
+      "voz_referencia": "El Estado también recibía ingresos de las aduanas y de la contribución indígena. Tenía obligaciones pendientes: por ejemplo, préstamos o bienes usados para sostener tropas.",
+      "accion_y_camara": "El contexto fiscal llega después de conocer la venta del guano. Los dos ejemplos dan contenido a la deuda. La cámara sigue el papel hacia la carpeta.",
+      "pausa_y_lectura": "Leer los ejemplos por turnos. No dibujar un pago ni un reconocimiento ya aprobados.",
+      "siguiente": "1D.2 · Seguir un reclamo",
       "base": "Q, pp. 164–170; B, pp. 10–11; C, cap. 1. Costa física: Natural Earth 50m.",
       "duracion_segundos": null,
       "estados": [
         {
           "numero": 1,
-          "recurso": "s01-v13",
-          "svg": "../recursos/encuadres/s01-v13.svg",
+          "recurso": "contexto-1850",
+          "svg": "../recursos/encuadres/contexto-1850.svg",
           "rectangulo_en_lamina": [
             90,
             260,
@@ -478,15 +478,15 @@
             630
           ],
           "ids_nativos": [
-            13215
+            9989
           ],
-          "accion": "Seguir el ingreso hacia el Estado y descubrir las obligaciones.",
+          "accion": "Volver al Estado: situar Castilla, ingresos y obligaciones.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s01-v14",
-          "svg": "../recursos/encuadres/s01-v14.svg",
+          "recurso": "s01-r2-ejemplos",
+          "svg": "../recursos/revision-02/ejemplos.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -500,9 +500,9 @@
             630
           ],
           "ids_nativos": [
-            13735
+            10643
           ],
-          "accion": "Recuperar al prestamista y el reclamo por bienes usados por tropas.",
+          "accion": "Distinguir préstamo y bienes con documentos legibles.",
           "duracion_segundos": null
         },
         {
@@ -522,9 +522,9 @@
             630
           ],
           "ids_nativos": [
-            14213
+            11121
           ],
-          "accion": "Abrir la carpeta: tapa, folios y documento con pestaña roja.",
+          "accion": "Abrir la carpeta y conservar el reclamo por revisar.",
           "duracion_segundos": null
         }
       ]
@@ -532,14 +532,14 @@
     {
       "id": "1D.2",
       "momento": "1D",
-      "titulo": "De la carpeta al reclamo",
+      "titulo": "Un reclamo que vamos a seguir",
       "lamina": 7,
       "artboard": 6,
       "svg": "lamina07.svg",
-      "capa_nativa": 14229,
-      "voz_referencia": "Ahora vamos a seguir cómo ese reclamo podía convertirse en una deuda reconocida.",
-      "accion_y_camara": "Acercamiento motivado por el documento que vamos a seguir. El último encuadre prepara la entrada de la escena 2.",
-      "pausa_y_lectura": "Pausa sobre el papel; el ambiente del escritorio puede entrar antes del cambio.",
+      "capa_nativa": 11137,
+      "voz_referencia": "Ahora vamos a seguir uno de esos reclamos: cómo se presentaba, cómo se revisaba y cómo podía convertirse en deuda reconocida.",
+      "accion_y_camara": "Acercarse al documento, no al centro de la carpeta. Mantener todos sus campos legibles. Reencuadrar hacia el mismo papel en la escena siguiente.",
+      "pausa_y_lectura": "Sostener el folio completo; el ambiente de escritorio puede entrar antes del cambio.",
       "siguiente": "2A · El origen de la deuda",
       "base": "Q, pp. 164–170; B, pp. 10–11; C, cap. 1. Costa física: Natural Earth 50m.",
       "duracion_segundos": null,
@@ -561,15 +561,15 @@
             630
           ],
           "ids_nativos": [
-            14711
+            11619
           ],
-          "accion": "La carpeta completa sitúa el documento en su contexto.",
+          "accion": "Partir de la carpeta completa.",
           "duracion_segundos": null
         },
         {
           "numero": 2,
-          "recurso": "s01-v15-cerca",
-          "svg": "../recursos/encuadres/s01-v15-cerca.svg",
+          "recurso": "s01-r2-reclamo-cerca",
+          "svg": "../recursos/revision-02/reclamo-cerca.svg",
           "rectangulo_en_lamina": [
             1310,
             260,
@@ -583,9 +583,9 @@
             630
           ],
           "ids_nativos": [
-            15191
+            12104
           ],
-          "accion": "Acercarse al folio de la pestaña roja con el resto quieto.",
+          "accion": "Centrar el folio: campos y Por revisar quedan dentro del cuadro.",
           "duracion_segundos": null
         },
         {
@@ -605,12 +605,14 @@
             630
           ],
           "ids_nativos": [
-            15617
+            12530
           ],
-          "accion": "El papel queda como imagen de salida. Conservar marca y dirección.",
+          "accion": "Sostener la pestaña roja y dar paso a la escena 2.",
           "duracion_segundos": null
         }
       ]
     }
-  ]
+  ],
+  "revision": 2,
+  "fecha_revision": "2026-11-10"
 }

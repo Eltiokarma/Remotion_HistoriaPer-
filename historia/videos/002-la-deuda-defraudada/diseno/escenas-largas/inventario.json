@@ -5,40 +5,6 @@
   "recurso_estatico_no_composicion_animada": true,
   "recursos": [
     {
-      "id": "s01-v01",
-      "svg": "recursos/encuadres/s01-v01.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 1,
-          "momento": "1A",
-          "estado": 1
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 1,
-        "vinyeta": 1,
-        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
-        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
-        "rectangulo_en_fuente": [
-          90,
-          260,
-          1120,
-          630
-        ],
-        "lamina_fuente": 1,
-        "base": "Q, pp. 164–169 · islas v3; ilustración conceptual",
-        "variacion": {
-          "nota": "Se sustituye solo el paisaje de retorno por Chincha detallada con mar azul. El original se conserva."
-        }
-      }
-    },
-    {
       "id": "s01-v02",
       "svg": "recursos/encuadres/s01-v02.svg",
       "lienzo_destino": [
@@ -50,7 +16,7 @@
           "escena": 1,
           "lamina": 1,
           "momento": "1A",
-          "estado": 2
+          "estado": 3
         }
       ],
       "procedencia": {
@@ -82,9 +48,9 @@
       "usado_en": [
         {
           "escena": 1,
-          "lamina": 1,
-          "momento": "1A",
-          "estado": 3
+          "lamina": 6,
+          "momento": "1D.1",
+          "estado": 1
         }
       ],
       "procedencia": {
@@ -94,40 +60,6 @@
         "base": "Guion, idea 0; Q, pp. 169–170; C, cap. 1",
         "componente": "recursos/componentes/estado.svg",
         "nota": "No representa porcentajes ni un balance fiscal."
-      }
-    },
-    {
-      "id": "s01-v05",
-      "svg": "recursos/encuadres/s01-v05.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 2,
-          "momento": "1B.1",
-          "estado": 1
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 1,
-        "vinyeta": 5,
-        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
-        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
-        "rectangulo_en_fuente": [
-          90,
-          2480,
-          1120,
-          630
-        ],
-        "lamina_fuente": 2,
-        "base": "Q, pp. 164–169; C, capítulo 1 · guano y extracción",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
       }
     },
     {
@@ -142,7 +74,7 @@
           "escena": 1,
           "lamina": 2,
           "momento": "1B.1",
-          "estado": 2
+          "estado": 3
         }
       ],
       "procedencia": {
@@ -165,163 +97,6 @@
       }
     },
     {
-      "id": "carga-preparar",
-      "svg": "recursos/encuadres/carga-preparar.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 2,
-          "momento": "1B.1",
-          "estado": 3
-        },
-        {
-          "escena": 1,
-          "lamina": 3,
-          "momento": "1B.2",
-          "estado": 1
-        }
-      ],
-      "procedencia": {
-        "tipo": "dibujo_nuevo",
-        "archivo_nativo": "recursos/gestos/carga.vectorcraft",
-        "lamina_fuente": 1,
-        "entidad": "carga_guano_testigo",
-        "actor_canvas": [
-          90,
-          40,
-          405,
-          540
-        ],
-        "apoyo": {
-          "x": 230.83540093495427,
-          "y": 358.9583125,
-          "width": 112,
-          "height": 171.54168750000002
-        },
-        "suelo": 530.5,
-        "rig": "../personajes-1850/trabajador/rig.json",
-        "gesto": "../personajes-1850/gestos.json#sostener_carga",
-        "paso": null,
-        "nota": "Trabajador genérico y apoyo de madera editorial; no reconstrucción exacta de instalaciones ni prueba de condición jurídica."
-      }
-    },
-    {
-      "id": "carga-sujetar",
-      "svg": "recursos/encuadres/carga-sujetar.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 3,
-          "momento": "1B.2",
-          "estado": 2
-        }
-      ],
-      "procedencia": {
-        "tipo": "dibujo_nuevo",
-        "archivo_nativo": "recursos/gestos/carga.vectorcraft",
-        "lamina_fuente": 2,
-        "entidad": "carga_guano_testigo",
-        "actor_canvas": [
-          90,
-          40,
-          405,
-          540
-        ],
-        "apoyo": {
-          "x": 230.83540093495427,
-          "y": 358.9583125,
-          "width": 112,
-          "height": 171.54168750000002
-        },
-        "suelo": 530.5,
-        "rig": "../personajes-1850/trabajador/rig.json",
-        "gesto": "../personajes-1850/gestos.json#sostener_carga",
-        "paso": null,
-        "nota": "Trabajador genérico y apoyo de madera editorial; no reconstrucción exacta de instalaciones ni prueba de condición jurídica."
-      }
-    },
-    {
-      "id": "carga-llevar",
-      "svg": "recursos/encuadres/carga-llevar.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 3,
-          "momento": "1B.2",
-          "estado": 3
-        }
-      ],
-      "procedencia": {
-        "tipo": "dibujo_nuevo",
-        "archivo_nativo": "recursos/gestos/carga.vectorcraft",
-        "lamina_fuente": 3,
-        "entidad": "carga_guano_testigo",
-        "actor_canvas": [
-          270,
-          40,
-          405,
-          540
-        ],
-        "apoyo": {
-          "x": 230.83540093495427,
-          "y": 358.9583125,
-          "width": 112,
-          "height": 171.54168750000002
-        },
-        "suelo": 530.5,
-        "rig": "../personajes-1850/trabajador/rig.json",
-        "gesto": "../personajes-1850/gestos.json#sostener_carga",
-        "paso": "../personajes-1850/poses-continuidad/poses.json",
-        "nota": "Trabajador genérico y apoyo de madera editorial; no reconstrucción exacta de instalaciones ni prueba de condición jurídica."
-      }
-    },
-    {
-      "id": "s01-v08",
-      "svg": "recursos/encuadres/s01-v08.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 4,
-          "momento": "1C.1",
-          "estado": 1
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 1,
-        "vinyeta": 8,
-        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
-        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          3430,
-          1120,
-          630
-        ],
-        "lamina_fuente": 2,
-        "base": "C, capítulo 1 · embarque; reconstrucción esquemática de instalaciones",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
       "id": "s01-v09",
       "svg": "recursos/encuadres/s01-v09.svg",
       "lienzo_destino": [
@@ -333,7 +108,7 @@
           "escena": 1,
           "lamina": 4,
           "momento": "1C.1",
-          "estado": 2
+          "estado": 3
         }
       ],
       "procedencia": {
@@ -350,226 +125,6 @@
         ],
         "lamina_fuente": 3,
         "base": "Q, pp. 164–168 · esquema comercial, sin itinerario marítimo",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s01-v10",
-      "svg": "recursos/encuadres/s01-v10.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 4,
-          "momento": "1C.1",
-          "estado": 3
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 1,
-        "vinyeta": 10,
-        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
-        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          4700,
-          1120,
-          630
-        ],
-        "lamina_fuente": 3,
-        "base": "Q, pp. 164–168 · mercado británico; arquitectura conceptual",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s01-v11",
-      "svg": "recursos/encuadres/s01-v11.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 5,
-          "momento": "1C.2",
-          "estado": 1
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 1,
-        "vinyeta": 11,
-        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
-        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
-        "rectangulo_en_fuente": [
-          90,
-          5650,
-          1120,
-          630
-        ],
-        "lamina_fuente": 3,
-        "base": "Q, pp. 167–168 · Gibbs como consignatario; oficina conceptual",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s01-v12-costos",
-      "svg": "recursos/encuadres/s01-v12-costos.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 5,
-          "momento": "1C.2",
-          "estado": 2
-        }
-      ],
-      "procedencia": {
-        "tipo": "estado_derivado",
-        "seccion": 1,
-        "vinyeta": 12,
-        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
-        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          5650,
-          1120,
-          630
-        ],
-        "lamina_fuente": 3,
-        "base": "Q, pp. 164–168; C, capítulo 1 · esquema básico de cuentas",
-        "variacion": {
-          "ocultar_ids": [],
-          "poses_actores": {},
-          "zonas_foco": [
-            [
-              2006,
-              5829.9091796875,
-              203.40478515625,
-              42.13330078125
-            ],
-            [
-              1640,
-              5961.9091796875,
-              116.8291015625,
-              42.13330078125
-            ]
-          ],
-          "textos": []
-        }
-      }
-    },
-    {
-      "id": "s01-v12",
-      "svg": "recursos/encuadres/s01-v12.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 5,
-          "momento": "1C.2",
-          "estado": 3
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 1,
-        "vinyeta": 12,
-        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
-        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          5650,
-          1120,
-          630
-        ],
-        "lamina_fuente": 3,
-        "base": "Q, pp. 164–168; C, capítulo 1 · esquema básico de cuentas",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s01-v13",
-      "svg": "recursos/encuadres/s01-v13.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 6,
-          "momento": "1D.1",
-          "estado": 1
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 1,
-        "vinyeta": 13,
-        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
-        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
-        "rectangulo_en_fuente": [
-          90,
-          6920,
-          1120,
-          630
-        ],
-        "lamina_fuente": 4,
-        "base": "Q, pp. 169–170 · recursos públicos y deuda interna",
-        "variacion": {
-          "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s01-v14",
-      "svg": "recursos/encuadres/s01-v14.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 6,
-          "momento": "1D.1",
-          "estado": 2
-        }
-      ],
-      "procedencia": {
-        "tipo": "encuadre_derivado",
-        "seccion": 1,
-        "vinyeta": 14,
-        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
-        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
-        "rectangulo_en_fuente": [
-          1310,
-          6920,
-          1120,
-          630
-        ],
-        "lamina_fuente": 4,
-        "base": "Q, p. 169; B, pp. 20–21 · ejemplos didácticos",
         "variacion": {
           "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
         }
@@ -612,46 +167,6 @@
         "base": "Q, pp. 169–170 · reconstrucción editorial del reclamo",
         "variacion": {
           "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
-        }
-      }
-    },
-    {
-      "id": "s01-v15-cerca",
-      "svg": "recursos/encuadres/s01-v15-cerca.svg",
-      "lienzo_destino": [
-        1120,
-        630
-      ],
-      "usado_en": [
-        {
-          "escena": 1,
-          "lamina": 7,
-          "momento": "1D.2",
-          "estado": 2
-        }
-      ],
-      "procedencia": {
-        "tipo": "acercamiento",
-        "seccion": 1,
-        "vinyeta": 15,
-        "archivo_nativo": "../storyboard-seccion01/revision-detallada/storyboard-02-seccion01-detallado.vectorcraft",
-        "secuencia": "../storyboard-seccion01/revision-detallada/secuencia.json",
-        "rectangulo_en_fuente": [
-          90,
-          7870,
-          1120,
-          630
-        ],
-        "lamina_fuente": 4,
-        "base": "Q, pp. 169–170 · reconstrucción editorial del reclamo",
-        "variacion": {
-          "camara": {
-            "scale": 1.35,
-            "focus": [
-              450,
-              320
-            ]
-          }
         }
       }
     },
@@ -3579,6 +3094,343 @@
           "nota": "Recorte vectorial del encuadre, sin notas exteriores de la lámina."
         }
       }
+    },
+    {
+      "id": "s01-r2-panorama",
+      "svg": "recursos/revision-02/panorama.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 1,
+          "momento": "1A",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 1,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-guano-cerca",
+      "svg": "recursos/revision-02/guano-cerca.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 1,
+          "momento": "1A",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 2,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-extraccion",
+      "svg": "recursos/revision-02/extraccion.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 2,
+          "momento": "1B.1",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 3,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-llenado",
+      "svg": "recursos/revision-02/llenado.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 2,
+          "momento": "1B.1",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 4,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-carga-0",
+      "svg": "recursos/revision-02/carga-0.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 3,
+          "momento": "1B.2",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 5,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-carga-1",
+      "svg": "recursos/revision-02/carga-1.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 3,
+          "momento": "1B.2",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 6,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-carga-2",
+      "svg": "recursos/revision-02/carga-2.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 3,
+          "momento": "1B.2",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 7,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-embarque-0",
+      "svg": "recursos/revision-02/embarque-0.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 4,
+          "momento": "1C.1",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 8,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-embarque-1",
+      "svg": "recursos/revision-02/embarque-1.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 4,
+          "momento": "1C.1",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 9,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-cuentas-0",
+      "svg": "recursos/revision-02/cuentas-0.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 5,
+          "momento": "1C.2",
+          "estado": 1
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 10,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-cuentas-1",
+      "svg": "recursos/revision-02/cuentas-1.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 5,
+          "momento": "1C.2",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 11,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-cuentas-2",
+      "svg": "recursos/revision-02/cuentas-2.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 5,
+          "momento": "1C.2",
+          "estado": 3
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 12,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-ejemplos",
+      "svg": "recursos/revision-02/ejemplos.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 6,
+          "momento": "1D.1",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 13,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
+    },
+    {
+      "id": "s01-r2-reclamo-cerca",
+      "svg": "recursos/revision-02/reclamo-cerca.svg",
+      "lienzo_destino": [
+        1120,
+        630
+      ],
+      "usado_en": [
+        {
+          "escena": 1,
+          "lamina": 7,
+          "momento": "1D.2",
+          "estado": 2
+        }
+      ],
+      "procedencia": {
+        "tipo": "revision_dibujada_en_mcp",
+        "archivo_nativo": "recursos/revision-02/dibujos.vectorcraft",
+        "lamina_fuente": 14,
+        "base": "Q, pp. 164–170; B, pp. 10–11 y 20–21; C, cap. 1. Cotejos existentes de fuentes.md.",
+        "nota": "Reconstrucción editorial. Roca, aves, barco y Estado conservan recursos anteriores; la cabeza procede del canon corregido.",
+        "datos": "recursos/revision-02/revision.json"
+      }
     }
-  ]
+  ],
+  "revision_escena_01": 2
 }

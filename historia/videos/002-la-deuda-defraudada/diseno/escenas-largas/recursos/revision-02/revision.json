@@ -1,0 +1,162 @@
+{
+  "fecha": "2026-11-10",
+  "revision": 2,
+  "estado": "Borrador pendiente de revisión de Gerson",
+  "herramienta": "VectorCraft mediante MCP",
+  "documento": "dibujos.vectorcraft",
+  "dimension_encuadre": [
+    1120,
+    630
+  ],
+  "distancia_mesas": 710,
+  "cabeza": "cabeza-canon.svg",
+  "origen_cabeza": "../../../personajes-1850/trabajador/rig.json",
+  "posturas": "Torso inclinado 4° en preparación y agarre, 7° durante el paso; brazos a ambos lados del saco. Piezas nuevas de postura, cabeza canónica corregida. No sustituyen automáticamente los 135 SVG del rig.",
+  "componentes": [
+    {
+      "name": "panorama",
+      "artboard": 0,
+      "svg": "panorama.svg",
+      "mesa": 1
+    },
+    {
+      "name": "guano-cerca",
+      "artboard": 1,
+      "svg": "guano-cerca.svg",
+      "mesa": 2
+    },
+    {
+      "name": "extraccion",
+      "artboard": 2,
+      "svg": "extraccion.svg",
+      "mesa": 3
+    },
+    {
+      "name": "llenado",
+      "artboard": 3,
+      "svg": "llenado.svg",
+      "mesa": 4
+    },
+    {
+      "name": "carga-0",
+      "artboard": 4,
+      "svg": "carga-0.svg",
+      "mesa": 5
+    },
+    {
+      "name": "carga-1",
+      "artboard": 5,
+      "svg": "carga-1.svg",
+      "mesa": 6
+    },
+    {
+      "name": "carga-2",
+      "artboard": 6,
+      "svg": "carga-2.svg",
+      "mesa": 7
+    },
+    {
+      "name": "embarque-0",
+      "artboard": 7,
+      "svg": "embarque-0.svg",
+      "mesa": 8
+    },
+    {
+      "name": "embarque-1",
+      "artboard": 8,
+      "svg": "embarque-1.svg",
+      "mesa": 9
+    },
+    {
+      "name": "cuentas-0",
+      "artboard": 9,
+      "svg": "cuentas-0.svg",
+      "mesa": 10
+    },
+    {
+      "name": "cuentas-1",
+      "artboard": 10,
+      "svg": "cuentas-1.svg",
+      "mesa": 11
+    },
+    {
+      "name": "cuentas-2",
+      "artboard": 11,
+      "svg": "cuentas-2.svg",
+      "mesa": 12
+    },
+    {
+      "name": "ejemplos",
+      "artboard": 12,
+      "svg": "ejemplos.svg",
+      "mesa": 13
+    },
+    {
+      "name": "reclamo-cerca",
+      "artboard": 13,
+      "svg": "reclamo-cerca.svg",
+      "mesa": 14
+    }
+  ],
+  "grupos_de_postura": [
+    {
+      "id": 1199,
+      "nombre": "trabajador_postura_3"
+    },
+    {
+      "id": 1378,
+      "nombre": "trabajador_postura_0"
+    },
+    {
+      "id": 1502,
+      "nombre": "trabajador_postura_1"
+    },
+    {
+      "id": 1626,
+      "nombre": "trabajador_postura_2"
+    },
+    {
+      "id": 1861,
+      "nombre": "trabajador_postura_2"
+    },
+    {
+      "id": 2096,
+      "nombre": "trabajador_postura_1"
+    },
+    {
+      "id": 3673,
+      "nombre": "trabajador_postura_3"
+    },
+    {
+      "id": 3793,
+      "nombre": "trabajador_postura_0"
+    },
+    {
+      "id": 3918,
+      "nombre": "trabajador_postura_1"
+    },
+    {
+      "id": 4043,
+      "nombre": "trabajador_postura_2"
+    },
+    {
+      "id": 4279,
+      "nombre": "trabajador_postura_2"
+    },
+    {
+      "id": 4507,
+      "nombre": "trabajador_postura_0"
+    },
+    {
+      "id": 4897,
+      "nombre": "trabajador_postura_2"
+    },
+    {
+      "id": 5250,
+      "nombre": "trabajador_postura_0"
+    }
+  ],
+  "alcance": "Herramientas, saco, apoyo, pasarela y posturas son dibujos editoriales; no instalaciones exactas documentadas. La condición jurídica no se deduce del rostro o vestuario.",
+  "animacion_verificada": false,
+  "video_generado": false
+}

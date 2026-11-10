@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202" height="281.211" viewBox="0 0 202 281.211">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="66" y1="247.664" x2="143" y2="247.664" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7a27d"/>
+      <stop offset="1" stop-color="#987357"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="28.191" y1="146.245" x2="156.819" y2="146.245" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7a27d"/>
+      <stop offset="1" stop-color="#b98e6a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="1" y1="91.95" x2="201" y2="91.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c6b58a"/>
+      <stop offset="1" stop-color="#9e996f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="41" y1="43.633" x2="155" y2="43.633" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cbb98d"/>
+      <stop offset="1" stop-color="#9a966c"/>
+    </linearGradient>
+  </defs>
+  <title>Personajes del Perú hacia 1850 · trabajador articulado</title>
+  <g id="Selection">
+    <path d="M69 215.017 L137 217.017 L143 269.017 C119.667 285.017 94 284.017 66 266.017 Z" fill="url(#linear-gradient-1)" stroke="#2d4238" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M73 227.017 C91.667 241.683 112 242.017 134 228.017" fill="none" stroke="#987357" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="oreja_visible">
+      <ellipse cx="30" cy="153.517" rx="14" ry="21.5" fill="#b98e6a" stroke="#2d4238" stroke-width="1.5" stroke-miterlimit="10"/>
+      <path d="M32 141.017 C20 134.017 20 156.017 31 164.017 M30 145.017 C26.667 148.35 27 151.683 31 155.017" fill="none" stroke="#987357" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="rostro_base">
+      <path d="M40 66.017 C59 43.017 111 39.017 137 61.017 C154 79.017 159 106.017 156 135.017 L152 183.017 C149 219.017 131 242.017 104 246.017 C75 246.017 51 228.017 40 201.017 L32 167.017 C26 135.017 26 95.017 40 66.017 Z" fill="url(#linear-gradient-2)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M143 90.017 C150 119.017 150 156.017 144 185.017 C140 209.017 124 230.017 101 238.017 L104 246.017 C132 241.017 149 219.017 152 183.017 L156 135.017 C159 106.017 154 80.017 142 68.017 Z" fill="#b98e6a"/>
+      <path d="M52 186.017 C59.333 189.35 67 190.017 75 188.017 M143 187.017 C141 193.017 138.333 197.35 135 200.017 M92 232.017 C100 235.35 108 235.35 116 232.017" fill="none" stroke="#987357" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="nariz_central">
+      <path d="M103 146.017 C100 156.017 101 165.017 105 171.017 C109 174.35 113 174.017 117 170.017 C113 168.017 110.667 164.35 110 159.017 L109 145.017 Z" fill="#b98e6a"/>
+      <path d="M101 143.017 C98 154.017 98 164.017 102 171.017 C106 174.35 110 174.35 114 171.017" fill="none" stroke="#8d7055" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M99 175.017 C101 173.683 102.667 174.017 104 176.017 M113 175.017 C115 173.017 116.667 172.683 118 174.017" fill="none" stroke="#987357" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="cabello">
+      <path d="M24 132.017 C8 84.017 26 41.017 66 35.017 C98 25.017 124 31.017 144 53.017 C152.667 64.35 156 82.017 154 106.017 L141 106.017 L131 74.017 C103 66.017 76.333 71.017 51 89.017 L40 130.017 L38 167.017 L26 162.017 Z" fill="#3b4538" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M38 90.017 C59.333 66.683 85 54.35 115 53.017 M44 101.017 C62.667 81.017 83.667 69.683 107 67.017 M39 108.017 L34 150.017" fill="none" stroke="#8b9171" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path d="M53 141.017 C62.333 133.683 72 133.683 82 141.017 C72.667 146.35 63 146.35 53 141.017 Z" fill="#e9dfc8" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="69.5" cy="140.517" rx="3.5" ry="5.5" fill="#2d4238"/>
+    <path d="M112 141.017 C120 134.35 128.667 134.35 138 141.017 C129.333 145.683 120.667 145.683 112 141.017 Z" fill="#e9dfc8" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="126.5" cy="141.017" rx="3.5" ry="5" fill="#2d4238"/>
+    <path d="M54 150.017 C63.333 152.683 72.333 152.35 81 149.017 M113 150.017 C122.333 152.017 130.667 151.35 138 148.017" fill="none" stroke="#987357" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M52 127.017 C61.333 122.35 71 122.017 81 126.017 M113 125.017 C121.667 121.683 130.333 122.35 139 127.017" fill="none" stroke="#3b4538" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M87 204.017 C100.333 208.017 112.667 207.35 124 202.017" fill="none" stroke="#644f40" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M95 215.017 C103.667 217.683 111.333 217.35 118 214.017" fill="none" stroke="#987357" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1 85.017 C17.667 74.35 36.333 69.35 57 70.017 L147 70.017 C171 76.017 189 84.683 201 96.017 C165.667 110.683 128 116.35 88 113.017 C50 110.35 21 105.017 1 97.017 Z" fill="url(#linear-gradient-3)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M41 74.017 L48 15.017 C81.333 -4.317 112 -3.65 140 17.017 L155 80.017 C117.667 90.017 79.667 88.017 41 74.017 Z" fill="url(#linear-gradient-4)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M44 61.017 C80 71.683 115.667 72.683 151 64.017 L154 82.017 C116.667 92.683 79 90.683 41 76.017 Z" fill="#8f8d65" stroke="#2d4238" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M53 24.017 C83 12.683 111.333 12.683 138 24.017" fill="none" stroke="#e1cca0" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M55 32.017 C83.667 22.017 112 22.35 140 33.017" fill="none" stroke="#e1cca0" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M57 40.017 C84.333 31.35 112.667 32.017 142 42.017" fill="none" stroke="#e1cca0" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M59 48.017 C85 40.683 113.333 41.683 144 51.017" fill="none" stroke="#e1cca0" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M61 56.017 C85.667 50.017 114 51.35 146 60.017" fill="none" stroke="#e1cca0" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="52" y1="28.017" x2="50" y2="56.017" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="64" y1="28.017" x2="62" y2="56.017" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="76" y1="28.017" x2="74" y2="56.017" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="88" y1="28.017" x2="86" y2="56.017" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="100" y1="28.017" x2="98" y2="56.017" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="112" y1="28.017" x2="110" y2="56.017" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="124" y1="28.017" x2="122" y2="56.017" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="136" y1="28.017" x2="134" y2="56.017" fill="none" stroke="#aaa576" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
