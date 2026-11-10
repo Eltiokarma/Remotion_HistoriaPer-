@@ -8,12 +8,14 @@ type Lamina = {defs: string; layers: {name: string; parts: string[]}[]};
 type Props = {
   videoId: string; archivo: string; modo: 'lima' | 'viaje' | 'regresion' | 'costo';
   t: number; beats: Record<string, number>; notas?: string[];
+  /** Regresión: de dónde salen los puntos (la boca del fichero). Sin esto, aparecen en su lugar. */
+  origen?: {x: number; y: number};
 };
 
 /** SVG propio exportado por VectorCraft. Cada pieza conserva su vector y su tiempo de entrada.
  * No se acepta HTML remoto: los JSON se generan de los SVG revisados dentro de public/videos.
  */
-export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: b, notas}) => {
+export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: b, notas, origen}) => {
   const [data, setData] = useState<Lamina | null>(null);
   const [handle] = useState(() => delayRender(`VectorCraft: ${archivo}`));
   const uid = useId().replace(/:/g, '');
@@ -90,6 +92,14 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
         let html = namespaced(part);
         if (modo === 'viaje' && l.name === 'Rutas' && i === 0) html = html.replace('<path ', `<path pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1 - viaje}" `);
         if (modo === 'regresion' && l.name === 'Gráfico' && i === 41) html = html.replace('<line ', `<line pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1 - k('recta', 1.4)}" `);
+        // cada observación sale del fichero y viaja en arco hasta su lugar (el dato viene de un documento)
+        if (origen && modo === 'regresion' && l.name === 'Gráfico' && i >= 10 && i < 41 && (i - 9) % 4 !== 0) {
+          const cx = Number(part.match(/\bcx="([\d.]+)"/)?.[1] ?? 0), cy = Number(part.match(/\bcy="([\d.]+)"/)?.[1] ?? 0);
+          const kv = tramo(t, T('caen') + (i - 10) * 0.13, 0.6, 'natural');
+          if (kv <= 0) return null;
+          const dx = (1 - kv) * (origen.x - cx), dy = (1 - kv) * (origen.y - cy) - Math.sin(Math.PI * kv) * 120;
+          return <g key={i} transform={`translate(${dx.toFixed(1)} ${dy.toFixed(1)})`} dangerouslySetInnerHTML={{__html: html}} />;
+        }
         return <g key={i} opacity={opacity(l.name, i)} clipPath={modo === 'costo' && l.name === 'Datos_originales' && i === 0 ? `url(#${uid}-serie)` : undefined} dangerouslySetInnerHTML={{__html: html}} />;
       })}
     </g></g>)}

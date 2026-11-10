@@ -8,7 +8,7 @@ import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { Aula } from '../../components/graficos/Aula';
 import { Balanza } from '../../components/graficos/Balanza';
-import { useLamina } from '../../components/graficos/vectorcraft/Lamina';
+import { RecorteLamina, useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Brujula } from '../../components/graficos/Brujula';
 import { Dispersion } from '../../components/graficos/Dispersion';
 import { Estante } from '../../components/graficos/Estante';
@@ -26,6 +26,9 @@ import type { esquema } from './esquema';
 type P = z.infer<typeof esquema>;
 /** Zoom de la cámara mientras sigue la ruta, y cuánto mira por delante de la punta (aire en la dirección del viaje). */
 const ZOOM_VIAJE = 2.1, MIRA_ADELANTE = 0.07;
+/** El fichero de la lámina, a la izquierda del gráfico, bajo «Cada punto, una observación»; y su boca en pantalla. */
+const FICHERO = { x: 150, y: 450, ancho: 420, caja: [360, 210, 1220, 750] as [number, number, number, number] };
+const BOCA_FICHERO = { x: FICHERO.x + (960 - 360) * (420 / 1220), y: FICHERO.y + (470 - 210) * (420 / 1220) };
 /** Paralelos que se encienden al cruzarlos (el viaje pasa del sur al norte). */
 const PARALELOS = [{ lat: 0, rotulo: 'ECUADOR · 0°' }, { lat: 15, rotulo: '15° N' }, { lat: 30, rotulo: '30° N' }];
 
@@ -47,7 +50,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const noche = mezclar(pal.fondo, '#000000', 0.3);
   const ref = (archivo?: string) => (archivo ? { videoId: video.id, archivo } : undefined);
   const lBalanza = useLamina(ref(props.laminas?.balanza)), lEstante = useLamina(ref(props.laminas?.estante));
-  const lBrujula = useLamina(ref(props.laminas?.brujula));
+  const lBrujula = useLamina(ref(props.laminas?.brujula)), lFichero = useLamina(ref(props.laminas?.fichero));
 
   // —— el mapa: la ruta a la tentación llega a medias, duda, se borra
   // con notas, la ruta llega entera (era el camino de los demás) y se borra cuando él decide
@@ -188,7 +191,24 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       ) : null}
 
       {muestra(2) && props.vectorcraft ? <AbsoluteFill style={{opacity: entra(tPuntos)}}>
-        <VectorCraft videoId={video.id} archivo={props.vectorcraft.regresion} modo="regresion" t={t} beats={b} />
+        <VectorCraft videoId={video.id} archivo={props.vectorcraft.regresion} modo="regresion" t={t} beats={b} origen={lFichero ? BOCA_FICHERO : undefined} />
+        {lFichero ? (() => {
+          // (va encima de la lámina de la regresión, que trae su pizarra de fondo)
+          // el fichero del archivo entra antes de que caigan los puntos, sus fichas se levantan una tras
+          // otra y de su boca sale cada observación; se va antes de que se escriba la recta
+          const kF = tramo(t, tCaen - 2.2, 1.2, 'pesado') * (1 - tramo(t, tRecta - 1, 0.8, 'natural'));
+          if (kF <= 0) return null;
+          const fichas = ['Ficha_FUENTES', 'Ficha_FECHAS', 'Ficha_CIFRAS', 'Ficha_CONTRASTE'];
+          return (
+            <div style={{ position: 'absolute', left: FICHERO.x, top: FICHERO.y, opacity: kF, transform: `translateY(${(1 - kF) * 30}px)` }}>
+              <RecorteLamina lamina={lFichero} caja={FICHERO.caja} ancho={FICHERO.ancho} capas={[
+                { nombre: 'Caja_de_madera' },
+                ...fichas.map((n, j) => ({ nombre: n, transform: `translate(0 ${-60 * tramo(t, tCaen - 0.9 + j * 0.35, 0.5, 'pesado') * (1 - tramo(t, tCaen + 0.6 + j * 0.35, 0.6, 'natural'))})` })),
+                { nombre: 'Cajón_frontal' }, { nombre: 'Porte-étiquette' }, { nombre: 'Poignée' },
+              ]} />
+            </div>
+          );
+        })() : null}
         {t >= tSerie ? <AbsoluteFill style={{opacity: tramo(t, tSerie, 0.6, 'natural')}}><VectorCraft videoId={video.id} archivo={props.vectorcraft.costo} modo="costo" t={t} beats={b} /></AbsoluteFill> : null}
       </AbsoluteFill> : null}
       {muestra(2) && !props.vectorcraft ? (

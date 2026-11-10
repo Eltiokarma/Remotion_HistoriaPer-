@@ -3,6 +3,7 @@ import type { z } from 'zod';
 import { Luz } from '../../components/atmosfera/Luz';
 import { Sfx } from '../../components/audio/Sfx';
 import { Carpeta } from '../../components/graficos/Carpeta';
+import { useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { GotaMercurio } from '../../components/graficos/GotaMercurio';
 import { Ficha } from '../../components/texto/Ficha';
 import { Tarjeta } from '../../components/texto/Tarjeta';
@@ -22,6 +23,7 @@ export const Cierre: React.FC<EscenaProps<P>> = ({ escena, props, video }) => {
   const tCerrar = beat(b, 'cerrar', 1), tNegro = beat(b, 'negro', 4.5), tTarjeta = beat(b, 'tarjeta', 5.4);
   const tLimpiar = beat(b, 'limpiar', 0.5), tFicha = beat(b, 'ficha', 1.5);
   const negro = tramo(t, tNegro, 0.9, 'solemne');
+  const lCarpeta = useLamina(props.laminas?.carpeta ? { videoId: video.id, archivo: props.laminas.carpeta } : undefined);
   // la tapa se levanta despacio y cae sola (acelera hasta el golpe, no frena antes); al golpear rebota
   // unos grados y la pila de papel se aplasta apenas
   const CIERRA = 1.1;
@@ -39,7 +41,8 @@ export const Cierre: React.FC<EscenaProps<P>> = ({ escena, props, video }) => {
         <Luz color={pal.ocre} x={50} y={40} radio={62} intensidad={0.22} />
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ marginTop: 60, transformOrigin: '50% 100%', transform: escala(pila) }}>
-            <Carpeta paleta={pal} id={`${escena.id}-carpeta`} cierre={cierre} width={props.limpiar ? 620 : 500}
+            <Carpeta paleta={pal} id={`${escena.id}-carpeta`} cierre={cierre} width={lCarpeta ? 1080 : props.limpiar ? 620 : 500}
+              lamina={lCarpeta} atado={tramo(t, tGolpe + 0.1, 0.7, 'natural')}
               variante={props.limpiar ? 'pruebas' : undefined} semilla={props.limpiar ? 2013 : undefined}
               limpieza={props.limpiar ? tramo(t, tLimpiar, 4, 'natural') : 0} tapaVisible={tapa} />
           </div>

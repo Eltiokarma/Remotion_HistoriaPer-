@@ -3,6 +3,8 @@ import type { Ejemplo } from '../ejemplo';
 
 /** Cierre: la carpeta del manuscrito se cierra, fundido a negro y tarjeta del próximo episodio. */
 export const esquema = z.object({
+  /** Lámina aprobada de la carpeta (los papeles se guardan y se ata el cordón), en lugar de la tapa en 3D. */
+  laminas: z.object({ carpeta: z.string().optional() }).optional(),
   /** Ficha a máquina arriba a la izquierda (lugar y fecha). */
   ficha: z.string().optional(),
   /** Las hojas son las pruebas de imprenta del inicio y sus correcciones se desvanecen. */

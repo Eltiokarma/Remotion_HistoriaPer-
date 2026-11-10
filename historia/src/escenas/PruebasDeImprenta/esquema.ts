@@ -8,6 +8,9 @@ import type { Ejemplo } from '../ejemplo';
  * recorre del primer evento al último, y al final se abre para verla entera.
  */
 export const esquema = z.object({
+  /** Láminas aprobadas: `pruebas` (la pila con sus correcciones y el lápiz rojo) y `tiempo` (la flor de recuerdo y
+   * «Fallece…», en lugar de la cruz). Se conserva la animación. */
+  laminas: z.object({ pruebas: z.string().optional(), tiempo: z.string().optional() }).optional(),
   /** Ficha monoespaciada arriba a la izquierda (lugar). */
   ficha: z.string(),
   /** La ficha grande y con brillo, para que no se olvide dónde estamos (DIRECCION_DE_VIDEO §2.1). */

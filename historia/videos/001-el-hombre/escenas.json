@@ -79,6 +79,10 @@
           "titulo": "Historia de la corrupción en el Perú",
           "autor": "Alfonso W. Quiroz",
           "anio": "2013"
+        },
+        "laminas": {
+          "monedas": "vectorcraft/tanda03-monedas.json",
+          "libro": "vectorcraft/tanda03-libro.json"
         }
       },
       "audio": {
@@ -144,7 +148,7 @@
           "eventos": [
             {
               "en": 0.03,
-              "rotulo": "† 2 ENE 2013",
+              "rotulo": "FALLECE · 2 ENE 2013",
               "tono": "sombra"
             },
             {
@@ -160,6 +164,10 @@
               "tono": "luz"
             }
           ]
+        },
+        "laminas": {
+          "pruebas": "vectorcraft/tanda03-pruebas.json",
+          "tiempo": "vectorcraft/tanda05-tiempo-v2.json"
         }
       },
       "camara": [
@@ -650,7 +658,8 @@
         "laminas": {
           "balanza": "vectorcraft/balanza-video01.json",
           "estante": "vectorcraft/biblioteca-video01.json",
-          "brujula": "vectorcraft/brujula-video01.json"
+          "brujula": "vectorcraft/brujula-video01.json",
+          "fichero": "vectorcraft/tanda04-fichero.json"
         }
       },
       "camara": [
@@ -798,6 +807,9 @@
           "etiqueta": "Próximo",
           "anio": "1850",
           "titulo": "La deuda defraudada"
+        },
+        "laminas": {
+          "carpeta": "vectorcraft/tanda05-carpeta-v2.json"
         }
       },
       "audio": {
