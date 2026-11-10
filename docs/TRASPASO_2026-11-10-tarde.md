@@ -52,3 +52,13 @@ Puntos a decidir:
 
 Si se decide cambiar la regla, se actualiza `historia/CLAUDE.md` §1.1·1 con la fecha y el motivo, igual que
 las otras decisiones de Gerson.
+
+### Lo que decidió Gerson (2026-11-10, al cerrar)
+
+- **Voz sintética** (ElevenLabs por MCP) para la narración, con **varias voces**: narrador y personajes.
+  Motivo: producir en serie, la honestidad sobre la autoría y el propósito educativo.
+- **Declaración, solo en la descripción del video:** quién hace qué (dirección de Gerson; IA en guion,
+  animación y voz). En el video no se recalca.
+- **Pendiente para la próxima conversación:** pasarlo a `historia/CLAUDE.md` §1.1·1, con los límites ya
+  anotados. Ninguna voz que imite a una persona real sin permiso; el rigor no cambia; leer las páginas
+  oficiales de YouTube (contenido inauténtico y etiquetas de contenido sintético) antes de publicar el primero.
