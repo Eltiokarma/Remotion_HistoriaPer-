@@ -37,10 +37,12 @@ Una serie se hace en el tiempo y necesita libertad para decidir. Por eso las reg
 
 No tienen excepción.
 
-1. **Narración con la voz real de Gerson.** No usar TTS para la narración principal (la política
-   de YouTube de julio de 2025 sobre "contenido inauténtico" desmonetiza voz sintética sobre
-   material producido en serie). TTS solo para citas o personajes puntuales, marcado como tal, y
-   como **voz provisional** de trabajo, que nunca se publica.
+1. **Narración: la voz «Narrador Historia Puno» de ElevenLabs** (voz diseñada, `BcI5qnQ6UpDt3HmW9BG7`,
+   modelo v3, emoción por frase). **Decidido por Gerson el 2026-11-10**, en lugar de su voz real.
+   Riesgo a la vista: la política de YouTube de julio de 2025 sobre «contenido inauténtico» puede
+   desmonetizar voz sintética sobre material producido en serie; se declara en YouTube que el
+   contenido usa voz generada y cada episodio tiene que sostenerse por su guion y su dirección
+   propia (§1.1·4), no por volumen. Nunca un clon de una persona real sin su permiso.
 2. **Rigor histórico.** Todo dato (fecha, cifra, nombre) tiene su fuente en `fuentes.md` del video.
    Si no la tiene, se marca `[VERIFICAR]` y no se renderiza el final hasta resolverlo. No se
    inventan datos: si falta uno, se marca y se sigue. Una frase entre comillas o compuesta como cita
@@ -50,10 +52,11 @@ No tienen excepción.
    propio. Origen y licencia de cada asset en `fuentes.md`.
 4. **Nada de plantillas clonadas.** Cada video tiene al menos una secuencia visual pensada para su
    tema. La plantilla es gramática, no molde.
-5. **Archivos pesados fuera de git.** La voz real, las imágenes pesadas y `out/` están en
-   `.gitignore` (excepción: SVG, JSON, fuentes tipográficas y el audio chico: el sintetizado y la
-   música ya recortada a la escena en MP3, a 128–192 kb/s y 2 MB o menos por escena. Los WAV
-   originales de Suno y sus stems quedan fuera, en `musica/suno/`. Decidido por Gerson el 2026-11-10).
+5. **Archivos pesados fuera de git.** La voz grabada (WAV), las imágenes pesadas y `out/` están en
+   `.gitignore` (excepción: SVG, JSON, fuentes tipográficas y el audio chico: el sintetizado, la
+   música ya recortada a la escena en MP3, a 128–192 kb/s y 2 MB o menos por escena, y la narración
+   de ElevenLabs en MP3 en `voz/`. Los WAV originales de Suno y sus stems quedan fuera, en
+   `musica/suno/`. Decidido por Gerson el 2026-11-10).
 
 ### 1.2 Reglas de oficio
 

@@ -1271,19 +1271,22 @@
     {
       "id": "e1-voz",
       "fase": "e1",
-      "titulo": "Narración con la voz de Gerson",
-      "entregable": "public/videos/001-el-hombre/voz/sNN.wav de s00 a s07; `npm run validar -- 001-el-hombre --final` sin errores",
-      "estado": "pendiente",
+      "titulo": "Narración con la voz de ElevenLabs «Narrador Historia Puno»",
+      "entregable": "public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 (ElevenLabs v3, emoción por frase, verificada contra el guion); `npm run validar -- 001-el-hombre --final` sin errores",
+      "estado": "hecho",
       "depende_de": [
         "e1-guion-externo"
       ],
       "prevista": null,
       "real": {
-        "inicio": null,
-        "fin": null
+        "inicio": "2026-11-10",
+        "fin": "2026-11-10"
       },
       "bloqueo": null,
-      "evidencia": [],
+      "evidencia": [
+        "historia/videos/001-el-hombre/fuentes.md",
+        "historia/CLAUDE.md"
+      ],
       "tiempo": {
         "humano_min": null,
         "agente": null,

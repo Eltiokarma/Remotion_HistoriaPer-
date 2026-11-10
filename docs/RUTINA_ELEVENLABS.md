@@ -9,10 +9,11 @@ funciona: `/v1/user/subscription`, `/v1/models` y `/v2/voices` responden 200 des
 Lo que dice sobre el servidor MCP sale de su repositorio oficial (`elevenlabs/elevenlabs-mcp`, MIT);
 verificar los nombres de las herramientas al instalarlo.
 
-> **La regla que no se mueve** (`historia/CLAUDE.md` §1.1·1): la narración publicada es la voz de
-> Gerson. ElevenLabs entra para **medir, alinear, limpiar y ambientar**, nunca para narrar. Nada de
-> clonar la voz de Gerson: un clon se puede colar en un render final y es justo lo que YouTube
-> desmonetiza.
+> **Cambio de regla (Gerson, 2026-11-10):** la narración de los videos es la voz diseñada «Narrador
+> Historia Puno» (`BcI5qnQ6UpDt3HmW9BG7`, modelo v3), no la voz de Gerson (`historia/CLAUDE.md`
+> §1.1·1, con el riesgo de monetización anotado). Se genera frase por frase con su emoción, cada
+> frase en el tiempo de la voz provisional, y se verifica contra el guion con transcripción
+> automática antes de usarla. Nunca un clon de una persona real sin su permiso.
 
 ## Parte 1 · Conectar (una vez)
 

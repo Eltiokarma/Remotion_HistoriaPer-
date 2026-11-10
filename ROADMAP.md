@@ -12,7 +12,7 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **27** · 🔄 en curso: **4** · ⏳ pendiente: **7** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **28** · 🔄 en curso: **4** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -73,10 +73,11 @@ gantt
   Pasada de pulido de animación :done, e1pulido, 2026-11-03, 1d
   Guion tras la revisión externa :done, e1guionexterno, 2026-11-03, 1d
   Integrar los 16 diseños aprobados de VectorCraft conservando la animación :done, e1laminas, 2026-11-10, 1d
+  Narración con la voz de ElevenLabs «Narrador Historia Puno» :done, e1voz, 2026-11-10, 1d
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
-Sin fecha (18): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-voz` (⏳ pendiente), `e1-musica` (🔄 en curso).
+Sin fecha (17): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso).
 
 ## Tareas
 
@@ -385,11 +386,12 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `e1-laminas`
   - Prevista: — · Real: null
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-- [ ] **Narración con la voz de Gerson** `e1-voz` — ⏳ pendiente
-  - Entregable: public/videos/001-el-hombre/voz/sNN.wav de s00 a s07; `npm run validar -- 001-el-hombre --final` sin errores
+- [x] **Narración con la voz de ElevenLabs «Narrador Historia Puno»** `e1-voz` — ✅ hecho
+  - Entregable: public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 (ElevenLabs v3, emoción por frase, verificada contra el guion); `npm run validar -- 001-el-hombre --final` sin errores
   - Depende de: `e1-guion-externo`
-  - Prevista: — · Real: null
+  - Prevista: — · Real: 2026-11-10
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [001-el-hombre/fuentes.md](historia/videos/001-el-hombre/fuentes.md) · [historia/CLAUDE.md](historia/CLAUDE.md)
 - [ ] **Musicalización con Suno (motivo de Quiroz, ocho pistas)** `e1-musica` — 🔄 en curso
   - Entregable: Pistas de Suno recortadas a los beats en public/videos/001-el-hombre/musica/, escenas.json y fuentes.md actualizados, audio de prueba del episodio
   - Prevista: — · Real: 2026-11-10 → …
