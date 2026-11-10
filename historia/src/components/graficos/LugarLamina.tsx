@@ -24,6 +24,10 @@ type Props = {
   /** Un dato abajo a la izquierda (lo que la voz no dice). */
   dato?: string;
   datoK?: number;
+  /** 0–1 cada uno: el nombre del lugar (con su palabra en la voz), el año, y el rótulo de la cordillera. */
+  nombreK?: number;
+  anioK?: number;
+  andesK?: number;
 };
 
 const SUAVE = 180;
@@ -33,7 +37,7 @@ const SUAVE = 180;
  * (la ciudad no se mueve: el mapa crece a su alrededor), después la pizarra se retira y el mapa
  * queda como recuadro de la página. Ahí lo cubre el agua y vuelve con el papel.
  */
-export const LugarLamina: React.FC<Props> = ({ lamina, foco, marco, recuadro, aparece, acerca, escala = 1.5, aRecuadro, frente, dato, datoK = 0 }) => {
+export const LugarLamina: React.FC<Props> = ({ lamina, foco, marco, recuadro, aparece, acerca, escala = 1.5, aRecuadro, frente, dato, datoK = 0, nombreK = 1, anioK = 1, andesK = 0 }) => {
   const uid = usePrefijo();
   const [fx, fy] = foco;
   // dos transformaciones del mapa (x' = s·x + t) y su mezcla: acercado a pantalla completa → recuadro
@@ -59,7 +63,15 @@ export const LugarLamina: React.FC<Props> = ({ lamina, foco, marco, recuadro, ap
         <defs><clipPath id={`${uid}-ventana`}><rect x={ventana.x} y={ventana.y} width={ventana.w} height={ventana.h} rx={k * 6} /></clipPath></defs>
         {/* la pizarra y la columna de rótulos se retiran cuando el mapa pasa a la página */}
         <CapaVC lamina={lamina} uid={uid} nombre="Pizarra_verde" opacity={1 - k} />
-        <CapaVC lamina={lamina} uid={uid} nombre="Rotulación" opacity={1 - k} />
+        {/* la columna ya no es una lista: el título, después el nombre del lugar cuando la voz lo dice y el año
+            debajo, cuando la voz lo dice. «El Pacífico al oeste / Los Andes hacia el interior» pasan al mapa,
+            como rótulos de lo que señalan; el subtítulo repetía el nombre que ya está en la página */}
+        <CapaVC lamina={lamina} uid={uid} nombre="Rotulación" opacity={1 - k} pieza={(i) => {
+          if (i === 0) return undefined;
+          if (i === 2 || i === 3) return { opacity: nombreK, transform: `translate(0 ${10 * (1 - nombreK) + 40})` };
+          if (i === 7) return { opacity: anioK, transform: `translate(0 ${-200 + 10 * (1 - anioK)})` };
+          return { opacity: 0 };
+        }} />
         <CapaVC lamina={lamina} uid={uid} nombre="Relieve_ilustrado" solo={(i) => i === 61 || i === 62 || i === 69} opacity={1 - k} />
         {/* en la página, el recuadro lleva un fondo propio para que el mapa no se lea sobre el papel */}
         {k > 0 ? <rect x={ventana.x} y={ventana.y} width={ventana.w} height={ventana.h} rx={6} fill="#22332a" opacity={k} /> : null}
@@ -67,6 +79,11 @@ export const LugarLamina: React.FC<Props> = ({ lamina, foco, marco, recuadro, ap
           <g transform={mapa}>
             <CapaVC lamina={lamina} uid={uid} nombre="Geografía_Natural_Earth" />
             <CapaVC lamina={lamina} uid={uid} nombre="Relieve_ilustrado" solo={(i) => i <= 60 || i === 67 || i === 68} />
+            {/* la cordillera se nombra sobre la cordillera, mientras la cámara se acerca */}
+            {andesK > 0 ? (
+              <text x={1218} y={612} transform="rotate(51.8 1218 612)" fill="#3a3220" opacity={0.85 * andesK} fontFamily={fuente.libro} fontStyle="italic" fontSize={20}
+                letterSpacing={3}>Los Andes</text>
+            ) : null}
           </g>
         </g>
         <g transform={marcador}>
@@ -76,7 +93,7 @@ export const LugarLamina: React.FC<Props> = ({ lamina, foco, marco, recuadro, ap
         <CapaVC lamina={lamina} uid={uid} nombre="Relieve_ilustrado" solo={(i) => i === 65 || i === 66} opacity={1 - clamp(k * 2)} />
       </svg>
       {dato ? (
-        <div style={{ position: 'absolute', left: 155, top: 880, fontFamily: fuente.mono, fontSize: 22, letterSpacing: '0.12em', color: alfa('#c6cdb3', 0.9),
+        <div style={{ position: 'absolute', left: 158, top: 660, fontFamily: fuente.mono, fontSize: 22, letterSpacing: '0.12em', color: alfa('#c6cdb3', 0.9),
           opacity: datoK * (1 - k) }}>{dato}</div>
       ) : null}
     </div>

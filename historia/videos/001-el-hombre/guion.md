@@ -56,7 +56,7 @@ promedio anual 1820–2000; «estimados preliminares», p. 57); la colonia: cap.
 ## ESC 1 — Los días extra
 
 **VO:**
-Nueva York. Un historiador peruano revisa, con minuciosidad, las pruebas de imprenta. Es la traducción al español de su último libro. [PAUSA 1s]
+Nueva York. Nuestro historiador revisa, con minuciosidad, las pruebas de imprenta. Es la traducción al español de su último libro. [PAUSA 1s]
 
 No le queda mucho tiempo, y lo sabe. [PAUSA 1,5s]
 

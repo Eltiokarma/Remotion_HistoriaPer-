@@ -29,8 +29,8 @@ type P = z.infer<typeof esquema>;
 const ZOOM_VIAJE = 2.1, MIRA_ADELANTE = 0.07;
 /** En la lámina el mapa es más chico que el dibujado: la cámara se acerca un poco menos para no salirse del área útil. */
 const ZOOM_VIAJE_LAMINA = 1.9;
-/** El fichero de la lámina, a la izquierda del gráfico, bajo «Cada punto, una observación»; y su boca en pantalla. */
-const FICHERO = { x: 150, y: 450, ancho: 420, caja: [360, 210, 1220, 750] as [number, number, number, number] };
+/** El fichero de la lámina, abajo a la izquierda (arriba queda el lugar de las frases); y su boca en pantalla. */
+const FICHERO = { x: 150, y: 640, ancho: 420, caja: [360, 210, 1220, 750] as [number, number, number, number] };
 const BOCA_FICHERO = { x: FICHERO.x + (960 - 360) * (420 / 1220), y: FICHERO.y + (470 - 210) * (420 / 1220) };
 /** Paralelos que se encienden al cruzarlos (el viaje pasa del sur al norte). */
 const PARALELOS = [{ lat: 0, rotulo: 'ECUADOR · 0°' }, { lat: 15, rotulo: '15° N' }, { lat: 30, rotulo: '30° N' }];

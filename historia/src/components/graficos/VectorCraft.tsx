@@ -24,6 +24,17 @@ const EJES_REGRESION = [760, 300, 1000, 540] as const, EJES_COSTO = [220, 330, 1
 const RECTA = {x1: 760, y1: 743.624, x2: 1720, y2: 426.042};
 const yRecta = (x: number) => RECTA.y1 + ((x - RECTA.x1) * (RECTA.y2 - RECTA.y1)) / (RECTA.x2 - RECTA.x1);
 const PASO = {xa: 1100, xb: 1400};
+/**
+ * Las frases de la lámina de regresión, una a la vez y en el mismo lugar (a la izquierda del gráfico), cada
+ * una con la palabra de la voz que la nombra y una línea que señala lo que explica. Piezas de la capa Texto,
+ * desplazamiento vertical hasta la ranura (y = 450), beat en que entra y a dónde apunta.
+ */
+const FRASES = [
+  {piezas: [2, 3], dy: 112, beat: 'observacion', apunta: {x: 980, y: 634}, ancho: 318},
+  {piezas: [7, 8], dy: -235, beat: 'residuos', apunta: {x: 1020, y: 693}, ancho: 290},
+  {piezas: [4, 5], dy: -53, beat: 'tendencia', apunta: {x: 1180, y: 605}, ancho: 223},
+  {piezas: [9], dy: -389, beat: 'causalidad', apunta: null, ancho: 330},
+] as const;
 
 /** SVG propio exportado por VectorCraft. Cada pieza conserva su vector y su tiempo de entrada.
  * No se acepta HTML remoto: los JSON se generan de los SVG revisados dentro de public/videos.
@@ -60,6 +71,9 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
     return decada;
   }) ?? [];
   const PASO_DECADA = 3.4 / 18;
+  // cuándo entra cada frase (con su palabra) y cuándo deja el lugar a la siguiente
+  const tFrase = [T('observacion', T('caen') + 3), T('residuos', T('recta') + 1.8), T('tendencia', T('recta') + 5), T('causalidad', T('pendiente') + 2.4)];
+  const frase = (j: number) => tramo(t, tFrase[j], 0.6, 'natural') * (1 - (j + 1 < tFrase.length ? tramo(t, tFrase[j + 1] - 0.2, 0.4, 'natural') : 0)) * (1 - haciaSerie);
   // E10: los ejes del ejemplo viajan hasta los ejes de la serie (ya achicados para la tabla)
   const ejesHaciaSerie = (() => {
     const [rx, ry, rw, rh] = EJES_REGRESION, [cx0, cy0, cw, ch] = EJES_COSTO, c = COSTO_CON_TABLA;
@@ -86,7 +100,7 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
     if (modo === 'regresion') {
       const sale = 1 - clamp(haciaSerie * 2.5); // el ejemplo se retira antes de que los ejes lleguen a la serie
       // los residuos y su explicación llegan juntos, después de que la recta se asentó; la cautela, con la pendiente
-      if (name === 'Texto') return (1 - haciaSerie) * (i < 4 ? k('puntos') : i < 6 ? k('recta') : i < 9 ? k('recta', 0.8, 1.8) : k('pendiente', 0.8, 2.4));
+      if (name === 'Texto') return i < 2 ? (1 - haciaSerie) * k('puntos') : 0; // las frases van aparte (FRASES)
       if (name === 'Gráfico') {
         if (i < 9) return k('puntos');
         if (i === 43) return k('puntos') * (1 - haciaSerie);
@@ -98,8 +112,8 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
     }
     if (modo === 'costo') {
       if (name === 'Datos_originales' && i > 0) return tramo(t, T('serie') + 1.3 + decadas[i] * (3.4 / 18), 0.22, 'natural');
-      if (name === 'Ejes_y_banda' && i === 1) return k('serie', 0.7, 5.6);
-      if (name === 'Lectura' && (i === 3 || i === 4)) return k('serie', 0.7, 4.7);
+      if (name === 'Ejes_y_banda' && i === 1) return k('serie', 0.7, 4.6);
+      if (name === 'Lectura' && (i === 3 || i === 4)) return k('serie', 0.7, 4.0);
       return k('serie', 0.6);
     }
     return 1;
@@ -108,7 +122,7 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
     <defs dangerouslySetInnerHTML={{__html: namespaced(data.defs)}} />
     <defs>
       {/* la banda del promedio se extiende de izquierda a derecha, después de la serie */}
-      <clipPath id={`${uid}-banda`}><rect x={0} y={0} width={220 + 1560 * tramo(t, T('serie') + 4.7, 1.3, 'solemne')} height={1080}/></clipPath>
+      <clipPath id={`${uid}-banda`}><rect x={0} y={0} width={220 + 1560 * tramo(t, T('serie') + 4.0, 1.0, 'solemne')} height={1080}/></clipPath>
       <clipPath id={`${uid}-mapa`}><rect x={0} y={235} width={1920} height={735}/></clipPath>
     </defs>
     {data.layers.map(l => <g key={l.name} transform={modo === 'costo' && tabla && l.name !== 'Pizarra_verde' ? `translate(${COSTO_CON_TABLA.tx} ${COSTO_CON_TABLA.ty}) scale(${COSTO_CON_TABLA.s})` : undefined}><g clipPath={modo === 'viaje' && ['Cartografía', 'Rutas'].includes(l.name) ? `url(#${uid}-mapa)` : undefined}>
@@ -116,6 +130,13 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
         : modo === 'regresion' && l.name === 'Gráfico' && haciaSerie > 0 ? ejesHaciaSerie : undefined}>
       {l.parts.map((part, i) => {
         let html = namespaced(part);
+        if (modo === 'regresion' && l.name === 'Texto' && i >= 2) {
+          const j = FRASES.findIndex((f) => (f.piezas as readonly number[]).includes(i));
+          if (j < 0) return null; // la raya que separaba la lista ya no hace falta
+          const o = frase(j);
+          if (o <= 0.001) return null;
+          return <g key={i} opacity={o} transform={`translate(0 ${FRASES[j].dy + 12 * (1 - tramo(t, tFrase[j], 0.6, 'natural'))})`} dangerouslySetInnerHTML={{__html: html}} />;
+        }
         if (modo === 'viaje' && l.name === 'Rutas' && i === 0) html = html.replace('<path ', `<path pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1 - viaje}" `);
         if (modo === 'regresion' && l.name === 'Gráfico' && i === 41) {
           // E08: la recta busca su pendiente: entra torcida, gira hasta la que mejor pasa y se asienta
@@ -159,6 +180,17 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
         return <g key={i} opacity={opacity(l.name, i)} clipPath={modo === 'costo' && ((l.name === 'Ejes_y_banda' && i === 0) || (l.name === 'Lectura' && (i === 3 || i === 4))) ? `url(#${uid}-banda)` : undefined} dangerouslySetInnerHTML={{__html: html}} />;
       })}
     </g></g></g>)}
+    {modo === 'regresion' ? FRASES.map((f, j) => {
+      // la frase señala lo que explica: una línea fina que sale de la frase y llega con un punto
+      if (!f.apunta) return null;
+      const o = frase(j), traza = tramo(t, tFrase[j] + 0.3, 0.6, 'natural');
+      if (o <= 0.001) return null;
+      const x0 = 145 + f.ancho + 18, y0 = 470;
+      return <g key={`f${j}`} opacity={o}>
+        <path d={`M${x0} ${y0} L${f.apunta.x} ${f.apunta.y}`} stroke="#e8dabc" strokeWidth={1.4} strokeDasharray="1" pathLength={1} strokeDashoffset={1 - traza} fill="none" opacity={0.7} />
+        {traza >= 1 ? <circle cx={f.apunta.x} cy={f.apunta.y} r={12} fill="none" stroke="#f3d692" strokeWidth={2} /> : null}
+      </g>;
+    }) : null}
     {modo === 'regresion' && T('pendiente', Infinity) < Infinity ? (() => {
       // E09: «y dice cuánto pesa»: el escalón de la pendiente sobre la recta, un paso hacia la derecha y lo que sube
       const ya = yRecta(PASO.xa), yb = yRecta(PASO.xb);

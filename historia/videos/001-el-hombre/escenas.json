@@ -549,7 +549,11 @@
         "tiza": 99.63,
         "frase": 103.62,
         "serie": 63.28,
-        "paris_notas": 12.76
+        "paris_notas": 12.76,
+        "observacion": 41.62,
+        "residuos": 49.04,
+        "tendencia": 52.47,
+        "causalidad": 58.53
       },
       "props": {
         "origen": {

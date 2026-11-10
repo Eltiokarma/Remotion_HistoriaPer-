@@ -143,7 +143,8 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
         <LugarLamina lamina={lLugar} foco={refLugar.foco} marco={refLugar.marco} recuadro={refLugar.recuadro} escala={refLugar.escala}
           aparece={tramo(t, tLugar, 0.65, 'natural')} acerca={tramo(t, tLugar + 1.2, 2.4, 'solemne')}
           aRecuadro={tramo(t, (tPiscina ?? tLugar + 6) - 1.7, 1.1, 'pesado')} frente={piscina && renglon < 1 ? frenteSecado(renglon) : null}
-          dato={props.lugar?.dato} datoK={tramo(t, tLugar + 1.5, 0.8, 'natural')} />
+          dato={props.lugar?.dato} datoK={tramo(t, tLugar + 2.6, 0.8, 'natural')}
+          nombreK={tramo(t, tLugar + 0.55, 0.6, 'natural')} anioK={tramo(t, tLugar + 1.25, 0.7, 'natural')} andesK={tramo(t, tLugar + 2.0, 1.0, 'natural')} />
       ) : null}
       {!lLugar && props.vectorcraft && t >= tLugar && t < (tPiscina ?? tLugar + 6) ? <AbsoluteFill style={{opacity: tramo(t, tLugar, 0.65, 'natural') * (1 - tramo(t, (tPiscina ?? tLugar + 6) - 0.65, 0.65, 'natural'))}}>
         <VectorCraft videoId={video.id} archivo={props.vectorcraft} modo="lima" t={t} beats={b} notas={props.lugar?.dato ? [props.lugar.dato] : undefined} />

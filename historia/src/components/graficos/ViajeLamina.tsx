@@ -115,7 +115,7 @@ export const ViajeLamina: React.FC<Props> = (p) => {
           {p.faro > 0 ? <circle cx={nyC.x} cy={nyC.y} r={30 + 50 * p.faro + 6 * Math.sin(t * 4)} fill={`url(#${uid}-faro)`} opacity={p.faro} /> : null}
           <path d={ruta.d} fill="none" stroke="#e5c17c" strokeWidth={6} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - clamp(p.avance)} />
           {p.avance > 0 && p.avance < 1 ? <circle cx={punta.x} cy={punta.y} r={7} fill="#f3d692" /> : null}
-          <CapaVC lamina={l} uid={uid} nombre="Rutas" solo={(i) => !(P.nyFicha as readonly number[]).includes(i)} pieza={(i) => pieza(i)} />
+          <CapaVC lamina={l} uid={uid} nombre="Rutas" solo={(i) => i !== P.viaje && !(P.nyFicha as readonly number[]).includes(i)} pieza={(i) => pieza(i)} />
           {P.nyFicha.map((n, j) => (
             <g key={n} clipPath={`url(#${uid}-ficha${j})`}><CapaVC lamina={l} uid={uid} nombre="Rutas" solo={(i) => i === n} /></g>
           ))}
