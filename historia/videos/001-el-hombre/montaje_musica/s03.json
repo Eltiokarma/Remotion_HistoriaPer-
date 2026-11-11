@@ -1,0 +1,26 @@
+{
+  "salida": "s03-pais-nuevo.mp3",
+  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. D se detiene (42 s del archivo) en el despegue del afiche",
+  "dur": "escena",
+  "capas": [
+    {
+      "archivo": "suno/V01_mus03_ver01_5.wav",
+      "ancla": [
+        "despegue",
+        42.0
+      ],
+      "env": [
+        [
+          "despegue",
+          -42.0,
+          0
+        ],
+        [
+          "despegue",
+          -41.6,
+          1
+        ]
+      ]
+    }
+  ]
+}

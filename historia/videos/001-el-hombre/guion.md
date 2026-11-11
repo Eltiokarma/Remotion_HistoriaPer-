@@ -175,7 +175,7 @@ Y sus ideas también se mueven. De aquel joven trotskista pasa a una postura lib
 ## ESC 6 — El primer caso (puente)
 
 **VO:**
-Pero su primer caso lo había encontrado antes de irse. [PAUSA 0,6s] Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. [PAUSA 1s]
+Pero su primer caso lo había encontrado en Lima, en 1980, poco antes de irse a Nueva York. [PAUSA 0,6s] Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. [PAUSA 1s]
 
 Ahí estaba el guano. Y una deuda que el Estado decidió pagar con esa plata, en 1850. [PAUSA 0,8s] Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. [PAUSA 1s: el monto del vale de arriba sube; «ejemplo ilustrativo»] ¿Adónde fue a parar esa plata?
 

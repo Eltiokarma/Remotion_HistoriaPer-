@@ -40,6 +40,9 @@ para preparar material, no para dirigir.
 | **QGIS** | Cartografía y preparación de datos geográficos (lagos, ríos, relieve, límites históricos) para exportar a GeoJSON/SVG que dibuja Remotion. | propuesta | Tanda 2 (`t2-qgis`): el mapa de la muestra 05 no tiene lagos |
 | **ComfyUI** | Generación de recursos (texturas, fondos, referencias) con flujos locales o externos. | pendiente de prueba | Antes de usarlo: licencia de cada modelo y regla 1.1·3 del canal (imágenes con licencia clara) |
 | **DaVinci Resolve / Fusion** y **After Effects** | Alternativas de composición y acabado (etalonaje, limpieza de audio, ajustes finales). | pendiente de prueba | Solo si el acabado en Remotion no alcanza |
+| **Suno** | Música por episodio, con un motivo propio, que aquí se recorta a los beats. Rompe «todo el audio es propio» por decisión de Gerson (2026-11-10). Plan de pago para uso comercial. | propuesta | Episodio 001 (`e1-musica`): [prompts](../historia/videos/001-el-hombre/musicalizacion.md) |
+| **Freesound** (API) | Ambientes y efectos grabados, solo CC0 y CC BY, con créditos automáticos (`historia/scripts/freesound.py`). | pendiente de prueba | Responde 403 desde el contenedor de la nube; probar en la laptop (`e1-ambientes`) |
+| **ElevenLabs** (MCP y API) | Alineación forzada de la voz real (beats y subtítulos), voz provisional, aislador de voz, efectos y música a medida. Nunca la narración. | propuesta | [Rutina](RUTINA_ELEVENLABS.md); roadmap `t4-elevenlabs` |
 
 ## Control por MCP (investigado el 2026-11-07; probado: Inkscape)
 

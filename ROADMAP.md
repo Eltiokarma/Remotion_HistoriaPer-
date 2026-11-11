@@ -12,7 +12,7 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **26** · 🔄 en curso: **2** · ⏳ pendiente: **7** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **28** · 🔄 en curso: **4** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -22,6 +22,7 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `t4-comfyui` ComfyUI: texturas o fondos con licencia clara: Definir qué modelos tienen licencia compatible con la regla 1.1·3 del canal.
 - `f5-laptop` Repetir la tanda 1 en la laptop de render: Lo corre Gerson en su máquina (el agente no tiene acceso a ella).
 - `f5-pc` Repetir la tanda 1 en la PC objetivo: La PC objetivo no está disponible.
+- `e1-musica` Musicalización con Suno (motivo de Quiroz, ocho pistas): Música de Suno integrada de s00 a s06 (2026-11-10); s07 conserva el tema sintetizado. Falta la escucha de Gerson y los enlaces de Suno en fuentes.md.
 
 ## Vista temporal
 
@@ -72,9 +73,11 @@ gantt
   Pasada de pulido de animación :done, e1pulido, 2026-11-03, 1d
   Guion tras la revisión externa :done, e1guionexterno, 2026-11-03, 1d
   Integrar los 16 diseños aprobados de VectorCraft conservando la animación :done, e1laminas, 2026-11-10, 1d
+  Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena) :done, e1voz, 2026-11-10, 1d
+  Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
-Sin fecha (16): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-voz` (⏳ pendiente).
+Sin fecha (17): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso).
 
 ## Tareas
 
@@ -330,6 +333,11 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: —
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Definir qué modelos tienen licencia compatible con la regla 1.1·3 del canal.
+- [ ] **ElevenLabs: MCP en la laptop y alineación forzada de la voz real** `t4-elevenlabs` — 🔄 en curso
+  - Entregable: MCP conectado en Claude Desktop; prueba de alineación forzada de una escena que reescriba sus beats
+  - Prevista: — · Real: 2026-11-10 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [docs/RUTINA_ELEVENLABS.md](docs/RUTINA_ELEVENLABS.md)
 
 ### Fase 5 · Medir en las máquinas reales
 
@@ -378,11 +386,23 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `e1-laminas`
   - Prevista: — · Real: null
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-- [ ] **Narración con la voz de Gerson** `e1-voz` — ⏳ pendiente
-  - Entregable: public/videos/001-el-hombre/voz/sNN.wav de s00 a s07; `npm run validar -- 001-el-hombre --final` sin errores
+- [x] **Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena)** `e1-voz` — ✅ hecho
+  - Entregable: public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 con scripts/narracion.py, beats llevados a la voz y música rearmada; `npm run validar -- 001-el-hombre --final` sin errores
   - Depende de: `e1-guion-externo`
-  - Prevista: — · Real: null
+  - Prevista: — · Real: 2026-11-10
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [001-el-hombre/revision_gerson_2026-11-10.md](historia/videos/001-el-hombre/revision_gerson_2026-11-10.md) · [scripts/narracion.py](historia/scripts/narracion.py) · [001-el-hombre/escaleta.md](historia/videos/001-el-hombre/escaleta.md)
+- [ ] **Musicalización con Suno (motivo de Quiroz, ocho pistas)** `e1-musica` — 🔄 en curso
+  - Entregable: Pistas de Suno recortadas a los beats en public/videos/001-el-hombre/musica/, escenas.json y fuentes.md actualizados, audio de prueba del episodio
+  - Prevista: — · Real: 2026-11-10 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Bloqueo: Música de Suno integrada de s00 a s06 (2026-11-10); s07 conserva el tema sintetizado. Falta la escucha de Gerson y los enlaces de Suno en fuentes.md.
+  - Evidencia: [001-el-hombre/musicalizacion.md](historia/videos/001-el-hombre/musicalizacion.md) · [001-el-hombre/escenas.json](historia/videos/001-el-hombre/escenas.json) · [001-el-hombre/fuentes.md](historia/videos/001-el-hombre/fuentes.md)
+- [x] **Ambientes y efectos reales (Freesound o ElevenLabs)** `e1-ambientes` — ✅ hecho
+  - Entregable: 13 efectos y 4 ambientes (cuarto, ciudad, agua, mar) de ElevenLabs elegidos por Gerson en public/compartido/audio/, con créditos en fuentes.md. Grabaciones propias o de Freesound siguen siendo preferibles cuando existan (CLAUDE.md §6).
+  - Prevista: — · Real: 2026-11-10
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [001-el-hombre/fuentes.md](historia/videos/001-el-hombre/fuentes.md) · [scripts/generar_audio.py](historia/scripts/generar_audio.py)
 
 ## Máquinas
 

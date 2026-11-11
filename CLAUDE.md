@@ -18,5 +18,6 @@ las tareas de las dos ramas), se corre `node roadmap/generar.mjs` y se comprueba
 **Herramientas y laboratorio.** `docs/HERRAMIENTAS.md` dice qué herramienta está verificada,
 propuesta o pendiente. Las pruebas de herramientas nuevas van en `historia/laboratorio/` (ver su
 README), nunca dentro de un episodio.
+Los prompts de Suno siguen `docs/REGLAS_SUNO.md`; ElevenLabs, `docs/RUTINA_ELEVENLABS.md`.
 
 Se trabaja sobre `main`. Mensajes de commit en español.

@@ -1,6 +1,14 @@
 node_modules/
 out/
 # La voz real y las imágenes pesadas de cada video no van a git (ver README).
-public/videos/*/voz/
+public/videos/*/voz/*
+# La narración de ElevenLabs (MP3, liviana) sí va a git: el render de la CI la necesita.
+!public/videos/*/voz/*.mp3
 public/videos/*/imagenes/
+# La música de Suno (WAV originales y stems): pesada, se guarda en Drive. En git queda su registro en fuentes.md.
+public/videos/*/musica/suno/
 __pycache__/
+# Tomas de efectos de ElevenLabs en prueba (las elegidas pasan a sfx/ y ambiente/).
+public/compartido/audio/candidatos-elevenlabs/
+# Tomas de voces en prueba (no son la narración del video).
+public/videos/*/voz-pruebas/

@@ -1,0 +1,85 @@
+{
+  "salida": "s04-tres-velocidades.mp3",
+  "nota": "tiempos de la escena (ya con la voz de Joder Jolines); env = [[t, ganancia]]",
+  "dur": "escena",
+  "lufs_ref": -18,
+  "capas": [
+    {
+      "archivo": "suno/V01_mus-E01_ver01_2.wav",
+      "inicio": 10.015,
+      "db": 1,
+      "env": [
+        [
+          11.444,
+          0
+        ],
+        [
+          11.778,
+          1
+        ],
+        [
+          31.511,
+          1
+        ],
+        [
+          33.011,
+          0
+        ],
+        [
+          44.881,
+          0
+        ],
+        [
+          45.734,
+          1
+        ]
+      ]
+    },
+    {
+      "archivo": "suno/V01_mus-E02_ver01_2.wav",
+      "inicio": 17.401,
+      "db": 0,
+      "env": [
+        [
+          19.241,
+          0
+        ],
+        [
+          20.052,
+          1
+        ],
+        [
+          31.511,
+          1
+        ],
+        [
+          33.011,
+          0
+        ],
+        [
+          38.011,
+          0
+        ],
+        [
+          39.155,
+          1
+        ]
+      ]
+    },
+    {
+      "archivo": "suno/V01_mus-E03_ver01_5.wav",
+      "inicio": 23.771,
+      "db": -1,
+      "env": [
+        [
+          23.771,
+          0
+        ],
+        [
+          25.164,
+          1
+        ]
+      ]
+    }
+  ]
+}

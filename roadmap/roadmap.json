@@ -1060,6 +1060,29 @@
       }
     },
     {
+      "id": "t4-elevenlabs",
+      "fase": "f4",
+      "titulo": "ElevenLabs: MCP en la laptop y alineación forzada de la voz real",
+      "entregable": "MCP conectado en Claude Desktop; prueba de alineación forzada de una escena que reescriba sus beats",
+      "estado": "en_curso",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-10",
+        "fin": null
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "docs/RUTINA_ELEVENLABS.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
       "id": "f5-laptop",
       "fase": "f5",
       "titulo": "Repetir la tanda 1 en la laptop de render",
@@ -1248,19 +1271,72 @@
     {
       "id": "e1-voz",
       "fase": "e1",
-      "titulo": "Narración con la voz de Gerson",
-      "entregable": "public/videos/001-el-hombre/voz/sNN.wav de s00 a s07; `npm run validar -- 001-el-hombre --final` sin errores",
-      "estado": "pendiente",
+      "titulo": "Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena)",
+      "entregable": "public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 con scripts/narracion.py, beats llevados a la voz y música rearmada; `npm run validar -- 001-el-hombre --final` sin errores",
+      "estado": "hecho",
       "depende_de": [
         "e1-guion-externo"
       ],
       "prevista": null,
       "real": {
-        "inicio": null,
-        "fin": null
+        "inicio": "2026-11-10",
+        "fin": "2026-11-10"
       },
       "bloqueo": null,
-      "evidencia": [],
+      "evidencia": [
+        "historia/videos/001-el-hombre/revision_gerson_2026-11-10.md",
+        "historia/scripts/narracion.py",
+        "historia/videos/001-el-hombre/escaleta.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-musica",
+      "fase": "e1",
+      "titulo": "Musicalización con Suno (motivo de Quiroz, ocho pistas)",
+      "entregable": "Pistas de Suno recortadas a los beats en public/videos/001-el-hombre/musica/, escenas.json y fuentes.md actualizados, audio de prueba del episodio",
+      "estado": "en_curso",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-10",
+        "fin": null
+      },
+      "bloqueo": "Música de Suno integrada de s00 a s06 (2026-11-10); s07 conserva el tema sintetizado. Falta la escucha de Gerson y los enlaces de Suno en fuentes.md.",
+      "evidencia": [
+        "historia/videos/001-el-hombre/musicalizacion.md",
+        "historia/videos/001-el-hombre/escenas.json",
+        "historia/videos/001-el-hombre/fuentes.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-ambientes",
+      "fase": "e1",
+      "titulo": "Ambientes y efectos reales (Freesound o ElevenLabs)",
+      "entregable": "13 efectos y 4 ambientes (cuarto, ciudad, agua, mar) de ElevenLabs elegidos por Gerson en public/compartido/audio/, con créditos en fuentes.md. Grabaciones propias o de Freesound siguen siendo preferibles cuando existan (CLAUDE.md §6).",
+      "estado": "hecho",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-10",
+        "fin": "2026-11-10"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/fuentes.md",
+        "historia/scripts/generar_audio.py"
+      ],
       "tiempo": {
         "humano_min": null,
         "agente": null,

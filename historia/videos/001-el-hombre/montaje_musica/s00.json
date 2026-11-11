@@ -1,0 +1,27 @@
+{
+  "salida": "s00-tajadas.mp3",
+  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. A entra fuerte (6,5 s del archivo) con la tajada roja",
+  "t0": 0.0,
+  "dur": "escena",
+  "capas": [
+    {
+      "archivo": "suno/V01_mus01_ver03.wav",
+      "ancla": [
+        "rojo",
+        6.5
+      ],
+      "env": [
+        [
+          "rojo",
+          -6.5,
+          0
+        ],
+        [
+          "rojo",
+          -6.2,
+          1
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+ "voz": "sku3dGbfu1taqEDqvHsQ",
+ "nombre": "Joder Jolines",
+ "tipo": "clon de la voz de Gerson",
+ "modelo": "eleven_v3",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.8
+ },
+ "nota": "Una toma por escena (scripts/narracion.py): las frases de cada escena se dicen seguidas en una sola generación, con sus etiquetas de emoción. «cortes» parte la toma solo donde el guion pide una pausa larga (s01: la cruz sobre negro) y la rellena con el aire de la propia toma. Decidido por Gerson el 2026-11-10.",
+ "cortes": {
+  "s01": {
+   "7": 6.65
+  }
+ },
+ "frases": {
+  "s00": [
+   "[serious] [slowly] Desde mil ochocientos veinte... la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento... de todo lo que produce.",
+   "[whispers] Cada año.",
+   "[calm] Del presupuesto del Estado, de cada diez soles... se fueron entre tres y cuatro.",
+   "[firm] No son casos sueltos: es el sistema. Y viene desde la colonia.",
+   "[softly] Lo calculó un historiador limeño.",
+   "[sad] [quietly] Y no llegó a ver su libro en español."
+  ],
+  "s01": [
+   "[calm] [quietly] Nueva York.",
+   "[calm] [observant] Nuestro historiador revisa, con minuciosidad, las pruebas de imprenta.",
+   "Es la traducción al español de su último libro.",
+   "[softly] [serious] No le queda mucho tiempo... y lo sabe.",
+   "[gentle] En los agradecimientos escribe una línea que casi nadie lee.",
+   "[tender] Les da las gracias a sus médicos por alargar estos días, para poder completar la tarea.",
+   "[warm] Unas líneas más abajo celebra el nacimiento de su hijo.",
+   "[sad] [quietly] [slowly] Murió en enero de dos mil trece.",
+   "[quietly] El libro salió en mayo.",
+   "[warm] [resolute] Estos videos son sobre ese hombre... y sobre lo que encontró."
+  ],
+  "s02": [
+   "[warm] [clear] Se llamaba Alfonso Quiroz Norris.",
+   "[calm] Nació en Lima, en mil novecientos cincuenta y seis.",
+   "[light] [curious] De chico fue nadador de competencia: representó al Perú en las categorías infantil y juvenil.",
+   "[calm] [storytelling] Marcos Cueto, historiador y amigo suyo desde los quince años, cuenta que esa disciplina de la piscina la llevó después a los archivos.",
+   "[thoughtful] Y lo resume en una sola palabra:",
+   "[admiring] [softly] inagotable."
+  ],
+  "s03": [
+   "[storytelling] En mil novecientos setenta y cuatro entra a la Universidad Católica, entre los primeros puestos del examen de admisión.",
+   "[serious] El Perú vive el gobierno militar de Velasco.",
+   "[firm] Reforma agraria.",
+   "[firm] Nacionalizaciones.",
+   "[slightly ironic] Un discurso que promete enterrar el pasado oligárquico.",
+   "[firm] Quiroz no apoyó al régimen.",
+   "[matter-of-fact] Militó un tiempo en un pequeño partido trotskista que lo criticaba con dureza.",
+   "[thoughtful] Para un estudiante de esa época, la historia no era un curso más.",
+   "[thoughtful] Era la manera de responder una pregunta.",
+   "[curious] [questioning] ¿El país estaba cambiando de verdad?",
+   "[quietly] [doubtful] ¿O repetía lo de siempre?"
+  ],
+  "s04": [
+   "[storytelling] [careful] Casi con seguridad fue en un curso de Franklin Pease donde leyó por primera vez a Fernand Braudel, un historiador francés.",
+   "[teacher] [clear] Braudel decía que la historia no corre a una sola velocidad.",
+   "[teacher] [lively] Arriba están los acontecimientos: los gobiernos, las guerras, las noticias.",
+   "[teacher] [lively] Cambian rápido, como las olas.",
+   "[teacher] [slower] Más abajo, la economía y la sociedad.",
+   "[teacher] [slowly] Cambian despacio.",
+   "[teacher] [slowly] [deep] Y al fondo, la relación del hombre con su medio: la tierra, el clima.",
+   "[slowly] [deep] Casi no se mueve.",
+   "[solemn] [slowly] A esa historia lenta la llamó larga duración.",
+   "[warm] Quiroz se quedó con eso.",
+   "[thoughtful] Aprendió a apreciar lo que persiste: las estructuras de la economía.",
+   "[serious] [low voice] Hay cosas que no cambian aunque cambien los gobiernos.",
+   "[warm] [resolute] Esa mirada larga es la de esta serie."
+  ],
+  "s05": [
+   "[storytelling] A comienzos de los ochenta hace algo poco común.",
+   "[calm] Buena parte de los historiadores peruanos miraba a París.",
+   "[calm] Era la ciudad de Braudel, el de la larga duración.",
+   "[calm] Ahí se habían formado sus propios profesores.",
+   "[decisive] Él se va a Nueva York, a la Universidad de Columbia.",
+   "[warm] Allí, el historiador Herbert Klein se fija en él y le ofrece una beca.",
+   "[clear] Y aprende historia cuantitativa: pensar el pasado con números, no solo con discursos.",
+   "[teacher] Una de sus herramientas se llama regresión.",
+   "[teacher] [inviting] Imagina muchos puntos desordenados: cada uno, un dato.",
+   "[teacher] A simple vista, solo ruido.",
+   "[teacher] [clear] La regresión busca la línea que mejor pasa entre todos.",
+   "[teacher] Si hay una tendencia, ayuda a verla.",
+   "[teacher] [emphatic] [softly] Y dice cuánto pesa.",
+   "[calm] Aprendió a trabajar con cifras y a contrastarlas con documentos.",
+   "[serious] Años después, llevaría esa disciplina al estudio de la corrupción en el Perú.",
+   "[calm] De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad.",
+   "[respectful] Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la historia financiera del Perú.",
+   "[thoughtful] Y sus ideas también se mueven.",
+   "[calm] De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades.",
+   "[plain] Cambió de ideas.",
+   "[respectful] [thoughtful] Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión."
+  ],
+  "s06": [
+   "[intrigued] Pero su primer caso lo había encontrado en Lima, en mil novecientos ochenta, poco antes de irse a Nueva York.",
+   "[storytelling] Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve.",
+   "[serious] Ahí estaba el guano.",
+   "[serious] Y una deuda que el Estado decidió pagar con esa plata, en mil ochocientos cincuenta.",
+   "[grave] [low voice] Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado.",
+   "[quietly] [questioning] ¿Adónde fue a parar esa plata?"
+  ],
+  "s07": [
+   "[calm] [warm] Próximo episodio: La deuda defraudada."
+  ]
+ },
+ "ganancia_frases": {
+  "s04": {
+   "0": -3
+  }
+ },
+ "nota_ganancia": "Ajustes a mano, en dB, después de la nivelación. s04·0: «Casi con seguridad…» entra después del silencio en que termina s03 y sonaba fuerte (Gerson, 2026-11-11, minuto 2:25)."
+}

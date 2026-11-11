@@ -1,0 +1,10 @@
+{
+  "salida": "s01-el-hombre.mp3",
+  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. B entra en «final» y sigue en s02 sin corte",
+  "empalme": "siguiente",
+  "capas": [
+    {
+      "archivo": "suno/V01_mus02_ver02.wav"
+    }
+  ]
+}
