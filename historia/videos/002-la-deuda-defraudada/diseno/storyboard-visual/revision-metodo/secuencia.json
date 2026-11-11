@@ -1,0 +1,175 @@
+[
+  {
+    "id": "5A.1",
+    "lamina": "lamina-01.svg",
+    "cambio": "Volver al propósito antes de mostrar el resultado.",
+    "enlace": "Reunir el circuito en una sola vista.",
+    "piezas": [
+      "finalidad-del-credito",
+      "quienes-quedaron-fuera",
+      "beneficios-concentrados"
+    ],
+    "recursos_reutilizados": [
+      "../revision-investigacion/enlace-escena-05.svg",
+      "../revision-reclamo/capas/vale-deuda-interna.svg",
+      "../revision-islas/capas/folio-reclamo.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Los informes de la junta",
+        "camara_y_accion": "Retomar el encuadre exacto que cierra 4E.3.",
+        "efecto_y_pausa": "Pausa antes de regresar al inicio del circuito."
+      },
+      {
+        "plano": "Volver a las islas",
+        "camara_y_accion": "Fundir desde el papel hacia el perfil de Chincha.",
+        "efecto_y_pausa": "Oleaje y aves en segundo plano."
+      },
+      {
+        "plano": "La finalidad del crédito público",
+        "camara_y_accion": "Conservar reclamo y vale en la misma mesa.",
+        "efecto_y_pausa": "Iluminar primero el propósito y luego el vínculo."
+      },
+      {
+        "plano": "Quiénes quedaron fuera",
+        "camara_y_accion": "Mantener el propósito y revelar los dos lados.",
+        "efecto_y_pausa": "Sostener la lectura cualitativa."
+      }
+    ]
+  },
+  {
+    "id": "5A.2",
+    "lamina": "lamina-02.svg",
+    "cambio": "Reunir relaciones ya explicadas.",
+    "enlace": "Volver a los informes y cambiar de época.",
+    "piezas": [
+      "informes-archivo",
+      "circuito-1",
+      "circuito-2",
+      "circuito-3",
+      "circuito-4",
+      "circuito-5"
+    ],
+    "recursos_reutilizados": [
+      "../revision-reclamo/capas/vale-deuda-interna.svg",
+      "../revision-islas/capas/folio-reclamo.svg",
+      "../revision-islas/capas/saco-cerrado.svg",
+      "../revision-islas/capas/tapa-carpeta.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Guano, Estado y reclamos",
+        "camara_y_accion": "Entrar por los recursos y panear hacia el Estado.",
+        "efecto_y_pausa": "Encender cada relación al nombrarla."
+      },
+      {
+        "plano": "Se incorporan los vales",
+        "camara_y_accion": "Seguir el movimiento hacia el título conocido.",
+        "efecto_y_pausa": "Asentar el vale con un roce leve."
+      },
+      {
+        "plano": "Llegamos a la investigación",
+        "camara_y_accion": "Abrir el encuadre para ver el circuito completo.",
+        "efecto_y_pausa": "Pausa sin voz. Sostener los informes como enlace."
+      }
+    ]
+  },
+  {
+    "id": "5B.1",
+    "lamina": "lamina-03.svg",
+    "cambio": "Pasar del relato del caso a las fuentes de la reconstrucción.",
+    "enlace": "Recuperar la distinción entre aprobado y probable.",
+    "piezas": [
+      "mesa-del-historiador",
+      "fichero-de-referencia",
+      "libro-de-quiroz",
+      "pruebas-de-imprenta",
+      "contabilidad-estatal",
+      "documentos-judiciales",
+      "correspondencia-diplomatica"
+    ],
+    "recursos_reutilizados": [
+      "../revision-investigacion/enlace-escena-05.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "El cambio de época",
+        "camara_y_accion": "Volver a los informes de la junta.",
+        "efecto_y_pausa": "Leer «Muchos años después» antes de cambiar de mesa."
+      },
+      {
+        "plano": "La mesa del historiador",
+        "camara_y_accion": "Abrir sobre el libro, el fichero y las pruebas.",
+        "efecto_y_pausa": "Fundido de luz cálida. Asentar las pruebas."
+      },
+      {
+        "plano": "Tres familias de fuentes",
+        "camara_y_accion": "Abrir las tres fichas por turno, de izquierda a derecha.",
+        "efecto_y_pausa": "Luz de lectura y un roce en cada llegada."
+      }
+    ]
+  },
+  {
+    "id": "5B.2",
+    "lamina": "lamina-04.svg",
+    "cambio": "De la cautela en un caso a una estimación histórica.",
+    "enlace": "Plantear cómo medir prácticas ocultas.",
+    "piezas": [
+      "mesa-del-historiador",
+      "apendice-alcance",
+      "apendice-cautelas"
+    ],
+    "recursos_reutilizados": [
+      "../revision-novoa/escena-completa/comparacion-vales.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Lo aprobado y lo probablemente recibido",
+        "camara_y_accion": "Retomar la comparación exacta de Novoa.",
+        "efecto_y_pausa": "Sostener «probablemente» y la unidad."
+      },
+      {
+        "plano": "Abrir hacia el apéndice",
+        "camara_y_accion": "Pasar la página para cambiar el alcance.",
+        "efecto_y_pausa": "Sombra en el lomo y ruido breve de papel."
+      },
+      {
+        "plano": "Una estimación revisable",
+        "camara_y_accion": "Acercarse a la página derecha y detenerse.",
+        "efecto_y_pausa": "Sostener las tres cautelas juntas."
+      }
+    ]
+  },
+  {
+    "id": "5C",
+    "lamina": "lamina-05.svg",
+    "cambio": "Del caso de deuda al método de medición.",
+    "enlace": "Episodio 003 · fuentes, decisiones y límites.",
+    "piezas": [
+      "mesa-del-historiador",
+      "contabilidad-estatal",
+      "documentos-judiciales",
+      "correspondencia-diplomatica",
+      "pregunta-003",
+      "indice-serie"
+    ],
+    "recursos_reutilizados": [],
+    "encuadres": [
+      {
+        "plano": "Huellas que se pueden contrastar",
+        "camara_y_accion": "Relacionar las fuentes sin cerrar un registro completo.",
+        "efecto_y_pausa": "Trazos finos y cámara quieta."
+      },
+      {
+        "plano": "¿Se puede medir la corrupción?",
+        "camara_y_accion": "Fundir la mesa hacia la pizarra.",
+        "efecto_y_pausa": "Dejar entrar la pregunta completa y sostenerla."
+      },
+      {
+        "plano": "El índice enfoca el episodio 003",
+        "camara_y_accion": "Abrir al índice y dejar quieta la cámara.",
+        "efecto_y_pausa": "Entrar el tema del canal al terminar la frase."
+      }
+    ]
+  }
+]

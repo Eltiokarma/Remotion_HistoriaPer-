@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De los recursos públicos a los informes</title>
+<style>
+  :root { color-scheme: dark; background: #202920; color: #f0e6ca; font: 16px system-ui; }
+  body { margin: 0 auto; max-width: 1120px; padding: 18px; }
+  h1 { font: 400 clamp(24px,4vw,35px) Georgia,serif; margin: 0 0 12px; }
+  svg { display: block; width: 100%; height: auto; border: 1px solid #756349; overflow: hidden; }
+  .controls { display: flex; align-items: center; gap: 12px; padding-top: 12px; }
+  button { font: inherit; background: #ddc291; color: #202920; border: 0; border-radius: 4px; padding: 9px 14px; }
+  input { flex: 1; min-width: 55px; accent-color: #ddc291; }
+  output { font-variant-numeric: tabular-nums; }
+</style>
+<body>
+<h1>El recorrido completo</h1>
+{{ARTE}}
+<div class="controls">
+  <button id="play" type="button">Reproducir</button>
+  <input id="time" aria-label="Tiempo del recorrido" type="range" min="0" step=".01">
+  <output id="seconds" for="time"></output>
+</div>
+<script>
+  const play=document.getElementById('play');
+  const time=document.getElementById('time');
+  const seconds=document.getElementById('seconds');
+  const nodes=new Map([...document.querySelectorAll('[data-fx]')].map(el => [el.dataset.fx,el]));
+  const starts=[0,1.05,2.05,3.11,4.20];
+  const centers=[140,390,640,890,1140];
+  const duration=7.2;
+  const clamp=(x,min,max) => Math.max(min,Math.min(max,x));
+  const mix=(a,b,p) => a+(b-a)*p;
+  function ease(t,a,b) {
+    const p=clamp((t-a)/(b-a),0,1);
+    return p*p*(3-2*p);
+  }
+  function render(t) {
+    const pan=ease(t,.60,4.68);
+    const opening=ease(t,4.68,5.84);
+    const zoom=mix(1.44,1,opening);
+    const center=mix(mix(450,834,pan),640,opening);
+    nodes.get('camera').setAttribute('transform',`translate(640 375) scale(${zoom}) translate(${-center} -375)`);
+    let light=centers[0];
+    for (let i=0;i<starts.length;i++) {
+      const arrive=i===0?1:ease(t,starts[i]-.31,starts[i]+.20);
+      if (i) {
+        light=mix(light,centers[i],arrive);
+        nodes.get('link-'+i).setAttribute('opacity',.84*arrive);
+      }
+      nodes.get('node-'+i).setAttribute('opacity',mix(.20,1,arrive));
+    }
+    const glow=nodes.get('focus');
+    glow.setAttribute('transform',`translate(${light-632} 0)`);
+    glow.setAttribute('opacity',.78*(1-opening));
+    time.value=t;
+    seconds.value=t.toFixed(1)+' s';
+    document.body.dataset.ready='true';
+  }
+
+  time.max=duration;
+  let position=clamp(Number(new URLSearchParams(location.search).get('t'))||0,0,duration);
+  let frame=0;
+  function pause() {
+    cancelAnimationFrame(frame);
+    frame=0;
+    play.textContent=position>=duration?'Repetir':'Reproducir';
+  }
+  play.addEventListener('click',() => {
+    if (frame) { pause(); return; }
+    if (position>=duration) position=0;
+    const start=performance.now()-position*1000;
+    function step(now) {
+      position=Math.min(duration,(now-start)/1000);
+      render(position);
+      if (position<duration) frame=requestAnimationFrame(step);
+      else pause();
+    }
+    play.textContent='Pausar';
+    frame=requestAnimationFrame(step);
+  });
+  time.addEventListener('input',() => { position=Number(time.value); pause(); render(position); });
+  render(position);
+</script>
+</body>
+</html>

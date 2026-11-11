@@ -1,0 +1,231 @@
+[
+  {
+    "id": "1A",
+    "lamina": "lamina-01.svg",
+    "cambio": "De ubicar el país a reconocer el lugar de donde sale el guano.",
+    "enlace": "Entrar al depósito desde los estratos y las aves del mismo grabado.",
+    "piezas_nuevas": [
+      "cielo-pisco",
+      "mar-pacifico",
+      "reflejos-mar"
+    ],
+    "encuadres": [
+      {
+        "plano": "El país",
+        "camara_y_accion": "Dejar el punto de Pisco quieto para orientar.",
+        "efecto_y_pausa": "Entra el mar antes de la voz."
+      },
+      {
+        "plano": "Acercamiento a Pisco",
+        "camara_y_accion": "Acercamiento pesado con Pisco como ancla.",
+        "efecto_y_pausa": "Mostrar Chincha al oeste-noroeste."
+      },
+      {
+        "plano": "Pisco en 2D",
+        "camara_y_accion": "Igualar ancla al pasar de mapa a ciudad lateral.",
+        "efecto_y_pausa": "Pausa con las fachadas y la costa a la vista."
+      },
+      {
+        "plano": "Sobre el mar",
+        "camara_y_accion": "La ciudad sale a la derecha y Chincha entra a la izquierda.",
+        "efecto_y_pausa": "Desplazar dunas más lento. Mar con fase continua."
+      },
+      {
+        "plano": "Llegada a Chincha",
+        "camara_y_accion": "Asentar el encuadre en el grabado y sostenerlo.",
+        "efecto_y_pausa": "Aves, espuma y destellos discretos en el agua."
+      }
+    ]
+  },
+  {
+    "id": "1B.1",
+    "lamina": "lamina-02.svg",
+    "cambio": "De ver el depósito a entender qué compraba el mercado.",
+    "enlace": "Volver al saco lleno en las islas para seguir su carga.",
+    "piezas_nuevas": [
+      "frente-deposito",
+      "pala-llena",
+      "mano-y-manga-pala",
+      "saco-abierto",
+      "saco-cerrado",
+      "granos-vertido"
+    ],
+    "encuadres": [
+      {
+        "plano": "Cortar el depósito",
+        "camara_y_accion": "Fijar cámara cuando la pala entra en el material.",
+        "efecto_y_pausa": "Polvo escaso y sonido de raspado al contacto."
+      },
+      {
+        "plano": "Llenar el saco",
+        "camara_y_accion": "Seguir el arco de la pala hasta la boca abierta.",
+        "efecto_y_pausa": "Granos con semilla. Caen una vez y se asientan."
+      },
+      {
+        "plano": "El uso agrícola",
+        "camara_y_accion": "Abrir a los surcos por la forma del saco apoyado.",
+        "efecto_y_pausa": "Luz suave sobre el terreno. Dejar respirar el plano."
+      }
+    ]
+  },
+  {
+    "id": "1B.2",
+    "lamina": "lamina-03.svg",
+    "cambio": "De una carga apoyada al esfuerzo de llevarla.",
+    "enlace": "Entrar a la pasarela con el mismo saco. La voz sitúa las formas de trabajo.",
+    "piezas_nuevas": [
+      "frente-deposito",
+      "saco-cerrado"
+    ],
+    "encuadres": [
+      {
+        "plano": "Preparar el agarre",
+        "camara_y_accion": "Bajar rodillas y acercar las manos con cámara fija.",
+        "efecto_y_pausa": "Mantener el saco apoyado y la sombra bajo los pies."
+      },
+      {
+        "plano": "Sujetar ambos lados",
+        "camara_y_accion": "Cerrar los dos agarres antes de mover el saco.",
+        "efecto_y_pausa": "Roce breve de tela. La carga conserva forma y volumen."
+      },
+      {
+        "plano": "Contacto en los dos bordes",
+        "camara_y_accion": "Acercar con las manos quietas sobre el saco.",
+        "efecto_y_pausa": "Leer pulgares, costura y presión sobre la tela."
+      },
+      {
+        "plano": "Cargar y dar el paso",
+        "camara_y_accion": "Levantar con peso y dejar que la pierna tome apoyo.",
+        "efecto_y_pausa": "El soporte queda en su sitio. Sombra pegada al pie."
+      }
+    ]
+  },
+  {
+    "id": "1C.1",
+    "lamina": "lamina-04.svg",
+    "cambio": "De seguir un cargamento a entender hacia dónde se vendía.",
+    "enlace": "El saco y el mercado conducen al libro de la casa consignataria.",
+    "piezas_nuevas": [
+      "mar-pacifico",
+      "reflejos-mar",
+      "saco-cerrado",
+      "muelle-pasarela",
+      "apoyo-cubierta",
+      "cubierta",
+      "cuerda-cubierta"
+    ],
+    "encuadres": [
+      {
+        "plano": "Llegar a la pasarela",
+        "camara_y_accion": "Seguir el saco hacia la borda. Estabilizar al pisar.",
+        "efecto_y_pausa": "El mar sigue vivo detrás del casco."
+      },
+      {
+        "plano": "Recibir en cubierta",
+        "camara_y_accion": "Cámara fija durante la recepción. Mantener el agarre.",
+        "efecto_y_pausa": "Heredar balanceo cuando el pie ya está a bordo."
+      },
+      {
+        "plano": "Apoyar el saco",
+        "camara_y_accion": "Detalle del saco asentado sobre el apoyo de cubierta.",
+        "efecto_y_pausa": "Roce al contacto. La cuerda queda en segundo plano."
+      },
+      {
+        "plano": "Abrir el esquema comercial",
+        "camara_y_accion": "Abrir del barco a Chincha, producto y mercado.",
+        "efecto_y_pausa": "Trazar la relación comercial y sostener el destino."
+      }
+    ]
+  },
+  {
+    "id": "1C.2",
+    "lamina": "lamina-05.svg",
+    "cambio": "De la venta comercial a los recursos públicos.",
+    "enlace": "Seguir el ingreso del Estado al edificio y las obligaciones pendientes.",
+    "piezas_nuevas": [
+      "libro-contable",
+      "partida-venta",
+      "partida-gastos-comision",
+      "partida-ingreso-estado"
+    ],
+    "encuadres": [
+      {
+        "plano": "Registrar la venta",
+        "camara_y_accion": "Abrir el libro con peso y detener la cámara.",
+        "efecto_y_pausa": "Sombra en el lomo. Luz sobre la venta."
+      },
+      {
+        "plano": "Separar gastos y comisión",
+        "camara_y_accion": "Conservar página y venta. Revelar descuentos por turno.",
+        "efecto_y_pausa": "Apagar la venta al trasladar el foco. Roce de hoja."
+      },
+      {
+        "plano": "Identificar el ingreso del Estado",
+        "camara_y_accion": "Revelar la partida completa al llegar a la consecuencia.",
+        "efecto_y_pausa": "Sostener el ingreso antes del paneo al Estado."
+      }
+    ]
+  },
+  {
+    "id": "1D.1",
+    "lamina": "lamina-06.svg",
+    "cambio": "De las entradas del Estado a las personas que esperaban cobrar.",
+    "enlace": "Apartar los ejemplos y seguir el folio del préstamo.",
+    "piezas_nuevas": [
+      "documento-prestamo",
+      "documento-bienes",
+      "cesta-cosechas",
+      "tapa-carpeta",
+      "folio-reclamo"
+    ],
+    "encuadres": [
+      {
+        "plano": "Los ingresos del Estado",
+        "camara_y_accion": "El Estado ancla el encuadre. Revelar las tres fuentes.",
+        "efecto_y_pausa": "Un solo recorrido iluminado por vez."
+      },
+      {
+        "plano": "Un préstamo",
+        "camara_y_accion": "Abrir el primer ejemplo en la mesa del comerciante.",
+        "efecto_y_pausa": "Foco sobre el papel del préstamo. Monedas como utilería."
+      },
+      {
+        "plano": "Bienes para sostener tropas",
+        "camara_y_accion": "Presentar el segundo ejemplo en su propio encuadre.",
+        "efecto_y_pausa": "Pasar de los bienes al reclamo. Sostener la lectura."
+      },
+      {
+        "plano": "De las obligaciones al expediente",
+        "camara_y_accion": "Reunir las hojas y seguir la pestaña roja.",
+        "efecto_y_pausa": "Sombra entre folios. Roce al separar el expediente."
+      }
+    ]
+  },
+  {
+    "id": "1D.2",
+    "lamina": "lamina-07.svg",
+    "cambio": "De una carpeta entre muchas al reclamo que vamos a seguir.",
+    "enlace": "Mantener este folio y su posición como entrada a 2A.",
+    "piezas_nuevas": [
+      "tapa-carpeta",
+      "folio-reclamo"
+    ],
+    "encuadres": [
+      {
+        "plano": "Abrir la carpeta",
+        "camara_y_accion": "Acercarse al folio de pestaña roja.",
+        "efecto_y_pausa": "Separar sombra de tapa y papel."
+      },
+      {
+        "plano": "Extraer el folio",
+        "camara_y_accion": "La mano conserva el agarre al deslizarlo.",
+        "efecto_y_pausa": "Roce de papel y asentamiento breve."
+      },
+      {
+        "plano": "Reclamo por revisar",
+        "camara_y_accion": "Encuadre fijo. Nombre del trámite y campos completos.",
+        "efecto_y_pausa": "Sostener Por revisar. El ambiente del despacho entra antes del enlace."
+      }
+    ]
+  }
+]

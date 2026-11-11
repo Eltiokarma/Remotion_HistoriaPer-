@@ -1,0 +1,191 @@
+[
+  {
+    "id": "total-1852",
+    "archivo": "capas/total-1852.svg",
+    "lienzo": [
+      520,
+      246
+    ],
+    "uso": "Mostrar después de 1851."
+  },
+  {
+    "id": "bono-externo",
+    "archivo": "capas/bono-externo.svg",
+    "lienzo": [
+      596,
+      361
+    ],
+    "uso": "Mantener al lado del vale interno durante el canje."
+  },
+  {
+    "id": "carta-12-agosto",
+    "archivo": "capas/carta-12-agosto.svg",
+    "lienzo": [
+      473,
+      322
+    ],
+    "uso": "Primera fecha de publicación. Resumen editorial."
+  },
+  {
+    "id": "carta-16-agosto",
+    "archivo": "capas/carta-16-agosto.svg",
+    "lienzo": [
+      473,
+      322
+    ],
+    "uso": "Segunda fecha de publicación. Resumen editorial."
+  },
+  {
+    "id": "doble-funcion-elias",
+    "archivo": "capas/doble-funcion-elias.svg",
+    "lienzo": [
+      523,
+      202
+    ],
+    "uso": "Recuperar la identidad de la escena 3."
+  },
+  {
+    "id": "archivo-junta",
+    "archivo": "capas/archivo-junta.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Reencuadrar de los estantes a los cajones."
+  },
+  {
+    "id": "cambio-gobierno",
+    "archivo": "capas/cambio-gobierno.svg",
+    "lienzo": [
+      520,
+      194
+    ],
+    "uso": "Mantener el edificio y el título mientras cambia la ficha."
+  },
+  {
+    "id": "junta-fiscal",
+    "archivo": "capas/junta-fiscal.svg",
+    "lienzo": [
+      624,
+      174
+    ],
+    "uso": "Presentar antes de abrir los legajos."
+  },
+  {
+    "id": "antecedentes",
+    "archivo": "capas/antecedentes.svg",
+    "lienzo": [
+      389,
+      280
+    ],
+    "uso": "Iluminar cuando se nombre esta etapa del expediente."
+  },
+  {
+    "id": "aprobacion",
+    "archivo": "capas/aprobacion.svg",
+    "lienzo": [
+      389,
+      280
+    ],
+    "uso": "Iluminar cuando se nombre esta etapa del expediente."
+  },
+  {
+    "id": "emision",
+    "archivo": "capas/emision.svg",
+    "lienzo": [
+      389,
+      280
+    ],
+    "uso": "Iluminar cuando se nombre esta etapa del expediente."
+  },
+  {
+    "id": "expedientes-observados",
+    "archivo": "capas/expedientes-observados.svg",
+    "lienzo": [
+      518,
+      243
+    ],
+    "uso": "Revelar recuento y calificación juntos."
+  },
+  {
+    "id": "monto-observado",
+    "archivo": "capas/monto-observado.svg",
+    "lienzo": [
+      518,
+      243
+    ],
+    "uso": "Mantener al lado del recuento."
+  },
+  {
+    "id": "expedientes-robados",
+    "archivo": "capas/expedientes-robados.svg",
+    "lienzo": [
+      552,
+      244
+    ],
+    "uso": "Mantener separados los cuatro expedientes robados."
+  },
+  {
+    "id": "argumento-tenedores",
+    "archivo": "capas/argumento-tenedores.svg",
+    "lienzo": [
+      540,
+      230
+    ],
+    "uso": "Iluminar al presentar la posición de los tenedores."
+  },
+  {
+    "id": "argumento-junta",
+    "archivo": "capas/argumento-junta.svg",
+    "lienzo": [
+      540,
+      230
+    ],
+    "uso": "Iluminar al presentar la posición de la junta."
+  },
+  {
+    "id": "examen-origen",
+    "archivo": "capas/examen-origen.svg",
+    "lienzo": [
+      389,
+      280
+    ],
+    "uso": "Permanece visible mientras el título se reactiva."
+  },
+  {
+    "id": "informes-junta",
+    "archivo": "capas/informes-junta.svg",
+    "lienzo": [
+      533,
+      368
+    ],
+    "uso": "Conservar como puente a las fuentes del historiador."
+  },
+  {
+    "id": "tenedor-anterior-agarre",
+    "archivo": "capas/tenedor-anterior-agarre.svg",
+    "lienzo": [
+      633,
+      337
+    ],
+    "uso": "Ancla (579,93). Usar la base debajo del vale y el pulgar encima. Reflejar para el lado derecho."
+  },
+  {
+    "id": "nuevo-tenedor-apertura",
+    "archivo": "capas/nuevo-tenedor-apertura.svg",
+    "lienzo": [
+      633,
+      337
+    ],
+    "uso": "Ancla (579,93). Usar la base debajo del vale y el pulgar encima. Reflejar para el lado derecho."
+  },
+  {
+    "id": "nuevo-tenedor-agarre",
+    "archivo": "capas/nuevo-tenedor-agarre.svg",
+    "lienzo": [
+      633,
+      337
+    ],
+    "uso": "Ancla (579,93). Usar la base debajo del vale y el pulgar encima. Reflejar para el lado derecho."
+  }
+]

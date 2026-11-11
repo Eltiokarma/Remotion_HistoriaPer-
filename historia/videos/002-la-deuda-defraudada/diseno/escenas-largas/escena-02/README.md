@@ -1,5 +1,7 @@
 # 2. El recorrido de un reclamo
 
+La [revisión ilustrada de detalle](../../storyboard-visual/revision-reclamo/README.md) contiene las seis láminas actualizadas, los 24 encuadres, la prueba de movimiento de 2D y las piezas separadas para Remotion.
+
 Una escena larga, con 6 momentos, desarrollada en 6 láminas y 19 estados dibujados. Las láminas dividen la revisión; no fijan cortes ni duraciones. Borrador pendiente de Gerson.
 
 - [PDF completo](escena-02.pdf)

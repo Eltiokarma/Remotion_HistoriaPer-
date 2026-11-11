@@ -1,0 +1,288 @@
+[
+  {
+    "id": "cielo-pisco",
+    "archivo": "capas/cielo-pisco.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "Fondo fijo. Desplazamiento menor que la costa."
+  },
+  {
+    "id": "mar-pacifico",
+    "archivo": "capas/mar-pacifico.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "Plano fijo desde el horizonte."
+  },
+  {
+    "id": "reflejos-mar",
+    "archivo": "capas/reflejos-mar.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "Fase continua en Pisco y travesía."
+  },
+  {
+    "id": "frente-deposito",
+    "archivo": "capas/frente-deposito.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "Superficie de extracción en primer plano."
+  },
+  {
+    "id": "pala-llena",
+    "archivo": "capas/pala-llena.svg",
+    "lienzo": [
+      572,
+      148
+    ],
+    "origen_del_dibujo": [
+      131,
+      0
+    ],
+    "uso": "Origen de giro [410,64] en el empalme del mango."
+  },
+  {
+    "id": "mano-y-manga-pala",
+    "archivo": "capas/mano-y-manga-pala.svg",
+    "lienzo": [
+      548,
+      234
+    ],
+    "origen_del_dibujo": [
+      494,
+      156
+    ],
+    "uso": "La pinza se coloca sobre el mango y lo acompaña."
+  },
+  {
+    "id": "saco-abierto",
+    "archivo": "capas/saco-abierto.svg",
+    "lienzo": [
+      238,
+      317
+    ],
+    "origen_del_dibujo": [
+      8,
+      8
+    ],
+    "uso": "Boca [120,50]. Base [120,300]."
+  },
+  {
+    "id": "saco-cerrado",
+    "archivo": "capas/saco-cerrado.svg",
+    "lienzo": [
+      238,
+      317
+    ],
+    "origen_del_dibujo": [
+      8,
+      8
+    ],
+    "uso": "Base [120,300]. Cambiar a pose de carga con el mismo saco testigo."
+  },
+  {
+    "id": "granos-vertido",
+    "archivo": "capas/granos-vertido.svg",
+    "lienzo": [
+      94,
+      131
+    ],
+    "origen_del_dibujo": [
+      14,
+      0
+    ],
+    "uso": "Emitir una vez desde el filo de la pala hacia la boca."
+  },
+  {
+    "id": "apoyo-cubierta",
+    "archivo": "capas/apoyo-cubierta.svg",
+    "lienzo": [
+      316,
+      115
+    ],
+    "origen_del_dibujo": [
+      5,
+      6
+    ],
+    "uso": "Fijo en el sistema del barco. Contacto del saco en el canto superior."
+  },
+  {
+    "id": "muelle-pasarela",
+    "archivo": "capas/muelle-pasarela.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "La pasarela une la orilla con el borde de cubierta en la ilustración."
+  },
+  {
+    "id": "cubierta",
+    "archivo": "capas/cubierta.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "Vincular a casco y tripulación una vez a bordo."
+  },
+  {
+    "id": "cuerda-cubierta",
+    "archivo": "capas/cuerda-cubierta.svg",
+    "lienzo": [
+      280,
+      146
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "Pieza fija de cubierta."
+  },
+  {
+    "id": "libro-contable",
+    "archivo": "capas/libro-contable.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "Cubierta, páginas, lomo y rótulos en grupos separados."
+  },
+  {
+    "id": "partida-venta",
+    "archivo": "capas/partida-venta.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "Primera revelación del libro."
+  },
+  {
+    "id": "partida-gastos-comision",
+    "archivo": "capas/partida-gastos-comision.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "Segunda revelación del libro."
+  },
+  {
+    "id": "partida-ingreso-estado",
+    "archivo": "capas/partida-ingreso-estado.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "origen_del_dibujo": [
+      0,
+      0
+    ],
+    "uso": "Última revelación. Ancla del paneo al Estado."
+  },
+  {
+    "id": "documento-prestamo",
+    "archivo": "capas/documento-prestamo.svg",
+    "lienzo": [
+      568,
+      287
+    ],
+    "origen_del_dibujo": [
+      5,
+      8
+    ],
+    "uso": "Ejemplo editorial sin importe."
+  },
+  {
+    "id": "documento-bienes",
+    "archivo": "capas/documento-bienes.svg",
+    "lienzo": [
+      568,
+      287
+    ],
+    "origen_del_dibujo": [
+      5,
+      8
+    ],
+    "uso": "Ejemplo editorial de bienes utilizados para tropas."
+  },
+  {
+    "id": "cesta-cosechas",
+    "archivo": "capas/cesta-cosechas.svg",
+    "lienzo": [
+      292,
+      322
+    ],
+    "origen_del_dibujo": [
+      5,
+      30
+    ],
+    "uso": "Objeto del ejemplo de bienes. Foco previo al papel."
+  },
+  {
+    "id": "tapa-carpeta",
+    "archivo": "capas/tapa-carpeta.svg",
+    "lienzo": [
+      692,
+      574
+    ],
+    "origen_del_dibujo": [
+      8,
+      8
+    ],
+    "uso": "Pieza fija mientras sale el folio."
+  },
+  {
+    "id": "folio-reclamo",
+    "archivo": "capas/folio-reclamo.svg",
+    "lienzo": [
+      659,
+      568
+    ],
+    "origen_del_dibujo": [
+      5,
+      5
+    ],
+    "uso": "Sostener la pestaña y el campo Por revisar al enlazar a 2A."
+  }
+]
