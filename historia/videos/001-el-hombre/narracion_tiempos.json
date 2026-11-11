@@ -301,175 +301,180 @@
   ]
  },
  "s05": {
-  "duracion": 89.0,
+  "duracion": 93.519,
   "frases": [
    {
     "texto": "A comienzos de los ochenta hace algo poco común.",
     "desde": 0.3,
-    "hasta": 2.84,
+    "hasta": 3.06,
     "cubre": 1.0
    },
    {
     "texto": "Buena parte de los historiadores peruanos miraba a París.",
-    "desde": 3.5,
-    "hasta": 6.38,
+    "desde": 3.72,
+    "hasta": 6.42,
     "cubre": 1.0
    },
    {
     "texto": "Era la ciudad de Braudel, el de la larga duración.",
-    "desde": 7.06,
+    "desde": 7.04,
     "hasta": 9.7,
     "cubre": 1.0
    },
    {
     "texto": "Ahí se habían formado sus propios profesores.",
-    "desde": 10.52,
-    "hasta": 12.78,
+    "desde": 10.42,
+    "hasta": 12.7,
     "cubre": 1.0
    },
    {
     "texto": "Él se va a Nueva York, a la Universidad de Columbia.",
-    "desde": 13.7,
-    "hasta": 16.24,
+    "desde": 13.4,
+    "hasta": 15.86,
     "cubre": 1.0
    },
    {
     "texto": "Allí, el historiador Herbert Klein se fija en él y le ofrece una beca.",
-    "desde": 18.49,
-    "hasta": 21.97,
-    "cubre": 1.0
+    "desde": 18.11,
+    "hasta": 21.45,
+    "cubre": 0.9285714285714286
    },
    {
     "texto": "Y aprende historia cuantitativa: pensar el pasado con números, no solo con discursos.",
-    "desde": 23.11,
-    "hasta": 27.75,
+    "desde": 22.41,
+    "hasta": 27.23,
     "cubre": 1.0
    },
    {
     "texto": "Una de sus herramientas se llama regresión.",
-    "desde": 29.2,
-    "hasta": 31.18,
+    "desde": 28.68,
+    "hasta": 30.68,
     "cubre": 1.0
    },
    {
     "texto": "Imagina muchos puntos desordenados: cada uno, un dato.",
-    "desde": 32.12,
-    "hasta": 35.6,
+    "desde": 31.42,
+    "hasta": 34.88,
     "cubre": 1.0
    },
    {
     "texto": "A simple vista, solo ruido.",
-    "desde": 36.28,
-    "hasta": 37.94,
+    "desde": 35.48,
+    "hasta": 37.0,
     "cubre": 1.0
    },
    {
     "texto": "La regresión busca la línea que mejor pasa entre todos.",
-    "desde": 39.02,
-    "hasta": 42.04,
+    "desde": 37.86,
+    "hasta": 40.7,
     "cubre": 1.0
    },
    {
     "texto": "Si hay una tendencia, ayuda a verla.",
-    "desde": 42.66,
-    "hasta": 44.62,
+    "desde": 41.26,
+    "hasta": 43.2,
     "cubre": 1.0
    },
    {
     "texto": "Y dice cuánto pesa.",
-    "desde": 45.44,
-    "hasta": 46.78,
+    "desde": 43.9,
+    "hasta": 45.08,
     "cubre": 1.0
    },
    {
     "texto": "Aprendió a trabajar con cifras y a contrastarlas con documentos.",
-    "desde": 48.73,
-    "hasta": 51.87,
+    "desde": 47.03,
+    "hasta": 50.15,
     "cubre": 1.0
    },
    {
     "texto": "Años después, llevaría esa disciplina al estudio de la corrupción en el Perú.",
-    "desde": 52.59,
-    "hasta": 56.07,
+    "desde": 50.87,
+    "hasta": 54.27,
     "cubre": 1.0
    },
    {
     "texto": "De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad.",
-    "desde": 58.52,
-    "hasta": 64.4,
+    "desde": 56.85,
+    "hasta": 62.47,
     "cubre": 1.0
    },
    {
     "texto": "Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la historia financiera del Perú.",
-    "desde": 66.35,
-    "hasta": 71.81,
+    "desde": 64.42,
+    "hasta": 69.679,
     "cubre": 1.0
    },
    {
     "texto": "Y sus ideas también se mueven.",
-    "desde": 73.26,
-    "hasta": 74.94,
+    "desde": 71.129,
+    "hasta": 72.509,
     "cubre": 1.0
    },
    {
     "texto": "De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades.",
-    "desde": 75.56,
-    "hasta": 82.04,
-    "cubre": 1.0
+    "desde": 73.229,
+    "hasta": 79.309,
+    "cubre": 0.9444444444444444
    },
    {
     "texto": "Cambió de ideas.",
-    "desde": 83.49,
-    "hasta": 84.41,
+    "desde": 80.759,
+    "hasta": 81.559,
     "cubre": 1.0
    },
    {
     "texto": "Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión.",
-    "desde": 85.29,
-    "hasta": 88.81,
+    "desde": 82.339,
+    "hasta": 85.999,
+    "cubre": 1.0
+   },
+   {
+    "texto": "Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro.",
+    "desde": 87.999,
+    "hasta": 93.339,
     "cubre": 1.0
    }
   ]
  },
  "s06": {
-  "duracion": 30.35,
+  "duracion": 27.54,
   "frases": [
    {
-    "texto": "Pero su primer caso lo había encontrado en Lima, en mil novecientos ochenta, poco antes de irse a Nueva York.",
+    "texto": "Su primer caso lo encontró todavía en Lima.",
     "desde": 0.3,
-    "hasta": 6.02,
+    "hasta": 2.5,
     "cubre": 1.0
    },
    {
     "texto": "Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve.",
-    "desde": 7.18,
-    "hasta": 14.56,
+    "desde": 3.42,
+    "hasta": 10.36,
     "cubre": 0.9166666666666666
    },
    {
     "texto": "Ahí estaba el guano.",
-    "desde": 16.04,
-    "hasta": 17.0,
+    "desde": 11.81,
+    "hasta": 12.67,
     "cubre": 1.0
    },
    {
     "texto": "Y una deuda que el Estado decidió pagar con esa plata, en mil ochocientos cincuenta.",
-    "desde": 17.82,
-    "hasta": 22.38,
+    "desde": 13.33,
+    "hasta": 17.63,
     "cubre": 1.0
    },
    {
-    "texto": "Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado.",
-    "desde": 23.44,
-    "hasta": 27.54,
+    "texto": "En su tesis de mil novecientos ochenta mostró que se había inflado el valor de la deuda para enriquecerse a costa del Estado.",
+    "desde": 18.73,
+    "hasta": 24.45,
     "cubre": 1.0
    },
    {
     "texto": "¿Adónde fue a parar esa plata?",
-    "desde": 28.57,
-    "hasta": 30.12,
-    "cubre": 0.8333333333333334,
-    "nota": "inicio fijado a mano: la transcripción le asigna a «¿A» la pausa previa; «dónde» empieza en 28,84"
+    "desde": 25.9,
+    "hasta": 27.35,
+    "cubre": 1.0
    }
   ]
  },

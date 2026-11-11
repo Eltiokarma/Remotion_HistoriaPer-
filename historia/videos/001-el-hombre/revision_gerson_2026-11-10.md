@@ -92,3 +92,20 @@ los enlaces de Suno (`fuentes.md`).
   (medido: de −35 a −24 dB).
 - Un control de s06 mostró un pico de +1,5 dBFS: las monedas (con la flecha) sobre la voz y la
   música. Monedas −2 dB y **limitador final** (−1 dBFS) en `render.yml` y en las muestras.
+
+## Orden cronológico: el guano antes del viaje (2026-11-11)
+
+> «Creo que vamos a tener que presentar el tema de Isla del Guano antes de su decisión de viajar a
+> Nueva York. ¿Tenemos información para respaldar el viaje luego de encontrar el tema del guano?»
+
+- **Lo que respalda el libro:** el orden (Denegri → tesis de 1980 → beca de Columbia, 1981 →
+  *La deuda defraudada*, 1987; prólogo, pp. 16–19). **No respalda la causa:** el libro no dice que se
+  fue por el guano; las razones que da son la beca de Klein y elegir Estados Unidos cuando se iba a
+  París. El guion dice «después», nunca «por eso».
+- **Aplicado:** el primer caso (`s06`) va ahora antes del viaje (`s05`). Textos nuevos: «Su primer
+  caso lo encontró todavía en Lima.» · «En su tesis de 1980 mostró que se había inflado el valor de
+  la deuda…» · y al cerrar `s05`, «Pero no se olvidó de aquella tesis sobre la deuda, que en 1987 se
+  convertiría en un libro.» (redacción de Gerson), al que responde la tarjeta del próximo episodio.
+- `s05` se genera en dos tramos, partidos en el respiro de 2,45 s después de «…la corrupción en el
+  Perú»: con la frase nueva, ElevenLabs devolvía 502 a la toma entera.
+- Curva de intensidad: 4 3 1 3 3 **5** 2 1 (el pico en el guano, el respiro en el viaje). 5:39.

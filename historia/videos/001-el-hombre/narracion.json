@@ -11,6 +11,9 @@
  "cortes": {
   "s01": {
    "7": 6.65
+  },
+  "s05": {
+   "14": 2.45
   }
  },
  "frases": {
@@ -91,14 +94,15 @@
    "[thoughtful] Y sus ideas también se mueven.",
    "[calm] De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades.",
    "[plain] Cambió de ideas.",
-   "[respectful] [thoughtful] Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión."
+   "[respectful] [thoughtful] Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión.",
+   "[warm] [resolute] Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro."
   ],
   "s06": [
-   "[intrigued] Pero su primer caso lo había encontrado en Lima, en mil novecientos ochenta, poco antes de irse a Nueva York.",
+   "[intrigued] Su primer caso lo encontró todavía en Lima.",
    "[storytelling] Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve.",
    "[serious] Ahí estaba el guano.",
    "[serious] Y una deuda que el Estado decidió pagar con esa plata, en mil ochocientos cincuenta.",
-   "[grave] [low voice] Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado.",
+   "[grave] [low voice] En su tesis de mil novecientos ochenta mostró que se había inflado el valor de la deuda para enriquecerse a costa del Estado.",
    "[quietly] [questioning] ¿Adónde fue a parar esa plata?"
   ],
   "s07": [
@@ -110,5 +114,6 @@
    "0": -3
   }
  },
- "nota_ganancia": "Ajustes a mano, en dB, después de la nivelación. s04·0: «Casi con seguridad…» entra después del silencio en que termina s03 y sonaba fuerte (Gerson, 2026-11-11, minuto 2:25)."
+ "nota_ganancia": "Ajustes a mano, en dB, después de la nivelación. s04·0: «Casi con seguridad…» entra después del silencio en que termina s03 y sonaba fuerte (Gerson, 2026-11-11, minuto 2:25).",
+ "nota_cortes": "s05 se parte en el respiro después de «…la corrupción en el Perú» (2026-11-11): con la frase nueva, ElevenLabs devolvía 502 a la toma entera."
 }

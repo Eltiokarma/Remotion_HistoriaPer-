@@ -13,11 +13,11 @@ Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **I
 | s02 | Presentacion | 1:21.0 | 25 s | 76 % | 11 s | 148 | 10.0 | 23 | 1 | 5 (12.3/min) | 7 (17.3/min) | 🟡 12.3 datos/min |
 | s03 | TiempoLargo | 1:46.3 | 38 s | 73 % | 9 s | 141 | 7.9 | 19 | 4 | 4 (6.5/min) | 10 (16.2/min) | 🟡 6.5 datos/min |
 | s04 | TiempoLargo | 2:24.5 | 53 s | 67 % | 10 s | 134 | 8.8 | 21 | 8 | 2 (2.3/min) | 11 (12.8/min) | 🟢 |
-| s05 | AprenderAMedir | 3:17.1 | 90 s | 72 % | 16 s | 141 | 10.0 | 18 | 9 | 9 (6.1/min) | 29 (19.6/min) | 🟡 6.1 datos/min |
-| s06 | MecanismoDeuda | 4:47.1 | 34 s | 72 % | 7 s | 170 | 14.3 | 24 | 4 | 6 (11.9/min) | 11 (21.7/min) | 🟡 11.9 datos/min |
-| s07 | Cierre | 5:21.0 | 17 s | 16 % | 3 s | 53 | 5.0 | 5 | 0 | 1 (10.6/min) | 3 (31.9/min) | 🟡 10.6 datos/min |
+| s06 | MecanismoDeuda | 3:17.1 | 31 s | 69 % | 10 s | 174 | 13.3 | 24 | 3 | 10 (21.8/min) | 11 (24.0/min) | 🟡 21.8 datos/min |
+| s05 | AprenderAMedir | 3:48.1 | 95 s | 73 % | 16 s | 148 | 10.5 | 22 | 8 | 5 (3.2/min) | 29 (18.6/min) | 🟢 |
+| s07 | Cierre | 5:22.7 | 17 s | 16 % | 3 s | 53 | 5.0 | 5 | 0 | 1 (10.6/min) | 3 (31.9/min) | 🟡 10.6 datos/min |
 
-Total: 5:37.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
+Total: 5:39.4. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
 
 
 ## s00 · gancho — `Gancho` · 0:00.0–0:33.0 (33.0 s)
@@ -198,109 +198,110 @@ Total: 5:37.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 3:09.8 | Hay cosas que no cambian aunque cambien los gobiernos. |  |  |
 | 3:14.2 | Esa mirada larga es la de esta serie. |  |  |
 
-## s05 · método — `AprenderAMedir` · 3:17.1–4:47.1 (90.1 s)
+## s06 · el primer caso — `MecanismoDeuda` · 3:17.1–3:48.1 (31.1 s)
 
-- **Cambio:** de un historiador de discursos a uno que mide, y que cambió de ideas
-- **Intención:** el viaje a Nueva York; la regresión explicada en tres tiempos (ruido, la recta que busca, cuánto pesa); la claridad en una balanza; la carrera se lee en el estante, no se narra
-- **Intensidad:** 2 · **Música:** presente (Suno F: piano; el clarinete entra con «cuánto pesa»)
-- **Semáforo para enseñar:** 🟡 6.1 datos/min
-- **Métricas:** voz el 72 % del tiempo · tramo más largo sin pausa de párrafo: 15.9 s · 209 palabras · 141 por minuto · 21 frases de 10.0 palabras en promedio (la más larga: 18) · 9 pausa(s) de párrafo (≥ 1 s) · 29 cambios de imagen
-- **Nombres y cifras que se dicen (9):** París · Braudel · Nueva York · Universidad de Columbia · Herbert Klein · Perú · Kenneth Maxwell · Cueto · ochenta
-
-| t | Voz | Imagen | Sonido |
-|---|---|---|---|
-| 3:17.1 |  |  | música s05-aprender-a-medir.mp3 (nivel 0.29) |
-| 3:17.1 |  |  | ambiente ciudad (0.55) |
-| 3:17.3 |  | **mapa** — aparece el mapa |  |
-| 3:17.4 | A comienzos de los ochenta hace algo poco común. |  |  |
-| 3:20.6 | Buena parte de los historiadores peruanos miraba a París. |  |  |
-| 3:20.9 |  | **paris** — sale la ruta hacia la tentación |  |
-| 3:24.1 | Era la ciudad de Braudel, el de la larga duración. |  |  |
-| 3:27.6 |  | **paris_notas** — (con tentacion_notas) se escriben los renglones junto a la tentación |  |
-| 3:27.6 | Ahí se habían formado sus propios profesores. |  |  |
-| 3:29.9 |  | **duda** — la ruta se detiene, duda y se borra |  |
-| 3:30.8 | Él se va a Nueva York, a la Universidad de Columbia. |  |  |
-| 3:30.8 |  | **sale** — la cámara retrocede apenas y se lanza: sigue la ruta hacia el destino (se encienden los paralelos al cruzarlos) |  |
-| 3:30.8 |  | _cámara: La cámara sigue la ruta vectorial de Lima a Nueva York con un acercamiento del 30 %._ (El viaje ocurre con la narración; la ruta se dibuja hasta llegar.) |  |
-| 3:33.4 |  | **llega** — la ruta llega: sello y campana |  |
-| 3:34.0 |  | **abre** — la cámara se abre hasta ver la ruta entera, y se asienta |  |
-| 3:34.0 |  | _cámara: Se abre hasta ver las dos rutas completas._ (Comparar el destino elegido con la alternativa de París.) |  |
-| 3:35.5 |  | **ficha** — se escribe la ficha |  |
-| 3:35.5 | Allí, el historiador Herbert Klein se fija en él y le ofrece una beca. |  |  |
-| 3:40.2 | Y aprende historia cuantitativa: pensar el pasado con números, no solo con discursos. |  |  |
-| 3:41.1 |  | **puntos** — papel milimetrado: caen los puntos (3 s) |  |
-| 3:44.1 |  | **discursos** — los bloques de discurso se apagan |  |
-| 3:46.3 | Una de sus herramientas se llama regresión. |  |  |
-| 3:47.7 |  | **regresion** — (con rotulo_grafico) aparece el rótulo del gráfico |  |
-| 3:49.2 |  | **caen** — (con explicar_regresion) caen los puntos (el papel ya estaba) |  |
-| 3:49.2 | Imagina muchos puntos desordenados: cada uno, un dato. |  |  |
-| 3:51.5 |  | **observacion** — (beat propio) |  |
-| 3:53.3 | A simple vista, solo ruido. |  |  |
-| 3:56.1 | La regresión busca la línea que mejor pasa entre todos. |  |  |
-| 3:56.2 |  | **recta** — se traza la recta de regresión |  |
-| 3:57.6 |  | **residuos** — (beat propio) |  |
-| 3:59.7 | Si hay una tendencia, ayuda a verla. |  |  |
-| 4:00.3 |  | **tendencia** — (beat propio) |  |
-| 4:02.5 | Y dice cuánto pesa. |  |  |
-| 4:03.4 |  | **pendiente** — (con explicar_regresion) se marca la pendiente: cuánto pesa |  |
-| 4:05.8 | Aprendió a trabajar con cifras y a contrastarlas con documentos. |  |  |
-| 4:05.8 |  | **causalidad** — (beat propio) |  |
-| 4:09.6 |  | **serie** — (con serie) la nube se va, los puntos viajan a la serie real y se encienden de a uno; después, la banda |  |
-| 4:09.6 | Años después, llevaría esa disciplina al estudio de la corrupción en el Perú. |  |  |
-| 4:15.6 | De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad. |  |  |
-| 4:15.6 |  | **balanza** — aparece la balanza |  |
-| 4:19.7 |  | **profundidad** — cae la primera palabra (se inclina) |  |
-| 4:20.8 |  | **claridad** — cae la segunda (se equilibra) |  |
-| 4:23.4 |  | **estante** — aparece la repisa |  |
-| 4:23.4 | Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la historia financiera del Perú. |  |  |
-| 4:25.9 |  | **temas** — bajan los temas, uno cada 0.5 s |  |
-| 4:30.3 |  | **brujula** — aparece la brújula |  |
-| 4:30.3 | Y sus ideas también se mueven. |  |  |
-| 4:32.6 |  | **izquierda** — (izquierda-derecha) la aguja va al primer tope; se escriben sus notas |  |
-| 4:32.6 | De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades. |  |  |
-| 4:34.1 |  | **giro** — la aguja gira despacio de una época a la otra (izquierda-derecha: va al otro tope) |  |
-| 4:40.5 | Cambió de ideas. |  |  |
-| 4:40.6 |  | **tiza** — (con brujula_frase) la brújula y su fondo pasan a la pizarra; los rótulos se borran |  |
-| 4:42.3 | Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión. |  |  |
-| 4:44.0 |  | **frase** — (con brujula_frase) se escribe la frase con tiza |  |
-
-## s06 · puente — `MecanismoDeuda` · 4:47.1–5:21.0 (33.9 s)
-
-- **Cambio:** del hombre que aprendió a medir a su primer caso: una deuda pagada con la plata del guano, y una pregunta abierta
-- **Intención:** cerrar el retrato volviendo atrás: lo que aprendió en Nueva York lo va a usar en lo que ya había encontrado antes de irse; la pregunta queda en el aire para el próximo episodio
+- **Cambio:** de la idea de la larga duración a su primer caso, todavía en Lima: una deuda pagada con la plata del guano, inflada a costa del Estado, y una pregunta abierta
+- **Intención:** el primer caso antes del viaje (orden cronológico, Gerson, 11/11/2026): el libro de Denegri, el guano, la tesis de 1980; la pregunta queda en el aire con el acorde de G y de ahí sale el viaje (después, no por eso)
 - **Intensidad:** 5 · **Música:** presente (tensión) → el acorde sin resolver queda solo después de la pregunta
-- **Semáforo para enseñar:** 🟡 11.9 datos/min
-- **Métricas:** voz el 72 % del tiempo · tramo más largo sin pausa de párrafo: 7.4 s · 86 palabras · 170 por minuto · 6 frases de 14.3 palabras en promedio (la más larga: 24) · 4 pausa(s) de párrafo (≥ 1 s) · 11 cambios de imagen
-- **Nombres y cifras que se dicen (6):** Lima · Nueva York · Félix Denegri Luna · Estado · 1980 · 1850
+- **Semáforo para enseñar:** 🟡 21.8 datos/min
+- **Métricas:** voz el 69 % del tiempo · tramo más largo sin pausa de párrafo: 10.1 s · 80 palabras · 174 por minuto · 6 frases de 13.3 palabras en promedio (la más larga: 24) · 3 pausa(s) de párrafo (≥ 1 s) · 11 cambios de imagen
+- **Nombres y cifras que se dicen (10):** París · Braudel · Nueva York · Universidad de Columbia · Herbert Klein · Perú · Kenneth Maxwell · Cueto · 1987 · ochenta
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
-| 4:47.1 |  |  | música s06-la-deuda.mp3 (nivel 0.4) |
-| 4:47.1 |  |  | ambiente mar (0.7) |
-| 4:47.3 |  | **islas** — el grabado de las islas |  |
-| 4:47.4 | Pero su primer caso lo había encontrado en Lima, en mil novecientos ochenta, poco antes de irse a Nueva York. |  |  |
-| 4:47.4 |  | **hoja_entra** — (con hojear) entra el libro, cerrado |  |
-| 4:54.3 | Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. |  |  |
-| 4:54.3 |  | **hojea** — (con hojear) se abre y se hojea |  |
-| 5:00.7 |  | **hoja_pagina** — (con hojear) cae la última hoja: la página con el grabado |  |
-| 5:01.0 |  | **hoja_zoom** — (con hojear) la cámara entra al grabado hasta llenar la pantalla |  |
-| 5:01.0 |  | _cámara: entra a la ilustración de la página hasta llenar la pantalla_ («el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)) |  |
-| 5:03.1 |  | **sacos** — empiezan a subir sacos al barco |  |
-| 5:03.1 | Ahí estaba el guano. |  |  |
-| 5:04.6 |  | **flecha** — barco y Estado: sale la flecha de dinero |  |
-| 5:04.6 |  |  | se va el ambiente mar |
-| 5:04.6 |  |  | ambiente cuarto (0.5) |
-| 5:04.6 |  | _cámara: sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha_ («Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)) |  |
-| 5:04.9 | Y una deuda que el Estado decidió pagar con esa plata, en mil ochocientos cincuenta. |  |  |
-| 5:07.3 |  | **vales** — se apilan los vales de la deuda |  |
-| 5:07.3 |  | _cámara: paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales_ («una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)) |  |
-| 5:08.9 |  | **consolidacion** — cae el sello sobre la pila |  |
-| 5:10.5 | Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. |  |  |
-| 5:10.5 |  | **hallazgo** — (opcional) sobre la pila de vales, el monto del vale de arriba se infla (ejemplo ilustrativo) |  |
-| 5:15.7 | ¿Adónde fue a parar esa plata? |  |  |
-| 5:15.7 |  | **pregunta** — (con pregunta) la pregunta se escribe fuerte |  |
+| 3:17.1 |  |  | música s06-la-deuda.mp3 (nivel 0.4) |
+| 3:17.1 |  |  | ambiente mar (0.7) |
+| 3:17.3 |  | **islas** — el grabado de las islas |  |
+| 3:17.4 | Su primer caso lo encontró todavía en Lima. |  |  |
+| 3:17.4 |  | **hoja_entra** — (con hojear) entra el libro, cerrado |  |
+| 3:20.5 | Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. |  |  |
+| 3:20.5 |  | **hojea** — (con hojear) se abre y se hojea |  |
+| 3:26.5 |  | **hoja_pagina** — (con hojear) cae la última hoja: la página con el grabado |  |
+| 3:26.8 |  | **hoja_zoom** — (con hojear) la cámara entra al grabado hasta llenar la pantalla |  |
+| 3:26.8 |  | _cámara: entra a la ilustración de la página hasta llenar la pantalla_ («el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)) |  |
+| 3:28.8 |  | **sacos** — empiezan a subir sacos al barco |  |
+| 3:28.9 | Ahí estaba el guano. |  |  |
+| 3:30.1 |  | **flecha** — barco y Estado: sale la flecha de dinero |  |
+| 3:30.1 |  |  | se va el ambiente mar |
+| 3:30.1 |  |  | ambiente cuarto (0.5) |
+| 3:30.1 |  | _cámara: sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha_ («Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)) |  |
+| 3:30.4 | Y una deuda que el Estado decidió pagar con esa plata, en mil ochocientos cincuenta. |  |  |
+| 3:32.6 |  | **vales** — se apilan los vales de la deuda |  |
+| 3:32.6 |  | _cámara: paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales_ («una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)) |  |
+| 3:34.1 |  | **consolidacion** — cae el sello sobre la pila |  |
+| 3:35.8 | En su tesis de mil novecientos ochenta mostró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. |  |  |
+| 3:35.8 |  | **hallazgo** — (opcional) sobre la pila de vales, el monto del vale de arriba se infla (ejemplo ilustrativo) |  |
+| 3:43.0 | ¿Adónde fue a parar esa plata? |  |  |
+| 3:43.0 |  | **pregunta** — (con pregunta) la pregunta se escribe fuerte |  |
 
-## s07 · cierre — `Cierre` · 5:21.0–5:37.7 (16.7 s)
+## s05 · método — `AprenderAMedir` · 3:48.1–5:22.7 (94.6 s)
+
+- **Cambio:** de un estudiante con una pregunta a un historiador que mide, que cambió de ideas y que no soltó aquella deuda
+- **Intención:** el viaje a Nueva York; la regresión explicada en tres tiempos (ruido, la recta que busca, cuánto pesa); la claridad en una balanza; la carrera se lee en el estante, no se narra; cierra volviendo a la tesis de la deuda, que en 1987 sería un libro: la tarjeta del próximo episodio le responde
+- **Intensidad:** 2 · **Música:** presente (Suno F: piano; el clarinete entra con «cuánto pesa»)
+- **Semáforo para enseñar:** 🟢
+- **Métricas:** voz el 73 % del tiempo · tramo más largo sin pausa de párrafo: 16.4 s · 231 palabras · 148 por minuto · 22 frases de 10.5 palabras en promedio (la más larga: 22) · 8 pausa(s) de párrafo (≥ 1 s) · 29 cambios de imagen
+- **Nombres y cifras que se dicen (5):** Lima · Félix Denegri Luna · Estado · 1850 · 1980
+
+| t | Voz | Imagen | Sonido |
+|---|---|---|---|
+| 3:48.1 |  |  | música s05-aprender-a-medir.mp3 (nivel 0.29) |
+| 3:48.1 |  |  | ambiente ciudad (0.55) |
+| 3:48.3 |  | **mapa** — aparece el mapa |  |
+| 3:48.4 | A comienzos de los ochenta hace algo poco común. |  |  |
+| 3:51.9 | Buena parte de los historiadores peruanos miraba a París. |  |  |
+| 3:52.2 |  | **paris** — sale la ruta hacia la tentación |  |
+| 3:55.2 | Era la ciudad de Braudel, el de la larga duración. |  |  |
+| 3:58.5 |  | **paris_notas** — (con tentacion_notas) se escriben los renglones junto a la tentación |  |
+| 3:58.6 | Ahí se habían formado sus propios profesores. |  |  |
+| 4:00.9 |  | **duda** — la ruta se detiene, duda y se borra |  |
+| 4:01.5 | Él se va a Nueva York, a la Universidad de Columbia. |  |  |
+| 4:01.5 |  | **sale** — la cámara retrocede apenas y se lanza: sigue la ruta hacia el destino (se encienden los paralelos al cruzarlos) |  |
+| 4:01.5 |  | _cámara: La cámara sigue la ruta vectorial de Lima a Nueva York con un acercamiento del 30 %._ (El viaje ocurre con la narración; la ruta se dibuja hasta llegar.) |  |
+| 4:04.1 |  | **llega** — la ruta llega: sello y campana |  |
+| 4:04.7 |  | **abre** — la cámara se abre hasta ver la ruta entera, y se asienta |  |
+| 4:04.7 |  | _cámara: Se abre hasta ver las dos rutas completas._ (Comparar el destino elegido con la alternativa de París.) |  |
+| 4:06.2 |  | **ficha** — se escribe la ficha |  |
+| 4:06.2 | Allí, el historiador Herbert Klein se fija en él y le ofrece una beca. |  |  |
+| 4:10.5 | Y aprende historia cuantitativa: pensar el pasado con números, no solo con discursos. |  |  |
+| 4:11.5 |  | **puntos** — papel milimetrado: caen los puntos (3 s) |  |
+| 4:14.7 |  | **discursos** — los bloques de discurso se apagan |  |
+| 4:16.8 | Una de sus herramientas se llama regresión. |  |  |
+| 4:18.3 |  | **regresion** — (con rotulo_grafico) aparece el rótulo del gráfico |  |
+| 4:19.5 |  | **caen** — (con explicar_regresion) caen los puntos (el papel ya estaba) |  |
+| 4:19.6 | Imagina muchos puntos desordenados: cada uno, un dato. |  |  |
+| 4:21.8 |  | **observacion** — (beat propio) |  |
+| 4:23.6 | A simple vista, solo ruido. |  |  |
+| 4:26.0 | La regresión busca la línea que mejor pasa entre todos. |  |  |
+| 4:26.2 |  | **recta** — se traza la recta de regresión |  |
+| 4:27.4 |  | **residuos** — (beat propio) |  |
+| 4:29.4 | Si hay una tendencia, ayuda a verla. |  |  |
+| 4:30.0 |  | **tendencia** — (beat propio) |  |
+| 4:32.0 | Y dice cuánto pesa. |  |  |
+| 4:32.8 |  | **pendiente** — (con explicar_regresion) se marca la pendiente: cuánto pesa |  |
+| 4:35.2 | Aprendió a trabajar con cifras y a contrastarlas con documentos. |  |  |
+| 4:35.2 |  | **causalidad** — (beat propio) |  |
+| 4:39.0 |  | **serie** — (con serie) la nube se va, los puntos viajan a la serie real y se encienden de a uno; después, la banda |  |
+| 4:39.0 | Años después, llevaría esa disciplina al estudio de la corrupción en el Perú. |  |  |
+| 4:45.0 | De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad. |  |  |
+| 4:45.0 |  | **balanza** — aparece la balanza |  |
+| 4:48.9 |  | **profundidad** — cae la primera palabra (se inclina) |  |
+| 4:50.0 |  | **claridad** — cae la segunda (se equilibra) |  |
+| 4:52.5 |  | **estante** — aparece la repisa |  |
+| 4:52.6 | Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la historia financiera del Perú. |  |  |
+| 4:55.0 |  | **temas** — bajan los temas, uno cada 0.5 s |  |
+| 4:59.3 |  | **brujula** — aparece la brújula |  |
+| 4:59.3 | Y sus ideas también se mueven. |  |  |
+| 5:01.3 |  | **izquierda** — (izquierda-derecha) la aguja va al primer tope; se escriben sus notas |  |
+| 5:01.4 | De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades. |  |  |
+| 5:02.7 |  | **giro** — la aguja gira despacio de una época a la otra (izquierda-derecha: va al otro tope) |  |
+| 5:08.9 | Cambió de ideas. |  |  |
+| 5:08.9 |  | **tiza** — (con brujula_frase) la brújula y su fondo pasan a la pizarra; los rótulos se borran |  |
+| 5:10.5 | Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión. |  |  |
+| 5:12.2 |  | **frase** — (con brujula_frase) se escribe la frase con tiza |  |
+| 5:16.1 | Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro. |  |  |
+
+## s07 · cierre — `Cierre` · 5:22.7–5:39.4 (16.7 s)
 
 - **Cambio:** del caso abierto a la promesa del próximo episodio
 - **Intención:** las pruebas de imprenta del comienzo se cierran; el tema entra unos segundos antes y se queda después, para que la tristeza se asiente (DIRECCION_DE_VIDEO §2.15)
@@ -311,12 +312,12 @@ Total: 5:37.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
-| 5:21.0 |  |  | música s07-tema.mp3 (nivel 0.55) |
-| 5:21.0 |  |  | ambiente cuarto (0.5) |
-| 5:21.3 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
-| 5:23.3 |  | **negro** — fundido a negro |  |
-| 5:23.3 |  |  | se va el ambiente cuarto |
-| 5:23.8 | Próximo episodio: La deuda defraudada. |  |  |
-| 5:23.8 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
-| 5:23.8 |  | _cámara: se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)_ (la música se queda sobre el final (revisión del director): el plano respira mientras se asienta la tristeza, sin congelarse) |  |
+| 5:22.7 |  |  | música s07-tema.mp3 (nivel 0.55) |
+| 5:22.7 |  |  | ambiente cuarto (0.5) |
+| 5:23.0 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
+| 5:25.0 |  | **negro** — fundido a negro |  |
+| 5:25.0 |  |  | se va el ambiente cuarto |
+| 5:25.5 | Próximo episodio: La deuda defraudada. |  |  |
+| 5:25.5 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
+| 5:25.5 |  | _cámara: se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)_ (la música se queda sobre el final (revisión del director): el plano respira mientras se asienta la tristeza, sin congelarse) |  |
 

@@ -31,7 +31,7 @@ SR = 44100
 RESPIRO = 1.4          # una pausa del guion desde este largo es un respiro: se garantiza
 API = "https://api.elevenlabs.io/v1"
 CLAVE = os.environ.get("ELEVENLABS_API_KEY", "proxy-injected")
-NUM = {"1820": "mil ochocientos veinte", "1980": "mil novecientos ochenta", "1850": "mil ochocientos cincuenta", "1956": "mil novecientos cincuenta y seis",
+NUM = {"1820": "mil ochocientos veinte", "1980": "mil novecientos ochenta", "1987": "mil novecientos ochenta y siete", "1850": "mil ochocientos cincuenta", "1956": "mil novecientos cincuenta y seis",
        "1974": "mil novecientos setenta y cuatro", "2013": "dos mil trece", "80": "ochenta", "19": "diecinueve",
        "15": "quince", "10": "diez", "3": "tres", "4": "cuatro", "%": "por ciento"}
 
@@ -142,7 +142,16 @@ def palabras(f):
     EVENTOS.extend((w["text"], w["start"], w["end"]) for w in d["words"] if w.get("type") == "audio_event"
                    and not re.search(r"respir|breath|inhal|exhal|suspir|sigh", w["text"], re.I))
     PALABRAS[:] = [(w["start"], w["end"]) for w in d["words"] if w.get("type") == "word"]
-    return [(tk, w["start"], w["end"]) for w in d["words"] if w.get("type") == "word" for tk in tokens(w["text"])]
+    out = [(tk, w["start"], w["end"]) for w in d["words"] if w.get("type") == "word" for tk in tokens(w["text"])]
+    # «¿A dónde…?» llega como dos palabras, y a la «a» la transcripción le asigna la pausa previa:
+    # se junta en «adonde», que empieza un instante antes de «dónde»
+    junto = []
+    for k, (tk, a, b) in enumerate(out):
+        if tk == "donde" and junto and junto[-1][0] == "a":
+            junto[-1] = ("adonde", max(junto[-1][1], a - 0.25), b)
+        else:
+            junto.append((tk, a, b))
+    return junto
 
 
 PALABRAS = []

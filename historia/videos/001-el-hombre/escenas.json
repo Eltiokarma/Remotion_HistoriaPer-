@@ -521,45 +521,142 @@
       "beats_ajustados": true
     },
     {
+      "id": "s06",
+      "seccion": "el primer caso",
+      "componente": "MecanismoDeuda",
+      "duracion_s": 27.54,
+      "cola_s": 3.5,
+      "intensidad": 5,
+      "cambio": "de la idea de la larga duración a su primer caso, todavía en Lima: una deuda pagada con la plata del guano, inflada a costa del Estado, y una pregunta abierta",
+      "intencion": "el primer caso antes del viaje (orden cronológico, Gerson, 11/11/2026): el libro de Denegri, el guano, la tesis de 1980; la pregunta queda en el aire con el acorde de G y de ahí sale el viaje (después, no por eso)",
+      "transicion_salida": "corte",
+      "beats": {
+        "hoja_entra": 0.3,
+        "hojea": 3.44,
+        "hoja_pagina": 9.41,
+        "hoja_zoom": 9.76,
+        "islas": 0.2,
+        "sacos": 11.78,
+        "flecha": 13.04,
+        "vales": 15.59,
+        "consolidacion": 17.07,
+        "pregunta": 25.9,
+        "hallazgo": 18.73
+      },
+      "props": {
+        "ficha": "SIGLO XIX · GUANO",
+        "estado": "ESTADO",
+        "sello": "1850",
+        "vale": {
+          "desde": 1000,
+          "hasta": 3000
+        },
+        "funcionario": "funcionario",
+        "frase": [
+          "No era solo derroche.",
+          "Era un mecanismo."
+        ],
+        "tesis": {
+          "etiqueta": "TESIS",
+          "anio": "1980"
+        },
+        "libro": {
+          "titulo": "La deuda defraudada",
+          "anio": "1987",
+          "autor": "Alfonso W. Quiroz"
+        },
+        "hasta": "consolidacion",
+        "hojear": {
+          "encabezado": "Siglo XIX"
+        },
+        "paneo": true,
+        "pregunta": "¿A dónde fue a parar esa plata?",
+        "sigue_barco": true,
+        "laminas": {
+          "islas": "vectorcraft/islas-guaneras-v3.json",
+          "estado": "vectorcraft/edificio-estado-video01.json",
+          "vale": "vectorcraft/vale-video01.json"
+        }
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s06-la-deuda.mp3",
+          "nivel": 0.4
+        },
+        "ambientes": [
+          {
+            "nombre": "mar",
+            "nivel": 0.7,
+            "hasta_beat": "flecha"
+          },
+          {
+            "nombre": "cuarto",
+            "nivel": 0.5,
+            "desde_beat": "flecha"
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente (tensión) → el acorde sin resolver queda solo después de la pregunta",
+      "camara": [
+        {
+          "beat": "hoja_zoom",
+          "movimiento": "entra a la ilustración de la página hasta llenar la pantalla",
+          "motivo": "«el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)"
+        },
+        {
+          "beat": "flecha",
+          "movimiento": "sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha",
+          "motivo": "«Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)"
+        },
+        {
+          "beat": "vales",
+          "movimiento": "paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales",
+          "motivo": "«una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)"
+        }
+      ],
+      "beats_ajustados": true
+    },
+    {
       "id": "s05",
       "seccion": "método",
       "componente": "AprenderAMedir",
-      "duracion_s": 89.0,
+      "duracion_s": 93.52,
       "cola_s": 1,
       "intensidad": 2,
-      "cambio": "de un historiador de discursos a uno que mide, y que cambió de ideas",
-      "intencion": "el viaje a Nueva York; la regresión explicada en tres tiempos (ruido, la recta que busca, cuánto pesa); la claridad en una balanza; la carrera se lee en el estante, no se narra",
+      "cambio": "de un estudiante con una pregunta a un historiador que mide, que cambió de ideas y que no soltó aquella deuda",
+      "intencion": "el viaje a Nueva York; la regresión explicada en tres tiempos (ruido, la recta que busca, cuánto pesa); la claridad en una balanza; la carrera se lee en el estante, no se narra; cierra volviendo a la tesis de la deuda, que en 1987 sería un libro: la tarjeta del próximo episodio le responde",
       "transicion_salida": "corte",
       "beats": {
         "mapa": 0.2,
-        "paris": 3.83,
-        "duda": 12.88,
-        "sale": 13.7,
-        "llega": 16.31,
-        "abre": 16.95,
-        "ficha": 18.48,
-        "puntos": 24.0,
-        "discursos": 27.09,
-        "caen": 32.1,
-        "recta": 39.19,
-        "pendiente": 46.35,
-        "balanza": 58.57,
-        "profundidad": 62.64,
-        "claridad": 63.75,
-        "estante": 66.33,
-        "temas": 68.85,
-        "brujula": 73.25,
-        "giro": 77.0,
-        "regresion": 30.67,
-        "izquierda": 75.5,
-        "tiza": 83.5,
-        "frase": 86.95,
-        "serie": 52.57,
-        "paris_notas": 10.5,
-        "observacion": 34.4,
-        "residuos": 40.53,
-        "tendencia": 43.24,
-        "causalidad": 48.73
+        "paris": 4.03,
+        "duda": 12.78,
+        "sale": 13.4,
+        "llega": 15.93,
+        "abre": 16.57,
+        "ficha": 18.1,
+        "puntos": 23.33,
+        "discursos": 26.54,
+        "caen": 31.4,
+        "recta": 38.02,
+        "pendiente": 44.7,
+        "balanza": 56.9,
+        "profundidad": 60.79,
+        "claridad": 61.85,
+        "estante": 64.4,
+        "temas": 66.83,
+        "brujula": 71.12,
+        "giro": 74.58,
+        "regresion": 30.16,
+        "izquierda": 73.16,
+        "tiza": 80.77,
+        "frase": 84.07,
+        "serie": 50.85,
+        "paris_notas": 10.4,
+        "observacion": 33.69,
+        "residuos": 39.28,
+        "tendencia": 41.83,
+        "causalidad": 47.03
       },
       "props": {
         "origen": {
@@ -727,103 +824,6 @@
         "duck_db": -15
       },
       "estado_musica": "presente (Suno F: piano; el clarinete entra con «cuánto pesa»)",
-      "beats_ajustados": true
-    },
-    {
-      "id": "s06",
-      "seccion": "puente",
-      "componente": "MecanismoDeuda",
-      "duracion_s": 30.35,
-      "cola_s": 3.5,
-      "intensidad": 5,
-      "cambio": "del hombre que aprendió a medir a su primer caso: una deuda pagada con la plata del guano, y una pregunta abierta",
-      "intencion": "cerrar el retrato volviendo atrás: lo que aprendió en Nueva York lo va a usar en lo que ya había encontrado antes de irse; la pregunta queda en el aire para el próximo episodio",
-      "transicion_salida": "corte",
-      "beats": {
-        "hoja_entra": 0.3,
-        "hojea": 7.2,
-        "hoja_pagina": 13.55,
-        "hoja_zoom": 13.92,
-        "islas": 0.2,
-        "sacos": 16.01,
-        "flecha": 17.46,
-        "vales": 20.22,
-        "consolidacion": 21.79,
-        "pregunta": 28.57,
-        "hallazgo": 23.44
-      },
-      "props": {
-        "ficha": "SIGLO XIX · GUANO",
-        "estado": "ESTADO",
-        "sello": "1850",
-        "vale": {
-          "desde": 1000,
-          "hasta": 3000
-        },
-        "funcionario": "funcionario",
-        "frase": [
-          "No era solo derroche.",
-          "Era un mecanismo."
-        ],
-        "tesis": {
-          "etiqueta": "TESIS",
-          "anio": "1980"
-        },
-        "libro": {
-          "titulo": "La deuda defraudada",
-          "anio": "1987",
-          "autor": "Alfonso W. Quiroz"
-        },
-        "hasta": "consolidacion",
-        "hojear": {
-          "encabezado": "Siglo XIX"
-        },
-        "paneo": true,
-        "pregunta": "¿A dónde fue a parar esa plata?",
-        "sigue_barco": true,
-        "laminas": {
-          "islas": "vectorcraft/islas-guaneras-v3.json",
-          "estado": "vectorcraft/edificio-estado-video01.json",
-          "vale": "vectorcraft/vale-video01.json"
-        }
-      },
-      "audio": {
-        "musica": {
-          "archivo": "s06-la-deuda.mp3",
-          "nivel": 0.4
-        },
-        "ambientes": [
-          {
-            "nombre": "mar",
-            "nivel": 0.7,
-            "hasta_beat": "flecha"
-          },
-          {
-            "nombre": "cuarto",
-            "nivel": 0.5,
-            "desde_beat": "flecha"
-          }
-        ],
-        "duck_db": -15
-      },
-      "estado_musica": "presente (tensión) → el acorde sin resolver queda solo después de la pregunta",
-      "camara": [
-        {
-          "beat": "hoja_zoom",
-          "movimiento": "entra a la ilustración de la página hasta llenar la pantalla",
-          "motivo": "«el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)"
-        },
-        {
-          "beat": "flecha",
-          "movimiento": "sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha",
-          "motivo": "«Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)"
-        },
-        {
-          "beat": "vales",
-          "movimiento": "paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales",
-          "motivo": "«una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)"
-        }
-      ],
       "beats_ajustados": true
     },
     {

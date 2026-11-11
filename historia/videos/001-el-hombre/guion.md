@@ -143,7 +143,23 @@ Quiroz se quedó con eso. Aprendió a apreciar lo que persiste: las estructuras 
 
 ---
 
-## ESC 5 — Aprender a medir
+## ESC 5 — El primer caso (antes del viaje) · `s06` en escenas.json
+
+Orden cronológico (Gerson, 11/11/2026): el primer caso (tesis de 1980) va antes del viaje a Nueva York
+(beca de Columbia, 1981). El libro respalda el orden, no la causa: no se dice que se fue «por» el guano.
+
+**VO:**
+Su primer caso lo encontró todavía en Lima. [PAUSA 0,6s] Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. [PAUSA 1s]
+
+Ahí estaba el guano. Y una deuda que el Estado decidió pagar con esa plata, en 1850. [PAUSA 0,8s] En su tesis de 1980 mostró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. [PAUSA 1s: el monto del vale de arriba sube; «ejemplo ilustrativo»] ¿Adónde fue a parar esa plata?
+
+**Visual (Remotion):** el comienzo de la escena del mecanismo de 000 (`MecanismoDeuda` con `hasta: consolidacion`): el grabado de las islas con su ficha `SIGLO XIX · GUANO`; con «Ahí estaba el guano», los sacos suben al barco; con «el Estado», la flecha de dinero; con «una deuda», los vales se apilan y con «1850» cae un sello rojo `1850`. La pregunta queda sobre la pila sellada, con un acorde que no resuelve, y de ahí sale el viaje.
+
+**Fuente:** Prólogo, p. 17 (Denegri, C12; la tesis de 1980, antes de Columbia, pp. 17–19); cap. 2, p. 169 y Prólogo, pp. 17–18 (la consolidación de 1850, pagada con el guano).
+
+---
+
+## ESC 6 — Aprender a medir · `s05` en escenas.json
 
 **VO:**
 A comienzos de los ochenta hace algo poco común. Buena parte de los historiadores peruanos miraba a París. [PAUSA 0,5s] Era la ciudad de Braudel, el de la larga duración. Ahí se habían formado sus propios profesores. [PAUSA 0,9s] Él se va a Nueva York, a la Universidad de Columbia. [PAUSA 1,8s: el viaje]
@@ -160,6 +176,8 @@ Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la histor
 
 Y sus ideas también se mueven. De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades. [PAUSA 1s] Cambió de ideas. Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión. [PAUSA 2s]
 
+Pero no se olvidó de aquella tesis sobre la deuda, que en 1987 se convertiría en un libro. [PAUSA 1,5s]
+
 **Visual (Remotion):** la escena actual (`AprenderAMedir`), con otro reparto del tiempo.
 - El viaje Lima → Nueva York, como está (París que se apaga, la cámara que viaja, los paralelos, el contador).
 - Ficha `COLUMBIA UNIVERSITY · BECA · H. S. KLEIN`.
@@ -168,20 +186,7 @@ Y sus ideas también se mueven. De aquel joven trotskista pasa a una postura lib
 - «la máxima autoridad»: los lomos del estante con los títulos de sus libros (*La deuda defraudada*, *Banqueros en conflicto*, *Deudas olvidadas*, *Domestic and foreign finance in modern Peru*) y la ficha `BARUCH COLLEGE · CUNY · NUEVA YORK`. La carrera se lee; no se narra.
 - La brújula que gira de `1970s` a `1990s`, sin etiquetas de izquierda y derecha.
 
-**Fuente:** Prólogo, pp. 18–23 (C13: «buena parte de los intelectuales e historiadores peruanos consideraban a París la meca»; C14: Klein «le ofreció una beca»; C15: «combinar la profundidad con la claridad»; p. 20: «la máxima autoridad en la historia financiera peruana» y los títulos; p. 21: Baruch y CUNY; C16: «igualdad de oportunidades», pp. 22–23).
-
----
-
-## ESC 6 — El primer caso (puente)
-
-**VO:**
-Pero su primer caso lo había encontrado en Lima, en 1980, poco antes de irse a Nueva York. [PAUSA 0,6s] Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. [PAUSA 1s]
-
-Ahí estaba el guano. Y una deuda que el Estado decidió pagar con esa plata, en 1850. [PAUSA 0,8s] Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. [PAUSA 1s: el monto del vale de arriba sube; «ejemplo ilustrativo»] ¿Adónde fue a parar esa plata?
-
-**Visual (Remotion):** el comienzo de la escena del mecanismo de 000 (`MecanismoDeuda` con `hasta: consolidacion`): el grabado de las islas con su ficha `SIGLO XIX · GUANO`; con «Ahí estaba el guano», los sacos suben al barco; con «el Estado», la flecha de dinero; con «una deuda», los vales se apilan y con «1850» cae un sello rojo `1850`. La pregunta queda sobre la pila sellada, con un acorde que no resuelve.
-
-**Fuente:** Prólogo, p. 17 (Denegri, C12; la tesis de 1980, antes de Columbia, pp. 17–19); cap. 2, p. 169 y Prólogo, pp. 17–18 (la consolidación de 1850, pagada con el guano).
+**Fuente:** Prólogo, pp. 18–23 (C13: «buena parte de los intelectuales e historiadores peruanos consideraban a París la meca»; C14: Klein «le ofreció una beca»; C15: «combinar la profundidad con la claridad»; p. 20: «la máxima autoridad en la historia financiera peruana» y los títulos; p. 21: Baruch y CUNY; C16: «igualdad de oportunidades», pp. 22–23; la tesis de 1980 publicada en 1987 como *La deuda defraudada*, p. 17).
 
 ---
 

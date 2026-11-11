@@ -1929,7 +1929,7 @@
   ]
  },
  "s05": {
-  "duracion": 108.67,
+  "duracion": 113.62,
   "frases": [
    {
     "desde": 0.3,
@@ -2035,6 +2035,12 @@
     "desde": 101.29,
     "hasta": 106.22,
     "texto": "Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión."
+   },
+   {
+    "desde": 108.22,
+    "hasta": 113.62,
+    "texto": "Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro.",
+    "nota": "agregada el 2026-11-11 sin regenerar el audio provisional: tiempos estimados"
    }
   ],
   "palabras": [
@@ -2882,7 +2888,7 @@
    {
     "desde": 0.3,
     "hasta": 3.97,
-    "texto": "Pero su primer caso lo había encontrado antes de irse."
+    "texto": "Su primer caso lo encontró todavía en Lima."
    },
    {
     "desde": 5.02,
@@ -2902,7 +2908,7 @@
    {
     "desde": 24.92,
     "hasta": 30.6,
-    "texto": "Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado."
+    "texto": "En su tesis de mil novecientos ochenta mostró que se había inflado el valor de la deuda para enriquecerse a costa del Estado."
    },
    {
     "desde": 32.05,
