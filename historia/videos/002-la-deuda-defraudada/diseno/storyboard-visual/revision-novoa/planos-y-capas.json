@@ -1,0 +1,68 @@
+{
+  "encuadre": [
+    1280,
+    720
+  ],
+  "estado": "Storyboard ilustrado para revisión",
+  "continuidad": {
+    "desde": "3B · La gestión de Elías",
+    "hacia": "3D · Torrico y la aprobación"
+  },
+  "beats": [
+    {
+      "plano": "01",
+      "camara": "Plano medio a la derecha. El expediente ancla el reencuadre.",
+      "movimiento": "quietud",
+      "luz": "Ventana lateral tenue. La atención está en Elías y el folio."
+    },
+    {
+      "plano": "02",
+      "camara": "Acercamiento cenital que conserva la pestaña y el borde del expediente.",
+      "movimiento": "Cámara pesada. Mano y folio quietos durante el acercamiento.",
+      "contacto": "La mano apoya desde la derecha sobre el mismo borde del folio."
+    },
+    {
+      "plano": "03",
+      "camara": "Cenital fijo. Quietud de 24 cuadros a 30 fps antes de la revelación.",
+      "movimiento": "Asentamiento de la tapa. Trazo ligero al oír fuera de plazo.",
+      "luz": "Foco cálido breve en la respuesta. Sombra de contacto debajo del antebrazo."
+    },
+    {
+      "plano": "04",
+      "camara": "Cenital fijo. Mantener juntos la respuesta y el folio.",
+      "movimiento": "Retiro natural de la mano en arco. El folio permanece apoyado.",
+      "pausa": "Probar dos segundos de lectura después del retiro. Paneo a 3D con el folio quieto."
+    }
+  ],
+  "capas": {
+    "fijas": [
+      "mesa-cenital",
+      "vineta"
+    ],
+    "moviles": [
+      "expediente-novoa",
+      "tapa-expediente",
+      "mano-agarre",
+      "mano-apoyo",
+      "respuesta-base"
+    ],
+    "revelacion": [
+      "fuera-de-plazo",
+      "trazo-corrector",
+      "foco-respuesta"
+    ],
+    "contacto_mano_derecha": [
+      686,
+      451
+    ],
+    "contacto_folio": [
+      675,
+      452
+    ],
+    "origen_del_trazo": [
+      773,
+      299
+    ]
+  },
+  "fuente": "Quiroz, Historia de la corrupción en el Perú, ed. 2013, p. 171. Cotejo registrado en fuentes.md."
+}

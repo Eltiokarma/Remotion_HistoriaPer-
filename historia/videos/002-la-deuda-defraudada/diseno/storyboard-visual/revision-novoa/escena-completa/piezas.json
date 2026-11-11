@@ -1,0 +1,128 @@
+[
+  {
+    "id": "grabado-hacienda",
+    "archivo": "capas/grabado-hacienda.svg",
+    "lienzo": [
+      480,
+      250
+    ],
+    "uso": "Inserto editorial. Mostrar al nombrar la hacienda."
+  },
+  {
+    "id": "alcance-32-anos",
+    "archivo": "capas/alcance-32-anos.svg",
+    "lienzo": [
+      485,
+      220
+    ],
+    "uso": "Revelar la llave por secciones sin asignar fechas."
+  },
+  {
+    "id": "despacho-elias",
+    "archivo": "capas/despacho-elias.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Fondo de 3B y del primer plano de 3C."
+  },
+  {
+    "id": "mesa-frontal-elias",
+    "archivo": "capas/mesa-frontal-elias.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Oculta la cintura con el mismo borde en las tres poses."
+  },
+  {
+    "id": "objetivo-elias",
+    "archivo": "capas/objetivo-elias.svg",
+    "lienzo": [
+      550,
+      211
+    ],
+    "uso": "Revelar el intervalo y su unidad juntos."
+  },
+  {
+    "id": "elias-cenital-agarre",
+    "archivo": "capas/elias-cenital-agarre.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Entrada desde abajo a la derecha. Conservar punto de agarre."
+  },
+  {
+    "id": "elias-cenital-apoyo",
+    "archivo": "capas/elias-cenital-apoyo.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Pose de apoyo. El codo y el puño siguen separados."
+  },
+  {
+    "id": "ficha-torrico",
+    "archivo": "capas/ficha-torrico.svg",
+    "lienzo": [
+      539,
+      211
+    ],
+    "uso": "Entra bajo el antecedente de plazo. Sin firma ni orden."
+  },
+  {
+    "id": "monto-aprobado",
+    "archivo": "capas/monto-aprobado.svg",
+    "lienzo": [
+      580,
+      286
+    ],
+    "uso": "Mostrar 948.500 con su unidad. Sostener dos segundos."
+  },
+  {
+    "id": "monto-probable",
+    "archivo": "capas/monto-probable.svg",
+    "lienzo": [
+      580,
+      286
+    ],
+    "uso": "Mostrar el grado de certeza desde el primer fotograma legible."
+  },
+  {
+    "id": "archivo-conjunto",
+    "archivo": "capas/archivo-conjunto.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Estantes y mesa para ampliar al conjunto de la deuda."
+  },
+  {
+    "id": "rastro-funciones",
+    "archivo": "capas/rastro-funciones.svg",
+    "lienzo": [
+      580,
+      360
+    ],
+    "uso": "Recuperar las funciones por turnos."
+  },
+  {
+    "id": "elias-denuncia",
+    "archivo": "capas/elias-denuncia.svg",
+    "lienzo": [
+      510,
+      183
+    ],
+    "uso": "Enlace con la investigación."
+  },
+  {
+    "id": "total-1851",
+    "archivo": "capas/total-1851.svg",
+    "lienzo": [
+      618,
+      270
+    ],
+    "uso": "Entrada de 4A.1. Usar la carpeta genérica."
+  }
+]

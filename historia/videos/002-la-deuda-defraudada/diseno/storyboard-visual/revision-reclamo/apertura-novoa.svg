@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720"><defs><radialGradient id="board" cx=".48" cy=".4" r=".76"><stop stop-color="#4d6650"/><stop offset="1" stop-color="#20372f"/></radialGradient><radialGradient id="wood" cx=".48" cy=".4" r=".76"><stop stop-color="#7e7052"/><stop offset="1" stop-color="#4c4436"/></radialGradient><linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f0e1bd"/><stop offset="1" stop-color="#c4ae86"/></linearGradient><linearGradient id="folder" x2="0" y2="1"><stop stop-color="#a28155"/><stop offset="1" stop-color="#6c563e"/></linearGradient><radialGradient id="light" cx=".48" cy=".4" r=".76"><stop stop-color="#e4c28244"/><stop offset="1" stop-color="#e4c28200"/></radialGradient><radialGradient id="nogal" cx=".48" cy=".4" r=".76"><stop stop-color="#796245"/><stop offset="1" stop-color="#252e26"/></radialGradient><linearGradient id="canto-mesa" x2="0" y2="1"><stop stop-color="#6b523a"/><stop offset="1" stop-color="#302e26"/></linearGradient><linearGradient id="carton" x2="0" y2="1"><stop stop-color="#9e7b4e"/><stop offset="1" stop-color="#594833"/></linearGradient><linearGradient id="folio-lino" x2="0" y2="1"><stop stop-color="#f2e3bb"/><stop offset="1" stop-color="#c6ac80"/></linearGradient><linearGradient id="pliegue" x2="0" y2="1"><stop stop-color="#f8ebca"/><stop offset="1" stop-color="#bca57c"/></linearGradient><linearGradient id="nota" x2="0" y2="1"><stop stop-color="#faebcb"/><stop offset="1" stop-color="#cbb591"/></linearGradient><linearGradient id="tinta" x2="0" y2="1"><stop stop-color="#557067"/><stop offset="1" stop-color="#1c302e"/></linearGradient><linearGradient id="laton" x2="0" y2="1"><stop stop-color="#d8b77a"/><stop offset="1" stop-color="#715736"/></linearGradient><radialGradient id="luz-calida"><stop stop-color="#e9c88d" stop-opacity=".29"/><stop offset=".58" stop-color="#e9c88d" stop-opacity=".12"/><stop offset="1" stop-color="#e9c88d" stop-opacity="0"/></radialGradient><radialGradient id="vineta-novoa" cx=".53" cy=".46" r=".73"><stop offset=".56" stop-color="#10211c" stop-opacity="0"/><stop offset="1" stop-color="#10211c" stop-opacity=".55"/></radialGradient><linearGradient id="cielo-costa" x2="0" y2="1"><stop stop-color="#9bb1a0"/><stop offset="1" stop-color="#466d6c"/></linearGradient><linearGradient id="agua-costa" x2="0" y2="1"><stop stop-color="#78a9a5"/><stop offset="1" stop-color="#2d5863"/></linearGradient><linearGradient id="costa-oliva" x2="0" y2="1"><stop stop-color="#707c59"/><stop offset="1" stop-color="#3d5345"/></linearGradient><linearGradient id="piedra-estrato" x2="0" y2="1"><stop stop-color="#a79b72"/><stop offset="1" stop-color="#504f3d"/></linearGradient><linearGradient id="sedimento" x2="0" y2="1"><stop stop-color="#e1cc99"/><stop offset="1" stop-color="#90764d"/></linearGradient><linearGradient id="lienzo-saco" x2="0" y2="1"><stop stop-color="#e8d5a0"/><stop offset="1" stop-color="#998057"/></linearGradient><linearGradient id="hierro-pala" x2="0" y2="1"><stop stop-color="#86948b"/><stop offset="1" stop-color="#354b46"/></linearGradient><linearGradient id="mango-madera" x2="0" y2="1"><stop stop-color="#c3a779"/><stop offset="1" stop-color="#786044"/></linearGradient><linearGradient id="madera-muelle" x2="0" y2="1"><stop stop-color="#b29969"/><stop offset="1" stop-color="#5f513a"/></linearGradient><linearGradient id="cubierta" x2="0" y2="1"><stop stop-color="#bda47a"/><stop offset="1" stop-color="#635339"/></linearGradient><linearGradient id="papel-hoja" x2="0" y2="1"><stop stop-color="#f7eac8"/><stop offset="1" stop-color="#c5ac7d"/></linearGradient><linearGradient id="papel-izq" x2="0" y2="1"><stop stop-color="#e7d7ac"/><stop offset="1" stop-color="#bda678"/></linearGradient><linearGradient id="tapa-libro" x2="0" y2="1"><stop stop-color="#6c664a"/><stop offset="1" stop-color="#344a40"/></linearGradient><linearGradient id="tapeta-folio" x2="0" y2="1"><stop stop-color="#a78757"/><stop offset="1" stop-color="#64523c"/></linearGradient><linearGradient id="lomo-sombra" x1="0" x2="1"><stop stop-color="#514532" stop-opacity="0"/><stop offset=".5" stop-color="#514532" stop-opacity=".53"/><stop offset="1" stop-color="#514532" stop-opacity="0"/></linearGradient><radialGradient id="brillo-costa"><stop stop-color="#f2e3b7" stop-opacity=".55"/><stop offset=".52" stop-color="#f2e3b7" stop-opacity=".16"/><stop offset="1" stop-color="#f2e3b7" stop-opacity="0"/></radialGradient><radialGradient id="despacho-pared" cx=".48" cy=".4" r=".76"><stop stop-color="#65705a"/><stop offset="1" stop-color="#343f34"/></radialGradient><linearGradient id="despacho-madera" x2="0" y2="1"><stop stop-color="#866244"/><stop offset="1" stop-color="#392d25"/></linearGradient><linearGradient id="despacho-panel" x2="0" y2="1"><stop stop-color="#495449"/><stop offset="1" stop-color="#2f3830"/></linearGradient><linearGradient id="despacho-cristal" x2="0" y2="1"><stop stop-color="#bed4c8"/><stop offset="1" stop-color="#6d9385"/></linearGradient><linearGradient id="despacho-cortina" x2="0" y2="1"><stop stop-color="#847b5b"/><stop offset="1" stop-color="#3b4639"/></linearGradient><radialGradient id="despacho-alfombra" cx=".48" cy=".4" r=".76"><stop stop-color="#806059"/><stop offset="1" stop-color="#3f3939"/></radialGradient><linearGradient id="despacho-ventana-luz" x2="0" y2="1"><stop stop-color="#f6dfaa33"/><stop offset="1" stop-color="#f6dfaa00"/></linearGradient><linearGradient id="manga-vino" x2="0" y2="1"><stop stop-color="#896371"/><stop offset="1" stop-color="#483043"/></linearGradient><linearGradient id="manga-azul" x2="0" y2="1"><stop stop-color="#536a75"/><stop offset="1" stop-color="#293c4d"/></linearGradient><linearGradient id="mano-reclamante" x2="0" y2="1"><stop stop-color="#dfba93"/><stop offset="1" stop-color="#b68a6c"/></linearGradient><linearGradient id="mano-comprador" x2="0" y2="1"><stop stop-color="#c69772"/><stop offset="1" stop-color="#986b51"/></linearGradient><linearGradient id="canto-escritorio-2d" x2="0" y2="1"><stop stop-color="#8b6949"/><stop offset="1" stop-color="#4b382c"/></linearGradient><linearGradient id="suelo-2d" x2="0" y2="1"><stop stop-color="#615948"/><stop offset="1" stop-color="#282f2b"/></linearGradient><linearGradient id="tablero-2d" x2="0" y2="1"><stop stop-color="#ab8a62"/><stop offset="1" stop-color="#6f5038"/></linearGradient><radialGradient id="tablero-cenital-2d" cx=".48" cy=".4" r=".76"><stop stop-color="#a08461"/><stop offset="1" stop-color="#524134"/></radialGradient><linearGradient id="tela-ley" x2="0" y2="1"><stop stop-color="#647563"/><stop offset="1" stop-color="#293d34"/></linearGradient><linearGradient id="laton-lupa" x2="0" y2="1"><stop stop-color="#d4bc81"/><stop offset="1" stop-color="#7c603d"/></linearGradient><linearGradient id="sobre-ocre" x2="0" y2="1"><stop stop-color="#e0c69a"/><stop offset="1" stop-color="#ac8c5e"/></linearGradient><linearGradient id="vale-lino" x2="0" y2="1"><stop stop-color="#f3e8c5"/><stop offset="1" stop-color="#c3b68c"/></linearGradient><linearGradient id="cristal-lupa" x2="0" y2="1"><stop stop-color="#b5b99a22"/><stop offset="1" stop-color="#718b7622"/></linearGradient></defs><g transform="translate(0 0) scale(1.1414304 1.1403231) translate(-0.0 -0.0)"><defs xmlns="http://www.w3.org/2000/svg">
+    <radialGradient id="art30-radial-gradient-1" cx="561" cy="315.7" r="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#425a46" />
+      <stop offset="1" stop-color="#20362b" />
+    </radialGradient>
+    <clipPath id="art30-clip-path-1">
+      <path d="M1000.675 177.237 L636.984 177.237 L636.984 503.7 L1000.675 503.7 Z" />
+    </clipPath>
+    <linearGradient id="art30-linear-gradient-1" x1="992.084" y1="376.285" x2="946.265" y2="376.285" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43574d" />
+      <stop offset="1" stop-color="#293e35" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-2" x1="991.511" y1="458.977" x2="960.583" y2="458.977" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43574d" />
+      <stop offset="1" stop-color="#293e35" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-3" x1="974.329" y1="451.759" x2="849.471" y2="451.759" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43574d" />
+      <stop offset="1" stop-color="#293e35" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-4" x1="938.246" y1="410.057" x2="876.963" y2="410.057" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b7b194" />
+      <stop offset="1" stop-color="#8d927c" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-5" x1="851.981" y1="375.976" x2="813.51" y2="349.038" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43574d" />
+      <stop offset="1" stop-color="#293e35" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-6" x1="758.75" y1="410.755" x2="754.707" y2="364.54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43574d" />
+      <stop offset="1" stop-color="#293e35" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-7" x1="934.81" y1="312.775" x2="890.709" y2="312.775" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5a580" />
+      <stop offset="1" stop-color="#98775a" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-8" x1="956.465" y1="254.688" x2="882.794" y2="254.688" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5a580" />
+      <stop offset="1" stop-color="#b28c6a" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-9" x1="686.695" y1="403.704" x2="683.562" y2="367.89" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5a580" />
+      <stop offset="1" stop-color="#b28c6a" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-10" x1="561" y1="630.7" x2="561" y2="503.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#95815b" />
+      <stop offset="1" stop-color="#625b41" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-11" x1="229.5" y1="484.7" x2="229.5" y2="143.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eadbb8" />
+      <stop offset="1" stop-color="#cdb78e" />
+    </linearGradient>
+    <linearGradient id="art30-linear-gradient-12" x1="611" y1="540.7" x2="611" y2="201.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eadbb8" />
+      <stop offset="1" stop-color="#cdb78e" />
+    </linearGradient>
+  </defs>
+  <rect xmlns="http://www.w3.org/2000/svg" x="1" y="0.7" width="1120" height="630" fill="url(#art30-radial-gradient-1)" stroke="#bfb28f" stroke-width="1.4" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="1" y1="413.7" x2="1121" y2="413.7" fill="none" stroke="#718068" stroke-width="2" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="818" y="56.7" width="219" height="277" fill="#243d32" stroke="#78856a" stroke-width="6" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="832" y="70.7" width="191" height="248" fill="#73876e" stroke="#aab194" stroke-width="2" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="927" y1="70.7" x2="927" y2="318.7" fill="none" stroke="#324c3d" stroke-width="7" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="832" y1="183.7" x2="1023" y2="183.7" fill="none" stroke="#324c3d" stroke-width="7" stroke-miterlimit="10" />
+    <polygon xmlns="http://www.w3.org/2000/svg" points="837,311.7 1021,216.7 1021,310.7" fill="#637b66" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="40" y="90.7" width="269" height="300" fill="#24382d" stroke="#68785e" stroke-width="2" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="52" y="201.7" width="246" height="12" fill="#958259" stroke="#bdad7f" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="64" y="112.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="69" y1="124.7" x2="90" y2="124.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="69" y1="182.7" x2="90" y2="182.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="106" y="112.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="111" y1="124.7" x2="132" y2="124.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="111" y1="182.7" x2="132" y2="182.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="148" y="112.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="153" y1="124.7" x2="174" y2="124.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="153" y1="182.7" x2="174" y2="182.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="190" y="112.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="195" y1="124.7" x2="216" y2="124.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="195" y1="182.7" x2="216" y2="182.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="232" y="112.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="237" y1="124.7" x2="258" y2="124.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="237" y1="182.7" x2="258" y2="182.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="52" y="335.7" width="246" height="12" fill="#958259" stroke="#bdad7f" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="64" y="247.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="69" y1="259.7" x2="90" y2="259.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="69" y1="317.7" x2="90" y2="317.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="106" y="247.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="111" y1="259.7" x2="132" y2="259.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="111" y1="317.7" x2="132" y2="317.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="148" y="247.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="153" y1="259.7" x2="174" y2="259.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="153" y1="317.7" x2="174" y2="317.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="190" y="247.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="195" y1="259.7" x2="216" y2="259.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="195" y1="317.7" x2="216" y2="317.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect xmlns="http://www.w3.org/2000/svg" x="232" y="247.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="237" y1="259.7" x2="258" y2="259.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line xmlns="http://www.w3.org/2000/svg" x1="237" y1="317.7" x2="258" y2="317.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <polygon xmlns="http://www.w3.org/2000/svg" points="1,523.7 1121,503.7 1121,630.7 1,630.7" fill="url(#art30-linear-gradient-10)" stroke="#baa77a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M11 533.7 C304.333 517.033 671 513.7 1111 523.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M11 550.7 C304.333 534.033 671 530.7 1111 540.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M11 567.7 C304.333 551.033 671 547.7 1111 557.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M11 584.7 C304.333 568.033 671 564.7 1111 574.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M11 601.7 C304.333 585.033 671 581.7 1111 591.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M11 618.7 C304.333 602.033 671 598.7 1111 608.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    </g><g transform="translate(135 135) scale(0.7526316 0.7526316) translate(-0.0 -0.0)"><defs xmlns="http://www.w3.org/2000/svg">
+    <linearGradient id="art31-linear-gradient-1" x1="40" y1="347.536" x2="120" y2="347.536" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#698177" />
+      <stop offset="1" stop-color="#465e54" />
+    </linearGradient>
+    <linearGradient id="art31-linear-gradient-2" x1="41" y1="491.914" x2="95" y2="491.914" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#698177" />
+      <stop offset="1" stop-color="#465e54" />
+    </linearGradient>
+    <linearGradient id="art31-linear-gradient-3" x1="90" y1="399.4" x2="276" y2="399.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#698177" />
+      <stop offset="1" stop-color="#465e54" />
+    </linearGradient>
+    <linearGradient id="art31-linear-gradient-4" x1="252" y1="348.451" x2="334" y2="348.451" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#698177" />
+      <stop offset="1" stop-color="#465e54" />
+    </linearGradient>
+    <linearGradient id="art31-linear-gradient-5" x1="285" y1="496.929" x2="366" y2="496.929" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#698177" />
+      <stop offset="1" stop-color="#465e54" />
+    </linearGradient>
+    <linearGradient id="art31-linear-gradient-6" x1="68" y1="397" x2="175" y2="397" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b8a782" />
+      <stop offset="1" stop-color="#8f8e69" />
+    </linearGradient>
+    <linearGradient id="art31-linear-gradient-7" x1="140" y1="236.647" x2="217" y2="236.647" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0b18b" />
+      <stop offset="1" stop-color="#9c8465" />
+    </linearGradient>
+    <linearGradient id="art31-linear-gradient-8" x1="102.191" y1="135.229" x2="230.819" y2="135.229" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0b18b" />
+      <stop offset="1" stop-color="#c1a07b" />
+    </linearGradient>
+  </defs>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-Layer_1" data-name="Layer 1">
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_08_brazo_lejano" data-name="08_brazo_lejano">
+    <path d="M97 262 C79.667 260 67 267.667 59 285 L40 415 C53.333 431.667 70 437 90 431 L120 306 Z" fill="url(#art31-linear-gradient-1)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M71 292 L55 397 M95 315 L78 415" fill="none" stroke="#b7b794" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_09_antebrazo_lejano" data-name="09_antebrazo_lejano">
+    <path d="M41 406 C57.667 398.667 74.333 401 91 413 L95 572 L57 582 L43 516 Z" fill="url(#art31-linear-gradient-2)" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <polygon points="52,557 94,553 96,576 57,584" fill="#ddd2b2" stroke="#2d4238" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="64" y1="435" x2="69" y2="542" fill="none" stroke="#b7b794" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_10_mano_lejana" data-name="10_mano_lejana">
+    <path d="M62 573 C72 567 86 567 94 574 L100 597 L105 618 C105 622.667 103.333 625 100 625 C97.333 625.667 94.667 621.333 92 612 L97 639 C97 643 95.333 645 92 645 C88.667 645.667 86 638 84 622 L87 645 C86.333 649.667 84 651.333 80 650 L73 624 L75 646 C73.667 650 71.333 650.667 68 648 L62 621 L56 604 C52 609.333 48.333 610.333 45 607 C43 604.333 44.333 597.667 49 587 Z" fill="#c1a07b" stroke="#2d4238" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_11_torso" data-name="11_torso">
+    <path d="M108 256 C161.333 236.667 210.333 237.667 255 259 L276 343 L260 493 L274 543 C220.667 559.667 162 561 98 547 L109 476 L90 333 Z" fill="url(#art31-linear-gradient-3)" stroke="#2d4238" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M134 260 C172 284 206.333 283 237 257 L230 278 C201.333 300 171.667 300.667 141 280 Z" fill="#ded4b4" stroke="#2d4238" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M189 296 L190 533 M130 335 C152 406.333 160.667 469.333 156 524 M247 331 C224.333 399.667 215.333 465.333 220 528" fill="none" stroke="#b2b89c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="189.5" cy="330.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10" />
+    <circle cx="189.5" cy="361.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10" />
+    <circle cx="189.5" cy="392.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10" />
+    <circle cx="189.5" cy="423.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10" />
+    <circle cx="189.5" cy="454.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10" />
+    <circle cx="189.5" cy="485.5" r="3.5" fill="#c2b28b" stroke="#2d4238" stroke-width="0.7" stroke-miterlimit="10" />
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_12_brazo_cercano" data-name="12_brazo_cercano">
+    <path d="M252 258 C274 258 290 268.333 300 289 L334 426 C318.667 439.333 302.667 442.333 286 435 L253 344 Z" fill="url(#art31-linear-gradient-4)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M282 290 L316 413 M271 326 L296 414" fill="none" stroke="#b7b794" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_13_antebrazo_cercano" data-name="13_antebrazo_cercano">
+    <path d="M285 415 C301 407 317.333 408.333 334 419 L366 568 L327 584 L302 521 Z" fill="url(#art31-linear-gradient-5)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <polygon points="322,558 363,546 370,572 329,585" fill="#ded3b3" stroke="#2d4238" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M307 444 C317 483.333 326.333 516.333 335 543" fill="none" stroke="#b7b794" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_14_mano_cercana" data-name="14_mano_cercana">
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_15_chal" data-name="15_chal">
+    <path d="M141 246 C122.333 253.333 103.667 265.333 85 282 L103 359 L139 410 L175 487 L154 548 L124 493 L85 414 L68 360 L76 282 L123 246 Z" fill="url(#art31-linear-gradient-6)" stroke="#d6c49c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M94 285 C96.667 321.667 107 353.333 125 380 C147 421.333 161 458 167 490 M84 297 C85.333 335.667 95 369 113 397 L148 485" fill="none" stroke="#ded0a7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="127" y1="505" x2="117" y2="530" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="131" y1="508" x2="121" y2="533" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="135" y1="511" x2="125" y2="536" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="139" y1="514" x2="129" y2="539" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="143" y1="517" x2="133" y2="542" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="147" y1="520" x2="137" y2="545" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="151" y1="523" x2="141" y2="548" fill="none" stroke="#c7b991" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_18_cuello" data-name="18_cuello">
+    <path d="M143 204 L211 206 L217 258 C193.667 274 168 273 140 255 Z" fill="url(#art31-linear-gradient-7)" stroke="#2d4238" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M147 216 C165.667 230.667 186 231 208 217" fill="none" stroke="#9c8465" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_20_cabeza" data-name="20_cabeza">
+    <g id="art31-cabello_recogido_trasero">
+      <ellipse cx="91.5" cy="169" rx="22.5" ry="28" fill="#4a4b3c" stroke="#2d4238" stroke-width="2" stroke-miterlimit="10" />
+      <path d="M79 155 C91 151.667 99 159.667 103 179" fill="none" stroke="#8a8c6e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g id="art31-oreja_visible">
+      <ellipse cx="104" cy="142.5" rx="14" ry="21.5" fill="#c1a07b" stroke="#2d4238" stroke-width="1.5" stroke-miterlimit="10" />
+      <path d="M106 130 C94 123 94 145 105 153 M104 134 C100.667 137.333 101 140.667 105 144" fill="none" stroke="#9c8465" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g id="art31-rostro_base">
+      <path d="M114 55 C133 32 185 28 211 50 C228 68 233 95 230 124 L226 172 C223 208 205 231 178 235 C149 235 125 217 114 190 L106 156 C100 124 100 84 114 55 Z" fill="url(#art31-linear-gradient-8)" stroke="#2d4238" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M217 79 C224 108 224 145 218 174 C214 198 198 219 175 227 L178 235 C206 230 223 208 226 172 L230 124 C233 95 228 69 216 57 Z" fill="#c1a07b" />
+      <path d="M126 175 C133.333 178.333 141 179 149 177 M217 176 C215 182 212.333 186.333 209 189 M166 221 C174 224.333 182 224.333 190 221" fill="none" stroke="#9c8465" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g id="art31-nariz_central">
+      <path d="M177 135 C174 145 175 154 179 160 C183 163.333 187 163 191 159 C187 157 184.667 153.333 184 148 L183 134 Z" fill="#c1a07b" />
+      <path d="M175 132 C172 143 172 153 176 160 C180 163.333 184 163.333 188 160" fill="none" stroke="#8d7055" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M173 164 C175 162.667 176.667 163 178 165 M187 164 C189 162 190.667 161.667 192 163" fill="none" stroke="#9c8465" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g id="art31-cabello">
+      <path d="M98 121 C76 60 103 16 146 17 C184 9.667 210.667 21.333 226 52 L230 110 L213 99 C202.333 69 190 51.333 176 46 C158 70.667 137.333 86 114 92 L113 137 Z" fill="#454638" stroke="#2d4238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M178 33 C153.333 42.333 131.667 58.667 113 82 M183 31 C203 45 215.333 65.333 220 92" fill="none" stroke="#8a8c6e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+      <ellipse cx="105" cy="167.5" rx="3" ry="4.5" fill="#bea978" stroke="#2d4238" stroke-miterlimit="10" />
+    </g>
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_21_ojos_abiertos" data-name="21_ojos_abiertos">
+    <path d="M127 130 C136.333 122.667 146 122.667 156 130 C146.667 135.333 137 135.333 127 130 Z" fill="#e9dfc8" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <ellipse cx="143.5" cy="129.5" rx="3.5" ry="5.5" fill="#2d4238" />
+    <path d="M186 130 C194 123.333 202.667 123.333 212 130 C203.333 134.667 194.667 134.667 186 130 Z" fill="#e9dfc8" stroke="#2d4238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <ellipse cx="200.5" cy="130" rx="3.5" ry="5" fill="#2d4238" />
+    <path d="M128 139 C137.333 141.667 146.333 141.333 155 138 M187 139 C196.333 141 204.667 140.333 212 137" fill="none" stroke="#9c8465" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_25_cejas_atencion" data-name="25_cejas_atencion">
+    <path d="M126 114 L155 119 M187 119 L213 113" fill="none" stroke="#454638" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g xmlns="http://www.w3.org/2000/svg" id="art31-_28_boca_reposo" data-name="28_boca_reposo">
+    <path d="M161 193 C174.333 197 186.667 196.333 198 191" fill="none" stroke="#644f40" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M169 204 C177.667 206.667 185.333 206.333 192 203" fill="none" stroke="#9c8465" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</g><path d="M0 514 Q567 509 1280 487 V720 H0 Z" fill="url(#nogal)" stroke="#a78a61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><g transform="translate(608 137) rotate(-4) scale(1.0)"><g transform="translate(21 24)" opacity="0.065"><path d="M3 20 Q119 16 186 19 L232 48 L552 42 L564 489 Q389 498 29 491 Z" fill="#20251e" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(16 19)" opacity="0.09"><path d="M3 20 Q119 16 186 19 L232 48 L552 42 L564 489 Q389 498 29 491 Z" fill="#20251e" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(12 15)" opacity="0.14"><path d="M3 20 Q119 16 186 19 L232 48 L552 42 L564 489 Q389 498 29 491 Z" fill="#20251e" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(9 12)" opacity="0.22"><path d="M3 20 Q119 16 186 19 L232 48 L552 42 L564 489 Q389 498 29 491 Z" fill="#20251e" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></g><path d="M3 20 Q119 16 186 19 L232 48 L552 42 L564 489 Q389 498 29 491 Z" fill="url(#carton)" stroke="#b29266" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><g transform="translate(0.00 14)"><path d="M26 32 Q234 29 530 34 L547 455 Q282 469 25 459 Z" fill="#bca784" stroke="#7d6d52" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(1.60 10)"><path d="M26 32 Q234 29 530 34 L547 455 Q282 469 25 459 Z" fill="#dfcfa7" stroke="#7d6d52" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(3.20 6)"><path d="M26 32 Q234 29 530 34 L547 455 Q282 469 25 459 Z" fill="#bca784" stroke="#7d6d52" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(4.80 2)"><path d="M26 32 Q234 29 530 34 L547 455 Q282 469 25 459 Z" fill="#dfcfa7" stroke="#7d6d52" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(6.40 -2)"><path d="M26 32 Q234 29 530 34 L547 455 Q282 469 25 459 Z" fill="#bca784" stroke="#7d6d52" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/></g><path d="M26 31 Q205 26 524 28 L553 54 L548 462 Q278 469 24 461 Z" fill="url(#folio-lino)" stroke="#bda174" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M523 28 L552 54 L521 57 Q526 44 523 28 Z" fill="url(#pliegue)" stroke="#ae9770" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M43 58 L43 444 M516 72 L516 434 M46 445 Q292 449 514 440" fill="none" stroke="#a98a62" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 66 q10.3 2 23 7" fill="none" stroke="#f7e6c0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 424 q29.2 -4 65 1" fill="none" stroke="#f7e6c0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M460 447 q19.8 -12 44 -7" fill="none" stroke="#f7e6c0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M453 53 q21.2 -2 47 3" fill="none" stroke="#f7e6c0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 118 q12.6 -2 28 3" fill="none" stroke="#f7e6c0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M49 24 L81 21 L82 93 L65 83 L51 92 Z" fill="#aa6954" stroke="#c89470" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M55 30 L57 80 M74 28 L75 80" fill="none" stroke="#d59c75" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><text x="92" y="89" fill="#314536" font-size="26" font-family="Georgia" font-weight="700" text-anchor="start">Ignacia Novoa de Arredondo</text><text x="53" y="147" fill="#314536" font-size="26" font-family="Georgia" font-weight="400" text-anchor="start">Solicitud de compensación</text><path d="M53 160 Q282 162 511 159" fill="none" stroke="#987d56" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><text x="53" y="220" fill="#314536" font-size="25" font-family="Georgia" font-weight="400" text-anchor="start">Hacienda expropiada</text><text x="53" y="267" fill="#314536" font-size="25" font-family="Georgia" font-weight="400" text-anchor="start">500 personas esclavizadas</text><text x="53" y="314" fill="#314536" font-size="25" font-family="Georgia" font-weight="400" text-anchor="start">32 años de ganancias reclamadas</text><path d="M55 353 Q280 351 494 353 M55 373 Q284 371 493 374 M55 391 Q234 389 428 389" fill="none" stroke="#ab9570" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/><text x="54" y="427" fill="#6b6850" font-size="16" font-family="Arial" font-weight="400" text-anchor="start">Resumen del reclamo</text></g><g transform="translate(83 531) rotate(0) scale(0.99)"><g transform="translate(18 18)" opacity="0.065"><path d="M3 4 Q212.4 0 450 5 L452 157 Q198.9 161 4 158 Z" fill="#20251e" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(13 13)" opacity="0.09"><path d="M3 4 Q212.4 0 450 5 L452 157 Q198.9 161 4 158 Z" fill="#20251e" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(9 9)" opacity="0.14"><path d="M3 4 Q212.4 0 450 5 L452 157 Q198.9 161 4 158 Z" fill="#20251e" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(6 6)" opacity="0.22"><path d="M3 4 Q212.4 0 450 5 L452 157 Q198.9 161 4 158 Z" fill="#20251e" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></g><path d="M3 4 Q212.4 0 450 5 L452 157 Q198.9 161 4 158 Z" fill="url(#papel-hoja)" stroke="#b89f76" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="14" y="15" width="423" height="131" rx="0" fill="none" stroke="#b59c71" stroke-width="1"/><text x="27" y="58" fill="#314536" font-size="26" font-family="Georgia" font-weight="700" text-anchor="start">Comisión acordada con Elías</text><text x="27" y="101" fill="#314536" font-size="24" font-family="Georgia" font-weight="400" text-anchor="start">Acuerdo legítimo según Quiroz</text><text x="27" y="134" fill="#66694f" font-size="15" font-family="Arial" font-weight="400" text-anchor="start">Nota editorial</text></g><g opacity="0.72"><rect x="0" y="0" width="1280" height="720" rx="0" fill="url(#vineta-novoa)" stroke="none" stroke-width="1"/></g></svg>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El folio cambia de manos</title>
+<style>
+  :root { color-scheme: dark; background: #1a241f; color: #ece1c7; font: 16px system-ui; }
+  body { margin: 0 auto; max-width: 1120px; padding: 20px; }
+  h1 { font: 400 clamp(24px, 4vw, 36px) Georgia, serif; margin: 0 0 14px; }
+  svg { display: block; width: 100%; height: auto; border: 1px solid #70614a; }
+  .controls { display: flex; align-items: center; gap: 14px; margin-top: 14px; }
+  button { padding: 9px 14px; border-radius: 4px; background: #e1c797; color: #22261f; border: 0; font: inherit; }
+  input { flex: 1; min-width: 60px; accent-color: #d8b986; }
+  output { font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<h1>El folio cambia de manos</h1>
+<div id="plano">{{ESCENA}}</div>
+<div class="controls">
+  <button id="play" type="button">Reproducir</button>
+  <input id="time" aria-label="Tiempo del plano" type="range" min="0" step=".01" value="0">
+  <output id="seconds" for="time"></output>
+</div>
+<script>
+  const closeFrames = {{TIEMPOS}};
+  const armAngles = {{BRAZOS}};
+  const cameraAngles = {{CAMARA}};
+  const overheadAt = cameraAngles.cenital;
+  const duration = closeFrames.at(-1)[0];
+  const general = document.getElementById("general");
+  const overhead = document.getElementById("cenital");
+  const play = document.getElementById("play");
+  const time = document.getElementById("time");
+  const seconds = document.getElementById("seconds");
+  const nodes = new Map([...document.querySelectorAll("[data-motion]")].map(node => [node.dataset.motion, node]));
+  time.max = duration;
+
+  const mix = (a, b, p) => a + (b - a) * p;
+  const fraction = (t, a, b) => Math.max(0, Math.min(1, (t - a) / (b - a)));
+  const ease = p => p * p * (3 - 2 * p);
+  const move = (name, value) => nodes.get(name).setAttribute("transform", value);
+  const fade = (name, value) => nodes.get(name).setAttribute("opacity", value);
+  const show = (node, visible) => node.setAttribute("display", visible ? "inline" : "none");
+  function turnPoint(x, y, angle) {
+    const a = angle * Math.PI / 180;
+    return [x * Math.cos(a) - y * Math.sin(a), x * Math.sin(a) + y * Math.cos(a)];
+  }
+
+  function wide(t) {
+    const camera = ease(fraction(t, .24, overheadAt));
+    const reach = ease(fraction(t, .5, overheadAt));
+    const zoom = mix(1, cameraAngles.zoom, camera);
+    const centerY = mix(376, cameraAngles.centro_y, camera);
+    move("camara", `translate(640 376) scale(${zoom}) translate(-640 ${-centerY})`);
+    move("fondo", `translate(${-13 * camera} ${-8 * camera}) scale(${1 + .027 * camera})`);
+    for (const [role, [shoulder, shoulderDelta, elbow, elbowDelta]] of Object.entries(armAngles)) {
+      const p = role === "reclamante" ? reach : ease(fraction(t, .88, overheadAt));
+      move(`${role}-hombro`, `rotate(${shoulder + shoulderDelta * p} 526 391)`);
+      move(`${role}-codo`, `rotate(${elbow + elbowDelta * p} 572 519)`);
+    }
+    const [shoulder, shoulderDelta, elbow, elbowDelta] = armAngles.reclamante;
+    const [dx, dy] = turnPoint(618 - 572, 714 - 519, elbow + elbowDelta * reach);
+    const [gx, gy] = turnPoint(572 - 526 + dx, 519 - 391 + dy, shoulder + shoulderDelta * reach);
+    move("folio-plano-general", `translate(${85 + .485 * (526 + gx)} ${78 + .485 * (391 + gy)}) rotate(${6 * reach})`);
+    move("motas", `translate(${t * 7} ${-t * 4})`);
+    fade("motas", .24 + .09 * Math.sin(t * 2));
+    fade("nombres", 1 - fraction(t, .55, 1.19));
+    fade("retroceso", 1 - fraction(t, .91, 1.57));
+  }
+
+  function paperAt(t) {
+    const next = closeFrames.findIndex(frame => frame[0] > t);
+    if (next < 0) return closeFrames.at(-1).slice(1);
+    const before = closeFrames[next - 1];
+    const after = closeFrames[next];
+    const p = ease(fraction(t, before[0], after[0]));
+    return before.slice(1).map((value, index) => mix(value, after[index + 1], p));
+  }
+
+  function hand(name, x, y, side, tilt = 0) {
+    const transform = `translate(${x} ${y}) rotate(${tilt}) scale(${side} 1)`;
+    move(`${name}-base`, transform);
+    nodes.get(`${name}-pulgar`)?.setAttribute("transform", transform);
+  }
+
+  function close(t) {
+    const [x, y, angle, sx, sy, sa] = paperAt(t);
+    const radians = angle * Math.PI / 180;
+    const anchor = column => [
+      x + (column * Math.cos(radians) - 284 * Math.sin(radians)) * .56,
+      y + (column * Math.sin(radians) + 284 * Math.cos(radians)) * .56,
+    ];
+    move("folio", `translate(${x} ${y}) rotate(${angle}) scale(.56)`);
+    move("sobre", `translate(${sx} ${sy}) rotate(${sa}) scale(.64)`);
+    const left = anchor(21);
+    const right = anchor(627);
+    const withdrawal = ease(fraction(t, 4.06, 4.91));
+    const departing = t > 4.06;
+    const release = paperAt(4.06);
+    hand("izquierda", departing ? mix(release[0] + 21 * .56, -140, withdrawal) : left[0],
+         departing ? mix(release[1] + 284 * .56, 460, withdrawal) : left[1], 1);
+    fade("izquierda-pulgar", 1 - fraction(t, 4.06, 4.22));
+    hand("derecha", ...right, -1);
+    const opening = ease(fraction(t, 1.89, 3.43));
+    const contact = t >= 3.43;
+    hand("receptora", mix(1040, right[0], opening), mix(365, right[1], opening), -1);
+    show(nodes.get("receptora-base"), !contact);
+    show(nodes.get("derecha-base"), contact);
+    show(nodes.get("derecha-pulgar"), contact);
+    const receive = ease(fraction(t, 5.68, 6.62));
+    hand("pago", mix(-190, 286, receive), mix(665, 571, receive), 1, -28);
+    move("luz-cenital", `translate(${(x - 455) * .29} ${(y - 180) * .19})`);
+    const slide = fraction(t, 4.37, 6.85);
+    fade("rastro", Math.sin(slide * Math.PI) * .58);
+  }
+
+  function render(t) {
+    show(general, t < overheadAt);
+    show(overhead, t >= overheadAt);
+    if (t >= overheadAt) close(t);
+    else wide(t);
+    time.value = t;
+    seconds.value = `${t.toFixed(1)} s`;
+    document.body.dataset.ready = "true";
+  }
+
+  let current = Number(new URLSearchParams(location.search).get("t") ?? 0);
+  current = Math.max(0, Math.min(duration, Number.isFinite(current) ? current : 0));
+  let animation = 0;
+
+  function pause() {
+    cancelAnimationFrame(animation);
+    animation = 0;
+    play.textContent = current >= duration ? "Repetir" : "Reproducir";
+  }
+
+  play.addEventListener("click", () => {
+    if (animation) {
+      pause();
+      return;
+    }
+    if (current >= duration) current = 0;
+    const start = performance.now() - current * 1000;
+    play.textContent = "Pausar";
+    function tick(now) {
+      current = Math.min(duration, (now - start) / 1000);
+      render(current);
+      if (current < duration) animation = requestAnimationFrame(tick);
+      else pause();
+    }
+    animation = requestAnimationFrame(tick);
+  });
+  time.addEventListener("input", () => {
+    current = Number(time.value);
+    pause();
+    render(current);
+  });
+  render(current);
+</script>
+</body>
+</html>

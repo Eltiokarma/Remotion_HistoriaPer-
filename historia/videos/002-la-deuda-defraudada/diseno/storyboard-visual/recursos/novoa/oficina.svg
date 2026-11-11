@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1121.4 631.4" width="1121.4" height="631.4"><defs>
+    <radialGradient id="radial-gradient-1" cx="561" cy="315.7" r="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#425a46" />
+      <stop offset="1" stop-color="#20362b" />
+    </radialGradient>
+    <clipPath id="clip-path-1">
+      <path d="M1000.675 177.237 L636.984 177.237 L636.984 503.7 L1000.675 503.7 Z" />
+    </clipPath>
+    <linearGradient id="linear-gradient-1" x1="992.084" y1="376.285" x2="946.265" y2="376.285" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43574d" />
+      <stop offset="1" stop-color="#293e35" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="991.511" y1="458.977" x2="960.583" y2="458.977" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43574d" />
+      <stop offset="1" stop-color="#293e35" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="974.329" y1="451.759" x2="849.471" y2="451.759" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43574d" />
+      <stop offset="1" stop-color="#293e35" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="938.246" y1="410.057" x2="876.963" y2="410.057" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b7b194" />
+      <stop offset="1" stop-color="#8d927c" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="851.981" y1="375.976" x2="813.51" y2="349.038" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43574d" />
+      <stop offset="1" stop-color="#293e35" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="758.75" y1="410.755" x2="754.707" y2="364.54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43574d" />
+      <stop offset="1" stop-color="#293e35" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="934.81" y1="312.775" x2="890.709" y2="312.775" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5a580" />
+      <stop offset="1" stop-color="#98775a" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="956.465" y1="254.688" x2="882.794" y2="254.688" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5a580" />
+      <stop offset="1" stop-color="#b28c6a" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-9" x1="686.695" y1="403.704" x2="683.562" y2="367.89" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5a580" />
+      <stop offset="1" stop-color="#b28c6a" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="561" y1="630.7" x2="561" y2="503.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#95815b" />
+      <stop offset="1" stop-color="#625b41" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-11" x1="229.5" y1="484.7" x2="229.5" y2="143.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eadbb8" />
+      <stop offset="1" stop-color="#cdb78e" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-12" x1="611" y1="540.7" x2="611" y2="201.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eadbb8" />
+      <stop offset="1" stop-color="#cdb78e" />
+    </linearGradient>
+  </defs>
+  <rect x="1" y="0.7" width="1120" height="630" fill="url(#radial-gradient-1)" stroke="#bfb28f" stroke-width="1.4" stroke-miterlimit="10" />
+    <line x1="1" y1="413.7" x2="1121" y2="413.7" fill="none" stroke="#718068" stroke-width="2" stroke-miterlimit="10" />
+    <rect x="818" y="56.7" width="219" height="277" fill="#243d32" stroke="#78856a" stroke-width="6" stroke-miterlimit="10" />
+    <rect x="832" y="70.7" width="191" height="248" fill="#73876e" stroke="#aab194" stroke-width="2" stroke-miterlimit="10" />
+    <line x1="927" y1="70.7" x2="927" y2="318.7" fill="none" stroke="#324c3d" stroke-width="7" stroke-miterlimit="10" />
+    <line x1="832" y1="183.7" x2="1023" y2="183.7" fill="none" stroke="#324c3d" stroke-width="7" stroke-miterlimit="10" />
+    <polygon points="837,311.7 1021,216.7 1021,310.7" fill="#637b66" />
+    <rect x="40" y="90.7" width="269" height="300" fill="#24382d" stroke="#68785e" stroke-width="2" stroke-miterlimit="10" />
+    <rect x="52" y="201.7" width="246" height="12" fill="#958259" stroke="#bdad7f" stroke-miterlimit="10" />
+    <rect x="64" y="112.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="69" y1="124.7" x2="90" y2="124.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="69" y1="182.7" x2="90" y2="182.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect x="106" y="112.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="111" y1="124.7" x2="132" y2="124.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="111" y1="182.7" x2="132" y2="182.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect x="148" y="112.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="153" y1="124.7" x2="174" y2="124.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="153" y1="182.7" x2="174" y2="182.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect x="190" y="112.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="195" y1="124.7" x2="216" y2="124.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="195" y1="182.7" x2="216" y2="182.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect x="232" y="112.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="237" y1="124.7" x2="258" y2="124.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="237" y1="182.7" x2="258" y2="182.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect x="52" y="335.7" width="246" height="12" fill="#958259" stroke="#bdad7f" stroke-miterlimit="10" />
+    <rect x="64" y="247.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="69" y1="259.7" x2="90" y2="259.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="69" y1="317.7" x2="90" y2="317.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect x="106" y="247.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="111" y1="259.7" x2="132" y2="259.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="111" y1="317.7" x2="132" y2="317.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect x="148" y="247.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="153" y1="259.7" x2="174" y2="259.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="153" y1="317.7" x2="174" y2="317.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect x="190" y="247.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="195" y1="259.7" x2="216" y2="259.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="195" y1="317.7" x2="216" y2="317.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <rect x="232" y="247.7" width="31" height="88" fill="#6f7755" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="237" y1="259.7" x2="258" y2="259.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <line x1="237" y1="317.7" x2="258" y2="317.7" fill="none" stroke="#b7ab7b" stroke-miterlimit="10" />
+    <polygon points="1,523.7 1121,503.7 1121,630.7 1,630.7" fill="url(#linear-gradient-10)" stroke="#baa77a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M11 533.7 C304.333 517.033 671 513.7 1111 523.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M11 550.7 C304.333 534.033 671 530.7 1111 540.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M11 567.7 C304.333 551.033 671 547.7 1111 557.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M11 584.7 C304.333 568.033 671 564.7 1111 574.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M11 601.7 C304.333 585.033 671 581.7 1111 591.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M11 618.7 C304.333 602.033 671 598.7 1111 608.7" fill="none" stroke="#605c43" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
