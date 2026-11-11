@@ -104,5 +104,11 @@
   "s07": [
    "[calm] [warm] Próximo episodio: La deuda defraudada."
   ]
- }
+ },
+ "ganancia_frases": {
+  "s04": {
+   "0": -3
+  }
+ },
+ "nota_ganancia": "Ajustes a mano, en dB, después de la nivelación. s04·0: «Casi con seguridad…» entra después del silencio en que termina s03 y sonaba fuerte (Gerson, 2026-11-11, minuto 2:25)."
 }

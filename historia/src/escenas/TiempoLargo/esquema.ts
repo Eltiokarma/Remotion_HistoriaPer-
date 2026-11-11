@@ -17,6 +17,12 @@ export const esquema = z.object({
   titulares: z.array(z.string()).min(1).max(4),
   /** Ficha que aparece con las capas (el autor de la idea). */
   ficha: z.string().optional(),
+  /**
+   * Ficha de contexto de la época (lugar o gobierno · fechas), a máquina, con el muro de afiches:
+   * aparece en el beat `afiches` y se va cuando llega el volante. Guía al espectador en el tiempo
+   * (DIRECCION_DE_VIDEO §2.7). Pedida por Gerson el 2026-11-11 para el gobierno militar de Velasco.
+   */
+  ficha_epoca: z.string().optional(),
   capas: z.object({ rapida: z.string(), media: z.string(), lenta: z.string() }),
   /** Nombres que pasan rápido por la capa de arriba. */
   gobiernos: z.array(z.string()).min(3),

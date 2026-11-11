@@ -88,7 +88,7 @@ NIVELAR = 0.65   # cuánto se acerca cada frase al nivel medio de la escena (1 =
 NIVEL_COMUN = -13.3   # nivel de frase (RMS de su mitad más fuerte) común a todo el episodio: da ~−16 LUFS
 
 
-def nivelar(x, pos):
+def nivelar(x, pos, ajustes=None):
     """Gerson (2026-11-10): «se siguen sintiendo saltos de volumen». Cada frase se acerca al nivel
     medio de la escena un 65 % (los susurros quedan algo más bajos, sin saltar), y el cambio de
     ganancia ocurre en la pausa entre frases, con una rampa de coseno: nunca dentro de una palabra."""
@@ -103,6 +103,9 @@ def nivelar(x, pos):
     # Gerson (2:25, 3:16, 5:23): los saltos estaban en los cambios de escena, porque cada escena se
     # normalizaba sola. Ahora: la escena entera al nivel común del episodio, y cada frase un 65 % hacia él.
     ganancias = [float(np.clip((NIVEL_COMUN - medio) + (medio - n) * NIVELAR, -12, 12)) for n in niveles]
+    # ajustes a mano por frase (narracion.json → "ganancia_frases": {"s04": {"0": -3}}), en dB
+    for k, db in (ajustes or {}).items():
+        ganancias[int(k)] += db
     env = np.ones(len(x), np.float32) * 10 ** (ganancias[0] / 20)
     for i in range(1, len(pos)):
         a, b = pos[i - 1]["hasta"], pos[i]["desde"]
@@ -213,7 +216,7 @@ def escena(video, s, cfg, prov):
     tmp = Path("/tmp") / f"narracion-{s}.mp3"
     fr_guion = [{"texto": re.sub(r"\[[^\]]*\]\s*", "", tx).strip()} for tx in textos]
     pos, ratio = frases_en_la_toma(x, fr_guion, tmp)
-    x = nivelar(x, pos)
+    x = nivelar(x, pos, cfg.get("ganancia_frases", {}).get(s))
     x, eventos_pisados = limpiar_eventos(x)
     limpiados = len(EVENTOS) - len(eventos_pisados)
     # respiros: si el guion pide 1,4 s o más y la toma respiró menos, se agrega aire en medio de la pausa

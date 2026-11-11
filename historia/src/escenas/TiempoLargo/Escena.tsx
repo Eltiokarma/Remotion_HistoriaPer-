@@ -284,6 +284,13 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
         </AbsoluteFill>
       ) : null}
 
+      {/* la ficha de la época: con el muro, arriba a la izquierda (los afiches empiezan en y = 130) */}
+      {!pizarra && conEpoca && props.ficha_epoca && t >= tAfiches && t < tVolante + 1 ? (
+        <div style={{ position: 'absolute', left: 120, top: 70 }}>
+          <Ficha texto={props.ficha_epoca} t={t - tAfiches} color={pal.papel} acento={pal.rojo} size={26} salida={tramo(t, tVolante - 0.2, 0.8, 'natural')} />
+        </div>
+      ) : null}
+
       {/* la ficha de quien tuvo la idea: puede llegar antes que las capas */}
       {!pizarra && props.ficha && t >= tBraudel ? (
         <div style={{ position: 'absolute', left: 120, top: 70 }}>

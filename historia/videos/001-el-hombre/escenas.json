@@ -397,7 +397,8 @@
           "emblema": "vectorcraft/tanda05-ingreso-v2.json",
           "aviso_emblema": "Interpretación vectorial del escudo tradicional",
           "panfletos": "vectorcraft/panfletos-contenido-v2.json"
-        }
+        },
+        "ficha_epoca": "GOBIERNO MILITAR DE VELASCO · 1968–1975"
       },
       "audio": {
         "musica": {
