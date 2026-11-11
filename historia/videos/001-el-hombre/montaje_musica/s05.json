@@ -1,20 +1,71 @@
 {
   "salida": "s05-aprender-a-medir.mp3",
-  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. F desde sus stems; el clarinete entra con «cuánto pesa»",
+  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. F desde sus stems; el clarinete entra con «cuánto pesa». El tema del canal entra con «Pero no se olvidó de aquella tesis…» y sigue en s07 (Gerson, 11/11/2026: que el sentimiento empiece antes del archivador)",
   "dur": "escena",
   "lufs_ref": null,
   "capas": [
     {
       "archivo": "suno/stems-F/0 Keyboard.wav",
-      "inicio": 0
+      "inicio": 0,
+      "env": [
+        [
+          -1000000000.0,
+          1
+        ],
+        [
+          "tesis",
+          -1.5,
+          1
+        ],
+        [
+          "tesis",
+          0.5,
+          0
+        ]
+      ],
+      "db": -5.56
     },
     {
       "archivo": "suno/stems-F/1 Strings.wav",
-      "inicio": 0
+      "inicio": 0,
+      "env": [
+        [
+          -1000000000.0,
+          1
+        ],
+        [
+          "tesis",
+          -1.5,
+          1
+        ],
+        [
+          "tesis",
+          0.5,
+          0
+        ]
+      ],
+      "db": -5.56
     },
     {
       "archivo": "suno/stems-F/2 Synth.wav",
-      "inicio": 0
+      "inicio": 0,
+      "env": [
+        [
+          -1000000000.0,
+          1
+        ],
+        [
+          "tesis",
+          -1.5,
+          1
+        ],
+        [
+          "tesis",
+          0.5,
+          0
+        ]
+      ],
+      "db": -5.56
     },
     {
       "archivo": "suno/stems-F/3 Woodwinds.wav",
@@ -27,6 +78,38 @@
         ],
         [
           "pendiente",
+          1.0,
+          1
+        ],
+        [
+          "tesis",
+          -1.5,
+          1
+        ],
+        [
+          "tesis",
+          0.5,
+          0
+        ]
+      ],
+      "db": -5.56
+    },
+    {
+      "archivo": "fuente-tema-canal.mp3",
+      "ancla": [
+        "tesis",
+        -0.5
+      ],
+      "db": 0,
+      "continua": true,
+      "env": [
+        [
+          "tesis",
+          -0.5,
+          0
+        ],
+        [
+          "tesis",
           1.0,
           1
         ]

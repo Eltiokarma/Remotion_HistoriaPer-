@@ -301,138 +301,138 @@
   ]
  },
  "s05": {
-  "duracion": 93.519,
+  "duracion": 97.679,
   "frases": [
    {
-    "texto": "A comienzos de los ochenta hace algo poco común.",
+    "texto": "Después hace algo poco común.",
     "desde": 0.3,
-    "hasta": 3.06,
+    "hasta": 2.2,
     "cubre": 1.0
    },
    {
     "texto": "Buena parte de los historiadores peruanos miraba a París.",
-    "desde": 3.72,
-    "hasta": 6.42,
+    "desde": 3.42,
+    "hasta": 6.24,
     "cubre": 1.0
    },
    {
     "texto": "Era la ciudad de Braudel, el de la larga duración.",
-    "desde": 7.04,
-    "hasta": 9.7,
+    "desde": 7.1,
+    "hasta": 9.64,
     "cubre": 1.0
    },
    {
     "texto": "Ahí se habían formado sus propios profesores.",
-    "desde": 10.42,
-    "hasta": 12.7,
+    "desde": 10.5,
+    "hasta": 12.82,
     "cubre": 1.0
    },
    {
     "texto": "Él se va a Nueva York, a la Universidad de Columbia.",
-    "desde": 13.4,
-    "hasta": 15.86,
+    "desde": 13.96,
+    "hasta": 16.559,
     "cubre": 1.0
    },
    {
     "texto": "Allí, el historiador Herbert Klein se fija en él y le ofrece una beca.",
-    "desde": 18.11,
-    "hasta": 21.45,
-    "cubre": 0.9285714285714286
+    "desde": 18.809,
+    "hasta": 22.749,
+    "cubre": 1.0
    },
    {
     "texto": "Y aprende historia cuantitativa: pensar el pasado con números, no solo con discursos.",
-    "desde": 22.41,
-    "hasta": 27.23,
+    "desde": 24.189,
+    "hasta": 28.989,
     "cubre": 1.0
    },
    {
     "texto": "Una de sus herramientas se llama regresión.",
-    "desde": 28.68,
-    "hasta": 30.68,
+    "desde": 30.439,
+    "hasta": 32.439,
     "cubre": 1.0
    },
    {
     "texto": "Imagina muchos puntos desordenados: cada uno, un dato.",
-    "desde": 31.42,
-    "hasta": 34.88,
+    "desde": 33.379,
+    "hasta": 36.799,
     "cubre": 1.0
    },
    {
     "texto": "A simple vista, solo ruido.",
-    "desde": 35.48,
-    "hasta": 37.0,
+    "desde": 37.659,
+    "hasta": 39.359,
     "cubre": 1.0
    },
    {
     "texto": "La regresión busca la línea que mejor pasa entre todos.",
-    "desde": 37.86,
-    "hasta": 40.7,
+    "desde": 40.359,
+    "hasta": 43.319,
     "cubre": 1.0
    },
    {
     "texto": "Si hay una tendencia, ayuda a verla.",
-    "desde": 41.26,
-    "hasta": 43.2,
+    "desde": 44.119,
+    "hasta": 46.079,
     "cubre": 1.0
    },
    {
     "texto": "Y dice cuánto pesa.",
-    "desde": 43.9,
-    "hasta": 45.08,
+    "desde": 47.079,
+    "hasta": 48.199,
     "cubre": 1.0
    },
    {
     "texto": "Aprendió a trabajar con cifras y a contrastarlas con documentos.",
-    "desde": 47.03,
-    "hasta": 50.15,
+    "desde": 50.149,
+    "hasta": 53.669,
     "cubre": 1.0
    },
    {
     "texto": "Años después, llevaría esa disciplina al estudio de la corrupción en el Perú.",
-    "desde": 50.87,
-    "hasta": 54.27,
+    "desde": 54.649,
+    "hasta": 58.409,
     "cubre": 1.0
    },
    {
     "texto": "De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad.",
-    "desde": 56.85,
-    "hasta": 62.47,
+    "desde": 60.969,
+    "hasta": 66.589,
     "cubre": 1.0
    },
    {
     "texto": "Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la historia financiera del Perú.",
-    "desde": 64.42,
-    "hasta": 69.679,
+    "desde": 68.539,
+    "hasta": 73.799,
     "cubre": 1.0
    },
    {
     "texto": "Y sus ideas también se mueven.",
-    "desde": 71.129,
-    "hasta": 72.509,
+    "desde": 75.249,
+    "hasta": 76.649,
     "cubre": 1.0
    },
    {
     "texto": "De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades.",
-    "desde": 73.229,
-    "hasta": 79.309,
-    "cubre": 0.9444444444444444
+    "desde": 77.389,
+    "hasta": 83.469,
+    "cubre": 1.0
    },
    {
     "texto": "Cambió de ideas.",
-    "desde": 80.759,
-    "hasta": 81.559,
+    "desde": 84.919,
+    "hasta": 85.719,
     "cubre": 1.0
    },
    {
     "texto": "Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión.",
-    "desde": 82.339,
-    "hasta": 85.999,
+    "desde": 86.499,
+    "hasta": 90.159,
     "cubre": 1.0
    },
    {
     "texto": "Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro.",
-    "desde": 87.999,
-    "hasta": 93.339,
+    "desde": 92.159,
+    "hasta": 97.499,
     "cubre": 1.0
    }
   ]

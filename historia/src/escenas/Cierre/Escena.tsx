@@ -60,7 +60,7 @@ export const Cierre: React.FC<EscenaProps<P>> = ({ escena, props, video }) => {
             <GotaMercurio id={`${escena.id}-gota`} size={150} latido={t - tTarjeta} caida={tramo(t, tTarjeta + 0.5, 0.7, 'tenso')} tras={t - (tTarjeta + 1.2)} />
           </div>
         ) : null}
-        <Tarjeta paleta={pal} etiqueta={props.proximo.etiqueta} destacado={props.proximo.anio} titulo={props.proximo.titulo} k={tramo(t, tTarjeta, 1.6, 'natural')} />
+        <Tarjeta paleta={pal} etiqueta={props.proximo.etiqueta} destacado={props.proximo.anio} titulo={props.proximo.titulo} k={tramo(t, tTarjeta, 1.6, 'natural')} destacarTitulo={props.proximo.destacar === 'titulo'} />
       </AbsoluteFill>
       {props.ficha ? props.ficha.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`k${i}`} nombre={`tecla-${(i % 3) + 1}`} en={tFicha + i / CPS} fps={fps} volumen={0.3} />)) : null}
       <Sfx nombre="carpeta" en={tGolpe} fps={fps} volumen={0.8} />

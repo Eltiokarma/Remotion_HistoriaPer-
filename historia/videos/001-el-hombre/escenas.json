@@ -621,7 +621,7 @@
       "id": "s05",
       "seccion": "método",
       "componente": "AprenderAMedir",
-      "duracion_s": 93.52,
+      "duracion_s": 97.68,
       "cola_s": 1,
       "intensidad": 2,
       "cambio": "de un estudiante con una pregunta a un historiador que mide, que cambió de ideas y que no soltó aquella deuda",
@@ -629,34 +629,35 @@
       "transicion_salida": "corte",
       "beats": {
         "mapa": 0.2,
-        "paris": 4.03,
-        "duda": 12.78,
-        "sale": 13.4,
-        "llega": 15.93,
-        "abre": 16.57,
-        "ficha": 18.1,
-        "puntos": 23.33,
-        "discursos": 26.54,
-        "caen": 31.4,
-        "recta": 38.02,
-        "pendiente": 44.7,
-        "balanza": 56.9,
-        "profundidad": 60.79,
-        "claridad": 61.85,
-        "estante": 64.4,
-        "temas": 66.83,
-        "brujula": 71.12,
-        "giro": 74.58,
-        "regresion": 30.16,
-        "izquierda": 73.16,
-        "tiza": 80.77,
-        "frase": 84.07,
-        "serie": 50.85,
-        "paris_notas": 10.4,
-        "observacion": 33.69,
-        "residuos": 39.28,
-        "tendencia": 41.83,
-        "causalidad": 47.03
+        "paris": 3.74,
+        "duda": 12.95,
+        "sale": 13.96,
+        "llega": 16.63,
+        "abre": 17.27,
+        "ficha": 18.8,
+        "puntos": 25.11,
+        "discursos": 28.3,
+        "caen": 33.35,
+        "recta": 40.53,
+        "pendiente": 47.84,
+        "balanza": 61.02,
+        "profundidad": 64.91,
+        "claridad": 65.97,
+        "estante": 68.52,
+        "temas": 70.95,
+        "brujula": 75.24,
+        "giro": 78.74,
+        "regresion": 31.92,
+        "izquierda": 77.32,
+        "tiza": 84.93,
+        "frase": 88.23,
+        "serie": 54.62,
+        "paris_notas": 10.48,
+        "observacion": 35.62,
+        "residuos": 41.84,
+        "tendencia": 44.69,
+        "causalidad": 50.15,
+        "tesis": 92.16
       },
       "props": {
         "origen": {
@@ -813,7 +814,7 @@
       "audio": {
         "musica": {
           "archivo": "s05-aprender-a-medir.mp3",
-          "nivel": 0.29
+          "nivel": 0.55
         },
         "ambientes": [
           {
@@ -823,7 +824,7 @@
         ],
         "duck_db": -15
       },
-      "estado_musica": "presente (Suno F: piano; el clarinete entra con «cuánto pesa»)",
+      "estado_musica": "presente (Suno F: piano; el clarinete entra con «cuánto pesa») → con «no se olvidó de aquella tesis» entra el tema del canal y sigue en el cierre",
       "beats_ajustados": true
     },
     {
@@ -847,7 +848,8 @@
         "proximo": {
           "etiqueta": "Próximo",
           "anio": "1850",
-          "titulo": "La deuda defraudada"
+          "titulo": "La deuda defraudada",
+          "destacar": "titulo"
         },
         "laminas": {
           "carpeta": "vectorcraft/tanda05-carpeta-v2.json"
@@ -867,7 +869,7 @@
         ],
         "duck_db": -12
       },
-      "estado_musica": "protagonista (el tema del canal entra antes del negro y se queda ~5 s más sobre la tarjeta)",
+      "estado_musica": "protagonista: el tema del canal viene sonando desde la última frase de s05 y se queda sobre la tarjeta",
       "camara": [
         {
           "beat": "tarjeta",

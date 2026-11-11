@@ -109,3 +109,21 @@ los enlaces de Suno (`fuentes.md`).
 - `s05` se genera en dos tramos, partidos en el respiro de 2,45 s después de «…la corrupción en el
   Perú»: con la frase nueva, ElevenLabs devolvía 502 a la toma entera.
 - Curva de intensidad: 4 3 1 3 3 **5** 2 1 (el pico en el guano, el respiro en el viaje). 5:39.
+
+## Fechas, tarjeta y música final (2026-11-11)
+
+> «Se repite mucho 80s… no hay que dejar de decir la fecha.» · «El siguiente episodio: *La deuda
+> defraudada* más grande, y la fecha entre paréntesis, pequeñita.» · «La música del final hay que
+> recorrerla hacia el video y el texto, para que el feeling empiece antes, no solo cuando se cierra
+> el archivador.»
+
+- **Fechas:** queda «En su tesis de 1980…»; `s05` abre con «Después hace algo poco común» (antes:
+  «A comienzos de los ochenta…», pegado al 1980).
+- **Tarjeta:** `proximo.destacar: "titulo"` (opción nueva de `Cierre`/`Tarjeta`; el 000 no cambia):
+  «La deuda defraudada» a 118 px y «(1850)» a 40 px debajo.
+- **Tema del canal:** entra en `s05` con «Pero no se olvidó de aquella tesis…» (~6,7 s antes del
+  cierre), mientras F se apaga, y sigue en `s07` sin corte; en el corte arranca a −15 dB (como llega,
+  agachado bajo la voz) y crece en 2 s con el archivador.
+- **Error corregido:** `montar_musica.py` medía la voz con ffprobe (incluye el relleno del MP3) y daba
+  un cuadro de más por escena: los empalmes entre escenas (B s01→s02 desde el PR #9, y el tema)
+  quedaban corridos 33 ms. Ahora mide el audio decodificado, como Remotion.

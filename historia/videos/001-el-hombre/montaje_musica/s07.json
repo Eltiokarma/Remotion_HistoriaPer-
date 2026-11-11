@@ -1,0 +1,25 @@
+{
+  "salida": "s07-tema.mp3",
+  "nota": "tiempos anclados a beats. El tema del canal viene sonando desde la última frase de s05 (capa 4 de s05.json) y sigue aquí sin corte; fuente: fuente-tema-canal.mp3 (el tema sintetizado de generar_audio.py). Arranca a −15 dB (como llega de s05, todavía agachada bajo la voz) y crece en 2 s mientras se cierra el archivador: sin salto en el corte",
+  "dur": "escena",
+  "lufs_ref": null,
+  "capas": [
+    {
+      "archivo": "fuente-tema-canal.mp3",
+      "viene_de_capa": [
+        "s05",
+        4
+      ],
+      "env": [
+        [
+          -0.4,
+          0.18
+        ],
+        [
+          2.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}
