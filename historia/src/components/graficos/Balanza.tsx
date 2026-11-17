@@ -1,6 +1,7 @@
 import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
+import { LAMPARA } from '../../estilo/lampara';
 import { CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
@@ -41,6 +42,12 @@ const BalanzaLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: str
   return (
     <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ position: 'absolute', inset: 0 }}>
       <DefsLamina lamina={lamina} uid={uid} />
+      {/* Sombras de la lámpara sobre el plano de atrás, debajo de todo y con el mismo movimiento que su pieza.
+          La de la cruz viene ya desplazada en la lámina: gira sobre el pivote desplazado, no sobre el real. */}
+      <CapaVC lamina={lamina} uid={uid} nombre="Sombra___Base_y_columna" opcional />
+      <CapaVC lamina={lamina} uid={uid} nombre="Sombra___Platillo_izquierdo" transform={`translate(${iz.dx} ${iz.dy})`} opcional />
+      <CapaVC lamina={lamina} uid={uid} nombre="Sombra___Platillo_derecho" transform={`translate(${de.dx} ${de.dy})`} opcional />
+      <CapaVC lamina={lamina} uid={uid} nombre="Sombra___Brazo" transform={`rotate(${angulo} ${CX + LAMPARA.sombra.dx} ${CY + LAMPARA.sombra.dy})`} opcional />
       <CapaVC lamina={lamina} uid={uid} nombre="Base_fija" />
       <CapaVC lamina={lamina} uid={uid} nombre="Columna_fija" />
       <CapaVC lamina={lamina} uid={uid} nombre="Platillo_izquierdo" transform={`translate(${iz.dx} ${iz.dy})`} />

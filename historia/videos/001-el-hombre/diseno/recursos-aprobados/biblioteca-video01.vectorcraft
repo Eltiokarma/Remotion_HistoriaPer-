@@ -1,7 +1,8 @@
 {
   "format": "vectorcraft",
   "version": 4,
-  "generator": "VectorCraft 0.22.0",
+  "generator": "VectorCraft 0.24.1",
+  "pdfCompatible": false,
   "document": {
     "version": 3,
     "title": "Video 01 — Biblioteca",
@@ -146,6 +147,549 @@
                     1.0,
                     0.0,
                     0.0
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 84,
+        "name": "Sombra — Repisa",
+        "kind": {
+          "type": "layer",
+          "color": {
+            "Preset": 2
+          },
+          "template": false,
+          "printable": true,
+          "children": [
+            {
+              "id": 92,
+              "name": "sombra",
+              "opacity": 0.6,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.047058824,
+                        "g": 0.039215688,
+                        "b": 0.02745098
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "blur.gaussian",
+                    "params": {
+                      "radius": 10
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            163.0,
+                            919.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            198.0,
+                            884.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1738.0,
+                            884.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1788.0,
+                            919.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1788.0,
+                            959.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            163.0,
+                            959.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 93,
+        "name": "Sombra — Libro 1",
+        "kind": {
+          "type": "layer",
+          "color": {
+            "Preset": 3
+          },
+          "template": false,
+          "printable": true,
+          "children": [
+            {
+              "id": 110,
+              "name": "sombra",
+              "opacity": 0.6,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.047058824,
+                        "g": 0.039215688,
+                        "b": 0.02745098
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "blur.gaussian",
+                    "params": {
+                      "radius": 10
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            336.0,
+                            355.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            358.0,
+                            340.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            583.0,
+                            340.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            583.0,
+                            865.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            581.0,
+                            866.3636363636364
+                          ]
+                        },
+                        {
+                          "p": [
+                            581.0,
+                            880.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            561.0,
+                            880.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            336.0,
+                            880.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 111,
+        "name": "Sombra — Libro 2",
+        "kind": {
+          "type": "layer",
+          "color": {
+            "Preset": 4
+          },
+          "template": false,
+          "printable": true,
+          "children": [
+            {
+              "id": 128,
+              "name": "sombra",
+              "opacity": 0.6,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.047058824,
+                        "g": 0.039215688,
+                        "b": 0.02745098
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "blur.gaussian",
+                    "params": {
+                      "radius": 10
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            666.0,
+                            385.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            688.0,
+                            370.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            913.0,
+                            370.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            913.0,
+                            865.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            911.0,
+                            866.3636363636364
+                          ]
+                        },
+                        {
+                          "p": [
+                            911.0,
+                            880.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            891.0,
+                            880.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            666.0,
+                            880.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 129,
+        "name": "Sombra — Libro 3",
+        "kind": {
+          "type": "layer",
+          "color": {
+            "Preset": 5
+          },
+          "template": false,
+          "printable": true,
+          "children": [
+            {
+              "id": 146,
+              "name": "sombra",
+              "opacity": 0.6,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.047058824,
+                        "g": 0.039215688,
+                        "b": 0.02745098
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "blur.gaussian",
+                    "params": {
+                      "radius": 10
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            996.0,
+                            355.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1018.0,
+                            340.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1243.0,
+                            340.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1243.0,
+                            865.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1241.0,
+                            866.3636363636364
+                          ]
+                        },
+                        {
+                          "p": [
+                            1241.0,
+                            880.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1221.0,
+                            880.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            996.0,
+                            880.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 147,
+        "name": "Sombra — Libro 4",
+        "kind": {
+          "type": "layer",
+          "color": {
+            "Preset": 6
+          },
+          "template": false,
+          "printable": true,
+          "children": [
+            {
+              "id": 165,
+              "name": "sombra",
+              "opacity": 0.6,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.047058824,
+                        "g": 0.039215688,
+                        "b": 0.02745098
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "blur.gaussian",
+                    "params": {
+                      "radius": 10
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            1326.0,
+                            385.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1348.0,
+                            370.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1573.0,
+                            370.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1573.0,
+                            865.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1571.0,
+                            866.3636363636364
+                          ]
+                        },
+                        {
+                          "p": [
+                            1571.0,
+                            880.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1551.0,
+                            880.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1326.0,
+                            880.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
                   ]
                 }
               }
@@ -620,6 +1164,125 @@
                         }
                       ],
                       "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 173,
+              "name": "luz-lampara",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9411765,
+                              "b": 0.78431374
+                            },
+                            "opacity": 0.16,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.35,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9411765,
+                              "b": 0.78431374
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.6,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.45,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 0.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            145.0,
+                            885.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            180.0,
+                            850.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1720.0,
+                            850.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1770.0,
+                            885.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1770.0,
+                            925.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            145.0,
+                            925.0
+                          ]
+                        }
+                      ],
+                      "closed": true
                     }
                   ]
                 }
@@ -1599,6 +2262,137 @@
                           "p": [
                             432.0,
                             652.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 190,
+              "name": "luz-lampara",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9411765,
+                              "b": 0.78431374
+                            },
+                            "opacity": 0.2,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.3,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9411765,
+                              "b": 0.78431374
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.62,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.42,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 0.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            310.0,
+                            325.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            332.0,
+                            310.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            557.0,
+                            310.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            557.0,
+                            835.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            555.0,
+                            836.3636363636364
+                          ]
+                        },
+                        {
+                          "p": [
+                            555.0,
+                            850.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            535.0,
+                            850.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            310.0,
+                            850.0
                           ]
                         }
                       ],
@@ -2590,6 +3384,137 @@
                   ]
                 }
               }
+            },
+            {
+              "id": 207,
+              "name": "luz-lampara",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9411765,
+                              "b": 0.78431374
+                            },
+                            "opacity": 0.2,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.3,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9411765,
+                              "b": 0.78431374
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.62,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.42,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 0.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            640.0,
+                            355.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            662.0,
+                            340.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            887.0,
+                            340.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            887.0,
+                            835.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            885.0,
+                            836.3636363636364
+                          ]
+                        },
+                        {
+                          "p": [
+                            885.0,
+                            850.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            865.0,
+                            850.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            640.0,
+                            850.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
             }
           ]
         }
@@ -3565,6 +4490,137 @@
                           "p": [
                             1092.0,
                             652.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 224,
+              "name": "luz-lampara",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9411765,
+                              "b": 0.78431374
+                            },
+                            "opacity": 0.2,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.3,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9411765,
+                              "b": 0.78431374
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.62,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.42,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 0.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            970.0,
+                            325.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            992.0,
+                            310.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1217.0,
+                            310.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1217.0,
+                            835.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1215.0,
+                            836.3636363636364
+                          ]
+                        },
+                        {
+                          "p": [
+                            1215.0,
+                            850.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1195.0,
+                            850.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            970.0,
+                            850.0
                           ]
                         }
                       ],
@@ -4607,6 +5663,137 @@
                           "p": [
                             1422.0,
                             682.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 242,
+              "name": "luz-lampara",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9411765,
+                              "b": 0.78431374
+                            },
+                            "opacity": 0.2,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.3,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9411765,
+                              "b": 0.78431374
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.62,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.42,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 0.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            1300.0,
+                            355.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1322.0,
+                            340.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1547.0,
+                            340.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1547.0,
+                            835.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1545.0,
+                            836.3636363636364
+                          ]
+                        },
+                        {
+                          "p": [
+                            1545.0,
+                            850.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1525.0,
+                            850.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1300.0,
+                            850.0
                           ]
                         }
                       ],
@@ -5686,7 +6873,7 @@
     },
     "raster_effects_ppi": 72.0,
     "images": {},
-    "next_id": 84,
+    "next_id": 243,
     "metadata": {
       "author": "",
       "authorTitle": "",
@@ -5697,8 +6884,27 @@
       "copyrightNotice": "",
       "copyrightUrl": "",
       "created": 1794197650,
-      "modified": null
-    }
+      "modified": 1794923351
+    },
+    "last_view": {
+      "name": "",
+      "center": {
+        "x": 960.0,
+        "y": 1008.7279843444227
+      },
+      "zoom": 0.5322916666666667,
+      "rotation": 0.0
+    },
+    "layers_open": [
+      1,
+      2,
+      4,
+      12,
+      29,
+      46,
+      63,
+      81
+    ]
   },
   "images": {}
 }

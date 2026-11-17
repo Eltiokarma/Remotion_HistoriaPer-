@@ -22,6 +22,7 @@ import { anticipa, asienta, beat, clamp, estiraCon, impacto, mix, tramo, velocid
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
+import { LAMPARA } from '../../estilo/lampara';
 import type { esquema } from './esquema';
 
 type P = z.infer<typeof esquema>;
@@ -251,6 +252,8 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
           return (
             <div style={{ position: 'absolute', left: FICHERO.x, top: FICHERO.y, opacity: kF, transform: `translateY(${(1 - kF) * 30}px)` }}>
               <RecorteLamina lamina={lFichero} caja={FICHERO.caja} ancho={FICHERO.ancho} capas={[
+                // la sombra del fichero sobre la pizarra, hacia el lado contrario de la lámpara (lámina afinada)
+                { nombre: 'Sombra___Fichero', opcional: true },
                 { nombre: 'Caja_de_madera' },
                 ...fichas.map((n, j) => ({ nombre: n, transform: `translate(0 ${-60 * tramo(t, tCaen - 0.9 + j * 0.35, 0.5, 'pesado') * (1 - tramo(t, tCaen + 0.6 + j * 0.35, 0.6, 'natural'))})` })),
                 { nombre: 'Cajón_frontal' }, { nombre: 'Porte-étiquette' }, { nombre: 'Poignée' },
@@ -296,14 +299,18 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
 
       {muestra(3) ? (
         <AbsoluteFill style={{ opacity: entra(tBalanza), backgroundColor: noche }}>
-          <Luz color={pal.ocre} x={50} y={35} radio={60} intensidad={0.2} />
+          {/* Con las láminas afinadas, la misma lámpara del estudio en los tres objetos (balanza, estante, brújula):
+              ilumina la pared donde caen las sombras que traen dibujadas. Sin lámina, la luz de siempre (el 000 no cambia). */}
+          {lBalanza ? <Luz color={pal.ocre} x={LAMPARA.x} y={LAMPARA.y} radio={LAMPARA.radio} intensidad={LAMPARA.intensidad} />
+            : <Luz color={pal.ocre} x={50} y={35} radio={60} intensidad={0.2} />}
           <Balanza paleta={pal} id={`${escena.id}-bal`} angulo={angulo} izquierda={props.balanza[0]} derecha={props.balanza[1]} cae={[cae1, cae2]} lamina={lBalanza} />
         </AbsoluteFill>
       ) : null}
 
       {muestra(4) ? (
         <AbsoluteFill style={{ opacity: entra(tEstante), backgroundColor: noche }}>
-          <Luz color={pal.ocre} x={50} y={50} radio={60} intensidad={0.2} />
+          {lEstante ? <Luz color={pal.ocre} x={LAMPARA.x} y={LAMPARA.y} radio={LAMPARA.radio} intensidad={LAMPARA.intensidad} />
+            : <Luz color={pal.ocre} x={50} y={50} radio={60} intensidad={0.2} />}
           <Estante paleta={pal} id={`${escena.id}-est`} titulos={props.temas} aparece={entra(tEstante)}
             entra={props.temas.map((_, i) => caidaLibro(i, t))} escalas={props.temas.map((_, i) => deformaLibro(i))} lamina={lEstante} />
           {props.ficha_estante ? (
@@ -329,7 +336,8 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {muestra(6) ? (
         <AbsoluteFill style={{ opacity: entra(tBrujula), backgroundColor: noche }}>
           {tizaK > 0 ? <Pizarra aparece={tizaK} /> : null}
-          <Luz color={pal.ocre} x={50} y={45} radio={55} intensidad={0.22 * (1 - tizaK)} />
+          {lBrujula ? <Luz color={pal.ocre} x={LAMPARA.x} y={LAMPARA.y} radio={LAMPARA.radio} intensidad={LAMPARA.intensidad * (1 - tizaK)} />
+            : <Luz color={pal.ocre} x={50} y={45} radio={55} intensidad={0.22 * (1 - tizaK)} />}
           <Brujula paleta={pal} id={`${escena.id}-bru`} angulo={anguloAguja} radio={ladoALado ? 250 : 290} tiza={tizaK} lamina={lBrujula}
             topes={ladoALado ? [-90, 90] : []}
             polos={ladoALado ? [{ texto: props.brujula[0], angulo: -90 }, { texto: props.brujula[1], angulo: 90 }]

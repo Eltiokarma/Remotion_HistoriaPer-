@@ -15,6 +15,12 @@ export const esquema = z.object({
   ficha: z.string(),
   /** La ficha grande y con brillo, para que no se olvide dónde estamos (DIRECCION_DE_VIDEO §2.1). */
   ficha_destacada: z.boolean().default(false),
+  /**
+   * Tamaño de la línea de tiempo (rótulos, grosor y marcas), 1 = como está. Al abrirse, el camino
+   * entero sigue ocupando el mismo ancho de pantalla: crece lo que se lee, no el recorrido
+   * (auditoría visual del 001, hoja 5).
+   */
+  linea_zoom: z.number().min(1).max(2).default(1),
   /** Encabezado de la página donde está la frase (p. ej. "Agradecimientos"). */
   seccion: z.string().default('Agradecimientos'),
   cita: z.object({

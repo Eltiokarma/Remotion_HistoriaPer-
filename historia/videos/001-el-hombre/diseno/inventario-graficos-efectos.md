@@ -148,3 +148,80 @@ oscuro; sobre papel no se leen. Si hacen falta, hay que decidir dónde ponerlos.
 | E12 | La línea llega a cada punto cuando ese punto se enciende; cada punto late; la banda 3–4 % se extiende de izquierda a derecha | `VectorCraft` (costo) |
 
 La guía de dirección (`DIRECCION_DE_VIDEO.md`) todavía dice «pequeña cruz»: es texto del director y no se tocó.
+
+## H. Afinado: una lámpara para el episodio (17 de noviembre de 2026, tanda 1)
+
+**Por qué.** Veredicto de la tanda 1 del laboratorio: «está bien, pero se ve muy plano». En s05 la balanza,
+el estante y la brújula flotaban cada uno en su vacío, con un halo centrado detrás: sin lado de luz ni de
+sombra, sin sombra proyectada, sin espacio común entre los tres cuadros. **Afirmación:** medir es un oficio
+de mesa; los tres son herramientas del mismo estudio, bajo la misma lámpara.
+
+**Qué se hizo** (VectorCraft por MCP, sobre los editables aprobados; ningún dibujo existente cambió):
+
+| Lámina | Modelado (pieza nueva al final de su capa, `luz-lampara`) | Capas de sombra nuevas (debajo de todo) |
+|---|---|---|
+| `balanza-video01` | Base, columna, cruz y los dos platillos: brillo cálido del lado de la lámpara, sombra del lado contrario | `Sombra — Base y columna`, `— Platillo izquierdo`, `— Platillo derecho`, `— Brazo móvil` |
+| `biblioteca-video01` | Repisa y los cuatro libros | `Sombra — Repisa`, `— Libro 1` … `— Libro 4` |
+| `brujula-video01` | Caja (disco exacto, no la unión: la unión tomaba la sombra vieja) y anilla. La sombra vieja (pieza 0 de la caja, recta hacia abajo) queda con opacidad 0 para no mover índices | `Sombra — Caja y anilla`; `Sombra — Aguja` sin desplazar: la escena la gira con la aguja y **después** la corre, porque la aguja da media vuelta |
+
+**Regla de las sombras.** Una sola luz, arriba a la izquierda (`src/estilo/lampara.ts`, `LAMPARA`): sombra
+proyectada (26, 38) px, desenfoque 9–11, `#0c0a07` al 55–60 %. Cada sombra se mueve con su pieza: la de un
+platillo con su traslado, la de la cruz gira sobre el pivote desplazado (986, 368), la de un libro cae y se
+aplasta desde su base desplazada. En s05 la `Luz` de los tres cuadros pasa del centro a la lámpara (34 %, 20 %):
+sin pared iluminada, una sombra sobre el negro no se lee. Sin lámina, todo sigue como antes (el 000 no cambia).
+
+**Qué se conserva.** Las piezas que ya existían mantienen su índice (lo nuevo va al final de cada capa o en
+capas aparte): giro de la cruz y del fiel, caída de tarjetas, caída y aplastamiento de libros, aguja de tope
+a tope y paso a tiza. `vectorcraft-piezas.mjs` regeneró solo estas tres láminas; las otras 17 salieron
+idénticas byte a byte.
+
+**Comprobado:** cuadros 1780–2600 de `v001-el-hombre-s05`, antes y después (sombras siguiendo la inclinación,
+la caída y el giro). `npm run reglas` sin violaciones; `tsc` sin errores en `src/`.
+**No comprobado:** el tramo en movimiento a velocidad real ni la vista previa completa (no se renderizó video);
+la lectura en un celular.
+
+### Tanda 2 (17 de noviembre de 2026): monedas, libro, pruebas y fichero
+
+| Lámina | Escena | En VectorCraft | En la escena |
+|---|---|---|---|
+| `tanda03-monedas` | s00 | Capa nueva `Luz de lámpara — monedas`: un disco con brillo arriba a la izquierda y canto en sombra por moneda (pieza k − 1 = moneda k) | Cada moneda lleva su capa de luz y una sombra en la mesa (`LAMPARA.apoyado`), un disco aparte que no gira con ella y la sigue al caer |
+| `tanda03-libro` | s00 | Modelado de cubierta, lomo (mira a la lámpara: más claro) y bloque de páginas, al final de cada capa | La sombra del libro, antes recta hacia abajo, cae hacia abajo a la derecha; la de la ficha del cálculo, también |
+| `tanda03-pruebas` | s01 | Luz suave sobre las hojas; capa `Sombra — Lápiz` sin desplazar | La sombra del lápiz va pegada a la punta mientras escribe; al levantarlo no sube con él, se separa y se aclara |
+| `tanda04-fichero` | s05 | Costado izquierdo iluminado (mira a la lámpara), frente que cae en sombra; capa `Sombra — Fichero` | La sombra cae sobre la pizarra de la regresión |
+
+En s00 y s01 la `Luz` pasa a la lámpara del estudio, con la intensidad propia de cada escena. Las piezas
+existentes mantienen su índice: la luz del libro entra en el grupo que ya se dibuja siempre (`Cubierta`,
+pieza 8), y la parte de la moneda dudosa que no se dibujaba (su rótulo, pieza 9) sigue fuera.
+
+### Tanda 3 (17 de noviembre de 2026): edificio, islas y carpeta
+
+| Lámina | Escena | En VectorCraft | En la escena |
+|---|---|---|---|
+| `edificio-estado-video01` | s06 | Ya traía la luz desde la izquierda (las columnas echan sombra a la derecha y el piso, hacia abajo a la derecha). Se suman la sombra de la cornisa sobre el muro y la caída de luz hacia la derecha, al final de `Fachada` | Sin cambios de código: `Fachada` se dibuja entera y las ventanas conservan sus índices (`v * 5 + 1`) |
+| `islas-guaneras-v3` | s06 | Regla de profundidad del paisaje (muestra 06), no la de la lámpara: es un grabado dentro del libro. Mar claro en el horizonte y oscuro adelante (al final de `Isla distante`), roca con su lado de sombra a la derecha (al final de `Acantilado`) y bruma al pie, recortada a la silueta de la isla (al final de `Guano`) | Sin cambios de código; los sacos del embarcadero conservan sus índices |
+| `tanda05-carpeta-v2` | s07 | Tapa iluminada arriba a la izquierda y en sombra abajo a la derecha (al final de `Tapa frontal`); la sombra verdosa de la base (pieza 0 de `Carpeta — volumen`) pasa a la sombra cálida y difusa de la lámpara, corrida a la derecha | La `Luz` del cierre pasa a la lámpara: el video termina bajo la misma luz con que abrió s01 |
+
+**Vale (s06): sin cambios.** La escena ya le da su sombra hacia abajo a la derecha (`drop-shadow` 4,6 y
+10,14 px), coherente con la lámpara; tocar la lámina no sumaba nada.
+
+### Tanda 4 (17 de noviembre de 2026): piscina, emblema y panfletos
+
+| Lámina | Escena | En VectorCraft | En la escena |
+|---|---|---|---|
+| `tanda04-piscina` | s02 | Capa nueva `Sombras en el fondo`: piezas 0–2, la sombra de cada corchera en el fondo, abajo a la derecha; piezas 3–4, el borde que sombrea el agua arriba y a la izquierda | Se dibuja entre los reflejos y las corcheras; la sombra de cada corchera se mece con ella |
+| `tanda05-ingreso-v2` | s03 | Disco de luz sobre el emblema (pieza 21): canto iluminado arriba a la izquierda, sombra abajo a la derecha | El recorte deja fuera solo la pieza 20 (el aviso, que la escena pone aparte) |
+| `panfletos-contenido-v2` | s03 | Caída de luz sobre papel e ilustración de cada panfleto, al final de su capa de ilustración (los textos van encima y no pierden contraste) | Sin cambios de código; la sombra de cada afiche ya caía abajo a la derecha |
+
+### Estado del afinado
+
+- **Afinadas (13):** balanza, biblioteca, brújula, monedas, libro, pruebas, fichero, edificio, islas, carpeta,
+  piscina, emblema, panfletos.
+- **Sin cambios, a propósito (7):** el vale (su sombra ya era coherente); `tanda05-tiempo-v2`, la flor y la
+  fecha de la muerte de Quiroz (pausa respetuosa sobre negro: sumarle luz y volumen competiría con el
+  silencio; queda para que Gerson decida); y las cinco de tiza o datos (pizarra, Lima, viaje, regresión,
+  costo), donde manda la fidelidad del dato.
+- **Una luz de s00 a s07:** `LAMPARA` en s00, s01, s05 y s07. En s06 el fondo es papel claro y las sombras
+  ya caían del mismo lado. La `Luz` del muro de afiches de s03 no se tocó.
+- **Pendiente:** la revisión de Gerson en movimiento (`e1-revision-laminas`); no se renderizó video.
+Las pizarras y los mapas (pizarra, Lima, viaje, regresión, costo) no llevan sombra proyectada: son tiza o
+datos, y la fidelidad del dato manda.

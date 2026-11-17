@@ -10,6 +10,7 @@ import { Tarjeta } from '../../components/texto/Tarjeta';
 import { beat, escala, impacto, mix, tramo } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
 import { mezclar } from '../../estilo/color';
+import { LAMPARA } from '../../estilo/lampara';
 import type { esquema } from './esquema';
 
 type P = z.infer<typeof esquema>;
@@ -38,7 +39,10 @@ export const Cierre: React.FC<EscenaProps<P>> = ({ escena, props, video }) => {
     <AbsoluteFill style={{ backgroundColor: mezclar(pal.fondo, '#000000', 0.3) }}>
       {/* La misma pila del inicio, ya corregida entera, se cierra: el libro está terminado. */}
       <AbsoluteFill style={{ opacity: mix(1, 0, negro) }}>
-        <Luz color={pal.ocre} x={50} y={40} radio={62} intensidad={0.22} />
+        {/* se cierra bajo la misma lámpara del estudio que abrió el video (s01): la carpeta afinada trae su luz y su sombra
+            con esa dirección. Sin lámina, la luz de siempre (el 000 no cambia). */}
+        {lCarpeta ? <Luz color={pal.ocre} x={LAMPARA.x} y={LAMPARA.y} radio={LAMPARA.radio} intensidad={LAMPARA.intensidad} />
+          : <Luz color={pal.ocre} x={50} y={40} radio={62} intensidad={0.22} />}
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ marginTop: 60, transformOrigin: '50% 100%', transform: escala(pila) }}>
             <Carpeta paleta={pal} id={`${escena.id}-carpeta`} cierre={cierre} width={lCarpeta ? 1080 : props.limpiar ? 620 : 500}

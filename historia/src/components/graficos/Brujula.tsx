@@ -1,6 +1,7 @@
 import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
+import { LAMPARA } from '../../estilo/lampara';
 import { FiltroTiza, TIZA } from '../texto/Tiza';
 import { RosaDeLosVientos } from './RosaDeLosVientos';
 import { CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
@@ -110,6 +111,7 @@ export const Brujula: React.FC<Props> = ({ paleta, id, angulo, polos, radio: R =
         <g opacity={1 - tiza}>
           <DefsLamina lamina={lamina} uid={uid} />
           <g transform={`translate(${cx} ${cy}) scale(${(R + 34) / 344}) translate(-960 -540)`}>
+            <CapaVC lamina={lamina} uid={uid} nombre="Sombra___Caja" opcional />
             {['Caja_de_bronce', 'Graduaciones', 'Rosa_grabada', 'Anilla_y_corona'].map((n) => <CapaVC key={n} lamina={lamina} uid={uid} nombre={n} />)}
           </g>
           {topes.map((a, i) => {
@@ -117,6 +119,8 @@ export const Brujula: React.FC<Props> = ({ paleta, id, angulo, polos, radio: R =
             return <circle key={`t${i}`} cx={x} cy={y} r={9} fill={mezclar(bronce, '#000000', 0.25)} stroke={mezclar(bronce, '#ffffff', 0.3)} strokeWidth={2} />;
           })}
           <g transform={`translate(${cx} ${cy}) scale(${(R + 34) / 344}) translate(-960 -540)`}>
+            {/* la sombra de la aguja cae sobre la esfera: se gira con la aguja y después se corre hacia la lámpara contraria */}
+            <CapaVC lamina={lamina} uid={uid} nombre="Sombra___Aguja" transform={`translate(${LAMPARA.sombraCercana.dx} ${LAMPARA.sombraCercana.dy}) rotate(${angulo} 960 540)`} opcional />
             <CapaVC lamina={lamina} uid={uid} nombre="Aguja_móvil" transform={`rotate(${angulo} 960 540)`} />
             <CapaVC lamina={lamina} uid={uid} nombre="Vidrio" />
           </g>

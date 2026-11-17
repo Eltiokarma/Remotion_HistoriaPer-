@@ -4,6 +4,7 @@ import { azar } from '../../direction/azar';
 import type { Paleta } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
+import { LAMPARA } from '../../estilo/lampara';
 import { CapaVC, DefsLamina, usePrefijo, type Lamina } from './vectorcraft/Lamina';
 
 type Props = {
@@ -42,19 +43,33 @@ const REPISA_LAMINA = 850;
 const EstanteLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: string }> = ({ titulos, entra, escalas = [], aparece = 1, lamina, uid }) => (
   <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ position: 'absolute', inset: 0 }}>
     <DefsLamina lamina={lamina} uid={uid} />
+    {/* Sombras de la lámpara en la pared: primero todas (la repisa tapa el pie de las de los libros), cada una con el
+        movimiento de su pieza; la de un libro que se aplasta se aplasta desde su propia base, desplazada como la sombra. */}
+    <CapaVC lamina={lamina} uid={uid} nombre="Sombra___Repisa" opacity={aparece} opcional />
+    {titulos.slice(0, 4).map((_, i) => {
+      const m = movLibro(lamina, i, entra, escalas, LAMPARA.sombra);
+      return m ? <CapaVC key={i} lamina={lamina} uid={uid} nombre={`Sombra___Libro_${i + 1}`} transform={m.transform} opacity={m.opacity} opcional /> : null;
+    })}
     <CapaVC lamina={lamina} uid={uid} nombre="Repisa_de_madera" opacity={aparece} />
     {titulos.slice(0, 4).map((_, i) => {
-      const k = clamp(entra[i] ?? 0);
-      if (k <= 0) return null;
-      const c = lamina.layers.find((l) => l.name.startsWith(`Libro_${i + 1}`));
-      const cx = c ? c.box[0] + c.box[2] / 2 : 960;
-      const e = escalas[i];
-      // Cae desde arriba (lo mismo que el dibujado) y se aplasta contra la madera desde su base.
-      const aplasta = e && (e.sx !== 1 || e.sy !== 1) ? ` translate(${cx} ${REPISA_LAMINA}) scale(${e.sx} ${e.sy}) translate(${-cx} ${-REPISA_LAMINA})` : '';
-      return <CapaVC key={i} lamina={lamina} uid={uid} nombre={`Libro_${i + 1}`} transform={`translate(0 ${(1 - k) * -560})${aplasta}`} opacity={Math.min(1, k * 3)} />;
+      const m = movLibro(lamina, i, entra, escalas);
+      return m ? <CapaVC key={i} lamina={lamina} uid={uid} nombre={`Libro_${i + 1}`} transform={m.transform} opacity={m.opacity} /> : null;
     })}
   </svg>
 );
+
+/** Caída y aplastamiento de un libro de la lámina; `desde` corre el punto de apoyo (para su sombra en la pared). */
+const movLibro = (lamina: Lamina, i: number, entra: number[], escalas: (Escala | undefined)[], desde = { dx: 0, dy: 0 }) => {
+  const k = clamp(entra[i] ?? 0);
+  if (k <= 0) return null;
+  const c = lamina.layers.find((l) => l.name.startsWith(`Libro_${i + 1}`));
+  const cx = (c ? c.box[0] + c.box[2] / 2 : 960) + desde.dx;
+  const base = REPISA_LAMINA + desde.dy;
+  const e = escalas[i];
+  // Cae desde arriba (lo mismo que el dibujado) y se aplasta contra la madera desde su base.
+  const aplasta = e && (e.sx !== 1 || e.sy !== 1) ? ` translate(${cx} ${base}) scale(${e.sx} ${e.sy}) translate(${-cx} ${-base})` : '';
+  return { transform: `translate(0 ${(1 - k) * -560})${aplasta}`, opacity: Math.min(1, k * 3) };
+};
 
 const EstanteDibujado: React.FC<Omit<Props, 'lamina'>> = ({ paleta, id, titulos, entra, escalas = [], aparece = 1 }) => {
   const libros = useMemo(() => {

@@ -1,7 +1,8 @@
 {
   "format": "vectorcraft",
   "version": 4,
-  "generator": "VectorCraft 0.22.0",
+  "generator": "VectorCraft 0.24.1",
+  "pdfCompatible": false,
   "document": {
     "version": 3,
     "title": "Tanda 3 — Pruebas de imprenta",
@@ -405,6 +406,161 @@
                     1.0,
                     530.0,
                     130.0
+                  ]
+                }
+              }
+            },
+            {
+              "id": 49,
+              "name": "luz-lampara",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9647059,
+                              "b": 0.8627451
+                            },
+                            "opacity": 0.14,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.4,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9647059,
+                              "b": 0.8627451
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.62,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.101960786,
+                              "g": 0.07058824,
+                              "b": 0.03137255
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.101960786,
+                              "g": 0.07058824,
+                              "b": 0.03137255
+                            },
+                            "opacity": 0.2,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": -40.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            530.0,
+                            900.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            530.0,
+                            130.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1180.0,
+                            130.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1180.0,
+                            166.2153846153846
+                          ]
+                        },
+                        {
+                          "p": [
+                            1210.0,
+                            167.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1209.5305258915978,
+                            202.82087447108603
+                          ]
+                        },
+                        {
+                          "p": [
+                            1250.0,
+                            205.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1220.0,
+                            955.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            555.0,
+                            918.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            555.3944614637986,
+                            911.4431738906245
+                          ]
+                        },
+                        {
+                          "p": [
+                            540.0,
+                            911.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            540.2890932982917,
+                            900.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
                   ]
                 }
               }
@@ -1758,6 +1914,111 @@
                         }
                       ],
                       "closed": false
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 40,
+        "name": "Sombra — Lápiz (sin desplazar; la escena la separa al levantarlo)",
+        "kind": {
+          "type": "layer",
+          "color": {
+            "Preset": 5
+          },
+          "template": false,
+          "printable": true,
+          "children": [
+            {
+              "id": 45,
+              "name": "sombra-lapiz",
+              "opacity": 0.42,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.047058824,
+                        "g": 0.039215688,
+                        "b": 0.02745098
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "blur.gaussian",
+                    "params": {
+                      "radius": 4
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            1300.0,
+                            807.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1428.0,
+                            329.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1446.0,
+                            334.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1318.0,
+                            812.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1307.4788273615636,
+                            834.899022801303
+                          ]
+                        },
+                        {
+                          "p": [
+                            1310.0,
+                            837.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1301.0,
+                            849.0
+                          ]
+                        }
+                      ],
+                      "closed": true
                     }
                   ]
                 }
@@ -3149,7 +3410,7 @@
     },
     "raster_effects_ppi": 72.0,
     "images": {},
-    "next_id": 40,
+    "next_id": 50,
     "metadata": {
       "author": "",
       "authorTitle": "",
@@ -3160,8 +3421,26 @@
       "copyrightNotice": "",
       "copyrightUrl": "",
       "created": 1794198693,
-      "modified": null
-    }
+      "modified": 1794924424
+    },
+    "last_view": {
+      "name": "",
+      "center": {
+        "x": 960.0,
+        "y": 540.0
+      },
+      "zoom": 0.5322916666666667,
+      "rotation": 0.0
+    },
+    "layers_open": [
+      1,
+      2,
+      4,
+      8,
+      24,
+      31,
+      36
+    ]
   },
   "images": {}
 }

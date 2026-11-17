@@ -123,6 +123,7 @@
       "props": {
         "ficha": "NUEVA YORK · 2012",
         "ficha_destacada": true,
+        "linea_zoom": 1.3,
         "seccion": "Agradecimientos",
         "cita": {
           "texto": "A mis médicos del hospital Memorial Sloan-Kettering les agradezco inmensamente el alargar estos días para poder completar la tarea.",
@@ -241,6 +242,8 @@
         "palabra_como": "cita",
         "ficha": "MARCOS CUETO · PRÓLOGO",
         "agua": "#2f7fa3",
+        "velocidad_agua": 280,
+        "reflejos_agua": 0.45,
         "lugar": {
           "codigo": 604,
           "lon": -77.04,
@@ -337,7 +340,7 @@
       "seccion": "su generación",
       "componente": "TiempoLargo",
       "duracion_s": 37.07,
-      "cola_s": 1,
+      "cola_s": 2.5,
       "intensidad": 3,
       "cambio": "de un estudiante que entra a la universidad a uno que se hace la pregunta de su generación: ¿el país cambia o se repite?",
       "intencion": "los afiches gritan cambio; con «¿o repetía lo de siempre?», el afiche nuevo se despega y debajo asoma uno viejo, igual de prometedor; la pregunta queda en el aire",
@@ -352,7 +355,9 @@
         "volante": 18.6,
         "despegue": 35.55,
         "leer": 20.62,
-        "vuelve": 26.01
+        "vuelve": 26.01,
+        "acerca": 29.9,
+        "esquina": 34.6
       },
       "props": {
         "sello": {
@@ -393,6 +398,16 @@
           "texto": "«militó por algún tiempo en un pequeño partido trotskista de izquierda que criticaba duramente al régimen castrense»",
           "pie": "MARCOS CUETO, PRÓLOGO, P. 16"
         },
+        "afiche_viejo": {
+          "texto": "UN PAÍS NUEVO",
+          "rotulo": "Ilustrativo · la misma promesa, en un afiche anterior"
+        },
+        "restos_sin_rojo": true,
+        "afiches_saturacion": [
+          1,
+          0.55,
+          1
+        ],
         "laminas": {
           "emblema": "vectorcraft/tanda05-ingreso-v2.json",
           "aviso_emblema": "Interpretación vectorial del escudo tradicional",
@@ -424,6 +439,11 @@
           "beat": "vuelve",
           "movimiento": "vuelve a ver el muro entero",
           "motivo": "«Para un estudiante de esa época…»: de él a su generación"
+        },
+        {
+          "beat": "acerca",
+          "movimiento": "se acerca despacio al último afiche («UN PAÍS NUEVO») y se queda quieta",
+          "motivo": "«Era la manera de responder una pregunta»: la cámara va al afiche que la pregunta pone a prueba y llega antes de «¿El país estaba cambiando de verdad?», que transcurre quieta; quieta también para el golpe y lo que revela"
         }
       ],
       "beats_ajustados": true
@@ -493,6 +513,7 @@
         "palabra": "la larga duración",
         "realce": "media",
         "estilo": "pizarra",
+        "presentacion_grande": true,
         "nota": "las estructuras de la economía y la larga duración",
         "remate": "Hay cosas que no cambian aunque cambien los gobiernos.",
         "encabezado": "Etnohistoria Andina · F. Pease",
@@ -741,16 +762,18 @@
       "transicion_salida": "corte",
       "beats": {
         "hoja_entra": 0.3,
-        "hojea": 7.2,
-        "hoja_pagina": 13.55,
-        "hoja_zoom": 13.92,
+        "ficha_lugar": 2.4,
+        "hojea": 6.4,
+        "ficha_nombre": 7.2,
+        "hoja_pagina": 10.8,
+        "hoja_zoom": 11.6,
         "islas": 0.2,
-        "sacos": 16.01,
-        "flecha": 17.46,
-        "vales": 20.22,
-        "consolidacion": 21.79,
+        "sacos": 14.4,
+        "flecha": 18.2,
+        "vales": 21.2,
+        "consolidacion": 22.5,
         "pregunta": 28.57,
-        "hallazgo": 23.44
+        "hallazgo": 24.3
       },
       "props": {
         "ficha": "SIGLO XIX · GUANO",
@@ -778,6 +801,18 @@
         "hojear": {
           "encabezado": "Siglo XIX"
         },
+        "fichas_libro": [
+          {
+            "texto": "LIMA · 1980",
+            "beat": "ficha_lugar",
+            "destacada": true
+          },
+          {
+            "texto": "FÉLIX DENEGRI LUNA · BIBLIOTECA EN LIMA",
+            "beat": "ficha_nombre"
+          }
+        ],
+        "pila_paso": 0.55,
         "paneo": true,
         "pregunta": "¿A dónde fue a parar esa plata?",
         "sigue_barco": true,

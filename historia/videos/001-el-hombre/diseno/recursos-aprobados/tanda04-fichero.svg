@@ -5,6 +5,7 @@
       <stop offset="0" stop-color="#374036"/>
       <stop offset="1" stop-color="#111c16"/>
     </radialGradient>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="373" y="420" width="1246" height="596" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="7"/></filter>
     <linearGradient id="linear-gradient-1" x1="827" y1="614" x2="827" y2="222" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#e8dab6"/>
       <stop offset="1" stop-color="#b6a47d"/>
@@ -26,12 +27,27 @@
       <stop offset="0.3" stop-color="#654d32"/>
       <stop offset="1" stop-color="#3d3426"/>
     </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="350.51" y1="488.253" x2="613.49" y2="943.747" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe9c0" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#ffe9c0" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="603.598" y1="529.417" x2="1560.402" y2="975.583" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe9c0" stop-opacity="0.12"/>
+      <stop offset="0.35" stop-color="#ffe9c0" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#0d0905" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0d0905" stop-opacity="0.42"/>
+    </linearGradient>
   </defs>
   <title>Tanda 4 — Fichero de investigación</title>
   <g id="Layer_1" data-name="Layer 1">
   </g>
   <g id="Fondo">
     <rect x="0" y="0" width="1920" height="1080" fill="url(#radial-gradient-1)"/>
+  </g>
+  <g id="Sombra___Fichero" data-name="Sombra — Fichero">
+    <g filter="url(#filter-1)">
+      <polygon id="sombra" points="396,515 1351,443 1568.827,590.589 1596,588 1596,609 1596,901 620,993 396,829" fill="#0c0a07" opacity="0.6"/>
+    </g>
   </g>
   <g id="Caja_de_madera___volumen" data-name="Caja de madera — volumen">
     <polygon points="370,477 1325,405 1570,571 594,663" fill="#6e5235" stroke="#2d3326" stroke-width="2" stroke-miterlimit="10"/>
@@ -78,6 +94,8 @@
     <polygon points="594,643 1570,550 1570,863 594,955" fill="url(#linear-gradient-5)" stroke="#b18b52" stroke-width="2" stroke-miterlimit="10"/>
     <polygon points="370,477 594,643 594,955 370,791" fill="#4a3e2b" stroke="#7e6240" stroke-width="2" stroke-miterlimit="10"/>
     <path d="M615 662 C898.333 645.333 1209.333 616.667 1548 576 M615 672 C898.333 657.333 1209.333 628.667 1548 586 M615 682 C898.333 669.333 1209.333 640.667 1548 596 M615 692 C898.333 675.333 1209.333 646.667 1548 606 M615 702 C898.333 687.333 1209.333 658.667 1548 616 M615 712 C898.333 699.333 1209.333 670.667 1548 626 M615 722 C898.333 705.333 1209.333 676.667 1548 636 M615 732 C898.333 717.333 1209.333 688.667 1548 646 M615 742 C898.333 729.333 1209.333 700.667 1548 656 M615 752 C898.333 735.333 1209.333 706.667 1548 666 M615 762 C898.333 747.333 1209.333 718.667 1548 676 M615 772 C898.333 759.333 1209.333 730.667 1548 686 M615 782 C898.333 765.333 1209.333 736.667 1548 696 M615 792 C898.333 777.333 1209.333 748.667 1548 706 M615 802 C898.333 789.333 1209.333 760.667 1548 716 M615 812 C898.333 795.333 1209.333 766.667 1548 726 M615 822 C898.333 807.333 1209.333 778.667 1548 736 M615 832 C898.333 819.333 1209.333 790.667 1548 746 M615 842 C898.333 825.333 1209.333 796.667 1548 756 M615 852 C898.333 837.333 1209.333 808.667 1548 766 M615 862 C898.333 849.333 1209.333 820.667 1548 776 M615 872 C898.333 855.333 1209.333 826.667 1548 786 M615 882 C898.333 867.333 1209.333 838.667 1548 796 M615 892 C898.333 879.333 1209.333 850.667 1548 806 M615 902 C898.333 885.333 1209.333 856.667 1548 816 M615 912 C898.333 897.333 1209.333 868.667 1548 826" fill="none" stroke="#b18d58" stroke-width="0.7" stroke-miterlimit="10"/>
+    <polygon id="luz-lampara" points="370,477 594,643 594,955 370,791" fill="url(#linear-gradient-6)"/>
+    <polygon id="luz-lampara-2" data-name="luz-lampara" points="594,643 1570,550 1570,863 594,955" fill="url(#linear-gradient-7)"/>
   </g>
   <g id="Porte-étiquette_en_laiton" data-name="Porte-étiquette en laiton">
     <polygon points="885,701 1260,666 1260,788 885,823" fill="#b99e61" stroke="#2e392a" stroke-width="2" stroke-miterlimit="10"/>
