@@ -39,7 +39,7 @@ marca); «cuánto pesa» en s05 1,01 → 1,06 (tampoco).
 | 1 | s03, 2:22 | La pregunta de la serie es una esquina que se despega, ~2,5 s antes del corte | Despegar el afiche entero, que asome uno viejo igual de prometedor (ilustrativo), quietud ~2 s antes del corte | **Hecho** |
 | 2 | s06, 4:47–5:15 | El grabado del guano quedaba 0,74 s a pantalla completa; 7 s de libro cerrado sin texto; el monto se inflaba antes de que llegara su vale | Reparto nuevo de los beats y fichas del libro (abajo) | **Hecho** |
 | 3 | s02 | La escena de intensidad 1 es la más activa y saturada del video | Calmar el agua (amplitud de reflejos y cáusticas), una sola variable | Pendiente |
-| 4 | s03 | El rojo se gasta en el muro (7,1 % durante 30 s) antes del rojo de la culpa en s06 (2,9 %) | Apagar primero los recortes rojos del fondo del muro; el afiche aprobado lo decide Gerson | Pendiente |
+| 4 | s03 | El rojo se gasta en el muro (7,1 % durante 30 s) antes del rojo de la culpa en s06 (2,9 %) | Apagar primero los recortes rojos del fondo del muro; el afiche aprobado lo decide Gerson | **Hecho** |
 | 5 | s01, 1:07–1:20 | La línea de tiempo no se lee en miniatura (luminancia 25 contra fondo 25) | Escalar la línea y sus rótulos, aclararla | Pendiente |
 | 6 | s04, s05, s06 | Pizarra casi vacía ~10 s con «Pease» y «Braudel» diminutos; «cuánto pesa» sin cambio visible; libro abierto con renglones ilegibles (§2.9) | Fichas grandes de los nombres; escalón de la pendiente más grande; texto legible en el libro | Pendiente |
 
@@ -87,6 +87,31 @@ El afiche viejo es una figura, no un afiche histórico (lo dice el rótulo). Pro
 `TiempoLargo`; sin ella, solo se dobla la esquina, como en el 000. El episodio pasa a durar 5:39.
 
 **Por comprobar:** la prueba con otra persona, «¿qué pregunta quedó abierta cuando aparece la pizarra?».
+
+## Hoja 4 aplicada: el rojo del muro (s03)
+
+Los tres recortes rojos del fondo del muro pasan a ocre apagado (prop `restos_sin_rojo` en `TiempoLargo`;
+sin ella, como en el 000). Medido sobre los cuadros de s03:
+
+| | Antes | Después |
+|---|---|---|
+| Rojo saturado con el muro vacío (10 s) | 1,52 % | 0 % |
+| Rojo saturado medio de la escena | 8,12 % | 7,61 % |
+
+Lo que queda (~8 % desde que se pega) sale casi entero del panfleto aprobado «Nacionalizaciones», cuyo
+papel es rojo; el volante no suma (tapa parte del panfleto). Sigue por encima del rojo de la pregunta de
+s06 (2,9 %).
+
+Decisión de Gerson: bajarlo en la escena, sin tocar la lámina. Prop `afiches_saturacion` en `TiempoLargo`
+(saturación por afiche, por defecto 1); en el 001, «Nacionalizaciones» queda a 0,55.
+
+| | Solo recortes | Recortes y panfleto a 0,55 |
+|---|---|---|
+| Rojo saturado medio de la escena | 7,61 % | **1,12 %** |
+| Máximo (cámara sobre el volante, 24 s) | 14,7 % | 3,2 % |
+
+El valor del panfleto no cambia (en grises se ve igual) y su texto se sigue leyendo. Ahora el único rojo
+fuerte del muro es el título del volante, la crítica, y s03 queda por debajo del rojo de la pregunta de s06.
 
 ## Guion de prueba con otra persona
 

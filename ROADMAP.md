@@ -389,7 +389,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [diseno/inventario-graficos-efectos.md](historia/videos/001-el-hombre/diseno/inventario-graficos-efectos.md) · [estilo/lampara.ts](historia/src/estilo/lampara.ts)
 - [ ] **Auditoría de dirección visual del 001 (estructura visual) y sus seis hojas de revisión** `e1-auditoria-visual` — 🔄 en curso
-  - Entregable: Hojas 1 y 2 aplicadas (la pregunta de la serie en s03: el afiche se cae y queda el viejo; el mecanismo del guano en s06); hojas 3 a 6 pendientes de aprobación
+  - Entregable: Hojas 1, 2 y 4 aplicadas (s03: el afiche se cae y queda el viejo, y el rojo del muro baja de 8,1 % a 1,1 %; s06: el mecanismo del guano); hojas 3, 5 y 6 pendientes
   - Depende de: `e1-luz-lampara`
   - Prevista: — · Real: 2026-11-17 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?

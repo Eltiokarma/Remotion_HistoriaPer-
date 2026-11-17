@@ -148,7 +148,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
               <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
                 {restos.map((r, i) => (
                   <g key={i} transform={`rotate(${r.rot} ${r.x + r.w / 2} ${r.y + r.h / 2})`} opacity={0.5}>
-                    <path d={bordePapel(r.s, r.x, r.y, r.w, r.h, 6)} fill={[mezclar(pal.papel, pal.fondo, 0.45), mezclar(pal.rojo, pal.fondo, 0.5), mezclar(pal.ocre, pal.fondo, 0.4)][r.tono]} />
+                    <path d={bordePapel(r.s, r.x, r.y, r.w, r.h, 6)} fill={[mezclar(pal.papel, pal.fondo, 0.45), props.restos_sin_rojo ? mezclar(pal.ocre, pal.fondo, 0.6) : mezclar(pal.rojo, pal.fondo, 0.5), mezclar(pal.ocre, pal.fondo, 0.4)][r.tono]} />
                     <rect x={r.x + 16} y={r.y + 20} width={r.w * 0.7} height={r.h * 0.18} fill={alfa(pal.fondo, 0.35)} />
                   </g>
                 ))}
@@ -193,7 +193,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                 return (
                   <div key={i} style={{ position: 'absolute', left: L.x + (L.w - ancho) / 2, top: L.y,
                     transform: `translate(${-160 * cae}px, ${1000 * cae * cae}px) rotate(${L.rot - 24 * cae}deg) scale(${mix(1.1, 1, k)})`, opacity: clamp(k * 4),
-                    filter: `drop-shadow(6px 10px 10px ${alfa('#000000', 0.45)})` }}>
+                    filter: `${(props.afiches_saturacion?.[i] ?? 1) < 1 ? `saturate(${props.afiches_saturacion?.[i]}) ` : ''}drop-shadow(6px 10px 10px ${alfa('#000000', 0.45)})` }}>
                     <Afiche id={`${escena.id}-af${i}`} texto={tx} {...colores} ancho={ancho} alto={L.h} semilla={i * 17 + 3}
                       despegue={esquina} lamina={lPanfletos} panfleto={panfleto} />
                   </div>

@@ -55,6 +55,16 @@ export const esquema = z.object({
    * `rotulo` lo dice en pantalla. Sin esto, solo se dobla la esquina (como en el 000).
    */
   afiche_viejo: z.object({ texto: z.string(), rotulo: z.string() }).optional(),
+  /**
+   * Los restos de afiches arrancados del fondo del muro sin rojo (en ocre apagado): el rojo de la
+   * serie queda para lo que acusa (auditoría visual del 001, hoja 4). Sin esto, como en el 000.
+   */
+  restos_sin_rojo: z.boolean().default(false),
+  /**
+   * Saturación de cada afiche del muro (1 = como está; 0,5 = la mitad), en el orden de `titulares`.
+   * Apaga un afiche aprobado solo en esta escena, sin tocar su lámina (auditoría visual del 001, hoja 4).
+   */
+  afiches_saturacion: z.array(z.number().min(0).max(1)).optional(),
 });
 
 export const beats = {

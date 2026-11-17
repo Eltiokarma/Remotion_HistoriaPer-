@@ -399,6 +399,12 @@
           "texto": "UN PAÍS NUEVO",
           "rotulo": "Ilustrativo · la misma promesa, en un afiche anterior"
         },
+        "restos_sin_rojo": true,
+        "afiches_saturacion": [
+          1,
+          0.55,
+          1
+        ],
         "laminas": {
           "emblema": "vectorcraft/tanda05-ingreso-v2.json",
           "aviso_emblema": "Interpretación vectorial del escudo tradicional",
