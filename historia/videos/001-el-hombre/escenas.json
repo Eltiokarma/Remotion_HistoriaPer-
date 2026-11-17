@@ -123,6 +123,7 @@
       "props": {
         "ficha": "NUEVA YORK · 2012",
         "ficha_destacada": true,
+        "linea_zoom": 1.3,
         "seccion": "Agradecimientos",
         "cita": {
           "texto": "A mis médicos del hospital Memorial Sloan-Kettering les agradezco inmensamente el alargar estos días para poder completar la tarea.",

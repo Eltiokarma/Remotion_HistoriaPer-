@@ -40,7 +40,7 @@ marca); «cuánto pesa» en s05 1,01 → 1,06 (tampoco).
 | 2 | s06, 4:47–5:15 | El grabado del guano quedaba 0,74 s a pantalla completa; 7 s de libro cerrado sin texto; el monto se inflaba antes de que llegara su vale | Reparto nuevo de los beats y fichas del libro (abajo) | **Hecho** |
 | 3 | s02 | La escena de intensidad 1 es la más activa y saturada del video | Calmar el agua (amplitud de reflejos y cáusticas), una sola variable | **Hecho** (B: velocidad; C: reflejos) |
 | 4 | s03 | El rojo se gasta en el muro (7,1 % durante 30 s) antes del rojo de la culpa en s06 (2,9 %) | Apagar primero los recortes rojos del fondo del muro; el afiche aprobado lo decide Gerson | **Hecho** |
-| 5 | s01, 1:07–1:20 | La línea de tiempo no se lee en miniatura (luminancia 25 contra fondo 25) | Escalar la línea y sus rótulos, aclararla | Pendiente |
+| 5 | s01, 1:07–1:20 | La línea de tiempo no se lee en miniatura (luminancia 25 contra fondo 25) | Escalar la línea y sus rótulos, aclararla | **Hecho** (escala 1,3) |
 | 6 | s04, s05, s06 | Pizarra casi vacía ~10 s con «Pease» y «Braudel» diminutos; «cuánto pesa» sin cambio visible; libro abierto con renglones ilegibles (§2.9) | Fichas grandes de los nombres; escalón de la pendiente más grande; texto legible en el libro | Pendiente |
 
 Lo que funciona y no hay que romper: la muerte (quietud real y 4,8 s de negro con la flor), las caídas del
@@ -145,6 +145,21 @@ En total, de A a C: −22 % de actividad fina y −25 % de masas. El agua sigue 
 más suaves). Lo que queda moviéndose son las cáusticas, el vaivén de las corcheras y el agua que se ve a
 través de las letras del nombre. s02 sigue por encima de s03 (1,9): bajar más pediría tocar las cáusticas,
 una tercera variable que no se probó.
+
+## Hoja 5 aplicada: la línea de tiempo de s01
+
+Una variable: el tamaño de la línea (prop `linea_zoom` en `PruebasDeImprenta`, por defecto 1). Se agranda
+todo alrededor de su centro (rótulos, grosor, marcas, puntos de los eventos); abierta, el camino entero
+sigue ocupando los mismos 1300 px de pantalla, así que crece lo que se lee, no el recorrido.
+
+- **1,4 se descartó:** abierta, «FALLECE · 2 ENE 2013» tocaba «RÍO DE JANEIRO» y quedaba a 15 px del borde.
+- **1,3 queda:** los meses pasan de 26 a 34 px de alto, los rótulos de los eventos crecen igual, y entre
+  «2 ENE 2013» y «RÍO DE JANEIRO» queda aire; el rótulo de la izquierda entra con ~36 px de margen.
+
+Corrección a la hoja: la medida de luminancia que la motivó (línea 25 contra fondo 25) promediaba una franja
+casi toda de fondo; la línea encendida sí se separa. El problema era el tamaño. Y en una miniatura de 128 px
+ningún texto de este cuerpo se lee (ni antes ni ahora): lo que sí se lee ahí son las masas, el punto rojo
+del comienzo, el libro y el halo de mayo. Donde se gana es a tamaño de celular.
 
 ## Guion de prueba con otra persona
 

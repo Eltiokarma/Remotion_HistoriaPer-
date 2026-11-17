@@ -71,7 +71,9 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
   const abre = tramo(t, tFinal, 1.8, 'natural'); // al final se abre para ver el camino entero
   const recorrido = mix(e0, eN, viaje);
   const centro = mix(recorrido, (e0 + eN) / 2, abre);
-  const ESCALA_VIAJE = 420, ESCALA_TODO = 1300 / Math.max(1, eN - e0);
+  // con linea_zoom, la línea entera se agranda alrededor de su centro; abierta, ocupa los mismos 1300 px de pantalla
+  const zoomLinea = props.linea_zoom;
+  const ESCALA_VIAJE = 420, ESCALA_TODO = 1300 / zoomLinea / Math.max(1, eN - e0);
   const escala = mix(ESCALA_VIAJE, ESCALA_TODO, abre);
   const guia = clamp(viaje * 10) * (1 - tramo(t, tMayo - 0.5, 0.5, 'natural'));
   // un pulso: sube rápido y se apaga despacio
@@ -194,9 +196,11 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
       {/* D: corte seco a la línea de tiempo; la cámara la recorre de la muerte al libro */}
       {fase === 'linea' ? (
         <AbsoluteFill style={{ backgroundColor: mezclar(noche, pal.ocre, 0.05 * viaje) }}>
+          <AbsoluteFill style={zoomLinea !== 1 ? { transformOrigin: '960px 560px', transform: `scale(${zoomLinea})` } : undefined}>
           <LineaDeTiempo paleta={pal} id={`${escena.id}-linea`} tramos={linea.tramos} fondo={linea.fondo} eventos={linea.eventos}
             centro={centro} escala={escala} recorrido={recorrido} aparece={tramo(t, tLinea, props.cruz ? 1.0 : 0.6, 'natural')} guia={guia} realce={realce} fondoVisible={1 - abre}
             tras={linea.eventos.map((_, k) => (k === linea.eventos.length - 1 ? t - tMayo : -1))} />
+          </AbsoluteFill>
           <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 52%, rgba(0,0,0,0) 50%, ${alfa('#000000', 0.5)} 100%)` }} />
         </AbsoluteFill>
       ) : null}
