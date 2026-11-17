@@ -12,7 +12,7 @@ Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **29** · 🔄 en curso: **4** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **29** · 🔄 en curso: **5** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -78,7 +78,7 @@ gantt
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
-Sin fecha (17): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso).
+Sin fecha (18): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-auditoria-visual` (🔄 en curso), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso).
 
 ## Tareas
 
@@ -388,6 +388,12 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-17
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [diseno/inventario-graficos-efectos.md](historia/videos/001-el-hombre/diseno/inventario-graficos-efectos.md) · [estilo/lampara.ts](historia/src/estilo/lampara.ts)
+- [ ] **Auditoría de dirección visual del 001 (estructura visual) y sus seis hojas de revisión** `e1-auditoria-visual` — 🔄 en curso
+  - Entregable: Hoja 2 aplicada (mecanismo del guano en s06: reparto de beats y fichas del libro); hojas 1 y 3 a 6 pendientes de aprobación
+  - Depende de: `e1-luz-lampara`
+  - Prevista: — · Real: 2026-11-17 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [diseno/auditoria-direccion-visual-2026-11-17.md](historia/videos/001-el-hombre/diseno/auditoria-direccion-visual-2026-11-17.md)
 - [ ] **Revisión de Gerson de la integración de las láminas y de los efectos recuperados (E01–E12)** `e1-revision-laminas` — ⏳ pendiente
   - Entregable: Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO
   - Depende de: `e1-laminas`

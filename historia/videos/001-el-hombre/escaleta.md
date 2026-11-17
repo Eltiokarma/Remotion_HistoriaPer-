@@ -14,7 +14,7 @@ Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **I
 | s03 | TiempoLargo | 1:46.3 | 38 s | 73 % | 9 s | 141 | 7.9 | 19 | 4 | 4 (6.5/min) | 10 (16.2/min) | 🟡 6.5 datos/min |
 | s04 | TiempoLargo | 2:24.5 | 53 s | 67 % | 10 s | 134 | 8.8 | 21 | 8 | 2 (2.3/min) | 11 (12.8/min) | 🟢 |
 | s05 | AprenderAMedir | 3:17.1 | 90 s | 72 % | 16 s | 141 | 10.0 | 18 | 9 | 9 (6.1/min) | 29 (19.6/min) | 🟡 6.1 datos/min |
-| s06 | MecanismoDeuda | 4:47.1 | 34 s | 72 % | 7 s | 170 | 14.3 | 24 | 4 | 6 (11.9/min) | 11 (21.7/min) | 🟡 11.9 datos/min |
+| s06 | MecanismoDeuda | 4:47.1 | 34 s | 72 % | 7 s | 170 | 14.3 | 24 | 4 | 6 (11.9/min) | 13 (25.7/min) | 🟡 11.9 datos/min |
 | s07 | Cierre | 5:21.0 | 17 s | 16 % | 3 s | 53 | 5.0 | 5 | 0 | 1 (10.6/min) | 3 (31.9/min) | 🟡 10.6 datos/min |
 
 Total: 5:37.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
@@ -270,7 +270,7 @@ Total: 5:37.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 - **Intención:** cerrar el retrato volviendo atrás: lo que aprendió en Nueva York lo va a usar en lo que ya había encontrado antes de irse; la pregunta queda en el aire para el próximo episodio
 - **Intensidad:** 5 · **Música:** presente (tensión) → el acorde sin resolver queda solo después de la pregunta
 - **Semáforo para enseñar:** 🟡 11.9 datos/min
-- **Métricas:** voz el 72 % del tiempo · tramo más largo sin pausa de párrafo: 7.4 s · 86 palabras · 170 por minuto · 6 frases de 14.3 palabras en promedio (la más larga: 24) · 4 pausa(s) de párrafo (≥ 1 s) · 11 cambios de imagen
+- **Métricas:** voz el 72 % del tiempo · tramo más largo sin pausa de párrafo: 7.4 s · 86 palabras · 170 por minuto · 6 frases de 14.3 palabras en promedio (la más larga: 24) · 4 pausa(s) de párrafo (≥ 1 s) · 13 cambios de imagen
 - **Nombres y cifras que se dicen (6):** Lima · Nueva York · Félix Denegri Luna · Estado · 1980 · 1850
 
 | t | Voz | Imagen | Sonido |
@@ -280,23 +280,25 @@ Total: 5:37.7. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 4:47.3 |  | **islas** — el grabado de las islas |  |
 | 4:47.4 | Pero su primer caso lo había encontrado en Lima, en mil novecientos ochenta, poco antes de irse a Nueva York. |  |  |
 | 4:47.4 |  | **hoja_entra** — (con hojear) entra el libro, cerrado |  |
+| 4:49.5 |  | **ficha_lugar** — (con fichas_libro) se escribe la ficha del lugar y la fecha |  |
+| 4:53.5 |  | **hojea** — (con hojear) se abre y se hojea |  |
 | 4:54.3 | Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. |  |  |
-| 4:54.3 |  | **hojea** — (con hojear) se abre y se hojea |  |
-| 5:00.7 |  | **hoja_pagina** — (con hojear) cae la última hoja: la página con el grabado |  |
-| 5:01.0 |  | **hoja_zoom** — (con hojear) la cámara entra al grabado hasta llenar la pantalla |  |
-| 5:01.0 |  | _cámara: entra a la ilustración de la página hasta llenar la pantalla_ («el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)) |  |
-| 5:03.1 |  | **sacos** — empiezan a subir sacos al barco |  |
+| 4:54.3 |  | **ficha_nombre** — (con fichas_libro) se escribe la ficha del nombre |  |
+| 4:57.9 |  | **hoja_pagina** — (con hojear) cae la última hoja: la página con el grabado |  |
+| 4:58.7 |  | **hoja_zoom** — (con hojear) la cámara entra al grabado hasta llenar la pantalla |  |
+| 4:58.7 |  | _cámara: entra a la ilustración de la página hasta llenar la pantalla_ («el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)) |  |
+| 5:01.5 |  | **sacos** — empiezan a subir sacos al barco |  |
 | 5:03.1 | Ahí estaba el guano. |  |  |
-| 5:04.6 |  | **flecha** — barco y Estado: sale la flecha de dinero |  |
-| 5:04.6 |  |  | se va el ambiente mar |
-| 5:04.6 |  |  | ambiente cuarto (0.5) |
-| 5:04.6 |  | _cámara: sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha_ («Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)) |  |
 | 5:04.9 | Y una deuda que el Estado decidió pagar con esa plata, en mil ochocientos cincuenta. |  |  |
-| 5:07.3 |  | **vales** — se apilan los vales de la deuda |  |
-| 5:07.3 |  | _cámara: paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales_ («una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)) |  |
-| 5:08.9 |  | **consolidacion** — cae el sello sobre la pila |  |
+| 5:05.3 |  | **flecha** — barco y Estado: sale la flecha de dinero |  |
+| 5:05.3 |  |  | se va el ambiente mar |
+| 5:05.3 |  |  | ambiente cuarto (0.5) |
+| 5:05.3 |  | _cámara: sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha_ («Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)) |  |
+| 5:08.3 |  | **vales** — se apilan los vales de la deuda |  |
+| 5:08.3 |  | _cámara: paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales_ («una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)) |  |
+| 5:09.6 |  | **consolidacion** — cae el sello sobre la pila |  |
 | 5:10.5 | Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. |  |  |
-| 5:10.5 |  | **hallazgo** — (opcional) sobre la pila de vales, el monto del vale de arriba se infla (ejemplo ilustrativo) |  |
+| 5:11.4 |  | **hallazgo** — (opcional) sobre la pila de vales, el monto del vale de arriba se infla (ejemplo ilustrativo) |  |
 | 5:15.7 | ¿Adónde fue a parar esa plata? |  |  |
 | 5:15.7 |  | **pregunta** — (con pregunta) la pregunta se escribe fuerte |  |
 

@@ -38,6 +38,17 @@ export const esquema = z.object({
    * hojea, hoja_pagina y hoja_zoom): el grabado no se ve repetirse (DIRECCION_DE_VIDEO §2.12).
    */
   hojear: z.object({ encabezado: z.string() }).optional(),
+  /**
+   * Fichas sobre el libro mientras se hojea (lugar, fecha, nombre que dice la voz): cada una entra
+   * con su beat y deja su lugar a la siguiente; se van cuando la cámara entra al grabado (§2.1).
+   */
+  fichas_libro: z.array(z.object({
+    texto: z.string(), beat: z.string(),
+    /** Lugar y fecha de él, como «Nueva York · 2012» en las pruebas de imprenta: grande, para que no se olvide. */
+    destacada: z.boolean().default(false),
+  })).optional(),
+  /** Segundos entre un vale y el siguiente al apilarse (la pila tiene siete). */
+  pila_paso: z.number().default(0.75),
   /** Del Estado a los vales, la cámara hace un paneo (con una flecha que sigue la plata) en vez de cortar (§2.11). */
   paneo: z.boolean().default(false),
   /**
@@ -55,6 +66,8 @@ export const beats = {
   hoja_pagina: '(con hojear) cae la última hoja: la página con el grabado',
   hallazgo: '(opcional) sobre la pila de vales, el monto del vale de arriba se infla (ejemplo ilustrativo)',
   hoja_zoom: '(con hojear) la cámara entra al grabado hasta llenar la pantalla',
+  ficha_lugar: '(con fichas_libro) se escribe la ficha del lugar y la fecha',
+  ficha_nombre: '(con fichas_libro) se escribe la ficha del nombre',
   islas: 'el grabado de las islas',
   sacos: 'empiezan a subir sacos al barco',
   flecha: 'barco y Estado: sale la flecha de dinero',

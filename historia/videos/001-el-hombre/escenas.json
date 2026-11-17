@@ -741,16 +741,18 @@
       "transicion_salida": "corte",
       "beats": {
         "hoja_entra": 0.3,
-        "hojea": 7.2,
-        "hoja_pagina": 13.55,
-        "hoja_zoom": 13.92,
+        "ficha_lugar": 2.4,
+        "hojea": 6.4,
+        "ficha_nombre": 7.2,
+        "hoja_pagina": 10.8,
+        "hoja_zoom": 11.6,
         "islas": 0.2,
-        "sacos": 16.01,
-        "flecha": 17.46,
-        "vales": 20.22,
-        "consolidacion": 21.79,
+        "sacos": 14.4,
+        "flecha": 18.2,
+        "vales": 21.2,
+        "consolidacion": 22.5,
         "pregunta": 28.57,
-        "hallazgo": 23.44
+        "hallazgo": 24.3
       },
       "props": {
         "ficha": "SIGLO XIX · GUANO",
@@ -778,6 +780,18 @@
         "hojear": {
           "encabezado": "Siglo XIX"
         },
+        "fichas_libro": [
+          {
+            "texto": "LIMA · 1980",
+            "beat": "ficha_lugar",
+            "destacada": true
+          },
+          {
+            "texto": "FÉLIX DENEGRI LUNA · BIBLIOTECA EN LIMA",
+            "beat": "ficha_nombre"
+          }
+        ],
+        "pila_paso": 0.55,
         "paneo": true,
         "pregunta": "¿A dónde fue a parar esa plata?",
         "sigue_barco": true,

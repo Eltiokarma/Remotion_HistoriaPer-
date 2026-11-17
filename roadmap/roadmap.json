@@ -1272,6 +1272,31 @@
       }
     },
     {
+      "id": "e1-auditoria-visual",
+      "fase": "e1",
+      "titulo": "Auditoría de dirección visual del 001 (estructura visual) y sus seis hojas de revisión",
+      "entregable": "Hoja 2 aplicada (mecanismo del guano en s06: reparto de beats y fichas del libro); hojas 1 y 3 a 6 pendientes de aprobación",
+      "estado": "en_curso",
+      "depende_de": [
+        "e1-luz-lampara"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-17",
+        "fin": null
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/diseno/auditoria-direccion-visual-2026-11-17.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
       "id": "e1-revision-laminas",
       "fase": "e1",
       "titulo": "Revisión de Gerson de la integración de las láminas y de los efectos recuperados (E01–E12)",
