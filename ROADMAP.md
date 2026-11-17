@@ -12,7 +12,7 @@ Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **29** · 🔄 en curso: **5** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **30** · 🔄 en curso: **4** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -74,11 +74,12 @@ gantt
   Guion tras la revisión externa :done, e1guionexterno, 2026-11-03, 1d
   Integrar los 16 diseños aprobados de VectorCraft conservando la animación :done, e1laminas, 2026-11-10, 1d
   Afinar las láminas contra «se ve muy plano» una lámpara para todo el episodio (13 láminas, s00 a s07) :done, e1luzlampara, 2026-11-17, 1d
+  Auditoría de dirección visual del 001 (estructura visual) y sus seis hojas de revisión :done, e1auditoriavisual, 2026-11-17, 1d
   Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena) :done, e1voz, 2026-11-10, 1d
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
-Sin fecha (18): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-auditoria-visual` (🔄 en curso), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso).
+Sin fecha (17): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso).
 
 ## Tareas
 
@@ -388,10 +389,10 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-17
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [diseno/inventario-graficos-efectos.md](historia/videos/001-el-hombre/diseno/inventario-graficos-efectos.md) · [estilo/lampara.ts](historia/src/estilo/lampara.ts)
-- [ ] **Auditoría de dirección visual del 001 (estructura visual) y sus seis hojas de revisión** `e1-auditoria-visual` — 🔄 en curso
-  - Entregable: Hojas 1 a 5 aplicadas (s01: la línea de tiempo a escala 1,3; s02: el agua más calma, −22 % de actividad; s03: el afiche se cae y queda el viejo, y el rojo del muro baja de 8,1 % a 1,1 %; s06: el mecanismo del guano); hoja 6 pendiente
+- [x] **Auditoría de dirección visual del 001 (estructura visual) y sus seis hojas de revisión** `e1-auditoria-visual` — ✅ hecho
+  - Entregable: Las seis hojas aplicadas: s01 la línea de tiempo a escala 1,3; s02 el agua más calma (−22 % de actividad); s03 el afiche se cae y queda el viejo, y el rojo del muro baja de 8,1 % a 1,1 %; s04 los nombres de la clase grandes; s05 el escalón de «cuánto pesa» al doble; s06 el mecanismo del guano (el libro que se hojea, sin cambio a propósito). Falta la prueba con otra persona
   - Depende de: `e1-luz-lampara`
-  - Prevista: — · Real: 2026-11-17 → …
+  - Prevista: — · Real: 2026-11-17
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [diseno/auditoria-direccion-visual-2026-11-17.md](historia/videos/001-el-hombre/diseno/auditoria-direccion-visual-2026-11-17.md)
 - [ ] **Revisión de Gerson de la integración de las láminas y de los efectos recuperados (E01–E12)** `e1-revision-laminas` — ⏳ pendiente

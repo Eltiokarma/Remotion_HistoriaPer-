@@ -65,6 +65,11 @@ export const esquema = z.object({
    * Apaga un afiche aprobado solo en esta escena, sin tocar su lámina (auditoría visual del 001, hoja 4).
    */
   afiches_saturacion: z.array(z.number().min(0).max(1)).optional(),
+  /**
+   * (pizarra) El encabezado de la clase y el autor se escriben grandes al centro mientras la voz los
+   * presenta, y se van a su esquina cuando empiezan las capas (auditoría visual del 001, hoja 6).
+   */
+  presentacion_grande: z.boolean().default(false),
 });
 
 export const beats = {

@@ -41,7 +41,7 @@ marca); «cuánto pesa» en s05 1,01 → 1,06 (tampoco).
 | 3 | s02 | La escena de intensidad 1 es la más activa y saturada del video | Calmar el agua (amplitud de reflejos y cáusticas), una sola variable | **Hecho** (B: velocidad; C: reflejos) |
 | 4 | s03 | El rojo se gasta en el muro (7,1 % durante 30 s) antes del rojo de la culpa en s06 (2,9 %) | Apagar primero los recortes rojos del fondo del muro; el afiche aprobado lo decide Gerson | **Hecho** |
 | 5 | s01, 1:07–1:20 | La línea de tiempo no se lee en miniatura (luminancia 25 contra fondo 25) | Escalar la línea y sus rótulos, aclararla | **Hecho** (escala 1,3) |
-| 6 | s04, s05, s06 | Pizarra casi vacía ~10 s con «Pease» y «Braudel» diminutos; «cuánto pesa» sin cambio visible; libro abierto con renglones ilegibles (§2.9) | Fichas grandes de los nombres; escalón de la pendiente más grande; texto legible en el libro | Pendiente |
+| 6 | s04, s05, s06 | Pizarra casi vacía ~10 s con «Pease» y «Braudel» diminutos; «cuánto pesa» sin cambio visible; libro abierto con renglones ilegibles (§2.9) | Fichas grandes de los nombres; escalón de la pendiente más grande; texto legible en el libro | **Hecho** (el libro, a propósito sin cambio) |
 
 Lo que funciona y no hay que romper: la muerte (quietud real y 4,8 s de negro con la flor), las caídas del
 gancho, la pregunta final (se lee en color, grises y miniatura), la pizarra que acumula en s04, la línea
@@ -160,6 +160,25 @@ Corrección a la hoja: la medida de luminancia que la motivó (línea 25 contra 
 casi toda de fondo; la línea encendida sí se separa. El problema era el tamaño. Y en una miniatura de 128 px
 ningún texto de este cuerpo se lee (ni antes ni ahora): lo que sí se lee ahí son las masas, el punto rojo
 del comienzo, el libro y el halo de mayo. Donde se gana es a tamaño de celular.
+
+## Hoja 6 aplicada: detalles de lectura
+
+**s04, los nombres de la clase.** Con «Casi con seguridad fue en un curso de Franklin Pease donde leyó por
+primera vez a Fernand Braudel», el profe escribe «Etnohistoria Andina · F. Pease» (×1,7) y «Fernand
+Braudel» (×1,9) grandes al centro de la pizarra, en vez de chicos en las esquinas sobre una pizarra vacía.
+Cuando empiezan las capas viajan a su esquina (el mismo trazo, achicado en 1,1 s) y desde ahí la escena es
+la de antes. Prop `presentacion_grande` en `TiempoLargo`; sin ella, como en el 000.
+
+**s05, «cuánto pesa».** El escalón de la pendiente pasa de 300 a 500 px de paso (la misma pendiente: sube en
+proporción), el trazo de lo que sube de 4 a 7 px con un brillo que llega con él (§2.2), y los rótulos «un
+paso» y «cuánto sube» de 26 a 36 px. Solo el 001 usa esta lámina de regresión. No se midió la actividad del
+tramo con un render nuevo: se comprobó con cuadros.
+
+**s06, el libro que se hojea: sin cambio, a propósito.** §2.9 pide texto real en los papeles que
+representan una idea. Este libro no la representa: es el camino hasta el grabado, y lo que la voz dice
+encima ya está escrito en las fichas («LIMA · 1980», «FÉLIX DENEGRI LUNA · BIBLIOTECA EN LIMA», hoja 2).
+Llenar sus páginas con texto legible obligaría a inventar el de un libro del siglo XIX, y el canal no
+inventa (§3). Si se quisiera, lo honesto sería una cita real con su fuente.
 
 ## Guion de prueba con otra persona
 

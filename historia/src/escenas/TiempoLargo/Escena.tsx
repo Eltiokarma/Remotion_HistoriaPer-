@@ -251,18 +251,27 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
         ];
         if (idx === 0) brillo[0] = Math.max(brillo[0], fin(tRealce, tRemate));
         const remate = tramo(t, tRemate, 0.6, 'natural');
+        // con presentacion_grande, el profe escribe los dos nombres grandes al centro mientras la voz los presenta
+        // y, cuando empiezan las capas, se van a su esquina (el mismo trazo, achicado: no se reescriben)
+        const enEsquina = props.presentacion_grande ? tramo(t, tCapas - 1.0, 1.1, 'pesado') : 1;
+        const desde = (ax: number, ay: number, bx: number, by: number, s: number) =>
+          `translate(${mix(bx, ax, enEsquina)} ${mix(by, ay, enEsquina)}) scale(${mix(s, 1, enEsquina)}) translate(${-ax} ${-ay})`;
         return (
           <AbsoluteFill>
             <Pizarra>
               <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
                 {/* el encabezado de la clase, como lo escribe el profe al llegar */}
                 {props.encabezado ? (
-                  <TextoTiza id={`${escena.id}-clase`} texto={props.encabezado} x={1360} y={110} anchor="middle"
-                    k={tramo(t, beat(b, 'clase', 1), 1.8, 'natural')} size={40} fontFamily={fuente.imprentaItalica} opacidad={(1 - 0.6 * palabra - 0.6 * remate) * 0.85} />
+                  <g transform={desde(1360, 110, 960, 400, 1.7)}>
+                    <TextoTiza id={`${escena.id}-clase`} texto={props.encabezado} x={1360} y={110} anchor="middle"
+                      k={tramo(t, beat(b, 'clase', 1), 1.8, 'natural')} size={40} fontFamily={fuente.imprentaItalica} opacidad={(1 - 0.6 * palabra - 0.6 * remate) * 0.85} />
+                  </g>
                 ) : null}
                 {props.ficha ? (
-                  <TextoTiza id={`${escena.id}-autor`} texto={props.ficha.split('·')[0].trim().replace(/^F\. /, 'Fernand ').replace(/\b([A-ZÁÉÍÓÚÑ])([A-ZÁÉÍÓÚÑ]+)\b/g, (_, a: string, r: string) => a + r.toLowerCase())} x={110} y={120}
-                    k={tramo(t, tBraudel, 1.4, 'natural')} size={52} fontFamily={fuente.imprentaItalica} opacidad={1 - 0.6 * palabra - 0.6 * remate} />
+                  <g transform={desde(110, 120, 590, 620, 1.9)}>
+                    <TextoTiza id={`${escena.id}-autor`} texto={props.ficha.split('·')[0].trim().replace(/^F\. /, 'Fernand ').replace(/\b([A-ZÁÉÍÓÚÑ])([A-ZÁÉÍÓÚÑ]+)\b/g, (_, a: string, r: string) => a + r.toLowerCase())} x={110} y={120}
+                      k={tramo(t, tBraudel, 1.4, 'natural')} size={52} fontFamily={fuente.imprentaItalica} opacidad={1 - 0.6 * palabra - 0.6 * remate} />
+                  </g>
                 ) : null}
               </svg>
               <CapasTiza lamina={lPizarra} id={`${escena.id}-tiza`} t={t} rotulos={props.capas} nombres={props.gobiernos} marco={tramo(t, tCapas, 1, 'natural')}
