@@ -399,7 +399,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Entregable: Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO
   - Depende de: `e1-laminas`
   - Prevista: — · Real: null
-  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Tiempo: H ¿? · A ¿? · R 1196 s en laptop i7-11370H, 4 hilos (render completo del 001, 5:39 a 1080p, 2026-11-17) · tokens ¿?
 - [x] **Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena)** `e1-voz` — ✅ hecho
   - Entregable: public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 con scripts/narracion.py, beats llevados a la voz y música rearmada; `npm run validar -- 001-el-hombre --final` sin errores
   - Depende de: `e1-guion-externo`

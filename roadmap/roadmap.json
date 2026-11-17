@@ -1315,8 +1315,8 @@
       "tiempo": {
         "humano_min": null,
         "agente": null,
-        "render_s": null,
-        "maquina": null
+        "render_s": 1196,
+        "maquina": "laptop i7-11370H, 4 hilos (render completo del 001, 5:39 a 1080p, 2026-11-17)"
       }
     },
     {
