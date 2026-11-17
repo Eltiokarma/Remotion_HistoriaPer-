@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="320" viewBox="0 0 220 320">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="110" y1="100.09" x2="184.651" y2="100.09" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f3ead2"/>
+      <stop offset="1" stop-color="#d8c79e"/>
+    </linearGradient>
+  </defs>
+  <title>3a-tintero-pluma</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_3a-folio-resumen" data-name="3a-folio-resumen">
+  </g>
+  <g id="_3a-folio-solicitud" data-name="3a-folio-solicitud">
+  </g>
+  <g id="_3a-folio-lucro-cesante" data-name="3a-folio-lucro-cesante">
+  </g>
+  <g id="_3b-folio-gestion" data-name="3b-folio-gestion">
+  </g>
+  <g id="_3c-folio-respuesta" data-name="3c-folio-respuesta">
+  </g>
+  <g id="_3d-folio-antecedente" data-name="3d-folio-antecedente">
+  </g>
+  <g id="_3d-folio-intervencion" data-name="3d-folio-intervencion">
+  </g>
+  <g id="_3d-folio-aprobacion" data-name="3d-folio-aprobacion">
+  </g>
+  <g id="_3e-folio-aprobado" data-name="3e-folio-aprobado">
+  </g>
+  <g id="_3e-folio-recibido" data-name="3e-folio-recibido">
+  </g>
+  <g id="_3f-folio-resultado" data-name="3f-folio-resultado">
+  </g>
+  <g id="_3f-caja-conjunto" data-name="3f-caja-conjunto">
+  </g>
+  <g id="_3f-folio-1851" data-name="3f-folio-1851">
+  </g>
+  <g id="_4a-folio-1852" data-name="4a-folio-1852">
+  </g>
+  <g id="_3-despacho-fondo" data-name="3-despacho-fondo">
+  </g>
+  <g id="_3a-hacienda" data-name="3a-hacienda">
+  </g>
+  <g id="_3a-tintero-pluma" data-name="3a-tintero-pluma">
+    <g id="tintero-pluma">
+      <g id="pluma">
+        <path id="canon" d="M102 198 C124 140 150 82 180 24" fill="none" stroke="#d9c9a3" stroke-width="2.6" stroke-linecap="round" stroke-miterlimit="10"/>
+        <path id="barbas" d="M110 178 C118 128 140 72 184 20 C188 62 174 120 130 176 C124 180 116 182 110 178 Z" fill="url(#linear-gradient-1)" stroke="#a8946a" stroke-width="1.4" stroke-linejoin="round"/>
+        <path id="nervios" d="M124 160 L146 150 M132 136 L156 126 M142 112 L166 100 M154 88 L176 74 M164 64 L182 48" fill="none" stroke="#b8a275" stroke-miterlimit="10" opacity="0.7"/>
+      </g>
+    </g>
+  </g>
+  <g id="_3-conectores" data-name="3-conectores">
+  </g>
+  <g id="_3-rotulos-participantes" data-name="3-rotulos-participantes">
+  </g>
+</svg>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="155" y="139" width="504" height="554" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="5"/></filter>
+    <linearGradient id="linear-gradient-1" x1="150" y1="400" x2="172" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6b5436"/>
+      <stop offset="1" stop-color="#4a3a25"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="618" y1="400" x2="640" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6b5436"/>
+      <stop offset="1" stop-color="#4a3a25"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="176" y1="234" x2="194" y2="234" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e7a4e"/>
+      <stop offset="0.5" stop-color="#6e7a4e"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="194" y1="242" x2="216" y2="242" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8a6a3c"/>
+      <stop offset="0.5" stop-color="#8a6a3c"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="216" y1="243" x2="240" y2="243" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e7a4e"/>
+      <stop offset="0.5" stop-color="#6e7a4e"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="240" y1="243.5" x2="260" y2="243.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55634a"/>
+      <stop offset="0.5" stop-color="#55634a"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="262" y1="238.5" x2="292" y2="238.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7b5a44"/>
+      <stop offset="0.5" stop-color="#7b5a44"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="294" y1="238.5" x2="314" y2="238.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e7a4e"/>
+      <stop offset="0.5" stop-color="#6e7a4e"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-9" x1="314" y1="240" x2="344" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5d4a36"/>
+      <stop offset="0.5" stop-color="#5d4a36"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="345" y1="234.5" x2="375" y2="234.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8a6a3c"/>
+      <stop offset="0.5" stop-color="#8a6a3c"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-11" x1="376" y1="240" x2="398" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6a5a3f"/>
+      <stop offset="0.5" stop-color="#6a5a3f"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-12" x1="399" y1="251.5" x2="421" y2="251.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7b5a44"/>
+      <stop offset="0.5" stop-color="#7b5a44"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-13" x1="423" y1="237" x2="453" y2="237" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6a5a3f"/>
+      <stop offset="0.5" stop-color="#6a5a3f"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-14" x1="454" y1="239" x2="472" y2="239" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9a8256"/>
+      <stop offset="0.5" stop-color="#9a8256"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-15" x1="472" y1="251" x2="492" y2="251" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8a6a3c"/>
+      <stop offset="0.5" stop-color="#8a6a3c"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-16" x1="492" y1="240" x2="512" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55634a"/>
+      <stop offset="0.5" stop-color="#55634a"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-17" x1="512" y1="243" x2="534" y2="243" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6a5a3f"/>
+      <stop offset="0.5" stop-color="#6a5a3f"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-18" x1="536" y1="242" x2="556" y2="242" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55634a"/>
+      <stop offset="0.5" stop-color="#55634a"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-19" x1="395" y1="300" x2="395" y2="316" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7a6040"/>
+      <stop offset="1" stop-color="#4e3d27"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-20" x1="176" y1="400" x2="206" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e7a4e"/>
+      <stop offset="0.5" stop-color="#6e7a4e"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-21" x1="206" y1="414.5" x2="232" y2="414.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55634a"/>
+      <stop offset="0.5" stop-color="#55634a"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-22" x1="234" y1="407.5" x2="260" y2="407.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f5e48"/>
+      <stop offset="0.5" stop-color="#4f5e48"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-23" x1="261" y1="413" x2="291" y2="413" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f5e48"/>
+      <stop offset="0.5" stop-color="#4f5e48"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-24" x1="293" y1="411" x2="313" y2="411" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f5e48"/>
+      <stop offset="0.5" stop-color="#4f5e48"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-25" x1="315" y1="403" x2="333" y2="403" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55634a"/>
+      <stop offset="0.5" stop-color="#55634a"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-26" x1="334" y1="413" x2="358" y2="413" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e7a4e"/>
+      <stop offset="0.5" stop-color="#6e7a4e"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-27" x1="393" y1="414.5" x2="411" y2="414.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e7a4e"/>
+      <stop offset="0.5" stop-color="#6e7a4e"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-28" x1="413" y1="409" x2="443" y2="409" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6a5a3f"/>
+      <stop offset="0.5" stop-color="#6a5a3f"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-29" x1="443" y1="399.5" x2="463" y2="399.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e7a4e"/>
+      <stop offset="0.5" stop-color="#6e7a4e"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-30" x1="463" y1="398.5" x2="487" y2="398.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55634a"/>
+      <stop offset="0.5" stop-color="#55634a"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-31" x1="488" y1="406.5" x2="508" y2="406.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7b5a44"/>
+      <stop offset="0.5" stop-color="#7b5a44"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-32" x1="508" y1="408" x2="528" y2="408" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5d4a36"/>
+      <stop offset="0.5" stop-color="#5d4a36"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-33" x1="528" y1="407.5" x2="558" y2="407.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55634a"/>
+      <stop offset="0.5" stop-color="#55634a"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-34" x1="395" y1="460" x2="395" y2="476" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7a6040"/>
+      <stop offset="1" stop-color="#4e3d27"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-35" x1="176" y1="571" x2="202" y2="571" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5d4a36"/>
+      <stop offset="0.5" stop-color="#5d4a36"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-36" x1="204" y1="586.5" x2="222" y2="586.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e7a4e"/>
+      <stop offset="0.5" stop-color="#6e7a4e"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-37" x1="222" y1="582.5" x2="244" y2="582.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7b5a44"/>
+      <stop offset="0.5" stop-color="#7b5a44"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-38" x1="244" y1="569.5" x2="262" y2="569.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7b5a44"/>
+      <stop offset="0.5" stop-color="#7b5a44"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-39" x1="262" y1="587" x2="282" y2="587" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6a5a3f"/>
+      <stop offset="0.5" stop-color="#6a5a3f"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-40" x1="284" y1="584" x2="314" y2="584" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8a6a3c"/>
+      <stop offset="0.5" stop-color="#8a6a3c"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-41" x1="316" y1="589.5" x2="338" y2="589.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e7a4e"/>
+      <stop offset="0.5" stop-color="#6e7a4e"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-42" x1="338" y1="582" x2="360" y2="582" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6a5a3f"/>
+      <stop offset="0.5" stop-color="#6a5a3f"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-43" x1="361" y1="574.5" x2="379" y2="574.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9a8256"/>
+      <stop offset="0.5" stop-color="#9a8256"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-44" x1="414" y1="578.5" x2="438" y2="578.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5d4a36"/>
+      <stop offset="0.5" stop-color="#5d4a36"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-45" x1="438" y1="583.5" x2="468" y2="583.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7b5a44"/>
+      <stop offset="0.5" stop-color="#7b5a44"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-46" x1="468" y1="570" x2="490" y2="570" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55634a"/>
+      <stop offset="0.5" stop-color="#55634a"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-47" x1="491" y1="589.5" x2="517" y2="589.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55634a"/>
+      <stop offset="0.5" stop-color="#55634a"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-48" x1="518" y1="589.5" x2="536" y2="589.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55634a"/>
+      <stop offset="0.5" stop-color="#55634a"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-49" x1="538" y1="576.5" x2="560" y2="576.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9a8256"/>
+      <stop offset="0.5" stop-color="#9a8256"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-50" x1="562" y1="573.5" x2="586" y2="573.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5d4a36"/>
+      <stop offset="0.5" stop-color="#5d4a36"/>
+      <stop offset="1" stop-color="#2a2218"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-51" x1="395" y1="640" x2="395" y2="656" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7a6040"/>
+      <stop offset="1" stop-color="#4e3d27"/>
+    </linearGradient>
+  </defs>
+  <title>3-despacho-fondo</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_3a-folio-resumen" data-name="3a-folio-resumen">
+  </g>
+  <g id="_3a-folio-solicitud" data-name="3a-folio-solicitud">
+  </g>
+  <g id="_3a-folio-lucro-cesante" data-name="3a-folio-lucro-cesante">
+  </g>
+  <g id="_3b-folio-gestion" data-name="3b-folio-gestion">
+  </g>
+  <g id="_3c-folio-respuesta" data-name="3c-folio-respuesta">
+  </g>
+  <g id="_3d-folio-antecedente" data-name="3d-folio-antecedente">
+  </g>
+  <g id="_3d-folio-intervencion" data-name="3d-folio-intervencion">
+  </g>
+  <g id="_3d-folio-aprobacion" data-name="3d-folio-aprobacion">
+  </g>
+  <g id="_3e-folio-aprobado" data-name="3e-folio-aprobado">
+  </g>
+  <g id="_3e-folio-recibido" data-name="3e-folio-recibido">
+  </g>
+  <g id="_3f-folio-resultado" data-name="3f-folio-resultado">
+  </g>
+  <g id="_3f-caja-conjunto" data-name="3f-caja-conjunto">
+  </g>
+  <g id="_3f-folio-1851" data-name="3f-folio-1851">
+  </g>
+  <g id="_4a-folio-1852" data-name="4a-folio-1852">
+  </g>
+  <g id="_3-despacho-fondo" data-name="3-despacho-fondo">
+    <g id="estante">
+      <g filter="url(#filter-1)">
+        <rect id="sombra" x="172" y="156" width="470" height="520" fill="#0f1914" opacity="0.55"/>
+      </g>
+      <rect id="fondo-estante" x="160" y="140" width="470" height="520" fill="#1d2b23"/>
+      <rect id="lado-izq" x="150" y="130" width="22" height="540" fill="url(#linear-gradient-1)" stroke="#2c2216" stroke-miterlimit="10"/>
+      <rect id="lado-der" x="618" y="130" width="22" height="540" fill="url(#linear-gradient-2)" stroke="#2c2216" stroke-miterlimit="10"/>
+      <rect id="cornisa" x="140" y="120" width="510" height="22" fill="#6e5638" stroke="#2c2216" stroke-miterlimit="10"/>
+      <rect id="lomo" x="176" y="168" width="18" height="132" fill="url(#linear-gradient-3)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo" d="M179 182 L191 182 M179 278 L191 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-2" data-name="lomo" x="194" y="184" width="22" height="116" fill="url(#linear-gradient-4)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-3" data-name="lomo" x="216" y="186" width="24" height="114" fill="url(#linear-gradient-5)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-4" data-name="lomo" x="240" y="187" width="20" height="113" fill="url(#linear-gradient-6)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-2" data-name="filete-lomo" d="M243 201 L257 201 M243 278 L257 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-5" data-name="lomo" x="262" y="177" width="30" height="123" fill="url(#linear-gradient-7)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-3" data-name="filete-lomo" d="M265 191 L289 191 M265 278 L289 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-6" data-name="lomo" x="294" y="177" width="20" height="123" fill="url(#linear-gradient-8)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-4" data-name="filete-lomo" d="M297 191 L311 191 M297 278 L311 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-7" data-name="lomo" x="314" y="180" width="30" height="120" fill="url(#linear-gradient-9)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-8" data-name="lomo" x="345" y="169" width="30" height="131" fill="url(#linear-gradient-10)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-5" data-name="filete-lomo" d="M348 183 L372 183 M348 278 L372 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-9" data-name="lomo" x="376" y="180" width="22" height="120" fill="url(#linear-gradient-11)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-6" data-name="filete-lomo" d="M379 194 L395 194 M379 278 L395 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-10" data-name="lomo" x="399" y="203" width="22" height="97" fill="url(#linear-gradient-12)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-7" data-name="filete-lomo" d="M402 217 L418 217 M402 278 L418 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-11" data-name="lomo" x="423" y="174" width="30" height="126" fill="url(#linear-gradient-13)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-8" data-name="filete-lomo" d="M426 188 L450 188 M426 278 L450 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-12" data-name="lomo" x="454" y="178" width="18" height="122" fill="url(#linear-gradient-14)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-9" data-name="filete-lomo" d="M457 192 L469 192 M457 278 L469 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-13" data-name="lomo" x="472" y="202" width="20" height="98" fill="url(#linear-gradient-15)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-10" data-name="filete-lomo" d="M475 216 L489 216 M475 278 L489 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-14" data-name="lomo" x="492" y="180" width="20" height="120" fill="url(#linear-gradient-16)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-11" data-name="filete-lomo" d="M495 194 L509 194 M495 278 L509 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-15" data-name="lomo" x="512" y="186" width="22" height="114" fill="url(#linear-gradient-17)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-12" data-name="filete-lomo" d="M515 200 L531 200 M515 278 L531 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-16" data-name="lomo" x="536" y="184" width="20" height="116" fill="url(#linear-gradient-18)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-13" data-name="filete-lomo" d="M539 198 L553 198 M539 278 L553 278" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="balda" x="160" y="300" width="470" height="16" fill="url(#linear-gradient-19)" stroke="#2c2216" stroke-miterlimit="10"/>
+      <rect id="lomo-17" data-name="lomo" x="176" y="340" width="30" height="120" fill="url(#linear-gradient-20)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-18" data-name="lomo" x="206" y="369" width="26" height="91" fill="url(#linear-gradient-21)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-14" data-name="filete-lomo" d="M209 383 L229 383 M209 438 L229 438" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-19" data-name="lomo" x="234" y="355" width="26" height="105" fill="url(#linear-gradient-22)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-15" data-name="filete-lomo" d="M237 369 L257 369 M237 438 L257 438" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-20" data-name="lomo" x="261" y="366" width="30" height="94" fill="url(#linear-gradient-23)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-21" data-name="lomo" x="293" y="362" width="20" height="98" fill="url(#linear-gradient-24)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-16" data-name="filete-lomo" d="M296 376 L310 376 M296 438 L310 438" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-22" data-name="lomo" x="315" y="346" width="18" height="114" fill="url(#linear-gradient-25)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-23" data-name="lomo" x="334" y="366" width="24" height="94" fill="url(#linear-gradient-26)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-24" data-name="lomo" x="393" y="369" width="18" height="91" fill="url(#linear-gradient-27)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-25" data-name="lomo" x="413" y="358" width="30" height="102" fill="url(#linear-gradient-28)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-26" data-name="lomo" x="443" y="339" width="20" height="121" fill="url(#linear-gradient-29)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-17" data-name="filete-lomo" d="M446 353 L460 353 M446 438 L460 438" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-27" data-name="lomo" x="463" y="337" width="24" height="123" fill="url(#linear-gradient-30)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-18" data-name="filete-lomo" d="M466 351 L484 351 M466 438 L484 438" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-28" data-name="lomo" x="488" y="353" width="20" height="107" fill="url(#linear-gradient-31)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-29" data-name="lomo" x="508" y="356" width="20" height="104" fill="url(#linear-gradient-32)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-19" data-name="filete-lomo" d="M511 370 L525 370 M511 438 L525 438" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-30" data-name="lomo" x="528" y="355" width="30" height="105" fill="url(#linear-gradient-33)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-20" data-name="filete-lomo" d="M531 369 L555 369 M531 438 L555 438" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="balda-2" data-name="balda" x="160" y="460" width="470" height="16" fill="url(#linear-gradient-34)" stroke="#2c2216" stroke-miterlimit="10"/>
+      <rect id="lomo-31" data-name="lomo" x="176" y="502" width="26" height="138" fill="url(#linear-gradient-35)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-32" data-name="lomo" x="204" y="533" width="18" height="107" fill="url(#linear-gradient-36)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-33" data-name="lomo" x="222" y="525" width="22" height="115" fill="url(#linear-gradient-37)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-21" data-name="filete-lomo" d="M225 539 L241 539 M225 618 L241 618" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-34" data-name="lomo" x="244" y="499" width="18" height="141" fill="url(#linear-gradient-38)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-35" data-name="lomo" x="262" y="534" width="20" height="106" fill="url(#linear-gradient-39)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-36" data-name="lomo" x="284" y="528" width="30" height="112" fill="url(#linear-gradient-40)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-22" data-name="filete-lomo" d="M287 542 L311 542 M287 618 L311 618" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-37" data-name="lomo" x="316" y="539" width="22" height="101" fill="url(#linear-gradient-41)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-38" data-name="lomo" x="338" y="524" width="22" height="116" fill="url(#linear-gradient-42)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-23" data-name="filete-lomo" d="M341 538 L357 538 M341 618 L357 618" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-39" data-name="lomo" x="361" y="509" width="18" height="131" fill="url(#linear-gradient-43)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-24" data-name="filete-lomo" d="M364 523 L376 523 M364 618 L376 618" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-40" data-name="lomo" x="414" y="517" width="24" height="123" fill="url(#linear-gradient-44)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-41" data-name="lomo" x="438" y="527" width="30" height="113" fill="url(#linear-gradient-45)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-42" data-name="lomo" x="468" y="500" width="22" height="140" fill="url(#linear-gradient-46)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-25" data-name="filete-lomo" d="M471 514 L487 514 M471 618 L487 618" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="lomo-43" data-name="lomo" x="491" y="539" width="26" height="101" fill="url(#linear-gradient-47)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-44" data-name="lomo" x="518" y="539" width="18" height="101" fill="url(#linear-gradient-48)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-45" data-name="lomo" x="538" y="513" width="22" height="127" fill="url(#linear-gradient-49)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <rect id="lomo-46" data-name="lomo" x="562" y="507" width="24" height="133" fill="url(#linear-gradient-50)" stroke="#241c14" stroke-width="0.8" stroke-miterlimit="10"/>
+      <path id="filete-lomo-26" data-name="filete-lomo" d="M565 521 L583 521 M565 618 L583 618" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-miterlimit="10" opacity="0.65"/>
+      <rect id="balda-3" data-name="balda" x="160" y="640" width="470" height="16" fill="url(#linear-gradient-51)" stroke="#2c2216" stroke-miterlimit="10"/>
+    </g>
+  </g>
+  <g id="_3a-hacienda" data-name="3a-hacienda">
+  </g>
+  <g id="_3a-tintero-pluma" data-name="3a-tintero-pluma">
+  </g>
+  <g id="_3-conectores" data-name="3-conectores">
+  </g>
+  <g id="_3-rotulos-participantes" data-name="3-rotulos-participantes">
+  </g>
+</svg>

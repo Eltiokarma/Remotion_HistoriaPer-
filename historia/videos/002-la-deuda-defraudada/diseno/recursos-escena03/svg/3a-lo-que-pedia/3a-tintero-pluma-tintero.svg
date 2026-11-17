@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="320" viewBox="0 0 220 320">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="16.5" y="270.5" width="169" height="41" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="2.5"/></filter>
+    <linearGradient id="linear-gradient-1" x1="40" y1="255" x2="152" y2="255" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34463c"/>
+      <stop offset="0.4" stop-color="#22302a"/>
+      <stop offset="1" stop-color="#111915"/>
+    </linearGradient>
+  </defs>
+  <title>3a-tintero-pluma</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_3a-folio-resumen" data-name="3a-folio-resumen">
+  </g>
+  <g id="_3a-folio-solicitud" data-name="3a-folio-solicitud">
+  </g>
+  <g id="_3a-folio-lucro-cesante" data-name="3a-folio-lucro-cesante">
+  </g>
+  <g id="_3b-folio-gestion" data-name="3b-folio-gestion">
+  </g>
+  <g id="_3c-folio-respuesta" data-name="3c-folio-respuesta">
+  </g>
+  <g id="_3d-folio-antecedente" data-name="3d-folio-antecedente">
+  </g>
+  <g id="_3d-folio-intervencion" data-name="3d-folio-intervencion">
+  </g>
+  <g id="_3d-folio-aprobacion" data-name="3d-folio-aprobacion">
+  </g>
+  <g id="_3e-folio-aprobado" data-name="3e-folio-aprobado">
+  </g>
+  <g id="_3e-folio-recibido" data-name="3e-folio-recibido">
+  </g>
+  <g id="_3f-folio-resultado" data-name="3f-folio-resultado">
+  </g>
+  <g id="_3f-caja-conjunto" data-name="3f-caja-conjunto">
+  </g>
+  <g id="_3f-folio-1851" data-name="3f-folio-1851">
+  </g>
+  <g id="_4a-folio-1852" data-name="4a-folio-1852">
+  </g>
+  <g id="_3-despacho-fondo" data-name="3-despacho-fondo">
+  </g>
+  <g id="_3a-hacienda" data-name="3a-hacienda">
+  </g>
+  <g id="_3a-tintero-pluma" data-name="3a-tintero-pluma">
+    <g id="tintero-pluma">
+      <g id="tintero">
+        <g filter="url(#filter-1)">
+          <ellipse id="sombra" cx="101" cy="291" rx="75" ry="11" fill="#0f1712" opacity="0.55"/>
+        </g>
+        <path id="cuerpo" d="M52 218 L140 218 C146.627 218 152 223.373 152 230 L152 280 C152 286.627 146.627 292 140 292 L52 292 C45.373 292 40 286.627 40 280 L40 230 C40 223.373 45.373 218 52 218 Z" fill="url(#linear-gradient-1)" stroke="#0b110e" stroke-width="1.5" stroke-miterlimit="10"/>
+        <path id="cuello" d="M74 198 L118 198 C120.209 198 122 199.791 122 202 L122 220 C122 222.209 120.209 224 118 224 L74 224 C71.791 224 70 222.209 70 220 L70 202 C70 199.791 71.791 198 74 198 Z" fill="#1d2924" stroke="#0b110e" stroke-width="1.2" stroke-miterlimit="10"/>
+        <ellipse id="boca" cx="96" cy="198" rx="30" ry="7" fill="#43554b" stroke="#0b110e" stroke-width="1.2" stroke-miterlimit="10"/>
+        <path id="brillo" d="M50 232 C52 252 52 268 50 282" fill="none" stroke="#7d9488" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" opacity="0.45"/>
+      </g>
+    </g>
+  </g>
+  <g id="_3-conectores" data-name="3-conectores">
+  </g>
+  <g id="_3-rotulos-participantes" data-name="3-rotulos-participantes">
+  </g>
+</svg>

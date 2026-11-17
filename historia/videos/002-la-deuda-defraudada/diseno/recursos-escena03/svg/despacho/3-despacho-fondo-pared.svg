@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="960" y1="0" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1c2e25"/>
+      <stop offset="0.6" stop-color="#2c4537"/>
+      <stop offset="1" stop-color="#33503f"/>
+    </linearGradient>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="763" y="-57" width="1274" height="1034" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="45"/></filter>
+    <linearGradient id="linear-gradient-2" x1="960" y1="700" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22372c"/>
+      <stop offset="1" stop-color="#1a2a21"/>
+    </linearGradient>
+  </defs>
+  <title>3-despacho-fondo</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_3a-folio-resumen" data-name="3a-folio-resumen">
+  </g>
+  <g id="_3a-folio-solicitud" data-name="3a-folio-solicitud">
+  </g>
+  <g id="_3a-folio-lucro-cesante" data-name="3a-folio-lucro-cesante">
+  </g>
+  <g id="_3b-folio-gestion" data-name="3b-folio-gestion">
+  </g>
+  <g id="_3c-folio-respuesta" data-name="3c-folio-respuesta">
+  </g>
+  <g id="_3d-folio-antecedente" data-name="3d-folio-antecedente">
+  </g>
+  <g id="_3d-folio-intervencion" data-name="3d-folio-intervencion">
+  </g>
+  <g id="_3d-folio-aprobacion" data-name="3d-folio-aprobacion">
+  </g>
+  <g id="_3e-folio-aprobado" data-name="3e-folio-aprobado">
+  </g>
+  <g id="_3e-folio-recibido" data-name="3e-folio-recibido">
+  </g>
+  <g id="_3f-folio-resultado" data-name="3f-folio-resultado">
+  </g>
+  <g id="_3f-caja-conjunto" data-name="3f-caja-conjunto">
+  </g>
+  <g id="_3f-folio-1851" data-name="3f-folio-1851">
+  </g>
+  <g id="_4a-folio-1852" data-name="4a-folio-1852">
+  </g>
+  <g id="_3-despacho-fondo" data-name="3-despacho-fondo">
+    <g id="pared">
+      <rect id="muro" x="0" y="0" width="1920" height="1080" fill="url(#linear-gradient-1)"/>
+      <g filter="url(#filter-1)">
+        <ellipse id="luz-ventana" cx="1400" cy="460" rx="500" ry="380" fill="#5d7f68" opacity="0.22"/>
+      </g>
+      <rect id="zocalo" x="0" y="700" width="1920" height="380" fill="url(#linear-gradient-2)"/>
+      <rect id="moldura" x="0" y="690" width="1920" height="14" fill="#2f4a3b"/>
+      <line id="sombra-moldura" x1="0" y1="704" x2="1920" y2="704" fill="none" stroke="#14211a" stroke-width="2" stroke-miterlimit="10" opacity="0.7"/>
+      <rect id="panel" x="40" y="740" width="270" height="140" fill="none" stroke="#3a5646" stroke-width="1.5" stroke-miterlimit="10" opacity="0.55"/>
+      <rect id="panel-2" data-name="panel" x="355" y="740" width="270" height="140" fill="none" stroke="#3a5646" stroke-width="1.5" stroke-miterlimit="10" opacity="0.55"/>
+      <rect id="panel-3" data-name="panel" x="670" y="740" width="270" height="140" fill="none" stroke="#3a5646" stroke-width="1.5" stroke-miterlimit="10" opacity="0.55"/>
+      <rect id="panel-4" data-name="panel" x="985" y="740" width="270" height="140" fill="none" stroke="#3a5646" stroke-width="1.5" stroke-miterlimit="10" opacity="0.55"/>
+      <rect id="panel-5" data-name="panel" x="1300" y="740" width="270" height="140" fill="none" stroke="#3a5646" stroke-width="1.5" stroke-miterlimit="10" opacity="0.55"/>
+      <rect id="panel-6" data-name="panel" x="1615" y="740" width="270" height="140" fill="none" stroke="#3a5646" stroke-width="1.5" stroke-miterlimit="10" opacity="0.55"/>
+    </g>
+  </g>
+  <g id="_3a-hacienda" data-name="3a-hacienda">
+  </g>
+  <g id="_3a-tintero-pluma" data-name="3a-tintero-pluma">
+  </g>
+  <g id="_3-conectores" data-name="3-conectores">
+  </g>
+  <g id="_3-rotulos-participantes" data-name="3-rotulos-participantes">
+  </g>
+</svg>

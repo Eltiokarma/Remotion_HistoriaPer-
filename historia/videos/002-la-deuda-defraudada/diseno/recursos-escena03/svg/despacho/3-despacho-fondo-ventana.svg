@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="1261.296" y1="136.097" x2="1548.704" y2="633.903" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a9bfae"/>
+      <stop offset="0.5" stop-color="#86a393"/>
+      <stop offset="1" stop-color="#5f7f70"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1405" y1="650" x2="1405" y2="670" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f6a59"/>
+      <stop offset="1" stop-color="#2c4236"/>
+    </linearGradient>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="1013" y="585" width="1014" height="542" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="15"/></filter>
+  </defs>
+  <title>3-despacho-fondo</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_3a-folio-resumen" data-name="3a-folio-resumen">
+  </g>
+  <g id="_3a-folio-solicitud" data-name="3a-folio-solicitud">
+  </g>
+  <g id="_3a-folio-lucro-cesante" data-name="3a-folio-lucro-cesante">
+  </g>
+  <g id="_3b-folio-gestion" data-name="3b-folio-gestion">
+  </g>
+  <g id="_3c-folio-respuesta" data-name="3c-folio-respuesta">
+  </g>
+  <g id="_3d-folio-antecedente" data-name="3d-folio-antecedente">
+  </g>
+  <g id="_3d-folio-intervencion" data-name="3d-folio-intervencion">
+  </g>
+  <g id="_3d-folio-aprobacion" data-name="3d-folio-aprobacion">
+  </g>
+  <g id="_3e-folio-aprobado" data-name="3e-folio-aprobado">
+  </g>
+  <g id="_3e-folio-recibido" data-name="3e-folio-recibido">
+  </g>
+  <g id="_3f-folio-resultado" data-name="3f-folio-resultado">
+  </g>
+  <g id="_3f-caja-conjunto" data-name="3f-caja-conjunto">
+  </g>
+  <g id="_3f-folio-1851" data-name="3f-folio-1851">
+  </g>
+  <g id="_4a-folio-1852" data-name="4a-folio-1852">
+  </g>
+  <g id="_3-despacho-fondo" data-name="3-despacho-fondo">
+    <g id="ventana">
+      <rect id="marco-exterior" x="1235" y="115" width="340" height="540" fill="#3d5547" stroke="#22352a" stroke-width="3" stroke-miterlimit="10"/>
+      <rect id="cristal" x="1258" y="138" width="294" height="494" fill="url(#linear-gradient-1)"/>
+      <polygon id="reflejo" points="1258,520 1552,250 1552,330 1258,600" fill="#e6efe2" opacity="0.18"/>
+      <path id="parteluces" d="M1405 138 L1405 632 M1258 385 L1552 385 M1258 262 L1552 262 M1258 508 L1552 508" fill="none" stroke="#3d5547" stroke-width="9" stroke-miterlimit="10"/>
+      <rect id="alfeizar" x="1218" y="650" width="374" height="20" fill="url(#linear-gradient-2)" stroke="#1d2d24" stroke-width="1.5" stroke-miterlimit="10"/>
+      <g filter="url(#filter-1)">
+        <polygon id="haz-de-luz" points="1258,632 1060,1080 1980,1080 1552,632" fill="#bcd2bf" opacity="0.07"/>
+      </g>
+    </g>
+  </g>
+  <g id="_3a-hacienda" data-name="3a-hacienda">
+  </g>
+  <g id="_3a-tintero-pluma" data-name="3a-tintero-pluma">
+  </g>
+  <g id="_3-conectores" data-name="3-conectores">
+  </g>
+  <g id="_3-rotulos-participantes" data-name="3-rotulos-participantes">
+  </g>
+</svg>

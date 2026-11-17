@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="960" y1="850" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7b6040"/>
+      <stop offset="0.25" stop-color="#5c4630"/>
+      <stop offset="1" stop-color="#3b2c1c"/>
+    </linearGradient>
+  </defs>
+  <title>3-despacho-fondo</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_3a-folio-resumen" data-name="3a-folio-resumen">
+  </g>
+  <g id="_3a-folio-solicitud" data-name="3a-folio-solicitud">
+  </g>
+  <g id="_3a-folio-lucro-cesante" data-name="3a-folio-lucro-cesante">
+  </g>
+  <g id="_3b-folio-gestion" data-name="3b-folio-gestion">
+  </g>
+  <g id="_3c-folio-respuesta" data-name="3c-folio-respuesta">
+  </g>
+  <g id="_3d-folio-antecedente" data-name="3d-folio-antecedente">
+  </g>
+  <g id="_3d-folio-intervencion" data-name="3d-folio-intervencion">
+  </g>
+  <g id="_3d-folio-aprobacion" data-name="3d-folio-aprobacion">
+  </g>
+  <g id="_3e-folio-aprobado" data-name="3e-folio-aprobado">
+  </g>
+  <g id="_3e-folio-recibido" data-name="3e-folio-recibido">
+  </g>
+  <g id="_3f-folio-resultado" data-name="3f-folio-resultado">
+  </g>
+  <g id="_3f-caja-conjunto" data-name="3f-caja-conjunto">
+  </g>
+  <g id="_3f-folio-1851" data-name="3f-folio-1851">
+  </g>
+  <g id="_4a-folio-1852" data-name="4a-folio-1852">
+  </g>
+  <g id="_3-despacho-fondo" data-name="3-despacho-fondo">
+    <g id="mesa">
+      <polygon id="tablero" points="0,870 1920,850 1920,1080 0,1080" fill="url(#linear-gradient-1)"/>
+      <line id="canto-luz" x1="0" y1="870" x2="1920" y2="850" fill="none" stroke="#a88a5c" stroke-width="3" stroke-miterlimit="10"/>
+      <path id="veta" d="M0 904 C420 890 900 914 1300 898 C1700 882 1760 912 1920 900" fill="none" stroke="#2e2216" stroke-width="1.4" stroke-miterlimit="10" opacity="0.45"/>
+      <path id="veta-2" data-name="veta" d="M0 930 C420 916 900 940 1300 924 C1700 908 1760 938 1920 926" fill="none" stroke="#2e2216" stroke-width="1.4" stroke-miterlimit="10" opacity="0.45"/>
+      <path id="veta-3" data-name="veta" d="M0 955 C420 941 900 965 1300 949 C1700 933 1760 963 1920 951" fill="none" stroke="#2e2216" stroke-width="1.4" stroke-miterlimit="10" opacity="0.45"/>
+      <path id="veta-4" data-name="veta" d="M0 987 C420 973 900 997 1300 981 C1700 965 1760 995 1920 983" fill="none" stroke="#2e2216" stroke-width="1.4" stroke-miterlimit="10" opacity="0.45"/>
+      <path id="veta-5" data-name="veta" d="M0 1005 C420 991 900 1015 1300 999 C1700 983 1760 1013 1920 1001" fill="none" stroke="#2e2216" stroke-width="1.4" stroke-miterlimit="10" opacity="0.45"/>
+      <path id="veta-6" data-name="veta" d="M0 1031 C420 1017 900 1041 1300 1025 C1700 1009 1760 1039 1920 1027" fill="none" stroke="#2e2216" stroke-width="1.4" stroke-miterlimit="10" opacity="0.45"/>
+      <path id="veta-7" data-name="veta" d="M0 1064 C420 1050 900 1074 1300 1058 C1700 1042 1760 1072 1920 1060" fill="none" stroke="#2e2216" stroke-width="1.4" stroke-miterlimit="10" opacity="0.45"/>
+      <polygon id="sombra-canto" points="0,876 1920,856 1920,872 0,892" fill="#1d150d" opacity="0.35"/>
+    </g>
+  </g>
+  <g id="_3a-hacienda" data-name="3a-hacienda">
+  </g>
+  <g id="_3a-tintero-pluma" data-name="3a-tintero-pluma">
+  </g>
+  <g id="_3-conectores" data-name="3-conectores">
+  </g>
+  <g id="_3-rotulos-participantes" data-name="3-rotulos-participantes">
+  </g>
+</svg>
