@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="520" height="680" viewBox="0 0 520 680">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="8.2" y="8.2" width="503.6" height="663.6" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="7"/><feOffset dx="0" dy="8" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.35"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-1" x1="260" y1="640" x2="260" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dccb9f"/>
+      <stop offset="1" stop-color="#f0e8d2"/>
+    </linearGradient>
+  </defs>
+  <title>1d-folio-prestamo</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+    <g id="folio-prestamo">
+      <g id="hoja">
+        <g filter="url(#filter-1)">
+          <polygon id="papel" points="40,40 480,40 480,600 440,640 40,640" fill="url(#linear-gradient-1)" stroke="#6b5a3a" stroke-width="1.6" stroke-linejoin="round"/>
+        </g>
+        <polygon id="esquina-doblada" points="480,600 440,600 440,640" fill="#c8b585" stroke="#6b5a3a" stroke-width="1.2" stroke-linejoin="round"/>
+        <line id="filete" x1="75" y1="125" x2="445" y2="125" fill="none" stroke="#6b5a3a" stroke-width="2" stroke-miterlimit="10"/>
+        <path id="renglones" d="M75 200 L445 200 M75 236 L445 236 M75 272 L445 272 M75 308 L445 308 M75 344 L445 344 M75 380 L445 380 M75 416 L445 416 M75 452 L445 452 M75 488 L445 488 M75 524 L445 524" fill="none" stroke="#b9a77c" stroke-miterlimit="10" opacity="0.55"/>
+        <path id="desgaste-bordes" d="M50 52 L470 52 M52 630 L430 630" fill="none" stroke="#cdbb8e" stroke-width="0.8" stroke-miterlimit="10" opacity="0.7"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

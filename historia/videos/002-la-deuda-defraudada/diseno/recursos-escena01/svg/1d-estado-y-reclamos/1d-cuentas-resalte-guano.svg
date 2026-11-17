@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="760" viewBox="0 0 1200 760">
+  <title>1d-cuentas-estado</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+    <g id="cuentas-estado" data-entrada-enlace="120,384 (fila Guano)" data-revelado="columna-obligaciones fila por fila">
+      <g id="columna-ingresos">
+        <g id="fila-guano">
+          <path id="resalte-guano" data-uso="aparece cuando llega el enlace desde el ingreso del guano" d="M106 354 L564 354 C567.314 354 570 356.686 570 360 L570 408 C570 411.314 567.314 414 564 414 L106 414 C102.686 414 100 411.314 100 408 L100 360 C100 356.686 102.686 354 106 354 Z" fill="#c2a878" stroke="#8a7243" stroke-width="1.4" stroke-miterlimit="10" opacity="0.55"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

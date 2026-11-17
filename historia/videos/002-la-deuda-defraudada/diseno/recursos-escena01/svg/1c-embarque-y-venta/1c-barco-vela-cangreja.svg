@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="900" viewBox="0 0 1000 900">
+  <title>1c-barco</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+    <g id="barco">
+      <g id="vela-cangreja">
+        <polygon points="732.5,252 875,568.5 732.5,537" fill="#d9cda4" stroke="#71795a" stroke-width="1.3" stroke-miterlimit="10"/>
+        <path d="M732.5 252 L798.5 543 M732.5 252 L828.5 556.5" fill="none" stroke="#ada782" stroke-width="0.7" stroke-miterlimit="10"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1400" height="700" viewBox="0 0 1400 700">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="16.2" y="241.2" width="377.6" height="217.6" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feOffset dx="0" dy="6" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.35"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-1" x1="205" y1="435" x2="205" y2="265" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dccb9f"/>
+      <stop offset="1" stop-color="#efe6cf"/>
+    </linearGradient>
+    <filter id="filter-2" filterUnits="userSpaceOnUse" x="446.2" y="241.2" width="377.6" height="217.6" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feOffset dx="0" dy="6" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.35"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-2" x1="635" y1="435" x2="635" y2="265" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dccb9f"/>
+      <stop offset="1" stop-color="#efe6cf"/>
+    </linearGradient>
+    <filter id="filter-3" filterUnits="userSpaceOnUse" x="976.2" y="46.2" width="377.6" height="217.6" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feOffset dx="0" dy="6" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.35"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-3" x1="1165" y1="240" x2="1165" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dccb9f"/>
+      <stop offset="1" stop-color="#efe6cf"/>
+    </linearGradient>
+    <filter id="filter-4" filterUnits="userSpaceOnUse" x="976.2" y="436.2" width="377.6" height="217.6" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feOffset dx="0" dy="6" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.35"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-4" x1="1165" y1="630" x2="1165" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dccb9f"/>
+      <stop offset="1" stop-color="#efe6cf"/>
+    </linearGradient>
+  </defs>
+  <title>1c-diagrama-venta</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+    <g id="diagrama-venta" data-orden-de-lectura="nodo-guano, flecha-guano-venta, nodo-venta, flecha-venta-descuento, nodo-gastos-comision, flecha-venta-ingreso, nodo-ingreso-estado" data-tipo="relacional, no cuantitativo">
+      <g id="flecha-guano-venta">
+        <line id="trazo" x1="370" y1="350" x2="458" y2="350" fill="none" stroke="#c2a878" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10"/>
+        <polygon id="punta" points="454,338 472,350 454,362" fill="#c2a878" stroke="#c2a878" stroke-width="2" stroke-linejoin="round"/>
+      </g>
+      <g id="flecha-venta-descuento">
+        <path id="trazo-2" data-name="trazo" d="M800 320 C890 320 910 155 986 155" fill="none" stroke="#c2a878" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10"/>
+        <polygon id="punta-2" data-name="punta" points="982,143 1000,155 982,167" fill="#c2a878" stroke="#c2a878" stroke-width="2" stroke-linejoin="round"/>
+      </g>
+      <g id="flecha-venta-ingreso">
+        <path id="trazo-3" data-name="trazo" d="M800 380 C890 380 910 545 986 545" fill="none" stroke="#c2a878" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10"/>
+        <polygon id="punta-3" data-name="punta" points="982,533 1000,545 982,557" fill="#c2a878" stroke="#c2a878" stroke-width="2" stroke-linejoin="round"/>
+      </g>
+      <g id="nodo-guano">
+        <g filter="url(#filter-1)">
+          <path id="tarjeta" d="M46 265 L364 265 C367.314 265 370 267.686 370 271 L370 429 C370 432.314 367.314 435 364 435 L46 435 C42.686 435 40 432.314 40 429 L40 271 C40 267.686 42.686 265 46 265 Z" fill="url(#linear-gradient-1)" stroke="#6b5a3a" stroke-width="1.6" stroke-miterlimit="10"/>
+        </g>
+      </g>
+      <g id="nodo-venta">
+        <g filter="url(#filter-2)">
+          <path id="tarjeta-2" data-name="tarjeta" d="M476 265 L794 265 C797.314 265 800 267.686 800 271 L800 429 C800 432.314 797.314 435 794 435 L476 435 C472.686 435 470 432.314 470 429 L470 271 C470 267.686 472.686 265 476 265 Z" fill="url(#linear-gradient-2)" stroke="#6b5a3a" stroke-width="1.6" stroke-miterlimit="10"/>
+        </g>
+      </g>
+      <g id="nodo-gastos-comision">
+        <g filter="url(#filter-3)">
+          <path id="tarjeta-3" data-name="tarjeta" d="M1006 70 L1324 70 C1327.314 70 1330 72.686 1330 76 L1330 234 C1330 237.314 1327.314 240 1324 240 L1006 240 C1002.686 240 1000 237.314 1000 234 L1000 76 C1000 72.686 1002.686 70 1006 70 Z" fill="url(#linear-gradient-3)" stroke="#6b5a3a" stroke-width="1.6" stroke-miterlimit="10"/>
+        </g>
+      </g>
+      <g id="nodo-ingreso-estado">
+        <g filter="url(#filter-4)">
+          <path id="tarjeta-4" data-name="tarjeta" d="M1006 460 L1324 460 C1327.314 460 1330 462.686 1330 466 L1330 624 C1330 627.314 1327.314 630 1324 630 L1006 630 C1002.686 630 1000 627.314 1000 624 L1000 466 C1000 462.686 1002.686 460 1006 460 Z" fill="url(#linear-gradient-4)" stroke="#6b5a3a" stroke-width="1.6" stroke-miterlimit="10"/>
+        </g>
+        <rect id="marca-ocre" x="1000" y="460" width="10" height="170" fill="#c2a878"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

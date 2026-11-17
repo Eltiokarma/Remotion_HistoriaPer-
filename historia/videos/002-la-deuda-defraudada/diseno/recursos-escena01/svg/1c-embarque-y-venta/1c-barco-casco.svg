@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="900" viewBox="0 0 1000 900">
+  <title>1c-barco</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+    <g id="barco">
+      <g id="casco">
+        <path d="M102.5 630 L897.5 630 L834.5 720 C600.5 756 379.5 754 171.5 714 Z" fill="#534b36" stroke="#354d40" stroke-width="2.5" stroke-miterlimit="10"/>
+        <path d="M134 648 C383 683 629 683 872 648" fill="none" stroke="#2d4035" stroke-width="1.5" stroke-miterlimit="10"/>
+        <path d="M141.5 663 C385.5 697 625 697 860 663" fill="none" stroke="#b5a177" stroke-width="1.5" stroke-miterlimit="10"/>
+        <path d="M149 678 C388 711 621 711 848 678" fill="none" stroke="#2d4035" stroke-width="1.5" stroke-miterlimit="10"/>
+        <path d="M156.5 693 C390.5 725 617 725 836 693" fill="none" stroke="#b5a177" stroke-width="1.5" stroke-miterlimit="10"/>
+        <path d="M164 708 C393 739 613 739 824 708" fill="none" stroke="#2d4035" stroke-width="1.5" stroke-miterlimit="10"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="520" height="360" viewBox="0 0 520 360">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="127.8" y="288.8" width="144.4" height="32.8" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="1.8"/></filter>
+    <linearGradient id="linear-gradient-1" x1="143.551" y1="221.95" x2="255.249" y2="221.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e3d4a8"/>
+      <stop offset="0.45" stop-color="#cfba88"/>
+      <stop offset="1" stop-color="#9a8559"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="171.856" y1="116.8" x2="224.752" y2="116.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6d8ae"/>
+      <stop offset="1" stop-color="#ad9767"/>
+    </linearGradient>
+    <filter id="filter-2" filterUnits="userSpaceOnUse" x="247.8" y="288.8" width="144.4" height="32.8" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="1.8"/></filter>
+    <linearGradient id="linear-gradient-3" x1="263.551" y1="221.95" x2="375.249" y2="221.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e3d4a8"/>
+      <stop offset="0.45" stop-color="#cfba88"/>
+      <stop offset="1" stop-color="#9a8559"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="291.856" y1="116.8" x2="344.752" y2="116.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6d8ae"/>
+      <stop offset="1" stop-color="#ad9767"/>
+    </linearGradient>
+    <filter id="filter-3" filterUnits="userSpaceOnUse" x="67.8" y="314.8" width="144.4" height="32.8" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="1.8"/></filter>
+    <linearGradient id="linear-gradient-5" x1="83.551" y1="247.95" x2="195.249" y2="247.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e3d4a8"/>
+      <stop offset="0.45" stop-color="#cfba88"/>
+      <stop offset="1" stop-color="#9a8559"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="111.856" y1="142.8" x2="164.752" y2="142.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6d8ae"/>
+      <stop offset="1" stop-color="#ad9767"/>
+    </linearGradient>
+    <filter id="filter-4" filterUnits="userSpaceOnUse" x="187.8" y="314.8" width="144.4" height="32.8" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="1.8"/></filter>
+    <linearGradient id="linear-gradient-7" x1="203.551" y1="247.95" x2="315.249" y2="247.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e3d4a8"/>
+      <stop offset="0.45" stop-color="#cfba88"/>
+      <stop offset="1" stop-color="#9a8559"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="231.856" y1="142.8" x2="284.752" y2="142.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6d8ae"/>
+      <stop offset="1" stop-color="#ad9767"/>
+    </linearGradient>
+    <filter id="filter-5" filterUnits="userSpaceOnUse" x="307.8" y="314.8" width="144.4" height="32.8" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="1.8"/></filter>
+    <linearGradient id="linear-gradient-9" x1="323.551" y1="247.95" x2="435.249" y2="247.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e3d4a8"/>
+      <stop offset="0.45" stop-color="#cfba88"/>
+      <stop offset="1" stop-color="#9a8559"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="351.856" y1="142.8" x2="404.752" y2="142.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6d8ae"/>
+      <stop offset="1" stop-color="#ad9767"/>
+    </linearGradient>
+  </defs>
+  <title>1c-pila-sacos</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+    <g id="pila-sacos" data-linea-de-apoyo-y="340" data-orden-de-entrada="saco-frente-1, saco-frente-2, saco-frente-3, saco-fondo-1, saco-fondo-2">
+      <g id="saco-fondo-1" data-agarre-cuello="150,112" data-agarre-der="238,190" data-agarre-izq="66,190" data-apoyo="150,388">
+        <g filter="url(#filter-1)">
+          <ellipse id="sombra-suelo" cx="200" cy="305.2" rx="64.8" ry="9" fill="#0f1712" opacity="0.45"/>
+        </g>
+        <g id="saco">
+          <g id="cuerpo-saco">
+            <path id="cuerpo" d="M179.6 139 C164 146.2 150.8 157 147.2 173.8 C143.6 205 142.4 253 144.8 289 C146 299.8 152 304.6 164 305.8 C186.8 308.2 212 308.2 234.8 305.8 C246.8 304.6 252.8 299.8 254 289 C256.4 253 255.2 205 251.6 173.8 C248 157 233.6 146.2 218 139 C206 135.4 191.6 135.4 179.6 139 Z" fill="url(#linear-gradient-1)" stroke="#4d4733" stroke-width="1.32" stroke-linejoin="round"/>
+            <path id="sombra-propia-izq" d="M147.2 187 C143.6 229 143.6 271 146 290.2 C147.2 301 154.4 305.8 168.8 306.4 C158 295 154.4 271 154.4 241 C154.4 217 150.8 199 147.2 187 Z" fill="#7f6c47" opacity="0.35"/>
+            <path id="sombra-propia-der" d="M251.6 173.8 C255.2 211 256.4 253 254 289 C252.8 299.8 246.8 304.6 232.4 306.4 C242 289 244.4 253 243.2 217 C242 193 240.8 181 236 163 C243.2 166.6 249.2 170.2 251.6 173.8 Z" fill="#6f5d3c" opacity="0.4"/>
+            <path id="trama-yute" d="M152 172 L246.8 172 M147.2 196 L251.6 196 M146 220 L252.8 220 M145.4 244 L253.4 244 M146 268 L253.4 268 M148.4 290.2 L251.6 290.2" fill="none" stroke="#8f7b51" stroke-width="0.66" stroke-miterlimit="10" stroke-dasharray="1.2 3" opacity="0.55"/>
+            <path id="pliegues" d="M166.4 152.2 C160.4 178 159.2 205 162.8 230.2 M232.4 152.2 C238.4 178 240.8 206.2 236 232.6 M180.8 271 C198.8 279.4 214.4 278.2 228.8 271 M198.8 145 C196.4 163 197.6 176.2 200 189.4 M147.2 293.8 C162.8 298.6 180.8 301 198.8 301" fill="none" stroke="#8a7550" stroke-width="0.84" stroke-linecap="round" stroke-miterlimit="10" opacity="0.75"/>
+          </g>
+          <g id="boca-y-amarre">
+            <path id="boca-fruncida" d="M180.8 137.8 C174.8 127 168.8 115 173.6 101.8 C180.8 107.8 185.6 104.2 189.2 97 C194 104.2 200 99.4 204.8 95.8 C208.4 103 215.6 105.4 224 100.6 C226.4 115 222.8 128.2 216.8 137.8 Z" fill="url(#linear-gradient-2)" stroke="#4d4733" stroke-width="1.2" stroke-linejoin="round"/>
+            <path id="pliegues-boca" d="M182 128.2 C184.4 121 185.6 112.6 189.2 104.2 M198.8 130.6 C200 121 201.2 111.4 204.8 101.8 M210.8 130.6 C213.2 122.2 216.8 115 221.6 107.8" fill="none" stroke="#8a7550" stroke-width="0.72" stroke-linecap="round" stroke-miterlimit="10" opacity="0.8"/>
+            <path id="amarre-cuerda" d="M177.2 134.2 C192.8 140.2 206 140.2 220.4 134.2 L221.6 141.4 C206 148 191.6 148 176 141.4 Z" fill="#7b6a46" stroke="#3f3a29" stroke-width="0.96" stroke-linejoin="round"/>
+            <path id="torsion-cuerda" d="M180.8 137.2 L183.2 143.2 M188 139 L189.8 145 M196.4 140.2 L197.6 146.2 M204.8 140.2 L205.4 146.2 M213.2 138.4 L213.8 144.4" fill="none" stroke="#4a4029" stroke-width="0.6" stroke-miterlimit="10" opacity="0.8"/>
+            <path id="cabo-cuerda" d="M216.8 141.4 C227.6 147.4 231.2 158.2 226.4 169 M226.4 169 L224 175 M226.4 169 L229.4 173.8" fill="none" stroke="#6a5a3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </g>
+      <g id="saco-fondo-2" data-agarre-cuello="150,112" data-agarre-der="238,190" data-agarre-izq="66,190" data-apoyo="150,388">
+        <g filter="url(#filter-2)">
+          <ellipse id="sombra-suelo-2" data-name="sombra-suelo" cx="320" cy="305.2" rx="64.8" ry="9" fill="#0f1712" opacity="0.45"/>
+        </g>
+        <g id="saco-2" data-name="saco">
+          <g id="cuerpo-saco-2" data-name="cuerpo-saco">
+            <path id="cuerpo-2" data-name="cuerpo" d="M299.6 139 C284 146.2 270.8 157 267.2 173.8 C263.6 205 262.4 253 264.8 289 C266 299.8 272 304.6 284 305.8 C306.8 308.2 332 308.2 354.8 305.8 C366.8 304.6 372.8 299.8 374 289 C376.4 253 375.2 205 371.6 173.8 C368 157 353.6 146.2 338 139 C326 135.4 311.6 135.4 299.6 139 Z" fill="url(#linear-gradient-3)" stroke="#4d4733" stroke-width="1.32" stroke-linejoin="round"/>
+            <path id="sombra-propia-izq-2" data-name="sombra-propia-izq" d="M267.2 187 C263.6 229 263.6 271 266 290.2 C267.2 301 274.4 305.8 288.8 306.4 C278 295 274.4 271 274.4 241 C274.4 217 270.8 199 267.2 187 Z" fill="#7f6c47" opacity="0.35"/>
+            <path id="sombra-propia-der-2" data-name="sombra-propia-der" d="M371.6 173.8 C375.2 211 376.4 253 374 289 C372.8 299.8 366.8 304.6 352.4 306.4 C362 289 364.4 253 363.2 217 C362 193 360.8 181 356 163 C363.2 166.6 369.2 170.2 371.6 173.8 Z" fill="#6f5d3c" opacity="0.4"/>
+            <path id="trama-yute-2" data-name="trama-yute" d="M272 172 L366.8 172 M267.2 196 L371.6 196 M266 220 L372.8 220 M265.4 244 L373.4 244 M266 268 L373.4 268 M268.4 290.2 L371.6 290.2" fill="none" stroke="#8f7b51" stroke-width="0.66" stroke-miterlimit="10" stroke-dasharray="1.2 3" opacity="0.55"/>
+            <path id="pliegues-2" data-name="pliegues" d="M286.4 152.2 C280.4 178 279.2 205 282.8 230.2 M352.4 152.2 C358.4 178 360.8 206.2 356 232.6 M300.8 271 C318.8 279.4 334.4 278.2 348.8 271 M318.8 145 C316.4 163 317.6 176.2 320 189.4 M267.2 293.8 C282.8 298.6 300.8 301 318.8 301" fill="none" stroke="#8a7550" stroke-width="0.84" stroke-linecap="round" stroke-miterlimit="10" opacity="0.75"/>
+          </g>
+          <g id="boca-y-amarre-2" data-name="boca-y-amarre">
+            <path id="boca-fruncida-2" data-name="boca-fruncida" d="M300.8 137.8 C294.8 127 288.8 115 293.6 101.8 C300.8 107.8 305.6 104.2 309.2 97 C314 104.2 320 99.4 324.8 95.8 C328.4 103 335.6 105.4 344 100.6 C346.4 115 342.8 128.2 336.8 137.8 Z" fill="url(#linear-gradient-4)" stroke="#4d4733" stroke-width="1.2" stroke-linejoin="round"/>
+            <path id="pliegues-boca-2" data-name="pliegues-boca" d="M302 128.2 C304.4 121 305.6 112.6 309.2 104.2 M318.8 130.6 C320 121 321.2 111.4 324.8 101.8 M330.8 130.6 C333.2 122.2 336.8 115 341.6 107.8" fill="none" stroke="#8a7550" stroke-width="0.72" stroke-linecap="round" stroke-miterlimit="10" opacity="0.8"/>
+            <path id="amarre-cuerda-2" data-name="amarre-cuerda" d="M297.2 134.2 C312.8 140.2 326 140.2 340.4 134.2 L341.6 141.4 C326 148 311.6 148 296 141.4 Z" fill="#7b6a46" stroke="#3f3a29" stroke-width="0.96" stroke-linejoin="round"/>
+            <path id="torsion-cuerda-2" data-name="torsion-cuerda" d="M300.8 137.2 L303.2 143.2 M308 139 L309.8 145 M316.4 140.2 L317.6 146.2 M324.8 140.2 L325.4 146.2 M333.2 138.4 L333.8 144.4" fill="none" stroke="#4a4029" stroke-width="0.6" stroke-miterlimit="10" opacity="0.8"/>
+            <path id="cabo-cuerda-2" data-name="cabo-cuerda" d="M336.8 141.4 C347.6 147.4 351.2 158.2 346.4 169 M346.4 169 L344 175 M346.4 169 L349.4 173.8" fill="none" stroke="#6a5a3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </g>
+      <g id="saco-frente-1" data-agarre-cuello="150,112" data-agarre-der="238,190" data-agarre-izq="66,190" data-apoyo="150,388">
+        <g filter="url(#filter-3)">
+          <ellipse id="sombra-suelo-3" data-name="sombra-suelo" cx="140" cy="331.2" rx="64.8" ry="9" fill="#0f1712" opacity="0.45"/>
+        </g>
+        <g id="saco-3" data-name="saco">
+          <g id="cuerpo-saco-3" data-name="cuerpo-saco">
+            <path id="cuerpo-3" data-name="cuerpo" d="M119.6 165 C104 172.2 90.8 183 87.2 199.8 C83.6 231 82.4 279 84.8 315 C86 325.8 92 330.6 104 331.8 C126.8 334.2 152 334.2 174.8 331.8 C186.8 330.6 192.8 325.8 194 315 C196.4 279 195.2 231 191.6 199.8 C188 183 173.6 172.2 158 165 C146 161.4 131.6 161.4 119.6 165 Z" fill="url(#linear-gradient-5)" stroke="#4d4733" stroke-width="1.32" stroke-linejoin="round"/>
+            <path id="sombra-propia-izq-3" data-name="sombra-propia-izq" d="M87.2 213 C83.6 255 83.6 297 86 316.2 C87.2 327 94.4 331.8 108.8 332.4 C98 321 94.4 297 94.4 267 C94.4 243 90.8 225 87.2 213 Z" fill="#7f6c47" opacity="0.35"/>
+            <path id="sombra-propia-der-3" data-name="sombra-propia-der" d="M191.6 199.8 C195.2 237 196.4 279 194 315 C192.8 325.8 186.8 330.6 172.4 332.4 C182 315 184.4 279 183.2 243 C182 219 180.8 207 176 189 C183.2 192.6 189.2 196.2 191.6 199.8 Z" fill="#6f5d3c" opacity="0.4"/>
+            <path id="trama-yute-3" data-name="trama-yute" d="M92 198 L186.8 198 M87.2 222 L191.6 222 M86 246 L192.8 246 M85.4 270 L193.4 270 M86 294 L193.4 294 M88.4 316.2 L191.6 316.2" fill="none" stroke="#8f7b51" stroke-width="0.66" stroke-miterlimit="10" stroke-dasharray="1.2 3" opacity="0.55"/>
+            <path id="pliegues-3" data-name="pliegues" d="M106.4 178.2 C100.4 204 99.2 231 102.8 256.2 M172.4 178.2 C178.4 204 180.8 232.2 176 258.6 M120.8 297 C138.8 305.4 154.4 304.2 168.8 297 M138.8 171 C136.4 189 137.6 202.2 140 215.4 M87.2 319.8 C102.8 324.6 120.8 327 138.8 327" fill="none" stroke="#8a7550" stroke-width="0.84" stroke-linecap="round" stroke-miterlimit="10" opacity="0.75"/>
+          </g>
+          <g id="boca-y-amarre-3" data-name="boca-y-amarre">
+            <path id="boca-fruncida-3" data-name="boca-fruncida" d="M120.8 163.8 C114.8 153 108.8 141 113.6 127.8 C120.8 133.8 125.6 130.2 129.2 123 C134 130.2 140 125.4 144.8 121.8 C148.4 129 155.6 131.4 164 126.6 C166.4 141 162.8 154.2 156.8 163.8 Z" fill="url(#linear-gradient-6)" stroke="#4d4733" stroke-width="1.2" stroke-linejoin="round"/>
+            <path id="pliegues-boca-3" data-name="pliegues-boca" d="M122 154.2 C124.4 147 125.6 138.6 129.2 130.2 M138.8 156.6 C140 147 141.2 137.4 144.8 127.8 M150.8 156.6 C153.2 148.2 156.8 141 161.6 133.8" fill="none" stroke="#8a7550" stroke-width="0.72" stroke-linecap="round" stroke-miterlimit="10" opacity="0.8"/>
+            <path id="amarre-cuerda-3" data-name="amarre-cuerda" d="M117.2 160.2 C132.8 166.2 146 166.2 160.4 160.2 L161.6 167.4 C146 174 131.6 174 116 167.4 Z" fill="#7b6a46" stroke="#3f3a29" stroke-width="0.96" stroke-linejoin="round"/>
+            <path id="torsion-cuerda-3" data-name="torsion-cuerda" d="M120.8 163.2 L123.2 169.2 M128 165 L129.8 171 M136.4 166.2 L137.6 172.2 M144.8 166.2 L145.4 172.2 M153.2 164.4 L153.8 170.4" fill="none" stroke="#4a4029" stroke-width="0.6" stroke-miterlimit="10" opacity="0.8"/>
+            <path id="cabo-cuerda-3" data-name="cabo-cuerda" d="M156.8 167.4 C167.6 173.4 171.2 184.2 166.4 195 M166.4 195 L164 201 M166.4 195 L169.4 199.8" fill="none" stroke="#6a5a3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </g>
+      <g id="saco-frente-2" data-agarre-cuello="150,112" data-agarre-der="238,190" data-agarre-izq="66,190" data-apoyo="150,388">
+        <g filter="url(#filter-4)">
+          <ellipse id="sombra-suelo-4" data-name="sombra-suelo" cx="260" cy="331.2" rx="64.8" ry="9" fill="#0f1712" opacity="0.45"/>
+        </g>
+        <g id="saco-4" data-name="saco">
+          <g id="cuerpo-saco-4" data-name="cuerpo-saco">
+            <path id="cuerpo-4" data-name="cuerpo" d="M239.6 165 C224 172.2 210.8 183 207.2 199.8 C203.6 231 202.4 279 204.8 315 C206 325.8 212 330.6 224 331.8 C246.8 334.2 272 334.2 294.8 331.8 C306.8 330.6 312.8 325.8 314 315 C316.4 279 315.2 231 311.6 199.8 C308 183 293.6 172.2 278 165 C266 161.4 251.6 161.4 239.6 165 Z" fill="url(#linear-gradient-7)" stroke="#4d4733" stroke-width="1.32" stroke-linejoin="round"/>
+            <path id="sombra-propia-izq-4" data-name="sombra-propia-izq" d="M207.2 213 C203.6 255 203.6 297 206 316.2 C207.2 327 214.4 331.8 228.8 332.4 C218 321 214.4 297 214.4 267 C214.4 243 210.8 225 207.2 213 Z" fill="#7f6c47" opacity="0.35"/>
+            <path id="sombra-propia-der-4" data-name="sombra-propia-der" d="M311.6 199.8 C315.2 237 316.4 279 314 315 C312.8 325.8 306.8 330.6 292.4 332.4 C302 315 304.4 279 303.2 243 C302 219 300.8 207 296 189 C303.2 192.6 309.2 196.2 311.6 199.8 Z" fill="#6f5d3c" opacity="0.4"/>
+            <path id="trama-yute-4" data-name="trama-yute" d="M212 198 L306.8 198 M207.2 222 L311.6 222 M206 246 L312.8 246 M205.4 270 L313.4 270 M206 294 L313.4 294 M208.4 316.2 L311.6 316.2" fill="none" stroke="#8f7b51" stroke-width="0.66" stroke-miterlimit="10" stroke-dasharray="1.2 3" opacity="0.55"/>
+            <path id="pliegues-4" data-name="pliegues" d="M226.4 178.2 C220.4 204 219.2 231 222.8 256.2 M292.4 178.2 C298.4 204 300.8 232.2 296 258.6 M240.8 297 C258.8 305.4 274.4 304.2 288.8 297 M258.8 171 C256.4 189 257.6 202.2 260 215.4 M207.2 319.8 C222.8 324.6 240.8 327 258.8 327" fill="none" stroke="#8a7550" stroke-width="0.84" stroke-linecap="round" stroke-miterlimit="10" opacity="0.75"/>
+          </g>
+          <g id="boca-y-amarre-4" data-name="boca-y-amarre">
+            <path id="boca-fruncida-4" data-name="boca-fruncida" d="M240.8 163.8 C234.8 153 228.8 141 233.6 127.8 C240.8 133.8 245.6 130.2 249.2 123 C254 130.2 260 125.4 264.8 121.8 C268.4 129 275.6 131.4 284 126.6 C286.4 141 282.8 154.2 276.8 163.8 Z" fill="url(#linear-gradient-8)" stroke="#4d4733" stroke-width="1.2" stroke-linejoin="round"/>
+            <path id="pliegues-boca-4" data-name="pliegues-boca" d="M242 154.2 C244.4 147 245.6 138.6 249.2 130.2 M258.8 156.6 C260 147 261.2 137.4 264.8 127.8 M270.8 156.6 C273.2 148.2 276.8 141 281.6 133.8" fill="none" stroke="#8a7550" stroke-width="0.72" stroke-linecap="round" stroke-miterlimit="10" opacity="0.8"/>
+            <path id="amarre-cuerda-4" data-name="amarre-cuerda" d="M237.2 160.2 C252.8 166.2 266 166.2 280.4 160.2 L281.6 167.4 C266 174 251.6 174 236 167.4 Z" fill="#7b6a46" stroke="#3f3a29" stroke-width="0.96" stroke-linejoin="round"/>
+            <path id="torsion-cuerda-4" data-name="torsion-cuerda" d="M240.8 163.2 L243.2 169.2 M248 165 L249.8 171 M256.4 166.2 L257.6 172.2 M264.8 166.2 L265.4 172.2 M273.2 164.4 L273.8 170.4" fill="none" stroke="#4a4029" stroke-width="0.6" stroke-miterlimit="10" opacity="0.8"/>
+            <path id="cabo-cuerda-4" data-name="cabo-cuerda" d="M276.8 167.4 C287.6 173.4 291.2 184.2 286.4 195 M286.4 195 L284 201 M286.4 195 L289.4 199.8" fill="none" stroke="#6a5a3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </g>
+      <g id="saco-frente-3" data-agarre-cuello="150,112" data-agarre-der="238,190" data-agarre-izq="66,190" data-apoyo="150,388">
+        <g filter="url(#filter-5)">
+          <ellipse id="sombra-suelo-5" data-name="sombra-suelo" cx="380" cy="331.2" rx="64.8" ry="9" fill="#0f1712" opacity="0.45"/>
+        </g>
+        <g id="saco-5" data-name="saco">
+          <g id="cuerpo-saco-5" data-name="cuerpo-saco">
+            <path id="cuerpo-5" data-name="cuerpo" d="M359.6 165 C344 172.2 330.8 183 327.2 199.8 C323.6 231 322.4 279 324.8 315 C326 325.8 332 330.6 344 331.8 C366.8 334.2 392 334.2 414.8 331.8 C426.8 330.6 432.8 325.8 434 315 C436.4 279 435.2 231 431.6 199.8 C428 183 413.6 172.2 398 165 C386 161.4 371.6 161.4 359.6 165 Z" fill="url(#linear-gradient-9)" stroke="#4d4733" stroke-width="1.32" stroke-linejoin="round"/>
+            <path id="sombra-propia-izq-5" data-name="sombra-propia-izq" d="M327.2 213 C323.6 255 323.6 297 326 316.2 C327.2 327 334.4 331.8 348.8 332.4 C338 321 334.4 297 334.4 267 C334.4 243 330.8 225 327.2 213 Z" fill="#7f6c47" opacity="0.35"/>
+            <path id="sombra-propia-der-5" data-name="sombra-propia-der" d="M431.6 199.8 C435.2 237 436.4 279 434 315 C432.8 325.8 426.8 330.6 412.4 332.4 C422 315 424.4 279 423.2 243 C422 219 420.8 207 416 189 C423.2 192.6 429.2 196.2 431.6 199.8 Z" fill="#6f5d3c" opacity="0.4"/>
+            <path id="trama-yute-5" data-name="trama-yute" d="M332 198 L426.8 198 M327.2 222 L431.6 222 M326 246 L432.8 246 M325.4 270 L433.4 270 M326 294 L433.4 294 M328.4 316.2 L431.6 316.2" fill="none" stroke="#8f7b51" stroke-width="0.66" stroke-miterlimit="10" stroke-dasharray="1.2 3" opacity="0.55"/>
+            <path id="pliegues-5" data-name="pliegues" d="M346.4 178.2 C340.4 204 339.2 231 342.8 256.2 M412.4 178.2 C418.4 204 420.8 232.2 416 258.6 M360.8 297 C378.8 305.4 394.4 304.2 408.8 297 M378.8 171 C376.4 189 377.6 202.2 380 215.4 M327.2 319.8 C342.8 324.6 360.8 327 378.8 327" fill="none" stroke="#8a7550" stroke-width="0.84" stroke-linecap="round" stroke-miterlimit="10" opacity="0.75"/>
+          </g>
+          <g id="boca-y-amarre-5" data-name="boca-y-amarre">
+            <path id="boca-fruncida-5" data-name="boca-fruncida" d="M360.8 163.8 C354.8 153 348.8 141 353.6 127.8 C360.8 133.8 365.6 130.2 369.2 123 C374 130.2 380 125.4 384.8 121.8 C388.4 129 395.6 131.4 404 126.6 C406.4 141 402.8 154.2 396.8 163.8 Z" fill="url(#linear-gradient-10)" stroke="#4d4733" stroke-width="1.2" stroke-linejoin="round"/>
+            <path id="pliegues-boca-5" data-name="pliegues-boca" d="M362 154.2 C364.4 147 365.6 138.6 369.2 130.2 M378.8 156.6 C380 147 381.2 137.4 384.8 127.8 M390.8 156.6 C393.2 148.2 396.8 141 401.6 133.8" fill="none" stroke="#8a7550" stroke-width="0.72" stroke-linecap="round" stroke-miterlimit="10" opacity="0.8"/>
+            <path id="amarre-cuerda-5" data-name="amarre-cuerda" d="M357.2 160.2 C372.8 166.2 386 166.2 400.4 160.2 L401.6 167.4 C386 174 371.6 174 356 167.4 Z" fill="#7b6a46" stroke="#3f3a29" stroke-width="0.96" stroke-linejoin="round"/>
+            <path id="torsion-cuerda-5" data-name="torsion-cuerda" d="M360.8 163.2 L363.2 169.2 M368 165 L369.8 171 M376.4 166.2 L377.6 172.2 M384.8 166.2 L385.4 172.2 M393.2 164.4 L393.8 170.4" fill="none" stroke="#4a4029" stroke-width="0.6" stroke-miterlimit="10" opacity="0.8"/>
+            <path id="cabo-cuerda-5" data-name="cabo-cuerda" d="M396.8 167.4 C407.6 173.4 411.2 184.2 406.4 195 M406.4 195 L404 201 M406.4 195 L409.4 199.8" fill="none" stroke="#6a5a3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

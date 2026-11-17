@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="560" viewBox="0 0 1000 560">
+  <title>1b-deposito-guano</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+    <g id="deposito-guano" data-pie-trabajador="700,470" data-punto-de-pala="596,236">
+      <g id="granos-sueltos">
+        <path id="granos-sueltos-monticulo" d="M606 334 C632 318 668 318 708 342 C676 348 636 348 606 334 Z" fill="#9c844f" stroke="#5a4b2e" stroke-width="1.4" stroke-linejoin="round"/>
+        <path id="granos-sueltos-2" data-name="granos-sueltos" d="M620 328 M618 328 C618 329.105 618.895 330 620 330 C621.105 330 622 329.105 622 328 C622 326.895 621.105 326 620 326 C618.895 326 618 326.895 618 328 M640 322 M638 322 C638 323.105 638.895 324 640 324 C641.105 324 642 323.105 642 322 C642 320.895 641.105 320 640 320 C638.895 320 638 320.895 638 322 M662 326 M660 326 C660 327.105 660.895 328 662 328 C663.105 328 664 327.105 664 326 C664 324.895 663.105 324 662 324 C660.895 324 660 324.895 660 326 M684 334 M682 334 C682 335.105 682.895 336 684 336 C685.105 336 686 335.105 686 334 C686 332.895 685.105 332 684 332 C682.895 332 682 332.895 682 334 M650 336 M648.5 336 C648.5 336.828 649.172 337.5 650 337.5 C650.828 337.5 651.5 336.828 651.5 336 C651.5 335.172 650.828 334.5 650 334.5 C649.172 334.5 648.5 335.172 648.5 336 M716 348 M714 348 C714 349.105 714.895 350 716 350 C717.105 350 718 349.105 718 348 C718 346.895 717.105 346 716 346 C714.895 346 714 346.895 714 348 M728 354 M726.5 354 C726.5 354.828 727.172 355.5 728 355.5 C728.828 355.5 729.5 354.828 729.5 354 C729.5 353.172 728.828 352.5 728 352.5 C727.172 352.5 726.5 353.172 726.5 354" fill="#e2d09c" opacity="0.9"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

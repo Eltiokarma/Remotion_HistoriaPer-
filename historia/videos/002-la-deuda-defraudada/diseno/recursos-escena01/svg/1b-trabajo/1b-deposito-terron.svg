@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="560" viewBox="0 0 1000 560">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="613.273" y1="242" x2="613.273" y2="186" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#86703f"/>
+      <stop offset="1" stop-color="#c7ae76"/>
+    </linearGradient>
+  </defs>
+  <title>1b-deposito-guano</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+    <g id="deposito-guano" data-pie-trabajador="700,470" data-punto-de-pala="596,236">
+      <g id="terron-desprendible" data-caida-hasta="650,330" data-pivote="598,242">
+        <path id="terron" d="M590 186 L628 190 C640 204 640 226 630 240 L598 242 C590 224 588 204 590 186 Z" fill="url(#linear-gradient-1)" stroke="#4f4128" stroke-width="1.8" stroke-linejoin="round"/>
+        <path id="terron-estratos" d="M598 202 L626 203 M600 216 L632 217 M600 230 L628 230" fill="none" stroke="#6e5a33" stroke-miterlimit="10" opacity="0.7"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

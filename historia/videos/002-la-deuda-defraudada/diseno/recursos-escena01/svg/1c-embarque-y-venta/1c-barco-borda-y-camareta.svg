@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="900" viewBox="0 0 1000 900">
+  <title>1c-barco</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+    <g id="barco">
+      <g id="borda-y-baranda">
+        <rect x="177.5" y="609" width="645" height="21" fill="#827654" stroke="#3d4b39" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M192.5 607.5 L192.5 585 M186.5 589.5 L198.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M227 607.5 L227 585 M221 589.5 L233 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M261.5 607.5 L261.5 585 M255.5 589.5 L267.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M296 607.5 L296 585 M290 589.5 L302 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M330.5 607.5 L330.5 585 M324.5 589.5 L336.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M365 607.5 L365 585 M359 589.5 L371 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M399.5 607.5 L399.5 585 M393.5 589.5 L405.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M434 607.5 L434 585 M428 589.5 L440 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M468.5 607.5 L468.5 585 M462.5 589.5 L474.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M503 607.5 L503 585 M497 589.5 L509 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M537.5 607.5 L537.5 585 M531.5 589.5 L543.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M572 607.5 L572 585 M566 589.5 L578 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M606.5 607.5 L606.5 585 M600.5 589.5 L612.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M641 607.5 L641 585 M635 589.5 L647 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M675.5 607.5 L675.5 585 M669.5 589.5 L681.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M710 607.5 L710 585 M704 589.5 L716 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M744.5 607.5 L744.5 585 M738.5 589.5 L750.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M779 607.5 L779 585 M773 589.5 L785 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <line x1="189.5" y1="589.5" x2="792.5" y2="589.5" fill="none" stroke="#5c6247" stroke-width="2" stroke-miterlimit="10"/>
+      </g>
+      <g id="camareta">
+        <rect x="672.5" y="556.5" width="112.5" height="52.5" fill="#a2946c" stroke="#536046" stroke-width="1.5" stroke-miterlimit="10"/>
+        <rect x="687.5" y="570" width="12" height="18" fill="#3f5344" stroke="#70795c" stroke-miterlimit="10"/>
+        <rect x="713" y="570" width="12" height="18" fill="#3f5344" stroke="#70795c" stroke-miterlimit="10"/>
+        <rect x="738.5" y="570" width="12" height="18" fill="#3f5344" stroke="#70795c" stroke-miterlimit="10"/>
+        <rect x="764" y="570" width="12" height="18" fill="#3f5344" stroke="#70795c" stroke-miterlimit="10"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

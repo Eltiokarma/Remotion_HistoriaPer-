@@ -1,6 +1,6 @@
 {
   "titulo": "Roadmap del laboratorio y la base de producción",
-  "actualizado": "2026-11-10",
+  "actualizado": "2026-11-17",
   "notas": [
     "Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.",
     "Tiempo humano y tokens: null = desconocido (no medido). No se estiman.",
@@ -46,6 +46,10 @@
     {
       "id": "e1",
       "titulo": "Episodio 0·1 · El hombre que le sacó la cuenta al Perú"
+    },
+    {
+      "id": "e2",
+      "titulo": "Episodio 0·2 · La deuda defraudada"
     }
   ],
   "tareas": [
@@ -1336,6 +1340,32 @@
       "evidencia": [
         "historia/videos/001-el-hombre/fuentes.md",
         "historia/scripts/generar_audio.py"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e2-recursos-escena01",
+      "fase": "e2",
+      "titulo": "Recursos vectoriales de la escena 1 «Las islas y el país» (objetos SVG para personajes PNG)",
+      "entregable": "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/: dos originales de VectorCraft, 61 SVG por momento y pieza, hoja de contacto, dos composiciones de prueba, hoja de montaje, inventario y lista de imágenes para ChatGPT",
+      "estado": "en_curso",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-17",
+        "fin": null
+      },
+      "bloqueo": "Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.",
+      "evidencia": [
+        "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/README.md",
+        "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/inventario.json",
+        "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/imagenes-chatgpt.md",
+        "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/revision/contacto.png"
       ],
       "tiempo": {
         "humano_min": null,

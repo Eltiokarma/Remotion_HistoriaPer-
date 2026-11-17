@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>1a-mapa-costa-central</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+    <g id="mapa-costa-central" data-chincha="1060,803" data-lima="861,287" data-pisco="1122,826" data-proyeccion="Mercator, R=2183.7 px/rad sobre mapa-peru.svg x8.3">
+      <g id="localizadores">
+        <g id="localizador-lima" data-centro="120,120">
+          <g id="pulsos">
+            <circle id="pulso-2" cx="861" cy="287" r="70" fill="none" stroke="#e9d9a8" stroke-width="1.5" stroke-miterlimit="10" opacity="0.35"/>
+            <circle id="pulso-1" cx="861" cy="287" r="44" fill="none" stroke="#e9d9a8" stroke-width="2" stroke-miterlimit="10" opacity="0.6"/>
+          </g>
+          <circle id="anillo" cx="861" cy="287" r="22" fill="none" stroke="#c2a878" stroke-width="3.5" stroke-miterlimit="10"/>
+          <circle id="punto" cx="861" cy="287" r="10" fill="#c2a878" stroke="#2b3a30" stroke-width="2.5" stroke-miterlimit="10"/>
+        </g>
+        <g id="localizador-chincha" data-centro="120,120">
+          <g id="pulsos-2" data-name="pulsos">
+            <circle id="pulso-2-2" data-name="pulso-2" cx="1060" cy="803" r="70" fill="none" stroke="#e9d9a8" stroke-width="1.5" stroke-miterlimit="10" opacity="0.35"/>
+            <circle id="pulso-1-2" data-name="pulso-1" cx="1060" cy="803" r="44" fill="none" stroke="#e9d9a8" stroke-width="2" stroke-miterlimit="10" opacity="0.6"/>
+          </g>
+          <circle id="anillo-2" data-name="anillo" cx="1060" cy="803" r="22" fill="none" stroke="#c2a878" stroke-width="3.5" stroke-miterlimit="10"/>
+          <circle id="punto-2" data-name="punto" cx="1060" cy="803" r="10" fill="#c2a878" stroke="#2b3a30" stroke-width="2.5" stroke-miterlimit="10"/>
+        </g>
+        <g id="localizador-pisco" data-centro="120,120">
+          <g id="pulsos-3" data-name="pulsos">
+            <circle id="pulso-2-3" data-name="pulso-2" cx="1122" cy="826" r="45.5" fill="none" stroke="#e9d9a8" stroke-width="0.975" stroke-miterlimit="10" opacity="0.35"/>
+            <circle id="pulso-1-3" data-name="pulso-1" cx="1122" cy="826" r="28.6" fill="none" stroke="#e9d9a8" stroke-width="1.3" stroke-miterlimit="10" opacity="0.6"/>
+          </g>
+          <circle id="anillo-3" data-name="anillo" cx="1122" cy="826" r="14.3" fill="none" stroke="#c2a878" stroke-width="2.275" stroke-miterlimit="10"/>
+          <circle id="punto-3" data-name="punto" cx="1122" cy="826" r="6.5" fill="#c2a878" stroke="#2b3a30" stroke-width="1.625" stroke-miterlimit="10"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

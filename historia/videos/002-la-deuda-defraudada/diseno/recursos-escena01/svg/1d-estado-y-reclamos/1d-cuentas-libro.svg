@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="0" y="25" width="1200" height="730" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dx="0" dy="10" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.45"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-1" x1="600" y1="715" x2="600" y2="65" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3e2f1f"/>
+      <stop offset="1" stop-color="#6a5236"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="70" y1="389.993" x2="598" y2="389.993" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#efe6cf"/>
+      <stop offset="0.85" stop-color="#e3d5b1"/>
+      <stop offset="1" stop-color="#c7b487"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="602" y1="389.993" x2="1130" y2="389.993" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7b487"/>
+      <stop offset="0.15" stop-color="#e3d5b1"/>
+      <stop offset="1" stop-color="#efe6cf"/>
+    </linearGradient>
+  </defs>
+  <title>1d-cuentas-estado</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+    <g id="cuentas-estado" data-entrada-enlace="120,384 (fila Guano)" data-revelado="columna-obligaciones fila por fila">
+      <g id="libro">
+        <g filter="url(#filter-1)">
+          <path id="tapa" d="M52 65 L1148 65 C1154.627 65 1160 70.373 1160 77 L1160 703 C1160 709.627 1154.627 715 1148 715 L52 715 C45.373 715 40 709.627 40 703 L40 77 C40 70.373 45.373 65 52 65 Z" fill="url(#linear-gradient-1)" stroke="#2a2015" stroke-width="2" stroke-miterlimit="10"/>
+        </g>
+        <path id="pagina-izquierda" d="M70 95 C230 80 430 82 598 100 L598 695 C430 678 230 676 70 690 Z" fill="url(#linear-gradient-2)" stroke="#6b5a3a" stroke-width="1.4" stroke-linejoin="round"/>
+        <path id="pagina-derecha" d="M602 100 C770 82 970 80 1130 95 L1130 690 C970 676 770 678 602 695 Z" fill="url(#linear-gradient-3)" stroke="#6b5a3a" stroke-width="1.4" stroke-linejoin="round"/>
+        <line id="lomo" x1="600" y1="98" x2="600" y2="696" fill="none" stroke="#5a4a30" stroke-width="2.5" stroke-miterlimit="10"/>
+        <path id="filetes" d="M110 178 L560 178 M640 178 L1090 178" fill="none" stroke="#6b5a3a" stroke-width="2" stroke-miterlimit="10"/>
+        <path id="renglones" d="M110 260 L560 260 M110 340 L560 340 M110 420 L560 420 M110 500 L560 500 M110 580 L560 580 M640 260 L1090 260 M640 340 L1090 340 M640 420 L1090 420 M640 500 L1090 500 M640 580 L1090 580" fill="none" stroke="#b9a77c" stroke-miterlimit="10" opacity="0.6"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

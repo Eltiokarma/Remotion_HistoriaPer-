@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="620" height="800" viewBox="0 0 620 800">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="8.2" y="8.2" width="591.6" height="783.6" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="7"/><feOffset dx="0" dy="8" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.35"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-1" x1="304" y1="760" x2="304" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dccb9f"/>
+      <stop offset="1" stop-color="#f0e8d2"/>
+    </linearGradient>
+  </defs>
+  <title>1d-folio-reclamo</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+    <g id="folio-reclamo" data-enlace="mismo folio que abre la escena 2 (2A)">
+      <path id="pestana-roja" d="M67 0 L89 0 C90.657 0 92 1.343 92 3 L92 77 C92 78.657 90.657 80 89 80 L67 80 C65.343 80 64 78.657 64 77 L64 3 C64 1.343 65.343 0 67 0 Z" fill="#a5503c" stroke="#6e3326" stroke-width="1.2" stroke-miterlimit="10"/>
+      <g id="hoja">
+        <g filter="url(#filter-1)">
+          <polygon id="papel" points="40,40 568,40 568,712 520,760 40,760" fill="url(#linear-gradient-1)" stroke="#6b5a3a" stroke-width="1.6" stroke-linejoin="round"/>
+        </g>
+        <polygon id="esquina-doblada" points="568,712 520,712 520,760" fill="#c8b585" stroke="#6b5a3a" stroke-width="1.2" stroke-linejoin="round"/>
+        <line id="filete" x1="82" y1="142" x2="526" y2="142" fill="none" stroke="#6b5a3a" stroke-width="2" stroke-miterlimit="10"/>
+        <path id="renglones" d="M82 232 L526 232 M82 275.2 L526 275.2 M82 318.4 L526 318.4 M82 361.6 L526 361.6 M82 404.8 L526 404.8 M82 448 L526 448 M82 491.2 L526 491.2 M82 534.4 L526 534.4 M82 577.6 L526 577.6 M82 620.8 L526 620.8" fill="none" stroke="#b9a77c" stroke-miterlimit="10" opacity="0.55"/>
+        <path id="desgaste-bordes" d="M52 54.4 L556 54.4 M54.4 748 L508 748" fill="none" stroke="#cdbb8e" stroke-width="0.8" stroke-miterlimit="10" opacity="0.7"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

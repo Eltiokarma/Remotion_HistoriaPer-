@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1400" height="760" viewBox="0 0 1400 760">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="95" y1="338.5" x2="1250" y2="338.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bfa06a"/>
+      <stop offset="1" stop-color="#80683f"/>
+    </linearGradient>
+  </defs>
+  <title>1d-carpeta</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+    <g id="carpeta-fondo">
+      <ellipse cx="700" cy="647" rx="640" ry="40" fill="#132019"/>
+      <polygon points="95,115 216,50 1250,103 1342,597 1219,671 144,605" fill="#59492f" stroke="#aa8d55" stroke-width="2" stroke-miterlimit="10"/>
+      <polygon points="95,115 216,50 486,64 527,98 1250,103 1219,627 144,605" fill="url(#linear-gradient-1)" stroke="#d0b583" stroke-width="2" stroke-miterlimit="10"/>
+      <polygon points="109,132 1218,141 1205,610 160,588" fill="#756541" stroke="#a88c57" stroke-miterlimit="10"/>
+    </g>
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

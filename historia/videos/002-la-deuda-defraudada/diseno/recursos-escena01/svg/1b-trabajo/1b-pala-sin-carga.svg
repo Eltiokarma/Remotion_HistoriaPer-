@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="820" viewBox="0 0 240 820">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="111" y1="346" x2="129" y2="346" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b48c58"/>
+      <stop offset="0.5" stop-color="#8c6a3f"/>
+      <stop offset="1" stop-color="#5e4426"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="102" y1="630" x2="138" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7d827a"/>
+      <stop offset="0.5" stop-color="#5d625a"/>
+      <stop offset="1" stop-color="#383c35"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="70" y1="724" x2="170" y2="724" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#959a91"/>
+      <stop offset="0.55" stop-color="#6c7168"/>
+      <stop offset="1" stop-color="#454a42"/>
+    </linearGradient>
+  </defs>
+  <title>1b-pala</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+    <g id="pala" data-mano-inferior="120,470" data-mano-superior="120,30" data-pivote="120,470" data-punta="120,810">
+      <g id="mango-madera">
+        <path id="empunadura-contorno" d="M114 74 C104 62 100 46 102 26 M126 74 C136 62 140 46 138 26 M98 24 L142 24" fill="none" stroke="#3a2c1b" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="empunadura" d="M114 74 C104 62 100 46 102 26 M126 74 C136 62 140 46 138 26 M98 24 L142 24" fill="none" stroke="#9a7546" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="asta" d="M117 66 L123 66 C126.314 66 129 68.686 129 72 L129 620 C129 623.314 126.314 626 123 626 L117 626 C113.686 626 111 623.314 111 620 L111 72 C111 68.686 113.686 66 117 66 Z" fill="url(#linear-gradient-1)" stroke="#3a2c1b" stroke-width="1.6" stroke-miterlimit="10"/>
+        <path id="veta-madera" d="M116 90 L116 240 M118 280 L117 470 M123 120 L124 330 M122 380 L123 600 M116 510 L116 590" fill="none" stroke="#5b4227" stroke-width="0.9" stroke-miterlimit="10" opacity="0.6"/>
+      </g>
+      <g id="hoja">
+        <polygon id="cubo-hierro" points="108,598 132,598 138,662 102,662" fill="url(#linear-gradient-2)" stroke="#23251f" stroke-width="1.6" stroke-linejoin="round"/>
+        <path id="remaches" d="M120 612 M117.5 612 C117.5 613.381 118.619 614.5 120 614.5 C121.381 614.5 122.5 613.381 122.5 612 C122.5 610.619 121.381 609.5 120 609.5 C118.619 609.5 117.5 610.619 117.5 612 M120 642 M117.5 642 C117.5 643.381 118.619 644.5 120 644.5 C121.381 644.5 122.5 643.381 122.5 642 C122.5 640.619 121.381 639.5 120 639.5 C118.619 639.5 117.5 640.619 117.5 642" fill="#262822" stroke="#9ba096" stroke-width="0.6" stroke-miterlimit="10"/>
+        <path id="hoja-hierro" d="M70 654 C70 642 90 638 120 638 C150 638 170 642 170 654 L168 742 C166 778 146 802 120 810 C94 802 74 778 72 742 Z" fill="url(#linear-gradient-3)" stroke="#23251f" stroke-width="2" stroke-linejoin="round"/>
+        <path id="brillo-hoja" d="M84 660 C82 700 84 740 92 770 M120 650 L120 700" fill="none" stroke="#c3c8bd" stroke-width="1.4" stroke-linecap="round" stroke-miterlimit="10" opacity="0.55"/>
+        <path id="filo-gastado" d="M76 760 C84 786 102 802 120 808 C138 802 156 786 164 760" fill="none" stroke="#b7b2a0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" opacity="0.6"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

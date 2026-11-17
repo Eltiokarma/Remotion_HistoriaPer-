@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="460" viewBox="0 0 360 460">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="181" y1="250" x2="181" y2="94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e5a33"/>
+      <stop offset="1" stop-color="#a48a50"/>
+    </linearGradient>
+  </defs>
+  <title>1b-saco-abierto</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+    <g id="saco-abierto" data-agarre-der="276,124" data-agarre-izq="84,124" data-apoyo="180,420" data-boca-centro="180,120">
+      <g id="contenido-guano" data-lleno-dy="0" data-vacio-dy="140">
+        <path id="masa-guano" d="M92 126 C108 110 126 106 146 102 C160 94 176 98 190 94 C208 98 228 102 244 110 C258 114 266 120 270 126 L268 250 L94 250 Z" fill="url(#linear-gradient-1)" stroke="#5a4b2e" stroke-width="1.4" stroke-linejoin="round"/>
+        <path id="grano-claro" d="M118 114 M116 114 C116 115.105 116.895 116 118 116 C119.105 116 120 115.105 120 114 C120 112.895 119.105 112 118 112 C116.895 112 116 112.895 116 114 M140 106 M138 106 C138 107.105 138.895 108 140 108 C141.105 108 142 107.105 142 106 C142 104.895 141.105 104 140 104 C138.895 104 138 104.895 138 106 M162 100 M160 100 C160 101.105 160.895 102 162 102 C163.105 102 164 101.105 164 100 C164 98.895 163.105 98 162 98 C160.895 98 160 98.895 160 100 M184 98 M182 98 C182 99.105 182.895 100 184 100 C185.105 100 186 99.105 186 98 C186 96.895 185.105 96 184 96 C182.895 96 182 96.895 182 98 M206 102 M204 102 C204 103.105 204.895 104 206 104 C207.105 104 208 103.105 208 102 C208 100.895 207.105 100 206 100 C204.895 100 204 100.895 204 102 M228 108 M226 108 C226 109.105 226.895 110 228 110 C229.105 110 230 109.105 230 108 C230 106.895 229.105 106 228 106 C226.895 106 226 106.895 226 108 M248 116 M246 116 C246 117.105 246.895 118 248 118 C249.105 118 250 117.105 250 116 C250 114.895 249.105 114 248 114 C246.895 114 246 114.895 246 116 M132 120 M130.5 120 C130.5 120.828 131.172 121.5 132 121.5 C132.828 121.5 133.5 120.828 133.5 120 C133.5 119.172 132.828 118.5 132 118.5 C131.172 118.5 130.5 119.172 130.5 120 M172 112 M170.5 112 C170.5 112.828 171.172 113.5 172 113.5 C172.828 113.5 173.5 112.828 173.5 112 C173.5 111.172 172.828 110.5 172 110.5 C171.172 110.5 170.5 111.172 170.5 112 M214 116 M212.5 116 C212.5 116.828 213.172 117.5 214 117.5 C214.828 117.5 215.5 116.828 215.5 116 C215.5 115.172 214.828 114.5 214 114.5 C213.172 114.5 212.5 115.172 212.5 116 M152 116 M150.5 116 C150.5 116.828 151.172 117.5 152 117.5 C152.828 117.5 153.5 116.828 153.5 116 C153.5 115.172 152.828 114.5 152 114.5 C151.172 114.5 150.5 115.172 150.5 116 M236 122 M234.5 122 C234.5 122.828 235.172 123.5 236 123.5 C236.828 123.5 237.5 122.828 237.5 122 C237.5 121.172 236.828 120.5 236 120.5 C235.172 120.5 234.5 121.172 234.5 122" fill="#e2d09c" opacity="0.85"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="420" viewBox="0 0 300 420">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="57.919" y1="248.25" x2="244.081" y2="248.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e3d4a8"/>
+      <stop offset="0.45" stop-color="#cfba88"/>
+      <stop offset="1" stop-color="#9a8559"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="105.093" y1="73" x2="193.253" y2="73" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6d8ae"/>
+      <stop offset="1" stop-color="#ad9767"/>
+    </linearGradient>
+  </defs>
+  <title>1b-saco-cerrado</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+    <g id="saco-cerrado" data-agarre-cuello="150,112" data-agarre-der="238,190" data-agarre-izq="66,190" data-apoyo="150,388">
+      <g id="saco">
+        <g id="cuerpo-saco">
+          <path id="cuerpo" d="M118 110 C92 122 70 140 64 168 C58 220 56 300 60 360 C62 378 72 386 92 388 C130 392 172 392 210 388 C230 386 240 378 242 360 C246 300 244 220 238 168 C232 140 208 122 182 110 C162 104 138 104 118 110 Z" fill="url(#linear-gradient-1)" stroke="#4d4733" stroke-width="2.2" stroke-linejoin="round"/>
+          <path id="sombra-propia-izq" d="M64 190 C58 260 58 330 62 362 C64 380 76 388 100 389 C82 370 76 330 76 280 C76 240 70 210 64 190 Z" fill="#7f6c47" opacity="0.35"/>
+          <path id="sombra-propia-der" d="M238 168 C244 230 246 300 242 360 C240 378 230 386 206 389 C222 360 226 300 224 240 C222 200 220 180 212 150 C224 156 234 162 238 168 Z" fill="#6f5d3c" opacity="0.4"/>
+          <path id="trama-yute" d="M72 165 L230 165 M64 205 L238 205 M62 245 L240 245 M61 285 L241 285 M62 325 L241 325 M66 362 L238 362" fill="none" stroke="#8f7b51" stroke-width="1.1" stroke-miterlimit="10" stroke-dasharray="2 5" opacity="0.55"/>
+          <path id="pliegues" d="M96 132 C86 175 84 220 90 262 M206 132 C216 175 220 222 212 266 M120 330 C150 344 176 342 200 330 M150 120 C146 150 148 172 152 194 M64 368 C90 376 120 380 150 380" fill="none" stroke="#8a7550" stroke-width="1.4" stroke-linecap="round" stroke-miterlimit="10" opacity="0.75"/>
+        </g>
+        <g id="boca-y-amarre">
+          <path id="boca-fruncida" d="M120 108 C110 90 100 70 108 48 C120 58 128 52 134 40 C142 52 152 44 160 38 C166 50 178 54 192 46 C196 70 190 92 180 108 Z" fill="url(#linear-gradient-2)" stroke="#4d4733" stroke-width="2" stroke-linejoin="round"/>
+          <path id="pliegues-boca" d="M122 92 C126 80 128 66 134 52 M150 96 C152 80 154 64 160 48 M170 96 C174 82 180 70 188 58" fill="none" stroke="#8a7550" stroke-width="1.2" stroke-linecap="round" stroke-miterlimit="10" opacity="0.8"/>
+          <path id="amarre-cuerda" d="M114 102 C140 112 162 112 186 102 L188 114 C162 125 138 125 112 114 Z" fill="#7b6a46" stroke="#3f3a29" stroke-width="1.6" stroke-linejoin="round"/>
+          <path id="torsion-cuerda" d="M120 107 L124 117 M132 110 L135 120 M146 112 L148 122 M160 112 L161 122 M174 109 L175 119" fill="none" stroke="#4a4029" stroke-miterlimit="10" opacity="0.8"/>
+          <path id="cabo-cuerda" d="M180 114 C198 124 204 142 196 160 M196 160 L192 170 M196 160 L201 168" fill="none" stroke="#6a5a3b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

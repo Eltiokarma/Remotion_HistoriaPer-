@@ -1,0 +1,204 @@
+{
+  "escena": "escena-01",
+  "titulo": "Las islas y el país",
+  "fecha": "2026-11-17",
+  "estado": "Borrador del agente pendiente de revisión de Gerson",
+  "herramienta": "VectorCraft mediante MCP",
+  "originales": ["recursos-escena01.vectorcraft", "composiciones-escena01.vectorcraft"],
+  "cuadro": [1920, 1080],
+  "convenciones": {
+    "escala": "Cada recurso en píxeles del cuadro 1920 × 1080 a escala 1; viewBox = mesa de VectorCraft",
+    "piezas": "Las piezas de un objeto comparten viewBox y se colocan con la misma transformación",
+    "puntos": "Atributos data-* del grupo principal, en coordenadas del viewBox",
+    "texto": "Contorneado en los SVG; editable (Georgia) en el original; variantes -sin-texto o piezas de texto aparte"
+  },
+  "recursos": [
+    {
+      "id": "1a-mapa-costa-central",
+      "momento": "1A",
+      "archivo": "svg/1a-localizacion/1a-mapa-costa-central.svg",
+      "viewBox": [1920, 1080],
+      "piezas": ["1a-mapa-base.svg", "1a-mapa-localizadores.svg", "1a-mapa-enlace-lima-chincha.svg", "1a-mapa-rotulos.svg"],
+      "puntos": {"lima": [861, 287], "chincha": [1060, 803], "pisco": [1122, 826]},
+      "procedencia": "Costa Natural Earth 1:10m (dominio público) desde laboratorio/muestras/15-islas-y-el-pais/public/prueba-002/mapa-peru.svg, ×8,3, Mercator R = 2183,7 px/rad",
+      "limites": "Posiciones orientativas; las islas de Chincha no están en el dato de costa; sin fronteras de 1850; el enlace Lima–Chincha no es una ruta"
+    },
+    {
+      "id": "1a-localizador",
+      "momento": "1A",
+      "archivo": "svg/1a-localizacion/1a-localizador.svg",
+      "viewBox": [240, 240],
+      "grupos": ["pulsos", "anillo", "punto"],
+      "puntos": {"centro": [120, 120]},
+      "procedencia": "Nuevo"
+    },
+    {
+      "id": "islas-guaneras-v3",
+      "momento": "1A",
+      "archivo": null,
+      "reutiliza": [
+        "laboratorio/muestras/15-islas-y-el-pais/public/prueba-002/02_mar_chincha.svg",
+        "laboratorio/muestras/15-islas-y-el-pais/public/prueba-002/03_roca_chincha.svg",
+        "laboratorio/muestras/15-islas-y-el-pais/public/prueba-002/04_aves_chincha.svg",
+        "videos/001-el-hombre/diseno/recursos-aprobados/islas-guaneras-v3.vectorcraft"
+      ],
+      "procedencia": "Aprobado en 001; reutilizado sin cambios",
+      "pendiente": "Decidir si el mar verde grisáceo pasa a azul (DIRECCION_DE_VIDEO §2.13)"
+    },
+    {
+      "id": "1b-deposito-guano",
+      "momento": "1B",
+      "archivo": "svg/1b-trabajo/1b-deposito-guano.svg",
+      "viewBox": [1000, 560],
+      "piezas": ["1b-deposito-base.svg", "1b-deposito-terron.svg", "1b-deposito-granos-sueltos.svg"],
+      "puntos": {"pie-trabajador": [700, 470], "punto-de-pala": [596, 236], "terron-pivote": [598, 242], "terron-caida-hasta": [650, 330]},
+      "procedencia": "Nuevo; reconstrucción editorial"
+    },
+    {
+      "id": "1b-pala",
+      "momento": "1B",
+      "archivo": "svg/1b-trabajo/1b-pala.svg",
+      "viewBox": [240, 820],
+      "piezas": ["1b-pala-sin-carga.svg"],
+      "grupos": ["mango-madera", "hoja", "carga-guano"],
+      "puntos": {"mano-superior": [120, 30], "mano-inferior": [120, 470], "punta": [120, 810], "pivote": [120, 470]},
+      "procedencia": "Nuevo; reconstrucción editorial"
+    },
+    {
+      "id": "1b-saco-abierto",
+      "momento": "1B",
+      "archivo": "svg/1b-trabajo/1b-saco-abierto.svg",
+      "viewBox": [360, 460],
+      "piezas": ["1b-saco-abierto-fondo.svg", "1b-saco-abierto-contenido.svg", "1b-saco-abierto-frente.svg"],
+      "orden": ["fondo", "contenido", "frente"],
+      "puntos": {"boca-centro": [180, 120], "apoyo": [180, 420], "agarre-izq": [84, 124], "agarre-der": [276, 124]},
+      "animacion": "contenido-guano: dy 140 = vacío, dy 0 = lleno; queda tapado por el frente",
+      "procedencia": "Nuevo"
+    },
+    {
+      "id": "1b-chorro-guano",
+      "momento": "1B",
+      "archivo": "svg/1b-trabajo/1b-chorro-guano.svg",
+      "viewBox": [160, 300],
+      "grupos": ["flujo", "granos-a", "granos-b", "granos-c"],
+      "puntos": {"origen": [80, 20], "impacto": [80, 282]},
+      "procedencia": "Nuevo"
+    },
+    {
+      "id": "1b-saco-cerrado",
+      "momento": "1B, 1C",
+      "archivo": "svg/1b-trabajo/1b-saco-cerrado.svg",
+      "viewBox": [300, 420],
+      "piezas": ["1b-saco-cerrado-sin-sombra.svg"],
+      "puntos": {"apoyo": [150, 388], "agarre-izq": [66, 190], "agarre-der": [238, 190], "agarre-cuello": [150, 112]},
+      "procedencia": "Nuevo; sin marcas ni rótulos pintados"
+    },
+    {
+      "id": "1c-pila-sacos",
+      "momento": "1C",
+      "archivo": "svg/1c-embarque-y-venta/1c-pila-sacos.svg",
+      "viewBox": [520, 360],
+      "grupos": ["saco-fondo-1", "saco-fondo-2", "saco-frente-1", "saco-frente-2", "saco-frente-3"],
+      "puntos": {"linea-de-apoyo-y": 340},
+      "procedencia": "Nuevo, copias del saco cerrado al 60 %"
+    },
+    {
+      "id": "1c-barco",
+      "momento": "1C",
+      "archivo": "svg/1c-embarque-y-venta/1c-barco.svg",
+      "viewBox": [1000, 900],
+      "piezas": ["1c-barco-reflejo.svg", "1c-barco-casco.svg", "1c-barco-arboladura.svg", "1c-barco-vela-trinquete.svg", "1c-barco-vela-gavia-proa.svg", "1c-barco-vela-mayor.svg", "1c-barco-vela-gavia-mayor.svg", "1c-barco-vela-cangreja.svg", "1c-barco-borda-y-camareta.svg"],
+      "orden": ["reflejo", "casco", "arboladura", "velas", "carga a bordo", "borda-y-camareta"],
+      "procedencia": "Barco de islas-guaneras-v3 (aprobado en 001), reagrupado y ampliado al 150 %; sin bandera ni insignias"
+    },
+    {
+      "id": "1c-diagrama-venta",
+      "momento": "1C",
+      "archivo": "svg/1c-embarque-y-venta/1c-diagrama-venta.svg",
+      "viewBox": [1400, 700],
+      "piezas": ["1c-diagrama-nodo-guano.svg", "1c-diagrama-flecha-guano-venta.svg", "1c-diagrama-nodo-venta.svg", "1c-diagrama-flecha-venta-descuento.svg", "1c-diagrama-nodo-gastos-comision.svg", "1c-diagrama-flecha-venta-ingreso.svg", "1c-diagrama-nodo-ingreso-estado.svg", "1c-diagrama-nota.svg", "1c-diagrama-venta-sin-texto.svg"],
+      "tipo": "Relacional, no cuantitativo",
+      "base": "Q, pp. 164–169; guion §1",
+      "procedencia": "Nuevo"
+    },
+    {
+      "id": "1d-edificio-estado",
+      "momento": "1D",
+      "archivo": "svg/1d-estado-y-reclamos/1d-edificio-estado.svg",
+      "viewBox": [1400, 900],
+      "grupos": ["escalinata", "fachada-sillares", "ventanas", "puerta", "columnas", "entablamento", "fronton", "medallon-generico", "placa-y-rotulo-estado", "desgaste", "sombra-suelo"],
+      "procedencia": "edificio-estado-video01 (aprobado en 001); reagrupado, sin pie de página, con sombra de suelo; fachada simbólica"
+    },
+    {
+      "id": "1d-carpeta",
+      "momento": "1D",
+      "archivo": "svg/1d-estado-y-reclamos/1d-carpeta.svg",
+      "viewBox": [1400, 760],
+      "piezas": ["1d-carpeta-fondo.svg", "1d-carpeta-frente.svg"],
+      "orden": ["fondo", "folios", "frente"],
+      "procedencia": "tanda05-carpeta-v2 (aprobado en 001), sin sus documentos; etiqueta «Obligaciones pendientes · reclamos por revisar · ejemplo didáctico»"
+    },
+    {
+      "id": "1d-folio-prestamo",
+      "momento": "1D",
+      "archivo": "svg/1d-estado-y-reclamos/1d-folio-prestamo.svg",
+      "viewBox": [520, 680],
+      "piezas": ["1d-folio-prestamo-sin-texto.svg"],
+      "base": "Guion §2; Q, p. 169",
+      "procedencia": "Nuevo; ejemplo didáctico, sin monto"
+    },
+    {
+      "id": "1d-folio-bienes-tropas",
+      "momento": "1D",
+      "archivo": "svg/1d-estado-y-reclamos/1d-folio-bienes-tropas.svg",
+      "viewBox": [520, 680],
+      "piezas": ["1d-folio-bienes-tropas-sin-texto.svg"],
+      "base": "Guion §2; Q, p. 169; B, pp. 20–21",
+      "procedencia": "Nuevo; ejemplo didáctico, sin monto"
+    },
+    {
+      "id": "1d-folio-reclamo",
+      "momento": "1D → 2A",
+      "archivo": "svg/1d-estado-y-reclamos/1d-folio-reclamo.svg",
+      "viewBox": [620, 800],
+      "piezas": ["1d-folio-reclamo-sin-sello.svg", "1d-folio-reclamo-sin-texto.svg", "1d-sello-por-revisar.svg"],
+      "enlace": "Es el folio que abre la escena 2 (2A); conserva la pestaña roja",
+      "procedencia": "Nuevo; reconstrucción didáctica, no un expediente histórico"
+    },
+    {
+      "id": "1d-cuentas-estado",
+      "momento": "1D",
+      "archivo": "svg/1d-estado-y-reclamos/1d-cuentas-estado.svg",
+      "viewBox": [1200, 760],
+      "piezas": ["1d-cuentas-libro.svg", "1d-cuentas-columna-ingresos.svg", "1d-cuentas-resalte-guano.svg", "1d-cuentas-titulo-obligaciones.svg", "1d-cuentas-fila-prestamos.svg", "1d-cuentas-fila-bienes-tropas.svg", "1d-cuentas-fila-deudas-anteriores.svg"],
+      "puntos": {"entrada-enlace": [120, 384]},
+      "base": "Guion §0; Q, pp. 169–170; C, cap. 1",
+      "procedencia": "Nuevo; esquema didáctico sin cantidades"
+    },
+    {
+      "id": "1d-flecha-enlace",
+      "momento": "1C → 1D",
+      "archivo": "svg/1d-estado-y-reclamos/1d-flecha-enlace.svg",
+      "viewBox": [600, 200],
+      "puntos": {"origen": [40, 150], "destino": [572, 132]},
+      "procedencia": "Nuevo"
+    }
+  ],
+  "montaje": {
+    "hoja": "revision/hoja-montaje.png",
+    "composicion": "revision/composicion-trabajo-embarque.png",
+    "horizonte_y": 568,
+    "luz": "arriba a la izquierda, cálida y suave",
+    "escalas": {"trabajador_alto_px": 440, "1b-pala": 0.37, "1b-saco-abierto": 0.62, "1b-saco-cerrado": 0.6, "1c-pila-sacos": 0.75, "1b-deposito-guano": 0.95, "1c-barco": 0.45},
+    "contactos_en_cuadro": {
+      "pala-mano-superior": [766, 609],
+      "pala-mano-inferior": [633, 703],
+      "saco-abierto-bordes": [[840, 816], [960, 816]],
+      "saco-cargado-agarres": [[1375, 736], [1478, 736]],
+      "apoyo-trabajador-1-y": 1000,
+      "apoyo-trabajador-2-y": 985
+    }
+  },
+  "animacion_verificada": false,
+  "video_generado": false
+}

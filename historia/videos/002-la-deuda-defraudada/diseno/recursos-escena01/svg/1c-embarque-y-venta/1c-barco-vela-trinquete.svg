@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="900" viewBox="0 0 1000 900">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="162.5" y1="454.5" x2="447.5" y2="454.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7bc91"/>
+      <stop offset="0.35" stop-color="#eee1b9"/>
+      <stop offset="1" stop-color="#b5ad86"/>
+    </linearGradient>
+  </defs>
+  <title>1c-barco</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+    <g id="barco">
+      <g id="vela-trinquete">
+        <path d="M162.5 364.5 C257.5 378.5 352.5 378.5 447.5 364.5 C429.5 424.5 426 484.5 437 544.5 C349 524.5 262 524.5 176 544.5 C190 484.5 185.5 424.5 162.5 364.5 Z" fill="url(#linear-gradient-1)" stroke="#6f7858" stroke-width="1.4" stroke-miterlimit="10"/>
+        <path d="M194.167 375 C210.167 435 211.167 486.5 197.167 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M225.833 375 C241.833 435 242.833 486.5 228.833 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M257.5 375 C273.5 435 274.5 486.5 260.5 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M289.167 375 C305.167 435 306.167 486.5 292.167 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M320.833 375 C336.833 435 337.833 486.5 323.833 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M352.5 375 C368.5 435 369.5 486.5 355.5 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M384.167 375 C400.167 435 401.167 486.5 387.167 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M415.833 375 C431.833 435 432.833 486.5 418.833 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <line x1="149" y1="364.5" x2="461" y2="364.5" fill="none" stroke="#546044" stroke-width="3" stroke-miterlimit="10"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

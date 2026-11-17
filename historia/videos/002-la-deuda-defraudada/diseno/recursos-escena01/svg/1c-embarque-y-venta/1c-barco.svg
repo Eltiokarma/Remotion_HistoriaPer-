@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="900" viewBox="0 0 1000 900">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="179.75" y1="253.5" x2="430.25" y2="253.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7bc91"/>
+      <stop offset="0.35" stop-color="#eee1b9"/>
+      <stop offset="1" stop-color="#b5ad86"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="162.5" y1="454.5" x2="447.5" y2="454.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7bc91"/>
+      <stop offset="0.35" stop-color="#eee1b9"/>
+      <stop offset="1" stop-color="#b5ad86"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="410" y1="210.75" x2="665" y2="210.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7bc91"/>
+      <stop offset="0.35" stop-color="#eee1b9"/>
+      <stop offset="1" stop-color="#b5ad86"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="389" y1="444.75" x2="686" y2="444.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7bc91"/>
+      <stop offset="0.35" stop-color="#eee1b9"/>
+      <stop offset="1" stop-color="#b5ad86"/>
+    </linearGradient>
+  </defs>
+  <title>1c-barco</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+    <g id="barco">
+      <g id="casco">
+        <path d="M102.5 630 L897.5 630 L834.5 720 C600.5 756 379.5 754 171.5 714 Z" fill="#534b36" stroke="#354d40" stroke-width="2.5" stroke-miterlimit="10"/>
+        <path d="M134 648 C383 683 629 683 872 648" fill="none" stroke="#2d4035" stroke-width="1.5" stroke-miterlimit="10"/>
+        <path d="M141.5 663 C385.5 697 625 697 860 663" fill="none" stroke="#b5a177" stroke-width="1.5" stroke-miterlimit="10"/>
+        <path d="M149 678 C388 711 621 711 848 678" fill="none" stroke="#2d4035" stroke-width="1.5" stroke-miterlimit="10"/>
+        <path d="M156.5 693 C390.5 725 617 725 836 693" fill="none" stroke="#b5a177" stroke-width="1.5" stroke-miterlimit="10"/>
+        <path d="M164 708 C393 739 613 739 824 708" fill="none" stroke="#2d4035" stroke-width="1.5" stroke-miterlimit="10"/>
+      </g>
+      <g id="borda-y-baranda">
+        <rect x="177.5" y="609" width="645" height="21" fill="#827654" stroke="#3d4b39" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M192.5 607.5 L192.5 585 M186.5 589.5 L198.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M227 607.5 L227 585 M221 589.5 L233 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M261.5 607.5 L261.5 585 M255.5 589.5 L267.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M296 607.5 L296 585 M290 589.5 L302 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M330.5 607.5 L330.5 585 M324.5 589.5 L336.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M365 607.5 L365 585 M359 589.5 L371 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M399.5 607.5 L399.5 585 M393.5 589.5 L405.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M434 607.5 L434 585 M428 589.5 L440 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M468.5 607.5 L468.5 585 M462.5 589.5 L474.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M503 607.5 L503 585 M497 589.5 L509 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M537.5 607.5 L537.5 585 M531.5 589.5 L543.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M572 607.5 L572 585 M566 589.5 L578 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M606.5 607.5 L606.5 585 M600.5 589.5 L612.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M641 607.5 L641 585 M635 589.5 L647 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M675.5 607.5 L675.5 585 M669.5 589.5 L681.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M710 607.5 L710 585 M704 589.5 L716 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M744.5 607.5 L744.5 585 M738.5 589.5 L750.5 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M779 607.5 L779 585 M773 589.5 L785 589.5" fill="none" stroke="#525b43" stroke-width="2" stroke-miterlimit="10"/>
+        <line x1="189.5" y1="589.5" x2="792.5" y2="589.5" fill="none" stroke="#5c6247" stroke-width="2" stroke-miterlimit="10"/>
+      </g>
+      <g id="camareta">
+        <rect x="672.5" y="556.5" width="112.5" height="52.5" fill="#a2946c" stroke="#536046" stroke-width="1.5" stroke-miterlimit="10"/>
+        <rect x="687.5" y="570" width="12" height="18" fill="#3f5344" stroke="#70795c" stroke-miterlimit="10"/>
+        <rect x="713" y="570" width="12" height="18" fill="#3f5344" stroke="#70795c" stroke-miterlimit="10"/>
+        <rect x="738.5" y="570" width="12" height="18" fill="#3f5344" stroke="#70795c" stroke-miterlimit="10"/>
+        <rect x="764" y="570" width="12" height="18" fill="#3f5344" stroke="#70795c" stroke-miterlimit="10"/>
+      </g>
+      <g id="mastiles">
+        <line x1="305" y1="609" x2="305" y2="115.5" fill="none" stroke="#5e5b3e" stroke-width="6" stroke-miterlimit="10"/>
+        <line x1="537.5" y1="609" x2="537.5" y2="45" fill="none" stroke="#5e5b3e" stroke-width="6" stroke-miterlimit="10"/>
+        <line x1="732.5" y1="609" x2="732.5" y2="240" fill="none" stroke="#5e5b3e" stroke-width="6" stroke-miterlimit="10"/>
+      </g>
+      <g id="jarcia">
+        <line x1="305" y1="145.5" x2="147.5" y2="624" fill="none" stroke="#6d7557" stroke-width="0.9" stroke-miterlimit="10"/>
+        <line x1="305" y1="145.5" x2="867.5" y2="624" fill="none" stroke="#6d7557" stroke-width="0.9" stroke-miterlimit="10"/>
+        <line x1="537.5" y1="75" x2="147.5" y2="624" fill="none" stroke="#6d7557" stroke-width="0.9" stroke-miterlimit="10"/>
+        <line x1="537.5" y1="75" x2="867.5" y2="624" fill="none" stroke="#6d7557" stroke-width="0.9" stroke-miterlimit="10"/>
+        <line x1="732.5" y1="270" x2="147.5" y2="624" fill="none" stroke="#6d7557" stroke-width="0.9" stroke-miterlimit="10"/>
+        <line x1="732.5" y1="270" x2="867.5" y2="624" fill="none" stroke="#6d7557" stroke-width="0.9" stroke-miterlimit="10"/>
+        <line x1="515.975" y1="204" x2="559.025" y2="204" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="512.51" y1="235.5" x2="562.49" y2="235.5" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="509.045" y1="267" x2="565.955" y2="267" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="505.58" y1="298.5" x2="569.42" y2="298.5" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="502.115" y1="330" x2="572.885" y2="330" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="498.65" y1="361.5" x2="576.35" y2="361.5" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="495.185" y1="393" x2="579.815" y2="393" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="491.72" y1="424.5" x2="583.28" y2="424.5" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="488.255" y1="456" x2="586.745" y2="456" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="484.79" y1="487.5" x2="590.21" y2="487.5" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="481.325" y1="519" x2="593.675" y2="519" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+        <line x1="477.86" y1="550.5" x2="597.14" y2="550.5" fill="none" stroke="#777b59" stroke-width="0.7" stroke-miterlimit="10"/>
+      </g>
+      <g id="vela-gavia-proa">
+        <path d="M179.75 166.5 C263.25 180.5 346.75 180.5 430.25 166.5 C412.25 224.5 408.75 282.5 419.75 340.5 C343.25 320.5 267.75 320.5 193.25 340.5 C207.25 282.5 202.75 224.5 179.75 166.5 Z" fill="url(#linear-gradient-1)" stroke="#6f7858" stroke-width="1.4" stroke-miterlimit="10"/>
+        <path d="M207.583 177 C223.583 235 224.583 284.5 210.583 325.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M235.417 177 C251.417 235 252.417 284.5 238.417 325.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M263.25 177 C279.25 235 280.25 284.5 266.25 325.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M291.083 177 C307.083 235 308.083 284.5 294.083 325.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M318.917 177 C334.917 235 335.917 284.5 321.917 325.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M346.75 177 C362.75 235 363.75 284.5 349.75 325.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M374.583 177 C390.583 235 391.583 284.5 377.583 325.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M402.417 177 C418.417 235 419.417 284.5 405.417 325.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <line x1="166.25" y1="166.5" x2="443.75" y2="166.5" fill="none" stroke="#546044" stroke-width="3" stroke-miterlimit="10"/>
+      </g>
+      <g id="vela-trinquete">
+        <path d="M162.5 364.5 C257.5 378.5 352.5 378.5 447.5 364.5 C429.5 424.5 426 484.5 437 544.5 C349 524.5 262 524.5 176 544.5 C190 484.5 185.5 424.5 162.5 364.5 Z" fill="url(#linear-gradient-2)" stroke="#6f7858" stroke-width="1.4" stroke-miterlimit="10"/>
+        <path d="M194.167 375 C210.167 435 211.167 486.5 197.167 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M225.833 375 C241.833 435 242.833 486.5 228.833 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M257.5 375 C273.5 435 274.5 486.5 260.5 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M289.167 375 C305.167 435 306.167 486.5 292.167 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M320.833 375 C336.833 435 337.833 486.5 323.833 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M352.5 375 C368.5 435 369.5 486.5 355.5 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M384.167 375 C400.167 435 401.167 486.5 387.167 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M415.833 375 C431.833 435 432.833 486.5 418.833 529.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <line x1="149" y1="364.5" x2="461" y2="364.5" fill="none" stroke="#546044" stroke-width="3" stroke-miterlimit="10"/>
+      </g>
+      <g id="vela-gavia-mayor">
+        <path d="M410 102 C495 116 580 116 665 102 C647 174.5 643.5 247 654.5 319.5 C576.5 299.5 499.5 299.5 423.5 319.5 C437.5 247 433 174.5 410 102 Z" fill="url(#linear-gradient-3)" stroke="#6f7858" stroke-width="1.4" stroke-miterlimit="10"/>
+        <path d="M438.333 112.5 C454.333 185 455.333 249 441.333 304.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M466.667 112.5 C482.667 185 483.667 249 469.667 304.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M495 112.5 C511 185 512 249 498 304.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M523.333 112.5 C539.333 185 540.333 249 526.333 304.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M551.667 112.5 C567.667 185 568.667 249 554.667 304.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M580 112.5 C596 185 597 249 583 304.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M608.333 112.5 C624.333 185 625.333 249 611.333 304.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M636.667 112.5 C652.667 185 653.667 249 639.667 304.5" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <line x1="396.5" y1="102" x2="678.5" y2="102" fill="none" stroke="#546044" stroke-width="3" stroke-miterlimit="10"/>
+      </g>
+      <g id="vela-mayor">
+        <path d="M389 343.5 C488 357.5 587 357.5 686 343.5 C668 411 664.5 478.5 675.5 546 C583.5 526 492.5 526 402.5 546 C416.5 478.5 412 411 389 343.5 Z" fill="url(#linear-gradient-4)" stroke="#6f7858" stroke-width="1.4" stroke-miterlimit="10"/>
+        <path d="M422 354 C438 421.5 439 480.5 425 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M455 354 C471 421.5 472 480.5 458 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M488 354 C504 421.5 505 480.5 491 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M521 354 C537 421.5 538 480.5 524 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M554 354 C570 421.5 571 480.5 557 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M587 354 C603 421.5 604 480.5 590 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M620 354 C636 421.5 637 480.5 623 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M653 354 C669 421.5 670 480.5 656 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <line x1="375.5" y1="343.5" x2="699.5" y2="343.5" fill="none" stroke="#546044" stroke-width="3" stroke-miterlimit="10"/>
+      </g>
+      <g id="vela-cangreja">
+        <polygon points="732.5,252 875,568.5 732.5,537" fill="#d9cda4" stroke="#71795a" stroke-width="1.3" stroke-miterlimit="10"/>
+        <path d="M732.5 252 L798.5 543 M732.5 252 L828.5 556.5" fill="none" stroke="#ada782" stroke-width="0.7" stroke-miterlimit="10"/>
+      </g>
+      <g id="reflejo-agua">
+        <path d="M147.5 777 C327.5 785 547.5 785 807.5 777" fill="none" stroke="#c4ccb2" stroke-width="1.3" stroke-miterlimit="10"/>
+        <path d="M183.5 789 C363.5 797 562 797 779 789" fill="none" stroke="#425f53" stroke-width="1.3" stroke-miterlimit="10"/>
+        <path d="M219.5 801 C399.5 809 576.5 809 750.5 801" fill="none" stroke="#c4ccb2" stroke-width="1.3" stroke-miterlimit="10"/>
+        <path d="M255.5 813 C435.5 821 591 821 722 813" fill="none" stroke="#425f53" stroke-width="1.3" stroke-miterlimit="10"/>
+        <path d="M291.5 825 C471.5 833 605.5 833 693.5 825" fill="none" stroke="#c4ccb2" stroke-width="1.3" stroke-miterlimit="10"/>
+        <path d="M327.5 837 C507.5 845 620 845 665 837" fill="none" stroke="#425f53" stroke-width="1.3" stroke-miterlimit="10"/>
+        <path d="M363.5 849 C543.5 857 634.5 857 636.5 849" fill="none" stroke="#c4ccb2" stroke-width="1.3" stroke-miterlimit="10"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

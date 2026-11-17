@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="900" viewBox="0 0 1000 900">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="389" y1="444.75" x2="686" y2="444.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7bc91"/>
+      <stop offset="0.35" stop-color="#eee1b9"/>
+      <stop offset="1" stop-color="#b5ad86"/>
+    </linearGradient>
+  </defs>
+  <title>1c-barco</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+    <g id="barco">
+      <g id="vela-mayor">
+        <path d="M389 343.5 C488 357.5 587 357.5 686 343.5 C668 411 664.5 478.5 675.5 546 C583.5 526 492.5 526 402.5 546 C416.5 478.5 412 411 389 343.5 Z" fill="url(#linear-gradient-1)" stroke="#6f7858" stroke-width="1.4" stroke-miterlimit="10"/>
+        <path d="M422 354 C438 421.5 439 480.5 425 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M455 354 C471 421.5 472 480.5 458 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M488 354 C504 421.5 505 480.5 491 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M521 354 C537 421.5 538 480.5 524 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M554 354 C570 421.5 571 480.5 557 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M587 354 C603 421.5 604 480.5 590 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M620 354 C636 421.5 637 480.5 623 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <path d="M653 354 C669 421.5 670 480.5 656 531" fill="none" stroke="#a89f79" stroke-width="0.65" stroke-miterlimit="10"/>
+        <line x1="375.5" y1="343.5" x2="699.5" y2="343.5" fill="none" stroke="#546044" stroke-width="3" stroke-miterlimit="10"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

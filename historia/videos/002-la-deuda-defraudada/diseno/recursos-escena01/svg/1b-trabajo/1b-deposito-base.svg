@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="560" viewBox="0 0 1000 560">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="500" y1="560" x2="500" y2="452" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3d4433"/>
+      <stop offset="1" stop-color="#646a4c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="502" y1="477.093" x2="502" y2="179.806" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9a844f"/>
+      <stop offset="0.55" stop-color="#c2aa72"/>
+      <stop offset="1" stop-color="#e0cd98"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="546.468" y1="261.639" x2="612" y2="261.639" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5b4a2a"/>
+      <stop offset="1" stop-color="#8a7243"/>
+    </linearGradient>
+  </defs>
+  <title>1b-deposito-guano</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_1c-barco" data-name="1c-barco">
+  </g>
+  <g id="_1d-edificio-estado" data-name="1d-edificio-estado">
+  </g>
+  <g id="_1d-carpeta" data-name="1d-carpeta">
+  </g>
+  <g id="_1b-saco-cerrado" data-name="1b-saco-cerrado">
+  </g>
+  <g id="_1b-saco-abierto" data-name="1b-saco-abierto">
+  </g>
+  <g id="_1b-pala" data-name="1b-pala">
+  </g>
+  <g id="_1b-chorro-guano" data-name="1b-chorro-guano">
+  </g>
+  <g id="_1b-deposito-guano" data-name="1b-deposito-guano">
+    <g id="deposito-guano" data-pie-trabajador="700,470" data-punto-de-pala="596,236">
+      <g id="base-roca">
+        <path id="base-roca-2" data-name="base-roca" d="M0 476 C120 456 260 466 400 458 C560 450 760 462 1000 452 L1000 560 L0 560 Z" fill="url(#linear-gradient-1)" stroke="#2f382c" stroke-width="2" stroke-miterlimit="10"/>
+        <path id="grietas-roca" d="M60 500 L120 494 M210 512 L300 506 M420 498 L520 494 M640 516 L760 508 M830 494 L930 490 M150 536 L230 532 M520 538 L610 534" fill="none" stroke="#7d805c" stroke-width="1.2" stroke-miterlimit="10" opacity="0.7"/>
+      </g>
+      <g id="deposito-estratificado">
+        <path id="masa" d="M20 472 C50 400 90 330 150 290 C190 262 222 256 262 236 C300 216 336 214 376 200 C414 188 446 196 486 184 C526 174 556 184 600 192 C604 240 608 290 612 332 C660 336 720 350 780 372 C840 396 900 430 984 470 C700 478 300 480 20 472 Z" fill="url(#linear-gradient-2)" stroke="#5a4b2e" stroke-width="2.2" stroke-linejoin="round"/>
+        <path id="estratos" d="M70 420 C150 336 240 280 340 246 C420 222 490 214 540 220 M60 446 C160 374 270 312 390 280 C460 262 510 258 548 262 M120 452 C220 404 330 356 440 330 C500 316 540 312 566 314 M620 362 C720 374 810 406 900 446 M640 392 C720 404 800 430 860 456" fill="none" stroke="#8f7a4b" stroke-width="1.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.75"/>
+        <path id="luz-cresta" d="M84 396 C130 330 190 284 262 250 C306 230 340 226 376 214 C414 202 446 208 486 198 C520 190 540 194 556 196" fill="none" stroke="#eadcae" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" opacity="0.55"/>
+        <path id="grano-textura" d="M200 330 L212 326 M300 284 L314 282 M420 254 L432 252 M260 390 L272 388 M380 334 L394 332 M500 296 L512 296 M160 420 L170 418 M470 384 L484 382 M760 410 L772 412" fill="none" stroke="#7a6438" stroke-width="1.3" stroke-linecap="round" stroke-miterlimit="10" opacity="0.6"/>
+      </g>
+      <g id="hueco-de-corte">
+        <path id="hueco-de-corte-2" data-name="hueco-de-corte" d="M600 192 C580 190 562 192 552 200 C538 240 548 296 612 332 C608 290 604 240 600 192 Z" fill="url(#linear-gradient-3)" stroke="#4a3d25" stroke-width="1.4" stroke-linejoin="round"/>
+        <path id="marcas-de-corte" d="M562 214 C560 232 562 250 568 266 M576 224 C576 246 580 268 590 288 M556 280 C568 296 584 310 600 320" fill="none" stroke="#c4ab73" stroke-width="1.2" stroke-linecap="round" stroke-miterlimit="10" opacity="0.6"/>
+        <polyline id="grieta-de-separacion" points="590,188 594,206 590,224 598,242" fill="none" stroke="#2f281a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </g>
+  <g id="_1c-pila-sacos" data-name="1c-pila-sacos">
+  </g>
+  <g id="_1a-mapa-costa-central" data-name="1a-mapa-costa-central">
+  </g>
+  <g id="_1c-diagrama-venta" data-name="1c-diagrama-venta">
+  </g>
+  <g id="_1d-folios" data-name="1d-folios">
+  </g>
+  <g id="_1d-cuentas-estado" data-name="1d-cuentas-estado">
+  </g>
+  <g id="_1d-flecha-enlace" data-name="1d-flecha-enlace">
+  </g>
+</svg>

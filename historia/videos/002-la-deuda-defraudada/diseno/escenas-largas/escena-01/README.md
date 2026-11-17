@@ -33,3 +33,7 @@ Revisión 2 solicitada por Gerson tras revisar las siete láminas. Se modifican 
 ## Dirección de movimiento y efectos
 
 La [dirección de las cinco escenas](../MOVIMIENTO-Y-EFECTOS.md) fija cámara, foco, acción, capas, sonido y comprobación para todos los momentos de esta escena. [Datos por estado](../direccion-movimiento.json). Es una propuesta para integración; no una animación comprobada.
+
+## Recursos vectoriales separados (17 de noviembre de 2026)
+
+Con el reparto nuevo (personajes PNG de ChatGPT, objetos SVG de Claude, montaje en Remotion), los objetos, el mapa, el diagrama y los documentos de esta escena se rehicieron como piezas sueltas en [recursos-escena01](../../recursos-escena01/README.md): 17 recursos, 61 SVG, dos composiciones de prueba, hoja de montaje y lista de imágenes para ChatGPT. Estas láminas se conservan como referencia de continuidad; sus figuras articuladas ya no se desarrollan. Borrador pendiente de Gerson.
