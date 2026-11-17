@@ -1373,6 +1373,34 @@
         "render_s": null,
         "maquina": null
       }
+    },
+    {
+      "id": "e2-recursos-escena02",
+      "fase": "e2",
+      "titulo": "Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos)",
+      "entregable": "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/: dos originales de VectorCraft, 49 SVG por momento y pieza, hoja de contacto, dos composiciones de prueba, hoja de montaje, inventario y lista de imágenes para ChatGPT",
+      "estado": "en_curso",
+      "depende_de": [
+        "e2-recursos-escena01"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-17",
+        "fin": null
+      },
+      "bloqueo": "Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.",
+      "evidencia": [
+        "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/README.md",
+        "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/inventario.json",
+        "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/imagenes-chatgpt.md",
+        "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/revision/contacto.png"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
     }
   ]
 }

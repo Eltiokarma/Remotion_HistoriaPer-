@@ -12,7 +12,7 @@ Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **28** · 🔄 en curso: **5** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **28** · 🔄 en curso: **6** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -24,6 +24,7 @@ Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `f5-pc` Repetir la tanda 1 en la PC objetivo: La PC objetivo no está disponible.
 - `e1-musica` Musicalización con Suno (motivo de Quiroz, ocho pistas): Música de Suno integrada de s00 a s06 (2026-11-10); s07 conserva el tema sintetizado. Falta la escucha de Gerson y los enlaces de Suno en fuentes.md.
 - `e2-recursos-escena01` Recursos vectoriales de la escena 1 «Las islas y el país» (objetos SVG para personajes PNG): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
+- `e2-recursos-escena02` Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
 
 ## Vista temporal
 
@@ -78,7 +79,7 @@ gantt
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
-Sin fecha (18): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso).
+Sin fecha (19): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso).
 
 ## Tareas
 
@@ -413,6 +414,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
   - Evidencia: [recursos-escena01/README.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/README.md) · [recursos-escena01/inventario.json](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/inventario.json) · [recursos-escena01/imagenes-chatgpt.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/imagenes-chatgpt.md) · [revision/contacto.png](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/revision/contacto.png)
+- [ ] **Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos)** `e2-recursos-escena02` — 🔄 en curso
+  - Entregable: historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/: dos originales de VectorCraft, 49 SVG por momento y pieza, hoja de contacto, dos composiciones de prueba, hoja de montaje, inventario y lista de imágenes para ChatGPT
+  - Depende de: `e2-recursos-escena01`
+  - Prevista: — · Real: 2026-11-17 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Bloqueo: Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
+  - Evidencia: [recursos-escena02/README.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/README.md) · [recursos-escena02/inventario.json](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/inventario.json) · [recursos-escena02/imagenes-chatgpt.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/imagenes-chatgpt.md) · [revision/contacto.png](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/revision/contacto.png)
 
 ## Máquinas
 

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <radialGradient id="radial-gradient-1" cx="0" cy="0" r="1020" gradientTransform="matrix(1 0 0 0.7 960 445)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#35513f"/>
+      <stop offset="0.6" stop-color="#2b4337"/>
+      <stop offset="1" stop-color="#17271f"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient-1" x1="20" y1="1028" x2="20" y2="1058" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5a4128"/>
+      <stop offset="1" stop-color="#2e2014"/>
+    </linearGradient>
+  </defs>
+  <title>pizarra-fondo</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_2c-vale" data-name="2c-vale">
+  </g>
+  <g id="pizarra-fondo">
+    <g id="pizarra">
+      <rect id="marco-madera" x="0" y="0" width="1920" height="1080" fill="#3a2a1c"/>
+      <rect id="superficie" x="34" y="30" width="1852" height="992" fill="url(#radial-gradient-1)"/>
+      <g id="textura-borrado">
+        <path d="M70 80 C490 60 1080 61.667 1840 85" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 103 C490 83 1080 84.667 1840 108" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 126 C490 106 1080 107.667 1840 131" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 149 C490 129 1080 130.667 1840 154" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 172 C490 152 1080 153.667 1840 177" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 195 C490 175 1080 176.667 1840 200" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 218 C490 198 1080 199.667 1840 223" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 241 C490 221 1080 222.667 1840 246" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 264 C490 244 1080 245.667 1840 269" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 287 C490 267 1080 268.667 1840 292" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 310 C490 290 1080 291.667 1840 315" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 333 C490 313 1080 314.667 1840 338" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 356 C490 336 1080 337.667 1840 361" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 379 C490 359 1080 360.667 1840 384" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 402 C490 382 1080 383.667 1840 407" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 425 C490 405 1080 406.667 1840 430" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 448 C490 428 1080 429.667 1840 453" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 471 C490 451 1080 452.667 1840 476" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 494 C490 474 1080 475.667 1840 499" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 517 C490 497 1080 498.667 1840 522" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 540 C490 520 1080 521.667 1840 545" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 563 C490 543 1080 544.667 1840 568" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 586 C490 566 1080 567.667 1840 591" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 609 C490 589 1080 590.667 1840 614" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 632 C490 612 1080 613.667 1840 637" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 655 C490 635 1080 636.667 1840 660" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 678 C490 658 1080 659.667 1840 683" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 701 C490 681 1080 682.667 1840 706" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 724 C490 704 1080 705.667 1840 729" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 747 C490 727 1080 728.667 1840 752" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 770 C490 750 1080 751.667 1840 775" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 793 C490 773 1080 774.667 1840 798" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 816 C490 796 1080 797.667 1840 821" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 839 C490 819 1080 820.667 1840 844" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 862 C490 842 1080 843.667 1840 867" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 885 C490 865 1080 866.667 1840 890" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 908 C490 888 1080 889.667 1840 913" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 931 C490 911 1080 912.667 1840 936" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 954 C490 934 1080 935.667 1840 959" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+        <path d="M70 977 C490 957 1080 958.667 1840 982" fill="none" stroke="#9ca78c" stroke-width="0.6" stroke-linecap="round" stroke-miterlimit="10" opacity="0.03"/>
+      </g>
+      <g id="repisa-y-tizas">
+        <rect x="20" y="1028" width="1880" height="30" fill="url(#linear-gradient-1)"/>
+        <rect x="1360" y="1016" width="90" height="12" fill="#e9e6dc"/>
+        <rect x="1480" y="1016" width="54" height="12" fill="#e8d9a8"/>
+      </g>
+    </g>
+  </g>
+  <g id="_2a-2b-tiza" data-name="2a-2b-tiza">
+  </g>
+  <g id="_2c-2d" data-name="2c-2d">
+  </g>
+  <g id="_2e-2f" data-name="2e-2f">
+  </g>
+</svg>

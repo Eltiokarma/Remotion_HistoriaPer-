@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="680" viewBox="0 0 960 680">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="23" y="13" width="894" height="644" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dx="0" dy="10" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.45"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-1" x1="60" y1="335" x2="880" y2="335" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c4a46a"/>
+      <stop offset="1" stop-color="#9c7d4a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="200" y1="285" x2="740" y2="285" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#efe6cf"/>
+      <stop offset="1" stop-color="#dccb9f"/>
+    </linearGradient>
+  </defs>
+  <title>2f-expediente-novoa</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_2c-vale" data-name="2c-vale">
+  </g>
+  <g id="pizarra-fondo">
+  </g>
+  <g id="_2a-2b-tiza" data-name="2a-2b-tiza">
+  </g>
+  <g id="_2c-2d" data-name="2c-2d">
+  </g>
+  <g id="_2e-2f" data-name="2e-2f">
+    <g id="expediente-novoa" data-enlace="abre la escena 3 (3A)">
+      <g id="hojas-traseras">
+        <polygon id="hoja-3" points="100,100 900,90 912,650 112,658" fill="#cbb98d" stroke="#6b5a3a" stroke-width="1.4" stroke-linejoin="round"/>
+        <polygon id="hoja-2" points="80,78 890,72 896,636 86,640" fill="#d9c89e" stroke="#6b5a3a" stroke-width="1.4" stroke-linejoin="round"/>
+      </g>
+      <g id="tapa">
+        <g filter="url(#filter-1)">
+          <path id="tapa-2" data-name="tapa" d="M66 50 L874 50 C877.314 50 880 52.686 880 56 L880 614 C880 617.314 877.314 620 874 620 L66 620 C62.686 620 60 617.314 60 614 L60 56 C60 52.686 62.686 50 66 50 Z" fill="url(#linear-gradient-1)" stroke="#5e4a2c" stroke-width="2" stroke-miterlimit="10"/>
+        </g>
+        <path id="filete-tapa" d="M86 72 L854 72 C856.209 72 858 73.791 858 76 L858 594 C858 596.209 856.209 598 854 598 L86 598 C83.791 598 82 596.209 82 594 L82 76 C82 73.791 83.791 72 86 72 Z" fill="none" stroke="#e2c995" stroke-miterlimit="10" opacity="0.6"/>
+      </g>
+      <g id="etiqueta">
+        <path id="etiqueta-2" data-name="etiqueta" d="M204 140 L736 140 C738.209 140 740 141.791 740 144 L740 426 C740 428.209 738.209 430 736 430 L204 430 C201.791 430 200 428.209 200 426 L200 144 C200 141.791 201.791 140 204 140 Z" fill="url(#linear-gradient-2)" stroke="#6b5a3a" stroke-width="1.6" stroke-miterlimit="10"/>
+      </g>
+      <g id="cordel">
+        <line id="cordel-2" data-name="cordel" x1="60" y1="520" x2="880" y2="520" fill="none" stroke="#6a5a3b" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10"/>
+        <path id="lazo" d="M470 520 C440 490 420 500 436 530 C450 550 470 530 470 520 C500 490 520 500 504 530 C490 550 470 530 470 520 M470 524 L454 572 M470 524 L490 576" fill="none" stroke="#6a5a3b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </g>
+</svg>

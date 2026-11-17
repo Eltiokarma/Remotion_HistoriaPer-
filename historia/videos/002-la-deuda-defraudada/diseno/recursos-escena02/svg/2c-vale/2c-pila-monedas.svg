@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="560" height="340" viewBox="0 0 560 340">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="380.5" y="275.5" width="179" height="45" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="2.5"/></filter>
+    <linearGradient id="linear-gradient-1" x1="390" y1="276" x2="540" y2="276" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d8d5cb"/>
+      <stop offset="1" stop-color="#7f7c71"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="393" y1="262" x2="543" y2="262" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d8d5cb"/>
+      <stop offset="1" stop-color="#7f7c71"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="388" y1="248" x2="538" y2="248" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d8d5cb"/>
+      <stop offset="1" stop-color="#7f7c71"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="392" y1="234" x2="542" y2="234" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d8d5cb"/>
+      <stop offset="1" stop-color="#7f7c71"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="390" y1="220" x2="540" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d8d5cb"/>
+      <stop offset="1" stop-color="#7f7c71"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="513.5" y1="253.5" x2="418.5" y2="158.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eeede6"/>
+      <stop offset="1" stop-color="#9a978b"/>
+    </linearGradient>
+  </defs>
+  <title>2c-monedas</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_2c-vale" data-name="2c-vale">
+  </g>
+  <g id="pizarra-fondo">
+  </g>
+  <g id="_2a-2b-tiza" data-name="2a-2b-tiza">
+  </g>
+  <g id="_2c-2d" data-name="2c-2d">
+    <g id="monedas-genericas" data-uso="efectivo, para distinguirlo del vale; sin leyenda ni denominación">
+      <g id="pila-monedas">
+        <g filter="url(#filter-1)">
+          <ellipse id="sombra-2" data-name="sombra" cx="470" cy="298" rx="80" ry="13" fill="#0f1712" opacity="0.4"/>
+        </g>
+        <ellipse id="moneda-1" cx="465" cy="276" rx="75" ry="20" fill="url(#linear-gradient-1)" stroke="#4a4840" stroke-width="1.5" stroke-miterlimit="10"/>
+        <ellipse id="moneda-2" cx="468" cy="262" rx="75" ry="20" fill="url(#linear-gradient-2)" stroke="#4a4840" stroke-width="1.5" stroke-miterlimit="10"/>
+        <ellipse id="moneda-3" cx="463" cy="248" rx="75" ry="20" fill="url(#linear-gradient-3)" stroke="#4a4840" stroke-width="1.5" stroke-miterlimit="10"/>
+        <ellipse id="moneda-4" cx="467" cy="234" rx="75" ry="20" fill="url(#linear-gradient-4)" stroke="#4a4840" stroke-width="1.5" stroke-miterlimit="10"/>
+        <ellipse id="moneda-5" cx="465" cy="220" rx="75" ry="20" fill="url(#linear-gradient-5)" stroke="#4a4840" stroke-width="1.5" stroke-miterlimit="10"/>
+        <ellipse id="moneda-superior" cx="466" cy="206" rx="75" ry="20" fill="url(#linear-gradient-6)" stroke="#4a4840" stroke-width="1.5" stroke-miterlimit="10"/>
+        <path id="grafila-2" data-name="grafila" d="M403 206 C403 197.163 431.206 190 466 190 C500.794 190 529 197.163 529 206 C529 214.837 500.794 222 466 222 C431.206 222 403 214.837 403 206 Z" fill="none" stroke="#f2f0e8" stroke-width="1.2" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="1 4" opacity="0.8"/>
+      </g>
+    </g>
+  </g>
+  <g id="_2e-2f" data-name="2e-2f">
+  </g>
+</svg>

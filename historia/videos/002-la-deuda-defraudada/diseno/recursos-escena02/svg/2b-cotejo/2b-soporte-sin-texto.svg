@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="540" viewBox="0 0 420 540">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="16.2" y="16.2" width="387.6" height="507.6" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feOffset dx="0" dy="6" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.35"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-1" x1="210" y1="500" x2="210" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d3c093"/>
+      <stop offset="1" stop-color="#ebe1c7"/>
+    </linearGradient>
+  </defs>
+  <title>2b-soporte-origen</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="_2c-vale" data-name="2c-vale">
+  </g>
+  <g id="pizarra-fondo">
+  </g>
+  <g id="_2a-2b-tiza" data-name="2a-2b-tiza">
+    <g id="soporte-origen" data-coteja="Origen del reclamo">
+      <g id="hoja">
+        <g filter="url(#filter-1)">
+          <polygon id="papel" points="40,40 340,40 380,80 380,500 40,500" fill="url(#linear-gradient-1)" stroke="#6b5a3a" stroke-width="1.6" stroke-linejoin="round"/>
+        </g>
+        <polygon id="esquina" points="340,40 340,80 380,80" fill="#c2ae7f" stroke="#6b5a3a" stroke-width="1.2" stroke-linejoin="round"/>
+        <line id="filete" x1="65" y1="185" x2="355" y2="185" fill="none" stroke="#6b5a3a" stroke-width="1.6" stroke-miterlimit="10"/>
+        <path id="renglones" d="M65 320 L355 320 M65 356 L355 356 M65 392 L355 392 M65 428 L355 428" fill="none" stroke="#b9a77c" stroke-miterlimit="10" opacity="0.55"/>
+      </g>
+    </g>
+  </g>
+  <g id="_2c-2d" data-name="2c-2d">
+  </g>
+  <g id="_2e-2f" data-name="2e-2f">
+  </g>
+</svg>
