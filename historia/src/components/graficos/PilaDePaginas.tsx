@@ -4,6 +4,7 @@ import { clamp } from '../../direction/anim';
 import { azar } from '../../direction/azar';
 import type { Paleta } from '../../esquema';
 import { mezclar } from '../../estilo/color';
+import { LAMPARA } from '../../estilo/lampara';
 import { PatronPapel } from '../atmosfera/Papel';
 import { Pluma } from './Pluma';
 import { bordePapel, FiltroSombra, FiltroTinta, renglonesTipeados, trazoManuscrito } from './svg';
@@ -141,6 +142,10 @@ const PilaLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: string
       </g>
       {verLapiz ? (
         <g transform={`translate(${punta.x - PUNTA_LAPIZ.x + alzada * 6} ${punta.y - PUNTA_LAPIZ.y - alzada * 22})`}>
+          {/* la sombra del lápiz en el papel: pegada a la punta mientras escribe; al levantarlo se queda abajo (no sube con
+              él), se separa hacia el lado contrario de la lámpara y se aclara. Así se ve que el lápiz deja la hoja. */}
+          <CapaVC lamina={lamina} uid={uid} nombre="Sombra___Lápiz" opcional opacity={1 - 0.45 * alzada}
+            transform={`translate(${LAMPARA.sombraCercana.dx + alzada * 8} ${LAMPARA.sombraCercana.dy + alzada * 34})`} />
           <CapaVC lamina={lamina} uid={uid} nombre="Lápiz_de_corrector" />
         </g>
       ) : null}

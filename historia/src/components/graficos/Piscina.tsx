@@ -88,6 +88,10 @@ const PiscinaLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: str
             {[0, -ancho].map((o) => (
               <CapaVC key={o} lamina={lamina} uid={uid} nombre="Reflejos" transform={`translate(${corre + o} ${Math.sin(t * 0.9) * 3})`} />
             ))}
+            {/* la hondura del agua (lámina afinada): el borde sombrea el agua arriba y a la izquierda (piezas 3–4) y cada
+                corchera echa su sombra al fondo, abajo a la derecha (piezas 0–2), meciéndose con ella */}
+            <CapaVC lamina={lamina} uid={uid} nombre="Sombras_en_el_fondo" opcional
+              pieza={(i) => (i < 3 ? { transform: `translate(0 ${Math.sin(t * 2.2 + i * 1.7) * 1.3})` } : undefined)} />
             {['Corchera_370', 'Corchera_530', 'Corchera_690'].map((n, i) => (
               <CapaVC key={n} lamina={lamina} uid={uid} nombre={n} transform={`translate(0 ${Math.sin(t * 2.2 + i * 1.7) * 1.3})`} />
             ))}

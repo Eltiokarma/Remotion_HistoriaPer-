@@ -5,6 +5,7 @@
       <stop offset="0" stop-color="#354037"/>
       <stop offset="1" stop-color="#111a16"/>
     </radialGradient>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="617.5" y="126.5" width="737" height="845" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="5.5"/></filter>
     <linearGradient id="linear-gradient-1" x1="545.681" y1="733.2" x2="1374.319" y2="346.8" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#49341d"/>
       <stop offset="0.3" stop-color="#dbc38b"/>
@@ -23,19 +24,32 @@
       <stop offset="0" stop-color="#f2e8cf"/>
       <stop offset="1" stop-color="#b6a786"/>
     </radialGradient>
-    <linearGradient id="linear-gradient-3" x1="931.094" y1="553.479" x2="988.906" y2="526.521" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient-3" x1="616" y1="196" x2="1304" y2="884" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff0c8" stop-opacity="0.22"/>
+      <stop offset="0.38" stop-color="#fff0c8" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#0d0905" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0d0905" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="filter-2" filterUnits="userSpaceOnUse" x="927.5" y="299.5" width="65" height="481" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="1.5"/></filter>
+    <linearGradient id="linear-gradient-4" x1="931.094" y1="553.479" x2="988.906" y2="526.521" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#49341d"/>
       <stop offset="0.3" stop-color="#dbc38b"/>
       <stop offset="0.55" stop-color="#aa8546"/>
       <stop offset="0.8" stop-color="#ead49b"/>
       <stop offset="1" stop-color="#4b351d"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-4" x1="929.613" y1="204.17" x2="990.387" y2="175.83" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient-5" x1="929.613" y1="204.17" x2="990.387" y2="175.83" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#49341d"/>
       <stop offset="0.3" stop-color="#dbc38b"/>
       <stop offset="0.55" stop-color="#aa8546"/>
       <stop offset="0.8" stop-color="#ead49b"/>
       <stop offset="1" stop-color="#4b351d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="917.5" y1="113.5" x2="1002.5" y2="198.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff0c8" stop-opacity="0.25"/>
+      <stop offset="0.4" stop-color="#fff0c8" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#0d0905" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0d0905" stop-opacity="0.5"/>
     </linearGradient>
   </defs>
   <title>Video 01 — Brújula grabada</title>
@@ -44,14 +58,20 @@
   <g id="Fondo_de_presentación" data-name="Fondo de presentación">
     <rect x="0" y="0" width="1920" height="1080" fill="url(#radial-gradient-1)"/>
   </g>
+  <g id="Sombra___Caja_y_anilla" data-name="Sombra — Caja y anilla">
+    <g filter="url(#filter-1)">
+      <path id="sombra" d="M950 181 C950 161.118 966.118 145 986 145 C1005.882 145 1022 161.118 1022 181 C1022 194.932 1014.086 207.015 1002.509 213 L1016 213 L1016 235.29 C1168.104 248.431 1291.9 360.554 1322.648 506.922 C1331.344 537.451 1336 569.682 1336 603 C1336 796.3 1179.3 953 986 953 C792.7 953 636 796.3 636 603 C636 569.682 640.656 537.451 649.352 506.922 C680.1 360.554 803.896 248.431 956 235.29 L956 213 L969.491 213 C957.914 207.015 950 194.932 950 181 Z" fill="#0c0a07" opacity="0.6"/>
+    </g>
+  </g>
   <g id="Caja_de_bronce___fija" data-name="Caja de bronce — fija">
-    <circle cx="960" cy="565" r="350" fill="#0d1512"/>
+    <circle id="sombra-antigua__apagada__la_reemplaza_la_capa_Sombra_" data-name="sombra-antigua (apagada: la reemplaza la capa Sombra)" cx="960" cy="565" r="350" fill="#0d1512" opacity="0"/>
     <circle cx="960" cy="540" r="344" fill="url(#linear-gradient-1)" stroke="#b69a63" stroke-width="2" stroke-miterlimit="10"/>
     <circle cx="960" cy="540" r="328" fill="#372d20" stroke="#b69a63" stroke-width="2" stroke-miterlimit="10"/>
     <circle cx="960" cy="540" r="320" fill="url(#linear-gradient-2)" stroke="#b69a63" stroke-width="2" stroke-miterlimit="10"/>
     <circle cx="960" cy="540" r="299" fill="url(#radial-gradient-2)" stroke="#b69a63" stroke-width="2" stroke-miterlimit="10"/>
     <circle cx="960" cy="540" r="281" fill="none" stroke="#685d42" stroke-miterlimit="10"/>
     <circle cx="960" cy="540" r="240" fill="none" stroke="#8b7c58" stroke-miterlimit="10"/>
+    <circle id="luz-lampara" cx="960" cy="540" r="344" fill="url(#linear-gradient-3)"/>
   </g>
   <g id="Graduaciones___fixes" data-name="Graduaciones — fixes">
     <line x1="960" y1="287" x2="960" y2="259" fill="none" stroke="#29382f" stroke-width="2" stroke-miterlimit="10"/>
@@ -205,12 +225,17 @@
       <path d="M721.061 533.675 C721.979 534.632 722.696 535.787 723.214 537.139 C723.731 538.492 723.99 539.988 723.99 541.629 C723.99 543.279 723.727 544.778 723.199 546.126 C722.672 547.474 721.939 548.621 721.002 549.568 C720.094 550.506 719.039 551.229 717.838 551.736 C716.637 552.244 715.357 552.498 714 552.498 C712.555 552.498 711.219 552.227 709.994 551.685 C708.768 551.143 707.716 550.389 706.837 549.422 C705.958 548.475 705.267 547.325 704.764 545.972 C704.261 544.62 704.01 543.172 704.01 541.629 C704.01 539.939 704.273 538.433 704.801 537.11 C705.328 535.787 706.056 534.642 706.983 533.675 C707.901 532.718 708.968 531.985 710.184 531.478 C711.4 530.97 712.672 530.716 714 530.716 C715.377 530.716 716.676 530.975 717.896 531.492 C719.117 532.01 720.172 532.737 721.061 533.675 Z M718.878 548.411 C719.425 547.522 719.823 546.517 720.072 545.394 C720.321 544.271 720.445 543.016 720.445 541.629 C720.445 540.203 720.306 538.895 720.028 537.703 C719.75 536.512 719.342 535.496 718.805 534.656 C718.268 533.826 717.594 533.179 716.783 532.715 C715.973 532.251 715.045 532.02 714 532.02 C712.828 532.02 711.832 532.288 711.012 532.825 C710.191 533.362 709.522 534.08 709.005 534.979 C708.517 535.838 708.153 536.844 707.914 537.996 C707.674 539.148 707.555 540.359 707.555 541.629 C707.555 543.035 707.682 544.305 707.936 545.438 C708.189 546.57 708.59 547.576 709.137 548.455 C709.664 549.314 710.328 549.986 711.129 550.469 C711.93 550.953 712.887 551.194 714 551.194 C715.045 551.194 715.987 550.95 716.827 550.462 C717.667 549.974 718.351 549.29 718.878 548.411 Z" fill="#29382f"/>
     </g>
   </g>
+  <g id="Sombra___Aguja__sin_desplazar__el_desplazamiento_va_en_la_escena_" data-name="Sombra — Aguja (sin desplazar; el desplazamiento va en la escena)">
+    <g filter="url(#filter-2)">
+      <polygon id="sombra-aguja" points="934,540 960,306 986,540 960,774 934,540" fill="#0c0a07" opacity="0.45"/>
+    </g>
+  </g>
   <g id="Aguja_móvil___pivote_960_540" data-name="Aguja móvil — pivote 960,540">
     <polygon points="960,306 986,540 960,549" fill="#984d3e" stroke="#6d3529" stroke-miterlimit="10"/>
     <polygon points="960,306 934,540 960,549" fill="#c77760" stroke="#6d3529" stroke-miterlimit="10"/>
     <polygon points="960,774 986,540 960,531" fill="#8d9589" stroke="#29382f" stroke-miterlimit="10"/>
     <polygon points="960,774 934,540 960,531" fill="#e8e2ce" stroke="#29382f" stroke-miterlimit="10"/>
-    <circle cx="960" cy="540" r="24" fill="url(#linear-gradient-3)" stroke="#b69a63" stroke-width="2" stroke-miterlimit="10"/>
+    <circle cx="960" cy="540" r="24" fill="url(#linear-gradient-4)" stroke="#b69a63" stroke-width="2" stroke-miterlimit="10"/>
     <circle cx="960" cy="540" r="8" fill="#423722" stroke="#b69a63" stroke-width="2" stroke-miterlimit="10"/>
   </g>
   <g id="Vidrio___reflejos" data-name="Vidrio — reflejos">
@@ -218,9 +243,10 @@
     <path d="M1236 598 C1220.836 662.521 1183.275 719.57 1130 759" fill="none" stroke="#ae9f7c" stroke-width="2" stroke-miterlimit="10"/>
   </g>
   <g id="Anilla_y_corona" data-name="Anilla y corona">
-    <rect x="930" y="175" width="60" height="30" fill="url(#linear-gradient-4)"/>
+    <rect x="930" y="175" width="60" height="30" fill="url(#linear-gradient-5)"/>
     <circle cx="960" cy="143" r="36" fill="none" stroke="#b69a63" stroke-width="12" stroke-miterlimit="10"/>
     <circle cx="960" cy="143" r="28" fill="none" stroke="#e1c991" stroke-width="2" stroke-miterlimit="10"/>
+    <path id="luz-lampara-2" data-name="luz-lampara" d="M924 143 C924 123.118 940.118 107 960 107 C979.882 107 996 123.118 996 143 C996 156.932 988.086 169.015 976.509 175 L990 175 L990 205 L930 205 L930 175 L943.491 175 C931.914 169.015 924 156.932 924 143 Z" fill="url(#linear-gradient-6)"/>
   </g>
   <g id="Rótulos_editoriales" data-name="Rótulos editoriales">
     <g>

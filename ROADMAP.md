@@ -2,7 +2,7 @@
 
 <!-- GENERADO por roadmap/generar.mjs a partir de roadmap/roadmap.json. No editar a mano: editar el JSON y regenerar. -->
 
-Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
+Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
 
 - Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.
 - Tiempo humano y tokens: null = desconocido (no medido). No se estiman.
@@ -12,7 +12,7 @@ Actualizado: **2026-11-10**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **28** · 🔄 en curso: **4** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **29** · 🔄 en curso: **4** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -73,6 +73,7 @@ gantt
   Pasada de pulido de animación :done, e1pulido, 2026-11-03, 1d
   Guion tras la revisión externa :done, e1guionexterno, 2026-11-03, 1d
   Integrar los 16 diseños aprobados de VectorCraft conservando la animación :done, e1laminas, 2026-11-10, 1d
+  Afinar las láminas contra «se ve muy plano» una lámpara para todo el episodio (13 láminas, s00 a s07) :done, e1luzlampara, 2026-11-17, 1d
   Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena) :done, e1voz, 2026-11-10, 1d
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
@@ -381,6 +382,12 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-10
   - Tiempo: H ¿? · A ¿? · R 1264 s en contenedor · tokens ¿?
   - Evidencia: [diseno/inventario-graficos-efectos.md](historia/videos/001-el-hombre/diseno/inventario-graficos-efectos.md) · [scripts/vectorcraft-piezas.mjs](historia/scripts/vectorcraft-piezas.mjs) · [vectorcraft/Lamina.tsx](historia/src/components/graficos/vectorcraft/Lamina.tsx)
+- [x] **Afinar las láminas contra «se ve muy plano»: una lámpara para todo el episodio (13 láminas, s00 a s07)** `e1-luz-lampara` — ✅ hecho
+  - Entregable: 13 láminas con modelado y sombras en VectorCraft, sombras atadas al movimiento de cada pieza y la misma luz (LAMPARA) en el episodio; 7 sin cambios a propósito (inventario, sección H)
+  - Depende de: `e1-laminas`
+  - Prevista: — · Real: 2026-11-17
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [diseno/inventario-graficos-efectos.md](historia/videos/001-el-hombre/diseno/inventario-graficos-efectos.md) · [estilo/lampara.ts](historia/src/estilo/lampara.ts)
 - [ ] **Revisión de Gerson de la integración de las láminas y de los efectos recuperados (E01–E12)** `e1-revision-laminas` — ⏳ pendiente
   - Entregable: Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO
   - Depende de: `e1-laminas`

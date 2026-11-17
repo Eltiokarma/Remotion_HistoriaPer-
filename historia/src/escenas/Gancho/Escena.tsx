@@ -10,6 +10,7 @@ import { azar } from '../../direction/azar';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
+import { LAMPARA } from '../../estilo/lampara';
 import type { esquema } from './esquema';
 
 type P = z.infer<typeof esquema>;
@@ -88,7 +89,9 @@ const MonedaLamina: React.FC<{ lamina: Lamina; d: number; cobre: number; raya: n
       const m = MONEDA_LAMINA[v];
       return (
         <RecorteLamina key={v} lamina={lamina} caja={[m.cx - 105, m.cy - 105, 210, 210]} ancho={d} style={{ position: 'absolute', inset: 0, opacity: o }}
-          capas={[{ nombre: m.capa, solo: (i) => i > 0 && i < 9 }]} />
+          capas={[{ nombre: m.capa, solo: (i) => i > 0 && i < 9 },
+            // la luz de la lámpara sobre esa moneda: en la lámina afinada, la pieza k − 1 es la de la moneda k
+            { nombre: 'Luz_de_lámpara___monedas', solo: (i) => i === Number(m.capa.split('_')[1]) - 1, opcional: true }]} />
       );
     })}
   </div>
@@ -140,7 +143,9 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: noche }}>
-      <Luz color={pal.ocre} x={50} y={42} radio={70} intensidad={0.12 * luzFinal} />
+      {/* con las láminas afinadas, el charco de luz sale de la lámpara del estudio (la misma de s01 y s05), con la intensidad de siempre */}
+      {lLibro || lMonedas ? <Luz color={pal.ocre} x={LAMPARA.x} y={LAMPARA.y} radio={LAMPARA.radio} intensidad={0.12 * luzFinal} />
+        : <Luz color={pal.ocre} x={50} y={42} radio={70} intensidad={0.12 * luzFinal} />}
 
       {/* 1 · la producción del país, año tras año */}
       {t < tSoles + 0.6 ? (
@@ -203,8 +208,13 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
             const x = x0M + i * (MD + MG);
             const y = 470 - (1 - kEntra) * 40 + kCae * 700 + kDuda * 90 + (duda ? 4 * asienta(t, tCuatro + 0.9, 1, 9, 4) : 0);
             const giro = kCae * (40 + i * 13) + kDuda * 18;
-            return (
-              <div key={i} style={{ position: 'absolute', left: x, top: y, opacity: kEntra * (segura ? 1 - 0.3 * kCae : duda ? 1 - 0.55 * kDuda : 1),
+            const opMoneda = kEntra * (segura ? 1 - 0.3 * kCae : duda ? 1 - 0.55 * kDuda : 1);
+            const so = LAMPARA.apoyado;
+            return [
+              // la sombra de la moneda en la mesa, hacia el lado contrario de la lámpara (un disco: no gira con ella)
+              lMonedas ? <div key={`s${i}`} style={{ position: 'absolute', left: x + so.dx, top: y + so.dy, width: MD, height: MD, borderRadius: '50%',
+                background: '#0c0a07', opacity: so.opacidad * opMoneda, filter: `blur(${so.desenfoque}px)` }} /> : null,
+              <div key={i} style={{ position: 'absolute', left: x, top: y, opacity: opMoneda,
                 transform: `rotate(${giro}deg)` }}>
                 {/* con la lámina: entran doradas; las que caen se vuelven cobre (lo que se pierde) y la dudosa, rayada */}
                 {lMonedas ? <MonedaLamina lamina={lMonedas} d={MD} cobre={segura ? tramo(t, tc, 0.35, 'natural') : 0} raya={kDuda} /> : <Moneda papel={papel} tinta={pal.fondo} d={MD} />}
@@ -213,8 +223,8 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
                     <Moneda papel={papel} tinta={pal.fondo} d={MD} punteada />
                   </div>
                 ) : null}
-              </div>
-            );
+              </div>,
+            ];
           })}
           <div style={{ position: 'absolute', left: x0M, top: 650, fontFamily: fuente.mono, fontSize: 22, letterSpacing: '0.16em', color: alfa(papel, 0.7),
             opacity: tramo(t, tSoles + 0.6, 0.6, 'natural') }}>{props.monedas.rotulo}</div>
@@ -265,7 +275,8 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
       {t >= tCalculo - 0.5 && t < tLibro + 1.2 ? (
         <AbsoluteFill style={{ opacity: tramo(t, tCalculo - 0.4, 0.5, 'natural') }}>
           <div style={{ position: 'absolute', left: 560, top: 300 + 420 * tramo(t, tLibro - 0.3, 0.9, 'tenso'), width: 800, padding: '44px 56px',
-            background: mezclar(papel, '#ffffff', 0.15), boxShadow: `0 18px 40px ${alfa('#000000', 0.45)}`,
+            // con las láminas afinadas, la sombra de la ficha cae del mismo lado que la del libro y las monedas (la lámpara)
+            background: mezclar(papel, '#ffffff', 0.15), boxShadow: lLibro ? `12px 18px 40px ${alfa('#000000', 0.45)}` : `0 18px 40px ${alfa('#000000', 0.45)}`,
             transform: `rotate(${-1.5 + 5 * tramo(t, tLibro - 0.3, 0.9, 'tenso')}deg)`,
             opacity: 1 - tramo(t, tLibro - 0.1, 0.6, 'natural') }}>
             {props.ficha.map((linea, i) => (
@@ -283,7 +294,8 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
           {lLibro ? (
             // el libro de la lámina (lomo, tapa y cantos): las letras doradas se estampan en el mismo orden
             <div style={{ transform: `translateY(${18 * (1 - tramo(t, tLibro, 1.2, 'pesado'))}px)`,
-              filter: `brightness(${mix(1, 0.62, 1 - luzFinal)}) drop-shadow(0 30px 40px ${alfa('#000000', 0.6)})` }}>
+              // la sombra del libro hacia el lado contrario de la lámpara (antes caía recta hacia abajo)
+              filter: `brightness(${mix(1, 0.62, 1 - luzFinal)}) drop-shadow(${LAMPARA.sombra.dx * 0.7}px ${LAMPARA.sombra.dy * 0.8}px 40px ${alfa('#000000', 0.6)})` }}>
               <LibroLamina lamina={lLibro} estampado={tramo(t, tLibro + 0.5, 1.8, 'natural')} ancho={540} />
             </div>
           ) : (

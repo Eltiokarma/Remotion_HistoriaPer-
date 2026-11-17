@@ -73,10 +73,16 @@ type PropsCapa = {
   pieza?: (i: number, caja: Caja) => { transform?: string; opacity?: number } | undefined;
   /** Solo estas piezas (por índice). */
   solo?: (i: number) => boolean;
+  /** Si la lámina no trae la capa, no se dibuja nada (las sombras de la lámpara: una lámina sin afinar no las tiene). */
+  opcional?: boolean;
 };
 
+/** Si la lámina tiene una capa que empieza con ese nombre. */
+export const tieneCapa = (l: Lamina, nombre: string) => l.layers.some((x) => x.name.startsWith(nombre));
+
 /** Una capa de la lámina, con su transformación original y la que le pone la escena encima. */
-export const CapaVC: React.FC<PropsCapa> = ({ lamina, uid, nombre, transform, opacity, pieza, solo }) => {
+export const CapaVC: React.FC<PropsCapa> = ({ lamina, uid, nombre, transform, opacity, pieza, solo, opcional }) => {
+  if (opcional && !tieneCapa(lamina, nombre)) return null;
   const c = capa(lamina, nombre);
   if (opacity !== undefined && opacity <= 0.001) return null;
   return (
@@ -109,7 +115,7 @@ export const CapasVC: React.FC<{ lamina: Lamina; uid: string; nombres: string[];
  */
 export const RecorteLamina: React.FC<{
   lamina: Lamina; caja: Caja; ancho: number;
-  capas: { nombre: string; solo?: (i: number) => boolean; transform?: string; opacity?: number }[];
+  capas: { nombre: string; solo?: (i: number) => boolean; transform?: string; opacity?: number; opcional?: boolean }[];
   style?: React.CSSProperties;
 }> = ({ lamina, caja, ancho, capas, style }) => {
   const uid = usePrefijo();

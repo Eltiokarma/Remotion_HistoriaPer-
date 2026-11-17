@@ -13,6 +13,7 @@ import { anticipa, beat, clamp, mix, tramo } from '../../direction/anim';
 import type { EscenaProps } from '../../esquema';
 import { alfa, mezclar } from '../../estilo/color';
 import { fuente } from '../../estilo/fuentes';
+import { LAMPARA } from '../../estilo/lampara';
 import type { esquema } from './esquema';
 
 type P = z.infer<typeof esquema>;
@@ -96,7 +97,10 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
         <>
           {/* A: pruebas de imprenta bajo la lámpara */}
           <AbsoluteFill style={{ opacity: entra * (1 - pagina) }}>
-            <Luz color={pal.ocre} x={52} y={44} radio={62} intensidad={0.22} />
+            {/* «bajo la lámpara»: con la lámina afinada, la lámpara del estudio (la misma de s00 y s05), que da la sombra
+                del lápiz y de las hojas hacia abajo a la derecha. Sin lámina, la luz de siempre (el 000 no cambia). */}
+            {lPruebas ? <Luz color={pal.ocre} x={LAMPARA.x} y={LAMPARA.y} radio={LAMPARA.radio} intensidad={LAMPARA.intensidad} />
+              : <Luz color={pal.ocre} x={52} y={44} radio={62} intensidad={0.22} />}
             <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center',
               transform: `scale(${mix(1, 2.6, zambulle)}) rotate(${mix(-1.5, 0, zambulle)}deg)`, transformOrigin: '54% 40%' }}>
               <div style={{ marginTop: 60 }}>

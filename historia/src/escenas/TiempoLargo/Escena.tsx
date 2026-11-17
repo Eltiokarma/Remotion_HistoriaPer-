@@ -113,7 +113,8 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
               // el emblema ilustrado cae como caía el sello, pero apenas girado: es un escudo, no un timbrazo
               <div style={{ position: 'absolute', left: 1290, top: 150, width: 380, transform: `rotate(-4deg) scale(${caidaSello})`, opacity: clamp(caidaSello * 3),
                 filter: `drop-shadow(4px 8px 8px ${alfa('#000000', 0.35)})` }}>
-                <RecorteLamina lamina={lEmblema} caja={[195, 300, 590, 590]} ancho={380} capas={[{ nombre: 'Escudo', solo: (i) => i < 20 }]} />
+                <RecorteLamina lamina={lEmblema} caja={[195, 300, 590, 590]} ancho={380} capas={[{ nombre: 'Escudo', solo: (i) => i !== 20 }]} />
+                {/* sin la pieza 20 (el aviso, que la escena pone aparte); la 21 es la luz de la lámpara de la lámina afinada */}
                 {props.laminas?.aviso_emblema ? (
                   <div style={{ marginTop: 14, textAlign: 'center', fontFamily: fuente.libro, fontStyle: 'italic', fontSize: 21, color: alfa(pal.fondo, 0.7),
                     opacity: tramo(t, tSello + 0.8, 0.8, 'natural') }}>{props.laminas.aviso_emblema}</div>

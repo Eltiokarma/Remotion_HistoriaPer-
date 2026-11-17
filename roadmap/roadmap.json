@@ -1,6 +1,6 @@
 {
   "titulo": "Roadmap del laboratorio y la base de producción",
-  "actualizado": "2026-11-10",
+  "actualizado": "2026-11-17",
   "notas": [
     "Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.",
     "Tiempo humano y tokens: null = desconocido (no medido). No se estiman.",
@@ -1243,6 +1243,32 @@
         "agente": null,
         "render_s": 1264,
         "maquina": "contenedor"
+      }
+    },
+    {
+      "id": "e1-luz-lampara",
+      "fase": "e1",
+      "titulo": "Afinar las láminas contra «se ve muy plano»: una lámpara para todo el episodio (13 láminas, s00 a s07)",
+      "entregable": "13 láminas con modelado y sombras en VectorCraft, sombras atadas al movimiento de cada pieza y la misma luz (LAMPARA) en el episodio; 7 sin cambios a propósito (inventario, sección H)",
+      "estado": "hecho",
+      "depende_de": [
+        "e1-laminas"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-17",
+        "fin": "2026-11-17"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/diseno/inventario-graficos-efectos.md",
+        "historia/src/estilo/lampara.ts"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
       }
     },
     {

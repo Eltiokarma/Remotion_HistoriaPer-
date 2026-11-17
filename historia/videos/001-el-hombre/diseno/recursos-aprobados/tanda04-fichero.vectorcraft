@@ -1,7 +1,8 @@
 {
   "format": "vectorcraft",
   "version": 4,
-  "generator": "VectorCraft 0.22.0",
+  "generator": "VectorCraft 0.24.1",
+  "pdfCompatible": false,
   "document": {
     "version": 3,
     "title": "Tanda 4 — Fichero de investigación",
@@ -146,6 +147,117 @@
                     1.0,
                     0.0,
                     0.0
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 45,
+        "name": "Sombra — Fichero",
+        "kind": {
+          "type": "layer",
+          "color": {
+            "Preset": 2
+          },
+          "template": false,
+          "printable": true,
+          "children": [
+            {
+              "id": 52,
+              "name": "sombra",
+              "opacity": 0.6,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.047058824,
+                        "g": 0.039215688,
+                        "b": 0.02745098
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "blur.gaussian",
+                    "params": {
+                      "radius": 14
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            396.0,
+                            515.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1351.0,
+                            443.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1568.827419765045,
+                            590.5891905346832
+                          ]
+                        },
+                        {
+                          "p": [
+                            1596.0,
+                            588.0000000476434
+                          ]
+                        },
+                        {
+                          "p": [
+                            1596.0,
+                            609.0000000471312
+                          ]
+                        },
+                        {
+                          "p": [
+                            1596.0,
+                            901.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            620.0,
+                            993.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            396.0,
+                            829.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
                   ]
                 }
               }
@@ -2330,6 +2442,198 @@
                   ]
                 }
               }
+            },
+            {
+              "id": 53,
+              "name": "luz-lampara",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9137255,
+                              "b": 0.7529412
+                            },
+                            "opacity": 0.24,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9137255,
+                              "b": 0.7529412
+                            },
+                            "opacity": 0.06,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": -60.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            370.0,
+                            477.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            594.0,
+                            643.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            594.0,
+                            955.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            370.0,
+                            791.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 54,
+              "name": "luz-lampara",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9137255,
+                              "b": 0.7529412
+                            },
+                            "opacity": 0.12,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.35,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9137255,
+                              "b": 0.7529412
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.6,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.42,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": -25.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            594.0,
+                            643.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1570.0,
+                            550.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1570.0,
+                            863.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            594.0,
+                            955.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
             }
           ]
         }
@@ -4238,7 +4542,7 @@
     },
     "raster_effects_ppi": 72.0,
     "images": {},
-    "next_id": 45,
+    "next_id": 55,
     "metadata": {
       "author": "",
       "authorTitle": "",
@@ -4249,8 +4553,31 @@
       "copyrightNotice": "",
       "copyrightUrl": "",
       "created": 1794199048,
-      "modified": null
-    }
+      "modified": 1794924452
+    },
+    "last_view": {
+      "name": "",
+      "center": {
+        "x": 960.0,
+        "y": 540.0
+      },
+      "zoom": 0.5322916666666667,
+      "rotation": 0.0
+    },
+    "layers_open": [
+      1,
+      2,
+      4,
+      7,
+      8,
+      12,
+      16,
+      20,
+      26,
+      31,
+      39,
+      42
+    ]
   },
   "images": {}
 }
