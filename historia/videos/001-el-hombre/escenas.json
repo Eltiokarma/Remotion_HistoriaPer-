@@ -337,7 +337,7 @@
       "seccion": "su generación",
       "componente": "TiempoLargo",
       "duracion_s": 37.07,
-      "cola_s": 1,
+      "cola_s": 2.5,
       "intensidad": 3,
       "cambio": "de un estudiante que entra a la universidad a uno que se hace la pregunta de su generación: ¿el país cambia o se repite?",
       "intencion": "los afiches gritan cambio; con «¿o repetía lo de siempre?», el afiche nuevo se despega y debajo asoma uno viejo, igual de prometedor; la pregunta queda en el aire",
@@ -352,7 +352,9 @@
         "volante": 18.6,
         "despegue": 35.55,
         "leer": 20.62,
-        "vuelve": 26.01
+        "vuelve": 26.01,
+        "acerca": 29.9,
+        "esquina": 34.6
       },
       "props": {
         "sello": {
@@ -393,6 +395,10 @@
           "texto": "«militó por algún tiempo en un pequeño partido trotskista de izquierda que criticaba duramente al régimen castrense»",
           "pie": "MARCOS CUETO, PRÓLOGO, P. 16"
         },
+        "afiche_viejo": {
+          "texto": "UN PAÍS NUEVO",
+          "rotulo": "Ilustrativo · la misma promesa, en un afiche anterior"
+        },
         "laminas": {
           "emblema": "vectorcraft/tanda05-ingreso-v2.json",
           "aviso_emblema": "Interpretación vectorial del escudo tradicional",
@@ -424,6 +430,11 @@
           "beat": "vuelve",
           "movimiento": "vuelve a ver el muro entero",
           "motivo": "«Para un estudiante de esa época…»: de él a su generación"
+        },
+        {
+          "beat": "acerca",
+          "movimiento": "se acerca despacio al último afiche («UN PAÍS NUEVO») y se queda quieta",
+          "motivo": "«Era la manera de responder una pregunta»: la cámara va al afiche que la pregunta pone a prueba y llega antes de «¿El país estaba cambiando de verdad?», que transcurre quieta; quieta también para el golpe y lo que revela"
         }
       ],
       "beats_ajustados": true

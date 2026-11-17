@@ -36,7 +36,7 @@ marca); «cuánto pesa» en s05 1,01 → 1,06 (tampoco).
 
 | # | Momento | Observación | Cambio propuesto | Estado |
 |---|---|---|---|---|
-| 1 | s03, 2:22 | La pregunta de la serie es una esquina que se despega, ~2,5 s antes del corte | Despegar el afiche entero, que asome uno viejo igual de prometedor (ilustrativo), quietud ~2 s antes del corte | Pendiente |
+| 1 | s03, 2:22 | La pregunta de la serie es una esquina que se despega, ~2,5 s antes del corte | Despegar el afiche entero, que asome uno viejo igual de prometedor (ilustrativo), quietud ~2 s antes del corte | **Hecho** |
 | 2 | s06, 4:47–5:15 | El grabado del guano quedaba 0,74 s a pantalla completa; 7 s de libro cerrado sin texto; el monto se inflaba antes de que llegara su vale | Reparto nuevo de los beats y fichas del libro (abajo) | **Hecho** |
 | 3 | s02 | La escena de intensidad 1 es la más activa y saturada del video | Calmar el agua (amplitud de reflejos y cáusticas), una sola variable | Pendiente |
 | 4 | s03 | El rojo se gasta en el muro (7,1 % durante 30 s) antes del rojo de la culpa en s06 (2,9 %) | Apagar primero los recortes rojos del fondo del muro; el afiche aprobado lo decide Gerson | Pendiente |
@@ -68,6 +68,25 @@ pp. 17 y 19).
 
 **Por comprobar:** verlo a velocidad real con la voz, y la prueba con otra persona: «¿de dónde salía la
 plata y adónde iba?».
+
+## Hoja 1 aplicada: la pregunta de la serie (s03)
+
+**Afirmación:** lo nuevo tapa algo viejo que prometía lo mismo. Sin tocar la voz; la música de s03 se
+detiene en `despegue` (así estaba anclada), que ahora es el instante en que el afiche cae: el golpe llega
+con el corte de la música y lo que revela queda en silencio.
+
+| Tramo (tiempos de la escena) | Antes | Después | Actividad |
+|---|---|---|---|
+| «Era la manera de responder una pregunta» (29,8) | muro entero | la cámara se arrima al último afiche, ×1,3 (beat `acerca`, 29,9–32,5) | 12,1 |
+| «¿El país estaba cambiando de verdad?» (31,7–34,4) | muro quieto | quieta sobre «UN PAÍS NUEVO» | 1,8 |
+| Pausa (34,6) | — | la esquina empieza a despegarse (beat `esquina`) | 1,9 |
+| «¿O repetía lo de siempre?» (35,7) | se dobla una esquina | el afiche se cae entero, acelerando (`despegue`, 35,55) | **5,3** |
+| «…lo de siempre» y la cola | ~1 s y corte | debajo, el mismo «UN PAÍS NUEVO» en un afiche viejo: papel tostado, tinta lavada, rojo apagado; rótulo «Ilustrativo · la misma promesa, en un afiche anterior»; quieto ~2,7 s (cola de 1 a 2,5 s) | 1,9 |
+
+El afiche viejo es una figura, no un afiche histórico (lo dice el rótulo). Prop nueva `afiche_viejo` en
+`TiempoLargo`; sin ella, solo se dobla la esquina, como en el 000. El episodio pasa a durar 5:39.
+
+**Por comprobar:** la prueba con otra persona, «¿qué pregunta quedó abierta cuando aparece la pizarra?».
 
 ## Guion de prueba con otra persona
 

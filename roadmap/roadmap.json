@@ -1275,7 +1275,7 @@
       "id": "e1-auditoria-visual",
       "fase": "e1",
       "titulo": "Auditoría de dirección visual del 001 (estructura visual) y sus seis hojas de revisión",
-      "entregable": "Hoja 2 aplicada (mecanismo del guano en s06: reparto de beats y fichas del libro); hojas 1 y 3 a 6 pendientes de aprobación",
+      "entregable": "Hojas 1 y 2 aplicadas (la pregunta de la serie en s03: el afiche se cae y queda el viejo; el mecanismo del guano en s06); hojas 3 a 6 pendientes de aprobación",
       "estado": "en_curso",
       "depende_de": [
         "e1-luz-lampara"

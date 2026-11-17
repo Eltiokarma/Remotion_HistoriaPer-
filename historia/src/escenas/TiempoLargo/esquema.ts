@@ -49,6 +49,12 @@ export const esquema = z.object({
   remate: z.string().optional(),
   /** El texto del volante: los papeles dicen algo (DIRECCION_DE_VIDEO §2.9). Sin esto, renglones. */
   volante: z.object({ titulo: z.string(), texto: z.string().optional(), pie: z.string().optional() }).optional(),
+  /**
+   * Con esto, el último afiche no solo dobla una esquina: con `despegue` se cae entero y debajo queda
+   * un afiche más viejo con su texto (la misma promesa, gastada). Es una figura, no un afiche histórico:
+   * `rotulo` lo dice en pantalla. Sin esto, solo se dobla la esquina (como en el 000).
+   */
+  afiche_viejo: z.object({ texto: z.string(), rotulo: z.string() }).optional(),
 });
 
 export const beats = {
@@ -58,7 +64,9 @@ export const beats = {
   afiche1: 'se pega el primer afiche',
   afiche2: 'se pega el segundo',
   afiche3: '(con 3 titulares) se pega el tercero',
-  despegue: 'una esquina se despega: debajo hay afiches viejos',
+  despegue: 'una esquina se despega: debajo hay afiches viejos (con afiche_viejo: el afiche se cae y queda el viejo)',
+  acerca: '(opcional) la cámara se acerca despacio al último afiche',
+  esquina: '(con afiche_viejo) la esquina del último afiche empieza a despegarse, antes de caer',
   volante: 'entra el volante',
   leer: '(opcional) la cámara se acerca al volante para leerlo',
   vuelve: '(con leer) la cámara vuelve a ver el muro entero',
@@ -77,7 +85,7 @@ export const beats = {
 
 /** Con `parte`, qué beats usa cada mitad (los de la otra no hacen falta). */
 export const partes = {
-  epoca: ['sello', 'primeros', 'afiches', 'afiche1', 'afiche2', 'afiche3', 'despegue', 'volante', 'leer', 'vuelve'],
+  epoca: ['sello', 'primeros', 'afiches', 'afiche1', 'afiche2', 'afiche3', 'despegue', 'volante', 'leer', 'vuelve', 'acerca', 'esquina'],
   capas: ['capas', 'braudel', 'capa1', 'capa2', 'capa3', 'bajar', 'palabra', 'subir', 'realce', 'remate'],
 };
 

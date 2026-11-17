@@ -44,6 +44,9 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   const tSello = T('sello', 1.5), tPrimeros = T('primeros', 5), tAfiches = T('afiches', 10);
   const tAf = [T('afiche1', tAfiches + 2), T('afiche2', tAfiches + 3.4), T('afiche3', tAfiches + 6), T('afiche4', tAfiches + 8)];
   const tDespegue = T('despegue', 27), tVolante = T('volante', 33), tCapas = T('capas', 39);
+  // con afiche_viejo, el último afiche se despega de a poco (esquina) y con `despegue` se cae entero
+  const conViejo = !!props.afiche_viejo;
+  const tEsquina = conViejo ? T('esquina', tDespegue - 1) : tDespegue, tAcerca = T('acerca', Infinity);
   const tBraudel = T('braudel', 44), tBajar = T('bajar', 51);
   const tCapa = [T('capa1', tCapas + 0.2), T('capa2', tCapas + 1.6), T('capa3', tCapas + 3.0)];
   const tPalabra = props.palabra ? T('palabra', Infinity) : Infinity, tSubir = T('subir', Infinity);
@@ -74,8 +77,15 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
   const tLeer = beat(b, 'leer', Infinity), tVuelve = beat(b, 'vuelve', Infinity);
   const kLeer = tramo(t, tLeer, 2.4, 'pesado') * (1 - tramo(t, tVuelve, 2.2, 'solemne'));
   const VOLANTE_C = { x: 1230, y: 770 }, S_LEER = 1.7;
-  const sLeer = mix(1, S_LEER, kLeer), cxL = mix(960, VOLANTE_C.x, kLeer), cyL = mix(540, VOLANTE_C.y, kLeer);
-  const camaraMuro = kLeer > 0 ? `translate(${960 - sLeer * cxL}px, ${540 - sLeer * cyL}px) scale(${sLeer})` : undefined;
+  // con `acerca`, la cámara se arrima al último afiche (el que se va a caer) y se queda quieta para el golpe;
+  // el centro se acota para que no se vea el borde del muro
+  const kAcerca = tramo(t, tAcerca, 2.6, 'solemne');
+  const ULTIMO = LUGARES[Math.min(props.titulares.length, LUGARES.length) - 1], S_ACERCA = 1.3;
+  const acota = (v: number, lado: number) => Math.min(lado - lado / 2 / S_ACERCA, Math.max(lado / 2 / S_ACERCA, v));
+  const cxA = acota(ULTIMO.x + ULTIMO.w / 2, 1920), cyA = acota(ULTIMO.y + ULTIMO.h / 2, 1080);
+  const sLeer = mix(1, S_LEER, kLeer) * mix(1, S_ACERCA, kAcerca);
+  const cxL = mix(mix(960, VOLANTE_C.x, kLeer), cxA, kAcerca), cyL = mix(mix(540, VOLANTE_C.y, kLeer), cyA, kAcerca);
+  const camaraMuro = kLeer > 0 || kAcerca > 0 ? `translate(${960 - sLeer * cxL}px, ${540 - sLeer * cyL}px) scale(${sLeer})` : undefined;
   const tachuela = t < tTachuela - 0.12 ? 0 : mix(1.6, 1, tramo(t, tTachuela - 0.12, 0.12, 'tenso')) + asienta(t, tTachuela, -0.08, 30, 14);
   // —— C: las capas
   const capas = tramo(t, tCapas - 0.4, 1.0, 'natural');
@@ -143,10 +153,34 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                   </g>
                 ))}
               </svg>
+              {/* el afiche viejo, debajo del último: queda tapado apenas se pega el nuevo y vuelve a verse cuando este se cae */}
+              {conViejo && props.afiche_viejo && t >= tAf[props.titulares.length - 1] + 0.6 ? (() => {
+                const L = ULTIMO;
+                const ancho = (lPanfletos ? Math.round(L.h * PROPORCION_PANFLETO) : L.w) - 10;
+                return (
+                  <>
+                    <div style={{ position: 'absolute', left: L.x + (L.w - ancho) / 2 + 8, top: L.y + 10, transform: `rotate(${L.rot + 1.8}deg)`,
+                      filter: `drop-shadow(3px 5px 5px ${alfa('#000000', 0.4)})` }}>
+                      {/* papel tostado, tinta lavada y el rojo apagado: la misma promesa, de antes */}
+                      <Afiche id={`${escena.id}-viejo`} texto={props.afiche_viejo.texto} papel={mezclar(pal.ocre, pal.fondo, 0.32)}
+                        tinta={mezclar(pal.fondo, pal.ocre, 0.22)} acento={mezclar(mezclar(pal.rojo, pal.fondo, 0.5), pal.ocre, 0.35)} ancho={ancho} alto={L.h - 18} semilla={41} />
+                    </div>
+                    {/* el rótulo termina en el borde derecho del afiche y crece hacia la izquierda: no se sale del cuadro */}
+                    <div style={{ position: 'absolute', left: L.x + (L.w - ancho) / 2 + 8 + ancho, top: L.y - 40, transform: 'translateX(-100%)', textAlign: 'right',
+                      fontFamily: fuente.mono, fontSize: 20, letterSpacing: '0.14em', color: alfa(pal.papel, 0.72), opacity: tramo(t, tDespegue + 1.0, 0.6, 'natural'),
+                      whiteSpace: 'nowrap' }}>{props.afiche_viejo.rotulo.toUpperCase()}</div>
+                  </>
+                );
+              })() : null}
               {props.titulares.map((tx, i) => {
                 const L = LUGARES[i];
                 const k = pega(tAf[i]);
                 if (t < tAf[i]) return null;
+                // con afiche_viejo, el último se despega de a poco y después se cae entero (cae acelerando, hacia abajo y a la izquierda)
+                const ultimo = i === props.titulares.length - 1;
+                const cae = ultimo && conViejo ? tramo(t, tDespegue, 1.0, 'tenso') : 0;
+                if (cae >= 1) return null;
+                const esquina = !ultimo ? 0 : conViejo ? tramo(t, tEsquina, tDespegue - tEsquina + 0.3, 'natural') * 0.85 : tramo(t, tDespegue, 1.8, 'natural') * 0.85;
                 const colores = [
                   { papel: pal.papel, tinta: pal.fondo, acento: pal.rojo },
                   { papel: mezclar(pal.ocre, pal.papel, 0.45), tinta: pal.rojo, acento: pal.fondo },
@@ -157,10 +191,11 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
                 const panfleto = lPanfletos && i < 3 ? i + 1 : undefined;
                 const ancho = panfleto ? Math.round(L.h * PROPORCION_PANFLETO) : L.w;
                 return (
-                  <div key={i} style={{ position: 'absolute', left: L.x + (L.w - ancho) / 2, top: L.y, transform: `rotate(${L.rot}deg) scale(${mix(1.1, 1, k)})`, opacity: clamp(k * 4),
+                  <div key={i} style={{ position: 'absolute', left: L.x + (L.w - ancho) / 2, top: L.y,
+                    transform: `translate(${-160 * cae}px, ${1000 * cae * cae}px) rotate(${L.rot - 24 * cae}deg) scale(${mix(1.1, 1, k)})`, opacity: clamp(k * 4),
                     filter: `drop-shadow(6px 10px 10px ${alfa('#000000', 0.45)})` }}>
                     <Afiche id={`${escena.id}-af${i}`} texto={tx} {...colores} ancho={ancho} alto={L.h} semilla={i * 17 + 3}
-                      despegue={i === props.titulares.length - 1 ? tramo(t, tDespegue, 1.8, 'natural') * 0.85 : 0} lamina={lPanfletos} panfleto={panfleto} />
+                      despegue={esquina} lamina={lPanfletos} panfleto={panfleto} />
                   </div>
                 );
               })}
@@ -313,6 +348,7 @@ export const TiempoLargo: React.FC<EscenaProps<P>> = ({ escena, props, video }) 
       <Sfx nombre="lapiz" en={tPrimeros} fps={fps} volumen={0.28} />
       {props.titulares.map((_, i) => <Sfx key={i} nombre="afiche" en={tAf[i]} fps={fps} volumen={0.7} />)}
       <Sfx nombre="hoja" en={tDespegue} fps={fps} volumen={0.55} />
+      {conViejo ? <Sfx nombre="hoja" en={tEsquina} fps={fps} volumen={0.25} /> : null}
       <Sfx nombre="hoja" en={tVolante} fps={fps} volumen={0.45} />
       <Sfx nombre="tic" en={tTachuela} fps={fps} volumen={0.35} />
       <Sfx nombre="soplo" en={tBajar} fps={fps} volumen={0.35} />
