@@ -23,6 +23,8 @@ type Props = {
   y0?: number;
   /** Lámina aprobada (tanda04-piscina): pileta enmarcada con tres corcheras y cuatro carriles. */
   lamina?: Lamina | null;
+  /** (lámina) Opacidad de la capa de reflejos, 0–1: más baja, el agua «hierve» menos. Por defecto 1. */
+  reflejos?: number;
 };
 
 const ANCHO = 1920, ALTO = 1080, BOYA = 34, SUAVE = 180;
@@ -57,7 +59,7 @@ const mod = (a: number, n: number) => ((a % n) + n) % n;
  * calman cuando la cámara frena. Las corcheras se mecen. Al secarse, todo se va en papel de derecha a
  * izquierda y quedan los renglones del libro contable, como en el dibujo de siempre.
  */
-const PiscinaLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: string }> = ({ paleta, t, dx, renglon, carriles = 10, separacion = 92, y0 = 130, lamina, uid }) => {
+const PiscinaLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: string }> = ({ paleta, t, dx, renglon, carriles = 10, separacion = 92, y0 = 130, lamina, uid, reflejos = 1 }) => {
   const frente = frenteSecado(renglon);
   const ancho = capa(lamina, 'Reflejos').box[2];
   const agua = `inset(${AGUA.y}px ${ANCHO - AGUA.x - AGUA.w}px ${ALTO - AGUA.y - AGUA.h}px ${AGUA.x}px)`;
@@ -85,9 +87,11 @@ const PiscinaLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: str
           <div style={{ position: 'absolute', inset: 0, clipPath: agua, backgroundImage: `url(${textura.caustica})`, backgroundSize: '760px 760px',
             backgroundPosition: `${dx * 0.85 + t * 18}px ${t * 11}px`, mixBlendMode: 'screen', opacity: 0.16, filter: 'blur(1.5px)' }} />
           <svg width={ANCHO} height={ALTO} viewBox={`0 0 ${ANCHO} ${ALTO}`} style={{ position: 'absolute', inset: 0, clipPath: agua }}>
-            {[0, -ancho].map((o) => (
-              <CapaVC key={o} lamina={lamina} uid={uid} nombre="Reflejos" transform={`translate(${corre + o} ${Math.sin(t * 0.9) * 3})`} />
-            ))}
+            <g opacity={reflejos}>
+              {[0, -ancho].map((o) => (
+                <CapaVC key={o} lamina={lamina} uid={uid} nombre="Reflejos" transform={`translate(${corre + o} ${Math.sin(t * 0.9) * 3})`} />
+              ))}
+            </g>
             {/* la hondura del agua (lámina afinada): el borde sombrea el agua arriba y a la izquierda (piezas 3–4) y cada
                 corchera echa su sombra al fondo, abajo a la derecha (piezas 0–2), meciéndose con ella */}
             <CapaVC lamina={lamina} uid={uid} nombre="Sombras_en_el_fondo" opcional

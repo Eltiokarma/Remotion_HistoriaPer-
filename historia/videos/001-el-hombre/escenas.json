@@ -241,6 +241,8 @@
         "palabra_como": "cita",
         "ficha": "MARCOS CUETO · PRÓLOGO",
         "agua": "#2f7fa3",
+        "velocidad_agua": 280,
+        "reflejos_agua": 0.45,
         "lugar": {
           "codigo": 604,
           "lon": -77.04,

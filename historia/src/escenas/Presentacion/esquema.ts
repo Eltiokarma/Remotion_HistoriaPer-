@@ -31,6 +31,13 @@ export const esquema = z.object({
   /** Color del agua de la piscina (p. ej. azul: el agua es azul aunque la paleta no lo sea). */
   agua: z.string().optional(),
   /**
+   * Velocidad de la cámara sobre el agua (px/s): cuánto corren los reflejos y las cáusticas antes de
+   * frenar. Más baja, la piscina es un respiro (auditoría visual del 001, hoja 3).
+   */
+  velocidad_agua: z.number().positive().default(620),
+  /** (con lámina de piscina) Opacidad de los reflejos del agua, 0–1 (hoja 3, versión C). Por defecto 1. */
+  reflejos_agua: z.number().min(0).max(1).default(1),
+  /**
    * El lugar y el año de nacimiento con peso (DIRECCION_DE_VIDEO §2.7): el país en tinta sobre la
    * página, la cámara que se acerca a la ciudad, y su ficha con un dato de la época.
    */

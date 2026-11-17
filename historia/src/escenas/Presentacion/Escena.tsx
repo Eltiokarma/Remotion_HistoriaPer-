@@ -17,7 +17,7 @@ import { fuente } from '../../estilo/fuentes';
 import type { esquema } from './esquema';
 
 type P = z.infer<typeof esquema>;
-const V = 620, FRENO = 1.6; // velocidad de la cámara sobre el agua (px/s) y segundos de frenado
+const FRENO = 1.6; // segundos de frenado (la velocidad sobre el agua es la prop velocidad_agua)
 
 export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video }) => {
   const frame = useCurrentFrame();
@@ -36,6 +36,7 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
   const queda = props.palabra && !comoCita ? tramo(t, tPalabra - 0.3, 0.9, 'natural') : 0;
 
   // Frenado parejo que arranca a la velocidad que traía (sin tirón): x = v·F/2·(1-(1-u)²).
+  const V = props.velocidad_agua;
   const u = clamp((t - tFrenar) / FRENO);
   const dx = -(V * Math.min(t, tFrenar) + V * (FRENO / 2) * (1 - (1 - u) ** 2));
   // con beat `piscina`, la escena empieza en la página y el agua la cubre con «nadador»; después se
@@ -56,7 +57,7 @@ export const Presentacion: React.FC<EscenaProps<P>> = ({ escena, props, video })
 
   return (
     <AbsoluteFill style={{ transform: `translateY(${temblor}px)` }}>
-      {piscina ? <Piscina paleta={pal} t={t} dx={dx} renglon={renglon} colorAgua={props.agua} lamina={lPiscina} /> : <Papel color={pal.papel} envejecido={0.3} />}
+      {piscina ? <Piscina paleta={pal} t={t} dx={dx} renglon={renglon} colorAgua={props.agua} lamina={lPiscina} reflejos={props.reflejos_agua} /> : <Papel color={pal.papel} envejecido={0.3} />}
       {/* dónde y cuándo: el país en tinta sobre la página y la cámara que se acerca a la ciudad; el agua lo cubre */}
       {!props.vectorcraft && props.lugar && t >= tLugar - 0.1 && renglon > 0.02 ? (
         <AbsoluteFill style={{ opacity: renglon }}>

@@ -38,7 +38,7 @@ marca); «cuánto pesa» en s05 1,01 → 1,06 (tampoco).
 |---|---|---|---|---|
 | 1 | s03, 2:22 | La pregunta de la serie es una esquina que se despega, ~2,5 s antes del corte | Despegar el afiche entero, que asome uno viejo igual de prometedor (ilustrativo), quietud ~2 s antes del corte | **Hecho** |
 | 2 | s06, 4:47–5:15 | El grabado del guano quedaba 0,74 s a pantalla completa; 7 s de libro cerrado sin texto; el monto se inflaba antes de que llegara su vale | Reparto nuevo de los beats y fichas del libro (abajo) | **Hecho** |
-| 3 | s02 | La escena de intensidad 1 es la más activa y saturada del video | Calmar el agua (amplitud de reflejos y cáusticas), una sola variable | Pendiente |
+| 3 | s02 | La escena de intensidad 1 es la más activa y saturada del video | Calmar el agua (amplitud de reflejos y cáusticas), una sola variable | **Hecho** (B: velocidad; C: reflejos) |
 | 4 | s03 | El rojo se gasta en el muro (7,1 % durante 30 s) antes del rojo de la culpa en s06 (2,9 %) | Apagar primero los recortes rojos del fondo del muro; el afiche aprobado lo decide Gerson | **Hecho** |
 | 5 | s01, 1:07–1:20 | La línea de tiempo no se lee en miniatura (luminancia 25 contra fondo 25) | Escalar la línea y sus rótulos, aclararla | Pendiente |
 | 6 | s04, s05, s06 | Pizarra casi vacía ~10 s con «Pease» y «Braudel» diminutos; «cuánto pesa» sin cambio visible; libro abierto con renglones ilegibles (§2.9) | Fichas grandes de los nombres; escalón de la pendiente más grande; texto legible en el libro | Pendiente |
@@ -112,6 +112,39 @@ Decisión de Gerson: bajarlo en la escena, sin tocar la lámina. Prop `afiches_s
 
 El valor del panfleto no cambia (en grises se ve igual) y su texto se sigue leyendo. Ahora el único rojo
 fuerte del muro es el título del volante, la crítica, y s03 queda por debajo del rojo de la pregunta de s06.
+
+## Hoja 3, versión B: la cámara nada más despacio (s02)
+
+Una sola variable: la velocidad de la cámara sobre el agua (prop `velocidad_agua` en `Presentacion`,
+por defecto 620 px/s como en el 000) pasa a **280 px/s** en el 001. Con ella corren los reflejos y las
+cáusticas; el frenado con `frenar` se conserva. El azul del agua no se toca (excepción declarada).
+
+| Medida, tramo de la piscina (9,5–17,4 s de la escena) | A (620 px/s) | B (280 px/s) |
+|---|---|---|
+| Actividad a escala de masas (cuadro reducido a 120 px y suavizado) | 0,72 | **0,55** (−24 %) |
+| Actividad a escala fina (cuadro a 480 px) | 4,36 | 4,12 (−5 %) |
+| Mediana de la escena entera | 4,27 | 3,85 |
+
+Lectura: el desplazamiento grande se calma, pero lo que sigue «hirviendo» es la textura de los reflejos
+(líneas finas y claras sobre todo el agua): cualquier corrimiento de una línea fina da casi la misma
+diferencia, sea rápido o lento. s02 sigue por encima de s03 a escala fina (3,85 contra 1,9).
+
+### Versión C: reflejos al 45 % (sobre B)
+
+Segunda variable, con la velocidad de B fija: la capa `Reflejos` de la lámina a opacidad **0,45** (prop
+`reflejos_agua` en `Presentacion`, que pasa a `Piscina`; por defecto 1, y la piscina dibujada del 000 no
+tiene esa capa).
+
+| Medida, tramo de la piscina | A | B | C |
+|---|---|---|---|
+| Actividad fina | 4,36 | 4,12 | **3,38** |
+| Actividad de masas | 0,72 | 0,55 | 0,54 |
+| Mediana de la escena entera | 4,11 | 3,71 | **3,21** |
+
+En total, de A a C: −22 % de actividad fina y −25 % de masas. El agua sigue siendo agua (las ondas se ven,
+más suaves). Lo que queda moviéndose son las cáusticas, el vaivén de las corcheras y el agua que se ve a
+través de las letras del nombre. s02 sigue por encima de s03 (1,9): bajar más pediría tocar las cáusticas,
+una tercera variable que no se probó.
 
 ## Guion de prueba con otra persona
 
