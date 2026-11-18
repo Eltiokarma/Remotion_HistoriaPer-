@@ -1,5 +1,7 @@
 # Storyboard del episodio 002
 
+La [versión ilustrada de trabajo](diseno/storyboard-visual/README.md) distribuye las cinco escenas en 32 mini escenas y 96 encuadres. Cada fila tiene indicaciones de movimiento, luz y efectos. La secuencia de abajo sirve de guía para la voz y las relaciones históricas.
+
 Estado: borrador para revisar junto al [guion por ideas](guion.md). Las diez ideas se agrupan en cinco escenas largas y 24 momentos. El [desarrollo visual en VectorCraft](diseno/escenas-largas/README.md) reúne 32 láminas y 97 estados de continuidad, con acciones, pausas y enlaces. Los tiempos se ajustarán con la locución; la aprobación visual y la integración siguen pendientes.
 
 ## Cómo se reparte la información

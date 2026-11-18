@@ -1,5 +1,7 @@
 # 3. El expediente de Novoa
 
+La [revisión ilustrada completa](../../storyboard-visual/revision-novoa/escena-completa/README.md) reúne las seis láminas actualizadas, las piezas para Remotion y las indicaciones de efectos para cada momento del guion.
+
 Una escena larga, con 6 momentos, desarrollada en 6 láminas y 18 estados dibujados. Las láminas dividen la revisión; no fijan cortes ni duraciones. Borrador pendiente de Gerson.
 
 - [PDF completo](escena-03.pdf)

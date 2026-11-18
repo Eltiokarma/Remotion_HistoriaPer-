@@ -1,5 +1,7 @@
 # 1. Las islas y el país
 
+El [storyboard detallado de la escena 1](../../storyboard-visual/revision-islas/README.md) reúne la revisión más reciente en siete láminas, 26 encuadres y 22 piezas nuevas. Incluye el recorrido Perú–Pisco–Chincha y la salida hacia 2A.
+
 Una escena larga, con 4 momentos, desarrollada en 7 láminas y 21 estados dibujados. Las láminas dividen la revisión; no fijan cortes ni duraciones. Borrador pendiente de Gerson.
 
 - [PDF completo](escena-01.pdf)

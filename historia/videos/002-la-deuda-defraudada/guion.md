@@ -2,6 +2,10 @@
 
 Estado: borrador por ideas principales para revisión con Gerson. Las formulaciones son propuestas de narración; no son citas históricas textuales. La numeración conserva el paso 0 acordado.
 
+El [storyboard ilustrado](diseno/storyboard-visual/README.md) lleva cada tramo a imagen. Las [indicaciones de cámara y efectos](diseno/storyboard-visual/PLANOS-Y-EFECTOS.md) acompañan las acciones y sus pausas.
+
+El [manuscrito de locución](manuscrito.md) reúne una versión de lectura por escena larga.
+
 Pregunta que organiza el episodio: cómo se aprovechó el pago de deudas del Estado para obtener beneficios privados.
 
 La secuencia parte del contexto, presenta un procedimiento que tenía una finalidad pública, sigue su manipulación y vuelve a los documentos para enlazar con el episodio 003, «¿Se puede medir la corrupción?». Las fuentes y cautelas están en [fuentes.md](fuentes.md).

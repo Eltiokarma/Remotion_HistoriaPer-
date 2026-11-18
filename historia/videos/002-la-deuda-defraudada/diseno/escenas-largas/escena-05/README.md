@@ -1,5 +1,7 @@
 # 5. Del expediente al método de Quiroz
 
+La [revisión ilustrada completa](../../storyboard-visual/revision-metodo/README.md) retoma los informes de 4E.3 y reúne cinco láminas, las piezas editables, la prueba de cámara y el puente al episodio 003.
+
 Una escena larga, con 3 momentos, desarrollada en 5 láminas y 15 estados dibujados. Las láminas dividen la revisión; no fijan cortes ni duraciones. Borrador pendiente de Gerson.
 
 - [PDF completo](escena-05.pdf)
