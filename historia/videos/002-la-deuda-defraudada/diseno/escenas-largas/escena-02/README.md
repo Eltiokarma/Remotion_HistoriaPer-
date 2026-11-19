@@ -1,5 +1,7 @@
 # 2. El recorrido de un reclamo
 
+La [revisión ilustrada de detalle](../../storyboard-visual/revision-reclamo/README.md) contiene las seis láminas actualizadas, los 24 encuadres, la prueba de movimiento de 2D y las piezas separadas para Remotion.
+
 Una escena larga, con 6 momentos, desarrollada en 6 láminas y 19 estados dibujados. Las láminas dividen la revisión; no fijan cortes ni duraciones. Borrador pendiente de Gerson.
 
 - [PDF completo](escena-02.pdf)
@@ -32,7 +34,3 @@ Revisión 2 solicitada por Gerson. Las seis láminas conservan 19 estados: folio
 ## Dirección de movimiento y efectos
 
 La [dirección de las cinco escenas](../MOVIMIENTO-Y-EFECTOS.md) fija cámara, foco, acción, capas, sonido y comprobación para todos los momentos de esta escena. [Datos por estado](../direccion-movimiento.json). Es una propuesta para integración; no una animación comprobada.
-
-## Recursos vectoriales separados (17 de noviembre de 2026)
-
-Con el reparto nuevo (personajes PNG de ChatGPT, objetos SVG de Claude, montaje en Remotion), la pizarra, los rótulos de tiza, los soportes, el vale, las monedas, el sobre, las fichas de función y el expediente de Novoa se rehicieron como piezas sueltas en [recursos-escena02](../../recursos-escena02/README.md): 17 recursos, 49 SVG, dos composiciones de prueba, hoja de montaje y lista de imágenes para ChatGPT. El folio del reclamo se reutiliza de la escena 1. Estas láminas quedan como referencia de continuidad. Borrador pendiente de Gerson.

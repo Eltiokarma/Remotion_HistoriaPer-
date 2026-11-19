@@ -1,5 +1,7 @@
 # 3. El expediente de Novoa
 
+La [revisión ilustrada completa](../../storyboard-visual/revision-novoa/escena-completa/README.md) reúne las seis láminas actualizadas, las piezas para Remotion y las indicaciones de efectos para cada momento del guion.
+
 Una escena larga, con 6 momentos, desarrollada en 6 láminas y 18 estados dibujados. Las láminas dividen la revisión; no fijan cortes ni duraciones. Borrador pendiente de Gerson.
 
 - [PDF completo](escena-03.pdf)
@@ -28,7 +30,3 @@ No se generó video ni se validó movimiento en Remotion. [Las cinco escenas](..
 La [dirección de las cinco escenas](../MOVIMIENTO-Y-EFECTOS.md) fija cámara, foco, acción, capas, sonido y comprobación para todos los momentos de esta escena. [Datos por estado](../direccion-movimiento.json). Es una propuesta para integración; no una animación comprobada.
 
 [Revisión visual de Novoa y ajustes pendientes](REVISION.md).
-
-## Recursos vectoriales separados (17 de noviembre de 2026)
-
-Con el reparto nuevo (personajes PNG de ChatGPT, objetos SVG de Claude, montaje en Remotion), el despacho, los folios del caso, las placas de nombre y función y los conectores se rehicieron como piezas sueltas en [recursos-escena03](../../recursos-escena03/README.md): 19 recursos, 82 SVG, dos composiciones de prueba, hoja de montaje y lista de imágenes para ChatGPT. Elías queda a la derecha en 3B y 3C, y los folios de 1851 y 1852 ya no llevan la carpeta NOVOA. Estas láminas quedan como referencia de continuidad. Borrador pendiente de Gerson.

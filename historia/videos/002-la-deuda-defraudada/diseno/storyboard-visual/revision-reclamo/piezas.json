@@ -1,0 +1,218 @@
+[
+  {
+    "id": "mesa-cenital-reclamo",
+    "archivo": "capas/mesa-cenital-reclamo.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Base común de 2A–2F. Mover el foco y los papeles sobre la madera fija."
+  },
+  {
+    "id": "oficina-reclamo",
+    "archivo": "capas/oficina-reclamo.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Fondo de las tres funciones. Montar los bustos sobre el borde de la mesa, con base en y=400."
+  },
+  {
+    "id": "libro-ley-consolidacion",
+    "archivo": "capas/libro-ley-consolidacion.svg",
+    "lienzo": [
+      390,
+      451
+    ],
+    "uso": "Cubierta y canto. Revelar la fecha en 2A."
+  },
+  {
+    "id": "soporte-origen",
+    "archivo": "capas/soporte-origen.svg",
+    "lienzo": [
+      419,
+      161
+    ],
+    "uso": "Desplazar el foco del origen al respaldo."
+  },
+  {
+    "id": "soporte-acreedor",
+    "archivo": "capas/soporte-acreedor.svg",
+    "lienzo": [
+      419,
+      161
+    ],
+    "uso": "Aparear acreedor y soporte."
+  },
+  {
+    "id": "soporte-monto",
+    "archivo": "capas/soporte-monto.svg",
+    "lienzo": [
+      419,
+      161
+    ],
+    "uso": "Aparear monto y comprobantes."
+  },
+  {
+    "id": "lupa-cotejo",
+    "archivo": "capas/lupa-cotejo.svg",
+    "lienzo": [
+      232,
+      242
+    ],
+    "uso": "Mover por el mango. Mantener los campos legibles."
+  },
+  {
+    "id": "folio-reconocido",
+    "archivo": "capas/folio-reconocido.svg",
+    "lienzo": [
+      656,
+      568
+    ],
+    "uso": "Mismo folio de pestaña roja con el estado del ejemplo."
+  },
+  {
+    "id": "vale-deuda-interna",
+    "archivo": "capas/vale-deuda-interna.svg",
+    "lienzo": [
+      603,
+      363
+    ],
+    "uso": "Desplazar como documento independiente del folio."
+  },
+  {
+    "id": "sobre-simbolico-pago",
+    "archivo": "capas/sobre-simbolico-pago.svg",
+    "lienzo": [
+      401,
+      228
+    ],
+    "uso": "Pago de derecha a izquierda. Ancla de base en el centro."
+  },
+  {
+    "id": "oficina-traspaso",
+    "archivo": "capas/oficina-traspaso.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Paredes, muebles, ventana y luz en grupos separados para el acercamiento."
+  },
+  {
+    "id": "escritorio-traspaso",
+    "archivo": "capas/escritorio-traspaso.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Mesa de perspectiva del plano general. Colocar folio y sobre encima."
+  },
+  {
+    "id": "reclamante-cuerpo-entero",
+    "archivo": "capas/reclamante-cuerpo-entero.svg",
+    "lienzo": [
+      900,
+      1200
+    ],
+    "uso": "Vestido vino y chal. El brazo cercano conserva grupos de hombro y codo."
+  },
+  {
+    "id": "comprador-cuerpo-entero",
+    "archivo": "capas/comprador-cuerpo-entero.svg",
+    "lienzo": [
+      900,
+      1200
+    ],
+    "uso": "Casaca azul. Reflejar al colocar a la derecha. El brazo cercano conserva hombro y codo."
+  },
+  {
+    "id": "reclamante-puno-bordado-agarre",
+    "archivo": "capas/reclamante-puno-bordado-agarre.svg",
+    "lienzo": [
+      645,
+      345
+    ],
+    "uso": "Contacto en (603,92). Montar base detrás del folio y pulgar delante."
+  },
+  {
+    "id": "reclamante-puno-bordado-abierto",
+    "archivo": "capas/reclamante-puno-bordado-abierto.svg",
+    "lienzo": [
+      645,
+      345
+    ],
+    "uso": "Mano abierta que recibe el sobre."
+  },
+  {
+    "id": "comprador-puno-botones-agarre",
+    "archivo": "capas/comprador-puno-botones-agarre.svg",
+    "lienzo": [
+      645,
+      345
+    ],
+    "uso": "Contacto en (603,92). Reflejar y montar base detrás del folio y pulgar delante."
+  },
+  {
+    "id": "comprador-puno-botones-abierto",
+    "archivo": "capas/comprador-puno-botones-abierto.svg",
+    "lienzo": [
+      645,
+      345
+    ],
+    "uso": "Reflejar. Mantener muñeca al alternar con el agarre."
+  },
+  {
+    "id": "mesa-cenital-traspaso",
+    "archivo": "capas/mesa-cenital-traspaso.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Vista superior con el mismo tintero para el cruce del sobre."
+  },
+  {
+    "id": "trazo-revision-eludida",
+    "archivo": "capas/trazo-revision-eludida.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Revelar de izquierda a derecha durante 2E."
+  },
+  {
+    "id": "ficha-comision-gestion",
+    "archivo": "capas/ficha-comision-gestion.svg",
+    "lienzo": [
+      405,
+      165
+    ],
+    "uso": "Primera gestión en 2E."
+  },
+  {
+    "id": "ficha-cotejo-pendiente",
+    "archivo": "capas/ficha-cotejo-pendiente.svg",
+    "lienzo": [
+      360,
+      166
+    ],
+    "uso": "Mantener visible antes del trazo."
+  },
+  {
+    "id": "ficha-reconocimiento-favorecido",
+    "archivo": "capas/ficha-reconocimiento-favorecido.svg",
+    "lienzo": [
+      497,
+      166
+    ],
+    "uso": "Resultado del ejemplo."
+  },
+  {
+    "id": "nota-comision-novoa",
+    "archivo": "capas/nota-comision-novoa.svg",
+    "lienzo": [
+      480,
+      189
+    ],
+    "uso": "Aparece con la carpeta distinta de Novoa."
+  }
+]

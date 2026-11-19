@@ -1453,6 +1453,33 @@
         "render_s": null,
         "maquina": null
       }
+    },
+    {
+      "id": "e2-storyboard-adaptado",
+      "fase": "e2",
+      "titulo": "Storyboard del 0·2 adaptado a la locución nueva, en HTML con láminas, encuadres, efectos, sonido y transiciones",
+      "entregable": "historia/videos/002-la-deuda-defraudada/storyboard.json (adaptación: 39 tramos sobre las 32 mini escenas), storyboard.py → storyboard.html y storyboard.md; manuscrito.py → manuscrito.md; diseno/storyboard-visual traído de la rama episodio-002-material-remotion",
+      "estado": "en_curso",
+      "depende_de": [
+        "e2-guion-locucion"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-19",
+        "fin": null
+      },
+      "bloqueo": "Propuesta del agente: falta la revisión de Gerson y dibujar las piezas nuevas (ficha de abolición, Mendiburu, viaje a Londres, mancha del lavado, barcos frente a las islas, fichas de fuga, rótulos con espacio de miles).",
+      "evidencia": [
+        "historia/videos/002-la-deuda-defraudada/storyboard.json",
+        "historia/videos/002-la-deuda-defraudada/storyboard.html",
+        "historia/videos/002-la-deuda-defraudada/storyboard.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
     }
   ]
 }

@@ -12,7 +12,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **28** · 🔄 en curso: **8** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **28** · 🔄 en curso: **9** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -27,6 +27,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `e2-recursos-escena02` Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-recursos-escena03` Recursos vectoriales de la escena 3 «El expediente de Novoa» (despacho, folios del caso, rótulos y conectores): Dibujos entregados y revisados por el agente; falta la revisión de Gerson (retratos o figuras para Echenique y Torrico; frase del storyboard sobre Torrico), generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-guion-locucion` Guion del 0·2 escrito como locución completa, con el criterio del Escribidor Escribano: Falta la revisión de Gerson (gancho nuevo, palabra del episodio, datos agregados) y resolver los [VERIFICAR]; después, voz provisional, escaleta y ajuste del storyboard.
+- `e2-storyboard-adaptado` Storyboard del 0·2 adaptado a la locución nueva, en HTML con láminas, encuadres, efectos, sonido y transiciones: Propuesta del agente: falta la revisión de Gerson y dibujar las piezas nuevas (ficha de abolición, Mendiburu, viaje a Londres, mancha del lavado, barcos frente a las islas, fichas de fuga, rótulos con espacio de miles).
 
 ## Vista temporal
 
@@ -81,7 +82,7 @@ gantt
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
-Sin fecha (21): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso).
+Sin fecha (22): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso).
 
 ## Tareas
 
@@ -436,6 +437,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Falta la revisión de Gerson (gancho nuevo, palabra del episodio, datos agregados) y resolver los [VERIFICAR]; después, voz provisional, escaleta y ajuste del storyboard.
   - Evidencia: [002-la-deuda-defraudada/guion.md](historia/videos/002-la-deuda-defraudada/guion.md) · [002-la-deuda-defraudada/fuentes.md](historia/videos/002-la-deuda-defraudada/fuentes.md)
+- [ ] **Storyboard del 0·2 adaptado a la locución nueva, en HTML con láminas, encuadres, efectos, sonido y transiciones** `e2-storyboard-adaptado` — 🔄 en curso
+  - Entregable: historia/videos/002-la-deuda-defraudada/storyboard.json (adaptación: 39 tramos sobre las 32 mini escenas), storyboard.py → storyboard.html y storyboard.md; manuscrito.py → manuscrito.md; diseno/storyboard-visual traído de la rama episodio-002-material-remotion
+  - Depende de: `e2-guion-locucion`
+  - Prevista: — · Real: 2026-11-19 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Bloqueo: Propuesta del agente: falta la revisión de Gerson y dibujar las piezas nuevas (ficha de abolición, Mendiburu, viaje a Londres, mancha del lavado, barcos frente a las islas, fichas de fuga, rótulos con espacio de miles).
+  - Evidencia: [002-la-deuda-defraudada/storyboard.json](historia/videos/002-la-deuda-defraudada/storyboard.json) · [002-la-deuda-defraudada/storyboard.html](historia/videos/002-la-deuda-defraudada/storyboard.html) · [002-la-deuda-defraudada/storyboard.md](historia/videos/002-la-deuda-defraudada/storyboard.md)
 
 ## Máquinas
 

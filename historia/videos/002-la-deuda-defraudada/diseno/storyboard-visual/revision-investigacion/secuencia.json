@@ -1,0 +1,266 @@
+[
+  {
+    "id": "4A.1",
+    "lamina": "lamina-01.svg",
+    "cambio": "Del expediente al conjunto de la deuda.",
+    "enlace": "Seguir un vale genérico entre tenedores.",
+    "piezas": [
+      "total-1852"
+    ],
+    "recursos_reutilizados": [
+      "../revision-novoa/escena-completa/enlace-4a-1851.svg",
+      "../revision-novoa/escena-completa/capas/total-1851.svg",
+      "../revision-novoa/escena-completa/capas/archivo-conjunto.svg",
+      "../revision-reclamo/capas/vale-deuda-interna.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Retomar el archivo de 1851",
+        "camara_y_accion": "Conservar el último cuadro de la escena 3.",
+        "efecto_y_pausa": "Sostener 1851 y cinco millones antes de comparar."
+      },
+      {
+        "plano": "La deuda reconocida en 1852",
+        "camara_y_accion": "Abrir el espacio de lectura y asentar la segunda ficha.",
+        "efecto_y_pausa": "Leer ambos años con sus montos y la fuente."
+      },
+      {
+        "plano": "Un vale genérico",
+        "camara_y_accion": "Retirar las fichas y recuperar el marco doble.",
+        "efecto_y_pausa": "Acercar la cámara al título para pasar a la mesa."
+      }
+    ]
+  },
+  {
+    "id": "4A.2",
+    "lamina": "lamina-02.svg",
+    "cambio": "Cambia el tenedor del mismo título.",
+    "enlace": "Recuperar ese vale como punto de partida del canje.",
+    "piezas": [
+      "tenedor-anterior-agarre",
+      "nuevo-tenedor-apertura",
+      "nuevo-tenedor-agarre"
+    ],
+    "recursos_reutilizados": [
+      "../revision-reclamo/capas/mesa-cenital-traspaso.svg",
+      "../revision-reclamo/capas/vale-deuda-interna.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "El primer tenedor conserva el vale",
+        "camara_y_accion": "Cenital con la cámara fija y espacio a la derecha.",
+        "efecto_y_pausa": "Conservar el marco y el rótulo del título."
+      },
+      {
+        "plano": "Se acerca la mano receptora",
+        "camara_y_accion": "Flexionar codo y muñeca con la misma longitud.",
+        "efecto_y_pausa": "La luz sigue el borde que se va a sujetar."
+      },
+      {
+        "plano": "Agarre compartido",
+        "camara_y_accion": "Mantener las dos pinzas unidas a los bordes.",
+        "efecto_y_pausa": "Dar un leve balanceo y roce de papel."
+      },
+      {
+        "plano": "El nuevo tenedor lo sostiene",
+        "camara_y_accion": "Retirar la primera mano después del contacto.",
+        "efecto_y_pausa": "Asentar el vale y sostener la lectura."
+      }
+    ]
+  },
+  {
+    "id": "4B",
+    "lamina": "lamina-03.svg",
+    "cambio": "Parte de los vales se convierte antes de 1855.",
+    "enlace": "Volver a Elías y a sus cartas de 1853.",
+    "piezas": [
+      "bono-externo"
+    ],
+    "recursos_reutilizados": [
+      "../revision-novoa/capas/mesa-cenital.svg",
+      "../revision-reclamo/capas/vale-deuda-interna.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Vale de deuda interna",
+        "camara_y_accion": "Mantener el título visible en el lado izquierdo.",
+        "efecto_y_pausa": "Pausar sobre el derecho de cobro."
+      },
+      {
+        "plano": "Canje de parte de los vales",
+        "camara_y_accion": "Dibujar el trazo hacia el espacio libre.",
+        "efecto_y_pausa": "Revelar «Canje parcial» con el conector."
+      },
+      {
+        "plano": "Bono de deuda externa",
+        "camara_y_accion": "Hacer entrar el bono y conservar el vale.",
+        "efecto_y_pausa": "Asentar la hoja y dejar leer ambos rótulos."
+      }
+    ]
+  },
+  {
+    "id": "4C",
+    "lamina": "lamina-04.svg",
+    "cambio": "La denuncia se lee junto a su participación en el negocio.",
+    "enlace": "Pasar del conflicto al cambio de gobierno.",
+    "piezas": [
+      "doble-funcion-elias",
+      "carta-12-agosto",
+      "carta-16-agosto"
+    ],
+    "recursos_reutilizados": [
+      "../revision-novoa/escena-completa/capas/archivo-conjunto.svg",
+      "../revision-novoa/capas/mesa-cenital.svg",
+      "../../personajes-1850/bustos/busto-intermediario-atencion.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Volver a Domingo Elías",
+        "camara_y_accion": "Conservar escala, ropa y posición de la escena 3.",
+        "efecto_y_pausa": "Dar tiempo a la función antes de las fechas."
+      },
+      {
+        "plano": "La carta del 12 de agosto",
+        "camara_y_accion": "Cortar a la mesa cuando se nombre El Comercio.",
+        "efecto_y_pausa": "Roce de hoja y foco de lectura."
+      },
+      {
+        "plano": "La carta del 16 de agosto",
+        "camara_y_accion": "Entrar la segunda carta y sostener las dos.",
+        "efecto_y_pausa": "Retomar su doble papel en la voz."
+      }
+    ]
+  },
+  {
+    "id": "4D",
+    "lamina": "lamina-05.svg",
+    "cambio": "Examinar los documentos que llevaron a la emisión.",
+    "enlace": "Pasar de las etapas a lo que encontró la junta.",
+    "piezas": [
+      "archivo-junta",
+      "junta-fiscal",
+      "cambio-gobierno",
+      "antecedentes",
+      "aprobacion",
+      "emision"
+    ],
+    "recursos_reutilizados": [
+      "../revision-novoa/escena-completa/capas/archivo-conjunto.svg",
+      "../revision-novoa/capas/mesa-cenital.svg",
+      "../revision-reclamo/capas/vale-deuda-interna.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Cambia el gobierno",
+        "camara_y_accion": "Mantener el edificio y el vale como anclas.",
+        "efecto_y_pausa": "Mover la ficha política y sostener 1855."
+      },
+      {
+        "plano": "La junta abre el archivo",
+        "camara_y_accion": "Acercar de los estantes al cajón y su ficha.",
+        "efecto_y_pausa": "Sonido corto de madera y legajo."
+      },
+      {
+        "plano": "Antecedentes, aprobación y emisión",
+        "camara_y_accion": "Cenital fijo sobre los tres papeles.",
+        "efecto_y_pausa": "Mover un foco de izquierda a derecha."
+      }
+    ]
+  },
+  {
+    "id": "4E.1",
+    "lamina": "lamina-06.svg",
+    "cambio": "Distinguir expedientes observados, monto y expedientes robados.",
+    "enlace": "Pasar a las medidas sobre el servicio y el canje.",
+    "piezas": [
+      "expedientes-observados",
+      "monto-observado",
+      "expedientes-robados"
+    ],
+    "recursos_reutilizados": [
+      "../revision-novoa/capas/mesa-cenital.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "141 expedientes irregulares o ilegales",
+        "camara_y_accion": "Revelar el recuento con su calificación.",
+        "efecto_y_pausa": "Cámara quieta y pausa de lectura."
+      },
+      {
+        "plano": "12,2 millones de pesos vinculados",
+        "camara_y_accion": "Asentar el monto al lado de los expedientes.",
+        "efecto_y_pausa": "Conservar la nota de Quiroz."
+      },
+      {
+        "plano": "Cuatro expedientes robados",
+        "camara_y_accion": "Bajar el foco a los cuatro espacios vacíos.",
+        "efecto_y_pausa": "Dejar este recuento separado del monto."
+      }
+    ]
+  },
+  {
+    "id": "4E.2",
+    "lamina": "lamina-07.svg",
+    "cambio": "Seguir las medidas, los argumentos y las presiones.",
+    "enlace": "Mantener los títulos al presentar la restauración.",
+    "piezas": [
+      "bono-externo",
+      "argumento-tenedores",
+      "argumento-junta"
+    ],
+    "recursos_reutilizados": [
+      "../revision-novoa/capas/mesa-cenital.svg",
+      "../revision-reclamo/capas/vale-deuda-interna.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Suspensión y pausa de conversión",
+        "camara_y_accion": "Leer primero la fecha y después las medidas.",
+        "efecto_y_pausa": "Detener el trazo y bajar la luz de los títulos."
+      },
+      {
+        "plano": "Las dos posiciones",
+        "camara_y_accion": "Recorrer la ficha de tenedores y la de la junta.",
+        "efecto_y_pausa": "Sostener ambas con luz pareja."
+      },
+      {
+        "plano": "Presiones hacia las autoridades",
+        "camara_y_accion": "Mantener el Estado a la derecha.",
+        "efecto_y_pausa": "Dibujar una flecha por grupo en orden de voz."
+      }
+    ]
+  },
+  {
+    "id": "4E.3",
+    "lamina": "lamina-08.svg",
+    "cambio": "La rehabilitación financiera deja los informes como huellas.",
+    "enlace": "Abrir 5A.1 desde el circuito y la finalidad del crédito.",
+    "piezas": [
+      "bono-externo",
+      "examen-origen",
+      "informes-junta",
+      "antecedentes"
+    ],
+    "recursos_reutilizados": [
+      "../revision-novoa/capas/mesa-cenital.svg",
+      "../revision-reclamo/capas/vale-deuda-interna.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "11 de marzo de 1857",
+        "camara_y_accion": "Revelar la fecha antes de reactivar el conector.",
+        "efecto_y_pausa": "Recuperar luz sobre los acuerdos."
+      },
+      {
+        "plano": "El origen sigue bajo examen",
+        "camara_y_accion": "Mantener el título y los antecedentes juntos.",
+        "efecto_y_pausa": "Igualar luz sin borrar la ficha del origen."
+      },
+      {
+        "plano": "Quedan los informes de la junta",
+        "camara_y_accion": "Acercar a los informes y sostener el fondo.",
+        "efecto_y_pausa": "Roce de papel antes de volver al circuito."
+      }
+    ]
+  }
+]

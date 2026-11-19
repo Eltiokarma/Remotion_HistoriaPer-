@@ -1,6 +1,6 @@
 # La deuda defraudada · Manuscrito de locución
 
-Generado desde [guion.md](guion.md) con `manuscrito.py`; no se edita a mano. Las marcas `/` (pausa corta) y `//` (pausa de un segundo o más) salen de las pausas del guion.
+Generado desde [guion.md](guion.md) con `manuscrito.py`; no se edita a mano. `/` es una pausa corta y `//`, una de un segundo o más. Con láminas, encuadres y sonido: [storyboard.html](storyboard.html).
 
 ## 0. El gancho
 

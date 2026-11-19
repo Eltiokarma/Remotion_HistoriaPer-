@@ -1,0 +1,247 @@
+[
+  {
+    "id": "2A",
+    "lamina": "lamina-01.svg",
+    "cambio": "De una solicitud particular a la regla que organiza el reconocimiento.",
+    "enlace": "Volver al folio para contrastar los campos.",
+    "piezas_nuevas": [
+      "mesa-cenital-reclamo",
+      "libro-ley-consolidacion"
+    ],
+    "recursos_reutilizados": [
+      "../revision-islas/folio-salida.svg",
+      "../revision-islas/capas/documento-prestamo.svg",
+      "../revision-islas/capas/documento-bienes.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "El mismo folio",
+        "camara_y_accion": "Retomar la posición exacta del cierre anterior.",
+        "efecto_y_pausa": "Dar tiempo a la pestaña y al estado Por revisar."
+      },
+      {
+        "plano": "Volver a las obligaciones",
+        "camara_y_accion": "Abrir el encuadre hacia los dos ejemplos ya vistos.",
+        "efecto_y_pausa": "Iluminar préstamo y bienes por turnos."
+      },
+      {
+        "plano": "La ley de 1850",
+        "camara_y_accion": "Entrar la ley junto al mismo papel.",
+        "efecto_y_pausa": "Pausa para leer la fecha y el propósito en la voz."
+      }
+    ]
+  },
+  {
+    "id": "2B",
+    "lamina": "lamina-02.svg",
+    "cambio": "De lo pedido a lo reconocido tras revisar los respaldos.",
+    "enlace": "Conservar la pestaña roja al presentar el título separado.",
+    "piezas_nuevas": [
+      "mesa-cenital-reclamo",
+      "soporte-origen",
+      "soporte-acreedor",
+      "soporte-monto",
+      "lupa-cotejo",
+      "folio-reconocido"
+    ],
+    "recursos_reutilizados": [
+      "../revision-islas/capas/folio-reclamo.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Origen del reclamo",
+        "camara_y_accion": "Cenital fijo. Unir el origen con su respaldo.",
+        "efecto_y_pausa": "Foco cálido en la relación. El resto baja."
+      },
+      {
+        "plano": "Quién es el acreedor",
+        "camara_y_accion": "Mover la lupa al nombre del acreedor.",
+        "efecto_y_pausa": "Desplazar luz y línea al segundo soporte."
+      },
+      {
+        "plano": "Qué monto se sustenta",
+        "camara_y_accion": "Pasar al campo del monto y sus comprobantes.",
+        "efecto_y_pausa": "Pausa en la comparación, con cámara quieta."
+      },
+      {
+        "plano": "El reclamo queda reconocido",
+        "camara_y_accion": "Revelar el cambio de estado después del cotejo.",
+        "efecto_y_pausa": "Asentar el folio. Mantener legible el resultado."
+      }
+    ]
+  },
+  {
+    "id": "2C",
+    "lamina": "lamina-03.svg",
+    "cambio": "Del reclamo comprobado al derecho de cobro documentado.",
+    "enlace": "Volver al momento anterior al reconocimiento para ver la compra.",
+    "piezas_nuevas": [
+      "mesa-cenital-reclamo",
+      "libro-ley-consolidacion",
+      "folio-reconocido",
+      "vale-deuda-interna"
+    ],
+    "recursos_reutilizados": [
+      "../revision-islas/capas/folio-reclamo.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Primero se reconoce la deuda",
+        "camara_y_accion": "Sostener el folio reconocido.",
+        "efecto_y_pausa": "Retomar el libro de la ley como referencia."
+      },
+      {
+        "plano": "Aparece el vale",
+        "camara_y_accion": "Desplazar el título hacia el lado del acreedor.",
+        "efecto_y_pausa": "Sombra al asentarse. Marco doble legible."
+      },
+      {
+        "plano": "El cobro queda pendiente",
+        "camara_y_accion": "Mantener juntos el folio y el vale.",
+        "efecto_y_pausa": "Foco en derecho de cobro y pausa de lectura."
+      }
+    ]
+  },
+  {
+    "id": "2D",
+    "lamina": "lamina-04.svg",
+    "cambio": "De una solicitud en manos del reclamante a un papel comprado por otro.",
+    "enlace": "Seguir al comprador hacia la gestión del reconocimiento.",
+    "piezas_nuevas": [
+      "mesa-cenital-reclamo",
+      "sobre-simbolico-pago",
+      "oficina-traspaso",
+      "escritorio-traspaso",
+      "reclamante-cuerpo-entero",
+      "comprador-cuerpo-entero",
+      "reclamante-puno-bordado-agarre",
+      "reclamante-puno-bordado-abierto",
+      "comprador-puno-botones-agarre",
+      "comprador-puno-botones-abierto",
+      "mesa-cenital-traspaso"
+    ],
+    "recursos_reutilizados": [
+      "../revision-islas/capas/folio-reclamo.svg",
+      "../../personajes-1850/reclamante/rig.json",
+      "../../personajes-1850/comerciante/rig.json"
+    ],
+    "encuadres": [
+      {
+        "plano": "Presentar a ambos de cuerpo entero",
+        "camara_y_accion": "El folio a la izquierda y el sobre a la derecha.",
+        "efecto_y_pausa": "Luz de ventana sobre la madera y las figuras."
+      },
+      {
+        "plano": "Acercarse con el gesto",
+        "camara_y_accion": "Empujar la cámara mientras levantan los brazos.",
+        "efecto_y_pausa": "La mesa avanza por delante de los muebles."
+      },
+      {
+        "plano": "Reencuadrar la mesa",
+        "camara_y_accion": "Cerrar el plano con el zoom de la misma toma.",
+        "efecto_y_pausa": "Conservar la longitud del brazo al flexionar el codo."
+      },
+      {
+        "plano": "La palma se acerca al borde",
+        "camara_y_accion": "Pasar al cenital conservando los lados.",
+        "efecto_y_pausa": "El foco sigue el papel hacia la mano."
+      },
+      {
+        "plano": "El agarre compartido",
+        "camara_y_accion": "Ambos pulgares quedan sobre el folio.",
+        "efecto_y_pausa": "Sostener el contacto antes de la retirada."
+      },
+      {
+        "plano": "El papel llega al comprador",
+        "camara_y_accion": "La reclamante suelta y retira el brazo.",
+        "efecto_y_pausa": "El sobre arranca en sentido contrario."
+      },
+      {
+        "plano": "El pago llega a la reclamante",
+        "camara_y_accion": "La mano entra en diagonal para recibir el sobre.",
+        "efecto_y_pausa": "El rastro se desvanece al frenarse el pago."
+      }
+    ]
+  },
+  {
+    "id": "2E",
+    "lamina": "lamina-05.svg",
+    "cambio": "De una gestión que puede ser legítima a una decisión favorecida.",
+    "enlace": "Reunir lo aprendido antes de abrir un expediente distinto.",
+    "piezas_nuevas": [
+      "mesa-cenital-reclamo",
+      "oficina-reclamo",
+      "ficha-comision-gestion",
+      "ficha-cotejo-pendiente",
+      "trazo-revision-eludida",
+      "ficha-reconocimiento-favorecido",
+      "sobre-simbolico-pago",
+      "vale-deuda-interna",
+      "lupa-cotejo"
+    ],
+    "recursos_reutilizados": [
+      "../../personajes-1850/bustos/busto-comerciante-atencion.svg",
+      "../../personajes-1850/bustos/busto-intermediario-atencion.svg",
+      "../../personajes-1850/bustos/busto-funcionario-atencion.svg",
+      "../revision-islas/capas/folio-reclamo.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Presentar las tres funciones",
+        "camara_y_accion": "Comprador, intermediario y funcionario conservan su lugar.",
+        "efecto_y_pausa": "Iluminar cada función cuando se la nombra."
+      },
+      {
+        "plano": "La comprobación queda pendiente",
+        "camara_y_accion": "Mostrar la revisión que se elude en el ejemplo.",
+        "efecto_y_pausa": "El trazo rojo se dibuja por fuera del cotejo."
+      },
+      {
+        "plano": "El trámite recibe trato favorecido",
+        "camara_y_accion": "Mantener visible el sustento pendiente.",
+        "efecto_y_pausa": "El foco pasa al resultado, con cámara quieta."
+      },
+      {
+        "plano": "Precio y valor reconocido",
+        "camara_y_accion": "Comparar sobre y vale en el mismo encuadre.",
+        "efecto_y_pausa": "Dos focos de igual intensidad y tiempo de lectura."
+      }
+    ]
+  },
+  {
+    "id": "2F",
+    "lamina": "lamina-06.svg",
+    "cambio": "Del ejemplo del trámite a la investigación de un caso histórico.",
+    "enlace": "Conservar la nueva carpeta y la identificación de Novoa al entrar a 3A.",
+    "piezas_nuevas": [
+      "mesa-cenital-reclamo",
+      "sobre-simbolico-pago",
+      "vale-deuda-interna",
+      "nota-comision-novoa"
+    ],
+    "recursos_reutilizados": [
+      "../revision-islas/capas/tapa-carpeta.svg",
+      "../revision-novoa/capas/expediente-novoa.svg",
+      "../recursos/novoa/oficina.svg",
+      "../revision-islas/capas/folio-reclamo.svg",
+      "../../personajes-1850/bustos/busto-reclamante-atencion.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Reunir el recorrido",
+        "camara_y_accion": "Abrir para ver reclamo, compra y reconocimiento.",
+        "efecto_y_pausa": "Recorrer los tres objetos con un foco por vez."
+      },
+      {
+        "plano": "Guardar el ejemplo",
+        "camara_y_accion": "Cerrar y desplazar la carpeta genérica.",
+        "efecto_y_pausa": "Sombra de la tapa y pausa breve al cerrarla."
+      },
+      {
+        "plano": "Otro expediente",
+        "camara_y_accion": "Abrir la carpeta de Ignacia Novoa.",
+        "efecto_y_pausa": "Separar el acuerdo legítimo de comisión con Elías."
+      }
+    ]
+  }
+]

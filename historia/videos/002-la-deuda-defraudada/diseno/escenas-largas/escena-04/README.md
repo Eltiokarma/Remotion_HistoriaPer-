@@ -1,5 +1,9 @@
 # 4. La investigación y los vales que siguen circulando
 
+La [revisión ilustrada completa](../../storyboard-visual/revision-investigacion/README.md) desarrolla los ocho tramos en 25 encuadres. Incluye piezas en SVG, efectos por encuadre y una prueba de movimiento del traspaso.
+
+Para abrir 4A.1, retomar el [encuadre de 1851 que cierra la escena 3](../../storyboard-visual/revision-novoa/escena-completa/enlace-4a-1851.svg). La carpeta general lleva la lectura del expediente particular al conjunto de la deuda.
+
 Una escena larga, con 5 momentos, desarrollada en 8 láminas y 24 estados dibujados. Las láminas dividen la revisión; no fijan cortes ni duraciones. Borrador pendiente de Gerson.
 
 - [PDF completo](escena-04.pdf)

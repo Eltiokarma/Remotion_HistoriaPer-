@@ -1,0 +1,182 @@
+[
+  {
+    "id": "finalidad-del-credito",
+    "archivo": "capas/finalidad-del-credito.svg",
+    "lienzo": [
+      676,
+      170
+    ],
+    "uso": "Sostener al volver al propósito del reconocimiento."
+  },
+  {
+    "id": "quienes-quedaron-fuera",
+    "archivo": "capas/quienes-quedaron-fuera.svg",
+    "lienzo": [
+      534,
+      214
+    ],
+    "uso": "Revelar juntos los dos grupos."
+  },
+  {
+    "id": "beneficios-concentrados",
+    "archivo": "capas/beneficios-concentrados.svg",
+    "lienzo": [
+      574,
+      264
+    ],
+    "uso": "Contraponer con los grupos excluidos, sin recuentos."
+  },
+  {
+    "id": "informes-archivo",
+    "archivo": "capas/informes-archivo.svg",
+    "lienzo": [
+      541,
+      281
+    ],
+    "uso": "Miniatura de los informes al reunir el circuito."
+  },
+  {
+    "id": "circuito-1",
+    "archivo": "capas/circuito-1.svg",
+    "lienzo": [
+      220,
+      245
+    ],
+    "uso": "Guano. Sostener el objeto al recorrer el tablero."
+  },
+  {
+    "id": "circuito-2",
+    "archivo": "capas/circuito-2.svg",
+    "lienzo": [
+      220,
+      245
+    ],
+    "uso": "Estado. Sostener el objeto al recorrer el tablero."
+  },
+  {
+    "id": "circuito-3",
+    "archivo": "capas/circuito-3.svg",
+    "lienzo": [
+      220,
+      245
+    ],
+    "uso": "Reclamos. Sostener el objeto al recorrer el tablero."
+  },
+  {
+    "id": "circuito-4",
+    "archivo": "capas/circuito-4.svg",
+    "lienzo": [
+      220,
+      245
+    ],
+    "uso": "Vales. Sostener el objeto al recorrer el tablero."
+  },
+  {
+    "id": "circuito-5",
+    "archivo": "capas/circuito-5.svg",
+    "lienzo": [
+      220,
+      245
+    ],
+    "uso": "Investigación. Sostener el objeto al recorrer el tablero."
+  },
+  {
+    "id": "mesa-del-historiador",
+    "archivo": "capas/mesa-del-historiador.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Fondo editorial de otra época, con luz de escritorio."
+  },
+  {
+    "id": "fichero-de-referencia",
+    "archivo": "capas/fichero-de-referencia.svg",
+    "lienzo": [
+      448,
+      286
+    ],
+    "uso": "Fichero aprobado del episodio 001, sin fondo de presentación."
+  },
+  {
+    "id": "libro-de-quiroz",
+    "archivo": "capas/libro-de-quiroz.svg",
+    "lienzo": [
+      346,
+      446
+    ],
+    "uso": "Portada editorial aprobada del episodio 001."
+  },
+  {
+    "id": "pruebas-de-imprenta",
+    "archivo": "capas/pruebas-de-imprenta.svg",
+    "lienzo": [
+      437,
+      395
+    ],
+    "uso": "Maqueta ilustrativa aprobada. Conservar su identificación."
+  },
+  {
+    "id": "contabilidad-estatal",
+    "archivo": "capas/contabilidad-estatal.svg",
+    "lienzo": [
+      375,
+      309
+    ],
+    "uso": "Identificar procedencia y contexto al nombrar esta familia de fuentes."
+  },
+  {
+    "id": "documentos-judiciales",
+    "archivo": "capas/documentos-judiciales.svg",
+    "lienzo": [
+      375,
+      309
+    ],
+    "uso": "Identificar procedencia y contexto al nombrar esta familia de fuentes."
+  },
+  {
+    "id": "correspondencia-diplomatica",
+    "archivo": "capas/correspondencia-diplomatica.svg",
+    "lienzo": [
+      375,
+      309
+    ],
+    "uso": "Identificar procedencia y contexto al nombrar esta familia de fuentes."
+  },
+  {
+    "id": "apendice-alcance",
+    "archivo": "capas/apendice-alcance.svg",
+    "lienzo": [
+      1035,
+      512
+    ],
+    "uso": "Abrir hacia la estimación histórica."
+  },
+  {
+    "id": "apendice-cautelas",
+    "archivo": "capas/apendice-cautelas.svg",
+    "lienzo": [
+      1035,
+      512
+    ],
+    "uso": "Pausa con las tres cautelas visibles."
+  },
+  {
+    "id": "pregunta-003",
+    "archivo": "capas/pregunta-003.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Revelar la pregunta completa y sostenerla."
+  },
+  {
+    "id": "indice-serie",
+    "archivo": "capas/indice-serie.svg",
+    "lienzo": [
+      1280,
+      720
+    ],
+    "uso": "Dar luz a 003 y sostener el índice."
+  }
+]

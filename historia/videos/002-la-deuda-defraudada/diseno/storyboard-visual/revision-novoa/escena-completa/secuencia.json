@@ -1,0 +1,214 @@
+[
+  {
+    "id": "3A",
+    "lamina": "lamina-01.svg",
+    "cambio": "La solicitud y su alcance.",
+    "enlace": "Seguir el mismo folio hacia la gestión de Elías.",
+    "piezas": [
+      "grabado-hacienda",
+      "alcance-32-anos"
+    ],
+    "recursos_reutilizados": [
+      "../../revision-reclamo/apertura-novoa.svg",
+      "../capas/expediente-novoa.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "El mismo expediente",
+        "camara_y_accion": "Retomar el encuadre exacto con que termina 2F.",
+        "efecto_y_pausa": "Dar tiempo al nombre y la comisión antes del corte."
+      },
+      {
+        "plano": "La hacienda expropiada",
+        "camara_y_accion": "Acercarse al folio y descubrir el grabado editorial.",
+        "efecto_y_pausa": "Asentar el papel y concentrar luz en la hacienda."
+      },
+      {
+        "plano": "La solicitud incluía a 500 personas esclavizadas",
+        "camara_y_accion": "Volver al renglón con cámara quieta.",
+        "efecto_y_pausa": "Retirar la música. Sostener la lectura."
+      },
+      {
+        "plano": "Treinta y dos años reclamados",
+        "camara_y_accion": "Abrir espacio bajo el grabado para la extensión.",
+        "efecto_y_pausa": "Dibujar la llave. Mantener la expresión «reclamadas»."
+      }
+    ]
+  },
+  {
+    "id": "3B",
+    "lamina": "lamina-02.svg",
+    "cambio": "De la solicitud al intento de conseguir aprobación.",
+    "enlace": "Conservar el lado de Elías al llegar la respuesta.",
+    "piezas": [
+      "despacho-elias",
+      "mesa-frontal-elias",
+      "objetivo-elias"
+    ],
+    "recursos_reutilizados": [
+      "../capas/expediente-novoa.svg",
+      "../../../personajes-1850/bustos/busto-intermediario-atencion.svg",
+      "../../../personajes-1850/poses-continuidad/busto-intermediario-prepara.svg",
+      "../../../personajes-1850/bustos/busto-intermediario-senala.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Domingo Elías, intermediario",
+        "camara_y_accion": "Situarlo a la derecha con el expediente a su alcance.",
+        "efecto_y_pausa": "Ventana tenue. Sostener nombre y función."
+      },
+      {
+        "plano": "Elías prepara el gesto",
+        "camara_y_accion": "Mantener cabeza y torso en el mismo lugar.",
+        "efecto_y_pausa": "Flexionar hombro y codo con longitud fija."
+      },
+      {
+        "plano": "El intervalo que buscaba",
+        "camara_y_accion": "El gesto termina hacia el expediente.",
+        "efecto_y_pausa": "Roce de hoja al entrar el intervalo completo."
+      }
+    ]
+  },
+  {
+    "id": "3C",
+    "lamina": "lamina-03.svg",
+    "cambio": "Echenique comunica que el reclamo estaba fuera de plazo.",
+    "enlace": "Mantener la respuesta al presentar a Torrico.",
+    "piezas": [
+      "despacho-elias",
+      "mesa-frontal-elias",
+      "objetivo-elias",
+      "elias-cenital-agarre",
+      "elias-cenital-apoyo"
+    ],
+    "recursos_reutilizados": [
+      "../capas/expediente-novoa.svg",
+      "../../../personajes-1850/bustos/busto-intermediario-senala.svg",
+      "../capas/mesa-cenital.svg",
+      "../capas/tapa-expediente.svg",
+      "../capas/respuesta-base.svg",
+      "../capas/fuera-de-plazo.svg",
+      "../capas/trazo-corrector.svg",
+      "../capas/foco-respuesta.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Continuidad con la gestión",
+        "camara_y_accion": "Retomar el mismo plano medio al terminar el gesto.",
+        "efecto_y_pausa": "Mantener la luz lateral."
+      },
+      {
+        "plano": "Llega la respuesta",
+        "camara_y_accion": "Conservar el folio a la izquierda y la mano a la derecha.",
+        "efecto_y_pausa": "Identificar a Echenique antes de revelar el resultado."
+      },
+      {
+        "plano": "Fuera de plazo",
+        "camara_y_accion": "La mano pasa de agarre a apoyo y la tapa se asienta.",
+        "efecto_y_pausa": "Tras la quietud, iluminar y subrayar «Fuera de plazo»."
+      },
+      {
+        "plano": "El antecedente queda visible",
+        "camara_y_accion": "La mano se retira. El expediente queda quieto.",
+        "efecto_y_pausa": "Sostener dos segundos y bajar el foco antes de 3D."
+      }
+    ]
+  },
+  {
+    "id": "3D",
+    "lamina": "lamina-04.svg",
+    "cambio": "Del antecedente a la intervención y al monto aprobado.",
+    "enlace": "Conservar la cifra y recuperar el vale de la escena 2.",
+    "piezas": [
+      "ficha-torrico",
+      "monto-aprobado"
+    ],
+    "recursos_reutilizados": [
+      "../capas/expediente-novoa.svg",
+      "../capas/tapa-expediente.svg",
+      "../capas/mesa-cenital.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Entra la ficha de Torrico",
+        "camara_y_accion": "Mantener el antecedente y presentar al ministro.",
+        "efecto_y_pausa": "Deslizar la ficha con roce y sombra de contacto."
+      },
+      {
+        "plano": "Unos días después",
+        "camara_y_accion": "Dejar el expediente quieto al salir la ficha de Torrico.",
+        "efecto_y_pausa": "Dar un pulso de silencio para marcar el paso de días."
+      },
+      {
+        "plano": "948.500 pesos en vales",
+        "camara_y_accion": "Sostener el encuadre al entrar la ficha de aprobación.",
+        "efecto_y_pausa": "Revelar cifra y unidad juntas. Pausa de 2 s."
+      }
+    ]
+  },
+  {
+    "id": "3E",
+    "lamina": "lamina-05.svg",
+    "cambio": "Distinguir la aprobación de lo que Novoa habría recibido.",
+    "enlace": "Volver a las personas y pasar del caso al conjunto.",
+    "piezas": [
+      "monto-aprobado",
+      "monto-probable"
+    ],
+    "recursos_reutilizados": [
+      "../../revision-reclamo/capas/vale-deuda-interna.svg",
+      "../capas/mesa-cenital.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Recuperar el significado del vale",
+        "camara_y_accion": "Mantener el monto aprobado al lado del vale conocido.",
+        "efecto_y_pausa": "Dar un foco leve al derecho de cobro."
+      },
+      {
+        "plano": "La estimación de Quiroz",
+        "camara_y_accion": "La segunda ficha entra a la derecha en bloque.",
+        "efecto_y_pausa": "«Probablemente» y «en vales» entran con 180.000."
+      },
+      {
+        "plano": "Leer ambas fichas juntas",
+        "camara_y_accion": "Cámara fija. Sostener ambas cifras y sus unidades.",
+        "efecto_y_pausa": "Igualar luz. Dejar el vale como referencia común."
+      }
+    ]
+  },
+  {
+    "id": "3F",
+    "lamina": "lamina-06.svg",
+    "cambio": "Cambiar de escala sin arrastrar el expediente particular.",
+    "enlace": "Reutilizar este plano en 4A.1.",
+    "piezas": [
+      "rastro-funciones",
+      "archivo-conjunto",
+      "elias-denuncia",
+      "total-1851"
+    ],
+    "recursos_reutilizados": [
+      "../capas/expediente-novoa.svg",
+      "../../../personajes-1850/bustos/busto-intermediario-atencion.svg",
+      "../../revision-islas/capas/tapa-carpeta.svg"
+    ],
+    "encuadres": [
+      {
+        "plano": "Recuperar las funciones",
+        "camara_y_accion": "Volver a la carpeta de Novoa y leer las funciones por turno.",
+        "efecto_y_pausa": "Un foco discreto por renglón."
+      },
+      {
+        "plano": "Volver a Elías",
+        "camara_y_accion": "Abrir al archivo y recuperar a Elías como enlace.",
+        "efecto_y_pausa": "Cerrar la carpeta y retirarla antes del dato general."
+      },
+      {
+        "plano": "Conjunto de la deuda en 1851",
+        "camara_y_accion": "Abrir con la carpeta general y un encuadre estable.",
+        "efecto_y_pausa": "Presentar cinco millones y conservar el plano para 4A.1."
+      }
+    ]
+  }
+]

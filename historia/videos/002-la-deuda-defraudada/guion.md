@@ -250,9 +250,9 @@ Lo que cambió respecto del guion por ideas, y por qué. Todo cambio de eje u or
 
 ## Lo que este guion obliga a cambiar fuera de él
 
-Nada de esto se hizo todavía; queda para que Gerson lo apruebe.
+Pendiente de aprobación de Gerson.
 
-- **Storyboard:** agregar ESC 0 (pila de vales, corrector y sello de 1857) y la tarjeta de cierre; en 4A, la palabra del episodio; en 4B, el viaje del vale a Londres con sus dos valores; en 4E, la fuga de los acusados y los barcos en las islas (las islas v3 vuelven como regreso, no como lámina nueva).
+- **Storyboard:** adaptado como propuesta en [storyboard.json](storyboard.json), con su vista completa en `storyboard.html` (láminas, encuadres, efectos, sonido y transiciones) y el resumen en [storyboard.md](storyboard.md). Lo generan `storyboard.py` y `manuscrito.py` desde este guion. Toma como base el storyboard ilustrado del 11 de noviembre (`diseno/storyboard-visual`, traído de la rama `episodio-002-material-remotion`). Faltan dibujar las piezas nuevas que señala.
 - **Recursos:** fichas nuevas para Mendiburu, la Junta de Examen Fiscal y las cartas de *El Comercio*; el bono externo como pieza separada del vale; los rótulos de cifras con espacio de miles.
 - **fuentes.md:** registrar los datos nuevos con su página (ya en la sección «Locución completa»), y resolver los `[VERIFICAR]` de este guion.
 - **Producción:** escribir `voz_provisional.txt` y `glosario.txt` (Novoa de Arredondo, Echenique, Torrico, Mendiburu, Chincha, Uribarren si se usa), generar la escaleta y comprobar los semáforos de §8 antes de pasar a `escenas.json`.

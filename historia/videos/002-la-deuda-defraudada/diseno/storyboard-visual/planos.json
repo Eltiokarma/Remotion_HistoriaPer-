@@ -1,0 +1,290 @@
+[
+  {
+    "escena": 1,
+    "id": "1A",
+    "titulo": "Perú, Pisco y Chincha",
+    "planos": 3,
+    "dibujo": "Acercarse a Pisco. Bajar al perfil de la ciudad y viajar sobre el agua hasta las islas.",
+    "efectos": "Zoom al pin, paralaje de dunas y costa, destellos cortos de mar y aves en profundidad.",
+    "piezas": "Mapa del Perú, pin de Pisco, mar, dunas, ciudad 2D, roca y aves del recorrido."
+  },
+  {
+    "escena": 1,
+    "id": "1B.1",
+    "titulo": "De la roca al saco",
+    "planos": 3,
+    "dibujo": "La pala entra en el depósito. La carga cae al saco. Un corte acerca su uso agrícola.",
+    "efectos": "Seguir la pala, polvo ocre al contacto y granos que caen hasta que se aquieta el saco.",
+    "piezas": "Dos poses de extracción, pala, saco, partículas de guano, campos y cultivos."
+  },
+  {
+    "escena": 1,
+    "id": "1B.2",
+    "titulo": "Agarrar y levantar",
+    "planos": 3,
+    "dibujo": "Preparar el cuerpo, agarrar ambos bordes y apoyar el pie al levantar el mismo saco.",
+    "efectos": "Bajar el centro de gravedad, acompasar sombra con el pie y soltar unos granos al despegue.",
+    "piezas": "Trabajador corregido, manos con pivotes, apoyo, saco testigo y sombra."
+  },
+  {
+    "escena": 1,
+    "id": "1C.1",
+    "titulo": "Embarque y mercado",
+    "planos": 3,
+    "dibujo": "Seguir el saco hasta la borda y abrir el esquema comercial hacia Gran Bretaña.",
+    "efectos": "Balanceo corto del casco, cuerda tensa al cargar y línea de ruta dibujada sobre el mar.",
+    "piezas": "Saco, pasarela, barco detallado, mapa británico y trazado esquemático."
+  },
+  {
+    "escena": 1,
+    "id": "1C.2",
+    "titulo": "La cuenta del guano",
+    "planos": 3,
+    "dibujo": "Abrir el libro. Separar la venta y sus descuentos. El ingreso público ocupa la última partida.",
+    "efectos": "Barrido de luz sobre cada partida, giro de una hoja y pausa cuando se cierra la cuenta.",
+    "piezas": "Libro abierto, fichas de venta, gastos y comisión, e ingreso público."
+  },
+  {
+    "escena": 1,
+    "id": "1D.1",
+    "titulo": "Del ingreso a la deuda",
+    "planos": 3,
+    "dibujo": "Pasar del libro al Estado. Ver un préstamo y un bien requisado antes de abrir el reclamo.",
+    "efectos": "Paneo libro–Estado, focos por turnos en los dos ejemplos y acercamiento a la pestaña.",
+    "piezas": "Edificio, comerciantes, moneda y cosecha simbólicas, carpeta y mano."
+  },
+  {
+    "escena": 1,
+    "id": "1D.2",
+    "titulo": "Elegir el folio",
+    "planos": 3,
+    "dibujo": "Sacar de la carpeta el papel de pestaña roja y terminar con el folio en el centro.",
+    "efectos": "Arrastre de papel con sombra, acercamiento corto y cuadro quieto para enlazar.",
+    "piezas": "Carpeta, folio testigo, mano y mesa cenital."
+  },
+  {
+    "escena": 2,
+    "id": "2A",
+    "titulo": "El mismo reclamo y la ley",
+    "planos": 3,
+    "dibujo": "Recoger el folio del plano anterior. Abrir a su lado el libro que sitúa la ley de 1850.",
+    "efectos": "Enlace por posición del folio, entrada del libro con peso y luz sobre la fecha.",
+    "piezas": "Folio, libro de ley esquemático y rótulo de fecha."
+  },
+  {
+    "escena": 2,
+    "id": "2B",
+    "titulo": "Cotejar los respaldos",
+    "planos": 3,
+    "dibujo": "Recorrer el reclamo y los dos respaldos. El reconocimiento aparece al acabar el cotejo.",
+    "efectos": "Deslizar la lupa por tres puntos. Encender un foco a la vez y detenerlo en la revisión.",
+    "piezas": "Folio, respaldos, lupa y marca editorial de revisión."
+  },
+  {
+    "escena": 2,
+    "id": "2C",
+    "titulo": "Del reclamo al vale",
+    "planos": 3,
+    "dibujo": "Conservar el reclamo reconocido al introducir el vale de doble marco. Separar las monedas.",
+    "efectos": "Entrada por deslizamiento, destello en el doble marco y foco breve en la diferencia.",
+    "piezas": "Reclamo, vale genérico, monedas de contraste y flecha."
+  },
+  {
+    "escena": 2,
+    "id": "2D",
+    "titulo": "El papel pasa de mano",
+    "planos": 3,
+    "dibujo": "Acercar el papel, sostenerlo entre dos manos y soltar después de recibir el sobre.",
+    "efectos": "Cámara fija en el contacto, muñecas y dedos articulados, roce de papel al soltar.",
+    "piezas": "Poses de entrega, manos receptoras, folio y sobre."
+  },
+  {
+    "escena": 2,
+    "id": "2E",
+    "titulo": "La revisión eludida",
+    "planos": 3,
+    "dibujo": "Pasar de la revisión prevista a una vía favorecida del ejemplo. Mostrar quién recibe el folio.",
+    "efectos": "Mover el foco de la lupa a la trayectoria lateral y marcar el reconocimiento al final.",
+    "piezas": "Intermediario y funcionario, lupa, folio y trayectorias del ejemplo."
+  },
+  {
+    "escena": 2,
+    "id": "2F",
+    "titulo": "Cerrar un caso y abrir otro",
+    "planos": 3,
+    "dibujo": "Cerrar el ejemplo, apartarlo y abrir el expediente con el nombre de Novoa.",
+    "efectos": "Giro de tapa, deslizamiento lateral y enlace por color de la pestaña roja.",
+    "piezas": "Dos carpetas distinguibles, folio y pestaña."
+  },
+  {
+    "escena": 3,
+    "id": "3A",
+    "titulo": "Qué incluía la solicitud",
+    "planos": 3,
+    "dibujo": "Abrimos el expediente de Novoa. Pasamos a la hacienda y a las personas esclavizadas incluidas en el reclamo, luego al lapso que pedía compensar.",
+    "efectos": "Acercamiento al folio, parallax leve del campo y paso de páginas para mostrar los 32 años.",
+    "piezas": "Reclamante corregida, carpeta, ilustración de hacienda y calendario."
+  },
+  {
+    "escena": 3,
+    "id": "3B",
+    "titulo": "La gestión de Elías",
+    "planos": 3,
+    "dibujo": "Elías toma la gestión. El expediente se desplaza hacia el siguiente paso.",
+    "efectos": "Preparación de brazo, señalamiento corto con cámara fija y salida del papel a la derecha.",
+    "piezas": "Busto de Elías y rig, carpeta y folio con pestaña."
+  },
+  {
+    "escena": 3,
+    "id": "3C",
+    "titulo": "El trámite se detiene",
+    "planos": 3,
+    "dibujo": "La mano empuja el expediente hacia la bandeja. El indicador del plazo lo detiene y la mano se retira.",
+    "efectos": "Cenital fijo, frenada de papel, pulso opaco de la marca y sombra al levantar la mano.",
+    "piezas": "Mesa, bandeja, calendario, folio, mano y marcador editorial del plazo."
+  },
+  {
+    "escena": 3,
+    "id": "3D",
+    "titulo": "Torrico y la aprobación",
+    "planos": 3,
+    "dibujo": "Presentar a Torrico. Pasar a días después y revelar el valor completo en un folio separado.",
+    "efectos": "Leve luz de ventana, paso de calendario, aparición conjunta de cifra y unidad, pausa de lectura.",
+    "piezas": "Torrico, antecedente, calendario y folio de aprobación."
+  },
+  {
+    "escena": 3,
+    "id": "3E",
+    "titulo": "Dos montos, dos significados",
+    "planos": 3,
+    "dibujo": "Mostrar lo aprobado. Abrir espacio para la estimación de Novoa y sostener ambas juntas.",
+    "efectos": "Alejar el encuadre al entrar la segunda hoja. Dejar luz pareja en la comparación.",
+    "piezas": "Dos hojas independientes, 948.500 y estimación de 180.000 pesos en vales."
+  },
+  {
+    "escena": 3,
+    "id": "3F",
+    "titulo": "Del expediente al conjunto",
+    "planos": 3,
+    "dibujo": "Cerrar el caso de Novoa. Al abrir el encuadre aparecen otros expedientes y las cuentas generales.",
+    "efectos": "Retroceso de cámara, sombras escalonadas de las carpetas y foco final sobre el libro.",
+    "piezas": "Carpeta de Novoa, expedientes genéricos y libro de deuda reconocida."
+  },
+  {
+    "escena": 4,
+    "id": "4A.1",
+    "titulo": "La escala de la deuda",
+    "planos": 3,
+    "dibujo": "Levantar el dato de 1851 y añadir 1852 a la misma escala. Pasar a un título genérico.",
+    "efectos": "Barras que crecen desde el mismo eje, cifras fijas y pausa antes de acercarse al vale.",
+    "piezas": "Gráfico de deuda reconocida, 1851 y 1852, y vale genérico."
+  },
+  {
+    "escena": 4,
+    "id": "4A.2",
+    "titulo": "El nuevo tenedor",
+    "planos": 3,
+    "dibujo": "Sostener el mismo vale desde el primer agarre hasta que lo recibe la otra mano.",
+    "efectos": "Alinear dedos y borde del vale, frenar en el agarre compartido y soltar después.",
+    "piezas": "Tres poses de manos, mangas y vale con marco constante."
+  },
+  {
+    "escena": 4,
+    "id": "4B",
+    "titulo": "Del vale al bono",
+    "planos": 3,
+    "dibujo": "Seguir un vale hacia el bono externo. Mantener a la vista ambos instrumentos durante el cambio.",
+    "efectos": "Deslizar las hojas, dibujar el puente y encender el borde del nuevo instrumento.",
+    "piezas": "Vale, bono externo esquemático y trayectoria."
+  },
+  {
+    "escena": 4,
+    "id": "4C",
+    "titulo": "Elías vuelve como denunciante",
+    "planos": 3,
+    "dibujo": "Recuperar a Elías y el expediente. Pasar a la escritura y circulación de sus cartas públicas.",
+    "efectos": "Empalme por la silueta, trazo de pluma y salida de la hoja hacia la copia impresa.",
+    "piezas": "Elías, carpeta, pluma, carta e impreso editorial."
+  },
+  {
+    "escena": 4,
+    "id": "4D",
+    "titulo": "Abrir la investigación",
+    "planos": 3,
+    "dibujo": "Situar 1855 en el Estado. Bajar a la mesa donde se extrae y examina un expediente.",
+    "efectos": "Paneo del edificio a la mesa, sombra de folios y foco de lupa en el papel seleccionado.",
+    "piezas": "Edificio, legajos, folio de revisión, mano y lupa."
+  },
+  {
+    "escena": 4,
+    "id": "4E.1",
+    "titulo": "Hallazgos separados",
+    "planos": 3,
+    "dibujo": "Abrir el recuento de expedientes, vincularle el importe y apartar los cuatro robados.",
+    "efectos": "Entradas escalonadas, luz común para 141 y su importe, foco separado para los cuatro.",
+    "piezas": "Legajos, hoja de hallazgos, 141 expedientes, importe y carpeta separada."
+  },
+  {
+    "escena": 4,
+    "id": "4E.2",
+    "titulo": "Suspensión y disputa",
+    "planos": 3,
+    "dibujo": "Detener el paso del título. Mostrar que sigue en manos de sus tenedores.",
+    "efectos": "Frenar la trayectoria, bajar el brillo del puente y revelar las manos por turnos.",
+    "piezas": "Vales, marcas de suspensión y manos de tenedores."
+  },
+  {
+    "escena": 4,
+    "id": "4E.3",
+    "titulo": "Rehabilitación y documentos",
+    "planos": 3,
+    "dibujo": "Reabrir el paso del título en 1857 y volver a los informes sobre su origen.",
+    "efectos": "Retirar la barrera, reanudar el desplazamiento y empalmar por la hoja del informe.",
+    "piezas": "Vale, indicador de 1857, carpetas e informe."
+  },
+  {
+    "escena": 5,
+    "id": "5A.1",
+    "titulo": "El propósito y los beneficiarios",
+    "planos": 3,
+    "dibujo": "Recuperar el propósito del crédito. Separar a los reclamantes de quienes concentran los títulos.",
+    "efectos": "Dar foco por turnos a las dos posiciones, mover el vale y sostener la distribución final.",
+    "piezas": "Estado, comerciante, reclamante, carpeta y vales genéricos."
+  },
+  {
+    "escena": 5,
+    "id": "5A.2",
+    "titulo": "Reconstruir el circuito",
+    "planos": 3,
+    "dibujo": "Recuperar el guano y el reclamo, seguir al Estado y al vale, y terminar en el informe que permite examinarlos.",
+    "efectos": "Recorrido de cámara entre objetos conocidos, líneas dibujadas por tramos y foco de lupa.",
+    "piezas": "Islas, carpeta, Estado, vale, informe, lupa y trazados."
+  },
+  {
+    "escena": 5,
+    "id": "5B.1",
+    "titulo": "Volver al historiador",
+    "planos": 3,
+    "dibujo": "Enlazar el informe con una mesa de investigación posterior por el encuadre del papel.",
+    "efectos": "Corte por forma de la hoja, cambio de luz y un leve desplazamiento de los lentes sobre la mesa.",
+    "piezas": "Informe, libro abierto, notas y lentes de lectura."
+  },
+  {
+    "escena": 5,
+    "id": "5B.2",
+    "titulo": "Cotejar y estimar",
+    "planos": 3,
+    "dibujo": "Recorrer documentos y libro con la lupa. Mostrar el signo de aproximación cuando entra la estimación.",
+    "efectos": "Deslizar la lupa, unir las fuentes con un trazo y sostener el signo final.",
+    "piezas": "Libro, hoja, lupa, trazo y signo de aproximación."
+  },
+  {
+    "escena": 5,
+    "id": "5C",
+    "titulo": "Abrir la pregunta siguiente",
+    "planos": 3,
+    "dibujo": "Cerrar sobre el libro y la lupa. Dar espacio a la pregunta que abre el episodio 003.",
+    "efectos": "Acercamiento suave, luz concentrada y pausa de cierre antes de la salida.",
+    "piezas": "Libro cerrado, folio, lupa y pregunta del siguiente episodio."
+  }
+]

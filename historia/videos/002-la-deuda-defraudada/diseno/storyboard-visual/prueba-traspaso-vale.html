@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El vale cambia de tenedor</title>
+<style>
+  :root { color-scheme: dark; background: #202920; color: #f0e6ca; font: 16px system-ui; }
+  body { margin: 0 auto; max-width: 1120px; padding: 18px; }
+  h1 { font: 400 clamp(24px,4vw,36px) Georgia,serif; margin: 0 0 12px; }
+  svg { display: block; width: 100%; height: auto; border: 1px solid #756349; }
+  .controls { display: flex; align-items: center; gap: 12px; padding-top: 12px; }
+  button { font: inherit; background: #ddc291; color: #202920; border: 0; border-radius: 4px; padding: 9px 14px; }
+  input { flex: 1; min-width: 55px; accent-color: #ddc291; }
+  output { font-variant-numeric: tabular-nums; }
+</style>
+<body>
+<h1>El vale cambia de tenedor</h1>
+{{ARTE}}
+<div class="controls">
+  <button id="play" type="button">Reproducir</button>
+  <input id="time" aria-label="Tiempo del plano" type="range" min="0" step=".01">
+  <output id="seconds" for="time"></output>
+</div>
+<script>
+  const play = document.getElementById('play');
+  const time = document.getElementById('time');
+  const seconds = document.getElementById('seconds');
+  const nodes = new Map([...document.querySelectorAll('[data-part]')].map(node => [node.dataset.part,node]));
+  const duration = 4.6;
+  const mix = (a,b,p) => a+(b-a)*p;
+  const clamp = (x,min,max) => Math.max(min,Math.min(max,x));
+  function ease(t,a,b) {
+    const p = clamp((t-a)/(b-a),0,1);
+    return p*p*(3-2*p);
+  }
+  function move(name,transform) { nodes.get(name).setAttribute('transform',transform); }
+  function show(name,visible) { nodes.get(name).setAttribute('visibility',visible?'visible':'hidden'); }
+  function placeArm(key,x,y,tilt,scaleX) {
+    const transform = `translate(${x} ${y}) rotate(${tilt}) scale(${scaleX} .91)`;
+    move(key+'-base',transform);
+    if (key!=='open') move(key+'-thumb',transform);
+  }
+  function render(t) {
+    const approach = ease(t,.64,2.25);
+    const slide = ease(t,2.81,3.95);
+    const touch = t>=2.25;
+    const withdraw = ease(t,2.82,3.68);
+    const x = mix(214,381,approach)+174*slide;
+    const y = 205+3*Math.sin(Math.PI*ease(t,2.25,2.81));
+    const a = mix(-5,0,approach)+2*slide;
+    const rad = a*Math.PI/180;
+    const anchor = column => [x+.85*(column*Math.cos(rad)-196*Math.sin(rad)),
+                              y+.85*(column*Math.sin(rad)+196*Math.cos(rad))];
+    const [lx,ly] = anchor(5);
+    const [rx,ry] = anchor(568);
+    nodes.get('vale').firstElementChild.setAttribute('transform',`translate(${x} ${y}) rotate(${a}) scale(.85)`);
+    move('focus',`translate(${(x-214)*.82} 0)`);
+    placeArm('left',mix(t<=2.82?lx:385.25,-116,withdraw),mix(t<=2.82?ly:371.6,416,withdraw),-8,.91);
+    show('left-thumb',t<=2.84);
+    const receiving = ease(t,.76,2.25);
+    placeArm('open',mix(1390,rx,receiving),mix(384,ry,receiving),7,-.91);
+    placeArm('right',rx,ry,7,-.91);
+    show('receiver-open',!touch && t>=.76);
+    show('receiver-back',touch);
+    show('receiver-thumb',touch);
+    time.value = t;
+    seconds.value = t.toFixed(1)+' s';
+    document.body.dataset.ready = 'true';
+  }
+
+  time.max=duration;
+  let position=clamp(Number(new URLSearchParams(location.search).get('t'))||0,0,duration);
+  let frame=0;
+  function pause() {
+    cancelAnimationFrame(frame);
+    frame=0;
+    play.textContent=position>=duration?'Repetir':'Reproducir';
+  }
+  play.addEventListener('click',() => {
+    if(frame) { pause(); return; }
+    if(position>=duration) position=0;
+    const start=performance.now()-position*1000;
+    play.textContent='Pausar';
+    function step(now) {
+      position=Math.min(duration,(now-start)/1000);
+      render(position);
+      if(position<duration) frame=requestAnimationFrame(step);
+      else pause();
+    }
+    frame=requestAnimationFrame(step);
+  });
+  time.addEventListener('input',() => { position=Number(time.value); pause(); render(position); });
+  render(position);
+</script>
+</body>
+</html>
