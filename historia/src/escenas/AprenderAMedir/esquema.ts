@@ -33,6 +33,11 @@ export const esquema = z.object({
   /** Encuadre del mapa en grados: [oeste, sur, este, norte]. */
   encuadre: z.tuple([z.number(), z.number(), z.number(), z.number()]).default([-105, -28, 22, 62]),
   ficha: z.string(),
+  /**
+   * Fechas del viaje, en grande arriba a la derecha (§2.1): `decision` desde que empieza el mapa hasta que la
+   * ruta llega (cuándo mira a París y se va); `llegada` desde que llega. Sin esto, el mapa no lleva fecha.
+   */
+  fechas_viaje: z.object({ decision: z.string(), llegada: z.string() }).optional(),
   balanza: z.tuple([z.string(), z.string()]),
   temas: z.array(z.string()).min(1).max(5),
   ficha_aulas: z.string().optional(),

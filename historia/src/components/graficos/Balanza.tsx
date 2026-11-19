@@ -57,6 +57,8 @@ const BalanzaLamina: React.FC<Omit<Props, 'lamina'> & { lamina: Lamina; uid: str
       <CapaVC lamina={lamina} uid={uid} nombre="Fiel" pieza={(i) => (i === 0 ? { transform: `rotate(${angulo} ${CX} ${CY})` } : undefined)} />
       {cae[0] > 0 ? <CapaVC lamina={lamina} uid={uid} nombre="Rótulos_legibles" solo={(i) => i < 2} {...tarjeta(-1, cae[0])} /> : null}
       {cae[1] > 0 ? <CapaVC lamina={lamina} uid={uid} nombre="Rótulos_legibles" solo={(i) => i >= 2} {...tarjeta(1, cae[1])} /> : null}
+      {/* el título del cuadro, si la lámina lo trae («Un buen historiador combina…»): entra con la balanza */}
+      <CapaVC lamina={lamina} uid={uid} nombre="Título" opcional />
     </svg>
   );
 };

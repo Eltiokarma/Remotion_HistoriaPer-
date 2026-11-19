@@ -1300,14 +1300,14 @@
       "id": "e1-revision-laminas",
       "fase": "e1",
       "titulo": "Revisión de Gerson de la integración de las láminas y de los efectos recuperados (E01–E12)",
-      "entregable": "Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO",
-      "estado": "pendiente",
+      "entregable": "Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO. Notas del render (2026-11-19) aplicadas: fuente del costo sin «guion»; música desde el 0:32 (cello E2) y de salida desde el 5:19; fechas del viaje en el mapa; títulos de la regresión y de la balanza",
+      "estado": "en_curso",
       "depende_de": [
         "e1-laminas"
       ],
       "prevista": null,
       "real": {
-        "inicio": null,
+        "inicio": "2026-11-19",
         "fin": null
       },
       "bloqueo": null,

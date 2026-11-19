@@ -1,7 +1,8 @@
 {
   "format": "vectorcraft",
   "version": 4,
-  "generator": "VectorCraft 0.22.0",
+  "generator": "VectorCraft 0.24.1",
+  "pdfCompatible": false,
   "document": {
     "version": 3,
     "title": "Tanda 6 — Cómo leer una regresión",
@@ -181,7 +182,7 @@
                 ],
                 "runs": [
                   {
-                    "text": "De los documentos a los patrones",
+                    "text": "Pensar el pasado con números, no solo con discursos",
                     "style": {
                       "font_family": "Georgia",
                       "font_style": "Regular",
@@ -5520,7 +5521,7 @@
       "copyrightNotice": "",
       "copyrightUrl": "",
       "created": 1794200468,
-      "modified": null
+      "modified": 1795098470
     }
   },
   "images": {}

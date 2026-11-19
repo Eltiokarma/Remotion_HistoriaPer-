@@ -60,6 +60,7 @@ Total: 5:39.2. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
+| 0:33.0 |  |  | música s01-el-hombre.mp3 (nivel 0.39) |
 | 0:33.0 |  |  | ambiente cuarto (0.6) |
 | 0:33.3 | Nueva York. |  |  |
 | 0:33.4 |  | **ficha** — empieza a escribirse la ficha |  |
@@ -86,7 +87,6 @@ Total: 5:39.2. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 1:10.7 | El libro salió en mayo. |  |  |
 | 1:10.9 |  | **mayo** — llega al último evento: se enciende |  |
 | 1:12.0 |  | **final** — la cámara se abre y se ve el camino entero (aquí entra la música) |  |
-| 1:12.0 |  |  | música s01-el-hombre.mp3 (nivel 0.39) |
 | 1:12.0 |  | _cámara: se abre hasta ver el camino entero_ («ese hombre» y «lo que encontró» son las dos puntas de la línea) |  |
 | 1:13.9 | Estos videos son sobre ese hombre... y sobre lo que encontró. |  |  |
 | 1:15.7 |  | **hombre** — pulso en el primer evento |  |

@@ -124,18 +124,18 @@
     },
     {
       "archivo": "balanza-video01.svg",
-      "bytes": 136810,
-      "sha256": "373b5af529d6e134191b2b3df4e9c445aa5ebbbabf728356a03eb547183b950a"
+      "bytes": 175712,
+      "sha256": "a03602fa1d1366e2fe6b311983ab71925c8538621aeefd33fca5ce806e46c21c"
     },
     {
       "archivo": "balanza-video01.vectorcraft",
-      "bytes": 254780,
-      "sha256": "52944750338d4b72e7203cc709068d00698341822e1a502f3240755bc8c4162e"
+      "bytes": 255600,
+      "sha256": "7ac8295c2fe1438e415062ad0ff094e8b796f7ed09a88c34817fba04ceb21b5f"
     },
     {
       "archivo": "balanza-video01.png",
-      "bytes": 218416,
-      "sha256": "419238fd8b26003f9a0e08cc447017300d966b427f7da9a023e033edd3d85a3d"
+      "bytes": 231562,
+      "sha256": "3dde3dee49497b7b8a909b239627f811bd70b59fd0298a7810dc0f3341648001"
     },
     {
       "archivo": "biblioteca-video01.svg",
@@ -274,18 +274,18 @@
     },
     {
       "archivo": "tanda06-regresion.svg",
-      "bytes": 345758,
-      "sha256": "d0b2eb10e1ea5048aa1b64e55aa949adb846b191516e32aaef2acb25ff110d55"
+      "bytes": 373605,
+      "sha256": "b1c2ef479214a3da515a1c82074d4673eac2d1315901839db9807c65cc446860"
     },
     {
       "archivo": "tanda06-regresion.vectorcraft",
-      "bytes": 163306,
-      "sha256": "93bee8f94ec493bdb8a5f6d727380362e0481323fc761539577aec6ab6f87a80"
+      "bytes": 163358,
+      "sha256": "c60cc9651d5f8be81091bddce70618a6d1d3efdded3dcd75f6299da380f6786b"
     },
     {
       "archivo": "tanda06-regresion.png",
-      "bytes": 216396,
-      "sha256": "79b67c5c9131ab4e3021ab1399c5359944d7654e1bf15a57c154c27a45a5631f"
+      "bytes": 225104,
+      "sha256": "ea8ee8ab54a8a968ae59f559a4e1c43b485db0c9747b5b889e1f0b675d23acae"
     },
     {
       "archivo": "tanda06-costo.svg",

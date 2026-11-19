@@ -1,10 +1,21 @@
 {
   "salida": "s01-el-hombre.mp3",
-  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. B entra en «final» y sigue en s02 sin corte",
+  "nota": "tiempos anclados a beats de escenas.json (env: [beat, desplazamiento, ganancia] o [segundo, ganancia]); se resuelven al correr montar_musica.py. El cello (E2, toma que no se usó en s04) entra en el 0:32, 1 s antes de la imagen (antes_s), y suena entero (24,6 s) bajo las pruebas y la página; después, silencio hasta la muerte. B entra en «final» y sigue en s02 sin corte (pista_desde). Pedido de Gerson el 2026-11-19: «la música debe empezar en el segundo 32 y no en el 1:12»",
   "empalme": "siguiente",
+  "pista_desde": "final",
   "capas": [
     {
       "archivo": "suno/V01_mus02_ver02.wav"
+    },
+    {
+      "archivo": "suno/V01_mus-E02_ver01_1.wav",
+      "inicio": -1.0,
+      "env": [
+        [-1.0, 0],
+        [0.0, 1],
+        [22.6, 1],
+        [23.6, 0]
+      ]
     }
   ]
 }

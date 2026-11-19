@@ -165,6 +165,19 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
             faro={anuncia * mix(0.35, 1, k)} llegada={llegaDestino} ficha={clamp((t - tFicha - 0.6) / (props.ficha.length / 18))}
             paralelos={paralelos.map((q) => ({ y: yDeLatitud(refViaje.mercator, q.lat), rotulo: q.rotulo, brillo: q.brillo }))}
             leyenda={tramo(t, tFicha, 0.8, 'natural')} />
+          {/* cuándo: la fecha de la decisión mientras la ruta duda y sale; al llegar, el año de Nueva York */}
+          {props.fechas_viaje ? (
+            <>
+              {/* en la fila del subtítulo, a la derecha, sobre el mapa; borde izquierdo fijo para que no se corra al escribirse */}
+              <div style={{ position: 'absolute', left: 1110, top: 168 }}>
+                <Ficha texto={props.fechas_viaje.decision} t={t - tMapa - 0.4} color={pal.papel} acento={pal.rojo} size={34}
+                  salida={tramo(t, tLlega - 0.2, 0.5, 'natural')} />
+              </div>
+              <div style={{ position: 'absolute', left: 1110, top: 168 }}>
+                <Ficha texto={props.fechas_viaje.llegada} t={t - tLlega - 0.4} color={pal.papel} acento={pal.rojo} size={34} />
+              </div>
+            </>
+          ) : null}
           {/* por qué todos miraban a París: renglón por renglón, junto a la ciudad; se va cuando él decide */}
           {conNotas ? (
             <div style={{ position: 'absolute', left: 1214, top: 344, padding: '14px 22px', background: alfa('#16241c', 0.82 * (1 - borra) * tramo(t, tNotas, 0.5, 'natural')),
