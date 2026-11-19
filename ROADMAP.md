@@ -2,7 +2,7 @@
 
 <!-- GENERADO por roadmap/generar.mjs a partir de roadmap/roadmap.json. No editar a mano: editar el JSON y regenerar. -->
 
-Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
+Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
 
 - Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.
 - Tiempo humano y tokens: null = desconocido (no medido). No se estiman.
@@ -12,7 +12,7 @@ Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **28** · 🔄 en curso: **7** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **28** · 🔄 en curso: **8** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -26,6 +26,7 @@ Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `e2-recursos-escena01` Recursos vectoriales de la escena 1 «Las islas y el país» (objetos SVG para personajes PNG): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-recursos-escena02` Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-recursos-escena03` Recursos vectoriales de la escena 3 «El expediente de Novoa» (despacho, folios del caso, rótulos y conectores): Dibujos entregados y revisados por el agente; falta la revisión de Gerson (retratos o figuras para Echenique y Torrico; frase del storyboard sobre Torrico), generar los PNG de ChatGPT e integrar en Remotion.
+- `e2-guion-locucion` Guion del 0·2 escrito como locución completa, con el criterio del Escribidor Escribano: Falta la revisión de Gerson (gancho nuevo, palabra del episodio, datos agregados) y resolver los [VERIFICAR]; después, voz provisional, escaleta y ajuste del storyboard.
 
 ## Vista temporal
 
@@ -80,7 +81,7 @@ gantt
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
-Sin fecha (20): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso).
+Sin fecha (21): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso).
 
 ## Tareas
 
@@ -429,6 +430,12 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Dibujos entregados y revisados por el agente; falta la revisión de Gerson (retratos o figuras para Echenique y Torrico; frase del storyboard sobre Torrico), generar los PNG de ChatGPT e integrar en Remotion.
   - Evidencia: [recursos-escena03/README.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/README.md) · [recursos-escena03/inventario.json](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/inventario.json) · [recursos-escena03/imagenes-chatgpt.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/imagenes-chatgpt.md) · [revision/contacto.png](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/revision/contacto.png)
+- [ ] **Guion del 0·2 escrito como locución completa, con el criterio del Escribidor Escribano** `e2-guion-locucion` — 🔄 en curso
+  - Entregable: historia/videos/002-la-deuda-defraudada/guion.md: voz de las escenas 0 a 6, imagen, sonido y fuente por escena, decisiones de escritura, cambios que pide al storyboard y pendientes [VERIFICAR]; fuentes.md: datos nuevos con su página
+  - Prevista: — · Real: 2026-11-19 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Bloqueo: Falta la revisión de Gerson (gancho nuevo, palabra del episodio, datos agregados) y resolver los [VERIFICAR]; después, voz provisional, escaleta y ajuste del storyboard.
+  - Evidencia: [002-la-deuda-defraudada/guion.md](historia/videos/002-la-deuda-defraudada/guion.md) · [002-la-deuda-defraudada/fuentes.md](historia/videos/002-la-deuda-defraudada/fuentes.md)
 
 ## Máquinas
 

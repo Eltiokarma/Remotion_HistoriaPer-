@@ -1,6 +1,6 @@
 {
   "titulo": "Roadmap del laboratorio y la base de producción",
-  "actualizado": "2026-11-17",
+  "actualizado": "2026-11-19",
   "notas": [
     "Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.",
     "Tiempo humano y tokens: null = desconocido (no medido). No se estiman.",
@@ -1422,6 +1422,30 @@
         "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/inventario.json",
         "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/imagenes-chatgpt.md",
         "historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/revision/contacto.png"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e2-guion-locucion",
+      "fase": "e2",
+      "titulo": "Guion del 0·2 escrito como locución completa, con el criterio del Escribidor Escribano",
+      "entregable": "historia/videos/002-la-deuda-defraudada/guion.md: voz de las escenas 0 a 6, imagen, sonido y fuente por escena, decisiones de escritura, cambios que pide al storyboard y pendientes [VERIFICAR]; fuentes.md: datos nuevos con su página",
+      "estado": "en_curso",
+      "depende_de": [],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-19",
+        "fin": null
+      },
+      "bloqueo": "Falta la revisión de Gerson (gancho nuevo, palabra del episodio, datos agregados) y resolver los [VERIFICAR]; después, voz provisional, escaleta y ajuste del storyboard.",
+      "evidencia": [
+        "historia/videos/002-la-deuda-defraudada/guion.md",
+        "historia/videos/002-la-deuda-defraudada/fuentes.md"
       ],
       "tiempo": {
         "humano_min": null,

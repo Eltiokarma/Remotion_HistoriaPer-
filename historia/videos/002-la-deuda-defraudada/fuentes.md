@@ -126,3 +126,18 @@ Los [recursos separados de la escena 2](diseno/recursos-escena02/README.md) son 
 ## Recursos vectoriales de la escena 3 (17 de noviembre de 2026)
 
 Los [recursos separados de la escena 3](diseno/recursos-escena03/README.md) son ilustración propia hecha en VectorCraft mediante MCP. El despacho, la hacienda, el tintero, los folios, las placas y los conectores son nuevos y genéricos: no reproducen el expediente, el despacho ni la hacienda reales. Se reutilizan sin cambios la pizarra, el vale y la carpeta del expediente de la escena 2. Los textos de los folios resumen Q, p. 171 (Novoa, Elías, Echenique, Torrico y los montos en vales) y Q, p. 170 (la serie de 1851 y 1852); cada folio lleva su nota de fuente y se identifica como resumen editorial. La frase del storyboard «Torrico aseguró a Novoa que solo con él podría aprobarse» no se usó porque la ficha bibliográfica solo respalda la «participación directa de Torrico»; queda `[VERIFICAR]` contra la página impresa. No se realizó una nueva lectura independiente de las fuentes.
+
+## Locución completa (19 de noviembre de 2026)
+
+El [guion](guion.md) pasa de ideas a locución, escrita con el criterio del Escribidor Escribano. No se hizo una nueva lectura del libro: los datos agregados salen de la [ficha de Quiroz](../../bibliografia/quiroz-2013.md), §7, con su página.
+
+- Q, p. 170: los expedientes más fraudulentos pasaron en los meses anteriores a los plazos de junio y octubre de 1852, bajo Echenique.
+- Q, p. 172: deuda de 24 millones en vales «altamente concentrados entre unas cuantas personas».
+- Q, p. 173: Echenique defendió la consolidación porque habría creado «una clase capitalista nacional»; exclusión de «la mayoría de los reclamantes originales» y oportunidad perdida de «una transparente deuda pública».
+- Q, p. 174: «varias docenas de personas»; *los consolidados*, «un término usado extensamente en ese entonces para denotar a personas vinculadas a la corrupción o robo políticos». Es la palabra del episodio.
+- Q, pp. 180–181 y n. 143: Mendiburu, en Londres, cambió vales (6 % de interés) por bonos externos (4,5 %); «cerca del 46 por ciento de toda la deuda interna consolidada»; vales a «alrededor del 40 por ciento de su valor nominal» y bonos casi a la par; las maniobras se diseñaron para «lavar» instrumentos de origen corrupto.
+- Q, p. 183: ley del 29 de diciembre de 1856, suspensión del pago de los vales fraudulentos, juicios; Torrico, Echenique y Mendiburu ya habían huido del país.
+- Q, pp. 183–185: los tenedores alegaban que los vales eran como billetes endosados; respaldo de los diplomáticos de Gran Bretaña y Francia; barcos ingleses y franceses rondaban las islas.
+- Q, p. 187: retrato de Elías («defendió importantes reformas… pero no dejó de beneficiarse…»).
+
+Pendientes marcados `[VERIFICAR]` en el guion: si el 6 % es anual; nombre completo, cargo y año de Mendiburu en Londres; fecha de asunción de Echenique y de su caída; si «agiotistas» es palabra de las cartas de Elías o de Quiroz; la formulación sobre los trabajadores chinos contra B, pp. 10–11; «se levantó contra Echenique» frente a «encabezó la revolución» de la ficha.
