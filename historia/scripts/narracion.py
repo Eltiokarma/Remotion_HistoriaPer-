@@ -29,6 +29,7 @@ import numpy as np
 RAIZ = Path(__file__).resolve().parent.parent
 SR = 44100
 RESPIRO = 1.4          # una pausa del guion desde este largo es un respiro: se garantiza
+                       # (narracion.json → "respiro_min" lo cambia para un video)
 API = "https://api.elevenlabs.io/v1"
 CLAVE = os.environ.get("ELEVENLABS_API_KEY", "proxy-injected")
 NUM = {"1820": "mil ochocientos veinte", "1980": "mil novecientos ochenta", "1850": "mil ochocientos cincuenta", "1956": "mil novecientos cincuenta y seis",
@@ -261,7 +262,7 @@ def escena(video, s, cfg, prov):
     for i in range(len(fr_prov) - 1):
         quiere = fr_prov[i + 1]["desde"] - fr_prov[i]["hasta"]
         tiene = pos[i + 1]["desde"] - pos[i]["hasta"]
-        if quiere >= RESPIRO and tiene < quiere:
+        if quiere >= cfg.get("respiro_min", RESPIRO) and tiene < quiere:
             insertos.append(((pos[i]["hasta"] + pos[i + 1]["desde"]) / 2, quiere - tiene))
     trozos, prev, corrida = [], 0, 0.0
     for t, extra in insertos:

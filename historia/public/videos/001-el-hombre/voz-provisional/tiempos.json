@@ -1,3252 +1,377 @@
 {
  "s00": {
-  "duracion": 33.67,
+  "duracion": 34.86,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 9.25,
-    "texto": "Desde mil ochocientos veinte, la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento de todo lo que produce."
+    "hasta": 9.92,
+    "texto": "Durante casi dos siglos... la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento... de todo lo que producía."
    },
    {
-    "desde": 10.1,
-    "hasta": 11.22,
+    "desde": 10.32,
+    "hasta": 11.08,
     "texto": "Cada año."
    },
    {
-    "desde": 12.67,
-    "hasta": 18.1,
-    "texto": "Del presupuesto del Estado, de cada diez soles, se fueron entre tres y cuatro."
+    "desde": 12.08,
+    "hasta": 18.62,
+    "texto": "Comparado con el gasto del Estado... ese costo equivalía a tres o cuatro de cada diez soles."
    },
    {
-    "desde": 19.75,
-    "hasta": 24.23,
-    "texto": "No son casos sueltos: es el sistema, y viene desde la colonia."
+    "desde": 19.82,
+    "hasta": 25.21,
+    "texto": "No era una suma de casos sueltos: era sistémica, y venía desde la colonia."
    },
    {
-    "desde": 25.88,
-    "hasta": 28.13,
-    "texto": "Lo calculó un historiador limeño."
+    "desde": 26.41,
+    "hasta": 29.1,
+    "texto": "Todo eso lo calculó un historiador limeño."
    },
    {
-    "desde": 29.38,
-    "hasta": 31.72,
+    "desde": 29.9,
+    "hasta": 33.36,
     "texto": "Y no llegó a ver su libro en español."
    }
-  ],
-  "palabras": [
-   [
-    0.3,
-    "Desde"
-   ],
-   [
-    0.69,
-    "mil"
-   ],
-   [
-    0.96,
-    "ochocientos"
-   ],
-   [
-    1.75,
-    "veinte,"
-   ],
-   [
-    2.27,
-    "la"
-   ],
-   [
-    2.47,
-    "corrupción"
-   ],
-   [
-    3.2,
-    "le"
-   ],
-   [
-    3.39,
-    "costó"
-   ],
-   [
-    3.79,
-    "al"
-   ],
-   [
-    3.99,
-    "Perú,"
-   ],
-   [
-    4.38,
-    "en"
-   ],
-   [
-    4.58,
-    "promedio,"
-   ],
-   [
-    5.24,
-    "entre"
-   ],
-   [
-    5.63,
-    "el"
-   ],
-   [
-    5.83,
-    "tres"
-   ],
-   [
-    6.16,
-    "y"
-   ],
-   [
-    6.29,
-    "el"
-   ],
-   [
-    6.49,
-    "cuatro"
-   ],
-   [
-    6.95,
-    "por"
-   ],
-   [
-    7.21,
-    "ciento"
-   ],
-   [
-    7.67,
-    "de"
-   ],
-   [
-    7.87,
-    "todo"
-   ],
-   [
-    8.2,
-    "lo"
-   ],
-   [
-    8.4,
-    "que"
-   ],
-   [
-    8.66,
-    "produce."
-   ],
-   [
-    10.1,
-    "Cada"
-   ],
-   [
-    10.66,
-    "año."
-   ],
-   [
-    12.67,
-    "Del"
-   ],
-   [
-    12.94,
-    "presupuesto"
-   ],
-   [
-    13.77,
-    "del"
-   ],
-   [
-    14.04,
-    "Estado,"
-   ],
-   [
-    14.59,
-    "de"
-   ],
-   [
-    14.8,
-    "cada"
-   ],
-   [
-    15.14,
-    "diez"
-   ],
-   [
-    15.49,
-    "soles,"
-   ],
-   [
-    15.97,
-    "se"
-   ],
-   [
-    16.17,
-    "fueron"
-   ],
-   [
-    16.65,
-    "entre"
-   ],
-   [
-    17.07,
-    "tres"
-   ],
-   [
-    17.41,
-    "y"
-   ],
-   [
-    17.55,
-    "cuatro."
-   ],
-   [
-    19.75,
-    "No"
-   ],
-   [
-    19.96,
-    "son"
-   ],
-   [
-    20.25,
-    "casos"
-   ],
-   [
-    20.67,
-    "sueltos:"
-   ],
-   [
-    21.31,
-    "es"
-   ],
-   [
-    21.53,
-    "el"
-   ],
-   [
-    21.74,
-    "sistema,"
-   ],
-   [
-    22.38,
-    "y"
-   ],
-   [
-    22.52,
-    "viene"
-   ],
-   [
-    22.95,
-    "desde"
-   ],
-   [
-    23.38,
-    "la"
-   ],
-   [
-    23.59,
-    "colonia."
-   ],
-   [
-    25.88,
-    "Lo"
-   ],
-   [
-    26.08,
-    "calculó"
-   ],
-   [
-    26.61,
-    "un"
-   ],
-   [
-    26.81,
-    "historiador"
-   ],
-   [
-    27.6,
-    "limeño."
-   ],
-   [
-    29.38,
-    "Y"
-   ],
-   [
-    29.51,
-    "no"
-   ],
-   [
-    29.69,
-    "llegó"
-   ],
-   [
-    30.06,
-    "a"
-   ],
-   [
-    30.18,
-    "ver"
-   ],
-   [
-    30.43,
-    "su"
-   ],
-   [
-    30.61,
-    "libro"
-   ],
-   [
-    30.98,
-    "en"
-   ],
-   [
-    31.16,
-    "español."
-   ]
   ]
  },
  "s01": {
-  "duracion": 49.66,
+  "duracion": 46.68,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 1.22,
+    "hasta": 1.07,
     "texto": "Nueva York."
    },
    {
     "desde": 1.67,
-    "hasta": 6.86,
-    "texto": "Nuestro historiador revisa, con minuciosidad, las pruebas de imprenta."
+    "hasta": 8.59,
+    "texto": "Nuestro historiador revisa con minuciosidad las pruebas de imprenta de la traducción al español de su último libro."
    },
    {
-    "desde": 7.31,
-    "hasta": 10.27,
-    "texto": "Es la traducción al español de su último libro."
+    "desde": 9.59,
+    "hasta": 12.67,
+    "texto": "No le queda mucho tiempo... y lo sabe."
    },
    {
-    "desde": 11.72,
-    "hasta": 14.71,
-    "texto": "No le queda mucho tiempo, y lo sabe."
+    "desde": 14.17,
+    "hasta": 18.4,
+    "texto": "En los agradecimientos escribe una línea fácil de pasar por alto:"
    },
    {
-    "desde": 16.66,
-    "hasta": 20.4,
-    "texto": "En los agradecimientos escribe una línea que casi nadie lee."
+    "desde": 18.75,
+    "hasta": 24.13,
+    "texto": "les agradece a sus médicos por alargar estos días para poder completar la tarea."
    },
    {
-    "desde": 20.85,
-    "hasta": 26.55,
-    "texto": "Les da las gracias a sus médicos por alargar estos días, para poder completar la tarea."
-   },
-   {
-    "desde": 28.2,
-    "hasta": 31.87,
+    "desde": 25.13,
+    "hasta": 28.98,
     "texto": "Unas líneas más abajo celebra el nacimiento de su hijo."
    },
    {
-    "desde": 33.92,
-    "hasta": 35.99,
+    "desde": 30.48,
+    "hasta": 33.17,
     "texto": "Murió en enero de dos mil trece."
    },
    {
-    "desde": 42.64,
-    "hasta": 44.26,
+    "desde": 39.17,
+    "hasta": 41.1,
     "texto": "El libro salió en mayo."
    },
    {
-    "desde": 45.91,
-    "hasta": 49.66,
-    "texto": "Estos videos son sobre ese hombre, y sobre lo que encontró."
+    "desde": 42.1,
+    "hasta": 46.33,
+    "texto": "Estos videos tratan de ese hombre... y de lo que encontró."
    }
-  ],
-  "palabras": [
-   [
-    0.3,
-    "Nueva"
-   ],
-   [
-    0.76,
-    "York."
-   ],
-   [
-    1.67,
-    "Nuestro"
-   ],
-   [
-    2.25,
-    "historiador"
-   ],
-   [
-    3.13,
-    "revisa,"
-   ],
-   [
-    3.71,
-    "con"
-   ],
-   [
-    4.01,
-    "minuciosidad,"
-   ],
-   [
-    5.03,
-    "las"
-   ],
-   [
-    5.32,
-    "pruebas"
-   ],
-   [
-    5.91,
-    "de"
-   ],
-   [
-    6.13,
-    "imprenta."
-   ],
-   [
-    7.31,
-    "Es"
-   ],
-   [
-    7.49,
-    "la"
-   ],
-   [
-    7.68,
-    "traducción"
-   ],
-   [
-    8.36,
-    "al"
-   ],
-   [
-    8.54,
-    "español"
-   ],
-   [
-    9.03,
-    "de"
-   ],
-   [
-    9.22,
-    "su"
-   ],
-   [
-    9.4,
-    "último"
-   ],
-   [
-    9.84,
-    "libro."
-   ],
-   [
-    11.72,
-    "No"
-   ],
-   [
-    11.96,
-    "le"
-   ],
-   [
-    12.2,
-    "queda"
-   ],
-   [
-    12.69,
-    "mucho"
-   ],
-   [
-    13.17,
-    "tiempo,"
-   ],
-   [
-    13.82,
-    "y"
-   ],
-   [
-    13.98,
-    "lo"
-   ],
-   [
-    14.23,
-    "sabe."
-   ],
-   [
-    16.66,
-    "En"
-   ],
-   [
-    16.85,
-    "los"
-   ],
-   [
-    17.09,
-    "agradecimientos"
-   ],
-   [
-    18.07,
-    "escribe"
-   ],
-   [
-    18.56,
-    "una"
-   ],
-   [
-    18.81,
-    "línea"
-   ],
-   [
-    19.18,
-    "que"
-   ],
-   [
-    19.42,
-    "casi"
-   ],
-   [
-    19.73,
-    "nadie"
-   ],
-   [
-    20.09,
-    "lee."
-   ],
-   [
-    20.85,
-    "Les"
-   ],
-   [
-    21.11,
-    "da"
-   ],
-   [
-    21.3,
-    "las"
-   ],
-   [
-    21.56,
-    "gracias"
-   ],
-   [
-    22.08,
-    "a"
-   ],
-   [
-    22.21,
-    "sus"
-   ],
-   [
-    22.47,
-    "médicos"
-   ],
-   [
-    22.99,
-    "por"
-   ],
-   [
-    23.25,
-    "alargar"
-   ],
-   [
-    23.77,
-    "estos"
-   ],
-   [
-    24.15,
-    "días,"
-   ],
-   [
-    24.54,
-    "para"
-   ],
-   [
-    24.87,
-    "poder"
-   ],
-   [
-    25.26,
-    "completar"
-   ],
-   [
-    25.9,
-    "la"
-   ],
-   [
-    26.1,
-    "tarea."
-   ],
-   [
-    28.2,
-    "Unas"
-   ],
-   [
-    28.53,
-    "líneas"
-   ],
-   [
-    28.99,
-    "más"
-   ],
-   [
-    29.25,
-    "abajo"
-   ],
-   [
-    29.64,
-    "celebra"
-   ],
-   [
-    30.17,
-    "el"
-   ],
-   [
-    30.36,
-    "nacimiento"
-   ],
-   [
-    31.08,
-    "de"
-   ],
-   [
-    31.28,
-    "su"
-   ],
-   [
-    31.48,
-    "hijo."
-   ],
-   [
-    33.92,
-    "Murió"
-   ],
-   [
-    34.3,
-    "en"
-   ],
-   [
-    34.48,
-    "enero"
-   ],
-   [
-    34.86,
-    "de"
-   ],
-   [
-    35.05,
-    "dos"
-   ],
-   [
-    35.3,
-    "mil"
-   ],
-   [
-    35.55,
-    "trece."
-   ],
-   [
-    42.64,
-    "El"
-   ],
-   [
-    42.84,
-    "libro"
-   ],
-   [
-    43.25,
-    "salió"
-   ],
-   [
-    43.65,
-    "en"
-   ],
-   [
-    43.86,
-    "mayo."
-   ],
-   [
-    45.91,
-    "Estos"
-   ],
-   [
-    46.29,
-    "videos"
-   ],
-   [
-    46.72,
-    "son"
-   ],
-   [
-    46.97,
-    "sobre"
-   ],
-   [
-    47.35,
-    "ese"
-   ],
-   [
-    47.6,
-    "hombre,"
-   ],
-   [
-    48.1,
-    "y"
-   ],
-   [
-    48.22,
-    "sobre"
-   ],
-   [
-    48.6,
-    "lo"
-   ],
-   [
-    48.79,
-    "que"
-   ],
-   [
-    49.04,
-    "encontró."
-   ]
   ]
  },
  "s02": {
-  "duracion": 32.0,
+  "duracion": 28.68,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 2.55,
-    "texto": "Se llamaba Alfonso Quiroz Norris."
+    "hasta": 6.07,
+    "texto": "Se llamaba Alfonso Quiroz Norris y nació en Lima, en mil novecientos cincuenta y seis."
    },
    {
-    "desde": 3.0,
-    "hasta": 6.62,
-    "texto": "Nació en Lima, en mil novecientos cincuenta y seis."
+    "desde": 7.07,
+    "hasta": 12.07,
+    "texto": "Fue nadador de competencia: representó al Perú en las categorías infantil y juvenil."
    },
    {
-    "desde": 7.87,
-    "hasta": 14.09,
-    "texto": "De chico fue nadador de competencia: representó al Perú en las categorías infantil y juvenil."
+    "desde": 13.27,
+    "hasta": 22.5,
+    "texto": "Marcos Cueto, su amigo desde los quince años, cuenta que Quiroz aprendió disciplina en la piscina y que después la llevó a los archivos."
    },
    {
-    "desde": 15.54,
-    "hasta": 24.28,
-    "texto": "Marcos Cueto, historiador y amigo suyo desde los quince años, cuenta que esa disciplina de la piscina la llevó después a los archivos."
+    "desde": 23.1,
+    "hasta": 25.79,
+    "texto": "Y lo describe con una sola palabra:"
    },
    {
-    "desde": 25.33,
-    "hasta": 27.57,
-    "texto": "Y lo resume en una sola palabra:"
-   },
-   {
-    "desde": 28.52,
-    "hasta": 29.55,
+    "desde": 26.29,
+    "hasta": 26.68,
     "texto": "inagotable."
    }
-  ],
-  "palabras": [
-   [
-    0.3,
-    "Se"
-   ],
-   [
-    0.5,
-    "llamaba"
-   ],
-   [
-    1.03,
-    "Alfonso"
-   ],
-   [
-    1.56,
-    "Quiroz"
-   ],
-   [
-    2.02,
-    "Norris."
-   ],
-   [
-    3.0,
-    "Nació"
-   ],
-   [
-    3.42,
-    "en"
-   ],
-   [
-    3.63,
-    "Lima,"
-   ],
-   [
-    4.05,
-    "en"
-   ],
-   [
-    4.26,
-    "mil"
-   ],
-   [
-    4.53,
-    "novecientos"
-   ],
-   [
-    5.37,
-    "cincuenta"
-   ],
-   [
-    6.07,
-    "y"
-   ],
-   [
-    6.21,
-    "seis."
-   ],
-   [
-    7.87,
-    "De"
-   ],
-   [
-    8.07,
-    "chico"
-   ],
-   [
-    8.47,
-    "fue"
-   ],
-   [
-    8.73,
-    "nadador"
-   ],
-   [
-    9.26,
-    "de"
-   ],
-   [
-    9.46,
-    "competencia:"
-   ],
-   [
-    10.32,
-    "representó"
-   ],
-   [
-    11.05,
-    "al"
-   ],
-   [
-    11.24,
-    "Perú"
-   ],
-   [
-    11.58,
-    "en"
-   ],
-   [
-    11.77,
-    "las"
-   ],
-   [
-    12.04,
-    "categorías"
-   ],
-   [
-    12.76,
-    "infantil"
-   ],
-   [
-    13.36,
-    "y"
-   ],
-   [
-    13.49,
-    "juvenil."
-   ],
-   [
-    15.54,
-    "Marcos"
-   ],
-   [
-    15.99,
-    "Cueto,"
-   ],
-   [
-    16.44,
-    "historiador"
-   ],
-   [
-    17.22,
-    "y"
-   ],
-   [
-    17.35,
-    "amigo"
-   ],
-   [
-    17.74,
-    "suyo"
-   ],
-   [
-    18.06,
-    "desde"
-   ],
-   [
-    18.45,
-    "los"
-   ],
-   [
-    18.71,
-    "quince"
-   ],
-   [
-    19.16,
-    "años,"
-   ],
-   [
-    19.55,
-    "cuenta"
-   ],
-   [
-    20.0,
-    "que"
-   ],
-   [
-    20.26,
-    "esa"
-   ],
-   [
-    20.52,
-    "disciplina"
-   ],
-   [
-    21.23,
-    "de"
-   ],
-   [
-    21.43,
-    "la"
-   ],
-   [
-    21.62,
-    "piscina"
-   ],
-   [
-    22.14,
-    "la"
-   ],
-   [
-    22.34,
-    "llevó"
-   ],
-   [
-    22.72,
-    "después"
-   ],
-   [
-    23.24,
-    "a"
-   ],
-   [
-    23.37,
-    "los"
-   ],
-   [
-    23.63,
-    "archivos."
-   ],
-   [
-    25.33,
-    "Y"
-   ],
-   [
-    25.46,
-    "lo"
-   ],
-   [
-    25.67,
-    "resume"
-   ],
-   [
-    26.14,
-    "en"
-   ],
-   [
-    26.35,
-    "una"
-   ],
-   [
-    26.62,
-    "sola"
-   ],
-   [
-    26.96,
-    "palabra:"
-   ],
-   [
-    28.52,
-    "inagotable."
-   ]
   ]
  },
  "s03": {
-  "duracion": 46.82,
+  "duracion": 42.9,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 8.46,
-    "texto": "En mil novecientos setenta y cuatro entra a la Universidad Católica, entre los primeros puestos del examen de admisión."
+    "hasta": 8.38,
+    "texto": "En mil novecientos setenta y cuatro entró a la Universidad Católica, en uno de los primeros puestos del examen de admisión."
    },
    {
-    "desde": 9.51,
-    "hasta": 12.32,
-    "texto": "El Perú vive el gobierno militar de Velasco."
+    "desde": 8.98,
+    "hasta": 12.05,
+    "texto": "El Perú vivía el gobierno militar de Velasco."
    },
    {
-    "desde": 12.77,
-    "hasta": 14.11,
+    "desde": 12.45,
+    "hasta": 13.22,
     "texto": "Reforma agraria."
    },
    {
-    "desde": 14.56,
-    "hasta": 15.96,
+    "desde": 13.57,
+    "hasta": 13.96,
     "texto": "Nacionalizaciones."
    },
    {
-    "desde": 16.41,
-    "hasta": 20.35,
-    "texto": "Un discurso que promete enterrar el pasado oligárquico."
+    "desde": 14.31,
+    "hasta": 17.38,
+    "texto": "Un discurso que prometía enterrar el pasado oligárquico."
    },
    {
-    "desde": 21.8,
-    "hasta": 24.2,
-    "texto": "Quiroz no apoyó al régimen."
+    "desde": 18.38,
+    "hasta": 26.08,
+    "texto": "Quiroz nunca apoyó al régimen: militó un tiempo en un pequeño partido trotskista que criticaba con dureza al gobierno militar."
    },
    {
-    "desde": 24.65,
-    "hasta": 29.34,
-    "texto": "Militó un tiempo en un pequeño partido trotskista que lo criticaba con dureza."
+    "desde": 27.08,
+    "hasta": 34.77,
+    "texto": "Para un estudiante de esa época, estudiar historia era una forma de entender el presente y de responder una pregunta:"
    },
    {
-    "desde": 30.79,
-    "hasta": 35.27,
-    "texto": "Para un estudiante de esa época, la historia no era un curso más."
+    "desde": 35.37,
+    "hasta": 37.68,
+    "texto": "¿el país estaba cambiando de verdad?"
    },
    {
-    "desde": 35.72,
-    "hasta": 38.31,
-    "texto": "Era la manera de responder una pregunta."
-   },
-   {
-    "desde": 39.36,
-    "hasta": 41.69,
-    "texto": "¿El país estaba cambiando de verdad?"
-   },
-   {
-    "desde": 42.14,
-    "hasta": 43.87,
+    "desde": 38.48,
+    "hasta": 40.4,
     "texto": "¿O repetía lo de siempre?"
    }
-  ],
-  "palabras": [
-   [
-    0.3,
-    "En"
-   ],
-   [
-    0.5,
-    "mil"
-   ],
-   [
-    0.78,
-    "novecientos"
-   ],
-   [
-    1.59,
-    "setenta"
-   ],
-   [
-    2.14,
-    "y"
-   ],
-   [
-    2.27,
-    "cuatro"
-   ],
-   [
-    2.75,
-    "entra"
-   ],
-   [
-    3.16,
-    "a"
-   ],
-   [
-    3.29,
-    "la"
-   ],
-   [
-    3.5,
-    "Universidad"
-   ],
-   [
-    4.31,
-    "Católica,"
-   ],
-   [
-    4.99,
-    "entre"
-   ],
-   [
-    5.4,
-    "los"
-   ],
-   [
-    5.67,
-    "primeros"
-   ],
-   [
-    6.29,
-    "puestos"
-   ],
-   [
-    6.83,
-    "del"
-   ],
-   [
-    7.1,
-    "examen"
-   ],
-   [
-    7.58,
-    "de"
-   ],
-   [
-    7.78,
-    "admisión."
-   ],
-   [
-    9.51,
-    "El"
-   ],
-   [
-    9.7,
-    "Perú"
-   ],
-   [
-    10.01,
-    "vive"
-   ],
-   [
-    10.32,
-    "el"
-   ],
-   [
-    10.51,
-    "gobierno"
-   ],
-   [
-    11.07,
-    "militar"
-   ],
-   [
-    11.57,
-    "de"
-   ],
-   [
-    11.76,
-    "Velasco."
-   ],
-   [
-    12.77,
-    "Reforma"
-   ],
-   [
-    13.4,
-    "agraria."
-   ],
-   [
-    14.56,
-    "Nacionalizaciones."
-   ],
-   [
-    16.41,
-    "Un"
-   ],
-   [
-    16.62,
-    "discurso"
-   ],
-   [
-    17.25,
-    "que"
-   ],
-   [
-    17.54,
-    "promete"
-   ],
-   [
-    18.1,
-    "enterrar"
-   ],
-   [
-    18.73,
-    "el"
-   ],
-   [
-    18.94,
-    "pasado"
-   ],
-   [
-    19.43,
-    "oligárquico."
-   ],
-   [
-    21.8,
-    "Quiroz"
-   ],
-   [
-    22.4,
-    "no"
-   ],
-   [
-    22.66,
-    "apoyó"
-   ],
-   [
-    23.17,
-    "al"
-   ],
-   [
-    23.43,
-    "régimen."
-   ],
-   [
-    24.65,
-    "Militó"
-   ],
-   [
-    25.07,
-    "un"
-   ],
-   [
-    25.24,
-    "tiempo"
-   ],
-   [
-    25.66,
-    "en"
-   ],
-   [
-    25.84,
-    "un"
-   ],
-   [
-    26.02,
-    "pequeño"
-   ],
-   [
-    26.49,
-    "partido"
-   ],
-   [
-    26.97,
-    "trotskista"
-   ],
-   [
-    27.62,
-    "que"
-   ],
-   [
-    27.86,
-    "lo"
-   ],
-   [
-    28.03,
-    "criticaba"
-   ],
-   [
-    28.63,
-    "con"
-   ],
-   [
-    28.87,
-    "dureza."
-   ],
-   [
-    30.79,
-    "Para"
-   ],
-   [
-    31.13,
-    "un"
-   ],
-   [
-    31.33,
-    "estudiante"
-   ],
-   [
-    32.08,
-    "de"
-   ],
-   [
-    32.28,
-    "esa"
-   ],
-   [
-    32.56,
-    "época,"
-   ],
-   [
-    33.03,
-    "la"
-   ],
-   [
-    33.24,
-    "historia"
-   ],
-   [
-    33.85,
-    "no"
-   ],
-   [
-    34.05,
-    "era"
-   ],
-   [
-    34.32,
-    "un"
-   ],
-   [
-    34.53,
-    "curso"
-   ],
-   [
-    34.93,
-    "más."
-   ],
-   [
-    35.72,
-    "Era"
-   ],
-   [
-    35.97,
-    "la"
-   ],
-   [
-    36.16,
-    "manera"
-   ],
-   [
-    36.61,
-    "de"
-   ],
-   [
-    36.8,
-    "responder"
-   ],
-   [
-    37.43,
-    "una"
-   ],
-   [
-    37.68,
-    "pregunta."
-   ],
-   [
-    39.36,
-    "¿El"
-   ],
-   [
-    39.61,
-    "país"
-   ],
-   [
-    39.93,
-    "estaba"
-   ],
-   [
-    40.37,
-    "cambiando"
-   ],
-   [
-    41.0,
-    "de"
-   ],
-   [
-    41.19,
-    "verdad?"
-   ],
-   [
-    42.14,
-    "¿O"
-   ],
-   [
-    42.34,
-    "repetía"
-   ],
-   [
-    42.88,
-    "lo"
-   ],
-   [
-    43.08,
-    "de"
-   ],
-   [
-    43.28,
-    "siempre?"
-   ]
   ]
  },
  "s04": {
-  "duracion": 65.57,
+  "duracion": 58.45,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 8.17,
+    "hasta": 8.38,
     "texto": "Casi con seguridad fue en un curso de Franklin Pease donde leyó por primera vez a Fernand Braudel, un historiador francés."
    },
    {
-    "desde": 9.62,
-    "hasta": 13.51,
+    "desde": 9.38,
+    "hasta": 13.61,
     "texto": "Braudel decía que la historia no corre a una sola velocidad."
    },
    {
-    "desde": 14.56,
-    "hasta": 20.39,
+    "desde": 14.21,
+    "hasta": 18.05,
     "texto": "Arriba están los acontecimientos: los gobiernos, las guerras, las noticias."
    },
    {
-    "desde": 20.84,
-    "hasta": 23.31,
+    "desde": 18.4,
+    "hasta": 20.33,
     "texto": "Cambian rápido, como las olas."
    },
    {
-    "desde": 24.76,
-    "hasta": 28.12,
+    "desde": 21.33,
+    "hasta": 24.02,
     "texto": "Más abajo, la economía y la sociedad."
    },
    {
-    "desde": 28.57,
-    "hasta": 29.82,
+    "desde": 24.37,
+    "hasta": 25.14,
     "texto": "Cambian despacio."
    },
    {
-    "desde": 31.27,
-    "hasta": 36.99,
-    "texto": "Y al fondo, la relación del hombre con su medio: la tierra, el clima."
+    "desde": 26.14,
+    "hasta": 31.14,
+    "texto": "Y al fondo, la relación del hombre con la tierra y el clima."
    },
    {
-    "desde": 37.44,
-    "hasta": 38.85,
+    "desde": 31.49,
+    "hasta": 33.03,
     "texto": "Casi no se mueve."
    },
    {
-    "desde": 40.8,
-    "hasta": 44.02,
-    "texto": "A esa historia lenta la llamó larga duración."
+    "desde": 34.53,
+    "hasta": 39.53,
+    "texto": "A lo que cambia tan despacio que dura siglos lo llamó larga duración."
    },
    {
-    "desde": 46.47,
-    "hasta": 47.96,
-    "texto": "Quiroz se quedó con eso."
+    "desde": 41.53,
+    "hasta": 46.91,
+    "texto": "Según Cueto, ahí aprendió a apreciar lo que persiste: las estructuras de la economía."
    },
    {
-    "desde": 48.41,
-    "hasta": 52.84,
-    "texto": "Aprendió a apreciar lo que persiste: las estructuras de la economía."
-   },
-   {
-    "desde": 54.29,
-    "hasta": 57.67,
+    "desde": 47.91,
+    "hasta": 51.37,
     "texto": "Hay cosas que no cambian aunque cambien los gobiernos."
    },
    {
-    "desde": 59.62,
-    "hasta": 62.62,
+    "desde": 52.87,
+    "hasta": 55.95,
     "texto": "Esa mirada larga es la de esta serie."
    }
-  ],
-  "palabras": [
-   [
-    0.3,
-    "Casi"
-   ],
-   [
-    0.62,
-    "con"
-   ],
-   [
-    0.88,
-    "seguridad"
-   ],
-   [
-    1.52,
-    "fue"
-   ],
-   [
-    1.77,
-    "en"
-   ],
-   [
-    1.96,
-    "un"
-   ],
-   [
-    2.16,
-    "curso"
-   ],
-   [
-    2.54,
-    "de"
-   ],
-   [
-    2.73,
-    "Franklin"
-   ],
-   [
-    3.31,
-    "Pease"
-   ],
-   [
-    3.69,
-    "donde"
-   ],
-   [
-    4.08,
-    "leyó"
-   ],
-   [
-    4.4,
-    "por"
-   ],
-   [
-    4.65,
-    "primera"
-   ],
-   [
-    5.16,
-    "vez"
-   ],
-   [
-    5.42,
-    "a"
-   ],
-   [
-    5.55,
-    "Fernand"
-   ],
-   [
-    6.06,
-    "Braudel,"
-   ],
-   [
-    6.64,
-    "un"
-   ],
-   [
-    6.83,
-    "historiador"
-   ],
-   [
-    7.6,
-    "francés."
-   ],
-   [
-    9.62,
-    "Braudel"
-   ],
-   [
-    10.13,
-    "decía"
-   ],
-   [
-    10.51,
-    "que"
-   ],
-   [
-    10.77,
-    "la"
-   ],
-   [
-    10.96,
-    "historia"
-   ],
-   [
-    11.53,
-    "no"
-   ],
-   [
-    11.73,
-    "corre"
-   ],
-   [
-    12.11,
-    "a"
-   ],
-   [
-    12.24,
-    "una"
-   ],
-   [
-    12.49,
-    "sola"
-   ],
-   [
-    12.81,
-    "velocidad."
-   ],
-   [
-    14.56,
-    "Arriba"
-   ],
-   [
-    15.1,
-    "están"
-   ],
-   [
-    15.56,
-    "los"
-   ],
-   [
-    15.86,
-    "acontecimientos:"
-   ],
-   [
-    17.17,
-    "los"
-   ],
-   [
-    17.48,
-    "gobiernos,"
-   ],
-   [
-    18.32,
-    "las"
-   ],
-   [
-    18.63,
-    "guerras,"
-   ],
-   [
-    19.32,
-    "las"
-   ],
-   [
-    19.62,
-    "noticias."
-   ],
-   [
-    20.84,
-    "Cambian"
-   ],
-   [
-    21.48,
-    "rápido,"
-   ],
-   [
-    22.12,
-    "como"
-   ],
-   [
-    22.51,
-    "las"
-   ],
-   [
-    22.83,
-    "olas."
-   ],
-   [
-    24.76,
-    "Más"
-   ],
-   [
-    25.12,
-    "abajo,"
-   ],
-   [
-    25.73,
-    "la"
-   ],
-   [
-    26.0,
-    "economía"
-   ],
-   [
-    26.79,
-    "y"
-   ],
-   [
-    26.97,
-    "la"
-   ],
-   [
-    27.23,
-    "sociedad."
-   ],
-   [
-    28.57,
-    "Cambian"
-   ],
-   [
-    29.12,
-    "despacio."
-   ],
-   [
-    31.27,
-    "Y"
-   ],
-   [
-    31.43,
-    "al"
-   ],
-   [
-    31.68,
-    "fondo,"
-   ],
-   [
-    32.25,
-    "la"
-   ],
-   [
-    32.5,
-    "relación"
-   ],
-   [
-    33.23,
-    "del"
-   ],
-   [
-    33.56,
-    "hombre"
-   ],
-   [
-    34.13,
-    "con"
-   ],
-   [
-    34.46,
-    "su"
-   ],
-   [
-    34.71,
-    "medio:"
-   ],
-   [
-    35.28,
-    "la"
-   ],
-   [
-    35.52,
-    "tierra,"
-   ],
-   [
-    36.18,
-    "el"
-   ],
-   [
-    36.42,
-    "clima."
-   ],
-   [
-    37.44,
-    "Casi"
-   ],
-   [
-    37.84,
-    "no"
-   ],
-   [
-    38.07,
-    "se"
-   ],
-   [
-    38.3,
-    "mueve."
-   ],
-   [
-    40.8,
-    "A"
-   ],
-   [
-    40.94,
-    "esa"
-   ],
-   [
-    41.22,
-    "historia"
-   ],
-   [
-    41.85,
-    "lenta"
-   ],
-   [
-    42.27,
-    "la"
-   ],
-   [
-    42.48,
-    "llamó"
-   ],
-   [
-    42.9,
-    "larga"
-   ],
-   [
-    43.32,
-    "duración."
-   ],
-   [
-    46.47,
-    "Quiroz"
-   ],
-   [
-    46.89,
-    "se"
-   ],
-   [
-    47.06,
-    "quedó"
-   ],
-   [
-    47.42,
-    "con"
-   ],
-   [
-    47.66,
-    "eso."
-   ],
-   [
-    48.41,
-    "Aprendió"
-   ],
-   [
-    48.99,
-    "a"
-   ],
-   [
-    49.12,
-    "apreciar"
-   ],
-   [
-    49.7,
-    "lo"
-   ],
-   [
-    49.89,
-    "que"
-   ],
-   [
-    50.14,
-    "persiste:"
-   ],
-   [
-    50.79,
-    "las"
-   ],
-   [
-    51.04,
-    "estructuras"
-   ],
-   [
-    51.81,
-    "de"
-   ],
-   [
-    52.0,
-    "la"
-   ],
-   [
-    52.2,
-    "economía."
-   ],
-   [
-    54.29,
-    "Hay"
-   ],
-   [
-    54.53,
-    "cosas"
-   ],
-   [
-    54.9,
-    "que"
-   ],
-   [
-    55.15,
-    "no"
-   ],
-   [
-    55.33,
-    "cambian"
-   ],
-   [
-    55.82,
-    "aunque"
-   ],
-   [
-    56.25,
-    "cambien"
-   ],
-   [
-    56.74,
-    "los"
-   ],
-   [
-    56.99,
-    "gobiernos."
-   ],
-   [
-    59.62,
-    "Esa"
-   ],
-   [
-    59.93,
-    "mirada"
-   ],
-   [
-    60.49,
-    "larga"
-   ],
-   [
-    60.96,
-    "es"
-   ],
-   [
-    61.2,
-    "la"
-   ],
-   [
-    61.44,
-    "de"
-   ],
-   [
-    61.67,
-    "esta"
-   ],
-   [
-    62.07,
-    "serie."
-   ]
-  ]
- },
- "s05": {
-  "duracion": 108.67,
-  "frases": [
-   {
-    "desde": 0.3,
-    "hasta": 3.53,
-    "texto": "A comienzos de los ochenta hace algo poco común."
-   },
-   {
-    "desde": 3.98,
-    "hasta": 7.43,
-    "texto": "Buena parte de los historiadores peruanos miraba a París."
-   },
-   {
-    "desde": 8.38,
-    "hasta": 12.32,
-    "texto": "Era la ciudad de Braudel, el de la larga duración."
-   },
-   {
-    "desde": 12.77,
-    "hasta": 15.69,
-    "texto": "Ahí se habían formado sus propios profesores."
-   },
-   {
-    "desde": 17.04,
-    "hasta": 20.57,
-    "texto": "Él se va a Nueva York, a la Universidad de Columbia."
-   },
-   {
-    "desde": 22.82,
-    "hasta": 27.61,
-    "texto": "Allí, el historiador Herbert Klein se fija en él y le ofrece una beca."
-   },
-   {
-    "desde": 28.06,
-    "hasta": 34.08,
-    "texto": "Y aprende historia cuantitativa: pensar el pasado con números, no solo con discursos."
-   },
-   {
-    "desde": 35.53,
-    "hasta": 38.1,
-    "texto": "Una de sus herramientas se llama regresión."
-   },
-   {
-    "desde": 38.55,
-    "hasta": 43.23,
-    "texto": "Imagina muchos puntos desordenados: cada uno, un dato."
-   },
-   {
-    "desde": 43.68,
-    "hasta": 45.93,
-    "texto": "A simple vista, solo ruido."
-   },
-   {
-    "desde": 46.98,
-    "hasta": 51.11,
-    "texto": "La regresión busca la línea que mejor pasa entre todos."
-   },
-   {
-    "desde": 51.56,
-    "hasta": 54.62,
-    "texto": "Si hay una tendencia, ayuda a verla."
-   },
-   {
-    "desde": 55.07,
-    "hasta": 56.58,
-    "texto": "Y dice cuánto pesa."
-   },
-   {
-    "desde": 58.53,
-    "hasta": 62.84,
-    "texto": "Aprendió a trabajar con cifras y a contrastarlas con documentos."
-   },
-   {
-    "desde": 63.29,
-    "hasta": 68.33,
-    "texto": "Años después, llevaría esa disciplina al estudio de la corrupción en el Perú."
-   },
-   {
-    "desde": 70.78,
-    "hasta": 77.71,
-    "texto": "De otro profesor, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad."
-   },
-   {
-    "desde": 79.66,
-    "hasta": 86.38,
-    "texto": "Con los años se vuelve, en palabras de Cueto, la máxima autoridad en la historia financiera del Perú."
-   },
-   {
-    "desde": 87.83,
-    "hasta": 89.79,
-    "texto": "Y sus ideas también se mueven."
-   },
-   {
-    "desde": 90.24,
-    "hasta": 98.17,
-    "texto": "De aquel joven trotskista pasa a una postura liberal, convencido de que el país necesitaba igualdad de oportunidades."
-   },
-   {
-    "desde": 99.62,
-    "hasta": 100.84,
-    "texto": "Cambió de ideas."
-   },
-   {
-    "desde": 101.29,
-    "hasta": 106.22,
-    "texto": "Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión."
-   }
-  ],
-  "palabras": [
-   [
-    0.3,
-    "A"
-   ],
-   [
-    0.43,
-    "comienzos"
-   ],
-   [
-    1.09,
-    "de"
-   ],
-   [
-    1.29,
-    "los"
-   ],
-   [
-    1.55,
-    "ochenta"
-   ],
-   [
-    2.08,
-    "hace"
-   ],
-   [
-    2.41,
-    "algo"
-   ],
-   [
-    2.74,
-    "poco"
-   ],
-   [
-    3.07,
-    "común."
-   ],
-   [
-    3.98,
-    "Buena"
-   ],
-   [
-    4.33,
-    "parte"
-   ],
-   [
-    4.69,
-    "de"
-   ],
-   [
-    4.87,
-    "los"
-   ],
-   [
-    5.11,
-    "historiadores"
-   ],
-   [
-    5.94,
-    "peruanos"
-   ],
-   [
-    6.47,
-    "miraba"
-   ],
-   [
-    6.89,
-    "a"
-   ],
-   [
-    7.01,
-    "París."
-   ],
-   [
-    8.38,
-    "Era"
-   ],
-   [
-    8.69,
-    "la"
-   ],
-   [
-    8.92,
-    "ciudad"
-   ],
-   [
-    9.46,
-    "de"
-   ],
-   [
-    9.69,
-    "Braudel,"
-   ],
-   [
-    10.39,
-    "el"
-   ],
-   [
-    10.62,
-    "de"
-   ],
-   [
-    10.85,
-    "la"
-   ],
-   [
-    11.08,
-    "larga"
-   ],
-   [
-    11.55,
-    "duración."
-   ],
-   [
-    12.77,
-    "Ahí"
-   ],
-   [
-    13.03,
-    "se"
-   ],
-   [
-    13.22,
-    "habían"
-   ],
-   [
-    13.66,
-    "formado"
-   ],
-   [
-    14.17,
-    "sus"
-   ],
-   [
-    14.42,
-    "propios"
-   ],
-   [
-    14.93,
-    "profesores."
-   ],
-   [
-    17.04,
-    "Él"
-   ],
-   [
-    17.24,
-    "se"
-   ],
-   [
-    17.44,
-    "va"
-   ],
-   [
-    17.64,
-    "a"
-   ],
-   [
-    17.77,
-    "Nueva"
-   ],
-   [
-    18.17,
-    "York,"
-   ],
-   [
-    18.57,
-    "a"
-   ],
-   [
-    18.7,
-    "la"
-   ],
-   [
-    18.9,
-    "Universidad"
-   ],
-   [
-    19.7,
-    "de"
-   ],
-   [
-    19.9,
-    "Columbia."
-   ],
-   [
-    22.82,
-    "Allí,"
-   ],
-   [
-    23.22,
-    "el"
-   ],
-   [
-    23.42,
-    "historiador"
-   ],
-   [
-    24.23,
-    "Herbert"
-   ],
-   [
-    24.78,
-    "Klein"
-   ],
-   [
-    25.18,
-    "se"
-   ],
-   [
-    25.38,
-    "fija"
-   ],
-   [
-    25.72,
-    "en"
-   ],
-   [
-    25.92,
-    "él"
-   ],
-   [
-    26.13,
-    "y"
-   ],
-   [
-    26.26,
-    "le"
-   ],
-   [
-    26.46,
-    "ofrece"
-   ],
-   [
-    26.94,
-    "una"
-   ],
-   [
-    27.21,
-    "beca."
-   ],
-   [
-    28.06,
-    "Y"
-   ],
-   [
-    28.2,
-    "aprende"
-   ],
-   [
-    28.76,
-    "historia"
-   ],
-   [
-    29.39,
-    "cuantitativa:"
-   ],
-   [
-    30.37,
-    "pensar"
-   ],
-   [
-    30.86,
-    "el"
-   ],
-   [
-    31.07,
-    "pasado"
-   ],
-   [
-    31.56,
-    "con"
-   ],
-   [
-    31.84,
-    "números,"
-   ],
-   [
-    32.47,
-    "no"
-   ],
-   [
-    32.68,
-    "solo"
-   ],
-   [
-    33.03,
-    "con"
-   ],
-   [
-    33.31,
-    "discursos."
-   ],
-   [
-    35.53,
-    "Una"
-   ],
-   [
-    35.76,
-    "de"
-   ],
-   [
-    35.94,
-    "sus"
-   ],
-   [
-    36.17,
-    "herramientas"
-   ],
-   [
-    36.93,
-    "se"
-   ],
-   [
-    37.11,
-    "llama"
-   ],
-   [
-    37.46,
-    "regresión."
-   ],
-   [
-    38.55,
-    "Imagina"
-   ],
-   [
-    39.23,
-    "muchos"
-   ],
-   [
-    39.83,
-    "puntos"
-   ],
-   [
-    40.42,
-    "desordenados:"
-   ],
-   [
-    41.62,
-    "cada"
-   ],
-   [
-    42.04,
-    "uno,"
-   ],
-   [
-    42.47,
-    "un"
-   ],
-   [
-    42.72,
-    "dato."
-   ],
-   [
-    43.68,
-    "A"
-   ],
-   [
-    43.84,
-    "simple"
-   ],
-   [
-    44.41,
-    "vista,"
-   ],
-   [
-    44.97,
-    "solo"
-   ],
-   [
-    45.37,
-    "ruido."
-   ],
-   [
-    46.98,
-    "La"
-   ],
-   [
-    47.2,
-    "regresión"
-   ],
-   [
-    47.94,
-    "busca"
-   ],
-   [
-    48.38,
-    "la"
-   ],
-   [
-    48.6,
-    "línea"
-   ],
-   [
-    49.04,
-    "que"
-   ],
-   [
-    49.34,
-    "mejor"
-   ],
-   [
-    49.78,
-    "pasa"
-   ],
-   [
-    50.15,
-    "entre"
-   ],
-   [
-    50.59,
-    "todos."
-   ],
-   [
-    51.56,
-    "Si"
-   ],
-   [
-    51.8,
-    "hay"
-   ],
-   [
-    52.14,
-    "una"
-   ],
-   [
-    52.47,
-    "tendencia,"
-   ],
-   [
-    53.38,
-    "ayuda"
-   ],
-   [
-    53.88,
-    "a"
-   ],
-   [
-    54.04,
-    "verla."
-   ],
-   [
-    55.07,
-    "Y"
-   ],
-   [
-    55.22,
-    "dice"
-   ],
-   [
-    55.6,
-    "cuánto"
-   ],
-   [
-    56.13,
-    "pesa."
-   ],
-   [
-    58.53,
-    "Aprendió"
-   ],
-   [
-    59.13,
-    "a"
-   ],
-   [
-    59.26,
-    "trabajar"
-   ],
-   [
-    59.86,
-    "con"
-   ],
-   [
-    60.12,
-    "cifras"
-   ],
-   [
-    60.58,
-    "y"
-   ],
-   [
-    60.72,
-    "a"
-   ],
-   [
-    60.85,
-    "contrastarlas"
-   ],
-   [
-    61.78,
-    "con"
-   ],
-   [
-    62.04,
-    "documentos."
-   ],
-   [
-    63.29,
-    "Años"
-   ],
-   [
-    63.61,
-    "después,"
-   ],
-   [
-    64.19,
-    "llevaría"
-   ],
-   [
-    64.77,
-    "esa"
-   ],
-   [
-    65.03,
-    "disciplina"
-   ],
-   [
-    65.74,
-    "al"
-   ],
-   [
-    65.94,
-    "estudio"
-   ],
-   [
-    66.45,
-    "de"
-   ],
-   [
-    66.65,
-    "la"
-   ],
-   [
-    66.84,
-    "corrupción"
-   ],
-   [
-    67.55,
-    "en"
-   ],
-   [
-    67.74,
-    "el"
-   ],
-   [
-    67.94,
-    "Perú."
-   ],
-   [
-    70.78,
-    "De"
-   ],
-   [
-    70.97,
-    "otro"
-   ],
-   [
-    71.29,
-    "profesor,"
-   ],
-   [
-    71.94,
-    "Kenneth"
-   ],
-   [
-    72.46,
-    "Maxwell,"
-   ],
-   [
-    73.04,
-    "aprende"
-   ],
-   [
-    73.56,
-    "que"
-   ],
-   [
-    73.82,
-    "un"
-   ],
-   [
-    74.01,
-    "buen"
-   ],
-   [
-    74.34,
-    "historiador"
-   ],
-   [
-    75.12,
-    "combina"
-   ],
-   [
-    75.63,
-    "la"
-   ],
-   [
-    75.83,
-    "profundidad"
-   ],
-   [
-    76.61,
-    "con"
-   ],
-   [
-    76.87,
-    "la"
-   ],
-   [
-    77.06,
-    "claridad."
-   ],
-   [
-    79.66,
-    "Con"
-   ],
-   [
-    79.92,
-    "los"
-   ],
-   [
-    80.18,
-    "años"
-   ],
-   [
-    80.51,
-    "se"
-   ],
-   [
-    80.71,
-    "vuelve,"
-   ],
-   [
-    81.24,
-    "en"
-   ],
-   [
-    81.44,
-    "palabras"
-   ],
-   [
-    82.03,
-    "de"
-   ],
-   [
-    82.23,
-    "Cueto,"
-   ],
-   [
-    82.69,
-    "la"
-   ],
-   [
-    82.89,
-    "máxima"
-   ],
-   [
-    83.35,
-    "autoridad"
-   ],
-   [
-    84.01,
-    "en"
-   ],
-   [
-    84.2,
-    "la"
-   ],
-   [
-    84.4,
-    "historia"
-   ],
-   [
-    85.0,
-    "financiera"
-   ],
-   [
-    85.72,
-    "del"
-   ],
-   [
-    85.98,
-    "Perú."
-   ],
-   [
-    87.83,
-    "Y"
-   ],
-   [
-    87.96,
-    "sus"
-   ],
-   [
-    88.21,
-    "ideas"
-   ],
-   [
-    88.59,
-    "también"
-   ],
-   [
-    89.1,
-    "se"
-   ],
-   [
-    89.29,
-    "mueven."
-   ],
-   [
-    90.24,
-    "De"
-   ],
-   [
-    90.44,
-    "aquel"
-   ],
-   [
-    90.85,
-    "joven"
-   ],
-   [
-    91.25,
-    "trotskista"
-   ],
-   [
-    91.99,
-    "pasa"
-   ],
-   [
-    92.32,
-    "a"
-   ],
-   [
-    92.46,
-    "una"
-   ],
-   [
-    92.73,
-    "postura"
-   ],
-   [
-    93.27,
-    "liberal,"
-   ],
-   [
-    93.87,
-    "convencido"
-   ],
-   [
-    94.61,
-    "de"
-   ],
-   [
-    94.81,
-    "que"
-   ],
-   [
-    95.08,
-    "el"
-   ],
-   [
-    95.28,
-    "país"
-   ],
-   [
-    95.62,
-    "necesitaba"
-   ],
-   [
-    96.36,
-    "igualdad"
-   ],
-   [
-    96.96,
-    "de"
-   ],
-   [
-    97.16,
-    "oportunidades."
-   ],
-   [
-    99.62,
-    "Cambió"
-   ],
-   [
-    100.12,
-    "de"
-   ],
-   [
-    100.34,
-    "ideas."
-   ],
-   [
-    101.29,
-    "Sus"
-   ],
-   [
-    101.56,
-    "cálculos"
-   ],
-   [
-    102.18,
-    "eran"
-   ],
-   [
-    102.52,
-    "provisionales:"
-   ],
-   [
-    103.55,
-    "él"
-   ],
-   [
-    103.76,
-    "mismo"
-   ],
-   [
-    104.17,
-    "los"
-   ],
-   [
-    104.44,
-    "dejó"
-   ],
-   [
-    104.79,
-    "abiertos"
-   ],
-   [
-    105.4,
-    "a"
-   ],
-   [
-    105.54,
-    "revisión."
-   ]
   ]
  },
  "s06": {
-  "duracion": 34.01,
+  "duracion": 55.33,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 3.97,
-    "texto": "Pero su primer caso lo había encontrado antes de irse."
+    "hasta": 4.53,
+    "texto": "Su primer caso lo encontró en Lima, cuando terminaba la universidad."
    },
    {
-    "desde": 5.02,
-    "hasta": 14.79,
-    "texto": "Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve."
+    "desde": 5.13,
+    "hasta": 12.82,
+    "texto": "Félix Denegri Luna tenía una gran biblioteca, y fue él quien le sugirió mirar con más cuidado el siglo diecinueve."
    },
    {
-    "desde": 16.24,
-    "hasta": 17.71,
-    "texto": "Ahí estaba el guano."
+    "desde": 13.82,
+    "hasta": 20.36,
+    "texto": "Ahí estaba el guano, el abono que el Perú sacaba de sus islas y vendía a Europa."
    },
    {
-    "desde": 18.16,
-    "hasta": 23.67,
-    "texto": "Y una deuda que el Estado decidió pagar con esa plata, en mil ochocientos cincuenta."
+    "desde": 20.96,
+    "hasta": 28.65,
+    "texto": "Cuando Quiroz estudiaba, los libros de historia aseguraban que toda esa riqueza se había derrochado en lujos de las élites."
    },
    {
-    "desde": 24.92,
-    "hasta": 30.6,
-    "texto": "Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado."
+    "desde": 29.85,
+    "hasta": 37.93,
+    "texto": "En mil ochocientos cincuenta, el Estado decidió pagar con la plata del guano una deuda vieja con acreedores del propio país."
    },
    {
-    "desde": 32.05,
-    "hasta": 34.01,
+    "desde": 39.43,
+    "hasta": 45.97,
+    "texto": "Pero en su tesis de mil novecientos ochenta, Quiroz mostró que no todo se fue en lujos."
+   },
+   {
+    "desde": 46.47,
+    "hasta": 51.47,
+    "texto": "Algunos inflaron el valor de esa deuda... para enriquecerse a costa del Estado."
+   },
+   {
+    "desde": 52.67,
+    "hasta": 54.98,
     "texto": "¿Adónde fue a parar esa plata?"
    }
-  ],
-  "palabras": [
-   [
-    0.3,
-    "Pero"
-   ],
-   [
-    0.63,
-    "su"
-   ],
-   [
-    0.83,
-    "primer"
-   ],
-   [
-    1.3,
-    "caso"
-   ],
-   [
-    1.63,
-    "lo"
-   ],
-   [
-    1.83,
-    "había"
-   ],
-   [
-    2.23,
-    "encontrado"
-   ],
-   [
-    2.97,
-    "antes"
-   ],
-   [
-    3.37,
-    "de"
-   ],
-   [
-    3.57,
-    "irse."
-   ],
-   [
-    5.02,
-    "Félix"
-   ],
-   [
-    5.43,
-    "Denegri"
-   ],
-   [
-    5.99,
-    "Luna,"
-   ],
-   [
-    6.41,
-    "un"
-   ],
-   [
-    6.61,
-    "estudioso"
-   ],
-   [
-    7.31,
-    "de"
-   ],
-   [
-    7.51,
-    "la"
-   ],
-   [
-    7.72,
-    "historia,"
-   ],
-   [
-    8.42,
-    "dueño"
-   ],
-   [
-    8.83,
-    "de"
-   ],
-   [
-    9.04,
-    "una"
-   ],
-   [
-    9.32,
-    "gran"
-   ],
-   [
-    9.66,
-    "biblioteca"
-   ],
-   [
-    10.43,
-    "en"
-   ],
-   [
-    10.63,
-    "Lima,"
-   ],
-   [
-    11.05,
-    "le"
-   ],
-   [
-    11.26,
-    "sugirió"
-   ],
-   [
-    11.81,
-    "mirar"
-   ],
-   [
-    12.23,
-    "con"
-   ],
-   [
-    12.51,
-    "más"
-   ],
-   [
-    12.78,
-    "cuidado"
-   ],
-   [
-    13.34,
-    "el"
-   ],
-   [
-    13.55,
-    "siglo"
-   ],
-   [
-    13.96,
-    "diecinueve."
-   ],
-   [
-    16.24,
-    "Ahí"
-   ],
-   [
-    16.52,
-    "estaba"
-   ],
-   [
-    17.01,
-    "el"
-   ],
-   [
-    17.22,
-    "guano."
-   ],
-   [
-    18.16,
-    "Y"
-   ],
-   [
-    18.29,
-    "una"
-   ],
-   [
-    18.55,
-    "deuda"
-   ],
-   [
-    18.94,
-    "que"
-   ],
-   [
-    19.2,
-    "el"
-   ],
-   [
-    19.39,
-    "Estado"
-   ],
-   [
-    19.84,
-    "decidió"
-   ],
-   [
-    20.36,
-    "pagar"
-   ],
-   [
-    20.75,
-    "con"
-   ],
-   [
-    21.01,
-    "esa"
-   ],
-   [
-    21.27,
-    "plata,"
-   ],
-   [
-    21.73,
-    "en"
-   ],
-   [
-    21.92,
-    "mil"
-   ],
-   [
-    22.18,
-    "ochocientos"
-   ],
-   [
-    22.96,
-    "cincuenta."
-   ],
-   [
-    24.92,
-    "Y"
-   ],
-   [
-    25.05,
-    "encontró"
-   ],
-   [
-    25.61,
-    "que"
-   ],
-   [
-    25.86,
-    "se"
-   ],
-   [
-    26.04,
-    "había"
-   ],
-   [
-    26.42,
-    "inflado"
-   ],
-   [
-    26.92,
-    "el"
-   ],
-   [
-    27.11,
-    "valor"
-   ],
-   [
-    27.48,
-    "de"
-   ],
-   [
-    27.67,
-    "la"
-   ],
-   [
-    27.85,
-    "deuda"
-   ],
-   [
-    28.23,
-    "para"
-   ],
-   [
-    28.54,
-    "enriquecerse"
-   ],
-   [
-    29.35,
-    "a"
-   ],
-   [
-    29.48,
-    "costa"
-   ],
-   [
-    29.85,
-    "del"
-   ],
-   [
-    30.1,
-    "Estado."
-   ],
-   [
-    32.05,
-    "¿Adónde"
-   ],
-   [
-    32.56,
-    "fue"
-   ],
-   [
-    32.81,
-    "a"
-   ],
-   [
-    32.94,
-    "parar"
-   ],
-   [
-    33.32,
-    "esa"
-   ],
-   [
-    33.57,
-    "plata?"
-   ]
+  ]
+ },
+ "s05": {
+  "duracion": 116.56,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 4.15,
+    "texto": "Poco después toma un camino que pocos peruanos habían tomado."
+   },
+   {
+    "desde": 4.65,
+    "hasta": 13.49,
+    "texto": "Buena parte de los historiadores peruanos miraba a París, la ciudad de Braudel, donde se habían formado algunos de los profesores de Quiroz."
+   },
+   {
+    "desde": 14.39,
+    "hasta": 19.39,
+    "texto": "Él, en cambio, se va a Nueva York, a la Universidad de Columbia."
+   },
+   {
+    "desde": 21.19,
+    "hasta": 24.65,
+    "texto": "Allí, el historiador Herbert Klein le ofrece una beca."
+   },
+   {
+    "desde": 25.05,
+    "hasta": 30.44,
+    "texto": "Y Quiroz aprende historia cuantitativa: pensar el pasado con números, no solo con discursos."
+   },
+   {
+    "desde": 31.44,
+    "hasta": 34.13,
+    "texto": "Una de sus herramientas se llama regresión:"
+   },
+   {
+    "desde": 34.48,
+    "hasta": 38.33,
+    "texto": "imagina muchos puntos desordenados, cada uno una observación, un dato."
+   },
+   {
+    "desde": 38.73,
+    "hasta": 40.65,
+    "texto": "A simple vista, solo ruido."
+   },
+   {
+    "desde": 41.45,
+    "hasta": 49.53,
+    "texto": "La regresión busca la línea que pasa lo más cerca posible de todos, y si hay una tendencia, la deja ver."
+   },
+   {
+    "desde": 50.33,
+    "hasta": 58.79,
+    "texto": "Cada punto junta dos cifras, y la inclinación de la línea dice cuánto sube una por cada paso que da la otra."
+   },
+   {
+    "desde": 60.79,
+    "hasta": 64.63,
+    "texto": "Aprende a trabajar con cifras y a contrastarlas con documentos."
+   },
+   {
+    "desde": 65.63,
+    "hasta": 70.63,
+    "texto": "Años después, llevará esa disciplina al estudio de la corrupción en el Perú."
+   },
+   {
+    "desde": 72.63,
+    "hasta": 80.33,
+    "texto": "De otro de sus profesores en Columbia, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad."
+   },
+   {
+    "desde": 81.83,
+    "hasta": 88.37,
+    "texto": "Con los años, según Cueto, llega a ser la máxima autoridad en la historia financiera del Perú."
+   },
+   {
+    "desde": 89.37,
+    "hasta": 98.21,
+    "texto": "Sus ideas políticas también cambian: del joven trotskista pasa a una postura liberal, que pide igualdad de oportunidades para todos en la economía."
+   },
+   {
+    "desde": 99.21,
+    "hasta": 104.6,
+    "texto": "Y no da por cerradas ni sus propias cifras: llama provisionales a sus cálculos."
+   },
+   {
+    "desde": 106.6,
+    "hasta": 115.06,
+    "texto": "Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro."
+   }
   ]
  },
  "s07": {
-  "duracion": 6.21,
+  "duracion": 5.07,
   "frases": [
    {
     "desde": 2.8,
-    "hasta": 6.21,
+    "hasta": 4.72,
     "texto": "Próximo episodio: La deuda defraudada."
    }
-  ],
-  "palabras": [
-   [
-    2.8,
-    "Próximo"
-   ],
-   [
-    3.5,
-    "episodio:"
-   ],
-   [
-    4.38,
-    "La"
-   ],
-   [
-    4.64,
-    "deuda"
-   ],
-   [
-    5.16,
-    "defraudada."
-   ]
   ]
  }
 }

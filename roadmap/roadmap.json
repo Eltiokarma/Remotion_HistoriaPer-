@@ -1303,22 +1303,49 @@
       "id": "e1-guion-v3",
       "fase": "e1",
       "titulo": "Guion 0·1 versión 3: orden cronológico, Escribidor Escribano y diseño y animación",
-      "entregable": "guion.md v3 con la voz corregida y cada beat anclado a su palabra; primera acta del Escribano (2 altas y 11 medias; aplicadas salvo 3 que esperan a Gerson); diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); narracion_v3_propuesta.json y manuscrito.md. Falta: visto bueno de Gerson, regenerar la voz, re-anclar beats y los tres beats nuevos de MecanismoDeuda",
-      "estado": "en_curso",
+      "entregable": "guion.md v3 con la voz corregida y cada beat anclado a su palabra; primera acta del Escribano (2 altas y 11 medias; aplicadas salvo 3 que esperan a Gerson); diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); narracion_v3_propuesta.json y manuscrito.md.. Aprobado por Gerson el 2026-11-19.",
+      "estado": "hecho",
       "depende_de": [
         "e1-guion-externo"
       ],
       "prevista": null,
       "real": {
         "inicio": "2026-11-19",
-        "fin": null
+        "fin": "2026-11-19"
       },
-      "bloqueo": "Espera la revisión de Gerson del texto antes de regenerar la voz en ElevenLabs.",
+      "bloqueo": null,
       "evidencia": [
         "historia/videos/001-el-hombre/guion.md",
         "historia/videos/001-el-hombre/diseno/diseno-y-animacion-2026-11-19.md",
         "historia/videos/001-el-hombre/narracion_v3_propuesta.json",
         "historia/videos/001-el-hombre/manuscrito.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-voz-v4",
+      "fase": "e1",
+      "titulo": "Narración v4: guion versión 3 con «Joder Jolines» y el modelo eleven_v4",
+      "entregable": "public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 y narracion_tiempos.json (5:26 de voz); pausas de diseño de 1 s o más garantizadas (respiro_min). Falta: pasar s06 antes de s05 en escenas.json, re-anclar los beats, los beats nuevos de MecanismoDeuda (zarpa, lujos, tacha), la música y el render",
+      "estado": "en_curso",
+      "depende_de": [
+        "e1-guion-v3"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-19",
+        "fin": null
+      },
+      "bloqueo": "La voz nueva está generada, pero escenas.json todavía tiene los beats y duraciones de la voz anterior: no renderizar hasta re-anclarlos.",
+      "evidencia": [
+        "historia/videos/001-el-hombre/narracion.json",
+        "historia/videos/001-el-hombre/narracion_tiempos.json",
+        "historia/scripts/narracion.py"
       ],
       "tiempo": {
         "humano_min": null,
