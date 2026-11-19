@@ -20,7 +20,7 @@ La deuda reconocida crece casi cinco veces en un año. Sobre las pruebas de impr
 - **Cámara:** quieta.
 - **Efecto:** La pila crece con peso pesado, de una vez, y asienta (impacto de papel 0,025). Nada más se mueve.
 - **Sonido:** Papel; un golpe grave cuando la pila termina de crecer. Sin música.
-- **Falta:** Pila de vales como pieza (se arma con 2c-vale-sin-texto repetido).
+- **Falta:** Pila de vales como pieza (se arma con 2c-vale-sin-texto repetido). Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).
 
 ### 0.2 · marcar · 12.3 s
 
@@ -75,13 +75,13 @@ Qué es el guano y quién lo compra. El grabado de islas v3: mar, roca cubierta 
 
 ### 1.3 · mostrar · 14.1 s
 
-Sacarlo exige trabajo, y no siempre libre. Depósito, pala y saco; una figura llena el saco. En la pausa sin voz, el saco sube al barco.
+Sacarlo exige trabajo, y no siempre libre. Sobre el fondo limpio de Chincha, el trabajador del sombrero vierte la pala en el saco; otro trabajador lo sujeta, lo levanta y lo lleva hacia el borde, y en la pausa sin voz el saco sube al barco. Son dos personas distintas: la voz habla de varias formas de trabajo.
 
 - **Pantalla:** sin rótulos.
 - **Cámara:** quieta.
 - **Efecto:** Pala en arco; granos con semilla que caen una vez y se asientan; balanceo corto del casco al recibir el saco.
 - **Sonido:** Raspado de pala, saco al apoyarse, madera del barco.
-- **Falta:** La figura del trabajador como PNG de ChatGPT (imagenes-chatgpt.md). Sin rótulo sobre la figura: su aspecto no documenta su condición.
+- **Falta:** Pala y saco como SVG en las manos (ya existen); el embarque con el barco de 1c. Sin rótulo sobre las figuras: su aspecto no documenta su condición. Trabajadores de distintos orígenes al fondo, si Gerson lo aprueba (prompts-chatgpt-v2.md, n.º 5).
 
 ### 1.4 · explicar · 8.8 s
 
@@ -137,7 +137,7 @@ Pagar lo que se debe devuelve la confianza: la idea era buena. Del folio reconoc
 
 ### 2.4 · definir · 15.4 s
 
-El vale es una promesa de pago con intereses, y se puede vender. El vale entra junto al folio reconocido. Unas monedas a la izquierda se apartan: el vale no es efectivo. Con «se podía vender», una flecha corta sale del vale hacia el borde derecho, vacío.
+El vale es una promesa de pago con intereses, y se puede vender. La reclamante recibe el vale con las dos manos, junto al folio reconocido. Unas monedas a la izquierda se apartan: el vale no es efectivo. Con «se podía vender», una flecha corta sale del vale hacia el borde derecho, vacío.
 
 - **Pantalla:** 6 % de interés [VERIFICAR: anual].
 - **Cámara:** quieta.
@@ -156,21 +156,23 @@ La ley tenía dos huecos. El libro de la ley vuelve al centro; el corrector enci
 
 ### 2.6 · comparar · 16.1 s
 
-Se compra barato y se hace reconocer por mucho más. Tres cuadros de acción: el reclamante entrega el folio, el comprador lo toma, el sobre va en sentido contrario. Después, en la pizarra, dos barras de tiza: precio de compra (baja) y valor reconocido (alta), sin cifras.
+Se compra barato y se hace reconocer por mucho más. Delante de la pizarra, tres cuadros de acción con las mismas dos figuras: la reclamante ofrece el folio, el comprador lo toma y le entrega el sobre, y ella recibe el pago. Después, en la pizarra, dos barras de tiza: precio de compra (baja) y valor reconocido (alta), sin cifras.
 
 - **Pantalla:** precio; valor reconocido.
 - **Cámara:** quieta.
 - **Efecto:** La barra alta crece después de la baja, más lenta. Las dos barras se quedan en el tablero (vuelven en Londres).
 - **Sonido:** Papel y sobre; tiza.
+- **Falta:** Folio y sobre como SVG en las manos (ya existen).
 
 ### 2.7 · distinguir · 26.5 s
 
-Para lograrlo había ayuda; la ilegal es la de los funcionarios. Entran las fichas de función del intermediario y del funcionario. Con «comisiones ilegales», un desvío rojo salta la revisión. Con 17, el intermediario queda en luz neutra; con 18, el enlace del funcionario queda en rojo.
+Para lograrlo había ayuda; la ilegal es la de los funcionarios. Entran el intermediario (a la izquierda) y el funcionario (a la derecha) de medio cuerpo, cada uno con una ficha de función debajo que dice que es un ejemplo. Con «comisiones ilegales», un desvío rojo salta la revisión. Con 17, el intermediario queda en luz neutra; con 18, el enlace del funcionario queda en rojo.
 
-- **Pantalla:** sin rótulos.
+- **Pantalla:** intermediario (ejemplo) · funcionario (ejemplo).
 - **Cámara:** quieta.
 - **Efecto:** Un solo foco activo por vez. El rojo, solo en el desvío y el enlace ilegal.
 - **Sonido:** Tiza; nada sobre el rojo.
+- **Falta:** Nada nuevo. Ojo: el intermediario de ejemplo no debe parecerse a la ficha de Elías de s03, para que nadie lo tome por él.
 
 ### 2.8 · recapitular · 11.0 s
 
@@ -195,7 +197,7 @@ Un caso real: qué reclamaba Novoa, y cómo. La carpeta se abre: folio de la sol
 - **Cámara:** quieta.
 - **Efecto:** El renglón entra sin efecto; la música sale con él.
 - **Sonido:** Sin música en el renglón de las personas esclavizadas.
-- **Falta:** Ficha de la abolición (pieza nueva).
+- **Falta:** Ficha de la abolición (pieza nueva). Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).
 
 ### 3.2 · presentar · 17.3 s
 
@@ -265,7 +267,7 @@ Novoa fue uno de muchos: la pila del gancho, ahora con su causa. Vuelve la pila 
 - **Cámara:** quieta.
 - **Efecto:** Expedientes que se apilan con peso; la pila crece igual que en el gancho (mismo movimiento: el espectador lo reconoce).
 - **Sonido:** Papel; el mismo golpe grave del gancho.
-- **Falta:** Línea de 1852 con las dos marcas.
+- **Falta:** Línea de 1852 con las dos marcas. Fondo de la estantería del archivo (prompts-chatgpt-v2.md, n.º 3).
 
 ### 4.2 · nombrar · 24.2 s · excepción reservada
 
@@ -330,7 +332,7 @@ Los tenedores protestan, y Gran Bretaña y Francia los respaldan. Una mano sosti
 - **Cámara:** quieta.
 - **Efecto:** Los barcos apenas se mueven; el mar sigue con su fase.
 - **Sonido:** El mar de s01, más grave; la música en tensión.
-- **Falta:** Barcos en el horizonte de islas v3 (reutilizar el barco de 1c, a escala).
+- **Falta:** Barcos en el horizonte de islas v3 (reutilizar el barco de 1c, a escala). Fondo de las islas con barcos (prompts-chatgpt-v2.md, n.º 2).
 
 ### 4.9 · restaurar · 34.3 s
 
@@ -364,6 +366,7 @@ Este caso se reconstruye porque dejó papeles. Sobre la mesa del historiador vue
 - **Cámara:** recorrido (El circuito final: abrir de la mesa a todos los papeles del episodio, una sola vez, y quedarse.).
 - **Efecto:** Objetos conocidos, sin presentación nueva; cada uno asienta.
 - **Sonido:** Una hoja por objeto.
+- **Falta:** Fondo de la mesa del historiador (prompts-chatgpt-v2.md, n.º 4).
 
 ### 5.3 · abrir · 19.0 s
 

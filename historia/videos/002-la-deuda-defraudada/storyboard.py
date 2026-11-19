@@ -114,9 +114,14 @@ def src(ruta):
     if p.suffix == ".svg":
         return "data:image/svg+xml;base64," + base64.b64encode(p.read_bytes()).decode()
     from PIL import Image
-    im = Image.open(p).convert("RGB")
-    im.thumbnail((1600, 1600))
+    im = Image.open(p)
     buf = io.BytesIO()
+    if im.mode == "RGBA":   # figuras con transparencia: PNG chico, para no perder el alfa
+        im.thumbnail((420, 420))
+        im.save(buf, "PNG", optimize=True)
+        return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode()
+    im = im.convert("RGB")
+    im.thumbnail((1600, 1600))
     im.save(buf, "JPEG", quality=72, optimize=True)
     return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
 
@@ -185,6 +190,9 @@ def plano_html(e, p):
     piezas = "".join(
         f'<figure class="pieza"><img loading="lazy" src="{src(x)}" alt=""><figcaption>{esc(Path(x).name)}</figcaption></figure>'
         for x in p.get("piezas", []))
+    figuras = "".join(
+        f'<figure class="pieza figura"><img loading="lazy" src="{src(x)}" alt=""><figcaption>{esc(Path(x).name)}</figcaption></figure>'
+        for x in p.get("personajes", []))
     avisos = "".join(f"<li>{esc(a)}</li>" for a in p["_avisos"])
     sello = '<span class="sello exc">excepción reservada</span>' if p.get("excepcion") else ""
     corte = '<span class="sello corte">punto posible de corte de escena</span>' if p.get("corte_posible") else ""
@@ -209,6 +217,7 @@ def plano_html(e, p):
     </div>
   </div>
   {f'<div class="laminas">{imgs}</div>' if imgs else ''}
+  {f'<div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila">{figuras}</div></div>' if figuras else ''}
   {f'<div class="piezas"><span class="et">Piezas existentes</span><div class="fila">{piezas}</div></div>' if piezas else ''}
 </article>"""
 
@@ -334,6 +343,7 @@ h3 { font-size:1.2rem; margin:0; font-weight:600; flex:1 1 320px; }
 .laminas figure { margin:8px 0; } .laminas img { width:100%; height:auto; display:block; border-radius:4px; border:1px solid var(--linea); }
 figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
 .piezas .fila { display:flex; gap:10px; flex-wrap:wrap; } .pieza { margin:0; width:160px; }
+.figura img { height:150px !important; }
 .pieza img { width:100%; height:100px; object-fit:contain; background:var(--caja2); border-radius:4px; padding:6px; }
 .pieza figcaption { font-family:ui-monospace, monospace; font-size:.6rem; word-break:break-all; }
 @media (max-width:700px) { .laminas figure { overflow-x:auto; } .laminas img { width:auto; max-width:none; height:280px; } .linea { height:40px; } .seg span { display:none; } }

@@ -68,7 +68,7 @@
       "Tres espacios con función fija: el lugar (mapa Natural Earth y grabado de islas v3), el mecanismo (pizarra que acumula piezas de papel y tiza, escena 2) y el expediente (mesa de madera en cenital, escenas 3 a 5).",
       "Papel, tinta y fichas a máquina con cuadrito rojo (gramática de la serie). Una ficha nueva por vez.",
       "Cámara quieta mientras se lee o se escucha un dato. Los objetos se mueven; la cámara no, al mismo tiempo.",
-      "Personajes solo donde hay una acción física que la voz describe: cargar el guano (1) y comprar el reclamo (2). Las personas reales se identifican con fichas, no con retratos."
+      "Personajes solo donde hay una acción que la voz describe: cargar el guano (s01) y vender, comprar, gestionar y aprobar el reclamo (s02). Son PNG de ChatGPT con aspecto de grabado y representan funciones, no personas. Las personas reales (Castilla, Echenique, Elías, Torrico, Mendiburu) van con ficha a máquina y, si existe, con su retrato de época en dominio público; nunca con una cara inventada."
     ],
     "progresion": "La pila de vales: aparece en el gancho, se reduce a un solo vale en la escena 2, se vuelve la cifra de Novoa en la 3, recupera su altura de 24 millones en la 4 (con la marca roja de la junta) y queda con su marca fantasma en la 5. Junto con la pila progresa el rojo de culpa: primero un borde, después la mitad marcada, después la mancha del lavado.",
     "excepciones": [
@@ -140,7 +140,7 @@
           "base": [
             "4A.1"
           ],
-          "falta": "Pila de vales como pieza (se arma con 2c-vale-sin-texto repetido)."
+          "falta": "Pila de vales como pieza (se arma con 2c-vale-sin-texto repetido). Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1)."
         },
         {
           "id": "0.2",
@@ -283,7 +283,7 @@
           "verbo": "mostrar",
           "respiro": 2,
           "idea": "Sacarlo exige trabajo, y no siempre libre.",
-          "imagen": "Depósito, pala y saco; una figura llena el saco. En la pausa sin voz, el saco sube al barco.",
+          "imagen": "Sobre el fondo limpio de Chincha, el trabajador del sombrero vierte la pala en el saco; otro trabajador lo sujeta, lo levanta y lo lleva hacia el borde, y en la pausa sin voz el saco sube al barco. Son dos personas distintas: la voz habla de varias formas de trabajo.",
           "pantalla": [],
           "camara": {
             "tipo": "quieta"
@@ -298,7 +298,14 @@
             "diseno/recursos-escena01/svg/1b-trabajo/1b-deposito-guano.svg",
             "diseno/recursos-escena01/svg/1b-trabajo/1b-saco-abierto.svg"
           ],
-          "falta": "La figura del trabajador como PNG de ChatGPT (imagenes-chatgpt.md). Sin rótulo sobre la figura: su aspecto no documenta su condición."
+          "falta": "Pala y saco como SVG en las manos (ya existen); el embarque con el barco de 1c. Sin rótulo sobre las figuras: su aspecto no documenta su condición. Trabajadores de distintos orígenes al fondo, si Gerson lo aprueba (prompts-chatgpt-v2.md, n.º 5).",
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/fondo-limpio-chincha.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-1b-vierte-guano.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-2a-sujeta-saco.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-2b-levanta-saco.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-2c-transporta-saco.png"
+          ]
         },
         {
           "id": "1.4",
@@ -459,7 +466,7 @@
           "verbo": "definir",
           "respiro": 1,
           "idea": "El vale es una promesa de pago con intereses, y se puede vender.",
-          "imagen": "El vale entra junto al folio reconocido. Unas monedas a la izquierda se apartan: el vale no es efectivo. Con «se podía vender», una flecha corta sale del vale hacia el borde derecho, vacío.",
+          "imagen": "La reclamante recibe el vale con las dos manos, junto al folio reconocido. Unas monedas a la izquierda se apartan: el vale no es efectivo. Con «se podía vender», una flecha corta sale del vale hacia el borde derecho, vacío.",
           "pantalla": [
             {
               "en": 8,
@@ -476,6 +483,9 @@
           ],
           "piezas": [
             "diseno/recursos-escena02/svg/2c-vale/2c-vale.svg"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/reclamante-recibe-vale.png"
           ]
         },
         {
@@ -519,7 +529,7 @@
           "verbo": "comparar",
           "respiro": 2,
           "idea": "Se compra barato y se hace reconocer por mucho más.",
-          "imagen": "Tres cuadros de acción: el reclamante entrega el folio, el comprador lo toma, el sobre va en sentido contrario. Después, en la pizarra, dos barras de tiza: precio de compra (baja) y valor reconocido (alta), sin cifras.",
+          "imagen": "Delante de la pizarra, tres cuadros de acción con las mismas dos figuras: la reclamante ofrece el folio, el comprador lo toma y le entrega el sobre, y ella recibe el pago. Después, en la pizarra, dos barras de tiza: precio de compra (baja) y valor reconocido (alta), sin cifras.",
           "pantalla": [
             {
               "en": 14,
@@ -543,7 +553,14 @@
           "piezas": [
             "diseno/recursos-escena02/svg/2d-compra/2d-tiza-precio-de-compra.svg",
             "diseno/recursos-escena02/svg/2d-compra/2d-tiza-valor-reconocido.svg"
-          ]
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/reclamante-a-ofrece-folio.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/comprador-a-toma-folio.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/comprador-b-entrega-sobre.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/reclamante-b-recibe-pago.png"
+          ],
+          "falta": "Folio y sobre como SVG en las manos (ya existen)."
         },
         {
           "id": "2.7",
@@ -553,8 +570,14 @@
           ],
           "verbo": "distinguir",
           "idea": "Para lograrlo había ayuda; la ilegal es la de los funcionarios.",
-          "imagen": "Entran las fichas de función del intermediario y del funcionario. Con «comisiones ilegales», un desvío rojo salta la revisión. Con 17, el intermediario queda en luz neutra; con 18, el enlace del funcionario queda en rojo.",
-          "pantalla": [],
+          "imagen": "Entran el intermediario (a la izquierda) y el funcionario (a la derecha) de medio cuerpo, cada uno con una ficha de función debajo que dice que es un ejemplo. Con «comisiones ilegales», un desvío rojo salta la revisión. Con 17, el intermediario queda en luz neutra; con 18, el enlace del funcionario queda en rojo.",
+          "pantalla": [
+            {
+              "en": 16,
+              "t": "intermediario (ejemplo) · funcionario (ejemplo)",
+              "termino": true
+            }
+          ],
           "camara": {
             "tipo": "quieta"
           },
@@ -567,7 +590,12 @@
             "diseno/recursos-escena02/svg/2e-gestion/2e-fichas-funcion.svg",
             "diseno/recursos-escena02/svg/2e-gestion/2e-desvio-rojo.svg"
           ],
-          "respiro": 1
+          "respiro": 1,
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/intermediario-explica-tramite.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/funcionario-revisa-reclamo.png"
+          ],
+          "falta": "Nada nuevo. Ojo: el intermediario de ejemplo no debe parecerse a la ficha de Elías de s03, para que nadie lo tome por él."
         },
         {
           "id": "2.8",
@@ -632,7 +660,7 @@
             "diseno/recursos-escena03/svg/3a-lo-que-pedia/3a-folio-solicitud.svg",
             "diseno/recursos-escena03/svg/3a-lo-que-pedia/3a-hacienda.svg"
           ],
-          "falta": "Ficha de la abolición (pieza nueva)."
+          "falta": "Ficha de la abolición (pieza nueva). Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1)."
         },
         {
           "id": "3.2",
@@ -829,7 +857,7 @@
           "base": [
             "4A.1"
           ],
-          "falta": "Línea de 1852 con las dos marcas."
+          "falta": "Línea de 1852 con las dos marcas. Fondo de la estantería del archivo (prompts-chatgpt-v2.md, n.º 3)."
         },
         {
           "id": "4.2",
@@ -1030,7 +1058,7 @@
             "4A.2",
             "1A"
           ],
-          "falta": "Barcos en el horizonte de islas v3 (reutilizar el barco de 1c, a escala)."
+          "falta": "Barcos en el horizonte de islas v3 (reutilizar el barco de 1c, a escala). Fondo de las islas con barcos (prompts-chatgpt-v2.md, n.º 2)."
         },
         {
           "id": "4.9",
@@ -1123,7 +1151,8 @@
           "base": [
             "5B.1",
             "5B.2"
-          ]
+          ],
+          "falta": "Fondo de la mesa del historiador (prompts-chatgpt-v2.md, n.º 4)."
         },
         {
           "id": "5.3",
@@ -1156,5 +1185,6 @@
         }
       ]
     }
-  ]
+  ],
+  "texturas": "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/texturas/textura-papel-grabado.png"
 }

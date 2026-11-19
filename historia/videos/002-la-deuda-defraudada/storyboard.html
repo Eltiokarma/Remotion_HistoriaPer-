@@ -60,6 +60,7 @@ h3 { font-size:1.2rem; margin:0; font-weight:600; flex:1 1 320px; }
 .laminas figure { margin:8px 0; } .laminas img { width:100%; height:auto; display:block; border-radius:4px; border:1px solid var(--linea); }
 figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
 .piezas .fila { display:flex; gap:10px; flex-wrap:wrap; } .pieza { margin:0; width:160px; }
+.figura img { height:150px !important; }
 .pieza img { width:100%; height:100px; object-fit:contain; background:var(--caja2); border-radius:4px; padding:6px; }
 .pieza figcaption { font-family:ui-monospace, monospace; font-size:.6rem; word-break:break-all; }
 @media (max-width:700px) { .laminas figure { overflow-x:auto; } .laminas img { width:auto; max-width:none; height:280px; } .linea { height:40px; } .seg span { display:none; } }
@@ -81,7 +82,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
 <h2 style="font-size:1.3rem">El sistema visual</h2>
 
 <div class="sistema">
-  <div><span class="et">Qué permanece</span><ul><li>Tres espacios con función fija: el lugar (mapa Natural Earth y grabado de islas v3), el mecanismo (pizarra que acumula piezas de papel y tiza, escena 2) y el expediente (mesa de madera en cenital, escenas 3 a 5).</li><li>Papel, tinta y fichas a máquina con cuadrito rojo (gramática de la serie). Una ficha nueva por vez.</li><li>Cámara quieta mientras se lee o se escucha un dato. Los objetos se mueven; la cámara no, al mismo tiempo.</li><li>Personajes solo donde hay una acción física que la voz describe: cargar el guano (1) y comprar el reclamo (2). Las personas reales se identifican con fichas, no con retratos.</li></ul></div>
+  <div><span class="et">Qué permanece</span><ul><li>Tres espacios con función fija: el lugar (mapa Natural Earth y grabado de islas v3), el mecanismo (pizarra que acumula piezas de papel y tiza, escena 2) y el expediente (mesa de madera en cenital, escenas 3 a 5).</li><li>Papel, tinta y fichas a máquina con cuadrito rojo (gramática de la serie). Una ficha nueva por vez.</li><li>Cámara quieta mientras se lee o se escucha un dato. Los objetos se mueven; la cámara no, al mismo tiempo.</li><li>Personajes solo donde hay una acción que la voz describe: cargar el guano (s01) y vender, comprar, gestionar y aprobar el reclamo (s02). Son PNG de ChatGPT con aspecto de grabado y representan funciones, no personas. Las personas reales (Castilla, Echenique, Elías, Torrico, Mendiburu) van con ficha a máquina y, si existe, con su retrato de época en dominio público; nunca con una cara inventada.</li></ul></div>
   <div><span class="et">Qué progresa</span><p>La pila de vales: aparece en el gancho, se reduce a un solo vale en la escena 2, se vuelve la cifra de Novoa en la 3, recupera su altura de 24 millones en la 4 (con la marca roja de la junta) y queda con su marca fantasma en la 5. Junto con la pila progresa el rojo de culpa: primero un borde, después la mitad marcada, después la mancha del lavado.</p>
        <span class="et">Qué se reserva</span><ul><li>La cifra de Novoa (s03, frase 11): un solo papel en cuadro, cámara quieta, 2,3 s de silencio absoluto más 1 s de respiro de montaje.</li><li>Los consolidados (s04, frase 7): la palabra del episodio a pantalla completa, quieta, sin música, con 2,5 s más 1 s de montaje. Es la única palabra a pantalla completa (CLAUDE §1.3).</li></ul></div>
   <div><span class="et">Cámara</span><p>La cámara se mueve solo cuatro veces con viaje: al lugar (s01), a abrir el tablero completo (s02), de Lima a Londres (s04) y el circuito final (s05). Siempre arranca despacio, viaja y frena (pesado o solemne).</p>
@@ -115,11 +116,12 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
       <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
       <div class="bloque"><span class="et">Efecto</span><p>La pila crece con peso pesado, de una vez, y asienta (impacto de papel 0,025). Nada más se mueve.</p></div>
       <div class="bloque"><span class="et">Sonido</span><p>Papel; un golpe grave cuando la pila termina de crecer. Sin música.</p></div>
-      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Pila de vales como pieza (se arma con 2c-vale-sin-texto repetido).</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Pila de vales como pieza (se arma con 2c-vale-sin-texto repetido). Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).</p></div>
       
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-01.png" alt=""><figcaption>Lámina 4A.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
   
 </article>
 <article class="plano" id="p-0.2">
@@ -142,6 +144,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-06.png" alt=""><figcaption>Lámina 4E.1 (11 de noviembre) · referencia</figcaption></figure></div>
   
+  
 </article>
 <article class="plano" id="p-0.3">
   <div class="cabeza"><span class="pid">0.3</span><span class="verbo">borrar</span>
@@ -163,6 +166,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-08.png" alt=""><figcaption>Lámina 4E.3 (11 de noviembre) · referencia</figcaption></figure></div>
   
+  
 </article>
 <article class="plano" id="p-0.4">
   <div class="cabeza"><span class="pid">0.4</span><span class="verbo">preguntar</span>
@@ -183,6 +187,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-03.png" alt=""><figcaption>Lámina 5B.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
   
 </article>
 </section>
@@ -214,6 +219,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-01.png" alt=""><figcaption>Lámina 1A (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena01/svg/1a-localizacion/1a-mapa-costa-central.svg" alt=""><figcaption>1a-mapa-costa-central.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-1.2">
@@ -236,6 +242,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-01.png" alt=""><figcaption>Lámina 1A (11 de noviembre) · referencia</figcaption></figure></div>
   
+  
 </article>
 <article class="plano" id="p-1.3">
   <div class="cabeza"><span class="pid">1.3</span><span class="verbo">mostrar</span>
@@ -244,18 +251,19 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   <div class="cols">
     <div>
       <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:19.5</span><span class="tags">[serious]</span> Sacarlo exige mucho trabajo.<span class="pausa">0.35 s</span></p><p><span class="t">0:21.8</span><span class="tags">[serious] [low voice] [slowly]</span> En las islas hay jornaleros libres, pero también presos, personas esclavizadas y trabajadores chinos sometidos a trabajo forzoso.<span class="pausa larga">2 s</span></p></div></div>
-      <div class="bloque"><span class="et">Imagen</span><p>Depósito, pala y saco; una figura llena el saco. En la pausa sin voz, el saco sube al barco.</p></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Sobre el fondo limpio de Chincha, el trabajador del sombrero vierte la pala en el saco; otro trabajador lo sujeta, lo levanta y lo lleva hacia el borde, y en la pausa sin voz el saco sube al barco. Son dos personas distintas: la voz habla de varias formas de trabajo.</p></div>
       <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
     </div>
     <div>
       <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
       <div class="bloque"><span class="et">Efecto</span><p>Pala en arco; granos con semilla que caen una vez y se asientan; balanceo corto del casco al recibir el saco.</p></div>
       <div class="bloque"><span class="et">Sonido</span><p>Raspado de pala, saco al apoyarse, madera del barco.</p></div>
-      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>La figura del trabajador como PNG de ChatGPT (imagenes-chatgpt.md). Sin rótulo sobre la figura: su aspecto no documenta su condición.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Pala y saco como SVG en las manos (ya existen); el embarque con el barco de 1c. Sin rótulo sobre las figuras: su aspecto no documenta su condición. Trabajadores de distintos orígenes al fondo, si Gerson lo aprueba (prompts-chatgpt-v2.md, n.º 5).</p></div>
       
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-02.png" alt=""><figcaption>Lámina 1B.1 (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-04.png" alt=""><figcaption>Lámina 1C.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/fondo-limpio-chincha.png" alt=""><figcaption>fondo-limpio-chincha.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-1b-vierte-guano.png" alt=""><figcaption>trabajador-1b-vierte-guano.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-2a-sujeta-saco.png" alt=""><figcaption>trabajador-2a-sujeta-saco.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-2b-levanta-saco.png" alt=""><figcaption>trabajador-2b-levanta-saco.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-2c-transporta-saco.png" alt=""><figcaption>trabajador-2c-transporta-saco.png</figcaption></figure></div></div>
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena01/svg/1b-trabajo/1b-deposito-guano.svg" alt=""><figcaption>1b-deposito-guano.svg</figcaption></figure><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena01/svg/1b-trabajo/1b-saco-abierto.svg" alt=""><figcaption>1b-saco-abierto.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-1.4">
@@ -277,6 +285,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-05.png" alt=""><figcaption>Lámina 1C.2 (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena01/svg/1c-embarque-y-venta/1c-diagrama-venta-sin-texto.svg" alt=""><figcaption>1c-diagrama-venta-sin-texto.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-1.5">
@@ -298,6 +307,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-06.png" alt=""><figcaption>Lámina 1D.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena01/svg/1d-estado-y-reclamos/1d-edificio-estado.svg" alt=""><figcaption>1d-edificio-estado.svg</figcaption></figure><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena01/svg/1d-estado-y-reclamos/1d-carpeta.svg" alt=""><figcaption>1d-carpeta.svg</figcaption></figure></div></div>
 </article>
 </section>
@@ -329,6 +339,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-01.png" alt=""><figcaption>Lámina 2A (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena01/svg/1d-estado-y-reclamos/1d-folio-prestamo.svg" alt=""><figcaption>1d-folio-prestamo.svg</figcaption></figure><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2a-retomar/2a-llave-agrupadora.svg" alt=""><figcaption>2a-llave-agrupadora.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-2.2">
@@ -350,6 +361,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-02.png" alt=""><figcaption>Lámina 2B (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/capas/libro-ley-consolidacion.svg" alt=""><figcaption>libro-ley-consolidacion.svg</figcaption></figure><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2b-cotejo/2b-sello-reconocido.svg" alt=""><figcaption>2b-sello-reconocido.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-2.3">
@@ -371,6 +383,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-01.png" alt=""><figcaption>Lámina 5A.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/capas/finalidad-del-credito.svg" alt=""><figcaption>finalidad-del-credito.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-2.4">
@@ -380,7 +393,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   <div class="cols">
     <div>
       <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:45.7</span><span class="tags">[teacher] [clear]</span> Cuando un reclamo se aprobaba, el acreedor recibía un vale: un papel en el que el Estado se comprometía a pagarle esa suma, con intereses.<span class="pausa">0.6 s</span></p><p><span class="t">0:54.3</span><span class="tags">[teacher] [clear]</span> No era plata en la mano, sino una promesa de pago, y esa promesa se podía vender.<span class="pausa larga">1.2 s</span></p></div></div>
-      <div class="bloque"><span class="et">Imagen</span><p>El vale entra junto al folio reconocido. Unas monedas a la izquierda se apartan: el vale no es efectivo. Con «<em>se podía vender</em>», una flecha corta sale del vale hacia el borde derecho, vacío.</p></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La reclamante recibe el vale con las dos manos, junto al folio reconocido. Unas monedas a la izquierda se apartan: el vale no es efectivo. Con «<em>se podía vender</em>», una flecha corta sale del vale hacia el borde derecho, vacío.</p></div>
       <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">6 % de interés [VERIFICAR: anual]</span> <span class="en">con la frase 8</span> <span class="chip ok">lectura 15.4/2.8 s</span></li></ul></div>
     </div>
     <div>
@@ -392,6 +405,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-03.png" alt=""><figcaption>Lámina 2C (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/reclamante-recibe-vale.png" alt=""><figcaption>reclamante-recibe-vale.png</figcaption></figure></div></div>
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2c-vale/2c-vale.svg" alt=""><figcaption>2c-vale.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-2.5">
@@ -414,6 +428,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-01.png" alt=""><figcaption>Lámina 2A (11 de noviembre) · referencia</figcaption></figure></div>
   
+  
 </article>
 <article class="plano" id="p-2.6">
   <div class="cabeza"><span class="pid">2.6</span><span class="verbo">comparar</span>
@@ -422,18 +437,19 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   <div class="cols">
     <div>
       <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:09.4</span><span class="tags">[dry] [restrained]</span> Por esos huecos entró el negocio.<span class="pausa">0.35 s</span></p><p><span class="t">1:11.6</span><span class="tags">[dry]</span> Antes de mil ochocientos cincuenta, muchos reclamos viejos casi no valían nada.<span class="pausa">0.35 s</span></p><p><span class="t">1:16.1</span><span class="tags">[dry] [ironic]</span> Los especuladores los compraban muy barato y luego negociaban que el Estado los reconociera por un valor muchas veces mayor.<span class="pausa larga">1 s</span></p></div></div>
-      <div class="bloque"><span class="et">Imagen</span><p>Tres cuadros de acción: el reclamante entrega el folio, el comprador lo toma, el sobre va en sentido contrario. Después, en la pizarra, dos barras de tiza: precio de compra (baja) y valor reconocido (alta), sin cifras.</p></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Delante de la pizarra, tres cuadros de acción con las mismas dos figuras: la reclamante ofrece el folio, el comprador lo toma y le entrega el sobre, y ella recibe el pago. Después, en la pizarra, dos barras de tiza: precio de compra (baja) y valor reconocido (alta), sin cifras.</p></div>
       <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">precio</span> <span class="en">con la frase 14</span> <span class="chip ok">lectura 9.4/1.3 s</span><span class="chip neutro">término</span></li><li><span class="rotulo">valor reconocido</span> <span class="en">con la frase 14</span> <span class="chip ok">lectura 9.4/1.6 s</span><span class="chip neutro">término</span></li></ul></div>
     </div>
     <div>
       <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
       <div class="bloque"><span class="et">Efecto</span><p>La barra alta crece después de la baja, más lenta. Las dos barras se quedan en el tablero (vuelven en Londres).</p></div>
       <div class="bloque"><span class="et">Sonido</span><p>Papel y sobre; tiza.</p></div>
-      
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Folio y sobre como SVG en las manos (ya existen).</p></div>
       
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-04.png" alt=""><figcaption>Lámina 2D (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/reclamante-a-ofrece-folio.png" alt=""><figcaption>reclamante-a-ofrece-folio.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/comprador-a-toma-folio.png" alt=""><figcaption>comprador-a-toma-folio.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/comprador-b-entrega-sobre.png" alt=""><figcaption>comprador-b-entrega-sobre.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/reclamante-b-recibe-pago.png" alt=""><figcaption>reclamante-b-recibe-pago.png</figcaption></figure></div></div>
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2d-compra/2d-tiza-precio-de-compra.svg" alt=""><figcaption>2d-tiza-precio-de-compra.svg</figcaption></figure><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2d-compra/2d-tiza-valor-reconocido.svg" alt=""><figcaption>2d-tiza-valor-reconocido.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-2.7">
@@ -443,18 +459,19 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   <div class="cols">
     <div>
       <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:23.5</span><span class="tags">[serious]</span> Para lograrlo había ayuda.<span class="pausa">0.35 s</span></p><p><span class="t">1:25.5</span><span class="tags">[serious] [restrained anger]</span> Algunos capitalistas movían los expedientes a cambio de comisiones, y algunos funcionarios prometían un reconocimiento privilegiado a cambio de participaciones y comisiones ilegales.<span class="pausa larga">1 s</span></p><p><span class="t">1:36.4</span><span class="tags">[measured] [clear]</span> Quiroz no condena toda gestión: en el caso que vamos a ver, la comisión del intermediario era legítima.<span class="pausa">0.35 s</span></p><p><span class="t">1:42.3</span><span class="tags">[firm] [clear]</span> Lo que llama ilegal son las participaciones y comisiones que se pagaban a cambio de un reconocimiento privilegiado.<span class="pausa larga">1 s</span></p></div></div>
-      <div class="bloque"><span class="et">Imagen</span><p>Entran las fichas de función del intermediario y del funcionario. Con «<em>comisiones ilegales</em>», un desvío rojo salta la revisión. Con 17, el intermediario queda en luz neutra; con 18, el enlace del funcionario queda en rojo.</p></div>
-      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Entran el intermediario (a la izquierda) y el funcionario (a la derecha) de medio cuerpo, cada uno con una ficha de función debajo que dice que es un ejemplo. Con «<em>comisiones ilegales</em>», un desvío rojo salta la revisión. Con 17, el intermediario queda en luz neutra; con 18, el enlace del funcionario queda en rojo.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">intermediario (ejemplo) · funcionario (ejemplo)</span> <span class="en">con la frase 16</span> <span class="chip ok">lectura 24.6/2.5 s</span><span class="chip neutro">término</span></li></ul></div>
     </div>
     <div>
       <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
       <div class="bloque"><span class="et">Efecto</span><p>Un solo foco activo por vez. El rojo, solo en el desvío y el enlace ilegal.</p></div>
       <div class="bloque"><span class="et">Sonido</span><p>Tiza; nada sobre el rojo.</p></div>
-      
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Nada nuevo. Ojo: el intermediario de ejemplo no debe parecerse a la ficha de Elías de s03, para que nadie lo tome por él.</p></div>
       
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-05.png" alt=""><figcaption>Lámina 2E (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/intermediario-explica-tramite.png" alt=""><figcaption>intermediario-explica-tramite.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/funcionario-revisa-reclamo.png" alt=""><figcaption>funcionario-revisa-reclamo.png</figcaption></figure></div></div>
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2e-gestion/2e-fichas-funcion.svg" alt=""><figcaption>2e-fichas-funcion.svg</figcaption></figure><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2e-gestion/2e-desvio-rojo.svg" alt=""><figcaption>2e-desvio-rojo.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-2.8">
@@ -476,6 +493,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-06.png" alt=""><figcaption>Lámina 2F (11 de noviembre) · referencia</figcaption></figure></div>
+  
   
 </article>
 </section>
@@ -502,11 +520,12 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
       <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
       <div class="bloque"><span class="et">Efecto</span><p>El renglón entra sin efecto; la música sale con él.</p></div>
       <div class="bloque"><span class="et">Sonido</span><p>Sin música en el renglón de las personas esclavizadas.</p></div>
-      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Ficha de la abolición (pieza nueva).</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Ficha de la abolición (pieza nueva). Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).</p></div>
       
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-01.png" alt=""><figcaption>Lámina 3A (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena03/svg/3a-lo-que-pedia/3a-folio-solicitud.svg" alt=""><figcaption>3a-folio-solicitud.svg</figcaption></figure><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena03/svg/3a-lo-que-pedia/3a-hacienda.svg" alt=""><figcaption>3a-hacienda.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-3.2">
@@ -528,6 +547,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-02.png" alt=""><figcaption>Lámina 3B (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena03/svg/3b-gestion/3b-folio-gestion.svg" alt=""><figcaption>3b-folio-gestion.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-3.3">
@@ -549,6 +569,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-03.png" alt=""><figcaption>Lámina 3C (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena03/svg/3c-plazo/3c-folio-respuesta.svg" alt=""><figcaption>3c-folio-respuesta.svg</figcaption></figure></div></div>
 </article>
 <article class="plano exc" id="p-3.4">
@@ -570,6 +591,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-04.png" alt=""><figcaption>Lámina 3D (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena03/svg/3d-intervencion-y-resultado/3d-folio-aprobacion.svg" alt=""><figcaption>3d-folio-aprobacion.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-3.5">
@@ -592,6 +614,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-04.png" alt=""><figcaption>Lámina 3D (11 de noviembre) · referencia</figcaption></figure></div>
   
+  
 </article>
 <article class="plano" id="p-3.6">
   <div class="cabeza"><span class="pid">3.6</span><span class="verbo">estimar</span>
@@ -612,6 +635,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-05.png" alt=""><figcaption>Lámina 3E (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena03/svg/3e-aprobado-y-recibido/3e-folio-recibido.svg" alt=""><figcaption>3e-folio-recibido.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-3.7">
@@ -633,6 +657,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-06.png" alt=""><figcaption>Lámina 3F (11 de noviembre) · referencia</figcaption></figure></div>
+  
   
 </article>
 </section>
@@ -659,11 +684,12 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
       <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
       <div class="bloque"><span class="et">Efecto</span><p>Expedientes que se apilan con peso; la pila crece igual que en el gancho (mismo movimiento: el espectador lo reconoce).</p></div>
       <div class="bloque"><span class="et">Sonido</span><p>Papel; el mismo golpe grave del gancho.</p></div>
-      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Línea de 1852 con las dos marcas.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Línea de 1852 con las dos marcas. Fondo de la estantería del archivo (prompts-chatgpt-v2.md, n.º 3).</p></div>
       
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-01.png" alt=""><figcaption>Lámina 4A.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
   
 </article>
 <article class="plano exc" id="p-4.2">
@@ -685,6 +711,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-01.png" alt=""><figcaption>Lámina 5A.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/capas/beneficios-concentrados.svg" alt=""><figcaption>beneficios-concentrados.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-4.3">
@@ -707,6 +734,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-03.png" alt=""><figcaption>Lámina 4B (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-04.png" alt=""><figcaption>Lámina 1C.1 (11 de noviembre) · referencia</figcaption></figure></div>
   
+  
 </article>
 <article class="plano" id="p-4.4">
   <div class="cabeza"><span class="pid">4.4</span><span class="verbo">denunciar</span>
@@ -727,6 +755,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-04.png" alt=""><figcaption>Lámina 4C (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/capas/carta-12-agosto.svg" alt=""><figcaption>carta-12-agosto.svg</figcaption></figure><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/capas/carta-16-agosto.svg" alt=""><figcaption>carta-16-agosto.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-4.5">
@@ -748,6 +777,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-04.png" alt=""><figcaption>Lámina 4C (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/capas/doble-funcion-elias.svg" alt=""><figcaption>doble-funcion-elias.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-4.6">
@@ -770,6 +800,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-06.png" alt=""><figcaption>Lámina 4E.1 (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-05.png" alt=""><figcaption>Lámina 4D (11 de noviembre) · referencia</figcaption></figure></div>
   
+  
 </article>
 <article class="plano" id="p-4.7">
   <div class="cabeza"><span class="pid">4.7</span><span class="verbo">suspender</span>
@@ -791,6 +822,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-07.png" alt=""><figcaption>Lámina 4E.2 (11 de noviembre) · referencia</figcaption></figure></div>
   
+  
 </article>
 <article class="plano" id="p-4.8">
   <div class="cabeza"><span class="pid">4.8</span><span class="verbo">presionar</span>
@@ -806,11 +838,12 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
       <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
       <div class="bloque"><span class="et">Efecto</span><p>Los barcos apenas se mueven; el mar sigue con su fase.</p></div>
       <div class="bloque"><span class="et">Sonido</span><p>El mar de s01, más grave; la música en tensión.</p></div>
-      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Barcos en el horizonte de islas v3 (reutilizar el barco de 1c, a escala).</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Barcos en el horizonte de islas v3 (reutilizar el barco de 1c, a escala). Fondo de las islas con barcos (prompts-chatgpt-v2.md, n.º 2).</p></div>
       
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-02.png" alt=""><figcaption>Lámina 4A.2 (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-01.png" alt=""><figcaption>Lámina 1A (11 de noviembre) · referencia</figcaption></figure></div>
+  
   
 </article>
 <article class="plano" id="p-4.9">
@@ -832,6 +865,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-08.png" alt=""><figcaption>Lámina 4E.3 (11 de noviembre) · referencia</figcaption></figure></div>
+  
   
 </article>
 </section>
@@ -863,6 +897,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-01.png" alt=""><figcaption>Lámina 5A.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/capas/quienes-quedaron-fuera.svg" alt=""><figcaption>quienes-quedaron-fuera.svg</figcaption></figure></div></div>
 </article>
 <article class="plano" id="p-5.2">
@@ -879,11 +914,12 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
       <div class="bloque"><span class="et">Cámara</span><p class="mueve">Recorrido: El circuito final: abrir de la mesa a todos los papeles del episodio, una sola vez, y quedarse.</p></div>
       <div class="bloque"><span class="et">Efecto</span><p>Objetos conocidos, sin presentación nueva; cada uno asienta.</p></div>
       <div class="bloque"><span class="et">Sonido</span><p>Una hoja por objeto.</p></div>
-      
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Fondo de la mesa del historiador (prompts-chatgpt-v2.md, n.º 4).</p></div>
       
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-03.png" alt=""><figcaption>Lámina 5B.1 (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-04.png" alt=""><figcaption>Lámina 5B.2 (11 de noviembre) · referencia</figcaption></figure></div>
+  
   
 </article>
 <article class="plano" id="p-5.3">
@@ -905,6 +941,7 @@ figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
     </div>
   </div>
   <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-05.png" alt=""><figcaption>Lámina 5C (11 de noviembre) · referencia</figcaption></figure></div>
+  
   <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/capas/libro-de-quiroz.svg" alt=""><figcaption>libro-de-quiroz.svg</figcaption></figure></div></div>
 </article>
 </section>
