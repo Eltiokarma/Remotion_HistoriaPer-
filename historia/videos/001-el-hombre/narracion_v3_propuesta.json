@@ -1,0 +1,93 @@
+{
+ "nota": "Propuesta: el texto de la voz del guion versión 3 (2026-11-19), con las etiquetas de emoción de narracion.json donde la frase no cambió. No se generó voz. Si Gerson aprueba el texto, se copian «frases» y «cortes» a narracion.json, se corre scripts/narracion.py y después scripts/beats_a_la_voz.py --rehacer. Las claves son los id de escenas.json: s06 (el primer caso) va antes de s05 (el viaje) en el orden del video.",
+ "cortes": {
+  "s01": {
+   "6": 6.65
+  }
+ },
+ "nota_cortes": "s01: la toma se parte después de «Murió en enero de dos mil trece.», que en esta versión es la frase 6 (antes, la 7). La ganancia a mano de s04·0 (−3 dB) se conserva: la frase no cambió.",
+ "frases": {
+  "s00": [
+   "[serious] [slowly] Durante casi dos siglos... la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento... de todo lo que producía.",
+   "[whispers] Cada año.",
+   "[calm] De cada diez soles que gastaba el Estado... entre tres y cuatro no llegaban a donde debían.",
+   "[firm] No era una suma de casos sueltos: era sistémica, y venía desde la colonia.",
+   "[softly] Lo calculó un historiador limeño.",
+   "[sad] [quietly] Y no llegó a ver su libro en español."
+  ],
+  "s01": [
+   "[calm] [quietly] Nueva York.",
+   "[calm] [observant] Nuestro historiador revisa con minuciosidad las pruebas de imprenta de la traducción al español de su último libro.",
+   "[softly] [serious] No le queda mucho tiempo... y lo sabe.",
+   "[gentle] En los agradecimientos escribe una línea que casi nadie lee:",
+   "[tender] les agradece a sus médicos por alargar estos días, para poder completar la tarea.",
+   "[warm] Unas líneas más abajo celebra el nacimiento de su hijo.",
+   "[sad] [quietly] [slowly] Murió en enero de dos mil trece.",
+   "[quietly] El libro salió en mayo.",
+   "[warm] [resolute] Estos videos son sobre ese hombre... y sobre lo que encontró."
+  ],
+  "s02": [
+   "[warm] [clear] Se llamaba Alfonso Quiroz Norris y nació en Lima, en mil novecientos cincuenta y seis.",
+   "[light] [curious] Fue nadador de competencia: representó al Perú en las categorías infantil y juvenil.",
+   "[calm] [storytelling] Marcos Cueto, su amigo desde los quince años, cuenta que esa disciplina de la piscina la llevó después a los archivos.",
+   "[thoughtful] Y lo describe con una sola palabra:",
+   "[admiring] [softly] inagotable."
+  ],
+  "s03": [
+   "[storytelling] En mil novecientos setenta y cuatro entra a la Universidad Católica, en uno de los primeros puestos del examen de admisión.",
+   "[serious] El Perú vive el gobierno militar de Velasco.",
+   "[firm] Reforma agraria.",
+   "[firm] Nacionalizaciones.",
+   "[slightly ironic] Un discurso que promete enterrar el pasado oligárquico.",
+   "[firm] Quiroz nunca apoyó al régimen: militó un tiempo en un pequeño partido trotskista que criticaba con dureza al gobierno militar.",
+   "[thoughtful] Para un estudiante de esa época, estudiar historia era una forma de entender el presente y de responder una pregunta:",
+   "[curious] [questioning] ¿el país estaba cambiando de verdad?",
+   "[quietly] [doubtful] ¿O repetía lo de siempre?"
+  ],
+  "s04": [
+   "[storytelling] [careful] Casi con seguridad fue en un curso de Franklin Pease donde leyó por primera vez a Fernand Braudel, un historiador francés.",
+   "[teacher] [clear] Braudel decía que la historia no corre a una sola velocidad.",
+   "[teacher] [lively] Arriba están los acontecimientos: los gobiernos, las guerras, las noticias.",
+   "[teacher] [lively] Cambian rápido, como las olas.",
+   "[teacher] [slower] Más abajo, la economía y la sociedad.",
+   "[teacher] [slowly] Cambian despacio.",
+   "[teacher] [slowly] [deep] Y al fondo, la relación del hombre con su medio: la tierra, el clima.",
+   "[slowly] [deep] Casi no se mueve.",
+   "[solemn] [slowly] A lo que se mueve despacio, durante siglos, lo llamó larga duración.",
+   "[thoughtful] Según Cueto, ahí aprendió a apreciar lo que persiste: las estructuras de la economía.",
+   "[serious] [low voice] Hay cosas que no cambian aunque cambien los gobiernos.",
+   "[warm] [resolute] Esa mirada larga es la de esta serie."
+  ],
+  "s06": [
+   "[intrigued] Su primer caso lo encontró en Lima, cuando terminaba la universidad.",
+   "[storytelling] Félix Denegri Luna tenía una gran biblioteca, y fue él quien le sugirió mirar con más cuidado el siglo diecinueve.",
+   "[serious] Ahí estaba el guano, el abono de las islas que el Perú vendía a Europa.",
+   "[matter-of-fact] Los historiadores de su época aseguraban que las élites habían derrochado esa riqueza en lujos.",
+   "[serious] En mil ochocientos cincuenta, el Estado decidió pagar con la plata del guano una deuda vieja con sus propios ciudadanos.",
+   "[grave] [low voice] Pero en su tesis de mil novecientos ochenta mostró que se había inflado el valor de esa deuda... para enriquecerse a costa del Estado.",
+   "[quietly] [questioning] ¿Adónde fue a parar esa plata?"
+  ],
+  "s05": [
+   "[storytelling] Poco después toma un camino que pocos historiadores peruanos habían tomado.",
+   "[calm] Buena parte de ellos miraba a París, la ciudad de Braudel, donde se habían formado algunos de sus profesores.",
+   "[decisive] Él, en cambio, se va a Nueva York, a la Universidad de Columbia.",
+   "[warm] Allí, el historiador Herbert Klein le ofrece una beca.",
+   "[clear] Y Quiroz aprende historia cuantitativa: pensar el pasado con números, no solo con discursos.",
+   "[teacher] Una de sus herramientas se llama regresión:",
+   "[teacher] [inviting] imagina muchos puntos desordenados, cada uno una observación, un dato.",
+   "[teacher] A simple vista, solo ruido.",
+   "[teacher] [clear] La regresión busca la línea que pasa lo más cerca posible de todos, y si hay una tendencia, la deja ver.",
+   "[teacher] [emphatic] [softly] Su inclinación dice cuánto sube una cifra por cada paso de la otra.",
+   "[calm] Aprende a trabajar con cifras y a contrastarlas con documentos.",
+   "[serious] Años después, llevará esa disciplina al estudio de la corrupción en el Perú.",
+   "[calm] De otro de sus profesores en Columbia, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad.",
+   "[respectful] Con los años, según Cueto, llega a ser la máxima autoridad en la historia financiera del Perú.",
+   "[thoughtful] Sus ideas políticas también cambian: del joven trotskista pasa a una postura liberal, que pide igualdad de oportunidades para todos en la economía.",
+   "[respectful] [thoughtful] Ni siquiera da por cerradas sus cifras: llama provisionales a sus cálculos.",
+   "[warm] [resolute] Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro."
+  ],
+  "s07": [
+   "[calm] [warm] Próximo episodio: La deuda defraudada."
+  ]
+ }
+}

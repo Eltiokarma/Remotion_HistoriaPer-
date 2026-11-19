@@ -2,7 +2,7 @@
 
 <!-- GENERADO por roadmap/generar.mjs a partir de roadmap/roadmap.json. No editar a mano: editar el JSON y regenerar. -->
 
-Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
+Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
 
 - Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.
 - Tiempo humano y tokens: null = desconocido (no medido). No se estiman.
@@ -12,7 +12,7 @@ Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **28** · 🔄 en curso: **7** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **28** · 🔄 en curso: **8** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -22,6 +22,7 @@ Actualizado: **2026-11-17**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `t4-comfyui` ComfyUI: texturas o fondos con licencia clara: Definir qué modelos tienen licencia compatible con la regla 1.1·3 del canal.
 - `f5-laptop` Repetir la tanda 1 en la laptop de render: Lo corre Gerson en su máquina (el agente no tiene acceso a ella).
 - `f5-pc` Repetir la tanda 1 en la PC objetivo: La PC objetivo no está disponible.
+- `e1-guion-v3` Guion 0·1 versión 3: orden cronológico, Escribidor Escribano y diseño y animación: Espera la revisión de Gerson del texto antes de regenerar la voz en ElevenLabs.
 - `e1-musica` Musicalización con Suno (motivo de Quiroz, ocho pistas): Música de Suno integrada de s00 a s06 (2026-11-10); s07 conserva el tema sintetizado. Falta la escucha de Gerson y los enlaces de Suno en fuentes.md.
 - `e2-recursos-escena01` Recursos vectoriales de la escena 1 «Las islas y el país» (objetos SVG para personajes PNG): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-recursos-escena02` Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
@@ -80,7 +81,7 @@ gantt
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
-Sin fecha (20): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso).
+Sin fecha (21): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-guion-v3` (🔄 en curso), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso).
 
 ## Tareas
 
@@ -395,6 +396,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-10
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [001-el-hombre/revision_gerson_2026-11-10.md](historia/videos/001-el-hombre/revision_gerson_2026-11-10.md) · [scripts/narracion.py](historia/scripts/narracion.py) · [001-el-hombre/escaleta.md](historia/videos/001-el-hombre/escaleta.md)
+- [ ] **Guion 0·1 versión 3: orden cronológico, Escribidor Escribano y diseño y animación** `e1-guion-v3` — 🔄 en curso
+  - Entregable: guion.md v3 con la voz corregida y cada beat anclado a su palabra; acta del Escribano; diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); narracion_v3_propuesta.json y manuscrito.md. Falta: visto bueno de Gerson, regenerar la voz, re-anclar beats y los tres beats nuevos de MecanismoDeuda
+  - Depende de: `e1-guion-externo`
+  - Prevista: — · Real: 2026-11-19 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Bloqueo: Espera la revisión de Gerson del texto antes de regenerar la voz en ElevenLabs.
+  - Evidencia: [001-el-hombre/guion.md](historia/videos/001-el-hombre/guion.md) · [diseno/diseno-y-animacion-2026-11-19.md](historia/videos/001-el-hombre/diseno/diseno-y-animacion-2026-11-19.md) · [001-el-hombre/narracion_v3_propuesta.json](historia/videos/001-el-hombre/narracion_v3_propuesta.json) · [001-el-hombre/manuscrito.md](historia/videos/001-el-hombre/manuscrito.md)
 - [ ] **Musicalización con Suno (motivo de Quiroz, ocho pistas)** `e1-musica` — 🔄 en curso
   - Entregable: Pistas de Suno recortadas a los beats en public/videos/001-el-hombre/musica/, escenas.json y fuentes.md actualizados, audio de prueba del episodio
   - Prevista: — · Real: 2026-11-10 → …

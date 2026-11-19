@@ -1,6 +1,6 @@
 {
   "titulo": "Roadmap del laboratorio y la base de producción",
-  "actualizado": "2026-11-17",
+  "actualizado": "2026-11-19",
   "notas": [
     "Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.",
     "Tiempo humano y tokens: null = desconocido (no medido). No se estiman.",
@@ -1291,6 +1291,34 @@
         "historia/videos/001-el-hombre/revision_gerson_2026-11-10.md",
         "historia/scripts/narracion.py",
         "historia/videos/001-el-hombre/escaleta.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-guion-v3",
+      "fase": "e1",
+      "titulo": "Guion 0·1 versión 3: orden cronológico, Escribidor Escribano y diseño y animación",
+      "entregable": "guion.md v3 con la voz corregida y cada beat anclado a su palabra; acta del Escribano; diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); narracion_v3_propuesta.json y manuscrito.md. Falta: visto bueno de Gerson, regenerar la voz, re-anclar beats y los tres beats nuevos de MecanismoDeuda",
+      "estado": "en_curso",
+      "depende_de": [
+        "e1-guion-externo"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-19",
+        "fin": null
+      },
+      "bloqueo": "Espera la revisión de Gerson del texto antes de regenerar la voz en ElevenLabs.",
+      "evidencia": [
+        "historia/videos/001-el-hombre/guion.md",
+        "historia/videos/001-el-hombre/diseno/diseno-y-animacion-2026-11-19.md",
+        "historia/videos/001-el-hombre/narracion_v3_propuesta.json",
+        "historia/videos/001-el-hombre/manuscrito.md"
       ],
       "tiempo": {
         "humano_min": null,
