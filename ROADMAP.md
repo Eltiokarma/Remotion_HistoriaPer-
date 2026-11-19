@@ -27,7 +27,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `e2-recursos-escena02` Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-recursos-escena03` Recursos vectoriales de la escena 3 «El expediente de Novoa» (despacho, folios del caso, rótulos y conectores): Dibujos entregados y revisados por el agente; falta la revisión de Gerson (retratos o figuras para Echenique y Torrico; frase del storyboard sobre Torrico), generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-guion-locucion` Guion del 0·2 escrito como locución completa, con el criterio del Escribidor Escribano: Tres actas del Escribano aplicadas (la última: 0 altas, 12 medias corregidas); falta el lector en frío y el visto bueno de Gerson, y resolver los [VERIFICAR].
-- `e2-storyboard-adaptado` Storyboard del 0·2 adaptado a la locución nueva, en HTML con láminas, encuadres, efectos, sonido y transiciones: Propuesta del agente: falta la revisión de Gerson y dibujar las piezas nuevas (ficha de abolición, Mendiburu, viaje a Londres, mancha del lavado, barcos frente a las islas, fichas de fuga, rótulos con espacio de miles).
+- `e2-storyboard-adaptado` Storyboard del 0·2 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual: Propuesta del agente: falta la revisión de Gerson, el animatic de la escena 3 para comparar versiones A/B/C, y dibujar las piezas que el storyboard marca como faltantes (pila de vales, línea de 1852, página con huecos, flecha de adelantos, ficha de la abolición, bono y mancha del lavado, barcos en el horizonte).
 - `e2-narracion` Narración del 0·2 con ElevenLabs (Joder Jolines, eleven_v4), con emoción por frase y tiempos reales: Falta que Gerson la escuche (pronunciación de nombres, emoción, ritmo) antes de cuadrar los beats.
 
 ## Vista temporal
@@ -438,12 +438,12 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Tres actas del Escribano aplicadas (la última: 0 altas, 12 medias corregidas); falta el lector en frío y el visto bueno de Gerson, y resolver los [VERIFICAR].
   - Evidencia: [002-la-deuda-defraudada/guion.md](historia/videos/002-la-deuda-defraudada/guion.md) · [002-la-deuda-defraudada/fuentes.md](historia/videos/002-la-deuda-defraudada/fuentes.md)
-- [ ] **Storyboard del 0·2 adaptado a la locución nueva, en HTML con láminas, encuadres, efectos, sonido y transiciones** `e2-storyboard-adaptado` — 🔄 en curso
-  - Entregable: historia/videos/002-la-deuda-defraudada/storyboard.json (adaptación: 39 tramos sobre las 32 mini escenas), storyboard.py → storyboard.html y storyboard.md; manuscrito.py → manuscrito.md; diseno/storyboard-visual traído de la rama episodio-002-material-remotion
-  - Depende de: `e2-guion-locucion`
+- [ ] **Storyboard del 0·2 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual** `e2-storyboard-adaptado` — 🔄 en curso
+  - Entregable: historia/videos/002-la-deuda-defraudada/storyboard.json (versión 2: revisión del anterior, sistema visual y 36 planos anclados a las frases de la voz), storyboard.py → storyboard.html y storyboard.md con métricas de lectura, repetición, cámara quieta, voz por escena y datos por minuto
+  - Depende de: `e2-guion-locucion`, `e2-narracion`
   - Prevista: — · Real: 2026-11-19 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Bloqueo: Propuesta del agente: falta la revisión de Gerson y dibujar las piezas nuevas (ficha de abolición, Mendiburu, viaje a Londres, mancha del lavado, barcos frente a las islas, fichas de fuga, rótulos con espacio de miles).
+  - Bloqueo: Propuesta del agente: falta la revisión de Gerson, el animatic de la escena 3 para comparar versiones A/B/C, y dibujar las piezas que el storyboard marca como faltantes (pila de vales, línea de 1852, página con huecos, flecha de adelantos, ficha de la abolición, bono y mancha del lavado, barcos en el horizonte).
   - Evidencia: [002-la-deuda-defraudada/storyboard.json](historia/videos/002-la-deuda-defraudada/storyboard.json) · [002-la-deuda-defraudada/storyboard.html](historia/videos/002-la-deuda-defraudada/storyboard.html) · [002-la-deuda-defraudada/storyboard.md](historia/videos/002-la-deuda-defraudada/storyboard.md)
 - [ ] **Narración del 0·2 con ElevenLabs (Joder Jolines, eleven_v4), con emoción por frase y tiempos reales** `e2-narracion` — 🔄 en curso
   - Entregable: historia/public/videos/002-la-deuda-defraudada/voz/s00–s05.mp3 (9 min 28 s, −16 LUFS); narracion.json, narracion_tiempos.json y manuscrito.md con emoción, pausas y segundo de inicio de cada frase

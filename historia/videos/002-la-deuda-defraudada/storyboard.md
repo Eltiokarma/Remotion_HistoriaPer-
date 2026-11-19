@@ -1,248 +1,375 @@
-# La deuda defraudada · Storyboard adaptado a la locución
+# La deuda defraudada · Storyboard (versión 2)
 
-Generado desde `storyboard.json` con `storyboard.py`; no se edita a mano. Propuesta del agente para revisión de Gerson. No se dibujó nada nuevo: los tramos nuevos indican qué piezas existentes reutilizar.
+Generado desde `storyboard.json` con `storyboard.py`; no se edita a mano. Propuesta del agente para revisión de Gerson, rehecha sobre la voz real (narracion_tiempos.json). No se dibujó nada nuevo: cada plano dice qué lámina o pieza existente usa y qué falta.
 
-La versión completa, con las láminas, los encuadres y el sonido, es [storyboard.html](storyboard.html). El storyboard ilustrado de base está en [diseno/storyboard-visual](diseno/storyboard-visual/README.md).
+La versión completa, con láminas, voz con emoción, métricas y avisos, es `storyboard.html`.
 
-## 0. El gancho (Nueva, antes de la escena larga 1)
+**Episodio:** 10:10.7 en pantalla · voz 79 % · cámara quieta 88 %.
 
-- **Entra:** Abre en negro con las pruebas de imprenta (gramática de la serie). Sin música: solo papel.
-- **Sale:** Corte J: el mar de 1A entra 12 cuadros antes que su imagen, sobre la ficha de la tesis.
+## s00 · El gancho
 
-### 0.1 · Nuevo · La pila que crece
+*Expediente: la mesa con las pruebas de imprenta.* De «una deuda es una deuda» a «una deuda se puede inflar, y alguien la inflaba».
 
-Voz: 0.0.
-Reutiliza el par de fichas 1851–1852 de 4A.1. El crecimiento es de altura, no de monedas.
-1. **Las pruebas de imprenta.** Cámara quieta sobre el libro corregido. Papel con fibra y luz baja; nada se mueve hasta la voz.
-2. **1851 · unos 5 millones de pesos.** Una pila baja de vales sin texto se asienta junto a la ficha de 1851. Asentamiento de papel (impacto 0,025).
-3. **1852 · unos 24 millones de pesos.** La pila sube casi cinco veces su altura; la ficha de 1852 reemplaza a la de 1851. Golpe grave al terminar de crecer. Rojo de culpa en el borde de la pila nueva.
+0:52.3 · voz 80 % · cámara quieta 100 % · 3.4 rótulos con datos por minuto.
 
-### 0.2 · Nuevo · La junta marca la mitad; la ley la borra
+### 0.1 · presentar · 16.7 s
 
-Voz: 0.1, 0.2.
-Adelanta en 10 s lo que 4E.1 y 4E.3 desarrollan: se usan las mismas cifras y rótulos para que el espectador los reconozca después.
-1. **12,2 millones de pesos · 141 expedientes irregulares o ilegales.** El corrector encierra en rojo algo más de la mitad de la pila. Trazo rojo ligero; pausa de 1,2 s.
-2. **Ley del 11 de marzo de 1857.** Cae el sello de la ley; la marca roja se borra a medias. Sello desde arriba, sin deformar; la marca queda como fantasma.
+La deuda reconocida crece casi cinco veces en un año. Sobre las pruebas de imprenta, una pila baja de vales sin texto. Con «un año después», la pila sube hasta casi cinco veces su altura; el tramo nuevo lleva un borde rojo apagado. Sin rótulos: la voz da las cifras y la altura de la pila, la proporción.
 
-### 0.3 · Nuevo · La pregunta
+- **Pantalla:** sin rótulos.
+- **Cámara:** quieta.
+- **Efecto:** La pila crece con peso pesado, de una vez, y asienta (impacto de papel 0,025). Nada más se mueve.
+- **Sonido:** Papel; un golpe grave cuando la pila termina de crecer. Sin música.
+- **Falta:** Pila de vales como pieza (se arma con 2c-vale-sin-texto repetido).
 
-Voz: 0.3.
-1. **¿Cómo se infla la deuda de un país?** Cámara quieta sobre la pila marcada. Silencio de música; solo el papel.
-2. **Tesis de 1980 · libro de 1987: La deuda defraudada.** Entra la ficha a máquina sobre la pila. Tecleo breve de la ficha; sostener 2 s.
+### 0.2 · marcar · 12.3 s
 
-## 1. Las islas y el país (Escena larga 1)
+Una investigación del propio Estado señala más de la mitad. El corrector encierra en rojo algo más de la mitad de la pila.
 
-- **Entra:** Desde la ficha de la tesis, el mar entra antes que la imagen (corte J).
-- **Sale:** El folio de pestaña roja queda en la posición exacta con que abre 2A.
+- **Pantalla:** 1855 · 141 expedientes.
+- **Cámara:** quieta.
+- **Efecto:** Trazo rojo de corrector, ligero, de una vez.
+- **Sonido:** Pluma sobre papel.
 
-### 1A · Cambia · De ubicar el país a reconocer el lugar de donde sale el guano.
+### 0.3 · borrar · 8.6 s
 
-Voz: 1.0, 1.1.
-La ficha de Ramón Castilla entra aquí, con «gobierna Ramón Castilla». La definición del guano cae en la llegada a Chincha (encuadre 5). La voz ya nombra Gran Bretaña: el esquema comercial de 1C.1 llegará sin voz.
+Una ley devuelve esos títulos a la circulación. Cae el sello de la ley; la marca roja se borra a medias y queda como fantasma.
 
-### 1B.1 · Igual · De ver el depósito a entender qué compraba el mercado.
+- **Pantalla:** Ley del 11 de marzo de 1857.
+- **Cámara:** quieta.
+- **Efecto:** Sello desde arriba: se pasa apenas de tamaño y vuelve, sin deformarse.
+- **Sonido:** Golpe de sello seco; el papel sigue.
 
-Voz: 1.2.
-«Sacarlo exige mucho trabajo» entra con la pala. El encuadre 3 (uso agrícola) queda como plano sin voz.
+### 0.4 · preguntar · 14.6 s
 
-### 1B.2 · Igual · De una carga apoyada al esfuerzo de llevarla.
+¿Cómo se infla una deuda? Quiroz fue a comprobarlo. La pila con su marca fantasma, quieta durante la pregunta. Con «Alfonso Quiroz», la ficha a máquina se escribe sobre la mesa.
 
-Voz: sin voz propia.
-La segunda mitad de 1.2 (jornaleros, presos, personas esclavizadas, trabajadores chinos) cae sobre el agarre; sin rótulos sobre las figuras. El paso con carga ocupa la pausa de 2 s sin voz.
+- **Pantalla:** Alfonso W. Quiroz · tesis de 1980.
+- **Cámara:** quieta.
+- **Efecto:** Ficha a máquina, letra por letra.
+- **Sonido:** Tecleo breve. Silencio de música en la pregunta.
 
-### 1C.1 · Cambia · De seguir un cargamento a entender hacia dónde se vendía.
+## s01 · Las islas y el país
 
-Voz: sin voz propia.
-Todo el embarque va sin voz, en la pausa de 1.2. Si la pausa no alcanza, se alarga a 4 s: es el único respiro con acción física del episodio.
+*Lugar: mapa y grabado de islas v3.* De «el Estado no tiene con qué pagar» a «el guano le da con qué pagar, y aparecen las deudas».
 
-### 1C.2 · Cambia · De la venta comercial a los recursos públicos.
+0:51.6 · voz 80 % · cámara quieta 65 % · 1.2 rótulos con datos por minuto.
 
-Voz: 1.3.
-Se suma una partida o flecha nueva: «Adelantos al gobierno» (Q, pp. 166–167). Las otras tres partidas no cambian.
+### 1.1 · situar · 8.8 s
 
-### 1D.1 · Cambia · De las entradas del Estado a las personas que esperaban cobrar.
+Dónde y cuándo: el Perú de 1850, gobierno de Castilla. Mapa de la costa central con Lima, Pisco y Chincha.
 
-Voz: 1.4, 2.0.
-Sale el encuadre 1 tal como está: las tres fuentes de ingreso (tributo, aduanas, guano) ya no tienen voz. Queda solo el guano llegando al Estado con «Con esa plata». Los ejemplos del préstamo y los bienes (encuadres 2 y 3) reciben la voz de 2.0, y «deuda interna» se rotula en el encuadre 4.
+- **Pantalla:** Ramón Castilla · presidente, 1845–1851.
+- **Cámara:** recorrido (Ir al lugar: de Lima a Chincha, pesado, y frena sobre el localizador.).
+- **Efecto:** Localizador de Chincha con su pulso (1a-localizador).
+- **Sonido:** Mar que entra antes de la imagen; viento.
 
-### 1D.2 · Igual · De una carpeta entre muchas al reclamo que vamos a seguir.
+### 1.2 · mostrar · 10.6 s
 
-Voz: sin voz propia.
-Pausa de 1,2 s tras «deuda interna»; el folio por revisar se sostiene.
+Qué es el guano y quién lo compra. El grabado de islas v3: mar, roca cubierta y aves. Nada más.
 
-## 2. Un reclamo pasa por varias manos (Escena larga 2)
+- **Pantalla:** sin rótulos.
+- **Cámara:** quieta.
+- **Efecto:** Mar con fase continua y aves en vuelo como acción secundaria.
+- **Sonido:** Aves y oleaje.
 
-- **Entra:** Mismo folio, misma posición (corte invisible).
-- **Sale:** Se cierra la carpeta genérica y se abre la de Novoa: el corte lo marca el cambio de carpeta, no un fundido.
+### 1.3 · mostrar · 14.1 s
 
-### 2A · Cambia · De una solicitud particular a la regla que organiza el reconocimiento.
+Sacarlo exige trabajo, y no siempre libre. Depósito, pala y saco; una figura llena el saco. En la pausa sin voz, el saco sube al barco.
 
-Voz: 2.1.
-La ley entra con su fecha (16 de marzo de 1850). Con «consolidación», la palabra se escribe en la pizarra y se queda hasta 2F.
+- **Pantalla:** sin rótulos.
+- **Cámara:** quieta.
+- **Efecto:** Pala en arco; granos con semilla que caen una vez y se asientan; balanceo corto del casco al recibir el saco.
+- **Sonido:** Raspado de pala, saco al apoyarse, madera del barco.
+- **Falta:** La figura del trabajador como PNG de ChatGPT (imagenes-chatgpt.md). Sin rótulo sobre la figura: su aspecto no documenta su condición.
 
-### 2B · Cambia · De lo pedido a lo reconocido tras revisar los respaldos.
+### 1.4 · explicar · 8.8 s
 
-Voz: sin voz propia.
-El cotejo ilustra «revisar cada reclamo, decidir cuánto valía» de 2.1. La voz es corta: dejar los encuadres 1 y 4 o recorrer los cuatro sin detenerse.
+El Estado es dueño; la casa vende, cobra comisión y adelanta dinero. Diagrama de venta: guano → venta → comisión e ingreso del Estado, con una flecha más hacia el gobierno: adelantos.
 
-### 2B+ · Nuevo · El crédito público
+- **Pantalla:** sin rótulos.
+- **Cámara:** quieta.
+- **Efecto:** Cada nodo entra cuando la voz lo nombra; las flechas se trazan ligeras.
+- **Sonido:** Pluma por flecha.
+- **Falta:** La flecha de adelantos (pieza nueva, del mismo trazo).
 
-Voz: 2.2.
-Reutiliza la ficha de 5A.1 para que el cierre la reconozca.
-1. **Un Estado que paga lo que debe.** El edificio del Estado a la izquierda; el folio reconocido a su lado. Luz cálida que vuelve al edificio.
-2. **Fundamento del crédito público moderno.** Entra la ficha de la finalidad del crédito, la misma de 5A.1. Sostener 1,2 s. La ficha reaparece en 5A.1 como regreso.
+### 1.5 · conectar · 9.2 s
 
-### 2C · Cambia · Del reclamo comprobado al derecho de cobro documentado.
+Con esa plata, el Estado puede pagar lo que debía. La flecha del ingreso llega al edificio del Estado; a su lado se abre la carpeta de obligaciones pendientes.
 
-Voz: 2.3.
-El vale lleva «6 % de interés» [VERIFICAR si es anual]. El encuadre 3 recibe «y esa promesa se podía vender»: se queda el vale, pierden foco las monedas.
+- **Pantalla:** sin rótulos.
+- **Cámara:** movimiento (Seguir el dinero del diagrama al Estado: un paneo corto, pesado.).
+- **Efecto:** La carpeta se abre y asoma el folio de pestaña roja.
+- **Sonido:** Carpeta.
 
-### 2C+ · Nuevo · Los dos huecos de la ley
+## s02 · Un reclamo pasa por varias manos
 
-Voz: 2.4.
-Antes la falta de reglas era una cautela al final (§3 del guion por ideas); ahora es la causa del negocio y va antes de la compra.
-1. **El libro de la ley, abierto.** Cenital fijo sobre el libro de 2A. Luz de lectura sobre dos renglones.
-2. **Reclamos mal sustentados · traspaso de vales.** El corrector encierra en rojo los dos renglones, uno por vez, con la voz. Trazo del corrector; pausa de 1 s.
+*Mecanismo: la pizarra que acumula (tablero de izquierda a derecha).* De «pagar las deudas es una buena idea» a «la ley tenía dos huecos, y por ahí entró el negocio».
 
-### 2D · Igual · De una solicitud en manos del reclamante a un papel comprado por otro.
+2:08.0 · voz 80 % · cámara quieta 91 % · 0.9 rótulos con datos por minuto.
 
-Voz: 2.5.
-Siete encuadres para unos 12 s de voz. Si el gesto se corta, dejar 1, 3, 5 y 6. Rótulos de tiza: «Precio de compra» bajo, «Valor reconocido» alto.
+### 2.1 · agrupar · 20.3 s
 
-### 2E · Cambia · De una gestión que puede ser legítima a una decisión favorecida.
+Préstamos y bienes tomados: eso era la deuda interna. En la pizarra, el folio del préstamo y el de los bienes para las tropas entran cuando la voz los nombra; una llave de tiza los agrupa.
 
-Voz: 2.6, 2.7.
-El trazo rojo (encuadre 2) cae con «comisiones ilegales». Con 2.7, la ficha del intermediario se ilumina en neutro: su comisión era legítima. La nota de la comisión de Novoa (2F, encuadre 3) se adelanta aquí como anuncio.
+- **Pantalla:** deuda interna.
+- **Cámara:** quieta.
+- **Efecto:** Folios que se asientan; llave de tiza trazada de una vez.
+- **Sonido:** Hoja por folio; tiza.
 
-### 2F · Cambia · Del ejemplo del trámite a la investigación de un caso histórico.
+### 2.2 · ordenar · 14.8 s
 
-Voz: 2.8.
-El encuadre 1 recorre las cuatro manos (vende, compra, mueve, aprueba) con un tic por mano. Cámara quieta 2,5 s con el circuito completo. Los encuadres 2 y 3 abren la carpeta de Novoa con la voz de 3.0.
+La ley de 1850 manda revisar y reconocer: la consolidación. El libro de la ley entra a la derecha del grupo. El folio de pestaña roja recibe el sello «reconocido» cuando la voz dice «decidir cuánto valía».
 
-## 3. El expediente de Novoa (Escena larga 3)
+- **Pantalla:** Ley del 16 de marzo de 1850; consolidación.
+- **Cámara:** quieta.
+- **Efecto:** Un sello, una vez. Sin cotejo campo por campo (era de la versión anterior).
+- **Sonido:** Sello suave.
 
-- **Entra:** El mismo encuadre con que termina 2F.
-- **Sale:** Se cierra la carpeta de Novoa y se abre la caja del conjunto con 1851: corte por cambio de escala, con hoja.
+### 2.3 · justificar · 13.7 s
 
-### 3A · Cambia · La solicitud y su alcance.
+Pagar lo que se debe devuelve la confianza: la idea era buena. Del folio reconocido sale una flecha de tiza al edificio del Estado, y del Estado una flecha de vuelta: el comerciante vuelve a prestar.
 
-Voz: 3.0.
-Se agrega una ficha pequeña: «Abolición · decreto de Huancayo · 3 de diciembre de 1854», con «se abolió». Pieza nueva por dibujar. La música sale con «personas esclavizadas», como ya estaba.
+- **Pantalla:** crédito público.
+- **Cámara:** quieta.
+- **Efecto:** Dos flechas de tiza; la segunda tarda un poco más (es la consecuencia).
+- **Sonido:** Tiza.
 
-### 3B · Cambia · De la solicitud al intento de conseguir aprobación.
+### 2.4 · definir · 15.4 s
 
-Voz: 3.1.
-Rótulo nuevo: «Elías pide: de 500 000 a 600 000 pesos», y debajo, más chico, «Su comisión esperada: 200 000 pesos».
+El vale es una promesa de pago con intereses, y se puede vender. El vale entra junto al folio reconocido. Unas monedas a la izquierda se apartan: el vale no es efectivo. Con «se podía vender», una flecha corta sale del vale hacia el borde derecho, vacío.
 
-### 3C · Igual · Echenique comunica que el reclamo estaba fuera de plazo.
+- **Pantalla:** 6 % de interés [VERIFICAR: anual].
+- **Cámara:** quieta.
+- **Efecto:** El vale asienta con su sombra; las monedas se deslizan fuera sin rebote.
+- **Sonido:** Papel; monedas apenas.
 
-Voz: 3.2.
-Sin cambios: identificar a Echenique, «Fuera de plazo», sostener 2 s.
+### 2.5 · señalar · 10.2 s
 
-### 3D · Cambia · Del antecedente a la intervención y al monto aprobado.
+La ley tenía dos huecos. El libro de la ley vuelve al centro; el corrector encierra en rojo dos renglones casi vacíos.
 
-Voz: 3.3.
-Cambia el orden: primero el encuadre 2 (unos días después, quietud), después el 3 (948 500 pesos en vales, con 2 s de silencio absoluto) y al final el 1 (Torrico), con «Según Quiroz». El rótulo pasa de «948.500» a «948 500». Tras el silencio entra la comparación: «Elías pidió de 500 000 a 600 000».
+- **Pantalla:** sustento; traspaso.
+- **Cámara:** quieta.
+- **Efecto:** Dos círculos de corrector, uno por cada hueco, con la voz.
+- **Sonido:** Pluma.
+- **Falta:** Página del libro con dos renglones vacíos (variante de libro-ley-consolidacion).
 
-### 3E · Igual · Distinguir la aprobación de lo que Novoa habría recibido.
+### 2.6 · comparar · 16.1 s
 
-Voz: 3.4.
-La ficha de Torrico queda arriba; las dos cifras se comparan como estaban. «180.000» pasa a «180 000».
+Se compra barato y se hace reconocer por mucho más. Tres cuadros de acción: el reclamante entrega el folio, el comprador lo toma, el sobre va en sentido contrario. Después, en la pizarra, dos barras de tiza: precio de compra (baja) y valor reconocido (alta), sin cifras.
 
-### 3F · Cambia · Cambiar de escala sin arrastrar el expediente particular.
+- **Pantalla:** precio; valor reconocido.
+- **Cámara:** quieta.
+- **Efecto:** La barra alta crece después de la baja, más lenta. Las dos barras se quedan en el tablero (vuelven en Londres).
+- **Sonido:** Papel y sobre; tiza.
 
-Voz: 3.5.
-El encuadre 1 lee las funciones con la voz (quién lo dio por vencido, quién intervino, cuánto se aprobó). El encuadre 2 (volver a Elías) queda sin voz o sale: Elías vuelve en 4C.
+### 2.7 · distinguir · 26.5 s
 
-## 4. Lo investigan y los títulos siguen circulando (Escena larga 4)
+Para lograrlo había ayuda; la ilegal es la de los funcionarios. Entran las fichas de función del intermediario y del funcionario. Con «comisiones ilegales», un desvío rojo salta la revisión. Con 17, el intermediario queda en luz neutra; con 18, el enlace del funcionario queda en rojo.
 
-- **Entra:** La caja del conjunto con 1851, igual que al final de 3F.
-- **Sale:** Los informes de la junta quedan en el encuadre exacto con que abre 5A.1.
+- **Pantalla:** sin rótulos.
+- **Cámara:** quieta.
+- **Efecto:** Un solo foco activo por vez. El rojo, solo en el desvío y el enlace ilegal.
+- **Sonido:** Tiza; nada sobre el rojo.
 
-### 4A.1 · Cambia · Del expediente al conjunto de la deuda.
+### 2.8 · recapitular · 11.0 s
 
-Voz: 4.0.
-Se agrega una línea de tiempo de 1852 con dos marcas, junio y octubre, y los expedientes que se apilan antes de cada una. Las fichas dicen «millones de pesos». El encuadre 3 (vale genérico) pasa al tramo siguiente.
+Cuatro manos: vende, compra, mueve, aprueba. El tablero completo, de la deuda interna al funcionario: es la imagen que junta la escena.
 
-### 4A+ · Nuevo · Los consolidados
+- **Pantalla:** sin rótulos.
+- **Cámara:** recorrido (Abrir hasta ver el tablero entero mientras la voz cuenta las cuatro manos; frena y queda quieta en la pausa.).
+- **Efecto:** Un número de tiza (1 a 4) junto a cada mano, con la voz.
+- **Sonido:** Un tic por mano; la música sostiene la pausa.
 
-Voz: 4.1.
-1. **En pocas manos.** Los vales se juntan hacia unas pocas fichas de grupo (la pieza de 5A.1). Movimiento pesado; un solo foco.
-2. **los consolidados.** Palabra del episodio a pantalla completa, quieta. Debajo, «Q, p. 174». 2,5 s sin voz y sin música: solo papel. Es la palabra clave de la serie (CLAUDE §1.3).
-3. **La palabra cambia de sentido.** La palabra baja a una esquina y queda como rótulo de la escena. La música vuelve, baja.
+## s03 · El expediente de Novoa
 
-### 4B · Cambia · Parte de los vales se convierte antes de 1855.
+*Expediente: la mesa en cenital.* De «así funcionaba» a «así se aprobó un reclamo que el presidente había dado por vencido».
 
-Voz: 4.2.
-Se amplía a cuatro encuadres. (1) El vale viaja a Londres por el mismo mapa del esquema comercial de 1C.1 (recorrido con tic por tramo); ficha «Manuel de Mendiburu · Londres» [VERIFICAR]; rótulo «Convertido: cerca del 46 % de la deuda consolidada». (2) Vale y bono lado a lado: «Precio en plaza: ≈ 40 % de lo que dice» frente a «Precio: casi el 100 %», un porcentaje por vez. (3) El vale lleva una mancha roja; el bono sale limpio: es la yuxtaposición del episodio («lavado»). Los intereses (6 % y 4,5 %) no se rotulan.
+1:42.4 · voz 77 % · cámara quieta 100 % · 4.7 rótulos con datos por minuto.
 
-### 4C · Igual · La denuncia se lee junto a su participación en el negocio.
+### 3.1 · presentar · 29.4 s
 
-Voz: 4.3, 4.4.
-Cartas del 12 y 16 de agosto de 1853. Con 4.4, el rótulo de doble función de Elías (pieza existente).
+Un caso real: qué reclamaba Novoa, y cómo. La carpeta se abre: folio de la solicitud con la hacienda. El renglón de las quinientas personas esclavizadas aparece solo, y se sostiene. Con 3, una ficha pequeña de la abolición.
 
-### 4D · Igual · Examinar los documentos que llevaron a la emisión.
+- **Pantalla:** Ignacia Novoa de Arredondo · reclamante; Abolición: decreto del 3 de diciembre de 1854.
+- **Cámara:** quieta.
+- **Efecto:** El renglón entra sin efecto; la música sale con él.
+- **Sonido:** Sin música en el renglón de las personas esclavizadas.
+- **Falta:** Ficha de la abolición (pieza nueva).
 
-Voz: 4.5.
-Cambio de gobierno con la ficha política (1855) y la junta que abre el archivo. La primera mitad de 4.5.
+### 3.2 · presentar · 17.3 s
 
-### 4E.1 · Igual · Distinguir expedientes observados, monto y expedientes robados.
+Elías gestiona por comisión y pide entre 500 000 y 600 000. Ficha de Elías junto al folio de gestión. El folio muestra en un solo renglón el intervalo pedido y su comisión esperada; la comisión se escribe cuando la voz la dice. Sin busto ni gesto.
 
-Voz: sin voz propia.
-La segunda mitad de 4.5: 141 expedientes, más de doce millones, cuatro robados. Rótulos con unidad y «irregulares o ilegales».
+- **Pantalla:** Domingo Elías · intermediario; pide: 500 000–600 000 pesos · comisión: 200 000.
+- **Cámara:** quieta.
+- **Efecto:** Cada rótulo entra en bloque y se queda.
+- **Sonido:** Hoja.
 
-### 4E.2 · Cambia · Seguir las medidas, los argumentos y las presiones.
+### 3.3 · frenar · 10.1 s
 
-Voz: 4.6, 4.7.
-Encuadre 1: «Ley del 29 de diciembre de 1856 · suspensión». Nuevo, después: las fichas de Torrico, Echenique y Mendiburu salen del cuadro hacia el borde («habían huido»). Encuadre 3 (presiones): además de las flechas, vuelven las islas de 5A.1 con barcos en el horizonte, y una ficha pequeña de Vivanco. Si la escena se parte (DEFINIR en el guion), este es el punto de corte.
+El presidente lo da por vencido. Ficha de Echenique; el folio de la respuesta se asienta sobre el expediente y el corrector subraya el plazo.
 
-### 4A.2 · Se mueve · Cambia el tenedor del mismo título.
+- **Pantalla:** José Rufino Echenique · presidente, 1851–1855.
+- **Cámara:** quieta.
+- **Efecto:** Tras 0,5 s de quietud, un subrayado rojo.
+- **Sonido:** La música baja hasta casi nada.
 
-Voz: sin voz propia.
-El traspaso del vale entre tenedores se mueve aquí, después de las presiones: ilustra «los papeles ya habían cambiado de manos» (4.9) sin voz propia.
+### 3.4 · revelar · 10.5 s · excepción reservada
 
-### 4E.3 · Cambia · La rehabilitación financiera deja los informes como huellas.
+Días después se aprueba: 948 500 pesos en vales. La mesa se vacía salvo el folio de aprobación, grande. Nada se mueve durante «Días después». La cifra aparece con la voz y se queda sola en el silencio.
 
-Voz: 4.8, 4.9.
-Encuadre 1, «11 de marzo de 1857», igual. El encuadre 2 pasa a mostrar la nota «Ugarte: se mantuvo la responsabilidad penal» junto a «tabla rasa» (Quiroz). Encuadre 3: los informes, con el «Entonces» y 2,5 s de cámara quieta.
+- **Pantalla:** 948 500 pesos en vales.
+- **Cámara:** quieta.
+- **Efecto:** Excepción reservada: un solo elemento, sin halo, sin deslizamiento; la cifra simplemente está.
+- **Sonido:** Silencio absoluto (2,3 s de voz más 1 s de montaje).
 
-## 5. De estos expedientes al método de Quiroz (Escena larga 5)
+### 3.5 · comparar · 14.0 s
 
-- **Entra:** El encuadre exacto de los informes con que termina 4E.3.
-- **Sale:** La pregunta en la pizarra; fundido a la tarjeta.
+Mucho más de lo pedido, con Torrico de por medio. Vuelve el folio de gestión de Elías junto a la aprobación: dos alturas, como las barras de la escena 2. Con 13, la ficha de Torrico.
 
-### 5A.1 · Cambia · Volver al propósito antes de mostrar el resultado.
+- **Pantalla:** Juan Crisóstomo Torrico · ministro de Guerra.
+- **Cámara:** quieta.
+- **Efecto:** El folio de Elías entra a la izquierda, más bajo.
+- **Sonido:** La música vuelve, baja.
 
-Voz: 5.0.
-Antes de «Quiénes quedaron fuera» entra la ficha de Echenique con «una clase capitalista nacional», enfrentada a la de Quiroz. La cita subrayada dice «[…] quedaron radicalmente excluidos».
+### 3.6 · estimar · 9.0 s
 
-### 5A.2 · Cambia · Reunir relaciones ya explicadas.
+Lo que Novoa probablemente recibió. Un segundo folio a la derecha: lo recibido, con «probablemente» y «en vales» del mismo tamaño que la cifra.
 
-Voz: sin voz propia.
-El circuito completo no cabe en los 2 s de pausa del guion: se propone alargarla a 6 s o recorrer solo guano, Estado, vale y junta.
+- **Pantalla:** probablemente ≈ 180 000 pesos en vales.
+- **Cámara:** quieta.
+- **Efecto:** Luz pareja sobre los dos folios: se comparan, no se enfrentan.
+- **Sonido:** Hoja.
 
-### 5B.1 · Cambia · Pasar del relato del caso a las fuentes de la reconstrucción.
+### 3.7 · delimitar · 12.1 s
 
-Voz: 5.1.
-Las tres fichas de fuentes cambian de rótulo para decir lo mismo que la voz: «Reclamos y vales», «Cartas de Elías», «Informes de la junta» (antes: contabilidad estatal, documentos judiciales, correspondencia diplomática).
+Lo que no se sabe y lo que sí está documentado. Entre los dos folios, el espacio vacío queda vacío: sin flechas ni monedas. Con 16, las fichas de Echenique y Torrico y la cifra se encienden una por vez.
 
-### 5B.2 · Cambia · De la cautela en un caso a una estimación histórica.
+- **Pantalla:** sin rótulos.
+- **Cámara:** quieta.
+- **Efecto:** Tres focos sucesivos, uno por cosa documentada.
+- **Sonido:** Ninguno nuevo.
 
-Voz: 5.2.
-El encuadre 1 queda con dos campos, «Aprobado» y «Estimado», con la cifra de Novoa en el segundo. Los encuadres 2 y 3 (el apéndice) reciben «Quiroz quiso sacar una cuenta más grande».
+## s04 · Lo investigan y los títulos siguen circulando
 
-### 5C · Igual · Del caso de deuda al método de medición.
+*Expediente y archivo; el mapa de s01 para Londres; las islas para la presión.* De «un expediente irregular» a «una red con nombre propio que, investigada, salió casi intacta».
 
-Voz: 5.3.
-La pregunta en la pizarra y el índice con el 003. El tema del canal entra al terminar la pregunta.
+3:32.3 · voz 80 % · cámara quieta 86 % · 2.0 rótulos con datos por minuto.
 
-## 6. Cierre (Cierre de la escena larga 5)
+### 4.1 · ampliar · 28.4 s
 
-- **Entra:** Desde el índice, sin voz.
-- **Sale:** Negro y tema del canal.
+Novoa fue uno de muchos: la pila del gancho, ahora con su causa. Vuelve la pila de vales del gancho. Debajo, una línea de 1852 con dos marcas; los expedientes se apilan antes de cada una. La pila crece de nuevo hasta 24 millones. Sin rótulos: las marcas de la línea y la altura de la pila bastan; la voz da las fechas y las cifras.
 
-### 6 · Nuevo · Las pruebas se cierran
+- **Pantalla:** sin rótulos.
+- **Cámara:** quieta.
+- **Efecto:** Expedientes que se apilan con peso; la pila crece igual que en el gancho (mismo movimiento: el espectador lo reconoce).
+- **Sonido:** Papel; el mismo golpe grave del gancho.
+- **Falta:** Línea de 1852 con las dos marcas.
 
-Voz: sin voz propia.
-1. **Pruebas de imprenta.** Vuelven las pruebas del gancho y se cierran, sin limpiarse (eso queda para 004). Silencio de 2,5 s; sombra de la tapa.
-2. **Próximo · ¿Se puede medir la corrupción?** Fundido a negro y tarjeta. El tema del canal entra solo, con el negro.
+### 4.2 · nombrar · 24.2 s · excepción reservada
+
+En pocas manos, y la época les dio nombre: los consolidados. Los vales se juntan hacia unas pocas fichas de grupo. Después, la palabra del episodio sola a pantalla completa. Con 8, la palabra baja a una esquina y se queda como rótulo de la escena.
+
+- **Pantalla:** los consolidados.
+- **Cámara:** quieta.
+- **Efecto:** Excepción reservada: pantalla completa, quieta, sin textura nueva.
+- **Sonido:** Sin música durante la palabra (2,5 s de voz más 1 s de montaje); la música vuelve con 8.
+
+### 4.3 · recorrer · 29.9 s
+
+Los vales se cambian por bonos externos en Londres: el lavado. El mismo mapa de s01 se abre hasta Gran Bretaña; un vale viaja de Lima a Londres y llega como bono. En Londres, las dos barras de la escena 2 vuelven: el vale vale cerca del 40 % de lo que dice; el bono, casi el 100 %. Con 12, el vale lleva una mancha roja y el bono sale limpio.
+
+- **Pantalla:** Manuel de Mendiburu · Londres [VERIFICAR]; ≈ 46 % de la deuda.
+- **Cámara:** recorrido (El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar.).
+- **Efecto:** Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.
+- **Sonido:** Tic por tramo; hoja al llegar el bono.
+- **Falta:** Bono externo como pieza (bono-externo.svg existe en revision-investigacion/capas) y la mancha roja del vale.
+
+### 4.4 · denunciar · 23.8 s
+
+Elías, peleado con Echenique y Torrico, denuncia en la prensa. La ficha de Elías vuelve a la mesa y desde ella salen las dos cartas.
+
+- **Pantalla:** El Comercio · 12 y 16 de agosto de 1853.
+- **Cámara:** quieta.
+- **Efecto:** Cartas que se asientan; nada con 16 (se dice, no se ilustra).
+- **Sonido:** Papel y pluma; sin música heroica.
+
+### 4.5 · matizar · 18.2 s
+
+El denunciante también había hecho el negocio. La ficha de Elías con sus dos funciones a los lados: intermediario y denunciante. Quieta mientras habla Quiroz.
+
+- **Pantalla:** intermediario · denunciante.
+- **Cámara:** quieta.
+- **Efecto:** Ninguno: es un momento de juicio, se sostiene.
+- **Sonido:** La música sostiene.
+
+### 4.6 · investigar · 17.4 s
+
+Cambia el gobierno y una junta revisa: la marca roja del gancho. La pila vuelve al centro y el corrector la marca igual que en el gancho, ahora con su explicación. Los cuatro robados son cuatro huecos en el estante, sin monto.
+
+- **Pantalla:** Junta de Examen Fiscal · 1855; 12,2 millones de pesos · 141 expedientes.
+- **Cámara:** quieta.
+- **Efecto:** Mismo trazo rojo del gancho (0.2).
+- **Sonido:** Pluma.
+
+### 4.7 · suspender · 15.2 s
+
+Se suspende el pago; los principales ya se habían ido. Cae el sello de la suspensión. Las fichas de Torrico, Echenique y Mendiburu se deslizan fuera del cuadro, una por vez.
+
+- **Pantalla:** Ley del 29 de diciembre de 1856.
+- **Cámara:** quieta.
+- **Efecto:** Las fichas salen rápido (entran lento lo importante, sale rápido lo que se va).
+- **Sonido:** Sello; roce de las fichas al salir.
+
+### 4.8 · presionar · 20.9 s
+
+Los tenedores protestan, y Gran Bretaña y Francia los respaldan. Una mano sostiene un vale (el traspaso de 4A.2, un solo cuadro). Con 25, vuelven las islas de s01 con barcos en el horizonte. Vivanco queda solo en la voz.
+
+- **Pantalla:** sin rótulos.
+- **Cámara:** quieta.
+- **Efecto:** Los barcos apenas se mueven; el mar sigue con su fase.
+- **Sonido:** El mar de s01, más grave; la música en tensión.
+- **Falta:** Barcos en el horizonte de islas v3 (reutilizar el barco de 1c, a escala).
+
+### 4.9 · restaurar · 34.3 s
+
+Una ley lo restaura todo: tabla rasa. La pila con su marca roja. Cae el mismo sello del gancho y la marca se borra a medias, igual que en 0.3. Con 28, la cita entre comillas.
+
+- **Pantalla:** Ley del 11 de marzo de 1857; «tabla rasa» · Quiroz, p. 185.
+- **Cámara:** quieta.
+- **Efecto:** El mismo movimiento de 0.3: el gancho se cierra.
+- **Sonido:** El golpe del sello del gancho; la música se apaga en el «Entonces».
+
+## s05 · De estos expedientes al método de Quiroz
+
+*Expediente: la mesa del historiador.* De «este caso se puede reconstruir» a «¿y lo que no dejó papeles?».
+
+1:04.1 · voz 77 % · cámara quieta 77 % · 0.9 rótulos con datos por minuto.
+
+### 5.1 · confrontar · 30.4 s
+
+Echenique decía que creó capitalistas; Quiroz muestra quiénes quedaron fuera. Dos documentos frente a frente: a la izquierda la ficha de Echenique con su frase; a la derecha la página de Quiroz, con el corrector subrayando a los excluidos. Con 3, la pila de pocas manos.
+
+- **Pantalla:** «una clase capitalista nacional» · Q, p. 173; «quedaron radicalmente excluidos».
+- **Cámara:** quieta.
+- **Efecto:** Subrayado rojo de corrector en la página de Quiroz.
+- **Sonido:** Pluma.
+
+### 5.2 · reunir · 14.6 s
+
+Este caso se reconstruye porque dejó papeles. Sobre la mesa del historiador vuelven los objetos ya vistos, uno por palabra: un reclamo, un vale, las cartas y el informe. Con 6, los dos folios de Novoa: aprobado y estimado.
+
+- **Pantalla:** sin rótulos.
+- **Cámara:** recorrido (El circuito final: abrir de la mesa a todos los papeles del episodio, una sola vez, y quedarse.).
+- **Efecto:** Objetos conocidos, sin presentación nueva; cada uno asienta.
+- **Sonido:** Una hoja por objeto.
+
+### 5.3 · abrir · 19.0 s
+
+Mucha corrupción no deja papeles: ¿se puede medir? Los papeles se retiran y la mesa queda casi vacía; queda el libro de Quiroz. La pregunta en la pizarra, y el índice con el 003 encendido.
+
+- **Pantalla:** ¿Se puede medir la corrupción?.
+- **Cámara:** quieta.
+- **Efecto:** La mesa se vacía de afuera hacia adentro.
+- **Sonido:** La música se retira; el tema del canal entra al final de la pregunta.

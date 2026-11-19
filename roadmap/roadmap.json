@@ -1457,18 +1457,19 @@
     {
       "id": "e2-storyboard-adaptado",
       "fase": "e2",
-      "titulo": "Storyboard del 0·2 adaptado a la locución nueva, en HTML con láminas, encuadres, efectos, sonido y transiciones",
-      "entregable": "historia/videos/002-la-deuda-defraudada/storyboard.json (adaptación: 39 tramos sobre las 32 mini escenas), storyboard.py → storyboard.html y storyboard.md; manuscrito.py → manuscrito.md; diseno/storyboard-visual traído de la rama episodio-002-material-remotion",
+      "titulo": "Storyboard del 0·2 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual",
+      "entregable": "historia/videos/002-la-deuda-defraudada/storyboard.json (versión 2: revisión del anterior, sistema visual y 36 planos anclados a las frases de la voz), storyboard.py → storyboard.html y storyboard.md con métricas de lectura, repetición, cámara quieta, voz por escena y datos por minuto",
       "estado": "en_curso",
       "depende_de": [
-        "e2-guion-locucion"
+        "e2-guion-locucion",
+        "e2-narracion"
       ],
       "prevista": null,
       "real": {
         "inicio": "2026-11-19",
         "fin": null
       },
-      "bloqueo": "Propuesta del agente: falta la revisión de Gerson y dibujar las piezas nuevas (ficha de abolición, Mendiburu, viaje a Londres, mancha del lavado, barcos frente a las islas, fichas de fuga, rótulos con espacio de miles).",
+      "bloqueo": "Propuesta del agente: falta la revisión de Gerson, el animatic de la escena 3 para comparar versiones A/B/C, y dibujar las piezas que el storyboard marca como faltantes (pila de vales, línea de 1852, página con huecos, flecha de adelantos, ficha de la abolición, bono y mancha del lavado, barcos en el horizonte).",
       "evidencia": [
         "historia/videos/002-la-deuda-defraudada/storyboard.json",
         "historia/videos/002-la-deuda-defraudada/storyboard.html",

@@ -1,229 +1,1159 @@
 {
-  "titulo": "La deuda defraudada · Storyboard adaptado a la locución",
+  "titulo": "La deuda defraudada · Storyboard",
+  "version": 2,
   "fecha": "2026-11-19",
-  "estado": "Propuesta del agente para revisión de Gerson. No se dibujó nada nuevo: los tramos nuevos indican qué piezas existentes reutilizar.",
-  "fuentes_de_datos": {
-    "guion": "guion.md (la voz se lee de ahí por escena y párrafo: «3.2» es el párrafo 2 de ESC 3, contando desde 0)",
-    "mini_escenas": "diseno/storyboard-visual/revision-*/secuencia.json (rama episodio-002-material-remotion, 11 de noviembre)",
-    "sonido_y_motivo": "diseno/escenas-largas/direccion-movimiento.json (10 de noviembre)",
-    "piezas_separadas": "diseno/recursos-escena01 a 03 (17 de noviembre)"
+  "estado": "Propuesta del agente para revisión de Gerson, rehecha sobre la voz real (narracion_tiempos.json). No se dibujó nada nuevo: cada plano dice qué lámina o pieza existente usa y qué falta.",
+  "criterio": "direccion-historia (§2, §4, §5), estructura-visual-motion (Block: constantes, progresión, excepción reservada; storyboard como reescritura), historia/CLAUDE.md §3–§8 (párrafo audiovisual, texto que no repite la voz, cámara con motivo, ≥ 20 % quieta).",
+  "revision_anterior": {
+    "veredicto": {
+      "se_entiende": "a medias",
+      "se_siente": "a medias"
+    },
+    "diagnostico": "El storyboard del 11 de noviembre ilustra bien cada frase, pero no decide qué importa más: 107 encuadres para 9 min 28 s de voz, casi todos con cámara en movimiento y foco por turnos, de modo que los dos momentos fuertes (la cifra de Novoa y los consolidados) no pueden diferenciarse. Es un problema de capa de secuencia, no de dibujo.",
+    "hojas": [
+      {
+        "momento": "Todo el episodio",
+        "observacion": "Cuatro espacios que se alternan sin regla: mesa cenital, pizarra de tiza, despacho con personajes y mapa.",
+        "hipotesis": "Sin un lugar por función, cada cambio de espacio se lee como un cambio de tema aunque no lo sea.",
+        "cambio": "Tres espacios con función fija: el lugar (mapa y grabado), el mecanismo (pizarra que acumula) y el expediente (mesa de documentos).",
+        "resultado": "El espectador sabe, por el espacio, si está viendo dónde, cómo funciona o qué pasó.",
+        "comprobar": "Ver la escaleta solo con miniaturas: cada cambio de espacio debe coincidir con un cambio de función."
+      },
+      {
+        "momento": "Todo el episodio",
+        "observacion": "Casi todos los encuadres traen «acercar», «abrir», «panear» o «seguir».",
+        "hipotesis": "El movimiento continuo deja de significar: ya no puede marcar un viaje ni una revelación (Block: movimiento constante no es progresión).",
+        "cambio": "Cámara quieta por defecto; solo se mueve en los recorridos que dice la voz (a Chincha, a Londres, el tablero completo, el circuito final).",
+        "resultado": "Cuatro movimientos reconocibles, cada uno con un motivo.",
+        "comprobar": "Medir el porcentaje de cámara quieta (meta ≥ 20 %; aquí se apunta a más del 70 %)."
+      },
+      {
+        "momento": "3D y 4A (la cifra de Novoa y los consolidados)",
+        "observacion": "Llegan con el mismo tratamiento que cualquier dato: ficha que se desliza, foco, roce.",
+        "hipotesis": "Si todo se enfatiza, nada se enfatiza: falta una excepción reservada.",
+        "cambio": "Reservar para esos dos momentos la combinación que no aparece en ningún otro: un solo elemento en cuadro, cámara quieta, silencio absoluto y un respiro agregado en el montaje.",
+        "resultado": "Los dos datos que el espectador debe recordar se sienten distintos sin subir el volumen.",
+        "comprobar": "Prueba sin sonido: ¿se reconocen los dos momentos solo por la imagen?"
+      },
+      {
+        "momento": "2D (la compra)",
+        "observacion": "Siete encuadres de gesto (preparar, agarrar, soltar, recibir) para 13 s de voz.",
+        "hipotesis": "La actuación compite con la idea; lo que hay que entender es la diferencia entre precio y valor, no el agarre.",
+        "cambio": "Tres encuadres de acción y una comparación de alturas (precio bajo, valor alto) que se queda en el tablero.",
+        "resultado": "La idea «barato y luego muchas veces mayor» queda dibujada y se reutiliza en la conversión de Londres.",
+        "comprobar": "Preguntar a otra persona qué entendió de la compra, sin anticiparle la respuesta."
+      },
+      {
+        "momento": "Rótulos de las láminas",
+        "observacion": "«Unos días después», «Fuera de plazo», «Canje parcial», «No es efectivo inmediato» repiten lo que dice la voz en el mismo instante.",
+        "hipotesis": "Redundancia: el espectador lee y escucha lo mismo, y se le va el ojo del objeto (CLAUDE §5, Mayer).",
+        "cambio": "En pantalla solo lo que la voz no da: fecha exacta, cifra exacta, nombre completo con cargo, fuente. Los términos del tablero (una a tres palabras) son la única excepción, y se declara.",
+        "resultado": "Menos texto y cada rótulo agrega algo.",
+        "comprobar": "El generador compara cada rótulo con la voz de su plano y marca los que se repiten."
+      },
+      {
+        "momento": "Escena 4",
+        "observacion": "Unos quince nombres y cifras nuevos en algo más de tres minutos (segunda acta del Escribano), y la voz ocupa el 86 % de la escena: casi no hay respiros.",
+        "hipotesis": "Sobrecarga: no hay tiempo para que un dato se asiente antes del siguiente (CLAUDE §8: ≤ 6 por minuto, voz ≤ 80 %).",
+        "cambio": "Agregar respiros de montaje después de cada párrafo, sacar de la pantalla a Vivanco y a Ugarte (quedan en la voz) y recuperar objetos conocidos (la pila del gancho, el mapa de la escena 1, las barras de la compra) en vez de presentar nuevos.",
+        "resultado": "La escena se apoya en lo ya aprendido y deja respirar.",
+        "comprobar": "Las métricas por escena del generador: voz ≤ 85 % y rótulos nuevos por minuto."
+      }
+    ],
+    "funciona": "Las láminas ya separan bien unidades y cautelas («probablemente», «en vales»), conservan la identidad de los objetos entre estados (el folio de pestaña roja, el vale de marco doble) y tienen enlaces de continuidad entre escenas. Eso se conserva.",
+    "versiones": "A: aplicar solo la cámara quieta por defecto y medir. B: sumar las excepciones reservadas. C: sumar los respiros de montaje y el recorte de rótulos. Comparar A, B y C en el animatic de la escena 3."
   },
-  "revisiones": {
-    "1": "diseno/storyboard-visual/revision-islas",
-    "2": "diseno/storyboard-visual/revision-reclamo",
-    "3": "diseno/storyboard-visual/revision-novoa/escena-completa",
-    "4": "diseno/storyboard-visual/revision-investigacion",
-    "5": "diseno/storyboard-visual/revision-metodo"
+  "sistema": {
+    "constantes": [
+      "Tres espacios con función fija: el lugar (mapa Natural Earth y grabado de islas v3), el mecanismo (pizarra que acumula piezas de papel y tiza, escena 2) y el expediente (mesa de madera en cenital, escenas 3 a 5).",
+      "Papel, tinta y fichas a máquina con cuadrito rojo (gramática de la serie). Una ficha nueva por vez.",
+      "Cámara quieta mientras se lee o se escucha un dato. Los objetos se mueven; la cámara no, al mismo tiempo.",
+      "Personajes solo donde hay una acción física que la voz describe: cargar el guano (1) y comprar el reclamo (2). Las personas reales se identifican con fichas, no con retratos."
+    ],
+    "progresion": "La pila de vales: aparece en el gancho, se reduce a un solo vale en la escena 2, se vuelve la cifra de Novoa en la 3, recupera su altura de 24 millones en la 4 (con la marca roja de la junta) y queda con su marca fantasma en la 5. Junto con la pila progresa el rojo de culpa: primero un borde, después la mitad marcada, después la mancha del lavado.",
+    "excepciones": [
+      "La cifra de Novoa (s03, frase 11): un solo papel en cuadro, cámara quieta, 2,3 s de silencio absoluto más 1 s de respiro de montaje.",
+      "Los consolidados (s04, frase 7): la palabra del episodio a pantalla completa, quieta, sin música, con 2,5 s más 1 s de montaje. Es la única palabra a pantalla completa (CLAUDE §1.3)."
+    ],
+    "recorridos": "La cámara se mueve solo cuatro veces con viaje: al lugar (s01), a abrir el tablero completo (s02), de Lima a Londres (s04) y el circuito final (s05). Siempre arranca despacio, viaja y frena (pesado o solemne).",
+    "rojo": "Corrector: encerrar, subrayar, tachar. Culpa: el borde de la pila inflada, la mitad marcada por la junta, la mancha del vale lavado. Nada más.",
+    "texto": "Solo lo que la voz no dice (fecha exacta, cifra exacta, nombre completo con cargo, fuente). Excepción declarada: los términos del tablero de la escena 2 (de una a tres palabras) y la pregunta del 003 en la tarjeta. Máximo dos rótulos a la vez.",
+    "respiros": "La voz ocupa casi todo el tiempo. Los respiros de montaje (columna «+ s») alargan el video sin tocar la voz: se cortan en las pausas de párrafo, que ya son de 1 s o más."
   },
-  "contactos": {
-    "1": "diseno/recursos-escena01/revision/contacto.png",
-    "2": "diseno/recursos-escena02/revision/contacto.png",
-    "3": "diseno/recursos-escena03/revision/contacto.png"
+  "imagenes": {
+    "4A.1": "diseno/storyboard-visual/revision-investigacion/lamina-01.png",
+    "4E.1": "diseno/storyboard-visual/revision-investigacion/lamina-06.png",
+    "4E.3": "diseno/storyboard-visual/revision-investigacion/lamina-08.png",
+    "1A": "diseno/storyboard-visual/revision-islas/lamina-01.png",
+    "1B.1": "diseno/storyboard-visual/revision-islas/lamina-02.png",
+    "1C.1": "diseno/storyboard-visual/revision-islas/lamina-04.png",
+    "1C.2": "diseno/storyboard-visual/revision-islas/lamina-05.png",
+    "1D.1": "diseno/storyboard-visual/revision-islas/lamina-06.png",
+    "2A": "diseno/storyboard-visual/revision-reclamo/lamina-01.png",
+    "2B": "diseno/storyboard-visual/revision-reclamo/lamina-02.png",
+    "2C": "diseno/storyboard-visual/revision-reclamo/lamina-03.png",
+    "2D": "diseno/storyboard-visual/revision-reclamo/lamina-04.png",
+    "2E": "diseno/storyboard-visual/revision-reclamo/lamina-05.png",
+    "2F": "diseno/storyboard-visual/revision-reclamo/lamina-06.png",
+    "3A": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-01.png",
+    "3B": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-02.png",
+    "3C": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-03.png",
+    "3D": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-04.png",
+    "3E": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-05.png",
+    "3F": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-06.png",
+    "4A.2": "diseno/storyboard-visual/revision-investigacion/lamina-02.png",
+    "4B": "diseno/storyboard-visual/revision-investigacion/lamina-03.png",
+    "4C": "diseno/storyboard-visual/revision-investigacion/lamina-04.png",
+    "4D": "diseno/storyboard-visual/revision-investigacion/lamina-05.png",
+    "4E.2": "diseno/storyboard-visual/revision-investigacion/lamina-07.png",
+    "5A.1": "diseno/storyboard-visual/revision-metodo/lamina-01.png",
+    "5A.2": "diseno/storyboard-visual/revision-metodo/lamina-02.png",
+    "5B.1": "diseno/storyboard-visual/revision-metodo/lamina-03.png",
+    "5B.2": "diseno/storyboard-visual/revision-metodo/lamina-04.png",
+    "5C": "diseno/storyboard-visual/revision-metodo/lamina-05.png"
   },
   "escenas": [
     {
-      "esc": "0",
+      "s": "s00",
       "titulo": "El gancho",
-      "larga": "Nueva, antes de la escena larga 1",
-      "entrada": "Abre en negro con las pruebas de imprenta (gramática de la serie). Sin música: solo papel.",
-      "salida": "Corte J: el mar de 1A entra 12 cuadros antes que su imagen, sobre la ficha de la tesis.",
-      "tramos": [
+      "espacio": "Expediente: la mesa con las pruebas de imprenta",
+      "cambia": "De «una deuda es una deuda» a «una deuda se puede inflar, y alguien la inflaba».",
+      "entrada": "Negro, 1,5 s de papel sin voz; aparecen las pruebas de imprenta.",
+      "salida": "Corte J: el mar de s01 entra 12 cuadros antes que su imagen.",
+      "planos": [
         {
-          "id": "0.1", "estado": "nuevo", "voz": ["0.0"],
-          "titulo": "La pila que crece",
-          "referencias": ["4A.1"],
-          "piezas": [
-            "diseno/storyboard-visual/revision-metodo/capas/pruebas-de-imprenta.svg",
-            "diseno/storyboard-visual/revision-novoa/escena-completa/capas/total-1851.svg",
-            "diseno/storyboard-visual/revision-investigacion/capas/total-1852.svg",
-            "diseno/recursos-escena02/svg/2c-vale/2c-vale-sin-texto.svg"
+          "id": "0.1",
+          "frases": [
+            0,
+            1
           ],
-          "encuadres": [
-            {"plano": "Las pruebas de imprenta", "camara_y_accion": "Cámara quieta sobre el libro corregido.", "efecto_y_pausa": "Papel con fibra y luz baja; nada se mueve hasta la voz."},
-            {"plano": "1851 · unos 5 millones de pesos", "camara_y_accion": "Una pila baja de vales sin texto se asienta junto a la ficha de 1851.", "efecto_y_pausa": "Asentamiento de papel (impacto 0,025)."},
-            {"plano": "1852 · unos 24 millones de pesos", "camara_y_accion": "La pila sube casi cinco veces su altura; la ficha de 1852 reemplaza a la de 1851.", "efecto_y_pausa": "Golpe grave al terminar de crecer. Rojo de culpa en el borde de la pila nueva."}
+          "verbo": "presentar",
+          "respiro": 1.5,
+          "idea": "La deuda reconocida crece casi cinco veces en un año.",
+          "imagen": "Sobre las pruebas de imprenta, una pila baja de vales sin texto. Con «un año después», la pila sube hasta casi cinco veces su altura; el tramo nuevo lleva un borde rojo apagado. Sin rótulos: la voz da las cifras y la altura de la pila, la proporción.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "La pila crece con peso pesado, de una vez, y asienta (impacto de papel 0,025). Nada más se mueve.",
+          "sonido": "Papel; un golpe grave cuando la pila termina de crecer. Sin música.",
+          "base": [
+            "4A.1"
           ],
-          "nota": "Reutiliza el par de fichas 1851–1852 de 4A.1. El crecimiento es de altura, no de monedas."
+          "falta": "Pila de vales como pieza (se arma con 2c-vale-sin-texto repetido)."
         },
         {
-          "id": "0.2", "estado": "nuevo", "voz": ["0.1", "0.2"],
-          "titulo": "La junta marca la mitad; la ley la borra",
-          "referencias": ["4E.1", "4E.3"],
-          "piezas": [
-            "diseno/storyboard-visual/revision-investigacion/capas/monto-observado.svg",
-            "diseno/storyboard-visual/revision-investigacion/capas/expedientes-observados.svg"
+          "id": "0.2",
+          "frases": [
+            2,
+            3
           ],
-          "encuadres": [
-            {"plano": "12,2 millones de pesos · 141 expedientes irregulares o ilegales", "camara_y_accion": "El corrector encierra en rojo algo más de la mitad de la pila.", "efecto_y_pausa": "Trazo rojo ligero; pausa de 1,2 s."},
-            {"plano": "Ley del 11 de marzo de 1857", "camara_y_accion": "Cae el sello de la ley; la marca roja se borra a medias.", "efecto_y_pausa": "Sello desde arriba, sin deformar; la marca queda como fantasma."}
+          "verbo": "marcar",
+          "idea": "Una investigación del propio Estado señala más de la mitad.",
+          "imagen": "El corrector encierra en rojo algo más de la mitad de la pila.",
+          "pantalla": [
+            {
+              "en": 3,
+              "t": "1855 · 141 expedientes"
+            }
           ],
-          "nota": "Adelanta en 10 s lo que 4E.1 y 4E.3 desarrollan: se usan las mismas cifras y rótulos para que el espectador los reconozca después."
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Trazo rojo de corrector, ligero, de una vez.",
+          "sonido": "Pluma sobre papel.",
+          "base": [
+            "4E.1"
+          ],
+          "respiro": 0.5
         },
         {
-          "id": "0.3", "estado": "nuevo", "voz": ["0.3"],
-          "titulo": "La pregunta",
-          "referencias": ["5B.1"],
-          "piezas": ["diseno/storyboard-visual/revision-metodo/capas/libro-de-quiroz.svg"],
-          "encuadres": [
-            {"plano": "¿Cómo se infla la deuda de un país?", "camara_y_accion": "Cámara quieta sobre la pila marcada.", "efecto_y_pausa": "Silencio de música; solo el papel."},
-            {"plano": "Tesis de 1980 · libro de 1987: La deuda defraudada", "camara_y_accion": "Entra la ficha a máquina sobre la pila.", "efecto_y_pausa": "Tecleo breve de la ficha; sostener 2 s."}
+          "id": "0.3",
+          "frases": [
+            4
+          ],
+          "verbo": "borrar",
+          "idea": "Una ley devuelve esos títulos a la circulación.",
+          "imagen": "Cae el sello de la ley; la marca roja se borra a medias y queda como fantasma.",
+          "pantalla": [
+            {
+              "en": 4,
+              "t": "Ley del 11 de marzo de 1857"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Sello desde arriba: se pasa apenas de tamaño y vuelve, sin deformarse.",
+          "sonido": "Golpe de sello seco; el papel sigue.",
+          "base": [
+            "4E.3"
+          ]
+        },
+        {
+          "id": "0.4",
+          "frases": [
+            5,
+            7
+          ],
+          "verbo": "preguntar",
+          "respiro": 1.5,
+          "idea": "¿Cómo se infla una deuda? Quiroz fue a comprobarlo.",
+          "imagen": "La pila con su marca fantasma, quieta durante la pregunta. Con «Alfonso Quiroz», la ficha a máquina se escribe sobre la mesa.",
+          "pantalla": [
+            {
+              "en": 7,
+              "t": "Alfonso W. Quiroz · tesis de 1980",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Ficha a máquina, letra por letra.",
+          "sonido": "Tecleo breve. Silencio de música en la pregunta.",
+          "base": [
+            "5B.1"
           ]
         }
       ]
     },
     {
-      "esc": "1",
+      "s": "s01",
       "titulo": "Las islas y el país",
-      "larga": "Escena larga 1",
-      "entrada": "Desde la ficha de la tesis, el mar entra antes que la imagen (corte J).",
-      "salida": "El folio de pestaña roja queda en la posición exacta con que abre 2A.",
-      "tramos": [
-        {"id": "1A", "estado": "cambia", "voz": ["1.0", "1.1"], "base": "1A",
-         "ajuste": "La ficha de Ramón Castilla entra aquí, con «gobierna Ramón Castilla». La definición del guano cae en la llegada a Chincha (encuadre 5). La voz ya nombra Gran Bretaña: el esquema comercial de 1C.1 llegará sin voz."},
-        {"id": "1B.1", "estado": "igual", "voz": ["1.2"], "base": "1B.1",
-         "ajuste": "«Sacarlo exige mucho trabajo» entra con la pala. El encuadre 3 (uso agrícola) queda como plano sin voz."},
-        {"id": "1B.2", "estado": "igual", "voz": [], "base": "1B.2",
-         "ajuste": "La segunda mitad de 1.2 (jornaleros, presos, personas esclavizadas, trabajadores chinos) cae sobre el agarre; sin rótulos sobre las figuras. El paso con carga ocupa la pausa de 2 s sin voz."},
-        {"id": "1C.1", "estado": "cambia", "voz": [], "base": "1C.1",
-         "ajuste": "Todo el embarque va sin voz, en la pausa de 1.2. Si la pausa no alcanza, se alarga a 4 s: es el único respiro con acción física del episodio."},
-        {"id": "1C.2", "estado": "cambia", "voz": ["1.3"], "base": "1C.2",
-         "ajuste": "Se suma una partida o flecha nueva: «Adelantos al gobierno» (Q, pp. 166–167). Las otras tres partidas no cambian."},
-        {"id": "1D.1", "estado": "cambia", "voz": ["1.4", "2.0"], "base": "1D.1",
-         "ajuste": "Sale el encuadre 1 tal como está: las tres fuentes de ingreso (tributo, aduanas, guano) ya no tienen voz. Queda solo el guano llegando al Estado con «Con esa plata». Los ejemplos del préstamo y los bienes (encuadres 2 y 3) reciben la voz de 2.0, y «deuda interna» se rotula en el encuadre 4."},
-        {"id": "1D.2", "estado": "igual", "voz": [], "base": "1D.2",
-         "ajuste": "Pausa de 1,2 s tras «deuda interna»; el folio por revisar se sostiene."}
+      "espacio": "Lugar: mapa y grabado de islas v3",
+      "cambia": "De «el Estado no tiene con qué pagar» a «el guano le da con qué pagar, y aparecen las deudas».",
+      "entrada": "Corte J desde la ficha de Quiroz: primero el mar.",
+      "salida": "La carpeta de obligaciones pendientes pasa a la pizarra de s02 (misma posición, cambia el fondo).",
+      "planos": [
+        {
+          "id": "1.1",
+          "frases": [
+            0,
+            1
+          ],
+          "verbo": "situar",
+          "idea": "Dónde y cuándo: el Perú de 1850, gobierno de Castilla.",
+          "imagen": "Mapa de la costa central con Lima, Pisco y Chincha.",
+          "pantalla": [
+            {
+              "en": 1,
+              "t": "Ramón Castilla · presidente, 1845–1851",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "Ir al lugar: de Lima a Chincha, pesado, y frena sobre el localizador."
+          },
+          "efecto": "Localizador de Chincha con su pulso (1a-localizador).",
+          "sonido": "Mar que entra antes de la imagen; viento.",
+          "base": [
+            "1A"
+          ],
+          "piezas": [
+            "diseno/recursos-escena01/svg/1a-localizacion/1a-mapa-costa-central.svg"
+          ]
+        },
+        {
+          "id": "1.2",
+          "frases": [
+            2,
+            3
+          ],
+          "verbo": "mostrar",
+          "idea": "Qué es el guano y quién lo compra.",
+          "imagen": "El grabado de islas v3: mar, roca cubierta y aves. Nada más.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Mar con fase continua y aves en vuelo como acción secundaria.",
+          "sonido": "Aves y oleaje.",
+          "base": [
+            "1A"
+          ]
+        },
+        {
+          "id": "1.3",
+          "frases": [
+            4,
+            5
+          ],
+          "verbo": "mostrar",
+          "respiro": 2,
+          "idea": "Sacarlo exige trabajo, y no siempre libre.",
+          "imagen": "Depósito, pala y saco; una figura llena el saco. En la pausa sin voz, el saco sube al barco.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Pala en arco; granos con semilla que caen una vez y se asientan; balanceo corto del casco al recibir el saco.",
+          "sonido": "Raspado de pala, saco al apoyarse, madera del barco.",
+          "base": [
+            "1B.1",
+            "1C.1"
+          ],
+          "piezas": [
+            "diseno/recursos-escena01/svg/1b-trabajo/1b-deposito-guano.svg",
+            "diseno/recursos-escena01/svg/1b-trabajo/1b-saco-abierto.svg"
+          ],
+          "falta": "La figura del trabajador como PNG de ChatGPT (imagenes-chatgpt.md). Sin rótulo sobre la figura: su aspecto no documenta su condición."
+        },
+        {
+          "id": "1.4",
+          "frases": [
+            6,
+            7
+          ],
+          "verbo": "explicar",
+          "idea": "El Estado es dueño; la casa vende, cobra comisión y adelanta dinero.",
+          "imagen": "Diagrama de venta: guano → venta → comisión e ingreso del Estado, con una flecha más hacia el gobierno: adelantos.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Cada nodo entra cuando la voz lo nombra; las flechas se trazan ligeras.",
+          "sonido": "Pluma por flecha.",
+          "base": [
+            "1C.2"
+          ],
+          "piezas": [
+            "diseno/recursos-escena01/svg/1c-embarque-y-venta/1c-diagrama-venta-sin-texto.svg"
+          ],
+          "falta": "La flecha de adelantos (pieza nueva, del mismo trazo)."
+        },
+        {
+          "id": "1.5",
+          "frases": [
+            8
+          ],
+          "verbo": "conectar",
+          "respiro": 1,
+          "idea": "Con esa plata, el Estado puede pagar lo que debía.",
+          "imagen": "La flecha del ingreso llega al edificio del Estado; a su lado se abre la carpeta de obligaciones pendientes.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "movimiento",
+            "motivo": "Seguir el dinero del diagrama al Estado: un paneo corto, pesado."
+          },
+          "efecto": "La carpeta se abre y asoma el folio de pestaña roja.",
+          "sonido": "Carpeta.",
+          "base": [
+            "1D.1"
+          ],
+          "piezas": [
+            "diseno/recursos-escena01/svg/1d-estado-y-reclamos/1d-edificio-estado.svg",
+            "diseno/recursos-escena01/svg/1d-estado-y-reclamos/1d-carpeta.svg"
+          ]
+        }
       ]
     },
     {
-      "esc": "2",
+      "s": "s02",
       "titulo": "Un reclamo pasa por varias manos",
-      "larga": "Escena larga 2",
-      "entrada": "Mismo folio, misma posición (corte invisible).",
-      "salida": "Se cierra la carpeta genérica y se abre la de Novoa: el corte lo marca el cambio de carpeta, no un fundido.",
-      "tramos": [
-        {"id": "2A", "estado": "cambia", "voz": ["2.1"], "base": "2A",
-         "ajuste": "La ley entra con su fecha (16 de marzo de 1850). Con «consolidación», la palabra se escribe en la pizarra y se queda hasta 2F."},
-        {"id": "2B", "estado": "cambia", "voz": [], "base": "2B",
-         "ajuste": "El cotejo ilustra «revisar cada reclamo, decidir cuánto valía» de 2.1. La voz es corta: dejar los encuadres 1 y 4 o recorrer los cuatro sin detenerse."},
-        {"id": "2B+", "estado": "nuevo", "voz": ["2.2"], "titulo": "El crédito público",
-         "referencias": ["5A.1"],
-         "piezas": [
-           "diseno/recursos-escena01/svg/1d-estado-y-reclamos/1d-edificio-estado.svg",
-           "diseno/storyboard-visual/revision-metodo/capas/finalidad-del-credito.svg"
-         ],
-         "encuadres": [
-           {"plano": "Un Estado que paga lo que debe", "camara_y_accion": "El edificio del Estado a la izquierda; el folio reconocido a su lado.", "efecto_y_pausa": "Luz cálida que vuelve al edificio."},
-           {"plano": "Fundamento del crédito público moderno", "camara_y_accion": "Entra la ficha de la finalidad del crédito, la misma de 5A.1.", "efecto_y_pausa": "Sostener 1,2 s. La ficha reaparece en 5A.1 como regreso."}
-         ],
-         "nota": "Reutiliza la ficha de 5A.1 para que el cierre la reconozca."},
-        {"id": "2C", "estado": "cambia", "voz": ["2.3"], "base": "2C",
-         "ajuste": "El vale lleva «6 % de interés» [VERIFICAR si es anual]. El encuadre 3 recibe «y esa promesa se podía vender»: se queda el vale, pierden foco las monedas."},
-        {"id": "2C+", "estado": "nuevo", "voz": ["2.4"], "titulo": "Los dos huecos de la ley",
-         "referencias": ["2A"],
-         "piezas": ["diseno/storyboard-visual/revision-reclamo/capas/libro-ley-consolidacion.svg"],
-         "encuadres": [
-           {"plano": "El libro de la ley, abierto", "camara_y_accion": "Cenital fijo sobre el libro de 2A.", "efecto_y_pausa": "Luz de lectura sobre dos renglones."},
-           {"plano": "Reclamos mal sustentados · traspaso de vales", "camara_y_accion": "El corrector encierra en rojo los dos renglones, uno por vez, con la voz.", "efecto_y_pausa": "Trazo del corrector; pausa de 1 s."}
-         ],
-         "nota": "Antes la falta de reglas era una cautela al final (§3 del guion por ideas); ahora es la causa del negocio y va antes de la compra."},
-        {"id": "2D", "estado": "igual", "voz": ["2.5"], "base": "2D",
-         "ajuste": "Siete encuadres para unos 12 s de voz. Si el gesto se corta, dejar 1, 3, 5 y 6. Rótulos de tiza: «Precio de compra» bajo, «Valor reconocido» alto."},
-        {"id": "2E", "estado": "cambia", "voz": ["2.6", "2.7"], "base": "2E",
-         "ajuste": "El trazo rojo (encuadre 2) cae con «comisiones ilegales». Con 2.7, la ficha del intermediario se ilumina en neutro: su comisión era legítima. La nota de la comisión de Novoa (2F, encuadre 3) se adelanta aquí como anuncio."},
-        {"id": "2F", "estado": "cambia", "voz": ["2.8"], "base": "2F",
-         "ajuste": "El encuadre 1 recorre las cuatro manos (vende, compra, mueve, aprueba) con un tic por mano. Cámara quieta 2,5 s con el circuito completo. Los encuadres 2 y 3 abren la carpeta de Novoa con la voz de 3.0."}
+      "espacio": "Mecanismo: la pizarra que acumula (tablero de izquierda a derecha)",
+      "cambia": "De «pagar las deudas es una buena idea» a «la ley tenía dos huecos, y por ahí entró el negocio».",
+      "entrada": "El folio de pestaña roja, en la misma posición; el fondo pasa de mesa a pizarra.",
+      "salida": "El tablero completo queda quieto; la carpeta de Novoa se separa de él hacia la mesa (corte por cambio de espacio).",
+      "planos": [
+        {
+          "id": "2.1",
+          "frases": [
+            0,
+            3
+          ],
+          "verbo": "agrupar",
+          "respiro": 1,
+          "idea": "Préstamos y bienes tomados: eso era la deuda interna.",
+          "imagen": "En la pizarra, el folio del préstamo y el de los bienes para las tropas entran cuando la voz los nombra; una llave de tiza los agrupa.",
+          "pantalla": [
+            {
+              "en": 3,
+              "t": "deuda interna",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Folios que se asientan; llave de tiza trazada de una vez.",
+          "sonido": "Hoja por folio; tiza.",
+          "base": [
+            "2A"
+          ],
+          "piezas": [
+            "diseno/recursos-escena01/svg/1d-estado-y-reclamos/1d-folio-prestamo.svg",
+            "diseno/recursos-escena02/svg/2a-retomar/2a-llave-agrupadora.svg"
+          ]
+        },
+        {
+          "id": "2.2",
+          "frases": [
+            4,
+            5
+          ],
+          "verbo": "ordenar",
+          "idea": "La ley de 1850 manda revisar y reconocer: la consolidación.",
+          "imagen": "El libro de la ley entra a la derecha del grupo. El folio de pestaña roja recibe el sello «reconocido» cuando la voz dice «decidir cuánto valía».",
+          "pantalla": [
+            {
+              "en": 4,
+              "t": "Ley del 16 de marzo de 1850"
+            },
+            {
+              "en": 5,
+              "t": "consolidación",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Un sello, una vez. Sin cotejo campo por campo (era de la versión anterior).",
+          "sonido": "Sello suave.",
+          "base": [
+            "2B"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-reclamo/capas/libro-ley-consolidacion.svg",
+            "diseno/recursos-escena02/svg/2b-cotejo/2b-sello-reconocido.svg"
+          ],
+          "respiro": 1
+        },
+        {
+          "id": "2.3",
+          "frases": [
+            6,
+            7
+          ],
+          "verbo": "justificar",
+          "respiro": 1,
+          "idea": "Pagar lo que se debe devuelve la confianza: la idea era buena.",
+          "imagen": "Del folio reconocido sale una flecha de tiza al edificio del Estado, y del Estado una flecha de vuelta: el comerciante vuelve a prestar.",
+          "pantalla": [
+            {
+              "en": 7,
+              "t": "crédito público",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Dos flechas de tiza; la segunda tarda un poco más (es la consecuencia).",
+          "sonido": "Tiza.",
+          "base": [
+            "5A.1"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-metodo/capas/finalidad-del-credito.svg"
+          ]
+        },
+        {
+          "id": "2.4",
+          "frases": [
+            8,
+            9
+          ],
+          "verbo": "definir",
+          "respiro": 1,
+          "idea": "El vale es una promesa de pago con intereses, y se puede vender.",
+          "imagen": "El vale entra junto al folio reconocido. Unas monedas a la izquierda se apartan: el vale no es efectivo. Con «se podía vender», una flecha corta sale del vale hacia el borde derecho, vacío.",
+          "pantalla": [
+            {
+              "en": 8,
+              "t": "6 % de interés [VERIFICAR: anual]"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "El vale asienta con su sombra; las monedas se deslizan fuera sin rebote.",
+          "sonido": "Papel; monedas apenas.",
+          "base": [
+            "2C"
+          ],
+          "piezas": [
+            "diseno/recursos-escena02/svg/2c-vale/2c-vale.svg"
+          ]
+        },
+        {
+          "id": "2.5",
+          "frases": [
+            10,
+            11
+          ],
+          "verbo": "señalar",
+          "idea": "La ley tenía dos huecos.",
+          "imagen": "El libro de la ley vuelve al centro; el corrector encierra en rojo dos renglones casi vacíos.",
+          "pantalla": [
+            {
+              "en": 11,
+              "t": "sustento",
+              "termino": true
+            },
+            {
+              "en": 11,
+              "t": "traspaso",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Dos círculos de corrector, uno por cada hueco, con la voz.",
+          "sonido": "Pluma.",
+          "base": [
+            "2A"
+          ],
+          "falta": "Página del libro con dos renglones vacíos (variante de libro-ley-consolidacion).",
+          "respiro": 1
+        },
+        {
+          "id": "2.6",
+          "frases": [
+            12,
+            14
+          ],
+          "verbo": "comparar",
+          "respiro": 2,
+          "idea": "Se compra barato y se hace reconocer por mucho más.",
+          "imagen": "Tres cuadros de acción: el reclamante entrega el folio, el comprador lo toma, el sobre va en sentido contrario. Después, en la pizarra, dos barras de tiza: precio de compra (baja) y valor reconocido (alta), sin cifras.",
+          "pantalla": [
+            {
+              "en": 14,
+              "t": "precio",
+              "termino": true
+            },
+            {
+              "en": 14,
+              "t": "valor reconocido",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "La barra alta crece después de la baja, más lenta. Las dos barras se quedan en el tablero (vuelven en Londres).",
+          "sonido": "Papel y sobre; tiza.",
+          "base": [
+            "2D"
+          ],
+          "piezas": [
+            "diseno/recursos-escena02/svg/2d-compra/2d-tiza-precio-de-compra.svg",
+            "diseno/recursos-escena02/svg/2d-compra/2d-tiza-valor-reconocido.svg"
+          ]
+        },
+        {
+          "id": "2.7",
+          "frases": [
+            15,
+            18
+          ],
+          "verbo": "distinguir",
+          "idea": "Para lograrlo había ayuda; la ilegal es la de los funcionarios.",
+          "imagen": "Entran las fichas de función del intermediario y del funcionario. Con «comisiones ilegales», un desvío rojo salta la revisión. Con 17, el intermediario queda en luz neutra; con 18, el enlace del funcionario queda en rojo.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Un solo foco activo por vez. El rojo, solo en el desvío y el enlace ilegal.",
+          "sonido": "Tiza; nada sobre el rojo.",
+          "base": [
+            "2E"
+          ],
+          "piezas": [
+            "diseno/recursos-escena02/svg/2e-gestion/2e-fichas-funcion.svg",
+            "diseno/recursos-escena02/svg/2e-gestion/2e-desvio-rojo.svg"
+          ],
+          "respiro": 1
+        },
+        {
+          "id": "2.8",
+          "frases": [
+            19
+          ],
+          "verbo": "recapitular",
+          "respiro": 1.5,
+          "idea": "Cuatro manos: vende, compra, mueve, aprueba.",
+          "imagen": "El tablero completo, de la deuda interna al funcionario: es la imagen que junta la escena.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "Abrir hasta ver el tablero entero mientras la voz cuenta las cuatro manos; frena y queda quieta en la pausa."
+          },
+          "efecto": "Un número de tiza (1 a 4) junto a cada mano, con la voz.",
+          "sonido": "Un tic por mano; la música sostiene la pausa.",
+          "base": [
+            "2F"
+          ]
+        }
       ]
     },
     {
-      "esc": "3",
+      "s": "s03",
       "titulo": "El expediente de Novoa",
-      "larga": "Escena larga 3",
-      "entrada": "El mismo encuadre con que termina 2F.",
-      "salida": "Se cierra la carpeta de Novoa y se abre la caja del conjunto con 1851: corte por cambio de escala, con hoja.",
-      "tramos": [
-        {"id": "3A", "estado": "cambia", "voz": ["3.0"], "base": "3A",
-         "ajuste": "Se agrega una ficha pequeña: «Abolición · decreto de Huancayo · 3 de diciembre de 1854», con «se abolió». Pieza nueva por dibujar. La música sale con «personas esclavizadas», como ya estaba."},
-        {"id": "3B", "estado": "cambia", "voz": ["3.1"], "base": "3B",
-         "ajuste": "Rótulo nuevo: «Elías pide: de 500 000 a 600 000 pesos», y debajo, más chico, «Su comisión esperada: 200 000 pesos»."},
-        {"id": "3C", "estado": "igual", "voz": ["3.2"], "base": "3C",
-         "ajuste": "Sin cambios: identificar a Echenique, «Fuera de plazo», sostener 2 s."},
-        {"id": "3D", "estado": "cambia", "voz": ["3.3"], "base": "3D",
-         "ajuste": "Cambia el orden: primero el encuadre 2 (unos días después, quietud), después el 3 (948 500 pesos en vales, con 2 s de silencio absoluto) y al final el 1 (Torrico), con «Según Quiroz». El rótulo pasa de «948.500» a «948 500». Tras el silencio entra la comparación: «Elías pidió de 500 000 a 600 000»."},
-        {"id": "3E", "estado": "igual", "voz": ["3.4"], "base": "3E",
-         "ajuste": "La ficha de Torrico queda arriba; las dos cifras se comparan como estaban. «180.000» pasa a «180 000»."},
-        {"id": "3F", "estado": "cambia", "voz": ["3.5"], "base": "3F",
-         "ajuste": "El encuadre 1 lee las funciones con la voz (quién lo dio por vencido, quién intervino, cuánto se aprobó). El encuadre 2 (volver a Elías) queda sin voz o sale: Elías vuelve en 4C."}
+      "espacio": "Expediente: la mesa en cenital",
+      "cambia": "De «así funcionaba» a «así se aprobó un reclamo que el presidente había dado por vencido».",
+      "entrada": "Desde el tablero, la carpeta de Novoa baja a la mesa.",
+      "salida": "La carpeta de Novoa se cierra y vuelve a un estante del archivo (s04).",
+      "planos": [
+        {
+          "id": "3.1",
+          "frases": [
+            0,
+            3
+          ],
+          "verbo": "presentar",
+          "respiro": 1,
+          "idea": "Un caso real: qué reclamaba Novoa, y cómo.",
+          "imagen": "La carpeta se abre: folio de la solicitud con la hacienda. El renglón de las quinientas personas esclavizadas aparece solo, y se sostiene. Con 3, una ficha pequeña de la abolición.",
+          "pantalla": [
+            {
+              "en": 1,
+              "t": "Ignacia Novoa de Arredondo · reclamante",
+              "ficha": true
+            },
+            {
+              "en": 3,
+              "t": "Abolición: decreto del 3 de diciembre de 1854"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "El renglón entra sin efecto; la música sale con él.",
+          "sonido": "Sin música en el renglón de las personas esclavizadas.",
+          "base": [
+            "3A"
+          ],
+          "piezas": [
+            "diseno/recursos-escena03/svg/3a-lo-que-pedia/3a-folio-solicitud.svg",
+            "diseno/recursos-escena03/svg/3a-lo-que-pedia/3a-hacienda.svg"
+          ],
+          "falta": "Ficha de la abolición (pieza nueva)."
+        },
+        {
+          "id": "3.2",
+          "frases": [
+            4,
+            7
+          ],
+          "verbo": "presentar",
+          "respiro": 1,
+          "idea": "Elías gestiona por comisión y pide entre 500 000 y 600 000.",
+          "imagen": "Ficha de Elías junto al folio de gestión. El folio muestra en un solo renglón el intervalo pedido y su comisión esperada; la comisión se escribe cuando la voz la dice. Sin busto ni gesto.",
+          "pantalla": [
+            {
+              "en": 4,
+              "t": "Domingo Elías · intermediario",
+              "ficha": true
+            },
+            {
+              "en": 6,
+              "t": "pide: 500 000–600 000 pesos · comisión: 200 000"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Cada rótulo entra en bloque y se queda.",
+          "sonido": "Hoja.",
+          "base": [
+            "3B"
+          ],
+          "piezas": [
+            "diseno/recursos-escena03/svg/3b-gestion/3b-folio-gestion.svg"
+          ]
+        },
+        {
+          "id": "3.3",
+          "frases": [
+            8,
+            9
+          ],
+          "verbo": "frenar",
+          "respiro": 1,
+          "idea": "El presidente lo da por vencido.",
+          "imagen": "Ficha de Echenique; el folio de la respuesta se asienta sobre el expediente y el corrector subraya el plazo.",
+          "pantalla": [
+            {
+              "en": 8,
+              "t": "José Rufino Echenique · presidente, 1851–1855",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Tras 0,5 s de quietud, un subrayado rojo.",
+          "sonido": "La música baja hasta casi nada.",
+          "base": [
+            "3C"
+          ],
+          "piezas": [
+            "diseno/recursos-escena03/svg/3c-plazo/3c-folio-respuesta.svg"
+          ]
+        },
+        {
+          "id": "3.4",
+          "frases": [
+            10,
+            11
+          ],
+          "verbo": "revelar",
+          "excepcion": true,
+          "respiro": 1,
+          "idea": "Días después se aprueba: 948 500 pesos en vales.",
+          "imagen": "La mesa se vacía salvo el folio de aprobación, grande. Nada se mueve durante «Días después». La cifra aparece con la voz y se queda sola en el silencio.",
+          "pantalla": [
+            {
+              "en": 11,
+              "t": "948 500 pesos en vales",
+              "refuerzo": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Excepción reservada: un solo elemento, sin halo, sin deslizamiento; la cifra simplemente está.",
+          "sonido": "Silencio absoluto (2,3 s de voz más 1 s de montaje).",
+          "base": [
+            "3D"
+          ],
+          "piezas": [
+            "diseno/recursos-escena03/svg/3d-intervencion-y-resultado/3d-folio-aprobacion.svg"
+          ]
+        },
+        {
+          "id": "3.5",
+          "frases": [
+            12,
+            13
+          ],
+          "verbo": "comparar",
+          "respiro": 1,
+          "idea": "Mucho más de lo pedido, con Torrico de por medio.",
+          "imagen": "Vuelve el folio de gestión de Elías junto a la aprobación: dos alturas, como las barras de la escena 2. Con 13, la ficha de Torrico.",
+          "pantalla": [
+            {
+              "en": 13,
+              "t": "Juan Crisóstomo Torrico · ministro de Guerra",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "El folio de Elías entra a la izquierda, más bajo.",
+          "sonido": "La música vuelve, baja.",
+          "base": [
+            "3D"
+          ]
+        },
+        {
+          "id": "3.6",
+          "frases": [
+            14
+          ],
+          "verbo": "estimar",
+          "respiro": 1,
+          "idea": "Lo que Novoa probablemente recibió.",
+          "imagen": "Un segundo folio a la derecha: lo recibido, con «probablemente» y «en vales» del mismo tamaño que la cifra.",
+          "pantalla": [
+            {
+              "en": 14,
+              "t": "probablemente ≈ 180 000 pesos en vales",
+              "refuerzo": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Luz pareja sobre los dos folios: se comparan, no se enfrentan.",
+          "sonido": "Hoja.",
+          "base": [
+            "3E"
+          ],
+          "piezas": [
+            "diseno/recursos-escena03/svg/3e-aprobado-y-recibido/3e-folio-recibido.svg"
+          ]
+        },
+        {
+          "id": "3.7",
+          "frases": [
+            15,
+            16
+          ],
+          "verbo": "delimitar",
+          "respiro": 1.5,
+          "idea": "Lo que no se sabe y lo que sí está documentado.",
+          "imagen": "Entre los dos folios, el espacio vacío queda vacío: sin flechas ni monedas. Con 16, las fichas de Echenique y Torrico y la cifra se encienden una por vez.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Tres focos sucesivos, uno por cosa documentada.",
+          "sonido": "Ninguno nuevo.",
+          "base": [
+            "3F"
+          ]
+        }
       ]
     },
     {
-      "esc": "4",
+      "s": "s04",
       "titulo": "Lo investigan y los títulos siguen circulando",
-      "larga": "Escena larga 4",
-      "entrada": "La caja del conjunto con 1851, igual que al final de 3F.",
-      "salida": "Los informes de la junta quedan en el encuadre exacto con que abre 5A.1.",
-      "tramos": [
-        {"id": "4A.1", "estado": "cambia", "voz": ["4.0"], "base": "4A.1",
-         "ajuste": "Se agrega una línea de tiempo de 1852 con dos marcas, junio y octubre, y los expedientes que se apilan antes de cada una. Las fichas dicen «millones de pesos». El encuadre 3 (vale genérico) pasa al tramo siguiente."},
-        {"id": "4A+", "estado": "nuevo", "voz": ["4.1"], "titulo": "Los consolidados",
-         "referencias": ["5A.1"],
-         "piezas": ["diseno/storyboard-visual/revision-metodo/capas/beneficios-concentrados.svg"],
-         "encuadres": [
-           {"plano": "En pocas manos", "camara_y_accion": "Los vales se juntan hacia unas pocas fichas de grupo (la pieza de 5A.1).", "efecto_y_pausa": "Movimiento pesado; un solo foco."},
-           {"plano": "los consolidados", "camara_y_accion": "Palabra del episodio a pantalla completa, quieta. Debajo, «Q, p. 174».", "efecto_y_pausa": "2,5 s sin voz y sin música: solo papel. Es la palabra clave de la serie (CLAUDE §1.3)."},
-           {"plano": "La palabra cambia de sentido", "camara_y_accion": "La palabra baja a una esquina y queda como rótulo de la escena.", "efecto_y_pausa": "La música vuelve, baja."}
-         ],
-         "palabra": "los consolidados"},
-        {"id": "4B", "estado": "cambia", "voz": ["4.2"], "base": "4B",
-         "referencias": ["1C.1"],
-         "ajuste": "Se amplía a cuatro encuadres. (1) El vale viaja a Londres por el mismo mapa del esquema comercial de 1C.1 (recorrido con tic por tramo); ficha «Manuel de Mendiburu · Londres» [VERIFICAR]; rótulo «Convertido: cerca del 46 % de la deuda consolidada». (2) Vale y bono lado a lado: «Precio en plaza: ≈ 40 % de lo que dice» frente a «Precio: casi el 100 %», un porcentaje por vez. (3) El vale lleva una mancha roja; el bono sale limpio: es la yuxtaposición del episodio («lavado»). Los intereses (6 % y 4,5 %) no se rotulan."},
-        {"id": "4C", "estado": "igual", "voz": ["4.3", "4.4"], "base": "4C",
-         "ajuste": "Cartas del 12 y 16 de agosto de 1853. Con 4.4, el rótulo de doble función de Elías (pieza existente)."},
-        {"id": "4D", "estado": "igual", "voz": ["4.5"], "base": "4D",
-         "ajuste": "Cambio de gobierno con la ficha política (1855) y la junta que abre el archivo. La primera mitad de 4.5."},
-        {"id": "4E.1", "estado": "igual", "voz": [], "base": "4E.1",
-         "ajuste": "La segunda mitad de 4.5: 141 expedientes, más de doce millones, cuatro robados. Rótulos con unidad y «irregulares o ilegales»."},
-        {"id": "4E.2", "estado": "cambia", "voz": ["4.6", "4.7"], "base": "4E.2",
-         "referencias": ["5A.1"],
-         "ajuste": "Encuadre 1: «Ley del 29 de diciembre de 1856 · suspensión». Nuevo, después: las fichas de Torrico, Echenique y Mendiburu salen del cuadro hacia el borde («habían huido»). Encuadre 3 (presiones): además de las flechas, vuelven las islas de 5A.1 con barcos en el horizonte, y una ficha pequeña de Vivanco. Si la escena se parte (DEFINIR en el guion), este es el punto de corte."},
-        {"id": "4A.2", "estado": "mueve", "voz": [], "base": "4A.2",
-         "ajuste": "El traspaso del vale entre tenedores se mueve aquí, después de las presiones: ilustra «los papeles ya habían cambiado de manos» (4.9) sin voz propia."},
-        {"id": "4E.3", "estado": "cambia", "voz": ["4.8", "4.9"], "base": "4E.3",
-         "ajuste": "Encuadre 1, «11 de marzo de 1857», igual. El encuadre 2 pasa a mostrar la nota «Ugarte: se mantuvo la responsabilidad penal» junto a «tabla rasa» (Quiroz). Encuadre 3: los informes, con el «Entonces» y 2,5 s de cámara quieta."}
+      "espacio": "Expediente y archivo; el mapa de s01 para Londres; las islas para la presión",
+      "cambia": "De «un expediente irregular» a «una red con nombre propio que, investigada, salió casi intacta».",
+      "entrada": "La carpeta de Novoa entra en su estante; la cámara queda frente al archivo.",
+      "salida": "Los informes de la junta quedan sobre la mesa, en el encuadre con que abre s05.",
+      "planos": [
+        {
+          "id": "4.1",
+          "frases": [
+            0,
+            4
+          ],
+          "verbo": "ampliar",
+          "respiro": 1.5,
+          "idea": "Novoa fue uno de muchos: la pila del gancho, ahora con su causa.",
+          "imagen": "Vuelve la pila de vales del gancho. Debajo, una línea de 1852 con dos marcas; los expedientes se apilan antes de cada una. La pila crece de nuevo hasta 24 millones. Sin rótulos: las marcas de la línea y la altura de la pila bastan; la voz da las fechas y las cifras.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Expedientes que se apilan con peso; la pila crece igual que en el gancho (mismo movimiento: el espectador lo reconoce).",
+          "sonido": "Papel; el mismo golpe grave del gancho.",
+          "base": [
+            "4A.1"
+          ],
+          "falta": "Línea de 1852 con las dos marcas."
+        },
+        {
+          "id": "4.2",
+          "frases": [
+            5,
+            8
+          ],
+          "verbo": "nombrar",
+          "excepcion": true,
+          "respiro": 1,
+          "idea": "En pocas manos, y la época les dio nombre: los consolidados.",
+          "imagen": "Los vales se juntan hacia unas pocas fichas de grupo. Después, la palabra del episodio sola a pantalla completa. Con 8, la palabra baja a una esquina y se queda como rótulo de la escena.",
+          "pantalla": [
+            {
+              "en": 7,
+              "t": "los consolidados",
+              "termino": true,
+              "palabra": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Excepción reservada: pantalla completa, quieta, sin textura nueva.",
+          "sonido": "Sin música durante la palabra (2,5 s de voz más 1 s de montaje); la música vuelve con 8.",
+          "base": [
+            "5A.1"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-metodo/capas/beneficios-concentrados.svg"
+          ]
+        },
+        {
+          "id": "4.3",
+          "frases": [
+            9,
+            12
+          ],
+          "verbo": "recorrer",
+          "respiro": 1.5,
+          "idea": "Los vales se cambian por bonos externos en Londres: el lavado.",
+          "imagen": "El mismo mapa de s01 se abre hasta Gran Bretaña; un vale viaja de Lima a Londres y llega como bono. En Londres, las dos barras de la escena 2 vuelven: el vale vale cerca del 40 % de lo que dice; el bono, casi el 100 %. Con 12, el vale lleva una mancha roja y el bono sale limpio.",
+          "pantalla": [
+            {
+              "en": 10,
+              "t": "Manuel de Mendiburu · Londres [VERIFICAR]",
+              "ficha": true
+            },
+            {
+              "en": 10,
+              "t": "≈ 46 % de la deuda"
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar."
+          },
+          "efecto": "Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.",
+          "sonido": "Tic por tramo; hoja al llegar el bono.",
+          "base": [
+            "4B",
+            "1C.1"
+          ],
+          "falta": "Bono externo como pieza (bono-externo.svg existe en revision-investigacion/capas) y la mancha roja del vale."
+        },
+        {
+          "id": "4.4",
+          "frases": [
+            13,
+            16
+          ],
+          "verbo": "denunciar",
+          "respiro": 1.5,
+          "idea": "Elías, peleado con Echenique y Torrico, denuncia en la prensa.",
+          "imagen": "La ficha de Elías vuelve a la mesa y desde ella salen las dos cartas.",
+          "pantalla": [
+            {
+              "en": 13,
+              "t": "El Comercio · 12 y 16 de agosto de 1853"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Cartas que se asientan; nada con 16 (se dice, no se ilustra).",
+          "sonido": "Papel y pluma; sin música heroica.",
+          "base": [
+            "4C"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-investigacion/capas/carta-12-agosto.svg",
+            "diseno/storyboard-visual/revision-investigacion/capas/carta-16-agosto.svg"
+          ]
+        },
+        {
+          "id": "4.5",
+          "frases": [
+            17,
+            19
+          ],
+          "verbo": "matizar",
+          "respiro": 1.5,
+          "idea": "El denunciante también había hecho el negocio.",
+          "imagen": "La ficha de Elías con sus dos funciones a los lados: intermediario y denunciante. Quieta mientras habla Quiroz.",
+          "pantalla": [
+            {
+              "en": 17,
+              "t": "intermediario · denunciante",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Ninguno: es un momento de juicio, se sostiene.",
+          "sonido": "La música sostiene.",
+          "base": [
+            "4C"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-investigacion/capas/doble-funcion-elias.svg"
+          ]
+        },
+        {
+          "id": "4.6",
+          "frases": [
+            20,
+            21
+          ],
+          "verbo": "investigar",
+          "respiro": 1.5,
+          "corte_posible": true,
+          "idea": "Cambia el gobierno y una junta revisa: la marca roja del gancho.",
+          "imagen": "La pila vuelve al centro y el corrector la marca igual que en el gancho, ahora con su explicación. Los cuatro robados son cuatro huecos en el estante, sin monto.",
+          "pantalla": [
+            {
+              "en": 20,
+              "t": "Junta de Examen Fiscal · 1855",
+              "ficha": true
+            },
+            {
+              "en": 21,
+              "t": "12,2 millones de pesos · 141 expedientes"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Mismo trazo rojo del gancho (0.2).",
+          "sonido": "Pluma.",
+          "base": [
+            "4E.1",
+            "4D"
+          ]
+        },
+        {
+          "id": "4.7",
+          "frases": [
+            22,
+            23
+          ],
+          "verbo": "suspender",
+          "respiro": 1.5,
+          "idea": "Se suspende el pago; los principales ya se habían ido.",
+          "imagen": "Cae el sello de la suspensión. Las fichas de Torrico, Echenique y Mendiburu se deslizan fuera del cuadro, una por vez.",
+          "pantalla": [
+            {
+              "en": 22,
+              "t": "Ley del 29 de diciembre de 1856"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Las fichas salen rápido (entran lento lo importante, sale rápido lo que se va).",
+          "sonido": "Sello; roce de las fichas al salir.",
+          "base": [
+            "4E.2"
+          ]
+        },
+        {
+          "id": "4.8",
+          "frases": [
+            24,
+            26
+          ],
+          "verbo": "presionar",
+          "respiro": 2,
+          "idea": "Los tenedores protestan, y Gran Bretaña y Francia los respaldan.",
+          "imagen": "Una mano sostiene un vale (el traspaso de 4A.2, un solo cuadro). Con 25, vuelven las islas de s01 con barcos en el horizonte. Vivanco queda solo en la voz.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Los barcos apenas se mueven; el mar sigue con su fase.",
+          "sonido": "El mar de s01, más grave; la música en tensión.",
+          "base": [
+            "4A.2",
+            "1A"
+          ],
+          "falta": "Barcos en el horizonte de islas v3 (reutilizar el barco de 1c, a escala)."
+        },
+        {
+          "id": "4.9",
+          "frases": [
+            27,
+            31
+          ],
+          "verbo": "restaurar",
+          "respiro": 2,
+          "idea": "Una ley lo restaura todo: tabla rasa.",
+          "imagen": "La pila con su marca roja. Cae el mismo sello del gancho y la marca se borra a medias, igual que en 0.3. Con 28, la cita entre comillas.",
+          "pantalla": [
+            {
+              "en": 27,
+              "t": "Ley del 11 de marzo de 1857"
+            },
+            {
+              "en": 28,
+              "t": "«tabla rasa» · Quiroz, p. 185"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "El mismo movimiento de 0.3: el gancho se cierra.",
+          "sonido": "El golpe del sello del gancho; la música se apaga en el «Entonces».",
+          "base": [
+            "4E.3"
+          ]
+        }
       ]
     },
     {
-      "esc": "5",
+      "s": "s05",
       "titulo": "De estos expedientes al método de Quiroz",
-      "larga": "Escena larga 5",
-      "entrada": "El encuadre exacto de los informes con que termina 4E.3.",
-      "salida": "La pregunta en la pizarra; fundido a la tarjeta.",
-      "tramos": [
-        {"id": "5A.1", "estado": "cambia", "voz": ["5.0"], "base": "5A.1",
-         "ajuste": "Antes de «Quiénes quedaron fuera» entra la ficha de Echenique con «una clase capitalista nacional», enfrentada a la de Quiroz. La cita subrayada dice «[…] quedaron radicalmente excluidos»."},
-        {"id": "5A.2", "estado": "cambia", "voz": [], "base": "5A.2",
-         "ajuste": "El circuito completo no cabe en los 2 s de pausa del guion: se propone alargarla a 6 s o recorrer solo guano, Estado, vale y junta."},
-        {"id": "5B.1", "estado": "cambia", "voz": ["5.1"], "base": "5B.1",
-         "ajuste": "Las tres fichas de fuentes cambian de rótulo para decir lo mismo que la voz: «Reclamos y vales», «Cartas de Elías», «Informes de la junta» (antes: contabilidad estatal, documentos judiciales, correspondencia diplomática)."},
-        {"id": "5B.2", "estado": "cambia", "voz": ["5.2"], "base": "5B.2",
-         "ajuste": "El encuadre 1 queda con dos campos, «Aprobado» y «Estimado», con la cifra de Novoa en el segundo. Los encuadres 2 y 3 (el apéndice) reciben «Quiroz quiso sacar una cuenta más grande»."},
-        {"id": "5C", "estado": "igual", "voz": ["5.3"], "base": "5C",
-         "ajuste": "La pregunta en la pizarra y el índice con el 003. El tema del canal entra al terminar la pregunta."}
-      ]
-    },
-    {
-      "esc": "6",
-      "titulo": "Cierre",
-      "larga": "Cierre de la escena larga 5",
-      "entrada": "Desde el índice, sin voz.",
-      "salida": "Negro y tema del canal.",
-      "tramos": [
-        {"id": "6", "estado": "nuevo", "voz": [], "titulo": "Las pruebas se cierran",
-         "referencias": ["5C"],
-         "piezas": ["diseno/storyboard-visual/revision-metodo/capas/pruebas-de-imprenta.svg"],
-         "encuadres": [
-           {"plano": "Pruebas de imprenta", "camara_y_accion": "Vuelven las pruebas del gancho y se cierran, sin limpiarse (eso queda para 004).", "efecto_y_pausa": "Silencio de 2,5 s; sombra de la tapa."},
-           {"plano": "Próximo · ¿Se puede medir la corrupción?", "camara_y_accion": "Fundido a negro y tarjeta.", "efecto_y_pausa": "El tema del canal entra solo, con el negro."}
-         ]}
+      "espacio": "Expediente: la mesa del historiador",
+      "cambia": "De «este caso se puede reconstruir» a «¿y lo que no dejó papeles?».",
+      "entrada": "Los informes de la junta, en el mismo encuadre con que termina s04.",
+      "salida": "La pregunta en la pizarra y el índice de la serie; las pruebas de imprenta se cierran.",
+      "planos": [
+        {
+          "id": "5.1",
+          "frases": [
+            0,
+            4
+          ],
+          "verbo": "confrontar",
+          "respiro": 2,
+          "idea": "Echenique decía que creó capitalistas; Quiroz muestra quiénes quedaron fuera.",
+          "imagen": "Dos documentos frente a frente: a la izquierda la ficha de Echenique con su frase; a la derecha la página de Quiroz, con el corrector subrayando a los excluidos. Con 3, la pila de pocas manos.",
+          "pantalla": [
+            {
+              "en": 0,
+              "t": "«una clase capitalista nacional» · Q, p. 173"
+            },
+            {
+              "en": 2,
+              "t": "«quedaron radicalmente excluidos»"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Subrayado rojo de corrector en la página de Quiroz.",
+          "sonido": "Pluma.",
+          "base": [
+            "5A.1"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-metodo/capas/quienes-quedaron-fuera.svg"
+          ]
+        },
+        {
+          "id": "5.2",
+          "frases": [
+            5,
+            6
+          ],
+          "verbo": "reunir",
+          "respiro": 1.5,
+          "idea": "Este caso se reconstruye porque dejó papeles.",
+          "imagen": "Sobre la mesa del historiador vuelven los objetos ya vistos, uno por palabra: un reclamo, un vale, las cartas y el informe. Con 6, los dos folios de Novoa: aprobado y estimado.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "El circuito final: abrir de la mesa a todos los papeles del episodio, una sola vez, y quedarse."
+          },
+          "efecto": "Objetos conocidos, sin presentación nueva; cada uno asienta.",
+          "sonido": "Una hoja por objeto.",
+          "base": [
+            "5B.1",
+            "5B.2"
+          ]
+        },
+        {
+          "id": "5.3",
+          "frases": [
+            7,
+            9
+          ],
+          "verbo": "abrir",
+          "respiro": 2,
+          "idea": "Mucha corrupción no deja papeles: ¿se puede medir?",
+          "imagen": "Los papeles se retiran y la mesa queda casi vacía; queda el libro de Quiroz. La pregunta en la pizarra, y el índice con el 003 encendido.",
+          "pantalla": [
+            {
+              "en": 9,
+              "t": "¿Se puede medir la corrupción?",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "La mesa se vacía de afuera hacia adentro.",
+          "sonido": "La música se retira; el tema del canal entra al final de la pregunta.",
+          "base": [
+            "5C"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-metodo/capas/libro-de-quiroz.svg"
+          ]
+        }
       ]
     }
   ]
