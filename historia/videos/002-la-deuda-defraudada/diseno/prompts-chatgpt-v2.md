@@ -2,6 +2,8 @@
 
 19 de noviembre de 2026. Lo que falta después de recibir el lote de las escenas 1 y 2 (`public/videos/002-la-deuda-defraudada/imagenes/chatgpt/`, fuera de git). El orden es el de prioridad: lo primero sostiene más tiempo de pantalla.
 
+Los objetos y papeles en el mismo estilo están en [prompts-chatgpt-objetos.md](prompts-chatgpt-objetos.md).
+
 Cada prompt es autosuficiente. Conviene abrir un chat por imagen y **adjuntar como referencia de estilo `fondo-limpio-chincha.png`** (para los fondos) o **`intermediario-explica-tramite.png`** (para figuras), porque el lote recibido ya fija el trazo.
 
 ## Lo que no hay que generar
