@@ -1,7 +1,8 @@
 {
   "format": "vectorcraft",
   "version": 4,
-  "generator": "VectorCraft 0.22.0",
+  "generator": "VectorCraft 0.24.1",
+  "pdfCompatible": false,
   "document": {
     "version": 3,
     "title": "Tanda 6 — El costo de la corrupción",
@@ -6718,7 +6719,7 @@
                 ],
                 "runs": [
                   {
-                    "text": "Fuente: Quiroz · Apéndice, cuadros A.4 y A.6 · Datos del guion del video 01",
+                    "text": "Fuente: Quiroz · Apéndice, cuadros A.4 y A.6",
                     "style": {
                       "font_family": "Arial",
                       "font_style": "Regular",
@@ -7708,7 +7709,16 @@
       "copyrightNotice": "",
       "copyrightUrl": "",
       "created": 1794200408,
-      "modified": null
+      "modified": 1794948543
+    },
+    "last_view": {
+      "name": "",
+      "center": {
+        "x": 960.0,
+        "y": 540.0
+      },
+      "zoom": 0.5322916666666667,
+      "rotation": 0.0
     }
   },
   "images": {}

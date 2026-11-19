@@ -289,18 +289,18 @@
     },
     {
       "archivo": "tanda06-costo.svg",
-      "bytes": 317378,
-      "sha256": "b1a38dea2fc5f38ca2a814436e8efb0e628ef79a464824a7a72439f8b73ca724"
+      "bytes": 300005,
+      "sha256": "0202f99e20d41ec530c6440837f39c012926c02bd026b258824d24a39652f1c8"
     },
     {
       "archivo": "tanda06-costo.vectorcraft",
-      "bytes": 231151,
-      "sha256": "8f04d7012f5a9194e92d7f3370bd2e382858744a00f737d46c7b3ee4e3979711"
+      "bytes": 231317,
+      "sha256": "2a784163854e055e4c1feb012b6f3a4b747d389736014d51d2358bfd0be0644e"
     },
     {
       "archivo": "tanda06-costo.png",
-      "bytes": 237651,
-      "sha256": "96a2b0f8602e129f31aa995fa2d58ef507f6e6d500d6388f48a89fe8ab4c57b0"
+      "bytes": 234180,
+      "sha256": "0f24aa79f1615afec1798ad0508511fc80ddbf415032c4fbda0e199368ebc36a"
     }
   ],
   "nota": "13 láminas afinadas con la lámpara del estudio (inventario, sección H, tandas 1 a 4); las anteriores quedan en git",
