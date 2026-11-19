@@ -1,0 +1,512 @@
+{
+ "s00": {
+  "duracion": 60.62,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 8.76,
+    "texto": "En mil ochocientos cincuenta y uno, el Estado peruano reconocía una deuda de unos cinco millones de pesos con sus propios ciudadanos."
+   },
+   {
+    "desde": 9.56,
+    "hasta": 16.1,
+    "texto": "Un año después, la cuenta llegaba a veinticuatro millones: casi cinco veces la de un año antes."
+   },
+   {
+    "desde": 17.3,
+    "hasta": 22.3,
+    "texto": "Años más tarde, una junta del propio Estado revisó a fondo esa deuda."
+   },
+   {
+    "desde": 22.65,
+    "hasta": 29.57,
+    "texto": "Encontró más de doce millones en expedientes irregulares o ilegales: más de la mitad de toda esa deuda."
+   },
+   {
+    "desde": 30.77,
+    "hasta": 40.39,
+    "texto": "Y en mil ochocientos cincuenta y siete, una ley volvió a dejar circular los títulos de esa deuda, también los que la junta había marcado."
+   },
+   {
+    "desde": 41.89,
+    "hasta": 44.97,
+    "texto": "¿Cómo se infla la deuda de un país?"
+   },
+   {
+    "desde": 45.97,
+    "hasta": 52.12,
+    "texto": "Los historiadores de su tiempo decían que la riqueza del guano se había derrochado en lujos."
+   },
+   {
+    "desde": 52.47,
+    "hasta": 58.62,
+    "texto": "Alfonso Quiroz quiso comprobarlo en su primera investigación, y encontró que la deuda se había inflado."
+   }
+  ]
+ },
+ "s01": {
+  "duracion": 55.49,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 2.22,
+    "texto": "Perú, hacia mil ochocientos cincuenta."
+   },
+   {
+    "desde": 2.57,
+    "hasta": 7.19,
+    "texto": "Han pasado casi treinta años desde la independencia y gobierna Ramón Castilla."
+   },
+   {
+    "desde": 8.19,
+    "hasta": 16.27,
+    "texto": "Frente a Pisco están las islas de Chincha, cubiertas de guano: el excremento de las aves marinas, acumulado sobre la roca."
+   },
+   {
+    "desde": 16.87,
+    "hasta": 20.71,
+    "texto": "En Gran Bretaña lo compran como abono para los campos."
+   },
+   {
+    "desde": 21.71,
+    "hasta": 23.25,
+    "texto": "Sacarlo exige mucho trabajo."
+   },
+   {
+    "desde": 23.6,
+    "hasta": 30.52,
+    "texto": "En las islas hay jornaleros libres, pero también presos, personas esclavizadas y trabajadores chinos sometidos a trabajo forzoso."
+   },
+   {
+    "desde": 32.52,
+    "hasta": 37.14,
+    "texto": "El guano pertenece al Estado, que encarga su venta a casas comerciales."
+   },
+   {
+    "desde": 37.49,
+    "hasta": 42.87,
+    "texto": "Ellas lo venden, se quedan con una comisión y le adelantan dinero al gobierno."
+   },
+   {
+    "desde": 43.87,
+    "hasta": 53.49,
+    "texto": "Con esa plata, el Estado puede por fin atender algo que arrastraba desde la guerra de independencia, y a veces desde la colonia: sus deudas."
+   }
+  ]
+ },
+ "s02": {
+  "duracion": 134.8,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 2.22,
+    "texto": "Esas deudas tenían orígenes distintos."
+   },
+   {
+    "desde": 2.57,
+    "hasta": 7.57,
+    "texto": "Un comerciante, por ejemplo, le había prestado dinero al gobierno en un apuro."
+   },
+   {
+    "desde": 7.92,
+    "hasta": 14.46,
+    "texto": "Un hacendado reclamaba el ganado y las cosechas que se habían llevado para mantener a las tropas."
+   },
+   {
+    "desde": 15.26,
+    "hasta": 21.42,
+    "texto": "A lo que el Estado les debía a sus propios ciudadanos se le llamaba deuda interna."
+   },
+   {
+    "desde": 22.62,
+    "hasta": 32.23,
+    "texto": "En mil ochocientos cincuenta, durante el gobierno de Castilla, se dio una ley para ordenarla: revisar cada reclamo, decidir cuánto valía y empezar a pagarlo."
+   },
+   {
+    "desde": 32.58,
+    "hasta": 35.27,
+    "texto": "A esa operación se le llamó consolidación."
+   },
+   {
+    "desde": 36.27,
+    "hasta": 44.73,
+    "texto": "La idea era buena, y Quiroz lo reconoce: un Estado que paga lo que debe recupera la confianza de quienes podrían prestarle."
+   },
+   {
+    "desde": 45.08,
+    "hasta": 50.47,
+    "texto": "Para él, la consolidación fue un fundamento del crédito público moderno en el Perú."
+   },
+   {
+    "desde": 51.67,
+    "hasta": 61.28,
+    "texto": "Cuando un reclamo se aprobaba, el acreedor recibía un vale: un papel en el que el Estado se comprometía a pagarle esa suma, con intereses."
+   },
+   {
+    "desde": 61.88,
+    "hasta": 68.42,
+    "texto": "No era plata en la mano, sino una promesa de pago, y esa promesa se podía vender."
+   },
+   {
+    "desde": 69.62,
+    "hasta": 72.7,
+    "texto": "Pero la ley tenía dos huecos, según Quiroz."
+   },
+   {
+    "desde": 73.05,
+    "hasta": 79.2,
+    "texto": "No tenía reglas claras para los reclamos mal sustentados, ni para vender o traspasar un vale."
+   },
+   {
+    "desde": 80.2,
+    "hasta": 82.51,
+    "texto": "Por esos huecos entró el negocio."
+   },
+   {
+    "desde": 82.86,
+    "hasta": 87.48,
+    "texto": "Antes de mil ochocientos cincuenta, muchos reclamos viejos casi no valían nada."
+   },
+   {
+    "desde": 87.83,
+    "hasta": 95.52,
+    "texto": "Los especuladores los compraban muy barato y luego negociaban que el Estado los reconociera por un valor muchas veces mayor."
+   },
+   {
+    "desde": 96.52,
+    "hasta": 98.06,
+    "texto": "Para lograrlo había ayuda."
+   },
+   {
+    "desde": 98.41,
+    "hasta": 107.25,
+    "texto": "Algunos capitalistas movían los expedientes a cambio de comisiones, y algunos funcionarios prometían un reconocimiento privilegiado a cambio de participaciones y comisiones ilegales."
+   },
+   {
+    "desde": 108.25,
+    "hasta": 115.18,
+    "texto": "Quiroz no condena toda gestión: en el caso que vamos a ver, la comisión del intermediario era legítima."
+   },
+   {
+    "desde": 115.53,
+    "hasta": 122.45,
+    "texto": "Lo que llama ilegal son las participaciones y comisiones que se pagaban a cambio de un reconocimiento privilegiado."
+   },
+   {
+    "desde": 123.45,
+    "hasta": 132.3,
+    "texto": "Entonces, un reclamo podía pasar por cuatro manos: alguien vende barato, otro compra, un tercero mueve el expediente y un funcionario lo aprueba."
+   }
+  ]
+ },
+ "s03": {
+  "duracion": 107.18,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 6.45,
+    "texto": "Un expediente muestra con nombres y cifras dos de esas manos: el intermediario y el funcionario."
+   },
+   {
+    "desde": 7.05,
+    "hasta": 11.28,
+    "texto": "Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada."
+   },
+   {
+    "desde": 11.63,
+    "hasta": 20.87,
+    "texto": "Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años."
+   },
+   {
+    "desde": 21.87,
+    "hasta": 28.79,
+    "texto": "En el Perú de entonces, la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro."
+   },
+   {
+    "desde": 30.29,
+    "hasta": 35.29,
+    "texto": "Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país."
+   },
+   {
+    "desde": 35.64,
+    "hasta": 38.72,
+    "texto": "Gestionaba el reclamo a cambio de una comisión."
+   },
+   {
+    "desde": 39.07,
+    "hasta": 46.37,
+    "texto": "En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos."
+   },
+   {
+    "desde": 46.72,
+    "hasta": 48.65,
+    "texto": "Para sí esperaba doscientos mil."
+   },
+   {
+    "desde": 49.65,
+    "hasta": 54.26,
+    "texto": "El presidente ya era José Rufino Echenique, que había sucedido a Castilla."
+   },
+   {
+    "desde": 54.61,
+    "hasta": 58.07,
+    "texto": "Echenique respondió que el reclamo estaba fuera de plazo."
+   },
+   {
+    "desde": 59.57,
+    "hasta": 61.88,
+    "texto": "Días después, el reclamo se aprobó."
+   },
+   {
+    "desde": 62.68,
+    "hasta": 66.53,
+    "texto": "Por novecientos cuarenta y ocho mil quinientos pesos en vales."
+   },
+   {
+    "desde": 68.53,
+    "hasta": 76.22,
+    "texto": "Era mucho más de lo que había pedido el propio Elías: de una vez y media a casi el doble."
+   },
+   {
+    "desde": 77.22,
+    "hasta": 83.37,
+    "texto": "Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico."
+   },
+   {
+    "desde": 84.37,
+    "hasta": 90.53,
+    "texto": "Y Quiroz anota que Novoa probablemente recibió alrededor de ciento ochenta mil pesos, también en vales."
+   },
+   {
+    "desde": 92.53,
+    "hasta": 95.99,
+    "texto": "No sabemos adónde fue cada peso de la diferencia."
+   },
+   {
+    "desde": 96.34,
+    "hasta": 105.18,
+    "texto": "Lo que sí documenta Quiroz es quién dijo que el reclamo estaba fuera de plazo, quién intervino después y cuánto se terminó aprobando."
+   }
+  ]
+ },
+ "s04": {
+  "duracion": 233.9,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 2.61,
+    "texto": "Novoa fue un caso entre muchos."
+   },
+   {
+    "desde": 2.96,
+    "hasta": 11.03,
+    "texto": "Quiroz anota que los expedientes más dudosos pasaron antes de dos plazos: junio y octubre de mil ochocientos cincuenta y dos."
+   },
+   {
+    "desde": 12.03,
+    "hasta": 16.27,
+    "texto": "Así la deuda pasó de cinco a veinticuatro millones de pesos."
+   },
+   {
+    "desde": 16.62,
+    "hasta": 22.0,
+    "texto": "Esos millones eran deuda reconocida en vales, que el Estado tendría que pagar después."
+   },
+   {
+    "desde": 22.35,
+    "hasta": 28.89,
+    "texto": "Y no toda la diferencia fue fraude: para saberlo, hay que abrir los expedientes uno por uno."
+   },
+   {
+    "desde": 30.39,
+    "hasta": 33.08,
+    "texto": "Los vales terminaron concentrados en pocas manos."
+   },
+   {
+    "desde": 33.43,
+    "hasta": 41.12,
+    "texto": "Según Quiroz, la red que se benefició reunía a varias docenas de personas, y en la época les dieron nombres."
+   },
+   {
+    "desde": 42.12,
+    "hasta": 43.66,
+    "texto": "Les decían los consolidados."
+   },
+   {
+    "desde": 46.16,
+    "hasta": 54.62,
+    "texto": "La palabra que nombraba una forma de pagar las deudas del Estado terminó nombrando a las personas vinculadas con el robo político."
+   },
+   {
+    "desde": 56.62,
+    "hasta": 65.08,
+    "texto": "Muchos de esos vales se cambiaron por bonos de deuda externa, la que el Estado tenía con acreedores de fuera del país."
+   },
+   {
+    "desde": 65.43,
+    "hasta": 71.59,
+    "texto": "En Londres, Manuel de Mendiburu cambió así cerca de la mitad de toda la deuda consolidada."
+   },
+   {
+    "desde": 72.39,
+    "hasta": 82.77,
+    "texto": "En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que decía; el bono que lo reemplazaba valía casi lo que decía."
+   },
+   {
+    "desde": 83.77,
+    "hasta": 91.08,
+    "texto": "Quiroz llama a esa conversión un lavado: se diseñó para que el papel manchado por su origen saliera limpio."
+   },
+   {
+    "desde": 93.08,
+    "hasta": 100.39,
+    "texto": "En agosto de mil ochocientos cincuenta y tres, Domingo Elías publicó dos cartas en El Comercio contra la consolidación."
+   },
+   {
+    "desde": 100.74,
+    "hasta": 105.35,
+    "texto": "Ya estaba peleado con Echenique y con Torrico por el caso Novoa."
+   },
+   {
+    "desde": 105.7,
+    "hasta": 114.17,
+    "texto": "Según Quiroz, sostuvo que la consolidación no beneficiaba a los reclamantes originales, sino a los agiotistas: los que especulaban con los vales."
+   },
+   {
+    "desde": 115.17,
+    "hasta": 118.63,
+    "texto": "Lo encarcelaron, y al salir se levantó contra Echenique."
+   },
+   {
+    "desde": 119.63,
+    "hasta": 121.55,
+    "texto": "Elías no denunciaba desde afuera."
+   },
+   {
+    "desde": 121.9,
+    "hasta": 128.82,
+    "texto": "Él mismo había movido expedientes por comisión, así que su denuncia trae información y también defiende sus intereses."
+   },
+   {
+    "desde": 129.17,
+    "hasta": 135.71,
+    "texto": "Quiroz lo resume así: defendió reformas contra la corrupción, pero no dejó de beneficiarse de compensaciones oficiales."
+   },
+   {
+    "desde": 137.21,
+    "hasta": 144.9,
+    "texto": "En mil ochocientos cincuenta y cinco cayó Echenique, volvió Castilla y una junta fiscal revisó los expedientes de la consolidación."
+   },
+   {
+    "desde": 145.25,
+    "hasta": 152.95,
+    "texto": "Encontró más de doce millones de pesos en ciento cuarenta y un expedientes irregulares o ilegales, y otros cuatro robados."
+   },
+   {
+    "desde": 154.45,
+    "hasta": 160.98,
+    "texto": "Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos."
+   },
+   {
+    "desde": 161.33,
+    "hasta": 168.64,
+    "texto": "Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu."
+   },
+   {
+    "desde": 169.64,
+    "hasta": 179.26,
+    "texto": "Los que tenían los vales protestaron: decían que un vale era como un billete, y que quien lo había comprado no tenía por qué perder."
+   },
+   {
+    "desde": 179.61,
+    "hasta": 187.3,
+    "texto": "Los diplomáticos de Gran Bretaña y de Francia los respaldaron, y barcos ingleses y franceses rondaban las islas del guano."
+   },
+   {
+    "desde": 187.65,
+    "hasta": 192.27,
+    "texto": "En el país, además, el general Vivanco se había alzado en armas."
+   },
+   {
+    "desde": 193.77,
+    "hasta": 204.15,
+    "texto": "En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos sobre bonos y conversión que se habían suspendido."
+   },
+   {
+    "desde": 204.5,
+    "hasta": 212.58,
+    "texto": "Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron."
+   },
+   {
+    "desde": 212.93,
+    "hasta": 220.62,
+    "texto": "En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota César Antonio Ugarte en mil novecientos veintiséis."
+   },
+   {
+    "desde": 221.82,
+    "hasta": 227.97,
+    "texto": "Entonces, la junta encontró expedientes irregulares o ilegales, pero los vales ya habían cambiado de manos."
+   },
+   {
+    "desde": 228.32,
+    "hasta": 231.4,
+    "texto": "Y una ley volvió a ponerlos en circulación."
+   }
+  ]
+ },
+ "s05": {
+  "duracion": 63.9,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 6.45,
+    "texto": "Echenique la defendió: decía que el dinero de la consolidación había creado una clase capitalista nacional."
+   },
+   {
+    "desde": 7.45,
+    "hasta": 9.76,
+    "texto": "Quiroz le responde con los expedientes."
+   },
+   {
+    "desde": 10.11,
+    "hasta": 16.65,
+    "texto": "La mayoría de los reclamantes originales quedaron fuera, igual que los pequeños inversionistas que habrían podido participar."
+   },
+   {
+    "desde": 17.0,
+    "hasta": 19.69,
+    "texto": "Las ganancias se concentraron en pocas manos."
+   },
+   {
+    "desde": 20.04,
+    "hasta": 26.58,
+    "texto": "Para él, el capitalismo peruano perdió la oportunidad de construir sus finanzas sobre una deuda pública transparente."
+   },
+   {
+    "desde": 28.58,
+    "hasta": 35.12,
+    "texto": "Este caso se puede reconstruir porque quedaron papeles: reclamos, vales, cartas y el informe de una junta."
+   },
+   {
+    "desde": 35.47,
+    "hasta": 43.16,
+    "texto": "Con ellos se separa lo que se aprobó de lo que solo se puede estimar, como lo que recibió Novoa."
+   },
+   {
+    "desde": 44.66,
+    "hasta": 48.12,
+    "texto": "Pero mucha corrupción se hace para no dejar papeles."
+   },
+   {
+    "desde": 48.47,
+    "hasta": 58.47,
+    "texto": "Quiroz quiso sacar una cuenta más grande, la de casi dos siglos de república, y para eso tenía que medir lo que escondían quienes la practicaban."
+   },
+   {
+    "desde": 59.97,
+    "hasta": 61.9,
+    "texto": "¿Se puede medir la corrupción?"
+   }
+  ]
+ }
+}

@@ -38,7 +38,8 @@ Una serie se hace en el tiempo y necesita libertad para decidir. Por eso las reg
 No tienen excepción.
 
 1. **Narración: la voz «Joder Jolines» de ElevenLabs**: el clon de la voz de Gerson
-   (`sku3dGbfu1taqEDqvHsQ`, modelo v3). **Decidido por Gerson el 2026-11-10**, en lugar de grabar.
+   (`sku3dGbfu1taqEDqvHsQ`; modelo v3 en el 0·1 y `eleven_v4` desde el 0·2, por pedido de Gerson el
+   2026-11-19). **Decidido por Gerson el 2026-11-10**, en lugar de grabar.
    Se genera con `scripts/narracion.py`: **una toma por escena** (no frase por frase: suena cortada y a
    distancias distintas del micrófono; ver `videos/001-el-hombre/revision_gerson_2026-11-10.md`), los
    respiros del guion garantizados con el aire de la propia toma, carraspeos limpiados, y después

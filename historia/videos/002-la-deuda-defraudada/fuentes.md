@@ -141,3 +141,7 @@ El [guion](guion.md) pasa de ideas a locución, escrita con el criterio del Escr
 - Q, p. 187: retrato de Elías («defendió importantes reformas… pero no dejó de beneficiarse…»).
 
 Pendientes marcados `[VERIFICAR]` en el guion: si el 6 % es anual; nombre completo, cargo y año de Mendiburu en Londres; fecha de asunción de Echenique y de su caída; si «agiotistas» es palabra de las cartas de Elías o de Quiroz; la formulación sobre los trabajadores chinos contra B, pp. 10–11; «se levantó contra Echenique» frente a «encabezó la revolución» de la ficha.
+
+## Narración (19 de noviembre de 2026)
+
+Voz generada con ElevenLabs (plan Creator), voz «Joder Jolines» (`sku3dGbfu1taqEDqvHsQ`, clon de la voz de Gerson, con su permiso), modelo `eleven_v4`. Una toma por escena con `scripts/narracion.py`, desde `narracion.json` (que arma `narracion_construir.py` desde el guion, con las etiquetas de emoción). Los tiempos de referencia salen de las pausas del guion (`scripts/tiempos_desde_narracion.py`), porque no había voz provisional. Comprobación: cada escena transcrita con Scribe y emparejada con el guion (99–100 %); la única frase marcada, «No sabemos adónde fue…», es una diferencia de ortografía del transcriptor («a dónde»). Resultado: `public/videos/002-la-deuda-defraudada/voz/s00.mp3` a `s05.mp3`, 9 min 28 s, −16 LUFS. Se declara en YouTube que el contenido usa voz generada (CLAUDE §1.1·1).

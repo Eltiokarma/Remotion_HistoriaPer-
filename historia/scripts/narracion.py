@@ -22,7 +22,7 @@ Por escena:
 Después, `python scripts/beats_a_la_voz.py <video>` mueve los beats de escenas.json a esos tiempos.
 La clave de ElevenLabs la pone el proxy de la sesión (o ELEVENLABS_API_KEY en la laptop).
 """
-import json, os, re, subprocess, sys, unicodedata, difflib
+import json, os, re, subprocess, sys, time, unicodedata, difflib
 from pathlib import Path
 import numpy as np
 
@@ -98,7 +98,9 @@ def tokens(s):
     for k, v in NUM.items():
         s = s.replace(k, f" {v} ")
     s = "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
-    return ["uno" if w == "un" else w for w in re.findall(r"[a-zñ]+", s)]
+    s = s.replace("a donde", "adonde")
+    # se compara por sonido: Scribe escribe «Quirós» o «Noboa» aunque la voz diga bien el nombre
+    return ["uno" if w == "un" else w.replace("z", "s").replace("v", "b") for w in re.findall(r"[a-zñ]+", s)]
 
 
 def sin_relleno(x):
@@ -160,8 +162,12 @@ def toma(cfg, texto, destino):
     if destino.exists() and destino.stat().st_size > 3000:
         return
     cuerpo = {"text": texto, "model_id": cfg["modelo"], "voice_settings": cfg["voice_settings"], "language_code": "es"}
-    r = curl("-X", "POST", f"{API}/text-to-speech/{cfg['voz']}?output_format=mp3_44100_128", "-H", "Content-Type: application/json",
-             "-d", json.dumps(cuerpo), "-o", str(destino), "-w", "%{http_code}")
+    for intento in range(5):
+        r = curl("-X", "POST", f"{API}/text-to-speech/{cfg['voz']}?output_format=mp3_44100_128", "-H", "Content-Type: application/json",
+                 "-d", json.dumps(cuerpo), "-o", str(destino), "-w", "%{http_code}")
+        if r.stdout not in ("429", "503") or intento == 4:
+            break
+        time.sleep(10 * (intento + 1))
     if r.stdout != "200":
         msg = destino.read_bytes()[:300] if destino.exists() else b""
         destino.unlink(missing_ok=True)
@@ -172,9 +178,15 @@ EVENTOS = []   # lo que no es palabra ni respiración (carraspeos, risas, golpes
 
 
 def palabras(f):
-    r = curl("-X", "POST", f"{API}/speech-to-text", "-F", "model_id=scribe_v1", "-F", "language_code=spa",
-             "-F", "timestamps_granularity=word", "-F", "tag_audio_events=true", "-F", f"file=@{f}")
-    d = json.loads(r.stdout)
+    for intento in range(5):   # el servicio a veces responde «system_busy»: se reintenta con espera
+        r = curl("-X", "POST", f"{API}/speech-to-text", "-F", "model_id=scribe_v1", "-F", "language_code=spa",
+                 "-F", "timestamps_granularity=word", "-F", "tag_audio_events=true", "-F", f"file=@{f}")
+        d = json.loads(r.stdout)
+        if "words" in d:
+            break
+        if intento == 4:
+            raise SystemExit(f"Scribe no transcribió {f}: {r.stdout[:300]}")
+        time.sleep(10 * (intento + 1))
     EVENTOS.clear()
     EVENTOS.extend((w["text"], w["start"], w["end"]) for w in d["words"] if w.get("type") == "audio_event"
                    and not re.search(r"respir|breath|inhal|exhal|suspir|sigh", w["text"], re.I))
@@ -256,12 +268,12 @@ def escena(video, s, cfg, prov):
     x = nivelar(x, pos, cfg.get("ganancia_frases", {}).get(s))
     x, eventos_pisados = limpiar_eventos(x)
     limpiados = len(EVENTOS) - len(eventos_pisados)
-    # respiros: si el guion pide 1,4 s o más y la toma respiró menos, se agrega aire en medio de la pausa
+    # respiros: si el guion pide 1,4 s o más (o el «respiro_minimo» de narracion.json) y la toma respiró menos, se agrega aire en medio de la pausa
     insertos = []
     for i in range(len(fr_prov) - 1):
         quiere = fr_prov[i + 1]["desde"] - fr_prov[i]["hasta"]
         tiene = pos[i + 1]["desde"] - pos[i]["hasta"]
-        if quiere >= RESPIRO and tiene < quiere:
+        if quiere >= cfg.get("respiro_minimo", RESPIRO) - 0.03 and tiene < quiere:   # margen: los tiempos van redondeados
             insertos.append(((pos[i]["hasta"] + pos[i + 1]["desde"]) / 2, quiere - tiene))
     trozos, prev, corrida = [], 0, 0.0
     for t, extra in insertos:

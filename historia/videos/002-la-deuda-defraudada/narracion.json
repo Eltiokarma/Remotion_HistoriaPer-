@@ -1,0 +1,420 @@
+{
+ "voz": "sku3dGbfu1taqEDqvHsQ",
+ "nombre": "Joder Jolines",
+ "tipo": "clon de la voz de Gerson",
+ "modelo": "eleven_v4",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.8
+ },
+ "nota": "Generado por narracion_construir.py desde guion.md; no se edita a mano. Una toma por escena (scripts/narracion.py); cada frase es [texto con etiquetas de emoción, pausa después en segundos]. Modelo eleven_v4 por pedido de Gerson el 2026-11-19 (el 0·1 se hizo con eleven_v3).",
+ "respiro_minimo": 1.0,
+ "nota_respiro": "v4 encadena los párrafos (las pausas de 1 a 1,2 s salían de ~0,45 s): desde 1 s se garantizan con el aire de la toma, para que cada párrafo tenga su corte al editar.",
+ "cortes": {
+  "s03": {
+   "10": 0.8,
+   "11": 2.0
+  },
+  "s05": {
+   "8": 1.5
+  }
+ },
+ "frases": {
+  "s00": [
+   [
+    "[serious] [calm] En mil ochocientos cincuenta y uno, el Estado peruano reconocía una deuda de unos cinco millones de pesos con sus propios ciudadanos.",
+    0.8
+   ],
+   [
+    "[serious] [measured] Un año después, la cuenta llegaba a veinticuatro millones: casi cinco veces la de un año antes.",
+    1.2
+   ],
+   [
+    "[serious] Años más tarde, una junta del propio Estado revisó a fondo esa deuda.",
+    0.35
+   ],
+   [
+    "[serious] [low voice] Encontró más de doce millones en expedientes irregulares o ilegales: más de la mitad de toda esa deuda.",
+    1.2
+   ],
+   [
+    "[dry] [restrained] Y en mil ochocientos cincuenta y siete, una ley volvió a dejar circular los títulos de esa deuda, también los que la junta había marcado.",
+    1.5
+   ],
+   [
+    "[curious] [softly] ¿Cómo se infla la deuda de un país?",
+    1.0
+   ],
+   [
+    "[calm] [storytelling] Los historiadores de su tiempo decían que la riqueza del guano se había derrochado en lujos.",
+    0.35
+   ],
+   [
+    "[calm] [warm] Alfonso Quiroz quiso comprobarlo en su primera investigación, y encontró que la deuda se había inflado.",
+    2.0
+   ]
+  ],
+  "s01": [
+   [
+    "[calm] [storytelling] Perú, hacia mil ochocientos cincuenta.",
+    0.35
+   ],
+   [
+    "[calm] Han pasado casi treinta años desde la independencia y gobierna Ramón Castilla.",
+    1.0
+   ],
+   [
+    "[curious] [light] Frente a Pisco están las islas de Chincha, cubiertas de guano: el excremento de las aves marinas, acumulado sobre la roca.",
+    0.6
+   ],
+   [
+    "[calm] En Gran Bretaña lo compran como abono para los campos.",
+    1.0
+   ],
+   [
+    "[serious] Sacarlo exige mucho trabajo.",
+    0.35
+   ],
+   [
+    "[serious] [low voice] [slowly] En las islas hay jornaleros libres, pero también presos, personas esclavizadas y trabajadores chinos sometidos a trabajo forzoso.",
+    2.0
+   ],
+   [
+    "[calm] [clear] El guano pertenece al Estado, que encarga su venta a casas comerciales.",
+    0.35
+   ],
+   [
+    "[calm] Ellas lo venden, se quedan con una comisión y le adelantan dinero al gobierno.",
+    1.0
+   ],
+   [
+    "[warm] [relieved] Con esa plata, el Estado puede por fin atender algo que arrastraba desde la guerra de independencia, y a veces desde la colonia: sus deudas.",
+    2.0
+   ]
+  ],
+  "s02": [
+   [
+    "[calm] [teacher] Esas deudas tenían orígenes distintos.",
+    0.35
+   ],
+   [
+    "[calm] Un comerciante, por ejemplo, le había prestado dinero al gobierno en un apuro.",
+    0.35
+   ],
+   [
+    "[calm] Un hacendado reclamaba el ganado y las cosechas que se habían llevado para mantener a las tropas.",
+    0.8
+   ],
+   [
+    "[teacher] [clear] A lo que el Estado les debía a sus propios ciudadanos se le llamaba deuda interna.",
+    1.2
+   ],
+   [
+    "[calm] [teacher] En mil ochocientos cincuenta, durante el gobierno de Castilla, se dio una ley para ordenarla: revisar cada reclamo, decidir cuánto valía y empezar a pagarlo.",
+    0.35
+   ],
+   [
+    "[clear] [measured] A esa operación se le llamó consolidación.",
+    1.0
+   ],
+   [
+    "[warm] [confident] La idea era buena, y Quiroz lo reconoce: un Estado que paga lo que debe recupera la confianza de quienes podrían prestarle.",
+    0.35
+   ],
+   [
+    "[warm] Para él, la consolidación fue un fundamento del crédito público moderno en el Perú.",
+    1.2
+   ],
+   [
+    "[teacher] [clear] Cuando un reclamo se aprobaba, el acreedor recibía un vale: un papel en el que el Estado se comprometía a pagarle esa suma, con intereses.",
+    0.6
+   ],
+   [
+    "[teacher] [clear] No era plata en la mano, sino una promesa de pago, y esa promesa se podía vender.",
+    1.2
+   ],
+   [
+    "[suspicious] [lower] Pero la ley tenía dos huecos, según Quiroz.",
+    0.35
+   ],
+   [
+    "[serious] [measured] No tenía reglas claras para los reclamos mal sustentados, ni para vender o traspasar un vale.",
+    1.0
+   ],
+   [
+    "[dry] [restrained] Por esos huecos entró el negocio.",
+    0.35
+   ],
+   [
+    "[dry] Antes de mil ochocientos cincuenta, muchos reclamos viejos casi no valían nada.",
+    0.35
+   ],
+   [
+    "[dry] [ironic] Los especuladores los compraban muy barato y luego negociaban que el Estado los reconociera por un valor muchas veces mayor.",
+    1.0
+   ],
+   [
+    "[serious] Para lograrlo había ayuda.",
+    0.35
+   ],
+   [
+    "[serious] [restrained anger] Algunos capitalistas movían los expedientes a cambio de comisiones, y algunos funcionarios prometían un reconocimiento privilegiado a cambio de participaciones y comisiones ilegales.",
+    1.0
+   ],
+   [
+    "[measured] [clear] Quiroz no condena toda gestión: en el caso que vamos a ver, la comisión del intermediario era legítima.",
+    0.35
+   ],
+   [
+    "[firm] [clear] Lo que llama ilegal son las participaciones y comisiones que se pagaban a cambio de un reconocimiento privilegiado.",
+    1.0
+   ],
+   [
+    "[calm] [teacher] [slowly] Entonces, un reclamo podía pasar por cuatro manos: alguien vende barato, otro compra, un tercero mueve el expediente y un funcionario lo aprueba.",
+    2.5
+   ]
+  ],
+  "s03": [
+   [
+    "[solemn] [low voice] Un expediente muestra con nombres y cifras dos de esas manos: el intermediario y el funcionario.",
+    0.6
+   ],
+   [
+    "[solemn] [slowly] Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada.",
+    0.35
+   ],
+   [
+    "[serious] [low voice] [slowly] Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años.",
+    1.0
+   ],
+   [
+    "[serious] [measured] En el Perú de entonces, la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro.",
+    1.5
+   ],
+   [
+    "[calm] [neutral] Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país.",
+    0.35
+   ],
+   [
+    "[calm] Gestionaba el reclamo a cambio de una comisión.",
+    0.35
+   ],
+   [
+    "[calm] [measured] En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos.",
+    0.35
+   ],
+   [
+    "[dry] Para sí esperaba doscientos mil.",
+    1.0
+   ],
+   [
+    "[tense] [measured] El presidente ya era José Rufino Echenique, que había sucedido a Castilla.",
+    0.35
+   ],
+   [
+    "[tense] [slowly] Echenique respondió que el reclamo estaba fuera de plazo.",
+    1.5
+   ],
+   [
+    "[tense] [low voice] Días después, el reclamo se aprobó.",
+    0.8
+   ],
+   [
+    "[serious] [softly] [slowly] Por novecientos cuarenta y ocho mil quinientos pesos en vales.",
+    2.0
+   ],
+   [
+    "[dry] [restrained] Era mucho más de lo que había pedido el propio Elías: de una vez y media a casi el doble.",
+    1.0
+   ],
+   [
+    "[serious] [restrained anger] Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico.",
+    1.0
+   ],
+   [
+    "[serious] [measured] Y Quiroz anota que Novoa probablemente recibió alrededor de ciento ochenta mil pesos, también en vales.",
+    2.0
+   ],
+   [
+    "[calm] [measured] No sabemos adónde fue cada peso de la diferencia.",
+    0.35
+   ],
+   [
+    "[calm] [firm] Lo que sí documenta Quiroz es quién dijo que el reclamo estaba fuera de plazo, quién intervino después y cuánto se terminó aprobando.",
+    2.0
+   ]
+  ],
+  "s04": [
+   [
+    "[calm] [careful] Novoa fue un caso entre muchos.",
+    0.35
+   ],
+   [
+    "[careful] [measured] Quiroz anota que los expedientes más dudosos pasaron antes de dos plazos: junio y octubre de mil ochocientos cincuenta y dos.",
+    1.0
+   ],
+   [
+    "[serious] Así la deuda pasó de cinco a veinticuatro millones de pesos.",
+    0.35
+   ],
+   [
+    "[calm] [teacher] Esos millones eran deuda reconocida en vales, que el Estado tendría que pagar después.",
+    0.35
+   ],
+   [
+    "[careful] [clear] Y no toda la diferencia fue fraude: para saberlo, hay que abrir los expedientes uno por uno.",
+    1.5
+   ],
+   [
+    "[dry] Los vales terminaron concentrados en pocas manos.",
+    0.35
+   ],
+   [
+    "[dry] [ironic] Según Quiroz, la red que se benefició reunía a varias docenas de personas, y en la época les dieron nombres.",
+    1.0
+   ],
+   [
+    "[serious] [low voice] [slowly] Les decían los consolidados.",
+    2.5
+   ],
+   [
+    "[serious] [thoughtful] La palabra que nombraba una forma de pagar las deudas del Estado terminó nombrando a las personas vinculadas con el robo político.",
+    2.0
+   ],
+   [
+    "[calm] [teacher] Muchos de esos vales se cambiaron por bonos de deuda externa, la que el Estado tenía con acreedores de fuera del país.",
+    0.35
+   ],
+   [
+    "[dry] [measured] En Londres, Manuel de Mendiburu cambió así cerca de la mitad de toda la deuda consolidada.",
+    0.8
+   ],
+   [
+    "[dry] [ironic] En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que decía; el bono que lo reemplazaba valía casi lo que decía.",
+    1.0
+   ],
+   [
+    "[serious] [low voice] Quiroz llama a esa conversión un lavado: se diseñó para que el papel manchado por su origen saliera limpio.",
+    2.0
+   ],
+   [
+    "[tense] [storytelling] En agosto de mil ochocientos cincuenta y tres, Domingo Elías publicó dos cartas en El Comercio contra la consolidación.",
+    0.35
+   ],
+   [
+    "[tense] Ya estaba peleado con Echenique y con Torrico por el caso Novoa.",
+    0.35
+   ],
+   [
+    "[serious] [measured] Según Quiroz, sostuvo que la consolidación no beneficiaba a los reclamantes originales, sino a los agiotistas: los que especulaban con los vales.",
+    1.0
+   ],
+   [
+    "[tense] [quick] Lo encarcelaron, y al salir se levantó contra Echenique.",
+    1.0
+   ],
+   [
+    "[measured] [even] Elías no denunciaba desde afuera.",
+    0.35
+   ],
+   [
+    "[measured] [even] Él mismo había movido expedientes por comisión, así que su denuncia trae información y también defiende sus intereses.",
+    0.35
+   ],
+   [
+    "[measured] [fair] Quiroz lo resume así: defendió reformas contra la corrupción, pero no dejó de beneficiarse de compensaciones oficiales.",
+    1.5
+   ],
+   [
+    "[serious] En mil ochocientos cincuenta y cinco cayó Echenique, volvió Castilla y una junta fiscal revisó los expedientes de la consolidación.",
+    0.35
+   ],
+   [
+    "[serious] [low voice] Encontró más de doce millones de pesos en ciento cuarenta y un expedientes irregulares o ilegales, y otros cuatro robados.",
+    1.5
+   ],
+   [
+    "[serious] [restrained anger] Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos.",
+    0.35
+   ],
+   [
+    "[serious] [restrained anger] Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu.",
+    1.0
+   ],
+   [
+    "[tense] Los que tenían los vales protestaron: decían que un vale era como un billete, y que quien lo había comprado no tenía por qué perder.",
+    0.35
+   ],
+   [
+    "[tense] [measured] Los diplomáticos de Gran Bretaña y de Francia los respaldaron, y barcos ingleses y franceses rondaban las islas del guano.",
+    0.35
+   ],
+   [
+    "[tense] En el país, además, el general Vivanco se había alzado en armas.",
+    1.5
+   ],
+   [
+    "[dry] [bitter] En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos sobre bonos y conversión que se habían suspendido.",
+    0.35
+   ],
+   [
+    "[dry] [bitter] [restrained] Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron.",
+    0.35
+   ],
+   [
+    "[measured] [precise] En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota César Antonio Ugarte en mil novecientos veintiséis.",
+    1.2
+   ],
+   [
+    "[serious] [weary] Entonces, la junta encontró expedientes irregulares o ilegales, pero los vales ya habían cambiado de manos.",
+    0.35
+   ],
+   [
+    "[serious] [weary] [low voice] Y una ley volvió a ponerlos en circulación.",
+    2.5
+   ]
+  ],
+  "s05": [
+   [
+    "[firm] [measured] Echenique la defendió: decía que el dinero de la consolidación había creado una clase capitalista nacional.",
+    1.0
+   ],
+   [
+    "[firm] Quiroz le responde con los expedientes.",
+    0.35
+   ],
+   [
+    "[serious] La mayoría de los reclamantes originales quedaron fuera, igual que los pequeños inversionistas que habrían podido participar.",
+    0.35
+   ],
+   [
+    "[serious] [low voice] Las ganancias se concentraron en pocas manos.",
+    0.35
+   ],
+   [
+    "[serious] [slowly] Para él, el capitalismo peruano perdió la oportunidad de construir sus finanzas sobre una deuda pública transparente.",
+    2.0
+   ],
+   [
+    "[calm] [warm] Este caso se puede reconstruir porque quedaron papeles: reclamos, vales, cartas y el informe de una junta.",
+    0.35
+   ],
+   [
+    "[calm] [clear] Con ellos se separa lo que se aprobó de lo que solo se puede estimar, como lo que recibió Novoa.",
+    1.5
+   ],
+   [
+    "[serious] [low voice] Pero mucha corrupción se hace para no dejar papeles.",
+    0.35
+   ],
+   [
+    "[serious] [thoughtful] Quiroz quiso sacar una cuenta más grande, la de casi dos siglos de república, y para eso tenía que medir lo que escondían quienes la practicaban.",
+    1.5
+   ],
+   [
+    "[curious] [softly] ¿Se puede medir la corrupción?",
+    2.0
+   ]
+  ]
+ }
+}
