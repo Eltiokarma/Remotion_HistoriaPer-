@@ -56,12 +56,49 @@ def lufs(f):
     return float([l for l in r.splitlines() if l.strip().startswith("I:")][-1].split()[1])
 
 
+UNIDADES = "cero uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince dieciséis diecisiete dieciocho diecinueve veinte".split()
+DECENAS = {2: "veinti", 3: "treinta", 4: "cuarenta", 5: "cincuenta", 6: "sesenta", 7: "setenta", 8: "ochenta", 9: "noventa"}
+CENTENAS = {1: "ciento", 2: "doscientos", 3: "trescientos", 4: "cuatrocientos", 5: "quinientos", 6: "seiscientos",
+            7: "setecientos", 8: "ochocientos", 9: "novecientos"}
+
+
+def en_letras(n):
+    """Entero en palabras, como lo dice la voz (948500 → novecientos cuarenta y ocho mil quinientos).
+    Solo para emparejar la transcripción con el guion: Scribe escribe las cifras con dígitos."""
+    if n <= 20:
+        return UNIDADES[n]
+    if n < 30:
+        return "veinti" + UNIDADES[n - 20]
+    if n < 100:
+        d, u = divmod(n, 10)
+        return DECENAS[d] + (f" y {UNIDADES[u]}" if u else "")
+    if n < 1000:
+        c, r = divmod(n, 100)
+        return "cien" if n == 100 else CENTENAS[c] + (f" {en_letras(r)}" if r else "")
+    if n < 1_000_000:
+        m, r = divmod(n, 1000)
+        return ("mil" if m == 1 else f"{en_letras(m)} mil") + (f" {en_letras(r)}" if r else "")
+    m, r = divmod(n, 1_000_000)
+    return ("un millón" if m == 1 else f"{en_letras(m)} millones") + (f" {en_letras(r)}" if r else "")
+
+
+def cifras_en_letras(s):
+    """«948.500» o «$948.500» → palabras; «12,2» → «doce coma dos»; «1852» → «mil ochocientos cincuenta y dos»."""
+    def uno(m):
+        entero, dec = m.group(1).replace(".", ""), m.group(2)
+        texto = en_letras(int(entero))
+        return f" {texto}" + (f" coma {en_letras(int(dec))} " if dec else " ")
+    return re.sub(r"(\d{1,3}(?:\.\d{3})+|\d+)(?:,(\d+))?", uno, s.replace("$", " "))
+
+
 def tokens(s):
     s = s.lower().replace("a dónde", "adónde")
+    s = s.replace("%", " por ciento ")
+    s = cifras_en_letras(s)
     for k, v in NUM.items():
         s = s.replace(k, f" {v} ")
     s = "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
-    return re.findall(r"[a-zñ]+", s)
+    return ["uno" if w == "un" else w for w in re.findall(r"[a-zñ]+", s)]
 
 
 def sin_relleno(x):
