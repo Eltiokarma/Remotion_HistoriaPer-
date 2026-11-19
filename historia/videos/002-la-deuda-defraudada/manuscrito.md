@@ -8,9 +8,9 @@ En mil ochocientos cincuenta y uno, el Estado peruano reconocía que les debía 
 
 Años más tarde, una junta del propio Estado revisó esos papeles. Encontró más de doce millones en expedientes irregulares o ilegales: más de la mitad de toda esa deuda. //
 
-Y en mil ochocientos cincuenta y siete, una ley les devolvió su validez. //
+Y en mil ochocientos cincuenta y siete, una ley volvió a dejar circular esos papeles. //
 
-¿Cómo se infla la deuda de un país? // Alfonso Quiroz buscaba adónde se había ido la riqueza del guano, y en su primera investigación se encontró con esta deuda. //
+¿Cómo se infla la deuda de un país? // Alfonso Quiroz estudió esta deuda en su primera investigación. Quería saber si la riqueza del guano se había derrochado en lujos, y encontró que la deuda se había inflado. //
 
 ## 1. Las islas y el país
 
@@ -26,9 +26,9 @@ Con esa plata, el Estado puede por fin atender algo que arrastraba desde la guer
 
 ## 2. Un reclamo pasa por varias manos
 
-Esas deudas venían de lugares distintos. Un comerciante, por ejemplo, le había prestado dinero al gobierno en un apuro. Un hacendado reclamaba el ganado y las cosechas que se habían llevado para mantener a las tropas. / A lo que el Estado les debía a sus propios ciudadanos se le llamaba deuda interna. //
+Esas deudas tenían orígenes distintos. Un comerciante, por ejemplo, le había prestado dinero al gobierno en un apuro. Un hacendado reclamaba el ganado y las cosechas que se habían llevado para mantener a las tropas. / A lo que el Estado les debía a sus propios ciudadanos se le llamaba deuda interna. //
 
-En mil ochocientos cincuenta, el gobierno de Castilla aprobó una ley para ordenarla: revisar cada reclamo, decidir cuánto valía y empezar a pagarlo. A esa operación se le llamó consolidación. //
+En mil ochocientos cincuenta, durante el gobierno de Castilla, se dio una ley para ordenarla: revisar cada reclamo, decidir cuánto valía y empezar a pagarlo. A esa operación se le llamó consolidación. //
 
 La idea era buena, y Quiroz lo reconoce: un Estado que paga lo que debe recupera la confianza de quienes podrían prestarle. Para él, la consolidación fue un fundamento del crédito público moderno en el Perú. //
 
@@ -40,31 +40,31 @@ Por esos huecos entró el negocio. Antes de mil ochocientos cincuenta, muchos re
 
 Para lograrlo había ayuda. Algunos capitalistas movían los expedientes a cambio de comisiones, y algunos funcionarios prometían un reconocimiento privilegiado a cambio de participaciones y comisiones ilegales. //
 
-Comprar un reclamo o cobrar por gestionarlo no era, por sí solo, ilegal. Para Quiroz, lo ilegal eran las participaciones y comisiones que cobraban los funcionarios por aprobarlo. //
+Quiroz no condena cualquier gestión: en el caso que vamos a ver, la comisión del intermediario era legítima. Lo que llama ilegal son las participaciones y comisiones que se pagaban a cambio de un reconocimiento privilegiado. //
 
-Entonces, el camino era este: alguien vende barato, otro compra, un tercero mueve el expediente y un funcionario lo aprueba. //
+Entonces, un reclamo podía pasar por cuatro manos: alguien vende barato, otro compra, un tercero mueve el expediente y un funcionario lo aprueba. //
 
 ## 3. El expediente de Novoa
 
-Un expediente muestra, con nombres y cifras, la parte del camino que pasa por el intermediario y el funcionario. / Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada. Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría producido durante treinta y dos años. // En el Perú de entonces, la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro. //
+Un expediente muestra, con nombres y cifras, la parte del camino que pasa por el intermediario y el funcionario. / Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada. Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años. // En el Perú de entonces, la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro. //
 
-Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país, que gestionaba el reclamo a cambio de una comisión. En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos o seiscientos mil pesos, y para sí esperaba doscientos mil. //
+Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país, que gestionaba el reclamo a cambio de una comisión. En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por entre quinientos y seiscientos mil pesos, y para sí esperaba doscientos mil. //
 
 El presidente ya era José Rufino Echenique, que había sucedido a Castilla. Echenique le respondió que el reclamo estaba fuera de plazo. //
 
 Días después, el reclamo se aprobó. / Por novecientos cuarenta y ocho mil quinientos pesos en vales. // Era mucho más de lo que había pedido el propio Elías: entre una vez y media y casi el doble. //
 
-Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico. // Y Novoa, calcula Quiroz, probablemente recibió alrededor de ciento ochenta mil pesos, también en vales. //
+Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico. // Y Novoa, según Quiroz, probablemente recibió alrededor de ciento ochenta mil pesos, también en vales. //
 
 No sabemos adónde fue cada peso de la diferencia. Lo que sí documenta Quiroz es quién lo dio por vencido, quién intervino después y cuánto se terminó aprobando. //
 
 ## 4. Lo investigan y los títulos siguen circulando
 
-Novoa fue un caso entre muchos. Los expedientes más dudosos, dice Quiroz, se aprobaron en los meses anteriores a los plazos de junio y octubre de mil ochocientos cincuenta y dos. // Así la deuda pasó de cinco a veinticuatro millones de pesos. Es deuda reconocida, no plata repartida en un día. Y no toda la diferencia fue fraude: para saberlo, hay que abrir los expedientes uno por uno. //
+Novoa fue un caso entre muchos. Según Quiroz, los expedientes más dudosos pasaron antes de que vencieran los plazos de junio y octubre de mil ochocientos cincuenta y dos. // Así la deuda pasó de cinco a veinticuatro millones de pesos. Esos millones eran deuda reconocida en vales, que el Estado tendría que pagar después. Y no toda la diferencia fue fraude: para saberlo, hay que abrir los expedientes uno por uno. //
 
-Los vales terminaron concentrados en pocas manos. Según Quiroz, la red que se benefició reunía a varias docenas de personas, y en la época les dieron un nombre. // Les decían los consolidados. // La palabra que nombraba una forma de pagar las deudas del Estado terminó nombrando a quienes se vinculaba con el robo político. //
+Los vales terminaron concentrados en pocas manos. Según Quiroz, la red que se benefició reunía a varias docenas de personas, y en la época les dieron nombres. // Les decían los consolidados. // La palabra que nombraba una forma de pagar las deudas del Estado terminó nombrando a quienes se vinculaba con el robo político. //
 
-Muchos de esos vales se cambiaron por deuda externa. Desde Londres, el gobierno de Echenique cambió cerca de la mitad de toda la deuda consolidada por bonos de deuda externa. / En el mercado, un vale valía alrededor del cuarenta por ciento de lo que decía; el bono que lo reemplazaba valía casi lo que decía. // Quiroz llama a esa conversión un lavado: el papel manchado por su origen salía limpio. //
+Muchos de esos vales se cambiaron por deuda externa, la que el Estado tenía con acreedores de fuera del país. En Londres, Manuel de Mendiburu cambió así cerca de la mitad de toda la deuda consolidada. / En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que decía; el bono que lo reemplazaba valía casi lo que decía. // Quiroz llama a esa conversión un lavado: el papel manchado por su origen salía limpio. //
 
 En agosto de mil ochocientos cincuenta y tres, Domingo Elías publicó dos cartas en El Comercio contra la consolidación. Ya estaba peleado con Echenique y con Torrico por el caso Novoa. Según Quiroz, sostuvo que no beneficiaba a los reclamantes originales, sino a los agiotistas, los que especulaban con esos papeles. // Lo encarcelaron, y al salir se levantó contra Echenique. //
 
@@ -72,17 +72,17 @@ Elías no denunciaba desde afuera. Él mismo había movido expedientes por comis
 
 En mil ochocientos cincuenta y cinco, Echenique cayó y Castilla volvió al poder. Una junta fiscal revisó los expedientes de la consolidación. Encontró más de doce millones de pesos en ciento cuarenta y un expedientes irregulares o ilegales. Otros cuatro expedientes habían sido robados. //
 
-Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos. Hubo juicios, pero muchos acusados ya habían huido del país, entre ellos Torrico, Echenique y Mendiburu, el que hizo la conversión en Londres. //
+Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos. Hubo juicios, pero muchas de esas personas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu. //
 
 Los que tenían los vales protestaron: decían que un vale era como un billete, y que quien lo había comprado no tenía por qué perder. Los diplomáticos de Gran Bretaña y de Francia los respaldaron, y barcos ingleses y franceses rondaban las islas del guano. En el país, además, el general Vivanco se había alzado en armas. //
 
-En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos suspendidos. Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y a los funcionarios. César Antonio Ugarte, en su historia económica del Perú de 1926, anota que la ley dejaba en pie la responsabilidad penal. //
+En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos suspendidos. Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron. En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota César Antonio Ugarte en mil novecientos veintiséis. //
 
-Entonces, la junta encontró expedientes irregulares o ilegales, pero los papeles ya habían cambiado de manos. Y una ley volvió a darlos por buenos. //
+Entonces, la junta encontró expedientes irregulares o ilegales, pero los papeles ya habían cambiado de manos. Y una ley volvió a ponerlos en circulación. //
 
 ## 5. De estos expedientes al método de Quiroz
 
-Echenique defendió la consolidación: decía que esos fondos habían creado una clase capitalista nacional. // Quiroz le responde con los expedientes. La mayoría de los reclamantes originales y de los pequeños inversionistas quedaron fuera, y las ganancias se concentraron en pocas manos. Para él, el país perdió la oportunidad de construir sus finanzas sobre una deuda pública transparente. //
+Echenique defendió la consolidación: decía que esos fondos habían creado una clase capitalista nacional. // Quiroz le responde con los expedientes. La mayoría de los reclamantes originales quedaron fuera, igual que los pequeños inversionistas que habrían podido participar, y las ganancias se concentraron en pocas manos. Para él, el país perdió la oportunidad de construir sus finanzas sobre una deuda pública transparente. //
 
 Este caso se puede reconstruir porque quedaron papeles: reclamos, vales, cartas y el informe de una junta. Con ellos se separa lo que se aprobó de lo que solo se puede estimar, como lo que recibió Novoa. //
 

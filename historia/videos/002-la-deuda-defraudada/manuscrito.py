@@ -55,7 +55,7 @@ CAMBIOS = {
     "4": [
         ("cambia", "4A", "Se agregan los plazos de junio y octubre de 1852 en la línea de tiempo."),
         ("nuevo", "Palabra del episodio", "«los consolidados», a pantalla completa y quieta, con 2,5 s de pausa."),
-        ("cambia", "4B", "La conversión gana detalle: Londres, cerca del 46 %, el vale a ~40 % en plaza frente al bono casi a la par, el «lavado». Ficha de Mendiburu. Un porcentaje por vez."),
+        ("cambia", "4B", "La conversión gana detalle: deuda externa definida en la voz, Londres, cerca del 46 %, el vale a ~40 % en plaza frente al bono casi a la par, el «lavado». Ficha de Mendiburu. Un porcentaje por vez."),
         ("igual", "4C", "Elías recupera su ficha; cartas del 12 y 16 de agosto de 1853."),
         ("igual", "4D", "Línea de tiempo y junta fiscal: 12,2 millones, 141 expedientes, 4 robados."),
         ("cambia", "4E", "Ley del 29 de diciembre de 1856, fuga de Torrico, Echenique y Mendiburu, barcos frente a las islas (regreso de islas v3), Vivanco y la nota de Ugarte."),

@@ -4,7 +4,7 @@
 **Formato:** 100 % Remotion · 1920×1080 · 30 fps
 **Pregunta central:** ¿Cómo se infla la deuda de un país? Se abre en el gancho y se responde con el expediente de Novoa (ESC 3).
 **Palabra del episodio:** *los consolidados* (Q, p. 174)
-**Duración estimada:** unos 10 min 50 s (unas 1430 palabras de voz a 150 por minuto, más 76 s de pausas y silencios escritos). Se mide de nuevo con la voz provisional.
+**Duración estimada:** unos 11 min (unas 1470 palabras de voz a 150 por minuto, más 76 s de pausas y silencios escritos). Se mide de nuevo con la voz provisional.
 **Estado:** locución completa, propuesta para revisión de Gerson. Escrita el 19 de noviembre de 2026 con el criterio del Escribidor Escribano a partir del guion por ideas, que queda en el historial de git («0·2: …», antes de este cambio). La revisión del Escribano está al final.
 
 Conserva las diez ideas y las cinco escenas largas del [storyboard](storyboard.md). Agrega un gancho (ESC 0) y una tarjeta de cierre (ESC 6). Las marcas entre corchetes son de dirección: `[PAUSA 1s]` va a la voz; `[SILENCIO 2s]` quita también la música. **Imagen** dice qué aparece con cada frase; **Fuente** apunta a [fuentes.md](fuentes.md). Lo que está en pantalla no se lee en voz alta: nombres completos, cargos, fechas exactas y cifras exactas van en las fichas.
@@ -38,13 +38,13 @@ En mil ochocientos cincuenta y uno, el Estado peruano reconocía que les debía 
 
 Años más tarde, una junta del propio Estado revisó esos papeles. Encontró más de doce millones en expedientes irregulares o ilegales: más de la mitad de toda esa deuda. [PAUSA 1,2s]
 
-Y en mil ochocientos cincuenta y siete, una ley les devolvió su validez. [PAUSA 1,5s]
+Y en mil ochocientos cincuenta y siete, una ley volvió a dejar circular esos papeles. [PAUSA 1,5s]
 
-¿Cómo se infla la deuda de un país? [PAUSA 1s] Alfonso Quiroz buscaba adónde se había ido la riqueza del guano, y en su primera investigación se encontró con esta deuda. [PAUSA 2s]
+¿Cómo se infla la deuda de un país? [PAUSA 1s] Alfonso Quiroz estudió esta deuda en su primera investigación. Quería saber si la riqueza del guano se había derrochado en lujos, y encontró que la deuda se había inflado. [PAUSA 2s]
 
 **Imagen:**
 - Las pruebas de imprenta del libro abren el episodio (gramática de la serie). Sobre ellas, la ficha a máquina `DEUDA INTERNA CONSOLIDADA · 1851` y una pila de vales `≈ 5 MILLONES DE PESOS`.
-- «Un año después»: la pila crece hasta `≈ 24 MILLONES · 1852`. El rojo es para la deuda inflada.
+- «Un año después»: la pila crece hasta `≈ 24 MILLONES DE PESOS · 1852`. El rojo es para la deuda inflada.
 - «una junta»: el corrector marca en rojo un poco más de la mitad de la pila: `12,2 MILLONES DE PESOS · 141 EXPEDIENTES IRREGULARES O ILEGALES`.
 - «una ley»: la marca roja se borra a medias y cae el sello `LEY DEL 11 DE MARZO DE 1857`.
 - La pregunta queda sobre la pila. Con «Alfonso Quiroz», la ficha `TESIS DE 1980 · LIBRO DE 1987: LA DEUDA DEFRAUDADA`.
@@ -91,9 +91,9 @@ Ideas 2, 3 y 4. Storyboard 2A a 2F. Es el párrafo que enseña el mecanismo: pla
 **Cambio:** de «pagar las deudas es una buena idea» a «la ley tenía dos huecos, y por ahí entró el negocio».
 
 **VO:**
-Esas deudas venían de lugares distintos. Un comerciante, por ejemplo, le había prestado dinero al gobierno en un apuro. Un hacendado reclamaba el ganado y las cosechas que se habían llevado para mantener a las tropas. [PAUSA 0,8s] A lo que el Estado les debía a sus propios ciudadanos se le llamaba deuda interna. [PAUSA 1,2s]
+Esas deudas tenían orígenes distintos. Un comerciante, por ejemplo, le había prestado dinero al gobierno en un apuro. Un hacendado reclamaba el ganado y las cosechas que se habían llevado para mantener a las tropas. [PAUSA 0,8s] A lo que el Estado les debía a sus propios ciudadanos se le llamaba deuda interna. [PAUSA 1,2s]
 
-En mil ochocientos cincuenta, el gobierno de Castilla aprobó una ley para ordenarla: revisar cada reclamo, decidir cuánto valía y empezar a pagarlo. A esa operación se le llamó consolidación. [PAUSA 1s]
+En mil ochocientos cincuenta, durante el gobierno de Castilla, se dio una ley para ordenarla: revisar cada reclamo, decidir cuánto valía y empezar a pagarlo. A esa operación se le llamó consolidación. [PAUSA 1s]
 
 La idea era buena, y Quiroz lo reconoce: un Estado que paga lo que debe recupera la confianza de quienes podrían prestarle. Para él, la consolidación fue un fundamento del crédito público moderno en el Perú. [PAUSA 1,2s]
 
@@ -105,9 +105,9 @@ Por esos huecos entró el negocio. Antes de mil ochocientos cincuenta, muchos re
 
 Para lograrlo había ayuda. Algunos capitalistas movían los expedientes a cambio de comisiones, y algunos funcionarios prometían un reconocimiento privilegiado a cambio de participaciones y comisiones ilegales. [PAUSA 1s]
 
-Comprar un reclamo o cobrar por gestionarlo no era, por sí solo, ilegal. Para Quiroz, lo ilegal eran las participaciones y comisiones que cobraban los funcionarios por aprobarlo. [PAUSA 1s]
+Quiroz no condena cualquier gestión: en el caso que vamos a ver, la comisión del intermediario era legítima. Lo que llama ilegal son las participaciones y comisiones que se pagaban a cambio de un reconocimiento privilegiado. [PAUSA 1s]
 
-Entonces, el camino era este: alguien vende barato, otro compra, un tercero mueve el expediente y un funcionario lo aprueba. [PAUSA 2,5s]
+Entonces, un reclamo podía pasar por cuatro manos: alguien vende barato, otro compra, un tercero mueve el expediente y un funcionario lo aprueba. [PAUSA 2,5s]
 
 **Imagen:**
 - 2A: los dos ejemplos aparecen al nombrarse, rotulados como ejemplos, y quedan juntos bajo `DEUDA INTERNA`.
@@ -132,21 +132,21 @@ Idea 5. Storyboard 3A a 3F. El dato más fuerte del episodio y el silencio delib
 **Cambio:** de «así funcionaba» a «así se aprobó un reclamo que el presidente había dado por vencido».
 
 **VO:**
-Un expediente muestra, con nombres y cifras, la parte del camino que pasa por el intermediario y el funcionario. [PAUSA 0,6s] Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada. Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría producido durante treinta y dos años. [PAUSA 1s] En el Perú de entonces, la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro. [PAUSA 1,5s]
+Un expediente muestra, con nombres y cifras, la parte del camino que pasa por el intermediario y el funcionario. [PAUSA 0,6s] Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada. Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años. [PAUSA 1s] En el Perú de entonces, la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro. [PAUSA 1,5s]
 
-Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país, que gestionaba el reclamo a cambio de una comisión. En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos o seiscientos mil pesos, y para sí esperaba doscientos mil. [PAUSA 1s]
+Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país, que gestionaba el reclamo a cambio de una comisión. En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por entre quinientos y seiscientos mil pesos, y para sí esperaba doscientos mil. [PAUSA 1s]
 
 El presidente ya era José Rufino Echenique, que había sucedido a Castilla. Echenique le respondió que el reclamo estaba fuera de plazo. [PAUSA 1,5s]
 
 Días después, el reclamo se aprobó. [PAUSA 0,8s] Por novecientos cuarenta y ocho mil quinientos pesos en vales. [SILENCIO 2s] Era mucho más de lo que había pedido el propio Elías: entre una vez y media y casi el doble. [PAUSA 1s]
 
-Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico. [PAUSA 1s] Y Novoa, calcula Quiroz, probablemente recibió alrededor de ciento ochenta mil pesos, también en vales. [PAUSA 2s]
+Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico. [PAUSA 1s] Y Novoa, según Quiroz, probablemente recibió alrededor de ciento ochenta mil pesos, también en vales. [PAUSA 2s]
 
 No sabemos adónde fue cada peso de la diferencia. Lo que sí documenta Quiroz es quién lo dio por vencido, quién intervino después y cuánto se terminó aprobando. [PAUSA 2s]
 
 **Imagen:**
 - 3A: ficha `IGNACIA NOVOA DE ARREDONDO · RECLAMANTE`. Resumen editorial del reclamo en tres renglones: `HACIENDA EXPROPIADA`, `500 PERSONAS ESCLAVIZADAS`, `LUCRO CESANTE · 32 AÑOS`. No es un facsímil. Con «se abolió», ficha pequeña `ABOLICIÓN · DECRETO DE HUANCAYO · 3 DE DICIEMBRE DE 1854`.
-- 3B: ficha `DOMINGO ELÍAS · INTERMEDIARIO`, unida al expediente. Rótulos `GESTIÓN: 500 000–600 000 PESOS` y, más chico, `SU COMISIÓN ESPERADA: 200 000 PESOS`.
+- 3B: ficha `DOMINGO ELÍAS · INTERMEDIARIO`, unida al expediente. Rótulos `ELÍAS PIDE: DE 500 000 A 600 000 PESOS` y, más chico, `SU COMISIÓN ESPERADA: 200 000 PESOS`.
 - 3C: ficha `JOSÉ RUFINO ECHENIQUE · PRESIDENTE · 1851–1855` y el estado `FUERA DE PLAZO`. El documento se detiene.
 - 3D: nada se mueve durante «Días después». Con la cifra cae el rótulo `948 500 PESOS EN VALES`. El silencio de 2 s es sobre esa imagen quieta. Después, ficha `JUAN CRISÓSTOMO TORRICO · MINISTRO DE GUERRA`.
 - 3E: el foco pasa a un segundo campo: `NOVOA: PROBABLEMENTE ≈ 180 000 PESOS EN VALES`. «Probablemente» y «en vales» van al mismo tamaño que la cifra. Se abre el encuadre para comparar los dos campos y el pedido de Elías.
@@ -165,11 +165,11 @@ Ideas 6, 7 y 8. Storyboard 4A a 4E, con la palabra del episodio.
 **Cambio:** de «un expediente irregular» a «una red con nombre propio que, investigada, salió casi intacta».
 
 **VO:**
-Novoa fue un caso entre muchos. Los expedientes más dudosos, dice Quiroz, se aprobaron en los meses anteriores a los plazos de junio y octubre de mil ochocientos cincuenta y dos. [PAUSA 1s] Así la deuda pasó de cinco a veinticuatro millones de pesos. Es deuda reconocida, no plata repartida en un día. Y no toda la diferencia fue fraude: para saberlo, hay que abrir los expedientes uno por uno. [PAUSA 1,5s]
+Novoa fue un caso entre muchos. Según Quiroz, los expedientes más dudosos pasaron antes de que vencieran los plazos de junio y octubre de mil ochocientos cincuenta y dos. [PAUSA 1s] Así la deuda pasó de cinco a veinticuatro millones de pesos. Esos millones eran deuda reconocida en vales, que el Estado tendría que pagar después. Y no toda la diferencia fue fraude: para saberlo, hay que abrir los expedientes uno por uno. [PAUSA 1,5s]
 
-Los vales terminaron concentrados en pocas manos. Según Quiroz, la red que se benefició reunía a varias docenas de personas, y en la época les dieron un nombre. [PAUSA 1s] Les decían los consolidados. [PAUSA 2,5s] La palabra que nombraba una forma de pagar las deudas del Estado terminó nombrando a quienes se vinculaba con el robo político. [PAUSA 2s]
+Los vales terminaron concentrados en pocas manos. Según Quiroz, la red que se benefició reunía a varias docenas de personas, y en la época les dieron nombres. [PAUSA 1s] Les decían los consolidados. [PAUSA 2,5s] La palabra que nombraba una forma de pagar las deudas del Estado terminó nombrando a quienes se vinculaba con el robo político. [PAUSA 2s]
 
-Muchos de esos vales se cambiaron por deuda externa. Desde Londres, el gobierno de Echenique cambió cerca de la mitad de toda la deuda consolidada por bonos de deuda externa. [PAUSA 0,8s] En el mercado, un vale valía alrededor del cuarenta por ciento de lo que decía; el bono que lo reemplazaba valía casi lo que decía. [PAUSA 1s] Quiroz llama a esa conversión un lavado: el papel manchado por su origen salía limpio. [PAUSA 2s]
+Muchos de esos vales se cambiaron por deuda externa, la que el Estado tenía con acreedores de fuera del país. En Londres, Manuel de Mendiburu cambió así cerca de la mitad de toda la deuda consolidada. [PAUSA 0,8s] En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que decía; el bono que lo reemplazaba valía casi lo que decía. [PAUSA 1s] Quiroz llama a esa conversión un lavado: el papel manchado por su origen salía limpio. [PAUSA 2s]
 
 En agosto de mil ochocientos cincuenta y tres, Domingo Elías publicó dos cartas en El Comercio contra la consolidación. Ya estaba peleado con Echenique y con Torrico por el caso Novoa. Según Quiroz, sostuvo que no beneficiaba a los reclamantes originales, sino a los agiotistas, los que especulaban con esos papeles. [PAUSA 1s] Lo encarcelaron, y al salir se levantó contra Echenique. [PAUSA 1s]
 
@@ -177,13 +177,13 @@ Elías no denunciaba desde afuera. Él mismo había movido expedientes por comis
 
 En mil ochocientos cincuenta y cinco, Echenique cayó y Castilla volvió al poder. Una junta fiscal revisó los expedientes de la consolidación. Encontró más de doce millones de pesos en ciento cuarenta y un expedientes irregulares o ilegales. Otros cuatro expedientes habían sido robados. [PAUSA 1,5s]
 
-Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos. Hubo juicios, pero muchos acusados ya habían huido del país, entre ellos Torrico, Echenique y Mendiburu, el que hizo la conversión en Londres. [PAUSA 1s]
+Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos. Hubo juicios, pero muchas de esas personas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu. [PAUSA 1s]
 
 Los que tenían los vales protestaron: decían que un vale era como un billete, y que quien lo había comprado no tenía por qué perder. Los diplomáticos de Gran Bretaña y de Francia los respaldaron, y barcos ingleses y franceses rondaban las islas del guano. En el país, además, el general Vivanco se había alzado en armas. [PAUSA 1,5s]
 
-En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos suspendidos. Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y a los funcionarios. César Antonio Ugarte, en su historia económica del Perú de 1926, anota que la ley dejaba en pie la responsabilidad penal. [PAUSA 1,2s]
+En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos suspendidos. Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron. En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota César Antonio Ugarte en mil novecientos veintiséis. [PAUSA 1,2s]
 
-Entonces, la junta encontró expedientes irregulares o ilegales, pero los papeles ya habían cambiado de manos. Y una ley volvió a darlos por buenos. [PAUSA 2,5s]
+Entonces, la junta encontró expedientes irregulares o ilegales, pero los papeles ya habían cambiado de manos. Y una ley volvió a ponerlos en circulación. [PAUSA 2,5s]
 
 **Imagen:**
 - 4A: el expediente de Novoa queda identificado entre otros; el total general aparte. Con «junio y octubre», dos marcas en la línea de tiempo de 1852 y los expedientes que se apilan antes de cada una.
@@ -206,7 +206,7 @@ Idea 9. Storyboard 5A a 5C. El cierre baja la voz y vuelve al libro.
 **Cambio:** de «este caso se puede reconstruir» a «¿y lo que no dejó papeles?».
 
 **VO:**
-Echenique defendió la consolidación: decía que esos fondos habían creado una clase capitalista nacional. [PAUSA 1s] Quiroz le responde con los expedientes. La mayoría de los reclamantes originales y de los pequeños inversionistas quedaron fuera, y las ganancias se concentraron en pocas manos. Para él, el país perdió la oportunidad de construir sus finanzas sobre una deuda pública transparente. [PAUSA 2s]
+Echenique defendió la consolidación: decía que esos fondos habían creado una clase capitalista nacional. [PAUSA 1s] Quiroz le responde con los expedientes. La mayoría de los reclamantes originales quedaron fuera, igual que los pequeños inversionistas que habrían podido participar, y las ganancias se concentraron en pocas manos. Para él, el país perdió la oportunidad de construir sus finanzas sobre una deuda pública transparente. [PAUSA 2s]
 
 Este caso se puede reconstruir porque quedaron papeles: reclamos, vales, cartas y el informe de una junta. Con ellos se separa lo que se aprobó de lo que solo se puede estimar, como lo que recibió Novoa. [PAUSA 1,5s]
 
@@ -264,6 +264,8 @@ Nada de esto se hizo todavía; queda para que Gerson lo apruebe.
 - Fecha en que Echenique asumió la presidencia (abril de 1851, de memoria) y la caída de 1855 (la junta se constituyó en febrero de 1855, según U).
 - Si las palabras sobre los «agiotistas» son de las cartas de Elías o una paráfrasis de Quiroz: por eso la voz dice «según Quiroz, sostuvo» y no usa comillas.
 - La formulación sobre los trabajadores chinos («trabajo forzoso») contra B, prólogo, pp. 10–11, que habla de condiciones coercitivas.
+- Qué plazos vencían en junio y octubre de 1852 (Q, p. 170); la voz no los explica hasta confirmarlo.
+- Que la definición de deuda externa («con acreedores de fuera del país») es un dato agregado, no de la ficha.
 - Que Elías «se levantó contra Echenique» al salir de prisión: la ficha dice que «encabezó la revolución»; la voz usa la forma más prudente.
 - De memoria, señalados por el Escribano: que las islas de Chincha estén frente a Pisco (los mapas del episodio ya las ponen ahí, sin fuente escrita); la caída de Echenique a comienzos de 1855.
 
@@ -276,4 +278,9 @@ Otra pasada, hecha por un agente que no escribió el texto, con el orden del Esc
 - **Bajas.** Corregidas: «que le habían expropiado», la frase de 26 palabras, la unidad de los 200 000 y la pregunta repetida en el cierre. **No aplicada:** la cifra exacta de Novoa (948 500) se queda en la voz, porque el storyboard la eligió como el dato que se narra, solo y seguido de silencio.
 - **Vicio que más se repitió:** la paráfrasis que redondea, endurece o mezcla lo que dice la fuente. La cura es volver a la frase exacta de la ficha antes de simplificar.
 
-Falta la segunda acta, sobre esta versión, y después el lector en frío y el visto bueno de Gerson.
+**Segunda acta, sobre la versión corregida:** 0 altas, 9 medias y 6 bajas; **no dio fe**. Las correcciones de la primera estaban bien, salvo dos que abrieron un problema nuevo. Vicio repetido: la síntesis propia dicha como si fuera de la fuente («el camino era este», «lo ilegal eran», «el gobierno de Echenique» por Mendiburu, «darlos por buenos» por restaurar los acuerdos). Se corrigieron las 9 medias y las 6 bajas, y quedan dos decisiones abiertas:
+
+- **ESC 4 está cargada:** unas 330 palabras y unos quince nombres y cifras nuevos en algo más de dos minutos, por encima del semáforo de 6 por minuto (CLAUDE §8). Opciones: dejar a Ugarte solo en el rótulo, quitar a Vivanco de la voz, o partir la escena en dos (la red y el lavado; la denuncia y la junta). `DEFINIR`.
+- **Datos de memoria señalados:** los nombres completos de Echenique y Torrico, la independencia en 1821, que la ley de 1850 la diera el Congreso, que la conversión siguiera bajo Castilla, y presos, personas esclavizadas y trabajadores chinos en las islas (B no se reabrió).
+
+Falta una tercera acta sobre esta versión, el lector en frío y el visto bueno de Gerson.
