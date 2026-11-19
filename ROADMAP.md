@@ -397,7 +397,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [001-el-hombre/revision_gerson_2026-11-10.md](historia/videos/001-el-hombre/revision_gerson_2026-11-10.md) · [scripts/narracion.py](historia/scripts/narracion.py) · [001-el-hombre/escaleta.md](historia/videos/001-el-hombre/escaleta.md)
 - [ ] **Guion 0·1 versión 3: orden cronológico, Escribidor Escribano y diseño y animación** `e1-guion-v3` — 🔄 en curso
-  - Entregable: guion.md v3 con la voz corregida y cada beat anclado a su palabra; acta del Escribano; diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); narracion_v3_propuesta.json y manuscrito.md. Falta: visto bueno de Gerson, regenerar la voz, re-anclar beats y los tres beats nuevos de MecanismoDeuda
+  - Entregable: guion.md v3 con la voz corregida y cada beat anclado a su palabra; primera acta del Escribano (2 altas y 11 medias; aplicadas salvo 3 que esperan a Gerson); diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); narracion_v3_propuesta.json y manuscrito.md. Falta: visto bueno de Gerson, regenerar la voz, re-anclar beats y los tres beats nuevos de MecanismoDeuda
   - Depende de: `e1-guion-externo`
   - Prevista: — · Real: 2026-11-19 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?

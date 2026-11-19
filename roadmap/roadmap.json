@@ -1303,7 +1303,7 @@
       "id": "e1-guion-v3",
       "fase": "e1",
       "titulo": "Guion 0·1 versión 3: orden cronológico, Escribidor Escribano y diseño y animación",
-      "entregable": "guion.md v3 con la voz corregida y cada beat anclado a su palabra; acta del Escribano; diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); narracion_v3_propuesta.json y manuscrito.md. Falta: visto bueno de Gerson, regenerar la voz, re-anclar beats y los tres beats nuevos de MecanismoDeuda",
+      "entregable": "guion.md v3 con la voz corregida y cada beat anclado a su palabra; primera acta del Escribano (2 altas y 11 medias; aplicadas salvo 3 que esperan a Gerson); diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); narracion_v3_propuesta.json y manuscrito.md. Falta: visto bueno de Gerson, regenerar la voz, re-anclar beats y los tres beats nuevos de MecanismoDeuda",
       "estado": "en_curso",
       "depende_de": [
         "e1-guion-externo"
