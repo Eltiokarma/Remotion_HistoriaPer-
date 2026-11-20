@@ -193,6 +193,9 @@ def plano_html(e, p):
     figuras = "".join(
         f'<figure class="pieza figura"><img loading="lazy" src="{src(x)}" alt=""><figcaption>{esc(Path(x).name)}</figcaption></figure>'
         for x in p.get("personajes", []))
+    objetos = "".join(
+        f'<figure class="pieza"><img loading="lazy" src="{src(x)}" alt=""><figcaption>{esc(Path(x).name)}</figcaption></figure>'
+        for x in p.get("objetos", []))
     avisos = "".join(f"<li>{esc(a)}</li>" for a in p["_avisos"])
     sello = '<span class="sello exc">excepción reservada</span>' if p.get("excepcion") else ""
     corte = '<span class="sello corte">punto posible de corte de escena</span>' if p.get("corte_posible") else ""
@@ -218,6 +221,7 @@ def plano_html(e, p):
   </div>
   {f'<div class="laminas">{imgs}</div>' if imgs else ''}
   {f'<div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila">{figuras}</div></div>' if figuras else ''}
+  {f'<div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila">{objetos}</div></div>' if objetos else ''}
   {f'<div class="piezas"><span class="et">Piezas existentes</span><div class="fila">{piezas}</div></div>' if piezas else ''}
 </article>"""
 

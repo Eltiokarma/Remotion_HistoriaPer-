@@ -20,7 +20,7 @@ La deuda reconocida crece casi cinco veces en un año. Sobre las pruebas de impr
 - **Cámara:** quieta.
 - **Efecto:** La pila crece con peso pesado, de una vez, y asienta (impacto de papel 0,025). Nada más se mueve.
 - **Sonido:** Papel; un golpe grave cuando la pila termina de crecer. Sin música.
-- **Falta:** Pila de vales como pieza (se arma con 2c-vale-sin-texto repetido). Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).
+- **Falta:** Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).
 
 ### 0.2 · marcar · 12.3 s
 
@@ -81,7 +81,7 @@ Sacarlo exige trabajo, y no siempre libre. Sobre el fondo limpio de Chincha, el 
 - **Cámara:** quieta.
 - **Efecto:** Pala en arco; granos con semilla que caen una vez y se asientan; balanceo corto del casco al recibir el saco.
 - **Sonido:** Raspado de pala, saco al apoyarse, madera del barco.
-- **Falta:** Pala y saco como SVG en las manos (ya existen); el embarque con el barco de 1c. Sin rótulo sobre las figuras: su aspecto no documenta su condición. Trabajadores de distintos orígenes al fondo, si Gerson lo aprueba (prompts-chatgpt-v2.md, n.º 5).
+- **Falta:** Pala ya está en la figura; el saco es obj-01 y obj-02; el embarque con el barco de 1c. Sin rótulo sobre las figuras: su aspecto no documenta su condición. Trabajadores de distintos orígenes al fondo, si Gerson lo aprueba (prompts-chatgpt-v2.md, n.º 5).
 
 ### 1.4 · explicar · 8.8 s
 
@@ -152,7 +152,7 @@ La ley tenía dos huecos. El libro de la ley vuelve al centro; el corrector enci
 - **Cámara:** quieta.
 - **Efecto:** Dos círculos de corrector, uno por cada hueco, con la voz.
 - **Sonido:** Pluma.
-- **Falta:** Página del libro con dos renglones vacíos (variante de libro-ley-consolidacion).
+- **Falta:** El libro (obj-08) trae una franja con texto en vez de dos renglones vacíos: regenerarlo o tapar dos renglones con la textura del papel.
 
 ### 2.6 · comparar · 16.1 s
 
@@ -162,7 +162,6 @@ Se compra barato y se hace reconocer por mucho más. Delante de la pizarra, tres
 - **Cámara:** quieta.
 - **Efecto:** La barra alta crece después de la baja, más lenta. Las dos barras se quedan en el tablero (vuelven en Londres).
 - **Sonido:** Papel y sobre; tiza.
-- **Falta:** Folio y sobre como SVG en las manos (ya existen).
 
 ### 2.7 · distinguir · 26.5 s
 
@@ -286,7 +285,7 @@ Los vales se cambian por bonos externos en Londres: el lavado. El mismo mapa de 
 - **Cámara:** recorrido (El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar.).
 - **Efecto:** Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.
 - **Sonido:** Tic por tramo; hoja al llegar el bono.
-- **Falta:** Bono externo como pieza (bono-externo.svg existe en revision-investigacion/capas) y la mancha roja del vale.
+- **Falta:** La mancha roja del vale (se pinta en Remotion sobre obj-04).
 
 ### 4.4 · denunciar · 23.8 s
 
