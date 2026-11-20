@@ -164,3 +164,45 @@ Gerson escuchó la voz v4 y pidió: susurros y emociones menos exagerados, que e
 | 9 | s07 | 7,6 | 5:40 |
 
 Total: 5:34 de voz y unos 5:48 con las colas.
+
+## Montaje (20 de noviembre de 2026)
+
+`escenas.json` montado sobre la voz v5, a partir del último estado de la rama `video01/luz-lampara-s05` (fusionada en esta rama: auditoría, fichas, títulos y notas del render del 19/11).
+
+**Qué se hizo**
+
+- **Orden nuevo:** s00 · s01 · s02 · s03 · s04 · **s06** (el primer caso) · **s05** (aprender a medir) · **s08** (las cuentas abiertas, nueva) · s07.
+- **Cada beat anclado a su palabra** con `scripts/anclar_beats.py` y `videos/001-el-hombre/anclas.json`. Los tiempos por palabra salen de transcribir la voz con Scribe y quedan en `narracion_palabras.json`. Si la voz se regenera: `python scripts/anclar_beats.py 001-el-hombre --transcribir`, y todos los beats se recalculan desde sus palabras, sin moverlos a mano. Medido: 0 beats fuera de su escena y 0 errores de `npm run validar`.
+- **La escena del viaje, partida:** `AprenderAMedir` acepta `cuadros` (viaje, método, balanza, estante, aula, brújula). s05 muestra viaje, método y balanza; s08, estante y brújula. El validador sabe qué beats van con cada cuadro (`beatsPorCuadro`).
+- **La versión de entonces y el tachón** (s06): `MecanismoDeuda` acepta `version` (rótulo, texto y la palabra que se tacha) con los beats `version` y `tacha`. Tarjeta de borde punteado arriba a la derecha, fija en pantalla del grabado a los vales; el corrector tacha «TODO» con un efecto de lápiz; se va con la pregunta. Observado en cuadros renderizados (s06 a los 26,5, 31, 32,5, 37,5 y 43,5 s): se lee en las tres fases y no tapa la pila ni la pregunta.
+- **Anclas corregidas a mano**, porque la voz dijo más cortas algunas pausas de menos de 1 s: la esquina del afiche (s03) cae 1 s antes de «o repetía», los sacos (s06) después del acercamiento al grabado, y la tarjeta del cierre (s07) con «El próximo episodio», sin negro largo con voz encima.
+- **La tarjeta del cierre con el título grande** («La deuda defraudada» y «(1850)» chico), el pedido de Gerson del 11/11 que había quedado en la rama `claude/upbeat-newton-r0iwgt`: se trajo el cambio de `Tarjeta` y `Cierre` (`proximo.destacar: "titulo"`).
+- **Música, sin las pistas originales de Suno** (están en la laptop, fuera de git):
+  - s06: la pista G entra con «Ahí estaba el guano» (beat `musica`, anclado para que el acorde final caiga 0,5 s después de la pregunta, que ahora es más larga).
+  - s07: el tema del canal entra 6,2 s antes de la imagen, con «aquella tesis» (s08).
+  - s08: **música provisional**, la continuación exacta de la pista de s05 (cortada desde donde termina s05). Dura 20,7 s y s08, 29,7 s: se apaga unos segundos antes de que entre el tema.
+
+**Lo que falta**
+
+1. **Volver a montar la música en la laptop** (`python scripts/montar_musica.py 001-el-hombre <escena>`, que lee los beats nuevos):
+   - s01: B entraba en `final` a los 38,96 s y ahora `final` está a los 39,94 s.
+   - s04: las capas siguen sus beats viejos y quedan desfasadas hasta 2,7 s en `bajar`, `subir` y `remate`.
+   - s05, y después s08, cortando la continuación desde la s05 nueva.
+2. **`zarpa`:** el barco que sale hacia Europa. Se hace al integrar las capas de ChatGPT (isla, mar y barco sueltos); con la lámina actual chocaría con el viaje de cámara hacia el Estado.
+3. **Voz por encima de la meta** en s00, s02, s03, s05 y s08 (80 a 83 %, escaleta): la v5 dijo más cortas las pausas de menos de 1 s. Si se quiere bajar, se suben a 1 s las pausas del guion que importan, y se regenera solo esa escena.
+4. **Las imágenes de ChatGPT** (pruebas, libros, islas, barco, Estado, vales, sacos) todavía no reemplazan a las láminas de vector: están fuera de git y el render en GitHub no las encontraría.
+5. Ver el episodio a velocidad real con la voz y la música: los cuadros sueltos no muestran el ritmo.
+
+| Escena | Componente | Voz (s) | Cola (s) | Beats |
+|---|---|---|---|---|
+| s00 | Gancho | 28.16 | 1.2 | 10 |
+| s01 | PruebasDeImprenta | 43.96 | 2.5 | 13 |
+| s02 | Presentacion | 25.05 | 1 | 7 |
+| s03 | TiempoLargo | 36.0 | 2.5 | 12 |
+| s04 | TiempoLargo | 51.28 | 1 | 11 |
+| s06 | MecanismoDeuda | 44.72 | 3.5 | 16 |
+| s05 | AprenderAMedir | 69.25 | 1 | 22 |
+| s08 | AprenderAMedir | 28.66 | 1 | 7 |
+| s07 | Cierre | 7.63 | 11 | 3 |
+
+Total: 5:59 con las colas (`npm run validar`).

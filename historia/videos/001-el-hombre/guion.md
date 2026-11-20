@@ -188,15 +188,15 @@ En mil ochocientos cincuenta, el Estado decidió pagar con la plata del guano un
 
 Pero en su tesis de mil novecientos ochenta, Quiroz mostró que no todo se fue en lujos. [PAUSA 0,5s] Algunos inflaron el valor de esa deuda para enriquecerse a costa del Estado. [PAUSA 1,2s: el monto sube, quieto después] ¿Y adónde fue a parar la plata que el Estado pagó por esa deuda?
 
-**Imagen:** el reparto de la auditoría (hoja 2), con tres eslabones nuevos (`zarpa`, `lujos` y `tacha`) para las frases nuevas.
+**Imagen:** el reparto de la auditoría (hoja 2), con dos eslabones nuevos (`version` y `tacha`) para las frases nuevas. Montado en `escenas.json` el 20/11, con cada beat anclado a su palabra (`anclas.json`).
 - «en Lima» (`hoja_entra`, `ficha_lugar`): el libro cerrado y la ficha destacada `LIMA · 1980`.
 - «Félix Denegri Luna» (`hojea`, `ficha_nombre`): el libro se abre y se hojea; `FÉLIX DENEGRI LUNA · BIBLIOTECA EN LIMA`.
 - «siglo diecinueve» (`hoja_pagina`, `hoja_zoom`): cae la página con el grabado y la cámara entra hasta llenar la pantalla durante la pausa de 1 s.
-- «el guano» (`sacos`): los sacos suben al barco. «vendía a Europa» (`zarpa`, nuevo): el barco se aleja hacia el borde izquierdo con su estela.
-- «derrochado en lujos» (`lujos`, nuevo): sobre el mar, una flecha punteada hacia un rótulo, `LA VERSIÓN DE ENTONCES: TODO SE DERROCHÓ EN LUJOS`. Punteada porque es una versión, no un hecho.
+- «el guano» (`sacos`): los sacos suben al barco, cuando la cámara ya terminó de entrar al grabado. **Pendiente:** que el barco zarpe hacia Europa con «vendía a Europa» (`zarpa`). Con la lámina actual chocaría con el viaje de cámara que lleva al barco hacia el Estado; se hace al integrar las capas de ChatGPT (isla, mar y barco sueltos, el barco volteado hacia la derecha).
+- «toda esa riqueza» (`version`): arriba a la derecha entra una tarjeta de borde punteado, fija en pantalla mientras la escena pasa del grabado al Estado y a los vales: `LA VERSIÓN DE ENTONCES` / `TODO SE DERROCHÓ EN LUJOS`. Punteada porque es una versión, no un hecho.
 - «el Estado decidió pagar» (`flecha`): del barco sale la flecha de dinero; la cámara sigue al barco y aparece el edificio del Estado. «una deuda vieja» (`vales`): paneo siguiendo la flecha hasta los vales que se apilan.
 - En la pausa de 1,5 s (`consolidacion`): cae el sello rojo `1850` y se asienta antes del «Pero», para que los dos rojos seguidos no se pisen.
-- «Pero» (`tacha`, nuevo): el corrector tacha en rojo solo la palabra `TODO`: Quiroz no negó el derroche, negó que explicara todo (C5 del 000). Es el rojo del corrector, y no compite con el de la culpa, que llega después.
+- «Pero en su tesis» (`tacha`): el corrector tacha en rojo solo la palabra `TODO`: Quiroz no negó el derroche, negó que lo explicara todo (C5 del 000). La tarjeta se va cuando entra la pregunta. Es el rojo del corrector, y no compite con el de la culpa, que llega después.
 - «inflaron» (`hallazgo`): el monto del vale de arriba sube, rotulado `EJEMPLO ILUSTRATIVO`, con su vale ya en la pila.
 - «¿Y adónde» (`pregunta`): la pregunta escrita fuerte, en rojo, como la pide la guía (§2.14): «¿A dónde fue a parar esa plata?». La voz la dice completa, con su sujeto (la plata que el Estado pagó por la deuda), y la pantalla la escribe corta; el acorde de G suena solo después.
 
@@ -266,7 +266,7 @@ Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochen
 **VO:**
 [PAUSA 2,5s] El próximo episodio sigue esa plata, y se llama *La deuda defraudada*.
 
-**Imagen:** las pruebas de imprenta del comienzo se cierran (sin limpiarse: eso queda para el 0·4); fundido a negro; tarjeta con «La deuda defraudada» grande y «(1850)» chico debajo. La tarjeta entra con «se llama».
+**Imagen:** las pruebas de imprenta del comienzo se cierran (sin limpiarse: eso queda para el 0·4); fundido a negro; tarjeta con «La deuda defraudada» grande y «(1850)» chico debajo, que entra con la voz («El próximo episodio…»): sin negro largo con voz encima.
 
 **Sonido:** el tema del canal, que ya venía desde «aquella tesis», sube con el archivador y se queda unos 5 s sobre la tarjeta.
 
@@ -288,6 +288,7 @@ Lo que cambió respecto de la versión 2 (en `main`) y de la reordenada del 11/1
 
 Pendiente de aprobación de Gerson. El detalle, con la ficha de cada movimiento, está en [diseno/diseno-y-animacion-2026-11-19.md](diseno/diseno-y-animacion-2026-11-19.md).
 
+- **Hecho el 20/11 (montaje):** ver «Montaje» en el documento de diseño. Lo que sigue pendiente: `zarpa`, la música de s01, s04, s05 y s08 vuelta a montar en la laptop, y las imágenes de ChatGPT.
 - **escenas.json:** pasar `s06` antes de `s05` (o renumerar); partir `s05` en dos escenas, `s05` (viaje, método y balanza) y `s08` (estante, brújula y pizarra), las dos con `AprenderAMedir`, y tres beats nuevos en `MecanismoDeuda`: `zarpa`, `lujos` y `tacha` (con su rótulo). En `s04`, que `subir` deje a la vista las dos capas lentas.
 - **Voz:** regenerar con `scripts/narracion.py` las escenas cuyo texto cambió (todas menos s07) y correr `beats_a_la_voz.py --rehacer`. Los beats cuyas frases cambiaron se vuelven a anclar a mano con la tabla de anclas del documento de diseño.
 - **Música:** `montar_musica.py` para s00 a s06; el tema del canal pasa a entrar con «aquella tesis», al final de la escena del viaje.

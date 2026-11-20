@@ -22,7 +22,7 @@
       "id": "s00",
       "seccion": "gancho",
       "componente": "Gancho",
-      "duracion_s": 31.8,
+      "duracion_s": 28.16,
       "cola_s": 1.2,
       "intensidad": 4,
       "cambio": "de no saber nada a cargar una cifra que duele (3–4 % de todo lo que produce el país, cada año, desde 1820) y una pregunta: ¿quién lo calculó?",
@@ -30,15 +30,15 @@
       "transicion_salida": "corte",
       "beats": {
         "anio": 0.3,
-        "rojo": 6.79,
-        "soles": 14.43,
-        "caen": 18.58,
-        "cuatro": 19.03,
-        "sueltos": 21.2,
-        "sistema": 23.27,
-        "colonia": 24.53,
-        "calculo": 27.51,
-        "libro": 29.83
+        "rojo": 9.4,
+        "soles": 11.68,
+        "caen": 14.68,
+        "cuatro": 15.08,
+        "sueltos": 18.84,
+        "sistema": 20.16,
+        "colonia": 22.0,
+        "calculo": 23.6,
+        "libro": 26.2
       },
       "props": {
         "anios": [
@@ -99,26 +99,26 @@
       "id": "s01",
       "seccion": "gancho",
       "componente": "PruebasDeImprenta",
-      "duracion_s": 45.38,
+      "duracion_s": 43.96,
       "cola_s": 2.5,
       "intensidad": 3,
       "cambio": "de un desconocido a un hombre que corrige su libro contra el tiempo",
       "intencion": "abrir con la muerte y el libro sin decir quién es: los meses entre una y otro se recorren con la cámara, del punto oscuro a la luz; la muerte no es un dato más: cruz sobre negro, la frase entera, la fecha, y recién después el punto rojo",
       "transicion_salida": "corte",
       "beats": {
-        "ficha": 0.34,
-        "correcciones": 3.1,
-        "cita": 14.16,
-        "subrayado": 19.37,
-        "abajo": 24.13,
-        "muerte": 28.59,
-        "fecha": 30.51,
-        "linea": 33.36,
-        "recorre": 34.04,
-        "mayo": 37.9,
-        "final": 38.96,
-        "hombre": 42.61,
-        "encontro": 44.42
+        "ficha": 0.28,
+        "correcciones": 2.32,
+        "cita": 13.18,
+        "subrayado": 18.42,
+        "abajo": 21.94,
+        "muerte": 26.22,
+        "fecha": 29.7,
+        "linea": 32.5,
+        "recorre": 33.2,
+        "mayo": 37.22,
+        "final": 39.94,
+        "hombre": 41.88,
+        "encontro": 42.88
       },
       "props": {
         "ficha": "NUEVA YORK · 2012",
@@ -219,20 +219,20 @@
       "id": "s02",
       "seccion": "personaje",
       "componente": "Presentacion",
-      "duracion_s": 24.34,
+      "duracion_s": 25.05,
       "cola_s": 1,
       "intensidad": 1,
       "cambio": "de un nombre en una página a un nadador terco que llevó su disciplina a los archivos",
       "intencion": "página → piscina → página: el agua llega con «nadador» y se vuelve a secar en renglones con «archivos»; Cueto, que va a cerrar el arco, se presenta con su ficha",
       "transicion_salida": "corte",
       "beats": {
-        "nombre": 0.79,
-        "piscina": 7.66,
-        "ficha": 13.25,
-        "frenar": 17.48,
-        "renglon": 19.97,
-        "palabra": 23.34,
-        "lugar": 3.62
+        "nombre": 0.92,
+        "piscina": 6.78,
+        "ficha": 12.58,
+        "frenar": 17.08,
+        "renglon": 19.28,
+        "palabra": 23.9,
+        "lugar": 3.22
       },
       "props": {
         "fondo": "piscina",
@@ -339,25 +339,25 @@
       "id": "s03",
       "seccion": "su generación",
       "componente": "TiempoLargo",
-      "duracion_s": 37.07,
+      "duracion_s": 36.0,
       "cola_s": 2.5,
       "intensidad": 3,
       "cambio": "de un estudiante que entra a la universidad a uno que se hace la pregunta de su generación: ¿el país cambia o se repite?",
       "intencion": "los afiches gritan cambio; con «¿o repetía lo de siempre?», el afiche nuevo se despega y debajo asoma uno viejo, igual de prometedor; la pregunta queda en el aire",
       "transicion_salida": "corte",
       "beats": {
-        "sello": 3.34,
-        "primeros": 4.4,
-        "afiches": 7.53,
-        "afiche1": 10.92,
-        "afiche2": 12.3,
-        "afiche3": 14.26,
-        "volante": 18.6,
-        "despegue": 35.55,
-        "leer": 20.62,
-        "vuelve": 26.01,
-        "acerca": 29.9,
-        "esquina": 34.6
+        "sello": 2.8,
+        "primeros": 5.02,
+        "afiches": 7.64,
+        "afiche1": 10.46,
+        "afiche2": 11.7,
+        "afiche3": 13.14,
+        "volante": 17.54,
+        "despegue": 34.46,
+        "leer": 19.2,
+        "vuelve": 24.9,
+        "acerca": 30.8,
+        "esquina": 33.46
       },
       "props": {
         "sello": {
@@ -452,24 +452,24 @@
       "id": "s04",
       "seccion": "larga duración",
       "componente": "TiempoLargo",
-      "duracion_s": 51.54,
+      "duracion_s": 51.28,
       "cola_s": 1,
       "intensidad": 3,
       "cambio": "de la pregunta en el aire a una forma de responderla: la historia tiene capas que se mueven a distinta velocidad",
       "intencion": "la clase: Braudel en la pizarra; las capas se dibujan con tiza y brilla solo la que se nombra; la palabra del episodio; la nota y el remate escritos con peso",
       "transicion_salida": "corte",
       "beats": {
-        "braudel": 4.66,
-        "capas": 8.33,
-        "capa1": 11.75,
-        "capa2": 19.72,
-        "capa3": 24.75,
-        "bajar": 31.48,
-        "palabra": 35.1,
-        "subir": 38.47,
-        "realce": 42.34,
-        "remate": 45.34,
-        "clase": 1.89
+        "braudel": 5.02,
+        "capas": 8.32,
+        "capa1": 12.16,
+        "capa2": 19.68,
+        "capa3": 24.52,
+        "bajar": 29.48,
+        "palabra": 34.08,
+        "subir": 36.92,
+        "realce": 40.12,
+        "remate": 42.62,
+        "clase": 1.8
       },
       "props": {
         "acento_media": "#e8d9a8",
@@ -542,45 +542,158 @@
       "beats_ajustados": true
     },
     {
+      "id": "s06",
+      "seccion": "puente",
+      "componente": "MecanismoDeuda",
+      "duracion_s": 44.72,
+      "cola_s": 3.5,
+      "intensidad": 5,
+      "cambio": "de «toda la riqueza del guano se derrochó en lujos» a «no todo: la deuda se infló a costa del Estado», y una pregunta abierta",
+      "intencion": "cerrar el retrato volviendo atrás: lo que aprendió en Nueva York lo va a usar en lo que ya había encontrado antes de irse; la pregunta queda en el aire para el próximo episodio; la versión de entonces queda escrita en una tarjeta punteada y el corrector tacha solo TODO con «Pero en su tesis…» (guion v3)",
+      "transicion_salida": "corte",
+      "beats": {
+        "hoja_entra": 0.3,
+        "ficha_lugar": 1.54,
+        "hojea": 4.4,
+        "ficha_nombre": 5.2,
+        "hoja_pagina": 9.94,
+        "hoja_zoom": 10.34,
+        "islas": 0.2,
+        "sacos": 12.62,
+        "flecha": 24.92,
+        "vales": 27.28,
+        "consolidacion": 30.07,
+        "pregunta": 41.13,
+        "hallazgo": 36.14,
+        "version": 19.18,
+        "tacha": 31.32,
+        "musica": 14.01
+      },
+      "props": {
+        "ficha": "SIGLO XIX · GUANO",
+        "estado": "ESTADO",
+        "sello": "1850",
+        "vale": {
+          "desde": 1000,
+          "hasta": 3000
+        },
+        "funcionario": "funcionario",
+        "frase": [
+          "No era solo derroche.",
+          "Era un mecanismo."
+        ],
+        "tesis": {
+          "etiqueta": "TESIS",
+          "anio": "1980"
+        },
+        "libro": {
+          "titulo": "La deuda defraudada",
+          "anio": "1987",
+          "autor": "Alfonso W. Quiroz"
+        },
+        "hasta": "consolidacion",
+        "hojear": {
+          "encabezado": "Siglo XIX"
+        },
+        "fichas_libro": [
+          {
+            "texto": "LIMA · 1980",
+            "beat": "ficha_lugar",
+            "destacada": true
+          },
+          {
+            "texto": "FÉLIX DENEGRI LUNA · BIBLIOTECA EN LIMA",
+            "beat": "ficha_nombre"
+          }
+        ],
+        "pila_paso": 0.55,
+        "paneo": true,
+        "pregunta": "¿A dónde fue a parar esa plata?",
+        "sigue_barco": true,
+        "laminas": {
+          "islas": "vectorcraft/islas-guaneras-v3.json",
+          "estado": "vectorcraft/edificio-estado-video01.json",
+          "vale": "vectorcraft/vale-video01.json"
+        },
+        "version": {
+          "rotulo": "LA VERSIÓN DE ENTONCES",
+          "texto": "TODO SE DERROCHÓ EN LUJOS",
+          "tachar": "TODO"
+        }
+      },
+      "audio": {
+        "musica": {
+          "archivo": "s06-la-deuda.mp3",
+          "nivel": 0.4,
+          "desde_beat": "musica"
+        },
+        "ambientes": [
+          {
+            "nombre": "mar",
+            "nivel": 0.7,
+            "hasta_beat": "flecha"
+          },
+          {
+            "nombre": "cuarto",
+            "nivel": 0.5,
+            "desde_beat": "flecha"
+          }
+        ],
+        "duck_db": -15
+      },
+      "estado_musica": "presente (tensión) → el acorde sin resolver queda solo después de la pregunta",
+      "camara": [
+        {
+          "beat": "hoja_zoom",
+          "movimiento": "entra a la ilustración de la página hasta llenar la pantalla",
+          "motivo": "«el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)"
+        },
+        {
+          "beat": "flecha",
+          "movimiento": "sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha",
+          "motivo": "«Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)"
+        },
+        {
+          "beat": "vales",
+          "movimiento": "paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales",
+          "motivo": "«una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)"
+        }
+      ],
+      "beats_ajustados": true
+    },
+    {
       "id": "s05",
       "seccion": "método",
       "componente": "AprenderAMedir",
-      "duracion_s": 89.0,
+      "duracion_s": 69.25,
       "cola_s": 1,
       "intensidad": 2,
-      "cambio": "de un historiador de discursos a uno que mide, y que cambió de ideas",
-      "intencion": "el viaje a Nueva York; la regresión explicada en tres tiempos (ruido, la recta que busca, cuánto pesa); la claridad en una balanza; la carrera se lee en el estante, no se narra",
+      "cambio": "de un historiador de documentos a uno que mide, y que sabe que la cifra sola no basta",
+      "intencion": "el viaje a Nueva York; la regresión explicada por pasos, cada uno con su palabra y su quietud (ruido, la recta que pasa más cerca, la inclinación); la balanza de Maxwell termina equilibrada y quieta",
       "transicion_salida": "corte",
       "beats": {
         "mapa": 0.2,
-        "paris": 3.83,
-        "duda": 12.88,
-        "sale": 13.7,
-        "llega": 16.31,
-        "abre": 16.95,
-        "ficha": 18.48,
-        "puntos": 24.0,
-        "discursos": 27.09,
-        "caen": 32.1,
-        "recta": 39.19,
-        "pendiente": 46.35,
-        "balanza": 58.57,
-        "profundidad": 62.64,
-        "claridad": 63.75,
-        "estante": 66.33,
-        "temas": 68.85,
-        "brujula": 73.25,
-        "giro": 77.0,
-        "regresion": 30.67,
-        "izquierda": 75.5,
-        "tiza": 83.5,
-        "frase": 86.95,
-        "serie": 52.57,
-        "paris_notas": 10.5,
-        "observacion": 34.4,
-        "residuos": 40.53,
-        "tendencia": 43.24,
-        "causalidad": 48.73
+        "paris": 7.18,
+        "duda": 11.81,
+        "sale": 13.72,
+        "llega": 16.32,
+        "abre": 16.97,
+        "ficha": 19.14,
+        "puntos": 23.44,
+        "discursos": 27.44,
+        "caen": 31.34,
+        "recta": 39.24,
+        "pendiente": 46.56,
+        "balanza": 64.2,
+        "profundidad": 67.32,
+        "claridad": 68.38,
+        "regresion": 30.2,
+        "serie": 56.68,
+        "paris_notas": 10.22,
+        "observacion": 34.2,
+        "residuos": 40.32,
+        "tendencia": 42.4,
+        "causalidad": 52.64
       },
       "props": {
         "origen": {
@@ -724,7 +837,12 @@
               "escala": 551.2
             }
           }
-        }
+        },
+        "cuadros": [
+          "viaje",
+          "metodo",
+          "balanza"
+        ]
       },
       "camara": [
         {
@@ -751,125 +869,198 @@
         ],
         "duck_db": -15
       },
-      "estado_musica": "presente (Suno F: piano; el clarinete entra con «cuánto pesa»)",
+      "estado_musica": "presente (Suno F: piano; el clarinete entra con «la inclinación»); sigue en s08 sin corte",
       "beats_ajustados": true
     },
     {
-      "id": "s06",
-      "seccion": "puente",
-      "componente": "MecanismoDeuda",
-      "duracion_s": 30.35,
-      "cola_s": 3.5,
-      "intensidad": 5,
-      "cambio": "del hombre que aprendió a medir a su primer caso: una deuda pagada con la plata del guano, y una pregunta abierta",
-      "intencion": "cerrar el retrato volviendo atrás: lo que aprendió en Nueva York lo va a usar en lo que ya había encontrado antes de irse; la pregunta queda en el aire para el próximo episodio",
+      "id": "s08",
+      "seccion": "carrera",
+      "componente": "AprenderAMedir",
+      "duracion_s": 28.66,
+      "cola_s": 1,
+      "intensidad": 2,
+      "cambio": "del alumno que aprende a medir a la autoridad que no da por cerradas sus propias cifras, y que vuelve a la tesis de la deuda",
+      "intencion": "la carrera se lee en el estante, no se narra; la brújula gira de una época a otra y pasa a la pizarra; con «aquella tesis» entra el tema del canal (partida de s05 en la versión 3 del guion: el viaje juntaba seis ideas en 96 s)",
       "transicion_salida": "corte",
       "beats": {
-        "hoja_entra": 0.3,
-        "ficha_lugar": 2.4,
-        "hojea": 6.4,
-        "ficha_nombre": 7.2,
-        "hoja_pagina": 10.8,
-        "hoja_zoom": 11.6,
-        "islas": 0.2,
-        "sacos": 14.4,
-        "flecha": 18.2,
-        "vales": 21.2,
-        "consolidacion": 22.5,
-        "pregunta": 28.57,
-        "hallazgo": 24.3
+        "estante": 0.0,
+        "temas": 3.16,
+        "brujula": 6.94,
+        "giro": 11.08,
+        "izquierda": 9.46,
+        "tiza": 16.22,
+        "frase": 18.96
       },
       "props": {
-        "ficha": "SIGLO XIX · GUANO",
-        "estado": "ESTADO",
-        "sello": "1850",
-        "vale": {
-          "desde": 1000,
-          "hasta": 3000
+        "origen": {
+          "nombre": "Lima",
+          "lon": -77.04,
+          "lat": -12.05
         },
-        "funcionario": "funcionario",
-        "frase": [
-          "No era solo derroche.",
-          "Era un mecanismo."
+        "tentacion": {
+          "nombre": "París",
+          "lon": 2.35,
+          "lat": 48.86
+        },
+        "destino": {
+          "nombre": "Nueva York",
+          "lon": -74,
+          "lat": 40.71
+        },
+        "distancia_km": 5900,
+        "ficha": "COLUMBIA UNIVERSITY · BECA · H. S. KLEIN",
+        "fechas_viaje": {
+          "decision": "A COMIENZOS DE LOS OCHENTA",
+          "llegada": "NUEVA YORK · 1981"
+        },
+        "balanza": [
+          "PROFUNDIDAD",
+          "CLARIDAD"
         ],
-        "tesis": {
-          "etiqueta": "TESIS",
-          "anio": "1980"
-        },
-        "libro": {
-          "titulo": "La deuda defraudada",
-          "anio": "1987",
-          "autor": "Alfonso W. Quiroz"
-        },
-        "hasta": "consolidacion",
-        "hojear": {
-          "encabezado": "Siglo XIX"
-        },
-        "fichas_libro": [
-          {
-            "texto": "LIMA · 1980",
-            "beat": "ficha_lugar",
-            "destacada": true
-          },
-          {
-            "texto": "FÉLIX DENEGRI LUNA · BIBLIOTECA EN LIMA",
-            "beat": "ficha_nombre"
+        "temas": [
+          "La deuda defraudada",
+          "Banqueros en conflicto",
+          "Deudas olvidadas",
+          "Domestic and foreign finance"
+        ],
+        "brujula": [
+          "1970s",
+          "1990s–2000s"
+        ],
+        "encuadre": [
+          -105,
+          -28,
+          22,
+          62
+        ],
+        "aula": false,
+        "ficha_estante": "BARUCH COLLEGE · CUNY · NUEVA YORK",
+        "explicar_regresion": true,
+        "titulo_metodo": "Pensar la historia con números, no solo con discursos.",
+        "rotulo_grafico": "Regresión",
+        "brujula_polos": "izquierda-derecha",
+        "brujula_notas": [
+          [
+            "MILITANTE TROTSKISTA",
+            "CONTRA EL GOBIERNO MILITAR"
+          ],
+          [
+            "POSTURA LIBERAL",
+            "IGUALDAD DE OPORTUNIDADES",
+            "«La fragilidad institucional genera, pues, corrupción.»",
+            "Historia de la corrupción en el Perú (p. 531)"
+          ]
+        ],
+        "brujula_frase": "Sus cálculos: provisionales, abiertos a revisión.",
+        "serie": {
+          "rotulo": "Lo que midió: el costo de la corrupción",
+          "unidad": "% DEL PBI",
+          "etiquetas": [
+            "1820",
+            "1830",
+            "1840",
+            "1850",
+            "1860",
+            "1870",
+            "1880",
+            "1890",
+            "1900",
+            "1910",
+            "1920",
+            "1930",
+            "1940",
+            "1950",
+            "1960",
+            "1970",
+            "1980",
+            "1990"
+          ],
+          "valores": [
+            6.1,
+            4.3,
+            4.2,
+            4.3,
+            3.5,
+            4.6,
+            5,
+            2.2,
+            1,
+            1.1,
+            3.8,
+            3.1,
+            3.3,
+            3.6,
+            3.7,
+            4.9,
+            3.9,
+            4.5
+          ],
+          "maximo": 7,
+          "banda": [
+            3,
+            4
+          ],
+          "texto_banda": "PROMEDIO 1820–2000: ENTRE 3 Y 4 %",
+          "fuente": "QUIROZ, APÉNDICE, CUADROS A.4 Y A.6 · ESTIMADOS PRELIMINARES",
+          "cuadro": {
+            "titulo": "CUADROS A.4 Y A.6",
+            "columnas": [
+              "DÉCADA",
+              "% DEL PBI"
+            ]
           }
+        },
+        "fichero": true,
+        "tentacion_notas": [
+          "SUS PROFESORES EN LA PUCP",
+          "HERACLIO BONILLA",
+          "ALBERTO FLORES GALINDO"
         ],
-        "pila_paso": 0.55,
-        "paneo": true,
-        "pregunta": "¿A dónde fue a parar esa plata?",
-        "sigue_barco": true,
+        "vectorcraft": {
+          "viaje": "vectorcraft/tanda06-viaje.json",
+          "regresion": "vectorcraft/tanda06-regresion.json",
+          "costo": "vectorcraft/tanda06-costo.json"
+        },
         "laminas": {
-          "islas": "vectorcraft/islas-guaneras-v3.json",
-          "estado": "vectorcraft/edificio-estado-video01.json",
-          "vale": "vectorcraft/vale-video01.json"
-        }
+          "balanza": "vectorcraft/balanza-video01.json",
+          "estante": "vectorcraft/biblioteca-video01.json",
+          "brujula": "vectorcraft/brujula-video01.json",
+          "fichero": "vectorcraft/tanda04-fichero.json",
+          "viaje": {
+            "archivo": "vectorcraft/tanda06-viaje.json",
+            "mercator": {
+              "ecuador_y": 820.2,
+              "escala": 551.2
+            }
+          }
+        },
+        "cuadros": [
+          "estante",
+          "brujula"
+        ]
       },
+      "camara": [],
       "audio": {
         "musica": {
-          "archivo": "s06-la-deuda.mp3",
-          "nivel": 0.4
+          "archivo": "s08-aprender-a-medir.mp3",
+          "nivel": 0.29
         },
         "ambientes": [
           {
-            "nombre": "mar",
-            "nivel": 0.7,
-            "hasta_beat": "flecha"
-          },
-          {
-            "nombre": "cuarto",
-            "nivel": 0.5,
-            "desde_beat": "flecha"
+            "nombre": "ciudad",
+            "nivel": 0.55
           }
         ],
         "duck_db": -15
       },
-      "estado_musica": "presente (tensión) → el acorde sin resolver queda solo después de la pregunta",
-      "camara": [
-        {
-          "beat": "hoja_zoom",
-          "movimiento": "entra a la ilustración de la página hasta llenar la pantalla",
-          "motivo": "«el siglo diecinueve»: del libro al grabado de las islas, sin bucle (DIRECCION_DE_VIDEO §2.12)"
-        },
-        {
-          "beat": "flecha",
-          "movimiento": "sigue al barco: se acerca y lo lleva a la izquierda mientras aparece el Estado a la derecha",
-          "motivo": "«Y una deuda que el Estado decidió pagar con esa plata»: del guano al Estado sin corte (revisión del director: el salto era brusco)"
-        },
-        {
-          "beat": "vales",
-          "movimiento": "paneo a la izquierda siguiendo la flecha de la plata, del Estado a los vales",
-          "motivo": "«una deuda que el Estado decidió pagar con esa plata»: la plata va a los vales; paneo antes que corte (§2.11)"
-        }
-      ],
+      "estado_musica": "presente (Suno F, continuación de s05) → el tema del canal entra con «aquella tesis»",
       "beats_ajustados": true
     },
     {
       "id": "s07",
       "seccion": "cierre",
       "componente": "Cierre",
-      "duracion_s": 5.65,
+      "duracion_s": 7.63,
       "cola_s": 11,
       "intensidad": 1,
       "cambio": "del caso abierto a la promesa del próximo episodio",
@@ -878,7 +1069,7 @@
       "beats": {
         "cerrar": 0.3,
         "negro": 2.3,
-        "tarjeta": 2.8
+        "tarjeta": 2.78
       },
       "props": {
         "limpiar": false,
@@ -886,7 +1077,8 @@
         "proximo": {
           "etiqueta": "Próximo",
           "anio": "1850",
-          "titulo": "La deuda defraudada"
+          "titulo": "La deuda defraudada",
+          "destacar": "titulo"
         },
         "laminas": {
           "carpeta": "vectorcraft/tanda05-carpeta-v2.json"
@@ -896,7 +1088,7 @@
         "musica": {
           "archivo": "s07-tema.mp3",
           "nivel": 0.55,
-          "antes_s": 3.45,
+          "antes_s": 6.18,
           "entrada_s": 2
         },
         "ambientes": [

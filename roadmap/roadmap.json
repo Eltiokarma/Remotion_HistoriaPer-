@@ -1,6 +1,6 @@
 {
   "titulo": "Roadmap del laboratorio y la base de producción",
-  "actualizado": "2026-11-19",
+  "actualizado": "2026-11-20",
   "notas": [
     "Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.",
     "Tiempo humano y tokens: null = desconocido (no medido). No se estiman.",
@@ -1396,6 +1396,35 @@
         "historia/videos/001-el-hombre/narracion.json",
         "historia/videos/001-el-hombre/narracion_tiempos.json",
         "historia/scripts/narracion.py"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-montaje-v5",
+      "fase": "e1",
+      "titulo": "Montaje del 0·1 sobre la voz v5: orden nuevo, s08, beats anclados a palabras",
+      "entregable": "escenas.json con s06 antes de s05 y la escena nueva s08 (AprenderAMedir con `cuadros`); beats anclados con scripts/anclar_beats.py y anclas.json; tarjeta de la versión de entonces con su tachón (MecanismoDeuda `version`); título grande en la tarjeta de cierre; `npm run validar` sin errores y escaleta de 5:59. Falta: música de s01, s04, s05 y s08 vuelta a montar en la laptop (Suno), el barco que zarpa (con las capas de ChatGPT) y la revisión de Gerson a velocidad real",
+      "estado": "en_curso",
+      "depende_de": [
+        "e1-voz-v4"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-20",
+        "fin": null
+      },
+      "bloqueo": "La música de s01, s04, s05 y s08 se vuelve a montar con las pistas de Suno, que están solo en la laptop.",
+      "evidencia": [
+        "historia/videos/001-el-hombre/escenas.json",
+        "historia/videos/001-el-hombre/anclas.json",
+        "historia/scripts/anclar_beats.py",
+        "historia/videos/001-el-hombre/diseno/diseno-y-animacion-2026-11-19.md",
+        "historia/videos/001-el-hombre/escaleta.md"
       ],
       "tiempo": {
         "humano_min": null,

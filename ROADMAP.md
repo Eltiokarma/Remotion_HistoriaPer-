@@ -2,7 +2,7 @@
 
 <!-- GENERADO por roadmap/generar.mjs a partir de roadmap/roadmap.json. No editar a mano: editar el JSON y regenerar. -->
 
-Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
+Actualizado: **2026-11-20**. Fuente única: [`roadmap/roadmap.json`](roadmap/roadmap.json). Para cambiar algo, se edita el JSON y se corre `node roadmap/generar.mjs` (la CI comprueba que este archivo coincida).
 
 - Fechas `prevista` con origen «propuesta» las propuso el agente y esperan que Gerson las confirme; no son compromisos.
 - Tiempo humano y tokens: null = desconocido (no medido). No se estiman.
@@ -12,7 +12,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **31** · 🔄 en curso: **9** · ⏳ pendiente: **5** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **31** · 🔄 en curso: **10** · ⏳ pendiente: **5** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -23,6 +23,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `f5-laptop` Repetir la tanda 1 en la laptop de render: Lo corre Gerson en su máquina (el agente no tiene acceso a ella).
 - `f5-pc` Repetir la tanda 1 en la PC objetivo: La PC objetivo no está disponible.
 - `e1-voz-v4` Narración v5: guion versión 3.1 con «Joder Jolines» (eleven_v4), oraciones de 10 palabras o más: La voz nueva está generada, pero escenas.json todavía tiene los beats y duraciones de la voz anterior: no renderizar hasta re-anclarlos.
+- `e1-montaje-v5` Montaje del 0·1 sobre la voz v5: orden nuevo, s08, beats anclados a palabras: La música de s01, s04, s05 y s08 se vuelve a montar con las pistas de Suno, que están solo en la laptop.
 - `e1-musica` Musicalización con Suno (motivo de Quiroz, ocho pistas): Música de Suno integrada de s00 a s06 (2026-11-10); s07 conserva el tema sintetizado. Falta la escucha de Gerson y los enlaces de Suno en fuentes.md.
 - `e2-recursos-escena01` Recursos vectoriales de la escena 1 «Las islas y el país» (objetos SVG para personajes PNG): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-recursos-escena02` Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
@@ -84,7 +85,7 @@ gantt
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
-Sin fecha (21): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (🔄 en curso), `e1-voz-v4` (🔄 en curso), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso).
+Sin fecha (22): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (🔄 en curso), `e1-voz-v4` (🔄 en curso), `e1-montaje-v5` (🔄 en curso), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso).
 
 ## Tareas
 
@@ -424,6 +425,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: La voz nueva está generada, pero escenas.json todavía tiene los beats y duraciones de la voz anterior: no renderizar hasta re-anclarlos.
   - Evidencia: [001-el-hombre/narracion.json](historia/videos/001-el-hombre/narracion.json) · [001-el-hombre/narracion_tiempos.json](historia/videos/001-el-hombre/narracion_tiempos.json) · [scripts/narracion.py](historia/scripts/narracion.py)
+- [ ] **Montaje del 0·1 sobre la voz v5: orden nuevo, s08, beats anclados a palabras** `e1-montaje-v5` — 🔄 en curso
+  - Entregable: escenas.json con s06 antes de s05 y la escena nueva s08 (AprenderAMedir con `cuadros`); beats anclados con scripts/anclar_beats.py y anclas.json; tarjeta de la versión de entonces con su tachón (MecanismoDeuda `version`); título grande en la tarjeta de cierre; `npm run validar` sin errores y escaleta de 5:59. Falta: música de s01, s04, s05 y s08 vuelta a montar en la laptop (Suno), el barco que zarpa (con las capas de ChatGPT) y la revisión de Gerson a velocidad real
+  - Depende de: `e1-voz-v4`
+  - Prevista: — · Real: 2026-11-20 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Bloqueo: La música de s01, s04, s05 y s08 se vuelve a montar con las pistas de Suno, que están solo en la laptop.
+  - Evidencia: [001-el-hombre/escenas.json](historia/videos/001-el-hombre/escenas.json) · [001-el-hombre/anclas.json](historia/videos/001-el-hombre/anclas.json) · [scripts/anclar_beats.py](historia/scripts/anclar_beats.py) · [diseno/diseno-y-animacion-2026-11-19.md](historia/videos/001-el-hombre/diseno/diseno-y-animacion-2026-11-19.md) · [001-el-hombre/escaleta.md](historia/videos/001-el-hombre/escaleta.md)
 - [ ] **Musicalización con Suno (motivo de Quiroz, ocho pistas)** `e1-musica` — 🔄 en curso
   - Entregable: Pistas de Suno recortadas a los beats en public/videos/001-el-hombre/musica/, escenas.json y fuentes.md actualizados, audio de prueba del episodio
   - Prevista: — · Real: 2026-11-10 → …

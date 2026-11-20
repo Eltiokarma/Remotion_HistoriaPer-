@@ -1,0 +1,181 @@
+{
+  "_nota": "Cada beat con la palabra del guion versión 3.1 en que cae (scripts/anclar_beats.py). «en»: al empezar; «tras»: al terminar la última palabra; «mas»: segundos de más (o de menos); «fijo»: segundo fijo, sin voz. Las palabras se escriben como suenan (cifras en letras) y sin tener que repetir tildes ni mayúsculas. Diseño: diseno/diseno-y-animacion-2026-11-19.md, tabla de anclas y actualización v5.",
+  "s00": {
+    "anio": "durante casi",
+    "rojo": "tres y el cuatro",
+    "soles": "comparado con",
+    "caen": "tres o",
+    "cuatro": "o cuatro de cada",
+    "sueltos": "casos sueltos",
+    "sistema": "sistémica",
+    "colonia": "colonia",
+    "calculo": "todo eso",
+    "libro": "no llegó a ver"
+  },
+  "s01": {
+    "ficha": {
+      "en": "en nueva york"
+    },
+    "correcciones": "revisa con minuciosidad",
+    "cita": "agradecimientos",
+    "subrayado": "alargar estos días",
+    "abajo": "unas líneas más abajo",
+    "muerte": "murió",
+    "fecha": {
+      "tras": "cincuenta y seis años",
+      "mas": 0.3
+    },
+    "linea": {
+      "tras": "cincuenta y seis años",
+      "mas": 3.1
+    },
+    "recorre": {
+      "tras": "cincuenta y seis años",
+      "mas": 3.8
+    },
+    "mayo": "mayo",
+    "final": {
+      "tras": "después de su muerte",
+      "mas": 0.3
+    },
+    "hombre": "ese hombre",
+    "encontro": "lo que encontró"
+  },
+  "s02": {
+    "nombre": "alfonso",
+    "lugar": "lima",
+    "piscina": "nadador",
+    "ficha": "marcos cueto",
+    "frenar": "en la piscina",
+    "renglon": "archivos",
+    "palabra": "inagotable"
+  },
+  "s03": {
+    "sello": "universidad católica",
+    "primeros": "primeros puestos",
+    "afiches": "el perú vivía",
+    "afiche1": "reforma agraria",
+    "afiche2": "nacionalizaciones",
+    "afiche3": "un discurso",
+    "volante": "nunca apoyó",
+    "leer": "militó",
+    "vuelve": "para un estudiante",
+    "acerca": "le hacía una pregunta",
+    "esquina": {
+      "en": "o repetía",
+      "mas": -1.0
+    },
+    "despegue": "o repetía"
+  },
+  "s04": {
+    "clase": "un curso de",
+    "braudel": "fernand braudel",
+    "capas": "braudel decía",
+    "capa1": "arriba están",
+    "capa2": "más abajo",
+    "capa3": "y al fondo",
+    "bajar": {
+      "tras": "casi no se mueve",
+      "mas": 0.2
+    },
+    "palabra": "larga duración",
+    "subir": "según cueto",
+    "realce": "las estructuras",
+    "remate": "hay cosas"
+  },
+  "s06": {
+    "islas": {
+      "fijo": 0.2
+    },
+    "hoja_entra": {
+      "fijo": 0.3
+    },
+    "ficha_lugar": "en lima",
+    "hojea": "félix",
+    "ficha_nombre": {
+      "en": "félix",
+      "mas": 0.8
+    },
+    "hoja_pagina": "siglo",
+    "hoja_zoom": {
+      "en": "siglo",
+      "mas": 0.4
+    },
+    "sacos": {
+      "tras": "estaba el guano",
+      "mas": 0.3
+    },
+    "version": "toda esa riqueza",
+    "flecha": "el estado decidió",
+    "vales": "una deuda vieja",
+    "consolidacion": {
+      "tras": "propio país",
+      "mas": 0.25
+    },
+    "tacha": "pero en su tesis",
+    "hallazgo": "algunos inflaron",
+    "pregunta": {
+      "en": "dónde fue a parar",
+      "mas": -0.35
+    },
+    "musica": {
+      "tras": "pagó por esa deuda",
+      "mas": -30.25
+    }
+  },
+  "s05": {
+    "mapa": {
+      "fijo": 0.2
+    },
+    "paris": "parís",
+    "paris_notas": "algunos de los profesores",
+    "duda": {
+      "en": "él en cambio",
+      "mas": -0.75
+    },
+    "sale": "se va a nueva",
+    "llega": {
+      "en": "se va a nueva",
+      "mas": 2.6
+    },
+    "abre": {
+      "en": "se va a nueva",
+      "mas": 3.25
+    },
+    "ficha": "herbert klein",
+    "puntos": "historia cuantitativa",
+    "discursos": "discursos",
+    "regresion": "regresión",
+    "caen": "imagina muchos",
+    "observacion": "una observación",
+    "recta": "la línea que pasa",
+    "residuos": "más cerca posible",
+    "tendencia": "una tendencia",
+    "pendiente": "la inclinación",
+    "causalidad": "aprende a trabajar",
+    "serie": "años después",
+    "balanza": "kenneth maxwell",
+    "profundidad": "profundidad",
+    "claridad": "claridad"
+  },
+  "s08": {
+    "estante": {
+      "fijo": 0.0
+    },
+    "temas": "la máxima autoridad",
+    "brujula": "sus ideas políticas",
+    "izquierda": "joven trotskista",
+    "giro": "postura liberal",
+    "tiza": "no da por cerradas",
+    "frase": "provisionales"
+  },
+  "s07": {
+    "cerrar": {
+      "fijo": 0.3
+    },
+    "negro": {
+      "fijo": 2.3
+    },
+    "tarjeta": "el próximo episodio"
+  }
+}

@@ -598,3 +598,12 @@ los tiempos de cada capa a los beats nuevos y se vuelve a correr.
 Las pistas de Suno van en `public/videos/001-el-hombre/musica/suno/` (fuera de git). Sin un ffmpeg completo en el
 PATH, el montador funciona con el que trae Remotion (`node_modules/@remotion/compositor-*`): decodifica por un WAV
 temporal y mide la sonoridad con su propio cálculo BS.1770 (comprobado: s02 rearmado queda a 0,03 dB del original).
+
+## Montaje sobre la voz v5 (2026-11-20)
+
+Sin las pistas de Suno en esta máquina (`musica/suno/`, fuera de git), solo se movió lo que no necesita volver a montar:
+
+- **s06 (G):** `desde_beat: "musica"`. El beat `musica` está anclado en `anclas.json` a 30,25 s antes del final de «…pagó por esa deuda»: así el acorde final del archivo (31,25 s del archivo) cae ~0,5 s después de la pregunta.
+- **s07 (tema):** `antes_s: 6.18`, para que entre con «aquella tesis» (ahora en s08).
+- **s08 (nueva, F):** `s08-aprender-a-medir.mp3` es provisional: la cola de `s05-aprender-a-medir.mp3` desde donde termina s05 (70,25 s), es decir, la misma pista que sigue sin corte. Se acaba unos segundos antes del tema.
+- **Falta, en la laptop:** volver a correr `montar_musica.py` en s01 (B en `final`), s04 (capas en sus beats nuevos) y s05; después, cortar s08 desde la s05 nueva (el mismo corte: desde `duracion_s + cola_s` de s05).
