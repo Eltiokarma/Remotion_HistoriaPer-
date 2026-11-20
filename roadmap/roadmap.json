@@ -1507,6 +1507,33 @@
         "render_s": null,
         "maquina": null
       }
+    },
+    {
+      "id": "e2-animatic-s03",
+      "fase": "e2",
+      "titulo": "Animatic de la escena 3 del 0·2 sobre la voz real, en tres versiones (A cámara quieta, B + momento reservado, C + respiros)",
+      "entregable": "historia/laboratorio/muestras/16-animatic-novoa/ (código, README, INFORME, resultados/hoja.jpg y render-*.json); MP4 fuera de git en laboratorio/out/16-animatic-novoa/",
+      "estado": "en_curso",
+      "depende_de": [
+        "e2-storyboard-adaptado",
+        "e2-narracion"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-20",
+        "fin": null
+      },
+      "bloqueo": "Falta que Gerson compare A, B y C y elija el tratamiento de la cifra y de los respiros.",
+      "evidencia": [
+        "historia/laboratorio/muestras/16-animatic-novoa/INFORME.md",
+        "historia/laboratorio/muestras/16-animatic-novoa/resultados/hoja.jpg"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": 386.5,
+        "maquina": "contenedor"
+      }
     }
   ]
 }

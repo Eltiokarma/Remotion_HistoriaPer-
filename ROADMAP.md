@@ -12,7 +12,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **28** · 🔄 en curso: **10** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **28** · 🔄 en curso: **11** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -29,6 +29,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `e2-guion-locucion` Guion del 0·2 escrito como locución completa, con el criterio del Escribidor Escribano: Tres actas del Escribano aplicadas (la última: 0 altas, 12 medias corregidas); falta el lector en frío y el visto bueno de Gerson, y resolver los [VERIFICAR].
 - `e2-storyboard-adaptado` Storyboard del 0·2 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual: Propuesta del agente: falta la revisión de Gerson, el animatic de la escena 3 para comparar versiones A/B/C, y dibujar las piezas que el storyboard marca como faltantes (pila de vales, línea de 1852, página con huecos, flecha de adelantos, ficha de la abolición, bono y mancha del lavado, barcos en el horizonte).
 - `e2-narracion` Narración del 0·2 con ElevenLabs (Joder Jolines, eleven_v4), con emoción por frase y tiempos reales: Falta que Gerson la escuche (pronunciación de nombres, emoción, ritmo) antes de cuadrar los beats.
+- `e2-animatic-s03` Animatic de la escena 3 del 0·2 sobre la voz real, en tres versiones (A cámara quieta, B + momento reservado, C + respiros): Falta que Gerson compare A, B y C y elija el tratamiento de la cifra y de los respiros.
 
 ## Vista temporal
 
@@ -83,7 +84,7 @@ gantt
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
-Sin fecha (23): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso), `e2-narracion` (🔄 en curso).
+Sin fecha (24): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso), `e2-narracion` (🔄 en curso), `e2-animatic-s03` (🔄 en curso).
 
 ## Tareas
 
@@ -452,6 +453,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Falta que Gerson la escuche (pronunciación de nombres, emoción, ritmo) antes de cuadrar los beats.
   - Evidencia: [002-la-deuda-defraudada/manuscrito.md](historia/videos/002-la-deuda-defraudada/manuscrito.md) · [002-la-deuda-defraudada/narracion_tiempos.json](historia/videos/002-la-deuda-defraudada/narracion_tiempos.json)
+- [ ] **Animatic de la escena 3 del 0·2 sobre la voz real, en tres versiones (A cámara quieta, B + momento reservado, C + respiros)** `e2-animatic-s03` — 🔄 en curso
+  - Entregable: historia/laboratorio/muestras/16-animatic-novoa/ (código, README, INFORME, resultados/hoja.jpg y render-*.json); MP4 fuera de git en laboratorio/out/16-animatic-novoa/
+  - Depende de: `e2-storyboard-adaptado`, `e2-narracion`
+  - Prevista: — · Real: 2026-11-20 → …
+  - Tiempo: H ¿? · A ¿? · R 386.5 s en contenedor · tokens ¿?
+  - Bloqueo: Falta que Gerson compare A, B y C y elija el tratamiento de la cifra y de los respiros.
+  - Evidencia: [16-animatic-novoa/INFORME.md](historia/laboratorio/muestras/16-animatic-novoa/INFORME.md) · [resultados/hoja.jpg](historia/laboratorio/muestras/16-animatic-novoa/resultados/hoja.jpg)
 
 ## Máquinas
 
