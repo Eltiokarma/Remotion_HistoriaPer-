@@ -51,6 +51,21 @@ Lo que funciona y no se toca: contraste de valor papel/madera (205 frente a 90 e
 
 Al armar E3 aparecieron choques nuevos (etiqueta de Echenique fuera del cuadro, etiquetas de lo recibido y del vale encimadas, fichas sobre la carpeta) y se corrigieron solo en las capas E2 y E3, sin tocar A a D.
 
+### Render de E1–E6 (medido)
+
+| Versión | Duración | Render | Archivo |
+|---|---:|---:|---:|
+| E1 | 102,43 s | 358,1 s | 13,2 MB |
+| E2 | 102,43 s | 365,0 s | 13,3 MB |
+| E3 | 102,43 s | 411,3 s | 12,5 MB |
+| E4 | 102,43 s | 600,3 s | 12,5 MB |
+| E5 | 102,43 s | 717,5 s | 12,5 MB |
+| E6 | 102,43 s | 737,8 s | 12,5 MB |
+
+Mismo contenedor y configuración. El costo sube con la física (sombras dobles con `drop-shadow`) y con la tinta (`mix-blend-mode`); en la laptop hay que medirlo antes de elegir. Hoja comparativa: `resultados/versiones-D-E6.jpg`.
+
+Observado en E4 (29–31 s, 57–60 s, 67–68 s): ya no hay papeles semitransparentes ni objetos que se esfuman. Queda un choque nuevo en E3–E6: en 3.5, al volver el folio de Elías junto al vale, su etiqueta queda debajo de la del vale (67,8 s). Se corrige en la versión que se elija.
+
 ## Desconocido
 
 Si la diferencia entre A, B y C se **siente** como se busca: es la pregunta para Gerson. No se probó en la laptop ni a 1080p.

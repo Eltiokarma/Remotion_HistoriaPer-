@@ -1,0 +1,19 @@
+{
+  "fecha": "2026-11-20T19:08:54.536Z",
+  "version": "E2",
+  "maquina": "contenedor",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "hilos": 4,
+  "ram_gb": 16.9,
+  "concurrencia": 4,
+  "escala": 0.5,
+  "ancho": 960,
+  "alto": 540,
+  "fps": 30,
+  "cuadros": 3073,
+  "duracion_s": 102.43,
+  "render_s": 365,
+  "bytes": 13286700,
+  "voz": "Joder Jolines, eleven_v4 (voz/s03.mp3)",
+  "aprobacion_gerson": "pendiente"
+}
