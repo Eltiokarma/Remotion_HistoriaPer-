@@ -216,12 +216,12 @@ El presidente lo da por vencido. Ficha de Echenique; el folio de la respuesta se
 
 ### 3.4 · revelar · 10.5 s · excepción reservada
 
-Días después se aprueba: 948 500 pesos en vales. La mesa se vacía salvo el folio de aprobación, grande. Nada se mueve durante «Días después». La cifra aparece con la voz y se queda sola en el silencio.
+Días después se aprueba: 948 500 pesos en vales. La mesa se vacía durante «Días después» y queda quieta. Con la cifra, el vale entra deslizándose desde la derecha, solo, hasta el centro, y se queda quieto en el silencio. Etiqueta: «NOVOA · VALES APROBADOS».
 
 - **Pantalla:** 948 500 pesos en vales.
 - **Cámara:** quieta.
-- **Efecto:** Excepción reservada: un solo elemento, sin halo, sin deslizamiento; la cifra simplemente está.
-- **Sonido:** Silencio absoluto (2,3 s de voz más 1 s de montaje).
+- **Efecto:** Excepción reservada: un solo papel en cuadro. Entra con peso pesado (como cualquier papel) y no se mueve más; sin halo ni brillo. Decidido por Gerson tras el animatic (versión D del laboratorio 16).
+- **Sonido:** Una hoja al entrar el vale; después, silencio absoluto (2,3 s de voz más 1 s de montaje).
 
 ### 3.5 · comparar · 14.0 s
 

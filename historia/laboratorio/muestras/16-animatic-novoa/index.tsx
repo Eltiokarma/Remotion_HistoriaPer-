@@ -2,7 +2,7 @@ import { Composition, registerRoot } from 'remotion';
 import { Animatic } from './Animatic';
 import { FPS, duracion, type Version } from './linea';
 
-const versiones: Version[] = ['A', 'B', 'C'];
+const versiones: Version[] = ['A', 'B', 'C', 'D'];
 
 const Root = () => (
   <>

@@ -61,23 +61,25 @@
       }
     ],
     "funciona": "Las láminas ya separan bien unidades y cautelas («probablemente», «en vales»), conservan la identidad de los objetos entre estados (el folio de pestaña roja, el vale de marco doble) y tienen enlaces de continuidad entre escenas. Eso se conserva.",
-    "versiones": "A: aplicar solo la cámara quieta por defecto y medir. B: sumar las excepciones reservadas. C: sumar los respiros de montaje y el recorte de rótulos. Comparar A, B y C en el animatic de la escena 3."
+    "versiones": "A: aplicar solo la cámara quieta por defecto y medir. B: sumar las excepciones reservadas. C: sumar los respiros de montaje y el recorte de rótulos. Comparar A, B y C en el animatic de la escena 3. Decisión de Gerson (20 de noviembre de 2026), tras el animatic de la escena 3 (laboratorio 16): versión C, con la entrada del vale de A. Es la versión D del animatic."
   },
   "sistema": {
     "constantes": [
       "Tres espacios con función fija: el lugar (mapa Natural Earth y grabado de islas v3), el mecanismo (pizarra que acumula piezas de papel y tiza, escena 2) y el expediente (mesa de madera en cenital, escenas 3 a 5).",
       "Papel, tinta y fichas a máquina con cuadrito rojo (gramática de la serie). Una ficha nueva por vez. Los objetos y papeles son PNG de ChatGPT en el mismo estilo de grabado que las figuras, sin texto: las cifras, nombres y fechas los rotula Remotion encima.",
       "Cámara quieta mientras se lee o se escucha un dato. Los objetos se mueven; la cámara no, al mismo tiempo.",
-      "Personajes solo donde hay una acción que la voz describe: cargar el guano (s01) y vender, comprar, gestionar y aprobar el reclamo (s02). Son PNG de ChatGPT con aspecto de grabado y representan funciones, no personas. Las personas reales (Castilla, Echenique, Elías, Torrico, Mendiburu) van con ficha a máquina y, si existe, con su retrato de época en dominio público; nunca con una cara inventada."
+      "Personajes solo donde hay una acción que la voz describe: cargar el guano (s01) y vender, comprar, gestionar y aprobar el reclamo (s02). Son PNG de ChatGPT con aspecto de grabado y representan funciones, no personas. Las personas reales (Castilla, Echenique, Elías, Torrico, Mendiburu) van con ficha a máquina y, si existe, con su retrato de época en dominio público; nunca con una cara inventada.",
+      "Todo texto claro sobre el fondo (fichas, etiquetas, rótulos) lleva sombra negra para despegarse del papel y la madera. Decidido por Gerson el 20 de noviembre de 2026.",
+      "Cada documento lleva encima una etiqueta corta con su dueño o responsable y su función («ELÍAS · GESTIÓN», «NOVOA · VALES APROBADOS»): cuando hay tres papeles en la mesa, se sabe de quién es cada uno. Las etiquetas acompañan al papel cuando se mueve. Decidido por Gerson el 20 de noviembre de 2026."
     ],
     "progresion": "La pila de vales: aparece en el gancho, se reduce a un solo vale en la escena 2, se vuelve la cifra de Novoa en la 3, recupera su altura de 24 millones en la 4 (con la marca roja de la junta) y queda con su marca fantasma en la 5. Junto con la pila progresa el rojo de culpa: primero un borde, después la mitad marcada, después la mancha del lavado.",
     "excepciones": [
-      "La cifra de Novoa (s03, frase 11): un solo papel en cuadro, cámara quieta, 2,3 s de silencio absoluto más 1 s de respiro de montaje.",
+      "La cifra de Novoa (s03, frase 11): en «Días después» la mesa se vacía; con la cifra, el vale entra deslizándose solo (peso pesado, como entra cualquier papel) y se queda quieto, sin halo, durante 2,3 s de silencio absoluto más 1 s de respiro de montaje. Decidido por Gerson tras el animatic (versión D).",
       "Los consolidados (s04, frase 7): la palabra del episodio a pantalla completa, quieta, sin música, con 2,5 s más 1 s de montaje. Es la única palabra a pantalla completa (CLAUDE §1.3)."
     ],
     "recorridos": "La cámara se mueve solo cuatro veces con viaje: al lugar (s01), a abrir el tablero completo (s02), de Lima a Londres (s04) y el circuito final (s05). Siempre arranca despacio, viaja y frena (pesado o solemne).",
     "rojo": "Corrector: encerrar, subrayar, tachar. Culpa: el borde de la pila inflada, la mitad marcada por la junta, la mancha del vale lavado. Nada más.",
-    "texto": "Solo lo que la voz no dice (fecha exacta, cifra exacta, nombre completo con cargo, fuente). Excepción declarada: los términos del tablero de la escena 2 (de una a tres palabras) y la pregunta del 003 en la tarjeta. Máximo dos rótulos a la vez.",
+    "texto": "Solo lo que la voz no dice (fecha exacta, cifra exacta, nombre completo con cargo, fuente). Excepción declarada: los términos del tablero de la escena 2 (de una a tres palabras) y la pregunta del 003 en la tarjeta. Máximo dos rótulos a la vez. Las etiquetas de dueño son la otra excepción declarada: nombran a la persona aunque la voz la diga, porque sirven para distinguir papeles.",
     "respiros": "La voz ocupa casi todo el tiempo. Los respiros de montaje (columna «+ s») alargan el video sin tocar la voz: se cortan en las pausas de párrafo, que ya son de 1 s o más."
   },
   "imagenes": {
@@ -791,7 +793,7 @@
           "excepcion": true,
           "respiro": 1,
           "idea": "Días después se aprueba: 948 500 pesos en vales.",
-          "imagen": "La mesa se vacía salvo el folio de aprobación, grande. Nada se mueve durante «Días después». La cifra aparece con la voz y se queda sola en el silencio.",
+          "imagen": "La mesa se vacía durante «Días después» y queda quieta. Con la cifra, el vale entra deslizándose desde la derecha, solo, hasta el centro, y se queda quieto en el silencio. Etiqueta: «NOVOA · VALES APROBADOS».",
           "pantalla": [
             {
               "en": 11,
@@ -802,8 +804,8 @@
           "camara": {
             "tipo": "quieta"
           },
-          "efecto": "Excepción reservada: un solo elemento, sin halo, sin deslizamiento; la cifra simplemente está.",
-          "sonido": "Silencio absoluto (2,3 s de voz más 1 s de montaje).",
+          "efecto": "Excepción reservada: un solo papel en cuadro. Entra con peso pesado (como cualquier papel) y no se mueve más; sin halo ni brillo. Decidido por Gerson tras el animatic (versión D del laboratorio 16).",
+          "sonido": "Una hoja al entrar el vale; después, silencio absoluto (2,3 s de voz más 1 s de montaje).",
           "base": [
             "3D"
           ],
