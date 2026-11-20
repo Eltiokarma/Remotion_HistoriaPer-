@@ -160,3 +160,7 @@ A pedido de Gerson, las imágenes de ChatGPT del 0·1 y del 0·2 viven en una so
 
 - `obj01-06-mar.png`, `obj01-06-islas.png`, `obj01-07-barco.png` y `obj01-08-estado.png`, generadas en el trabajo del 0·1 (fecha y prompts en [diseno/prompts-chatgpt-obj01-06-08.md](diseno/prompts-chatgpt-obj01-06-08.md)). El edificio es una fachada inventada, sin emblemas, que no representa un edificio real. La isla trae un muelle de madera y una rampa: el lote anterior evitó dibujarlos por falta de referencia [VERIFICAR con C, cap. 1, cómo se embarcaba el guano en Chincha hacia 1850, antes de usarlos en primer plano].
 - `obj-08-libro-ley-abierto.png`, regenerado con dos franjas vacías en la página derecha; llegó con fondo blanco y se le quitó el blanco conectado al borde (el papel de las páginas no se tocó).
+
+## Fondos de mesa, archivo y mesa del historiador (20 de noviembre de 2026)
+
+Tres PNG opacos de 1920 × 1080 generados por Gerson con ChatGPT a partir de [prompts-chatgpt-v2.md](diseno/prompts-chatgpt-v2.md) (n.º 1, 3 y 4): `fondo-mesa-expediente.png`, `fondo-archivo.png` y `fondo-mesa-historiador.png`, en la galería única. Son ambientes inventados: no reproducen el despacho, el archivo ni el escritorio reales de nadie, y la mesa del historiador no es la de Quiroz (el montaje rotula el cambio de época). Prueba de lectura sobre la mesa en `diseno/pruebas/3.5-mesa-y-cifra.jpg`.

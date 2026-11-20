@@ -140,9 +140,11 @@
           "base": [
             "4A.1"
           ],
-          "falta": "Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).",
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -171,6 +173,9 @@
           "respiro": 0.5,
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -197,6 +202,9 @@
           ],
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -226,6 +234,9 @@
           ],
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         }
       ]
@@ -692,10 +703,13 @@
           "piezas": [
             "diseno/recursos-escena03/svg/3a-lo-que-pedia/3a-hacienda.svg"
           ],
-          "falta": "Ficha de la abolición (pieza nueva). Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).",
+          "falta": "Ficha de la abolición (pieza nueva).",
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-abierta.png",
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -729,6 +743,9 @@
           ],
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -758,6 +775,9 @@
           ],
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -788,6 +808,9 @@
           ],
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -818,6 +841,9 @@
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -846,6 +872,9 @@
           ],
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -866,6 +895,9 @@
           "sonido": "Ninguno nuevo.",
           "base": [
             "3F"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         }
       ]
@@ -897,10 +929,13 @@
           "base": [
             "4A.1"
           ],
-          "falta": "Línea de 1852 con las dos marcas. Fondo de la estantería del archivo (prompts-chatgpt-v2.md, n.º 3).",
+          "falta": "Línea de 1852 con las dos marcas.",
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png",
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-archivo.png"
           ]
         },
         {
@@ -997,6 +1032,9 @@
           ],
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-11-pagina-periodico.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -1026,6 +1064,9 @@
           ],
           "piezas": [
             "diseno/storyboard-visual/revision-investigacion/capas/doble-funcion-elias.svg"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -1061,6 +1102,9 @@
           ],
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-archivo.png"
           ]
         },
         {
@@ -1086,6 +1130,9 @@
           "sonido": "Sello; roce de las fichas al salir.",
           "base": [
             "4E.2"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -1147,6 +1194,9 @@
           ],
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         }
       ]
@@ -1189,6 +1239,9 @@
           ],
           "piezas": [
             "diseno/storyboard-visual/revision-metodo/capas/quienes-quedaron-fuera.svg"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
           ]
         },
         {
@@ -1212,12 +1265,14 @@
             "5B.1",
             "5B.2"
           ],
-          "falta": "Fondo de la mesa del historiador (prompts-chatgpt-v2.md, n.º 4).",
           "objetos": [
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png",
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-11-pagina-periodico.png",
             "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-historiador.png"
           ]
         },
         {
@@ -1247,6 +1302,9 @@
           ],
           "piezas": [
             "diseno/storyboard-visual/revision-metodo/capas/libro-de-quiroz.svg"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-historiador.png"
           ]
         }
       ]

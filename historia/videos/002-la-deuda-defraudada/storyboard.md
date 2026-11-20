@@ -20,7 +20,6 @@ La deuda reconocida crece casi cinco veces en un año. Sobre las pruebas de impr
 - **Cámara:** quieta.
 - **Efecto:** La pila crece con peso pesado, de una vez, y asienta (impacto de papel 0,025). Nada más se mueve.
 - **Sonido:** Papel; un golpe grave cuando la pila termina de crecer. Sin música.
-- **Falta:** Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).
 
 ### 0.2 · marcar · 12.3 s
 
@@ -195,7 +194,7 @@ Un caso real: qué reclamaba Novoa, y cómo. La carpeta se abre: folio de la sol
 - **Cámara:** quieta.
 - **Efecto:** El renglón entra sin efecto; la música sale con él.
 - **Sonido:** Sin música en el renglón de las personas esclavizadas.
-- **Falta:** Ficha de la abolición (pieza nueva). Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).
+- **Falta:** Ficha de la abolición (pieza nueva).
 
 ### 3.2 · presentar · 17.3 s
 
@@ -265,7 +264,7 @@ Novoa fue uno de muchos: la pila del gancho, ahora con su causa. Vuelve la pila 
 - **Cámara:** quieta.
 - **Efecto:** Expedientes que se apilan con peso; la pila crece igual que en el gancho (mismo movimiento: el espectador lo reconoce).
 - **Sonido:** Papel; el mismo golpe grave del gancho.
-- **Falta:** Línea de 1852 con las dos marcas. Fondo de la estantería del archivo (prompts-chatgpt-v2.md, n.º 3).
+- **Falta:** Línea de 1852 con las dos marcas.
 
 ### 4.2 · nombrar · 24.2 s · excepción reservada
 
@@ -363,7 +362,6 @@ Este caso se reconstruye porque dejó papeles. Sobre la mesa del historiador vue
 - **Cámara:** recorrido (El circuito final: abrir de la mesa a todos los papeles del episodio, una sola vez, y quedarse.).
 - **Efecto:** Objetos conocidos, sin presentación nueva; cada uno asienta.
 - **Sonido:** Una hoja por objeto.
-- **Falta:** Fondo de la mesa del historiador (prompts-chatgpt-v2.md, n.º 4).
 
 ### 5.3 · abrir · 19.0 s
 

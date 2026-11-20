@@ -15,7 +15,7 @@ Cada prompt es autosuficiente. Conviene abrir un chat por imagen y **adjuntar co
 
 Ilustración dibujada a mano con contorno de tinta fino; color de lápiz y acuarela con grano de papel y sombreado en trazos, como un grabado coloreado; colores cálidos y apagados (crudo, ocre, terracota, verde azulado, marrón); luz suave desde arriba a la izquierda. Formato horizontal 16:9, al menos 1920 × 1080. Sin personas, sin texto, sin marco, sin firmas.
 
-## 1. Mesa del expediente, vista desde arriba · escenas 0, 3, 4 y 5 · prioridad alta
+## 1. Mesa del expediente, vista desde arriba · escenas 0, 3, 4 y 5 · HECHO (20 de noviembre de 2026)
 
 Es el espacio constante del caso: sobre ella se ponen la carpeta de Novoa, los folios, las fichas y la pila de vales. Tiene que quedar **vacía y tranquila**, con el centro despejado.
 
@@ -37,7 +37,7 @@ Usa la imagen adjunta como base y conserva exactamente su composición, su luz, 
 Cambio único: en el horizonte, sobre el mar, dos o tres veleros grandes de mediados del siglo XIX, de tres palos, lejos y pequeños (cada uno ocupa menos del 6 % del ancho), con las velas en parte recogidas, como fondeados o navegando despacio. Sin banderas legibles ni escudos. El cielo un poco más cubierto y el mar un tono más gris que en la referencia, sin tormenta.
 ```
 
-## 3. Estantería del archivo · planos 4.1 y 4.6 · prioridad media
+## 3. Estantería del archivo · planos 4.1 y 4.6 · HECHO (20 de noviembre de 2026)
 
 Donde la carpeta de Novoa vuelve a su estante y donde la junta abre los expedientes. Frontal, para que la pila de vales y las fichas se pongan delante.
 
@@ -47,7 +47,7 @@ Ilustración dibujada a mano con contorno de tinta fino; color de lápiz y acuar
 Vista frontal, a la altura de los ojos, de una estantería de madera de un archivo de gobierno de Lima hacia 1850, que ocupa todo el fondo: cuatro baldas largas con legajos de papel atados con cinta, carpetas de cuero gastado y cajas de cartón, de alturas desiguales, sin rótulos legibles. La balda del medio tiene cuatro huecos vacíos separados entre sí, donde faltan legajos. El tercio inferior del cuadro es el canto de una mesa de madera, vacía. Luz que baja hacia los bordes.
 ```
 
-## 4. Mesa del historiador · planos 5.2 y 5.3 · prioridad media
+## 4. Mesa del historiador · planos 5.2 y 5.3 · HECHO (20 de noviembre de 2026)
 
 Otra época: tiene que distinguirse de un vistazo de la mesa de 1850 (rótulo «Muchos años después» en el montaje). No es el escritorio real de Quiroz.
 

@@ -2,13 +2,16 @@
 
 Generado con `galeria.py`; no se edita a mano. Una sola carpeta para el 0·1 y el 0·2: `public/videos/002-la-deuda-defraudada/imagenes/chatgpt/` (fuera de git por peso; se comparte en zip). Origen, fecha y prompts de cada lote: `fuentes.md`. Nombres: `obj-NN-` objetos y papeles del 0·2, `obj01-NN-` piezas del 0·1, `fondo-`, `textura-`, y el resto personajes.
 
-31 imágenes.
+34 imágenes.
 
 | Archivo | Tipo | Tamaño | Transparencia | Planos del 0·2 |
 |---|---|---|---|---|
 | `comprador-a-toma-folio.png` | Personaje | 1199 × 1312 | sí | 2.6 |
 | `comprador-b-entrega-sobre.png` | Personaje | 1206 × 1304 | sí | 2.6 |
+| `fondo-archivo.png` | Fondo | 1920 × 1080 | no | 4.1, 4.6 |
 | `fondo-limpio-chincha.png` | Fondo | 1672 × 941 | no | 1.3 |
+| `fondo-mesa-expediente.png` | Fondo | 1920 × 1080 | no | 0.1, 0.2, 0.3, 0.4, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 4.4, 4.5, 4.7, 4.9, 5.1 |
+| `fondo-mesa-historiador.png` | Fondo | 1920 × 1080 | no | 5.2, 5.3 |
 | `funcionario-revisa-reclamo.png` | Personaje | 1199 × 1312 | sí | 2.7 |
 | `intermediario-explica-tramite.png` | Personaje | 1199 × 1312 | sí | 2.7 |
 | `obj-01-saco-guano-abierto.png` | Objeto o papel | 1254 × 1254 | sí | 1.3 |
