@@ -32,3 +32,17 @@ Las imágenes quedan fuera de git (`public/videos/*/imagenes/`, `.gitignore`): t
 ## Lo que falta de la lista del 0·1
 
 Pruebas de imprenta (1), página suelta (2), lápiz rojo (3), libro de 2013 (4), libro del siglo XIX cerrado y abierto (5), balanza en piezas (9), brújula en piezas (10), moneda sola (11), lomos y repisa (12) y fichero (13). Los prompts están en [prompts-chatgpt-objetos-001.md](prompts-chatgpt-objetos-001.md).
+
+## Segunda entrega: pruebas de imprenta y libros (20 de noviembre de 2026)
+
+`Video01_pruebas_y_libros_PNG.zip`, con los seis PNG de [prompts-chatgpt-pruebas-y-libros.md](prompts-chatgpt-pruebas-y-libros.md). Los seis tienen canal alfa real, ninguno trae letras legibles y todos caben enteros en su cuadro. Copiados en `public/videos/001-el-hombre/imagenes/chatgpt/`; las pruebas, la página, el lápiz y el libro de 2013, también en la carpeta del 0·2, que abre con ellos.
+
+| Archivo | Veredicto | Observación |
+|---|---|---|
+| obj01-01 · pila de pruebas | Aprobado | Esquina levantada, cantos desiguales, líneas grises ilegibles. Las marcas rojas las pone Remotion. |
+| obj01-02 · página suelta | Aprobado con reparo | La zona en blanco está limpia (papel a 239 de 255), que es lo importante para la cita. Pero sus líneas de arriba son manchas grises borrosas, y las de la pila son líneas finas: de cerca no parecen la misma hoja. Cuando la cámara entra a la página, la cita se compone sobre esa franja y la tapa; si se ven las dos a la vez, pedir de nuevo la página con la pila adjunta («las mismas líneas finas que la hoja de arriba de la pila»). |
+| obj01-03 · lápiz rojo | Aprobado | Rojo terracota del corrector, punta a la derecha. |
+| obj01-04 · libro de 2013 | Aprobado | Tapa y lomo vacíos, como se pidió: no se confunde con la edición del IEP. Remotion escribe título, autor y año en el recuadro. |
+| obj01-05 · libro del siglo XIX, cerrado y abierto | Aprobado con reparo | El recuadro de la página derecha está vacío, listo para la escena de las islas, y las proporciones calzan (tapa de ≈ 695 × 982 px contra páginas de ≈ 673 × 919). Pero el cuero no es el mismo: el cerrado es más oscuro y rojizo (RGB medio 132, 58, 27) que el canto del abierto (148, 81, 48). Al pasar de cerrado a abierto (`hojea`), el salto de color se notaría. Arreglo en el montaje: igualar el cerrado al abierto con un filtro de brillo y tono en Remotion, o pedir de nuevo el cerrado adjuntando el abierto. |
+
+Con esta entrega, de la lista del 0·1 faltan la balanza (9), la brújula (10), la moneda sola (11), los lomos y la repisa (12) y el fichero (13), todos de prioridad media o baja.
