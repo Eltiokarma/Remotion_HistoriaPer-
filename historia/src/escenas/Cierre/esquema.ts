@@ -16,6 +16,11 @@ export const esquema = z.object({
     /** Número grande: el año o el capítulo del próximo episodio. */
     anio: z.string(),
     titulo: z.string(),
+    /**
+     * Qué va grande: el año (por defecto) o el título. Con "titulo", el título grande y el año chico
+     * debajo, entre paréntesis (Gerson, 11/11/2026: «La deuda defraudada» se tiene que sentir).
+     */
+    destacar: z.enum(['anio', 'titulo']).default('anio'),
   }),
 });
 

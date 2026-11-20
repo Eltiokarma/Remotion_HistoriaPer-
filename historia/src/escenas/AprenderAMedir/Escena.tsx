@@ -42,15 +42,18 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const t = frame / fps;
   const pal = video.paleta;
   const b = escena.beats;
+  // con `cuadros`, los cuadros que no van en esta escena no ocurren (sus tiempos son Infinity)
+  const incluye = (c: NonNullable<P['cuadros']>[number]) => !props.cuadros || props.cuadros.includes(c);
+  const C = (c: NonNullable<P['cuadros']>[number], n: string, d: number) => (incluye(c) ? beat(b, n, d) : Infinity);
   const T = (n: string, d: number) => beat(b, n, d);
-  const tMapa = T('mapa', 0.2), tParis = T('paris', 6), tDuda = T('duda', 7.5), tSale = T('sale', 9), tLlega = T('llega', tSale + 3.5);
-  const tAbre = T('abre', tLlega + 0.7), tFicha = T('ficha', tAbre + 1.8);
-  const tPuntos = T('puntos', 16), tRecta = T('recta', 20), tDiscursos = T('discursos', 25), tBalanza = T('balanza', 26);
-  const tProf = T('profundidad', 29), tClar = T('claridad', 31.5), tEstante = T('estante', 33), tTemas = T('temas', 37);
-  const tBrujula = T('brujula', 48.5), tGiro = T('giro', 51);
-  const tAulas = props.aula ? T('aulas', 40.5) : tBrujula; // sin aula, el estante sigue hasta la brújula
+  const tMapa = C('viaje', 'mapa', 0.2), tParis = C('viaje', 'paris', 6), tDuda = C('viaje', 'duda', 7.5), tSale = C('viaje', 'sale', 9), tLlega = C('viaje', 'llega', tSale + 3.5);
+  const tAbre = C('viaje', 'abre', tLlega + 0.7), tFicha = C('viaje', 'ficha', tAbre + 1.8);
+  const tPuntos = C('metodo', 'puntos', 16), tRecta = C('metodo', 'recta', 20), tDiscursos = C('metodo', 'discursos', 25), tBalanza = C('balanza', 'balanza', 26);
+  const tProf = C('balanza', 'profundidad', 29), tClar = C('balanza', 'claridad', 31.5), tEstante = C('estante', 'estante', 33), tTemas = C('estante', 'temas', 37);
+  const tBrujula = C('brujula', 'brujula', 48.5), tGiro = C('brujula', 'giro', 51);
+  const tAulas = props.aula && incluye('aula') ? T('aulas', 40.5) : tBrujula; // sin aula, el estante sigue hasta la brújula
   const explica = props.explicar_regresion;
-  const tCaen = explica ? T('caen', tPuntos + 2) : tPuntos, tPendiente = explica ? T('pendiente', tRecta + 3) : undefined;
+  const tCaen = explica ? C('metodo', 'caen', tPuntos + 2) : tPuntos, tPendiente = explica ? C('metodo', 'pendiente', tRecta + 3) : undefined;
   const noche = mezclar(pal.fondo, '#000000', 0.3);
   const ref = (archivo?: string) => (archivo ? { videoId: video.id, archivo } : undefined);
   const lBalanza = useLamina(ref(props.laminas?.balanza)), lEstante = useLamina(ref(props.laminas?.estante));
@@ -94,6 +97,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
   // con la lámina, la ruta y la latitud son las de la lámina (si no, los tics no caen donde se ve el cruce)
   const rutaL = useMemo(() => (lViaje ? rutaDeLamina(lViaje) : null), [lViaje]);
   const cruces = useMemo(() => PARALELOS.map((p) => {
+    if (!Number.isFinite(tSale) || !Number.isFinite(tLlega)) return Infinity; // sin viaje en esta escena
     for (let tt = tSale; tt <= tLlega; tt += 1 / fps) {
       let lat = -90;
       if (rutaL && refViaje) {
@@ -124,7 +128,7 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
 
   // —— la brújula: gira despacio de una época a la otra y se asienta con un vaivén
   const ladoALado = props.brujula_polos === 'izquierda-derecha';
-  const tIzq = T('izquierda', tBrujula + 1.5), tTiza = props.brujula_frase ? T('tiza', Infinity) : Infinity, tFrase = props.brujula_frase ? T('frase', tTiza + 2) : Infinity;
+  const tIzq = C('brujula', 'izquierda', tBrujula + 1.5), tTiza = props.brujula_frase ? C('brujula', 'tiza', Infinity) : Infinity, tFrase = props.brujula_frase ? C('brujula', 'frase', tTiza + 2) : Infinity;
   const giro = tramo(t, tGiro, 4.5, 'solemne');
   // de tope a tope: la aguja va con decisión (acelera), choca con el tope y rebota (lo que llega se pasa y vuelve)
   const DUR_IZQ = 1.1, DUR_DER = 1.5;
@@ -132,8 +136,8 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
     : -90 * tramo(t, tIzq, DUR_IZQ, 'tenso') + asienta(t, tIzq + DUR_IZQ, 7, 14, 6) * (t < tGiro ? 1 : 0)
       + 180 * tramo(t, tGiro, DUR_DER, 'tenso') - asienta(t, tGiro + DUR_DER, 7, 14, 6);
   const tizaK = tramo(t, tTiza, 1.4, 'natural');
-  const tRegresion = props.rotulo_grafico ? T('regresion', Infinity) : Infinity;
-  const tSerie = props.serie ? T('serie', Infinity) : Infinity;
+  const tRegresion = props.rotulo_grafico ? C('metodo', 'regresion', Infinity) : Infinity;
+  const tSerie = props.serie ? C('metodo', 'serie', Infinity) : Infinity;
 
   // —— los libros bajan a la repisa: el resorte se pasaría de la repisa; ese sobrepaso se vuelve
   // aplastamiento contra la madera (comprimir y estirar); al caer, se estiran apenas con la velocidad
@@ -146,12 +150,15 @@ export const AprenderAMedir: React.FC<EscenaProps<P>> = ({ escena, props, video 
     if (t < contacto) return estiraCon(velocidad((tt) => 520 * Math.min(1, caidaLibro(i, tt)), t, fps), 0.05);
     return impacto(t, contacto, 0.06);
   };
-  const fase = t < tPuntos ? 1 : t < tBalanza ? 2 : t < tEstante ? 3 : t < tAulas ? 4 : t < tBrujula ? 5 : 6;
+  // dónde empieza cada cuadro (1–6); los que no van en esta escena, nunca
+  const inicios = [incluye('viaje') ? 0 : Infinity, tPuntos, tBalanza, tEstante, tAulas, tBrujula];
+  // el cuadro de ahora es el último que ya empezó; antes del primero, el primero de la escena (entra desde la noche)
+  const yaEmpezo = inicios.map((x, i) => (x <= t ? i + 1 : 0)).filter(Boolean);
+  const fase = yaEmpezo.length ? yaEmpezo[yaEmpezo.length - 1] : inicios.findIndex(Number.isFinite) + 1;
   // fundido cruzado entre cuadros: el que se va queda debajo hasta que el que llega terminó de entrar
   // (antes el nuevo entraba desde el negro y el cambio se veía como un salto)
   const FUNDE = 0.7;
   const entra = (t0: number) => tramo(t, t0, FUNDE, 'natural');
-  const inicios = [0, tPuntos, tBalanza, tEstante, tAulas, tBrujula]; // dónde empieza cada cuadro (1–6)
   let previa = 0;
   for (let k = fase - 1; k >= 1; k--) if (inicios[k - 1] < inicios[k]) { previa = k; break; }
   const muestra = (k: number) => fase === k || (k === previa && t < inicios[fase - 1] + FUNDE);

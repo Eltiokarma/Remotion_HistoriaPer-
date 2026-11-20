@@ -49,6 +49,12 @@ export const esquema = z.object({
   explicar_regresion: z.boolean().default(false),
   /** A la izquierda del gráfico, un fichero de archivo del que salen los puntos (de dónde vienen los datos). */
   fichero: z.boolean().default(false),
+  /**
+   * Qué cuadros muestra esta escena, en orden: el viaje, el método (la regresión y la serie), la balanza, el
+   * estante, el aula y la brújula. Sin esto, todos (como en el 000). Sirve para partir el método en dos escenas
+   * (001: `s05` con viaje, método y balanza; `s08` con estante y brújula): los cuadros que no van no tienen beats.
+   */
+  cuadros: z.array(z.enum(['viaje', 'metodo', 'balanza', 'estante', 'aula', 'brujula'])).min(1).optional(),
   /** Las dos épocas de la brújula. */
   brujula: z.tuple([z.string(), z.string()]),
   /** "arriba-abajo" (sin lectura política) o "izquierda-derecha": la aguja va de tope a tope (revisión del director). */
@@ -106,6 +112,16 @@ export const beats = {
   frase: '(con brujula_frase) se escribe la frase con tiza',
   regresion: '(con rotulo_grafico) aparece el rótulo del gráfico',
   serie: '(con serie) la nube se va, los puntos viajan a la serie real y se encienden de a uno; después, la banda',
+};
+
+/** Con `cuadros`, qué beats usa cada cuadro (los de los cuadros que no van no hacen falta; lo revisa `validar`). */
+export const beatsPorCuadro = {
+  viaje: ['mapa', 'paris', 'paris_notas', 'duda', 'sale', 'llega', 'abre', 'ficha'],
+  metodo: ['puntos', 'discursos', 'regresion', 'caen', 'recta', 'pendiente', 'serie'],
+  balanza: ['balanza', 'profundidad', 'claridad'],
+  estante: ['estante', 'temas'],
+  aula: ['aulas'],
+  brujula: ['brujula', 'izquierda', 'giro', 'tiza', 'frase'],
 };
 
 /** Como se usa en 000-quiroz. */

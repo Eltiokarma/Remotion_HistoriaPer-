@@ -71,6 +71,9 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   // las fichas del libro (lugar y fecha, nombre): cada una dura hasta que entra la siguiente o la cámara entra al grabado
   const fichasLibro = conLibro ? (props.fichas_libro ?? []).map((f) => ({ texto: f.texto, destacada: f.destacada, desde: beat(b, f.beat, Infinity) })).filter((f) => Number.isFinite(f.desde)) : [];
   const tPregunta = props.pregunta ? beat(b, 'pregunta', Infinity) : Infinity;
+  // la versión de entonces: tarjeta punteada fija en pantalla; el corrector tacha una palabra; se va con la pregunta
+  const tVersion = props.version ? beat(b, 'version', Infinity) : Infinity, tTacha = props.version ? beat(b, 'tacha', Infinity) : Infinity;
+  const kVersion = tramo(t, tVersion, 0.8, 'natural') * (1 - tramo(t, tPregunta - 0.2, 0.5, 'natural'));
   // el hallazgo, sobre la pila: el monto del vale de arriba se infla (ejemplo ilustrativo)
   const tHallazgo = beat(b, 'hallazgo', Infinity);
   const kHallazgo = tramo(t, tHallazgo + 0.3, DUR_INFLADO, 'tenso');
@@ -249,6 +252,25 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       ) : null}
       </AbsoluteFill>
 
+      {/* la versión de entonces, arriba a la derecha (libre en el grabado, sobre el Estado y junto a la pila);
+          punteada porque es una versión; con `tacha`, el rojo del corrector sobre una sola palabra */}
+      {props.version && kVersion > 0 ? (() => {
+        const v = props.version;
+        const i = v.texto.indexOf(v.tachar);
+        return (
+          <div style={{ position: 'absolute', left: 1010, top: 70, width: 840, padding: '18px 26px', opacity: kVersion,
+            transform: `translateY(${10 * (1 - tramo(t, tVersion, 0.8, 'natural'))}px)`,
+            border: `3px dashed ${alfa(pal.fondo, 0.7)}`, background: alfa(pal.papel, 0.88), boxShadow: `0 6px 18px ${alfa('#000000', 0.25)}` }}>
+            <div style={{ fontFamily: fuente.mono, fontSize: 22, letterSpacing: '0.24em', color: alfa(pal.fondo, 0.65) }}>{v.rotulo}</div>
+            <div style={{ fontFamily: fuente.mono, fontSize: 40, letterSpacing: '0.06em', color: pal.fondo, marginTop: 10, lineHeight: 1.2 }}>
+              {v.texto.slice(0, i)}
+              <TrazoRojo k={tramo(t, tTacha, 0.6, 'tenso')} color={pal.rojo} tipo="tachar" grosor={5} semilla="version">{v.tachar}</TrazoRojo>
+              {v.texto.slice(i + v.tachar.length)}
+            </div>
+          </div>
+        );
+      })() : null}
+
       {/* la pregunta que acusa: entra fuerte, palabra por palabra, en el lado vacío (§2.14) */}
       {props.pregunta && t >= tPregunta ? (() => {
         const palabras = props.pregunta.split(' ');
@@ -375,6 +397,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {Array.from({ length: PILA }, (_, i) => <Sfx key={`v${i}`} nombre="hoja" en={tVales + i * props.pila_paso} fps={fps} volumen={0.4} />)}
       {fichasLibro.flatMap((f, j) => f.texto.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`fl${j}-${i}`} nombre={`tecla-${(i % 3) + 1}`} en={f.desde + 0.4 + i / 18} fps={fps} volumen={0.28} />)))}
       <Sfx nombre="sello" en={tConsol + 0.08} fps={fps} volumen={0.85} />
+      {props.version ? <Sfx nombre="lapiz" en={tTacha} fps={fps} volumen={0.3} /> : null}
       {props.pregunta ? <Sfx nombre="golpe" en={tPregunta + 0.15} fps={fps} volumen={0.55} /> : null}
       {props.pregunta ? <Sfx nombre="golpe" en={tPregunta + 0.15 + 0.16 * (props.pregunta.split(' ').length - 1)} fps={fps} volumen={0.6} /> : null}
       {props.paneo ? <Sfx nombre="soplo" en={tVales - 0.7} fps={fps} volumen={0.3} /> : null}

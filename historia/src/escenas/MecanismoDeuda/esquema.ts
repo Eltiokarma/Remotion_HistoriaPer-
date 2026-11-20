@@ -56,6 +56,15 @@ export const esquema = z.object({
    * mientras el grabado se funde con el dibujo del Estado (DIRECCION_DE_VIDEO §2.11).
    */
   sigue_barco: z.boolean().default(false),
+  /**
+   * La versión de entonces, en una tarjeta con borde punteado (es una versión, no un hecho), fija en
+   * pantalla mientras la escena pasa del grabado al Estado y a los vales: entra con el beat `version` y,
+   * con `tacha`, el corrector tacha en rojo solo `tachar` (una palabra del texto). Se va con la pregunta.
+   * En el 001: «LA VERSIÓN DE ENTONCES» / «TODO SE DERROCHÓ EN LUJOS», tachado «TODO» (Quiroz no negó el
+   * derroche: negó que lo explicara todo).
+   */
+  version: z.object({ rotulo: z.string(), texto: z.string(), tachar: z.string() })
+    .refine((v) => v.texto.includes(v.tachar), { message: '`tachar` tiene que ser una parte de `texto`' }).optional(),
   /** La pregunta que acusa, escrita fuerte con el beat `pregunta` (§2.14). */
   pregunta: z.string().optional(),
 });
@@ -86,6 +95,8 @@ export const beats = {
   libro: 'la tesis se vuelve libro',
   titulo: 'se estampa el título en la tapa',
   pregunta: '(con pregunta) la pregunta se escribe fuerte',
+  version: '(con version) entra la tarjeta punteada con la versión de entonces',
+  tacha: '(con version) el corrector tacha en rojo la palabra `tachar`',
 };
 
 /** Como se usa en 000-quiroz. */

@@ -87,7 +87,10 @@ function revisar(carpeta: string): { errores: number; avisos: number } {
       const despues = (b: string) => typeof hasta === 'string' && orden.includes(hasta) && orden.indexOf(b) > orden.indexOf(hasta);
       // con `parte` (una escena partida en dos), solo hacen falta los beats de esa parte
       const parte = (e.props as { parte?: unknown } | undefined)?.parte;
-      const deLaParte = 'partes' in entrada && typeof parte === 'string' ? (entrada.partes as Record<string, string[]>)[parte] : undefined;
+      // con `cuadros` (una lista de los cuadros que muestra la escena), solo los beats de esos cuadros
+      const cuadros = (e.props as { cuadros?: unknown } | undefined)?.cuadros;
+      const deLaParte = 'partes' in entrada && typeof parte === 'string' ? (entrada.partes as Record<string, string[]>)[parte]
+        : 'beatsPorCuadro' in entrada && Array.isArray(cuadros) ? cuadros.flatMap((c) => (entrada.beatsPorCuadro as Record<string, string[]>)[String(c)] ?? []) : undefined;
       const fuera = (b: string) => deLaParte !== undefined && !deLaParte.includes(b);
       for (const b of usados) if (!(b in e.beats) && !que(b).startsWith('(') && !despues(b) && !fuera(b)) avisos.push(`${e.id}: falta el beat "${b}" (${que(b)}); se usa el valor por defecto`);
       for (const b of Object.keys(e.beats)) if (!usados.has(b) && !deAudio.includes(b)) avisos.push(`${e.id}: ${e.componente} no usa el beat "${b}"`);
