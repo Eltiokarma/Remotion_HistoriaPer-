@@ -203,3 +203,25 @@ Total: 5:34 de voz y unos 5:48 con las colas.
 | s07 | Cierre | 7.63 | 11 | 3 |
 
 Total: 5:59 con las colas (`npm run validar`).
+
+## Imágenes de ChatGPT en el prototipo (20 de noviembre de 2026)
+
+Integradas con `src/components/graficos/ObjetosImagen.tsx`, conservando cada animación y cada beat. Las escenas aceptan `imagenes` en sus props; sin ellas siguen con las láminas de vector (el 000 no cambia).
+
+| Escena | Objeto | Archivo (en `public/videos/001-el-hombre/imagenes/chatgpt/`) | Qué pone Remotion encima |
+|---|---|---|---|
+| s00 | Libro de 2013 | `obj01-04-libro-2013.png` | Autor, título y año estampados en el recuadro de la tapa |
+| s01 | Pila de pruebas y lápiz | `obj01-01-pruebas.png`, `obj01-03-lapiz.png` | Las cinco marcas del corrector sobre las líneas grises y la nota «precisar» |
+| s06 | Mar e isla (el grabado, también dentro del libro que se hojea) | `obj01-06-mar.png`, `obj01-06-islas.png` | — |
+| s06 | Barco (anclado y en el viaje al Estado) | `obj01-07-barco.png` | Volteado: la proa mira a Europa; se mece |
+| s06 | Sacos | `obj-02-saco-cerrado.png` (del 0·2) | Cinco sacos van del muelle a la borda con `sacos` |
+| s06 | Estado | `obj01-08-estado.png` | Aparece de abajo arriba; `ESTADO` en la franja del entablamento |
+| s06 | Vales de la pila | `obj-04-vale.png` (del 0·2) | `VALE DE DEUDA`, el sello `1850` y el monto que se infla |
+
+**No integradas, y por qué:**
+- **Libro del siglo XIX:** su recuadro vacío es vertical y el grabado es horizontal (16:9). El acercamiento de cámara termina con el grabado a pantalla completa, así que se queda el libro de vector, que ya tiene la ventana en 16:9. Si se quiere, se pide de nuevo con «un recuadro horizontal, en proporción 16:9».
+- **Página suelta (`obj01-02-pagina.png`):** la página de la cita ya es una hoja a pantalla completa compuesta por Remotion; la imagen no le suma.
+- **Pila de vales (`obj-05-pila-vales.png`):** la pila se arma con siete vales que caen uno por uno; una pila ya hecha no deja ver cómo crece la deuda.
+- **El barco que zarpa (`zarpa`):** todavía no. El barco ya va suelto y volteado, así que es el paso siguiente.
+
+**Para el render final.** Las imágenes están fuera de git (`public/videos/*/imagenes/`, regla del canal). En la laptop tienen que estar en `public/videos/001-el-hombre/imagenes/chatgpt/` con estos nombres; las del 0·2 (saco y vale), copiadas desde su carpeta. El render de GitHub (`render.yml`) no las encuentra: o se suben a git como excepción declarada (27 MB, medido) o el final se renderiza en la laptop.
