@@ -25,7 +25,9 @@ Ilustración dibujada a mano con contorno de tinta fino; color de lápiz y acuar
 Vista cenital, exactamente desde arriba, de la superficie de un escritorio de madera oscura de un despacho de Lima hacia 1850: tablas con veta visible, algo gastadas, un borde de cuero verde oscuro apenas visible en el margen inferior. La superficie ocupa todo el cuadro. Solo en las esquinas, cortados por el borde: arriba a la derecha un tintero de vidrio con una pluma, abajo a la izquierda el canto de un libro cerrado. El centro (dos tercios del cuadro) queda completamente vacío y de tono parejo, para poner papeles encima. Sombra suave de la luz de una ventana, sin manchas fuertes.
 ```
 
-## 2. Las islas con barcos en el horizonte · plano 4.8 · prioridad alta
+## 2. Las islas con barcos en el horizonte · plano 4.8 · RESUELTO SIN GENERAR
+
+Ya no hace falta: se compone con las capas del 0·1 (`obj01-06-mar.png`, `obj01-06-islas.png`) y el barco (`obj01-07-barco.png`) a escala sobre el horizonte. El prompt queda solo como respaldo.
 
 El mismo lugar de la escena 1, cuando la voz dice que barcos ingleses y franceses rondaban las islas. Adjuntar `fondo-limpio-chincha.png` y pedir **la misma composición**.
 

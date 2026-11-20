@@ -66,7 +66,7 @@ Dónde y cuándo: el Perú de 1850, gobierno de Castilla. Mapa de la costa centr
 
 ### 1.2 · mostrar · 10.6 s
 
-Qué es el guano y quién lo compra. El grabado de islas v3: mar, roca cubierta y aves. Nada más.
+Qué es el guano y quién lo compra. La isla en dos capas (mar y cielo detrás; isla, guano y aves delante): las aves y el mar se mueven, la roca no. Nada más.
 
 - **Pantalla:** sin rótulos.
 - **Cámara:** quieta.
@@ -146,13 +146,12 @@ El vale es una promesa de pago con intereses, y se puede vender. La reclamante r
 
 ### 2.5 · señalar · 10.2 s
 
-La ley tenía dos huecos. El libro de la ley vuelve al centro; el corrector encierra en rojo dos renglones casi vacíos.
+La ley tenía dos huecos. El libro de la ley (obj-08) vuelve al centro; el corrector encierra en rojo las dos franjas vacías de la página derecha.
 
 - **Pantalla:** sustento; traspaso.
 - **Cámara:** quieta.
 - **Efecto:** Dos círculos de corrector, uno por cada hueco, con la voz.
 - **Sonido:** Pluma.
-- **Falta:** El libro (obj-08) trae una franja con texto en vez de dos renglones vacíos: regenerarlo o tapar dos renglones con la textura del papel.
 
 ### 2.6 · comparar · 16.1 s
 
@@ -325,13 +324,12 @@ Se suspende el pago; los principales ya se habían ido. Cae el sello de la suspe
 
 ### 4.8 · presionar · 20.9 s
 
-Los tenedores protestan, y Gran Bretaña y Francia los respaldan. Una mano sostiene un vale (el traspaso de 4A.2, un solo cuadro). Con 25, vuelven las islas de s01 con barcos en el horizonte. Vivanco queda solo en la voz.
+Los tenedores protestan, y Gran Bretaña y Francia los respaldan. Una mano sostiene un vale (el traspaso de 4A.2, un solo cuadro). Con 25, vuelve la isla de s01 con las mismas capas, ahora con dos veleros chicos en el horizonte (el barco de s01 a escala, sin banderas). Vivanco queda solo en la voz.
 
 - **Pantalla:** sin rótulos.
 - **Cámara:** quieta.
 - **Efecto:** Los barcos apenas se mueven; el mar sigue con su fase.
 - **Sonido:** El mar de s01, más grave; la música en tensión.
-- **Falta:** Barcos en el horizonte de islas v3 (reutilizar el barco de 1c, a escala). Fondo de las islas con barcos (prompts-chatgpt-v2.md, n.º 2).
 
 ### 4.9 · restaurar · 34.3 s
 

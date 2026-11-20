@@ -142,7 +142,7 @@
           ],
           "falta": "Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).",
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-05-pila-vales.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
           ]
         },
         {
@@ -170,7 +170,7 @@
           ],
           "respiro": 0.5,
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-05-pila-vales.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
           ]
         },
         {
@@ -196,7 +196,7 @@
             "4E.3"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-05-pila-vales.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
           ]
         },
         {
@@ -225,7 +225,7 @@
             "5B.1"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-05-pila-vales.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
           ]
         }
       ]
@@ -275,7 +275,7 @@
           ],
           "verbo": "mostrar",
           "idea": "Qué es el guano y quién lo compra.",
-          "imagen": "El grabado de islas v3: mar, roca cubierta y aves. Nada más.",
+          "imagen": "La isla en dos capas (mar y cielo detrás; isla, guano y aves delante): las aves y el mar se mueven, la roca no. Nada más.",
           "pantalla": [],
           "camara": {
             "tipo": "quieta"
@@ -284,6 +284,10 @@
           "sonido": "Aves y oleaje.",
           "base": [
             "1A"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj01-06-islas.png"
           ]
         },
         {
@@ -308,15 +312,16 @@
           ],
           "falta": "Pala ya está en la figura; el saco es obj-01 y obj-02; el embarque con el barco de 1c. Sin rótulo sobre las figuras: su aspecto no documenta su condición. Trabajadores de distintos orígenes al fondo, si Gerson lo aprueba (prompts-chatgpt-v2.md, n.º 5).",
           "personajes": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/fondo-limpio-chincha.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-1b-vierte-guano.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-2a-sujeta-saco.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-2b-levanta-saco.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-01-chincha/trabajador-2c-transporta-saco.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/fondo-limpio-chincha.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/trabajador-1b-vierte-guano.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/trabajador-2a-sujeta-saco.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/trabajador-2b-levanta-saco.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/trabajador-2c-transporta-saco.png"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-01-saco-guano-abierto.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-02-saco-guano-cerrado.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-01-saco-guano-abierto.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-02-saco-guano-cerrado.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj01-07-barco.png"
           ]
         },
         {
@@ -361,13 +366,11 @@
           "base": [
             "1D.1"
           ],
-          "piezas": [
-            "diseno/recursos-escena01/svg/1d-estado-y-reclamos/1d-edificio-estado.svg"
-          ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-07-carpeta-cerrada.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-07-carpeta-abierta.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-03-folio-reclamo-pestana-roja.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj01-08-estado.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-abierta.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png"
           ]
         }
       ]
@@ -409,8 +412,8 @@
             "diseno/recursos-escena02/svg/2a-retomar/2a-llave-agrupadora.svg"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-09-folio-sencillo.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-03-folio-reclamo-pestana-roja.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png"
           ]
         },
         {
@@ -446,8 +449,8 @@
           ],
           "respiro": 1,
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-08-libro-ley-abierto.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-03-folio-reclamo-pestana-roja.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-08-libro-ley-abierto.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png"
           ]
         },
         {
@@ -477,6 +480,9 @@
           ],
           "piezas": [
             "diseno/storyboard-visual/revision-metodo/capas/finalidad-del-credito.svg"
+          ],
+          "objetos": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj01-08-estado.png"
           ]
         },
         {
@@ -504,11 +510,11 @@
             "2C"
           ],
           "personajes": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/reclamante-recibe-vale.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/reclamante-recibe-vale.png"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-04-vale.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-12-monedas.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-12-monedas.png"
           ]
         },
         {
@@ -519,7 +525,7 @@
           ],
           "verbo": "señalar",
           "idea": "La ley tenía dos huecos.",
-          "imagen": "El libro de la ley vuelve al centro; el corrector encierra en rojo dos renglones casi vacíos.",
+          "imagen": "El libro de la ley (obj-08) vuelve al centro; el corrector encierra en rojo las dos franjas vacías de la página derecha.",
           "pantalla": [
             {
               "en": 11,
@@ -540,10 +546,9 @@
           "base": [
             "2A"
           ],
-          "falta": "El libro (obj-08) trae una franja con texto en vez de dos renglones vacíos: regenerarlo o tapar dos renglones con la textura del papel.",
           "respiro": 1,
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-08-libro-ley-abierto.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-08-libro-ley-abierto.png"
           ]
         },
         {
@@ -581,14 +586,14 @@
             "diseno/recursos-escena02/svg/2d-compra/2d-tiza-valor-reconocido.svg"
           ],
           "personajes": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/reclamante-a-ofrece-folio.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/comprador-a-toma-folio.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/comprador-b-entrega-sobre.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/reclamante-b-recibe-pago.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/reclamante-a-ofrece-folio.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/comprador-a-toma-folio.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/comprador-b-entrega-sobre.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/reclamante-b-recibe-pago.png"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-03-folio-reclamo-pestana-roja.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-06-sobre-pago.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-06-sobre-pago.png"
           ]
         },
         {
@@ -620,8 +625,8 @@
           ],
           "respiro": 1,
           "personajes": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/intermediario-explica-tramite.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/escena-02-pizarra/funcionario-revisa-reclamo.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/intermediario-explica-tramite.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/funcionario-revisa-reclamo.png"
           ],
           "falta": "Nada nuevo. Ojo: el intermediario de ejemplo no debe parecerse a la ficha de Elías de s03, para que nadie lo tome por él."
         },
@@ -689,8 +694,8 @@
           ],
           "falta": "Ficha de la abolición (pieza nueva). Fondo de la mesa del expediente (prompts-chatgpt-v2.md, n.º 1).",
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-07-carpeta-abierta.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-09-folio-sencillo.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-abierta.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
           ]
         },
         {
@@ -723,7 +728,7 @@
             "3B"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-09-folio-sencillo.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
           ]
         },
         {
@@ -752,7 +757,7 @@
             "3C"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-09-folio-sencillo.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
           ]
         },
         {
@@ -782,7 +787,7 @@
             "3D"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-04-vale.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png"
           ]
         },
         {
@@ -811,8 +816,8 @@
             "3D"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-04-vale.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-09-folio-sencillo.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
           ]
         },
         {
@@ -840,7 +845,7 @@
             "3E"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-04-vale.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png"
           ]
         },
         {
@@ -894,8 +899,8 @@
           ],
           "falta": "Línea de 1852 con las dos marcas. Fondo de la estantería del archivo (prompts-chatgpt-v2.md, n.º 3).",
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-07-carpeta-cerrada.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-05-pila-vales.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
           ]
         },
         {
@@ -962,8 +967,8 @@
           ],
           "falta": "La mancha roja del vale (se pinta en Remotion sobre obj-04).",
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-04-vale.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-10-bono-deuda-externa.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png"
           ]
         },
         {
@@ -991,7 +996,7 @@
             "4C"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-11-pagina-periodico.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-11-pagina-periodico.png"
           ]
         },
         {
@@ -1055,7 +1060,7 @@
             "4D"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-05-pila-vales.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
           ]
         },
         {
@@ -1092,7 +1097,7 @@
           "verbo": "presionar",
           "respiro": 2,
           "idea": "Los tenedores protestan, y Gran Bretaña y Francia los respaldan.",
-          "imagen": "Una mano sostiene un vale (el traspaso de 4A.2, un solo cuadro). Con 25, vuelven las islas de s01 con barcos en el horizonte. Vivanco queda solo en la voz.",
+          "imagen": "Una mano sostiene un vale (el traspaso de 4A.2, un solo cuadro). Con 25, vuelve la isla de s01 con las mismas capas, ahora con dos veleros chicos en el horizonte (el barco de s01 a escala, sin banderas). Vivanco queda solo en la voz.",
           "pantalla": [],
           "camara": {
             "tipo": "quieta"
@@ -1103,9 +1108,13 @@
             "4A.2",
             "1A"
           ],
-          "falta": "Barcos en el horizonte de islas v3 (reutilizar el barco de 1c, a escala). Fondo de las islas con barcos (prompts-chatgpt-v2.md, n.º 2).",
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-04-vale.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png"
+          ],
+          "personajes": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj01-06-islas.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj01-07-barco.png"
           ]
         },
         {
@@ -1137,7 +1146,7 @@
             "4E.3"
           ],
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-05-pila-vales.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
           ]
         }
       ]
@@ -1205,10 +1214,10 @@
           ],
           "falta": "Fondo de la mesa del historiador (prompts-chatgpt-v2.md, n.º 4).",
           "objetos": [
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-03-folio-reclamo-pestana-roja.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-04-vale.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-11-pagina-periodico.png",
-            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/obj-07-carpeta-cerrada.png"
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-11-pagina-periodico.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png"
           ]
         },
         {
@@ -1243,5 +1252,5 @@
       ]
     }
   ],
-  "texturas": "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/texturas/textura-papel-grabado.png"
+  "texturas": "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/textura-papel-grabado.png"
 }

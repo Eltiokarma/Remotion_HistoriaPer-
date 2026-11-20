@@ -153,3 +153,10 @@ Catorce PNG generados por Gerson con ChatGPT a partir de [prompts-chatgpt-escena
 ## Objetos y papeles generados con ChatGPT (recibidos el 20 de noviembre de 2026)
 
 Trece PNG generados por Gerson con ChatGPT a partir de [prompts-chatgpt-objetos.md](diseno/prompts-chatgpt-objetos.md), en dos lotes: sacos de guano abierto y cerrado, folio de reclamo con pestaña roja, vale, pila de vales, sobre de pago, carpeta cerrada y abierta, libro de la ley abierto, folio sencillo, bono de deuda externa, página de periódico y monedas. Están en `public/videos/002-la-deuda-defraudada/imagenes/chatgpt/objetos/`, fuera de git. Son utilería ilustrada sin texto legible: no reproducen documentos, títulos, monedas ni periódicos reales, y el nombre de *El Comercio*, las cifras y las fechas los rotula Remotion. Mismas condiciones de uso que el lote de personajes [VERIFICAR antes de publicar].
+
+## Una sola galería de imágenes generadas (20 de noviembre de 2026)
+
+A pedido de Gerson, las imágenes de ChatGPT del 0·1 y del 0·2 viven en una sola carpeta plana: `public/videos/002-la-deuda-defraudada/imagenes/chatgpt/` (fuera de git; el catálogo está en [galeria.md](galeria.md) y lo genera `galeria.py`). Se sumaron:
+
+- `obj01-06-mar.png`, `obj01-06-islas.png`, `obj01-07-barco.png` y `obj01-08-estado.png`, generadas en el trabajo del 0·1 (fecha y prompts en [diseno/prompts-chatgpt-obj01-06-08.md](diseno/prompts-chatgpt-obj01-06-08.md)). El edificio es una fachada inventada, sin emblemas, que no representa un edificio real. La isla trae un muelle de madera y una rampa: el lote anterior evitó dibujarlos por falta de referencia [VERIFICAR con C, cap. 1, cómo se embarcaba el guano en Chincha hacia 1850, antes de usarlos en primer plano].
+- `obj-08-libro-ley-abierto.png`, regenerado con dos franjas vacías en la página derecha; llegó con fondo blanco y se le quitó el blanco conectado al borde (el papel de las páginas no se tocó).
