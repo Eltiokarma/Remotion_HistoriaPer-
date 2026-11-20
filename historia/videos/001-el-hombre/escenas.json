@@ -358,7 +358,7 @@
         "afiches": 7.64,
         "afiche1": 10.46,
         "afiche2": 11.7,
-        "afiche3": 13.14,
+        "afiche3": 13.12,
         "volante": 17.54,
         "despegue": 34.46,
         "leer": 19.2,
@@ -574,7 +574,8 @@
         "hallazgo": 36.14,
         "version": 19.18,
         "tacha": 31.32,
-        "musica": 14.01
+        "musica": 14.01,
+        "zarpa": 16.2
       },
       "props": {
         "ficha": "SIGLO XIX · GUANO",
@@ -1075,7 +1076,7 @@
       "id": "s07",
       "seccion": "cierre",
       "componente": "Cierre",
-      "duracion_s": 7.63,
+      "duracion_s": 5.33,
       "cola_s": 11,
       "intensidad": 1,
       "cambio": "del caso abierto a la promesa del próximo episodio",
@@ -1084,7 +1085,7 @@
       "beats": {
         "cerrar": 0.3,
         "negro": 2.3,
-        "tarjeta": 2.78
+        "tarjeta": 2.8
       },
       "props": {
         "limpiar": false,

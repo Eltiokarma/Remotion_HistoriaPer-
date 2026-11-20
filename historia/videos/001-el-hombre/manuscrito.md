@@ -92,4 +92,6 @@ Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochen
 
 ## 8. Cierre
 
-// El próximo episodio sigue esa plata, y se llama *La deuda defraudada*.
+// El próximo episodio sigue esa plata.
+
+La voz ya no dice el nombre del próximo episodio: queda solo en la tarjeta (Gerson, 20/11). Es la única oración de menos de 10 palabras del guion, por pedido suyo.

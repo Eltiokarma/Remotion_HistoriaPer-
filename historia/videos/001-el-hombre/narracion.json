@@ -252,7 +252,7 @@
   ],
   "s07": [
    [
-    "[warm] El próximo episodio sigue esa plata, y se llama La deuda defraudada.",
+    "[warm] El próximo episodio sigue esa plata.",
     0.35
    ]
   ]
@@ -260,5 +260,6 @@
  "nota_cortes": "s01: la toma se parte después de «Murió en enero de dos mil trece, a los cincuenta y seis años.» (frase 4).",
  "respiro_min": 1.0,
  "nota_respiro": "Desde 1 s, las pausas del guion se garantizan con el aire de la toma (2026-11-19): en la versión 3 las pausas de 1 a 1,2 s son de diseño (la piscina sola, leer la versión de los lujos, leer «Un ajuste no prueba causalidad»), y la v4 las decía en 0,4 s.",
- "nota_voz_v5": "Versión 5 de la voz (2026-11-19), pedida por Gerson al escuchar la v4: «los susurros están muy exagerados, algunas emociones están muy exageradas, el audio salta en algunas partes». Texto con oraciones de 10 palabras o más (guion versión 3.1), una sola etiqueta suave al comienzo de cada escena (sin [whispers], [sad], [quietly] ni [low voice]), estabilidad 0,7 (antes 0,5) y sin el −3 dB a mano de s04·0: los saltos medidos en la v4 eran los susurros (7 dB por debajo de sus vecinas) y ese ajuste."
+ "nota_voz_v5": "Versión 5 de la voz (2026-11-19), pedida por Gerson al escuchar la v4: «los susurros están muy exagerados, algunas emociones están muy exageradas, el audio salta en algunas partes». Texto con oraciones de 10 palabras o más (guion versión 3.1), una sola etiqueta suave al comienzo de cada escena (sin [whispers], [sad], [quietly] ni [low voice]), estabilidad 0,7 (antes 0,5) y sin el −3 dB a mano de s04·0: los saltos medidos en la v4 eran los susurros (7 dB por debajo de sus vecinas) y ese ajuste.",
+ "nota_s07": "s07 (2026-11-20, Gerson): la voz ya no dice el nombre del próximo episodio; el título queda solo en la tarjeta. Excepción a la regla de 10 palabras (6), pedida por Gerson."
 }

@@ -341,12 +341,12 @@
   ]
  },
  "s07": {
-  "duracion": 7.59,
+  "duracion": 5.29,
   "frases": [
    {
-    "texto": "El próximo episodio sigue esa plata, y se llama La deuda defraudada.",
+    "texto": "El próximo episodio sigue esa plata.",
     "desde": 2.8,
-    "hasta": 7.28,
+    "hasta": 5.0,
     "cubre": 1.0
    }
   ]

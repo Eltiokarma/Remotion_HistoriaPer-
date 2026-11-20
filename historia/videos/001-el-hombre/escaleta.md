@@ -13,12 +13,12 @@ Columnas: **t** = minuto del video · **Voz** = cada frase cuando empieza · **I
 | s02 | Presentacion | 1:15.8 | 26 s | 81 % | 12 s | 156 | 13.0 | 24 | 2 | 7 (16.8/min) | 7 (16.8/min) | 🟡 16.8 datos/min · voz 81 % |
 | s03 | TiempoLargo | 1:41.9 | 38 s | 83 % | 16 s | 162 | 16.2 | 23 | 2 | 5 (8.3/min) | 12 (20.0/min) | 🟡 8.3 datos/min · voz 83 % |
 | s04 | TiempoLargo | 2:20.4 | 52 s | 79 % | 10 s | 156 | 14.8 | 21 | 7 | 4 (4.7/min) | 11 (12.9/min) | 🟢 |
-| s06 | MecanismoDeuda | 3:12.7 | 48 s | 78 % | 11 s | 179 | 16.6 | 21 | 4 | 10 (13.4/min) | 16 (21.5/min) | 🟡 13.4 datos/min |
+| s06 | MecanismoDeuda | 3:12.7 | 48 s | 78 % | 11 s | 179 | 16.6 | 21 | 4 | 10 (13.4/min) | 17 (22.8/min) | 🟡 13.4 datos/min |
 | s05 | AprenderAMedir | 4:00.9 | 70 s | 81 % | 19 s | 157 | 16.5 | 23 | 6 | 10 (8.7/min) | 22 (19.1/min) | 🟡 8.7 datos/min · voz 81 % |
-| s08 | AprenderAMedir | 5:11.1 | 30 s | 81 % | 8 s | 159 | 19.0 | 23 | 3 | 1 (2.1/min) | 7 (14.7/min) | 🟡 voz 81 % |
-| s07 | Cierre | 5:40.8 | 19 s | 24 % | 4 s | 95 | 12.0 | 12 | 0 | 4 (31.6/min) | 3 (23.7/min) | 🟡 31.6 datos/min |
+| s08 | AprenderAMedir | 5:11.1 | 30 s | 81 % | 8 s | 159 | 19.0 | 23 | 3 | 4 (8.4/min) | 7 (14.7/min) | 🟡 8.4 datos/min · voz 81 % |
+| s07 | Cierre | 5:40.8 | 16 s | 13 % | 2 s | 68 | 6.0 | 6 | 0 | 4 (45.4/min) | 3 (34.0/min) | 🟡 45.4 datos/min |
 
-Total: 5:59.4. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
+Total: 5:57.1. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 25 s, frases ≤ 25 palabras, ≤ 6 nombres y cifras por minuto, voz ≤ 80 % de la escena. 🟢 cumple · 🟡 una o dos alertas · 🔴 tres o más · ⚪ fuera del semáforo a propósito (excepción declarada).
 
 
 ## s00 · gancho — `Gancho` · 0:00.0–0:29.4 (29.4 s)
@@ -194,7 +194,7 @@ Total: 5:59.4. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 - **Intención:** cerrar el retrato volviendo atrás: lo que aprendió en Nueva York lo va a usar en lo que ya había encontrado antes de irse; la pregunta queda en el aire para el próximo episodio; la versión de entonces queda escrita en una tarjeta punteada y el corrector tacha solo TODO con «Pero en su tesis…» (guion v3)
 - **Intensidad:** 5 · **Música:** presente (tensión) → el acorde sin resolver queda solo después de la pregunta
 - **Semáforo para enseñar:** 🟡 13.4 datos/min
-- **Métricas:** voz el 78 % del tiempo · tramo más largo sin pausa de párrafo: 10.9 s · 133 palabras · 179 por minuto · 8 frases de 16.6 palabras en promedio (la más larga: 21) · 4 pausa(s) de párrafo (≥ 1 s) · 16 cambios de imagen
+- **Métricas:** voz el 78 % del tiempo · tramo más largo sin pausa de párrafo: 10.9 s · 133 palabras · 179 por minuto · 8 frases de 16.6 palabras en promedio (la más larga: 21) · 4 pausa(s) de párrafo (≥ 1 s) · 17 cambios de imagen
 - **Nombres y cifras que se dicen (10):** París · Braudel · Quiroz · Nueva York · Universidad de Columbia · Herbert Klein · Perú · Columbia · Kenneth Maxwell · dos
 
 | t | Voz | Imagen | Sonido |
@@ -215,6 +215,7 @@ Total: 5:59.4. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 3:26.7 |  | **musica** — (beat propio) |  |
 | 3:26.7 |  |  | música s06-la-deuda.mp3 (nivel 0.4) |
 | 3:28.8 | Cuando Quiroz estudiaba, los libros de historia aseguraban que toda esa riqueza se había derrochado en lujos de las élites. |  |  |
+| 3:28.9 |  | **zarpa** — (con imagenes) el barco cargado zarpa hacia Europa (a la derecha) y queda más lejos |  |
 | 3:31.8 |  | **version** — (con version) entra la tarjeta punteada con la versión de entonces |  |
 | 3:36.1 | En mil ochocientos cincuenta, el Estado decidió pagar con la plata del guano una deuda vieja con acreedores del propio país. |  |  |
 | 3:37.6 |  | **flecha** — barco y Estado: sale la flecha de dinero |  |
@@ -285,9 +286,9 @@ Total: 5:59.4. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 - **Cambio:** del alumno que aprende a medir a la autoridad que no da por cerradas sus propias cifras, y que vuelve a la tesis de la deuda
 - **Intención:** la carrera se lee en el estante, no se narra; la brújula gira de una época a otra y pasa a la pizarra; con «aquella tesis» entra el tema del canal (partida de s05 en la versión 3 del guion: el viaje juntaba seis ideas en 96 s)
 - **Intensidad:** 2 · **Música:** presente (Suno F, continuación de s05) → el tema del canal entra con «aquella tesis»
-- **Semáforo para enseñar:** 🟡 voz 81 %
+- **Semáforo para enseñar:** 🟡 8.4 datos/min · voz 81 %
 - **Métricas:** voz el 81 % del tiempo · tramo más largo sin pausa de párrafo: 8.2 s · 76 palabras · 159 por minuto · 4 frases de 19.0 palabras en promedio (la más larga: 23) · 3 pausa(s) de párrafo (≥ 1 s) · 7 cambios de imagen
-- **Nombres y cifras que se dicen (1):** La
+- **Nombres y cifras que se dicen (4):** Gerson · 20 · 11 · 10
 
 | t | Voz | Imagen | Sonido |
 |---|---|---|---|
@@ -305,13 +306,13 @@ Total: 5:59.4. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 5:30.1 |  | **frase** — (con brujula_frase) se escribe la frase con tiza |  |
 | 5:33.8 | Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro. |  |  |
 
-## s07 · cierre — `Cierre` · 5:40.8–5:59.4 (18.6 s)
+## s07 · cierre — `Cierre` · 5:40.8–5:57.1 (16.3 s)
 
 - **Cambio:** del caso abierto a la promesa del próximo episodio
 - **Intención:** las pruebas de imprenta del comienzo se cierran; el tema entra unos segundos antes y se queda después, para que la tristeza se asiente (DIRECCION_DE_VIDEO §2.15)
 - **Intensidad:** 1 · **Música:** protagonista (el tema del canal entra antes del negro y se queda ~5 s más sobre la tarjeta)
-- **Semáforo para enseñar:** 🟡 31.6 datos/min
-- **Métricas:** voz el 24 % del tiempo · tramo más largo sin pausa de párrafo: 4.5 s · 12 palabras · 95 por minuto · 1 frases de 12.0 palabras en promedio (la más larga: 12) · 0 pausa(s) de párrafo (≥ 1 s) · 3 cambios de imagen
+- **Semáforo para enseñar:** 🟡 45.4 datos/min
+- **Métricas:** voz el 13 % del tiempo · tramo más largo sin pausa de párrafo: 2.2 s · 6 palabras · 68 por minuto · 1 frases de 6.0 palabras en promedio (la más larga: 6) · 0 pausa(s) de párrafo (≥ 1 s) · 3 cambios de imagen
 - **Nombres y cifras que se dicen (4):** Cueto · Perú · mil · ochenta y siete
 
 | t | Voz | Imagen | Sonido |
@@ -321,7 +322,7 @@ Total: 5:59.4. Semáforo (src/direction/ritmo.ts → ENSENAR): voz seguida ≤ 2
 | 5:41.1 |  | **cerrar** — la tapa empieza a cerrarse (1.6 s) |  |
 | 5:43.1 |  | **negro** — fundido a negro |  |
 | 5:43.1 |  |  | se va el ambiente cuarto |
+| 5:43.6 | El próximo episodio sigue esa plata. |  |  |
 | 5:43.6 |  | **tarjeta** — aparece la tarjeta (con la nota final) |  |
 | 5:43.6 |  | _cámara: se acerca muy despacio a la tarjeta del próximo episodio (5 % en 13 s)_ (la música se queda sobre el final (revisión del director): el plano respira mientras se asienta la tristeza, sin congelarse) |  |
-| 5:43.6 | El próximo episodio sigue esa plata, y se llama La deuda defraudada. |  |  |
 

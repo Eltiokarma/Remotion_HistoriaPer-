@@ -1,3 +1,4 @@
+import { getLength, getPointAtLength } from '@remotion/paths';
 import { Img } from 'remotion';
 import { clamp } from '../../direction/anim';
 
@@ -15,6 +16,11 @@ export type ImagenesGrabado = { mar: string; islas: string; barco: string; saco?
 const BARCO = { w: 1536, h: 1024, cx: 768, flota: 950, escala: 0.4 };
 /** Dónde queda el barco anclado en el grabado: en el agua del tercio derecho, no en el horizonte (y = 707). */
 export const BARCO_IMAGEN = { x: 1440, y: 800, escala: 1 } as const;
+/**
+ * Dónde termina el barco cuando zarpa hacia Europa (a la derecha: la isla queda a la izquierda): más lejos, más
+ * chico y un poco más alto, sin salir del cuadro. Desde aquí sale el viaje de cámara hacia el Estado.
+ */
+export const BARCO_ZARPADO = { x: 1645, y: 782, escala: 0.8 } as const;
 
 /**
  * El barco, volteado para que la proa mire a la derecha (hacia Europa: la isla queda a la izquierda;
@@ -38,13 +44,17 @@ const MUELLE = { x: 1050, y: 772 }, BORDA = { x: 1330, y: 752 };
  * El grabado de las islas con imágenes: el mar, la isla encima (calzan: el horizonte en la fila 707), el barco
  * anclado y, con `carga`, cinco sacos que van del muelle a la borda uno tras otro, una sola vez.
  */
-export const GrabadoImagen: React.FC<{ imagenes: ImagenesGrabado; t: number; carga?: number; anclado: boolean }> = ({ imagenes, t, carga, anclado }) => {
+export const GrabadoImagen: React.FC<{ imagenes: ImagenesGrabado; t: number; carga?: number; anclado: boolean; zarpa?: number }> = ({ imagenes, t, carga, anclado, zarpa = 0 }) => {
   const navega = !anclado && carga === undefined ? -t * 9 : 0;
+  // zarpa (0–1): el barco cargado se va de la isla hacia la derecha; los sacos ya están a bordo
+  const z = clamp(zarpa);
+  const bx = BARCO_IMAGEN.x + (BARCO_ZARPADO.x - BARCO_IMAGEN.x) * z, by = BARCO_IMAGEN.y + (BARCO_ZARPADO.y - BARCO_IMAGEN.y) * z;
+  const be = BARCO_IMAGEN.escala + (BARCO_ZARPADO.escala - BARCO_IMAGEN.escala) * z;
   return (
     <div style={{ position: 'absolute', left: 0, top: 0, width: 1920, height: 1080, overflow: 'hidden' }}>
       <Img src={imagenes.mar} style={{ position: 'absolute', inset: 0, width: 1920, height: 1080 }} />
       <Img src={imagenes.islas} style={{ position: 'absolute', inset: 0, width: 1920, height: 1080 }} />
-      {imagenes.saco && carga !== undefined && carga >= 0 ? Array.from({ length: 5 }, (_, i) => {
+      {imagenes.saco && carga !== undefined && carga >= 0 && z <= 0 ? Array.from({ length: 5 }, (_, i) => {
         const u = clamp((carga - i * 0.55) / 1.3);
         if (u <= 0 || u >= 1) return null;
         const x = MUELLE.x + (BORDA.x - MUELLE.x) * u, y = MUELLE.y + (BORDA.y - MUELLE.y) * u - Math.abs(Math.sin(u * Math.PI * 7)) * 3; // a pulso
@@ -53,7 +63,7 @@ export const GrabadoImagen: React.FC<{ imagenes: ImagenesGrabado; t: number; car
             opacity: 1 - clamp((u - 0.85) / 0.15) }} />
         );
       }) : null}
-      <BarcoImagen src={imagenes.barco} x={BARCO_IMAGEN.x} y={BARCO_IMAGEN.y} escala={BARCO_IMAGEN.escala} t={t} navega={navega} />
+      <BarcoImagen src={imagenes.barco} x={bx} y={by} escala={be} t={t} navega={navega} />
     </div>
   );
 };
@@ -117,6 +127,9 @@ export const LibroImagen: React.FC<{ src: string; ancho: number; estampado: numb
   );
 };
 
+/** El lápiz (2172 × 724): la punta en (2130, 572); girado 116°, el cuerpo queda hacia arriba a la derecha. */
+const LAPIZ = { w: 2172, h: 724, punta: { x: 2130, y: 572 }, giro: 116 };
+
 /** Las pruebas (1086 × 1448): las líneas grises de la hoja de arriba, en tres bloques; las marcas del corrector van sobre ellas. */
 const MARCAS = [
   'M252 205 C 234 205, 240 310, 226 310 C 240 310, 234 415, 252 415',                       // llave: el primer párrafo
@@ -142,10 +155,23 @@ export const PruebasImagen: React.FC<{ src: string; lapiz?: string; width: numbe
         ) : null))}
         <text x={918} y={858} fill={rojo} fontFamily={fuenteNota} fontStyle="italic" fontSize={34} opacity={marca(4)}>precisar</text>
       </svg>
-      {lapiz ? (
-        // el lápiz descansa a la derecha de la pila, con la punta hacia la hoja
-        <Img src={lapiz} style={{ position: 'absolute', left: width * 0.62, top: h * 0.7, width: width * 0.62, transformOrigin: '50% 50%', transform: 'rotate(150deg)' }} />
-      ) : null}
+      {lapiz ? (() => {
+        // el lápiz escribe: su punta va por la marca que se está dibujando (una por vez) y, al terminar, descansa
+        // sobre la última; levantado (y a un lado) antes de la primera. Tamaño de lápiz de verdad junto a la hoja.
+        const i = Math.min(MARCAS.length - 1, Math.floor(correcciones * MARCAS.length));
+        const u = clamp(correcciones * MARCAS.length - i);
+        const d = MARCAS[i];
+        const p = getPointAtLength(d, getLength(d) * u) ?? { x: 0, y: 0 };
+        const reposo = correcciones <= 0;
+        const tip = reposo ? { x: 980, y: 1180 } : { x: p.x, y: p.y };
+        const s = (width * 0.34) / LAPIZ.w; // ~210 px de largo con la pila de 620
+        return (
+          <Img src={lapiz} style={{ position: 'absolute', left: tip.x * k - LAPIZ.punta.x * s, top: tip.y * k - LAPIZ.punta.y * s - (reposo ? 0 : 2),
+            width: LAPIZ.w * s, height: LAPIZ.h * s, transformOrigin: `${LAPIZ.punta.x * s}px ${LAPIZ.punta.y * s}px`,
+            // el cuerpo hacia arriba a la derecha, como en una mano diestra que escribe
+            transform: `rotate(${LAPIZ.giro}deg)` }} />
+        );
+      })() : null}
     </div>
   );
 };

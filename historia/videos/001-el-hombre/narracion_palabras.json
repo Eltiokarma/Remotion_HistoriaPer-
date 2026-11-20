@@ -444,7 +444,7 @@
   },
   {
    "texto": "pruebas",
-   "desde": 3.94,
+   "desde": 3.92,
    "hasta": 4.22
   },
   {
@@ -520,7 +520,7 @@
   {
    "texto": "le",
    "desde": 9.52,
-   "hasta": 9.58
+   "hasta": 9.62
   },
   {
    "texto": "queda",
@@ -565,11 +565,11 @@
   {
    "texto": "agradecimientos",
    "desde": 13.18,
-   "hasta": 14.02
+   "hasta": 14.04
   },
   {
    "texto": "escribe",
-   "desde": 14.08,
+   "desde": 14.1,
    "hasta": 14.42
   },
   {
@@ -590,7 +590,7 @@
   {
    "texto": "de",
    "desde": 15.38,
-   "hasta": 15.48
+   "hasta": 15.44
   },
   {
    "texto": "pasar",
@@ -604,7 +604,7 @@
   },
   {
    "texto": "alto.",
-   "desde": 16.0,
+   "desde": 16.02,
    "hasta": 16.28
   },
   {
@@ -619,7 +619,7 @@
   },
   {
    "texto": "a",
-   "desde": 17.48,
+   "desde": 17.5,
    "hasta": 17.52
   },
   {
@@ -725,7 +725,7 @@
   {
    "texto": "hijo.",
    "desde": 24.48,
-   "hasta": 24.72
+   "hasta": 24.74
   },
   {
    "texto": "Murió",
@@ -749,7 +749,7 @@
   },
   {
    "texto": "2013,",
-   "desde": 27.12,
+   "desde": 27.16,
    "hasta": 27.74
   },
   {
@@ -763,8 +763,18 @@
    "hasta": 28.22
   },
   {
-   "texto": "56",
-   "desde": 28.48,
+   "texto": "cincuenta",
+   "desde": 28.26,
+   "hasta": 28.64
+  },
+  {
+   "texto": "y",
+   "desde": 28.66,
+   "hasta": 28.7
+  },
+  {
+   "texto": "seis",
+   "desde": 28.78,
    "hasta": 29.0
   },
   {
@@ -874,7 +884,7 @@
   },
   {
    "texto": "que",
-   "desde": 43.0,
+   "desde": 43.02,
    "hasta": 43.06
   },
   {
@@ -1312,7 +1322,7 @@
    "hasta": 9.32
   },
   {
-   "texto": "Velasco,",
+   "texto": "Velasco",
    "desde": 9.36,
    "hasta": 9.84
   },
@@ -1353,7 +1363,7 @@
   },
   {
    "texto": "un",
-   "desde": 13.14,
+   "desde": 13.12,
    "hasta": 13.18
   },
   {
@@ -1379,7 +1389,7 @@
   {
    "texto": "el",
    "desde": 14.82,
-   "hasta": 14.88
+   "hasta": 14.92
   },
   {
    "texto": "pasado",
@@ -1424,7 +1434,7 @@
   {
    "texto": "un",
    "desde": 19.56,
-   "hasta": 19.62
+   "hasta": 19.66
   },
   {
    "texto": "tiempo",
@@ -1448,7 +1458,7 @@
   },
   {
    "texto": "partido",
-   "desde": 20.62,
+   "desde": 20.64,
    "hasta": 20.96
   },
   {
@@ -1589,7 +1599,7 @@
   {
    "texto": "hacía",
    "desde": 30.86,
-   "hasta": 31.18
+   "hasta": 31.16
   },
   {
    "texto": "una",
@@ -1598,11 +1608,11 @@
   },
   {
    "texto": "pregunta:",
-   "desde": 31.4,
+   "desde": 31.38,
    "hasta": 31.86
   },
   {
-   "texto": "¿El",
+   "texto": "¿el",
    "desde": 32.32,
    "hasta": 32.4
   },
@@ -1660,8 +1670,8 @@
  "s04": [
   {
    "texto": "Casi",
-   "desde": 0.3,
-   "hasta": 0.52
+   "desde": 0.28,
+   "hasta": 0.54
   },
   {
    "texto": "con",
@@ -1669,7 +1679,7 @@
    "hasta": 0.68
   },
   {
-   "texto": "seguridad,",
+   "texto": "seguridad",
    "desde": 0.76,
    "hasta": 1.36
   },
@@ -1704,7 +1714,7 @@
    "hasta": 2.88
   },
   {
-   "texto": "Pease",
+   "texto": "Peace",
    "desde": 3.0,
    "hasta": 3.34
   },
@@ -1890,7 +1900,7 @@
   },
   {
    "texto": "rápido,",
-   "desde": 17.38,
+   "desde": 17.36,
    "hasta": 17.74
   },
   {
@@ -1920,7 +1930,7 @@
   },
   {
    "texto": "están",
-   "desde": 20.42,
+   "desde": 20.4,
    "hasta": 20.64
   },
   {
@@ -1975,7 +1985,7 @@
   },
   {
    "texto": "al",
-   "desde": 24.62,
+   "desde": 24.6,
    "hasta": 24.68
   },
   {
@@ -2150,7 +2160,7 @@
   },
   {
    "texto": "a",
-   "desde": 38.48,
+   "desde": 38.5,
    "hasta": 38.52
   },
   {
@@ -2190,7 +2200,7 @@
   },
   {
    "texto": "la",
-   "desde": 41.04,
+   "desde": 41.06,
    "hasta": 41.08
   },
   {
@@ -2210,7 +2220,7 @@
   },
   {
    "texto": "en",
-   "desde": 43.06,
+   "desde": 43.08,
    "hasta": 43.12
   },
   {
@@ -2322,913 +2332,6 @@
    "texto": "serie",
    "desde": 50.72,
    "hasta": 50.98
-  }
- ],
- "s05": [
-  {
-   "texto": "Poco",
-   "desde": 0.3,
-   "hasta": 0.5
-  },
-  {
-   "texto": "después,",
-   "desde": 0.56,
-   "hasta": 1.1
-  },
-  {
-   "texto": "toma",
-   "desde": 1.48,
-   "hasta": 1.66
-  },
-  {
-   "texto": "un",
-   "desde": 1.68,
-   "hasta": 1.78
-  },
-  {
-   "texto": "camino",
-   "desde": 1.8,
-   "hasta": 2.14
-  },
-  {
-   "texto": "que",
-   "desde": 2.24,
-   "hasta": 2.32
-  },
-  {
-   "texto": "pocos",
-   "desde": 2.52,
-   "hasta": 2.88
-  },
-  {
-   "texto": "peruanos",
-   "desde": 2.92,
-   "hasta": 3.36
-  },
-  {
-   "texto": "habían",
-   "desde": 3.38,
-   "hasta": 3.66
-  },
-  {
-   "texto": "tomado.",
-   "desde": 3.72,
-   "hasta": 4.14
-  },
-  {
-   "texto": "Buena",
-   "desde": 4.8,
-   "hasta": 4.98
-  },
-  {
-   "texto": "parte",
-   "desde": 5.08,
-   "hasta": 5.3
-  },
-  {
-   "texto": "de",
-   "desde": 5.34,
-   "hasta": 5.42
-  },
-  {
-   "texto": "los",
-   "desde": 5.46,
-   "hasta": 5.56
-  },
-  {
-   "texto": "historiadores",
-   "desde": 5.6,
-   "hasta": 6.18
-  },
-  {
-   "texto": "peruanos",
-   "desde": 6.22,
-   "hasta": 6.64
-  },
-  {
-   "texto": "miraba",
-   "desde": 6.74,
-   "hasta": 7.04
-  },
-  {
-   "texto": "a",
-   "desde": 7.06,
-   "hasta": 7.1
-  },
-  {
-   "texto": "París,",
-   "desde": 7.18,
-   "hasta": 7.56
-  },
-  {
-   "texto": "la",
-   "desde": 7.94,
-   "hasta": 8.0
-  },
-  {
-   "texto": "ciudad",
-   "desde": 8.08,
-   "hasta": 8.3
-  },
-  {
-   "texto": "de",
-   "desde": 8.34,
-   "hasta": 8.42
-  },
-  {
-   "texto": "Braudel,",
-   "desde": 8.44,
-   "hasta": 8.86
-  },
-  {
-   "texto": "donde",
-   "desde": 9.22,
-   "hasta": 9.42
-  },
-  {
-   "texto": "se",
-   "desde": 9.44,
-   "hasta": 9.5
-  },
-  {
-   "texto": "habían",
-   "desde": 9.52,
-   "hasta": 9.76
-  },
-  {
-   "texto": "formado",
-   "desde": 9.8,
-   "hasta": 10.16
-  },
-  {
-   "texto": "algunos",
-   "desde": 10.22,
-   "hasta": 10.64
-  },
-  {
-   "texto": "de",
-   "desde": 10.68,
-   "hasta": 10.72
-  },
-  {
-   "texto": "los",
-   "desde": 10.76,
-   "hasta": 10.84
-  },
-  {
-   "texto": "profesores",
-   "desde": 10.9,
-   "hasta": 11.42
-  },
-  {
-   "texto": "de",
-   "desde": 11.44,
-   "hasta": 11.54
-  },
-  {
-   "texto": "Quirós.",
-   "desde": 11.56,
-   "hasta": 11.92
-  },
-  {
-   "texto": "Él,",
-   "desde": 12.56,
-   "hasta": 12.68
-  },
-  {
-   "texto": "en",
-   "desde": 12.9,
-   "hasta": 12.98
-  },
-  {
-   "texto": "cambio,",
-   "desde": 13.06,
-   "hasta": 13.4
-  },
-  {
-   "texto": "se",
-   "desde": 13.72,
-   "hasta": 13.82
-  },
-  {
-   "texto": "va",
-   "desde": 13.84,
-   "hasta": 13.92
-  },
-  {
-   "texto": "a",
-   "desde": 13.94,
-   "hasta": 14.0
-  },
-  {
-   "texto": "Nueva",
-   "desde": 14.04,
-   "hasta": 14.24
-  },
-  {
-   "texto": "York,",
-   "desde": 14.3,
-   "hasta": 14.56
-  },
-  {
-   "texto": "a",
-   "desde": 14.88,
-   "hasta": 14.92
-  },
-  {
-   "texto": "la",
-   "desde": 14.94,
-   "hasta": 14.98
-  },
-  {
-   "texto": "Universidad",
-   "desde": 15.02,
-   "hasta": 15.54
-  },
-  {
-   "texto": "de",
-   "desde": 15.58,
-   "hasta": 15.62
-  },
-  {
-   "texto": "Columbia.",
-   "desde": 15.7,
-   "hasta": 16.16
-  },
-  {
-   "texto": "Allí,",
-   "desde": 17.96,
-   "hasta": 18.18
-  },
-  {
-   "texto": "el",
-   "desde": 18.46,
-   "hasta": 18.52
-  },
-  {
-   "texto": "historiador",
-   "desde": 18.56,
-   "hasta": 19.0
-  },
-  {
-   "texto": "Herbert",
-   "desde": 19.14,
-   "hasta": 19.44
-  },
-  {
-   "texto": "Klein",
-   "desde": 19.54,
-   "hasta": 19.88
-  },
-  {
-   "texto": "le",
-   "desde": 19.92,
-   "hasta": 19.98
-  },
-  {
-   "texto": "ofrece",
-   "desde": 20.0,
-   "hasta": 20.28
-  },
-  {
-   "texto": "una",
-   "desde": 20.32,
-   "hasta": 20.48
-  },
-  {
-   "texto": "beca",
-   "desde": 20.52,
-   "hasta": 20.74
-  },
-  {
-   "texto": "de",
-   "desde": 20.76,
-   "hasta": 20.84
-  },
-  {
-   "texto": "maestría",
-   "desde": 20.88,
-   "hasta": 21.4
-  },
-  {
-   "texto": "y",
-   "desde": 21.42,
-   "hasta": 21.46
-  },
-  {
-   "texto": "doctorado,",
-   "desde": 21.5,
-   "hasta": 22.0
-  },
-  {
-   "texto": "y",
-   "desde": 22.54,
-   "hasta": 22.6
-  },
-  {
-   "texto": "Quirós",
-   "desde": 22.64,
-   "hasta": 23.04
-  },
-  {
-   "texto": "aprende",
-   "desde": 23.12,
-   "hasta": 23.42
-  },
-  {
-   "texto": "historia",
-   "desde": 23.44,
-   "hasta": 23.8
-  },
-  {
-   "texto": "cuantitativa:",
-   "desde": 23.86,
-   "hasta": 24.54
-  },
-  {
-   "texto": "pensar",
-   "desde": 25.02,
-   "hasta": 25.3
-  },
-  {
-   "texto": "el",
-   "desde": 25.34,
-   "hasta": 25.44
-  },
-  {
-   "texto": "pasado",
-   "desde": 25.48,
-   "hasta": 25.84
-  },
-  {
-   "texto": "con",
-   "desde": 25.9,
-   "hasta": 26.08
-  },
-  {
-   "texto": "números,",
-   "desde": 26.14,
-   "hasta": 26.56
-  },
-  {
-   "texto": "no",
-   "desde": 26.88,
-   "hasta": 26.98
-  },
-  {
-   "texto": "solo",
-   "desde": 27.06,
-   "hasta": 27.26
-  },
-  {
-   "texto": "con",
-   "desde": 27.3,
-   "hasta": 27.42
-  },
-  {
-   "texto": "discursos.",
-   "desde": 27.44,
-   "hasta": 28.04
-  },
-  {
-   "texto": "Una",
-   "desde": 28.78,
-   "hasta": 28.9
-  },
-  {
-   "texto": "de",
-   "desde": 28.92,
-   "hasta": 28.98
-  },
-  {
-   "texto": "sus",
-   "desde": 29.02,
-   "hasta": 29.14
-  },
-  {
-   "texto": "herramientas",
-   "desde": 29.18,
-   "hasta": 29.72
-  },
-  {
-   "texto": "se",
-   "desde": 29.78,
-   "hasta": 29.86
-  },
-  {
-   "texto": "llama",
-   "desde": 29.88,
-   "hasta": 30.12
-  },
-  {
-   "texto": "regresión.",
-   "desde": 30.2,
-   "hasta": 30.86
-  },
-  {
-   "texto": "Imagina",
-   "desde": 31.34,
-   "hasta": 31.74
-  },
-  {
-   "texto": "muchos",
-   "desde": 31.84,
-   "hasta": 32.2
-  },
-  {
-   "texto": "puntos",
-   "desde": 32.259,
-   "hasta": 32.52
-  },
-  {
-   "texto": "desordenados,",
-   "desde": 32.56,
-   "hasta": 33.26
-  },
-  {
-   "texto": "cada",
-   "desde": 33.54,
-   "hasta": 33.78
-  },
-  {
-   "texto": "uno",
-   "desde": 33.86,
-   "hasta": 34.12
-  },
-  {
-   "texto": "una",
-   "desde": 34.2,
-   "hasta": 34.3
-  },
-  {
-   "texto": "observación,",
-   "desde": 34.34,
-   "hasta": 34.92
-  },
-  {
-   "texto": "que",
-   "desde": 35.28,
-   "hasta": 35.32
-  },
-  {
-   "texto": "a",
-   "desde": 35.36,
-   "hasta": 35.4
-  },
-  {
-   "texto": "simple",
-   "desde": 35.44,
-   "hasta": 35.72
-  },
-  {
-   "texto": "vista",
-   "desde": 35.76,
-   "hasta": 36.08
-  },
-  {
-   "texto": "parecen",
-   "desde": 36.14,
-   "hasta": 36.52
-  },
-  {
-   "texto": "solo",
-   "desde": 36.6,
-   "hasta": 36.82
-  },
-  {
-   "texto": "ruido.",
-   "desde": 36.88,
-   "hasta": 37.24
-  },
-  {
-   "texto": "La",
-   "desde": 38.16,
-   "hasta": 38.22
-  },
-  {
-   "texto": "regresión",
-   "desde": 38.28,
-   "hasta": 38.88
-  },
-  {
-   "texto": "busca",
-   "desde": 38.94,
-   "hasta": 39.2
-  },
-  {
-   "texto": "la",
-   "desde": 39.24,
-   "hasta": 39.34
-  },
-  {
-   "texto": "línea",
-   "desde": 39.38,
-   "hasta": 39.64
-  },
-  {
-   "texto": "que",
-   "desde": 39.68,
-   "hasta": 39.78
-  },
-  {
-   "texto": "pasa",
-   "desde": 39.82,
-   "hasta": 40.06
-  },
-  {
-   "texto": "lo",
-   "desde": 40.12,
-   "hasta": 40.22
-  },
-  {
-   "texto": "más",
-   "desde": 40.32,
-   "hasta": 40.48
-  },
-  {
-   "texto": "cerca",
-   "desde": 40.54,
-   "hasta": 40.82
-  },
-  {
-   "texto": "posible",
-   "desde": 40.86,
-   "hasta": 41.26
-  },
-  {
-   "texto": "de",
-   "desde": 41.28,
-   "hasta": 41.4
-  },
-  {
-   "texto": "todos,",
-   "desde": 41.44,
-   "hasta": 41.78
-  },
-  {
-   "texto": "y",
-   "desde": 42.1,
-   "hasta": 42.16
-  },
-  {
-   "texto": "si",
-   "desde": 42.2,
-   "hasta": 42.26
-  },
-  {
-   "texto": "hay",
-   "desde": 42.28,
-   "hasta": 42.36
-  },
-  {
-   "texto": "una",
-   "desde": 42.4,
-   "hasta": 42.52
-  },
-  {
-   "texto": "tendencia,",
-   "desde": 42.58,
-   "hasta": 43.1
-  },
-  {
-   "texto": "la",
-   "desde": 43.3,
-   "hasta": 43.38
-  },
-  {
-   "texto": "deja",
-   "desde": 43.42,
-   "hasta": 43.66
-  },
-  {
-   "texto": "ver.",
-   "desde": 43.7,
-   "hasta": 43.94
-  },
-  {
-   "texto": "Cada",
-   "desde": 44.54,
-   "hasta": 44.78
-  },
-  {
-   "texto": "punto",
-   "desde": 44.84,
-   "hasta": 45.14
-  },
-  {
-   "texto": "junta",
-   "desde": 45.2,
-   "hasta": 45.52
-  },
-  {
-   "texto": "dos",
-   "desde": 45.58,
-   "hasta": 45.74
-  },
-  {
-   "texto": "cifras",
-   "desde": 45.8,
-   "hasta": 46.44
-  },
-  {
-   "texto": "y",
-   "desde": 46.48,
-   "hasta": 46.52
-  },
-  {
-   "texto": "la",
-   "desde": 46.56,
-   "hasta": 46.6
-  },
-  {
-   "texto": "inclinación",
-   "desde": 46.62,
-   "hasta": 47.12
-  },
-  {
-   "texto": "de",
-   "desde": 47.16,
-   "hasta": 47.22
-  },
-  {
-   "texto": "la",
-   "desde": 47.26,
-   "hasta": 47.34
-  },
-  {
-   "texto": "línea",
-   "desde": 47.38,
-   "hasta": 47.7
-  },
-  {
-   "texto": "dice",
-   "desde": 47.76,
-   "hasta": 48.06
-  },
-  {
-   "texto": "cuánto",
-   "desde": 48.12,
-   "hasta": 48.46
-  },
-  {
-   "texto": "sube",
-   "desde": 48.52,
-   "hasta": 48.78
-  },
-  {
-   "texto": "una",
-   "desde": 48.88,
-   "hasta": 49.12
-  },
-  {
-   "texto": "por",
-   "desde": 49.18,
-   "hasta": 49.36
-  },
-  {
-   "texto": "cada",
-   "desde": 49.42,
-   "hasta": 49.66
-  },
-  {
-   "texto": "paso",
-   "desde": 49.7,
-   "hasta": 49.94
-  },
-  {
-   "texto": "que",
-   "desde": 49.98,
-   "hasta": 50.06
-  },
-  {
-   "texto": "da",
-   "desde": 50.1,
-   "hasta": 50.18
-  },
-  {
-   "texto": "la",
-   "desde": 50.22,
-   "hasta": 50.32
-  },
-  {
-   "texto": "otra.",
-   "desde": 50.4,
-   "hasta": 50.7
-  },
-  {
-   "texto": "Aprende",
-   "desde": 52.64,
-   "hasta": 52.88
-  },
-  {
-   "texto": "a",
-   "desde": 52.9,
-   "hasta": 52.94
-  },
-  {
-   "texto": "trabajar",
-   "desde": 52.98,
-   "hasta": 53.34
-  },
-  {
-   "texto": "con",
-   "desde": 53.4,
-   "hasta": 53.56
-  },
-  {
-   "texto": "cifras",
-   "desde": 53.62,
-   "hasta": 54.04
-  },
-  {
-   "texto": "y",
-   "desde": 54.08,
-   "hasta": 54.1
-  },
-  {
-   "texto": "a",
-   "desde": 54.14,
-   "hasta": 54.18
-  },
-  {
-   "texto": "contrastarlas",
-   "desde": 54.22,
-   "hasta": 54.86
-  },
-  {
-   "texto": "con",
-   "desde": 54.9,
-   "hasta": 55.0
-  },
-  {
-   "texto": "documentos.",
-   "desde": 55.04,
-   "hasta": 55.68
-  },
-  {
-   "texto": "Años",
-   "desde": 56.68,
-   "hasta": 56.86
-  },
-  {
-   "texto": "después,",
-   "desde": 56.88,
-   "hasta": 57.26
-  },
-  {
-   "texto": "llevará",
-   "desde": 57.54,
-   "hasta": 57.84
-  },
-  {
-   "texto": "esa",
-   "desde": 57.88,
-   "hasta": 58.02
-  },
-  {
-   "texto": "disciplina",
-   "desde": 58.04,
-   "hasta": 58.58
-  },
-  {
-   "texto": "al",
-   "desde": 58.62,
-   "hasta": 58.68
-  },
-  {
-   "texto": "estudio",
-   "desde": 58.74,
-   "hasta": 59.12
-  },
-  {
-   "texto": "de",
-   "desde": 59.14,
-   "hasta": 59.2
-  },
-  {
-   "texto": "la",
-   "desde": 59.24,
-   "hasta": 59.32
-  },
-  {
-   "texto": "corrupción",
-   "desde": 59.36,
-   "hasta": 59.84
-  },
-  {
-   "texto": "en",
-   "desde": 59.88,
-   "hasta": 59.94
-  },
-  {
-   "texto": "el",
-   "desde": 59.98,
-   "hasta": 60.08
-  },
-  {
-   "texto": "Perú.",
-   "desde": 60.12,
-   "hasta": 60.42
-  },
-  {
-   "texto": "De",
-   "desde": 62.34,
-   "hasta": 62.42
-  },
-  {
-   "texto": "otro",
-   "desde": 62.48,
-   "hasta": 62.64
-  },
-  {
-   "texto": "de",
-   "desde": 62.66,
-   "hasta": 62.74
-  },
-  {
-   "texto": "sus",
-   "desde": 62.78,
-   "hasta": 62.9
-  },
-  {
-   "texto": "profesores",
-   "desde": 62.94,
-   "hasta": 63.4
-  },
-  {
-   "texto": "en",
-   "desde": 63.44,
-   "hasta": 63.52
-  },
-  {
-   "texto": "Columbia,",
-   "desde": 63.56,
-   "hasta": 64.019
-  },
-  {
-   "texto": "Kenneth",
-   "desde": 64.2,
-   "hasta": 64.48
-  },
-  {
-   "texto": "Maxwell,",
-   "desde": 64.519,
-   "hasta": 64.92
-  },
-  {
-   "texto": "aprende",
-   "desde": 65.319,
-   "hasta": 65.64
-  },
-  {
-   "texto": "que",
-   "desde": 65.68,
-   "hasta": 65.76
-  },
-  {
-   "texto": "un",
-   "desde": 65.82,
-   "hasta": 65.92
-  },
-  {
-   "texto": "buen",
-   "desde": 65.96,
-   "hasta": 66.1
-  },
-  {
-   "texto": "historiador",
-   "desde": 66.14,
-   "hasta": 66.72
-  },
-  {
-   "texto": "combina",
-   "desde": 66.78,
-   "hasta": 67.14
-  },
-  {
-   "texto": "la",
-   "desde": 67.18,
-   "hasta": 67.28
-  },
-  {
-   "texto": "profundidad",
-   "desde": 67.32,
-   "hasta": 68.04
-  },
-  {
-   "texto": "con",
-   "desde": 68.1,
-   "hasta": 68.22
-  },
-  {
-   "texto": "la",
-   "desde": 68.24,
-   "hasta": 68.34
-  },
-  {
-   "texto": "claridad",
-   "desde": 68.38,
-   "hasta": 68.9
   }
  ],
  "s06": [
@@ -3888,66 +2991,911 @@
    "hasta": 44.26
   }
  ],
- "s07": [
+ "s05": [
   {
-   "texto": "El",
-   "desde": 2.78,
-   "hasta": 2.86
+   "texto": "Poco",
+   "desde": 0.3,
+   "hasta": 0.5
   },
   {
-   "texto": "próximo",
+   "texto": "después,",
+   "desde": 0.56,
+   "hasta": 1.1
+  },
+  {
+   "texto": "toma",
+   "desde": 1.48,
+   "hasta": 1.66
+  },
+  {
+   "texto": "un",
+   "desde": 1.68,
+   "hasta": 1.78
+  },
+  {
+   "texto": "camino",
+   "desde": 1.8,
+   "hasta": 2.14
+  },
+  {
+   "texto": "que",
+   "desde": 2.24,
+   "hasta": 2.32
+  },
+  {
+   "texto": "pocos",
+   "desde": 2.52,
+   "hasta": 2.88
+  },
+  {
+   "texto": "peruanos",
    "desde": 2.92,
-   "hasta": 3.24
+   "hasta": 3.36
   },
   {
-   "texto": "episodio",
-   "desde": 3.28,
-   "hasta": 3.76
+   "texto": "habían",
+   "desde": 3.38,
+   "hasta": 3.66
   },
   {
-   "texto": "sigue",
-   "desde": 3.88,
-   "hasta": 4.12
+   "texto": "tomado.",
+   "desde": 3.72,
+   "hasta": 4.14
   },
   {
-   "texto": "esa",
-   "desde": 4.16,
-   "hasta": 4.34
+   "texto": "Buena",
+   "desde": 4.8,
+   "hasta": 4.98
   },
   {
-   "texto": "plata",
-   "desde": 4.42,
-   "hasta": 4.76
-  },
-  {
-   "texto": "y",
-   "desde": 5.1,
-   "hasta": 5.14
-  },
-  {
-   "texto": "se",
-   "desde": 5.2,
+   "texto": "parte",
+   "desde": 5.08,
    "hasta": 5.3
   },
   {
-   "texto": "llama",
+   "texto": "de",
    "desde": 5.34,
-   "hasta": 5.64
+   "hasta": 5.42
+  },
+  {
+   "texto": "los",
+   "desde": 5.46,
+   "hasta": 5.56
+  },
+  {
+   "texto": "historiadores",
+   "desde": 5.6,
+   "hasta": 6.18
+  },
+  {
+   "texto": "peruanos",
+   "desde": 6.22,
+   "hasta": 6.64
+  },
+  {
+   "texto": "miraba",
+   "desde": 6.74,
+   "hasta": 7.04
+  },
+  {
+   "texto": "a",
+   "desde": 7.06,
+   "hasta": 7.1
+  },
+  {
+   "texto": "París,",
+   "desde": 7.18,
+   "hasta": 7.56
+  },
+  {
+   "texto": "la",
+   "desde": 7.94,
+   "hasta": 8.0
+  },
+  {
+   "texto": "ciudad",
+   "desde": 8.08,
+   "hasta": 8.3
+  },
+  {
+   "texto": "de",
+   "desde": 8.34,
+   "hasta": 8.42
+  },
+  {
+   "texto": "Braudel,",
+   "desde": 8.44,
+   "hasta": 8.86
+  },
+  {
+   "texto": "donde",
+   "desde": 9.22,
+   "hasta": 9.4
+  },
+  {
+   "texto": "se",
+   "desde": 9.44,
+   "hasta": 9.5
+  },
+  {
+   "texto": "habían",
+   "desde": 9.52,
+   "hasta": 9.76
+  },
+  {
+   "texto": "formado",
+   "desde": 9.8,
+   "hasta": 10.16
+  },
+  {
+   "texto": "algunos",
+   "desde": 10.22,
+   "hasta": 10.64
+  },
+  {
+   "texto": "de",
+   "desde": 10.68,
+   "hasta": 10.72
+  },
+  {
+   "texto": "los",
+   "desde": 10.76,
+   "hasta": 10.84
+  },
+  {
+   "texto": "profesores",
+   "desde": 10.9,
+   "hasta": 11.4
+  },
+  {
+   "texto": "de",
+   "desde": 11.44,
+   "hasta": 11.54
+  },
+  {
+   "texto": "Quirós.",
+   "desde": 11.56,
+   "hasta": 11.92
+  },
+  {
+   "texto": "Él,",
+   "desde": 12.56,
+   "hasta": 12.68
+  },
+  {
+   "texto": "en",
+   "desde": 12.9,
+   "hasta": 12.98
+  },
+  {
+   "texto": "cambio,",
+   "desde": 13.06,
+   "hasta": 13.4
+  },
+  {
+   "texto": "se",
+   "desde": 13.72,
+   "hasta": 13.82
+  },
+  {
+   "texto": "va",
+   "desde": 13.84,
+   "hasta": 13.92
+  },
+  {
+   "texto": "a",
+   "desde": 13.94,
+   "hasta": 14.0
+  },
+  {
+   "texto": "Nueva",
+   "desde": 14.04,
+   "hasta": 14.24
+  },
+  {
+   "texto": "York,",
+   "desde": 14.3,
+   "hasta": 14.56
+  },
+  {
+   "texto": "a",
+   "desde": 14.88,
+   "hasta": 14.92
+  },
+  {
+   "texto": "la",
+   "desde": 14.94,
+   "hasta": 14.98
+  },
+  {
+   "texto": "Universidad",
+   "desde": 15.02,
+   "hasta": 15.54
+  },
+  {
+   "texto": "de",
+   "desde": 15.58,
+   "hasta": 15.62
+  },
+  {
+   "texto": "Columbia.",
+   "desde": 15.7,
+   "hasta": 16.16
+  },
+  {
+   "texto": "Allí,",
+   "desde": 17.96,
+   "hasta": 18.18
+  },
+  {
+   "texto": "el",
+   "desde": 18.46,
+   "hasta": 18.52
+  },
+  {
+   "texto": "historiador",
+   "desde": 18.56,
+   "hasta": 19.0
+  },
+  {
+   "texto": "Herbert",
+   "desde": 19.14,
+   "hasta": 19.44
+  },
+  {
+   "texto": "Klein",
+   "desde": 19.54,
+   "hasta": 19.88
+  },
+  {
+   "texto": "le",
+   "desde": 19.92,
+   "hasta": 19.98
+  },
+  {
+   "texto": "ofrece",
+   "desde": 20.0,
+   "hasta": 20.28
+  },
+  {
+   "texto": "una",
+   "desde": 20.32,
+   "hasta": 20.48
+  },
+  {
+   "texto": "beca",
+   "desde": 20.52,
+   "hasta": 20.74
+  },
+  {
+   "texto": "de",
+   "desde": 20.76,
+   "hasta": 20.84
+  },
+  {
+   "texto": "maestría",
+   "desde": 20.88,
+   "hasta": 21.4
+  },
+  {
+   "texto": "y",
+   "desde": 21.42,
+   "hasta": 21.46
+  },
+  {
+   "texto": "doctorado,",
+   "desde": 21.5,
+   "hasta": 22.0
+  },
+  {
+   "texto": "y",
+   "desde": 22.54,
+   "hasta": 22.62
+  },
+  {
+   "texto": "Quirós",
+   "desde": 22.66,
+   "hasta": 23.04
+  },
+  {
+   "texto": "aprende",
+   "desde": 23.12,
+   "hasta": 23.42
+  },
+  {
+   "texto": "historia",
+   "desde": 23.44,
+   "hasta": 23.8
+  },
+  {
+   "texto": "cuantitativa:",
+   "desde": 23.86,
+   "hasta": 24.54
+  },
+  {
+   "texto": "pensar",
+   "desde": 25.02,
+   "hasta": 25.3
+  },
+  {
+   "texto": "el",
+   "desde": 25.34,
+   "hasta": 25.44
+  },
+  {
+   "texto": "pasado",
+   "desde": 25.48,
+   "hasta": 25.84
+  },
+  {
+   "texto": "con",
+   "desde": 25.9,
+   "hasta": 26.08
+  },
+  {
+   "texto": "números,",
+   "desde": 26.14,
+   "hasta": 26.56
+  },
+  {
+   "texto": "no",
+   "desde": 26.88,
+   "hasta": 26.98
+  },
+  {
+   "texto": "solo",
+   "desde": 27.06,
+   "hasta": 27.26
+  },
+  {
+   "texto": "con",
+   "desde": 27.3,
+   "hasta": 27.42
+  },
+  {
+   "texto": "discursos.",
+   "desde": 27.44,
+   "hasta": 28.04
+  },
+  {
+   "texto": "Una",
+   "desde": 28.78,
+   "hasta": 28.9
+  },
+  {
+   "texto": "de",
+   "desde": 28.92,
+   "hasta": 28.98
+  },
+  {
+   "texto": "sus",
+   "desde": 29.02,
+   "hasta": 29.14
+  },
+  {
+   "texto": "herramientas",
+   "desde": 29.18,
+   "hasta": 29.72
+  },
+  {
+   "texto": "se",
+   "desde": 29.78,
+   "hasta": 29.86
+  },
+  {
+   "texto": "llama",
+   "desde": 29.88,
+   "hasta": 30.12
+  },
+  {
+   "texto": "regresión.",
+   "desde": 30.2,
+   "hasta": 30.86
+  },
+  {
+   "texto": "Imagina",
+   "desde": 31.34,
+   "hasta": 31.74
+  },
+  {
+   "texto": "muchos",
+   "desde": 31.84,
+   "hasta": 32.2
+  },
+  {
+   "texto": "puntos",
+   "desde": 32.259,
+   "hasta": 32.52
+  },
+  {
+   "texto": "desordenados,",
+   "desde": 32.56,
+   "hasta": 33.26
+  },
+  {
+   "texto": "cada",
+   "desde": 33.54,
+   "hasta": 33.78
+  },
+  {
+   "texto": "uno",
+   "desde": 33.86,
+   "hasta": 34.12
+  },
+  {
+   "texto": "una",
+   "desde": 34.2,
+   "hasta": 34.3
+  },
+  {
+   "texto": "observación,",
+   "desde": 34.34,
+   "hasta": 34.92
+  },
+  {
+   "texto": "que",
+   "desde": 35.28,
+   "hasta": 35.32
+  },
+  {
+   "texto": "a",
+   "desde": 35.36,
+   "hasta": 35.4
+  },
+  {
+   "texto": "simple",
+   "desde": 35.44,
+   "hasta": 35.72
+  },
+  {
+   "texto": "vista",
+   "desde": 35.76,
+   "hasta": 36.08
+  },
+  {
+   "texto": "parecen",
+   "desde": 36.14,
+   "hasta": 36.52
+  },
+  {
+   "texto": "solo",
+   "desde": 36.6,
+   "hasta": 36.82
+  },
+  {
+   "texto": "ruido.",
+   "desde": 36.88,
+   "hasta": 37.24
   },
   {
    "texto": "La",
-   "desde": 5.98,
-   "hasta": 6.12
+   "desde": 38.16,
+   "hasta": 38.22
   },
   {
-   "texto": "deuda",
-   "desde": 6.2,
-   "hasta": 6.56
+   "texto": "regresión",
+   "desde": 38.28,
+   "hasta": 38.88
   },
   {
-   "texto": "defraudada",
-   "desde": 6.64,
-   "hasta": 7.3
+   "texto": "busca",
+   "desde": 38.94,
+   "hasta": 39.2
+  },
+  {
+   "texto": "la",
+   "desde": 39.24,
+   "hasta": 39.34
+  },
+  {
+   "texto": "línea",
+   "desde": 39.38,
+   "hasta": 39.64
+  },
+  {
+   "texto": "que",
+   "desde": 39.68,
+   "hasta": 39.78
+  },
+  {
+   "texto": "pasa",
+   "desde": 39.82,
+   "hasta": 40.06
+  },
+  {
+   "texto": "lo",
+   "desde": 40.12,
+   "hasta": 40.22
+  },
+  {
+   "texto": "más",
+   "desde": 40.32,
+   "hasta": 40.48
+  },
+  {
+   "texto": "cerca",
+   "desde": 40.54,
+   "hasta": 40.82
+  },
+  {
+   "texto": "posible",
+   "desde": 40.86,
+   "hasta": 41.26
+  },
+  {
+   "texto": "de",
+   "desde": 41.28,
+   "hasta": 41.4
+  },
+  {
+   "texto": "todos",
+   "desde": 41.44,
+   "hasta": 42.04
+  },
+  {
+   "texto": "y",
+   "desde": 42.1,
+   "hasta": 42.16
+  },
+  {
+   "texto": "si",
+   "desde": 42.2,
+   "hasta": 42.26
+  },
+  {
+   "texto": "hay",
+   "desde": 42.28,
+   "hasta": 42.36
+  },
+  {
+   "texto": "una",
+   "desde": 42.4,
+   "hasta": 42.54
+  },
+  {
+   "texto": "tendencia,",
+   "desde": 42.58,
+   "hasta": 43.1
+  },
+  {
+   "texto": "la",
+   "desde": 43.3,
+   "hasta": 43.38
+  },
+  {
+   "texto": "deja",
+   "desde": 43.42,
+   "hasta": 43.66
+  },
+  {
+   "texto": "ver.",
+   "desde": 43.7,
+   "hasta": 43.94
+  },
+  {
+   "texto": "Cada",
+   "desde": 44.54,
+   "hasta": 44.78
+  },
+  {
+   "texto": "punto",
+   "desde": 44.84,
+   "hasta": 45.14
+  },
+  {
+   "texto": "junta",
+   "desde": 45.2,
+   "hasta": 45.52
+  },
+  {
+   "texto": "dos",
+   "desde": 45.58,
+   "hasta": 45.74
+  },
+  {
+   "texto": "cifras",
+   "desde": 45.8,
+   "hasta": 46.44
+  },
+  {
+   "texto": "y",
+   "desde": 46.48,
+   "hasta": 46.52
+  },
+  {
+   "texto": "la",
+   "desde": 46.56,
+   "hasta": 46.6
+  },
+  {
+   "texto": "inclinación",
+   "desde": 46.62,
+   "hasta": 47.12
+  },
+  {
+   "texto": "de",
+   "desde": 47.16,
+   "hasta": 47.22
+  },
+  {
+   "texto": "la",
+   "desde": 47.26,
+   "hasta": 47.34
+  },
+  {
+   "texto": "línea",
+   "desde": 47.38,
+   "hasta": 47.7
+  },
+  {
+   "texto": "dice",
+   "desde": 47.76,
+   "hasta": 48.06
+  },
+  {
+   "texto": "cuánto",
+   "desde": 48.12,
+   "hasta": 48.46
+  },
+  {
+   "texto": "sube",
+   "desde": 48.52,
+   "hasta": 48.78
+  },
+  {
+   "texto": "una",
+   "desde": 48.88,
+   "hasta": 49.12
+  },
+  {
+   "texto": "por",
+   "desde": 49.18,
+   "hasta": 49.36
+  },
+  {
+   "texto": "cada",
+   "desde": 49.42,
+   "hasta": 49.66
+  },
+  {
+   "texto": "paso",
+   "desde": 49.7,
+   "hasta": 49.94
+  },
+  {
+   "texto": "que",
+   "desde": 49.98,
+   "hasta": 50.06
+  },
+  {
+   "texto": "da",
+   "desde": 50.1,
+   "hasta": 50.18
+  },
+  {
+   "texto": "la",
+   "desde": 50.22,
+   "hasta": 50.32
+  },
+  {
+   "texto": "otra.",
+   "desde": 50.4,
+   "hasta": 50.7
+  },
+  {
+   "texto": "Aprende",
+   "desde": 52.64,
+   "hasta": 52.88
+  },
+  {
+   "texto": "a",
+   "desde": 52.9,
+   "hasta": 52.94
+  },
+  {
+   "texto": "trabajar",
+   "desde": 52.98,
+   "hasta": 53.34
+  },
+  {
+   "texto": "con",
+   "desde": 53.4,
+   "hasta": 53.56
+  },
+  {
+   "texto": "cifras",
+   "desde": 53.62,
+   "hasta": 54.04
+  },
+  {
+   "texto": "y",
+   "desde": 54.08,
+   "hasta": 54.1
+  },
+  {
+   "texto": "a",
+   "desde": 54.14,
+   "hasta": 54.18
+  },
+  {
+   "texto": "contrastarlas",
+   "desde": 54.22,
+   "hasta": 54.86
+  },
+  {
+   "texto": "con",
+   "desde": 54.9,
+   "hasta": 55.0
+  },
+  {
+   "texto": "documentos.",
+   "desde": 55.04,
+   "hasta": 55.68
+  },
+  {
+   "texto": "Años",
+   "desde": 56.68,
+   "hasta": 56.86
+  },
+  {
+   "texto": "después,",
+   "desde": 56.88,
+   "hasta": 57.26
+  },
+  {
+   "texto": "llevará",
+   "desde": 57.54,
+   "hasta": 57.84
+  },
+  {
+   "texto": "esa",
+   "desde": 57.88,
+   "hasta": 58.02
+  },
+  {
+   "texto": "disciplina",
+   "desde": 58.04,
+   "hasta": 58.58
+  },
+  {
+   "texto": "al",
+   "desde": 58.62,
+   "hasta": 58.68
+  },
+  {
+   "texto": "estudio",
+   "desde": 58.74,
+   "hasta": 59.12
+  },
+  {
+   "texto": "de",
+   "desde": 59.14,
+   "hasta": 59.2
+  },
+  {
+   "texto": "la",
+   "desde": 59.24,
+   "hasta": 59.32
+  },
+  {
+   "texto": "corrupción",
+   "desde": 59.36,
+   "hasta": 59.84
+  },
+  {
+   "texto": "en",
+   "desde": 59.88,
+   "hasta": 59.94
+  },
+  {
+   "texto": "el",
+   "desde": 59.98,
+   "hasta": 60.08
+  },
+  {
+   "texto": "Perú.",
+   "desde": 60.12,
+   "hasta": 60.42
+  },
+  {
+   "texto": "De",
+   "desde": 62.34,
+   "hasta": 62.42
+  },
+  {
+   "texto": "otro",
+   "desde": 62.48,
+   "hasta": 62.64
+  },
+  {
+   "texto": "de",
+   "desde": 62.66,
+   "hasta": 62.74
+  },
+  {
+   "texto": "sus",
+   "desde": 62.78,
+   "hasta": 62.9
+  },
+  {
+   "texto": "profesores",
+   "desde": 62.94,
+   "hasta": 63.4
+  },
+  {
+   "texto": "en",
+   "desde": 63.44,
+   "hasta": 63.52
+  },
+  {
+   "texto": "Columbia,",
+   "desde": 63.56,
+   "hasta": 64.019
+  },
+  {
+   "texto": "Kenneth",
+   "desde": 64.2,
+   "hasta": 64.459
+  },
+  {
+   "texto": "Maxwell,",
+   "desde": 64.519,
+   "hasta": 64.92
+  },
+  {
+   "texto": "aprende",
+   "desde": 65.319,
+   "hasta": 65.64
+  },
+  {
+   "texto": "que",
+   "desde": 65.68,
+   "hasta": 65.76
+  },
+  {
+   "texto": "un",
+   "desde": 65.82,
+   "hasta": 65.92
+  },
+  {
+   "texto": "buen",
+   "desde": 65.96,
+   "hasta": 66.1
+  },
+  {
+   "texto": "historiador",
+   "desde": 66.14,
+   "hasta": 66.72
+  },
+  {
+   "texto": "combina",
+   "desde": 66.78,
+   "hasta": 67.14
+  },
+  {
+   "texto": "la",
+   "desde": 67.18,
+   "hasta": 67.28
+  },
+  {
+   "texto": "profundidad",
+   "desde": 67.32,
+   "hasta": 68.04
+  },
+  {
+   "texto": "con",
+   "desde": 68.1,
+   "hasta": 68.22
+  },
+  {
+   "texto": "la",
+   "desde": 68.24,
+   "hasta": 68.34
+  },
+  {
+   "texto": "claridad",
+   "desde": 68.38,
+   "hasta": 68.9
   }
  ],
  "s08": [
@@ -4310,6 +4258,38 @@
    "texto": "libro",
    "desde": 27.96,
    "hasta": 28.28
+  }
+ ],
+ "s07": [
+  {
+   "texto": "El",
+   "desde": 2.8,
+   "hasta": 2.92
+  },
+  {
+   "texto": "próximo",
+   "desde": 2.94,
+   "hasta": 3.3
+  },
+  {
+   "texto": "episodio",
+   "desde": 3.34,
+   "hasta": 3.92
+  },
+  {
+   "texto": "sigue",
+   "desde": 4.08,
+   "hasta": 4.38
+  },
+  {
+   "texto": "esa",
+   "desde": 4.42,
+   "hasta": 4.6
+  },
+  {
+   "texto": "plata",
+   "desde": 4.68,
+   "hasta": 5.0
   }
  ]
 }

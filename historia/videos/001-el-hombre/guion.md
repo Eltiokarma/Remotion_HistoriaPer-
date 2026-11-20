@@ -264,7 +264,9 @@ Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochen
 ## ESC 8 — Cierre · `s07`
 
 **VO:**
-[PAUSA 2,5s] El próximo episodio sigue esa plata, y se llama *La deuda defraudada*.
+[PAUSA 2,5s] El próximo episodio sigue esa plata.
+
+La voz ya no dice el nombre del próximo episodio: queda solo en la tarjeta (Gerson, 20/11). Es la única oración de menos de 10 palabras del guion, por pedido suyo.
 
 **Imagen:** las pruebas de imprenta del comienzo se cierran (sin limpiarse: eso queda para el 0·4); fundido a negro; tarjeta con «La deuda defraudada» grande y «(1850)» chico debajo, que entra con la voz («El próximo episodio…»): sin negro largo con voz encima.
 

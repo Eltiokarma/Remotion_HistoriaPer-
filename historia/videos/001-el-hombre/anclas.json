@@ -121,6 +121,10 @@
     "musica": {
       "tras": "pagó por esa deuda",
       "mas": -30.25
+    },
+    "zarpa": {
+      "tras": "vendía a europa",
+      "mas": 0.5
     }
   },
   "s05": {

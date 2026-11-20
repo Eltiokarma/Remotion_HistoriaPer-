@@ -7,7 +7,7 @@ import { Sfx } from '../../components/audio/Sfx';
 import { EdificioEstado } from '../../components/graficos/EdificioEstado';
 import { ILUSTRACION, LibroHojeable, tiemposHojas } from '../../components/graficos/LibroHojeable';
 import { BARCO_ANCLADO, BARCO_LAMINA, Barco, BarcoLamina, GrabadoGuanero } from '../../components/graficos/GrabadoGuanero';
-import { BARCO_IMAGEN, BarcoImagen, EdificioImagen, GrabadoImagen, ValeImagen } from '../../components/graficos/ObjetosImagen';
+import { BARCO_IMAGEN, BARCO_ZARPADO, BarcoImagen, EdificioImagen, GrabadoImagen, ValeImagen } from '../../components/graficos/ObjetosImagen';
 import { delVideo } from '../../estilo/recursos';
 import { useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Pluma } from '../../components/graficos/Pluma';
@@ -53,7 +53,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   // con imágenes (PNG en estilo de grabado), reemplazan a las láminas
   const img = props.imagenes ? Object.fromEntries(Object.entries(props.imagenes).map(([k, v]) => [k, v ? delVideo(video.id, v) : undefined])) as { [K in keyof NonNullable<P['imagenes']>]: string } : undefined;
   const grabado = (id: string, anclado: boolean) => (img
-    ? <GrabadoImagen imagenes={{ mar: img.mar, islas: img.islas, barco: img.barco, saco: img.saco }} t={t} anclado={anclado} carga={t >= tSacos ? t - tSacos : undefined} />
+    ? <GrabadoImagen imagenes={{ mar: img.mar, islas: img.islas, barco: img.barco, saco: img.saco }} t={t} anclado={anclado} carga={t >= tSacos ? t - tSacos : undefined} zarpa={kZarpa} />
     : <GrabadoGuanero paleta={pal} t={t} guano={1} id={id} anclado={anclado} carga={t >= tSacos ? t - tSacos : undefined} lamina={lIslas} />);
   const fps = video.fps;
   const t = frame / fps;
@@ -77,6 +77,9 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const qx = (ILUSTRACION.x * S_FIN) / (S_FIN - 1), qy = (ILUSTRACION.y * S_FIN) / (S_FIN - 1);
   // las fichas del libro (lugar y fecha, nombre): cada una dura hasta que entra la siguiente o la cámara entra al grabado
   const fichasLibro = conLibro ? (props.fichas_libro ?? []).map((f) => ({ texto: f.texto, destacada: f.destacada, desde: beat(b, f.beat, Infinity) })).filter((f) => Number.isFinite(f.desde)) : [];
+  // el barco zarpa hacia Europa (solo con imágenes: el barco va suelto); `pesado`, como algo cargado que arranca
+  const tZarpa = props.imagenes ? beat(b, 'zarpa', Infinity) : Infinity;
+  const kZarpa = tramo(t, tZarpa, 3.2, 'pesado');
   const tPregunta = props.pregunta ? beat(b, 'pregunta', Infinity) : Infinity;
   // la versión de entonces: tarjeta punteada fija en pantalla; el corrector tacha una palabra; se va con la pregunta
   const tVersion = props.version ? beat(b, 'version', Infinity) : Infinity, tTacha = props.version ? beat(b, 'tacha', Infinity) : Infinity;
@@ -95,7 +98,8 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const sigue = props.sigue_barco ? tramo(t, tSigue, DUR_SIGUE, 'solemne') : 1;
   const enViaje = props.sigue_barco && t >= tSigue && sigue < 1;
   // con la lámina, la fragata está en otro lugar del grabado y en el Estado se dibuja la misma fragata
-  const ANCLA = img ? BARCO_IMAGEN : lIslas ? BARCO_LAMINA : BARCO_ANCLADO;
+  // con `zarpa`, el viaje al Estado sale de donde quedó el barco después de zarpar
+  const ANCLA = img ? (Number.isFinite(tZarpa) ? BARCO_ZARPADO : BARCO_IMAGEN) : lIslas ? BARCO_LAMINA : BARCO_ANCLADO;
   const BARCO2 = img ? { x: 430, y: 742, escala: 0.92 } : lIslas ? { x: 430, y: 742, escala: 0.95 } : { x: 430, y: 742, escala: 1.25 };
   const S_VIAJE = BARCO2.escala / ANCLA.escala;
   const vx = mix(ANCLA.x, BARCO2.x, sigue), vy = mix(ANCLA.y, BARCO2.y, sigue), vs = Math.pow(S_VIAJE, sigue);

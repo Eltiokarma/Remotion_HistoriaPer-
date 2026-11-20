@@ -102,6 +102,7 @@ export const beats = {
   libro: 'la tesis se vuelve libro',
   titulo: 'se estampa el título en la tapa',
   pregunta: '(con pregunta) la pregunta se escribe fuerte',
+  zarpa: '(con imagenes) el barco cargado zarpa hacia Europa (a la derecha) y queda más lejos',
   version: '(con version) entra la tarjeta punteada con la versión de entonces',
   tacha: '(con version) el corrector tacha en rojo la palabra `tachar`',
 };

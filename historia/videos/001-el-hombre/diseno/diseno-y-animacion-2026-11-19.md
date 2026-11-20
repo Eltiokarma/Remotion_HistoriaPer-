@@ -225,3 +225,9 @@ Integradas con `src/components/graficos/ObjetosImagen.tsx`, conservando cada ani
 - **El barco que zarpa (`zarpa`):** todavía no. El barco ya va suelto y volteado, así que es el paso siguiente.
 
 **Para el render final.** Gerson decidió el 20/11 subirlas a git como excepción a la regla de imágenes fuera de git (`historia/CLAUDE.md` §1.1·5 y `.gitignore`): las nueve que usa el 0·1, 27 MB. Así el render de GitHub (`render.yml`) las encuentra. Las que no se usan siguen fuera.
+
+## Revisión del prototipo (20 de noviembre de 2026, Gerson)
+
+- **El barco zarpa.** Beat `zarpa` de s06, anclado 0,5 s después de «vendía a Europa» (16,2 s), cuando el último saco ya subió (los cinco sacos terminan hacia 16,1 s). El barco suelta el muelle y se aleja hacia la derecha con peso `pesado` en 3,2 s y queda más chico (`BARCO_ZARPADO`): la riqueza se va. Comprobado en cuadros: 14,7 s (saco en el aire), 16,2 s (atracado y cargado), 18 s (ya afuera).
+- **El lápiz de las correcciones (s01).** Antes quedaba quieto y era enorme. Ahora la punta sigue la marca que se está dibujando (el mismo trazado que el tachón o el círculo) y el lápiz mide un tercio del ancho de la pila. Antes de la primera marca espera junto a la hoja.
+- **Cierre (s07).** La voz ya no dice el nombre del próximo episodio: solo «El próximo episodio sigue esa plata.» El título queda en la tarjeta. Voz de s07 regenerada (5,3 s) y beats vueltos a anclar.
