@@ -20,10 +20,13 @@ type Props = {
 const COSTO_CON_TABLA = {s: 0.86, tx: 0, ty: 60};
 /** Ejes del ejemplo de regresión (x0, y0, ancho, alto) y del gráfico del costo, en la lámina. */
 const EJES_REGRESION = [760, 300, 1000, 540] as const, EJES_COSTO = [220, 330, 1430, 490] as const;
-/** La recta de la lámina de regresión y el escalón de la pendiente (de x = 1100 a x = 1400). */
+/**
+ * La recta de la lámina de regresión y el escalón de la pendiente (de x = 1000 a x = 1500: el doble que antes,
+ * con la misma pendiente, para que «cuánto pesa» se vea; auditoría visual del 001, hoja 6).
+ */
 const RECTA = {x1: 760, y1: 743.624, x2: 1720, y2: 426.042};
 const yRecta = (x: number) => RECTA.y1 + ((x - RECTA.x1) * (RECTA.y2 - RECTA.y1)) / (RECTA.x2 - RECTA.x1);
-const PASO = {xa: 1100, xb: 1400};
+const PASO = {xa: 1000, xb: 1500};
 /**
  * Las frases de la lámina de regresión, una a la vez y en el mismo lugar (a la izquierda del gráfico), cada
  * una con la palabra de la voz que la nombra y una línea que señala lo que explica. Piezas de la capa Texto,
@@ -197,11 +200,15 @@ export const VectorCraft: React.FC<Props> = ({videoId, archivo, modo, t, beats: 
       const h = tramo(t, T('pendiente'), 0.6, 'natural'), v = tramo(t, T('pendiente') + 0.6, 0.6, 'natural');
       const fuera = 1 - clamp(haciaSerie * 2.5);
       if (h <= 0 || fuera <= 0) return null;
-      return <g opacity={fuera} fontFamily="serif" fontStyle="italic" fontSize={26}>
-        <line x1={PASO.xa} y1={ya} x2={mix(PASO.xa, PASO.xb, h)} y2={ya} stroke="#e8dabc" strokeWidth={2.5} strokeDasharray="8 6" />
-        {v > 0 ? <line x1={PASO.xb} y1={ya} x2={PASO.xb} y2={mix(ya, yb, v)} stroke="#d08a70" strokeWidth={4} strokeLinecap="round" /> : null}
-        <text x={(PASO.xa + PASO.xb) / 2} y={ya + 34} textAnchor="middle" fill="#e8dabc" opacity={h}>un paso</text>
-        <text x={PASO.xb + 16} y={(ya + yb) / 2 + 8} fill="#e6a58c" opacity={v}>cuánto sube</text>
+      // lo que sube es el foco (§2.2): un brillo que llega con el trazo y se asienta
+      const brilla = v * (1 - 0.5 * tramo(t, T('pendiente') + 1.6, 0.8, 'natural'));
+      return <g opacity={fuera} fontFamily="serif" fontStyle="italic" fontSize={36}>
+        <line x1={PASO.xa} y1={ya} x2={mix(PASO.xa, PASO.xb, h)} y2={ya} stroke="#e8dabc" strokeWidth={3} strokeDasharray="10 7" />
+        {v > 0 ? <line x1={PASO.xb} y1={ya} x2={PASO.xb} y2={mix(ya, yb, v)} stroke="#f3d692" strokeWidth={18} strokeLinecap="round" opacity={0.3 * brilla}
+          style={{filter: 'blur(6px)'}} /> : null}
+        {v > 0 ? <line x1={PASO.xb} y1={ya} x2={PASO.xb} y2={mix(ya, yb, v)} stroke="#d08a70" strokeWidth={7} strokeLinecap="round" /> : null}
+        <text x={(PASO.xa + PASO.xb) / 2} y={ya + 46} textAnchor="middle" fill="#e8dabc" opacity={h}>un paso</text>
+        <text x={PASO.xb + 22} y={(ya + yb) / 2 + 12} fill="#e6a58c" opacity={v}>cuánto sube</text>
       </g>;
     })() : null}
     {modo === 'costo' && tabla ? (() => {

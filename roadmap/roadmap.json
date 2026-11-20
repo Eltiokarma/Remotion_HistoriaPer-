@@ -1250,17 +1250,68 @@
       }
     },
     {
-      "id": "e1-revision-laminas",
+      "id": "e1-luz-lampara",
       "fase": "e1",
-      "titulo": "Revisión de Gerson de la integración de las láminas y de los efectos recuperados (E01–E12)",
-      "entregable": "Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO",
-      "estado": "pendiente",
+      "titulo": "Afinar las láminas contra «se ve muy plano»: una lámpara para todo el episodio (13 láminas, s00 a s07)",
+      "entregable": "13 láminas con modelado y sombras en VectorCraft, sombras atadas al movimiento de cada pieza y la misma luz (LAMPARA) en el episodio; 7 sin cambios a propósito (inventario, sección H)",
+      "estado": "hecho",
       "depende_de": [
         "e1-laminas"
       ],
       "prevista": null,
       "real": {
-        "inicio": null,
+        "inicio": "2026-11-17",
+        "fin": "2026-11-17"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/diseno/inventario-graficos-efectos.md",
+        "historia/src/estilo/lampara.ts"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-auditoria-visual",
+      "fase": "e1",
+      "titulo": "Auditoría de dirección visual del 001 (estructura visual) y sus seis hojas de revisión",
+      "entregable": "Las seis hojas aplicadas: s01 la línea de tiempo a escala 1,3; s02 el agua más calma (−22 % de actividad); s03 el afiche se cae y queda el viejo, y el rojo del muro baja de 8,1 % a 1,1 %; s04 los nombres de la clase grandes; s05 el escalón de «cuánto pesa» al doble; s06 el mecanismo del guano (el libro que se hojea, sin cambio a propósito). Falta la prueba con otra persona",
+      "estado": "hecho",
+      "depende_de": [
+        "e1-luz-lampara"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-17",
+        "fin": "2026-11-17"
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/001-el-hombre/diseno/auditoria-direccion-visual-2026-11-17.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e1-revision-laminas",
+      "fase": "e1",
+      "titulo": "Revisión de Gerson de la integración de las láminas y de los efectos recuperados (E01–E12)",
+      "entregable": "Veredicto sobre la vista previa; decidir los avisos de las láminas y la cruz de DIRECCION_DE_VIDEO. Notas del render (2026-11-19) aplicadas: fuente del costo sin «guion»; música desde el 0:32 (cello E2) y de salida desde el 5:19; fechas del viaje en el mapa; títulos de la regresión y de la balanza",
+      "estado": "en_curso",
+      "depende_de": [
+        "e1-laminas"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-19",
         "fin": null
       },
       "bloqueo": null,
@@ -1268,8 +1319,8 @@
       "tiempo": {
         "humano_min": null,
         "agente": null,
-        "render_s": null,
-        "maquina": null
+        "render_s": 1196,
+        "maquina": "laptop i7-11370H, 4 hilos (render completo del 001, 5:39 a 1080p, 2026-11-17)"
       }
     },
     {

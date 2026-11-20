@@ -28,7 +28,16 @@ export const esquemaAudio = z.object({
    * Música de la escena: un archivo de public/videos/<id>/musica/. Suena desde el inicio de la
    * escena; si trae `desde_beat`, el archivo empieza a sonar en ese beat (la música entra ahí).
    */
-  musica: z.object({ archivo: z.string(), nivel, ...ventanaBeats }).nullable().optional(),
+  musica: z.object({
+    archivo: z.string(), nivel, ...ventanaBeats,
+    /**
+     * Segundos que la música de esta escena empieza antes que su imagen, sonando bajo la cola de la
+     * anterior (la voz y los ambientes no se adelantan). Sin esto, el corte J de siempre (0,4 s).
+     */
+    antes_s: z.number().min(0).max(10).optional(),
+    /** Segundos en que la música sube desde el silencio hasta su nivel al empezar (por defecto, unos frames). */
+    entrada_s: z.number().min(0).max(10).optional(),
+  }).nullable().optional(),
   /**
    * Ambientes de la biblioteca compartida (public/compartido/audio/ambiente/<nombre>.mp3). Todos
    * están normalizados a −30 LUFS: con nivel 1 quedan 14 dB por debajo de la voz.

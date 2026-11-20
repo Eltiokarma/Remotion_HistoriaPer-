@@ -68,6 +68,8 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const escalaCam = Math.pow(S_FIN, zoomK);
   // punto fijo del zoom: el que termina en la esquina de la pantalla junto con la ilustración
   const qx = (ILUSTRACION.x * S_FIN) / (S_FIN - 1), qy = (ILUSTRACION.y * S_FIN) / (S_FIN - 1);
+  // las fichas del libro (lugar y fecha, nombre): cada una dura hasta que entra la siguiente o la cámara entra al grabado
+  const fichasLibro = conLibro ? (props.fichas_libro ?? []).map((f) => ({ texto: f.texto, destacada: f.destacada, desde: beat(b, f.beat, Infinity) })).filter((f) => Number.isFinite(f.desde)) : [];
   const tPregunta = props.pregunta ? beat(b, 'pregunta', Infinity) : Infinity;
   // el hallazgo, sobre la pila: el monto del vale de arriba se infla (ejemplo ilustrativo)
   const tHallazgo = beat(b, 'hallazgo', Infinity);
@@ -125,6 +127,16 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
           </LibroHojeable>
         </AbsoluteFill>
       ) : null}
+      {/* la ficha de lo que dice la voz (§2.1), fija en pantalla (no entra con la cámara): una por vez */}
+      {fase === 1 && conLibro && zoomK < 1 ? fichasLibro.map((f, j) => {
+        const fin = Math.min(fichasLibro[j + 1]?.desde ?? Infinity, tZoom);
+        if (t < f.desde || t > fin + 0.5) return null;
+        return (
+          <div key={j} style={{ position: 'absolute', left: 150, top: 90 }}>
+            <Ficha texto={f.texto} t={t - f.desde - 0.4} color={pal.papel} acento={pal.rojo} size={f.destacada ? 52 : 36} salida={tramo(t, fin, 0.45, 'natural')} />
+          </div>
+        );
+      }) : null}
       {(fase === 1 || enViaje) && (!conLibro || zoomK >= 1) ? (
         <Papel color={pal.papel} envejecido={0.3}>
           <AbsoluteFill style={enViaje ? { transformOrigin: '0 0', transform: vistaGrabado } : undefined}>
@@ -201,7 +213,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
         <Papel color={pal.papel} envejecido={0.32}>
           <Luz color={pal.ocre} x={35} y={50} radio={60} intensidad={0.08} />
           {Array.from({ length: PILA }, (_, i) => {
-            const ti = tVales + i * 0.75;
+            const ti = tVales + i * props.pila_paso;
             const k = t < ti ? 0 : spring({ frame: frame - ti * fps, fps, config: { damping: 18, mass: 0.8, stiffness: 120 } });
             if (k <= 0) return null;
             // cada vale llega por el aire (arco) y gira un poco de más antes de quedarse (follow through)
@@ -360,7 +372,8 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       <Sfx nombre="monedas" en={tFlecha + 0.4} fps={fps} volumen={0.55} />
       {conLibro ? <Sfx nombre="carpeta" en={tHojea + 0.15} fps={fps} volumen={0.45} /> : null}
       {conLibro ? tiemposHojas(tHojea, tPagina).map((h, i) => <Sfx key={`h${i}`} nombre="hoja" en={h.desde + 0.1} fps={fps} volumen={0.22 + 0.1 * Math.sin(i)} />) : null}
-      {Array.from({ length: PILA }, (_, i) => <Sfx key={`v${i}`} nombre="hoja" en={tVales + i * 0.75} fps={fps} volumen={0.4} />)}
+      {Array.from({ length: PILA }, (_, i) => <Sfx key={`v${i}`} nombre="hoja" en={tVales + i * props.pila_paso} fps={fps} volumen={0.4} />)}
+      {fichasLibro.flatMap((f, j) => f.texto.split('').map((ch, i) => (ch === ' ' ? null : <Sfx key={`fl${j}-${i}`} nombre={`tecla-${(i % 3) + 1}`} en={f.desde + 0.4 + i / 18} fps={fps} volumen={0.28} />)))}
       <Sfx nombre="sello" en={tConsol + 0.08} fps={fps} volumen={0.85} />
       {props.pregunta ? <Sfx nombre="golpe" en={tPregunta + 0.15} fps={fps} volumen={0.55} /> : null}
       {props.pregunta ? <Sfx nombre="golpe" en={tPregunta + 0.15 + 0.16 * (props.pregunta.split(' ').length - 1)} fps={fps} volumen={0.6} /> : null}

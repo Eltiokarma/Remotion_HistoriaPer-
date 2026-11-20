@@ -1,7 +1,8 @@
 {
   "format": "vectorcraft",
   "version": 4,
-  "generator": "VectorCraft 0.22.0",
+  "generator": "VectorCraft 0.24.1",
+  "pdfCompatible": false,
   "document": {
     "version": 3,
     "title": "Video 01 — Edificio del Estado",
@@ -12294,6 +12295,247 @@
                       ],
                       "closed": false
                     }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 499,
+              "name": "luz-lampara (caída hacia la derecha)",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9529412,
+                              "b": 0.8235294
+                            },
+                            "opacity": 0.1,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.4,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9529412,
+                              "b": 0.8235294
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.65,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.22,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 0.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            380.0,
+                            399.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1540.0,
+                            399.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1540.0,
+                            806.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            380.0,
+                            806.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                },
+                "live": {
+                  "shape": "rectangle",
+                  "w": 1160.0,
+                  "h": 407.0,
+                  "radii": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "xf": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    380.0,
+                    399.0
+                  ]
+                }
+              }
+            },
+            {
+              "id": 500,
+              "name": "sombra-cornisa",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.5,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.35,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.22,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": -90.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            380.0,
+                            408.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1540.0,
+                            408.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1540.0,
+                            486.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            380.0,
+                            486.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                },
+                "live": {
+                  "shape": "rectangle",
+                  "w": 1160.0,
+                  "h": 78.0,
+                  "radii": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "xf": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    380.0,
+                    408.0
                   ]
                 }
               }
@@ -34955,7 +35197,7 @@
     },
     "raster_effects_ppi": 72.0,
     "images": {},
-    "next_id": 499,
+    "next_id": 501,
     "metadata": {
       "author": "",
       "authorTitle": "",
@@ -34966,7 +35208,16 @@
       "copyrightNotice": "",
       "copyrightUrl": "",
       "created": 1794198519,
-      "modified": null
+      "modified": 1794925673
+    },
+    "last_view": {
+      "name": "",
+      "center": {
+        "x": 960.0,
+        "y": 540.0
+      },
+      "zoom": 0.5322916666666667,
+      "rotation": 0.0
     }
   },
   "images": {}

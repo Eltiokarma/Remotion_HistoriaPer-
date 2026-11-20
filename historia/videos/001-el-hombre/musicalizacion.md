@@ -583,14 +583,18 @@ los créditos listos para `fuentes.md`; córrelo en tu laptop (ver el encabezado
 | Escena | Pista | Cómo se montó |
 |---|---|---|
 | s00 | A · `V01_mus01_ver03` | entera; entra fuerte con la tajada (≈6,5 s) y se apaga sobre el libro |
-| s01 → s02 | B · `V01_mus02_ver02` | partida en dos archivos; empalme al cuadro en 7,328 s de la pista (simulado: 0 muestras de desfase) |
+| s01 → s02 | E2 · `V01_mus-E02_ver01_1` y B · `V01_mus02_ver02` | revisión del 2026-11-19: el cello (toma de E2 que no se usó en s04) entra en el 0:32, 1 s antes de la imagen (`antes_s`), y suena entero (24,6 s) bajo las pruebas y la página; silencio hasta la muerte; B entra en `final` como antes (`pista_desde`) y cruza a s02. B partida en dos archivos; empalme al cuadro en 7,328 s de la pista (simulado: 0 muestras de desfase) |
 | s03 | D · `V01_mus03_ver01_5` | entera; se detiene en 42 s, con el despegue del afiche |
 | s04 | E1, E2, E3 (una por capa) | arriba entra en `capa1`, al medio en `capa2`, el fondo en `capa3`; en `bajar` quedan solo el fondo hasta `subir` (vuelve el cello) y `remate` (vuelve la de arriba). Los 14 s del aula, sin música |
 | s05 | F · `V01_mus-E_ver01_1` (stems) | piano, cuerdas y sintetizador enteros; el clarinete entra en `pendiente` («cuánto pesa») |
 | s06 | G · `V01_mus-G_ver01_3` | corrida 2,5 s: el golpe se apaga con «…a costa del Estado» y el acorde final cae en la pregunta |
-| s07 | tema sintetizado | sin cambio (H es decisión de la serie) |
+| s07 | tema sintetizado | sin cambio de pista (H es decisión de la serie). Revisión del 2026-11-19: entra en el 5:19, 3,45 s antes de la imagen (`antes_s`), y sube en 2 s (`entrada_s`) sobre el acorde de s06, en vez de entrar de golpe en el 5:22 |
 
 Los `nivel` de `escenas.json` igualan la sonoridad efectiva de cada pista a la de la sintetizada
 que reemplaza. El montaje de s04 y s06 se rehace con `python scripts/montar_musica.py 001-el-hombre s04`
 (y `s06`), que lee `videos/001-el-hombre/montaje_musica/<escena>.json`. Con la voz real se corren
 los tiempos de cada capa a los beats nuevos y se vuelve a correr.
+
+Las pistas de Suno van en `public/videos/001-el-hombre/musica/suno/` (fuera de git). Sin un ffmpeg completo en el
+PATH, el montador funciona con el que trae Remotion (`node_modules/@remotion/compositor-*`): decodifica por un WAV
+temporal y mide la sonoridad con su propio cálculo BS.1770 (comprobado: s02 rearmado queda a 0,03 dB del original).

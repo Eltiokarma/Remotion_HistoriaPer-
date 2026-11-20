@@ -1,7 +1,8 @@
 {
   "format": "vectorcraft",
   "version": 4,
-  "generator": "VectorCraft 0.22.0",
+  "generator": "VectorCraft 0.24.1",
+  "pdfCompatible": false,
   "document": {
     "version": 3,
     "title": "PUCP — ingreso 1974",
@@ -2528,6 +2529,166 @@
                   "burasagari": "standard"
                 }
               }
+            },
+            {
+              "id": 35,
+              "name": "luz-lampara (pieza 21)",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9529412,
+                              "b": 0.8235294
+                            },
+                            "opacity": 0.22,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.35,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9529412,
+                              "b": 0.8235294
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.6,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.050980393,
+                              "g": 0.03529412,
+                              "b": 0.019607844
+                            },
+                            "opacity": 0.38,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": -45.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            195.0,
+                            595.0
+                          ],
+                          "in": [
+                            195.0,
+                            757.9240012000841
+                          ],
+                          "out": [
+                            195.0,
+                            432.0759987999159
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            490.0,
+                            300.0
+                          ],
+                          "in": [
+                            327.0759987999159,
+                            300.0
+                          ],
+                          "out": [
+                            652.9240012000841,
+                            300.0
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            785.0,
+                            595.0
+                          ],
+                          "in": [
+                            785.0,
+                            432.0759987999159
+                          ],
+                          "out": [
+                            785.0,
+                            757.9240012000841
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            490.0,
+                            890.0
+                          ],
+                          "in": [
+                            652.9240012000841,
+                            890.0
+                          ],
+                          "out": [
+                            327.0759987999159,
+                            890.0
+                          ],
+                          "kind": "Smooth"
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                },
+                "live": {
+                  "shape": "ellipse",
+                  "w": 590.0,
+                  "h": 590.0,
+                  "pie": [
+                    0.0,
+                    360.0
+                  ],
+                  "xf": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    195.0,
+                    300.0
+                  ]
+                }
+              }
             }
           ]
         }
@@ -3465,7 +3626,7 @@
     },
     "raster_effects_ppi": 72.0,
     "images": {},
-    "next_id": 35,
+    "next_id": 36,
     "metadata": {
       "author": "",
       "authorTitle": "",
@@ -3476,7 +3637,16 @@
       "copyrightNotice": "",
       "copyrightUrl": "",
       "created": 1794199688,
-      "modified": null
+      "modified": 1794926221
+    },
+    "last_view": {
+      "name": "",
+      "center": {
+        "x": 960.0,
+        "y": 540.0
+      },
+      "zoom": 0.5322916666666667,
+      "rotation": 0.0
     }
   },
   "images": {}

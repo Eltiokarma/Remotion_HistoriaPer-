@@ -14,6 +14,8 @@ type Props = {
   j: number;
   /** Frames que el audio sigue sonando bajo la escena siguiente (corte L). */
   l: number;
+  /** Frames que solo la música se adelanta, además del corte J (audio.musica.antes_s). */
+  previa?: number;
 };
 
 const FADE_MIN = 6; // ningún sonido entra ni sale en seco
@@ -65,39 +67,43 @@ const useActividadVoz = (src: string, fps: number, frames: number): number[] => 
   }, [datos, fps, frames]);
 };
 
-const Mezcla: React.FC<Props & { actividad: number[] | null }> = ({ escena, videoId, fps, j, l, actividad }) => {
+const Mezcla: React.FC<Props & { actividad: number[] | null }> = ({ escena, videoId, fps, j, l, previa = 0, actividad }) => {
   const cfg: AudioEscena = escena.audio ?? {};
   const b = escena.beats;
-  const total = escena.frames + j + l;
+  const total = escena.frames + j + l + previa;
   const duck = Math.pow(10, (cfg.duck_db ?? -14) / 20);
   const duckAmbiente = Math.pow(10, (cfg.duck_ambiente_db ?? DUCK_AMBIENTE_DB) / 20);
   const sil = cfg.silencio;
+  const cero = j + previa; // frame del audio en que empieza la imagen de la escena
 
-  const volumen = (p: Ventana, conDuck: boolean, cuanto = duck) => (f: number): number => {
-    const t = (f - j) / fps; // tiempo de la escena
-    const bordes = Math.min(1, f / Math.max(FADE_MIN, j), (total - f) / Math.max(FADE_MIN, l));
+  // `desde`: frame en que empieza este sonido; `rampa`: frames en que sube desde el silencio
+  const volumen = (p: Ventana, conDuck: boolean, cuanto = duck, desde = previa, rampa = j) => (f: number): number => {
+    const t = (f - cero) / fps; // tiempo de la escena
+    const bordes = Math.max(0, Math.min(1, (f - desde) / Math.max(FADE_MIN, rampa), (total - f) / Math.max(FADE_MIN, l)));
     const tramo = ventana(t, p.desde_beat ? b[p.desde_beat] : undefined, p.hasta_beat ? b[p.hasta_beat] : undefined);
     const silencio = sil ? 1 - ventana(t, b[sil.desde_beat], b[sil.hasta_beat], 0.35) : 1;
-    const habla = conDuck && actividad ? actividad[Math.max(0, Math.min(actividad.length - 1, f - j))] ?? 0 : 0;
+    const habla = conDuck && actividad ? actividad[Math.max(0, Math.min(actividad.length - 1, f - cero))] ?? 0 : 0;
     return Math.max(0, p.nivel * bordes * tramo * silencio * (1 - (1 - cuanto) * habla));
   };
 
   // si la música "entra" en un beat, el archivo empieza a sonar ahí (no hace falta rellenarlo con silencio)
   const musica = cfg.musica;
-  const inicioMusica = musica?.desde_beat && b[musica.desde_beat] !== undefined ? Math.max(0, Math.round(j + b[musica.desde_beat] * fps - RAMPA_S * fps)) : 0;
+  const inicioMusica = musica?.desde_beat && b[musica.desde_beat] !== undefined ? Math.max(0, Math.round(cero + b[musica.desde_beat] * fps - RAMPA_S * fps)) : 0;
+  // con antes_s, la música arranca con el audio de la escena (antes que la imagen) y sube en entrada_s
+  const rampaMusica = musica?.entrada_s !== undefined ? Math.round(musica.entrada_s * fps) : j + previa;
 
   return (
     <>
       {musica ? (
         <Sequence from={inicioMusica} layout="none" name={`música ${musica.archivo}`}>
-          <Audio src={delVideo(videoId, `musica/${musica.archivo}`)} volume={(f) => volumen(musica, true)(f + inicioMusica)} />
+          <Audio src={delVideo(videoId, `musica/${musica.archivo}`)} volume={(f) => volumen(musica, true, duck, previa > 0 ? 0 : previa, rampaMusica)(f + inicioMusica)} />
         </Sequence>
       ) : null}
       {(cfg.ambientes ?? []).map((a) => (
         <Audio key={a.nombre} src={ambiente(a.nombre)} loop volume={volumen(a, true, duckAmbiente)} name={`ambiente ${a.nombre}`} />
       ))}
       {escena.vozSrc ? (
-        <Sequence from={j} durationInFrames={escena.frames} layout="none" name={escena.vozProvisional ? 'voz provisional' : 'voz'}>
+        <Sequence from={cero} durationInFrames={escena.frames} layout="none" name={escena.vozProvisional ? 'voz provisional' : 'voz'}>
           <Audio src={staticFile(escena.vozSrc)} volume={(f) => Math.min(1, f / FADE_MIN, (escena.frames - f) / FADE_MIN)} />
         </Sequence>
       ) : null}

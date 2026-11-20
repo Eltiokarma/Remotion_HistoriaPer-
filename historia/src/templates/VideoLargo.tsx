@@ -40,13 +40,15 @@ export const VideoLargo: React.FC<PropsVideo> = ({ video, resueltas, soloEscena 
         const duro = i > 0 && escenas[i - 1].transicion_salida === 'duro';
         const j = i === 0 || duro ? 0 : J_FRAMES;
         const l = i === escenas.length - 1 || e.transicion_salida === 'duro' ? 0 : L_FRAMES;
+        // la música puede adelantarse más que el corte J (audio.musica.antes_s): el audio de la escena empieza antes
+        const previa = Math.max(0, Math.round((e.audio?.musica?.antes_s ?? 0) * video.fps) - j);
         return (
           <Fragment key={e.id}>
             <Sequence from={inicio} durationInFrames={e.frames} name={`${e.id} · ${e.componente}`}>
               {Comp ? <Comp escena={e} props={e.props} video={video} /> : <EscenaFaltante nombre={e.componente} color={video.paleta.papel} />}
             </Sequence>
-            <Sequence from={inicio - j} durationInFrames={e.frames + j + l} name={`${e.id} · audio`} layout="none">
-              <MezclaEscena escena={e} videoId={video.id} fps={video.fps} j={j} l={l} />
+            <Sequence from={inicio - j - previa} durationInFrames={e.frames + j + l + previa} name={`${e.id} · audio`} layout="none">
+              <MezclaEscena escena={e} videoId={video.id} fps={video.fps} j={j} l={l} previa={previa} />
             </Sequence>
           </Fragment>
         );
