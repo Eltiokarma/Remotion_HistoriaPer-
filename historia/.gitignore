@@ -4,7 +4,19 @@ out/
 public/videos/*/voz/*
 # La narración de ElevenLabs (MP3, liviana) sí va a git: el render de la CI la necesita.
 !public/videos/*/voz/*.mp3
-public/videos/*/imagenes/
+public/videos/*/imagenes/*
+# Excepción (Gerson, 2026-11-20): las imágenes de ChatGPT que usa el 0·1, para que el render de GitHub las encuentre (27 MB).
+!public/videos/001-el-hombre/imagenes/chatgpt/
+public/videos/001-el-hombre/imagenes/chatgpt/*
+!public/videos/001-el-hombre/imagenes/chatgpt/obj01-04-libro-2013.png
+!public/videos/001-el-hombre/imagenes/chatgpt/obj01-01-pruebas.png
+!public/videos/001-el-hombre/imagenes/chatgpt/obj01-03-lapiz.png
+!public/videos/001-el-hombre/imagenes/chatgpt/obj01-06-mar.png
+!public/videos/001-el-hombre/imagenes/chatgpt/obj01-06-islas.png
+!public/videos/001-el-hombre/imagenes/chatgpt/obj01-07-barco.png
+!public/videos/001-el-hombre/imagenes/chatgpt/obj-02-saco-cerrado.png
+!public/videos/001-el-hombre/imagenes/chatgpt/obj01-08-estado.png
+!public/videos/001-el-hombre/imagenes/chatgpt/obj-04-vale.png
 # La música de Suno (WAV originales y stems): pesada, se guarda en Drive. En git queda su registro en fuentes.md.
 public/videos/*/musica/suno/
 __pycache__/

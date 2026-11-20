@@ -224,4 +224,4 @@ Integradas con `src/components/graficos/ObjetosImagen.tsx`, conservando cada ani
 - **Pila de vales (`obj-05-pila-vales.png`):** la pila se arma con siete vales que caen uno por uno; una pila ya hecha no deja ver cómo crece la deuda.
 - **El barco que zarpa (`zarpa`):** todavía no. El barco ya va suelto y volteado, así que es el paso siguiente.
 
-**Para el render final.** Las imágenes están fuera de git (`public/videos/*/imagenes/`, regla del canal). En la laptop tienen que estar en `public/videos/001-el-hombre/imagenes/chatgpt/` con estos nombres; las del 0·2 (saco y vale), copiadas desde su carpeta. El render de GitHub (`render.yml`) no las encuentra: o se suben a git como excepción declarada (27 MB, medido) o el final se renderiza en la laptop.
+**Para el render final.** Gerson decidió el 20/11 subirlas a git como excepción a la regla de imágenes fuera de git (`historia/CLAUDE.md` §1.1·5 y `.gitignore`): las nueve que usa el 0·1, 27 MB. Así el render de GitHub (`render.yml`) las encuentra. Las que no se usan siguen fuera.

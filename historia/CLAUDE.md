@@ -60,7 +60,10 @@ No tienen excepción.
    `.gitignore` (excepción: SVG, JSON, fuentes tipográficas y el audio chico: el sintetizado, la
    música ya recortada a la escena en MP3, a 128–192 kb/s y 2 MB o menos por escena, y la narración
    de ElevenLabs en MP3 en `voz/`. Los WAV originales de Suno y sus stems quedan fuera, en
-   `musica/suno/`. Decidido por Gerson el 2026-11-10).
+   `musica/suno/`. Decidido por Gerson el 2026-11-10). **Excepción:** las nueve imágenes de ChatGPT que
+   usa el 0·1 (`public/videos/001-el-hombre/imagenes/chatgpt/`, 27 MB, listadas en `.gitignore`) van a git para
+   que el render de GitHub las encuentre (decidido por Gerson el 2026-11-20). Otra imagen entra solo con una
+   excepción igual de explícita.
 
 ### 1.2 Reglas de oficio
 
