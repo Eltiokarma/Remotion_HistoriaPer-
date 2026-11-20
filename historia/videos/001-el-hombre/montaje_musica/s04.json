@@ -1,84 +1,107 @@
 {
   "salida": "s04-tres-velocidades.mp3",
-  "nota": "tiempos de la escena (ya con la voz de Joder Jolines); env = [[t, ganancia]]",
+  "nota": "tiempos anclados a beats de escenas.json (2026-11-20, antes en segundos fijos de la voz del 10/11): cada capa entra con su frase (ancla: [beat, segundo del archivo que cae en ese beat]) y sus subidas y bajadas siguen a bajar, subir y remate con los mismos desplazamientos que se eligieron el 10/11",
   "dur": "escena",
   "lufs_ref": -18,
   "capas": [
     {
       "archivo": "suno/V01_mus-E01_ver01_2.wav",
-      "inicio": 10.015,
       "db": 1,
       "env": [
         [
-          11.444,
+          "capa1",
+          -0.306,
           0
         ],
         [
-          11.778,
+          "capa1",
+          0.028,
           1
         ],
         [
-          31.511,
+          "bajar",
+          0.031,
           1
         ],
         [
-          33.011,
+          "bajar",
+          1.531,
           0
         ],
         [
-          44.881,
+          "remate",
+          -0.459,
           0
         ],
         [
-          45.734,
+          "remate",
+          0.394,
           1
         ]
+      ],
+      "ancla": [
+        "capa1",
+        1.735
       ]
     },
     {
       "archivo": "suno/V01_mus-E02_ver01_2.wav",
-      "inicio": 17.401,
       "db": 0,
       "env": [
         [
-          19.241,
+          "capa2",
+          -0.479,
           0
         ],
         [
-          20.052,
+          "capa2",
+          0.332,
           1
         ],
         [
-          31.511,
+          "bajar",
+          0.031,
           1
         ],
         [
-          33.011,
+          "bajar",
+          1.531,
           0
         ],
         [
-          38.011,
+          "subir",
+          -0.459,
           0
         ],
         [
-          39.155,
+          "subir",
+          0.685,
           1
         ]
+      ],
+      "ancla": [
+        "capa2",
+        2.319
       ]
     },
     {
       "archivo": "suno/V01_mus-E03_ver01_5.wav",
-      "inicio": 23.771,
       "db": -1,
       "env": [
         [
-          23.771,
+          "capa3",
+          -0.979,
           0
         ],
         [
-          25.164,
+          "capa3",
+          0.414,
           1
         ]
+      ],
+      "ancla": [
+        "capa3",
+        0.979
       ]
     }
   ]
