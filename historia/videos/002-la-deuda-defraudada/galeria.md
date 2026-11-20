@@ -2,7 +2,7 @@
 
 Generado con `galeria.py`; no se edita a mano. Una sola carpeta para el 0·1 y el 0·2: `public/videos/002-la-deuda-defraudada/imagenes/chatgpt/` (fuera de git por peso; se comparte en zip). Origen, fecha y prompts de cada lote: `fuentes.md`. Nombres: `obj-NN-` objetos y papeles del 0·2, `obj01-NN-` piezas del 0·1, `fondo-`, `textura-`, y el resto personajes.
 
-34 imágenes.
+39 imágenes.
 
 | Archivo | Tipo | Tamaño | Transparencia | Planos del 0·2 |
 |---|---|---|---|---|
@@ -40,3 +40,8 @@ Generado con `galeria.py`; no se edita a mano. Una sola carpeta para el 0·1 y e
 | `trabajador-2a-sujeta-saco.png` | Personaje | 1223 × 1286 | sí | 1.3 |
 | `trabajador-2b-levanta-saco.png` | Personaje | 1012 × 1555 | sí | 1.3 |
 | `trabajador-2c-transporta-saco.png` | Personaje | 1012 × 1554 | sí | 1.3 |
+| `trabajador-grupo-1-pala.png` | Personaje | 287 × 436 | sí | — |
+| `trabajador-grupo-2-saco-sombrero.png` | Personaje | 298 × 444 | sí | — |
+| `trabajador-grupo-3-saco-chullo.png` | Personaje | 292 × 445 | sí | — |
+| `trabajador-grupo-4-carretilla.png` | Personaje | 509 × 436 | sí | — |
+| `trabajadores-grupo-fondo.png` | Personaje | 1920 × 640 | sí | 1.3 |

@@ -74,13 +74,13 @@ Qué es el guano y quién lo compra. La isla en dos capas (mar y cielo detrás; 
 
 ### 1.3 · mostrar · 14.1 s
 
-Sacarlo exige trabajo, y no siempre libre. Sobre el fondo limpio de Chincha, el trabajador del sombrero vierte la pala en el saco; otro trabajador lo sujeta, lo levanta y lo lleva hacia el borde, y en la pausa sin voz el saco sube al barco. Son dos personas distintas: la voz habla de varias formas de trabajo.
+Sacarlo exige trabajo, y no siempre libre. Sobre el fondo limpio de Chincha, en primer plano, el trabajador del sombrero vierte la pala en el saco y otro trabajador lo sujeta, lo levanta y lo lleva hacia el borde. Con «jornaleros libres, pero también presos…», entra en plano medio un grupo de cuatro trabajadores de orígenes distintos, uno cava, dos cargan sacos y uno empuja una carretilla, sin rótulos: su aspecto no dice su condición. En la pausa sin voz, el saco sube al barco.
 
 - **Pantalla:** sin rótulos.
 - **Cámara:** quieta.
-- **Efecto:** Pala en arco; granos con semilla que caen una vez y se asientan; balanceo corto del casco al recibir el saco.
+- **Efecto:** Pala en arco; granos con semilla que caen una vez y se asientan. El grupo del fondo camina despacio hacia la derecha, cada figura por separado (trabajador-grupo-1 a 4) y con desfase, más lento que el primer plano. Balanceo corto del casco al recibir el saco.
 - **Sonido:** Raspado de pala, saco al apoyarse, madera del barco.
-- **Falta:** Pala ya está en la figura; el saco es obj-01 y obj-02; el embarque con el barco de 1c. Sin rótulo sobre las figuras: su aspecto no documenta su condición. Trabajadores de distintos orígenes al fondo, si Gerson lo aprueba (prompts-chatgpt-v2.md, n.º 5).
+- **Falta:** Pala ya está en la figura; el saco es obj-01 y obj-02; el embarque con el barco de 1c. Sin rótulo sobre las figuras: su aspecto no documenta su condición.
 
 ### 1.4 · explicar · 8.8 s
 

@@ -164,3 +164,7 @@ A pedido de Gerson, las imágenes de ChatGPT del 0·1 y del 0·2 viven en una so
 ## Fondos de mesa, archivo y mesa del historiador (20 de noviembre de 2026)
 
 Tres PNG opacos de 1920 × 1080 generados por Gerson con ChatGPT a partir de [prompts-chatgpt-v2.md](diseno/prompts-chatgpt-v2.md) (n.º 1, 3 y 4): `fondo-mesa-expediente.png`, `fondo-archivo.png` y `fondo-mesa-historiador.png`, en la galería única. Son ambientes inventados: no reproducen el despacho, el archivo ni el escritorio reales de nadie, y la mesa del historiador no es la de Quiroz (el montaje rotula el cambio de época). Prueba de lectura sobre la mesa en `diseno/pruebas/3.5-mesa-y-cifra.jpg`.
+
+## Trabajadores al fondo del plano 1.3 (20 de noviembre de 2026)
+
+`trabajadores-grupo-fondo.png` (1920 × 640, transparente), generado por Gerson con ChatGPT con el prompt del n.º 5 de [prompts-chatgpt-v2.md](diseno/prompts-chatgpt-v2.md), y separado en cuatro figuras para animarlas por separado (`trabajador-grupo-1-pala.png` a `trabajador-grupo-4-carretilla.png`). Cuatro hombres de orígenes distintos (afroperuano, chino, andino y mestizo), sin rótulos ni señales de castigo: acompañan la frase de la voz sobre las formas de trabajo en las islas (B, prólogo, pp. 10–11; Q, pp. 164–169) sin afirmar la condición jurídica de ninguno. Prueba de escala en `diseno/pruebas/1.3-trabajadores.jpg`.

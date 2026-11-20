@@ -57,7 +57,7 @@ Ilustración dibujada a mano con contorno de tinta fino; color de lápiz y acuar
 Vista cenital, desde arriba, de un escritorio de trabajo de un historiador de fines del siglo XX: madera clara, el pie redondo de una lámpara de escritorio y su círculo de luz en la esquina superior derecha, una pila de fotocopias atadas con un clip en la esquina inferior izquierda, un lápiz y una goma. El centro (dos tercios del cuadro) queda vacío, para poner encima los papeles del caso.
 ```
 
-## 5. Trabajadores al fondo · plano 1.3, frase «jornaleros libres, pero también presos, personas esclavizadas y trabajadores chinos» · decide Gerson
+## 5. Trabajadores al fondo · plano 1.3, frase «jornaleros libres, pero también presos, personas esclavizadas y trabajadores chinos» · HECHO (20 de noviembre de 2026)
 
 Las dos figuras recibidas son hombres de la costa con el mismo origen aparente. La voz nombra varias formas de trabajo; si la imagen solo muestra una, contradice a la voz sin decirlo. La propuesta es un grupo pequeño al fondo, sin rótulos ni señales de condición jurídica, para que la diversidad se vea sin afirmar quién era qué. **Es un tema delicado: generarla solo si Gerson lo aprueba.**
 
