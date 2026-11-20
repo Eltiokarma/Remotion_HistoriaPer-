@@ -1,8 +1,8 @@
 {
-  "fecha": "2026-11-20T05:57:45.626Z",
+  "fecha": "2026-11-20T16:38:02.276Z",
   "version": "D",
   "maquina": "contenedor",
-  "cpu": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
   "hilos": 4,
   "ram_gb": 16.9,
   "concurrencia": 4,
@@ -12,8 +12,8 @@
   "fps": 30,
   "cuadros": 3073,
   "duracion_s": 102.43,
-  "render_s": 295.4,
-  "bytes": 13202288,
+  "render_s": 349.4,
+  "bytes": 13259199,
   "voz": "Joder Jolines, eleven_v4 (voz/s03.mp3)",
   "aprobacion_gerson": "pendiente"
 }
