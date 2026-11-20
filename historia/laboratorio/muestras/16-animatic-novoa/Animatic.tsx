@@ -37,8 +37,9 @@ const SILUETA: Record<Persona, 'mujer' | 'capitalista' | 'presidente' | 'militar
   novoa: 'mujer', elias: 'capitalista', echenique: 'presidente', torrico: 'militar',
 };
 /** Retratos de época en dominio público, cuando estén en public/img/retrato-<persona>.png (ver README). */
+/** Medallones ilustrados (ChatGPT, 20 de noviembre de 2026): redibujos de los retratos de Commons; Novoa en silueta. */
 export const RETRATOS: Partial<Record<Persona, string>> = {
-  elias: 'img/retrato-elias.png', echenique: 'img/retrato-echenique.png', torrico: 'img/retrato-torrico.png',
+  elias: 'img/medallon-elias.png', echenique: 'img/medallon-echenique.png', torrico: 'img/medallon-torrico.png', novoa: 'img/medallon-novoa.png',
 };
 
 /** Silueta provisional de busto, para quien no tiene retrato conocido: se reemplaza por la ilustrada. */
@@ -68,13 +69,15 @@ const Silueta = ({ tipo }: { tipo: (typeof SILUETA)[Persona] }) => (
   </svg>
 );
 
-const Medallon = ({ persona, size = 76 }: { persona: Persona; size?: number }) => (
-  <div style={{ width: size, height: size, borderRadius: '50%', overflow: 'hidden', border: '3px solid #efe6cf', boxShadow: '0 3px 8px rgba(0,0,0,.6)', flex: 'none' }}>
-    {RETRATOS[persona]
-      ? <Img src={staticFile(RETRATOS[persona]!)} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(1) sepia(.55) contrast(1.05)' }} />
-      : <Silueta tipo={SILUETA[persona]} />}
-  </div>
-);
+const Medallon = ({ persona, size = 92 }: { persona: Persona; size?: number }) =>
+  RETRATOS[persona] ? (
+    // el PNG ya trae su círculo y su filete: solo se le pone sombra de contacto
+    <Img src={staticFile(RETRATOS[persona]!)} style={{ width: size, height: size, flex: 'none', filter: 'drop-shadow(0 3px 5px rgba(0,0,0,.55))' }} />
+  ) : (
+    <div style={{ width: size, height: size, borderRadius: '50%', overflow: 'hidden', border: '3px solid #efe6cf', flex: 'none' }}>
+      <Silueta tipo={SILUETA[persona]} />
+    </div>
+  );
 
 type Pose = { x: number; y: number; w: number; o: number };
 const pose = (x: number, y: number, w: number, o = 1): Pose => ({ x, y, w, o });
@@ -107,7 +110,7 @@ const Renglon = ({ x, y, size, k, children, color = TINTA, familia = fuente.maqu
 const FichaEn = ({ texto, x, y, voz, desde, hasta, foco = 1, persona }: { texto: string; x: number; y: number; voz: number; desde: number; hasta: number; foco?: number; persona?: Persona }) => (
   <div style={{ position: 'absolute', left: x, top: y, display: 'flex', alignItems: 'center', gap: 14,
     opacity: mix(0.45, 1, foco) * (1 - tramo(voz, hasta, 0.5, 'natural')) * (voz >= desde ? tramo(voz, desde, 0.3, 'natural') : 0) }}>
-    {persona ? <Medallon persona={persona} size={84} /> : null}
+    {persona ? <Medallon persona={persona} size={104} /> : null}
     <div style={CAJA}>
       <Ficha texto={texto} t={voz - desde} color={PAPEL} acento={ROJO} size={26} />
     </div>
@@ -193,9 +196,9 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
       <FichaEn texto="DOMINGO ELÍAS · INTERMEDIARIO" persona="elias" x={110} y={50} voz={voz} desde={F(4)} hasta={F(8)} />
       <FichaEn texto="JOSÉ RUFINO ECHENIQUE · PRESIDENTE, 1851–1855" persona="echenique" x={110} y={50} voz={voz} desde={F(8)} hasta={reservada ? F(10) : F(12)} />
       <FichaEn texto="JUAN CRISÓSTOMO TORRICO · MINISTRO DE GUERRA" persona="torrico" x={110} y={50} voz={voz} desde={F(13)} hasta={F(15)} />
-      <FichaEn texto="ECHENIQUE · FUERA DE PLAZO" persona="echenique" x={110} y={40} voz={voz} desde={F(15) + 0.3} hasta={99}
+      <FichaEn texto="ECHENIQUE · FUERA DE PLAZO" persona="echenique" x={110} y={830} voz={voz} desde={F(15) + 0.3} hasta={99}
         foco={tramo(voz, F(16) + 0.6, 0.3) * (1 - tramo(voz, F(16) + 3.4, 0.3))} />
-      <FichaEn texto="TORRICO · INTERVINO" persona="torrico" x={110} y={136} voz={voz} desde={F(15) + 0.8} hasta={99}
+      <FichaEn texto="TORRICO · INTERVINO" persona="torrico" x={110} y={940} voz={voz} desde={F(15) + 0.8} hasta={99}
         foco={tramo(voz, F(16) + 3.4, 0.3) * (1 - tramo(voz, F(16) + 5.2, 0.3))} />
 
       <Luz color={OCRE} x={46} y={46} radio={60} intensidad={0.06} />
