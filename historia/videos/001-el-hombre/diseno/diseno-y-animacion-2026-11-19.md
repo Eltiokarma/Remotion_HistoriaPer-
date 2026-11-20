@@ -142,3 +142,25 @@ Si se quita, se pierde: que «larga duración» nombra lo que dura siglos, y que
 **Hipótesis y cómo se comprueba:** con el giro de los lujos, quien ve el video por primera vez puede responder «¿de dónde salía la plata y adónde iba?» (la pregunta de la auditoría). Se comprueba mostrando el video a alguien que no lo conozca, sin anticipar ni corregir, antes y después del cambio.
 
 **Conflictos con el canal:** los tokens en milisegundos, las curvas `cubic-bezier` y las reglas de interacción del skill no se aplican (tabla de choques de `canal-historia/movimiento.md`). El skill pide que el texto sea el canal base; en el canal manda la voz y el texto ancla (DIRECCION_DE_VIDEO §2.1). Ninguno de los dos choques cambió una decisión de este documento.
+
+## Actualización: voz versión 5 (19 de noviembre de 2026, más tarde)
+
+Gerson escuchó la voz v4 y pidió: susurros y emociones menos exagerados, que el audio no salte, y oraciones de 10 palabras o más. Lo que cambió para la imagen:
+
+- **Los saltos medidos en la v4** eran de volumen: «Cada año» (susurrado) y «El libro salió en mayo» (en voz baja) quedaban 7 dB por debajo de sus vecinas, y la primera frase de s04, 4 dB más baja por un ajuste a mano de la voz anterior. En la v5, las frases de cada escena quedan a 1,5 dB o menos entre sí (en s02, «inagotable» queda a 3 dB). Las pausas de la voz son casi silencio digital (unos −80 dB); bajo la música y los ambientes del video no se oyen como cortes, pero en la escucha de la voz sola sí: conviene juzgarla con su mezcla.
+- **La escena del viaje se partió en dos** (hallazgo 10): `s05`, con el viaje, el método y la balanza (69 s de voz), y `s08`, *Las cuentas abiertas*, con el estante, la brújula y la pizarra (29 s). Las dos usan `AprenderAMedir`; `s08` necesita poder empezar en el estante.
+- **Anclas que cambiaron con el texto:** s00, el contador frena antes de «Cada año, en promedio»; s03, los tres afiches caen dentro de una sola oración («con su reforma agraria, sus nacionalizaciones y un discurso…»), `acerca` pasa a «le hacía una pregunta», `esquina` cae en la pausa de la coma y `despegue` en «o repetía»; s06, `pregunta` en «¿Y adónde». Los segundos reales de cada frase están en `narracion_tiempos.json`; la tabla de anclas de arriba sirve para saber en qué palabra cae cada beat, no para sus segundos.
+
+| Orden | Escena | Voz real (s) | Empieza en el episodio (con las colas actuales) |
+|---|---|---|---|
+| 1 | s00 | 28,1 | 0:00 |
+| 2 | s01 | 43,9 | 0:29 |
+| 3 | s02 | 25,0 | 1:16 |
+| 4 | s03 | 36,0 | 1:42 |
+| 5 | s04 | 51,3 | 2:20 |
+| 6 | s06 | 44,7 | 3:12 |
+| 7 | s05 | 69,2 | 4:01 |
+| 8 | s08 (nueva) | 28,6 | 5:11 |
+| 9 | s07 | 7,6 | 5:40 |
+
+Total: 5:34 de voz y unos 5:48 con las colas.

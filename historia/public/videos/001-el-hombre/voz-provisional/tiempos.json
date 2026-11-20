@@ -1,91 +1,76 @@
 {
  "s00": {
-  "duracion": 34.86,
+  "duracion": 36.57,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 9.92,
-    "texto": "Durante casi dos siglos... la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento... de todo lo que producía."
+    "hasta": 6.84,
+    "texto": "Durante casi dos siglos, la corrupción le costó al Perú una parte de todo lo que producía."
    },
    {
-    "desde": 10.32,
-    "hasta": 11.08,
-    "texto": "Cada año."
+    "desde": 7.44,
+    "hasta": 13.59,
+    "texto": "Cada año, en promedio, ese costo fue de entre el tres y el cuatro por ciento."
    },
    {
-    "desde": 12.08,
-    "hasta": 18.62,
-    "texto": "Comparado con el gasto del Estado... ese costo equivalía a tres o cuatro de cada diez soles."
+    "desde": 14.59,
+    "hasta": 21.13,
+    "texto": "Comparado con el gasto del Estado, ese costo equivalía a tres o cuatro de cada diez soles."
    },
    {
-    "desde": 19.82,
-    "hasta": 25.21,
+    "desde": 22.33,
+    "hasta": 27.72,
     "texto": "No era una suma de casos sueltos: era sistémica, y venía desde la colonia."
    },
    {
-    "desde": 26.41,
-    "hasta": 29.1,
-    "texto": "Todo eso lo calculó un historiador limeño."
-   },
-   {
-    "desde": 29.9,
-    "hasta": 33.36,
-    "texto": "Y no llegó a ver su libro en español."
+    "desde": 28.92,
+    "hasta": 35.07,
+    "texto": "Todo eso lo calculó un historiador limeño, que no llegó a ver su libro en español."
    }
   ]
  },
  "s01": {
-  "duracion": 46.68,
+  "duracion": 51.5,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 1.07,
-    "texto": "Nueva York."
+    "hasta": 8.38,
+    "texto": "En Nueva York, nuestro historiador revisa con minuciosidad las pruebas de imprenta de la traducción al español de su último libro."
    },
    {
-    "desde": 1.67,
-    "hasta": 8.59,
-    "texto": "Nuestro historiador revisa con minuciosidad las pruebas de imprenta de la traducción al español de su último libro."
+    "desde": 9.38,
+    "hasta": 13.22,
+    "texto": "Tiene cáncer, no le queda mucho tiempo, y lo sabe."
    },
    {
-    "desde": 9.59,
-    "hasta": 12.67,
-    "texto": "No le queda mucho tiempo... y lo sabe."
+    "desde": 14.72,
+    "hasta": 24.34,
+    "texto": "En los agradecimientos escribe una línea fácil de pasar por alto: les agradece a sus médicos por alargar estos días para poder completar la tarea."
    },
    {
-    "desde": 14.17,
-    "hasta": 18.4,
-    "texto": "En los agradecimientos escribe una línea fácil de pasar por alto:"
-   },
-   {
-    "desde": 18.75,
-    "hasta": 24.13,
-    "texto": "les agradece a sus médicos por alargar estos días para poder completar la tarea."
-   },
-   {
-    "desde": 25.13,
-    "hasta": 28.98,
+    "desde": 25.34,
+    "hasta": 29.18,
     "texto": "Unas líneas más abajo celebra el nacimiento de su hijo."
    },
    {
-    "desde": 30.48,
-    "hasta": 33.17,
-    "texto": "Murió en enero de dos mil trece."
+    "desde": 30.68,
+    "hasta": 35.68,
+    "texto": "Murió en enero de dos mil trece, a los cincuenta y seis años."
    },
    {
-    "desde": 39.17,
-    "hasta": 41.1,
-    "texto": "El libro salió en mayo."
+    "desde": 41.68,
+    "hasta": 45.92,
+    "texto": "El libro salió en mayo, cuatro meses después de su muerte."
    },
    {
-    "desde": 42.1,
-    "hasta": 46.33,
-    "texto": "Estos videos tratan de ese hombre... y de lo que encontró."
+    "desde": 46.92,
+    "hasta": 51.15,
+    "texto": "Estos videos tratan de ese hombre y de lo que encontró."
    }
   ]
  },
  "s02": {
-  "duracion": 28.68,
+  "duracion": 30.6,
   "frases": [
    {
     "desde": 0.3,
@@ -104,18 +89,18 @@
    },
    {
     "desde": 23.1,
-    "hasta": 25.79,
-    "texto": "Y lo describe con una sola palabra:"
+    "hasta": 27.72,
+    "texto": "Y en el prólogo del libro lo describe con una sola palabra:"
    },
    {
-    "desde": 26.29,
-    "hasta": 26.68,
+    "desde": 28.22,
+    "hasta": 28.6,
     "texto": "inagotable."
    }
   ]
  },
  "s03": {
-  "duracion": 42.9,
+  "duracion": 44.11,
   "frases": [
    {
     "desde": 0.3,
@@ -124,48 +109,33 @@
    },
    {
     "desde": 8.98,
-    "hasta": 12.05,
-    "texto": "El Perú vivía el gobierno militar de Velasco."
+    "hasta": 17.82,
+    "texto": "El Perú vivía el gobierno militar de Velasco, con su reforma agraria, sus nacionalizaciones y un discurso que prometía enterrar el pasado oligárquico."
    },
    {
-    "desde": 12.45,
-    "hasta": 13.22,
-    "texto": "Reforma agraria."
-   },
-   {
-    "desde": 13.57,
-    "hasta": 13.96,
-    "texto": "Nacionalizaciones."
-   },
-   {
-    "desde": 14.31,
-    "hasta": 17.38,
-    "texto": "Un discurso que prometía enterrar el pasado oligárquico."
-   },
-   {
-    "desde": 18.38,
-    "hasta": 26.08,
+    "desde": 18.82,
+    "hasta": 26.52,
     "texto": "Quiroz nunca apoyó al régimen: militó un tiempo en un pequeño partido trotskista que criticaba con dureza al gobierno militar."
    },
    {
-    "desde": 27.08,
-    "hasta": 34.77,
-    "texto": "Para un estudiante de esa época, estudiar historia era una forma de entender el presente y de responder una pregunta:"
+    "desde": 27.52,
+    "hasta": 33.28,
+    "texto": "Para un estudiante de esa época, estudiar historia era una forma de entender el presente."
    },
    {
-    "desde": 35.37,
-    "hasta": 37.68,
-    "texto": "¿el país estaba cambiando de verdad?"
+    "desde": 33.88,
+    "hasta": 38.88,
+    "texto": "Y el presente le hacía una pregunta: ¿el país estaba cambiando de verdad,"
    },
    {
-    "desde": 38.48,
-    "hasta": 40.4,
-    "texto": "¿O repetía lo de siempre?"
+    "desde": 39.68,
+    "hasta": 41.61,
+    "texto": "o repetía lo de siempre?"
    }
   ]
  },
  "s04": {
-  "duracion": 58.45,
+  "duracion": 63.55,
   "frases": [
    {
     "desde": 0.3,
@@ -179,58 +149,43 @@
    },
    {
     "desde": 14.21,
-    "hasta": 18.05,
-    "texto": "Arriba están los acontecimientos: los gobiernos, las guerras, las noticias."
+    "hasta": 21.13,
+    "texto": "Arriba están los acontecimientos, como los gobiernos, las guerras y las noticias, que cambian rápido, como las olas."
    },
    {
-    "desde": 18.4,
-    "hasta": 20.33,
-    "texto": "Cambian rápido, como las olas."
+    "desde": 22.13,
+    "hasta": 26.75,
+    "texto": "Más abajo están la economía y la sociedad, que cambian más despacio."
    },
    {
-    "desde": 21.33,
-    "hasta": 24.02,
-    "texto": "Más abajo, la economía y la sociedad."
+    "desde": 27.75,
+    "hasta": 35.05,
+    "texto": "Y al fondo está la relación del hombre con la tierra y el clima, que casi no se mueve."
    },
    {
-    "desde": 24.37,
-    "hasta": 25.14,
-    "texto": "Cambian despacio."
-   },
-   {
-    "desde": 26.14,
-    "hasta": 31.14,
-    "texto": "Y al fondo, la relación del hombre con la tierra y el clima."
-   },
-   {
-    "desde": 31.49,
-    "hasta": 33.03,
-    "texto": "Casi no se mueve."
-   },
-   {
-    "desde": 34.53,
-    "hasta": 39.53,
+    "desde": 36.55,
+    "hasta": 41.55,
     "texto": "A lo que cambia tan despacio que dura siglos lo llamó larga duración."
    },
    {
-    "desde": 41.53,
-    "hasta": 46.91,
+    "desde": 43.55,
+    "hasta": 48.94,
     "texto": "Según Cueto, ahí aprendió a apreciar lo que persiste: las estructuras de la economía."
    },
    {
-    "desde": 47.91,
-    "hasta": 51.37,
-    "texto": "Hay cosas que no cambian aunque cambien los gobiernos."
+    "desde": 49.94,
+    "hasta": 54.55,
+    "texto": "Hay cosas en el Perú que no cambian aunque cambien los gobiernos."
    },
    {
-    "desde": 52.87,
-    "hasta": 55.95,
-    "texto": "Esa mirada larga es la de esta serie."
+    "desde": 56.05,
+    "hasta": 61.05,
+    "texto": "Esa mirada larga, que busca lo que persiste, es la de esta serie."
    }
   ]
  },
  "s06": {
-  "duracion": 55.33,
+  "duracion": 58.4,
   "frases": [
    {
     "desde": 0.3,
@@ -265,17 +220,17 @@
    {
     "desde": 46.47,
     "hasta": 51.47,
-    "texto": "Algunos inflaron el valor de esa deuda... para enriquecerse a costa del Estado."
+    "texto": "Algunos inflaron el valor de esa deuda para enriquecerse a costa del Estado."
    },
    {
     "desde": 52.67,
-    "hasta": 54.98,
-    "texto": "¿Adónde fue a parar esa plata?"
+    "hasta": 58.05,
+    "texto": "¿Y adónde fue a parar la plata que el Estado pagó por esa deuda?"
    }
   ]
  },
  "s05": {
-  "duracion": 116.56,
+  "duracion": 83.32,
   "frases": [
    {
     "desde": 0.3,
@@ -294,83 +249,78 @@
    },
    {
     "desde": 21.19,
-    "hasta": 24.65,
-    "texto": "Allí, el historiador Herbert Klein le ofrece una beca."
+    "hasta": 26.19,
+    "texto": "Allí, el historiador Herbert Klein le ofrece una beca de maestría y doctorado."
    },
    {
-    "desde": 25.05,
-    "hasta": 30.44,
+    "desde": 26.59,
+    "hasta": 31.98,
     "texto": "Y Quiroz aprende historia cuantitativa: pensar el pasado con números, no solo con discursos."
    },
    {
-    "desde": 31.44,
-    "hasta": 34.13,
-    "texto": "Una de sus herramientas se llama regresión:"
+    "desde": 32.98,
+    "hasta": 41.44,
+    "texto": "Una de sus herramientas se llama regresión: imagina muchos puntos desordenados, cada uno una observación, que a simple vista parecen solo ruido."
    },
    {
-    "desde": 34.48,
-    "hasta": 38.33,
-    "texto": "imagina muchos puntos desordenados, cada uno una observación, un dato."
-   },
-   {
-    "desde": 38.73,
-    "hasta": 40.65,
-    "texto": "A simple vista, solo ruido."
-   },
-   {
-    "desde": 41.45,
-    "hasta": 49.53,
+    "desde": 42.44,
+    "hasta": 50.52,
     "texto": "La regresión busca la línea que pasa lo más cerca posible de todos, y si hay una tendencia, la deja ver."
    },
    {
-    "desde": 50.33,
-    "hasta": 58.79,
+    "desde": 51.32,
+    "hasta": 59.78,
     "texto": "Cada punto junta dos cifras, y la inclinación de la línea dice cuánto sube una por cada paso que da la otra."
    },
    {
-    "desde": 60.79,
-    "hasta": 64.63,
+    "desde": 61.78,
+    "hasta": 65.62,
     "texto": "Aprende a trabajar con cifras y a contrastarlas con documentos."
    },
    {
-    "desde": 65.63,
-    "hasta": 70.63,
+    "desde": 66.62,
+    "hasta": 71.62,
     "texto": "Años después, llevará esa disciplina al estudio de la corrupción en el Perú."
    },
    {
-    "desde": 72.63,
-    "hasta": 80.33,
+    "desde": 73.62,
+    "hasta": 81.32,
     "texto": "De otro de sus profesores en Columbia, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad."
-   },
+   }
+  ]
+ },
+ "s08": {
+  "duracion": 35.03,
+  "frases": [
    {
-    "desde": 81.83,
-    "hasta": 88.37,
+    "desde": 0.3,
+    "hasta": 6.84,
     "texto": "Con los años, según Cueto, llega a ser la máxima autoridad en la historia financiera del Perú."
    },
    {
-    "desde": 89.37,
-    "hasta": 98.21,
+    "desde": 7.84,
+    "hasta": 16.68,
     "texto": "Sus ideas políticas también cambian: del joven trotskista pasa a una postura liberal, que pide igualdad de oportunidades para todos en la economía."
    },
    {
-    "desde": 99.21,
-    "hasta": 104.6,
+    "desde": 17.68,
+    "hasta": 23.07,
     "texto": "Y no da por cerradas ni sus propias cifras: llama provisionales a sus cálculos."
    },
    {
-    "desde": 106.6,
-    "hasta": 115.06,
+    "desde": 25.07,
+    "hasta": 33.53,
     "texto": "Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro."
    }
   ]
  },
  "s07": {
-  "duracion": 5.07,
+  "duracion": 7.77,
   "frases": [
    {
     "desde": 2.8,
-    "hasta": 4.72,
-    "texto": "Próximo episodio: La deuda defraudada."
+    "hasta": 7.42,
+    "texto": "El próximo episodio sigue esa plata, y se llama La deuda defraudada."
    }
   ]
  }

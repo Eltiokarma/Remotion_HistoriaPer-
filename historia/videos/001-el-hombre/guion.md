@@ -4,7 +4,7 @@
 **Formato:** 100 % Remotion, sin metraje ni fotos · 1920×1080 · 30 fps
 **Pregunta central:** ¿Qué encontró, para que valiera la pena? Este episodio responde quién era y cómo aprendió a buscar; lo que encontró llega en 0·2, 0·3 y 0·4.
 **Palabra del episodio:** *la larga duración* (en francés, *la longue durée*: Braudel, 1958)
-**Duración estimada:** unos 6 min, medida con la velocidad real de la voz «Joder Jolines» en el render del 17/11 (tabla al final de cada escena y en [diseno/diseno-y-animacion-2026-11-19.md](diseno/diseno-y-animacion-2026-11-19.md)). El render de 5:39 tenía el texto anterior.
+**Duración:** 5:34 de voz y unos 5:48 con las colas actuales, medida en la voz versión 5 («Joder Jolines», `eleven_v4`, 19/11). El render de 5:39 tenía el texto anterior.
 **Plan de los cuatro episodios:** `videos/000-quiroz/diagnostico.md`, §4
 
 **Versión 3 (19 de noviembre de 2026), propuesta para revisión de Gerson.** Junta tres cosas que estaban separadas:
@@ -30,13 +30,15 @@ ESC 4  La historia corre a varias velocidades; lo que persiste son las estructur
        → PERO una mirada necesita un caso:
 ESC 5  Los libros decían que toda la riqueza del guano se derrochó en lujos; él mostró que además la deuda se infló a costa del Estado.
        → DESPUÉS (orden, no causa: el libro no dice que se fue por el guano; decisión de Gerson, 11/11):
-ESC 6  En Nueva York aprende a medir, y cambia de ideas; pero no olvida la tesis.
+ESC 6  En Nueva York aprende a medir, y aprende que la cifra sola no basta.
+       → PERO medir no lo cerró en sus cifras:
+ESC 7  Llega a ser la autoridad, cambia de ideas, no da por cerradas sus cuentas, y no olvida la tesis.
        → POR ESO, el próximo episodio: La deuda defraudada.
 ```
 
 El único «después» es una excepción declarada: la fuente respalda el orden, no la causa.
 
-Curva de intensidad: 4 · 3 · 1 · 3 · 3 · **5** · 2 · 1 (el pico en el guano; el respiro en el viaje; el cierre baja).
+Curva de intensidad: 4 · 3 · 1 · 3 · 3 · **5** · 2 · 2 · 1 (el pico en el guano; el respiro en el viaje y en la carrera; el cierre baja).
 
 ---
 
@@ -47,16 +49,16 @@ Primero el golpe, después el hombre (DIRECCION_DE_VIDEO §2.5). Solo datos conf
 **Cambio:** de no saber nada a cargar una cifra que duele y una pregunta: ¿quién lo calculó?
 
 **VO:**
-Durante casi dos siglos, la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento de todo lo que producía. [PAUSA 0,4s] Cada año. [PAUSA 1s]
+Durante casi dos siglos, la corrupción le costó al Perú una parte de todo lo que producía. [PAUSA 0,6s] Cada año, en promedio, ese costo fue de entre el tres y el cuatro por ciento. [PAUSA 1s]
 
 Comparado con el gasto del Estado, ese costo equivalía a tres o cuatro de cada diez soles. [PAUSA 1,2s]
 
 No era una suma de casos sueltos: era sistémica, y venía desde la colonia. [PAUSA 1,2s]
 
-Todo eso lo calculó un historiador limeño. [PAUSA 0,8s] Y no llegó a ver su libro en español. [PAUSA 1,5s]
+Todo eso lo calculó un historiador limeño, que no llegó a ver su libro en español. [PAUSA 1,5s]
 
 **Imagen:**
-- «Durante casi dos siglos» (`anio`): el contador de años corre de 1820 a 2000 (la voz redondea; la pantalla da los años exactos); la barra de lo que produce el país, en cien partes. El contador frena en 2000 antes de «Cada año».
+- «Durante casi dos siglos» (`anio`): el contador de años corre de 1820 a 2000 (la voz redondea; la pantalla da los años exactos); la barra de lo que produce el país, en cien partes. El contador frena en 2000 antes de «Cada año, en promedio».
 - «tres y el cuatro» (`rojo`): la tajada se tiñe (3 % rojo lleno, el cuarto rayado) y desde ahí cae una tajada por año y se apila abajo.
 - «gasto del Estado» (`soles`): diez monedas genéricas. «tres» (`caen`): caen tres. «o cuatro» (`cuatro`): la cuarta se inclina y queda a medias, punteada. `30–40 % DEL GASTO` y la nota `COSTO ESTIMADO: LO QUE NO LLEGÓ A SU FIN PÚBLICO (DESVÍOS E INVERSIÓN PERDIDA)`: la voz dice «equivalía» porque es una comparación, no una parte del presupuesto.
 - «casos sueltos» (`sueltos`): la regla de 1680 a 2000 con puntos rojos sueltos que parpadean. «sistémica» (`sistema`): se unen en una franja continua y entra su frase textual, «un fenómeno sistémico, no un acontecimiento anecdótico o periódico» (epílogo, p. 531): la voz y la cita dicen la misma palabra. «colonia» (`colonia`): la franja se alarga hacia atrás.
@@ -74,15 +76,15 @@ Todo eso lo calculó un historiador limeño. [PAUSA 0,8s] Y no llegó a ver su l
 **Cambio:** de un desconocido a un hombre que corrige su libro contra el tiempo.
 
 **VO:**
-Nueva York. [PAUSA 0,6s] Nuestro historiador revisa con minuciosidad las pruebas de imprenta de la traducción al español de su último libro. [PAUSA 1s]
+En Nueva York, nuestro historiador revisa con minuciosidad las pruebas de imprenta de la traducción al español de su último libro. [PAUSA 1s]
 
-No le queda mucho tiempo, y lo sabe. [PAUSA 1,5s]
+Tiene cáncer, no le queda mucho tiempo, y lo sabe. [PAUSA 1,5s]
 
 En los agradecimientos escribe una línea fácil de pasar por alto: les agradece a sus médicos por alargar estos días para poder completar la tarea. [PAUSA 1s]
 
 Unas líneas más abajo celebra el nacimiento de su hijo. [PAUSA 1,5s]
 
-Murió en enero de dos mil trece. [PAUSA 6s: una cruz sobre negro; la fecha; 2,5 s de silencio; recién después el punto rojo y la cámara recorre los meses] El libro salió en mayo. [PAUSA 1s]
+Murió en enero de dos mil trece, a los cincuenta y seis años. [PAUSA 6s: una cruz sobre negro; la fecha; 2,5 s de silencio; recién después el punto rojo y la cámara recorre los meses] El libro salió en mayo, cuatro meses después de su muerte. [PAUSA 1s]
 
 Estos videos tratan de ese hombre y de lo que encontró.
 
@@ -103,7 +105,7 @@ Se llamaba Alfonso Quiroz Norris y nació en Lima, en mil novecientos cincuenta 
 
 Fue nadador de competencia: representó al Perú en las categorías infantil y juvenil. [PAUSA 1,2s: la piscina, sin voz]
 
-Marcos Cueto, su amigo desde los quince años, cuenta que Quiroz aprendió disciplina en la piscina y que después la llevó a los archivos. [PAUSA 0,6s] Y lo describe con una sola palabra: [PAUSA 0,5s] inagotable. [PAUSA 2s]
+Marcos Cueto, su amigo desde los quince años, cuenta que Quiroz aprendió disciplina en la piscina y que después la llevó a los archivos. [PAUSA 0,6s] Y en el prólogo del libro lo describe con una sola palabra: [PAUSA 0,5s] inagotable. [PAUSA 2s]
 
 **Imagen:**
 - «Alfonso Quiroz Norris» (`nombre`): el nombre, letra por letra, y `1956 — 2013`.
@@ -124,18 +126,18 @@ Marcos Cueto, su amigo desde los quince años, cuenta que Quiroz aprendió disci
 **VO:**
 En mil novecientos setenta y cuatro entró a la Universidad Católica, en uno de los primeros puestos del examen de admisión. [PAUSA 0,6s]
 
-El Perú vivía el gobierno militar de Velasco. [PAUSA 0,4s] Reforma agraria. Nacionalizaciones. Un discurso que prometía enterrar el pasado oligárquico. [PAUSA 1s]
+El Perú vivía el gobierno militar de Velasco, con su reforma agraria, sus nacionalizaciones y un discurso que prometía enterrar el pasado oligárquico. [PAUSA 1s]
 
 Quiroz nunca apoyó al régimen: militó un tiempo en un pequeño partido trotskista que criticaba con dureza al gobierno militar. [PAUSA 1s]
 
-Para un estudiante de esa época, estudiar historia era una forma de entender el presente y de responder una pregunta: [PAUSA 0,6s] ¿el país estaba cambiando de verdad? [PAUSA 0,8s] ¿O repetía lo de siempre? [PAUSA 2,5s: la pregunta queda en el aire]
+Para un estudiante de esa época, estudiar historia era una forma de entender el presente. [PAUSA 0,6s] Y el presente le hacía una pregunta: ¿el país estaba cambiando de verdad, [PAUSA 0,8s] o repetía lo de siempre? [PAUSA 2,5s: la pregunta queda en el aire]
 
 **Imagen:** la del render del 17/11, con los afiches ya calmados (auditoría, hojas 1 y 4).
 - «Universidad Católica» (`sello`, `primeros`): `PUCP · 1974` cae sobre la lista y se marcan los primeros puestos.
 - «Velasco» (`afiches`): el muro y la ficha `GOBIERNO MILITAR DE VELASCO · 1968–1975`. «Reforma agraria» (`afiche1`), «Nacionalizaciones» (`afiche2`), «Un discurso» (`afiche3`): un afiche por palabra.
 - «nunca apoyó» (`volante`); «militó» (`leer`): la cámara se acerca hasta leer el volante con la cita de Cueto.
-- «Para un estudiante» (`vuelve`): la cámara vuelve al muro entero. «responder una pregunta» (`acerca`): se arrima al último afiche, `UN PAÍS NUEVO`, y se queda quieta durante «¿el país estaba cambiando de verdad?».
-- En la pausa de 0,8 s (`esquina`), la esquina empieza a despegarse. «¿O repetía» (`despegue`): el afiche cae entero y queda el viejo, igual de prometedor, rotulado como ilustración. Quieto en la pausa de 2,5 s.
+- «Para un estudiante» (`vuelve`): la cámara vuelve al muro entero. «le hacía una pregunta» (`acerca`): se arrima al último afiche, `UN PAÍS NUEVO`, y se queda quieta durante «¿el país estaba cambiando de verdad,».
+- En la pausa de 0,8 s (`esquina`), la esquina empieza a despegarse. «o repetía» (`despegue`): el afiche cae entero y queda el viejo, igual de prometedor, rotulado como ilustración. Quieto en la pausa de 2,5 s.
 
 **Fuente:** prólogo, pp. 15–16 (PUCP 1974, «en uno de los primeros lugares del exigente examen de admisión»; «nunca apoyó al gobierno militar»; el partido trotskista «que criticaba duramente al régimen castrense»; la pregunta: «conocer realmente los elementos de cambio y continuidad en la historia del Perú», para «comprender no solo el pasado sino iluminar el presente»). Velasco, como en `fuentes.md`.
 
@@ -150,15 +152,15 @@ Casi con seguridad fue en un curso de Franklin Pease donde leyó por primera vez
 
 Braudel decía que la historia no corre a una sola velocidad. [PAUSA 0,6s]
 
-Arriba están los acontecimientos: los gobiernos, las guerras, las noticias. Cambian rápido, como las olas. [PAUSA 1s]
+Arriba están los acontecimientos, como los gobiernos, las guerras y las noticias, que cambian rápido, como las olas. [PAUSA 1s]
 
-Más abajo, la economía y la sociedad. Cambian despacio. [PAUSA 1s]
+Más abajo están la economía y la sociedad, que cambian más despacio. [PAUSA 1s]
 
-Y al fondo, la relación del hombre con la tierra y el clima. Casi no se mueve. [PAUSA 1,5s: la cámara baja]
+Y al fondo está la relación del hombre con la tierra y el clima, que casi no se mueve. [PAUSA 1,5s: la cámara baja]
 
 A lo que cambia tan despacio que dura siglos lo llamó larga duración. [PAUSA 2s]
 
-Según Cueto, ahí aprendió a apreciar lo que persiste: las estructuras de la economía. [PAUSA 1s] Hay cosas que no cambian aunque cambien los gobiernos. [PAUSA 1,5s] Esa mirada larga es la de esta serie. [PAUSA 2,5s]
+Según Cueto, ahí aprendió a apreciar lo que persiste: las estructuras de la economía. [PAUSA 1s] Hay cosas en el Perú que no cambian aunque cambien los gobiernos. [PAUSA 1,5s] Esa mirada larga, que busca lo que persiste, es la de esta serie. [PAUSA 2,5s]
 
 **Imagen:** la pizarra del render del 17/11, con los nombres grandes (auditoría, hoja 6).
 - «Franklin Pease» (`clase`): `Etnohistoria Andina · F. Pease`, grande al centro. «Fernand Braudel» (`braudel`): su ficha, `F. BRAUDEL · LA LARGA DURACIÓN`. Los dos viajan a su esquina con «Braudel decía» (`capas`).
@@ -184,7 +186,7 @@ Ahí estaba el guano, el abono que el Perú sacaba de sus islas y vendía a Euro
 
 En mil ochocientos cincuenta, el Estado decidió pagar con la plata del guano una deuda vieja con acreedores del propio país. [PAUSA 1,5s: cae el sello y se asienta]
 
-Pero en su tesis de mil novecientos ochenta, Quiroz mostró que no todo se fue en lujos. [PAUSA 0,5s] Algunos inflaron el valor de esa deuda para enriquecerse a costa del Estado. [PAUSA 1,2s: el monto sube, quieto después] ¿Adónde fue a parar esa plata?
+Pero en su tesis de mil novecientos ochenta, Quiroz mostró que no todo se fue en lujos. [PAUSA 0,5s] Algunos inflaron el valor de esa deuda para enriquecerse a costa del Estado. [PAUSA 1,2s: el monto sube, quieto después] ¿Y adónde fue a parar la plata que el Estado pagó por esa deuda?
 
 **Imagen:** el reparto de la auditoría (hoja 2), con tres eslabones nuevos (`zarpa`, `lujos` y `tacha`) para las frases nuevas.
 - «en Lima» (`hoja_entra`, `ficha_lugar`): el libro cerrado y la ficha destacada `LIMA · 1980`.
@@ -196,7 +198,7 @@ Pero en su tesis de mil novecientos ochenta, Quiroz mostró que no todo se fue e
 - En la pausa de 1,5 s (`consolidacion`): cae el sello rojo `1850` y se asienta antes del «Pero», para que los dos rojos seguidos no se pisen.
 - «Pero» (`tacha`, nuevo): el corrector tacha en rojo solo la palabra `TODO`: Quiroz no negó el derroche, negó que explicara todo (C5 del 000). Es el rojo del corrector, y no compite con el de la culpa, que llega después.
 - «inflaron» (`hallazgo`): el monto del vale de arriba sube, rotulado `EJEMPLO ILUSTRATIVO`, con su vale ya en la pila.
-- «¿Adónde» (`pregunta`): la pregunta escrita fuerte, en rojo; el acorde de G suena solo después.
+- «¿Y adónde» (`pregunta`): la pregunta escrita fuerte, en rojo, como la pide la guía (§2.14): «¿A dónde fue a parar esa plata?». La voz la dice completa, con su sujeto (la plata que el Estado pagó por la deuda), y la pantalla la escribe corta; el acorde de G suena solo después.
 
 **Sonido:** G de Suno; el golpe se apaga con «…a costa del Estado» y el acorde final, +8 dB, entra 0,5 s después de la pregunta. Hay que volver a calzarlo con `montar_musica.py` (anclado a `pregunta`).
 
@@ -206,52 +208,65 @@ Pero en su tesis de mil novecientos ochenta, Quiroz mostró que no todo se fue e
 
 ## ESC 6 — Aprender a medir · `s05` en escenas.json
 
-**Cambio:** de un historiador de documentos a uno que mide y que cambia de ideas, sin soltar la tesis.
+**Cambio:** de un historiador de documentos a uno que mide, y que sabe que la cifra sola no basta.
 
 **VO:**
 Poco después toma un camino que pocos peruanos habían tomado. [PAUSA 0,5s] Buena parte de los historiadores peruanos miraba a París, la ciudad de Braudel, donde se habían formado algunos de los profesores de Quiroz. [PAUSA 0,9s] Él, en cambio, se va a Nueva York, a la Universidad de Columbia. [PAUSA 1,8s: el viaje]
 
-Allí, el historiador Herbert Klein le ofrece una beca. [PAUSA 0,4s] Y Quiroz aprende historia cuantitativa: pensar el pasado con números, no solo con discursos. [PAUSA 1s]
+Allí, el historiador Herbert Klein le ofrece una beca de maestría y doctorado. [PAUSA 0,4s] Y Quiroz aprende historia cuantitativa: pensar el pasado con números, no solo con discursos. [PAUSA 1s]
 
-Una de sus herramientas se llama regresión: imagina muchos puntos desordenados, cada uno una observación, un dato. [PAUSA 0,4s] A simple vista, solo ruido. [PAUSA 0,8s] La regresión busca la línea que pasa lo más cerca posible de todos, y si hay una tendencia, la deja ver. [PAUSA 0,8s] Cada punto junta dos cifras, y la inclinación de la línea dice cuánto sube una por cada paso que da la otra. [PAUSA 2s: la recta terminada, quieta]
+Una de sus herramientas se llama regresión: imagina muchos puntos desordenados, cada uno una observación, que a simple vista parecen solo ruido. [PAUSA 1s: nada se mueve] La regresión busca la línea que pasa lo más cerca posible de todos, y si hay una tendencia, la deja ver. [PAUSA 0,8s] Cada punto junta dos cifras, y la inclinación de la línea dice cuánto sube una por cada paso que da la otra. [PAUSA 2s: la recta terminada, quieta]
 
 Aprende a trabajar con cifras y a contrastarlas con documentos. [PAUSA 1s: se lee «Un ajuste no prueba causalidad.»] Años después, llevará esa disciplina al estudio de la corrupción en el Perú. [PAUSA 2s]
 
-De otro de sus profesores en Columbia, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad. [PAUSA 1,5s]
+De otro de sus profesores en Columbia, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad. [PAUSA 2s: la balanza se equilibra]
 
+**Imagen:** la primera mitad de `AprenderAMedir` (render del 17/11): el viaje, el método y la balanza. Termina con la balanza equilibrada y quieta.
+- «Poco después» (`mapa`): el mapa con `A COMIENZOS DE LOS OCHENTA` (notas del 19/11). «París» (`paris`): sale la ruta. «algunos de los profesores» (`paris_notas`): `SUS PROFESORES EN LA PUCP` · `HERACLIO BONILLA` · `ALBERTO FLORES GALINDO`. En la pausa de 0,9 s (`duda`): la ruta duda y se borra.
+- «se va» (`sale`): la cámara se lanza y sigue la ruta; en la pausa de 1,8 s (`llega`, `abre`): sello, campana y `NUEVA YORK · 1981`; la cámara se abre hasta ver las dos rutas.
+- «Herbert Klein» (`ficha`): `COLUMBIA UNIVERSITY · BECA · H. S. KLEIN`.
+- «historia cuantitativa» (`puntos`): el papel milimetrado y el título «Pensar el pasado con números, no solo con discursos.» (notas del 19/11). «discursos» (`discursos`): los bloques de discurso se apagan.
+- «regresión» (`regresion`): `REGRESIÓN · ESQUEMA DIDÁCTICO`. «imagina» (`caen`): caen los puntos. «observación» (`observacion`): se escribe «Cada punto, una observación.».
+- «solo ruido» y la pausa de 1 s: nada se mueve hasta la recta. Es el estado que hay que ver antes del cambio.
+- «la línea» (`recta`): se traza la recta. «lo más cerca posible» (`residuos`): las distancias se estiran desde cada punto hasta la recta y entra «Las distancias a la recta son los residuos.». «tendencia» (`tendencia`): «La recta resume una tendencia.».
+- «la inclinación» (`pendiente`): el escalón grande de la pendiente, con `un paso` y `cuánto sube`, las mismas palabras de la voz. Quieto los 2 s de la pausa; el clarinete entra aquí.
+- «Aprende a trabajar» (`causalidad`), al empezar la frase para que haya tiempo de leerla: «Un ajuste no prueba causalidad.».
+- «Años después» (`serie`): la nube se va y entra su serie real, `LO QUE MIDIÓ: EL COSTO DE LA CORRUPCIÓN`, con `ESTIMADOS PRELIMINARES` (ver el hallazgo 12 del documento de diseño: `DEFINIR`).
+- «Kenneth Maxwell» (`balanza`), «profundidad» (`profundidad`), «claridad» (`claridad`): la balanza con su título, que se equilibra en la pausa de 2 s.
+
+**Fuente:** prólogo, pp. 18–19 (París, «la meca de los estudios de doctorado»; «uno de los primeros peruanos en abrir una senda de estudios doctorales en historia en Estados Unidos»; Klein le ofrece «una beca de maestría y doctorado»; la historia cuantitativa y las «regresiones múltiples»; «el historiador no repite lo que dicen los discursos»; Maxwell, «combinar la profundidad con la claridad»); los profesores formados en París, como en `fuentes.md`.
+
+---
+
+## ESC 7 — Las cuentas abiertas · `s08` (escena nueva)
+
+Sale de partir la escena del viaje, que juntaba seis ideas en unos 96 s (hallazgo 10 del documento de diseño; Gerson ofreció escenas nuevas el 19/11). Aquí queda la carrera: lo que llegó a ser, cómo cambió y la tesis que no soltó.
+
+**Cambio:** del alumno que aprende a medir a la autoridad que no cierra sus propias cifras, y que vuelve a la deuda.
+
+**VO:**
 Con los años, según Cueto, llega a ser la máxima autoridad en la historia financiera del Perú. [PAUSA 1s]
 
 Sus ideas políticas también cambian: del joven trotskista pasa a una postura liberal, que pide igualdad de oportunidades para todos en la economía. [PAUSA 1s] Y no da por cerradas ni sus propias cifras: llama provisionales a sus cálculos. [PAUSA 2s]
 
 Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro. [PAUSA 1,5s]
 
-**Imagen:** la escena del render del 17/11 (`AprenderAMedir`), con tres párrafos separados por respiros: el viaje, el método y la carrera.
-- «Poco después» (`mapa`): el mapa con `A COMIENZOS DE LOS OCHENTA` (notas del 19/11). «París» (`paris`): sale la ruta. «algunos de los profesores» (`paris_notas`): `SUS PROFESORES EN LA PUCP` · `HERACLIO BONILLA` · `ALBERTO FLORES GALINDO`. En la pausa de 0,9 s (`duda`): la ruta duda y se borra.
-- «se va» (`sale`): la cámara se lanza y sigue la ruta; en la pausa de 1,8 s (`llega`, `abre`): sello, campana y `NUEVA YORK · 1981`; la cámara se abre hasta ver las dos rutas.
-- «Herbert Klein» (`ficha`): `COLUMBIA UNIVERSITY · BECA · H. S. KLEIN`.
-- «historia cuantitativa» (`puntos`): el papel milimetrado y el título «Pensar el pasado con números, no solo con discursos.» (notas del 19/11). «discursos» (`discursos`): los bloques de discurso se apagan.
-- «regresión» (`regresion`): `REGRESIÓN · ESQUEMA DIDÁCTICO`. «imagina» (`caen`): caen los puntos. «observación» (`observacion`): se escribe «Cada punto, una observación.» (la voz presenta la palabra de la lámina junto con la de todos los días).
-- «A simple vista, solo ruido»: nada se mueve hasta la recta. Es el estado que hay que ver antes del cambio.
-- «la línea» (`recta`): se traza la recta. «lo más cerca posible» (`residuos`): las distancias se estiran desde cada punto hasta la recta y entra «Las distancias a la recta son los residuos.». «tendencia» (`tendencia`): «La recta resume una tendencia.».
-- «la inclinación» (`pendiente`): el escalón grande de la pendiente, con `un paso` y `cuánto sube`, las mismas palabras de la voz. Quieto los 2 s de la pausa; el clarinete entra aquí.
-- «Aprende a trabajar» (`causalidad`), al empezar la frase para que haya tiempo de leerla: «Un ajuste no prueba causalidad.». La voz y la lámina dicen las dos mitades del mismo método: la cifra sola no basta.
-- «Años después» (`serie`): la nube se va y los puntos viajan a su serie real, `LO QUE MIDIÓ: EL COSTO DE LA CORRUPCIÓN`, con `ESTIMADOS PRELIMINARES`.
-- «Kenneth Maxwell» (`balanza`), «profundidad» (`profundidad`), «claridad» (`claridad`): la balanza con su título, que se equilibra en la pausa.
+**Imagen:** la segunda mitad de `AprenderAMedir` (el estante, la brújula y la pizarra), como escena propia. Entra con un corte J desde la balanza: la música F sigue sin corte.
 - «la máxima autoridad» (`estante`, `temas`): los lomos de sus libros y `BARUCH COLLEGE · CUNY · NUEVA YORK`.
-- «Sus ideas políticas» (`brujula`); «joven trotskista» (`izquierda`); «postura liberal» (`giro`): la aguja gira de `1970s` a `1990s–2000s`; las notas de cada polo aparecen con su palabra.
+- «Sus ideas políticas» (`brujula`); «joven trotskista» (`izquierda`); «postura liberal» (`giro`): la aguja gira de época a época; las notas de cada polo aparecen con su palabra.
 - «ni sus propias cifras» (`tiza`): la brújula pasa a la pizarra. «provisionales» (`frase`): «Sus cálculos: provisionales, abiertos a revisión.» con tiza.
-- «aquella tesis»: el tema del canal entra aquí (~6,7 s antes del cierre) y sigue en s07 sin corte.
+- «aquella tesis»: el tema del canal entra aquí y sigue en s07 sin corte.
 
-**Fuente:** prólogo, pp. 18–23 (París, «la meca de los estudios de doctorado»; «uno de los primeros peruanos en abrir una senda de estudios doctorales en historia en Estados Unidos»; la beca de Klein; la historia cuantitativa y las «regresiones múltiples»; «el historiador no repite lo que dicen los discursos»; Maxwell, «combinar la profundidad con la claridad»; «la máxima autoridad en la historia financiera peruana»; las «posturas auténticamente liberales» que pedían «dar mayor autonomía al mercado, asegurar una igualdad de oportunidades a todos los actores económicos»); p. 17 (*La deuda defraudada*, 1987); introducción, p. 57, y apéndice, p. 535 (los cálculos «sujetos a revisión», «provisional»); los profesores formados en París, como en `fuentes.md`.
+**Fuente:** prólogo, pp. 20–23 («la máxima autoridad en la historia financiera peruana»; las «posturas auténticamente liberales» que pedían «asegurar una igualdad de oportunidades a todos los actores económicos»); p. 17 (*La deuda defraudada*, 1987); introducción, p. 57, y apéndice, p. 535 (los cálculos «sujetos a revisión», «provisional»).
 
 ---
 
-## ESC 7 — Cierre · `s07`
+## ESC 8 — Cierre · `s07`
 
 **VO:**
-[PAUSA 2,5s] Próximo episodio: *La deuda defraudada*.
+[PAUSA 2,5s] El próximo episodio sigue esa plata, y se llama *La deuda defraudada*.
 
-**Imagen:** las pruebas de imprenta del comienzo se cierran (sin limpiarse: eso queda para el 0·4); fundido a negro; tarjeta con «La deuda defraudada» grande y «(1850)» chico debajo.
+**Imagen:** las pruebas de imprenta del comienzo se cierran (sin limpiarse: eso queda para el 0·4); fundido a negro; tarjeta con «La deuda defraudada» grande y «(1850)» chico debajo. La tarjeta entra con «se llama».
 
 **Sonido:** el tema del canal, que ya venía desde «aquella tesis», sube con el archivador y se queda unos 5 s sobre la tarjeta.
 
@@ -263,17 +278,17 @@ Lo que cambió respecto de la versión 2 (en `main`) y de la reordenada del 11/1
 
 1. **Orden cronológico** (Gerson, 11/11, confirmado el 19/11). El primer caso va antes del viaje. Se conservan las frases que Gerson redactó para ese orden: «En su tesis de 1980 mostró…» y «Pero no se olvidó de aquella tesis…».
 2. **El primer caso gira con un «pero» que está en la fuente.** La versión anterior encadenaba «Ahí estaba el guano. Y una deuda… Y encontró…»: tres «y entonces». El prólogo da el giro completo, con su «sin embargo»: él quería comprobar si era verdad que **toda** la riqueza del guano se había derrochado en lujos, como aseguraba la historiografía de entonces, y encontró la deuda inflada. Quiroz no niega el derroche (C5 del 000): por eso la voz dice «toda» y «no todo», y el corrector tacha solo `TODO`. Ese contraste es el que hace que la pregunta final duela, y le da al corrector algo que tachar.
-3. **La regla del mínimo de 10 palabras no se aplica a la voz**, como en el 0·2: es texto para el oído y la guía del canal pide alternar largos. Se quedaron solo los remates y los fragmentos con función: «Nueva York.», «Cada año.», «Reforma agraria. Nacionalizaciones.» (un afiche por palabra), los tres pares de las capas de Braudel (la elipsis paralela es la señal de estructura de la clase), «A simple vista, solo ruido.» (el estado que hay que ver antes de la recta), «Casi no se mueve.» (dispara la cámara) e «inagotable». Las demás oraciones cortas se integraron con su enlace: dos puntos en «nunca apoyó al régimen: militó…», en «escribe una línea…: les agradece…» y en «se llama regresión: imagina…».
+3. **El mínimo de 10 palabras sí se aplica a la voz (Gerson, 19/11).** La voz v4 exageraba los fragmentos cortos (susurros, remates) y la locución sonaba entrecortada. Ninguna oración baja de 10 palabras, y ninguna pasa de 25. Se cumplió integrando, no rellenando: «Cada año.» pasa a «Cada año, en promedio, ese costo fue de…»; «Reforma agraria. Nacionalizaciones.» se vuelve la enumeración de Velasco con su verbo; los pares de las capas de Braudel llevan cada uno su relativa («…que cambian rápido, como las olas»); «A simple vista, solo ruido.» se cuelga de los puntos; las dos preguntas de s03 son una sola, con su pausa en la coma. Donde hacía falta largo, se agregó un dato con fuente y no una muletilla: «Tiene cáncer» (Contreras, 2013; *El Comercio*, 2019), «a los cincuenta y seis años» (*El Comercio*, 2019), «cuatro meses después de su muerte», «una beca de maestría y doctorado» (p. 18) y la pregunta final con su sujeto.
 4. **«Cuánto pesa» pasa a «cuánto sube una por cada paso que da la otra».** «Cuánto pesa» no decía qué pesaba; la nueva frase (que antes dice que cada punto junta dos cifras) dice lo que muestra la pendiente con las mismas palabras de sus rótulos (`un paso`, `cuánto sube`). El beat sigue llamándose `pendiente` y el clarinete sigue entrando ahí.
 5. **La voz presenta los términos de la lámina de la regresión.** La lámina dice «observación», «residuos» y «tendencia»; la voz decía «dato» y no nombraba las distancias. Ahora dice «una observación, un dato» y «lo más cerca posible de todos»: cada frase escrita llega con su palabra hablada, sin que la voz lea la lámina.
 6. **Cifras en letras en la voz**, como en `narracion.json` y en el 0·2; en pantalla, en cifras.
-7. **El texto de la voz para ElevenLabs** está en [narracion_v3_propuesta.json](narracion_v3_propuesta.json), con las etiquetas de emoción de la toma actual donde la frase no cambió. No se generó voz: se hace cuando Gerson apruebe el texto.
+7. **La voz está en `narracion.json`** (versión 5, 19/11): «Joder Jolines» con `eleven_v4`, una etiqueta suave al comienzo de cada escena, estabilidad 0,7 y las pausas de este guion (las de 1 s o más, garantizadas con el aire de la toma). Duraciones reales en `narracion_tiempos.json`: 5:34 de voz, unos 5:48 con las colas.
 
 ## Lo que este guion obliga a cambiar fuera de él
 
 Pendiente de aprobación de Gerson. El detalle, con la ficha de cada movimiento, está en [diseno/diseno-y-animacion-2026-11-19.md](diseno/diseno-y-animacion-2026-11-19.md).
 
-- **escenas.json:** pasar `s06` antes de `s05` (o renumerar), y tres beats nuevos en `MecanismoDeuda`: `zarpa`, `lujos` y `tacha` (con su rótulo). En `s04`, que `subir` deje a la vista las dos capas lentas.
+- **escenas.json:** pasar `s06` antes de `s05` (o renumerar); partir `s05` en dos escenas, `s05` (viaje, método y balanza) y `s08` (estante, brújula y pizarra), las dos con `AprenderAMedir`, y tres beats nuevos en `MecanismoDeuda`: `zarpa`, `lujos` y `tacha` (con su rótulo). En `s04`, que `subir` deje a la vista las dos capas lentas.
 - **Voz:** regenerar con `scripts/narracion.py` las escenas cuyo texto cambió (todas menos s07) y correr `beats_a_la_voz.py --rehacer`. Los beats cuyas frases cambiaron se vuelven a anclar a mano con la tabla de anclas del documento de diseño.
 - **Música:** `montar_musica.py` para s00 a s06; el tema del canal pasa a entrar con «aquella tesis», al final de la escena del viaje.
 - **fuentes.md:** las filas de las frases nuevas (el abono que se vendía a Europa; «toda» la riqueza derrochada en lujos, pp. 17–18; la deuda «con acreedores del propio país», p. 169; la equivalencia con el gasto, pp. 532, 535 y 554; «cuando terminaba la universidad», como deducción de la tesis de bachiller de 1980).

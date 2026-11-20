@@ -4,308 +4,261 @@
  "tipo": "clon de la voz de Gerson",
  "modelo": "eleven_v4",
  "voice_settings": {
-  "stability": 0.5,
+  "stability": 0.7,
   "similarity_boost": 0.8
  },
  "nota": "Una toma por escena (scripts/narracion.py): las frases de cada escena se dicen seguidas en una sola generación, con sus etiquetas de emoción. «cortes» parte la toma solo donde el guion pide una pausa larga (s01: la cruz sobre negro) y la rellena con el aire de la propia toma. Decidido por Gerson el 2026-11-10. Versión 4 de la voz (2026-11-19): el texto del guion versión 3, aprobado por Gerson, con el modelo eleven_v4 a su pedido («joder jolines v4»). Cada frase es [texto, pausa después en segundos], tomada del guion.",
  "cortes": {
   "s01": {
-   "6": 6.65
+   "4": 6.65
   }
  },
  "frases": {
   "s00": [
    [
-    "[serious] [slowly] Durante casi dos siglos... la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento... de todo lo que producía.",
-    0.4
+    "[serious] Durante casi dos siglos, la corrupción le costó al Perú una parte de todo lo que producía.",
+    0.6
    ],
    [
-    "[whispers] Cada año.",
+    "Cada año, en promedio, ese costo fue de entre el tres y el cuatro por ciento.",
     1.0
    ],
    [
-    "[calm] Comparado con el gasto del Estado... ese costo equivalía a tres o cuatro de cada diez soles.",
+    "Comparado con el gasto del Estado, ese costo equivalía a tres o cuatro de cada diez soles.",
     1.2
    ],
    [
-    "[firm] No era una suma de casos sueltos: era sistémica, y venía desde la colonia.",
+    "No era una suma de casos sueltos: era sistémica, y venía desde la colonia.",
     1.2
    ],
    [
-    "[softly] Todo eso lo calculó un historiador limeño.",
-    0.8
-   ],
-   [
-    "[sad] [quietly] Y no llegó a ver su libro en español.",
+    "Todo eso lo calculó un historiador limeño, que no llegó a ver su libro en español.",
     1.5
    ]
   ],
   "s01": [
    [
-    "[calm] [quietly] Nueva York.",
-    0.6
-   ],
-   [
-    "[calm] [observant] Nuestro historiador revisa con minuciosidad las pruebas de imprenta de la traducción al español de su último libro.",
+    "[calm] En Nueva York, nuestro historiador revisa con minuciosidad las pruebas de imprenta de la traducción al español de su último libro.",
     1.0
    ],
    [
-    "[softly] [serious] No le queda mucho tiempo... y lo sabe.",
+    "Tiene cáncer, no le queda mucho tiempo, y lo sabe.",
     1.5
    ],
    [
-    "[gentle] En los agradecimientos escribe una línea fácil de pasar por alto:",
-    0.35
-   ],
-   [
-    "[tender] les agradece a sus médicos por alargar estos días para poder completar la tarea.",
+    "En los agradecimientos escribe una línea fácil de pasar por alto: les agradece a sus médicos por alargar estos días para poder completar la tarea.",
     1.0
    ],
    [
-    "[warm] Unas líneas más abajo celebra el nacimiento de su hijo.",
+    "Unas líneas más abajo celebra el nacimiento de su hijo.",
     1.5
    ],
    [
-    "[sad] [quietly] [slowly] Murió en enero de dos mil trece.",
+    "Murió en enero de dos mil trece, a los cincuenta y seis años.",
     6.0
    ],
    [
-    "[quietly] El libro salió en mayo.",
+    "El libro salió en mayo, cuatro meses después de su muerte.",
     1.0
    ],
    [
-    "[warm] [resolute] Estos videos tratan de ese hombre... y de lo que encontró.",
+    "Estos videos tratan de ese hombre y de lo que encontró.",
     0.35
    ]
   ],
   "s02": [
    [
-    "[warm] [clear] Se llamaba Alfonso Quiroz Norris y nació en Lima, en mil novecientos cincuenta y seis.",
+    "[warm] Se llamaba Alfonso Quiroz Norris y nació en Lima, en mil novecientos cincuenta y seis.",
     1.0
    ],
    [
-    "[light] [curious] Fue nadador de competencia: representó al Perú en las categorías infantil y juvenil.",
+    "Fue nadador de competencia: representó al Perú en las categorías infantil y juvenil.",
     1.2
    ],
    [
-    "[calm] [storytelling] Marcos Cueto, su amigo desde los quince años, cuenta que Quiroz aprendió disciplina en la piscina y que después la llevó a los archivos.",
+    "Marcos Cueto, su amigo desde los quince años, cuenta que Quiroz aprendió disciplina en la piscina y que después la llevó a los archivos.",
     0.6
    ],
    [
-    "[thoughtful] Y lo describe con una sola palabra:",
+    "Y en el prólogo del libro lo describe con una sola palabra:",
     0.5
    ],
    [
-    "[admiring] [softly] inagotable.",
+    "inagotable.",
     2.0
    ]
   ],
   "s03": [
    [
-    "[storytelling] En mil novecientos setenta y cuatro entró a la Universidad Católica, en uno de los primeros puestos del examen de admisión.",
+    "[calm] En mil novecientos setenta y cuatro entró a la Universidad Católica, en uno de los primeros puestos del examen de admisión.",
     0.6
    ],
    [
-    "[serious] El Perú vivía el gobierno militar de Velasco.",
-    0.4
-   ],
-   [
-    "[firm] Reforma agraria.",
-    0.35
-   ],
-   [
-    "[firm] Nacionalizaciones.",
-    0.35
-   ],
-   [
-    "[slightly ironic] Un discurso que prometía enterrar el pasado oligárquico.",
+    "El Perú vivía el gobierno militar de Velasco, con su reforma agraria, sus nacionalizaciones y un discurso que prometía enterrar el pasado oligárquico.",
     1.0
    ],
    [
-    "[firm] Quiroz nunca apoyó al régimen: militó un tiempo en un pequeño partido trotskista que criticaba con dureza al gobierno militar.",
+    "Quiroz nunca apoyó al régimen: militó un tiempo en un pequeño partido trotskista que criticaba con dureza al gobierno militar.",
     1.0
    ],
    [
-    "[thoughtful] Para un estudiante de esa época, estudiar historia era una forma de entender el presente y de responder una pregunta:",
+    "Para un estudiante de esa época, estudiar historia era una forma de entender el presente.",
     0.6
    ],
    [
-    "[curious] [questioning] ¿el país estaba cambiando de verdad?",
+    "Y el presente le hacía una pregunta: ¿el país estaba cambiando de verdad,",
     0.8
    ],
    [
-    "[quietly] [doubtful] ¿O repetía lo de siempre?",
+    "o repetía lo de siempre?",
     2.5
    ]
   ],
   "s04": [
    [
-    "[storytelling] [careful] Casi con seguridad fue en un curso de Franklin Pease donde leyó por primera vez a Fernand Braudel, un historiador francés.",
+    "[calm] Casi con seguridad fue en un curso de Franklin Pease donde leyó por primera vez a Fernand Braudel, un historiador francés.",
     1.0
    ],
    [
-    "[teacher] [clear] Braudel decía que la historia no corre a una sola velocidad.",
+    "Braudel decía que la historia no corre a una sola velocidad.",
     0.6
    ],
    [
-    "[teacher] [lively] Arriba están los acontecimientos: los gobiernos, las guerras, las noticias.",
-    0.35
-   ],
-   [
-    "[teacher] [lively] Cambian rápido, como las olas.",
+    "Arriba están los acontecimientos, como los gobiernos, las guerras y las noticias, que cambian rápido, como las olas.",
     1.0
    ],
    [
-    "[teacher] [slower] Más abajo, la economía y la sociedad.",
-    0.35
-   ],
-   [
-    "[teacher] [slowly] Cambian despacio.",
+    "Más abajo están la economía y la sociedad, que cambian más despacio.",
     1.0
    ],
    [
-    "[teacher] [slowly] [deep] Y al fondo, la relación del hombre con la tierra y el clima.",
-    0.35
-   ],
-   [
-    "[slowly] [deep] Casi no se mueve.",
+    "Y al fondo está la relación del hombre con la tierra y el clima, que casi no se mueve.",
     1.5
    ],
    [
-    "[solemn] [slowly] A lo que cambia tan despacio que dura siglos lo llamó larga duración.",
+    "A lo que cambia tan despacio que dura siglos lo llamó larga duración.",
     2.0
    ],
    [
-    "[thoughtful] Según Cueto, ahí aprendió a apreciar lo que persiste: las estructuras de la economía.",
+    "Según Cueto, ahí aprendió a apreciar lo que persiste: las estructuras de la economía.",
     1.0
    ],
    [
-    "[serious] [low voice] Hay cosas que no cambian aunque cambien los gobiernos.",
+    "Hay cosas en el Perú que no cambian aunque cambien los gobiernos.",
     1.5
    ],
    [
-    "[warm] [resolute] Esa mirada larga es la de esta serie.",
+    "Esa mirada larga, que busca lo que persiste, es la de esta serie.",
     2.5
    ]
   ],
   "s06": [
    [
-    "[intrigued] Su primer caso lo encontró en Lima, cuando terminaba la universidad.",
+    "[serious] Su primer caso lo encontró en Lima, cuando terminaba la universidad.",
     0.6
    ],
    [
-    "[storytelling] Félix Denegri Luna tenía una gran biblioteca, y fue él quien le sugirió mirar con más cuidado el siglo diecinueve.",
+    "Félix Denegri Luna tenía una gran biblioteca, y fue él quien le sugirió mirar con más cuidado el siglo diecinueve.",
     1.0
    ],
    [
-    "[serious] Ahí estaba el guano, el abono que el Perú sacaba de sus islas y vendía a Europa.",
+    "Ahí estaba el guano, el abono que el Perú sacaba de sus islas y vendía a Europa.",
     0.6
    ],
    [
-    "[matter-of-fact] Cuando Quiroz estudiaba, los libros de historia aseguraban que toda esa riqueza se había derrochado en lujos de las élites.",
+    "Cuando Quiroz estudiaba, los libros de historia aseguraban que toda esa riqueza se había derrochado en lujos de las élites.",
     1.2
    ],
    [
-    "[serious] En mil ochocientos cincuenta, el Estado decidió pagar con la plata del guano una deuda vieja con acreedores del propio país.",
+    "En mil ochocientos cincuenta, el Estado decidió pagar con la plata del guano una deuda vieja con acreedores del propio país.",
     1.5
    ],
    [
-    "[firm] Pero en su tesis de mil novecientos ochenta, Quiroz mostró que no todo se fue en lujos.",
+    "Pero en su tesis de mil novecientos ochenta, Quiroz mostró que no todo se fue en lujos.",
     0.5
    ],
    [
-    "[grave] [low voice] Algunos inflaron el valor de esa deuda... para enriquecerse a costa del Estado.",
+    "Algunos inflaron el valor de esa deuda para enriquecerse a costa del Estado.",
     1.2
    ],
    [
-    "[quietly] [questioning] ¿Adónde fue a parar esa plata?",
+    "¿Y adónde fue a parar la plata que el Estado pagó por esa deuda?",
     0.35
    ]
   ],
   "s05": [
    [
-    "[storytelling] Poco después toma un camino que pocos peruanos habían tomado.",
+    "[calm] Poco después toma un camino que pocos peruanos habían tomado.",
     0.5
    ],
    [
-    "[calm] Buena parte de los historiadores peruanos miraba a París, la ciudad de Braudel, donde se habían formado algunos de los profesores de Quiroz.",
+    "Buena parte de los historiadores peruanos miraba a París, la ciudad de Braudel, donde se habían formado algunos de los profesores de Quiroz.",
     0.9
    ],
    [
-    "[decisive] Él, en cambio, se va a Nueva York, a la Universidad de Columbia.",
+    "Él, en cambio, se va a Nueva York, a la Universidad de Columbia.",
     1.8
    ],
    [
-    "[warm] Allí, el historiador Herbert Klein le ofrece una beca.",
+    "Allí, el historiador Herbert Klein le ofrece una beca de maestría y doctorado.",
     0.4
    ],
    [
-    "[clear] Y Quiroz aprende historia cuantitativa: pensar el pasado con números, no solo con discursos.",
+    "Y Quiroz aprende historia cuantitativa: pensar el pasado con números, no solo con discursos.",
     1.0
    ],
    [
-    "[teacher] Una de sus herramientas se llama regresión:",
-    0.35
+    "Una de sus herramientas se llama regresión: imagina muchos puntos desordenados, cada uno una observación, que a simple vista parecen solo ruido.",
+    1.0
    ],
    [
-    "[teacher] [inviting] imagina muchos puntos desordenados, cada uno una observación, un dato.",
-    0.4
-   ],
-   [
-    "[teacher] A simple vista, solo ruido.",
+    "La regresión busca la línea que pasa lo más cerca posible de todos, y si hay una tendencia, la deja ver.",
     0.8
    ],
    [
-    "[teacher] [clear] La regresión busca la línea que pasa lo más cerca posible de todos, y si hay una tendencia, la deja ver.",
-    0.8
-   ],
-   [
-    "[teacher] [emphatic] [softly] Cada punto junta dos cifras, y la inclinación de la línea dice cuánto sube una por cada paso que da la otra.",
+    "Cada punto junta dos cifras, y la inclinación de la línea dice cuánto sube una por cada paso que da la otra.",
     2.0
    ],
    [
-    "[calm] Aprende a trabajar con cifras y a contrastarlas con documentos.",
+    "Aprende a trabajar con cifras y a contrastarlas con documentos.",
     1.0
    ],
    [
-    "[serious] Años después, llevará esa disciplina al estudio de la corrupción en el Perú.",
+    "Años después, llevará esa disciplina al estudio de la corrupción en el Perú.",
     2.0
    ],
    [
-    "[calm] De otro de sus profesores en Columbia, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad.",
-    1.5
-   ],
+    "De otro de sus profesores en Columbia, Kenneth Maxwell, aprende que un buen historiador combina la profundidad con la claridad.",
+    2.0
+   ]
+  ],
+  "s08": [
    [
-    "[respectful] Con los años, según Cueto, llega a ser la máxima autoridad en la historia financiera del Perú.",
+    "[calm] Con los años, según Cueto, llega a ser la máxima autoridad en la historia financiera del Perú.",
     1.0
    ],
    [
-    "[thoughtful] Sus ideas políticas también cambian: del joven trotskista pasa a una postura liberal, que pide igualdad de oportunidades para todos en la economía.",
+    "Sus ideas políticas también cambian: del joven trotskista pasa a una postura liberal, que pide igualdad de oportunidades para todos en la economía.",
     1.0
    ],
    [
-    "[respectful] [thoughtful] Y no da por cerradas ni sus propias cifras: llama provisionales a sus cálculos.",
+    "Y no da por cerradas ni sus propias cifras: llama provisionales a sus cálculos.",
     2.0
    ],
    [
-    "[warm] [resolute] Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro.",
+    "Pero no se olvidó de aquella tesis sobre la deuda, que en mil novecientos ochenta y siete se convertiría en un libro.",
     1.5
    ]
   ],
   "s07": [
    [
-    "[calm] [warm] Próximo episodio: La deuda defraudada.",
+    "[warm] El próximo episodio sigue esa plata, y se llama La deuda defraudada.",
     0.35
    ]
   ]
  },
- "ganancia_frases": {
-  "s04": {
-   "0": -3
-  }
- },
- "nota_ganancia": "s04·0: «Casi con seguridad…» entra después del silencio en que termina s03 y sonaba fuerte (Gerson, 2026-11-11). Se conserva con la v4: la frase no cambió.",
- "nota_cortes": "s01: la toma se parte después de «Murió en enero de dos mil trece.», que en esta versión es la frase 6 (antes, la 7). La ganancia a mano de s04·0 (−3 dB) se conserva: la frase no cambió.",
+ "nota_cortes": "s01: la toma se parte después de «Murió en enero de dos mil trece, a los cincuenta y seis años.» (frase 4).",
  "respiro_min": 1.0,
- "nota_respiro": "Desde 1 s, las pausas del guion se garantizan con el aire de la toma (2026-11-19): en la versión 3 las pausas de 1 a 1,2 s son de diseño (la piscina sola, leer la versión de los lujos, leer «Un ajuste no prueba causalidad»), y la v4 las decía en 0,4 s."
+ "nota_respiro": "Desde 1 s, las pausas del guion se garantizan con el aire de la toma (2026-11-19): en la versión 3 las pausas de 1 a 1,2 s son de diseño (la piscina sola, leer la versión de los lujos, leer «Un ajuste no prueba causalidad»), y la v4 las decía en 0,4 s.",
+ "nota_voz_v5": "Versión 5 de la voz (2026-11-19), pedida por Gerson al escuchar la v4: «los susurros están muy exagerados, algunas emociones están muy exageradas, el audio salta en algunas partes». Texto con oraciones de 10 palabras o más (guion versión 3.1), una sola etiqueta suave al comienzo de cada escena (sin [whispers], [sad], [quietly] ni [low voice]), estabilidad 0,7 (antes 0,5) y sin el −3 dB a mano de s04·0: los saltos medidos en la v4 eran los susurros (7 dB por debajo de sus vecinas) y ese ajuste."
 }

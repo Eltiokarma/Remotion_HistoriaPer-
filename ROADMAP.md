@@ -22,7 +22,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `t4-comfyui` ComfyUI: texturas o fondos con licencia clara: Definir qué modelos tienen licencia compatible con la regla 1.1·3 del canal.
 - `f5-laptop` Repetir la tanda 1 en la laptop de render: Lo corre Gerson en su máquina (el agente no tiene acceso a ella).
 - `f5-pc` Repetir la tanda 1 en la PC objetivo: La PC objetivo no está disponible.
-- `e1-voz-v4` Narración v4: guion versión 3 con «Joder Jolines» y el modelo eleven_v4: La voz nueva está generada, pero escenas.json todavía tiene los beats y duraciones de la voz anterior: no renderizar hasta re-anclarlos.
+- `e1-voz-v4` Narración v5: guion versión 3.1 con «Joder Jolines» (eleven_v4), oraciones de 10 palabras o más: La voz nueva está generada, pero escenas.json todavía tiene los beats y duraciones de la voz anterior: no renderizar hasta re-anclarlos.
 - `e1-musica` Musicalización con Suno (motivo de Quiroz, ocho pistas): Música de Suno integrada de s00 a s06 (2026-11-10); s07 conserva el tema sintetizado. Falta la escucha de Gerson y los enlaces de Suno en fuentes.md.
 - `e2-recursos-escena01` Recursos vectoriales de la escena 1 «Las islas y el país» (objetos SVG para personajes PNG): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-recursos-escena02` Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
@@ -398,13 +398,13 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [001-el-hombre/revision_gerson_2026-11-10.md](historia/videos/001-el-hombre/revision_gerson_2026-11-10.md) · [scripts/narracion.py](historia/scripts/narracion.py) · [001-el-hombre/escaleta.md](historia/videos/001-el-hombre/escaleta.md)
 - [x] **Guion 0·1 versión 3: orden cronológico, Escribidor Escribano y diseño y animación** `e1-guion-v3` — ✅ hecho
-  - Entregable: guion.md v3 con la voz corregida y cada beat anclado a su palabra; primera acta del Escribano (2 altas y 11 medias; aplicadas salvo 3 que esperan a Gerson); diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); narracion_v3_propuesta.json y manuscrito.md.. Aprobado por Gerson el 2026-11-19.
+  - Entregable: guion.md v3 con la voz corregida y cada beat anclado a su palabra; primera acta del Escribano (2 altas y 11 medias; aplicadas salvo 3 que esperan a Gerson); diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); manuscrito.md.. Aprobado por Gerson el 2026-11-19.
   - Depende de: `e1-guion-externo`
   - Prevista: — · Real: 2026-11-19
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Evidencia: [001-el-hombre/guion.md](historia/videos/001-el-hombre/guion.md) · [diseno/diseno-y-animacion-2026-11-19.md](historia/videos/001-el-hombre/diseno/diseno-y-animacion-2026-11-19.md) · [001-el-hombre/narracion_v3_propuesta.json](historia/videos/001-el-hombre/narracion_v3_propuesta.json) · [001-el-hombre/manuscrito.md](historia/videos/001-el-hombre/manuscrito.md)
-- [ ] **Narración v4: guion versión 3 con «Joder Jolines» y el modelo eleven_v4** `e1-voz-v4` — 🔄 en curso
-  - Entregable: public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 y narracion_tiempos.json (5:26 de voz); pausas de diseño de 1 s o más garantizadas (respiro_min). Falta: pasar s06 antes de s05 en escenas.json, re-anclar los beats, los beats nuevos de MecanismoDeuda (zarpa, lujos, tacha), la música y el render
+  - Evidencia: [001-el-hombre/guion.md](historia/videos/001-el-hombre/guion.md) · [diseno/diseno-y-animacion-2026-11-19.md](historia/videos/001-el-hombre/diseno/diseno-y-animacion-2026-11-19.md) · [001-el-hombre/manuscrito.md](historia/videos/001-el-hombre/manuscrito.md)
+- [ ] **Narración v5: guion versión 3.1 con «Joder Jolines» (eleven_v4), oraciones de 10 palabras o más** `e1-voz-v4` — 🔄 en curso
+  - Entregable: public/videos/001-el-hombre/voz/ s00–s08 (nueve escenas: s05 partida en s05 y s08) y narracion_tiempos.json: 5:34 de voz. v4 escuchada por Gerson (susurros y emociones exageradas, saltos de volumen); v5 sin susurros, estabilidad 0,7, frases a ±1,5 dB entre sí. Falta: escucha de Gerson, pasar s06 antes de s05 y crear s08 en escenas.json, re-anclar beats, los beats nuevos de MecanismoDeuda (zarpa, lujos, tacha), la música y el render
   - Depende de: `e1-guion-v3`
   - Prevista: — · Real: 2026-11-19 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?

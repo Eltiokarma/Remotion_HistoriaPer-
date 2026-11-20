@@ -1303,7 +1303,7 @@
       "id": "e1-guion-v3",
       "fase": "e1",
       "titulo": "Guion 0·1 versión 3: orden cronológico, Escribidor Escribano y diseño y animación",
-      "entregable": "guion.md v3 con la voz corregida y cada beat anclado a su palabra; primera acta del Escribano (2 altas y 11 medias; aplicadas salvo 3 que esperan a Gerson); diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); narracion_v3_propuesta.json y manuscrito.md.. Aprobado por Gerson el 2026-11-19.",
+      "entregable": "guion.md v3 con la voz corregida y cada beat anclado a su palabra; primera acta del Escribano (2 altas y 11 medias; aplicadas salvo 3 que esperan a Gerson); diseno/diseno-y-animacion-2026-11-19.md (hallazgos, presupuesto de tiempo, anclas y fichas de movimiento); manuscrito.md.. Aprobado por Gerson el 2026-11-19.",
       "estado": "hecho",
       "depende_de": [
         "e1-guion-externo"
@@ -1317,7 +1317,6 @@
       "evidencia": [
         "historia/videos/001-el-hombre/guion.md",
         "historia/videos/001-el-hombre/diseno/diseno-y-animacion-2026-11-19.md",
-        "historia/videos/001-el-hombre/narracion_v3_propuesta.json",
         "historia/videos/001-el-hombre/manuscrito.md"
       ],
       "tiempo": {
@@ -1330,8 +1329,8 @@
     {
       "id": "e1-voz-v4",
       "fase": "e1",
-      "titulo": "Narración v4: guion versión 3 con «Joder Jolines» y el modelo eleven_v4",
-      "entregable": "public/videos/001-el-hombre/voz/s00.mp3–s07.mp3 y narracion_tiempos.json (5:26 de voz); pausas de diseño de 1 s o más garantizadas (respiro_min). Falta: pasar s06 antes de s05 en escenas.json, re-anclar los beats, los beats nuevos de MecanismoDeuda (zarpa, lujos, tacha), la música y el render",
+      "titulo": "Narración v5: guion versión 3.1 con «Joder Jolines» (eleven_v4), oraciones de 10 palabras o más",
+      "entregable": "public/videos/001-el-hombre/voz/ s00–s08 (nueve escenas: s05 partida en s05 y s08) y narracion_tiempos.json: 5:34 de voz. v4 escuchada por Gerson (susurros y emociones exageradas, saltos de volumen); v5 sin susurros, estabilidad 0,7, frases a ±1,5 dB entre sí. Falta: escucha de Gerson, pasar s06 antes de s05 y crear s08 en escenas.json, re-anclar beats, los beats nuevos de MecanismoDeuda (zarpa, lujos, tacha), la música y el render",
       "estado": "en_curso",
       "depende_de": [
         "e1-guion-v3"
