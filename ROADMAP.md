@@ -12,7 +12,7 @@ Actualizado: **2026-11-20**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **31** · 🔄 en curso: **10** · ⏳ pendiente: **5** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **32** · 🔄 en curso: **10** · ⏳ pendiente: **5** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -81,6 +81,7 @@ gantt
   Auditoría de dirección visual del 001 (estructura visual) y sus seis hojas de revisión :done, e1auditoriavisual, 2026-11-17, 1d
   Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena) :done, e1voz, 2026-11-10, 1d
   Guion 0·1 versión 3 orden cronológico, Escribidor Escribano y diseño y animación :done, e1guionv3, 2026-11-19, 1d
+  Render final del 0·1 en GitHub Actions (1080p) :done, e1renderfinal, 2026-11-20, 1d
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
 ```
 
@@ -425,11 +426,17 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Bloqueo: La voz nueva está generada, pero escenas.json todavía tiene los beats y duraciones de la voz anterior: no renderizar hasta re-anclarlos.
   - Evidencia: [001-el-hombre/narracion.json](historia/videos/001-el-hombre/narracion.json) · [001-el-hombre/narracion_tiempos.json](historia/videos/001-el-hombre/narracion_tiempos.json) · [scripts/narracion.py](historia/scripts/narracion.py)
 - [ ] **Montaje del 0·1 sobre la voz v5: orden nuevo, s08, beats anclados a palabras** `e1-montaje-v5` — 🔄 en curso
-  - Entregable: escenas.json con s06 antes de s05 y la escena nueva s08 (AprenderAMedir con `cuadros`); beats anclados con scripts/anclar_beats.py y anclas.json; tarjeta de la versión de entonces con su tachón (MecanismoDeuda `version`); título grande en la tarjeta de cierre; `npm run validar` sin errores y escaleta de 5:59. Música de s01, s02, s04, s05 y s08 vuelta a montar sobre la voz v5 (2026-11-20, pistas del Drive y subidas por Gerson). Pedidos de Gerson del 2026-11-20 tras el prototipo: el barco zarpa cuando sube el último saco (beat `zarpa` de s06), el lápiz rojo sigue cada corrección y es más chico (s01), y la voz de s07 ya no dice el nombre del próximo episodio (queda en la tarjeta). Falta: la revisión de Gerson a velocidad real y el render final en GitHub. Vista previa de 720p y 49 MB (dos pasadas, como render.yml) renderizada en el contenedor el 2026-11-20: 1274 s de pared. Prototipo con las imágenes de ChatGPT (gancho, pruebas, guano) y la música nueva: 720p, 49 MB, render de 1312 s en el contenedor (2026-11-20)
+  - Entregable: escenas.json con s06 antes de s05 y la escena nueva s08 (AprenderAMedir con `cuadros`); beats anclados con scripts/anclar_beats.py y anclas.json; tarjeta de la versión de entonces con su tachón (MecanismoDeuda `version`); título grande en la tarjeta de cierre; `npm run validar` sin errores y escaleta de 5:59. Música de s01, s02, s04, s05 y s08 vuelta a montar sobre la voz v5 (2026-11-20, pistas del Drive y subidas por Gerson). Pedidos de Gerson del 2026-11-20 tras el prototipo: el barco zarpa cuando sube el último saco (beat `zarpa` de s06), el lápiz rojo sigue cada corrección y es más chico (s01), y la voz de s07 ya no dice el nombre del próximo episodio (queda en la tarjeta). Falta: la revisión de Gerson a velocidad real (render final en e1-render-final). Vista previa de 720p y 49 MB (dos pasadas, como render.yml) renderizada en el contenedor el 2026-11-20: 1274 s de pared. Prototipo con las imágenes de ChatGPT (gancho, pruebas, guano) y la música nueva: 720p, 49 MB, render de 1312 s en el contenedor (2026-11-20)
   - Depende de: `e1-voz-v4`
   - Prevista: — · Real: 2026-11-20 → …
   - Tiempo: H ¿? · A ¿? · R 1312 s en contenedor · tokens ¿?
   - Evidencia: [001-el-hombre/escenas.json](historia/videos/001-el-hombre/escenas.json) · [001-el-hombre/anclas.json](historia/videos/001-el-hombre/anclas.json) · [scripts/anclar_beats.py](historia/scripts/anclar_beats.py) · [diseno/diseno-y-animacion-2026-11-19.md](historia/videos/001-el-hombre/diseno/diseno-y-animacion-2026-11-19.md) · [001-el-hombre/escaleta.md](historia/videos/001-el-hombre/escaleta.md)
+- [x] **Render final del 0·1 en GitHub Actions (1080p)** `e1-render-final` — ✅ hecho
+  - Entregable: MP4 final de 1080p del 001-el-hombre (commit 4b28862, rama claude/jolly-sagan-u2g73j), artefacto `render-001-el-hombre-final` de la corrida 44758637862 (1,02 GB en el zip, vence el 2026-12-04). Pasaron typecheck y `validar --final`. Paso de render: 15:00:05 a 15:14:58 UTC. Lo lanzó Gerson a mano: la integración de Claude no puede lanzar flujos (403). Falta: que Gerson lo vea completo
+  - Depende de: `e1-montaje-v5`
+  - Prevista: — · Real: 2026-11-20
+  - Tiempo: H ¿? · A ¿? · R 893 s en ci-github · tokens ¿?
+  - Evidencia: [runs/44758637862](https://github.com/Eltiokarma/Remotion_HistoriaPer-/actions/runs/44758637862) · [workflows/render.yml](.github/workflows/render.yml)
 - [ ] **Musicalización con Suno (motivo de Quiroz, ocho pistas)** `e1-musica` — 🔄 en curso
   - Entregable: Pistas de Suno recortadas a los beats en public/videos/001-el-hombre/musica/, escenas.json y fuentes.md actualizados, audio de prueba del episodio
   - Prevista: — · Real: 2026-11-10 → …
