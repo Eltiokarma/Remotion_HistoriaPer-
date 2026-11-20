@@ -426,10 +426,10 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Bloqueo: La voz nueva está generada, pero escenas.json todavía tiene los beats y duraciones de la voz anterior: no renderizar hasta re-anclarlos.
   - Evidencia: [001-el-hombre/narracion.json](historia/videos/001-el-hombre/narracion.json) · [001-el-hombre/narracion_tiempos.json](historia/videos/001-el-hombre/narracion_tiempos.json) · [scripts/narracion.py](historia/scripts/narracion.py)
 - [ ] **Montaje del 0·1 sobre la voz v5: orden nuevo, s08, beats anclados a palabras** `e1-montaje-v5` — 🔄 en curso
-  - Entregable: escenas.json con s06 antes de s05 y la escena nueva s08 (AprenderAMedir con `cuadros`); beats anclados con scripts/anclar_beats.py y anclas.json; tarjeta de la versión de entonces con su tachón (MecanismoDeuda `version`); título grande en la tarjeta de cierre; `npm run validar` sin errores y escaleta de 5:59. Falta: música de s01, s04, s05 y s08 vuelta a montar en la laptop (Suno), el barco que zarpa (con las capas de ChatGPT) y la revisión de Gerson a velocidad real
+  - Entregable: escenas.json con s06 antes de s05 y la escena nueva s08 (AprenderAMedir con `cuadros`); beats anclados con scripts/anclar_beats.py y anclas.json; tarjeta de la versión de entonces con su tachón (MecanismoDeuda `version`); título grande en la tarjeta de cierre; `npm run validar` sin errores y escaleta de 5:59. Falta: música de s01, s04, s05 y s08 vuelta a montar en la laptop (Suno), el barco que zarpa (con las capas de ChatGPT) y la revisión de Gerson a velocidad real. Vista previa de 720p y 49 MB (dos pasadas, como render.yml) renderizada en el contenedor el 2026-11-20: 1274 s de pared
   - Depende de: `e1-voz-v4`
   - Prevista: — · Real: 2026-11-20 → …
-  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Tiempo: H ¿? · A ¿? · R 1274 s en contenedor · tokens ¿?
   - Bloqueo: La música de s01, s04, s05 y s08 se vuelve a montar con las pistas de Suno, que están solo en la laptop.
   - Evidencia: [001-el-hombre/escenas.json](historia/videos/001-el-hombre/escenas.json) · [001-el-hombre/anclas.json](historia/videos/001-el-hombre/anclas.json) · [scripts/anclar_beats.py](historia/scripts/anclar_beats.py) · [diseno/diseno-y-animacion-2026-11-19.md](historia/videos/001-el-hombre/diseno/diseno-y-animacion-2026-11-19.md) · [001-el-hombre/escaleta.md](historia/videos/001-el-hombre/escaleta.md)
 - [ ] **Musicalización con Suno (motivo de Quiroz, ocho pistas)** `e1-musica` — 🔄 en curso
