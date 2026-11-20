@@ -3,6 +3,8 @@ import type { z } from 'zod';
 import { Luz } from '../../components/atmosfera/Luz';
 import { Sfx } from '../../components/audio/Sfx';
 import { PortadaLibro } from '../../components/graficos/PortadaLibro';
+import { LibroImagen } from '../../components/graficos/ObjetosImagen';
+import { delVideo } from '../../estilo/recursos';
 import { RecorteLamina, useLamina, type Lamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Ficha } from '../../components/texto/Ficha';
 import { asienta, beat, clamp, escala, impacto, mix, tramo } from '../../direction/anim';
@@ -296,7 +298,10 @@ export const Gancho: React.FC<EscenaProps<P>> = ({ props, escena, video }) => {
             <div style={{ transform: `translateY(${18 * (1 - tramo(t, tLibro, 1.2, 'pesado'))}px)`,
               // la sombra del libro hacia el lado contrario de la lámpara (antes caía recta hacia abajo)
               filter: `brightness(${mix(1, 0.62, 1 - luzFinal)}) drop-shadow(${LAMPARA.sombra.dx * 0.7}px ${LAMPARA.sombra.dy * 0.8}px 40px ${alfa('#000000', 0.6)})` }}>
-              <LibroLamina lamina={lLibro} estampado={tramo(t, tLibro + 0.5, 1.8, 'natural')} ancho={540} />
+              {props.imagenes?.libro ? (
+                <LibroImagen src={delVideo(video.id, props.imagenes.libro)} ancho={500} estampado={tramo(t, tLibro + 0.5, 1.8, 'natural')} titulo={props.libro.titulo}
+                  autor={props.libro.autor} anio={props.libro.anio} oro={pal.ocre} fuentes={{ titulo: fuente.imprentaItalica, autor: fuente.imprenta }} />
+              ) : <LibroLamina lamina={lLibro} estampado={tramo(t, tLibro + 0.5, 1.8, 'natural')} ancho={540} />}
             </div>
           ) : (
             <div style={{ transform: `translateY(${18 * (1 - tramo(t, tLibro, 1.2, 'pesado'))}px)`, filter: `brightness(${mix(1, 0.62, 1 - luzFinal)})`,

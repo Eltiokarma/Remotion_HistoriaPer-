@@ -14,6 +14,8 @@ export const esquema = z.object({
   /** Láminas aprobadas: `monedas` (diez soles: dorados, cobrizos y uno rayado) y `libro` (la portada de este libro;
    * no sirve para otro título). Se conserva la animación. */
   laminas: z.object({ monedas: z.string().optional(), libro: z.string().optional() }).optional(),
+  /** El libro en estilo de grabado (PNG en public/videos/<id>/, tapa vacía): reemplaza a la lámina; el título lo estampa la escena. */
+  imagenes: z.object({ libro: z.string().optional() }).optional(),
   /** Años que corre el contador mientras la barra pierde su tajada. */
   anios: z.tuple([z.number().int(), z.number().int()]),
   /** La tajada de la producción (en %), con su rótulo. */

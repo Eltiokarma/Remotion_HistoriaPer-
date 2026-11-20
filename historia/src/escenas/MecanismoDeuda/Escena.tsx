@@ -7,6 +7,8 @@ import { Sfx } from '../../components/audio/Sfx';
 import { EdificioEstado } from '../../components/graficos/EdificioEstado';
 import { ILUSTRACION, LibroHojeable, tiemposHojas } from '../../components/graficos/LibroHojeable';
 import { BARCO_ANCLADO, BARCO_LAMINA, Barco, BarcoLamina, GrabadoGuanero } from '../../components/graficos/GrabadoGuanero';
+import { BARCO_IMAGEN, BarcoImagen, EdificioImagen, GrabadoImagen, ValeImagen } from '../../components/graficos/ObjetosImagen';
+import { delVideo } from '../../estilo/recursos';
 import { useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Pluma } from '../../components/graficos/Pluma';
 import { PortadaLibro } from '../../components/graficos/PortadaLibro';
@@ -48,6 +50,11 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const frame = useCurrentFrame();
   const ref = (archivo?: string) => (archivo ? { videoId: video.id, archivo } : undefined);
   const lIslas = useLamina(ref(props.laminas?.islas)), lEstado = useLamina(ref(props.laminas?.estado)), lVale = useLamina(ref(props.laminas?.vale));
+  // con imágenes (PNG en estilo de grabado), reemplazan a las láminas
+  const img = props.imagenes ? Object.fromEntries(Object.entries(props.imagenes).map(([k, v]) => [k, v ? delVideo(video.id, v) : undefined])) as { [K in keyof NonNullable<P['imagenes']>]: string } : undefined;
+  const grabado = (id: string, anclado: boolean) => (img
+    ? <GrabadoImagen imagenes={{ mar: img.mar, islas: img.islas, barco: img.barco, saco: img.saco }} t={t} anclado={anclado} carga={t >= tSacos ? t - tSacos : undefined} />
+    : <GrabadoGuanero paleta={pal} t={t} guano={1} id={id} anclado={anclado} carga={t >= tSacos ? t - tSacos : undefined} lamina={lIslas} />);
   const fps = video.fps;
   const t = frame / fps;
   const pal = video.paleta;
@@ -88,8 +95,8 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
   const sigue = props.sigue_barco ? tramo(t, tSigue, DUR_SIGUE, 'solemne') : 1;
   const enViaje = props.sigue_barco && t >= tSigue && sigue < 1;
   // con la lámina, la fragata está en otro lugar del grabado y en el Estado se dibuja la misma fragata
-  const ANCLA = lIslas ? BARCO_LAMINA : BARCO_ANCLADO;
-  const BARCO2 = lIslas ? { x: 430, y: 742, escala: 0.95 } : { x: 430, y: 742, escala: 1.25 };
+  const ANCLA = img ? BARCO_IMAGEN : lIslas ? BARCO_LAMINA : BARCO_ANCLADO;
+  const BARCO2 = img ? { x: 430, y: 742, escala: 0.92 } : lIslas ? { x: 430, y: 742, escala: 0.95 } : { x: 430, y: 742, escala: 1.25 };
   const S_VIAJE = BARCO2.escala / ANCLA.escala;
   const vx = mix(ANCLA.x, BARCO2.x, sigue), vy = mix(ANCLA.y, BARCO2.y, sigue), vs = Math.pow(S_VIAJE, sigue);
   const vistaGrabado = `translate(${vx}px, ${vy}px) scale(${vs}) translate(${-ANCLA.x}px, ${-ANCLA.y}px)`;
@@ -126,7 +133,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
         <AbsoluteFill style={{ transformOrigin: `${qx}px ${qy}px`, transform: `scale(${escalaCam})` }}>
           <Luz color={pal.ocre} x={55} y={45} radio={60} intensidad={0.18} />
           <LibroHojeable paleta={pal} t={t} tEntra={tLEntra} tAbre={tHojea} tPagina={tPagina} encabezado={props.hojear?.encabezado ?? ''}>
-            <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-gl`} anclado carga={t >= tSacos ? t - tSacos : undefined} lamina={lIslas} />
+            {grabado(`${escena.id}-gl`, true)}
           </LibroHojeable>
         </AbsoluteFill>
       ) : null}
@@ -143,7 +150,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
       {(fase === 1 || enViaje) && (!conLibro || zoomK >= 1) ? (
         <Papel color={pal.papel} envejecido={0.3}>
           <AbsoluteFill style={enViaje ? { transformOrigin: '0 0', transform: vistaGrabado } : undefined}>
-            <GrabadoGuanero paleta={pal} t={t} guano={1} id={`${escena.id}-g`} anclado={conLibro} carga={t >= tSacos ? t - tSacos : undefined} lamina={lIslas} />
+            {grabado(`${escena.id}-g`, conLibro)}
           </AbsoluteFill>
           {props.ficha ? (
             <div style={{ position: 'absolute', left: 150, top: 40, opacity: enViaje ? 1 - funde : 1 }}>
@@ -182,7 +189,7 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             })}
             <line x1={80} x2={900} y1={756} y2={756} stroke={tinta} strokeWidth={1.4} />
             </g>
-            {lIslas ? <BarcoLamina lamina={lIslas} x={BARCO2.x} y={BARCO2.y} escala={BARCO2.escala} t={t} /> : <Barco x={430} y={742} tinta={tinta} papel={pal.papel} id={`${escena.id}-b`} escala={1.25} />}
+            {img ? null : lIslas ? <BarcoLamina lamina={lIslas} x={BARCO2.x} y={BARCO2.y} escala={BARCO2.escala} t={t} /> : <Barco x={430} y={742} tinta={tinta} papel={pal.papel} id={`${escena.id}-b`} escala={1.25} />}
             {/* la flecha de dinero, con monedas que viajan por ella */}
             <path d={FLECHA} fill="none" stroke={mezclar(pal.ocre, pal.fondo, 0.15)} strokeWidth={16} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - kFlecha} opacity={0.55} />
             <path d={FLECHA} fill="none" stroke={pal.fondo} strokeWidth={2} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - kFlecha} />
@@ -193,8 +200,16 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             }) : null}
             {kFlecha > 0.98 ? <path d="M1240 600 l -26 -10 M1240 600 l 2 -28" stroke={pal.fondo} strokeWidth={3} strokeLinecap="round" /> : null}
           </svg>
+          {img ? <BarcoImagen src={img.barco} x={BARCO2.x} y={BARCO2.y} escala={BARCO2.escala} t={t} /> : null}
           <div style={{ position: 'absolute', left: 1040, top: 270 }}>
-            <EdificioEstado lamina={lEstado} paleta={pal} id={`${escena.id}-e1`} rotulo={props.estado} width={760} dibujo={tramo(t, props.sigue_barco ? tFlecha + 0.2 : tFlecha - 0.2, props.sigue_barco ? 1.6 : 1.2, 'pesado')} />
+            {img?.estado ? (
+              <div style={{ marginTop: 40 }}>
+                <EdificioImagen src={img.estado} rotulo={props.estado} width={760} color={pal.fondo} fuenteRotulo={fuente.imprenta}
+                  dibujo={tramo(t, props.sigue_barco ? tFlecha + 0.2 : tFlecha - 0.2, props.sigue_barco ? 1.6 : 1.2, 'pesado')} />
+              </div>
+            ) : (
+              <EdificioEstado lamina={lEstado} paleta={pal} id={`${escena.id}-e1`} rotulo={props.estado} width={760} dibujo={tramo(t, props.sigue_barco ? tFlecha + 0.2 : tFlecha - 0.2, props.sigue_barco ? 1.6 : 1.2, 'pesado')} />
+            )}
           </div>
           </AbsoluteFill>
         </Papel>
@@ -224,16 +239,24 @@ export const MecanismoDeuda: React.FC<EscenaProps<P>> = ({ escena, props, video 
             return (
               <div key={i} style={{ position: 'absolute', left: 180 + ((i * 37) % 50), top: 300 - i * 9, transform: `translate(${(1 - k) * -900}px, ${-arqueo(k, 70)}px) rotate(${giro}deg)`,
                 filter: `drop-shadow(4px 6px 6px ${alfa('#000000', 0.35)})` }}>
+                {img?.vale ? (
+                  <ValeImagen src={img.vale} width={720} edad={1 - i / PILA} titulo="VALE DE DEUDA" color={pal.fondo} fuenteTitulo={fuente.imprenta}
+                    monto={i === PILA - 1 && t >= tHallazgo ? (
+                      <Odometro valor={montoHallazgo} digitos={4} velocidad={velHallazgo} fps={fps} fontFamily={fuente.titulo} fontSize={52}
+                        color={mezclar(pal.fondo, pal.rojo, kHallazgo)} separacion={0.22} />
+                    ) : undefined} />
+                ) : (
                 <Vale lamina={lVale} paleta={pal} id={`${escena.id}-v${i}`} width={720} edad={1 - i / PILA} semilla={i + 2}
                   monto={i === PILA - 1 && t >= tHallazgo ? (
                     <Odometro valor={montoHallazgo} digitos={4} velocidad={velHallazgo} fps={fps} fontFamily={fuente.titulo} fontSize={44}
                       color={mezclar(pal.fondo, pal.rojo, kHallazgo)} separacion={0.22} />
                   ) : undefined} />
+                )}
               </div>
             );
           })}
           {t >= tHallazgo ? (
-            <div style={{ position: 'absolute', left: 200, top: 700, fontFamily: fuente.mono, fontSize: 24, letterSpacing: '0.2em', color: alfa(pal.fondo, 0.6),
+            <div style={{ position: 'absolute', left: 200, top: img?.vale ? 800 : 700, fontFamily: fuente.mono, fontSize: 24, letterSpacing: '0.2em', color: alfa(pal.fondo, 0.6),
               opacity: tramo(t, tHallazgo, 0.6, 'natural') }}>{props.vale.rotulo.toUpperCase()}</div>
           ) : null}
           {t >= tConsol ? (

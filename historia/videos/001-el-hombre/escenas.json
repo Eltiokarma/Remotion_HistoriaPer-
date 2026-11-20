@@ -83,6 +83,9 @@
         "laminas": {
           "monedas": "vectorcraft/tanda03-monedas.json",
           "libro": "vectorcraft/tanda03-libro.json"
+        },
+        "imagenes": {
+          "libro": "imagenes/chatgpt/obj01-04-libro-2013.png"
         }
       },
       "audio": {
@@ -170,6 +173,10 @@
         "laminas": {
           "pruebas": "vectorcraft/tanda03-pruebas.json",
           "tiempo": "vectorcraft/tanda05-tiempo-v2.json"
+        },
+        "imagenes": {
+          "pruebas": "imagenes/chatgpt/obj01-01-pruebas.png",
+          "lapiz": "imagenes/chatgpt/obj01-03-lapiz.png"
         }
       },
       "camara": [
@@ -619,6 +626,14 @@
           "rotulo": "LA VERSIÓN DE ENTONCES",
           "texto": "TODO SE DERROCHÓ EN LUJOS",
           "tachar": "TODO"
+        },
+        "imagenes": {
+          "mar": "imagenes/chatgpt/obj01-06-mar.png",
+          "islas": "imagenes/chatgpt/obj01-06-islas.png",
+          "barco": "imagenes/chatgpt/obj01-07-barco.png",
+          "saco": "imagenes/chatgpt/obj-02-saco-cerrado.png",
+          "estado": "imagenes/chatgpt/obj01-08-estado.png",
+          "vale": "imagenes/chatgpt/obj-04-vale.png"
         }
       },
       "audio": {

@@ -14,6 +14,13 @@ export const PASOS = ['islas', 'sacos', 'flecha', 'vales', 'consolidacion', 'pro
 export const esquema = z.object({
   /** Láminas aprobadas que reemplazan el dibujo (grabado de las islas, edificio, vales) conservando la animación. */
   laminas: z.object({ islas: z.string().optional(), estado: z.string().optional(), vale: z.string().optional() }).optional(),
+  /**
+   * Imágenes en estilo de grabado (PNG, rutas dentro de public/videos/<id>/) que reemplazan a las láminas
+   * conservando la animación: mar e isla (el grabado), barco (anclado y en el viaje al Estado), saco (la carga),
+   * la fachada del Estado y el papel de los vales. Están fuera de git: sin ellas en la máquina, el render falla.
+   */
+  imagenes: z.object({ mar: z.string(), islas: z.string(), barco: z.string(), saco: z.string().optional(),
+    estado: z.string().optional(), vale: z.string().optional() }).optional(),
   /** Ficha del grabado inicial. */
   ficha: z.string().optional(),
   /** Rótulo del edificio. */

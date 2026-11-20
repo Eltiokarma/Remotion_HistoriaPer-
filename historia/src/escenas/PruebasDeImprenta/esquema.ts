@@ -11,6 +11,8 @@ export const esquema = z.object({
   /** Láminas aprobadas: `pruebas` (la pila con sus correcciones y el lápiz rojo) y `tiempo` (la flor de recuerdo y
    * «Fallece…», en lugar de la cruz). Se conserva la animación. */
   laminas: z.object({ pruebas: z.string().optional(), tiempo: z.string().optional() }).optional(),
+  /** Pila de pruebas y lápiz en estilo de grabado (PNG en public/videos/<id>/): reemplazan a la lámina; las marcas del corrector las dibuja la escena. */
+  imagenes: z.object({ pruebas: z.string(), lapiz: z.string().optional() }).optional(),
   /** Ficha monoespaciada arriba a la izquierda (lugar). */
   ficha: z.string(),
   /** La ficha grande y con brillo, para que no se olvide dónde estamos (DIRECCION_DE_VIDEO §2.1). */

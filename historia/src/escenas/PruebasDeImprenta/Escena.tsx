@@ -4,6 +4,8 @@ import { Luz } from '../../components/atmosfera/Luz';
 import { Papel } from '../../components/atmosfera/Papel';
 import { Sfx } from '../../components/audio/Sfx';
 import { PilaDePaginas } from '../../components/graficos/PilaDePaginas';
+import { PruebasImagen } from '../../components/graficos/ObjetosImagen';
+import { delVideo } from '../../estilo/recursos';
 import { LineaDeTiempo } from '../../components/graficos/LineaDeTiempo';
 import { RecorteLamina, useLamina } from '../../components/graficos/vectorcraft/Lamina';
 import { Ficha } from '../../components/texto/Ficha';
@@ -106,8 +108,13 @@ export const PruebasDeImprenta: React.FC<EscenaProps<P>> = ({ escena, props, vid
             <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center',
               transform: `scale(${mix(1, 2.6, zambulle)}) rotate(${mix(-1.5, 0, zambulle)}deg)`, transformOrigin: '54% 40%' }}>
               <div style={{ marginTop: 60 }}>
+                {props.imagenes ? (
+                  <PruebasImagen src={delVideo(video.id, props.imagenes.pruebas)} lapiz={props.imagenes.lapiz ? delVideo(video.id, props.imagenes.lapiz) : undefined}
+                    width={620} correcciones={tramo(t, tCorr, DUR_CORR, 'natural')} rojo={pal.rojo} fuenteNota={fuente.imprentaItalica} />
+                ) : (
                 <PilaDePaginas lamina={lPruebas} paleta={pal} id={`${escena.id}-pila`} width={620} variante="pruebas" semilla={2013}
                   correcciones={tramo(t, tCorr, DUR_CORR, 'natural')} />
+                )}
               </div>
             </AbsoluteFill>
             <div style={{ position: 'absolute', left: 120, top: fichaGrande ? 80 : 96,
