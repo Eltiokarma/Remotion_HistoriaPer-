@@ -16,6 +16,10 @@ for (const n of ['fondo-mesa-expediente', 'obj-07-carpeta-abierta', 'obj-09-foli
   copiar(a, path.join(salida, 'img', `${n}.png`));
 }
 copiar(path.join(proyecto, 'public/videos/002-la-deuda-defraudada/voz/s03.mp3'), path.join(salida, 'voz/s03.mp3'));
+// retratos de época en dominio público (Wikimedia Commons; registro en videos/002-la-deuda-defraudada/fuentes.md)
+for (const n of ['elias', 'echenique', 'torrico']) {
+  copiar(path.join(proyecto, `public/videos/002-la-deuda-defraudada/imagenes/retratos/retrato-${n}.png`), path.join(salida, 'img', `retrato-${n}.png`));
+}
 for (const carpeta of ['fuentes', 'texturas']) {
   fs.cpSync(path.join(proyecto, 'public/compartido', carpeta), path.join(salida, 'compartido', carpeta), { recursive: true });
 }

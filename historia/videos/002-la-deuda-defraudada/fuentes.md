@@ -168,3 +168,15 @@ Tres PNG opacos de 1920 × 1080 generados por Gerson con ChatGPT a partir de [pr
 ## Trabajadores al fondo del plano 1.3 (20 de noviembre de 2026)
 
 `trabajadores-grupo-fondo.png` (1920 × 640, transparente), generado por Gerson con ChatGPT con el prompt del n.º 5 de [prompts-chatgpt-v2.md](diseno/prompts-chatgpt-v2.md), y separado en cuatro figuras para animarlas por separado (`trabajador-grupo-1-pala.png` a `trabajador-grupo-4-carretilla.png`). Cuatro hombres de orígenes distintos (afroperuano, chino, andino y mestizo), sin rótulos ni señales de castigo: acompañan la frase de la voz sobre las formas de trabajo en las islas (B, prólogo, pp. 10–11; Q, pp. 164–169) sin afirmar la condición jurídica de ninguno. Prueba de escala en `diseno/pruebas/1.3-trabajadores.jpg`.
+
+## Retratos de época (20 de noviembre de 2026)
+
+Para identificar en pantalla a las personas reales (indicación de Gerson: su cara si se conoce; si no, una silueta que las caracterice). Bajados de Wikimedia Commons; datos copiados de la página de cada archivo. Originales y recortes del medallón en `public/videos/002-la-deuda-defraudada/imagenes/retratos/` (fuera de git).
+
+| Persona | Archivo en Commons | Autor y fecha según Commons | Licencia según Commons |
+|---|---|---|---|
+| Domingo Elías | [File:Domingo Elias.jpg](https://commons.wikimedia.org/wiki/File:Domingo_Elias.jpg) | Reproducción (fuente: blog «Familia Elías»); antes de 1865 | Dominio público (PD-Old) [VERIFICAR la etiqueta de EE. UU. que Commons pide] |
+| José Rufino Echenique | [File:José Rufino Echenique.jpg](https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Rufino_Echenique.jpg) | Óleo del siglo XIX, pintor no identificado; Biblioteca Nacional del Perú, Archivo Courret | Dominio público (PD-Art, PD-old-100) |
+| Juan Crisóstomo Torrico | [File:Juan Crisostomo Torrico.jpg](https://commons.wikimedia.org/wiki/File:Juan_Crisostomo_Torrico.jpg) | Fotografía de hacia 1862, Estudio Courret; Archivo Courret, BNP | Dominio público (PD-Old) |
+
+En el video van en un medallón redondo, recortados a cabeza y hombros y unificados en sepia. Para escenas futuras también hay retratos en Commons de Ramón Castilla (`File:RamonCastilla.jpg`, baja resolución, 233 × 349) y de Manuel de Mendiburu (`File:Manuel de Mendiburu Bonet.jpg`, dominio público solo declarado para EE. UU.) [VERIFICAR ambos antes de usar]. Ignacia Novoa de Arredondo no tiene retrato conocido: va con una silueta, sin pretender parecido.
