@@ -12,3 +12,6 @@ __pycache__/
 public/compartido/audio/candidatos-elevenlabs/
 # Tomas de voces en prueba (no son la narración del video).
 public/videos/*/voz-pruebas/
+
+# animatic 0·2: recursos copiados por preparar.mjs (imágenes de la galería, voz, fuentes)
+laboratorio/muestras/16-animatic-novoa/public/
