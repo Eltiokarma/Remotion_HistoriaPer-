@@ -184,10 +184,7 @@ Total: 5:34 de voz y unos 5:48 con las colas.
 
 **Lo que falta**
 
-1. **Volver a montar la música en la laptop** (`python scripts/montar_musica.py 001-el-hombre <escena>`, que lee los beats nuevos):
-   - s01: B entraba en `final` a los 38,96 s y ahora `final` está a los 39,94 s.
-   - s04: las capas siguen sus beats viejos y quedan desfasadas hasta 2,7 s en `bajar`, `subir` y `remate`.
-   - s05, y después s08, cortando la continuación desde la s05 nueva.
+1. ~~Volver a montar la música~~ **Hecho el 20/11** con las pistas del Drive y las que subió Gerson: s01 y s02 (B en el `final` nuevo), s04 (capas ancladas a sus beats), s05 y s08 (F sin corte, que se apaga cuando entra el tema). Detalle en `musicalizacion.md`.
 2. **`zarpa`:** el barco que sale hacia Europa. Se hace al integrar las capas de ChatGPT (isla, mar y barco sueltos); con la lámina actual chocaría con el viaje de cámara hacia el Estado.
 3. **Voz por encima de la meta** en s00, s02, s03, s05 y s08 (80 a 83 %, escaleta): la v5 dijo más cortas las pausas de menos de 1 s. Si se quiere bajar, se suben a 1 s las pausas del guion que importan, y se regenera solo esa escena.
 4. **Las imágenes de ChatGPT** (pruebas, libros, islas, barco, Estado, vales, sacos) todavía no reemplazan a las láminas de vector: están fuera de git y el render en GitHub no las encontraría.

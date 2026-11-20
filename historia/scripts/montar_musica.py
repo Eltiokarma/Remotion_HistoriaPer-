@@ -28,7 +28,8 @@ def empalme(s, fps=30):
     El archivo empieza en desde_beat (como lo arranca MezclaEscena) o, sin él, con el audio de la escena: el corte J
     o, con antes_s, esos segundos antes de la imagen."""
     e=ESC[s]; mus=e['audio']['musica']
-    b=e['beats'][montaje(s).get('pista_desde', mus.get('desde_beat'))]
+    pd=montaje(s).get('pista_desde', mus.get('desde_beat'))
+    b=pd if isinstance(pd,(int,float)) else e['beats'][pd]   # un número: el segundo de la escena en que empieza la pista
     if mus.get('desde_beat'):
         t0=(round(12+e['beats'][mus['desde_beat']]*fps-15)-12)/fps
     else:

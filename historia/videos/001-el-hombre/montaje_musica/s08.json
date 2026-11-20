@@ -1,0 +1,68 @@
+{
+  "salida": "s08-aprender-a-medir.mp3",
+  "nota": "F sigue desde s05 sin corte (viene_de). Se apaga en 3 s mientras entra el tema del canal con «aquella tesis» (Gerson, 11/11: el tema entra mientras F se apaga): la bajada está anclada a `frase` («provisionales»), unos 4,5 s antes de «aquella tesis».",
+  "viene_de": "s05",
+  "dur": "escena",
+  "capas": [
+    {
+      "archivo": "suno/stems-F/0 Keyboard.wav",
+      "env": [
+        [
+          "frase",
+          4.0,
+          1
+        ],
+        [
+          "frase",
+          7.0,
+          0
+        ]
+      ]
+    },
+    {
+      "archivo": "suno/stems-F/1 Strings.wav",
+      "env": [
+        [
+          "frase",
+          4.0,
+          1
+        ],
+        [
+          "frase",
+          7.0,
+          0
+        ]
+      ]
+    },
+    {
+      "archivo": "suno/stems-F/2 Synth.wav",
+      "env": [
+        [
+          "frase",
+          4.0,
+          1
+        ],
+        [
+          "frase",
+          7.0,
+          0
+        ]
+      ]
+    },
+    {
+      "archivo": "suno/stems-F/3 Woodwinds.wav",
+      "env": [
+        [
+          "frase",
+          4.0,
+          1
+        ],
+        [
+          "frase",
+          7.0,
+          0
+        ]
+      ]
+    }
+  ]
+}
