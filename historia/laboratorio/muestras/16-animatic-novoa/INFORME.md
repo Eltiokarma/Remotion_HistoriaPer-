@@ -29,6 +29,28 @@ Gerson eligió la versión C con la entrada del vale de A («la cifra se sentía
 
 Medido: D, 3073 cuadros, 102,44 s (ffprobe), render de 295,4 s en el mismo contenedor y con la misma configuración. Más del doble que C (134,9 s); la causa probable es la sombra de los textos (`filter: drop-shadow`, que se calcula en cada cuadro), pero no se midió aparte. Si pesa en la laptop, la alternativa es `text-shadow`, que es más barata.
 
+## Auditoría estética de la versión D (skill estructura-visual-motion, 20 de noviembre de 2026)
+
+Gerson: «se ve bien, se entiende, funciona, pero algo no cuadra estéticamente». Veredicto: **se entiende, sí; se siente, a medias.** El problema dominante es de acabado (capa de material), no de historia ni de ritmo.
+
+Pruebas aplicadas (medido u observado sobre `animatic-s03-D.mp4`): hoja de contactos a 1/3 fps; miniatura; escala de grises; mapa de saturación; actividad cuadro a cuadro a 4 fps; tramos de cambio a 5 fps (29–31 s, 53–57 s, 59–61 s, 66–68 s). Pendiente: la prueba con otra persona («¿qué ocurrió?, ¿cuándo lo entendiste?»).
+
+| # | Observación | Medida o evidencia | Cambio (versión) |
+|---|---|---|---|
+| 1 | La mesa domina el color | saturación media: madera 195, vale 71 (HSV, 0–255); la madera ocupa ~70 % del cuadro | Mesa desaturada y bordes más oscuros (E1) |
+| 2 | Cada persona aparece dos veces (ficha arriba y etiqueta del papel) | 3.3 y 3.5: cuatro cajas y tres medallones en la mitad superior | Una sola presentación: la etiqueta del papel lleva nombre y cargo (E2) |
+| 3 | Composición chica, frontal y quieta; el vale cambia tres veces de lugar | papeles ≈ 1/3 del ancho; 8 % de cuadros con movimiento; tramos quietos de hasta 22 s | Papeles más grandes, asimetría, vale fijo (E3) |
+| 4 | Papeles «fantasma» y objetos que se esfuman | 29,8 s y 67,8 s: folio semitransparente deslizándose; la carpeta se disuelve y deja la mesa vacía 0,4 s | Opacos, entran y salen con trayecto (E4) |
+| 5 | Los papeles flotan | sombra única grande y difusa (12/16/12 px) igual en todos; nunca se solapan | Sombra de contacto + sombra suave chica; el folio de Elías bajo el vale en 3.5 (E4) |
+| 6 | Texto pegado | negro digital nítido sobre papel dibujado | Texto como tinta (multiply, sepia oscuro) (E5) |
+| 7 | Las etiquetas parecen interfaz | en miniatura, cajas negras como barras de censura | Alternativa: tira de cartón (E6), frente a la caja negra pedida |
+| 8 | Tres folios idénticos (Elías, Echenique, Novoa) | misma imagen, solo los distingue la etiqueta | Pendiente: papeles distintos por función (pedir a ChatGPT) |
+| 9 | Todas las entradas iguales (de lado, mismo peso) | observado | Pendiente para la versión final |
+
+Lo que funciona y no se toca: contraste de valor papel/madera (205 frente a 90 en grises), la cifra sola sobre la mesa vacía, los medallones y la etiqueta de dueño.
+
+Al armar E3 aparecieron choques nuevos (etiqueta de Echenique fuera del cuadro, etiquetas de lo recibido y del vale encimadas, fichas sobre la carpeta) y se corrigieron solo en las capas E2 y E3, sin tocar A a D.
+
 ## Desconocido
 
 Si la diferencia entre A, B y C se **siente** como se busca: es la pregunta para Gerson. No se probó en la laptop ni a 1080p.

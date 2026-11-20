@@ -19,7 +19,7 @@ fs.mkdirSync(out, { recursive: true });
 fs.mkdirSync(res, { recursive: true });
 
 const args = process.argv.slice(2);
-const versiones = args.filter((a) => ['A', 'B', 'C', 'D'].includes(a));
+const versiones = args.filter((a) => ['A', 'B', 'C', 'D', 'E1', 'E2', 'E3', 'E4', 'E5', 'E6'].includes(a));
 const lista = versiones.length ? versiones : ['A', 'B', 'C', 'D'];
 const soloCuadros = args.includes('--solo-cuadros');
 

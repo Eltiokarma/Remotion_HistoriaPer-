@@ -9,6 +9,7 @@ Prueba de ritmo y énfasis sobre la **voz real** (`voz/s03.mp3`, «Joder Jolines
 | A · base | Cámara quieta. La cifra de Novoa entra como cualquier papel: se desliza sobre los folios de Elías y de la respuesta, con un halo. | la de la voz |
 | B · + momento reservado | En «Días después» la mesa se vacía; el vale aparece solo y quieto, sin deslizarse ni halo, y se sostiene en el silencio. Lo demás, igual que A. | la de la voz |
 | C · + respiros | B más los respiros de montaje del storyboard al final de cada plano (7,5 s en total): la voz se corta en esas pausas y la imagen se sostiene. | voz + 7,5 s |
+| E1–E6 · auditoría | Versiones acumulativas sobre D, una capa por versión: E1 mesa desaturada, E2 una presentación por persona, E3 composición, E4 física, E5 texto en tinta, E6 etiquetas de cartón. Ver INFORME. | voz + 7,5 s |
 | **D · elegida** | C, pero el vale entra deslizándose como en A (sin halo). Con sombra negra en los textos y etiqueta de dueño sobre cada documento. Decidido por Gerson el 20 de noviembre de 2026. | voz + 7,5 s |
 
 La comparación que importa: **A frente a B** (¿se siente distinta la cifra?) y **B frente a C** (¿los respiros dejan asentar o vuelven lento el caso?). Ver sin sonido y con sonido.

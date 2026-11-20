@@ -8,7 +8,7 @@ import tiempos from '../../../videos/002-la-deuda-defraudada/narracion_tiempos.j
  * (y en D, la elegida) agregan respiros de montaje al final de cada plano: el video se alarga, la voz se corta en esos
  * puntos y, mientras dura el respiro, el tiempo de voz se queda quieto (la imagen se sostiene).
  */
-export type Version = 'A' | 'B' | 'C' | 'D';
+export type Version = 'A' | 'B' | 'C' | 'D' | 'E1' | 'E2' | 'E3' | 'E4' | 'E5' | 'E6';
 export const FPS = 30;
 
 export const FRASES = tiempos.s03.frases;
@@ -22,7 +22,7 @@ export const tramos = (v: Version): Tramo[] => {
   return PLANOS.map((p, k) => {
     const voz0 = k === 0 ? 0 : FRASES[p.frases[0]].desde;
     const voz1 = k + 1 < PLANOS.length ? FRASES[PLANOS[k + 1].frases[0]].desde : DURACION_VOZ;
-    const respiro = v === 'C' || v === 'D' ? (p as { respiro?: number }).respiro ?? 0 : 0;
+    const respiro = v !== 'A' && v !== 'B' ? (p as { respiro?: number }).respiro ?? 0 : 0;
     const t: Tramo = { id: p.id, voz0, voz1, video0: video, respiro };
     video += voz1 - voz0 + respiro;
     return t;
