@@ -153,7 +153,11 @@ export const Animatic4A: React.FC = () => {
   const rMitad = k(P.mitad - 0.1, 0.5, 'natural');
   // acercamiento lento que junta los dos contratos antes de «la mitad»
   const junta2 = k(P.lima, P.mitad - P.lima, 'solemne') * (1 - k(P.mercado - 0.3, 0.6, 'natural'));
-  const mapaCam = { s: 1 + 0.05 * junta2, ox: 1000, oy: 520 };
+  // A7: en 4.3a la cámara sigue la ruta (de Londres a Lima con los préstamos; de vuelta, con los pagos) y se abre antes de las casas
+  const sigue = k(P.londres - 0.3, 1.0, 'solemne') * (1 - k(F(14) - 1.2, 1.2, 'solemne'));
+  const pRuta = prest < 1 ? (getPointAtLength(rutaPrest, largoPrest * prest) ?? { x: londres[0], y: londres[1] })
+    : (getPointAtLength(rutaPago, largoPago * Math.max(pago1, pago2)) ?? { x: lima[0], y: lima[1] });
+  const mapaCam = voz < F(14) ? { s: 1 + 0.16 * sigue, ox: pRuta.x, oy: pRuta.y } : { s: 1 + 0.05 * junta2, ox: 1000, oy: 520 };
   // ── 4.3c · el mercado, la ganancia, el guano comprometido y el lavado
   const bono = pose(mix(1960, 1030, bonoIn), 260, 640);
   const lava = k(P.limpio - 0.05, 0.9, 'pesado');        // con «limpios», el vale manchado queda debajo del bono
@@ -188,6 +192,7 @@ export const Animatic4A: React.FC = () => {
   const acerca = (a: number, b: number, s: number, vuelve: number) => 1 + s * tramo(voz, a, b - a, 'solemne') * (1 - vuelve);
   const cam = voz < F(5) + 1 ? { s: acerca(F(3), P.uno - 0.6, 0.06, sale41der), ox: 1150, oy: 520 }
     : voz < F(9) + 1.2 ? { s: acerca(F(8), F(9), 0.07, sale42), ox: 960, oy: 600 }
+    : voz < P.londres + 0.5 ? { s: acerca(F(9) + 1.2, P.londres - 0.3, 0.06, mapa), ox: 960, oy: 470 }  // A7: acercamiento a los dos papeles que la voz compara
     : voz < P.mercado - 0.3 ? { s: 1, ox: 960, oy: 540 }
     : { s: acerca(P.cuarenta, Ffin(23), 0.05, 0), ox: 960, oy: 720 };
 

@@ -1,6 +1,6 @@
 # EPISODIO NUEVO (antes del 0·2) — Saqueo patriota
 
-**Estado:** borrador del Escribidor, 21 de noviembre de 2026, para que lo revise Gerson. Todavía no tiene número: va entre el 0·1 (*El hombre*) y el 0·2 (*La deuda defraudada*). La numeración y la carpeta definitiva se deciden aparte.
+**Estado:** borrador del Escribidor, 21 de noviembre de 2026, corregido con el acta del Escribano (al final); para que lo revise Gerson. Todavía no tiene número: va entre el 0·1 (*El hombre*) y el 0·2 (*La deuda defraudada*). La numeración y la carpeta definitiva se deciden aparte.
 
 **Serie:** Historia de la corrupción en el Perú, basada en Alfonso W. Quiroz (IEP/IDL, 2013). Cap. 2, pp. 130–144: «Saqueo patriota» y «Turbios préstamos externos».
 
@@ -10,14 +10,14 @@
 
 **Palabra del episodio:** *saqueo patriota* (título de Quiroz, p. 130).
 
-**Duración estimada:** unas 1300 palabras de voz, cerca de 9 minutos. Se mide con la voz provisional.
+**Duración estimada:** 863 palabras de voz, unos 6 minutos de narración y cerca de 7 con las pausas. Es más corto que el 0·2 (9 min 28 s); se mide con la voz provisional.
 
 **Las marcas:** `[PAUSA 1s]` va a la voz; **Imagen** es una primera idea para el storyboard, que viene después; **Fuente** da la página de Quiroz.
 
 Encadenamiento (prueba de «pero» y «por eso», `direccion-historia` §2.2):
 
 ```
-ESC 0  Londres, 1822: el primer préstamo del Perú. De cada cien libras, llegaron setenta y cinco.
+ESC 0  Londres, 1822: el primer préstamo extranjero del Perú. Usura, y al final llegó la mitad.
        → ¿PERO por qué un país recién nacido pide plata así?
 ESC 1  Porque nació debiendo: la deuda de la colonia y la guerra se habían comido todo.
        → POR ESO los libertadores tomaron lo que había:
@@ -25,7 +25,7 @@ ESC 2  San Martín y Monteagudo expropian y gastan; las haciendas confiscadas te
        → PERO no fue solo al comienzo:
 ESC 3  Bolívar hace lo mismo y lo que se toma se vuelve deuda que pagará la gente común.
        → POR ESO, y sin crédito adentro, el Estado sale a pedir afuera:
-ESC 4  Londres: enviados con negocios propios, intereses de usura, la mitad perdida y el impago.
+ESC 4  Ya desde 1822, Londres: enviados con negocios propios, la mitad perdida y el impago.
        → PERO la plata también se iba por otro lado:
 ESC 5  El contrabando de plata y las leyes que no se cumplían.
        → POR ESO, en 1850, cuando aparezca el guano, habrá mucho que pagar:
@@ -41,7 +41,7 @@ ESC 6  Cierre: dos deudas sin pagar y una pregunta que abre el 0·2.
 **Intensidad:** 3.
 
 **VO:**
-Londres, octubre de mil ochocientos veintidós. Dos enviados del Perú firman el primer préstamo de la historia del país: un millón doscientas mil libras esterlinas. [PAUSA 0,8s] El procurador general de Londres opinó que ese contrato era casi nulo, por usura: de cada cien libras contratadas, solo se adelantaban setenta y cinco. [PAUSA 1s] Con un segundo préstamo, el Perú llegó a deber cerca de un millón ochocientas mil libras, y recibió apenas la mitad. [PAUSA 0,8s] En pocos años dejó de pagar. [PAUSA 1,5s] ¿Cómo nace así un país que acaba de liberarse? [PAUSA 2s]
+Londres, octubre de mil ochocientos veintidós. Se firma el primer préstamo extranjero del Perú, negociado por dos enviados de su gobierno: un millón doscientas mil libras esterlinas. [PAUSA 0,8s] El procurador general de Londres opinó que ese contrato era nulo en la práctica, por usura. [PAUSA 0,6s] De cada cien libras contratadas, solo se adelantaban setenta y cinco. [PAUSA 1s] Con un segundo préstamo, la deuda llegó a cerca de un millón ochocientas mil libras. [PAUSA 0,6s] Descontadas las comisiones y los intereses, el Perú recibió apenas la mitad. [PAUSA 0,8s] Casi de inmediato, dejó de pagar. [PAUSA 1,5s] ¿Cómo nace así un país que acaba de liberarse? [PAUSA 2s]
 
 **Imagen:** el contrato sobre la mesa, con la ficha `LONDRES · OCTUBRE DE 1822`. Cien libras en una fila; veinticinco se apartan. El total de los dos préstamos y la mitad que llegó.
 
@@ -56,7 +56,7 @@ Londres, octubre de mil ochocientos veintidós. Dos enviados del Perú firman el
 **Intensidad:** 2.
 
 **VO:**
-En el episodio anterior dijimos que la corrupción viene desde la colonia. La deuda también. [PAUSA 0,8s] Según Quiroz, el Perú independiente heredó más de catorce millones de pesos de deuda colonial con acreedores locales. [PAUSA 1s] A eso se sumó la guerra: sueldos que no se pagaban, proveedores que reclamaban y propietarios a los que les habían quitado sus bienes. Eran cerca de siete millones de pesos más. [PAUSA 1,5s]
+En el episodio anterior dijimos que la corrupción viene desde la colonia, y la deuda también. [PAUSA 0,8s] Según Quiroz, el Perú independiente heredó más de catorce millones de pesos de deuda colonial con acreedores locales. [PAUSA 1s] A eso se sumaron las deudas de los primeros gobiernos, que pagaban la guerra como emergencia. [PAUSA 0,6s] Entre esos reclamos había sueldos de empleados sin pagar, proveedores y propietarios a los que les habían quitado sus bienes. [PAUSA 0,6s] Con otros pagos atrasados, sumaban cerca de siete millones de pesos más. [PAUSA 1,5s]
 
 **Imagen:** la pila de papeles del 0·1 en la mesa. Encima, la ficha `DEUDA COLONIAL HEREDADA · + 14 MILLONES DE PESOS`; al lado, los reclamos de la guerra: `≈ 7 MILLONES`.
 
@@ -71,7 +71,7 @@ En el episodio anterior dijimos que la corrupción viene desde la colonia. La de
 **Intensidad:** 3.
 
 **VO:**
-Para pagar la guerra, los que llegaron a liberar el país tomaron lo que encontraron. [PAUSA 0,6s] Entre mil ochocientos veintiuno y mil ochocientos veintidós, San Martín y su ministro Bernardo Monteagudo expropiaron a los grandes comerciantes de Lima. [PAUSA 0,8s] Según Quiroz, Monteagudo mandó sacar los tesoros de las iglesias para pagar espías y obras inútiles. [PAUSA 1s] Las haciendas y casas confiscadas a españoles y criollos realistas valían cerca de dos millones de pesos. [PAUSA 0,6s] Se vendían mal, así que casi no le dejaron plata al Estado. [PAUSA 0,8s] La mayor parte terminó en manos de oficiales que pedían una recompensa por la guerra. Entre ellos estaba José Rufino Echenique. [PAUSA 1,5s] Quiroz tiene un nombre para todo esto. [PAUSA 1s] Saqueo patriota. [PAUSA 2,5s]
+Sin dinero para la guerra, los jefes que pelearon por la independencia abusaron de las expropiaciones. [PAUSA 0,6s] Entre mil ochocientos veintiuno y mil ochocientos veintidós, San Martín y su ministro Bernardo Monteagudo expropiaron a los grandes comerciantes de Lima. [PAUSA 0,8s] Algunos limeños, indignados, acusaron a Monteagudo de sacar los tesoros de las iglesias para pagar espías y obras inútiles. [PAUSA 1s] Las haciendas y casas confiscadas a españoles y criollos realistas se valoraron en cerca de dos millones de pesos. [PAUSA 0,6s] Como eran difíciles de vender, casi no le dejaron dinero al Estado. [PAUSA 0,8s] La mayor parte terminó en manos de oficiales que pedían una recompensa por la guerra, y entre ellos estaba José Rufino Echenique. [PAUSA 1,5s] Quiroz tiene un nombre para todo esto. [PAUSA 1s] Saqueo patriota. [PAUSA 2,5s]
 
 **Imagen:** el mapa de Lima con las casas y las haciendas que se marcan. Las fichas de San Martín y Monteagudo. Las propiedades pasan a otras manos; la última ficha es la de Echenique, la misma del 0·2. Con «Saqueo patriota», la palabra del episodio a pantalla completa, quieta.
 
@@ -86,7 +86,7 @@ Para pagar la guerra, los que llegaron a liberar el país tomaron lo que encontr
 **Intensidad:** 4.
 
 **VO:**
-Cuando Simón Bolívar tomó el mando, se siguió el mismo camino. [PAUSA 0,6s] En mil ochocientos veinticuatro y mil ochocientos veinticinco decretó confiscar los bienes de quienes se habían refugiado con los españoles en el Callao. [PAUSA 0,8s] Ordenó tomar también la plata de las iglesias para mantener al ejército. [PAUSA 1s] En mil ochocientos veintiséis, con el Estado sin plata, el Congreso le regaló a Bolívar más de un millón de pesos. [PAUSA 1,5s] El cónsul de Estados Unidos en Lima escribió que los que llegaron a proclamar la libertad eran crueles, rapaces, sin principios e incapaces. [PAUSA 1s] Adentro, el Estado también obligaba a los comerciantes a prestarle plata, y después no les pagaba. [PAUSA 0,8s] Así perdió su crédito. [PAUSA 1,5s] Para Quiroz, ahí empezó una costumbre: tapar el saqueo con más deuda pública, una deuda que la gente común terminaría pagando más cara. [SILENCIO 2s]
+Cuando Simón Bolívar tomó el mando, siguió el mismo camino. [PAUSA 0,6s] En mil ochocientos veinticuatro y mil ochocientos veinticinco decretó confiscar los bienes de quienes se habían refugiado con los españoles en el Callao. [PAUSA 0,8s] También ordenó tomar los adornos de plata de las iglesias para mantener al ejército. [PAUSA 1s] En mil ochocientos veintiséis, con el Estado sin dinero y endeudado, el Congreso recompensó a Bolívar con más de un millón de pesos. [PAUSA 1,5s] Ya en mil ochocientos veinticuatro, el cónsul de Estados Unidos había escrito que los que vinieron a proclamar la libertad eran crueles, rapaces, sin principios e incapaces. [PAUSA 1s] Adentro, el Estado también obligaba a los comerciantes a prestarle dinero y después no les pagaba, así que perdió su crédito en el país. [PAUSA 1,5s] Para Quiroz, ahí empezó una costumbre: tapar el saqueo con más deuda pública, una deuda que la gente común terminaría pagando más cara. [SILENCIO 2s]
 
 **Imagen:** la ficha de Bolívar. Los bienes del Callao y la plata de las iglesias se suman a la pila. Con «más de un millón de pesos», la ficha `CONGRESO · 1826`. La cita del cónsul, textual y con su fecha. Con la última frase, todo lo tomado se convierte en papeles de deuda, y la pila crece en silencio.
 
@@ -101,13 +101,12 @@ Cuando Simón Bolívar tomó el mando, se siguió el mismo camino. [PAUSA 0,6s] 
 **Intensidad:** 5.
 
 **VO:**
-Sin crédito adentro, el Estado salió a pedir prestado afuera. [PAUSA 0,6s] En ese momento, Londres le prestaba a todas las repúblicas que acababan de nacer. [PAUSA 1s] El primer préstamo lo negociaron dos amigos de San Martín, Juan García del Río y el médico británico James Paroissien. [PAUSA 0,8s] Mientras negociaba con el banquero Thomas Kinder en nombre del Perú, Paroissien hacía negocios privados con el mismo Kinder. [PAUSA 1s] San Martín lo había premiado con el grado de general y con parte de una hacienda confiscada. [PAUSA 1,2s] El Congreso aprobó el préstamo en mil ochocientos veintitrés, con José de la Riva-Agüero como presidente. Riva-Agüero fue acusado de querer cien mil pesos del préstamo para él y sus socios. [PAUSA 1s] En mil ochocientos veinticinco llegó un segundo préstamo. Bolívar esperaba esa plata para comprar veinticinco mil fusiles. [PAUSA 1,2s] De todo lo prestado, al Perú llegó la mitad. El resto se fue en comisiones, gastos e intereses cobrados por adelantado. [PAUSA 1s] Y lo que llegó, según Quiroz, se gastó en pagos exagerados a los oficiales del ejército de Bolívar. [PAUSA 1s] A fines de mil ochocientos veinticinco, la bolsa de Londres se desplomó. El Perú dejó de pagar, y nadie volvió a prestarle hasta fines de la década de mil ochocientos cuarenta. [PAUSA 2s]
+Ya desde mil ochocientos veintidós, sin crédito adentro, el Estado había salido a pedir prestado afuera. [PAUSA 0,6s] En esos años, Londres también les prestaba a Nueva Granada, a Chile y a México. [PAUSA 1s] El primer préstamo lo negociaron dos amigos de San Martín, Juan García del Río y el médico británico James Paroissien. [PAUSA 0,8s] Mientras negociaba con el banquero Thomas Kinder en nombre del Perú, Paroissien hacía negocios privados con el mismo Kinder. [PAUSA 1s] A Paroissien, San Martín ya lo había premiado con el grado de general y con parte de una hacienda confiscada. [PAUSA 1,2s] El Congreso aprobó el préstamo en mil ochocientos veintitrés, con José de la Riva-Agüero como presidente. [PAUSA 0,6s] A Riva-Agüero lo acusaron de presionar al Congreso para quedarse, con sus socios, con cien mil pesos del préstamo. [PAUSA 1s] En enero de mil ochocientos veinticinco se contrató un segundo préstamo, otra vez con Kinder. [PAUSA 0,6s] Bolívar esperaba ese dinero, y una parte era para comprar veinticinco mil fusiles. [PAUSA 1,2s] De todo lo prestado, al Perú llegó la mitad: el resto se fue en comisiones, gastos e intereses cobrados por adelantado. [PAUSA 1s] Según Quiroz, lo poco que llegó se malgastó además en pagos exagerados a los oficiales del ejército de Bolívar. [PAUSA 1s] A fines de mil ochocientos veinticinco, la bolsa de Londres se desplomó. [PAUSA 0,6s] El Perú dejó de pagar, y nadie volvió a prestarle hasta fines de la década de mil ochocientos cuarenta. [PAUSA 2s]
 
 **Imagen:** el mapa de la escena 4 del 0·2, ahora de 1822: la ruta de Londres a Lima. Las fichas de García del Río, Paroissien y Kinder, con un trazo que une a Paroissien con Kinder por los dos lados. `PRÉSTAMO DE 1822 · 1,2 MILLONES DE LIBRAS · 6 %` y `PRÉSTAMO DE 1825 · 616 000 LIBRAS · 6 %`. Las cien libras del gancho: la mitad se queda en Londres. Con «se desplomó», la ruta se corta en rojo.
 
 **Fuente:** Q, p. 136 (préstamos de 1822–1825 en Londres, impagos «casi de inmediato»; caída de la bolsa de Londres a finales de 1825; mercados «cerrados para el necesitado Estado peruano hasta finales del decenio de 1840»; Nueva Granada, Chile y México siguieron el mismo camino); p. 137 (García del Río y Paroissien, «dos cuestionables enviados y amigos del general San Martín»; Paroissien recompensado «con el rango militar de general y parte de una hacienda confiscada»; tratos privados con Kinder mientras negociaba «condiciones desfavorables»); p. 138 (aprobado por el Congreso Constituyente en 1823, gobierno de Riva-Agüero; acusado de presionar por 100 000 pesos del préstamo para sí y sus socios); p. 139 (segundo préstamo de 616 000 libras, enero de 1825, John Parish Robertson con 2 % de comisión; 40 000 libras para 25 000 rifles; el Perú «solamente recibió el 50 por ciento después de deducidas las elevadas comisiones, costos de transacción y pagos de interés por adelantado»; los fondos «dilapidados aún más en pagos exagerados o impropios a oficiales del victorioso ejército bolivariano»).
 
-[VERIFICAR] «Londres le prestaba a todas las repúblicas que acababan de nacer»: Quiroz nombra a Nueva Granada, Chile y México y habla de una «burbuja especulativa»; «todas» puede ser demasiado. Propuesta más segura: «Londres le prestaba también a Colombia, Chile y México».
 
 ---
 
@@ -118,13 +117,12 @@ Sin crédito adentro, el Estado salió a pedir prestado afuera. [PAUSA 0,6s] En 
 **Intensidad:** 3.
 
 **VO:**
-La plata también se iba por otro lado. [PAUSA 0,6s] Según el cónsul británico en Lima, entre mil ochocientos diecinueve y mil ochocientos veinticinco los barcos de guerra británicos sacaron del Perú veintisiete millones de dólares en plata y oro. [PAUSA 1s] Mucho salía de contrabando, sin pagar impuestos. [PAUSA 0,8s] En Arequipa, el general Antonio Gutiérrez de la Fuente protegía el contrabando y, según Quiroz, desvió fondos públicos hasta juntar al menos doscientos mil pesos. [PAUSA 1s] Había leyes contra la corrupción, y hasta pena de muerte para el aduanero que ayudara al contrabando. [PAUSA 0,6s] Casi nunca se aplicaban. [PAUSA 1,5s]
+La riqueza también salía del país por mar. [PAUSA 0,6s] El cónsul británico en Lima reportó lo que sacaron del Perú los barcos de guerra británicos entre mil ochocientos diecinueve y mil ochocientos veinticinco. [PAUSA 0,6s] Eran veintisiete millones de dólares en plata y oro. [PAUSA 1s] Según Quiroz, la plata salía muchas veces de contrabando, en barcos de guerra británicos y de otros países, sin pagar derechos de aduana. [PAUSA 0,8s] A fines de la década de mil ochocientos veinte, el prefecto de Arequipa protegía el contrabando. [PAUSA 0,6s] Era el general Antonio Gutiérrez de la Fuente, y según Quiroz desvió fondos públicos hasta juntar una fortuna de al menos doscientos mil pesos. [PAUSA 1s] Había reglas contra la corrupción, y hasta pena de muerte para el aduanero que ayudara al contrabando. [PAUSA 0,6s] Casi nunca se aplicaban: los acusados se libraban con sobornos y testigos falsos. [PAUSA 1,5s]
 
 **Imagen:** el puerto, un barco de guerra con barras de plata que suben de noche. La cifra `27 MILLONES DE DÓLARES · 1819–1825` con su fuente (el cónsul, citado por Quiroz). La ficha de Gutiérrez de la Fuente con `≥ 200 000 PESOS`. La ley de la pena de muerte, que se archiva sin usarse.
 
 **Fuente:** Q, pp. 141–142 y n. 33 (exportación ilegal de plata «en naves de guerra británicas»; el cónsul británico Charles Ricketts: entre 1819 y 1825 sacaron «27 millones de dólares en plata y oro», citado por Marichal); pp. 142–143 (Gutiérrez de la Fuente, prefecto de Arequipa a fines de la década de 1820, «protegía las operaciones de contrabando y desvió fondos públicos hasta amasar una fortuna de al menos 200.000 pesos»); p. 144 (pena de muerte para los oficiales de aduanas que asistieran al contrabando; «estas medidas rara vez eran aplicadas»).
 
-[VERIFICAR] Que los 27 millones salieran «de contrabando» no está dicho así: el cónsul habla de lo que sacaron las naves de guerra, y Quiroz lo pone junto al contrabando. La voz los separa a propósito: primero la cifra del cónsul; después, «mucho salía de contrabando».
 
 ---
 
@@ -135,13 +133,12 @@ La plata también se iba por otro lado. [PAUSA 0,6s] Según el cónsul británic
 **Intensidad:** 2.
 
 **VO:**
-Entonces, el Perú independiente nació con dos deudas. [PAUSA 0,6s] Una con su propia gente: lo heredado de la colonia y lo que se tomó en la guerra. [PAUSA 0,6s] Otra con los bonistas de Londres. [PAUSA 1s] Durante veinticinco años, ninguna de las dos se pagó. [PAUSA 1,5s] Hasta que aparecieron unas islas cubiertas de guano. [PAUSA 2,5s] Próximo episodio: la deuda defraudada.
+Así, el Perú independiente nació con dos deudas. [PAUSA 0,6s] Una con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron y no pagaron. [PAUSA 0,6s] Otra con los acreedores de Londres. [PAUSA 1s] Durante más de veinte años, el Estado casi no pagó ninguna de las dos. [PAUSA 1,5s] Hasta que encontró con qué pagar: el guano de unas islas. [PAUSA 2,5s] Próximo episodio: la deuda defraudada.
 
 **Imagen:** la mesa con las dos pilas: a la izquierda, los reclamos de adentro; a la derecha, los bonos de Londres. Con «guano», entra el grabado de las islas del 0·2. Tarjeta: **PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA**.
 
 **Fuente:** síntesis de las escenas 1 a 4; Q, p. 136 (mercados cerrados hasta fines de la década de 1840); Q, pp. 164–169 (el guano, en el 0·2).
 
-[VERIFICAR] «Durante veinticinco años, ninguna de las dos se pagó»: la deuda externa sí (impaga hasta el arreglo de 1849, Q, pp. 136 y 178). De la deuda interna, Quiroz dice que no había sido reconocida o estaba garantizada con billetes muy depreciados (p. 169), pero hubo un grupo de acreedores que cobró con privilegio en los años treinta y cuarenta (p. 169). Propuesta más segura: «Durante veinticinco años, el Estado casi no pagó ninguna de las dos».
 
 ---
 
@@ -154,3 +151,23 @@ Entonces, el Perú independiente nació con dos deudas. [PAUSA 0,6s] Una con su 
 
 - El capítulo 1 de Quiroz, la colonia de 1750 a 1820, son 70 páginas. Aquí solo entra su resultado: la deuda heredada.
 - Cochrane y la plata en barras; los oficiales de provincias (Sayán, Chincha Baja); Gamarra y sus medallas; los diplomáticos sin sueldo de la década de 1830 (Iturregui). Son buen material, pero cada uno abre un caso más; se pueden sumar si el storyboard pide más pruebas.
+
+## Acta del Escribano (21 de noviembre de 2026)
+
+En una pasada aparte, el Escribano revisó las VO contra Q, pp. 130–144, y **no dio fe** del borrador: 1 alta, 25 medias y 8 bajas. Se adoptó su VO corregida en todas las escenas.
+
+- **Alta.** El borrador decía «Según Quiroz, Monteagudo mandó sacar los tesoros de las iglesias para pagar espías y obras inútiles». Quiroz lo cuenta como la protesta de «algunos peruanos indignados» (p. 131, n. 5), no como un hecho que él afirma. Ahora dice: «Algunos limeños, indignados, acusaron a Monteagudo…».
+- **Vicio que más se repitió: el verbo que dice más que la fuente.** Se cambiaron:
+  - «firman» por «se firma… negociado por»;
+  - «regaló» por «recompensó»;
+  - «llegó un segundo préstamo» por «se contrató»;
+  - «querer cien mil pesos» por «presionar al Congreso para quedarse»;
+  - «se gastó» por «se malgastó además»;
+  - «aparecieron unas islas» por «encontró con qué pagar»;
+  - «todas las repúblicas» por «Nueva Granada, Chile y México»;
+  - «ninguna se pagó» por «casi no pagó ninguna».
+- **Cronología.** El préstamo de 1822 venía después de Bolívar sin fecha, como si fuera una consecuencia. Ahora dice «Ya desde mil ochocientos veintidós».
+- **Términos.** «Plata» se usaba a la vez para el dinero y para el metal. Ahora el dinero es «dinero», y la plata es el metal: «adornos de plata», «plata y oro». «Bonistas» no se había presentado y pasa a «acreedores».
+- **Los tres [VERIFICAR] quedaron resueltos en la VO.** La parte interna de «casi no pagó ninguna de las dos» se apoya en Q, p. 169, que dice que esa deuda no había sido reconocida o estaba garantizada con billetes muy depreciados, salvo un grupo de acreedores privilegiados.
+- **Pendiente:** la fecha de inicio de la venta del guano. La VO no la dice.
+- **Decide Gerson:** las bajas de criterio. Por ejemplo, el gancho «Quiroz tiene un nombre para todo esto» y la densidad de la ESC 4, que tiene 5 nombres y 7 cifras.

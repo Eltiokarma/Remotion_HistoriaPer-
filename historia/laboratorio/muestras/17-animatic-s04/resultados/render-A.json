@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-21T10:03:16.982Z",
+  "fecha": "2026-11-21T10:35:11.791Z",
   "version": "A",
   "maquina": "contenedor",
   "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
@@ -10,10 +10,10 @@
   "ancho": 960,
   "alto": 540,
   "fps": 30,
-  "cuadros": 3293,
-  "duracion_s": 109.77,
-  "render_s": 462.9,
-  "bytes": 14229974,
+  "cuadros": 4467,
+  "duracion_s": 148.9,
+  "render_s": 628.5,
+  "bytes": 19948115,
   "voz": "Joder Jolines, eleven_v4 (voz/s04.mp3)",
   "aprobacion_gerson": "pendiente"
 }
