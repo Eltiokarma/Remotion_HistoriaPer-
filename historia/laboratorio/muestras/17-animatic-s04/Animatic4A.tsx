@@ -157,9 +157,16 @@ export const Animatic4A: React.FC = () => {
   // 4.3: cuánto ganaba un papel al cambiarse (40 → casi 100: ≈ 2,5 veces)
   const veces = k(F(12) + 0.2, 0.7, 'natural') * (1 - lava);
 
+  // cámara (A3): un acercamiento lento hacia lo que la voz examina, solo en los tramos de «sentido» que en A2 quedaban
+  // quietos; vuelve a 1 con la salida de cada plano. Motivo anotado en el INFORME. Los respiros siguen quietos.
+  const acerca = (a: number, b: number, s: number, vuelve: number) => 1 + s * tramo(voz, a, b - a, 'solemne') * (1 - vuelve);
+  const cam = voz < F(5) + 1 ? { s: acerca(F(3), P.uno - 0.6, 0.06, sale41der), ox: 1150, oy: 520 }
+    : voz < F(9) + 1.2 ? { s: acerca(F(8), F(9), 0.07, sale42), ox: 960, oy: 600 }
+    : { s: acerca(P.cuarenta, F(13), 0.05, 0), ox: 960, oy: 720 };
+
   return (
     <AbsoluteFill style={{ background: '#1d1813' }}>
-      <AbsoluteFill style={{ filter: foco > 0.001 ? `blur(${9 * foco}px) brightness(${1 - 0.35 * foco})` : undefined }}>
+      <AbsoluteFill style={{ filter: foco > 0.001 ? `blur(${9 * foco}px) brightness(${1 - 0.35 * foco})` : undefined, transform: `scale(${cam.s})`, transformOrigin: `${cam.ox}px ${cam.oy}px` }}>
         {/* el archivo, que sube cuando la cámara baja */}
         {baja < 1 ? (
           <AbsoluteFill style={{ transform: `translateY(${-1080 * baja}px)` }}>
