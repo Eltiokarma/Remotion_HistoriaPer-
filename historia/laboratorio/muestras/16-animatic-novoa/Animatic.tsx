@@ -169,6 +169,33 @@ const Papel = ({ src, p, aspecto, giro = 0, halo = 0, dueno, persona, capas, eti
     </div>
   );
 
+/**
+ * Sello del papel sellado, reconstruido (Gerson, 21 de noviembre de 2026). Documentado (IRA-PUCP, Fondo
+ * Riva-Agüero): en 1851 el papel sellado de Lima llevaba el escudo de la República y se emitía por bienio.
+ * La forma, el marco y el lugar de las leyendas son reconstrucción: el grabado es de ChatGPT, sin letras
+ * (obj-16), y las leyendas las escribe Remotion en el anillo vacío. Va en el reclamo de Novoa, el trámite
+ * de un particular; el oficio de Echenique no lo lleva hasta saber si el gobierno respondía en papel sellado.
+ */
+const SelloPapelSellado = ({ x, y, ancho, k }: { x: number; y: number; ancho: number; k: number }) => {
+  const R_ARRIBA = 382, R_ABAJO = 432;   // el anillo vacío del grabado va de ~360 a ~448 (de 512)
+  return k <= 0 ? null : (
+    <div style={{ position: 'absolute', left: `${x}%`, top: `${y}%`, width: `${ancho}cqw`, aspectRatio: '1', opacity: 0.82 * k, mixBlendMode: 'multiply', transform: 'rotate(-1.5deg)' }}>
+      <Img src={img('obj-16-sello-papel-sellado')} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} />
+      <svg viewBox="0 0 1024 1024" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
+        <defs>
+          <path id="sello-arriba" d={`M ${512 - R_ARRIBA} 512 A ${R_ARRIBA} ${R_ARRIBA} 0 0 1 ${512 + R_ARRIBA} 512`} />
+          <path id="sello-abajo" d={`M ${512 - R_ABAJO} 512 A ${R_ABAJO} ${R_ABAJO} 0 0 0 ${512 + R_ABAJO} 512`} />
+        </defs>
+        <g fill="#3a2a1e" fontFamily={fuente.libro} fontWeight={600} letterSpacing="6">
+          <text fontSize={74}><textPath href="#sello-arriba" startOffset="50%" textAnchor="middle">REPÚBLICA PERUANA</textPath></text>
+          <text fontSize={58}><textPath href="#sello-abajo" startOffset="50%" textAnchor="middle">BIENIO DE 1852 Y 1853</textPath></text>
+          <circle cx={512 - 405} cy={512} r={9} /><circle cx={512 + 405} cy={512} r={9} />
+        </g>
+      </svg>
+    </div>
+  );
+};
+
 /** Texto mecanografiado dentro de un papel: posición y tamaño en % del ancho del papel. */
 const Renglon = ({ x, y, size, k, children, color = TINTA, familia = fuente.maquina, peso = 400, ancho = 80, centro = false, tinta = false }: { x: number; y: number; size: number; k: number; children: ReactNode; color?: string; familia?: string; peso?: number; ancho?: number; centro?: boolean; tinta?: boolean }) =>
   k <= 0 ? null : (
@@ -257,6 +284,7 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
       <Img src={img('fondo-mesa-expediente')} style={{ position: 'absolute', inset: 0, width: 1920, height: 1080, filter: capas.desat ? 'saturate(.5) brightness(.8)' : undefined }} />
 
       <Papel src={img('obj-07-carpeta-abierta')} p={carpeta} aspecto={1024 / 1536} capas={capas} etiqueta={etiq('novoa')} dueno={capas.unaPres ? 'IGNACIA NOVOA DE ARREDONDO · RECLAMANTE' : 'NOVOA DE ARREDONDO · RECLAMO'} persona="novoa">
+        {capas.folios ? <SelloPapelSellado x={50.5} y={11} ancho={13.5} k={1} /> : null}
         <Renglon x={53} y={42} size={2.4} k={tramo(voz, F(1) + 0.4, 0.4)} tinta={capas.tinta}>Hacienda expropiada</Renglon>
         <Renglon x={53} y={52} size={2.2} k={tramo(voz, F(2) + 1.6, 0.4)} tinta={capas.tinta}>500 personas esclavizadas</Renglon>
         <Renglon x={53} y={62} size={2.4} k={tramo(voz, Ffin(2) - 1.6, 0.4)} tinta={capas.tinta}>Lucro cesante: 32 años</Renglon>

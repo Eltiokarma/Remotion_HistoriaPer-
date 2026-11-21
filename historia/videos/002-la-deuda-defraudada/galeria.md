@@ -2,7 +2,7 @@
 
 Generado con `galeria.py`; no se edita a mano. Una sola carpeta para el 0·1 y el 0·2: `public/videos/002-la-deuda-defraudada/imagenes/chatgpt/` (fuera de git por peso; se comparte en zip). Origen, fecha y prompts de cada lote: `fuentes.md`. Nombres: `obj-NN-` objetos y papeles del 0·2, `obj01-NN-` piezas del 0·1, `fondo-`, `textura-`, y el resto personajes.
 
-42 imágenes.
+43 imágenes.
 
 | Archivo | Tipo | Tamaño | Transparencia | Planos del 0·2 |
 |---|---|---|---|---|
@@ -30,6 +30,7 @@ Generado con `galeria.py`; no se edita a mano. Una sola carpeta para el 0·1 y e
 | `obj-13-carta-elias.png` | Objeto o papel | 1056 × 1416 | sí | — |
 | `obj-14-oficio-echenique.png` | Objeto o papel | 1057 × 1412 | sí | — |
 | `obj-15-recibo-novoa.png` | Objeto o papel | 575 × 1434 | sí | — |
+| `obj-16-sello-papel-sellado.png` | Objeto o papel | 1024 × 1024 | sí | — |
 | `obj01-06-islas.png` | Objeto o fondo (lote del 0·1) | 1920 × 1080 | sí | 1.2, 4.8 |
 | `obj01-06-mar.png` | Objeto o fondo (lote del 0·1) | 1920 × 1080 | no | 1.2, 4.8 |
 | `obj01-07-barco.png` | Objeto o fondo (lote del 0·1) | 1536 × 1024 | sí | 1.3, 4.8 |

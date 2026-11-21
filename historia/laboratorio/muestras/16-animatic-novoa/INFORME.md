@@ -87,6 +87,7 @@ Gerson pidió: «cuando se presente a un personaje en pantalla, su medallón con
 - **Una vez por persona.** Novoa vuelve en el vale y en su parte con la etiqueta normal, sin otra presentación.
 - **Papeles propios.** Los tres de ChatGPT (`obj-13`, `obj-14` y `obj-15`, ver `fuentes.md`). El recibo es una tira angosta, así que su parte va a 272 px de ancho, con el texto en dos renglones y el folio más abajo, para que su etiqueta no pise la del vale.
 - **Arreglo de paso.** Al crear F, el vale tomaba la posición de la versión B porque el código solo reconocía D y E. Ya está corregido.
+- **Sello del papel sellado.** La hoja del reclamo de Novoa lleva arriba un sello reconstruido: el grabado de ChatGPT (`obj-16`) con las leyendas en curva escritas por Remotion, «REPÚBLICA PERUANA» y «BIENIO DE 1852 Y 1853». Va en tinta, con mezcla `multiply`, y la escritura de la hoja pasa por encima. El oficio de Echenique conserva su sello genérico: [VERIFICAR] si el gobierno respondía en papel sellado.
 - **Costo.** El desenfoque cubre todo el cuadro, pero solo en los 7,2 s que suman las cuatro presentaciones.
 
 ## Desconocido

@@ -209,3 +209,20 @@ Gerson pidió buscar el sello real.
 - **Escudo de la República (1825), en dominio público en Commons.** `Gran_Sello_de_la_República_del_Perú.svg` sirve de base para una reconstrucción.
 
 [VERIFICAR] Falta saber si una respuesta del gobierno, como el oficio de Echenique, iba en papel sellado. Lo documentado en el inventario son trámites de particulares: escrituras, partidas y solicitudes.
+
+### Sello del papel sellado, reconstruido (21 de noviembre de 2026)
+
+`obj-16-sello-papel-sellado.png` (1024 × 1024, transparente) lo generó Gerson con ChatGPT a partir de [diseno/prompts-chatgpt-sello-papel-sellado.md](diseno/prompts-chatgpt-sello-papel-sellado.md). Se le dieron dos referencias de dominio público en Commons:
+
+- `Escudo_nacional_del_Perú.svg`, del usuario Huhsunqu, marcado como dominio público (sin autoría original). Sirvió solo para los elementos del escudo.
+- `Peru_1866_F4.jpg`, del Gobierno del Perú, PD-anon-expired. Sirvió solo para la técnica del grabado fiscal.
+
+**Es una reconstrucción, no un facsímil.**
+
+- **Documentado:** el papel sellado de Lima en 1851 llevaba el escudo de la República, y se emitía por bienio (inventario IRA-PUCP, FRAR-0168 y FRAR-0144).
+- **Reconstruido:**
+  - la forma circular, el marco y la corona de encina sin banderas;
+  - las leyendas que escribe Remotion: «REPÚBLICA PERUANA» y «BIENIO DE 1852 Y 1853».
+- **Sin valor en reales**, porque no se sabe de qué clase era el papel del reclamo.
+
+Se usa en la hoja del reclamo de Novoa (versión F del animatic de la escena 3).
