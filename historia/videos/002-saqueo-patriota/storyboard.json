@@ -1,0 +1,800 @@
+{
+  "titulo": "Saqueo patriota · Storyboard 1",
+  "version": 1,
+  "fecha": "21 de noviembre de 2026",
+  "estado": "Propuesta del agente para revisión de Gerson, sobre la narración provisional (narracion_tiempos.json estimado a 2,6 palabras por segundo, antes de generar la voz real). Usa el sistema visual del 0·3 (animatics de las escenas 3 y 4) y las piezas de su galería; lo que falta está en «Falta» de cada plano.",
+  "criterio": "direccion-historia (§2, §4, §5), estructura-visual-motion (constantes, progresión, excepción reservada), historia/CLAUDE.md §3–§8 y el sistema del 0·3 (versión F de la escena 3 y A7 de la escena 4).",
+  "sistema": {
+    "constantes": [
+      "El mismo mundo del 0·3: la mesa de madera desaturada en cenital como espacio base y el mapa de la escena 1 (Natural Earth) para los viajes. Así, cuando el 0·3 empiece, el espectador ya conoce la mesa.",
+      "Papeles opacos que entran y salen con trayecto y sombra de contacto; texto escrito con tinta sobre el papel; etiquetas en tiras de cartón con su dueño o responsable.",
+      "Medallón para cada persona real, redibujado de un retrato de época en dominio público; si no hay retrato, silueta. Presentación en primer plano (1,8 s, la mesa desenfocada) la primera vez que la voz nombra a alguien, y una sola vez por persona.",
+      "Toda cifra de dinero de la época lleva debajo su equivalente aproximado en soles de hoy y la nota «* conversión aproximada» (pedido de Gerson, 21 de noviembre de 2026). Libras: índice de precios del Reino Unido y libra a 4,55 soles. Pesos: 1 peso = 1 dólar (Q, p. 546) e índice de precios de EE. UU. Cálculo y límites en fuentes.md.",
+      "Fichas a máquina con su cuadrito rojo para lugar, fecha e institución. Una ficha nueva por vez."
+    ],
+    "progresion": "La pila de la deuda. Empieza con los bonos de Londres del gancho; en la escena 1 nace la pila de adentro (14 millones heredados de la colonia, más 7 de la guerra); las escenas 2 y 3 le suman lo tomado, convertido en papeles de deuda; la escena 4 hace crecer la pila de afuera y le corta la mitad; en el cierre quedan las dos pilas, que son las mismas con las que abre el 0·3.",
+    "excepciones": [
+      "«Saqueo patriota» a pantalla completa, quieta, en la pausa de 2,5 s (ESC 2): la palabra del episodio, con «Q, p. 130» debajo.",
+      "El silencio de 2 s al final de la ESC 3, después de la reflexión de Quiroz: lo tomado se vuelve deuda y la pila crece sin sonido."
+    ],
+    "recorridos": "La cámara se mueve solo con motivo: el viaje Lima–Londres (ESC 0 y 4), siguiendo la ruta; los acercamientos lentos en los tramos de sentido. Quieta mientras se lee una cifra.",
+    "rojo": "Para la culpa (la usura, la mitad que no llegó, lo tomado que se vuelve deuda de todos, el corte del impago) y para el corrector (subrayar la cita de Tudor, tachar la ley que no se aplicaba). Fuera de eso, no.",
+    "texto": "El texto aporta lo que la voz no dice: fechas exactas, nombres completos, montos exactos y su equivalente en soles. La voz da la sensación (cerca de, más de); la pantalla, la cifra.",
+    "respiros": "Respiros de montaje al final de cada párrafo, con la imagen terminada: 2 s después de la pregunta del gancho, 1,5 s al cerrar la herencia, 2,5 + 1 s con la palabra del episodio, 2 s de silencio en la reflexión, 2 s tras el impago."
+  },
+  "imagenes": {},
+  "texturas": [
+    "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/textura-papel-grabado.png"
+  ],
+  "escenas": [
+    {
+      "s": "s00",
+      "titulo": "El gancho",
+      "espacio": "Mapa del Atlántico y mesa",
+      "cambia": "De «la independencia trajo libertad» a «la independencia también trajo una deuda mal hecha».",
+      "entrada": "Negro; el mapa aparece con la ruta Lima–Londres.",
+      "salida": "La pregunta queda sobre la pila de bonos cortada.",
+      "planos": [
+        {
+          "id": "0.1",
+          "frases": [
+            0,
+            1
+          ],
+          "verbo": "situar",
+          "idea": "Londres, 1822: el primer préstamo extranjero del Perú.",
+          "imagen": "El mapa de la escena 1 del 0·3, encuadrado de Lima a Londres; la cámara viaja por la ruta hasta Londres y ahí cae el contrato sobre la mesa (el mapa queda debajo, como un papel más). El contrato lleva la etiqueta «Perú · préstamo de 1822».",
+          "pantalla": [
+            {
+              "en": 0,
+              "t": "Londres · octubre de 1822",
+              "ficha": true
+            },
+            {
+              "en": 1,
+              "t": "1 200 000 libras esterlinas ≈ 900 millones de soles de hoy* · * conversión aproximada"
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "El préstamo se pidió afuera: ir de Lima a Londres, pesado, y frenar sobre la ciudad."
+          },
+          "efecto": "Ruta con su cabeza luminosa; el contrato entra opaco y se asienta.",
+          "sonido": "Tic por tramo del viaje; hoja al caer el contrato.",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "falta": "Contrato del préstamo de 1822: pliego impreso inglés, con sello y firmas ilegibles (ChatGPT)."
+        },
+        {
+          "id": "0.2",
+          "frases": [
+            2,
+            3
+          ],
+          "verbo": "denunciar",
+          "idea": "La usura: de cada cien libras, solo setenta y cinco.",
+          "imagen": "Ficha del procurador general de Londres. Sobre la mesa, cien monedas de libra en una fila de diez por diez; con «setenta y cinco», veinticinco se apartan y se vuelven rojas.",
+          "pantalla": [
+            {
+              "en": 2,
+              "t": "Procurador general de Londres · opinión publicada en febrero de 1823",
+              "ficha": true
+            },
+            {
+              "en": 3,
+              "t": "por cada 100 libras (≈ 75 000 soles de hoy*), 75 adelantadas"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Las 25 monedas se separan con peso «tenso» y se tiñen de rojo por absorción.",
+          "sonido": "Monedas que se apartan; nada más.",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-12-monedas.png"
+          ],
+          "falta": "Moneda de libra esterlina de la época, en el estilo de grabado, sin leyenda legible (ChatGPT)."
+        },
+        {
+          "id": "0.3",
+          "frases": [
+            4,
+            6
+          ],
+          "verbo": "sumar",
+          "idea": "Dos préstamos, la mitad que llegó y el impago.",
+          "imagen": "Junto al contrato, la pila de bonos crece hasta 1 816 000 libras; con «la mitad», la pila se parte y la mitad de arriba se queda en Londres (se desliza fuera del cuadro). Con «dejó de pagar», la ruta del mapa se corta con un trazo rojo.",
+          "pantalla": [
+            {
+              "en": 4,
+              "t": "1822 + 1825 = 1 816 000 libras ≈ 1240 millones de soles de hoy*"
+            },
+            {
+              "en": 5,
+              "t": "llegó ≈ 50 % · impago desde 1826"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "La mitad que se va sale opaca por la derecha, rápido; el corte rojo de la ruta, ligero.",
+          "sonido": "Golpe seco con el corte; después nada.",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png"
+          ]
+        },
+        {
+          "id": "0.4",
+          "frases": [
+            7
+          ],
+          "verbo": "preguntar",
+          "idea": "¿Cómo nace así un país que acaba de liberarse?",
+          "imagen": "La mesa con la pila partida y la ruta cortada, quieta. La pregunta queda en la voz.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Nada se mueve.",
+          "sonido": "Silencio de música; solo el aire.",
+          "respiro": 2
+        }
+      ]
+    },
+    {
+      "s": "s01",
+      "titulo": "Nacer debiendo",
+      "espacio": "Mesa",
+      "cambia": "De «un país nuevo empieza de cero» a «un país nuevo empieza con deudas viejas».",
+      "entrada": "La pila de páginas del 0·1 llega a la mesa (callback).",
+      "salida": "La pila de adentro queda a la izquierda de la mesa.",
+      "planos": [
+        {
+          "id": "1.1",
+          "frases": [
+            0,
+            1
+          ],
+          "verbo": "recordar",
+          "idea": "La deuda viene de la colonia.",
+          "imagen": "La pila de páginas del 0·1 se posa en la mesa y se vuelve una pila de papeles de deuda; ficha de la deuda colonial heredada. La pila tiene la altura de 14 millones (un papel por millón, como la pila del 0·3).",
+          "pantalla": [
+            {
+              "en": 1,
+              "t": "Deuda colonial heredada · más de 14 millones de pesos",
+              "ficha": true
+            },
+            {
+              "en": 1,
+              "t": "≈ 1600 millones de soles de hoy*"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Los papeles se apilan en cascada, uno por millón.",
+          "sonido": "Papel que se asienta.",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "respiro": 0.8
+        },
+        {
+          "id": "1.2",
+          "frases": [
+            2,
+            4
+          ],
+          "verbo": "sumar",
+          "idea": "Más las deudas de la guerra: unos siete millones.",
+          "imagen": "Entran tres papeles con su etiqueta («sueldos sin pagar», «proveedores», «propietarios expropiados»); se suman a la pila, que llega a 21.",
+          "pantalla": [
+            {
+              "en": 4,
+              "t": "+ ≈ 7 millones de pesos ≈ 800 millones de soles de hoy*"
+            }
+          ],
+          "camara": {
+            "tipo": "acercamiento",
+            "motivo": "Acercarse a la pila mientras crece: lo que se debe adentro."
+          },
+          "efecto": "Cada papel entra opaco y se asienta con su etiqueta.",
+          "sonido": "Papel; la música entra baja.",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "respiro": 2.5
+        }
+      ]
+    },
+    {
+      "s": "s02",
+      "titulo": "Saqueo patriota",
+      "espacio": "Mesa y mapa de Lima",
+      "cambia": "De «los libertadores» a «los libertadores también expropiaron, gastaron y repartieron».",
+      "entrada": "Corte desde la pila: la mesa se despeja a la derecha.",
+      "salida": "Con la palabra del episodio, la mesa queda con las propiedades repartidas.",
+      "planos": [
+        {
+          "id": "2.1",
+          "frases": [
+            0,
+            1
+          ],
+          "verbo": "presentar",
+          "idea": "San Martín y Monteagudo expropian a los grandes comerciantes de Lima.",
+          "imagen": "Presentaciones de San Martín y de Monteagudo (medallón al centro, la mesa desenfocada). Sus medallones caen sobre un decreto de expropiación. Al lado, casas limeñas con sus dueños tachados.",
+          "pantalla": [
+            {
+              "en": 1,
+              "t": "José de San Martín · protector del Perú, 1821–1822",
+              "ficha": true
+            },
+            {
+              "en": 1,
+              "t": "Bernardo Monteagudo · ministro",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Presentación de personaje (1,8 s cada una, con soplo y tic).",
+          "sonido": "Soplo y tic de cada presentación.",
+          "falta": "Medallones de San Martín y Monteagudo (retratos de época en Commons, a verificar). Casa limeña del siglo XIX con balcón, en el estilo de grabado (ChatGPT).",
+          "respiro": 0.8
+        },
+        {
+          "id": "2.2",
+          "frases": [
+            2
+          ],
+          "verbo": "acusar",
+          "idea": "Unos limeños acusan a Monteagudo de llevarse los tesoros de las iglesias.",
+          "imagen": "Un impreso de 1822 con la etiqueta «Limeños · protesta, 1822» y, junto a él, una custodia y un cáliz de plata que salen de la mesa hacia el lado de los espías (sombras sin cara).",
+          "pantalla": [
+            {
+              "en": 2,
+              "t": "«Lima justificada en el suceso del 25 de julio» · impreso, Lima, 1822 (Q, n. 5)"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Los objetos de plata salen opacos, rápido.",
+          "sonido": "Metal que se arrastra.",
+          "falta": "Custodia y cáliz de plata coloniales; impreso limeño de 1822 sin texto legible (ChatGPT)."
+        },
+        {
+          "id": "2.3",
+          "frases": [
+            3,
+            5
+          ],
+          "verbo": "repartir",
+          "idea": "Las haciendas confiscadas valen unos dos millones, casi no dejan plata y terminan en manos de oficiales.",
+          "imagen": "Las fichas de las propiedades confiscadas suman dos millones; la etiqueta «se vende» queda colgada sin comprador. Después, cada propiedad viaja a la ficha de un oficial: Sucre, O'Higgins y, la última, Echenique, con su medallón del 0·3.",
+          "pantalla": [
+            {
+              "en": 3,
+              "t": "Propiedades confiscadas · ≈ 2 millones de pesos ≈ 230 millones de soles de hoy*"
+            },
+            {
+              "en": 5,
+              "t": "Antonio José de Sucre · Bernardo O'Higgins · José Rufino Echenique, entre otros"
+            }
+          ],
+          "camara": {
+            "tipo": "acercamiento",
+            "motivo": "Acercarse a Echenique: la cara que el espectador volverá a ver en el 0·3."
+          },
+          "efecto": "Las propiedades viajan en arco hacia cada oficial; la de Echenique llega última y más lenta.",
+          "sonido": "Hoja por cada propiedad que cambia de manos.",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/retratos/medallon-echenique.png"
+          ],
+          "falta": "Medallones de Sucre y O'Higgins. Ficha de hacienda (casa de hacienda costeña) en grabado (ChatGPT).",
+          "respiro": 1
+        },
+        {
+          "id": "2.4",
+          "frases": [
+            6,
+            7
+          ],
+          "verbo": "nombrar",
+          "idea": "Quiroz lo llama «saqueo patriota».",
+          "imagen": "La palabra del episodio a pantalla completa, quieta, sobre papel. Debajo, «Q, p. 130». Después baja a una esquina como rótulo de la escena.",
+          "pantalla": [
+            {
+              "en": 7,
+              "t": "saqueo patriota",
+              "termino": true,
+              "palabra": true
+            },
+            {
+              "en": 7,
+              "t": "Q, p. 130"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Ninguno: excepción reservada.",
+          "sonido": "Sin música durante la palabra.",
+          "respiro": 1,
+          "excepcion": true
+        }
+      ]
+    },
+    {
+      "s": "s03",
+      "titulo": "Lo tomado se vuelve deuda",
+      "espacio": "Mesa",
+      "cambia": "De «lo que se llevaron se perdió» a «lo que se llevaron lo pagaría después la gente común, con intereses».",
+      "entrada": "La mesa con la pila de adentro a la izquierda.",
+      "salida": "La pila de adentro, más alta, en silencio.",
+      "planos": [
+        {
+          "id": "3.1",
+          "frases": [
+            0,
+            2
+          ],
+          "verbo": "presentar",
+          "idea": "Bolívar sigue el mismo camino: confiscaciones del Callao y la plata de las iglesias.",
+          "imagen": "Presentación de Bolívar. Su medallón cae sobre un decreto de confiscación; la fortaleza del Real Felipe (Callao) en la ficha; los adornos de plata de las iglesias vuelven a salir de la mesa, ahora hacia el ejército.",
+          "pantalla": [
+            {
+              "en": 0,
+              "t": "Simón Bolívar · dictador del Perú, 1824–1826",
+              "ficha": true
+            },
+            {
+              "en": 1,
+              "t": "Callao · Real Felipe · 1824–1825",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Presentación de personaje; la plata sale opaca, como en 2.2 (misma acción, otro dueño).",
+          "sonido": "Soplo y tic; metal.",
+          "falta": "Medallón de Bolívar (retrato de época en Commons, a verificar). Fortaleza del Real Felipe en grabado (ChatGPT o grabado de época en dominio público).",
+          "respiro": 0.8
+        },
+        {
+          "id": "3.2",
+          "frases": [
+            3
+          ],
+          "verbo": "premiar",
+          "idea": "El Congreso le da a Bolívar más de un millón de pesos.",
+          "imagen": "Un papel del Congreso con la etiqueta «Congreso · 1826» viaja hacia la ficha de Bolívar con la cifra escrita en tinta.",
+          "pantalla": [
+            {
+              "en": 3,
+              "t": "más de 1 000 000 de pesos ≈ 115 millones de soles de hoy*"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "El papel entra opaco; la cifra se escribe en tinta.",
+          "sonido": "Pluma.",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "respiro": 1
+        },
+        {
+          "id": "3.3",
+          "frases": [
+            4
+          ],
+          "verbo": "citar",
+          "idea": "El cónsul de EE. UU.: «crueles, rapaces, carentes de principios e incapaces».",
+          "imagen": "La cita textual sobre su tira, con la ficha del cónsul y la fecha; el corrector subraya en rojo «rapaces».",
+          "pantalla": [
+            {
+              "en": 4,
+              "t": "William Tudor · cónsul de EE. UU. · Callao, 3 de mayo de 1824",
+              "ficha": true
+            },
+            {
+              "en": 4,
+              "t": "«crueles, rapaces, carentes de principios e incapaces»"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Subrayado rojo del corrector (TrazoRojo).",
+          "sonido": "Pluma.",
+          "falta": "Silueta para Tudor (no hace falta medallón: es una ficha de fuente).",
+          "respiro": 1.8
+        },
+        {
+          "id": "3.4",
+          "frases": [
+            5
+          ],
+          "verbo": "forzar",
+          "idea": "Préstamos forzosos que no se pagaban: se pierde el crédito de adentro.",
+          "imagen": "Comerciantes (siluetas) entregan papeles de préstamo al Estado (el edificio del 0·3); con «no les pagaba», los papeles vuelven vacíos y se tachan.",
+          "pantalla": [
+            {
+              "en": 5,
+              "t": "préstamos forzosos · impagos"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Ida y vuelta de los papeles; tachado rojo.",
+          "sonido": "Papel; tachado.",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-08-estado.png"
+          ],
+          "respiro": 1
+        },
+        {
+          "id": "3.5",
+          "frases": [
+            6
+          ],
+          "verbo": "reflexionar",
+          "idea": "Para Quiroz, ahí empezó una costumbre: tapar el saqueo con deuda pública.",
+          "imagen": "Todo lo tomado en la escena (la plata, las propiedades, los préstamos) se convierte en papeles de deuda que se suman a la pila de adentro, en silencio; la pila queda más alta que al comienzo.",
+          "pantalla": [
+            {
+              "en": 6,
+              "t": "Q, p. 136"
+            }
+          ],
+          "camara": {
+            "tipo": "acercamiento",
+            "motivo": "Acercarse a la pila mientras crece en silencio: el dato más fuerte del episodio."
+          },
+          "efecto": "Cada objeto se dobla en papel y cae a la pila (acción continuada, 2–6 frames de desfase).",
+          "sonido": "Silencio deliberado de 2 s.",
+          "respiro": 2
+        }
+      ]
+    },
+    {
+      "s": "s04",
+      "titulo": "Los préstamos de Londres",
+      "espacio": "Mapa del Atlántico y mesa",
+      "cambia": "De «el préstamo era la salida» a «el préstamo fue otro negocio para unos pocos, y una deuda para todos».",
+      "entrada": "El mapa vuelve, ahora con fecha 1822.",
+      "salida": "La ruta cortada y la pila de afuera partida.",
+      "planos": [
+        {
+          "id": "4.1",
+          "frases": [
+            0,
+            1
+          ],
+          "verbo": "situar",
+          "idea": "Ya desde 1822 el Estado pidió afuera; Londres le prestaba también a Nueva Granada, Chile y México.",
+          "imagen": "El mapa con la ruta Lima–Londres y, desde Londres, otras tres rutas a Nueva Granada, Chile y México: el Perú no estaba solo.",
+          "pantalla": [
+            {
+              "en": 1,
+              "t": "Nueva Granada desde 1820, después Chile y México: préstamos impagos"
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "De Lima a Londres y, desde ahí, la mirada a las otras repúblicas."
+          },
+          "efecto": "Las tres rutas salen en cascada.",
+          "sonido": "Tic por ruta.",
+          "respiro": 1
+        },
+        {
+          "id": "4.2",
+          "frases": [
+            2,
+            4
+          ],
+          "verbo": "presentar",
+          "idea": "Los enviados: García del Río y Paroissien, que hacía negocios privados con el mismo banquero.",
+          "imagen": "Presentaciones de García del Río y de Paroissien. Kinder en silueta (no hay retrato). Un trazo une a Paroissien con Kinder dos veces: arriba «por el Perú», abajo «negocios privados». Con «premiado», la hacienda confiscada de la escena 2 viaja a Paroissien, junto al grado de general.",
+          "pantalla": [
+            {
+              "en": 2,
+              "t": "Juan García del Río · James Paroissien · enviados del Perú en Londres",
+              "ficha": true
+            },
+            {
+              "en": 3,
+              "t": "Thomas Kinder · banquero",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Dos presentaciones; el doble trazo se dibuja de a uno.",
+          "sonido": "Soplo y tic; pluma.",
+          "falta": "Medallones de García del Río y Paroissien (retratos en Commons, a verificar); silueta de Kinder.",
+          "respiro": 1
+        },
+        {
+          "id": "4.3",
+          "frases": [
+            5,
+            6
+          ],
+          "verbo": "acusar",
+          "idea": "1823: el Congreso aprueba; Riva-Agüero, acusado de querer cien mil pesos del préstamo.",
+          "imagen": "Presentación de Riva-Agüero. Del contrato del préstamo se separan 100 000 pesos hacia su ficha, con la palabra «acusado» en la etiqueta.",
+          "pantalla": [
+            {
+              "en": 5,
+              "t": "José de la Riva-Agüero · presidente, 1823",
+              "ficha": true
+            },
+            {
+              "en": 6,
+              "t": "100 000 pesos ≈ 11 millones de soles de hoy*"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Presentación de personaje.",
+          "sonido": "Soplo y tic.",
+          "falta": "Medallón de Riva-Agüero (retrato en Commons, a verificar).",
+          "respiro": 1.2
+        },
+        {
+          "id": "4.4",
+          "frases": [
+            7,
+            8
+          ],
+          "verbo": "sumar",
+          "idea": "Enero de 1825: un segundo préstamo; una parte para 25 000 fusiles.",
+          "imagen": "Un segundo contrato se suma a la pila de afuera; de él sale una caja de fusiles hacia la ficha de Bolívar.",
+          "pantalla": [
+            {
+              "en": 7,
+              "t": "Préstamo de 1825 · 616 000 libras ≈ 340 millones de soles de hoy*"
+            },
+            {
+              "en": 8,
+              "t": "40 000 libras · 25 000 fusiles ≈ 22 millones de soles de hoy*"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "El contrato entra opaco; la caja, en arco.",
+          "sonido": "Hoja; madera.",
+          "falta": "Caja de fusiles de la época, en grabado (ChatGPT).",
+          "respiro": 1
+        },
+        {
+          "id": "4.5",
+          "frases": [
+            9,
+            10
+          ],
+          "verbo": "partir",
+          "idea": "Al Perú llegó la mitad, y se malgastó en pagos a oficiales.",
+          "imagen": "La pila de afuera se parte: la mitad de arriba se queda en Londres en tres montones rotulados (comisiones, gastos, intereses por adelantado); la mitad que llega a Lima se reparte entre fichas de oficiales del ejército de Bolívar.",
+          "pantalla": [
+            {
+              "en": 9,
+              "t": "de 1 816 000 libras, llegó ≈ 50 %"
+            },
+            {
+              "en": 10,
+              "t": "Q, p. 139"
+            }
+          ],
+          "camara": {
+            "tipo": "acercamiento",
+            "motivo": "Acercarse a la mitad que se queda en Londres."
+          },
+          "efecto": "La mitad sale opaca; el reparto, en cascada.",
+          "sonido": "Monedas.",
+          "respiro": 1.2
+        },
+        {
+          "id": "4.6",
+          "frases": [
+            11,
+            12
+          ],
+          "verbo": "cortar",
+          "idea": "1825: la bolsa de Londres se desploma; el Perú deja de pagar hasta fines de los años cuarenta.",
+          "imagen": "La ruta Lima–Londres se corta en rojo. Una línea de tiempo de 1826 a 1849, vacía, con «sin crédito afuera».",
+          "pantalla": [
+            {
+              "en": 11,
+              "t": "bolsa de Londres · fines de 1825",
+              "ficha": true
+            },
+            {
+              "en": 12,
+              "t": "1826 – fines de la década de 1840: sin préstamos"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Corte rojo, ligero.",
+          "sonido": "Golpe seco; después el aire.",
+          "respiro": 2
+        }
+      ]
+    },
+    {
+      "s": "s05",
+      "titulo": "La plata que se iba por mar",
+      "espacio": "Mar (islas del 0·3 sin guano) y mesa",
+      "cambia": "De «el problema era la deuda» a «además, la riqueza salía del país sin pagar nada, con autoridades que la protegían».",
+      "entrada": "Del mapa al mar.",
+      "salida": "La ley archivada sobre la mesa.",
+      "planos": [
+        {
+          "id": "5.1",
+          "frases": [
+            0,
+            3
+          ],
+          "verbo": "mostrar",
+          "idea": "Los barcos de guerra británicos sacan 27 millones en plata y oro; mucho sale de contrabando.",
+          "imagen": "El mar del 0·3 con un barco de guerra; barras de plata suben de noche. Ficha del cónsul británico con la cifra.",
+          "pantalla": [
+            {
+              "en": 1,
+              "t": "Charles Ricketts · cónsul británico en Lima (citado en Q, n. 33)",
+              "ficha": true
+            },
+            {
+              "en": 2,
+              "t": "1819–1825 · 27 millones de dólares en plata y oro ≈ 3100 millones de soles de hoy*"
+            }
+          ],
+          "camara": {
+            "tipo": "acercamiento",
+            "motivo": "Acercarse al barco mientras suben las barras: por dónde se iba la riqueza."
+          },
+          "efecto": "El mar con su fase; las barras suben una por una.",
+          "sonido": "Mar de noche; madera del casco.",
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-07-barco.png"
+          ],
+          "falta": "Barco de guerra británico (fragata) y barras de plata, en grabado (ChatGPT).",
+          "respiro": 1.5
+        },
+        {
+          "id": "5.2",
+          "frases": [
+            4,
+            5
+          ],
+          "verbo": "presentar",
+          "idea": "Arequipa: el prefecto Gutiérrez de la Fuente protege el contrabando y junta 200 000 pesos.",
+          "imagen": "Presentación de Gutiérrez de la Fuente. Su medallón cae sobre una cuenta de fondos públicos de la que sale una columna de monedas.",
+          "pantalla": [
+            {
+              "en": 4,
+              "t": "Antonio Gutiérrez de la Fuente · prefecto de Arequipa, fines de la década de 1820",
+              "ficha": true
+            },
+            {
+              "en": 5,
+              "t": "≥ 200 000 pesos ≈ 23 millones de soles de hoy*"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Presentación de personaje.",
+          "sonido": "Soplo y tic; monedas.",
+          "falta": "Medallón de Gutiérrez de la Fuente (retrato en Commons, a verificar).",
+          "respiro": 1.2
+        },
+        {
+          "id": "5.3",
+          "frases": [
+            6,
+            7
+          ],
+          "verbo": "archivar",
+          "idea": "Había leyes y hasta pena de muerte para el aduanero; casi nunca se aplicaban.",
+          "imagen": "Una hoja de ley entra a la mesa; el corrector la marca y la hoja se archiva sin usarse (vuelve a la carpeta).",
+          "pantalla": [
+            {
+              "en": 6,
+              "t": "pena de muerte · aduaneros cómplices del contrabando"
+            },
+            {
+              "en": 7,
+              "t": "Q, p. 144"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "La hoja entra y sale opaca; tachado rojo.",
+          "sonido": "Papel; carpeta.",
+          "falta": "Hoja de ley impresa (la misma de los prompts de la escena 4 del 0·3).",
+          "respiro": 2
+        }
+      ]
+    },
+    {
+      "s": "s06",
+      "titulo": "Cierre",
+      "espacio": "Mesa",
+      "cambia": "De «la independencia» a «la independencia dejó dos deudas sin pagar, y una costumbre».",
+      "entrada": "La mesa con las dos pilas.",
+      "salida": "El grabado de las islas del 0·3 y la tarjeta del próximo episodio.",
+      "planos": [
+        {
+          "id": "6.1",
+          "frases": [
+            0,
+            3
+          ],
+          "verbo": "juntar",
+          "idea": "El Perú nació con dos deudas, y casi no pagó ninguna durante más de veinte años.",
+          "imagen": "Las dos pilas, una a cada lado: adentro (colonia y guerra) y afuera (Londres). Debajo, una línea de 1826 a 1849, vacía.",
+          "pantalla": [
+            {
+              "en": 1,
+              "t": "adentro: ≈ 21 millones de pesos"
+            },
+            {
+              "en": 2,
+              "t": "afuera: 1 816 000 libras"
+            }
+          ],
+          "camara": {
+            "tipo": "acercamiento",
+            "motivo": "Abrirse para ver las dos pilas juntas: la imagen que resume el episodio."
+          },
+          "efecto": "Las dos pilas quietas.",
+          "sonido": "La música sostiene.",
+          "respiro": 1
+        },
+        {
+          "id": "6.2",
+          "frases": [
+            4,
+            5
+          ],
+          "verbo": "anunciar",
+          "idea": "Hasta que encontró con qué pagar: el guano.",
+          "imagen": "Con «guano», el grabado de las islas del 0·3 aparece entre las dos pilas. Tarjeta: PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA.",
+          "pantalla": [
+            {
+              "en": 5,
+              "t": "Próximo · 1850 · La deuda defraudada"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Las islas entran por capas (mar, isla, aves), como en el 0·3.",
+          "sonido": "Mar y aves; el tema del canal con la tarjeta.",
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-islas.png"
+          ],
+          "respiro": 2.5
+        }
+      ]
+    }
+  ]
+}

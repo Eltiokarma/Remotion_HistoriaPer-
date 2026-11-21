@@ -483,6 +483,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `e2b-saqueo-guion`
   - Prevista: — · Real: 2026-11-21 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [002-saqueo-patriota/storyboard.html](historia/videos/002-saqueo-patriota/storyboard.html) · [002-saqueo-patriota/fuentes.md](historia/videos/002-saqueo-patriota/fuentes.md)
 
 ## Máquinas
 

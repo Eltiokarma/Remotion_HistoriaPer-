@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storyboard 0·2</title><style>
+:root { --papel:#f3ecdc; --tinta:#2a2420; --suave:#6b5f53; --linea:#d9ccb2; --rojo:#a3322a; --ocre:#94690f; --verde:#4a6a40; --azul:#3d5f7a; --caja:#ebe1cb; --caja2:#e4d8bd; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --papel:#1d1a17; --tinta:#ece3d2; --suave:#a89a87; --linea:#3a332c; --rojo:#e0675c; --ocre:#d9a646; --verde:#8db07f; --azul:#86aac6; --caja:#26221e; --caja2:#2e2924; } }
+:root[data-theme="dark"] { --papel:#1d1a17; --tinta:#ece3d2; --suave:#a89a87; --linea:#3a332c; --rojo:#e0675c; --ocre:#d9a646; --verde:#8db07f; --azul:#86aac6; --caja:#26221e; --caja2:#2e2924; }
+* { box-sizing:border-box; } html { scroll-behavior:smooth; }
+body { margin:0; background:var(--papel); color:var(--tinta); font:17px/1.55 "EB Garamond", Georgia, serif; }
+main { max-width:1180px; margin:0 auto; padding:34px 16px 90px; }
+.et, .chip, .sello, .pid, .verbo, .tiempo, .t, .tags, .pausa, .num, .larga, .meta, nav a b, th, .en, .seg { font-family:ui-monospace, "IBM Plex Mono", Menlo, monospace; }
+h1 { font-size:2.1rem; line-height:1.15; margin:4px 0 8px; font-weight:600; }
+.meta { font-size:.76rem; color:var(--suave); }
+.intro { max-width:74ch; color:var(--suave); }
+nav { position:sticky; top:0; z-index:5; background:var(--papel); border-bottom:1px solid var(--linea); display:flex; gap:4px 14px; flex-wrap:wrap; padding:8px 0; font-size:.9rem; }
+nav a { color:var(--tinta); text-decoration:none; white-space:nowrap; } nav a b { color:var(--rojo); font-weight:400; margin-right:4px; }
+.et { display:block; font-size:.64rem; letter-spacing:.08em; text-transform:uppercase; color:var(--suave); margin:0 0 3px; }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+.chip { white-space:nowrap; display:inline-block; font-size:.66rem; padding:2px 7px; border-radius:3px; border:1px solid currentColor; }
+.chip.ok { color:var(--verde); } .chip.mal { color:var(--rojo); } .chip.neutro { color:var(--suave); }
+.revision, .sistema { background:var(--caja); border-radius:6px; padding:14px 16px; margin:16px 0; }
+.revision summary { cursor:pointer; font-weight:600; }
+.sistema { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:10px 24px; font-size:.93rem; }
+.sistema ul { margin:0 0 8px; padding-left:18px; } .sistema p { margin:0 0 10px; }
+.tabla { overflow-x:auto; } table { width:100%; border-collapse:collapse; font-size:.86rem; line-height:1.4; min-width:860px; }
+th { text-align:left; font-size:.62rem; letter-spacing:.07em; text-transform:uppercase; color:var(--suave); font-weight:400; padding:4px 6px; border-bottom:1px solid var(--linea); }
+td { padding:6px; border-bottom:1px solid var(--linea); vertical-align:top; }
+section { padding:30px 0 6px; border-bottom:1px solid var(--linea); scroll-margin-top:46px; }
+.larga { font-size:.7rem; letter-spacing:.07em; text-transform:uppercase; color:var(--ocre); }
+h2 { font-size:1.7rem; margin:2px 0 4px; font-weight:600; } .num { color:var(--rojo); margin-right:12px; }
+.cambia { margin:0 0 4px; font-style:italic; color:var(--suave); }
+.linea { display:flex; gap:2px; margin:12px 0 14px; height:46px; }
+.seg { display:flex; flex-direction:column; justify-content:center; padding:0 5px; min-width:0; overflow:hidden; text-decoration:none; color:var(--tinta); font-size:.62rem; border-radius:3px; background:var(--caja2); border-bottom:3px solid var(--suave); }
+.seg.m { border-bottom-color:var(--azul); } .seg.x { background:var(--rojo); color:var(--papel); border-bottom-color:var(--rojo); }
+.seg b { font-weight:600; } .seg span { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; opacity:.8; }
+.trans { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:8px 20px; background:var(--caja); border-radius:6px; padding:10px 14px; font-size:.9rem; margin-bottom:18px; }
+.plano { border-left:3px solid var(--linea); padding:4px 0 6px 16px; margin:0 0 28px; scroll-margin-top:46px; }
+.plano.exc { border-left-color:var(--rojo); }
+.cabeza { display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 10px; }
+.pid { color:var(--rojo); font-size:.85rem; } .verbo { font-size:.68rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ocre); }
+h3 { font-size:1.2rem; margin:0; font-weight:600; flex:1 1 320px; }
+.tiempo { flex-basis:100%; font-size:.7rem; color:var(--suave); }
+.sello { font-size:.6rem; text-transform:uppercase; letter-spacing:.05em; padding:2px 6px; border-radius:3px; border:1px solid currentColor; }
+.sello.exc { color:var(--rojo); } .sello.corte { color:var(--azul); }
+.cols { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:6px 26px; margin-top:8px; }
+@media (max-width:760px) { .cols { grid-template-columns:1fr; } nav { flex-wrap:nowrap; overflow-x:auto; } }
+.bloque { margin:0 0 10px; } .bloque p { margin:0; }
+.voz p { margin:0 0 6px; }
+.t { font-size:.68rem; color:var(--suave); margin-right:6px; }
+.tags { font-size:.66rem; color:var(--ocre); }
+.pausa { font-size:.6rem; color:var(--suave); border:1px solid var(--linea); border-radius:3px; padding:1px 4px; margin-left:5px; }
+.pausa.larga { color:var(--tinta); }
+.rotulos { list-style:none; margin:0; padding:0; } .rotulos li { margin:0 0 6px; }
+.rotulo { background:var(--caja2); padding:2px 7px; border-radius:3px; font-family:ui-monospace, monospace; font-size:.82rem; }
+.rotulo.palabra { font-family:Georgia, serif; font-style:italic; font-size:1rem; }
+.en { font-size:.62rem; color:var(--suave); }
+.vacio { color:var(--suave); font-style:italic; }
+.quieta { color:var(--suave); } .mueve { color:var(--azul); }
+.falta p { color:var(--ocre); }
+.avisos ul { margin:0; padding-left:18px; color:var(--rojo); font-size:.9rem; }
+.laminas figure { margin:8px 0; } .laminas img { width:100%; height:auto; display:block; border-radius:4px; border:1px solid var(--linea); }
+figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
+.piezas .fila { display:flex; gap:10px; flex-wrap:wrap; } .pieza { margin:0; width:160px; }
+.figura img { height:150px !important; }
+.pieza img { width:100%; height:100px; object-fit:contain; background:var(--caja2); border-radius:4px; padding:6px; }
+.pieza figcaption { font-family:ui-monospace, monospace; font-size:.6rem; word-break:break-all; }
+@media (max-width:700px) { .laminas figure { overflow-x:auto; } .laminas img { width:auto; max-width:none; height:280px; } .linea { height:40px; } .seg span { display:none; } }
+</style></head>
+<body><main>
+<p class="meta">HISTORIA DE LA CORRUPCIÓN EN EL PERÚ · EPISODIO 0·2 · VERSIÓN 1 · 21 de noviembre de 2026</p>
+<h1>Saqueo patriota · Storyboard 1</h1>
+<p class="meta">26 planos · 6:60.0 en pantalla · voz: Joder Jolines, eleven_v4 · generado con storyboard.py</p>
+<p class="intro">Propuesta del agente para revisión de Gerson, sobre la narración provisional (narracion_tiempos.json estimado a 2,6 palabras por segundo, antes de generar la voz real). Usa el sistema visual del 0·3 (animatics de las escenas 3 y 4) y las piezas de su galería; lo que falta está en «Falta» de cada plano. Criterio: direccion-historia (§2, §4, §5), estructura-visual-motion (constantes, progresión, excepción reservada), historia/CLAUDE.md §3–§8 y el sistema del 0·3 (versión F de la escena 3 y A7 de la escena 4).</p>
+<div class="chips"><span class="chip ok">voz 79 % del episodio (meta ~70 %)</span><span class="chip ok">cámara quieta 62 %</span><span class="chip ok">0 avisos de pantalla</span></div>
+
+<h2 style="font-size:1.3rem">El sistema visual</h2>
+
+<div class="sistema">
+  <div><span class="et">Qué permanece</span><ul><li>El mismo mundo del 0·3: la mesa de madera desaturada en cenital como espacio base y el mapa de la escena 1 (Natural Earth) para los viajes. Así, cuando el 0·3 empiece, el espectador ya conoce la mesa.</li><li>Papeles opacos que entran y salen con trayecto y sombra de contacto; texto escrito con tinta sobre el papel; etiquetas en tiras de cartón con su dueño o responsable.</li><li>Medallón para cada persona real, redibujado de un retrato de época en dominio público; si no hay retrato, silueta. Presentación en primer plano (1,8 s, la mesa desenfocada) la primera vez que la voz nombra a alguien, y una sola vez por persona.</li><li>Toda cifra de dinero de la época lleva debajo su equivalente aproximado en soles de hoy y la nota «<em>* conversión aproximada</em>» (pedido de Gerson, 21 de noviembre de 2026). Libras: índice de precios del Reino Unido y libra a 4,55 soles. Pesos: 1 peso = 1 dólar (Q, p. 546) e índice de precios de EE. UU. Cálculo y límites en fuentes.md.</li><li>Fichas a máquina con su cuadrito rojo para lugar, fecha e institución. Una ficha nueva por vez.</li></ul></div>
+  <div><span class="et">Qué progresa</span><p>La pila de la deuda. Empieza con los bonos de Londres del gancho; en la escena 1 nace la pila de adentro (14 millones heredados de la colonia, más 7 de la guerra); las escenas 2 y 3 le suman lo tomado, convertido en papeles de deuda; la escena 4 hace crecer la pila de afuera y le corta la mitad; en el cierre quedan las dos pilas, que son las mismas con las que abre el 0·3.</p>
+       <span class="et">Qué se reserva</span><ul><li>«<em>Saqueo patriota</em>» a pantalla completa, quieta, en la pausa de 2,5 s (ESC 2): la palabra del episodio, con «<em>Q, p. 130</em>» debajo.</li><li>El silencio de 2 s al final de la ESC 3, después de la reflexión de Quiroz: lo tomado se vuelve deuda y la pila crece sin sonido.</li></ul></div>
+  <div><span class="et">Cámara</span><p>La cámara se mueve solo con motivo: el viaje Lima–Londres (ESC 0 y 4), siguiendo la ruta; los acercamientos lentos en los tramos de sentido. Quieta mientras se lee una cifra.</p>
+       <span class="et">Rojo</span><p>Para la culpa (la usura, la mitad que no llegó, lo tomado que se vuelve deuda de todos, el corte del impago) y para el corrector (subrayar la cita de Tudor, tachar la ley que no se aplicaba). Fuera de eso, no.</p>
+       <span class="et">Texto en pantalla</span><p>El texto aporta lo que la voz no dice: fechas exactas, nombres completos, montos exactos y su equivalente en soles. La voz da la sensación (cerca de, más de); la pantalla, la cifra.</p>
+       <span class="et">Respiros</span><p>Respiros de montaje al final de cada párrafo, con la imagen terminada: 2 s después de la pregunta del gancho, 1,5 s al cerrar la herencia, 2,5 + 1 s con la palabra del episodio, 2 s de silencio en la reflexión, 2 s tras el impago.</p></div>
+</div>
+<p class="intro">La barra de cada escena muestra sus planos a escala de tiempo: gris, cámara quieta; borde azul, cámara en movimiento; rojo, excepción reservada. Cada plano trae la voz con su emoción y el segundo en que empieza en su MP3.</p>
+<nav><a href="#s00"><b>s00</b>El gancho</a><a href="#s01"><b>s01</b>Nacer debiendo</a><a href="#s02"><b>s02</b>Saqueo patriota</a><a href="#s03"><b>s03</b>Lo tomado se vuelve deuda</a><a href="#s04"><b>s04</b>Los préstamos de Londres</a><a href="#s05"><b>s05</b>La plata que se iba por mar</a><a href="#s06"><b>s06</b>Cierre</a></nav>
+
+<section id="s00">
+  <header><span class="larga">Mapa del Atlántico y mesa</span>
+  <h2><span class="num">s00</span>El gancho</h2>
+  <p class="cambia">De «<em>la independencia trajo libertad</em>» a «<em>la independencia también trajo una deuda mal hecha</em>».</p>
+  <p class="meta">0:46.9 en pantalla (0:44.9 de voz + 2 s de respiros) · 4 planos</p>
+  <div class="chips"><span class="chip ok">voz 79 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 75 %</span><span class="chip mal">7.7 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-0.1" class="seg m" style="flex:11.83" title="0.1 · 11.8 s · situar"><b>0.1</b><span>situar</span></a><a href="#p-0.2" class="seg q" style="flex:11.99" title="0.2 · 12.0 s · denunciar"><b>0.2</b><span>denunciar</span></a><a href="#p-0.3" class="seg q" style="flex:15.59" title="0.3 · 15.6 s · sumar"><b>0.3</b><span>sumar</span></a><a href="#p-0.4" class="seg q" style="flex:7.46" title="0.4 · 7.5 s · preguntar"><b>0.4</b><span>preguntar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>Negro; el mapa aparece con la ruta Lima–Londres.</div><div><span class="et">Sale</span>La pregunta queda sobre la pila de bonos cortada.</div></div>
+  
+<article class="plano" id="p-0.1">
+  <div class="cabeza"><span class="pid">0.1</span><span class="verbo">situar</span>
+    <h3>Londres, 1822: el primer préstamo extranjero del Perú.</h3>
+    <span class="tiempo">0:00.0–0:11.8 de s00.mp3 · 11.8 s en pantalla</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[serious] [calm]</span> Londres, octubre de mil ochocientos veintidós.<span class="pausa">0.35 s</span></p><p><span class="t">0:03.0</span><span class="tags">[serious] [measured]</span> Se firma el primer préstamo extranjero del Perú, negociado por dos enviados de su gobierno: un millón doscientas mil libras esterlinas.<span class="pausa">0.8 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>El mapa de la escena 1 del 0·3, encuadrado de Lima a Londres; la cámara viaja por la ruta hasta Londres y ahí cae el contrato sobre la mesa (el mapa queda debajo, como un papel más). El contrato lleva la etiqueta «<em>Perú · préstamo de 1822</em>».</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Londres · octubre de 1822</span> <span class="en">con la frase 0</span> <span class="chip ok">lectura 11.5/2.5 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">1 200 000 libras esterlinas ≈ 900 millones de soles de hoy* · * conversión aproximada</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 8.9/5.8 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Recorrido: El préstamo se pidió afuera: ir de Lima a Londres, pesado, y frenar sobre la ciudad.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Ruta con su cabeza luminosa; el contrato entra opaco y se asienta.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Tic por tramo del viaje; hoja al caer el contrato.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Contrato del préstamo de 1822: pliego impreso inglés, con sello y firmas ilegibles (ChatGPT).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="piezas"><span class="et">Objetos y papeles (galería del 0·3)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png" alt=""><figcaption>obj-09-folio-sencillo.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-0.2">
+  <div class="cabeza"><span class="pid">0.2</span><span class="verbo">denunciar</span>
+    <h3>La usura: de cada cien libras, solo setenta y cinco.</h3>
+    <span class="tiempo">0:11.8–0:23.8 de s00.mp3 · 12.0 s en pantalla</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:11.8</span><span class="tags">[dry] [measured]</span> El procurador general de Londres opinó que ese contrato era nulo en la práctica, por usura.<span class="pausa">0.6 s</span></p><p><span class="t">0:18.6</span><span class="tags">[dry]</span> De cada cien libras contratadas, solo se adelantaban setenta y cinco.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Ficha del procurador general de Londres. Sobre la mesa, cien monedas de libra en una fila de diez por diez; con «<em>setenta y cinco</em>», veinticinco se apartan y se vuelven rojas.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Procurador general de Londres · opinión publicada en febrero de 1823</span> <span class="en">con la frase 2</span> <span class="chip ok">lectura 12.0/4.3 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">por cada 100 libras (≈ 75 000 soles de hoy*), 75 adelantadas</span> <span class="en">con la frase 3</span> <span class="chip ok">lectura 5.2/4.6 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Las 25 monedas se separan con peso «<em>tenso</em>» y se tiñen de rojo por absorción.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Monedas que se apartan; nada más.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Moneda de libra esterlina de la época, en el estilo de grabado, sin leyenda legible (ChatGPT).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="piezas"><span class="et">Objetos y papeles (galería del 0·3)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-12-monedas.png" alt=""><figcaption>obj-12-monedas.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-0.3">
+  <div class="cabeza"><span class="pid">0.3</span><span class="verbo">sumar</span>
+    <h3>Dos préstamos, la mitad que llegó y el impago.</h3>
+    <span class="tiempo">0:23.8–0:39.4 de s00.mp3 · 15.6 s en pantalla</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:23.8</span><span class="tags">[serious] [measured]</span> Con un segundo préstamo, la deuda llegó a cerca de un millón ochocientas mil libras.<span class="pausa">0.6 s</span></p><p><span class="t">0:30.2</span><span class="tags">[serious] [low voice]</span> Descontadas las comisiones y los intereses, el Perú recibió apenas la mitad.<span class="pausa">0.8 s</span></p><p><span class="t">0:35.6</span><span class="tags">[dry] [restrained]</span> Casi de inmediato, dejó de pagar.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Junto al contrato, la pila de bonos crece hasta 1 816 000 libras; con «<em>la mitad</em>», la pila se parte y la mitad de arriba se queda en Londres (se desliza fuera del cuadro). Con «<em>dejó de pagar</em>», la ruta del mapa se corta con un trazo rojo.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">1822 + 1825 = 1 816 000 libras ≈ 1240 millones de soles de hoy*</span> <span class="en">con la frase 4</span> <span class="chip ok">lectura 15.6/5.5 s</span></li><li><span class="rotulo">llegó ≈ 50 % · impago desde 1826</span> <span class="en">con la frase 5</span> <span class="chip ok">lectura 9.2/3.4 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>La mitad que se va sale opaca por la derecha, rápido; el corte rojo de la ruta, ligero.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Golpe seco con el corte; después nada.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  <div class="piezas"><span class="et">Objetos y papeles (galería del 0·3)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png" alt=""><figcaption>obj-10-bono-deuda-externa.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-0.4">
+  <div class="cabeza"><span class="pid">0.4</span><span class="verbo">preguntar</span>
+    <h3>¿Cómo nace así un país que acaba de liberarse?</h3>
+    <span class="tiempo">0:39.4–0:44.9 de s00.mp3 · 7.5 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:39.4</span><span class="tags">[curious] [softly]</span> ¿Cómo nace así un país que acaba de liberarse?<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La mesa con la pila partida y la ruta cortada, quieta. La pregunta queda en la voz.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Nada se mueve.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Silencio de música; solo el aire.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+</section>
+<section id="s01">
+  <header><span class="larga">Mesa</span>
+  <h2><span class="num">s01</span>Nacer debiendo</h2>
+  <p class="cambia">De «<em>un país nuevo empieza de cero</em>» a «<em>un país nuevo empieza con deudas viejas</em>».</p>
+  <p class="meta">0:39.6 en pantalla (0:36.3 de voz + 3.3 s de respiros) · 2 planos</p>
+  <div class="chips"><span class="chip ok">voz 80 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 40 %</span><span class="chip ok">4.5 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-1.1" class="seg q" style="flex:15.98" title="1.1 · 16.0 s · recordar"><b>1.1</b><span>recordar</span></a><a href="#p-1.2" class="seg m" style="flex:23.66" title="1.2 · 23.7 s · sumar"><b>1.2</b><span>sumar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>La pila de páginas del 0·1 llega a la mesa (callback).</div><div><span class="et">Sale</span>La pila de adentro queda a la izquierda de la mesa.</div></div>
+  
+<article class="plano" id="p-1.1">
+  <div class="cabeza"><span class="pid">1.1</span><span class="verbo">recordar</span>
+    <h3>La deuda viene de la colonia.</h3>
+    <span class="tiempo">0:00.0–0:15.2 de s01.mp3 · 16.0 s en pantalla + 0.8 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[calm] [storytelling]</span> En el episodio anterior dijimos que la corrupción viene desde la colonia, y la deuda también.<span class="pausa">0.8 s</span></p><p><span class="t">0:07.2</span><span class="tags">[calm] [teacher]</span> Según Quiroz, el Perú independiente heredó más de catorce millones de pesos de deuda colonial con acreedores locales.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La pila de páginas del 0·1 se posa en la mesa y se vuelve una pila de papeles de deuda; ficha de la deuda colonial heredada. La pila tiene la altura de 14 millones (un papel por millón, como la pila del 0·3).</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Deuda colonial heredada · más de 14 millones de pesos</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 8.7/4.0 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">≈ 1600 millones de soles de hoy*</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 8.7/3.1 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Los papeles se apilan en cascada, uno por millón.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Papel que se asienta.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  <div class="piezas"><span class="et">Objetos y papeles (galería del 0·3)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png" alt=""><figcaption>obj-05-pila-vales.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-1.2">
+  <div class="cabeza"><span class="pid">1.2</span><span class="verbo">sumar</span>
+    <h3>Más las deudas de la guerra: unos siete millones.</h3>
+    <span class="tiempo">0:15.2–0:36.3 de s01.mp3 · 23.7 s en pantalla + 2.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:15.2</span><span class="tags">[calm]</span> A eso se sumaron las deudas de los primeros gobiernos, que pagaban la guerra como emergencia.<span class="pausa">0.6 s</span></p><p><span class="t">0:21.9</span><span class="tags">[calm] [clear]</span> Entre esos reclamos había sueldos de empleados sin pagar, proveedores y propietarios a los que les habían quitado sus bienes.<span class="pausa">0.6 s</span></p><p><span class="t">0:30.2</span><span class="tags">[serious]</span> Con otros pagos atrasados, sumaban cerca de siete millones de pesos más.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Entran tres papeles con su etiqueta («<em>sueldos sin pagar</em>», «<em>proveedores</em>», «<em>propietarios expropiados</em>»); se suman a la pila, que llega a 21.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">+ ≈ 7 millones de pesos ≈ 800 millones de soles de hoy*</span> <span class="en">con la frase 4</span> <span class="chip ok">lectura 8.6/4.9 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Acercamiento: Acercarse a la pila mientras crece: lo que se debe adentro.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Cada papel entra opaco y se asienta con su etiqueta.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Papel; la música entra baja.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  <div class="piezas"><span class="et">Objetos y papeles (galería del 0·3)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png" alt=""><figcaption>obj-09-folio-sencillo.png</figcaption></figure></div></div>
+  
+</article>
+</section>
+<section id="s02">
+  <header><span class="larga">Mesa y mapa de Lima</span>
+  <h2><span class="num">s02</span>Saqueo patriota</h2>
+  <p class="cambia">De «<em>los libertadores</em>» a «<em>los libertadores también expropiaron, gastaron y repartieron</em>».</p>
+  <p class="meta">0:57.7 en pantalla (0:54.9 de voz + 2.8 s de respiros) · 4 planos</p>
+  <div class="chips"><span class="chip ok">voz 79 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 58 %</span><span class="chip mal">6.2 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-2.1" class="seg q" style="flex:17.12" title="2.1 · 17.1 s · presentar"><b>2.1</b><span>presentar</span></a><a href="#p-2.2" class="seg q" style="flex:8.30" title="2.2 · 8.3 s · acusar"><b>2.2</b><span>acusar</span></a><a href="#p-2.3" class="seg m" style="flex:24.29" title="2.3 · 24.3 s · repartir"><b>2.3</b><span>repartir</span></a><a href="#p-2.4" class="seg q x" style="flex:7.96" title="2.4 · 8.0 s · nombrar"><b>2.4</b><span>nombrar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>Corte desde la pila: la mesa se despeja a la derecha.</div><div><span class="et">Sale</span>Con la palabra del episodio, la mesa queda con las propiedades repartidas.</div></div>
+  
+<article class="plano" id="p-2.1">
+  <div class="cabeza"><span class="pid">2.1</span><span class="verbo">presentar</span>
+    <h3>San Martín y Monteagudo expropian a los grandes comerciantes de Lima.</h3>
+    <span class="tiempo">0:00.0–0:16.3 de s02.mp3 · 17.1 s en pantalla + 0.8 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[serious] [measured]</span> Sin dinero para la guerra, los jefes que pelearon por la independencia abusaron de las expropiaciones.<span class="pausa">0.6 s</span></p><p><span class="t">0:07.0</span><span class="tags">[calm] [storytelling]</span> Entre mil ochocientos veintiuno y mil ochocientos veintidós, San Martín y su ministro Bernardo Monteagudo expropiaron a los grandes comerciantes de Lima.<span class="pausa">0.8 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Presentaciones de San Martín y de Monteagudo (medallón al centro, la mesa desenfocada). Sus medallones caen sobre un decreto de expropiación. Al lado, casas limeñas con sus dueños tachados.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">José de San Martín · protector del Perú, 1821–1822</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 10.1/3.7 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">Bernardo Monteagudo · ministro</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 10.1/2.2 s</span><span class="chip neutro">ficha de identidad</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Presentación de personaje (1,8 s cada una, con soplo y tic).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Soplo y tic de cada presentación.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Medallones de San Martín y Monteagudo (retratos de época en Commons, a verificar). Casa limeña del siglo XIX con balcón, en el estilo de grabado (ChatGPT).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-2.2">
+  <div class="cabeza"><span class="pid">2.2</span><span class="verbo">acusar</span>
+    <h3>Unos limeños acusan a Monteagudo de llevarse los tesoros de las iglesias.</h3>
+    <span class="tiempo">0:16.3–0:24.6 de s02.mp3 · 8.3 s en pantalla</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:16.3</span><span class="tags">[dry] [measured]</span> Algunos limeños, indignados, acusaron a Monteagudo de sacar los tesoros de las iglesias para pagar espías y obras inútiles.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Un impreso de 1822 con la etiqueta «<em>Limeños · protesta, 1822</em>» y, junto a él, una custodia y un cáliz de plata que salen de la mesa hacia el lado de los espías (sombras sin cara).</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">«Lima justificada en el suceso del 25 de julio» · impreso, Lima, 1822 (Q, n. 5)</span> <span class="en">con la frase 2</span> <span class="chip ok">lectura 8.3/5.8 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Los objetos de plata salen opacos, rápido.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Metal que se arrastra.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Custodia y cáliz de plata coloniales; impreso limeño de 1822 sin texto legible (ChatGPT).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-2.3">
+  <div class="cabeza"><span class="pid">2.3</span><span class="verbo">repartir</span>
+    <h3>Las haciendas confiscadas valen unos dos millones, casi no dejan plata y terminan en manos de oficiales.</h3>
+    <span class="tiempo">0:24.6–0:47.9 de s02.mp3 · 24.3 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:24.6</span><span class="tags">[calm] [clear]</span> Las haciendas y casas confiscadas a españoles y criollos realistas se valoraron en cerca de dos millones de pesos.<span class="pausa">0.6 s</span></p><p><span class="t">0:32.5</span><span class="tags">[dry]</span> Como eran difíciles de vender, casi no le dejaron dinero al Estado.<span class="pausa">0.8 s</span></p><p><span class="t">0:38.0</span><span class="tags">[dry] [ironic]</span> La mayor parte terminó en manos de oficiales que pedían una recompensa por la guerra, y entre ellos estaba José Rufino Echenique.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Las fichas de las propiedades confiscadas suman dos millones; la etiqueta «<em>se vende</em>» queda colgada sin comprador. Después, cada propiedad viaja a la ficha de un oficial: Sucre, O&#x27;Higgins y, la última, Echenique, con su medallón del 0·3.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Propiedades confiscadas · ≈ 2 millones de pesos ≈ 230 millones de soles de hoy*</span> <span class="en">con la frase 3</span> <span class="chip ok">lectura 24.3/5.5 s</span></li><li><span class="rotulo">Antonio José de Sucre · Bernardo O&#x27;Higgins · José Rufino Echenique, entre otros</span> <span class="en">con la frase 5</span> <span class="chip ok">lectura 11.0/4.9 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Acercamiento: Acercarse a Echenique: la cara que el espectador volverá a ver en el 0·3.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Las propiedades viajan en arco hacia cada oficial; la de Echenique llega última y más lenta.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Hoja por cada propiedad que cambia de manos.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Medallones de Sucre y O&#x27;Higgins. Ficha de hacienda (casa de hacienda costeña) en grabado (ChatGPT).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="piezas"><span class="et">Objetos y papeles (galería del 0·3)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/retratos/medallon-echenique.png" alt=""><figcaption>medallon-echenique.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano exc" id="p-2.4">
+  <div class="cabeza"><span class="pid">2.4</span><span class="verbo">nombrar</span>
+    <h3>Quiroz lo llama «<em>saqueo patriota</em>».</h3><span class="sello exc">excepción reservada</span>
+    <span class="tiempo">0:47.9–0:54.9 de s02.mp3 · 8.0 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:47.9</span><span class="tags">[serious] [low voice]</span> Quiroz tiene un nombre para todo esto.<span class="pausa larga">1 s</span></p><p><span class="t">0:51.6</span><span class="tags">[serious] [low voice] [slowly]</span> Saqueo patriota.<span class="pausa larga">2.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La palabra del episodio a pantalla completa, quieta, sobre papel. Debajo, «<em>Q, p. 130</em>». Después baja a una esquina como rótulo de la escena.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo palabra">saqueo patriota</span> <span class="en">con la frase 7</span> <span class="chip ok">lectura 4.3/1.6 s</span><span class="chip neutro">término</span></li><li><span class="rotulo">Q, p. 130</span> <span class="en">con la frase 7</span> <span class="chip ok">lectura 4.3/1.9 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Ninguno: excepción reservada.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Sin música durante la palabra.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+</section>
+<section id="s03">
+  <header><span class="larga">Mesa</span>
+  <h2><span class="num">s03</span>Lo tomado se vuelve deuda</h2>
+  <p class="cambia">De «<em>lo que se llevaron se perdió</em>» a «<em>lo que se llevaron lo pagaría después la gente común, con intereses</em>».</p>
+  <p class="meta">1:10.7 en pantalla (1:04.1 de voz + 6.6 s de respiros) · 5 planos</p>
+  <div class="chips"><span class="chip ok">voz 78 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 82 %</span><span class="chip ok">4.2 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-3.1" class="seg q" style="flex:21.58" title="3.1 · 21.6 s · presentar"><b>3.1</b><span>presentar</span></a><a href="#p-3.2" class="seg q" style="flex:11.34" title="3.2 · 11.3 s · premiar"><b>3.2</b><span>premiar</span></a><a href="#p-3.3" class="seg q" style="flex:13.19" title="3.3 · 13.2 s · citar"><b>3.3</b><span>citar</span></a><a href="#p-3.4" class="seg q" style="flex:11.73" title="3.4 · 11.7 s · forzar"><b>3.4</b><span>forzar</span></a><a href="#p-3.5" class="seg m" style="flex:12.84" title="3.5 · 12.8 s · reflexionar"><b>3.5</b><span>reflexionar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>La mesa con la pila de adentro a la izquierda.</div><div><span class="et">Sale</span>La pila de adentro, más alta, en silencio.</div></div>
+  
+<article class="plano" id="p-3.1">
+  <div class="cabeza"><span class="pid">3.1</span><span class="verbo">presentar</span>
+    <h3>Bolívar sigue el mismo camino: confiscaciones del Callao y la plata de las iglesias.</h3>
+    <span class="tiempo">0:00.0–0:20.8 de s03.mp3 · 21.6 s en pantalla + 0.8 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[serious]</span> Cuando Simón Bolívar tomó el mando, siguió el mismo camino.<span class="pausa">0.6 s</span></p><p><span class="t">0:04.8</span><span class="tags">[calm] [storytelling]</span> En mil ochocientos veinticuatro y mil ochocientos veinticinco decretó confiscar los bienes de quienes se habían refugiado con los españoles en el Callao.<span class="pausa">0.8 s</span></p><p><span class="t">0:14.4</span><span class="tags">[serious] [measured]</span> También ordenó tomar los adornos de plata de las iglesias para mantener al ejército.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Presentación de Bolívar. Su medallón cae sobre un decreto de confiscación; la fortaleza del Real Felipe (Callao) en la ficha; los adornos de plata de las iglesias vuelven a salir de la mesa, ahora hacia el ejército.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Simón Bolívar · dictador del Perú, 1824–1826</span> <span class="en">con la frase 0</span> <span class="chip ok">lectura 21.3/3.1 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">Callao · Real Felipe · 1824–1825</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 16.8/2.8 s</span><span class="chip neutro">ficha de identidad</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Presentación de personaje; la plata sale opaca, como en 2.2 (misma acción, otro dueño).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Soplo y tic; metal.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Medallón de Bolívar (retrato de época en Commons, a verificar). Fortaleza del Real Felipe en grabado (ChatGPT o grabado de época en dominio público).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-3.2">
+  <div class="cabeza"><span class="pid">3.2</span><span class="verbo">premiar</span>
+    <h3>El Congreso le da a Bolívar más de un millón de pesos.</h3>
+    <span class="tiempo">0:20.8–0:31.1 de s03.mp3 · 11.3 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:20.8</span><span class="tags">[dry] [ironic]</span> En mil ochocientos veintiséis, con el Estado sin dinero y endeudado, el Congreso recompensó a Bolívar con más de un millón de pesos.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Un papel del Congreso con la etiqueta «<em>Congreso · 1826</em>» viaja hacia la ficha de Bolívar con la cifra escrita en tinta.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">más de 1 000 000 de pesos ≈ 115 millones de soles de hoy*</span> <span class="en">con la frase 3</span> <span class="chip ok">lectura 11.3/5.2 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>El papel entra opaco; la cifra se escribe en tinta.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Pluma.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  <div class="piezas"><span class="et">Objetos y papeles (galería del 0·3)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png" alt=""><figcaption>obj-09-folio-sencillo.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-3.3">
+  <div class="cabeza"><span class="pid">3.3</span><span class="verbo">citar</span>
+    <h3>El cónsul de EE. UU.: «<em>crueles, rapaces, carentes de principios e incapaces</em>».</h3>
+    <span class="tiempo">0:31.1–0:42.5 de s03.mp3 · 13.2 s en pantalla + 1.8 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:31.1</span><span class="tags">[serious] [measured]</span> Ya en mil ochocientos veinticuatro, el cónsul de Estados Unidos había escrito que los que vinieron a proclamar la libertad eran crueles, rapaces, sin principios e incapaces.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La cita textual sobre su tira, con la ficha del cónsul y la fecha; el corrector subraya en rojo «<em>rapaces</em>».</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">William Tudor · cónsul de EE. UU. · Callao, 3 de mayo de 1824</span> <span class="en">con la frase 4</span> <span class="chip ok">lectura 13.2/5.2 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">«crueles, rapaces, carentes de principios e incapaces»</span> <span class="en">con la frase 4</span> <span class="chip ok">lectura 13.2/3.1 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Subrayado rojo del corrector (TrazoRojo).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Pluma.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Silueta para Tudor (no hace falta medallón: es una ficha de fuente).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-3.4">
+  <div class="cabeza"><span class="pid">3.4</span><span class="verbo">forzar</span>
+    <h3>Préstamos forzosos que no se pagaban: se pierde el crédito de adentro.</h3>
+    <span class="tiempo">0:42.5–0:53.2 de s03.mp3 · 11.7 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:42.5</span><span class="tags">[serious] [clear]</span> Adentro, el Estado también obligaba a los comerciantes a prestarle dinero y después no les pagaba, así que perdió su crédito en el país.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Comerciantes (siluetas) entregan papeles de préstamo al Estado (el edificio del 0·3); con «<em>no les pagaba</em>», los papeles vuelven vacíos y se tachan.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">préstamos forzosos · impagos</span> <span class="en">con la frase 5</span> <span class="chip ok">lectura 11.7/2.2 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Ida y vuelta de los papeles; tachado rojo.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Papel; tachado.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  <div class="piezas"><span class="et">Objetos y papeles (galería del 0·3)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-08-estado.png" alt=""><figcaption>obj01-08-estado.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-3.5">
+  <div class="cabeza"><span class="pid">3.5</span><span class="verbo">reflexionar</span>
+    <h3>Para Quiroz, ahí empezó una costumbre: tapar el saqueo con deuda pública.</h3>
+    <span class="tiempo">0:53.2–1:04.1 de s03.mp3 · 12.8 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:53.2</span><span class="tags">[serious] [low voice] [slowly]</span> Para Quiroz, ahí empezó una costumbre: tapar el saqueo con más deuda pública, una deuda que la gente común terminaría pagando más cara.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Todo lo tomado en la escena (la plata, las propiedades, los préstamos) se convierte en papeles de deuda que se suman a la pila de adentro, en silencio; la pila queda más alta que al comienzo.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Q, p. 136</span> <span class="en">con la frase 6</span> <span class="chip ok">lectura 12.8/1.9 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Acercamiento: Acercarse a la pila mientras crece en silencio: el dato más fuerte del episodio.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Cada objeto se dobla en papel y cae a la pila (acción continuada, 2–6 frames de desfase).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Silencio deliberado de 2 s.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+</section>
+<section id="s04">
+  <header><span class="larga">Mapa del Atlántico y mesa</span>
+  <h2><span class="num">s04</span>Los préstamos de Londres</h2>
+  <p class="cambia">De «<em>el préstamo era la salida</em>» a «<em>el préstamo fue otro negocio para unos pocos, y una deuda para todos</em>».</p>
+  <p class="meta">1:46.5 en pantalla (1:39.0 de voz + 7.4 s de respiros) · 6 planos</p>
+  <div class="chips"><span class="chip ok">voz 81 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 69 %</span><span class="chip mal">6.2 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-4.1" class="seg m" style="flex:14.82" title="4.1 · 14.8 s · situar"><b>4.1</b><span>situar</span></a><a href="#p-4.2" class="seg q" style="flex:26.70" title="4.2 · 26.7 s · presentar"><b>4.2</b><span>presentar</span></a><a href="#p-4.3" class="seg q" style="flex:16.26" title="4.3 · 16.3 s · acusar"><b>4.3</b><span>acusar</span></a><a href="#p-4.4" class="seg q" style="flex:13.57" title="4.4 · 13.6 s · sumar"><b>4.4</b><span>sumar</span></a><a href="#p-4.5" class="seg m" style="flex:18.58" title="4.5 · 18.6 s · partir"><b>4.5</b><span>partir</span></a><a href="#p-4.6" class="seg q" style="flex:16.52" title="4.6 · 16.5 s · cortar"><b>4.6</b><span>cortar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>El mapa vuelve, ahora con fecha 1822.</div><div><span class="et">Sale</span>La ruta cortada y la pila de afuera partida.</div></div>
+  
+<article class="plano" id="p-4.1">
+  <div class="cabeza"><span class="pid">4.1</span><span class="verbo">situar</span>
+    <h3>Ya desde 1822 el Estado pidió afuera; Londres le prestaba también a Nueva Granada, Chile y México.</h3>
+    <span class="tiempo">0:00.0–0:13.8 de s04.mp3 · 14.8 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[calm] [teacher]</span> Ya desde mil ochocientos veintidós, sin crédito adentro, el Estado había salido a pedir prestado afuera.<span class="pausa">0.6 s</span></p><p><span class="t">0:07.0</span><span class="tags">[calm]</span> En esos años, Londres también les prestaba a Nueva Granada, a Chile y a México.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>El mapa con la ruta Lima–Londres y, desde Londres, otras tres rutas a Nueva Granada, Chile y México: el Perú no estaba solo.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Nueva Granada desde 1820, después Chile y México: préstamos impagos</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 7.8/4.0 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Recorrido: De Lima a Londres y, desde ahí, la mirada a las otras repúblicas.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Las tres rutas salen en cascada.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Tic por ruta.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-4.2">
+  <div class="cabeza"><span class="pid">4.2</span><span class="verbo">presentar</span>
+    <h3>Los enviados: García del Río y Paroissien, que hacía negocios privados con el mismo banquero.</h3>
+    <span class="tiempo">0:13.8–0:39.5 de s04.mp3 · 26.7 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:13.8</span><span class="tags">[calm] [storytelling]</span> El primer préstamo lo negociaron dos amigos de San Martín, Juan García del Río y el médico británico James Paroissien.<span class="pausa">0.8 s</span></p><p><span class="t">0:22.3</span><span class="tags">[dry] [measured]</span> Mientras negociaba con el banquero Thomas Kinder en nombre del Perú, Paroissien hacía negocios privados con el mismo Kinder.<span class="pausa larga">1 s</span></p><p><span class="t">0:30.6</span><span class="tags">[dry] [ironic]</span> A Paroissien, San Martín ya lo había premiado con el grado de general y con parte de una hacienda confiscada.<span class="pausa larga">1.2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Presentaciones de García del Río y de Paroissien. Kinder en silueta (no hay retrato). Un trazo une a Paroissien con Kinder dos veces: arriba «<em>por el Perú</em>», abajo «<em>negocios privados</em>». Con «<em>premiado</em>», la hacienda confiscada de la escena 2 viaja a Paroissien, junto al grado de general.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Juan García del Río · James Paroissien · enviados del Perú en Londres</span> <span class="en">con la frase 2</span> <span class="chip ok">lectura 26.7/4.9 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">Thomas Kinder · banquero</span> <span class="en">con la frase 3</span> <span class="chip ok">lectura 18.2/2.2 s</span><span class="chip neutro">ficha de identidad</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Dos presentaciones; el doble trazo se dibuja de a uno.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Soplo y tic; pluma.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Medallones de García del Río y Paroissien (retratos en Commons, a verificar); silueta de Kinder.</p></div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-4.3">
+  <div class="cabeza"><span class="pid">4.3</span><span class="verbo">acusar</span>
+    <h3>1823: el Congreso aprueba; Riva-Agüero, acusado de querer cien mil pesos del préstamo.</h3>
+    <span class="tiempo">0:39.5–0:54.6 de s04.mp3 · 16.3 s en pantalla + 1.2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:39.5</span><span class="tags">[measured]</span> El Congreso aprobó el préstamo en mil ochocientos veintitrés, con José de la Riva-Agüero como presidente.<span class="pausa">0.6 s</span></p><p><span class="t">0:46.3</span><span class="tags">[dry] [restrained]</span> A Riva-Agüero lo acusaron de presionar al Congreso para quedarse, con sus socios, con cien mil pesos del préstamo.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Presentación de Riva-Agüero. Del contrato del préstamo se separan 100 000 pesos hacia su ficha, con la palabra «<em>acusado</em>» en la etiqueta.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">José de la Riva-Agüero · presidente, 1823</span> <span class="en">con la frase 5</span> <span class="chip ok">lectura 16.3/3.1 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">100 000 pesos ≈ 11 millones de soles de hoy*</span> <span class="en">con la frase 6</span> <span class="chip ok">lectura 9.5/4.0 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Presentación de personaje.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Soplo y tic.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Medallón de Riva-Agüero (retrato en Commons, a verificar).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-4.4">
+  <div class="cabeza"><span class="pid">4.4</span><span class="verbo">sumar</span>
+    <h3>Enero de 1825: un segundo préstamo; una parte para 25 000 fusiles.</h3>
+    <span class="tiempo">0:54.6–1:07.2 de s04.mp3 · 13.6 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:54.6</span><span class="tags">[calm]</span> En enero de mil ochocientos veinticinco se contrató un segundo préstamo, otra vez con Kinder.<span class="pausa">0.6 s</span></p><p><span class="t">1:01.0</span><span class="tags">[measured]</span> Bolívar esperaba ese dinero, y una parte era para comprar veinticinco mil fusiles.<span class="pausa larga">1.2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Un segundo contrato se suma a la pila de afuera; de él sale una caja de fusiles hacia la ficha de Bolívar.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Préstamo de 1825 · 616 000 libras ≈ 340 millones de soles de hoy*</span> <span class="en">con la frase 7</span> <span class="chip ok">lectura 13.6/5.2 s</span></li><li><span class="rotulo">40 000 libras · 25 000 fusiles ≈ 22 millones de soles de hoy*</span> <span class="en">con la frase 8</span> <span class="chip ok">lectura 7.2/5.2 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>El contrato entra opaco; la caja, en arco.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Hoja; madera.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Caja de fusiles de la época, en grabado (ChatGPT).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-4.5">
+  <div class="cabeza"><span class="pid">4.5</span><span class="verbo">partir</span>
+    <h3>Al Perú llegó la mitad, y se malgastó en pagos a oficiales.</h3>
+    <span class="tiempo">1:07.2–1:24.5 de s04.mp3 · 18.6 s en pantalla + 1.2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:07.2</span><span class="tags">[serious] [clear]</span> De todo lo prestado, al Perú llegó la mitad: el resto se fue en comisiones, gastos e intereses cobrados por adelantado.<span class="pausa larga">1 s</span></p><p><span class="t">1:16.2</span><span class="tags">[serious] [restrained anger]</span> Según Quiroz, lo poco que llegó se malgastó además en pagos exagerados a los oficiales del ejército de Bolívar.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La pila de afuera se parte: la mitad de arriba se queda en Londres en tres montones rotulados (comisiones, gastos, intereses por adelantado); la mitad que llega a Lima se reparte entre fichas de oficiales del ejército de Bolívar.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">de 1 816 000 libras, llegó ≈ 50 %</span> <span class="en">con la frase 9</span> <span class="chip ok">lectura 18.6/3.7 s</span></li><li><span class="rotulo">Q, p. 139</span> <span class="en">con la frase 10</span> <span class="chip ok">lectura 9.5/1.9 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Acercamiento: Acercarse a la mitad que se queda en Londres.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>La mitad sale opaca; el reparto, en cascada.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Monedas.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-4.6">
+  <div class="cabeza"><span class="pid">4.6</span><span class="verbo">cortar</span>
+    <h3>1825: la bolsa de Londres se desploma; el Perú deja de pagar hasta fines de los años cuarenta.</h3>
+    <span class="tiempo">1:24.5–1:39.0 de s04.mp3 · 16.5 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:24.5</span><span class="tags">[tense]</span> A fines de mil ochocientos veinticinco, la bolsa de Londres se desplomó.<span class="pausa">0.6 s</span></p><p><span class="t">1:29.8</span><span class="tags">[serious] [weary]</span> El Perú dejó de pagar, y nadie volvió a prestarle hasta fines de la década de mil ochocientos cuarenta.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La ruta Lima–Londres se corta en rojo. Una línea de tiempo de 1826 a 1849, vacía, con «<em>sin crédito afuera</em>».</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">bolsa de Londres · fines de 1825</span> <span class="en">con la frase 11</span> <span class="chip ok">lectura 16.5/3.1 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">1826 – fines de la década de 1840: sin préstamos</span> <span class="en">con la frase 12</span> <span class="chip ok">lectura 11.3/4.0 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Corte rojo, ligero.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Golpe seco; después el aire.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+</section>
+<section id="s05">
+  <header><span class="larga">Mar (islas del 0·3 sin guano) y mesa</span>
+  <h2><span class="num">s05</span>La plata que se iba por mar</h2>
+  <p class="cambia">De «<em>el problema era la deuda</em>» a «<em>además, la riqueza salía del país sin pagar nada, con autoridades que la protegían</em>».</p>
+  <p class="meta">1:03.2 en pantalla (0:58.5 de voz + 4.7 s de respiros) · 3 planos</p>
+  <div class="chips"><span class="chip ok">voz 81 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 53 %</span><span class="chip ok">4.7 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-5.1" class="seg m" style="flex:29.42" title="5.1 · 29.4 s · mostrar"><b>5.1</b><span>mostrar</span></a><a href="#p-5.2" class="seg q" style="flex:18.18" title="5.2 · 18.2 s · presentar"><b>5.2</b><span>presentar</span></a><a href="#p-5.3" class="seg q" style="flex:15.64" title="5.3 · 15.6 s · archivar"><b>5.3</b><span>archivar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>Del mapa al mar.</div><div><span class="et">Sale</span>La ley archivada sobre la mesa.</div></div>
+  
+<article class="plano" id="p-5.1">
+  <div class="cabeza"><span class="pid">5.1</span><span class="verbo">mostrar</span>
+    <h3>Los barcos de guerra británicos sacan 27 millones en plata y oro; mucho sale de contrabando.</h3>
+    <span class="tiempo">0:00.0–0:27.9 de s05.mp3 · 29.4 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[calm] [storytelling]</span> La riqueza también salía del país por mar.<span class="pausa">0.6 s</span></p><p><span class="t">0:04.0</span><span class="tags">[measured]</span> El cónsul británico en Lima reportó lo que sacaron del Perú los barcos de guerra británicos entre mil ochocientos diecinueve y mil ochocientos veinticinco.<span class="pausa">0.6 s</span></p><p><span class="t">0:13.8</span><span class="tags">[serious]</span> Eran veintisiete millones de dólares en plata y oro.<span class="pausa larga">1 s</span></p><p><span class="t">0:18.3</span><span class="tags">[serious] [measured]</span> Según Quiroz, la plata salía muchas veces de contrabando, en barcos de guerra británicos y de otros países, sin pagar derechos de aduana.<span class="pausa">0.8 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>El mar del 0·3 con un barco de guerra; barras de plata suben de noche. Ficha del cónsul británico con la cifra.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Charles Ricketts · cónsul británico en Lima (citado en Q, n. 33)</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 25.4/4.6 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">1819–1825 · 27 millones de dólares en plata y oro ≈ 3100 millones de soles de hoy*</span> <span class="en">con la frase 2</span> <span class="chip ok">lectura 15.6/6.1 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Acercamiento: Acercarse al barco mientras suben las barras: por dónde se iba la riqueza.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>El mar con su fase; las barras suben una por una.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Mar de noche; madera del casco.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Barco de guerra británico (fragata) y barras de plata, en grabado (ChatGPT).</p></div>
+      
+    </div>
+  </div>
+  
+  <div class="piezas"><span class="et">Personajes y fondo (galería del 0·3)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png" alt=""><figcaption>obj01-06-mar.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-07-barco.png" alt=""><figcaption>obj01-07-barco.png</figcaption></figure></div></div>
+  
+  
+</article>
+<article class="plano" id="p-5.2">
+  <div class="cabeza"><span class="pid">5.2</span><span class="verbo">presentar</span>
+    <h3>Arequipa: el prefecto Gutiérrez de la Fuente protege el contrabando y junta 200 000 pesos.</h3>
+    <span class="tiempo">0:27.9–0:44.9 de s05.mp3 · 18.2 s en pantalla + 1.2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:27.9</span><span class="tags">[dry] [measured]</span> A fines de la década de mil ochocientos veinte, el prefecto de Arequipa protegía el contrabando.<span class="pausa">0.6 s</span></p><p><span class="t">0:34.7</span><span class="tags">[dry] [ironic]</span> Era el general Antonio Gutiérrez de la Fuente, y según Quiroz desvió fondos públicos hasta juntar una fortuna de al menos doscientos mil pesos.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Presentación de Gutiérrez de la Fuente. Su medallón cae sobre una cuenta de fondos públicos de la que sale una columna de monedas.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Antonio Gutiérrez de la Fuente · prefecto de Arequipa, fines de la década de 1820</span> <span class="en">con la frase 4</span> <span class="chip ok">lectura 18.2/5.5 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">≥ 200 000 pesos ≈ 23 millones de soles de hoy*</span> <span class="en">con la frase 5</span> <span class="chip ok">lectura 11.4/4.3 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Presentación de personaje.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Soplo y tic; monedas.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Medallón de Gutiérrez de la Fuente (retrato en Commons, a verificar).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-5.3">
+  <div class="cabeza"><span class="pid">5.3</span><span class="verbo">archivar</span>
+    <h3>Había leyes y hasta pena de muerte para el aduanero; casi nunca se aplicaban.</h3>
+    <span class="tiempo">0:44.9–0:58.5 de s05.mp3 · 15.6 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:44.9</span><span class="tags">[measured] [even]</span> Había reglas contra la corrupción, y hasta pena de muerte para el aduanero que ayudara al contrabando.<span class="pausa">0.6 s</span></p><p><span class="t">0:52.0</span><span class="tags">[serious] [weary]</span> Casi nunca se aplicaban: los acusados se libraban con sobornos y testigos falsos.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Una hoja de ley entra a la mesa; el corrector la marca y la hoja se archiva sin usarse (vuelve a la carpeta).</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">pena de muerte · aduaneros cómplices del contrabando</span> <span class="en">con la frase 6</span> <span class="chip ok">lectura 15.6/3.4 s</span></li><li><span class="rotulo">Q, p. 144</span> <span class="en">con la frase 7</span> <span class="chip ok">lectura 8.5/1.9 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>La hoja entra y sale opaca; tachado rojo.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Papel; carpeta.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Hoja de ley impresa (la misma de los prompts de la escena 4 del 0·3).</p></div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+</section>
+<section id="s06">
+  <header><span class="larga">Mesa</span>
+  <h2><span class="num">s06</span>Cierre</h2>
+  <p class="cambia">De «<em>la independencia</em>» a «<em>la independencia dejó dos deudas sin pagar, y una costumbre</em>».</p>
+  <p class="meta">0:35.4 en pantalla (0:31.9 de voz + 3.5 s de respiros) · 2 planos</p>
+  <div class="chips"><span class="chip ok">voz 70 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 34 %</span><span class="chip ok">5.1 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-6.1" class="seg m" style="flex:23.46" title="6.1 · 23.5 s · juntar"><b>6.1</b><span>juntar</span></a><a href="#p-6.2" class="seg q" style="flex:11.96" title="6.2 · 12.0 s · anunciar"><b>6.2</b><span>anunciar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>La mesa con las dos pilas.</div><div><span class="et">Sale</span>El grabado de las islas del 0·3 y la tarjeta del próximo episodio.</div></div>
+  
+<article class="plano" id="p-6.1">
+  <div class="cabeza"><span class="pid">6.1</span><span class="verbo">juntar</span>
+    <h3>El Perú nació con dos deudas, y casi no pagó ninguna durante más de veinte años.</h3>
+    <span class="tiempo">0:00.0–0:22.5 de s06.mp3 · 23.5 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[calm] [teacher]</span> Así, el Perú independiente nació con dos deudas.<span class="pausa">0.6 s</span></p><p><span class="t">0:04.0</span><span class="tags">[calm]</span> Una con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron y no pagaron.<span class="pausa">0.6 s</span></p><p><span class="t">0:12.3</span><span class="tags">[calm]</span> Otra con los acreedores de Londres.<span class="pausa larga">1 s</span></p><p><span class="t">0:15.6</span><span class="tags">[serious] [low voice]</span> Durante más de veinte años, el Estado casi no pagó ninguna de las dos.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Las dos pilas, una a cada lado: adentro (colonia y guerra) y afuera (Londres). Debajo, una línea de 1826 a 1849, vacía.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">adentro: ≈ 21 millones de pesos</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 19.5/2.8 s</span></li><li><span class="rotulo">afuera: 1 816 000 libras</span> <span class="en">con la frase 2</span> <span class="chip ok">lectura 11.2/2.5 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Acercamiento: Abrirse para ver las dos pilas juntas: la imagen que resume el episodio.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Las dos pilas quietas.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>La música sostiene.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</article>
+<article class="plano" id="p-6.2">
+  <div class="cabeza"><span class="pid">6.2</span><span class="verbo">anunciar</span>
+    <h3>Hasta que encontró con qué pagar: el guano.</h3>
+    <span class="tiempo">0:22.5–0:31.9 de s06.mp3 · 12.0 s en pantalla + 2.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:22.5</span><span class="tags">[calm] [warm]</span> Hasta que encontró con qué pagar: el guano de unas islas.<span class="pausa larga">2.5 s</span></p><p><span class="t">0:29.2</span><span class="tags">[calm]</span> Próximo episodio: la deuda defraudada.<span class="pausa">0.8 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Con «<em>guano</em>», el grabado de las islas del 0·3 aparece entre las dos pilas. Tarjeta: PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Próximo · 1850 · La deuda defraudada</span> <span class="en">con la frase 5</span> <span class="chip ok">lectura 5.2/3.1 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Las islas entran por capas (mar, isla, aves), como en el 0·3.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Mar y aves; el tema del canal con la tarjeta.</p></div>
+      
+      
+    </div>
+  </div>
+  
+  <div class="piezas"><span class="et">Personajes y fondo (galería del 0·3)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png" alt=""><figcaption>obj01-06-mar.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-islas.png" alt=""><figcaption>obj01-06-islas.png</figcaption></figure></div></div>
+  
+  
+</article>
+</section>
+</main></body></html>

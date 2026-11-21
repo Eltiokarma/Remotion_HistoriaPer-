@@ -1630,7 +1630,10 @@
         "fin": null
       },
       "bloqueo": null,
-      "evidencia": [],
+      "evidencia": [
+        "historia/videos/002-saqueo-patriota/storyboard.html",
+        "historia/videos/002-saqueo-patriota/fuentes.md"
+      ],
       "tiempo": {
         "humano_min": null,
         "agente": null,

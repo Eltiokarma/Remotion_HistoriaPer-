@@ -1,0 +1,254 @@
+{
+ "voz": "sku3dGbfu1taqEDqvHsQ",
+ "nombre": "Joder Jolines",
+ "tipo": "clon de la voz de Gerson",
+ "modelo": "eleven_v4",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.8
+ },
+ "nota": "Generado por narracion_construir.py desde guion.md; no se edita a mano. Una toma por escena (scripts/narracion.py); cada frase es [texto con etiquetas de emoción, pausa después en segundos]. Modelo eleven_v4 por pedido de Gerson el 2026-11-19 (el 0·1 se hizo con eleven_v3).",
+ "respiro_minimo": 1.0,
+ "nota_respiro": "v4 encadena los párrafos (las pausas de 1 a 1,2 s salían de ~0,45 s): desde 1 s se garantizan con el aire de la toma, para que cada párrafo tenga su corte al editar.",
+ "cortes": {
+  "s06": {
+   "4": 2.5
+  }
+ },
+ "frases": {
+  "s00": [
+   [
+    "[serious] [calm] Londres, octubre de mil ochocientos veintidós.",
+    0.35
+   ],
+   [
+    "[serious] [measured] Se firma el primer préstamo extranjero del Perú, negociado por dos enviados de su gobierno: un millón doscientas mil libras esterlinas.",
+    0.8
+   ],
+   [
+    "[dry] [measured] El procurador general de Londres opinó que ese contrato era nulo en la práctica, por usura.",
+    0.6
+   ],
+   [
+    "[dry] De cada cien libras contratadas, solo se adelantaban setenta y cinco.",
+    1.0
+   ],
+   [
+    "[serious] [measured] Con un segundo préstamo, la deuda llegó a cerca de un millón ochocientas mil libras.",
+    0.6
+   ],
+   [
+    "[serious] [low voice] Descontadas las comisiones y los intereses, el Perú recibió apenas la mitad.",
+    0.8
+   ],
+   [
+    "[dry] [restrained] Casi de inmediato, dejó de pagar.",
+    1.5
+   ],
+   [
+    "[curious] [softly] ¿Cómo nace así un país que acaba de liberarse?",
+    2.0
+   ]
+  ],
+  "s01": [
+   [
+    "[calm] [storytelling] En el episodio anterior dijimos que la corrupción viene desde la colonia, y la deuda también.",
+    0.8
+   ],
+   [
+    "[calm] [teacher] Según Quiroz, el Perú independiente heredó más de catorce millones de pesos de deuda colonial con acreedores locales.",
+    1.0
+   ],
+   [
+    "[calm] A eso se sumaron las deudas de los primeros gobiernos, que pagaban la guerra como emergencia.",
+    0.6
+   ],
+   [
+    "[calm] [clear] Entre esos reclamos había sueldos de empleados sin pagar, proveedores y propietarios a los que les habían quitado sus bienes.",
+    0.6
+   ],
+   [
+    "[serious] Con otros pagos atrasados, sumaban cerca de siete millones de pesos más.",
+    1.5
+   ]
+  ],
+  "s02": [
+   [
+    "[serious] [measured] Sin dinero para la guerra, los jefes que pelearon por la independencia abusaron de las expropiaciones.",
+    0.6
+   ],
+   [
+    "[calm] [storytelling] Entre mil ochocientos veintiuno y mil ochocientos veintidós, San Martín y su ministro Bernardo Monteagudo expropiaron a los grandes comerciantes de Lima.",
+    0.8
+   ],
+   [
+    "[dry] [measured] Algunos limeños, indignados, acusaron a Monteagudo de sacar los tesoros de las iglesias para pagar espías y obras inútiles.",
+    1.0
+   ],
+   [
+    "[calm] [clear] Las haciendas y casas confiscadas a españoles y criollos realistas se valoraron en cerca de dos millones de pesos.",
+    0.6
+   ],
+   [
+    "[dry] Como eran difíciles de vender, casi no le dejaron dinero al Estado.",
+    0.8
+   ],
+   [
+    "[dry] [ironic] La mayor parte terminó en manos de oficiales que pedían una recompensa por la guerra, y entre ellos estaba José Rufino Echenique.",
+    1.5
+   ],
+   [
+    "[serious] [low voice] Quiroz tiene un nombre para todo esto.",
+    1.0
+   ],
+   [
+    "[serious] [low voice] [slowly] Saqueo patriota.",
+    2.5
+   ]
+  ],
+  "s03": [
+   [
+    "[serious] Cuando Simón Bolívar tomó el mando, siguió el mismo camino.",
+    0.6
+   ],
+   [
+    "[calm] [storytelling] En mil ochocientos veinticuatro y mil ochocientos veinticinco decretó confiscar los bienes de quienes se habían refugiado con los españoles en el Callao.",
+    0.8
+   ],
+   [
+    "[serious] [measured] También ordenó tomar los adornos de plata de las iglesias para mantener al ejército.",
+    1.0
+   ],
+   [
+    "[dry] [ironic] En mil ochocientos veintiséis, con el Estado sin dinero y endeudado, el Congreso recompensó a Bolívar con más de un millón de pesos.",
+    1.5
+   ],
+   [
+    "[serious] [measured] Ya en mil ochocientos veinticuatro, el cónsul de Estados Unidos había escrito que los que vinieron a proclamar la libertad eran crueles, rapaces, sin principios e incapaces.",
+    1.0
+   ],
+   [
+    "[serious] [clear] Adentro, el Estado también obligaba a los comerciantes a prestarle dinero y después no les pagaba, así que perdió su crédito en el país.",
+    1.5
+   ],
+   [
+    "[serious] [low voice] [slowly] Para Quiroz, ahí empezó una costumbre: tapar el saqueo con más deuda pública, una deuda que la gente común terminaría pagando más cara.",
+    2.0
+   ]
+  ],
+  "s04": [
+   [
+    "[calm] [teacher] Ya desde mil ochocientos veintidós, sin crédito adentro, el Estado había salido a pedir prestado afuera.",
+    0.6
+   ],
+   [
+    "[calm] En esos años, Londres también les prestaba a Nueva Granada, a Chile y a México.",
+    1.0
+   ],
+   [
+    "[calm] [storytelling] El primer préstamo lo negociaron dos amigos de San Martín, Juan García del Río y el médico británico James Paroissien.",
+    0.8
+   ],
+   [
+    "[dry] [measured] Mientras negociaba con el banquero Thomas Kinder en nombre del Perú, Paroissien hacía negocios privados con el mismo Kinder.",
+    1.0
+   ],
+   [
+    "[dry] [ironic] A Paroissien, San Martín ya lo había premiado con el grado de general y con parte de una hacienda confiscada.",
+    1.2
+   ],
+   [
+    "[measured] El Congreso aprobó el préstamo en mil ochocientos veintitrés, con José de la Riva-Agüero como presidente.",
+    0.6
+   ],
+   [
+    "[dry] [restrained] A Riva-Agüero lo acusaron de presionar al Congreso para quedarse, con sus socios, con cien mil pesos del préstamo.",
+    1.0
+   ],
+   [
+    "[calm] En enero de mil ochocientos veinticinco se contrató un segundo préstamo, otra vez con Kinder.",
+    0.6
+   ],
+   [
+    "[measured] Bolívar esperaba ese dinero, y una parte era para comprar veinticinco mil fusiles.",
+    1.2
+   ],
+   [
+    "[serious] [clear] De todo lo prestado, al Perú llegó la mitad: el resto se fue en comisiones, gastos e intereses cobrados por adelantado.",
+    1.0
+   ],
+   [
+    "[serious] [restrained anger] Según Quiroz, lo poco que llegó se malgastó además en pagos exagerados a los oficiales del ejército de Bolívar.",
+    1.0
+   ],
+   [
+    "[tense] A fines de mil ochocientos veinticinco, la bolsa de Londres se desplomó.",
+    0.6
+   ],
+   [
+    "[serious] [weary] El Perú dejó de pagar, y nadie volvió a prestarle hasta fines de la década de mil ochocientos cuarenta.",
+    2.0
+   ]
+  ],
+  "s05": [
+   [
+    "[calm] [storytelling] La riqueza también salía del país por mar.",
+    0.6
+   ],
+   [
+    "[measured] El cónsul británico en Lima reportó lo que sacaron del Perú los barcos de guerra británicos entre mil ochocientos diecinueve y mil ochocientos veinticinco.",
+    0.6
+   ],
+   [
+    "[serious] Eran veintisiete millones de dólares en plata y oro.",
+    1.0
+   ],
+   [
+    "[serious] [measured] Según Quiroz, la plata salía muchas veces de contrabando, en barcos de guerra británicos y de otros países, sin pagar derechos de aduana.",
+    0.8
+   ],
+   [
+    "[dry] [measured] A fines de la década de mil ochocientos veinte, el prefecto de Arequipa protegía el contrabando.",
+    0.6
+   ],
+   [
+    "[dry] [ironic] Era el general Antonio Gutiérrez de la Fuente, y según Quiroz desvió fondos públicos hasta juntar una fortuna de al menos doscientos mil pesos.",
+    1.0
+   ],
+   [
+    "[measured] [even] Había reglas contra la corrupción, y hasta pena de muerte para el aduanero que ayudara al contrabando.",
+    0.6
+   ],
+   [
+    "[serious] [weary] Casi nunca se aplicaban: los acusados se libraban con sobornos y testigos falsos.",
+    1.5
+   ]
+  ],
+  "s06": [
+   [
+    "[calm] [teacher] Así, el Perú independiente nació con dos deudas.",
+    0.6
+   ],
+   [
+    "[calm] Una con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron y no pagaron.",
+    0.6
+   ],
+   [
+    "[calm] Otra con los acreedores de Londres.",
+    1.0
+   ],
+   [
+    "[serious] [low voice] Durante más de veinte años, el Estado casi no pagó ninguna de las dos.",
+    1.5
+   ],
+   [
+    "[calm] [warm] Hasta que encontró con qué pagar: el guano de unas islas.",
+    2.5
+   ],
+   [
+    "[calm] Próximo episodio: la deuda defraudada.",
+    0.8
+   ]
+  ]
+ }
+}

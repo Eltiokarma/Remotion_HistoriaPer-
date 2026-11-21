@@ -1,0 +1,312 @@
+{
+ "s00": {
+  "duracion": 44.87,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 2.61,
+    "texto": "Londres, octubre de mil ochocientos veintidós."
+   },
+   {
+    "desde": 2.96,
+    "hasta": 11.03,
+    "texto": "Se firma el primer préstamo extranjero del Perú, negociado por dos enviados de su gobierno: un millón doscientas mil libras esterlinas."
+   },
+   {
+    "desde": 11.83,
+    "hasta": 17.99,
+    "texto": "El procurador general de Londres opinó que ese contrato era nulo en la práctica, por usura."
+   },
+   {
+    "desde": 18.59,
+    "hasta": 22.82,
+    "texto": "De cada cien libras contratadas, solo se adelantaban setenta y cinco."
+   },
+   {
+    "desde": 23.82,
+    "hasta": 29.59,
+    "texto": "Con un segundo préstamo, la deuda llegó a cerca de un millón ochocientas mil libras."
+   },
+   {
+    "desde": 30.19,
+    "hasta": 34.8,
+    "texto": "Descontadas las comisiones y los intereses, el Perú recibió apenas la mitad."
+   },
+   {
+    "desde": 35.6,
+    "hasta": 37.91,
+    "texto": "Casi de inmediato, dejó de pagar."
+   },
+   {
+    "desde": 39.41,
+    "hasta": 42.87,
+    "texto": "¿Cómo nace así un país que acaba de liberarse?"
+   }
+  ]
+ },
+ "s01": {
+  "duracion": 36.34,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 6.45,
+    "texto": "En el episodio anterior dijimos que la corrupción viene desde la colonia, y la deuda también."
+   },
+   {
+    "desde": 7.25,
+    "hasta": 14.18,
+    "texto": "Según Quiroz, el Perú independiente heredó más de catorce millones de pesos de deuda colonial con acreedores locales."
+   },
+   {
+    "desde": 15.18,
+    "hasta": 21.33,
+    "texto": "A eso se sumaron las deudas de los primeros gobiernos, que pagaban la guerra como emergencia."
+   },
+   {
+    "desde": 21.93,
+    "hasta": 29.62,
+    "texto": "Entre esos reclamos había sueldos de empleados sin pagar, proveedores y propietarios a los que les habían quitado sus bienes."
+   },
+   {
+    "desde": 30.22,
+    "hasta": 34.84,
+    "texto": "Con otros pagos atrasados, sumaban cerca de siete millones de pesos más."
+   }
+  ]
+ },
+ "s02": {
+  "duracion": 54.87,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 6.45,
+    "texto": "Sin dinero para la guerra, los jefes que pelearon por la independencia abusaron de las expropiaciones."
+   },
+   {
+    "desde": 7.05,
+    "hasta": 15.52,
+    "texto": "Entre mil ochocientos veintiuno y mil ochocientos veintidós, San Martín y su ministro Bernardo Monteagudo expropiaron a los grandes comerciantes de Lima."
+   },
+   {
+    "desde": 16.32,
+    "hasta": 23.62,
+    "texto": "Algunos limeños, indignados, acusaron a Monteagudo de sacar los tesoros de las iglesias para pagar espías y obras inútiles."
+   },
+   {
+    "desde": 24.62,
+    "hasta": 31.93,
+    "texto": "Las haciendas y casas confiscadas a españoles y criollos realistas se valoraron en cerca de dos millones de pesos."
+   },
+   {
+    "desde": 32.53,
+    "hasta": 37.15,
+    "texto": "Como eran difíciles de vender, casi no le dejaron dinero al Estado."
+   },
+   {
+    "desde": 37.95,
+    "hasta": 46.41,
+    "texto": "La mayor parte terminó en manos de oficiales que pedían una recompensa por la guerra, y entre ellos estaba José Rufino Echenique."
+   },
+   {
+    "desde": 47.91,
+    "hasta": 50.6,
+    "texto": "Quiroz tiene un nombre para todo esto."
+   },
+   {
+    "desde": 51.6,
+    "hasta": 52.37,
+    "texto": "Saqueo patriota."
+   }
+  ]
+ },
+ "s03": {
+  "duracion": 64.08,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 4.15,
+    "texto": "Cuando Simón Bolívar tomó el mando, siguió el mismo camino."
+   },
+   {
+    "desde": 4.75,
+    "hasta": 13.59,
+    "texto": "En mil ochocientos veinticuatro y mil ochocientos veinticinco decretó confiscar los bienes de quienes se habían refugiado con los españoles en el Callao."
+   },
+   {
+    "desde": 14.39,
+    "hasta": 19.78,
+    "texto": "También ordenó tomar los adornos de plata de las iglesias para mantener al ejército."
+   },
+   {
+    "desde": 20.78,
+    "hasta": 29.62,
+    "texto": "En mil ochocientos veintiséis, con el Estado sin dinero y endeudado, el Congreso recompensó a Bolívar con más de un millón de pesos."
+   },
+   {
+    "desde": 31.12,
+    "hasta": 41.51,
+    "texto": "Ya en mil ochocientos veinticuatro, el cónsul de Estados Unidos había escrito que los que vinieron a proclamar la libertad eran crueles, rapaces, sin principios e incapaces."
+   },
+   {
+    "desde": 42.51,
+    "hasta": 51.74,
+    "texto": "Adentro, el Estado también obligaba a los comerciantes a prestarle dinero y después no les pagaba, así que perdió su crédito en el país."
+   },
+   {
+    "desde": 53.24,
+    "hasta": 62.08,
+    "texto": "Para Quiroz, ahí empezó una costumbre: tapar el saqueo con más deuda pública, una deuda que la gente común terminaría pagando más cara."
+   }
+  ]
+ },
+ "s04": {
+  "duracion": 99.05,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 6.45,
+    "texto": "Ya desde mil ochocientos veintidós, sin crédito adentro, el Estado había salido a pedir prestado afuera."
+   },
+   {
+    "desde": 7.05,
+    "hasta": 12.82,
+    "texto": "En esos años, Londres también les prestaba a Nueva Granada, a Chile y a México."
+   },
+   {
+    "desde": 13.82,
+    "hasta": 21.52,
+    "texto": "El primer préstamo lo negociaron dos amigos de San Martín, Juan García del Río y el médico británico James Paroissien."
+   },
+   {
+    "desde": 22.32,
+    "hasta": 29.62,
+    "texto": "Mientras negociaba con el banquero Thomas Kinder en nombre del Perú, Paroissien hacía negocios privados con el mismo Kinder."
+   },
+   {
+    "desde": 30.62,
+    "hasta": 38.32,
+    "texto": "A Paroissien, San Martín ya lo había premiado con el grado de general y con parte de una hacienda confiscada."
+   },
+   {
+    "desde": 39.52,
+    "hasta": 45.67,
+    "texto": "El Congreso aprobó el préstamo en mil ochocientos veintitrés, con José de la Riva-Agüero como presidente."
+   },
+   {
+    "desde": 46.27,
+    "hasta": 53.58,
+    "texto": "A Riva-Agüero lo acusaron de presionar al Congreso para quedarse, con sus socios, con cien mil pesos del préstamo."
+   },
+   {
+    "desde": 54.58,
+    "hasta": 60.35,
+    "texto": "En enero de mil ochocientos veinticinco se contrató un segundo préstamo, otra vez con Kinder."
+   },
+   {
+    "desde": 60.95,
+    "hasta": 65.95,
+    "texto": "Bolívar esperaba ese dinero, y una parte era para comprar veinticinco mil fusiles."
+   },
+   {
+    "desde": 67.15,
+    "hasta": 75.22,
+    "texto": "De todo lo prestado, al Perú llegó la mitad: el resto se fue en comisiones, gastos e intereses cobrados por adelantado."
+   },
+   {
+    "desde": 76.22,
+    "hasta": 83.53,
+    "texto": "Según Quiroz, lo poco que llegó se malgastó además en pagos exagerados a los oficiales del ejército de Bolívar."
+   },
+   {
+    "desde": 84.53,
+    "hasta": 89.15,
+    "texto": "A fines de mil ochocientos veinticinco, la bolsa de Londres se desplomó."
+   },
+   {
+    "desde": 89.75,
+    "hasta": 97.05,
+    "texto": "El Perú dejó de pagar, y nadie volvió a prestarle hasta fines de la década de mil ochocientos cuarenta."
+   }
+  ]
+ },
+ "s05": {
+  "duracion": 58.54,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 3.38,
+    "texto": "La riqueza también salía del país por mar."
+   },
+   {
+    "desde": 3.98,
+    "hasta": 13.21,
+    "texto": "El cónsul británico en Lima reportó lo que sacaron del Perú los barcos de guerra británicos entre mil ochocientos diecinueve y mil ochocientos veinticinco."
+   },
+   {
+    "desde": 13.81,
+    "hasta": 17.27,
+    "texto": "Eran veintisiete millones de dólares en plata y oro."
+   },
+   {
+    "desde": 18.27,
+    "hasta": 27.12,
+    "texto": "Según Quiroz, la plata salía muchas veces de contrabando, en barcos de guerra británicos y de otros países, sin pagar derechos de aduana."
+   },
+   {
+    "desde": 27.92,
+    "hasta": 34.07,
+    "texto": "A fines de la década de mil ochocientos veinte, el prefecto de Arequipa protegía el contrabando."
+   },
+   {
+    "desde": 34.67,
+    "hasta": 43.9,
+    "texto": "Era el general Antonio Gutiérrez de la Fuente, y según Quiroz desvió fondos públicos hasta juntar una fortuna de al menos doscientos mil pesos."
+   },
+   {
+    "desde": 44.9,
+    "hasta": 51.44,
+    "texto": "Había reglas contra la corrupción, y hasta pena de muerte para el aduanero que ayudara al contrabando."
+   },
+   {
+    "desde": 52.04,
+    "hasta": 57.04,
+    "texto": "Casi nunca se aplicaban: los acusados se libraban con sobornos y testigos falsos."
+   }
+  ]
+ },
+ "s06": {
+  "duracion": 31.92,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 3.38,
+    "texto": "Así, el Perú independiente nació con dos deudas."
+   },
+   {
+    "desde": 3.98,
+    "hasta": 11.67,
+    "texto": "Una con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron y no pagaron."
+   },
+   {
+    "desde": 12.27,
+    "hasta": 14.58,
+    "texto": "Otra con los acreedores de Londres."
+   },
+   {
+    "desde": 15.58,
+    "hasta": 20.96,
+    "texto": "Durante más de veinte años, el Estado casi no pagó ninguna de las dos."
+   },
+   {
+    "desde": 22.46,
+    "hasta": 26.69,
+    "texto": "Hasta que encontró con qué pagar: el guano de unas islas."
+   },
+   {
+    "desde": 29.19,
+    "hasta": 31.12,
+    "texto": "Próximo episodio: la deuda defraudada."
+   }
+  ]
+ }
+}

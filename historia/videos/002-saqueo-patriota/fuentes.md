@@ -1,0 +1,52 @@
+# Fuentes del 0·2 · Saqueo patriota
+
+## Q · Alfonso W. Quiroz
+
+*Historia de la corrupción en el Perú*, Lima, IEP / IDL, 2013. Cap. 2, «Cimientos socavados de la temprana república, 1821-1859», pp. 130–144 (secciones «Saqueo patriota» y «Turbios préstamos externos»). Cotejo contra la reproducción de la primera edición (aelatina.org, PDF): página impresa = página del PDF + 1. El guion cita la página exacta de cada dato en su campo **Fuente**. El Escribano lo cotejó el 21 de noviembre de 2026 (acta al final de `guion.md`).
+
+## Conversión aproximada a soles de hoy (21 de noviembre de 2026)
+
+Pedido de Gerson: toda cifra en libras esterlinas, y también las grandes cifras en pesos, con su equivalente en soles de hoy y la nota «* conversión aproximada». Es el mismo criterio del 0·3 (`../003-la-deuda-defraudada/fuentes.md`).
+
+**Libras esterlinas.** Se pasa la libra de la época a libras de hoy con el índice de precios del Reino Unido (serie compuesta de la ONS) y después a soles.
+
+- **Libras de la época a libras de hoy:**
+  - £1 de 1822 equivale a unas £164,92 de hoy.
+  - £1 de 1825 equivale a unas £121,31 de hoy.
+  - Fuentes: [in2013dollars, Reino Unido, 1822](https://www.in2013dollars.com/uk/inflation/1822) y [officialdata, Reino Unido, 1825](https://officialdata.org/uk/inflation/1825?amount=1).
+- **Libras de hoy a soles:** 1 libra ≈ 4,55 soles. Es una cotización interbancaria indicativa ([currency.wiki](https://currency.wiki/es/gbp-pen)). Antes de publicar se confirma con el BCRP.
+- **Resultado:**
+  - £1 de 1822 ≈ 750 soles de hoy.
+  - £1 de 1825 ≈ 552 soles de hoy.
+
+| Monto | Año | En soles de hoy |
+|---|---|---|
+| 1 200 000 libras (primer préstamo) | 1822 | ≈ 900 millones |
+| 100 libras (la fila de la usura) | 1822 | ≈ 75 000 |
+| 616 000 libras (segundo préstamo) | 1825 | ≈ 340 millones |
+| 1 816 000 libras (los dos) | 1822 y 1825 | ≈ 1240 millones (suma de los dos) |
+| 40 000 libras (los fusiles) | 1825 | ≈ 22 millones |
+
+**Pesos.** Se toma 1 peso = 1 dólar de EE. UU. (Q, p. 546, nota del cuadro A.3; Quiroz la da para el siglo XIX). Después se aplica el índice de precios de EE. UU.: $1 de 1825 equivale a unos $33,7 de hoy ([officialdata, 1825](https://www.officialdata.org/us/inflation/1825?amount=1)). Con 3,41 soles por dólar (BCRP, 17 de noviembre de 2026), resulta 1 peso de la década de 1820 ≈ 115 soles de hoy.
+
+| Monto | En soles de hoy |
+|---|---|
+| más de 14 millones de pesos (deuda colonial heredada) | ≈ 1600 millones |
+| ≈ 7 millones de pesos (deudas de la guerra) | ≈ 800 millones |
+| ≈ 2 millones de pesos (propiedades confiscadas) | ≈ 230 millones |
+| más de 1 millón de pesos (Congreso a Bolívar, 1826) | ≈ 115 millones |
+| 100 000 pesos (Riva-Agüero) | ≈ 11 millones |
+| 200 000 pesos (Gutiérrez de la Fuente) | ≈ 23 millones |
+| 27 millones de dólares en plata y oro (1819–1825) | ≈ 3100 millones |
+
+**Límites.**
+
+- Son índices de precios al consumidor del Reino Unido y de EE. UU., no del Perú.
+- Para antes de 1913 no hay una serie oficial única, y las calculadoras difieren en un 10 a 15 %.
+- Miden poder de compra. Medidas como parte de la economía de la época, esas sumas pesarían mucho más.
+- Por la libra y el peso no se llega al mismo número: 1 libra de 1822 ≈ 4,4 pesos, que por la vía del dólar darían unos 500 soles y no 750. Por eso cada moneda se convierte con el índice de su propio país, y todo va con asterisco.
+- [VERIFICAR] Que 1 peso = 1 dólar valga también para la década de 1820. Quiroz da la equivalencia para el siglo XIX en su apéndice.
+
+## Retratos (por buscar)
+
+Medallones para San Martín, Monteagudo, Sucre, O'Higgins, Bolívar, García del Río, Paroissien, Riva-Agüero y Gutiérrez de la Fuente: retratos de época en Wikimedia Commons, con licencia por verificar. Echenique ya tiene medallón (en la galería del 0·3). Kinder y Tudor van en silueta.
