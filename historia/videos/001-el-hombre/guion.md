@@ -1,8 +1,8 @@
 # VIDEO 0·1 — El hombre que le sacó la cuenta al Perú
 
-**Serie:** Historia de la corrupción en el Perú (basada en Alfonso W. Quiroz, IEP/IDL, 2013) · episodio 1 de 5 del arco de presentación
+**Serie:** Historia de la corrupción en el Perú (basada en Alfonso W. Quiroz, IEP/IDL, 2013) · episodio 1 de 6 del arco de presentación
 **Formato:** 100 % Remotion, sin metraje ni fotos · 1920×1080 · 30 fps
-**Pregunta central:** ¿Qué encontró, para que valiera la pena? (este episodio responde quién era y cómo aprendió a buscar; lo que encontró llega en 0·3, 0·4 y 0·5)
+**Pregunta central:** ¿Qué encontró, para que valiera la pena? (este episodio responde quién era y cómo aprendió a buscar; lo que encontró llega del 0·2 al 0·6)
 **Palabra del episodio:** *la larga duración* (en francés, *la longue durée*: Braudel, 1958)
 **Duración estimada:** ~6 min 25 s (con el gancho)
 **Plan de los cuatro episodios:** `videos/000-quiroz/diagnostico.md`, §4
@@ -82,7 +82,7 @@ Marcos Cueto, historiador y amigo suyo desde los quince años, cuenta que esa di
 **Visual (Remotion):**
 - Primero el nombre y los años, sobre papel: **ALFONSO W. QUIROZ NORRIS**, `1956 — 2013`. Sin piscina todavía.
 - La piscina recién con «nadador»: el agua cubre la página y los carriles avanzan.
-- Con «Marcos Cueto»: su ficha a máquina, `MARCOS CUETO · PRÓLOGO` (el cierre del arco, en 0·5, depende de que lo conozcamos aquí).
+- Con «Marcos Cueto»: su ficha a máquina, `MARCOS CUETO · PRÓLOGO` (el cierre del arco, en 0·6, depende de que lo conozcamos aquí).
 - Con «los archivos»: los carriles se frenan y se vuelven renglones de un libro de contabilidad.
 - Con «inagotable»: la palabra, en cursiva y entre comillas, bajo la ficha de Cueto, como cita suya (no a pantalla completa).
 
@@ -191,6 +191,6 @@ Ahí estaba el guano. Y una deuda que el Estado decidió pagar con esa plata, en
 [PAUSA 2,5s] Próximo episodio: La deuda defraudada.
 
 **Visual (Remotion):**
-- Vuelven las pruebas de imprenta del comienzo y se cierran (sin limpiarse: eso queda para el final del arco, en 0·5), en un silencio de 2 s.
+- Vuelven las pruebas de imprenta del comienzo y se cierran (sin limpiarse: eso queda para el final del arco, en 0·6), en un silencio de 2 s.
 - Fundido a negro. Tarjeta: **PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA**.
 - **Sonido:** el tema del canal entra solo, con el negro.

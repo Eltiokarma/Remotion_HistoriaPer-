@@ -1,4 +1,4 @@
-# Expediente de hechos — 0·4 «¿Se puede medir la corrupción?»
+# Expediente de hechos — 0·5 «¿Se puede medir la corrupción?»
 
 Fuente única: Alfonso W. Quiroz, *Historia de la corrupción en el Perú*, IEP/IDL, 2013 (texto extraído,
 `scratchpad/all.txt`). Páginas = **libro impreso** (el número que encabeza cada página en el texto;
@@ -19,11 +19,11 @@ Internacional, percepción.
 - 0·1, ESC 5: «Sus cálculos eran provisionales: él mismo los dejó abiertos a revisión.»
 - 0·3, ESC 5: «mucha corrupción se hace para no dejar papeles. Quiroz quiso sacar una cuenta más
   grande […] y para eso tenía que medir lo que escondían»; fuente pp. 535–536 y 538.
-- `000-quiroz/diagnostico.md` §4: el plan reparte el contenido: **0·4** = definición, siete objeciones,
-  «grava, no aceite», «el historiador no es juez», umbral «se puede medir»; **0·5 «La cuenta»** = por qué
+- `000-quiroz/diagnostico.md` §4: el plan reparte el contenido: **0·5** = definición, siete objeciones,
+  «grava, no aceite», «el historiador no es juez», umbral «se puede medir»; **0·6 «La cuenta»** = por qué
   en porcentajes, 30–40 % / 3–4 %, niveles por década, 40–50 %, Echenique vs. Fujimori, Meiggs.
-  El encargo actual («el 0·4 responde con el método») invade parte de 0·5: hay que decidir el corte.
-  Abajo va todo; marco con **[0·5]** lo que el plan asignaba a 0·5.
+  El encargo actual («el 0·5 responde con el método») invade parte de 0·6: hay que decidir el corte.
+  Abajo va todo; marco con **[0·6]** lo que el plan asignaba a 0·6.
 
 ---
 
@@ -189,7 +189,7 @@ primer cálculo es cuantitativo, en tanto que el segundo es principalmente cuali
 **Paso 1 — Dividir entre dos bases (p. 535):** medir los costos «como porcentaje del gasto gubernamental
 total y el producto bruto interno (PBI), respectivamente». Las series de PBI y gasto 1820–2000 existen
 «mediante proyecciones y extrapolaciones» (p. 538). «Podemos, así, clasificar décadas y gobiernos como
-periodos de corrupción alta, media o baja» (p. 539). Por qué las dos bases [0·5] (p. 547): «Aunque los
+periodos de corrupción alta, media o baja» (p. 539). Por qué las dos bases [0·6] (p. 547): «Aunque los
 costos estimados reales más altos de la corrupción correspondieron a las décadas de 1860 y 1870, el mayor
 gasto gubernamental y la producción en estas décadas contribuyeron a que se dieran unos niveles
 relativamente más bajos de corrupción.»
@@ -554,9 +554,9 @@ costos institucionales no cuantificables de la corrupción también fueron enorm
 
 1. **La grava, no el aceite** (pp. 536–537). La imagen del método.
 2. **El soborno lo paga la obra** (p. 545): Meiggs, ~10 % del costo; «los contratistas sumaban el monto
-   pagado por ellos al costo final de la operación, con lo que desplazaban su costo real al público». [0·5]
+   pagado por ellos al costo final de la operación, con lo que desplazaban su costo real al público». [0·6]
 3. **Más plata robada no es más corrupción** (p. 547): 1870s, 108 millones (el récord del XIX) pero
-   20 % del gasto; 1820s, 27 millones y 135 %. [0·5]
+   20 % del gasto; 1820s, 27 millones y 135 %. [0·6]
 4. **Más que el presupuesto entero**: 1820–1829, 135 % del gasto (p. 548); 1821–1829, 139 % (A.7). Se
    explica porque cuenta la inversión que no llegó.
 5. **Los primeros préstamos**: de 1.816.000 libras, «el gobierno peruano solamente recibió el 50 por
@@ -588,7 +588,7 @@ costos institucionales no cuantificables de la corrupción también fueron enorm
   «equivalente a» (p. 532) un porcentaje del gasto; el costo incluye lo indirecto (inversión perdida,
   contrabando) que nunca estuvo en el presupuesto, por eso puede pasar de 100 %. Decir «se fueron del
   presupuesto» es más fuerte que el libro. Sugerencia: «la corrupción costó el equivalente a entre tres y
-  cuatro de cada diez soles del presupuesto». Para 0·4 es la ocasión de corregirlo con naturalidad.
+  cuatro de cada diez soles del presupuesto». Para 0·5 es la ocasión de corregirlo con naturalidad.
 - **H2. No hay cifras año por año** ni intervalos de error: solo promedios por década o gobierno. No se
   puede decir «en 1853 la corrupción fue X %».
 - **H3. No se puede rehacer cada celda.** Las fuentes de A.3–A.7 van en bloque («las mismas que en el

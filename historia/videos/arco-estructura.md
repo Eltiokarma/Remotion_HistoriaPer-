@@ -11,7 +11,7 @@
 
 Todo tiene que poder entenderse, y verse con gusto.
 
-**Orden del arco.** Hay que decidir si el 0·3 se parte en dos:
+**Orden del arco.** Gerson decidió el 21 de noviembre de 2026 partir el 0·3 en dos:
 
 | Ep. | Título | Periodo | Termina en | Pregunta que deja |
 |---|---|---|---|---|
@@ -22,7 +22,7 @@ Todo tiene que poder entenderse, y verse con gusto.
 | 0·5 | ¿Se puede medir la corrupción? | el método | sí se puede | ¿cuánto da? |
 | 0·6 | La cuenta | 1820–2000 | el primer capítulo | Huancavelica, 1758 |
 
-Si no se parte, el 0·3 dura 15–16 min, *¿Se puede medir?* queda en 0·4 y *La cuenta* en 0·5. El Escribano y el Escribidor recomiendan partirlo (ver el 0·3).
+Así lo recomendaron el Escribano y el Escribidor: entero, el 0·3 duraba 15–16 min.
 
 **Monedas en todo el arco:** una libra esterlina equivale a unos 5 pesos (Q, p. 165), y Quiroz toma 1 peso igual a 1 dólar para todo el siglo XIX (cuadro A.3, p. 546). Se presentan en el 0·2 y no se vuelven a explicar.
 
@@ -38,7 +38,7 @@ Si no se parte, el 0·3 dura 15–16 min, *¿Se puede medir?* queda en 0·4 y *L
 **Expedientes** (citas textuales con página):
 - `002-saqueo-patriota/diseno/expediente.md`;
 - `003-la-deuda-defraudada/diseno/expediente.md`;
-- `000-quiroz/diseno/expediente-0-4.md`.
+- `000-quiroz/diseno/expediente-medir.md`.
 
 **Hilos que cruzan el arco** (se siembran en un episodio y se cosechan en otro):
 
@@ -534,11 +534,17 @@ Es la parte B del 0·3 de la versión 1.
 
 ---
 
-## Decisiones que esperan a Gerson
+## Decisiones
 
-1. **Partir el 0·3 en *La deuda defraudada* y *El lavado*.** Con eso se renumera el arco hasta *La cuenta* (0·6), y hay que cambiar el roadmap, las carpetas y el 0·1. El animatic de la escena 4 que ya está hecho (A8) queda repartido: 4.1–4.2 y *los consolidados* van al 0·3, y 4.3 (Londres y el canje) va al 0·4.
-2. **El grabado de Torrico de 1855** (fig. 3, BNP): hay que verificar su licencia.
-3. **La frase del 0·1** sobre «de cada diez soles».
+**Tomadas por Gerson el 21 de noviembre de 2026:**
+1. **Se parte el 0·3** en *La deuda defraudada* (0·3) y *El lavado* (0·4).
+   - El arco queda renumerado hasta *La cuenta* (0·6), en el README, el `diagnostico.md`, el 0·1 y la ficha del libro.
+   - El expediente del método se llama ahora `expediente-medir.md`.
+   - La carpeta `004-el-lavado` se crea cuando se escriba su voz.
+   - El animatic de la escena 4 que ya está hecho (A8) queda repartido: 4.1–4.2 y *los consolidados* van al 0·3, y 4.3 (Londres y el canje) va al 0·4.
+2. **Va el grabado de Torrico de 1855** («Gratitud de los gallinazos»). Es de dominio público por antigüedad y está registrado en `003-la-deuda-defraudada/fuentes.md`, junto con el de *La Zamacueca Política* de 1859 (Gibbs y Montané), que sirve para los adelantos.
+
+**Pendiente:** la frase del 0·1 sobre «de cada diez soles».
 
 ---
 
