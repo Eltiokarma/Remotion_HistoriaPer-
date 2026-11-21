@@ -202,3 +202,102 @@ Los expedientes completos, con las citas textuales, están en el scratchpad de l
 - **0·3 · La deuda defraudada** (ESC 0–6 y 13 corta): cómo se infló la deuda adentro; termina en *los consolidados*. Unos 9 min.
 - **0·4 · El lavado** (ESC 7–12): Londres, la conversión, la denuncia, la manumisión, la tabla rasa y los que volvieron. Unos 9 min. Termina con «¿Se puede medir?».
 - *¿Se puede medir la corrupción?* pasaría a ser el 0·5.
+
+---
+
+## 0·4 · ¿Se puede medir la corrupción?
+
+Si el 0·3 se parte en dos, este episodio pasa a ser el 0·5, y *La cuenta* el 0·6. El orden y el contenido no cambian.
+
+**Pregunta central:** ¿se puede medir algo que se hace para no dejar rastro?
+**Palabra del episodio:** *grava* (p. 537): la corrupción no aceita la maquinaria del Estado, la traba. Es una palabra que se ve.
+**Hilo:** viene del final del 0·3 («este caso dejó papeles; mucha corrupción no»). Termina en el umbral: sí se puede, y la cuenta queda para *La cuenta* (plan de `000-quiroz/diagnostico.md` §4).
+**Fuente:** el expediente completo está en el scratchpad (`expediente-04.md`). Q es la introducción, pp. 37–57, y el apéndice, pp. 535–554.
+
+| # | Escena | Responde | Cambio |
+|---|---|---|---|
+| 0 | Gancho | — | de «la corrupción no se puede contar» a «alguien la contó, década por década» |
+| 1 | Qué es corrupción | la definición | de «robar» a «usar el poder público para unos pocos, contra el desarrollo» |
+| 2 | Las objeciones | ¿se puede estudiar? | de «no deja papeles» a «deja más papeles de los que se cree» |
+| 3 | Lo que no sirve | ¿cómo no se mide? | de «miremos lo que la gente cree» a «la percepción sube y baja con los escándalos» |
+| 4 | Lo que sí sirve | ¿cómo se mide? | de «es imposible» a «se cuenta la plata desviada, con reglas fijas» |
+| 5 | Grava, no aceite | ¿para qué sirve medirla? | de «la coima ayuda a que las cosas funcionen» a «la coima traba» |
+| 6 | El historiador no es juez | sus límites | de «sin condena no hay delito» a «la historia trabaja con probabilidades» |
+| 7 | Umbral | → *La cuenta* | de «¿se puede?» a «sí: ¿cuánto da?» |
+
+### ESC 0 · Gancho (≈ 30 s)
+- **Hechos:** el puente del 0·3 (los expedientes de 1855) y la frase del apéndice: las transacciones corruptas son «típicamente encubiertas y se ejecutan precisamente para evitar dejar huellas» (p. 538).
+- **Pregunta:** si se hace para no dejar huellas, ¿cómo se mide?
+- **Dato que engancha sin adelantar la cuenta:** Quiroz midió década por década, de 1820 a 2000, y no encontró ninguna de corrupción baja (p. 554). La cifra queda para *La cuenta*.
+- **→ PERO** antes de medir, hay que decir qué se mide.
+
+### ESC 1 · Qué es corrupción (≈ 60 s)
+- **Hechos:**
+  - La definición de la p. 38, dicha por partes: quiénes (camarillas de funcionarios con intereses privados), qué hacen (desvían recursos y distorsionan reglas) y contra qué (el desarrollo).
+  - No es solo el «tosco saqueo»: también sobornos, malversación, fraude electoral y financiamiento ilegal de partidos (pp. 38–39).
+  - Tres apellidos: administrativa, política y sistemática (p. 54). La sistemática es la que aparece cuando las reglas que protegen al desarrollo «son inexistentes, están distorsionadas o se muestran inestables» (p. 45).
+  - Ejemplo de vuelta: la consolidación tuvo las tres (0·3).
+- **→ PERO** muchos decían que eso no se podía estudiar.
+
+### ESC 2 · Las objeciones (≈ 100 s)
+- **Hechos:** las objeciones en el orden del libro (pp. 40–45), una por párrafo, cada una con su respuesta, su ejemplo y su pausa (diagnóstico §7·4):
+  1. «Es clandestina»: hay pesquisas, juicios de residencia, investigaciones parlamentarias, cartas y diarios, y los informes diplomáticos sirven para contrastar (p. 41). El 0·3 es la prueba.
+  2. «Solo se conoce por lo que la gente percibe»: las percepciones son «altamente impresionables y frecuentemente manipuladas» (p. 42).
+  3. «Es anacrónico juzgar el pasado con palabras de hoy»: corruptela, cohecho y prevaricato ya estaban en los diccionarios de 1729 y 1737 (p. 43).
+  4. «Es cultural, y es útil»: va con el aceite de la ESC 5.
+  - El resto de las siete se toma de las pp. 40–45 al escribir la voz.
+- **Imagen:** el tablero de tarjetas que se voltean (s07 del 000), con la respuesta a la vista en cada pausa.
+- **→ POR ESO** hay que elegir con qué medir.
+
+### ESC 3 · Lo que no sirve (≈ 50 s)
+- **Hechos:**
+  - El índice de percepción de Transparencia Internacional cambia con «la cobertura de los medios, los escándalos y la política», y no sirve para comparar épocas (p. 537).
+  - Contar palabras en los periódicos no sirve cuando la prensa estuvo censurada (p. 537).
+  - Después de la gran reforma del 2000, la percepción siguió alta aunque los escándalos eran «menos graves» (pp. 521–522). Es la prueba de que percepción y corrupción no son lo mismo.
+  - Hay dos ciclos: el percibido, «más volátil», y el sistémico, «más orgánico» (p. 48).
+- **Imagen:** las capas de Braudel del 0·1. El escándalo va arriba y rápido; la corrupción sistémica, abajo y lenta.
+- **→ PERO** sí había otra forma.
+
+### ESC 4 · Lo que sí sirve (≈ 100 s)
+- **Hechos:**
+  - Contar los fondos desviados, con «el debido cuidado en el uso de las fuentes» (p. 538).
+  - Dos tipos de costo: el desviado, directo e indirecto, y el institucional, «principalmente cualitativo» (p. 535).
+  - Lo indirecto es la inversión que no llegó, y pesa (pp. 538, 545).
+  - Calibra con dos décadas bien documentadas: la de 1850, que es la del 0·3, y la de 1990 (cuadros A.1 y A.2). El 0·3 entra en la cuenta.
+  - Cinco rubros con reglas fijas: deuda, caudillos y militares, sobornos en contratos, contrabando e inversión perdida (pp. 543–545).
+  - Por qué se mide en porcentajes del gasto y del PBI, y no en montos: los años 1870 tienen el monto más alto del siglo, pero el porcentaje más bajo (pp. 238 y 546–548). Si *La cuenta* lo usa, aquí solo se anuncia.
+  - Cautela: es un «cálculo provisional sujeto a revisiones» (p. 535).
+- **Imagen:** la pila de vales del 0·3 entra a la balanza del método.
+- **→ POR ESO** se puede decir qué hace la corrupción.
+
+### ESC 5 · Grava, no aceite (≈ 60 s)
+- **Hechos:**
+  - La excusa de que «los sistemas políticos premodernos realmente necesitan la corrupción como un lubricante» (p. 43).
+  - La respuesta: más corrupción corresponde a menos inversión y crecimiento (p. 536), y la corrupción actúa «como "grava" en la maquinaria» (pp. 536–537).
+  - No es cultura, son reglas (p. 45).
+- **Palabra del episodio**, quieta, con el engranaje que se traba.
+- **→ PERO** medir no es condenar.
+
+### ESC 6 · El historiador no es juez (≈ 40 s)
+- **Hechos:** la prueba histórica «corresponde más al ámbito de la probabilidad que de la certeza absoluta. La falta de sentencias condenatorias no implica que no haya habido corrupción» (p. 43).
+- **Ejemplo:** los del 0·3 que huyeron y volvieron sin condena.
+- **→ POR ESO** la pregunta que queda es cuánto.
+
+### ESC 7 · Umbral (≈ 30 s)
+- Sí se puede medir. ¿Cuánto da? → *La cuenta*.
+- **Corrección pendiente en el 0·1** (`expediente-04` §8·H1): «de cada diez soles, se fueron entre tres y cuatro» dice más que el libro. Quiroz habla de un costo «equivalente a» ese porcentaje, que incluye la inversión que nunca estuvo en el presupuesto. Propuesta: «costó el equivalente a tres o cuatro de cada diez soles que gastaba el Estado».
+
+**Duración estimada:** unos 8 minutos.
+
+---
+
+## 0·1 · El final (solo el puente)
+
+**Hoy:** la ESC 6 lleva del guano a «una deuda que el Estado decidió pagar con esa plata, en 1850», y la tarjeta dice `PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA`.
+
+**Propuesta:** la escena se queda igual hasta «¿Adónde fue a parar esa plata?» y suma una pregunta que abre el 0·2:
+> «Pero esa deuda no nació en mil ochocientos cincuenta. Venía de mucho antes: del día en que el país se independizó.» [Falta la fuente exacta en el 0·2: la deuda «se arrastraba desde la guerra de independencia, y a veces desde la colonia» (Q, prólogo, pp. 17–18; p. 170).]
+
+**Tarjeta:** `PRÓXIMO · 1821 · SAQUEO PATRIOTA`.
+
+**También:** la cifra de la ESC 0 del 0·1 («de cada diez soles…»), según la corrección de arriba.
