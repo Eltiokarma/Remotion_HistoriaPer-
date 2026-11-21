@@ -21,9 +21,9 @@ Primero el golpe, después el hombre (DIRECCION_DE_VIDEO §2.5; revisión del di
 preliminares»). Sin «genes» ni «55 %».
 
 **VO:**
-Desde 1820, la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento de todo lo que produce. [PAUSA 0,4s] Cada año. [PAUSA 1s]
+Desde 1820, la corrupción le costó al Perú, en promedio, entre el tres y el cuatro por ciento de todo lo que produce. [PAUSA 1s]
 
-Del presupuesto del Estado, de cada diez soles, se fueron entre tres y cuatro. [PAUSA 1,2s]
+Y le costó, en promedio, el equivalente a tres o cuatro de cada diez soles que gastaba el Estado. [PAUSA 1,2s]
 
 No son casos sueltos: es el sistema, y viene desde la colonia. [PAUSA 1,2s]
 
@@ -32,7 +32,7 @@ Lo calculó un historiador limeño. [PAUSA 0,8s] Y no llegó a ver su libro en e
 **Imagen:**
 - «Desde 1820…»: un contador de años corre de 1820 a 2000; la barra de lo que produce el país,
   en cien partes. En «tres y el cuatro», la tajada se tiñe (3 % rojo lleno, el cuarto rayado) y
-  desde ahí cae una tajada por año y se apila abajo. El contador frena en 2000 antes de «Cada año».
+  desde ahí cae una tajada por año y se apila abajo. El contador frena en 2000 al final de la frase.
 - «De cada diez soles»: diez monedas (genéricas, no reales). En «tres» caen tres; en «cuatro», la
   cuarta se inclina y queda a medias, punteada: la duda del rango. `30–40 %`.
 - «No son casos sueltos»: una regla de 1680 a 2000 con puntos rojos sueltos que parpadean; en «el
@@ -177,7 +177,7 @@ Y sus ideas también se mueven. De aquel joven trotskista pasa a una postura lib
 **VO:**
 Pero su primer caso lo había encontrado en Lima, en 1980, poco antes de irse a Nueva York. [PAUSA 0,6s] Félix Denegri Luna, un estudioso de la historia, dueño de una gran biblioteca en Lima, le sugirió mirar con más cuidado el siglo diecinueve. [PAUSA 1s]
 
-Ahí estaba el guano. Y una deuda que el Estado decidió pagar con esa plata, en 1850. [PAUSA 0,8s] Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. [PAUSA 1s: el monto del vale de arriba sube; «ejemplo ilustrativo»] ¿Adónde fue a parar esa plata?
+Ahí estaba el guano. Y una deuda que el Estado decidió pagar con esa plata, en 1850. [PAUSA 0,8s] Y encontró que se había inflado el valor de la deuda para enriquecerse a costa del Estado. [PAUSA 1s: el monto del vale de arriba sube; «ejemplo ilustrativo»] ¿Adónde fue a parar esa plata? [PAUSA 1s] Esa respuesta llega cuando lleguemos a mil ochocientos cincuenta. [PAUSA 0,5s] Pero en su último libro, Quiroz empieza un siglo antes: en Huancavelica, la única mina importante de mercurio de América, en mil setecientos cincuenta y ocho. [PAUSA 1s] Ahí llega Antonio de Ulloa. Intentó limpiarla. Y perdió. [PAUSA 1,5s]
 
 **Visual (Remotion):** el comienzo de la escena del mecanismo de 000 (`MecanismoDeuda` con `hasta: consolidacion`): el grabado de las islas con su ficha `SIGLO XIX · GUANO`; con «Ahí estaba el guano», los sacos suben al barco; con «el Estado», la flecha de dinero; con «una deuda», los vales se apilan y con «1850» cae un sello rojo `1850`. La pregunta queda sobre la pila sellada, con un acorde que no resuelve.
 
@@ -188,9 +188,25 @@ Ahí estaba el guano. Y una deuda que el Estado decidió pagar con esa plata, en
 ## ESC 7 — Cierre
 
 **VO:**
-[PAUSA 2,5s] Próximo episodio: La deuda defraudada.
+[PAUSA 2,5s] Próximo episodio: La plata y el mercurio.
 
 **Visual (Remotion):**
 - Vuelven las pruebas de imprenta del comienzo y se cierran (sin limpiarse: eso queda para el final del arco, en 0·4 [DEFINIR]), en un silencio de 2 s.
-- Fundido a negro. Tarjeta: **PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA**.
+- Fundido a negro. Tarjeta: **PRÓXIMO · HUANCAVELICA, 1758 · LA PLATA Y EL MERCURIO**.
 - **Sonido:** el tema del canal entra solo, con el negro.
+
+
+## Cambios del 21 de noviembre de 2026 (Prólogo)
+
+Aprobados por Gerson junto con la estructura (`videos/arco-estructura.md`, sección «Prólogo»):
+
+1. **Este video es el Prólogo de la serie** y lleva el nombre del autor. El episodio 1 es la colonia, *La plata y el mercurio*.
+2. **ESC 0, la cifra.**
+   - «Cada año» salía como otra frase después de la cifra, y se oía como si hubiera datos año por año, que no los hay (entre 1900 y 1919 fue cerca del 1 %, cuadro A.6). Se quitó; queda «en promedio».
+   - «De cada diez soles, se fueron entre tres y cuatro» decía más que el libro. Quiroz habla de un costo «equivalente a», que incluye la inversión que nunca llegó al presupuesto (pp. 554 y 532).
+3. **ESC 6, el puente.**
+   - La pregunta del guano se responde en el Ep. 3, y eso se dice.
+   - Se siembran Huancavelica, 1758, y Ulloa, que el Ep. 1 recoge. Fuentes: p. 59 (la única fuente americana importante de mercurio, «un insumo fundamental… para refinar la plata», noviembre de 1758) y pp. 83–84 («y perdió»).
+4. **ESC 7.** Cambian la tarjeta y la voz del próximo episodio.
+
+**Voz:** hay que regenerar las tomas de la ESC 0, la ESC 6 y la ESC 7 cuando se cierren los guiones del arco (CLAUDE §1.1·1). El render actual tiene el texto anterior.
