@@ -1641,6 +1641,34 @@
         "render_s": null,
         "maquina": null
       }
+    },
+    {
+      "id": "e2-arco-estructura",
+      "fase": "e2",
+      "titulo": "Estructura escena por escena del arco de presentación (final del 0·1, 0·2, 0·3 partido en dos, ¿se puede medir?), con expedientes de fuentes y acta del Escribano",
+      "entregable": "historia/videos/arco-estructura.md y los expedientes en 002/diseno, 003/diseno y 000-quiroz/diseno",
+      "estado": "bloqueado",
+      "depende_de": [
+        "e2b-saqueo-guion"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-21",
+        "fin": null
+      },
+      "bloqueo": "Espera la aprobación de Gerson: partir el 0·3 en dos, la estructura de cada episodio y el puente del 0·1. Después se escribe la voz y el Escribano la revisa completa.",
+      "evidencia": [
+        "historia/videos/arco-estructura.md",
+        "historia/videos/003-la-deuda-defraudada/diseno/expediente.md",
+        "historia/videos/002-saqueo-patriota/diseno/expediente.md",
+        "historia/videos/000-quiroz/diseno/expediente-0-4.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
     }
   ]
 }
