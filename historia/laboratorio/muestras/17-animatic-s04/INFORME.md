@@ -125,3 +125,34 @@ Lo que sigue quieto en A7:
 - la palabra del episodio;
 - esperas de 2 a 3 s entre cifras;
 - un tramo de 5,9 s entre el final de 4.3a y la llegada de las casas (86,5–92,4 s), que incluye el respiro de 1 s.
+
+### A8: el párrafo cerrado, con la voz final (21 de noviembre de 2026)
+
+Gerson dio por cerrado el párrafo del bono. A8 usa la voz s04 regenerada (268,8 s, coincide al 100 % con el guion). La parte A ahora dura 156,6 s.
+
+Qué cambió en la imagen:
+
+- **De dónde salía el dinero para pagar.** En el mapa, el guano viaja de las islas a Gran Bretaña con el rótulo «VENTA EN GRAN BRETAÑA · LIBRAS». Una flecha roja lleva la mitad de lo vendido a un bono, con el rótulo «50 % → BONISTAS DE LONDRES (VIZCARRA, P. 26)».
+- **Las fechas.** Arriba del mapa, en este orden: «31 DE ENERO DE 1849 · ARREGLO CON LOS BONISTAS», el decreto de 1842 que nunca se cumplió y la cita de Castilla con su página (Vizcarra, 2011, p. 23). Estos rótulos quedan fuera de la cámara del mapa, para que el acercamiento no los corte. Están alineados a la izquierda para no tapar Londres.
+- **El canje en pantalla.** Con «Para cambiar vales por bonos…», en el Atlántico vacío, un vale (deuda interna) pasa a ser un bono nuevo (deuda externa). En el primer render de A8 ese tramo eran 7,5 s de mapa vacío hasta «Uribarren»; ahora es una imagen que se queda quieta mientras la voz explica.
+- **Lo que se quitó.** Salió de la voz la frase del diplomático de 1855, y con ella el saco y la cita de Clay de 4.3c.
+
+| Versión | Duración | Tiempo quieto | Render |
+|---|---:|---:|---:|
+| A7 | 148,9 s | 52 % | 679,4 s |
+| A8 | 156,6 s | 56 % | 736,1 s |
+
+Por qué el tiempo quieto subió:
+
+- La voz nueva trae más explicación (el impago, el arreglo, la mitad del guano, Castilla) en 7,7 s más.
+- Varias imágenes se dejan quietas a propósito mientras la voz explica: el tablero de 1849, el canje y la palabra del episodio, que son 6,6 s quietos por regla (§1.3).
+
+Tramos quietos de más de 4 s:
+
+| Tramo | Duración | Qué pasa |
+|---|---:|---|
+| 33,3–39,9 s | 6,6 s | «los consolidados» (la palabra del episodio, quieta a propósito) |
+| 76,8–81,9 s | 5,1 s | el mapa de los préstamos mientras la voz dice «usura» (candidato a A9) |
+| 96,9–101,5 s | 4,6 s | el tablero de 1849 con la cita de Castilla, y el respiro |
+| 105,2–109,5 s | 4,3 s | el canje ya armado, mientras se nombra a las casas |
+| 151,8–156,5 s | 4,7 s | el cierre |

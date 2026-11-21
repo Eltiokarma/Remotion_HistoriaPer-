@@ -1583,12 +1583,13 @@
         "historia/videos/003-la-deuda-defraudada/diseno/plan-animatic-s04.md",
         "historia/laboratorio/muestras/17-animatic-s04/README.md",
         "historia/laboratorio/muestras/17-animatic-s04/resultados/render-A.json",
-        "historia/laboratorio/muestras/17-animatic-s04/INFORME.md"
+        "historia/laboratorio/muestras/17-animatic-s04/INFORME.md",
+        "historia/laboratorio/muestras/17-animatic-s04/resultados/render-A8.json"
       ],
       "tiempo": {
         "humano_min": null,
         "agente": null,
-        "render_s": 289.9,
+        "render_s": 736.1,
         "maquina": "contenedor"
       }
     },

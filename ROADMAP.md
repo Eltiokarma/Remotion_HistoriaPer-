@@ -471,8 +471,8 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Entregable: historia/laboratorio/muestras/17-animatic-s04/ y videos/003-la-deuda-defraudada/diseno/plan-animatic-s04.md; MP4 fuera de git
   - Depende de: `e2-animatic-s03`
   - Prevista: — · Real: 2026-11-21 → …
-  - Tiempo: H ¿? · A ¿? · R 289.9 s en contenedor · tokens ¿?
-  - Evidencia: [diseno/plan-animatic-s04.md](historia/videos/003-la-deuda-defraudada/diseno/plan-animatic-s04.md) · [17-animatic-s04/README.md](historia/laboratorio/muestras/17-animatic-s04/README.md) · [resultados/render-A.json](historia/laboratorio/muestras/17-animatic-s04/resultados/render-A.json) · [17-animatic-s04/INFORME.md](historia/laboratorio/muestras/17-animatic-s04/INFORME.md)
+  - Tiempo: H ¿? · A ¿? · R 736.1 s en contenedor · tokens ¿?
+  - Evidencia: [diseno/plan-animatic-s04.md](historia/videos/003-la-deuda-defraudada/diseno/plan-animatic-s04.md) · [17-animatic-s04/README.md](historia/laboratorio/muestras/17-animatic-s04/README.md) · [resultados/render-A.json](historia/laboratorio/muestras/17-animatic-s04/resultados/render-A.json) · [17-animatic-s04/INFORME.md](historia/laboratorio/muestras/17-animatic-s04/INFORME.md) · [resultados/render-A8.json](historia/laboratorio/muestras/17-animatic-s04/resultados/render-A8.json)
 - [ ] **0·2 Saqueo patriota (episodio nuevo, Q pp. 130–144): guion con Escribidor y Escribano; renumeración de la serie (la deuda pasa a 0·3)** `e2b-saqueo-guion` — 🔄 en curso
   - Entregable: historia/videos/002-saqueo-patriota/guion.md
   - Prevista: — · Real: 2026-11-21 → …
