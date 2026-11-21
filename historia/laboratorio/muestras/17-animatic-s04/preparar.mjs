@@ -10,7 +10,7 @@ const salida = path.join(aqui, 'public');
 const copiar = (a, b) => { fs.mkdirSync(path.dirname(b), { recursive: true }); fs.copyFileSync(a, b); };
 
 const galeria = path.join(proyecto, 'public/videos/002-la-deuda-defraudada/imagenes/chatgpt');
-for (const n of ['fondo-mesa-expediente', 'fondo-archivo', 'obj-07-carpeta-cerrada', 'obj-07-carpeta-abierta', 'obj-04-vale', 'obj-10-bono-deuda-externa', 'obj01-08-estado', 'obj-09-folio-sencillo']) {
+for (const n of ['fondo-mesa-expediente', 'fondo-archivo', 'obj-07-carpeta-cerrada', 'obj-07-carpeta-abierta', 'obj-04-vale', 'obj-10-bono-deuda-externa', 'obj01-08-estado', 'obj-09-folio-sencillo', 'obj-02-saco-guano-cerrado']) {
   const a = path.join(galeria, `${n}.png`);
   if (!fs.existsSync(a)) throw new Error(`Falta ${a}: extraer el zip de la galería (videos/002-la-deuda-defraudada/galeria.md)`);
   copiar(a, path.join(salida, 'img', `${n}.png`));
@@ -25,7 +25,7 @@ for (const n of ['elias', 'echenique', 'torrico', 'novoa', 'mendiburu', 'castill
 for (const carpeta of ['fuentes', 'texturas']) {
   fs.cpSync(path.join(proyecto, 'public/compartido', carpeta), path.join(salida, 'compartido', carpeta), { recursive: true });
 }
-for (const n of ['hoja', 'carpeta', 'tic', 'soplo', 'golpe']) {
+for (const n of ['hoja', 'carpeta', 'tic', 'soplo', 'golpe', 'saco']) {
   copiar(path.join(proyecto, `public/compartido/audio/sfx/${n}.mp3`), path.join(salida, `compartido/audio/sfx/${n}.mp3`));
 }
 console.log('Recursos del animatic preparados en', path.relative(proyecto, salida));

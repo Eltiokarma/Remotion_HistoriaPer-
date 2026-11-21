@@ -11,7 +11,7 @@ export const FPS = 30;
 export const FRASES = tiempos.s04.frases;
 export const DURACION_VOZ = tiempos.s04.duracion;
 const PLANOS = storyboard.escenas.find((e) => e.s === 's04')!.planos;
-const DE: Record<Parte, string[]> = { A: ['4.1', '4.2', '4.3'], B: ['4.4', '4.5', '4.6', '4.7', '4.8', '4.9'] };
+const DE: Record<Parte, string[]> = { A: ['4.1', '4.2', '4.3a', '4.3b', '4.3c'], B: ['4.4', '4.5', '4.6', '4.7', '4.8', '4.9'] };
 
 export type Tramo = { id: string; voz0: number; voz1: number; video0: number; respiro: number };
 

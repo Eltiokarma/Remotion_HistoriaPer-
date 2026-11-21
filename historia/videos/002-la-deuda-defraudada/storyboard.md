@@ -4,7 +4,7 @@ Generado desde `storyboard.json` con `storyboard.py`; no se edita a mano. Propue
 
 La versión completa, con láminas, voz con emoción, métricas y avisos, es `storyboard.html`.
 
-**Episodio:** 10:36.0 en pantalla · voz 80 % · cámara quieta 84 %.
+**Episodio:** 11:15.8 en pantalla · voz 80 % · cámara quieta 80 %.
 
 ## s00 · El gancho
 
@@ -255,9 +255,9 @@ Lo que no se sabe y lo que sí está documentado. Entre los dos folios, el espac
 
 *Expediente y archivo; el mapa de s01 para Londres; las islas para la presión.* De «un expediente irregular» a «una red con nombre propio que, investigada, salió casi intacta».
 
-3:57.9 · voz 81 % · cámara quieta 76 % · 2.5 rótulos con datos por minuto.
+4:37.7 · voz 82 % · cámara quieta 66 % · 3.5 rótulos con datos por minuto.
 
-### 4.1 · ampliar · 29.0 s
+### 4.1 · ampliar · 29.8 s
 
 Novoa fue uno de muchos: la pila del gancho, ahora con su causa. Vuelve la pila de vales del gancho. Debajo, una línea de 1852 con dos marcas; los expedientes se apilan antes de cada una. La pila crece de nuevo hasta 24 millones. Sin rótulos: las marcas de la línea y la altura de la pila bastan; la voz da las fechas y las cifras.
 
@@ -267,7 +267,7 @@ Novoa fue uno de muchos: la pila del gancho, ahora con su causa. Vuelve la pila 
 - **Sonido:** Papel; el mismo golpe grave del gancho.
 - **Falta:** Línea de 1852 con las dos marcas.
 
-### 4.2 · nombrar · 24.1 s · excepción reservada
+### 4.2 · nombrar · 24.6 s · excepción reservada
 
 En pocas manos, y la época les dio nombre: los consolidados. Los vales se juntan hacia unas pocas fichas de grupo. Después, la palabra del episodio sola a pantalla completa. Con 8, la palabra baja a una esquina y se queda como rótulo de la escena.
 
@@ -276,9 +276,20 @@ En pocas manos, y la época les dio nombre: los consolidados. Los vales se junta
 - **Efecto:** Excepción reservada: pantalla completa, quieta, sin textura nueva.
 - **Sonido:** Sin música durante la palabra (2,5 s de voz más 1 s de montaje); la música vuelve con 8.
 
-### 4.3 · recorrer · 56.6 s
+### 4.3a · definir · 31.6 s
 
-Los vales se cambian por bonos externos por contrato con dos casas del guano, que ya tenían vales y ganaron con el alza: el lavado. Sobre el mapa de s01: París (Uribarren) y Lima (Montané, el Estado). Con «entregaba», un vale viaja de la casa al Estado; con «daba», un bono vuelve. Con «Londres», el contrato de Uribarren con la etiqueta de Mendiburu (presentación) y «hasta 6 millones de pesos en vales»; con «Lima», el de Montané, «3 millones». Con «la mitad», «≈ 46 % de toda la deuda consolidada». En la mesa, las barras: vale ≈ 40 %, bono casi 100 %; con «ganaron», el arco «≈ 2,5 veces más»; con «manchados», la mancha del vale, y con «limpios», el vale queda debajo del bono.
+Qué es un bono: otra promesa de pago del Estado, pero de la deuda externa, que nació con los préstamos de Londres de la independencia, se dejó de pagar y se arregló en 1849. En la mesa, el vale a la izquierda y, con «deuda externa», el bono a la derecha: «deuda interna» y «deuda externa» escritas en tinta en cada uno. Con «Londres», el mapa de s01: la ruta de los préstamos de Londres a Lima, con «préstamo de 1822 · 1,2 millones de libras» y «préstamo de 1825 · 616 000 libras» (Q, pp. 137 y 139). Con «dejó de pagar», la línea de pagos hacia Londres se corta con una ✕ roja; con «1849», se completa y aparece «1849 · bonos nuevos al 4 % de interés» (Q, p. 178).
+
+- **Pantalla:** vale · deuda interna / bono · deuda externa; préstamo de 1822 · 1,2 millones de libras; préstamo de 1825 · 616 000 libras; 1849 · bonos nuevos al 4 % de interés.
+- **Cámara:** recorrido (El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar.).
+- **Efecto:** Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.
+- **Sonido:** Tic por tramo; hoja al llegar el bono.
+- **Falta:** La mancha roja del vale (se pinta en Remotion sobre obj-04).
+- **Aviso:** 3 rótulos en el plano: que no estén más de dos a la vez
+
+### 4.3b · pactar · 27.2 s
+
+El cambio se hizo por contrato con dos casas del guano: Uribarren (Mendiburu, Londres) y Montané (Lima); cerca de la mitad de la deuda consolidada. Sobre el mismo mapa: Uribarren en París, Montané sin sede y el Estado en Lima; el vale va de la casa al Estado y el bono vuelve; los dos contratos con sus montos, la presentación de Mendiburu sobre el suyo y «con los dos contratos: ≈ 46 %».
 
 - **Pantalla:** Uribarren et Cie. · París / Montané et Cie.; Manuel de Mendiburu · ministro plenipotenciario en Londres, 1853; hasta 6 millones de pesos en vales; 3 millones de pesos en vales; ≈ 46 % de toda la deuda consolidada.
 - **Cámara:** recorrido (El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar.).
@@ -287,7 +298,18 @@ Los vales se cambian por bonos externos por contrato con dos casas del guano, qu
 - **Falta:** La mancha roja del vale (se pinta en Remotion sobre obj-04).
 - **Aviso:** 5 rótulos en el plano: que no estén más de dos a la vez
 
-### 4.4 · denunciar · 23.6 s
+### 4.3c · lavar · 35.7 s
+
+El vale valía ≈ 40 %, el bono casi 100 %: las casas que habían juntado vales ganaron. En 1855 el guano ya estaba comprometido con los acreedores de fuera. Quiroz: lavado. En la mesa: las barras del vale (≈ 40 %) y del bono (pronto, casi 100 %), de a una; con «ganaron», el arco «≈ 2,5 veces más». Con «un informe de un diplomático», un saco de guano se ata al bono y la tira con la cita textual de Q, n. 108. Con «manchados», la mancha del vale; con «limpios», el vale queda debajo del bono.
+
+- **Pantalla:** precio en plaza ≈ 40 % de lo que dice; precio: pronto, casi el 100 %; quien tenía vales, al cambiarlos: ≈ 2,5 veces más; «el ingreso guanero ya estaba hipotecado a los acreedores extranjeros» · Q, n. 108, sobre un despacho de J. R. Clay, 1855.
+- **Cámara:** recorrido (El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar.).
+- **Efecto:** Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.
+- **Sonido:** Tic por tramo; hoja al llegar el bono.
+- **Falta:** La mancha roja del vale (se pinta en Remotion sobre obj-04).
+- **Aviso:** 4 rótulos en el plano: que no estén más de dos a la vez
+
+### 4.4 · denunciar · 23.8 s
 
 Elías, peleado con Echenique y Torrico, denuncia en la prensa. La ficha de Elías vuelve a la mesa y desde ella salen las dos cartas.
 
@@ -296,7 +318,7 @@ Elías, peleado con Echenique y Torrico, denuncia en la prensa. La ficha de Elí
 - **Efecto:** Cartas que se asientan; nada con 16 (se dice, no se ilustra).
 - **Sonido:** Papel y pluma; sin música heroica.
 
-### 4.5 · matizar · 18.9 s
+### 4.5 · matizar · 18.1 s
 
 El denunciante también había hecho el negocio. La ficha de Elías con sus dos funciones a los lados: intermediario y denunciante. Quieta mientras habla Quiroz.
 
@@ -305,7 +327,7 @@ El denunciante también había hecho el negocio. La ficha de Elías con sus dos 
 - **Efecto:** Ninguno: es un momento de juicio, se sostiene.
 - **Sonido:** La música sostiene.
 
-### 4.6 · investigar · 17.4 s
+### 4.6 · investigar · 17.2 s
 
 Cambia el gobierno y una junta revisa: la marca roja del gancho. La pila vuelve al centro y el corrector la marca igual que en el gancho, ahora con su explicación. Los cuatro robados son cuatro huecos en el estante, sin monto.
 
@@ -323,7 +345,7 @@ Se suspende el pago; los principales ya se habían ido. Cae el sello de la suspe
 - **Efecto:** Las fichas salen rápido (entran lento lo importante, sale rápido lo que se va).
 - **Sonido:** Sello; roce de las fichas al salir.
 
-### 4.8 · presionar · 20.1 s
+### 4.8 · presionar · 20.3 s
 
 Los tenedores protestan, y Gran Bretaña y Francia los respaldan. Una mano sostiene un vale (el traspaso de 4A.2, un solo cuadro). Con 25, vuelve la isla de s01 con las mismas capas, ahora con dos veleros chicos en el horizonte (el barco de s01 a escala, sin banderas). Vivanco queda solo en la voz.
 
@@ -332,7 +354,7 @@ Los tenedores protestan, y Gran Bretaña y Francia los respaldan. Una mano sosti
 - **Efecto:** Los barcos apenas se mueven; el mar sigue con su fase.
 - **Sonido:** El mar de s01, más grave; la música en tensión.
 
-### 4.9 · restaurar · 33.5 s
+### 4.9 · restaurar · 34.9 s
 
 Una ley lo restaura todo: tabla rasa. La pila con su marca roja. Cae el mismo sello del gancho y la marca se borra a medias, igual que en 0.3. Con 28, la cita entre comillas.
 

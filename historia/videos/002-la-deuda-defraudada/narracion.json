@@ -286,7 +286,23 @@
     0.35
    ],
    [
-    "[calm] [teacher] El Estado hizo ese cambio por contrato con dos casas comerciales a las que encargaba la venta del guano: Uribarren, de París, y Montané.",
+    "[clear] [teacher] Un bono era también una promesa de pago, como el vale, pero de la deuda externa y no de la deuda interna.",
+    0.35
+   ],
+   [
+    "[calm] [storytelling] La deuda externa del Perú había empezado en Londres, con los préstamos que el Estado pidió durante la guerra de independencia.",
+    0.35
+   ],
+   [
+    "[dry] El Estado peruano dejó de pagar esos préstamos casi de inmediato.",
+    0.35
+   ],
+   [
+    "[measured] En mil ochocientos cuarenta y nueve, el Estado arregló esa deuda con sus acreedores de Londres y volvió a pagar los intereses.",
+    1.0
+   ],
+   [
+    "[calm] [teacher] Para cambiar vales por bonos, el Estado firmó contratos con dos casas comerciales a las que encargaba la venta del guano: Uribarren, de París, y Montané.",
     0.35
    ],
    [
@@ -315,6 +331,10 @@
    ],
    [
     "[dry] [pointed] Uribarren y Montané habían juntado vales antes de firmar sus contratos, así que ganaron con el cambio.",
+    0.8
+   ],
+   [
+    "[serious] [measured] Según un informe de un diplomático de Estados Unidos, en mil ochocientos cincuenta y cinco el dinero del guano ya estaba comprometido con los acreedores de fuera del país.",
     1.0
    ],
    [

@@ -980,15 +980,55 @@
           ]
         },
         {
-          "id": "4.3",
+          "id": "4.3a",
           "frases": [
             9,
+            13
+          ],
+          "verbo": "definir",
+          "respiro": 1,
+          "idea": "Qué es un bono: otra promesa de pago del Estado, pero de la deuda externa, que nació con los préstamos de Londres de la independencia, se dejó de pagar y se arregló en 1849.",
+          "imagen": "En la mesa, el vale a la izquierda y, con «deuda externa», el bono a la derecha: «deuda interna» y «deuda externa» escritas en tinta en cada uno. Con «Londres», el mapa de s01: la ruta de los préstamos de Londres a Lima, con «préstamo de 1822 · 1,2 millones de libras» y «préstamo de 1825 · 616 000 libras» (Q, pp. 137 y 139). Con «dejó de pagar», la línea de pagos hacia Londres se corta con una ✕ roja; con «1849», se completa y aparece «1849 · bonos nuevos al 4 % de interés» (Q, p. 178).",
+          "pantalla": [
+            {
+              "en": 9,
+              "t": "vale · deuda interna / bono · deuda externa"
+            },
+            {
+              "en": 11,
+              "t": "préstamo de 1822 · 1,2 millones de libras; préstamo de 1825 · 616 000 libras"
+            },
+            {
+              "en": 13,
+              "t": "1849 · bonos nuevos al 4 % de interés"
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar."
+          },
+          "efecto": "Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.",
+          "sonido": "Tic por tramo; hoja al llegar el bono.",
+          "base": [
+            "4B",
+            "1C.1"
+          ],
+          "falta": "La mancha roja del vale (se pinta en Remotion sobre obj-04).",
+          "objetos": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png"
+          ]
+        },
+        {
+          "id": "4.3b",
+          "frases": [
+            14,
             18
           ],
-          "verbo": "recorrer",
-          "respiro": 1.5,
-          "idea": "Los vales se cambian por bonos externos por contrato con dos casas del guano, que ya tenían vales y ganaron con el alza: el lavado.",
-          "imagen": "Sobre el mapa de s01: París (Uribarren) y Lima (Montané, el Estado). Con «entregaba», un vale viaja de la casa al Estado; con «daba», un bono vuelve. Con «Londres», el contrato de Uribarren con la etiqueta de Mendiburu (presentación) y «hasta 6 millones de pesos en vales»; con «Lima», el de Montané, «3 millones». Con «la mitad», «≈ 46 % de toda la deuda consolidada». En la mesa, las barras: vale ≈ 40 %, bono casi 100 %; con «ganaron», el arco «≈ 2,5 veces más»; con «manchados», la mancha del vale, y con «limpios», el vale queda debajo del bono.",
+          "verbo": "pactar",
+          "respiro": 1,
+          "idea": "El cambio se hizo por contrato con dos casas del guano: Uribarren (Mendiburu, Londres) y Montané (Lima); cerca de la mitad de la deuda consolidada.",
+          "imagen": "Sobre el mismo mapa: Uribarren en París, Montané sin sede y el Estado en Lima; el vale va de la casa al Estado y el bono vuelve; los dos contratos con sus montos, la presentación de Mendiburu sobre el suyo y «con los dos contratos: ≈ 46 %».",
           "pantalla": [
             {
               "en": 10,
@@ -1029,10 +1069,54 @@
           ]
         },
         {
-          "id": "4.4",
+          "id": "4.3c",
           "frases": [
             19,
-            22
+            23
+          ],
+          "verbo": "lavar",
+          "respiro": 2,
+          "idea": "El vale valía ≈ 40 %, el bono casi 100 %: las casas que habían juntado vales ganaron. En 1855 el guano ya estaba comprometido con los acreedores de fuera. Quiroz: lavado.",
+          "imagen": "En la mesa: las barras del vale (≈ 40 %) y del bono (pronto, casi 100 %), de a una; con «ganaron», el arco «≈ 2,5 veces más». Con «un informe de un diplomático», un saco de guano se ata al bono y la tira con la cita textual de Q, n. 108. Con «manchados», la mancha del vale; con «limpios», el vale queda debajo del bono.",
+          "pantalla": [
+            {
+              "en": 19,
+              "t": "precio en plaza ≈ 40 % de lo que dice"
+            },
+            {
+              "en": 20,
+              "t": "precio: pronto, casi el 100 %"
+            },
+            {
+              "en": 21,
+              "t": "quien tenía vales, al cambiarlos: ≈ 2,5 veces más"
+            },
+            {
+              "en": 22,
+              "t": "«el ingreso guanero ya estaba hipotecado a los acreedores extranjeros» · Q, n. 108, sobre un despacho de J. R. Clay, 1855"
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar."
+          },
+          "efecto": "Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.",
+          "sonido": "Tic por tramo; hoja al llegar el bono.",
+          "base": [
+            "4B",
+            "1C.1"
+          ],
+          "falta": "La mancha roja del vale (se pinta en Remotion sobre obj-04).",
+          "objetos": [
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/002-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png"
+          ]
+        },
+        {
+          "id": "4.4",
+          "frases": [
+            24,
+            27
           ],
           "verbo": "denunciar",
           "respiro": 1.5,
@@ -1040,7 +1124,7 @@
           "imagen": "La ficha de Elías vuelve a la mesa y desde ella salen las dos cartas.",
           "pantalla": [
             {
-              "en": 19,
+              "en": 24,
               "t": "El Comercio · 12 y 16 de agosto de 1853"
             }
           ],
@@ -1062,8 +1146,8 @@
         {
           "id": "4.5",
           "frases": [
-            23,
-            25
+            28,
+            30
           ],
           "verbo": "matizar",
           "respiro": 1.5,
@@ -1071,7 +1155,7 @@
           "imagen": "La ficha de Elías con sus dos funciones a los lados: intermediario y denunciante. Quieta mientras habla Quiroz.",
           "pantalla": [
             {
-              "en": 23,
+              "en": 28,
               "t": "intermediario · denunciante",
               "termino": true
             }
@@ -1094,8 +1178,8 @@
         {
           "id": "4.6",
           "frases": [
-            26,
-            27
+            31,
+            32
           ],
           "verbo": "investigar",
           "respiro": 1.5,
@@ -1104,12 +1188,12 @@
           "imagen": "La pila vuelve al centro y el corrector la marca igual que en el gancho, ahora con su explicación. Los cuatro robados son cuatro huecos en el estante, sin monto.",
           "pantalla": [
             {
-              "en": 26,
+              "en": 31,
               "t": "Junta de Examen Fiscal · 1855",
               "ficha": true
             },
             {
-              "en": 27,
+              "en": 32,
               "t": "12,2 millones de pesos · 141 expedientes"
             }
           ],
@@ -1132,8 +1216,8 @@
         {
           "id": "4.7",
           "frases": [
-            28,
-            29
+            33,
+            34
           ],
           "verbo": "suspender",
           "respiro": 1.5,
@@ -1141,7 +1225,7 @@
           "imagen": "Cae el sello de la suspensión. Las fichas de Torrico, Echenique y Mendiburu se deslizan fuera del cuadro, una por vez.",
           "pantalla": [
             {
-              "en": 28,
+              "en": 33,
               "t": "Ley del 29 de diciembre de 1856"
             }
           ],
@@ -1160,8 +1244,8 @@
         {
           "id": "4.8",
           "frases": [
-            30,
-            32
+            35,
+            37
           ],
           "verbo": "presionar",
           "respiro": 2,
@@ -1189,8 +1273,8 @@
         {
           "id": "4.9",
           "frases": [
-            33,
-            37
+            38,
+            42
           ],
           "verbo": "restaurar",
           "respiro": 2,
@@ -1198,11 +1282,11 @@
           "imagen": "La pila con su marca roja. Cae el mismo sello del gancho y la marca se borra a medias, igual que en 0.3. Con 28, la cita entre comillas.",
           "pantalla": [
             {
-              "en": 33,
+              "en": 38,
               "t": "Ley del 11 de marzo de 1857"
             },
             {
-              "en": 34,
+              "en": 39,
               "t": "«tabla rasa» · Quiroz, p. 185"
             }
           ],

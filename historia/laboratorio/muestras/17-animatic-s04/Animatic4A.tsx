@@ -32,11 +32,12 @@ const PALETA = { fondo: '#1d1813', papel: PAPEL, ocre: OCRE, rojo: ROJO, verde: 
 
 // palabras (tiempo de voz)
 const P = {
-  junio: 7.5, octubre: 8.12, cinco: 12.34, veinticuatro: 13.0, estado: 18.08, diferencia: 21.48, uno: 25.36,
-  pocas: 29.34, docenas: 33.68, consolidados: 38.86, forma: 43.52, nombrando: 45.86, robo: 47.88,
-  externa: 53.1, uribarren: 62.34, montane: 63.76, entregaba: 65.22, daba: 67.5, londres: 71.04, manuel: 71.48,
-  lima: 76.42, mitad: 79.16, mercado: 81.84, cuarenta: 84.52, casi: 88.38, juntado: 91.78, ganaron: 94.68,
-  manchado: 100.4, limpio: 102.1,
+  junio: 7.7, octubre: 8.26, cinco: 12.5, veinticuatro: 13.14, estado: 18.28, diferencia: 22.16, uno: 26.1,
+  pocas: 30.16, docenas: 34.5, consolidados: 39.86, forma: 44.64, nombrando: 46.96, robo: 49.12,
+  externa: 54.34, externa2: 62.62, interna: 64.0, londres: 67.16, inmediato: 74.18, londres2: 79.28, intereses: 80.9,
+  uribarren: 88.98, montane: 90.4, entregaba: 91.88, daba: 94.24, manuel: 98.36, lima: 103.4, mitad: 106.2,
+  mercado: 108.9, cuarenta: 111.66, casi: 115.66, juntado: 119.12, ganaron: 122.04, diplomatico: 124.46,
+  guano: 128.92, manchado: 137.12, limpio: 138.74,
 };
 
 const MENDIBURU: Presentacion = { persona: 'mendiburu', nombre: 'MANUEL DE MENDIBURU', rol: 'ministro plenipotenciario en Londres, 1853 (Q, p. 179)', t0: P.manuel - 0.1 };
@@ -115,40 +116,51 @@ export const Animatic4A: React.FC = () => {
   const palabra = voz >= P.consolidados - 0.1 && voz < F(8);   // excepción reservada: pantalla completa
   const sale42 = k(F(9) + 0.1, 0.9, 'tenso');
 
-  // ── 4.3 · el vale viaja a Londres y vuelve bono
+  // ── 4.3a · qué es un bono (párrafo revisado por el Escribano, 21 de noviembre de 2026; Q, pp. 136–139, 178–181)
+  // en la mesa, el vale a la izquierda y, con «deuda externa», el bono a la derecha
   const levanta = k(F(9) + 0.3, 0.8, 'pesado');
-  // el mapa de la escena 1 con París, Londres y Lima (párrafo reescrito con el Escribano: Q, pp. 179–181)
-  const mapa = k(P.externa + 0.4, 0.7, 'natural') * (1 - k(P.mercado - 0.3, 0.6, 'natural'));
+  const bonoIn = k(P.externa - 0.1, 0.8, 'pesado');
+  // con «Londres», el mapa de la escena 1 (cubre la mesa hasta «En el mercado»)
+  const mapa = k(P.londres - 0.3, 0.7, 'natural') * (1 - k(P.mercado - 0.3, 0.6, 'natural'));
   const ENC: [number, number, number, number] = [-100, -32, 25, 62];
   const proy = proyeccionDe(ENC);
   const xy = (lon: number, lat: number): [number, number] => (proy([lon, lat]) as [number, number] | null) ?? [0, 0];
-  const lima = xy(-77.04, -12.05), paris = xy(2.35, 48.86);
+  const lima = xy(-77.04, -12.05), paris = xy(2.35, 48.86), londres = xy(-0.13, 51.51);
+  // los préstamos de 1822 y 1825: la plata vino de Londres a Lima (Q, pp. 137 y 139)
+  const rutaPrest = arco(londres, lima), largoPrest = getLength(rutaPrest);
+  const prest = k(P.londres + 0.1, 1.8, 'solemne');
+  const r1822 = k(P.londres + 0.9, 0.4, 'natural'), r1825 = k(P.londres + 1.8, 0.4, 'natural');
+  // los pagos hacia Londres: se cortan «casi de inmediato» (✕ roja) y vuelven en 1849 (Q, pp. 136 y 178)
+  // la ruta de los pagos va por otro arco (hacia el sur del Atlántico), para no confundirse con la de los préstamos
+  const rutaPago = `M${lima[0]} ${lima[1]} Q ${(lima[0] + londres[0]) / 2 + 240} ${(lima[1] + londres[1]) / 2 + 100} ${londres[0]} ${londres[1]}`, largoPago = getLength(rutaPago);
+  const pago1 = k(F(12) + 0.2, 1.4, 'natural') * 0.42;
+  const corte = k(P.inmediato, 0.35, 'ligero');
+  const pago2 = k(P.londres2 - 1.4, 1.8, 'solemne');
+  const r1849 = k(P.intereses - 0.2, 0.4, 'natural');
+  const puntoCorte = getPointAtLength(rutaPago, largoPago * 0.42) ?? { x: lima[0], y: lima[1] };
+  const saleHistoria = k(F(14) - 0.6, 0.6, 'natural');
+  // ── 4.3b · las dos casas, el cambio y los dos contratos
   const rUri = k(P.uribarren - 0.1, 0.4, 'natural'), rMon = k(P.montane - 0.1, 0.4, 'natural');
-  // el cambio: con «entregaba», un vale va de la casa al Estado; con «daba», un bono vuelve
   const rutaIda = arco(paris, lima), rutaVuelta = arco(lima, paris);
   const ida = k(P.entregaba - 0.2, 1.4, 'solemne'), vuelta = k(P.daba - 0.15, 1.4, 'solemne');
   const pIda = getPointAtLength(rutaIda, getLength(rutaIda) * ida) ?? { x: paris[0], y: paris[1] };
   const pVuelta = getPointAtLength(rutaVuelta, getLength(rutaVuelta) * vuelta) ?? { x: lima[0], y: lima[1] };
-  // los dos contratos: el de Uribarren entra con el medallón de Mendiburu; el de Montané, con «Lima»
   const FOLIO = 1448 / 1086;
   const c1In = tramo(voz, MENDIBURU.t0 + PRES_VUELA, PRES_LLEGA - PRES_VUELA, 'pesado');
   const contrato1 = pose(mix(1960, 1360, c1In), 300, 250);
-  const c2In = k(F(13) + 0.2, 0.6, 'pesado');
+  const c2In = k(F(17) + 0.2, 0.6, 'pesado');
   const contrato2 = pose(mix(-400, lima[0] + 60, c2In), lima[1] - 380, 260);
   const rMitad = k(P.mitad - 0.1, 0.5, 'natural');
-  // cámara del mapa (A5): arranca cerca de Lima y se abre hacia Europa con «acreedores de fuera del país» (recorrido
-  // con motivo: el espacio que dice la voz); después, un acercamiento lento a los dos contratos antes de «la mitad»
-  const abreMapa = k(P.externa + 0.4, 5.5, 'solemne');
+  // acercamiento lento que junta los dos contratos antes de «la mitad»
   const junta2 = k(P.lima, P.mitad - P.lima, 'solemne') * (1 - k(P.mercado - 0.3, 0.6, 'natural'));
-  const mapaCam = voz < P.uribarren
-    ? { s: mix(1.35, 1, abreMapa), ox: lima[0], oy: lima[1] }
-    : { s: 1 + 0.05 * junta2, ox: 1000, oy: 520 };
-  // en el mercado: vuelta a la mesa, vale a la izquierda, bono a la derecha
-  const mesa43 = k(P.mercado - 0.3, 0.8, 'pesado');
-  const bono = pose(mix(1960, 1030, mesa43), 260, 640);
-  const valeVuelve = k(P.mercado - 0.1, 0.8, 'pesado');
+  const mapaCam = { s: 1 + 0.05 * junta2, ox: 1000, oy: 520 };
+  // ── 4.3c · el mercado, la ganancia, el guano comprometido y el lavado
+  const bono = pose(mix(1960, 1030, bonoIn), 260, 640);
   const lava = k(P.limpio - 0.05, 0.9, 'pesado');        // con «limpios», el vale manchado queda debajo del bono
-  const vale43 = pose(mix(mix(-700, 250, valeVuelve), 760, lava), mix(260, 300, lava), mix(640, 560, lava));
+  const vale43 = pose(mix(mix(MANOS[0].x, 250, levanta), 760, lava), mix(mix(520, 260, levanta), 300, lava), mix(mix(230, 640, levanta), 560, lava));
+  // con «un informe de un diplomático», un saco de guano se ata al bono
+  const sacoIn = k(P.diplomatico - 0.2, 0.8, 'pesado'), cuerda = k(P.guano - 0.3, 0.9, 'natural'), saleSaco = k(F(23) - 0.3, 0.6, 'tenso');
+  const rCita = k(P.diplomatico + 0.3, 0.5, 'natural') * (1 - saleSaco);
   const barraVale = k(P.cuarenta - 0.1, 0.9, 'pesado') * 0.4 * (1 - lava);
   const barraBono = k(P.casi, 1.0, 'pesado') * 0.97;
   const mancha = k(P.manchado, 1.1, 'natural');
@@ -156,7 +168,6 @@ export const Animatic4A: React.FC = () => {
   const etiqC1 = voz < MENDIBURU.t0 + PRES_LLEGA ? 0 : tramo(voz, MENDIBURU.t0 + PRES_LLEGA, 0.3, 'natural') || 0.001;
   const foco = tramo(voz, MENDIBURU.t0, PRES_IN, 'natural') * (1 - tramo(voz, MENDIBURU.t0 + PRES_VUELA, PRES_LLEGA - PRES_VUELA, 'natural'));
 
-  const enMapa = voz >= P.externa + 0.4 && voz < P.mercado + 0.4;
 
   // ── más información en pantalla (Gerson, 21 de noviembre de 2026: «en partes tiene poco movimiento»)
   // 4.1: los años de la pila (Q, p. 170: 5 millones en 1851, 24 en 1852), su valor en soles de hoy y la diferencia
@@ -178,7 +189,7 @@ export const Animatic4A: React.FC = () => {
   const cam = voz < F(5) + 1 ? { s: acerca(F(3), P.uno - 0.6, 0.06, sale41der), ox: 1150, oy: 520 }
     : voz < F(9) + 1.2 ? { s: acerca(F(8), F(9), 0.07, sale42), ox: 960, oy: 600 }
     : voz < P.mercado - 0.3 ? { s: 1, ox: 960, oy: 540 }
-    : { s: acerca(P.cuarenta, Ffin(18), 0.05, 0), ox: 960, oy: 720 };
+    : { s: acerca(P.cuarenta, Ffin(23), 0.05, 0), ox: 960, oy: 720 };
 
   return (
     <AbsoluteFill style={{ background: '#1d1813' }}>
@@ -293,43 +304,10 @@ export const Animatic4A: React.FC = () => {
             </div>
           ) : null}
 
-          {/* 4.3 · el vale que se levanta de la primera mano */}
-          {voz >= F(9) && !enMapa && voz < P.mercado ? (
-            <Papel src={img('obj-04-vale')} p={pose(mix(MANOS[0].x, 640, levanta), mix(520, 300, levanta), mix(230, 640, levanta))} aspecto={VALE_ASP} capas={capas} />
-          ) : null}
         </AbsoluteFill>
 
-        {/* 4.3 · el mapa de la escena 1: las casas del guano, el cambio y los dos contratos */}
-        {mapa > 0.001 ? (
-          <AbsoluteFill style={{ opacity: mapa, transform: `scale(${mapaCam.s})`, transformOrigin: `${mapaCam.ox}px ${mapaCam.oy}px` }}>
-            <Mapa paleta={PALETA} id="m4" origen={{ nombre: 'Lima', lon: -77.04, lat: -12.05 }}
-              destinos={[{ nombre: 'París', lon: 2.35, lat: 48.86 }, { nombre: 'Londres', lon: -0.13, lat: 51.51 }]}
-              rutas={[0, 0]} llegadas={[rUri, k(P.londres - 0.1, 0.4, 'natural')]} encuadre={ENC} t={t} />
-            {/* el Estado, en Lima */}
-            <Papel src={img('obj01-08-estado')} p={pose(lima[0] - 330, lima[1] - 110, 230, 1)} aspecto={1024 / 1536} capas={capas} dueno="ESTADO PERUANO" />
-            <Rotulo x={paris[0] - 30} y={paris[1] + 18} k={rUri} derecha size={22}>URIBARREN ET CIE. · PARÍS</Rotulo>
-            <Rotulo x={120} y={110} k={rMon} size={22}>MONTANÉ ET CIE.</Rotulo>
-            <Rotulo x={120} y={160} k={rMon} size={16}>CASAS A LAS QUE EL ESTADO ENCARGABA LA VENTA DEL GUANO</Rotulo>
-            {ida > 0 && ida < 1 ? <ValeChico x={pIda.x - 50} y={pIda.y - 33} w={100} /> : null}
-            {vuelta > 0 && vuelta < 1 ? <Img src={img('obj-10-bono-deuda-externa')} style={{ position: 'absolute', left: pVuelta.x - 50, top: pVuelta.y - 33, width: 100, height: 67, filter: sombra(1) }} /> : null}
-            {voz >= MENDIBURU.t0 + PRES_VUELA ? (
-              <Papel src={img('obj-09-folio-sencillo')} p={contrato1} aspecto={FOLIO} giro={1.5} capas={capas} etiqueta={etiqC1} dueno="CONTRATO CON URIBARREN" persona="mendiburu">
-                <Renglon x={10} y={50} size={8.2} k={tramo(voz, MENDIBURU.t0 + PRES_LLEGA + 0.3, 0.4)} ancho={84} tinta>hasta 6 millones</Renglon>
-                <Renglon x={10} y={62} size={6.2} k={tramo(voz, MENDIBURU.t0 + PRES_LLEGA + 0.5, 0.4)} ancho={84} tinta>de pesos en vales</Renglon>
-              </Papel>
-            ) : null}
-            {c2In > 0 ? (
-              <Papel src={img('obj-09-folio-sencillo')} p={contrato2} aspecto={FOLIO} giro={-1.5} capas={capas} dueno="CONTRATO CON MONTANÉ">
-                <Renglon x={10} y={50} size={8.2} k={tramo(voz, P.lima, 0.4)} ancho={84} tinta>3 millones</Renglon>
-                <Renglon x={10} y={62} size={6.2} k={tramo(voz, P.lima + 0.2, 0.4)} ancho={84} tinta>de pesos en vales</Renglon>
-              </Papel>
-            ) : null}
-            <Rotulo x={960} y={40} k={rMitad} centro size={26}>CON LOS DOS CONTRATOS: ≈ 46 % DE TODA LA DEUDA CONSOLIDADA</Rotulo>
-          </AbsoluteFill>
-        ) : null}
-
         {/* el vale de vuelta en la mesa: barra del mercado y la mancha */}
-        {voz >= P.mercado - 0.1 ? (
+        {voz >= F(9) ? (
           <>
             <Papel src={img('obj-04-vale')} p={vale43} aspecto={VALE_ASP} capas={capas} etiqueta={1 - tramo(voz, P.limpio - 0.05, 0.3, 'natural')} dueno="VALE DE CONSOLIDACIÓN · LIMA">
               {mancha > 0
@@ -345,11 +323,27 @@ export const Animatic4A: React.FC = () => {
                     );
                   })
                 : null}
+              <Renglon x={10} y={36} size={6.6} k={tramo(voz, P.interna - 0.1, 0.4)} ancho={80} centro familia={fuente.libro} peso={600} tinta>deuda interna</Renglon>
             </Papel>
           </>
         ) : null}
-        {voz >= P.mercado - 0.3 ? (
-          <Papel src={img('obj-10-bono-deuda-externa')} p={bono} aspecto={VALE_ASP} capas={capas} dueno="BONO DE DEUDA EXTERNA" />
+        {bonoIn > 0 ? (
+          <Papel src={img('obj-10-bono-deuda-externa')} p={bono} aspecto={VALE_ASP} capas={capas} dueno="BONO DE DEUDA EXTERNA">
+            <Renglon x={10} y={30} size={6.6} k={tramo(voz, P.externa2 - 0.1, 0.4)} ancho={80} centro familia={fuente.libro} peso={600} tinta>deuda externa</Renglon>
+          </Papel>
+        ) : null}
+        {/* 4.3c · el guano, atado al bono (Q, n. 108) */}
+        {sacoIn > 0 && saleSaco < 1 ? (
+          <>
+            <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+              <path d="M 1710 745 Q 1690 710 1655 690" fill="none" stroke={PAPEL} strokeWidth={4} strokeDasharray={`${90 * cuerda} 200`} opacity={1 - saleSaco} />
+            </svg>
+            <Papel src={img('obj-02-saco-guano-cerrado')} p={pose(mix(1960, 1700, sacoIn) + 400 * saleSaco, 730, 170)} aspecto={1} capas={capas} dueno="GUANO" />
+            <div style={{ position: 'absolute', left: 0, top: 0, opacity: rCita }}>
+              <Rotulo x={960} y={40} k={rCita > 0 ? 1 : 0} centro size={20}>«EL INGRESO GUANERO YA ESTABA HIPOTECADO A LOS ACREEDORES EXTRANJEROS»</Rotulo>
+              <Rotulo x={960} y={92} k={rCita > 0 ? 1 : 0} centro size={15}>QUIROZ, N. 108, SOBRE UN DESPACHO DE J. R. CLAY, DIPLOMÁTICO DE EE. UU., 1855</Rotulo>
+            </div>
+          </>
         ) : null}
         {/* barras del mercado: lo que se pagaba por cada papel, en % de lo que decía */}
         {voz >= P.cuarenta - 0.2 ? (
@@ -374,6 +368,53 @@ export const Animatic4A: React.FC = () => {
             </svg>
             <Rotulo x={1078} y={952} k={k(P.ganaron - 0.2, 0.4, 'natural') * (1 - lava)} centro size={22}>QUIEN TENÍA VALES, AL CAMBIARLOS: ≈ 2,5 VECES MÁS</Rotulo>
           </>
+        ) : null}
+
+        {/* 4.3 · el mapa de la escena 1: las casas del guano, el cambio y los dos contratos */}
+        {mapa > 0.001 ? (
+          <AbsoluteFill style={{ opacity: mapa, background: '#1d1813', transform: `scale(${mapaCam.s})`, transformOrigin: `${mapaCam.ox}px ${mapaCam.oy}px` }}>
+            <Mapa paleta={PALETA} id="m4" origen={{ nombre: 'Lima', lon: -77.04, lat: -12.05 }}
+              destinos={[{ nombre: 'París', lon: 2.35, lat: 48.86 }, { nombre: 'Londres', lon: -0.13, lat: 51.51 }]}
+              rutas={[0, 0]} llegadas={[rUri, k(P.londres - 0.1, 0.4, 'natural')]} encuadre={ENC} t={t} />
+            {/* 4.3a · los préstamos de Londres, el corte de pagos y el arreglo de 1849 */}
+            {saleHistoria < 1 ? (
+              <div style={{ position: 'absolute', inset: 0, opacity: 1 - saleHistoria }}>
+                <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+                  <path d={rutaPrest} fill="none" stroke={OCRE} strokeWidth={4} strokeDasharray={`${largoPrest * prest} ${largoPrest}`} />
+                  <path d={rutaPago} fill="none" stroke={PAPEL} strokeWidth={3} opacity={0.75} strokeDasharray={`${largoPago * Math.max(pago1, pago2)} ${largoPago}`} />
+                  {corte > 0 && pago2 < 0.5 ? (
+                    <g stroke={ROJO} strokeWidth={7} strokeLinecap="round" opacity={corte * (1 - 2 * pago2)}>
+                      <line x1={puntoCorte.x - 22} y1={puntoCorte.y - 22} x2={puntoCorte.x + 22} y2={puntoCorte.y + 22} />
+                      <line x1={puntoCorte.x + 22} y1={puntoCorte.y - 22} x2={puntoCorte.x - 22} y2={puntoCorte.y + 22} />
+                    </g>
+                  ) : null}
+                </svg>
+                <Rotulo x={londres[0] - 40} y={londres[1] + 60} k={r1822} derecha size={22}>PRÉSTAMO DE 1822 · 1,2 MILLONES DE LIBRAS</Rotulo>
+                <Rotulo x={londres[0] - 40} y={londres[1] + 110} k={r1825} derecha size={22}>PRÉSTAMO DE 1825 · 616 000 LIBRAS</Rotulo>
+                <Rotulo x={960} y={40} k={r1849} centro size={24}>1849 · BONOS NUEVOS AL 4 % DE INTERÉS</Rotulo>
+              </div>
+            ) : null}
+            {/* el Estado, en Lima */}
+            <Papel src={img('obj01-08-estado')} p={pose(mix(-400, lima[0] - 330, k(F(11) - 0.2, 0.8, 'pesado')), lima[1] - 110, 230, 1)} aspecto={1024 / 1536} capas={capas} dueno="ESTADO PERUANO" />
+            <Rotulo x={paris[0] - 30} y={paris[1] + 18} k={rUri} derecha size={22}>URIBARREN ET CIE. · PARÍS</Rotulo>
+            <Rotulo x={120} y={110} k={rMon} size={22}>MONTANÉ ET CIE.</Rotulo>
+            <Rotulo x={120} y={160} k={rMon} size={16}>CASAS A LAS QUE EL ESTADO ENCARGABA LA VENTA DEL GUANO</Rotulo>
+            {ida > 0 && ida < 1 ? <ValeChico x={pIda.x - 50} y={pIda.y - 33} w={100} /> : null}
+            {vuelta > 0 && vuelta < 1 ? <Img src={img('obj-10-bono-deuda-externa')} style={{ position: 'absolute', left: pVuelta.x - 50, top: pVuelta.y - 33, width: 100, height: 67, filter: sombra(1) }} /> : null}
+            {voz >= MENDIBURU.t0 + PRES_VUELA ? (
+              <Papel src={img('obj-09-folio-sencillo')} p={contrato1} aspecto={FOLIO} giro={1.5} capas={capas} etiqueta={etiqC1} dueno="CONTRATO CON URIBARREN" persona="mendiburu">
+                <Renglon x={10} y={50} size={8.2} k={tramo(voz, MENDIBURU.t0 + PRES_LLEGA + 0.3, 0.4)} ancho={84} tinta>hasta 6 millones</Renglon>
+                <Renglon x={10} y={62} size={6.2} k={tramo(voz, MENDIBURU.t0 + PRES_LLEGA + 0.5, 0.4)} ancho={84} tinta>de pesos en vales</Renglon>
+              </Papel>
+            ) : null}
+            {c2In > 0 ? (
+              <Papel src={img('obj-09-folio-sencillo')} p={contrato2} aspecto={FOLIO} giro={-1.5} capas={capas} dueno="CONTRATO CON MONTANÉ">
+                <Renglon x={10} y={50} size={8.2} k={tramo(voz, P.lima, 0.4)} ancho={84} tinta>3 millones</Renglon>
+                <Renglon x={10} y={62} size={6.2} k={tramo(voz, P.lima + 0.2, 0.4)} ancho={84} tinta>de pesos en vales</Renglon>
+              </Papel>
+            ) : null}
+            <Rotulo x={960} y={40} k={rMitad} centro size={26}>CON LOS DOS CONTRATOS: ≈ 46 % DE TODA LA DEUDA CONSOLIDADA</Rotulo>
+          </AbsoluteFill>
         ) : null}
 
         <Atmosfera grano={0} vineta={0.5} />
@@ -403,10 +444,12 @@ export const Animatic4A: React.FC = () => {
       <Sfx nombre="golpe" en={aVideo('A', P.veinticuatro + 0.9)} fps={FPS} volumen={0.22} />
       <Sfx nombre="hoja" en={aVideo('A', P.uno + 0.35)} fps={FPS} dura={1} volumen={0.16} />
       {[P.entregaba - 0.2, P.daba - 0.15].map((s) => <Sfx key={s} nombre="tic" en={aVideo('A', s)} fps={FPS} volumen={0.16} />)}
-      <Sfx nombre="hoja" en={aVideo('A', F(13) + 0.2)} fps={FPS} dura={1} volumen={0.16} />
+      <Sfx nombre="hoja" en={aVideo('A', F(17) + 0.2)} fps={FPS} dura={1} volumen={0.16} />
+      <Sfx nombre="hoja" en={aVideo('A', P.externa - 0.1)} fps={FPS} dura={1} volumen={0.16} />
+      <Sfx nombre="tic" en={aVideo('A', P.londres + 1.9)} fps={FPS} volumen={0.16} />
+      <Sfx nombre="saco" en={aVideo('A', P.diplomatico + 0.4)} fps={FPS} dura={1.2} volumen={0.18} />
       <Sfx nombre="soplo" en={aVideo('A', MENDIBURU.t0)} fps={FPS} dura={1} volumen={0.1} />
       <Sfx nombre="tic" en={aVideo('A', MENDIBURU.t0 + PRES_LLEGA)} fps={FPS} volumen={0.16} />
-      <Sfx nombre="hoja" en={aVideo('A', P.mercado - 0.1)} fps={FPS} dura={1} volumen={0.16} />
       <PrecargaTexturas />
     </AbsoluteFill>
   );
