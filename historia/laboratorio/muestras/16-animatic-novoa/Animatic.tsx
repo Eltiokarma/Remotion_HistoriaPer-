@@ -355,6 +355,9 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
         </Sequence>
       ))}
       {hojas.map((s, i) => <Sfx key={i} nombre="hoja" en={aVideo(version, s)} fps={FPS} dura={1} volumen={0.16} />)}
+      {/* presentaciones (F): un soplo bajo mientras la mesa se desenfoca y un tic cuando el medallón llega a su lugar (Gerson, 21 de noviembre de 2026) */}
+      {capas.pres && PRESENTACIONES.map((pr) => <Sfx key={`soplo-${pr.persona}`} nombre="soplo" en={aVideo(version, pr.t0)} fps={FPS} dura={1} volumen={0.1} />)}
+      {capas.pres && PRESENTACIONES.map((pr) => <Sfx key={`tic-${pr.persona}`} nombre="tic" en={aVideo(version, pr.t0 + PRES_LLEGA)} fps={FPS} volumen={0.16} />)}
       <Sfx nombre="pluma" en={aVideo(version, Ffin(9) - 0.4)} fps={FPS} dura={0.9} volumen={0.14} />
       <PrecargaTexturas />
     </AbsoluteFill>

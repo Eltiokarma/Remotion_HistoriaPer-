@@ -23,7 +23,7 @@ for (const n of ['elias', 'echenique', 'torrico', 'novoa']) {
 for (const carpeta of ['fuentes', 'texturas']) {
   fs.cpSync(path.join(proyecto, 'public/compartido', carpeta), path.join(salida, 'compartido', carpeta), { recursive: true });
 }
-for (const n of ['hoja', 'pluma']) {
+for (const n of ['hoja', 'pluma', 'soplo', 'tic']) {
   copiar(path.join(proyecto, `public/compartido/audio/sfx/${n}.mp3`), path.join(salida, `compartido/audio/sfx/${n}.mp3`));
 }
 console.log('Recursos del animatic preparados en', path.relative(proyecto, salida));

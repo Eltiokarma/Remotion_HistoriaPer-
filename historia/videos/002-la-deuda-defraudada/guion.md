@@ -267,6 +267,13 @@ Pendiente de aprobación de Gerson.
 - Qué plazos vencían en junio y octubre de 1852 (Q, p. 170); la voz no los explica hasta confirmarlo.
 - Que la definición de deuda externa («con acreedores de fuera del país») es un dato agregado, no de la ficha.
 - Que Elías «se levantó contra Echenique» al salir de prisión: la ficha dice que «encabezó la revolución»; la voz usa la forma más prudente.
+- **¿Novoa sabía que venía la abolición? (pregunta de Gerson, 21 de noviembre de 2026).** Q, p. 171 (cotejada con la página impresa) no dice eso ni da la fecha de la expropiación.
+  - Lo que sí dice el libro:
+    - El reclamo es de 1852 e incluye el lucro cesante «durante los siguientes treinta y dos años».
+    - La ley de 1850 consolidaba créditos «que databan de la guerra de independencia» (p. 170).
+    - La manumisión de 1854 la decretó Castilla «en medio de la guerra civil» y tuvo su propia compensación, de 300 pesos por esclavo (pp. 181–182).
+  - Inferencia, sin fuente: 1852 menos 32 años da 1820. La hacienda se habría expropiado durante la independencia, y los quinientos esclavizados serían parte de su valor de entonces.
+  - Riesgo del guion: la frase «la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro», justo después del reclamo, puede sugerir que ella se adelantó a la abolición. Hay que decidir si la voz aclara que era una deuda vieja. La fecha de la expropiación queda [VERIFICAR] en Quiroz, *La deuda defraudada* (1987), pp. 170–172, la fuente que cita la nota 113.
 - De memoria, señalados por el Escribano: que las islas de Chincha estén frente a Pisco (los mapas del episodio ya las ponen ahí, sin fuente escrita); la caída de Echenique a comienzos de 1855.
 
 ## Revisión del Escribano (19 de noviembre de 2026)
