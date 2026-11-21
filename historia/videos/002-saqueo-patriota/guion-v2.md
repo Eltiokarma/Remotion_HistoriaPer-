@@ -213,7 +213,7 @@ El Congreso aprobó el préstamo en mil ochocientos veintitrés, con José de la
 **Carga en la voz:** 1825, Robertson, dos por ciento, 1826, treinta, Ulloa y Juan (6).
 
 **VO:**
-En enero de mil ochocientos veinticinco se contrató un segundo préstamo, otra vez con Kinder. [PAUSA 0,5s] Lo contrató un nuevo agente del Perú, el comerciante John Parish Robertson, que cobraba una comisión del dos por ciento. [PAUSA 0,5s] [PAUSA 0,5s] Bolívar esperaba ansioso ese dinero, y una parte era para comprar fusiles. [PAUSA 1s]
+En enero de mil ochocientos veinticinco se contrató un segundo préstamo, otra vez con Kinder. [PAUSA 0,5s] Lo contrató un nuevo agente del Perú, el comerciante John Parish Robertson, que cobraba una comisión del dos por ciento. [PAUSA 0,5s] Bolívar esperaba ansioso ese dinero, y una parte era para comprar fusiles. [PAUSA 1s]
 
 Kinder no entregó el adelanto convenido, y el Estado no pudo cubrir los intereses. [PAUSA 0,6s] De los dos préstamos, al Perú llegó la mitad, después de comisiones, gastos e intereses cobrados por adelantado. [PAUSA 0,6s] Según Quiroz, lo poco que llegó se malgastó además en pagos exagerados a los oficiales del ejército de Bolívar. [PAUSA 1,2s]
 
@@ -289,11 +289,11 @@ Entonces, mientras en Londres no se pagaba, la plata salía por mar, y las autor
 **Carga en la voz:** los años treinta, 1840, Gamarra, nueve años, noventa mil pesos, cincuenta por ciento, Vidal (7 en unos 100 s).
 
 **VO:**
-Pero en las islas de la costa había otra riqueza: el guano, el excremento de las aves marinas. [PAUSA 0,6s] [PAUSA 0,5s] En los años treinta, unos experimentos encontraron que el guano peruano tenía mucho nitrógeno y fósforo. Eso lo volvía mejor que otros abonos. [PAUSA 1,2s]
+Pero en las islas de la costa había otra riqueza: el guano, el excremento de las aves marinas. [PAUSA 0,6s] En los años treinta, unos experimentos encontraron que el guano peruano tenía mucho nitrógeno y fósforo. Eso lo volvía mejor que otros abonos. [PAUSA 1,2s]
 
 En noviembre de mil ochocientos cuarenta, el presidente Agustín Gamarra y su ministro de Hacienda, Ramón Castilla, dieron el primer contrato del guano. [PAUSA 0,5s] Era el mismo Castilla al que habían acusado de contrabando. [PAUSA 0,8s] Por nueve años, una sola sociedad podría sacar todo el guano que quisiera y venderlo en Europa. [PAUSA 0,5s] La formaban un capitalista peruano y tres socios franceses. [PAUSA 0,5s] El peruano había sido socio de Kinder y de Robertson en Londres, en los años de los primeros préstamos. [PAUSA 1s] A cambio, la sociedad pagó solo noventa mil pesos, en cuotas, en efectivo y en billetes. [PAUSA 0,6s] El Estado estaba urgido de adelantos, porque se acercaba una guerra con Bolivia. [PAUSA 1,2s]
 
-Un año después, un diplomático de Estados Unidos informó a su gobierno sobre el negocio. [PAUSA 0,4s] Según él, el guano se vendía en Inglaterra con una ganancia neta de al menos el cincuenta por ciento. [PAUSA 1s] [PAUSA 1s]
+Un año después, un diplomático de Estados Unidos informó a su gobierno sobre el negocio. [PAUSA 0,4s] Según él, el guano se vendía en Inglaterra con una ganancia neta de al menos el cincuenta por ciento. [PAUSA 1s]
 
 Quiroz escribe que fuentes independientes dan fe de sobornos a las más altas autoridades para conseguir estos contratos. [PAUSA 0,6s] El general Francisco de Vidal recordó en sus memorias el dinero que le ofrecía un agente de esa sociedad. [PAUSA 0,4s] Si lo hubiera aceptado, escribió, se habría convertido en el mayor millonario de la república. [PAUSA 1,2s]
 
@@ -368,7 +368,7 @@ Queda la última pregunta: ¿alguien pagó por todo lo anterior? [PAUSA 1s] A lo
 
 Hubo una excepción. [PAUSA 0,4s] A José de La Mar lo recompensaron con una hacienda, y pronto se la devolvió a su legítimo dueño. [PAUSA 0,5s] Quiroz la llama una acción correcta, ignorada por otros líderes republicanos. [PAUSA 1,5s]
 
-Queda la cuenta, con el método del episodio anterior. [PAUSA 0,4s] Al final de la colonia, la corrupción costaba el equivalente a unos cuatro de cada diez pesos del gasto. [PAUSA 0,6s] En la independencia temprana, por cada diez pesos que gastaba el Estado, la corrupción costó el equivalente a casi catorce. [PAUSA 1s] Pasa de diez porque suma lo que nunca entró al presupuesto: el contrabando y la inversión que no llegó. [PAUSA 1,5s]
+Falta la cuenta, hecha con el método del episodio anterior. [PAUSA 0,4s] Al final de la colonia, la corrupción costaba el equivalente a unos cuatro de cada diez pesos del gasto. [PAUSA 0,6s] En la independencia temprana, por cada diez pesos que gastaba el Estado, la corrupción costó el equivalente a casi catorce. [PAUSA 1s] Pasa de diez porque suma lo que nunca entró al presupuesto: el contrabando y la inversión que no llegó. [PAUSA 1,5s]
 
 Londres quedó arreglado. [PAUSA 0,5s] Pero adentro seguía la otra pila: lo tomado y lo prestado en nombre de la patria. [PAUSA 0,5s] Según Quiroz, en general esa deuda no se había reconocido, o se había garantizado con billetes muy depreciados. [PAUSA 0,8s] Esa deuda también se iba a pagar con el guano. [PAUSA 2,5s]
 
