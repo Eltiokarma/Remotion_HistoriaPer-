@@ -1511,7 +1511,7 @@
     {
       "id": "e2-animatic-s03",
       "fase": "e2",
-      "titulo": "Animatic de la escena 3 del 0·2 sobre la voz real: versiones A–D, auditoría estética E1–E6 y la elegida, E6 (con las notas de Gerson del 21 de noviembre corregidas)",
+      "titulo": "Animatic de la escena 3 del 0·2 sobre la voz real: versiones A–D, auditoría E1–E6 y la F (presentación de personajes y un papel por dueño), en revisión de Gerson",
       "entregable": "historia/laboratorio/muestras/16-animatic-novoa/ (código, README, INFORME, resultados/hoja.jpg y render-*.json); MP4 fuera de git en laboratorio/out/16-animatic-novoa/",
       "estado": "hecho",
       "depende_de": [
@@ -1528,12 +1528,13 @@
         "historia/laboratorio/muestras/16-animatic-novoa/INFORME.md",
         "historia/laboratorio/muestras/16-animatic-novoa/resultados/hoja.jpg",
         "historia/laboratorio/muestras/16-animatic-novoa/resultados/versiones-D-E6.jpg",
-        "historia/laboratorio/muestras/16-animatic-novoa/resultados/render-E6.json"
+        "historia/laboratorio/muestras/16-animatic-novoa/resultados/render-E6.json",
+        "historia/laboratorio/muestras/16-animatic-novoa/resultados/render-F.json"
       ],
       "tiempo": {
         "humano_min": null,
         "agente": null,
-        "render_s": 590.8,
+        "render_s": 529.6,
         "maquina": "contenedor"
       }
     },
@@ -1542,18 +1543,19 @@
       "fase": "e2",
       "titulo": "Tres papeles distintos para la escena 3 del 0·2 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT",
       "entregable": "historia/videos/002-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md; imágenes obj-13 a obj-15 en la galería (fuera de git)",
-      "estado": "bloqueado",
+      "estado": "hecho",
       "depende_de": [
         "e2-animatic-s03"
       ],
       "prevista": null,
       "real": {
         "inicio": "2026-11-21",
-        "fin": null
+        "fin": "2026-11-21"
       },
-      "bloqueo": "Esperando las imágenes de ChatGPT (las pide Gerson).",
+      "bloqueo": null,
       "evidencia": [
-        "historia/videos/002-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md"
+        "historia/videos/002-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md",
+        "historia/videos/002-la-deuda-defraudada/fuentes.md"
       ],
       "tiempo": {
         "humano_min": null,

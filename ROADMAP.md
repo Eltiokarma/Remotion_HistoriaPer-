@@ -12,7 +12,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **29** · 🔄 en curso: **10** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **4** · ✖️ descartado: **1**
+✅ hecho: **30** · 🔄 en curso: **10** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -29,7 +29,6 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `e2-guion-locucion` Guion del 0·2 escrito como locución completa, con el criterio del Escribidor Escribano: Tres actas del Escribano aplicadas (la última: 0 altas, 12 medias corregidas); falta el lector en frío y el visto bueno de Gerson, y resolver los [VERIFICAR].
 - `e2-storyboard-adaptado` Storyboard del 0·2 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual: Propuesta del agente: falta la revisión de Gerson, el animatic de la escena 3 para comparar versiones A/B/C, y dibujar las piezas que el storyboard marca como faltantes (pila de vales, línea de 1852, página con huecos, flecha de adelantos, ficha de la abolición, bono y mancha del lavado, barcos en el horizonte).
 - `e2-narracion` Narración del 0·2 con ElevenLabs (Joder Jolines, eleven_v4), con emoción por frase y tiempos reales: Falta que Gerson la escuche (pronunciación de nombres, emoción, ritmo) antes de cuadrar los beats.
-- `e2-folios-s03` Tres papeles distintos para la escena 3 del 0·2 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT: Esperando las imágenes de ChatGPT (las pide Gerson).
 
 ## Vista temporal
 
@@ -83,10 +82,11 @@ gantt
   Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena) :done, e1voz, 2026-11-10, 1d
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
   section Episodio 0·2 · La deuda defraudada
-  Animatic de la escena 3 del 0·2 sobre la voz real versiones A–D, auditoría estética E1–E6 y la elegida, E6 (con las notas de Gerson del 21 de noviembre corregidas) :done, e2animatics03, 2026-11-20, 2d
+  Animatic de la escena 3 del 0·2 sobre la voz real versiones A–D, auditoría E1–E6 y la F (presentación de personajes y un papel por dueño), en revisión de Gerson :done, e2animatics03, 2026-11-20, 2d
+  Tres papeles distintos para la escena 3 del 0·2 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT :done, e2folioss03, 2026-11-21, 1d
 ```
 
-Sin fecha (24): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso), `e2-narracion` (🔄 en curso), `e2-folios-s03` (⛔ bloqueado).
+Sin fecha (23): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso), `e2-narracion` (🔄 en curso).
 
 ## Tareas
 
@@ -455,19 +455,18 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Falta que Gerson la escuche (pronunciación de nombres, emoción, ritmo) antes de cuadrar los beats.
   - Evidencia: [002-la-deuda-defraudada/manuscrito.md](historia/videos/002-la-deuda-defraudada/manuscrito.md) · [002-la-deuda-defraudada/narracion_tiempos.json](historia/videos/002-la-deuda-defraudada/narracion_tiempos.json)
-- [x] **Animatic de la escena 3 del 0·2 sobre la voz real: versiones A–D, auditoría estética E1–E6 y la elegida, E6 (con las notas de Gerson del 21 de noviembre corregidas)** `e2-animatic-s03` — ✅ hecho
+- [x] **Animatic de la escena 3 del 0·2 sobre la voz real: versiones A–D, auditoría E1–E6 y la F (presentación de personajes y un papel por dueño), en revisión de Gerson** `e2-animatic-s03` — ✅ hecho
   - Entregable: historia/laboratorio/muestras/16-animatic-novoa/ (código, README, INFORME, resultados/hoja.jpg y render-*.json); MP4 fuera de git en laboratorio/out/16-animatic-novoa/
   - Depende de: `e2-storyboard-adaptado`, `e2-narracion`
   - Prevista: — · Real: 2026-11-20 → 2026-11-21
-  - Tiempo: H ¿? · A ¿? · R 590.8 s en contenedor · tokens ¿?
-  - Evidencia: [16-animatic-novoa/INFORME.md](historia/laboratorio/muestras/16-animatic-novoa/INFORME.md) · [resultados/hoja.jpg](historia/laboratorio/muestras/16-animatic-novoa/resultados/hoja.jpg) · [resultados/versiones-D-E6.jpg](historia/laboratorio/muestras/16-animatic-novoa/resultados/versiones-D-E6.jpg) · [resultados/render-E6.json](historia/laboratorio/muestras/16-animatic-novoa/resultados/render-E6.json)
-- [ ] **Tres papeles distintos para la escena 3 del 0·2 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT** `e2-folios-s03` — ⛔ bloqueado
+  - Tiempo: H ¿? · A ¿? · R 529.6 s en contenedor · tokens ¿?
+  - Evidencia: [16-animatic-novoa/INFORME.md](historia/laboratorio/muestras/16-animatic-novoa/INFORME.md) · [resultados/hoja.jpg](historia/laboratorio/muestras/16-animatic-novoa/resultados/hoja.jpg) · [resultados/versiones-D-E6.jpg](historia/laboratorio/muestras/16-animatic-novoa/resultados/versiones-D-E6.jpg) · [resultados/render-E6.json](historia/laboratorio/muestras/16-animatic-novoa/resultados/render-E6.json) · [resultados/render-F.json](historia/laboratorio/muestras/16-animatic-novoa/resultados/render-F.json)
+- [x] **Tres papeles distintos para la escena 3 del 0·2 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT** `e2-folios-s03` — ✅ hecho
   - Entregable: historia/videos/002-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md; imágenes obj-13 a obj-15 en la galería (fuera de git)
   - Depende de: `e2-animatic-s03`
-  - Prevista: — · Real: 2026-11-21 → …
+  - Prevista: — · Real: 2026-11-21
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Bloqueo: Esperando las imágenes de ChatGPT (las pide Gerson).
-  - Evidencia: [diseno/prompts-chatgpt-folios-s03.md](historia/videos/002-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md)
+  - Evidencia: [diseno/prompts-chatgpt-folios-s03.md](historia/videos/002-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md) · [002-la-deuda-defraudada/fuentes.md](historia/videos/002-la-deuda-defraudada/fuentes.md)
 
 ## Máquinas
 
