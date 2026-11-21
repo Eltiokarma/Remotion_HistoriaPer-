@@ -1647,22 +1647,50 @@
       "fase": "e2",
       "titulo": "Estructura escena por escena del arco de presentación (final del 0·1, 0·2, 0·3 partido en dos, ¿se puede medir?), con expedientes de fuentes y acta del Escribano",
       "entregable": "historia/videos/arco-estructura.md y los expedientes en 002/diseno, 003/diseno y 000-quiroz/diseno",
-      "estado": "bloqueado",
+      "estado": "hecho",
       "depende_de": [
         "e2b-saqueo-guion"
       ],
       "prevista": null,
       "real": {
         "inicio": "2026-11-21",
-        "fin": null
+        "fin": "2026-11-21"
       },
-      "bloqueo": "Decidido por Gerson (21 de noviembre de 2026): el 0·3 se parte, va el grabado de 1855, y ¿Se puede medir? y La cuenta dejan de ser episodios (la cuenta entra en cada video; la serie sigue por tramos de botín, mapa-serie.md). Falta: que apruebe la estructura del 0·2 al 0·4, el puente del 0·1 y el orden después del 0·4.",
+      "bloqueo": null,
       "evidencia": [
         "historia/videos/arco-estructura.md",
         "historia/videos/003-la-deuda-defraudada/diseno/expediente.md",
         "historia/videos/002-saqueo-patriota/diseno/expediente.md",
         "historia/videos/000-quiroz/diseno/expediente-medir.md",
         "historia/videos/mapa-serie.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
+    },
+    {
+      "id": "e2-arco-guiones",
+      "fase": "e2",
+      "titulo": "Guiones del Prólogo (puente) y de los episodios 1 a 4, escritos con escribidor-escribano y diseno-y-animacion y revisados por el Escribano",
+      "entregable": "historia/videos/005-la-plata-y-el-mercurio/guion.md, 002-saqueo-patriota/guion-v2.md, 003-la-deuda-defraudada/guion-v2.md, 004-el-lavado/guion.md y el puente de 001-el-hombre/guion.md",
+      "estado": "bloqueado",
+      "depende_de": [
+        "e2-arco-estructura"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-21",
+        "fin": null
+      },
+      "bloqueo": "Espera las decisiones de Gerson: recortes propuestos por el Escribano en cada episodio (el Ep. 3 tiene fe; los Ep. 1, 2 y 4 la tienen al aplicar los recortes) y las frases que son inferencia nuestra. Después: adaptar narracion_construir.py y storyboard a los guiones v2 y regenerar la voz.",
+      "evidencia": [
+        "historia/videos/005-la-plata-y-el-mercurio/guion.md",
+        "historia/videos/002-saqueo-patriota/guion-v2.md",
+        "historia/videos/003-la-deuda-defraudada/guion-v2.md",
+        "historia/videos/004-el-lavado/guion.md"
       ],
       "tiempo": {
         "humano_min": null,

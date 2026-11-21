@@ -471,3 +471,103 @@ Pendiente de aprobación de Gerson.
 - Huancavelica cerrada en 1812 (p. 119) y produciendo en 1813 (p. 89): no se usa en la voz.
 - La frase confusa de la p. 87 sobre la visita de Mesía «con misivas deshonestas»: no se usa.
 - Definiciones agregadas, que no son del libro: interino, corregidor como «autoridad de una provincia», fiador, visitador e intendente (ver fuentes.md).
+
+## Acta del Escribano (21 de noviembre de 2026)
+
+```
+ACTA · 005-la-plata-y-el-mercurio/guion.md (voz, imagen) y fuentes.md · 21 de noviembre de 2026
+Textos leídos: 11 escenas de voz e imagen, fuentes.md, la estructura v2 («Ep. 1»), el expediente
+y el capítulo 1 de Quiroz (pp. 43, 59-127) en el texto extraído del libro.
+Altas: 4 · Medias: 28 · Bajas: 21
+Guion de voz: no aplica el mínimo de 10 palabras. Oración más larga de la voz: 25 palabras (dos).
+```
+
+Cada cita del guion se buscó en el libro antes de anotarla. Las cuatro altas tienen el mismo vicio que el acta de la estructura v1: **el verbo o el pronombre dicen más que la fuente.**
+
+### Hallazgos principales
+
+Algunas filas agrupan dos o tres hallazgos del mismo vicio; el recuento de arriba los cuenta por separado.
+
+| # | Escala | Grav. | Dónde | Decía | Vicio | Dice ahora |
+|---|---|---|---|---|---|---|
+| 1 | 1 Verdad | Alta | ESC 9, el «entonces» | «el abuso que denunció Ulloa **se llevaba** entre tres y seis de cada diez pesos del gasto» | Quiroz calcula un costo «equivalente», con pérdidas indirectas (p. 122); «se llevaba» enseña que se robó la mitad del gasto | «costaba **el equivalente a** entre tres y seis de cada diez pesos del gasto» |
+| 2 | 1 Verdad | Alta | ESC 8, primera oración | «a los que abusaban tampoco **los castigó nadie**» | Falso tal como se oye, y la misma escena lo desmiente (medianos presos, p. 118, n. 142; la regla de la p. 69 es «la mayoría de las veces») | «casi nunca los castigaron» |
+| 3 | 1 Verdad | Alta | ESC 6, la última carta | «con los delitos que **había dejado** sin castigo» | El sujeto que oye el espectador es Ulloa; en la p. 90 los delitos los dejó sin castigo Amat | «que **el virrey** había dejado sin castigo» |
+| 4 | 1 Verdad | Alta | ESC 4, Guamán Poma | «**lo** había dibujado más de un siglo antes que Ulloa» | «lo» cae sobre los derrumbes de 1622; Guamán Poma (hacia 1615) dibujó los abusos de corregidores y curas (pp. 77, 112) | «Unos años antes, el cronista indígena Guamán Poma había dibujado los abusos de corregidores y curas contra los indios» |
+| 5 | 1 Verdad | Media | ESC 9, método | «advierte que **su estimado** es provisional y conservador», pegado al PBI | La cautela es del costo, no del PBI (p. 122) | «Y advierte que su cálculo del costo es provisional y conservador» |
+| 6 | 1 Verdad | Media | ESC 9, la cifra a escala humana | «eso **pagaba** un año de sueldo a diez mil trabajadores» | Contrafáctico dicho como hecho. La cuenta (2 000 000 ÷ 200 = 10 000) se rehízo y cuadra; también 30 000 ÷ 200 = 150 | «eso alcanzaba para el sueldo de un año de…» |
+| 7 | 1 Verdad | Media | ESC 9, columna IV | «…y **el contrabando**» | La columna IV son las rentas perdidas por el contrabando (p. 124) | «los impuestos perdidos por el contrabando»; en pantalla, `IV RENTAS PERDIDAS POR EL CONTRABANDO` |
+| 8 | 1 Verdad | Media | ESC 0 voz y pantalla | «sin él no se podía refinar la plata» / `SIN MERCURIO NO SE REFINA LA PLATA` | La p. 59 dice «un insumo fundamental» | «era fundamental para refinar la plata» / `INSUMO FUNDAMENTAL PARA REFINAR LA PLATA` |
+| 9 | 1 Verdad | Media | ESC 2, la palabra | «Quiroz **le da un nombre**… su premio» | La palabra viene del libro de Moreno Cebrián y Sala i Vila que Quiroz cita (p. 94, n. 80; p. 122, n. 152) | «Quiroz **usa** una palabra: su premio» |
+| 10 | 1 Verdad | Media | ESC 6 | «Así se cobraba el premio del virrey» | Inferencia nuestra (fuentes.md) dicha como hecho, sobre un soborno que es versión de Ulloa | «Si Ulloa decía la verdad, así se cobraba el premio del virrey»; en pantalla, `SEGÚN ULLOA` |
+| 11 | 1 Verdad | Media | ESC 5 | «las deudas… **se cobraron** con años de descuido fraudulento» | Hace creer que se cobraron (p. 87) | «pasaron años sin cobrarse, por un descuido fraudulento» |
+| 12 | 1 Verdad | Media | ESC 5 | «La que se escondía se llamaba plata piña» | Plata piña es la plata sin sellar ni quintar (p. 92), no un nombre para la escondida | «La plata que no pasaba por esa fundición quedaba como plata piña: sin sellar y sin quintar» |
+| 13 | 1 Verdad | Media | ESC 6, Vega | «Ulloa solo había logrado **sacarlo**» | La p. 87 dice que logró «una orden»; no que se cumpliera | «solo había conseguido una orden para sacarlo» |
+| 14 | 1 Verdad | Media | ESC 2, Cañete | La voz dice que compró el virreinato y calla que no gobernó | El «entonces» siguiente («venía a sacar lo que había pagado») se lee sobre él | «Murió antes de llegar a Lima.» |
+| 15 | 1 Verdad | Media | ESC 7 | «En su lugar puso intendentes» | Los que heredan el papel del corregidor son «los intendentes y los subdelegados» (p. 117) | «Y creó las intendencias: en cada provincia, un intendente manejaba las rentas sin pasar por el virrey» |
+| 16 | 1 Verdad | Media | ESC 10 | La Serna depuso a Pezuela «por sus claras falencias…», sin dueño | Las razones son de Quiroz (p. 121) | «fue depuesto, según Quiroz, «por sus claras falencias…»» |
+| 17 | 1 Verdad (definiciones) | Media | fuentes.md, interino | «puesto en el cargo mientras llegaba el nombrado» | Vega era interino desde 1755; Ulloa fue nombrado en 1757 (pp. 59, 84) | «gobernador provisional, mientras no hay titular»; y ahora la voz sí lo define |
+| 18 | 2 Composición | Media | ESC 2, ESC 7 | «cajas reales» y «el visitador» sin presentar | Concepto usado antes de presentarlo (CLAUDE §8) | «los puestos de su tesoro»; «un visitador: un enviado de Madrid con amplios poderes» (p. 110) |
+| 19 | 2 Composición | Media | ESC 2 y 3 | «¿Quiénes?» sin la advertencia de la estructura («peninsulares y criollos», p. 127) | Una de las cinco preguntas, a medias | ESC 2: «Los compradores eran sobre todo criollos ricos, nacidos aquí» (p. 70); ESC 3: «comerciantes de alto rango, nacidos en España» (p. 94) |
+| 20 | 2 Composición | Media | ESC 3 | 8 nombres y cifras en 1 min (1707, Castelldosrius, tres barcos, 3 millones, cuarta parte, Consejo de Indias, 100 millones, diez años) | Pasa el tope de 6 por minuto; la decisión 16 contaba 5 | Los tres barcos y el Consejo pasan a la pantalla: quedan 6 |
+| 21 | 2 Composición | Media | todo el episodio | Voz en el 83 % del tiempo | CLAUDE §8: ≤ 80 % por escena, meta 70 % | Queda abierto: recortes abajo, y se mide con la escaleta |
+| 22 | 4 Oración | Media | ESC 2, ESC 1, ESC 6 | «no había empezado **con ellos**»; «**la palabra** ya existía»; «porque **el gobernador** se había negado» | Referente que el oído no encuentra | «venía de mucho antes»; «ya había una palabra para eso»; «porque Ulloa se negó» |
+| 23 | 6 Imagen | Media | ESC 9, ESC 10 | «provisional… conservador» entre comillas; «QUIZÁS… EL PRIMER GOLPE» | Comillas sobre palabras que no son las del libro | `«PROVISIONALMENTE» · «DE MODO CONSERVADOR»`; `«QUIZÁS FUERA EL PRIMER…»` |
+| 24 | 6 Imagen | Media | ESC 8, ESC 5, ESC 6 | `ULLOA, ACUSADO` entre los castigados; `LOS MINEROS… ERAN YERNO Y CONCUÑADO`; `NINGUNA PENA REGISTRADA` | Acusado no es castigado; generaliza a dos mineros y sin «según Ulloa»; «registrada» sin decir dónde | Ulloa sale de las dos columnas; `SEGÚN ULLOA, DOS MINEROS…`; `…EN EL LIBRO` |
+| 25 | 6 Imagen | Media | ESC 0, ESC 9, rótulos de esquina | Cuatro rótulos con cifras en una pausa de 1,5 s; una suma de 75 caracteres mientras la voz explica; siete rótulos «sin voz» en esquinas | Más de un foco a la vez; no hay tiempo de lectura (17 caracteres por segundo) | Regla general al inicio del guion: el rótulo sin voz entra solo en una pausa que alcance, y si no, sale. Sueldos de a uno; la suma en dos líneas |
+
+Las otras medias y las bajas, en corto: ESC 1 «medir la Tierra» pasó a «ayudar a unos científicos franceses a medir la forma de la Tierra» (p. 64 y n. 6); el barco capturado y el informe de 1749 se enlazan con «Aun así»; «casi sin precedentes» pasó a «con pocos precedentes» (p. 95, «escasos»); «Algunos historiadores culpan» pasó a «Dos historiadores explican» (Molina Martínez y McFarlane, p. 89, n. 71) y la frase de Quiroz se completa con «para que funcionaran las colonias»; corregidor, «la autoridad del rey en una provincia»; fiador, «con sus bienes»; «empezó a encarcelar» pasó a «llegó a encarcelar» (fue una vez); «Es la primera cuenta de esta serie» salió, porque solo anunciaba y el Prólogo ya dio una cifra; «le decían» pasó a «se le llamaba» (registro); `1560s` pasó a `DÉCADA DE 1560`; la flecha `PAGA → RECUPERA` va en rojo, no apagado (es culpa); `EMBAJADA EN PARÍS` pasó a `ANTE LUIS XIV`; el 1777 del crédito pasó a la pantalla; la oración de los veedores (25 palabras) se partió en dos; «1 933» se escribe 1933.
+
+**Lo que se cotejó y quedó bien:** las fechas, nombres y cifras de las once escenas contra su página (pp. 59-127, 43); el cuadro 1.2 entero (59, 55, 43, 38, 28, 33 y 41 % del gasto; 4, 4, 3, 5, 2, 3 y 4 % del PBI; 2,0 a 1,3 millones); el cuadro 1.1 de Amat (0,3 + 1,2 + 0,5 + 0,3 = 2,3); el orden de la ESC 6 (Mesía, después Holgado, p. 88); las atribuciones «según Ulloa» (Vega, veedores, estribos, soborno), «según Ulloa y Juan» (tributo, doble cuenta, residencias sobornadas, venta de cargos) y del fiscal (100 millones, «burdel»); todas las citas entre comillas de la voz son textuales. La cita de la ESC 8 empieza con minúscula («la mayoría…») por ir integrada; en pantalla va como en el libro.
+
+**Composición.** Las cinco preguntas quedan respondidas en voz (¿quiénes?, completada con el hallazgo 19). El gancho cumple: persona, fecha, lugar, dos cifras duras y la pregunta. Los conectores pasan la prueba de «pero / por eso» (cambiados los dos que se corrigieron). La curva sube, baja y vuelve; el único silencio está después de «y perdió», el dato más fuerte. El método cabe en dos frases («Primero suma…», «Después compara…»), seguidas de las dos cautelas. Ninguna frase de la lista negra (`grep` de `direccion-historia` §7, limpio).
+
+**Imagen.** Respeto: los indios en siluetas de pie, sin precio sobre personas, la mita sin cifra inventada, Túpac Amaru en silueta y sin la ejecución; las caras reales salen de retratos de dominio público o van en silueta, nunca generadas con IA (conviene escribir «redibujado a mano» en cada medallón). El rojo queda en culpa y corrector; el sello rojo `ACUSADO` sobre Ulloa y la denuncia copiada en rojo son la yuxtaposición del episodio y deben declararse como tal en `escenas.json`. El punto rojo del mapa es el marcador de la guía (DIRECCION §2.8).
+
+### Qué apliqué
+
+En guion.md, las correcciones de los hallazgos 1 a 20 y 22 a 25, y las bajas listadas, sin cambiar el eje, el orden de las escenas ni su función. En fuentes.md, las filas de los datos tocados (con el porqué de cada cambio), las dos filas nuevas de «¿quiénes?» (pp. 70 y 94) y el juicio de las definiciones agregadas. Recalculé la duración en el encabezado.
+
+### La duración
+
+| Cálculo | Voz | Pausas escritas | Total |
+|---|---|---|---|
+| Borrador, a 2,6 palabras/s | 1933 palabras, 12 min 23 s | 124 s | 14 min 25 s |
+| Corregido, a 3,2 palabras/s | 2003 palabras, 10 min 26 s | 126 s | **12 min 32 s**, más la tarjeta y el tema |
+| Corregido, a la tasa real de la serie (1719 palabras en 9 min 28 s, unas 3,0 por segundo con pausas) | | | 11 min 1 s |
+
+El episodio ya entra en los 13 minutos. El problema no es el largo sino la proporción: la voz llena el 83 % del tiempo, y ninguna escena baja del 80 % (van del 81 al 85 %), cuando CLAUDE §8 pide 80 % como máximo y 70 % como meta. Con los recortes de abajo y unos 70 s de respiros con imagen (colas de escena), el video queda en unos 13 min con la voz en el 75 %.
+
+### Recortes que propongo (decide Gerson)
+
+Todo lo que sale de la voz queda en pantalla, salvo donde se dice.
+
+| # | Escena | Qué sale de la voz | Palabras | Ahorro | Por qué se puede |
+|---|---|---|---|---|---|
+| R1 | ESC 6 | El debate de los historiadores (dos oraciones) | ~33 | ~12 s | Ya lo proponía el Escribidor. Las dos tarjetas de la pizarra se quedan en una pausa |
+| R2 | ESC 1 | La corruptela del diccionario | ~25 | ~9 s | Es un desvío del hilo; la entrada completa ya va en pantalla, en tiza |
+| R3 | ESC 6 | Vega sin pena (dos oraciones) | ~23 | ~9 s | Vuelve en la columna `SIN PENA REGISTRADA EN EL LIBRO` de la ESC 8 |
+| R4 | ESC 1 | El barco capturado y los papeles al mar (y el «Aun así») | ~25 | ~9 s | Es el detalle más bonito de la escena, pero no lo usa ninguna otra; puede quedar como imagen sin voz en la pausa de la ruta |
+| R5 | ESC 8 | La residencia de Amat de 121 piezas | ~17 | ~6 s | La pila de legajos y la casilla vacía ya lo dicen; la voz ya dijo que el libro no registra penas |
+| | | **Total** | **~123** | **~45 s** | La voz baja a unas 1880 palabras |
+
+Más fuerte, solo si hace falta: el informe publicado en Londres (ESC 10, ~46 palabras, ~17 s), que el Ep. 2 vuelve a contar en su ESC 5. No lo recomiendo: cierra el hilo del «Discurso» dentro del episodio.
+
+### Lo que queda para Gerson
+
+- Los recortes R1 a R5.
+- Las dos frases agregadas para «¿quiénes?» (hallazgo 19): «criollos ricos, nacidos aquí» y «comerciantes… nacidos en España». Están en la estructura, pero son voz nueva.
+- «Si Ulloa decía la verdad, así se cobraba el premio del virrey» (ESC 6): queda como inferencia marcada. Si no convence, sale y queda la imagen del premio sobre el sobre, con `SEGÚN ULLOA`.
+- El 88 % de 1710-1719 en la esquina de la ESC 9: la estructura dejaba quitarlo. Es una tercera serie de números en una escena que ya tiene dos; propongo quitarlo.
+- La muerte de Túpac Amaru: la guía (DIRECCION §2.8) pide la secuencia de muerte (elemento simbólico sobre negro, la frase completa, después la fecha). Hoy la voz la da en cuatro palabras con 2 s de pausa. Decidir si basta.
+- Declarar en `escenas.json` la yuxtaposición del rojo sobre Ulloa (ESC 0 y 6) y, si `npm run validar` lo marca, la excepción de la curva entre la ESC 6 y la 7 (decisión 9).
+
+### [VERIFICAR] que quedan
+
+Los de la lista de arriba siguen abiertos (retratos y licencias, Guamán Poma f. 495, el año de la ejecución de Túpac Amaru II, las sentencias que el libro no da, quién nombró a Vega). Uno nuevo: la definición de fiador, «el que responde por otro con sus bienes», sale de memoria del Diccionario de la lengua y hay que confirmarla en el DLE. Ninguno bloquea la voz; los de imágenes bloquean el render final.
+
+### Fe
+
+**No doy fe todavía.** Quedan 0 altas y 1 media: la proporción de voz (hallazgo 21), que depende de los recortes y se comprueba con la escaleta (`npm run escaleta -- 005-la-plata-y-el-mercurio`). Doy fe de la verdad del texto de voz tal como queda: cada dato y cada cita tienen su página y su atribución. Con los recortes aprobados y la escaleta sin escenas en rojo, el guion pasa sin otra lectura de verdad; los cambios de Gerson que agreguen datos sí vuelven al Escribano.
+
+**La lección:** el vicio que más se repitió fue el mismo de la estructura v1, ahora en la oración: un verbo («se llevaba», «pagaba», «se cobraron», «sacarlo») o un pronombre («lo», «había dejado», «el gobernador») que dice más que la página. Prueba para la próxima: leer cada verbo de una cifra o de un castigo y preguntar si la página dice ese verbo; leer cada pronombre en voz alta y decir a quién cae.

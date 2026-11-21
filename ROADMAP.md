@@ -12,7 +12,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **30** · 🔄 en curso: **13** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **4** · ✖️ descartado: **1**
+✅ hecho: **31** · 🔄 en curso: **13** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **4** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -29,7 +29,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `e2-guion-locucion` Guion del 0·3 escrito como locución completa, con el criterio del Escribidor Escribano: Tres actas del Escribano aplicadas (la última: 0 altas, 12 medias corregidas); falta el lector en frío y el visto bueno de Gerson, y resolver los [VERIFICAR].
 - `e2-storyboard-adaptado` Storyboard del 0·3 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual: Propuesta del agente: falta la revisión de Gerson, el animatic de la escena 3 para comparar versiones A/B/C, y dibujar las piezas que el storyboard marca como faltantes (pila de vales, línea de 1852, página con huecos, flecha de adelantos, ficha de la abolición, bono y mancha del lavado, barcos en el horizonte).
 - `e2-narracion` Narración del 0·3 con ElevenLabs (Joder Jolines, eleven_v4), con emoción por frase y tiempos reales: Falta que Gerson la escuche (pronunciación de nombres, emoción, ritmo) antes de cuadrar los beats.
-- `e2-arco-estructura` Estructura escena por escena del arco de presentación (final del 0·1, 0·2, 0·3 partido en dos, ¿se puede medir?), con expedientes de fuentes y acta del Escribano: Decidido por Gerson (21 de noviembre de 2026): el 0·3 se parte, va el grabado de 1855, y ¿Se puede medir? y La cuenta dejan de ser episodios (la cuenta entra en cada video; la serie sigue por tramos de botín, mapa-serie.md). Falta: que apruebe la estructura del 0·2 al 0·4, el puente del 0·1 y el orden después del 0·4.
+- `e2-arco-guiones` Guiones del Prólogo (puente) y de los episodios 1 a 4, escritos con escribidor-escribano y diseno-y-animacion y revisados por el Escribano: Espera las decisiones de Gerson: recortes propuestos por el Escribano en cada episodio (el Ep. 3 tiene fe; los Ep. 1, 2 y 4 la tienen al aplicar los recortes) y las frases que son inferencia nuestra. Después: adaptar narracion_construir.py y storyboard a los guiones v2 y regenerar la voz.
 
 ## Vista temporal
 
@@ -85,9 +85,10 @@ gantt
   section Episodio 0·3 · La deuda defraudada
   Animatic de la escena 3 del 0·3 sobre la voz real versiones A–D, auditoría E1–E6 y la F (presentación de personajes y un papel por dueño), en revisión de Gerson :done, e2animatics03, 2026-11-20, 2d
   Tres papeles distintos para la escena 3 del 0·3 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT :done, e2folioss03, 2026-11-21, 1d
+  Estructura escena por escena del arco de presentación (final del 0·1, 0·2, 0·3 partido en dos, ¿se puede medir?), con expedientes de fuentes y acta del Escribano :done, e2arcoestructura, 2026-11-21, 1d
 ```
 
-Sin fecha (27): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso), `e2-narracion` (🔄 en curso), `e2-animatic-s04` (🔄 en curso), `e2b-saqueo-guion` (🔄 en curso), `e2b-saqueo-storyboard` (🔄 en curso), `e2-arco-estructura` (⛔ bloqueado).
+Sin fecha (27): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso), `e2-narracion` (🔄 en curso), `e2-animatic-s04` (🔄 en curso), `e2b-saqueo-guion` (🔄 en curso), `e2b-saqueo-storyboard` (🔄 en curso), `e2-arco-guiones` (⛔ bloqueado).
 
 ## Tareas
 
@@ -485,13 +486,19 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-21 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [002-saqueo-patriota/storyboard.html](historia/videos/002-saqueo-patriota/storyboard.html) · [002-saqueo-patriota/fuentes.md](historia/videos/002-saqueo-patriota/fuentes.md)
-- [ ] **Estructura escena por escena del arco de presentación (final del 0·1, 0·2, 0·3 partido en dos, ¿se puede medir?), con expedientes de fuentes y acta del Escribano** `e2-arco-estructura` — ⛔ bloqueado
+- [x] **Estructura escena por escena del arco de presentación (final del 0·1, 0·2, 0·3 partido en dos, ¿se puede medir?), con expedientes de fuentes y acta del Escribano** `e2-arco-estructura` — ✅ hecho
   - Entregable: historia/videos/arco-estructura.md y los expedientes en 002/diseno, 003/diseno y 000-quiroz/diseno
   - Depende de: `e2b-saqueo-guion`
+  - Prevista: — · Real: 2026-11-21
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [videos/arco-estructura.md](historia/videos/arco-estructura.md) · [diseno/expediente.md](historia/videos/003-la-deuda-defraudada/diseno/expediente.md) · [diseno/expediente.md](historia/videos/002-saqueo-patriota/diseno/expediente.md) · [diseno/expediente-medir.md](historia/videos/000-quiroz/diseno/expediente-medir.md) · [videos/mapa-serie.md](historia/videos/mapa-serie.md)
+- [ ] **Guiones del Prólogo (puente) y de los episodios 1 a 4, escritos con escribidor-escribano y diseno-y-animacion y revisados por el Escribano** `e2-arco-guiones` — ⛔ bloqueado
+  - Entregable: historia/videos/005-la-plata-y-el-mercurio/guion.md, 002-saqueo-patriota/guion-v2.md, 003-la-deuda-defraudada/guion-v2.md, 004-el-lavado/guion.md y el puente de 001-el-hombre/guion.md
+  - Depende de: `e2-arco-estructura`
   - Prevista: — · Real: 2026-11-21 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Bloqueo: Decidido por Gerson (21 de noviembre de 2026): el 0·3 se parte, va el grabado de 1855, y ¿Se puede medir? y La cuenta dejan de ser episodios (la cuenta entra en cada video; la serie sigue por tramos de botín, mapa-serie.md). Falta: que apruebe la estructura del 0·2 al 0·4, el puente del 0·1 y el orden después del 0·4.
-  - Evidencia: [videos/arco-estructura.md](historia/videos/arco-estructura.md) · [diseno/expediente.md](historia/videos/003-la-deuda-defraudada/diseno/expediente.md) · [diseno/expediente.md](historia/videos/002-saqueo-patriota/diseno/expediente.md) · [diseno/expediente-medir.md](historia/videos/000-quiroz/diseno/expediente-medir.md) · [videos/mapa-serie.md](historia/videos/mapa-serie.md)
+  - Bloqueo: Espera las decisiones de Gerson: recortes propuestos por el Escribano en cada episodio (el Ep. 3 tiene fe; los Ep. 1, 2 y 4 la tienen al aplicar los recortes) y las frases que son inferencia nuestra. Después: adaptar narracion_construir.py y storyboard a los guiones v2 y regenerar la voz.
+  - Evidencia: [005-la-plata-y-el-mercurio/guion.md](historia/videos/005-la-plata-y-el-mercurio/guion.md) · [002-saqueo-patriota/guion-v2.md](historia/videos/002-saqueo-patriota/guion-v2.md) · [003-la-deuda-defraudada/guion-v2.md](historia/videos/003-la-deuda-defraudada/guion-v2.md) · [004-el-lavado/guion.md](historia/videos/004-el-lavado/guion.md)
 
 ## Máquinas
 
