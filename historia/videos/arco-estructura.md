@@ -16,7 +16,7 @@ Todo tiene que poder entenderse, y verse con gusto.
 | Ep. | Título | Periodo | Termina en | Pregunta que deja |
 |---|---|---|---|---|
 | Prólogo | Alfonso W. Quiroz | el autor | su primer caso: una deuda pagada con el guano | ¿dónde empieza esta historia? |
-| Ep. 1 | La plata y el mercurio | 1750–1820 | estructura por hacer (expediente en curso) | — |
+| Ep. 1 | La plata y el mercurio | 1750–1820 | Pezuela depuesto, el crédito de 1777 y las *Noticias secretas* en Londres (1826) | ¿cómo nace endeudado un país que acaba de liberarse? |
 | Ep. 2 | Saqueo patriota | 1777–1849 | Londres arreglado; la pila de reclamos de adentro sin reconocer | ¿y qué pasó cuando se pagó la de adentro? |
 | Ep. 3 | La deuda defraudada | 1850–1852 | Mendiburu sale para Londres con una carta de recomendación | ¿qué iba a hacer allá? |
 | Ep. 4 | El lavado | 1852–1871 | los que volvieron y el reparto de Dreyfus (1869) | ¿qué pasó con el guano que quedaba? → Ep. 5 (tramo IV) |
@@ -39,12 +39,17 @@ El 0·3 se partió en dos (episodios 3 y 4) porque así lo recomendaron el Escri
 **Expedientes** (citas textuales con página):
 - `002-saqueo-patriota/diseno/expediente.md`;
 - `003-la-deuda-defraudada/diseno/expediente.md`;
-- `000-quiroz/diseno/expediente-medir.md`.
+- `000-quiroz/diseno/expediente-medir.md`;
+- `000-quiroz/diseno/expediente-ep1-colonia.md`.
 
 **Hilos que cruzan el arco** (se siembran en un episodio y se cosechan en otro):
 
 | Hilo | Se siembra | Se cosecha |
 |---|---|---|
+| El «Discurso» secreto de Ulloa y Juan (1749) | Ep. 1 ESC 1 | Ep. 1 ESC 7 (lo lee Areche); Ep. 1 ESC 10 (se publica en Londres en 1826, el año del impago del Ep. 2) |
+| El crédito público de 1777, reestructurado en 1815 (pp. 115 y 119) | Ep. 1 ESC 10 | Ep. 2 ESC 1 |
+| Los caudillos heredan la red de los oficiales coloniales (p. 127) | Ep. 1 ESC 10 | Ep. 2 ESC 2 |
+| El método de la cuenta | Ep. 1 ESC 9 (se explica) | todos los demás (solo se recuerda) |
 | Echenique, joven oficial premiado con tierras confiscadas (Q, p. 132) | Ep. 2 ESC 2 | Ep. 3: es el presidente de 1851 |
 | Quirós, socio de Kinder y de Robertson en Londres, 1822–1825 (p. 154, n. 69) | Ep. 2 ESC 4 | Ep. 2 ESC 7: el primer contrato del guano |
 | Gibbs saca plata de contrabando en 1825, según Witt (p. 142, n. 33) | Ep. 2 ESC 6 | Ep. 2 ESC 8 (consignatario); Ep. 4 ESC 6 (prórroga secreta de 1853, sin castigo en 1856, p. 168) |
@@ -75,6 +80,181 @@ El 0·3 se partió en dos (episodios 3 y 4) porque así lo recomendaron el Escri
 
 **Otras correcciones del Prólogo:**
 - **ESC 0, la cifra.** Dice «…de cada diez soles, se fueron entre tres y cuatro… Cada año». Quiroz habla de un costo «equivalente a», que incluye la inversión que nunca llegó al presupuesto. Tampoco hay cifras año por año, y entre 1900 y 1919 fue cerca del 1 % (cuadro A.6). Propuesta: «costó, en promedio, el equivalente a tres o cuatro de cada diez soles que gastaba el Estado».
+
+---
+
+## Ep. 1 · La plata y el mercurio (1750–1820)
+
+**Pregunta central:** ¿cómo se roba un imperio desde adentro, si las autoridades son las que roban?
+**Palabra del episodio:** *el premio* (Q, p. 122). Quiroz llama así lo que el virrey ganaba repartiendo cargos, y lo toma del libro de Moreno Cebrián y Sala i Vila, *El «premio» de ser virrey* (n. 80). Alternativa: *corruptela*, la palabra de la época (p. 76, n. 39).
+**Botín confirmado con el libro:** el **cargo** (comprado al rey o pagado al virrey) y lo que se exprimía desde él:
+- el tributo y el trabajo de los indios;
+- el mercurio de Huancavelica;
+- la plata sin quintar que salía de contrabando.
+
+En el cuadro 1.1, lo que sacaban los que tenían cargos es la columna más grande en todos los gobiernos: entre el 40 % y el 80 % del total (p. 124).
+**Denunciante del capítulo:** Antonio de Ulloa (p. 55). El Prólogo ya lo anunció: «Intentó limpiarla. Y perdió.»
+**Fuente:** `000-quiroz/diseno/expediente-ep1-colonia.md`. Casi todo lo de Huancavelica viene de la «Relación» y las cartas de Ulloa, y en la voz va «según Ulloa».
+**Conceptos que presenta:**
+- cargo venal (un cargo que se compraba);
+- corregidor;
+- reparto forzoso;
+- mita;
+- quinto real (el impuesto del 20 % sobre la plata);
+- plata piña (la plata sin quintar);
+- juicio de residencia;
+- y, por primera vez en la serie, la cuenta de Quiroz (cómo mide y contra qué compara).
+
+| # | Escena | Responde | Cambio |
+|---|---|---|---|
+| 0 | Gancho: Huancavelica, 1758 | todas | de «un gobierno nuevo» a «el saliente no entrega las cuentas, y gana 150 veces lo que un minero» |
+| 1 | El informe secreto | quiénes denuncian | de «la colonia era un orden» a «dos viajeros escribieron que el abuso empezaba en los que debían corregirlo» |
+| 2 | Cargos en venta | desde cuándo | de «el rey nombraba a sus funcionarios» a «el rey les vendía el cargo, y el virrey cobraba su premio» |
+| 3 | Lo que se sacaba desde abajo | cómo | de «el cargo cuesta» a «el cargo se recupera exprimiendo a los indios» |
+| 4 | Purgatorio minero | cómo | de «la mina da plata al rey» a «el mercurio del rey hacía plata para los particulares» |
+| 5 | Plata y contrabando | cuánto | de «la plata va a España» a «la plata sale de contrabando, y el virrey cobra su parte» |
+| 6 | Ulloa contra la red | impunes | de «llega el honesto» a «al honesto lo acusan de lo mismo, y pierde» |
+| 7 | Las reformas y la rebelión | por qué no se arregló | de «la Corona reforma» a «la reforma se agota, y la rebelión estalla contra el reparto» |
+| 8 | Residencias que no castigaban | impunes | de «había juicios» a «los juicios absolvían» |
+| 9 | La cuenta de la colonia | cuánto | de «se robaba» a «costaba entre la cuarta parte y casi todo lo que gastaba el Estado» |
+| 10 | Lo que hereda la república | → Ep. 2 | de «se acaba la colonia» a «el sistema pasa entero a la república» |
+
+### ESC 0 · Gancho: Huancavelica, 1758 (≈ 40 s)
+- **Hechos:**
+  - 4 de noviembre de 1758: Antonio de Ulloa asume como gobernador de Huancavelica. El interino Vega no le entrega las cuentas de la tesorería, del gremio de mineros ni del azogue (p. 59, n. 1).
+  - Según Ulloa, Vega ganaba por medios ilícitos más de 30 000 pesos al año; un minero libre ganaba unos 200, un oficial de caja 400 y un oidor entre 4 000 y 5 000 (p. 85).
+- **Pregunta:** ¿cómo se gana eso en un cargo de provincia?
+- **Cumple la promesa del Prólogo** («Huancavelica, 1758»).
+- **→ PERO** Ulloa ya sabía lo que iba a encontrar.
+- **Carga:** 4.
+
+### ESC 1 · El informe secreto (≈ 70 s)
+- **Responde:** ¿quiénes denuncian?
+- **Hechos:**
+  - Ulloa y Jorge Juan recorren el virreinato entre 1735 y 1744 y en 1749 escriben un «Discurso» secreto para el rey (pp. 60–62).
+  - Su frase: «Empieza el abuso del Perú desde aquellos que debieran corregirlo» (p. 72).
+  - Quiroz lo llama «un texto fundador de la tradición anticorrupción» (p. 62).
+  - Las palabras ya existían: corruptela, cohecho y prevaricato estaban en el *Diccionario de autoridades* (p. 43, n. 13). Solo la entrada de corruptela está textual en el libro (p. 76, n. 39). Así se responde, sin nombrarla, la objeción de que llamar corrupción a esto es anacrónico.
+- **Hilo:** el «Discurso» lo va a leer Areche (ESC 7) y se publicará en Londres en 1826 (ESC 10).
+- **→ POR ESO** hay que ver de dónde venía ese abuso.
+- **Carga:** 4.
+
+### ESC 2 · Cargos en venta (≈ 70 s)
+- **Responde:** ¿desde cuándo?
+- **Hechos:**
+  - La Corona vende cargos desde 1633; el de corregidor desde 1678 y el de oidor desde 1687 (pp. 70–72, n. 25).
+  - En la década de 1690, el conde de Cañete compra el propio virreinato por 250 000 pesos (n. 25).
+  - El «premio» del virrey: lo que ganaba repartiendo cargos, comisiones y negocios (p. 122). Es la palabra del episodio.
+  - La venta de cargos se abole recién en 1812 (n. 25).
+- **Silencio** con la palabra, quieta.
+- **→ POR ESO**, quien compraba un cargo quería recuperar lo que había pagado.
+- **Carga:** 5.
+
+### ESC 3 · Lo que se sacaba desde abajo (≈ 70 s)
+- **Responde:** ¿cómo?
+- **Hechos:**
+  - El corregidor cobraba el tributo de más y llevaba doble contabilidad (pp. 67–69).
+  - El reparto forzoso: la venta obligada de mercancías y mulas a los indios (p. 68). Ulloa y Juan le echan la culpa de la rebelión de Juan Santos Atahualpa, en 1742 (p. 68).
+  - Las cajas de censos de los indios, vaciadas por la colusión entre cobradores y deudores (p. 69).
+  - La mita, el trabajo forzado en las minas (pp. 80 y 90).
+- **Imagen:** Guamán Poma, f. 495 (fig. 1 del libro; Biblioteca Real de Copenhague), el primer denunciante, hacia 1615 (p. 77). Dominio público [VERIFICAR la reproducción].
+- **Respeto:** los indios no son víctimas sin nombre. La imagen es la de Guamán Poma, uno de ellos que denunció.
+- **→ PERO** el cargo más codiciado estaba en una mina.
+- **Carga:** 4.
+
+### ESC 4 · Purgatorio minero (≈ 80 s)
+- **Responde:** ¿cómo?
+- **Hechos:**
+  - Huancavelica y su mercurio. [VERIFICAR en el expediente la frase sobre la dependencia de la plata del mercurio antes de decirla.]
+  - El rey le fiaba mercurio a los mineros, y ese mercurio se vendía a particulares para hacer plata piña, que no pagaba el quinto real del 20 % (pp. 84, 86–87 y 92).
+  - Los adelantos del erario a los mineros no se cobraban (p. 122, costo iii).
+  - Antes de Ulloa: en 1622, Aponte denunció la codicia y se retiró «sin ningún premio»: «los que tienen pueden y los pobres mueren» (p. 78, n. 44). En 1645, a Vasconcelos le rechazaron su plan para la mina (p. 81).
+- **→ POR ESO** la plata sin quintar tenía adónde ir.
+- **Carga:** 5.
+
+### ESC 5 · Plata y contrabando (≈ 70 s)
+- **Responde:** ¿cuánto?
+- **Hechos:**
+  - Con plata piña, los comerciantes de Lima compraban contrabando (pp. 92–93).
+  - Pisco, 1707–1710: el virrey Castelldosrius cobra el 25 % del contrabando de tres barcos franceses, unos 3 millones de pesos (pp. 94–95).
+  - El fiscal del Consejo habla de 100 millones en diez años y de un palacio convertido en «burdel» (p. 95). Se atribuye.
+  - Fue separado del cargo en 1709, «una sanción con escasos precedentes», y murió en 1710. Su residencia de 1717 «no sancionó pena seria a sus herederos» (p. 95).
+- **Nota:** es antes de 1750, y funciona como «antes de Ulloa». Coincide con el pico de los cuadros.
+- **→ PERO** cincuenta años después, un gobernador quiso pararlo.
+- **Carga:** 5.
+
+### ESC 6 · Ulloa contra la red (≈ 100 s)
+Es el clímax.
+- **Responde:** ¿impunes?
+- **Hechos en la voz:**
+  - En octubre de 1760, Ulloa encarcela a los veedores.
+  - Según Ulloa, la gobernación cargaba un soborno «acostumbrado» de 10 000 pesos para el virrey Amat, y él se negó a pagarlo (p. 88).
+  - A fines de 1761, la visita del oidor Mesía libera a los presos e interrumpe el proceso (pp. 87–88).
+  - La residencia de Holgado acusa a Ulloa «de haber cometido los mismos delitos» (p. 88).
+  - Ulloa deja el Perú en 1764 (p. 88). Él lo llamó «un purgatorio de continuos desabrimientos» (p. 83).
+  - «…y perdió» (pp. 83–84). La frase del Prólogo se cierra aquí.
+  - Amat encarcela a su fiador, Juan de Alasta, que «mostró señales de locura» en prisión (p. 90).
+- **El debate, en una línea:** algunos historiadores dicen que Ulloa no supo negociar con los corruptos. Quiroz responde que para ellos «la corrupción fue un factor necesario, y hasta positivo» (p. 89, n. 71).
+- **Silencio** después de «perdió».
+- **→ PERO** la Corona igual intentó reformar.
+- **Carga:** 6.
+
+### ESC 7 · Las reformas y la rebelión (≈ 80 s)
+- **Responde:** ¿por qué no se arregló?
+- **Hechos:**
+  - Desde 1777, el visitador Areche trabaja con una copia del «Discurso» de Ulloa (pp. 60 y 110).
+  - En 1780, José Gabriel Condorcanqui, Túpac Amaru II, se rebela contra los corregidores, el reparto, el tributo y la mita, después de fracasar por la vía legal (pp. 112–113).
+  - En 1784 llegan las intendencias y se abolen los corregimientos y el reparto (p. 114).
+  - Los reformadores salen todos: Areche «impopular» (p. 113) y Escobedo llamado a Madrid en 1787 (p. 116).
+  - Quiroz titula esta parte «Decreciente celo reformista».
+- **Respeto:** Túpac Amaru no es una figura decorativa. Se dice qué denunció.
+- **→ POR ESO**, al final, los juicios no castigaban.
+- **Carga:** 6.
+
+### ESC 8 · Residencias que no castigaban (≈ 60 s)
+- **Responde:** ¿impunes?, el balance.
+- **Hechos:**
+  - Las residencias eran «mecanismos administrativos tradicionales de prominente ineficacia». «La mayoría de las veces, los residenciados eran absueltos o reprendidos levemente» (p. 69).
+  - Los castigos claros caen sobre funcionarios medianos o sobre los que denuncian, como Ulloa y Alasta [INF del expediente, §6].
+  - De los virreyes, solo Castelldosrius y Pezuela pierden el cargo, y el libro no registra una pena por corrupción.
+  - La residencia de Amat tuvo 121 piezas y demandas por más de 750 000 pesos, y el libro no da la sentencia (pp. 106–109). La voz dice «el libro no registra una condena», no «salió impune».
+- **«El historiador no es juez»:** «La falta de sentencias condenatorias no implica que no haya habido corrupción» (p. 43).
+- **→ POR ESO**, ¿cuánto costó?
+- **Carga:** 4.
+
+### ESC 9 · La cuenta de la colonia (≈ 80 s)
+Es la primera cifra de la serie, así que aquí se cuenta el método.
+- **Responde:** ¿cuánto?
+- **El método, en dos frases de voz:** Quiroz suma cuatro costos (el premio del virrey, lo que sacaban los cargos, la ineficiencia y el contrabando; p. 122) y los compara con lo que gastaba el Estado y con el PBI. Las cautelas: «de modo conservador», «provisionalmente» (p. 122).
+- **Hechos:**
+  - Cuadro 1.2 (p. 125): según la década, costó el equivalente a entre el 28 % y el 88 % del gasto. En 1750–1779, entre el 43 % y el 59 %. En 1810–1819, el 41 % y el 4 % del PBI (pp. 123 y 125–126).
+  - **Cautela que se dice:** el 88 % de 1710–1719 sale de un gasto hundido, no de un robo récord (expediente, §5.2).
+  - Cuadro 1.1 (p. 124): en todos los gobiernos, lo más grande es lo que sacaban los que tenían cargos.
+- **Imagen:** la barra de una década, traducida: «de cada cien pesos que gastaba el Estado…».
+- **Hueco:** el libro no explica cómo pasa de los ocho gobiernos del cuadro 1.1 a las catorce décadas del 1.2, ni por qué dice «30 %» para 1780–1809 cuando sus décadas dan 33 %. En pantalla va la cifra del cuadro.
+- **→ PERO** la colonia se acaba, y su sistema no.
+- **Carga:** 4.
+
+### ESC 10 · Lo que hereda la república (≈ 50 s)
+- **Responde:** el puente al Ep. 2.
+- **Hechos:**
+  - En 1821, La Serna depone al virrey Pezuela «por sus claras falencias, defectos militares y venalidad» (p. 121).
+  - El crédito público de 1777, reestructurado en 1815, pasa a la república (pp. 115 y 119).
+  - Los caudillos heredan la red de los oficiales coloniales (p. 127; p. 72, n. 31).
+  - En 1826, un comerciante inglés publica en Londres el informe secreto de Ulloa y Juan, *Noticias secretas de América*, «para advertir» a los inversionistas (p. 61). Es el mismo año en que el Perú deja de pagar sus préstamos de Londres (Ep. 2).
+- **Tarjeta:** `PRÓXIMO · EPISODIO 2 · SAQUEO PATRIOTA`.
+- **Carga:** 4.
+
+**Duración estimada:** unos 12–13 min.
+
+**Imágenes de época:**
+- Guamán Poma, f. 495: dominio público [VERIFICAR la reproducción].
+- El retrato de Amat de Cristóbal Aguilar (1769) es de dominio público, pero la foto del libro es de Daniel Giannoni: hay que buscar otra reproducción. Su medallón se redibuja desde un retrato de dominio público, nunca se genera con IA.
+
+**Contradicciones del libro que no van a la voz:**
+- Huancavelica aparece cerrada en 1812 (p. 119) y produciendo en 1813 (p. 89).
+- Superunda gobierna desde 1745 en la p. 87 y desde 1741 en la p. 105.
+- El asesor de Amat se llama «José» en el texto y «Juan» Perfecto Salas en el pie de la fig. 2.
 
 ---
 
@@ -118,8 +298,7 @@ El Ep. 3 da todos estos conceptos por sabidos.
 - **Responde:** ¿desde cuándo?
 - **Hechos:**
   - Presenta la deuda de adentro (con los propios habitantes) y la de afuera (con acreedores extranjeros).
-  - El crédito público colonial de 1777, «legado prominente para el Perú republicano» (p. 119).
-  - Los préstamos «voluntarios o forzados» que se les pedían a los comerciantes de Lima (p. 129).
+  - Recuerda el Ep. 1: el crédito público de 1777, «legado prominente para el Perú republicano» (p. 119), y los préstamos «voluntarios o forzados» que se les pedían a los comerciantes de Lima (p. 129).
   - Más de 14 millones de deuda colonial heredada (p. 136) y cerca de 7 millones de los primeros gobiernos.
 - **→ POR ESO**, con una guerra que pagar y sin plata, los jefes tomaron lo que había (la causa es la guerra, p. 129).
 - **Carga:** 4.
@@ -219,7 +398,7 @@ No se corta: presenta los conceptos que usa el Ep. 3.
   - La Fuente, que vuelve al poder (pp. 153 y 158);
   - la pena de muerte que no se aplicaba (p. 144).
   - Contraejemplo: La Mar (n. 48), si el expediente lo sostiene.
-- **La cuenta del tramo** (primera vez en la serie). El método va en dos frases de voz: qué suma Quiroz (lo desviado y la inversión que no llegó) y contra qué lo compara (lo que gastaba el Estado). Las cautelas se dicen: «estimado», «provisional». En pantalla, el cuadro A.3, con 27, 22 y 25 millones de pesos en los años veinte, treinta y cuarenta (pp. 546–548). En la voz, una sola cifra traducida: la independencia temprana costó el equivalente a más que todo lo que gastaba el Estado en un año (cuadro A.7: 139 %).
+- **La cuenta del tramo.** El método ya se contó en el Ep. 1: aquí solo se recuerda en una frase, y se agrega lo nuevo de la república, la inversión que no llegó. En pantalla, el cuadro A.3, con 27, 22 y 25 millones de pesos en los años veinte, treinta y cuarenta (pp. 546–548). En la voz, una sola cifra traducida: la independencia temprana costó el equivalente a más que todo lo que gastaba el Estado en un año (cuadro A.7: 139 %).
 - **Bisagra con el Ep. 3 (p. 169):** Londres quedó arreglado, pero lo tomado y lo prestado adentro seguía siendo una pila de reclamos sin reconocer. Y esa deuda también se iba a pagar con el guano.
 - **Tarjeta:** `PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA`.
 - **Carga:** 6 en la voz.
