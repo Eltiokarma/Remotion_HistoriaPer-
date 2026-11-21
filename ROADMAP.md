@@ -471,8 +471,8 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Entregable: historia/laboratorio/muestras/17-animatic-s04/ y videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md; MP4 fuera de git
   - Depende de: `e2-animatic-s03`
   - Prevista: — · Real: 2026-11-21 → …
-  - Tiempo: H ¿? · A ¿? · R 210.8 s en contenedor · tokens ¿?
-  - Evidencia: [diseno/plan-animatic-s04.md](historia/videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md) · [17-animatic-s04/README.md](historia/laboratorio/muestras/17-animatic-s04/README.md) · [resultados/render-A.json](historia/laboratorio/muestras/17-animatic-s04/resultados/render-A.json)
+  - Tiempo: H ¿? · A ¿? · R 289.9 s en contenedor · tokens ¿?
+  - Evidencia: [diseno/plan-animatic-s04.md](historia/videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md) · [17-animatic-s04/README.md](historia/laboratorio/muestras/17-animatic-s04/README.md) · [resultados/render-A.json](historia/laboratorio/muestras/17-animatic-s04/resultados/render-A.json) · [17-animatic-s04/INFORME.md](historia/laboratorio/muestras/17-animatic-s04/INFORME.md)
 
 ## Máquinas
 

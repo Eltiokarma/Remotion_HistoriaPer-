@@ -33,3 +33,32 @@ Gerson, al ver A1: «Se ve bien, pero en partes tiene poco movimiento, se desper
 **Lo que funciona y no se toca:** la pila que crece vale por vale, la palabra a pantalla completa, el viaje con su tic y la mancha.
 
 **Lo que no se cambió:** los respiros de montaje siguen quietos a propósito (CLAUDE §8: la imagen terminada sostiene el párrafo).
+
+### A3: cámara con motivo en los tramos de sentido
+
+A2 tenía más información, pero la medición seguía casi igual: los datos nuevos entran y se quedan fijos. En A3 se agrega un acercamiento lento de cámara (peso `solemne`) hacia lo que la voz examina, solo en los tramos de sentido que seguían quietos. La cámara vuelve a 1 con la salida de cada plano. Los respiros y la palabra del episodio siguen quietos a propósito.
+
+| Tramo | Escala | Hacia | Motivo |
+|---|---|---|---|
+| 4.1, de «Esos millones» a «uno por uno» | 1 → 1,06 | la pila y su diferencia | lo que hay que revisar |
+| 4.2, frase 8 | 1 → 1,07 | la red | la palabra que pasa de una ley a unas personas |
+| 4.3, del 40 % al final | 1 → 1,05 | las barras | la ganancia de convertir |
+
+**Medición** (diferencia media entre cuadros < 0,15, a 10 fps; mismo método en las tres):
+
+| Versión | Tiempo quieto | Tramos quietos de más de 2 s | Render (contenedor) |
+|---|---:|---|---:|
+| A1 | 76 % | 11, el más largo de 8,4 s | 210,8 s |
+| A2 | 75 % | 12, el más largo de 7,1 s | 237,8 s |
+| A3 | 48 % | 6 | 289,9 s |
+
+Los seis tramos quietos de A3:
+
+- **El respiro final** (79,6–82,4 s).
+- **De «docenas» hasta la salida de la palabra del episodio** (31,2–43,1 s). Contiene la palabra a pantalla completa, que es quieta a propósito.
+- **Antes de «cinco»** (9,8–12,0 s): la mesa espera la cifra.
+- **Antes de «casi»** (65,4–67,6 s): 2,2 s.
+
+Los dos últimos se pueden aceptar.
+
+Sigue pendiente la prueba con otra persona: preguntarle, sin anticipar nada, «¿qué pasó con los vales y por qué convenía cambiarlos?».
