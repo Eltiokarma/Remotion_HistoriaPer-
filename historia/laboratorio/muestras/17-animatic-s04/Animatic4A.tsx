@@ -136,6 +136,13 @@ export const Animatic4A: React.FC = () => {
   const c2In = k(F(13) + 0.2, 0.6, 'pesado');
   const contrato2 = pose(mix(-400, lima[0] + 60, c2In), lima[1] - 380, 260);
   const rMitad = k(P.mitad - 0.1, 0.5, 'natural');
+  // cámara del mapa (A5): arranca cerca de Lima y se abre hacia Europa con «acreedores de fuera del país» (recorrido
+  // con motivo: el espacio que dice la voz); después, un acercamiento lento a los dos contratos antes de «la mitad»
+  const abreMapa = k(P.externa + 0.4, 5.5, 'solemne');
+  const junta2 = k(P.lima, P.mitad - P.lima, 'solemne') * (1 - k(P.mercado - 0.3, 0.6, 'natural'));
+  const mapaCam = voz < P.uribarren
+    ? { s: mix(1.35, 1, abreMapa), ox: lima[0], oy: lima[1] }
+    : { s: 1 + 0.05 * junta2, ox: 1000, oy: 520 };
   // en el mercado: vuelta a la mesa, vale a la izquierda, bono a la derecha
   const mesa43 = k(P.mercado - 0.3, 0.8, 'pesado');
   const bono = pose(mix(1960, 1030, mesa43), 260, 640);
@@ -294,7 +301,7 @@ export const Animatic4A: React.FC = () => {
 
         {/* 4.3 · el mapa de la escena 1: las casas del guano, el cambio y los dos contratos */}
         {mapa > 0.001 ? (
-          <AbsoluteFill style={{ opacity: mapa }}>
+          <AbsoluteFill style={{ opacity: mapa, transform: `scale(${mapaCam.s})`, transformOrigin: `${mapaCam.ox}px ${mapaCam.oy}px` }}>
             <Mapa paleta={PALETA} id="m4" origen={{ nombre: 'Lima', lon: -77.04, lat: -12.05 }}
               destinos={[{ nombre: 'París', lon: 2.35, lat: 48.86 }, { nombre: 'Londres', lon: -0.13, lat: 51.51 }]}
               rutas={[0, 0]} llegadas={[rUri, k(P.londres - 0.1, 0.4, 'natural')]} encuadre={ENC} t={t} />
