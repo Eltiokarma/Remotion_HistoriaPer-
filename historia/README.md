@@ -31,11 +31,25 @@ Para revisar un guion sin ver el video: `npm run escaleta -- 000-quiroz` escribe
 segundo a segundo, y un semáforo por escena (voz seguida, largo de frases, datos por minuto). El
 diagnóstico del video 000 está en `videos/000-quiroz/diagnostico.md`.
 
-**Los videos.** `000-quiroz` es la versión de trabajo de 10 min con todo el material del arco de
-presentación. Ese material se reparte en cuatro episodios (el plan está en
-`videos/000-quiroz/diagnostico.md`, §4): **0·1** `001-el-hombre` (separado y reescrito: 5:37), **0·2** `002-saqueo-patriota` (*Saqueo patriota*, agregado el 2026-11-21: el origen de la deuda), **0·3** `003-la-deuda-defraudada` (*La deuda defraudada*, 1850–1852), **0·4** *El lavado* (1852–1871; se partió del 0·3 el 2026-11-21, carpeta por crear). *¿Se puede medir?* y *La cuenta* ya
-no son episodios: la cuenta entra en cada video y la serie sigue por tramos cortados por botín
-(`videos/mapa-serie.md`, 2026-11-21). `000-quiroz` sigue siendo la fuente de sus escenas.
+**Los videos** (orden de la serie, decidido por Gerson el 2026-11-21). La serie va en orden
+cronológico, un tramo por botín (`videos/mapa-serie.md`), y la cuenta de Quiroz entra en cada
+video. El número de carpeta es un identificador interno (lo usan `src/registro.ts` y el render de
+GitHub) y no tiene que coincidir con el número del episodio.
+
+| Episodio | Título | Carpeta | Estado |
+|---|---|---|---|
+| Prólogo | *Alfonso W. Quiroz* (el hombre que le sacó la cuenta al Perú) | `001-el-hombre` | hecho (5:37); falta su puente final |
+| 1 | *La plata y el mercurio* (1750–1820) | `005-la-plata-y-el-mercurio`, por crear | expediente en curso |
+| 2 | *Saqueo patriota* (1777–1849) | `002-saqueo-patriota` | guion v1 y estructura v2 |
+| 3 | *La deuda defraudada* (1850–1852) | `003-la-deuda-defraudada` | voz de la escena 4 y animatic; estructura v2 |
+| 4 | *El lavado* (1852–1871) | `004-el-lavado`, por crear | estructura v2 |
+| 5 en adelante | los tramos IV a X y el epílogo | — | `videos/mapa-serie.md` |
+
+`000-quiroz` es la versión de trabajo de 10 min con todo el material de la presentación y sigue
+siendo la fuente de sus escenas. Su plan de cuatro episodios (`diagnostico.md` §4) quedó como
+historia: lo vigente está en `videos/arco-estructura.md` y `videos/mapa-serie.md`. Los documentos
+anteriores al 2026-11-21 nombran los episodios como «0·1»… «0·4»: 0·1 es el Prólogo y 0·2, 0·3 y
+0·4 son los episodios 2, 3 y 4.
 
 En el Studio hay una carpeta por video (el video entero y **cada escena sola**, para trabajarla
 sin esperar el resto) y la carpeta **catalogo** (ver «Reciclar» más abajo).

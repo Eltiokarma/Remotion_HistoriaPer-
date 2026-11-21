@@ -1,4 +1,4 @@
-# El arco de presentación, escena por escena
+# Del Prólogo al Ep. 4, escena por escena
 
 **Versión 2 de la estructura (21 de noviembre de 2026).** Corrige la versión 1 con el acta del Escribano (al final). Todavía no es guion: es el plan que el guion va a seguir. La voz se escribe cuando Gerson apruebe esta estructura, y el Escribano revisa después la voz completa.
 
@@ -11,20 +11,21 @@
 
 Todo tiene que poder entenderse, y verse con gusto.
 
-**Orden del arco.** Gerson decidió el 21 de noviembre de 2026 partir el 0·3 en dos:
+**Orden de la serie** (Gerson, 21 de noviembre de 2026): el 0·1 pasa a ser el **Prólogo**, con el nombre del autor; el **episodio 1** es la colonia (tramo I); el 0·3 se parte en los episodios 3 y 4. Desde ahí, la serie sigue en orden cronológico por tramos (`mapa-serie.md`).
 
 | Ep. | Título | Periodo | Termina en | Pregunta que deja |
 |---|---|---|---|---|
-| 0·1 | El hombre que le sacó la cuenta al Perú | Quiroz | una deuda que el Estado pagó con el guano | ¿cómo nace endeudado un país? |
-| 0·2 | Saqueo patriota | 1777–1849 | Londres arreglado; la pila de reclamos de adentro sin reconocer | ¿y qué pasó cuando se pagó la de adentro? |
-| 0·3 | La deuda defraudada | 1850–1852 | Mendiburu sale para Londres con una carta de recomendación | ¿qué iba a hacer allá? |
-| 0·4 | El lavado | 1852–1871 | los que volvieron y el reparto de Dreyfus (1869) | ¿qué pasó con el guano que quedaba? |
+| Prólogo | Alfonso W. Quiroz | el autor | su primer caso: una deuda pagada con el guano | ¿dónde empieza esta historia? |
+| Ep. 1 | La plata y el mercurio | 1750–1820 | estructura por hacer (expediente en curso) | — |
+| Ep. 2 | Saqueo patriota | 1777–1849 | Londres arreglado; la pila de reclamos de adentro sin reconocer | ¿y qué pasó cuando se pagó la de adentro? |
+| Ep. 3 | La deuda defraudada | 1850–1852 | Mendiburu sale para Londres con una carta de recomendación | ¿qué iba a hacer allá? |
+| Ep. 4 | El lavado | 1852–1871 | los que volvieron y el reparto de Dreyfus (1869) | ¿qué pasó con el guano que quedaba? → Ep. 5 (tramo IV) |
 
-**Cambio del 21 de noviembre de 2026 (Gerson):** *¿Se puede medir?* y *La cuenta* ya no son episodios. La cuenta entra en cada video con la cifra de su época, y el método queda implícito. La serie sigue por tramos cortados por botín, no por presidentes: ver [mapa-serie.md](mapa-serie.md). Lo que era el 0·5 está repartido entre el 0·2, el 0·3 y el 0·4 (tabla en `mapa-serie.md`), y la sección del 0·5 queda abajo solo como material.
+**Cambio del 21 de noviembre de 2026 (Gerson):** *¿Se puede medir?* y *La cuenta* ya no son episodios. La cuenta entra en cada video con la cifra de su época, y el método queda implícito. La serie sigue por tramos cortados por botín, no por presidentes: ver [mapa-serie.md](mapa-serie.md). Lo que iba a ser *¿Se puede medir?* está repartido entre el Ep. 2, el Ep. 3 y el Ep. 4 (tabla en `mapa-serie.md`), y esa sección queda abajo solo como material.
 
-Así lo recomendaron el Escribano y el Escribidor: entero, el 0·3 duraba 15–16 min.
+El 0·3 se partió en dos (episodios 3 y 4) porque así lo recomendaron el Escribano y el Escribidor: entero, duraba 15–16 min.
 
-**Monedas en todo el arco:** una libra esterlina equivale a unos 5 pesos (Q, p. 165), y Quiroz toma 1 peso igual a 1 dólar para todo el siglo XIX (cuadro A.3, p. 546). Se presentan en el 0·2 y no se vuelven a explicar.
+**Monedas en todo el arco:** una libra esterlina equivale a unos 5 pesos (Q, p. 165), y Quiroz toma 1 peso igual a 1 dólar para todo el siglo XIX (cuadro A.3, p. 546). Se presentan en el Ep. 2 y no se vuelven a explicar.
 
 **Una sola serie de cifras del costo de la corrupción:** el cuadro A.3 (p. 546), década por década. El A.2 y el A.7 usan otras bases y no se mezclan con él.
 
@@ -44,39 +45,40 @@ Así lo recomendaron el Escribano y el Escribidor: entero, el 0·3 duraba 15–1
 
 | Hilo | Se siembra | Se cosecha |
 |---|---|---|
-| Echenique, joven oficial premiado con tierras confiscadas (Q, p. 132) | 0·2 ESC 2 | 0·3: es el presidente de 1851 |
-| Quirós, socio de Kinder y de Robertson en Londres, 1822–1825 (p. 154, n. 69) | 0·2 ESC 4 | 0·2 ESC 7: el primer contrato del guano |
-| Gibbs saca plata de contrabando en 1825, según Witt (p. 142, n. 33) | 0·2 ESC 6 | 0·2 ESC 8 (consignatario); 0·4 ESC 6 (prórroga secreta de 1853, sin castigo en 1856, p. 168) |
-| Montané, socio de Gibbs en los años cuarenta (V, n. 42) | 0·2 ESC 8 | 0·4: la conversión |
-| La Fuente depone a Riva-Agüero (1823) y lo acusa (1824) | 0·2 ESC 4 | 0·2 ESC 6 (prefecto); 0·3 ESC 4 (las cartas de los vales) |
-| Iturregui propone en 1827 comprar en secreto los bonos depreciados (p. 141) | 0·2 ESC 5 | 0·4 ESC 2: una línea, «la idea ya existía» |
-| El millón de Bolívar (1826) | 0·2 ESC 3 | 0·4 ESC 3: lo cobran sus herederos en 1853; Elías denuncia sobornos (pp. 172 y 176) |
-| Heinrich Witt, comerciante alemán en Lima | 0·2 ESC 6 (1825) | 0·4 ESC 6 (1871): «se engañaban enormemente» (p. 190) |
-| La tesis de Quiroz (1980) y el libro *La deuda defraudada* (1987) | 0·1 ESC 6 | 0·3 cierre |
+| Echenique, joven oficial premiado con tierras confiscadas (Q, p. 132) | Ep. 2 ESC 2 | Ep. 3: es el presidente de 1851 |
+| Quirós, socio de Kinder y de Robertson en Londres, 1822–1825 (p. 154, n. 69) | Ep. 2 ESC 4 | Ep. 2 ESC 7: el primer contrato del guano |
+| Gibbs saca plata de contrabando en 1825, según Witt (p. 142, n. 33) | Ep. 2 ESC 6 | Ep. 2 ESC 8 (consignatario); Ep. 4 ESC 6 (prórroga secreta de 1853, sin castigo en 1856, p. 168) |
+| Montané, socio de Gibbs en los años cuarenta (V, n. 42) | Ep. 2 ESC 8 | Ep. 4: la conversión |
+| La Fuente depone a Riva-Agüero (1823) y lo acusa (1824) | Ep. 2 ESC 4 | Ep. 2 ESC 6 (prefecto); Ep. 3 ESC 4 (las cartas de los vales) |
+| Iturregui propone en 1827 comprar en secreto los bonos depreciados (p. 141) | Ep. 2 ESC 5 | Ep. 4 ESC 2: una línea, «la idea ya existía» |
+| El millón de Bolívar (1826) | Ep. 2 ESC 3 | Ep. 4 ESC 3: lo cobran sus herederos en 1853; Elías denuncia sobornos (pp. 172 y 176) |
+| Heinrich Witt, comerciante alemán en Lima | Ep. 2 ESC 6 (1825) | Ep. 4 ESC 6 (1871): «se engañaban enormemente» (p. 190) |
+| La tesis de Quiroz (1980) y el libro *La deuda defraudada* (1987) | Prólogo ESC 6 | Ep. 3 cierre |
 
 ---
 
-## 0·1 · El final (solo el puente)
+## Prólogo · El final (solo el puente)
 
 **Hoy:** la ESC 6 lleva del guano a «una deuda que el Estado decidió pagar con esa plata, en 1850» y termina en «¿Adónde fue a parar esa plata?». La ESC 7 dice «Próximo episodio: La deuda defraudada» (`001-el-hombre/guion.md`, l. 191).
 
-**Propuesta de voz** (lo último que oye el espectador es la pregunta del 0·2):
-> «…¿Adónde fue a parar esa plata? [PAUSA 1s] Pero esa deuda no nació en mil ochocientos cincuenta: venía de la guerra de independencia y, una parte, de la colonia. [PAUSA 1s] ¿Cómo nace endeudado un país que acaba de liberarse?»
+**Propuesta de voz.** Ya no lleva al Ep. 2 sino al Ep. 1, la colonia. El primer caso de Quiroz se queda como anzuelo, y el puente lleva al comienzo de su libro:
+> «…¿Adónde fue a parar esa plata? [PAUSA 1s] Para contestarlo, Quiroz no empezó en mil ochocientos cincuenta. Su libro empieza un siglo antes, en las minas del virreinato. [PAUSA 1s]»
 
-**Fuentes, citadas por separado:**
-- Q, p. 170: «los créditos no reconocidos que databan de la guerra de independencia».
-- Prólogo de Cueto, p. 17: «la deuda interna que se arrastraba desde el periodo colonial».
-- Q, p. 136: 14 millones de deuda colonial heredada.
+**Fuentes:**
+- El capítulo 1 empieza en 1750: «El fracaso de las reformas coloniales, 1750-1820» (Q, índice y p. 59).
+- La sección «Purgatorio minero» trata de Huancavelica.
+- [VERIFICAR con el expediente del Ep. 1 antes de nombrar el mercurio en la voz.]
 
-**Tarjeta y voz de la ESC 7:** `PRÓXIMO · SAQUEO PATRIOTA`, sin año, porque el 0·2 va de 1777 a 1849. La voz cambia con ella: «Próximo episodio: Saqueo patriota».
+**Tarjeta y voz de la ESC 7:** `PRÓXIMO · EPISODIO 1 · LA PLATA Y EL MERCURIO`. La voz cambia con ella: «Próximo episodio: La plata y el mercurio».
 
-**Otras correcciones del 0·1:**
+**El Ep. 2 cambia con esto.** Su ESC 1 («Nacer debiendo») ya no presenta la colonia: la recuerda del Ep. 1 («En el episodio anterior…»).
+
+**Otras correcciones del Prólogo:**
 - **ESC 0, la cifra.** Dice «…de cada diez soles, se fueron entre tres y cuatro… Cada año». Quiroz habla de un costo «equivalente a», que incluye la inversión que nunca llegó al presupuesto. Tampoco hay cifras año por año, y entre 1900 y 1919 fue cerca del 1 % (cuadro A.6). Propuesta: «costó, en promedio, el equivalente a tres o cuatro de cada diez soles que gastaba el Estado».
-- **Referencias.** Si se parte el 0·3, las referencias a «0·5» del 0·1 (l. 85 y 194) se renumeran.
 
 ---
 
-## 0·2 · Saqueo patriota (versión 2)
+## Ep. 2 · Saqueo patriota (versión 2)
 
 **Pregunta central:** ¿cómo nace endeudado un país que acaba de liberarse?
 **Palabra del episodio:** *saqueo patriota* (Q, p. 130).
@@ -87,7 +89,7 @@ Así lo recomendaron el Escribano y el Escribidor: entero, el 0·3 duraba 15–1
 - bono, y qué es su precio («a 30» quiere decir 30 de cada 100), en la ESC 4;
 - consignatario y adelanto, en la ESC 8.
 
-El 0·3 da todos estos conceptos por sabidos.
+El Ep. 3 da todos estos conceptos por sabidos.
 
 | # | Escena | Responde | Cambio |
 |---|---|---|---|
@@ -138,7 +140,7 @@ El 0·3 da todos estos conceptos por sabidos.
 - **Responde:** ¿cuánto?
 - **Hechos:**
   - Bolívar confisca bienes y la plata de las iglesias.
-  - En 1826 el Congreso lo premia con más de un millón de pesos. Es la semilla del millón de Bolívar del 0·4.
+  - En 1826 el Congreso lo premia con más de un millón de pesos. Es la semilla del millón de Bolívar del Ep. 4.
   - El cónsul Tudor: «los invasores que vinieron…», con su palabra.
   - Los préstamos de emergencia adentro: unos 3 millones entre 1821 y 1845, y buena parte no se pagó hasta los años sesenta (V, p. 20).
   - La costumbre de tapar el saqueo con deuda pública, que pagaría la gente común.
@@ -165,7 +167,7 @@ El 0·3 da todos estos conceptos por sabidos.
   - 1826: el Estado deja de pagar. Los bonos bajan a 30 (n. 30) y después por debajo de 20 (V, p. 11).
   - Se cierra Londres; adentro siguen los préstamos de emergencia (ESC 3).
 - **En pantalla:** los 25 000 fusiles que Bolívar esperaba.
-- **Para el 0·4:** Iturregui, 1827, se guarda.
+- **Para el Ep. 4:** Iturregui, 1827, se guarda.
 - **→ PERO** mientras el Estado no pagaba, la plata del país seguía saliendo, y sin pagar derechos.
 - **Carga:** 5 en la voz.
 
@@ -192,11 +194,11 @@ El 0·3 da todos estos conceptos por sabidos.
 - **Carga:** 5.
 
 ### ESC 8 · La década de los adelantos (≈ 70 s)
-No se corta: presenta los conceptos que usa el 0·3.
+No se corta: presenta los conceptos que usa el Ep. 3.
 - **Responde:** ¿cómo?
 - **Hechos:**
   - Qué es un consignatario: la casa que vende el guano del Estado y cobra comisión. Qué es un adelanto: un préstamo a cuenta del guano que todavía no se vende.
-  - Gibbs es consignatario desde 1842 (p. 167). Su socio en el guano, Montané (V, n. 42), vuelve en el 0·4.
+  - Gibbs es consignatario desde 1842 (p. 167). Su socio en el guano, Montané (V, n. 42), vuelve en el Ep. 4.
   - Los adelantos cobran hasta el 1 % mensual (p. 166).
   - Según el diplomático estadounidense Clay, el gobierno recibió en pago de un cuarto de un préstamo papeles que valían alrededor de la quinta parte de lo que decían (p. 167, n. 105).
   - En la década, la mayor parte de los 5,5 millones de pesos del guano llegó como adelantos (V, p. 23).
@@ -218,7 +220,7 @@ No se corta: presenta los conceptos que usa el 0·3.
   - la pena de muerte que no se aplicaba (p. 144).
   - Contraejemplo: La Mar (n. 48), si el expediente lo sostiene.
 - **La cuenta del tramo** (primera vez en la serie). El método va en dos frases de voz: qué suma Quiroz (lo desviado y la inversión que no llegó) y contra qué lo compara (lo que gastaba el Estado). Las cautelas se dicen: «estimado», «provisional». En pantalla, el cuadro A.3, con 27, 22 y 25 millones de pesos en los años veinte, treinta y cuarenta (pp. 546–548). En la voz, una sola cifra traducida: la independencia temprana costó el equivalente a más que todo lo que gastaba el Estado en un año (cuadro A.7: 139 %).
-- **Bisagra con el 0·3 (p. 169):** Londres quedó arreglado, pero lo tomado y lo prestado adentro seguía siendo una pila de reclamos sin reconocer. Y esa deuda también se iba a pagar con el guano.
+- **Bisagra con el Ep. 3 (p. 169):** Londres quedó arreglado, pero lo tomado y lo prestado adentro seguía siendo una pila de reclamos sin reconocer. Y esa deuda también se iba a pagar con el guano.
 - **Tarjeta:** `PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA`.
 - **Carga:** 6 en la voz.
 
@@ -226,9 +228,9 @@ No se corta: presenta los conceptos que usa el 0·3.
 
 ---
 
-## 0·3 · La deuda defraudada (1850–1852)
+## Ep. 3 · La deuda defraudada (1850–1852)
 
-Es la parte A del 0·3 de la versión 1.
+Es la parte A del Ep. 3 de la versión 1.
 
 **Pregunta central:** ¿cómo se infla la deuda de un país que, por fin, puede pagarla?
 **Palabra del episodio:** *los consolidados* (Q, p. 174).
@@ -248,7 +250,7 @@ Es la parte A del 0·3 de la versión 1.
 ### ESC 0 · Gancho (≈ 30 s)
 - **Hechos:** 1851, 5 millones; 1852, 24 millones (p. 170). Casi cinco veces en un año.
 - **Pregunta:** ¿cómo se infla la deuda de un país?
-- **No promete** la junta ni la tabla rasa: eso es del 0·4.
+- **No promete** la junta ni la tabla rasa: eso es del Ep. 4.
 - **→ PERO** primero, de dónde salían esos papeles.
 - **Carga:** 3.
 
@@ -256,9 +258,9 @@ Es la parte A del 0·3 de la versión 1.
 Funde la ESC 1 y la ESC 2 de la versión 1.
 - **Responde:** ¿desde cuándo?
 - **Hechos:**
-  - Recuerda el cierre del 0·2: el guano da con qué pagar, y la pila de reclamos de adentro espera.
+  - Recuerda el cierre del Ep. 2: el guano da con qué pagar, y la pila de reclamos de adentro espera.
   - Presenta la consolidación y el vale.
-  - Echenique, el joven oficial premiado del 0·2, llega a presidente en 1851. Gastó en ganar la elección más de lo que podía ganar como presidente, y los consignatarios le hacían préstamos personales, según Clay (p. 168).
+  - Echenique, el joven oficial premiado del Ep. 2, llega a presidente en 1851. Gastó en ganar la elección más de lo que podía ganar como presidente, y los consignatarios le hacían préstamos personales, según Clay (p. 168).
   - Desde fines de los años cuarenta, los créditos de la independencia se fueron garantizando con vales, antes de la ley (p. 170).
   - Reclamos que antes de 1850 «prácticamente carecían de valor» se compraban «a muy bajo precio» (p. 170).
 - **Cautela en voz:** la fuente no dice que la ley se escribiera para el fraude ni cuándo empezaron las compras; dice «antes de la ley».
@@ -281,7 +283,7 @@ Funde la ESC 1 y la ESC 2 de la versión 1.
 - **Hechos:**
   - La escena actual (p. 171).
   - Se agrega: Torrico «le aseguró a Novoa que el reclamo solamente podría ser aprobado con su intervención».
-  - Se agrega: Novoa no fue la única operación de Elías como intermediario. Así Elías queda sembrado para el 0·4.
+  - Se agrega: Novoa no fue la única operación de Elías como intermediario. Así Elías queda sembrado para el Ep. 4.
 - **Silencio** después de los 948 500 pesos, como está.
 - **→ PERO** Novoa no fue un caso aislado.
 - **Carga:** 6.
@@ -289,7 +291,7 @@ Funde la ESC 1 y la ESC 2 de la versión 1.
 ### ESC 4 · «Me los firmara de preferencia» (≈ 75 s)
 - **Responde:** ¿quiénes?
 - **Hechos en la voz:**
-  - El mariscal La Fuente, «nuestro viejo conocido» (p. 174; el del 0·2), le escribe en enero de 1852 al ministro de Hacienda Mendiburu sobre vales por 98 000 pesos a nombre de otros: «Me haría U. un distinguido servicio si U. me los firmara de preferencia». En junio: «Estos 40 mil y pico de pesos me pertenecen a mí exclusivamente» (n. 121). Son prestanombres, en su propia letra [VERIFICAR el cargo de La Fuente en enero de 1852].
+  - El mariscal La Fuente, «nuestro viejo conocido» (p. 174; el del Ep. 2), le escribe en enero de 1852 al ministro de Hacienda Mendiburu sobre vales por 98 000 pesos a nombre de otros: «Me haría U. un distinguido servicio si U. me los firmara de preferencia». En junio: «Estos 40 mil y pico de pesos me pertenecen a mí exclusivamente» (n. 121). Son prestanombres, en su propia letra [VERIFICAR el cargo de La Fuente en enero de 1852].
   - El coronel Coz, intermediario, recibió vales por 731 200 pesos, el quinto monto más grande (n. 122). Quiroz llama a esos coroneles «figuras satélites intermediarias» (p. 175).
   - El suegro de Echenique, Pío Tristán, «repentinamente» recibió 124 000 pesos en vales (p. 175).
 - **En pantalla:**
@@ -311,11 +313,11 @@ Funde la ESC 1 y la ESC 2 de la versión 1.
 - **Carga:** 4.
 
 ### ESC 6 · Miles de familias (≈ 60 s)
-- **Responde:** ¿impunes? en 1852 nadie los paraba; la respuesta completa está en el 0·4.
+- **Responde:** ¿impunes? en 1852 nadie los paraba; la respuesta completa está en el Ep. 4.
 - **Hechos:**
   - Echenique decía que «fueron miles de familias las que se beneficiaron con la consolidación». Quiroz lo llama «cínica pretensión» y responde con los expedientes: la mayoría de los reclamantes originales quedaron fuera (p. 173).
-  - El cierre de Quiroz: aquí encontró su primer caso. La tesis de 1980 y el libro de 1987, *La deuda defraudada* (prólogo, p. 17). Cierra el hilo del 0·1.
-- **Bucle hacia el 0·4:** el 10 de septiembre de 1852, Echenique recomienda a Mendiburu ante la casa Murrieta de Londres (n. 139). Mendiburu se va con dos tareas (p. 179).
+  - El cierre de Quiroz: aquí encontró su primer caso. La tesis de 1980 y el libro de 1987, *La deuda defraudada* (prólogo, p. 17). Cierra el hilo del Prólogo.
+- **Bucle hacia el Ep. 4:** el 10 de septiembre de 1852, Echenique recomienda a Mendiburu ante la casa Murrieta de Londres (n. 139). Mendiburu se va con dos tareas (p. 179).
 - **Tarjeta:** `PRÓXIMO · EL LAVADO`.
 - **Carga:** 3.
 
@@ -323,9 +325,9 @@ Funde la ESC 1 y la ESC 2 de la versión 1.
 
 ---
 
-## 0·4 · El lavado (1852–1871)
+## Ep. 4 · El lavado (1852–1871)
 
-Es la parte B del 0·3 de la versión 1.
+Es la parte B del Ep. 3 de la versión 1.
 
 **Pregunta central:** ¿qué se hace con una deuda manchada para que nadie pueda tocarla?
 **Palabra del episodio:** *lavar* (Q, p. 181): «estas maniobras de conversión se diseñaron para "lavar" instrumentos financieros manchados».
@@ -354,7 +356,7 @@ Es la parte B del 0·3 de la versión 1.
 ### ESC 1 · De vuelta a Londres (≈ 60 s)
 - **Responde:** ¿desde cuándo?, del lado de afuera.
 - **Hechos:**
-  - Recuerda en una frase el arreglo de 1849 del 0·2.
+  - Recuerda en una frase el arreglo de 1849 del Ep. 2.
   - Echenique recomienda a Mendiburu ante Murrieta, y en el margen de la carta hay una nota de Mendiburu: «no resa [sic] esto en las memorias» (n. 139).
   - Mendiburu va a Londres como ministro plenipotenciario, a renegociar 1849 y a convertir la deuda de adentro (p. 179).
   - Murrieta emite nuevos bonos en febrero de 1853 (V, p. 24).
@@ -365,12 +367,12 @@ Es la parte B del 0·3 de la versión 1.
 - **Responde:** ¿cómo?
 - **Hechos:** la propuesta corregida por el Escribano (`003…/diseno/propuesta-s04-conversion.md`):
   - Hegan, agosto de 1852, 2 millones. En pantalla: quiso vender sus derechos del ferrocarril antes de construirlo (n. 143).
-  - Uribarren y Montané (el socio de Gibbs del 0·2). La conversión, hecha «silenciosamente».
+  - Uribarren y Montané (el socio de Gibbs del Ep. 2). La conversión, hecha «silenciosamente».
   - Las casas habían acumulado vales antes de firmar.
   - 40 % contra casi la par; 6 % contra 4,5 %.
   - Comprometer el crédito, e impedir que se investigara.
   - «Lavar»: la palabra del episodio, quieta.
-  - Iturregui, 1827, en una línea: la idea ya existía (0·2).
+  - Iturregui, 1827, en una línea: la idea ya existía (Ep. 2).
 - **Hueco que se dice:** si el «cerca del 46 %» incluye a Hegan (6 + 3 = 9 de 24 da 37,5 %; con Hegan, 11 de 24 da 45,8 %). La voz dice «casi la mitad».
 - **→ PERO** alguien habló.
 - **Carga:** 6.
@@ -379,7 +381,7 @@ Es la parte B del 0·3 de la versión 1.
 - **Responde:** ¿quiénes denuncian?, y la reacción.
 - **Hechos en la voz:**
   - Elías publica dos cartas en *El Comercio*, el 12 y el 16 de agosto de 1853 (n. 112 y 114).
-  - Entre los expedientes que denuncia está el millón de Bolívar, que cobraron sus herederos y que, según Elías, se tramitó con sobornos (pp. 172 y 176). Cierra el hilo del 0·2.
+  - Entre los expedientes que denuncia está el millón de Bolívar, que cobraron sus herederos y que, según Elías, se tramitó con sobornos (pp. 172 y 176). Cierra el hilo del Ep. 2.
   - Quiroz confirma «el grueso» de esas denuncias (p. 172).
   - Elías va preso; después encabeza la revolución (p. 172), en una guerra civil en casi todo el país (p. 181).
   - Sus intereses propios: el carguío del guano, con culíes, esclavos y presos (p. 162).
@@ -421,7 +423,7 @@ Es la parte B del 0·3 de la versión 1.
   - Echenique vuelve en 1861, es diputado en 1862 y recupera sus propiedades y salarios (p. 205).
   - Torrico gastó su «fortuna mal habida» en París, y en 1865 Pezet lo nombró ministro plenipotenciario en París (p. 200).
   - Mendiburu está entre los amigos de Echenique en el Congreso hacia 1860 (p. 205, n. 36).
-  - Gibbs: la prórroga secreta de 1853 y la comisión de 1856 que lo dejó «sin castigo» (p. 168). Cierra el hilo del 0·2.
+  - Gibbs: la prórroga secreta de 1853 y la comisión de 1856 que lo dejó «sin castigo» (p. 168). Cierra el hilo del Ep. 2.
   - Elías se retira en 1858 y muere en 1867 (p. 187).
   - En 1869 aparecen otra vez en el reparto del contrato Dreyfus «el viejo consolidado» Nicanor González, Casós y el hermano de Torrico (p. 208).
   - Según Witt, Cotes y Torrico «lograron legar sus mal habidas fortunas a sus respectivas viudas» (p. 176).
@@ -437,14 +439,14 @@ Es la parte B del 0·3 de la versión 1.
   - Este caso dejó papeles: reclamos, vales, cartas y el informe de una junta. Mucha corrupción se hace para no dejarlos (p. 538).
   - ¿Se puede medir la corrupción?
 - **La cuenta del tramo:** la década de 1850 costó el doble que la de 1840 (A.3; p. 188), traducida a lo que gastaba el Estado.
-- **El cierre ya no pregunta por el método** (Gerson, 21 de noviembre de 2026). Termina con el hilo que sigue: «el viejo consolidado» en el reparto de Dreyfus. Tarjeta: `PRÓXIMO · DREYFUS` o el tramo que Gerson elija (ver `mapa-serie.md`, «El orden después del 0·4»).
+- **El cierre ya no pregunta por el método** (Gerson, 21 de noviembre de 2026). Termina con el hilo que sigue: «el viejo consolidado» en el reparto de Dreyfus. Tarjeta: `PRÓXIMO · DREYFUS` o el tramo que Gerson elija (ver `mapa-serie.md`, «El orden después del Ep. 4»).
 - **Carga:** 2.
 
 **Duración estimada:** unos 10 min.
 
 ---
 
-## Material: lo que era el 0·5 (*¿Se puede medir la corrupción?*)
+## Material: lo que iba a ser *¿Se puede medir la corrupción?*
 
 Ya no es un episodio (Gerson, 21 de noviembre de 2026). Se conserva como material, y cada pieza va al video que la ilustra (`mapa-serie.md`).
 
@@ -471,7 +473,7 @@ Ya no es un episodio (Gerson, 21 de noviembre de 2026). Se conserva como materia
 
 ### ESC 0 · Gancho: 1995 (≈ 35 s)
 - **Persona y momento:** en 1995 Quiroz «se topó» con estudios nuevos sobre lo que la corrupción les hace a los países pobres (prefacio, p. 31; p. 536). Antes de eso, no había «ningún marco metodológico» para estudiarla (p. 536).
-- **Puente con el 0·4:** «este caso dejó papeles». Las transacciones se hacen «precisamente para evitar dejar huellas» (p. 538).
+- **Puente con el Ep. 4:** «este caso dejó papeles». Las transacciones se hacen «precisamente para evitar dejar huellas» (p. 538).
 - **Pregunta:** ¿cómo se mide?
 - **→ POR ESO** primero hay que decir qué se mide.
 - **Carga:** 3.
@@ -496,7 +498,7 @@ Ya no es un episodio (Gerson, 21 de noviembre de 2026). Se conserva como materia
   - Las percepciones son «altamente impresionables y frecuentemente manipuladas» (p. 42).
   - El índice de Transparencia Internacional cambia con «la cobertura de los medios, los escándalos y la política», y no sirve para comparar épocas (p. 537).
   - Contar palabras en los periódicos no sirve cuando la prensa estuvo censurada (p. 537).
-  - Los dos ciclos, percibido y sistémico (p. 48), con las capas de Braudel del 0·1.
+  - Los dos ciclos, percibido y sistémico (p. 48), con las capas de Braudel del Prólogo.
   - Un ejemplo [INF]: después de 2000, la percepción siguió alta con escándalos «menos graves» (pp. 521–522).
 - **→ PERO** también lo acusaban de anacrónico.
 
@@ -514,7 +516,7 @@ Ya no es un episodio (Gerson, 21 de noviembre de 2026). Se conserva como materia
 
 ### ESC 6 · «Sin condena no hay delito» (≈ 40 s)
 - **Hechos:** la prueba histórica «corresponde más al ámbito de la probabilidad que de la certeza absoluta. La falta de sentencias condenatorias no implica que no haya habido corrupción» (p. 43).
-- **Ejemplo:** los del 0·4, que huyeron y volvieron; no sabemos de ninguna condena.
+- **Ejemplo:** los del Ep. 4, que huyeron y volvieron; no sabemos de ninguna condena.
 - Las demás objeciones de las pp. 40–45, si las hay, se fijan al escribir la voz: el libro dice siete y el expediente identifica cinco.
 - **→ POR ESO** sí se puede medir, con cuidado.
 
@@ -522,7 +524,7 @@ Ya no es un episodio (Gerson, 21 de noviembre de 2026). Se conserva como materia
 - **Hechos:**
   - Se cuentan los fondos desviados, con «el debido cuidado en el uso de las fuentes» (p. 538).
   - Los tres costos: directo, indirecto (la inversión que no llegó y el contrabando) e institucional, «principalmente cualitativo» (pp. 535, 538 y 545).
-  - Calibra con dos décadas bien documentadas: la de 1850 (la del 0·3 y el 0·4) y la de 1990 (cuadros A.1 y A.2).
+  - Calibra con dos décadas bien documentadas: la de 1850 (la del Ep. 3 y el Ep. 4) y la de 1990 (cuadros A.1 y A.2).
   - Los mismos cinco rubros para todas las décadas, con extrapolación donde faltan datos (pp. 543–545).
   - Por qué en porcentajes del gasto y del PBI: los años 1870 tienen el monto más alto del siglo, pero el porcentaje del gasto más bajo (20 %; pp. 238 y 546–548). En el PBI fue 4,6 %. Las dos bases se presentan aquí.
   - Un ejemplo del método: de los préstamos de 1822 y 1825, el apéndice cuenta como costo de corrupción el 40 % (p. 544). No es lo mismo que «llegó la mitad».
@@ -540,14 +542,14 @@ Ya no es un episodio (Gerson, 21 de noviembre de 2026). Se conserva como materia
 ## Decisiones
 
 **Tomadas por Gerson el 21 de noviembre de 2026:**
-1. **Se parte el 0·3** en *La deuda defraudada* (0·3) y *El lavado* (0·4).
-   - El arco queda renumerado hasta *La cuenta* (0·6), en el README, el `diagnostico.md`, el 0·1 y la ficha del libro.
+1. **Se parte el Ep. 3** en *La deuda defraudada* (Ep. 3) y *El lavado* (Ep. 4).
+   - El arco queda renumerado (luego se cambió: ver el orden de la serie), en el README, el `diagnostico.md`, el Prólogo y la ficha del libro.
    - El expediente del método se llama ahora `expediente-medir.md`.
    - La carpeta `004-el-lavado` se crea cuando se escriba su voz.
-   - El animatic de la escena 4 que ya está hecho (A8) queda repartido: 4.1–4.2 y *los consolidados* van al 0·3, y 4.3 (Londres y el canje) va al 0·4.
+   - El animatic de la escena 4 que ya está hecho (A8) queda repartido: 4.1–4.2 y *los consolidados* van al Ep. 3, y 4.3 (Londres y el canje) va al Ep. 4.
 2. **Va el grabado de Torrico de 1855** («Gratitud de los gallinazos»). Es de dominio público por antigüedad y está registrado en `003-la-deuda-defraudada/fuentes.md`, junto con el de *La Zamacueca Política* de 1859 (Gibbs y Montané), que sirve para los adelantos.
 
-**Pendiente:** la frase del 0·1 sobre «de cada diez soles».
+**Pendiente:** la frase del Prólogo sobre «de cada diez soles».
 
 ---
 
@@ -556,8 +558,8 @@ Ya no es un episodio (Gerson, 21 de noviembre de 2026). Se conserva como materia
 **Resultado:** 4 altas, 41 medias y 9 bajas. **No dio fe.** Todas quedaron aplicadas en esta versión.
 
 **Altas:**
-- La cita del puente del 0·1 juntaba dos fuentes en una frase que no existe, y atribuía el prólogo a Quiroz cuando es de Cueto.
-- «Del día en que el país se independizó» contradecía al 0·2.
+- La cita del puente del Prólogo juntaba dos fuentes en una frase que no existe, y atribuía el prólogo a Quiroz cuando es de Cueto.
+- «Del día en que el país se independizó» contradecía al Ep. 2.
 - «El millón de Bolívar, pagado con vales»: la p. 176 no dice eso.
 - «Papeles descontados al 80 %» se leía al revés.
 
@@ -568,9 +570,9 @@ Ya no es un episodio (Gerson, 21 de noviembre de 2026). Se conserva como materia
 - Cabos sueltos: Bolívar, Gibbs, Mendiburu, Elías y la tesis de 1980.
 - Conectores que no giraban.
 - Escenas con más del doble del tope de nombres por minuto.
-- El 0·4 sin persona ni momento, y la grava puesta después del método, cuando es su premisa.
+- El Ep. 4 sin persona ni momento, y la grava puesta después del método, cuando es su premisa.
 
-**Recomendación:** partir el 0·3 después de *los consolidados*. La primera mitad cierra con la defensa de Echenique y un bucle hacia Londres. El corte de la versión 1 dejaba la primera mitad sin responder «¿impunes?» y con un balance que dependía de la segunda.
+**Recomendación:** partir el Ep. 3 después de *los consolidados*. La primera mitad cierra con la defensa de Echenique y un bucle hacia Londres. El corte de la versión 1 dejaba la primera mitad sin responder «¿impunes?» y con un balance que dependía de la segunda.
 
 **Quedan [VERIFICAR]:**
 - el precio de Pickett;

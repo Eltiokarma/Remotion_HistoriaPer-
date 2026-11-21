@@ -1,6 +1,6 @@
-# VIDEO 0·1 — El hombre que le sacó la cuenta al Perú
+# PRÓLOGO — Alfonso W. Quiroz: el hombre que le sacó la cuenta al Perú
 
-**Serie:** Historia de la corrupción en el Perú (basada en Alfonso W. Quiroz, IEP/IDL, 2013) · episodio 1 de 6 del arco de presentación
+**Serie:** Historia de la corrupción en el Perú (basada en Alfonso W. Quiroz, IEP/IDL, 2013) · prólogo de la serie
 **Formato:** 100 % Remotion, sin metraje ni fotos · 1920×1080 · 30 fps
 **Pregunta central:** ¿Qué encontró, para que valiera la pena? (este episodio responde quién era y cómo aprendió a buscar; lo que encontró llega del 0·2 al 0·4 y en los tramos que siguen)
 **Palabra del episodio:** *la larga duración* (en francés, *la longue durée*: Braudel, 1958)

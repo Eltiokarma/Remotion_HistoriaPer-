@@ -1,4 +1,4 @@
-# VIDEO 0·2 — Saqueo patriota
+# EPISODIO 2 — Saqueo patriota
 
 **Estado:** borrador del Escribidor, 21 de noviembre de 2026, corregido con el acta del Escribano (al final); para que lo revise Gerson. Es el 0·2: Gerson decidió el 2026-11-21 ponerlo antes de *La deuda defraudada*, que pasó a ser el 0·3 (carpeta `003-la-deuda-defraudada`).
 

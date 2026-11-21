@@ -1,6 +1,6 @@
-# VIDEO 0·3 — La deuda defraudada
+# EPISODIO 3 — La deuda defraudada
 
-**Serie:** Historia de la corrupción en el Perú (basada en Alfonso W. Quiroz, IEP/IDL, 2013) · episodio 3 de 6 del arco de presentación
+**Serie:** Historia de la corrupción en el Perú (basada en Alfonso W. Quiroz, IEP/IDL, 2013) · episodio 3
 **Formato:** 100 % Remotion · 1920×1080 · 30 fps
 **Pregunta central:** ¿Cómo se infla la deuda de un país? Se abre en el gancho y se responde con el expediente de Novoa (ESC 3).
 **Palabra del episodio:** *los consolidados* (Q, p. 174)
