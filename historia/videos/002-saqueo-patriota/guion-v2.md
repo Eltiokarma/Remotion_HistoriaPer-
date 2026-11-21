@@ -4,7 +4,7 @@
 **Formato:** 100 % Remotion · 1920×1080 · 30 fps
 **Pregunta central:** ¿Cómo nace endeudado un país que acaba de liberarse? Se abre en el gancho y se responde en la ESC 9, con el arreglo de Londres y la pila de adentro sin pagar.
 **Palabra del episodio:** *saqueo patriota* (título de Quiroz, p. 130). Va a pantalla completa, quieta, al final de la ESC 2.
-**Duración estimada:** 2165 palabras de voz, que a 2,6 palabras por segundo dan 13 min 53 s, más 1 min 59 s de pausas escritas: **unos 15 min 50 s** de narración, sin contar la tarjeta final. Pasa de los 12 min de la estructura; ver «Decisiones», punto 1. Se mide de nuevo con la voz provisional.
+**Duración estimada:** 2150 palabras de voz después de las correcciones del Escribano. Con la voz real de la serie (eleven_v4, unas 3,2 palabras por segundo) dan 11 min 12 s, más 2 min de pausas escritas: **unos 13 min 12 s** de narración, sin contar la tarjeta final. Con la tasa global medida (1719 palabras en 9 min 28 s, pausas incluidas) darían unos 11 min 50 s; el valor real cae entre los dos. La meta es de 12 min: los recortes propuestos están en el acta del Escribano. Se mide de nuevo con la voz provisional. (El cálculo anterior, a 2,6 palabras por segundo, daba 15 min 50 s.)
 **Estado:** borrador del Escribidor, para el Escribano. Escrito el 21 de noviembre de 2026 sobre la estructura aprobada (`arco-estructura.md`, «Ep. 2 · Saqueo patriota (versión 2)») y el expediente (`diseno/expediente.md`). Reaprovecha la voz del guion v1 que ya pasó por el Escribano (`guion.md`, que no se toca porque lo leen los scripts de la voz) y corrige lo que el expediente marca en su §7.
 
 Las marcas entre corchetes son de dirección: `[PAUSA 1s]` va a la voz; `[SILENCIO 2s]` quita también la música (una sola vez en el episodio, en la ESC 3). **Imagen** dice qué aparece con cada frase, con su peso de movimiento (`solemne`, `pesado`, `natural`, `ligero`, `tenso`) y qué hace la cámara y por qué. **Fuente** da la página: Q es Quiroz 2013 y V es Vizcarra 2011. Lo que va en pantalla no se lee en voz alta: nombres completos, cargos, fechas exactas, cifras exactas y su equivalente en soles de hoy.
@@ -160,7 +160,7 @@ Entonces, lo que se tomó en nombre de la patria no desapareció: se volvió deu
 - «Bolívar»: medallón redibujado y ficha `SIMÓN BOLÍVAR · DICTADOR, 1824–1826`. Al lado, sin voz: `CON SU MINISTRO JOSÉ FAUSTINO SÁNCHEZ CARRIÓN, QUE «RECIBIÓ VARIAS PROPIEDADES»` (p. 133).
 - «la fortaleza del Callao»: la silueta del Real Felipe; sus bienes se vuelven papeles que viajan en arco hacia la mesa de las dos deudas (`pesado`). La mesa vuelve a cuadro: la cámara retrocede de la fortaleza a la mesa (`pesado`; el motivo es que lo tomado llega a la cuenta).
 - «adornos de plata de las iglesias»: un cáliz y un candelero, dibujados en grabado, pasan a la caja del ejército. No se dibuja a nadie arrancándolos.
-- «más de un millón de pesos»: ficha `CONGRESO · 1826` y la cita textual `«un Congreso servil recompensó a Bolívar en 1826 con más de un millón de pesos»`. Rótulo `≈ 115 MILLONES DE SOLES DE HOY*`. Semilla del Ep. 4, sin voz: `ESE MILLÓN SE COBRA EN 1853 →`.
+- «más de un millón de pesos»: ficha `CONGRESO · 1826` y la cita textual `«un Congreso servil recompensó a Bolívar en 1826 con más de un millón de pesos»`. Rótulo `≈ 115 MILLONES DE SOLES DE HOY*`. Semilla del Ep. 4, sin voz: `LO QUE SE LE DEBÍA A BOLÍVAR SE COBRA EN 1853 →` (p. 176; el libro no dice que sea el mismo millón, así que la pantalla tampoco).
 - A un costado, en el aire de la pausa: `GAMARRA, PREFECTO DEL CUZCO, LE PRESENTA 80 MEDALLAS DE ORO Y 500 DE PLATA · 12 DE SEPTIEMBRE DE 1825` (p. 134).
 - «Sucre»: se suma su medallón al de Bolívar. Entre los dos, la ficha `LA PRIMERA GENERACIÓN DE CAUDILLOS` y, tenue detrás, el eco del Ep. 1: `«HEREDARON LA INFLUENCIA DE LOS OFICIALES MILITARES DEL TARDÍO SISTEMA COLONIAL»` (p. 127).
 - «Adentro»: la cámara baja a la pila `ADENTRO`. Entran los préstamos forzosos, como recibos firmados que no se cobran, y un fajo de billetes que se decolora. Sin voz: `PRÉSTAMOS DE EMERGENCIA: ≈ 3 000 000 DE PESOS, 1821–1845; MUCHOS, IMPAGOS HASTA LOS AÑOS SESENTA` (V, p. 20).
@@ -461,8 +461,117 @@ Lo que cambié respecto de la estructura aprobada (`arco-estructura.md`, Ep. 2, 
 
 ## Dudas que necesitan una decisión de Gerson
 
-1. **La duración** (unos 14 min). ¿Se parte la ESC 9 en dos, se recorta o se acepta así? Ver «Decisiones», punto 1.
+1. **La duración** (unos 13 min con la tasa de la voz real; ver la cabecera). ¿Se parte la ESC 9 en dos, se recorta o se acepta así? Ver «Decisiones», punto 1, y los recortes del acta del Escribano.
 2. **La segunda vuelta del «premio»** en la ESC 9 (Murrieta). ¿Se queda?
 3. **Quirós en la voz.** Sigue fuera; se dice «el peruano que había sido socio de Kinder». ¿Se confirma?
 4. **La libra y el peso en soles** dan cifras distintas (≈ 750 frente a ≈ 575 soles). ¿Basta el asterisco, o se usa una sola vía de conversión para todo el episodio?
 5. **La pregunta «¿alguien pagó por todo lo anterior?»** como entrada del balance. ¿Va dicha, o solo escrita en la pizarra?
+
+---
+
+## Acta del Escribano (21 de noviembre de 2026)
+
+```
+ACTA · 002-saqueo-patriota/guion-v2.md · 21 de noviembre de 2026
+Textos leídos: la voz de las 10 escenas, sus campos Imagen, Fuente y Carga, y las secciones finales
+Altas: 1 · Medias: 19 · Bajas: 17
+Oración más corta de la voz: «Saqueo patriota.» (2 palabras, golpe deliberado). Guion de voz: no rige el mínimo de 10.
+Oración más larga de la voz: 25 palabras (ninguna pasa del tope).
+```
+
+**Cotejo.** Releí en `all.txt` las pp. 61, 129–144, 146, 153, 158, 160, 164–169, 176–179, 545–546 y el cuadro A.7 (p. 551); en `vizcarra.txt`, las pp. 11, 13, 18, 20, 22–23 y 26 con las notas 22, 40 y 42. Las demás páginas del Ep. 1 (pp. 115, 119, 122, 127) las tomé del expediente, sin reabrirlas. Volví a hacer las cuentas: 1 816 000 / 2 = 908 000; 3 613 800 / 1 816 000 = 1,99; un descuento del 80 % deja la quinta parte; 139 % son 13,9 de cada 10; 60 000 × 115 = 6,9 millones de soles. La duración la medí con un script (palabras de la voz sin las marcas, más la suma de `[PAUSA]` y `[SILENCIO]`).
+
+### Hallazgos principales, con su antes y su después
+
+| # | Escala | Grav. | Dónde | Antes | Después | Estado |
+|---|---|---|---|---|---|---|
+| A1 | 1 Verdad (imagen) | Alta | ESC 5, Imagen, «los diplomáticos» | La ficha de Olmedo y Paredes con `«ACREEDORES» DEL ESTADO`, mientras la voz dice que los diplomáticos «encontraron la forma de enriquecerse». | Olmedo y Paredes, con lo que dice la p. 140: pagaban «con sus propios recursos y con crédito privado», y se atenúan antes de «enriquecerse». El enriquecimiento va con la ficha de Iturregui, el caso que nombra el libro. | Aplicado |
+| M1 | 1 Verdad | Media | ESC 0, VO | «El Perú todavía no ha ganado su independencia» (la independencia se proclamó en 1821; Quiroz dice «sin conseguir la independencia definitiva», p. 130) | «La guerra de independencia todavía no termina, y ya se firma el primer préstamo extranjero del Perú» | Aplicado |
+| M2 | 1 Cita | Media | ESC 0, Imagen | `«virtualmente nulo por motivo de usura»` bajo `SOLICITOR GENERAL · LINCOLN'S SUN`, como si fuera la frase del periódico | La ficha del periódico va sola; la frase, en otro papel, con `QUIROZ, P. 138`. Son palabras de Quiroz: el periódico estaba en inglés. | Aplicado |
+| M3 | 1 Verdad | Media | ESC 6, VO (apertura y «Entonces») y encadenamiento | «Mientras el Estado no pagaba, la riqueza del país seguía saliendo» (los 27 millones son de 1819–1825 y Witt es de 1825: antes del impago de 1826) | «Antes y después del impago, la riqueza del país salía por mar» · «mientras el Perú se endeudaba y dejaba de pagar en Londres» | Aplicado |
+| M4 | 1 Verdad y cita | Media | ESC 6, VO e Imagen | «supervisó el despacho de sesenta mil dólares… Era plata piña… Un piloto se había comprometido a subirla» (la entrada no dice que los 60 000 sean esa plata piña). En pantalla, el corte «[…]» quitaba al arriero, y «contrabandearla» se quedaba sin antecedente. | La voz cuenta los tres hechos de la entrada, uno por uno: el despacho, el arriero con la plata piña y el piloto. La pantalla muestra solo el remate textual; la entrada completa, sin el corte, va en la descripción. | Aplicado |
+| M5 | 2 Conceptos | Media | ESC 7, VO | «El Estado estaba urgido de adelantos» (el adelanto se define en la ESC 8) | «El Estado necesitaba dinero con urgencia» | Aplicado |
+| M6 | 1 Cita | Media | ESC 7, Imagen | `«se habría convertido en el mayor millonario de la república»` bajo la ficha de Vidal | Solo la ficha (`MEMORIA ESCRITA EN 1855 · EL AGENTE: LUCAS FONSECA`). La frase es de Quiroz, que resume a Vidal, y ya la dice la voz. | Aplicado |
+| M7 | 1 Verbo | Media | ESC 8, VO | «Y las casas, además, pagaban sobornos» (p. 166: «empresas dispuestas a adelantar… aparte de pagar sobornos») | «Y las consignaciones iban a casas dispuestas también a sobornar a funcionarios de sucesivos gobiernos» | Aplicado |
+| M8 | 1 Verdad | Media | ESC 9, VO | «Kinder nunca fue a juicio» (el libro solo dice que en 1826 los diplomáticos juzgaron el pleito «un mal mayor») | «Contra Kinder, los diplomáticos peruanos descartaron un pleito: en Londres, escribieron, sería un mal mayor» | Aplicado |
+| M9 | 1 Inferencia | Media | ESC 9, VO | «Pasa de diez porque suma lo que nunca entró al presupuesto» (es nuestra lectura del cuadro A.3, dicha como hecho, y además la inversión perdida no es presupuesto) | «Pasa de diez porque Quiroz cuenta también costos indirectos: el contrabando y la inversión que no llegó» (pp. 545–546) | Aplicado |
+| M10 | 6 Imagen, fidelidad | Media | ESC 9, Imagen, «la cuenta» | La parte de la barra que sobresale lleva `CONTRABANDO E INVERSIÓN PERDIDA` (el cuadro no la descompone así; en el A.3, sin la inversión perdida, el costo sigue en 85 %) | El rótulo va sobre la barra entera: `INCLUYE COSTOS INDIRECTOS…` | Aplicado |
+| M11 | 6 Imagen, fidelidad | Media | ESC 8, Imagen | «La flecha de vuelta (el adelanto) es más gruesa que la de ida (la venta)»: una cantidad que ninguna fuente da | Flechas del mismo grosor; la del adelanto queda encendida | Aplicado |
+| M12 | 6 Texto repite voz | Media | ESC 3, Imagen | La cita de Tudor «se escribe al ritmo de la voz» | En pantalla, solo `«los invasores…»` con el subrayado rojo; la cita completa, en la descripción | Aplicado |
+| M13 | 6 y 4 | Media | ESC 9, VO | «Ya presidente, Castilla explicó para qué servía. Había que revivir el crédito… vino a la existencia» (la misma frase iba textual en pantalla, y es una oración de 1849 difícil al oído) | Sale de la voz; la pantalla la muestra en una pausa de 1,5 s | Aplicado |
+| M14 | 6 Lectura | Media | ESC 4, Imagen | La carta de los enviados (unos 170 caracteres, 10 s de lectura) mientras la voz habla de Kinder | Un fragmento textual de unos 95 caracteres; la frase completa, en la descripción | Aplicado |
+| M15 | 6 Lectura | Media | ESC 2, Imagen, «En provincias» | Dos rótulos (unos 110 caracteres) «se leen en la pausa de 1,2 s»: a 17 caracteres por segundo hacen falta 6,5 s | — | Propuesto (ver recortes) |
+| M16 | 6 Un foco a la vez | Media | ESC 5, Imagen | Unas 17 piezas de pantalla en 89 s, varias de 80 a 170 caracteres, encima de la voz | — | Propuesto (ver recortes) |
+| M17 | 2 Carga | Media | ESC 0, VO | 5 nombres y cifras en 38 s (7,9 por minuto) | La equivalencia «unos cinco pesos» pasa a la balanza de la pantalla: quedan 4 en 37 s | Aplicado (queda en 6,5 por minuto, que acepto en el gancho) |
+| M18 | 2 Carga | Media | ESC 4 y ESC 6, VO | ESC 4: unos 8 en 68 s (7 por minuto). ESC 6: unos 10 en 95 s (6,3 por minuto) | — | Propuesto (recortes R2, R3 y R4) |
+| M19 | 2 Duración | Media | Cabecera | «a 2,6 palabras por segundo… unos 15 min 50 s» | Recalculado: 2150 palabras a 3,2 por segundo más 2 min de pausas dan **13 min 12 s**. Con la tasa global medida de la voz real (3,03 por segundo con pausas), unos 11 min 50 s. | Cabecera corregida; los recortes, propuestos |
+
+**Bajas**, todas aplicadas salvo las tres últimas:
+- ESC 0: «virtualmente nulo» es un calco (en español, *virtualmente* suena a «casi»). Ahora dice «nulo en la práctica», como en el v1. El sello `IMPAGO`, en rojo pleno, no era ni culpa ni corrector: ahora va en rojo apagado, el de una pérdida.
+- ESC 1: «de *esa* deuda colonial» unía los 14 millones con el crédito de 1777, cosa que la p. 136 no dice. Ahora dice «de deuda colonial»; la p. 169 confirma que en esa deuda había «créditos genuinos, debidos a prestamistas privados de fines de la época colonial». La frase «La guerra sumó» pasa a «Los primeros años sumaron» («la deuda interna de ese entonces», p. 135), y la serie rota «sueldos…, proveedores, dueños…, pagos» se rehízo con miembros de la misma forma.
+- ESC 2: «sacaba los tesoros» pasa a «mandaba sacar» (Quiroz: «ordenaba sustraer»). La protesta queda partida en dos oraciones para no pasar de 25 palabras.
+- ESC 4: la escena salta de 1826 a 1822. La marca ahora va al frente: «Ya desde mil ochocientos veintidós…».
+- ESC 5: «el adelanto convenido» usaba *adelanto* en un sentido distinto del de la ESC 8 (un término por concepto). Ahora dice «el dinero convenido». La cita de la negativa de Kinder ahora lleva a quién se le atribuye («SEGÚN OLMEDO Y PAREDES»). Y «llegó la mitad» se decía tres veces: sale del «Entonces».
+- ESC 7: dos indicaciones de Imagen se colgaban de frases que la voz ya no dice («abono desde antiguo» y «el contrato se canceló»), y «consignataria» aparecía en pantalla antes de presentarse. Las tres quedaron corregidas.
+- ESC 8: «Es la misma que recibía la plata de contrabando de Witt» pasa a «la misma casa para la que Witt despachaba plata en 1825» (ver M4). Los dos «además» seguidos se fueron con M7. La barra que «se encoge» y a la vez «queda igual» se reescribió.
+- ESC 9: la indicación «Un decreto» no tenía su frase en la voz; ahora se cuelga de «había que arreglar la deuda vieja». La fila de Kinder dice `SIN PLEITO EN 1826`. En la ESC 3, la semilla `ESE MILLÓN SE COBRA EN 1853` pasa a `LO QUE SE LE DEBÍA A BOLÍVAR SE COBRA EN 1853`: la p. 176 no dice que sea el mismo millón.
+- Para Gerson: la ESC 4 no cierra con «entonces» (la ESC 5 cierra por las dos).
+- Para Gerson: el silencio está en la ESC 3, y el pico de intensidad, en la ESC 7. La regla lo pide junto al dato más fuerte.
+- Para Gerson: la pregunta central se dice a los 37 s. El bucle sí se abre antes, a los 8 s («ya se firma el primer préstamo»).
+
+**Vicio que más se repite:** la pantalla pone entre comillas, bajo el nombre de un testigo, palabras que son de Quiroz (Solicitor General, Vidal), o repite la cita que la voz ya está diciendo (Tudor, Witt, Castilla). La regla: entre comillas va solo la frase textual de quien firma la ficha, y la pantalla no transcribe lo que suena.
+
+**Lista negra** (`direccion-historia` §2.7): ninguna aparición en la voz. «Legado» y «tiempos inmemoriales» quedan solo en citas textuales de pantalla.
+
+**Las cinco preguntas:** están respondidas y la sección final las recoge. El método de la cuenta solo se recuerda, como pide la estructura. Los conceptos llegan antes de usarse: libra (ESC 0), deuda de adentro y de afuera (ESC 1), bono y precio (ESC 4), dólar (ESC 6), consignatario y adelanto (ESC 8).
+
+### Qué apliqué
+
+Todo lo marcado «Aplicado» arriba. No cambié el eje ni el orden de las escenas, ni saqué ninguna escena. Lo que moví de la voz a la pantalla (la equivalencia de la libra y la frase de Castilla) son correcciones de carga y de repetición. También corregí la línea del encadenamiento de la ESC 5 a la ESC 6, la cabecera de duración y la cifra de la duda 1.
+
+### Recortes que propongo (no aplicados)
+
+Tiempos medidos a 3,2 palabras por segundo, con sus pausas.
+
+| # | Escena | Qué sale de la voz o pasa a pantalla | Ahorro |
+|---|---|---|---|
+| R1 | ESC 5 | El párrafo de las *Noticias secretas* (tres oraciones). La cosecha del Ep. 1 queda en pantalla: el libro de 1826 junto a `IMPAGO · 1826`, con la línea sin flecha. Es la opción (c) del Escribidor. | ≈ 16 s |
+| R2 | ESC 6 → ESC 7 | La oración de Castilla y el licor. En la ESC 7, «Era el mismo Castilla al que habían acusado de contrabando» pasa a «Años antes, como subprefecto de Tarapacá, lo habían acusado de ayudar al contrabando de licor». Es la opción (b) del Escribidor, y baja la carga de la ESC 6. | ≈ 6 s |
+| R3 | ESC 4 | «San Martín ya lo había recompensado con el grado de general y con parte de una hacienda confiscada.» Ya está en la ficha de Paroissien. | ≈ 6 s |
+| R4 | ESC 4 | Quitar de la voz el nombre de García del Río: «…dos enviados y amigos de San Martín; uno era el médico británico James Paroissien». El nombre queda en su medallón. | ≈ 1 s y un nombre menos |
+| R5 | ESC 7 | Lo de Pickett en una sola oración: «Según un diplomático de Estados Unidos, en Inglaterra el guano dejaba una ganancia neta de al menos la mitad.» | ≈ 6 s |
+| R6 | ESC 3 | Juntar «Un testigo extranjero lo vio así…» con la frase siguiente: «En mayo de 1824, el cónsul de Estados Unidos en Lima llamó invasores…». | ≈ 3 s |
+| R7 | ESC 8 | Juntar «Un diplomático de Estados Unidos describió uno de esos préstamos» con la frase siguiente: «En uno de esos préstamos, según un diplomático de Estados Unidos, el gobierno aceptó…». | ≈ 2 s |
+| R8 | ESC 9 | «Es la palabra del episodio anterior.» El `«PREMIO»` en la tipografía del Ep. 1 ya lo dice (es la duda 2). | ≈ 2,5 s |
+| R9 | ESC 9 | El balance como libro mayor casi sin voz: queda la pregunta, La Fuente (el único caso con final) y La Mar; los oficiales, Kinder y los negociadores van solo en sus filas. Es la opción (a) del Escribidor. | ≈ 15–18 s |
+| Pantalla | ESC 2 | De los dos rótulos de provincias queda uno (Delgado y sus 58 testigos), unos 4 s; Cochrane pasa a la descripción. | M15 |
+| Pantalla | ESC 5 | Quitar `NUEVA GRANADA «SENTÓ ESTE PATRÓN»…`, quedarse con una sola de las dos citas de Iturregui y con una sola cifra de los bonos (el 30 de Olmedo y Paredes o el «por debajo del 20 %» de V). | M16 |
+
+Con R1 a R8 se ganan unos 42 s, y la narración baja a unos 12 min 30 s. Con R9, a unos 12 min 10 s. Ninguno cambia el eje ni el orden.
+
+### Lo que queda para Gerson
+
+1. Los recortes R1 a R9 y los dos de pantalla.
+2. Las dudas 2 a 5 del Escribidor (el segundo «premio», Quirós en la voz, la libra y el peso en soles, la pregunta «¿alguien pagó?»).
+3. El lugar del silencio (ESC 3) frente al pico (ESC 7).
+4. Si la ESC 4 cierra con su propio «entonces» o se deja que lo haga la ESC 5.
+5. Las citas que salieron de la pantalla (Tudor, Witt, la carta de los enviados): ¿van a la descripción del video, como propongo?
+
+### [VERIFICAR]
+
+- **Witt (nuevo).** Si los 60 000 dólares despachados «en el "Mersey"» son la misma plata piña que el piloto subió de contrabando al barco de guerra (n. 33). La voz ya no los da por la misma; el hilo de Gibbs se sostiene porque los dos hechos son de la misma entrada y del mismo despacho. Confirmarlo en Witt, *Diario*, vol. 1, pp. 82–83.
+- **La comisión del 2 % (nuevo, menor).** En la p. 139, «quien cobraba» puede referirse a Robertson o a Kinder. Leo Robertson, como el expediente y la estructura.
+- **El precio de Pickett** («diez dólares la tonelada»), contra las 9 libras de V: sigue fuera de pantalla.
+- **Las conversiones que faltan en `fuentes.md`:** las 3 613 800 libras de 1849, los 5,5 millones de pesos de los años cuarenta y los 60 000 dólares de Witt (la cuenta 60 000 × 115 = 6,9 millones es correcta, pero falta anotarla).
+- **La tasa de 5 pesos por libra.** Sale de 1831 (V, tabla 4) y de 1840 (Q, p. 165), y se aplica a 1822, cuando `fuentes.md` da 4,4. La equivalencia ya no va en la voz, solo en la balanza.
+- **La deuda reconocida en 1849:** el 75 % de V frente al 65 % de Q (p. 179, releída: «recalculados a 65 por ciento de su valor»).
+- **Que el 139 % del cuadro A.7 use las mismas categorías indirectas que el A.3.** La voz ahora dice solo que Quiroz cuenta costos indirectos, que sí está en las pp. 545–546.
+- **Las licencias de los retratos.**
+- **Resueltos:**
+  - El millón de Bolívar: la p. 176 dice que Cotes recibió en 1853 «el cuantioso pago que el Perú le debía a Bolívar», como agente del gobierno venezolano (n. 128). La pantalla ya no dice que sea «ese millón».
+  - «El último bastión realista»: es paráfrasis fiel de «el último bastión desesperado de españoles y criollos recalcitrantes» (p. 133).
+  - Las memorias de Vidal: la n. 102 («Ob. cit., p. 629») cae dentro de la «Memoria escrita en 1855», pp. 595–640, que da la n. 6.
+
+### Fe
+
+**No doy fe.** Quedan 0 altas y 4 medias: M15 y M16 (lectura en pantalla), M18 (carga de las ESC 4 y 6) y M19 (la duración). Las cuatro tienen su arreglo en los recortes, y los decide Gerson. Con esos recortes aplicados, el texto de voz queda en condiciones de dar fe en una pasada corta. Siguen siendo filtros aparte el lector en frío y la escucha con la voz provisional.
