@@ -1,6 +1,6 @@
 # La deuda defraudada · Manuscrito de locución
 
-Generado con `manuscrito.py` desde [narracion.json](narracion.json) y [narracion_tiempos.json](narracion_tiempos.json); no se edita a mano. Voz «Joder Jolines», modelo `eleven_v4`, una toma por escena (`scripts/narracion.py`). Duración real: 9:27.6.
+Generado con `manuscrito.py` desde [narracion.json](narracion.json) y [narracion_tiempos.json](narracion_tiempos.json); no se edita a mano. Voz «Joder Jolines», modelo `eleven_v4`, una toma por escena (`scripts/narracion.py`). Duración real: 9:27.4.
 
 Cada frase dice en qué segundo de su escena empieza (`voz/sNN.mp3`), con qué emoción se dijo (las etiquetas entre corchetes, que la voz no lee) y cuánto respira después. `/` es una pausa de menos de 1 s y `//`, una de 1 s o más; ✂ marca dónde la escena se generó en otra toma. Las láminas, encuadres y sonido están en `storyboard.html`.
 
@@ -50,25 +50,25 @@ Cada frase dice en qué segundo de su escena empieza (`voz/sNN.mp3`), con qué e
 - `1:42.3` *[firm] [clear]* Lo que llama ilegal son las participaciones y comisiones que se pagaban a cambio de un reconocimiento privilegiado. // (1.0 s)
 - `1:49.0` *[calm] [teacher] [slowly]* Entonces, un reclamo podía pasar por cuatro manos: alguien vende barato, otro compra, un tercero mueve el expediente y un funcionario lo aprueba. //
 
-## s03 · El expediente de Novoa · 1:34.9
+## s03 · El expediente de Novoa · 1:34.7
 
 - `0:00.3` *[solemn] [low voice]* Un expediente muestra con nombres y cifras dos de esas manos: el intermediario y el funcionario. / (0.6 s)
-- `0:07.1` *[solemn] [slowly]* Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada. / (0.6 s)
-- `0:11.8` *[serious] [low voice] [slowly]* Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años. // (1.0 s)
-- `0:21.2` *[serious] [measured]* En el Perú de entonces, la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro. // (1.5 s)
-- `0:28.4` *[calm] [neutral]* Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país. / (0.4 s)
-- `0:33.5` *[calm]* Gestionaba el reclamo a cambio de una comisión. / (0.4 s)
-- `0:36.2` *[calm] [measured]* En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos. / (0.4 s)
-- `0:42.1` *[dry]* Para sí esperaba doscientos mil. // (1.0 s)
-- `0:44.7` *[tense] [measured]* El presidente ya era José Rufino Echenique, que había sucedido a Castilla. / (0.4 s)
-- `0:49.2` *[tense] [slowly]* Echenique respondió que el reclamo estaba fuera de plazo. // (1.5 s)
-- `0:53.8` *[tense] [low voice]* Días después, el reclamo se aprobó. / (1.1 s) ✂
-- `0:57.2` *[serious] [softly] [slowly]* Por novecientos cuarenta y ocho mil quinientos pesos en vales. // (2.3 s) ✂
-- `1:03.3` *[dry] [restrained]* Era mucho más de lo que había pedido el propio Elías: de una vez y media a casi el doble. // (1.0 s)
-- `1:09.6` *[serious] [restrained anger]* Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico. // (1.0 s)
-- `1:16.3` *[serious] [measured]* Y Quiroz anota que Novoa probablemente recibió alrededor de ciento ochenta mil pesos, también en vales. // (2.0 s)
-- `1:24.3` *[calm] [measured]* No sabemos adónde fue cada peso de la diferencia. / (0.4 s)
-- `1:27.2` *[calm] [firm]* Lo que sí documenta Quiroz es quién dijo que el reclamo estaba fuera de plazo, quién intervino después y cuánto se terminó aprobando. //
+- `0:07.2` *[solemn] [slowly]* Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada. / (0.5 s)
+- `0:12.1` *[serious] [low voice] [slowly]* Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años. // (1.0 s)
+- `0:21.8` *[serious] [measured]* En el Perú de entonces, la esclavitud era legal: se abolió unos años después. // (1.5 s)
+- `0:28.0` *[calm] [neutral]* Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país. / (0.4 s)
+- `0:33.2` *[calm]* Gestionaba el reclamo a cambio de una comisión. / (0.4 s)
+- `0:35.8` *[calm] [measured]* En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos. / (0.4 s)
+- `0:41.9` *[dry]* Para sí esperaba doscientos mil. // (1.0 s)
+- `0:44.5` *[tense] [measured]* El presidente ya era José Rufino Echenique, que había sucedido a Castilla. / (0.5 s)
+- `0:48.9` *[tense] [slowly]* Echenique respondió que el reclamo estaba fuera de plazo. // (1.5 s)
+- `0:53.6` *[tense] [low voice]* Días después, el reclamo se aprobó. / (1.2 s) ✂
+- `0:56.9` *[serious] [softly] [slowly]* Por novecientos cuarenta y ocho mil quinientos pesos en vales. // (2.3 s) ✂
+- `1:03.1` *[dry] [restrained]* Era mucho más de lo que había pedido el propio Elías: de una vez y media a casi el doble. // (1.0 s)
+- `1:09.4` *[serious] [restrained anger]* Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico. // (1.0 s)
+- `1:16.1` *[serious] [measured]* Y Quiroz anota que Novoa probablemente recibió alrededor de ciento ochenta mil pesos, también en vales. // (2.0 s)
+- `1:24.1` *[calm] [measured]* No sabemos adónde fue cada peso de la diferencia. / (0.4 s)
+- `1:27.0` *[calm] [firm]* Lo que sí documenta Quiroz es quién dijo que el reclamo estaba fuera de plazo, quién intervino después y cuánto se terminó aprobando. //
 
 ## s04 · Lo investigan y los títulos siguen circulando · 3:18.3
 

@@ -200,7 +200,7 @@
   ]
  },
  "s03": {
-  "duracion": 107.18,
+  "duracion": 105.65,
   "frases": [
    {
     "desde": 0.3,
@@ -219,72 +219,72 @@
    },
    {
     "desde": 21.87,
-    "hasta": 28.79,
-    "texto": "En el Perú de entonces, la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro."
+    "hasta": 27.25,
+    "texto": "En el Perú de entonces, la esclavitud era legal: se abolió unos años después."
    },
    {
-    "desde": 30.29,
-    "hasta": 35.29,
+    "desde": 28.75,
+    "hasta": 33.75,
     "texto": "Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país."
    },
    {
-    "desde": 35.64,
-    "hasta": 38.72,
+    "desde": 34.1,
+    "hasta": 37.18,
     "texto": "Gestionaba el reclamo a cambio de una comisión."
    },
    {
-    "desde": 39.07,
-    "hasta": 46.37,
+    "desde": 37.53,
+    "hasta": 44.83,
     "texto": "En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos."
    },
    {
-    "desde": 46.72,
-    "hasta": 48.65,
+    "desde": 45.18,
+    "hasta": 47.11,
     "texto": "Para sí esperaba doscientos mil."
    },
    {
-    "desde": 49.65,
-    "hasta": 54.26,
+    "desde": 48.11,
+    "hasta": 52.72,
     "texto": "El presidente ya era José Rufino Echenique, que había sucedido a Castilla."
    },
    {
-    "desde": 54.61,
-    "hasta": 58.07,
+    "desde": 53.07,
+    "hasta": 56.53,
     "texto": "Echenique respondió que el reclamo estaba fuera de plazo."
    },
    {
-    "desde": 59.57,
-    "hasta": 61.88,
+    "desde": 58.03,
+    "hasta": 60.34,
     "texto": "Días después, el reclamo se aprobó."
    },
    {
-    "desde": 62.68,
-    "hasta": 66.53,
+    "desde": 61.14,
+    "hasta": 64.99,
     "texto": "Por novecientos cuarenta y ocho mil quinientos pesos en vales."
    },
    {
-    "desde": 68.53,
-    "hasta": 76.22,
+    "desde": 66.99,
+    "hasta": 74.68,
     "texto": "Era mucho más de lo que había pedido el propio Elías: de una vez y media a casi el doble."
    },
    {
-    "desde": 77.22,
-    "hasta": 83.37,
+    "desde": 75.68,
+    "hasta": 81.83,
     "texto": "Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico."
    },
    {
-    "desde": 84.37,
-    "hasta": 90.53,
+    "desde": 82.83,
+    "hasta": 88.99,
     "texto": "Y Quiroz anota que Novoa probablemente recibió alrededor de ciento ochenta mil pesos, también en vales."
    },
    {
-    "desde": 92.53,
-    "hasta": 95.99,
+    "desde": 90.99,
+    "hasta": 94.45,
     "texto": "No sabemos adónde fue cada peso de la diferencia."
    },
    {
-    "desde": 96.34,
-    "hasta": 105.18,
+    "desde": 94.8,
+    "hasta": 103.65,
     "texto": "Lo que sí documenta Quiroz es quién dijo que el reclamo estaba fuera de plazo, quién intervino después y cuánto se terminó aprobando."
    }
   ]

@@ -237,108 +237,108 @@
   ]
  },
  "s03": {
-  "duracion": 94.87,
+  "duracion": 94.67,
   "frases": [
    {
     "texto": "Un expediente muestra con nombres y cifras dos de esas manos: el intermediario y el funcionario.",
     "desde": 0.3,
-    "hasta": 6.56,
+    "hasta": 6.6,
     "cubre": 1.0
    },
    {
     "texto": "Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada.",
-    "desde": 7.14,
-    "hasta": 11.2,
+    "desde": 7.22,
+    "hasta": 11.52,
     "cubre": 1.0
    },
    {
     "texto": "Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años.",
-    "desde": 11.76,
-    "hasta": 20.24,
+    "desde": 12.06,
+    "hasta": 20.8,
     "cubre": 1.0
    },
    {
-    "texto": "En el Perú de entonces, la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro.",
-    "desde": 21.24,
-    "hasta": 26.92,
+    "texto": "En el Perú de entonces, la esclavitud era legal: se abolió unos años después.",
+    "desde": 21.8,
+    "hasta": 26.54,
     "cubre": 1.0
    },
    {
     "texto": "Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país.",
-    "desde": 28.42,
-    "hasta": 33.14,
+    "desde": 28.04,
+    "hasta": 32.76,
     "cubre": 1.0
    },
    {
     "texto": "Gestionaba el reclamo a cambio de una comisión.",
-    "desde": 33.54,
-    "hasta": 35.78,
+    "desde": 33.18,
+    "hasta": 35.42,
     "cubre": 1.0
    },
    {
     "texto": "En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos.",
-    "desde": 36.18,
-    "hasta": 41.72,
+    "desde": 35.84,
+    "hasta": 41.48,
     "cubre": 1.0
    },
    {
     "texto": "Para sí esperaba doscientos mil.",
-    "desde": 42.1,
-    "hasta": 43.74,
+    "desde": 41.9,
+    "hasta": 43.5,
     "cubre": 1.0
    },
    {
     "texto": "El presidente ya era José Rufino Echenique, que había sucedido a Castilla.",
-    "desde": 44.74,
-    "hasta": 48.72,
+    "desde": 44.5,
+    "hasta": 48.44,
     "cubre": 1.0
    },
    {
     "texto": "Echenique respondió que el reclamo estaba fuera de plazo.",
-    "desde": 49.16,
-    "hasta": 52.34,
+    "desde": 48.9,
+    "hasta": 52.06,
     "cubre": 1.0
    },
    {
     "texto": "Días después, el reclamo se aprobó.",
-    "desde": 53.84,
-    "hasta": 56.02,
+    "desde": 53.56,
+    "hasta": 55.78,
     "cubre": 1.0
    },
    {
     "texto": "Por novecientos cuarenta y ocho mil quinientos pesos en vales.",
-    "desde": 57.16,
-    "hasta": 61.04,
+    "desde": 56.94,
+    "hasta": 60.82,
     "cubre": 1.0
    },
    {
     "texto": "Era mucho más de lo que había pedido el propio Elías: de una vez y media a casi el doble.",
-    "desde": 63.34,
-    "hasta": 68.64,
+    "desde": 63.1,
+    "hasta": 68.42,
     "cubre": 1.0
    },
    {
     "texto": "Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico.",
-    "desde": 69.64,
-    "hasta": 75.3,
+    "desde": 69.42,
+    "hasta": 75.1,
     "cubre": 1.0
    },
    {
     "texto": "Y Quiroz anota que Novoa probablemente recibió alrededor de ciento ochenta mil pesos, también en vales.",
-    "desde": 76.3,
-    "hasta": 82.26,
+    "desde": 76.1,
+    "hasta": 82.06,
     "cubre": 1.0
    },
    {
     "texto": "No sabemos adónde fue cada peso de la diferencia.",
-    "desde": 84.26,
-    "hasta": 86.84,
+    "desde": 84.06,
+    "hasta": 86.64,
     "cubre": 0.8888888888888888
    },
    {
     "texto": "Lo que sí documenta Quiroz es quién dijo que el reclamo estaba fuera de plazo, quién intervino después y cuánto se terminó aprobando.",
-    "desde": 87.22,
-    "hasta": 94.56,
+    "desde": 87.02,
+    "hasta": 94.36,
     "cubre": 1.0
    }
   ]

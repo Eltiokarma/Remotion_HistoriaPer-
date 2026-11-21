@@ -4,7 +4,7 @@ Generado desde `storyboard.json` con `storyboard.py`; no se edita a mano. Propue
 
 La versión completa, con láminas, voz con emoción, métricas y avisos, es `storyboard.html`.
 
-**Episodio:** 10:10.6 en pantalla · voz 79 % · cámara quieta 88 %.
+**Episodio:** 10:10.4 en pantalla · voz 79 % · cámara quieta 88 %.
 
 ## s00 · El gancho
 
@@ -184,9 +184,9 @@ Cuatro manos: vende, compra, mueve, aprueba. El tablero completo, de la deuda in
 
 *Expediente: la mesa en cenital.* De «así funcionaba» a «así se aprobó un reclamo que el presidente había dado por vencido».
 
-1:42.4 · voz 77 % · cámara quieta 100 % · 4.7 rótulos con datos por minuto.
+1:42.2 · voz 77 % · cámara quieta 100 % · 4.7 rótulos con datos por minuto.
 
-### 3.1 · presentar · 29.4 s
+### 3.1 · presentar · 29.0 s
 
 Un caso real: qué reclamaba Novoa, y cómo. La carpeta se abre: folio de la solicitud con la hacienda. El renglón de las quinientas personas esclavizadas aparece solo, y se sostiene. Con 3, una ficha pequeña de la abolición.
 
@@ -196,7 +196,7 @@ Un caso real: qué reclamaba Novoa, y cómo. La carpeta se abre: folio de la sol
 - **Sonido:** Sin música en el renglón de las personas esclavizadas.
 - **Falta:** Ficha de la abolición (pieza nueva).
 
-### 3.2 · presentar · 17.3 s
+### 3.2 · presentar · 17.5 s
 
 Elías gestiona por comisión y pide entre 500 000 y 600 000. Ficha de Elías junto al folio de gestión. El folio muestra en un solo renglón el intervalo pedido y su comisión esperada; la comisión se escribe cuando la voz la dice. Sin busto ni gesto.
 

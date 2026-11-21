@@ -132,7 +132,7 @@ Idea 5. Storyboard 3A a 3F. El dato más fuerte del episodio y el silencio delib
 **Cambio:** de «así funcionaba» a «así se aprobó un reclamo que el presidente había dado por vencido».
 
 **VO:**
-Un expediente muestra con nombres y cifras dos de esas manos: el intermediario y el funcionario. [PAUSA 0,6s] Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada. Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años. [PAUSA 1s] En el Perú de entonces, la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro. [PAUSA 1,5s]
+Un expediente muestra con nombres y cifras dos de esas manos: el intermediario y el funcionario. [PAUSA 0,6s] Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada. Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años. [PAUSA 1s] En el Perú de entonces, la esclavitud era legal: se abolió unos años después. [PAUSA 1,5s]
 
 Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país. Gestionaba el reclamo a cambio de una comisión. En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos. Para sí esperaba doscientos mil. [PAUSA 1s]
 
@@ -244,7 +244,7 @@ Lo que cambió respecto del guion por ideas, y por qué. Todo cambio de eje u or
 2. **Gancho nuevo (ESC 0), por decidir.** La guía pide abrir con el golpe (§2.5) y Gerson había pedido el contexto al comienzo. La propuesta pone 25 s de golpe y entra al contexto en ESC 1. Si Gerson prefiere abrir con las islas, el gancho se puede mover al final de ESC 1, antes de las deudas. `DEFINIR`.
 3. **Palabra del episodio: *los consolidados*.** Sale del libro (p. 174) y se gana el lugar porque cierra un párrafo: la palabra de la ley terminó nombrando a los beneficiados.
 4. **Datos nuevos, todos de la ficha de Quiroz:** los plazos de junio y octubre de 1852, el 6 % de los vales, la conversión en Londres con el 40 % en plaza contra casi la par, el «lavado», la fuga de Torrico, Echenique y Mendiburu, los barcos frente a las islas y la defensa de Echenique. Cada uno concreta una frase que antes era vaga («se cambiaron obligaciones internas por bonos vinculados al mercado financiero exterior»).
-5. **Lo humano con respeto.** Las personas esclavizadas se nombran como lo que el reclamo hacía con ellas («contaba a quinientas personas esclavizadas entre sus bienes»), y una frase sitúa la abolición de 1854 para que nadie crea que el video valida el reclamo.
+5. **Lo humano con respeto.** Las personas esclavizadas se nombran como lo que el reclamo hacía con ellas («contaba a quinientas personas esclavizadas entre sus bienes»), y una frase dice que la esclavitud era legal y se abolió unos años después (el año, 1854, va en la ficha) para que nadie crea que el video valida el reclamo.
 6. **La regla del mínimo de 10 palabras no se aplica a la voz.** El Escribidor la fija para texto de corrido que se lee; este es texto para el oído, y la guía del canal pide alternar largos y permite el remate corto. Se quedaron solo los remates con función: «Días después, el reclamo se aprobó.», «Les decían los consolidados.», «Por esos huecos entró el negocio.». Ninguna racha de oraciones cortas sin enlace.
 7. **Cifras en pantalla con la norma de la casa:** espacio para los miles (`948 500`, `180 000`) y coma decimal (`12,2`). El guion anterior y quizá los rótulos ya dibujados usan punto (`948.500`): hay que revisarlos.
 
@@ -273,7 +273,7 @@ Pendiente de aprobación de Gerson.
     - La ley de 1850 consolidaba créditos «que databan de la guerra de independencia» (p. 170).
     - La manumisión de 1854 la decretó Castilla «en medio de la guerra civil» y tuvo su propia compensación, de 300 pesos por esclavo (pp. 181–182).
   - Inferencia, sin fuente: 1852 menos 32 años da 1820. La hacienda se habría expropiado durante la independencia, y los quinientos esclavizados serían parte de su valor de entonces.
-  - Riesgo del guion: la frase «la esclavitud todavía era legal: se abolió en mil ochocientos cincuenta y cuatro», justo después del reclamo, puede sugerir que ella se adelantó a la abolición. Hay que decidir si la voz aclara que era una deuda vieja. La fecha de la expropiación queda [VERIFICAR] en Quiroz, *La deuda defraudada* (1987), pp. 170–172, la fuente que cita la nota 113.
+  - **Resuelto por Gerson (21 de noviembre de 2026):** la voz dice «la esclavitud era legal: se abolió unos años después». Ya no da el año, así que no pone el reclamo y la abolición lado a lado. El año sigue en pantalla, en la ficha `ABOLICIÓN · 3 DE DICIEMBRE DE 1854`, que ahora aporta un dato que la voz no dice. La fecha de la expropiación sigue [VERIFICAR] en *La deuda defraudada* (1987), pp. 170–172.
 - De memoria, señalados por el Escribano: que las islas de Chincha estén frente a Pisco (los mapas del episodio ya las ponen ahí, sin fuente escrita); la caída de Echenique a comienzos de 1855.
 
 ## Revisión del Escribano (19 de noviembre de 2026)
