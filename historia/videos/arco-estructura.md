@@ -1,5 +1,7 @@
 # El arco de presentación, escena por escena (0·1 final, 0·2, 0·3 y 0·4)
 
+**Orden del arco:** 0·1 El hombre → 0·2 Saqueo patriota (1777–1849) → 0·3 La deuda defraudada (1850–1871) → 0·4 ¿Se puede medir? → 0·5 La cuenta. Cada episodio termina donde empieza el siguiente: el 0·1 en la deuda (¿de dónde salía?), el 0·2 en el arreglo de 1849 y la deuda de adentro, el 0·3 en los papeles que quedaron, y el 0·4 en «sí se puede: ¿cuánto da?».
+
 **Estado:** propuesta del Escribidor, 21 de noviembre de 2026, para que la revise Gerson. Todavía no es guion: es la estructura que el guion va a seguir. Se escribe la voz después de que Gerson la apruebe, y el Escribano revisa la voz completa.
 
 **El pedido (Gerson, 21 de noviembre de 2026):** «no dejar cabos sueltos». Cada episodio tiene que contestar, con nombres y cifras:
@@ -19,6 +21,138 @@ Los expedientes completos, con las citas textuales, están en el scratchpad de l
 
 ---
 
+## 0·2 · Saqueo patriota (versión 2)
+
+**Pregunta central:** ¿cómo nace endeudado un país que acaba de liberarse?
+**Palabra del episodio:** *saqueo patriota* (Q, p. 130).
+**Hilo:** la deuda de afuera, de 1822 a 1849, y los mismos nombres que reaparecen en ella:
+- Kinder presta en 1822, y su socio Quirós firma el primer contrato del guano en 1840 (Q, p. 154, n. 69).
+- Gibbs saca plata de contrabando en 1825 y desde 1842 vende el guano (Q, p. 142, n. 33, y p. 167).
+- La Fuente acusa a Riva-Agüero en 1823 y reaparece como ministro de los vales en el 0·3.
+- El millón de Bolívar se paga recién en 1853, con la consolidación (p. 176).
+
+El episodio termina donde empieza el 0·3: el arreglo de 1849 y la deuda de adentro que también se pagará con el guano.
+**Fuente:** el expediente completo está en el scratchpad (`expediente-02.md`), y lo que el guion actual tiene mal está en su §7.
+
+| # | Escena | Responde | Cambio |
+|---|---|---|---|
+| 0 | Gancho: Londres, 1822 | todas | de «la independencia trajo libertad» a «también trajo una deuda mal hecha» |
+| 1 | Nacer debiendo | desde cuándo | de «un país nuevo empieza de cero» a «empieza con deudas de la colonia» |
+| 2 | Saqueo patriota | quiénes, cómo | de «los libertadores» a «los libertadores también expropiaron y repartieron» |
+| 3 | Lo tomado se vuelve deuda | cuánto, impunes | de «se perdió» a «lo pagará la gente común, con intereses» |
+| 4 | El primer préstamo | quiénes, cómo | de «el préstamo era la salida» a «los que lo negociaron hacían negocio propio» |
+| 5 | El segundo préstamo y el impago | cuánto | de «llegó la plata» a «llegó la mitad, y los enviados terminaron siendo acreedores» |
+| 6 | La plata que se iba por mar | cómo, impunes | de «el problema era la deuda» a «la riqueza salía sin pagar, protegida por autoridades» |
+| 7 | Un tesoro de excremento | desde cuándo (el guano) | de «no hay con qué pagar» a «hay con qué, y el primer contrato se vende por casi nada» |
+| 8 | La década de los adelantos | cómo | de «el guano es del Estado» a «el Estado vive de adelantos caros sobre su guano» |
+| 9 | El arreglo de 1849 | cuánto, impunes | de «se arregla la deuda» a «se arregla, y los negociadores cobran» |
+
+### ESC 0 · Gancho (≈ 40 s)
+- **Hechos:**
+  - Londres, octubre de 1822: un millón doscientas mil libras.
+  - El *Solicitor General* británico lo consideró nulo por usura (n. 25). Corrige al «procurador general de Londres» del guion actual.
+  - De cada cien libras, se adelantaban setenta y cinco.
+  - Llegó la mitad, y casi de inmediato dejó de pagarse.
+- **Pregunta:** ¿cómo nace así un país?
+- **→ PERO** la deuda no empezó en Londres.
+
+### ESC 1 · Nacer debiendo (≈ 50 s)
+- **Responde:** ¿desde cuándo?
+- **Hechos:**
+  - El crédito público colonial de 1777, «legado prominente para el Perú republicano» (p. 119).
+  - Los préstamos «voluntarios o forzados» que los virreyes les pedían a los comerciantes de Lima (p. 129).
+  - Más de 14 millones de deuda colonial heredada, y cerca de 7 millones de los primeros gobiernos (como está, con su página).
+- **→ POR ESO** los libertadores tomaron lo que había.
+
+### ESC 2 · Saqueo patriota (≈ 70 s)
+- **Responde:** ¿quiénes? y ¿cómo?
+- **Hechos:**
+  - San Martín y Monteagudo expropian a los grandes comerciantes. «Algunos peruanos indignados», no «limeños», acusan a Monteagudo (p. 131).
+  - Cochrane se queda con la plata en barras.
+  - Las haciendas confiscadas, unos 2 millones, van a oficiales que pedían recompensa.
+  - Sánchez Carrión recibe propiedades.
+  - Un caso con testigos: Juan Delgado en Sayán, con 58 testigos. Se precisa con el expediente al escribir.
+  - [VERIFICAR] que Echenique estuviera entre los premiados de 1821–1822. Nació en 1808; el dato no está en estas fuentes.
+- **Palabra del episodio**, quieta.
+- **→ PERO** no fue solo al comienzo.
+
+### ESC 3 · Lo tomado se vuelve deuda (≈ 70 s)
+- **Responde:** ¿cuánto? y ¿impunes?
+- **Hechos:**
+  - Bolívar confisca bienes y la plata de las iglesias.
+  - El Congreso lo premia con más de un millón de pesos, que se paga recién en 1853, con los vales de la consolidación (p. 176). Esa fecha siembra el 0·3.
+  - Tudor: «los invasores que vinieron…», con su palabra.
+  - Los préstamos forzosos internos que no se devolvían, unos 3 millones entre 1821 y 1845 (V, p. 20).
+  - La costumbre de tapar el saqueo con deuda pública.
+- **Silencio.**
+- **→ POR ESO**, sin crédito adentro, se pide afuera.
+
+### ESC 4 · El primer préstamo (≈ 80 s)
+- **Responde:** ¿quiénes? y ¿cómo?
+- **Hechos:**
+  - García del Río y Paroissien con Kinder; Paroissien hacía negocios privados con Kinder; el premio que le dio San Martín.
+  - Quirós, socio de Kinder y de Robertson en Londres entre 1822 y 1825 (p. 154, n. 69). Aquí se presenta; vuelve en la ESC 7.
+  - Riva-Agüero, acusado de presionar al Congreso por 100 000 pesos del préstamo y de recibir «valiosas concesiones de tierras». Uno de sus acusadores es La Fuente, el que lo depuso (pp. 138 y 143).
+- **→ PERO** el segundo fue peor.
+
+### ESC 5 · El segundo préstamo y el impago (≈ 80 s)
+- **Responde:** ¿cuánto?
+- **Hechos:**
+  - Enero de 1825: Robertson lo contrata con 2 % de comisión. Llegó al cargo por Proctor, el agente de Kinder en Lima (p. 139).
+  - Kinder no dio el adelanto convenido ni devolvió los bonos que no vendió (p. 140, n. 30).
+  - Bolívar esperaba ese dinero para veinticinco mil fusiles.
+  - De todo lo prestado llegó la mitad. El apéndice estima la pérdida en 40 % (p. 544): la voz dice «cerca de la mitad», y la pantalla da las dos cifras con su fuente.
+  - Los diplomáticos terminaron siendo «acreedores» del Estado (p. 140).
+  - 1826: impago. Los bonos bajan a 30 (n. 30) y después por debajo de 20 (V, p. 11).
+  - 1827: Iturregui propone comprar en secreto los bonos depreciados (p. 141). Es la misma idea que el 0·3 hará realidad.
+- **Corrección:** «nadie volvió a prestarle» es falso. Se cerró Londres, pero adentro siguieron los préstamos forzosos.
+- **→ PERO** la plata también se iba por otro lado.
+
+### ESC 6 · La plata que se iba por mar (≈ 70 s)
+- **Responde:** ¿cómo? y ¿impunes?
+- **Hechos:**
+  - 27 millones de dólares en plata y oro en barcos de guerra británicos, de 1819 a 1825.
+  - Witt, 4 de julio de 1825: de noche, 60 000 dólares de contrabando para Antony Gibbs & Sons en un barco de guerra (p. 142, n. 33). Es la casa que desde 1842 vende el guano.
+  - La Fuente, prefecto de Arequipa, protege el contrabando y junta al menos 200 000 pesos, según el diplomático francés Barrère (n. 36).
+  - Castilla, acusado en 1829 de contrabando de licor por Arica (p. 160).
+  - Pena de muerte para el aduanero cómplice, y casi nunca se aplicaba.
+- **→ PERO** en las islas había otra riqueza.
+
+### ESC 7 · Un tesoro de excremento (≈ 90 s)
+- **Responde:** ¿desde cuándo? (Gerson pidió la fecha y el contexto mundial).
+- **Hechos:**
+  - El guano como abono desde tiempos antiguos; los experimentos de los años treinta, el nitrógeno y el fósforo (V, p. 18).
+  - Noviembre de 1840: Gamarra, con Castilla en Hacienda; el contrato de Quirós (el socio de Kinder) y sus socios franceses; 90 000 pesos en cuotas.
+  - Pickett, 1841: 10 dólares por tonelada y al menos 50 % de ganancia [VERIFICAR contra las 9 libras por tonelada de Vizcarra para 1850].
+  - El general Vidal: si aceptaba el dinero del agente de Quirós y Allier, «se habría convertido en el mayor millonario de la república» (p. 165).
+  - El contrato se cancela y vienen otros.
+- **→ POR ESO** el Estado, por fin, tiene con qué.
+
+### ESC 8 · La década de los adelantos (≈ 70 s) — NUEVA
+- **Responde:** ¿cómo?
+- **Hechos:**
+  - Gibbs es consignatario desde 1842 (p. 167).
+  - Los consignatarios adelantan dinero a cuenta del guano futuro, al 1 % mensual (p. 166).
+  - Un adelanto de 850 000 dólares con papeles descontados al 80 % (n. 105).
+  - Unos 5,5 millones de pesos en la década, casi todos en adelantos (V, p. 23).
+  - El decreto de enero de 1842, que prometía a los bonistas la mitad del guano, nunca se cumplió (V, n. 22).
+- **→ POR ESO**, para recuperar el crédito, hay que arreglar Londres.
+
+### ESC 9 · El arreglo de 1849 y el cierre (≈ 80 s)
+- **Responde:** ¿cuánto? y ¿impunes?
+- **Hechos:**
+  - 31 de enero de 1849 (V, p. 26). Castilla nombra a Osma y Barreda, y eligen a Murrieta, «de dudoso prestigio» (Q, p. 178).
+  - La deuda reconocida llega a 3 613 800 libras, casi el doble de lo prestado (V, pp. 11 y 13).
+  - La mitad del guano vendido en Gran Bretaña va a los bonistas (V, p. 26). Castilla: «revivir el crédito…» (V, p. 23).
+  - Los negociadores cobraron en bonos nuevos y «más que duplicaron» esa ganancia (Q, p. 179). Mendiburu los acusaría de comprar a 33 y vender a 108 (n. 138); se atribuye.
+  - Cuánto costó la corrupción en esas décadas, según el apéndice: 27, 22 y 25 millones de pesos en los años veinte, treinta y cuarenta (pp. 546–548). En pantalla, no en la voz; el método se explica en el 0·4.
+  - El cierre: el guano llega a un país con dos deudas. La de afuera ya está arreglada; la de adentro también se va a pagar con el guano.
+- **Tarjeta:** `PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA`.
+
+**Duración estimada:** unos 12 min. Es largo, pero cada escena trae un hecho nuevo; se mide con la voz. Si hay que recortar, se va primero la ESC 8, que se puede resumir en dos frases dentro de la ESC 9.
+
+---
+
 ## 0·3 · La deuda defraudada (versión 2)
 
 **Pregunta central:** ¿cómo se roba un Estado que, por fin, puede pagar lo que debe?
@@ -34,7 +168,7 @@ Los expedientes completos, con las citas textuales, están en el scratchpad de l
 | 4 | El expediente de Novoa | cómo (un caso) | de «así funcionaba» a «así se aprobó un reclamo vencido» |
 | 5 | Firme estos de preferencia | quiénes | de «un caso» a «una red con ministros, militares y parientes» |
 | 6 | De 5 a 24 millones | cuánto | de «algunos casos» a «la deuda se multiplicó casi por cinco» |
-| 7 | Londres, 1849 | desde cuándo (afuera) | de «el arreglo devolvió el crédito» a «los que lo negociaron también cobraron» |
+| 7 | De vuelta a Londres | desde cuándo (afuera) | de «Londres ya estaba arreglado» a «el crédito recuperado se puede usar para lavar» |
 | 8 | El lavado | cómo (el segundo robo) | de «un vale manchado» a «un bono limpio que el Estado debe pagar entero» |
 | 9 | La denuncia | quiénes denuncian | de «nadie dice nada» a «uno habla, va preso y hay guerra» |
 | 10 | Los que denunciaron, cobran | la repartija | de «llegaron los reformadores» a «repitieron el favor con su propia gente» |
@@ -114,14 +248,13 @@ Los expedientes completos, con las citas textuales, están en el scratchpad de l
 - **Silencio:** la palabra, quieta.
 - **→ PERO** el negocio no terminaba en Lima.
 
-### ESC 7 · Londres, 1849 (≈ 70 s)
+### ESC 7 · De vuelta a Londres (≈ 40 s)
 - **Responde:** ¿desde cuándo?, del lado de afuera.
 - **Hechos:**
-  - Viene del 0·2: la deuda de Londres impaga desde 1826.
-  - 1849: Castilla nombra negociadores (Osma, Barreda) y se elige a Murrieta, «de dudoso prestigio» (Q, p. 178).
-  - El contrato incluía un «premio» no revelado para los comisionados (p. 179).
-  - Los negociadores cobraron su comisión en bonos nuevos y «más que duplicaron» esa ganancia (p. 179). Mendiburu los acusaría después de haberlos tomado a 33 y vendido a 108 (n. 138); se atribuye.
-  - Vizcarra: la mitad del guano vendido en Gran Bretaña va a los bonistas (V, p. 26). El decreto de 1842 nunca se cumplió (V, n. 22).
+  - Recuerda en dos frases el arreglo de 1849 que cerró el 0·2: crédito recuperado y negociadores que cobraron.
+  - Sigue en 1852–1853: Echenique recomienda a Mendiburu ante Murrieta (n. 139, 10 de septiembre de 1852).
+  - Mendiburu va a Londres como ministro plenipotenciario, con dos tareas: renegociar 1849 y convertir la deuda de adentro (Q, p. 179).
+  - Murrieta emite 2,6 millones de libras en febrero de 1853 (V, p. 24).
 - **→ POR ESO**, con el crédito de Londres recuperado, la deuda de adentro se podía mandar afuera.
 
 ### ESC 8 · El lavado (≈ 110 s)
