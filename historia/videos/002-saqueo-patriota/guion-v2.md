@@ -14,7 +14,7 @@ Las marcas entre corchetes son de dirección: `[PAUSA 1s]` va a la voz; `[SILENC
 Encadenamiento (prueba de «pero» y «por eso», `direccion-historia` §2.2):
 
 ```
-ESC 0  Londres, 1822: el primer préstamo extranjero, virtualmente nulo por usura; llegó la mitad y se dejó de pagar.
+ESC 0  Londres, 1822: el primer préstamo extranjero, nulo en la práctica por usura; llegó la mitad y se dejó de pagar.
        → PERO la deuda no empezó en Londres:
 ESC 1  El país nace con dos deudas: la de adentro viene de la colonia y de la guerra.
        → POR ESO, con una guerra que pagar y sin dinero, los jefes tomaron lo que había:
@@ -25,7 +25,7 @@ ESC 3  Bolívar sigue el camino; los préstamos forzosos se vuelven deuda que pa
 ESC 4  El primer préstamo lo negocian hombres con negocios propios en él.
        → PERO el segundo salió peor:
 ESC 5  Llega la mitad, se deja de pagar y los diplomáticos terminan siendo acreedores.
-       → PERO mientras no se pagaba, la plata seguía saliendo:
+       → PERO antes y después del impago, la plata seguía saliendo:
 ESC 6  Barcos de guerra, contrabando de noche y autoridades que lo protegían.
        → PERO en las islas había otra riqueza:
 ESC 7  El guano: el primer contrato va a un antiguo socio del banquero de los préstamos.
@@ -51,20 +51,20 @@ ESC 9  Se arregla Londres, los negociadores cobran, nadie paga por lo anterior y
 **Carga en la voz:** 1822, 1 200 000 libras, cinco pesos, 75 de 100, la mitad (5).
 
 **VO:**
-Londres, octubre de mil ochocientos veintidós. [PAUSA 0,5s] El Perú todavía no ha ganado su independencia, y ya se firma su primer préstamo extranjero: un millón doscientas mil libras esterlinas. [PAUSA 0,8s] La libra era la moneda británica, y cada una valía unos cinco pesos. [PAUSA 1s]
+Londres, octubre de mil ochocientos veintidós. [PAUSA 0,5s] La guerra de independencia todavía no termina, y ya se firma el primer préstamo extranjero del Perú: un millón doscientas mil libras esterlinas. [PAUSA 0,8s] La libra esterlina era la moneda británica. [PAUSA 1s]
 
-Un abogado de la Corona británica, el procurador general, opinó que ese contrato era virtualmente nulo por usura. [PAUSA 0,6s] De cada cien libras contratadas, solo se adelantaban setenta y cinco. [PAUSA 1s] Sumado un segundo préstamo, al Perú llegó la mitad de todo lo prestado. [PAUSA 0,6s] Y casi de inmediato dejó de pagar. [PAUSA 1,5s]
+Un abogado de la Corona británica, el procurador general, opinó que ese contrato era nulo en la práctica, por usura. [PAUSA 0,6s] De cada cien libras contratadas, solo se adelantaban setenta y cinco. [PAUSA 1s] Sumado un segundo préstamo, al Perú llegó la mitad de todo lo prestado. [PAUSA 0,6s] Y casi de inmediato dejó de pagar. [PAUSA 1,5s]
 
 ¿Cómo nace endeudado un país que acaba de liberarse? [PAUSA 2s]
 
 **Imagen:**
 - Abren las pruebas de imprenta del libro (gramática de la serie). Corte a la mesa de un despacho londinense, de noche: el contrato, quieto. Ficha a máquina `LONDRES · OCTUBRE DE 1822` (`natural`). Cámara quieta: el espectador tiene que leer.
 - «un millón doscientas mil libras»: la cifra se escribe sobre el contrato, `£1 200 000*`, y debajo, más chica, `≈ 900 MILLONES DE SOLES DE HOY*` (`solemne`). Es la única cifra que brilla.
-- «unos cinco pesos»: una libra y cinco pesos de plata, lado a lado, en una balanza que queda nivelada (`pesado`). Rótulo `£1 ≈ 5 PESOS`.
-- «el procurador general»: silueta del abogado y la cita textual en papel de periódico: `«virtualmente nulo por motivo de usura»` · `SOLICITOR GENERAL · LINCOLN'S SUN, 20 DE FEBRERO DE 1823`. Lo anterior se atenúa.
+- «la moneda británica»: una libra y cinco pesos de plata, lado a lado, en una balanza que queda nivelada (`pesado`). Rótulo `£1 ≈ 5 PESOS`. La voz ya no dice la equivalencia: la da la balanza.
+- «el procurador general»: silueta del abogado y la cita textual en papel de periódico: `SOLICITOR GENERAL · LINCOLN'S SUN, 20 DE FEBRERO DE 1823` y, debajo, en otro papel y con su autor: `«virtualmente nulo por motivo de usura» · QUIROZ, P. 138` (son las palabras de Quiroz, no las del periódico, que estaba en inglés). Lo anterior se atenúa.
 - «De cada cien libras»: una fila de cien monedas. Pausa quieta de medio segundo y, después, veinticinco se apartan hacia el borde y se tiñen de rojo apagado (`tenso`, en cascada de 2 a 4 cuadros). Rótulo: `ADELANTO: 75 DE CADA 100 · 30 AÑOS · 6 % ANUAL`. Y `100 LIBRAS ≈ 75 000 SOLES DE HOY*`. Las monedas no se deforman: se trasladan.
 - «Sumado un segundo préstamo»: la fila se duplica arriba con su ficha `+ 1825`; la mitad de todo se va del cuadro (`pesado`).
-- «dejó de pagar»: un sello rojo `IMPAGO · 1826` cae sobre el contrato (sello desde arriba: se pasa apenas de tamaño y vuelve; sin deformarse).
+- «dejó de pagar»: un sello en rojo apagado (una pérdida) `IMPAGO · 1826` cae sobre el contrato (sello desde arriba: se pasa apenas de tamaño y vuelve; sin deformarse).
 - La pregunta queda escrita sobre el contrato, sola. Cámara quieta durante la pausa de 2 s.
 
 **Sonido:** sin música al abrir; papel, pluma y la lluvia de una ventana londinense. Un tic seco por cada moneda que se aparta (solo las primeras cinco; después, el grupo). La música entra muy baja con la pregunta (estado: ausente → presente).
@@ -82,9 +82,9 @@ Un abogado de la Corona británica, el procurador general, opinó que ese contra
 **VO:**
 Ese préstamo era deuda de afuera: lo que un país les debe a acreedores extranjeros. [PAUSA 0,5s] La deuda de adentro es la que tiene con su propia gente, y esa venía de antes. [PAUSA 1s]
 
-En el episodio anterior vimos el crédito público de la colonia: los préstamos con interés que la élite le hacía al erario del rey. [PAUSA 0,6s] Según Quiroz, el Perú independiente heredó más de catorce millones de pesos de esa deuda colonial. [PAUSA 0,6s] Y aclara que esa deuda era legítima: se debía de verdad. [PAUSA 1s]
+En el episodio anterior vimos el crédito público de la colonia: los préstamos con interés que la élite le hacía al erario del rey. [PAUSA 0,6s] Según Quiroz, el Perú independiente heredó más de catorce millones de pesos de deuda colonial. [PAUSA 0,6s] Y aclara que esa deuda era legítima: se debía de verdad. [PAUSA 1s]
 
-La guerra sumó otros reclamos: sueldos de empleados, proveedores, dueños de bienes expropiados y pagos que debían salir de los préstamos de Londres. [PAUSA 0,6s] Eran unos siete millones de pesos más. [PAUSA 1s]
+Los primeros años sumaron otros reclamos: sueldos de empleados, cuentas de proveedores, bienes expropiados y pagos que debían salir de Londres. [PAUSA 0,6s] Eran unos siete millones de pesos más. [PAUSA 1s]
 
 Entonces, el país nació con dos deudas. [PAUSA 0,4s] La de adentro venía de la colonia y de la guerra; la de afuera empezaba en Londres. [PAUSA 1,5s]
 
@@ -94,7 +94,7 @@ Entonces, el país nació con dos deudas. [PAUSA 0,4s] La de adentro venía de l
 - «el crédito público de la colonia»: entra desde el borde izquierdo el legajo del Ep. 1 con su ficha `CRÉDITO PÚBLICO · 1777 · REESTRUCTURADO EN 1815`. Al lado, en chico, la cita textual: `«un legado prominente para el Perú republicano»` (p. 119).
 - «más de catorce millones»: el legajo se apila en `ADENTRO` (`pesado`). Rótulo `+ 14 000 000 DE PESOS · DEUDA COLONIAL HEREDADA` y `≈ 1600 MILLONES DE SOLES DE HOY*`.
 - «era legítima»: el corrector subraya en rojo dos palabras de la cita que entra debajo, `«legítimamente debida a acreedores locales»`. Es la semilla del Ep. 3, donde la deuda se infla.
-- «La guerra sumó otros reclamos»: cuatro papeles, uno por cada tipo de reclamo, caen en cascada sobre la pila (`pesado`, 3 cuadros de desfase). El cuarto lleva una flecha fina hacia el contrato de `AFUERA`. Rótulo `≈ 7 000 000 DE PESOS` y `≈ 800 MILLONES DE SOLES DE HOY*`.
+- «Los primeros años sumaron otros reclamos»: cuatro papeles, uno por cada tipo de reclamo, caen en cascada sobre la pila (`pesado`, 3 cuadros de desfase). El cuarto lleva una flecha fina hacia el contrato de `AFUERA`. Rótulo `≈ 7 000 000 DE PESOS` y `≈ 800 MILLONES DE SOLES DE HOY*`.
 - «Entonces»: la cámara se abre lo justo para que se vean las dos pilas y se queda quieta durante la pausa. Es el primer estado del tablero.
 
 **Sonido:** la tiza en la pizarra; un golpe sordo de legajo cuando cae la herencia colonial. La música sostiene la pausa final.
@@ -112,7 +112,7 @@ Entonces, el país nació con dos deudas. [PAUSA 0,4s] La de adentro venía de l
 **VO:**
 Con una guerra que pagar y sin dinero, los jefes de la independencia tomaron lo que había. [PAUSA 0,5s] Según Quiroz, abusaron de la expropiación en nombre de la causa patriota. [PAUSA 1s]
 
-Entre mil ochocientos veintiuno y mil ochocientos veintidós, San Martín y su ministro Bernardo Monteagudo expropiaron a la élite comercial de Lima. [PAUSA 0,6s] Quiroz escribe que Monteagudo confiscó caudales para organizar redes de espías. [PAUSA 0,6s] Algunos peruanos indignados protestaron: según ellos, sacaba los tesoros de las iglesias, no para salvar a la patria sino para pagar espías y obras inútiles. [PAUSA 0,8s] En mil ochocientos veintidós lo expulsaron de Lima. [PAUSA 1,2s]
+Entre mil ochocientos veintiuno y mil ochocientos veintidós, San Martín y su ministro Bernardo Monteagudo expropiaron a la élite comercial de Lima. [PAUSA 0,6s] Quiroz escribe que Monteagudo confiscó caudales para organizar redes de espías. [PAUSA 0,6s] Algunos peruanos indignados protestaron. [PAUSA 0,3s] Según ellos, mandaba sacar los tesoros de las iglesias, no para salvar a la patria sino para pagar espías y obras inútiles. [PAUSA 0,8s] En mil ochocientos veintidós lo expulsaron de Lima. [PAUSA 1,2s]
 
 Las haciendas y casas confiscadas a los realistas se valoraron en unos dos millones de pesos. [PAUSA 0,6s] Eran difíciles de vender, así que casi no le dejaron dinero al Estado. [PAUSA 0,8s] Con los años, la mayor parte se entregó a oficiales que pedían recompensa por la guerra. [PAUSA 1s]
 
@@ -156,7 +156,7 @@ Adentro, el Estado obligaba a los comerciantes a prestarle sin pagarles después
 Entonces, lo que se tomó en nombre de la patria no desapareció: se volvió deuda. [PAUSA 1,5s]
 
 **Imagen:**
-- La carta del cónsul, abierta, con su ficha `WILLIAM TUDOR · CÓNSUL DE EE. UU. · CALLAO, 3 DE MAYO DE 1824 · A JOHN QUINCY ADAMS`. Silueta, sin retrato. La cita textual se escribe al ritmo de la voz, en tinta: `«los invasores que vinieron a proclamar la libertad y la independencia eran crueles, rapaces, carentes de principios e incapaces»` (`ligero`). El corrector subraya en rojo «invasores».
+- La carta del cónsul, abierta, con su ficha `WILLIAM TUDOR · CÓNSUL DE EE. UU. · CALLAO, 3 DE MAYO DE 1824 · A JOHN QUINCY ADAMS`. Silueta, sin retrato. Como la voz dice la cita, la pantalla no la transcribe: sobre la carta, en tinta, solo `«los invasores…»`, y el corrector subraya en rojo «invasores» (`ligero`). La cita completa va en la descripción del video.
 - «Bolívar»: medallón redibujado y ficha `SIMÓN BOLÍVAR · DICTADOR, 1824–1826`. Al lado, sin voz: `CON SU MINISTRO JOSÉ FAUSTINO SÁNCHEZ CARRIÓN, QUE «RECIBIÓ VARIAS PROPIEDADES»` (p. 133).
 - «la fortaleza del Callao»: la silueta del Real Felipe; sus bienes se vuelven papeles que viajan en arco hacia la mesa de las dos deudas (`pesado`). La mesa vuelve a cuadro: la cámara retrocede de la fortaleza a la mesa (`pesado`; el motivo es que lo tomado llega a la cuenta).
 - «adornos de plata de las iglesias»: un cáliz y un candelero, dibujados en grabado, pasan a la caja del ejército. No se dibuja a nadie arrancándolos.
@@ -181,7 +181,7 @@ Entonces, lo que se tomó en nombre de la patria no desapareció: se volvió deu
 **Carga en la voz:** García del Río, Paroissien, Kinder, 1823, Riva-Agüero, cien mil pesos, La Fuente (7). Presenta el bono y su precio.
 
 **VO:**
-Con el crédito arruinado adentro, desde mil ochocientos veintidós se buscó dinero afuera. [PAUSA 0,6s] El primer préstamo lo negociaron dos enviados y amigos de San Martín: Juan García del Río y el médico británico James Paroissien. [PAUSA 0,6s] El contratista fue un banquero de Londres, Thomas Kinder. [PAUSA 1s]
+Ya desde mil ochocientos veintidós, con el crédito arruinado adentro, se buscaba dinero afuera. [PAUSA 0,6s] El primer préstamo lo negociaron dos enviados y amigos de San Martín: Juan García del Río y el médico británico James Paroissien. [PAUSA 0,6s] El contratista fue un banquero de Londres, Thomas Kinder. [PAUSA 1s]
 
 Kinder vendía el préstamo en bonos a compradores de Londres. [PAUSA 0,5s] Un bono es un papel de deuda que se compra y se vende, y su precio se cuenta sobre cien. [PAUSA 1,2s]
 
@@ -191,7 +191,7 @@ El Congreso aprobó el préstamo en mil ochocientos veintitrés, con José de la
 
 **Imagen:**
 - La ruta Londres–Lima, en el mapa (no en la pizarra: es un trayecto). El barco de los enviados recorre el Atlántico (`pesado`); la cámara lo sigue y frena en Londres. Ficha `LONDRES · 1822`. Al llegar, la cámara se abre para que se vea la ruta entera.
-- «dos enviados»: medallones de García del Río (ficha `JUAN GARCÍA DEL RÍO · «EL COLOMBIANO»`) y de Paroissien (`JAMES PAROISSIEN · MÉDICO BRITÁNICO`). Debajo, la carta de los propios enviados, textual: `«La exceziva [sic] abundancia de fondos que hay en este país fuera de circulación, ha inducido ya a varios especuladores a solicitarnos para facilitar la realización de un empréstito» · LONDRES, 7 DE SEPTIEMBRE DE 1822`. Y `SAN MARTÍN LES DIO 40 000 PESOS PARA SUELDOS Y LEGACIÓN` (n. 24).
+- «dos enviados»: medallones de García del Río (ficha `JUAN GARCÍA DEL RÍO · «EL COLOMBIANO»`) y de Paroissien (`JAMES PAROISSIEN · MÉDICO BRITÁNICO`). Debajo, la carta de los propios enviados, en un fragmento textual que se lee en 4 s: `«ha inducido ya a varios especuladores a solicitarnos para facilitar la realización de un empréstito» · LONDRES, 7 DE SEPTIEMBRE DE 1822`. La frase completa, con «exceziva [sic]», va en la descripción. Y `SAN MARTÍN LES DIO 40 000 PESOS PARA SUELDOS Y LEGACIÓN` (n. 24).
 - «Thomas Kinder»: silueta con ficha `BANQUERO · CONTRATISTA DE LA EMISIÓN`.
 - «un bono»: pizarra de tiza a un lado del mapa. Un papel con `£100` arriba y, debajo, `PRECIO: __ DE CADA 100`, con el espacio en blanco. No se pone un precio inventado: el número llega en la ESC 5, con el dato real (`ligero`).
 - «Paroissien hacía negocios privados»: un trazo une a Paroissien con Kinder por arriba (`EN NOMBRE DEL PERÚ`) y otro por abajo (`NEGOCIOS PRIVADOS`). Los dos trazos brillan a la vez: es una comparación. Con «el grado de general», a la ficha de Paroissien se le suma `GENERAL · PARTE DE UNA HACIENDA CONFISCADA`.
@@ -215,7 +215,7 @@ El Congreso aprobó el préstamo en mil ochocientos veintitrés, con José de la
 **VO:**
 En enero de mil ochocientos veinticinco se contrató un segundo préstamo, otra vez con Kinder. [PAUSA 0,5s] Lo contrató un nuevo agente del Perú, el comerciante John Parish Robertson, que cobraba una comisión del dos por ciento. [PAUSA 0,5s] Bolívar esperaba ansioso ese dinero, y una parte era para comprar fusiles. [PAUSA 1s]
 
-Kinder no entregó el adelanto convenido, y el Estado no pudo cubrir los intereses. [PAUSA 0,6s] De los dos préstamos, al Perú llegó la mitad, después de comisiones, gastos e intereses cobrados por adelantado. [PAUSA 0,6s] Según Quiroz, lo poco que llegó se malgastó además en pagos exagerados a los oficiales del ejército de Bolívar. [PAUSA 1,2s]
+Kinder no entregó el dinero convenido, y el Estado no pudo cubrir los intereses. [PAUSA 0,6s] De los dos préstamos, al Perú llegó la mitad, después de comisiones, gastos e intereses cobrados por adelantado. [PAUSA 0,6s] Según Quiroz, lo poco que llegó se malgastó además en pagos exagerados a los oficiales del ejército de Bolívar. [PAUSA 1,2s]
 
 A fines de mil ochocientos veinticinco se desplomó la bolsa de Londres, y en mil ochocientos veintiséis el Perú dejó de pagar. [PAUSA 0,6s] Ese año, según los diplomáticos peruanos en Londres, sus bonos llegaron a caer a treinta: treinta libras por cada cien que prometían. [PAUSA 1,2s]
 
@@ -223,19 +223,19 @@ Ese mismo año, en Londres, un comerciante inglés publicó el informe secreto d
 
 Sin sueldo, los diplomáticos peruanos en Londres terminaron siendo acreedores del mismo Estado que representaban. [PAUSA 0,5s] Y según Quiroz, encontraron la forma de enriquecerse con comisiones y tratos impropios. [PAUSA 1,2s]
 
-Entonces, de Londres quedó una deuda de cerca de un millón ochocientas mil libras, y llegó la mitad. [PAUSA 0,5s] La bolsa de Londres no volvió a abrirse para el Perú hasta fines de los años cuarenta. [PAUSA 1,5s]
+Entonces, de Londres quedó una deuda de cerca de un millón ochocientas mil libras. [PAUSA 0,5s] La bolsa de Londres no volvió a abrirse para el Perú hasta fines de los años cuarenta. [PAUSA 1,5s]
 
 **Imagen:**
 - La misma ruta, de vuelta en Londres. Ficha `LONDRES · ENERO DE 1825`. Silueta de Robertson con `JOHN PARISH ROBERTSON · AGENTE DEL PERÚ · COMISIÓN: 2 %`. Un trazo lo une con la ficha `ROBERT PROCTOR · AGENTE DE KINDER EN LIMA` al otro lado del mapa (`natural`).
 - Rótulo del préstamo: `£616 000* · 6 % · ≈ 340 MILLONES DE SOLES DE HOY*`.
 - «comprar fusiles»: `40 000 LIBRAS PARA 25 000 «RIFLES» · ≈ 22 MILLONES DE SOLES DE HOY*`. Los fusiles no se dibujan en fila heroica: solo el pedido escrito.
-- «Kinder no entregó el adelanto»: el barco del dinero sale de Londres y se detiene a mitad del océano (`tenso`). Sin voz: `KINDER SE NEGÓ A DEVOLVER LOS BONOS NO VENDIDOS «POR HABER DISPUESTO [DE ELLOS] INDEBIDAMENTE» · 15 DE MAYO DE 1826` (n. 30).
+- «Kinder no entregó el dinero convenido»: el barco del dinero sale de Londres y se detiene a mitad del océano (`tenso`). Sin voz: `SEGÚN OLMEDO Y PAREDES, KINDER SE NEGÓ A DEVOLVER LOS BONOS NO VENDIDOS «POR HABER DISPUESTO [DE ELLOS] INDEBIDAMENTE» · 15 DE MAYO DE 1826` (n. 30).
 - «llegó la mitad»: vuelven las cien monedas del gancho, ahora como suma de los dos préstamos: `£1 816 000* · ≈ 1240 MILLONES DE SOLES DE HOY*`. La mitad se queda en Londres, dividida en tres montones rotulados `COMISIONES`, `GASTOS` e `INTERESES POR ADELANTADO` (`pesado`). Cierra el bucle de la ESC 0.
 - «a los oficiales»: la mitad que llegó a Lima se reparte hacia fichas de oficiales del ejército de Bolívar, sin nombres.
 - «se desplomó la bolsa»: una línea de precios en el pizarrón de la bolsa cae (`tenso`) y la ruta Londres–Lima se corta en rojo. Ficha `IMPAGO · 1826`.
 - «a treinta»: vuelve la pizarra del bono de la ESC 4 y el espacio en blanco se llena: `PRECIO: 30 DE CADA 100` (`solemne`). Sin voz, la cita: `«el abatido crédito que se hallan los fondos del Perú que algún día han descendido a 30» · OLMEDO Y PAREDES, LONDRES, 2 DE MARZO DE 1826`. Debajo: `1826–1849: «FRECUENTEMENTE POR DEBAJO DEL 20 % DEL VALOR NOMINAL»` (V, p. 11).
 - «un comerciante inglés publicó el informe»: entra el libro de 1826 con su portada legible, `NOTICIAS SECRETAS DE AMÉRICA · JORGE JUAN Y ANTONIO DE ULLOA · LONDRES, 1826 · ED. DAVID BARRY`. Es el «Discurso» de 1749 del Ep. 1. El libro y la ficha `IMPAGO · 1826` quedan lado a lado, separados por una línea fina sin flecha: coinciden en el año y nada más. Ninguna flecha los une.
-- «los diplomáticos»: ficha `JOSÉ J. OLMEDO Y JOSÉ GREGORIO PAREDES · LONDRES, 1826`. Con «acreedores», la palabra entre comillas, como la escribe Quiroz: `«ACREEDORES» DEL ESTADO`. Semilla del Ep. 4, sin voz: `JUAN MANUEL ITURREGUI, 1827: COMPRAR LOS BONOS «CONSULTANDO EL MAYOR SECRETO»` (n. 32), y `«IMPOSIBLE VIVIR EN LONDRES […] SIN UN GASTO DE £ DOS MIL CUANDO MENOS; Y LA ASIGNACIÓN QUE SE ME HACE ES DE OCHOCIENTOS»` (n. 31).
+- «Sin sueldo»: ficha `JOSÉ J. OLMEDO Y JOSÉ GREGORIO PAREDES · LONDRES, 1826 · PAGABAN LOS GASTOS «CON SUS PROPIOS RECURSOS Y CON CRÉDITO PRIVADO»` (p. 140). Se atenúa antes de «enriquecerse»: a ellos el libro no los acusa. Con «acreedores», la palabra entre comillas, como la escribe Quiroz: `«ACREEDORES» DEL ESTADO · FINES DE LOS AÑOS VEINTE Y AÑOS TREINTA`. Con «enriquecerse», entra la ficha del caso que el libro nombra: `JUAN MANUEL ITURREGUI · LEGACIÓN EN LONDRES, 1827–1838`. Semilla del Ep. 4, sin voz: `JUAN MANUEL ITURREGUI, 1827: COMPRAR LOS BONOS «CONSULTANDO EL MAYOR SECRETO»` (n. 32), y `«IMPOSIBLE VIVIR EN LONDRES […] SIN UN GASTO DE £ DOS MIL CUANDO MENOS; Y LA ASIGNACIÓN QUE SE ME HACE ES DE OCHOCIENTOS»` (n. 31).
 - «Entonces»: la mesa de las dos deudas, con el contrato de afuera más grueso y la mitad de sus monedas en Londres. Al costado, sin voz: `NUEVA GRANADA «SENTÓ ESTE PATRÓN» EN 1820; LUEGO, CHILE Y MÉXICO` (p. 136). La cámara se abre y queda quieta.
 
 **Sonido:** el ruido de la bolsa de Londres crece hasta «se desplomó» y se corta en un golpe grave (estado: tensión → golpe). Después, solo un reloj de pared en la legación vacía. La música vuelve con «Entonces».
@@ -251,23 +251,23 @@ Entonces, de Londres quedó una deuda de cerca de un millón ochocientas mil lib
 **Carga en la voz:** el dólar, 1819–1825, veintisiete millones, Witt, 1825, sesenta mil, Gibbs, doscientos mil, Castilla (9 en unos 108 s). Presenta el dólar.
 
 **VO:**
-Mientras el Estado no pagaba, la riqueza del país seguía saliendo por mar. [PAUSA 0,5s] Aquí aparece otra moneda, el dólar de Estados Unidos: para el siglo diecinueve, Quiroz cuenta un peso como un dólar. [PAUSA 1s]
+Antes y después del impago, la riqueza del país salía por mar. [PAUSA 0,5s] Aquí aparece otra moneda, el dólar de Estados Unidos: para el siglo diecinueve, Quiroz cuenta un peso como un dólar. [PAUSA 1s]
 
 El cónsul británico en Lima hizo una cuenta. [PAUSA 0,4s] Entre mil ochocientos diecinueve y mil ochocientos veinticinco, los barcos de guerra británicos sacaron del Perú veintisiete millones de dólares en plata y oro. [PAUSA 0,6s] Según Quiroz, una parte salía de contrabando. [PAUSA 1s]
 
-Un comerciante alemán en Lima, Heinrich Witt, lo dejó escrito en su diario. [PAUSA 0,5s] En julio de mil ochocientos veinticinco supervisó el despacho de sesenta mil dólares para la casa inglesa Antony Gibbs. [PAUSA 0,5s] Era plata piña, la plata sin quintar del episodio anterior. [PAUSA 0,5s] Un piloto se había comprometido a subirla de contrabando a un barco de guerra, y esa noche se hizo sin contratiempos. [PAUSA 1,2s]
+Un comerciante alemán en Lima, Heinrich Witt, lo dejó escrito en su diario. [PAUSA 0,5s] En julio de mil ochocientos veinticinco supervisó un despacho de sesenta mil dólares para la casa inglesa Antony Gibbs. [PAUSA 0,5s] Ese día habló con el arriero que había traído plata piña desde Arequipa, la plata sin quintar del episodio anterior. [PAUSA 0,5s] Habló también con un piloto que se había comprometido a subirla de contrabando a un barco de guerra. [PAUSA 0,4s] Se hizo esa noche, sin contratiempos. [PAUSA 1,2s]
 
 En tierra, el contrabando tenía protectores. [PAUSA 0,5s] Según un diplomático francés, como prefecto de Arequipa, La Fuente protegía el contrabando y desvió fondos públicos hasta juntar al menos doscientos mil pesos. [PAUSA 0,6s] Era el mismo La Fuente que había acusado a Riva-Agüero de dilapidar los fondos. [PAUSA 1s] A Ramón Castilla, que años después sería presidente, también lo acusaron en esos años de ayudar al contrabando de licor. [PAUSA 1s]
 
 La ley tenía pena de muerte para el aduanero que ayudara al contrabando. [PAUSA 0,5s] Según Quiroz, rara vez se aplicaba: los investigados diluían las pesquisas con sobornos y testigos falsos. [PAUSA 1s]
 
-Entonces, mientras en Londres no se pagaba, la plata salía por mar, y las autoridades que debían detenerla la protegían. [PAUSA 1,5s]
+Entonces, mientras el Perú se endeudaba y dejaba de pagar en Londres, la plata salía por mar, y las autoridades que debían detenerla la protegían. [PAUSA 1,5s]
 
 **Imagen:**
 - Pizarra, breve: `1 PESO = 1 DÓLAR (QUIROZ, PARA EL SIGLO XIX)`. Una moneda de un peso y una de un dólar, del mismo tamaño, se tocan (`ligero`). La pizarra se apaga y no vuelve en esta escena.
 - El puerto del Callao de noche, desde el mar (es un lugar: no va en la pizarra). Un barco de guerra con bandera británica. Ficha `CALLAO · 1819–1825`.
 - «veintisiete millones»: rótulo `27 000 000 DE DÓLARES EN PLATA Y ORO · ≈ 3100 MILLONES DE SOLES DE HOY*` y la ficha de su fuente: `CHARLES RICKETTS · CÓNSUL BRITÁNICO EN LIMA` (`solemne`). La voz no dice que todo fuera contrabando, y la imagen tampoco: las barras suben al barco a la luz de faroles, sin esconderse.
-- «Heinrich Witt»: silueta y su diario abierto. La entrada se escribe en tinta, textual: `«supervisé el despacho de $60,000 [para Antony Gibbs & Sons] en el "Mersey". […] Turner, el piloto que se había comprometido a contrabandearla a bordo del buque de guerra […] lo que se llevó a cabo sin contratiempos» · 4 DE JULIO DE 1825`. Rótulo `60 000 DÓLARES · ≈ 7 MILLONES DE SOLES DE HOY*` [VERIFICAR: conversión derivada de la tasa de 1825 de `fuentes.md`, falta anotarla allí].
+- «Heinrich Witt»: silueta y su diario abierto. La página del diario se ve entera, como imagen, sin transcribirse mientras habla la voz; al final de la frase queda escrito solo el remate textual: `«lo que se llevó a cabo sin contratiempos» · WITT, 4 DE JULIO DE 1825`. La entrada completa va en la descripción, sin cortar al arriero: «supervisé el despacho de $60,000 [para Antony Gibbs & Sons] en el "Mersey". También conversé un poco con el arriero que había transportado la plata piña desde Arequipa y con Turner, el piloto que se había comprometido a contrabandearla a bordo del buque de guerra […]» (p. 142, n. 33). Rótulo `60 000 DÓLARES · ≈ 7 MILLONES DE SOLES DE HOY*` [VERIFICAR: conversión derivada de la tasa de 1825 de `fuentes.md`, falta anotarla allí].
 - «plata piña»: la ficha del Ep. 1, `PLATA PIÑA · SIN QUINTAR`, entra desde el borde, del mismo tamaño que entonces. Una línea punteada va de Arequipa al Callao en el mapa chico de la esquina (`natural`).
 - «esa noche»: ahora sí, la carga sube a oscuras a un bote y del bote al barco de guerra (`tenso`; es el único movimiento en cuadro, la cámara quieta). La ficha `ANTONY GIBBS & SONS` queda en el borde, en ocre: vuelve en la ESC 8.
 - «En tierra»: la cámara sube del mar al mapa del sur (`pesado`; el motivo es pasar del barco a quien lo protegía). Vuelve la ficha de La Fuente de la ESC 4, ahora con `PREFECTO DE AREQUIPA · FINES DE LOS AÑOS VEINTE`. Rótulo `≥ 200 000 PESOS · ≈ 23 MILLONES DE SOLES DE HOY*` y su fuente: `SEGÚN EL DIPLOMÁTICO FRANCÉS BARRÈRE, 4 DE ABRIL DE 1831`.
@@ -291,7 +291,7 @@ Entonces, mientras en Londres no se pagaba, la plata salía por mar, y las autor
 **VO:**
 Pero en las islas de la costa había otra riqueza: el guano, el excremento de las aves marinas. [PAUSA 0,6s] En los años treinta, unos experimentos encontraron que el guano peruano tenía mucho nitrógeno y fósforo. [PAUSA 0,5s] Eso le daba ventaja sobre otros abonos. [PAUSA 1,2s]
 
-En noviembre de mil ochocientos cuarenta, el presidente Agustín Gamarra y su ministro de Hacienda, Ramón Castilla, dieron el primer contrato del guano. [PAUSA 0,5s] Era el mismo Castilla al que habían acusado de contrabando. [PAUSA 0,8s] Por nueve años, una sola sociedad podría sacar todo el guano que quisiera y venderlo en Europa. [PAUSA 0,5s] La formaban un capitalista peruano y tres socios franceses. [PAUSA 0,5s] El peruano había sido socio de Kinder y de Robertson en Londres, en los años de los primeros préstamos. [PAUSA 1s] A cambio, la sociedad pagó solo noventa mil pesos, en cuotas, en efectivo y en billetes. [PAUSA 0,6s] El Estado estaba urgido de adelantos, porque se acercaba una guerra con Bolivia. [PAUSA 1,2s]
+En noviembre de mil ochocientos cuarenta, el presidente Agustín Gamarra y su ministro de Hacienda, Ramón Castilla, dieron el primer contrato del guano. [PAUSA 0,5s] Era el mismo Castilla al que habían acusado de contrabando. [PAUSA 0,8s] Por nueve años, una sola sociedad podría sacar todo el guano que quisiera y venderlo en Europa. [PAUSA 0,5s] La formaban un capitalista peruano y tres socios franceses. [PAUSA 0,5s] El peruano había sido socio de Kinder y de Robertson en Londres, en los años de los primeros préstamos. [PAUSA 1s] A cambio, la sociedad pagó solo noventa mil pesos, en cuotas, en efectivo y en billetes. [PAUSA 0,6s] El Estado necesitaba dinero con urgencia, porque se acercaba una guerra con Bolivia. [PAUSA 1,2s]
 
 Un año después, un diplomático de Estados Unidos informó a su gobierno sobre el negocio. [PAUSA 0,4s] Según él, el guano se vendía en Inglaterra con una ganancia neta de al menos el cincuenta por ciento. [PAUSA 1s]
 
@@ -301,15 +301,15 @@ Entonces, el Perú por fin tenía con qué pagar, y el primer contrato fue a par
 
 **Imagen:**
 - Las islas, en el grabado del 0·3, con el mar azul de verdad (DIRECCION §2.13) y las aves. Ficha `ISLAS GUANERAS · COSTA DEL PERÚ`. La cámara entra despacio desde el mar hacia la isla (`solemne`; el motivo es presentar la riqueza nueva). Después, quieta.
-- «abono desde antiguo»: la cita textual en un papel de la época: `«generalmente se supone que el huano es el excremento de aves marinas […] y se le ha usado en la agricultura como abono desde tiempos inmemoriales»`.
+- «el excremento de las aves marinas»: la cita textual en un papel de la época: `«generalmente se supone que el huano es el excremento de aves marinas […] y se le ha usado en la agricultura como abono desde tiempos inmemoriales»`.
 - «nitrógeno y fósforo»: un frasco de laboratorio y las fichas `N` y `P` (`ligero`); al lado, el hueso y la sangre seca, más chicos y en gris. Ficha `EXPERIMENTOS · AÑOS 1830`.
 - «noviembre de mil ochocientos cuarenta»: el contrato sobre la mesa, con los medallones de Gamarra y de Castilla. A Castilla le vuelve la flecha `→ 1840` de la ESC 6, y ahí se cierra (`natural`).
 - «un capitalista peruano y tres socios franceses»: fichas `FRANCISCO QUIRÓS (CON S)` y `AQUILES ALLIER · CARLOS BARROILHET · M. DUTEY` → `QUIRÓS, ALLIER & CO.`. La voz no dice el nombre, para que no se confunda con Quiroz.
 - «socio de Kinder»: la ficha de Quirós que quedó en el borde de Londres en la ESC 4 cruza el mapa en arco y se encima sobre la del contrato (`pesado`). Por un instante, las dos brillan juntas: `LONDRES, 1822–1825` y `LIMA, 1840`. Es la yuxtaposición deliberada del episodio.
 - «noventa mil pesos»: la cifra, sola y chica, al pie de la isla entera: `90 000 PESOS (18 000 LIBRAS) · NUEVE AÑOS · ≈ 10 MILLONES DE SOLES DE HOY*`. Sin voz, la palabra de Quiroz: `«EXTREMADAMENTE RENTABLE CONTRATO MONOPÓLICO»`.
 - «un diplomático de Estados Unidos»: silueta y ficha `J. C. PICKETT · LIMA, 27 DE NOVIEMBRE DE 1841`. Cita: `«ganancia neta de al menos 50 [por ciento]»`. El precio de la tonelada no sale hasta resolverse [VERIFICAR].
-- «el contrato se canceló»: el corrector lo tacha en rojo (`tenso`), y sin voz: `QUIRÓS, ALLIER & CO. SIGUIÓ COMO CONSIGNATARIA` (p. 167).
-- «fuentes independientes»: la frase textual, `«Fuentes independientes dan fe del pago de sobornos a las más altas autoridades»`. Con Vidal, su ficha `GENERAL FRANCISCO DE VIDAL · MEMORIAS, 1855` y la cita: `«se habría convertido en el mayor millonario de la república»`, que se escribe y se queda.
+- En la pausa después de «guerra con Bolivia», sin voz: el corrector tacha el contrato en rojo (`tenso`) y queda `RESCINDIDO EN 1841 · QUIRÓS, ALLIER & CO. SIGUIÓ EN EL NEGOCIO DEL GUANO` (pp. 165 y 167). «Consignataria» no se usa aquí: el concepto llega en la ESC 8.
+- «fuentes independientes»: la frase textual, `«Fuentes independientes dan fe del pago de sobornos a las más altas autoridades»`. Con Vidal, solo su ficha: `GENERAL FRANCISCO DE VIDAL · MEMORIA ESCRITA EN 1855 · EL AGENTE: LUCAS FONSECA`. La frase del millonario no se escribe: la dice la voz, y son palabras de Quiroz que resumen a Vidal, no de Vidal.
 - «Entonces»: la cámara se abre hasta que se ven, a la vez, Londres con Kinder (izquierda, apagado) y las islas con el contrato (derecha, en ocre). Quieta durante la pausa.
 
 **Sonido:** el mar y las aves al abrir, con viento. La música pasa de presente a tensión cuando aparece el contrato, y llega a su punto más alto con el arco de Quirós de Londres a Lima. Un golpe de sello cuando el corrector tacha el contrato.
@@ -327,9 +327,9 @@ Entonces, el Perú por fin tenía con qué pagar, y el primer contrato fue a par
 **VO:**
 Pero el Estado no esperó a vender el guano para gastarlo. [PAUSA 0,6s] Siguió siendo el dueño, y encargó la venta a casas comerciales llamadas consignatarias. [PAUSA 0,5s] El consignatario vendía el guano del Estado en el extranjero y cobraba una comisión. [PAUSA 0,5s] Además le daba adelantos al gobierno: préstamos a cuenta del guano que todavía no se había vendido. [PAUSA 1s]
 
-Según Quiroz, esos adelantos llegaron a cobrar hasta el uno por ciento de interés al mes. [PAUSA 0,5s] Y las casas, además, pagaban sobornos a funcionarios de sucesivos gobiernos. [PAUSA 1s]
+Según Quiroz, esos adelantos llegaron a cobrar hasta el uno por ciento de interés al mes. [PAUSA 0,5s] Y las consignaciones iban a casas dispuestas también a sobornar a funcionarios de sucesivos gobiernos. [PAUSA 1s]
 
-Desde mil ochocientos cuarenta y dos, el consignatario más importante fue la casa Gibbs. [PAUSA 0,5s] Es la misma que recibía la plata de contrabando de Witt. [PAUSA 1,2s] Para Quiroz, con ese arreglo los consignatarios tenían pocos incentivos para ser honestos con las cuentas del guano. [PAUSA 1s]
+Desde mil ochocientos cuarenta y dos, el consignatario más importante fue la casa Gibbs. [PAUSA 0,5s] Es la misma casa para la que Witt despachaba plata en mil ochocientos veinticinco. [PAUSA 1,2s] Para Quiroz, con ese arreglo los consignatarios tenían pocos incentivos para ser honestos con las cuentas del guano. [PAUSA 1s]
 
 Un diplomático de Estados Unidos describió uno de esos préstamos. [PAUSA 0,4s] El gobierno aceptó que una cuarta parte de lo que dejaba la venta del guano se le pagara con papeles de deuda depreciados. [PAUSA 0,4s] Esos papeles valían alrededor de la quinta parte de lo que decían. [PAUSA 1s]
 
@@ -343,9 +343,9 @@ Entonces, el guano se gastaba antes de venderse, y el que lo vendía era tambié
 - «la casa Gibbs»: la ficha ocre de `ANTONY GIBBS & SONS` de la ESC 6 entra en el lugar del consignatario. Al lado, la página del diario de Witt, en chico. Ficha `CONSIGNATARIO PRINCIPAL · 1842–1861`. Sin voz: `1846: EL GOBIERNO ORDENA INVESTIGAR SUS COMISIONES` (p. 168).
 - Junto a Gibbs, sin voz: `MONTANÉ & CO., SOCIO DE GIBBS EN EL GUANO EN LOS AÑOS CUARENTA` (V, n. 42). Semilla del Ep. 4.
 - «un diplomático de Estados Unidos»: silueta y ficha `JOHN RANDOLPH CLAY · LIMA, 11 DE ENERO DE 1848 · PRÉSTAMO DE 850 000 DÓLARES DE GIBBS Y MONTANÉ`. Cita: `«Las condiciones de este contrato son tan extraordinarias…»`.
-- «una cuarta parte»: una barra con lo que deja la venta del guano; su cuarta parte se colorea y se llena con papeles viejos (`pesado`). «la quinta parte»: cada papel se encoge a la quinta parte de su altura escrita, en rojo apagado, sin deformar el texto: el papel queda igual y lo que se achica es su barra de valor. Rótulo: `PAPELES CON «UN DESCUENTO DE ALREDEDOR DE 80 POR CIENTO DEL VALOR NOMINAL»`.
+- «una cuarta parte»: una barra con lo que deja la venta del guano; su cuarta parte se colorea y se llena con papeles viejos (`pesado`). «la quinta parte»: los papeles no cambian; al lado de cada uno, una barra de valor baja a la quinta parte de su altura, en rojo apagado (una pérdida). Rótulo: `PAPELES CON «UN DESCUENTO DE ALREDEDOR DE 80 POR CIENTO DEL VALOR NOMINAL»`.
 - «Catalina Vizcarra»: ficha `CATALINA VIZCARRA · INVESTIGADORA · ECONOMÍA (PUCP), 2011`. Rótulo `≈ 5 500 000 DE PESOS · AÑOS 1840 · LA MAYOR PARTE EN ADELANTOS` [VERIFICAR: equivalente en soles, la tasa de los años cuarenta no está en `fuentes.md`]. Sin voz: `CUBRIERON «UN DÉCIMO DE LOS REQUERIMIENTOS PRESUPUESTARIOS»`.
-- «Entonces»: el esquema de la pizarra completo, quieto. La flecha de vuelta (el adelanto) es más gruesa que la de ida (la venta).
+- «Entonces»: el esquema de la pizarra completo, quieto. Las flechas tienen el mismo grosor: no representan cantidades. La de vuelta (el adelanto) queda encendida.
 
 **Sonido:** la tiza; un tic por cada pieza del esquema. Ambiente bajo de oficina. La música vuelve a presente: es el respiro después del pico.
 
@@ -360,31 +360,31 @@ Entonces, el guano se gastaba antes de venderse, y el que lo vendía era tambié
 **Carga en la voz:** 1849, tres millones seiscientas mil libras, el doble, premio, 1831, La Mar, cuatro de diez, catorce de diez (8 en unos 170 s).
 
 **VO:**
-Para que Londres volviera a prestar, había que arreglar la deuda vieja. [PAUSA 0,5s] Ya presidente, Castilla explicó para qué servía. [PAUSA 0,4s] Había que revivir el crédito que la república perdió en Europa casi al mismo tiempo que vino a la existencia. [PAUSA 0,8s] El arreglo se firmó el treinta y uno de enero de mil ochocientos cuarenta y nueve. [PAUSA 0,4s] A los dueños de los bonos les tocaría la mitad de lo que dejara el guano vendido en Gran Bretaña. [PAUSA 0,6s] Con los intereses atrasados, la deuda reconocida llegó a unos tres millones seiscientas mil libras: casi el doble de lo prestado. [PAUSA 1,2s]
+Para que Londres volviera a prestar, había que arreglar la deuda vieja. [PAUSA 1,5s] El arreglo se firmó el treinta y uno de enero de mil ochocientos cuarenta y nueve. [PAUSA 0,4s] A los dueños de los bonos les tocaría la mitad de lo que dejara el guano vendido en Gran Bretaña. [PAUSA 0,6s] Con los intereses atrasados, la deuda reconocida llegó a unos tres millones seiscientas mil libras: casi el doble de lo prestado. [PAUSA 1,2s]
 
 Para cambiar los bonos viejos por nuevos, los negociadores de Castilla eligieron una casa de Londres que Quiroz llama de dudoso prestigio. [PAUSA 0,5s] Su contrato incluía un premio no revelado para los comisionados peruanos. [PAUSA 0,5s] Es la palabra del episodio anterior. [PAUSA 0,6s] Los comisionados cobraron además en bonos nuevos, y según Quiroz más que duplicaron esa ganancia en poco tiempo. [PAUSA 1,5s]
 
-Queda la última pregunta: ¿alguien pagó por todo lo anterior? [PAUSA 1s] A los oficiales premiados con haciendas, el libro no les registra ningún castigo. [PAUSA 0,5s] Kinder nunca fue a juicio: los diplomáticos peruanos pensaron que un pleito en Londres sería un mal mayor. [PAUSA 0,5s] A La Fuente lo sacaron del cargo en mil ochocientos treinta y uno, acusado de conspiración y peculado. [PAUSA 0,4s] Años después volvió al gobierno, y llegó a ministro de Hacienda. [PAUSA 0,5s] Y sobre los negociadores del arreglo hubo sospechas, pero el libro no registra ninguna sanción. [PAUSA 1s]
+Queda la última pregunta: ¿alguien pagó por todo lo anterior? [PAUSA 1s] A los oficiales premiados con haciendas, el libro no les registra ningún castigo. [PAUSA 0,5s] Contra Kinder, los diplomáticos peruanos descartaron un pleito: en Londres, escribieron, sería un mal mayor. [PAUSA 0,5s] A La Fuente lo sacaron del cargo en mil ochocientos treinta y uno, acusado de conspiración y peculado. [PAUSA 0,4s] Años después volvió al gobierno, y llegó a ministro de Hacienda. [PAUSA 0,5s] Y sobre los negociadores del arreglo hubo sospechas, pero el libro no registra ninguna sanción. [PAUSA 1s]
 
 Hubo una excepción. [PAUSA 0,4s] A José de La Mar lo recompensaron con una hacienda, y pronto se la devolvió a su legítimo dueño. [PAUSA 0,5s] Quiroz la llama una acción correcta, ignorada por otros líderes republicanos. [PAUSA 1,5s]
 
-Falta la cuenta, hecha con el método del episodio anterior. [PAUSA 0,4s] Al final de la colonia, la corrupción costaba el equivalente a unos cuatro de cada diez pesos del gasto. [PAUSA 0,6s] En la independencia temprana, por cada diez pesos que gastaba el Estado, la corrupción costó el equivalente a casi catorce. [PAUSA 1s] Pasa de diez porque suma lo que nunca entró al presupuesto: el contrabando y la inversión que no llegó. [PAUSA 1,5s]
+Falta la cuenta, hecha con el método del episodio anterior. [PAUSA 0,4s] Al final de la colonia, la corrupción costaba el equivalente a unos cuatro de cada diez pesos del gasto. [PAUSA 0,6s] En la independencia temprana, por cada diez pesos que gastaba el Estado, la corrupción costó el equivalente a casi catorce. [PAUSA 1s] Pasa de diez porque Quiroz cuenta también costos indirectos: el contrabando y la inversión que no llegó. [PAUSA 1,5s]
 
 Londres quedó arreglado. [PAUSA 0,5s] Pero adentro seguía la otra pila: lo tomado y lo prestado en nombre de la patria. [PAUSA 0,5s] Según Quiroz, en general esa deuda no se había reconocido, o se había garantizado con billetes muy depreciados. [PAUSA 0,8s] Esa deuda también se iba a pagar con el guano. [PAUSA 2,5s]
 
 Próximo episodio: La deuda defraudada.
 
 **Imagen:**
-- La ruta Londres–Lima, con el corte rojo de 1826 todavía abierto. «Un decreto»: ficha `DECRETO · ENERO DE 1842 · LA MITAD DEL GUANO PARA LOS BONISTAS`; el corrector lo tacha en rojo, `NUNCA FUE CUMPLIDO` (V, n. 22).
-- «Castilla explicó»: medallón de Castilla, ahora con `PRESIDENTE · 1845–1851`. Su frase, textual: `«revivir el crédito que la República perdió en Europa casi al mismo tiempo que ésta vino a la existencia»` (`solemne`). Con «se firmó», ficha `LONDRES · 31 DE ENERO DE 1849` y el corte rojo de la ruta se cose con una línea ocre (`pesado`; el motivo es que la ruta vuelve a abrirse).
+- «había que arreglar la deuda vieja»: la ruta Londres–Lima, con el corte rojo de 1826 todavía abierto. Ficha `DECRETO · ENERO DE 1842 · LA MITAD DEL GUANO PARA LOS BONISTAS`; el corrector lo tacha en rojo, `NUNCA FUE CUMPLIDO` (V, n. 22).
+- En la pausa de 1,5 s, sin voz (la frase salió de la voz para no repetirla): medallón de Castilla, ahora con `PRESIDENTE · 1845–1851`. Su frase, textual: `«revivir el crédito que la República perdió en Europa casi al mismo tiempo que ésta vino a la existencia»` (`solemne`). Con «se firmó», ficha `LONDRES · 31 DE ENERO DE 1849` y el corte rojo de la ruta se cose con una línea ocre (`pesado`; el motivo es que la ruta vuelve a abrirse).
 - «la mitad de lo que dejara el guano»: del grabado de las islas sale una flecha que se parte en dos; una mitad va a `BONISTAS · GRAN BRETAÑA`.
 - «tres millones seiscientas mil libras»: sobre la pila `AFUERA` de la mesa, la deuda crece en dos capas: `BONOS ACTIVOS (EL PRINCIPAL): £1 759 100` y `BONOS PASIVOS (INTERESES ATRASADOS): £1 854 700` → `TOTAL: £3 613 800*` [VERIFICAR: equivalente en soles, la tasa de 1849 no está en `fuentes.md`]. Al lado, en ocre, el contorno de lo que se prestó, `£1 816 000`: la pila nueva es casi el doble (`pesado`). La pila no se estira: se le suman papeles.
 - «una casa de Londres»: ficha `CRISTÓBAL DE MURRIETA & CO. · «DE DUDOSO PRESTIGIO»`. Ficha de los negociadores: `JOAQUÍN JOSÉ DE OSMA · FELIPE BARREDA · FRANCISCO DE RIVERO (ASESOR)`.
 - «un premio no revelado»: la palabra `«PREMIO»` vuelve en la tipografía del Ep. 1 y de la ESC 2, ahora en rojo, sobre el contrato de Murrieta. Es la tercera y última vez que aparece.
 - «más que duplicaron»: sin voz, la versión de su rival: `SEGÚN MENDIBURU, EN 1871: LOS TOMARON «A 33 Y LOS VENDIERON A 108»` (n. 138). La ficha dice `ACUSACIÓN DE UN RIVAL`.
-- «¿alguien pagó?»: la pizarra se llena como un libro mayor de dos columnas, `CASO` y `CASTIGO`, que se completa fila por fila con la voz y no se borra: `OFICIALES PREMIADOS · NINGUNO REGISTRADO`; `KINDER · SIN PLEITO («UN MAL MAYOR»)`; `LA FUENTE · DESTITUIDO EN 1831 → VUELVE; MINISTRO DE HACIENDA EN 1843`; `ADUANEROS · «RARA VEZ»`; `OSMA, BARREDA Y RIVERO · «CRECIENTE SOSPECHA», SIN SANCIÓN`. La columna `CASTIGO` queda casi vacía (`natural`, una fila por vez; solo brilla la fila que se nombra).
+- «¿alguien pagó?»: la pizarra se llena como un libro mayor de dos columnas, `CASO` y `CASTIGO`, que se completa fila por fila con la voz y no se borra: `OFICIALES PREMIADOS · NINGUNO REGISTRADO`; `KINDER · SIN PLEITO EN 1826 («UN MAL MAYOR»)`; `LA FUENTE · DESTITUIDO EN 1831 → VUELVE; MINISTRO DE HACIENDA EN 1843`; `ADUANEROS · «RARA VEZ»`; `OSMA, BARREDA Y RIVERO · «CRECIENTE SOSPECHA», SIN SANCIÓN`. La columna `CASTIGO` queda casi vacía (`natural`, una fila por vez; solo brilla la fila que se nombra).
 - «Hubo una excepción»: abajo, separada por una raya, una fila en ocre: `LA MAR · DEVOLVIÓ OCUCAJE · «UNA ACCIÓN CORRECTA IGNORADA POR OTROS LÍDERES REPUBLICANOS»`.
-- «la cuenta»: el libro mayor se desliza a la izquierda (paneo, DIRECCION §2.11) y deja lugar a dos barras sobre la misma base, `GASTO DEL ESTADO = 10`. La primera, `COLONIA TARDÍA, 1810–1820: 4` (41 %); la segunda, `INDEPENDENCIA TEMPRANA, 1821–1829: 14` (139 %), que pasa la línea del gasto (`solemne`; quietud de 1 s antes de que la segunda barra crezca). Las dos del cuadro A.7. La parte que sobresale lleva `CONTRABANDO E INVERSIÓN PERDIDA`.
+- «la cuenta»: el libro mayor se desliza a la izquierda (paneo, DIRECCION §2.11) y deja lugar a dos barras sobre la misma base, `GASTO DEL ESTADO = 10`. La primera, `COLONIA TARDÍA, 1810–1820: 4` (41 %); la segunda, `INDEPENDENCIA TEMPRANA, 1821–1829: 14` (139 %), que pasa la línea del gasto (`solemne`; quietud de 1 s antes de que la segunda barra crezca). Las dos del cuadro A.7. La barra entera lleva `INCLUYE COSTOS INDIRECTOS: CONTRABANDO E INVERSIÓN PERDIDA`; la parte que sobresale no se rotula aparte, porque el cuadro no la descompone así.
 - Debajo, en otra caja y con otro color, para que no se mezclen las series: `CUADRO A.3 · MILLONES DE PESOS POR DÉCADA: 1820–1829: 27 · 1830–1839: 22 · 1840–1849: 25`.
 - «Londres quedó arreglado»: la cámara vuelve a la mesa de las dos deudas (`pesado`). La pila `AFUERA` lleva el sello ocre `ARREGLADO · 1849`. La pila `ADENTRO`, la más alta, queda sin sello, con los papeles de la ESC 1, la 2 y la 3 a la vista.
 - «también se iba a pagar con el guano»: del grabado de las islas, una flecha punteada llega a la pila `ADENTRO` y se detiene sin tocarla. Cámara quieta durante los 2,5 s.
