@@ -10,7 +10,7 @@ const salida = path.join(aqui, 'public');
 const copiar = (a, b) => { fs.mkdirSync(path.dirname(b), { recursive: true }); fs.copyFileSync(a, b); };
 
 const galeria = path.join(proyecto, 'public/videos/002-la-deuda-defraudada/imagenes/chatgpt');
-for (const n of ['fondo-mesa-expediente', 'fondo-archivo', 'obj-07-carpeta-cerrada', 'obj-07-carpeta-abierta', 'obj-04-vale', 'obj-10-bono-deuda-externa', 'obj01-08-estado']) {
+for (const n of ['fondo-mesa-expediente', 'fondo-archivo', 'obj-07-carpeta-cerrada', 'obj-07-carpeta-abierta', 'obj-04-vale', 'obj-10-bono-deuda-externa', 'obj01-08-estado', 'obj-09-folio-sencillo']) {
   const a = path.join(galeria, `${n}.png`);
   if (!fs.existsSync(a)) throw new Error(`Falta ${a}: extraer el zip de la galería (videos/002-la-deuda-defraudada/galeria.md)`);
   copiar(a, path.join(salida, 'img', `${n}.png`));

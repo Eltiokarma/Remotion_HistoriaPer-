@@ -290,7 +290,7 @@
   ]
  },
  "s04": {
-  "duracion": 233.9,
+  "duracion": 269.85,
   "frases": [
    {
     "desde": 0.3,
@@ -344,112 +344,142 @@
    },
    {
     "desde": 65.43,
-    "hasta": 71.59,
-    "texto": "En Londres, Manuel de Mendiburu cambió así cerca de la mitad de toda la deuda consolidada."
+    "hasta": 74.67,
+    "texto": "El Estado hizo ese cambio por contrato con dos casas comerciales a las que encargaba la venta del guano: Uribarren, de París, y Montané."
    },
    {
-    "desde": 72.39,
-    "hasta": 82.77,
-    "texto": "En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que decía; el bono que lo reemplazaba valía casi lo que decía."
+    "desde": 75.02,
+    "hasta": 81.17,
+    "texto": "Cada casa le entregaba vales al Estado, y el Estado le daba bonos nuevos por ellos."
    },
    {
-    "desde": 83.77,
-    "hasta": 91.08,
-    "texto": "Quiroz llama a esa conversión un lavado: se diseñó para que el papel manchado por su origen saliera limpio."
+    "desde": 81.52,
+    "hasta": 87.67,
+    "texto": "El contrato con Uribarren lo firmó en Londres Manuel de Mendiburu, el enviado del presidente Echenique."
    },
    {
-    "desde": 93.08,
-    "hasta": 100.39,
+    "desde": 88.02,
+    "hasta": 91.1,
+    "texto": "El contrato con Montané se firmó en Lima."
+   },
+   {
+    "desde": 91.45,
+    "hasta": 97.22,
+    "texto": "Con esos dos contratos se cambió cerca de la mitad de toda la deuda consolidada."
+   },
+   {
+    "desde": 98.02,
+    "hasta": 104.94,
+    "texto": "En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que tenía escrito."
+   },
+   {
+    "desde": 105.29,
+    "hasta": 110.29,
+    "texto": "El bono nuevo pronto llegó a valer casi todo lo que tenía escrito."
+   },
+   {
+    "desde": 110.64,
+    "hasta": 117.18,
+    "texto": "Uribarren y Montané habían juntado vales antes de firmar sus contratos, así que ganaron con el cambio."
+   },
+   {
+    "desde": 118.18,
+    "hasta": 127.03,
+    "texto": "Quiroz llama a ese cambio un lavado: se diseñó para que los vales manchados por su origen salieran limpios, en forma de bonos."
+   },
+   {
+    "desde": 129.03,
+    "hasta": 136.33,
     "texto": "En agosto de mil ochocientos cincuenta y tres, Domingo Elías publicó dos cartas en El Comercio contra la consolidación."
    },
    {
-    "desde": 100.74,
-    "hasta": 105.35,
+    "desde": 136.68,
+    "hasta": 141.3,
     "texto": "Ya estaba peleado con Echenique y con Torrico por el caso Novoa."
    },
    {
-    "desde": 105.7,
-    "hasta": 114.17,
+    "desde": 141.65,
+    "hasta": 150.11,
     "texto": "Según Quiroz, sostuvo que la consolidación no beneficiaba a los reclamantes originales, sino a los agiotistas: los que especulaban con los vales."
    },
    {
-    "desde": 115.17,
-    "hasta": 118.63,
+    "desde": 151.11,
+    "hasta": 154.57,
     "texto": "Lo encarcelaron, y al salir se levantó contra Echenique."
    },
    {
-    "desde": 119.63,
-    "hasta": 121.55,
+    "desde": 155.57,
+    "hasta": 157.5,
     "texto": "Elías no denunciaba desde afuera."
    },
    {
-    "desde": 121.9,
-    "hasta": 128.82,
+    "desde": 157.85,
+    "hasta": 164.77,
     "texto": "Él mismo había movido expedientes por comisión, así que su denuncia trae información y también defiende sus intereses."
    },
    {
-    "desde": 129.17,
-    "hasta": 135.71,
+    "desde": 165.12,
+    "hasta": 171.66,
     "texto": "Quiroz lo resume así: defendió reformas contra la corrupción, pero no dejó de beneficiarse de compensaciones oficiales."
    },
    {
-    "desde": 137.21,
-    "hasta": 144.9,
+    "desde": 173.16,
+    "hasta": 180.85,
     "texto": "En mil ochocientos cincuenta y cinco cayó Echenique, volvió Castilla y una junta fiscal revisó los expedientes de la consolidación."
    },
    {
-    "desde": 145.25,
-    "hasta": 152.95,
+    "desde": 181.2,
+    "hasta": 188.89,
     "texto": "Encontró más de doce millones de pesos en ciento cuarenta y un expedientes irregulares o ilegales, y otros cuatro robados."
    },
    {
-    "desde": 154.45,
-    "hasta": 160.98,
+    "desde": 190.39,
+    "hasta": 196.93,
     "texto": "Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos."
    },
    {
-    "desde": 161.33,
-    "hasta": 168.64,
+    "desde": 197.28,
+    "hasta": 204.59,
     "texto": "Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu."
    },
    {
-    "desde": 169.64,
-    "hasta": 179.26,
+    "desde": 205.59,
+    "hasta": 215.2,
     "texto": "Los que tenían los vales protestaron: decían que un vale era como un billete, y que quien lo había comprado no tenía por qué perder."
    },
    {
-    "desde": 179.61,
-    "hasta": 187.3,
+    "desde": 215.55,
+    "hasta": 223.25,
     "texto": "Los diplomáticos de Gran Bretaña y de Francia los respaldaron, y barcos ingleses y franceses rondaban las islas del guano."
    },
    {
-    "desde": 187.65,
-    "hasta": 192.27,
+    "desde": 223.6,
+    "hasta": 228.21,
     "texto": "En el país, además, el general Vivanco se había alzado en armas."
    },
    {
-    "desde": 193.77,
-    "hasta": 204.15,
+    "desde": 229.71,
+    "hasta": 240.1,
     "texto": "En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos sobre bonos y conversión que se habían suspendido."
    },
    {
-    "desde": 204.5,
-    "hasta": 212.58,
+    "desde": 240.45,
+    "hasta": 248.52,
     "texto": "Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron."
    },
    {
-    "desde": 212.93,
-    "hasta": 220.62,
+    "desde": 248.87,
+    "hasta": 256.57,
     "texto": "En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota César Antonio Ugarte en mil novecientos veintiséis."
    },
    {
-    "desde": 221.82,
-    "hasta": 227.97,
+    "desde": 257.77,
+    "hasta": 263.92,
     "texto": "Entonces, la junta encontró expedientes irregulares o ilegales, pero los vales ya habían cambiado de manos."
    },
    {
-    "desde": 228.32,
-    "hasta": 231.4,
+    "desde": 264.27,
+    "hasta": 267.35,
     "texto": "Y una ley volvió a ponerlos en circulación."
    }
   ]

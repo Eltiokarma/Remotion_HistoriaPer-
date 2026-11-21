@@ -286,15 +286,39 @@
     0.35
    ],
    [
-    "[dry] [measured] En Londres, Manuel de Mendiburu cambió así cerca de la mitad de toda la deuda consolidada.",
+    "[calm] [teacher] El Estado hizo ese cambio por contrato con dos casas comerciales a las que encargaba la venta del guano: Uribarren, de París, y Montané.",
+    0.35
+   ],
+   [
+    "[clear] [measured] Cada casa le entregaba vales al Estado, y el Estado le daba bonos nuevos por ellos.",
+    0.35
+   ],
+   [
+    "[dry] [measured] El contrato con Uribarren lo firmó en Londres Manuel de Mendiburu, el enviado del presidente Echenique.",
+    0.35
+   ],
+   [
+    "[dry] [measured] El contrato con Montané se firmó en Lima.",
+    0.35
+   ],
+   [
+    "[dry] [measured] Con esos dos contratos se cambió cerca de la mitad de toda la deuda consolidada.",
     0.8
    ],
    [
-    "[dry] [ironic] En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que decía; el bono que lo reemplazaba valía casi lo que decía.",
+    "[dry] [ironic] En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que tenía escrito.",
+    0.35
+   ],
+   [
+    "[dry] [ironic] El bono nuevo pronto llegó a valer casi todo lo que tenía escrito.",
+    0.35
+   ],
+   [
+    "[dry] [pointed] Uribarren y Montané habían juntado vales antes de firmar sus contratos, así que ganaron con el cambio.",
     1.0
    ],
    [
-    "[serious] [low voice] Quiroz llama a esa conversión un lavado: se diseñó para que el papel manchado por su origen saliera limpio.",
+    "[serious] [low voice] Quiroz llama a ese cambio un lavado: se diseñó para que los vales manchados por su origen salieran limpios, en forma de bonos.",
     2.0
    ],
    [

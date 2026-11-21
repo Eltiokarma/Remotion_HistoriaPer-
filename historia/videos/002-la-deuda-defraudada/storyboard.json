@@ -983,21 +983,33 @@
           "id": "4.3",
           "frases": [
             9,
-            12
+            18
           ],
           "verbo": "recorrer",
           "respiro": 1.5,
-          "idea": "Los vales se cambian por bonos externos en Londres: el lavado.",
-          "imagen": "El mismo mapa de s01 se abre hasta Gran Bretaña; un vale viaja de Lima a Londres y llega como bono. En Londres, las dos barras de la escena 2 vuelven: el vale vale cerca del 40 % de lo que dice; el bono, casi el 100 %. Con 12, el vale lleva una mancha roja y el bono sale limpio.",
+          "idea": "Los vales se cambian por bonos externos por contrato con dos casas del guano, que ya tenían vales y ganaron con el alza: el lavado.",
+          "imagen": "Sobre el mapa de s01: París (Uribarren) y Lima (Montané, el Estado). Con «entregaba», un vale viaja de la casa al Estado; con «daba», un bono vuelve. Con «Londres», el contrato de Uribarren con la etiqueta de Mendiburu (presentación) y «hasta 6 millones de pesos en vales»; con «Lima», el de Montané, «3 millones». Con «la mitad», «≈ 46 % de toda la deuda consolidada». En la mesa, las barras: vale ≈ 40 %, bono casi 100 %; con «ganaron», el arco «≈ 2,5 veces más»; con «manchados», la mancha del vale, y con «limpios», el vale queda debajo del bono.",
           "pantalla": [
             {
               "en": 10,
-              "t": "Manuel de Mendiburu · Londres [VERIFICAR]",
+              "t": "Uribarren et Cie. · París / Montané et Cie."
+            },
+            {
+              "en": 12,
+              "t": "Manuel de Mendiburu · ministro plenipotenciario en Londres, 1853",
               "ficha": true
             },
             {
-              "en": 10,
-              "t": "≈ 46 % de la deuda"
+              "en": 12,
+              "t": "hasta 6 millones de pesos en vales"
+            },
+            {
+              "en": 13,
+              "t": "3 millones de pesos en vales"
+            },
+            {
+              "en": 14,
+              "t": "≈ 46 % de toda la deuda consolidada"
             }
           ],
           "camara": {
@@ -1019,8 +1031,8 @@
         {
           "id": "4.4",
           "frases": [
-            13,
-            16
+            19,
+            22
           ],
           "verbo": "denunciar",
           "respiro": 1.5,
@@ -1028,7 +1040,7 @@
           "imagen": "La ficha de Elías vuelve a la mesa y desde ella salen las dos cartas.",
           "pantalla": [
             {
-              "en": 13,
+              "en": 19,
               "t": "El Comercio · 12 y 16 de agosto de 1853"
             }
           ],
@@ -1050,8 +1062,8 @@
         {
           "id": "4.5",
           "frases": [
-            17,
-            19
+            23,
+            25
           ],
           "verbo": "matizar",
           "respiro": 1.5,
@@ -1059,7 +1071,7 @@
           "imagen": "La ficha de Elías con sus dos funciones a los lados: intermediario y denunciante. Quieta mientras habla Quiroz.",
           "pantalla": [
             {
-              "en": 17,
+              "en": 23,
               "t": "intermediario · denunciante",
               "termino": true
             }
@@ -1082,8 +1094,8 @@
         {
           "id": "4.6",
           "frases": [
-            20,
-            21
+            26,
+            27
           ],
           "verbo": "investigar",
           "respiro": 1.5,
@@ -1092,12 +1104,12 @@
           "imagen": "La pila vuelve al centro y el corrector la marca igual que en el gancho, ahora con su explicación. Los cuatro robados son cuatro huecos en el estante, sin monto.",
           "pantalla": [
             {
-              "en": 20,
+              "en": 26,
               "t": "Junta de Examen Fiscal · 1855",
               "ficha": true
             },
             {
-              "en": 21,
+              "en": 27,
               "t": "12,2 millones de pesos · 141 expedientes"
             }
           ],
@@ -1120,8 +1132,8 @@
         {
           "id": "4.7",
           "frases": [
-            22,
-            23
+            28,
+            29
           ],
           "verbo": "suspender",
           "respiro": 1.5,
@@ -1129,7 +1141,7 @@
           "imagen": "Cae el sello de la suspensión. Las fichas de Torrico, Echenique y Mendiburu se deslizan fuera del cuadro, una por vez.",
           "pantalla": [
             {
-              "en": 22,
+              "en": 28,
               "t": "Ley del 29 de diciembre de 1856"
             }
           ],
@@ -1148,8 +1160,8 @@
         {
           "id": "4.8",
           "frases": [
-            24,
-            26
+            30,
+            32
           ],
           "verbo": "presionar",
           "respiro": 2,
@@ -1177,8 +1189,8 @@
         {
           "id": "4.9",
           "frases": [
-            27,
-            31
+            33,
+            37
           ],
           "verbo": "restaurar",
           "respiro": 2,
@@ -1186,11 +1198,11 @@
           "imagen": "La pila con su marca roja. Cae el mismo sello del gancho y la marca se borra a medias, igual que en 0.3. Con 28, la cita entre comillas.",
           "pantalla": [
             {
-              "en": 27,
+              "en": 33,
               "t": "Ley del 11 de marzo de 1857"
             },
             {
-              "en": 28,
+              "en": 34,
               "t": "«tabla rasa» · Quiroz, p. 185"
             }
           ],

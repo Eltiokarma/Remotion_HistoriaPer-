@@ -1,6 +1,6 @@
 # La deuda defraudada · Manuscrito de locución
 
-Generado con `manuscrito.py` desde [narracion.json](narracion.json) y [narracion_tiempos.json](narracion_tiempos.json); no se edita a mano. Voz «Joder Jolines», modelo `eleven_v4`, una toma por escena (`scripts/narracion.py`). Duración real: 9:27.4.
+Generado con `manuscrito.py` desde [narracion.json](narracion.json) y [narracion_tiempos.json](narracion_tiempos.json); no se edita a mano. Voz «Joder Jolines», modelo `eleven_v4`, una toma por escena (`scripts/narracion.py`). Duración real: 9:53.0.
 
 Cada frase dice en qué segundo de su escena empieza (`voz/sNN.mp3`), con qué emoción se dijo (las etiquetas entre corchetes, que la voz no lee) y cuánto respira después. `/` es una pausa de menos de 1 s y `//`, una de 1 s o más; ✂ marca dónde la escena se generó en otra toma. Las láminas, encuadres y sonido están en `storyboard.html`.
 
@@ -70,40 +70,46 @@ Cada frase dice en qué segundo de su escena empieza (`voz/sNN.mp3`), con qué e
 - `1:24.1` *[calm] [measured]* No sabemos adónde fue cada peso de la diferencia. / (0.4 s)
 - `1:27.0` *[calm] [firm]* Lo que sí documenta Quiroz es quién dijo que el reclamo estaba fuera de plazo, quién intervino después y cuánto se terminó aprobando. //
 
-## s04 · Lo investigan y los títulos siguen circulando · 3:18.3
+## s04 · Lo investigan y los títulos siguen circulando · 3:43.9
 
 - `0:00.3` *[calm] [careful]* Novoa fue un caso entre muchos. / (0.5 s)
-- `0:02.8` *[careful] [measured]* Quiroz anota que los expedientes más dudosos pasaron antes de dos plazos: junio y octubre de mil ochocientos cincuenta y dos. // (1.0 s)
-- `0:10.9` *[serious]* Así la deuda pasó de cinco a veinticuatro millones de pesos. / (0.5 s)
-- `0:14.9` *[calm] [teacher]* Esos millones eran deuda reconocida en vales, que el Estado tendría que pagar después. / (0.9 s)
-- `0:20.2` *[careful] [clear]* Y no toda la diferencia fue fraude: para saberlo, hay que abrir los expedientes uno por uno. // (1.5 s)
-- `0:26.9` *[dry]* Los vales terminaron concentrados en pocas manos. / (0.5 s)
-- `0:29.9` *[dry] [ironic]* Según Quiroz, la red que se benefició reunía a varias docenas de personas, y en la época les dieron nombres. // (1.0 s)
-- `0:37.0` *[serious] [low voice] [slowly]* Les decían los consolidados. // (2.5 s)
-- `0:41.6` *[serious] [thoughtful]* La palabra que nombraba una forma de pagar las deudas del Estado terminó nombrando a las personas vinculadas con el robo político. // (2.0 s)
-- `0:50.2` *[calm] [teacher]* Muchos de esos vales se cambiaron por bonos de deuda externa, la que el Estado tenía con acreedores de fuera del país. / (0.4 s)
-- `0:56.5` *[dry] [measured]* En Londres, Manuel de Mendiburu cambió así cerca de la mitad de toda la deuda consolidada. / (0.4 s)
-- `1:02.0` *[dry] [ironic]* En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que decía; el bono que lo reemplazaba valía casi lo que decía. // (1.0 s)
-- `1:10.6` *[serious] [low voice]* Quiroz llama a esa conversión un lavado: se diseñó para que el papel manchado por su origen saliera limpio. // (2.0 s)
-- `1:18.6` *[tense] [storytelling]* En agosto de mil ochocientos cincuenta y tres, Domingo Elías publicó dos cartas en El Comercio contra la consolidación. / (0.4 s)
-- `1:25.1` *[tense]* Ya estaba peleado con Echenique y con Torrico por el caso Novoa. / (0.4 s)
-- `1:28.5` *[serious] [measured]* Según Quiroz, sostuvo que la consolidación no beneficiaba a los reclamantes originales, sino a los agiotistas: los que especulaban con los vales. // (1.0 s)
-- `1:37.2` *[tense] [quick]* Lo encarcelaron, y al salir se levantó contra Echenique. // (1.0 s)
-- `1:40.9` *[measured] [even]* Elías no denunciaba desde afuera. / (0.4 s)
-- `1:43.0` *[measured] [even]* Él mismo había movido expedientes por comisión, así que su denuncia trae información y también defiende sus intereses. / (0.4 s)
-- `1:49.7` *[measured] [fair]* Quiroz lo resume así: defendió reformas contra la corrupción, pero no dejó de beneficiarse de compensaciones oficiales. // (1.5 s)
-- `1:57.6` *[serious]* En mil ochocientos cincuenta y cinco cayó Echenique, volvió Castilla y una junta fiscal revisó los expedientes de la consolidación. / (0.4 s)
-- `2:04.8` *[serious] [low voice]* Encontró más de doce millones de pesos en ciento cuarenta y un expedientes irregulares o ilegales, y otros cuatro robados. // (1.5 s)
-- `2:13.5` *[serious] [restrained anger]* Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos. / (0.4 s)
-- `2:19.0` *[serious] [restrained anger]* Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu. // (1.0 s)
-- `2:27.2` *[tense]* Los que tenían los vales protestaron: decían que un vale era como un billete, y que quien lo había comprado no tenía por qué perder. / (0.4 s)
-- `2:34.1` *[tense] [measured]* Los diplomáticos de Gran Bretaña y de Francia los respaldaron, y barcos ingleses y franceses rondaban las islas del guano. / (0.4 s)
-- `2:40.8` *[tense]* En el país, además, el general Vivanco se había alzado en armas. // (1.5 s)
-- `2:46.0` *[dry] [bitter]* En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos sobre bonos y conversión que se habían suspendido. / (0.4 s)
-- `2:54.4` *[dry] [bitter] [restrained]* Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron. / (0.4 s)
-- `3:01.0` *[measured] [precise]* En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota César Antonio Ugarte en mil novecientos veintiséis. // (1.2 s)
-- `3:09.0` *[serious] [weary]* Entonces, la junta encontró expedientes irregulares o ilegales, pero los vales ya habían cambiado de manos. / (0.4 s)
-- `3:15.7` *[serious] [weary] [low voice]* Y una ley volvió a ponerlos en circulación. //
+- `0:02.9` *[careful] [measured]* Quiroz anota que los expedientes más dudosos pasaron antes de dos plazos: junio y octubre de mil ochocientos cincuenta y dos. // (1.0 s)
+- `0:11.2` *[serious]* Así la deuda pasó de cinco a veinticuatro millones de pesos. / (0.5 s)
+- `0:15.3` *[calm] [teacher]* Esos millones eran deuda reconocida en vales, que el Estado tendría que pagar después. / (1.0 s)
+- `0:20.6` *[careful] [clear]* Y no toda la diferencia fue fraude: para saberlo, hay que abrir los expedientes uno por uno. // (1.5 s)
+- `0:27.5` *[dry]* Los vales terminaron concentrados en pocas manos. / (0.5 s)
+- `0:30.6` *[dry] [ironic]* Según Quiroz, la red que se benefició reunía a varias docenas de personas, y en la época les dieron nombres. // (1.0 s)
+- `0:37.6` *[serious] [low voice] [slowly]* Les decían los consolidados. // (2.5 s)
+- `0:42.3` *[serious] [thoughtful]* La palabra que nombraba una forma de pagar las deudas del Estado terminó nombrando a las personas vinculadas con el robo político. // (2.0 s)
+- `0:50.7` *[calm] [teacher]* Muchos de esos vales se cambiaron por bonos de deuda externa, la que el Estado tenía con acreedores de fuera del país. / (0.4 s)
+- `0:57.0` *[calm] [teacher]* El Estado hizo ese cambio por contrato con dos casas comerciales a las que encargaba la venta del guano: Uribarren, de París, y Montané. / (0.4 s)
+- `1:04.6` *[clear] [measured]* Cada casa le entregaba vales al Estado, y el Estado le daba bonos nuevos por ellos. / (0.4 s)
+- `1:09.3` *[dry] [measured]* El contrato con Uribarren lo firmó en Londres Manuel de Mendiburu, el enviado del presidente Echenique. / (0.4 s)
+- `1:14.7` *[dry] [measured]* El contrato con Montané se firmó en Lima. / (0.3 s)
+- `1:17.0` *[dry] [measured]* Con esos dos contratos se cambió cerca de la mitad de toda la deuda consolidada. / (0.4 s)
+- `1:21.6` *[dry] [ironic]* En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que tenía escrito. / (0.4 s)
+- `1:26.7` *[dry] [ironic]* El bono nuevo pronto llegó a valer casi todo lo que tenía escrito. / (0.4 s)
+- `1:30.3` *[dry] [pointed]* Uribarren y Montané habían juntado vales antes de firmar sus contratos, así que ganaron con el cambio. // (1.0 s)
+- `1:36.7` *[serious] [low voice]* Quiroz llama a ese cambio un lavado: se diseñó para que los vales manchados por su origen salieran limpios, en forma de bonos. // (2.0 s)
+- `1:45.8` *[tense] [storytelling]* En agosto de mil ochocientos cincuenta y tres, Domingo Elías publicó dos cartas en El Comercio contra la consolidación. / (0.3 s)
+- `1:52.0` *[tense]* Ya estaba peleado con Echenique y con Torrico por el caso Novoa. / (0.4 s)
+- `1:55.4` *[serious] [measured]* Según Quiroz, sostuvo que la consolidación no beneficiaba a los reclamantes originales, sino a los agiotistas: los que especulaban con los vales. // (1.0 s)
+- `2:04.2` *[tense] [quick]* Lo encarcelaron, y al salir se levantó contra Echenique. // (1.0 s)
+- `2:07.9` *[measured] [even]* Elías no denunciaba desde afuera. / (0.5 s)
+- `2:10.3` *[measured] [even]* Él mismo había movido expedientes por comisión, así que su denuncia trae información y también defiende sus intereses. / (0.5 s)
+- `2:17.3` *[measured] [fair]* Quiroz lo resume así: defendió reformas contra la corrupción, pero no dejó de beneficiarse de compensaciones oficiales. // (1.5 s)
+- `2:25.3` *[serious]* En mil ochocientos cincuenta y cinco cayó Echenique, volvió Castilla y una junta fiscal revisó los expedientes de la consolidación. / (0.4 s)
+- `2:32.6` *[serious] [low voice]* Encontró más de doce millones de pesos en ciento cuarenta y un expedientes irregulares o ilegales, y otros cuatro robados. // (1.5 s)
+- `2:41.1` *[serious] [restrained anger]* Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos. / (0.4 s)
+- `2:46.4` *[serious] [restrained anger]* Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu. // (1.0 s)
+- `2:54.2` *[tense]* Los que tenían los vales protestaron: decían que un vale era como un billete, y que quien lo había comprado no tenía por qué perder. / (0.4 s)
+- `3:00.9` *[tense] [measured]* Los diplomáticos de Gran Bretaña y de Francia los respaldaron, y barcos ingleses y franceses rondaban las islas del guano. / (0.4 s)
+- `3:07.3` *[tense]* En el país, además, el general Vivanco se había alzado en armas. // (1.5 s)
+- `3:12.4` *[dry] [bitter]* En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos sobre bonos y conversión que se habían suspendido. / (0.4 s)
+- `3:20.4` *[dry] [bitter] [restrained]* Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron. / (0.3 s)
+- `3:26.9` *[measured] [precise]* En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota César Antonio Ugarte en mil novecientos veintiséis. // (1.2 s)
+- `3:34.8` *[serious] [weary]* Entonces, la junta encontró expedientes irregulares o ilegales, pero los vales ya habían cambiado de manos. / (0.4 s)
+- `3:41.4` *[serious] [weary] [low voice]* Y una ley volvió a ponerlos en circulación. //
 
 ## s05 · De estos expedientes al método de Quiroz · 0:58.6
 

@@ -62,3 +62,20 @@ Los seis tramos quietos de A3:
 Los dos últimos se pueden aceptar.
 
 Sigue pendiente la prueba con otra persona: preguntarle, sin anticipar nada, «¿qué pasó con los vales y por qué convenía cambiarlos?».
+
+### A4: el párrafo del cambio reescrito (21 de noviembre de 2026)
+
+Gerson preguntó cómo un vale podía cambiarse por un bono de deuda externa y a través de qué institución. El guion no lo explicaba. Se reescribió el párrafo con el Escribidor y lo revisó el Escribano en otra pasada (acta en `guion.md`). Se regeneró la voz de la escena 4: suma 25,6 s y la parte A pasa a durar 109,8 s.
+
+**En 4.3, sobre el mapa:**
+
+- París (Uribarren), Montané sin sede y el Estado en Lima.
+- El vale va de la casa al Estado y el bono vuelve.
+- Mendiburu se presenta sobre su contrato: «hasta 6 millones de pesos en vales». El contrato con Montané dice «3 millones».
+- Después, «con los dos contratos: ≈ 46 %».
+
+**En la mesa:** las barras y el arco ahora salen con «ganaron».
+
+**Cuadros revisados:** la etiqueta del contrato de Londres se salía del cuadro, así que se acortó a «Contrato con Uribarren».
+
+Las partes 4.1 y 4.2 no cambian: solo se movieron los segundos de cada palabra a la toma nueva.
