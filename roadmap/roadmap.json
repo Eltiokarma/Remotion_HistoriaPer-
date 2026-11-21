@@ -1656,12 +1656,13 @@
         "inicio": "2026-11-21",
         "fin": null
       },
-      "bloqueo": "Gerson decidió partir el 0·3 y usar el grabado de 1855 (21 de noviembre de 2026). Falta que apruebe la estructura de cada episodio y el puente del 0·1; después se escribe la voz y el Escribano la revisa completa.",
+      "bloqueo": "Decidido por Gerson (21 de noviembre de 2026): el 0·3 se parte, va el grabado de 1855, y ¿Se puede medir? y La cuenta dejan de ser episodios (la cuenta entra en cada video; la serie sigue por tramos de botín, mapa-serie.md). Falta: que apruebe la estructura del 0·2 al 0·4, el puente del 0·1 y el orden después del 0·4.",
       "evidencia": [
         "historia/videos/arco-estructura.md",
         "historia/videos/003-la-deuda-defraudada/diseno/expediente.md",
         "historia/videos/002-saqueo-patriota/diseno/expediente.md",
-        "historia/videos/000-quiroz/diseno/expediente-medir.md"
+        "historia/videos/000-quiroz/diseno/expediente-medir.md",
+        "historia/videos/mapa-serie.md"
       ],
       "tiempo": {
         "humano_min": null,

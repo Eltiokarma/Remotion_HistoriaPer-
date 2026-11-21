@@ -217,7 +217,7 @@ leerlo»). Es el único lugar donde el silencio y la música trabajan como el CL
 
 ---
 
-> **Renumerado el 2026-11-21.** Se agregó el 0·2 (*Saqueo patriota*) y el 0·3 se partió en *La deuda defraudada* (0·3) y *El lavado* (0·4). Por eso aquí *¿Se puede medir?* es el 0·5 y *La cuenta* el 0·6. La estructura vigente del arco está en `videos/arco-estructura.md`.
+> **Renumerado el 2026-11-21.** Se agregó el 0·2 (*Saqueo patriota*) y el 0·3 se partió en *La deuda defraudada* (0·3) y *El lavado* (0·4). Ese mismo día Gerson decidió que *¿Se puede medir?* y *La cuenta* no serán episodios: la cuenta entra en cada video y la serie sigue por tramos de botín. El plan de abajo queda como historia; lo vigente está en `videos/arco-estructura.md` y `videos/mapa-serie.md`.
 
 ## 4. Plan: el contenido de este video en cuatro episodios
 

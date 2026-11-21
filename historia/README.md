@@ -33,9 +33,9 @@ diagnóstico del video 000 está en `videos/000-quiroz/diagnostico.md`.
 
 **Los videos.** `000-quiroz` es la versión de trabajo de 10 min con todo el material del arco de
 presentación. Ese material se reparte en cuatro episodios (el plan está en
-`videos/000-quiroz/diagnostico.md`, §4): **0·1** `001-el-hombre` (separado y reescrito: 5:37), **0·2** `002-saqueo-patriota` (*Saqueo patriota*, agregado el 2026-11-21: el origen de la deuda), **0·3** `003-la-deuda-defraudada` (*La deuda defraudada*, 1850–1852), **0·4** *El lavado* (1852–1871; se partió del 0·3 el 2026-11-21, carpeta por crear), **0·5** *¿Se puede medir la corrupción?* y **0·6**
-*La cuenta* (por separar). `000-quiroz` sigue siendo la fuente de sus escenas hasta que estén los
-cuatro.
+`videos/000-quiroz/diagnostico.md`, §4): **0·1** `001-el-hombre` (separado y reescrito: 5:37), **0·2** `002-saqueo-patriota` (*Saqueo patriota*, agregado el 2026-11-21: el origen de la deuda), **0·3** `003-la-deuda-defraudada` (*La deuda defraudada*, 1850–1852), **0·4** *El lavado* (1852–1871; se partió del 0·3 el 2026-11-21, carpeta por crear). *¿Se puede medir?* y *La cuenta* ya
+no son episodios: la cuenta entra en cada video y la serie sigue por tramos cortados por botín
+(`videos/mapa-serie.md`, 2026-11-21). `000-quiroz` sigue siendo la fuente de sus escenas.
 
 En el Studio hay una carpeta por video (el video entero y **cada escena sola**, para trabajarla
 sin esperar el resto) y la carpeta **catalogo** (ver «Reciclar» más abajo).
@@ -267,7 +267,7 @@ npx remotion render v000-quiroz-s04 out/s04.mp4
   No queda ningún `[VERIFICAR]`. `fuentes.md` lista 29 observaciones al guion (C1–C29); las de
   pantalla aprobadas ya están aplicadas. Para usar la caricatura de Chambón hace falta permiso de
   la PUCP para la copia digital.
-- Separar 0·4, 0·5 y 0·6 como videos propios y escribir lo que pide el plan (`diagnostico.md` §4).
+- Escribir el 0·4 (*El lavado*) y seguir con los tramos de `videos/mapa-serie.md`.
   El 0·1 ya tiene el guion reescrito y aprobado (5:37, sin escenas en rojo en la escaleta).
 - Grabar la voz real, cuadrar los beats con ella (`"beats_ajustados": true`) y recomponer la
   música (`npm run generar:audio -- 000-quiroz --forzar`).

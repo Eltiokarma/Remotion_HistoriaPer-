@@ -945,7 +945,7 @@ denunciaron o destaparon prácticas corruptas»).
 
 ## 10. Lo que todavía no está leído (y dónde está)
 
-Para el arco de presentación (0·1 a 0·5) ya no falta nada del libro. Pendiente:
+Para el arco de presentación (0·1 a 0·4) ya no falta nada del libro. Pendiente:
 
 | Hace falta | Dónde (libro) | En el PDF del libro |
 |---|---|---|

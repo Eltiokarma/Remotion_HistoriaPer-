@@ -29,7 +29,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `e2-guion-locucion` Guion del 0·3 escrito como locución completa, con el criterio del Escribidor Escribano: Tres actas del Escribano aplicadas (la última: 0 altas, 12 medias corregidas); falta el lector en frío y el visto bueno de Gerson, y resolver los [VERIFICAR].
 - `e2-storyboard-adaptado` Storyboard del 0·3 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual: Propuesta del agente: falta la revisión de Gerson, el animatic de la escena 3 para comparar versiones A/B/C, y dibujar las piezas que el storyboard marca como faltantes (pila de vales, línea de 1852, página con huecos, flecha de adelantos, ficha de la abolición, bono y mancha del lavado, barcos en el horizonte).
 - `e2-narracion` Narración del 0·3 con ElevenLabs (Joder Jolines, eleven_v4), con emoción por frase y tiempos reales: Falta que Gerson la escuche (pronunciación de nombres, emoción, ritmo) antes de cuadrar los beats.
-- `e2-arco-estructura` Estructura escena por escena del arco de presentación (final del 0·1, 0·2, 0·3 partido en dos, ¿se puede medir?), con expedientes de fuentes y acta del Escribano: Gerson decidió partir el 0·3 y usar el grabado de 1855 (21 de noviembre de 2026). Falta que apruebe la estructura de cada episodio y el puente del 0·1; después se escribe la voz y el Escribano la revisa completa.
+- `e2-arco-estructura` Estructura escena por escena del arco de presentación (final del 0·1, 0·2, 0·3 partido en dos, ¿se puede medir?), con expedientes de fuentes y acta del Escribano: Decidido por Gerson (21 de noviembre de 2026): el 0·3 se parte, va el grabado de 1855, y ¿Se puede medir? y La cuenta dejan de ser episodios (la cuenta entra en cada video; la serie sigue por tramos de botín, mapa-serie.md). Falta: que apruebe la estructura del 0·2 al 0·4, el puente del 0·1 y el orden después del 0·4.
 
 ## Vista temporal
 
@@ -490,8 +490,8 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Depende de: `e2b-saqueo-guion`
   - Prevista: — · Real: 2026-11-21 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Bloqueo: Gerson decidió partir el 0·3 y usar el grabado de 1855 (21 de noviembre de 2026). Falta que apruebe la estructura de cada episodio y el puente del 0·1; después se escribe la voz y el Escribano la revisa completa.
-  - Evidencia: [videos/arco-estructura.md](historia/videos/arco-estructura.md) · [diseno/expediente.md](historia/videos/003-la-deuda-defraudada/diseno/expediente.md) · [diseno/expediente.md](historia/videos/002-saqueo-patriota/diseno/expediente.md) · [diseno/expediente-medir.md](historia/videos/000-quiroz/diseno/expediente-medir.md)
+  - Bloqueo: Decidido por Gerson (21 de noviembre de 2026): el 0·3 se parte, va el grabado de 1855, y ¿Se puede medir? y La cuenta dejan de ser episodios (la cuenta entra en cada video; la serie sigue por tramos de botín, mapa-serie.md). Falta: que apruebe la estructura del 0·2 al 0·4, el puente del 0·1 y el orden después del 0·4.
+  - Evidencia: [videos/arco-estructura.md](historia/videos/arco-estructura.md) · [diseno/expediente.md](historia/videos/003-la-deuda-defraudada/diseno/expediente.md) · [diseno/expediente.md](historia/videos/002-saqueo-patriota/diseno/expediente.md) · [diseno/expediente-medir.md](historia/videos/000-quiroz/diseno/expediente-medir.md) · [videos/mapa-serie.md](historia/videos/mapa-serie.md)
 
 ## Máquinas
 

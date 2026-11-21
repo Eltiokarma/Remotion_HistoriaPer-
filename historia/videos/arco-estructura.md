@@ -18,9 +18,9 @@ Todo tiene que poder entenderse, y verse con gusto.
 | 0·1 | El hombre que le sacó la cuenta al Perú | Quiroz | una deuda que el Estado pagó con el guano | ¿cómo nace endeudado un país? |
 | 0·2 | Saqueo patriota | 1777–1849 | Londres arreglado; la pila de reclamos de adentro sin reconocer | ¿y qué pasó cuando se pagó la de adentro? |
 | 0·3 | La deuda defraudada | 1850–1852 | Mendiburu sale para Londres con una carta de recomendación | ¿qué iba a hacer allá? |
-| 0·4 | El lavado | 1852–1871 | los papeles que quedaron, y los que no | ¿se puede medir la corrupción? |
-| 0·5 | ¿Se puede medir la corrupción? | el método | sí se puede | ¿cuánto da? |
-| 0·6 | La cuenta | 1820–2000 | el primer capítulo | Huancavelica, 1758 |
+| 0·4 | El lavado | 1852–1871 | los que volvieron y el reparto de Dreyfus (1869) | ¿qué pasó con el guano que quedaba? |
+
+**Cambio del 21 de noviembre de 2026 (Gerson):** *¿Se puede medir?* y *La cuenta* ya no son episodios. La cuenta entra en cada video con la cifra de su época, y el método queda implícito. La serie sigue por tramos cortados por botín, no por presidentes: ver [mapa-serie.md](mapa-serie.md). Lo que era el 0·5 está repartido entre el 0·2, el 0·3 y el 0·4 (tabla en `mapa-serie.md`), y la sección del 0·5 queda abajo solo como material.
 
 Así lo recomendaron el Escribano y el Escribidor: entero, el 0·3 duraba 15–16 min.
 
@@ -217,7 +217,7 @@ No se corta: presenta los conceptos que usa el 0·3.
   - La Fuente, que vuelve al poder (pp. 153 y 158);
   - la pena de muerte que no se aplicaba (p. 144).
   - Contraejemplo: La Mar (n. 48), si el expediente lo sostiene.
-- **En pantalla, no en la voz:** el costo de la corrupción por década según el cuadro A.3, 27, 22 y 25 millones de pesos (pp. 546–548). El método se explica en el 0·5.
+- **La cuenta del tramo** (primera vez en la serie). El método va en dos frases de voz: qué suma Quiroz (lo desviado y la inversión que no llegó) y contra qué lo compara (lo que gastaba el Estado). Las cautelas se dicen: «estimado», «provisional». En pantalla, el cuadro A.3, con 27, 22 y 25 millones de pesos en los años veinte, treinta y cuarenta (pp. 546–548). En la voz, una sola cifra traducida: la independencia temprana costó el equivalente a más que todo lo que gastaba el Estado en un año (cuadro A.7: 139 %).
 - **Bisagra con el 0·3 (p. 169):** Londres quedó arreglado, pero lo tomado y lo prestado adentro seguía siendo una pila de reclamos sin reconocer. Y esa deuda también se iba a pagar con el guano.
 - **Tarjeta:** `PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA`.
 - **Carga:** 6 en la voz.
@@ -436,14 +436,17 @@ Es la parte B del 0·3 de la versión 1.
   - Según el cuadro A.3, la década de 1850 costó el doble que la de 1840, unos 50 millones (Q: «duplicando el costo total del decenio de 1840», p. 188). En pantalla, sin explicar el método.
   - Este caso dejó papeles: reclamos, vales, cartas y el informe de una junta. Mucha corrupción se hace para no dejarlos (p. 538).
   - ¿Se puede medir la corrupción?
-- **Tarjeta:** `PRÓXIMO · ¿SE PUEDE MEDIR LA CORRUPCIÓN?`.
+- **La cuenta del tramo:** la década de 1850 costó el doble que la de 1840 (A.3; p. 188), traducida a lo que gastaba el Estado.
+- **El cierre ya no pregunta por el método** (Gerson, 21 de noviembre de 2026). Termina con el hilo que sigue: «el viejo consolidado» en el reparto de Dreyfus. Tarjeta: `PRÓXIMO · DREYFUS` o el tramo que Gerson elija (ver `mapa-serie.md`, «El orden después del 0·4»).
 - **Carga:** 2.
 
 **Duración estimada:** unos 10 min.
 
 ---
 
-## 0·5 · ¿Se puede medir la corrupción?
+## Material: lo que era el 0·5 (*¿Se puede medir la corrupción?*)
+
+Ya no es un episodio (Gerson, 21 de noviembre de 2026). Se conserva como material, y cada pieza va al video que la ilustra (`mapa-serie.md`).
 
 **Pregunta central:** ¿se puede medir algo que se hace para no dejar rastro?
 **Palabra del episodio:** *grava* (pp. 536–537).
