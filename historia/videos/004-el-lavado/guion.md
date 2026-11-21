@@ -73,9 +73,9 @@ Y el hombre que había denunciado el fraude, Domingo Elías, ya era ministro de 
 **VO:**
 Lima, septiembre de mil ochocientos cincuenta y dos. El presidente Echenique le escribe a la casa Murrieta, de Londres, para recomendarle a Manuel de Mendiburu. [PAUSA 0,6s] Al margen de esa carta hay una nota escrita a mano: dice que la recomendación no figura en las memorias. [PAUSA 1s]
 
-En mil ochocientos cincuenta y tres, Mendiburu viajó a Londres como ministro plenipotenciario, el enviado con poder para negociar. [PAUSA 0,6s] Según Quiroz, llevaba dos tareas: renegociar el arreglo de mil ochocientos cuarenta y nueve, y cambiar una parte de la deuda consolidada por deuda externa nueva. [PAUSA 1,2s]
+En mil ochocientos cincuenta y tres, Mendiburu viajó a Londres como ministro plenipotenciario, el enviado con poder para negociar. [PAUSA 0,6s] Según Quiroz, llevaba dos tareas: renegociar el arreglo de mil ochocientos cuarenta y nueve, y cambiar deuda consolidada por deuda externa nueva. [PAUSA 1,2s]
 
-Ese arreglo lo vimos en el episodio dos. La deuda externa había empezado en Londres, y el Perú dejó de pagarla casi enseguida. [PAUSA 0,6s] En mil ochocientos cuarenta y nueve la arregló con el guano: la mitad de lo que dejaba en Gran Bretaña iría a los dueños de los bonos. [PAUSA 0,8s] Y un bono es eso: una promesa de pago, como el vale, pero de la deuda externa. [PAUSA 1s]
+Ese arreglo lo vimos en el episodio dos. La deuda externa había empezado en Londres, y el Perú dejó de pagarla casi enseguida. [PAUSA 0,6s] En mil ochocientos cuarenta y nueve la arregló con el guano: la mitad de lo que dejaba en Gran Bretaña pagaría los bonos. [PAUSA 0,8s] Y un bono es eso: una promesa de pago, como el vale, pero de la deuda externa. [PAUSA 1s]
 
 Entonces, el Perú volvía a tener crédito afuera, y con ese crédito la deuda de adentro se podía mandar afuera. [PAUSA 2s]
 
@@ -111,7 +111,7 @@ En agosto de mil ochocientos cincuenta y dos, el Estado ya había contratado un 
 
 Los contratos grandes llegaron en mil ochocientos cincuenta y tres, con dos casas que vendían el guano del Estado. Una era Uribarren, de París; la otra, Montané, el antiguo socio de Gibbs. [PAUSA 0,6s] Cada casa le entregaba vales al Estado, y el Estado le daba bonos nuevos de deuda externa por ellos. [PAUSA 0,6s] Según Quiroz, con esos dos contratos se cambió, en silencio, cerca de la mitad de toda la deuda consolidada. [PAUSA 1,2s]
 
-En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que tenía escrito. El bono nuevo, en cambio, pronto llegó a valer casi todo lo que tenía escrito. [PAUSA 0,6s] Las dos casas habían juntado vales antes de firmar sus contratos, así que ganaron con la subida: sus bonos valían más del doble que esos vales. [PAUSA 1,2s]
+En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que tenía escrito. El bono nuevo, en cambio, pronto llegó a valer casi todo lo que tenía escrito. [PAUSA 0,6s] Las dos casas habían juntado vales antes de firmar. Al cambiarlos, ganaron con la subida: sus bonos valían más del doble. [PAUSA 1,2s]
 
 En el papel, el Estado pagaba menos interés: el vale daba seis por ciento, y el bono, cuatro y medio. [PAUSA 0,6s] Pero, según Quiroz, comprometía su crédito afuera para pagar una deuda creada en gran parte con deshonestidad en su propia administración. Y esos cambios hacían más difícil investigarla después. [PAUSA 1,2s]
 
@@ -151,8 +151,6 @@ Denunció también expedientes con nombre, como el pago de un millón de pesos a
 
 Elías no denunciaba desde afuera. Él mismo movía expedientes por comisión, y Echenique le había quitado el contrato para cargar el guano. [PAUSA 0,6s] Su denuncia traía información y también defendía sus intereses. [PAUSA 1,2s]
 
-En Londres también se alarmaron, según Vizcarra, por sus propias razones: deudas nuevas, menos guano del que se creía, y un cambio que muchos vieron como un pago a aliados del gobierno. [PAUSA 1,2s]
-
 Quiroz distingue dos cosas que no suben ni bajan juntas. La corrupción percibida depende de los escándalos que se destapan, y cambia rápido. La corrupción sistémica está metida en las instituciones y en las redes, y cambia despacio. [PAUSA 1s] Entonces, con las cartas de Elías, lo que se percibía subió de golpe. Pero el fraude venía de antes, y nadie fue castigado. [PAUSA 2s]
 
 **Imagen:**
@@ -181,13 +179,13 @@ Es la propuesta 4.5 del Escribano en la opción b: después de que vuelve Castil
 **Cambio:** de «llegaron los reformadores» a «repitieron el favor con su gente».
 
 **VO:**
-Pero el que denunció llegó al poder. En mil ochocientos cincuenta y cinco cayó Echenique, volvió Castilla y Elías fue su ministro de Hacienda. [PAUSA 0,6s] En su manifiesto de ese año, Elías culpaba a una pandilla de falsos patriotas y negociantes desalmados. [PAUSA 1s]
+Pero el que denunció llegó al poder. La revolución se volvió una guerra civil en casi todo el país. En mil ochocientos cincuenta y cinco cayó Echenique, volvió Castilla y Elías fue su ministro de Hacienda. [PAUSA 1s]
 
-En plena guerra civil, en mil ochocientos cincuenta y cuatro, Castilla había decretado la libertad de los esclavos. Según Quiroz, lo hizo para ganar respaldo popular y para reclutar soldados. [PAUSA 1s]
+En plena guerra, Castilla había decretado la libertad de los esclavos. Según Quiroz, lo hizo para ganar respaldo popular y para reclutar soldados. [PAUSA 1s]
 
-Ya en el poder, el nuevo gobierno indemnizó a los antiguos dueños con trescientos pesos por cada persona liberada. En total les entregó casi ocho millones de pesos, una parte en efectivo y la mayor parte en vales. [PAUSA 0,8s] Elías, el propio ministro de Hacienda, era el tercer antiguo dueño de esclavos más importante. Recibió ciento once mil pesos en vales por trescientas setenta personas. [PAUSA 1,5s]
+Ya en el poder, el nuevo gobierno indemnizó a los antiguos dueños con trescientos pesos por cada persona liberada. En total les entregó casi ocho millones de pesos, la mayor parte en vales. [PAUSA 0,8s] Elías, el propio ministro de Hacienda, era el tercer antiguo dueño de esclavos más importante. Recibió ciento once mil pesos en vales por trescientas setenta personas. [PAUSA 1,5s]
 
-Algunos antiguos dueños incluyeron en sus reclamos a esclavos que ya habían muerto, o inflaron cuántos habían tenido antes del decreto. [PAUSA 0,6s] Entre los indemnizados estaba también el conde de Montemar, el de uno de los reclamos que Elías había denunciado. [PAUSA 0,8s] Según Quiroz, Castilla y Elías pagaban así favores políticos, para asegurar el respaldo de la élite al nuevo gobierno, a costa del Estado. [PAUSA 1s]
+Algunos antiguos dueños incluyeron en sus reclamos a esclavos que ya habían muerto, o inflaron cuántos habían tenido. [PAUSA 0,6s] Según Quiroz, Castilla y Elías pagaban así favores políticos, para asegurar el respaldo de la élite al nuevo gobierno, a costa del Estado. [PAUSA 1s]
 
 Entonces, para Quiroz, el nuevo gobierno repetía en otra forma lo mismo que había denunciado: favores del Estado para un grupo pequeño. [PAUSA 2s]
 
@@ -214,15 +212,13 @@ El texto es el de la ESC 4 del 0·3 (aprobado), con dos cambios: la respuesta de
 **Cambio:** de «por fin los investigan» a «una ley los perdona en la práctica».
 
 **VO:**
-Pero igual se investigó. En febrero de mil ochocientos cincuenta y cinco, el gobierno creó la Junta de Examen Fiscal para revisar los expedientes de la consolidación. Según Quiroz, la investigación fue exhaustiva y, al principio, la respaldaron el gobierno y el Congreso. [PAUSA 0,8s] La junta encontró los más de doce millones del comienzo, en ciento cuarenta y un expedientes irregulares o ilegales. Otros cuatro expedientes habían sido robados. [PAUSA 1,2s]
-
-Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos y detuvo por un tiempo el cambio de vales por bonos. [PAUSA 0,6s] Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu. [PAUSA 1,2s]
+Pero igual se investigó. Según Quiroz, la junta de mil ochocientos cincuenta y cinco hizo una investigación exhaustiva, y al principio la respaldaron el gobierno y el Congreso. [PAUSA 0,8s] A fines de mil ochocientos cincuenta y seis, una ley suspendió el pago de los vales fraudulentos y detuvo por un tiempo los cambios. [PAUSA 0,6s] Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu. [PAUSA 1,2s]
 
 Los que tenían los vales protestaron: decían que un vale era como un billete, y que quien lo había comprado no tenía por qué perder. La junta respondía que un vale seguía siendo una deuda del Estado, y que el fraude podía anularlo. [PAUSA 1s]
 
-Los diplomáticos de Gran Bretaña y de Francia respaldaron a los que tenían vales y bonos. Barcos de guerra ingleses y franceses rondaban las islas del guano, y el general Vivanco se había alzado en armas. [PAUSA 0,8s] Según Quiroz, aceptar lo que pedían los extranjeros era probablemente lo único que Castilla podía hacer para mantenerse en el poder. [PAUSA 1,2s]
+Los diplomáticos de Gran Bretaña y de Francia respaldaron a los que tenían vales y bonos. Barcos de guerra ingleses y franceses rondaban las islas del guano, y el general Vivanco se había alzado en armas. [PAUSA 0,8s] Según Quiroz, aceptar lo que pedían los extranjeros era probablemente lo único que Castilla podía hacer para seguir en el poder. [PAUSA 1,2s]
 
-En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos sobre bonos y cambios que se habían suspendido. Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron. [SILENCIO 2s] En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota el historiador César Antonio Ugarte en mil novecientos veintiséis. [PAUSA 1,2s]
+En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró todos esos acuerdos suspendidos. Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron. [SILENCIO 2s] En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota el historiador César Antonio Ugarte. [PAUSA 1,2s]
 
 Entonces, la junta encontró expedientes irregulares o ilegales, pero los vales ya habían cambiado de manos y tenían barcos y diplomáticos detrás. Y una ley volvió a ponerlos en circulación. [PAUSA 2,5s]
 
@@ -251,17 +247,17 @@ Entonces, la junta encontró expedientes irregulares o ilegales, pero los vales 
 **Cambio:** de «huyeron» a «volvieron, y algunos con cargo».
 
 **VO:**
-Pero la historia no termina con la fuga. Echenique conspiró desde el exilio contra Castilla y regresó a Lima en mil ochocientos sesenta y uno. Al año siguiente lo eligieron diputado, y logró que le devolvieran sus propiedades y los sueldos que reclamaba. [PAUSA 1s]
+Pero la historia no termina con la fuga. Echenique conspiró desde el exilio y regresó a Lima en mil ochocientos sesenta y uno. Lo eligieron diputado, y le devolvieron sus propiedades y los sueldos que reclamaba. [PAUSA 1s]
 
-Torrico pasó esos años en París, gastando lo que Quiroz llama su fortuna mal habida. En mil ochocientos sesenta y cinco, el gobierno lo nombró ministro plenipotenciario en esa misma ciudad. [PAUSA 0,8s] Y Mendiburu aparece, hacia mil ochocientos sesenta, entre los amigos de Echenique en el Congreso. [PAUSA 1s]
+Torrico pasó esos años en París, gastando lo que Quiroz llama su fortuna mal habida. Después, el gobierno lo nombró ministro plenipotenciario en esa misma ciudad. [PAUSA 0,8s] Y hacia mil ochocientos sesenta, Mendiburu estaba entre los amigos de Echenique en el Congreso. [PAUSA 1s]
 
-La casa Gibbs también siguió. En mil ochocientos cincuenta y tres había prorrogado en secreto su contrato del guano, con un gran adelanto y, probablemente, sobornos. Una comisión del segundo gobierno de Castilla la investigó y la dejó sin castigo. [PAUSA 1s] Y según Heinrich Witt, Torrico y Cotes, un primo político de Echenique, lograron dejarles a sus viudas sus fortunas mal habidas. [PAUSA 1s]
+La casa Gibbs había prorrogado en secreto su contrato del guano, con un gran adelanto y, probablemente, sobornos. Una comisión del segundo gobierno de Castilla la investigó y la dejó sin castigo. [PAUSA 1s]
 
 Elías, en cambio, perdió. Fracasó como candidato a la presidencia y se retiró de la política hasta su muerte. [PAUSA 1,2s]
 
-Quiroz cuenta que algunas personas fueron llevadas a juicio, pero no nombra ninguna condena. Nosotros no sabemos de ninguna. [PAUSA 1s] Para Quiroz, eso no cierra el caso: la prueba del historiador no es la del juez. Trabaja con probabilidades, y la falta de una sentencia no quiere decir que no hubo corrupción. [PAUSA 1,2s]
+No sabemos de ninguna condena. [PAUSA 0,8s] Para Quiroz, eso no cierra el caso: la prueba del historiador no es la del juez. Trabaja con probabilidades, y la falta de una sentencia no quiere decir que no hubo corrupción. [PAUSA 1,2s]
 
-Entonces, los que huyeron volvieron, y algunos con cargo. En mil ochocientos setenta y uno, Witt escribió que quienes creían que la corrupción había llegado a su punto más alto con la consolidación se engañaban enormemente. [PAUSA 2s]
+Entonces, los que huyeron volvieron, y algunos con cargo. En mil ochocientos setenta y uno, el comerciante Heinrich Witt escribió que se engañaban enormemente quienes creían que lo peor había sido la consolidación. [PAUSA 2s]
 
 **Imagen:**
 - «Pero la historia no termina»: la línea de tiempo de la ESC 4 se alarga hacia la derecha, de 1855 a 1871, `solemne`, y la cámara la recorre año por año (motivo: la voz avanza en el tiempo; el espectador recorre los dieciséis años en vez de saltarlos). Los medallones que salieron por la derecha en la ESC 5 vuelven a entrar por ahí, uno por vez, cada uno a su año.
@@ -288,11 +284,11 @@ El cierre ya no pregunta por el método (Gerson, 21 de noviembre de 2026). Recue
 **Cambio:** de «este caso dejó papeles» a «y esos papeles muestran que los mismos seguían ahí».
 
 **VO:**
-¿Cuánto costó todo esto? Como vimos en el episodio uno, Quiroz estimó década por década lo que la corrupción le costó al país. [PAUSA 0,6s] Según su cuenta, la década de mil ochocientos cincuenta costó el doble que la de mil ochocientos cuarenta: unos cinco millones de pesos al año. Era más de la mitad de lo que gastaba el Estado. [PAUSA 1,5s]
+¿Cuánto costó todo esto? Según la estimación de Quiroz, la década de mil ochocientos cincuenta costó el doble que la de mil ochocientos cuarenta. Fueron unos cinco millones de pesos al año: más de la mitad de lo que gastaba el Estado. [PAUSA 1,5s]
 
-Esa cuenta se puede sacar porque este caso dejó papeles: el informe de una junta, las cartas de Elías, una nota al margen y el diario de un comerciante. [PAUSA 0,6s] Mucha corrupción se hace, justamente, para no dejar huellas en los papeles oficiales. Quiroz responde que igual quedan rastros: juicios, cartas, memorias, diarios y panfletos. [PAUSA 1,5s]
+Esa cuenta se puede sacar porque este caso dejó papeles: informes, cartas, notas y diarios. [PAUSA 0,6s] Mucha corrupción se hace, justamente, para no dejar huellas en los papeles oficiales. Pero Quiroz encontró que igual quedan rastros. [PAUSA 1,5s]
 
-Y esos papeles muestran algo más. En mil ochocientos sesenta y nueve, el Perú firmó un contrato del guano con la casa Dreyfus, de París. Antes de que se ratificara en Lima, Dreyfus repartió acciones del negocio entre peruanos que podían defenderlo. [PAUSA 1s] Entre ellos estaba un hermano de Torrico. Y estaba Nicanor González, un tasador judicial que había ayudado en el desvío de los fondos de la consolidación. [PAUSA 0,8s] Quiroz lo llama el viejo consolidado. [PAUSA 2,5s]
+Y esos papeles muestran algo más. En mil ochocientos sesenta y nueve, el Perú firmó un contrato del guano con la casa Dreyfus, de París. Antes de que se ratificara, Dreyfus repartió acciones del negocio entre peruanos que podían defenderlo. [PAUSA 1s] Entre ellos estaba un hermano de Torrico. Y estaba Nicanor González, que en los años cincuenta había facilitado el desvío de fondos públicos. [PAUSA 0,8s] Quiroz lo llama el viejo consolidado. [PAUSA 2,5s]
 
 **Imagen:**
 - «¿Cuánto costó?»: el cuadro A.3 en motion graphics propio (no en la pizarra: es un dato). Dos barras con su década y su cifra, que crecen de a una, `pesado`: `1840–1849 · 25 MILLONES DE PESOS` y `1850–1859 · 50 MILLONES DE PESOS`. Debajo, chico: `ESTIMADO · INCLUYE LA INVERSIÓN QUE NO LLEGÓ · CUADRO A.3, P. 546`. Con «más de la mitad», un rótulo aparte, cuando las barras ya están quietas: `≈ 5 MILLONES AL AÑO · 63 % DEL GASTO DEL ESTADO (Q, P. 189)`.

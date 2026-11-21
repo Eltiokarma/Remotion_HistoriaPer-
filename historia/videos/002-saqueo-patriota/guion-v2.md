@@ -4,7 +4,7 @@
 **Formato:** 100 % Remotion · 1920×1080 · 30 fps
 **Pregunta central:** ¿Cómo nace endeudado un país que acaba de liberarse? Se abre en el gancho y se responde en la ESC 9, con el arreglo de Londres y la pila de adentro sin pagar.
 **Palabra del episodio:** *saqueo patriota* (título de Quiroz, p. 130). Va a pantalla completa, quieta, al final de la ESC 2.
-**Duración estimada:** 1 703 palabras de voz, que a 2,6 palabras por segundo dan 10 min 55 s, más 3 min 21 s de pausas escritas: **unos 14 min 15 s** de narración, sin contar la tarjeta final. Pasa de los 12 min de la estructura; ver «Decisiones», punto 1. Se mide de nuevo con la voz provisional.
+**Duración estimada:** 2165 palabras de voz, que a 2,6 palabras por segundo dan 13 min 53 s, más 1 min 59 s de pausas escritas: **unos 15 min 50 s** de narración, sin contar la tarjeta final. Pasa de los 12 min de la estructura; ver «Decisiones», punto 1. Se mide de nuevo con la voz provisional.
 **Estado:** borrador del Escribidor, para el Escribano. Escrito el 21 de noviembre de 2026 sobre la estructura aprobada (`arco-estructura.md`, «Ep. 2 · Saqueo patriota (versión 2)») y el expediente (`diseno/expediente.md`). Reaprovecha la voz del guion v1 que ya pasó por el Escribano (`guion.md`, que no se toca porque lo leen los scripts de la voz) y corrige lo que el expediente marca en su §7.
 
 Las marcas entre corchetes son de dirección: `[PAUSA 1s]` va a la voz; `[SILENCIO 2s]` quita también la música (una sola vez en el episodio, en la ESC 3). **Imagen** dice qué aparece con cada frase, con su peso de movimiento (`solemne`, `pesado`, `natural`, `ligero`, `tenso`) y qué hace la cámara y por qué. **Fuente** da la página: Q es Quiroz 2013 y V es Vizcarra 2011. Lo que va en pantalla no se lee en voz alta: nombres completos, cargos, fechas exactas, cifras exactas y su equivalente en soles de hoy.
@@ -116,7 +116,7 @@ Entre mil ochocientos veintiuno y mil ochocientos veintidós, San Martín y su m
 
 Las haciendas y casas confiscadas a los realistas se valoraron en unos dos millones de pesos. [PAUSA 0,6s] Eran difíciles de vender, así que casi no le dejaron dinero al Estado. [PAUSA 0,8s] Con los años, la mayor parte se entregó a oficiales que pedían recompensa por la guerra. [PAUSA 1s]
 
-En el episodio anterior, el premio era lo que se llevaba el virrey. [PAUSA 0,5s] Ahora el premio era una hacienda. [PAUSA 0,8s] Entre los oficiales de alto rango que recibieron esas recompensas estuvo José Rufino Echenique, que años después sería presidente. [PAUSA 1,5s]
+En el episodio anterior, el premio era lo que se llevaba el virrey. [PAUSA 0,5s] Ahora el premio era una hacienda. [PAUSA 0,8s] Entre los oficiales premiados estuvo José Rufino Echenique. [PAUSA 1,5s]
 
 Quiroz le puso un nombre a todo esto. [PAUSA 1s] Saqueo patriota. [PAUSA 2,5s]
 
@@ -248,7 +248,7 @@ Entonces, de Londres quedó una deuda de cerca de un millón ochocientas mil lib
 
 **Cambio:** de «el problema era la deuda» a «la riqueza también salía, con autoridades que lo protegían».
 **Intensidad:** 3.
-**Carga en la voz:** el dólar, 1819–1825, veintisiete millones, Witt, 1825, sesenta mil, Gibbs, doscientos mil, Castilla (9 en unos 110 s). Presenta el dólar.
+**Carga en la voz:** el dólar, 1819–1825, veintisiete millones, Witt, 1825, sesenta mil, Gibbs, doscientos mil, Castilla (9 en unos 108 s). Presenta el dólar.
 
 **VO:**
 Mientras el Estado no pagaba, la riqueza del país seguía saliendo por mar. [PAUSA 0,5s] Aquí aparece otra moneda, el dólar de Estados Unidos: para el siglo diecinueve, Quiroz cuenta un peso como un dólar. [PAUSA 1s]
@@ -286,10 +286,10 @@ Entonces, mientras en Londres no se pagaba, la plata salía por mar, y las autor
 
 **Cambio:** de «no hay con qué pagar» a «hay con qué, y el primer contrato va a un antiguo socio del banquero de los préstamos».
 **Intensidad:** 5. Es el pico del episodio: el mismo círculo une 1822 con 1840.
-**Carga en la voz:** los años treinta, 1840, Gamarra, nueve años, noventa mil pesos, cincuenta por ciento, Vidal (7 en unos 100 s).
+**Carga en la voz:** los años treinta, 1840, Gamarra, nueve años, noventa mil pesos, cincuenta por ciento, Vidal (7 en unos 110 s).
 
 **VO:**
-Pero en las islas de la costa había otra riqueza: el guano, el excremento de las aves marinas. [PAUSA 0,6s] En los años treinta, unos experimentos encontraron que el guano peruano tenía mucho nitrógeno y fósforo. Eso lo volvía mejor que otros abonos. [PAUSA 1,2s]
+Pero en las islas de la costa había otra riqueza: el guano, el excremento de las aves marinas. [PAUSA 0,6s] En los años treinta, unos experimentos encontraron que el guano peruano tenía mucho nitrógeno y fósforo. [PAUSA 0,5s] Eso le daba ventaja sobre otros abonos. [PAUSA 1,2s]
 
 En noviembre de mil ochocientos cuarenta, el presidente Agustín Gamarra y su ministro de Hacienda, Ramón Castilla, dieron el primer contrato del guano. [PAUSA 0,5s] Era el mismo Castilla al que habían acusado de contrabando. [PAUSA 0,8s] Por nueve años, una sola sociedad podría sacar todo el guano que quisiera y venderlo en Europa. [PAUSA 0,5s] La formaban un capitalista peruano y tres socios franceses. [PAUSA 0,5s] El peruano había sido socio de Kinder y de Robertson en Londres, en los años de los primeros préstamos. [PAUSA 1s] A cambio, la sociedad pagó solo noventa mil pesos, en cuotas, en efectivo y en billetes. [PAUSA 0,6s] El Estado estaba urgido de adelantos, porque se acercaba una guerra con Bolivia. [PAUSA 1,2s]
 
@@ -331,7 +331,7 @@ Según Quiroz, esos adelantos llegaron a cobrar hasta el uno por ciento de inter
 
 Desde mil ochocientos cuarenta y dos, el consignatario más importante fue la casa Gibbs. [PAUSA 0,5s] Es la misma que recibía la plata de contrabando de Witt. [PAUSA 1,2s] Para Quiroz, con ese arreglo los consignatarios tenían pocos incentivos para ser honestos con las cuentas del guano. [PAUSA 1s]
 
-Según un diplomático de Estados Unidos, en un préstamo de esos años el gobierno aceptó que una cuarta parte de lo que dejaba la venta del guano se le pagara con papeles de deuda depreciados. [PAUSA 0,4s] Esos papeles valían alrededor de la quinta parte de lo que decían. [PAUSA 1s]
+Un diplomático de Estados Unidos describió uno de esos préstamos. [PAUSA 0,4s] El gobierno aceptó que una cuarta parte de lo que dejaba la venta del guano se le pagara con papeles de deuda depreciados. [PAUSA 0,4s] Esos papeles valían alrededor de la quinta parte de lo que decían. [PAUSA 1s]
 
 En los años cuarenta, según la investigadora Catalina Vizcarra, el guano le dejó al Estado unos cinco millones y medio de pesos. [PAUSA 0,4s] La mayor parte llegó como adelantos. [PAUSA 1,2s]
 
@@ -357,10 +357,10 @@ Entonces, el guano se gastaba antes de venderse, y el que lo vendía era tambié
 
 **Cambio:** de «se arregla Londres» a «se arregla, los negociadores cobran, nadie paga por lo anterior y la deuda de adentro sigue ahí».
 **Intensidad:** 3. Sube con el arreglo y el balance, y baja en el puente al Ep. 3.
-**Carga en la voz:** 1842, 1849, tres millones seiscientas mil libras, el doble, premio, 1831, La Mar, cuatro de diez, catorce de diez (9 en unos 160 s).
+**Carga en la voz:** 1849, tres millones seiscientas mil libras, el doble, premio, 1831, La Mar, cuatro de diez, catorce de diez (8 en unos 170 s).
 
 **VO:**
-Para que Londres volviera a prestar, había que arreglar la deuda vieja. [PAUSA 0,5s] Ya presidente, Castilla explicó para qué. [PAUSA 0,4s] Había que revivir el crédito que la república perdió en Europa casi al mismo tiempo que vino a la existencia. [PAUSA 0,8s] El arreglo se firmó el treinta y uno de enero de mil ochocientos cuarenta y nueve. [PAUSA 0,4s] A los dueños de los bonos les tocaría la mitad de lo que dejara el guano vendido en Gran Bretaña. [PAUSA 0,6s] Con los intereses atrasados, la deuda reconocida llegó a unos tres millones seiscientas mil libras: casi el doble de lo prestado. [PAUSA 1,2s]
+Para que Londres volviera a prestar, había que arreglar la deuda vieja. [PAUSA 0,5s] Ya presidente, Castilla explicó para qué servía. [PAUSA 0,4s] Había que revivir el crédito que la república perdió en Europa casi al mismo tiempo que vino a la existencia. [PAUSA 0,8s] El arreglo se firmó el treinta y uno de enero de mil ochocientos cuarenta y nueve. [PAUSA 0,4s] A los dueños de los bonos les tocaría la mitad de lo que dejara el guano vendido en Gran Bretaña. [PAUSA 0,6s] Con los intereses atrasados, la deuda reconocida llegó a unos tres millones seiscientas mil libras: casi el doble de lo prestado. [PAUSA 1,2s]
 
 Para cambiar los bonos viejos por nuevos, los negociadores de Castilla eligieron una casa de Londres que Quiroz llama de dudoso prestigio. [PAUSA 0,5s] Su contrato incluía un premio no revelado para los comisionados peruanos. [PAUSA 0,5s] Es la palabra del episodio anterior. [PAUSA 0,6s] Los comisionados cobraron además en bonos nuevos, y según Quiroz más que duplicaron esa ganancia en poco tiempo. [PAUSA 1,5s]
 
@@ -415,10 +415,10 @@ Próximo episodio: La deuda defraudada.
 
 Lo que cambié respecto de la estructura aprobada (`arco-estructura.md`, Ep. 2, versión 2), y por qué:
 
-1. **Dura más de lo previsto: unos 14 min contra 12.** No corté ninguna escena, porque cada una contesta una de las cinco preguntas. Las más largas son la ESC 9 (unos 160 s contra 90) y la ESC 6 (unos 110 s contra 70). Si hay que recortar, propongo: (a) partir la ESC 9 en dos, el arreglo de 1849 y luego el balance con la cuenta, cada una con su «entonces»; (b) quitar de la ESC 6 la frase de la pena de muerte, que se repite en el balance; (c) quitar de la ESC 5 el párrafo de los diplomáticos acreedores y dejarlo en pantalla. La estructura dice que no se corte la ESC 8, y no la toqué.
+1. **Dura más de lo previsto: unos 15 min 50 s contra 12.** El primer borrador completo daba 2375 palabras y unos 17 min 20 s. Recorté ideas, no verbos, y lo que salió pasó a la pantalla: Proctor, la herencia colonial de los caudillos (ya está en la ESC 3 como rótulo), el hueso y la sangre seca, la cancelación del contrato de 1840, el decreto de 1842, la pena de muerte repetida en el balance y la mitad del párrafo de los diplomáticos. No corté ninguna escena, porque cada una contesta una de las cinco preguntas. Las más largas son la ESC 9 (unos 170 s contra 90), la ESC 7 (unos 112 s contra 90), la ESC 5 y la ESC 6 (unos 108 s cada una, contra 80 y 70). Para llegar a 12 min propongo: (a) partir la ESC 9 en dos, el arreglo de 1849 y luego el balance con la cuenta, cada una con su «entonces», o pasar el balance a un libro mayor casi sin voz; (b) dejar en la ESC 6 solo a La Fuente y llevar a Castilla a la ESC 7, donde ya se recuerda su acusación; (c) quitar de la ESC 5 el párrafo de las *Noticias secretas* si Gerson no quiere la cosecha en voz (iría solo en pantalla). La estructura dice que no se corte la ESC 8, y no la toqué.
 2. **El dólar se presenta en la ESC 6, no en la ESC 0.** La estructura pone libra, peso y dólar en el gancho. La libra va en la ESC 0, donde se usa; el peso ya viene del Ep. 1; el dólar se usa por primera vez con los 27 millones de Ricketts, y ahí se presenta. Así el gancho queda en 5 cifras y no en 7.
 3. **El bono se presenta sin un precio inventado.** La estructura proponía «a 75 quiere decir 75 de cada 100», pero 75 es lo que Kinder adelantaba, no el precio del bono: V da 88,82 como precio de emisión (expediente, §7). En la ESC 4 el precio queda en blanco y en la ESC 5 se llena con el dato real, «a 30» (n. 30).
-4. **Echenique ya no es «un joven oficial».** Quiroz lo pone «entre los oficiales de alto rango» (p. 132); «joven» salía de su fecha de nacimiento, que no está en las fuentes. La voz dice «con los años» por el «eventualmente» del libro, y lo ata a 1851 (p. 168).
+4. **Echenique ya no es «un joven oficial».** Quiroz lo pone entre los «oficiales de alto rango» premiados, sin decir que fuera joven ni cuándo («Eventualmente», pp. 131–132). La voz dice solo «Entre los oficiales premiados estuvo José Rufino Echenique», sin edad ni fecha, como pidió la coordinación con el Ep. 3. La flecha de pantalla `→ PRESIDENTE EN 1851` (p. 168) es la única marca del hilo; si se prefiere, se quita.
 5. **«Algunos peruanos indignados»**, como en la p. 131, en lugar de «algunos limeños». Quiroz afirma, además, que Monteagudo confiscó caudales para redes de espías, y la voz lo dice como de Quiroz.
 6. **La cita de Tudor va con «invasores».** Así se conserva que apuntaba a los libertadores extranjeros (expediente, §7). Pasó al comienzo de la ESC 3, como el juicio de un testigo, y después viene Bolívar.
 7. **«El procurador general de Londres»** pasa a «un abogado de la Corona británica, el procurador general» (expediente, §7). Quiroz escribe «de Londres», pero se trata de un cargo de la Corona.
