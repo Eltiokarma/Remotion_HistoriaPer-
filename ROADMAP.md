@@ -459,7 +459,7 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Entregable: historia/laboratorio/muestras/16-animatic-novoa/ (código, README, INFORME, resultados/hoja.jpg y render-*.json); MP4 fuera de git en laboratorio/out/16-animatic-novoa/
   - Depende de: `e2-storyboard-adaptado`, `e2-narracion`
   - Prevista: — · Real: 2026-11-20 → 2026-11-21
-  - Tiempo: H ¿? · A ¿? · R 529.6 s en contenedor · tokens ¿?
+  - Tiempo: H ¿? · A ¿? · R 874.8 s en contenedor · tokens ¿?
   - Evidencia: [16-animatic-novoa/INFORME.md](historia/laboratorio/muestras/16-animatic-novoa/INFORME.md) · [resultados/hoja.jpg](historia/laboratorio/muestras/16-animatic-novoa/resultados/hoja.jpg) · [resultados/versiones-D-E6.jpg](historia/laboratorio/muestras/16-animatic-novoa/resultados/versiones-D-E6.jpg) · [resultados/render-E6.json](historia/laboratorio/muestras/16-animatic-novoa/resultados/render-E6.json) · [resultados/render-F.json](historia/laboratorio/muestras/16-animatic-novoa/resultados/render-F.json)
 - [x] **Tres papeles distintos para la escena 3 del 0·2 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT** `e2-folios-s03` — ✅ hecho
   - Entregable: historia/videos/002-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md; imágenes obj-13 a obj-15 en la galería (fuera de git)
