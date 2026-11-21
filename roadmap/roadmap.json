@@ -1656,12 +1656,12 @@
         "inicio": "2026-11-21",
         "fin": null
       },
-      "bloqueo": "Espera la aprobación de Gerson: partir el 0·3 en dos, la estructura de cada episodio y el puente del 0·1. Después se escribe la voz y el Escribano la revisa completa.",
+      "bloqueo": "Gerson decidió partir el 0·3 y usar el grabado de 1855 (21 de noviembre de 2026). Falta que apruebe la estructura de cada episodio y el puente del 0·1; después se escribe la voz y el Escribano la revisa completa.",
       "evidencia": [
         "historia/videos/arco-estructura.md",
         "historia/videos/003-la-deuda-defraudada/diseno/expediente.md",
         "historia/videos/002-saqueo-patriota/diseno/expediente.md",
-        "historia/videos/000-quiroz/diseno/expediente-0-4.md"
+        "historia/videos/000-quiroz/diseno/expediente-medir.md"
       ],
       "tiempo": {
         "humano_min": null,
