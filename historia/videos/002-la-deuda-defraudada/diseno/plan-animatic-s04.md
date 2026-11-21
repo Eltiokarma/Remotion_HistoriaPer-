@@ -88,6 +88,6 @@ Lo demás ya está en la galería:
 
 ## [VERIFICAR] que siguen abiertos
 
-- El cargo de Mendiburu en Londres. La Wikipedia en español dice «en 1852 viajó a Inglaterra como ministro plenipotenciario»: es una fuente secundaria. Hasta confirmarlo en Q, la etiqueta dice solo «Mendiburu · Londres».
+- ~~El cargo de Mendiburu en Londres~~ **Resuelto:** Q, p. 179, «En 1853, el presidente Echenique envió a Manuel de Mendiburu como ministro plenipotenciario a Londres». La presentación dice «ministro plenipotenciario en Londres, 1853».
 - Si el 6 % es anual (no se rotula).
 - La fecha de caída de Echenique (no se rotula día).

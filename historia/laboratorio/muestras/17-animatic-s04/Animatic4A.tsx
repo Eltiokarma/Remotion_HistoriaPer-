@@ -38,7 +38,7 @@ const P = {
   estado: 17.66, diferencia: 20.98, forma: 42.96, nombrando: 45.3, robo: 47.4,
 };
 
-const MENDIBURU: Presentacion = { persona: 'mendiburu', nombre: 'MANUEL DE MENDIBURU', rol: 'en Londres', t0: P.manuel - 0.1 };
+const MENDIBURU: Presentacion = { persona: 'mendiburu', nombre: 'MANUEL DE MENDIBURU', rol: 'ministro plenipotenciario en Londres, 1853 (Q, p. 179)', t0: P.manuel - 0.1 };
 
 // línea de 1852 y sus dos plazos
 const L0 = 140, L1 = 1180, LY = 930;

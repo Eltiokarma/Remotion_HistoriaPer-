@@ -260,7 +260,7 @@ Pendiente de aprobación de Gerson.
 ## Pendientes `[VERIFICAR]`
 
 - Si el 6 % de los vales es anual (Q, pp. 180–181, n. 143).
-- Nombre completo y cargo de Mendiburu en Londres, y el año de la conversión (la voz no da el año).
+- ~~Nombre completo y cargo de Mendiburu en Londres~~ **Resuelto el 21 de noviembre de 2026** con Q, p. 179 (página impresa): «En 1853, el presidente Echenique envió a Manuel de Mendiburu como ministro plenipotenciario a Londres». Queda abierto el año exacto de cada contrato de conversión (la voz no da el año).
 - Fecha en que Echenique asumió la presidencia (abril de 1851, de memoria) y la caída de 1855 (la junta se constituyó en febrero de 1855, según U).
 - Si las palabras sobre los «agiotistas» son de las cartas de Elías o una paráfrasis de Quiroz: por eso la voz dice «según Quiroz, sostuvo» y no usa comillas.
 - La formulación sobre los trabajadores chinos («trabajo forzoso») contra B, prólogo, pp. 10–11, que habla de condiciones coercitivas.
