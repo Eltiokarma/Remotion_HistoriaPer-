@@ -1,6 +1,6 @@
 # Fuentes del episodio 4 · El lavado (1852–1871)
 
-Borrador del Escribidor, 21 de noviembre de 2026, para el Escribano. Acompaña a [guion.md](guion.md).
+Borrador del Escribidor, 21 de noviembre de 2026, revisado por el Escribano el mismo día (ver el acta al final de `guion.md`). Acompaña a [guion.md](guion.md).
 
 **Cómo se trabajó.** Los datos salen del expediente del 0·3 (`../003-la-deuda-defraudada/diseno/expediente.md`), de la estructura aprobada (`../arco-estructura.md`, «Ep. 4 · El lavado») y de la versión corregida por el Escribano de `../003-la-deuda-defraudada/diseno/propuesta-s04-conversion.md`. Las citas textuales y las páginas que no estaban en el expediente se cotejaron el 21 de noviembre de 2026 contra el texto extraído de Q (la página impresa aparece en el texto como una línea sola) y de V. No se consultaron por separado las fuentes primarias que Quiroz cita en sus notas (cartas, despachos, *El Peruano*, informes de la junta).
 
@@ -11,7 +11,7 @@ Convenciones, como en el expediente: «…» es cita textual; [sic] marca la err
 - **Q.** Alfonso W. Quiroz, *Historia de la corrupción en el Perú*, IEP / IDL, 2013. Páginas impresas. Ficha de lectura: [`bibliografia/quiroz-2013.md`](../../bibliografia/quiroz-2013.md). Reproducción de la primera edición usada para cotejos anteriores: ver `../003-la-deuda-defraudada/fuentes.md`.
 - **V.** Catalina Vizcarra, «Guano, compromisos creíbles y el pago de la deuda externa peruana del siglo XIX», *Economía* (PUCP), vol. XXXIV, n.º 67, 2011, pp. 9–39. Página impresa = página del PDF + 8. Datos completos en `../003-la-deuda-defraudada/fuentes.md`, sección «V · Catalina Vizcarra».
 - **U.** César Antonio Ugarte, *Bosquejo de la historia económica del Perú*, 1926 (reproducción del BCRP). Solo para la cautela sobre la responsabilidad penal en la ley de 1857. Se consultó el pasaje indexado, no el PDF completo (ver `../003-la-deuda-defraudada/fuentes.md`, sección U). [VERIFICAR la página.]
-- **Witt.** Heinrich Witt, *Diario y observaciones sobre el Perú*. Solo a través de Q (p. 176 y n. 129; p. 190, n. 1). No se abrió el diario.
+- **Witt.** Heinrich Witt, *Diario y observaciones sobre el Perú*. Solo a través de Q (p. 176 y n. 129; p. 191, n. 1). No se abrió el diario.
 
 ## Datos por escena
 
@@ -29,7 +29,8 @@ Convenciones, como en el expediente: «…» es cita textual; [sic] marca la err
 | Dato | Dónde | Cita o nota |
 |---|---|---|
 | Carta de Echenique a Murrieta, 10 de septiembre de 1852 | Q, n. 139 | «Echenique a Sres. Murrieta, Lima, 10 de septiembre de 1852, en Colección Mendiburu, Epistolario, MEN 441, n.° 2, AHRA» |
-| La nota al margen | Q, n. 139 | «Una nota manuscrita al margen de esta carta de recomendación dice: "Echenique me recomienda a los Murrieta—no resa [sic] esto en las memorias"». Q no dice quién la escribió [VERIFICAR] |
+| La nota al margen | Q, n. 139 | «Una nota manuscrita al margen de esta carta de recomendación dice: "Echenique me recomienda a los Murrieta—no resa [sic] esto en las memorias"». Q no dice quién la escribió. Que sea de Mendiburu es inferencia nuestra [INF]: va en primera persona, la carta está en su colección y él dejó unas «Memorias» (siguiente fila). La voz dice «al parecer» |
+| Mendiburu dejó unas «Memorias» inéditas | Q, n. 143 | «Mendiburu, Manuel de. "Memorias", versión mecanografiada inédita en la biblioteca privada de Félix Denegri Luna, pp. 589-591» |
 | Mendiburu, ministro de Hacienda en 1852 | Q, n. 121 | Las cartas de La Fuente van dirigidas al «ministro de Hacienda Mendiburu» (7 de enero y 3 de junio de 1852) |
 | Mendiburu, ministro plenipotenciario en Londres, 1853, y sus dos tareas | Q, p. 179 | «En 1853, el presidente Echenique envió a Manuel de Mendiburu como ministro plenipotenciario a Londres… Mendiburu tenía como principales tareas la renegociación del arreglo de la deuda de 1849, así como la contratación de la conversión de una parte importante de la deuda interna consolidada en nueva deuda externa» |
 | Préstamos de 1822 (1,2 millones de libras) y 1825 (616 000 libras); moratoria de 1826 | V, p. 11; Q, pp. 136–139 | Del Ep. 2; en el mapa del animatic |
@@ -37,7 +38,7 @@ Convenciones, como en el expediente: «…» es cita textual; [sic] marca la err
 | Arreglo del 31 de enero de 1849; la mitad del guano vendido en Gran Bretaña | V, p. 26 | Rótulo del animatic: `50 % → BONISTAS DE LONDRES (VIZCARRA, P. 26)` |
 | Bonos de 1849 al 4 % | Q, p. 178 | «nuevos bonos de la deuda que rendían debidamente un interés anual de 4 por ciento» |
 | Prospecto de Murrieta, 26 de febrero de 1853 | V, p. 24 | «El acuerdo se alcanzó a inicios de 1853 y el prospecto de la emisión de nuevos bonos fue publicitado el 26 de febrero. El préstamo redimía los bonos activos de 1849…» |
-| «ministro plenipotenciario: el enviado con poder para negociar» | — | Definición nuestra, no de la ficha [VERIFICAR con el Escribano] |
+| «ministro plenipotenciario: el enviado con poder para negociar» | — | Glosa de diccionario, no dato histórico (DLE: agente diplomático de rango inmediatamente inferior al de embajador; de memoria) |
 
 ### ESC 2 · El lavado
 
@@ -46,12 +47,13 @@ Convenciones, como en el expediente: «…» es cita textual; [sic] marca la err
 | Hegan, agosto de 1852, dos millones de pesos en vales | Q, p. 180 | «Otra conversión de dos millones de pesos en vales había sido contratada antes, en agosto de 1852, con el contratista Joseph Hegan, quien financió el proyecto del ferrocarril Tacna-Arica con esta especulación altamente rentable» |
 | Bonos adelantados en Londres; 500 000 en vales al principio | Q, n. 143 | «El gobierno peruano le adelantó a Hegan dos millones de pesos en bonos de la deuda externa con un interés de 4,5 por ciento, en Londres, en tanto que Hegan inicialmente depositaría en Lima solamente 500.000 en vales y el resto a lo largo de dos años» |
 | Hegan quiso vender sus derechos de construcción | Q, n. 143 | «José Hegan & Co. contempló la posibilidad de vender sus derechos de construcción antes incluso de iniciar las obras del ferrocarril» |
+| Montané, de París | V, Tabla 1, p. 14 | «Montané (Paris)», mayo de 1853, 800 000 libras; Uribarren, 1 800 000. Q no da la sede de Montané |
 | Uribarren (París) y Montané; quién firmó cada contrato; montos | Q, p. 180 | «Uribarren et Cie. de París (firmado por Mendiburu en Londres por hasta seis millones de pesos en vales) y Montané et Cie. (firmado en Lima por tres millones de pesos en vales)» |
 | Los dos contratos, en mayo de 1853 | V, Tabla 1, p. 14 | Q no los fecha. La voz dice «en mil ochocientos cincuenta y tres» |
 | Montané, socio de Gibbs | V, p. 26, n. 42 | «Montané fue un socio principal de la Casa Gibbs en el comercio del guano en los años cuarenta» |
 | «cerca del 46 por ciento… silenciosamente convertida» | Q, p. 180 | La voz: «cerca de la mitad», atribuido. [VERIFICAR si incluye a Hegan: 9 / 24 = 37,5 %; 11 / 24 = 45,8 % (recálculo)] |
 | Iturregui, 1827 | Q, p. 141 | «propuso, primero, el proyecto poco ortodoxo de comprar en secreto los depreciados bonos peruanos». El enlace con la conversión es nuestro [INF] |
-| Vale ≈ 40 %, bono casi a la par | Q, n. 143 | «los nuevos bonos pronto adquirieron un valor de mercado casi a la par, en tanto que los desacreditados vales solamente alcanzaban alrededor del 40 por ciento de su valor nominal». «≈ 2,5 veces» es recálculo nuestro (100 / 40) [INF] |
+| Vale ≈ 40 %, bono casi a la par | Q, n. 143 | «los nuevos bonos pronto adquirieron un valor de mercado casi a la par, en tanto que los desacreditados vales solamente alcanzaban alrededor del 40 por ciento de su valor nominal». «≈ 2,5 veces» es recálculo nuestro (100 / 40) [INF]. La voz dice ahora «por cada peso escrito, un bono valía en el mercado más del doble que un vale», que compara precios y no supone un canje de uno a uno |
 | Las casas acumularon vales antes de firmar | Q, p. 180 | «Estas compañías habían acumulado vales antes de la firma de sus contratos y, en consecuencia, se beneficiaron con el alza repentina en la cotización de la deuda convertida» |
 | 6 % y 4,5 % | Q, p. 180 | «vales de consolidación nacionales, que ganaban un interés de 6 por ciento, por nuevos bonos de la deuda externa con un interés de 4,5 por ciento». Q no dice si el 6 % es anual |
 | Comprometer el crédito; impedir investigar; «lavar» | Q, p. 181 | «En esencia, estas maniobras de conversión se diseñaron para "lavar" instrumentos financieros manchados por su origen corrupto durante la consolidación. Al comprometer el crédito externo peruano para honrar una deuda interna creada en gran parte mediante la deshonestidad administrativa, estas conversiones beneficiaban a especuladores de vales inescrupulosos y, al mismo tiempo, prevenían futuras investigaciones y esfuerzos oficiales para invalidar arreglos tan costosos para los recursos públicos» |
@@ -65,12 +67,14 @@ Convenciones, como en el expediente: «…» es cita textual; [sic] marca la err
 | La pelea con Echenique y Torrico como causa | Q, p. 171 | «Este flagrante conflicto con Echenique y Torrico llevó a Elías a denunciar la naturaleza corrupta del proceso de consolidación» |
 | El guano finito y la conversión (en pantalla) | Q, p. 171 | Paráfrasis de Q: «advertía contra el manejo desordenado de las finanzas públicas, la naturaleza finita de los depósitos de guano y sus rentas, el escandaloso manejo de la deuda pública interna y su conversión en deuda externa» |
 | Los «agiotistas» | Q, p. 172 | Paráfrasis de Q, sin comillas: «la consolidación no beneficiaba a los demandantes originales sino, más bien, a los agiotistas». No se cita como palabra de Elías |
-| Herederos de Bolívar, un millón, sobornos | Q, p. 172 | «la donación de un millón de pesos a los herederos de Bolívar, tramitada mediante sobornos por Leocadio Guzmán, el ministro venezolano en Lima». [VERIFICAR] si es el mismo millón con que «un Congreso servil recompensó a Bolívar en 1826» (Q, p. 133; Ep. 2) y la frase trunca de la p. 176 sobre el pago de 1853 |
+| Herederos de Bolívar, un millón, sobornos | Q, p. 172 | «la donación de un millón de pesos a los herederos de Bolívar, tramitada mediante sobornos por Leocadio Guzmán, el ministro venezolano en Lima». La voz dice «la donación», como Q. **El libro no dice que sea el mismo dinero:** ver las dos filas siguientes |
+| 1826: «más de un millón» a Bolívar (en pantalla) | Q, p. 133 | «un Congreso servil recompensó a Bolívar en 1826 con más de un millón de pesos» |
+| 1853: Cotes cobra lo que el Perú «le debía a Bolívar» (en pantalla) | Q, p. 176 y n. 128 | «…Manuel María Cotes, primo político de Echenique por recibir en 1853 el cuantioso pago que el Perú le debía a Bolívar» (a la frase le falta el verbo en la página impresa; no es un corte de la extracción). N. 128: «Como agente del gobierno venezolano, Cotes recibió, en 1853, cuatro libranzas de Gibbs & Co., en Londres, por un total de 555.000 pesos». Q no dice que sea el millón de los herederos ni el de 1826 |
 | Montemar y Aparicio (en pantalla) | Q, p. 172 | Entre los expedientes que denunció Elías |
 | «confirman el grueso de las denuncias» | Q, p. 172 | «El estudio independiente de la documentación oficial de la consolidación y las averiguaciones subsiguientes confirman el grueso de las denuncias hechas por Elías» |
 | El gobierno no procesó a nadie | Q, p. 172 | «No obstante las obvias evidencias, el gobierno no hizo nada para procesar a los involucrados» |
 | Prisión y revolución | Q, p. 172 | «Elías fue apresado a poco de la publicación de sus cartas; después de ser liberado, encabezó un movimiento revolucionario para derrocar a Echenique» |
-| Casós y Elías: hasta 2 millones (en pantalla, atribuido) | Q, n. 126 | «También se sospechaba de que Echenique había recibido indirectamente hasta dos millones de pesos», según Casós y Elías |
+| Casós y Elías: hasta 2 millones (en pantalla, atribuido) | Q, n. 126 | «También se sospechaba de que Echenique había recibido indirectamente hasta dos millones de pesos», según Casós y Elías. La n. 126 no los llama «enemigos políticos»: ese rótulo salió |
 | Comisiones de Elías | Q, pp. 170–171 | Auspiciaba expedientes «con miras a obtener jugosas comisiones»; Novoa «no fue la única operación» |
 | Contrato del carguío, 1849, revocado | Q, p. 162 | «el contrato exclusivo para cargar el guano, actividad para la que Elías empleaba una fuerza laboral conformada por endeudados culí, esclavos y convictos… Una vez en la presidencia, Echenique revocó los contratos oficiales otorgados a Elías» |
 | Londres: deudas nuevas, «pago a aliados políticos» | V, p. 31 | «Esa conversión fue inesperada y altamente controversial, y fue considerada por muchos como un pago a aliados políticos domésticos» |
@@ -104,7 +108,7 @@ Convenciones, como en el expediente: «…» es cita textual; [sic] marca la err
 | Ley del 29 de diciembre de 1856 | Q, p. 183 | «se suspendió del servicio de la deuda a los vales de la deuda interna que tuvieron su origen en reclamos fraudulentos, ilegales y exagerados. Además, se detuvo temporalmente la conversión de deuda interna en externa» |
 | Juicios y fugas | Q, p. 183 | «Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu». Q no da resultados de los juicios |
 | El billete contra la obligación del Estado | Q, pp. 183–184 | Los tenedores: «similar a un billete sujeto a endose»; la Junta y la Dirección de Crédito Nacional: los vales «no perdían su condición original de obligaciones estatales y, en cuanto tales, estaban sujetos a una anulación legal debido al fraude o la corrupción» |
-| Diplomáticos, barcos, Vivanco | Q, pp. 183–184 | Peticiones «encabezados por los más poderosos comerciantes y financistas… así como por los representantes diplomáticos de Gran Bretaña y Francia»; las islas amenazadas «por navíos rebeldes, parciales a Vivanco, así como por barcos de guerra ingleses y franceses, prestos a intervenir». «Rondaban» viene del 0·3 aprobado [VERIFICAR con el Escribano] |
+| Diplomáticos, barcos, Vivanco | Q, pp. 183–184 | Peticiones «encabezados por los más poderosos comerciantes y financistas… así como por los representantes diplomáticos de Gran Bretaña y Francia»; las islas amenazadas «por navíos rebeldes, parciales a Vivanco, así como por barcos de guerra ingleses y franceses, prestos a intervenir». «Rondaban» salió (Escribano): los que amenazaban las islas eran los navíos de Vivanco; los extranjeros estaban «prestos a intervenir». La voz: «sus barcos amenazaban las islas del guano. Barcos de guerra ingleses y franceses estaban listos para intervenir» |
 | Huet y Sulivan (en pantalla) | Q, pp. 184–185 | «rehusaron su apoyo si no se reconocía antes la validez y los intereses atrasados de todos los vales de la consolidación convertidos y emitidos por el gobierno de Echenique» |
 | «probablemente el único» | Q, p. 185 | «el arreglo propuesto por los extranjeros era probablemente el único que Castilla podía contemplar para lograr mantenerse en el poder» |
 | Tabla rasa | Q, p. 185 | «Esta ley de "tabla rasa" absolvía, en efecto, a los especuladores y funcionarios que se beneficiaron de los abusos de la consolidación y conversión» |
@@ -123,7 +127,7 @@ Convenciones, como en el expediente: «…» es cita textual; [sic] marca la err
 | Elías: 1858 y 1867 (en pantalla) | Q, p. 187 | «Tras un fallido intento de postular a la presidencia en 1858, se retiró de la política hasta su muerte acaecida en 1867» |
 | Ninguna condena conocida | Q, p. 183 | Q no da nombres de condenados ni resultados. «No sabemos de ninguna condena» es nuestro, y se dice como nuestro |
 | La prueba histórica | Q, p. 43 | «El análisis histórico de la corrupción no debe asumir, por tanto, el papel de jueces anacrónicos del pasado. La prueba judicial es de naturaleza distinta a la histórica, que corresponde más al ámbito de la probabilidad que de la certeza absoluta. La falta de sentencias condenatorias no implica que no haya habido corrupción…» |
-| Witt, 20 de noviembre de 1871 | Q, p. 190 | «Se creía que bajo el gobierno de Echenique en tiempos de la Consolidación habían alcanzado su punto más alto, pero se engañaban enormemente quienes así lo pensaron; estos delitos nunca acecharon con mayor descaro desvergonzado que en el periodo actual» |
+| Witt, 20 de noviembre de 1871 | Q, p. 191 y n. 1 (epígrafe del cap. 3; la p. 190 está en blanco) | «Se creía que bajo el gobierno de Echenique en tiempos de la Consolidación habían alcanzado su punto más alto, pero se engañaban enormemente quienes así lo pensaron; estos delitos nunca acecharon con mayor descaro desvergonzado que en el periodo actual» |
 
 ### ESC 7 · Los papeles y el viejo consolidado
 
@@ -131,7 +135,7 @@ Convenciones, como en el expediente: «…» es cita textual; [sic] marca la err
 |---|---|---|
 | Años cuarenta, 25 millones; años cincuenta, 50 | cuadro A.3, p. 546 | Millones de pesos (1 peso = 1 dólar, nota del cuadro). Incluye la inversión que no llegó: 20 de los 50 |
 | El doble; cinco millones al año | Q, pp. 188–189 | «Un alza en el costo total estimado de la corrupción, que suma un promedio anual de cinco millones de pesos, tuvo lugar en la década de 1850 (duplicando el costo total del decenio de 1840)» |
-| 63 % del gasto | Q, p. 189; cuadro A.4, p. 548 | «los niveles más altos como porcentaje del gasto (63 por ciento) y del PBI (4,3 por ciento) se alcanzaron en el decenio de 1850». Recálculo: 5 / 8 = 62,5 %. La voz dice «más de la mitad» |
+| 63 % del gasto | Q, p. 189; cuadro A.4, p. 548 | «los niveles más altos como porcentaje del gasto (63 por ciento) y del PBI (4,3 por ciento) se alcanzaron en el decenio de 1850». Cuadro A.4, 1850–1859: gasto 8,0, costo de corrupción 5,0 (el A.3 entre diez), nivel 63 %. Recálculo: 5 / 8 = 62,5 %. Es la misma serie que el «doble» del A.3: no se mezclan. La voz dice «más de la mitad» |
 | «para evitar dejar huellas» | Q, p. 538 | «tales transacciones son típicamente encubiertas y se ejecutan precisamente para evitar dejar huellas en la documentación oficial» |
 | Las fuentes que sí existen | Q, p. 41 | «los archivos contienen una serie de rastros… (informes publicados e inéditos…, investigaciones parlamentarias, juicios, registros notariales, correspondencia oficial y privada, memorias, diarios, panfletos, informes en periódicos y revistas)» |
 | Contrato Dreyfus: París, 5 de julio de 1869 | Q, p. 207 | Firmado por los comisionados Juan Martín Echenique y Toribio Sanz, «junto con un acuerdo complementario secreto» |
@@ -148,10 +152,10 @@ Convenciones, como en el expediente: «…» es cita textual; [sic] marca la err
 | El arreglo de 1849 | Ep. 2, ESC 9 | ESC 1, en tres frases y en el mapa |
 | Montané, socio de Gibbs | Ep. 2, ESC 8 | ESC 2 |
 | Iturregui, 1827 | Ep. 2, ESC 5 | ESC 2 |
-| El millón de Bolívar | Ep. 2, ESC 3 | ESC 3 [VERIFICAR que sea el mismo] |
+| El millón de Bolívar | Ep. 2, ESC 3 | ESC 3: en la voz, la donación a los herederos; en la pantalla, 1826 y 1853 juntos, sin decir que son el mismo dinero (Q no lo dice) |
 | Elías, intermediario de Novoa | Ep. 3, ESC 3 | ESC 3 y ESC 4 |
 | Gibbs | Ep. 2, ESC 6 y 8 | ESC 6 |
-| Heinrich Witt | Ep. 2, ESC 6 | ESC 6 (1871) |
+| Heinrich Witt | Ep. 2, ESC 6 | ESC 6 (1871, p. 191) |
 | Dreyfus, 1869 | — (siembra) | ESC 7 → tramo IV |
 
 ## Imágenes y licencias
@@ -172,16 +176,16 @@ Convenciones, como en el expediente: «…» es cita textual; [sic] marca la err
 
 ## Pendientes [VERIFICAR]
 
-Los mismos de `guion.md`, en una lista:
+Los mismos de `guion.md`, en una lista. Tachados, los que resolvió el Escribano el 21 de noviembre de 2026:
 
 1. Si el «cerca del 46 %» (Q, p. 180) incluye a Hegan.
 2. Que el canje fuera de uno a uno por el valor escrito (documentado solo para Hegan, n. 143). De eso depende el rótulo `≈ 2,5 VECES MÁS`.
-3. Quién escribió la nota al margen de la carta a Murrieta (Q, n. 139) y qué quiere decir «no resa esto en las memorias».
-4. Si el millón de los herederos de Bolívar (Q, p. 172) es el mismo de 1826 (Ep. 2), y la frase trunca de la p. 176 sobre el pago de 1853.
+3. ~~Quién escribió la nota al margen~~: Q no lo dice; inferencia marcada [INF] (Mendiburu). Queda por confirmar en el DLE el sentido de *rezar* («dicho de un escrito: decir»).
+4. ~~El millón de Bolívar~~: el libro no lo identifica; la p. 176 está completa (le falta el verbo en el original).
 5. La fecha de la caída de Echenique (comienzos de 1855, de memoria; la voz dice solo el año) y los años de la guerra civil.
 6. La página de U sobre la responsabilidad penal.
-7. «Rondaban» frente a «prestos a intervenir» (Q, p. 184).
-8. La definición de ministro plenipotenciario, que es un dato agregado.
+7. ~~«Rondaban»~~: salió.
+8. ~~Ministro plenipotenciario~~: glosa de diccionario.
 9. La licencia del retrato de Mendiburu fuera de EE. UU. y la etiqueta de EE. UU. del de Elías.
 10. Las condiciones de la BNP para copias de los grabados en alta resolución.
-11. Que «más de la mitad de lo que gastaba el Estado» (63 %, cuadro A.4) no mezcle series con el «doble» del cuadro A.3. Los dos usan la misma base de cinco millones al año (p. 189), pero lo confirma el Escribano.
+11. ~~A.3 y A.4~~: la misma serie (el A.4 toma su costo del A.3 entre diez).

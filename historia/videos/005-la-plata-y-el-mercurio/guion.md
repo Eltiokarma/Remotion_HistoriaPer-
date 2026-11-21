@@ -4,10 +4,10 @@
 **Formato:** 100 % Remotion · 1920×1080 · 30 fps
 **Pregunta central:** si los que debían corregir el abuso eran los que abusaban, ¿quién podía pararlo? Sale de la frase de Ulloa y Juan (Q, p. 72). Se abre en el gancho y se responde en la ESC 8, con la frase de Quiroz: «la corrupción profundamente arraigada venció» (p. 126).
 **Palabra del episodio:** *premio*. Lo que se llevaba el virrey, «su premio» (Q, p. 122), y lo que no recibía el honesto: Aponte se retira sin «premio» alguno (p. 78). Va quieta, a pantalla completa, en la ESC 2.
-**Duración estimada:** unos 14 min 25 s. Son 1 933 palabras de voz a 2,6 palabras por segundo (12 min 23 s), más 124 s de pausas y silencio escritos, sin contar la tarjeta de cierre. Las cifras dichas en palabras pesan en la cuenta: «mil setecientos sesenta y uno» son cinco palabras. La estructura estimaba unos 13 min (ver Decisiones, n.º 17). Se mide de nuevo con la voz provisional.
-**Estado:** borrador del Escribidor, para el Escribano. Escrito el 21 de noviembre de 2026 sobre la estructura versión 2 (`../arco-estructura.md`, «Ep. 1») y el expediente `../000-quiroz/diseno/expediente-ep1-colonia.md`, cotejado con el texto del libro. Cada dato y su página están en [fuentes.md](fuentes.md).
+**Duración estimada:** unos 12 min 30 s, más la tarjeta y el tema final. Son 1988 palabras de voz a 3,2 palabras por segundo (10 min 21 s), más 126 s de pausas y silencio escritos. La tasa de 2,6 del borrador era lenta: la voz de la serie leyó 1719 palabras en 9 min 28 s con sus pausas (unas 3,0 palabras por segundo en total); con esa tasa saldría 10 min 57 s. La voz ocupa el 83 % del tiempo, por encima del 80 % de CLAUDE §8 (meta, 70 %): los recortes que propone el acta del Escribano bajan la voz a unas 1870 palabras. Se mide de nuevo con la voz provisional.
+**Estado:** borrador del Escribidor, revisado y corregido por el Escribano el 21 de noviembre de 2026 (acta al final). Pendiente de Gerson. Escrito el 21 de noviembre de 2026 sobre la estructura versión 2 (`../arco-estructura.md`, «Ep. 1») y el expediente `../000-quiroz/diseno/expediente-ep1-colonia.md`, cotejado con el texto del libro. Cada dato y su página están en [fuentes.md](fuentes.md).
 
-Las marcas entre corchetes son de dirección: `[PAUSA 1s]` va a la voz; `[SILENCIO 2s]` quita también la música, y va una sola vez. **Imagen** dice qué aparece con cada frase, con su peso de movimiento (`solemne`, `pesado`, `natural`, `ligero`, `tenso`) y el porqué de la cámara. Lo que está en pantalla no se lee en voz alta: nombres completos, cargos, fechas y cifras exactas van en las fichas.
+Las marcas entre corchetes son de dirección: `[PAUSA 1s]` va a la voz; `[SILENCIO 2s]` quita también la música, y va una sola vez. **Imagen** dice qué aparece con cada frase, con su peso de movimiento (`solemne`, `pesado`, `natural`, `ligero`, `tenso`) y el porqué de la cámara. Lo que está en pantalla no se lee en voz alta: nombres completos, cargos, fechas y cifras exactas van en las fichas. **Regla del Escribano para los rótulos «sin voz»** (los de esquina): entran solo en una pausa que alcance para leerlos (unos 17 caracteres por segundo) y no comparten la pantalla con otro texto nuevo; si la pausa no alcanza, el rótulo sale. Un foco a la vez.
 
 **Las cuatro secciones**, cada una cierra con un «entonces»:
 - I · El abuso tiene historia (ESC 0 a 2).
@@ -29,11 +29,11 @@ ESC 3   Un virrey llega endeudado y cobra la cuarta parte del contrabando.
 ESC 4   El corregidor exprime a los indios, y al final compra al juez.
         → PERO no solo se exprimía a los indios; también al rey, en su mina:
 ESC 5   El mercurio del rey terminaba haciendo plata sin impuesto para otros.
-        → POR ESO Ulloa empezó a encarcelar:
+        → POR ESO Ulloa llegó a encarcelar:
 ESC 6   Encarcela a los vigilantes de la mina, lo acusan de lo mismo, y pierde.
         → PERO la Corona igual quiso reformar:
 ESC 7   Reforma después de una rebelión, y los nuevos funcionarios hacen lo mismo.
-        → PERO a los que abusaban tampoco los castigó nadie:
+        → PERO a los que abusaban casi nunca los castigaron:
 ESC 8   Los juicios absolvían; la corrupción venció.
         → POR ESO Quiroz no buscó condenas: sacó la cuenta.
 ESC 9   Costaba el equivalente a entre tres y seis de cada diez pesos del gasto.
@@ -56,9 +56,9 @@ Cumple lo que siembra el puente del Prólogo: Huancavelica, 1758, Ulloa, «Inten
 **Cambio:** de «llega un gobierno nuevo» a «el saliente no entrega las cuentas, y en menos de seis años el acusado es el que llegó».
 
 **VO:**
-Huancavelica, noviembre de mil setecientos cincuenta y ocho. [PAUSA 0,8s] Antonio de Ulloa, marino y hombre de ciencia, llega a gobernar este pueblo y su mina, la única fuente importante de mercurio en América. [PAUSA 0,6s] Al mercurio le decían azogue, y sin él no se podía refinar la plata. [PAUSA 1,2s]
+Huancavelica, noviembre de mil setecientos cincuenta y ocho. [PAUSA 0,8s] Antonio de Ulloa, marino y hombre de ciencia, llega a gobernar este pueblo y su mina, la única fuente importante de mercurio en América. [PAUSA 0,6s] Al mercurio también se le llamaba azogue, y era fundamental para refinar la plata. [PAUSA 1,2s]
 
-Antes de él gobernaba un interino, y ese interino tenía que entregarle las cuentas. No se las entregó: ni las del tesoro, ni las de los mineros, ni las del mercurio. [PAUSA 1s]
+Hasta entonces mandaba un gobernador interino, es decir, provisional, y ese interino tenía que entregarle las cuentas. No se las entregó: ni las del tesoro, ni las de los mineros, ni las del mercurio. [PAUSA 1s]
 
 Según Ulloa, el interino había ganado por medios ilícitos más de treinta mil pesos al año. [PAUSA 0,8s] Un trabajador libre de la mina ganaba unos doscientos. [PAUSA 1,5s]
 
@@ -70,11 +70,11 @@ Si los que debían corregir el abuso eran los mismos que abusaban, ¿quién pod�
 - Abren las pruebas de imprenta del libro (gramática de la serie), en la página del capítulo 1. El corrector subraya en rojo `1750-1820`.
 - «Huancavelica»: zoom del mapa, de Sudamérica a los Andes centrales, `pesado`, porque una fecha sola no pesa (DIRECCION §2.7): la cámara baja desde el continente hasta un punto rojo. Ficha a máquina: `HUANCAVELICA · 4 DE NOVIEMBRE DE 1758 · ~3 600 M S. N. M.`. Al llegar, la cámara se queda quieta.
 - «Antonio de Ulloa»: su medallón, redibujado desde un retrato de dominio público [VERIFICAR], entra `solemne` y se queda. Ficha: `ANTONIO DE ULLOA (1716-1795) · GOBERNADOR Y SUPERINTENDENTE DE LA MINA`.
-- «mercurio»: una gota de mercurio cae sobre el mapa, se aplasta y vuelve (líquido, `impacto` 0,12, CLAUDE §4). Rótulo: `AZOGUE = MERCURIO`. Una flecha fina va de la gota a una barra de plata: `SIN MERCURIO NO SE REFINA LA PLATA`.
+- «mercurio»: una gota de mercurio cae sobre el mapa, se aplasta y vuelve (líquido, `impacto` 0,12, CLAUDE §4). Rótulo: `AZOGUE = MERCURIO`. Una flecha fina va de la gota a una barra de plata: `INSUMO FUNDAMENTAL PARA REFINAR LA PLATA`.
 - «un interino»: silueta sin rasgos (no hay retrato) con la ficha `PABLO DE LA VEGA Y BÁRCENA · GOBERNADOR INTERINO · 1755-1758`.
 - «No se las entregó»: tres libros de cuentas con lomo rotulado, `TESORERÍA`, `GREMIO DE MINEROS`, `AZOGUE`, llegan uno por uno al escritorio de Ulloa… y quedan como contornos vacíos. Brilla solo el que la voz nombra (DIRECCION §2.2).
 - «treinta mil pesos»: una columna de monedas sube `pesado` hasta `MÁS DE 30 000 PESOS AL AÑO · SEGÚN ULLOA`. «Según Ulloa» va al mismo tamaño que la cifra. Una ficha chica presenta la moneda: `PESO DE OCHO REALES`.
-- «doscientos»: al lado, una pila mínima, `TRABAJADOR LIBRE DE LA MINA · ~200 PESOS AL AÑO`. Después, entre las dos, dos referencias pequeñas y apagadas: `OFICIAL DE CAJA REAL · 400` y `OIDOR DE LIMA · 4 000 A 5 000`. El corrector traza una llave roja entre la columna de Vega y la del trabajador: `MÁS DE 150 VECES` (cálculo nuestro, en letra chica: `CÁLCULO: 30 000 ÷ 200`).
+- «doscientos»: al lado, una pila mínima, `TRABAJADOR LIBRE DE LA MINA · ~200 PESOS AL AÑO`. Después, entre las dos y de a una (cada una se lee en unos 2 s), dos referencias pequeñas y apagadas: `OFICIAL DE CAJA REAL · 400` y `OIDOR DE LIMA · 4 000 A 5 000`; si la pausa no alcanza para leerlas antes de que la voz siga, salen y queda solo la llave. El corrector traza una llave roja entre la columna de Vega y la del trabajador: `MÁS DE 150 VECES` (cálculo nuestro, en letra chica: `CÁLCULO: 30 000 ÷ 200`).
 - «intentó limpiar»: la gota de mercurio se limpia de polvo. «el acusado era él»: el medallón de Ulloa recibe el sello rojo `ACUSADO`, `tenso`, y la cámara se queda quieta 1,5 s sobre el sello.
 - La pregunta se escribe en la pizarra de tiza, quieta, una sola línea: `¿QUIÉN PODÍA PARARLO?`.
 
@@ -89,15 +89,15 @@ Si los que debían corregir el abuso eran los mismos que abusaban, ¿quién pod�
 **Cambio:** de «la colonia era un orden» a «dos marinos del rey escribieron que el abuso empezaba en los que debían corregirlo».
 
 **VO:**
-No era la primera vez que Ulloa denunciaba algo así. [PAUSA 0,6s] En mil setecientos treinta y cinco, el rey lo mandó a Quito con otro joven marino, Jorge Juan. [PAUSA 0,5s] Iban a medir la Tierra con científicos franceses, pero llevaban además una orden aparte: informar al rey sobre los lugares y su gente. [PAUSA 1,2s]
+No era la primera vez que Ulloa denunciaba algo así. [PAUSA 0,6s] En mil setecientos treinta y cinco, el rey lo mandó a Quito con otro joven marino, Jorge Juan. [PAUSA 0,5s] Iban a ayudar a unos científicos franceses a medir la forma de la Tierra. [PAUSA 0,4s] Pero llevaban además una orden aparte: informar al rey sobre los lugares y su gente. [PAUSA 1,2s]
 
 Años después, cuando volvían a España, los británicos capturaron el barco de Ulloa, y él alcanzó a echar al mar sus papeles secretos. [PAUSA 1,5s]
 
-En mil setecientos cuarenta y nueve escribieron un informe secreto para los ministros del rey. Hacia el final, lo dijeron en una línea: [PAUSA 0,5s] «Empieza el abuso del Perú desde aquellos que debieran corregirlo». [PAUSA 1,5s]
+Aun así, en mil setecientos cuarenta y nueve escribieron un informe secreto para los ministros del rey. Hacia el final, lo dijeron en una línea: [PAUSA 0,5s] «Empieza el abuso del Perú desde aquellos que debieran corregirlo». [PAUSA 1,5s]
 
 Hablaban del virrey, que gobernaba en nombre del rey, coludido con los grupos de poder de aquí. [PAUSA 0,6s] Para Quiroz, ese informe puede considerarse un texto fundador de la tradición anticorrupción. [PAUSA 1s]
 
-Y la palabra ya existía: un diccionario de esos años definía la corruptela como un abuso contra la ley. [PAUSA 1,5s]
+Y ya había una palabra para eso: un diccionario de la época definía la corruptela como una mala costumbre o un abuso contra la ley. [PAUSA 1,5s]
 
 **Imagen:**
 - «mil setecientos treinta y cinco»: línea de tiempo horizontal, la primera del episodio, que recorre `natural` de 1758 hacia atrás, a 1735; un tic por década. Ficha: `1735 · ENCARGO DEL REY FELIPE V`. Medallones de Ulloa y Jorge Juan [VERIFICAR retratos], con `ULLOA, 19 AÑOS · JUAN, 22 AÑOS`.
@@ -121,13 +121,13 @@ Y la palabra ya existía: un diccionario de esos años definía la corruptela co
 **Cambio:** de «el rey nombraba a sus funcionarios» a «el rey les vendía el cargo para pagar sus guerras».
 
 **VO:**
-Pero el abuso que denunciaban no había empezado con ellos. [PAUSA 0,5s] Según Ulloa y Juan, desde mil seiscientos treinta y tres el rey vendía los puestos de sus cajas reales en el Perú. [PAUSA 0,4s] Después vendió otros más altos, hasta el de juez. [PAUSA 0,6s] A eso se le llamaba un cargo venal: un cargo que se compraba. [PAUSA 1,2s]
+Pero el abuso que denunciaban venía de mucho antes. [PAUSA 0,5s] Según Ulloa y Juan, desde mil seiscientos treinta y tres el rey vendía en el Perú los puestos de su tesoro. [PAUSA 0,4s] Después vendió otros más altos, hasta el de juez. [PAUSA 0,4s] Los compradores eran sobre todo criollos ricos, nacidos aquí. [PAUSA 0,6s] A eso se le llamaba un cargo venal: un cargo que se compraba. [PAUSA 1,2s]
 
 Según Quiroz, el rey los vendía para pagar sus guerras en Europa sin cobrarles más impuestos a las élites de aquí. [PAUSA 1,2s]
 
-Se llegó a vender hasta el cargo de virrey: el conde de Cañete lo compró por doscientos cincuenta mil pesos. [PAUSA 1s] Según Quiroz, una carta anónima de esos años lo explicaba: el que compraba un cargo también vendía. [PAUSA 1s] La venta de cargos se abolió recién en mil ochocientos doce. [PAUSA 1,2s]
+Se llegó a vender hasta el cargo de virrey: el conde de Cañete lo compró por doscientos cincuenta mil pesos. [PAUSA 0,4s] Murió antes de llegar a Lima. [PAUSA 1s] Según Quiroz, una carta anónima de esos años lo explicaba: el que compraba un cargo también vendía. [PAUSA 1s] La venta de cargos se abolió recién en mil ochocientos doce. [PAUSA 1,2s]
 
-Quiroz le da un nombre a lo que el virrey ganaba ilegalmente desde su puesto: su premio. [PAUSA 2,5s]
+Para lo que el virrey ganaba ilegalmente desde su puesto, Quiroz usa una palabra: su premio. [PAUSA 2,5s]
 
 Entonces, el rey vendía los cargos, y el que pagaba por uno venía a sacar de él lo que había pagado. [PAUSA 2s]
 
@@ -136,11 +136,11 @@ Entonces, el rey vendía los cargos, y el que pagaba por uno venía a sacar de �
 - «otros más altos»: suben al mostrador dos fichas más, `CORREGIDOR · 1678` y `OIDOR (JUEZ DE LA AUDIENCIA) · 1687`. Cada una brilla al llegar; la anterior se apaga.
 - «cargo venal»: en la pizarra de tiza, `CARGO VENAL = CARGO QUE SE COMPRABA`. Queda escrito.
 - «sus guerras en Europa»: en el mapa, una flecha de monedas cruza el Atlántico del Perú a España, y de ahí a pequeños cañones en Europa. La cita en pantalla, más chica: «sufragar el costo apremiante de las guerras en Europa y evitar cobrar mayores impuestos a las élites locales».
-- «el conde de Cañete»: el sillón del virrey sube al mostrador con su precio, `250 000 PESOS · DÉCADA DE 1690`. Debajo, chico: `MURIÓ ANTES DE LLEGAR A LIMA`, y el sillón se queda vacío.
+- «el conde de Cañete»: el sillón del virrey sube al mostrador con su precio, `250 000 PESOS · DÉCADA DE 1690`. Con «murió antes de llegar», el sillón se queda vacío (la voz ya lo dice: no va rótulo).
 - «el que compraba un cargo también vendía»: frase escrita en la pizarra, sin comillas, con la referencia `CARTA ANÓNIMA · LIMA, 12 DE NOVIEMBRE DE 1660`.
 - «mil ochocientos doce»: el mostrador se cierra; la línea de tiempo salta hasta 1812, el extremo derecho, y se ve que la venta duró casi dos siglos.
 - **La palabra del episodio:** `premio`, a pantalla completa, quieta, durante la pausa de 2,5 s. Sobre la *o*, la gota de mercurio. Debajo, chico: `Q, P. 122`. Después, la palabra se encoge y se cuelga del sillón del virrey: es el piso de arriba de la pirámide.
-- «Entonces»: el mostrador, la llave, el sillón y la palabra quedan juntos, con la flecha `PAGA → RECUPERA` en rojo apagado.
+- «Entonces»: el mostrador, la llave, el sillón y la palabra quedan juntos, con la flecha `PAGA → RECUPERA` en rojo (es culpa, no pérdida: el rojo apagado queda para las pérdidas).
 
 **Sonido:** un martillo de remate en 1633 y otro en Cañete. Nada de música en la palabra del episodio: solo una nota sostenida que se apaga.
 
@@ -157,20 +157,20 @@ Es el «antes de Ulloa», y coincide con el pico de los cuadros (ESC 9).
 **VO:**
 Un ejemplo de antes de Ulloa. [PAUSA 0,4s] En mil setecientos siete llegó a Lima el virrey marqués de Castelldosrius. [PAUSA 0,5s] No compró el cargo: el rey se lo dio como recompensa. [PAUSA 0,5s] Pero llegaba, dice Quiroz, «fuertemente endeudado», y tal vez contaba con recuperar su fortuna en el Perú. [PAUSA 1,2s]
 
-Se asoció con comerciantes que metían mercancía de contrabando, contra un decreto del rey, en barcos franceses. [PAUSA 0,6s] De tres de esos barcos, con unos tres millones de pesos en mercancía, el virrey se quedó con la cuarta parte. [PAUSA 1,2s]
+Se asoció con comerciantes de alto rango, nacidos en España, que metían mercancía de contrabando, contra un decreto del rey, en barcos franceses. [PAUSA 0,6s] De un contrabando de unos tres millones de pesos en mercancía, el virrey se quedó con la cuarta parte. [PAUSA 1,2s]
 
-Lo denunciaron comerciantes rivales. [PAUSA 0,4s] En Madrid, un fiscal del Consejo de Indias calculó que los franceses habían sacado cerca de cien millones de pesos en diez años. [PAUSA 0,6s] Y sostuvo que el palacio del virrey se había convertido en un «burdel». [PAUSA 1,2s]
+Lo denunciaron comerciantes rivales. [PAUSA 0,4s] En Madrid, el fiscal del caso calculó que, en diez años, los franceses se habían llevado cerca de cien millones de pesos en plata. [PAUSA 0,6s] Y sostuvo que el palacio del virrey se había convertido en un «burdel». [PAUSA 1,2s]
 
-Castelldosrius fue separado del cargo, algo casi sin precedentes, y murió en Lima esperando su apelación. [PAUSA 1s]
+Castelldosrius fue separado del cargo, una sanción con pocos precedentes, y murió en Lima esperando su apelación. [PAUSA 1s]
 
 Pero, en las cuentas de Quiroz, lo del virrey era de las partes más chicas. Lo grueso se sacaba más abajo. [PAUSA 1,5s]
 
 **Imagen:**
 - «mil setecientos siete»: la línea de tiempo vuelve, `natural`, a 1707. Medallón de Castelldosrius [VERIFICAR retrato de dominio público; si no hay, silueta]. Ficha: `MARQUÉS DE CASTELLDOSRIUS · VIRREY 1707-1710 · PRIMER VIRREY BORBÓN`.
-- «como recompensa»: la ficha recibe un sello `1702 · RECOMPENSA POR SU EMBAJADA EN PARÍS`. No se pone precio: no compró el cargo.
+- «como recompensa»: la ficha recibe un sello `1702 · RECOMPENSA POR SU EMBAJADA ANTE LUIS XIV`. No se pone precio: no compró el cargo.
 - «fuertemente endeudado»: la cita textual, en rojo de corrector, sobre su ficha. La cautela «tal vez» va en pantalla con el mismo tamaño: `TAL VEZ CONTABA CON RECUPERAR SU FORTUNA · Q, P. 94`.
 - «contrabando»: en la pizarra, `CONTRABANDO = CONTRAVENIR UN BANDO O DECRETO`. Queda escrito.
-- «barcos franceses»: mapa de la costa con Pisco; tres barcos llegan `pesado`. Sobre ellos, `~3 MILLONES DE PESOS EN MERCANCÍA`. Un cuarto del rótulo se desprende y viaja en arco hasta el sillón del virrey: `25 %`. Es el premio en acción: se cuelga del sillón, debajo de la palabra.
+- «barcos franceses»: mapa de la costa con Pisco; tres barcos llegan `pesado` (el número de barcos va solo en pantalla: `3 BARCOS FRANCESES`). Sobre ellos, `~3 MILLONES DE PESOS EN MERCANCÍA`. Un cuarto del rótulo se desprende y viaja en arco hasta el sillón del virrey: `25 %`. Es el premio en acción: se cuelga del sillón, debajo de la palabra.
 - «comerciantes rivales»: ficha `FRANCISCO ESPINOSA DE LOS MONTEROS Y COMERCIANTES VASCOS · DISPUTA POR EL CONSULADO`. La denuncia es interesada, y la ficha lo dice: `UNA FACCIÓN RIVAL`.
 - «cien millones»: no se dibujan cien millones de monedas. Una sola barra de plata con la etiqueta `~100 MILLONES DE PESOS EN 10 AÑOS · SEGÚN EL FISCAL DEL CONSEJO, 1710`.
 - «burdel»: la palabra, entre comillas y con su atribución, `EL FISCAL AGUSTÍN JOSEPH DE LOS RÍOS`, sobre la silueta del palacio. Nada más; no se ilustra.
@@ -188,13 +188,13 @@ Pero, en las cuentas de Quiroz, lo del virrey era de las partes más chicas. Lo 
 **Cambio:** de «el cargo cuesta» a «el cargo se recupera exprimiendo a los indios, y al final se compra al juez».
 
 **VO:**
-Abajo estaba, por ejemplo, el corregidor, la autoridad de una provincia. [PAUSA 0,4s] Él cobraba el tributo, el pago anual que la ley les imponía a los indios varones adultos. [PAUSA 0,8s] Según Ulloa y Juan, lo cobraba también a los que la ley dejaba fuera. [PAUSA 0,5s] Y con ayuda de caciques y curas llevaba doble cuenta: reportaba menos indios y se quedaba con la diferencia. [PAUSA 1,5s]
+Abajo estaba, por ejemplo, el corregidor, la autoridad del rey en una provincia. [PAUSA 0,4s] Él cobraba el tributo, el pago anual que la ley les imponía a los indios varones adultos. [PAUSA 0,8s] Según Ulloa y Juan, lo cobraba también a los que la ley dejaba fuera. [PAUSA 0,5s] Y con ayuda de caciques y curas llevaba doble cuenta: reportaba menos indios y se quedaba con la diferencia. [PAUSA 1,5s]
 
 Además estaba el reparto: el corregidor obligaba a los indios a comprarle mercancías y mulas a precios exorbitantes. [PAUSA 0,6s] Las quejas contra los corregidores venían desde que se creó el cargo, en la década de mil quinientos sesenta. [PAUSA 1,2s]
 
 Y estaba la mita, el trabajo forzado de los indios en las minas. [PAUSA 0,5s] Ya en mil seiscientos veintidós se denunciaba que en Huancavelica los derrumbes mataban a muchos indios. [PAUSA 2s]
 
-El cronista indígena Guamán Poma lo había dibujado más de un siglo antes que Ulloa. [PAUSA 0,5s] Quiroz considera su obra el primer tratado contra la corrupción que maltrataba a los indios. [PAUSA 1,2s]
+Unos años antes, el cronista indígena Guamán Poma había dibujado los abusos de corregidores y curas contra los indios. [PAUSA 0,5s] Quiroz considera su obra el primer tratado contra la corrupción que causaba el maltrato a los indios. [PAUSA 1,2s]
 
 Al terminar su mandato, cada autoridad pasaba por un juicio de residencia, una revisión de lo que había hecho. [PAUSA 0,5s] Pero, según Ulloa y Juan, corregidores y virreyes simplemente sobornaban al juez para evitar el castigo. [PAUSA 1,2s]
 
@@ -205,7 +205,7 @@ Entonces, el ciclo tenía tres pasos: pagar por el cargo, recuperarlo desde abaj
 - «el corregidor»: ficha `CORREGIDOR · AUTORIDAD DE UNA PROVINCIA`. Pasa del mostrador de la ESC 2 al segundo piso de la pirámide.
 - «el tributo»: en la pizarra, `TRIBUTO = PAGO ANUAL DE LOS INDIOS VARONES ADULTOS · ENTRE 4 Y 9 PESOS`, y debajo, más chico, `EXENTOS: MENORES DE 18, MAYORES DE 55, CACIQUES…`.
 - «doble cuenta»: dos libros abiertos, uno al lado del otro, `natural`. En el de la izquierda, `INDIOS COBRADOS`, una columna larga de marcas; en el de la derecha, `INDIOS REPORTADOS AL REY`, una columna más corta. El corrector encierra en rojo la diferencia, que se desliza al bolsillo del corregidor. Sin cifras: el libro no las da.
-- «el reparto»: una mula y fardos de tela con etiquetas de precio que se inflan, `pesado`. Ficha `REPARTO = VENTA FORZADA DE MERCANCÍAS Y MULAS`. Con «década de mil quinientos sesenta», la línea de tiempo marca `1560s · PRIMERAS QUEJAS`.
+- «el reparto»: una mula y fardos de tela con etiquetas de precio que se inflan, `pesado`. Ficha `REPARTO = VENTA FORZADA DE MERCANCÍAS Y MULAS`. Con «década de mil quinientos sesenta», la línea de tiempo marca `DÉCADA DE 1560 · YA HAY QUEJAS`.
 - «la mita»: el corte de una galería de la mina, en grabado, con herramientas y una lámpara; los estribos de roca que sostienen el techo, dañados. Ficha `MITA = TRABAJO FORZADO EN LAS MINAS`. Con «mataban a muchos indios», la lámpara se apaga y la imagen se queda quieta durante la pausa de 2 s: no se pone ninguna cifra, porque el libro no la da. Ficha pequeña: `JUAN DE APONTE · MEMORIAL AL REY · HUAMANGA, 24 DE ABRIL DE 1622`.
 - «Guamán Poma»: la lámina del f. 495 de la *Nueva corónica y buen gobierno* [VERIFICAR la licencia de la reproducción], `solemne`, a media pantalla, con su leyenda transcrita: «Corregidor y encomendero tienen pendencias sobre los reales quien ha de llevar más». La cámara se acerca a las monedas del dibujo. Ficha `HACIA 1615 · BIBLIOTECA REAL, COPENHAGUE`.
 - «juicio de residencia»: en la pizarra, `JUICIO DE RESIDENCIA = REVISIÓN AL TERMINAR EL MANDATO`. Un juez con balanza; un sobre pasa por debajo de la mesa y la balanza se queda en su lugar. No se dibuja la cara de nadie.
@@ -223,13 +223,13 @@ Entonces, el ciclo tenía tres pasos: pagar por el cargo, recuperarlo desde abaj
 **Cambio:** de «la mina da plata al rey» a «el mercurio del rey hacía plata para los particulares».
 
 **VO:**
-Pero no solo se exprimía a los indios: también al rey, en su propia mina. [PAUSA 0,5s] El mercurio era un monopolio del rey: solo él podía comprarlo. [PAUSA 0,4s] Para asegurarlo, el tesoro real les adelantaba dinero a los mineros. [PAUSA 1s]
+Pero no solo se exprimía a los indios: también al rey, en su propia mina. [PAUSA 0,5s] El mercurio era un monopolio del rey: solo él podía comprarlo y repartirlo. [PAUSA 0,4s] Para asegurarse esa compra, el tesoro real les adelantaba dinero a los mineros. [PAUSA 1s]
 
 Según Ulloa, los mineros lo vendían por su cuenta a particulares, que lo usaban para hacer plata a escondidas. [PAUSA 1s]
 
-Por toda la plata se le pagaba al rey la quinta parte al fundirla en barras selladas: el quinto real. [PAUSA 0,6s] La que se escondía se llamaba plata piña: plata sin sellar y sin quintar. [PAUSA 0,6s] Con ella, los comerciantes de Lima pagaban el contrabando. [PAUSA 0,4s] Así el rey perdía dos veces: el quinto de la plata y el impuesto de la mercancía. [PAUSA 1,5s]
+Por toda la plata se le pagaba al rey la quinta parte al fundirla en barras selladas: el quinto real. [PAUSA 0,6s] La plata que no pasaba por esa fundición quedaba como plata piña: sin sellar y sin quintar. [PAUSA 0,6s] Con ella, los comerciantes de Lima pagaban el contrabando. [PAUSA 0,4s] Así el rey perdía dos veces: el quinto de la plata y el impuesto de la mercancía. [PAUSA 1,5s]
 
-Y según Ulloa, las deudas de los mineros se cobraron con años de descuido fraudulento. [PAUSA 0,5s] Algunos mineros sacaban mineral de la misma roca que sostenía la mina, y tapaban el hueco con desmonte. [PAUSA 1,5s]
+Y según Ulloa, las deudas de los mineros pasaron años sin cobrarse, por un descuido fraudulento. [PAUSA 0,5s] Algunos mineros sacaban mineral de la misma roca que sostenía la mina, y tapaban el hueco con desmonte. [PAUSA 1,5s]
 
 Entonces, el virrey cobraba su premio, el corregidor exprimía a los indios, y el mercurio del rey terminaba haciendo plata para otros. [PAUSA 2s]
 
@@ -242,7 +242,7 @@ Entonces, el virrey cobraba su premio, el corregidor exprimía a los indios, y e
 - «el quinto real»: en la pizarra, una barra sellada dividida en cinco partes; una se ilumina: `QUINTO REAL = 1/5 (20 %) PARA EL REY`. Al lado, el cono sin sello: `PLATA PIÑA = SIN SELLAR NI QUINTAR`.
 - «comerciantes de Lima»: el cono viaja hasta un barco de la ESC 3, que se lleva la plata y deja fardos. «perdía el quinto… y los impuestos»: dos casillas vacías en el libro del rey, `QUINTO REAL` y `ALCABALA`, que el corrector marca en rojo. El camino del mercurio queda entero a la vista: mina, almacén, desvío, horno, barco.
 - «descuido fraudulento»: el libro de deudas de los mineros, con las fechas que pasan sin que nadie cobre.
-- «sacaban mineral de la misma roca»: corte de la mina; un estribo de roca se adelgaza y el hueco se rellena con desmonte, `pesado`. Ficha `PERMISOS FALSIFICADOS · SEGÚN ULLOA`. En una esquina, sin voz: `LOS MINEROS DE LAS OBRAS ILEGALES ERAN YERNO Y CONCUÑADO DEL VEEDOR CAMPUZANO · Q, P. 86`.
+- «sacaban mineral de la misma roca»: corte de la mina; un estribo de roca se adelgaza y el hueco se rellena con desmonte, `pesado`. Ficha `PERMISOS FALSIFICADOS · SEGÚN ULLOA`. En la pausa que sigue, sin voz: `SEGÚN ULLOA, DOS MINEROS DE ESAS OBRAS ERAN YERNO Y CONCUÑADO DEL VEEDOR CAMPUZANO · Q, P. 86`.
 - En pantalla, sin voz, junto al libro del rey: la frase de Aponte, `1622: «LOS QUE TIENEN PUEDEN Y LOS POBRES MUEREN»`, y debajo, apagado, `SE RETIRÓ SIN «PREMIO» ALGUNO`: el otro sentido de la palabra del episodio.
 - «Entonces»: la pirámide del botín completa, cuatro pisos: `PREMIO DEL VIRREY` · `OTROS CARGOS` · `LA MINA (DEUDAS NO COBRADAS, DESCUIDO)` · `CONTRABANDO`. La cámara se abre `solemne` y se queda quieta durante la pausa.
 
@@ -259,21 +259,21 @@ Es el clímax del episodio y lleva el único silencio.
 **Cambio:** de «llega el honesto y gana el juicio» a «al honesto lo acusan de lo mismo, y pierde».
 
 **VO:**
-Por eso Ulloa empezó a encarcelar. [PAUSA 0,5s] En octubre de mil setecientos sesenta metió presos a los veedores, los encargados de vigilar la mina, por permitir que se explotara de forma peligrosa. [PAUSA 1,2s]
+Por eso Ulloa llegó a encarcelar. [PAUSA 0,5s] En octubre de mil setecientos sesenta metió presos a los veedores, los encargados de vigilar la mina. [PAUSA 0,3s] Los acusó de permitir que se explotara de forma peligrosa. [PAUSA 1,2s]
 
 Los presos tenían defensores con contactos en la corte del virrey. [PAUSA 0,4s] A fines de mil setecientos sesenta y uno, un juez de Lima llegó de visita, soltó a los presos y cortó su proceso. [PAUSA 1,2s]
 
 Después, el fiscal Diego de Holgado le abrió a Ulloa un juicio de residencia. [PAUSA 0,4s] Las primeras decisiones fueron a favor de Ulloa. [PAUSA 0,4s] Pero el nuevo virrey, Manuel de Amat, y Holgado abrieron nuevas investigaciones y lo acusaron de los mismos delitos que él había denunciado. [PAUSA 1,5s]
 
-Según Ulloa, Amat estaba furioso porque el gobernador se había negado a pagarle el soborno acostumbrado de diez mil pesos que cargaba ese puesto. [PAUSA 0,6s] Así se cobraba el premio del virrey. [PAUSA 1,5s]
+Según Ulloa, Amat estaba furioso porque Ulloa se negó a pagarle el soborno acostumbrado de ese puesto: diez mil pesos. [PAUSA 0,6s] Si Ulloa decía la verdad, así se cobraba el premio del virrey. [PAUSA 1,5s]
 
 Ulloa pidió una y otra vez que lo relevaran, y llamó a su gobierno «un purgatorio de continuos desabrimientos». [PAUSA 0,8s] En mil setecientos sesenta y cuatro dejó el Perú. [PAUSA 1s] Quiroz lo resume así: «Ulloa se enfrentó a un bastión de intereses corruptos, coludidos con las más altas autoridades coloniales, [PAUSA 0,6s] y perdió». [SILENCIO 2s]
 
-Ulloa le mandó a Amat una última carta, con los delitos que había dejado sin castigo. [PAUSA 0,5s] En venganza, Amat metió preso a Juan de Alasta, su fiador, el que había respondido por Ulloa con su dinero. [PAUSA 0,6s] En la cárcel, Alasta mostró señales de locura. [PAUSA 2s]
+Ulloa le mandó a Amat una última carta, con los delitos que el virrey había dejado sin castigo. [PAUSA 0,5s] En venganza, Amat metió preso a Juan de Alasta, su fiador, el que respondía por Ulloa con sus bienes. [PAUSA 0,6s] En la cárcel, Alasta mostró señales de locura. [PAUSA 2s]
 
-Al interino de las cuentas, Ulloa solo había logrado sacarlo de Huancavelica. El libro no registra ninguna pena contra él. [PAUSA 1,2s]
+Contra el interino de las cuentas, Ulloa solo había conseguido una orden para sacarlo de Huancavelica. [PAUSA 0,3s] El libro no registra ninguna pena contra él. [PAUSA 1,2s]
 
-Algunos historiadores culpan a Ulloa por no saber negociar. Quiroz responde que, para ellos, la corrupción fue «un factor necesario, y hasta positivo». [PAUSA 1,5s]
+Dos historiadores explican el fracaso de Ulloa porque no supo negociar con los corruptos. [PAUSA 0,4s] Según Quiroz, para ellos la corrupción fue «un factor necesario, y hasta positivo» para que funcionaran las colonias. [PAUSA 1,5s]
 
 **Imagen:**
 - «encarcelar»: la línea de tiempo de Ulloa, de 1758 a 1764, ocupa el ancho de la pantalla; la cámara la recorre de izquierda a derecha a lo largo de toda la escena, `pesado`, y se detiene en cada marca cuando la voz la nombra.
@@ -283,13 +283,13 @@ Algunos historiadores culpan a Ulloa por no saber negociar. Quiroz responde que,
 - «Diego de Holgado»: ficha `DIEGO DE HOLGADO · FISCAL DE LA AUDIENCIA DE LIMA`. Un expediente nuevo, rotulado `RESIDENCIA DE ULLOA`, se abre frente al medallón de Ulloa.
 - «a favor de Ulloa»: dos sellos verdes pequeños caen en el expediente, `ligero`.
 - «Manuel de Amat»: medallón redibujado desde el retrato de Cristóbal Aguilar, 1769 [VERIFICAR la reproducción: la del libro es una foto de Daniel Giannoni]. Ficha `MANUEL DE AMAT Y JUNYENT · VIRREY 1761-1776`. Con «los mismos delitos», el texto de la denuncia de Ulloa se copia letra por letra sobre su propio expediente, ahora en rojo: el mismo papel apunta al revés. Es la yuxtaposición del episodio.
-- «diez mil pesos»: rótulo `SOBORNO «ACOSTUMBRADO» · 10 000 PESOS PARA EL VIRREY · SEGÚN ULLOA`. Con «se había negado», el sobre se queda sobre la mesa de Ulloa, cerrado. Con «el premio del virrey», la palabra *premio* baja de la cima de la pirámide y se posa, chica, sobre el sobre.
+- «diez mil pesos»: rótulo `SOBORNO «ACOSTUMBRADO» · 10 000 PESOS PARA EL VIRREY · SEGÚN ULLOA`. Con «se había negado», el sobre se queda sobre la mesa de Ulloa, cerrado. Con «el premio del virrey», la palabra *premio* baja de la cima de la pirámide y se posa, chica, sobre el sobre, con `SEGÚN ULLOA` al lado (es lectura nuestra con la definición de la p. 122).
 - «un purgatorio»: la cita textual en una tarjeta, con la glosa debajo: `DESABRIMIENTO: DISGUSTO`. Y otra, de su carta de 1763, más chica: «la horrible tempestad de persecuciones».
 - «mil setecientos sesenta y cuatro»: la línea de tiempo llega a su extremo; el medallón de Ulloa sale del mapa del Perú hacia el norte.
 - «y perdió»: corte a la pizarra vacía. La frase de Quiroz se escribe entera, en tiza, y la cámara se queda quieta. Durante el silencio no se mueve nada.
 - «una última carta»: ficha `PANAMÁ · 5 DE DICIEMBRE DE 1764 · ÚLTIMA CARTA A AMAT`. En una esquina, sin voz: `AMAT AL CONSEJO, 1765: QUE «UN HECHO IGUAL NO QUEDE SIN CASTIGO»… CONTRA ULLOA`.
 - «Juan de Alasta»: en la pizarra, `FIADOR = EL QUE RESPONDE POR OTRO CON SU DINERO`. Silueta de Alasta detrás de la misma reja de los veedores, que ahora se cierra sobre él. Con «señales de locura», la imagen se queda quieta; no se dramatiza.
-- «Al interino de las cuentas»: la silueta de Vega de la ESC 0 vuelve, sin sello. Rótulo `ORDEN PARA SACARLO DE HUANCAVELICA · NINGUNA PENA REGISTRADA`.
+- «Al interino de las cuentas»: la silueta de Vega de la ESC 0 vuelve, sin sello. Rótulo `ORDEN PARA SACARLO DE HUANCAVELICA · NINGUNA PENA REGISTRADA EN EL LIBRO`.
 - «Algunos historiadores»: dos tarjetas enfrentadas en la pizarra. Izquierda: `NO SUPO NEGOCIAR · MOLINA MARTÍNEZ, 1995; MCFARLANE, 1996`. Derecha: `«UN FACTOR NECESARIO, Y HASTA POSITIVO» · ASÍ LO VEN, SEGÚN QUIROZ`. El corrector subraya la derecha.
 
 **Sonido:** la música en tensión desde la reja de Mesía; un golpe con la acusación. Después de «y perdió», 2 s de silencio absoluto (CLAUDE §6). La música vuelve muy baja con «una última carta».
@@ -303,13 +303,13 @@ Algunos historiadores culpan a Ulloa por no saber negociar. Quiroz responde que,
 **Cambio:** de «la Corona reforma» a «reforma después de una rebelión, y los nuevos funcionarios hacen lo mismo».
 
 **VO:**
-Pero la Corona igual quiso reformar. [PAUSA 0,4s] Desde mil setecientos setenta y siete lo intentó el visitador José Antonio de Areche. [PAUSA 0,4s] Trabajaba con una copia del informe secreto de Ulloa y Juan. [PAUSA 0,6s] Según Quiroz, la meta de las reformas era que estos reinos dieran más rentas a la Corona. [PAUSA 1,2s]
+Pero la Corona igual quiso reformar. [PAUSA 0,4s] Desde mil setecientos setenta y siete lo intentó José Antonio de Areche, un visitador: un enviado de Madrid con amplios poderes. [PAUSA 0,4s] Trabajaba con una copia del informe secreto de Ulloa y Juan. [PAUSA 0,6s] Según Quiroz, las reformas buscaban que el Perú produjera más rentas para la Corona. [PAUSA 1,2s]
 
 En mil setecientos ochenta estalló una gran rebelión. [PAUSA 0,4s] La encabezó José Gabriel Condorcanqui, un cacique del Cuzco que tomó el nombre de Túpac Amaru Segundo. [PAUSA 0,6s] Había intentado por la vía legal remediar los abusos contra los indios, y había fracasado. [PAUSA 0,6s] Pedía abolir el corregidor, el reparto, el tributo y la mita. [PAUSA 0,8s]
 
 Para Quiroz, era otro reformador contra la corrupción de los funcionarios, en la tradición de Guamán Poma. [PAUSA 0,5s] Fue apresado y ejecutado. [PAUSA 2s]
 
-En mil setecientos ochenta y cuatro, la Corona abolió dos de las cosas que él pedía: los corregidores y el reparto. [PAUSA 0,5s] En su lugar puso intendentes, que manejaban las rentas de su provincia sin pasar por el virrey. [PAUSA 0,4s] Al principio, la recaudación creció. [PAUSA 1s] Pero, según Quiroz, los intendentes empezaron a asumir «la misma autoridad despótica que los corregidores», y la venta forzada a los indios siguió. [PAUSA 1s]
+En mil setecientos ochenta y cuatro, la Corona abolió dos de las cosas que él pedía: los corregidores y el reparto. [PAUSA 0,5s] Y creó las intendencias: en cada provincia, un intendente manejaba las rentas sin pasar por el virrey. [PAUSA 0,4s] Al principio, la recaudación creció. [PAUSA 1s] Pero, según Quiroz, los intendentes empezaron a asumir «la misma autoridad despótica que los corregidores», y la venta forzada a los indios siguió. [PAUSA 1s]
 
 Los reformadores tampoco duraron: Areche se fue impopular, y unos años después llamaron a Madrid a su sucesor. [PAUSA 1,5s]
 
@@ -336,7 +336,7 @@ Los reformadores tampoco duraron: Areche se fue impopular, y unos años después
 **Cambio:** de «había juicios» a «los juicios absolvían».
 
 **VO:**
-Pero a los que abusaban tampoco los castigó nadie. [PAUSA 0,4s] Quiroz llama a los juicios de residencia mecanismos «de prominente ineficacia». [PAUSA 0,4s] Escribe que «la mayoría de las veces, los residenciados eran absueltos o reprendidos levemente». [PAUSA 1,2s]
+Pero a los que abusaban casi nunca los castigaron. [PAUSA 0,4s] Quiroz llama a los juicios de residencia mecanismos «de prominente ineficacia». [PAUSA 0,4s] Escribe que «la mayoría de las veces, los residenciados eran absueltos o reprendidos levemente». [PAUSA 1,2s]
 
 Algunos virreyes perdieron el cargo, pero el libro no registra que alguno recibiera en su residencia una pena por corrupción. [PAUSA 0,5s] La residencia de Amat tuvo ciento veintiuna piezas, y el libro tampoco registra su sentencia. [PAUSA 0,6s] Los castigos claros que cuenta el libro cayeron sobre funcionarios medianos, o sobre los que denunciaban. [PAUSA 1,2s]
 
@@ -349,8 +349,8 @@ Entonces, ¿quién podía pararlo? [PAUSA 0,5s] Ulloa perdió, Túpac Amaru fue 
 - «de prominente ineficacia»: la balanza del juez de la ESC 4 vuelve. La cita entera, en pantalla, debajo.
 - «absueltos o reprendidos levemente»: una fila de expedientes con sellos que caen uno tras otro, `ligero`: `ABSUELTO`, `REPRENDIDO`, `ABSUELTO`. Ninguno rojo.
 - «perdieron el cargo»: tres fichas en la línea de tiempo, apagadas: `CASTELLDOSRIUS · SEPARADO EN 1709`, `GUIRIOR · REEMPLAZADO EN 1780`, `PEZUELA · DEPUESTO EN 1821`. Debajo de las tres: `PENA POR CORRUPCIÓN EN SU RESIDENCIA, REGISTRADA EN EL LIBRO: NINGUNA`.
-- «ciento veintiuna piezas»: una pila de legajos `pesado`, `RESIDENCIA DE AMAT · 1777 · 121 PIEZAS`, con una casilla vacía `SENTENCIA: NO REGISTRADA`. Al lado, sin voz: `DEMANDAS DE PARTICULARES CONTRA AMAT: MÁS DE 750 000 PESOS`.
-- «los castigos claros»: dos columnas. A la izquierda, `CASTIGADOS`: `TRES EMPLEADOS DE LA MINA DE HUANCAVELICA, PRESOS (FINES DE LA DÉCADA DE 1780)`, `UN OFICIAL DEL CONSULADO (1711)`, `JUAN DE ALASTA`, `ULLOA, ACUSADO`. A la derecha, `SIN PENA REGISTRADA`: los virreyes y Vega. El rojo es para la columna de la derecha.
+- «ciento veintiuna piezas»: una pila de legajos `pesado`, `RESIDENCIA DE AMAT · 1777 · 121 PIEZAS`, con una casilla vacía `SENTENCIA: NO REGISTRADA EN EL LIBRO`. Al lado, sin voz: `DEMANDAS DE PARTICULARES CONTRA AMAT: MÁS DE 750 000 PESOS`.
+- «los castigos claros»: dos columnas. A la izquierda, `CASTIGADOS`: `TRES EMPLEADOS DE LA MINA DE HUANCAVELICA, PRESOS (FINES DE LA DÉCADA DE 1780)`, `UN OFICIAL DEL CONSULADO QUE DESTAPÓ UN CONTRABANDO (1711)`, `JUAN DE ALASTA`. A la derecha, `SIN PENA REGISTRADA EN EL LIBRO`: los virreyes, Vega y los veedores que soltó Mesía. Ulloa no va en ninguna: lo acusaron, pero el libro no da su sentencia. El rojo es para la columna de la derecha.
 - «el historiador no es un juez»: en la pizarra, la cita textual completa: el análisis «no debe asumir, por tanto, el papel de jueces anacrónicos del pasado» y «la falta de sentencias condenatorias no implica que no haya habido corrupción» (Q, p. 43).
 - «Entonces»: la pregunta del gancho vuelve a la pizarra, `¿QUIÉN PODÍA PARARLO?`. Debajo se escribe la respuesta de Quiroz, entre comillas. Es el remate de la sección: tamaño grande, sola, quieta durante la pausa de 2,5 s.
 
@@ -367,24 +367,24 @@ Es la primera cuenta de la serie. El método se explica aquí, en dos frases, y 
 **Cambio:** de «se robaba» a «costaba el equivalente a entre tres y seis de cada diez pesos que gastaba el virreinato».
 
 **VO:**
-Por eso Quiroz no buscó condenas: sacó la cuenta. [PAUSA 0,4s] Es la primera cuenta de esta serie. [PAUSA 0,8s]
+Por eso Quiroz no buscó condenas: sacó la cuenta. [PAUSA 1s]
 
-Primero suma los fondos desviados: el premio del virrey, lo que sacaban los cargos, las deudas que no se cobraban y el contrabando. [PAUSA 0,6s] Después compara esa suma con lo que gastaba el virreinato y con el tamaño de toda su economía, el PBI. [PAUSA 0,8s] Para la colonia, el PBI lo estima a partir de la plata, y advierte que su estimado es provisional y conservador. [PAUSA 1,5s]
+Primero suma lo desviado: el premio del virrey, lo que sacaban los cargos, las deudas sin cobrar y los impuestos perdidos por el contrabando. [PAUSA 0,6s] Después compara esa suma con lo que gastaba el virreinato y con el tamaño de toda su economía, el PBI. [PAUSA 0,8s] Para la colonia, estima el PBI a partir de la plata. [PAUSA 0,4s] Y advierte que su cálculo del costo es provisional y conservador. [PAUSA 1,5s]
 
 En los años de este episodio, según la década, la corrupción costó el equivalente a entre tres y seis de cada diez pesos del gasto. [PAUSA 2s]
 
-En la mayoría de esas décadas eran unos dos millones de pesos al año. [PAUSA 0,5s] Por cuenta nuestra, eso pagaba un año de sueldo a diez mil trabajadores libres de la mina. [PAUSA 1,5s]
+En la mayoría de esas décadas eran unos dos millones de pesos al año. [PAUSA 0,5s] Por cuenta nuestra, eso alcanzaba para el sueldo de un año de diez mil trabajadores libres de la mina. [PAUSA 1,5s]
 
 Frente a toda la economía, la proporción era mucho menor: entre dos y cinco de cada cien pesos. [PAUSA 1,2s]
 
-Entonces, según Quiroz, el abuso que denunció Ulloa se llevaba entre tres y seis de cada diez pesos del gasto. [PAUSA 2s]
+Entonces, según Quiroz, el abuso que denunció Ulloa costaba el equivalente a entre tres y seis de cada diez pesos del gasto. [PAUSA 2s]
 
 **Imagen:**
 - Es la escena del gráfico (DIRECCION §2.10: cada barra es un dato real y dice qué es). Va en motion graphics propio sobre papel, no en la pizarra [DEFINIR con Gerson: la guía deja la decisión al director].
-- «suma los fondos desviados»: la pirámide del botín de la ESC 5 se desarma: sus cuatro pisos se apilan como cuatro bloques de una columna, `pesado`, y cada uno se rotula al llegar con su nombre del cuadro 1.1: `I PREMIO DEL VIRREY` · `II OTRAS IRREGULARIDADES DE OFICIALES` · `III INEFICIENCIA LIGADA A LA CORRUPCIÓN` · `IV CONTRABANDO`. El bloque II es el más alto: se ve sin decirlo que lo grueso estaba abajo. Rótulo pequeño: `CUADRO 1.1 · EJEMPLO: AMAT, 1761-1776: 0,3 + 1,2 + 0,5 + 0,3 = 2,3 MILLONES DE PESOS AL AÑO`.
+- «suma los fondos desviados»: la pirámide del botín de la ESC 5 se desarma: sus cuatro pisos se apilan como cuatro bloques de una columna, `pesado`, y cada uno se rotula al llegar con su nombre del cuadro 1.1: `I PREMIO DEL VIRREY` · `II OTRAS IRREGULARIDADES DE OFICIALES` · `III INEFICIENCIA LIGADA A LA CORRUPCIÓN` · `IV RENTAS PERDIDAS POR EL CONTRABANDO`. El bloque II es el más alto: se ve sin decirlo que lo grueso estaba abajo. El ejemplo de la suma va en dos líneas y solo durante la pausa de 0,6 s y el arranque de «Después compara» (unos 4,5 s de lectura): `CUADRO 1.1 · AMAT, 1761-1776` / `0,3 + 1,2 + 0,5 + 0,3 = 2,3 MILLONES DE PESOS AL AÑO`. Si no alcanza, sale.
 - «lo que gastaba el virreinato»: a la derecha de la columna aparecen dos recipientes, uno al lado del otro: `GASTO DEL VIRREINATO` (chico) y `PBI · TODA LA ECONOMÍA` (grande). Solo brilla el que la voz nombra.
 - «a partir de la plata»: dentro del recipiente del PBI, una barra de plata ocupa una décima parte: `SUPUESTO: LA PLATA ERA EL 10 % DEL PBI (7 % DESDE 1777, SOLO BAJO PERÚ)`.
-- «provisional… conservador»: las dos palabras, entre comillas, con su página, al mismo tamaño que el título del gráfico. Se quedan en la esquina hasta el final de la escena.
+- «provisional… conservador»: las palabras del libro, textuales y entre comillas, `«PROVISIONALMENTE» · «DE MODO CONSERVADOR» · Q, P. 122`, al mismo tamaño que el título del gráfico. Se quedan en la esquina hasta el final de la escena.
 - «En los años de este episodio»: el gráfico de barras por década del cuadro 1.2, solo con las siete décadas del episodio; las barras crecen una por una, cada una con su década y su porcentaje: `1750-59: 59 %` · `1760-69: 55 %` · `1770-79: 43 %` · `1780-89: 38 %` · `1790-99: 28 %` · `1800-09: 33 %` · `1810-19: 41 %`. La cámara quieta.
 - «entre tres y seis de cada diez»: una fila de diez monedas; según la barra que brilla, de tres a seis se ponen rojas. El corrector subraya `28 %` y `59 %`.
 - «unos dos millones»: rótulo `COSTO ANUAL ESTIMADO, POR DÉCADA: ENTRE 1,3 Y 2,3 MILLONES DE PESOS`. «diez mil trabajadores»: la pila mínima de la ESC 0 (`~200 PESOS AL AÑO`) se multiplica en una cuadrícula hasta `× 10 000`, con `CÁLCULO NUESTRO: 2 000 000 ÷ 200`.
@@ -403,16 +403,16 @@ Entonces, según Quiroz, el abuso que denunció Ulloa se llevaba entre tres y se
 **Cambio:** de «se acaba la colonia» a «el sistema pasa a la república».
 
 **VO:**
-Pero la colonia se acabó, y su sistema no. [PAUSA 0,5s] En mil ochocientos veintiuno, el general La Serna depuso al virrey Pezuela «por sus claras falencias, defectos militares y venalidad». [PAUSA 0,5s] Para Quiroz, quizás fue el primer golpe militar moderno del Perú. [PAUSA 1,2s]
+Pero la colonia se acabó, y su sistema no. [PAUSA 0,5s] En mil ochocientos veintiuno, el virrey Pezuela fue depuesto, según Quiroz, «por sus claras falencias, defectos militares y venalidad». [PAUSA 0,5s] Lo depuso el general La Serna, y para Quiroz quizás fue el primer golpe militar moderno del Perú. [PAUSA 1,2s]
 
-La colonia dejó también un crédito público, creado en mil setecientos setenta y siete: préstamos con interés que la élite le hacía al tesoro. [PAUSA 0,5s] La república lo heredó. [PAUSA 0,6s] Y sus caudillos, según Quiroz, «heredaron la influencia de los oficiales militares del tardío sistema colonial». [PAUSA 1,5s]
+La colonia dejó también un crédito público: préstamos con interés que la élite le hacía al tesoro. [PAUSA 0,5s] La república lo heredó. [PAUSA 0,6s] Y sus caudillos, según Quiroz, «heredaron la influencia de los oficiales militares del tardío sistema colonial». [PAUSA 1,5s]
 
 El informe secreto de Ulloa y Juan se publicó recién en mil ochocientos veintiséis, en Londres. [PAUSA 0,4s] Un comerciante inglés lo editó para advertir sobre las malas condiciones políticas y de inversión que heredaban las nuevas repúblicas. [PAUSA 0,8s] Para entonces, el Perú ya le debía plata a Londres. [PAUSA 1,5s]
 
 Entonces, la colonia se fue, pero dejó sus militares, sus préstamos y sus redes de favores. [PAUSA 1,5s] Próximo episodio: Saqueo patriota. [PAUSA 2s]
 
 **Imagen:**
-- «Pezuela»: la línea de tiempo llega a 1821, al final del capítulo. Medallón de Pezuela [VERIFICAR retrato de dominio público]. Ficha `JOAQUÍN DE LA PEZUELA · VIRREY 1816-1821 · DEPUESTO POR LA SERNA`. La cita textual, en rojo de corrector. Con «quizás», la palabra va en pantalla al mismo tamaño: `«QUIZÁS… EL PRIMER GOLPE MILITAR MODERNO EN EL PERÚ»`.
+- «Pezuela»: la línea de tiempo llega a 1821, al final del capítulo. Medallón de Pezuela [VERIFICAR retrato de dominio público]. Ficha `JOAQUÍN DE LA PEZUELA · VIRREY 1816-1821 · DEPUESTO POR LA SERNA`. La cita textual, en rojo de corrector. Con «quizás», la palabra va en pantalla al mismo tamaño: `«QUIZÁS FUERA EL PRIMER GOLPE MILITAR MODERNO EN EL PERÚ»`.
 - «crédito público»: en la pizarra, `CRÉDITO PÚBLICO = PRÉSTAMOS CON INTERÉS AL TESORO`. Una línea de tiempo corta: `1777 · SE CREA` y `1815 · SE REESTRUCTURA`. Un pagaré viaja `natural` de la colonia hacia el borde derecho de la pantalla, donde dice `REPÚBLICA`: cuánto era, se cuenta en el Ep. 2.
 - «sus caudillos»: la silueta del oficial colonial se transforma en la de un caudillo con el mismo uniforme y otra banda. La cita, abajo.
 - «Londres»: el mapa se abre `pesado` del Perú al Atlántico, hasta Londres. Sobre la ciudad cae el libro impreso: `NOTICIAS SECRETAS DE AMÉRICA · LONDRES, 1826 · EDITOR: DAVID BARRY`. Es el mismo manuscrito de la ESC 1, ahora impreso: el hilo se cierra.
@@ -442,10 +442,10 @@ Lo que cambió respecto de la estructura versión 2, y por qué. Todo cambio de 
 10. **La pregunta central se responde en voz, con Quiroz** (ESC 8, p. 126), y no solo con la lista de impunes. Así el «entonces» de la sección III vuelve a la pregunta del gancho.
 11. **Detalles concretos agregados del expediente**, todos con página: los papeles que Ulloa echa al mar (p. 65), la entrada de corruptela con su ejemplo de corregidores (p. 76, n. 39, solo en pantalla), los estribos de la mina tapados con desmonte (pp. 85-86), el yerno y el concuñado del veedor (p. 86, solo en pantalla) y la carta de Amat que pide castigo para Ulloa (p. 90, n. 74, solo en pantalla).
 12. **«Así se cobraba el premio del virrey» (ESC 6) es una inferencia nuestra.** Quiroz no llama «premio» al soborno de los 10 000 pesos, pero su definición del premio (p. 122: «las ganancias ilegales e indebidas del virrey… otras comisiones cobradas») lo incluye, y la p. 88 dice que el soborno era «para beneficio privado del virrey». Si el Escribano o Gerson prefieren no afirmarlo, la frase sale y queda solo la imagen.
-13. **Dos traducciones a escala humana, marcadas como cálculo nuestro en voz o pantalla:** `MÁS DE 150 VECES` (ESC 0, solo pantalla) y «diez mil trabajadores» (ESC 9, en voz, con «Es una cuenta nuestra»).
-14. **La regla del mínimo de 10 palabras no se aplica a la voz**, como en el guion del 003: es texto para el oído. Quedan cortas solo las que rematan o dan respiro: «Un ejemplo de antes de Ulloa.», «Lo denunciaron comerciantes rivales.», «Fue apresado y ejecutado.», «La república lo heredó.», «Al principio, la recaudación creció.», «Es la primera cuenta de esta serie.». Ninguna oración de la voz pasa de 25 palabras; las de 25 son dos (ESC 6, los veedores; ESC 9, la cifra) y conviene oírlas en la prueba de voz alta.
+13. **Dos traducciones a escala humana, marcadas como cálculo nuestro en voz o pantalla:** `MÁS DE 150 VECES` (ESC 0, solo pantalla) y «diez mil trabajadores» (ESC 9, en voz, con «Por cuenta nuestra»).
+14. **La regla del mínimo de 10 palabras no se aplica a la voz**, como en el guion del 003: es texto para el oído. Quedan cortas solo las que rematan o dan respiro: «Un ejemplo de antes de Ulloa.», «Lo denunciaron comerciantes rivales.», «Fue apresado y ejecutado.», «La república lo heredó.», «Al principio, la recaudación creció.» y, desde la revisión del Escribano, «Murió antes de llegar a Lima.» (ESC 2). «Es la primera cuenta de esta serie.» salió: solo anunciaba. Ninguna oración de la voz pasa de 25 palabras; las de 25 son dos (ESC 6, los veedores; ESC 9, la cifra) y conviene oírlas en la prueba de voz alta.
 15. **La siembra de Londres en la ESC 10** dice solo lo que el Ep. 2 va a contar («el Perú ya le debía plata a Londres»), sin la coincidencia con el impago de 1826, que la estructura marca como `[INF]` y deja para el Ep. 2, ESC 5.
-16. **Carga de nombres y cifras nuevos en la voz** (tope de 6 por minuto, CLAUDE §8), contada por escena: ESC 0, 5 (Huancavelica, 1758, Ulloa, 30 000, 200) en 1 min; ESC 1, 4 (1735, Jorge Juan, Quito, 1749); ESC 2, 4 (1633, Cañete, 250 000, 1812); ESC 3, 5 (1707, Castelldosrius, 3 millones, 100 millones, el fiscal); ESC 4, 3 (1560, 1622, Guamán Poma); ESC 5, 0; ESC 6, 6 (1760, 1761, Holgado, Amat, 10 000, 1764, Alasta: 7 en unos 2 min); ESC 7, 5 (1777, Areche, 1780, Condorcanqui, 1784) en 1,5 min; ESC 8, 1 (121); ESC 9, 4 (tres a seis de diez, dos millones, diez mil, dos a cinco de cien); ESC 10, 5 (1821, La Serna, Pezuela, 1777, 1826). Lo demás va a la pantalla: Vega, Mesía, Campuzano, Aguirre, Escobedo, Guirior, Pezuela en la ESC 8 y todas las fechas exactas.
+16. **Carga de nombres y cifras nuevos en la voz** (tope de 6 por minuto, CLAUDE §8), contada por escena: ESC 0, 5 (Huancavelica, 1758, Ulloa, 30 000, 200) en 1 min; ESC 1, 4 (1735, Jorge Juan, Quito, 1749); ESC 2, 4 (1633, Cañete, 250 000, 1812); ESC 3, 6 en 1 min, en el tope (1707, Castelldosrius, 3 millones, la cuarta parte, 100 millones, diez años; recuento del Escribano: los tres barcos pasaron a la pantalla); ESC 4, 3 (1560, 1622, Guamán Poma); ESC 5, 0; ESC 6, 6 (1760, 1761, Holgado, Amat, 10 000, 1764, Alasta: 7 en unos 2 min); ESC 7, 7 en 1 min 17 s (1777, Areche, 1780, Condorcanqui, Túpac Amaru II, Cuzco, 1784); ESC 8, 1 (121); ESC 9, 4 (tres a seis de diez, dos millones, diez mil, dos a cinco de cien); ESC 10, 5 (1821, Pezuela, La Serna, 1826, Londres; el 1777 del crédito pasó a la pantalla). Lo demás va a la pantalla: Vega, Mesía, Campuzano, Aguirre, Escobedo, Guirior, Pezuela en la ESC 8 y todas las fechas exactas.
 17. **Recortes por duración.** El primer borrador completo daba 16 min 30 s. Se recortaron ideas, no verbos, y lo que salió de la voz pasó a la pantalla: la ruta de ocho años de Ulloa y Juan (ESC 1); las cajas reales, el corregidor y el oidor en venta (ESC 2); la definición del interino y del peso (ESC 0); los indios del campo que seguían a Condorcanqui (ESC 7); las fechas exactas del gráfico (ESC 9). Queda en unos 14 min 25 s. Si Gerson lo quiere en 13, las dos candidatas para salir de la voz son el debate de los historiadores (ESC 6, unos 10 s) y el informe publicado en Londres (ESC 10, unos 20 s, que el Ep. 2 vuelve a contar en su ESC 5).
 
 ## Lo que este guion obliga a hacer fuera de él

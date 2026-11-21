@@ -58,7 +58,7 @@ El 0·3 se partió en dos (episodios 3 y 4) porque así lo recomendaron el Escri
 | Montané, socio de Gibbs en los años cuarenta (V, n. 42) | Ep. 2 ESC 8 | Ep. 4: la conversión |
 | La Fuente depone a Riva-Agüero (1823) y lo acusa (1824) | Ep. 2 ESC 4 | Ep. 2 ESC 6 (prefecto); Ep. 3 ESC 4 (las cartas de los vales) |
 | Iturregui propone en 1827 comprar en secreto los bonos depreciados (p. 141) | Ep. 2 ESC 5 | Ep. 4 ESC 2: una línea, «la idea ya existía» |
-| El millón de Bolívar (1826) | Ep. 2 ESC 3 | Ep. 4 ESC 3: lo cobran sus herederos en 1853; Elías denuncia sobornos (pp. 172 y 176) |
+| El millón de Bolívar (1826, p. 133) | Ep. 2 ESC 3 | Ep. 4 ESC 3: Elías denuncia «la donación de un millón de pesos a los herederos de Bolívar», tramitada con sobornos (p. 172); Cotes cobra en 1853 lo que el Perú le debía a Bolívar (p. 176, n. 128). El libro no dice que sea el mismo millón de 1826, y la pantalla tampoco |
 | Heinrich Witt, comerciante alemán en Lima | Ep. 2 ESC 6 (1825) | Ep. 4 ESC 6 (1871): «se engañaban enormemente» (p. 190) |
 | La tesis de Quiroz (1980) y el libro *La deuda defraudada* (1987) | Prólogo ESC 6 | Ep. 3 cierre |
 
@@ -575,7 +575,7 @@ Es la parte B del Ep. 3 de la versión 1.
 - **Responde:** ¿desde cuándo?, del lado de afuera.
 - **Hechos:**
   - Recuerda en una frase el arreglo de 1849 del Ep. 2.
-  - Echenique recomienda a Mendiburu ante Murrieta, y en el margen de la carta hay una nota de Mendiburu: «no resa [sic] esto en las memorias» (n. 139).
+  - Echenique recomienda a Mendiburu ante Murrieta, y en el margen de la carta hay una nota, al parecer del propio Mendiburu [INF: Quiroz no dice quién la escribió]: «no resa [sic] esto en las memorias» (n. 139).
   - Mendiburu va a Londres como ministro plenipotenciario, a renegociar 1849 y a convertir la deuda de adentro (p. 179).
   - Murrieta emite nuevos bonos en febrero de 1853 (V, p. 24).
 - **→ POR ESO**, con el crédito de Londres recuperado, la deuda de adentro se podía mandar afuera.
