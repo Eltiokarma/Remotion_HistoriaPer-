@@ -98,3 +98,30 @@ Los tramos quietos de A5 son:
   - antes de «cinco»;
   - entre el regreso del bono y la presentación de Mendiburu;
   - el tramo de 61,3 a 66,2 s, antes de que aparezcan las casas.
+
+### A6 y A7: el párrafo del bono (21 de noviembre de 2026)
+
+A6 trae el párrafo revisado por el Escribano: qué es un bono, los préstamos de Londres de 1822 y 1825, el impago, el arreglo de 1849 y el guano «hipotecado». El plano 4.3 se partió en 4.3a, 4.3b y 4.3c; la parte A pasa a durar 148,9 s.
+
+Al auditar A6, el tiempo quieto subió al 62 %. Los tramos muertos eran:
+
+- la comparación del vale y el bono en la mesa;
+- el mapa de los préstamos, donde las líneas finas casi no cambian la imagen;
+- la entrada de las casas.
+
+A7 agrega dos movimientos de cámara con motivo:
+
+- un acercamiento lento a los dos papeles mientras la voz los compara;
+- en el mapa, la cámara sigue la ruta de los préstamos de Londres a Lima y después la de los pagos de vuelta, y se abre antes de que entren las casas.
+
+| Versión | Duración | Tiempo quieto | Render |
+|---|---:|---:|---:|
+| A6 | 148,9 s | 62 % | 628,5 s |
+| A7 | 148,9 s | 52 % | 679,4 s |
+
+Lo que sigue quieto en A7:
+
+- los respiros;
+- la palabra del episodio;
+- esperas de 2 a 3 s entre cifras;
+- un tramo de 5,9 s entre el final de 4.3a y la llegada de las casas (86,5–92,4 s), que incluye el respiro de 1 s.
