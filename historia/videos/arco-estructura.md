@@ -17,7 +17,7 @@
 - **Hechos:** los datos que van a la voz o a la pantalla, con su página. Q es Quiroz 2013 y V es Vizcarra 2011.
 - **→**: el conector con la escena siguiente; tiene que ser «pero» o «por eso» (`direccion-historia` §2.2).
 
-Los expedientes completos, con las citas textuales, están en el scratchpad de la sesión y pasan a `fuentes.md` de cada episodio cuando se escriba la voz.
+Los expedientes completos, con las citas textuales, están en `002-saqueo-patriota/diseno/expediente.md`, `003-la-deuda-defraudada/diseno/expediente.md` y `000-quiroz/diseno/expediente-0-4.md`, y pasan a `fuentes.md` de cada episodio cuando se escriba la voz.
 
 ---
 
@@ -32,7 +32,7 @@ Los expedientes completos, con las citas textuales, están en el scratchpad de l
 - El millón de Bolívar se paga recién en 1853, con la consolidación (p. 176).
 
 El episodio termina donde empieza el 0·3: el arreglo de 1849 y la deuda de adentro que también se pagará con el guano.
-**Fuente:** el expediente completo está en el scratchpad (`expediente-02.md`), y lo que el guion actual tiene mal está en su §7.
+**Fuente:** el expediente completo está en `002-saqueo-patriota/diseno/expediente.md`, y lo que el guion actual tiene mal está en su §7.
 
 | # | Escena | Responde | Cambio |
 |---|---|---|---|
@@ -345,7 +345,7 @@ Si el 0·3 se parte en dos, este episodio pasa a ser el 0·5, y *La cuenta* el 0
 **Pregunta central:** ¿se puede medir algo que se hace para no dejar rastro?
 **Palabra del episodio:** *grava* (p. 537): la corrupción no aceita la maquinaria del Estado, la traba. Es una palabra que se ve.
 **Hilo:** viene del final del 0·3 («este caso dejó papeles; mucha corrupción no»). Termina en el umbral: sí se puede, y la cuenta queda para *La cuenta* (plan de `000-quiroz/diagnostico.md` §4).
-**Fuente:** el expediente completo está en el scratchpad (`expediente-04.md`). Q es la introducción, pp. 37–57, y el apéndice, pp. 535–554.
+**Fuente:** el expediente completo está en `000-quiroz/diseno/expediente-0-4.md`. Q es la introducción, pp. 37–57, y el apéndice, pp. 535–554.
 
 | # | Escena | Responde | Cambio |
 |---|---|---|---|
