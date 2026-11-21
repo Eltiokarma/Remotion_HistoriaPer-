@@ -22,19 +22,19 @@ import { F, FPS, Ffin, aVideo, aVoz, tramos, type Version } from './linea';
  * No es la escena terminada: es para decidir ritmo y énfasis antes de animar el resto.
  */
 
-const PAPEL = '#efe6cf';
-const TINTA = '#33251a';
-const ROJO = '#a3322a';
-const OCRE = '#c8a455';
-const img = (n: string) => staticFile(`img/${n}.png`);
+export const PAPEL = '#efe6cf';
+export const TINTA = '#33251a';
+export const ROJO = '#a3322a';
+export const OCRE = '#c8a455';
+export const img = (n: string) => staticFile(`img/${n}.png`);
 /** Sombra negra para todo texto claro sobre el fondo (indicación de Gerson, 20 de noviembre de 2026). */
 /** Caja detrás de todo texto sobre el fondo: negro sólido al 50 %, sin degradado (Gerson, 20 de noviembre de 2026). */
-const CAJA: CSSProperties = { background: 'rgba(0,0,0,.5)', padding: '7px 14px 8px' };
+export const CAJA: CSSProperties = { background: 'rgba(0,0,0,.5)', padding: '7px 14px 8px' };
 
 /** Quién es el dueño de un documento: retrato de época si lo hay, si no una silueta que lo caracterice. */
-type Persona = 'novoa' | 'elias' | 'echenique' | 'torrico';
+export type Persona = 'novoa' | 'elias' | 'echenique' | 'torrico' | 'mendiburu' | 'castilla';
 const SILUETA: Record<Persona, 'mujer' | 'capitalista' | 'presidente' | 'militar'> = {
-  novoa: 'mujer', elias: 'capitalista', echenique: 'presidente', torrico: 'militar',
+  novoa: 'mujer', elias: 'capitalista', echenique: 'presidente', torrico: 'militar', mendiburu: 'militar', castilla: 'presidente',
 };
 /** Retratos de época en dominio público, cuando estén en public/img/retrato-<persona>.png (ver README). */
 /** Medallones ilustrados (ChatGPT, 20 de noviembre de 2026): redibujos de los retratos de Commons; Novoa en silueta. */
@@ -69,7 +69,7 @@ const Silueta = ({ tipo }: { tipo: (typeof SILUETA)[Persona] }) => (
   </svg>
 );
 
-const Medallon = ({ persona, size = 92 }: { persona: Persona; size?: number }) =>
+export const Medallon = ({ persona, size = 92 }: { persona: Persona; size?: number }) =>
   RETRATOS[persona] ? (
     // el PNG ya trae su círculo y su filete: solo se le pone sombra de contacto
     <Img src={staticFile(RETRATOS[persona]!)} style={{ width: size, height: size, flex: 'none', filter: 'drop-shadow(0 3px 5px rgba(0,0,0,.55))' }} />
@@ -79,12 +79,12 @@ const Medallon = ({ persona, size = 92 }: { persona: Persona; size?: number }) =
     </div>
   );
 
-type Pose = { x: number; y: number; w: number; o: number };
-const pose = (x: number, y: number, w: number, o = 1): Pose => ({ x, y, w, o });
-const mezcla = (a: Pose, b: Pose, k: number): Pose => ({ x: mix(a.x, b.x, k), y: mix(a.y, b.y, k), w: mix(a.w, b.w, k), o: mix(a.o, b.o, k) });
+export type Pose = { x: number; y: number; w: number; o: number };
+export const pose = (x: number, y: number, w: number, o = 1): Pose => ({ x, y, w, o });
+export const mezcla = (a: Pose, b: Pose, k: number): Pose => ({ x: mix(a.x, b.x, k), y: mix(a.y, b.y, k), w: mix(a.w, b.w, k), o: mix(a.o, b.o, k) });
 
 /** Centro del medallón de la etiqueta de un papel, en coordenadas del cuadro (el papel gira sobre su centro). */
-const anclaEtiqueta = (p: Pose, aspecto: number, giro: number) => {
+export const anclaEtiqueta = (p: Pose, aspecto: number, giro: number) => {
   const cx = p.x + p.w / 2, cy = p.y + (p.w * aspecto) / 2;
   const lx = -6 + 50 - p.w / 2, ly = -12 - 50 - (p.w * aspecto) / 2;   // medallón de 100 px, 12 px sobre el papel
   const r = (giro * Math.PI) / 180;
@@ -97,8 +97,8 @@ const anclaEtiqueta = (p: Pose, aspecto: number, giro: number) => {
  * su lugar (la etiqueta de su papel, que entra a la vez) y la mesa vuelve a foco. 1,8 s en total.
  * Los segundos de los nombres se midieron con Scribe sobre voz/s03.mp3 (21 de noviembre de 2026).
  */
-const PRES_IN = 0.35, PRES_VUELA = 1.3, PRES_LLEGA = 1.8;
-type Presentacion = { persona: Persona; nombre: string; rol: string; t0: number };
+export const PRES_IN = 0.35, PRES_VUELA = 1.3, PRES_LLEGA = 1.8;
+export type Presentacion = { persona: Persona; nombre: string; rol: string; t0: number };
 const PRESENTACIONES: Presentacion[] = [
   { persona: 'novoa', nombre: 'IGNACIA NOVOA DE ARREDONDO', rol: 'reclamante', t0: F(1) - 0.1 },          // «Ignacia» 7,14
   { persona: 'elias', nombre: 'DOMINGO ELÍAS', rol: 'intermediario', t0: F(4) + 0.94 },                   // «Domingo» 29,46
@@ -107,7 +107,7 @@ const PRESENTACIONES: Presentacion[] = [
 ];
 const presDe = (persona: Persona) => PRESENTACIONES.find((x) => x.persona === persona)!;
 
-const EnPrimerPlano = ({ pr, voz, destino, capas }: { pr: Presentacion; voz: number; destino: { x: number; y: number; size: number }; capas: Capas }) => {
+export const EnPrimerPlano = ({ pr, voz, destino, capas }: { pr: Presentacion; voz: number; destino: { x: number; y: number; size: number }; capas: Capas }) => {
   if (voz < pr.t0 || voz > pr.t0 + PRES_LLEGA + 0.15) return null;
   const entra = tramo(voz, pr.t0, PRES_IN, 'pesado');
   const vuela = tramo(voz, pr.t0 + PRES_VUELA, PRES_LLEGA - PRES_VUELA, 'pesado');
@@ -141,18 +141,18 @@ const EnPrimerPlano = ({ pr, voz, destino, capas }: { pr: Presentacion; voz: num
  * (escala, asimetría, vale fijo) · E4 física (opacos con trayecto, sombra de contacto, solape) ·
  * E5 texto en tinta · E6 etiquetas como tiras de cartón en vez de la caja negra.
  */
-type Capas = { desat: boolean; unaPres: boolean; compo: boolean; fisica: boolean; tinta: boolean; tira: boolean; pres: boolean; folios: boolean };
-const capasDe = (v: Version): Capas => {
+export type Capas = { desat: boolean; unaPres: boolean; compo: boolean; fisica: boolean; tinta: boolean; tira: boolean; pres: boolean; folios: boolean };
+export const capasDe = (v: Version): Capas => {
   const n = v === 'F' ? 6 : v.startsWith('E') ? Number(v.slice(1)) : 0;
   return { desat: n >= 1, unaPres: n >= 2, compo: n >= 3, fisica: n >= 4, tinta: n >= 5, tira: n >= 6, pres: v === 'F', folios: v === 'F' };
 };
 const SOMBRA_FLOTA = 'drop-shadow(12px 16px 12px rgba(0,0,0,.45))';
-const SOMBRA_APOYA = 'drop-shadow(1px 2px 1.5px rgba(0,0,0,.6)) drop-shadow(6px 8px 9px rgba(0,0,0,.28))';
+export const SOMBRA_APOYA = 'drop-shadow(1px 2px 1.5px rgba(0,0,0,.6)) drop-shadow(6px 8px 9px rgba(0,0,0,.28))';
 /** Etiqueta como objeto del mundo: una tira de cartón oscuro, algo torcida, con su sombra de contacto. */
-const TIRA: CSSProperties = { background: '#3b2a20', border: '1px solid rgba(239,230,207,.16)', boxShadow: '1px 2px 2px rgba(0,0,0,.55)', padding: '7px 14px 8px', transform: 'rotate(-1.2deg)' };
+export const TIRA: CSSProperties = { background: '#3b2a20', border: '1px solid rgba(239,230,207,.16)', boxShadow: '1px 2px 2px rgba(0,0,0,.55)', padding: '7px 14px 8px', transform: 'rotate(-1.2deg)' };
 
 /** Un papel de la galería con texto encima, en coordenadas del cuadro. `aspecto` = alto / ancho. */
-const Papel = ({ src, p, aspecto, giro = 0, halo = 0, dueno, persona, capas, etiqueta = 1, children }: { src: string; p: Pose; aspecto: number; giro?: number; halo?: number; dueno?: string; persona?: Persona; capas: Capas; etiqueta?: number; children?: ReactNode }) =>
+export const Papel = ({ src, p, aspecto, giro = 0, halo = 0, dueno, persona, capas, etiqueta = 1, children }: { src: string; p: Pose; aspecto: number; giro?: number; halo?: number; dueno?: string; persona?: Persona; capas: Capas; etiqueta?: number; children?: ReactNode }) =>
   p.o <= 0.001 ? null : (
     <div style={{ position: 'absolute', left: p.x, top: p.y, width: p.w, height: p.w * aspecto, opacity: p.o, transform: `rotate(${giro}deg)`,
       filter: `${capas.fisica ? SOMBRA_APOYA : SOMBRA_FLOTA}${halo > 0 ? ` drop-shadow(0 0 ${28 * halo}px rgba(222,184,105,${0.7 * halo}))` : ''}` }}>
@@ -176,7 +176,7 @@ const Papel = ({ src, p, aspecto, giro = 0, halo = 0, dueno, persona, capas, eti
  * (obj-16), y las leyendas las escribe Remotion en el anillo vacío. Va en el reclamo de Novoa, el trámite
  * de un particular; el oficio de Echenique no lo lleva hasta saber si el gobierno respondía en papel sellado.
  */
-const SelloPapelSellado = ({ x, y, ancho, k }: { x: number; y: number; ancho: number; k: number }) => {
+export const SelloPapelSellado = ({ x, y, ancho, k }: { x: number; y: number; ancho: number; k: number }) => {
   const R_ARRIBA = 382, R_ABAJO = 432;   // el anillo vacío del grabado va de ~360 a ~448 (de 512)
   return k <= 0 ? null : (
     <div style={{ position: 'absolute', left: `${x}%`, top: `${y}%`, width: `${ancho}cqw`, aspectRatio: '1', opacity: 0.82 * k, mixBlendMode: 'multiply', transform: 'rotate(-1.5deg)' }}>
@@ -197,13 +197,13 @@ const SelloPapelSellado = ({ x, y, ancho, k }: { x: number; y: number; ancho: nu
 };
 
 /** Texto mecanografiado dentro de un papel: posición y tamaño en % del ancho del papel. */
-const Renglon = ({ x, y, size, k, children, color = TINTA, familia = fuente.maquina, peso = 400, ancho = 80, centro = false, tinta = false }: { x: number; y: number; size: number; k: number; children: ReactNode; color?: string; familia?: string; peso?: number; ancho?: number; centro?: boolean; tinta?: boolean }) =>
+export const Renglon = ({ x, y, size, k, children, color = TINTA, familia = fuente.maquina, peso = 400, ancho = 80, centro = false, tinta = false }: { x: number; y: number; size: number; k: number; children: ReactNode; color?: string; familia?: string; peso?: number; ancho?: number; centro?: boolean; tinta?: boolean }) =>
   k <= 0 ? null : (
     <div style={{ position: 'absolute', left: `${x}%`, top: `${y}%`, width: `${ancho}%`, fontFamily: familia, fontWeight: peso, fontSize: `${size}cqw`, lineHeight: 1.15,
       color: tinta ? '#3d2b1d' : color, opacity: k * (tinta ? 0.9 : 1), mixBlendMode: tinta ? 'multiply' : 'normal', textAlign: centro ? 'center' : 'left' }}>{children}</div>
   );
 
-const FichaEn = ({ texto, x, y, voz, desde, hasta, foco = 1, persona, capas }: { texto: string; x: number; y: number; voz: number; desde: number; hasta: number; foco?: number; persona?: Persona; capas: Capas }) => (
+export const FichaEn = ({ texto, x, y, voz, desde, hasta, foco = 1, persona, capas }: { texto: string; x: number; y: number; voz: number; desde: number; hasta: number; foco?: number; persona?: Persona; capas: Capas }) => (
   <div style={{ position: 'absolute', left: x, top: y, display: 'flex', alignItems: 'center', gap: 14,
     opacity: mix(0.45, 1, foco) * (1 - tramo(voz, hasta, 0.5, 'natural')) * (voz >= desde ? tramo(voz, desde, 0.3, 'natural') : 0) }}>
     {persona ? <Medallon persona={persona} size={104} /> : null}
@@ -272,7 +272,7 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
   /** Etiqueta de un papel en F: oculta hasta que llega su medallón; después la tira se despliega desde él. */
   const etiq = (persona: Persona) => (capas.pres ? (voz < presDe(persona).t0 + PRES_LLEGA ? 0 : tramo(voz, presDe(persona).t0 + PRES_LLEGA, 0.3, 'natural') || 0.001) : 1);
   const foco = capas.pres ? Math.max(0, ...PRESENTACIONES.map((pr) => tramo(voz, pr.t0, PRES_IN, 'natural') * (1 - tramo(voz, pr.t0 + PRES_VUELA, PRES_LLEGA - PRES_VUELA, 'natural')))) : 0;
-  const destinos: Record<Persona, { x: number; y: number; size: number }> = {
+  const destinos: Partial<Record<Persona, { x: number; y: number; size: number }>> = {
     novoa: anclaEtiqueta(carpeta, 1024 / 1536, 0), elias: anclaEtiqueta(elias, folio.elias.aspecto, -2),
     echenique: anclaEtiqueta(respuesta, folio.echenique.aspecto, 1.5), torrico: { x: 110 + 52, y: 50 + 52, size: 104 },
   };
@@ -317,6 +317,9 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
           <span style={{ opacity: Math.min(1, focoVale) }}>948 500</span>
         </Renglon>
         <Renglon x={8} y={58} size={4.6} k={tramo(voz, F(11) + 0.6, 0.4)} familia={fuente.libro} ancho={84} centro color="#4a3826" tinta={capas.tinta}>pesos en vales</Renglon>
+        {/* Gerson (2026-11-21): también en soles de hoy. Entra en 3.5, cuando la voz lo compara con lo que pedía Elías, para no tocar el silencio de la cifra. */}
+        {capas.folios ? <Renglon x={8} y={69} size={3.6} k={tramo(voz, F(12) + 0.8, 0.4)} familia={fuente.libro} ancho={84} centro color="#4a3826" tinta={capas.tinta}>≈ 135 millones de soles de hoy*</Renglon> : null}
+        {capas.folios ? <Renglon x={8} y={80} size={2.4} k={tramo(voz, F(12) + 0.8, 0.4)} ancho={84} centro color="#4a3826" tinta={capas.tinta}>* conversión aproximada</Renglon> : null}
       </Papel>
 
       <Papel src={folio.novoa.src} p={recibido} aspecto={folio.novoa.aspecto} giro={capas.folios ? 1 : 2} capas={capas} dueno={capas.compo ? 'NOVOA · SU PARTE' : 'NOVOA · RECIBIDO, SEGÚN QUIROZ'} persona="novoa">
@@ -353,7 +356,7 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
 
       </AbsoluteFill>
 
-      {capas.pres && PRESENTACIONES.map((pr) => <EnPrimerPlano key={pr.persona} pr={pr} voz={voz} destino={destinos[pr.persona]} capas={capas} />)}
+      {capas.pres && PRESENTACIONES.map((pr) => <EnPrimerPlano key={pr.persona} pr={pr} voz={voz} destino={destinos[pr.persona]!} capas={capas} />)}
 
       <div style={{ position: 'absolute', right: 40, bottom: 26, fontFamily: fuente.mono, fontSize: 20, letterSpacing: '0.12em', color: 'rgba(239,230,207,.7)', textAlign: 'right', ...CAJA }}>
         ANIMATIC · ESCENA 3 · VERSIÓN {version}<br />

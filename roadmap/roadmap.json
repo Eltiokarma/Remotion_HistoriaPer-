@@ -1563,6 +1563,32 @@
         "render_s": null,
         "maquina": null
       }
+    },
+    {
+      "id": "e2-animatic-s04",
+      "fase": "e2",
+      "titulo": "Animatic de la escena 4 del 0·2 sobre la voz real, en dos partes (A: 4.1–4.3; B: 4.4–4.9), con el sistema de la escena 3",
+      "entregable": "historia/laboratorio/muestras/17-animatic-s04/ y videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md; MP4 fuera de git",
+      "estado": "en_curso",
+      "depende_de": [
+        "e2-animatic-s03"
+      ],
+      "prevista": null,
+      "real": {
+        "inicio": "2026-11-21",
+        "fin": null
+      },
+      "bloqueo": null,
+      "evidencia": [
+        "historia/videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md",
+        "historia/laboratorio/muestras/17-animatic-s04/README.md"
+      ],
+      "tiempo": {
+        "humano_min": null,
+        "agente": null,
+        "render_s": null,
+        "maquina": null
+      }
     }
   ]
 }

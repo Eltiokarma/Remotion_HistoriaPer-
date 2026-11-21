@@ -12,7 +12,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **30** · 🔄 en curso: **10** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **30** · 🔄 en curso: **11** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -86,7 +86,7 @@ gantt
   Tres papeles distintos para la escena 3 del 0·2 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT :done, e2folioss03, 2026-11-21, 1d
 ```
 
-Sin fecha (23): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso), `e2-narracion` (🔄 en curso).
+Sin fecha (24): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso), `e2-narracion` (🔄 en curso), `e2-animatic-s04` (🔄 en curso).
 
 ## Tareas
 
@@ -467,6 +467,12 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Prevista: — · Real: 2026-11-21
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [diseno/prompts-chatgpt-folios-s03.md](historia/videos/002-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md) · [002-la-deuda-defraudada/fuentes.md](historia/videos/002-la-deuda-defraudada/fuentes.md)
+- [ ] **Animatic de la escena 4 del 0·2 sobre la voz real, en dos partes (A: 4.1–4.3; B: 4.4–4.9), con el sistema de la escena 3** `e2-animatic-s04` — 🔄 en curso
+  - Entregable: historia/laboratorio/muestras/17-animatic-s04/ y videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md; MP4 fuera de git
+  - Depende de: `e2-animatic-s03`
+  - Prevista: — · Real: 2026-11-21 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [diseno/plan-animatic-s04.md](historia/videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md) · [17-animatic-s04/README.md](historia/laboratorio/muestras/17-animatic-s04/README.md)
 
 ## Máquinas
 
