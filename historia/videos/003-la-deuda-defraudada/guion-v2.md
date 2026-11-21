@@ -44,7 +44,7 @@ Primero el golpe (DIRECCION_DE_VIDEO §2.5): dos cifras con fuente, la paradoja 
 <!-- bucle: ¿cómo se infla una deuda, y quién la infló? Se responde en las ESC 3 a 5. -->
 
 **VO:**
-En mil ochocientos cincuenta y uno, el Estado peruano reconocía una deuda de unos cinco millones de pesos con sus propios ciudadanos. [PAUSA 0,8s] Un año después, la cuenta llegaba a veinticuatro millones: casi cinco veces la de un año antes. [PAUSA 1,2s]
+En mil ochocientos cincuenta y uno, el Estado peruano reconocía una deuda de unos cinco millones de pesos con sus propios ciudadanos. [PAUSA 0,8s] Un año después, la cuenta llegaba a veinticuatro millones: casi cinco veces la cifra anterior. [PAUSA 1,2s]
 
 Y eso pasó justo cuando el país, por fin, tenía con qué pagar: el guano. [PAUSA 1s]
 
@@ -76,7 +76,7 @@ Frente a Pisco están las islas de Chincha, cubiertas de guano. Como vimos en el
 
 Sacarlo exige mucho trabajo. En las islas hay jornaleros libres, pero también presos, personas esclavizadas y trabajadores chinos sometidos a trabajo forzoso. [PAUSA 2s: el cargamento sube al barco, sin voz]
 
-Con esa plata, el Estado ya había arreglado su deuda de Londres. Ahora podía atender la de adentro: lo que les debía a sus propios ciudadanos desde la independencia, y a veces desde la colonia. [PAUSA 1s]
+Con la plata del guano, el Estado ya había arreglado su deuda de Londres. Ahora podía atender la de adentro: lo que les debía a sus propios ciudadanos desde la guerra de independencia, y a veces desde la colonia. [PAUSA 1s]
 
 Esa deuda tenía orígenes distintos. Un comerciante, por ejemplo, le había prestado dinero al gobierno en un apuro. Un hacendado reclamaba el ganado y las cosechas que se habían llevado para mantener a las tropas. [PAUSA 1,2s]
 
@@ -86,7 +86,7 @@ Cuando un reclamo se aprobaba, el acreedor recibía un vale: un papel en el que 
 
 Antes de mil ochocientos cincuenta, muchos de esos reclamos viejos casi no valían nada. [PAUSA 0,6s] Pero desde fines de los años cuarenta, antes incluso de la ley, algunos ya se iban garantizando con vales. [PAUSA 1,2s]
 
-En mil ochocientos cincuenta y uno llegó a la presidencia José Rufino Echenique. Era uno de los oficiales premiados del episodio anterior. [PAUSA 1s] Según Quiroz, había gastado en ganar la elección mucho más de lo que podía ganar como presidente. [PAUSA 0,6s] Y según un diplomático estadounidense, las casas del guano buscaban asegurarse su influencia con préstamos personales. [PAUSA 1,2s]
+En mil ochocientos cincuenta y uno llegó a la presidencia José Rufino Echenique. Era uno de los oficiales premiados del episodio anterior. [PAUSA 1s] Según Quiroz, había gastado en ganar la elección mucho más de lo que podía ganar como presidente. [PAUSA 0,6s] Y según un diplomático estadounidense, las casas del guano buscaban asegurarse la influencia del nuevo presidente con préstamos personales. [PAUSA 1,2s]
 
 Entonces, había reclamos viejos, una ley para pagarlos, vales que se vendían y un presidente que las casas del guano querían de su lado. [PAUSA 2s]
 
@@ -94,7 +94,7 @@ Entonces, había reclamos viejos, una ley para pagarlos, vales que se vendían y
 - 1A, como está: islas v3, mar y aves. Ficha `PERÚ · HACIA 1850`. Mapa con Lima, Pisco y Chincha, sin fronteras de 1850. Ficha política: `RAMÓN CASTILLA · PRESIDENTE · 1845–1851`.
 - «abono»: no se dibuja la casa consignataria otra vez. Vuelve, chica y en una esquina, la ficha del Ep. 2 `CONSIGNATARIO · VENDE EL GUANO DEL ESTADO · ADELANTA PLATA`: es un recordatorio, no una presentación.
 - 1B, como está: extracción, llenado y embarque sobre la misma ilustración. Con «personas esclavizadas» y «trabajadores chinos», ningún rótulo sobre una figura concreta: el aspecto no documenta la condición de nadie. Durante la pausa sin voz, el barco se carga y la cámara está quieta.
-- 1C se reduce: el diagrama `VENTA → ADELANTO → ESTADO` ya se vio en el Ep. 2, y aquí pasa en `natural` en dos segundos.
+- 1C se reduce: el diagrama `VENTA → ADELANTO → ESTADO` ya se vio en el Ep. 2, y aquí pasa en `natural` en dos segundos, con «Con la plata del guano», que es la palabra que lo ancla.
 - «la de Londres»: un sello chico, `ARREGLADA · 1849`, cae sobre una carpeta que sale del cuadro hacia la derecha (Londres vuelve en la ESC 7). 1D: la cámara sigue el ingreso, `pesado`, hasta las cuentas y descubre al lado la carpeta de reclamos. El motivo de la cámara es el que dice la voz: de la plata de afuera a la deuda de adentro.
 - 2A, como está: los dos ejemplos aparecen al nombrarse, rotulados como ejemplos, y quedan juntos bajo `DEUDA INTERNA`.
 - 2B, como está: ficha `LEY DEL 16 DE MARZO DE 1850`; el reclamo pasa de `PRESENTADO` a `RECONOCIDO`. Con «consolidación», la palabra entra en la pizarra, con su definición en tiza (`CONSOLIDAR: RECONOCER UN RECLAMO VIEJO Y DARLE UN VALE`), y se queda: es el primer renglón del tablero que se acumula hasta la ESC 2.
@@ -116,7 +116,7 @@ La segunda mitad de la antigua ESC 2, con la definición de corrupción de Quiro
 **Cambio:** de «pagar las deudas es una buena idea» a «una buena idea con dos huecos, y lo que entró por ellos tiene un nombre: corrupción».
 
 **VO:**
-La idea era buena, y Quiroz lo reconoce: un Estado que paga lo que debe recupera la confianza de quienes podrían prestarle. Para él, la consolidación fue un fundamento del crédito público moderno en el Perú. [PAUSA 1,2s]
+La idea de la consolidación era buena, y Quiroz lo reconoce: un Estado que paga lo que debe recupera la confianza de quienes podrían prestarle. Para él, la consolidación fue un fundamento del crédito público moderno en el Perú. [PAUSA 1,2s]
 
 Pero la ley tenía dos huecos, según Quiroz. No tenía reglas claras para los reclamos mal sustentados, ni para vender o traspasar un vale. [PAUSA 1s]
 
@@ -126,9 +126,9 @@ Para lograrlo había ayuda. Algunos capitalistas movían los expedientes a cambi
 
 Entonces, un reclamo podía pasar por cuatro manos: alguien vende barato, otro compra, un tercero mueve el expediente y un funcionario lo aprueba. [PAUSA 2,5s]
 
-A eso Quiroz le da un nombre preciso. Para él, la corrupción es el mal uso del poder público por camarillas de funcionarios, coludidas con intereses privados. [PAUSA 0,6s] Buscan ventajas económicas o políticas, desviando recursos públicos y torciendo políticas e instituciones, contra el desarrollo de la sociedad. [PAUSA 1s] No es solo el tosco saqueo de los fondos públicos, como se suele creer. [PAUSA 1,2s]
+A eso Quiroz le da un nombre preciso. Para él, la corrupción es el mal uso del poder público por camarillas de funcionarios, coludidas con intereses privados. [PAUSA 0,6s] Buscan ventajas económicas o políticas: desvían recursos públicos y tuercen las políticas del Estado y sus instituciones, contra el desarrollo de la sociedad. [PAUSA 1s] No es solo el tosco saqueo de los fondos públicos, como se suele creer. [PAUSA 1,2s]
 
-Quiroz le pone además tres apellidos: administrativa, política y sistemática. [PAUSA 0,6s] En la consolidación se ven los tres, aunque el reparto es nuestro. [PAUSA 0,6s] La administrativa está en la oficina: la firma falsa, el empleado sobornado. La política llega hasta los ministros, como vamos a ver. [PAUSA 0,6s] Y la sistemática, dice Quiroz, aparece cuando las reglas que protegen el desarrollo no existen, están torcidas o cambian a cada rato. [PAUSA 0,8s] Como los dos huecos de la ley: reglas que no existían. [PAUSA 2s]
+Para el Perú, Quiroz habla de una corrupción administrativa, política y sistemática. [PAUSA 0,6s] En la consolidación se ven las tres, aunque el reparto es nuestro. [PAUSA 0,6s] La administrativa está en la oficina: la firma falsa, el empleado sobornado. La política llega hasta los ministros, como vamos a ver. [PAUSA 0,6s] Y la sistemática, dice Quiroz, aparece cuando las reglas que protegen el desarrollo no existen, están torcidas o cambian a cada rato. [PAUSA 0,8s] Como los dos huecos de la ley: reglas que no existían. [PAUSA 2s]
 
 **Imagen:**
 - Con «La idea era buena»: un comerciante vuelve a acercarse al edificio del Estado, `natural`. Es el «crédito público» de la versión aprobada.
@@ -137,9 +137,10 @@ Quiroz le pone además tres apellidos: administrativa, política y sistemática.
 - 2E, como está: el intermediario y el funcionario con sus fichas de función. El acuerdo ilegal se rotula; no se dibuja un pago. Con «se falsificaron documentos y firmas», una firma se calca sobre otra, `ligero`, y el corrector la tacha.
 - 2F, como está: con «Entonces», el circuito completo de cuatro manos y la cámara quieta durante la pausa de 2,5 s.
 - **Tablero nuevo en la pizarra (2G).** La cámara pasa del circuito a la pizarra con un paneo a la izquierda, `pesado`, siguiendo la flecha del funcionario (DIRECCION §2.11): el circuito queda a la derecha del cuadro, todavía visible. La definición se escribe en tiza en tres renglones, uno por frase, y solo brilla el que se nombra:
-  - `QUIÉNES: CAMARILLAS DE FUNCIONARIOS, COLUDIDAS CON INTERESES PRIVADOS`
-  - `QUÉ HACEN: USAN MAL EL PODER PARA SACAR VENTAJAS, DESVÍAN RECURSOS, DISTORSIONAN POLÍTICAS E INSTITUCIONES`
-  - `CONTRA QUÉ: LAS METAS DEL DESARROLLO SOCIAL`
+  - `QUIÉNES: CAMARILLAS + INTERESES PRIVADOS`
+  - `CÓMO: DESVÍAN RECURSOS, TUERCEN REGLAS`
+  - `CONTRA QUÉ: EL DESARROLLO`
+  - Son rótulos de tres o cuatro palabras, no la frase de la voz: cada uno cabe en una línea de 42 caracteres y se lee en lo que dura su frase.
   - Debajo, chica, la definición textual completa de la p. 38, para quien ponga pausa.
 - Con «tosco saqueo»: la tiza escribe `NO SOLO «EL TOSCO SAQUEO DE LOS FONDOS PÚBLICOS» · Q, p. 38`.
 - **Los tres apellidos** se escriben como tres columnas que se quedan. Cada una recibe, con flecha de tiza, una pieza del circuito de la derecha:
@@ -162,9 +163,9 @@ Storyboard 3A a 3F. El dato más fuerte del episodio y el único silencio. El te
 **Cambio:** de «así funcionaba» a «así se aprobó un reclamo que el presidente había dado por vencido».
 
 **VO:**
-Un expediente muestra con nombres y cifras dos de esas manos: el intermediario y el funcionario. [PAUSA 0,6s] Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada. Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años. [PAUSA 1s] En el Perú de entonces, la esclavitud era legal: se abolió unos años después. [PAUSA 1,5s]
+Un expediente muestra con nombres y cifras dos de las cuatro manos: el intermediario y el funcionario. [PAUSA 0,6s] Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada. Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años. [PAUSA 1s] En el Perú de entonces, la esclavitud era legal: se abolió unos años después. [PAUSA 1,5s]
 
-Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país. Gestionaba el reclamo a cambio de una comisión, que Quiroz considera legítima, y no era el único reclamo que movía. [PAUSA 0,6s] En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos. Para sí esperaba doscientos mil. [PAUSA 1s]
+Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país. Gestionaba el reclamo a cambio de una comisión, en un acuerdo que Quiroz considera legítimo. Y no era el único reclamo que movía. [PAUSA 0,6s] En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos. Para sí esperaba doscientos mil. [PAUSA 1s]
 
 El presidente Echenique respondió que el reclamo estaba fuera de plazo. [PAUSA 1,5s]
 
@@ -176,9 +177,9 @@ No sabemos adónde fue cada peso de la diferencia. Lo que sí documenta Quiroz e
 
 **Imagen:**
 - 3A, como está: ficha `IGNACIA NOVOA DE ARREDONDO · RECLAMANTE`, con su silueta (no hay retrato). Resumen editorial del reclamo en tres renglones: `HACIENDA EXPROPIADA`, `500 PERSONAS ESCLAVIZADAS`, `LUCRO CESANTE · 32 AÑOS`. No es un facsímil. Con «se abolió», ficha pequeña `ABOLICIÓN · DECRETO DE HUANCAYO · 3 DE DICIEMBRE DE 1854`.
-- 3B, como está: ficha `DOMINGO ELÍAS · INTERMEDIARIO`, unida al expediente. Con «no era el único», detrás del expediente de Novoa asoman, desenfocados, otros dos lomos sin nombre: Elías vuelve en el Ep. 4, y aquí solo queda sembrado. Rótulos `ELÍAS PIDE: DE 500 000 A 600 000 PESOS` y, más chico, `SU COMISIÓN ESPERADA: 200 000 PESOS`, con la conversión aprobada por Gerson (`≈ 70–85 MILLONES DE SOLES DE HOY*`).
+- 3B, como está: ficha `DOMINGO ELÍAS · INTERMEDIARIO`, unida al expediente. Con «no era el único», detrás del expediente de Novoa asoman, desenfocados, otros dos lomos sin nombre: Elías vuelve en el Ep. 4, y aquí solo queda sembrado. Rótulos `ELÍAS PIDE: DE 500 000 A 600 000 PESOS`, con la conversión aprobada por Gerson debajo de esa línea (`≈ 70–85 MILLONES DE SOLES DE HOY*`, que es lo que pedía, no la comisión: `fuentes.md`, «Pedido de Gerson»), y, más chico, `SU COMISIÓN ESPERADA: 200 000 PESOS`.
 - 3C: Echenique ya se presentó en la ESC 1, así que aquí entra con su etiqueta, sin presentación (regla del sistema de la escena 3). El estado `FUERA DE PLAZO`. El documento se detiene.
-- 3D, como está: nada se mueve durante «Días después». Con la cifra cae el rótulo `948 500 PESOS EN VALES`, `solemne`. El silencio de 2 s es sobre esa imagen quieta. Después, ficha `JUAN CRISÓSTOMO TORRICO · MINISTRO DE GUERRA`. Con «le aseguró», una línea de su ficha se escribe en tinta: `«SOLAMENTE PODRÍA SER APROBADO CON SU INTERVENCIÓN» · Q, p. 171`.
+- 3D, como está: nada se mueve durante «Días después». Con la cifra cae el rótulo `948 500 PESOS EN VALES`, `solemne`. El silencio de 2 s es sobre esa imagen quieta. Después, ficha `JUAN CRISÓSTOMO TORRICO · MINISTRO DE GUERRA`. Con «le aseguró», una línea de su ficha se escribe en tinta: `LE ASEGURÓ A NOVOA QUE «SOLAMENTE PODRÍA SER APROBADO CON SU INTERVENCIÓN» · Q, p. 171`. Son palabras de Quiroz, no de Torrico: por eso la línea empieza fuera de las comillas.
 - 3E, como está: el foco pasa a un segundo campo: `NOVOA: PROBABLEMENTE ≈ 180 000 PESOS EN VALES`. «Probablemente» y «en vales» van al mismo tamaño que la cifra. Se abre el encuadre para comparar los dos campos y el pedido de Elías.
 - 3F, como está: quedan juntos reclamante, intermediario, presidente, ministro y cantidades, sobre el circuito de la escena 2.
 
@@ -197,11 +198,11 @@ Escena nueva de la estructura v2. Responde «¿quiénes?» con las cartas de La 
 **VO:**
 Novoa no fue un caso aislado. [PAUSA 0,6s] En enero de mil ochocientos cincuenta y dos, el mariscal La Fuente, el del episodio anterior, le escribió al ministro de Hacienda, Manuel de Mendiburu. [PAUSA 0,6s] Le pedía firmar unos vales que estaban a nombre de otras dos personas. [PAUSA 0,6s] Y le decía: «Me haría usted un distinguido servicio si usted me los firmara de preferencia». [PAUSA 1,2s]
 
-En junio le volvió a escribir por el resto de ese expediente, que había salido con la firma de uno de ellos. [PAUSA 0,6s] Esta vez le decía: «Estos cuarenta mil y pico de pesos me pertenecen a mí exclusivamente». [PAUSA 1s] Es decir, los vales iban a nombre de otros, y eran suyos. [PAUSA 1,5s]
+En junio le volvió a escribir por el resto de ese expediente, que había salido con la firma de uno de ellos. [PAUSA 0,6s] Esta vez le decía: «Estos cuarenta mil y pico de pesos me pertenecen a mí exclusivamente». [PAUSA 1s] Es decir, los vales iban a nombre de otros, y él mismo decía que eran suyos. [PAUSA 1,5s]
 
 Según Quiroz, bajo el mando de Echenique, de La Fuente y sobre todo de Torrico, varios coroneles del ejército actuaron como figuras satélites intermediarias. [PAUSA 0,6s] Uno de ellos, el coronel Felipe Coz, recibió vales por más de setecientos mil pesos: el quinto monto más grande de la consolidación. [PAUSA 1,2s]
 
-La familia también cobró. Según Quiroz, Pío Tristán, el suegro de Echenique, recibió de pronto ciento veinticuatro mil pesos en vales de la consolidación. [PAUSA 1,5s]
+La familia también cobró. Pío Tristán, el suegro de Echenique, de pronto se vio metido en tratos que le rindieron ciento veinticuatro mil pesos en vales, según Quiroz. [PAUSA 1,5s]
 
 En mil ochocientos cincuenta y cinco, un grabado de Lima dibujó así a Torrico: en una carroza tirada por gallinazos, fumando un cigarro carísimo. [PAUSA 1s] Según Quiroz, ese cigarro representa los millones de pesos repartidos en la consolidación. [PAUSA 1,5s]
 
@@ -215,9 +216,9 @@ Entonces, la red tenía un mariscal que pedía firmas, coroneles que cobraban y 
 - La carta del 3 de junio entra igual y se pone encima, corrida, sin tapar la primera: `«ESTOS 40 MIL Y PICO DE PESOS ME PERTENECEN A MÍ EXCLUSIVAMENTE» · LIMA, 3 DE JUNIO DE 1852`. Con «eran suyos», dos vales con los nombres `CARRIÓN` y `ALBERTINI` se dan vuelta, `ligero`, y en el reverso dice `LA FUENTE`. Abajo, chico: `ADEMÁS, A SU NOMBRE: 82 500 PESOS EN VALES · Q, n. 121`.
 - «coroneles»: tres siluetas de uniforme (no hay retratos; no se inventan caras), con sus nombres `CNEL. FELIPE RIVAS · CNEL. FELIPE COZ · CNEL. PASCUAL SACO`. La cita `«FIGURAS SATÉLITES INTERMEDIARIAS» · Q, p. 175` se escribe encima. Las tres siluetas giran alrededor del medallón de Torrico, `ligero`: la palabra *satélite* hecha imagen.
 - «el coronel Felipe Coz»: brilla solo él. Rótulo `731 200 PESOS EN VALES · 5.º MONTO MÁS GRANDE · Q, n. 122`.
-- «Pío Tristán»: silueta, ficha `PÍO TRISTÁN · SUEGRO DE ECHENIQUE`, unida al medallón de Echenique por una línea de parentesco. Cita `«REPENTINAMENTE» · Q, p. 175` y `124 000 PESOS EN VALES`. Abajo, en la misma franja de parientes y sin que la voz lo diga: `LA VIUDA DEL MINISTRO PIÉROLA: UN VALE DE 50 000 PESOS EN SU TESTAMENTO · 1857 · Q, p. 175`.
+- «Pío Tristán»: silueta, ficha `PÍO TRISTÁN · SUEGRO DE ECHENIQUE`, unida al medallón de Echenique por una línea de parentesco. Cita `«REPENTINAMENTE» · Q, p. 175` y `124 000 PESOS EN VALES`. En la pausa que sigue, no antes, en la misma franja de parientes y sin que la voz lo diga: `LA VIUDA DEL MINISTRO PIÉROLA: UN VALE DE 50 000 PESOS EN SU TESTAMENTO · 1857 · Q, p. 175`.
 - **El grabado.** Con «un grabado de Lima», la mesa se oscurece y el grabado de 1855 entra como un papel más, a media pantalla (la resolución no da para más), con su sombra de contacto. Ficha `«GRATITUD DE LOS GALLINAZOS» · CÁNDIDO, «ADEFESIOS», LIMA, 1855 · BNP`. La cámara se acerca, `pesado`, de la carroza al cigarro: el motivo es el dato que la voz nombra. En el cigarro no se escribe nada todavía: el pie de Quiroz, con la palabra del episodio, queda para la ESC 5.
-- En pantalla, sin voz, durante la pausa del grabado: `ECHENIQUE: 13 800 PESOS EN VALES, OFICIALMENTE · Q, n. 126` y `TORRICO: 23 100 OFICIALMENTE, «PERO TUVO UNA PARTICIPACIÓN MUCHO MAYOR» · Q, n. 120`, uno después del otro, nunca a la vez.
+- En pantalla, sin voz, en el tablero del «Entonces» y no en la pausa del grabado (1 s no alcanza para leer 40 y 75 caracteres a 17 por segundo): `ECHENIQUE: 13 800 PESOS EN VALES, OFICIALMENTE · Q, n. 126` bajo su medallón y `TORRICO: 23 100 OFICIALMENTE, «PERO TUVO UNA PARTICIPACIÓN MUCHO MAYOR» · Q, n. 120` bajo el suyo, uno después del otro, y se quedan en el tablero hasta el corte.
 - «Entonces»: la cámara se abre y la red queda completa sobre la mesa: Echenique y Torrico al centro; La Fuente con sus cartas; los coroneles; Tristán y la viuda. El recuadro `POLÍTICA` de la pizarra de la ESC 2, que asoma en el borde, se llena con un `✓` de tiza.
 
 **Sonido:** el papel de las cartas, seco; una pluma en «de preferencia»; las siluetas sin efecto. En el grabado, la música en tensión baja y queda solo un viento leve; ningún efecto cómico. Un golpe de cierre suave con el «Entonces».
@@ -235,7 +236,7 @@ Planos 4.1 y 4.2 del animatic A8 (la pila crece y recibe nombre), con el párraf
 **VO:**
 Quiroz anota que los expedientes más fraudulentos pasaron en los meses anteriores a dos plazos: junio y octubre de mil ochocientos cincuenta y dos. [PAUSA 1s] Así la deuda pasó de cinco a veinticuatro millones de pesos. Esos millones eran deuda reconocida en vales, que el Estado tendría que pagar después. [PAUSA 0,8s] Y no toda la diferencia fue fraude: para saberlo, hay que abrir los expedientes uno por uno. [PAUSA 1,2s]
 
-Quiroz revisó esos expedientes. Estima que aproximadamente el dieciséis por ciento de esa deuda fue directamente a funcionarios venales y a sus secuaces. [PAUSA 1,5s]
+Quiroz estudió la documentación oficial de la consolidación. Estima que aproximadamente el dieciséis por ciento de esa deuda fue directamente a funcionarios venales y a sus secuaces. [PAUSA 1,5s]
 
 Los vales terminaron concentrados en pocas manos. Según Quiroz, la red que se benefició reunía a varias docenas de personas, y en la época les dieron nombres. [PAUSA 1s] Les decían los consolidados. [PAUSA 2,5s] La palabra que nombraba una forma de pagar las deudas del Estado terminó nombrando a las personas vinculadas con el robo político. [PAUSA 2s]
 
@@ -260,21 +261,21 @@ Entonces, la deuda creció casi cinco veces en un año, y una parte de esos vale
 
 Responde «¿impunes?» para 1852: nadie los iba a parar desde el gobierno. La respuesta completa (la junta, la ley de 1857) es del Ep. 4. Lleva «grava, no aceite», del material de *¿Se puede medir?*, contra la defensa de Echenique, y la cuenta del tramo, que solo se recuerda.
 
-**Cambio:** de «alguien tendría que pararlos» a «el presidente lo llamaba progreso, y la cuenta dice lo contrario».
+**Cambio:** de «alguien tendría que pararlos» a «el presidente decía que había beneficiado a miles de familias, y la cuenta dice lo contrario».
 
 **VO:**
-En mil ochocientos cincuenta y dos, nadie iba a pararlos desde el gobierno. Según Quiroz, las más altas autoridades, Echenique y la mayoría de sus ministros, encabezaban esos intereses. [PAUSA 1s] Y Echenique, ya caído, todavía defendió la consolidación por escrito. [PAUSA 0,6s] Según Quiroz, sostenía que, a pesar de la especulación, miles de familias se habían beneficiado con ella. [PAUSA 1,2s]
+En mil ochocientos cincuenta y dos, nadie iba a pararlos desde el gobierno. Según Quiroz, Echenique y la mayoría de sus ministros encabezaban intereses que buscaban beneficios ilícitos. [PAUSA 1s] Y Echenique, ya caído, todavía defendió la consolidación por escrito. [PAUSA 0,6s] Según Quiroz, sostenía que, a pesar de la especulación, miles de familias se habían beneficiado con ella. [PAUSA 1,2s]
 
 Quiroz lo llama una cínica pretensión, y le responde con los expedientes. La mayoría de los reclamantes originales quedaron fuera, igual que los pequeños inversionistas que habrían podido participar. [PAUSA 1,5s]
 
-La defensa de Echenique se parece a una vieja idea: que la corrupción es un aceite que hace andar una maquinaria trabada. [PAUSA 0,8s] Quiroz responde con los estudios de los años noventa: más corrupción va con menos inversión y menos crecimiento. [PAUSA 0,6s] En lugar de aceitar la maquinaria del Estado, dice, la corrupción es grava. [PAUSA 2s] Con la consolidación, según Quiroz, el país perdió la oportunidad de construir sus finanzas sobre una deuda pública transparente. [PAUSA 1,5s]
+A nosotros, la defensa de Echenique nos recuerda una vieja idea: que la corrupción es un aceite que hace andar una maquinaria trabada. [PAUSA 0,8s] Contra esa idea, Quiroz cita los estudios de los años noventa: más corrupción va con menos inversión y menos crecimiento. [PAUSA 0,6s] En lugar de aceitar la maquinaria del Estado, dice, la corrupción es grava. [PAUSA 2s] Con la consolidación, según Quiroz, el capitalismo peruano perdió la oportunidad de construir sus finanzas sobre una deuda pública transparente. [PAUSA 1,5s]
 
 Por eso, cuando Quiroz saca la cuenta, suma también la inversión que no llegó. [PAUSA 0,6s] Ya lo vimos en el episodio de la colonia: junta lo desviado, directo e indirecto, y lo compara con lo que gastaba el Estado. [PAUSA 0,8s] Para el gobierno de Echenique, su estimado equivale a unos sesenta y cinco de cada cien pesos que gastaba el Estado. [PAUSA 2s]
 
-Entonces, la consolidación no repartió la riqueza del guano entre miles de familias: la concentró, y frenó lo que debía impulsar. [PAUSA 2s]
+Entonces, la consolidación no repartió la riqueza del guano entre miles de familias: la concentró, y dañó el crédito que debía levantar. [PAUSA 2s]
 
 **Imagen:**
-- «las más altas autoridades»: vuelve el tablero de la red de la ESC 4, y se encienden solo Echenique y sus ministros. Cita en pantalla: `«LAS MÁS ALTAS AUTORIDADES, ENTRE ELLAS ECHENIQUE Y LA MAYORÍA DE SUS MINISTROS […], ENCABEZABAN OBSCUROS INTERESES» · Q, p. 174`.
+- «Echenique y la mayoría de sus ministros»: vuelve el tablero de la red de la ESC 4, y se encienden solo Echenique y sus ministros. Cita en pantalla: `«LAS MÁS ALTAS AUTORIDADES, ENTRE ELLAS ECHENIQUE Y LA MAYORÍA DE SUS MINISTROS […], ENCABEZABAN OBSCUROS INTERESES» · Q, p. 174`.
 - «ya caído»: la ficha de Echenique cambia de `PRESIDENTE · 1851–1855` a un libro, `«EL GENERAL ECHENIQUE, PRESIDENTE DESPOJADO DEL PERÚ, EN SU VINDICACIÓN» · NUEVA YORK, 1855 · Q, n. 117`. Con «miles de familias», el libro se abre y en la página aparece, en tinta, `MILES DE FAMILIAS` (es la paráfrasis de Quiroz; no lleva comillas de Echenique).
 - «cínica pretensión»: el corrector rojo la escribe al margen, como nota, con `«CÍNICA PRETENSIÓN» · Q, p. 173`. Con «le responde con los expedientes», la cámara pasa del libro a la pila de vales, `natural`. Con «quedaron fuera», muchas figuras chicas de reclamantes (sin caras, todas iguales en silueta) quedan a un lado de una línea; del otro lado, la pila.
 - En la pausa después de «quedaron fuera»: la pila se concentra en pocos montones con nombre de casa o de comerciante, sin cifras: `CASI ÍNTEGRAMENTE CONCENTRADOS ENTRE UNOS CUANTOS COMERCIANTES Y ESPECULADORES · Q, p. 173`.
@@ -285,7 +286,7 @@ Entonces, la consolidación no repartió la riqueza del guano entre miles de fam
 
 **Sonido:** la música vuelve en tensión con «miles de familias»; el engranaje cruje y se traba con un golpe seco, y después solo papel en la pausa; la barra se llena sin efecto.
 
-**Fuente:** Q, p. 174 («Las más altas autoridades, entre ellas Echenique y la mayoría de sus ministros (Torrico, La Fuente, Paz Soldán, Piérola, Herrera y otros más), encabezaban obscuros intereses»); Q, p. 173 y n. 117 («la cínica pretensión de Echenique según la cual, a pesar de la inevitable especulación, fueron miles de familias las que se beneficiaron con la consolidación»; la *Vindicación* de 1855, p. 101, y sus *Memorias*; la exclusión de «la mayoría de los reclamantes originales y deudores legales, así como los pequeños inversionistas»; vales «casi íntegramente concentrados entre unos cuantos comerciantes y especuladores» «luego de unos cuantos años»; la oportunidad perdida de «una transparente deuda pública»); Q, p. 40 (el «aceite» que lubrica obstáculos burocráticos); Q, p. 43 (los sistemas premodernos que «necesitan la corrupción como un lubricante»); Q, p. 536 («unos niveles más altos de corrupción corresponden a menor inversión y crecimiento», desde los estudios de mediados de la década de 1990); Q, pp. 536–537 («En lugar de "aceitar" la burocracia, la corrupción actúa, en realidad, como "grava" en la maquinaria de las instituciones del sector público»); Ep. 1, ESC 9, y Q, p. 122 (el método); Q, p. 551, cuadro A.7 (Echenique 65 % y 5,0 %; Castilla 1.º 41 %).
+**Fuente:** Q, p. 174 («Las más altas autoridades, entre ellas Echenique y la mayoría de sus ministros (Torrico, La Fuente, Paz Soldán, Piérola, Herrera y otros más), encabezaban obscuros intereses decididos a conseguir o permitir beneficios políticos y pecuniarios ilícitos»); Q, p. 173 y n. 117 («la cínica pretensión de Echenique según la cual, a pesar de la inevitable especulación, fueron miles de familias las que se beneficiaron con la consolidación»; la *Vindicación* de 1855, p. 101, y sus *Memorias*; la exclusión de «la mayoría de los reclamantes originales y deudores legales, así como los pequeños inversionistas»; vales «casi íntegramente concentrados entre unos cuantos comerciantes y especuladores» «luego de unos cuantos años»; la oportunidad perdida de «una transparente deuda pública»); Q, p. 40 (el «aceite» que lubrica obstáculos burocráticos); Q, p. 43 (los sistemas premodernos que «necesitan la corrupción como un lubricante»); Q, p. 536 («unos niveles más altos de corrupción corresponden a menor inversión y crecimiento», desde los estudios de mediados de la década de 1990); Q, pp. 536–537 («En lugar de "aceitar" la burocracia, la corrupción actúa, en realidad, como "grava" en la maquinaria de las instituciones del sector público»); Ep. 1, ESC 9, y Q, p. 122 (el método); Q, p. 551, cuadro A.7 (Echenique 65 % y 5,0 %; Castilla 1.º 41 %; costo institucional de Echenique: «Crédito y bases financieras dañadas», que sostiene «dañó el crédito que debía levantar», junto con la meta de «renovar la confianza en el crédito público nacional», p. 169).
 
 ---
 
@@ -298,9 +299,9 @@ Cierra dos hilos de la serie (la pregunta del Prólogo y la tesis de Quiroz) y a
 <!-- bucle: ¿qué iba a hacer Mendiburu en Londres con los vales? Se responde en el Ep. 4. -->
 
 **VO:**
-Al comienzo de esta serie nos preguntamos adónde fue a parar la plata del guano. [PAUSA 1s] Esa pregunta también estuvo detrás de la tesis de Alfonso Quiroz. [PAUSA 0,6s] Según el historiador Marcos Cueto, Quiroz quería comprobar si la riqueza del guano se había derrochado en lujos, como decían los historiadores de entonces. [PAUSA 0,8s] Encontró otra cosa: el valor de la deuda se había exagerado para enriquecerse a costa del Estado. [PAUSA 1s] Presentó su tesis en mil novecientos ochenta, y siete años después la publicó como libro. Se llama *La deuda defraudada*, como este episodio. [PAUSA 2s]
+Al comienzo de esta serie nos preguntamos adónde fue a parar la plata del guano. [PAUSA 1s] Esa pregunta también estuvo detrás de la tesis de Alfonso Quiroz. [PAUSA 0,6s] Según el historiador Marcos Cueto, Quiroz quería comprobar si la riqueza del guano se había derrochado en lujos, como decían los historiadores de entonces. [PAUSA 0,8s] Encontró otra cosa: algunos habían exagerado el valor de la deuda para enriquecerse a costa del Estado. [PAUSA 1s] Presentó su tesis en mil novecientos ochenta, y siete años después la publicó como libro. Se llama *La deuda defraudada*, como este episodio. [PAUSA 2s]
 
-Pero la historia de estos vales no terminó en Lima. [PAUSA 0,6s] En septiembre de mil ochocientos cincuenta y dos, Echenique escribió una carta de recomendación para la casa Murrieta, de Londres. Era la misma casa del arreglo de mil ochocientos cuarenta y nueve. [PAUSA 0,6s] La carta era para Mendiburu. Al año siguiente, Echenique lo envió a Londres con dos encargos. [PAUSA 0,8s] Uno era volver a negociar ese arreglo. El otro tenía que ver con los vales. [PAUSA 2,5s]
+Pero la historia de estos vales no terminó en Lima. [PAUSA 0,6s] En septiembre de mil ochocientos cincuenta y dos, Echenique escribió una carta de recomendación para la casa Murrieta, de Londres. Era la misma casa del arreglo de mil ochocientos cuarenta y nueve. [PAUSA 0,6s] La carta recomendaba a Mendiburu. Al año siguiente, Echenique lo envió a Londres con dos encargos. [PAUSA 0,8s] Uno era volver a negociar ese arreglo. El otro tenía que ver con los vales. [PAUSA 2,5s]
 
 **Imagen:**
 - «Al comienzo de esta serie»: la tarjeta del Prólogo vuelve, chica: `¿ADÓNDE FUE A PARAR ESA PLATA?`. La cámara baja de la pila de vales a las pruebas de imprenta del libro, `solemne`: es el círculo con el gancho.
@@ -315,7 +316,7 @@ Pero la historia de estos vales no terminó en Lima. [PAUSA 0,6s] En septiembre 
 
 **Sonido:** la música se retira con «Al comienzo de esta serie»; la tesis va casi sin música, con papel. Un tic por tramo del viaje a Londres. Con el negro y la tarjeta, entra solo el tema del canal (quena sobre bombo y charango), y sigue de 4 a 6 s después de la tarjeta (DIRECCION §2.15).
 
-**Fuente:** Prólogo de la serie (`001-el-hombre/guion.md`, ESC 6: «¿Adónde fue a parar esa plata?»); Q, prólogo de Marcos Cueto, pp. 17–18 (tesis de bachiller de 1980, «La consolidación de la deuda interna peruana, 1850-1858»; libro de 1987, *La deuda defraudada: consolidación de 1850 y dominio económico en el Perú*, impreso «La deuda defrauda» [sic] en la p. 17; Quiroz quería «confirmar si era verdad que toda la riqueza adquirida de la exportación del guano […] había sido derrochada en artículos de lujo por parte de las élites, como la historiografía de entonces aseguraba»; «encontró que se había exagerado el valor de la deuda con el fin de enriquecerse a costa del Estado»); Q, n. 139 (carta de Echenique a Murrieta, Lima, 10 de septiembre de 1852); Q, p. 178 (Murrieta, la casa del arreglo de 1849); Q, p. 179 («En 1853, el presidente Echenique envió a Manuel de Mendiburu como ministro plenipotenciario a Londres con una carta de recomendación para Murrieta & Co.»; sus «principales tareas»: la renegociación del arreglo de 1849 y «la contratación de la conversión de una parte importante de la deuda interna consolidada en nueva deuda externa»).
+**Fuente:** Prólogo de la serie (`001-el-hombre/guion.md`, ESC 6: «¿Adónde fue a parar esa plata?»); Q, prólogo de Marcos Cueto, pp. 17–18 (tesis de bachiller de 1980, «La consolidación de la deuda interna peruana, 1850-1858»; libro de 1987, *La deuda defraudada: consolidación de 1850 y dominio económico en el Perú*, impreso «La deuda defrauda» [sic] en la p. 17; Quiroz quería «confirmar si era verdad que toda la riqueza adquirida de la exportación del guano […] había sido derrochada en artículos de lujo por parte de las élites, como la historiografía de entonces aseguraba»; «encontró que se había exagerado el valor de la deuda con el fin de enriquecerse a costa del Estado»); Q, n. 139 (carta de Echenique a Murrieta, Lima, 10 de septiembre de 1852, y la nota al margen de Mendiburu: «Echenique me recomienda a los Murrieta»; por eso la voz dice que la carta lo recomendaba, no que iba dirigida a él); Q, p. 178 (Murrieta, la casa del arreglo de 1849); Q, p. 179 («En 1853, el presidente Echenique envió a Manuel de Mendiburu como ministro plenipotenciario a Londres con una carta de recomendación para Murrieta & Co.»; sus «principales tareas»: la renegociación del arreglo de 1849 y «la contratación de la conversión de una parte importante de la deuda interna consolidada en nueva deuda externa»).
 
 ---
 
@@ -370,4 +371,109 @@ Pendiente de aprobación de Gerson.
 - La formulación sobre los trabajadores chinos («trabajo forzoso») contra B, prólogo, pp. 10–11 (heredado del guion aprobado).
 - De memoria, heredados: las islas de Chincha frente a Pisco; el nombre completo de Torrico y Echenique (los da Q, pp. 171 y 174, pero no se cotejaron con otra fuente).
 - Que «unos treinta años desde la independencia» y «hacia mil ochocientos cincuenta» sigan valiendo con la fecha de la independencia que use el Ep. 2.
-- Que el Prólogo (`001-el-hombre`) termine, en su versión vigente, con «¿Adónde fue a parar esa plata?»: la ESC 7 lo recuerda como «Al comienzo de esta serie».
+- ~~Que el Prólogo (`001-el-hombre`) termine, en su versión vigente, con «¿Adónde fue a parar esa plata?»~~ **Resuelto por el Escribano (21 de noviembre de 2026):** la pregunta está en `001-el-hombre/guion.md`, línea 180, en la versión vigente. «Al comienzo de esta serie» vale.
+
+## Acta del Escribano (21 de noviembre de 2026)
+
+Esta pasada la hizo otro agente, que no escribió el borrador. Seguí el orden del Escribidor Escribano: escalas 1 a 5 y, para la imagen, `diseno-y-animacion` y `direccion-historia` §4. Como es voz, no apliqué el mínimo de 10 palabras. Cotejé cada dato y cada cita de la voz con la página impresa de Quiroz 2013: pp. 17–18, 38, 40, 43, 45, 54, 131–132, 168–181, 536–537 y 551, con sus notas. También cotejé con el expediente, la estructura v2 y `guion.md`.
+
+**Resultado:** 0 altas, 15 medias y 16 bajas. Apliqué las 15 medias y 10 de las bajas. Las 6 bajas que quedan son decisiones de Gerson.
+**Oración más larga de la voz:** 25 palabras (La Fuente, ESC 4). Ninguna pasa de 25.
+**Duración:** la voz quedó en 1764 palabras, 34 más que el borrador. Con la velocidad medida en `guion.md` (unas 3 palabras por segundo, pausas incluidas), el episodio dura unos 9 min 40 s.
+
+### Hallazgos principales
+
+| # | Escala | Grav. | Dónde | Antes | Después | Por qué |
+|---|---|---|---|---|---|---|
+| 1 | Verdad | Media | ESC 7 | «La carta era para Mendiburu.» | «La carta recomendaba a Mendiburu.» | La carta iba dirigida a Murrieta. Mendiburu anotó al margen: «Echenique me recomienda a los Murrieta» (n. 139). Al oído, «era para» quiere decir que iba dirigida a él. |
+| 2 | Verdad | Media | ESC 3 | «a cambio de una comisión, que Quiroz considera legítima» | «a cambio de una comisión, en un acuerdo que Quiroz considera legítimo. Y no era el único…» | Lo «legítimo» en Quiroz es el acuerdo de negocios, no la comisión (p. 171). Al partir la oración, sale además el último tramo, que iba suelto. |
+| 3 | Verdad | Media | ESC 4 | «los vales iban a nombre de otros, y eran suyos» | «…y él mismo decía que eran suyos» | Es lo que afirma La Fuente en su carta (n. 121), no un hecho comprobado. |
+| 4 | Verdad | Media | ESC 4 | «Pío Tristán […] recibió de pronto ciento veinticuatro mil pesos» | «de pronto se vio metido en tratos que le rindieron ciento veinticuatro mil pesos en vales, según Quiroz» | En Quiroz, «repentinamente» va con «se vio involucrado en tratos», no con un pago repentino (p. 175). |
+| 5 | Verdad | Media | ESC 5 | «hay que abrir los expedientes uno por uno. […] Quiroz revisó esos expedientes.» | «Quiroz estudió la documentación oficial de la consolidación.» | Quiroz habla del «estudio independiente de la documentación oficial» (p. 172, n. 116). Pegada a «uno por uno», la frase decía que revisó cada expediente. |
+| 6 | Verdad | Media | ESC 6 | «La defensa de Echenique se parece a una vieja idea […]. Quiroz responde con los estudios…» | «A nosotros, la defensa de Echenique nos recuerda una vieja idea […]. Contra esa idea, Quiroz cita los estudios…» | El puente es nuestro (decisión 11), y la voz no lo decía. Así sonaba como si Quiroz le contestara a Echenique con la grava, cuando la escribe contra la idea del «aceite» (pp. 40 y 536–537). |
+| 7 | Verdad | Media | ESC 2 | «Quiroz le pone además tres apellidos» | «Para el Perú, Quiroz habla de una corrupción administrativa, política y sistemática.» | En la p. 54 son tres adjetivos que describen al Perú, no una tipología. Quiroz solo define la «sistemática» (p. 45). |
+| 8 | Verdad | Media | ESC 1 | «buscaban asegurarse su influencia» | «asegurarse la influencia del nuevo presidente» | Clay habla de la influencia del presidente (p. 168). Con «su», se entendía la de las casas. |
+| 9 | Composición | Media | ESC 1 | «Con esa plata, el Estado…» | «Con la plata del guano, el Estado…» | Al recortar la frase de las casas consignatarias (decisión 5), «esa plata» se quedó sin antecedente: lo anterior son los trabajadores. |
+| 10 | Composición | Media | ESC 2 | «La idea era buena» | «La idea de la consolidación era buena» | La consolidación se nombró un minuto antes, y en medio quedaron Echenique y el «Entonces». |
+| 11 | Composición | Media | ESC 3 | «dos de esas manos» | «dos de las cuatro manos» | El circuito de cuatro manos quedó lejos, detrás de la definición y de los tres adjetivos. |
+| 12 | Composición | Media | ESC 6 | «encabezaban esos intereses» | «encabezaban intereses que buscaban beneficios ilícitos» | «Esos» no tenía antecedente. La frase nueva es la de la p. 174. |
+| 13 | Imagen | Media | ESC 3, 3B | La conversión a soles iba pegada a `SU COMISIÓN ESPERADA: 200 000 PESOS` | Va debajo de `ELÍAS PIDE: DE 500 000 A 600 000 PESOS` | Según `fuentes.md` (pedido de Gerson), los 70–85 millones corresponden a lo que pedía Elías. Pegada a la comisión, multiplicaba su valor por tres. |
+| 14 | Imagen | Media | ESC 2, 2G | Renglones de tiza de 60 a 100 caracteres que repetían la voz mientras hablaba | `QUIÉNES: CAMARILLAS + INTERESES PRIVADOS` · `CÓMO: DESVÍAN RECURSOS, TUERCEN REGLAS` · `CONTRA QUÉ: EL DESARROLLO` | Con los renglones largos, el texto repetía la voz, cada rótulo necesitaba más de 4 s a 17 caracteres por segundo y se pasaba de los 42 caracteres por línea. La cita completa sigue abajo, chica. |
+| 15 | Imagen | Media | ESC 4 | Los rótulos de Echenique (13 800) y Torrico (23 100) salían en la pausa de 1 s del grabado | Van en el tablero del «Entonces», cada uno bajo su medallón, y se quedan hasta el corte | Necesitan unos 2,4 s y 4,4 s de lectura, y la voz seguía hablando del cigarro. |
+
+**Bajas aplicadas:**
+- «desde la guerra de independencia» (p. 170 y acta anterior), en lugar de «desde la independencia».
+- «el capitalismo peruano», como en la versión aprobada (p. 173), en lugar de «el país».
+- La línea de Torrico en pantalla empieza fuera de las comillas («LE ASEGURÓ A NOVOA QUE «…»»): son palabras de Quiroz, no de Torrico.
+- «algunos habían exagerado», en lugar de «se había exagerado … para enriquecerse», que dejaba la frase sin sujeto.
+- El cierre de la ESC 6: «frenó lo que debía impulsar» era vago y pasa a «dañó el crédito que debía levantar». Lo sostienen la p. 169 y el costo institucional del cuadro A.7.
+- El «Cambio» de la ESC 6: la voz nunca dice «progreso». Ahora dice lo que sí se oye: «miles de familias».
+- La definición (ESC 2) ya no repite «políticas» con dos sentidos y cambia los gerundios por verbos conjugados.
+- «casi cinco veces la cifra anterior», para no repetir «un año después… un año antes».
+- El plano 1C pasa con «Con la plata del guano»: ahora la imagen llega con su palabra.
+- La viuda de Piérola entra en la pausa, después de Tristán, y no a la vez: un foco por vez.
+
+**Vicio que más se repitió:** el referente que se perdió al recortar o al mover bloques («esa plata», «la idea», «esas manos», «esos intereses»). Cuando se corta una frase, hay que releer la que sigue.
+
+**Lo que verifiqué y está bien:**
+- 5 y 24 millones; el recálculo de Novoa (1,58 y 1,90).
+- Las citas de las cartas de La Fuente, letra por letra; Coz (731 200 pesos, puesto 5).
+- El grabado: la carroza sale de la descripción de la imagen en `fuentes.md`, y el cigarro, del pie de la fig. 3.
+- El 16 % y la advertencia de que las cifras no se suman.
+- El cuadro A.7, fila por fila: Echenique, 65 % y 5,0 %; Castilla 1.º, 41 % (es la fila anterior).
+- La definición de la p. 38 y el «como usualmente se asume»; el aceite (p. 40) y la grava (p. 537).
+- Echenique entre los «oficiales de alto rango» premiados (p. 132); la tesis de 1980 y el libro de 1987 (pp. 17–18).
+- El rojo aparece solo para la culpa y el corrector.
+- La lista negra, sin coincidencias. El único «no es solo» es la frase de Quiroz.
+- La curva de intensidad, con un solo silencio, justo después del dato más fuerte.
+
+### Las preguntas de la composición
+
+- **Las cinco preguntas de Gerson.** Desde cuándo: ESC 1. Quiénes: ESC 3 y 4. Cómo: ESC 2 y 3. Cuánto: ESC 0, 3, 5 y 6. ¿Impunes?: la ESC 6 solo responde para 1852, con una deducción («nadie iba a pararlos desde el gobierno»), y la respuesta completa queda para el Ep. 4, como pide la estructura. Si Gerson quiere un hecho en lugar de la deducción, la p. 172 dice: «No obstante las obvias evidencias, el gobierno no hizo nada para procesar a los involucrados». Pero esa frase sigue a las denuncias de Elías, que son de 1853 y del Ep. 4, así que no la puse.
+- **Conceptos antes de usarse.** Se cumple: consolidación, vale, corrupción y *los consolidados* llegan antes de usarse. El único término sin presentar es «expediente». Se entiende, pero una vez podría decirse «la carpeta de cada reclamo».
+- **Conectores.** Todos los «pero» corrigen una expectativa. Dos flojos, para Gerson: el «PERO primero» de la ESC 0 a la 1 y el «POR ESO esta historia tiene autor» de la ESC 6 a la 7, que no es una causa.
+- **Carga.** La ESC 4 y la ESC 7 quedan justo en el tope (unos 6 por minuto). Las demás, por debajo.
+- **El gancho.** Es fuerte: tiene hechos duros, una paradoja que el episodio convierte en causa (el guano les puso precio a los reclamos) y una promesa concreta (expedientes, vales y cartas).
+- **Curva y silencio.** Funcionan.
+
+### Qué queda para Gerson
+
+1. **Los recortes de la decisión 17.** Lo que recomiendo:
+   - **Sí: los tres adjetivos** (ESC 2, unas 70 palabras y unos 28 s). Son el párrafo más débil en la verdad (hallazgo 7), está marcado como nuestro y satura la pizarra. Si sale, también salen las tres columnas, el recuadro `POLÍTICA · ESC 4` y su `✓` en la ESC 4. Si se quiere conservar algo, que sea una frase: «Cuando las reglas que protegen el desarrollo no existen o cambian a cada rato, Quiroz habla de corrupción sistemática: como los dos huecos de la ley».
+   - **En parte: el aceite.** Saldría la frase puente, que es nuestra, y los estudios se juntan con la grava: «Quiroz cita los estudios de los años noventa: más corrupción va con menos inversión y menos crecimiento. En lugar de aceitar la maquinaria del Estado, dice, la corrupción es grava». Los estudios se quedan porque el «Por eso […] suma también la inversión que no llegó» depende de ellos. Ahorra unas 25 palabras, unos 10 s.
+   - **En parte: los coroneles.** Saldría la frase de las «figuras satélites», que ya está en pantalla, y Coz se queda: «Entre los coroneles que cobraron, Felipe Coz recibió vales por más de setecientos mil pesos: el quinto monto más grande». Ahorra unas 18 palabras, unos 7 s. Coz no se corta entero: es la cifra más grande de la escena y la que responde «militares».
+   - **No: la frase de Clay.** Sostiene el «desde cuándo», el «Entonces» y el «Cambio» de la ESC 1 («llegaba debiendo favores»).
+   - **No: el comerciante y el hacendado.** Están aprobados y son lo único concreto que dice qué era un reclamo, y la ESC 2 («compraban reclamos viejos») se apoya en ellos.
+   - **Uno nuevo: el recordatorio del método** (ESC 6, «Ya lo vimos en el episodio de la colonia: junta lo desviado…», 22 palabras, unos 8 s). Puede pasar a la tarjeta del Ep. 1, que ya dice lo mismo en pantalla.
+   - **La cuenta.** Con esto se ahorran unos 53 s y el episodio queda en unos 8½ min. Llegar a 8 obliga a tocar la frase de Clay o los ejemplos aprobados, y no lo recomiendo.
+2. **La exageración del engranaje** (CLAUDE §4, principio 10) está en la ESC 6, de intensidad 3. El dato fuerte del episodio es el 948 500 de la ESC 3. O se declara la excepción, o el engranaje se traba con menos fuerza.
+3. **«Según Quiroz»** aparece 10 veces en la voz, y «Quiroz», 24. Conviene variar o juntar atribuciones al oír la toma («anota», «calcula», o una sola atribución por párrafo).
+4. **Texto que repite la voz,** admisible como cita o como pizarra, pero a decidir: la cita de Clay (1E), la pregunta escrita en el gancho y `LA DEUDA SE EXAGERÓ…` en la ESC 7.
+5. **Los dos conectores flojos** de la cadena (ESC 0→1 y ESC 6→7).
+6. **La presentación de La Fuente** («el mariscal La Fuente, el del episodio anterior, le escribió…») mete un inciso de cuatro palabras entre sujeto y verbo. Al oído pasa. Si la toma tropieza, se puede decir «Nuestro viejo conocido, el mariscal La Fuente, le escribió…», como Quiroz.
+
+### [VERIFICAR]
+
+Siguen los del borrador:
+- el cargo de La Fuente en enero de 1852;
+- el retrato de La Fuente;
+- la licencia y la época del retrato de Mendiburu;
+- la BNP;
+- la llegada de Mendiburu a Londres;
+- el 6 %;
+- los trabajadores chinos;
+- Chincha frente a Pisco;
+- los nombres completos;
+- los treinta años desde la independencia.
+
+El del Prólogo quedó resuelto (ver la lista). Agrego tres:
+- **«Completó U. la obra haciendo que se me reconozca los 40 mil y pico»** (n. 121, carta del 3 de junio). Si quiere decir que Mendiburu ya había hecho reconocer esos vales, la voz puede decir que el ministro cumplió, y es el dato más fuerte de «quiénes». La forma de la frase admite dudas, así que la voz no lo afirma.
+- Si el cuadro A.7 incluye la inversión perdida, como dice la nota en pantalla `EL COSTO INCLUYE LA INVERSIÓN QUE NO LLEGÓ`. El A.2 y el A.3 la incluyen para la década, y el A.7 sale de esos cálculos, pero el cuadro no lo dice.
+- Si Torrico ya era ministro de Guerra en el caso Novoa de 1852. La p. 171 lo llama así, y la p. 174 dice que fue «primero como premier y luego» ministro de Guerra.
+
+### Fe
+
+**Doy fe** de la voz con estas correcciones: quedan 0 altas y 0 medias. La fe no reemplaza otros tres filtros:
+- Las frases que cambié son mías, así que conviene que otro agente las lea en frío.
+- Los `[VERIFICAR]` bloquean el render final, no el guion.
+- Falta el visto bueno de Gerson sobre los recortes y el eje.
