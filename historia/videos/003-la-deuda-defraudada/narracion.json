@@ -294,11 +294,23 @@
     0.35
    ],
    [
-    "[dry] El Estado peruano dejó de pagar esos préstamos casi de inmediato.",
+    "[dry] Como vimos en el episodio anterior, el Estado dejó de pagarlos casi de inmediato.",
     0.35
    ],
    [
-    "[measured] En mil ochocientos cuarenta y nueve, el Estado arregló esa deuda con sus acreedores de Londres y volvió a pagar los intereses.",
+    "[serious] [clear] Dejó de pagar porque las condiciones de los préstamos eran de usura y porque no tenía con qué cubrir los intereses.",
+    0.35
+   ],
+   [
+    "[measured] En mil ochocientos cuarenta y nueve, cuando la venta del guano ya le daba dinero, el Estado arregló esa deuda con sus acreedores de Londres.",
+    0.35
+   ],
+   [
+    "[clear] [measured] Según la investigadora Catalina Vizcarra, el arreglo destinó a la deuda la mitad de lo que dejaba el guano vendido en Gran Bretaña.",
+    0.35
+   ],
+   [
+    "[calm] [measured] Para Castilla, el arreglo debía revivir el crédito que el país había perdido en Europa.",
     1.0
    ],
    [
@@ -331,10 +343,6 @@
    ],
    [
     "[dry] [pointed] Uribarren y Montané habían juntado vales antes de firmar sus contratos, así que ganaron con el cambio.",
-    0.8
-   ],
-   [
-    "[serious] [measured] Según un informe de un diplomático de Estados Unidos, en mil ochocientos cincuenta y cinco el dinero del guano ya estaba comprometido con los acreedores de fuera del país.",
     1.0
    ],
    [

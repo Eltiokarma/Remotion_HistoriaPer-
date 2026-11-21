@@ -290,7 +290,7 @@
   ]
  },
  "s04": {
-  "duracion": 313.85,
+  "duracion": 327.95,
   "frases": [
    {
     "desde": 0.3,
@@ -354,157 +354,167 @@
    },
    {
     "desde": 82.67,
-    "hasta": 86.9,
-    "texto": "El Estado peruano dejó de pagar esos préstamos casi de inmediato."
+    "hasta": 88.06,
+    "texto": "Como vimos en el episodio anterior, el Estado dejó de pagarlos casi de inmediato."
    },
    {
-    "desde": 87.25,
-    "hasta": 95.72,
-    "texto": "En mil ochocientos cuarenta y nueve, el Estado arregló esa deuda con sus acreedores de Londres y volvió a pagar los intereses."
+    "desde": 88.41,
+    "hasta": 96.48,
+    "texto": "Dejó de pagar porque las condiciones de los préstamos eran de usura y porque no tenía con qué cubrir los intereses."
    },
    {
-    "desde": 96.72,
-    "hasta": 106.72,
+    "desde": 96.83,
+    "hasta": 106.45,
+    "texto": "En mil ochocientos cuarenta y nueve, cuando la venta del guano ya le daba dinero, el Estado arregló esa deuda con sus acreedores de Londres."
+   },
+   {
+    "desde": 106.8,
+    "hasta": 115.65,
+    "texto": "Según la investigadora Catalina Vizcarra, el arreglo destinó a la deuda la mitad de lo que dejaba el guano vendido en Gran Bretaña."
+   },
+   {
+    "desde": 116.0,
+    "hasta": 121.77,
+    "texto": "Para Castilla, el arreglo debía revivir el crédito que el país había perdido en Europa."
+   },
+   {
+    "desde": 122.77,
+    "hasta": 132.77,
     "texto": "Para cambiar vales por bonos, el Estado firmó contratos con dos casas comerciales a las que encargaba la venta del guano: Uribarren, de París, y Montané."
    },
    {
-    "desde": 107.07,
-    "hasta": 113.22,
+    "desde": 133.12,
+    "hasta": 139.27,
     "texto": "Cada casa le entregaba vales al Estado, y el Estado le daba bonos nuevos por ellos."
    },
    {
-    "desde": 113.57,
-    "hasta": 119.72,
+    "desde": 139.62,
+    "hasta": 145.77,
     "texto": "El contrato con Uribarren lo firmó en Londres Manuel de Mendiburu, el enviado del presidente Echenique."
    },
    {
-    "desde": 120.07,
-    "hasta": 123.15,
+    "desde": 146.12,
+    "hasta": 149.2,
     "texto": "El contrato con Montané se firmó en Lima."
    },
    {
-    "desde": 123.5,
-    "hasta": 129.27,
+    "desde": 149.55,
+    "hasta": 155.32,
     "texto": "Con esos dos contratos se cambió cerca de la mitad de toda la deuda consolidada."
    },
    {
-    "desde": 130.07,
-    "hasta": 136.99,
+    "desde": 156.12,
+    "hasta": 163.04,
     "texto": "En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que tenía escrito."
    },
    {
-    "desde": 137.34,
-    "hasta": 142.34,
+    "desde": 163.39,
+    "hasta": 168.39,
     "texto": "El bono nuevo pronto llegó a valer casi todo lo que tenía escrito."
    },
    {
-    "desde": 142.69,
-    "hasta": 149.23,
+    "desde": 168.74,
+    "hasta": 175.28,
     "texto": "Uribarren y Montané habían juntado vales antes de firmar sus contratos, así que ganaron con el cambio."
    },
    {
-    "desde": 150.03,
-    "hasta": 161.18,
-    "texto": "Según un informe de un diplomático de Estados Unidos, en mil ochocientos cincuenta y cinco el dinero del guano ya estaba comprometido con los acreedores de fuera del país."
-   },
-   {
-    "desde": 162.18,
-    "hasta": 171.03,
+    "desde": 176.28,
+    "hasta": 185.13,
     "texto": "Quiroz llama a ese cambio un lavado: se diseñó para que los vales manchados por su origen salieran limpios, en forma de bonos."
    },
    {
-    "desde": 173.03,
-    "hasta": 180.34,
+    "desde": 187.13,
+    "hasta": 194.43,
     "texto": "En agosto de mil ochocientos cincuenta y tres, Domingo Elías publicó dos cartas en El Comercio contra la consolidación."
    },
    {
-    "desde": 180.69,
-    "hasta": 185.3,
+    "desde": 194.78,
+    "hasta": 199.4,
     "texto": "Ya estaba peleado con Echenique y con Torrico por el caso Novoa."
    },
    {
-    "desde": 185.65,
-    "hasta": 194.12,
+    "desde": 199.75,
+    "hasta": 208.21,
     "texto": "Según Quiroz, sostuvo que la consolidación no beneficiaba a los reclamantes originales, sino a los agiotistas: los que especulaban con los vales."
    },
    {
-    "desde": 195.12,
-    "hasta": 198.58,
+    "desde": 209.21,
+    "hasta": 212.67,
     "texto": "Lo encarcelaron, y al salir se levantó contra Echenique."
    },
    {
-    "desde": 199.58,
-    "hasta": 201.5,
+    "desde": 213.67,
+    "hasta": 215.6,
     "texto": "Elías no denunciaba desde afuera."
    },
    {
-    "desde": 201.85,
-    "hasta": 208.77,
+    "desde": 215.95,
+    "hasta": 222.87,
     "texto": "Él mismo había movido expedientes por comisión, así que su denuncia trae información y también defiende sus intereses."
    },
    {
-    "desde": 209.12,
-    "hasta": 215.66,
+    "desde": 223.22,
+    "hasta": 229.76,
     "texto": "Quiroz lo resume así: defendió reformas contra la corrupción, pero no dejó de beneficiarse de compensaciones oficiales."
    },
    {
-    "desde": 217.16,
-    "hasta": 224.85,
+    "desde": 231.26,
+    "hasta": 238.95,
     "texto": "En mil ochocientos cincuenta y cinco cayó Echenique, volvió Castilla y una junta fiscal revisó los expedientes de la consolidación."
    },
    {
-    "desde": 225.2,
-    "hasta": 232.9,
+    "desde": 239.3,
+    "hasta": 246.99,
     "texto": "Encontró más de doce millones de pesos en ciento cuarenta y un expedientes irregulares o ilegales, y otros cuatro robados."
    },
    {
-    "desde": 234.4,
-    "hasta": 240.93,
+    "desde": 248.49,
+    "hasta": 255.03,
     "texto": "Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos."
    },
    {
-    "desde": 241.28,
-    "hasta": 248.59,
+    "desde": 255.38,
+    "hasta": 262.69,
     "texto": "Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu."
    },
    {
-    "desde": 249.59,
-    "hasta": 259.21,
+    "desde": 263.69,
+    "hasta": 273.3,
     "texto": "Los que tenían los vales protestaron: decían que un vale era como un billete, y que quien lo había comprado no tenía por qué perder."
    },
    {
-    "desde": 259.56,
-    "hasta": 267.25,
+    "desde": 273.65,
+    "hasta": 281.35,
     "texto": "Los diplomáticos de Gran Bretaña y de Francia los respaldaron, y barcos ingleses y franceses rondaban las islas del guano."
    },
    {
-    "desde": 267.6,
-    "hasta": 272.22,
+    "desde": 281.7,
+    "hasta": 286.31,
     "texto": "En el país, además, el general Vivanco se había alzado en armas."
    },
    {
-    "desde": 273.72,
-    "hasta": 284.1,
+    "desde": 287.81,
+    "hasta": 298.2,
     "texto": "En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos sobre bonos y conversión que se habían suspendido."
    },
    {
-    "desde": 284.45,
-    "hasta": 292.53,
+    "desde": 298.55,
+    "hasta": 306.62,
     "texto": "Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron."
    },
    {
-    "desde": 292.88,
-    "hasta": 300.57,
+    "desde": 306.97,
+    "hasta": 314.67,
     "texto": "En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota César Antonio Ugarte en mil novecientos veintiséis."
    },
    {
-    "desde": 301.77,
-    "hasta": 307.92,
+    "desde": 315.87,
+    "hasta": 322.02,
     "texto": "Entonces, la junta encontró expedientes irregulares o ilegales, pero los vales ya habían cambiado de manos."
    },
    {
-    "desde": 308.27,
-    "hasta": 311.35,
+    "desde": 322.37,
+    "hasta": 325.45,
     "texto": "Y una ley volvió a ponerlos en circulación."
    }
   ]

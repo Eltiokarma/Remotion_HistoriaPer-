@@ -983,7 +983,7 @@
           "id": "4.3a",
           "frases": [
             9,
-            13
+            16
           ],
           "verbo": "definir",
           "respiro": 1,
@@ -1022,8 +1022,8 @@
         {
           "id": "4.3b",
           "frases": [
-            14,
-            18
+            17,
+            21
           ],
           "verbo": "pactar",
           "respiro": 1,
@@ -1071,8 +1071,8 @@
         {
           "id": "4.3c",
           "frases": [
-            19,
-            23
+            22,
+            25
           ],
           "verbo": "lavar",
           "respiro": 2,
@@ -1115,8 +1115,8 @@
         {
           "id": "4.4",
           "frases": [
-            24,
-            27
+            26,
+            29
           ],
           "verbo": "denunciar",
           "respiro": 1.5,
@@ -1124,7 +1124,7 @@
           "imagen": "La ficha de Elías vuelve a la mesa y desde ella salen las dos cartas.",
           "pantalla": [
             {
-              "en": 24,
+              "en": 26,
               "t": "El Comercio · 12 y 16 de agosto de 1853"
             }
           ],
@@ -1146,8 +1146,8 @@
         {
           "id": "4.5",
           "frases": [
-            28,
-            30
+            30,
+            32
           ],
           "verbo": "matizar",
           "respiro": 1.5,
@@ -1155,7 +1155,7 @@
           "imagen": "La ficha de Elías con sus dos funciones a los lados: intermediario y denunciante. Quieta mientras habla Quiroz.",
           "pantalla": [
             {
-              "en": 28,
+              "en": 30,
               "t": "intermediario · denunciante",
               "termino": true
             }
@@ -1178,8 +1178,8 @@
         {
           "id": "4.6",
           "frases": [
-            31,
-            32
+            33,
+            34
           ],
           "verbo": "investigar",
           "respiro": 1.5,
@@ -1188,12 +1188,12 @@
           "imagen": "La pila vuelve al centro y el corrector la marca igual que en el gancho, ahora con su explicación. Los cuatro robados son cuatro huecos en el estante, sin monto.",
           "pantalla": [
             {
-              "en": 31,
+              "en": 33,
               "t": "Junta de Examen Fiscal · 1855",
               "ficha": true
             },
             {
-              "en": 32,
+              "en": 34,
               "t": "12,2 millones de pesos · 141 expedientes"
             }
           ],
@@ -1216,8 +1216,8 @@
         {
           "id": "4.7",
           "frases": [
-            33,
-            34
+            35,
+            36
           ],
           "verbo": "suspender",
           "respiro": 1.5,
@@ -1225,7 +1225,7 @@
           "imagen": "Cae el sello de la suspensión. Las fichas de Torrico, Echenique y Mendiburu se deslizan fuera del cuadro, una por vez.",
           "pantalla": [
             {
-              "en": 33,
+              "en": 35,
               "t": "Ley del 29 de diciembre de 1856"
             }
           ],
@@ -1244,8 +1244,8 @@
         {
           "id": "4.8",
           "frases": [
-            35,
-            37
+            37,
+            39
           ],
           "verbo": "presionar",
           "respiro": 2,
@@ -1273,8 +1273,8 @@
         {
           "id": "4.9",
           "frases": [
-            38,
-            42
+            40,
+            44
           ],
           "verbo": "restaurar",
           "respiro": 2,
@@ -1282,11 +1282,11 @@
           "imagen": "La pila con su marca roja. Cae el mismo sello del gancho y la marca se borra a medias, igual que en 0.3. Con 28, la cita entre comillas.",
           "pantalla": [
             {
-              "en": 38,
+              "en": 40,
               "t": "Ley del 11 de marzo de 1857"
             },
             {
-              "en": 39,
+              "en": 41,
               "t": "«tabla rasa» · Quiroz, p. 185"
             }
           ],

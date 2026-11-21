@@ -210,6 +210,4 @@ El Escribano **no dio fe** del borrador: 0 altas y 11 medias. Los problemas fuer
 - el remate nuevo, «La deuda de adentro también se iba a pagar con el guano»;
 - que el nombre de Quirós no vaya en la voz, solo en pantalla.
 
-**Por confirmar:**
-- que Gamarra fuera presidente en noviembre de 1840 (sale de memoria);
-- que Pickett fuera diplomático de Estados Unidos (lo dice la nota de Quiroz).
+**Confirmado por Gerson (21 de noviembre de 2026):** que Gamarra era presidente en noviembre de 1840 y que Pickett era diplomático de Estados Unidos.

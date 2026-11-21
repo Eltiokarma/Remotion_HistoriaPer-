@@ -327,6 +327,4 @@ Se adoptó su versión corregida. Hubo un cambio de orden: el diplomático pasa 
 - **Segunda pasada:** no dio fe (0 altas, 3 medias). Faltaba escribir el «porque»; «pagarla» tenía un referente equívoco; y la oración de 1855 chocaba con «la mitad».
 - **Lo que se adoptó:** la versión corregida del Escribano. La oración del diplomático de 1855 sale de la voz y pasa a la pantalla (Quiroz, n. 108).
 - **La voz todavía no se regenera** (Gerson: «No regeneres la voz hasta que tengamos la versión final de esta sección»). `narracion.json` y los tiempos siguen con la toma anterior.
-- **Por confirmar:**
-  - si Vizcarra es economista o historiadora; la voz dice «investigadora», que es cierto en cualquier caso;
-  - la fuente primaria de la frase de Castilla, que Vizcarra toma de Mathew.
+- **Confirmado por Gerson (21 de noviembre de 2026):** «investigadora» para Vizcarra y la frase de Castilla tal como la cita Vizcarra. Sección cerrada: se regenera la voz. Desde cuándo estaba comprometido el guano va en pantalla, no en la voz: decreto de enero de 1842, incumplido (Vizcarra, p. 22, n. 22), y contratos del 31 de enero de 1849, con la mitad del guano vendido en Gran Bretaña para los bonistas (p. 26).
