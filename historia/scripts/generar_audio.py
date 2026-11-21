@@ -1056,7 +1056,7 @@ def m001_s04(b, dur):
 
 
 def m001_s05(b, dur):  # (el puente: hoy es la escena s06 del 0·1)
-    """Puente al 0·2: el comienzo del mecanismo (mar abierto, la plata que entra) y la pregunta en el aire."""
+    """Puente al 0·3: el comienzo del mecanismo (mar abierto, la plata que entra) y la pregunta en el aire."""
     p = Partitura(dur, J)
     r = np.random.default_rng(1850)
     fl, con = b["flecha"], b["consolidacion"]

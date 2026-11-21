@@ -115,7 +115,7 @@ AIRE_MAX = 10 ** (-52 / 20)   # el aire no pasa de −52 dBFS: más fuerte ya es
 def aire(muestra, segundos):
     """El tramo más quieto de la toma, repetido con fundidos: el piso de la misma voz.
 
-    Gerson (2026-11-21): en s03 del 0·2 la toma corta («Por novecientos cuarenta y ocho mil quinientos
+    Gerson (2026-11-21): en s03 del 0·3 la toma corta («Por novecientos cuarenta y ocho mil quinientos
     pesos en vales») no tenía silencio; el tramo más quieto era la «s» final y se oyó repetida dos
     segundos. Por eso conviene pasarle todas las tomas de la escena, y si aun así el tramo suena, se
     baja hasta AIRE_MAX."""

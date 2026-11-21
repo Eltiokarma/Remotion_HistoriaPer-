@@ -1,5 +1,5 @@
-import storyboard from '../../../videos/002-la-deuda-defraudada/storyboard.json';
-import tiempos from '../../../videos/002-la-deuda-defraudada/narracion_tiempos.json';
+import storyboard from '../../../videos/003-la-deuda-defraudada/storyboard.json';
+import tiempos from '../../../videos/003-la-deuda-defraudada/narracion_tiempos.json';
 
 /**
  * Línea de tiempo del animatic: la voz manda.

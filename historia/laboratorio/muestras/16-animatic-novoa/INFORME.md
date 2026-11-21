@@ -1,4 +1,4 @@
-# Informe · Laboratorio 16 · Animatic de la escena 3 del 0·2
+# Informe · Laboratorio 16 · Animatic de la escena 3 del 0·3
 
 20 de noviembre de 2026. Render técnico correcto y revisión visual del agente; **sin aprobación de Gerson**.
 

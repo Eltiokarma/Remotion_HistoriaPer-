@@ -12,7 +12,7 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 
 ## Resumen
 
-✅ hecho: **30** · 🔄 en curso: **11** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
+✅ hecho: **30** · 🔄 en curso: **13** · ⏳ pendiente: **6** · 💡 propuesto: **11** · ⛔ bloqueado: **3** · ✖️ descartado: **1**
 
 **Bloqueos y condiciones abiertas**
 
@@ -26,9 +26,9 @@ Actualizado: **2026-11-19**. Fuente única: [`roadmap/roadmap.json`](roadmap/roa
 - `e2-recursos-escena01` Recursos vectoriales de la escena 1 «Las islas y el país» (objetos SVG para personajes PNG): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-recursos-escena02` Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos): Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
 - `e2-recursos-escena03` Recursos vectoriales de la escena 3 «El expediente de Novoa» (despacho, folios del caso, rótulos y conectores): Dibujos entregados y revisados por el agente; falta la revisión de Gerson (retratos o figuras para Echenique y Torrico; frase del storyboard sobre Torrico), generar los PNG de ChatGPT e integrar en Remotion.
-- `e2-guion-locucion` Guion del 0·2 escrito como locución completa, con el criterio del Escribidor Escribano: Tres actas del Escribano aplicadas (la última: 0 altas, 12 medias corregidas); falta el lector en frío y el visto bueno de Gerson, y resolver los [VERIFICAR].
-- `e2-storyboard-adaptado` Storyboard del 0·2 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual: Propuesta del agente: falta la revisión de Gerson, el animatic de la escena 3 para comparar versiones A/B/C, y dibujar las piezas que el storyboard marca como faltantes (pila de vales, línea de 1852, página con huecos, flecha de adelantos, ficha de la abolición, bono y mancha del lavado, barcos en el horizonte).
-- `e2-narracion` Narración del 0·2 con ElevenLabs (Joder Jolines, eleven_v4), con emoción por frase y tiempos reales: Falta que Gerson la escuche (pronunciación de nombres, emoción, ritmo) antes de cuadrar los beats.
+- `e2-guion-locucion` Guion del 0·3 escrito como locución completa, con el criterio del Escribidor Escribano: Tres actas del Escribano aplicadas (la última: 0 altas, 12 medias corregidas); falta el lector en frío y el visto bueno de Gerson, y resolver los [VERIFICAR].
+- `e2-storyboard-adaptado` Storyboard del 0·3 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual: Propuesta del agente: falta la revisión de Gerson, el animatic de la escena 3 para comparar versiones A/B/C, y dibujar las piezas que el storyboard marca como faltantes (pila de vales, línea de 1852, página con huecos, flecha de adelantos, ficha de la abolición, bono y mancha del lavado, barcos en el horizonte).
+- `e2-narracion` Narración del 0·3 con ElevenLabs (Joder Jolines, eleven_v4), con emoción por frase y tiempos reales: Falta que Gerson la escuche (pronunciación de nombres, emoción, ritmo) antes de cuadrar los beats.
 
 ## Vista temporal
 
@@ -81,12 +81,12 @@ gantt
   Integrar los 16 diseños aprobados de VectorCraft conservando la animación :done, e1laminas, 2026-11-10, 1d
   Narración con la voz de ElevenLabs «Joder Jolines» (una toma por escena) :done, e1voz, 2026-11-10, 1d
   Ambientes y efectos reales (Freesound o ElevenLabs) :done, e1ambientes, 2026-11-10, 1d
-  section Episodio 0·2 · La deuda defraudada
-  Animatic de la escena 3 del 0·2 sobre la voz real versiones A–D, auditoría E1–E6 y la F (presentación de personajes y un papel por dueño), en revisión de Gerson :done, e2animatics03, 2026-11-20, 2d
-  Tres papeles distintos para la escena 3 del 0·2 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT :done, e2folioss03, 2026-11-21, 1d
+  section Episodio 0·3 · La deuda defraudada
+  Animatic de la escena 3 del 0·3 sobre la voz real versiones A–D, auditoría E1–E6 y la F (presentación de personajes y un papel por dueño), en revisión de Gerson :done, e2animatics03, 2026-11-20, 2d
+  Tres papeles distintos para la escena 3 del 0·3 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT :done, e2folioss03, 2026-11-21, 1d
 ```
 
-Sin fecha (24): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso), `e2-narracion` (🔄 en curso), `e2-animatic-s04` (🔄 en curso).
+Sin fecha (26): `f0-skill-canal` (🔄 en curso), `f0-skill-medir` (⏳ pendiente), `es-blueprint` (💡 propuesto), `es-recorte` (💡 propuesto), `es-ticket` (💡 propuesto), `es-isometrico` (💡 propuesto), `es-pincel` (💡 propuesto), `es-descartados` (✖️ descartado), `t4-houdini-preparar` (⏳ pendiente), `t4-houdini-prueba` (⛔ bloqueado), `t4-unreal-preparar` (⏳ pendiente), `t4-unreal-prueba` (⛔ bloqueado), `t4-comfyui` (⏳ pendiente), `t4-elevenlabs` (🔄 en curso), `f5-pc` (⛔ bloqueado), `e1-revision-laminas` (⏳ pendiente), `e1-musica` (🔄 en curso), `e2-recursos-escena01` (🔄 en curso), `e2-recursos-escena02` (🔄 en curso), `e2-recursos-escena03` (🔄 en curso), `e2-guion-locucion` (🔄 en curso), `e2-storyboard-adaptado` (🔄 en curso), `e2-narracion` (🔄 en curso), `e2-animatic-s04` (🔄 en curso), `e2b-saqueo-guion` (🔄 en curso), `e2b-saqueo-storyboard` (🔄 en curso).
 
 ## Tareas
 
@@ -413,66 +413,76 @@ Tiempo: **H** = humano (min), **A** = ejecución del agente (ventana de reloj), 
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Evidencia: [001-el-hombre/fuentes.md](historia/videos/001-el-hombre/fuentes.md) · [scripts/generar_audio.py](historia/scripts/generar_audio.py)
 
-### Episodio 0·2 · La deuda defraudada
+### Episodio 0·3 · La deuda defraudada
 
 - [ ] **Recursos vectoriales de la escena 1 «Las islas y el país» (objetos SVG para personajes PNG)** `e2-recursos-escena01` — 🔄 en curso
-  - Entregable: historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/: dos originales de VectorCraft, 61 SVG por momento y pieza, hoja de contacto, dos composiciones de prueba, hoja de montaje, inventario y lista de imágenes para ChatGPT
+  - Entregable: historia/videos/003-la-deuda-defraudada/diseno/recursos-escena01/: dos originales de VectorCraft, 61 SVG por momento y pieza, hoja de contacto, dos composiciones de prueba, hoja de montaje, inventario y lista de imágenes para ChatGPT
   - Prevista: — · Real: 2026-11-17 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
-  - Evidencia: [recursos-escena01/README.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/README.md) · [recursos-escena01/inventario.json](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/inventario.json) · [recursos-escena01/imagenes-chatgpt.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/imagenes-chatgpt.md) · [revision/contacto.png](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena01/revision/contacto.png)
+  - Evidencia: [recursos-escena01/README.md](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena01/README.md) · [recursos-escena01/inventario.json](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena01/inventario.json) · [recursos-escena01/imagenes-chatgpt.md](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena01/imagenes-chatgpt.md) · [revision/contacto.png](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena01/revision/contacto.png)
 - [ ] **Recursos vectoriales de la escena 2 «El recorrido de un reclamo» (pizarra, tiza, vale y documentos)** `e2-recursos-escena02` — 🔄 en curso
-  - Entregable: historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/: dos originales de VectorCraft, 49 SVG por momento y pieza, hoja de contacto, dos composiciones de prueba, hoja de montaje, inventario y lista de imágenes para ChatGPT
+  - Entregable: historia/videos/003-la-deuda-defraudada/diseno/recursos-escena02/: dos originales de VectorCraft, 49 SVG por momento y pieza, hoja de contacto, dos composiciones de prueba, hoja de montaje, inventario y lista de imágenes para ChatGPT
   - Depende de: `e2-recursos-escena01`
   - Prevista: — · Real: 2026-11-17 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Dibujos entregados y revisados por el agente; falta la revisión de Gerson, generar los PNG de ChatGPT e integrar en Remotion.
-  - Evidencia: [recursos-escena02/README.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/README.md) · [recursos-escena02/inventario.json](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/inventario.json) · [recursos-escena02/imagenes-chatgpt.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/imagenes-chatgpt.md) · [revision/contacto.png](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena02/revision/contacto.png)
+  - Evidencia: [recursos-escena02/README.md](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena02/README.md) · [recursos-escena02/inventario.json](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena02/inventario.json) · [recursos-escena02/imagenes-chatgpt.md](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena02/imagenes-chatgpt.md) · [revision/contacto.png](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena02/revision/contacto.png)
 - [ ] **Recursos vectoriales de la escena 3 «El expediente de Novoa» (despacho, folios del caso, rótulos y conectores)** `e2-recursos-escena03` — 🔄 en curso
-  - Entregable: historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/: dos originales de VectorCraft, 82 SVG por momento y pieza, hoja de contacto, dos composiciones de prueba, hoja de montaje, inventario y lista de imágenes para ChatGPT
+  - Entregable: historia/videos/003-la-deuda-defraudada/diseno/recursos-escena03/: dos originales de VectorCraft, 82 SVG por momento y pieza, hoja de contacto, dos composiciones de prueba, hoja de montaje, inventario y lista de imágenes para ChatGPT
   - Depende de: `e2-recursos-escena02`
   - Prevista: — · Real: 2026-11-17 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Dibujos entregados y revisados por el agente; falta la revisión de Gerson (retratos o figuras para Echenique y Torrico; frase del storyboard sobre Torrico), generar los PNG de ChatGPT e integrar en Remotion.
-  - Evidencia: [recursos-escena03/README.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/README.md) · [recursos-escena03/inventario.json](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/inventario.json) · [recursos-escena03/imagenes-chatgpt.md](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/imagenes-chatgpt.md) · [revision/contacto.png](historia/videos/002-la-deuda-defraudada/diseno/recursos-escena03/revision/contacto.png)
-- [ ] **Guion del 0·2 escrito como locución completa, con el criterio del Escribidor Escribano** `e2-guion-locucion` — 🔄 en curso
-  - Entregable: historia/videos/002-la-deuda-defraudada/guion.md: voz de las escenas 0 a 6, imagen, sonido y fuente por escena, decisiones de escritura, cambios que pide al storyboard y pendientes [VERIFICAR]; fuentes.md: datos nuevos con su página
+  - Evidencia: [recursos-escena03/README.md](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena03/README.md) · [recursos-escena03/inventario.json](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena03/inventario.json) · [recursos-escena03/imagenes-chatgpt.md](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena03/imagenes-chatgpt.md) · [revision/contacto.png](historia/videos/003-la-deuda-defraudada/diseno/recursos-escena03/revision/contacto.png)
+- [ ] **Guion del 0·3 escrito como locución completa, con el criterio del Escribidor Escribano** `e2-guion-locucion` — 🔄 en curso
+  - Entregable: historia/videos/003-la-deuda-defraudada/guion.md: voz de las escenas 0 a 6, imagen, sonido y fuente por escena, decisiones de escritura, cambios que pide al storyboard y pendientes [VERIFICAR]; fuentes.md: datos nuevos con su página
   - Prevista: — · Real: 2026-11-19 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Tres actas del Escribano aplicadas (la última: 0 altas, 12 medias corregidas); falta el lector en frío y el visto bueno de Gerson, y resolver los [VERIFICAR].
-  - Evidencia: [002-la-deuda-defraudada/guion.md](historia/videos/002-la-deuda-defraudada/guion.md) · [002-la-deuda-defraudada/fuentes.md](historia/videos/002-la-deuda-defraudada/fuentes.md)
-- [ ] **Storyboard del 0·2 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual** `e2-storyboard-adaptado` — 🔄 en curso
-  - Entregable: historia/videos/002-la-deuda-defraudada/storyboard.json (versión 2: revisión del anterior, sistema visual y 36 planos anclados a las frases de la voz), storyboard.py → storyboard.html y storyboard.md con métricas de lectura, repetición, cámara quieta, voz por escena y datos por minuto
+  - Evidencia: [003-la-deuda-defraudada/guion.md](historia/videos/003-la-deuda-defraudada/guion.md) · [003-la-deuda-defraudada/fuentes.md](historia/videos/003-la-deuda-defraudada/fuentes.md)
+- [ ] **Storyboard del 0·3 rehecho sobre la voz real (versión 2), revisado con dirección y estructura visual** `e2-storyboard-adaptado` — 🔄 en curso
+  - Entregable: historia/videos/003-la-deuda-defraudada/storyboard.json (versión 2: revisión del anterior, sistema visual y 36 planos anclados a las frases de la voz), storyboard.py → storyboard.html y storyboard.md con métricas de lectura, repetición, cámara quieta, voz por escena y datos por minuto
   - Depende de: `e2-guion-locucion`, `e2-narracion`
   - Prevista: — · Real: 2026-11-19 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Propuesta del agente: falta la revisión de Gerson, el animatic de la escena 3 para comparar versiones A/B/C, y dibujar las piezas que el storyboard marca como faltantes (pila de vales, línea de 1852, página con huecos, flecha de adelantos, ficha de la abolición, bono y mancha del lavado, barcos en el horizonte).
-  - Evidencia: [002-la-deuda-defraudada/storyboard.json](historia/videos/002-la-deuda-defraudada/storyboard.json) · [002-la-deuda-defraudada/storyboard.html](historia/videos/002-la-deuda-defraudada/storyboard.html) · [002-la-deuda-defraudada/storyboard.md](historia/videos/002-la-deuda-defraudada/storyboard.md)
-- [ ] **Narración del 0·2 con ElevenLabs (Joder Jolines, eleven_v4), con emoción por frase y tiempos reales** `e2-narracion` — 🔄 en curso
-  - Entregable: historia/public/videos/002-la-deuda-defraudada/voz/s00–s05.mp3 (9 min 28 s, −16 LUFS); narracion.json, narracion_tiempos.json y manuscrito.md con emoción, pausas y segundo de inicio de cada frase
+  - Evidencia: [003-la-deuda-defraudada/storyboard.json](historia/videos/003-la-deuda-defraudada/storyboard.json) · [003-la-deuda-defraudada/storyboard.html](historia/videos/003-la-deuda-defraudada/storyboard.html) · [003-la-deuda-defraudada/storyboard.md](historia/videos/003-la-deuda-defraudada/storyboard.md)
+- [ ] **Narración del 0·3 con ElevenLabs (Joder Jolines, eleven_v4), con emoción por frase y tiempos reales** `e2-narracion` — 🔄 en curso
+  - Entregable: historia/public/videos/003-la-deuda-defraudada/voz/s00–s05.mp3 (9 min 28 s, −16 LUFS); narracion.json, narracion_tiempos.json y manuscrito.md con emoción, pausas y segundo de inicio de cada frase
   - Depende de: `e2-guion-locucion`
   - Prevista: — · Real: 2026-11-19 → …
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
   - Bloqueo: Falta que Gerson la escuche (pronunciación de nombres, emoción, ritmo) antes de cuadrar los beats.
-  - Evidencia: [002-la-deuda-defraudada/manuscrito.md](historia/videos/002-la-deuda-defraudada/manuscrito.md) · [002-la-deuda-defraudada/narracion_tiempos.json](historia/videos/002-la-deuda-defraudada/narracion_tiempos.json)
-- [x] **Animatic de la escena 3 del 0·2 sobre la voz real: versiones A–D, auditoría E1–E6 y la F (presentación de personajes y un papel por dueño), en revisión de Gerson** `e2-animatic-s03` — ✅ hecho
+  - Evidencia: [003-la-deuda-defraudada/manuscrito.md](historia/videos/003-la-deuda-defraudada/manuscrito.md) · [003-la-deuda-defraudada/narracion_tiempos.json](historia/videos/003-la-deuda-defraudada/narracion_tiempos.json)
+- [x] **Animatic de la escena 3 del 0·3 sobre la voz real: versiones A–D, auditoría E1–E6 y la F (presentación de personajes y un papel por dueño), en revisión de Gerson** `e2-animatic-s03` — ✅ hecho
   - Entregable: historia/laboratorio/muestras/16-animatic-novoa/ (código, README, INFORME, resultados/hoja.jpg y render-*.json); MP4 fuera de git en laboratorio/out/16-animatic-novoa/
   - Depende de: `e2-storyboard-adaptado`, `e2-narracion`
   - Prevista: — · Real: 2026-11-20 → 2026-11-21
   - Tiempo: H ¿? · A ¿? · R 874.8 s en contenedor · tokens ¿?
   - Evidencia: [16-animatic-novoa/INFORME.md](historia/laboratorio/muestras/16-animatic-novoa/INFORME.md) · [resultados/hoja.jpg](historia/laboratorio/muestras/16-animatic-novoa/resultados/hoja.jpg) · [resultados/versiones-D-E6.jpg](historia/laboratorio/muestras/16-animatic-novoa/resultados/versiones-D-E6.jpg) · [resultados/render-E6.json](historia/laboratorio/muestras/16-animatic-novoa/resultados/render-E6.json) · [resultados/render-F.json](historia/laboratorio/muestras/16-animatic-novoa/resultados/render-F.json)
-- [x] **Tres papeles distintos para la escena 3 del 0·2 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT** `e2-folios-s03` — ✅ hecho
-  - Entregable: historia/videos/002-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md; imágenes obj-13 a obj-15 en la galería (fuera de git)
+- [x] **Tres papeles distintos para la escena 3 del 0·3 (carta de Elías, oficio del gobierno, recibo de Novoa), pedidos a ChatGPT** `e2-folios-s03` — ✅ hecho
+  - Entregable: historia/videos/003-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md; imágenes obj-13 a obj-15 en la galería (fuera de git)
   - Depende de: `e2-animatic-s03`
   - Prevista: — · Real: 2026-11-21
   - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
-  - Evidencia: [diseno/prompts-chatgpt-folios-s03.md](historia/videos/002-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md) · [002-la-deuda-defraudada/fuentes.md](historia/videos/002-la-deuda-defraudada/fuentes.md)
-- [ ] **Animatic de la escena 4 del 0·2 sobre la voz real, en dos partes (A: 4.1–4.3; B: 4.4–4.9), con el sistema de la escena 3** `e2-animatic-s04` — 🔄 en curso
-  - Entregable: historia/laboratorio/muestras/17-animatic-s04/ y videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md; MP4 fuera de git
+  - Evidencia: [diseno/prompts-chatgpt-folios-s03.md](historia/videos/003-la-deuda-defraudada/diseno/prompts-chatgpt-folios-s03.md) · [003-la-deuda-defraudada/fuentes.md](historia/videos/003-la-deuda-defraudada/fuentes.md)
+- [ ] **Animatic de la escena 4 del 0·3 sobre la voz real, en dos partes (A: 4.1–4.3; B: 4.4–4.9), con el sistema de la escena 3** `e2-animatic-s04` — 🔄 en curso
+  - Entregable: historia/laboratorio/muestras/17-animatic-s04/ y videos/003-la-deuda-defraudada/diseno/plan-animatic-s04.md; MP4 fuera de git
   - Depende de: `e2-animatic-s03`
   - Prevista: — · Real: 2026-11-21 → …
   - Tiempo: H ¿? · A ¿? · R 289.9 s en contenedor · tokens ¿?
-  - Evidencia: [diseno/plan-animatic-s04.md](historia/videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md) · [17-animatic-s04/README.md](historia/laboratorio/muestras/17-animatic-s04/README.md) · [resultados/render-A.json](historia/laboratorio/muestras/17-animatic-s04/resultados/render-A.json) · [17-animatic-s04/INFORME.md](historia/laboratorio/muestras/17-animatic-s04/INFORME.md)
+  - Evidencia: [diseno/plan-animatic-s04.md](historia/videos/003-la-deuda-defraudada/diseno/plan-animatic-s04.md) · [17-animatic-s04/README.md](historia/laboratorio/muestras/17-animatic-s04/README.md) · [resultados/render-A.json](historia/laboratorio/muestras/17-animatic-s04/resultados/render-A.json) · [17-animatic-s04/INFORME.md](historia/laboratorio/muestras/17-animatic-s04/INFORME.md)
+- [ ] **0·2 Saqueo patriota (episodio nuevo, Q pp. 130–144): guion con Escribidor y Escribano; renumeración de la serie (la deuda pasa a 0·3)** `e2b-saqueo-guion` — 🔄 en curso
+  - Entregable: historia/videos/002-saqueo-patriota/guion.md
+  - Prevista: — · Real: 2026-11-21 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
+  - Evidencia: [002-saqueo-patriota/guion.md](historia/videos/002-saqueo-patriota/guion.md)
+- [ ] **0·2 Saqueo patriota: storyboard (con libras esterlinas en soles de hoy)** `e2b-saqueo-storyboard` — 🔄 en curso
+  - Entregable: historia/videos/002-saqueo-patriota/storyboard.json, storyboard.md y storyboard.html
+  - Depende de: `e2b-saqueo-guion`
+  - Prevista: — · Real: 2026-11-21 → …
+  - Tiempo: H ¿? · A ¿? · R ¿? · tokens ¿?
 
 ## Máquinas
 

@@ -1,0 +1,116 @@
+{
+  "titulo": "La investigación y los vales que siguen circulando",
+  "episodio": "003-la-deuda-defraudada",
+  "seccion": 4,
+  "fecha": "2026-11-09",
+  "herramienta": "VectorCraft mediante MCP",
+  "estado": "Borrador pendiente de revisión y aprobación de Gerson",
+  "laminas": 4,
+  "vinyetas": 16,
+  "artboard": {
+    "ancho": 2520,
+    "alto": 2140
+  },
+  "fuente": "Quiroz, Historia de la corrupción en el Perú, 2013, pp. 170–172, 179–185 y 187",
+  "recursos_reutilizados": [
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/edificio-estado-video01.svg",
+      "sha256": "d310fe95427b4693203bac046018c44c5fd742c90aa3d3f654f2cea9692e42a7",
+      "uso": "Separación de capas de presentación; importación vectorial mediante MCP; original intacto"
+    },
+    {
+      "archivo": "historia/videos/001-el-hombre/diseno/recursos-aprobados/tanda04-fichero.svg",
+      "sha256": "21477428be25f8e55cc93fac36a16b975cc43fe1988e9611fa56c9f519efcb62",
+      "uso": "Separación de capas de presentación; importación vectorial mediante MCP; original intacto"
+    }
+  ],
+  "archivos": [
+    {
+      "archivo": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "archivo": "ANIMACION.md",
+      "bytes": 4640,
+      "sha256": "5d1e769d9a5cb6ec6d21210d4b518ad59fdbd71c40375e0a42941e6d29a64758"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 16952,
+      "sha256": "ac6b555c3f814c85be6c97bcda7add804e4ba0916933b3c879e41c4c3715c9e6"
+    },
+    {
+      "archivo": "secuencia.json",
+      "bytes": 19978,
+      "sha256": "c911d460180edb5fc8bd9de34484b831e0ab61a2551bb6ad314399e63465060d"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina1.png",
+      "bytes": 332248,
+      "sha256": "de654b13f65af170c415da9ffb4ad3b06a74917cb381ad6a43865f6b9ef2bdff"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina1.svg",
+      "bytes": 2107281,
+      "sha256": "7f00f7561689370971b6068dcdca3734527340d1c1160ba522f75903beae03ed"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina2.png",
+      "bytes": 381621,
+      "sha256": "401facd9d0c115b31b6390c6ca940da2cc5b7ec5ffbe91a50462eae932f99349"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina2.svg",
+      "bytes": 2430859,
+      "sha256": "22df9b6f6eee2316bf19c8850b7d20563c799450ff92bd09899767bf719d74f8"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina3.png",
+      "bytes": 276543,
+      "sha256": "88146489cba25ddbf5eaaa1a9ccb1905c3e32c2cff1811b3575d2cbe51e78ef2"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina3.svg",
+      "bytes": 2096737,
+      "sha256": "5f6b7f12bbd3042567ed2e06c70036c3ba81521c941342684abea75d7a9bbc6a"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina4.png",
+      "bytes": 355951,
+      "sha256": "0e6f6fc49333a056746c73dd5397f62c2e651d588aa4af99a269e648f368ae95"
+    },
+    {
+      "archivo": "storyboard-02-seccion04-lamina4.svg",
+      "bytes": 2697258,
+      "sha256": "d9d7e7cd365c394b5dbc2f09d8bd727631fe17cb55e80768b6097c7ef14aeae3"
+    },
+    {
+      "archivo": "storyboard-02-seccion04.pdf",
+      "bytes": 4308480,
+      "sha256": "962cf90e58cb6d4041cb720e66adf653e0574b94b68fa952e072115e9a452d3d"
+    },
+    {
+      "archivo": "storyboard-02-seccion04.vectorcraft",
+      "bytes": 347342,
+      "sha256": "325a124756c2e4a0e94bed4b092f79817456277842e44276421d338dbe7fff0d"
+    },
+    {
+      "archivo": "validacion.json",
+      "bytes": 793,
+      "sha256": "e1c42aa1c95f6f2e6feda459cf482b4ad99a6b00e3e62736528e97be5d39ae7a"
+    }
+  ],
+  "fecha_revision": "2026-11-10",
+  "revision": "Continuidad, personajes de época y rostros corregidos",
+  "conteo_revision": {
+    "figuras": 3,
+    "manos": 4,
+    "retirados": 0,
+    "laminas": 4,
+    "vinyetas": 16
+  },
+  "video_generado": false,
+  "fecha_revision_continuidad": "2026-11-10",
+  "desarrollo_continuidad": "../escenas-largas/escena-04/secuencia.json"
+}

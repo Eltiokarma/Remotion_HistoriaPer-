@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storyboard 0·3</title><style>
+:root { --papel:#f3ecdc; --tinta:#2a2420; --suave:#6b5f53; --linea:#d9ccb2; --rojo:#a3322a; --ocre:#94690f; --verde:#4a6a40; --azul:#3d5f7a; --caja:#ebe1cb; --caja2:#e4d8bd; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --papel:#1d1a17; --tinta:#ece3d2; --suave:#a89a87; --linea:#3a332c; --rojo:#e0675c; --ocre:#d9a646; --verde:#8db07f; --azul:#86aac6; --caja:#26221e; --caja2:#2e2924; } }
+:root[data-theme="dark"] { --papel:#1d1a17; --tinta:#ece3d2; --suave:#a89a87; --linea:#3a332c; --rojo:#e0675c; --ocre:#d9a646; --verde:#8db07f; --azul:#86aac6; --caja:#26221e; --caja2:#2e2924; }
+* { box-sizing:border-box; } html { scroll-behavior:smooth; }
+body { margin:0; background:var(--papel); color:var(--tinta); font:17px/1.55 "EB Garamond", Georgia, serif; }
+main { max-width:1180px; margin:0 auto; padding:34px 16px 90px; }
+.et, .chip, .sello, .pid, .verbo, .tiempo, .t, .tags, .pausa, .num, .larga, .meta, nav a b, th, .en, .seg { font-family:ui-monospace, "IBM Plex Mono", Menlo, monospace; }
+h1 { font-size:2.1rem; line-height:1.15; margin:4px 0 8px; font-weight:600; }
+.meta { font-size:.76rem; color:var(--suave); }
+.intro { max-width:74ch; color:var(--suave); }
+nav { position:sticky; top:0; z-index:5; background:var(--papel); border-bottom:1px solid var(--linea); display:flex; gap:4px 14px; flex-wrap:wrap; padding:8px 0; font-size:.9rem; }
+nav a { color:var(--tinta); text-decoration:none; white-space:nowrap; } nav a b { color:var(--rojo); font-weight:400; margin-right:4px; }
+.et { display:block; font-size:.64rem; letter-spacing:.08em; text-transform:uppercase; color:var(--suave); margin:0 0 3px; }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+.chip { white-space:nowrap; display:inline-block; font-size:.66rem; padding:2px 7px; border-radius:3px; border:1px solid currentColor; }
+.chip.ok { color:var(--verde); } .chip.mal { color:var(--rojo); } .chip.neutro { color:var(--suave); }
+.revision, .sistema { background:var(--caja); border-radius:6px; padding:14px 16px; margin:16px 0; }
+.revision summary { cursor:pointer; font-weight:600; }
+.sistema { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:10px 24px; font-size:.93rem; }
+.sistema ul { margin:0 0 8px; padding-left:18px; } .sistema p { margin:0 0 10px; }
+.tabla { overflow-x:auto; } table { width:100%; border-collapse:collapse; font-size:.86rem; line-height:1.4; min-width:860px; }
+th { text-align:left; font-size:.62rem; letter-spacing:.07em; text-transform:uppercase; color:var(--suave); font-weight:400; padding:4px 6px; border-bottom:1px solid var(--linea); }
+td { padding:6px; border-bottom:1px solid var(--linea); vertical-align:top; }
+section { padding:30px 0 6px; border-bottom:1px solid var(--linea); scroll-margin-top:46px; }
+.larga { font-size:.7rem; letter-spacing:.07em; text-transform:uppercase; color:var(--ocre); }
+h2 { font-size:1.7rem; margin:2px 0 4px; font-weight:600; } .num { color:var(--rojo); margin-right:12px; }
+.cambia { margin:0 0 4px; font-style:italic; color:var(--suave); }
+.linea { display:flex; gap:2px; margin:12px 0 14px; height:46px; }
+.seg { display:flex; flex-direction:column; justify-content:center; padding:0 5px; min-width:0; overflow:hidden; text-decoration:none; color:var(--tinta); font-size:.62rem; border-radius:3px; background:var(--caja2); border-bottom:3px solid var(--suave); }
+.seg.m { border-bottom-color:var(--azul); } .seg.x { background:var(--rojo); color:var(--papel); border-bottom-color:var(--rojo); }
+.seg b { font-weight:600; } .seg span { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; opacity:.8; }
+.trans { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:8px 20px; background:var(--caja); border-radius:6px; padding:10px 14px; font-size:.9rem; margin-bottom:18px; }
+.plano { border-left:3px solid var(--linea); padding:4px 0 6px 16px; margin:0 0 28px; scroll-margin-top:46px; }
+.plano.exc { border-left-color:var(--rojo); }
+.cabeza { display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 10px; }
+.pid { color:var(--rojo); font-size:.85rem; } .verbo { font-size:.68rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ocre); }
+h3 { font-size:1.2rem; margin:0; font-weight:600; flex:1 1 320px; }
+.tiempo { flex-basis:100%; font-size:.7rem; color:var(--suave); }
+.sello { font-size:.6rem; text-transform:uppercase; letter-spacing:.05em; padding:2px 6px; border-radius:3px; border:1px solid currentColor; }
+.sello.exc { color:var(--rojo); } .sello.corte { color:var(--azul); }
+.cols { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:6px 26px; margin-top:8px; }
+@media (max-width:760px) { .cols { grid-template-columns:1fr; } nav { flex-wrap:nowrap; overflow-x:auto; } }
+.bloque { margin:0 0 10px; } .bloque p { margin:0; }
+.voz p { margin:0 0 6px; }
+.t { font-size:.68rem; color:var(--suave); margin-right:6px; }
+.tags { font-size:.66rem; color:var(--ocre); }
+.pausa { font-size:.6rem; color:var(--suave); border:1px solid var(--linea); border-radius:3px; padding:1px 4px; margin-left:5px; }
+.pausa.larga { color:var(--tinta); }
+.rotulos { list-style:none; margin:0; padding:0; } .rotulos li { margin:0 0 6px; }
+.rotulo { background:var(--caja2); padding:2px 7px; border-radius:3px; font-family:ui-monospace, monospace; font-size:.82rem; }
+.rotulo.palabra { font-family:Georgia, serif; font-style:italic; font-size:1rem; }
+.en { font-size:.62rem; color:var(--suave); }
+.vacio { color:var(--suave); font-style:italic; }
+.quieta { color:var(--suave); } .mueve { color:var(--azul); }
+.falta p { color:var(--ocre); }
+.avisos ul { margin:0; padding-left:18px; color:var(--rojo); font-size:.9rem; }
+.laminas figure { margin:8px 0; } .laminas img { width:100%; height:auto; display:block; border-radius:4px; border:1px solid var(--linea); }
+figcaption { font-size:.74rem; color:var(--suave); margin-top:3px; }
+.piezas .fila { display:flex; gap:10px; flex-wrap:wrap; } .pieza { margin:0; width:160px; }
+.figura img { height:150px !important; }
+.pieza img { width:100%; height:100px; object-fit:contain; background:var(--caja2); border-radius:4px; padding:6px; }
+.pieza figcaption { font-family:ui-monospace, monospace; font-size:.6rem; word-break:break-all; }
+@media (max-width:700px) { .laminas figure { overflow-x:auto; } .laminas img { width:auto; max-width:none; height:280px; } .linea { height:40px; } .seg span { display:none; } }
+</style></head>
+<body><main>
+<p class="meta">HISTORIA DE LA CORRUPCIÓN EN EL PERÚ · EPISODIO 0·3 · VERSIÓN 2 · 2026-11-19</p>
+<h1>La deuda defraudada · Storyboard</h1>
+<p class="meta">38 planos · 11:15.8 en pantalla · voz: Joder Jolines, eleven_v4 · generado con storyboard.py</p>
+<p class="intro">Propuesta del agente para revisión de Gerson, rehecha sobre la voz real (narracion_tiempos.json). No se dibujó nada nuevo: cada plano dice qué lámina o pieza existente usa y qué falta. Criterio: direccion-historia (§2, §4, §5), estructura-visual-motion (Block: constantes, progresión, excepción reservada; storyboard como reescritura), historia/CLAUDE.md §3–§8 (párrafo audiovisual, texto que no repite la voz, cámara con motivo, ≥ 20 % quieta).</p>
+<div class="chips"><span class="chip ok">voz 80 % del episodio (meta ~70 %)</span><span class="chip ok">cámara quieta 80 %</span><span class="chip mal">4 avisos de pantalla</span></div>
+
+<details class="revision" open><summary>Revisión del storyboard anterior (11 de noviembre)</summary>
+<p><b>¿Se entiende?</b> a medias · <b>¿Se siente?</b> a medias</p>
+<p>El storyboard del 11 de noviembre ilustra bien cada frase, pero no decide qué importa más: 107 encuadres para 9 min 28 s de voz, casi todos con cámara en movimiento y foco por turnos, de modo que los dos momentos fuertes (la cifra de Novoa y los consolidados) no pueden diferenciarse. Es un problema de capa de secuencia, no de dibujo.</p>
+<div class="tabla"><table><thead><tr><th>Momento</th><th>Observación</th><th>Hipótesis</th><th>Cambio</th><th>Resultado esperado</th><th>Cómo comprobar</th></tr></thead><tbody><tr><td><b>Todo el episodio</b></td><td>Cuatro espacios que se alternan sin regla: mesa cenital, pizarra de tiza, despacho con personajes y mapa.</td><td>Sin un lugar por función, cada cambio de espacio se lee como un cambio de tema aunque no lo sea.</td><td>Tres espacios con función fija: el lugar (mapa y grabado), el mecanismo (pizarra que acumula) y el expediente (mesa de documentos).</td><td>El espectador sabe, por el espacio, si está viendo dónde, cómo funciona o qué pasó.</td><td>Ver la escaleta solo con miniaturas: cada cambio de espacio debe coincidir con un cambio de función.</td></tr><tr><td><b>Todo el episodio</b></td><td>Casi todos los encuadres traen «<em>acercar</em>», «<em>abrir</em>», «<em>panear</em>» o «<em>seguir</em>».</td><td>El movimiento continuo deja de significar: ya no puede marcar un viaje ni una revelación (Block: movimiento constante no es progresión).</td><td>Cámara quieta por defecto; solo se mueve en los recorridos que dice la voz (a Chincha, a Londres, el tablero completo, el circuito final).</td><td>Cuatro movimientos reconocibles, cada uno con un motivo.</td><td>Medir el porcentaje de cámara quieta (meta ≥ 20 %; aquí se apunta a más del 70 %).</td></tr><tr><td><b>3D y 4A (la cifra de Novoa y los consolidados)</b></td><td>Llegan con el mismo tratamiento que cualquier dato: ficha que se desliza, foco, roce.</td><td>Si todo se enfatiza, nada se enfatiza: falta una excepción reservada.</td><td>Reservar para esos dos momentos la combinación que no aparece en ningún otro: un solo elemento en cuadro, cámara quieta, silencio absoluto y un respiro agregado en el montaje.</td><td>Los dos datos que el espectador debe recordar se sienten distintos sin subir el volumen.</td><td>Prueba sin sonido: ¿se reconocen los dos momentos solo por la imagen?</td></tr><tr><td><b>2D (la compra)</b></td><td>Siete encuadres de gesto (preparar, agarrar, soltar, recibir) para 13 s de voz.</td><td>La actuación compite con la idea; lo que hay que entender es la diferencia entre precio y valor, no el agarre.</td><td>Tres encuadres de acción y una comparación de alturas (precio bajo, valor alto) que se queda en el tablero.</td><td>La idea «<em>barato y luego muchas veces mayor</em>» queda dibujada y se reutiliza en la conversión de Londres.</td><td>Preguntar a otra persona qué entendió de la compra, sin anticiparle la respuesta.</td></tr><tr><td><b>Rótulos de las láminas</b></td><td>«<em>Unos días después</em>», «<em>Fuera de plazo</em>», «<em>Canje parcial</em>», «<em>No es efectivo inmediato</em>» repiten lo que dice la voz en el mismo instante.</td><td>Redundancia: el espectador lee y escucha lo mismo, y se le va el ojo del objeto (CLAUDE §5, Mayer).</td><td>En pantalla solo lo que la voz no da: fecha exacta, cifra exacta, nombre completo con cargo, fuente. Los términos del tablero (una a tres palabras) son la única excepción, y se declara.</td><td>Menos texto y cada rótulo agrega algo.</td><td>El generador compara cada rótulo con la voz de su plano y marca los que se repiten.</td></tr><tr><td><b>Escena 4</b></td><td>Unos quince nombres y cifras nuevos en algo más de tres minutos (segunda acta del Escribano), y la voz ocupa el 86 % de la escena: casi no hay respiros.</td><td>Sobrecarga: no hay tiempo para que un dato se asiente antes del siguiente (CLAUDE §8: ≤ 6 por minuto, voz ≤ 80 %).</td><td>Agregar respiros de montaje después de cada párrafo, sacar de la pantalla a Vivanco y a Ugarte (quedan en la voz) y recuperar objetos conocidos (la pila del gancho, el mapa de la escena 1, las barras de la compra) en vez de presentar nuevos.</td><td>La escena se apoya en lo ya aprendido y deja respirar.</td><td>Las métricas por escena del generador: voz ≤ 85 % y rótulos nuevos por minuto.</td></tr></tbody></table></div>
+<p><b>Lo que funciona:</b> Las láminas ya separan bien unidades y cautelas («<em>probablemente</em>», «<em>en vales</em>»), conservan la identidad de los objetos entre estados (el folio de pestaña roja, el vale de marco doble) y tienen enlaces de continuidad entre escenas. Eso se conserva.</p>
+<p><b>Orden de versiones:</b> A: aplicar solo la cámara quieta por defecto y medir. B: sumar las excepciones reservadas. C: sumar los respiros de montaje y el recorte de rótulos. Comparar A, B y C en el animatic de la escena 3. Decisión de Gerson (20 de noviembre de 2026), tras el animatic de la escena 3 (laboratorio 16): versión C, con la entrada del vale de A. Es la versión D del animatic.</p>
+</details>
+<h2 style="font-size:1.3rem">El sistema visual</h2>
+
+<div class="sistema">
+  <div><span class="et">Qué permanece</span><ul><li>Tres espacios con función fija: el lugar (mapa Natural Earth y grabado de islas v3), el mecanismo (pizarra que acumula piezas de papel y tiza, escena 2) y el expediente (mesa de madera en cenital, escenas 3 a 5).</li><li>Papel, tinta y fichas a máquina con cuadrito rojo (gramática de la serie). Una ficha nueva por vez. Los objetos y papeles son PNG de ChatGPT en el mismo estilo de grabado que las figuras, sin texto: las cifras, nombres y fechas los rotula Remotion encima.</li><li>Cámara quieta mientras se lee o se escucha un dato. Los objetos se mueven; la cámara no, al mismo tiempo.</li><li>Personajes solo donde hay una acción que la voz describe: cargar el guano (s01) y vender, comprar, gestionar y aprobar el reclamo (s02). Son PNG de ChatGPT con aspecto de grabado y representan funciones, no personas. Las personas reales (Castilla, Echenique, Elías, Torrico, Mendiburu) van con ficha a máquina y, si existe, con su retrato de época en dominio público; nunca con una cara inventada.</li><li>Cada documento lleva encima una etiqueta corta con su dueño o responsable y su función («<em>ELÍAS · GESTIÓN</em>», «<em>NOVOA · VALES APROBADOS</em>»): cuando hay tres papeles en la mesa, se sabe de quién es cada uno. Las etiquetas acompañan al papel cuando se mueve. Decidido por Gerson el 20 de noviembre de 2026.</li><li>Todo texto sobre el fondo (fichas, etiquetas, rótulos) va sobre una caja negra sólida al 50 %, sin degradado. Reemplaza a la sombra difusa. Decidido por Gerson el 20 de noviembre de 2026.</li><li>Junto al nombre de una persona real (en su ficha y en la etiqueta de sus documentos) va un medallón con su cara si hay retrato de época en dominio público (Elías, Echenique, Torrico; Castilla y Mendiburu por verificar), o con una silueta que la caracterice si no lo hay (Novoa). Nunca una cara generada. Decidido por Gerson el 20 de noviembre de 2026.</li><li>Presentación de personaje: la primera vez que la voz nombra a una persona, su medallón y su nombre completo con su función salen en primer plano, al centro, y la mesa se desenfoca y oscurece. Dura 1,8 s, empieza cuando la voz dice el nombre y a los 1,3 s el medallón viaja en arco a su lugar: la etiqueta de su papel, que entra en ese momento, o la ficha si no tiene papel (Torrico). Una sola vez por persona. Pedido por Gerson el 21 de noviembre de 2026 (animatic de la escena 3, versión F).</li></ul></div>
+  <div><span class="et">Qué progresa</span><p>La pila de vales: aparece en el gancho, se reduce a un solo vale en la escena 2, se vuelve la cifra de Novoa en la 3, recupera su altura de 24 millones en la 4 (con la marca roja de la junta) y queda con su marca fantasma en la 5. Junto con la pila progresa el rojo de culpa: primero un borde, después la mitad marcada, después la mancha del lavado.</p>
+       <span class="et">Qué se reserva</span><ul><li>La cifra de Novoa (s03, frase 11): en «<em>Días después</em>» la mesa se vacía; con la cifra, el vale entra deslizándose solo (peso pesado, como entra cualquier papel) y se queda quieto, sin halo, durante 2,3 s de silencio absoluto más 1 s de respiro de montaje. Decidido por Gerson tras el animatic (versión D).</li><li>Los consolidados (s04, frase 7): la palabra del episodio a pantalla completa, quieta, sin música, con 2,5 s más 1 s de montaje. Es la única palabra a pantalla completa (CLAUDE §1.3).</li></ul></div>
+  <div><span class="et">Cámara</span><p>La cámara se mueve solo cuatro veces con viaje: al lugar (s01), a abrir el tablero completo (s02), de Lima a Londres (s04) y el circuito final (s05). Siempre arranca despacio, viaja y frena (pesado o solemne).</p>
+       <span class="et">Rojo</span><p>Corrector: encerrar, subrayar, tachar. Culpa: el borde de la pila inflada, la mitad marcada por la junta, la mancha del vale lavado. Nada más.</p>
+       <span class="et">Texto en pantalla</span><p>Solo lo que la voz no dice (fecha exacta, cifra exacta, nombre completo con cargo, fuente). Excepción declarada: los términos del tablero de la escena 2 (de una a tres palabras) y la pregunta del 003 en la tarjeta. Máximo dos rótulos a la vez. Las etiquetas de dueño son la otra excepción declarada: nombran a la persona aunque la voz la diga, porque sirven para distinguir papeles.</p>
+       <span class="et">Respiros</span><p>La voz ocupa casi todo el tiempo. Los respiros de montaje (columna «<em>+ s</em>») alargan el video sin tocar la voz: se cortan en las pausas de párrafo, que ya son de 1 s o más.</p></div>
+</div>
+<p class="intro">La barra de cada escena muestra sus planos a escala de tiempo: gris, cámara quieta; borde azul, cámara en movimiento; rojo, excepción reservada. Cada plano trae la voz con su emoción y el segundo en que empieza en su MP3.</p>
+<nav><a href="#s00"><b>s00</b>El gancho</a><a href="#s01"><b>s01</b>Las islas y el país</a><a href="#s02"><b>s02</b>Un reclamo pasa por varias manos</a><a href="#s03"><b>s03</b>El expediente de Novoa</a><a href="#s04"><b>s04</b>Lo investigan y los títulos siguen circulando</a><a href="#s05"><b>s05</b>De estos expedientes al método de Quiroz</a></nav>
+
+<section id="s00">
+  <header><span class="larga">Expediente: la mesa con las pruebas de imprenta</span>
+  <h2><span class="num">s00</span>El gancho</h2>
+  <p class="cambia">De «<em>una deuda es una deuda</em>» a «<em>una deuda se puede inflar, y alguien la inflaba</em>».</p>
+  <p class="meta">0:52.3 en pantalla (0:48.8 de voz + 3.5 s de respiros) · 4 planos</p>
+  <div class="chips"><span class="chip ok">voz 80 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 100 %</span><span class="chip ok">3.4 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-0.1" class="seg q" style="flex:16.72" title="0.1 · 16.7 s · presentar"><b>0.1</b><span>presentar</span></a><a href="#p-0.2" class="seg q" style="flex:12.30" title="0.2 · 12.3 s · marcar"><b>0.2</b><span>marcar</span></a><a href="#p-0.3" class="seg q" style="flex:8.60" title="0.3 · 8.6 s · borrar"><b>0.3</b><span>borrar</span></a><a href="#p-0.4" class="seg q" style="flex:14.65" title="0.4 · 14.6 s · preguntar"><b>0.4</b><span>preguntar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>Negro, 1,5 s de papel sin voz; aparecen las pruebas de imprenta.</div><div><span class="et">Sale</span>Corte J: el mar de s01 entra 12 cuadros antes que su imagen.</div></div>
+  
+<article class="plano" id="p-0.1">
+  <div class="cabeza"><span class="pid">0.1</span><span class="verbo">presentar</span>
+    <h3>La deuda reconocida crece casi cinco veces en un año.</h3>
+    <span class="tiempo">0:00.0–0:15.2 de s00.mp3 · 16.7 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[serious] [calm]</span> En mil ochocientos cincuenta y uno, el Estado peruano reconocía una deuda de unos cinco millones de pesos con sus propios ciudadanos.<span class="pausa">0.8 s</span></p><p><span class="t">0:08.1</span><span class="tags">[serious] [measured]</span> Un año después, la cuenta llegaba a veinticuatro millones: casi cinco veces la de un año antes.<span class="pausa larga">1.2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Sobre las pruebas de imprenta, una pila baja de vales sin texto. Con «<em>un año después</em>», la pila sube hasta casi cinco veces su altura; el tramo nuevo lleva un borde rojo apagado. Sin rótulos: la voz da las cifras y la altura de la pila, la proporción.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>La pila crece con peso pesado, de una vez, y asienta (impacto de papel 0,025). Nada más se mueve.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Papel; un golpe grave cuando la pila termina de crecer. Sin música.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-01.png" alt=""><figcaption>Lámina 4A.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png" alt=""><figcaption>obj-05-pila-vales.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-0.2">
+  <div class="cabeza"><span class="pid">0.2</span><span class="verbo">marcar</span>
+    <h3>Una investigación del propio Estado señala más de la mitad.</h3>
+    <span class="tiempo">0:15.2–0:27.0 de s00.mp3 · 12.3 s en pantalla + 0.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:15.2</span><span class="tags">[serious]</span> Años más tarde, una junta del propio Estado revisó a fondo esa deuda.<span class="pausa">0.35 s</span></p><p><span class="t">0:19.6</span><span class="tags">[serious] [low voice]</span> Encontró más de doce millones en expedientes irregulares o ilegales: más de la mitad de toda esa deuda.<span class="pausa larga">1.2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>El corrector encierra en rojo algo más de la mitad de la pila.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">1855 · 141 expedientes</span> <span class="en">con la frase 3</span> <span class="chip ok">lectura 7.9/2.2 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Trazo rojo de corrector, ligero, de una vez.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Pluma sobre papel.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-06.png" alt=""><figcaption>Lámina 4E.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png" alt=""><figcaption>obj-05-pila-vales.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-0.3">
+  <div class="cabeza"><span class="pid">0.3</span><span class="verbo">borrar</span>
+    <h3>Una ley devuelve esos títulos a la circulación.</h3>
+    <span class="tiempo">0:27.0–0:35.6 de s00.mp3 · 8.6 s en pantalla</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:27.0</span><span class="tags">[dry] [restrained]</span> Y en mil ochocientos cincuenta y siete, una ley volvió a dejar circular los títulos de esa deuda, también los que la junta había marcado.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Cae el sello de la ley; la marca roja se borra a medias y queda como fantasma.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Ley del 11 de marzo de 1857</span> <span class="en">con la frase 4</span> <span class="chip ok">lectura 8.6/3.1 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Sello desde arriba: se pasa apenas de tamaño y vuelve, sin deformarse.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Golpe de sello seco; el papel sigue.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-08.png" alt=""><figcaption>Lámina 4E.3 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png" alt=""><figcaption>obj-05-pila-vales.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-0.4">
+  <div class="cabeza"><span class="pid">0.4</span><span class="verbo">preguntar</span>
+    <h3>¿Cómo se infla una deuda? Quiroz fue a comprobarlo.</h3>
+    <span class="tiempo">0:35.6–0:48.8 de s00.mp3 · 14.6 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:35.6</span><span class="tags">[curious] [softly]</span> ¿Cómo se infla la deuda de un país?<span class="pausa larga">1 s</span></p><p><span class="t">0:38.5</span><span class="tags">[calm] [storytelling]</span> Los historiadores de su tiempo decían que la riqueza del guano se había derrochado en lujos.<span class="pausa">0.35 s</span></p><p><span class="t">0:43.4</span><span class="tags">[calm] [warm]</span> Alfonso Quiroz quiso comprobarlo en su primera investigación, y encontró que la deuda se había inflado.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La pila con su marca fantasma, quieta durante la pregunta. Con «<em>Alfonso Quiroz</em>», la ficha a máquina se escribe sobre la mesa.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Alfonso W. Quiroz · tesis de 1980</span> <span class="en">con la frase 7</span> <span class="chip ok">lectura 6.9/3.1 s</span><span class="chip neutro">ficha de identidad</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Ficha a máquina, letra por letra.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Tecleo breve. Silencio de música en la pregunta.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-03.png" alt=""><figcaption>Lámina 5B.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png" alt=""><figcaption>obj-05-pila-vales.png</figcaption></figure></div></div>
+  
+</article>
+</section>
+<section id="s01">
+  <header><span class="larga">Lugar: mapa y grabado de islas v3</span>
+  <h2><span class="num">s01</span>Las islas y el país</h2>
+  <p class="cambia">De «<em>el Estado no tiene con qué pagar</em>» a «<em>el guano le da con qué pagar, y aparecen las deudas</em>».</p>
+  <p class="meta">0:51.6 en pantalla (0:48.6 de voz + 3 s de respiros) · 5 planos</p>
+  <div class="chips"><span class="chip ok">voz 80 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 65 %</span><span class="chip ok">1.2 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-1.1" class="seg m" style="flex:8.82" title="1.1 · 8.8 s · situar"><b>1.1</b><span>situar</span></a><a href="#p-1.2" class="seg q" style="flex:10.64" title="1.2 · 10.6 s · mostrar"><b>1.2</b><span>mostrar</span></a><a href="#p-1.3" class="seg q" style="flex:14.12" title="1.3 · 14.1 s · mostrar"><b>1.3</b><span>mostrar</span></a><a href="#p-1.4" class="seg q" style="flex:8.80" title="1.4 · 8.8 s · explicar"><b>1.4</b><span>explicar</span></a><a href="#p-1.5" class="seg m" style="flex:9.21" title="1.5 · 9.2 s · conectar"><b>1.5</b><span>conectar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>Corte J desde la ficha de Quiroz: primero el mar.</div><div><span class="et">Sale</span>La carpeta de obligaciones pendientes pasa a la pizarra de s02 (misma posición, cambia el fondo).</div></div>
+  
+<article class="plano" id="p-1.1">
+  <div class="cabeza"><span class="pid">1.1</span><span class="verbo">situar</span>
+    <h3>Dónde y cuándo: el Perú de 1850, gobierno de Castilla.</h3>
+    <span class="tiempo">0:00.0–0:08.8 de s01.mp3 · 8.8 s en pantalla</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[calm] [storytelling]</span> Perú, hacia mil ochocientos cincuenta.<span class="pausa">0.35 s</span></p><p><span class="t">0:03.4</span><span class="tags">[calm]</span> Han pasado casi treinta años desde la independencia y gobierna Ramón Castilla.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Mapa de la costa central con Lima, Pisco y Chincha.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Ramón Castilla · presidente, 1845–1851</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 5.5/2.5 s</span><span class="chip neutro">ficha de identidad</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Recorrido: Ir al lugar: de Lima a Chincha, pesado, y frena sobre el localizador.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Localizador de Chincha con su pulso (1a-localizador).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Mar que entra antes de la imagen; viento.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-01.png" alt=""><figcaption>Lámina 1A (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena01/svg/1a-localizacion/1a-mapa-costa-central.svg" alt=""><figcaption>1a-mapa-costa-central.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-1.2">
+  <div class="cabeza"><span class="pid">1.2</span><span class="verbo">mostrar</span>
+    <h3>Qué es el guano y quién lo compra.</h3>
+    <span class="tiempo">0:08.8–0:19.5 de s01.mp3 · 10.6 s en pantalla</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:08.8</span><span class="tags">[curious] [light]</span> Frente a Pisco están las islas de Chincha, cubiertas de guano: el excremento de las aves marinas, acumulado sobre la roca.<span class="pausa">0.6 s</span></p><p><span class="t">0:15.8</span><span class="tags">[calm]</span> En Gran Bretaña lo compran como abono para los campos.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La isla en dos capas (mar y cielo detrás; isla, guano y aves delante): las aves y el mar se mueven, la roca no. Nada más.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Mar con fase continua y aves en vuelo como acción secundaria.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Aves y oleaje.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-01.png" alt=""><figcaption>Lámina 1A (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png" alt=""><figcaption>obj01-06-mar.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-islas.png" alt=""><figcaption>obj01-06-islas.png</figcaption></figure></div></div>
+  
+  
+</article>
+<article class="plano" id="p-1.3">
+  <div class="cabeza"><span class="pid">1.3</span><span class="verbo">mostrar</span>
+    <h3>Sacarlo exige trabajo, y no siempre libre.</h3>
+    <span class="tiempo">0:19.5–0:31.6 de s01.mp3 · 14.1 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:19.5</span><span class="tags">[serious]</span> Sacarlo exige mucho trabajo.<span class="pausa">0.35 s</span></p><p><span class="t">0:21.8</span><span class="tags">[serious] [low voice] [slowly]</span> En las islas hay jornaleros libres, pero también presos, personas esclavizadas y trabajadores chinos sometidos a trabajo forzoso.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Sobre el fondo limpio de Chincha, en primer plano, el trabajador del sombrero vierte la pala en el saco y otro trabajador lo sujeta, lo levanta y lo lleva hacia el borde. Con «<em>jornaleros libres, pero también presos…</em>», entra en plano medio un grupo de cuatro trabajadores de orígenes distintos, uno cava, dos cargan sacos y uno empuja una carretilla, sin rótulos: su aspecto no dice su condición. En la pausa sin voz, el saco sube al barco.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Pala en arco; granos con semilla que caen una vez y se asientan. El grupo del fondo camina despacio hacia la derecha, cada figura por separado (trabajador-grupo-1 a 4) y con desfase, más lento que el primer plano. Balanceo corto del casco al recibir el saco.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Raspado de pala, saco al apoyarse, madera del barco.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Pala ya está en la figura; el saco es obj-01 y obj-02; el embarque con el barco de 1c. Sin rótulo sobre las figuras: su aspecto no documenta su condición.</p></div>
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-02.png" alt=""><figcaption>Lámina 1B.1 (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-04.png" alt=""><figcaption>Lámina 1C.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-limpio-chincha.png" alt=""><figcaption>fondo-limpio-chincha.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/trabajadores-grupo-fondo.png" alt=""><figcaption>trabajadores-grupo-fondo.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/trabajador-1b-vierte-guano.png" alt=""><figcaption>trabajador-1b-vierte-guano.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/trabajador-2a-sujeta-saco.png" alt=""><figcaption>trabajador-2a-sujeta-saco.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/trabajador-2b-levanta-saco.png" alt=""><figcaption>trabajador-2b-levanta-saco.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/trabajador-2c-transporta-saco.png" alt=""><figcaption>trabajador-2c-transporta-saco.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-01-saco-guano-abierto.png" alt=""><figcaption>obj-01-saco-guano-abierto.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-02-saco-guano-cerrado.png" alt=""><figcaption>obj-02-saco-guano-cerrado.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-07-barco.png" alt=""><figcaption>obj01-07-barco.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-1.4">
+  <div class="cabeza"><span class="pid">1.4</span><span class="verbo">explicar</span>
+    <h3>El Estado es dueño; la casa vende, cobra comisión y adelanta dinero.</h3>
+    <span class="tiempo">0:31.6–0:40.4 de s01.mp3 · 8.8 s en pantalla</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:31.6</span><span class="tags">[calm] [clear]</span> El guano pertenece al Estado, que encarga su venta a casas comerciales.<span class="pausa">0.35 s</span></p><p><span class="t">0:35.6</span><span class="tags">[calm]</span> Ellas lo venden, se quedan con una comisión y le adelantan dinero al gobierno.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Diagrama de venta: guano → venta → comisión e ingreso del Estado, con una flecha más hacia el gobierno: adelantos.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Cada nodo entra cuando la voz lo nombra; las flechas se trazan ligeras.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Pluma por flecha.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>La flecha de adelantos (pieza nueva, del mismo trazo).</p></div>
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-05.png" alt=""><figcaption>Lámina 1C.2 (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena01/svg/1c-embarque-y-venta/1c-diagrama-venta-sin-texto.svg" alt=""><figcaption>1c-diagrama-venta-sin-texto.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-1.5">
+  <div class="cabeza"><span class="pid">1.5</span><span class="verbo">conectar</span>
+    <h3>Con esa plata, el Estado puede pagar lo que debía.</h3>
+    <span class="tiempo">0:40.4–0:48.6 de s01.mp3 · 9.2 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:40.4</span><span class="tags">[warm] [relieved]</span> Con esa plata, el Estado puede por fin atender algo que arrastraba desde la guerra de independencia, y a veces desde la colonia: sus deudas.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La flecha del ingreso llega al edificio del Estado; a su lado se abre la carpeta de obligaciones pendientes.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Movimiento: Seguir el dinero del diagrama al Estado: un paneo corto, pesado.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>La carpeta se abre y asoma el folio de pestaña roja.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Carpeta.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-06.png" alt=""><figcaption>Lámina 1D.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-08-estado.png" alt=""><figcaption>obj01-08-estado.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png" alt=""><figcaption>obj-07-carpeta-cerrada.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-abierta.png" alt=""><figcaption>obj-07-carpeta-abierta.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png" alt=""><figcaption>obj-03-folio-reclamo-pestana-roja.png</figcaption></figure></div></div>
+  
+</article>
+</section>
+<section id="s02">
+  <header><span class="larga">Mecanismo: la pizarra que acumula (tablero de izquierda a derecha)</span>
+  <h2><span class="num">s02</span>Un reclamo pasa por varias manos</h2>
+  <p class="cambia">De «<em>pagar las deudas es una buena idea</em>» a «<em>la ley tenía dos huecos, y por ahí entró el negocio</em>».</p>
+  <p class="meta">2:08.0 en pantalla (1:58.5 de voz + 9.5 s de respiros) · 8 planos</p>
+  <div class="chips"><span class="chip ok">voz 80 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 91 %</span><span class="chip ok">0.9 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-2.1" class="seg q" style="flex:20.30" title="2.1 · 20.3 s · agrupar"><b>2.1</b><span>agrupar</span></a><a href="#p-2.2" class="seg q" style="flex:14.76" title="2.2 · 14.8 s · ordenar"><b>2.2</b><span>ordenar</span></a><a href="#p-2.3" class="seg q" style="flex:13.66" title="2.3 · 13.7 s · justificar"><b>2.3</b><span>justificar</span></a><a href="#p-2.4" class="seg q" style="flex:15.44" title="2.4 · 15.4 s · definir"><b>2.4</b><span>definir</span></a><a href="#p-2.5" class="seg q" style="flex:10.22" title="2.5 · 10.2 s · señalar"><b>2.5</b><span>señalar</span></a><a href="#p-2.6" class="seg q" style="flex:16.14" title="2.6 · 16.1 s · comparar"><b>2.6</b><span>comparar</span></a><a href="#p-2.7" class="seg q" style="flex:26.52" title="2.7 · 26.5 s · distinguir"><b>2.7</b><span>distinguir</span></a><a href="#p-2.8" class="seg m" style="flex:10.97" title="2.8 · 11.0 s · recapitular"><b>2.8</b><span>recapitular</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>El folio de pestaña roja, en la misma posición; el fondo pasa de mesa a pizarra.</div><div><span class="et">Sale</span>El tablero completo queda quieto; la carpeta de Novoa se separa de él hacia la mesa (corte por cambio de espacio).</div></div>
+  
+<article class="plano" id="p-2.1">
+  <div class="cabeza"><span class="pid">2.1</span><span class="verbo">agrupar</span>
+    <h3>Préstamos y bienes tomados: eso era la deuda interna.</h3>
+    <span class="tiempo">0:00.0–0:19.3 de s02.mp3 · 20.3 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[calm] [teacher]</span> Esas deudas tenían orígenes distintos.<span class="pausa">0.35 s</span></p><p><span class="t">0:03.1</span><span class="tags">[calm]</span> Un comerciante, por ejemplo, le había prestado dinero al gobierno en un apuro.<span class="pausa">0.35 s</span></p><p><span class="t">0:07.6</span><span class="tags">[calm]</span> Un hacendado reclamaba el ganado y las cosechas que se habían llevado para mantener a las tropas.<span class="pausa">0.8 s</span></p><p><span class="t">0:13.6</span><span class="tags">[teacher] [clear]</span> A lo que el Estado les debía a sus propios ciudadanos se le llamaba deuda interna.<span class="pausa larga">1.2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>En la pizarra, el folio del préstamo y el de los bienes para las tropas entran cuando la voz los nombra; una llave de tiza los agrupa.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">deuda interna</span> <span class="en">con la frase 3</span> <span class="chip ok">lectura 6.7/1.6 s</span><span class="chip neutro">término</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Folios que se asientan; llave de tiza trazada de una vez.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Hoja por folio; tiza.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-01.png" alt=""><figcaption>Lámina 2A (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png" alt=""><figcaption>obj-09-folio-sencillo.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png" alt=""><figcaption>obj-03-folio-reclamo-pestana-roja.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2a-retomar/2a-llave-agrupadora.svg" alt=""><figcaption>2a-llave-agrupadora.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-2.2">
+  <div class="cabeza"><span class="pid">2.2</span><span class="verbo">ordenar</span>
+    <h3>La ley de 1850 manda revisar y reconocer: la consolidación.</h3>
+    <span class="tiempo">0:19.3–0:33.1 de s02.mp3 · 14.8 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:19.3</span><span class="tags">[calm] [teacher]</span> En mil ochocientos cincuenta, durante el gobierno de Castilla, se dio una ley para ordenarla: revisar cada reclamo, decidir cuánto valía y empezar a pagarlo.<span class="pausa">0.35 s</span></p><p><span class="t">0:29.5</span><span class="tags">[clear] [measured]</span> A esa operación se le llamó consolidación.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>El libro de la ley entra a la derecha del grupo. El folio de pestaña roja recibe el sello «<em>reconocido</em>» cuando la voz dice «<em>decidir cuánto valía</em>».</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Ley del 16 de marzo de 1850</span> <span class="en">con la frase 4</span> <span class="chip ok">lectura 14.8/3.1 s</span></li><li><span class="rotulo">consolidación</span> <span class="en">con la frase 5</span> <span class="chip ok">lectura 4.6/1.3 s</span><span class="chip neutro">término</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Un sello, una vez. Sin cotejo campo por campo (era de la versión anterior).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Sello suave.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-02.png" alt=""><figcaption>Lámina 2B (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-08-libro-ley-abierto.png" alt=""><figcaption>obj-08-libro-ley-abierto.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png" alt=""><figcaption>obj-03-folio-reclamo-pestana-roja.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2b-cotejo/2b-sello-reconocido.svg" alt=""><figcaption>2b-sello-reconocido.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-2.3">
+  <div class="cabeza"><span class="pid">2.3</span><span class="verbo">justificar</span>
+    <h3>Pagar lo que se debe devuelve la confianza: la idea era buena.</h3>
+    <span class="tiempo">0:33.1–0:45.7 de s02.mp3 · 13.7 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:33.1</span><span class="tags">[warm] [confident]</span> La idea era buena, y Quiroz lo reconoce: un Estado que paga lo que debe recupera la confianza de quienes podrían prestarle.<span class="pausa">0.35 s</span></p><p><span class="t">0:40.1</span><span class="tags">[warm]</span> Para él, la consolidación fue un fundamento del crédito público moderno en el Perú.<span class="pausa larga">1.2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Del folio reconocido sale una flecha de tiza al edificio del Estado, y del Estado una flecha de vuelta: el comerciante vuelve a prestar.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">crédito público</span> <span class="en">con la frase 7</span> <span class="chip ok">lectura 6.6/1.6 s</span><span class="chip neutro">término</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Dos flechas de tiza; la segunda tarda un poco más (es la consecuencia).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Tiza.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-01.png" alt=""><figcaption>Lámina 5A.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-08-estado.png" alt=""><figcaption>obj01-08-estado.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/capas/finalidad-del-credito.svg" alt=""><figcaption>finalidad-del-credito.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-2.4">
+  <div class="cabeza"><span class="pid">2.4</span><span class="verbo">definir</span>
+    <h3>El vale es una promesa de pago con intereses, y se puede vender.</h3>
+    <span class="tiempo">0:45.7–1:00.2 de s02.mp3 · 15.4 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:45.7</span><span class="tags">[teacher] [clear]</span> Cuando un reclamo se aprobaba, el acreedor recibía un vale: un papel en el que el Estado se comprometía a pagarle esa suma, con intereses.<span class="pausa">0.6 s</span></p><p><span class="t">0:54.3</span><span class="tags">[teacher] [clear]</span> No era plata en la mano, sino una promesa de pago, y esa promesa se podía vender.<span class="pausa larga">1.2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La reclamante recibe el vale con las dos manos, junto al folio reconocido. Unas monedas a la izquierda se apartan: el vale no es efectivo. Con «<em>se podía vender</em>», una flecha corta sale del vale hacia el borde derecho, vacío.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">6 % de interés [VERIFICAR: anual]</span> <span class="en">con la frase 8</span> <span class="chip ok">lectura 15.4/2.8 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>El vale asienta con su sombra; las monedas se deslizan fuera sin rebote.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Papel; monedas apenas.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-03.png" alt=""><figcaption>Lámina 2C (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/reclamante-recibe-vale.png" alt=""><figcaption>reclamante-recibe-vale.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png" alt=""><figcaption>obj-04-vale.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-12-monedas.png" alt=""><figcaption>obj-12-monedas.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-2.5">
+  <div class="cabeza"><span class="pid">2.5</span><span class="verbo">señalar</span>
+    <h3>La ley tenía dos huecos.</h3>
+    <span class="tiempo">1:00.2–1:09.4 de s02.mp3 · 10.2 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:00.2</span><span class="tags">[suspicious] [lower]</span> Pero la ley tenía dos huecos, según Quiroz.<span class="pausa">0.35 s</span></p><p><span class="t">1:03.2</span><span class="tags">[serious] [measured]</span> No tenía reglas claras para los reclamos mal sustentados, ni para vender o traspasar un vale.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>El libro de la ley (obj-08) vuelve al centro; el corrector encierra en rojo las dos franjas vacías de la página derecha.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">sustento</span> <span class="en">con la frase 11</span> <span class="chip ok">lectura 7.2/1.3 s</span><span class="chip neutro">término</span></li><li><span class="rotulo">traspaso</span> <span class="en">con la frase 11</span> <span class="chip ok">lectura 7.2/1.3 s</span><span class="chip neutro">término</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Dos círculos de corrector, uno por cada hueco, con la voz.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Pluma.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-01.png" alt=""><figcaption>Lámina 2A (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-08-libro-ley-abierto.png" alt=""><figcaption>obj-08-libro-ley-abierto.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-2.6">
+  <div class="cabeza"><span class="pid">2.6</span><span class="verbo">comparar</span>
+    <h3>Se compra barato y se hace reconocer por mucho más.</h3>
+    <span class="tiempo">1:09.4–1:23.5 de s02.mp3 · 16.1 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:09.4</span><span class="tags">[dry] [restrained]</span> Por esos huecos entró el negocio.<span class="pausa">0.35 s</span></p><p><span class="t">1:11.6</span><span class="tags">[dry]</span> Antes de mil ochocientos cincuenta, muchos reclamos viejos casi no valían nada.<span class="pausa">0.35 s</span></p><p><span class="t">1:16.1</span><span class="tags">[dry] [ironic]</span> Los especuladores los compraban muy barato y luego negociaban que el Estado los reconociera por un valor muchas veces mayor.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Delante de la pizarra, tres cuadros de acción con las mismas dos figuras: la reclamante ofrece el folio, el comprador lo toma y le entrega el sobre, y ella recibe el pago. Después, en la pizarra, dos barras de tiza: precio de compra (baja) y valor reconocido (alta), sin cifras.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">precio</span> <span class="en">con la frase 14</span> <span class="chip ok">lectura 9.4/1.3 s</span><span class="chip neutro">término</span></li><li><span class="rotulo">valor reconocido</span> <span class="en">con la frase 14</span> <span class="chip ok">lectura 9.4/1.6 s</span><span class="chip neutro">término</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>La barra alta crece después de la baja, más lenta. Las dos barras se quedan en el tablero (vuelven en Londres).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Papel y sobre; tiza.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-04.png" alt=""><figcaption>Lámina 2D (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/reclamante-a-ofrece-folio.png" alt=""><figcaption>reclamante-a-ofrece-folio.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/comprador-a-toma-folio.png" alt=""><figcaption>comprador-a-toma-folio.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/comprador-b-entrega-sobre.png" alt=""><figcaption>comprador-b-entrega-sobre.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/reclamante-b-recibe-pago.png" alt=""><figcaption>reclamante-b-recibe-pago.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png" alt=""><figcaption>obj-03-folio-reclamo-pestana-roja.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-06-sobre-pago.png" alt=""><figcaption>obj-06-sobre-pago.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2d-compra/2d-tiza-precio-de-compra.svg" alt=""><figcaption>2d-tiza-precio-de-compra.svg</figcaption></figure><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2d-compra/2d-tiza-valor-reconocido.svg" alt=""><figcaption>2d-tiza-valor-reconocido.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-2.7">
+  <div class="cabeza"><span class="pid">2.7</span><span class="verbo">distinguir</span>
+    <h3>Para lograrlo había ayuda; la ilegal es la de los funcionarios.</h3>
+    <span class="tiempo">1:23.5–1:49.0 de s02.mp3 · 26.5 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:23.5</span><span class="tags">[serious]</span> Para lograrlo había ayuda.<span class="pausa">0.35 s</span></p><p><span class="t">1:25.5</span><span class="tags">[serious] [restrained anger]</span> Algunos capitalistas movían los expedientes a cambio de comisiones, y algunos funcionarios prometían un reconocimiento privilegiado a cambio de participaciones y comisiones ilegales.<span class="pausa larga">1 s</span></p><p><span class="t">1:36.4</span><span class="tags">[measured] [clear]</span> Quiroz no condena toda gestión: en el caso que vamos a ver, la comisión del intermediario era legítima.<span class="pausa">0.35 s</span></p><p><span class="t">1:42.3</span><span class="tags">[firm] [clear]</span> Lo que llama ilegal son las participaciones y comisiones que se pagaban a cambio de un reconocimiento privilegiado.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Entran el intermediario (a la izquierda) y el funcionario (a la derecha) de medio cuerpo, cada uno con una ficha de función debajo que dice que es un ejemplo. Con «<em>comisiones ilegales</em>», un desvío rojo salta la revisión. Con 17, el intermediario queda en luz neutra; con 18, el enlace del funcionario queda en rojo.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">intermediario (ejemplo) · funcionario (ejemplo)</span> <span class="en">con la frase 16</span> <span class="chip ok">lectura 24.6/2.5 s</span><span class="chip neutro">término</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Un solo foco activo por vez. El rojo, solo en el desvío y el enlace ilegal.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Tiza; nada sobre el rojo.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Nada nuevo. Ojo: el intermediario de ejemplo no debe parecerse a la ficha de Elías de s03, para que nadie lo tome por él.</p></div>
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-05.png" alt=""><figcaption>Lámina 2E (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/intermediario-explica-tramite.png" alt=""><figcaption>intermediario-explica-tramite.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/funcionario-revisa-reclamo.png" alt=""><figcaption>funcionario-revisa-reclamo.png</figcaption></figure></div></div>
+  
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena02/svg/2e-gestion/2e-desvio-rojo.svg" alt=""><figcaption>2e-desvio-rojo.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-2.8">
+  <div class="cabeza"><span class="pid">2.8</span><span class="verbo">recapitular</span>
+    <h3>Cuatro manos: vende, compra, mueve, aprueba.</h3>
+    <span class="tiempo">1:49.0–1:58.5 de s02.mp3 · 11.0 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:49.0</span><span class="tags">[calm] [teacher] [slowly]</span> Entonces, un reclamo podía pasar por cuatro manos: alguien vende barato, otro compra, un tercero mueve el expediente y un funcionario lo aprueba.<span class="pausa larga">2.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>El tablero completo, de la deuda interna al funcionario: es la imagen que junta la escena.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Recorrido: Abrir hasta ver el tablero entero mientras la voz cuenta las cuatro manos; frena y queda quieta en la pausa.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Un número de tiza (1 a 4) junto a cada mano, con la voz.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Un tic por mano; la música sostiene la pausa.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-reclamo/lamina-06.png" alt=""><figcaption>Lámina 2F (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  
+  
+</article>
+</section>
+<section id="s03">
+  <header><span class="larga">Expediente: la mesa en cenital</span>
+  <h2><span class="num">s03</span>El expediente de Novoa</h2>
+  <p class="cambia">De «<em>así funcionaba</em>» a «<em>así se aprobó un reclamo que el presidente había dado por vencido</em>».</p>
+  <p class="meta">1:42.2 en pantalla (1:34.7 de voz + 7.5 s de respiros) · 7 planos</p>
+  <div class="chips"><span class="chip ok">voz 77 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 100 %</span><span class="chip ok">5.3 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-3.1" class="seg q" style="flex:29.04" title="3.1 · 29.0 s · presentar"><b>3.1</b><span>presentar</span></a><a href="#p-3.2" class="seg q" style="flex:17.46" title="3.2 · 17.5 s · presentar"><b>3.2</b><span>presentar</span></a><a href="#p-3.3" class="seg q" style="flex:10.06" title="3.3 · 10.1 s · frenar"><b>3.3</b><span>frenar</span></a><a href="#p-3.4" class="seg q x" style="flex:10.54" title="3.4 · 10.5 s · revelar"><b>3.4</b><span>revelar</span></a><a href="#p-3.5" class="seg q" style="flex:14.00" title="3.5 · 14.0 s · comparar"><b>3.5</b><span>comparar</span></a><a href="#p-3.6" class="seg q" style="flex:8.96" title="3.6 · 9.0 s · estimar"><b>3.6</b><span>estimar</span></a><a href="#p-3.7" class="seg q" style="flex:12.11" title="3.7 · 12.1 s · delimitar"><b>3.7</b><span>delimitar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>Desde el tablero, la carpeta de Novoa baja a la mesa.</div><div><span class="et">Sale</span>La carpeta de Novoa se cierra y vuelve a un estante del archivo (s04).</div></div>
+  
+<article class="plano" id="p-3.1">
+  <div class="cabeza"><span class="pid">3.1</span><span class="verbo">presentar</span>
+    <h3>Un caso real: qué reclamaba Novoa, y cómo.</h3>
+    <span class="tiempo">0:00.0–0:28.0 de s03.mp3 · 29.0 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[solemn] [low voice]</span> Un expediente muestra con nombres y cifras dos de esas manos: el intermediario y el funcionario.<span class="pausa">0.6 s</span></p><p><span class="t">0:07.2</span><span class="tags">[solemn] [slowly]</span> Ignacia Novoa de Arredondo reclamaba el valor de una hacienda expropiada.<span class="pausa">0.35 s</span></p><p><span class="t">0:12.1</span><span class="tags">[serious] [low voice] [slowly]</span> Entre sus bienes contaba a quinientas personas esclavizadas, y además pedía lo que la hacienda habría dejado de ganar durante treinta y dos años.<span class="pausa larga">1 s</span></p><p><span class="t">0:21.8</span><span class="tags">[serious] [measured]</span> En el Perú de entonces, la esclavitud era legal: se abolió unos años después.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La carpeta se abre: folio de la solicitud con la hacienda. El renglón de las quinientas personas esclavizadas aparece solo, y se sostiene. Con 3, una ficha pequeña de la abolición.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Ignacia Novoa de Arredondo · reclamante</span> <span class="en">con la frase 1</span> <span class="chip ok">lectura 21.8/2.8 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">Abolición: decreto del 3 de diciembre de 1854</span> <span class="en">con la frase 3</span> <span class="chip ok">lectura 7.2/3.4 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>El renglón entra sin efecto; la música sale con él.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Sin música en el renglón de las personas esclavizadas.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Ficha de la abolición (pieza nueva).</p></div>
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-01.png" alt=""><figcaption>Lámina 3A (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-abierta.png" alt=""><figcaption>obj-07-carpeta-abierta.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png" alt=""><figcaption>obj-09-folio-sencillo.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/recursos-escena03/svg/3a-lo-que-pedia/3a-hacienda.svg" alt=""><figcaption>3a-hacienda.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-3.2">
+  <div class="cabeza"><span class="pid">3.2</span><span class="verbo">presentar</span>
+    <h3>Elías gestiona por comisión y pide entre 500 000 y 600 000.</h3>
+    <span class="tiempo">0:28.0–0:44.5 de s03.mp3 · 17.5 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:28.0</span><span class="tags">[calm] [neutral]</span> Su intermediario era Domingo Elías, uno de los capitalistas más importantes del país.<span class="pausa">0.35 s</span></p><p><span class="t">0:33.2</span><span class="tags">[calm]</span> Gestionaba el reclamo a cambio de una comisión.<span class="pausa">0.35 s</span></p><p><span class="t">0:35.8</span><span class="tags">[calm] [measured]</span> En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos.<span class="pausa">0.35 s</span></p><p><span class="t">0:41.9</span><span class="tags">[dry]</span> Para sí esperaba doscientos mil.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Ficha de Elías junto al folio de gestión. El folio muestra en un solo renglón el intervalo pedido y su comisión esperada; la comisión se escribe cuando la voz la dice. Sin busto ni gesto. Bajo lo que pedía, en tinta: «<em>≈ 70–85 millones de soles de hoy*</em>» y al pie «<em>* conversión aproximada</em>» (Gerson, 21 de noviembre de 2026; cálculo en fuentes.md).</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Domingo Elías · intermediario</span> <span class="en">con la frase 4</span> <span class="chip ok">lectura 17.5/2.2 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">pide: 500 000–600 000 pesos · comisión: 200 000</span> <span class="en">con la frase 6</span> <span class="chip ok">lectura 9.7/3.7 s</span></li><li><span class="rotulo">≈ 70–85 millones de soles de hoy* · * conversión aproximada</span> <span class="en">con la frase 6</span> <span class="chip ok">lectura 9.7/4.3 s</span><span class="chip neutro">refuerzo declarado</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Cada rótulo entra en bloque y se queda.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Hoja.</p></div>
+      
+      <div class="bloque avisos"><span class="et">Avisos</span><ul><li>3 rótulos en el plano: que no estén más de dos a la vez</li></ul></div>
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-02.png" alt=""><figcaption>Lámina 3B (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png" alt=""><figcaption>obj-09-folio-sencillo.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-3.3">
+  <div class="cabeza"><span class="pid">3.3</span><span class="verbo">frenar</span>
+    <h3>El presidente lo da por vencido.</h3>
+    <span class="tiempo">0:44.5–0:53.6 de s03.mp3 · 10.1 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:44.5</span><span class="tags">[tense] [measured]</span> El presidente ya era José Rufino Echenique, que había sucedido a Castilla.<span class="pausa">0.35 s</span></p><p><span class="t">0:48.9</span><span class="tags">[tense] [slowly]</span> Echenique respondió que el reclamo estaba fuera de plazo.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Ficha de Echenique; el folio de la respuesta se asienta sobre el expediente y el corrector subraya el plazo.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">José Rufino Echenique · presidente, 1851–1855</span> <span class="en">con la frase 8</span> <span class="chip ok">lectura 10.1/2.8 s</span><span class="chip neutro">ficha de identidad</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Tras 0,5 s de quietud, un subrayado rojo.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>La música baja hasta casi nada.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-03.png" alt=""><figcaption>Lámina 3C (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png" alt=""><figcaption>obj-09-folio-sencillo.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano exc" id="p-3.4">
+  <div class="cabeza"><span class="pid">3.4</span><span class="verbo">revelar</span>
+    <h3>Días después se aprueba: 948 500 pesos en vales.</h3><span class="sello exc">excepción reservada</span>
+    <span class="tiempo">0:53.6–1:03.1 de s03.mp3 · 10.5 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:53.6</span><span class="tags">[tense] [low voice]</span> Días después, el reclamo se aprobó.<span class="pausa">0.8 s</span></p><p><span class="t">0:56.9</span><span class="tags">[serious] [softly] [slowly]</span> Por novecientos cuarenta y ocho mil quinientos pesos en vales.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La mesa se vacía durante «<em>Días después</em>» y queda quieta. Con la cifra, el vale entra deslizándose desde la derecha, solo, hasta el centro, y se queda quieto en el silencio. Etiqueta: «<em>NOVOA · VALES APROBADOS</em>».</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">948 500 pesos en vales</span> <span class="en">con la frase 11</span> <span class="chip ok">lectura 7.2/2.5 s</span><span class="chip neutro">refuerzo declarado</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Excepción reservada: un solo papel en cuadro. Entra con peso pesado (como cualquier papel) y no se mueve más; sin halo ni brillo. Decidido por Gerson tras el animatic (versión D del laboratorio 16).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Una hoja al entrar el vale; después, silencio absoluto (2,3 s de voz más 1 s de montaje).</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-04.png" alt=""><figcaption>Lámina 3D (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png" alt=""><figcaption>obj-04-vale.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-3.5">
+  <div class="cabeza"><span class="pid">3.5</span><span class="verbo">comparar</span>
+    <h3>Mucho más de lo pedido, con Torrico de por medio.</h3>
+    <span class="tiempo">1:03.1–1:16.1 de s03.mp3 · 14.0 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:03.1</span><span class="tags">[dry] [restrained]</span> Era mucho más de lo que había pedido el propio Elías: de una vez y media a casi el doble.<span class="pausa larga">1 s</span></p><p><span class="t">1:09.4</span><span class="tags">[serious] [restrained anger]</span> Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Vuelve el folio de gestión de Elías junto a la aprobación: dos alturas, como las barras de la escena 2. Con 13, la ficha de Torrico. Al volver, el folio va más abajo y su etiqueta se acorta («<em>Elías · lo que pedía</em>»): ya fue presentado y no pisa la etiqueta del vale.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Juan Crisóstomo Torrico · ministro de Guerra</span> <span class="en">con la frase 13</span> <span class="chip ok">lectura 7.7/3.1 s</span><span class="chip neutro">ficha de identidad</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>El folio de Elías entra a la izquierda, más bajo.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>La música vuelve, baja.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-04.png" alt=""><figcaption>Lámina 3D (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png" alt=""><figcaption>obj-04-vale.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png" alt=""><figcaption>obj-09-folio-sencillo.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-3.6">
+  <div class="cabeza"><span class="pid">3.6</span><span class="verbo">estimar</span>
+    <h3>Lo que Novoa probablemente recibió.</h3>
+    <span class="tiempo">1:16.1–1:24.1 de s03.mp3 · 9.0 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:16.1</span><span class="tags">[serious] [measured]</span> Y Quiroz anota que Novoa probablemente recibió alrededor de ciento ochenta mil pesos, también en vales.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Un segundo folio junto al vale: la parte de Novoa, «<em>≈ 180 000 de los 948 500</em>». Se lee como una tajada del vale, no como una suma aparte (nota de Gerson, 2026-11-21). «<em>Probablemente</em>» y «<em>en vales</em>» del mismo tamaño que la explicación.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">probablemente recibió ≈ 180 000 de los 948 500, en vales</span> <span class="en">con la frase 14</span> <span class="chip ok">lectura 9.0/4.3 s</span><span class="chip neutro">refuerzo declarado</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Luz pareja sobre los dos folios: se comparan, no se enfrentan.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Hoja.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-05.png" alt=""><figcaption>Lámina 3E (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png" alt=""><figcaption>obj-04-vale.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-3.7">
+  <div class="cabeza"><span class="pid">3.7</span><span class="verbo">delimitar</span>
+    <h3>Lo que no se sabe y lo que sí está documentado.</h3>
+    <span class="tiempo">1:24.1–1:34.7 de s03.mp3 · 12.1 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:24.1</span><span class="tags">[calm] [measured]</span> No sabemos adónde fue cada peso de la diferencia.<span class="pausa">0.35 s</span></p><p><span class="t">1:27.0</span><span class="tags">[calm] [firm]</span> Lo que sí documenta Quiroz es quién dijo que el reclamo estaba fuera de plazo, quién intervino después y cuánto se terminó aprobando.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Entre los dos folios, el espacio vacío queda vacío: sin flechas ni monedas. Con 16, las fichas de Echenique y Torrico y la cifra se encienden una por vez.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Tres focos sucesivos, uno por cosa documentada.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Ninguno nuevo.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-novoa/escena-completa/lamina-06.png" alt=""><figcaption>Lámina 3F (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  
+  
+</article>
+</section>
+<section id="s04">
+  <header><span class="larga">Expediente y archivo; el mapa de s01 para Londres; las islas para la presión</span>
+  <h2><span class="num">s04</span>Lo investigan y los títulos siguen circulando</h2>
+  <p class="cambia">De «<em>un expediente irregular</em>» a «<em>una red con nombre propio que, investigada, salió casi intacta</em>».</p>
+  <p class="meta">4:37.7 en pantalla (4:21.2 de voz + 16.5 s de respiros) · 11 planos</p>
+  <div class="chips"><span class="chip ok">voz 82 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 66 %</span><span class="chip ok">3.5 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-4.1" class="seg q" style="flex:29.82" title="4.1 · 29.8 s · ampliar"><b>4.1</b><span>ampliar</span></a><a href="#p-4.2" class="seg q x" style="flex:24.58" title="4.2 · 24.6 s · nombrar"><b>4.2</b><span>nombrar</span></a><a href="#p-4.3a" class="seg m" style="flex:31.58" title="4.3a · 31.6 s · definir"><b>4.3a</b><span>definir</span></a><a href="#p-4.3b" class="seg m" style="flex:27.20" title="4.3b · 27.2 s · pactar"><b>4.3b</b><span>pactar</span></a><a href="#p-4.3c" class="seg m" style="flex:35.72" title="4.3c · 35.7 s · lavar"><b>4.3c</b><span>lavar</span></a><a href="#p-4.4" class="seg q" style="flex:23.82" title="4.4 · 23.8 s · denunciar"><b>4.4</b><span>denunciar</span></a><a href="#p-4.5" class="seg q" style="flex:18.12" title="4.5 · 18.1 s · matizar"><b>4.5</b><span>matizar</span></a><a href="#p-4.6" class="seg q" style="flex:17.16" title="4.6 · 17.2 s · investigar"><b>4.6</b><span>investigar</span></a><a href="#p-4.7" class="seg q" style="flex:14.58" title="4.7 · 14.6 s · suspender"><b>4.7</b><span>suspender</span></a><a href="#p-4.8" class="seg q" style="flex:20.28" title="4.8 · 20.3 s · presionar"><b>4.8</b><span>presionar</span></a><a href="#p-4.9" class="seg q" style="flex:34.87" title="4.9 · 34.9 s · restaurar"><b>4.9</b><span>restaurar</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>La carpeta de Novoa entra en su estante; la cámara queda frente al archivo.</div><div><span class="et">Sale</span>Los informes de la junta quedan sobre la mesa, en el encuadre con que abre s05.</div></div>
+  
+<article class="plano" id="p-4.1">
+  <div class="cabeza"><span class="pid">4.1</span><span class="verbo">ampliar</span>
+    <h3>Novoa fue uno de muchos: la pila del gancho, ahora con su causa.</h3>
+    <span class="tiempo">0:00.0–0:28.3 de s04.mp3 · 29.8 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[calm] [careful]</span> Novoa fue un caso entre muchos.<span class="pausa">0.35 s</span></p><p><span class="t">0:02.9</span><span class="tags">[careful] [measured]</span> Quiroz anota que los expedientes más dudosos pasaron antes de dos plazos: junio y octubre de mil ochocientos cincuenta y dos.<span class="pausa larga">1 s</span></p><p><span class="t">0:11.3</span><span class="tags">[serious]</span> Así la deuda pasó de cinco a veinticuatro millones de pesos.<span class="pausa">0.35 s</span></p><p><span class="t">0:15.5</span><span class="tags">[calm] [teacher]</span> Esos millones eran deuda reconocida en vales, que el Estado tendría que pagar después.<span class="pausa">0.35 s</span></p><p><span class="t">0:21.3</span><span class="tags">[careful] [clear]</span> Y no toda la diferencia fue fraude: para saberlo, hay que abrir los expedientes uno por uno.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Vuelve la pila de vales del gancho. Debajo, una línea de 1852 con dos marcas; los expedientes se apilan antes de cada una. La pila crece de nuevo hasta 24 millones. Sin rótulos: las marcas de la línea y la altura de la pila bastan; la voz da las fechas y las cifras.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Expedientes que se apilan con peso; la pila crece igual que en el gancho (mismo movimiento: el espectador lo reconoce).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Papel; el mismo golpe grave del gancho.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>Línea de 1852 con las dos marcas.</p></div>
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-01.png" alt=""><figcaption>Lámina 4A.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-archivo.png" alt=""><figcaption>fondo-archivo.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png" alt=""><figcaption>obj-07-carpeta-cerrada.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png" alt=""><figcaption>obj-05-pila-vales.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano exc" id="p-4.2">
+  <div class="cabeza"><span class="pid">4.2</span><span class="verbo">nombrar</span>
+    <h3>En pocas manos, y la época les dio nombre: los consolidados.</h3><span class="sello exc">excepción reservada</span>
+    <span class="tiempo">0:28.3–0:51.9 de s04.mp3 · 24.6 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:28.3</span><span class="tags">[dry]</span> Los vales terminaron concentrados en pocas manos.<span class="pausa">0.35 s</span></p><p><span class="t">0:31.4</span><span class="tags">[dry] [ironic]</span> Según Quiroz, la red que se benefició reunía a varias docenas de personas, y en la época les dieron nombres.<span class="pausa larga">1 s</span></p><p><span class="t">0:38.6</span><span class="tags">[serious] [low voice] [slowly]</span> Les decían los consolidados.<span class="pausa larga">2.5 s</span></p><p><span class="t">0:43.3</span><span class="tags">[serious] [thoughtful]</span> La palabra que nombraba una forma de pagar las deudas del Estado terminó nombrando a las personas vinculadas con el robo político.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Los vales se juntan hacia unas pocas fichas de grupo. Después, la palabra del episodio sola a pantalla completa. Con 8, la palabra baja a una esquina y se queda como rótulo de la escena.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo palabra">los consolidados</span> <span class="en">con la frase 7</span> <span class="chip ok">lectura 14.3/1.6 s</span><span class="chip neutro">término</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Excepción reservada: pantalla completa, quieta, sin textura nueva.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Sin música durante la palabra (2,5 s de voz más 1 s de montaje); la música vuelve con 8.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-01.png" alt=""><figcaption>Lámina 5A.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/capas/beneficios-concentrados.svg" alt=""><figcaption>beneficios-concentrados.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-4.3a">
+  <div class="cabeza"><span class="pid">4.3a</span><span class="verbo">definir</span>
+    <h3>Qué es un bono: otra promesa de pago del Estado, pero de la deuda externa, que nació con los préstamos de Londres de la independencia, se dejó de pagar y se arregló en 1849.</h3>
+    <span class="tiempo">0:51.9–1:22.5 de s04.mp3 · 31.6 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:51.9</span><span class="tags">[calm] [teacher]</span> Muchos de esos vales se cambiaron por bonos de deuda externa, la que el Estado tenía con acreedores de fuera del país.<span class="pausa">0.35 s</span></p><p><span class="t">0:58.8</span><span class="tags">[clear] [teacher]</span> Un bono era también una promesa de pago, como el vale, pero de la deuda externa y no de la deuda interna.<span class="pausa">0.35 s</span></p><p><span class="t">1:05.0</span><span class="tags">[calm] [storytelling]</span> La deuda externa del Perú había empezado en Londres, con los préstamos que el Estado pidió durante la guerra de independencia.<span class="pausa">0.35 s</span></p><p><span class="t">1:11.3</span><span class="tags">[dry]</span> El Estado peruano dejó de pagar esos préstamos casi de inmediato.<span class="pausa">0.35 s</span></p><p><span class="t">1:15.1</span><span class="tags">[measured]</span> En mil ochocientos cuarenta y nueve, el Estado arregló esa deuda con sus acreedores de Londres y volvió a pagar los intereses.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>En la mesa, el vale a la izquierda y, con «<em>deuda externa</em>», el bono a la derecha: «<em>deuda interna</em>» y «<em>deuda externa</em>» escritas en tinta en cada uno. Con «<em>Londres</em>», el mapa de s01: la ruta de los préstamos de Londres a Lima, con «<em>préstamo de 1822 · 1,2 millones de libras</em>» y «<em>préstamo de 1825 · 616 000 libras</em>» (Q, pp. 137 y 139). Con «<em>dejó de pagar</em>», la línea de pagos hacia Londres se corta con una ✕ roja; con «<em>1849</em>», se completa y aparece «<em>1849 · bonos nuevos al 4 % de interés</em>» (Q, p. 178).</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">vale · deuda interna / bono · deuda externa</span> <span class="en">con la frase 9</span> <span class="chip ok">lectura 31.6/3.7 s</span></li><li><span class="rotulo">préstamo de 1822 · 1,2 millones de libras; préstamo de 1825 · 616 000 libras</span> <span class="en">con la frase 11</span> <span class="chip ok">lectura 18.4/5.5 s</span></li><li><span class="rotulo">1849 · bonos nuevos al 4 % de interés</span> <span class="en">con la frase 13</span> <span class="chip ok">lectura 8.4/3.7 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Recorrido: El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Tic por tramo; hoja al llegar el bono.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>La mancha roja del vale (se pinta en Remotion sobre obj-04).</p></div>
+      <div class="bloque avisos"><span class="et">Avisos</span><ul><li>3 rótulos en el plano: que no estén más de dos a la vez</li></ul></div>
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-03.png" alt=""><figcaption>Lámina 4B (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-04.png" alt=""><figcaption>Lámina 1C.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png" alt=""><figcaption>obj-04-vale.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png" alt=""><figcaption>obj-10-bono-deuda-externa.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-4.3b">
+  <div class="cabeza"><span class="pid">4.3b</span><span class="verbo">pactar</span>
+    <h3>El cambio se hizo por contrato con dos casas del guano: Uribarren (Mendiburu, Londres) y Montané (Lima); cerca de la mitad de la deuda consolidada.</h3>
+    <span class="tiempo">1:22.5–1:48.7 de s04.mp3 · 27.2 s en pantalla + 1 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:22.5</span><span class="tags">[calm] [teacher]</span> Para cambiar vales por bonos, el Estado firmó contratos con dos casas comerciales a las que encargaba la venta del guano: Uribarren, de París, y Montané.<span class="pausa">0.35 s</span></p><p><span class="t">1:31.2</span><span class="tags">[clear] [measured]</span> Cada casa le entregaba vales al Estado, y el Estado le daba bonos nuevos por ellos.<span class="pausa">0.35 s</span></p><p><span class="t">1:36.2</span><span class="tags">[dry] [measured]</span> El contrato con Uribarren lo firmó en Londres Manuel de Mendiburu, el enviado del presidente Echenique.<span class="pausa">0.35 s</span></p><p><span class="t">1:41.7</span><span class="tags">[dry] [measured]</span> El contrato con Montané se firmó en Lima.<span class="pausa">0.35 s</span></p><p><span class="t">1:44.0</span><span class="tags">[dry] [measured]</span> Con esos dos contratos se cambió cerca de la mitad de toda la deuda consolidada.<span class="pausa">0.8 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Sobre el mismo mapa: Uribarren en París, Montané sin sede y el Estado en Lima; el vale va de la casa al Estado y el bono vuelve; los dos contratos con sus montos, la presentación de Mendiburu sobre el suyo y «<em>con los dos contratos: ≈ 46 %</em>».</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Uribarren et Cie. · París / Montané et Cie.</span> <span class="en">con la frase 10</span> <span class="chip ok">lectura 50.9/3.7 s</span></li><li><span class="rotulo">Manuel de Mendiburu · ministro plenipotenciario en Londres, 1853</span> <span class="en">con la frase 12</span> <span class="chip ok">lectura 38.3/3.7 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">hasta 6 millones de pesos en vales</span> <span class="en">con la frase 12</span> <span class="chip ok">lectura 38.3/3.1 s</span></li><li><span class="rotulo">3 millones de pesos en vales</span> <span class="en">con la frase 13</span> <span class="chip ok">lectura 34.6/2.8 s</span></li><li><span class="rotulo">≈ 46 % de toda la deuda consolidada</span> <span class="en">con la frase 14</span> <span class="chip ok">lectura 27.2/3.4 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Recorrido: El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Tic por tramo; hoja al llegar el bono.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>La mancha roja del vale (se pinta en Remotion sobre obj-04).</p></div>
+      <div class="bloque avisos"><span class="et">Avisos</span><ul><li>5 rótulos en el plano: que no estén más de dos a la vez</li></ul></div>
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-03.png" alt=""><figcaption>Lámina 4B (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-04.png" alt=""><figcaption>Lámina 1C.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png" alt=""><figcaption>obj-04-vale.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png" alt=""><figcaption>obj-10-bono-deuda-externa.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-4.3c">
+  <div class="cabeza"><span class="pid">4.3c</span><span class="verbo">lavar</span>
+    <h3>El vale valía ≈ 40 %, el bono casi 100 %: las casas que habían juntado vales ganaron. En 1855 el guano ya estaba comprometido con los acreedores de fuera. Quiroz: lavado.</h3>
+    <span class="tiempo">1:48.7–2:22.4 de s04.mp3 · 35.7 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">1:48.7</span><span class="tags">[dry] [ironic]</span> En el mercado, un vale se vendía por alrededor del cuarenta por ciento de lo que tenía escrito.<span class="pausa">0.35 s</span></p><p><span class="t">1:53.8</span><span class="tags">[dry] [ironic]</span> El bono nuevo pronto llegó a valer casi todo lo que tenía escrito.<span class="pausa">0.35 s</span></p><p><span class="t">1:57.7</span><span class="tags">[dry] [pointed]</span> Uribarren y Montané habían juntado vales antes de firmar sus contratos, así que ganaron con el cambio.<span class="pausa">0.8 s</span></p><p><span class="t">2:03.4</span><span class="tags">[serious] [measured]</span> Según un informe de un diplomático de Estados Unidos, en mil ochocientos cincuenta y cinco el dinero del guano ya estaba comprometido con los acreedores de fuera del país.<span class="pausa larga">1 s</span></p><p><span class="t">2:13.5</span><span class="tags">[serious] [low voice]</span> Quiroz llama a ese cambio un lavado: se diseñó para que los vales manchados por su origen salieran limpios, en forma de bonos.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>En la mesa: las barras del vale (≈ 40 %) y del bono (pronto, casi 100 %), de a una; con «<em>ganaron</em>», el arco «<em>≈ 2,5 veces más</em>». Con «<em>un informe de un diplomático</em>», un saco de guano se ata al bono y la tira con la cita textual de Q, n. 108. Con «<em>manchados</em>», la mancha del vale; con «<em>limpios</em>», el vale queda debajo del bono.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">precio en plaza ≈ 40 % de lo que dice</span> <span class="en">con la frase 19</span> <span class="chip ok">lectura 35.7/4.0 s</span></li><li><span class="rotulo">precio: pronto, casi el 100 %</span> <span class="en">con la frase 20</span> <span class="chip ok">lectura 30.6/2.8 s</span></li><li><span class="rotulo">quien tenía vales, al cambiarlos: ≈ 2,5 veces más</span> <span class="en">con la frase 21</span> <span class="chip ok">lectura 26.7/3.7 s</span></li><li><span class="rotulo">«el ingreso guanero ya estaba hipotecado a los acreedores extranjeros» · Q, n. 108, sobre un despacho de J. R. Clay, 1855</span> <span class="en">con la frase 22</span> <span class="chip ok">lectura 21.0/7.6 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Recorrido: El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Tic por tramo; hoja al llegar el bono.</p></div>
+      <div class="bloque falta"><span class="et">Falta dibujar o generar</span><p>La mancha roja del vale (se pinta en Remotion sobre obj-04).</p></div>
+      <div class="bloque avisos"><span class="et">Avisos</span><ul><li>4 rótulos en el plano: que no estén más de dos a la vez</li></ul></div>
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-03.png" alt=""><figcaption>Lámina 4B (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-04.png" alt=""><figcaption>Lámina 1C.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png" alt=""><figcaption>obj-04-vale.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png" alt=""><figcaption>obj-10-bono-deuda-externa.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-4.4">
+  <div class="cabeza"><span class="pid">4.4</span><span class="verbo">denunciar</span>
+    <h3>Elías, peleado con Echenique y Torrico, denuncia en la prensa.</h3>
+    <span class="tiempo">2:22.4–2:44.7 de s04.mp3 · 23.8 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">2:22.4</span><span class="tags">[tense] [storytelling]</span> En agosto de mil ochocientos cincuenta y tres, Domingo Elías publicó dos cartas en El Comercio contra la consolidación.<span class="pausa">0.35 s</span></p><p><span class="t">2:28.7</span><span class="tags">[tense]</span> Ya estaba peleado con Echenique y con Torrico por el caso Novoa.<span class="pausa">0.35 s</span></p><p><span class="t">2:32.3</span><span class="tags">[serious] [measured]</span> Según Quiroz, sostuvo que la consolidación no beneficiaba a los reclamantes originales, sino a los agiotistas: los que especulaban con los vales.<span class="pausa larga">1 s</span></p><p><span class="t">2:40.9</span><span class="tags">[tense] [quick]</span> Lo encarcelaron, y al salir se levantó contra Echenique.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La ficha de Elías vuelve a la mesa y desde ella salen las dos cartas.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">El Comercio · 12 y 16 de agosto de 1853</span> <span class="en">con la frase 24</span> <span class="chip ok">lectura 23.8/4.0 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Cartas que se asientan; nada con 16 (se dice, no se ilustra).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Papel y pluma; sin música heroica.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-04.png" alt=""><figcaption>Lámina 4C (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-11-pagina-periodico.png" alt=""><figcaption>obj-11-pagina-periodico.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-4.5">
+  <div class="cabeza"><span class="pid">4.5</span><span class="verbo">matizar</span>
+    <h3>El denunciante también había hecho el negocio.</h3>
+    <span class="tiempo">2:44.7–3:01.3 de s04.mp3 · 18.1 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">2:44.7</span><span class="tags">[measured] [even]</span> Elías no denunciaba desde afuera.<span class="pausa">0.35 s</span></p><p><span class="t">2:46.8</span><span class="tags">[measured] [even]</span> Él mismo había movido expedientes por comisión, así que su denuncia trae información y también defiende sus intereses.<span class="pausa">0.35 s</span></p><p><span class="t">2:53.5</span><span class="tags">[measured] [fair]</span> Quiroz lo resume así: defendió reformas contra la corrupción, pero no dejó de beneficiarse de compensaciones oficiales.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La ficha de Elías con sus dos funciones a los lados: intermediario y denunciante. Quieta mientras habla Quiroz.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">intermediario · denunciante</span> <span class="en">con la frase 28</span> <span class="chip ok">lectura 18.1/1.9 s</span><span class="chip neutro">término</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Ninguno: es un momento de juicio, se sostiene.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>La música sostiene.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-04.png" alt=""><figcaption>Lámina 4C (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/capas/doble-funcion-elias.svg" alt=""><figcaption>doble-funcion-elias.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-4.6">
+  <div class="cabeza"><span class="pid">4.6</span><span class="verbo">investigar</span>
+    <h3>Cambia el gobierno y una junta revisa: la marca roja del gancho.</h3><span class="sello corte">punto posible de corte de escena</span>
+    <span class="tiempo">3:01.3–3:17.0 de s04.mp3 · 17.2 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">3:01.3</span><span class="tags">[serious]</span> En mil ochocientos cincuenta y cinco cayó Echenique, volvió Castilla y una junta fiscal revisó los expedientes de la consolidación.<span class="pausa">0.35 s</span></p><p><span class="t">3:08.4</span><span class="tags">[serious] [low voice]</span> Encontró más de doce millones de pesos en ciento cuarenta y un expedientes irregulares o ilegales, y otros cuatro robados.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La pila vuelve al centro y el corrector la marca igual que en el gancho, ahora con su explicación. Los cuatro robados son cuatro huecos en el estante, sin monto.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Junta de Examen Fiscal · 1855</span> <span class="en">con la frase 31</span> <span class="chip ok">lectura 17.2/2.8 s</span><span class="chip neutro">ficha de identidad</span></li><li><span class="rotulo">12,2 millones de pesos · 141 expedientes</span> <span class="en">con la frase 32</span> <span class="chip ok">lectura 10.1/3.1 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Mismo trazo rojo del gancho (0.2).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Pluma.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-06.png" alt=""><figcaption>Lámina 4E.1 (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-05.png" alt=""><figcaption>Lámina 4D (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-archivo.png" alt=""><figcaption>fondo-archivo.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png" alt=""><figcaption>obj-05-pila-vales.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-4.7">
+  <div class="cabeza"><span class="pid">4.7</span><span class="verbo">suspender</span>
+    <h3>Se suspende el pago; los principales ya se habían ido.</h3>
+    <span class="tiempo">3:17.0–3:30.1 de s04.mp3 · 14.6 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">3:17.0</span><span class="tags">[serious] [restrained anger]</span> Una ley de diciembre de mil ochocientos cincuenta y seis suspendió el pago de los vales fraudulentos.<span class="pausa">0.35 s</span></p><p><span class="t">3:22.2</span><span class="tags">[serious] [restrained anger]</span> Algunas personas fueron llevadas a juicio, pero muchas ya habían huido del país, entre ellas Torrico, Echenique y Mendiburu.<span class="pausa larga">1 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Cae el sello de la suspensión. Las fichas de Torrico, Echenique y Mendiburu se deslizan fuera del cuadro, una por vez.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Ley del 29 de diciembre de 1856</span> <span class="en">con la frase 33</span> <span class="chip ok">lectura 14.6/3.1 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Las fichas salen rápido (entran lento lo importante, sale rápido lo que se va).</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Sello; roce de las fichas al salir.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-07.png" alt=""><figcaption>Lámina 4E.2 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  
+  
+</article>
+<article class="plano" id="p-4.8">
+  <div class="cabeza"><span class="pid">4.8</span><span class="verbo">presionar</span>
+    <h3>Los tenedores protestan, y Gran Bretaña y Francia los respaldan.</h3>
+    <span class="tiempo">3:30.1–3:48.4 de s04.mp3 · 20.3 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">3:30.1</span><span class="tags">[tense]</span> Los que tenían los vales protestaron: decían que un vale era como un billete, y que quien lo había comprado no tenía por qué perder.<span class="pausa">0.35 s</span></p><p><span class="t">3:36.7</span><span class="tags">[tense] [measured]</span> Los diplomáticos de Gran Bretaña y de Francia los respaldaron, y barcos ingleses y franceses rondaban las islas del guano.<span class="pausa">0.35 s</span></p><p><span class="t">3:43.2</span><span class="tags">[tense]</span> En el país, además, el general Vivanco se había alzado en armas.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Una mano sostiene un vale (el traspaso de 4A.2, un solo cuadro). Con 25, vuelve la isla de s01 con las mismas capas, ahora con dos veleros chicos en el horizonte (el barco de s01 a escala, sin banderas). Vivanco queda solo en la voz.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Los barcos apenas se mueven; el mar sigue con su fase.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>El mar de s01, más grave; la música en tensión.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-02.png" alt=""><figcaption>Lámina 4A.2 (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-islas/lamina-01.png" alt=""><figcaption>Lámina 1A (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png" alt=""><figcaption>obj01-06-mar.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-islas.png" alt=""><figcaption>obj01-06-islas.png</figcaption></figure><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-07-barco.png" alt=""><figcaption>obj01-07-barco.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png" alt=""><figcaption>obj-04-vale.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-4.9">
+  <div class="cabeza"><span class="pid">4.9</span><span class="verbo">restaurar</span>
+    <h3>Una ley lo restaura todo: tabla rasa.</h3>
+    <span class="tiempo">3:48.4–4:21.2 de s04.mp3 · 34.9 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">3:48.4</span><span class="tags">[dry] [bitter]</span> En marzo de mil ochocientos cincuenta y siete, Castilla y el Congreso dieron una ley que restauró los acuerdos sobre bonos y conversión que se habían suspendido.<span class="pausa">0.35 s</span></p><p><span class="t">3:56.5</span><span class="tags">[dry] [bitter] [restrained]</span> Quiroz la llama una ley de tabla rasa, porque en los hechos absolvía a los especuladores y funcionarios que se beneficiaron.<span class="pausa">0.35 s</span></p><p><span class="t">4:03.1</span><span class="tags">[measured] [precise]</span> En el papel, en cambio, dejaba en pie la responsabilidad penal, como anota César Antonio Ugarte en mil novecientos veintiséis.<span class="pausa larga">1.2 s</span></p><p><span class="t">4:11.8</span><span class="tags">[serious] [weary]</span> Entonces, la junta encontró expedientes irregulares o ilegales, pero los vales ya habían cambiado de manos.<span class="pausa">0.35 s</span></p><p><span class="t">4:18.7</span><span class="tags">[serious] [weary] [low voice]</span> Y una ley volvió a ponerlos en circulación.<span class="pausa larga">2.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>La pila con su marca roja. Cae el mismo sello del gancho y la marca se borra a medias, igual que en 0.3. Con 28, la cita entre comillas.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">Ley del 11 de marzo de 1857</span> <span class="en">con la frase 38</span> <span class="chip ok">lectura 34.9/3.1 s</span></li><li><span class="rotulo">«tabla rasa» · Quiroz, p. 185</span> <span class="en">con la frase 39</span> <span class="chip ok">lectura 26.8/2.8 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>El mismo movimiento de 0.3: el gancho se cierra.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>El golpe del sello del gancho; la música se apaga en el «<em>Entonces</em>».</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-investigacion/lamina-08.png" alt=""><figcaption>Lámina 4E.3 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png" alt=""><figcaption>obj-05-pila-vales.png</figcaption></figure></div></div>
+  
+</article>
+</section>
+<section id="s05">
+  <header><span class="larga">Expediente: la mesa del historiador</span>
+  <h2><span class="num">s05</span>De estos expedientes al método de Quiroz</h2>
+  <p class="cambia">De «<em>este caso se puede reconstruir</em>» a «<em>¿y lo que no dejó papeles?</em>».</p>
+  <p class="meta">1:04.1 en pantalla (0:58.6 de voz + 5.5 s de respiros) · 3 planos</p>
+  <div class="chips"><span class="chip ok">voz 77 % (meta ≤ 80 %)</span><span class="chip ok">cámara quieta 77 %</span><span class="chip ok">0.9 rótulos con datos por minuto</span><span class="chip ok">duraciones variadas</span></div></header>
+  <div class="linea"><a href="#p-5.1" class="seg q" style="flex:30.40" title="5.1 · 30.4 s · confrontar"><b>5.1</b><span>confrontar</span></a><a href="#p-5.2" class="seg m" style="flex:14.62" title="5.2 · 14.6 s · reunir"><b>5.2</b><span>reunir</span></a><a href="#p-5.3" class="seg q" style="flex:19.05" title="5.3 · 19.0 s · abrir"><b>5.3</b><span>abrir</span></a></div>
+  <div class="trans"><div><span class="et">Entra</span>Los informes de la junta, en el mismo encuadre con que termina s04.</div><div><span class="et">Sale</span>La pregunta en la pizarra y el índice de la serie; las pruebas de imprenta se cierran.</div></div>
+  
+<article class="plano" id="p-5.1">
+  <div class="cabeza"><span class="pid">5.1</span><span class="verbo">confrontar</span>
+    <h3>Echenique decía que creó capitalistas; Quiroz muestra quiénes quedaron fuera.</h3>
+    <span class="tiempo">0:00.0–0:28.4 de s05.mp3 · 30.4 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:00.3</span><span class="tags">[firm] [measured]</span> Echenique la defendió: decía que el dinero de la consolidación había creado una clase capitalista nacional.<span class="pausa larga">1 s</span></p><p><span class="t">0:07.5</span><span class="tags">[firm]</span> Quiroz le responde con los expedientes.<span class="pausa">0.35 s</span></p><p><span class="t">0:09.9</span><span class="tags">[serious]</span> La mayoría de los reclamantes originales quedaron fuera, igual que los pequeños inversionistas que habrían podido participar.<span class="pausa">0.35 s</span></p><p><span class="t">0:16.7</span><span class="tags">[serious] [low voice]</span> Las ganancias se concentraron en pocas manos.<span class="pausa">0.35 s</span></p><p><span class="t">0:19.6</span><span class="tags">[serious] [slowly]</span> Para él, el capitalismo peruano perdió la oportunidad de construir sus finanzas sobre una deuda pública transparente.<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Dos documentos frente a frente: a la izquierda la ficha de Echenique con su frase; a la derecha la página de Quiroz, con el corrector subrayando a los excluidos. Con 3, la pila de pocas manos.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">«una clase capitalista nacional» · Q, p. 173</span> <span class="en">con la frase 0</span> <span class="chip ok">lectura 30.1/3.4 s</span></li><li><span class="rotulo">«quedaron radicalmente excluidos»</span> <span class="en">con la frase 2</span> <span class="chip ok">lectura 20.5/1.9 s</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Subrayado rojo de corrector en la página de Quiroz.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Pluma.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-01.png" alt=""><figcaption>Lámina 5A.1 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png" alt=""><figcaption>fondo-mesa-expediente.png</figcaption></figure></div></div>
+  
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/capas/quienes-quedaron-fuera.svg" alt=""><figcaption>quienes-quedaron-fuera.svg</figcaption></figure></div></div>
+</article>
+<article class="plano" id="p-5.2">
+  <div class="cabeza"><span class="pid">5.2</span><span class="verbo">reunir</span>
+    <h3>Este caso se reconstruye porque dejó papeles.</h3>
+    <span class="tiempo">0:28.4–0:41.5 de s05.mp3 · 14.6 s en pantalla + 1.5 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:28.4</span><span class="tags">[calm] [warm]</span> Este caso se puede reconstruir porque quedaron papeles: reclamos, vales, cartas y el informe de una junta.<span class="pausa">0.35 s</span></p><p><span class="t">0:35.3</span><span class="tags">[calm] [clear]</span> Con ellos se separa lo que se aprobó de lo que solo se puede estimar, como lo que recibió Novoa.<span class="pausa larga">1.5 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Sobre la mesa del historiador vuelven los objetos ya vistos, uno por palabra: un reclamo, un vale, las cartas y el informe. Con 6, los dos folios de Novoa: aprobado y estimado.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><p class="vacio">Sin rótulos: la imagen y la voz bastan.</p></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="mueve">Recorrido: El circuito final: abrir de la mesa a todos los papeles del episodio, una sola vez, y quedarse.</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>Objetos conocidos, sin presentación nueva; cada uno asienta.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>Una hoja por objeto.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-03.png" alt=""><figcaption>Lámina 5B.1 (11 de noviembre) · referencia</figcaption></figure><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-04.png" alt=""><figcaption>Lámina 5B.2 (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-historiador.png" alt=""><figcaption>fondo-mesa-historiador.png</figcaption></figure></div></div>
+  <div class="piezas"><span class="et">Objetos y papeles (PNG de ChatGPT, 20 de noviembre)</span><div class="fila"><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png" alt=""><figcaption>obj-03-folio-reclamo-pestana-roja.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png" alt=""><figcaption>obj-04-vale.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-11-pagina-periodico.png" alt=""><figcaption>obj-11-pagina-periodico.png</figcaption></figure><figure class="pieza"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png" alt=""><figcaption>obj-07-carpeta-cerrada.png</figcaption></figure></div></div>
+  
+</article>
+<article class="plano" id="p-5.3">
+  <div class="cabeza"><span class="pid">5.3</span><span class="verbo">abrir</span>
+    <h3>Mucha corrupción no deja papeles: ¿se puede medir?</h3>
+    <span class="tiempo">0:41.5–0:58.6 de s05.mp3 · 19.0 s en pantalla + 2 s de montaje</span></div>
+  <div class="cols">
+    <div>
+      <div class="bloque"><span class="et">Voz y emoción</span><div class="voz"><p><span class="t">0:41.5</span><span class="tags">[serious] [low voice]</span> Pero mucha corrupción se hace para no dejar papeles.<span class="pausa">0.35 s</span></p><p><span class="t">0:45.0</span><span class="tags">[serious] [thoughtful]</span> Quiroz quiso sacar una cuenta más grande, la de casi dos siglos de república, y para eso tenía que medir lo que escondían quienes la practicaban.<span class="pausa larga">1.5 s</span></p><p><span class="t">0:54.4</span><span class="tags">[curious] [softly]</span> ¿Se puede medir la corrupción?<span class="pausa larga">2 s</span></p></div></div>
+      <div class="bloque"><span class="et">Imagen</span><p>Los papeles se retiran y la mesa queda casi vacía; queda el libro de Quiroz. La pregunta en la pizarra, y el índice con el 003 encendido.</p></div>
+      <div class="bloque"><span class="et">Pantalla</span><ul class='rotulos'><li><span class="rotulo">¿Se puede medir la corrupción?</span> <span class="en">con la frase 9</span> <span class="chip ok">lectura 6.2/2.5 s</span><span class="chip neutro">término</span></li></ul></div>
+    </div>
+    <div>
+      <div class="bloque"><span class="et">Cámara</span><p class="quieta">Quieta</p></div>
+      <div class="bloque"><span class="et">Efecto</span><p>La mesa se vacía de afuera hacia adentro.</p></div>
+      <div class="bloque"><span class="et">Sonido</span><p>La música se retira; el tema del canal entra al final de la pregunta.</p></div>
+      
+      
+    </div>
+  </div>
+  <div class="laminas"><figure><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/lamina-05.png" alt=""><figcaption>Lámina 5C (11 de noviembre) · referencia</figcaption></figure></div>
+  <div class="piezas"><span class="et">Personajes y fondo (PNG de ChatGPT, 19 de noviembre)</span><div class="fila"><figure class="pieza figura"><img loading="lazy" src="../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-historiador.png" alt=""><figcaption>fondo-mesa-historiador.png</figcaption></figure></div></div>
+  
+  <div class="piezas"><span class="et">Piezas existentes</span><div class="fila"><figure class="pieza"><img loading="lazy" src="diseno/storyboard-visual/revision-metodo/capas/libro-de-quiroz.svg" alt=""><figcaption>libro-de-quiroz.svg</figcaption></figure></div></div>
+</article>
+</section>
+</main></body></html>

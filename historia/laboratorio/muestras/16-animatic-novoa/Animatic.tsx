@@ -11,7 +11,7 @@ import { mix, tramo } from '../../../src/direction/anim';
 import { F, FPS, Ffin, aVideo, aVoz, tramos, type Version } from './linea';
 
 /**
- * Animatic de la escena 3 del episodio 0·2 («El expediente de Novoa»), sobre la voz real.
+ * Animatic de la escena 3 del episodio 0·3 («El expediente de Novoa»), sobre la voz real.
  * Cámara quieta en las tres versiones; cada versión cambia una sola variable:
  *  A · base: la cifra de Novoa entra como cualquier papel (se desliza, con halo, entre los demás).
  *  B · A + excepción reservada: la mesa se vacía en «Días después» y el vale queda solo, sin

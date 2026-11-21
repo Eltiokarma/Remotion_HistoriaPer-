@@ -5,7 +5,7 @@ const here=path.dirname(fileURLToPath(import.meta.url)),project=path.resolve(her
 process.chdir(project);
 const discoD=process.platform==='win32'&&fs.existsSync('D:/Codex-Render-Temp');
 const temporary=process.env.PRUEBA_TEMP_DIR?path.resolve(process.env.PRUEBA_TEMP_DIR):discoD?'D:/Codex-Render-Temp/002-prueba-islas':path.join(project,'laboratorio/out/15-islas-y-el-pais');
-const outputDir=process.env.PRUEBA_OUTPUT_DIR?path.resolve(process.env.PRUEBA_OUTPUT_DIR):discoD?'D:/canal/previsualizaciones/002-la-deuda-defraudada':path.join(project,'out/prueba-002');
+const outputDir=process.env.PRUEBA_OUTPUT_DIR?path.resolve(process.env.PRUEBA_OUTPUT_DIR):discoD?'D:/canal/previsualizaciones/003-la-deuda-defraudada':path.join(project,'out/prueba-002');
 const intro=process.argv.includes('--intro'),nombre=intro?'002-peru-pisco-chincha':'002-prueba-islas';
 const bundleDir=path.join(temporary,'bundle'),qa=path.join(temporary,intro?'qa-recorrido':'qa'),out=path.join(outputDir,nombre+'.mp4');
 fs.mkdirSync(qa,{recursive:true});fs.mkdirSync(path.dirname(out),{recursive:true});

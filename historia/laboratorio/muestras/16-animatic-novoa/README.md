@@ -1,6 +1,6 @@
-# Animatic de la escena 3 del 0·2: «El expediente de Novoa»
+# Animatic de la escena 3 del 0·3: «El expediente de Novoa»
 
-Prueba de ritmo y énfasis sobre la **voz real** (`voz/s03.mp3`, «Joder Jolines», `eleven_v4`), con los fondos, papeles y fichas de la galería del episodio. Sale del [storyboard versión 2](../../../videos/002-la-deuda-defraudada/storyboard.md) (planos 3.1 a 3.7) y de su propuesta de comparar versiones cambiando una variable por vez. No es la escena terminada: no hay música, personajes, cámara en movimiento ni efectos finos.
+Prueba de ritmo y énfasis sobre la **voz real** (`voz/s03.mp3`, «Joder Jolines», `eleven_v4`), con los fondos, papeles y fichas de la galería del episodio. Sale del [storyboard versión 2](../../../videos/003-la-deuda-defraudada/storyboard.md) (planos 3.1 a 3.7) y de su propuesta de comparar versiones cambiando una variable por vez. No es la escena terminada: no hay música, personajes, cámara en movimiento ni efectos finos.
 
 ## Las tres versiones
 
@@ -18,7 +18,7 @@ La comparación que importa: **A frente a B** (¿se siente distinta la cifra?) y
 
 ## Reproducir
 
-Desde `historia/`, con las dependencias instaladas y la galería extraída en `public/videos/002-la-deuda-defraudada/imagenes/chatgpt/` (ver `videos/002-la-deuda-defraudada/galeria.md`):
+Desde `historia/`, con las dependencias instaladas y la galería extraída en `public/videos/003-la-deuda-defraudada/imagenes/chatgpt/` (ver `videos/003-la-deuda-defraudada/galeria.md`):
 
 ```sh
 node laboratorio/muestras/16-animatic-novoa/preparar.mjs
@@ -36,4 +36,4 @@ node laboratorio/muestras/16-animatic-novoa/renderizar.mjs
 
 ## Fuentes
 
-Datos de Q, p. 171 (Novoa, Elías, Echenique, Torrico, montos en vales), como en `videos/002-la-deuda-defraudada/fuentes.md`. La ficha de la abolición sale del decreto de Huancayo (3 de diciembre de 1854). Las imágenes son de la galería del episodio, generadas con ChatGPT (registro en `fuentes.md`).
+Datos de Q, p. 171 (Novoa, Elías, Echenique, Torrico, montos en vales), como en `videos/003-la-deuda-defraudada/fuentes.md`. La ficha de la abolición sale del decreto de Huancayo (3 de diciembre de 1854). Las imágenes son de la galería del episodio, generadas con ChatGPT (registro en `fuentes.md`).

@@ -1,0 +1,1420 @@
+{
+  "titulo": "La deuda defraudada · Storyboard",
+  "version": 2,
+  "fecha": "2026-11-19",
+  "estado": "Propuesta del agente para revisión de Gerson, rehecha sobre la voz real (narracion_tiempos.json). No se dibujó nada nuevo: cada plano dice qué lámina o pieza existente usa y qué falta.",
+  "criterio": "direccion-historia (§2, §4, §5), estructura-visual-motion (Block: constantes, progresión, excepción reservada; storyboard como reescritura), historia/CLAUDE.md §3–§8 (párrafo audiovisual, texto que no repite la voz, cámara con motivo, ≥ 20 % quieta).",
+  "revision_anterior": {
+    "veredicto": {
+      "se_entiende": "a medias",
+      "se_siente": "a medias"
+    },
+    "diagnostico": "El storyboard del 11 de noviembre ilustra bien cada frase, pero no decide qué importa más: 107 encuadres para 9 min 28 s de voz, casi todos con cámara en movimiento y foco por turnos, de modo que los dos momentos fuertes (la cifra de Novoa y los consolidados) no pueden diferenciarse. Es un problema de capa de secuencia, no de dibujo.",
+    "hojas": [
+      {
+        "momento": "Todo el episodio",
+        "observacion": "Cuatro espacios que se alternan sin regla: mesa cenital, pizarra de tiza, despacho con personajes y mapa.",
+        "hipotesis": "Sin un lugar por función, cada cambio de espacio se lee como un cambio de tema aunque no lo sea.",
+        "cambio": "Tres espacios con función fija: el lugar (mapa y grabado), el mecanismo (pizarra que acumula) y el expediente (mesa de documentos).",
+        "resultado": "El espectador sabe, por el espacio, si está viendo dónde, cómo funciona o qué pasó.",
+        "comprobar": "Ver la escaleta solo con miniaturas: cada cambio de espacio debe coincidir con un cambio de función."
+      },
+      {
+        "momento": "Todo el episodio",
+        "observacion": "Casi todos los encuadres traen «acercar», «abrir», «panear» o «seguir».",
+        "hipotesis": "El movimiento continuo deja de significar: ya no puede marcar un viaje ni una revelación (Block: movimiento constante no es progresión).",
+        "cambio": "Cámara quieta por defecto; solo se mueve en los recorridos que dice la voz (a Chincha, a Londres, el tablero completo, el circuito final).",
+        "resultado": "Cuatro movimientos reconocibles, cada uno con un motivo.",
+        "comprobar": "Medir el porcentaje de cámara quieta (meta ≥ 20 %; aquí se apunta a más del 70 %)."
+      },
+      {
+        "momento": "3D y 4A (la cifra de Novoa y los consolidados)",
+        "observacion": "Llegan con el mismo tratamiento que cualquier dato: ficha que se desliza, foco, roce.",
+        "hipotesis": "Si todo se enfatiza, nada se enfatiza: falta una excepción reservada.",
+        "cambio": "Reservar para esos dos momentos la combinación que no aparece en ningún otro: un solo elemento en cuadro, cámara quieta, silencio absoluto y un respiro agregado en el montaje.",
+        "resultado": "Los dos datos que el espectador debe recordar se sienten distintos sin subir el volumen.",
+        "comprobar": "Prueba sin sonido: ¿se reconocen los dos momentos solo por la imagen?"
+      },
+      {
+        "momento": "2D (la compra)",
+        "observacion": "Siete encuadres de gesto (preparar, agarrar, soltar, recibir) para 13 s de voz.",
+        "hipotesis": "La actuación compite con la idea; lo que hay que entender es la diferencia entre precio y valor, no el agarre.",
+        "cambio": "Tres encuadres de acción y una comparación de alturas (precio bajo, valor alto) que se queda en el tablero.",
+        "resultado": "La idea «barato y luego muchas veces mayor» queda dibujada y se reutiliza en la conversión de Londres.",
+        "comprobar": "Preguntar a otra persona qué entendió de la compra, sin anticiparle la respuesta."
+      },
+      {
+        "momento": "Rótulos de las láminas",
+        "observacion": "«Unos días después», «Fuera de plazo», «Canje parcial», «No es efectivo inmediato» repiten lo que dice la voz en el mismo instante.",
+        "hipotesis": "Redundancia: el espectador lee y escucha lo mismo, y se le va el ojo del objeto (CLAUDE §5, Mayer).",
+        "cambio": "En pantalla solo lo que la voz no da: fecha exacta, cifra exacta, nombre completo con cargo, fuente. Los términos del tablero (una a tres palabras) son la única excepción, y se declara.",
+        "resultado": "Menos texto y cada rótulo agrega algo.",
+        "comprobar": "El generador compara cada rótulo con la voz de su plano y marca los que se repiten."
+      },
+      {
+        "momento": "Escena 4",
+        "observacion": "Unos quince nombres y cifras nuevos en algo más de tres minutos (segunda acta del Escribano), y la voz ocupa el 86 % de la escena: casi no hay respiros.",
+        "hipotesis": "Sobrecarga: no hay tiempo para que un dato se asiente antes del siguiente (CLAUDE §8: ≤ 6 por minuto, voz ≤ 80 %).",
+        "cambio": "Agregar respiros de montaje después de cada párrafo, sacar de la pantalla a Vivanco y a Ugarte (quedan en la voz) y recuperar objetos conocidos (la pila del gancho, el mapa de la escena 1, las barras de la compra) en vez de presentar nuevos.",
+        "resultado": "La escena se apoya en lo ya aprendido y deja respirar.",
+        "comprobar": "Las métricas por escena del generador: voz ≤ 85 % y rótulos nuevos por minuto."
+      }
+    ],
+    "funciona": "Las láminas ya separan bien unidades y cautelas («probablemente», «en vales»), conservan la identidad de los objetos entre estados (el folio de pestaña roja, el vale de marco doble) y tienen enlaces de continuidad entre escenas. Eso se conserva.",
+    "versiones": "A: aplicar solo la cámara quieta por defecto y medir. B: sumar las excepciones reservadas. C: sumar los respiros de montaje y el recorte de rótulos. Comparar A, B y C en el animatic de la escena 3. Decisión de Gerson (20 de noviembre de 2026), tras el animatic de la escena 3 (laboratorio 16): versión C, con la entrada del vale de A. Es la versión D del animatic."
+  },
+  "sistema": {
+    "constantes": [
+      "Tres espacios con función fija: el lugar (mapa Natural Earth y grabado de islas v3), el mecanismo (pizarra que acumula piezas de papel y tiza, escena 2) y el expediente (mesa de madera en cenital, escenas 3 a 5).",
+      "Papel, tinta y fichas a máquina con cuadrito rojo (gramática de la serie). Una ficha nueva por vez. Los objetos y papeles son PNG de ChatGPT en el mismo estilo de grabado que las figuras, sin texto: las cifras, nombres y fechas los rotula Remotion encima.",
+      "Cámara quieta mientras se lee o se escucha un dato. Los objetos se mueven; la cámara no, al mismo tiempo.",
+      "Personajes solo donde hay una acción que la voz describe: cargar el guano (s01) y vender, comprar, gestionar y aprobar el reclamo (s02). Son PNG de ChatGPT con aspecto de grabado y representan funciones, no personas. Las personas reales (Castilla, Echenique, Elías, Torrico, Mendiburu) van con ficha a máquina y, si existe, con su retrato de época en dominio público; nunca con una cara inventada.",
+      "Cada documento lleva encima una etiqueta corta con su dueño o responsable y su función («ELÍAS · GESTIÓN», «NOVOA · VALES APROBADOS»): cuando hay tres papeles en la mesa, se sabe de quién es cada uno. Las etiquetas acompañan al papel cuando se mueve. Decidido por Gerson el 20 de noviembre de 2026.",
+      "Todo texto sobre el fondo (fichas, etiquetas, rótulos) va sobre una caja negra sólida al 50 %, sin degradado. Reemplaza a la sombra difusa. Decidido por Gerson el 20 de noviembre de 2026.",
+      "Junto al nombre de una persona real (en su ficha y en la etiqueta de sus documentos) va un medallón con su cara si hay retrato de época en dominio público (Elías, Echenique, Torrico; Castilla y Mendiburu por verificar), o con una silueta que la caracterice si no lo hay (Novoa). Nunca una cara generada. Decidido por Gerson el 20 de noviembre de 2026.",
+      "Presentación de personaje: la primera vez que la voz nombra a una persona, su medallón y su nombre completo con su función salen en primer plano, al centro, y la mesa se desenfoca y oscurece. Dura 1,8 s, empieza cuando la voz dice el nombre y a los 1,3 s el medallón viaja en arco a su lugar: la etiqueta de su papel, que entra en ese momento, o la ficha si no tiene papel (Torrico). Una sola vez por persona. Pedido por Gerson el 21 de noviembre de 2026 (animatic de la escena 3, versión F)."
+    ],
+    "progresion": "La pila de vales: aparece en el gancho, se reduce a un solo vale en la escena 2, se vuelve la cifra de Novoa en la 3, recupera su altura de 24 millones en la 4 (con la marca roja de la junta) y queda con su marca fantasma en la 5. Junto con la pila progresa el rojo de culpa: primero un borde, después la mitad marcada, después la mancha del lavado.",
+    "excepciones": [
+      "La cifra de Novoa (s03, frase 11): en «Días después» la mesa se vacía; con la cifra, el vale entra deslizándose solo (peso pesado, como entra cualquier papel) y se queda quieto, sin halo, durante 2,3 s de silencio absoluto más 1 s de respiro de montaje. Decidido por Gerson tras el animatic (versión D).",
+      "Los consolidados (s04, frase 7): la palabra del episodio a pantalla completa, quieta, sin música, con 2,5 s más 1 s de montaje. Es la única palabra a pantalla completa (CLAUDE §1.3)."
+    ],
+    "recorridos": "La cámara se mueve solo cuatro veces con viaje: al lugar (s01), a abrir el tablero completo (s02), de Lima a Londres (s04) y el circuito final (s05). Siempre arranca despacio, viaja y frena (pesado o solemne).",
+    "rojo": "Corrector: encerrar, subrayar, tachar. Culpa: el borde de la pila inflada, la mitad marcada por la junta, la mancha del vale lavado. Nada más.",
+    "texto": "Solo lo que la voz no dice (fecha exacta, cifra exacta, nombre completo con cargo, fuente). Excepción declarada: los términos del tablero de la escena 2 (de una a tres palabras) y la pregunta del 003 en la tarjeta. Máximo dos rótulos a la vez. Las etiquetas de dueño son la otra excepción declarada: nombran a la persona aunque la voz la diga, porque sirven para distinguir papeles.",
+    "respiros": "La voz ocupa casi todo el tiempo. Los respiros de montaje (columna «+ s») alargan el video sin tocar la voz: se cortan en las pausas de párrafo, que ya son de 1 s o más."
+  },
+  "imagenes": {
+    "4A.1": "diseno/storyboard-visual/revision-investigacion/lamina-01.png",
+    "4E.1": "diseno/storyboard-visual/revision-investigacion/lamina-06.png",
+    "4E.3": "diseno/storyboard-visual/revision-investigacion/lamina-08.png",
+    "1A": "diseno/storyboard-visual/revision-islas/lamina-01.png",
+    "1B.1": "diseno/storyboard-visual/revision-islas/lamina-02.png",
+    "1C.1": "diseno/storyboard-visual/revision-islas/lamina-04.png",
+    "1C.2": "diseno/storyboard-visual/revision-islas/lamina-05.png",
+    "1D.1": "diseno/storyboard-visual/revision-islas/lamina-06.png",
+    "2A": "diseno/storyboard-visual/revision-reclamo/lamina-01.png",
+    "2B": "diseno/storyboard-visual/revision-reclamo/lamina-02.png",
+    "2C": "diseno/storyboard-visual/revision-reclamo/lamina-03.png",
+    "2D": "diseno/storyboard-visual/revision-reclamo/lamina-04.png",
+    "2E": "diseno/storyboard-visual/revision-reclamo/lamina-05.png",
+    "2F": "diseno/storyboard-visual/revision-reclamo/lamina-06.png",
+    "3A": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-01.png",
+    "3B": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-02.png",
+    "3C": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-03.png",
+    "3D": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-04.png",
+    "3E": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-05.png",
+    "3F": "diseno/storyboard-visual/revision-novoa/escena-completa/lamina-06.png",
+    "4A.2": "diseno/storyboard-visual/revision-investigacion/lamina-02.png",
+    "4B": "diseno/storyboard-visual/revision-investigacion/lamina-03.png",
+    "4C": "diseno/storyboard-visual/revision-investigacion/lamina-04.png",
+    "4D": "diseno/storyboard-visual/revision-investigacion/lamina-05.png",
+    "4E.2": "diseno/storyboard-visual/revision-investigacion/lamina-07.png",
+    "5A.1": "diseno/storyboard-visual/revision-metodo/lamina-01.png",
+    "5A.2": "diseno/storyboard-visual/revision-metodo/lamina-02.png",
+    "5B.1": "diseno/storyboard-visual/revision-metodo/lamina-03.png",
+    "5B.2": "diseno/storyboard-visual/revision-metodo/lamina-04.png",
+    "5C": "diseno/storyboard-visual/revision-metodo/lamina-05.png"
+  },
+  "escenas": [
+    {
+      "s": "s00",
+      "titulo": "El gancho",
+      "espacio": "Expediente: la mesa con las pruebas de imprenta",
+      "cambia": "De «una deuda es una deuda» a «una deuda se puede inflar, y alguien la inflaba».",
+      "entrada": "Negro, 1,5 s de papel sin voz; aparecen las pruebas de imprenta.",
+      "salida": "Corte J: el mar de s01 entra 12 cuadros antes que su imagen.",
+      "planos": [
+        {
+          "id": "0.1",
+          "frases": [
+            0,
+            1
+          ],
+          "verbo": "presentar",
+          "respiro": 1.5,
+          "idea": "La deuda reconocida crece casi cinco veces en un año.",
+          "imagen": "Sobre las pruebas de imprenta, una pila baja de vales sin texto. Con «un año después», la pila sube hasta casi cinco veces su altura; el tramo nuevo lleva un borde rojo apagado. Sin rótulos: la voz da las cifras y la altura de la pila, la proporción.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "La pila crece con peso pesado, de una vez, y asienta (impacto de papel 0,025). Nada más se mueve.",
+          "sonido": "Papel; un golpe grave cuando la pila termina de crecer. Sin música.",
+          "base": [
+            "4A.1"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "0.2",
+          "frases": [
+            2,
+            3
+          ],
+          "verbo": "marcar",
+          "idea": "Una investigación del propio Estado señala más de la mitad.",
+          "imagen": "El corrector encierra en rojo algo más de la mitad de la pila.",
+          "pantalla": [
+            {
+              "en": 3,
+              "t": "1855 · 141 expedientes"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Trazo rojo de corrector, ligero, de una vez.",
+          "sonido": "Pluma sobre papel.",
+          "base": [
+            "4E.1"
+          ],
+          "respiro": 0.5,
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "0.3",
+          "frases": [
+            4
+          ],
+          "verbo": "borrar",
+          "idea": "Una ley devuelve esos títulos a la circulación.",
+          "imagen": "Cae el sello de la ley; la marca roja se borra a medias y queda como fantasma.",
+          "pantalla": [
+            {
+              "en": 4,
+              "t": "Ley del 11 de marzo de 1857"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Sello desde arriba: se pasa apenas de tamaño y vuelve, sin deformarse.",
+          "sonido": "Golpe de sello seco; el papel sigue.",
+          "base": [
+            "4E.3"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "0.4",
+          "frases": [
+            5,
+            7
+          ],
+          "verbo": "preguntar",
+          "respiro": 1.5,
+          "idea": "¿Cómo se infla una deuda? Quiroz fue a comprobarlo.",
+          "imagen": "La pila con su marca fantasma, quieta durante la pregunta. Con «Alfonso Quiroz», la ficha a máquina se escribe sobre la mesa.",
+          "pantalla": [
+            {
+              "en": 7,
+              "t": "Alfonso W. Quiroz · tesis de 1980",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Ficha a máquina, letra por letra.",
+          "sonido": "Tecleo breve. Silencio de música en la pregunta.",
+          "base": [
+            "5B.1"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        }
+      ]
+    },
+    {
+      "s": "s01",
+      "titulo": "Las islas y el país",
+      "espacio": "Lugar: mapa y grabado de islas v3",
+      "cambia": "De «el Estado no tiene con qué pagar» a «el guano le da con qué pagar, y aparecen las deudas».",
+      "entrada": "Corte J desde la ficha de Quiroz: primero el mar.",
+      "salida": "La carpeta de obligaciones pendientes pasa a la pizarra de s02 (misma posición, cambia el fondo).",
+      "planos": [
+        {
+          "id": "1.1",
+          "frases": [
+            0,
+            1
+          ],
+          "verbo": "situar",
+          "idea": "Dónde y cuándo: el Perú de 1850, gobierno de Castilla.",
+          "imagen": "Mapa de la costa central con Lima, Pisco y Chincha.",
+          "pantalla": [
+            {
+              "en": 1,
+              "t": "Ramón Castilla · presidente, 1845–1851",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "Ir al lugar: de Lima a Chincha, pesado, y frena sobre el localizador."
+          },
+          "efecto": "Localizador de Chincha con su pulso (1a-localizador).",
+          "sonido": "Mar que entra antes de la imagen; viento.",
+          "base": [
+            "1A"
+          ],
+          "piezas": [
+            "diseno/recursos-escena01/svg/1a-localizacion/1a-mapa-costa-central.svg"
+          ]
+        },
+        {
+          "id": "1.2",
+          "frases": [
+            2,
+            3
+          ],
+          "verbo": "mostrar",
+          "idea": "Qué es el guano y quién lo compra.",
+          "imagen": "La isla en dos capas (mar y cielo detrás; isla, guano y aves delante): las aves y el mar se mueven, la roca no. Nada más.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Mar con fase continua y aves en vuelo como acción secundaria.",
+          "sonido": "Aves y oleaje.",
+          "base": [
+            "1A"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-islas.png"
+          ]
+        },
+        {
+          "id": "1.3",
+          "frases": [
+            4,
+            5
+          ],
+          "verbo": "mostrar",
+          "respiro": 2,
+          "idea": "Sacarlo exige trabajo, y no siempre libre.",
+          "imagen": "Sobre el fondo limpio de Chincha, en primer plano, el trabajador del sombrero vierte la pala en el saco y otro trabajador lo sujeta, lo levanta y lo lleva hacia el borde. Con «jornaleros libres, pero también presos…», entra en plano medio un grupo de cuatro trabajadores de orígenes distintos, uno cava, dos cargan sacos y uno empuja una carretilla, sin rótulos: su aspecto no dice su condición. En la pausa sin voz, el saco sube al barco.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Pala en arco; granos con semilla que caen una vez y se asientan. El grupo del fondo camina despacio hacia la derecha, cada figura por separado (trabajador-grupo-1 a 4) y con desfase, más lento que el primer plano. Balanceo corto del casco al recibir el saco.",
+          "sonido": "Raspado de pala, saco al apoyarse, madera del barco.",
+          "base": [
+            "1B.1",
+            "1C.1"
+          ],
+          "falta": "Pala ya está en la figura; el saco es obj-01 y obj-02; el embarque con el barco de 1c. Sin rótulo sobre las figuras: su aspecto no documenta su condición.",
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-limpio-chincha.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/trabajadores-grupo-fondo.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/trabajador-1b-vierte-guano.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/trabajador-2a-sujeta-saco.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/trabajador-2b-levanta-saco.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/trabajador-2c-transporta-saco.png"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-01-saco-guano-abierto.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-02-saco-guano-cerrado.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-07-barco.png"
+          ]
+        },
+        {
+          "id": "1.4",
+          "frases": [
+            6,
+            7
+          ],
+          "verbo": "explicar",
+          "idea": "El Estado es dueño; la casa vende, cobra comisión y adelanta dinero.",
+          "imagen": "Diagrama de venta: guano → venta → comisión e ingreso del Estado, con una flecha más hacia el gobierno: adelantos.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Cada nodo entra cuando la voz lo nombra; las flechas se trazan ligeras.",
+          "sonido": "Pluma por flecha.",
+          "base": [
+            "1C.2"
+          ],
+          "piezas": [
+            "diseno/recursos-escena01/svg/1c-embarque-y-venta/1c-diagrama-venta-sin-texto.svg"
+          ],
+          "falta": "La flecha de adelantos (pieza nueva, del mismo trazo)."
+        },
+        {
+          "id": "1.5",
+          "frases": [
+            8
+          ],
+          "verbo": "conectar",
+          "respiro": 1,
+          "idea": "Con esa plata, el Estado puede pagar lo que debía.",
+          "imagen": "La flecha del ingreso llega al edificio del Estado; a su lado se abre la carpeta de obligaciones pendientes.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "movimiento",
+            "motivo": "Seguir el dinero del diagrama al Estado: un paneo corto, pesado."
+          },
+          "efecto": "La carpeta se abre y asoma el folio de pestaña roja.",
+          "sonido": "Carpeta.",
+          "base": [
+            "1D.1"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-08-estado.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-abierta.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png"
+          ]
+        }
+      ]
+    },
+    {
+      "s": "s02",
+      "titulo": "Un reclamo pasa por varias manos",
+      "espacio": "Mecanismo: la pizarra que acumula (tablero de izquierda a derecha)",
+      "cambia": "De «pagar las deudas es una buena idea» a «la ley tenía dos huecos, y por ahí entró el negocio».",
+      "entrada": "El folio de pestaña roja, en la misma posición; el fondo pasa de mesa a pizarra.",
+      "salida": "El tablero completo queda quieto; la carpeta de Novoa se separa de él hacia la mesa (corte por cambio de espacio).",
+      "planos": [
+        {
+          "id": "2.1",
+          "frases": [
+            0,
+            3
+          ],
+          "verbo": "agrupar",
+          "respiro": 1,
+          "idea": "Préstamos y bienes tomados: eso era la deuda interna.",
+          "imagen": "En la pizarra, el folio del préstamo y el de los bienes para las tropas entran cuando la voz los nombra; una llave de tiza los agrupa.",
+          "pantalla": [
+            {
+              "en": 3,
+              "t": "deuda interna",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Folios que se asientan; llave de tiza trazada de una vez.",
+          "sonido": "Hoja por folio; tiza.",
+          "base": [
+            "2A"
+          ],
+          "piezas": [
+            "diseno/recursos-escena02/svg/2a-retomar/2a-llave-agrupadora.svg"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png"
+          ]
+        },
+        {
+          "id": "2.2",
+          "frases": [
+            4,
+            5
+          ],
+          "verbo": "ordenar",
+          "idea": "La ley de 1850 manda revisar y reconocer: la consolidación.",
+          "imagen": "El libro de la ley entra a la derecha del grupo. El folio de pestaña roja recibe el sello «reconocido» cuando la voz dice «decidir cuánto valía».",
+          "pantalla": [
+            {
+              "en": 4,
+              "t": "Ley del 16 de marzo de 1850"
+            },
+            {
+              "en": 5,
+              "t": "consolidación",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Un sello, una vez. Sin cotejo campo por campo (era de la versión anterior).",
+          "sonido": "Sello suave.",
+          "base": [
+            "2B"
+          ],
+          "piezas": [
+            "diseno/recursos-escena02/svg/2b-cotejo/2b-sello-reconocido.svg"
+          ],
+          "respiro": 1,
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-08-libro-ley-abierto.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png"
+          ]
+        },
+        {
+          "id": "2.3",
+          "frases": [
+            6,
+            7
+          ],
+          "verbo": "justificar",
+          "respiro": 1,
+          "idea": "Pagar lo que se debe devuelve la confianza: la idea era buena.",
+          "imagen": "Del folio reconocido sale una flecha de tiza al edificio del Estado, y del Estado una flecha de vuelta: el comerciante vuelve a prestar.",
+          "pantalla": [
+            {
+              "en": 7,
+              "t": "crédito público",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Dos flechas de tiza; la segunda tarda un poco más (es la consecuencia).",
+          "sonido": "Tiza.",
+          "base": [
+            "5A.1"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-metodo/capas/finalidad-del-credito.svg"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-08-estado.png"
+          ]
+        },
+        {
+          "id": "2.4",
+          "frases": [
+            8,
+            9
+          ],
+          "verbo": "definir",
+          "respiro": 1,
+          "idea": "El vale es una promesa de pago con intereses, y se puede vender.",
+          "imagen": "La reclamante recibe el vale con las dos manos, junto al folio reconocido. Unas monedas a la izquierda se apartan: el vale no es efectivo. Con «se podía vender», una flecha corta sale del vale hacia el borde derecho, vacío.",
+          "pantalla": [
+            {
+              "en": 8,
+              "t": "6 % de interés [VERIFICAR: anual]"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "El vale asienta con su sombra; las monedas se deslizan fuera sin rebote.",
+          "sonido": "Papel; monedas apenas.",
+          "base": [
+            "2C"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/reclamante-recibe-vale.png"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-12-monedas.png"
+          ]
+        },
+        {
+          "id": "2.5",
+          "frases": [
+            10,
+            11
+          ],
+          "verbo": "señalar",
+          "idea": "La ley tenía dos huecos.",
+          "imagen": "El libro de la ley (obj-08) vuelve al centro; el corrector encierra en rojo las dos franjas vacías de la página derecha.",
+          "pantalla": [
+            {
+              "en": 11,
+              "t": "sustento",
+              "termino": true
+            },
+            {
+              "en": 11,
+              "t": "traspaso",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Dos círculos de corrector, uno por cada hueco, con la voz.",
+          "sonido": "Pluma.",
+          "base": [
+            "2A"
+          ],
+          "respiro": 1,
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-08-libro-ley-abierto.png"
+          ]
+        },
+        {
+          "id": "2.6",
+          "frases": [
+            12,
+            14
+          ],
+          "verbo": "comparar",
+          "respiro": 2,
+          "idea": "Se compra barato y se hace reconocer por mucho más.",
+          "imagen": "Delante de la pizarra, tres cuadros de acción con las mismas dos figuras: la reclamante ofrece el folio, el comprador lo toma y le entrega el sobre, y ella recibe el pago. Después, en la pizarra, dos barras de tiza: precio de compra (baja) y valor reconocido (alta), sin cifras.",
+          "pantalla": [
+            {
+              "en": 14,
+              "t": "precio",
+              "termino": true
+            },
+            {
+              "en": 14,
+              "t": "valor reconocido",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "La barra alta crece después de la baja, más lenta. Las dos barras se quedan en el tablero (vuelven en Londres).",
+          "sonido": "Papel y sobre; tiza.",
+          "base": [
+            "2D"
+          ],
+          "piezas": [
+            "diseno/recursos-escena02/svg/2d-compra/2d-tiza-precio-de-compra.svg",
+            "diseno/recursos-escena02/svg/2d-compra/2d-tiza-valor-reconocido.svg"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/reclamante-a-ofrece-folio.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/comprador-a-toma-folio.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/comprador-b-entrega-sobre.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/reclamante-b-recibe-pago.png"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-06-sobre-pago.png"
+          ]
+        },
+        {
+          "id": "2.7",
+          "frases": [
+            15,
+            18
+          ],
+          "verbo": "distinguir",
+          "idea": "Para lograrlo había ayuda; la ilegal es la de los funcionarios.",
+          "imagen": "Entran el intermediario (a la izquierda) y el funcionario (a la derecha) de medio cuerpo, cada uno con una ficha de función debajo que dice que es un ejemplo. Con «comisiones ilegales», un desvío rojo salta la revisión. Con 17, el intermediario queda en luz neutra; con 18, el enlace del funcionario queda en rojo.",
+          "pantalla": [
+            {
+              "en": 16,
+              "t": "intermediario (ejemplo) · funcionario (ejemplo)",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Un solo foco activo por vez. El rojo, solo en el desvío y el enlace ilegal.",
+          "sonido": "Tiza; nada sobre el rojo.",
+          "base": [
+            "2E"
+          ],
+          "piezas": [
+            "diseno/recursos-escena02/svg/2e-gestion/2e-desvio-rojo.svg"
+          ],
+          "respiro": 1,
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/intermediario-explica-tramite.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/funcionario-revisa-reclamo.png"
+          ],
+          "falta": "Nada nuevo. Ojo: el intermediario de ejemplo no debe parecerse a la ficha de Elías de s03, para que nadie lo tome por él."
+        },
+        {
+          "id": "2.8",
+          "frases": [
+            19
+          ],
+          "verbo": "recapitular",
+          "respiro": 1.5,
+          "idea": "Cuatro manos: vende, compra, mueve, aprueba.",
+          "imagen": "El tablero completo, de la deuda interna al funcionario: es la imagen que junta la escena.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "Abrir hasta ver el tablero entero mientras la voz cuenta las cuatro manos; frena y queda quieta en la pausa."
+          },
+          "efecto": "Un número de tiza (1 a 4) junto a cada mano, con la voz.",
+          "sonido": "Un tic por mano; la música sostiene la pausa.",
+          "base": [
+            "2F"
+          ]
+        }
+      ]
+    },
+    {
+      "s": "s03",
+      "titulo": "El expediente de Novoa",
+      "espacio": "Expediente: la mesa en cenital",
+      "cambia": "De «así funcionaba» a «así se aprobó un reclamo que el presidente había dado por vencido».",
+      "entrada": "Desde el tablero, la carpeta de Novoa baja a la mesa.",
+      "salida": "La carpeta de Novoa se cierra y vuelve a un estante del archivo (s04).",
+      "planos": [
+        {
+          "id": "3.1",
+          "frases": [
+            0,
+            3
+          ],
+          "verbo": "presentar",
+          "respiro": 1,
+          "idea": "Un caso real: qué reclamaba Novoa, y cómo.",
+          "imagen": "La carpeta se abre: folio de la solicitud con la hacienda. El renglón de las quinientas personas esclavizadas aparece solo, y se sostiene. Con 3, una ficha pequeña de la abolición.",
+          "pantalla": [
+            {
+              "en": 1,
+              "t": "Ignacia Novoa de Arredondo · reclamante",
+              "ficha": true
+            },
+            {
+              "en": 3,
+              "t": "Abolición: decreto del 3 de diciembre de 1854"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "El renglón entra sin efecto; la música sale con él.",
+          "sonido": "Sin música en el renglón de las personas esclavizadas.",
+          "base": [
+            "3A"
+          ],
+          "piezas": [
+            "diseno/recursos-escena03/svg/3a-lo-que-pedia/3a-hacienda.svg"
+          ],
+          "falta": "Ficha de la abolición (pieza nueva).",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-abierta.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "3.2",
+          "frases": [
+            4,
+            7
+          ],
+          "verbo": "presentar",
+          "respiro": 1,
+          "idea": "Elías gestiona por comisión y pide entre 500 000 y 600 000.",
+          "imagen": "Ficha de Elías junto al folio de gestión. El folio muestra en un solo renglón el intervalo pedido y su comisión esperada; la comisión se escribe cuando la voz la dice. Sin busto ni gesto. Bajo lo que pedía, en tinta: «≈ 70–85 millones de soles de hoy*» y al pie «* conversión aproximada» (Gerson, 21 de noviembre de 2026; cálculo en fuentes.md).",
+          "pantalla": [
+            {
+              "en": 4,
+              "t": "Domingo Elías · intermediario",
+              "ficha": true
+            },
+            {
+              "en": 6,
+              "t": "pide: 500 000–600 000 pesos · comisión: 200 000"
+            },
+            {
+              "en": 6,
+              "t": "≈ 70–85 millones de soles de hoy* · * conversión aproximada",
+              "refuerzo": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Cada rótulo entra en bloque y se queda.",
+          "sonido": "Hoja.",
+          "base": [
+            "3B"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "3.3",
+          "frases": [
+            8,
+            9
+          ],
+          "verbo": "frenar",
+          "respiro": 1,
+          "idea": "El presidente lo da por vencido.",
+          "imagen": "Ficha de Echenique; el folio de la respuesta se asienta sobre el expediente y el corrector subraya el plazo.",
+          "pantalla": [
+            {
+              "en": 8,
+              "t": "José Rufino Echenique · presidente, 1851–1855",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Tras 0,5 s de quietud, un subrayado rojo.",
+          "sonido": "La música baja hasta casi nada.",
+          "base": [
+            "3C"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "3.4",
+          "frases": [
+            10,
+            11
+          ],
+          "verbo": "revelar",
+          "excepcion": true,
+          "respiro": 1,
+          "idea": "Días después se aprueba: 948 500 pesos en vales.",
+          "imagen": "La mesa se vacía durante «Días después» y queda quieta. Con la cifra, el vale entra deslizándose desde la derecha, solo, hasta el centro, y se queda quieto en el silencio. Etiqueta: «NOVOA · VALES APROBADOS».",
+          "pantalla": [
+            {
+              "en": 11,
+              "t": "948 500 pesos en vales",
+              "refuerzo": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Excepción reservada: un solo papel en cuadro. Entra con peso pesado (como cualquier papel) y no se mueve más; sin halo ni brillo. Decidido por Gerson tras el animatic (versión D del laboratorio 16).",
+          "sonido": "Una hoja al entrar el vale; después, silencio absoluto (2,3 s de voz más 1 s de montaje).",
+          "base": [
+            "3D"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "3.5",
+          "frases": [
+            12,
+            13
+          ],
+          "verbo": "comparar",
+          "respiro": 1,
+          "idea": "Mucho más de lo pedido, con Torrico de por medio.",
+          "imagen": "Vuelve el folio de gestión de Elías junto a la aprobación: dos alturas, como las barras de la escena 2. Con 13, la ficha de Torrico. Al volver, el folio va más abajo y su etiqueta se acorta («Elías · lo que pedía»): ya fue presentado y no pisa la etiqueta del vale.",
+          "pantalla": [
+            {
+              "en": 13,
+              "t": "Juan Crisóstomo Torrico · ministro de Guerra",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "El folio de Elías entra a la izquierda, más bajo.",
+          "sonido": "La música vuelve, baja.",
+          "base": [
+            "3D"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "3.6",
+          "frases": [
+            14
+          ],
+          "verbo": "estimar",
+          "respiro": 1,
+          "idea": "Lo que Novoa probablemente recibió.",
+          "imagen": "Un segundo folio junto al vale: la parte de Novoa, «≈ 180 000 de los 948 500». Se lee como una tajada del vale, no como una suma aparte (nota de Gerson, 2026-11-21). «Probablemente» y «en vales» del mismo tamaño que la explicación.",
+          "pantalla": [
+            {
+              "en": 14,
+              "t": "probablemente recibió ≈ 180 000 de los 948 500, en vales",
+              "refuerzo": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Luz pareja sobre los dos folios: se comparan, no se enfrentan.",
+          "sonido": "Hoja.",
+          "base": [
+            "3E"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "3.7",
+          "frases": [
+            15,
+            16
+          ],
+          "verbo": "delimitar",
+          "respiro": 1.5,
+          "idea": "Lo que no se sabe y lo que sí está documentado.",
+          "imagen": "Entre los dos folios, el espacio vacío queda vacío: sin flechas ni monedas. Con 16, las fichas de Echenique y Torrico y la cifra se encienden una por vez.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Tres focos sucesivos, uno por cosa documentada.",
+          "sonido": "Ninguno nuevo.",
+          "base": [
+            "3F"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        }
+      ]
+    },
+    {
+      "s": "s04",
+      "titulo": "Lo investigan y los títulos siguen circulando",
+      "espacio": "Expediente y archivo; el mapa de s01 para Londres; las islas para la presión",
+      "cambia": "De «un expediente irregular» a «una red con nombre propio que, investigada, salió casi intacta».",
+      "entrada": "La carpeta de Novoa entra en su estante; la cámara queda frente al archivo.",
+      "salida": "Los informes de la junta quedan sobre la mesa, en el encuadre con que abre s05.",
+      "planos": [
+        {
+          "id": "4.1",
+          "frases": [
+            0,
+            4
+          ],
+          "verbo": "ampliar",
+          "respiro": 1.5,
+          "idea": "Novoa fue uno de muchos: la pila del gancho, ahora con su causa.",
+          "imagen": "Vuelve la pila de vales del gancho. Debajo, una línea de 1852 con dos marcas; los expedientes se apilan antes de cada una. La pila crece de nuevo hasta 24 millones. Sin rótulos: las marcas de la línea y la altura de la pila bastan; la voz da las fechas y las cifras.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Expedientes que se apilan con peso; la pila crece igual que en el gancho (mismo movimiento: el espectador lo reconoce).",
+          "sonido": "Papel; el mismo golpe grave del gancho.",
+          "base": [
+            "4A.1"
+          ],
+          "falta": "Línea de 1852 con las dos marcas.",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-archivo.png"
+          ]
+        },
+        {
+          "id": "4.2",
+          "frases": [
+            5,
+            8
+          ],
+          "verbo": "nombrar",
+          "excepcion": true,
+          "respiro": 1,
+          "idea": "En pocas manos, y la época les dio nombre: los consolidados.",
+          "imagen": "Los vales se juntan hacia unas pocas fichas de grupo. Después, la palabra del episodio sola a pantalla completa. Con 8, la palabra baja a una esquina y se queda como rótulo de la escena.",
+          "pantalla": [
+            {
+              "en": 7,
+              "t": "los consolidados",
+              "termino": true,
+              "palabra": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Excepción reservada: pantalla completa, quieta, sin textura nueva.",
+          "sonido": "Sin música durante la palabra (2,5 s de voz más 1 s de montaje); la música vuelve con 8.",
+          "base": [
+            "5A.1"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-metodo/capas/beneficios-concentrados.svg"
+          ]
+        },
+        {
+          "id": "4.3a",
+          "frases": [
+            9,
+            13
+          ],
+          "verbo": "definir",
+          "respiro": 1,
+          "idea": "Qué es un bono: otra promesa de pago del Estado, pero de la deuda externa, que nació con los préstamos de Londres de la independencia, se dejó de pagar y se arregló en 1849.",
+          "imagen": "En la mesa, el vale a la izquierda y, con «deuda externa», el bono a la derecha: «deuda interna» y «deuda externa» escritas en tinta en cada uno. Con «Londres», el mapa de s01: la ruta de los préstamos de Londres a Lima, con «préstamo de 1822 · 1,2 millones de libras» y «préstamo de 1825 · 616 000 libras» (Q, pp. 137 y 139). Con «dejó de pagar», la línea de pagos hacia Londres se corta con una ✕ roja; con «1849», se completa y aparece «1849 · bonos nuevos al 4 % de interés» (Q, p. 178).",
+          "pantalla": [
+            {
+              "en": 9,
+              "t": "vale · deuda interna / bono · deuda externa"
+            },
+            {
+              "en": 11,
+              "t": "préstamo de 1822 · 1,2 millones de libras; préstamo de 1825 · 616 000 libras"
+            },
+            {
+              "en": 13,
+              "t": "1849 · bonos nuevos al 4 % de interés"
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar."
+          },
+          "efecto": "Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.",
+          "sonido": "Tic por tramo; hoja al llegar el bono.",
+          "base": [
+            "4B",
+            "1C.1"
+          ],
+          "falta": "La mancha roja del vale (se pinta en Remotion sobre obj-04).",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png"
+          ]
+        },
+        {
+          "id": "4.3b",
+          "frases": [
+            14,
+            18
+          ],
+          "verbo": "pactar",
+          "respiro": 1,
+          "idea": "El cambio se hizo por contrato con dos casas del guano: Uribarren (Mendiburu, Londres) y Montané (Lima); cerca de la mitad de la deuda consolidada.",
+          "imagen": "Sobre el mismo mapa: Uribarren en París, Montané sin sede y el Estado en Lima; el vale va de la casa al Estado y el bono vuelve; los dos contratos con sus montos, la presentación de Mendiburu sobre el suyo y «con los dos contratos: ≈ 46 %».",
+          "pantalla": [
+            {
+              "en": 10,
+              "t": "Uribarren et Cie. · París / Montané et Cie."
+            },
+            {
+              "en": 12,
+              "t": "Manuel de Mendiburu · ministro plenipotenciario en Londres, 1853",
+              "ficha": true
+            },
+            {
+              "en": 12,
+              "t": "hasta 6 millones de pesos en vales"
+            },
+            {
+              "en": 13,
+              "t": "3 millones de pesos en vales"
+            },
+            {
+              "en": 14,
+              "t": "≈ 46 % de toda la deuda consolidada"
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar."
+          },
+          "efecto": "Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.",
+          "sonido": "Tic por tramo; hoja al llegar el bono.",
+          "base": [
+            "4B",
+            "1C.1"
+          ],
+          "falta": "La mancha roja del vale (se pinta en Remotion sobre obj-04).",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png"
+          ]
+        },
+        {
+          "id": "4.3c",
+          "frases": [
+            19,
+            23
+          ],
+          "verbo": "lavar",
+          "respiro": 2,
+          "idea": "El vale valía ≈ 40 %, el bono casi 100 %: las casas que habían juntado vales ganaron. En 1855 el guano ya estaba comprometido con los acreedores de fuera. Quiroz: lavado.",
+          "imagen": "En la mesa: las barras del vale (≈ 40 %) y del bono (pronto, casi 100 %), de a una; con «ganaron», el arco «≈ 2,5 veces más». Con «un informe de un diplomático», un saco de guano se ata al bono y la tira con la cita textual de Q, n. 108. Con «manchados», la mancha del vale; con «limpios», el vale queda debajo del bono.",
+          "pantalla": [
+            {
+              "en": 19,
+              "t": "precio en plaza ≈ 40 % de lo que dice"
+            },
+            {
+              "en": 20,
+              "t": "precio: pronto, casi el 100 %"
+            },
+            {
+              "en": 21,
+              "t": "quien tenía vales, al cambiarlos: ≈ 2,5 veces más"
+            },
+            {
+              "en": 22,
+              "t": "«el ingreso guanero ya estaba hipotecado a los acreedores extranjeros» · Q, n. 108, sobre un despacho de J. R. Clay, 1855"
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "El viaje del vale de Lima a Londres: arranca despacio, viaja sobre el mar y frena; después, quieta para comparar."
+          },
+          "efecto": "Un tic por tramo del viaje; las barras crecen como en 2.6; la mancha aparece por absorción, sin chorreo.",
+          "sonido": "Tic por tramo; hoja al llegar el bono.",
+          "base": [
+            "4B",
+            "1C.1"
+          ],
+          "falta": "La mancha roja del vale (se pinta en Remotion sobre obj-04).",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-10-bono-deuda-externa.png"
+          ]
+        },
+        {
+          "id": "4.4",
+          "frases": [
+            24,
+            27
+          ],
+          "verbo": "denunciar",
+          "respiro": 1.5,
+          "idea": "Elías, peleado con Echenique y Torrico, denuncia en la prensa.",
+          "imagen": "La ficha de Elías vuelve a la mesa y desde ella salen las dos cartas.",
+          "pantalla": [
+            {
+              "en": 24,
+              "t": "El Comercio · 12 y 16 de agosto de 1853"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Cartas que se asientan; nada con 16 (se dice, no se ilustra).",
+          "sonido": "Papel y pluma; sin música heroica.",
+          "base": [
+            "4C"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-11-pagina-periodico.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "4.5",
+          "frases": [
+            28,
+            30
+          ],
+          "verbo": "matizar",
+          "respiro": 1.5,
+          "idea": "El denunciante también había hecho el negocio.",
+          "imagen": "La ficha de Elías con sus dos funciones a los lados: intermediario y denunciante. Quieta mientras habla Quiroz.",
+          "pantalla": [
+            {
+              "en": 28,
+              "t": "intermediario · denunciante",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Ninguno: es un momento de juicio, se sostiene.",
+          "sonido": "La música sostiene.",
+          "base": [
+            "4C"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-investigacion/capas/doble-funcion-elias.svg"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "4.6",
+          "frases": [
+            31,
+            32
+          ],
+          "verbo": "investigar",
+          "respiro": 1.5,
+          "corte_posible": true,
+          "idea": "Cambia el gobierno y una junta revisa: la marca roja del gancho.",
+          "imagen": "La pila vuelve al centro y el corrector la marca igual que en el gancho, ahora con su explicación. Los cuatro robados son cuatro huecos en el estante, sin monto.",
+          "pantalla": [
+            {
+              "en": 31,
+              "t": "Junta de Examen Fiscal · 1855",
+              "ficha": true
+            },
+            {
+              "en": 32,
+              "t": "12,2 millones de pesos · 141 expedientes"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Mismo trazo rojo del gancho (0.2).",
+          "sonido": "Pluma.",
+          "base": [
+            "4E.1",
+            "4D"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-archivo.png"
+          ]
+        },
+        {
+          "id": "4.7",
+          "frases": [
+            33,
+            34
+          ],
+          "verbo": "suspender",
+          "respiro": 1.5,
+          "idea": "Se suspende el pago; los principales ya se habían ido.",
+          "imagen": "Cae el sello de la suspensión. Las fichas de Torrico, Echenique y Mendiburu se deslizan fuera del cuadro, una por vez.",
+          "pantalla": [
+            {
+              "en": 33,
+              "t": "Ley del 29 de diciembre de 1856"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Las fichas salen rápido (entran lento lo importante, sale rápido lo que se va).",
+          "sonido": "Sello; roce de las fichas al salir.",
+          "base": [
+            "4E.2"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "4.8",
+          "frases": [
+            35,
+            37
+          ],
+          "verbo": "presionar",
+          "respiro": 2,
+          "idea": "Los tenedores protestan, y Gran Bretaña y Francia los respaldan.",
+          "imagen": "Una mano sostiene un vale (el traspaso de 4A.2, un solo cuadro). Con 25, vuelve la isla de s01 con las mismas capas, ahora con dos veleros chicos en el horizonte (el barco de s01 a escala, sin banderas). Vivanco queda solo en la voz.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Los barcos apenas se mueven; el mar sigue con su fase.",
+          "sonido": "El mar de s01, más grave; la música en tensión.",
+          "base": [
+            "4A.2",
+            "1A"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-islas.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-07-barco.png"
+          ]
+        },
+        {
+          "id": "4.9",
+          "frases": [
+            38,
+            42
+          ],
+          "verbo": "restaurar",
+          "respiro": 2,
+          "idea": "Una ley lo restaura todo: tabla rasa.",
+          "imagen": "La pila con su marca roja. Cae el mismo sello del gancho y la marca se borra a medias, igual que en 0.3. Con 28, la cita entre comillas.",
+          "pantalla": [
+            {
+              "en": 38,
+              "t": "Ley del 11 de marzo de 1857"
+            },
+            {
+              "en": 39,
+              "t": "«tabla rasa» · Quiroz, p. 185"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "El mismo movimiento de 0.3: el gancho se cierra.",
+          "sonido": "El golpe del sello del gancho; la música se apaga en el «Entonces».",
+          "base": [
+            "4E.3"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-05-pila-vales.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        }
+      ]
+    },
+    {
+      "s": "s05",
+      "titulo": "De estos expedientes al método de Quiroz",
+      "espacio": "Expediente: la mesa del historiador",
+      "cambia": "De «este caso se puede reconstruir» a «¿y lo que no dejó papeles?».",
+      "entrada": "Los informes de la junta, en el mismo encuadre con que termina s04.",
+      "salida": "La pregunta en la pizarra y el índice de la serie; las pruebas de imprenta se cierran.",
+      "planos": [
+        {
+          "id": "5.1",
+          "frases": [
+            0,
+            4
+          ],
+          "verbo": "confrontar",
+          "respiro": 2,
+          "idea": "Echenique decía que creó capitalistas; Quiroz muestra quiénes quedaron fuera.",
+          "imagen": "Dos documentos frente a frente: a la izquierda la ficha de Echenique con su frase; a la derecha la página de Quiroz, con el corrector subrayando a los excluidos. Con 3, la pila de pocas manos.",
+          "pantalla": [
+            {
+              "en": 0,
+              "t": "«una clase capitalista nacional» · Q, p. 173"
+            },
+            {
+              "en": 2,
+              "t": "«quedaron radicalmente excluidos»"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Subrayado rojo de corrector en la página de Quiroz.",
+          "sonido": "Pluma.",
+          "base": [
+            "5A.1"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-metodo/capas/quienes-quedaron-fuera.svg"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-expediente.png"
+          ]
+        },
+        {
+          "id": "5.2",
+          "frases": [
+            5,
+            6
+          ],
+          "verbo": "reunir",
+          "respiro": 1.5,
+          "idea": "Este caso se reconstruye porque dejó papeles.",
+          "imagen": "Sobre la mesa del historiador vuelven los objetos ya vistos, uno por palabra: un reclamo, un vale, las cartas y el informe. Con 6, los dos folios de Novoa: aprobado y estimado.",
+          "pantalla": [],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "El circuito final: abrir de la mesa a todos los papeles del episodio, una sola vez, y quedarse."
+          },
+          "efecto": "Objetos conocidos, sin presentación nueva; cada uno asienta.",
+          "sonido": "Una hoja por objeto.",
+          "base": [
+            "5B.1",
+            "5B.2"
+          ],
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-03-folio-reclamo-pestana-roja.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-04-vale.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-11-pagina-periodico.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-07-carpeta-cerrada.png"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-historiador.png"
+          ]
+        },
+        {
+          "id": "5.3",
+          "frases": [
+            7,
+            9
+          ],
+          "verbo": "abrir",
+          "respiro": 2,
+          "idea": "Mucha corrupción no deja papeles: ¿se puede medir?",
+          "imagen": "Los papeles se retiran y la mesa queda casi vacía; queda el libro de Quiroz. La pregunta en la pizarra, y el índice con el 003 encendido.",
+          "pantalla": [
+            {
+              "en": 9,
+              "t": "¿Se puede medir la corrupción?",
+              "termino": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "La mesa se vacía de afuera hacia adentro.",
+          "sonido": "La música se retira; el tema del canal entra al final de la pregunta.",
+          "base": [
+            "5C"
+          ],
+          "piezas": [
+            "diseno/storyboard-visual/revision-metodo/capas/libro-de-quiroz.svg"
+          ],
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/fondo-mesa-historiador.png"
+          ]
+        }
+      ]
+    }
+  ],
+  "texturas": "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/textura-papel-grabado.png"
+}

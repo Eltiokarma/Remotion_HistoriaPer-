@@ -39,7 +39,7 @@ npx remotion studio laboratorio/muestras/15-islas-y-el-pais/index.tsx --public-d
 node laboratorio/muestras/15-islas-y-el-pais/renderizar.mjs --solo-video
 ```
 
-En Windows, si existe `D:/Codex-Render-Temp`, el navegador de Remotion, sus perfiles, el paquete y la codificación van a `D:/Codex-Render-Temp/002-prueba-islas`. Las previsualizaciones van a `D:/canal/previsualizaciones/002-la-deuda-defraudada`. Esto afecta solo al proceso de render; no cambia la configuración ni el historial de la aplicación Codex.
+En Windows, si existe `D:/Codex-Render-Temp`, el navegador de Remotion, sus perfiles, el paquete y la codificación van a `D:/Codex-Render-Temp/002-prueba-islas`. Las previsualizaciones van a `D:/canal/previsualizaciones/003-la-deuda-defraudada`. Esto afecta solo al proceso de render; no cambia la configuración ni el historial de la aplicación Codex.
 
 En otros entornos, la salida por defecto es `historia/out/prueba-002/002-prueba-islas.mp4` y los temporales quedan en `historia/laboratorio/out/15-islas-y-el-pais/`. Se pueden cambiar con `PRUEBA_OUTPUT_DIR` y `PRUEBA_TEMP_DIR`. `--intro` selecciona la apertura; `--solo-cuadros` revisa imágenes y `--reuse` reutiliza un paquete ya creado.
 
@@ -47,6 +47,6 @@ Los MP3 incluidos permiten reproducir sin solicitar otra locución. Para regener
 
 ## Fuentes y dirección
 
-Se reutilizan los cotejos de [fuentes.md](../../../videos/002-la-deuda-defraudada/fuentes.md), el [kit detallado](../../../videos/002-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/README.md), los [dibujos revisados](../../../videos/002-la-deuda-defraudada/diseno/escenas-largas/recursos/revision-02/README.md) y la [dirección de movimiento](../../../videos/002-la-deuda-defraudada/diseno/escenas-largas/MOVIMIENTO-Y-EFECTOS.md). No se atribuye a esta prueba una nueva lectura independiente de los libros.
+Se reutilizan los cotejos de [fuentes.md](../../../videos/003-la-deuda-defraudada/fuentes.md), el [kit detallado](../../../videos/003-la-deuda-defraudada/diseno/storyboard-seccion01/revision-detallada/README.md), los [dibujos revisados](../../../videos/003-la-deuda-defraudada/diseno/escenas-largas/recursos/revision-02/README.md) y la [dirección de movimiento](../../../videos/003-la-deuda-defraudada/diseno/escenas-largas/MOVIMIENTO-Y-EFECTOS.md). No se atribuye a esta prueba una nueva lectura independiente de los libros.
 
 Los resultados medidos y las limitaciones observadas se registran en `INFORME.md`. La aceptación del director queda pendiente.

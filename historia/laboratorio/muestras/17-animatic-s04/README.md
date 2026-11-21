@@ -1,4 +1,4 @@
-# Animatic de la escena 4 del 0·2: «Lo investigan y los títulos siguen circulando»
+# Animatic de la escena 4 del 0·3: «Lo investigan y los títulos siguen circulando»
 
 Sobre la **voz real** (`voz/s04.mp3`, «Joder Jolines», `eleven_v4`), con el sistema que Gerson fijó en la escena 3 (muestra 16, versión F):
 
@@ -7,7 +7,7 @@ Sobre la **voz real** (`voz/s04.mp3`, «Joder Jolines», `eleven_v4`), con el si
 - texto escrito en tinta y etiquetas en tiras de cartón;
 - medallones, y presentación en primer plano solo para quien aparece por primera vez.
 
-El plan está en [`videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md`](../../../videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md).
+El plan está en [`videos/003-la-deuda-defraudada/diseno/plan-animatic-s04.md`](../../../videos/003-la-deuda-defraudada/diseno/plan-animatic-s04.md).
 
 La escena dura unos 3 min 33 s con los respiros, así que va en dos partes, para revisarla y renderizarla por mitades:
 

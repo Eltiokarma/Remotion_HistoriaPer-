@@ -9,16 +9,16 @@ const proyecto = path.resolve(aqui, '../../..');
 const salida = path.join(aqui, 'public');
 const copiar = (a, b) => { fs.mkdirSync(path.dirname(b), { recursive: true }); fs.copyFileSync(a, b); };
 
-const galeria = path.join(proyecto, 'public/videos/002-la-deuda-defraudada/imagenes/chatgpt');
+const galeria = path.join(proyecto, 'public/videos/003-la-deuda-defraudada/imagenes/chatgpt');
 for (const n of ['fondo-mesa-expediente', 'fondo-archivo', 'obj-07-carpeta-cerrada', 'obj-07-carpeta-abierta', 'obj-04-vale', 'obj-10-bono-deuda-externa', 'obj01-08-estado', 'obj-09-folio-sencillo', 'obj-02-saco-guano-cerrado']) {
   const a = path.join(galeria, `${n}.png`);
-  if (!fs.existsSync(a)) throw new Error(`Falta ${a}: extraer el zip de la galería (videos/002-la-deuda-defraudada/galeria.md)`);
+  if (!fs.existsSync(a)) throw new Error(`Falta ${a}: extraer el zip de la galería (videos/003-la-deuda-defraudada/galeria.md)`);
   copiar(a, path.join(salida, 'img', `${n}.png`));
 }
-copiar(path.join(proyecto, 'public/videos/002-la-deuda-defraudada/voz/s04.mp3'), path.join(salida, 'voz/s04.mp3'));
+copiar(path.join(proyecto, 'public/videos/003-la-deuda-defraudada/voz/s04.mp3'), path.join(salida, 'voz/s04.mp3'));
 // medallones (redibujos de retratos de Commons; registro en fuentes.md). Los que faltan van en silueta.
 for (const n of ['elias', 'echenique', 'torrico', 'novoa', 'mendiburu', 'castilla']) {
-  const a = path.join(proyecto, `public/videos/002-la-deuda-defraudada/imagenes/retratos/medallon-${n}.png`);
+  const a = path.join(proyecto, `public/videos/003-la-deuda-defraudada/imagenes/retratos/medallon-${n}.png`);
   if (fs.existsSync(a)) copiar(a, path.join(salida, 'img', `medallon-${n}.png`));
   else console.log(`(sin medallon-${n}.png: va en silueta)`);
 }

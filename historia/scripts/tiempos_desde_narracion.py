@@ -1,6 +1,6 @@
 """Tiempos de referencia de la narración, sin voz provisional.
 
-    python scripts/tiempos_desde_narracion.py 002-la-deuda-defraudada
+    python scripts/tiempos_desde_narracion.py 003-la-deuda-defraudada
 
 narracion.py necesita public/videos/<video>/voz-provisional/tiempos.json para saber cuánto debe
 respirar la voz entre frases. Cuando no hay voz provisional (Piper no está en todas las máquinas),

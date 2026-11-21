@@ -21,7 +21,7 @@ const azar = (s: number) => semilla(s + 1).n();
  * Animatic de la escena 4, parte A (planos 4.1–4.3): «el fraude y su nombre».
  * Sistema de la escena 3, versión F (mesa desaturada, papeles opacos con trayecto, tinta, tiras de
  * cartón, medallones y presentación solo para quien aparece por primera vez: aquí, Mendiburu).
- * Plan: videos/002-la-deuda-defraudada/diseno/plan-animatic-s04.md. Lo que progresa es la pila de
+ * Plan: videos/003-la-deuda-defraudada/diseno/plan-animatic-s04.md. Lo que progresa es la pila de
  * vales: crece (4.1), se junta en pocas manos y recibe nombre (4.2), sale a Londres y vuelve limpia (4.3).
  * Los segundos de las palabras se midieron con Scribe sobre voz/s04.mp3 (21 de noviembre de 2026).
  */

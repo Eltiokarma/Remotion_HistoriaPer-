@@ -232,9 +232,9 @@ Total: ~27 min en cuatro videos (hoy, 10 min en uno).
 | Ep. | Video | Pregunta que abre | Viene de | Palabras | Duración |
 |---|---|---|---|---|---|
 | 0·1 | `001-el-hombre` | ¿Qué encontró, para que valiera la pena? | s01, s02, s03, s05 | ~645 | ~7–7½ min |
-| 0·2 | (por crear) | ¿Adónde fue la plata del guano? | s04 + hallazgos 13–16, 21–24 | ~720 | ~7½–8 min |
-| 0·3 | (por crear) | ¿Se puede medir algo que se esconde? | s06, s07 + hallazgos 1–4, 6, 7 | ~520 | ~6 min |
-| 0·4 | (por crear) | ¿Cuánto le costó al Perú? | s08, s09, s10, s11 + hallazgos 9, 17, 18, 25, 26 | ~580 | ~6–6½ min |
+| 0·3 | (por crear) | ¿Adónde fue la plata del guano? | s04 + hallazgos 13–16, 21–24 | ~720 | ~7½–8 min |
+| 0·4 | (por crear) | ¿Se puede medir algo que se esconde? | s06, s07 + hallazgos 1–4, 6, 7 | ~520 | ~6 min |
+| 0·5 | (por crear) | ¿Cuánto le costó al Perú? | s08, s09, s10, s11 + hallazgos 9, 17, 18, 25, 26 | ~580 | ~6–6½ min |
 
 ### 0·1 — «El hombre que le sacó la cuenta al Perú» (~7–7½ min)
 
@@ -246,9 +246,9 @@ Total: ~27 min en cuatro videos (hoy, 10 min en uno).
 5. **Aprender a medir** (s05, recortada): el viaje a Nueva York; qué es una regresión, explicada;
    profundidad y claridad; su carrera y sus ideas.
 6. **Puente**: su primer caso lo encontró antes de irse, en Lima: Denegri le sugirió mirar el
-   siglo XIX; el guano y una deuda que el Estado pagó con esa plata · ¿adónde fue? → 0·2.
+   siglo XIX; el guano y una deuda que el Estado pagó con esa plata · ¿adónde fue? → 0·3.
 
-### 0·2 — «La deuda defraudada» (~7½–8 min)
+### 0·3 — «La deuda defraudada» (~7½–8 min)
 
 1. **El guano**, contado por un diplomático (1841) (23).
 2. **Qué era la deuda interna** (21): el concepto antes de usarlo.
@@ -259,9 +259,9 @@ Total: ~27 min en cuatro videos (hoy, 10 min en uno).
 7. **El denunciante no era un santo**: Elías (15).
 8. **¿Y los castigaron?** La Junta de Examen Fiscal y la ley de tabla rasa de 1857 (24).
 9. **La palabra del episodio:** *consolidados* (16).
-10. **La tesis y el libro** (1980, 1987) · puente: otra década perdida (17) → 0·3.
+10. **La tesis y el libro** (1980, 1987) · puente: otra década perdida (17) → 0·4.
 
-### 0·3 — «¿Se puede medir la corrupción?» (~6 min)
+### 0·4 — «¿Se puede medir la corrupción?» (~6 min)
 
 1. **La pregunta del 2000** (s06) y cómo llegó a ella: en 1995 leyó a los economistas; el ensayo
    salió en el homenaje a Denegri, que le había abierto su primer caso (2, 3).
@@ -269,9 +269,9 @@ Total: ~27 min en cuatro videos (hoy, 10 min en uno).
 3. **Las siete objeciones** (s07, 4): una por párrafo, con su ejemplo y su pausa.
 4. **No es aceite, es grava; no es cultura, son reglas** (6) y el engranaje que se traba.
 5. **El historiador no es juez** (7).
-6. **Umbral:** se puede medir. ¿Cuánto da? → 0·4.
+6. **Umbral:** se puede medir. ¿Cuánto da? → 0·5.
 
-### 0·4 — «La cuenta» (~6–6½ min)
+### 0·5 — «La cuenta» (~6–6½ min)
 
 1. **Por qué en porcentajes** (26).
 2. **La cuenta** (s08): el 30–40 % del gasto y el 3–4 % del PBI, de a uno; los niveles por década,
@@ -287,7 +287,7 @@ Total: ~27 min en cuatro videos (hoy, 10 min en uno).
 ### Orden de trabajo
 
 - **0·1 primero:** ya está casi entero en escenas. Separado como `videos/001-el-hombre/`.
-- **0·2 después:** es casi todo nuevo (hoy es una escena de un minuto).
+- **0·3 después:** es casi todo nuevo (hoy es una escena de un minuto).
 - `000-quiroz` queda como la versión de trabajo de 10 min y la fuente de las escenas, hasta que
   estén separados los cuatro.
 
@@ -380,12 +380,12 @@ concepto, un ejemplo o un argumento.
    político-burocrático por parte de camarillas de funcionarios, coludidos con mezquinos intereses
    privados». Y aclara que no es solo «el tosco saqueo de los fondos públicos»: también sobornos,
    mala asignación del gasto, fraude electoral, financiamiento ilegal de partidos. Es el concepto
-   que hay que presentar antes de usarlo (F5). Va al comienzo de 0·3.
+   que hay que presentar antes de usarlo (F5). Va al comienzo de 0·4.
 2. **De dónde salió la pregunta.** El guion salta de la tesis de 1980 al ensayo de 2000. El
    prefacio cuenta el camino (p. 31): después del guano siguió encontrando escándalos y notó que la
    corrupción «no era algo esporádico sino, más bien, un elemento sistémico»; en 1995 leyó a los
    economistas que medían su impacto en el crecimiento y se le ocurrió unir «el desarrollo frustrado
-   del pasado y los niveles históricos de corrupción». Es el puente entre 0·1 y 0·3.
+   del pasado y los niveles históricos de corrupción». Es el puente entre 0·1 y 0·4.
 3. **Una rima que estructura la serie.** El ensayo de 2000 fue un capítulo del **libro de homenaje
    a Félix Denegri Luna** (p. 23), el mismo que le había dicho que mirara el siglo XIX (p. 17).
    Denegri abre su primer caso y le da lugar a la pregunta veinte años después.
@@ -452,7 +452,7 @@ concepto, un ejemplo o un argumento.
     CLAUDE.md), y el espectador puede hacer la cuenta.
 14. **La promesa contra lo que pasó** (p. 173). Echenique decía que la consolidación había creado
     «una clase capitalista nacional»; los pequeños tenedores quedaron «radicalmente excluidos» y «el
-    capitalismo nacional perdió una oportunidad crucial». Es el cierre de 0·2 y la tesis de la serie
+    capitalismo nacional perdió una oportunidad crucial». Es el cierre de 0·3 y la tesis de la serie
     en pequeño: no fue solo plata robada, fue una oportunidad perdida.
 15. **El denunciante no era un santo.** Domingo Elías, que denunció la consolidación en agosto de
     1853 y por eso fue preso (pp. 171–172), también auspiciaba expedientes por comisión: era el
@@ -460,7 +460,7 @@ concepto, un ejemplo o un argumento.
     esclavos (p. 182). La serie se cuenta «desde los que denunciaron», y eso obliga a decirlo: el
     problema eran las reglas (los huecos de la ley), no un villano. Es la misma idea que el punto 6,
     probada con un caso.
-16. **La palabra de 0·2:** en la década de 1850 a esa red se la llamó **los consolidados**, «un
+16. **La palabra de 0·3:** en la década de 1850 a esa red se la llamó **los consolidados**, «un
     término usado extensamente en ese entonces para denotar a personas vinculadas a la corrupción o
     robo políticos» (p. 174). Una palabra clave por episodio (gramática de la serie).
 17. **Otra década perdida, con un solo cuadro.** El libro trae dos comparaciones que no coinciden
@@ -471,7 +471,7 @@ concepto, un ejemplo o un argumento.
     65 % del gasto y 5,0 % del PBI; Fujimori y Montesinos (1990–2000), 50 % y 4,5 %**. Y Quiroz
     llama a Echenique-Torrico y Gamarra-La Fuente «los más corruptos del temprano periodo
     republicano» (p. 189). La yuxtaposición se sostiene (el guano, peor que Fujimori en proporción)
-    y une 0·2 con 0·3.
+    y une 0·3 con 0·4.
 18. **«Roba, pero hace obra», con un número** (p. 545). En los ferrocarriles de Meiggs los sobornos
     eran cerca del 10 % del costo, y los contratistas los sumaban al precio: «desplazaban su costo
     real al público». Es el argumento del punto 8 con un caso; va en s09.
@@ -479,7 +479,7 @@ concepto, un ejemplo o un argumento.
     Perú desde aquellos que debieran corregirlo» (p. 72). Su diagnóstico de 1749 ya era el de
     Quiroz: «No bastaba con nombrar unas cuantas autoridades honestas […]. El sistema estaba
     necesitado de un cambio sistémico de reglas» (p. 70). El juicio de residencia, inútil como
-    castigo e invaluable como fuente (pp. 68–69), sirve también para la objeción 1 de 0·3. Y un
+    castigo e invaluable como fuente (pp. 68–69), sirve también para la objeción 1 de 0·4. Y un
     detalle que se recuerda: el conde de Cañete compró el cargo de virrey en 250.000 pesos y murió
     antes de llegar a Lima (n. 25).
 20. **El diccionario, de verdad.** La página de s07 hoy muestra definiciones simuladas. La n. 39
@@ -496,16 +496,16 @@ concepto, un ejemplo o un argumento.
 22. **La consolidación era una buena idea** (p. 169). Su meta declarada era «renovar la confianza
     en el crédito público nacional», y fue «un fundamento importante del crédito público moderno en
     el Perú». Lo que la corrompió fue cómo se hizo: la ley con huecos (punto 13). Esto cambia el
-    marco de 0·2: no es «una estafa», es una reforma necesaria que fue capturada. Es la tesis de
+    marco de 0·3: no es «una estafa», es una reforma necesaria que fue capturada. Es la tesis de
     Quiroz (reglas, no cultura) y evita el cinismo que él mismo rechaza (p. 57).
 23. **El guano, contado por un diplomático** (pp. 164–165). En 1841, un diplomático
     estadounidense escribe a su gobierno: «generalmente se supone que el *huano* es el excremento de
     aves marinas […]. Se le encuentra en gran abundancia en unas pequeñas islas unos cuantos grados
     al sur de Lima […]. [Se] vende en Inglaterra a diez dólares la tonelada dando una ganancia neta
-    de al menos 50 [por ciento]». Abre 0·2 con una fuente primaria y, de paso, muestra la respuesta
-    a la objeción 1 de 0·3: las cartas de los diplomáticos son fuente. Y un número que se imagina: el
+    de al menos 50 [por ciento]». Abre 0·3 con una fuente primaria y, de paso, muestra la respuesta
+    a la objeción 1 de 0·4: las cartas de los diplomáticos son fuente. Y un número que se imagina: el
     primer contrato dio el guano de nueve años, sin límite, por 90.000 pesos (p. 165).
-24. **¿Y los castigaron?** (pp. 182–185). Es la pregunta que el espectador se hace al final de 0·2,
+24. **¿Y los castigaron?** (pp. 182–185). Es la pregunta que el espectador se hace al final de 0·3,
     y tiene respuesta. La Junta de Examen Fiscal encontró 12,2 millones, más de la mitad de la
     deuda, en 141 expedientes irregulares (n. 147). Echenique, Torrico y Mendiburu ya habían huido.
     Y el 11 de marzo de 1857, bajo presión de los acreedores, de los diplomáticos británicos y
@@ -537,16 +537,16 @@ concepto, un ejemplo o un argumento.
 
 ### Cómo cambia la propuesta (§4)
 
-(Ya está aplicado en §4, con cuatro episodios: lo que aquí dice 0·3 quedó repartido entre 0·3 y 0·4.)
+(Ya está aplicado en §4, con cuatro episodios: lo que aquí dice 0·4 quedó repartido entre 0·4 y 0·5.)
 
 - **0·1** gana la rima de Denegri y el camino de la pregunta (punto 2) como puente final, en vez
   de saltar a 2000.
-- **0·2** tiene ahora un arco completo, todo con página: el guano contado por un diplomático
+- **0·3** tiene ahora un arco completo, todo con página: el guano contado por un diplomático
   (23); qué es la deuda interna (21); la consolidación como buena idea y su promesa (22, 14); la
   ley con huecos y el tablero del mecanismo con el caso Novoa (13); adónde fue la plata (13); el
   denunciante que también ganaba (15); ¿los castigaron? y la ley de tabla rasa (24); su palabra,
-  *consolidados* (16); y el puente a 0·3, otra década perdida (17).
-- **0·3** empieza por la definición (1), ordena las objeciones como el libro (4), cierra el método
+  *consolidados* (16); y el puente a 0·4, otra década perdida (17).
+- **0·4** empieza por la definición (1), ordena las objeciones como el libro (4), cierra el método
   con «no es cultura: son reglas» (6) y «el historiador no es juez» (7), compara dos gobiernos con
   el mismo cuadro (17), explica por qué se mide en porcentajes (26), muestra los niveles con datos
   reales (27) y la mitad con su cuenta (25), le da a «roba, pero hace obra» su número (18), y el
