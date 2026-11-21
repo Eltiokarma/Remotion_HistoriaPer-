@@ -4,7 +4,7 @@ Generado desde `storyboard.json` con `storyboard.py`; no se edita a mano. Propue
 
 La versión completa, con láminas, voz con emoción, métricas y avisos, es `storyboard.html`.
 
-**Episodio:** 10:10.7 en pantalla · voz 79 % · cámara quieta 88 %.
+**Episodio:** 10:10.6 en pantalla · voz 79 % · cámara quieta 88 %.
 
 ## s00 · El gancho
 
@@ -225,7 +225,7 @@ Días después se aprueba: 948 500 pesos en vales. La mesa se vacía durante «D
 
 ### 3.5 · comparar · 14.0 s
 
-Mucho más de lo pedido, con Torrico de por medio. Vuelve el folio de gestión de Elías junto a la aprobación: dos alturas, como las barras de la escena 2. Con 13, la ficha de Torrico.
+Mucho más de lo pedido, con Torrico de por medio. Vuelve el folio de gestión de Elías junto a la aprobación: dos alturas, como las barras de la escena 2. Con 13, la ficha de Torrico. Al volver, el folio va más abajo y su etiqueta se acorta («Elías · lo que pedía»): ya fue presentado y no pisa la etiqueta del vale.
 
 - **Pantalla:** Juan Crisóstomo Torrico · ministro de Guerra.
 - **Cámara:** quieta.
@@ -234,9 +234,9 @@ Mucho más de lo pedido, con Torrico de por medio. Vuelve el folio de gestión d
 
 ### 3.6 · estimar · 9.0 s
 
-Lo que Novoa probablemente recibió. Un segundo folio a la derecha: lo recibido, con «probablemente» y «en vales» del mismo tamaño que la cifra.
+Lo que Novoa probablemente recibió. Un segundo folio junto al vale: la parte de Novoa, «≈ 180 000 de los 948 500». Se lee como una tajada del vale, no como una suma aparte (nota de Gerson, 2026-11-21). «Probablemente» y «en vales» del mismo tamaño que la explicación.
 
-- **Pantalla:** probablemente ≈ 180 000 pesos en vales.
+- **Pantalla:** probablemente recibió ≈ 180 000 de los 948 500, en vales.
 - **Cámara:** quieta.
 - **Efecto:** Luz pareja sobre los dos folios: se comparan, no se enfrentan.
 - **Sonido:** Hoja.

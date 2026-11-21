@@ -826,7 +826,7 @@
           "verbo": "comparar",
           "respiro": 1,
           "idea": "Mucho más de lo pedido, con Torrico de por medio.",
-          "imagen": "Vuelve el folio de gestión de Elías junto a la aprobación: dos alturas, como las barras de la escena 2. Con 13, la ficha de Torrico.",
+          "imagen": "Vuelve el folio de gestión de Elías junto a la aprobación: dos alturas, como las barras de la escena 2. Con 13, la ficha de Torrico. Al volver, el folio va más abajo y su etiqueta se acorta («Elías · lo que pedía»): ya fue presentado y no pisa la etiqueta del vale.",
           "pantalla": [
             {
               "en": 13,
@@ -858,11 +858,11 @@
           "verbo": "estimar",
           "respiro": 1,
           "idea": "Lo que Novoa probablemente recibió.",
-          "imagen": "Un segundo folio a la derecha: lo recibido, con «probablemente» y «en vales» del mismo tamaño que la cifra.",
+          "imagen": "Un segundo folio junto al vale: la parte de Novoa, «≈ 180 000 de los 948 500». Se lee como una tajada del vale, no como una suma aparte (nota de Gerson, 2026-11-21). «Probablemente» y «en vales» del mismo tamaño que la explicación.",
           "pantalla": [
             {
               "en": 14,
-              "t": "probablemente ≈ 180 000 pesos en vales",
+              "t": "probablemente recibió ≈ 180 000 de los 948 500, en vales",
               "refuerzo": true
             }
           ],

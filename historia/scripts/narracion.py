@@ -109,12 +109,22 @@ def sin_relleno(x):
     return x[nz[0]:nz[-1] + 1] if len(nz) else x
 
 
+AIRE_MAX = 10 ** (-52 / 20)   # el aire no pasa de −52 dBFS: más fuerte ya es voz (una «s», una cola)
+
+
 def aire(muestra, segundos):
-    """El tramo más quieto de la toma, repetido con fundidos: el piso de la misma voz."""
+    """El tramo más quieto de la toma, repetido con fundidos: el piso de la misma voz.
+
+    Gerson (2026-11-21): en s03 del 0·2 la toma corta («Por novecientos cuarenta y ocho mil quinientos
+    pesos en vales») no tenía silencio; el tramo más quieto era la «s» final y se oyó repetida dos
+    segundos. Por eso conviene pasarle todas las tomas de la escena, y si aun así el tramo suena, se
+    baja hasta AIRE_MAX."""
     w = int(0.25 * SR)
     r = [np.sqrt((muestra[i:i + w] ** 2).mean()) for i in range(0, max(1, len(muestra) - w), w // 2)]
     j = int(np.argmin(r)) * (w // 2)
-    p = muestra[j:j + w]
+    p = muestra[j:j + w].copy()
+    if min(r) > AIRE_MAX:
+        p *= AIRE_MAX / min(r)
     k = int(0.05 * SR)
     f = np.linspace(0, 1, k)
     out = p.copy()
@@ -248,7 +258,7 @@ def escena(video, s, cfg, prov):
     for fin, pausa in [(int(k), v) for k, v in cortes] + [(len(textos) - 1, None)]:
         tramos.append((ini, fin, pausa))
         ini = fin + 1
-    partes = []
+    leidas = []
     for n, (a, b, pausa) in enumerate(tramos):
         f = tomas / f"{s}-toma{n}.mp3"
         toma(cfg, " ".join(textos[a:b + 1]), f)
@@ -258,9 +268,13 @@ def escena(video, s, cfg, prov):
         a_, b_ = int(0.05 * SR), int(0.15 * SR)
         x[:a_] *= np.linspace(0, 1, a_)
         x[-b_:] *= np.linspace(1, 0, b_)
+        leidas.append((x, pausa))
+    todas = np.concatenate([x for x, _ in leidas])   # el aire sale del tramo más quieto de todas las tomas
+    partes = []
+    for x, pausa in leidas:
         partes.append(x)
         if pausa:
-            partes.append(aire(x, pausa))
+            partes.append(aire(todas, pausa))
     x = np.concatenate(partes)
     tmp = Path("/tmp") / f"narracion-{s}.mp3"
     fr_guion = [{"texto": re.sub(r"\[[^\]]*\]\s*", "", tx).strip()} for tx in textos]

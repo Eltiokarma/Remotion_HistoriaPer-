@@ -156,7 +156,8 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
   // 3.2–3.5 · el folio de la gestión de Elías
   const eliasIn = entra(F(4) + 0.3);
   const E0 = capas.compo ? pose(230, 205, 560) : pose(300, 250, 470);
-  const E35 = capas.compo ? pose(160, 330, 490) : pose(230, 330, 400);
+  // al volver junto al vale, más abajo: su etiqueta queda bajo la del vale y no la pisa (Gerson, 2026-11-21)
+  const E35 = capas.compo ? pose(150, 420, 450) : pose(230, 330, 400);
   let elias = pose(mix(-600, E0.x, eliasIn), E0.y, E0.w, op(eliasIn));
   elias = fuera(elias, F(10), -700, 0.8);
   const vuelve = entra(F(12) + 0.2, 0.7);
@@ -181,7 +182,7 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
   const focoVale = 1 + 0.6 * tramo(voz, F(16) + 5.3, 0.4, 'natural');
   // 3.6 · lo que Novoa probablemente recibió
   const recIn = entra(F(14) + 0.6);
-  const recibido = capas.compo ? pose(mix(-700, 130, recIn), 250, 500, op(recIn)) : pose(mix(1920, 1190, recIn), 230, 470, recIn);
+  const recibido = capas.compo ? pose(mix(-700, 130, recIn), 380, 470, op(recIn)) : pose(mix(1920, 1190, recIn), 230, 470, recIn);
 
   const ecoTramos = tramos(version);
   const hojas = [0.2, F(4) + 0.3, F(8) + 1, ...(reservada && !conEntradaA ? [] : [F(11) - 0.1]), F(14) + 0.6, ...(reservada ? [F(12) + 0.2] : [])];
@@ -195,7 +196,7 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
         <Renglon x={53} y={62} size={2.4} k={tramo(voz, Ffin(2) - 1.6, 0.4)} tinta={capas.tinta}>Lucro cesante: 32 años</Renglon>
       </Papel>
 
-      <Papel src={img('obj-09-folio-sencillo')} p={elias} aspecto={1448 / 1086} giro={-2} capas={capas} dueno={capas.unaPres ? 'DOMINGO ELÍAS · INTERMEDIARIO' : 'ELÍAS · GESTIÓN'} persona="elias">
+      <Papel src={img('obj-09-folio-sencillo')} p={elias} aspecto={1448 / 1086} giro={-2} capas={capas} dueno={capas.unaPres ? (voz >= F(12) ? 'ELÍAS · LO QUE PEDÍA' : 'DOMINGO ELÍAS · INTERMEDIARIO') : 'ELÍAS · GESTIÓN'} persona="elias">
         <Renglon x={9} y={50} size={6.2} k={tramo(voz, Ffin(6) - 2.6, 0.4)} ancho={84} tinta={capas.tinta}>pide:<br />500 000–600 000<br />pesos</Renglon>
         <Renglon x={9} y={76} size={4.6} k={tramo(voz, F(7) + 0.5, 0.4)} ancho={84} tinta={capas.tinta}>comisión esperada:<br />200 000</Renglon>
       </Papel>
@@ -213,10 +214,12 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
         <Renglon x={8} y={58} size={4.6} k={tramo(voz, F(11) + 0.6, 0.4)} familia={fuente.libro} ancho={84} centro color="#4a3826" tinta={capas.tinta}>pesos en vales</Renglon>
       </Papel>
 
-      <Papel src={img('obj-09-folio-sencillo')} p={recibido} aspecto={1448 / 1086} giro={2} capas={capas} dueno={capas.compo ? 'NOVOA · RECIBIDO' : 'NOVOA · RECIBIDO, SEGÚN QUIROZ'} persona="novoa">
-        <Renglon x={9} y={45} size={6} k={tramo(voz, F(14) + 1.8, 0.4)} ancho={84} tinta={capas.tinta}>probablemente</Renglon>
-        <Renglon x={9} y={56} size={8} k={tramo(voz, F(14) + 2.6, 0.4)} ancho={84} familia={fuente.libro} peso={600} tinta={capas.tinta}>≈ 180 000</Renglon>
-        <Renglon x={9} y={68} size={6} k={tramo(voz, F(14) + 2.6, 0.4)} ancho={84} tinta={capas.tinta}>pesos en vales</Renglon>
+      <Papel src={img('obj-09-folio-sencillo')} p={recibido} aspecto={1448 / 1086} giro={2} capas={capas} dueno={capas.compo ? 'NOVOA · SU PARTE' : 'NOVOA · RECIBIDO, SEGÚN QUIROZ'} persona="novoa">
+        {/* Gerson (2026-11-21): no se entendía si los 180 000 eran aparte o una tajada de los 948 500 */}
+        <Renglon x={9} y={42} size={5.4} k={tramo(voz, F(14) + 1.8, 0.4)} ancho={84} tinta={capas.tinta}>probablemente recibió</Renglon>
+        <Renglon x={9} y={51} size={8} k={tramo(voz, F(14) + 2.6, 0.4)} ancho={84} familia={fuente.libro} peso={600} tinta={capas.tinta}>≈ 180 000</Renglon>
+        <Renglon x={9} y={63} size={5.4} k={tramo(voz, F(14) + 3.0, 0.4)} ancho={84} tinta={capas.tinta}>de los 948 500</Renglon>
+        <Renglon x={9} y={71} size={5.4} k={tramo(voz, F(14) + 3.0, 0.4)} ancho={84} tinta={capas.tinta}>en vales</Renglon>
         {capas.compo ? <Renglon x={9} y={84} size={4.4} k={tramo(voz, F(14) + 3.2, 0.4)} ancho={84} tinta={capas.tinta}>según Quiroz</Renglon> : null}
       </Papel>
 
@@ -228,7 +231,7 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
       <FichaEn capas={capas} texto="JUAN CRISÓSTOMO TORRICO · MINISTRO DE GUERRA" persona="torrico" x={110} y={50} voz={voz} desde={F(13)} hasta={F(15)} />
       <FichaEn capas={capas} texto="ECHENIQUE · FUERA DE PLAZO" persona="echenique" x={110} y={capas.compo ? 28 : 830} voz={voz} desde={F(15) + 0.3} hasta={99}
         foco={tramo(voz, F(16) + 0.6, 0.3) * (1 - tramo(voz, F(16) + 3.4, 0.3))} />
-      <FichaEn capas={capas} texto="TORRICO · INTERVINO" persona="torrico" x={capas.compo ? 760 : 110} y={capas.compo ? 28 : 940} voz={voz} desde={F(15) + 0.8} hasta={99}
+      <FichaEn capas={capas} texto="TORRICO · INTERVINO" persona="torrico" x={capas.compo ? 850 : 110} y={capas.compo ? 28 : 940} voz={voz} desde={F(15) + 0.8} hasta={99}
         foco={tramo(voz, F(16) + 3.4, 0.3) * (1 - tramo(voz, F(16) + 5.2, 0.3))} />
 
       <Luz color={OCRE} x={46} y={46} radio={60} intensidad={0.06} />

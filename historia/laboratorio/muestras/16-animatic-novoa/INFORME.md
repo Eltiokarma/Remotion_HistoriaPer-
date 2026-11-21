@@ -66,6 +66,14 @@ Mismo contenedor y configuración. El costo sube con la física (sombras dobles 
 
 Observado en E4 (29–31 s, 57–60 s, 67–68 s): ya no hay papeles semitransparentes ni objetos que se esfuman. Queda un choque nuevo en E3–E6: en 3.5, al volver el folio de Elías junto al vale, su etiqueta queda debajo de la del vale (67,8 s). Se corrige en la versión que se elija.
 
+## Notas de Gerson sobre E6 (21 de noviembre de 2026)
+
+Eligió E6 e hizo tres observaciones. Las tres quedaron corregidas.
+
+1. **Etiquetas pisadas en 3.5, hacia el segundo 81.** Cuando el folio de Elías volvía junto al vale, su etiqueta quedaba bajo la del vale y el medallón de Novoa la tapaba. Ahora el folio vuelve más abajo (150, 420, ancho 450) y su etiqueta se acorta a «Elías · lo que pedía», porque Elías ya fue presentado. Al revisar los cuadros aparecieron dos choques más y también se corrigieron: en 3.6, la ficha de Torrico rozaba la etiqueta de la parte de Novoa (ese folio baja a y 380), y en 3.7 la ficha «Echenique · fuera de plazo» tocaba el medallón de Torrico (la de Torrico pasa a x 850).
+2. **Una «s» repetida unos 2 s, hacia el segundo 66.** El error estaba en `voz/s03.mp3`, no en el render. Después del corte de la frase 11, `narracion.py` rellena la pausa con el tramo más quieto de la toma, pero esa toma («por novecientos cuarenta y ocho mil quinientos pesos en vales») no tenía silencio: el tramo más quieto era la «s» final, y se oyó en bucle. Ahora el aire sale del tramo más quieto de *todas* las tomas de la escena, y si aun así supera −52 dBFS, se baja. Se regeneró s03 desde las tomas guardadas, sin pedir audio nuevo a ElevenLabs. Los tiempos de las frases se movieron 0,08 s como máximo, y las otras cinco escenas no tenían el problema.
+3. **«180 000», ¿aparte o parte?** El folio decía «probablemente ≈ 180 000 pesos en vales» y se podía leer como una suma más. Ahora dice «probablemente recibió ≈ 180 000 de los 948 500, en vales», y su etiqueta es «Novoa · su parte». El storyboard (3.6) quedó igual.
+
 ## Desconocido
 
 Si la diferencia entre A, B y C se **siente** como se busca: es la pregunta para Gerson. No se probó en la laptop ni a 1080p.

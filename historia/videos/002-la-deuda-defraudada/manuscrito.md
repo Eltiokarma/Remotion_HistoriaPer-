@@ -1,6 +1,6 @@
 # La deuda defraudada · Manuscrito de locución
 
-Generado con `manuscrito.py` desde [narracion.json](narracion.json) y [narracion_tiempos.json](narracion_tiempos.json); no se edita a mano. Voz «Joder Jolines», modelo `eleven_v4`, una toma por escena (`scripts/narracion.py`). Duración real: 9:27.7.
+Generado con `manuscrito.py` desde [narracion.json](narracion.json) y [narracion_tiempos.json](narracion_tiempos.json); no se edita a mano. Voz «Joder Jolines», modelo `eleven_v4`, una toma por escena (`scripts/narracion.py`). Duración real: 9:27.6.
 
 Cada frase dice en qué segundo de su escena empieza (`voz/sNN.mp3`), con qué emoción se dijo (las etiquetas entre corchetes, que la voz no lee) y cuánto respira después. `/` es una pausa de menos de 1 s y `//`, una de 1 s o más; ✂ marca dónde la escena se generó en otra toma. Las láminas, encuadres y sonido están en `storyboard.html`.
 
@@ -60,15 +60,15 @@ Cada frase dice en qué segundo de su escena empieza (`voz/sNN.mp3`), con qué e
 - `0:33.5` *[calm]* Gestionaba el reclamo a cambio de una comisión. / (0.4 s)
 - `0:36.2` *[calm] [measured]* En mil ochocientos cincuenta y dos intentó que el gobierno lo aprobara por quinientos mil a seiscientos mil pesos. / (0.4 s)
 - `0:42.1` *[dry]* Para sí esperaba doscientos mil. // (1.0 s)
-- `0:44.8` *[tense] [measured]* El presidente ya era José Rufino Echenique, que había sucedido a Castilla. / (0.4 s)
+- `0:44.7` *[tense] [measured]* El presidente ya era José Rufino Echenique, que había sucedido a Castilla. / (0.4 s)
 - `0:49.2` *[tense] [slowly]* Echenique respondió que el reclamo estaba fuera de plazo. // (1.5 s)
-- `0:53.9` *[tense] [low voice]* Días después, el reclamo se aprobó. / (1.1 s) ✂
+- `0:53.8` *[tense] [low voice]* Días después, el reclamo se aprobó. / (1.1 s) ✂
 - `0:57.2` *[serious] [softly] [slowly]* Por novecientos cuarenta y ocho mil quinientos pesos en vales. // (2.3 s) ✂
-- `1:03.4` *[dry] [restrained]* Era mucho más de lo que había pedido el propio Elías: de una vez y media a casi el doble. // (1.0 s)
-- `1:09.7` *[serious] [restrained anger]* Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico. // (1.0 s)
+- `1:03.3` *[dry] [restrained]* Era mucho más de lo que había pedido el propio Elías: de una vez y media a casi el doble. // (1.0 s)
+- `1:09.6` *[serious] [restrained anger]* Según Quiroz, se aprobó gracias a la participación directa del ministro de Guerra, Juan Crisóstomo Torrico. // (1.0 s)
 - `1:16.3` *[serious] [measured]* Y Quiroz anota que Novoa probablemente recibió alrededor de ciento ochenta mil pesos, también en vales. // (2.0 s)
 - `1:24.3` *[calm] [measured]* No sabemos adónde fue cada peso de la diferencia. / (0.4 s)
-- `1:27.3` *[calm] [firm]* Lo que sí documenta Quiroz es quién dijo que el reclamo estaba fuera de plazo, quién intervino después y cuánto se terminó aprobando. //
+- `1:27.2` *[calm] [firm]* Lo que sí documenta Quiroz es quién dijo que el reclamo estaba fuera de plazo, quién intervino después y cuánto se terminó aprobando. //
 
 ## s04 · Lo investigan y los títulos siguen circulando · 3:18.3
 
