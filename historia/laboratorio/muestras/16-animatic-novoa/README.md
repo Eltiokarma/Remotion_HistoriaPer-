@@ -10,8 +10,9 @@ Prueba de ritmo y énfasis sobre la **voz real** (`voz/s03.mp3`, «Joder Jolines
 | B · + momento reservado | En «Días después» la mesa se vacía; el vale aparece solo y quieto, sin deslizarse ni halo, y se sostiene en el silencio. Lo demás, igual que A. | la de la voz |
 | C · + respiros | B más los respiros de montaje del storyboard al final de cada plano (7,5 s en total): la voz se corta en esas pausas y la imagen se sostiene. | voz + 7,5 s |
 | E1–E6 · auditoría | Versiones acumulativas sobre D, una capa por versión: E1 mesa desaturada, E2 una presentación por persona, E3 composición, E4 física, E5 texto en tinta, E6 etiquetas de cartón. Ver INFORME. | voz + 7,5 s |
+| **F · en revisión** | E6 más dos cambios que pidió Gerson el 21 de noviembre de 2026. Cada persona, la primera vez que se nombra, sale en primer plano: medallón grande, nombre y función, con la mesa desenfocada. A los 1,3 s el medallón vuela a la etiqueta de su papel, que entra a la vez. Además, un papel distinto por dueño: carta de Elías, oficio del gobierno y recibo de Novoa. | voz + 7,5 s |
 | D | C, pero el vale entra deslizándose como en A (sin halo). Con caja negra en los textos y etiqueta de dueño sobre cada documento. Elegida por Gerson el 20 de noviembre de 2026; reemplazada por E6. | voz + 7,5 s |
-| **E6 · elegida** | Todas las capas de la auditoría. Gerson la eligió el 21 de noviembre de 2026 y pidió tres arreglos: la etiqueta del vale pisaba la de Elías en 3.5, la voz repetía una «s» hacia el segundo 66 y no se entendía si los 180 000 eran aparte o parte de los 948 500. Ver INFORME. | voz + 7,5 s |
+| E6 | Todas las capas de la auditoría. Gerson la eligió el 21 de noviembre de 2026 y pidió tres arreglos: la etiqueta del vale pisaba la de Elías en 3.5, la voz repetía una «s» hacia el segundo 66 y no se entendía si los 180 000 eran aparte o parte de los 948 500. Ver INFORME. | voz + 7,5 s |
 
 La comparación que importa: **A frente a B** (¿se siente distinta la cifra?) y **B frente a C** (¿los respiros dejan asentar o vuelven lento el caso?). Ver sin sonido y con sonido.
 

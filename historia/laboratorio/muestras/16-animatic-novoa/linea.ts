@@ -8,7 +8,7 @@ import tiempos from '../../../videos/002-la-deuda-defraudada/narracion_tiempos.j
  * (y en D, la elegida) agregan respiros de montaje al final de cada plano: el video se alarga, la voz se corta en esos
  * puntos y, mientras dura el respiro, el tiempo de voz se queda quieto (la imagen se sostiene).
  */
-export type Version = 'A' | 'B' | 'C' | 'D' | 'E1' | 'E2' | 'E3' | 'E4' | 'E5' | 'E6';
+export type Version = 'A' | 'B' | 'C' | 'D' | 'E1' | 'E2' | 'E3' | 'E4' | 'E5' | 'E6' | 'F';
 export const FPS = 30;
 
 export const FRASES = tiempos.s03.frases;

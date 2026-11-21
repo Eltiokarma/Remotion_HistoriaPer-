@@ -184,3 +184,12 @@ En el video van en un medallón redondo, recortados a cabeza y hombros y unifica
 ## Medallones ilustrados (20 de noviembre de 2026)
 
 Cuatro PNG de 1024 × 1024 con el mismo formato, generados por Gerson con ChatGPT con [diseno/prompts-chatgpt-medallones.md](diseno/prompts-chatgpt-medallones.md): `medallon-elias.png`, `medallon-echenique.png` y `medallon-torrico.png` son **redibujos de los retratos de época de Wikimedia Commons** de la sección «Retratos de época» (no caras inventadas); `medallon-novoa.png` es una silueta sin rasgos, porque no se conoce retrato de Ignacia Novoa de Arredondo. Revisión del agente contra los originales: conservan los rasgos, la edad aparente y la ropa visible (banda de Elías, uniforme y banda de Echenique, perilla y condecoraciones de Torrico), sin agregados visibles; falta el visto bueno de Gerson. En `public/videos/002-la-deuda-defraudada/imagenes/retratos/`, fuera de git.
+
+## Tres papeles distintos para la escena 3 (21 de noviembre de 2026)
+
+Tres PNG transparentes generados por Gerson con ChatGPT con [diseno/prompts-chatgpt-folios-s03.md](diseno/prompts-chatgpt-folios-s03.md), en la galería (fuera de git):
+- `obj-13-carta-elias.png`: carta privada doblada en tres, con resto de lacre y una rúbrica.
+- `obj-14-oficio-echenique.png`: oficio en papel sellado, con un sello impreso genérico. No es el escudo del Perú ni un sello real de 1852 [VERIFICAR si se quiere el sello exacto].
+- `obj-15-recibo-novoa.png`: recibo angosto arrancado de un talonario.
+
+Ninguno tiene texto legible: son papeles genéricos de la época, no facsímiles. Al recibirlos, el agente recortó cada imagen a su contorno con 6 px de margen (el recibo quedó en 575 × 1434). Se usan en la versión F del animatic de la escena 3 (laboratorio 16).

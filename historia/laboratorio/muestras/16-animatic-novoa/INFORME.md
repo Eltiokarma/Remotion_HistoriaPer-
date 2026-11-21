@@ -74,6 +74,21 @@ Eligió E6 e hizo tres observaciones. Las tres quedaron corregidas.
 2. **Una «s» repetida unos 2 s, hacia el segundo 66.** El error estaba en `voz/s03.mp3`, no en el render. Después del corte de la frase 11, `narracion.py` rellena la pausa con el tramo más quieto de la toma, pero esa toma («por novecientos cuarenta y ocho mil quinientos pesos en vales») no tenía silencio: el tramo más quieto era la «s» final, y se oyó en bucle. Ahora el aire sale del tramo más quieto de *todas* las tomas de la escena, y si aun así supera −52 dBFS, se baja. Se regeneró s03 desde las tomas guardadas, sin pedir audio nuevo a ElevenLabs. Los tiempos de las frases se movieron 0,08 s como máximo, y las otras cinco escenas no tenían el problema.
 3. **«180 000», ¿aparte o parte?** El folio decía «probablemente ≈ 180 000 pesos en vales» y se podía leer como una suma más. Ahora dice «probablemente recibió ≈ 180 000 de los 948 500, en vales», y su etiqueta es «Novoa · su parte». El storyboard (3.6) quedó igual.
 
+## Versión F: presentación de personajes y papeles propios (21 de noviembre de 2026)
+
+Gerson pidió: «cuando se presente a un personaje en pantalla, su medallón con el nombre salga en primer plano, lo demás de fondo se difumine, solo 1.5 - 2 segundos de presentación, luego el medallón va a la posición que le corresponde, junto con su documento».
+
+- **Cuándo.** Arranca 0,1 s antes de que la voz diga el nombre. Los tiempos se midieron con Scribe sobre `voz/s03.mp3`: «Ignacia» en 7,14 s, «Domingo» en 29,46, «José» en 45,92 y «Juan» en 73,92 (tiempo de voz).
+- **Cómo.**
+  - De 0 a 0,35 s entran el medallón de 280 px al centro y una tira con el nombre completo y la función. Al mismo tiempo, la mesa se desenfoca (hasta 9 px) y se oscurece un 35 %.
+  - De 1,3 a 1,8 s el medallón viaja en arco, con peso «pesado», hasta el medallón de la etiqueta de su papel, y la tira del nombre se apaga.
+  - Cuando el medallón llega, la tira de la etiqueta se despliega desde él.
+  - Los papeles de Elías y de Echenique entran durante ese viaje, no antes. Novoa ya tiene su carpeta en la mesa. Torrico no tiene papel, así que su medallón va a su ficha.
+- **Una vez por persona.** Novoa vuelve en el vale y en su parte con la etiqueta normal, sin otra presentación.
+- **Papeles propios.** Los tres de ChatGPT (`obj-13`, `obj-14` y `obj-15`, ver `fuentes.md`). El recibo es una tira angosta, así que su parte va a 272 px de ancho, con el texto en dos renglones y el folio más abajo, para que su etiqueta no pise la del vale.
+- **Arreglo de paso.** Al crear F, el vale tomaba la posición de la versión B porque el código solo reconocía D y E. Ya está corregido.
+- **Costo.** El desenfoque cubre todo el cuadro, pero solo en los 7,2 s que suman las cuatro presentaciones.
+
 ## Desconocido
 
 Si la diferencia entre A, B y C se **siente** como se busca: es la pregunta para Gerson. No se probó en la laptop ni a 1080p.

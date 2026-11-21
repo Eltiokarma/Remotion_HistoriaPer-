@@ -83,16 +83,68 @@ type Pose = { x: number; y: number; w: number; o: number };
 const pose = (x: number, y: number, w: number, o = 1): Pose => ({ x, y, w, o });
 const mezcla = (a: Pose, b: Pose, k: number): Pose => ({ x: mix(a.x, b.x, k), y: mix(a.y, b.y, k), w: mix(a.w, b.w, k), o: mix(a.o, b.o, k) });
 
+/** Centro del medallón de la etiqueta de un papel, en coordenadas del cuadro (el papel gira sobre su centro). */
+const anclaEtiqueta = (p: Pose, aspecto: number, giro: number) => {
+  const cx = p.x + p.w / 2, cy = p.y + (p.w * aspecto) / 2;
+  const lx = -6 + 50 - p.w / 2, ly = -12 - 50 - (p.w * aspecto) / 2;   // medallón de 100 px, 12 px sobre el papel
+  const r = (giro * Math.PI) / 180;
+  return { x: cx + lx * Math.cos(r) - ly * Math.sin(r), y: cy + lx * Math.sin(r) + ly * Math.cos(r), size: 100 };
+};
+
+/**
+ * Versión F (Gerson, 21 de noviembre de 2026): cuando la voz nombra a alguien por primera vez, su medallón
+ * y su nombre salen en primer plano y la mesa se desenfoca; a los 1,3 s el medallón viaja en arco hasta
+ * su lugar (la etiqueta de su papel, que entra a la vez) y la mesa vuelve a foco. 1,8 s en total.
+ * Los segundos de los nombres se midieron con Scribe sobre voz/s03.mp3 (21 de noviembre de 2026).
+ */
+const PRES_IN = 0.35, PRES_VUELA = 1.3, PRES_LLEGA = 1.8;
+type Presentacion = { persona: Persona; nombre: string; rol: string; t0: number };
+const PRESENTACIONES: Presentacion[] = [
+  { persona: 'novoa', nombre: 'IGNACIA NOVOA DE ARREDONDO', rol: 'reclamante', t0: F(1) - 0.1 },          // «Ignacia» 7,14
+  { persona: 'elias', nombre: 'DOMINGO ELÍAS', rol: 'intermediario', t0: F(4) + 0.94 },                   // «Domingo» 29,46
+  { persona: 'echenique', nombre: 'JOSÉ RUFINO ECHENIQUE', rol: 'presidente, 1851–1855', t0: F(8) + 1.06 }, // «José» 45,92
+  { persona: 'torrico', nombre: 'JUAN CRISÓSTOMO TORRICO', rol: 'ministro de Guerra', t0: F(13) + 4.16 },   // «Juan» 73,92
+];
+const presDe = (persona: Persona) => PRESENTACIONES.find((x) => x.persona === persona)!;
+
+const EnPrimerPlano = ({ pr, voz, destino, capas }: { pr: Presentacion; voz: number; destino: { x: number; y: number; size: number }; capas: Capas }) => {
+  if (voz < pr.t0 || voz > pr.t0 + PRES_LLEGA + 0.15) return null;
+  const entra = tramo(voz, pr.t0, PRES_IN, 'pesado');
+  const vuela = tramo(voz, pr.t0 + PRES_VUELA, PRES_LLEGA - PRES_VUELA, 'pesado');
+  const GRANDE = 280, cx = 960, cy = 430;
+  const size = mix(GRANDE, destino.size, vuela) * mix(0.86, 1, entra);
+  const x = mix(cx, destino.x, vuela);
+  const y = mix(cy, destino.y, vuela) - 90 * Math.sin(Math.PI * vuela);   // arco, no línea recta
+  const rotulo = entra * (1 - tramo(voz, pr.t0 + PRES_VUELA, 0.25, 'natural'));
+  return (
+    <>
+      <div style={{ position: 'absolute', left: x - size / 2, top: y - size / 2, opacity: entra }}>
+        <Medallon persona={pr.persona} size={size} />
+      </div>
+      {rotulo > 0 ? (
+        <div style={{ position: 'absolute', left: 0, width: 1920, top: cy + GRANDE / 2 + 28, display: 'flex', justifyContent: 'center', opacity: rotulo }}>
+          <div style={{ ...(capas.tira ? TIRA : CAJA), padding: '14px 30px 16px', textAlign: 'center', color: PAPEL, transform: `translateY(${(1 - entra) * 14}px) rotate(-1.2deg)` }}>
+            <div style={{ fontFamily: fuente.mono, fontSize: 46, letterSpacing: '0.12em', display: 'flex', alignItems: 'center', gap: 16, justifyContent: 'center' }}>
+              <span style={{ width: 14, height: 14, background: ROJO, display: 'inline-block' }} />{pr.nombre}
+            </div>
+            <div style={{ fontFamily: fuente.maquina, fontSize: 30, marginTop: 6, opacity: 0.85 }}>{pr.rol}</div>
+          </div>
+        </div>
+      ) : null}
+    </>
+  );
+};
+
 /**
  * Versiones E (auditoría con estructura-visual-motion, 20 de noviembre de 2026): acumulativas sobre D,
  * una capa por versión. E1 mesa desaturada · E2 una sola presentación por persona · E3 composición
  * (escala, asimetría, vale fijo) · E4 física (opacos con trayecto, sombra de contacto, solape) ·
  * E5 texto en tinta · E6 etiquetas como tiras de cartón en vez de la caja negra.
  */
-type Capas = { desat: boolean; unaPres: boolean; compo: boolean; fisica: boolean; tinta: boolean; tira: boolean };
+type Capas = { desat: boolean; unaPres: boolean; compo: boolean; fisica: boolean; tinta: boolean; tira: boolean; pres: boolean; folios: boolean };
 const capasDe = (v: Version): Capas => {
-  const n = v.startsWith('E') ? Number(v.slice(1)) : 0;
-  return { desat: n >= 1, unaPres: n >= 2, compo: n >= 3, fisica: n >= 4, tinta: n >= 5, tira: n >= 6 };
+  const n = v === 'F' ? 6 : v.startsWith('E') ? Number(v.slice(1)) : 0;
+  return { desat: n >= 1, unaPres: n >= 2, compo: n >= 3, fisica: n >= 4, tinta: n >= 5, tira: n >= 6, pres: v === 'F', folios: v === 'F' };
 };
 const SOMBRA_FLOTA = 'drop-shadow(12px 16px 12px rgba(0,0,0,.45))';
 const SOMBRA_APOYA = 'drop-shadow(1px 2px 1.5px rgba(0,0,0,.6)) drop-shadow(6px 8px 9px rgba(0,0,0,.28))';
@@ -100,16 +152,16 @@ const SOMBRA_APOYA = 'drop-shadow(1px 2px 1.5px rgba(0,0,0,.6)) drop-shadow(6px 
 const TIRA: CSSProperties = { background: '#3b2a20', border: '1px solid rgba(239,230,207,.16)', boxShadow: '1px 2px 2px rgba(0,0,0,.55)', padding: '7px 14px 8px', transform: 'rotate(-1.2deg)' };
 
 /** Un papel de la galería con texto encima, en coordenadas del cuadro. `aspecto` = alto / ancho. */
-const Papel = ({ src, p, aspecto, giro = 0, halo = 0, dueno, persona, capas, children }: { src: string; p: Pose; aspecto: number; giro?: number; halo?: number; dueno?: string; persona?: Persona; capas: Capas; children?: ReactNode }) =>
+const Papel = ({ src, p, aspecto, giro = 0, halo = 0, dueno, persona, capas, etiqueta = 1, children }: { src: string; p: Pose; aspecto: number; giro?: number; halo?: number; dueno?: string; persona?: Persona; capas: Capas; etiqueta?: number; children?: ReactNode }) =>
   p.o <= 0.001 ? null : (
     <div style={{ position: 'absolute', left: p.x, top: p.y, width: p.w, height: p.w * aspecto, opacity: p.o, transform: `rotate(${giro}deg)`,
       filter: `${capas.fisica ? SOMBRA_APOYA : SOMBRA_FLOTA}${halo > 0 ? ` drop-shadow(0 0 ${28 * halo}px rgba(222,184,105,${0.7 * halo}))` : ''}` }}>
       <Img src={src} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} />
       <div style={{ position: 'absolute', inset: 0, containerType: 'inline-size' } as CSSProperties}>{children}</div>
-      {dueno ? (
+      {dueno && etiqueta > 0 ? (
         <div style={{ position: 'absolute', left: -6, bottom: '100%', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 12 }}>
           {persona ? <Medallon persona={persona} size={capas.unaPres ? 100 : 92} /> : null}
-          <div style={{ ...(capas.tira ? TIRA : CAJA), whiteSpace: 'nowrap', fontFamily: fuente.mono, fontSize: capas.unaPres ? 24 : 22, letterSpacing: '0.12em', color: PAPEL, display: 'flex', alignItems: 'center', gap: 10 }}>
+          <div style={{ ...(capas.tira ? TIRA : CAJA), clipPath: etiqueta < 1 ? `inset(-20% ${(1 - etiqueta) * 100}% -20% -20%)` : undefined, whiteSpace: 'nowrap', fontFamily: fuente.mono, fontSize: capas.unaPres ? 24 : 22, letterSpacing: '0.12em', color: PAPEL, display: 'flex', alignItems: 'center', gap: 10 }}>
             <span style={{ width: 9, height: 9, background: ROJO, display: 'inline-block' }} />{dueno}
           </div>
         </div>
@@ -140,7 +192,7 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
   const { voz, plano } = aVoz(version, t);
   const reservada = version !== 'A';
   const capas = capasDe(version);
-  const conEntradaA = version === 'D' || version.startsWith('E');
+  const conEntradaA = version === 'D' || version === 'F' || version.startsWith('E');
   const entra = (a: number, d = 0.6) => tramo(voz, a, d, 'pesado');
   const sale = (a: number, d = 0.5) => 1 - tramo(voz, a, d, 'natural');
   /** Con «física», lo que sale no se desvanece: se desliza fuera del cuadro, opaco. */
@@ -154,7 +206,8 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
   let carpeta = capas.compo ? pose(mix(-1300, 110, cIn), 215, 1300, op(cIn)) : pose(150, 240, 1000, cIn);
   carpeta = fuera(carpeta, F(4), -1500);
   // 3.2–3.5 · el folio de la gestión de Elías
-  const eliasIn = entra(F(4) + 0.3);
+  // con presentaciones (F), el papel llega con el medallón que vuela hacia su etiqueta
+  const eliasIn = capas.pres ? tramo(voz, presDe('elias').t0 + PRES_VUELA, PRES_LLEGA - PRES_VUELA, 'pesado') : entra(F(4) + 0.3);
   const E0 = capas.compo ? pose(230, 205, 560) : pose(300, 250, 470);
   // al volver junto al vale, más abajo: su etiqueta queda bajo la del vale y no la pisa (Gerson, 2026-11-21)
   const E35 = capas.compo ? pose(150, 420, 450) : pose(230, 330, 400);
@@ -164,7 +217,7 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
   if (voz >= F(12)) elias = pose(mix(-600, E35.x, vuelve), E35.y, E35.w, op(vuelve));
   elias = fuera(elias, F(14), -700, 0.6);
   // 3.3 · la respuesta: fuera de plazo
-  const respIn = entra(F(8) + 1);
+  const respIn = capas.pres ? tramo(voz, presDe('echenique').t0 + PRES_VUELA, PRES_LLEGA - PRES_VUELA, 'pesado') : entra(F(8) + 1);
   const R0 = capas.compo ? pose(990, 185, 560) : pose(1140, 230, 470);
   const respuesta = fuera(pose(mix(1920, R0.x, respIn), R0.y, R0.w, op(respIn)), F(10), 1960, 0.8);
   // 3.4 · el vale aprobado
@@ -182,26 +235,39 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
   const focoVale = 1 + 0.6 * tramo(voz, F(16) + 5.3, 0.4, 'natural');
   // 3.6 · lo que Novoa probablemente recibió
   const recIn = entra(F(14) + 0.6);
-  const recibido = capas.compo ? pose(mix(-700, 130, recIn), 380, 470, op(recIn)) : pose(mix(1920, 1190, recIn), 230, 470, recIn);
+  // el recibo de Novoa (F) es una tira angosta: menos ancho y un poco más arriba para que quepa entero
+  const recibido = capas.folios ? pose(mix(-700, 200, recIn), 395, 272, op(recIn)) : capas.compo ? pose(mix(-700, 130, recIn), 380, 470, op(recIn)) : pose(mix(1920, 1190, recIn), 230, 470, recIn);
 
+  /** F: un papel distinto por dueño (ChatGPT, 21 de noviembre de 2026); antes, el mismo folio para los tres. */
+  const folio = capas.folios
+    ? { elias: { src: img('obj-13-carta-elias'), aspecto: 1416 / 1056 }, echenique: { src: img('obj-14-oficio-echenique'), aspecto: 1412 / 1057 }, novoa: { src: img('obj-15-recibo-novoa'), aspecto: 1434 / 575 } }
+    : { elias: { src: img('obj-09-folio-sencillo'), aspecto: 1448 / 1086 }, echenique: { src: img('obj-09-folio-sencillo'), aspecto: 1448 / 1086 }, novoa: { src: img('obj-09-folio-sencillo'), aspecto: 1448 / 1086 } };
+  /** Etiqueta de un papel en F: oculta hasta que llega su medallón; después la tira se despliega desde él. */
+  const etiq = (persona: Persona) => (capas.pres ? (voz < presDe(persona).t0 + PRES_LLEGA ? 0 : tramo(voz, presDe(persona).t0 + PRES_LLEGA, 0.3, 'natural') || 0.001) : 1);
+  const foco = capas.pres ? Math.max(0, ...PRESENTACIONES.map((pr) => tramo(voz, pr.t0, PRES_IN, 'natural') * (1 - tramo(voz, pr.t0 + PRES_VUELA, PRES_LLEGA - PRES_VUELA, 'natural')))) : 0;
+  const destinos: Record<Persona, { x: number; y: number; size: number }> = {
+    novoa: anclaEtiqueta(carpeta, 1024 / 1536, 0), elias: anclaEtiqueta(elias, folio.elias.aspecto, -2),
+    echenique: anclaEtiqueta(respuesta, folio.echenique.aspecto, 1.5), torrico: { x: 110 + 52, y: 50 + 52, size: 104 },
+  };
   const ecoTramos = tramos(version);
-  const hojas = [0.2, F(4) + 0.3, F(8) + 1, ...(reservada && !conEntradaA ? [] : [F(11) - 0.1]), F(14) + 0.6, ...(reservada ? [F(12) + 0.2] : [])];
+  const hojas = [0.2, capas.pres ? presDe('elias').t0 + PRES_VUELA : F(4) + 0.3, capas.pres ? presDe('echenique').t0 + PRES_VUELA : F(8) + 1, ...(reservada && !conEntradaA ? [] : [F(11) - 0.1]), F(14) + 0.6, ...(reservada ? [F(12) + 0.2] : [])];
   return (
     <AbsoluteFill style={{ background: '#2a1d14' }}>
+      <AbsoluteFill style={{ filter: foco > 0.001 ? `blur(${9 * foco}px) brightness(${1 - 0.35 * foco})` : undefined }}>
       <Img src={img('fondo-mesa-expediente')} style={{ position: 'absolute', inset: 0, width: 1920, height: 1080, filter: capas.desat ? 'saturate(.5) brightness(.8)' : undefined }} />
 
-      <Papel src={img('obj-07-carpeta-abierta')} p={carpeta} aspecto={1024 / 1536} capas={capas} dueno={capas.unaPres ? 'IGNACIA NOVOA DE ARREDONDO · RECLAMANTE' : 'NOVOA DE ARREDONDO · RECLAMO'} persona="novoa">
+      <Papel src={img('obj-07-carpeta-abierta')} p={carpeta} aspecto={1024 / 1536} capas={capas} etiqueta={etiq('novoa')} dueno={capas.unaPres ? 'IGNACIA NOVOA DE ARREDONDO · RECLAMANTE' : 'NOVOA DE ARREDONDO · RECLAMO'} persona="novoa">
         <Renglon x={53} y={42} size={2.4} k={tramo(voz, F(1) + 0.4, 0.4)} tinta={capas.tinta}>Hacienda expropiada</Renglon>
         <Renglon x={53} y={52} size={2.2} k={tramo(voz, F(2) + 1.6, 0.4)} tinta={capas.tinta}>500 personas esclavizadas</Renglon>
         <Renglon x={53} y={62} size={2.4} k={tramo(voz, Ffin(2) - 1.6, 0.4)} tinta={capas.tinta}>Lucro cesante: 32 años</Renglon>
       </Papel>
 
-      <Papel src={img('obj-09-folio-sencillo')} p={elias} aspecto={1448 / 1086} giro={-2} capas={capas} dueno={capas.unaPres ? (voz >= F(12) ? 'ELÍAS · LO QUE PEDÍA' : 'DOMINGO ELÍAS · INTERMEDIARIO') : 'ELÍAS · GESTIÓN'} persona="elias">
+      <Papel src={folio.elias.src} p={elias} aspecto={folio.elias.aspecto} giro={-2} capas={capas} etiqueta={etiq('elias')} dueno={capas.unaPres ? (voz >= F(12) ? 'ELÍAS · LO QUE PEDÍA' : 'DOMINGO ELÍAS · INTERMEDIARIO') : 'ELÍAS · GESTIÓN'} persona="elias">
         <Renglon x={9} y={50} size={6.2} k={tramo(voz, Ffin(6) - 2.6, 0.4)} ancho={84} tinta={capas.tinta}>pide:<br />500 000–600 000<br />pesos</Renglon>
         <Renglon x={9} y={76} size={4.6} k={tramo(voz, F(7) + 0.5, 0.4)} ancho={84} tinta={capas.tinta}>comisión esperada:<br />200 000</Renglon>
       </Papel>
 
-      <Papel src={img('obj-09-folio-sencillo')} p={respuesta} aspecto={1448 / 1086} giro={1.5} capas={capas} dueno={capas.unaPres ? 'ECHENIQUE · PRESIDENTE, 1851–1855' : 'ECHENIQUE · RESPUESTA'} persona="echenique">
+      <Papel src={folio.echenique.src} p={respuesta} aspecto={folio.echenique.aspecto} giro={1.5} capas={capas} etiqueta={etiq('echenique')} dueno={capas.unaPres ? 'ECHENIQUE · PRESIDENTE, 1851–1855' : 'ECHENIQUE · RESPUESTA'} persona="echenique">
         <Renglon x={9} y={55} size={7.4} k={tramo(voz, Ffin(9) - 1.1, 0.3)} ancho={84} tinta={capas.tinta}>
           <TrazoRojo k={tramo(voz, Ffin(9) - 0.4, 0.6, 'ligero')} color={ROJO}>Fuera de plazo</TrazoRojo>
         </Renglon>
@@ -214,13 +280,22 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
         <Renglon x={8} y={58} size={4.6} k={tramo(voz, F(11) + 0.6, 0.4)} familia={fuente.libro} ancho={84} centro color="#4a3826" tinta={capas.tinta}>pesos en vales</Renglon>
       </Papel>
 
-      <Papel src={img('obj-09-folio-sencillo')} p={recibido} aspecto={1448 / 1086} giro={2} capas={capas} dueno={capas.compo ? 'NOVOA · SU PARTE' : 'NOVOA · RECIBIDO, SEGÚN QUIROZ'} persona="novoa">
+      <Papel src={folio.novoa.src} p={recibido} aspecto={folio.novoa.aspecto} giro={capas.folios ? 1 : 2} capas={capas} dueno={capas.compo ? 'NOVOA · SU PARTE' : 'NOVOA · RECIBIDO, SEGÚN QUIROZ'} persona="novoa">
         {/* Gerson (2026-11-21): no se entendía si los 180 000 eran aparte o una tajada de los 948 500 */}
+        {capas.folios ? (
+          <>
+            <Renglon x={10} y={35} size={8.6} k={tramo(voz, F(14) + 1.8, 0.4)} ancho={82} tinta={capas.tinta}>probablemente<br />recibió</Renglon>
+            <Renglon x={10} y={46} size={13} k={tramo(voz, F(14) + 2.6, 0.4)} ancho={86} familia={fuente.libro} peso={600} tinta={capas.tinta}>≈ 180 000</Renglon>
+            <Renglon x={10} y={55.5} size={8.6} k={tramo(voz, F(14) + 3.0, 0.4)} ancho={82} tinta={capas.tinta}>de los 948 500<br />en vales</Renglon>
+            <Renglon x={10} y={84} size={7} k={tramo(voz, F(14) + 3.2, 0.4)} ancho={82} tinta={capas.tinta}>según Quiroz</Renglon>
+          </>
+        ) : (<>
         <Renglon x={9} y={42} size={5.4} k={tramo(voz, F(14) + 1.8, 0.4)} ancho={84} tinta={capas.tinta}>probablemente recibió</Renglon>
         <Renglon x={9} y={51} size={8} k={tramo(voz, F(14) + 2.6, 0.4)} ancho={84} familia={fuente.libro} peso={600} tinta={capas.tinta}>≈ 180 000</Renglon>
         <Renglon x={9} y={63} size={5.4} k={tramo(voz, F(14) + 3.0, 0.4)} ancho={84} tinta={capas.tinta}>de los 948 500</Renglon>
         <Renglon x={9} y={71} size={5.4} k={tramo(voz, F(14) + 3.0, 0.4)} ancho={84} tinta={capas.tinta}>en vales</Renglon>
         {capas.compo ? <Renglon x={9} y={84} size={4.4} k={tramo(voz, F(14) + 3.2, 0.4)} ancho={84} tinta={capas.tinta}>según Quiroz</Renglon> : null}
+        </>)}
       </Papel>
 
       {/* fichas de identidad: una o dos a la vez, arriba a la izquierda */}
@@ -228,7 +303,7 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
       <FichaEn capas={capas} texto={capas.compo ? 'ABOLICIÓN · 3 DE DICIEMBRE DE 1854' : 'ABOLICIÓN · DECRETO DEL 3 DE DICIEMBRE DE 1854'} x={capas.compo ? 1000 : 110} y={capas.compo ? 120 : 960} voz={voz} desde={F(3)} hasta={F(4)} />
       {!capas.unaPres && <FichaEn capas={capas} texto="DOMINGO ELÍAS · INTERMEDIARIO" persona="elias" x={110} y={50} voz={voz} desde={F(4)} hasta={F(8)} />}
       {!capas.unaPres && <FichaEn capas={capas} texto="JOSÉ RUFINO ECHENIQUE · PRESIDENTE, 1851–1855" persona="echenique" x={110} y={50} voz={voz} desde={F(8)} hasta={reservada ? F(10) : F(12)} />}
-      <FichaEn capas={capas} texto="JUAN CRISÓSTOMO TORRICO · MINISTRO DE GUERRA" persona="torrico" x={110} y={50} voz={voz} desde={F(13)} hasta={F(15)} />
+      <FichaEn capas={capas} texto="JUAN CRISÓSTOMO TORRICO · MINISTRO DE GUERRA" persona="torrico" x={110} y={50} voz={voz} desde={capas.pres ? presDe('torrico').t0 + PRES_LLEGA - 0.05 : F(13)} hasta={F(15)} />
       <FichaEn capas={capas} texto="ECHENIQUE · FUERA DE PLAZO" persona="echenique" x={110} y={capas.compo ? 28 : 830} voz={voz} desde={F(15) + 0.3} hasta={99}
         foco={tramo(voz, F(16) + 0.6, 0.3) * (1 - tramo(voz, F(16) + 3.4, 0.3))} />
       <FichaEn capas={capas} texto="TORRICO · INTERVINO" persona="torrico" x={capas.compo ? 850 : 110} y={capas.compo ? 28 : 940} voz={voz} desde={F(15) + 0.8} hasta={99}
@@ -237,9 +312,13 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
       <Luz color={OCRE} x={46} y={46} radio={60} intensidad={0.06} />
       <Atmosfera grano={0} vineta={capas.desat ? 0.5 : 0.3} />
 
+      </AbsoluteFill>
+
+      {capas.pres && PRESENTACIONES.map((pr) => <EnPrimerPlano key={pr.persona} pr={pr} voz={voz} destino={destinos[pr.persona]} capas={capas} />)}
+
       <div style={{ position: 'absolute', right: 40, bottom: 26, fontFamily: fuente.mono, fontSize: 20, letterSpacing: '0.12em', color: 'rgba(239,230,207,.7)', textAlign: 'right', ...CAJA }}>
         ANIMATIC · ESCENA 3 · VERSIÓN {version}<br />
-        {({ A: 'cámara quieta', B: '+ momento reservado', C: '+ respiros de montaje', D: 'elegida: C con la entrada de A', E1: 'D + mesa desaturada', E2: '+ una presentación por persona', E3: '+ composición', E4: '+ física', E5: '+ texto en tinta', E6: '+ etiquetas de cartón' } as Record<Version, string>)[version]} · plano {plano}
+        {({ A: 'cámara quieta', B: '+ momento reservado', C: '+ respiros de montaje', D: 'elegida: C con la entrada de A', E1: 'D + mesa desaturada', E2: '+ una presentación por persona', E3: '+ composición', E4: '+ física', E5: '+ texto en tinta', E6: '+ etiquetas de cartón', F: 'E6 + presentación de personajes' } as Record<Version, string>)[version]} · plano {plano}
       </div>
 
       {ecoTramos.map((tr) => (
