@@ -184,7 +184,7 @@ Cuatro manos: vende, compra, mueve, aprueba. El tablero completo, de la deuda in
 
 *Expediente: la mesa en cenital.* De «así funcionaba» a «así se aprobó un reclamo que el presidente había dado por vencido».
 
-1:42.2 · voz 77 % · cámara quieta 100 % · 4.7 rótulos con datos por minuto.
+1:42.2 · voz 77 % · cámara quieta 100 % · 5.3 rótulos con datos por minuto.
 
 ### 3.1 · presentar · 29.0 s
 
@@ -198,12 +198,13 @@ Un caso real: qué reclamaba Novoa, y cómo. La carpeta se abre: folio de la sol
 
 ### 3.2 · presentar · 17.5 s
 
-Elías gestiona por comisión y pide entre 500 000 y 600 000. Ficha de Elías junto al folio de gestión. El folio muestra en un solo renglón el intervalo pedido y su comisión esperada; la comisión se escribe cuando la voz la dice. Sin busto ni gesto.
+Elías gestiona por comisión y pide entre 500 000 y 600 000. Ficha de Elías junto al folio de gestión. El folio muestra en un solo renglón el intervalo pedido y su comisión esperada; la comisión se escribe cuando la voz la dice. Sin busto ni gesto. Bajo lo que pedía, en tinta: «≈ 70–85 millones de soles de hoy*» y al pie «* conversión aproximada» (Gerson, 21 de noviembre de 2026; cálculo en fuentes.md).
 
-- **Pantalla:** Domingo Elías · intermediario; pide: 500 000–600 000 pesos · comisión: 200 000.
+- **Pantalla:** Domingo Elías · intermediario; pide: 500 000–600 000 pesos · comisión: 200 000; ≈ 70–85 millones de soles de hoy* · * conversión aproximada.
 - **Cámara:** quieta.
 - **Efecto:** Cada rótulo entra en bloque y se queda.
 - **Sonido:** Hoja.
+- **Aviso:** 3 rótulos en el plano: que no estén más de dos a la vez
 
 ### 3.3 · frenar · 10.1 s
 

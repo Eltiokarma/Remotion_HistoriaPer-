@@ -291,8 +291,19 @@ export const Animatic: React.FC<{ version: Version }> = ({ version }) => {
       </Papel>
 
       <Papel src={folio.elias.src} p={elias} aspecto={folio.elias.aspecto} giro={-2} capas={capas} etiqueta={etiq('elias')} dueno={capas.unaPres ? (voz >= F(12) ? 'ELÍAS · LO QUE PEDÍA' : 'DOMINGO ELÍAS · INTERMEDIARIO') : 'ELÍAS · GESTIÓN'} persona="elias">
+        {capas.folios ? (
+          <>
+            {/* Gerson (2026-11-21): lo que pedía Elías también en soles de hoy, para medir después lo que aprobó Torrico.
+                1 peso = 1 dólar de 1852 (Q, p. 546) × ≈ 42 (IPC de EE. UU.) × 3,41 soles por dólar (noviembre de 2026) ≈ 143 soles. */}
+            <Renglon x={9} y={44} size={6.2} k={tramo(voz, Ffin(6) - 2.6, 0.4)} ancho={84} tinta={capas.tinta}>pide:<br />500 000–600 000 pesos</Renglon>
+            <Renglon x={9} y={58.5} size={4.6} k={tramo(voz, Ffin(6) - 1.2, 0.4)} ancho={84} tinta={capas.tinta}>≈ 70–85 millones de soles de hoy*</Renglon>
+            <Renglon x={9} y={72} size={4.6} k={tramo(voz, F(7) + 0.5, 0.4)} ancho={84} tinta={capas.tinta}>comisión esperada:<br />200 000</Renglon>
+            <Renglon x={9} y={89} size={3.3} k={tramo(voz, Ffin(6) - 1.2, 0.4)} ancho={84} tinta={capas.tinta}>* conversión aproximada</Renglon>
+          </>
+        ) : (<>
         <Renglon x={9} y={50} size={6.2} k={tramo(voz, Ffin(6) - 2.6, 0.4)} ancho={84} tinta={capas.tinta}>pide:<br />500 000–600 000<br />pesos</Renglon>
         <Renglon x={9} y={76} size={4.6} k={tramo(voz, F(7) + 0.5, 0.4)} ancho={84} tinta={capas.tinta}>comisión esperada:<br />200 000</Renglon>
+        </>)}
       </Papel>
 
       <Papel src={folio.echenique.src} p={respuesta} aspecto={folio.echenique.aspecto} giro={1.5} capas={capas} etiqueta={etiq('echenique')} dueno={capas.unaPres ? 'ECHENIQUE · PRESIDENTE, 1851–1855' : 'ECHENIQUE · RESPUESTA'} persona="echenique">

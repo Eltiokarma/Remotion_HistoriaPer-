@@ -228,3 +228,23 @@ Gerson pidió buscar el sello real.
 - **Sin valor en reales**, porque no se sabe de qué clase era el papel del reclamo.
 
 Se usa en la hoja del reclamo de Novoa (versión F del animatic de la escena 3).
+
+## Conversión aproximada de pesos de 1852 a soles de hoy (21 de noviembre de 2026)
+
+Pedido de Gerson: que en la carta de Elías (escena 3, plano 3.2) se vea lo que pedía también en soles de hoy, para que después se pueda medir lo que aprobó Torrico. En pantalla: «≈ 70–85 millones de soles de hoy*» y la nota «* conversión aproximada».
+
+**Cálculo**, en tres pasos:
+
+1. **De peso a dólar de la época.** Q, p. 546, nota del cuadro A.3: «1 peso = 8 reales = 1 dólar americano» (cotejado con la reproducción de la primera edición, página 545 del PDF).
+2. **De dólar de 1852 a dólar de hoy.** Índice de precios al consumidor de EE. UU.: 1 dólar de 1852 equivale a entre 40,1 y 43,5 dólares de 2026, según la serie anterior a 1913 que use cada calculadora. Fuentes: [Ryan O'Connell, calculadora de inflación 1852](https://ryanoconnellfinance.com/inflation-calculator/1852/) (series del Fed de Minneapolis, IPC de julio de 2026) y [Official Data, 1852](https://www.officialdata.org/us/inflation/1852) (IPC de 1852 = 7,70; de 2026 = 333,952). Se usa ≈ 42.
+3. **De dólar a soles.** ≈ 3,41 soles por dólar, cierre del 17 de noviembre de 2026 según el BCRP, citado en [TuCambista](https://tucambista.pe/noticias/dolares-a-soles-17-noviembre-2026).
+
+**Resultado:** 1 peso de 1852 ≈ 143 soles de hoy, con un rango de 137 a 148.
+
+| Monto en pesos | En soles de hoy |
+|---|---|
+| 500 000–600 000 | ≈ 70–85 millones (68–89 con el rango) |
+| 948 500 | ≈ 135 millones |
+| 180 000 | ≈ 26 millones |
+
+**Límites.** Es un ajuste por precios al consumidor de EE. UU., no del Perú, porque no hay una serie peruana continua desde 1852. Además, mide poder de compra de bienes corrientes. Medido como parte de la economía de la época, el peso de esas sumas sería mucho mayor. Por eso va con asterisco y la palabra «aproximada». Si se actualiza el tipo de cambio, se rehace la cuenta.

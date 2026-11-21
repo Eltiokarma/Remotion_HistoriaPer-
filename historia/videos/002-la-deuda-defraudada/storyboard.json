@@ -726,7 +726,7 @@
           "verbo": "presentar",
           "respiro": 1,
           "idea": "Elías gestiona por comisión y pide entre 500 000 y 600 000.",
-          "imagen": "Ficha de Elías junto al folio de gestión. El folio muestra en un solo renglón el intervalo pedido y su comisión esperada; la comisión se escribe cuando la voz la dice. Sin busto ni gesto.",
+          "imagen": "Ficha de Elías junto al folio de gestión. El folio muestra en un solo renglón el intervalo pedido y su comisión esperada; la comisión se escribe cuando la voz la dice. Sin busto ni gesto. Bajo lo que pedía, en tinta: «≈ 70–85 millones de soles de hoy*» y al pie «* conversión aproximada» (Gerson, 21 de noviembre de 2026; cálculo en fuentes.md).",
           "pantalla": [
             {
               "en": 4,
@@ -736,6 +736,11 @@
             {
               "en": 6,
               "t": "pide: 500 000–600 000 pesos · comisión: 200 000"
+            },
+            {
+              "en": 6,
+              "t": "≈ 70–85 millones de soles de hoy* · * conversión aproximada",
+              "refuerzo": true
             }
           ],
           "camara": {
