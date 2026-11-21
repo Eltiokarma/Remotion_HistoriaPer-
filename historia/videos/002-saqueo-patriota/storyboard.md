@@ -4,7 +4,7 @@ Generado desde `storyboard.json` con `storyboard.py`; no se edita a mano. Propue
 
 La versión completa, con láminas, voz con emoción, métricas y avisos, es `storyboard.html`.
 
-**Episodio:** 7:00.0 en pantalla · voz 79 % · cámara quieta 62 %.
+**Episodio:** 9:08.8 en pantalla · voz 80 % · cámara quieta 64 %.
 
 ## s00 · El gancho
 
@@ -271,26 +271,89 @@ Había leyes y hasta pena de muerte para el aduanero; casi nunca se aplicaban. U
 - **Sonido:** Papel; carpeta.
 - **Falta:** Hoja de ley impresa (la misma de los prompts de la escena 4 del 0·3).
 
-## s06 · Cierre
+## s06 · Un tesoro de excremento
 
-*Mesa.* De «la independencia» a «la independencia dejó dos deudas sin pagar, y una costumbre».
+*Islas (grabado del 0·3), mesa y mapa.* De «el Perú no tiene con qué pagar» a «el Perú descubre que tiene con qué pagar, y el negocio empieza mal desde el primer contrato».
 
-0:35.4 · voz 70 % · cámara quieta 34 % · 5.1 rótulos con datos por minuto.
+1:52.2 · voz 84 % · cámara quieta 61 % · 3.7 rótulos con datos por minuto.
 
-### 6.1 · juntar · 23.5 s
+### 6.1 · descubrir · 32.4 s
 
-El Perú nació con dos deudas, y casi no pagó ninguna durante más de veinte años. Las dos pilas, una a cada lado: adentro (colonia y guerra) y afuera (Londres). Debajo, una línea de 1826 a 1849, vacía.
+El guano: excremento de aves, abono de siempre; en los años treinta se descubre por qué rinde tanto. Las islas del 0·3 con sus aves y su capa de guano. Con «nitrógeno y fósforo», un frasco de laboratorio y las fichas N y P; al lado, el hueso y la sangre seca, más chicos.
+
+- **Pantalla:** Islas de Chincha · a unos 20 km de la costa (Vizcarra, p. 18).
+- **Cámara:** acercamiento (Acercarse a la capa de guano mientras se dice lo que contiene.).
+- **Efecto:** Aves y mar con su fase; las fichas químicas entran de a una.
+- **Sonido:** Aves y oleaje; tintineo de vidrio con el frasco.
+- **Falta:** Frasco de laboratorio del siglo XIX; hueso y sangre seca como abonos (ChatGPT).
+
+### 6.2 · regalar · 34.9 s
+
+Noviembre de 1840: Gamarra y Castilla dan el primer contrato del guano por casi nada. Presentaciones de Gamarra y de Castilla. Sus medallones caen sobre el contrato. La isla entera a un lado; con «noventa mil pesos», la cifra sola y chica frente a la isla. En la etiqueta del contrato, «Quirós, Allier y socios» (la voz no nombra a Quirós, para no confundirlo con Quiroz).
+
+- **Pantalla:** Agustín Gamarra, presidente · Ramón Castilla, ministro de Hacienda · noviembre de 1840; 90 000 pesos (18 000 libras) por 9 años ≈ 10 millones de soles de hoy* · * conversión aproximada.
+- **Cámara:** quieta.
+- **Efecto:** Dos presentaciones; la cifra se escribe en tinta, chica.
+- **Sonido:** Soplo y tic; pluma.
+- **Falta:** Medallones de Gamarra y de Castilla (el de Castilla ya está pedido para el 0·3).
+
+### 6.3 · informar · 16.1 s
+
+1841: un diplomático de EE. UU. informa que en Inglaterra se vende con al menos 50 % de ganancia. Ficha del diplomático. Una tonelada de guano en una balanza; del otro lado, diez dólares, y debajo la ganancia «≥ 50 %», sin partir el precio.
+
+- **Pantalla:** J. C. Pickett · diplomático de EE. UU. · Lima, 27 de noviembre de 1841; 10 dólares la tonelada · ganancia neta ≥ 50 %.
+- **Cámara:** quieta.
+- **Efecto:** La balanza se inclina hacia el dinero, con peso.
+- **Sonido:** Monedas.
+- **Falta:** Balanza y saco de una tonelada (el saco ya está: obj-02).
+
+### 6.4 · denunciar · 17.4 s
+
+El contrato se anula en 1841; los siguientes se consiguen con sobornos. El contrato se tacha en rojo; entran otros contratos con más etiquetas. Debajo, «sobornos a las más altas autoridades», según fuentes de la época que cita Quiroz.
+
+- **Pantalla:** Q, p. 165 · «fuentes independientes».
+- **Cámara:** quieta.
+- **Efecto:** Tachado rojo del corrector.
+- **Sonido:** Tachado.
+
+### 6.5 · mostrar · 11.5 s
+
+Desde los años cuarenta, el guano se vende en Europa y en Estados Unidos. El mapa: flechas de las islas a Gran Bretaña, Francia y Estados Unidos. El rótulo del peso que llegó a tener.
+
+- **Pantalla:** 1854–1871: el guano, 60 % de lo que el Perú vendía a Gran Bretaña (Vizcarra, p. 19).
+- **Cámara:** recorrido (Seguir el guano desde las islas hasta Europa y Estados Unidos: el tamaño del negocio.).
+- **Efecto:** Las flechas salen en cascada.
+- **Sonido:** Tic por flecha.
+
+## s07 · Cierre
+
+*Mesa.* De «la independencia» a «la independencia dejó dos deudas sin pagar, y por fin aparece con qué pagarlas».
+
+0:52.0 · voz 76 % · cámara quieta 62 % · 4.6 rótulos con datos por minuto.
+
+### 7.1 · juntar · 19.6 s
+
+El guano llega a un país con dos deudas. La mesa con las dos pilas, adentro y afuera, y el grabado de las islas entre ellas.
 
 - **Pantalla:** adentro: ≈ 21 millones de pesos; afuera: 1 816 000 libras.
-- **Cámara:** acercamiento (Abrirse para ver las dos pilas juntas: la imagen que resume el episodio.).
-- **Efecto:** Las dos pilas quietas.
+- **Cámara:** acercamiento (Abrirse para ver las dos pilas y las islas: la imagen que resume el episodio.).
+- **Efecto:** Todo quieto.
 - **Sonido:** La música sostiene.
 
-### 6.2 · anunciar · 12.0 s
+### 7.2 · incumplir · 20.0 s
 
-Hasta que encontró con qué pagar: el guano. Con «guano», el grabado de las islas del 0·3 aparece entre las dos pilas. Tarjeta: PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA.
+1842: un decreto promete a Londres la mitad del guano; nunca se cumple. Un decreto entra hacia la pila de afuera y el corrector lo tacha en rojo.
+
+- **Pantalla:** Decreto · enero de 1842 (Vizcarra, p. 22, n. 22).
+- **Cámara:** quieta.
+- **Efecto:** Tachado rojo.
+- **Sonido:** Pluma; tachado.
+
+### 7.3 · anunciar · 12.3 s
+
+La deuda de adentro también se pagará con el guano. Una flecha ocre va del guano a la pila de adentro, la que abre el 0·3. Tarjeta: PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA.
 
 - **Pantalla:** Próximo · 1850 · La deuda defraudada.
 - **Cámara:** quieta.
-- **Efecto:** Las islas entran por capas (mar, isla, aves), como en el 0·3.
-- **Sonido:** Mar y aves; el tema del canal con la tarjeta.
+- **Efecto:** La flecha se dibuja lenta, solemne.
+- **Sonido:** El tema del canal con la tarjeta.

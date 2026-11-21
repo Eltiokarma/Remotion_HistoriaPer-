@@ -275,36 +275,121 @@
   ]
  },
  "s06": {
-  "duracion": 31.92,
+  "duracion": 106.35,
   "frases": [
    {
     "desde": 0.3,
-    "hasta": 3.38,
-    "texto": "Así, el Perú independiente nació con dos deudas."
+    "hasta": 7.22,
+    "texto": "En las islas de la costa peruana había grandes depósitos de guano: el excremento de las aves marinas."
    },
    {
-    "desde": 3.98,
-    "hasta": 11.67,
-    "texto": "Una con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron y no pagaron."
+    "desde": 7.82,
+    "hasta": 12.44,
+    "texto": "El clima muy seco de la costa ayudaba a que se acumulara."
    },
    {
-    "desde": 12.27,
-    "hasta": 14.58,
-    "texto": "Otra con los acreedores de Londres."
+    "desde": 13.04,
+    "hasta": 17.27,
+    "texto": "En el Perú se usaba como abono desde tiempos muy antiguos."
    },
    {
-    "desde": 15.58,
-    "hasta": 20.96,
-    "texto": "Durante más de veinte años, el Estado casi no pagó ninguna de las dos."
+    "desde": 18.07,
+    "hasta": 24.22,
+    "texto": "En la década de mil ochocientos treinta, unos experimentos encontraron que tenía mucho nitrógeno y fósforo."
    },
    {
-    "desde": 22.46,
-    "hasta": 26.69,
-    "texto": "Hasta que encontró con qué pagar: el guano de unas islas."
+    "desde": 24.82,
+    "hasta": 30.21,
+    "texto": "Eso le daba ventaja sobre otros abonos, como el hueso o la sangre seca."
    },
    {
-    "desde": 29.19,
-    "hasta": 31.12,
+    "desde": 31.41,
+    "hasta": 40.64,
+    "texto": "En noviembre de mil ochocientos cuarenta, el gobierno del presidente Gamarra, con Ramón Castilla como ministro de Hacienda, otorgó el primer contrato del guano."
+   },
+   {
+    "desde": 41.24,
+    "hasta": 46.24,
+    "texto": "El Estado necesitaba dinero en efectivo, porque se acercaba una guerra con Bolivia."
+   },
+   {
+    "desde": 46.84,
+    "hasta": 53.76,
+    "texto": "Durante nueve años, solo una sociedad podía sacar guano y venderlo en Europa, en la cantidad que quisiera."
+   },
+   {
+    "desde": 54.36,
+    "hasta": 57.82,
+    "texto": "La formaban un empresario peruano y tres socios franceses."
+   },
+   {
+    "desde": 58.42,
+    "hasta": 63.81,
+    "texto": "La sociedad pagó solo noventa mil pesos, en cuotas, en efectivo y en billetes."
+   },
+   {
+    "desde": 65.31,
+    "hasta": 73.38,
+    "texto": "Un año después, un diplomático de Estados Unidos informó que en Inglaterra la tonelada de guano se vendía a diez dólares."
+   },
+   {
+    "desde": 73.98,
+    "hasta": 79.37,
+    "texto": "Según su informe, la ganancia neta era de al menos el cincuenta por ciento."
+   },
+   {
+    "desde": 80.17,
+    "hasta": 86.71,
+    "texto": "Ese mismo año, el contrato se canceló y lo reemplazaron otros, con más socios peruanos y extranjeros."
+   },
+   {
+    "desde": 87.31,
+    "hasta": 95.38,
+    "texto": "Varias fuentes de la época cuentan que se pagaron sobornos a las más altas autoridades para conseguir los contratos del guano."
+   },
+   {
+    "desde": 96.38,
+    "hasta": 104.85,
+    "texto": "Desde los años cuarenta, el Perú vendió grandes cantidades de guano a Europa y a Estados Unidos, donde se usaba como fertilizante."
+   }
+  ]
+ },
+ "s07": {
+  "duracion": 47.52,
+  "frases": [
+   {
+    "desde": 0.3,
+    "hasta": 4.92,
+    "texto": "El guano llegó a un país que había nacido con dos deudas."
+   },
+   {
+    "desde": 5.52,
+    "hasta": 13.98,
+    "texto": "Una era con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron o dejaron de pagar."
+   },
+   {
+    "desde": 14.58,
+    "hasta": 17.65,
+    "texto": "La otra era con los acreedores de Londres."
+   },
+   {
+    "desde": 18.65,
+    "hasta": 27.5,
+    "texto": "En enero de mil ochocientos cuarenta y dos, un decreto les prometió a esos acreedores la mitad de lo que dejara el guano."
+   },
+   {
+    "desde": 28.1,
+    "hasta": 36.18,
+    "texto": "El decreto nunca se cumplió: hubo varios cambios de gobierno, y el guano dejó mucho menos de lo que se esperaba."
+   },
+   {
+    "desde": 37.68,
+    "hasta": 42.29,
+    "texto": "La deuda de adentro también se iba a pagar con el guano."
+   },
+   {
+    "desde": 44.79,
+    "hasta": 46.72,
     "texto": "Próximo episodio: la deuda defraudada."
    }
   ]

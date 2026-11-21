@@ -27,11 +27,14 @@ EMOCION = {
             "[serious] [restrained anger]", "[tense]", "[serious] [weary]"],
     "s05": ["[calm] [storytelling]", "[measured]", "[serious]", "[serious] [measured]",
             "[dry] [measured]", "[dry] [ironic]", "[measured] [even]", "[serious] [weary]"],
-    "s06": ["[calm] [teacher]", "[calm]", "[calm]", "[serious] [low voice]", "[calm] [warm]", "[calm]"],
+    "s06": ["[calm] [storytelling]", "[calm]", "[calm] [warm]", "[curious] [teacher]", "[clear]",
+            "[serious] [measured]", "[dry]", "[dry] [measured]", "[dry]", "[dry] [ironic]",
+            "[serious] [measured]", "[serious]", "[dry] [measured]", "[serious] [restrained anger]", "[calm] [teacher]"],
+    "s07": ["[calm] [teacher]", "[calm]", "[calm]", "[measured]", "[dry] [weary]", "[serious] [low voice] [slowly]", "[calm]"],
 }
 
 # Toma aparte: «Próximo episodio» sola (s06), para que la voz no la pegue a la frase anterior.
-CORTES = {"s06": {"4": 2.5}}
+CORTES = {"s07": {"5": 2.5}}
 
 
 def frases_del_guion():

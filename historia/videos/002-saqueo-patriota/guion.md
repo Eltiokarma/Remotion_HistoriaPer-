@@ -10,7 +10,7 @@
 
 **Palabra del episodio:** *saqueo patriota* (título de Quiroz, p. 130).
 
-**Duración estimada:** 863 palabras de voz, unos 6 minutos de narración y cerca de 7 con las pausas. Es más corto que el 0·3 (9 min 28 s); se mide con la voz provisional.
+**Duración estimada:** unas 1150 palabras de voz; con la narración provisional (2,6 palabras por segundo y las pausas del guion), unos 8,5 minutos, y cerca de 9 con los respiros de montaje. Se mide con la voz real.
 
 **Las marcas:** `[PAUSA 1s]` va a la voz; **Imagen** es una primera idea para el storyboard, que viene después; **Fuente** da la página de Quiroz.
 
@@ -31,7 +31,7 @@ ESC 5  El contrabando de plata y las leyes que no se cumplían.
        → PERO en las islas había otra riqueza:
 ESC 6  1840: el guano vale una fortuna en Europa, y el primer contrato se vende por casi nada.
        → POR ESO, por fin, hay con qué pagar las dos deudas:
-ESC 7  Cierre: la plata ya estaba en las islas; faltaba saber quién se la iba a quedar.
+ESC 7  Cierre: el guano llega a un país con dos deudas, y la de adentro también se pagará con él.
 ```
 
 ---
@@ -135,13 +135,12 @@ La riqueza también salía del país por mar. [PAUSA 0,6s] El cónsul británico
 **Intensidad:** 4.
 
 **VO:**
-En las islas de la costa peruana había montañas de guano: el excremento de las aves marinas, acumulado durante siglos. [PAUSA 0,6s] En el Perú se usaba como abono desde tiempos antiguos. [PAUSA 0,8s] En la década de mil ochocientos treinta, unos experimentos en Europa mostraron por qué funcionaba tan bien: tenía mucho nitrógeno y fósforo. [PAUSA 1s] Europa y Estados Unidos necesitaban abono para sus campos, y el mejor estaba en el Perú. [PAUSA 1,2s] En noviembre de mil ochocientos cuarenta, el gobierno de Gamarra, con Ramón Castilla como ministro de Hacienda, firmó el primer contrato del guano. [PAUSA 0,6s] Una sociedad de Francisco Quirós con socios franceses podía sacarlo y venderlo en Europa durante nueve años, sin límite. [PAUSA 0,6s] Pagó noventa mil pesos. [PAUSA 1,5s] Un año después, un diplomático de Estados Unidos informó que en Inglaterra el guano se vendía con una ganancia de al menos la mitad. [PAUSA 0,8s] El contrato se anuló en mil ochocientos cuarenta y uno, y según Quiroz hubo sobornos para conseguir los siguientes. [PAUSA 1,5s]
+En las islas de la costa peruana había grandes depósitos de guano: el excremento de las aves marinas. [PAUSA 0,6s] El clima muy seco de la costa ayudaba a que se acumulara. [PAUSA 0,6s] En el Perú se usaba como abono desde tiempos muy antiguos. [PAUSA 0,8s] En la década de mil ochocientos treinta, unos experimentos encontraron que tenía mucho nitrógeno y fósforo. [PAUSA 0,6s] Eso le daba ventaja sobre otros abonos, como el hueso o la sangre seca. [PAUSA 1,2s] En noviembre de mil ochocientos cuarenta, el gobierno del presidente Gamarra, con Ramón Castilla como ministro de Hacienda, otorgó el primer contrato del guano. [PAUSA 0,6s] El Estado necesitaba dinero en efectivo, porque se acercaba una guerra con Bolivia. [PAUSA 0,6s] Durante nueve años, solo una sociedad podía sacar guano y venderlo en Europa, en la cantidad que quisiera. [PAUSA 0,6s] La formaban un empresario peruano y tres socios franceses. [PAUSA 0,6s] La sociedad pagó solo noventa mil pesos, en cuotas, en efectivo y en billetes. [PAUSA 1,5s] Un año después, un diplomático de Estados Unidos informó que en Inglaterra la tonelada de guano se vendía a diez dólares. [PAUSA 0,6s] Según su informe, la ganancia neta era de al menos el cincuenta por ciento. [PAUSA 0,8s] Ese mismo año, el contrato se canceló y lo reemplazaron otros, con más socios peruanos y extranjeros. [PAUSA 0,6s] Varias fuentes de la época cuentan que se pagaron sobornos a las más altas autoridades para conseguir los contratos del guano. [PAUSA 1s] Desde los años cuarenta, el Perú vendió grandes cantidades de guano a Europa y a Estados Unidos, donde se usaba como fertilizante. [PAUSA 1,5s]
 
-**Imagen:** el grabado de las islas del 0·3, con sus aves. Con «nitrógeno y fósforo», un frasco de laboratorio europeo y dos fichas químicas. Con «Europa y Estados Unidos», el mapa con flechas de las islas hacia Inglaterra, Francia y Estados Unidos. Con «noviembre de mil ochocientos cuarenta», el contrato sobre la mesa con las fichas de Gamarra y Castilla, y con «noventa mil pesos» la cifra sola, chica, frente a la isla entera. Con el diplomático, la ganancia: la mitad del precio se ilumina en ocre.
+**Imagen:** el grabado de las islas del 0·3, con sus aves. Con «nitrógeno y fósforo», un frasco de laboratorio y las fichas N y P; al lado, el hueso y la sangre seca, más chicos. Con «noviembre de mil ochocientos cuarenta», el contrato sobre la mesa con las fichas de Gamarra y Castilla (y la de Francisco Quirós, que la voz no nombra para no confundirlo con Quiroz); con «noventa mil pesos», la cifra sola y chica frente a la isla entera. Con el diplomático, «10 dólares la tonelada · ganancia neta ≥ 50 %», sin partir el precio. Con «Desde los años cuarenta», el mapa con flechas de las islas a Europa y a Estados Unidos y el rótulo «1854–1871: el guano, 60 % de lo que el Perú vendía a Gran Bretaña (Vizcarra, p. 19)».
 
-**Fuente:** Quiroz, p. 165 (el informe de 1841 sobre el «descubrimiento de una nueva fuente de riqueza peruana»: el guano «se le ha usado en la agricultura como abono desde tiempos inmemoriales» y «se vende en Inglaterra a diez dólares la tonelada dando una ganancia neta de al menos 50 [por ciento]», Pickett a Webster, Lima, 27 de noviembre de 1841; noviembre de 1840: Gamarra y su ministro de Hacienda Castilla otorgan el primer contrato a Francisco Quirós y sus socios franceses por 90 000 pesos (18 000 libras), para la extracción y venta ilimitadas en Europa por nueve años; rescindido en 1841; sobornos para conseguir los contratos). Vizcarra (2011), p. 18 (los experimentos de la década de 1830: «nitrógeno y fósforo», ventajas sobre otros abonos; las islas de Chincha) y p. 10 (exportaciones a Europa y a Estados Unidos, donde se usaba como fertilizante).
+**Fuente:** Quiroz, p. 165 (el informe de 1841 sobre el «descubrimiento de una nueva fuente de riqueza peruana»: el guano «se le ha usado en la agricultura como abono desde tiempos inmemoriales» y «se vende en Inglaterra a diez dólares la tonelada dando una ganancia neta de al menos 50 [por ciento]», Pickett a Webster, Lima, 27 de noviembre de 1841; noviembre de 1840: Gamarra y su ministro de Hacienda Castilla otorgan el primer contrato a Francisco Quirós y sus socios franceses por 90 000 pesos (18 000 libras), para la extracción y venta ilimitadas en Europa por nueve años; rescindido en 1841; sobornos para conseguir los contratos). Vizcarra (2011), p. 18 (los experimentos de la década de 1830: «nitrógeno y fósforo», «ventajas importantes sobre otros abonos de estiércol, como hueso o sangre disecada»; grandes depósitos en las islas de Chincha), pp. 24–25 (el clima árido), p. 10 («Desde los años cuarenta, el Perú exportó una gran cantidad de guano a Europa y a los Estados Unidos, donde se utilizaba como fertilizante») y p. 19 (1854–1871: 60 % de las exportaciones a Gran Bretaña). Quiroz, p. 165: la guerra con Bolivia, los 90 000 pesos «en cuotas en efectivo y billetes», el consorcio «más amplio» de 1841 y los sobornos atestiguados por «fuentes independientes».
 
-[VERIFICAR] «Europa y Estados Unidos necesitaban abono para sus campos»: Vizcarra habla de «una creciente demanda de fertilizantes en el extranjero» (p. 25) y de las exportaciones a Europa y Estados Unidos «donde se utilizaba como fertilizante» (p. 10). La razón de esa demanda (suelos agotados, más población que alimentar) no está en estas fuentes; la voz no la dice.
 
 ---
 
@@ -152,11 +151,11 @@ En las islas de la costa peruana había montañas de guano: el excremento de las
 **Intensidad:** 2.
 
 **VO:**
-Así, el Perú independiente nació con dos deudas. [PAUSA 0,6s] Una con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron y no pagaron. [PAUSA 0,6s] Otra con los acreedores de Londres. [PAUSA 1s] Ya en enero de mil ochocientos cuarenta y dos, un decreto le prometió a esos acreedores la mitad de lo que dejara el guano. [PAUSA 0,6s] No se cumplió. [PAUSA 1,5s] La plata para pagar ya estaba en las islas. [PAUSA 0,8s] Lo que faltaba saber era quién se la iba a quedar. [PAUSA 2,5s] Próximo episodio: la deuda defraudada.
+El guano llegó a un país que había nacido con dos deudas. [PAUSA 0,6s] Una era con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron o dejaron de pagar. [PAUSA 0,6s] La otra era con los acreedores de Londres. [PAUSA 1s] En enero de mil ochocientos cuarenta y dos, un decreto les prometió a esos acreedores la mitad de lo que dejara el guano. [PAUSA 0,6s] El decreto nunca se cumplió: hubo varios cambios de gobierno, y el guano dejó mucho menos de lo que se esperaba. [PAUSA 1,5s] La deuda de adentro también se iba a pagar con el guano. [PAUSA 2,5s] Próximo episodio: la deuda defraudada.
 
-**Imagen:** la mesa con las dos pilas, adentro y afuera. Con «enero de mil ochocientos cuarenta y dos», un decreto que se tacha en rojo (no se cumplió). Con «las islas», el grabado de las islas entre las dos pilas. Tarjeta: **PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA**.
+**Imagen:** la mesa con las dos pilas, adentro y afuera, y el grabado de las islas entre ellas. Con «enero de mil ochocientos cuarenta y dos», un decreto que se tacha en rojo (nunca se cumplió). Con «La deuda de adentro también», una flecha del guano a la pila de adentro, la que abre el 0·3. Tarjeta: **PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA**.
 
-**Fuente:** síntesis de las escenas 1 a 4; Vizcarra (2011), p. 22, n. 22 («Un intento previo de reanudar los pagos de la deuda externa ocurrió en enero de 1842, cuando el gobierno peruano aprobó un decreto que prometía la mitad de los ingresos del guano a los tenedores de bonos británicos. El decreto nunca fue cumplido»).
+**Fuente:** síntesis de las escenas 1 a 4; Quiroz, p. 169 (la consolidación usó «los recursos públicos del guano»); Vizcarra (2011), p. 22, n. 22 («Un intento previo de reanudar los pagos de la deuda externa ocurrió en enero de 1842, cuando el gobierno peruano aprobó un decreto que prometía la mitad de los ingresos del guano a los tenedores de bonos británicos. El decreto nunca fue cumplido»).
 
 ---
 
@@ -187,5 +186,30 @@ En una pasada aparte, el Escribano revisó las VO contra Q, pp. 130–144, y **n
 - **Cronología.** El préstamo de 1822 venía después de Bolívar sin fecha, como si fuera una consecuencia. Ahora dice «Ya desde mil ochocientos veintidós».
 - **Términos.** «Plata» se usaba a la vez para el dinero y para el metal. Ahora el dinero es «dinero», y la plata es el metal: «adornos de plata», «plata y oro». «Bonistas» no se había presentado y pasa a «acreedores».
 - **Los tres [VERIFICAR] quedaron resueltos en la VO.** La parte interna de «casi no pagó ninguna de las dos» se apoya en Q, p. 169, que dice que esa deuda no había sido reconocida o estaba garantizada con billetes muy depreciados, salvo un grupo de acreedores privilegiados.
-- **Pendiente:** la fecha de inicio de la venta del guano. La VO no la dice.
+- **Resuelto:** la fecha de inicio de la venta del guano está ahora en la ESC 6 (Quiroz, p. 165; Vizcarra, pp. 10 y 26, n. 39).
 - **Decide Gerson:** las bajas de criterio. Por ejemplo, el gancho «Quiroz tiene un nombre para todo esto» y la densidad de la ESC 4, que tiene 5 nombres y 7 cifras.
+
+## Acta del Escribano sobre las escenas 6 y 7 (21 de noviembre de 2026)
+
+Gerson pidió la fecha en que se descubrió el negocio del guano y su importancia en el mundo de entonces: «desde qué año sabían que podían hacer culo de plata, se deberá de entender». El Escribidor escribió dos escenas nuevas con Quiroz, pp. 164–166, y con Vizcarra (2011).
+
+El Escribano **no dio fe** del borrador: 0 altas y 11 medias. Los problemas fueron:
+
+- «en Europa» y «el mejor estaba en el Perú» no están en las fuentes;
+- «pagó noventa mil pesos» sonaba a un solo pago, y fue en cuotas, en efectivo y en billetes;
+- «nueve años, sin límite» sonaba a una contradicción;
+- «la mitad» se usaba con un tercer sentido;
+- los sobornos estaban mal atribuidos;
+- Quirós y Quiroz suenan igual al oído;
+- había un «le» por «les»;
+- y el remate («La plata… ya estaba en las islas. Lo que faltaba saber era quién se la iba a quedar») era un gancho de presentador, que además sugería una causa que la fuente no da.
+
+**Se adoptó la versión corregida del Escribano.** El Escribidor le agregó una frase casi textual de Vizcarra, p. 10, para el contexto mundial: «Desde los años cuarenta, el Perú vendió grandes cantidades de guano a Europa y a Estados Unidos, donde se usaba como fertilizante».
+
+**Decide Gerson:**
+- el remate nuevo, «La deuda de adentro también se iba a pagar con el guano»;
+- que el nombre de Quirós no vaya en la voz, solo en pantalla.
+
+**Por confirmar:**
+- que Gamarra fuera presidente en noviembre de 1840 (sale de memoria);
+- que Pickett fuera diplomático de Estados Unidos (lo dice la nota de Quiroz).

@@ -735,21 +735,163 @@
     },
     {
       "s": "s06",
-      "titulo": "Cierre",
-      "espacio": "Mesa",
-      "cambia": "De «la independencia» a «la independencia dejó dos deudas sin pagar, y una costumbre».",
-      "entrada": "La mesa con las dos pilas.",
-      "salida": "El grabado de las islas del 0·3 y la tarjeta del próximo episodio.",
+      "titulo": "Un tesoro de excremento",
+      "espacio": "Islas (grabado del 0·3), mesa y mapa",
+      "cambia": "De «el Perú no tiene con qué pagar» a «el Perú descubre que tiene con qué pagar, y el negocio empieza mal desde el primer contrato».",
+      "entrada": "Del mar de la escena 5 a las islas: mismo mar, ahora con guano.",
+      "salida": "El mapa con las flechas del guano hacia Europa y Estados Unidos.",
       "planos": [
         {
           "id": "6.1",
           "frases": [
             0,
-            3
+            4
+          ],
+          "verbo": "descubrir",
+          "idea": "El guano: excremento de aves, abono de siempre; en los años treinta se descubre por qué rinde tanto.",
+          "imagen": "Las islas del 0·3 con sus aves y su capa de guano. Con «nitrógeno y fósforo», un frasco de laboratorio y las fichas N y P; al lado, el hueso y la sangre seca, más chicos.",
+          "pantalla": [
+            {
+              "en": 0,
+              "t": "Islas de Chincha · a unos 20 km de la costa (Vizcarra, p. 18)",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "acercamiento",
+            "motivo": "Acercarse a la capa de guano mientras se dice lo que contiene."
+          },
+          "efecto": "Aves y mar con su fase; las fichas químicas entran de a una.",
+          "sonido": "Aves y oleaje; tintineo de vidrio con el frasco.",
+          "personajes": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png",
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-islas.png"
+          ],
+          "falta": "Frasco de laboratorio del siglo XIX; hueso y sangre seca como abonos (ChatGPT).",
+          "respiro": 1
+        },
+        {
+          "id": "6.2",
+          "frases": [
+            5,
+            9
+          ],
+          "verbo": "regalar",
+          "idea": "Noviembre de 1840: Gamarra y Castilla dan el primer contrato del guano por casi nada.",
+          "imagen": "Presentaciones de Gamarra y de Castilla. Sus medallones caen sobre el contrato. La isla entera a un lado; con «noventa mil pesos», la cifra sola y chica frente a la isla. En la etiqueta del contrato, «Quirós, Allier y socios» (la voz no nombra a Quirós, para no confundirlo con Quiroz).",
+          "pantalla": [
+            {
+              "en": 5,
+              "t": "Agustín Gamarra, presidente · Ramón Castilla, ministro de Hacienda · noviembre de 1840",
+              "ficha": true
+            },
+            {
+              "en": 9,
+              "t": "90 000 pesos (18 000 libras) por 9 años ≈ 10 millones de soles de hoy* · * conversión aproximada"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Dos presentaciones; la cifra se escribe en tinta, chica.",
+          "sonido": "Soplo y tic; pluma.",
+          "respiro": 1,
+          "falta": "Medallones de Gamarra y de Castilla (el de Castilla ya está pedido para el 0·3)."
+        },
+        {
+          "id": "6.3",
+          "frases": [
+            10,
+            11
+          ],
+          "verbo": "informar",
+          "idea": "1841: un diplomático de EE. UU. informa que en Inglaterra se vende con al menos 50 % de ganancia.",
+          "imagen": "Ficha del diplomático. Una tonelada de guano en una balanza; del otro lado, diez dólares, y debajo la ganancia «≥ 50 %», sin partir el precio.",
+          "pantalla": [
+            {
+              "en": 10,
+              "t": "J. C. Pickett · diplomático de EE. UU. · Lima, 27 de noviembre de 1841",
+              "ficha": true
+            },
+            {
+              "en": 11,
+              "t": "10 dólares la tonelada · ganancia neta ≥ 50 %"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "La balanza se inclina hacia el dinero, con peso.",
+          "sonido": "Monedas.",
+          "falta": "Balanza y saco de una tonelada (el saco ya está: obj-02).",
+          "respiro": 1.2
+        },
+        {
+          "id": "6.4",
+          "frases": [
+            12,
+            13
+          ],
+          "verbo": "denunciar",
+          "idea": "El contrato se anula en 1841; los siguientes se consiguen con sobornos.",
+          "imagen": "El contrato se tacha en rojo; entran otros contratos con más etiquetas. Debajo, «sobornos a las más altas autoridades», según fuentes de la época que cita Quiroz.",
+          "pantalla": [
+            {
+              "en": 13,
+              "t": "Q, p. 165 · «fuentes independientes»"
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Tachado rojo del corrector.",
+          "sonido": "Tachado.",
+          "objetos": [
+            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj-09-folio-sencillo.png"
+          ],
+          "respiro": 1.2
+        },
+        {
+          "id": "6.5",
+          "frases": [
+            14
+          ],
+          "verbo": "mostrar",
+          "idea": "Desde los años cuarenta, el guano se vende en Europa y en Estados Unidos.",
+          "imagen": "El mapa: flechas de las islas a Gran Bretaña, Francia y Estados Unidos. El rótulo del peso que llegó a tener.",
+          "pantalla": [
+            {
+              "en": 14,
+              "t": "1854–1871: el guano, 60 % de lo que el Perú vendía a Gran Bretaña (Vizcarra, p. 19)"
+            }
+          ],
+          "camara": {
+            "tipo": "recorrido",
+            "motivo": "Seguir el guano desde las islas hasta Europa y Estados Unidos: el tamaño del negocio."
+          },
+          "efecto": "Las flechas salen en cascada.",
+          "sonido": "Tic por flecha.",
+          "respiro": 1.5
+        }
+      ]
+    },
+    {
+      "s": "s07",
+      "titulo": "Cierre",
+      "espacio": "Mesa",
+      "cambia": "De «la independencia» a «la independencia dejó dos deudas sin pagar, y por fin aparece con qué pagarlas».",
+      "entrada": "Del mapa a la mesa.",
+      "salida": "Tarjeta del próximo episodio.",
+      "planos": [
+        {
+          "id": "7.1",
+          "frases": [
+            0,
+            2
           ],
           "verbo": "juntar",
-          "idea": "El Perú nació con dos deudas, y casi no pagó ninguna durante más de veinte años.",
-          "imagen": "Las dos pilas, una a cada lado: adentro (colonia y guerra) y afuera (Londres). Debajo, una línea de 1826 a 1849, vacía.",
+          "idea": "El guano llega a un país con dos deudas.",
+          "imagen": "La mesa con las dos pilas, adentro y afuera, y el grabado de las islas entre ellas.",
           "pantalla": [
             {
               "en": 1,
@@ -762,36 +904,55 @@
           ],
           "camara": {
             "tipo": "acercamiento",
-            "motivo": "Abrirse para ver las dos pilas juntas: la imagen que resume el episodio."
+            "motivo": "Abrirse para ver las dos pilas y las islas: la imagen que resume el episodio."
           },
-          "efecto": "Las dos pilas quietas.",
+          "efecto": "Todo quieto.",
           "sonido": "La música sostiene.",
           "respiro": 1
         },
         {
-          "id": "6.2",
+          "id": "7.2",
           "frases": [
-            4,
-            5
+            3,
+            4
           ],
-          "verbo": "anunciar",
-          "idea": "Hasta que encontró con qué pagar: el guano.",
-          "imagen": "Con «guano», el grabado de las islas del 0·3 aparece entre las dos pilas. Tarjeta: PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA.",
+          "verbo": "incumplir",
+          "idea": "1842: un decreto promete a Londres la mitad del guano; nunca se cumple.",
+          "imagen": "Un decreto entra hacia la pila de afuera y el corrector lo tacha en rojo.",
           "pantalla": [
             {
-              "en": 5,
+              "en": 3,
+              "t": "Decreto · enero de 1842 (Vizcarra, p. 22, n. 22)",
+              "ficha": true
+            }
+          ],
+          "camara": {
+            "tipo": "quieta"
+          },
+          "efecto": "Tachado rojo.",
+          "sonido": "Pluma; tachado.",
+          "respiro": 1
+        },
+        {
+          "id": "7.3",
+          "frases": [
+            5,
+            6
+          ],
+          "verbo": "anunciar",
+          "idea": "La deuda de adentro también se pagará con el guano.",
+          "imagen": "Una flecha ocre va del guano a la pila de adentro, la que abre el 0·3. Tarjeta: PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA.",
+          "pantalla": [
+            {
+              "en": 6,
               "t": "Próximo · 1850 · La deuda defraudada"
             }
           ],
           "camara": {
             "tipo": "quieta"
           },
-          "efecto": "Las islas entran por capas (mar, isla, aves), como en el 0·3.",
-          "sonido": "Mar y aves; el tema del canal con la tarjeta.",
-          "personajes": [
-            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-mar.png",
-            "../../public/videos/003-la-deuda-defraudada/imagenes/chatgpt/obj01-06-islas.png"
-          ],
+          "efecto": "La flecha se dibuja lenta, solemne.",
+          "sonido": "El tema del canal con la tarjeta.",
           "respiro": 2.5
         }
       ]

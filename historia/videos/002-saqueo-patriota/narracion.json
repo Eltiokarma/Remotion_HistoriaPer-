@@ -11,8 +11,8 @@
  "respiro_minimo": 1.0,
  "nota_respiro": "v4 encadena los párrafos (las pausas de 1 a 1,2 s salían de ~0,45 s): desde 1 s se garantizan con el aire de la toma, para que cada párrafo tenga su corte al editar.",
  "cortes": {
-  "s06": {
-   "4": 2.5
+  "s07": {
+   "5": 2.5
   }
  },
  "frases": {
@@ -226,23 +226,89 @@
   ],
   "s06": [
    [
-    "[calm] [teacher] Así, el Perú independiente nació con dos deudas.",
+    "[calm] [storytelling] En las islas de la costa peruana había grandes depósitos de guano: el excremento de las aves marinas.",
     0.6
    ],
    [
-    "[calm] Una con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron y no pagaron.",
+    "[calm] El clima muy seco de la costa ayudaba a que se acumulara.",
     0.6
    ],
    [
-    "[calm] Otra con los acreedores de Londres.",
-    1.0
+    "[calm] [warm] En el Perú se usaba como abono desde tiempos muy antiguos.",
+    0.8
    ],
    [
-    "[serious] [low voice] Durante más de veinte años, el Estado casi no pagó ninguna de las dos.",
+    "[curious] [teacher] En la década de mil ochocientos treinta, unos experimentos encontraron que tenía mucho nitrógeno y fósforo.",
+    0.6
+   ],
+   [
+    "[clear] Eso le daba ventaja sobre otros abonos, como el hueso o la sangre seca.",
+    1.2
+   ],
+   [
+    "[serious] [measured] En noviembre de mil ochocientos cuarenta, el gobierno del presidente Gamarra, con Ramón Castilla como ministro de Hacienda, otorgó el primer contrato del guano.",
+    0.6
+   ],
+   [
+    "[dry] El Estado necesitaba dinero en efectivo, porque se acercaba una guerra con Bolivia.",
+    0.6
+   ],
+   [
+    "[dry] [measured] Durante nueve años, solo una sociedad podía sacar guano y venderlo en Europa, en la cantidad que quisiera.",
+    0.6
+   ],
+   [
+    "[dry] La formaban un empresario peruano y tres socios franceses.",
+    0.6
+   ],
+   [
+    "[dry] [ironic] La sociedad pagó solo noventa mil pesos, en cuotas, en efectivo y en billetes.",
     1.5
    ],
    [
-    "[calm] [warm] Hasta que encontró con qué pagar: el guano de unas islas.",
+    "[serious] [measured] Un año después, un diplomático de Estados Unidos informó que en Inglaterra la tonelada de guano se vendía a diez dólares.",
+    0.6
+   ],
+   [
+    "[serious] Según su informe, la ganancia neta era de al menos el cincuenta por ciento.",
+    0.8
+   ],
+   [
+    "[dry] [measured] Ese mismo año, el contrato se canceló y lo reemplazaron otros, con más socios peruanos y extranjeros.",
+    0.6
+   ],
+   [
+    "[serious] [restrained anger] Varias fuentes de la época cuentan que se pagaron sobornos a las más altas autoridades para conseguir los contratos del guano.",
+    1.0
+   ],
+   [
+    "[calm] [teacher] Desde los años cuarenta, el Perú vendió grandes cantidades de guano a Europa y a Estados Unidos, donde se usaba como fertilizante.",
+    1.5
+   ]
+  ],
+  "s07": [
+   [
+    "[calm] [teacher] El guano llegó a un país que había nacido con dos deudas.",
+    0.6
+   ],
+   [
+    "[calm] Una era con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron o dejaron de pagar.",
+    0.6
+   ],
+   [
+    "[calm] La otra era con los acreedores de Londres.",
+    1.0
+   ],
+   [
+    "[measured] En enero de mil ochocientos cuarenta y dos, un decreto les prometió a esos acreedores la mitad de lo que dejara el guano.",
+    0.6
+   ],
+   [
+    "[dry] [weary] El decreto nunca se cumplió: hubo varios cambios de gobierno, y el guano dejó mucho menos de lo que se esperaba.",
+    1.5
+   ],
+   [
+    "[serious] [low voice] [slowly] La deuda de adentro también se iba a pagar con el guano.",
     2.5
    ],
    [

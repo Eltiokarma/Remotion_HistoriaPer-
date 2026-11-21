@@ -38,6 +38,7 @@ Pedido de Gerson: toda cifra en libras esterlinas, y también las grandes cifras
 | 100 000 pesos (Riva-Agüero) | ≈ 11 millones |
 | 200 000 pesos (Gutiérrez de la Fuente) | ≈ 23 millones |
 | 27 millones de dólares en plata y oro (1819–1825) | ≈ 3100 millones |
+| 90 000 pesos (18 000 libras), primer contrato del guano, 1840 | ≈ 10 millones (por las dos vías da entre 10 y 11) |
 
 **Límites.**
 
