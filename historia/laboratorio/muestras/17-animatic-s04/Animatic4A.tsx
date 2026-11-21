@@ -150,6 +150,8 @@ export const Animatic4A: React.FC = () => {
   const puntoCorte = getPointAtLength(rutaPago, largoPago * 0.42) ?? { x: lima[0], y: lima[1] };
   const saleHistoria = k(F(17) - 0.6, 0.6, 'natural');
   // ── 4.3b · las dos casas, el cambio y los dos contratos
+  // A8: el canje se ve mientras la voz lo nombra (antes, 7,5 s de mapa vacío hasta «Uribarren»)
+  const canjeIn = k(F(17) + 0.1, 0.6, 'pesado'), canje = k(F(17) + 1.2, 1.3, 'solemne'), canjeSale = k(P.entregaba - 0.6, 0.5, 'natural');
   const rUri = k(P.uribarren - 0.1, 0.4, 'natural'), rMon = k(P.montane - 0.1, 0.4, 'natural');
   const rutaIda = arco(paris, lima), rutaVuelta = arco(lima, paris);
   const ida = k(P.entregaba - 0.2, 1.4, 'solemne'), vuelta = k(P.daba - 0.15, 1.4, 'solemne');
@@ -409,6 +411,18 @@ export const Animatic4A: React.FC = () => {
             <Rotulo x={paris[0] - 30} y={paris[1] + 18} k={rUri} derecha size={22}>URIBARREN ET CIE. · PARÍS</Rotulo>
             <Rotulo x={120} y={110} k={rMon} size={22}>MONTANÉ ET CIE.</Rotulo>
             <Rotulo x={120} y={160} k={rMon} size={16}>CASAS A LAS QUE EL ESTADO ENCARGABA LA VENTA DEL GUANO</Rotulo>
+            {canjeIn > 0 && canjeSale < 1 ? (
+              <div style={{ position: 'absolute', inset: 0, opacity: canjeIn * (1 - canjeSale) }}>
+                <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+                  <path d="M 900 470 Q 990 420 1080 470" fill="none" stroke={OCRE} strokeWidth={4} strokeDasharray="200" strokeDashoffset={200 * (1 - canje)} strokeLinecap="round" />
+                  {canje > 0.95 ? <path d="M 1064 456 L 1082 471 L 1060 480" fill="none" stroke={OCRE} strokeWidth={4} strokeLinecap="round" /> : null}
+                </svg>
+                <ValeChico x={mix(720, 760, canjeIn)} y={mix(520, 490, canjeIn)} w={140} giro={-3} />
+                {canje > 0 ? <Img src={img('obj-10-bono-deuda-externa')} style={{ position: 'absolute', left: mix(1060, 1100, canje), top: 490, width: 150, height: 100, filter: sombra(1), opacity: canje, transform: `rotate(${mix(6, 2, canje)}deg)` }} /> : null}
+                <Rotulo x={830} y={610} k={canjeIn} centro size={16}>VALE · DEUDA INTERNA</Rotulo>
+                <Rotulo x={1175} y={610} k={canje} centro size={16}>BONO NUEVO · DEUDA EXTERNA</Rotulo>
+              </div>
+            ) : null}
             {ida > 0 && ida < 1 ? <ValeChico x={pIda.x - 50} y={pIda.y - 33} w={100} /> : null}
             {vuelta > 0 && vuelta < 1 ? <Img src={img('obj-10-bono-deuda-externa')} style={{ position: 'absolute', left: pVuelta.x - 50, top: pVuelta.y - 33, width: 100, height: 67, filter: sombra(1) }} /> : null}
             {voz >= MENDIBURU.t0 + PRES_VUELA ? (
