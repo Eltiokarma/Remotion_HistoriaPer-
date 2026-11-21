@@ -79,3 +79,22 @@ Gerson preguntó cómo un vale podía cambiarse por un bono de deuda externa y a
 **Cuadros revisados:** la etiqueta del contrato de Londres se salía del cuadro, así que se acortó a «Contrato con Uribarren».
 
 Las partes 4.1 y 4.2 no cambian: solo se movieron los segundos de cada palabra a la toma nueva.
+
+### A5: cámara en el mapa
+
+En A4, el tiempo quieto subió al 55 %. El tramo muerto más largo eran unos 10 s sobre el mapa, entre «deuda externa» y la llegada de las casas. A5 agrega un recorrido de cámara con motivo: el mapa arranca cerca de Lima, a escala 1,35, y se abre hacia Europa con «acreedores de fuera del país». Antes de «la mitad», un acercamiento lento junta los dos contratos.
+
+| Versión | Duración | Tiempo quieto | Tramos quietos de más de 2 s | Render |
+|---|---:|---:|---:|---:|
+| A3 | 82,6 s | 48 % | 6 | 289,9 s |
+| A4 | 109,8 s | 55 % | 9 | 415,4 s |
+| A5 | 109,8 s | 49 % | 7 | 462,9 s |
+
+Los tramos quietos de A5 son:
+
+- los respiros;
+- la palabra del episodio;
+- tres esperas de entre 2,2 y 4,9 s:
+  - antes de «cinco»;
+  - entre el regreso del bono y la presentación de Mendiburu;
+  - el tramo de 61,3 a 66,2 s, antes de que aparezcan las casas.
