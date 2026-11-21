@@ -2,7 +2,7 @@
 
 **Propuesta, 21 de noviembre de 2026.** Decisiones de Gerson:
 - **La cuenta no es un episodio aparte.** Cada video muestra la cuenta de su época, con los cuadros del apéndice de Quiroz (pp. 535–554) y los de la colonia (cap. 1, cuadros 1.1 y 1.2).
-- **«¿Se puede medir?» tampoco es un episodio aparte.** Queda implícito en los videos: cada vez que aparece una cifra se dice de dónde sale, y las objeciones se responden con el caso que las ilustra.
+- **«¿Se puede medir?» tampoco es un episodio aparte.** El método se explica una vez, en el Ep. 1, y en los demás videos queda implícito: cada vez que aparece una cifra se dice de dónde sale, y las objeciones se responden con el caso que las ilustra.
 - **Los tramos de la serie se cortan por lo que se reparte en cada época** (un recurso, un contrato, un botín), no por presidentes.
 
 **Hasta dónde llega el libro:**
@@ -37,7 +37,7 @@
 - **Una cifra por video, la de su tramo,** en pantalla al cierre del tramo. Se traduce a algo que se imagina: «de cada cien que gastaba el Estado…» o «tantas veces el presupuesto».
 - **Una sola serie por comparación.** Las décadas se comparan con el A.3 o el A.4 y los gobiernos con el A.7, sin mezclarlos (acta del Escribano sobre la estructura v1, n.º 10).
 - **Las cautelas de Quiroz van siempre:** «estimado», «provisional», «el equivalente a». El costo incluye la inversión que no llegó, y por eso puede pasar del 100 % del gasto.
-- **El método se cuenta una vez, en el primer video que da una cifra (el Ep. 2),** en dos frases: qué se suma (lo desviado y la inversión perdida) y contra qué se compara (el gasto del Estado y el PBI). Después solo se recuerda.
+- **El método se cuenta una vez, en el Ep. 1 (ESC 9),** que es el primer video con una cifra: qué se suma (los fondos desviados, directos e indirectos) y contra qué se compara (el gasto del Estado y el PBI). En el Ep. 2 se agrega la inversión que no llegó. Después solo se recuerda.
 
 ## Adónde va lo que iba a ser *¿Se puede medir?*
 
