@@ -52,7 +52,7 @@ El 0·3 se partió en dos (episodios 3 y 4) porque así lo recomendaron el Escri
 | El crédito público de 1777, reestructurado en 1815 (pp. 115 y 119) | Ep. 1 ESC 10 (qué es) | Ep. 2 ESC 1 (cuánto: más de 14 millones, p. 136) |
 | Los caudillos heredan la influencia de los oficiales coloniales (p. 127) | Ep. 1 ESC 10 | Ep. 2 ESC 3: Bolívar y Sucre forman la primera generación de caudillos (pp. 133–134) |
 | El método de la cuenta | Ep. 1 ESC 9 (se explica) | todos los demás (solo se recuerda) |
-| Echenique, joven oficial premiado con tierras confiscadas (Q, p. 132) | Ep. 2 ESC 2 | Ep. 3: es el presidente de 1851 |
+| Echenique, entre los «oficiales de alto rango» premiados con tierras confiscadas (Q, pp. 131–132) | Ep. 2 ESC 2 | Ep. 3: es el presidente de 1851 |
 | Quirós, socio de Kinder y de Robertson en Londres, 1822–1825 (p. 154, n. 69) | Ep. 2 ESC 4 | Ep. 2 ESC 7: el primer contrato del guano |
 | Gibbs saca plata de contrabando en 1825, según Witt (p. 142, n. 33) | Ep. 2 ESC 6 | Ep. 2 ESC 8 (consignatario); Ep. 4 ESC 6 (prórroga secreta de 1853, sin castigo en 1856, p. 168) |
 | Montané, socio de Gibbs en los años cuarenta (V, n. 42) | Ep. 2 ESC 8 | Ep. 4: la conversión |
@@ -348,7 +348,7 @@ El Ep. 3 da todos estos conceptos por sabidos.
   - San Martín y Monteagudo expropian a los grandes comerciantes.
   - «Algunos peruanos indignados» acusan a Monteagudo (p. 131).
   - Las haciendas confiscadas, unos 2 millones, van a oficiales que pedían recompensa.
-  - Con los años, entre los premiados estuvo un joven oficial: José Rufino Echenique (p. 132; «Eventualmente», sin fecha). Es la semilla del presidente de 1851.
+  - Entre los oficiales premiados estuvo José Rufino Echenique (pp. 131–132; «Eventualmente», sin fecha ni edad). Es la semilla del presidente de 1851.
 - **En pantalla:** Cochrane y la plata en barras; Sánchez Carrión y sus propiedades. El caso de Juan Delgado en Sayán se precisa con el expediente al escribir.
 - **Palabra del episodio**, quieta.
 - **→ POR ESO** lo tomado dejó reclamos (p. 135).
@@ -478,7 +478,7 @@ Funde la ESC 1 y la ESC 2 de la versión 1.
 - **Hechos:**
   - Recuerda el cierre del Ep. 2: el guano da con qué pagar, y la pila de reclamos de adentro espera.
   - Presenta la consolidación y el vale.
-  - Echenique, el joven oficial premiado del Ep. 2, llega a presidente en 1851. Gastó en ganar la elección más de lo que podía ganar como presidente, y los consignatarios le hacían préstamos personales, según Clay (p. 168).
+  - Echenique, uno de los oficiales premiados del Ep. 2, llega a presidente en 1851. Gastó en ganar la elección más de lo que podía ganar como presidente, y los consignatarios le hacían préstamos personales, según Clay (p. 168).
   - Desde fines de los años cuarenta, los créditos de la independencia se fueron garantizando con vales, antes de la ley (p. 170).
   - Reclamos que antes de 1850 «prácticamente carecían de valor» se compraban «a muy bajo precio» (p. 170).
 - **Cautela en voz:** la fuente no dice que la ley se escribiera para el fraude ni cuándo empezaron las compras; dice «antes de la ley».
