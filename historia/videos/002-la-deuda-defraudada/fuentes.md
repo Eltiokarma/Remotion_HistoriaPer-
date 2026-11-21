@@ -189,7 +189,23 @@ Cuatro PNG de 1024 × 1024 con el mismo formato, generados por Gerson con ChatGP
 
 Tres PNG transparentes generados por Gerson con ChatGPT con [diseno/prompts-chatgpt-folios-s03.md](diseno/prompts-chatgpt-folios-s03.md), en la galería (fuera de git):
 - `obj-13-carta-elias.png`: carta privada doblada en tres, con resto de lacre y una rúbrica.
-- `obj-14-oficio-echenique.png`: oficio en papel sellado, con un sello impreso genérico. No es el escudo del Perú ni un sello real de 1852 [VERIFICAR si se quiere el sello exacto].
+- `obj-14-oficio-echenique.png`: oficio en papel sellado, con un sello impreso genérico. No es el escudo del Perú ni un sello real de 1852 (ver «Búsqueda del sello de 1852», abajo).
 - `obj-15-recibo-novoa.png`: recibo angosto arrancado de un talonario.
 
 Ninguno tiene texto legible: son papeles genéricos de la época, no facsímiles. Al recibirlos, el agente recortó cada imagen a su contorno con 6 px de margen (el recibo quedó en 575 × 1434). Se usan en la versión F del animatic de la escena 3 (laboratorio 16).
+
+### Búsqueda del sello de 1852 (21 de noviembre de 2026)
+
+Gerson pidió buscar el sello real.
+
+**No se encontró ninguna imagen de un pliego de papel sellado peruano de 1850 a 1855 que tenga licencia clara.** Lo que sí está documentado:
+
+- **Inventario del Fondo Riva-Agüero, sección República (IRA-PUCP, PDF del 7 de agosto de 2020).** Describe papeles de esos años, pero no tiene imágenes:
+  - FRAR-0168 (Lima, enero de 1851): «Papel sellado, escudo de la República, sellos de la prefectura del departamento de Lima y del consulado de Francia en Lima».
+  - FRAR-0144 (Lima, 1856): «Papel sellado de dos reales en el bienio de 1856 - 1857». El papel sellado se emitía por bienio y por valor.
+  - https://ira.pucp.edu.pe/wp-content/uploads/2020/06/FRAR-SECCI%C3%93N-REP%C3%9ABLICA-1.pdf
+- **Wikimedia Commons, Category:Revenue_stamps_of_Peru.** Lo más antiguo son timbres adhesivos de 1866 a 1869, en dominio público: `Peru_1866_F4.jpg` y `Peru_revenue_stamps_1860s.JPG`. Llevan un óvalo con «REPÚBLICA PERUANA», el valor y los años, y escudos pequeños en las esquinas. Son de otra época y otro objeto: estampillas pegadas, no el sello impreso del pliego.
+- **Repositorio Bicentenario.** Tiene expedientes digitalizados sobre papel sellado (1825, 1850), pero no fue accesible desde el contenedor.
+- **Escudo de la República (1825), en dominio público en Commons.** `Gran_Sello_de_la_República_del_Perú.svg` sirve de base para una reconstrucción.
+
+[VERIFICAR] Falta saber si una respuesta del gobierno, como el oficio de Echenique, iba en papel sellado. Lo documentado en el inventario son trámites de particulares: escrituras, partidas y solicitudes.
