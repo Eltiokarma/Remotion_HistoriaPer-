@@ -437,6 +437,7 @@ con sus palabras la idea central? Si no, el video expuso pero no enseñó.
 - Si un pedido produciría un resultado robótico según este archivo (todo animado, música
   constante, planos iguales, voz sin pausas), dilo y propone la alternativa.
 - No inventes datos históricos. Si falta un dato, márcalo `[VERIFICAR]` y sigue.
+- **Auditar cada entrega visual con los skills.** Antes de entregar un animatic, una escena o un storyboard, se revisa con `estructura-visual-motion` (y con `direccion-historia` si toca guion o sonido). Se entrega la versión mejorada junto a la anterior, con la auditoría escrita: qué falló, qué se cambió y cómo se midió. Pedido de Gerson el 2026-11-21.
 - Lecturas de referencia detrás de estas reglas: Murch (*En el momento del parpadeo*), Block (*The
   Visual Story*), Chion (*La audiovisión*), McKee (*El guion*), Thomas & Johnston (*The Illusion of
   Life*), Williams (*The Animator's Survival Kit*), Nichols (*Introducción al documental*), Mayer

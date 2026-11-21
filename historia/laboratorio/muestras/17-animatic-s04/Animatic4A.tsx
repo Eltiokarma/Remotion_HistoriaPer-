@@ -35,6 +35,7 @@ const P = {
   junio: 7.38, octubre: 7.9, cinco: 12.1, veinticuatro: 12.72, uno: 24.82, pocas: 28.74, docenas: 33.0,
   consolidados: 38.2, externa: 52.66, londres: 56.7, manuel: 57.34, mitad: 59.54, mercado: 62.24,
   cuarenta: 64.98, casi: 68.68, manchado: 74.56, limpio: 76.22,
+  estado: 17.66, diferencia: 20.98, forma: 42.96, nombrando: 45.3, robo: 47.4,
 };
 
 const MENDIBURU: Presentacion = { persona: 'mendiburu', nombre: 'MANUEL DE MENDIBURU', rol: 'en Londres', t0: P.manuel - 0.1 };
@@ -49,9 +50,9 @@ const PILA_X = 1430, PILA_BASE = 990, PILA_W = 300, PASO = 26;
 const VALE_ASP = 1024 / 1536;
 
 /** Texto sobre la mesa: siempre sobre su tira de cartón (regla de la escena 3). */
-const Rotulo = ({ x, y, k, children, size = 22, centro = false }: { x: number; y: number; k: number; children: React.ReactNode; size?: number; centro?: boolean }) =>
+const Rotulo = ({ x, y, k, children, size = 22, centro = false, derecha = false }: { x: number; y: number; k: number; children: React.ReactNode; size?: number; centro?: boolean; derecha?: boolean }) =>
   k <= 0 ? null : (
-    <div style={{ position: 'absolute', left: x, top: y, transform: `translateX(${centro ? '-50%' : '0'}) rotate(-1.2deg)`, opacity: k }}>
+    <div style={{ position: 'absolute', left: x, top: y, transform: `translateX(${centro ? '-50%' : derecha ? '-100%' : '0'}) rotate(-1.2deg)`, opacity: k }}>
       <div style={{ ...TIRA, transform: 'none', whiteSpace: 'nowrap', fontFamily: fuente.mono, fontSize: size, letterSpacing: '0.12em', color: PAPEL, display: 'flex', alignItems: 'center', gap: 10 }}>
         <span style={{ width: 9, height: 9, background: ROJO, display: 'inline-block' }} />{children}
       </div>
@@ -142,6 +143,20 @@ export const Animatic4A: React.FC = () => {
 
   const enMapa = voz >= P.externa + 0.6 && voz < P.mercado + 0.4;
 
+  // ── más información en pantalla (Gerson, 21 de noviembre de 2026: «en partes tiene poco movimiento»)
+  // 4.1: los años de la pila (Q, p. 170: 5 millones en 1851, 24 en 1852), su valor en soles de hoy y la diferencia
+  const top = (i: number) => PILA_BASE - PILA_W * VALE_ASP - i * PASO;
+  const sale41der = k(F(5) - 0.2, 0.8, 'tenso');
+  const r5 = k(P.cinco + 0.3, 0.4, 'natural'), r24 = k(P.veinticuatro + 1.1, 0.4, 'natural'), rSoles = k(Ffin(2) - 0.2, 0.4, 'natural');
+  const llave = k(P.diferencia - 0.1, 0.7, 'pesado');
+  // 4.1: la deuda la tendría que pagar el Estado: el edificio entra y la flecha roja (la culpa: la deuda inflada hacia el Estado)
+  const estadoIn = k(P.estado - 0.3, 0.7, 'pesado'), estadoSale = k(P.uno - 0.8, 0.6, 'tenso');
+  const flecha = k(P.estado + 0.1, 1.0, 'natural') * (1 - estadoSale);
+  // 4.2: de la ley a las personas; con «robo político», la red se vuelve roja
+  const rLey = k(P.forma - 0.1, 0.4, 'natural'), rFlecha = k(P.nombrando - 0.1, 0.6, 'natural');
+  // 4.3: cuánto ganaba un papel al cambiarse (40 → casi 100: ≈ 2,5 veces)
+  const veces = k(F(12) + 0.2, 0.7, 'natural') * (1 - lava);
+
   return (
     <AbsoluteFill style={{ background: '#1d1813' }}>
       <AbsoluteFill style={{ filter: foco > 0.001 ? `blur(${9 * foco}px) brightness(${1 - 0.35 * foco})` : undefined }}>
@@ -176,9 +191,9 @@ export const Animatic4A: React.FC = () => {
               const cae = tramo(voz, c.t0, 0.32, 'tenso');
               if (cae <= 0) return null;
               const esLa = c === abre;
-              const x = esLa ? mix(c.x, 470, sacaUna) : c.x;
-              const y = esLa ? mix(c.y, 120, sacaUna) : mix(c.y - 260, c.y, cae);
-              const w = esLa ? mix(170, 640, sacaUna) : 170;
+              const x = esLa ? mix(c.x, 240, sacaUna) : c.x;
+              const y = esLa ? mix(c.y, 110, sacaUna) : mix(c.y - 260, c.y, cae);
+              const w = esLa ? mix(170, 700, sacaUna) : 170;
               const src = esLa && abierta > 0.5 ? 'obj-07-carpeta-abierta' : 'obj-07-carpeta-cerrada';
               const flip = esLa ? Math.abs(1 - 2 * abierta) : 1;   // se abre: se angosta y vuelve
               return (
@@ -186,6 +201,32 @@ export const Animatic4A: React.FC = () => {
               );
             })}
           </div>
+
+          {/* 4.1 · el Estado deudor y la flecha de la deuda */}
+          {estadoIn > 0 && estadoSale < 1 ? (
+            <>
+              <Papel src={img('obj01-08-estado')} p={pose(mix(-600, 120, estadoIn) - 800 * estadoSale, 150, 430)} aspecto={1024 / 1536} capas={capas} dueno="ESTADO PERUANO · DEUDOR" />
+              <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+                <path d="M 1410 400 Q 1000 330 590 300" fill="none" stroke={ROJO} strokeWidth={6} strokeDasharray="1000" strokeDashoffset={1000 * (1 - flecha)} strokeLinecap="round" />
+                {flecha > 0.95 ? <path d="M 614 280 L 590 300 L 616 316" fill="none" stroke={ROJO} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" /> : null}
+              </svg>
+            </>
+          ) : null}
+          {/* 4.1 · la pila con sus años, su valor de hoy y la diferencia */}
+          {voz < F(5) + 1 ? (
+            <div style={{ position: 'absolute', inset: 0, transform: `translateX(${900 * sale41der}px)` }}>
+              <Rotulo x={PILA_X - 24} y={top(4) - 6} k={r5} derecha size={20}>5 MILLONES · 1851</Rotulo>
+              <Rotulo x={PILA_X - 24} y={top(23) - 18} k={r24} derecha size={20}>24 MILLONES · 1852</Rotulo>
+              <Rotulo x={PILA_X - 24} y={top(23) + 32} k={rSoles} derecha size={18}>≈ 3 400 MILLONES DE SOLES DE HOY*</Rotulo>
+              <Rotulo x={PILA_X - 24} y={PILA_BASE - 30} k={rSoles} derecha size={14}>* CONVERSIÓN APROXIMADA</Rotulo>
+              {llave > 0 ? (
+                <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+                  <path d={`M ${PILA_X - 8} ${top(4)} h -22 V ${mix(top(4), top(23), llave)} h 22`} fill="none" stroke={PAPEL} strokeWidth={3} />
+                </svg>
+              ) : null}
+              <Rotulo x={PILA_X - 44} y={(top(4) + top(23)) / 2 + 30} k={k(P.diferencia + 0.4, 0.4, 'natural')} derecha size={20}>LA DIFERENCIA: 19 MILLONES</Rotulo>
+            </div>
+          ) : null}
 
           {/* la pila de vales: crece, se reparte y se junta en tres manos */}
           {voz < F(9) + 1.2
@@ -210,7 +251,7 @@ export const Animatic4A: React.FC = () => {
                 return a <= 0 ? null : (
                   <g key={i} opacity={a}>
                     <line x1={r.cx} y1={r.cy} x2={mix(r.cx, r.x, a)} y2={mix(r.cy, r.y, a)} stroke={PAPEL} strokeWidth={1.4} opacity={0.45} />
-                    <circle cx={r.x} cy={r.y} r={11} fill={PAPEL} stroke={TINTA} strokeWidth={2} />
+                    <circle cx={r.x} cy={r.y} r={11} fill={tramo(voz, P.robo + i * 0.03, 0.3, 'natural') > 0.5 ? ROJO : PAPEL} stroke={TINTA} strokeWidth={2} />
                   </g>
                 );
               })}
@@ -219,6 +260,13 @@ export const Animatic4A: React.FC = () => {
           {voz >= F(8) && voz < F(9) + 1.2 ? (
             <div style={{ position: 'absolute', left: 0, top: 0, transform: `translateX(${-1500 * sale42}px)` }}>
               <Rotulo x={760} y={70} k={tramo(voz, F(8), 0.4, 'natural')} size={30}>LOS CONSOLIDADOS</Rotulo>
+              <Rotulo x={130} y={76} k={rLey} size={22}>CONSOLIDACIÓN · LEY DE 1850</Rotulo>
+              {rFlecha > 0 ? (
+                <svg width={1920} height={200} style={{ position: 'absolute', left: 0, top: 0 }}>
+                  <path d={`M 590 98 L ${mix(590, 735, rFlecha)} 98`} stroke={PAPEL} strokeWidth={3} />
+                  {rFlecha > 0.95 ? <path d="M 722 88 L 737 98 L 722 108" fill="none" stroke={PAPEL} strokeWidth={3} /> : null}
+                </svg>
+              ) : null}
             </div>
           ) : null}
 
@@ -276,6 +324,15 @@ export const Animatic4A: React.FC = () => {
                 </div>
               ),
             )}
+          </>
+        ) : null}
+        {veces > 0 ? (
+          <>
+            <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+              <path d="M 506 880 Q 1078 1010 1651 880" fill="none" stroke={PAPEL} strokeWidth={3} strokeDasharray="1300" strokeDashoffset={1300 * (1 - veces)} />
+              {veces > 0.95 ? <path d="M 1632 872 L 1652 880 L 1638 896" fill="none" stroke={PAPEL} strokeWidth={3} /> : null}
+            </svg>
+            <Rotulo x={1078} y={952} k={k(F(12) + 0.6, 0.4, 'natural') * (1 - lava)} centro size={22}>AL CAMBIARLO POR BONO: ≈ 2,5 VECES MÁS</Rotulo>
           </>
         ) : null}
 
