@@ -50,3 +50,18 @@ Pedido de Gerson: toda cifra en libras esterlinas, y también las grandes cifras
 ## Retratos (por buscar)
 
 Medallones para San Martín, Monteagudo, Sucre, O'Higgins, Bolívar, García del Río, Paroissien, Riva-Agüero y Gutiérrez de la Fuente: retratos de época en Wikimedia Commons, con licencia por verificar. Echenique ya tiene medallón (en la galería del 0·3). Kinder y Tudor van en silueta.
+
+## V · Catalina Vizcarra
+
+«Guano, compromisos creíbles y el pago de la deuda externa peruana del siglo XIX», *Economía* (PUCP), vol. XXXIV, n.º 67, 2011, pp. 9–39. Es la traducción de «Guano, Credible Commitments, and Sovereign Debt Repayment in Nineteenth-Century Peru», *The Journal of Economic History*, 69 (2), 2009. [PDF de la revista](https://revistas.pucp.edu.pe/index.php/economia/article/download/2612/2561/10105). Leído el 21 de noviembre de 2026; página impresa = página del PDF + 8.
+
+- **p. 10.** «Desde los años cuarenta, el Perú exportó una gran cantidad de guano a Europa y a los Estados Unidos, donde se utilizaba como fertilizante.» El comercio del guano transformó al Perú, «un Estado fallido con un largo historial de irresponsabilidad fiscal», en uno de los principales prestatarios de Londres.
+- **p. 11.** Los préstamos de 1822 (1,2 millones de libras) y de 1825 (616 000 libras). El Perú se declaró en moratoria en 1826 y siguió sin pagar hasta 1849. En esos años, sus bonos se vendían «frecuentemente por debajo del 20% del valor nominal».
+- **p. 18.** En la década de 1830, unos experimentos encontraron que el guano peruano tenía «cantidades significativas de nitrógeno y fósforo», lo que lo volvía un fertilizante especialmente útil frente a otros abonos. Las islas de Chincha están a unos 20 km de la costa y a menos de 200 km del Callao.
+- **p. 19.** Entre 1854 y 1871, el guano fue en promedio el 60 % del valor de las exportaciones peruanas a Gran Bretaña.
+- **p. 22, n. 22.** En enero de 1842, un decreto «prometía la mitad de los ingresos del guano a los tenedores de bonos británicos. El decreto nunca fue cumplido».
+- **p. 23.**
+  - Castilla dijo que el arreglo de la deuda buscaba «revivir el crédito que la República perdió en Europa casi al mismo tiempo que ésta vino a la existencia».
+  - En la década de 1840, el Estado recibió unos 5,5 millones de pesos por el guano, en su mayoría como adelantos: préstamos de corto plazo con intereses altos, respaldados por el guano.
+- **p. 25.** «una creciente demanda de fertilizantes en el extranjero».
+- **p. 26.** Los contratos con los tenedores de bonos y con la casa Gibbs se firmaron el 31 de enero de 1849 y asignaban parte de los ingresos del guano (al principio, el 50 % de lo vendido en el mercado británico) al pago de la deuda. Gibbs entregaba esos ingresos a Murrieta, la casa que emitía los bonos, sin que interviniera el gobierno peruano.

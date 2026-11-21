@@ -28,8 +28,10 @@ ESC 3  Bolívar hace lo mismo y lo que se toma se vuelve deuda que pagará la ge
 ESC 4  Ya desde 1822, Londres: enviados con negocios propios, la mitad perdida y el impago.
        → PERO la plata también se iba por otro lado:
 ESC 5  El contrabando de plata y las leyes que no se cumplían.
-       → POR ESO, en 1850, cuando aparezca el guano, habrá mucho que pagar:
-ESC 6  Cierre: dos deudas sin pagar y una pregunta que abre el 0·3.
+       → PERO en las islas había otra riqueza:
+ESC 6  1840: el guano vale una fortuna en Europa, y el primer contrato se vende por casi nada.
+       → POR ESO, por fin, hay con qué pagar las dos deudas:
+ESC 7  Cierre: la plata ya estaba en las islas; faltaba saber quién se la iba a quedar.
 ```
 
 ---
@@ -126,19 +128,35 @@ La riqueza también salía del país por mar. [PAUSA 0,6s] El cónsul británico
 
 ---
 
-## ESC 6 — Cierre (puente al 0·3)
+## ESC 6 — Un tesoro de excremento
 
-**Cambio:** de «la independencia» a «la independencia dejó dos deudas sin pagar, y una costumbre».
+**Cambio:** de «el Perú no tiene con qué pagar» a «el Perú descubre que tiene con qué pagar, y el negocio empieza mal desde el primer contrato».
+
+**Intensidad:** 4.
+
+**VO:**
+En las islas de la costa peruana había montañas de guano: el excremento de las aves marinas, acumulado durante siglos. [PAUSA 0,6s] En el Perú se usaba como abono desde tiempos antiguos. [PAUSA 0,8s] En la década de mil ochocientos treinta, unos experimentos en Europa mostraron por qué funcionaba tan bien: tenía mucho nitrógeno y fósforo. [PAUSA 1s] Europa y Estados Unidos necesitaban abono para sus campos, y el mejor estaba en el Perú. [PAUSA 1,2s] En noviembre de mil ochocientos cuarenta, el gobierno de Gamarra, con Ramón Castilla como ministro de Hacienda, firmó el primer contrato del guano. [PAUSA 0,6s] Una sociedad de Francisco Quirós con socios franceses podía sacarlo y venderlo en Europa durante nueve años, sin límite. [PAUSA 0,6s] Pagó noventa mil pesos. [PAUSA 1,5s] Un año después, un diplomático de Estados Unidos informó que en Inglaterra el guano se vendía con una ganancia de al menos la mitad. [PAUSA 0,8s] El contrato se anuló en mil ochocientos cuarenta y uno, y según Quiroz hubo sobornos para conseguir los siguientes. [PAUSA 1,5s]
+
+**Imagen:** el grabado de las islas del 0·3, con sus aves. Con «nitrógeno y fósforo», un frasco de laboratorio europeo y dos fichas químicas. Con «Europa y Estados Unidos», el mapa con flechas de las islas hacia Inglaterra, Francia y Estados Unidos. Con «noviembre de mil ochocientos cuarenta», el contrato sobre la mesa con las fichas de Gamarra y Castilla, y con «noventa mil pesos» la cifra sola, chica, frente a la isla entera. Con el diplomático, la ganancia: la mitad del precio se ilumina en ocre.
+
+**Fuente:** Quiroz, p. 165 (el informe de 1841 sobre el «descubrimiento de una nueva fuente de riqueza peruana»: el guano «se le ha usado en la agricultura como abono desde tiempos inmemoriales» y «se vende en Inglaterra a diez dólares la tonelada dando una ganancia neta de al menos 50 [por ciento]», Pickett a Webster, Lima, 27 de noviembre de 1841; noviembre de 1840: Gamarra y su ministro de Hacienda Castilla otorgan el primer contrato a Francisco Quirós y sus socios franceses por 90 000 pesos (18 000 libras), para la extracción y venta ilimitadas en Europa por nueve años; rescindido en 1841; sobornos para conseguir los contratos). Vizcarra (2011), p. 18 (los experimentos de la década de 1830: «nitrógeno y fósforo», ventajas sobre otros abonos; las islas de Chincha) y p. 10 (exportaciones a Europa y a Estados Unidos, donde se usaba como fertilizante).
+
+[VERIFICAR] «Europa y Estados Unidos necesitaban abono para sus campos»: Vizcarra habla de «una creciente demanda de fertilizantes en el extranjero» (p. 25) y de las exportaciones a Europa y Estados Unidos «donde se utilizaba como fertilizante» (p. 10). La razón de esa demanda (suelos agotados, más población que alimentar) no está en estas fuentes; la voz no la dice.
+
+---
+
+## ESC 7 — Cierre (puente al 0·3)
+
+**Cambio:** de «la independencia» a «la independencia dejó dos deudas sin pagar, y por fin aparece con qué pagarlas».
 
 **Intensidad:** 2.
 
 **VO:**
-Así, el Perú independiente nació con dos deudas. [PAUSA 0,6s] Una con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron y no pagaron. [PAUSA 0,6s] Otra con los acreedores de Londres. [PAUSA 1s] Durante más de veinte años, el Estado casi no pagó ninguna de las dos. [PAUSA 1,5s] Hasta que encontró con qué pagar: el guano de unas islas. [PAUSA 2,5s] Próximo episodio: la deuda defraudada.
+Así, el Perú independiente nació con dos deudas. [PAUSA 0,6s] Una con su propia gente: lo heredado de la colonia y lo que los primeros gobiernos tomaron y no pagaron. [PAUSA 0,6s] Otra con los acreedores de Londres. [PAUSA 1s] Ya en enero de mil ochocientos cuarenta y dos, un decreto le prometió a esos acreedores la mitad de lo que dejara el guano. [PAUSA 0,6s] No se cumplió. [PAUSA 1,5s] La plata para pagar ya estaba en las islas. [PAUSA 0,8s] Lo que faltaba saber era quién se la iba a quedar. [PAUSA 2,5s] Próximo episodio: la deuda defraudada.
 
-**Imagen:** la mesa con las dos pilas: a la izquierda, los reclamos de adentro; a la derecha, los bonos de Londres. Con «guano», entra el grabado de las islas del 0·3. Tarjeta: **PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA**.
+**Imagen:** la mesa con las dos pilas, adentro y afuera. Con «enero de mil ochocientos cuarenta y dos», un decreto que se tacha en rojo (no se cumplió). Con «las islas», el grabado de las islas entre las dos pilas. Tarjeta: **PRÓXIMO · 1850 · LA DEUDA DEFRAUDADA**.
 
-**Fuente:** síntesis de las escenas 1 a 4; Q, p. 136 (mercados cerrados hasta fines de la década de 1840); Q, pp. 164–169 (el guano, en el 0·3).
-
+**Fuente:** síntesis de las escenas 1 a 4; Vizcarra (2011), p. 22, n. 22 («Un intento previo de reanudar los pagos de la deuda externa ocurrió en enero de 1842, cuando el gobierno peruano aprobó un decreto que prometía la mitad de los ingresos del guano a los tenedores de bonos británicos. El decreto nunca fue cumplido»).
 
 ---
 
