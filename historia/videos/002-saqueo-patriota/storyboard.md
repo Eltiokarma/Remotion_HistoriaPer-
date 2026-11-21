@@ -4,7 +4,7 @@ Generado desde `storyboard.json` con `storyboard.py`; no se edita a mano. Propue
 
 La versión completa, con láminas, voz con emoción, métricas y avisos, es `storyboard.html`.
 
-**Episodio:** 6:60.0 en pantalla · voz 79 % · cámara quieta 62 %.
+**Episodio:** 7:00.0 en pantalla · voz 79 % · cámara quieta 62 %.
 
 ## s00 · El gancho
 

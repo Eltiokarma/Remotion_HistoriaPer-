@@ -137,6 +137,7 @@ def comillas(t):
 
 
 def mmss(s):
+    s = round(s, 1)  # sin redondear antes, 419,96 s salía «6:60.0»
     return f"{int(s // 60)}:{s % 60:04.1f}"
 
 
